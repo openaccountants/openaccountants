@@ -1,0 +1,143 @@
+---
+name: fo-country-by-country-reporting
+description: >
+  Screen Faroese multinational groups for country-by-country reporting and
+  notification obligations in 2026. Distinguish prior-year consolidated revenue,
+  ultimate-parent and local filing, surrogate relief, year-end notification and
+  the twelve-month report deadline. Compile jurisdiction totals, constituent
+  entities, activities and explanatory information while keeping cash tax,
+  current accrued tax, permanent-establishment fields and consolidation
+  eliminations distinct. Use for Faroese CbCR, foreign-parent group reporting,
+  local filing, surrogate-parent notifications and the DKK 5.6 billion threshold.
+  This Guide prepares an obligation assessment and reporting workpaper; it does
+  not compute transfer prices or minimum tax. Actual exchange relationships,
+  foreign-currency threshold cases and current template transmission still need
+  verification. Independent AI review accepted partial draft publication;
+  professional attestation is pending.
+jurisdiction: FO
+category: transfer-pricing
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-25
+version: 0.2
+verified_by: pending
+review_status: pending_review
+---
+
+# Faroe Islands country-by-country reporting v0.2
+
+## Who this applies to
+
+Tax Act §§118b–g govern country-by-country reporting (CbCR). A multinational group operates through constituent entities in more than one tax jurisdiction. The perimeter includes qualifying permanent establishments and entities excluded from consolidation solely for size or materiality. Determine the ultimate parent using the consolidation/control definition, not the group's preferred reporting company. [§118b][law]
+
+This Guide prepares an obligation assessment and reporting workpaper. It does not certify a particular exchange relationship, submit a report, determine transfer prices or calculate minimum tax.
+
+## Rates, bands and thresholds
+
+| Test | Rule | Tax year / official source |
+|---|---|---|
+| Faroese ultimate-parent threshold | Consolidated revenue at least DKK 5.6 billion in the financial year preceding the reporting year | 2026; [Tax Act §118c(1)](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) |
+| Report deadline | Twelve months after the reporting year's last day | 2026; [Tax Act §118c(2)](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) |
+| Notification | Before the reporting income year ends | 2026; [Tax Act §118f](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt); [Regulation §2](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan) |
+
+[Tax Act][law]; [Regulation 151/2019][regulation]. Equality meets the revenue test. For a 2026 calendar reporting year, examine 2025 consolidated revenue; a 2026 revenue figure alone does not answer that test. TAKS directs foreign-currency threshold questions to OECD currency-fluctuation guidance; no spot-rate conversion method is established here. [TAKS][taks]
+
+## The base
+
+1. Establish the group perimeter, parent residence, consolidation rules, reporting year and prior-year consolidated revenue.
+2. If the Faroese-taxable ultimate parent meets §118c, record its reporting obligation.
+3. For a Faroese constituent entity that is not the ultimate parent, apply §118d: local filing can arise where the parent has no home-country reporting duty, the required automatic CbCR exchange arrangement is absent despite an international tax-information agreement, or a systemic failure has been notified. Preserve evidence of the actual trigger; a general tax treaty is insufficient.
+4. Evaluate surrogate relief under §118e. The surrogate jurisdiction must require reporting, have the prescribed exchange arrangements, have no systemic failure or no notification of that failure to the constituent, and receive the required surrogate notification; the Faroese constituent must also notify TAKS. The surrogate must actually file the group report in its home jurisdiction. Keep filing, exchange and notification evidence together.
+5. Where multiple Faroese entities face local filing, document the §118d(2) selection and notification of the reporting entity. The statutory wording refers to one or two triggering conditions; if all three arise, obtain an interpretation rather than silently extending it.
+6. Maintain separate report and notification tasks. Foreign reporting does not by itself discharge the Faroese notification obligation. [§§118c–f][law]
+
+**Local-filing threshold boundary:** §118c expressly states the prior-year revenue threshold; §118d does not repeat it. TAKS describes the regime using the group threshold. For a foreign-parent case below or near that threshold, or a mismatch between home-country and Faroese thresholds, obtain a documented application of the rules rather than infer an unconditional local-filing exemption. [Tax Act][law]; [TAKS][taks]
+
+### What to compile
+
+Regulation §4 and its annex require three tables: jurisdiction totals, constituent entities/activities, and explanatory information. Keep related-party and independent-party revenue separate. The revenue definition excludes intra-group payments treated as dividends in the payer's jurisdiction. Cash tax includes withholding paid by others on the entity's income; current-year accrued tax excludes deferred tax and provisions for uncertain tax liabilities. These are distinct measures. [Regulation §4(2)][regulation]
+
+Use consistent employee/FTE methodology across years and entities. Tangible assets exclude cash and financial assets. Allocate PE assets to the PE jurisdiction; the regulation separately addresses PE capital and retained earnings. Do not mechanically allocate every PE field in the same way. [§4(2)(6)–(9)][regulation]
+
+The workpaper should reconcile each table row to source accounts and tax records, explain currency and perimeter choices, and identify every adjustment. Do not equate the sum of jurisdiction revenue rows with consolidated revenue without explaining consolidation eliminations.
+
+## Deadlines and filing
+
+For a calendar 2026 report, the statutory twelve-month deadline is **31 December 2027**. The notification belongs to **2026**, before year-end; do not delay it until the report deadline. [§§118c and 118f][law]
+
+Notification identifies the reporting entity, address, tax jurisdiction and registration/V-number or foreign TIN where applicable. Faroese, Danish and English notifications are permitted. Cessation of the reporting duty also requires notification. [Regulation §§1–3][regulation]
+
+TAKS publishes reporting and notification templates. Its guidance accepts the report through a secure delivery route and requires a power of attorney where a third party files. Retrieve the current templates, agree the secure route and preserve receipts. No transmission was tested for this Guide. [TAKS][taks]
+
+If a parent refuses information needed for local filing, the regulation requires the constituent to request it, report the information it has obtained or collected, and notify the authority of the refusal. Missing access is not a licence to omit the filing silently. [Regulation §4(5)][regulation]
+
+## Penalties and interest
+
+Section 139c, items 1–2, provides for a fine for intentional or grossly negligent failure to deliver the report under §§118c–e on time, or for false or misleading information in it. The provision does not state a monetary amount. Do not infer a fixed fine from this Guide. Notification-specific exposure and current penalty practice remain to be checked separately. [Tax Act §139c][law]
+
+## Cross-border points
+
+Retain evidence for the exact counterpart jurisdiction and reporting period. TAKS links the OECD activated-exchange list, but this Guide has not verified any bilateral route. Do not substitute OECD membership, signature of a multilateral agreement or a generic treaty for effective exchange coverage. The complete §118e conditions control the surrogate analysis. [Tax Act][law]; [TAKS][taks]
+
+## Two worked examples that recompute
+
+### 1. Prior-year boundary
+
+Assume a Faroese ultimate parent, a DKK-denominated calendar-year group and no threshold-conversion issue. Verified 2025 consolidated revenue of DKK 5,600,000,000 meets the threshold for the 2026 report. DKK 5,599,999,999 is one krone below it. This tests §118c only, not every foreign-parent local-filing scenario.
+
+```oa-check
+name: Faroese CbCR ultimate-parent threshold boundary
+inputs:
+  threshold: 5600000000
+  at_boundary: 5600000000
+  below_boundary: 5599999999
+steps:
+  equality_margin: at_boundary - threshold
+  lower_margin: below_boundary - threshold
+expected:
+  equality_margin: 0
+  lower_margin: -1
+```
+
+### 2. Cash versus accrued tax
+
+Assume a jurisdiction row has DKK 12 million of cash income tax plus DKK 2 million of qualifying withholding paid on its income. Cash tax is DKK 14 million. Its current-year tax expense is independently established at DKK 15 million; DKK 3 million deferred tax and DKK 1 million uncertain-tax provision are excluded from that accrued measure. Do not replace one column with the other.
+
+```oa-check
+name: Faroese CbCR distinct tax columns
+inputs:
+  direct_cash_tax: 12000000
+  qualifying_withholding: 2000000
+  total_expense: 19000000
+  deferred_tax: 3000000
+  uncertain_tax: 1000000
+steps:
+  cash_tax: direct_cash_tax + qualifying_withholding
+  current_accrued_tax: total_expense - deferred_tax - uncertain_tax
+expected:
+  cash_tax: 14000000
+  current_accrued_tax: 15000000
+```
+
+## Ask the client first
+
+- What are the ultimate parent, tax residences, group perimeter and reporting year?
+- What do the prior-year consolidated accounts show, and in which currency?
+- Who will file, under what obligation, and where is the filing/exchange evidence?
+- Have TAKS or another authority notified a systemic failure?
+- Has each required notification been made, with what receipt?
+- Are all constituent and PE records available, including withholding and tax-expense reconciliations?
+
+## Sources
+
+| Source | Provisions / purpose | Read on |
+|---|---|---|
+| [Current Tax Act](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) | §§118b–g, 139c; scope, threshold, report/notification, surrogate and sanctions | 2026-10-25 |
+| [Regulation 151 of 19 December 2019](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan) | §§1–5 and annex; notifications, report definitions and three tables | 2026-10-25 |
+| [TAKS CbCR guidance](https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding) | Templates, exchange-list referral, notification and secure delivery | 2026-10-25 |
+
+Not yet confirmed: actual bilateral exchange coverage, foreign-currency threshold application, unusual local-filing cases, notification penalties and assessed fine amounts, current template execution and secure transmission. Checked against the law, not professional attestation. Neither this Guide nor its arithmetic checks completes the TP domain or country pack. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
+
+[law]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
+[regulation]: https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan
+[taks]: https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding

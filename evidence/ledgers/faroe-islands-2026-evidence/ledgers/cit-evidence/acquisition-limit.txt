@@ -1,0 +1,1 @@
+2026-10-28: direct Python DNS request failed; escalated curl returned HTTP 403. vls-N-Q-web-response.json is the unmodified serialized web-tool extraction, not an acquired original HTML body. Actual read: N web LF630–670 and697–702; Q11–20. N older 26 timing at678 is not used; current Act26 controls.

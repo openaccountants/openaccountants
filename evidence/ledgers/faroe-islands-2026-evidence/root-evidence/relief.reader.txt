@@ -1,0 +1,515 @@
+O. Tvískatting - TAKSHopp til høvuðsinnihald (Skip to main content)
+Borgari Vinna TAKS Oyðubløð Lóg
+English
+Leita
+Borgaragluggin
+Fyri at rita inn skalt tú hava Samleikan
+Hevur tú Samleikan?
+Rita inn Hevur tú ikki Samleikan?
+Stovna Samleikan
+Vinnugluggin
+Fyri at rita inn skalt tú hava ein brúkara og Samleikan
+Hevur tú tað?
+Rita inn
+Hevur tú ikki ein brúkara?
+Stovna brúkara
+Hevur tú ikki Samleikan?
+Stovna Samleikan
+Lóg
+Vegleiðingarskriv, VLS 2015
+O. Tvískatting
+Lurta Printa út
+Leita
+O. TVÍSKATTING
+O.1. Skattalinkingarreglur og skattalinkingarútrokning
+(Dagført 1.november 2021)
+Tá ið fleiri lond krevja skatt av somu inntøku, er neyðugt við reglum, sum kunnu mótvirka tvískatting. Tað eru tveir hættir at mótvirka tvískatting:
+Innanhýsis føroyskar skattareglur, ið veita linking í skatti, sum goldin er uttanlands av inntøku, sum eisini er skattskyldug í Føroyum. Reglurnar eru ásettar í § 154 í skattalógini.
+Tvískattasáttmálar millum lond, har ásett verður:
+- hvat land, ið hevur rætt til skattin,
+- hvat land, ið linka skal fyri skatt, sum goldin er í hinum landinum,
+- hvussu linking skal gevast.
+O.1.1. Linkingarhættir
+Í høvuðsheitum eru tríggir linkingarhættir til at rokna út tvískattalinking:
+maksimeraður kredittur,
+eksemptión við progressiónsfyrivarni (nýggjur framferðarháttur),
+eksemptión við progressiónsfyrivarni (gamal framferðarháttur).
+Niðanfyri greiða vit frá hesum trimum linkingarháttum.
+1. Maksimeraður kredittur
+Eitt eyðkenni við hesum linkingarhátti er, at uttanlandsinntøkan verður tald við, tá ið skattskylduga inntøkan verður gjørd upp í Føroyum. Tvískattingin verður so tikin burtur aftur við at linka skattin av globalinntøkuni í Føroyum við tí skatti, sum goldin er í øðrum landi av tí inntøku, sum stavar frá hesum landi, tó við ávísum hámørkum.
+Hámarkið fyri linking er knýtt at, hvussu nógv er goldið í skatti uttanlands av uttanlandsinntøkuni, og hvussu stórur partur av samlaða útroknaða skatt­inum, ið fellur á uttanlandsinntøkuna.
+Hereftir kann sigast, at linkingin er avmarkað til at vera:
+a) í mesta lagi tann skattur, ið goldin er uttanlands av uttanlandsinntøk­uni, og
+b) í mesta lagi tann skattur í Føroyum, sum fellur á uttanlandsinntøkuna.
+Verður uttanlandsinntøkan skattað saman við aðrari inntøku eftir progressiv­um skala, skal greiða fáast á, hvussu nógvur skattur lutfalsliga fellur á uttan­landsinntøkuna. Til at finna tann skattin í Føroyum, sum lutfalsliga fellur á uttanlandsinntøkuna, verður nýttur hesin linkingarbrøkur:
+Linkingarbrøkur:Føroyskur skattur x Uttanlandsinntøka
+Skattskyldug globalinntøka
+Hesin sami linkingarbrøkur verður nýttur til allar tríggjar linkingarhættirnar. Linkingarbrøkurin skal tryggja, at linkingin í føroyska skattinum ikki fer upp um tann føroyska skattin, sum luftalsliga fellur á uttanlandsinntøkuna, og sum linking skal gevast fyri. Brøkurin gevur ta upphædd, sum Føroyar í mesta lagi kunnu veita linking fyri, tá ið tær eru bústaðarland.
+Til at lýsa, hvussu linkingarhátturin maksimeraður kredittur virkar, hava vit tveir persónar, 1 og 2, sum hava nett somu fordeiling av inntøku í Føroyum og uttanlands, men har persónur 1 rindar 40.000 í skatti uttanlands, og persónur 2 rindar 50.000.
+Dømi
+Føroysk inntøka:
+200.000 kr.
+Útlendsk inntøka: 100.000 kr.
+Skattskyldug inntøka í Føroyum: 300.000 kr.
+Skattur av hesum: 145.000 kr.
+Linkingarbrøkur: 145.000 x 100.000
+300.00048.333 kr.
+Linking, persónur 1: 40.000 kr.
+Linking, persónur 2: 48.333 kr.
+Linkingin hjá persóni 1 er í mesta lagi tann skattur, sum goldin er uttanlands av uttanlandsinntøkuni.
+Linkingin hjá persóni 2 er í mesta skattur tann skattur í Føroyum, sum fellur á uttanlandsinntøkuna.
+Gev gætur, at er uttanlandsinntøkan serskattað eftir føroyskum reglum, kann linkingin ongantíð vera meira enn hesin serskattur.
+Uttanlandsinntøka, sum er fevnd av § 25b í skattalógini, er serskattað við bruttoskatti, ið sbrt. § 1, stk. 2, í ásetingarlógini er 35% av bruttoinntøkuni eftir uttanlandsfrádráttin sbrt. § 33, nr. 13 í skattalógini, umframt eftir frádrátt fyri inngjald til eftirløn. Tá ið tað soleiðis eru serásetingar fyri, hvussu uttanlandsinntøka verður skattað, og avmarkingar eru fyri, hvørjir frádráttir kunnu fáast, áðrenn skattur verður roknaður, kann linking í mesta lagi gevast tann skatt, sum er útroknaður eftir hesum ásetingum.
+2. Eksemptión við progressiónsfyrivarni (nýggjur framferðarháttur)
+Eftir hesum linkingarhátti verður útlendska inntøkan eisini tald við, tá ið skattskylduga inntøkan verður gjørd upp í Føroyum.
+Linking verður veitt fyri tann part av samlaða skattinum í Føroyum, ið viðvíkir uttanlandsinntøkuni, sama hvat goldið er í skatti uttanlands.
+Progressiónsfyrivarni merkir, at tá skattur av aðrari inntøku verður rokn­aður, so verður atlit tikið til uttanlandsinntøkuna, sum linking skal gevast fyri. Progressiónsfyrivarnið fær týdning, tá progressión er í internum útrokningar­reglum. Í Føroyum verður landsskatturin hjá likamligum persónum roknaður eftir progressivum stiga, uttan so at talan er um inntøku, ið hevur seráseting­ar fyri, hvussu skatturin skal roknast.
+Hetta er eitt nú galdandi fyri uttanlandsinntøku eftir § 25b í skattalógini, ið verður skattað við einum bruttoskatti á 35% sbrt. § 1, stk. 2 í ásetingarlógini, og har frádrátturin bert fæst sbrt. § 33, nr. 13 í skattalógini, eins og tað er galdandi fyri inngjald til eftirløn og fyri FAS-inntøku, sum verður skattað við 35% av bruttoinntøkuni eftir frádrátt fyri eftirlønargjøld sbrt. § 8, stk. 2, í ásetingarlógini.
+Í teimum førum, har skatturin av uttanlandsinntøkuni er ein lutfalsligur partur av samlaða skattinum, má skil fáast á, hvussu nógvur skattur lutfalsliga fellur á uttanlandsinntøkuna.
+Soleiðis verður linking roknað eftir eksemptión við progressiónsfyrivarni:
+Føroysk inntøka: 200.000 kr.
+Útlendsk inntøka: 100.000 kr.
+Skattskyldug inntøka í Føroyum: 300.000 kr.
+Skattur av hesum: 145.000 kr.
+Linkingarbrøkur: 145.000 x 100.000
+300.000 48.333 kr.
+Linking: 48.333 kr.
+Sum sæst, verður hædd ikki tikin fyri, hvat goldið er í skatti uttanlands.
+3. Eksemptión við progressiónsfyrivarni (gamal framferðarháttur)
+Eftir hesum linkingarhátti verður inntøka, ið vunnin er í øðrum landi, ikki tald við, tá ið skattskylduga inntøkan verður gjørd upp í Føroyum. Tó verður uttanlandsinntøkan tikin við, tá ið skatturin verður útroknaður, og síðan verður frádráttur givin í skattinum fyri tann partin av samlaða skattinum í Føroyum, ið viðvíkir uttanlandsinntøkuni, sama hvat goldið er í skatti uttanlands. Hetta er líka fyri nýggja og gamla framferðarháttin.
+Tá ið útlendska inntøkan ikki verður tald við í uppgerðina av skattskyldugu inntøkuni í Føroyum, førir hetta við sær, at útlendska inntøkan ikki lækkar eitt møguligt hall, ið viðkomandi hevur í Føroyum. Hallið kann tískil verða ført fram eftir reglunum í § 33a í skattalógini, sjálvt um viðkomandi samanlagt hevur positiva inntøku. Slíkur linkingarháttur kann eisini hava týdning fyri eitt nú almennar veitingar, sum verða roknaðar eftir skattskyldugu inntøkuni, og veitingar, sum eru knýttar at skattskyldugu inntøkuni. Til dømis verða pensjónir lækkaðar í mun til, hvussu stóra skattskylduga inntøku, viðkomandi pensjonistur hevur.
+Hesin linkingarháttur varð í sínari tíð ásettur í tvískattasáttmálanum millum Føroyar og Eysturríki. Sáttmálin er farin úr gildi, og linkingarhátturin verður ikki nýttur longur.
+O.1.2. Innanhýsis reglur um skattalinking
+Í viðurskiftum við lond, sum Føroyar ikki hava tvískattasáttmála við, verður linking veitt eftir reglum í internari lóggávu. Í Føroyum hava vit linkingarreglur í § 154 í skattalógini og í § 19 í kapitalvinningsskattalógini.
+Tann vanligi linkingarhátturin í § 154, stk. 1, í skattalógini og í § 19 í kapitalvinningsskattalógini er maksimeraður kredittur.
+O.1.3. Tá ið skattgjaldari hevur inntøku frá fleiri londum ella fleiri inntøkusløg frá sama landi, ella tá ið fleiri linkingarhættir skulu nýtast
+Hevur skattgjaldari inntøku frá fleiri londum, skal linkingarútrokningin gerast fyri hvørt land sær.
+Hevur skattgjaldari fleiri inntøkusløg frá sama landi, skal linkingarútrokn­ingin gerast undir einum. Tó skal hon gerast fyri hvørt inntøkuslag sær, um ymiskir linkingarhættir ella ymiskar skattaútrokningar skulu nýtast til ymsu inntøkurnar. Sama er, tá ið kredittlinking skal gevast fyri inntøku, sum er serstakt keldulandsskattað.
+O.1.4. Uppgerð av uttanlandsinntøkuni, sum linking skal gevast fyri
+Linkingarhættirnir eru ikki lýstir nágreiniliga í sáttmálum ella innanhýsis linkingarreglum, og ongar føroyskar lógarreglur eru heldur fyri, hvussu farast skal fram. Toll- og skattaráð Føroya hevur tó ásett mannagongdir fyri, hvussu uttanlandsinntøka, sum linking skal gevast fyri, skal gerast upp.
+Tá ið linking verður veitt í Føroyum, og føroyski skatturin av uttanlands­inntøkuni verður roknaður saman við øðrum inntøkum, verður nýttur hesin linkingarbrøkur til at gera av, hvussu stórur skattur lutfalsliga fellur á uttan­landsinntøkuna, sum linking skal veitast fyri:
+Føroyskur skattur x Uttanlandsinntøka
+Skattskyldug globalinntøka
+Teljari í brøkinum er tann uttanlandsinntøka, sum linking skal gevast fyri. Við í brøkin skulu bert takast uttanlandsinntøkur, sum eru grundarlag undir tí skatti, sum er við í útrokningini. Við í brøkin skulu somuleiðis bert takast globalinntøkur, sum eru partur av viðkomandi skattaútrokning.
+O.1.5. Inntøkufrádráttir
+Tá ið uttanlandsinntøka, sum setast skal í brøkin, verður gjørd upp, verða frádráttir, ið hava samband við inntøkuni, trektir burturav.
+Frádráttir, ið ikki hava samband við inntøkuna, skulu sum útgangsstøði ikki trekkjast burturav, tá ið linking verður roknað.
+Sum dømi um frádráttir, ið hava samband við ávísa inntøku, kunnu nevnast fiskiveiðufrádráttur og uttanlandsfrádráttur eftir § 25a og § 25b í skattalógini.
+Eisini samdøgursfrádrátturin eftir § 33, nr. 12, í skattalógini hevur beinleiðis samband við uttanlandsinntøku.
+Frádráttir, ið hava samband við bæði føroyska og útlendska inntøku, skulu býtast lutfalsliga út á ávísu bruttoinntøkurnar.
+Frádráttir, ið ikki hava samband við ávísa inntøku, skulu ikki dragast frá uttanlandsinntøkuni, eitt nú gjald til eftirlønarskipan. Eftirlønarfrádráttur verður bert drigin frá føroysku inntøkuni, um rúm er fyri tí.
+Tá skattgjaldari hevur føroyskar inntøkur, sum ikki verða skattaðar líka, skal eftirlønarfrádrátturin býtast lutfalsliga millum føroysku nettoinntøkurnar, t.e. inntøkur minus frádráttir, ið hava samband við tær.
+Dømi
+Føroysk inntøka: 46.836 kr.
+DIS-inntøka: 301.806 kr.
+Samdøgursfrádráttur sbrt. § 33, nr. 12, í skattalógini: - 54.000 kr.
+Eftirlønarfrádráttur: - 30.000 kr.
+Skattskyldug inntøka í Føroyum: 264.642 kr.
+Skattur av hesum: 77.988 kr.
+Samdøgursfrádrátturin verður drigin frá DIS-inntøkuni, av tí at hann hevur samband við hana. Eftirlønarfrádrátturin verður ikki drigin frá útlendsku inntøkuni, tí pláss er fyri hesum í føroysku inntøkuni. Uttanlandsinntøkan, sum verður sett í linkingarbrøkin, verður tí 301.806 - 54.000 = 247.806. Við linkingarháttinum eksemptión við progressiónsfyrivarni verður frádrátturin fyri skatt av útlendsku inntøkuni, t.e. DIS-inntøkuni, tískil hesin:
+Linking: 77.988 x 247.806
+264.462
+73.027 kr.
+Av tí at Føroyar sambært norðurlendska tvískattasáttmálanum skulu veita eksemptiónslinking fyri DIS-inntøku, og hátturin er eksemptión við progress­iónsfyrivarni, verður endaligi skatturin at rinda í Føroyum eftir linking fyri skatt, sum fellur á DIS-inntøkuna, 77.988 - 73.027 = 4.961 kr.
+O.1.6. Bruttoskattaðar inntøkur
+Er talan er um serásetingar um skatt, er tað tann ítøkiliga útroknaði skatturin, sum linking í mesta lagi kann veitast fyri. Hetta er eitt nú galdandi fyri uttanlandsinntøku, sum er fevnd av § 25b í skattalógini. § 25b-inntøka verður sbrt. § 1, stk. 2, í ásetingarlógini skattað við 35% av bruttoinntøkuni eftir uttanlandsfrádrátt sbrt. § 33, nr. 13, og eftirlønarfrádrátt. Eisini FAS-inntøka verður skattað við bruttoskatti á 35% eftir frádrátt fyri inngjøld til eftirløn sbrt. § 8, stk. 2, í ásetingarlógini.
+Serligu reglurnar, ið áseta bruttoskatt á uttanlandsinntøku og FAS-inntøku, føra við sær, at eingin frádráttur verður loyvdur, tá ið serligi bruttoskatturin verður roknaður, uttan bert teir frádráttir, sum beinleiðis eru heimilaðir í ásetingini. Hetta ger, at § 25b-inntøka og FAS-inntøka eitt nú ikki kunnu fáa hjúnafrádrátt eftir § 4 í skattalógini.
+Dømi:
+Føroysk inntøka: 125.000 kr.
+Útlendsk inntøka, § 25b í skattalógini: 347.640 kr.
+Uttanlandsfrádráttur sbrt. § 33, nr. 13 (30% av 347.640): 104.292 kr.
+Eftirlønarfrádráttur: 67.450 kr.
+Lækking av inntøku sbrt. § 4 í skattalógini (hjúnafrádráttur): 5.000 kr.
+Skattskyldug inntøka: 295.898 kr.
+Progressivur skattur verður fyrst roknaður av teirri samlaðu inntøkuni, t.e. 295.898, tí at uttanlandsinntøkan verður roknað við í skattagrundarlagið. Skatturin verður roknaður av skattskyldugu inntøkuni, niðurrundaðari til fyrsta krónutal, ið býtast kann við 100. Progressivi skatturin av 295.800 er 90.421. Landsskatturin er 37.660 (25.500 av 235.000 + 20% av rest, sum er 12.160). Kommunuskatturin er 50.502 (19% av 295.800 - 30.000), og kirkju­skatturin er 2.259 (0,85% av 295.800 - 30.000). Síðan verður tann partur av hesum skatti, ið fellur á uttanlandsinntøkuna, drigin frá. Hann er 90.421 x 243.348/295.898 = 74.363 kr.
+Skatturin av føroysku inntøkuni er tí 90.421 - 74.363 = 16.058 kr.
+Skatturin av uttanlandsinntøkuni er 35% av bruttoinntøkuni aftan á uttan­landsfrádrátt og møguligan eftirlønarfrádrátt. Í hesum dømi rúmast eftir­lønarfrádrátturin í føroysku inntøkuni, og tí verður 25b-skatturin roknaður av uttanlandsinntøkuni eftir uttanlandsfrádráttin, t.e. 347.640 - 104.292 = 243.348. Skatturin av uttanlandsinntøkuni er 35% av 243.348 = 85.172 kr.
+Samlaði føroyski skatturin er tí 16.058 + 85.172 = 101.230 kr.
+Linking fyri uttanlandsskattin kann í mesta lagi vera 85.172. Hetta er frádrátturin, um Føroyar skulu veita eksemptiónslinking. Skulu Føroyar veita kredittlinking, er tað skatturin, sum goldin er uttanlands, ið frádráttur verður givin fyri, tó ongantíð meira enn føroyski skatturin, ið fellur á uttanlands­inntøkuna, t.e. 85.172 kr.
+Siga vit, at Føroyar skulu veita eksemptiónslinking, so verður endaligi skatt­urin at rinda í Føroyum eftir linking tískil 16.058 kr.
+O.1.7. Tá ið frádráttir ikki rúmast í føroysku inntøkuni
+Um so er, at frádráttur, sum ikki knýtir seg til útlendsku inntøkuna, eitt nú eftirlønarfrádrátturin, ikki rúmast í føroyskari inntøku, so skal restin av frádráttinum dragast frá útlendsku inntøkuni, áðrenn linking verður roknað.
+Hevur skattgjaldarin fleiri útlendskar inntøkur, so skal restfrádrátturin býtast lutfalsliga á útlendsku nettoinntøkurnar, t.e. inntøkur minus frádráttir, ið hava samband við tær.
+Dømi:
+Grønlendsk fiskiveiðuinntøka, § 25b (eksemptión):250.000 kr.
+Inntøka úr Bretlandi, § 25b (kredittur): 30.540 kr.
+Føroysk inntøka: 12.750 kr.
+§ 25b-frádráttur: - 84.162 kr.
+Eftirlønarfrádráttur: - 43.500 kr.
+Skattskyldug inntøka: 165.628 kr.
+Skattur, goldin Grønlandi av fiskiveiðuinntøkuni:
+60.000 kr.
+Skattur, goldin í Bretlandi: 3.000 kr.
+Fiskiveiðuinntøka úr Grønlandi er fevnd av § 25b í skattalógini og fær tí ein uttanlandsfrádrátt eftir § 33, nr. 13, í skattalógini eins og inntøka úr Bretlandi. Uttanlandsfrádrátturin er 30% av uttanlandsinntøkuni, tó í mesta lagi 120.000 kr. Hesin frádráttur er tí 30% av 250.000 = 75.000 og 30% av 30.540 = 9.162 ella í alt 84.162. Frádrátturin hevur beinleiðis samband við inntøkuna úr Grønlandi og Bretlandi og skal tí dragast frá hesum inntøkum, áðrenn linking verður roknað.
+Tá ið eftirlønarfrádrátturin er størri enn føroyska inntøkan, skal tann partur, sum ikki rúmast í føroysku inntøkuni, t.e. 43.500 - 12.750 = 30.750, dragast frá uttanlandsinntøkunum. Hesin partur av eftirlønarfrádráttinum verður býttur lutfalsliga á uttanlandsinntøkurnar eftir nettoinntøkunum eftir uttan­landsfrádrátt. Nettoinntøkan úr Grønlandi er 250.000 - 75.000 = 175.000, og nettoinntøkan úr Bretlandi er 30.540 - 9.162 = 21.378.
+Lutfallið verður tí 30.750 x 175.000/196.378 = 27.403 á ta grønlendsku inntøkuna og 30.750 x 21.378/196.378 = 3.347 á ta bretsku.
+Í hesum døminum fer føroyska inntøkan í 0 kr. eftir frádrátt.
+§ 25b-inntøka verður sbrt. § 1, stk. 2, í ásetingarlógini bruttoskattað við 35% eftir uttanlandsfrádrátt og møguligan eftirlønarfrádrátt.
+Skattur av grønlendsku inntøkuni er tí 175.000 - 27.403 = 147.597 x 35% = 51.659 kr.
+Skattur av bretsku inntøkuni er 21.378 - 3.348 = 18.030 x 35% = 6.311 kr.
+Linkingarhátturin fyri grønlendsku inntøkuna er sbrt. tvískattasáttmálanum við Grønland eksemptiónslinking við progressiónsfyrivarni. Í hesum føri verður linking tí veitt fyri allan tann føroyska skattin, sum fellur á grønlendsku inntøkuna. Hugt verður tí ikki eftir, hvussu nógv er goldið í Grønlandi.
+Linkingarhátturin fyri bretsku inntøkuna er kredittur. Skattur, goldin í Bretlandi, er 3.000 kr. Tí verður linking veitt við 3.000. Var meiri skattur goldin í Bretlandi, so kundi mesta linking tó ongantíð verið størri enn tann føroyski skattur, sum fellur á útlendsku inntøkuna, í hesum føri 6.311 kr.
+Skattur at gjalda í Føroyum verður 6.311 - 3.000 = 3.311 kr.
+O.1.8. Skattafrádráttir
+Hevur persónur rætt til frádrátt í skattinum, eitt nú fólkapensjónsfrádrátt sbrt. § 3, stk. 3, í ásetingarlógini, skal hesin frádráttur dragast frá, áðrenn linking verður roknað.
+Skattafrádráttir, sum ikki hoyra til ávísa inntøku, skulu, um rúm er fyri tí, gevast í skattinum av føroyskari inntøku, eins og prinsippið er við inntøkufrá­dráttum. Verða ymsar føroyskar inntøkur ikki skattaðar líka, skal frádrátturin býtast millum ymsu skattirnar av føroysku inntøkuni. Býtast skal lutfalsliga eftir skattunum uttan hesar frádráttir, men eftir møguligar skattafrádráttir, ið hava samband við ávísu inntøkuna. Rúmast ikki í føroyskum skatti, skal restin av skattafrádráttinum dragast frá í skattinum av útlendsku inntøkuni. Eisini her verður frádrátturin býttur lutfalsliga millum útlendskar inntøkur.
+Annar skattafrádráttur er barnafrádrátturin. Her er tað serliga galdandi sbrt. § 2, stk. 3, í ásetingarlógini, at er barnafrádrátturin hægri enn skatturin uttan barnafrádrátt, verður munurin útgoldin avvarðandi skattgjaldara. Hetta er seráseting, sum bert er galdandi fyri barnafrádrátt.
+Skatta- og avgjaldskærunevndin tók í desember 2020 avgerð um útrokningarháttin hjá TAKS í sambandi við barnafrádrátt og uttanlandsinn­tøku. Kært varð um útrokningarháttin í álíkning hjá kærara, ið bert hevði uttanlandsinntøku, sum eksemptiónslinking skuldi gevast fyri, og sum tí ikki kom at rinda nakran skatt í Føroyum aftan á linking. Kærarin gjørdi galdandi, at hann átti at fáa allan barnafrádráttin útgoldnan, av tí at skattur hansara uttan barnafrádrátt fyri hesi ár var 0 kr. TAKS hevði í útrokningini givið barna­frádrátt áðrenn linking, og av tí at eingin skattur fall í Føroyum, datt alt virðið á barnafrádráttinum burtur. Skatta- og avgjaldskærunevndin viðmerkti, at § 2, stk. 3, í ásetingarlógini tryggjar, at barnafrádrátturin skal koma øllum skattgjaldarum til góðar, sama hvussu høgur ella lágur skatturin er, eisini persónum, sum ongan skatt gjalda. Kærunevndin metti tískil ikki, at virðið á barnafrádráttinum átti at detta burtur, bert tí at kærarin fekk linking eftir tvískattasáttmálanum fyri uttanlandsinntøkuna. Nevndin broytti avgerðina hjá TAKS, soleiðis at skatturin, ið linking varð veitt fyri, skuldi roknast út, áðrenn barnafrádrátturin varð drigin frá.
+Fyri barnafrádráttin er tískil galdandi, at um eingin skattur fellur í Føroyum aftan á linking, so skal barnafrádrátturin útgjaldast, soleiðis sum ásett er í § 2, stk. 3, í ásetingarlógini.
+Hesin háttur at veita skattafrádrátt er bert galdandi fyri barnafrádrátt – ikki aðrar skattafrádráttir.
+O.1.9. Landsskattur, kommunuskattur og kirkjuskattur
+Linking verður veitt lutfalsliga í landsskatti, kommunuskatti og kirkjuskatti.
+O.2. Gjørdir tvískattasáttmálar
+(Dagført 31.desember 2015)
+Føroyar hava tvískattasáttmálar við niðanfyrinevndu lond fyri at sleppa undan tvískatting:
+O.2.1. Norðurlond
+Sáttmálin millum tey norðurlendsku londini er frá 21. september 1996 og er lýstur við lógtingslóg nr. 122 frá 22. desember 2008. Sáttmálin er galdandi millum Danmark, Finnland (herundir Áland, smbr. Ískoytisavtalu til sáttmálan frá 1. desember 1999), Føroyar, Ísland, Noregi og Svøríki. Sáttmálin hevur virknað fyri inntøkur, sum eru vunnar 1. januar 1998 ella seinni.
+Í dagliga arbeiðinum við skattaspurningum um tvískatting er tað tann norðurlendski sáttmálin, ið mest verður nýttur. Stutt umrøða av hvørjar inntøkur, sáttmálin fevnir um, og viðgerðin av nøkrum av hesum inntøkum, verður tí givin her.
+Innihald:
+grein. 1: Persónar, sum koma undir sáttmálan
+grein. 2: Skattasløg fevnd av sáttmálanum
+grein. 3: Allýsingar
+grein. 4: Skattligur heimstaður
+grein. 5: Fastur rakstrarstaður
+grein 6: Inntøka av fastari ogn
+grein 7: Inntøka av vinnuvirki
+grein 8: Skipa- og loftferðsla
+grein 9: Virki, sum sínámillum eru bundin hvørt at øðrum
+grein 10: Vinningsbýti
+grein 11: Renta
+grein 12: Nýtslugjald (royalty)
+grein 13: Kapitalvinningur
+grein 14: Frí vinna
+grein 15: Persónligt arbeiði í tænastuviðurskiftum
+grein 16: Nevndarsamsýningar
+grein 17: Listafólk og ítróttarfólk
+grein 18: Eftirlønir v.m.
+grein 19: Almenn størv
+grein 20: Lesandi og praktikantar
+grein 21: Virksemi í sambandi við forkanningar, rannsókn ella brúk av kolvetnisfyrikoming
+grein 22: Aðrar inntøkur
+grein 23: Ogn
+grein 24: Deyðsbúgv
+grein 25: Tvískatting avtikin
+grein 26: Almennar reglur um skatting
+grein 27: Bann móti mannamuni
+grein 28: Mannagongdin, tá ið sínámillum avtalur verða gjørdar
+grein 29: Limir í stjórnar- og konslaumboðum
+grein 30: Víðkan av økjum
+grein 31: Gildiskoma sáttmálans
+Grein 1: Persónar, sum koma undir sáttmálan
+Sáttmálin fevnir um likamligar og løgfrøðiligar persónar, sum eru heimahoyrandi í einum ella fleiri av teimum sáttmálabundnu ríkjunum.
+Grein 2: Skattasløg fevnd av sáttmálanum
+Sáttmálin fevnir um inntøku- og ognarskattir, sum verða álíknaðir vegna eitt sáttmálabundið ríki, tess politisku deildir ella lokalu myndugleikar. Sáttmálin nevnir teir skattir, sum eru fevndir av sáttmálanum. Fyri Føroyar eru hetta skattir til ávíkavist land, kommunur og kirkju. Herumframt eru nevndir skattir av vinningsbýti, skattur av nýtslugjaldi (royalty), rentuskattur og skattur eftir kolvetnisskattalógini. Sáttmálin fevnir eisini um allar skattir av sama slagi ella nærum av sama slagi, sum, eftir at sáttmálin varð undirskrivaður, verða álíknaðir sum ískoyti til ella í staðin fyri galdandi skattir. Í Føroyum eru vinningsbýtisskattur og rentuskattur skiftir út við kapitalvinningsskatt.
+Viðmerkjast kann, at avgjøld ikki eru fevnd av tvískattasáttmálanum. Eitt nú eru gjøldini til ALS, barsils- og AM-grunnin ikki fevnd av sáttmálanum. Heldur ikki avgjøldini eftir rentutryggingarlógini eru fevnd av tvískattasáttmálanum.
+Grein 3: Allýsingar
+Í stk. 1 er lýsing av nøkrum vanligum hugtøkum og málburðum, sum nýtt verða í sáttmálanum. Víst verður til sáttmálan.
+Viðmerkjast skal, at málberingin ”altjóða ferðsla” er broytt við protokol frá 6. oktober 1997. ”Altjóða ferðsla” merkir nú flutningur við skipi ella flogfari, undantikið tá skipið ella flogfarið bert verður nýtt millum støð í einum sáttmálabundnum ríki. Við nýggju orðingini verður tryggjað, at innanoyggja sigling ikki kemur undir hugtakið ”altjóða ferðsla”.
+Sambært stk. 2, skulu allar málberingar, sum ikki eru útgreinaðar í sáttmálanum hava tann týdning, sum tær hava í skattalóggávuni í tí ríki, sum skal nýta sáttmálan, í tí løtu sáttmálin verður nýttur, um ikki annað sæst av samanhanginum.
+Grein 4: Skattligur heimstaður
+Greinin ásetur, nær ein persónur skattliga verður mettur at vera heimahoyrandi í einum av sáttmálabundnu ríkjunum.
+Málberingin ein persónur, sum er heimahoyrandi í einum sáttmálabundnum ríki, merkir, sambært stk. 1, ein persónur, sum er fult skattskyldugur í tí ávísa ríkinum vegna heimstað, bústað, bústað hjá leiðslu ella eina og hvørja aðra líknandi fyritreyt. Málberingin fevnir umframt sáttmálabundnu ríkini, eisini um tess politisku deildir, lokalu myndugleikar og almennu stovnar. At enda fevnir málberingin um persónssamtøkur og deyðsbúgv í tann mun, inntøka teirra verður skattað í hesum sáttmálbundna ríki, á sama hátt, sum inntøka, sum persónur fær, ella ogn, sum persónur eigur, ið er heimahoyrandi har.
+Ein persónur kann vera fult skattskyldugur í fleiri ríkjum sambært innanhýsis lóggávuni hjá hesum ríkjum. Stk. 2 og 3 áseta eina røð av fyritreytum fyri at loysa henda trupulleika við dupultum bústaði. Hvat sáttmálanum viðvíkur, kann ein ikki vera heimahoyrandi í meira enn einum ríki. Tí er neyðugt at gera av, í hvørjum av sáttmálbundnu ríkjunum viðkomandi persónur verður mettur at vera heimahoyrandi.
+Fyri likamligar persónar verður spurningurin avgjørdur sambært fyritreytum í stk. 2, litra a) til d), eftir ásettu raðfestingini. Hetta merkir, at bert um málið ikki kann loysast eftir ásetingunum í litra a), er møguligt at fara víðari til litra b) og so framvegis.
+Tá ið soleiðis er, at likamligur persónur sambært stk. 1 er heimahoyrandi í fleiri sáttmálabundnum ríkjum:
+a. verður hann bert mettur at vera heimahoyrandi í ríkinum, har hann hevur fastan bústað tøkan; um hann hevur fastan bústað tøkan í fleiri sáttmálabundnum ríkjum, verður hann bert hildin at búgva í tí sáttmálabundna ríkinum, sum hann persónliga og fíggjarliga er mest knýttur at, (hevur sín miðdepil í lívsáhugamálum);
+b. ber ikki til at gera av, í hvørjum ríki miðdepilin í lívsáhugamálum hansara er, ella hevur hann ikki í nøkrum sáttmálabundnum ríki fastan bústað tøkan, tá
+verður hann bert hildin at verða heimahoyrandi í tí parti av ríkinum, har hann vanliga dvølur;
+c. um hann vanliga dvølur í fleiri ríkjum, ella um hann ikki hevur tílíkt dvøl í nøkrum av teimum, verður hann bert mettur at vera heimahoyrandi í tí ríkinum, har hann er ríkisborgari;
+d. er hann ríkisborgari í fleiri ríkjum, ella er hann ikki ríkisborgari í nøkrum ríki, skulu teir málsráðandi myndugleikarnir í teimum avvarðandi sáttmálabundnu
+ríkjunum taka avgerð í málinum við sínámillum avtalu.
+Fyri ikki likamligar persónar verður stk. 3 nýtt, har ásett er, at ikki likamligur persónur, sum eftir reglunum í stk. 1 er heimahoyrandi í fleiri av teimum sáttmálabundnu ríkjunum, bert skal metast sum heimahoyrandi í tí ríki, har veruliga leiðslan hevur sæti.
+Grein 5: Fastur rakstrarstaður
+Málberingin "fastur rakstrarstaður" fevnir vanliga um fastan handilsstað, har virkið heilt ella lutvíst røkir starv sítt. Hetta er t.d:
+a. staður, haðani virkið verður stjórnað,
+b. deild,
+c. skrivstova,
+d. verksmiðja,
+e. verkstaður,
+f. náms-, olju- ella gasskelda, grótbrot ella eitthvørt annað stað, har ið náttúruríkidømi verður vunnið.
+Undir málberingina "fastur rakstrarstaður" kemur eisini byggi-, nýgerðar-, innleggingar- ella uppsetingararbeiði, ella virksemi, sum fevnir um ráðlegging, eftirlit, ráðgeving ella aðra persónliga hjálp í sambandi við slíka ætlan. Treytin fyri at slíkt arbeiði í sær sjálvum skal metast sum fastur rakstrarstaður eftir sáttmálanum er tó sum meginregla, at ætlanin ella virksemið er í gerð í landinum í meir enn 12 mánaðar.
+Sjálvt um eitt virksemi eftir § 2, stk. 3 í skattalógini er at meta sum fastur rakstrarstaður, um arbeiðið varar longur enn 30 dagar, so er, tá norðurlendski sáttmálin skal nýtast, bert talan um fastan rakstrarstað, um arbeiðið varar longur enn 12 mánaðar. Við áseting av 12 mánaða tíðarskeiðinum verður virksemið, sum verður útint av einum virki, sum hevur felags áhugamál við eitt annað virki, mett sum útint av tí virki, sum tað hevur felags áhugamál við, um so er, at virksemið hjá báðum virkjunum í høvuðsheitum er av sama slag og viðvíkur somu ætlan.
+Í grein 5, stk. 5 er ásett, at tað at hava ymiskt slag av virksemi, hvørs endamál bert er hjálpandi, ikki í sjálvum sær er at meta sum fastur rakstrarstaður.
+Stk. 6 og 7 viðgera virksemi, ið verður útint gjøgnum umboðsmann í keldulandinum. Høvuðsreglan er, at virksemi, ið verður útint gjøgnum ein óheftan umboðsmann, sum virkar innan karmarnar á sínum vanliga vinnuøki, ikki er at meta sum fastur rakstrarstaður, meðan talan er um fastan rakstrarstað, um umboðsmaðurin hevur fulltrú til at gera avtalur í navni virkisins.
+At enda er í stk. 8 ásett, at tað, at eitt móðurfelag í einum ríki hevur eitt dótturfelag í einum øðrum ríki, ikki í sjálvum sær viðførir, at tað eina felagið
+metist sum fastur rakstrarstaður fyri hitt felagið.
+Grein 6: Inntøka av fastari ogn
+Reglurnar áseta, at inntøkur av fastari ogn kunnu verða skattaðar í tí landi, har ognin er.
+Tá tað er ásett, at inntøkan kann verða skattað í hinum ríkinum, skulu Føroyar geva kredittlinking fyri skatt, sum er goldin í hinum ríkinum sambært
+hesi reglu. Víst verður til § 25, stk. 2, litra a í sáttmálanum.
+Sambært lýsingini av fastari ogn í grein 3, stk. 1, litra f) hevur málberingin ”føst ogn” tann týdning, sum málberingin hevur í lóggávuni í tí sáttmálabundna ríkinum, har ognin liggur. Málberingin fevnir tó í øllum førum um tað, sum hoyrir til føstu ognina, innistøða og amboð, sum nýtt verður í vinnu við land- og skógbrúki, bygningar, rættindi, har borgarligu rættarreglurnar um fasta ogn verða nýttar, brúksrættur til fasta ogn og rættindi til skiftandi ella fastar veitingar, ið goldnar verða fyri at nýta ella fyri rættin til at nýta mineralríkidømi, keldur ella onnur náttúruríkidømi.
+Í stk. 3 er ásett, at um tað at eiga partabrøv v.m. í einum felagi, hvørs høvuðsendamál er at eiga fasta ogn, gevur eigaranum ein brúksrætt til eina fast ogn, sum felagið eigur, kann tað sáttmálabundna ríkið, har fasta ognin liggur, skatta inntøku, sum verður havd av beinleiðis nýtslu, við útleigu ella við einhvørjari nýtslu av slíkum brúksrætti.
+Grein 7: Inntøka av vinnuvirki
+Høvuðsreglan er, at inntøka av vinnuvirki bert kann verða skattað í tí ríkinum, har vinnuvirkið er heimahoyrandi, uttan so at virksemið verður rikið frá einum føstum rakstrarstaði í hinum ríkinum. Um so er, at virkið rekur tílíka vinnu gjøgnum fastan rakstrarstað, kann tess inntøka verða skattað í keldulandinum, men tó bert hvat tí parti viðvíkur, sum kann verða kannaður fasta rakstrarstaðnum.
+Tá tað er ásett, at inntøka frá føstum rakstrarstaði kann verða skattað í hinum ríkinum, skulu Føroyar geva kredittlinking fyri tann skatt, sum er goldin í hinum ríkinum sambært hesi grein. Víst verður til grein 25, stk. 2, litra a.
+Stk. 2-6 innihalda ásetingar um uppgerð av skattskyldugu inntøkuni hjá einum føstum rakstrarstaði.
+Stk. 7 ásetur, at í teimum førum, har vinningurin fevnir um inntøkur, ið eru serstakt umrøddar í øðrum greinum í hesum sáttmála, skulu tílíkar inntøkur viðgerast eftir ásetingunum í teimum greinunum. Í ávísum førum vísa aðrar ásetingar tó til, at skattingin kann fara fram í tí ríkinum, har fasti rakstrarstaðurin liggur um so er, at inntøkan hevur beinleiðis samband við fasta rakstrarstaðin.
+Grein 8: Skipa- og loftferðsla
+Inntøka av skipa- og loftferðsluvirksemi í altjóða ferðslu kann bert skattast í tí sáttmálabundna ríki, har persónurin, sum fær inntøkuna, er heimahoyrandi. Um so er at viðkomandi, sum rekur virksemið, ikki er heimahoyrandi í Føroyum, kunnu Føroyar sostatt ikki skatta hesa inntøku. Sjálvt um viðkomandi skuldi verið fult skattskyldugur í Føroyum, so kunnu Føroyar ikki skatta ella taka inntøkuna við í skattagrundarlagið í Føroyum. Víst verður til grein 26, stk. 1 í sáttmálanum.
+Viðvíkjandi málberingini ”altjóða ferðsla” verður víst til grein 3.
+Sambært stk. 2 kann inntøka, sum fæst við at nýta, viðlíkahalda ella leiga út bingjur (heruppií viðfestivognar og onnur tól til bingjuflutning), sum nýttar verða til góðs ella vøruflutning, bert skattast í tí ríki, har persónurin, sum fær inntøkuna er heimahoyrandi, uttan so at bingjurnar einans verða nýttar millum støð í hinum sáttmálabundna ríkinum.
+Grein 9: Virki, sum sínámillum eru bundin hvørt at øðrum
+Greinin ásetir tað sokallaða ”arm’s length” hugtakið fyri viðurskifti millum sínámillum bundin feløg. Hetta skal skiljast soleiðis, at um sínámillum bundin feløg, sum t.d. eitt móðurfelag í einum ríki og eitt dótturfelag í einum øðrum ríki, handla sínámillum eftir øðrum treytum enn teimum, sum høvdu verið galdandi á fría marknaðinum, kunnu tey bæði sáttmálabundnu ríkini javna inntøkuna og harvið skattingargrundarlagið, soleiðis at inntøkan verður ásett, sum hon hevði verið, um feløgini høvdu handlað undir vanligum marknaðartreytum.
+Grein 10: Vinningsbýti
+Vinningsbýti, sum verður útgoldið frá felag, sum er heimahoyrandi í einum sáttmálabundnum ríki, til persón, sum er heimahoyrandi í einum øðrum sáttmálabundnum ríki, kann skattast í tí ríki, har persónurin er heimahoyrandi.
+Í stk. 3 er ásett, at vinningsbýti, hóast ásetingina í stk. 1, eisini kann verða skattað í tí sáttmálabundna ríkinum, har felagið, sum rindar vinningsbýtið er heimahoyrandi. Hendan skatting í keldulandinum, kann ikki fara uppum 15% av bruttoupphæddini.
+Tá tað er ásett, at vinningsbýti kann verða skattað í keldulandinum, skulu Føroyar, sum domicilland geva kredittlinking fyri tey 15%, sum eru goldin í keldulandinum. Víst verður til grein 25, stk. 2, litra a.
+Um móttakarin av vinningsbýtinum er eitt felag, sum eigur minst 10% av partapeninginum í tí felagi, sum rindar vinningsbýtið, kann keldulandið kortini ikki skatta vinningsbýtið. Vinningsbýti er í slíkum førum frítikið fyri keldulandsskatt.
+Eftir hesum verður eingin keldulandsskattur rindaður av vinningsbýti, sum t.d. føroyskt felag fær frá einum dótturfelag, sum er heimahoyrandi í øðrum norðurlandi, um so er, at tað føroyska felagið eigur 10% av partapeninginum í útlutandi felagnum. Vinningsbýtið verður tó skattað fult út í Føroyum eftir
+kapitalvinningsskattalógini. Bert um tað føroyska felagið eigur 25% ella meira av partapeninginum í tí útlutandi felagnum, er vinningsbýtið skattafrítt í Føroyum, jbr. § 9 í kapitalvinningsskattalógini.
+Í føri, har eitt felag, sum er heimahoyrandi í einum sáttmálabundum ríki, eigur lut í einum útlutandi felagi í einum øðrum sáttmálabundnum ríki gjøgnum ein ella fleiri persónfelagsskapir, skal hetta felag – við nýtslu av stykki 3 – verða mett beinleiðis at eiga ein lut í tí útgjaldandi felagnum. Felagsins lutur í tí útgjaldandi felagnum vegna henda ognarrætt verður mettur at mótsvara tí luti, sum felagið eigur í tí útlutandi felagnum gjøgnum persónfelagsskapin ella persónfelagsskapirnar.
+Í stk. 4 er serlig áseting, sum er galdandi fyri vinningsbýti frá feløgum, sum eru heimahoyrandi í Íslandi. Eftir íslendskum reglum, kann eitt felag í ávísum førum fáa frádrátt í skattskyldugu inntøkuni fyri útlutað vinningsbýti. Tí er gjørd ein serlig áseting um, at Ísland, hóast ásetingina í grein 10, stk. 3, kann skatta slíkt vinningsbýti, sum verður goldið móðurfelag í øðrum norðurlandi, við 15% um so er, at felagið hevur fingið frádrátt fyri tað rindaða vinningsbýtið.
+Í stk. 2 er ásett, at um tann partabrævaogn, sum grundar vinningsbýtið, hevur beinleiðis samband við vinnuvirki, sum verður rikið frá føstum rakstrarstaði, ella, tá talan er um fría vinnu, frá tí fasta staðnum, kann vinningsbýtið, hóast ásetingarnar í stk. 1 og 3, skattast har, sum fasti rakstrarstaðurin ella fasta staðið liggur.
+Málberingin ”vinningsbýti” er í stk. 6 lýst sum inntøka av partabrøvum, lutaprógvum ella øðrum rættindum, sum ikki eru skuldarbrøv, sum geva rætt til lut í vinningi eins og aðrari inntøku frá feløgum, sum sambært lóggávu í tí ríkinum, har útlutandi felagið er heimahoyrandi, verður viðgjørd sum inntøka av partabrøvum.
+Sum vinningsbýti verður eisini roknað inntøka frá eini skipan, sum hevur við sær rætt til lut í vinningi í tann mun, hon sambært lóggávuni í tí sáttmálabundna ríkinum, haðani hon stavar, er at meta sum slík inntøka.
+Grein 11: Renta
+Rentur, sum stava frá einum sáttmálabundnum ríki og verða goldnar einum persóni í einum øðrum sáttmálabundnum ríki, kunnu bert skattast í seinna nevnda ríkinum, t.v.s. har sum persónurin er heimahoyrandi.
+Tá tað er ásett, at rentuinntøkan bert kann verða skattað í ríkinum, har persónurin, sum fær rentuinntøkuna, er heimahoyrandi, kunnu Føroyar, um so er at viðkomandi ikki er heimahoyrandi í Føroyum, ikki skatta rentuinntøkuna. Rentuinntøkan kann heldur ikki verða tikin við í skattagrundarlagið í Føroyum. Víst verður til grein 26, stk. 1.
+Um so er, at kravið, sum rentan er grundað á, hevur beinleiðis samband viðvirki, sum verður rikið frá føstum rakstrarstaði, ávikavist fríari vinnu, sum verður útint frá føstum staði, skal rentan tó verða skattað sambært ásetingunum í grein 7 ella 14, – t.v.s. í tí ríki, har tann fasti rakstrarstaðurin ella tann fasti staðurin liggur.
+Í stk. 3 verður málberingin renta lýst sum inntøka av skuldarbrøvum av einum og hvørjum slag, sum ikki er vinningsbýti sambært grein 10, stk. 6, uttan mun til, um tey eru tryggjað við veðhaldi í fastari ogn ella ikki. Málberingin fevnir serstakliga um inntøku av ríkisbrævalánum og inntøku av lánsbrøvum ella kuldarbrøvum, heruppií kursvinningur og annar vinningur, sum stavar frá tílíkum ríkisbrævalánum, lánsbrøvum ella skuldarbrøvum. Dragurenta (straftillæg), sum stendst av at tað ikki verður goldið rættstundis, verður ikki roknað sum renta eftir hesi grein.
+Í stk. 4 er ásett, at um serligt samband er millum tann, sum rindar rentuna og tann, sum fær rentugjaldið, ella triðja persón, og hetta hevur ført til, at rentan ikki svarar til ta rentu, sum hevði verið avtalað millum sínámillum óheftar partar, so verður tann upphæddin, sum verður viðgjørd eftir rentuásetingunum í sáttmálanum, tillagað.
+Grein 12: Nýtslugjald (royalty)
+Nýtslugjøld, ið stava frá einum sáttmálabundnum ríki og verða goldin persóni, ið er heimahoyrandi í øðrum sáttmálabundnum ríki, kunnu bert verða skattað í hesum ríki, t.v.s. í ríkinum, sum persónurin er heimahoyrandi í. Hetta er treytað av, at persónurin er rættur ognari av nýtslugjaldinum.
+Tá tað er ásett, at nýtslugjaldið bert kann verða skattað í ríkinum, har persónurin, sum fær inntøkuna, er heimahoyrandi, kunnu Føroyar ikki skatta nýtslugjaldið, um so er, at viðkomandi ikki er heimahoyrandi í Føroyum. Nýtslugjaldið kann í slíkum førum heldur ikki verða tikið við í skattagrundarlagið í Føroyum. Víst verður til grein 26, stk. 1.
+Um so er, at rættindi ella ogn, sum eru grundarlag undir nýtslugjaldinum, hava beinleiðis samband við fastan rakstrarstað ella fastan stað, verða nýtslugjøld skattaði sambært ásetingunum í grein 7 ella 14, tað er í tí ríki, sum tann fasti rakstrarstaðurin ella tann fasti staðurin liggur í.
+Málberingin nýtslugjald/royalty fevnir smb. stk. 3 um gjalding av øllum slag, sum fæst sum samsýning fyri at nýta ella hava rættin til at nýta einhvønn upphavsrætt til bókmentaligt, listarligt ella vísindaligt verk, (heruppií spælifilm, filmar og bond til útvarps- og sjónvarpssendingar), øll einkarrættindi, vørumerki, mynstur ella fyrimyndir, tekningar, loyniligar formálar (formlar), loyniligan framleiðsluhátt, ella fyri upplýsingar um ídnaðar- handils- ella vísindaligar royndir og kunnleika.
+Henda lýsing av nýtslugjaldi er júst tann sama, sum nýtt verður í § 2, stk. 1, litra c í skattalógini.
+Í stk. 4 er ásett, at um serligt samband er millum tann, sum rindar nýtslugjaldið, og tann, sum fær nýtslugjaldið, ella triðja persón, og hetta hevur ført til, at nýtslugjaldið ikki svarar til tað gjaldið, sum hevði verið avtalað millum sínámillum óheftar partar, so verður upphæddin, sum verður viðgjørd eftir ásetingunum um nýtslugjald í sáttmálanum, tillagað.
+Grein 13: Kapitalvinningur
+Stk. 1. Vinningur við sølu av fastari ogn kann verða skattaður í tí ríki, sum fasta ognin er í, t.v.s. í keldulandinum.
+Tá annað ríki skattar ein persón heimahoyrandi í Føroyum eftir hesi áseting, skulu Føroyar geva kredittlinking fyri tann skatt, sum er goldin hinum ríkinum.
+Víst verður til grein 25, stk. 2, litra a. Tað er bert, um slík inntøka kann verða skattað í Føroyum eftir internum reglum, at Føroyar kunnu geva linking fyri
+skatt, sum er goldin øðrum ríki.
+Í stk. 2 er ásett, at vinningur við sølu av partabrøvum í einum felagi, hvørs ogn í høvuðsheitum er føst ogn, somuleiðis kann skattast í tí ríkinum, har fasta ognin er. Tað er ein treyt, at minst 75% av ogn felagsins (áðrenn frádrátt av skuld) beinleiðis ella óbeinleiðis er føst ogn, sum liggur í hinum ríkinum. Á henda hátt skattast vinningur av tílíkum fastognar-partabrøvum á sama hátt sum vinningur av sjálvari tí føstu ognini.
+Tá tað er soleiðis, at Føroyar eftir hesi áseting hava rættin til at skatta vinningin av partabrøvunum, tí ognin, sum felagið eigur, er í Føroyum, so kunnu Føroyar tó ikki gera nýtslu av skattingarrættinum eftir hesi áseting, um so er at persónurin, sum selur partabrøvini, ikki er fult skattskyldugur í Føroyum. Hetta er grundað á, at tað í Føroyum ikki er avmarkað skattskylda fyri vinning við sølu av partabrøvum. Sáttmálin kann ikki geva heimild til at skatta eina inntøku, sum Føroyar ikki hava heimild til at skatta eftir internum reglum.
+Um so er, at ein persónur, sum er heimahoyrandi í Føroyum, selur partabræv, sum kemur undir hesa áseting, og eitt annað sáttmálabundið ríkið tí hevur heimild at skatta vinningin, skulu Føroyar geva kreditlinking fyri tann skatt, sum er goldin hinum ríkinum. Víst verður til grein 25, stk. 2, litra a.
+Í stk. 3 er ásett, at vinningur við at selja leysafæ, ið er partur av vinnufænum í einum føstum rakstrarstaði ella vinningur við at selja leysafæ, sum persónur ræður yvir í samband við fría vinnu frá føstum staði, kann verða skattaður í tí ríkinum, har fasti rakstrarstaðurin ella fasti staðurin er, t.v.s. í keldulandinum. Sama er galdandi fyri vinning við sølu av fasta rakstrarstaðnum ella fasta staðnum.
+Tá virki, sum er heimahoyrandi í Føroyum, selur leysafæ, sum er partur av føstum rakstrarstaði í øðrum ríki, skulu Føroyar geva kredittlinking fyri tann skatt, sum virkið rindar í hinum ríkinum. Víst verður til grein 25, stk. 2, litra a.
+Stk. 4 ásetir, at vinningur við sølu av skipum og flogførum, sum nýtt verða í altjóða ferðslu, ella av leysafæ, ið knýtt er at rakstrinum av slíkum skipum ella flogførum, kann bert verða skattaður í landinum, har tann, sum selur, er heimahoyrandi.
+Sama er galdandi fyri vinning av at selja bingjur (heruppií viðfestivognar og onnur tól til bingjuflutning), sum verða nýtt til góðsflutning, uttan so at bingjurnar bert verða nýttar millum staðir í hinum sáttmálabundna ríkinum. Víst verður til stk. 5.
+Tá tað er ásett, at vinningur í hesum førum bert kann verða skattaður í ríkinum, har tann, sum selur er heimahoyrandi, kunnu Føroyar ikki skatta slíkan vinning, í teimum førum, tá viðkomandi ikki er heimahoyrandi í Føroyum. Hetta er galdandi, sjálvt um skipið ella flogfarið er knýtt at einum føstum rakstrarstaði í Føroyum. Vinningurin kann heldur ikki í slíkum førum verða tikin við í skattagrundarlagið í Føroyum. Víst verður til grein 26, stk. 1.
+Í stk. 6 er ásett, at vinningur við sølu av øllum øðrum ognum enn teimum, sum eru nevndar í stk. 1-5, kann bert verða skattaður í tí ríkinum, har seljarin er heimahoyrandi.
+Í stk. 7 er ásett, at vinningur, sum við avhendan av partabrøvum ella øðrum lutum ella rættindum í einum felagi ella einum persónfelagsskapi, verður vunnin av einum likamligum persóni, sum hevur verið heimahoyrandi í einum sáttmálabundnum ríki og er vorðin heimahoyrandi í einum øðrum sáttmálabundnum ríki, kann – hóast ásetingarnar í stykki 6 – verða skattaður í tí fyrstnevnda sáttmálabundna ríkinum, um avhendingin av partabrøvunum, lutunum ella rættindunum fer fram nakrantíð innan fyri tey tíggju árini, sum eru beint eftir tí ári, tá persónurin helt uppat at verða heimahoyrandi í fyrstnevnda ríkinum. Tað fyrstnevnda ríki kann tó bert skatta ta virðisøking, sum er komin, áðrenn tann likamligi persónurin gjørdist heimahoyrandi í hinum sáttmálabundna ríkinum. Sum rættindi í einum felagi ella einum persónfelagsskapi verður roknað, tá ið hetta stykki verður nýtt, rættindi ella aðrar ognir, sum eftir lóggávuni í fyrstnevnda ríkinum við skattaáseting verða viðgjørdar á sama hátt sum vinningur við avhendan av lutum í einum felagi ella einum persónfelagsskapi.
+Vinningur av sølu av partabrøvum v.m. í Føroyum er ikki avmarkað skattskyldugur, og tí kunnu Føroyar ikki gera nýtslu av skattingarrættinum eftir hesi áseting, tá Føroyar eru kelduland, um viðkomandi persónur ikki er fult skattskyldugur í Føroyum.
+Í protokol frá 4. apríl 2008 er ásett, at rætturin hjá einum sáttmálabundnum ríki sambært tess lóggávu at skatta staðfestan vinning, sum ein persónur, ið flytur úr hesum ríki verður hildin at fáa í samband við sjálva flytingina, ikki verður nervaður av grein 13, stk. 6 og 7.
+Grein 14: Frí vinna
+Inntøka av fríari vinnu, sum t.d. sjálvstøðugum virksemi sum lækni, sakførari, verkfrøðingur, arkitektur, verður vanliga skattað í landinum, har persónurin er heimahoyrandi. Keldulandið kann tó skatta slíka inntøku, um persónur hevur fastan stað í keldulandinum, ið støðugt er honum til taks til tess at røkja virki sítt, ella hann dvølir í keldulandinum í einum ella fleiri tíðarskeiðum, ið tilsamans fara upp um 183 dagar í einum 12 mánaða tíðarskeiði.
+Tá viðkomandi er heimahoyrandi í Føroyum, og keldulandið kann skatta sambært ásetingini, skulu Føroyar geva kredittlinking fyri tann skatt, sum er goldin í hinum ríkinum. Víst verður til grein 25, stk. 2, litra a.
+Orðingin ”fastur staður” er, mótvegis málberingini ”fastur rakstrarstaður”, ikki lýstur í sáttmálanum, men orðingin fevnir vanliga um eina skrivstovu ella eitt viðtaluhøli og viðgerðarhøli ella líknandi, har viðskiftafólk kunnu venda sær. Tá staðfestast skal, um fastur staður er í einum landi, verða vanliga somu atlit nýtt, sum tá fastur rakstrarstaður verður staðfestur.
+Grein 15: Persónligt arbeiði í tænastuviðurskiftum
+Inntøka av persónligum arbeiði í tænastuviðurskiftum kann bert verða skattað, har persónurin er heimahoyrandi uttan so, at arbeiðið er gjørt í øðrum landi. Er arbeiðið gjørt í øðrum landi, kann samsýningin, sum fæst fyri arbeiðið, verða skattað har.
+Hóast tað er ásett, at samsýning fyri arbeiði í tænastuviðurskiftum kann verða skattað í ríkinum, har arbeiðið er gjørt, skulu Føroyar veita eksemptiónslinking fyri tann skatt, sum fellur á inntøku, sum eftir grein 15, stk. 1 kann verða skattað í arbeiðsríkinum. Víst verður til grein 25, stk. 2, litra c.
+Í stk. 2 er ásett, at hóast arbeiðið verður gjørt í øðrum landi, kann inntøkan
+ikki verða skattað í keldulandinum, um so er, at:
+a. løntakarin í mesta lagi dvølur í keldulandinum í 183 dagar í einum 12-mánaða tíðarskeiði, og
+b. lønarinntøkan ikki verður rindað av ella fyri arbeiðsgevara, sum er heimahoyrandi í arbeiðslandinum, og
+c. lønarsamsýningin ikki verður løgd á ein fastan rakstrarstað ella fastan stað, og
+d. talan ikki er um arbeiðsútleigan.
+Allar fýra treytirnar skulu verða loknar, fyri at inntøkan ikki kann verða skattað í arbeiðsríkinum. Um so er, at allar fýra treytir eru loknar, er tað bert heimlandið, sum kann skatta inntøkuna.
+Um t.d. samsýningin frá keldulandinum er innvunnin í einum tíðarskeiði, sum fer uppum 183 dagar, hevur keldulandið rættin til at skatta inntøkuna, eins og tað hevur rættin til at skatta inntøkuna, um arbeiðsgevarin er heimahoyrandi í keldulandinum, ella inntøkan verður løgd á fastan rakstrarstað, sum arbeiðsgevarin hevur í keldulandinum. Eisini hevur keldulandið rætt til at skatta, um talan er um arbeiðsútleigan. Í protokol frá 23. september 1996 er ásett, at ein arbeiðstakari verður roknaður fyri útleigaður, tá hann av einhvørjum (útleigara) verður bjóðaður út at arbeiða í virkinum hjá einhvørjum øðrum (arbeiðsgevara) í einum øðrum
+sáttmálabundnum ríki treytað av, at arbeiðsgevarin (leigarin) er heimahoyrandi ella hevur fastan rakstrarstað í hesum seinni nevnda ríkinum, og at útleigarin ikki hevur ábyrgdina av og heldur ikki stendur til svars fyri úrslitinum av arbeiðinum.
+Tá gerast skal av, um ein arbeiðstakari er at rokna sum útleigaður, skal hetta verða gjørt út frá eini heildarmetan. Tá ið mett verður, skal serstakur dentur verða lagdur á, um:
+a. arbeiðsgevarin hevur ovastu leiðsluna av arbeiðinum,
+b. arbeiðið verður gjørt á einum arbeiðsplássi, sum arbeiðsgevarin ræður yvir og ber ábyrgdina av,
+c. gjaldið til útleigaran verður roknað eftir tíðini, sum arbeiðið tekur, ella út frá øðrum sambandi millum samsýningina og ta løn, sum arbeiðstakarin fær,
+d. arbeiðsgevarin letur størsta partin av amboðunum og tilfarinum, og
+e. útleigarin ásetur ikki einsamallur talið á arbeiðstakarum og útbúgving teirra.
+Í stk. 3 er ásett, at lønarinntøka frá arbeiði umborð á skipum í altjóða ferðslu kann skattast í ”flagglandinum”, sum er tað ríki, har skipið er skrásett við tjóðskaparbrævi. Fremmand skip, sum ein persónur í einum ríki hevur leigað uppá sonevndar ”bare-boat” treytir, verða javnmett við donsk, føroysk, íslendsk, norsk ella svensk skip.
+Orðingin "kann skatta" merkir, at bústaðarlandið gevur kredittlinking fyri skatt, sum er goldin í hinum ríkinum. Í grein 31, stk. 3 er tó ásett, at 3 tey fyrstu árini eftir at tvískattasáttmálin kom í gildi, skuldi eksemptiónshátturin nýtast fyri inntøku frá arbeiði umborð á skipum í altjóða ferðslu. Hetta merkir, at fram til og við 2000 var eksemptiónslinking givin fyri tann skatt, sum fall á inntøkuna. Frá og við inntøkuárinum 2001 verður kredittlinking givin fyri skatt, sum er goldin í øðrum ríki.
+Føroyar og Danmark hava 9. desember 2005 gjørt eina ískoytisavtalu galdandi frá 1. januar 2005
+Uttan mun til ásetingarnar í grein 15 og grein 21 ber ískoytisavtalan í viðurskiftunum millum Føroyar og Danmark í sær, at samsýning fyri starv umborð á føroyskum skipum, skrásett í Føroysku Altjóða Skipaskránni, ella donskum skipum, skrásett í Donsku Altjóða Skipaskránni bert kann verða skattað í tí partinum av ríkinum, har skipið hevur tjóðarprógv, t.v.s. “flagglandinum”. Henda áseting verður einans nýtt, um arbeiði verður útint umborð á skipi, ið verður nýtt til endamál, sum lúka treytirnar fyri skattalækking eftir bæði føroyskum reglum fyri arbeiði umborð á skipum, skrásett í Føroysku Altjóða Skipaskránni, eins og eftir donskum reglum fyri arbeiði umborð á skipum, skrásett í Donsku Altjóða Skipaskránni. Fremmand skip, sum ein persónur heimahoyrandi í Føroyum ella í Danmark leigar eftir sonevndum bareboat-treytum verða javnmett við føroysk skip, skrásett í Føroysku Altjóða Skipaskránni, ella donsk skip, skrásett í Donsku Altjóða Skipaskránni.
+Grein 26, stk. 2 er ikki galdandi fyri samsýning, sum er fevnd av ískoytisavtaluni.
+Samsýning fyri arbeiði, sum er útint umborð á flogfari, kann eftir stk. 4 bert skattast í ríkinum, har tann, sum fær inntøkuna, er heimahoyrandi. Sama er galdandi fyri hýru fyri arbeiði, sum er útint umborð á fiski-, kópa- ella hvalaveiðubáti.
+Um so er, at persónurin er heimahoyrandi í øðrum sáttmálabundnum ríki, kunnu Føroyar ikki skatta inntøku frá flogfari ella frá eitt nú fiskiskipi. Inntøkan kann heldur ikki verða tikin við í skattagrundarlagið í Føroyum. Víst verður til grein 26, stk. 1.
+Grein 16: Nevndarsamsýningar
+Nevndarsamsýning og líknandi samsýningar, sum persónur fær sum limur í nevndini ella aðrari tílíkari skipan í einum felagi, kann verða skattað í tí ríkinum, sum felagið er heimahoyrandi í.
+Tá ásett er, at keldulandið kann skatta nevndarsamsýningina, skulu Føroyar geva kredittlinking fyri skatt, sum er goldin í hinum sáttmálabundna ríkinum. Víst verður til grein 25, stk. 2, litra a.
+Grein 17: Listafólk og ítróttarfólk
+Listafólk og ítróttarfólk, eitt nú sjónleikarar, films- útvarps- ella sjónvarpslistafólk, tónleikarar, fimleika- ella ítróttarfólk, kunnu skattast í tí ríkinum, sum tey útinna sítt virksemi í, undantikið tá talan er um virksemi, sum í høvuðsheitum verður rindað av almennum peningi frá bústaðarlandinum.
+Hetta er eisini galdandi, hóast inntøkan legst til onnur enn listafólkini ella ítróttarfólkini sjálvi.
+Tá ásett er, at inntøkan hjá listafólkum v.m. kann verða skattað í keldulandinum, skulu Føroyar, sum domicilland geva kredittlinking fyri skatt, sum er goldin í keldulandinum. Víst verður til grein 25, stk. 2, litra a.
+Grein 18: Eftirlønir v.m.
+Sambært stk. 1 kunnu eftirlønir, lívrenta og útgjaldingar sambært almannalóggávu skattast í útgjaldandi ríkinum.
+Tá tað er ásett, at eftirlønir og almannaveitingar v.m. kunnu skattast í keldulandinum, skulu Føroyar, tá Føroyar eru domicilland, geva kredittlinking fyri skatt, sum goldin er í keldulandinum. Víst verður til grein 25, stk. 2, litra a.
+Í protokol frá 23. september 1996, er ásett at ”almannaveitingar”, hvat viðvíkur Danmark, fevnir um ”orlovsydelser”.
+Sambært stk. 2, er uppihaldspeningur, sum verður goldin av persóni, heimahoyrandi í einum sáttmálabundnum ríki, til hjúnafelaga, fyrrverandi hjúnafelaga ella børn, sum eru heimahoyrandi í einum øðrum ríki, ikki skattskyldugur í tí ríki, sum hjúnafelagin v.m. er heimahoyrandi í, um so er, at uppihaldspeningurin heldur ikki hevði verið skattskyldugur í tí ríki, sum uppihaldspeningurin er goldin úr.
+Eftir føroyskum reglum eru barnagjald og onnur serlig gjøld eftir lóg um rættarstøðu barnanna skattafrí eftir § 29, nr. 13 í skattalógini. Hendan regla verður nýtt analogt uppá barnagjøld úr øðrum londum. Tað er bert normalgjaldið og tey serligu gjøldini, sum eru ásett í lóg um rættarstøðu barnanna, sum eru skattafrí eftir hesi áseting. Verður barnagjald goldið, sum er størri enn normalgjaldið, er hesin parturin av gjaldinum skattskyldugur.
+Kemur gjaldið úr einum øðrum Norðurlandi, har barnagjaldið er skattafrítt, kunnu Føroyar ikki skatta barnagjaldið og heldur ikki upphæddina, sum fer uppum normalgjaldið. Víst verður til grein 18, stk. 2 í sáttmálanum. Í Noregi er barnagjaldið skattafrítt. Í Danmark er tað bert normalgjaldið, sum er skattafrítt, eins og í Føroyum.
+Uttan mun til ásetingarnar í grein 18 um eftirlønir v.m. er sambært protokol frá 23. oktober 2014, sbr. løgtingslóg nr. 120 frá 15. desember 2014, ásett, at í viðurskiftunum millum Føroyar og Danmark er galdandi, at pensjónir, lívrenta, almannaveitingar, uppihaldspeningur og aðrar tílíkar veitingar, sum verða goldnar úr øðrum partinum av danska ríkinum til ein persón, sum er heimahoyrandi í hinum partinum av danska ríkinum, bert kunnu skattast, har móttakarin er heimahoyrandi.
+Tá ásett er, at eftirlønir v.m. bert kunnu skattast í tí parti av ríkinum, sum persónurin, ið fær eftirløn v.m., er heimahoyrandi í, kunnu Føroyar ikki skatta hesar inntøkur, sum verða útgoldnar úr Føroyum, um so er, at persónurin sambært sáttmálanum er heimahoyrandi í Danmark. Hetta hóast persónurin eisini skuldi verið fult skattskyldugur í Føroyum. Víst verður til grein 26, stk. 1.
+Eftirlønir og aðrar líknandi veitingar, sum eru skattaðar við inngjald sambært lóggávuni í hesum parti av ríkinum, kunnu bert verða skattaðar hesum parti av ríkinum, sbr. Protokolpunkt VII. Til grein 18, stk. 4, litra a.
+Umframt hesa serligu áseting í tvískattasáttmálanum, sum bert er galdandi í viðurskiftunum millum Føroyar og Danmark, eru harumframt serligar reglur um býti av avgjøldum eftir rentutryggingarlógini. Talan er um eitt nú avgjøld á kapitaluppsparingum. Hesi avgjøld eru ikki fevnd av tvískattasáttmálanum.
+Í protokol frá 4. apríl 2008 eru ásettar hesar yvirgangsreglur galdandi fyri Finnland og Svøríki.
+Uttan mun til ásetingina í grein 18, stk. 1, kann Finnland nýta hesar ásetingar:
+1. Eftirløn og lívrenta, sum verður goldin av einum øðrum sáttmálabundnum ríki enn Finnlandi, og útgjalding frá øðrum sáttmálabundnum ríki enn Finnlandi í samsvari við almannalóggávuna í hesum ríki til ein persón, sum er heimahoyrandi í Finnlandi, kann bert skattast í fyrstnevnda ríki. Hetta er galdandi, um persónurin var heimahoyrandi í Finnlandi tann 4. apríl 2008 og tá móttók slíka inntøku. Ásetingarnar eru bert galdandi so leingi persónurin uttan slit framvegis er heimahoyrandi í Finnlandi.
+2. Eftirløn og lívrenta, sum verður goldin av einum øðrum sáttmálabundnum ríki enn Svøríki, og útgjalding frá øðrum sáttmálabundnum ríki enn Svøríki í samsvari við almannalóggávuna í hesum ríki til ein persón, sum er heimahoyrandi í Svøríki, kann bert skattast í fyrstnevnda ríki. Hetta er galdandi, um persónurin var heimahoyrandi í Svøríki tann 4. apríl 2008 og tá móttók slíka inntøku. Ásetingarnar eru bert galdandi so leingi persónurin uttan slit framvegis er heimahoyrandi í Svøríki.
+Hóast protokolpunktið ikki er galdandi fyri Føroyar, so er tað í § 2 í løgtingslóg um at seta í gildi ásetingarnar í tvískattasáttmála millum tey norðurlendsku londini frá 23. september 1996, sum seinast er broyttur við protokol frá 4. apríl 2008, ásett, at fyri persónar, sum seinast 9. desember 2008 vóru skattskyldugur eftir § 1 í løgtingslóg um landsskatt og kommunuskatt, og sum um tað mundið fingu eftirløn úr Finnlandi, Íslandi, Noreg ella Svøríki, verður samlaði inntøkuskatturin lækkaður við tí upphædd, sum lutfalsliga fellur á nevndu eftirløn, so leingi viðkomandi verður verandi skattskyldugur eftir nevndu áseting.
+Ásetingin ber í sær, at samlaði inntøkuskatturin hjá hesum persónum framvegis verður lækkaður eftir eksemptiónsháttinum.
+Ásetingin er ikki galdandi fyri persónar, sum fáa eftirløn úr Danmark, tí millum Føroya og Danmark er við protokol ásett, at rætturin at leggja skatt á er hjá bústaðarlandinum.
+Grein 19: Almenn størv
+Løn og lík samsýning til persónar í almennum starvi kann sum meginregla bert verða skattað í tí útgjaldandi ríkinum. Tá tað er ásett, at samsýningin bert kann verða skattað í útgjaldandi ríkinum, skulu Føroyar geva eksemptiónslinking fyri tann skatt, sum fellur á samsýningina, sum verður útgoldin úr øðrum sáttmálabundnum ríki, til persón, sum er skattskyldugur í Føroyum. Víst verður til grein 25, stk. 2, litra b. Um so er, at persónurin er heimahoyrandi í tí útgjaldandi ríkinum, kunnu Føroyar ikki taka inntøkuna við í skattagrundarlagið, vísandi til grein 26, stk. 1, hetta sjálvt um viðkomandi er fult skattskyldugur í Føroyum.
+Í stk. 2 er ásett, at um arbeiðið er gjørt í bústaðarlandinum, og móttakarin antin er ríkisborgari í hesum ríki ella ikki er blivin heimahoyrandi í hesum ríki bert fyri at átaka sær viðkomandi arbeiði, kann viðkomandi tó bert verða skattaður, har starvið er gjørt. Ásetingin hevur serliga týdning fyri starvsfólk á sendistovum og líknandi.
+Í stk. 3 er ásett, at tær vanligu reglurnar um persónligar tænastuveitingar (grein 15), um nevndarsamsýningar (grein 16) og um listafólk og ítróttarfólk (grein 17), verða nýttar í staðin fyri stk. 1 og 2 í teimum førum, tá samsýningin verður útgoldin í samband við vinnuvirki, sum verður útint av einum sáttmálabundnum ríki, tess politisku undirdeildum, staðbundnum myndugleikum ella almennum stovnum.
+Punkt VIII í protokol frá 23. september 1996 viðvíkur skatting av fólkum í almennum størvum í viðurskiftunum millum Føroyar og Danmark.
+Løn og slík samsýning fyri arbeiði, ið er gjørt fyri ein almennan myndugleika, kann bert verða skattað í tí parti av ríkinum, sum arbeiðið er gjørt í, sambært litra a.
+Um so er, at persónurin er heimahoyrandi í Føroyum, men Danmark sambært hesi áseting hevur rætt til at skatta inntøkuna, tí arbeiðið er gjørt í Danmark, skulu Føroyar geva eksemptiónsavsláttur fyri skatt, sum fellur á inntøkuna, sum verður skattað í Danmark. Víst verður til grein 25, stk. 2, litra b.
+Sambært litra b kann samsýning, sum persónur, ið er heimahoyrandi í einum parti av ríkinum, fær fyri starv fyri hetta ríki, útint í hinum partinum av ríkinum, bert skattast í tí parti av ríkinum, sum rindar samsýningina, um lønmóttakarin uppiheldur sær í arbeiðslandinum í einum ella fleiri tíðarskeiðum, sum samanlagt ikki fara upp um 120 dagar innan fyri eitt 12-mánaða tíðarskeið, og lønin verður útgoldin av vanliga tænastustaðnum.
+Dømi:
+Um persónur arbeiðir fyri danskan almennan arbeiðsgevara í Føroyum, og hann uppiheldur sær í Føroyum undir 120 dagar, og lønin verður goldin av tí vanliga tænastustaðnum, sum er í Danmark, kann bert Danmark skatta inntøkuna. Fer uppihaldið í Føroyum uppum 120 dagar, ella lønin verður goldin av øðrum enn vanliga tænastustaðnum, kann inntøkan verða skattað í Føroyum.
+Um bert Danmark kann skatta inntøkuna eftir hesi áseting, og viðkomandi er heimahoyrandi í Danmark, kunnu Føroyar ikki rokna inntøkuna við í
+skattagrundarlagið. Víst verður til grein 26, stk. 1. Hesar ásetingar verða ikki nýttar, tá talan er um arbeiði útint í sambandi við vinnuligt virksemi, sum partur av ríkinum, tess politisku undirdeildir ella myndugleikar á staðnum reka. Tá verða greinarnar 15 (persónligt arbeiði í tænastuviðurskiftum), 16 (nevndarsamsýningar) og protokollpunkt VII (eftirlønir, almannaveitingar v.m.) nýttar í staðin.
+Í stk. 2 er ein áseting, sum viðvíkur gjøldum, sum hitt almenna fyriskipar einans til at gjalda kostnað av almennum ella embætisligum starvi, tá tey ikki innihalda nakra starvssamsýning. Tílík gjøld kunnu bert skattast í tí parti av ríkinum, sum tey eru útgoldin úr. Hetta er tó bert galdandi í 5 tey fyrstu árini, har tílík gjøld verða móttikin.
+Grein 20: Lesandi og praktikantar
+Í grein 20 verður millum annað sagt:
+"Ein persónur sum dvølur í einum sáttmálabundnum ríki bert við atliti til,
+a. lesnað við frálærustovn í hesum sáttmálabundna ríkinum, hvørs lesnaður er av tílíkum slag, at almennur stuðul fæst í hesum ríkinum, ella
+b. praktikk innan handil, fiskivinnu, ídnað, landbúnað ella skógarbrúk í hesum ríkinum, og sum er ella beint áðrenn dvølið var heimahoyrandi í einum øðrum
+sáttmálabundnum ríki, verður ikki skattaður í fyrst nevnda ríki av upphædd, sum hesin fær frá keldum uttan fyri hetta ríkið til uppihalds, lesnað ella praktikk."
+Sum punkt IX í protokol frá 23. september 1996 til hesa grein eru gjørdar serligar reglur.
+Stk. 1 og 2 snúgva seg um skatting av íslendskum og føroyskum lesandi v.m. í hinum sáttmálabundnu ríkjunum.
+Í stk. 1 er ásett, at persónar, sum dvøla í einum øðrum sáttmálabundnum ríki enn Føroyum ella Íslandi, einans við nærri lýstum lesnaði ella ávísari starvspraktikk fyri eygað, og sum beint áðrenn dvølina vóru heimahoyrandi íFøroyum ella Íslandi, fáa ein frádrátt uppá 20.000 svenskar krónur, ella mótvirðið í donskum, finskum, íslendskum ella norskum gjaldoyra, av lønarinntøku í tí ríkinum, sum viðkomandi dvølur í og sum lesturin gongur fyri seg í. Henda áseting er tó bert galdandi fyri tað tíðarskeið, sum lesturin ella starvspraktikkin vanliga varir, tó í mesta lagi 6 ár, sbr. stk. 2.
+Stk. 3 snýr seg um viðurskiftini millum Føroyar og Danmark. Ásetingin er galdandi fyri lesandi, lærlingar og tílík, sum í avmarkað tíðarskeið dvølja í hinum partinum av danska ríkinum, einans í lestrar- ella útbúgvingarørindum. Hesi verða ikki skattað í tí parti av ríkinum, sum tey eru í, av peningaupphæddum, sum verða móttiknar úr hinum partinum av danska ríkinum ella úr útlondum, til uppihald, lestur v.m.
+Tey verða heldur ikki skattað av upphæddum, sum verða goldnar sum samsýning fyri tænastuveitingar, treytað av at tænastuveitingin er neyðug fyri teirra uppihald. Tann upphædd, sum er neyðug fyri uppihald hjá føroyskum lesandi í Danmark verður í vanligari talu kallað "Føroya- frádráttur". Toll- og Skattaráð Føroya ásetir einaferð um árið eina upphædd, sum verður mett neyðug fyri uppihald til donsk lesandi í Føroyum.
+Inntøkur, sum føroysk lesandi og lærlingar hava av tænastuveitingum í Danmark, kunnu ikki skattast í Føroyum.
+Ásetingin er bert galdandi fyri eitt avmarkað tíðarskeið, og við avmarkað tíðarskeið skilst dvøl upp til í mesta lagið ta ásettu lestrartíðina við 2 árum aftrat. Dvølin verður sum høvuðsregla ikki mett einans at hava samband við lestur ella útbúgving, um hon varir meir enn 6 mánaðar áðrenn byrjan á lestrinum v.m. Til nevnda 6-mánaða tíðarskeið, tó í mesta lagi 1 ár, verður ikki roknað tann tíð, sum verður nýtt til fyrireikandi skeið, sum útbúgvingarstovnur treytar fyri at kunna byrja lesnaðin. Í førum tá hjún søkja upptøku á einum útbúgvingarstovni, og bert annar hjúnafelagin verður upptikin, so verður 6 mánaða reglan tikin úr gildi, hvat viðvíkur hinum hjúnafelaganum, tó í mesta lagi í 2 ár íalt.
+Stk. 4 viðvíkur viðurskiftunum millum Ísland og Danmark.
+Í stk. 5 er ein serlig áseting um skatting av persónum, sum hava arbeiði í Danmark í avmarkað tíðarskeið í sambandi við Nordjobb-skipanina. Í tann mun ein tílík starvssetan ikki fer uppum 100 dagar innan fyri sama álmanakkaár, verður lønin bert skattað í tann mun, hon fer upp um tað, ið eftir galdandi reglum verður mett sum neyðugt fyri uppihald hjá viðkomandi.
+Upphæddin, sum verður roknað neyðug til uppihalds hjá viðkomandi, verður ásett fyri eitt ár og verður minkað í mun til longdina av dvølinum í Danmark og alt álmanakkaárið.
+Í sáttmálanum er eingin áseting um frádrátt fyri persónar, sum arbeiða í Føroyum í sambandi við Nordjobb-skipanina.
+Tó er ein serlig áseting í § 33, nr. 10 í skattalógini, sum samsvarar við ásetingina í protokolpunkti IX, stk. 5, og viðvíkur arbeiði í Føroyum, skipað gjøgnum Nordjobb. Landsstýrismaðurin í skattamálum ásetir upphæddina, sum er neyðug fyri uppihald í Føroyum, í kunngerð eina ferð um árið.
+Grein 21: Virksemi í sambandi við forkanningar, rannsókn ella brúk av kolvetnisfyrikoming
+Ásetingin er galdandi fyri skatting av inntøku frá kolvetnisvirksemi og virksemi knýtt at hesum.
+Í stk. 1 er ásett, at grein 21 er galdandi framum aðrar ásetingar í sáttmálanum, tá ein persónur, sum er heimahoyrandi í einum sáttmálabundnum ríki, rekur vinnu í sambandi við forkanning, rannsókn ella brúk av kolvetnisfyrikoming, sum liggur í einum sáttmálabundnum ríki (soleiðis broytt við protokol frá 6. oktober 1997). Tó er grein 8 um skipa- og loftferðslu galdandi fram um grein 21.
+Í stk. 2 er ásett, at persónur, sum útinnir slíkt virksemi uttan fyri strondina á einum øðrum ríki, er mettur at hava fastan rakstrarstað í keldulandinum.
+Sama er galdandi, um rannsóknar- ella innvinningarøkið røkkur frá einum staði uttan fyri strondina og inn á landøki í hesum ríki. Virksemi, sum fevnir um at uppbyggja og leggja rørleiðing v.m. til flutning av óreinsaðum kolvetni (uraffinerede kulbrinter) og byggiarbeiði í hesum sambandi, førir eisini við sær, at tað verður roknað sum fastur rakstrarstaður, um rørleiðingin v.m. víðvíkur eini verkætlan, sum røkkur frá einum staði uttan fyri strondina og inn á landøkið.
+Sambært stk. 3 er tað ein fyritreyt fyri at omanfyri nevnda virksemið verður roknað sum fastur rakstrarstaður, at virksemið fevnir um eitt ella fleiri tíðarskeið, sum samanlagt eru meira enn 30 dagar innan fyri eitt 12-mánaða tíðarskeið.
+Í førum, tá virksemi í sambandi við kolvetnisútvinning ikki er fevnt av stk. 2, eru aðrar ásetingar í sáttmálanum galdandi ístaðin. Hetta merkir m.a., at virksemi í samband við forkanning ella kolvetnisútvinning á landi, ikki verður roknað sum fastur rakstrarstaður eftir 30 daga regluni, men í staðin verður viðgjørt eftir ásetingunum í grein 5.
+Tá 30 daga markið verður roknað, verður tann tíð íroknað, sum annað virki nýtir í sambandi við somu verkætlan, um hetta virkið hevur felags áhugamál við hitt virkið, og um virksemið hjá báðum virkjunum í stóran mun er av sama slag, sbr. stk. 4.
+Inntøka hjá eini fyritøku, sum stavar frá supply-virksemi við skipi ella flogfari til eitt stað uttan fyri strondina í einum øðrum sáttmálabundnum ríki, har arbeitt verður við forkanningum, rannsóknum ella útvinning av kolvetni, ella av at reka sleiparar, útgerðarbátar ella onnur hjálpiskip í sambandi við tílíkt virksemi, kann bert skattast í tí landi, sum fyritøkan er heimahoyrandi í, sbr. stk. 5. Hervið hevur tað ikki stóran týdning, um supply-virksemið verður flokkað sum altjóða ferðsla og tí skal skattast eftir grein 8, tá skattingin eftir grein 8 og grein 21, stk. 5 er eins.
+Sambært stk. 6 verða skip, bátar og flogfør, sum nýtt verða til supplyvirksemi v.m., viðgjørd sum skip og flogfør í aljtóða ferðslu, hvat viðvíkur ognarskatti (grein 23, stk. 3) og hvat viðvíkur skatting í sambandi við avhending (grein 13, stk. 4).
+Í stk. 7 eru gjørdar ásetingar um skattingarrættin av løn og líknandi samsýning, sum ein persónur, sum er heimahoyrandi í einum sáttmálabundnum ríki, fær av arbeiði, sum verður útint í einum øðrum sáttmálabundnum ríki fyri ein arbeiðsgevara, sum rekur virksemi, ið er fevnt av stk. 1 og 2.
+Sum vanlig regla er galdandi, at keldulandið kann skatta lønarinn-tøkuna, um arbeiðið fevnir um eitt tíðarskeið ella fleiri tíðarskeið, sum yvir eitt 12-mánaða
+tíðarskeið, tilsamans er meira enn 30 dagar.
+Í førum tá arbeiðið hevur samband við útvinning av kolvetnisfyrikomingum á miðlinjuni millum tvey sáttmálabundin ríki ella eitt sáttmálabundið ríki og annað ríki, og avtala fyriliggur um felags útvinning, og útvinnningin er samstundis báðumegin miðlinjuna, og tað millum málsráðandi myndugleikarnar í báðum ríkjunum er gjørd ein avtala um nýtslu av hesi áseting, verður lønarinntøkan skattað í bústaðarlandinum.
+Løn og samsýning fyri arbeiðið um borð á supply-skipum v.m. (teimum skipum, sum eru fevnd av stk. 5) kann skattast í tí ríkinum, har tann persónurin, ið nýtir skipið ella bátin, er heimahoyrandi. (soleiðis broytt við protokol frá 6. oktober 1997).
+Tá tað er ásett, at slík løn kann skattast í ríkinum, sum skipið er heimahoyrandi í, skulu Føroyar í førum, tá slík inntøka eftir hesi áseting kann skattast í øðrum Norðurlandi, geva kredittlinking. Víst verður til grein 25, stk. 2, litra a.
+Talan er her bert um supply-virksemi v.m. rikið í einum sáttmálabundnum ríki, av einum felagi/persóni, sum er heimahoyrandi í einum øðrum sáttmálabundnum ríki.
+Dømi:
+Føroyingur siglir við einum supply-skipi, sum verður rikið av einum norskum felagi, og sum siglir í norskum sjógvi. Føroyingurin er tá ikki fevndur av stk. 7, litra c, tá virksemið hjá norska felagnum ikki er fevnt av stk. 5. Hetta førir so við sær, at inntøkan hjá føroyinginum skal viðgerast eftir grein 21, stk. 7, litra a. Tá skulu Føroyar geva eksemptiónslinking, um so er, at Noreg skattar inntøkuna, vísandi til grein 25, stk. 2, litra c. Siglir skipið í donskum sjógvi, so fær manningin kredittavláttur, tá teir í slíkum førum skulu viðgerast eftir grein 21, stk. 7, litra c. Siglir skipið í enskum sjógvi, so kunnu teir ikki skattast í Noregi, tí tá er virksemið ikki fevnt av grein 21. Í staðin verður inntøkan viðgjørd eftir grein 15, stk. 3 sum inntøka í altjóða ferðslu. Hervið kunnu bæði Noreg og Føroyar skatta inntøkuna eftir norðurlendska sáttmálanum.
+Løn ella samsýning fyri arbeiði umborð á supply-flogførum (flogfør fevnd av stk. 5) kann bert skattast í tí landi, sum flogfelagið er heimahoyrandi sambært grein 21, stk. 7, litra d. Hervið skulu Føroyar geva eksemptiónslinking, tá annað Norðurland skattar persón heimahoyrandi í Føroyum eftir hesi áseting. Víst verður til grein 25, stk. 2, litra b.
+Í stk. 8 finst ein serlig áseting um skatting av vinningi við at flyta boriútbúnað ella bústaðarpall. Um ein persónur, heimahoyrandi í einum sáttmálabundnum ríki, flytir tílíkan flytbaran boriútbúnað ella bústaðarpall frá einum øðrum sáttmálabundnum ríki, er persónurin í hesum seinni nevnda ríkinum frítikin fyri fráflytaraskatting av tílíkum vinningi.
+Sambært stk. 9 verður vinningur í sambandi við sølu av rættindum til forkanningar, rannsóknir ella nýtslu av kolvetnisfyrikomingum skattaður í tí ríki, sum rætturin kann nýtast í. Samsvarandi kann vinningur við sølu av partabrøvum ella øðrum pørtum í virkjum, hvørs virði alt ella fyri mesta partin, beinleiðis ella óbeinleiðis kann kannast tílíkum rættindum, verða skattaður í tí ríki, sum rætturin kann nýtast í.
+Grein 22: Aðrar inntøkur
+Allar inntøkur, sum ikki eru beinleiðis nevndar og viðgjørdar aðrastaðni í sáttmálanum, verða viðgjørdar eftir grein 22. Hetta er t.d. galdandi fyri inntøkur úr 3. londum.
+Høvuðsreglan er, at tílíkar inntøkur bert kunnu skattast í landinum, sum viðkomandi, ið hevur rætt til inntøkuna, er heimahoyrandi í, sbr. stk. 1.
+Sambært stk. 2 er ásett, sum undantak til stk. 1, at ”aðrar inntøkur”, ið stava frá ogn ella rættindum, sum hava beinleiðis samband við virksemi, sum verður rikið frá einum føstum rakstrarstaði, kunnu skattast í tí ríki, sum tann fasti rakstrarstaðurin er í.
+Dømi:
+Ein bankadeild fær rentuinntøkur frá einum viðskiftafólki í einum triðjalandi.
+Hevur rentuinntøkan beinleiðis samband við deildina, kann inntøkan skattast í tí ríki, sum bankadeildin er í. Ásetingin í stk. 2 fevnir ikki um inntøku av fastari ogn, sum hoyrir til fastan rakstrarstað, av tí at tílík inntøka sambært grein 6 altíð kann skattast í tí ríki, sum tann fasta ognin er í.
+Grein 23: Ogn
+Sambært stk. 1 kann føst ogn ognarskattast í ríkinum, sum ognin er í. Sum uppískoyti til hetta er í stk. 2 ein áseting um ognarskatt av partabrøvum í partafelagi, hvørs høvuðsendamál er at eiga fasta ogn (”ejendomsaktieselskaber”). Um høvuðsendamálið hjá einum felagi er at eiga fasta ogn, og um føst ogn, sum liggur í einum sáttmálabundnum ríki, er minst 75% av samlaðu ognum felagsins (áðrenn frádrátt av skuld), kunnu partabrøvini ognarskattast í landinum, sum ognin er í.
+Skip og flogfør, sum verða nýtt í altjóða ferðslu, og leysafæ knýtt at slíkum skipum og flogførum, kunnu bert ognarskattast í ríkinum, sum eigarin er heimahoyrandi í, sbr. stk. 3. Sama er galdandi fyri bingjur, viðfestivognar og onnur tól til bingjuflutning, sum ikki burturav verða nýtt millum støð í einum øðrum ríki enn tí, sum eigarin er heimahoyrandi í, sbr. stk. 4.
+Sambært stk. 5 og 6 kann øll onnur ogn bert ognarskattast í ríkinum, sum eigarin er heimahoyrandi í uttan so, at hon er ein sjálvstøðugur partur av vinnuognini í einum føstum rakstrarstaði í einum øðrum sáttmálabundnum ríki. Um so er, kann henda ogn skattast í ríkinum, sum fasti rakstrarstaðurin er í.
+Ásetingarnar í stk. 1-6 verða bert nýttar í einum sáttmálabundnum ríki mótvegis einum øðrum sáttmálabundnum ríki, ið krevur vanligan ognarskatt.
+Hetta førir við sær, at hini sáttmálabundnu ríkini ikki eru bundin at nýta ásetingarnar yvir fyri Føroyum, tá ognarskattur ikki verður álíknaður í Føroyum.
+Grein 24: Deyðsbúgv
+Sambært hesi grein kunnu inntøka og ogn, sum verða skattaðar í einum deyðsbúgvi, heimahoyrandi í einum av sáttmálabundnu ríkjunum, ikki skattast hjá persónum, ið hava rætt til part í búgvi, og sum eru heimahoyrandi í einum øðrum ríki.
+Grein 25: Avtøka av tvískatting
+Henda grein ásetir framferðarháttin, sum skal nýtast, tá tvískatting verður staðfest.
+Føroyar skulu sum bústaðarland sum meginregla taka av tvískatting soleiðis:
+a. tá talan er um inntøku, sum kann vera skattað aðrastaðni, skulu Føroyar veita frádrátt í føroyska inntøkuskattinum hjá hesum persóni við eini upphædd, sum svarar til tann inntøkuskatt, ið goldin er í øðrum Norðurlandi.
+Frádrátturin skal tó ongantíð fara upp um tann lutfalsliga partin av føroyska skattinum, roknaður áðrenn slíkan frádrátt, ið viðvíkur uttanlandsinntøkuni.
+(kredittlinking)
+b. tá inntøkan bert kann verða skattað í øðrum landi, kunnu Føroyar írokna hesa inntøku í skattagrundarlagið, men skulu í føroyska skattinum draga frá tann partin av inntøkuskattinum, ið verður goldin av tí inntøku, sum stavar frá hinum Norðurlandinum. (eksemptión við progressiónsfyrivarni)
+c. tá talan er um lønarinntøku vegna persónligar tænastur eftir grein 15, stk. 1 ella grein 21, stk. 7, litra a, og inntøkan kann verða skattað í øðrum Norðurlandi, kunnu Føroyar írokna hesa inntøku í skattagrundarlagið, men skulu í føroyska skattinum draga frá tann partin av inntøkuskattinum, ið verður goldin av tí inntøku, sum stavar frá hinum Norðurlandinum. (eksemptión við progressiónsfyrivarni, eins og undir pkt. b)
+Tá talan er um inntøkur eftir grein 15, stk. 1 og grein 21, stk. 7, litra a er sostatt ásett, at eksemptión við progressiónsfyrivarni verður nýtt, hóast tað ikki er ásett, at inntøkan bert kann verða skattað í hinum landinum.
+Sambært protokol frá 23. september 1996 er ásett, at sáttmálabundnu ríkini kunnu skifta til annan linkingarhátt enn tann, sum er ásettur í grein 25.
+Danmark hevur við gildi frá 1. januar 2000 avtikið grein 25, stk. 1, litra c, soleiðis at meginreglan, sum er kredittlinking, eisini er galdandi fyri inntøku, sum er fevnd av grein 15, stk. 1 og grein 21, stk. 7, litra a. Tó er í internari danskari lóggávu ásett, at eksemptiónslinkingarhátturin er galdandi fyri persónar, sum eru heimahoyrandi í Danmark, og sum eru fevndir av reglunum um sosiala trygd í hinum norðurlendsku arbeiðslondunum, t.v.s. Finnlandi, Íslandi, Noregi ella Svøríki í sambandi við, at persónar vinna inntøku og rinda sosial avgjøld í hesum londum. Hesir persónar fáa sostatt eksemptiónslinking, um teir rinda sosial gjøld í arbeiðslandinum.
+Í stk. 1 og 3-6 finnast linkingarásetanir fyri Danmark, Finnland, Ísland, Noreg og Svøríki.
+Í stk. 7, nr. 1 er ásett, at tá linking verður givin eftir grein 25, skal tann skattur, sum goldin er í Føroyum, men sum verður fluttur til eitt annað sáttmálabundið ríki og har verður góðskrivaður viðkomandi persóni, verða roknaður sum skattur, ið goldin er í hinum ríkinum.
+Í stk. 7, nr. 2 og 3 er ein verjuregla, sum hevur til endamáls at forða fyri, at lønarinntøka verður býtt á fleiri lond fyri at spara skatt við eksemptiónslinkingini, sum er ásettur í grein 25, stk. 2, litra c.
+Sambært stk. 7, nr. 2 skal kredittlinking verða givin fyri inntøku, sum er fevnd av grein 15, stk. 1 og grein 21, stk. 7, litra a – í staðin fyri eksemptión, sum grein 25, stk. 2, litra c ásetir – um so er, at persónurin hevur fingið inntøku frá eini fyritøku ella føstum rakstrarstaði í arbeiðsríkinum, og persónurin beint frammanundan starvssetanina í arbeiðsríkinum antin:
+1. var í starvi hjá fyritøku uttan fyri arbeiðsríkið, sum hevur felags áhugamál við fyritøku í arbeiðsríkinum, ella
+2. var í starvi uttan fyri arbeiðsríkið í somu fyritøku, sum hevur tann fasta rakstrarstaðin í arbeiðsríkinum.
+Hóast ásetingarnar í nr. 2 verður í nr. 3 ásett, at eksemptiónslinking eftir grein 25, stk. 2, litra c tó skal nýtast, um persónurin kann prógva, at hann antin:
+1. í viðkomandi inntøkuári hevur dvølt og starvast í arbeiðsríkinum í eitt samanhangandi tíðarskeið uppá meira enn 3 mánaðar, ella
+2. at arbeiðið í arbeiðsríkinum er útint fyri fyritøku í hesum ríki ella fyri fastan rakstrarstað har ella, at útreiðslurnar av røttum eru lagdar á nevndu fyritøku ella fasta rakstrarstaðin.
+Grein 26: Almennar reglur um skatting
+Í stk. 1 er ein áseting um, at eitt kelduland bert kann skatta eina inntøku í tann mun, tað finst nágreinilig heimild sambært sáttmálanum.
+Hetta merkir, at tá persónur ikki er heimahoyrandi í Føroyum og skattingarrætturin er tillagdur keldulandinum, so kunnu Føroyar ikki skatta inntøkuna hjá viðkomandi, tá keldan er eitt annað sáttmálabundið land. Tað er heldur ikki møguligt at írokna inntøkuna í skattagrundarlagið. Hetta er eisini galdandi, sjálvt um viðkomandi er fult skattskyldugur í Føroyum.
+Dømi:
+Ein føroyskur lesandi í Danmark, sum er fult skattskyldugur í Føroyum. Um hann eftir sáttmálanum er mettur at verða heimahoyrandi i Danmark, kunnu Føroyar ikki skatta inntøku, sum bert heimlandið kann skatta sambært sáttmálanum. Talan kann verða um eitt nú persónligt arbeiði í tænastuviðurskiftum, útført í Danmark. Føroyar kunnu tá heldur ikki taka inntøkuna við í skattagrundarlagið.
+Í stk. 2 er áseting um subsidieran skattingarrætt. Sambært hesi áseting kann inntøkan bert verða skattað í bústaðarlandinum, hóast keldulandið sambært sáttmálanum hevur skattingarrættin, um so er, at keldulandið vegna sína lóggávu ikki íroknar inntøkuna í síni heild, tá skattað verður ella bert íroknar inntøkuna í sambandi við progressiónsútrokning ella aðra skattaútrokning.
+Í stk. 3 er ein áseting, sum gevur keldulandinum subsidieran skattingarrætt í ávísum førum, tá sáttmálin leggur skattingarrættin til heimlandið. Í førum tá grein 14, stk. 1 og grein 15, stk. 2 og stk. 4, litra a og b veita bústaðarlandinum eksklusivan skattingarrætt, og hetta ríki vegna innanhýsis reglur ikki kann skatta inntøkuna, kann inntøkan skattast í keldulandinum.
+Grein 27: Bann móti mannamuni
+Sambært grein 27 er tað, hvat viðvíkur skattligum viðurskiftum, bannað at gera mun á egnum ríkisborgarum og ríkisborgarum (herundir juridiskum
+persónum) frá einum øðrum sáttmálabundnum ríki. Tað er í hesum sambandi líkamikið, um viðkomandi er heimahoyrandi í einum sáttmálabundum ríki. Grein 27 er eisini, uttan mun til grein 2, galdandi fyri skatt av einum hvørjum slag.
+Grein 28: Mannagondin, tá sínámillum avtalur verða gjørdar
+Greinin ásetir mannagongdina, um ein persónur, sum er heimahoyrandi í einum av sáttmálabundnu ríkjunum, metir seg koma undir skatting, sum ikki er í samsvar við sáttmálan. Her er ásett, at teir málsráðandi myndugleikarnir í teimum báðum ríkjunum við sínámillum semju skulu royna at loysa teir trupulleikar ella tey ivamál viðvíkjandi tulkingini ella nýtsluni av sáttmálanum, sum kunna standast av, at sáttmálin verður nýttur. Málsráðandi myndugleikarnir hava sostatt eina skyldu til at royna at loysa ósemjur.
+Gjørdar avtalur millum lond skulu fremjast, sjálvt um møguligar freistir í innanhýsis lóggávu áseta, at tað ikki er møguligt at umlíkna. Soleiðis verða innanhýsis freistir ikki galdandi, tá talan er um sínámillum avtalur millum londini.
+Málið skal tó verða lagt fyri áðrenn fimm ár frá tí degi, honum er givin tann fyrsta fráboðanin um tað tiltak, sum hevur við sær eina skattaáseting, sum ikki er í tráð við ásetingarnar í sáttmálanum.
+Grein. 29: Limir í stjórnar- ella konslaumboðum
+Sambært ásetingini, fær sáttmálin ikki ávirkan á teir fyrimunir, sum limir á stjórnar- ella konslaumboðum hava sambært reglum í fólkarættinum.
+Grein 30: Víðkan av økjum
+Sambært hesi áseting kann sáttmálin víðkast til eisini at fevna um tey nýtsluøkir, sum eru undantikin, sbr. grein 3, stk. 1, litra a. Hesi eru Áland, Svalbard (heruppií Bjarnaoyggin), Jan Mayen og tey norsku økini (hjálond) uttan fyri Europa.
+Grein 31: Gildiskoma sáttmálans
+Sáttmálin fekk virknað fyri inntøkur, sum eru vunnar 1. januar 1998 og seinni.
+O.2.2. Grønland
+Føroyar og Grønland skrivaðu undir tvískattasáttmála tann 30. august 2000. Sáttmálin er settur í gildi í Føroyum við løgtingslóg nr. 47 frá 30. mars 2001.
+Sáttmálin kom í gildi 1. januar 2001 og frá hesum degi fór sáttmálin frá 4. februar 1992 úr gildi. Sáttmálin er broyttur við løgtingslóg nr. 38 frá 6. mai 2014. Broytingarnar hava virknað frá 1. januar 2015.
+O.2.3. India
+Millum Føroyar og Indiu er galdandi danski tvískattasáttmálin frá 8. mars 1989. Sáttmálin varð við protokol frá 8. mars 1989 víðkaður til eisini at fevna um Føroyar. Sáttmálin er lýstur við bekendtgørelse nr. 118 frá 10. november 1989.
+O.2.4. Schweiz
+Millum Føroyar og Schweiz er galdandi danski tvískattasáttmálin frá 23. nov. 1973. Sáttmálin er lýstur við bekendtgørelse nr. 117 frá 31. oktober 1974.
+Sáttmálin var seinast broyttur við protokol frá 21. august 2009, sum varð sett í gildi við løgtingslóg nr. 102 frá 11. november 2010. Eisini er galdandi millum Føroyar og Schweiz danski tvískattasáttmálin um skattir av arvi frá 23. november 1973, sum er lýstur við bekendtgørelse nr. 116 frá 31. oktober 1974. Við bekendtgørelse nr. 37 frá 2. juni 1978 vóru sáttmálarnir víðkaðir til eisini at fevna um Føroyar.
+O.2.5. Stóra Bretland og Norður Írland
+Millum Føroyar og Bretland er galdandi tvískattasáttmálin frá 20. juni 2007. Sáttmálin er lýstur við løgtingslóg nr. 16 frá 2008.
+O.2.6. Isle of Man
+Millum Føroyar og Isle of Man eru galdandi tvískattasáttmálar frá 30. oktober 2007. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 60 frá 10 juni 2008.
+O.2.7. Guernsey
+Millum Føroyar og Guernsey eru galdandi tvískattasáttmálar frá 28. oktober 2008. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 71 frá 25. mai 2009.
+O.2.8. Jersey
+Millum Føroyar og Jersey eru galdandi tvískattasáttmálar frá 28. oktober 2008. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 71 frá 25. mai 2009.
+O.2.9. British Virgin Islands
+Millum Føroyar og British Virgin Islands eru galdandi tvískattasáttmálar frá 18. mai 2009. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 182 frá 22. desember 2009.
+O.2.10. Cayman Islands
+Millum Føroyar og Cayman Islands eru galdandi tvískattasáttmálar frá 17. juni 2009. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 182 frá 22. desember 2009.
+O.2.11. Bermuda
+Millum Føroyar og Bermuda eru galdandi tvískattasáttmálar frá 16. apríl 2009. Sáttmálarnir vórðu lýstir við løgtingslóg nr. 182 frá 22. desember 2009.
+Snarslóðir
+O. Tvískatting (frá 2015)
+Tvískattasáttmáli millum tey norðurlendsku londini við seinni broytingum (Gildiskomudagur: 11.05.1997) (1)
+Samband
+TAKS
+Smyrilsvegur 20
+Postboks 2151
+110 Tórshavn
+Tel. 35 26 00
+taks@taks.fo
+Avgreiðslutíð:
+Mán-hós 10-12
+V-tal: 443921
+Peningastovnar
+PeningastovnurReg.Kontunr.BIC/SWIFTIBAN
+Betri Banki9181152.861.2EIKBFOTFFO 65 9181 0001528612
+Føroya Banki6460101.104.0FIFBFOTXFO 29 6460 0001011040
+Norðoya Sparikassi9865100.188.9NOYAFO21FO 09 9865 0001001889
+Suðuroyar Sparikassi9870100.084.6SUSPFOT1FO 21 9870 0001000846
+Danske Bank3100169.349.92DABADKKKDK 88 3000 0016934992
+EAN-/GLN-nr.: 5797100000119
+Rokningar kunnu sendast til rokning@taks.fo
+Um TAKS
+Samleiki
+Fjølmiðlar
+Leys størv
+Dátuvernd
+Kundatænasta
+Kærumøguleikar
+Grundarlag og stevna
+Fylg okkum
+LinkedIn
+Ment, forritað og sniðgivið hava Sansir
+x
+Hey, eg eiti Eyðei og eri nýggi TAKS-botturin.
+Hevur tú ein TAKS-spurning?
+Spyr meg bara.
