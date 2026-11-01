@@ -3,20 +3,23 @@ name: mw-company-formation
 description: "Malawi draft for 2026 tax-registration handoff following the establishment of a business. Use it to distinguish legal incorporation from obtaining a taxpayer identification number, check whether the taxpayer already has a TIN, reconcile true identity and supporting records, and route income-tax, VAT and employer obligations for separate assessment. The two share examples check only arithmetic supplied in the incorporation records and establish no statutory capital minimum. Company-law forms, membership and transfer restrictions, statutory registers, registry fees, annual compliance and live registration fields remain explicit source gaps. This partial handoff requires the actual current prescribed documents and does not certify that a company has been validly incorporated."
 jurisdiction: MW
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 1.1
+version: 1.2
 ---
 
-# Malawi company formation: tax-registration handoff v1.1
+# Malawi company formation: tax-registration handoff v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
+
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use to prepare the tax-registration handoff for a newly established company/business. TAA 21(1) requires a business that becomes potentially liable under a tax law to apply for taxpayer registration. This verifies a tax job; it does not validate the company’s legal incorporation, shareholder/director rules or registry fees. [TAA 21](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Keep the existing incorporation documents and current registry requirements as inputs rather than assuming a certificate settles tax registration.
 
@@ -87,7 +90,7 @@ Get incorporation/legal-form evidence, shareholder/director consents and identit
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 21–23 and 28(2) read in full | 2026-11-01 |
 | [VATAct 5/2026](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), s 4 registration categories | 2026-11-01 |
 
-**Not yet confirmed:** CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, restricted share transfers, statutory registers, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, restricted share transfers, statutory registers, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.
 
 <!-- openaccountants-cta-block -->
 

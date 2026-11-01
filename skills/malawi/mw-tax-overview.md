@@ -3,20 +3,23 @@ name: mw-tax-overview
 description: "Malawi tax-intake router for the partial 2026 country drafts. Use it to gather the entity, income, turnover, assessment period, transaction and employee facts that determine which source-led computation job to open. It routes ordinary company tax and MAT, individual tax, domestic VAT, conditional pension reconciliation, tax registration and a limited transfer-pricing notice response. The two turnover projections are intake controls and do not establish tax-registration liability by themselves. Annual filing deadlines, commencement and transition checks, specialist sectors, full incorporation law, cross-border withholding and treaties, and comprehensive transfer-pricing compliance remain unconfirmed where stated. Presence of these Guides is not complete country coverage or accountant attestation."
 jurisdiction: MW
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
-version: 1.1
+version: 1.2
 ---
 
-# Malawi 2026 tax router and evidence checks v1.1
+# Malawi 2026 tax router and evidence checks v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
+
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use to assign a Malawi tax question to an actual computation or compliance job. The Malawi Revenue Authority is the Authority in TAA 2. Start with the taxpayer’s identity, source/income type, applicable assessment period and actual transaction dates. A budget year, a company accounting year and a calendar-month payroll period must not be treated as interchangeable. The old principal defines a year of assessment as a twelve-month period, but this pack has not established a universal current default accounting close. [TAA 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Taxation 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content).
 
@@ -90,7 +93,7 @@ Get taxpayer/legal identity and TIN, activities, income type/source, actual asse
 | [Taxation historicalconsolidation](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), s 2 definition only, not old current-rate metadata | 2026-11-01 |
 | [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), section 84 deletion and VAT administrative substitutions | 2026-11-01 |
 
-**Not yet confirmed:** universal current assessment-year default, annual income-tax filing deadline, full cross-border/TP annual compliance, company-law incorporation, current exemption/commencement orders, specialist sectors and authenticated portals. The partial declarations in README control this pack’s scope. No accountant attestation or full-country completion is claimed.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  universal current assessment-year default, annual income-tax filing deadline, full cross-border/TP annual compliance, company-law incorporation, current exemption/commencement orders, specialist sectors and authenticated portals. The partial declarations in README control this pack’s scope. No accountant attestation or full-country completion is claimed.
 
 <!-- openaccountants-cta-block -->
 

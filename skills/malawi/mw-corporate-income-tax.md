@@ -3,26 +3,29 @@ name: mw-corporate-income-tax
 description: "Malawi draft for 2026 ordinary non-mining company income-tax and minimum alternative tax working papers. Use it to reconcile taxable income separately from statutory turnover, identify the additional taxable-income band, compare the ordinary charge with MAT, and control carried MAT credits by origin and expiry. It states the deduction restrictions for exempt and final-tax income and the apportionment of common expenditure. The two cases assume supported adjusted income and eligible credit records. This partial job excludes specialist sectors, a complete capital-gains computation, withholding and treaties, unresolved commencement boundaries, and authenticated annual filing steps. Read its source-chain limitations before applying it to a live period."
 jurisdiction: MW
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 ---
 
-# Malawi ordinary company tax and minimum alternative tax v1.1
+# Malawi ordinary company tax and minimum alternative tax v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
 
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
+
 Use for an ordinary non-mining company computing income tax under section 66 and the Eleventh Schedule. The income is received/accrued from sources within or deemed within Malawi. Act 14 of 2025 removed the ordinary company extra tax for incorporation outside Malawi; do not restore the old branch surcharge. Mining, insurance, priority-industry approvals and special regimes require their own verified computation. [Act 36/2025 ss 3–4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content); [Act 14/2025 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content). The two MRA December notices disagree between 30 and 31 December 2025; these examples are for periods wholly after both dates, not transition allocation.
 
 ## Rates, bands and thresholds
 
-| Item and exact scope | Current 2026 figure | Official law |
+| Item and exact scope | Cited-text figure; currentness check pending | Official law |
 |---|---|---|
 | Ordinary non-mining company taxable income | 30% | [Act 17/2023 s 11, Eleventh(c)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content) |
 | Taxable income above K5,000,000,000 | Additional 10% on the excess, producing a 40% marginal rate | [Act 12/2024 s 7](https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content); [Act 36/2025 s 6(a)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content) |
@@ -108,7 +111,7 @@ Get activity/special approvals, incorporation and Malawi-source facts, exact ass
 | [2021 cutover Act 15](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Taxation Schedule entries 84,102,106 | 2026-11-01 |
 | [MRA updated notice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), income-tax/MAT rates and date compared with earlier notice | 2026-11-01 |
 
-**Not yet confirmed:** annual filing/balance-payment deadline under current authority; authenticated return fields; exact commencement/straddling-period allocation at the December 2025 amendment; full capital allowances, losses, indexed gains and specialist sectors; dividend 10%, bank interest finality/rate, royalty resident/non-resident split and mining 10% claims from the old file. Do not apply those old withholding figures pending their own source checks.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  annual filing/balance-payment deadline under current authority; authenticated return fields; exact commencement/straddling-period allocation at the December 2025 amendment; full capital allowances, losses, indexed gains and specialist sectors; dividend 10%, bank interest finality/rate, royalty resident/non-resident split and mining 10% claims from the old file. Do not apply those old withholding figures pending their own source checks.
 
 <!-- openaccountants-cta-block -->
 

@@ -21,6 +21,8 @@ partial:
 
 # Malawi: partial 2026 source pack
 
+**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have been repaired, but enacted Act 3/2026 and the appointed TAA/cutover commencement notices remain unread. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
+
 Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Independent review pending. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
 
 | Job | Guide | Status |
@@ -37,3 +39,7 @@ Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments an
 The April 2026 gazette bundle supplies VATAct 5 and TaxAdminAct 6. The library abstract's statement about increasing a TPthreshold is not the law: actual 91(a) increases a first-month penalty in currency points. The two MRA December 2025 notices give conflicting 30/31 December dates; no transition calculation is asserted. Principal source copies include historical consolidations; only the read provisions reconciled to identified amendments support this candidate.
 
 Eight ledger/map files live in [evidence/ledgers](../../evidence/ledgers/mw-old-topic-destinations.md). Full source captures stay outside public history. All original topic labels have a destination; gaps are not completion claims.
+
+## Independent review checkpoint
+
+Initial findings: `evidence/ledgers/malawi-review-20261101/review.md`. Additive parent repair: `evidence/ledgers/malawi-repair-1/`. Deduction restrictions and the two formation subtopics are restored; descriptions meet the specified length. The remaining source-chain hold is explicit. These changes still require focused independent closure and do not complete the pack.

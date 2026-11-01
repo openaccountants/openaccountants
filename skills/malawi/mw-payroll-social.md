@@ -3,20 +3,23 @@ name: mw-payroll-social
 description: "Malawi draft for 2026 payroll reconciliation and occupational pension contribution working papers under the cited pension statute. Use it only after confirming that the mandatory scheme applies to the employer and employees concerned. It separates employer and employee contributions, contribution remittance duties and supplied PAYE amounts, with two arithmetic controls for individual and aggregate payroll schedules. It does not assume that pension contributions are automatically deductible before applying the income-tax bands. Commencement and exemption orders, defined-benefit directions, expatriate coverage, sector levies, current interest and authenticated fund procedures remain explicit limitations. This is a conditional partial job rather than a complete Malawi payroll filing service."
 jurisdiction: MW
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 1.1
+version: 1.2
 ---
 
-# Malawi payroll: pension contributions and PAYE reconciliation v1.1
+# Malawi payroll: pension contributions and PAYE reconciliation v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
+
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use where the Pension Act 2023 mandatory occupational scheme applies, after confirming the employee/employer is not covered by an exemption order under 11. Section 10 requires covered employees to join a fund. This Guide computes the Act’s minimum contribution amounts and remittance reconciliation; it does not establish every exempt category or the 2023 commencement order. [Pension 10–12](https://www.labour.gov.mw/images/documents/Malawi-Pension-Act_2023.pdf). PAYE rates belong to [individual income tax](mw-income-tax.md). Do not claim that this pension exhausts all payroll-linked levies.
 
@@ -103,7 +106,7 @@ Get employment/fund membership and exemption evidence, applicable directives, gu
 | [Taxation official-library copy](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), PAYE Rules 3,6,10 only; old salary rates not used | 2026-11-01 |
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), s 87 tax late-payment framework | 2026-11-01 |
 
-**Not yet confirmed:** current exemption/commencement orders and defined-benefit directives, payroll tax deductibility of contributions, TEVET levy 1%/base and sector levies, pension interest order, complete fund portal process and expatriate coverage. The old blanket no-social-tax claim and automatic pension-before-PAYE rule are not verified. Do not use the illustrative minimum computation before confirming that the mandatory scheme applies.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  current exemption/commencement orders and defined-benefit directives, payroll tax deductibility of contributions, TEVET levy 1%/base and sector levies, pension interest order, complete fund portal process and expatriate coverage. The old blanket no-social-tax claim and automatic pension-before-PAYE rule are not verified. Do not use the illustrative minimum computation before confirming that the mandatory scheme applies.
 
 <!-- openaccountants-cta-block -->
 

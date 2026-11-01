@@ -1,0 +1,21 @@
+{
+  "read_on": "2026-11-01",
+  "actually_read": [
+    {
+      "url": "https://www.mra.mw/press/new-measures-for-customs-excise-and-domestic-taxes-for-the-fiscal-year-202627",
+      "scope": "Full public6May2026pressContent read through same ordinary publicdata request used by site. Confirms enactment measures14April2026 and identifies Act3 changes; it is NOT substituted for unread enactedAct3 or commencementGazette."
+    }
+  ],
+  "failed_actual_sources": [
+    "Act3MalawiLIIpageordinarybrowseropened;PDFviewerfailed;normalobserved/sourceURL403",
+    "ActualGN21and23GazettePDFnotobtained"
+  ],
+  "private_capture_hashes": {
+    "mra-domestic-catalogue.json": "1de0c6112498cd6ce567f7841b7c0d2c1e35b7936107ce471bc9f08faf38025a",
+    "mra-2026-press-data.json": "63e48207c0400eef86622ea7cc949281c71808636a5597dc70ac7b979d2a78ad",
+    "mra-2026-press-reader.txt": "8dede6b0668e1043dd261d61f4bafdfc8e7c30a25690e884fb1c9e0568343f17",
+    "mra-library-taxation-search.json": "f1aaf8f777ca6fe797dcb97378d123f48946363db4e297bda2f136da4cb11567",
+    "tax2026-act3-attempt.json": "121ca8430b6d73bc141bff25189ec2bd909276d609e10d8e7ae48e43e5274ac7"
+  },
+  "not_claimed": "No reading of Act3, GN21/23 or absenceoflateramendments; no currentrateapproval."
+}

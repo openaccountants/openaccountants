@@ -3,20 +3,23 @@ name: mw-income-tax
 description: "Malawi draft for 2026 individual income-tax working papers, distinguishing the employment and non-employment schedules. Use it to route a taxpayer to the correct income category, reconcile supplied taxable income, apply the stated annual or monthly bands, and check the two numerical cases. It does not treat every receipt as salary or replace the taxpayer's source, residence and exemption analysis with a headline rate. Benefits, mixed income, pension deductibility, withholding finality, transitions and current filing procedures remain limited as specified in the body. This is a partial source-led computation draft, subject to the identified amendment and commencement checks and independent review."
 jurisdiction: MW
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 ---
 
-# Malawi individual income tax: current salary bands v1.1
+# Malawi individual income tax: current salary bands v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
+
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use for a confirmed taxable employment-income base, or a confirmed annual non-employment taxable base, under the separate tables in the Eleventh Schedule Appendix as replaced by Act 36/2025. Source and deemed-source rules still matter; do not treat a foreign payer as automatic exemption. [Act 36/2025 s 6(c)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content); [Taxation 11](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content). This file does not establish residence-day tests, treaty allocation, FBT valuation or a pension deduction. It applies the current tables to 2026 calculations after both dates identified by the conflicting December notices; it does not allocate a straddling period.
 
@@ -97,7 +100,7 @@ Get the taxable-pay reconciliation and pay frequency, period, each income catego
 | [Act 15/2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Schedule 84/102 cutover | 2026-11-01 |
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), s 40 and 87 | 2026-11-01 |
 
-**Not yet confirmed:** employee pension deductibility under all current conditions; full FBT rate/base/employer liability; residence-day test and specific non-resident income rules; current employee filing exemptions/annual due date; special arrears, severance and bonus treatment; live portal boxes. The old automatic pension-before-PAYE and blanket employee-final-tax statements are not verified and are not calculation steps.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  employee pension deductibility under all current conditions; full FBT rate/base/employer liability; residence-day test and specific non-resident income rules; current employee filing exemptions/annual due date; special arrears, severance and bonus treatment; live portal boxes. The old automatic pension-before-PAYE and blanket employee-final-tax statements are not verified and are not calculation steps.
 
 <!-- openaccountants-cta-block -->
 

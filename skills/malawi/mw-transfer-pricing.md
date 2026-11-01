@@ -4,16 +4,19 @@ description: "Malawi draft for 2026 handling of a transfer-pricing information n
 jurisdiction: MW
 category: transfer-pricing
 tax_year: 2026
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
 last_updated: 2026-11-01
 tier: 2
-version: 1.1
+version: 1.2
 ---
 
-# Malawi transfer pricing: information-notice response and retention v1.1
+# Malawi transfer pricing: information-notice response and retention v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
+
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use when a taxpayer receives a Commissioner General information notice under the Taxation (Transfer Pricing Documentation) Regulations, or a notice of an audit concerning TP/other related-party arrangements. This is a notice-response and preservation job. It does not determine the unverified annual documentation threshold, TP method or associated-party definition. The 2025 amendment renames 127A’s marginal note; that title alone cannot supply substantive pricing rules. [TAA 91](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Act 14/2025 s 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content); [Act 6/2026 ss 2–5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
 
@@ -88,4 +91,4 @@ Get the exact notice and service/transmission evidence, stated response date, al
 | [Act 6/2026 in official gazette bundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), ss 2–5, last two PDFpages; last page visually inspected to confirm amendment wording | 2026-11-01 |
 | [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), s 2 marginal-note amendment | 2026-11-01 |
 
-**Not yet confirmed:** actual current TP Regulations and full 127A operative text, scope/related-party definitions, annual documentation/filing requirements and thresholds, permitted methods, current currency-point conversion order, exact 2026 commencement boundary and authenticated response portal. No full annual TP compliance claim follows from this bounded job.
+**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  actual current TP Regulations and full 127A operative text, scope/related-party definitions, annual documentation/filing requirements and thresholds, permitted methods, current currency-point conversion order, exact 2026 commencement boundary and authenticated response portal. No full annual TP compliance claim follows from this bounded job.
