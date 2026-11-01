@@ -1,7 +1,7 @@
 ---
 name: jo-tax-overview
 description: "Conditional overview of Jordan tax sources for a 2026 refresh. Routes individual income tax, company tax, General Sales Tax and social security questions to the existing detailed Jordan Guides. Gives source-text headline rates and calendar illustrations with the conditions in those Guides. All source-currentness and filing-procedure holds carry through to this overview. Includes two executable arithmetic examples for a standard company and an ordinary full-coverage employee. Use for Jordan tax overview research, taxes in Jordan, ISTD, social security and the Jordan tax calendar. Do not treat the target tax year as clearance of a current filing position."
-version: 1.1
+version: 1.2
 jurisdiction: JO
 category: international
 tax_year: 2026
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Source currentness hold.** This is a source-cited research draft for the 2026 refresh, not a cleared filing instruction. The clause extracts below are conditional reference material. Before using them for a 2026 position, close the amendment and procedure gaps named in Sources. A read date records the stated read scope, not verification of every later amendment.
 
-Income arising in Jordan is taxed wherever it is paid; a resident's foreign income is taxed only where it arises from funds or deposits from Jordan (art. 3). ISTD runs income tax and sales tax; the Social Security Corporation runs contributions. Currency is the Jordanian dinar (JOD).
+Income arising in Jordan is taxed wherever it is paid; art. 3(c) separately covers a resident’s net foreign income arising from funds or deposits from Jordan, and net income of a Jordanian company’s foreign branch declared in final financial statements certified by an external public accountant. Neither route replaces the other. ISTD runs income tax and sales tax; the Social Security Corporation runs contributions. Currency is the Jordanian dinar (JOD).
 
 ## Rates, bands and thresholds
 
@@ -26,9 +26,9 @@ Income arising in Jordan is taxed wherever it is paid; a resident's foreign inco
 |---|---|---|---|
 | Personal income tax | 5% to 30% | [jo-income-tax](jo-income-tax.md) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |
 | Company tax | 20%, 24%, 35% | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |
-| National contribution | 1% to 7% for companies; 1% above JOD 200,000 for individuals | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |
+| National contribution | 1% to 7% for companies; 1% above JOD 200,000 for individuals; art. 11(g) cessation applies to every rate, and occurrence of its debt-ratio trigger is not cleared | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |
 | General Sales Tax | 16% standard | [jordan-gst](jordan-gst.md) | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |
-| Social security | Employer 14.25%, employee 7.5% | [jo-payroll-social](jo-payroll-social.md) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
+| Social security | Ordinary employment covered by all four insurances: employer 14.25%, employee 7.5%; exclusions and reductions require the detailed coverage check | [jo-payroll-social](jo-payroll-social.md) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
 | Income tax return | End of April for a calendar year | [jo-income-tax](jo-income-tax.md) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |
 
 ## The base
@@ -41,7 +41,7 @@ Income tax returns are due by the end of the fourth month after the period. GST 
 
 ## Penalties and interest
 
-Late income tax and GST payment costs 0.4% per week or part of a week. Contributions carry 1% a month.
+The source baseline states 0.4% per week or part for late income tax and GST. The income-tax art. 36(b) exception requires both timely return and timely payment of declared tax, with a later difference no more than JOD 5,000; its charge starts at audit-decision notification, while larger differences follow art. 36(a). For SSC the source states 1% monthly, with interest accruing after 60 days from employment under art. 19(a)(2). All these statements remain under the relevant currentness hold and do not determine a current assessment.
 
 ## Cross-border points
 
@@ -86,7 +86,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |
 | General Sales Tax Law No. 6 of 1994 as amended, ISTD scan: inherited original-author OCR reading of rate, registration, return, deduction, refund and penalty clauses; closeout reread cached output, fresh scan unavailable | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf | 2026-11-01 |
 | Social Security Law No. 1 of 2014, SSC official translation through 16 Apr 2023: arts. 3-7, 19-24, 42-49, 59, 64 read; original Arabic source/pages recorded in closeout ledger | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf | 2026-11-01 |
 

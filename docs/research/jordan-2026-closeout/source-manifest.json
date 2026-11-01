@@ -61,5 +61,45 @@
     "scope": "No complete official clause read supporting this item. Explicit non-operative hold, investigation prompt or arithmetic assumption; not a verified legal rule.",
     "read_date": "2026-11-01",
     "sha256": null
+  },
+  "FORMS": {
+    "url": "https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original first-page official form titles reread2026-11-01; actual fields/screens not read.",
+    "read_date": "2026-11-01",
+    "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886"
+  },
+  "TP": {
+    "url": "https://www.istd.gov.jo/AR/List/%D9%85%D9%86%D8%B5%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9",
+    "cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original official TP file-list titles reread2026-11-01; regulation thresholds not read.",
+    "read_date": "2026-11-01",
+    "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886"
+  },
+  "REDUCTION": {
+    "url": "https://www.ssc.gov.jo/wp-content/uploads/2024/12/%D9%86%D8%B8%D8%A7%D9%85-%D8%AA%D8%AE%D9%81%D9%8A%D8%B6-%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D9%88%D8%AE%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%AC%D8%B2-%D9%88%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A9-%D9%84%D9%84%D8%B9%D8%A7%D9%85%D9%84%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5.pdf",
+    "cache": "inherited-gst-selected-clauses.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original Regulation45/2024 Arabic OCR clauses1-6 reread2026-11-01; art3 rates incomplete, no entitlement cleared.",
+    "read_date": "2026-11-01",
+    "sha256": "9311b44fb636a18650ddc08e2eaa99adf7b471ab26ef8c2b4fcef890639471c5"
+  },
+  "MOIN": {
+    "url": "https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+    "cache": "independent-additional-primary.json",
+    "cache_location": "repository/docs/research/jordan-2026-closeout/",
+    "scope": "Independent fresh official PDF response pp0-3 read2026-11-01 and author reread retained response2026-11-01. Art4 baseline completed; no later-amendment clearance.",
+    "read_date": "2026-11-01",
+    "sha256": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001"
+  },
+  "MOIN-FOLLOWUP": {
+    "url": "https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+    "cache": "independent-additional-primary-followup.json",
+    "cache_location": "repository/docs/research/jordan-2026-closeout/",
+    "scope": "Independent fresh official PDF response pp9 and17, lines398-418 and675-683, read2026-11-01; author reread retained response. Art12 payer/exclusions and art36 both-timely conditions completed; no later-amendment clearance.",
+    "read_date": "2026-11-01",
+    "sha256": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131"
   }
 }

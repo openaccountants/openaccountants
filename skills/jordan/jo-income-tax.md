@@ -1,7 +1,7 @@
 ---
 name: jo-income-tax
 description: "Conditional Jordan personal income tax extracts for a 2026 refresh, covering individuals, employees, sole traders and landlords. Includes residence, Jordan-source and specified foreign income, progressive bands, resident personal and dependant exemptions, evidenced expenditure, donations, national contribution, withholding and return timing under Income Tax Law No. 34 of 2014. Amendment currentness and filing procedures remain on hold. Two executable examples illustrate arithmetic under the stated assumptions; they do not clear a filing position. Use for Jordan income tax research, Jordan tax bands, ISTD individual returns and family exemptions. Read the Sources holds before applying any rule."
-version: 1.1
+version: 1.2
 jurisdiction: JO
 category: international
 tax_year: 2026
@@ -40,7 +40,7 @@ Company tax is in [jo-corporate-income-tax](jo-corporate-income-tax.md). Social 
 | Donations to government bodies | No percentage cap | Paid during the period without personal benefit; deduct from gross income, art. 10(a) | same |
 | Approved religious, charitable and similar donations | Up to 25% of taxable income | Paid in Jordan without personal benefit to an approved body; cap computed after art. 10(a) donations and before this deduction, art. 10(b) | same |
 | Prizes and lottery above JOD 1,000 | 15% withheld, final | Art. 12(a) | same |
-| Bank interest and deposit profits, individual | 5% withheld, final | Art. 12(a) | same |
+| Taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan to an individual | 5% withheld, final | Art. 12(a)(2); interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions are excluded; complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |
 
 Taxable income and tax due round down to the nearest dinar (art. 11(e)).
 
@@ -66,7 +66,7 @@ Filing workflow is on hold: the current e-services screens, return fields, attac
 
 ## Penalties and interest
 
-Late payment: 0.4% (four per thousand) of the balance for each week or part of a week; penalties may not exceed the tax (art. 36). If the return was on time and a later difference is up to JOD 5,000, the charge runs from the audit notice (art. 36(b)).
+Late payment: 0.4% (four per thousand) of the balance for each week or part of a week; penalties may not exceed the tax (art. 36). If both the return and payment of the declared tax were on time and a later tax difference is no more than JOD 5,000, the late charge on that difference starts at notification of the audit decision. Above JOD 5,000, art. 36(a) applies (art. 36(b)).
 
 ## Cross-border points
 
@@ -117,7 +117,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |
 | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
 
 Not yet confirmed: whether any amendment after Law No. 38 of 2018 changes these articles (the ISTD text names none; the Official Gazette was not searched); the tax period definition (calendar year in the old skill); e-services screens and return boxes; the filing exemption regulation; art. 34 assessment-window exceptions. All income-law computations remain non-operative until the amendment check is closed (hold JO-IT-CURRENT).

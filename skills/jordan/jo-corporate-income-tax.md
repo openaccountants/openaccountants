@@ -1,7 +1,7 @@
 ---
 name: jo-corporate-income-tax
 description: "Conditional Jordan corporate income tax extracts for a 2026 refresh. Covers resident and non-resident legal persons, ordinary and sector rates, specified foreign income, national contribution, withholding, import advances, half-year advances and return timing under Income Tax Law No. 34 of 2014. Amendment currentness, investment-zone treatment and filing procedures remain on hold. Two executable examples compare tax arithmetic, including a sole trader against a company under documented exemption assumptions. Use for Jordan corporate tax research, Jordan CIT, withholding tax, national contribution and ISTD company returns. No filing or incentive claim is cleared by this draft."
-version: 1.1
+version: 1.2
 jurisdiction: JO
 category: international
 tax_year: 2026
@@ -28,15 +28,15 @@ Legal persons with income arising in Jordan, whatever the place of payment (art.
 | Basic telecoms, electricity generation and distribution, basic materials mining, insurance, reinsurance, financial brokerage, financial companies, finance leasing | 24% | Art. 11(b) | same |
 | Banks | 35% | Art. 11(b) | same |
 | Industrial reduction | Ended | The art. 11(c) reduction table runs 2019 to 2023 only; this is not a conclusion about other incentive legislation | same |
-| National contribution, banks and electricity | 3% | Of taxable income, art. 11(f) | same |
-| National contribution, mining | 7% | Art. 11(f) | same |
-| National contribution, brokerage, financial, leasing | 4% | Art. 11(f) | same |
-| National contribution, basic telecoms, insurance, reinsurance | 2% | Art. 11(f) | same |
+| National contribution, banks and electricity | 3% | Of taxable income, art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |
+| National contribution, mining | 7% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |
+| National contribution, brokerage, financial, leasing | 4% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |
+| National contribution, basic telecoms, insurance, reinsurance | 2% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |
 | National contribution, other legal persons | 1% | Art. 11(f); stops if public debt reaches the permitted ratio, art. 11(g) | same |
 | Foreign net income and foreign branch | 10% | Art. 3(c) | same |
 | Partnership minimum | JOD 500 a year | General and limited partnerships without proper records, art. 11(h) | same |
 | WHT, resident professionals | 5% | Paid by a resident legal person to doctors, lawyers, engineers, auditors, consultants, agents and others named, art. 12(a) | same |
-| WHT, bank interest and deposit profit | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a) | same |
+| WHT, taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a)(2); excludes interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions. Complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |
 | WHT, non-resident | 10% | Non-exempt income, on due or payment date if earlier, art. 12(b) | same |
 | Import advance | 2% of import value | Collected by customs unless a Cabinet exception applies; credit in payment period or up to four subsequent periods, art. 19(a), (e) | same |
 | Half-year advance | 40% of tax | Prior-period business gross income above JOD 1,000,000; each advance uses tax from the relevant period statements, or the preceding return if absent; deduct import advances, art. 19(b)-(d) | same |
@@ -51,7 +51,7 @@ Income under art. 3 less expenses the law allows. Dividends distributed by resid
 |---|---|---|
 | Return | End of the fourth month after period end: 30 April 2027 for a calendar 2026 year, art. 17(a) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |
 | Balance | Before the end of the same month, art. 18(a) | same |
-| Advances | Within 30 days of the end of each half year, art. 19(b) | same |
+| Advances | Within 30 days of the end of each half year unless executive instructions allow a longer period, art. 19(b) | same |
 | Withheld tax | Remit within 30 days of payment, art. 12(e) | same |
 | Forms | Separate 2023-onward returns for general companies, banks and financial bodies, Investment Commission registrants, Petra and Aqaba entities | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 |
 
@@ -59,7 +59,7 @@ Filing workflow is on hold: current return fields, supporting-document requireme
 
 ## Penalties and interest
 
-Late payment or remittance: 0.4% per week or part of a week, capped at the tax (art. 36). Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e)).
+Late payment or remittance: 0.4% per week or part of a week, capped at the tax (art. 36). The art. 36(b) exception requires both timely filing and timely payment of the declared tax, followed by a difference no more than JOD 5,000; its charge starts at audit-decision notification. Above that amount art. 36(a) applies. Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e)).
 
 ## Cross-border points
 
@@ -110,7 +110,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |
 | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
 | ISTD, transfer pricing page, file list read | https://www.istd.gov.jo/AR/List/%D9%85%D9%86%D8%B5%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9 | 2026-11-01 |
 

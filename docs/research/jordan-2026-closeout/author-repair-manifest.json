@@ -1,0 +1,949 @@
+{
+  "initial_review_head": "2cec36c47e29f010fe0884693d40018c1313df7e",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "read_date": "2026-11-01",
+  "initial_review_file_sha256": {
+    "independent-additional-primary-followup.json": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131",
+    "independent-additional-primary.json": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001",
+    "independent-additional-search.json": "f79aae14f56363c9dc7f54f9d9eaee787918db2f8cc30e4e20c31c501358f19d",
+    "independent-build-review.py": "0060f241f83971de26bf96307c59509b9b1f0283dcd3e05394c68ba246475b48",
+    "independent-correction-requests.json": "3a4f0f2f97e4b123f75eed38fc86c530393a72f78facb4f1dc8b289bdd400437",
+    "independent-integrity-checks.json": "20b260253e40783748c7c2cd5c1cf2de340b4bac29c1b5debd454190451581d5",
+    "independent-review.md": "4eec3debaed130bb5e9943e5a50a2a99a7dd539c03773f8ee660f7f89491c14a",
+    "independent-row-verdicts.json": "f446df17ed4cc3f63ee7eca2f0de1d4e746f7a251bb01dcf4ce18f89b233cb06",
+    "independent-validation.txt": "294a1e5dee0165053d6eb6e2301b8b891cefb0bab690e640a74523c2fa032aee"
+  },
+  "findings": [
+    {
+      "id": "JR01",
+      "priority": "P1",
+      "rows": [
+        "jo-income-tax:C032",
+        "jo-corporate-income-tax:C028",
+        "jo-tax-overview:C012"
+      ],
+      "problem": "Article36(b) requires both timely filing and payment of the tax declared. The personal Guide states only timely filing. The other two penalty summaries omit this scoped exception.",
+      "fix": "Say: If the return and the declared tax were both filed/paid on time and the later difference is no more than JOD5,000, the late charge on the difference runs from notification of the audit decision; above that, art.36(a) applies. Keep the currentness hold. Make the other summaries carry or explicitly cross-reference these conditions.",
+      "evidence": [
+        "IT36"
+      ]
+    },
+    {
+      "id": "JR02",
+      "priority": "P1",
+      "rows": [
+        "jordan-gst:C015"
+      ],
+      "problem": "Imported-service timing loses both partial-payment/service triggers and their proportional limits.",
+      "fix": "State one month from paying the service fee or any part, to the extent relating to that part; customs release of the item carrying the service; or six months from receiving the service or any part, to the extent relating to that part, whichever applies first. Preserve Director-approved deferral and currentness hold.",
+      "evidence": [
+        "GSTSERVICE"
+      ]
+    },
+    {
+      "id": "JR03",
+      "priority": "P1",
+      "rows": [
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012"
+      ],
+      "problem": "Overview says foreign income is taxed only when funded from Jordan, omitting art.3(c)(2) foreign-branch income. Its social-security headline omits ordinary full-coverage scope, and1% monthly interest omits the art.19(a)(2)60-day-from-employment condition.",
+      "fix": "Include the foreign-branch route with audited final statements, or expressly limit the sentence to resident individuals. Put ordinary full-coverage employment beside14.25%/7.5%. Add the60-day source condition and distinguish source-baseline interest from a current assessment.",
+      "evidence": [
+        "IT3",
+        "SSC3",
+        "SSC20"
+      ]
+    },
+    {
+      "id": "JR04",
+      "priority": "P1",
+      "rows": [
+        "jo-income-tax:C019",
+        "jo-corporate-income-tax:C016"
+      ],
+      "problem": "Interest/deposit withholding rows omit the taxable-income qualification and domestic bank/financial-company payer condition; corporate row also omits interbank and designated-recipient exceptions. These are explicit neighbors in art.12(a)(2).",
+      "fix": "Restrict the rows to taxable interest/commissions/qualifying deposit profits paid by banks and financial companies in Jordan; carry the interbank and executive-instruction exclusions beside the corporate figure or state that entitlement remains held until the full exclusion check is made. Preserve finality distinctions.",
+      "evidence": [
+        "IT12"
+      ]
+    },
+    {
+      "id": "JR05",
+      "priority": "P1",
+      "rows": [
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C012",
+        "jordan-gst:C014",
+        "jordan-gst:C015"
+      ],
+      "problem": "Some GST positive legal extracts exceed the actually readable evidence: special tax computed first has no supporting clause here; no input in the exempt row is not proved by a schedule-list title; purchases/imports and pre-registration deduction clauses are truncated. The Guide asserts deduction art.19 and refund art.20(d) although the author ledger explicitly says these article numbers were not established.",
+      "fix": "Read and quote complete official clauses and establish the article numbers, or move the unsupported portion/number to an explicit hold. Retain the readable sales-return and bad-debt material, and the50-500 nonresident departure refund amounts as conditional clause extracts with an article-number hold. Do not clear positive input entitlement using damaged OCR.",
+      "evidence": [
+        "GSTINPUT",
+        "GSTREF",
+        "GST7",
+        "GST6"
+      ]
+    },
+    {
+      "id": "JR06",
+      "priority": "P2",
+      "rows": [
+        "jo-corporate-income-tax:C008",
+        "jo-corporate-income-tax:C009",
+        "jo-corporate-income-tax:C010",
+        "jo-corporate-income-tax:C011",
+        "jo-corporate-income-tax:C024",
+        "jo-tax-overview:C006"
+      ],
+      "problem": "National-contribution cessation in art.11(g) applies to all art.11(f), but only the other-companies row states it. The half-year advance due-date row omits the express executive-instruction longer-period exception.",
+      "fix": "Use a common note beside all national-contribution rows/headline stating art.11(g) applies to every rate and its actual trigger is not cleared. Add unless executive instructions allow a longer period to the advance deadline.",
+      "evidence": [
+        "IT11",
+        "IT17"
+      ]
+    },
+    {
+      "id": "JR07",
+      "priority": "P2",
+      "rows": [
+        "jo-income-tax:C021",
+        "jo-income-tax:C026",
+        "jo-income-tax:C030",
+        "jo-income-tax:C031",
+        "jo-income-tax:C033",
+        "jo-corporate-income-tax:C020",
+        "jo-corporate-income-tax:C023",
+        "jo-corporate-income-tax:C026",
+        "jo-corporate-income-tax:C029",
+        "jo-corporate-income-tax:C032",
+        "jo-payroll-social:C002",
+        "jo-payroll-social:C010",
+        "jo-payroll-social:C011",
+        "jo-payroll-social:C012",
+        "jo-payroll-social:C023",
+        "jo-payroll-social:C025",
+        "jo-payroll-social:C029",
+        "jo-payroll-social:C039",
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C005",
+        "jo-tax-overview:C006",
+        "jo-tax-overview:C007",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012",
+        "jo-tax-overview:C016",
+        "jordan-gst:C002",
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C009",
+        "jordan-gst:C012",
+        "jordan-gst:C013",
+        "jordan-gst:C014",
+        "jordan-gst:C015",
+        "jordan-gst:C033"
+      ],
+      "problem": "The author ledger is not yet a complete figure ledger: several legal rows use NONE; some multi-rule rows cite only an unrelated clause, and payroll Regulation45 source rowC039 cites IncomeTax art.3. Arithmetic/source-read rows are mixed with legal holdings.",
+      "fix": "Replace heuristic mappings with all the actual relevant source/quote IDs for each legal proposition, including operative source-baseline conditions. At minimum repair incomeC021/C026/C030/C031/C033; corporateC020/C023/C026/C029/C032; payrollC002/C010-C012/C023/C025/C029/C039; overviewC002/C005-C008/C012/C016; GSTC002/C004/C008/C009/C012-C015/C033. A source table/header/investigation prompt may remain NONE; an assertion of legal entitlement/rate cannot. Add source records for forms, TP, Regulation45 and the fresh MOIN failed-check research.",
+      "evidence": [
+        "MANIFEST"
+      ]
+    }
+  ],
+  "author_changes": {
+    "jo-income-tax": [
+      {
+        "before": "If the return was on time and a later difference is up to JOD 5,000, the charge runs from the audit notice (art. 36(b)).",
+        "after": "If both the return and payment of the declared tax were on time and a later tax difference is no more than JOD 5,000, the late charge on that difference starts at notification of the audit decision. Above JOD 5,000, art. 36(a) applies (art. 36(b))."
+      },
+      {
+        "before": "| Bank interest and deposit profits, individual | 5% withheld, final | Art. 12(a) | same |",
+        "after": "| Taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan to an individual | 5% withheld, final | Art. 12(a)(2); interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions are excluded; complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |"
+      }
+    ],
+    "jo-corporate-income-tax": [
+      {
+        "before": "Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e)).",
+        "after": "The art. 36(b) exception requires both timely filing and timely payment of the declared tax, followed by a difference no more than JOD 5,000; its charge starts at audit-decision notification. Above that amount art. 36(a) applies. Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e))."
+      },
+      {
+        "before": "| WHT, bank interest and deposit profit | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a) | same |",
+        "after": "| WHT, taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a)(2); excludes interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions. Complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |"
+      },
+      {
+        "before": "Within 30 days of the end of each half year, art. 19(b)",
+        "after": "Within 30 days of the end of each half year unless executive instructions allow a longer period, art. 19(b)"
+      }
+    ],
+    "jordan-gst": [
+      {
+        "before": "Input recovery requires a separate art. 19/Schedule 4 check and is not automatically equal to the liability. Pay at the earliest of one month from paying the fee, customs release of the item carrying the service, or six months from receiving the service; the Director may let a registered importer defer.",
+        "after": "Input recovery and the exact deduction article number remain on hold; recovery is not automatically equal to the liability. The readable payment clause uses the earliest applicable trigger: one month from payment of the service fee or any part, to the extent relating to that part; customs release of the item carrying the service; or six months from receiving the service or any part, to the extent relating to that part. A registered importer can defer only with the Director’s approval under the executive-instruction conditions. This remains a conditional source extract, not a current payment instruction."
+      },
+      {
+        "before": "Refuse and refer: Aqaba Special Economic Zone operations (ISTD has a separate Aqaba return), and alcohol, tobacco, fuel or other Special Sales Tax goods, where the special tax is computed first.",
+        "after": "Refuse and refer: Aqaba Special Economic Zone operations and any transaction requiring Special Sales Tax classification or a combined computation. The form-list reading shows separate Aqaba returns. The old alcohol/tobacco/fuel classification and claim that special tax is computed first remain explicitly on hold pending the complete schedules and valuation clause."
+      },
+      {
+        "before": "| Exempt | No GST, no input | Schedule 3, art. 7(b) |",
+        "after": "| Exempt | Exempt sale under the readable exemption clause; input treatment is on hold | Schedule 3 list title / art. 7(b) extract; no input entitlement or prohibition inferred from the title |"
+      },
+      {
+        "before": "Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds, art. 20(d) extract",
+        "after": "Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds. The exact refund article/subparagraph number remains on hold"
+      },
+      {
+        "before": "The art. 19 extract permits deductions for sales returns, qualifying bad debts, business purchases/imports other than Schedule 4, and eligible pre-registration stock, subject to the detailed conditions. The Schedule 4 contents and apportionment rules are on hold; do not allow input tax solely because a payment appears in a bank statement.",
+        "after": "The readable deduction fragments cover tax previously accounted for or paid on returned sales and general tax on deferred-payment sales that became bad debts. The purchases/imports and pre-registration-stock subclauses are truncated, so those positive entitlements, the exact deduction article number, blocked-input schedule and apportionment instructions remain explicitly on hold. Do not allow input tax solely because a payment appears in a bank statement."
+      },
+      {
+        "before": "Original examples/test cases using those assumptions remain held.",
+        "after": "Original examples/test cases using those assumptions remain held. Additional explicit evidence holds: special-tax-first valuation, input treatment of exempt supplies, purchases/imports and pre-registration-stock deduction entitlement, and exact deduction/refund article and subparagraph numbers. The readable returned-sale, bad-debt and departure-refund fragments do not close those holds."
+      }
+    ],
+    "jo-tax-overview": [
+      {
+        "before": "a resident's foreign income is taxed only where it arises from funds or deposits from Jordan (art. 3).",
+        "after": "art. 3(c) separately covers a resident’s net foreign income arising from funds or deposits from Jordan, and net income of a Jordanian company’s foreign branch declared in final financial statements certified by an external public accountant. Neither route replaces the other."
+      },
+      {
+        "before": "| Social security | Employer 14.25%, employee 7.5% |",
+        "after": "| Social security | Ordinary employment covered by all four insurances: employer 14.25%, employee 7.5%; exclusions and reductions require the detailed coverage check |"
+      },
+      {
+        "before": "Late income tax and GST payment costs 0.4% per week or part of a week. Contributions carry 1% a month.",
+        "after": "The source baseline states 0.4% per week or part for late income tax and GST. The income-tax art. 36(b) exception requires both timely return and timely payment of declared tax, with a later difference no more than JOD 5,000; its charge starts at audit-decision notification, while larger differences follow art. 36(a). For SSC the source states 1% monthly, with interest accruing after 60 days from employment under art. 19(a)(2). All these statements remain under the relevant currentness hold and do not determine a current assessment."
+      },
+      {
+        "before": "1% to 7% for companies; 1% above JOD 200,000 for individuals",
+        "after": "1% to 7% for companies; 1% above JOD 200,000 for individuals; art. 11(g) cessation applies to every rate, and occurrence of its debt-ratio trigger is not cleared"
+      }
+    ]
+  },
+  "status": "Author fixes supplied for focused independent recheck; no approval inferred; all named currentness/application holds remain open.",
+  "explicit_row_evidence_associations": {
+    "jo-company-formation:C001": [],
+    "jo-company-formation:C002": [],
+    "jo-company-formation:C003": [],
+    "jo-company-formation:C004": [],
+    "jo-company-formation:C005": [],
+    "jo-company-formation:C006": [],
+    "jo-company-formation:C007": [],
+    "jo-company-formation:C008": [],
+    "jo-company-formation:C009": [],
+    "jo-company-formation:C010": [],
+    "jo-company-formation:C011": [],
+    "jo-corporate-income-tax:C001": [],
+    "jo-corporate-income-tax:C002": [
+      "IT3"
+    ],
+    "jo-corporate-income-tax:C003": [],
+    "jo-corporate-income-tax:C004": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C005": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C006": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C007": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C008": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C009": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C010": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C011": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C012": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C013": [
+      "IT3"
+    ],
+    "jo-corporate-income-tax:C014": [
+      "IT11"
+    ],
+    "jo-corporate-income-tax:C015": [
+      "IT12"
+    ],
+    "jo-corporate-income-tax:C016": [
+      "IT12"
+    ],
+    "jo-corporate-income-tax:C017": [
+      "IT12"
+    ],
+    "jo-corporate-income-tax:C018": [
+      "IT17"
+    ],
+    "jo-corporate-income-tax:C019": [
+      "IT17"
+    ],
+    "jo-corporate-income-tax:C020": [
+      "IT3",
+      "IT4"
+    ],
+    "jo-corporate-income-tax:C021": [],
+    "jo-corporate-income-tax:C022": [
+      "IT17"
+    ],
+    "jo-corporate-income-tax:C023": [
+      "IT17"
+    ],
+    "jo-corporate-income-tax:C024": [
+      "IT17"
+    ],
+    "jo-corporate-income-tax:C025": [
+      "IT12"
+    ],
+    "jo-corporate-income-tax:C026": [
+      "FORMS"
+    ],
+    "jo-corporate-income-tax:C027": [],
+    "jo-corporate-income-tax:C028": [
+      "IT36",
+      "IT12"
+    ],
+    "jo-corporate-income-tax:C029": [
+      "IT3",
+      "TP"
+    ],
+    "jo-corporate-income-tax:C030": [
+      "IT11",
+      "ARITH"
+    ],
+    "jo-corporate-income-tax:C031": [
+      "IT11",
+      "ARITH"
+    ],
+    "jo-corporate-income-tax:C032": [
+      "IT9",
+      "IT11",
+      "IT4",
+      "ARITH"
+    ],
+    "jo-corporate-income-tax:C033": [
+      "IT9",
+      "IT11",
+      "IT4",
+      "ARITH"
+    ],
+    "jo-corporate-income-tax:C034": [],
+    "jo-corporate-income-tax:C035": [],
+    "jo-corporate-income-tax:C036": [],
+    "jo-corporate-income-tax:C037": [],
+    "jo-corporate-income-tax:C038": [],
+    "jo-corporate-income-tax:C039": [],
+    "jo-corporate-income-tax:C040": [
+      "MANIFEST"
+    ],
+    "jo-corporate-income-tax:C041": [
+      "FORMS"
+    ],
+    "jo-corporate-income-tax:C042": [
+      "TP"
+    ],
+    "jo-corporate-income-tax:C043": [
+      "MANIFEST"
+    ],
+    "jo-income-tax:C001": [],
+    "jo-income-tax:C002": [
+      "IT2",
+      "IT3",
+      "IT9",
+      "IT11"
+    ],
+    "jo-income-tax:C003": [],
+    "jo-income-tax:C004": [],
+    "jo-income-tax:C005": [
+      "IT11"
+    ],
+    "jo-income-tax:C006": [
+      "IT11"
+    ],
+    "jo-income-tax:C007": [
+      "IT11"
+    ],
+    "jo-income-tax:C008": [
+      "IT11"
+    ],
+    "jo-income-tax:C009": [
+      "IT11"
+    ],
+    "jo-income-tax:C010": [
+      "IT11"
+    ],
+    "jo-income-tax:C011": [
+      "IT11"
+    ],
+    "jo-income-tax:C012": [
+      "IT9"
+    ],
+    "jo-income-tax:C013": [
+      "IT9"
+    ],
+    "jo-income-tax:C014": [
+      "IT9"
+    ],
+    "jo-income-tax:C015": [
+      "IT9"
+    ],
+    "jo-income-tax:C016": [
+      "IT10"
+    ],
+    "jo-income-tax:C017": [
+      "IT10"
+    ],
+    "jo-income-tax:C018": [
+      "IT12"
+    ],
+    "jo-income-tax:C019": [
+      "IT12"
+    ],
+    "jo-income-tax:C020": [
+      "IT11"
+    ],
+    "jo-income-tax:C021": [
+      "IT2",
+      "IT3",
+      "IT4"
+    ],
+    "jo-income-tax:C022": [
+      "IT9"
+    ],
+    "jo-income-tax:C023": [],
+    "jo-income-tax:C024": [
+      "IT22"
+    ],
+    "jo-income-tax:C025": [
+      "IT17"
+    ],
+    "jo-income-tax:C026": [
+      "IT17"
+    ],
+    "jo-income-tax:C027": [
+      "IT17"
+    ],
+    "jo-income-tax:C028": [
+      "IT17"
+    ],
+    "jo-income-tax:C029": [
+      "IT27"
+    ],
+    "jo-income-tax:C030": [
+      "FORMS"
+    ],
+    "jo-income-tax:C031": [
+      "IT17"
+    ],
+    "jo-income-tax:C032": [
+      "IT36"
+    ],
+    "jo-income-tax:C033": [
+      "IT3",
+      "IT12"
+    ],
+    "jo-income-tax:C034": [
+      "IT9",
+      "IT11",
+      "ARITH"
+    ],
+    "jo-income-tax:C035": [
+      "IT9",
+      "IT11",
+      "ARITH"
+    ],
+    "jo-income-tax:C036": [
+      "IT9",
+      "IT11",
+      "ARITH"
+    ],
+    "jo-income-tax:C037": [
+      "IT9",
+      "IT11",
+      "ARITH"
+    ],
+    "jo-income-tax:C038": [],
+    "jo-income-tax:C039": [],
+    "jo-income-tax:C040": [],
+    "jo-income-tax:C041": [],
+    "jo-income-tax:C042": [],
+    "jo-income-tax:C043": [],
+    "jo-income-tax:C044": [
+      "MANIFEST"
+    ],
+    "jo-income-tax:C045": [
+      "FORMS"
+    ],
+    "jo-income-tax:C046": [
+      "MANIFEST"
+    ],
+    "jo-payroll-social:C001": [],
+    "jo-payroll-social:C002": [
+      "SSC3",
+      "IT12"
+    ],
+    "jo-payroll-social:C003": [],
+    "jo-payroll-social:C004": [
+      "SSC59"
+    ],
+    "jo-payroll-social:C005": [
+      "SSC59"
+    ],
+    "jo-payroll-social:C006": [
+      "SSC24"
+    ],
+    "jo-payroll-social:C007": [
+      "SSC42"
+    ],
+    "jo-payroll-social:C008": [
+      "SSC48"
+    ],
+    "jo-payroll-social:C009": [
+      "SSC48"
+    ],
+    "jo-payroll-social:C010": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "ARITH"
+    ],
+    "jo-payroll-social:C011": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "ARITH"
+    ],
+    "jo-payroll-social:C012": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "ARITH"
+    ],
+    "jo-payroll-social:C013": [
+      "SSC64"
+    ],
+    "jo-payroll-social:C014": [
+      "SSC59"
+    ],
+    "jo-payroll-social:C015": [
+      "CAP"
+    ],
+    "jo-payroll-social:C016": [
+      "SSC20"
+    ],
+    "jo-payroll-social:C017": [
+      "CAP"
+    ],
+    "jo-payroll-social:C018": [],
+    "jo-payroll-social:C019": [
+      "SSC20"
+    ],
+    "jo-payroll-social:C020": [
+      "REDUCTION"
+    ],
+    "jo-payroll-social:C021": [],
+    "jo-payroll-social:C022": [
+      "SSC20"
+    ],
+    "jo-payroll-social:C023": [
+      "IT12"
+    ],
+    "jo-payroll-social:C024": [],
+    "jo-payroll-social:C025": [
+      "SSC20"
+    ],
+    "jo-payroll-social:C026": [],
+    "jo-payroll-social:C027": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "SSC20",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-payroll-social:C028": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "SSC20",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-payroll-social:C029": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "SSC20",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-payroll-social:C030": [
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "SSC20",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-payroll-social:C031": [],
+    "jo-payroll-social:C032": [],
+    "jo-payroll-social:C033": [],
+    "jo-payroll-social:C034": [],
+    "jo-payroll-social:C035": [],
+    "jo-payroll-social:C036": [],
+    "jo-payroll-social:C037": [
+      "MANIFEST"
+    ],
+    "jo-payroll-social:C038": [
+      "CAP"
+    ],
+    "jo-payroll-social:C039": [
+      "REDUCTION"
+    ],
+    "jo-payroll-social:C040": [
+      "MANIFEST"
+    ],
+    "jo-payroll-social:C041": [
+      "MANIFEST"
+    ],
+    "jo-tax-overview:C001": [],
+    "jo-tax-overview:C002": [
+      "IT2",
+      "IT3"
+    ],
+    "jo-tax-overview:C003": [],
+    "jo-tax-overview:C004": [
+      "IT11"
+    ],
+    "jo-tax-overview:C005": [
+      "IT11"
+    ],
+    "jo-tax-overview:C006": [
+      "IT11"
+    ],
+    "jo-tax-overview:C007": [
+      "GST6"
+    ],
+    "jo-tax-overview:C008": [
+      "SSC3",
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "ARITH"
+    ],
+    "jo-tax-overview:C009": [
+      "IT17"
+    ],
+    "jo-tax-overview:C010": [],
+    "jo-tax-overview:C011": [
+      "IT17"
+    ],
+    "jo-tax-overview:C012": [
+      "IT36",
+      "GSTPEN",
+      "SSC20"
+    ],
+    "jo-tax-overview:C013": [
+      "IT12"
+    ],
+    "jo-tax-overview:C014": [
+      "IT11",
+      "ARITH"
+    ],
+    "jo-tax-overview:C015": [
+      "IT11",
+      "ARITH"
+    ],
+    "jo-tax-overview:C016": [
+      "SSC3",
+      "SSC20",
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-tax-overview:C017": [
+      "SSC3",
+      "SSC20",
+      "SSC59",
+      "SSC24",
+      "SSC42",
+      "SSC48",
+      "CAP",
+      "ARITH"
+    ],
+    "jo-tax-overview:C018": [],
+    "jo-tax-overview:C019": [],
+    "jo-tax-overview:C020": [],
+    "jo-tax-overview:C021": [],
+    "jo-tax-overview:C022": [],
+    "jo-tax-overview:C023": [],
+    "jo-tax-overview:C024": [
+      "MANIFEST"
+    ],
+    "jo-tax-overview:C025": [
+      "MANIFEST"
+    ],
+    "jo-tax-overview:C026": [
+      "MANIFEST"
+    ],
+    "jo-tax-overview:C027": [
+      "MANIFEST"
+    ],
+    "jordan-gst:C001": [],
+    "jordan-gst:C002": [
+      "GSTREG"
+    ],
+    "jordan-gst:C003": [],
+    "jordan-gst:C004": [
+      "FORMS",
+      "GST6"
+    ],
+    "jordan-gst:C005": [],
+    "jordan-gst:C006": [
+      "GST6"
+    ],
+    "jordan-gst:C007": [
+      "GST7"
+    ],
+    "jordan-gst:C008": [
+      "GST7"
+    ],
+    "jordan-gst:C009": [
+      "RATES"
+    ],
+    "jordan-gst:C010": [
+      "GSTREG"
+    ],
+    "jordan-gst:C011": [
+      "GSTREG"
+    ],
+    "jordan-gst:C012": [
+      "GSTREF"
+    ],
+    "jordan-gst:C013": [
+      "GSTBASE"
+    ],
+    "jordan-gst:C014": [
+      "GSTINPUT"
+    ],
+    "jordan-gst:C015": [
+      "GST6",
+      "GSTINPUT",
+      "GSTSERVICE"
+    ],
+    "jordan-gst:C016": [],
+    "jordan-gst:C017": [],
+    "jordan-gst:C018": [],
+    "jordan-gst:C019": [],
+    "jordan-gst:C020": [],
+    "jordan-gst:C021": [],
+    "jordan-gst:C022": [],
+    "jordan-gst:C023": [],
+    "jordan-gst:C024": [],
+    "jordan-gst:C025": [],
+    "jordan-gst:C026": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C027": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C028": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C029": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C030": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C031": [
+      "GSTFILE"
+    ],
+    "jordan-gst:C032": [],
+    "jordan-gst:C033": [
+      "GSTPEN"
+    ],
+    "jordan-gst:C034": [
+      "GSTREF"
+    ],
+    "jordan-gst:C035": [
+      "GST7"
+    ],
+    "jordan-gst:C036": [
+      "GST6",
+      "ARITH"
+    ],
+    "jordan-gst:C037": [
+      "GST6",
+      "ARITH"
+    ],
+    "jordan-gst:C038": [
+      "GSTPEN",
+      "ARITH"
+    ],
+    "jordan-gst:C039": [
+      "GSTPEN",
+      "ARITH"
+    ],
+    "jordan-gst:C040": [],
+    "jordan-gst:C041": [],
+    "jordan-gst:C042": [],
+    "jordan-gst:C043": [],
+    "jordan-gst:C044": [],
+    "jordan-gst:C045": [],
+    "jordan-gst:C046": [],
+    "jordan-gst:C047": [],
+    "jordan-gst:C048": [
+      "MANIFEST"
+    ],
+    "jordan-gst:C049": [
+      "RATES"
+    ],
+    "jordan-gst:C050": [
+      "RATES"
+    ],
+    "jordan-gst:C051": [
+      "FORMS"
+    ],
+    "jordan-gst:C052": [
+      "MANIFEST"
+    ]
+  },
+  "source_evidence_groups": "claim-evidence-groups.json",
+  "new_source_ids": [
+    "FORMS",
+    "TP",
+    "REDUCTION",
+    "MOIN",
+    "MOIN-FOLLOWUP"
+  ],
+  "review_receipts_unchanged": true,
+  "author_finding_dispositions": [
+    {
+      "id": "JR01",
+      "rows": [
+        "jo-income-tax:C032",
+        "jo-corporate-income-tax:C028",
+        "jo-tax-overview:C012"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Restored both timely filing and declared-tax payment, no-more-than5000 threshold, audit-decision notification and larger-difference rule. Corporate and overview summaries now carry the complete exception."
+    },
+    {
+      "id": "JR02",
+      "rows": [
+        "jordan-gst:C015"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Restored any-part payment and receipt triggers, corresponding-part scope, customs-release alternative and Director-approved deferral under instruction conditions."
+    },
+    {
+      "id": "JR03",
+      "rows": [
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Overview now states both art3(c) foreign-income routes including certified branch statements; SSC headline is ordinary full coverage and interest includes60days plus assessment hold."
+    },
+    {
+      "id": "JR04",
+      "rows": [
+        "jo-income-tax:C019",
+        "jo-corporate-income-tax:C016"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Both interest rows now restrict payer and taxable income; retain individual/nonresident-legal-person finality; interbank and designated-recipient exclusions are adjacent to figures and linked to MOIN supplemental evidence."
+    },
+    {
+      "id": "JR05",
+      "rows": [
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C012",
+        "jordan-gst:C014",
+        "jordan-gst:C015"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Held unsupported special-tax-first valuation, exempt input treatment, purchases/imports/pre-registration positive deduction entitlement and exact deduction/refund article numbers. Retained only readable returned-sale/bad-debt and50-500tax-refund fragments."
+    },
+    {
+      "id": "JR06",
+      "rows": [
+        "jo-corporate-income-tax:C008",
+        "jo-corporate-income-tax:C009",
+        "jo-corporate-income-tax:C010",
+        "jo-corporate-income-tax:C011",
+        "jo-corporate-income-tax:C024",
+        "jo-tax-overview:C006"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Cessation condition now appears beside each national-contribution rate and overview headline; half-year-advance timing states executive-instruction longer-period exception."
+    },
+    {
+      "id": "JR07",
+      "rows": [
+        "jo-income-tax:C021",
+        "jo-income-tax:C026",
+        "jo-income-tax:C030",
+        "jo-income-tax:C031",
+        "jo-income-tax:C033",
+        "jo-corporate-income-tax:C020",
+        "jo-corporate-income-tax:C023",
+        "jo-corporate-income-tax:C026",
+        "jo-corporate-income-tax:C029",
+        "jo-corporate-income-tax:C032",
+        "jo-payroll-social:C002",
+        "jo-payroll-social:C010",
+        "jo-payroll-social:C011",
+        "jo-payroll-social:C012",
+        "jo-payroll-social:C023",
+        "jo-payroll-social:C025",
+        "jo-payroll-social:C029",
+        "jo-payroll-social:C039",
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C005",
+        "jo-tax-overview:C006",
+        "jo-tax-overview:C007",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012",
+        "jo-tax-overview:C016",
+        "jordan-gst:C002",
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C009",
+        "jordan-gst:C012",
+        "jordan-gst:C013",
+        "jordan-gst:C014",
+        "jordan-gst:C015",
+        "jordan-gst:C033"
+      ],
+      "author_status": "repaired_pending_independent_closure",
+      "resolution": "Replaced all220heuristic current-row associations with explicit independently identified per-row evidence groups; multi-proposition rows receive all relevant component groups, with full original-language clause extracts and exact quote references. Added forms,TP,Regulation45,MOIN source records;218historical rows and initial review receipts unchanged."
+    }
+  ],
+  "guide_diffs_from_review_head": "diff --git a/skills/jordan/jo-corporate-income-tax.md b/skills/jordan/jo-corporate-income-tax.md\nindex 7944b2fa1..5b3074857 100644\n--- a/skills/jordan/jo-corporate-income-tax.md\n+++ b/skills/jordan/jo-corporate-income-tax.md\n@@ -1,7 +1,7 @@\n ---\n name: jo-corporate-income-tax\n description: \"Conditional Jordan corporate income tax extracts for a 2026 refresh. Covers resident and non-resident legal persons, ordinary and sector rates, specified foreign income, national contribution, withholding, import advances, half-year advances and return timing under Income Tax Law No. 34 of 2014. Amendment currentness, investment-zone treatment and filing procedures remain on hold. Two executable examples compare tax arithmetic, including a sole trader against a company under documented exemption assumptions. Use for Jordan corporate tax research, Jordan CIT, withholding tax, national contribution and ISTD company returns. No filing or incentive claim is cleared by this draft.\"\n-version: 1.1\n+version: 1.2\n jurisdiction: JO\n category: international\n tax_year: 2026\n@@ -28,15 +28,15 @@ Legal persons with income arising in Jordan, whatever the place of payment (art.\n | Basic telecoms, electricity generation and distribution, basic materials mining, insurance, reinsurance, financial brokerage, financial companies, finance leasing | 24% | Art. 11(b) | same |\n | Banks | 35% | Art. 11(b) | same |\n | Industrial reduction | Ended | The art. 11(c) reduction table runs 2019 to 2023 only; this is not a conclusion about other incentive legislation | same |\n-| National contribution, banks and electricity | 3% | Of taxable income, art. 11(f) | same |\n-| National contribution, mining | 7% | Art. 11(f) | same |\n-| National contribution, brokerage, financial, leasing | 4% | Art. 11(f) | same |\n-| National contribution, basic telecoms, insurance, reinsurance | 2% | Art. 11(f) | same |\n+| National contribution, banks and electricity | 3% | Of taxable income, art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |\n+| National contribution, mining | 7% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |\n+| National contribution, brokerage, financial, leasing | 4% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |\n+| National contribution, basic telecoms, insurance, reinsurance | 2% | Art. 11(f); art. 11(g) cessation applies to this rate; whether its debt-ratio trigger has occurred is not cleared | same |\n | National contribution, other legal persons | 1% | Art. 11(f); stops if public debt reaches the permitted ratio, art. 11(g) | same |\n | Foreign net income and foreign branch | 10% | Art. 3(c) | same |\n | Partnership minimum | JOD 500 a year | General and limited partnerships without proper records, art. 11(h) | same |\n | WHT, resident professionals | 5% | Paid by a resident legal person to doctors, lawyers, engineers, auditors, consultants, agents and others named, art. 12(a) | same |\n-| WHT, bank interest and deposit profit | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a) | same |\n+| WHT, taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan | 5% individuals, 7% legal persons | Final for individuals and non-resident legal persons, art. 12(a)(2); excludes interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions. Complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |\n | WHT, non-resident | 10% | Non-exempt income, on due or payment date if earlier, art. 12(b) | same |\n | Import advance | 2% of import value | Collected by customs unless a Cabinet exception applies; credit in payment period or up to four subsequent periods, art. 19(a), (e) | same |\n | Half-year advance | 40% of tax | Prior-period business gross income above JOD 1,000,000; each advance uses tax from the relevant period statements, or the preceding return if absent; deduct import advances, art. 19(b)-(d) | same |\n@@ -51,7 +51,7 @@ Income under art. 3 less expenses the law allows. Dividends distributed by resid\n |---|---|---|\n | Return | End of the fourth month after period end: 30 April 2027 for a calendar 2026 year, art. 17(a) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |\n | Balance | Before the end of the same month, art. 18(a) | same |\n-| Advances | Within 30 days of the end of each half year, art. 19(b) | same |\n+| Advances | Within 30 days of the end of each half year unless executive instructions allow a longer period, art. 19(b) | same |\n | Withheld tax | Remit within 30 days of payment, art. 12(e) | same |\n | Forms | Separate 2023-onward returns for general companies, banks and financial bodies, Investment Commission registrants, Petra and Aqaba entities | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 |\n \n@@ -59,7 +59,7 @@ Filing workflow is on hold: current return fields, supporting-document requireme\n \n ## Penalties and interest\n \n-Late payment or remittance: 0.4% per week or part of a week, capped at the tax (art. 36). Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e)).\n+Late payment or remittance: 0.4% per week or part of a week, capped at the tax (art. 36). The art. 36(b) exception requires both timely filing and timely payment of the declared tax, followed by a difference no more than JOD 5,000; its charge starts at audit-decision notification. Above that amount art. 36(a) applies. Failure to withhold makes the payer liable as for its own tax from the remittance date (art. 12(e)).\n \n ## Cross-border points\n \n@@ -110,7 +110,7 @@ expected:\n \n | Source | URL | Read on |\n |---|---|---|\n-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |\n+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |\n | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |\n | ISTD, transfer pricing page, file list read | https://www.istd.gov.jo/AR/List/%D9%85%D9%86%D8%B5%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9 | 2026-11-01 |\n \ndiff --git a/skills/jordan/jo-income-tax.md b/skills/jordan/jo-income-tax.md\nindex 53c39c682..638b0a8e9 100644\n--- a/skills/jordan/jo-income-tax.md\n+++ b/skills/jordan/jo-income-tax.md\n@@ -1,7 +1,7 @@\n ---\n name: jo-income-tax\n description: \"Conditional Jordan personal income tax extracts for a 2026 refresh, covering individuals, employees, sole traders and landlords. Includes residence, Jordan-source and specified foreign income, progressive bands, resident personal and dependant exemptions, evidenced expenditure, donations, national contribution, withholding and return timing under Income Tax Law No. 34 of 2014. Amendment currentness and filing procedures remain on hold. Two executable examples illustrate arithmetic under the stated assumptions; they do not clear a filing position. Use for Jordan income tax research, Jordan tax bands, ISTD individual returns and family exemptions. Read the Sources holds before applying any rule.\"\n-version: 1.1\n+version: 1.2\n jurisdiction: JO\n category: international\n tax_year: 2026\n@@ -40,7 +40,7 @@ Company tax is in [jo-corporate-income-tax](jo-corporate-income-tax.md). Social\n | Donations to government bodies | No percentage cap | Paid during the period without personal benefit; deduct from gross income, art. 10(a) | same |\n | Approved religious, charitable and similar donations | Up to 25% of taxable income | Paid in Jordan without personal benefit to an approved body; cap computed after art. 10(a) donations and before this deduction, art. 10(b) | same |\n | Prizes and lottery above JOD 1,000 | 15% withheld, final | Art. 12(a) | same |\n-| Bank interest and deposit profits, individual | 5% withheld, final | Art. 12(a) | same |\n+| Taxable deposit interest, commissions and qualifying deposit investment profits paid by banks/financial companies in Jordan to an individual | 5% withheld, final | Art. 12(a)(2); interbank deposit interest/profits/commissions and interest/profits for recipients designated by executive instructions are excluded; complete the exclusion check before applying | https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf |\n \n Taxable income and tax due round down to the nearest dinar (art. 11(e)).\n \n@@ -66,7 +66,7 @@ Filing workflow is on hold: the current e-services screens, return fields, attac\n \n ## Penalties and interest\n \n-Late payment: 0.4% (four per thousand) of the balance for each week or part of a week; penalties may not exceed the tax (art. 36). If the return was on time and a later difference is up to JOD 5,000, the charge runs from the audit notice (art. 36(b)).\n+Late payment: 0.4% (four per thousand) of the balance for each week or part of a week; penalties may not exceed the tax (art. 36). If both the return and payment of the declared tax were on time and a later tax difference is no more than JOD 5,000, the late charge on that difference starts at notification of the audit decision. Above JOD 5,000, art. 36(a) applies (art. 36(b)).\n \n ## Cross-border points\n \n@@ -117,7 +117,7 @@ expected:\n \n | Source | URL | Read on |\n |---|---|---|\n-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |\n+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |\n | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |\n \n Not yet confirmed: whether any amendment after Law No. 38 of 2018 changes these articles (the ISTD text names none; the Official Gazette was not searched); the tax period definition (calendar year in the old skill); e-services screens and return boxes; the filing exemption regulation; art. 34 assessment-window exceptions. All income-law computations remain non-operative until the amendment check is closed (hold JO-IT-CURRENT).\ndiff --git a/skills/jordan/jo-tax-overview.md b/skills/jordan/jo-tax-overview.md\nindex 0de58f514..8c883a76a 100644\n--- a/skills/jordan/jo-tax-overview.md\n+++ b/skills/jordan/jo-tax-overview.md\n@@ -1,7 +1,7 @@\n ---\n name: jo-tax-overview\n description: \"Conditional overview of Jordan tax sources for a 2026 refresh. Routes individual income tax, company tax, General Sales Tax and social security questions to the existing detailed Jordan Guides. Gives source-text headline rates and calendar illustrations with the conditions in those Guides. All source-currentness and filing-procedure holds carry through to this overview. Includes two executable arithmetic examples for a standard company and an ordinary full-coverage employee. Use for Jordan tax overview research, taxes in Jordan, ISTD, social security and the Jordan tax calendar. Do not treat the target tax year as clearance of a current filing position.\"\n-version: 1.1\n+version: 1.2\n jurisdiction: JO\n category: international\n tax_year: 2026\n@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n \n **Source currentness hold.** This is a source-cited research draft for the 2026 refresh, not a cleared filing instruction. The clause extracts below are conditional reference material. Before using them for a 2026 position, close the amendment and procedure gaps named in Sources. A read date records the stated read scope, not verification of every later amendment.\n \n-Income arising in Jordan is taxed wherever it is paid; a resident's foreign income is taxed only where it arises from funds or deposits from Jordan (art. 3). ISTD runs income tax and sales tax; the Social Security Corporation runs contributions. Currency is the Jordanian dinar (JOD).\n+Income arising in Jordan is taxed wherever it is paid; art. 3(c) separately covers a resident’s net foreign income arising from funds or deposits from Jordan, and net income of a Jordanian company’s foreign branch declared in final financial statements certified by an external public accountant. Neither route replaces the other. ISTD runs income tax and sales tax; the Social Security Corporation runs contributions. Currency is the Jordanian dinar (JOD).\n \n ## Rates, bands and thresholds\n \n@@ -26,9 +26,9 @@ Income arising in Jordan is taxed wherever it is paid; a resident's foreign inco\n |---|---|---|---|\n | Personal income tax | 5% to 30% | [jo-income-tax](jo-income-tax.md) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |\n | Company tax | 20%, 24%, 35% | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |\n-| National contribution | 1% to 7% for companies; 1% above JOD 200,000 for individuals | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |\n+| National contribution | 1% to 7% for companies; 1% above JOD 200,000 for individuals; art. 11(g) cessation applies to every rate, and occurrence of its debt-ratio trigger is not cleared | [jo-corporate-income-tax](jo-corporate-income-tax.md) | same |\n | General Sales Tax | 16% standard | [jordan-gst](jordan-gst.md) | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |\n-| Social security | Employer 14.25%, employee 7.5% | [jo-payroll-social](jo-payroll-social.md) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |\n+| Social security | Ordinary employment covered by all four insurances: employer 14.25%, employee 7.5%; exclusions and reductions require the detailed coverage check | [jo-payroll-social](jo-payroll-social.md) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |\n | Income tax return | End of April for a calendar year | [jo-income-tax](jo-income-tax.md) | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx |\n \n ## The base\n@@ -41,7 +41,7 @@ Income tax returns are due by the end of the fourth month after the period. GST\n \n ## Penalties and interest\n \n-Late income tax and GST payment costs 0.4% per week or part of a week. Contributions carry 1% a month.\n+The source baseline states 0.4% per week or part for late income tax and GST. The income-tax art. 36(b) exception requires both timely return and timely payment of declared tax, with a later difference no more than JOD 5,000; its charge starts at audit-decision notification, while larger differences follow art. 36(a). For SSC the source states 1% monthly, with interest accruing after 60 days from employment under art. 19(a)(2). All these statements remain under the relevant currentness hold and do not determine a current assessment.\n \n ## Cross-border points\n \n@@ -86,7 +86,7 @@ expected:\n \n | Source | URL | Read on |\n |---|---|---|\n-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |\n+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked; MOIN supplementary baseline pages 3, 9 and 17 read by independent reviewer and author on 2026-11-01 | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx; https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf | 2026-11-01 |\n | General Sales Tax Law No. 6 of 1994 as amended, ISTD scan: inherited original-author OCR reading of rate, registration, return, deduction, refund and penalty clauses; closeout reread cached output, fresh scan unavailable | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf | 2026-11-01 |\n | Social Security Law No. 1 of 2014, SSC official translation through 16 Apr 2023: arts. 3-7, 19-24, 42-49, 59, 64 read; original Arabic source/pages recorded in closeout ledger | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf | 2026-11-01 |\n \ndiff --git a/skills/jordan/jordan-gst.md b/skills/jordan/jordan-gst.md\nindex 3a3dca1de..877a12782 100644\n--- a/skills/jordan/jordan-gst.md\n+++ b/skills/jordan/jordan-gst.md\n@@ -1,7 +1,7 @@\n ---\n name: jordan-gst\n description: \"Conditional Jordan General Sales Tax extracts for a 2026 refresh under Law No. 6 of 1994. Covers the standard-rate clause, registration framework, source-text periods, payment timing, deductions, refunds and late charges. Registration limits, schedules, supplier-specific classifications, current return fields, amendment currentness and operational filing procedures remain on hold. Bank descriptions are investigation prompts and cannot establish tax treatment. Two executable examples illustrate standard-rate arithmetic and payment timing under stated assumptions. Use for Jordan GST research, Jordan VAT, ISTD sales tax and imported-service questions. Read the Sources holds before any classification or filing decision.\"\n-version: 2.2\n+version: 2.3\n jurisdiction: JO\n category: international\n tax_year: 2026\n@@ -22,7 +22,7 @@ A person selling taxable goods or services who reaches the registration limit, a\n \n Use the bank statement to reconcile payments, alongside sales/purchase tax invoices, customs declarations and evidence of supplier residence and business use. A bank statement alone is insufficient to classify taxable supplies or claim input tax.\n \n-Refuse and refer: Aqaba Special Economic Zone operations (ISTD has a separate Aqaba return), and alcohol, tobacco, fuel or other Special Sales Tax goods, where the special tax is computed first.\n+Refuse and refer: Aqaba Special Economic Zone operations and any transaction requiring Special Sales Tax classification or a combined computation. The form-list reading shows separate Aqaba returns. The old alcohol/tobacco/fuel classification and claim that special tax is computed first remain explicitly on hold pending the complete schedules and valuation clause.\n \n ## Rates, bands and thresholds\n \n@@ -30,19 +30,19 @@ Refuse and refer: Aqaba Special Economic Zone operations (ISTD has a separate Aq\n |---|---|---|---|\n | Standard rate | 16% | Import or supply of any good or service, art. 6(a) | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |\n | Zero rate | 0% | Schedule 2 goods, sales to free zones, exports, sales to exempt bodies, art. 7(a) | same |\n-| Exempt | No GST, no input | Schedule 3, art. 7(b) | https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA |\n+| Exempt | Exempt sale under the readable exemption clause; input treatment is on hold | Schedule 3 list title / art. 7(b) extract; no input entitlement or prohibition inferred from the title | https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA |\n | Reduced lists | 10%, 5%, 4%, 2% | Goods named on ISTD lists; look up the item, never guess | https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 |\n | Registration limit | unverified, on hold | The regulation setting the limit has not been read; no threshold can be applied from this draft | unverified |\n | Importer | No limit | Register within 30 days of first import, unless personal use | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |\n-| Tourist refund | JOD 50 to JOD 500 of tax refunded | Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds, art. 20(d) extract | same |\n+| Tourist refund | JOD 50 to JOD 500 of tax refunded | Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds. The exact refund article/subparagraph number remains on hold | same |\n \n ## The base\n \n Sale price the buyer must pay. A zero-rated or exempt item sold tied to a taxable item takes GST (art. 7(c)); a taxable good tied to an exempt financial service stays taxable on its own value (art. 7(d)).\n \n-The art. 19 extract permits deductions for sales returns, qualifying bad debts, business purchases/imports other than Schedule 4, and eligible pre-registration stock, subject to the detailed conditions. The Schedule 4 contents and apportionment rules are on hold; do not allow input tax solely because a payment appears in a bank statement.\n+The readable deduction fragments cover tax previously accounted for or paid on returned sales and general tax on deferred-payment sales that became bad debts. The purchases/imports and pre-registration-stock subclauses are truncated, so those positive entitlements, the exact deduction article number, blocked-input schedule and apportionment instructions remain explicitly on hold. Do not allow input tax solely because a payment appears in a bank statement.\n \n-Goods-import valuation and input recovery are on hold until the customs valuation components and current deduction instructions are read. Services from a non-resident: importing a service is taxable under art. 6(a); calculate the standard-rate liability only after ruling out a specific exemption/rate. Input recovery requires a separate art. 19/Schedule 4 check and is not automatically equal to the liability. Pay at the earliest of one month from paying the fee, customs release of the item carrying the service, or six months from receiving the service; the Director may let a registered importer defer.\n+Goods-import valuation and input recovery are on hold until the customs valuation components and current deduction instructions are read. Services from a non-resident: importing a service is taxable under art. 6(a); calculate the standard-rate liability only after ruling out a specific exemption/rate. Input recovery and the exact deduction article number remain on hold; recovery is not automatically equal to the liability. The readable payment clause uses the earliest applicable trigger: one month from payment of the service fee or any part, to the extent relating to that part; customs release of the item carrying the service; or six months from receiving the service or any part, to the extent relating to that part. A registered importer can defer only with the Director’s approval under the executive-instruction conditions. This remains a conditional source extract, not a current payment instruction.\n \n Bank-statement investigation prompts, not tax classifications:\n \n@@ -138,7 +138,7 @@ Hold any unsupported rate or input claim. Confirm the assigned period before pre\n | ISTD, sales tax rates search, first page read | https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |\n | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |\n \n-Not yet confirmed: registration limits; any amendment after the 2022 ISTD file; the old 8% rate and 4% telecom rate (ISTD lists 10%, 5%, 4% and 2%, no 8%; list contents read on the first page only); old examples such as bread, rice, sugar, milk, medical, education and residential rent, which need the schedules; monthly filing above JOD 1,000,000; national e-invoicing timing; the Arabic invoice rule. Article numbers come from OCR. Non-operative holds also cover: reported JOD 75,000/50,000/30,000 registration limits; international transport, agricultural, government and charitable classifications; Schedule 4 blocked entertainment/hospitality, private vehicles, non-business purchases, exempt-related purchases and gifts/donations; turnover apportionment/ISTD approval; customs CIF/duty valuation and recovery; automatic equal input for imported services; free-zone re-entry; returned-sale credit-note period; return-box mapping. Original examples/test cases using those assumptions remain held. Any later amendment/commencement is JO-GST-CURRENT; no 2026 filing or penalty instruction is cleared until it closes.\n+Not yet confirmed: registration limits; any amendment after the 2022 ISTD file; the old 8% rate and 4% telecom rate (ISTD lists 10%, 5%, 4% and 2%, no 8%; list contents read on the first page only); old examples such as bread, rice, sugar, milk, medical, education and residential rent, which need the schedules; monthly filing above JOD 1,000,000; national e-invoicing timing; the Arabic invoice rule. Article numbers come from OCR. Non-operative holds also cover: reported JOD 75,000/50,000/30,000 registration limits; international transport, agricultural, government and charitable classifications; Schedule 4 blocked entertainment/hospitality, private vehicles, non-business purchases, exempt-related purchases and gifts/donations; turnover apportionment/ISTD approval; customs CIF/duty valuation and recovery; automatic equal input for imported services; free-zone re-entry; returned-sale credit-note period; return-box mapping. Original examples/test cases using those assumptions remain held. Additional explicit evidence holds: special-tax-first valuation, input treatment of exempt supplies, purchases/imports and pre-registration-stock deduction entitlement, and exact deduction/refund article and subparagraph numbers. The readable returned-sale, bad-debt and departure-refund fragments do not close those holds. Any later amendment/commencement is JO-GST-CURRENT; no 2026 filing or penalty instruction is cleared until it closes.\n \n <!-- openaccountants-cta-block -->\n \n",
+  "validation": "Required checks run against the committed repaired head; exact-head results are held in sibling sources/ for the final reviewer and root release gates."
+}

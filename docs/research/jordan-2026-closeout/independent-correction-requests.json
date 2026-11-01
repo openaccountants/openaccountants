@@ -1,0 +1,142 @@
+{
+  "head": "2cec36c47e29f010fe0884693d40018c1313df7e",
+  "findings": [
+    {
+      "id": "JR01",
+      "priority": "P1",
+      "rows": [
+        "jo-income-tax:C032",
+        "jo-corporate-income-tax:C028",
+        "jo-tax-overview:C012"
+      ],
+      "problem": "Article36(b) requires both timely filing and payment of the tax declared. The personal Guide states only timely filing. The other two penalty summaries omit this scoped exception.",
+      "fix": "Say: If the return and the declared tax were both filed/paid on time and the later difference is no more than JOD5,000, the late charge on the difference runs from notification of the audit decision; above that, art.36(a) applies. Keep the currentness hold. Make the other summaries carry or explicitly cross-reference these conditions.",
+      "evidence": [
+        "IT36"
+      ]
+    },
+    {
+      "id": "JR02",
+      "priority": "P1",
+      "rows": [
+        "jordan-gst:C015"
+      ],
+      "problem": "Imported-service timing loses both partial-payment/service triggers and their proportional limits.",
+      "fix": "State one month from paying the service fee or any part, to the extent relating to that part; customs release of the item carrying the service; or six months from receiving the service or any part, to the extent relating to that part, whichever applies first. Preserve Director-approved deferral and currentness hold.",
+      "evidence": [
+        "GSTSERVICE"
+      ]
+    },
+    {
+      "id": "JR03",
+      "priority": "P1",
+      "rows": [
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012"
+      ],
+      "problem": "Overview says foreign income is taxed only when funded from Jordan, omitting art.3(c)(2) foreign-branch income. Its social-security headline omits ordinary full-coverage scope, and1% monthly interest omits the art.19(a)(2)60-day-from-employment condition.",
+      "fix": "Include the foreign-branch route with audited final statements, or expressly limit the sentence to resident individuals. Put ordinary full-coverage employment beside14.25%/7.5%. Add the60-day source condition and distinguish source-baseline interest from a current assessment.",
+      "evidence": [
+        "IT3",
+        "SSC3",
+        "SSC20"
+      ]
+    },
+    {
+      "id": "JR04",
+      "priority": "P1",
+      "rows": [
+        "jo-income-tax:C019",
+        "jo-corporate-income-tax:C016"
+      ],
+      "problem": "Interest/deposit withholding rows omit the taxable-income qualification and domestic bank/financial-company payer condition; corporate row also omits interbank and designated-recipient exceptions. These are explicit neighbors in art.12(a)(2).",
+      "fix": "Restrict the rows to taxable interest/commissions/qualifying deposit profits paid by banks and financial companies in Jordan; carry the interbank and executive-instruction exclusions beside the corporate figure or state that entitlement remains held until the full exclusion check is made. Preserve finality distinctions.",
+      "evidence": [
+        "IT12"
+      ]
+    },
+    {
+      "id": "JR05",
+      "priority": "P1",
+      "rows": [
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C012",
+        "jordan-gst:C014",
+        "jordan-gst:C015"
+      ],
+      "problem": "Some GST positive legal extracts exceed the actually readable evidence: special tax computed first has no supporting clause here; no input in the exempt row is not proved by a schedule-list title; purchases/imports and pre-registration deduction clauses are truncated. The Guide asserts deduction art.19 and refund art.20(d) although the author ledger explicitly says these article numbers were not established.",
+      "fix": "Read and quote complete official clauses and establish the article numbers, or move the unsupported portion/number to an explicit hold. Retain the readable sales-return and bad-debt material, and the50-500 nonresident departure refund amounts as conditional clause extracts with an article-number hold. Do not clear positive input entitlement using damaged OCR.",
+      "evidence": [
+        "GSTINPUT",
+        "GSTREF",
+        "GST7",
+        "GST6"
+      ]
+    },
+    {
+      "id": "JR06",
+      "priority": "P2",
+      "rows": [
+        "jo-corporate-income-tax:C008",
+        "jo-corporate-income-tax:C009",
+        "jo-corporate-income-tax:C010",
+        "jo-corporate-income-tax:C011",
+        "jo-corporate-income-tax:C024",
+        "jo-tax-overview:C006"
+      ],
+      "problem": "National-contribution cessation in art.11(g) applies to all art.11(f), but only the other-companies row states it. The half-year advance due-date row omits the express executive-instruction longer-period exception.",
+      "fix": "Use a common note beside all national-contribution rows/headline stating art.11(g) applies to every rate and its actual trigger is not cleared. Add unless executive instructions allow a longer period to the advance deadline.",
+      "evidence": [
+        "IT11",
+        "IT17"
+      ]
+    },
+    {
+      "id": "JR07",
+      "priority": "P2",
+      "rows": [
+        "jo-income-tax:C021",
+        "jo-income-tax:C026",
+        "jo-income-tax:C030",
+        "jo-income-tax:C031",
+        "jo-income-tax:C033",
+        "jo-corporate-income-tax:C020",
+        "jo-corporate-income-tax:C023",
+        "jo-corporate-income-tax:C026",
+        "jo-corporate-income-tax:C029",
+        "jo-corporate-income-tax:C032",
+        "jo-payroll-social:C002",
+        "jo-payroll-social:C010",
+        "jo-payroll-social:C011",
+        "jo-payroll-social:C012",
+        "jo-payroll-social:C023",
+        "jo-payroll-social:C025",
+        "jo-payroll-social:C029",
+        "jo-payroll-social:C039",
+        "jo-tax-overview:C002",
+        "jo-tax-overview:C005",
+        "jo-tax-overview:C006",
+        "jo-tax-overview:C007",
+        "jo-tax-overview:C008",
+        "jo-tax-overview:C012",
+        "jo-tax-overview:C016",
+        "jordan-gst:C002",
+        "jordan-gst:C004",
+        "jordan-gst:C008",
+        "jordan-gst:C009",
+        "jordan-gst:C012",
+        "jordan-gst:C013",
+        "jordan-gst:C014",
+        "jordan-gst:C015",
+        "jordan-gst:C033"
+      ],
+      "problem": "The author ledger is not yet a complete figure ledger: several legal rows use NONE; some multi-rule rows cite only an unrelated clause, and payroll Regulation45 source rowC039 cites IncomeTax art.3. Arithmetic/source-read rows are mixed with legal holdings.",
+      "fix": "Replace heuristic mappings with all the actual relevant source/quote IDs for each legal proposition, including operative source-baseline conditions. At minimum repair incomeC021/C026/C030/C031/C033; corporateC020/C023/C026/C029/C032; payrollC002/C010-C012/C023/C025/C029/C039; overviewC002/C005-C008/C012/C016; GSTC002/C004/C008/C009/C012-C015/C033. A source table/header/investigation prompt may remain NONE; an assertion of legal entitlement/rate cannot. Add source records for forms, TP, Regulation45 and the fresh MOIN failed-check research.",
+      "evidence": [
+        "MANIFEST"
+      ]
+    }
+  ]
+}
