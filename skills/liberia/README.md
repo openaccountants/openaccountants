@@ -22,7 +22,7 @@ partial:
 
 # Liberia: source-cited 2026 draft country pack
 
-Eight drafted Guides, all seven core domains partial. This is a working source-cited batch awaiting independent review, not comprehensive verified coverage or accountant attestation. Keep [issue466](https://github.com/openaccountants/openaccountants/issues/466) open.
+Eight earlier drafted Guides plus one additive annual-property workpaper, all seven core domains partial. This is a working source-cited batch awaiting independent review, not comprehensive verified coverage or accountant attestation. Keep [issue466](https://github.com/openaccountants/openaccountants/issues/466) open.
 
 | Domain/job | Guide | Status |
 |---|---|---|
@@ -34,6 +34,7 @@ Eight drafted Guides, all seven core domains partial. This is a working source-c
 | Source/withholding/PE/treaties | [lr-cross-border](lr-cross-border.md) | Partial draft,2026 |
 | Formation/registration | [lr-company-formation](lr-company-formation.md) | Partial draft,2026 |
 | Tax administration/router | [lr-tax-overview](lr-tax-overview.md) | Partial draft,2026 |
+| Annual property assessment/arrears | [lr-property-tax](lr-property-tax.md) | Additional conditional draft; independent review pending |
 
 ## Material source findings
 
@@ -47,3 +48,7 @@ Each claim is tied to the exact law/authority and read scope in the [figure ledg
 ## Other unresolved work
 
 Formation capital and full Associations Law, reserved activities, beneficial ownership and financial reporting; property, customs and excise computations; current forms/portal completion; source-chain/inflation verification; independent pack review and accountant attestation. These are not closed merely because a Guide exists.
+
+## Additional annual property workpaper
+
+[lr-property-tax](lr-property-tax.md) adds annual assessed-value taxation, use/exemption classification, valuation dates, acquisition schedules and conveyance arrears. Its [33-row ledger](../../evidence/ledgers/liberia-property-20261101/lr-property-tax.md) is pending independent review. The earlier eight Guides and accepted partial-draft review evidence are unchanged. Property currentness, ambiguous unimproved acreage, public-land cross-reference, forms and title/transfer-fee jobs remain open; all seven core domains remain partial.
