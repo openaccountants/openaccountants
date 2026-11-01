@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "ab7e3b979f9870e4cf35f77557643d52ea802bf9",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_only_validator": {
+    "actual_guides": 2,
+    "result": "pass",
+    "warning_groups": 2,
+    "warnings": [
+      "Property slug lacks seven-domain mapping",
+      "Rental and payroll jobs share inferredPR but are distinct"
+    ]
+  },
+  "strict_sync": {
+    "guides": 2,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "new_rental_examples": {
+    "files": 1,
+    "blocks": 2,
+    "failures": 0
+  },
+  "new_rental_shape_checks": 15,
+  "whole_base_whitespace": "pass",
+  "scope": "Ordinary collection source review only; actual later-law/forms/default/creditexcess holds unchanged."
+}
