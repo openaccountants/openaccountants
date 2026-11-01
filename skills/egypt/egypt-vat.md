@@ -241,18 +241,18 @@ Keep a working paper with date, party, registration number, invoice reference, n
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 67/2016, whole law, schedules and exempt list, read by OCR, key pages by image; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-01 |
-| Law 149/2026, all pages by image or OCR; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf | 2026-11-01 |
-| Correction notice for Laws 149 to 151 of 2026; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
-| Law 157/2025, arts. 2, 4, 5, 6; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf | 2026-11-01 |
-| Law 3/2022, whole law; archived copy, ETA refused the direct connection; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf | 2026-11-01 |
-| Regulations, Decree 66/2017, arts. searched, not the whole; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf | 2026-11-01 |
-| Decision 24/2023, non-resident parts; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.24-2023.pdf | 2026-11-01 |
-| Decision 417/2025; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.417.of_.2025.pdf | 2026-11-01 |
-| UTPL Law 206/2020, art. 31, refund and penalty chapters; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
-| Law 6/2025, arts. 3, 5, 12; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
-| ETA FAQ, returns (VAT), 2nd edition; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2026/https://eta.gov.eg/sites/default/files/2024-12/faqs-value-added-tax.v2.pdf | 2026-11-01 |
-| ETA VAT laws list and VAT forms page, sales sheet archived copy; opened and read on the page for the figures cited | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-01 |
+| Law 67/2016, whole law, schedules and exempt list, read by OCR, key pages by image; read for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-01 |
+| Law 149/2026, all pages by image or OCR; read for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf | 2026-11-01 |
+| Correction notice for Laws 149 to 151 of 2026; read for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
+| Law 157/2025, arts. 2, 4, 5, 6; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf | 2026-11-01 |
+| Law 3/2022, whole law; archived copy, ETA refused the direct connection; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf | 2026-11-01 |
+| Regulations, Decree 66/2017, arts. searched, not the whole; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf | 2026-11-01 |
+| Decision 24/2023, non-resident parts; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.24-2023.pdf | 2026-11-01 |
+| Decision 417/2025; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.417.of_.2025.pdf | 2026-11-01 |
+| UTPL Law 206/2020, art. 31, refund and penalty chapters; read for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law 6/2025, arts. 3, 5, 12; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
+| ETA FAQ, returns (VAT), 2nd edition; archived copy; read for the figures cited | https://web.archive.org/web/2026/https://eta.gov.eg/sites/default/files/2024-12/faqs-value-added-tax.v2.pdf | 2026-11-01 |
+| ETA VAT laws list and VAT forms page, sales sheet archived copy; read for the figures cited | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-01 |
 
 Not yet confirmed: the number of the fine article (Law 3/2022 prints 50, while the base law text sits at art. 66); e-invoice and e-receipt scope and phases (old text said mandatory for all registered businesses; the decisions were not read); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); UTPL Part 9 article numbers; whether any later law changed the 1.5% additional tax or the art. 15 and art. 48 periods after UTPL; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
 
