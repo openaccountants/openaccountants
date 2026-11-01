@@ -1,0 +1,71 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/saudi-arabia/sa-freelance-intake.md"
+    ],
+    "returncode": 0,
+    "stdout": "skills/saudi-arabia/sa-freelance-intake.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/saudi-arabia/sa-return-assembly.md"
+    ],
+    "returncode": 0,
+    "stdout": "skills/saudi-arabia/sa-return-assembly.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/saudi-arabia/sa-freelance-intake.md",
+      "skills/saudi-arabia/sa-return-assembly.md"
+    ],
+    "returncode": 0,
+    "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "returncode": 0,
+    "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "--mode",
+      "audit",
+      "--strict-metadata"
+    ],
+    "returncode": 0,
+    "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "HEAD"
+    ],
+    "returncode": 2,
+    "stdout": "evidence/ledgers/saudi-focused-repair-20261101/candidate.diff:19: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:22: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:33: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:36: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:38: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:55: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:58: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:60: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:62: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:64: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:67: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:74: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:76: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:79: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:81: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:92: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:95: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:97: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:106: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:123: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:126: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:128: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:131: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:133: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:135: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:137: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:144: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:146: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:148: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:166: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:168: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:175: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:177: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:179: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:192: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:194: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:209: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:211: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:214: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:216: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:223: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:225: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:227: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:229: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:232: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:234: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:237: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:257: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:261: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:263: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:268: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:288: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:312: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:315: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:317: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:326: trailing whitespace.\n+ \nevidence/ledgers/saudi-focused-repair-20261101/candidate.diff:326: new blank line at EOF.\n",
+    "stderr": ""
+  }
+]
