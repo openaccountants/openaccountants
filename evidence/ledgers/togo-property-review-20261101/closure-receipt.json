@@ -1,0 +1,329 @@
+{
+  "date": "2026-11-01",
+  "result": "accepted for conditional read-source working-paper fidelity after corrections",
+  "original_candidate_commit": "47c65b0646ba12ab7949ae08eaadbb45456e1d8f",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "head_at_closure": "d15274dfeae5780f481b1bab3cf8553f52398d77",
+  "exact_candidate_files": [
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "sha256": "d2ae6e75d798a027beada4f4308daceeadb5a811b92e5748af9a4ba8b2023bb9",
+      "bytes": 23355
+    },
+    {
+      "path": "skills/togo/README.md",
+      "sha256": "48c5f380ac789b26dbebc2339a674c5e616e14011fbd58fed3c792698795400c",
+      "bytes": 4118
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.json",
+      "sha256": "9df4862a08c2729688d9a28d210d692b75c059c09342cc0105122e9b7de6434a",
+      "bytes": 33378
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.md",
+      "sha256": "af267b066ca34f97ab3d89b9a561fc7d54992446530d0b8c47c172725a15e9d9",
+      "bytes": 19540
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/reviewer-repairs.json",
+      "sha256": "5ef8cd8fb8ed9de5782d86046a208f17e8960b4beadda6260c9478f95c281cfb",
+      "bytes": 5710
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/source-identities.json",
+      "sha256": "b096cd4da3181e3ef4f844dd196164a4772aff0de50d4a815b0f9b7df07be073",
+      "bytes": 1308
+    }
+  ],
+  "initial_review_files_unchanged": [
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.json",
+      "sha256": "5c93533fbc819e2e58258544c08389a6ea273742beaeeaf7e179f62ac8c38577",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.tsv",
+      "sha256": "86808f7a87cf5cecc2505ad506f470920a8577b782f8ea4e566ad6d044f99818",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/mechanical-receipt.json",
+      "sha256": "a77117ed79bd61505d97625dd0476a4b65dc9d36748c2d3083cc1d266e86cd54",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/private-source-artifacts.json",
+      "sha256": "6c347d5d6ffff2eac0851f4a1962112f314ddb10020efe243dfe9045e35ad7cd",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/review-record.md",
+      "sha256": "f40de736f32c1e0251471dc8ebf04532e84a0820f0c3aa877a8716355ecd8c01",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/validate-review.py",
+      "sha256": "642ee037fff578c844994e0657e435c79b8e5cbf0dba16cb2e235d749cccce52",
+      "unchanged": true
+    }
+  ],
+  "guide_repair_literal_replay": [
+    {
+      "before_sha256": "f3b4b03a41bfada045b53ff5d8de45705d40044c5b79c8749ace5509454cf53d",
+      "after_sha256": "27f39088485fa8daba8f412fc4fb345ffe1261fb20072ac3fc9bd9738b7ba215",
+      "one_exact_replacement": true
+    },
+    {
+      "before_sha256": "27f39088485fa8daba8f412fc4fb345ffe1261fb20072ac3fc9bd9738b7ba215",
+      "after_sha256": "d3d4f7211c33126ab4cb5df8fd692090f87a03093a35f07241842fe9177fba8e",
+      "one_exact_replacement": true
+    },
+    {
+      "before_sha256": "d3d4f7211c33126ab4cb5df8fd692090f87a03093a35f07241842fe9177fba8e",
+      "after_sha256": "717d71a56aa8b372debe118443abc57f8062148315923bea705b9da3491f1ffc",
+      "one_exact_replacement": true
+    },
+    {
+      "before_sha256": "717d71a56aa8b372debe118443abc57f8062148315923bea705b9da3491f1ffc",
+      "after_sha256": "eda36a482795f293602dcf9459de06161fd8cab5cf299607e985733364ecf288",
+      "one_exact_replacement": true
+    },
+    {
+      "before_sha256": "eda36a482795f293602dcf9459de06161fd8cab5cf299607e985733364ecf288",
+      "after_sha256": "d2ae6e75d798a027beada4f4308daceeadb5a811b92e5748af9a4ba8b2023bb9",
+      "one_exact_replacement": true
+    }
+  ],
+  "guide_reconstructed_exactly": true,
+  "cases_prose_and_blocks_unchanged": true,
+  "case_block_sha256": [
+    "05affdc2d9270be80789f15dd81b631eb839eee6ea63579759956736ba1f8730",
+    "2a3a9d16880356698400faa2bafaa6b720ab4ae75e8b91cb2e2d8b2b764b8563"
+  ],
+  "source_artifacts": [
+    {
+      "id": "cgi2025",
+      "sha256": "7d0df3af53833e47266f4b77cf134ac3acb14bb3e8049d1bf92ac2438be4f4c3",
+      "bytes": 3106563,
+      "unchanged": true
+    },
+    {
+      "id": "lf2026",
+      "sha256": "31b22b11258e5d7a56d939f700cf1e907e5e92aaf7810264dd778406fea7e35c",
+      "bytes": 29175138,
+      "unchanged": true
+    }
+  ],
+  "all_40_rows_checked": true,
+  "anchor_count": 56,
+  "all_anchors_exact_in_relevant_source_scope": true,
+  "both_ledger_formats_agree": true,
+  "old_guide_count": 8,
+  "prior_evidence_count": 22,
+  "preservation": [
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-company-formation.md",
+      "sha256": "c7005c2ab49bbaff1d4c5274836996004ae5236e598ee9ed74fb2a352abd5fe5",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-corporate-income-tax.md",
+      "sha256": "93a310220e6e757c9e053923fdec2a03a300a6b7fb996e8457479571f3ec129e",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-cross-border.md",
+      "sha256": "827cfe34d32269269baf2a261f3c1d6fbc30b1d7ef6346f6680022429eb0a19a",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-income-tax.md",
+      "sha256": "851f096549a65faef460714a15506c166abd3f6b0ed5cc06c083f5913ef00305",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-payroll-social.md",
+      "sha256": "a908e97cc645fa7e0dfe2c082939dff673f4c7494f357ef467b90d5c250f930d",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-tax-overview.md",
+      "sha256": "9377dddcc836891d0de8eb4fcbc3d8049110a2628da21f3437ad2822139ff56f",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-transfer-pricing.md",
+      "sha256": "de7a8acde9ecc31a4e0c5fbbff334f150a9ca6288e704dbae3bddd6cd8296107",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-vat-gst.md",
+      "sha256": "77c0f9111e1f7cd598be697569613e242522368833ac211f59c8905e39b76ab5",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/old-hashes.json",
+      "sha256": "74c1b99aa0b2199a7b8aa0d56355ddb1f77fa9f87a763b3c731a0860faf0d414",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/old-topics.md",
+      "sha256": "08b08e5170696a932a30afcb1340595740b1ddf357c37c2f23ff65fabef99b4b",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/review-status.md",
+      "sha256": "3c9f167ea035cf09eb20cf9491c306932c9cb6c1748eeba51640cdca89d4dbf6",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/sources.json",
+      "sha256": "4cefe58fa9f507b3453bdab88b5bb5be27ffdb0e40fb5d889f446ae996b390c6",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/validation.txt",
+      "sha256": "43b4f94d8bb6848dd8c9987402f6abfb66fe6543387ab7532a53d3f500520319",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/closure-candidate-hashes.json",
+      "sha256": "2643a083536633676e410df0ccc2814fa6e4653c861639cde1e44bc322912016",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/focused-closure-validation.txt",
+      "sha256": "29604668b233dd2bb7cfae1ca32f513035561b2089d1c5e8aca65cad4d137d88",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/focused-closure.md",
+      "sha256": "11cc7b99e0f26890ef87e27ec653d1258aaf35228984836347df10116520913c",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/independent-review.md",
+      "sha256": "57b7af5bfd467ee907a2c2c0d7cb97eb42f1167a333d17a02f416e56bc6ebcd4",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/independent-validation.txt",
+      "sha256": "1be20719665ce83dcc932966714c97942d4ac91f26287edc9418f5c4d3c84bd9",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/ledger-row-review.tsv",
+      "sha256": "79fe6505a49ae223b7b6d4a8bcece12bf446f32b45df0a08fe56078ae61d9ece",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/quote-matching.txt",
+      "sha256": "61c645cfcb08ddb1fbca15df7dc284cfd98da10d38edf5748d594c19e83924ff",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/validate-review.py",
+      "sha256": "70edf5ef3498713ce1cfdc6af9c2ac9d7be9702de2085210a99f383e10d7f678",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/writer-corrections.json",
+      "sha256": "45e60d3fba1e7d91d4849e7273f6cb5a756f5f7ed37ba8e08b07c3d62558f17c",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-company-formation.md",
+      "sha256": "784849b39cb0b97fc15a425689e3d6d54dd6ee57dd693868d4bbc0ff16d6471c",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-corporate-income-tax.md",
+      "sha256": "d18f9a6fb692c15cac35f527643a23b39669e44db534876d9914576283c1b58c",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-cross-border.md",
+      "sha256": "487c1a42a8474a3f8d434ff1fa18a9518c3c852964c41731f141e18829084de5",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-income-tax.md",
+      "sha256": "5751e99a51586ce0f0fa2ed1040a165d9ee351e9782c109378d73f51ac11de71",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-payroll-social.md",
+      "sha256": "e84cfeca4f26eba222b88de643e5d4d344fbab104a319f142923e0d1293181cd",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-tax-overview.md",
+      "sha256": "44f73f2d512162ecd581e90d84bebffdcf11d42cf384272944bb825ebf18fa65",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-transfer-pricing.md",
+      "sha256": "455cf875208e38431e1d07b092cbb8d11bd7d6c21486b7ec12c59d8cbebc4477",
+      "matches_base_and_initial_review": true
+    },
+    {
+      "path": "skills/togo/tg-vat-gst.md",
+      "sha256": "ada6b6fde1ae30edfca3b0efc3b7ca065a528f6452c97bc3b501ebf047933dc3",
+      "matches_base_and_initial_review": true
+    }
+  ],
+  "README_unchanged_from_frozen_addition": true,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/togo/tg-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/togo/tg-property-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/togo/tg-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 9 guides (3 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: 0 same-job groups, see skills/DUPLICATES.md\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    }
+  ],
+  "status_only_allowance_sha256": "4c16b6d56c05da846836b898b2ee139797ff5e93d46e85d77c01c937b8a45157",
+  "acceptance_limits": "Conditional statutory working paper against the read 2025 CGI/LPF and signed2026 LF overlay. All later-law/forms/workflow/specialcase/valuation/penalty/credit/claim-stay holds persist. No accountant attestation, full-country coverage or merge permission."
+}

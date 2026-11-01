@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cgi2025",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/cgi2025-archive.pdf",
+    "sha256": "7d0df3af53833e47266f4b77cf134ac3acb14bb3e8049d1bf92ac2438be4f4c3",
+    "bytes": 3106563,
+    "read_scope": "CGI257\u2013287 physical127\u2013133;LPF85\u201387 physical246,100\u2013101 physical253\u2013254,374\u2013378 physical326\u2013327;read fullclauses/neighbors, not entirecode.",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lf2026",
+    "official_url": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+    "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/lf2026.pdf",
+    "sha256": "31b22b11258e5d7a56d939f700cf1e907e5e92aaf7810264dd778406fea7e35c",
+    "bytes": 29175138,
+    "read_scope": "Physical3art2,14art21amendmentlist,20fullreplacementCGI271,45arts41\u201342andsigned31December2025. Pages20and45visuallyread; relevantarticle11specialapprovalnotadopted.",
+    "read_on": "2026-11-01"
+  }
+]

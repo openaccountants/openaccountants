@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "examples": "2files? No:1Guide,2oa-check blocks,0failures",
+  "preservation": "Eight oldGuide files and22prior evidence files exact; see baseline",
+  "initial_rate_url_check_failure": "Reference-style links were not recognized by rate-table checker; changed to inline URLs without altering rules before freeze."
+}
