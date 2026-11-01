@@ -3,8 +3,8 @@ jurisdiction: MW
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: [mw-income-tax]
-  IT-CORP: [mw-corporate-income-tax]
+  IT-IND: [mw-income-tax, mw-listed-share-withholding]
+  IT-CORP: [mw-corporate-income-tax, mw-listed-share-withholding]
   VAT: [mw-vat-gst]
   SC: [mw-payroll-social]
   PR: [mw-payroll-social]
@@ -58,3 +58,9 @@ The original 2013 Companies Act gazette has been read for the stated formation, 
 These draft backups now have independent correction closure for cited-text fidelity only; F4 and currentness acceptance remain open. The original seven-Guide review, F1–F3 closure, Act 3 delta review and open F4 are preserved; none is claimed as acceptance of the new material. No domain is promoted to comprehensive coverage, no current-law stop is removed and no accountant attestation is added.
 
 The [independent formation/cross-border correction closure](../../evidence/ledgers/malawi-formation-crossborder-review-20261101/closure.md) checks all 67 records, 25 old formation units and four computations. Three bounded findings are closed against exact hashes: service-agent eligibility, the foreign-tax-relief gate and registrar HTML source identity. This accepts only the cited-text fidelity of these additions. Every earlier F4, appointed-commencement, current-law, live-use and partial-domain hold remains open. No accountant attestation or current-year/publication acceptance follows.
+
+## Listed-share withholding draft backup
+
+A ninth draft, [listed-share disposal withholding](mw-listed-share-withholding.md), adds the broker/dealer payment job under Act 3/2026 s 13, the amount-realized base, finality and the two express no-deduction branches. Its two cases separate proceeds from a supplied gain and compare an ordinary seller with an income-tax-exempt seller. The earlier references to eight Guides describe the preserved checkpoint; all eight bodies and all previous evidence remain exact. Existing figure owners are linked, with their historical holds retained.
+
+The [new writer evidence](../../evidence/ledgers/malawi-share-withholding-20261101/writer-record.md) records the actual amendment reads and the unresolved First Schedule paragraph-label chain: Act 36/2025 deletes (hb), while the older principal labels the holding-period exemption (hc). Neither that mismatch, commencement, reinvestment implementation nor current filing is resolved by this draft. Fresh independent review of this new job is pending. All seven domains remain partial; F4, appointed-cutover, live-use, publication/current-law and accountant-attestation limits remain unchanged.

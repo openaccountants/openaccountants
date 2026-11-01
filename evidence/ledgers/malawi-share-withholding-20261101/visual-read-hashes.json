@@ -1,0 +1,22 @@
+[
+  {
+    "cache_file": "taxation-act3-2026-media-ocr/page-1.png",
+    "sha256": "ae2e1b0ab0aff1d30bc49d8386c6bdc28711783ce45e7d853637f85e792dec03",
+    "read_on": "2026-11-01"
+  },
+  {
+    "cache_file": "taxation-act3-2026-media-ocr/page-5.png",
+    "sha256": "b9ac2eafb40cf23a9d02069ee57c7fc8f8268a0e6b5657f5a552b9b7f7d6be76",
+    "read_on": "2026-11-01"
+  },
+  {
+    "cache_file": "taxation-act3-2026-media-ocr/page-6.png",
+    "sha256": "2e379866490a7d54cb8291c566e096a4745fa87a84073ecfa05cef056e79e3a6",
+    "read_on": "2026-11-01"
+  },
+  {
+    "cache_file": "tax-dec2025-page4.png",
+    "sha256": "264277fa54d7106b8d76191ff20071122e7ae202b2ce1cf271c686453386cff8",
+    "read_on": "2026-11-01"
+  }
+]
