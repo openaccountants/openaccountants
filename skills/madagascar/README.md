@@ -22,7 +22,7 @@ partial:
 
 # Madagascar: partial 2026 tax pack
 
-Eight tier-2 source drafts, read against the official DGI 2026 codes and the signed July 2026 amending Finance Law on 1 November 2026. Independent review pending. No accountant attestation. Do not close [issue #470](https://github.com/openaccountants/openaccountants/issues/470) from this candidate.
+Eight tier-2 source drafts, read against the official DGI 2026 codes and the signed July 2026 amending Finance Law on 1 November 2026. Independently reviewed by AI against the sources on 1 November 2026: the [initial review](../../evidence/ledgers/madagascar-review-20261101/initial-review.md) recorded four findings, and the [closure review](../../evidence/ledgers/madagascar-review-20261101/closure-review.md) accepted the repaired partial pack at `33539d0e61e92ab2c00795c8934fe4a3526cd927`. Every partial scope below remains unchanged. No accountant attestation. Do not close [issue #470](https://github.com/openaccountants/openaccountants/issues/470) from this candidate.
 
 | Domain | Source Guide | Status |
 |---|---|---|
