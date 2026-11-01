@@ -1,0 +1,130 @@
+{
+  "sources": [
+    {
+      "path": "../sources/cdi-2026.pdf",
+      "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "bytes": 2788548,
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        13,
+        14,
+        23,
+        24,
+        43,
+        44,
+        45,
+        46,
+        173,
+        174,
+        175,
+        209,
+        210
+      ],
+      "read_scope": "Full01.04.01–15 printed43–45, neighbouring salary/property headings;01.01.03–05 andII-B context printed12–13,22–23;20.01.51–54.1 printed172–174;30.02.13 withneighbours printed208–209 specialmining boundary. Capital printed43 visually checked. No complete opinion on all CDI."
+    },
+    {
+      "path": "../sources/cdi-2026.txt",
+      "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445",
+      "bytes": 975204,
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        13,
+        14,
+        23,
+        24,
+        43,
+        44,
+        45,
+        46,
+        173,
+        174,
+        175,
+        209,
+        210
+      ],
+      "read_scope": "Full01.04.01–15 printed43–45, neighbouring salary/property headings;01.01.03–05 andII-B context printed12–13,22–23;20.01.51–54.1 printed172–174;30.02.13 withneighbours printed208–209 specialmining boundary. Capital printed43 visually checked. No complete opinion on all CDI."
+    },
+    {
+      "path": "../sources/cpf-2026.pdf",
+      "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "bytes": 1752311,
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        17,
+        18
+      ],
+      "read_scope": "FullI-26–28 printed16–17 withadjacentI-25/I-29 scopeboundaries. No actual livefilingform/portal read."
+    },
+    {
+      "path": "../sources/cpf-2026.txt",
+      "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1",
+      "bytes": 495529,
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        17,
+        18
+      ],
+      "read_scope": "FullI-26–28 printed16–17 withadjacentI-25/I-29 scopeboundaries. No actual livefilingform/portal read."
+    },
+    {
+      "path": "../sources/lfi-2026.pdf",
+      "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "bytes": 3972881,
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        44,
+        131
+      ],
+      "read_scope": "Printed42 entire IRCM amendments01.04.02(6),04,10, visuallychecked. Fullart24 andsignatureprinted129. Otherheading searches source discovery only."
+    },
+    {
+      "path": "../sources/lfi-2026.txt",
+      "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25",
+      "bytes": 372006,
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        44,
+        131
+      ],
+      "read_scope": "Printed42 entire IRCM amendments01.04.02(6),04,10, visuallychecked. Fullart24 andsignatureprinted129. Otherheading searches source discovery only."
+    },
+    {
+      "path": "../sources/lfr-2026.pdf",
+      "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "bytes": 1907801,
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        24,
+        26,
+        52
+      ],
+      "read_scope": "Printed20 II-Brepeal/II-Dinsertion withneighbours;printed22 fullIRCM6replacement/10lastparagraphdeletion, visuallychecked;printed48 fullarticle22 andsignature. Otherheading searches discovery only."
+    },
+    {
+      "path": "../sources/lfr-2026.txt",
+      "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b",
+      "bytes": 142702,
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "read_on": "2026-11-01",
+      "physical_pages": [
+        24,
+        26,
+        52
+      ],
+      "read_scope": "Printed20 II-Brepeal/II-Dinsertion withneighbours;printed22 fullIRCM6replacement/10lastparagraphdeletion, visuallychecked;printed48 fullarticle22 andsignature. Otherheading searches discovery only."
+    }
+  ],
+  "retrieval_note": "Reused original official-source caches from prior Madagascar pack capture. Web refresh of CDI/LFR official URLs timed out on2026-11-01; no bypass and no inference from refresh status. Source reading refers to actual cached PDF/text clauses bound above. No actual publication record established.",
+  "visual_read_images": [
+    "../sources/capital-20261101/cdi-p44.png",
+    "../sources/capital-20261101/lfi-p44.png",
+    "../sources/capital-20261101/lfr-p26.png"
+  ]
+}

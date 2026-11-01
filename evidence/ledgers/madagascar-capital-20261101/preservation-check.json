@@ -1,0 +1,31 @@
+{
+  "immutable_prior_head": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "head_before_addition": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "prior_guides_preserved_exact": 9,
+  "prior_evidence_preserved_exact": 48,
+  "method": "Compare every immutable prior file SHA256 against current HEAD git blob; also compare worktree bytes where sparse checkout materializes file. Missing sparse files are not deletions.",
+  "sparse_not_materialized": [
+    "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+    "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+    "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+    "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+    "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+    "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+    "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+    "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+    "evidence/ledgers/mg-company-formation.md",
+    "evidence/ledgers/mg-corporate-income-tax.md",
+    "evidence/ledgers/mg-cross-border.md",
+    "evidence/ledgers/mg-income-tax.md",
+    "evidence/ledgers/mg-old-topic-destinations.md",
+    "evidence/ledgers/mg-payroll-social.md",
+    "evidence/ledgers/mg-tax-overview.md",
+    "evidence/ledgers/mg-transfer-pricing.md",
+    "evidence/ledgers/mg-vat-gst.md"
+  ],
+  "all_passed": true
+}

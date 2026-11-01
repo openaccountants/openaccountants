@@ -1,0 +1,32 @@
+{
+  "operation": "new distinct Guide; no existing Guide rewritten or retired",
+  "immutable_prior_head": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "old_guide_files": [
+    "skills/madagascar/mg-annual-property-tax.md",
+    "skills/madagascar/mg-company-formation.md",
+    "skills/madagascar/mg-corporate-income-tax.md",
+    "skills/madagascar/mg-cross-border.md",
+    "skills/madagascar/mg-income-tax.md",
+    "skills/madagascar/mg-payroll-social.md",
+    "skills/madagascar/mg-tax-overview.md",
+    "skills/madagascar/mg-transfer-pricing.md",
+    "skills/madagascar/mg-vat-gst.md"
+  ],
+  "old_topics_destination": "All intros/headings/bullets/tables and full suffix/frontmatter remain at identical old file/blob/hash bound in preservation-baseline.json; no prior topic removed. Prior pack old-topic maps remain exact.",
+  "incremental_routes": [
+    {
+      "from": "mg-cross-border capital-income computation hold",
+      "to": "mg-capital-income supported ordinary IRCM; pre-repeal/transition interaction stays held"
+    },
+    {
+      "from": "mg-corporate-income-tax cooperative interest/rebate hold",
+      "to": "mg-capital-income qualifying annual cooperative distribution computation; corporate own IR remains original Guide"
+    },
+    {
+      "from": "mg-income-tax non-salary/capital hold",
+      "to": "mg-capital-income supported ordinary receipts; rental/business/other personal regimes still partial"
+    }
+  ],
+  "old_topics_removed": [],
+  "old_guides_modified": []
+}

@@ -1,0 +1,51 @@
+{
+  "immutable_prior_head": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "main_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "skills/madagascar/mg-capital-income.md",
+      "sha256": "0ccca3441ab66da12136c8c4d9761f3f3dc6788315be53ec8783899a70e055a0"
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "sha256": "a1bd4dbf1ad20fd4bc0728446973bcc2086501303ff7de71c66a37a6255c94e3"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.json",
+      "sha256": "b6aab9a11a3a7af4f9ddc06c0700138023499903f16fd50b89934cfc04c58e7d"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.md",
+      "sha256": "d16fa616eec6155493e723c9c406271d732747de302e88e2c694911a5eac242d"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/old-topic-destinations.json",
+      "sha256": "8e3ce49364a1b61f01735880863c7e700fc856ff9f4f6c8fc62d2db318c88ba3"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-baseline.json",
+      "sha256": "4d91b54dee9e1d3b5a1e188b39b47d222e6528c4d4d5002e2ed0dc11fa95d5e2"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-check.json",
+      "sha256": "9ec3b4b8456c37f87e2e2ca94ad4c5b336afbf638b4d6cef99a9ffe3c23ab65f"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/source-identities.json",
+      "sha256": "ae2127678001fbafb98a1a6b5114bbd52b07b05aef51beb816c946ee753c50e7"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+      "sha256": "ca3f8114d3692ed254529a66b4ff67b7c3d60de025b97a63324fc1f3ab6d815c"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-checks.json",
+      "sha256": "c9e50045c29b346eefdb044d1b17faf9449ee56b22d2e4b8c398e7f8d662605f"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-record.md",
+      "sha256": "831e690b9510a89d2fa84f0084af8e6591a944979a74bf730237490efd1bb549"
+    }
+  ],
+  "scope": "One new capital-income Guide, additive README routing and new evidence only; pending independent source review. This receipt excludes itself and later committed-validation receipts."
+}
