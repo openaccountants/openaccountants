@@ -16,13 +16,13 @@ partial:
   VAT: "The retained 2025 Guide has not been reconciled with the original and August rectifying 2026 Finance Acts or current invoicing procedures."
   SC: "The retained 2025 payroll/social Guide and its social-security, training and employment contributions have not been checked against current primary law."
   PR: "The retained 2025 payroll/social Guide has not been rebuilt for IRPP withholding and the current expatriate-employer levy."
-  TP: "New local 2026 pricing/documentation/reporting draft awaits independent review; implementing file contents, current electronic forms, CbC exchange lists and related procedures are not confirmed."
-  XB: "New local 2026 nonresident-payment draft awaits independent review; technical-service/passive-income overlap, earlier-period royalties, treaty/sector relief, current forms and full residence/PE/credit/exit methods remain unverified."
+  TP: "Source-checked 2026 pricing/documentation/reporting draft; implementing file contents, current electronic forms, CbC exchange lists and related procedures are not confirmed."
+  XB: "Source-checked 2026 nonresident-payment draft; technical-service/passive-income overlap, earlier-period royalties, treaty/sector relief, current forms and full residence/PE/credit/exit methods remain unverified."
 ---
 
 # DR Congo: tax pack
 
-**Partial pack, 1 November 2026.** Six existing 2025 Guides remain byte-for-byte unchanged. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. They are local drafts awaiting independent review, not accountant attestation. No domain is represented as comprehensively covered by this batch.
+**Partial pack, 1 November 2026.** Six existing 2025 Guides remain byte-for-byte unchanged. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde60a16e113f9056297e6d6ae09d0294bec075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -31,8 +31,8 @@ partial:
 | VAT or sales tax | [VAT or GST](cd-vat-gst.md) | 2025 | Needs updating |
 | Social contributions | [Payroll social](cd-payroll-social.md) | 2025 | Needs updating |
 | Payroll | [Payroll social](cd-payroll-social.md) | 2025 | Needs updating |
-| Transfer pricing | [Pricing, documentation and reporting](cd-transfer-pricing.md) | 2026 | Local source-cited draft; independent review and stated implementation gaps remain |
-| Cross-border | [Nonresident payments](cd-cross-border.md) | 2026 | Local source-cited draft; independent review and stated classification/treaty/procedure gaps remain |
+| Transfer pricing | [Pricing, documentation and reporting](cd-transfer-pricing.md) | 2026 | Source-checked draft; stated implementation gaps remain |
+| Cross-border | [Nonresident payments](cd-cross-border.md) | 2026 | Source-checked draft; stated classification/treaty/procedure gaps remain |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
@@ -43,12 +43,12 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 - VAT or sales tax: bring [VAT or GST](cd-vat-gst.md) up to the current tax year.
 - Social contributions: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
 - Payroll: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
-- Independently review the two new Guides against every ledger row and recompute their examples, then correct findings before publication.
+- Preserve the accepted review evidence and independently review any later changes to tax content or source conditions before publication.
 - Confirm the current TP file specifications, annual electronic return, CbC notifications/exchange list and actual submission/receipt process.
 - Resolve the current service/passive-income boundary for technical and mixed contracts, earlier-period royalties, sector/treaty relief and the actual nonresident return workflow. Do not make a confident filing claim while those facts remain unverified.
 - Complete the separate residence, PE attribution, foreign-credit, exit/emigration, property, formation and specialist jobs as applicable. These gaps remain stated rather than treated as proof that a levy does not exist.
 
-The [writer ledgers](../../evidence/ledgers/cd-transfer-pricing.md) and [payment ledger](../../evidence/ledgers/cd-cross-border.md) identify the act/article, official URL, short French excerpt, page and actual read date for each new rule. The [old-topic map](../../evidence/ledgers/dr-congo-old-topics.md) preserves every old substantive heading/rule and exact old Guide hash. Full source captures remain private outside the public Git worktree. No accepted filing, independent-review completion, accountant review or complete-country status is claimed.
+The [writer ledgers](../../evidence/ledgers/cd-transfer-pricing.md) and [payment ledger](../../evidence/ledgers/cd-cross-border.md) identify the act/article, official URL, short French excerpt, page and actual read date for each new rule. The [old-topic map](../../evidence/ledgers/dr-congo-old-topics.md) preserves every old substantive heading/rule and exact old Guide hash. Full source captures remain private outside the public Git worktree. No accepted filing, accountant review or complete-country status is claimed. The [initial independent review](../../evidence/ledgers/dr-congo-review-20261101/initial-review.md) and [accepted repair closure](../../evidence/ledgers/dr-congo-review-20261101/closure-repair-1/closure-review.md) preserve the findings, corrections, exact input hashes and arithmetic results. The 73 checked ledger rows cover only the two new methods; they do not certify the six older Guides.
 
 Tracked in [\[CD\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/448).
 
