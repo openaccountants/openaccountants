@@ -2,7 +2,7 @@
 name: sj-svalbard-company-income-tax
 description: >
   Compute ordinary Svalbard company income tax for tax year 2026 for locally managed companies and nonresident businesses operating on Svalbard. Covers the office and management residence test, continuous business duration, local property, taxable profit reconciliation, deductions, depreciation, losses and mainland allocation. Calculates the sixteen-percent ordinary rate and the higher profit slice using qualifying payroll and physical capital. Includes return and payment dates, penalties, distribution and related-party cross-references, and two reproducible examples. Use for Svalbard corporation tax, company profit, nonresident business and split mainland projects. Svalbard only; Jan Mayen and specialist regimes are outside scope. This source-cited draft awaits licensed professional review.
-version: 0.2
+version: 0.3
 jurisdiction: SJ
 tax_year: 2026
 last_updated: 2026-11-01
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Svalbard: company income tax in 2026 v0.2
+# Svalbard: company income tax in 2026 v0.3
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
