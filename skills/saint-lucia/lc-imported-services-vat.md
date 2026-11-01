@@ -2,13 +2,13 @@
 name: lc-imported-services-vat
 description: >
   Saint Lucia VAT on imported services reference checked for 2026. Covers recipient liability, the distinction between registered and unregistered recipients, local branches, the import declaration, statutory payment timing and standard-rate arithmetic on an established taxable value. Use for overseas service purchases, reverse-charge questions, foreign consultants or VAT obligations below the ordinary registration threshold. It does not establish withholding tax, treaty relief, every place-of-supply rule, related-party valuation or automatic input deduction. The 2023 revised statutory text supplies the cited rules; subsequent amendments and detailed filing mechanics require independent review.
-version: 0.1
+version: 0.2
 jurisdiction: LC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -43,8 +43,6 @@ An illustrative nonregistered business cannot conclude that no import VAT is due
 Keep the contract, supplier identity/location, description of services, recipient-use analysis, valuation calculation, tax-point decision, declaration and payment receipt together. Separate withholding-tax and treaty questions from VAT: this Guide determines neither.
 
 Review zero-rating/exemptions, section 4(12), mixed-use treatment, taxable value, input deductions and current submission instructions before filing. The IRD imported-services brochure was located but returned 404 directly; no successful capture is claimed. Independent review remains outstanding, and this is not a complete cross-border tax pack.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

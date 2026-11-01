@@ -1,10 +1,11 @@
 ---
 name: ivory-coast-income-tax
-description: Use this skill whenever asked about Côte d'Ivoire (Ivory Coast) personal income tax, salary tax, or self-employed/business income tax. Trigger on phrases like "how much tax do I pay in Côte d'Ivoire", "Ivory Coast income tax", "ITS", "impôt sur les traitements et salaires", "salaire net", "net pay Abidjan", "CNPS contributions", "régime de l'entreprenant", "microentreprise tax", "BIC", "BNC", "taxe sur salaires", "RICF family reduction", "DGI", or any question about computing or filing income tax for an employee, self-employed person, or small business in Côte d'Ivoire. Also trigger when reading an Ivorian payslip or bank statement (FCFA / XOF), computing employer payroll tax, or advising on the entreprenant / microentreprise / réel regimes. This skill covers the post-2024-reform monthly ITS progressive scale, the RICF family-responsibility reduction, employer payroll tax, CNPS social security, business income regimes by turnover, withholding on BNC, filing deadlines, and penalties. ALWAYS read this skill before touching any Ivorian income tax work.
-version: 0.1
+description: >
+  Use this skill for Côte d'Ivoire (Ivory Coast) income tax in 2026: salary tax ITS with the RICF family reduction, business profit under BIC, BA and BNC, the entreprenant taxes, the microenterprise tax, RSI and RNI regimes, minimum tax IMF, withholding, dividends and patente. It covers employees, sole traders, professionals and companies. Trigger on "impôt sur les salaires", "ITS", "net pay Abidjan", "régime de l'entreprenant", "microentreprise", "BIC", "BNC", "IMF", "DGI", "e-impots" or "how much tax do I pay in Ivory Coast". It includes the Annexe fiscale 2026 changes: quarterly TEE and micro payments, mobile money deductibility, beneficial owner form and notes to the accounts.
+version: 0.2
 jurisdiction: CI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,130 +15,139 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Côte d'Ivoire (Ivory Coast) Income Tax
+# Côte d'Ivoire (Ivory Coast) Income Tax v0.2
 
-## Côte d'Ivoire (Ivory Coast) Income Tax -- Skill v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it without checking the cited official source or a licensed professional.
 
-> **Tier 2 — research-verified, NOT yet professionally verified.** All figures are sourced inline to primary law (Ordonnance n°2023-719; Loi de Finances 2025), the Direction Générale des Impôts (DGI), CNPS, and Big-4 commentary (PwC Worldwide Tax Summaries; Deloitte). Items with weak provenance are flagged `[RESEARCH GAP — reviewer to confirm]`. A warranted Ivorian tax practitioner (expert-comptable / conseil fiscal) must sign off before filing.
+Tax year 2026 (calendar year). The Annexe fiscale 2026 took effect on 5 January 2026.
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
-**Quick Reference**
+Employees taxed through ITS (salary tax), self-employed people and businesses under BIC, BA or BNC, and the four turnover regimes. Company profit tax sits here until a separate company skill exists. Employer charges and payroll steps are in [Payroll](ivory-coast-payroll.md); CNPS is in [Social contributions](ivory-coast-social-contributions.md); VAT is in [VAT](ivory-coast-vat.md).
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Côte d'Ivoire (Ivory Coast) |
-| Tax | Personal income tax — **ITS** (Impôt sur les Traitements, Salaires, pensions et rentes viagères) on employment; BIC/BNC on business income |
-| Currency | West African CFA franc — **XOF / FCFA** only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Code Général des Impôts (CGI); **Ordonnance n°2023-719 du 13 sept. 2023, Art. 119 bis** (merged ITS scale, effective 1 Jan 2024); **Loi de Finances 2025 (n°2024-1109 du 18 déc. 2024)** — no change to the salary scale (Deloitte) |
-| Tax authority | **Direction Générale des Impôts (DGI)** — dgi.gouv.ci |
-| Social security | **Caisse Nationale de Prévoyance Sociale (CNPS)** |
-| Filing portal | DGI e-services (e-impots / SIGICI) |
-| Salary tax collection | **PAYE** — withheld and remitted monthly by the employer |
-| Annual business-profit deadline | **30 May** (standard) / **30 June** (companies subject to statutory audit) (PwC, tax administration) |
-| Validated by | Pending — requires sign-off by a warranted Ivorian tax practitioner |
-| Validation date | Pending |
-| Skill version | 0.1 |
+The annual personal return (IGR) is suspended: "la déclaration de l'IGR est suspendue" (Art. 255 CGI). An employee of a Côte d'Ivoire employer has tax withheld. A person domiciled in Côte d'Ivoire paid by an employer abroad computes and declares ITS personally.
 
-> **Côte d'Ivoire DOES have a personal income tax.** Residents are taxed on worldwide income (PwC, taxes on personal income).
+## Rates, bands and thresholds
 
-### CRITICAL — which scale is current
+| Item | Rate or amount | Conditions | Source |
+|---|---|---|---|
+| ITS band 0 to 75,000 XOF a month | 0% | Monthly taxable pay, Art. 119 bis | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page32.html |
+| ITS band 75,001 to 240,000 | 16% | Same | same |
+| ITS band 240,001 to 800,000 | 21% | Same | same |
+| ITS band 800,001 to 2,400,000 | 24% | Same | same |
+| ITS band 2,400,001 to 8,000,000 | 28% | Same | same |
+| ITS above 8,000,000 | 32% | Same | same |
+| RICF family reduction | 5,500 XOF a month per half part above 1 part; 44,000 at 5 parts | Deducted from gross ITS, maximum 5 parts, Art. 120 | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf |
+| Retirees over 70 | 75% abatement | On the tax after RICF | same |
+| Dockers and dockers transit | 1.5% | Of total pay, Art. 120 | same |
+| Pension or life annuity allowance | 320,000 XOF a month | Exempt at or below it, deducted above it | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page32.html |
+| Taxe communale de l'entreprenant | 2% trade, 2.5% other | Turnover TTC up to 5,000,000 | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page4.html |
+| Taxe d'Etat de l'entreprenant | 4% trade, 5% other, halved for CGA members | Turnover TTC 5,000,001 to 50,000,000, Art. 72-73 | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page5.html |
+| Impôt des microentreprises | 6%, or 4% for CGA members or a convention expert-comptable | Turnover TTC 50,000,001 to 200,000,000, Art. 71 bis | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page7.html |
+| Réel simplifié (RSI) | BIC rates below | Turnover TTC 200,000,001 to 500,000,000, Art. 45 | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page9.html |
+| Réel normal (RNI) | BIC rates below | Turnover TTC above 500,000,000, Art. 34 | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page11.html |
+| BIC and BA | 25% | Individuals and companies, Art. 51 | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf |
+| BIC telecoms and IT sector | 30% | Art. 51 | same |
+| BIC gambling sector | 30% | Art. 51 | same |
+| Foreign digital platforms | 30% of 10% of turnover TTC | No installation, Ivorian turnover at least 50,000,000, Art. 3-11, 21 ter, 51 | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page112.html |
+| Minimum tax IMF, RNI and RSI | 0.5% of turnover TTC, floor 3,000,000, RNI cap 35,000,000 | 500,000 floor for service stations and butane distributors; new firms exempt in first year | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page16.html |
+| IMF reduced rates | 0.10% petroleum, water, electricity; 0.15% banks, insurers | Art. 39 | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page17.html |
+| BNC | 25% | Income under 1,000 XOF ignored | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page20.html |
+| BNC minimum tax | 5% of gross receipts TTC, floor 400,000 | New firms exempt in first year | same |
+| Withholding on BNC payments | 7.5% of gross | Listed payees, now including non-salaried radio, TV and film participants (Art. 96 as amended) | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page5.html |
+| Withholding on BIC payments | 7.5% | Listed payees such as subcontractors in construction | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page17.html |
+| Dividends, general | 15% or 17% for individuals | IRVM on sums not within Art. 182 | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf |
+| Dividends, listed on BRVM | 10% or 12% for individuals | Regularly paid by listed companies | same |
+| Interest on claims | 18% general; current account 13.5% individuals, 16.5% companies | IRC, reduced rates apply | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page45.html |
+| Patente, turnover duty | 0.5% of turnover HT, minimum 300,000 | Plus rental value duty at 18.5% (16% outside a commune) | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page23.html |
 
-A 2023/2024 reform (**Ordonnance n°2023-719**, effective **1 Jan 2024**) **merged** the three former salary levies — *IS/ITS*, *Contribution Nationale (CN)*, and *Impôt Général sur le Revenu (IGR)* — into a **single monthly progressive tax on salaries ("ITS")**. Many calculator/SEO sites still publish the **pre-2024 (abolished)** barème (0/10/15/20/25/35/60% plus separate 1.5% IGR + 1.5% CN). **Do NOT use the old scale.** The scale below is confirmed against the Ordonnance legal text (loidici.biz) and PwC, which agree exactly; Deloitte confirms LF 2025 left it unchanged.
+## The base
 
-### ITS — Current Monthly Progressive Scale (per Art. 119 bis)
+ITS base: all gross pay including bonuses, overtime and benefits in cash or kind, with no 20% abatement since the 2024 reform. Exempt items include food at up to 30,000 XOF a month in a staff canteen arrangement and expense allowances up to one tenth of total pay (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page31.html).
 
-Applied **monthly**, per taxpayer (spouses taxed separately).
+Parts: single, divorced or widowed without children 1; married without children 2; single with one child 2; each extra child adds 0.5; maximum 5. Children count if minor, or under 27 and studying (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page32.html).
 
-**ITS Monthly Progressive Scale**  _(Source: PwC Worldwide Tax Summaries (Ivory Coast, taxes on personal income); Ordonnance n°2023-719, Art. 119 bis (loidici.biz).)_
+Business profit: net result of all operations. Since 2026 mobile money payments are outside the 250,000 XOF cash limit "quels que soient leurs montants" (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page52.html). A charge must also relate to a product not exempt from profit tax (Art. 18-A-11°, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page124.html). Payments to foreign related parties are capped at 5% of turnover and 20% of overheads, and at 50% of gross for non-cooperative or low-tax places (Art. 38, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page93.html).
 
-| Monthly taxable income (FCFA) | Rate | Cumulative tax at top of band (FCFA) |
-| --- | --- | --- |
-| 0 -- 75,000 | 0% | 0 |
-| 75,001 -- 240,000 | 16% | 26,400 |
-| 240,001 -- 800,000 | 21% | 144,000 |
-| 800,001 -- 2,400,000 | 24% | 528,000 |
-| 2,400,001 -- 8,000,000 | 28% | 2,096,000 |
-| Above 8,000,000 | 32% | — |
+From 2026 share gain IRVM uses the mathematical, stock market or financial value method (Art. 184-8, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page49.html).
 
-**Cumulative-tax check (recomputed):**
-- 75,000 → 0
-- 240,000 → 0 + (240,000−75,000)×16% = 165,000×0.16 = **26,400** ✓
-- 800,000 → 26,400 + (800,000−240,000)×21% = 560,000×0.21 = 117,600 → **144,000** ✓
-- 2,400,000 → 144,000 + (2,400,000−800,000)×24% = 1,600,000×0.24 = 384,000 → **528,000** ✓
-- 8,000,000 → 528,000 + (8,000,000−2,400,000)×28% = 5,600,000×0.28 = 1,568,000 → **2,096,000** ✓
+Labelled digital startups outside the free zone are exempt from BIC, micro tax or TEE for three years after the year of labelling (Art. 12 septies, 71 quinquies, 80 bis, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page119.html).
 
-### RICF — Family-Responsibility Reduction (replaces old quotient familial)
+## Deadlines and filing
 
-A flat **monthly reduction** of the computed gross ITS, by number of "parts" (shares), capped at 5 parts.
+Salary tax: see [Payroll](ivory-coast-payroll.md).
 
-**RICF reduction by parts**  _(Source: PwC (deductions); loidici.biz (reform note).)_
+| Task | Who | Date | Where |
+|---|---|---|---|
+| TEE or micro declaration | TEE, micro | 15 January | Tax office, on the prescribed form |
+| TEE or micro payment | TEE, micro | Four equal parts: 31 March, 30 June, 30 September, 30 November (changed from monthly by Art. 36, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page121.html) | Recette of the place of activity |
+| Patente | All liable | 15 March; half by 15 March and half by 15 July | Recette |
+| BNC return | BNC | 15 April (20 April DGE or DME) | Tax office |
+| Result return and financial statements | RSI, RNI, TEE, micro | 30 May; 30 June if audited | DGE and DME only on e-impot |
+| BIC or IMF payment | Tax office clients | 15 April, 15 June, 15 September | Recette |
+| Same, DGE or DME | Industry and oil 10th, trade 15th, services 20th of April, June, September | | e-impot |
+| Foreign platforms | Annual return and payment | 30 June of next year | Online, simplified procedure (Art. 35-3, 170 tredecies LPF) |
 
-| Parts | Monthly reduction (FCFA) |
-| --- | --- |
-| 1.0 | 0 |
-| 2.0 | 11,000 |
-| 3.0 | 22,000 |
-| 4.0 | 33,000 |
-| 5.0 (max) | 44,000 |
+How to file a company result: 1. Close under SYSCOHADA revised. 2. Prepare balance sheet, income statement, cash flow table and notes where mandatory (Art. 36 as amended). 3. Add the updated beneficial owner form (Art. 24, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page90.html) and bank account numbers. 4. Log in to e-impots at https://e-impots.gouv.ci as Contribuable. 5. DGE and DME send electronically only; micro must from 1 January 2027 and TEE from 1 January 2028 (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page83.html). 6. Pay in three parts.
 
-**Shares (parts) allocation:**
+## Penalties and interest
 
-**Shares (parts) allocation**  _(Source: PwC (deductions); loidici.biz.)_
+- Financial statements or notes not sent on time: 1,000,000 XOF plus 100,000 for each further month or part (LPF 169, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page83.html). For the small regimes under Art. 82 bis: 100,000 plus 10,000 a month.
+- No beneficial owner form with the statements: 1,000,000 plus 100,000 a month (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page91.html).
+- Patente declaration late or missing: the LPF 169 fines now apply (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page58.html).
+- No secondary establishment statement: 1,000,000 (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page12.html).
+- TEE or micro: no books, 50,000 (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page6.html).
 
-| Situation | Parts |
-| --- | --- |
-| Single / divorced / widowed, no children | 1.0 |
-| Married, no children | 2.0 |
-| Single / divorced, 1 child | 2.0 |
-| Married / widowed, 1 child | 2.5 |
-| Each additional dependent child | +0.5 |
-| Minor/infirm adult dependent | +1.0 |
-| **Maximum** | **5.0** |
+## Cross-border points
 
-- **Over-70 retirees additional reduction** — 75% reduction of the tax computed after the RICF; exempt pension portion raised from 200,000 to 320,000 FCFA  _(loidici.biz; PwC)_
+- Pay for services used in Côte d'Ivoire to persons with no installation there is BNC income, subject to treaties (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page19.html).
+- Transfer pricing: Art. 38 was rewritten for 2026; the company carries the burden of proof through the Art. 36 bis statement (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page93.html). An advance pricing mechanism was added (Art. 23).
+- Reinsurance premiums to non-residents are exempt from withholding until 30 April 2027 (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page122.html).
+- Domiciled employees are taxed on pay even for work abroad; non-domiciled employees on work done in Côte d'Ivoire (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page31.html).
 
-### Conservative Defaults
+## Two worked examples that recompute
 
-**Conservative Defaults**
+Example 1. Employee, 500,000 XOF a month, 3 parts. Gross ITS is 26,400 + 21% of 260,000 = 81,000. RICF is 22,000. Net ITS is 59,000.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown number of parts / family situation | Use **1.0 part** (zero RICF reduction) — never inflate parts without proof |
-| Unknown resident vs non-resident | STOP — do not compute (see Refusal R-CI-3) |
-| Unknown local vs expatriate (employer payroll tax) | Treat as **local** (2.8%) and flag for reviewer |
-| Unknown business regime | Classify by turnover; if turnover unknown, STOP |
-| Unknown whether allowance is taxable | Treat as **taxable** (reform removed most abatements) |
-| Unknown benefit-in-kind value | Flag for reviewer (use DGI scheduled deemed values) |
-| Unknown CNPS ceiling applicability | Apply the relevant ceiling; never exceed it |
+```oa-check
+name: ITS on 500000 with 3 parts
+inputs:
+  pay: 500000
+  ricf: 22000
+steps:
+  - b16: (min(pay, 240000) - 75000) * 0.16
+  - b21: (min(pay, 800000) - 240000) * 0.21
+  - gross: b16 + b21
+  - net: gross - ricf
+expected:
+  gross: 81000
+  net: 59000
+```
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+Example 2, a decision. Consultant, turnover TTC 120,000,000, profit 30,000,000: stay micro or opt for BNC by 1 February? Micro at 6% is 7,200,000; with a CGA, 4,800,000. BNC is 7,500,000, above the minimum of 6,000,000. Micro costs less. The option lasts three years.
 
-### Required Inputs
+```oa-check
+name: Micro against BNC
+inputs:
+  turnover: 120000000
+  profit: 30000000
+steps:
+  - micro: turnover * 0.06
+  - micro_cga: turnover * 0.04
+  - bnc: max(profit * 0.25, turnover * 0.05)
+  - saving: bnc - micro
+expected:
+  micro: 7200000
+  micro_cga: 4800000
+  bnc: 7500000
+  saving: 300000
+```
 
-**Minimum viable (employee)** — full-year payslips (bulletins de paie) or a bank statement showing net salary, plus family situation (parts) and local/expat status.
+## Working material carried from the earlier version
 
-**Minimum viable (self-employed/business)** — bank statement for the full tax year (CSV/PDF/text) **and** annual turnover (chiffre d'affaires TTC), which determines the regime.
+Pattern library for bank statements. Its treatments are classification aids; the rates above win.
 
-**Recommended** — employer's monthly ITS returns (état 301 / déclaration), CNPS statements, invoices, prior-year DGI assessment, CGA membership status (halves several rates).
-
-**Ideal** — complete income/expenditure account, asset register, benefit-in-kind schedule (housing/water/electricity/A-C), withholding certificates (BNC).
-
-**Refusal if minimum is missing — SOFT WARN.** No bank statement or payslips at all = hard stop. Bank statement only, no invoices = proceed with reviewer warning: "Produced from bank statement alone — reviewer must verify all deductions are supported and the wholly-and-exclusively / professional-purpose test is met."
-
-### Refusal Catalogue
-
-- **R-CI-1** — Family situation (parts) unknown. "The RICF reduction depends on the number of parts. Compute provisionally at 1.0 part (no reduction) and flag, or obtain the family situation before finalising."
-- **R-CI-2** — Companies / partnerships. "This skill covers individuals (employees, sole proprietors, liberal professions). Sociétés (SA, SARL, SAS) file corporate IS returns. Escalate to an expert-comptable."
-- **R-CI-3** — Non-resident / expatriate complex cases. "Non-resident taxation, treaty relief, and split-year residence have distinct rules. Out of scope. Escalate."
-- **R-CI-4** — Capital gains on property/shares. "Building-sale gains (17%) and certain share-sale gains need specialised analysis. Escalate."
-- **R-CI-5** — Arrears / DGI enforcement (mise en demeure, taxation d'office). "Penalties escalate to a 100% surcharge plus interest. Do not advise — escalate to an expert-comptable immediately."
-- **R-CI-6** — VAT (TVA) return requested. "This skill covers income tax only. TVA standard rate is 18% (PwC) — use a dedicated VAT skill."
-
-## Section 3 -- Transaction Pattern Library
-
-Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears in the FCFA bank statement. If multiple match, use the most specific. If none match, fall through to Tier 1 rules (Section 5).
+Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears in the FCFA bank statement. If multiple match, use the most specific. If none match, ask the client.
 
 ### 3.1 Income Patterns (Credits)
 
@@ -146,14 +156,14 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | SALAIRE, PAIE, REMUNERATION, [employer name] VIREMENT | Employment income (ITS, PAYE) | Already net if PAYE withheld; reconcile to gross |
-| HONORAIRES, PRESTATION, FACTURE, CONSULTING | Business income (BNC/BIC) | Professional fees — self-employed |
+| HONORAIRES, PRESTATION, FACTURE, CONSULTING | Business income (BNC/BIC) | Professional fees, self-employed |
 | VIREMENT CLIENT, REGLEMENT FACTURE | Business income | If TVA-registered, extract net of 18% TVA |
-| STRIPE, PAYPAL, WISE, FLUTTERWAVE, PAYSTACK PAYOUT | Business income | Platform payout — match to invoices |
-| WAVE, ORANGE MONEY, MTN MOMO, MOOV MONEY (received) | Business income (if business) | Mobile-money inflow — confirm business vs personal |
-| LOYER RECU, LOCATION | Rental income | Not business income — separate schedule |
+| STRIPE, PAYPAL, WISE, FLUTTERWAVE, PAYSTACK PAYOUT | Business income | Platform payout, match to invoices |
+| WAVE, ORANGE MONEY, MTN MOMO, MOOV MONEY (received) | Business income (if business) | Mobile-money inflow, confirm business vs personal |
+| LOYER RECU, LOCATION | Rental income | Not business income, separate schedule |
 | INTERETS, INTERET CREDITEUR | Investment income | Interest |
 | DIVIDENDES | Investment income | Dividend |
-| REMBOURSEMENT DGI, RISTOURNE IMPOT | EXCLUDE | Tax refund — not income |
+| REMBOURSEMENT DGI, RISTOURNE IMPOT | EXCLUDE | Tax refund, not income |
 | SUBVENTION (capital) | EXCLUDE unless revenue grant | Capital grants exclude; revenue grants = income |
 
 ### 3.2 Expense Patterns (Debits) -- Deductible business expenses (réel regimes)
@@ -201,7 +211,7 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | AIR COTE D'IVOIRE, ASKY, AIR FRANCE | Flights | Deductible if business travel | Wholly business purpose |
 | HOTEL, BOOKING.COM | Accommodation | Deductible if business |  |
 | YANGO, UBER, TAXI, WORO-WORO, GBAKA | Local transport | Deductible if business |  |
-| TOTAL, SHELL, PETROCI, CARBURANT | Vehicle fuel | T2 — business % only | Requires log |
+| TOTAL, SHELL, PETROCI, CARBURANT | Vehicle fuel | T2, business % only | Requires log |
 
 ### 3.6 Expense Patterns (Debits) -- NOT deductible
 
@@ -223,7 +233,7 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | --- | --- | --- |
 | VIREMENT INTERNE, ENTRE MES COMPTES | EXCLUDE | Own-account transfer |
 | REMBOURSEMENT PRET, PRINCIPAL CREDIT | EXCLUDE | Loan principal movement |
-| CNPS, COTISATION SOCIALE | CNPS deduction line | Employee CNPS reduces taxable base via payroll — not a business expense line |
+| CNPS, COTISATION SOCIALE | CNPS deduction line | Employee CNPS is a payroll item, not a business expense line |
 | TVA PAIEMENT, DGI TVA | EXCLUDE | VAT liability payment |
 
 ### 3.8 Ivorian Banks & Mobile Money -- Statement Format Reference
@@ -236,248 +246,6 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | Ecobank CI | TRANSFER, FRAIS, CARTE | PDF/CSV |
 | NSIA Banque / BICICI | VIREMENT, AGIOS | PDF |
 | Orange Money / MTN MoMo / Moov Money / Wave | DEPOT, RETRAIT, TRANSFERT, PAIEMENT MARCHAND | Mobile-money; confirm business vs personal |
-
-## Section 4 -- Worked Examples
-
-All amounts in **FCFA (XOF)**. ITS scale and RICF per Section 1.
-
-### Example 1 -- Mid-range salaried employee, single (1 part)
-
-**Input line:**
-`30/04/2025 ; SGBCI VIREMENT ; EMPLOYEUR SARL TECHCI ; SALAIRE AVRIL ; +280 825 ; XOF`
-
-**Reasoning.** Monthly taxable salary **350,000** (gross taxable; the credit shown is net after PAYE+CNPS — reconcile to gross of 350,000).
-- ITS gross = 26,400 + (350,000 − 240,000) × 21% = 26,400 + 110,000 × 0.21 = 26,400 + 23,100 = **49,500**
-- RICF, 1 part = **0** → net ITS = **49,500**
-- CNPS pension employee 6.3% × 350,000 = **22,050** (below 3,375,000 ceiling)
-- Net pay = 350,000 − 49,500 − 22,050 = **278,450**
-
-**Classification:** ITS withheld 49,500; CNPS employee 22,050; net pay 278,450.
-
-> (The bank credit 280,825 differs from 278,450 only if employer also reimburses a non-taxable allowance — flag if material.)
-
-### Example 2 -- Same salary, married with 2 children (3.0 parts)
-
-**Input:** Monthly taxable salary **350,000**; married, 2 dependent children → parts = 2.0 (married, 1 child = 2.5) + 0.5 (2nd child) = **3.0 parts**.
-- ITS gross = **49,500** (as Example 1)
-- RICF, 3 parts = **22,000** → net ITS = 49,500 − 22,000 = **27,500**
-- CNPS employee 6.3% × 350,000 = **22,050**
-- Net pay = 350,000 − 27,500 − 22,050 = **300,450**
-
-**Classification:** ITS 27,500; CNPS 22,050; net pay 300,450.
-
-### Example 3 -- Higher earner, married no children (2.0 parts)
-
-**Input:** Monthly taxable salary **1,000,000**; married, no children → **2.0 parts**.
-- ITS gross = 144,000 + (1,000,000 − 800,000) × 24% = 144,000 + 200,000 × 0.24 = 144,000 + 48,000 = **192,000**
-- RICF, 2 parts = **11,000** → net ITS = **181,000**
-- CNPS pension employee 6.3% × 1,000,000 = **63,000** (below 3,375,000 ceiling)
-- Net pay = 1,000,000 − 181,000 − 63,000 = **756,000**
-
-**Classification:** ITS 181,000; CNPS 63,000; net pay 756,000.
-
-### Example 4 -- Employer payroll tax (taxe sur salaires), expatriate
-
-**Input:** Employer employs one expatriate on monthly taxable remuneration **1,000,000**.
-- Expatriate employer payroll tax = 12% × 1,000,000 = **120,000** (PwC; former 20% abatement removed)
-- (Local employee equivalent would be 2.8% × 1,000,000 = **28,000**)
-
-**Classification:** Employer-borne taxe sur salaires = 120,000 (expat) — this is an employer cost, NOT withheld from the employee.
-
-### Example 5 -- Self-employed consultant, BNC, resident withholding
-
-**Input line:**
-`15/06/2025 ; ECOBANK VIREMENT ; CLIENT BTP CI ; HONORAIRES FACTURE 2025-014 ; +925 000 ; XOF`
-
-**Reasoning.** Registered resident liberal professional (BNC). The payer withholds **7.5%** WHT at source on the gross fee (PwC / arcop.ci). If the gross invoice was 1,000,000, then WHT = 75,000 and the net received = 925,000. The BNC profit is taxed under the réel regime at the BIC/standard rate of **25%** on net profit; the 7.5% is a creditable advance, not final, for residents.
-
-**Classification:** Gross fee 1,000,000; WHT credit 75,000; net received 925,000. Annual BNC profit taxed at 25% with WHT credited.
-
-### Example 6 -- Régime de l'entreprenant, Taxe d'État (TEE)
-
-**Input:** Service provider, annual turnover **30,000,000 FCFA TTC**, NOT a CGA member.
-- Falls in entreprenant TEE band (5,000,001–50,000,000). Services rate = **5%** (commerce/retail would be 4%).
-- Annual TEE = 5% × 30,000,000 = **1,500,000**
-- Paid monthly at 1/12 = **125,000/month**, due by the **10th** (blog.ivoire-juriste.com; ccesp.ci)
-- If a CGA member: rate halved (50%) → 2.5% → annual **750,000** (125,000... i.e. 62,500/month)
-
-**Classification:** TEE 1,500,000/year (125,000/month); 750,000/year if CGA member.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 ITS taxable base
-
-- **ITS taxable base composition** — Includes all cash remuneration — base salary, living/housing allowances, bonuses, and employer-paid social contributions. The 2024 reform eliminated the former 20% abatement / standard employment-expense deduction. Benefits in kind (housing, electricity, water, A/C) are taxed at DGI deemed scheduled values.  _(PwC, deductions & other taxes; PwC, income determination)_
-
-**Some non-taxable thresholds**  _(PwC, income determination)_
-
-| Item | Exempt up to |
-| --- | --- |
-| Food allowance | 30,000 FCFA/month |
-| Business-expense allowance | 10% of taxable cash income |
-| Non-mandatory social contributions | ≤10% of gross income and ≤3,800,000 FCFA/year |
-
-### 5.2 ITS computation order
-
-- **ITS computation order** — 1. Determine monthly taxable income (Section 5.1). 2. Apply the progressive scale (Section 1) → gross ITS. 3. Subtract the RICF reduction for the number of parts (max 5). 4. If retiree over 70: apply the further 75% reduction (Section 1). 5. Result = monthly ITS withheld by employer (PAYE).
-
-### 5.3 Employer payroll tax (taxe sur salaires, employer-borne)
-
-**Employer payroll tax rates**  _(Source: PwC (corporate & individual, other taxes).)_
-
-| Workforce | Rate on total taxable remuneration |
-| --- | --- |
-| Local employees | **2.8%** |
-| Expatriate employees | **12%** |
-
-- **Former reduction eliminated / employer cost note** — Former 20% reduction eliminated. This is an employer cost — not withheld from the employee.  _(PwC (corporate & individual, other taxes))_
-
-### 5.4 CNPS social security
-
-**CNPS contribution branches**  _(Source: PwC (individual & corporate, other taxes).)_
-
-| Branch | Employee | Employer | Combined | Monthly ceiling (FCFA) |
-| --- | --- | --- | --- | --- |
-| Retirement / pension | 6.3% | 7.7% | **14.0%** | 3,375,000 |
-| Family allowances (incl. maternity) | — | 5.75% | 5.75% | 70,000 |
-| Work-injury (accidents du travail) | — | 2% to 5% (by risk) | 2%–5% | 70,000 |
-
-**Arithmetic check:** pension employee 6.3% + employer 7.7% = **14.0%** combined ✓. Note the two ceilings: pension capped at **3,375,000/month**; family-allowance and work-injury capped at **70,000/month**.
-
-### 5.5 Minimum wage (SMIG)
-
-- **SMIG** — 75,000 FCFA/month FCFA/month  _(Décret n°2022-986, in force since 1 Jan 2023; no revaluation as of 2026 (guidedufonctionnaire.com; sikafinance.com))_
-- **SMAG (agricultural minimum)** — 39,960 FCFA/month FCFA/month  _(guidedufonctionnaire.com; sikafinance.com)_
-- **SMIG equals 0% ITS band ceiling** — SMIG equals the 0% ITS band ceiling, so minimum-wage earners pay no ITS.
-
-### 5.6 Business income regimes (by annual turnover, CA TTC)
-
-**Business income regimes by turnover**  _(Sources: blog.ivoire-juriste.com; ccesp.ci; ivoire-juriste.com.)_
-
-| Regime | Turnover band (FCFA TTC) | Tax |
-| --- | --- | --- |
-| **Entreprenant — TCE (Taxe Communale)** | < 5,000,000 | <1.2M: fixed daily forfait set by the local authority. 1.2M–5M: **2.5%** (commerce/retail) or **2%** (services/crafts) |
-| **Entreprenant — TEE (Taxe d'État)** | 5,000,001 – 50,000,000 | **4%** (commerce/retail), **5%** (services); halved (50%) for CGA members. Paid monthly (1/12), due 10th |
-| **Microentreprises** | 50,000,001 – 200,000,000 | **7%** of CA TTC; **5%** for CGA members |
-| **Réel Simplifié (RSI)** | option from ~100M; standard ≥200M up to 500M `[RESEARCH GAP — reviewer to confirm exact RSI/RNI boundary in CGI]` | BIC/BNC at standard rate |
-| **Réel Normal (RNI)** | > 500,000,000 | BIC/BNC at standard rate |
-
-The entreprenant ≤50M and microentreprise 50,000,001–200,000,000 bands are consistently reported; RSI/RNI exact boundaries vary between secondary sources — **flagged as a research gap**.
-
-### 5.7 Profit-tax rates (réel regimes) and minimum tax
-
-**Profit-tax rates and minimum tax**  _(Source: PwC (taxes on corporate income).)_
-
-| Item | Rate |
-| --- | --- |
-| BIC / standard profit tax (general) | **25%** |
-| Telecom / IT / communications | **30%** |
-| BNC (liberal professions) | taxed at the BIC rate (**25%**) under the réel regimes |
-| Minimum tax (IMF) | **0.5% of turnover**, floor **3,000,000**, cap **35,000,000** FCFA |
-
-### 5.8 Withholding on BNC service payments
-
-**Withholding on BNC service payments**  _(Source: arcop.ci; fideca.com.)_
-
-| Payee | WHT rate | Final? |
-| --- | --- | --- |
-| Registered resident | **7.5%** of gross | Creditable advance (not final) |
-| Non-resident / no professional establishment in CI | **20%** of gross | **Final (libératoire)** |
-
-### 5.9 Other individual taxes
-
-**Other individual taxes**
-
-| Tax | Rate |
-| --- | --- |
-| VAT (TVA), standard | **18%** (PwC, other taxes) |
-| Capital gains — buildings sold by individuals | **17%** (PwC, other taxes) |
-| Capital gains — generally (other) | Generally not taxable for individuals; certain share gains taxable (PwC) |
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Number of parts (RICF)
-
-- Confirm marital status, number and ages of dependent children, and any infirm/adult dependents.
-- **Conservative default:** 1.0 part (no reduction) until family situation documented.
-- Flag: max 5.0 parts; over-70 retiree 75% second reduction.
-
-### 6.2 Benefits in kind
-
-- Housing, electricity, water, A/C valued at DGI scheduled deemed amounts, added to the ITS base.
-- **Conservative default:** flag for reviewer to apply the correct deemed value. `[RESEARCH GAP — DGI deemed BIK scale values not reproduced here; reviewer to source.]`
-
-### 6.3 Local vs expatriate (employer payroll tax)
-
-- 2.8% (local) vs 12% (expat) materially changes employer cost.
-- **Conservative default:** local (2.8%) and flag.
-
-### 6.4 Business regime classification
-
-- Driven by turnover TTC and CGA membership. CGA membership halves entreprenant TEE and microentreprise rates.
-- Flag if turnover is near a band boundary or CGA status is unconfirmed.
-
-### 6.5 Home-office / mixed-use utilities (réel regimes)
-
-- CIE (electricity), SODECI (water), telecoms apportioned to business-use %.
-- **Conservative default:** 0% until a documented, reasonable basis is provided.
-
-### 6.6 Vehicle business use
-
-- Fuel/insurance/maintenance apportioned to business %; requires a log.
-- **Conservative default:** 0% until log provided.
-
-### 6.7 BNC withholding credit vs final tax
-
-- 7.5% resident WHT is creditable; 20% non-resident WHT is final. Confirm payee status.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-CÔTE D'IVOIRE INCOME TAX -- WORKING PAPER (FCFA)
-Tax Year: 2025
-Client: ___________________________
-Type: Employee (ITS) / Self-employed (BNC/BIC) / Entreprenant / Microentreprise
-Family parts (RICF): ______   Local / Expatriate: ______   CGA member: Y / N
-
-==== A. EMPLOYEE — MONTHLY ITS ====
-  A1. Gross taxable salary (incl. taxable allowances, BIK)   ___________
-  A2. ITS gross (progressive scale)                          ___________
-  A3. Less RICF reduction (by parts)                         ___________
-  A4. Less over-70 retiree reduction (75%, if applicable)    ___________
-  A5. ITS withheld = A2 - A3 - A4                            ___________
-  A6. CNPS employee pension (6.3%, ceiling 3,375,000)        ___________
-  A7. NET PAY = A1 - A5 - A6                                 ___________
-
-  Employer-borne (memo):
-  A8. Taxe sur salaires (2.8% local / 12% expat)             ___________
-  A9. CNPS employer pension 7.7%                             ___________
-  A10. CNPS family allowance 5.75% (ceiling 70,000)          ___________
-  A11. CNPS work-injury 2%-5% (ceiling 70,000)               ___________
-
-==== B. SELF-EMPLOYED — BUSINESS INCOME ====
-  B1. Annual turnover TTC                                    ___________
-  B2. Regime (TCE/TEE/Micro/RSI/RNI)                         ___________
-  B3a. Entreprenant/Micro turnover tax (rate x B1)           ___________
-  B3b. OR réel net profit                                    ___________
-  B3c. Profit tax @25% (or 30% telecom/IT)                   ___________
-  B4. Minimum tax IMF (0.5% turnover; floor 3,000,000;
-      cap 35,000,000) — pay the higher of B3c and B4         ___________
-  B5. Less BNC WHT credit (7.5% resident, advance)           ___________
-  B6. Tax due                                                ___________
-
-REVIEWER FLAGS:
-  [ ] Family parts confirmed (max 5)?
-  [ ] Local vs expatriate confirmed?
-  [ ] CGA membership confirmed?
-  [ ] Benefits in kind valued per DGI scale?
-  [ ] Correct business regime by turnover?
-  [ ] CNPS ceilings applied (3,375,000 / 70,000)?
-  [ ] BNC WHT credit vs final tax determined?
-  [ ] Pre-2024 (abolished) salary scale NOT used?
-```
-
-## Section 8 -- Bank Statement / Payslip Reading Guide
 
 ### Ivorian formats
 
@@ -504,122 +272,40 @@ REVIEWER FLAGS:
 | CNPS / COTISATION | Social security | Employee 6.3% pension reduces net pay |
 | HONORAIRES | Professional fees | Business income (BNC) |
 | AGIOS / FRAIS / COMMISSION | Bank charges | Deductible (business account) |
-| RETENUE A LA SOURCE | Withholding tax | BNC WHT (7.5% / 20%) |
-| TVA | VAT (18%) | Liability/recoverable — not income/expense |
+| RETENUE A LA SOURCE | Withholding tax | BNC WHT (7.5%) |
+| TVA | VAT (18%) | Liability/recoverable, not income/expense |
 
-## Section 9 -- Onboarding Fallback
 
-If the client provides a bank statement/payslips but cannot answer onboarding questions immediately:
+## Judgement points
 
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items "PENDING — reviewer must confirm".
-3. Apply conservative defaults (Section 1) — including **1.0 part** for RICF.
-4. Generate the working paper (Section 7) with flags.
-5. Present these questions:
+- Parts: use 1 part until the family situation is documented.
+- Local or expatriate: use local and flag it until the contract is seen; the employer tax moves from 2.8% to 12%.
+- Regime: flag turnover near a band limit or unconfirmed CGA membership.
+- Home and mixed-use utilities, and vehicle costs: 0% business use until a documented basis or log is provided.
 
-```
-ONBOARDING QUESTIONS -- CÔTE D'IVOIRE INCOME TAX
-1. Are you an employee (ITS via payroll) or self-employed/business owner?
-2. Family situation: single/married/divorced/widowed? Number and ages of dependent children? Any infirm adult dependents?
-3. Are you a local employee or an expatriate?
-4. (Self-employed) What is your annual turnover (chiffre d'affaires TTC)?
-5. Are you a member of a Centre de Gestion Agréé (CGA)?
-6. Any benefits in kind (housing, electricity, water, A/C provided by employer)?
-7. Any non-salary income (rental, interest, dividends)?
-8. (Self-employed) Any withholding tax (retenue à la source) suffered on your fees?
-9. Are you resident in Côte d'Ivoire for the full tax year?
-10. Are you over 70 and receiving a pension?
-```
+## Ask the client first
 
-## Section 10 -- Reference Material
+1. Employee, self-employed or company?
+2. Annual turnover TTC, and trade or services?
+3. Marital status, number of children, dates of change?
+4. CGA member or convention expert-comptable?
+5. Tax office, DGE or DME, and sector?
+6. Domicile, and where the work is done?
 
-### Key legislation / authority references
+## Sources
 
-**Key legislation / authority references**
+| Source | URL | Read on |
+|---|---|---|
+| DGI, Annexe fiscale 2026 (loi n° 2025-987), note de service and arts. 1 to 41 headings; articles quoted here read in full | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page2.html | 2026-11-01 |
+| DGI, Le système fiscal ivoirien (undated e-book, predates the 2026 annex; the annex wins where they differ), pp. 3-51 read | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page3.html | 2026-11-01 |
+| DGI, Impôts et taxes en Côte d'Ivoire, édition 2025 (art. 146 table, regimes, IRVM, VAT sections read) | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf | 2026-11-01 |
+| DGI, Calendrier des obligations fiscales (VAT and BIC parts read) | https://www.dgi.gouv.ci/assets/documents/CALENDRIER.pdf | 2026-11-01 |
+| DGI note n° 00026 of 3 Jan 2024, employer contribution part read | https://www.dgi.gouv.ci/assets/documents/DOCTRINE%20FISCALE%202024/IMPOTS%20DIRECTS/IMPOT%20SUR%20LES%20TRAITEMENTS,%20SALAIRES,%20PENSIONS%20ET%20RENTES%20VIAGERES/N%C2%B0%2000026%20MFB%20DGI%20DLCD%20DU%2003%20JAN%202024%20Pr%C3%A9cisions%20relatives%20aux%20am%C3%A9nagements%20...%20des%20salari%C3%A9s.pdf | 2026-11-01 |
+| DGI note n° 01248 on VAT credit refunds, opening part read | https://www.dgi.gouv.ci/assets/documents/PROCEDURE_DE_REMBOURSEMENT_DE_CREDIT_TVA.pdf | 2026-11-01 |
+| CNPS, communiqué on ceilings from 1 Jan 2023 (whole notice read) | https://www.cnps.ci/wp-content/uploads/2023/01/NOUVEAU-PLAFOND-DES-COTISATIONS-SOCIALES-DE-LA-CNPS.pdf | 2026-11-01 |
+| CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
-| Topic | Reference |
-| --- | --- |
-| Merged ITS salary scale (current) | Ordonnance n°2023-719 du 13 sept. 2023, Art. 119 bis (eff. 1 Jan 2024) |
-| No change to scale for 2025 | Loi de Finances 2025, n°2024-1109 du 18 déc. 2024 (Deloitte) |
-| Salary scale & RICF figures | PwC Worldwide Tax Summaries — Ivory Coast (individual) |
-| Employer payroll tax (2.8%/12%) | PwC — other taxes (corporate & individual) |
-| CNPS contributions & ceilings | PwC — other taxes; CNPS |
-| Business regimes by turnover | blog.ivoire-juriste.com; ccesp.ci; ivoire-juriste.com |
-| Corporate/BIC rate & IMF minimum tax | PwC — taxes on corporate income |
-| BNC withholding (7.5%/20%) | arcop.ci; fideca.com |
-| SMIG / SMAG | Décret n°2022-986; guidedufonctionnaire.com; sikafinance.com |
-| Filing deadlines (30 May / 30 June) | PwC — tax administration |
-| Penalties | DGI (dgi.gouv.ci); CGI / Livre des Procédures Fiscales |
-
-### Filing, payment, administration
-
-- **Tax year = calendar year.** Salary tax is **withheld monthly by the employer (PAYE)**; the employer files monthly returns for both employee and employer payroll taxes. Employees with a local employer generally do not file a separate return; **spouses are taxed and file separately** (PwC, tax administration).
-- **Monthly payment due dates (for the preceding month):** industrial/mining/oil — **10th**; sales companies — **15th**; service providers — **20th**; other registered entities — **15th**; entreprenant & micro-enterprise — **10th** (PwC, tax administration).
-- **Annual business-profit deadlines:** companies subject to statutory audit — **30 June**; other companies — **30 May** (PwC).
-
-### Penalties (DGI / CGI / Livre des Procédures Fiscales)
-
-**Penalties table**  _(Source: DGI (dgi.gouv.ci); DGI "IMPÔTS ET TAXES EN CÔTE D'IVOIRE" PDF.)_
-
-| Situation | Charge |
-| --- | --- |
-| Late filing before formal notice (mise en demeure) | **5%** of duties declared |
-| Filed within 7 days after mise en demeure | **10%** of duties |
-| No filing after mise en demeure | Taxation d'office **+ 100%** surcharge |
-| Late payment | **10%** flat from day 1, **plus monthly interest** `[RESEARCH GAP — exact monthly interest % not confirmed against primary CGI; reviewer to confirm]` |
-
-### Test Suite
-
-**Test 1 — Single employee, 1 part.**
-Input: monthly taxable salary 350,000; single (1 part).
-Expected: ITS gross = 49,500; RICF = 0; ITS = **49,500**; CNPS employee = 22,050; net pay = **278,450**.
-
-**Test 2 — Married, 2 children (3 parts).**
-Input: monthly taxable salary 350,000; 3 parts.
-Expected: ITS gross 49,500; RICF 22,000; ITS = **27,500**; CNPS 22,050; net pay = **300,450**.
-
-**Test 3 — Higher earner, married no children (2 parts).**
-Input: monthly taxable salary 1,000,000; 2 parts.
-Expected: ITS gross = 192,000; RICF 11,000; ITS = **181,000**; CNPS 63,000; net pay = **756,000**.
-
-**Test 4 — Minimum-wage earner.**
-Input: monthly salary 75,000 (SMIG); any parts.
-Expected: falls in 0% band → ITS = **0**. CNPS employee 6.3% × 75,000 = 4,725.
-
-**Test 5 — Expatriate employer payroll tax.**
-Input: expat, monthly taxable remuneration 1,000,000.
-Expected: employer taxe sur salaires = 12% × 1,000,000 = **120,000** (vs 28,000 if local).
-
-**Test 6 — BNC resident withholding.**
-Input: registered resident, gross fee 1,000,000.
-Expected: WHT = 7.5% × 1,000,000 = **75,000** (creditable advance); net received 925,000; annual profit taxed at 25% with WHT credited.
-
-**Test 7 — Entreprenant TEE, services, non-CGA.**
-Input: services, turnover 30,000,000 TTC, not CGA.
-Expected: TEE = 5% × 30,000,000 = **1,500,000/year** (125,000/month); 750,000/year if CGA.
-
-**Test 8 — Pre-2024 scale rejection.**
-Input: a worksheet applying 0/10/15/20/25/35/60% + 1.5% IGR + 1.5% CN.
-Expected: **REJECT** — that is the abolished pre-2024 system. Recompute with the Art. 119 bis monthly scale.
-
-## PROHIBITIONS
-
-- NEVER use the **pre-2024 (abolished)** salary barème (0/10/15/20/25/35/60% + IGR + CN). Use the Art. 119 bis monthly scale only.
-- NEVER inflate the number of **parts** for RICF without documented proof — default to 1.0.
-- NEVER exceed the RICF cap of **5.0 parts** or the monthly reduction of **44,000**.
-- NEVER ignore the **CNPS ceilings** (3,375,000 pension; 70,000 family/work-injury).
-- NEVER apply the **20% expatriate** employer payroll tax to a local employee, or vice versa, without confirmation.
-- NEVER apply the old **20% employment-expense abatement** — the 2024 reform removed it.
-- NEVER treat ITS or TVA payments as deductible business expenses.
-- NEVER treat the **7.5% resident BNC WHT** as final — it is a creditable advance (only the 20% non-resident WHT is final).
-- NEVER classify a business regime without the **annual turnover (CA TTC)**.
-- NEVER present tax calculations as definitive — always label as estimated, pending professional sign-off.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an expert-comptable, conseil fiscal, CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: the full consolidated Code général des Impôts and Livre de Procédures fiscales 2026 (DGI lists them in its paid kiosk; the text was not opened), so article numbers come from the DGI documents above; whether employee CNPS reduces the ITS base (the DGI texts read do not say; this skill uses gross); whether Art. 36 quarterly payment wording for the micro tax sits in Art. 79 or a micro article (the article heading and motives name both, the quoted text amends Art. 79); the DGI late filing and late payment rates carried by the earlier version (5%, 10%, 100%, monthly interest; LPF arts. 161 to 169 not opened); capital gains on buildings 17% and on shares; deductible optional social contributions limit; the SMAG; non-resident withholding 20% (Art. 92 not opened); RSI IMF cap (the 2025 DGI table shows none for RSI).
 
 <!-- openaccountants-cta-block -->
 

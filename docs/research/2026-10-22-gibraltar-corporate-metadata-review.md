@@ -1,0 +1,5 @@
+# Corporate source metadata and calculation checks, v0.13
+
+Reconciled existing body source URLs into frontmatter; replaced generic Act download URL with the cited March 2026 consolidation. Added current Rates Rules rule6 as direct rate authority and clarified that dominant-position higher rate requires the Commissioner's opinion of abuse, not mere dominance. ITO corporate page re-opened; its CT4 link is an XLS workbook unsupported by web extraction, so detailed form-field gap remains and no submission was attempted.
+
+Reread section20(6)–(10) for restricted-loss example. Three oa-check blocks cover the pre-existing no-protected-pool cap case, ordinary company liability and instalment reconciliation. They do not determine the unresolved protected/restricted mixed-pool base. Prior source records for deductions, capital allowances and payments remain the evidence for their respective sections; this is not a new independent review of the entire guide. All fourteen GI guide frontmatters now have source records, not professional attestation.

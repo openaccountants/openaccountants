@@ -1,19 +1,19 @@
 ---
 name: nl-double-tax-relief
 description: "How the Netherlands relieves double taxation for its residents in tax year 2026, and the deadlines for the migration (M) and non-resident (C) income tax returns. Covers the Besluit voorkoming dubbele belasting 2001: exemption with progression in box 1 (arts. 8 to 12), credit for foreign tax on dividends, interest and royalties (arts. 15 to 17, 19, 25), the box 3 exemption for foreign real estate, the corporate tax object exemption (Wet Vpb art. 15e) and the art. 23d credit; treaty relief; and treaty dividend rates for 12 partners. Trigger on: aftrek voorkoming dubbele belasting, foreign salary, foreign dividends, US withholding, treaty rate, exemption method, credit method, objectvrijstelling, M-aangifte deadline, C-aangifte deadline. Out of scope: residence and emigration (nl-cross-border), Dutch dividend tax and conditional withholding tax (nl-dividend-withholding), corporate tax generally (nl-corporate-tax), resident income tax (nl-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.1
+# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl or belastingdienst.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -260,8 +260,6 @@ expected:
 | Belastingdienst, aangifte en betalen bronbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 
 Not yet confirmed: the invitation date usually printed on 2025 C letters (the notes link belastingrente to filing after 1 May 2026, but the deadline itself is in each letter); filing dates for 2026 returns; how Dutch national insurance contributions are relieved when a resident is insured in the Netherlands and also works abroad; the treaty rates for partners other than the 12 listed; and how the MLI changes each listed treaty beyond the principal purpose test (in particular whether a 365-day holding period applies to the reduced company rates).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,381 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Kunngerð nr. 60 frá 5. mai 2021 um rindan av eftirløn og eftirlønarskatti
+5. mai 2021Nr. 60
+Kunngerð um rindan av eftirløn og eftirlønarskatti
+Við heimild í § 12, stk. 10 í løgtingslóg nr. 49 frá 14. mai 2013 um eftirløn (Eftirlønarlógin) verður ásett:
+§ 1. Tað áliggur arbeiðsgevara, ið flytur løn til persón, sum hevur skyldu at rinda til eftirløn, at flutt verður í samsvari við ásetingarnar í eftirlønarlógini.
+Stk. 2. Saman við hvørjari lønarflyting skal verða flutt eitt eftirlønargjald, sum í minsta lagi samsvarar við tann niðanfyri standandi prosentpartin av A-inntøkuni og B-inntøkuni samanlagt:
+1)   Frá 1. januar 2020: 6 prosent.
+2)   Frá 1. januar 2021: 7 prosent.
+3)   Frá 1. januar 2022: 8 prosent.
+4)   Frá 1. januar 2023: 9 prosent.
+5)   Frá 1. januar 2024: 10 prosent.
+6)   Frá 1. januar 2025: 11 prosent.
+7)   Frá 1. januar 2026. 12 prosent.
+Stk. 3. Løn, ið verður flutt uttan nøktandi eftirlønargjald, verður afturvíst og fer sostatt ikki gjøgnum afturhaldsskipanina hjá TAKS. Hetta er tó ikki galdandi fyri flytingar, sum eru fevndar av §§ 2 og 3.
+§ 2. Niðanfyri nevndu flytingar kunnu fara gjøgnum afturhaldsskipanina hjá TAKS uttan tað í § 1, stk. 2 ásetta minsta inngjald:
+1)   Lønarflyting til persón, sum er føddur fyri 1. januar 1954.
+2)   Lønarflyting til persón í starvi, har hann vinnur rætt til tænastumannaeftirløn.
+3)   Lønarflyting til persón, ið hevur nátt fólkapensjónsaldur, sbrt. løgtingslóg um almannapensjónir o.a.
+4)   Flyting til persón, sum longu hevur rindað samanlagt 150.000 kr. í eftirlønargjaldi í árinum.
+5)   Lønarflyting, ið hevur við sær eftirlønargjald, sum er minni enn 30 kr., t.e. lønarflyting, har samlaða upphæddin ið flutt verður, er minni enn tann niðanfyri ásetta minstaupphædd:
+a)    Frá 1. januar 2020: 500 kr.
+b)    Frá 1. januar 2021: 429 kr.
+c)    Frá 1. januar 2022: 375 kr.
+d)   Frá 1. januar 2023: 334 kr.
+e)    Frá 1. januar 2024: 300 kr.
+f)    Frá 1. januar 2025: 273 kr.
+g)    Frá 1. januar 2026: 250 kr.
+§ 3. Niðanfyri nevndu flytingar skulu fara gjøgnum afturhaldsskipanina hjá TAKS uttan eftirlønargjald, sbrt. eftirlønarlógini:
+1)   Lønarflyting til persón, sum fær fólkapensjón, sbrt. løgtingslóg um almannapensjónir.
+2)   Lønarflyting til persón, sum ikki hevur fulla skattskyldu til Føroyar.
+3)   Lønarflyting til persónar í tíðaravmarkaðum starvi, har TAKS hevur játtað umsókn um frítøku, sbrt. § 1, stk. 5 í eftirlønarlógini.
+4)   Lønarflyting til persón, sum vegna sjúku er undantikin eftirlønargjaldi, sbrt. § 9, stk. 5 í eftirlønarlógini.
+5)   Allar peningaupphæddir, nevndar í § 3 í eftirlønarlógini.
+6)   Lønarflyting til persón, sum fær útgoldið eftirløn, sbrt. eftirlønarlógini.
+Stk. 2. Verður eftirlønargjald, sbrt. eftirlønarlógini, flutt teimum í stk. 1 nevndu persónum, verður flytingin afturvíst av TAKS.
+§ 4. Tá inntøkuárið verður gjørt upp, verður staðfest, um nøktandi eftirlønargjald er goldið. Manglandi eftirlønargjald skal rindast í seinasta lagi 1. november árið eftir inntøkuárið. Verður eftirlønargjald ikki rindað rættstundis, kann TAKS fara fram eftir § 2, stk. 7 í eftirlønarlógini.
+Stk. 2. Um eftirlønarsamansparari ikki kann vísa á eina eftirlønaravtalu, verður eftirlønarupphæddin set á depotkonto hjá TAKS, og farið verður fram, sbrt. § 16 a í eftirlønarlógini.
+§ 5. Er skattur rindaður uttanlands av inntøku, sum eftirlønargjald er rindað av, verður eftirlønarprosentið, sbrt. § 12, stk. 2 í eftirlønarlógini, lækkað við lutfallinum millum samlaða skattin, sum er rindaður uttanlands, og samlaðu uttanlandsinntøkuna. Lækkingin kann tó í mesta lagi samsvara við eftirlønarprosentið, sbrt. § 12, stk. 2 í eftirlønarlógini.
+§ 6. Henda kunngerð kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2021. Samstundis fer úr gildi kunngerð nr. 164 frá 19. desember 2013 um hvussu eftirlønir og eftirlønarskattur verða rindað.
+Fíggjarmálaráðið, 5. mai 2021
+Jørgen Niclasen (sign.)
+landsstýrismaður
+/ Bjarni Askham Bjarnason (sign.)
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Kunngerð
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 07-05-2021
+Tilvísingar
+Heimildir
+Avtøkur
+Kunngerðablaðið
+Kunngerðarblað  2021 A - Kunngerð 60 frá 5. mai 2021
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

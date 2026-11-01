@@ -1,10 +1,10 @@
 ---
 name: gr-efka
 description: "Greek e-EFKA social insurance contributions of the self-employed for 2026: freelancers (ελεύθεροι επαγγελματίες), the self-employed (αυτοαπασχολούμενοι) and farmers insured under the former OGA. Covers the six insurance categories and their 2026 monthly amounts under e-EFKA circular 6/2026 (main pension, health in cash and in kind), the special category for the first five years of insurance, the EUR 10 unemployment (DYPA, former OAED) charge, the three supplementary and three lump-sum categories, farmers' six categories, the annual category choice, parallel employment, the payment deadline (last working day of the following month), late payment and KEAO, and how paid contributions reduce business profit. Trigger on: EFKA contributions, εισφορές μη μισθωτών 2026, ασφαλιστική κατηγορία, ειδική κατηγορία νέων, ελεύθερος επαγγελματίας ΕΦΚΑ, Greek freelancer social security. Out of scope: gr-employee-contributions (employees and employers), gr-income-tax (the tax computation), gr-cross-border (A1 and residence)."
-version: 2.1
+version: 2.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -186,8 +186,6 @@ expected:
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification to ν. 5264/2025, arts. 22 and 23 | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 
 Not yet confirmed: the text of art. 2(4) ν. 4158/2013 itself (the late-payment rate is taken from e-EFKA circular 3/2020, section 6, and the law was not fetched), and the ECB refinancing rate in force on any given day; the exact dates of the December 2026 to January 2027 window for choosing 2027 categories; which professions are compulsorily insured in the supplementary and lump-sum branches beyond the former OAEE groups the e-EFKA FAQ lists (check the client's e-EFKA record); whether an engineer such as the one in Example 2 is compulsorily insured in both branches (the example assumes it).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

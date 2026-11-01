@@ -1,13 +1,13 @@
 ---
 name: it-irpef-employees
 description: "Italian personal income tax (IRPEF) for resident employees, pensioners and private investors, tax year 2026. Covers the 2026 bands (23%, 33%, 43%; the middle rate cut from 35% by L. 199/2025), the employment and pension detrazioni of TUIR art. 13, the cuneo fiscale measures of L. 207/2024 (tax-free sum and extra detrazione), family detrazioni, the main oneri deducibili and detraibili with their caps, regional and municipal surcharges, 730 or Redditi PF and the 2027 deadlines, the 26% and 12.5% substitute taxes on investment income, rental income and cedolare secca (21%, 26%, 10%), IVIE and IVAFE on foreign assets, penalties and ravvedimento. Trigger on: IRPEF dipendente, 730, busta paga tax, detrazioni lavoro dipendente, cedolare secca, capital gains Italy, IVAFE, IVIE. Out of scope, see: it-income-tax (self-employed), italy-payroll (withholding), it-estimated-tax, it-impatriati, italy-crypto-tax, it-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -299,8 +299,6 @@ Not yet confirmed:
 - **First pensionable band for 2026** (above which the employee pays an extra 1% INPS): EUR 56,224 (INPS Circolare 6/2026; see it-employer-contributions).
 - **Consolidated codes from 2027.** Balances, acconti and any penalties for 2026 income fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any figure above.
 - Whether the 730/2027 has the sections for capital gains (RT), foreign income and RW: check the 730/2027 instructions when published.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

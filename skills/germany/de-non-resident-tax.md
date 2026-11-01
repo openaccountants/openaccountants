@@ -1,13 +1,13 @@
 ---
 name: de-non-resident-tax
 description: "Use this skill when a person or company that does not live in Germany has German income, or when a German resident needs credit for foreign tax. Tax year 2026. Covers unlimited vs limited liability (§ 1 EStG, §§ 8, 9 AO), the § 1(3) option (90% or EUR 12,348 test), § 1a EU/EEA splitting, German-source income under § 49 EStG, how a non-resident is assessed (§ 50: Grundfreibetrag added back, no splitting), wage tax for non-resident employees, § 50a withholding (15%, 30% on supervisory board fees), § 50c exemption and refund at the BZSt, Kapitalertragsteuer on dividends, and the § 34c and § 32d(5) foreign tax credits. Trigger on: beschränkte Steuerpflicht, non-resident Germany, § 1 Abs. 3 EStG, § 50a, Abzugsteuer, Kapitalertragsteuer Erstattung, Anrechnung ausländischer Steuer. Out of scope: rental computation (de-rental-income), resident employees (de-employee-income-tax), payroll mechanics (de-payroll), corporate tax (de-corporate-tax), exit tax (leaving-germany-exit-tax), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -315,8 +315,6 @@ For comparison, the § 34c cap for income taxed at the tariff is German tariff t
 | EStG §§ 49(1) nos. 2(e), 2(f), 6; 50(2); 44a(9); 50d(3), selected source/assessment/refund conditions actually read | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-29 |
 
 Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

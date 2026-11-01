@@ -1,0 +1,855 @@
+{
+  "content_change": false,
+  "files": [
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+      "sha256": "022d29fe55f50130d2e52f4ded770236624f39fb796fbed886695944255e72cc"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/tp-full-ledger-match.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/tp-full-ledger-match.json",
+      "sha256": "68732992f0577c2a9e17bb2b70b3ecc0721dd2cbdbfba28f07091b975f2ceb03"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/readme-options.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/readme-options.md",
+      "sha256": "80d2ca383faac483d3571645daf79417185f23170ecfe0d8541849bfc28bbf5c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-foreign-tax-relief.before.txt",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-foreign-tax-relief.before.txt",
+      "sha256": "7170ee37c2519a98e7763378f563bbb11713d1240219759e2d312ccd6a45e850"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-connected-party-pricing-and-interest.before.txt",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-connected-party-pricing-and-interest.before.txt",
+      "sha256": "e612e427e6ee9e8e5b93f69051603e208b5b11db2611e3310a16003c0893f5af"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-method-options.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-method-options.md",
+      "sha256": "ef1ba5d2db7bebb428e670e47cbb7e669a9b8382c696573e3e2b989aac962e22"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-method-options.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-method-options.md",
+      "sha256": "62fc72f90015da497b2826d07ff988acf92a9902da9d3ce1d7600941c411513c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-exit-ledger-candidate.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-exit-ledger-candidate.json",
+      "sha256": "cbfb729b1ab276127c559a56e961c25281cb0bc6cd7efdbebe07e2c7891ad571"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-first-candidate.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-first-candidate.json",
+      "sha256": "a2a929df3f7acccf3425bf68c2d71811e09aa4197b9d6e15da27f179d4e944e1"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/research.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/research.md",
+      "sha256": "129bbe7d48b39af088519d28e36759df5939aa4d7af07a87cc559dbdce3c9f7c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/publication-preflight.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/publication-preflight.json",
+      "sha256": "bd3456eecfe143e1dfdee7fcd51efafbcf3243b0394e435cbbe44160dee7b08c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/coverage.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/coverage.json",
+      "sha256": "9bc09e6409ddd961dd11d80299355238d7a77309aff41c56b805ec547cf8ca1a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md",
+      "sha256": "cca8bb97ff3acb8b7dce9f3dccf671df25a148fd48d78a8f75337e625fa564b8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/source-receipts.json",
+      "sha256": "a117a63038bec8a32df09b7212db913043e0dc7d3f859011e59dca239b7511f6"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-ledger-match.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-ledger-match.json",
+      "sha256": "ba660b8616b1f5ffe4bb039df08a4d50fe7447cc317f40081b40d5f6041499be"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/foreign-exit-ledger-match.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/foreign-exit-ledger-match.json",
+      "sha256": "29803dedc23144fa01dcbc212ee1179b9963d28783d0ff67d22eab441eabd3c5"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-review-repairs.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-review-repairs.json",
+      "sha256": "c3974648d7f1ba27956a8c706787569ae1b456200a21cf462a69bdc7b8617b0d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/preservation-results.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/preservation-results.json",
+      "sha256": "30dddd5b4814f4d6d4c57f8c396ae941b8d1b36a6c03d847f66de6b1ec90fa64"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review-evidence-manifest.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review-evidence-manifest.json",
+      "sha256": "7f7166e569249241f3f29fbdff642bfe327dee06445cb94d06095890f73fc32d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/metadata-integrity.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/metadata-integrity.log",
+      "sha256": "73c7e935a6ea3e5ad2b1e16ad3fb326e583e2229c0c8a4d5561fe616c6d511b5"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/repository-examples.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/repository-examples.log",
+      "sha256": "16c5202e4d97e86e7bdea6464f8ce1e891b56659445e5f74c5bcc32e14d5c7fb"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/independent-arithmetic.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/independent-arithmetic.json",
+      "sha256": "6eec00afd1ec3b162715afb56015e955c189345d9468f69d69f7e709dd601e26"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/schema-results.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/schema-results.json",
+      "sha256": "06c932e56c3c1b811a71697c13485ac166aa8a7fd6ebf15323ddbee5e16bfe5a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/verify.py",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/verify.py",
+      "sha256": "154cca2e95544f05ab7a59377f4248777dfa6901736c8a4b978372dccde301cf"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/source-proof-results.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/source-proof-results.json",
+      "sha256": "1233bc1a1733778a048b87460b65d1e9a40dcbf280b1b821aa53eaeae9bccf40"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md",
+      "sha256": "c40eca0217b0713236e123bc15a0e888102c2a73b0ed4c83c90783c055d6bffc"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.json",
+      "sha256": "2bd2406aab97c3b6d32313a3aa912faddba3e6b31ecbfdcc4d7b739254c78cd4"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/verify_closure.py",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/verify_closure.py",
+      "sha256": "cca48c420c4ec5e8559cb6d3db09d21122dff53dd14d70908cbc6d19dd19b325"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/all-new-row-results.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/all-new-row-results.json",
+      "sha256": "55d665219c42663f64626dedeb26927a6c0d54b4e765431e6154d9ca44fe55b4"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/writer-complete-audit.json",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/writer-complete-audit.json",
+      "sha256": "3dc0f6dbbb16191d535f75eb810b5c069b115cac7fa0c49762e6b30bfcb34a33"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md",
+      "sha256": "c21c014f5f9d0b0fb19f0f83e2673d225b6d852f66bd48610b63170e2d819e32"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/targeted-gap-searches.json",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/targeted-gap-searches.json",
+      "sha256": "a64ee40005a155fc4d03761e3d24f9f3b9e486d8068f6c5da5d8e4bd88df44bd"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-route-assessment.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-route-assessment.md",
+      "sha256": "f67a22e2bbc7e82033165883656fdf9cfb7eb86df23f682bf8f0e8df452165ee"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md",
+      "sha256": "e69ffd4b30bc3d9844a4b494cb5c0c927484b01f80171ddd579eb344873eb322"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/research.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/research.md",
+      "sha256": "3562ed70dbc79c5ea3b9c06908f48034263d13b3e5fceb1c8e3e8b41ea864bfc"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/source-receipts.json",
+      "sha256": "d9926a12ac06b11e8949f040af80fb8f39d4e2b9a276f5807a07c9fac440e89c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/gi-corporate-tax.before.txt",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/gi-corporate-tax.before.txt",
+      "sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.md",
+      "sha256": "a7d7bc1490831acd9ced38cb39d6fbfbdd4399eb495090e2eebc375d7901f6c2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md",
+      "sha256": "b630e80f56593a6879475d8586691a4b4c91dd32bf863d77938f17a452132ad5"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/writer-preservation.json",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/writer-preservation.json",
+      "sha256": "86b0e73c433135d51ef6711972ecf46cd09ba258aca4a5b39999abcb754a3e65"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/check_writer.py",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/check_writer.py",
+      "sha256": "8f4bc91a3371937c090e16bd70e3b5b0c58a9bf4a4ec0844eb522538d685d5ee"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.json",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.json",
+      "sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/draft-options.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/draft-options.md",
+      "sha256": "900b45000644cb9c0cde4372bf44c4f2c3548d76d2d9e8c975c5a3db1f476e5d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ordinary-deduction-options.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ordinary-deduction-options.md",
+      "sha256": "6ab040e58b33e4835da64889d3127d35bfe2a4c21e702be8b6cb0d6c49ca53e8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/writer-complete-audit.json",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/writer-complete-audit.json",
+      "sha256": "1714c37f1177aec936a555d3120d323a50248d2f7ba35232438199f9a44f2922"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/gi-individual-income-tax.before.txt",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/gi-individual-income-tax.before.txt",
+      "sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-pension_deduction.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-pension_deduction.md",
+      "sha256": "a6798f6a84485f6c7f463269b3ce9ef6e54456ccba2d193a466e10e2fbb7c6b2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-credits.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-credits.md",
+      "sha256": "63ed4a045db01a8a1fe6de5403985fd1bd70ae470a7d0d26cb6e37d185ab4afd"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-route.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-route.md",
+      "sha256": "67aac5600f4cefed1135435c7d5fdba97ca7acd9b51d6ff3c7a85affa6a76d59"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/current-return-correction.json",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/current-return-correction.json",
+      "sha256": "84cb6d048c44aad4f7209810278c6a02dfc189db863bff28a1ad704a0bb4b482"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-family.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-family.md",
+      "sha256": "fff536c3fbc42e3dcf40183a08f47dac6ea63b1ae28042f2d623f6e857e2a0a4"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/original-paragraphs.json",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/original-paragraphs.json",
+      "sha256": "ffa4ef382bcd8b703cfcf19853e03387a82d51eb71005d0700da2734f0c24cc4"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/research.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/research.md",
+      "sha256": "6c794986b0a3961f2ffa8889a8ea5d9ad2e85efb7f7bd45af1be1c9cfec945ed"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md",
+      "sha256": "4a9f56d96624a42d5929731a6e44a23ed5a64f8672130f62474c6eb015e30a59"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/build_writer_ledger.py",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/build_writer_ledger.py",
+      "sha256": "9ed6656a00b94abc315cdb1f9491ca5c4b35b3f4c31a7b8d499893d69e44a165"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/source-receipts.json",
+      "sha256": "78f3b5034e450bd172c96623d12885c8c650a31742b82d03f05641300602edd8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledger.json",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/ledger.json",
+      "sha256": "924e4a833300795eee358e8609f2a7fe8ae017dbe2d05b99bbf63293b2b5c602"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-home.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-home.md",
+      "sha256": "9fb065c79f7e30a2f066e064d1c9f222777c04a973a4cae55274c5a9269a215c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/draft-options.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/draft-options.md",
+      "sha256": "fef0b9f60f84338e222a1a778bfe9bebd2f9e679d7131ec8885a88526c01afde"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md",
+      "sha256": "589bf819acf9fe6907d970bd9e110be46bf562f62006f6f6dc324d5e69220826"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/coverage.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/coverage.log",
+      "sha256": "808034ce431c0291c3003da4bc6e2ec718075847d69ff9a28d4063269d6b0ef3"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/writer-validation.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/writer-validation.json",
+      "sha256": "0c3380059dd0a7ee2a4ab7963334ed03eefab4824ab9e85c7de6e988f4283e05"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/publication-preflight.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/publication-preflight.json",
+      "sha256": "6bcfe4f90667df8621c7e03032f912c6133aafcbac2285a10897b66221729f74"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/preservation.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/preservation.log",
+      "sha256": "e3be943f3c035874c208fc09ff5fe4f061a31ebd56873a6c345b2dc13cfc0458"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/metadata.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/metadata.log",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/writer-repairs.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/writer-repairs.json",
+      "sha256": "957716e78d9ff06e856da3e913eb4ff09802e0d596e1664d533e3c25d0759070"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-repairs-2026-10-28/examples.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-repairs-2026-10-28/examples.log",
+      "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/coverage.log",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/coverage.log",
+      "sha256": "e7bb71044f1938107a67e2bef47ac3f6ddf1049e662fa0f6c4ec218dd679e6a9"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/writer-complete-audit.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/writer-complete-audit.json",
+      "sha256": "5fbba29b8e9637c063b7ec056eb00c77ede6adbe7cdcec44410f780af91867c4"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/reconciled-original-paragraphs.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/reconciled-original-paragraphs.json",
+      "sha256": "99be256d1727c9886584164cb867fed06c1cf040cbf70d17ac3af1b7f84a2d86"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/finite-gap-investigations.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/finite-gap-investigations.json",
+      "sha256": "e5615690fa783444f8738162a64bf7a9d553c7e7b0ff3ee31bf238afa3d55203"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/gi-transaction-tax-transition.before.txt",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/gi-transaction-tax-transition.before.txt",
+      "sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/new-methods.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/new-methods.json",
+      "sha256": "4721f30498bb60aaa5f8c14cab4a5397c83fb3abe82a5a0acf6b96eeaf012015"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/original-paragraphs.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/original-paragraphs.json",
+      "sha256": "cd2cb4998c45cebab0d8e92df1db5b85e09a2778ffbc5ec19738fc598bc13c07"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/source-table.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/source-table.json",
+      "sha256": "c8c18f75a0d72c38eaa46e2b38b28ac4faee1139098f189c564f0fb1f1af3abd"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md",
+      "sha256": "39d8bb04b3bae2012ea6fcf4b23a9309f288add4dc7c315cc34837182f9544ef"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/metadata.log",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/metadata.log",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/schema.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/schema.json",
+      "sha256": "83fc82e472cbdaf2ff9254491bd2d42ffe61fe66b27af5dd18d35cfd7f67db6f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/build_writer_ledger.py",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/build_writer_ledger.py",
+      "sha256": "5af20d2641261446ce02a9a0444f836f3b13bf51594828c70bdd97d96c2fab37"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/examples.log",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/examples.log",
+      "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/source-receipts.json",
+      "sha256": "0d28129a6aacdb49bed816d8bf143476933f744c92a59b25c7e4dbca55273bd8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledger.json",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/ledger.json",
+      "sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/draft-options.md",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/draft-options.md",
+      "sha256": "729b8d1e9aeb8b2bb2a712d22ae07d42dc79c5bcb2d8bb77bf09d95732965943"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/writer-complete-audit.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/writer-complete-audit.json",
+      "sha256": "25dd6f8d5488ba8e5515855cd6af82817be969abf910eb1aae54f62a7026090f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/draft-benefits.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/draft-benefits.md",
+      "sha256": "98eddf4054a604714b6647844e49742bf22f7949ef1f1541387af76aaf223735"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/finite-gap-investigations.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/finite-gap-investigations.json",
+      "sha256": "e2f0eb2409078ac4c27b3f0a19028ab0c881085defb585fda390e96423a5c610"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/draft-benefit_tax.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/draft-benefit_tax.md",
+      "sha256": "2be6e02a15f937b397ea47ddb1cb54e447f2d37a307a03dc2621c896fdc2ac14"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/gi-payroll-social-insurance.before.txt",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/gi-payroll-social-insurance.before.txt",
+      "sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md",
+      "sha256": "2d56658ec40ea6d33ce0ecf18473aab433b07934bc21fe81de9a5bbb7049dc27"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/visual-source-proofs.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/visual-source-proofs.json",
+      "sha256": "711ee10777f7560c557b167c290e855ad722e286e111fdbdeee7f5ea64b708fb"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/original-paragraphs.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/original-paragraphs.json",
+      "sha256": "3f3cae07d647c323f8344dbfb3f34c871115e0b3d62e1bef3362db35a0896dd8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/draft-contributions.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/draft-contributions.md",
+      "sha256": "535ac6d4d94bbf6ee64c5ff5c71b4e6613d7a6b3478969894b4a27ef62e58b00"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/draft-procedures.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/draft-procedures.md",
+      "sha256": "4d58e6b923409402b17680e7902471d23712e76a35ad7b5f1d6ed27b3352ef5b"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/research.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/research.md",
+      "sha256": "ca73ecdb93e04b5c80401d69296771e94ae83895b1cb55b02358311f9e9e3526"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/writer-prose-arithmetic.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/writer-prose-arithmetic.json",
+      "sha256": "25df5078befc5876e29475aa0cb1b865de8ce13e1905ab0f9459cd75d555161d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/build_writer_ledger.py",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/build_writer_ledger.py",
+      "sha256": "d551641460a5afcf15e07ad2e467a63cd46cb04085118f510f11cbe19ce1c21e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/source-receipts.json",
+      "sha256": "9e93d6c47663f5bb95fe98b322c7bbf1fb3570313f69709fa00b41214fe4ee97"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledger.json",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/ledger.json",
+      "sha256": "7a7ab6a9ccbba35d8a6cfbf5dcbe49eea98deaa7d5131f421ca3cc3ae92dd46f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/draft-options.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/draft-options.md",
+      "sha256": "a5646cb9990eadb75bbf624b31afd442d844b5c013425aa2dbd89610815734fd"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md",
+      "sha256": "e68bc33609d13eca3633b45fd0c1aa1c076916317f5eab62a0a88cb61a7eaf9f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/coverage.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/coverage.log",
+      "sha256": "c0ab06ef386f4694967dac7ec165c13a4575a7d89cc6264e3f7e8089ebfa800a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/research-record.md",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/research-record.md",
+      "sha256": "6dbb966280cb5a913dcdde6f31b6fbfc885fef6815d8e6c5eccefc30c220a43a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/domestic-documents-and-claim-proofs.json",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/domestic-documents-and-claim-proofs.json",
+      "sha256": "be6902fd1b1ed629b43fc9b90233e420302d925771f3bf43eaa41228e3f9c4e8"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/finite-findings.json",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/finite-findings.json",
+      "sha256": "3741ffa83100acf7eca7b672a53142a6ce297657ae3c7fc2c4a7306babb55945"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/ct1-public-cells.json",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/ct1-public-cells.json",
+      "sha256": "b9aa2d77ad02893e1844daed23f40895175c5d2c49495f54513984c52df31587"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/preservation.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/preservation.log",
+      "sha256": "e3be943f3c035874c208fc09ff5fe4f061a31ebd56873a6c345b2dc13cfc0458"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/metadata.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/metadata.log",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/validation-results.json",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/validation-results.json",
+      "sha256": "3ec8344a7bc012cee08587eb9fd08e4739c606fa75d45e1ae8c0c24d31680e75"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/examples.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/examples.log",
+      "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/tests.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/tests.log",
+      "sha256": "e590e01a56470598593df2335fdc66f6942fe0380ad7a95e4fb18c03de78d7bb"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/source-receipts.json",
+      "sha256": "f49bbc734d8105712fb6a1b10ba997a462a01ae714c9c2f7a3e39327145ca69c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-ordinary-checks-2026-10-28/tests-canonical-temp.log",
+      "new": "evidence/research/gibraltar-2026/final-ordinary-checks-2026-10-28/tests-canonical-temp.log",
+      "sha256": "f9cfeabcb9522ba6eef687aeb74255a0ea3abfc989d82bf9118c6945782de87d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/gi-individual-income-tax.before.txt",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/gi-individual-income-tax.before.txt",
+      "sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-candidate-validation.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-candidate-validation.json",
+      "sha256": "0aaa4e253f2ef65355ba83687c07608e360e30ff6344902528512f69cfb1f6d1"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/writer-section-repair.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/writer-section-repair.json",
+      "sha256": "76d588a14c8a726656e1709243c7dd1dd0b365e7f7636c9527cf7f835c7b2d3b"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-schema-validation.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-schema-validation.log",
+      "sha256": "687825af8c6893b43bbe4ba94385678e1949874ef47d0ae9cd21a8fc9ffaa889"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-coverage.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-coverage.json",
+      "sha256": "e4d6134f8e459f856a1d8e359b7f5f9e5489ac0fb58ac2b179085d52d9896054"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/calculation-checks.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/calculation-checks.log",
+      "sha256": "b341664c8eea19f8c9be1b052452dc82ee6ca385598d0f156a5dbb420080750d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/metadata-checks.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/metadata-checks.log",
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/local-validation.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/local-validation.json",
+      "sha256": "00e623d2c48fb6d503742403653b0b726b5aedbd25c8cf9e495c416182dcdbda"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/publication-preflight.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/publication-preflight.json",
+      "sha256": "f0ccd97ccddca427542e3d780bdd05b69bc8075f3b6090bdd1dd857991e31651"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/schema-results.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/schema-results.json",
+      "sha256": "83fc82e472cbdaf2ff9254491bd2d42ffe61fe66b27af5dd18d35cfd7f67db6f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/source-receipts.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/source-receipts.json",
+      "sha256": "b72eba041c205eb505cf08d66bc7e55f415437ee339d512f57b9b793d6925000"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-metadata.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-metadata.log",
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/review-provenance-repair.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/review-provenance-repair.json",
+      "sha256": "8204ce93ac3d9fa636ab2d19c64821cbc8010cf2f0c32bbb658fa2c97135bc6d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/writer-audit.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/writer-audit.json",
+      "sha256": "40d9e549da67b36ec3cd3ef1462448b5c3068ed5e6878f47801c7e6c7f731c25"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/new-relief-text.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/new-relief-text.md",
+      "sha256": "b18a88015ec6cfd33b59c785608579bd4d38c9cbc67541ee8adb0027502707a3"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-examples.log",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/final-examples.log",
+      "sha256": "b341664c8eea19f8c9be1b052452dc82ee6ca385598d0f156a5dbb420080750d"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledger.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledger.json",
+      "sha256": "c1a11912541a09bfbcf6ba348083c531d65d4ddfca9c7a15297becfbfb39d6b1"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/draft-options.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/draft-options.md",
+      "sha256": "034e5c717553bbd056d7b38038e9af4f1ba290512400a5fefbf6f44101347fda"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md",
+      "sha256": "ac5f5f8c93fdcc264178967e721eccd85daffeb0610be5b9721dd91953c761f1"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/example-check-summary.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/example-check-summary.json",
+      "sha256": "1e2eddcd0f46975eed8061e662c15ea6b8a04e4d10b113dbbf0efed38517b300"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/original-topic-spotchecks.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/original-topic-spotchecks.json",
+      "sha256": "c603715486f88fb717052e97166c5229da708943646e3878a0679e22ba905b1a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-schema-results.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/independent-schema-results.json",
+      "sha256": "83fc82e472cbdaf2ff9254491bd2d42ffe61fe66b27af5dd18d35cfd7f67db6f"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/row-check-results.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/row-check-results.json",
+      "sha256": "19bba1b182b7e31eabe476499432951c48b2c44e95d3beb830d18ca63f339243"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-metadata-check.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/ct4-metadata-check.json",
+      "sha256": "43713adcd48977e04a1964cea5313880267095de2a71e82955f140f4c5ac707b"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/repo-pr-validation.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/repo-pr-validation.log",
+      "sha256": "65bc5d777fc8567d9e5f61ffdfb92d4c0f2c761da48ef1a74f4565dd2b6455aa"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/preservation-and-shape.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/preservation-and-shape.json",
+      "sha256": "073876a6a2748254ef05af004d5406b56288a233687aa322830db1d00465d999"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-unit-tests.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/independent-unit-tests.log",
+      "sha256": "838e0732b323b7b8eee58b03688d0c7d9aa6a39d59f3f55ee3052acdd6269090"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/prose-arithmetic-results.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/prose-arithmetic-results.json",
+      "sha256": "056ab1a97bc72c57392b1b9e01228c43b70a7413310e95d0553db226abab10a7"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-metadata.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/independent-metadata.log",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-examples.log",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/independent-examples.log",
+      "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.md",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/review.md",
+      "sha256": "cd9d98dba443dcc4be45b2c8f831211d6b960720ac42789bc46006ea670e488e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/review.json",
+      "sha256": "578a11d1d2a6e8ac8529ca8ea8e7a09f2b621119e33e08437fd75a151326b367"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-independent-cell-comparison.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/ct4-independent-cell-comparison.json",
+      "sha256": "c4c0335587f716460b448d83477c14e620adf2ce2416f6d5196ed124c0db9822"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.md",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.md",
+      "sha256": "92be8edf9b3c74f0cf94ef1a727d49c894b57b8cc157db833c618c356e5696de"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.json",
+      "new": "evidence/research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.json",
+      "sha256": "6fa90cd2863c7c6872d22b62adcb8697d609ba3d528b559d83f156f55be11b8e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "sha256": "db97d0fb1c917936278fb9a122840657fefbd37a0bff061048e36aec65ce4b0a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+      "new": "evidence/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+      "sha256": "523d19fad761fa4a779250f9b331a6509e4b03515a0847505c0be7cd95a0814e"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledgers/gi-transaction-tax-transition.md",
+      "new": "evidence/research/gibraltar-2026/consumption-completion-2026-10-28/ledgers/gi-transaction-tax-transition.md",
+      "sha256": "dfac180fe97851ad8f51423bf6ca8e337f162406724d1b5ef8ecc753cc778c56"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "new": "evidence/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md",
+      "new": "evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md",
+      "sha256": "30ae753b37704cc630f71afa0d9fbbd631b537c76f75ab893e8bb4d08fdd6a5a"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/closure.md",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/closure.md",
+      "sha256": "3d41212c4f3e888c14f4778ed6e0f8c7da3248b07a18b4129b9866364b40cfdb"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/checks.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/checks.json",
+      "sha256": "0c9cc401406e137d2be74df4a641c65dda0436430c623604f0460e05edd67b81"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/closure.json",
+      "new": "evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/closure-6f53123a/closure.json",
+      "sha256": "1ea07e32847432ff7632f6d94cff455e306eb9896eae8e367382e792d02558f3"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/README.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/README.md",
+      "sha256": "31966d37c4e2db641e840804dd202f86f482549397e2a6e284bf55ab18d5fa1b"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-archive.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-archive.json",
+      "sha256": "d0b5a5265e78b4076f693ac69b2a1ebd975cc14d03119b60d7142da408372336"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md",
+      "sha256": "535d93498b3d2b2322fd8d697bb95bff4692fbe18bca3330431ca1db41c0d6a1"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md",
+      "sha256": "f910a671844294744d15ce5b3894c9754aa65887b912352efa8a760b8b101104"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/check_pinned.py",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/check_pinned.py",
+      "sha256": "ba1c7bd2e2f3d41dc92e81fdac8724ef2a88e0a8ed53d9d73b4c323adf905b0b"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/result.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/result.json",
+      "sha256": "6edb8cbab33d69df88f8edcd95062fca126cf0f6c93f0477cfab4ac93a1d5e55"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/report.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/report.md",
+      "sha256": "e99f04efa2e786e50397a5e6e27a6fedffb2f07d9f959a2aab0595ad981fd6c2"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/pinned-evidence.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/pinned-evidence.json",
+      "sha256": "759c4bdc3c9814d81ad53c68b8d043d02253df4089f268ad8639b0d0d93d9311"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose-calculations.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose-calculations.json",
+      "sha256": "df5739e9d1c3ed874602286a97130bd14f02ada5e29d8cf578fea9d05e1dc755"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/calculations.txt",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/calculations.txt",
+      "sha256": "1dfb6daf25ea4d62f29eb035d678b9546afb0e9f5ec307a2d91f521d6c0cc605"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose_arithmetic.py",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose_arithmetic.py",
+      "sha256": "d741bd797e7b0175b02811975fc9d28fabff5012ec5d9f253d6276eaf3976be0"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-evidence.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-evidence.json",
+      "sha256": "d0a82428bffef09d4c451a766fec5aaddd5e08226177b20281ea8ebd81b7322c"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure.md",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure.md",
+      "sha256": "4060c0c86a683ebf02337fecd33b3821e2ac9ae3df59e614dfee7a6222d85e82"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-result.json",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-result.json",
+      "sha256": "e0126898f13c09a2104e7aab086d58f4a4205ea3d01ab2e09e7cac2b52183338"
+    },
+    {
+      "old": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/check_closure.py",
+      "new": "evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/check_closure.py",
+      "sha256": "aefc2ee190ca923ab2d4202c993e2392a9ecb9fbc1d7f56eaa88e9048be0a5a9"
+    }
+  ]
+}

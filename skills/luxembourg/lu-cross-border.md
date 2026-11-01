@@ -1,13 +1,13 @@
 ---
 name: lu-cross-border
 description: "Luxembourg cross-border tax for individuals for tax year 2026: tax residence (fiscal domicile or habitual stay, with the six-month rule in § 14 StAnpG); non-residents taxed only on Luxembourg-source income (art. 156 LIR) and their tax classes (art. 157bis); the option to be taxed like a resident (art. 157ter: 90% of world income or under EUR 13,000 of foreign income, with up to 50 treaty-exempt working days counted); frontier workers from France, Belgium and Germany and the 34-day treaty thresholds; social security under Reg. 883/2004 (25%) and the telework framework agreement (under 50%); the impatriate regime (art. 115 no. 13b: 50% of pay exempt, capped at EUR 400,000, for up to eight years); outbound withholding; leaving Luxembourg. Trigger on: frontalier, télétravail 34 jours, non-résident Luxembourg, assimilation 157ter, impatrié, expat regime Luxembourg, moving to or leaving Luxembourg. Out of scope: luxembourg-income-tax, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax, lu-transfer-pricing."
-version: 0.1
+version: 0.2
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -263,8 +263,6 @@ expected:
 | ACD, laws passed in 2025 and 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
 
 Not yet confirmed: the text of the France and Belgium treaties themselves (the skill relies on the ACD circulars and notes, and the Belgian note dates from March 2023; no later Belgian change was listed on the ACD treaty page); whether France and Luxembourg agreed new conditions from 2025 under art. 3 of the 2022 avenant (the June 2026 circular still applies 34 days and no new avenant is listed); the text of the telework framework agreement itself and whether it was renewed or changed (read through the CCSS page and the Belgian signatory list); the deferral of the art. 38 charge for individuals moving within the EEA (no instalment rule was found in the LIR text read).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

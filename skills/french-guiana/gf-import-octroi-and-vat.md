@@ -2,13 +2,13 @@
 name: gf-import-octroi-and-vat
 description: >
   French Guiana goods-import reference for businesses and other importers using the July 2026 territorial octroi de mer tariff. Distinguishes VAT non-application from external and regional octroi, explains customs-value calculations and separates import rates from local-production rates. Includes verified tariff examples, evidence needed before claiming exemptions, and the date boundary for the revised tariff. Covers goods rather than services, and does not determine customs classification, origin preferences, valuation adjustments or every relief. This source-cited draft requires independent review and transaction-specific confirmation before a customs declaration is filed.
-version: 0.1
+version: 0.2
 jurisdiction: GF
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -59,8 +59,6 @@ Article 3 of AP-2026-47 preserves relevant exemption treatment following a simpl
 Confirm the transaction date, external column, exact code, customs value and both levies. Retain the enacted schedule and any exemption evidence with the declaration. Do not use the example as a binding classification ruling.
 
 Source-cited draft awaiting independent review. Services, income taxes, full exemption procedures, local-production liability, penalties, origin and valuation disputes are outside scope. The complete post-July amendment chain has not been independently reviewed. VAT code recodification and precise invoice wording require separate current-law verification.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: gd-social-contributions
 description: >
   Grenada National Insurance Scheme contribution reference for 2026. Covers ordinary employee and employer percentages, monthly and weekly insurable earnings ceilings, worked monthly calculations, remittance records and the distinct self-employed payment framework. Use for Grenada NIS, payroll contributions, employer insurance or self-employed NIS. It checks the 2026 rate against the published reform timetable and excludes outdated test-site examples. The scope assumes ordinary coverage has been established; retirement-age transitions, special contribution classes, benefits, irregular periods and multi-employment cases need further analysis. Official indexed text requires direct source rechecking before release.
-version: 0.1
+version: 0.2
 jurisdiction: GD
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -50,8 +50,6 @@ The ceiling arithmetic is 5,200 × 12 × 13.5% = EC$8,424. Reconcile the assessm
 ## Review controls and limits
 
 Record earnings classification, contribution period, coverage decision and payment evidence. Pensionable-age changes, employment-injury-only rates, voluntary coverage, special classes, overlapping employment and benefits remain outside this Guide. Current source access and independent accountant review are required before release. No comprehensive payroll coverage or attestation is asserted.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

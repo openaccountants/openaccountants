@@ -1,10 +1,10 @@
 ---
 name: switzerland-vat
 description: "Swiss VAT (MWST, TVA, IVA) for tax year 2026: who must register (worldwide turnover of CHF 100,000, CHF 250,000 for non-profit clubs, foreign businesses, electronic platforms since 2025), the 8.1%, 2.6% and 3.8% rates, the taxable base and input tax, the effective method and the net tax rate method (Saldosteuersatz, ten rates, CHF 5,024,000 / CHF 108,000), quarterly, semi-annual, monthly and the new annual reporting option (CHF 5,005,000), the 60-day filing and payment deadline, reverse charge on services from abroad (Bezugsteuer, CHF 10,000), import VAT and the deferral procedure, default interest of 4.0% for 2026 and penalties. Trigger on: Swiss VAT, MWST Abrechnung, Saldosteuersatz, Bezugsteuer, jährliche Abrechnung, Verzugszins MWST, ESTV, Einfuhrsteuer, decompte TVA. Out of scope: Swiss income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax), cross-border income tax (ch-cross-border), crypto (switzerland-crypto-tax)."
-version: 2.2
+version: 2.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -175,8 +175,6 @@ expected:
 | ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts; ESTV practice on input tax on business entertainment (the old version said it is deductible with documented business purpose; Art. 28-29 MWSTG were not checked for a specific rule); which document proves import tax for input tax deduction (the old version named the customs assessment, Veranlagungsverfügung; not checked in MWSTV).
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

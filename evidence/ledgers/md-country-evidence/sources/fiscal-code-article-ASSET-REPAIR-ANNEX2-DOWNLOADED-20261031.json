@@ -1,0 +1,78 @@
+{
+  "article": "ASSET-REPAIR-ANNEX2-DOWNLOADED-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2019/mo400-406md/anexa%20nr_2_704.docx",
+  "text": "Anexa nr. 2\nla Regulamentul privind\nevidența și calcularea amortizării \nmijloacelor fixe în scopuri fiscale\nDeterminarea sumei cheltuielilor pentru reparație permise la deducereși a valorii mijlocului fix ce urmează a fi constatat în conformitate cu art.261 alin.(3) \ndin Codul fiscal nr. 1163/1997 pentru perioada fiscală____________\nNr. crt.\nDenumirea mijlocului fix luat în locaţiune (arendă)\nSuma cheltuielilor (fără TVA) pentru locaţiune (arendă) suportată pe parcursul perioadei fiscale\nSuma limitei  conform art.261 alin.(11) din Codul fiscal nr. 1163/1997\nSuma cheltuielilor aferente reparaţiei mijloacelor fixe luate în locaţiune (arendă)\nSuma cheltuielilor permise spre deducere aferente reparaţiei mijloacelor fixe (suma din coloana 5, dar nu mai mare decît cea din coloana 4)\nValoarea mijlocului fix constatat în conformitate cu art.261 alin.(3) din Codul fiscalnr. 1163/1997\n1\n2\n3\n4 (3х%)\n5\n6\n7 (5-6)\n \n \n ",
+  "sha256": "abc1c3cd5e48f49bb60aec7efad2fc7bb9b5da9ab762c880a7bab88a055718c0",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-30T23:23:36.806374+00:00",
+  "format": "Unchanged official DOCX downloaded through normal browser link; XML paragraph text and table cells retained; bundled LibreOffice PDF/PNG render inspected",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/asset-repair-schedule.docx",
+  "binary_sha256": "c70d81111c9f19e646b88577f08f469321020dee81bdb35971a993b44eb18fe7",
+  "binary_size_bytes": 12187,
+  "full_binary_retained": true,
+  "table_cells": [
+    [
+      [
+        "Nr. crt.",
+        "Denumirea mijlocului fix luat în locaţiune (arendă)",
+        "Suma cheltuielilor (fără TVA) pentru locaţiune (arendă) suportată pe parcursul perioadei fiscale",
+        "Suma limitei  conform art.261 alin.(11) din Codul fiscal nr. 1163/1997",
+        "Suma cheltuielilor aferente reparaţiei mijloacelor fixe luate în locaţiune (arendă)",
+        "Suma cheltuielilor permise spre deducere aferente reparaţiei mijloacelor fixe (suma din coloana 5, dar nu mai mare decît cea din coloana 4)",
+        "Valoarea mijlocului fix constatat în conformitate cu art.261 alin.(3) din Codul fiscalnr. 1163/1997"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "4 (3х%)",
+        "5",
+        "6",
+        "7 (5-6)"
+      ],
+      [
+        " ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        " ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        " ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  ],
+  "source_points": {
+    "columns1-7": "Nr. crt.\nDenumirea mijlocului fix luat în locaţiune (arendă)\nSuma cheltuielilor (fără TVA) pentru locaţiune (arendă) suportată pe parcursul perioadei fiscale\nSuma limitei  conform art.261 alin.(11) din Codul fiscal nr. 1163/1997\nSuma cheltuielilor aferente reparaţiei mijloacelor fixe luate în locaţiune (arendă)\nSuma cheltuielilor permise spre deducere aferente reparaţiei mijloacelor fixe (suma din coloana 5, dar nu mai mare decît cea din coloana 4)\nValoarea mijlocului fix constatat în conformitate cu art.261 alin.(3) din Codul fiscalnr. 1163/1997\n1\n2\n3\n4 (3х%)\n5\n6\n7 (5-6)"
+  },
+  "selected_numeric_rows": [],
+  "rendered_pdf_relative_to_country_workspace": "validation/asset-repair-schedule-render/asset-repair-schedule.pdf",
+  "rendered_pdf_sha256": "ae8196a76b13cdbeebf2d85582a20f4d6c8e8dc320d6be4ea14190611ad826a1",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=146665&lang=ro",
+  "parent_operative_header_rechecked": "2026-10-31",
+  "parent_operative_header_exact": "HG901 din 30.12.24, MO564-568/31.12.24 art.1018; în vigoare 01.01.25",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "portal_or_submission_test": false,
+  "read_scope": "Complete rendered annex read and visually inspected, including headers, table continuations and footnotes. Current-law/regime applicability and separate unresolved implementation gaps still control."
+}

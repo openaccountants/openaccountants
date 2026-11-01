@@ -1,0 +1,2150 @@
+[
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "A-income: wages, holiday pay, board fees, specified replacement benefits and employer cash gifts",
+    "source": "tax",
+    "provision": "§60",
+    "range": [
+      693,
+      706
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "Foreign payers, statutory exceptions and doubtful A-income classification use their own rules; TAKS decides doubts",
+    "source": "tax",
+    "provision": "§§61–62",
+    "range": [
+      707,
+      711
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "Authorised settlement before payment; identity, period and amount; itemised withholding and written notice with every payment",
+    "source": "tax",
+    "provision": "§63",
+    "range": [
+      712,
+      718
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "Tax, worker/employer charges, pension and holiday schedules are separate; pension transfer is not proof of employer contractual funding",
+    "source": "pension",
+    "provision": "§2(2)–(4)",
+    "range": [
+      331,
+      334
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Health: resident eligible age18+, DKK175/month +0.70% taxable income",
+    "source": "health",
+    "provision": "§24(1)",
+    "range": [
+      415,
+      415
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Parental 0.86%, each liable A-income recipient and payer",
+    "source": "parental",
+    "provision": "§§17–19",
+    "range": [
+      414,
+      432
+    ],
+    "needle": "Gjaldið hjá"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "ALS0.6% current operating rate",
+    "source": "alsreg",
+    "provision": "§1",
+    "range": [
+      298,
+      298
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Employee ALS650000 ceiling;3900 derived at0.6%, distinct employer payer",
+    "source": "als",
+    "provision": "§§7–8",
+    "range": [
+      333,
+      350
+    ],
+    "needle": "650.000"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "AMEG3% personal taxable base and separate3% paidA-income employer base",
+    "source": "ameg",
+    "provision": "§2(1)",
+    "range": [
+      307,
+      310
+    ],
+    "needle": "3,00%"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "2026 pension12% combined eligibleA/B; annual mandatory gross150000 ceiling",
+    "source": "pension",
+    "provision": "§2(1), (4)",
+    "range": [
+      330,
+      334
+    ],
+    "needle": "150.000"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Current pension smallA contribution<30/B<500; equality not excluded",
+    "source": "pensionfeb",
+    "provision": "§1(6)",
+    "range": [
+      309,
+      310
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Pension provisional40%; finalannex30% through235000 then0.5pp/5000 bands,39.5% through330000 then40%; refundtoaccount withoutinterest",
+    "source": "pension",
+    "provision": "§12(2)",
+    "range": [
+      412,
+      412
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Final pension-tax annex endpoints and whole-contribution rates, abovezero235000at30;325000–330000at39.5;above330000at40",
+    "source": "pension",
+    "provision": "annex1",
+    "range": [
+      457,
+      522
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Occupational disease employer0.05% paidA/selfemployed0.05% prior-year taxableincome",
+    "source": "injury",
+    "provision": "§79(1)–(4)",
+    "range": [
+      627,
+      631
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Guarantee operating2/1000, not merelystatutoryceiling",
+    "source": "employer",
+    "provision": "2026 employer table",
+    "range": [
+      23,
+      36
+    ],
+    "needle": "Trygdargrunnur"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Guarantee statute maximum2/1000 and foreignFAS exclusions",
+    "source": "guarantee",
+    "provision": "§7",
+    "range": [
+      313,
+      316
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Holidaypay12%; monthlypaidleave+1.5% prior-earning-year supplement; departure route",
+    "source": "holiday",
+    "provision": "§§10–12",
+    "range": [
+      333,
+      336
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Broadcasting separateannual prior-year payrollinvoice; no percentageworkercharge",
+    "source": "broadcast",
+    "provision": "employer assessment table/invoice",
+    "range": [
+      24,
+      37
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Separate actual taxableincome/A-income/scheme exclusions, payer and annualcumulative records",
+    "source": "tax",
+    "provision": "§57 definitions",
+    "range": [
+      689,
+      690
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "HealthNordic exemption application, foreignpayment/noordinarydeduction, cessationnotice",
+    "source": "health",
+    "provision": "§24(2)–(5)",
+    "range": [
+      416,
+      419
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Healthpartyear: exempt fixedcharge month vs actual exempt-periodincome, non-period income allocatedmonths",
+    "source": "healthreg",
+    "provision": "§3",
+    "range": [
+      304,
+      313
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "HealthNordic application1Mayfollowing; evidencebyendfollowingyear and workcountry/employer/Faroeshare",
+    "source": "healthreg",
+    "provision": "§§1–2",
+    "range": [
+      298,
+      303
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "AMEG retirementexemption fromyearstartreachingage; newcomer within3years/neverprevioushome;FASownrule",
+    "source": "amegreg",
+    "provision": "§1",
+    "range": [
+      298,
+      300
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "AMEGemployer liability even if employerretirementage; foreignFASexception",
+    "source": "ameg",
+    "provision": "§2(2)",
+    "range": [
+      310,
+      310
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "ALSworker16topensionage; payerownlimb, pensions/adaptedwork applications and treatyforeigninsurance",
+    "source": "als",
+    "provision": "§7",
+    "range": [
+      333,
+      341
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "ALSbase exclusions, capped insuredperson650000; temporarypermit application fromreceipt uptooneyear",
+    "source": "als",
+    "provision": "§8–8a",
+    "range": [
+      342,
+      352
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Parentalfulltax16topensionage, payerA-incomeFaroes; fixed-homeexemption fromreceipt",
+    "source": "parental",
+    "provision": "§17",
+    "range": [
+      414,
+      420
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Parentalownexclusions and self-employed voluntaryinsurance",
+    "source": "parental",
+    "provision": "§§18–20",
+    "range": [
+      421,
+      450
+    ],
+    "needle": "§ 18."
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Occupationaldiseasefund doesnotreplace workinjuryinsurance",
+    "source": "injury",
+    "provision": "§§2–4",
+    "range": [
+      326,
+      332
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Base",
+    "claim": "Guaranteegovernmentbenefitpayerexception",
+    "source": "guarantee",
+    "provision": "§7(2)",
+    "range": [
+      313,
+      315
+    ],
+    "needle": "Almannastovan"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension",
+    "claim": "Fullyliablebelowpensionage/civilservice/studentforeignexceptions; own§3list",
+    "source": "pension",
+    "provision": "§1",
+    "range": [
+      307,
+      315
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension",
+    "claim": "Pre1954 and approvedlegacyDanish pension arrangement do not implyuniversal12% alladults",
+    "source": "pension",
+    "provision": "§17",
+    "range": [
+      447,
+      451
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension",
+    "claim": "Existing qualifying contributions, voluntarymore, statutorycap, salarytransfer and deduction/contributiontax separate",
+    "source": "pension",
+    "provision": "§2(2)–(4)",
+    "range": [
+      331,
+      334
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension",
+    "claim": "Paidcontributionsdeduction/exclusion andincome-year paymentrule",
+    "source": "pension",
+    "provision": "§12(3)–(5)",
+    "range": [
+      413,
+      415
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "12% throughout2026; permittedsalarytransfers andcurrentpayment machinery",
+    "source": "pensionreg",
+    "provision": "§1",
+    "range": [
+      298,
+      310
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Before28Feb smallcontribution below30 AandB;249×12%=29.88zero,250×12%=30due",
+    "source": "pension2020",
+    "provision": "§1(2)",
+    "range": [
+      301,
+      303
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Pre28Feb temporaryjobactualTAKSapprovedexemption, maximum60monthsaggregate",
+    "source": "pension-original",
+    "provision": "original§1(5)",
+    "range": [
+      35,
+      41
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "From28Feb: Bbelow500/Abelow30; replaceexemptionwithdeparture refund≤60months; repeatrefund10years",
+    "source": "pensionfeb",
+    "provision": "§1(2)–(6)",
+    "range": [
+      301,
+      312
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "28Feb commencement isdayafterpublication27Feb",
+    "source": "pensionfeb",
+    "provision": "§2 and publication metadata",
+    "range": [
+      331,
+      348
+    ],
+    "needle": "Henda løgtingslóg"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Pre28Febforeignemployer/NAVorTAKSsatisfactoryforeignplan; nonumeric12%floor inownthenlaw",
+    "source": "pension2021",
+    "provision": "§1(2)",
+    "range": [
+      301,
+      303
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Originalforeignplan75%continuingpayments; compulsorycontract/employerproof/nochoiceFaroeseprovider;otherincome",
+    "source": "foreign2023-original",
+    "provision": "original§1",
+    "range": [
+      18,
+      42
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "From28Feb statutoryforeign/combinedfundinglevel12% under§2(1)",
+    "source": "pensionfeb",
+    "provision": "§1(12)",
+    "range": [
+      320,
+      322
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "From25Aug explicit75% andforeign12%foreignincome orcombined12%totalincome",
+    "source": "foreignaug",
+    "provision": "§§1–2 +24Augpublication",
+    "range": [
+      298,
+      316
+    ],
+    "needle": "Stk. 5."
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Foreignplanpersonalorcollectiveapplication1Mayfollowing, contract/employercertification, electronicannualproviderstatementwithreturn",
+    "source": "foreign2023-exact",
+    "provision": "§§2–3",
+    "range": [
+      305,
+      313
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Separateclaimant30kforeignincome2700foreigncontribution: preFebnostatednumericfloor;Marchrequires3600so900qualifyingFaroestopup",
+    "source": "pensionfeb",
+    "provision": "§1(12); arithmeticderivation",
+    "range": [
+      320,
+      322
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "Bpartyearexplicitdayswithoutduty/365;100000×12%×292/365=9600;1Novfollowingpayment",
+    "source": "pension",
+    "provision": "§2(5)–(6)",
+    "range": [
+      335,
+      336
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Pension periods",
+    "claim": "13Octearly/disabilityapprovedpayoutchange; rateunchanged",
+    "source": "pensionoct",
+    "provision": "§§1–2 +publication",
+    "range": [
+      298,
+      326
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Holiday",
+    "claim": "30daysfullservice, ordinaryearning1Apr–31Maroragreedcalendar; proportionateshortservice",
+    "source": "holiday",
+    "provision": "§5",
+    "range": [
+      319,
+      321
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Holiday",
+    "claim": "Leaveyear2May–1May andcontinuousleaveperiod",
+    "source": "holiday",
+    "provision": "§§7–8",
+    "range": [
+      325,
+      330
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Holiday",
+    "claim": "Excludeholidaywages/holidaypay/supplement;taxablebenefits includedofficialorhigheragreedvaluation",
+    "source": "holiday",
+    "provision": "§§12–13",
+    "range": [
+      336,
+      339
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Holiday",
+    "claim": "Departuremonthlypaid§11(2), notdouble12%+1.5%;TAKSapprovedsettlementaccountstatutoryroute",
+    "source": "holiday",
+    "provision": "§11",
+    "range": [
+      334,
+      335
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Holiday",
+    "claim": "CurrentTAKSadminandoldfundabolition",
+    "source": "holiday",
+    "provision": "§§20a–21",
+    "range": [
+      353,
+      367
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Money/worthincomeandexemptionsmustbefact-tested",
+    "source": "tax",
+    "provision": "§25",
+    "range": [
+      434,
+      438
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "2026scheduleVATincluded",
+    "source": "values",
+    "provision": "valuationheading",
+    "range": [
+      23,
+      25
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Housing1644/m²",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      26,
+      27
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Electricity12400",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      31,
+      32
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Oil/districtheat31500",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      36,
+      38
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Otherheat14700",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      42,
+      43
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Meals47/61/81daily",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      47,
+      62
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Electric/plugin56800/65900/79700/86000weightbands",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      63,
+      85
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Other/nonplugin62400/71900/86300/96800weightbands",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      86,
+      108
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Taxi≤ten23000",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      109,
+      113
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Van60%correspondingpassengercar",
+    "source": "values",
+    "provision": "2026 column",
+    "range": [
+      114,
+      124
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Provedemployeeactualpaymenttoemployerreducesassetbenefit,floorzero;56800−5000=51800,60000paymentgives0",
+    "source": "vlsd",
+    "provision": "Fríirágóðar",
+    "range": [
+      52,
+      54
+    ],
+    "needle": "Í teimum førum"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Provedprivatecarusebelow10000kmannualstandardreducedproportionately;private/businesslog",
+    "source": "vlsd",
+    "provision": "Koyribók",
+    "range": [
+      55,
+      57
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Partyearcar4000actualprivatekm×56800/10000=22720; nosixmonthautomatic28400",
+    "source": "vlsd",
+    "provision": "Koyribók; labelledadministrativederivation",
+    "range": [
+      55,
+      57
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Employer-ownedworkcomputer/phoneexclusions",
+    "source": "tax",
+    "provision": "§29(20),(28)",
+    "range": [
+      489,
+      499
+    ],
+    "needle": "Privata nýtsluvirðið"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Foreign-home temporaryFaroeworkfreehousing/travel: stay<180days/12months;countinterruptions;additionalnotdeductedfromwages",
+    "source": "benefits",
+    "provision": "Fríferð/fríurbústaður",
+    "range": [
+      68,
+      71
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Faroese-home/foreign-worktravelownexemption",
+    "source": "tax",
+    "provision": "§29(27)",
+    "range": [
+      498,
+      498
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "EmployerreportsbenefitsandexemptpaymentsVinnugluggin31Janfollowing;exceptionpaper;employeeownreturn",
+    "source": "benefits",
+    "provision": "reporting",
+    "range": [
+      24,
+      31
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "Asettlementbeforepaymentandpayslipeachpayment",
+    "source": "tax",
+    "provision": "§63",
+    "range": [
+      712,
+      718
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "AMEGemployerinvoice20daysfromsent;alternativeauthoriseddebit",
+    "source": "amegreg",
+    "provision": "§2",
+    "range": [
+      301,
+      306
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "ALSbefore24Jul:7daysfrominvoice;DKK100each",
+    "source": "alsold",
+    "provision": "reproducedprior§3",
+    "range": [
+      449,
+      453
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "ALSfrom24Jul:currentmonth+7workingdaysfrominvoicesent;DKK100each",
+    "source": "alsjuly",
+    "provision": "§§1(3),2 +23Julpublication",
+    "range": [
+      305,
+      324
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "Parentalcontributionwhensalarypaid/received, settledbeforepayout",
+    "source": "parental",
+    "provision": "§19",
+    "range": [
+      428,
+      430
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "PensionwithAsalary,B1Novfollowing,partyearownrule",
+    "source": "pension",
+    "provision": "§2",
+    "range": [
+      331,
+      336
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "HealthNordic1Mayfollowing/evidenceendfollowingyear",
+    "source": "healthreg",
+    "provision": "§2",
+    "range": [
+      299,
+      301
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "Annualwagereport31Jan; reconcileledger/copiesforworker",
+    "source": "tax",
+    "provision": "§118",
+    "range": [
+      858,
+      869
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "HolidaypayduewithwagesandcurrentTAKSroute",
+    "source": "holiday",
+    "provision": "§10",
+    "range": [
+      333,
+      333
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "Books5yearsFYend, tracecorrections andclosure/managementnoend",
+    "source": "books",
+    "provision": "§§9–15",
+    "range": [
+      332,
+      359
+    ],
+    "needle": "5 ár"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Tax0.7%percommencedmonthstatedliabilities/recovery;intentgrosssanctionsnotinventedfixedfine",
+    "source": "tax",
+    "provision": "§135",
+    "range": [
+      1043,
+      1046
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Taxintent/grossinformationorwithholdingfailuresstatutorysanctions",
+    "source": "tax",
+    "provision": "§§139–141",
+    "range": [
+      1057,
+      1076
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "ALS1%percommencedmonth",
+    "source": "als",
+    "provision": "§9(3)",
+    "range": [
+      354,
+      354
+    ],
+    "needle": "1%"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "AMEG0.7%includingbookedinterest",
+    "source": "ameg",
+    "provision": "§2(4)",
+    "range": [
+      315,
+      315
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Health0.7%includingbookedinterest/recoverywrongexemption",
+    "source": "health",
+    "provision": "§§24(4),26",
+    "range": [
+      418,
+      426
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Injury0.7%includingbookedinterest",
+    "source": "injury",
+    "provision": "§79(4)",
+    "range": [
+      631,
+      631
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Guarantee0.7%percommencedmonthfromduedate, fineforspecifiedbreach",
+    "source": "guarantee",
+    "provision": "§7(4)",
+    "range": [
+      317,
+      317
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Guaranteestatutoryfineforfailurepay/provideinformation",
+    "source": "guarantee",
+    "provision": "§11",
+    "range": [
+      328,
+      330
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Holiday1.5%commencedmonthfromdue",
+    "source": "holiday",
+    "provision": "§16",
+    "range": [
+      342,
+      342
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Holidayfailure/prohibitedwaiverfine/legalpersonliability",
+    "source": "holiday",
+    "provision": "§22",
+    "range": [
+      370,
+      374
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Penalties",
+    "claim": "Pension20000dailyproviderreporting/administrativebreaches, recoveryseparate",
+    "source": "pension",
+    "provision": "§16",
+    "range": [
+      434,
+      436
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Crossborder",
+    "claim": "Scheme-specificforeigncoverage/FAS/pensiondifferences; noautomaticall-schemeexemption",
+    "source": "als",
+    "provision": "§§7–8",
+    "range": [
+      333,
+      352
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Crossborder",
+    "claim": "ForeignnonAincomeliabilityandNordicdomiciletestownALSbase",
+    "source": "als",
+    "provision": "§2",
+    "range": [
+      310,
+      314
+    ],
+    "needle": "c)"
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Workedexamples",
+    "claim": "Twooriginal30kmonthlyand700k/1.5mannualoaexamplespreserved; numbersareassumedinputsandderivedresults, notnewstatutoryfigures",
+    "source": "employer",
+    "provision": "2026ratetable; seecontrolsandlegalrowsabove",
+    "range": [
+      23,
+      36
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "Final pension annextoprate39.5% through330000 and40% above330000",
+    "source": "pension",
+    "provision": "annex1 upperendpoints",
+    "range": [
+      515,
+      522
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "Cash employer gifts and board remuneration A-income",
+    "source": "tax",
+    "provision": "§60(7),(10)",
+    "range": [
+      700,
+      703
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Who",
+    "claim": "Employee information eachpayment, identityperiodA-income/offsets/nontaxablebenefits",
+    "source": "tax",
+    "provision": "§63(7)",
+    "range": [
+      718,
+      718
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Rates",
+    "claim": "AMEGpersonal/employerseparate statutorybase",
+    "source": "ameg",
+    "provision": "§2(1)",
+    "range": [
+      307,
+      307
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "AMEGinvoice20days",
+    "source": "amegreg",
+    "provision": "§2(3)",
+    "range": [
+      305,
+      305
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "PensionB1Novemberfollowing",
+    "source": "pension",
+    "provision": "§2(6)",
+    "range": [
+      336,
+      336
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Deadlines",
+    "claim": "ALSold7days and100fee",
+    "source": "alsold",
+    "provision": "prior§3(2)–(3)",
+    "range": [
+      452,
+      453
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-payroll-contributions",
+    "section": "Benefits",
+    "claim": "Workphoneexclusion",
+    "source": "tax",
+    "provision": "§29(28)",
+    "range": [
+      499,
+      499
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Scope",
+    "claim": "P/FSp/Fownlimitedliability, notpreregistrationrelease",
+    "source": "company",
+    "provision": "§1",
+    "range": [
+      326,
+      327
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Period",
+    "claim": "NewAct206officialURL203;1Jan2026FYstart;priorframeworkpreservedfor2025starts;oldimplementingrulesuntilreplaced",
+    "source": "accounts",
+    "provision": "§203",
+    "range": [
+      1407,
+      1408
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Oneormorefounders/capacity/insolvencyconditions",
+    "source": "company",
+    "provision": "§24",
+    "range": [
+      444,
+      448
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "P/FSp/Fsuffix/nameconditions",
+    "source": "company",
+    "provision": "§2",
+    "range": [
+      329,
+      332
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "P/Fboard/supervisory≥3+executive;Sp/Fexecutivewithemployeerepresentationexception",
+    "source": "company",
+    "provision": "§111",
+    "range": [
+      850,
+      855
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Signedformationdocument/articles;subscriptionprices/deadlines/effect/costs;specialbenefit/noncash/auditelection",
+    "source": "company",
+    "provision": "§§25–29",
+    "range": [
+      449,
+      475
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Noncashvaluable,nofutureworkorclaimsagainstfounders;valuationindependent≤4weeksunless§38",
+    "source": "company",
+    "provision": "§§35–38",
+    "range": [
+      499,
+      520
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Formationregistrationwithin2weekssignature; paymentproofbyregistration;management/auditorselectionwithin2weeksifnotalready",
+    "source": "company",
+    "provision": "§§39–40",
+    "range": [
+      521,
+      527
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Registeredmanagement/auditorandfileridentity/evidence",
+    "source": "company",
+    "provision": "§10",
+    "range": [
+      405,
+      405
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Shareholderrecords/forms;ownerformwithformationpapers",
+    "source": "forms",
+    "provision": "Registrarformationpage",
+    "range": [
+      44,
+      49
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Underformationdesignationandjointpreregistrationresponsibility,futureeffectlimits",
+    "source": "company",
+    "provision": "§41",
+    "range": [
+      529,
+      532
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "TAKSregistration≥8daysbeforeactivity,articles/memorandum/register/form;ownsalaryAincome",
+    "source": "start",
+    "provision": "Registering/Taxation",
+    "range": [
+      25,
+      38
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "P/Fminimum500000equivalent",
+    "source": "company",
+    "provision": "§4(2)",
+    "range": [
+      338,
+      338
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "Sp/Fminimum50000equivalent",
+    "source": "company",
+    "provision": "§4(2)",
+    "range": [
+      338,
+      338
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "Cash≥25%and≥50000,proportionatepershare;P/Fpremiumfull",
+    "source": "company",
+    "provision": "§33(1)",
+    "range": [
+      488,
+      488
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "Noncashfullcapitalandpremium;ordinaryvaluation≤4weeks",
+    "source": "company",
+    "provision": "§33(1)",
+    "range": [
+      488,
+      488
+    ],
+    "needle": "Verður allur"
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "SelectedSp/Fpremiumsamefractionascapital;§40express§33incorporation;literalallpremiumcountertextvisible",
+    "source": "company",
+    "provision": "§33(1)",
+    "range": [
+      488,
+      488
+    ],
+    "needle": "Í smápartafeløgum"
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "Literal§40allpremiumpaidsambært§33;selectedspecificincorporationratherthanRegistrarholding",
+    "source": "company",
+    "provision": "§40(2)",
+    "range": [
+      524,
+      524
+    ],
+    "needle": "Um yvirkursur"
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Capital",
+    "claim": "Sp/F200000capital/100000premiumat25%:50000+25000=75000;isolatedfullpremiumalternative150000;minimum50k+20kpremium=70k",
+    "source": "company",
+    "provision": "§33arithmeticinterpretation",
+    "range": [
+      488,
+      488
+    ],
+    "needle": "Í smápartafeløgum"
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Ownership",
+    "claim": "Legal5%andcrossings5/10/15/20/25/50/90/100and1/3,2/3",
+    "source": "company",
+    "provision": "§55",
+    "range": [
+      580,
+      582
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accountsclass",
+    "claim": "Small55massets111msales50FTEtwoofthree/twoyears",
+    "source": "accounts",
+    "provision": "§7(2)(1)",
+    "range": [
+      406,
+      410
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accountsclass",
+    "claim": "Medium195m391m250;largerandclassDdistinct",
+    "source": "accounts",
+    "provision": "§7(2)(2)–(3)",
+    "range": [
+      411,
+      415
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Newoptout1.25m/2.5m/12twoofthree/twoyears",
+    "source": "accounts",
+    "provision": "§156(2)",
+    "range": [
+      1185,
+      1188
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Newextendedreview15m/30m/15twoofthree/twoyears",
+    "source": "accounts",
+    "provision": "§156(1)",
+    "range": [
+      1181,
+      1184
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Oldoptout1m/2m/12;oldextended12m/24m/15andexclusions/elections",
+    "source": "prior",
+    "provision": "§135",
+    "range": [
+      1065,
+      1074
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accountsclass",
+    "claim": "Non12monthsalesannualisation;financialinvestmentincomecombinedif≥sales;classD/groupoverrides",
+    "source": "accounts",
+    "provision": "§7(3)–(6)",
+    "range": [
+      416,
+      423
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Ownership",
+    "claim": "Shareholderregisterprompt,identity/holding/voting/acquisition/disposal/pledge;foreignidentity",
+    "source": "company",
+    "provision": "§§50–52",
+    "range": [
+      559,
+      573
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Ownership",
+    "claim": "Holder/pledgeenotification2weeks",
+    "source": "company",
+    "provision": "§53",
+    "range": [
+      574,
+      574
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Ownership",
+    "claim": "Significantowner2weeksaftercrossing;formationatlatestwithregistration;laterprompt",
+    "source": "company",
+    "provision": "§§56,58",
+    "range": [
+      587,
+      602
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "Naturalpersonultimatedirectindirectorothercontrol,nofixedimported5%UBO",
+    "source": "company",
+    "provision": "§5(30)",
+    "range": [
+      377,
+      377
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "InitialUBOnolaterthanformationregistration",
+    "source": "company",
+    "provision": "§58b",
+    "range": [
+      613,
+      613
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "Promptawareness/updates;exhaustedidentificationdailyregisteredmanagementnotinventedowner",
+    "source": "company",
+    "provision": "§58a(1)–(3)",
+    "range": [
+      604,
+      606
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "Atleastannualreviewatmanagementapprovalmeeting",
+    "source": "company",
+    "provision": "§58a(4)",
+    "range": [
+      607,
+      607
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "Evidence5yearsafterownershipends;attempts5yearsafterattempt",
+    "source": "company",
+    "provision": "§58a(5)",
+    "range": [
+      608,
+      608
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Management",
+    "claim": "Equitybelowhalfcapital:meetingwithin6monthsfromfinding/explain/proposemeasures",
+    "source": "company",
+    "provision": "§119",
+    "range": [
+      881,
+      881
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accounts",
+    "claim": "ClassBreportcomponentsandonepersonmanagementstatementexception",
+    "source": "accounts",
+    "provision": "§25",
+    "range": [
+      522,
+      522
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accounts",
+    "claim": "ClassCreportaddsequity/cashflows",
+    "source": "accounts",
+    "provision": "§80",
+    "range": [
+      756,
+      756
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "OrdinaryauditB/C/D;50moverride/foundation/holdingdisqualifications;approvedFaroeseauditor",
+    "source": "accounts",
+    "provision": "§§156–158",
+    "range": [
+      1181,
+      1200
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "FormationorAGMauditelectiondecisionnotjustsizetest",
+    "source": "company",
+    "provision": "§27",
+    "range": [
+      457,
+      462
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Companychangesordinarily2weekswithowncompaniesdeadlinecomputation",
+    "source": "company",
+    "provision": "§9",
+    "range": [
+      402,
+      404
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "AGMearlyenoughtoreceiveaccountsontime",
+    "source": "company",
+    "provision": "§88",
+    "range": [
+      732,
+      737
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "RegistrarB/C6months,D4monthsafterFYend",
+    "source": "accounts",
+    "provision": "§162",
+    "range": [
+      1217,
+      1217
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "PriorlawB/C6months,D4months",
+    "source": "prior",
+    "provision": "§138",
+    "range": [
+      1097,
+      1097
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Companytaxreturn1Julyfollowingyear;distinctRegistrar",
+    "source": "tax",
+    "provision": "§100(3)",
+    "range": [
+      799,
+      801
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Newfirstperiod≤18months;ordinary12months",
+    "source": "accounts",
+    "provision": "§18(1)–(2)",
+    "range": [
+      474,
+      475
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Yearchangenotification6monthsoldendand6monthstransitionend;classD4months",
+    "source": "accounts",
+    "provision": "§18(5)",
+    "range": [
+      481,
+      481
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Calendar2025Registrar30Jun2026/tax1Jul2026;2026Registrar30Jun2027/tax1Jul2027;ownnonworkingadjustments",
+    "source": "accounts",
+    "provision": "§162andcalendararithmetic",
+    "range": [
+      1217,
+      1217
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Accountsnonworkingdayadjustmentstatutorycomputation",
+    "source": "accounts",
+    "provision": "§180",
+    "range": [
+      1297,
+      1301
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Registrarcompliance≥8workingdays,dissolution4weekpoint",
+    "source": "accounts",
+    "provision": "§177",
+    "range": [
+      1286,
+      1288
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Eachmanager500first/total2000second/total3000third/cap3000,not5500",
+    "source": "accounts",
+    "provision": "§178",
+    "range": [
+      1289,
+      1292
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Exceptionalrelief:notblamingstaff/advisersalone",
+    "source": "accounts",
+    "provision": "§179",
+    "range": [
+      1294,
+      1295
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Old§§150–151correspondingdemand/charge",
+    "source": "prior",
+    "provision": "§§150–151",
+    "range": [
+      1159,
+      1167
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Restoration",
+    "claim": "Correctfacts/managementauditorcapital/resolution;Registrarwithin3monthsreferral;restructuringsuspension;5yearprior/finaldecisionbars",
+    "source": "company",
+    "provision": "§§231–232",
+    "range": [
+      1346,
+      1354
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Retention",
+    "claim": "Originalandcorrectedrecords,transaction/documenttraceability/reconciliation",
+    "source": "books",
+    "provision": "§§9–12",
+    "range": [
+      331,
+      345
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Retention",
+    "claim": "FiveyearsFYend/access/reproducible",
+    "source": "books",
+    "provision": "§13",
+    "range": [
+      344,
+      346
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Retention",
+    "claim": "ForeigndigitalstorageaccessinFaroes/systempassworddescription/paperexceptions",
+    "source": "books",
+    "provision": "§14",
+    "range": [
+      348,
+      356
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Retention",
+    "claim": "Closure/managementnoendretention",
+    "source": "books",
+    "provision": "§15",
+    "range": [
+      359,
+      359
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Specific independent valuation not olderthan4weeks",
+    "source": "company",
+    "provision": "§36(2)–§37",
+    "range": [
+      505,
+      507
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "Management/auditor election meeting within2weeks ifnotalready",
+    "source": "company",
+    "provision": "§39",
+    "range": [
+      521,
+      521
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Formation",
+    "claim": "P/F governingbody at least3persons",
+    "source": "company",
+    "provision": "§111(2)",
+    "range": [
+      853,
+      853
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Newextendedreview15m30m15",
+    "source": "accounts",
+    "provision": "§156(1) thresholds",
+    "range": [
+      1182,
+      1184
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Oldextendedreview12m24m15",
+    "source": "prior",
+    "provision": "§135(1) thresholds",
+    "range": [
+      1066,
+      1068
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "Oldoptout1m2m12",
+    "source": "prior",
+    "provision": "§135(2) thresholds",
+    "range": [
+      1069,
+      1072
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Ownership",
+    "claim": "Significantownership thresholds all specified percentages/fractions",
+    "source": "company",
+    "provision": "§55(1)(2)",
+    "range": [
+      582,
+      582
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "UBO",
+    "claim": "Promptupdates andexhaustedidentification fallback",
+    "source": "company",
+    "provision": "§58a(3)",
+    "range": [
+      606,
+      606
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accounts",
+    "claim": "One-person managementstatement exception",
+    "source": "accounts",
+    "provision": "§11(1)",
+    "range": [
+      437,
+      437
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Accounts",
+    "claim": "Trueandfair/accountingconsistencyandaccrualrules",
+    "source": "accounts",
+    "provision": "§§14–16",
+    "range": [
+      449,
+      473
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "New50massets mandatoryauditoverrideandfoundationexception",
+    "source": "accounts",
+    "provision": "§156(3)–(4)",
+    "range": [
+      1189,
+      1190
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Audit",
+    "claim": "ApprovedFaroeseauditor",
+    "source": "accounts",
+    "provision": "§158",
+    "range": [
+      1198,
+      1198
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Companyreturn1July following year",
+    "source": "tax",
+    "provision": "§100(3)",
+    "range": [
+      801,
+      801
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "AGM early enough for accountsreceipt",
+    "source": "company",
+    "provision": "§88(2)",
+    "range": [
+      737,
+      737
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Deadlines",
+    "claim": "Non-working-day accountsdeadline adjustment",
+    "source": "accounts",
+    "provision": "§180(5)",
+    "range": [
+      1301,
+      1301
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Demand at least8workingdays andfour-weekdissolutionpoint",
+    "source": "accounts",
+    "provision": "§177(2)–(3)",
+    "range": [
+      1287,
+      1288
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "500/total2000/total3000 eachmanager, cap3000",
+    "source": "accounts",
+    "provision": "§178(3)",
+    "range": [
+      1291,
+      1291
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Enforcement",
+    "claim": "Blamingstafforadvisers notbyitselfrelief",
+    "source": "accounts",
+    "provision": "§179(2)",
+    "range": [
+      1295,
+      1295
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Restoration",
+    "claim": "Three-monthreferral,5yearpriorbarandrestructuringsuspension",
+    "source": "company",
+    "provision": "§232(2)",
+    "range": [
+      1350,
+      1350
+    ],
+    "needle": null
+  },
+  {
+    "slug": "fo-company-registration-reporting",
+    "section": "Restoration",
+    "claim": "Finaldissolutiondecisionbarsrestoration",
+    "source": "company",
+    "provision": "§232(5)",
+    "range": [
+      1353,
+      1353
+    ],
+    "needle": null
+  }
+]

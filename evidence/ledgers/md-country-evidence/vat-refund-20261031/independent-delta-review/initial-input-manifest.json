@@ -1,0 +1,160 @@
+{
+  "head": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "inputs": [
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/README-before-map-repair.md",
+      "sha256": "895a51664aacf4196bfb8c9bd615f52be0ed0a59dc47aaa8b0b67cc0dbcb52a6",
+      "bytes": 23315
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/active-path-repair.json",
+      "sha256": "4e9a73ec3c327578f45cc94a6683513b887e40131cc573ef5cf163fcfa40d9e4",
+      "bytes": 3590
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/exact-evidence-relocations.json",
+      "sha256": "09759c36a9a143ec2cd11a820bd580d95aace07e14a42661d6dbd1f145f7f9c2",
+      "bytes": 196023
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/version-advances.json",
+      "sha256": "acb8cd1922931edf813317677f59e5b8fd5d30b14d2e90b7c6b27779d7bed518",
+      "bytes": 2810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "sha256": "37492e34d47dca0378dbde1fc51d6b3ff6679a3facba82f58819119ba913fe8f",
+      "bytes": 4522
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "sha256": "f8b104d5594a13beed783be43b5ca872133ef8e1b321dbf553b7e528377821c5",
+      "bytes": 28410
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/completion-scope-and-next-jobs.json",
+      "sha256": "0af1dcee42fa4ded116669db28a70c515a044fc763589152ab314ed9b4baa5b2",
+      "bytes": 6665
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "sha256": "9949bf4b1f22deb3e0880987db478a803590a187c9cb74fa3a98e6b27ab4c009",
+      "bytes": 3765
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/current-code-job-inventory-20261031.json",
+      "sha256": "8970d26ca9f908037221d8604f4bcf702de3a2e415385e0a839d816ea4ebf107",
+      "bytes": 48393
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/predecessor-preservation.json",
+      "sha256": "848e825ca5b063c4bc7b4e4c72af91524d5fcd5726cc935c0af83e0294f13df9",
+      "bytes": 4584
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "sha256": "dc862d38564b49bda52e12e1d57989106e6f6adfa9a156153a463bbf40b42b9c",
+      "bytes": 58594
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "sha256": "9d9b54bf1aa0453f3f37b208322693c728ac58ba20ee6c5655d04e8b4607121b",
+      "bytes": 2333
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.docx",
+      "sha256": "238a1ace8c1a1ff2b2af1a0ee78245915972263964dda3eafd1c341f5d98a34e",
+      "bytes": 32603
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.txt",
+      "sha256": "a4218e9e251870e843e62476dc026a0c27dd0e56b00c78f90c1919d50e060bba",
+      "bytes": 1852
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.docx",
+      "sha256": "f6d872d885fbb8e804f304292d5b09844fce1e2cdbf7ce9e1dae6283cff8023b",
+      "bytes": 14945
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.txt",
+      "sha256": "da885ead962ba4b449dcd55c6689639127212f42c8a5f7f8f1de9e875aa61095",
+      "bytes": 1495
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-controls.json",
+      "sha256": "017a0fe002bcef959e89df3d77ecb588001de4c06bfdaf1fd2bda941323bd3f2",
+      "bytes": 497
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.md",
+      "sha256": "0f3cf151d4cb794b01be47d4c22b042a49fcf50c7bca6d5a3dd65e7e9ac1c75b",
+      "bytes": 115845
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.writer.json",
+      "sha256": "f4363fa4b19f81078a899948c103776846b57627baa1cab3e2ccf3253108cc6a",
+      "bytes": 776936
+    },
+    {
+      "path": "skills/moldova/README.md",
+      "sha256": "24d84e6343196329d99d2a32c1f621bbe86afbe7d6c0168d4287e8af578c2499",
+      "bytes": 4523
+    },
+    {
+      "path": "skills/moldova/md-company-formation.md",
+      "sha256": "a2446f47c1ed9277f8be6492b9eb2e9527a16d8db732f0b2c0a061d7786b87f4",
+      "bytes": 56450
+    },
+    {
+      "path": "skills/moldova/md-corporate-income-tax.md",
+      "sha256": "663695efc1ad18819a604ff6059d7c5326aa101efb3973d970382154f69af917",
+      "bytes": 100915
+    },
+    {
+      "path": "skills/moldova/md-cross-border.md",
+      "sha256": "8e38b9296a7e1780424e3c3256e3554ba8fc24d00a8781b772f3d9e44e4f4dae",
+      "bytes": 62320
+    },
+    {
+      "path": "skills/moldova/md-tax-overview.md",
+      "sha256": "6f9dd87d460ebbb52d26b7d11a13539c217720cd1dd8b88083a6da7aa0a84476",
+      "bytes": 20468
+    },
+    {
+      "path": "skills/moldova/md-transfer-pricing.md",
+      "sha256": "f88ed95ace0a73175579a88c67dd6e142518fe55b541c6caec31682628930e28",
+      "bytes": 57872
+    },
+    {
+      "path": "skills/moldova/md-vat-refund.md",
+      "sha256": "c69fe5df8392018bbf5836d1346a0302987b435d1fc03fa6e52364d69f58e55d",
+      "bytes": 19014
+    },
+    {
+      "path": "skills/moldova/moldova-income-tax.md",
+      "sha256": "c6f49b7cc71ccc66540796f7f6779973fe3d7eeef83b277ce2eaeac9d29ea789",
+      "bytes": 92660
+    },
+    {
+      "path": "skills/moldova/moldova-payroll.md",
+      "sha256": "054132cd7eca0990005713fe447045da8188e52a895feeb545711de94e4e0555",
+      "bytes": 78713
+    },
+    {
+      "path": "skills/moldova/moldova-social-contributions.md",
+      "sha256": "e453dc373ce2b796cd6e7c1a187ac9b813a8f86bfd42f8e5c7b5130970cd2b3f",
+      "bytes": 95205
+    },
+    {
+      "path": "skills/moldova/moldova-tax-optimization.md",
+      "sha256": "a6b32149732b5a161bc3080e1cbe0d6ad7a99c3024c84657d6688d73d2b36751",
+      "bytes": 34415
+    },
+    {
+      "path": "skills/moldova/moldova-vat.md",
+      "sha256": "0ef637780aa7d2c2595c59403ceab27b04ce46be870aafaf16a453141fe8afe7",
+      "bytes": 51348
+    }
+  ]
+}

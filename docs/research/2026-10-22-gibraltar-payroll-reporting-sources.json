@@ -1,0 +1,60 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers",
+      "locators": "Employer registration, employee registration, termination, obligations;2025/26 deadline"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf",
+      "locators": "Pages7\u201311 identity/classes and split entries;13\u201314 payment reconciliation;16XML submission;17nil return"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf",
+      "sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
+      "locators": "Regulations2\u20138 pages3\u20136;11page7;13\u201313Apage9;16\u201317pages10\u201311",
+      "version_check": "Official parent page labels1July2023 current on22October2026"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+      "sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
+      "locators": "Single page: all class rows and monthly/weekly/annual columns",
+      "verification": "PDF rendered and visually inspected to resolve merged cells and class groupings"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf",
+      "sha256": "c0d17df7191c58288a98b452f8c1ad2456d8dcbbb9e504c2fbf4d21499a04368",
+      "locators": "Sections5 and7, printed pages12\u201314; official current version1July2025"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
+      "sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
+      "locators": "Socialinsurance11.1\u201311.2, printedpages9\u201310; dated2025/26 guidance"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf",
+      "sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
+      "locators": "Regulations4(7),4A\u20134C printedpages7\u20138;17A printedpages16\u201317",
+      "version": "Parent current-version date1July2015; consolidation includes2017/156 retrospective amendment"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf",
+      "sha256": "820c1ee74ebed75fa6b0110f66d6a340e5d7a6821867c4659b52159a74b9fdd0",
+      "locators": "Regulations3\u20135 pages2\u20135;7\u201312 pages6\u20137; read with SIregulations4(1),5\u20136"
+    },
+    {
+      "title": "Daily Part1 current-linked codes19\u201336",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf",
+      "as_of": "2026-10-22",
+      "sha256": "3f38b2e1cf268026f811831edb5e216752281ebad51943c3bdb4bbd1650e453d",
+      "locators": "p1 code24 at35=.96; grey row31 and footer"
+    },
+    {
+      "title": "Monthly Part1 current-linked codes19\u201336",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf",
+      "as_of": "2026-10-22",
+      "sha256": "d5bf88e8144c1c321bfe7082c87a393a895a17cffb818b7c56df0887fdc06b53",
+      "locators": "p14 row1623\u20131624 code35=125.89; SI162.35/243.65"
+    }
+  ]
+}

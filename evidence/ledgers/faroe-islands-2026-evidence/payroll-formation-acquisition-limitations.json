@@ -1,0 +1,18 @@
+[
+  {
+    "receipt": "acquisition.json",
+    "id": "foreign2023",
+    "url": "https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum",
+    "transport_acquired": true,
+    "operative_source": false,
+    "reason": "Wrong truncated slug returned Law Not Found, not a regulation. Two probes shared a scratch filename; first response body no longer independently pinned by that path. Neither used as a legal source. Exact current and original sources are distinct foreign2023-exact and foreign2023-original."
+  },
+  {
+    "receipt": "extra-acquisition.json",
+    "id": "foreign2023",
+    "url": "https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara-og",
+    "transport_acquired": true,
+    "operative_source": false,
+    "reason": "Wrong truncated slug returned Law Not Found, not a regulation. Two probes shared a scratch filename; first response body no longer independently pinned by that path. Neither used as a legal source. Exact current and original sources are distinct foreign2023-exact and foreign2023-original."
+  }
+]

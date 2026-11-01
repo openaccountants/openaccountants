@@ -1,0 +1,23 @@
+{
+  "guide_version": "0.11",
+  "guide_sha256": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+  "full_ledger_rows": 74,
+  "accepted_rows_exact": 60,
+  "accepted_proofs_exact": 87,
+  "new_rows": 14,
+  "new_source_proofs": 6,
+  "new_quote_snippets_verified": 57,
+  "original_paragraph_destinations": 90,
+  "original_paragraphs_exact": 88,
+  "named_gap_reconciliations": 2,
+  "accepted_manifest_other_files_exact": 39,
+  "calculation_files": 29,
+  "calculation_controls": 65,
+  "calculation_exit": 0,
+  "schema_guides": 18,
+  "schema_errors": 0,
+  "metadata_exit": 0,
+  "independent_new_material_review": false,
+  "published": false,
+  "country_complete": false
+}

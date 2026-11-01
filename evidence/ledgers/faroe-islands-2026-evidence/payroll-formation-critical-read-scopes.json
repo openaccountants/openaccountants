@@ -1,0 +1,88 @@
+{
+  "read_on": "2026-10-28",
+  "scope": "Selected complete critical native-LF passages plus pension-original PDF page1 left-column \u00a71(5) and foreign2023-original PDF page1 both columns visually read. Figure-ledger rows additionally identify selected short quotes, not whole intervening ranges. No whole-statute read claim.",
+  "native_LF": {
+    "vlsd": [
+      [
+        51,
+        57
+      ]
+    ],
+    "values": [
+      [
+        23,
+        123
+      ]
+    ],
+    "benefits": [
+      [
+        20,
+        81
+      ]
+    ],
+    "pension": [
+      [
+        307,
+        361
+      ],
+      [
+        411,
+        420
+      ],
+      [
+        434,
+        451
+      ],
+      [
+        457,
+        522
+      ]
+    ],
+    "pensionfeb": [
+      [
+        299,
+        345
+      ]
+    ],
+    "pension2020": [
+      [
+        294,
+        320
+      ]
+    ],
+    "pension2021": [
+      [
+        299,
+        310
+      ]
+    ],
+    "foreignaug": [
+      [
+        298,
+        315
+      ]
+    ],
+    "foreign2023-exact": [
+      [
+        294,
+        320
+      ]
+    ],
+    "pensionreg": [
+      [
+        294,
+        345
+      ]
+    ],
+    "company": [
+      [
+        488,
+        488
+      ],
+      [
+        521,
+        527
+      ]
+    ]
+  }
+}

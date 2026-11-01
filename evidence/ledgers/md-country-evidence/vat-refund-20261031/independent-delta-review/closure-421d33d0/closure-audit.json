@@ -1,0 +1,1142 @@
+{
+  "head": "421d33d0b4bdcedfcd09ea861dbf48b341a247e1",
+  "closure_manifest_sha256": "c2bac8bba6a407b3a97d2c8fcea98bfd5bd445c4bae3112d7786a745a83e8275",
+  "manifest_inputs": 715,
+  "all185quote_and_context_bindings": [
+    {
+      "id": "MD-VATR-001",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-002",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-003",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-004",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-005",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-006",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-007",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-008",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-009",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-010",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-011",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-012",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-013",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-014",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-015",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-016",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-017",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-018",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-019",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-020",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-021",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-022",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-023",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-024",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-025",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-026",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-027",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-028",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-029",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-030",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-031",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-032",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-033",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-034",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-035",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-036",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-037",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-038",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-039",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-040",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-041",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-042",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-043",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-044",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-045",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-046",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-047",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-048",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-049",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-050",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-051",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-052",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-053",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-054",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-055",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-056",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-057",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-058",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-059",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-060",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-061",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-062",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-063",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-064",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-065",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-066",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-067",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-068",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-069",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-070",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-071",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-072",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-073",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-074",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-075",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-076",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-077",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-078",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-079",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-080",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-081",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-082",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-083",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-084",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-085",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-086",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-087",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-088",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-089",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-090",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-091",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-092",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-093",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-094",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-095",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-096",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-097",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-098",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-099",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-100",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-101",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-102",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-103",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-104",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-105",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-106",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-107",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-108",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-109",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-110",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-111",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-112",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-113",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-114",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-115",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-116",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-117",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-118",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-119",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-120",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-121",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-122",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-123",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-124",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-125",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-126",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-127",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-128",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-129",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-130",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-131",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-132",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-133",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-134",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-135",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-136",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-137",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-138",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-139",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-140",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-141",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-142",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-143",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-144",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-145",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-146",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-147",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-148",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-149",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-150",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-151",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-152",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-153",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-154",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-155",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-156",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-157",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-158",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-159",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-160",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-161",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-162",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-163",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-164",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-165",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-166",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-167",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-168",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-169",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-170",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-171",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-172",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-173",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-174",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-175",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-176",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-177",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-178",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-179",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-180",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-181",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-182",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-183",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-184",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    },
+    {
+      "id": "MD-VATR-185",
+      "quote_in_source": true,
+      "context_hash_match": true,
+      "status": "PASS; original184 semantic review inherited unchanged;185 independently checked against current repeal text"
+    }
+  ],
+  "original184rows_identical": true,
+  "companion_VAT242units_identical": true,
+  "ten_other_Guides_byte_exact": [
+    "skills/moldova/md-company-formation.md",
+    "skills/moldova/md-corporate-income-tax.md",
+    "skills/moldova/md-cross-border.md",
+    "skills/moldova/md-tax-overview.md",
+    "skills/moldova/md-transfer-pricing.md",
+    "skills/moldova/moldova-income-tax.md",
+    "skills/moldova/moldova-payroll.md",
+    "skills/moldova/moldova-social-contributions.md",
+    "skills/moldova/moldova-tax-optimization.md",
+    "skills/moldova/moldova-vat.md"
+  ],
+  "initial_review7files_byte_exact": true,
+  "original5input_snapshots_byte_exact": true,
+  "all669historicalfiles_hash_exact": true,
+  "initial31inputs_except5repair_files_unchanged": true,
+  "intake_grouping": {
+    "old_questions": 7,
+    "new_questions": 6,
+    "all_original_facts_preserved": true
+  },
+  "new_examples_byte_exact": true,
+  "four_findings_resolved": true
+}

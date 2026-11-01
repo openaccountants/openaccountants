@@ -2,13 +2,13 @@
 name: vc-vat
 description: >
   Saint Vincent and the Grenadines VAT reference checked for 2026. Covers the current administrative rates, registration scope, accommodation rate and monthly return and payment deadline. Includes tax-exclusive and tax-inclusive computations and a framework for reviewing sales classifications. Uses the current Inland Revenue tax page while distinguishing it from the older published VAT Act, whose amendment chain remains incomplete. Use after the supply’s taxable status and value are established. Does not assume all small hotels or public entertainment promoters are outside registration, or that exemption equals zero rating. Independent accountant review and further statutory verification remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: VC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -47,8 +47,6 @@ Suggested monthly controls: reconcile sales by rate to invoices, identify credit
 ## Source status and remaining work
 
 The [official VAT Act PDF](https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf) was downloaded, but its opening pages show the 2009 revised issue and only early amendments. It is not a current consolidated rate authority. The rate and filing statements above rely on current IRD administrative guidance, pending reconciliation of later legislation. The exact threshold tests, input credits, exemptions, import rules, records, penalties and other operational provisions need further statutory work. Independent accountant review is pending; this is not comprehensive VAT coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

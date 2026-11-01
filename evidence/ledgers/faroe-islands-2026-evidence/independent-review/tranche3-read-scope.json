@@ -1,0 +1,117 @@
+{
+  "actual_Guide_read": "Earlier complete PIT body plus current complete diff and all56 prepared rows. Oversized initial row outputs truncated; subsequent bounded rows19\u201326,27\u201340,41\u201356 completed gaps. Earlier rows1\u201318 visible in full.",
+  "actual_new_selected_native_LF": {
+    "tax": [
+      [
+        365,
+        383
+      ],
+      [
+        636,
+        657
+      ],
+      [
+        689,
+        711
+      ],
+      [
+        734,
+        774
+      ],
+      [
+        452,
+        461
+      ],
+      [
+        1043,
+        1046
+      ]
+    ],
+    "consumption": [
+      [
+        298,
+        315
+      ]
+    ],
+    "spouse": [
+      [
+        20,
+        36
+      ]
+    ],
+    "national": [
+      [
+        20,
+        30
+      ]
+    ],
+    "support": [
+      [
+        297,
+        333
+      ],
+      [
+        360,
+        364
+      ]
+    ],
+    "rate": [
+      [
+        312,
+        318
+      ]
+    ],
+    "rent": [
+      [
+        20,
+        32
+      ]
+    ],
+    "returns": [
+      [
+        23,
+        58
+      ]
+    ],
+    "child": [
+      [
+        23,
+        55
+      ]
+    ],
+    "residence": [
+      [
+        43,
+        70
+      ]
+    ],
+    "capital": [
+      [
+        386,
+        404
+      ]
+    ],
+    "municipal": [
+      [
+        20,
+        68
+      ]
+    ],
+    "calculator-180days-150000.ax.txt": [
+      [
+        1,
+        210
+      ]
+    ],
+    "calculator-365days-150000.ax.txt": [
+      [
+        85,
+        185
+      ]
+    ]
+  },
+  "prior_actual_read_reuse": "Same reader hashes: original source-read-ledger.json plus tranche1/2 scopes, including Tax24/31\u201333a/46\u201347/100\u2013105/139\u2013141/154, full selected church11\u201315 and audit2191\u20132330+printedp45 visual. 2024 audit is administration description, not2026rate source.",
+  "visual": "Actually inspected retained root180day screenshot this phase; inspected prior church printedp45 earlier. No own UI replay.",
+  "F-L04": "Original PIT012 heading-only anchor identified; root appended actual retained2026table LF25\u201330 in same source cell. All six rows actually read and exact quote checked. Guide unchanged.",
+  "unread_scope": "Complete acquired source bodies outside selected ranges; no actual taxpayer or portal filing; future metadata packaging and README successor await separate bounded checks."
+}

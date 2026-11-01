@@ -1,0 +1,263 @@
+[
+  {
+    "id": "fo-transfer-pricing-001",
+    "lf": 30,
+    "section": "## Who this applies to",
+    "wording": "Under Tax Act §37a, covered relationships include foreign control, control of legal persons, common-group entities and foreign/Faroese permanent establishments. Control generally requires **more than 50%** of capital or votes; indirect holdings, related persons and joint-control agreements matter. Denmark and Greenland count as foreign jurisdictions. Section 118a separately requires controlled-transaction disclosure, including domestic relationships. Test both provisions rather than assuming identical wording. [Current Tax Act, §§37a and 118a][law]",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF593: “§ 37 a. Skattskyldug, sum”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF870: “§ 118 a. Skattskyldug,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-002",
+    "lf": 32,
+    "section": "## Who this applies to",
+    "wording": "This Guide addresses pricing and documentation. It includes the statutory thin-capitalisation screen below. PE existence, corporate residence, country-by-country reporting and treaty relief require their separate analyses.",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  },
+  {
+    "id": "fo-transfer-pricing-003",
+    "lf": 36,
+    "section": "## Rates, bands and thresholds",
+    "wording": "These are documentation thresholds, not tax rates.",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  },
+  {
+    "id": "fo-transfer-pricing-004",
+    "lf": 40,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| General capital/vote control threshold | More than 50% | 2026; [Tax Act §37a(2)][law] |",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF599: “meira enn 50% av partapeninginum ella innskotspeninginum ella hava ræði á meira enn 50% av atkvøðunum í felagnum.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-005",
+    "lf": 41,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Documentation-exemption balance sheet total | DKK 36 million | 2026; two consecutive financial years; [Tax Act §118a(6)][law] |",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF881: “36 mió. kr.,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-006",
+    "lf": 42,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Documentation-exemption net turnover | DKK 72 million | 2026; same two-year test; [Tax Act §118a(6)][law] |",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF882: “72 mió. kr. og”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-007",
+    "lf": 43,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Documentation-exemption average full-time employees | 50 | 2026; same two-year test; [Tax Act §118a(6)][law] |",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF883: “50 fulltíðarsett starvsfólk í meðal í roknskaparárinum, skulu hvørki gera ella goyma slík skjalprógv, sum ásett í stk.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-008",
+    "lf": 44,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Thin-capitalisation debt/equity boundary | Greater than 4:1 | 2026; [Tax Act §37b(1)][law] |",
+    "sources": "[tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF605: “4:1,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-009",
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Related-party contributed equity permanence | At least two years to count under the stated rule | 2026; [Tax Act §37b(3)][law] |",
+    "sources": "[tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF608: “2 ár.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-010",
+    "lf": 47,
+    "section": "## Rates, bands and thresholds",
+    "wording": "For the §118a(6) exemption, assess the taxpayer alone or together with its group: at each of two consecutive year-ends, at least two limits must not be exceeded. TAKS retains power to demand documentation in special cases. The exemption concerns preparation/retention under subsection 4, not the separate disclosure requirement. [2018 amendment, §1(11), effective 1 January 2019][amendment]; [current §118a(6)][law].",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF880: “tveimum fylgjandi roknskaparárum, við roknskaparenda ikki fara upp um tvinnar av hesum ásetingum:”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF883: “Tó kann TAKS í serligum førum áleggja hesum feløgum at gera og goyma slík skjalprógv.”; Act191/2018 §1(11), actual webLF405–412, “í tveimum fylgjandi roknskaparárum”; §2LF488–489, “kemur í gildi 1. januar 2019”. https://logir.fo/Logtingslog/191-fra-21-12-2018-um-broyting-i-logtingslog-um-landsskatt-og-kommunuskatt-Skattalogin",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-011",
+    "lf": 51,
+    "section": "## The base",
+    "wording": "Use independent-party prices and terms for covered transactions. Keep the ownership chart and voting agreements distinct: multiplication of economic ownership does not establish voting control. [Tax Act §37a][law]",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF593: “§ 37 a. Skattskyldug, sum”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-012",
+    "lf": 53,
+    "section": "## The base",
+    "wording": "TAKS's older guidance recommends a transaction inventory covering goods, services, financing, intangibles and other economic dealings. Document functions, assets, risks, contracts and comparables; explain the selected method for each transaction type. Its methods include CUP, resale price, cost plus, TNMM and profit split. A single method is not automatically suitable throughout a group. Its DKK 500,000 discussion is **not a blanket exemption for smaller dealings**. [TAKS guidance, pages 8–13][guidance]",
+    "sources": "[TAKS2017 original English guidance](https://taks-2.cdn.fo/savn/2009/171027-transfer-pricing-guidelines.pdf?s=8fH4hUHIJNGzb9vHkqvE-ZUgNzk), actual webLF326–376, PDFpp12–13; exact quotes “transactions exceeding 500,000” / “not to say that individuals and enterprises should not keep documentation”; methodsLF365–370 “CUP method”, “Resale method”, “Cost plus method”, “Transactional net margin method”, “Profit split method”. Current duties cross-checkedTax118a.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-013",
+    "lf": 55,
+    "section": "## The base",
+    "wording": "Practical workpaper: reconcile each counterparty total to the ledger, identify the pricing evidence available when the transaction occurred, and record why any proposed adjustment follows from that evidence. An illustrative markup is never a safe harbour. The documentation must support an assessment of arm's-length terms, not merely list invoices. [Tax Act §118a(4)][law]",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF878: “Stk. 4. Tey, sum eru undir skyldu at lata inn sjálvuppgávu, skulu fáa til vega og goyma skrivligt”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-014",
+    "lf": 59,
+    "section": "### Separate thin-capitalisation calculation",
+    "wording": "Tax Act §37b applies where a §1 company has debt to a §118a(1) related party and its year-end debt/equity ratio exceeds 4:1. Deny interest and exchange-loss deductions on the controlled-debt portion exceeding that boundary, unless the company proves comparable financing could be obtained between independent parties. A pricing study supporting the interest rate alone does not establish that financing-volume exception. Third-party debt guaranteed directly or indirectly by the specified owners or group is treated as controlled debt. Exactly 4:1 does not exceed the ratio test. [§37b(1)][law]",
+    "sources": "[tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF605: “4:1,”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF606: “Lán frá triðjamanni, sum tann í § 118 a, stk. 1 nevndi eigaraskari ella feløg í samtaki við”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF606: “Frádráttaravmarkingin fellur burtur, um felagið sannar, at líknandi fígging kann fáast til vega millum óheftar partar.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-015",
+    "lf": 61,
+    "section": "### Separate thin-capitalisation calculation",
+    "wording": "Use year-end **market value** of the statutory financial-claim and convertible debt. Equity is market value of assets less that debt; related-party equity contributions count only to the extent they remain for at least two years. Do not substitute accounting net assets without this reconciliation. For a simple positive-equity case where all relevant debt is controlled, identify excess debt as max(0, debt − 4 × equity), then trace the interest and exchange losses actually attributable to that excess. Mixed borrowing, different rates, zero/negative equity and valuation disputes need a supported allocation beyond that simple formula. Disallowed exchange losses can offset later exchange gains on the same loan under §37b(1); do not infer a corresponding general carryforward for disallowed interest. [§37b(1)–(3)][law]",
+    "sources": "[tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF607: “kursvirðið við inntøkuársins enda.”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF608: “2 ár.”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF606: “Kurstap kann tó dragast frá í kursvinningi upp á sama lán tey eftirfylgjandi inntøkuárini. Lán frá triðjamanni, sum”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF870: “§ 118 a. Skattskyldug,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-016",
+    "lf": 63,
+    "section": "### Separate thin-capitalisation calculation",
+    "wording": "Apply §37b(4)'s combined asset/debt calculation where companies fall under the statutory common control: eliminate participating-company shares and intercompany claims/debts as directed. The rule also applies to foreign-company Faroese PEs, using only connected PE assets/debts under subsection 6. The detailed ownership/family and voting provisions in subsection 5 control the group perimeter. Retain the market-value and two-year capital evidence with the financing comparables. [§37b(4)–(6)][law]",
+    "sources": "[tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF609: “Stk. 4. Eru fleiri feløg í samtaki undir ræði, sbr. stk. 5, verða reglurnar í stk. 1-3 samlað”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF610: “Stk. 5. Við feløg í samtaki verður skilt:”; [tax §37 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF602–624; exact anchor LF624: “Stk. 6. Stk. 1-4 eru samsvarandi galdandi fyri partafeløg og onnur feløg, sum hava heimstað uttanlands, í tann”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-017",
+    "lf": 67,
+    "section": "## Deadlines and filing",
+    "wording": "Disclose transaction type and volume on the tax return. Required written documentation must reach TAKS within **60 days of its request**. [§118a(1), (4)][law]",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF875: “slag og vav á handilsligu ella fíggjarligu viðurskiftum sínum við áðurnevndu likamligu og løgfrøðiligu persónar og føstu rakstrarstaðir.”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF878: “60 dagar eftir áheitanina. Tilfarið skal vera soleiðis háttað, at tað kann vera grundarlag fyri einari meting av,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-018",
+    "lf": 69,
+    "section": "## Deadlines and filing",
+    "wording": "TAKS's company-return guidance gives **1 July** as the ordinary return deadline. Accounts accompany the return and must be submitted through Borgaragluggin. A justified extension requires application; the published outer limit is **15 August**. Preserve the actual extension decision. [TAKS tax returns][returns]",
+    "sources": "[tax §100](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF799–804; exact anchor LF801: “1. juli. Sjálvuppgávan er roknað fyri at vera innlatin rættstundis, tá ið hon í seinasta lagi nevnda dag”; [tax §103](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF810–812; exact anchor LF810: “rakstrarroknskap og fíggjarstøðu í byrjan og enda rakstrarársins, sum nærri ásett í § 103 a. Landsstýrismaðurin í skattamálum”; [tax §105](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF817–819; exact anchor LF817: “15. august í álíkningarárinum.”; online channel is earlier25October operational guidance, not a tested submission.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-019",
+    "lf": 71,
+    "section": "## Deadlines and filing",
+    "wording": "Do not substitute the Danish documentation timetable. Retrieve the current Faroese return and appendices for the relevant filing year; the 2017 PDF's form identifier is historical.",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF870: “§ 118 a. Skattskyldug,”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-020",
+    "lf": 75,
+    "section": "## Penalties and interest",
+    "wording": "Missing required documentation permits estimated assessment under §118a(5). That subsection also requires approval from Stýrið before the tax authority makes an arm’s-length income adjustment. Tax Act §141(1)(3) provides a fine for intentional or grossly negligent failure to supply information required by §§118–124; the provision states no fixed amount. Evasion intent or other aggravating circumstances can raise punishment to detention or imprisonment up to two years under §141(2). False/misleading information used for tax assessment/control has separate §§139–140 exposure. Do not describe estimated assessment as the only consequence. [Tax Act §§139–141][law]",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF879: “Stk. 5. Um skattskyldugi ikki hevur fingið til vega skjalprógv, sum ásett í stk. 4, verður álíkningin fyri”; [tax §141](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1072–1076; exact anchor LF1075: “3) ikki veitir teir upplýsingar, sum tilskilaðir eru í §§ 118-124.”; [tax §141](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1072–1076; exact anchor LF1076: “2 ár.”; [tax §139](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1057–1058; exact anchor LF1057: “§ 139. Tann persónur, sum við tí í hyggju at sleppa undan at gjalda skatt til tað almenna”; [tax §140](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1071–1071; exact anchor LF1071: “§ 140. Á sama hátt sum tilskilað í § 139 verður tann persónur revsaður, sum við vilja ella”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-021",
+    "lf": 77,
+    "section": "## Penalties and interest",
+    "wording": "Ordinary company late-payment interest is 0.7% per commenced month under §81(2), subject to §146's separate under-assessment rule, including its specified 12% annual company interest. These are not flat TP-documentation fines. The actual assessment and offence facts determine the applicable route. [Tax Act §§81, 146][law] [§118a(5)][law]",
+    "sources": "[tax §81](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF775–777; exact anchor LF776: “0,7% fyri hvønn byrjaðan mánað frá gjalddegnum, sbr. tó ásetingina í 146. §, 1. stk.”; [tax §146](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1088–1090; exact anchor LF1088: “12% p.a. í rentu frá tí, at skattaárið, sum kravið er galdandi fyri, gekk út.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-022",
+    "lf": 81,
+    "section": "## Cross-border points",
+    "wording": "Evaluate the relevant treaty and any corresponding-adjustment procedure separately. The older English guidance is useful for analytical examples but predates the 2019 documentation exemption. It cannot establish current filing obligations on its own. The separate [CbCR Guide](fo-country-by-country-reporting.md) applies its own group-revenue, notification and exchange tests; a documentation exemption here does not establish a CbCR exemption.",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  },
+  {
+    "id": "fo-transfer-pricing-023",
+    "lf": 83,
+    "section": "## Cross-border points",
+    "wording": "Tax Act §37a(4) permits avoidance of specified secondary consequences by undertaking payment on the corrected terms, subject to its foreign-authority taxation condition in the stated cross-border cases. Preserve actual acceptance/payment and foreign treatment; do not treat a journal entry alone as treaty corresponding relief. Ordinary amendment limits for §§37a, 37b and 118a matters are five years under Tax Administration Act §8, with different start points for authority action and taxpayer requests. Treaty mutual-agreement deadlines and exceptional reopening need their own review. [Tax Act §37a(4)][law]; [Tax Administration Act §§8–9][admin]",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF601: “Stk. 4. Í sambandi við, at álíkningin av tí skattskyldugu inntøkuni verður broytt, sambært stk. 1, kann skattskyldugi”; [admin §8](https://logir.fo/Logtingslog/61-fra-02-05-2022-um-fyrisiting-av-skatti-tolli-og-avgjaldi), reader LF327–328; exact anchor LF327: “5 ár. Er freistin fyri at lata sjálvuppgávu inn longd, sbrt. § 105 í løgtingslóg um landsskatt og”; [admin §9](https://logir.fo/Logtingslog/61-fra-02-05-2022-um-fyrisiting-av-skatti-tolli-og-avgjaldi), reader LF329–338; exact anchor LF329: “§ 9. Ásetingin í § 8 er ikki galdandi í niðanfyri nevndu førum:”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-transfer-pricing-024",
+    "lf": 89,
+    "section": "### 1. Evidence-supported cost plus",
+    "wording": "Assume the reviewer establishes that DKK 800,000 is the appropriate cost base and independent comparables support a 6% markup for these services. The resulting charge is DKK 848,000. An actual charge of DKK 820,000 leaves DKK 28,000 to investigate; this illustration does not itself authorise a tax adjustment.",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF593: “§ 37 a. Skattskyldug, sum”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-transfer-pricing-025",
+    "lf": 91,
+    "section": "### 1. Evidence-supported cost plus",
+    "wording": "```oa-check\nname: Faroese services illustrative cost-plus reconciliation\ninputs:\n  cost: 800000\n  markup: 0.06\n  actual: 820000\nsteps:\n  supported_charge: cost * (1 + markup)\n  difference: supported_charge - actual\nexpected:\n  supported_charge: 848000\n  difference: 28000\n```",
+    "sources": "[tax §37 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF593–601; exact anchor LF593: “§ 37 a. Skattskyldug, sum”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-transfer-pricing-026",
+    "lf": 107,
+    "section": "### 2. Documentation size boundary",
+    "wording": "Assume the consolidated figures are identical in both relevant years: balance sheet DKK 36 million, turnover DKK 73 million and average employees 50. Two limits are met at equality; turnover exceeds its limit. Subject to a special TAKS demand, the subsection 4 documentation exemption applies. Disclosure and arm's-length pricing still need their own assessment. If employees instead average 51 in either year, only one limit is met for that year, so this two-year exemption test fails. [§118a(6), enacted by the 2018 amendment][amendment]",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF881: “36 mió. kr.,”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF882: “72 mió. kr. og”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF883: “50 fulltíðarsett starvsfólk í meðal í roknskaparárinum, skulu hvørki gera ella goyma slík skjalprógv, sum ásett í stk.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-transfer-pricing-027",
+    "lf": 109,
+    "section": "### 2. Documentation size boundary",
+    "wording": "```oa-check\nname: Faroese documentation threshold margins\ninputs:\n  assets: 36000000\n  turnover: 73000000\n  employees: 50\nsteps:\n  asset_margin: 36000000 - assets\n  turnover_margin: 72000000 - turnover\n  employee_margin: 50 - employees\n  alternative_employee_margin: 50 - 51\nexpected:\n  asset_margin: 0\n  turnover_margin: -1000000\n  employee_margin: 0\n  alternative_employee_margin: -1\n```",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF881: “36 mió. kr.,”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF882: “72 mió. kr. og”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF883: “50 fulltíðarsett starvsfólk í meðal í roknskaparárinum, skulu hvørki gera ella goyma slík skjalprógv, sum ásett í stk.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-transfer-pricing-028",
+    "lf": 127,
+    "section": "### 2. Documentation size boundary",
+    "wording": "The checks recompute arithmetic; the legal conclusions require the stated facts and review.",
+    "sources": "[tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF881: “36 mió. kr.,”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF882: “72 mió. kr. og”; [tax §118 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF870–883; exact anchor LF883: “50 fulltíðarsett starvsfólk í meðal í roknskaparárinum, skulu hvørki gera ella goyma slík skjalprógv, sum ásett í stk.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-transfer-pricing-029",
+    "lf": 131,
+    "section": "## Ask the client first",
+    "wording": "- Who owns capital and votes, directly, indirectly and under voting agreements?\n- Which related parties and PEs transact, where are they resident, and what are the ledger totals?\n- What are the standalone/group figures for each of the two relevant years?\n- Has TAKS requested documentation, and when was that request received?\n- What evidence supports the pricing method and actual transaction terms?",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  }
+]
