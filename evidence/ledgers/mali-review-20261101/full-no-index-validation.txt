@@ -1,0 +1,16 @@
+$ python3 scripts/validate-guides.py --no-index-check
+exit_code: 0
+checked 7 guides (3 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: 4 guides missing `a `## Sources` section with a URL (tax skills)`
+WARN: 6 guides fail check (a) tax_year_current
+WARN: 6 guides fail check (b) sources_read_dates
+WARN: 6 guides fail check (c) rates_rows_sourced
+WARN: 6 guides fail check (d) canonical_headings
+WARN: 6 guides fail check (e) two_oa_checks
+WARN: 6 guides fail check (f) version_numeric
+WARN: 6 guides fail check (h) no_em_dash
+WARN: 6 guides fail check (i) not_yet_confirmed
+WARN: 0 same-job groups, see skills/DUPLICATES.md
+
+validation passed (10 warning group(s))

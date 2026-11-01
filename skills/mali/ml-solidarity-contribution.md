@@ -8,48 +8,48 @@ tax_year: 2025
 tax_year_notes: "Enacted 2025 source baseline only; 2026 application is unverified pending enacted fiscal Annex U and later-amendment checks."
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 ---
 
-# Mali solidarity contribution source-baseline draft v0.1
+# Mali solidarity contribution source-baseline draft v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**2026 application is unverified.** The enacted 2025 ordinance and its ratification are the source baseline reconstructed below. The enacted 2026 fiscal Annex U has not been obtained. Do not use this draft to state the 2026 rate, compute a client's 2026 liability or instruct a 2026 filing until that amendment check is complete. The examples test the ordinance baseline only; they do not confirm continuation. `tax_year: 2025` deliberately prevents this draft being presented as current 2026 coverage.
+**2026 application is unverified.** The enacted 2025 ordinance and its ratification are the source baseline reconstructed below. The enacted 2026 fiscal Annex U has not been obtained. Do not use this draft to state the 2026 rate, compute a client's 2026 liability or instruct a 2026 filing until that amendment check is complete. The examples test the ordinance baseline only; they do not confirm continuation. `tax_year: 2025` marks this draft as historical; it is not proof that a retrieval or publication system will enforce that limit.
 
 ## Who this applies to
 
-Under the enacted 2025 baseline, the CSS working paper concerns an enterprise subject to **impôt sur les bénéfices industriels et commerciaux (IBIC)** or **impôt sur les sociétés (IS)**. The enterprise is both the real and legal debtor. This is a turnover contribution, not a percentage of taxable profit. A loss does not remove turnover from the base. [Ordonnance 2025-007/PT-RM arts. 1–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+Under the enacted 2025 baseline, the CSS working paper concerns an enterprise subject to **impôt sur les bénéfices industriels et commerciaux (IBIC)** or **impôt sur les sociétés (IS)**. The enterprise is both the real and legal debtor. This is a turnover contribution, not a percentage of taxable profit. A loss does not remove turnover from the base. [Ordonnance 2025-007/PT-RM arts. 1–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
-The job covers ordinary domestic turnover whose VAT tax point is already established. Do not infer a CSS exemption merely because a transaction is exempt from VAT: article 2 sets a turnover base while articles 5 and 7 refer to VAT timing and procedures. A convention, tax holiday, synthetic regime, export or uncertain territorial position needs a separate applicability check before computation. This draft does not resolve those cases. [Ordonnance arts. 2–3, 5, 7](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+The job covers ordinary domestic turnover whose VAT tax point is already established. Do not infer a CSS exemption merely because a transaction is exempt from VAT: article 2 sets a turnover base while articles 5 and 7 refer to VAT timing and procedures. A convention, tax holiday, synthetic regime, export or uncertain territorial position needs a separate applicability check before computation. This draft does not resolve those cases. [Ordonnance arts. 2–3, 5, 7](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
-**Enacted source and duration.** The ordinance is dated 7 February 2025 and published in the official gazette; Loi 2025-022 of 12 June 2025 ratifies it without changing the text. The CSS operative chapter, articles 1–9, and final article 20 set no fixed term, sunset or delayed commencement. The 2026 finance law authorises collection under the laws in force; it is not the source of the CSS rate. This source-baseline draft, held for 2026 verification, does not determine the first partial 2025 period or claim that an unread fiscal annex contains no amendments. [Ordonnance arts. 1–9, 20](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8); [Loi 2025-022, article unique](https://sgg-mali.ml/JO/2025/mali-jo-2025-18.pdf#page=12); [Loi 2025-056, art. 1](https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf#page=3).
+**Enacted source and duration.** The ordinance is dated 7 February 2025 and published in the official gazette; Loi 2025-022 of 12 June 2025 ratifies it without changing the text. The CSS operative chapter, articles 1–9, and final article 20 set no fixed term, sunset or delayed commencement. The 2026 finance law authorises collection under the laws in force; it is not the source of the CSS rate. This source-baseline draft, held for 2026 verification, does not determine the first partial 2025 period or claim that an unread fiscal annex contains no amendments. [Ordonnance arts. 1–9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10), [final art. 20](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=11); [Loi 2025-022, article unique](https://sgg-mali.ml/JO/2025/mali-jo-2025-18.pdf#page=12); [Loi 2025-056, art. 1](https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf#page=4).
 
 ## Rates, bands and thresholds
 
 | Item | Enacted 2025 rule; unverified for 2026 application | Official source |
 |---|---|---|
-| CSS rate | 0.5% of tax-exclusive turnover of an IBIC/IS enterprise | [Ordonnance 2025-007 arts. 2–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Tax point and exigibility | Same conditions as VAT; establish the transaction's VAT tax point before assigning the CSS month | [Ordonnance art. 5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Monthly declaration | Previous month's operations declared in the first 15 days of each month; payment follows the domestic VAT deadlines/procedure | [Ordonnance arts. 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Late declaration before formal notice | 5% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 2–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Late declaration after formal notice | 25% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 3–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| No return within 10 days after formal notice | Assessment by the administration and a 50% increase on the corresponding tax; the text separately states its XOF 25,000 minimum | [Ordonnance art. 8, paragraphs 4–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Late return with no tax due | XOF 25,000 | [Ordonnance art. 8, paragraph 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
-| Omission/inaccuracy | 25% of tax compromised; 50% if the nature of the infringement means the debtor's good faith cannot be accepted | [Ordonnance art. 8, paragraphs 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8) |
+| CSS rate | 0.5% of tax-exclusive turnover of an IBIC/IS enterprise | [Ordonnance 2025-007 arts. 2–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Tax point and exigibility | Same conditions as VAT; establish the transaction's VAT tax point before assigning the CSS month | [Ordonnance art. 5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Monthly declaration | Previous month's operations declared in the first 15 days of each month; payment follows the domestic VAT deadlines/procedure | [Ordonnance arts. 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Late declaration before formal notice | 5% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 2–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Late declaration after formal notice | 25% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 3–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| No return within 10 days after formal notice | Assessment by the administration and a 50% increase on the corresponding tax; the text separately states its XOF 25,000 minimum | [Ordonnance art. 8, paragraphs 4–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Late return with no tax due | XOF 25,000 | [Ordonnance art. 8, paragraph 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Omission/inaccuracy | 25% of tax compromised; 50% if the nature of the infringement means the debtor's good faith cannot be accepted | [Ordonnance art. 8, paragraphs 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 
 No separate turnover registration threshold appears in articles 2–4. Establish that the enterprise falls under IBIC/IS rather than importing an unverified VAT or synthetic-regime threshold from another Guide.
 
 ## The base
 
-1. Obtain the enterprise's tax classification, monthly sales ledger, invoices/credit notes and the evidence establishing the relevant VAT tax points. Reconcile the ordinary domestic tax-exclusive turnover assigned to the month. The ordinance sets a tax-exclusive turnover base and borrows VAT tax-point rules; it does not replace turnover with the accounting result. [Ordonnance arts. 2–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
-2. Multiply that supported turnover by **0.005**. The calculation has no profit deduction or general expense deduction in its base. Expense and loss figures are relevant to the profit-tax computation, not a reduction to CSS turnover. [Ordonnance arts. 2, 4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
-3. Record the amount of CSS **paid** as deductible in determining IBIC/IS profit under article 6. Reconcile payment evidence and prevent a duplicate deduction if it is already included in the accounts. The statute speaks of the amount paid; do not extend this Guide's conclusion to an unpaid accrual. It does not create a CSS input-tax credit. [Ordonnance art. 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
-4. Produce a working paper showing taxpayer identity and classification, period, turnover reconciliation, tax-point support, CSS due, payment evidence and any notice/late-filing computation. These are working-paper labels, not invented official form box numbers. The declaration must use the administration's prescribed form. [Ordonnance arts. 5, 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+1. Obtain the enterprise's tax classification, monthly sales ledger, invoices/credit notes and the evidence establishing the relevant VAT tax points. Reconcile the ordinary domestic tax-exclusive turnover assigned to the month. The ordinance sets a tax-exclusive turnover base and borrows VAT tax-point rules; it does not replace turnover with the accounting result. [Ordonnance arts. 2–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
+2. Multiply that supported turnover by **0.005**. The calculation has no profit deduction or general expense deduction in its base. Expense and loss figures are relevant to the profit-tax computation, not a reduction to CSS turnover. [Ordonnance arts. 2, 4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
+3. Record the amount of CSS **paid** as deductible in determining IBIC/IS profit under article 6. Reconcile payment evidence and prevent a duplicate deduction if it is already included in the accounts. The statute speaks of the amount paid; do not extend this Guide's conclusion to an unpaid accrual. It does not create a CSS input-tax credit. [Ordonnance art. 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
+4. Produce a working paper showing taxpayer identity and classification, period, turnover reconciliation, tax-point support, CSS due, payment evidence and any notice/late-filing computation. These are working-paper labels, not invented official form box numbers. The declaration must use the administration's prescribed form. [Ordonnance arts. 5, 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 ## Deadlines and filing
 
-In the enacted 2025 baseline, articles 7–8 require the prior month's operations to be declared during the first 15 days of the next month, with payment on the domestic VAT timetable. Use the month determined from the VAT tax point, not an assumed cash or invoice rule for every activity. [Ordonnance arts. 5, 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+In the enacted 2025 baseline, articles 7–8 require the prior month's operations to be declared during the first 15 days of the next month, with payment on the domestic VAT timetable. Use the month determined from the VAT tax point, not an assumed cash or invoice rule for every activity. [Ordonnance arts. 5, 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 The following reconstructs the ordinance preparation sequence. The 2026 source gate above prevents using it for a current filing:
 
@@ -62,15 +62,15 @@ The current CSS form identifier, field numbers, portal menu and authenticated su
 
 ## Penalties and interest
 
-Use the actual procedural facts: a late return before notice, a late return after notice, failure to return after the notice period, or an inaccurate return. The table records those separate branches of article 8. For the first two late-filing branches calculate the percentage, then apply the XOF 25,000 minimum. A nil late declaration still attracts the expressly stated fixed penalty. [Ordonnance art. 8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+Use the actual procedural facts: a late return before notice, a late return after notice, failure to return after the notice period, or an inaccurate return. The table records those separate branches of article 8. For the first two late-filing branches calculate the percentage, then apply the XOF 25,000 minimum. A nil late declaration still attracts the expressly stated fixed penalty. [Ordonnance art. 8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
-Article 9 sends administration, recovery, audit and disputes to the VAT procedures and guarantees. This Guide has not verified an additional late-payment interest rate, the precise minimum's application across every assessment/inaccuracy combination, or cumulation of different sanctions. Do not invent an interest percentage or add all table rows together. [Ordonnance arts. 8–9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+Article 9 sends administration, recovery, audit and disputes to the VAT procedures and guarantees. This Guide has not verified an additional late-payment interest rate, the precise minimum's application across every assessment/inaccuracy combination, or cumulation of different sanctions. Do not invent an interest percentage or add all table rows together. [Ordonnance arts. 8–9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 ## Cross-border points
 
-The ordinance's CSS base is business turnover, while article 7 refers to domestic VAT procedure. Those words alone do not establish export relief, a foreign tax credit, treaty relief or a permanent-establishment rule. Refer cross-border turnover, mining/stabilisation or establishment conventions, and uncertain exemption claims before using this ordinary domestic computation. [Ordonnance arts. 2–3, 5, 7, 9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+The ordinance's CSS base is business turnover, while article 7 refers to domestic VAT procedure. Those words alone do not establish export relief, a foreign tax credit, treaty relief or a permanent-establishment rule. Refer cross-border turnover, mining/stabilisation or establishment conventions, and uncertain exemption claims before using this ordinary domestic computation. [Ordonnance arts. 2–3, 5, 7, 9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
-The ordinance's alcohol contribution is a separate chapter and job. Its scope, exemptions and volume-based calculation are not imported into CSS. [Ordonnance chapters I–II](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=8).
+The ordinance's alcohol contribution is a separate chapter and job. Its scope, exemptions and volume-based calculation are not imported into CSS. [Ordonnance chapters I–II](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 ## Two worked examples that recompute
 

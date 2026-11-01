@@ -1,0 +1,13 @@
+{
+  "original_candidate": "d360fed18e2526f13183b488aec10205d4b50a97",
+  "file": "skills/mali/ml-solidarity-contribution.md",
+  "before_sha256": "52163cff9c44b138d27e8f4662c532b7039715648ce5c135e6e349354247e387",
+  "after_sha256": "3de6adbda1bf24717975b0016f63d7d9ca026bfd7b5bb77f92f76ae0c852d87a",
+  "changes": [
+    "Correct all ordinance CSS anchors to PDF page10; separately link finalart20 PDFpage11",
+    "Correct finance-law art1 to PDFpage4",
+    "Increment draft version0.2",
+    "Clarify historical year is a label, not demonstrated retrieval/publication enforcement"
+  ],
+  "preserved": "No legal rule, figure, example, ledger, legacy Guide, original source receipt or original reviewer record changed. 2026 hold retained."
+}
