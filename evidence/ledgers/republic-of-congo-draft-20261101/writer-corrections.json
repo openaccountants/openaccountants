@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "5ca4e55e6d601b99dad0d1b73e3f5d2688e4717a",
+  "status": "F01-F04 repaired; focused independent closure pending",
+  "repairs": [
+    "I15 widow(er) children outside deceased marriage use single same-child rule",
+    "C07 explicitly hold53versus75 deferred-depreciation conflict; keepordinary5year rule",
+    "Mixed-source cells link every named instrument; writer references aligned",
+    "C11 three-month constitution AND latest15-day activity limit,86Eand128"
+  ],
+  "source_read_scope": "Actual initial Gazette65L,41R,43R,47R and66 with neighbours read for legal repairs; existing mixed-source references retained and split into correct links. Full later-law/currentness, social/date conflicts unchanged.",
+  "grouped_records": 89,
+  "candidate_files": {
+    "skills/republic-of-congo/cg-company-formation.md": "eff2380d71d82ee2153320956df271f374a571e37a104793578c9ff50f66d3d2",
+    "skills/republic-of-congo/cg-corporate-income-tax.md": "fb776febb676349dc5adc2f377ddee3e51d40b78161c3969732753b5d897bedb",
+    "skills/republic-of-congo/cg-income-tax.md": "9aeee8c469bc4f2a854d901f47be9b202ae56dc759ef4f78e390df99ba4cce1a",
+    "skills/republic-of-congo/cg-payroll-social.md": "f2a7c53f6e43a9b1d4c12f171978cf2fbc9a1f7b006cf50354eda14f3e61e7ea",
+    "skills/republic-of-congo/cg-vat-gst.md": "526d48d3edd20d740a2c7ad1aad0b9cf1e321df931c79b219218609073bbde6b",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md": "f2f6c78fb61cb72808de6bd72672f8a3f5355e9ea01b890d7b28ed259a5daaaa",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md": "f1c4deb5365ab9fd6d676ca1dbe8965ba6cfd7cdc5471608d56f03b6ab4cb38d",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md": "b52a2e5c88802ce3aff825973065f0972fda7cdfd0568612420baa675d70da7f",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-payroll-social.md": "60f0488536987477f27d655843ca71f893d924e363ddee79594e45692e2e8d10",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md": "351b6d527abe41fe6e35d79aa8f5cde3b451f723bc0e598683562ab98ffcc4e3",
+    "evidence/ledgers/republic-of-congo-draft-20261101/rule-register.json": "0af1e2a00b20a0eef0800229f82999717d027b2c44a414180777084d8f9a5c6a"
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "guide": "cg-company-formation",
+    "case_number": 1,
+    "case": "SARL share and deposit planning",
+    "independent_results": {
+      "shares": "60",
+      "initial_cash_minimum": "150000",
+      "remaining_cash": "150000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "F02/F03: chosen cash capital, minimum nominal, half paid; fee separate."
+  },
+  {
+    "guide": "cg-company-formation",
+    "case_number": 2,
+    "case": "Decision: distinguish entity fee from capital",
+    "independent_results": {
+      "sarl_fee_plus_full_capital": "600000",
+      "sa_fee_plus_full_capital": "10500000",
+      "difference": "9900000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "F02/F04/F10: full capital plus displayed fee, not total ancillary costs or required initial paid-in capital."
+  },
+  {
+    "guide": "cg-corporate-income-tax",
+    "case_number": 1,
+    "case": "CIT above minimum",
+    "independent_results": {
+      "is_before_credits": "5600000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "C01/C08: ordinary domestic company; round profit first; no credits/other levies."
+  },
+  {
+    "guide": "cg-corporate-income-tax",
+    "case_number": 2,
+    "case": "Decision: deduction boundary changes ordinary tax",
+    "independent_results": {
+      "cash_tax": "2800000.00",
+      "noncash_tax": "2744000.00",
+      "difference": "56000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "C04 excludes cash at equality; other deduction conditions assumed met."
+  },
+  {
+    "guide": "cg-cross-border",
+    "case_number": 1,
+    "case": "Nonresident royalty withholding",
+    "independent_results": {
+      "withholding": "2000000.00",
+      "net_payment": "8000000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "X05: no treaty reduction/gross-up; assumed gross royalty within scope."
+  },
+  {
+    "guide": "cg-cross-border",
+    "case_number": 2,
+    "case": "Decision: classify before using deemed margin",
+    "independent_results": {
+      "deemed_profit": "2200000.00",
+      "special_is": "726000.0000",
+      "ordinary_withholding": "2000000.00",
+      "difference": "1274000.0000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "X05/X07: alternative legal facts, qualifying permit/regime and no base exclusions; not elective or stacked rates."
+  },
+  {
+    "guide": "cg-income-tax",
+    "case_number": 1,
+    "case": "IBA business profit",
+    "independent_results": {
+      "iba": "3000000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "I02: ordinary IBA outside forfait; rounded ordinary equals minimum."
+  },
+  {
+    "guide": "cg-income-tax",
+    "case_number": 2,
+    "case": "Decision: principal home versus investment disposal",
+    "independent_results": {
+      "gain": "8000000",
+      "investment_gain_tax": "800000.00",
+      "qualifying_home_gain_tax": "0",
+      "difference": "800000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "I08/I09: documented qualifying costs; principal home at least five years versus investment property."
+  },
+  {
+    "guide": "cg-payroll-social",
+    "case_number": 1,
+    "case": "Salary quotient computation with supplied retirement amount",
+    "independent_results": {
+      "net_taxable": "2304000.00",
+      "annual_its": "210300.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "I14/I15/I17: retirement120000 is established example input, never certified CNSS4percent; no final monthly remittance."
+  },
+  {
+    "guide": "cg-payroll-social",
+    "case_number": 2,
+    "case": "Decision: correct payroll family evidence",
+    "independent_results": {
+      "quotient": "1152000",
+      "correct_annual": "109800.00",
+      "incorrect_one_part": "210300.00",
+      "over_withheld": "100500"
+    },
+    "expected_match": true,
+    "legal_condition_check": "I14/I15/I17: married without children expressly verified; does not use widowed exception; evidence decides parts, not election."
+  },
+  {
+    "guide": "cg-tax-overview",
+    "case_number": 1,
+    "case": "Compare business and company computations before distributions",
+    "independent_results": {
+      "company_is": "2800000.00",
+      "individual_iba": "3000000.00",
+      "difference": "200000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "C01/C08/I02: independently reconciled profits; excludes distribution/social/other levies; does not recommend incorporation."
+  },
+  {
+    "guide": "cg-tax-overview",
+    "case_number": 2,
+    "case": "Decision: route centimes to VAT, not a blanket profit surtax",
+    "independent_results": {
+      "correct_total": "1189000.0000",
+      "underbilling": "9000.0000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "V01: ordinary correctly classified VAT invoice; no universal profit surcharge."
+  },
+  {
+    "guide": "cg-transfer-pricing",
+    "case_number": 1,
+    "case": "Supported cost adjustment",
+    "independent_results": {
+      "addback": "2000000",
+      "incremental_is": "560000.00"
+    },
+    "expected_match": true,
+    "legal_condition_check": "T01/C01: supported arm length charge is hypothetical study result, not safe harbour; minimum assumed not decisive."
+  },
+  {
+    "guide": "cg-transfer-pricing",
+    "case_number": 2,
+    "case": "Decision: turnover below threshold but assets at equality",
+    "independent_results": {
+      "first_required": "1",
+      "second_required": "0"
+    },
+    "expected_match": true,
+    "legal_condition_check": "T01/T02: assets OR turnover; equality meets threshold; arm length applies in both fact patterns."
+  },
+  {
+    "guide": "cg-vat-gst",
+    "case_number": 1,
+    "case": "Ordinary VAT invoice",
+    "independent_results": {
+      "vat": "180000.00",
+      "centimes": "9000.0000",
+      "invoice_total": "1189000.0000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "V01: centimes5percent of VAT, not price; ordinary correctly classified supply."
+  },
+  {
+    "guide": "cg-vat-gst",
+    "case_number": 2,
+    "case": "Decision: separate cash boundaries",
+    "independent_results": {
+      "vat_disallowed_at_boundary": "0",
+      "vat_disallowed_above_boundary": "30000",
+      "difference": "30000"
+    },
+    "expected_match": true,
+    "legal_condition_check": "V05/C04: VAT cash exclusion alone strictly over200000; supported VAT30000 hypothetical; other conditions preserved; IS boundary differs."
+  }
+]
