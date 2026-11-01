@@ -1,0 +1,1059 @@
+{
+  "current_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "initial_sample_count": 14,
+  "initial_failed_samples_resolved": 5,
+  "additional_sample_count": 66,
+  "total_unique_sample_ids": 80,
+  "Guides_sampled": 10,
+  "new370_units_sampled_here": 14,
+  "newVATunits_already_sampled": 13,
+  "mechanical_preservation": "All1564parentunits+818children retain originalhash/nonemptydestinations; this is not semantic proof. Fivefoundsemanticlossesfixedandfocusedrechecked.",
+  "decision": "PASS selected semantic spotchecks after correction; not exhaustive2382semantic review",
+  "samples": [
+    {
+      "id": "md-tax-overview-OLD-003-L004",
+      "Guide": "md-tax-overview",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Basis of taxation for residents** — Residents are taxed on worldwide income; non-residents on Moldova-source income  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_",
+      "original_unit_sha256": "3b04db35fd12b6819eba9296b79502f6f16d1c0756834945ae833dcffdea145a",
+      "writer_destination": [
+        "The base: statutory resident/nonresident populations",
+        "Cross-border points",
+        "Sources: old blanket statement corrected"
+      ],
+      "current_Guide_sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "reviewer_comparison": "Blanket all-resident worldwide scope corrected to statutory taxpayer/legal-form populations; subject retained, not blanket replicated.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-tax-overview-OLD-003-L008",
+      "Guide": "md-tax-overview",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Annual personal income tax return deadline** — 30 April of the year following the reporting year  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/individual/tax-administration)_",
+      "original_unit_sha256": "eae4327d99d13cff1431f358b51ee9d9309cf2515c17fda5d6766b78db796014",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "reviewer_comparison": "Individual30April confined to statutory filing duty and special routes.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-tax-overview-OLD-003-L009",
+      "Guide": "md-tax-overview",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Annual corporate income tax return deadline** — By the 25th day of the third month following the tax period (i.e. 25 March)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_",
+      "original_unit_sha256": "c91599c4be19efe949c1285678ca9dfd92363c4d71522021e2d7b0eda4962e29",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "reviewer_comparison": "Corporate25ththirdmonth/ordinary25March retained with period qualification.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-tax-overview-OLD-003-L010",
+      "Guide": "md-tax-overview",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **VAT return frequency and deadline** — Monthly, due by the 25th of the following month  _(Fiscal Code of the Republic of Moldova (Codul Fiscal), VAT Title — https://taxsummaries.pwc.com/moldova/corporate/other-taxes)_",
+      "original_unit_sha256": "e1005f0847fd4307e2d032a3d7ae64399e0a1859ed06d4ee18e165ba40c2e911",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "reviewer_comparison": "VAT25thafterperiod retained; imported/e-services distinctions explicit.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L004",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Minimum share capital for an SRL** — No statutory minimum (commonly nominal, e.g. MDL 1) MDL ((approx - confirm; Moldova abolished the former fixed SRL minimum)) MDL  _(Law on Limited Liability Companies (Legea privind societatile cu raspundere limitata))_",
+      "original_unit_sha256": "049436280e40bc492f93b00dd68a580115855700696d6aade368a535e1fac6ff",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base: Prepare the SRL decision, statute and contributions",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "SRLarticle21 no fixed number; unsupported universal1MDL assertion explicitly rejected.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L005",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Minimum share capital for an SA (joint-stock company)** — MDL 20,000 MDL ((approx - confirm against Law on Joint Stock Companies)) MDL  _(Law on Joint Stock Companies (Legea privind societatile pe actiuni))_",
+      "original_unit_sha256": "50e0426b8a646f9c0b40f3c01bd3a778100c18358fd4a4fe13f33ff2055afb22",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base: Prepare the SRL decision, statute and contributions",
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "Incorrect20000SAfloor corrected to600000 actualarticle38, not lost.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L007",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Typical incorporation timeline** — Around 1 business day for standard registration; a few days where additional documents are required ((approx - confirm))  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_",
+      "original_unit_sha256": "72830caf5d1193c8bfe5955aeae16ece508a6fdde551f24605f8700db5bda269",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "ASP24hour/fourhourtracks replace vague1businessday; extra-document conditions explicit.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L008",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **State registration fee** — Nominal state fee (commonly under MDL 1,500 for standard registration) MDL ((approx - confirm current ASP tariff)) MDL  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_",
+      "original_unit_sha256": "948bd177e389c332d32b0cb85adafaf6697d4c61a4a751ec370d3939a40a86f9",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "Actual1149/4596tariffs replace vaguefee estimate with conditional relief.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L009",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Core incorporation steps** — Reserve company name, prepare and sign articles of association, register with ASP (State Register), obtain tax/VAT and social-insurance registration, open a bank account  _(Law on State Registration of Legal Entities and Individual Entrepreneurs)_",
+      "original_unit_sha256": "340e6e7082b250a8804915e7ede2f733b3fdf13072cdd528b7e25bc736dab98e",
+      "writer_destination": [
+        "The base: Assemble and submit the registration file",
+        "Deadlines and filing",
+        "Sources: Not yet confirmed: bank-specific procedure"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "Name/statute/contribution/ASP/beneficial-owner/tax/bank steps retained with separate conditional registrations.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-company-formation-OLD-004-L010",
+      "Guide": "md-company-formation",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Core annual compliance** — Annual financial statements filed with the tax service/statistics, annual CIT return by 25 March, monthly VAT and payroll filings  _([Accounting and Financial Reporting Law / Fiscal Code (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration](https://taxsummaries.pwc.com/moldova/corporate/tax-administration))_",
+      "original_unit_sha256": "c2253adc84d970fe9c8330dc17283a9ad495e6d6dabd749ae8add8b7b7a71f43",
+      "writer_destination": [
+        "Deadlines and filing",
+        "Sources: Not yet confirmed: actual forms and classification"
+      ],
+      "current_Guide_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "reviewer_comparison": "Accounts filing separated fromCIT/payroll/VAT; legal class/deadline conditions supplied.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L002",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **CIT rate for farming (agricultural) enterprises** — 7% percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_",
+      "original_unit_sha256": "1b4f6eb64a0c948977f3d8f559940904273213b84e9a094b18778b462c3bb508",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "7% scoped to statutory peasantfarm, not every agricultural legal company.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L003",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Special SME regime (non-VAT-registered small/medium companies meeting criteria)** — 4% on aggregate income (turnover-based) percent  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/taxes-on-corporate-income)_",
+      "original_unit_sha256": "cb653f28a6b8e7425a498885737bf2a055f730314b6d72299bcba5b48c9f0776",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "4% requires actual54s1population/base/exclusions and dated threshold, not universal turnover election.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L006",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Withholding tax on dividends (resident and non-resident, profits earned after 2011)** — 6% percent (treaty relief may reduce to 0-5%)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes)_",
+      "original_unit_sha256": "13cba506b9440541edb9055c27ddc392f2aea7b76ef752b06a72767dd5b751ba",
+      "writer_destination": [
+        "Cross-border points",
+        "Sources"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "Domestic6% dividends retained with historic exceptions; unsupported universal treaty0–5% range expressly unconfirmed.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L008",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Withholding tax on royalties paid to non-residents** — 12% percent (treaty relief may reduce to 0-10%)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/withholding-taxes)_",
+      "original_unit_sha256": "5991eefd22008c6d6e8d581fcf6a56106bb6e3446d7d3012e555b917077529f0",
+      "writer_destination": [
+        "Cross-border points",
+        "Sources"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "Domesticroyalty12% preserved conditional category; universal treaty0–10% range not certified.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L009",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Annual CIT return filing deadline** — By the 25th day of the third month following the end of the tax period (25 March)  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_",
+      "original_unit_sha256": "02827aaa6bd76a8ebd708db026f5f401b5a25943aa0f1d9694d86aa0df56ae6c",
+      "writer_destination": [
+        "Deadlines and filing"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "25ththirdmonth retained under actual fiscalperiod.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-corporate-income-tax-OLD-005-L010",
+      "Guide": "md-corporate-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Interim (advance) CIT payments** — 25% of estimated annual CIT due by 25 March, 25 June, 25 September and 25 December  _(Fiscal Code of the Republic of Moldova (Codul Fiscal) — https://taxsummaries.pwc.com/moldova/corporate/tax-administration)_",
+      "original_unit_sha256": "6db3828c668c9a6c6c5abdfd0fad4d723349f0d2e13bb3ecddf9ed41c48231ed",
+      "writer_destination": [
+        "Deadlines and filing"
+      ],
+      "current_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "reviewer_comparison": "Instalments actualCode84 bases/quarterdates andagriculturalroute; no undocumented guess taxbase.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-transfer-pricing-OLD-006",
+      "Guide": "md-transfer-pricing",
+      "origin": "initial predecessor topic table",
+      "original_text": "For fiscal periods beginning in 2025, add the value of transactions with **all** affiliated persons for the fiscal period, excluding VAT. At MDL 20 million or more, the taxpayer must prepare and submit transfer-pricing information. Law 187/2025 removed the separate MDL 50 million threshold for automatic submission of a transfer-pricing file: the file is prepared and submitted only if the State Tax Service (SFS) requests it. The 2025-period rule applies the MDL 20 million threshold to local and cross-border controlled transactions; check the Code's definitions and exclusions before aggregation. Below MDL 20 million, the Article 226¹⁹ threshold-based filing does not arise; this does not establish that prices are arm's length or remove ordinary recordkeeping duties. [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [SFS, 25 June 2026 deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
+      "original_unit_sha256": "22f5e46c8acdac3a41fbd3ba8d9e8ade916cb78ec47bd7c67b1c3c31200b531c",
+      "writer_destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "current_Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "reviewer_comparison": "20maggregate/2025newrule/no50mfiletier retained; principal/advances/APA scope expanded.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-transfer-pricing-OLD-007",
+      "Guide": "md-transfer-pricing",
+      "origin": "initial predecessor topic table",
+      "original_text": "For periods beginning in 2025, submit the information electronically through the SFS taxpayer cabinet using the electronic-declaration service, signed with an accepted electronic or mobile signature. The annual information deadline is the 25th day of the sixth month after the fiscal period ends. For a calendar-year 2025 period, SFS identified 25 June 2026 as the deadline. If SFS requests a transfer-pricing file, submit it within 120 days of the request, but not before the deadline for submitting the information. The 2024 transition used different form and deadline rules; do not apply its XLSX forms or transitional provisions to 2025 periods. [Law 187/2025](https://www.legis.md/cautare/downloadpdf/149593); [SFS transfer-pricing page](https://www.sfs.md/ro/pagina/preturi-de-transfer); [SFS 2025-period deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
+      "original_unit_sha256": "42ce6e05febd62ad45f342be265b59f716d7378708eb19156ecbedcc00d3c127",
+      "writer_destination": [
+        "The base: Build the affiliate and threshold reconciliation",
+        "The base: Compile the master file and local file",
+        "Deadlines and filing"
+      ],
+      "current_Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "reviewer_comparison": "Sixthmonth25thandrequest120days/notbeforeinformation deadline retained;2024separate.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-transfer-pricing-OLD-011",
+      "Guide": "md-transfer-pricing",
+      "origin": "initial predecessor topic table",
+      "original_text": "Retain supporting contracts, invoices, accounting reconciliations, functional interviews, benchmarking inputs and signed filings. SFS guidance states the transfer-pricing file is retained for six years from its presentation. Check the current statutory retention trigger and any longer accounting or tax-record period before destroying records. [SFS Generalized Fiscal Practice, TP item 44.3.1](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1200) (read 2026-10-24).",
+      "original_unit_sha256": "0e741d8ddee2d9a5f01e161068f15c2affac69e2e5593f3930c5720af8175ada",
+      "writer_destination": [
+        "The base: Compile the master file and local file",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "reviewer_comparison": "Contracts/benchmark/filing retention retained; previous6year statutory trigger now expresslyunconfirmed after rewrite, not certified obsolete.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-transfer-pricing-OLD-013",
+      "Guide": "md-transfer-pricing",
+      "origin": "initial predecessor topic table",
+      "original_text": "SFS states that for the 2025 information filing, late submission attracts MDL 30,000–50,000 and failure to submit MDL 100,000–150,000. It also states that penalties for false information apply in audits for fiscal periods starting in 2028. Other Article 260 penalties relate to transfer-pricing file failures; establish the exact offense, period and current sanction before quantifying exposure. [SFS, 25 June 2026 deadline notice](https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025) (read 2026-10-24).",
+      "original_unit_sha256": "652a2538fc7a29e8fd90e8a902e242c830dba57d1aa5e82a2ec2d7a7e2dcf7f8",
+      "writer_destination": [
+        "Penalties and interest"
+      ],
+      "current_Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "reviewer_comparison": "Informationlate30–50k/nonfiling100–150k and2028falseinformation commencement matchedactualCode.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-transfer-pricing-OLD-016",
+      "Guide": "md-transfer-pricing",
+      "origin": "initial predecessor topic table",
+      "original_text": "- A company has MDL 12 million of controlled transactions with one affiliate and MDL 8 million with another, both amounts excluding VAT. Aggregate amount is MDL 20 million, so the information filing threshold is met. The company must classify the transactions and use the period-specific form and deadline.\n- Aggregate controlled transactions are MDL 49.9 million excluding VAT. The information filing threshold is met. There is no automatic MDL 50 million file-submission tier for 2025 periods; submit the file only if SFS requests it, within the statutory response period.\n- Aggregate controlled transactions are MDL 50 million excluding VAT. The same MDL 20 million information threshold is met. The amount does not by itself require file submission; an SFS request triggers the 120-day response period, which cannot expire before the information filing deadline.",
+      "original_unit_sha256": "b7b2edb1e3a8d22b6069bfda3da208462cb179fbe1c6096e7247e8a1b90d8d5d",
+      "writer_destination": [
+        "Two worked examples that recompute",
+        "archived original"
+      ],
+      "current_Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "reviewer_comparison": "20m/49.9m/50m threshold scenarios preserved by same20m/noautomatic50mfile rule; literal oldthreeexample format is not needed to preserve distinct triggers.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-007",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "> **Moldova's headline is the IT PARK 7% regime:** a single **7% tax on turnover** (excl. VAT) replaces corporate tax, income tax, social contributions and several others — for IT businesses. Savings can reach 20–50% of the total tax burden.",
+      "original_unit_sha256": "3b43313a61faaf32689e041d4ef2045cd94180606fe7ed0976a747e1d6eb7cbc",
+      "writer_destination": [
+        "Who this applies to",
+        "The base: Compare the4%SME andordinarysystems",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "7% replacedtax/minimumcomparison retained; unsupported20–50%savings expresslyuncertified.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-011",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "(Moldova IT Park; Intelcont) **[RESEARCH GAP — reviewer to confirm the current eligible-activity list and any minimum monthly tax per employee.]**",
+      "original_unit_sha256": "f9bb061d3838074f5ef57cc0e341609840ab0acd06e2fc2444538aa7f548b8ce",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Calculate single tax andcharges it doesnotreplace",
+        "Deadlines and filing"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "Formeractivitylist/minimumgap expanded to actualLaw77eligibleactivities and30%forecastminimum, with specialistentrygaps.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-013",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **4% small-business turnover regime** — SMEs not registered for VAT that meet the criteria may opt for a 4% tax on aggregate income (turnover) — simple, no profit computation. Best for low-expense small businesses below the VAT threshold.",
+      "original_unit_sha256": "3dc8b92adb96dea87450961cd58305b9e831de048ed4b6307f3ecef3d5f7be90",
+      "writer_destination": [
+        "The base: Compare the4%SME andordinarysystems",
+        "Rates, bands and thresholds",
+        "Two worked examples that recompute"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "4% comparesactualeligiblebase withordinary taxableprofit, no blanketbestregime.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-016",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Item | Rate |\n| --- | --- |\n| Corporate / personal income tax | **12%** |\n| Dividends to founders | **6%** |\n| Sole proprietor (ÎI) | 12% on income; simplest for solo freelancers |\n| SRL (LLC) | 12% CIT; recommended for employees/international corporate clients |",
+      "original_unit_sha256": "e7581eb5f517914b04bdbeed47f2116553dc985ea0b0ff3eb73f85daff206105",
+      "writer_destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "Legalentitycomparison andrates preserved; unsupporteduniversalentityrecommendation excluded.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-017",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Dividend vs salary extraction** — Owner can withdraw profit annually as 6% dividends instead of salary — model salary-vs-dividend with the contribution effect.",
+      "original_unit_sha256": "605025fb1a339dd7cf2485304969e2c0dd6a64d6db087a5e22242ccfc0856b39",
+      "writer_destination": [
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Two worked examples that recompute",
+        "Sources"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "Salary/dividend comparison remains conditional lawfulprofit/distribution/employee/substancetests, not universalsalaryreplacement.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-019",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **IT Park 70% test** — At least 70% of revenue must be genuine eligible IT activity — non-IT income placed in an IT Park entity is a misuse. AUDIT FLASH POINT.\n- **Substance & genuine self-employment** — Single-client ÎI under employer-like control → reclassification.\n- **Non-eligible income routing** — Don't route non-eligible income through the 4%/7% regimes.",
+      "original_unit_sha256": "608a4bba0698fcac8a6149e140af9008e31b3fe0026375481e3e0eab3f731ff7",
+      "writer_destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "Actual70%cumulativeactivity/substance conditions retained; singleclient alone not automaticreclassification.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-tax-optimization-OLD-021",
+      "Guide": "moldova-tax-optimization",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Non-IT revenue in IT Park** — NEVER place non-IT revenue in the IT Park 7% regime to dodge tax (70% eligibility test).\n- **4% regime for VAT-registered business** — NEVER present the 4% regime for a VAT-registered business — it is for non-VAT SMEs.\n- **Single-client work as safe self-employment** — NEVER present single-client work as safe self-employment.\n- **Contradicting rate skills** — NEVER contradict the rates in `moldova-income-tax.md` / `moldova-social-contributions.md`.\n- **Research gap figures as confirmed** — NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice — route to a licensed Moldovan tax adviser.",
+      "original_unit_sha256": "5dbf8b9700af83755c245181821448a674d439754432c1d164ed5c025c6d6e6a",
+      "writer_destination": [
+        "The base: EstablishIT-parkstatus andrealeligibleactivity",
+        "The base: Distinguish salary,dividends andgenuineindependentwork",
+        "Penalties and interest",
+        "Sources"
+      ],
+      "current_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "reviewer_comparison": "Noneligibleincome/SMEvat/substance warning retained but no invented completebanonnonITreceipts withinlawful70%test.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-003",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "For a cross-border payment, identify the recipient's legal form and tax residence, the payer, the nature and source of the income, where services are performed, whether a Moldovan permanent establishment is involved, and the relevant tax treaty. Moldova's Fiscal Code lists categories of Moldova-source income earned by nonresidents. The list includes specified service income, interest, royalties, rent or use of Moldovan property, employment and other enumerated income. Some service categories have different territorial tests: SFS says specified Article 71(1)(b) services can be Moldova-source even when performed abroad, while the residual services in paragraph (b¹) are source income when performed in Moldova. Classify the actual service before applying withholding. [Fiscal Code, arts. 5(15), 71–73](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 29.4.31 and TP/service guidance](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102); [SFS item 1095](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1095) (read 2026-10-24).",
+      "original_unit_sha256": "e780aaa6fb2ba08e6d1db01730f94af06687f58c651fac936d491e7db6ea9ce5",
+      "writer_destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Service71bvsb1territorialdistinction andrecipientclassification retained.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-004",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "A permanent establishment is generally a fixed place through which a nonresident carries on business in Moldova, directly or through a dependent agent. The Code's examples include a place of management, branch, office, factory, workshop and extraction site. A construction, assembly or installation project and related supervision or equipment activity falls within the statutory definition where it continues for more than six months. Apply the complete current definition, exclusions and any applicable treaty: the domestic definition alone does not settle treaty PE status. [Fiscal Code, art. 5(15)](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 1.1.12](https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105) (read 2026-10-24).",
+      "original_unit_sha256": "1bda5736bca956d365fc1c6be5835af6cebff523dbf89288a33c744aaf67cdb7",
+      "writer_destination": [
+        "Who this applies to",
+        "The base: Classify the nonresident income",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Domesticfixedplace/agent/constructiondurationand exclusions retained, treatytest separate.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-007",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "Check separately whether the income is attributable to a Moldovan permanent establishment. The domestic nonresident-at-source rule described above applies to income not connected with such a permanent establishment; PE profits require a separate computation and filing analysis under the Code and any applicable treaty. This Guide does not calculate PE taxable profit, deductibility, payroll, VAT, customs or local registration obligations.",
+      "original_unit_sha256": "95a8506099917164e0763062027eaa7c39da98962e053c076c1cddf44b721268",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base: Apply the appropriate collection route",
+        "The base: Establish the PE and calculate its profit"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "PEconnectedprofit computation separated fromsourcegrosswithholding; expandedmethod.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-009",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "An applicable international tax treaty prevails over conflicting domestic tax rules under Fiscal Code Article 4. First identify the treaty in force for the recipient's residence and the income category; read its protocol and effective dates. The Ministry of Finance maintains a treaty list, but the linked list currently carries a 20 June 2022 status date, so it is a starting point rather than proof that a treaty or protocol is current today. Check the official treaty text and subsequent amendments. [Fiscal Code, art. 4](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [Ministry of Finance treaty list](https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022) (read 2026-10-24).",
+      "original_unit_sha256": "6e5a5d1b26d008b3dc84a577415d9572038c5ff62e86e8d18b8f816135f17a90",
+      "writer_destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Treatyprevails;actualin-force treaty/protocol/effectivedates required, stale2022list not currentproof.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-010",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "The evidence of treaty residence depends on the recipient's legal form and applicable treaty. A nonresident individual must generally provide the payer with a residence certificate before payment. For a nonresident legal person, SFS guidance recognizes a copy of a residence certificate, a document showing registration in its residence country, or an extract from the official tax-authority website showing tax residence or registration; follow the Code's translation and validity rules and the applicable treaty. Keep the proof actually used, treaty analysis, contract, invoice, payment record and withholding calculation. A Moldova-resident person seeking a Moldovan residence certificate for treaty purposes applies to SFS under the prescribed process. [Fiscal Code, art. 79³](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [SFS Generalized Fiscal Practice 29.4.31 and 29.4.41–46](https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102); [SFS residence-certificate guidance](https://www.sfs.md/ro/pagina/certificate-de-rezidenta-persoane-fizice) (read 2026-10-24).",
+      "original_unit_sha256": "b29060c5207e0a42ffd3bd7339d18883aafbdf3267316019370f4fe2daf04c8c",
+      "writer_destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Legalform-specificresidenceevidence/translationvalidity andMoldovacertificate proceduresretained.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-011",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "Treaty relief is not automatic from the recipient's address or incorporation certificate. Confirm treaty residence, beneficial ownership where relevant, limitation-of-benefits or principal-purpose provisions, permanent-establishment status, the payment's treaty classification and the acceptable proof for the recipient's legal form. The result can differ for business profits, dividends, interest, royalties, employment, directors' fees, immovable property and capital gains.",
+      "original_unit_sha256": "bf009d54e0826057c993d891380c498c4487a912d8e494957167c20fa657edd0",
+      "writer_destination": [
+        "Cross-border points: Apply an actual treaty and retain evidence",
+        "Cross-border points: Late evidence, refunds and tax-paid certificates"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "BO/PPT/actualincomeclassification guarded;addressaloneinsufficient.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-013",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "Do not infer a worldwide-income rule for every Moldovan person from this Guide. Determine the taxpayer's statutory residence and legal form, the domestic treatment of the foreign income, any foreign tax credit or exemption, and the applicable treaty. Obtain foreign tax-payment evidence and apply the Code's credit limitation and documentation rules before claiming relief. The current Code and taxpayer-specific rules must be checked; this draft does not provide a comprehensive foreign tax credit calculation or residence tie-breaker analysis. [Fiscal Code, Title II and treaty provisions](https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro); [Ministry of Finance treaty list and texts](https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022) (read 2026-10-24).",
+      "original_unit_sha256": "5d82f055f562b9834afc676dca42b2acb00c4ae2706e4f9a0fdd7a7420770cce",
+      "writer_destination": [
+        "Who this applies to",
+        "The base: Foreign income, credits, property and mobility",
+        "Two worked examples that recompute"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Worldwideincome dependsstatutorypopulation;foreigncreditcap/evidence expanded.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-015",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "Before signing or paying, retain: counterparty identity and residence evidence; a contract describing the actual service, rights or property; service location and delivery evidence; a written Moldovan-source and PE analysis; the applicable treaty and protocol; timely residence evidence acceptable for the recipient’s legal form and treaty where relief is claimed; withholding and payment evidence; and any required tax statement and return. For related parties, also screen Moldova's transfer-pricing thresholds and documentation duties under [md-transfer-pricing](md-transfer-pricing.md).",
+      "original_unit_sha256": "fec04fd37ba377025c35f52460e46f13591390d4ac2e97590407551d650497c2",
+      "writer_destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Crossborderproperty/mobility/registrationclassification preserved in scopedmethods/explicitunconfirmed treatyimplementation.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "md-cross-border-OLD-017",
+      "Guide": "md-cross-border",
+      "origin": "initial predecessor topic table",
+      "original_text": "- A nonresident supplies a service remotely. Do not decide withholding solely from the invoice address. Determine whether the service falls within Article 71(1)(b), which SFS treats as Moldova-source irrespective of where performed, or the residual Article 71(1)(b¹) category, for which SFS says performance in Moldova is required. Then check the applicable treaty and retain residence evidence accepted for the recipient’s legal form.\n- A nonresident earns income through a Moldovan fixed place of business. Test domestic PE criteria and the applicable treaty, then analyze PE attribution and filing separately. The 12% gross-payment rule for non-PE income is not a substitute for that analysis.\n- A Moldovan payer is about to pay interest or royalties to a treaty-country company. Identify the domestic category and rate, obtain and retain the residence proof acceptable for that legal form and treaty before payment, read the treaty article and protocol, and document the reduced rate or domestic rate used.",
+      "original_unit_sha256": "d814af662c3216699e665aa760e2c359e30444c4b45bb26732848d79f325021f",
+      "writer_destination": [
+        "Ask the client first",
+        "Two worked examples that recompute",
+        "The base",
+        "archived original"
+      ],
+      "current_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "reviewer_comparison": "Threepredecessorcase subjects retained within source/PE/treatyproof methods; nounsupportedactualtreatyoutcomes.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-vat-OLD-006",
+      "Guide": "moldova-vat",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Box | Meaning |\n| --- | --- |\n| 1 | Taxable supplies at 20% — base |\n| 2 | Output TVA at 20% |\n| 3 | Taxable supplies at 8% — base |\n| 4 | Output TVA at 8% |\n| 5 | Zero-rated supplies |\n| 6 | Exempt supplies |\n| 7 | Reverse charge on imported services — base |\n| 8 | Output TVA on reverse charge |\n| 9 | Total output TVA |\n| 10 | Input TVA domestic purchases (20%) |\n| 11 | Input TVA domestic purchases (8%) |\n| 12 | Import TVA (customs) |\n| 13 | Input TVA reverse charge (creditable) |\n| 14 | Total input TVA |\n| 15 | Net payable or credit |\n| 16 | Credit B/F |\n| 17 | Net payable |",
+      "original_unit_sha256": "e9d22ae89243ec99aea24ba3fd9abe41607c924c4a9d118b2d4de9048baae6d8",
+      "writer_destination": [
+        "Deadlines and filing: Current VAT12 mapping",
+        "The base: Calculate eligible input VAT"
+      ],
+      "current_Guide_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "reviewer_comparison": "Obsolete17boxconceptualmap replaced by actualVAT12boxes;importgoods/services/input/carryforward reconciled, not oldboxes copied.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-vat-OLD-008",
+      "Guide": "moldova-vat",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Ambiguity | Default |\n| --- | --- |\n| Unknown rate | 20% |\n| Unknown purchase status | Not deductible |\n| Unknown counterparty country | Domestic Moldova |\n| Unknown SaaS billing entity | Reverse charge (Box 7/8/13) |\n| Unknown blocked-input status | Blocked |",
+      "original_unit_sha256": "f0f5b5c867b3a5e3a9b1249c77ca5dea05a4e990c9017ab3751605ca256819ff",
+      "writer_destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "current_Guide_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "reviewer_comparison": "Unknownfacts no longerguessed20%/domestic/reversecharge;classification/evidencegates retained.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-vat-OLD-010",
+      "Guide": "moldova-vat",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Threshold | Value |\n| --- | --- |\n| HIGH single-transaction size | MDL 100,000 |\n| HIGH tax-delta | MDL 5,000 |\n| MEDIUM counterparty concentration | >40% |\n| LOW absolute net TVA | MDL 150,000 |",
+      "original_unit_sha256": "cbddf4b8460f23c59dd5b6c6278fba3cf2d7e3976ee2a921d705a1a2e6e05ab0",
+      "writer_destination": [
+        "The base",
+        "Deadlines and filing: Working paper and predecessor classification controls",
+        "Cross-border points"
+      ],
+      "current_Guide_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "reviewer_comparison": "Internalmaterialitythresholds preserved as predecessorclassificationcontrols, not legalfilingthresholds.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-vat-OLD-015-L001",
+      "Guide": "moldova-vat",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **R-MD-1 — Non-registered** — Below MDL 1,200,000 and not voluntarily registered. (Message: \"Not TVA registered. Out of scope.\")",
+      "original_unit_sha256": "8128057610fdf57edc10e6f9ae89587f97862ce4b64af3438b51deef149fdde2",
+      "writer_destination": [
+        "Who this applies to",
+        "Ask the client first"
+      ],
+      "current_Guide_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "reviewer_comparison": "Old1.2mnonregistration shortcut replaced datedstatutory1.5/1.7m eligibility andexceptions.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-income-tax-OLD-010-L008",
+      "Guide": "moldova-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Independent retail-sale individuals (Chapter 10² regime, in force through 2025) | 1% | 1% of declared income, not less than MDL 3,000/year [PwC Moldova] |",
+      "original_unit_sha256": "8820d8c792b41e2ec130956a0fede105b0a7fd66b876f5d996f344a917cf60a0",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Cross-border points",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "reviewer_comparison": "Retail1%/3000subject retained withcurrent750quarter/250activemonth andregistrationcutoff;not incorrectly2025only.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-income-tax-OLD-019-L005",
+      "Guide": "moldova-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Independent-retail minimum tax | 3,000 | 1% tax but not less than this per year | [PwC Moldova] |",
+      "original_unit_sha256": "7bcdd0485db80a973dc34676bc15c89ba8b65870a73358b3f1aede72204dbc4d",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Cross-border points",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "reviewer_comparison": "3000annualminimumretainedwithcurrentquarterlyroute.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-income-tax-OLD-022",
+      "Guide": "moldova-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Ambiguity | Default |\n| --- | --- |\n| Unknown residency | STOP -- do not apply resident rules to a non-resident |\n| Unknown annual taxable income vs MDL 360,000 ceiling | Assume ceiling exceeded -> NO personal exemption (conservative) |\n| Unknown whether self-employed is in justice sector | General fixed CAS (MDL 20,518), flag for reviewer |\n| Unknown whether individual is employed (CNAM via payroll) or pays fixed CNAM | Assume fixed annual CNAM (MDL 12,636), flag for reviewer |\n| Unknown business-use % (vehicle, phone, home) | 0% deduction |\n| Unknown expense category | Not deductible |\n| Unknown regime (general 12% vs IT Park vs independent retail 1%) | General 12% regime |\n| Unknown farming status | Standard 12% (not the 7% farming rate) |",
+      "original_unit_sha256": "80c5b5a7acee2706b404b81da49b0feb8320083bbf0281fa71cc1878be0125c7",
+      "writer_destination": [
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "reviewer_comparison": "Unknownregime/justice/medical/residenceclassification no longerdefaultguessed;askactualfactsbeforecalculation.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-income-tax-OLD-057-L004",
+      "Guide": "moldova-income-tax",
+      "origin": "initial predecessor topic table",
+      "original_text": "| RAMBURSARE CREDIT, LOAN REPAYMENT, CREDIT | EXCLUDE | Loan principal movement |",
+      "original_unit_sha256": "04a7a4f068ea50617693c4e144f1312b485d25d70c3b6de95722046fb6584360",
+      "writer_destination": [
+        "The base: Bank classification and the annual working paper",
+        "Ask the client first"
+      ],
+      "current_Guide_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "reviewer_comparison": "Loanprincipalmovement retained as nonincome only when supportingclassification/records establish principal, not wordmatchalone.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-payroll-OLD-009",
+      "Guide": "moldova-payroll",
+      "origin": "initial predecessor topic table",
+      "original_text": "The employer withholds income tax monthly at source (PAYE-style) together with the employee social-insurance and health-insurance contributions, and remits all three on the unified monthly Form IPC21.",
+      "original_unit_sha256": "656588e264aee3b7b8bcd7a49358205b8e2987ac46bdf7ec4dbc79dcdf88144a",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26",
+      "reviewer_comparison": "Incorrectemployeesocialdeduction corrected;employersocial separatefromPIT/medical andactualIPCscope.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-payroll-OLD-024",
+      "Guide": "moldova-payroll",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Deduction | Rate | Base | Ceiling | Source |\n| --- | --- | --- | --- | --- |\n| Social insurance contribution (CNAS / BASS) | 6% | Gross salary + other remunerations | No ceiling on the percentage rate | PwC (other taxes) |\n| Mandatory health insurance (CNAM / FAOAM) | 9% | Gross salary + other remunerations | No ceiling | PwC (other taxes) |\n| Personal income tax (PIT) | 12% | Gross − CNAM 9% − exemptions | n/a (flat) | Tax Code art. 15; PwC |\n| **Total employee deductions (before exemptions, no PIT exemption)** | **27% of gross (6% + 9% + 12%)** | -- | -- | buhgalter.md |",
+      "original_unit_sha256": "21c8e73d2867e77ebe43d9d83e6bbf18f4bb4906e39b0151a002b08ed196ac08",
+      "writer_destination": [
+        "Rates, bands and thresholds",
+        "The base: Build separate payroll, contribution and payment records"
+      ],
+      "current_Guide_sha256": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26",
+      "reviewer_comparison": "Staleemployee6%/27% model explicitlyhistorical/rejected;actualmedical9% andcumulativePITbase replaces arithmeticadditionofrates.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-social-contributions-OLD-008-L006",
+      "Guide": "moldova-social-contributions",
+      "origin": "initial predecessor topic table",
+      "original_text": "| Unknown tax year | Use 2025 figures (5,500 MDL min wage, 20,518 MDL fixed SSC); apply 2026 figures only from 1 Jan 2026 |",
+      "original_unit_sha256": "bf0ed5af1adb10dab1f6344d56b1863e585a2adfa36b028caed9643a9a8d8e35",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "reviewer_comparison": "Unknownyear noautomatic2025fallback;2025figures explicitlyarchived/unconfirmed,2026sourcedseparately.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-social-contributions-OLD-010-L002",
+      "Guide": "moldova-social-contributions",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Required inputs -- Recommended** — Working conditions (standard vs special/hazardous, which sets 24% vs 32% employer CNAS), full-time vs part-time (which sets the minimum contribution base), entitlement to personal/major/dependent allowances, and annual taxable income (to test the 360,000 MDL allowance cap).",
+      "original_unit_sha256": "7dafbe8efba94f10a17da6c3850267a61f95af910dad6194eba6084619a3814c",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "reviewer_comparison": "Parttime/socialminimum subject retained asproportionatetimebase plusseparate25%contributionfloor,notuniversal25%grossminimum.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-social-contributions-OLD-010-L007",
+      "Guide": "moldova-social-contributions",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **R-MD-SC-4 -- Contribution arrears or penalties** — Trigger: unpaid CNAS/CNAM/PIT from prior periods. Message: \"Late social insurance is penalised at 0.1% per day (Law 489/1999, art. 28) and late PIT interest at 0.0301% per day; both compound. Quantify only from an official SFS/CNAS statement and escalate to a licensed Moldovan accountant.\"  _(Law 489/1999, art. 28)_",
+      "original_unit_sha256": "e64d22025eb95f4e93c11aee036586d34b3f19e49916f32c91144e93edfc323c",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "reviewer_comparison": "Social.1% andtax/medicalCode.0301% separate,actualprincipal/daysegments;universalcompoundingrejected.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-social-contributions-OLD-049",
+      "Guide": "moldova-social-contributions",
+      "origin": "initial predecessor topic table",
+      "original_text": "**Reasoning:**\nMatches \"CONTRIBUTIE SOCIALA FIXA\" (pattern 3.1). The 2025 fixed annual SSC for self-employed/individually insured persons = **20,518 MDL** (1,709.84 MDL/month × 12 per the CNAS Aug-2025 declaration; rises to 22,878 MDL in 2026). This is not based on the 24% employer rate -- it is a flat statutory amount. Excludes from VAT.",
+      "original_unit_sha256": "ce22c85ebb83171ecb763010c8dfc56ce7d82593a4592dab383e0585954b0b45",
+      "writer_destination": [
+        "Two worked examples that recompute",
+        "Sources: Not yet confirmed",
+        "archived original"
+      ],
+      "current_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "reviewer_comparison": "2025fixed20518/month1709.84 archivedexplicitlyhistorical/unconfirmed;2026correct22878/1906.50method supplied.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "moldova-social-contributions-OLD-062",
+      "Guide": "moldova-social-contributions",
+      "origin": "initial predecessor topic table",
+      "original_text": "- **Employer CNAS rate** — 24% percent of gross salary, meal tickets and other remuneration (minimum monthly base cannot be lower than national minimum monthly salary (5,500 MDL in 2025), or 25% of it for part-time; NO ceiling; 32% applies to special/hazardous working conditions (reviewer-confirm per R-MD-SC-3))  _(PwC, *Corporate -- Other taxes*; PwC, *Individual -- Other taxes*)_",
+      "original_unit_sha256": "db3d6552965afddb08a1f2d2b2896fcc3b190d7659db46c46f11487b18fb089d",
+      "writer_destination": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Ask the client first",
+        "Sources: Not yet confirmed"
+      ],
+      "current_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "reviewer_comparison": "24/32universalhazardousassumptioncorrected toactualprivate/public andlistedaviationconditions;ordinaryminimum/floor retained.",
+      "disposition": "PASS selected semantic subject preserved/corrected or explicitly bounded",
+      "limits": "Selected topic scope, not every clause of every archived paragraph; no comprehensive coverage inference."
+    },
+    {
+      "id": "MD-PUBLIC1024-005",
+      "Guide": "moldova-income-tax",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "- **Residents.** An individual is resident if he or she has a permanent home (domiciliu permanent) in Moldova, including while abroad for treatment, rest, study or a business trip, or is in Moldova for at least 183 days in the tax year (art. 5 pct. 5 a)).",
+      "original_unit_sha256": "318eb620da6ad772de45d597a79f78e71fceb98e7d835562d744591941fb5f24",
+      "writer_destination": [
+        "skills/international/moldova/moldova-income-tax.md#Who this applies to",
+        "skills/international/moldova/moldova-income-tax.md#Deadlines and filing: Select the business or professional return separately from CET18"
+      ],
+      "reviewer_comparison": "Residence actualdomicile/183daybranches retained with statutory exceptions.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1024-008",
+      "Guide": "moldova-income-tax",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "- **Separate regimes inside Title II.** Justice and health professionals (chapter 10^1, art. 69^1 to 69^5), independent retail traders (chapter 10^2), plant-product buyers (chapter 10^3) and independent entrepreneurs (chapter 10^4, from 1 January 2026) have their own rules, shown below.",
+      "original_unit_sha256": "06785c4ba16fb84c8ad514e30fb0e6d48fe79af041b3554e7694dd3afa3419bd",
+      "writer_destination": [
+        "skills/international/moldova/moldova-income-tax.md#Who this applies to",
+        "skills/international/moldova/moldova-income-tax.md#The base: Personal, spouse and dependent exemptions",
+        "skills/international/moldova/moldova-income-tax.md#The base: Professional practice and separate turnover regimes"
+      ],
+      "reviewer_comparison": "Separateprofessional/retail/plant/service regimes retained.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1024-020",
+      "Guide": "moldova-income-tax",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Education deduction (own or children's education) | up to MDL 20,000 a year | 2026 (from 1 Jan 2026) | art. 35^2(6); Law LP318/2025 art. I pct. 6 and art. XIII, https://www.legis.md/cautare/getResults?doc_id=153700&lang=ro |",
+      "original_unit_sha256": "1cb56b59f9b8ca8a719fce1d3e14ea52733bd5f46d1b98538598d735ba0cb847",
+      "writer_destination": [
+        "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-income-tax.md#The base: Actual personal deductions"
+      ],
+      "reviewer_comparison": "Own/childeducationoneaggregate20000 currentlawcap retained;oldgenericformcap subordinated.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1024-032",
+      "Guide": "moldova-income-tax",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Independent retail regime (outlet up to 50 m2, income up to MDL 1,200,000) | 1% of income, at least MDL 3,000 a year (MDL 750 a quarter) | 2026 | art. 69^7(1), 69^11(1), 69^12(2), same URL |",
+      "original_unit_sha256": "4c545345d0c7e0eab09d1834b02b295413e28711543f1f30a68110cf427c9329",
+      "writer_destination": [
+        "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-income-tax.md#The base: Personal, spouse and dependent exemptions",
+        "skills/international/moldova/moldova-income-tax.md#The base: Professional practice and separate turnover regimes"
+      ],
+      "reviewer_comparison": "Retailarea50m2/income1.2m/1%/3000/750 retained, plus250shortyear andnewregistrationcutoff.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1024-037",
+      "Guide": "moldova-income-tax",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "**Gross income.** Gross income includes business and professional income, pay for work and services (salaries, employer benefits, fees, commissions, bonuses), rent, capital gains under art. 40(7), interest, royalties, annuities and insurance payouts not reinvested, debts written off by a creditor, state prizes not exempted, contract penalties received, and any other income not made non-taxable (art. 18). The non-taxable list is in art. 20. Each taxpayer must declare gross income from all sources (art. 13(2)).",
+      "original_unit_sha256": "b1c73ff356b2466ffe0871728be1f15baeeefce28318efe5b4a9a161eff3ee19",
+      "writer_destination": [
+        "skills/international/moldova/moldova-income-tax.md#The base",
+        "skills/international/moldova/moldova-income-tax.md#The base: Capital gains, property and financial receipts"
+      ],
+      "reviewer_comparison": "Grosscategory/art20nonincome/classification retained;not allbankcredits income.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1026-018",
+      "Guide": "moldova-social-contributions",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Agricultural employers (at least 70% of activity in CAEM groups 01.1-01.6) | 24% in total: 18% from the employer, 6% from the state budget | 2026 | annex 1 pt. 1.5, same URL |",
+      "original_unit_sha256": "0cb0e9354a0ec3cbd323a1e27ba3870a709e47de0c9126cdb010d11bd267dd84",
+      "writer_destination": [
+        "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds"
+      ],
+      "reviewer_comparison": "Agriculture18employer+6State and>=70eligibility retained;missingpolicyspecial>70 correction nowe3c93d44.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1026-020",
+      "Guide": "moldova-social-contributions",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Minimum monthly base per employee | the minimum wage, MDL 6,300, in proportion to time worked; for part-time or reduced hours the contribution is at least 25% of the contribution on the minimum wage | 2026 | Law 489/1999 art. 22(1), same URL; Government Decision 771/2025 |",
+      "original_unit_sha256": "f90dee5bb41d0b759241882590bb3fc09ffdb96f465d325d4627426feab0f206",
+      "writer_destination": [
+        "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-social-contributions.md#The base: Ordinary social contribution and the minimum"
+      ],
+      "reviewer_comparison": "Timeproportionateminimumbase plusparttime25%contributionfloor retained.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1026-024",
+      "Guide": "moldova-social-contributions",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Late payment of social contributions | 0.1% of the debt for each day | 2026 | LP320/2025 art. 4; Law 489/1999 art. 28, same URLs |",
+      "original_unit_sha256": "a8e4049e72686a533f33153925e56f076aa3fe7b192cd23fa50c4e60b623dd2c",
+      "writer_destination": [
+        "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds"
+      ],
+      "reviewer_comparison": "Social.1% actualprincipal/daysscope retained distinctcurrentmedicalCodecharge.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1026-026",
+      "Guide": "moldova-social-contributions",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Fixed annual health premium | MDL 12,636 | 2026 | LP321/2025 art. 4(2), same URL |",
+      "original_unit_sha256": "9b65de6132bd45668ad9705530b5704d20a4bd2bee55a20ab627a33f66719a4e",
+      "writer_destination": [
+        "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-social-contributions.md#The base: Fixed contributions, patents, taxis, day work and voluntary insurance",
+        "skills/international/moldova/moldova-social-contributions.md#Deadlines and filing: Actual CAS18-AN: annual fixed contributions and changes of employer status",
+        "skills/international/moldova/moldova-social-contributions.md#The base: Medical insurance is a separate computation"
+      ],
+      "reviewer_comparison": "Medicalfull12636 separatedfromactualdiscount2527eligibility.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1026-028",
+      "Guide": "moldova-social-contributions",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Fixed health premium, justice professionals and family doctors (annex 2 pt. 2, 2^1), paid by 31 March | MDL 12,636 | 2026 | LP321/2025 art. 4(4), same URL |",
+      "original_unit_sha256": "fa11fe230a9de16c86dfe4945c5fcaa1574468bedbc9ad99aeaf5ffca23334c7",
+      "writer_destination": [
+        "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-social-contributions.md#The base: Fixed contributions, patents, taxis, day work and voluntary insurance",
+        "skills/international/moldova/moldova-social-contributions.md#Deadlines and filing: Actual CAS18-AN: annual fixed contributions and changes of employer status",
+        "skills/international/moldova/moldova-social-contributions.md#The base: Medical insurance is a separate computation"
+      ],
+      "reviewer_comparison": "Justice/familydoctorfull12636timelypaymentcategory retained with specificcourtqualification.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1027-048",
+      "Guide": "moldova-payroll",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Statement to each employee of income, exemptions, deductions and tax withheld | by 1 March of the following year | art. 92(4) |",
+      "original_unit_sha256": "9008bc5fb01a86a5ebebf1d0daf1de8129286f59f4d31813c3d7e20fe2389500",
+      "writer_destination": [
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing",
+        "skills/international/moldova/moldova-payroll.md#The base: Establish exemptions from applications and evidence",
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing: Complete the actual IPC21 attachments",
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing: Annual salary and resident-payment information: IALS21"
+      ],
+      "reviewer_comparison": "Employeeinformation1Marchretained separatelyannualSFSreturn.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1027-049",
+      "Guide": "moldova-payroll",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| Correction of a statement already given | inform the employee within 15 working days | art. 92(4^1) |",
+      "original_unit_sha256": "bd5b85772d9c7d3dac4288cf7076f496058808f65ff22a219d154394ff5bb64a",
+      "writer_destination": [
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing",
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing: Complete the actual IPC21 attachments",
+        "skills/international/moldova/moldova-payroll.md#Deadlines and filing: Annual salary and resident-payment information: IALS21"
+      ],
+      "reviewer_comparison": "Correctedemployeeinformation15workingdays retained,notgeneralannualfilingextension.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1029-010",
+      "Guide": "README",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| PR, payroll withholding | moldova-payroll | checked against the law, partial |",
+      "original_unit_sha256": "89200d47e99306a8d77e14d27376dbe6c43d6fc3fa0091052316731d249d46a9",
+      "writer_destination": [
+        "skills/international/moldova/README.md#Domains",
+        "skills/international/moldova/README.md#Official starting sources"
+      ],
+      "reviewer_comparison": "PR remains partial;monthlyGovernmentmethodnowactuallysuppliedbutotherordinarygapsretained.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    },
+    {
+      "id": "MD-PUBLIC1029-012",
+      "Guide": "README",
+      "origin": "new370 public-merged reconciliation units",
+      "original_text": "| XB, cross-border | md-cross-border | checked against the law, partial |",
+      "original_unit_sha256": "d94a5a2dc53725647a400aa787ed62d5f8f56be8d433140387155f812f860800",
+      "writer_destination": [
+        "skills/international/moldova/README.md#Domains",
+        "skills/international/moldova/README.md#Official starting sources"
+      ],
+      "reviewer_comparison": "XB remains partial;PEprofitmethodnowexpandedbuttreaty/mobility/implementationgapsretained.",
+      "disposition": "PASS selected topic scope",
+      "limits": "One of370units sampled,not every370unit semantically audited."
+    }
+  ]
+}

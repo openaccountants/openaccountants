@@ -1,0 +1,57 @@
+[
+  {
+    "name": "perimeter-finance-current",
+    "url": "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/",
+    "retrieved_utc": "2026-10-31T20:16:33.193016+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/",
+    "error": "",
+    "raw_sha256": "55c7e2d42cb6f1337aafcfc86290a8cb5d762377b2c7cfa2cdd4ac4102c2177c",
+    "bytes": 3333464,
+    "reader_sha256": "8cd26aadd531d7a0122ff44560503cc0fd1507f2283273658525068333e80ccd"
+  },
+  {
+    "name": "perimeter-minimum-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2024-01-12-1",
+    "retrieved_utc": "2026-10-31T20:16:32.828977+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/2024-01-12-1",
+    "error": "",
+    "raw_sha256": "c9266354771a49241005dcc5fa12032c601d6967fcd61d6a319f7d8e4fc45051",
+    "bytes": 273184,
+    "reader_sha256": "49c395ea03bb727fa4e9b9c989ff0e66578355d1aadd94bdcc353a04fb713ef7"
+  },
+  {
+    "name": "perimeter-minimum-gir",
+    "url": "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/",
+    "retrieved_utc": "2026-10-31T20:16:32.899636+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/",
+    "error": "",
+    "raw_sha256": "168c0500e66357bdf269ad6d94c88f0f4acd9efa142b968ddb4584976207892a",
+    "bytes": 66152,
+    "reader_sha256": "cc7190a35242986dfb306c1d3ce5c08631f16ddf99be9a41525a841e1e86790c"
+  },
+  {
+    "name": "perimeter-minimum-overview",
+    "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/suppleringsskatt/om-suppleringsskatt/",
+    "retrieved_utc": "2026-10-31T20:16:32.909882+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/suppleringsskatt/om-suppleringsskatt/",
+    "error": "",
+    "raw_sha256": "c9ff977bd8a2f8e1658e5d368355c014a9e0a6c839e636811f1c3ba39fb6a845",
+    "bytes": 74998,
+    "reader_sha256": "ce925bc43fcc3f0c3092e26867c5a012590d558189c6975b55ac66195d051c3a"
+  },
+  {
+    "name": "perimeter-minimum-reg",
+    "url": "https://lovdata.no/dokument/SF/forskrift/2024-03-26-541",
+    "retrieved_utc": "2026-10-31T20:17:10.724033+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/SF/forskrift/2024-03-26-541",
+    "error": "",
+    "raw_sha256": "436f4fa22a2f083c9ac208b8039744f459d993476461c984ebc95e0423590304",
+    "bytes": 485609,
+    "reader_sha256": "b558b19f0e48a8fca22576d8085cb7b5c33012b8d9e573bfb227a5ff35d90524"
+  }
+]

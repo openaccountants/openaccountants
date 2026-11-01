@@ -1,13 +1,13 @@
 ---
 name: ro-employee-income-tax
 description: "Use for Romanian income tax on employees and on other non-business income of individuals for 2026: salary, rent, interest, dividends and gains on shares, with the Declarația unică filed by 25 May 2027. Covers the flat 10% rate, the salary base after employee CAS 25% and CASS 10%, the 2026 personal deduction scale (deducere personală) and the extra deductions for under-26s and school-age children, the 2026 tax-free amount for minimum-wage staff (300 lei a month to June, 200 lei from July), the end of the IT, construction and agriculture salary exemptions, dividends at 16%, interest at 10%, broker gains at 3% or 6%, gains without a Romanian broker at 16%, rent with the 20% flat deduction, CASS on non-salary income, and penalties. Trigger on: impozit pe salariu, deducere personală, suma neimpozabilă 300 lei, impozit dividende 2026, Declarația unică 2027, chirie impozit. Out of scope: ro-income-tax (PFA), ro-cas-cass, ro-payroll-social, ro-cross-border, ro-corporate-income-tax."
-version: 0.2
+version: 0.3
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -225,8 +225,6 @@ expected:
 | ANAF DGRFP Galați, the 2026 minimum tax-free amount (21 January 2026) | https://static.anaf.ro/static/3/Galati/20260123122801_suma%20neimpozabila%20in%202026.pdf | 2026-10-23 |
 
 Not yet confirmed: the early-payment discount under art. 121 for tax paid in 2027 is not set yet. The construction-sector minimum wage for 2026 was not checked. CASS on pensions above RON 3,000 is not covered. Whether payroll reads the personal deduction band from gross salary including the RON 300 or 200 tax-free amount: OUG 89/2025 and the ANAF notes are silent and no ANAF example was found.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,27 @@
+{
+  "requested_url": "https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro",
+  "selected_2026_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro#",
+  "read_date": "2026-10-30",
+  "transport": "Codex in-app browser, normal page load and 2026 version selection; automatic security verification completed without solving a human check",
+  "selected_version": "30-10-2026",
+  "current_modification_header": "LP235 din 02.10.26, MO539-542/30.10.26 art.578; în vigoare 30.10.26",
+  "body_characters_observed": 996453,
+  "selected_provisions_read": ["15", "24 (first selected part; full article not yet reviewed)", "32", "33", "34", "35", "35^1", "35^2", "36 (first selected part)"],
+  "full_code_reviewed": false,
+  "all_2026_version_differences_reviewed": false,
+  "PDF_saved": false,
+  "failures": [
+    "Web retrieval and direct shell PDF endpoint returned403/unavailable",
+    "Browser downloadMedia stalled and reset the browser runtime after a long timeout; no PDF artifact was returned. Do not repeat this operation. Use bounded DOM article reads and separately saved selected observations."
+  ],
+  "selected_short_exact_observations": [
+    {"article":"15(b)","quote":"pentru persoanele juridice – în mărime de 12% din venitul impozabil;"},
+    {"article":"15(c)","quote":"pentru gospodăriile ţărăneşti (de fermier) – în mărime de 7% din venitul impozabil;"},
+    {"article":"32(1)","quote":"suma pierderilor rezultate din această activitate va fi reportată eşalonat pe următoarele cinci perioade fiscale."},
+    {"article":"33(1)","quote":"are un venit anual impozabil mai mic de 360000 de lei"},
+    {"article":"33(1)","quote":"are dreptul la o scutire personală în sumă de 29700 lei pe an.","normalization":"NBSP collapsed to ordinary spaces"},
+    {"article":"35(2)(b)","quote":"are un venit ce nu depăşeşte suma de 12400 lei anual.","normalization":"NBSP collapsed to ordinary spaces"},
+    {"article":"35^2(6)","quote":"în cuantum de 20000 de lei. Cuantumul deductibil se aplică cumulativ pentru toate tipurile de învățământ și/sau perfecționare profesională și pentru numărul total de beneficiari."}
+  ],
+  "status": "Writer-selected browser observations only, not an independent review or complete current-law audit. Exact article scopes/amendment dates must be reconciled in the final per-Guide ledgers."
+}

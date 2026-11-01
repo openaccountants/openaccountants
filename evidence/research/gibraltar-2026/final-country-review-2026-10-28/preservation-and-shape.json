@@ -1,0 +1,3553 @@
+{
+  "pin": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "original_guides": [
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "version": "0.1",
+      "old_word_count": 1051,
+      "new_word_count": 1051
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "version": "0.3",
+      "old_word_count": 2907,
+      "new_word_count": 2907
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "version": "0.6",
+      "old_word_count": 4284,
+      "new_word_count": 4284
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "version": "0.8",
+      "old_word_count": 2959,
+      "new_word_count": 4351
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "aee5a9f04743ad23b8ddd43d9ac4e95fbd22b92a8888467741349f9953a03c67",
+      "version": "0.19",
+      "old_word_count": 8522,
+      "new_word_count": 9955
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "version": "0.3",
+      "old_word_count": 1809,
+      "new_word_count": 1809
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "version": "0.4",
+      "old_word_count": 1702,
+      "new_word_count": 3229
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "version": "0.2",
+      "old_word_count": 2378,
+      "new_word_count": 2378
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "version": "0.8",
+      "old_word_count": 3681,
+      "new_word_count": 3681
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
+      "version": "0.10",
+      "old_word_count": 5252,
+      "new_word_count": 7730
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+      "version": "0.15",
+      "old_word_count": 7022,
+      "new_word_count": 9178
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "version": "0.4",
+      "old_word_count": 2018,
+      "new_word_count": 2018
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "version": "0.1",
+      "old_word_count": 1453,
+      "new_word_count": 1453
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "version": "0.2",
+      "old_word_count": 1893,
+      "new_word_count": 1893
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "version": "0.1",
+      "old_word_count": 933,
+      "new_word_count": 933
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+      "version": "0.9",
+      "old_word_count": 3263,
+      "new_word_count": 4949
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "version": "0.5",
+      "old_word_count": 2043,
+      "new_word_count": 2043
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "slug_preserved": true,
+      "protected_metadata_changes": {},
+      "cta_byte_exact": true,
+      "body_sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "version": "0.8",
+      "old_word_count": 3231,
+      "new_word_count": 3231
+    }
+  ],
+  "original_research_count": 121,
+  "original_research": [
+    {
+      "path": "docs/research/2026-10-22-gibraltar-accounting-periods-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-accounting-periods-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-appeals-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-appeals-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-bookkeeping-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-bookkeeping-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-building-allowances-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-building-allowances-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-capital-allowances-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-capital-allowances-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cessation-stock-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cessation-stock-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-clearance-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-clearance-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-formation-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-formation-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-reporting-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-reporting-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-returns-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-returns-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-scope-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-scope-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-connected-party-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-connected-party-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-metadata-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-payments-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-payments-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cross-border-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-customs-residence-delta-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-customs-route-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deceased-taxpayers-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deceased-taxpayers-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deductions-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deductions-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-domestic-pensions-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-domestic-pensions-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-syntax-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-syntax-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-foreign-tax-relief-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-foreign-tax-relief-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-formation-accounts-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-group-accounts-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-group-accounts-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-health-insurance-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-health-insurance-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-payroll-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-interest-royalties-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-interest-royalties-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-losses-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-losses-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-map-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-map-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-election-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-election-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-mixed-loss-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-mixed-loss-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nonresident-pension-relief-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nonresident-pension-relief-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-payroll-reporting-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-payroll-reporting-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-qnups-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-qnups-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-records-invoices-reliefs-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-refunds-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-refunds-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-reliefs-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-reliefs-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-representatives-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-representatives-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-residential-disposals-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-residential-disposals-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-secured-loan-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-self-employed-procedure-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-self-employed-procedure-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-shareholder-loans-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-shareholder-loans-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-spain-residence-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-spain-residence-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-stamp-amendment-status.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-stamping-procedure-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transaction-tax-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transaction-tax-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transition-spain-full-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-treaty-credit-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-treaty-credit-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-independent-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-business-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-business-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-employment-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-employment-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-investment-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-investment-sources.json",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-social-review.md",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-social-sources.json",
+      "byte_exact": true
+    }
+  ],
+  "accepted_research_count": 32,
+  "accepted_research": [
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/coverage.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-method-options.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/foreign-exit-ledger-match.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-connected-party-pricing-and-interest.before.txt",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/gi-foreign-tax-relief.before.txt",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/README.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/check_closure.py",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-evidence.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-result.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/calculations.txt",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/check_pinned.py",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/pinned-evidence.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose-calculations.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/prose_arithmetic.py",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/report.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-42697c1c/result.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/pinned-archive.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-ledger-match.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-method-options.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/publication-preflight.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/readme-options.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/research.md",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/source-receipts.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/tp-full-ledger-match.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-exit-ledger-candidate.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-first-candidate.json",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/validation-review-repairs.json",
+      "byte_exact": true
+    }
+  ],
+  "old_control_count": 47,
+  "old_controls": [
+    {
+      "source": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "sha256": "524bf65bdd6db5ec92bcaaa53c286d9d13bc5d4640172281d6a02f36cfb13cc7",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "df1f6a634de861ec18d58a690a49744ef50bbc28da5b0abe4ec316e03d39e9ab",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "36dcd30ae7c02a3481261362c432e96c73ce249fd702378ab3abc7cc6558bb3a",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "d915cfdf68b26f99bb59076ddd8cfff46cf7a8c966c38ceac6be4af083c34274",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "88d60ee92e21535d954ff09800166232d2afd474c235a9776a201b6660450cad",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "730aa9968751ff286e09cf3be364f136fd90e695a9be48ca52ac9553637054f9",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "79c3d9ce1290f13b38a0ecc3e0ad2446ea257c63c6728ed73ea74b2f1b8547fc",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "474a9707a73d1340de290d4d9f0b6e102352e2754b6ce15044cf35cb4b4a648c",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "42772d0b025c2e2b08af11d5d58686d4577b4ad10a880eb6754c3f039576c46a",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "3bb6f68645e641cd128c0ac35cbea3c50800e7abc4e29a71f19e1d050837c175",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "fd0be8923735616651757ac65fb17b8b2961da1d62c4ff3c25c4954abfec735d",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "sha256": "b0822cab298c31fb8277dc0af280415116bebda56dafdbd4947c9318d5f19430",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "bbcca335ddbe2631260225be2c66332790d34032318037ca01c4b1603347b9a0",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "c5cbaeea89c6b3d82b6012882ea7787e927149de32610e250aecddcde94b5431",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "sha256": "432c9c8f2c4371363c88367196ff32a80192b6320f0cf705a5843ab6f8b38b25",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "713862779684d570d518d71e1510a80af919944a3baba42a7cbc71d3c755ab5c",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "935592c72b479f8d7e2da3d063517a6394d39d8b541cc0dc1627e103fcfe5f57",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "b1beaf70afeb1abedcb261b4032f5ff0b29ec486b3bc27593e19e64ef1229cf4",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "2e8e5ea004f6fbfaba6b79191bbb8ccfe98a95982f2f61a69b8703d45e45c190",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "992e51419dbc34a47be25c1f8094fb508dfd4672b01d506c6ca9fddb43746e3b",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "1299aa37ceffc5fa940725212b0aa04467ce1c2f5419ff37417e9d2f8805f071",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "c0629e453f4e1a10b70f010d4e8c8340387ee13a6638cb24fef4b1eb1aa25846",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "8441af860b04e38f967dab7bbd52cf85a762f88ed6168913efe5234e4248b535",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "665c8f09aafe43ad1ad1334cfcfc58dbdcae6fb02f7d84796ac9865cc2eee52e",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "909ccb1c6a9962442d3f7cdd224dd2436a2d340847335d4b51b6e9a4fd568591",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "b4f4b8eaec3ff4ef6b3881c9079d56008d6028dd9a74d1fb0838a7f4d1ffa10b",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "8faab7b369d0172fd56032205820450753c89f202332d3a81c0f0ad5b15df532",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "785c7d01a9ac2e23760e9be720213dba1574057c874b94fb10054306b17b2727",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "7b85989eb8b83909307dd3082603acb53ac341e81dd2f892b6d401d2855c6252",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "3f81ff5d60c4affd6fade7838955a8a289c071db57ba488b842b7ad9e33b536f",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "f6a6be7c00365eb03965565ac94672c512c659c4215a9f2d7dc80ce474ef7d87",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "78b5746fcbbdc54a6a51fc077f64a072df7bfbe8663357f85528ad5aa9587c20",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "0f05873c26d6a72be905a9e7e34f13ee9ebd256d67f1d90dfa0149f9c663fda6",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "ee7967af8df2462b34f0b07face8fa34df685e5c25608e110a1d75f1ac7a9393",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "d3b8bdb9c931aa9ec8e72de8a9db9b1df9c5d1dd0915cfeda43ae5ab9b1666c9",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "718d15c397058b35ee0596dfa26f84bb23b7cd640c56429ddd06c662a1d6e187",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "28eca616425abc9a3fe98f290748a5e5e11eded684d3d25e60bbb7b266f60508",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "7799f3f07a79ebcecde564579bb9f92d5d3c1b30f00cefada2af22680adfa7ea",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "77858ba5e1845b8cfe6baa84d5cece00ed047ee9d4989bc6d5eaf6cfd7df4840",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "bf1fe7af61b773e1ecce9aa8514ba767db88d34fc55afb41380420be85d343ac",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "5110158db02adee4c16f15e2f437d08defd88e011363a462469e5bb4b08448a5",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "706d385433deda1b702beb81682ea5d62a657172fc3da4694a72a93b2fc5b496",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "58c8337d270b05cb70902f340476012d26eb0b19f6e00a0d041db37acffb98ff",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "ee5c74ecea992a88040f73fb2db415deb629d809ace600917e118d461c970e32",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "336662b94477cd09b4516aedb9a48b28812aeaa354203b7eece91e24eb744450",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "fcfcde601facada1e5e3cd2397135ed1f64ce50b8a80adb732cd77d3a197137c",
+      "preserved": true
+    },
+    {
+      "source": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "3d9b185a60169335e09ba539588e9464a6d77726ee64d0fbf2aafed872f016df",
+      "preserved": true
+    }
+  ],
+  "four_rewrites": [
+    {
+      "guide": "corporate",
+      "before_is_accepted_head": true,
+      "original_control_count": 8,
+      "original_controls_byte_exact_in_main_or_supplements": true,
+      "main_oa_checks": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "old_paragraphs": [
+        {
+          "id": "CORP-P001",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Title",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf"
+        },
+        {
+          "id": "CORP-P002",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Scope",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7a83193dd62acd884a838ceef13871cf65360a0cd19e401747c9a3ac2d1fa52e"
+        },
+        {
+          "id": "CORP-P003",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Who this applies to > Scope",
+          "disposition": "Earlier read dates retained; actual new ledger/read scope and independent-acceptance limit recorded.",
+          "old_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc"
+        },
+        {
+          "id": "CORP-P004",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Charge and rates",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6787ab18b4dff3b525081895acec37257ab593b71f40f0b37697b24b49d92b4b"
+        },
+        {
+          "id": "CORP-P005",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Company residence and the source of profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "f78dc871bc08568d4b3083ae00280c377d7d53707f9944c652300e4d3d9e618d"
+        },
+        {
+          "id": "CORP-P006",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Company residence and the source of profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ab44d98f922f4b9b94372f30e6a4b6a1d45405a840f4ea71d829bfaf3053d14a"
+        },
+        {
+          "id": "CORP-P007",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Company residence and the source of profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "03fcbd46b965aadaf286e6b47682ca3dfbb212fe39914bc43f2810dabc5d60aa"
+        },
+        {
+          "id": "CORP-P008",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Company residence and the source of profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "45dcb1078ad96c6a7464e582d11fc5583c48a4f068a18b33a91d31794d757ae4"
+        },
+        {
+          "id": "CORP-P009",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to > Company residence and the source of profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "68eb1227555264db4ef4d3d80e166ae769f7860593f716949da302efd294c59b"
+        },
+        {
+          "id": "CORP-P010",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > UK treaty: permanent establishments and business profits",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a06db79907be0cb87d71f72b8754f57a0e53a1930ea749a263a6570e166be3ea"
+        },
+        {
+          "id": "CORP-P011",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Fixed places and projects",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7de3d0ac5b389d15caa6fe6a185528347cf979722b9088f83c4324641d219e86"
+        },
+        {
+          "id": "CORP-P012",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Activity exclusions and combined operations",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0f7e99e68d9abb723560699ebb4279fe33d2bc80992b8016a9d16828acd4bf36"
+        },
+        {
+          "id": "CORP-P013",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Activity exclusions and combined operations",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d9635dd8e0bbd893449faaa3b1c97c7e9a31786e0a4a591dbd654b10d78b0dc3"
+        },
+        {
+          "id": "CORP-P014",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Activity exclusions and combined operations",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5bcc3b088a4ebe130dc67568d239df1294f00a1b9f2b8ad030b2c0d87f69d692"
+        },
+        {
+          "id": "CORP-P015",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Activity exclusions and combined operations",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5e148bc20a552040f7985a444fab640a163b9000cfb0f9d6702a8b82757edf44"
+        },
+        {
+          "id": "CORP-P016",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "d915cfdf68b26f99bb59076ddd8cfff46cf7a8c966c38ceac6be4af083c34274"
+        },
+        {
+          "id": "CORP-P017",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Contracting agents and subsidiaries",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "02a7c1d862545c74dc8f4417d4a304489ab72e2adc5db4964070e28871f8316a"
+        },
+        {
+          "id": "CORP-P018",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Attribute profits rather than taxing all sales",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7ee12f7fd81440ed58bf06841b8ff1d89cb6510e12a3cd6a9635fe9fafd8004c"
+        },
+        {
+          "id": "CORP-P019",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Attribute profits rather than taxing all sales",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2ec1576c475e555d14b8708e31a355701f4bcb77098e7fedfe89e17ee78d3863"
+        },
+        {
+          "id": "CORP-P020",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Shipping and offshore overrides",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a0e96f91a6d0e0553076e027c294480464ced59ca6c4fd696050caf9f7b0cd66"
+        },
+        {
+          "id": "CORP-P021",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Shipping and offshore overrides",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a83c3cf4412b21b1722d1b72ae3e561cf41363fed447d5a25a9f710f5515a6e9"
+        },
+        {
+          "id": "CORP-P022",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Shipping and offshore overrides",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d20793d6c17df0dc404ca22e9c55afd3c90966b584898887535a5f3dd121ace0"
+        },
+        {
+          "id": "CORP-P023",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "88d60ee92e21535d954ff09800166232d2afd474c235a9776a201b6660450cad"
+        },
+        {
+          "id": "CORP-P024",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Shipping and offshore overrides",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dad3ede30bfc774113520de49a1d463b0e6e9960145ec81c01dc3e1307cb3f46"
+        },
+        {
+          "id": "CORP-P025",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0dab36f223754c239a04ba888a74646482b8987c16dc39148629f36141612f8e"
+        },
+        {
+          "id": "CORP-P026",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7bc081d675476b1fe16c554e507dcc089ef982766cf0480798a47fa580e97335"
+        },
+        {
+          "id": "CORP-P027",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "43f4909bdb155ea2ec90f9520771dec89cda6bd0d199b8e7f36496b1e59cb219"
+        },
+        {
+          "id": "CORP-P028",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e07c806d610cfad3ba53b18f7df58ce9bb41973d93bde1d7813c57d080c732f2"
+        },
+        {
+          "id": "CORP-P029",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e1da11f051ab3f37b87ec9a75dbd92968b15eda1abc646d771a7cbf18880a727"
+        },
+        {
+          "id": "CORP-P030",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ffb5c25ea077f5d056e8467b8b482ecd83ff38a99c007e9b7138da6868ee34f6"
+        },
+        {
+          "id": "CORP-P031",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3d1e7f690dfb7f22c28d83c91a65e78d68f18626179e895093281afba73d0a14"
+        },
+        {
+          "id": "CORP-P032",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3479dbdbb790a6352fb303f1f031d51a9518676f375a185ccfdcdab3810eb85a"
+        },
+        {
+          "id": "CORP-P033",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Establish the tax accounting periods",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9d436780f253ca111d1dd34d6f63b1eafb3855173d52c12c6aef082e4d2c75c2"
+        },
+        {
+          "id": "CORP-P034",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Establish the tax accounting periods",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "418698df7739ab4609a09c7ce2db8572012dcfca312e61439b597252b41e445d"
+        },
+        {
+          "id": "CORP-P035",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Establish the tax accounting periods",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5f9a9cc18345b803bd1d57d23c479d541cdc5ba1e426d4d55800b89c1958086c"
+        },
+        {
+          "id": "CORP-P036",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Establish the tax accounting periods",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d0a99858ecd1aa314d9179bd4a9821b6ef19e5299a7d819a1f3300a738d6d56d"
+        },
+        {
+          "id": "CORP-P037",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Filing requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c110aaf3406ef1ec3110359938e028da7aecea43c1a6aa1c244b5281ea71afe8"
+        },
+        {
+          "id": "CORP-P038",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Filing requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0890901ff507f7f67c501aec4945f1b4a64dff40b1d6962abbe6fbcf1f725aae"
+        },
+        {
+          "id": "CORP-P039",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Filing requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "bf08bfa86fa61f6d315ce0d9bb5c5c1fd90790bffbc07ad02ca0a00bd0d61f2c"
+        },
+        {
+          "id": "CORP-P040",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Filing requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "097eb8bda25c9ea3f446f816119019cbff3d9a4d9f7e7ebc4757df4046d4fb94"
+        },
+        {
+          "id": "CORP-P041",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Filing requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dc5edb8c8506b70fa7c6ccff9f6b5552486c6960bf4273f6bcfc3d026c63e2d3"
+        },
+        {
+          "id": "CORP-P042",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > From accounting profit to deductible expenses",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0c8f212f3e62cdb2740c7002bf3478e62fe7e4e207590aa10a24c5046a6c4d0c"
+        },
+        {
+          "id": "CORP-P043",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > From accounting profit to deductible expenses",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "f4cf730a15c2b677d30dd7dfb2585d78417db162a553f22d143299483065e9e1"
+        },
+        {
+          "id": "CORP-P044",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > From accounting profit to deductible expenses",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c7587f84c32a57bcba99e9630cde8df8d74611f745c0a15980b1fcf1b0dcb89b"
+        },
+        {
+          "id": "CORP-P045",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > From accounting profit to deductible expenses",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ada2dcddddfaa63d05f12ebc6e0972179442902ccdf49daa20e32cc07cc44941"
+        },
+        {
+          "id": "CORP-P046",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > From accounting profit to deductible expenses",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "cc17a3a1d2ed6975ac5f6c2f6c1cd372f8474a1e0cb63b78397c0fd2b41a0092"
+        },
+        {
+          "id": "CORP-P047",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e5e9649e08a48e41e9993d2debaff36b40d0ad3b0ec6f127a0035b93281ec1c0"
+        },
+        {
+          "id": "CORP-P048",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dc828f63bc6a840d7360ca006251084804cce19bae2605a9ca30bce103bde886"
+        },
+        {
+          "id": "CORP-P049",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0404155ecd7d4f8080d8c1c8d709b42cde69d9bb6afa129218b0e034c4fd14ab"
+        },
+        {
+          "id": "CORP-P050",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dc4fbba60a6cc4964623f43d5df33cb2cd7478f27b048d41b99ac2a456ba5a26"
+        },
+        {
+          "id": "CORP-P051",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0ac48c32d1fb6497be223d9161031d23122efa60f93cb3051478d2fe5449f7d0"
+        },
+        {
+          "id": "CORP-P052",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Bad debts, entertainment and gifts",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "41b1bcd4ed8ee8c02602f36e0ef1cd47adc7a24da52a8bb5244017902d28ac3e"
+        },
+        {
+          "id": "CORP-P053",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b154d44cf6e9ff3b4166be9ee66a7de0767d803283abc77bc7794eb151f81879"
+        },
+        {
+          "id": "CORP-P054",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8c8c25ea5ea044a9d8d2e7c9c374666fe3fbf35aab912f90e89c9ab72b34fa08"
+        },
+        {
+          "id": "CORP-P055",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ca832e6a65f041a144797715d508d47b51cc342585ca792c61442ee392384dbc"
+        },
+        {
+          "id": "CORP-P056",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a16b1455f691df964a4fd8c7ccfe88bd8c26a9589f804c59ec2c99713481fa06"
+        },
+        {
+          "id": "CORP-P057",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4f3c78d368e0f05f782b1e079f1b3c3cb3cd56b141504fc9ca09773e9a9661cc"
+        },
+        {
+          "id": "CORP-P058",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Disposals and special capital-allowance cases",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "af1c418b3c18aa0dca52a0a40ba537584c407884f81301d2d4f5c677e0584f34"
+        },
+        {
+          "id": "CORP-P059",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Disposals and special capital-allowance cases",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6f61cf921b6c991291e8d7cf62d3b9aadade5ec204e59594292b87724c0ccc07"
+        },
+        {
+          "id": "CORP-P060",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Disposals and special capital-allowance cases",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8b47f9b984e93be5b56f9cab3158e56907a8c9aabb2695575b10b8fe6835b91e"
+        },
+        {
+          "id": "CORP-P061",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "725e548e146043fccc00df9073a842ee0c93a9b713a0d33afd82efdd25b1bd6b"
+        },
+        {
+          "id": "CORP-P062",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1786f7efeba773c1a5b16c57730f69a46a7f2d49b2c34f41774b85111d6a0c6b"
+        },
+        {
+          "id": "CORP-P063",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "54220f4704244a85d0b491ee93d9f0a698a2521ca0553e166510a595a2e0a89d"
+        },
+        {
+          "id": "CORP-P064",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c4930add610fd937394406f7928a807f3428400f442b1d807c972863a911bbc3"
+        },
+        {
+          "id": "CORP-P065",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b07217fc2302787d23442b3dae2c4a70a76f02f0df2d75e3be936594c644243b"
+        },
+        {
+          "id": "CORP-P066",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9b12a05de5f1ae5b7aa589c13ba8c8d9530227ee74b200d7204087be2f8a3975"
+        },
+        {
+          "id": "CORP-P067",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6a4e468291d286a2c31dfecefa3a9600c5301a69a052f9e1e22b3910e90a58a3"
+        },
+        {
+          "id": "CORP-P068",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Buildings: separate eligibility and historical schemes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "77f4d8a40e93a571ff75180f872af4512267a679546970eb462050fcd61bb59f"
+        },
+        {
+          "id": "CORP-P069",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2dae2430fb48ec3dc8bbf68813271b2a2dab48d5628c81e1184471dcfed599ff"
+        },
+        {
+          "id": "CORP-P070",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2af370b86433d04ef0a063df3925e7917ebcbc784b7c215978e9307f82597697"
+        },
+        {
+          "id": "CORP-P071",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "49d595a90b63192bcd72a1a4bd93d112e6aec2c1c52335af5c92eed618821c0a"
+        },
+        {
+          "id": "CORP-P072",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a3b90708626d88caf018fa34708dbae0178809a915ccf2642083659098d03c87"
+        },
+        {
+          "id": "CORP-P073",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "730aa9968751ff286e09cf3be364f136fd90e695a9be48ca52ac9553637054f9"
+        },
+        {
+          "id": "CORP-P074",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "824922ab4bc0f012dcdecc7898b79b5a4342c662411f8f441cfa5ecb46a496e1"
+        },
+        {
+          "id": "CORP-P075",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "79c3d9ce1290f13b38a0ecc3e0ad2446ea257c63c6728ed73ea74b2f1b8547fc"
+        },
+        {
+          "id": "CORP-P076",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trading stock when a trade ends",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c74ecef158f202451bae3d42b41acad1fb94ac3ba1257ef1782f27002b797f7f"
+        },
+        {
+          "id": "CORP-P077",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trade losses: eligibility and continuity",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2b8de760895721e483f6cf940292edc2c086732ba390bc08fed0e21765faeda1"
+        },
+        {
+          "id": "CORP-P078",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trade losses: eligibility and continuity",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3def1c77e708ba40d32c4b766b2a7dde62deb052979b45cbec29fd9be627b14c"
+        },
+        {
+          "id": "CORP-P079",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Trade losses: eligibility and continuity",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8d0391d3d5fa54f143e2000d860bf54e50d8d5a5ef3e4378a9c6407f30af6972"
+        },
+        {
+          "id": "CORP-P080",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Designated persons: 50% loss limit and exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "59f904969e0f4f375e5e1a0bb8a7328248cf670eddb4c8f26d2c203a426ba0cd"
+        },
+        {
+          "id": "CORP-P081",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Designated persons: 50% loss limit and exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "43f7fbed227a53a46b0905d92d76c7d036724f3364ccde7c9fdc8628c9f74cb1"
+        },
+        {
+          "id": "CORP-P082",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "474a9707a73d1340de290d4d9f0b6e102352e2754b6ce15044cf35cb4b4a648c"
+        },
+        {
+          "id": "CORP-P083",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Designated persons: 50% loss limit and exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "96f37602f91383a9455c1ac0293ee6777591127fe748063f5b4955b7e130c7b7"
+        },
+        {
+          "id": "CORP-P084",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0d26ed1fb3e555b1bd1d72d76c3e1d7a0439a75321e60ed41a5477e51de19dff"
+        },
+        {
+          "id": "CORP-P085",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3301b2aa4033affa52f6be1cf7804ee01b6ee3490910f561d4c5ae12ac658f58"
+        },
+        {
+          "id": "CORP-P086",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "167953e11e1b1adf54ca78cb3a4fcecd52ec5af8327e9e27a77dbee5b19d26bf"
+        },
+        {
+          "id": "CORP-P087",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "42772d0b025c2e2b08af11d5d58686d4577b4ad10a880eb6754c3f039576c46a"
+        },
+        {
+          "id": "CORP-P088",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "26e70eb4bd5d330a5d2c5473b155a55d712c2531eccae75f56aa72e3fa8e371c"
+        },
+        {
+          "id": "CORP-P089",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Losses transferred in a group restructure",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1a3c2b5b40c0044adb4ac48252d5466700e398cf47dd2c0bfb56c083c2e0bbb2"
+        },
+        {
+          "id": "CORP-P090",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Losses transferred in a group restructure",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7b1180eb53d874430aa65168889af80d2ed28dfc5cef0cbad397bd301bc94049"
+        },
+        {
+          "id": "CORP-P091",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Losses transferred in a group restructure",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4a0b94b0aa16c9feb5be9189e8137b4b81fad6cef116bb4ad4961ad0787d41b8"
+        },
+        {
+          "id": "CORP-P092",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Payments on account and balancing payment",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "58ce3763d0a2fb38c7d3bccde62873a48f7c1c0e154cfe0758de05daeeab4f23"
+        },
+        {
+          "id": "CORP-P093",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Payments on account and balancing payment",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b4c0813170938aa7ecc2b8e169219088d4c1b16581222e785dafd9b37e3c20ad"
+        },
+        {
+          "id": "CORP-P094",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Payments on account and balancing payment",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9e9f40542395fe1cfdf768e5acfb4e80b9bcbf0a7d2f27c6bd42a0a55e72648d"
+        },
+        {
+          "id": "CORP-P095",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Payments on account and balancing payment",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "60ee9ece6b0c30cd18ff82e76b78a3eced7348eae12f23fb8cb25e482d855106"
+        },
+        {
+          "id": "CORP-P096",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Deadlines and filing > Applying to reduce instalments",
+          "disposition": "Unverified CT4-field limit narrowed by the sourced procedure; statutory decision/surcharge conditions retained.",
+          "old_sha256": "15fd3505eddd41ac2c7105e8b7c4f9f67c0d961883bc698ad8ce41d6e77f1a0e"
+        },
+        {
+          "id": "CORP-P097",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Applying to reduce instalments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "63c61fe4454af608e6d893956355a8c0045a3080ba4c22ccf5ac27d6cc512101"
+        },
+        {
+          "id": "CORP-P098",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Computation and examples",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "08378637995ba87cdbf6a7a90ef60e4772215a0d5c1894c27d8764541a3281fc"
+        },
+        {
+          "id": "CORP-P099",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: ordinary liability and matched payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "056033afdf6cb230c518aba780708f7c793326b55520170abe28e036950f05f3"
+        },
+        {
+          "id": "CORP-P100",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: ordinary liability and matched payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3bb6f68645e641cd128c0ac35cbea3c50800e7abc4e29a71f19e1d050837c175"
+        },
+        {
+          "id": "CORP-P101",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "e71b10fdde8919cbf56f0c472d5a214992cdd2517f7253719af602d7c14892d9"
+        },
+        {
+          "id": "CORP-P102",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Research: preserved-corporate-controls.md",
+          "disposition": "Full original executable block/context byte-exact in supplement",
+          "old_sha256": "fd0be8923735616651757ac65fb17b8b2961da1d62c4ff3c25c4954abfec735d"
+        },
+        {
+          "id": "CORP-P103",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Failure and boundary checks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b98283fb5ffabff0e77caad7a30beb74c8918d9ca814bece801915995188f17c"
+        },
+        {
+          "id": "CORP-P104",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Failure and boundary checks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "eea78a6e642ed5e51ea0a446ed00c1e59e3a25d361b29c58dc4f69ff6722d6c0"
+        },
+        {
+          "id": "CORP-P105",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Failure and boundary checks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "f28377e9a72cb33bdbd28144dc5bdfe18d997f5aaf52baecca489df9a7120102"
+        },
+        {
+          "id": "CORP-P106",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Failure and boundary checks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "92acbdb9dca97a78c88edeaf286567ec1687bd3a3bd35a008bc95fdacff978b1"
+        },
+        {
+          "id": "CORP-P107",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Failure and boundary checks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dc1e3736e96b02d9d394a55b9ac7aef633ddc86790954b0f1160d790db2cea32"
+        },
+        {
+          "id": "CORP-P108",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "fc4268e88a14286e66ce59339d688fc668943438c34821c73984c29ac8b2604f"
+        },
+        {
+          "id": "CORP-P109",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "49707bbea41f75cfdf98fdb00736b25d1bc69c90729b7c8e10ec409d00ea8247"
+        },
+        {
+          "id": "CORP-P110",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Sources",
+          "disposition": "Earlier source date preserved; actual new read scopes distinguished.",
+          "old_sha256": "334b7218e751d42722e8341d7fc131f43b9869bf4d58170a504df454764a0a37"
+        },
+        {
+          "id": "CORP-P111",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Ask the client first > Self-checks and output",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a"
+        },
+        {
+          "id": "CORP-P112",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e"
+        },
+        {
+          "id": "CORP-P113",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0"
+        }
+      ],
+      "ledger_sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f",
+      "canonical_md_ledger_sha256": "30ae753b37704cc630f71afa0d9fbbd631b537c76f75ab893e8bb4d08fdd6a5a"
+    },
+    {
+      "guide": "individual",
+      "before_is_accepted_head": true,
+      "original_control_count": 8,
+      "original_controls_byte_exact_in_main_or_supplements": true,
+      "main_oa_checks": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "old_paragraphs": [
+        {
+          "id": "IND-P001",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Gibraltar individual income tax: ordinary assessment v0.10",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf"
+        },
+        {
+          "id": "IND-P002",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "fdabf1d896e2b76b13f31a7cbbfad401b52ef9fd219aad35470644daf7fb7453"
+        },
+        {
+          "id": "IND-P003",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc"
+        },
+        {
+          "id": "IND-P004",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Residence and filing intake",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "561c1c2e7bf6f911138d2af078abc533cd8098a87a700cb1a53261ee10e39c82"
+        },
+        {
+          "id": "IND-P005",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Residence and filing intake",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3de6848c29fce1066adb973f6c9e176f173ed1edcb873848571377b0aff7810b"
+        },
+        {
+          "id": "IND-P006",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "79d5150581549c2eb011d974966198dfec9c5e3ef5ae4f677233e5f32d02d449"
+        },
+        {
+          "id": "IND-P007",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "dd0f4f311d6f696c4d30b200875e04c39f499ec87b0104092d0f33333e635cb1"
+        },
+        {
+          "id": "IND-P008",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "778c38bdeed04635d74bb3a4c890870159b700911e126cf8e577578a9cde8613"
+        },
+        {
+          "id": "IND-P009",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "All operative limitations preserved; old-reference subject and conditional continuity evidence added.",
+          "old_sha256": "59d7ae544a23b2f67f705284f7bb96f3a7b1297355897598b88a2ce6831f2312"
+        },
+        {
+          "id": "IND-P010",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: The base",
+          "disposition": "Core method retained; old incomplete-schedule caveat narrowed to named outstanding instruments/drafting questions.",
+          "old_sha256": "a8c550d7bdcbe2d30f5e819bc25a3602ef7b0ff5c81d735d5548f74b432dfb31"
+        },
+        {
+          "id": "IND-P011",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9ba1de03180d4cde240e70d0cb8bf955e329f7b3f33e0b2c2d1e877cf0ddab05"
+        },
+        {
+          "id": "IND-P012",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "84a15299878b3af6804a9f3c678beee51a8f053cfd9c4d91d723dc77a462fa2a"
+        },
+        {
+          "id": "IND-P013",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d5550e9dd66981db9fcf66cf333a09b17cc533ffdc1f9eb90eb5c2cc4844bf67"
+        },
+        {
+          "id": "IND-P014",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Health-insurance deductions and family-policy restrictions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ac2a505ef707b93472e2c20909609a9ea398a2419a2744f59fc3954b6a3318ab"
+        },
+        {
+          "id": "IND-P015",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Health-insurance deductions and family-policy restrictions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c866e9119e292b36235fefb2cfacd08add68e93b9fb28244a338f361dea36b3d"
+        },
+        {
+          "id": "IND-P016",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Health-insurance deductions and family-policy restrictions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b0b36ea6870b510da53d744c0134f23cdf1d99ab81149d9801d9751626e440c1"
+        },
+        {
+          "id": "IND-P017",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Health-insurance deductions and family-policy restrictions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "040ac7d563cf0bb414d424c102787cde6c608585262011d0d727e9ad3f9f2d56"
+        },
+        {
+          "id": "IND-P018",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "713862779684d570d518d71e1510a80af919944a3baba42a7cbc71d3c755ab5c"
+        },
+        {
+          "id": "IND-P019",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Low-income exemption and taper relief",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1721a53db0942f251331f44953a053cc0efc55ab51ea269c9b127a7673552316"
+        },
+        {
+          "id": "IND-P020",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Low-income exemption and taper relief",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d2c9129d11a07b3640ca3df696276c3198d39b3da48057ca93d31e903572e09a"
+        },
+        {
+          "id": "IND-P021",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Low-income exemption and taper relief",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "547e18bf7400915a1cfa19685e1af91a62fb80615b63c26a7c28c326422b470e"
+        },
+        {
+          "id": "IND-P022",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Low-income exemption and taper relief",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4f6910e5a454ec9407c245c6e2c6d4af37b40c83ae26bc9de3fb428a3d273b69"
+        },
+        {
+          "id": "IND-P023",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "935592c72b479f8d7e2da3d063517a6394d39d8b541cc0dc1627e103fcfe5f57"
+        },
+        {
+          "id": "IND-P024",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Low-income exemption and taper relief",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9715700dc08e4f1f91daeb6d3f1084aec422eb849512879fc5bcfc96fcde9435"
+        },
+        {
+          "id": "IND-P025",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Computation working paper",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3b2936177ea7f5aa673af50e1e31546e8e587bb8f7cf08e23c39bf527ed45ef6"
+        },
+        {
+          "id": "IND-P026",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Computation working paper",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1490063ea750e64659df8999f1838501e41d341ac39d004cb004628d03cb687a"
+        },
+        {
+          "id": "IND-P027",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b3255147ff2a91bd214fe46c0fc8b1c7afa7c8f2a5bbd8b1d75e3ff08776a644"
+        },
+        {
+          "id": "IND-P028",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Payments on account and the balance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e1e02df3bc3a7f4f4504d4ffd0947d84e4c842211af3befbcf40f2b3f39e6148"
+        },
+        {
+          "id": "IND-P029",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Payments on account and the balance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "641843c5f87b8a92a11bd842551786a2068e3e5839ce6b1964e1be4c448bcaf9"
+        },
+        {
+          "id": "IND-P030",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Payments on account and the balance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1294411d88d8efd5249e6b05d257a8d1f67c56059ee0c0dc3d040e0b478c83d6"
+        },
+        {
+          "id": "IND-P031",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Payments on account and the balance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6542fc9e40bf220f8f8159353cc3b838617aa398faa8661de3344417951c63ac"
+        },
+        {
+          "id": "IND-P032",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "b1beaf70afeb1abedcb261b4032f5ff0b29ec486b3bc27593e19e64ef1229cf4"
+        },
+        {
+          "id": "IND-P033",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Payments on account and the balance",
+          "disposition": "Untested future-year form and special cases retained; public routes verified separately, old allowance-table caution retained.",
+          "old_sha256": "558c6a394c9501a40ccc10c42b731b9ce0216598a54b4bd94931883cd4362f10"
+        },
+        {
+          "id": "IND-P034",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Approved pensions and imported-pension exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "708e6ff08bae2e8ff95b7b164d76b60240c76502a77cfd2ae4f053dbf1ceff43"
+        },
+        {
+          "id": "IND-P035",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Approved pensions and imported-pension exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3142ac292aeb1a69c889d9b731bf835e0b94e6d09ea8754e4375a8f0ce0da96a"
+        },
+        {
+          "id": "IND-P036",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Approved pensions and imported-pension exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6047fed21570de7cca6e24ae397b499ab5cf040bd18d9fb34f75a6b32a9bcf0c"
+        },
+        {
+          "id": "IND-P037",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Approved pensions and imported-pension exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d31c7121fecdee959a2dff7d4b84ba224d7d1d5003464e850b3ccfc4ff25813d"
+        },
+        {
+          "id": "IND-P038",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Approved pensions and imported-pension exceptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "00a505edd76a7d500f1fe480db4dd092a397fd09397404e40c9b2635ff6fe5ea"
+        },
+        {
+          "id": "IND-P039",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3b7a0740477ad8c848f12357463b5c8f2fce38fdf4cacdd89066c6b9994f73f7"
+        },
+        {
+          "id": "IND-P040",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5a4df222a7c95ef5db49ca0bef13178b96032b85ff863732989e0570e6bd4349"
+        },
+        {
+          "id": "IND-P041",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b96dcaf85bbc39d0a9c2e3cf5d5bf66468d6809bed5654bd3c955c26e8afdf68"
+        },
+        {
+          "id": "IND-P042",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a45529344a395a1fa4309218de5c766eaa87fda229ae9bfda254986bddca320c"
+        },
+        {
+          "id": "IND-P043",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4f92028a580cfdc5a852b2974292de6be8618c853fcdd77b7f11b67549a5a2b5"
+        },
+        {
+          "id": "IND-P044",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2cc69819c17c874f6cf906b3f5c242a8fe561d8c0ce7d6e9d45f4af052d52ad5"
+        },
+        {
+          "id": "IND-P045",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5700bec867a6b0d56346de84616eee919a84a745e815c98dc4e8b19701096a00"
+        },
+        {
+          "id": "IND-P046",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "2e8e5ea004f6fbfaba6b79191bbb8ccfe98a95982f2f61a69b8703d45e45c190"
+        },
+        {
+          "id": "IND-P047",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "717f4ef56abdb4019cf069bf299d6d5eba293dd80946828c5f6fd97018936ba8"
+        },
+        {
+          "id": "IND-P048",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "68c2d4a31db1bfb52bf588eedca00240c8456ef5eb25bc78e81e99e74768d092"
+        },
+        {
+          "id": "IND-P049",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a460b0ba5be52b9663988fb6d08fc1d4b72c1cc65cc3b5a8c858e253486d746d"
+        },
+        {
+          "id": "IND-P050",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3a7164d2aa36a08e22fbd8c2c5c666d940524ba5d7c03bddade233d6ef66bd92"
+        },
+        {
+          "id": "IND-P051",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5a208cd4666034f9be515b24f29b258812b03377e257604db6703be456105e5a"
+        },
+        {
+          "id": "IND-P052",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1bfefc994c2043abdf98638f2e14fc79eab97b0d01a82a67bc86dd1cbb5cb4da"
+        },
+        {
+          "id": "IND-P053",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "992e51419dbc34a47be25c1f8094fb508dfd4672b01d506c6ca9fddb43746e3b"
+        },
+        {
+          "id": "IND-P054",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Death during the tax year",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6f98b2c79c946a1e73a652de5790c368b71d2f727658fa34335de6dc8f4c29fe"
+        },
+        {
+          "id": "IND-P055",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a8b6ac076618e0bdbd86557a5da4ec891c3d21a89bcb6e6d73afef34cedfac82"
+        },
+        {
+          "id": "IND-P056",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a10307ed53c47fa55c9eaf7aaffae559899867b99a39f0a0ab3386f10e9b6473"
+        },
+        {
+          "id": "IND-P057",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0edf5e37fc0b3ebe4866d43d699302610356d2e8ac581a64fe2d1666c789de9c"
+        },
+        {
+          "id": "IND-P058",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3dd99834f230924ac5d1c73465cb3db814b6331bb471f3408422ea1775f37b7b"
+        },
+        {
+          "id": "IND-P059",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5295e1fc000207ba0bb7d9f961748c42d2fbcf942a14500c5ae9feb86cd634ab"
+        },
+        {
+          "id": "IND-P060",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Non-resident pensioner relief: worldwide-income limit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e828ace18855ddb492f24d2ebe3f4eca3f5fbdccbf614da71f416bbda9fbb498"
+        },
+        {
+          "id": "IND-P061",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Non-resident pensioner relief: worldwide-income limit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "cbe4ecb9a5940fd16b1912df1684274779e6f4a4a0fadd9cc03a58f22ef11d4d"
+        },
+        {
+          "id": "IND-P062",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Non-resident pensioner relief: worldwide-income limit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9401885965d7162908e17dd198fb782dd40350698d28538e91b0934fe9a2aff7"
+        },
+        {
+          "id": "IND-P063",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-individual-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "1299aa37ceffc5fa940725212b0aa04467ce1c2f5419ff37417e9d2f8805f071"
+        },
+        {
+          "id": "IND-P064",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Non-resident pensioner relief: worldwide-income limit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0db2c713317ceb1646c280709f4837b41ac35b47adb5752bd0bee0831dca2c23"
+        },
+        {
+          "id": "IND-P065",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5a484f4e99ee4adfd9324485abca31f8020a9232402a3e666a83496faeb8dead"
+        },
+        {
+          "id": "IND-P066",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c0629e453f4e1a10b70f010d4e8c8340387ee13a6638cb24fef4b1eb1aa25846"
+        },
+        {
+          "id": "IND-P067",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "bf7e109fb97cebfffa31d077d45255b6979c2d7b5a054182a02eb0e67429076f"
+        },
+        {
+          "id": "IND-P068",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8441af860b04e38f967dab7bbd52cf85a762f88ed6168913efe5234e4248b535"
+        },
+        {
+          "id": "IND-P069",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Ask the client first",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "40117dc56e22f8c6bd6907dd93d62c2794a1d6a1717953535f6b98b56ac5d7f1"
+        },
+        {
+          "id": "IND-P070",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9d13489ad9b13ab2b1ec4164a682b9adc1f116f9e77cf8e03aeaf72e8391eb29"
+        },
+        {
+          "id": "IND-P071",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Self-checks and output",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a"
+        },
+        {
+          "id": "IND-P072",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e"
+        },
+        {
+          "id": "IND-P073",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0"
+        }
+      ],
+      "ledger_sha256": "ee94c591fcc8482de672a3b62f3859abaad59d88cc15bb7a430d9578a44798d0",
+      "canonical_md_ledger_sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783"
+    },
+    {
+      "guide": "payroll",
+      "before_is_accepted_head": true,
+      "original_control_count": 8,
+      "original_controls_byte_exact_in_main_or_supplements": true,
+      "main_oa_checks": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "old_paragraphs": [
+        {
+          "id": "PAY-P001",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Title",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf"
+        },
+        {
+          "id": "PAY-P002",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "29cb87121280a7bd80b672b0ebae32f734e21517b0993b2f105954783d56bd67"
+        },
+        {
+          "id": "PAY-P003",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc"
+        },
+        {
+          "id": "PAY-P004",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Registration and reporting",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5cfc548a9e6874e23f03af601b7c9e30e1ff6eb81aee97a5380f9fa06782aa2b"
+        },
+        {
+          "id": "PAY-P005",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Registration and leaver evidence",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "27420a11f14d1304bc87a597baed119af12ead74570a6fae9be60090ca038d50"
+        },
+        {
+          "id": "PAY-P006",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Annual P8: period and reconciliation controls",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "674adf8a092f7da8e1ed1207d4eb04be17b80828b21d671273f892474fbeee44"
+        },
+        {
+          "id": "PAY-P007",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Annual P8: period and reconciliation controls",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "54ce5504e8325f15643ac41ac1c180e4f4e7c1f71b13da4b88dca06a5462057d"
+        },
+        {
+          "id": "PAY-P008",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Annual P8: period and reconciliation controls",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2b76fff0ebbead024259b0b42b98216805758b75e3f3a106af5a72e51fa975cc"
+        },
+        {
+          "id": "PAY-P009",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Annual P8: period and reconciliation controls",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6662ebf4391aa8e15e628990f61e70eba39a86485a38a1ce62e0e8d3b9db4eb4"
+        },
+        {
+          "id": "PAY-P010",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > PAYE deduction and certificate rules",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e0cdc6d413b7076338e2138fb86f5be84dd1bf47462259ddd8e47556baf4df1f"
+        },
+        {
+          "id": "PAY-P011",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > PAYE deduction and certificate rules",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ed4f678cb84b28a77bcf2fae0b18e9de0a81ce6e0351b7ade42fdb7de1d622d4"
+        },
+        {
+          "id": "PAY-P012",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > PAYE deduction and certificate rules",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "069853441357314718d8792f802c1a6bb60aa3211b3cb0006b5f106a3dfb8f2f"
+        },
+        {
+          "id": "PAY-P013",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > PAYE deduction and certificate rules",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "91f43cf1ec0ca18d4540cb8286e87b10d7bb5b66891ed9519d7bf36b8396d719"
+        },
+        {
+          "id": "PAY-P014",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Selecting the PAYE table and handling irregular payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8709dbce9a704680565a6766b47d868c91d314745890987e55df4f0a372a274a"
+        },
+        {
+          "id": "PAY-P015",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Selecting the PAYE table and handling irregular payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6461c8ab1e94ed41d06a48a9945ebf916dfd997a1f31468cf289060302d30988"
+        },
+        {
+          "id": "PAY-P016",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Selecting the PAYE table and handling irregular payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2f7d1eb78f9cf53921d9a1869cdb39044db133ff7d4583b6b7448bd754ea3193"
+        },
+        {
+          "id": "PAY-P017",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Selecting the PAYE table and handling irregular payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4bfde75339d002eebd028f3bf34e28bef11f53f8605c9c35a4cddd3c68dcc5a3"
+        },
+        {
+          "id": "PAY-P018",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Table-versus-guidance discrepancies",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a27e90eb6606dbb17796d5ffeaff1f79288e77222538c6f1ee3057128e265a3a"
+        },
+        {
+          "id": "PAY-P019",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Table-versus-guidance discrepancies",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9686a18ce9f60546bfba9072e3d62e6bf93ae0d105e76a973bea7652587b339c"
+        },
+        {
+          "id": "PAY-P020",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Table-versus-guidance discrepancies",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "053a26cd009c099fb6e78c336b316661828c74b8536f41a1a77d0330ee0ebece"
+        },
+        {
+          "id": "PAY-P021",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Table-versus-guidance discrepancies",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d7ee651671568052d53f8cb86aca6c61ad8339e685ef1d40097a78f46eebea30"
+        },
+        {
+          "id": "PAY-P022",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Conditional current-linked table examples",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8f8f5fa8d94d0dce7558af7c15659ab5a6fb6817ad63cfb4a154a9a15653dca9"
+        },
+        {
+          "id": "PAY-P023",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "665c8f09aafe43ad1ad1334cfcfc58dbdcae6fb02f7d84796ac9865cc2eee52e"
+        },
+        {
+          "id": "PAY-P024",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: confirmed current-linked monthly PAYE and remittance components",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5d2026087f17b1c26faee37978f3c7e7a16c91ee5ec396c108f61542b2a631cf"
+        },
+        {
+          "id": "PAY-P025",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: confirmed current-linked monthly PAYE and remittance components",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "909ccb1c6a9962442d3f7cdd224dd2436a2d340847335d4b51b6e9a4fd568591"
+        },
+        {
+          "id": "PAY-P026",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Conditional current-linked table examples",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8e80011f2c026476334ebfd62e0a5c5fd225c253e8967be42dedcbe6425d34be"
+        },
+        {
+          "id": "PAY-P027",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Monthly PAYE reporting and payment",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e827b930b86790ba89d8adf6f4466ea66ae909cc86d61c471ac03edd22a41382"
+        },
+        {
+          "id": "PAY-P028",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e6ce7c4b5e04c8ee3c6c07a892a7cdfaca30159ffe92e521e436d2e10eebf7d5"
+        },
+        {
+          "id": "PAY-P029",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Payroll records and late production/P8 penalties",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7dfe13b434457ccdda9f06f3ffbdef12ee815ee080d748d92aee2553509d17fe"
+        },
+        {
+          "id": "PAY-P030",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Payroll records and late production/P8 penalties",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "32ae9d713937ac9816bddd45437923003416848e5bb3b5a72f27afafadf65b19"
+        },
+        {
+          "id": "PAY-P031",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Payroll records and late production/P8 penalties",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7a1af1be4bc5a515bf55f7ab3cbeacaa373e7c4bed55b8f0f4b7d9ffaef05eb0"
+        },
+        {
+          "id": "PAY-P032",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Penalties and interest > Payroll records and late production/P8 penalties",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "59cca484c3e462c8ab4a50eaa386b7cfb5b9143b28be6b06802cff989a94c264"
+        },
+        {
+          "id": "PAY-P033",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Monthly ordinary contribution table",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "16f6c98be9264281371e41493494804aa9ddf2f978ab4c48cf1fc8e614c0e1b4"
+        },
+        {
+          "id": "PAY-P034",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Monthly ordinary contribution table",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4b0f65481823cb0859c02d912e2dffe4f5259d481cca1dd1c57e29b6adf9d350"
+        },
+        {
+          "id": "PAY-P035",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Monthly ordinary contribution table",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "32d3e53778be52bd6deb643aba0a78a63714e92242e4c770196fab2559d0c8aa"
+        },
+        {
+          "id": "PAY-P036",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Other confirmed contribution classes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0314bd4bedfd4cb17e227798de94798e993942b987eeaafda63ace7a9d464d38"
+        },
+        {
+          "id": "PAY-P037",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Other confirmed contribution classes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "de4e4affa62fae38dfa4a7a5bc211efe9227dc249e90d1863f1ce1408b30b728"
+        },
+        {
+          "id": "PAY-P038",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Other confirmed contribution classes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "05b4bdc4ad330b6ccd359cb04b7cc5e468919a2c24613d721b4dbc5acd3eba00"
+        },
+        {
+          "id": "PAY-P039",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Other confirmed contribution classes",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8794e9d4d22d0f20083699d7a6fe515256cfee1352ac04237e18e4f8165317a3"
+        },
+        {
+          "id": "PAY-P040",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds > Use the correct frequency",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "53abe7c043871c0003f12313e2eb3911e6d380bac8d01571d8f6b1154b4a367a"
+        },
+        {
+          "id": "PAY-P041",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Contribution liability: wages, absence and employer cost",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8ea50ebc6a9122d529ce37be134b033d95846835c913ad63c09d9f6d5d333b78"
+        },
+        {
+          "id": "PAY-P042",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Contribution liability: wages, absence and employer cost",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6646d855476ecb4fbed5da9e306da4bf6d8e77c753d3ce9318f8e370b462d9fb"
+        },
+        {
+          "id": "PAY-P043",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Contribution liability: wages, absence and employer cost",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ba759f1038ce209a0d2c5ecfe9b44c4acc7ee11cb0dfb26fb93ec39de6466c05"
+        },
+        {
+          "id": "PAY-P044",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Contribution liability: wages, absence and employer cost",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6384d0b8b3e300465c27e3dac9bca04976ecb9558b0df20df5ee48837448d49f"
+        },
+        {
+          "id": "PAY-P045",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Partial months and shared contribution weeks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d779abe3c74e1678679c945e93459c722f9e7eaa541e764f848b7b3305b7fbe3"
+        },
+        {
+          "id": "PAY-P046",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Partial months and shared contribution weeks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "f5a8e962677b53bca13d9c7fa60d0ff6b89703045e1319444698ff0ba2f0fd1c"
+        },
+        {
+          "id": "PAY-P047",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Partial months and shared contribution weeks",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "312af4b8090637f1e69b9bd3d31701b0f6ce3a50297bdffcf0f6d5f779973f73"
+        },
+        {
+          "id": "PAY-P048",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Small-employer contribution credit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "677d80fef503b3b7bebee792cf3efd16ee419fc9603e0ab5834e5b959c24617c"
+        },
+        {
+          "id": "PAY-P049",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Small-employer contribution credit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d022cce8e468345cab234242052274ebff071e90047d873c5cdc1f78ad9348e3"
+        },
+        {
+          "id": "PAY-P050",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Small-employer contribution credit",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0bc826ecc506d1b125be98666747cb15173059e38d3aaea3f6f4d2e8a4ec9b92"
+        },
+        {
+          "id": "PAY-P051",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed contribution administration",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4b32434ca947c3d0b9e73c63a33e8bd147fc3b5c7868a7e37eabe2ac616ff4d3"
+        },
+        {
+          "id": "PAY-P052",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed contribution administration",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "f0f3ee7e70f41275b7db9c3c1b823bcfa344373b5c2830b3e65fbe62c6cd6915"
+        },
+        {
+          "id": "PAY-P053",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed contribution administration",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8abd5085d54c599506a7c9c1a7a0f06c31dee0f4b76cceb5840ca2f0cbf2ed77"
+        },
+        {
+          "id": "PAY-P054",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6428a00a2f58e8ba67bf2a2d124441e25c555ac7c30415787d7d42a99ced0127"
+        },
+        {
+          "id": "PAY-P055",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a8af68095388c40d94f3d143a04367ff0fcf9ba97d75492d4ea883e61365e8e4"
+        },
+        {
+          "id": "PAY-P056",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ad280081797f9daa2097d4fea0467f271ff4cfaa46830a502dc92fed49c70fff"
+        },
+        {
+          "id": "PAY-P057",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1240ecda2b46783fe888c003302a42947d830a528da33d00e38d1581dbffd0a9"
+        },
+        {
+          "id": "PAY-P058",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "7293b7366ef559956b65b353e63ace07a1ea156a8187c9a065e17b896b2a08f3"
+        },
+        {
+          "id": "PAY-P059",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "67dde139b53d6cdd462d1069b4dbc0511aabb1aab2a34a2d7ab3cbce0442ebd9"
+        },
+        {
+          "id": "PAY-P060",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contribution assessments and appeals",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a4a38985cb9a1199a3e20e23828d77ca61af71df7580f2e1a6db898eb0baea7f"
+        },
+        {
+          "id": "PAY-P061",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Employer contribution records and cessation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "31531db80df7fc2c5f0535ed384b3427625a41987caa754f6627906f10bbd6ba"
+        },
+        {
+          "id": "PAY-P062",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Employer contribution records and cessation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6d346ba5b0c3655e0fa66c79ca960bb6a0163702235f4cc8340f7fb457ae61c6"
+        },
+        {
+          "id": "PAY-P063",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Employer contribution records and cessation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "a1f14657904a8d384e05c2ea9275ec423bde6f18e6186941d550345c6257d0ec"
+        },
+        {
+          "id": "PAY-P064",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Employer contribution records and cessation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "9f1c218efa76e50f13cb2810e73b0fab16e4852b623dff6e5f3fc421440024e5"
+        },
+        {
+          "id": "PAY-P065",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contributions paid in error",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "2110ed454b16131ddcd44c1a3acc165ff4e98fc7178865d04fa706387689b7eb"
+        },
+        {
+          "id": "PAY-P066",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contributions paid in error",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "77f54120741e98e8aa23b390172fd893d728979b571446e7d1a8661ac185d046"
+        },
+        {
+          "id": "PAY-P067",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contributions paid in error",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b74046c85b9167f41a8e96f20e1fa9ac92ab91079ca43caf1e805117a0c67754"
+        },
+        {
+          "id": "PAY-P068",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contributions paid in error",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c37c2b1d820dc5361ff2edbc5cf90d35599f2faafafc91015ef1f35f3b046906"
+        },
+        {
+          "id": "PAY-P069",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Contributions paid in error",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "062775e0ef4ca03a9e211644f0bae8a6e7b3e31c13e6342b05d0d154538bf86d"
+        },
+        {
+          "id": "PAY-P070",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "926a4bd9efaebb0c7190c2eb8b69f026019f94951a859442104685a36f8082df"
+        },
+        {
+          "id": "PAY-P071",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Posting and the ordinary applicable-legislation rule",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1e6673f5788efc3869f723b0503608dd9c941f06d739144c0adc1a5007a420dc"
+        },
+        {
+          "id": "PAY-P072",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Posting and the ordinary applicable-legislation rule",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4583983102ae9b499754d41c1955297d94d302d8e4587a187334d105e20eda94"
+        },
+        {
+          "id": "PAY-P073",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Posting and the ordinary applicable-legislation rule",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "55786bb8b28a8903da2d7ff917d7ae176e5850ef8e338c55bc8040cd743d3a2e"
+        },
+        {
+          "id": "PAY-P074",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Posting and the ordinary applicable-legislation rule",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "15789de9678b1fe6b804d91225738f431b169d489ee540211806b294cfa096f8"
+        },
+        {
+          "id": "PAY-P075",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Normally working in both territories",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1c86a087aebf69b5a8d37398fdb671d2514e2f8a257c6d7ceab663d325f1651c"
+        },
+        {
+          "id": "PAY-P076",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Normally working in both territories",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6de847149df8882fcca08a392902454ca48126f39d025aab469c535b22bbd6b8"
+        },
+        {
+          "id": "PAY-P077",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Normally working in both territories",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "cfee0d02e6716b843dd5e22b4eab4f91876988d1002d679c154bec502bce617e"
+        },
+        {
+          "id": "PAY-P078",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Employer obligations and specialist cases",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "d9a83e9f5690ee9ef4901a20e481bcf672efcec64ce8e67b28326a1f0b9d323d"
+        },
+        {
+          "id": "PAY-P079",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Employer obligations and specialist cases",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "037d7ae6a4551a0a6b6f69e51ab0348ce7561ccb913f989a5a0b2e8b51e622d3"
+        },
+        {
+          "id": "PAY-P080",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Certificate and payroll evidence",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "894a6d182437bba927667deb99526c7e7fb8ec7b0d7cde50d3bfb7c984e19443"
+        },
+        {
+          "id": "PAY-P081",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Certificate and payroll evidence",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b6a077cf82cd99881813d3c4b561837583077ce51342abaad9195c1aaafc5c49"
+        },
+        {
+          "id": "PAY-P082",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Applying to HMRC for UK coverage during work in Gibraltar",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "ea1271e2a93c31d30eddcbf32f1a336a13862ab3afb0dd127733972e0bac614f"
+        },
+        {
+          "id": "PAY-P083",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Applying to HMRC for UK coverage during work in Gibraltar",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3da4a9b7c690cfa5f42eaa6454c7a9b75b98224974771efb88146badb06a1da0"
+        },
+        {
+          "id": "PAY-P084",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Applying to HMRC for UK coverage during work in Gibraltar",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "e64d5c99bbe6d1189fbfe1b13e7ba043a5d7933623a603da3547728ea8c650a2"
+        },
+        {
+          "id": "PAY-P085",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Applying to HMRC for UK coverage during work in Gibraltar",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "8e7f29585b68507eefd320b21ca28f7c0f56810760d242cb0fa5491f72d67961"
+        },
+        {
+          "id": "PAY-P086",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Applying to HMRC for UK coverage during work in Gibraltar",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5b9c644db22626874ab63bf804090889e2834e6c8b754379fb4403b94db6f013"
+        },
+        {
+          "id": "PAY-P087",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Questions requiring an operational ruling",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "49d5e62c492116c2d241ea99d0d0b0c560bc416d1cbd836da79ba1f6bbfed5bf"
+        },
+        {
+          "id": "PAY-P088",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Questions requiring an operational ruling",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "77c0686a6cf368c009f0a62f6e2519bf1586492ed06ca16caa9319b9dc9af5dc"
+        },
+        {
+          "id": "PAY-P089",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Computation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0f3f68f763d05d864b096723c846088643be21b977cc18555e4b44bdd32f125e"
+        },
+        {
+          "id": "PAY-P090",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Computation",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "df78b3339ecca383f118261570cf6ffe5f0e97a96c46cc621dc0fc4ca08b3a32"
+        },
+        {
+          "id": "PAY-P091",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Retained supplementary calculation assumptions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "c6a9a93fdc2e5b9ec13623b5afdc6d952974a6720b9e681b4cc6b8ef2a8ac381"
+        },
+        {
+          "id": "PAY-P092",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: confirmed full-month ordinary social insurance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "5a6227c344c24db783d8cf6ff80192cc1fd356daa53dec060c614dc46610ac44"
+        },
+        {
+          "id": "PAY-P093",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: confirmed full-month ordinary social insurance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b4f4b8eaec3ff4ef6b3881c9079d56008d6028dd9a74d1fb0838a7f4d1ffa10b"
+        },
+        {
+          "id": "PAY-P094",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: confirmed full-month ordinary social insurance",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "35b5951364fe26cd2654f8f6308f1b4de7a252a95468a151a842d4dfccf9938d"
+        },
+        {
+          "id": "PAY-P095",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Confirmed class comparisons",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "37b0de4a7a3cc5c46a961b1b90f5168f9e750b18f941562eb8556ce36b7e675a"
+        },
+        {
+          "id": "PAY-P096",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "8faab7b369d0172fd56032205820450753c89f202332d3a81c0f0ad5b15df532"
+        },
+        {
+          "id": "PAY-P097",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Partial-month minimum and maximum",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "85576a1cbfa83b96757dc5a008cd9eddd5fe55b8e9d5a1827f64edad7d9b1012"
+        },
+        {
+          "id": "PAY-P098",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "785c7d01a9ac2e23760e9be720213dba1574057c874b94fb10054306b17b2727"
+        },
+        {
+          "id": "PAY-P099",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Two paydays in the same final contribution week",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "b28e6d817c2a702421f875fe3a93312c423804e4401b33832fd3d7b13515f990"
+        },
+        {
+          "id": "PAY-P100",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "7b85989eb8b83909307dd3082603acb53ac341e81dd2f892b6d401d2855c6252"
+        },
+        {
+          "id": "PAY-P101",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > P8 reconciliation to actual payments",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "3996d26e25e198efa52e9d5090d6ba8f6165369b8972b39cb10e535dd0db1a22"
+        },
+        {
+          "id": "PAY-P102",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "3f81ff5d60c4affd6fade7838955a8a289c071db57ba488b842b7ad9e33b536f"
+        },
+        {
+          "id": "PAY-P103",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Conditional PAYE late-payment increase",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "1cfb95e198db7aeaa507e4c557023ff66011492c0b8ad0e70b086ad628be79fc"
+        },
+        {
+          "id": "PAY-P104",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-payroll-controls.md",
+          "disposition": "Full original executable block byte-exact in supplement",
+          "old_sha256": "f6a6be7c00365eb03965565ac94672c512c659c4215a9f2d7dc80ce474ef7d87"
+        },
+        {
+          "id": "PAY-P105",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Evidence and exclusions",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "0427a43d3ccb26532ba43f156b24750297f7b7f68235ee39c9b36f31e0a97744"
+        },
+        {
+          "id": "PAY-P106",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Sources > Evidence and exclusions",
+          "disposition": "Old minimum-wage/leave/redundancy/pension and employer-cost limits retained; blanket missing-benefit sentence narrowed to new sourced ordinary methods and explicit unresolved/specialist limits.",
+          "old_sha256": "a09353cd2cd27172f86d59dfa378d4201959c9e1f8e9334366663f42e7cf5938"
+        },
+        {
+          "id": "PAY-P107",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Self-checks and output",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a"
+        },
+        {
+          "id": "PAY-P108",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e"
+        },
+        {
+          "id": "PAY-P109",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "fc4268e88a14286e66ce59339d688fc668943438c34821c73984c29ac8b2604f"
+        },
+        {
+          "id": "PAY-P110",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "be8aada1dc1d597ac947485fbfac94660bd23ff5d352861dcb293eeb41dab301"
+        },
+        {
+          "id": "PAY-P111",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph byte-exact",
+          "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0"
+        }
+      ],
+      "ledger_sha256": "ed787b2653845c0e6ebaf6dd05185b2d4b28228f0cbb83c74844e2d9f7032c3d",
+      "canonical_md_ledger_sha256": "9faea782f55b882d12cf00b0fd2b591c174e74107b3fd5f6c9e7feb41d9b6bd8"
+    },
+    {
+      "guide": "consumption",
+      "before_is_accepted_head": true,
+      "original_control_count": 3,
+      "original_controls_byte_exact_in_main_or_supplements": true,
+      "main_oa_checks": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "old_paragraphs": [
+        {
+          "id": "CON-P001",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Title",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf"
+        },
+        {
+          "id": "CON-P002",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "e444921fd9c24507f36af7121538ac0428fb20003f76bb71ebd91412471c2f00"
+        },
+        {
+          "id": "CON-P003",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Explicit source-date/provenance/aid-method/remaining-gap reconciliation; original snapshot retained",
+          "old_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc"
+        },
+        {
+          "id": "CON-P004",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "518d7169d50208fdab6bf6d12c1087a2d78a864b07e67170a8ca01bac98ed887"
+        },
+        {
+          "id": "CON-P005",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Who this applies to",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "08d7493d13d88473df5cb070b5aeb93bc9b7b647b2dc832d697c062c1b94abc2"
+        },
+        {
+          "id": "CON-P006",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Chargeable event and valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "30ce910764a79365f9224c6eaa80d75d6039d12fdd581434b08bccb07230e0bd"
+        },
+        {
+          "id": "CON-P007",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Chargeable event and valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "f95fe2a5eea59c2a3387f20554a633aee7e3a6a8570983e855ded8bbb16a21f1"
+        },
+        {
+          "id": "CON-P008",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Chargeable event and valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "5140818527a794d7a644c0bdb6656189425eb4a4c223c9398ec9562d3bead52d"
+        },
+        {
+          "id": "CON-P009",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Chargeable event and valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "1624dd5ba06cbbca1568e0477bcd80416479d5616dc064b1f94fd44d3c528092"
+        },
+        {
+          "id": "CON-P010",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Chargeable event and valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "ac125d0fe7f213d8cd2e2f6f66a226de8cd26247191ecfdfbf8156d909af22da"
+        },
+        {
+          "id": "CON-P011",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "6398905216dbe07a06848479a8f298a4260f073419bfc0e13ac9fb549b8506e1"
+        },
+        {
+          "id": "CON-P012",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "02f53cb8c5757216ec1913e299201b5104edc689972c4bda986afdff084a93a2"
+        },
+        {
+          "id": "CON-P013",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Explicit source-date/provenance/aid-method/remaining-gap reconciliation; original snapshot retained",
+          "old_sha256": "5ec34f1877cad5316eb5120d0c9afc476abb7f9fa1441cf90d408cc560b5b672"
+        },
+        {
+          "id": "CON-P014",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "a85bce32e680c7a5952789f3d5f7a1f7faf5badaf502cd43e93ff7e43bedf21b"
+        },
+        {
+          "id": "CON-P015",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "07814a7968b3a57c493b16b10f5afc4d519d87eb7034b818f85123a9b36964e7"
+        },
+        {
+          "id": "CON-P016",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "17e9d93176e7a8f7d5ed868191a43073d1e6ec39fc620a4604b1c9633afed51d"
+        },
+        {
+          "id": "CON-P017",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Rates, bands and thresholds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "ccc3daa2c18adaab8ee306b5e1d962fee9b3e56972b545c908e7c508043b8341"
+        },
+        {
+          "id": "CON-P018",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: import valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "c475cdf92b7456c28cb21e9db851e21cfcb51ae143c57148109740f535f40189"
+        },
+        {
+          "id": "CON-P019",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-consumption-controls.md",
+          "disposition": "Full original production/cost/rate illustration and original block unchanged in supplement",
+          "old_sha256": "b12aa0a8346e8530ee9d695e95c80d3c6ac8e87296fa4ae39d2d648e4dde98af"
+        },
+        {
+          "id": "CON-P020",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: import valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "31a676bb7c35e336b0ec737ce122899711e642e5b10524d21412ee938b7d7dbd"
+        },
+        {
+          "id": "CON-P021",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 1: import valuation",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "77858ba5e1845b8cfe6baa84d5cece00ed047ee9d4989bc6d5eaf6cfd7df4840"
+        },
+        {
+          "id": "CON-P022",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "preserved-consumption-controls.md",
+          "disposition": "Full original production/cost/rate illustration and original block unchanged in supplement",
+          "old_sha256": "f69ef70148f5dbeefe17872a3b86520bf108f6c7568855ac144adbf5a0a7529a"
+        },
+        {
+          "id": "CON-P023",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Exemptions and export refunds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "7cdf67584cbeaea6a022ef584b29ebce087e602684468c87180e82c37d8efe18"
+        },
+        {
+          "id": "CON-P024",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Exemptions and export refunds",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "8962c322974ac38dc88e3a77d905c40c19594e9d9266efb9be8ee28bada6ee7f"
+        },
+        {
+          "id": "CON-P025",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Declaration and payment route",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "e36d353beb5e2ac0d72e641a72724e2b0677e2a51dd28900779e676a3ee59897"
+        },
+        {
+          "id": "CON-P026",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Declaration and payment route",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "09a0d3e060fa829163a502a140469dfefa6c968e355026aac56e04d987bb7c0d"
+        },
+        {
+          "id": "CON-P027",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Declaration and payment route",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "33edf6890131a4a5704fed85f75c3bc7649918f5e1701b15c41299d478b9ef9c"
+        },
+        {
+          "id": "CON-P028",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Declaration and payment route",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "1445e0623ddcc5e2be45c46e3f2d1e7796c061824781f99942fa52d09564062b"
+        },
+        {
+          "id": "CON-P029",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "8c415296c8aeb197a2a6cadb6b7798e4657e44ba059d4e0948e6464f53ef0adf"
+        },
+        {
+          "id": "CON-P030",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "d913d99fa90f02b30789f89b99966cb4d3f21c04698f6b83ae05592983a27de3"
+        },
+        {
+          "id": "CON-P031",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "5ee282aa07e479b3050884ad39337833b59f763e5516aeb9c876b5a1f3eef9b3"
+        },
+        {
+          "id": "CON-P032",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "564a3cd1c103be3fdaadc2e4be7fed9c51dfe4cb50c3094e98f0920798b55d61"
+        },
+        {
+          "id": "CON-P033",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "bc626821911821b1d33aa9c51536ede3516a7a4649ff5e485af221a8deef35fc"
+        },
+        {
+          "id": "CON-P034",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "9de4fa6213ab8e5b876dab4083d9f04eafb5b18fdec7020b5b87910442e660b5"
+        },
+        {
+          "id": "CON-P035",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Cross-border points > Transitional goods",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "eca82dd3662fd344ab6320483af343cf1e45316344cf8732fefc7bba92501411"
+        },
+        {
+          "id": "CON-P036",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "1a431acc1c55cb49a258eceb0923398d6205a4453f67c029fc2a09e8fd3baca6"
+        },
+        {
+          "id": "CON-P037",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "d5b407287f09685487bd9c4f8064ebaeee2df7083baeecbd09c5fc8e86e2815c"
+        },
+        {
+          "id": "CON-P038",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "2e1212e9741173478d02c555bc4ccb9f1bcdb1ab06677b5256122c7a79898304"
+        },
+        {
+          "id": "CON-P039",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "5c7873682c0273d7fc5489a39b64e1a938b6498b24f0deb0aa934293a09d388a"
+        },
+        {
+          "id": "CON-P040",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed-import deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "7cc1d08de5f66a1dfdf4ee1d5b7316822ca891e2afaf776c891bf9408b1128af"
+        },
+        {
+          "id": "CON-P041",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Two worked examples that recompute > Example 2: mixed-import deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "5110158db02adee4c16f15e2f437d08defd88e011363a462469e5bb4b08448a5"
+        },
+        {
+          "id": "CON-P042",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "b69bfb3503fc823a1bdeadbfdc808b86959b028bbb0fabcb02f0e49797b9ff56"
+        },
+        {
+          "id": "CON-P043",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Deduction claim evidence",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "7678e445382a54437043b907b064bf0b7c3ad94eb1c59cbb542896b211feace7"
+        },
+        {
+          "id": "CON-P044",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Deadlines and filing > Deduction claim evidence",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "219eabc851e01929fae4356c14aea2a39fb058a2a900183fbc53a4a435c78b35"
+        },
+        {
+          "id": "CON-P045",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: The base > Transitional business deduction",
+          "disposition": "Explicit source-date/provenance/aid-method/remaining-gap reconciliation; original snapshot retained",
+          "old_sha256": "8cdef0e6b5926485f84d22199048985e3e8035e86d2490edffc1138e23cf5fd5"
+        },
+        {
+          "id": "CON-P046",
+          "full_old_paragraph_in_current_or_supplement": false,
+          "destination": "Guide: Sources",
+          "disposition": "Explicit source-date/provenance/aid-method/remaining-gap reconciliation; original snapshot retained",
+          "old_sha256": "7c6c5d1e58418536898af4bae1dcb90c7995231c2f7d473291d81a78a6eb5345"
+        },
+        {
+          "id": "CON-P047",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Evidence and self-checks",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a"
+        },
+        {
+          "id": "CON-P048",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e"
+        },
+        {
+          "id": "CON-P049",
+          "full_old_paragraph_in_current_or_supplement": true,
+          "destination": "Guide: Sources > Disclaimer",
+          "disposition": "Full original paragraph unchanged",
+          "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0"
+        }
+      ],
+      "ledger_sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6",
+      "canonical_md_ledger_sha256": "dfac180fe97851ad8f51423bf6ca8e337f162406724d1b5ef8ecc753cc778c56"
+    }
+  ]
+}

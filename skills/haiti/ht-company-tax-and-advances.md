@@ -2,13 +2,13 @@
 name: ht-company-tax-and-advances
 description: >
   Haiti company-tax reference under the replacement Tax Code effective 1 October 2026. Covers taxable entity classification, effective-management residence, the ordinary profit-tax rate, the savings-and-credit cooperative exception, annual financial statements, the audit threshold and provisional payments. Gives mechanical calculations using an already reconciled taxable profit and the correct historical advance-payment base. Separates company returns from individual business returns and identifies special-sector and transition cases requiring further source work. Does not establish a complete taxable-profit reconciliation, treaty treatment, operational forms or accountant attestation.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -72,8 +72,6 @@ Do not invent a first-business-year advance where the historical base is absent.
 ## Disclaimer
 
 General research reference, not a filing-ready opinion or professional attestation. Apply the enacted scope and obtain the outstanding implementation evidence before using it for a particular return.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

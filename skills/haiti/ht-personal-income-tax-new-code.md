@@ -2,13 +2,13 @@
 name: ht-personal-income-tax-new-code
 description: >
   Haiti personal income tax reference for the replacement Code commencing on 1 October 2026. Provides the enacted annual progressive bands, worked marginal-rate examples, annual return deadline, deduction evidence and credit treatment. Distinguishes the commencement period from returns for income earned before the Code took effect. Explains the prohibition on deducting the same expense twice and the restriction of category losses to income of the same category. Residency, treaty relief, detailed income categories, implementation decisions and independent professional verification remain outside this initial source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -55,8 +55,6 @@ Category losses offset only income of the same category under article 126(2). Ke
 ## Scope still to complete
 
 Residence, source rules, treaties, category-specific profit calculations, capital gains and the full effect of ministerial implementation decisions are outside this initial Guide. Gather the period, income-category schedules, withholding receipts and deduction documents before preparing a return. The enacted bands have been visually checked against page 45; this is not an accountant attestation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,62 @@
+{
+  "head": "b99513e9c5915e45ebbb3d263739fd1510326e14",
+  "repair_manifest_sha256": "e8b0fa4b7668ab24a1da622a15db16baa514279d68e9932c24c576c549d19e2a",
+  "repair_input_count": 31,
+  "all_repair_inputs_match": true,
+  "new_guide_sha256": "e4e9fb45678690c822d246d8722f931a9008aed8664a16dc29274c0bc768d0c1",
+  "only_expected_four_guide_edits": true,
+  "tracked_changes_since_initial_commit": [
+    "evidence/ledgers/faroe-islands-20261031-property/repair-1/agency-placement-receipt.json",
+    "evidence/ledgers/faroe-islands-20261031-property/repair-1/repair-manifest.json",
+    "evidence/ledgers/faroe-islands-20261031-property/repair-1/repair-record.json",
+    "skills/faroe-islands/fo-property-transfer-registration.md"
+  ],
+  "initial_review_files_byte_exact": [
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/INITIAL-REVIEW.md",
+      "sha256": "96777ad0885f50a21259c0c4a6025e04f607a6e7400cbcad18d7d291bee78083"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/INITIAL-VERDICT.json",
+      "sha256": "67667ed8ff0f15deec1f7beb552d3495efcc55c9e09c0256d3502eafab316ef5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/example-checks.txt",
+      "sha256": "6d794926bae9575f20edcf0ce8fd5220c7355199500035b3fd62eea175edf0e4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/findings.json",
+      "sha256": "7bdb8e8c79328ef17cd1e300483dec0739b28421e01743ec1821517e461bc844"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/hash-and-preservation-audit.json",
+      "sha256": "02033b64648a4d36ed83a53593274e55074b586d9a3359e1c70a994aee8051b4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/review-input-manifest.json",
+      "sha256": "e4db699aecb100e21ce5c5c4d86ce1fbc9a2c72c86f6dc471d609c46ef160e86"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/skill-checks.txt",
+      "sha256": "f5e52371997b4b861252347ef50114e090e334085c86e3295abd8e484a8e1cb4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/source-access.json",
+      "sha256": "d564951f825128fcb8b855d417703d1d1094f2ff43131aa5e3826cfbc44458d3"
+    }
+  ],
+  "predecessor_guides_byte_exact": 11,
+  "original_claim_rows": 43,
+  "original_statutory_bindings": 54,
+  "original_agency_payment_bindings": 1,
+  "new_agency_procedural_receipts": 1,
+  "example_blocks_byte_exact": true,
+  "earlier_source_and_example_checks_reused": true,
+  "broad_suite_rerun": false,
+  "open_gaps_unchanged": true,
+  "tier": 2,
+  "version": "0.2",
+  "receipt_verification": "Both short phrases match the separate individual and company/legal-person headings on the complete official registry page independently read in the initial review. No broad recrawl or blank-form inference.",
+  "readme_byte_exact": true,
+  "unchanged_executable_blocks_in_changed_guide": 2
+}

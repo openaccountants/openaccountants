@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "locators": "Section 11; Schedule 1 Part 2 pp146\u2013149; sections28\u201330,39,64\u201365"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+      "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+      "locators": "Rule6 ordinary and special corporation rates"
+    }
+  ]
+}

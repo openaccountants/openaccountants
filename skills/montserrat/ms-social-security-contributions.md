@@ -2,13 +2,13 @@
 name: ms-social-security-contributions
 description: >
   Montserrat social security contribution reference for 2026, covering ordinary employee and employer rates, weekly and monthly earnings ceilings, insurable pay and remittance timing. Uses the official revised legislation and the Fund’s 2026 monthly rate table. Includes payroll examples and distinguishes the employment-injury component already included in the employer rate. Use after employment coverage and the contribution period have been established. Age-transition weeks, exempt payments and the difference between earnings rounding and contribution amounts are addressed. Self-employed assessments, benefits and post-pensionable-age injury arrangements need separate review. This source-cited draft awaits independent accountant review.
-version: 0.1
+version: 0.2
 jurisdiction: MS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -55,8 +55,6 @@ Regulation 12 requires employer payment at month end or within one month thereaf
 ## Remaining work
 
 Self-employed income categories, voluntary coverage, multiple employments, irregular pay, benefits and later amendments are outside this batch. The sources and examples have author checks only; independent accountant review remains pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

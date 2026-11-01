@@ -1,0 +1,85 @@
+{
+  "checks": {
+    "all_original_evidence_files_byte_exact": 261,
+    "canonical_reviewed_ledger_copies_exact": 8,
+    "old_main_examples_exact": 14,
+    "all8_protected_metadata_byline_CTA_H2_oldURLorder": [
+      "fo-corporate-income-tax.md",
+      "fo-transfer-pricing.md",
+      "fo-country-by-country-reporting.md",
+      "fo-vat.md",
+      "fo-cross-border-payments.md",
+      "fo-individual-income-tax.md",
+      "fo-payroll-contributions.md",
+      "fo-company-registration-reporting.md"
+    ],
+    "README_complete_declared_forward_inverse": true,
+    "only8_FO_frontmatter_Guides_in_ingestion_tree": [
+      "skills/international/faroe-islands/fo-cross-border-payments.md",
+      "skills/international/faroe-islands/fo-vat.md",
+      "skills/international/faroe-islands/fo-payroll-contributions.md",
+      "skills/international/faroe-islands/fo-corporate-income-tax.md",
+      "skills/international/faroe-islands/fo-company-registration-reporting.md",
+      "skills/international/faroe-islands/fo-country-by-country-reporting.md",
+      "skills/international/faroe-islands/fo-transfer-pricing.md",
+      "skills/international/faroe-islands/fo-individual-income-tax.md"
+    ],
+    "independent_tranche_reports_archive_exact": [
+      {
+        "tranche": 1,
+        "sha256": "5187562b2732a0e888001fead75b82c24a4bd85c21a8d2760bf16be904c17502"
+      },
+      {
+        "tranche": 2,
+        "sha256": "5788bde2a1453789c3b5fb10c647f16fd4ed2aa36fd8a62aae3a4cc3123ad9cb"
+      },
+      {
+        "tranche": 3,
+        "sha256": "46b155a37b19a01cc167354bce0f379741af45ebb1a99dea87644ebe30415f06"
+      },
+      {
+        "tranche": 4,
+        "sha256": "18d7219d1a5ead58328d9498aa52fd2bd872f54e2cfdd9b3331f275c60e8a091"
+      }
+    ]
+  },
+  "final9identities": {
+    "fo-corporate-income-tax.md": {
+      "sha256": "3f7f74252d1108356743810935713538d33feffc6208eb081e77fd42867283a4",
+      "bytes": 40605
+    },
+    "fo-transfer-pricing.md": {
+      "sha256": "6484b8867bd960e480f7b73cb0dcb48933de87d708247269ed1d01967bfafcae",
+      "bytes": 13155
+    },
+    "fo-country-by-country-reporting.md": {
+      "sha256": "8681ec6ab52a515735ba82b222953afc5343f551a90c4f3f5bb612bdc25c7b8c",
+      "bytes": 10994
+    },
+    "fo-vat.md": {
+      "sha256": "657f175ec8c32a684dffa9239b68a4a1e8a538777bef15f08241f18577ebd83c",
+      "bytes": 23840
+    },
+    "fo-cross-border-payments.md": {
+      "sha256": "1e30fa4bf2271d7b1b2b26d5ad8fda59406b8ddef571369eba55a1300490a71b",
+      "bytes": 26736
+    },
+    "fo-individual-income-tax.md": {
+      "sha256": "1ecee9b3f69b1f682cb700b1a6bff59e8b40165df50fbb08332234a876d7c6f9",
+      "bytes": 32787
+    },
+    "fo-payroll-contributions.md": {
+      "sha256": "966f2af989d24fb363086d49b5c5040751b0673190db597ddbcb0f00d5091383",
+      "bytes": 39644
+    },
+    "fo-company-registration-reporting.md": {
+      "sha256": "b6812fa88d586c353c8ca7fdfaed60591519226949223f0b12db55630009c72e",
+      "bytes": 21704
+    },
+    "README.md": {
+      "sha256": "6277caab49e7d37b8a7fe53d24647cb07397a064c78ff790085778903a9c885d",
+      "bytes": 8716
+    }
+  },
+  "scope": "Pure packaging/README/protection check. No new legal research or full-body restart. Original261source/evidence bytes verified by hashes; acquired is not read."
+}

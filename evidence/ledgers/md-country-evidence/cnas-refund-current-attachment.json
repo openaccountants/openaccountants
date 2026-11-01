@@ -1,0 +1,48 @@
+{
+  "article": "CNAS-REFUND-CURRENT-20261031",
+  "official_url": "https://cnas.gov.md/sites/default/files/2026-10/Restituire%C3%A2dinBASSRegulament.pdf",
+  "sha256": "9a92b094f964f97bcfc6cf68d9659e4c329657aade214165728b5ceba3af4f20",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T07:52:33.865031+00:00",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/cnas-refund-current.pdf",
+  "binary_sha256": "e891564ffa99895d18e4693782351409582858bbe22730ab7ecbdc6691ac795b",
+  "binary_size_bytes": 408036,
+  "full_binary_retained": true,
+  "rendered_pages": 8,
+  "visually_read_rendered_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "rendered_page_paths_relative_to_country_workspace": [
+    "validation/cnas-refund-current-render/page-1.png",
+    "validation/cnas-refund-current-render/page-2.png",
+    "validation/cnas-refund-current-render/page-3.png",
+    "validation/cnas-refund-current-render/page-4.png",
+    "validation/cnas-refund-current-render/page-5.png",
+    "validation/cnas-refund-current-render/page-6.png",
+    "validation/cnas-refund-current-render/page-7.png",
+    "validation/cnas-refund-current-render/page-8.png"
+  ],
+  "rendered_page_sha256": [
+    "1a28cd283883c98216aadf44158a35f4f68f98b15bda557c1d5126a61a405829",
+    "7a521c17e3623b6bacb83317f5d97080aea3a3c7c93e7768c66eac960806e871",
+    "cb342f33187966f3278de5e602d42a15578f3c764a40b0bfae910ef6d8352f33",
+    "52ecae9c809ebe6a0c9281a674873660ec45a8be3f05bdbea436f5f2e9e23b90",
+    "78dd472bc4c1771810b2256d153bb92535568c7b4f93f2ba8bbd3d14e07da969",
+    "28d850d8ad41332de8d6be609e239059a273258d1897d2547d97c7d1aba2ef71",
+    "064232be8a11eab2db84acd01cb6c0831a4d188d112fc7e2003a87b30d7a0a3d",
+    "819513cf815f0998240d65a6caec25a3ae459964ab972c1460f5219d9c8a6f7e"
+  ],
+  "format": "Full downloaded original official PDF, complete pdftotext-layout extraction read; all eight rendered pages visually inspected",
+  "parent_announcement_url": "https://cnas.gov.md/ro/node/739",
+  "current_version_observation": "Official30October2026announcement links this updatedconsolidation; PDFcontains192-A/30October2026annotations. No standaloneenacted192-Acommencementbodyread; earlier2026retroactiveapplicationnotcertified.",
+  "source_limits": "Currentpublishedprocedure is separate from CNAMmedicalrefund and CNASinter-codecorrection; no authenticatedfiling,automaticrefund or bankpaymentby30daysclaimed. Annex2/3areblankinstitutionaldecision/registertemplates, not taxpayerapplications. No realclientdata.",
+  "portal_test": false,
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

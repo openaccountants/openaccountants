@@ -1,0 +1,23 @@
+{
+  "article": "CNAM-REFUND-ACTUAL-FORM-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo%20526-528%20ro/anexa_300md.doc",
+  "sha256": "74a03e421e58443298cba688defa86d72e6849a199611482f156ed2a07c2ff25",
+  "read_date": "2026-10-31",
+  "format": "OriginalofficialDOCretainedunchanged; localDOCXconversiononlyforread/render. Fulltextandonepagevisuallyread.",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/cnam-refund-current-form.doc",
+  "binary_sha256": "8a9b1887813f9be750ccfd70f58b2220a6e30c44ceb7f07b8566040845e19a8d",
+  "binary_size_bytes": 34304,
+  "full_binary_retained": true,
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "rendered_pdf_relative_to_country_workspace": "validation/cnam-refund-current-form-render/cnam-refund-current-form.pdf",
+  "rendered_pdf_sha256": "94fdcf1bcc06bd6bb1a0a2aeef4cbb1ff9d9d13ff5280ef353743c7a107c2354",
+  "conversion_derivative_relative_to_country_workspace": "primary-attachments/cnam-refund-current-form.docx",
+  "conversion_derivative_sha256": "919652febd62ca7f98057731fc8d36e343b207393687d06c4648730f6ef7641e",
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=151178&lang=ro",
+  "scope_limits": "No submittedapplication,authenticatedportal or bankrefund test. CNAMWordPressPDFwidgetopensnewtab ratherthantriggeringdownload; directPDFrequests403. CurrentDOCobtainednormalbrowserdownload-event/pathfromactualLegisannexlink.",
+  "portal_test": false,
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

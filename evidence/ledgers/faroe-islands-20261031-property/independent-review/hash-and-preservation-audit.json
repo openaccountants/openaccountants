@@ -1,0 +1,658 @@
+{
+  "head": "594f214eb17e0a5f81e5c9fec19f0faeaa5f37ae",
+  "writer_frozen_manifest_sha256": "6d5d5077553b7a9a02ecc5957dc26361020b64d0729416286bc05f18088d3644",
+  "all21frozen_inputs_match": true,
+  "new_guide_sha256": "a47e5eb7e726c24f806f9bcea58b469ed298041cdccb4af8d80489c51050efa2",
+  "ledger_rows": 43,
+  "statutory_bindings": 54,
+  "website_bindings": 1,
+  "bindings": [
+    {
+      "id": "PT001",
+      "source": "duty",
+      "act_article": "Act8/2006 §1",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "9bcabf588f4c6e837be144249d3ed8b9de7088865bbc7830ab4f1a1585498c44"
+    },
+    {
+      "id": "PT001",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §§1,6",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "d609e4f0478bb25393496d3e1a5341045e9b83a8c36a92d5af6190d08dc81ca0"
+    },
+    {
+      "id": "PT002",
+      "source": "duty",
+      "act_article": "Act8/2006 §1",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "9bcabf588f4c6e837be144249d3ed8b9de7088865bbc7830ab4f1a1585498c44"
+    },
+    {
+      "id": "PT002",
+      "source": "fee",
+      "act_article": "Act76/1994 §§1–2",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "0791ad2c023a18e2caf498c8c94c9d666f010598c95822f48613a0b64f0614f8"
+    },
+    {
+      "id": "PT003",
+      "source": "duty",
+      "act_article": "Act8/2006 §§1,3",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "b9635d15279ad0d6335a1474ad9551bab4c49c9ba591d104d610e0cbd3657ec3"
+    },
+    {
+      "id": "PT004",
+      "source": "duty",
+      "act_article": "Act8/2006 §§1–2",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "e23b884eba0fd7670845a8ee59b545282d3635c76dae4a47dbd8c50b0efcf876"
+    },
+    {
+      "id": "PT005",
+      "source": "duty",
+      "act_article": "Act8/2006 §1",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "9bcabf588f4c6e837be144249d3ed8b9de7088865bbc7830ab4f1a1585498c44"
+    },
+    {
+      "id": "PT005",
+      "source": "fee",
+      "act_article": "Act76/1994 §§1–2,4",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "a9ac0726095437bf96bd9946992dbd385d6bdc38801f899367acf1f07965e16d"
+    },
+    {
+      "id": "PT006",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(1)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "eb14f7d84ec6139ae41ff462f210dfdc09bbf0e1ff8e2bd84dc316dfc03f36c9"
+    },
+    {
+      "id": "PT007",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(1)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "eb14f7d84ec6139ae41ff462f210dfdc09bbf0e1ff8e2bd84dc316dfc03f36c9"
+    },
+    {
+      "id": "PT008",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(2)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "89904232f892157f1cf72008f7a99da294257bff666286fc40f3a3300fae2d7b"
+    },
+    {
+      "id": "PT009",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(2)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "89904232f892157f1cf72008f7a99da294257bff666286fc40f3a3300fae2d7b"
+    },
+    {
+      "id": "PT010",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(5)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "ff34610b8f3bfd25b1369dfffbe32c25db397cd4f8eff7fffaf412fb7aa94cea"
+    },
+    {
+      "id": "PT011",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(3)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "52f7b233d48ea0daff997d96ab57756c6dcd7450f10681c9dfc7a7722cd47aa0"
+    },
+    {
+      "id": "PT012",
+      "source": "duty",
+      "act_article": "Act8/2006 §3a(1),(4)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "0c50941c0d39a6ecf5cced297c968639dd8f315c5953bf2b353e2d9d94aa042e"
+    },
+    {
+      "id": "PT013",
+      "source": "fee",
+      "act_article": "Act76/1994 §4",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "b4f56d23b7fa934f30e39e4a4d6f825da28849516a4c12e25516e81f1d41e13a"
+    },
+    {
+      "id": "PT014",
+      "source": "fee",
+      "act_article": "Act76/1994 §6",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "43bdac325d84d49c4f8ed751131defd04a8e031e05053c8674eb3434db031620"
+    },
+    {
+      "id": "PT015",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §10",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "f63c4c01e2a1cadcb8f8d2f3567788c28c62786a569dc6861fa4897da33087b6"
+    },
+    {
+      "id": "PT016",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §§9(3)–(4),14(2)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "2edafde11088b79fe876e67eeb753e2508461e0dc93ae97f22f723d22fbc692e"
+    },
+    {
+      "id": "PT017",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §50f(1)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "ba71d2b95e229efd5d9a10aa7350677d4609ccfc9abe553e2fdece2ddf7f6427"
+    },
+    {
+      "id": "PT017",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §3(1),(6)–(8)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "60b85f76b692ab74f8f7d203b69d450650a338afc25546503dc5160cbd918a75"
+    },
+    {
+      "id": "PT018",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §3(2)–(3)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "f2b973745072c808f880552c6db55c7133956fa2f7943dbeca287e188355d176"
+    },
+    {
+      "id": "PT019",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §3(4)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "d29cce71130dc7190bf6bdc6c0eadc77395143b5e8b471c780578eb5336129aa"
+    },
+    {
+      "id": "PT020",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §10(2)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "98a7d707da3a0ec67cb193842fefd8212d88df1a125845eed636576e589f332a"
+    },
+    {
+      "id": "PT020",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §11(1)(3)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "8a6c8fd72dd1a9532ac5e4cafbd87a3814e2ddd7b960af13fcdd97fa65608de3"
+    },
+    {
+      "id": "PT021",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §9(1)–(2)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "4c7a36f75ed5a2025b35afb5aef1a42c747c06d3180a81548e2459ef70673c4d"
+    },
+    {
+      "id": "PT021",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §4",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "1d4cb7c276cc3e9c9e9dcbc8d6328560d0204551beb5f87c28a1b37aa05823f2"
+    },
+    {
+      "id": "PT022",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §6",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "3260944a68c4dc2bf26feaa6391fb2cc3ba4d72b814e2039424f84f42ebbc65e"
+    },
+    {
+      "id": "PT023",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §9(6)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "505055d30ad0efaca0b22123f7219b6200314fe87b6d98ede54d90862c9e187a"
+    },
+    {
+      "id": "PT023",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §5(3)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "ea4da22c389c26bf39e651e3702fae6fb9df291ce42c7655ae34ca1e627777b9"
+    },
+    {
+      "id": "PT024",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §§10a,17",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "0f6bbcbfd27ee785e4ae37566dc20ea73871773be9909985a3b0577ccd90fd9b"
+    },
+    {
+      "id": "PT025",
+      "source": "duty",
+      "act_article": "Act8/2006 §4",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "e493f1c9c3c44f62a45726c8a53b14da1cdad6cfbfb36c71027f0807f14ca9e7"
+    },
+    {
+      "id": "PT026",
+      "source": "fee",
+      "act_article": "Act76/1994 §5",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "8487b08071f793353ac2ffe2d669b0529a3aa4f34e4198ca5b97c003b61b8b1e"
+    },
+    {
+      "id": "PT027",
+      "source": "registry",
+      "official_url": "https://www.us.fo/tinglysing/",
+      "actual_page_membership": "PASS independently opened web/current normal browser",
+      "website_words": 20
+    },
+    {
+      "id": "PT028",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §2(1)–(2)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "4800beb9a66067c5183ec138f579dcc783af9964c49afa433548e53d82512ef8"
+    },
+    {
+      "id": "PT029",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §§16(2),25",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "c617fa45b2ff457552f7d3bd386578f43a947cbd81bdccf1a7d6065fdff0fd3a"
+    },
+    {
+      "id": "PT030",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §§15(3),16(3)–(4)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "8aa5f7e3922b60e1c3a51df2ee9c8be2dfe15371930ccd7fcc334420470e6799"
+    },
+    {
+      "id": "PT031",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §11(2)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "be68ee77ad01fd99555391445c7f1877164c4792e8d0dea954fc7919cc19addb"
+    },
+    {
+      "id": "PT031",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §6(2)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "1a5c4171bb39b0ef38f211f53c342fd5603ac423a98cc84864006be3fbe4f71b"
+    },
+    {
+      "id": "PT031",
+      "source": "fee",
+      "act_article": "Act76/1994 §4(2)",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "6169756baf4ffbe957f53055cdb0f17e6693f7dd7edcdc29de1cea55b71c36af"
+    },
+    {
+      "id": "PT032",
+      "source": "duty",
+      "act_article": "Act8/2006 §§5,5a",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "04c36d247e1dd565b40eecc2e2efef344fb400af43715490be29f3425d070ca8"
+    },
+    {
+      "id": "PT033",
+      "source": "fee",
+      "act_article": "Act76/1994 §§3,5(3)",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "f895a4552dec11bb39d6ceff2bf443aa361a96e32dc03a7cc906ac4b5c4a9733"
+    },
+    {
+      "id": "PT034",
+      "source": "registration-reg",
+      "act_article": "Reg63/1962 §37(2)",
+      "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "86fbf22d66cb47aaa77a988a6fc4c81b92f2eed1a9c8bb9bcd42b9d4fc82b1f8"
+    },
+    {
+      "id": "PT035",
+      "source": "duty",
+      "act_article": "Act8/2006 §5c",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "5f8124816b80d5d9cd729721845daed1caa1e3be6c64e751d914a80064bb5805"
+    },
+    {
+      "id": "PT036",
+      "source": "registration-act",
+      "act_article": "Act55/1962 §36(1)",
+      "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "f7b80e3acb09a31df95e223c0e60dd88156e1f7b94033ef88157a6f32f987a39"
+    },
+    {
+      "id": "PT037",
+      "source": "acquisition",
+      "act_article": "Act158/2021 §§1–2",
+      "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "475f4fbe4e40633c8f043d68e849d09361c2e5fdc714cf44ae901c2637b283d6"
+    },
+    {
+      "id": "PT038",
+      "source": "acquisition",
+      "act_article": "Act158/2021 §§3–5",
+      "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "bfb8a5263b252551cbc421a8ce4ee52ed958bf937702fb80d692334e229924a3"
+    },
+    {
+      "id": "PT039",
+      "source": "acquisition",
+      "act_article": "Act158/2021 §§1,7",
+      "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "494d3fa1cc1fccaabfbf01a65641861c2c21e0d1da4763326f708e287d5d69d5"
+    },
+    {
+      "id": "PT040",
+      "source": "acquisition",
+      "act_article": "Act158/2021 §§6,9,12",
+      "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "14737cfb7be049d02aa214849b5cf12df9753be20295df53953d3bd25fea7950"
+    },
+    {
+      "id": "PT041",
+      "source": "digital-act",
+      "act_article": "Act128/2024 §§3–5",
+      "url": "https://www.logir.fo/Logtingslog/128-fra-13-12-2024-um-broyting-i-logtingslog-um-tinglysing-lov-om-Gaeldsbreve-logtingslog-um",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "d39f1304556c98883ef18a1af6ff2534c0f6c1c94a4acd1c806e50abf5892949"
+    },
+    {
+      "id": "PT041",
+      "source": "digital-commence",
+      "act_article": "Reg60/2025 §1",
+      "url": "https://www.logir.fo/Kunngerd/60-fra-22-04-2025-um-at-seta-i-gildi-asetingar-fyri-akfarsbokina-i-logtingslog-um",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "9bb871017d9e151b93e94a57ad1649da936f99fe662d068fa095747b75bcbeae"
+    },
+    {
+      "id": "PT042",
+      "source": "duty",
+      "act_article": "Act8/2006 §§1,3a(1)–(2)",
+      "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "26a31590d341916bd8e101bfa2b2a75b9481cbe379617b0787e04f3b68a83b22"
+    },
+    {
+      "id": "PT042",
+      "source": "fee",
+      "act_article": "Act76/1994 §§1–2,4(2)",
+      "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "42f7a4af12f0a7702f204cfb55873454b51926f6cb081f71a04ecb719654ab17"
+    },
+    {
+      "id": "PT043",
+      "source": "appeal-act",
+      "act_article": "Act147/2021 §§2,10,15–16",
+      "url": "https://logir.fo/Logtingslog/147-fra-25-11-2021-um-Foroya-Kaerustovn",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "39def6012b364c8f5213bbdd47f2678376f8c7541f2a5bc1674c4c44f579949b"
+    },
+    {
+      "id": "PT043",
+      "source": "appeal-reg",
+      "act_article": "Reg161/2021 §6, Annex4.8",
+      "url": "https://logir.fo/Kunngerd/161-fra-14-12-2021-um-starvsskipan-fyri-Foroya-Kaerustovn",
+      "read_date": "2026-10-31",
+      "all_quote_chunks_in_fresh_official_source": true,
+      "quote_sha256": "4c7844e6f395407b807e98efc2cd9923047fb2ce2c0bd004a63610093ca187b7"
+    }
+  ],
+  "predecessor_Guides": [
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "sha256": "f0b446fa1f4d5a8df3add50fbcb82b2e05f2139a0cfffe1161c4f963b8dcd7ba",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "sha256": "115a0cd9c7ed682e0577037cb236e89b45fcde562c26545b3407f7ece1058b47",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "byte_exact": true
+    }
+  ],
+  "old_nonblank_units_verified": 2490,
+  "prior_accepted_evidence_files_unchanged": 459,
+  "claim_heading_destinations_verified": 43,
+  "metadata_notice_description_H1": "PASS",
+  "old_rules_removed": 0,
+  "lost_content_restored": 0,
+  "old_topic_destination_spotchecks": [
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "line": 32,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-company-registration-reporting.md:32",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "line": 28,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-corporate-income-tax.md:28",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "line": 29,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-country-by-country-reporting.md:29",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "line": 33,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-cross-border-payments.md:33",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "line": 29,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-estate-income-tax.md:29",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "line": 33,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-individual-income-tax.md:33",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "line": 28,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-inheritance-duty.md:28",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "line": 33,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-payroll-contributions.md:33",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "line": 27,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-payroll-levy.md:27",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "line": 28,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-transfer-pricing.md:28",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "line": 33,
+      "old_topic": "## Who this applies to",
+      "same_destination": "skills/faroe-islands/fo-vat.md:33",
+      "same_bytes_verified": true,
+      "line_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24"
+    }
+  ],
+  "final_frozen_inputs_reverified": true
+}

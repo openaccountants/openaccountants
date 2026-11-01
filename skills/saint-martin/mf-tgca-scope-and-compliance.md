@@ -2,13 +2,13 @@
 name: mf-tgca-scope-and-compliance
 description: >
   French Saint-Martin TGCA reference for businesses supplying goods and services, using the territorial tax code consolidated through June 2026. Covers local supply tests, imports, documented stock purchases, the Dutch-side export exclusion, ordinary and qualifying housing rates, collection timing, registration and periodic returns. Includes mechanical calculation examples and annual-tax filing boundaries. Distinguishes French Saint-Martin from Sint Maarten and identifies foreign-supplier registration evidence. Sector exemptions, special taxable bases, penalties and later amendments require separate verification before filing. This source-cited draft is not comprehensive country coverage or professional attestation.
-version: 0.2
+version: 0.3
 jurisdiction: MF
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -82,8 +82,6 @@ The supplier owes TGCA on taxable supplies. A taxable customer receiving goods/s
 - Complete article 253 sector-exemption and article 264 invoice checks before operational use. Recheck the cited filing notice for changes and reconcile any post-June amendments.
 
 Source-cited draft awaiting independent source and professional review. This Guide does not cover all local taxes, import duties, housing eligibility, penalties or appeals and is not individualized filing advice.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

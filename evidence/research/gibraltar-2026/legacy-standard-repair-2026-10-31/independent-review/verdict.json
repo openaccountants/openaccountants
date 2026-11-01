@@ -1,0 +1,48 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "reviewed_commit": "b0c501e5bd307e874f8f2fb5ecca7c7d54d9892e",
+  "scope": "eight inherited Guide structural/summary/source-attachment delta, not full country acceptance",
+  "rows_checked": 29,
+  "operative_excerpts_read": 46,
+  "rows_verified": 28,
+  "row_locator_repairs": 1,
+  "other_guide_copy_findings": 1,
+  "findings": [
+    {
+      "id": "LSR-1",
+      "priority": "P2",
+      "file": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/ledger.json",
+      "row": "LEG-17",
+      "problem": "Purpose-test excerpt labelled Article25(1); operative heading is Article28(1), Entitlement to benefits. Article25 is Exchange of information.",
+      "repair": "Correct article locator consistently in ledger.json/ledger.md/build_evidence.py and any source-read-scope entry; keep exact source text.",
+      "source": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+      "native_context": "uk-agreement.txt lines1588\u20131600; operative quote1594\u20131600"
+    },
+    {
+      "id": "LSR-2",
+      "priority": "P2",
+      "file": "skills/gibraltar/gi-property-stamp-duty.md",
+      "line": 119,
+      "problem": "New generic Penalties and interest paragraph says this Guide does not compute a separate penalty or interest amount, while its preserved base-penalty cases and executable control compute100/200 at154\u2013168. The paragraph also refers to allocation/formation/relief tests unrelated to this job.",
+      "repair": "Replace generic boilerplate with an accurate pointer to the Guide own s16 penalty method/control, or place the preserved penalty method in this canonical section; keep all existing caveats/examples."
+    }
+  ],
+  "preservation": "552 original lines/77 topics/14 original controls and metadata/CTA preserved;5 new controls verified",
+  "validation": {
+    "changed_PR_errors": 0,
+    "changed_PR_warnings": 31,
+    "tax_only_checks": "150/150 pass across15 Guides",
+    "country_examples": "19 files/34 blocks/0 failures",
+    "whole_country_general_failures": 15,
+    "whole_country_general_guide_count": 3,
+    "remote_PR_checks": "not checked or claimed"
+  },
+  "prior_minimum_tax_acceptance": "preserved; not reopened",
+  "country_complete": false,
+  "partials_retained": 7,
+  "professional_attestation": false,
+  "publication_reuse_clearance": "not given; parent check pending",
+  "input_manifest_sha256": "7052747c78911378cf23a373a233b3b3bf9263ad4b45153e8b08cee59d0d501b",
+  "reviewer": "independent Codex reviewer, not writer",
+  "guide_edits_commits_pushes_external_communications": false
+}

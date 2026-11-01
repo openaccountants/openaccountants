@@ -2,13 +2,13 @@
 name: gf-space-sector-octroi
 description: >
   French Guiana space-sector import relief reference for operations from August 2026 under territorial deliberations AP-2026-56 and AP-2026-57. Explains the residual octroi rate, continuing regional levy, activity and goods annex requirements, exclusive operational use, service-operator evidence and restrictions on combining exemptions. Includes an illustrative computation and exclusion cases for ordinary logistics and goods with alternative uses. This is a narrow source-cited draft, not automatic eligibility for every space supplier or a complete customs filing manual. Independent review, exact goods classification and current amendment checks remain necessary before application.
-version: 0.1
+version: 0.2
 jurisdiction: GF
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -51,8 +51,6 @@ For an illustrative qualifying import with confirmed customs value **€100,000*
 A listed mast for an eligible activity still fails this regime if it has an alternative use inconsistent with article 2. Equipment for ordinary warehousing does not qualify merely because launch cargo passes through the warehouse. An import before 1 August 2026 cannot use this decision retrospectively. A failed condition requires assessment under the otherwise applicable tariff and any separately established relief, not an assumed zero rate. [AP-2026-57, arts. 2, 5, 8](https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-57-regime-exo-partielle-activites-spatiales.pdf).
 
 Source-cited draft awaiting independent review. Only the cited illustrative annex entry has been visually verified here; no full classification crosswalk is claimed. Verify the exact row and current amendments for the transaction. Detailed customs filing codes, guarantees, reassessment and appeal procedures are outside this Guide.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
