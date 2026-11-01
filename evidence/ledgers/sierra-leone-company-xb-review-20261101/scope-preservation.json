@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-01",
+  "frozen_head": "935b20f97eca049de7809ed31d39883472dac7af",
+  "immutable_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "issue": 484,
+  "draft_pr": 1202,
+  "review_only": true,
+  "input_sha256": {
+    "skills/sierra-leone/sl-corporate-income-tax.md": "6c45b5d05ca12bc0613f13037c915e3dff34389655d64603ab2bd0c974656f23",
+    "skills/sierra-leone/sl-cross-border.md": "76ee7f8cc24775e43f047644c822e772d13cf8d8cdbc7ee31c750e6c9f167142",
+    "skills/sierra-leone/README.md": "402e950dd0e9fe87bd84620cfb7e52edb39270f8ef7e2228815beb27db22cb6b",
+    "skills/sierra-leone/sl-income-tax.md": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+    "skills/sierra-leone/sl-vat-gst.md": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+    "skills/sierra-leone/sl-company-formation.md": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+    "skills/sierra-leone/sl-tax-overview.md": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+    "skills/sierra-leone/sl-payroll-social.md": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2",
+    "skills/sierra-leone/sl-transfer-pricing.md": "6cfd4cc600cca6dc45b4d5f455b829e08ccc1ce1dd0e1c301fa6da51a11ecc8b",
+    "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.json": "7cde97b901673f9104c5b8fb9d1a51c49e3cd93703e0c2ffdb9212bb9d246a5d",
+    "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.md": "35c429d323d13ab06ee12e80ed16e7919338ebeb0efe44e1fb666c9ffb8e09b5",
+    "evidence/ledgers/sierra-leone-corporate-20261101/quote-check.json": "ebad39de4cc0e1fd7461d4afe896e9ccbe98f5ec70f9d95f873eef3a80cf9c28",
+    "evidence/ledgers/sierra-leone-corporate-20261101/rules.json": "54e89debe02a7dd20df8489f3a949e718cc4eaa791e1d6b57f0d1d55f816649a",
+    "evidence/ledgers/sierra-leone-corporate-20261101/shape-checks.json": "b8cc41e3ece04240fa047a3955560650284c794a9db4a8b22ccc6bb67fa65a5d",
+    "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md": "623583a4cbe14f6caed3c3f06082235c4b16bf945114c792f2706f66814699ce",
+    "evidence/ledgers/sierra-leone-corporate-20261101/source-read-manifest.json": "55f1c8c6ce984bcef22121f4e0e512e9dab49eddff0cbb173a06236ac1d9c168",
+    "evidence/ledgers/sierra-leone-corporate-20261101/writer-freeze.json": "f3c1a53006f0b4a1904bb8c9ee2410b20d756932de6b810667ef9fdd9edaf35f",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/preservation.md": "39ba3b3be852a8dffb852abd11c9b1a56801a93e393e68dd8ce2f54557ebf1af",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/quote-check.json": "938f88ad15492046cc36a45935e06e17cc2acd388d676f99f0110dba2c9a4f48",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json": "48b7e8e7a10e1cf9a6787e267c1c8e8f026b6c67d545055b02a335336ba10fdd",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md": "77cc6ca8d264a977138939a7a24528d9da71ac12f071428ff447427deeb67791",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/source-read-manifest.json": "8e898b010805d9a4c1aa08a05c33d763dfa1aebee58986f829d7b85cf6ad1962",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/writer-freeze.json": "fac11af45d72f624705abf0a066774d7f8ef7efa4442a852e2591f7e97384c78",
+    "evidence/ledgers/sierra-leone-draft-20261101/README.md": "96c07551bcbe3f52553e442a4c13ec218020b20b6ca3577fdb7885bfb29da70a",
+    "evidence/ledgers/sierra-leone-draft-20261101/old-guide-hashes.json": "26de3ec2aa7ca301cea0cc67dca0b3e6743efa5a6894963be38e59b8ff63df9d",
+    "evidence/ledgers/sierra-leone-draft-20261101/old-topic-register.json": "12a4a72688d96aef15c6d748df8ed7333d32f6edfed3129b0a72a69aebad7101",
+    "evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md": "467323fa25fa6426b586fa5e8528679b098b112dc48b049019a56413d6d25c7e",
+    "evidence/ledgers/sierra-leone-draft-20261101/sl-transfer-pricing.md": "2794a9cb784ca6db05d2d36d8a36e219121787dfffc8261cd24cbc62620816c8",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-ledger-register.json": "3cbd9dacbdcdce071d9ac5ee2a09cd37cc90ddb787f43819f054374d1cf33a27",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-source-read-manifest.json": "d23cb779c710691c775cce0268d7e665352a0026614dff15ee0fe6fd984cc805",
+    "evidence/ledgers/sierra-leone-draft-20261101/writer-validation.json": "c35cb4aa162a39a91eaf2dee8a2b69e72592730727385b8a6665e419eee8c642",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+    "evidence/ledgers/sierra-leone-payroll-20261101/rules.json": "1560c5e84de2fa69370c53b3e1dc3cf1d716d0c9c57adf43c97ec020b2e218da",
+    "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md": "763b1277478802afa35385ede1863682a53e8026c40bdf1bd18a2935bed06bc2",
+    "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e",
+    "evidence/ledgers/sierra-leone-payroll-20261101/writer-corrections.json": "79d8a740851f51cd71680c5edf5b1756f51b62ee55f69ada679714b53225e8a5",
+    "evidence/ledgers/sierra-leone-payroll-20261101/writer-freeze.json": "812fe202d525b00ad62db287dcb0ae2525c2814b54b67d9ddf06b4437b47af16",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/CLOSURE.md": "169731fad2a21e1fb7afb7fd6c856a9ab93960e2889fe72bcb97533b5364fa75",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/REVIEW.md": "1c88377e6618995532a5bf6ad5402987b77fe35d4d06b2da1b6a5194e5e6ba29",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/closure-validation.json": "836be0e7883aa9141920f623fcb4f7c66f696a203edc0e3a6d1aca6375a25ef5",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/closure.json": "ec7db6c3ddac26ee24d29857839621a4e094ec7b7d958caf513d8a3e3ed656c5",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/download-check.json": "7c4396d3e5be0b8e66517bdd5d16ba76900315fcca8d7c45b6608b7530edb8fe",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/preservation-and-metadata.json": "3debae2910410e3235f4bc80cfd20d066374ab6fc49aea40d330008dda7502fe",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/review.json": "9c7fbe53243d1b717690930db761e81ee2d1513a0caca157e67c8b2205248212",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/source-read-manifest.json": "bc1b7d9f183d57ab22f938d57c1cf7c689e5da754d18cc855d676b90f2efcdd1",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/status-reconciliation-authorization.json": "ed75390223a690d252dc6607afbfbf34c3321c015243a8dcf8ef68b7beaaa39b",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/status-reconciliation-receipt.json": "e28779c07b1502e9178661eb2b70824363fd9b47f96a6a9f77373bc9c0568528",
+    "evidence/ledgers/sierra-leone-payroll-review-20261101/validation.json": "4e8a1d708a92944a2725a5dad954b2496cd1f0d89ef1fb749c57556ebc58898b"
+  },
+  "four_legacy_files": {
+    "skills/sierra-leone/sl-income-tax.md": {
+      "sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "exact_to_base": true,
+      "tax_year": 2025
+    },
+    "skills/sierra-leone/sl-vat-gst.md": {
+      "sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "exact_to_base": true,
+      "tax_year": 2025
+    },
+    "skills/sierra-leone/sl-company-formation.md": {
+      "sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "exact_to_base": true,
+      "tax_year": 2025
+    },
+    "skills/sierra-leone/sl-tax-overview.md": {
+      "sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "exact_to_base": true,
+      "tax_year": 2025
+    }
+  },
+  "corporate_cta_exact": true,
+  "corporate_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+  "corporate_platform_exact": {
+    "review_status": "review_status: pending_review",
+    "trust_label": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
+    "license": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+  },
+  "new_crossborder_no_platform_fields_or_cta": true,
+  "metadata": {
+    "sl-corporate-income-tax.md": {
+      "description_words": 115,
+      "version": "1.0",
+      "numeric_version_h1_match": true,
+      "tier": 2,
+      "accountant_attestation": false
+    },
+    "sl-cross-border.md": {
+      "description_words": 115,
+      "version": "0.1",
+      "numeric_version_h1_match": true,
+      "tier": 2,
+      "accountant_attestation": false
+    }
+  },
+  "all_seven_domains_partial": true,
+  "tp_payroll_closures_preserved_exact_to_frozen_head": true,
+  "tracked_files_modified": false,
+  "network": "git fetch failed DNS github.com; live web open ITA andF26 returned502; normalIAB F26URL loadedblankPDFsurface so no remotecontent/read claimed. Reviewused hash-matched captured primaryPDFs. No TLS bypass,CAPTCHA,archive or alternatehost substitution."
+}

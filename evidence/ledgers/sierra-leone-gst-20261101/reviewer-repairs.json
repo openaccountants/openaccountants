@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-01",
+  "changes": [
+    "F1 correct actual Finance Act2026 URL",
+    "F2 correct physical-page locators; printed pages and substantive rules unchanged"
+  ],
+  "candidate_files": {
+    "skills/sierra-leone/sl-vat-gst.md": "28a7f261c756de0a8ada685183c9d73fa6fe6aa6a138329460d9abf0312c5c88",
+    "evidence/ledgers/sierra-leone-gst-20261101/rules.json": "f7da05ce3bd3305b120aa257753f0be63b0de8f05d23f26e994e24f84fc148d2",
+    "evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md": "3a06fcffe048671c1e87fdfbc70ffa8a85d2804db777b7cf9e0034b4639f5697",
+    "evidence/ledgers/sierra-leone-gst-20261101/source-read-manifest.json": "978159cfa080c392c63c38bbcba7b3dda719afdeb82a72a0b20515332627deb8"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "ace5c6",
+      "wall_time_seconds": 0.000012708,
+      "exit_code": 0,
+      "original_token_count": 15,
+      "output": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "6cf310",
+      "wall_time_seconds": 0.182654417,
+      "exit_code": 0,
+      "original_token_count": 48,
+      "output": "changed-only mode: validating 5 changed guide file(s)\nchecked 4 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "1c974b",
+      "wall_time_seconds": 0.385520041,
+      "exit_code": 0,
+      "original_token_count": 21,
+      "output": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-01",
+  "status": "Writer draft; independent corporate review queued",
+  "prior_published_head": "bcc8612732233f1c472901f8853b30d79ca9b255",
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "Guide_description_words": 115,
+  "grouped_ledger_records": 36,
+  "old_topics": 15,
+  "examples": 2,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "CTA_platform_metadata": "exact",
+  "candidate_files": {
+    "skills/sierra-leone/sl-corporate-income-tax.md": "6c45b5d05ca12bc0613f13037c915e3dff34389655d64603ab2bd0c974656f23",
+    "skills/sierra-leone/README.md": "197d8e3237f9b8e62f16b29283528758b8914a94fd7345ed830915b486756bd5",
+    "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.json": "7cde97b901673f9104c5b8fb9d1a51c49e3cd93703e0c2ffdb9212bb9d246a5d",
+    "evidence/ledgers/sierra-leone-corporate-20261101/quote-check.json": "ebad39de4cc0e1fd7461d4afe896e9ccbe98f5ec70f9d95f873eef3a80cf9c28",
+    "evidence/ledgers/sierra-leone-corporate-20261101/rules.json": "54e89debe02a7dd20df8489f3a949e718cc4eaa791e1d6b57f0d1d55f816649a",
+    "evidence/ledgers/sierra-leone-corporate-20261101/shape-checks.json": "b8cc41e3ece04240fa047a3955560650284c794a9db4a8b22ccc6bb67fa65a5d",
+    "evidence/ledgers/sierra-leone-corporate-20261101/source-read-manifest.json": "55f1c8c6ce984bcef22121f4e0e512e9dab49eddff0cbb173a06236ac1d9c168",
+    "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.md": "35c429d323d13ab06ee12e80ed16e7919338ebeb0efe44e1fb666c9ffb8e09b5",
+    "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md": "623583a4cbe14f6caed3c3f06082235c4b16bf945114c792f2706f66814699ce"
+  }
+}

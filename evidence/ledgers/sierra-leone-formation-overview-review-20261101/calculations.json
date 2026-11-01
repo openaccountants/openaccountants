@@ -1,0 +1,46 @@
+[
+  {
+    "guide": "sl-company-formation",
+    "case": "Subscription and issue shortfalls",
+    "independent_calculation": "1000 / 4 = 250; max(0,250-200)=50 for each separate fact. No cash-payment rule inferred.",
+    "results": {
+      "quarter_shares": 250,
+      "subscription_shortfall": 50,
+      "issue_shortfall": 50
+    },
+    "verdict": "pass"
+  },
+  {
+    "guide": "sl-company-formation",
+    "case": "Director equity ownership limb",
+    "independent_calculation": "500/1000*100=50;1000*51/100=510;510-500=10. Other statutory conditions independently assumed, not proved.",
+    "results": {
+      "director_percentage": 50,
+      "required_shares": 510,
+      "shortfall": 10
+    },
+    "verdict": "pass"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "case": "Unit control",
+    "independent_calculation": "12000000/1000=12000;12000/1000=12;12000-12=11988. Modern amount must not be divided again.",
+    "results": {
+      "converted_old_source": 12000,
+      "incorrect_double_conversion": 12,
+      "understatement": 11988
+    },
+    "verdict": "pass"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "case": "Owner capital versus trading cash",
+    "independent_calculation": "100000+20000-40000=80000;100000-40000=60000;80000-60000=20000. Fictional cash bridge, not statutory taxable income.",
+    "results": {
+      "cash_increase": 80000,
+      "preliminary_trading_surplus": 60000,
+      "overstatement": 20000
+    },
+    "verdict": "pass"
+  }
+]

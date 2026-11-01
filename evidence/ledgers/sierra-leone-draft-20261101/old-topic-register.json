@@ -1,0 +1,485 @@
+[
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 17,
+    "exact_old_topic": "- **Common entity types** — Private company limited by shares, public limited company, company limited by guarantee, unlimited company, sole proprietorship and partnership (business name)  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:17",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 18,
+    "exact_old_topic": "- **Most common vehicle** — Private company limited by shares (Ltd)  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:18",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Minimum share capital** — No mandatory statutory minimum for a private company; a nominal share capital is typically used on registration ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 20,
+    "exact_old_topic": "- **Minimum directors** — At least two directors  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Company secretary** — Every company must appoint a company secretary  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Registration authority** — Office of the Administrator and Registrar-General (OARG), Freetown  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 23,
+    "exact_old_topic": "- **Incorporation documents** — Memorandum and Articles of Association plus prescribed registration forms filed with the OARG  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Tax registration** — Obtain a Taxpayer Identification Number (TIN) from the NRA after incorporation  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 25,
+    "exact_old_topic": "- **Social-security registration** — Register as an employer with NASSIT before paying staff  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 26,
+    "exact_old_topic": "- **Incorporation timeline** — Typically around 1–2 weeks once documents and name reservation are complete ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 27,
+    "exact_old_topic": "- **Annual return** — File an annual return with the OARG and maintain statutory registers  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:27",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 28,
+    "exact_old_topic": "- **Financial statements** — Prepare annual financial statements; audit required depending on size/type of company ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:28",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "old_line": 29,
+    "exact_old_topic": "- **Local business licence** — Obtain an annual business/trade licence from the relevant local council ((approx — confirm))  _(Local Government Act 2004)_",
+    "destination": "skills/sierra-leone/sl-company-formation.md:29",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 17,
+    "exact_old_topic": "- **Standard corporate income tax rate** — 30% percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/corporation-tax))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:17",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 18,
+    "exact_old_topic": "- **Non-resident company rate** — 30% on Sierra Leone-source taxable income percent  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:18",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Mining company rate** — Generally 30% (subject to mining-specific regimes and agreements) percent (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 20,
+    "exact_old_topic": "- **Agriculture / qualifying sector incentive** — Reduced rates and tax holidays available for approved agriculture and priority-sector investors (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Minimum/turnover tax** — A minimum tax of around 3% of turnover may apply to companies in a loss or low-profit position percent (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Tax base** — Accounting profit adjusted for tax (non-deductibles added back, capital allowances and exempt income deducted)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 23,
+    "exact_old_topic": "- **Withholding tax on dividends** — 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Withholding tax on interest** — 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 25,
+    "exact_old_topic": "- **Withholding tax on royalties** — 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 26,
+    "exact_old_topic": "- **Withholding tax on rent** — 10% resident; 15% non-resident percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 27,
+    "exact_old_topic": "- **Withholding tax on management/professional fees** — 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:27",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 28,
+    "exact_old_topic": "- **Withholding tax on contractors (goods & services)** — 6.5% resident; 11.5% non-resident percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:28",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 29,
+    "exact_old_topic": "- **Contractor WHT threshold** — WHT on supplier/contractor payments applies above NLe 500 in the month of payment NLe (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:29",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 30,
+    "exact_old_topic": "- **Annual return deadline** — Within 120 days of year end (by 30 April for a calendar-year company) (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:30",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "old_line": 31,
+    "exact_old_topic": "- **Provisional tax instalments** — Quarterly provisional tax instalments are payable during the year, with final balance on filing (approx — confirm)  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-corporate-income-tax.md:31",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 17,
+    "exact_old_topic": "- **Tax-free band (monthly)** — First NLe 600 per month taxed at 0% NLe  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:17",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 18,
+    "exact_old_topic": "- **Second band (monthly)** — Next NLe 600 (NLe 601–1,200) taxed at 15% percent  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:18",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Third band (monthly)** — Next NLe 600 (NLe 1,201–1,800) taxed at 20% percent  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 20,
+    "exact_old_topic": "- **Fourth band (monthly)** — Next NLe 600 (NLe 1,801–2,400) taxed at 25% percent  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Top band (monthly)** — Income above NLe 2,400 per month taxed at 30% percent  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Annual tax-free threshold** — First NLe 7,200 per year taxed at 0% ((approx — confirm)) NLe  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 23,
+    "exact_old_topic": "- **Non-resident employment income** — Taxed at a flat 25% (withheld at source) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Residence test for individuals** — An individual is resident if present in Sierra Leone for 183 days or more in the tax year, or is a government official posted abroad ((approx — confirm))  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 25,
+    "exact_old_topic": "- **Tax-free allowances cap** — Allowances exceeding NLe 500 per month are included in taxable income and subject to PAYE NLe  _([Income Tax Act 2000](https://thebettsfirmsl.com/blog/pay-as-you-earn-paye-compliance-management-in-sierra-leone))_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 26,
+    "exact_old_topic": "- **NASSIT relief** — Employee NASSIT contributions (5%) are deductible before computing PAYE ((approx — confirm))  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 27,
+    "exact_old_topic": "- **PAYE remittance deadline** — Employer remits PAYE by the 15th of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:27",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "old_line": 28,
+    "exact_old_topic": "- **Individual annual return** — Self-assessment return due within 120 days of year end (by 30 April) for those with non-PAYE income ((approx — confirm))  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-income-tax.md:28",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 17,
+    "exact_old_topic": "- **PAYE and NASSIT operation** — Employers operate PAYE on employee salaries and contribute to the National Social Security and Insurance Trust (NASSIT) under the NASSIT Act 2001. Both PAYE and NASSIT are remitted monthly to the relevant authority.  _(NASSIT Act 2001)_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:17",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 18,
+    "exact_old_topic": "- **Total NASSIT contribution** — 15% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:18",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Employer NASSIT contribution** — 10% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 20,
+    "exact_old_topic": "- **Employee NASSIT contribution** — 5% of basic salary (withheld by employer) percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Contribution base** — Basic salary/insurable earnings (no published statutory cap commonly applied) (approx — confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Benefits covered** — Old age, invalidity and survivors' (death) benefits  _([National Social Security and Insurance Trust Act 2001](https://www.nassit.org.sl/our-services/benefits))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 23,
+    "exact_old_topic": "- **PAYE withholding** — Employer deducts progressive PAYE (0%–30%) from employee pay each month percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Monthly remittance deadline** — PAYE and NASSIT due by the 15th of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 25,
+    "exact_old_topic": "- **National minimum wage** — NLe 800 per month NLe (approx — confirm)  _(Minimum Wage regulations)_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "old_line": 26,
+    "exact_old_topic": "- **Employer add-on cost** — Employer-side cost typically adds around 10%–12% on top of salary (mainly NASSIT) percent (approx — confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "skills/sierra-leone/sl-payroll-social.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Tax authority** — National Revenue Authority (NRA)  _([National Revenue Authority Act 2002](https://www.nra.gov.sl/))_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 20,
+    "exact_old_topic": "- **Currency** — New Leone (SLE / NLe); redenominated from old Leone in 2021 by removing three zeros ((approx — confirm))  _(Bank of Sierra Leone redenomination)_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Tax year** — Calendar year, 1 January to 31 December  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Basis of taxation** — Residence-based; residents taxed on worldwide income, non-residents on Sierra Leone-source income  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 23,
+    "exact_old_topic": "- **Top personal income tax rate** — 30 percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Standard corporate income tax rate** — 30 percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/corporation-tax))_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 25,
+    "exact_old_topic": "- **Consumption tax — Goods and Services Tax (GST)** — 15 percent (standard rate)  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 26,
+    "exact_old_topic": "- **Social security — NASSIT contributions** — 15 percent of basic salary (10% employer, 5% employee)  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 27,
+    "exact_old_topic": "- **Annual corporate return deadline** — Within 120 days after the end of the accounting year (by 30 April for a calendar-year taxpayer) ((approx — confirm))  _(Income Tax Act 2000)_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:27",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "old_line": 28,
+    "exact_old_topic": "- **Monthly PAYE/NASSIT remittance** — By the 15th day of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "skills/sierra-leone/sl-tax-overview.md:28",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 19,
+    "exact_old_topic": "- **Standard GST rate** — 15 percent  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:19",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 20,
+    "exact_old_topic": "- **GST on imports** — 15 percent (applied to imported goods and services for local use)  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:20",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 21,
+    "exact_old_topic": "- **Zero-rated supplies** — 0 percent (Exports and certain supplies are zero-rated (approx — confirm))  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:21",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 22,
+    "exact_old_topic": "- **Exempt supplies** — Basic foodstuffs, financial services, education, medical services and similar items are exempt (approx — confirm)  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:22",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 23,
+    "exact_old_topic": "- **Registration threshold** — 100,000 NLe (Annual taxable turnover of NLe 100,000 or more (approx — confirm))  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:23",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 24,
+    "exact_old_topic": "- **Filing frequency** — Monthly GST returns (approx — confirm)  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:24",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 25,
+    "exact_old_topic": "- **Return and payment deadline** — By the last working day of the month following the tax period (approx — confirm)  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:25",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 26,
+    "exact_old_topic": "- **Input tax credit** — Registered persons may credit input GST against output GST on taxable supplies  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:26",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "old_line": 27,
+    "exact_old_topic": "- **Reverse charge on imported services** — Recipients of services from non-resident suppliers self-account for GST under the reverse-charge mechanism (approx — confirm)  _(Goods and Services Tax Act 2009)_",
+    "destination": "skills/sierra-leone/sl-vat-gst.md:27",
+    "treatment": "Retained byte-identically in legacy2025 Guide. Current-source reconciliation remains outstanding, not coverage approval."
+  }
+]

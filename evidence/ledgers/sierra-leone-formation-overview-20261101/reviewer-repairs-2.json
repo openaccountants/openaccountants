@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-01",
+  "clarification": "s302(2) applies when company reporting year is not twelve months, not only a shorter year. Earlier finding/repair snapshots preserved as history.",
+  "actual_source": "Companies Act2009 physical125/printed229 s302(2)",
+  "changes": [
+    {
+      "file": "skills/sierra-leone/sl-company-formation.md",
+      "before": "e79a10c46226fe82aa2f271ac78ea21a910395f624e48555de18a3205a9c5f03",
+      "after": "923e7324322b36c1633ef91abd4b37e1c4f6d827b72d2ad5eb048540026601dc"
+    },
+    {
+      "file": "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json",
+      "before": "a4720c6cd71ab742255c6cc3a686fc50443b682efa571c617040d57dfe7edd1c",
+      "after": "bf16793e7bcc2fdd4da5f512f831ff0c72f9098e9ee1ab1175eb3975ac0bd6a3"
+    },
+    {
+      "file": "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md",
+      "before": "cc99ef067da93a42d98e4b8d9a1b802a63acad32a426e0886c611ec5d5ac456e",
+      "after": "c44183075b4f2f4f5f9a37e629dad7ec93e677575ed29dd44bd5413fbf3460ce"
+    }
+  ],
+  "candidate_files": {
+    "skills/sierra-leone/sl-company-formation.md": "923e7324322b36c1633ef91abd4b37e1c4f6d827b72d2ad5eb048540026601dc",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json": "bf16793e7bcc2fdd4da5f512f831ff0c72f9098e9ee1ab1175eb3975ac0bd6a3",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md": "c44183075b4f2f4f5f9a37e629dad7ec93e677575ed29dd44bd5413fbf3460ce",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.json": "9b12cfe76fade728a0f81fb7879f1578437b09de364fcf0236cea1fa6cc154d0",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.md": "ee759617e169fee3da245d26181af6fbfcdc9eb073a6b46e8591e9f1a6d7a962"
+  }
+}

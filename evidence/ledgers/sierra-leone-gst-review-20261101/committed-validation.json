@@ -1,0 +1,8 @@
+{
+  "content_commit": "dfbaffc064df681506688bed3a55ad6202fab4e0",
+  "changed_validator": "6 actual Guides; zero warnings",
+  "strict_audit": "6 source Guides; zero errors/warnings/notices",
+  "GST_examples": "2 blocks, zero failures",
+  "whole_base_whitespace": "pass",
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505"
+}

@@ -1,0 +1,102 @@
+{
+  "frozen_head": "48a6568aa0346659987b56f60ab13552f2dc5419",
+  "sources": [
+    {
+      "file": "nassit-act2001.pdf",
+      "sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "bytes": 2003760,
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "independently_fetched_hash_match": true,
+      "read_on": "2026-11-01",
+      "actual_scope": "Cover/commencement, complete s.2 definitions, ss.20\u201330 and s.38; relevant neighbouring portions on those pages. No complete amendment/commencement chain or whole-Act review.",
+      "physical_pdf_pages_visually_read": [
+        4,
+        5,
+        6,
+        7,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22
+      ],
+      "page_image_hashes": {
+        "4": "9d849d856c351b8780703e7514f944cefa11206a61fddf6804425f92025125b4",
+        "5": "e15a2cfacb24abf1b8ef5a3dcd45b08728b67b7d83b0b99bd3f4cbb7e8ddf3c8",
+        "6": "e09569eca1701faa1cbdf25c04b084f059ed10363cb8956037589030313f1457",
+        "7": "024d24c15532fb76c098330717ce99c42025ec96c9e703f181fd7659405b2a08",
+        "15": "336576ddfb8012732953fb56f395af0b6b86c2c7492a5394dbc2485693095d5a",
+        "16": "ec09efb52a835a87f62c656a44ab3f3e79dfaa641fdf1b058cf09a16c25e6748",
+        "17": "509e7cb5f9a47a0fa0af320356633bb9666900baba07f34f3d2d94b7ce94183b",
+        "18": "9e9f1ca21037d49b69deb4db763c0311d29ebdb6fc8a960a33a428bc49558875",
+        "21": "f2664a5145b2013d3264d297651e8171cf80b1eb0a2ddd8e3b6fdeec1fe6080c",
+        "22": "7e1c6de072b6e5c9b98593163599bb522bf341137d4780e0603302ebd325223e"
+      },
+      "ocr_helper_hashes": {
+        "4": "4a18b696081f373e2591e1343c4260467eab44067756e9951f5346c1421bff28",
+        "5": "0bf866857d04944bccb9108693551cc6ac3a2bc33b1b9b750c7d7f8b4018df27",
+        "6": "3242f2158c06fa3b35d51d3d106ce5aa4b96386ea95b809c36cb7e3af78a4d7b",
+        "7": "1a22f0ad25ecdce0c0a20b5fbc313358aba0b64d14a6987720ac80c07d8f9e58",
+        "15": "a2761f7b796ff51e57d1d4ae1bc49bdef0f69c2f6bc0627fd5676b96393d7dff",
+        "16": "a889a96fe1628763fa31455bae1d02a64b522535d060cde48f03405d3bf4722f",
+        "17": "e16a95b2b7da3f6317ebf2864d85e5decfb091d2e442dfc5b46fd122fc6c8d64",
+        "18": "0309b742ee1750b75b9a1389bd3a166408f42dca1dad9a72127c16cfb53ecfa9",
+        "21": "2952bc7a13dcc007606f670ec40f079c8de3d944728aca150371f70abe8b81ff",
+        "22": "6ccd85d231ce77e6175e77625047aa2d2a1572ab1a30d853135b0cfb049ef37d"
+      }
+    },
+    {
+      "file": "nassit-regulations.pdf",
+      "sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "bytes": 2658376,
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "independently_fetched_hash_match": true,
+      "read_on": "2026-11-01",
+      "actual_scope": "Complete regs.1\u201318 and adjacent beginning of regs.19\u201320 on PDF9; no representation that the entire forms schedule or whole40page Regulations was read.",
+      "physical_pdf_pages_visually_read": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "page_image_hashes": {
+        "4": "4b586bec9a9c918ef408ed8462fcea2e5b3583d58fb74734256e04971f150e10",
+        "5": "ab006cc85a785ff2903bf423c8c5c69c478a96929d855b5b8c4eddb1217edf5f",
+        "6": "b69b9c7846f5acab4c40b15d45ac3c7869f333a752eb912bf69adc2641c2a47a",
+        "7": "09178baaa42d9dd65fedb19a007e0ad4ad240ca9724e1ff83cb79a86af04d85d",
+        "8": "498cbea11381d7c292422c3f240129c87a16270b5f0b2cf1cae0c6ffd191b961",
+        "9": "e342729f31f75949b5d35b73e77e7e704080fa97916e6a3162a5256c97a0e507"
+      },
+      "ocr_helper_hashes": {
+        "4": "fdc8324b07905f8eed3fc89ab32e9d89ad78e0c6abb82d1d8a51c18fa2fa751a",
+        "5": "432652adf149f95a5d044a991f442050bdcfbc7832d624dd9fdb9a053e5fad20",
+        "6": "0cc28f59ce86f7b9769ea89f4a12ab36228adf6bd9ff1608a18f8cda374c6113",
+        "7": "884cc1566f16219a12374d384faa76fef2cca4326e723134d48afba6470519e9",
+        "8": "2f1a8fcad953a676c1c0efb55b0c19310b7d29a5e6b61f70eb8a677286394869",
+        "9": "44eaab3adb2647536b00af3994a4b85f719ae57fe6a14a379ab6cc018066c349"
+      }
+    }
+  ],
+  "public_pages_read": [
+    {
+      "url": "https://nassit.org.sl/our-services/contributions?a=7-727-1",
+      "actual_scope": "Main body: employer responsibility; SS4A; payment methods;5/10/15split;15daytiming;concurrentemployment;directors/contract/part-time/casualworkers;late/non-payment and non-registration. Navigation/resources read only to locate originals; benefits manuals not read.",
+      "cache_file": "nassit-contributions.html",
+      "read_on": "2026-11-01",
+      "cached_sha256": "dfac0ce3d93b4c69f03e0ad16b56f7345a96b656f48376f64b0402b3f727c754",
+      "independently_opened_official_page": true
+    },
+    {
+      "url": "https://nassit.org.sl/our-services/nassit-compliance",
+      "actual_scope": "Main body: establishment/all-worker registration,5/10/15split,on/before15thtiming,monthly schedules,non-compliance examples and rate-linked enforcement.",
+      "cache_file": "nassit-compliance.html",
+      "read_on": "2026-11-01",
+      "cached_sha256": "977d025fb492ca190979710b4998e74a3872e5d9f8989f6cfb38f93cca0a60c5",
+      "independently_opened_official_page": true
+    }
+  ],
+  "limits": "Official PDFs independently fetched and hashes matched. Web tool could open Act metadata but not read text, and Regulations web fetch failed; actual review was from matching cached scan images. Shell sandbox initially could not resolve hosts; successful ordinary HTTPS retry confirmed both files. This is a source-bound draft review, not a later-law or live-filing certification."
+}

@@ -1,0 +1,51 @@
+{
+  "independent_calculations": true,
+  "cases": [
+    {
+      "id": "C-case1",
+      "calculation": "1,000,000 - 400,000 = 600,000; 600,000 x 30% = 180,000",
+      "results": {
+        "chargeable_income": 600000,
+        "ordinary_tax": 180000
+      },
+      "assessment": "correct conditional profit-tax component only, no finalMATcash liability"
+    },
+    {
+      "id": "C-case2",
+      "calculation": "min(800,000,1,000,000 x 50%) = 500,000; unused 300,000; cappedtax 500,000 x 30% = 150,000; unsupportedtax200,000 x30%=60,000; difference90,000",
+      "results": {
+        "allowed_loss": 500000,
+        "remaining_loss": 300000,
+        "correct_ordinary_tax": 150000,
+        "unsupported_full_loss_tax": 60000,
+        "understatement": 90000
+      },
+      "assessment": "correct decision under stated loss/currentrate/noownershipdisqualification assumptions; notcurrentlosschainorMATapproval"
+    },
+    {
+      "id": "X-case1",
+      "calculation": "200-18=182, which does not exceed182;201-18=183, which exceeds182; overcount18",
+      "results": {
+        "first_counted_days": 182,
+        "second_counted_days": 183,
+        "unsupported_first_overcount": 18
+      },
+      "assessment": "arithmetic and boundary decision correct; read inputs as in the s10(1)(b)12monthwindow specified earlier. Both cases exclude abode/government and otheradjustments; noactualresidencetreatyapproval"
+    },
+    {
+      "id": "X-case2",
+      "calculation": "2000/10000=.20; min(900,3000x.20)=600; min(100,1000x.20)=100; separate700; pooledmin(1000,4000x.20)=800; overclaim100; remaining2000-700=1300",
+      "results": {
+        "average_rate": 0.2,
+        "credit_a": 600,
+        "credit_b": 100,
+        "correct_credit": 700,
+        "unsupported_pooled_credit": 800,
+        "overclaim": 100,
+        "domestic_tax_after_credit": 1300
+      },
+      "assessment": "correct conditional separate-receipt decision; explicitnoemploymentexemption/no foreignbranchaggregation, noexcesscarryforward/refund;20%assumedaverage notstatutoryband"
+    }
+  ],
+  "script_check": "4 blocks,0failures,0missing"
+}

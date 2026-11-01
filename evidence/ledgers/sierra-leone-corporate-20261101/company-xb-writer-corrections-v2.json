@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "935b20f97eca049de7809ed31d39883472dac7af",
+  "status": "Closure-attempt1 license and literal deadline repairs complete; focused recheck pending",
+  "repairs": [
+    "C12 exclude depreciable assets and include business-debt gains",
+    "C16 new investment included in ownership-change restriction",
+    "C23 substituted-year estimate/revision dates explicit",
+    "X12 branch aggregation restricted to resident company"
+  ],
+  "grouped_rule_records": 54,
+  "candidate_files": {
+    "skills/sierra-leone/sl-corporate-income-tax.md": "d508db8d370bd94e3bffdb98d30275e7c166c15cffcdc90e0117d8824f3d44a5",
+    "skills/sierra-leone/sl-cross-border.md": "6cab6c426800d93843cd6c3fee7d795fd4c1dc479c15f5e0518bcc2037221f7b",
+    "evidence/ledgers/sierra-leone-corporate-20261101/rules.json": "e5b88d8ed622dba0134fdb500b68514b37fb69e1c07c38376f1122568044c2b1",
+    "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md": "19d4537aace94a9a609dd11a9d1701b6f4ebf9a8e65005a11c47d9f3c2f4b536",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json": "fa33ede20fb1bbb6ef5249f573d70b4cdbd2a28ab60baf35ed5a3c964ee6b17b",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md": "a945a89829675171869c6e41aaf19d132f82b164d0b6c395881db3fa1978ac3c"
+  },
+  "prior_correction_receipt": "company-xb-writer-corrections.json",
+  "additional_repairs": [
+    "Restore platform-owned licensev1.0, retain contentversion/H11.1",
+    "Use literal on-or-before-tenth-month wording without inserting end"
+  ]
+}

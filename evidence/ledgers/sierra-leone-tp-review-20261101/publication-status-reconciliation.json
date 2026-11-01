@@ -1,0 +1,43 @@
+{
+  "scope": "Status-only reconciliation expressly permitted in CLOSURE.md; source rules, figures, examples and legal/implementation holds unchanged.",
+  "files": {
+    "skills/sierra-leone/sl-transfer-pricing.md": {
+      "reviewed_candidate_sha256": "2f39aa3dd8260f076ce985ab736f59ed7586c6dd7972c72c8c59eca9ee4c2a5f",
+      "publication_sha256": "6cfd4cc600cca6dc45b4d5f455b829e08ccc1ce1dd0e1c301fa6da51a11ecc8b",
+      "exact_replacements": [
+        [
+          "It is a research workpaper, pending independent review.",
+          "It is a research workpaper with an independent source review and documented correction closure."
+        ],
+        [
+          "Initial independent review required six corrections; focused closure of the corrected draft is pending.",
+          "Initial independent review required six corrections; focused closure accepted the corrected conditional source-reference draft."
+        ]
+      ]
+    },
+    "skills/sierra-leone/README.md": {
+      "reviewed_candidate_sha256": "d2babbad2277139710769001c5df55ec699e8ac65187211237381cd3d606838c",
+      "publication_sha256": "9e8b8d043e3934d306b9700cd4b9207162368f7f07140332ba8ebd49856d09cd",
+      "exact_replacements": [
+        [
+          "New 2026 draft,41 ledger rows; independent review, later instruments",
+          "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments"
+        ],
+        [
+          "New 2026 source draft, independent review pending",
+          "New 2026 conditional source draft; independent correction closure recorded"
+        ]
+      ]
+    },
+    "evidence/ledgers/sierra-leone-draft-20261101/README.md": {
+      "reviewed_candidate_sha256": "5616b5c765ce80570b15cf822729da42097ad175b7975f284523352716a607a4",
+      "publication_sha256": "96c07551bcbe3f52553e442a4c13ec218020b20b6ca3577fdb7885bfb29da70a",
+      "exact_replacements": [
+        [
+          "Independent review has not occurred.",
+          "The initial review and focused closure are recorded in ../sierra-leone-tp-review-20261101/. Acceptance is limited to the conditional source-reference scope; legal and implementation holds remain."
+        ]
+      ]
+    }
+  }
+}

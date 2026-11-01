@@ -1,0 +1,44 @@
+{
+  "sl-company-formation": {
+    "sha256": "f3d570268b7bcfb9b2dc41a0e80afa779c6032c770f69d480dcc836a2fb011bd",
+    "description_words": 114,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  "sl-tax-overview": {
+    "sha256": "faba635e7b43042fa4a08e8df7e9a32234adf838ce7805708c9a24be096676b5",
+    "description_words": 121,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  }
+}

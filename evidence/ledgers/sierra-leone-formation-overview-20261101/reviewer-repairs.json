@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-01",
+  "changes": [
+    "SL-FO-1 full nominee exclusion and short-year turnover maximum proration in table/example/JSON+humanledger",
+    "SL-FO-2 statutory-register suite explicitly retained as an unresolved job in Sources and exact predecessor destination"
+  ],
+  "actual_source_read": "Parent read CompaniesAct2009 actual physical125/printed229 s302(1)(e),(2); no new statutory-register provision claimed",
+  "candidate_files": {
+    "skills/sierra-leone/sl-company-formation.md": "e79a10c46226fe82aa2f271ac78ea21a910395f624e48555de18a3205a9c5f03",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json": "a4720c6cd71ab742255c6cc3a686fc50443b682efa571c617040d57dfe7edd1c",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md": "cc99ef067da93a42d98e4b8d9a1b802a63acad32a426e0886c611ec5d5ac456e",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.json": "9b12cfe76fade728a0f81fb7879f1578437b09de364fcf0236cea1fa6cc154d0",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.md": "ee759617e169fee3da245d26181af6fbfcdc9eb073a6b46e8591e9f1a6d7a962"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "read_on": "2026-11-01",
+  "method": "Independent actual cached source reading; fresh official web identity checks of BSL 2009, WIPO 2014 legal page and NIB candidate. No TLS/authentication bypass. Bill cover visually inspected. Selected provisions only; downloaded/extracted is not called read.",
+  "sources": [
+    {
+      "id": "C09",
+      "file": "formation-companies2009.pdf",
+      "url": "https://bsl.gov.sl/Companies_Act_2009_05_pdf_67839.pdf",
+      "sha256": "1263967794b88fb2e725e734336d3e88747dd2ff72f3970518dee679e853e7d5",
+      "physical_pages_read": [
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        41,
+        42,
+        43,
+        79,
+        80,
+        89,
+        104,
+        105,
+        115,
+        116,
+        118,
+        119,
+        123,
+        124,
+        125,
+        132,
+        133,
+        134,
+        185,
+        186
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "C14",
+      "file": "formation-companies2014-wipo.pdf",
+      "url": "https://www.wipo.int/wipolex/en/legislation/details/20537",
+      "sha256": "8633f823dbaef9416ae17bf1bbdd691d08a2de31ee3cd2662aac4306a33b91f8",
+      "physical_pages_read": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        11,
+        12
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "NIB",
+      "file": "formation-nib2022.pdf",
+      "url": "https://nib.gov.sl/wp-content/uploads/2025/05/THE-NATIONAL-INVESTMENT-BOARD-ACT-2022.pdf",
+      "sha256": "62549e8aeeb6bd257a2d056a334eeaed4cae2a4c4e6baf7887c7200a541d5377",
+      "physical_pages_read": [
+        2,
+        3,
+        4,
+        5,
+        17
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "BILL",
+      "file": "formation-nib-bill2026.pdf",
+      "url": "https://nib.gov.sl/wp-content/uploads/2026/03/COMPANIES-002.pdf",
+      "sha256": "9101c11ec60d1163eb508d5112f8e9b17a9c2b4b78772f0ac78d5f45dc666df1",
+      "physical_pages_read": [
+        1,
+        699,
+        700,
+        701,
+        702
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "HOME",
+      "file": "formation-nib-home.html",
+      "url": "https://nib.gov.sl/",
+      "sha256": "04584a231824e182f4988289faa1a5c090469e4a3d8c2ea3f0222029957baaa8",
+      "physical_pages_read": null,
+      "html_scope": "Companies reform promotion section"
+    },
+    {
+      "id": "REG",
+      "file": "formation-nib-registration.html",
+      "url": "https://nib.gov.sl/business-registration-2/",
+      "sha256": "fd075157cb1f98c05215bd0bfa5db7dad0fbe2be202d8994d0974cfa3da0d1f5",
+      "physical_pages_read": null,
+      "html_scope": "Registration company types, governance/post-registration text and actual CTA/header hrefs"
+    },
+    {
+      "id": "RAA",
+      "file": "Revenue_Administration_Act_2017_a505c603d7.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Revenue_Administration_Act_2017_a505c603d7.pdf",
+      "sha256": "888c20502c15cda828b869ecbaf0a461487f2a3ffccf95f6a4ea3c78377f0d04",
+      "physical_pages_read": [
+        15,
+        16
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "NRA",
+      "file": "THE_NATIONAL_REVENUE_AUTHORITY_ACT_2022_73b1f19cd7.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/THE_NATIONAL_REVENUE_AUTHORITY_ACT_2022_73b1f19cd7.pdf",
+      "sha256": "8e127fbf56f6ceed3b5db7379aa954873e3aaf579ce9fb4fd96a3b281b23e8b8",
+      "physical_pages_read": [
+        4,
+        6,
+        11,
+        12
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "ITA",
+      "file": "Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+      "physical_pages_read": [
+        1,
+        2,
+        20,
+        21,
+        22,
+        38,
+        39
+      ],
+      "html_scope": null
+    },
+    {
+      "id": "BSL",
+      "file": "bsl-redenomination-notice2021.pdf",
+      "url": "https://bsl.gov.sl/Public%20Notice%20on%20Redenomination.pdf",
+      "sha256": "9e09d12d56104b5981ef81ed8e7477bad14808cc2f861c1c79ac731b95255880",
+      "physical_pages_read": [
+        1
+      ],
+      "html_scope": null
+    }
+  ],
+  "additional_neighbor_scope": "2009 s.88 continuation physical43 was read independently to test s.85 subject-to condition. ITA unofficial disclaimer physical2 read, not merely cover/title physical1.",
+  "no_claim": "No full company-law/amendment continuity, enactment/commencement, live filing or accountant attestation proved.",
+  "visual_inspection": [
+    "NIB candidate physical1 cover, cached render",
+    "2014 amendment physical11 left/right printed20-21, freshly rendered with pdftoppm; confirms literal audit cross-reference and fine quote despite two-column extraction interleaving"
+  ]
+}

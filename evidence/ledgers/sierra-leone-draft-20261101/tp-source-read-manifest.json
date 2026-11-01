@@ -1,0 +1,30 @@
+{
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "source_route": "Actual NRA public catalogue links; native curl validating TLS; downloaded once; no access control bypass. Local PDF/OCR cache outsideGit.",
+  "sources": [
+    {
+      "file": "Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "bytes": 12141624,
+      "sha256": "59ded6ae590ff6cf38d11eb77c7cd1fcb1c3d1f79e1a9bdc10fc446503f16ba8",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "All32physicalPDFpages/regs1-31 read through localOCR; page32originalscan inspected. Method/range/documentation/penalty neighbouring conditions read. Not certification of subsequent instruments."
+    },
+    {
+      "file": "The_Finance_Act_2026_121df05d9b.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
+      "bytes": 960719,
+      "sha256": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cover and commencement1; fiscal provisions4-25 relevant to ordinary tax read. For thisGuide ss8,12 actualphysical7-8 visually inspected; not every annex."
+    },
+    {
+      "file": "The_Finance_Act_2025_beb680faed.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+      "bytes": 701135,
+      "sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Onlyss9-10atprinted/physical8-9forITA97A/150replacements; actualPDF9imagechecked for150(3). NotfullActread."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "read_on": "2026-11-01",
+  "checks": [
+    {
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "cached_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "matches_writer_hash": true,
+      "independent_fetch_exit_code": 6,
+      "fetch_error": "curl: (6) Could not resolve host: nassit.org.sl\n",
+      "independent_retry_route": "Python urllib.request HTTPS using default TLS validation, outside network-restricted sandbox; no CAPTCHA, spoofing or access-block bypass.",
+      "independent_retry_http_status": 200,
+      "independent_retry_bytes": 2003760,
+      "independent_retry_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "independent_retry_matches_cache": true
+    },
+    {
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "cached_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "matches_writer_hash": true,
+      "independent_fetch_exit_code": 6,
+      "fetch_error": "curl: (6) Could not resolve host: nassit.org.sl\n",
+      "independent_retry_route": "Python urllib.request HTTPS using default TLS validation, outside network-restricted sandbox; no CAPTCHA, spoofing or access-block bypass.",
+      "independent_retry_http_status": 200,
+      "independent_retry_bytes": 2658376,
+      "independent_retry_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "independent_retry_matches_cache": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "reviewer": "Independent Codex source reviewer, separate from writer",
+  "date": "2026-11-01",
+  "prior_reviewed_head": "29cfabc028e41f20d6c07f264023dd24071801c3",
+  "delta_manifest_sha256": "6bb920cfd93af06f4a4d6f9401d140048931d7820ff8c9746320967347e19277",
+  "candidate_files": {
+    "skills/sierra-leone/sl-income-tax.md": "0f341a7cb10ae87aef268dd03abb3b65215515fca1f31b8590f8a9988a8276e4",
+    "evidence/ledgers/sierra-leone-income-20261101/rules.json": "73f3b44d67173242b2df0ef3a28864d577c4c7937546e04f91fb0a34dd9bd976",
+    "evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md": "e3c35d1c343f6b59e7ca11681c802e0be83abccdeb5f22019e8f8f0a719c9270",
+    "evidence/ledgers/sierra-leone-income-20261101/source-read-manifest.json": "766f26c9bff8968f58a0db0519bc863f74d6af7c2f475679c8fa92d695463d9d",
+    "skills/sierra-leone/README.md": "b654770f1a1ca3b8234273c378b5da47010f1e5e732114cb836776db67c2deea"
+  },
+  "new_row": "I29",
+  "result": "accepted_conditional_source_hold",
+  "source_quote_exact_after_linewrap_normalisation": "be the market value of all such benefits",
+  "source_verdict": "FA2018s12 expressly replaces176(9) with market value of all benefits in kind contained in s23 for assessment year. New Guide and I29 accurately hold interaction with older general/specific valuations and later chain; no priority, operative2026 valuation or blanket exclusion rule invented.",
+  "preservation_checks": {
+    "first28_json_records_byte_equivalent_structured_values": true,
+    "prior11_source_records_structured_values_unchanged": true,
+    "two_oa_check_blocks_byte_identical": true,
+    "all29_markdown_rows_contiguous_same_column_count": true,
+    "prior_review_receipts_byte_identical": {
+      "evidence/ledgers/sierra-leone-income-review-20261101/old-topic-checks.json": "76ff37f994da0437a0c7f7416c41dd72fe735f902f85b3ded3f7c2ad7aceb452",
+      "evidence/ledgers/sierra-leone-income-review-20261101/calculations.json": "fa07c4dacb816fdb5115cb81dc0b31c0303299d7900b637d11403f5f1e591083",
+      "evidence/ledgers/sierra-leone-income-review-20261101/row-verdicts.json": "26669efcf2d879fb67e34b462f966b21e05683ffbe7b2be5e7dc85655454ab5e",
+      "evidence/ledgers/sierra-leone-income-review-20261101/source-reads.json": "36548e02bbed32a2c78d4ca28351039c368c61073f9ff91b72ec59f91afa4424",
+      "evidence/ledgers/sierra-leone-income-review-20261101/closure.json": "02e16575ed7048a9db9229ae4c8d8bc7223b829b26e3902b4225b7ff4d639064",
+      "evidence/ledgers/sierra-leone-income-review-20261101/review.md": "a013384fb949342035b4d060890cb858f76ea192a5f121b76dd662f57ca18969",
+      "evidence/ledgers/sierra-leone-income-review-20261101/review.json": "1dc3f3ffa43a4c398d9b0b19bd2bf27b5441b305d3843ed9ab099860cdab28e9"
+    },
+    "previously_accepted_four_sibling_Guides_byte_identical": true
+  },
+  "formatting_defect_found_and_closed": "Initial delta blank line split I29 from table. Parent removed it and refreshed manifest. Accepted ledger SHA256 e3c35d1c343f6b59e7ca11681c802e0be83abccdeb5f22019e8f8f0a719c9270 verified.",
+  "examples": "Unchanged from independently recomputed accepted cases: PAYE495/net2355; incorrect included termination795/excess300. No benefit valuation input in either case.",
+  "remaining_defects": [],
+  "limits": "Narrow held-source delta only. Complete amendment/commencement chain, current payroll valuation/benefit schedules, forms and live filing remain unverified. All seven domains remain partial. Prior closure is preserved and not silently extended beyond exact candidate.",
+  "reviewer_writes": "New evidence subdirectory only; no Guide/prior receipt/source cache/commit/remote edits."
+}
