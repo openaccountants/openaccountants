@@ -1,0 +1,1005 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "immutable_predecessor": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+  "ten_other_Guides_exact": true,
+  "corporate_only_two_rows_plus_version_H1": true,
+  "README_exact_append_only": true,
+  "prior_evidence_count": 130,
+  "all_prior_evidence_exact": true,
+  "files": [
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/README.md",
+      "immutable_sha256": "8d354f1c97ec1afeeb670a4ff4f30481657711583b86fb502af0ecbc157e9231",
+      "frozen_sha256": "8d354f1c97ec1afeeb670a4ff4f30481657711583b86fb502af0ecbc157e9231",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/examples.txt",
+      "immutable_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "frozen_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-corporate-tax.md",
+      "immutable_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "frozen_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-income-tax.md",
+      "immutable_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "frozen_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-payroll.md",
+      "immutable_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "frozen_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/old-topic-destinations.md",
+      "immutable_sha256": "944fc91bf89df1e01408cc37439db22a71f118c687e0d2aa37ab3b12b86bca47",
+      "frozen_sha256": "944fc91bf89df1e01408cc37439db22a71f118c687e0d2aa37ab3b12b86bca47",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/pack-scope-check.json",
+      "immutable_sha256": "e03c6847282ff5e0998394d7e673ed7de9132c92b0b2aee97e0b47f7868809b5",
+      "frozen_sha256": "e03c6847282ff5e0998394d7e673ed7de9132c92b0b2aee97e0b47f7868809b5",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/preservation-manifest.json",
+      "immutable_sha256": "3c3e222801fb5bb71220b9e9df1a616abbe965fe37fa63911b3bca793765a960",
+      "frozen_sha256": "3c3e222801fb5bb71220b9e9df1a616abbe965fe37fa63911b3bca793765a960",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/quote-checks.json",
+      "immutable_sha256": "d01e7a498ffb9cfe400e881d6e63e005360e7d22f1c269d01095dc6ea8f2a1d6",
+      "frozen_sha256": "d01e7a498ffb9cfe400e881d6e63e005360e7d22f1c269d01095dc6ea8f2a1d6",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/reviewer-corrections.json",
+      "immutable_sha256": "bdbe7eeb1766b7ce53cd46bea3bb715896593508a434cf50f68f3373f98a6f4f",
+      "frozen_sha256": "bdbe7eeb1766b7ce53cd46bea3bb715896593508a434cf50f68f3373f98a6f4f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/skill-checks.txt",
+      "immutable_sha256": "eab3ab395687b3c1d017d9ccf895534d931480eb161ae42015d3ca0499c4b044",
+      "frozen_sha256": "eab3ab395687b3c1d017d9ccf895534d931480eb161ae42015d3ca0499c4b044",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/sync-audit.txt",
+      "immutable_sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+      "frozen_sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validate-changed.txt",
+      "immutable_sha256": "b17ee3a8c3c08951c968e9b2ddd7282ce4d2747583c231eaf19a50b9695f7338",
+      "frozen_sha256": "b17ee3a8c3c08951c968e9b2ddd7282ce4d2747583c231eaf19a50b9695f7338",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validation-checkpoint.json",
+      "immutable_sha256": "aaf3ec14806327c460f28a97567729621e5674c49a5155c3c906bcb5aa5a15d5",
+      "frozen_sha256": "aaf3ec14806327c460f28a97567729621e5674c49a5155c3c906bcb5aa5a15d5",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "immutable_sha256": "a69bc31dec5f25869b4031bc88c515e647d6712f81fe9a297cfc42096117970b",
+      "frozen_sha256": "a69bc31dec5f25869b4031bc88c515e647d6712f81fe9a297cfc42096117970b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/examples.txt",
+      "immutable_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "frozen_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md",
+      "immutable_sha256": "6d6eb1b9bad4e5353989ed47f1ed9990472cdf71f025466e373a585c7b9f883c",
+      "frozen_sha256": "6d6eb1b9bad4e5353989ed47f1ed9990472cdf71f025466e373a585c7b9f883c",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md",
+      "immutable_sha256": "7fc0141c18875aaff28f49746f09e1b22514c9f7b8c30ebbd5f4c881041d0b3d",
+      "frozen_sha256": "7fc0141c18875aaff28f49746f09e1b22514c9f7b8c30ebbd5f4c881041d0b3d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md",
+      "immutable_sha256": "a8d9ed3e716cbe37b53bf38412927448850d97e9a80bf6332b27295dc00d8974",
+      "frozen_sha256": "a8d9ed3e716cbe37b53bf38412927448850d97e9a80bf6332b27295dc00d8974",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/preservation-manifest.json",
+      "immutable_sha256": "0d2a433f4cd7b7226230e22512f6cbf042abb57912d14a3b2c99e313e29f5e5d",
+      "frozen_sha256": "0d2a433f4cd7b7226230e22512f6cbf042abb57912d14a3b2c99e313e29f5e5d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/reviewer-repairs.json",
+      "immutable_sha256": "244dddc52921610de8705113dc519a856c709d4909b86eeccbf3fbd83e4466cc",
+      "frozen_sha256": "244dddc52921610de8705113dc519a856c709d4909b86eeccbf3fbd83e4466cc",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/skill-checks.txt",
+      "immutable_sha256": "a42b63d0c7f7cc827fb7da9a504cc4fbeebdcf4fe72541d71f114ccfafa9e44b",
+      "frozen_sha256": "a42b63d0c7f7cc827fb7da9a504cc4fbeebdcf4fe72541d71f114ccfafa9e44b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/source-identities.json",
+      "immutable_sha256": "400b297c01b1fed3a5efa7bfd1a45356613bba338e85a90def0924542e248b73",
+      "frozen_sha256": "400b297c01b1fed3a5efa7bfd1a45356613bba338e85a90def0924542e248b73",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/sync-audit.txt",
+      "immutable_sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "frozen_sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/validate-changed.txt",
+      "immutable_sha256": "bd4a3cd173dff3a5424e6f0d4aacb0c4f12378ded586f866bd67c8205fcba150",
+      "frozen_sha256": "bd4a3cd173dff3a5424e6f0d4aacb0c4f12378ded586f866bd67c8205fcba150",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/validation-checkpoint.json",
+      "immutable_sha256": "859e5d56d59dc084cd0e17231c840ae4b421db50ff5941077b40a2ca8afcd94f",
+      "frozen_sha256": "859e5d56d59dc084cd0e17231c840ae4b421db50ff5941077b40a2ca8afcd94f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/bf-nonresident-services-withholding.md",
+      "immutable_sha256": "8009a0069c860a4a284f7488780d7e4cc9eefa0fbacac5dfaca483744a1bf7f3",
+      "frozen_sha256": "8009a0069c860a4a284f7488780d7e4cc9eefa0fbacac5dfaca483744a1bf7f3",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/bf-transfer-pricing.md",
+      "immutable_sha256": "54f484233119bfae3516cb8703c232f5a2ea0f8549e6a2e817f9b9521bbccf46",
+      "frozen_sha256": "54f484233119bfae3516cb8703c232f5a2ea0f8549e6a2e817f9b9521bbccf46",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md",
+      "immutable_sha256": "2fb6d95d37a398232a2d8e96984ba3422fa46d25f154bd5ad4a818b4924cca92",
+      "frozen_sha256": "2fb6d95d37a398232a2d8e96984ba3422fa46d25f154bd5ad4a818b4924cca92",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md",
+      "immutable_sha256": "e67929ad9cca9c64ae96c9eaf51468ba7fcbf2b36c9b5c51c0ded574caa574a9",
+      "frozen_sha256": "e67929ad9cca9c64ae96c9eaf51468ba7fcbf2b36c9b5c51c0ded574caa574a9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md",
+      "immutable_sha256": "ef701adebc650babac879cc1dfebdc586d1b0513e95f0084c4faac5e2d22eeaf",
+      "frozen_sha256": "ef701adebc650babac879cc1dfebdc586d1b0513e95f0084c4faac5e2d22eeaf",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/final-repair-candidate.json",
+      "immutable_sha256": "4be75d4e92217dbf034cc858be6f27f76aa226ebfdf0e38441e54c994d7f95d9",
+      "frozen_sha256": "4be75d4e92217dbf034cc858be6f27f76aa226ebfdf0e38441e54c994d7f95d9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/frozen-candidate.json",
+      "immutable_sha256": "28b60bd7a93c10a657edf9f21a0f644256a8e3c557482faa6b0db4d9d0e79f86",
+      "frozen_sha256": "28b60bd7a93c10a657edf9f21a0f644256a8e3c557482faa6b0db4d9d0e79f86",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.json",
+      "immutable_sha256": "f5e3b5d8df4aef7b78d89a865f35f6cf05c4da4503775c2c642f50cb893ff06b",
+      "frozen_sha256": "f5e3b5d8df4aef7b78d89a865f35f6cf05c4da4503775c2c642f50cb893ff06b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md",
+      "immutable_sha256": "03c4acd9926986a3fd0df2e8c41cb0072c247caab64f786f7ac3064f6ed91b27",
+      "frozen_sha256": "03c4acd9926986a3fd0df2e8c41cb0072c247caab64f786f7ac3064f6ed91b27",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/parent-r1-r3-repairs.json",
+      "immutable_sha256": "4b7b17f0048a3aead9322ce4ead8a917025fabb813d5500a47c07b181666ee49",
+      "frozen_sha256": "4b7b17f0048a3aead9322ce4ead8a917025fabb813d5500a47c07b181666ee49",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/preservation.json",
+      "immutable_sha256": "1502bb5e4bf568db4e5ca2338198a2d3e4f065cb73de0bc0e9f552b8b37ec336",
+      "frozen_sha256": "1502bb5e4bf568db4e5ca2338198a2d3e4f065cb73de0bc0e9f552b8b37ec336",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/quote-location-check.json",
+      "immutable_sha256": "f6b8b75f62442378734f6d7c3e23ac939c47e75a9a378452d1474eaa530deb74",
+      "frozen_sha256": "f6b8b75f62442378734f6d7c3e23ac939c47e75a9a378452d1474eaa530deb74",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/r4-destination-repair.json",
+      "immutable_sha256": "0d282a72d1ce5c07552e9b035bccf84c96a6fbaa2d6ee2c445b864183624ca9d",
+      "frozen_sha256": "0d282a72d1ce5c07552e9b035bccf84c96a6fbaa2d6ee2c445b864183624ca9d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/rules.json",
+      "immutable_sha256": "7c09408900c10ad988d4ef273523e5f972c7ca9fdc117c332fb140a3c956c9c8",
+      "frozen_sha256": "7c09408900c10ad988d4ef273523e5f972c7ca9fdc117c332fb140a3c956c9c8",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/shape-checks.json",
+      "immutable_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "frozen_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/source-identities.json",
+      "immutable_sha256": "1f81e684494da6ca75662da57ca1c34d00021625cf5ddb0e839ab41d1753d258",
+      "frozen_sha256": "1f81e684494da6ca75662da57ca1c34d00021625cf5ddb0e839ab41d1753d258",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-record.md",
+      "immutable_sha256": "f190d48738e5ef27b22250221291ab1fb3adbcf7fd8b1bd89cd034dbed139363",
+      "frozen_sha256": "f190d48738e5ef27b22250221291ab1fb3adbcf7fd8b1bd89cd034dbed139363",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-validation.json",
+      "immutable_sha256": "7dd1df3bfcf76afdd460282a017e1f5e8c27e90ef71451e913fed86573310faf",
+      "frozen_sha256": "7dd1df3bfcf76afdd460282a017e1f5e8c27e90ef71451e913fed86573310faf",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-executable-cases.txt",
+      "immutable_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "frozen_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-independent-cases.json",
+      "immutable_sha256": "2a3c41a2c8419137ed092cdc988ab94047e34d70d42680e99676fd76032a2a3f",
+      "frozen_sha256": "2a3c41a2c8419137ed092cdc988ab94047e34d70d42680e99676fd76032a2a3f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-manifest.json",
+      "immutable_sha256": "fa9bb8ade3972fe901ff111bc0e6d79e7635fbf74dffbc003837c70ac2099f98",
+      "frozen_sha256": "fa9bb8ade3972fe901ff111bc0e6d79e7635fbf74dffbc003837c70ac2099f98",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-old-topic-checks.json",
+      "immutable_sha256": "e539cfe54198a3d1043263d963b997b9fa29ce1da23f17f27733d90d9ea3c51e",
+      "frozen_sha256": "e539cfe54198a3d1043263d963b997b9fa29ce1da23f17f27733d90d9ea3c51e",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-preservation-checks.json",
+      "immutable_sha256": "704d62f9a3d9e8a2b2a09a1a9367539af3875ebf50c4ee0c85aeecc8f074da53",
+      "frozen_sha256": "704d62f9a3d9e8a2b2a09a1a9367539af3875ebf50c4ee0c85aeecc8f074da53",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-row-checks.json",
+      "immutable_sha256": "d229a56f78322e763d53c57b23a809d4548823a2165e433ed44eae9689048ffd",
+      "frozen_sha256": "d229a56f78322e763d53c57b23a809d4548823a2165e433ed44eae9689048ffd",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-shape-checks.json",
+      "immutable_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "frozen_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure.md",
+      "immutable_sha256": "67cd5d7c1f0d54606f3d62536ca392474d6403161fd260b37707090234d431dd",
+      "frozen_sha256": "67cd5d7c1f0d54606f3d62536ca392474d6403161fd260b37707090234d431dd",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/committed-validation.json",
+      "immutable_sha256": "217245a81aaf50cf0b30ce92b4f4dc60efd968b57caa903aa10f3a3d626d4d62",
+      "frozen_sha256": "217245a81aaf50cf0b30ce92b4f4dc60efd968b57caa903aa10f3a3d626d4d62",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/executable-cases.txt",
+      "immutable_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "frozen_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/findings.json",
+      "immutable_sha256": "4b7de4f5ef3141b0d70140d588743fba6caaeebef9ebcc5b84c71f9d6c599630",
+      "frozen_sha256": "4b7de4f5ef3141b0d70140d588743fba6caaeebef9ebcc5b84c71f9d6c599630",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/independent-cases.json",
+      "immutable_sha256": "83f9b7db0260b169bbd7fac44e8269e41e0e4375e869d4296e6512231335f1ae",
+      "frozen_sha256": "83f9b7db0260b169bbd7fac44e8269e41e0e4375e869d4296e6512231335f1ae",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/input-manifest.json",
+      "immutable_sha256": "c8169cd93dd02cf7d578b372449a65cdbdfbd763876528cca32430f40ad781b2",
+      "frozen_sha256": "c8169cd93dd02cf7d578b372449a65cdbdfbd763876528cca32430f40ad781b2",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/old-topic-checks.json",
+      "immutable_sha256": "fc485da561c2aa8e55141784469d3cfa32e7eaa33ae0df5c5a942aaf2abb05c6",
+      "frozen_sha256": "fc485da561c2aa8e55141784469d3cfa32e7eaa33ae0df5c5a942aaf2abb05c6",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/preservation-checks.json",
+      "immutable_sha256": "ebd2e05a3c5105fb2e6d46d8596bead2e120a608c174efb59d2edd8bfa692759",
+      "frozen_sha256": "ebd2e05a3c5105fb2e6d46d8596bead2e120a608c174efb59d2edd8bfa692759",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/review.md",
+      "immutable_sha256": "b9fc3f7cebe207ef4ddbb99b0c159c876932fac8fd448de73675d8e62bd2295f",
+      "frozen_sha256": "b9fc3f7cebe207ef4ddbb99b0c159c876932fac8fd448de73675d8e62bd2295f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/row-checks.json",
+      "immutable_sha256": "17488a8a0ea3055c4862751adef772f82762547ae13b6743afdcebfb474281a6",
+      "frozen_sha256": "17488a8a0ea3055c4862751adef772f82762547ae13b6743afdcebfb474281a6",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/shape-checks.json",
+      "immutable_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "frozen_sha256": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/source-read-log.json",
+      "immutable_sha256": "f436b2bbfb8eedbb6984765648d03088ed6361cc427504412e38e29f7b67f737",
+      "frozen_sha256": "f436b2bbfb8eedbb6984765648d03088ed6361cc427504412e38e29f7b67f737",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/status-reconciliation.json",
+      "immutable_sha256": "6b22d56936d9158b3296fcc73af7991d23197aeda8008ef5e1337316c016e8f0",
+      "frozen_sha256": "6b22d56936d9158b3296fcc73af7991d23197aeda8008ef5e1337316c016e8f0",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-old-topics.md",
+      "immutable_sha256": "28bc5bfecea29f71a2e100b3406f9d877add9d7a3f5af31b7ae8cd7d3fe7b96c",
+      "frozen_sha256": "28bc5bfecea29f71a2e100b3406f9d877add9d7a3f5af31b7ae8cd7d3fe7b96c",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.json",
+      "immutable_sha256": "2c1b42368b96c1bb14238716f60a1a05549a20d6650e16c8860842a0ff8b3fe2",
+      "frozen_sha256": "2c1b42368b96c1bb14238716f60a1a05549a20d6650e16c8860842a0ff8b3fe2",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md",
+      "immutable_sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+      "frozen_sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/committed-validation.json",
+      "immutable_sha256": "48522ae75e7922fb3e6e3f3ae17290d20fe4a1bbf390b8774a5bfb933e3af86a",
+      "frozen_sha256": "48522ae75e7922fb3e6e3f3ae17290d20fe4a1bbf390b8774a5bfb933e3af86a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/format-repair.json",
+      "immutable_sha256": "3563b242becfeab25db8196df48280c9ae6ce2f72e13cf1389eb21e7ac95d867",
+      "frozen_sha256": "3563b242becfeab25db8196df48280c9ae6ce2f72e13cf1389eb21e7ac95d867",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/freeze-receipt.json",
+      "immutable_sha256": "3020e5e707256bd633caed5e448710f9135a49fa71d4139a71a345ccbc3abefd",
+      "frozen_sha256": "3020e5e707256bd633caed5e448710f9135a49fa71d4139a71a345ccbc3abefd",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/initial-committed-validation.json",
+      "immutable_sha256": "3abe39bc6b5a9b668fc80eec49b737a95955753e92e903558a31d2c04f3f95d8",
+      "frozen_sha256": "3abe39bc6b5a9b668fc80eec49b737a95955753e92e903558a31d2c04f3f95d8",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/old-topic-destinations.json",
+      "immutable_sha256": "1a3b4ae96318a5c5dd77c8cc57fa9b97c99c3b36d601be5d0e00b6d980133b54",
+      "frozen_sha256": "1a3b4ae96318a5c5dd77c8cc57fa9b97c99c3b36d601be5d0e00b6d980133b54",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/preservation-baseline.json",
+      "immutable_sha256": "034121191889571bea6df5e068cd515765d619a64a545682024e07aaf1aaa2c4",
+      "frozen_sha256": "034121191889571bea6df5e068cd515765d619a64a545682024e07aaf1aaa2c4",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/readme-addition.json",
+      "immutable_sha256": "cba7af540b6696abf70ec1f05825cdf4b4635a55c45c08d8d4a16a7b5fe09959",
+      "frozen_sha256": "cba7af540b6696abf70ec1f05825cdf4b4635a55c45c08d8d4a16a7b5fe09959",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/source-identities.json",
+      "immutable_sha256": "3338e18e487adf572c316edd1aa6cd9f6ddfaae1b9006756f491bbda0eed5fe4",
+      "frozen_sha256": "3338e18e487adf572c316edd1aa6cd9f6ddfaae1b9006756f491bbda0eed5fe4",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-check.py",
+      "immutable_sha256": "6461176d7de49ef53346389adad66fcc49437bd3a1446d7dedf2bac08bd2e90a",
+      "frozen_sha256": "6461176d7de49ef53346389adad66fcc49437bd3a1446d7dedf2bac08bd2e90a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-checks.json",
+      "immutable_sha256": "c6a9f2d6db030426ca60eba759452b482077c6e2f64a6b75695178ce4e63afed",
+      "frozen_sha256": "c6a9f2d6db030426ca60eba759452b482077c6e2f64a6b75695178ce4e63afed",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-record.md",
+      "immutable_sha256": "24027a8d04fb74b51939f7778ccb89386226703c7333c4d51466302630644098",
+      "frozen_sha256": "24027a8d04fb74b51939f7778ccb89386226703c7333c4d51466302630644098",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/committed-validation.json",
+      "immutable_sha256": "ad241111ea3832a0f4a7517d0893cca1ab682a0a5a6fd432be83d92c12d16aab",
+      "frozen_sha256": "ad241111ea3832a0f4a7517d0893cca1ab682a0a5a6fd432be83d92c12d16aab",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/findings.json",
+      "immutable_sha256": "abeced7e598fa82c8a30a0537549df4d97a791c0a7b5ebebd0858ae65bf7ac63",
+      "frozen_sha256": "abeced7e598fa82c8a30a0537549df4d97a791c0a7b5ebebd0858ae65bf7ac63",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/independent-cases.json",
+      "immutable_sha256": "806b2322e6bd7e6355acf1463fe30ff1c16e6ab24c584696ccb49949d5343405",
+      "frozen_sha256": "806b2322e6bd7e6355acf1463fe30ff1c16e6ab24c584696ccb49949d5343405",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/independent-check.py",
+      "immutable_sha256": "c782f39a8c991f540121332a54e9b49003b3bc905dda426c9dd477deae21378a",
+      "frozen_sha256": "c782f39a8c991f540121332a54e9b49003b3bc905dda426c9dd477deae21378a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/input-manifest.json",
+      "immutable_sha256": "e2966641aa66aec02a2a6511f1da05e8320da8ab1c542a5c866b69f8c73b5cfc",
+      "frozen_sha256": "e2966641aa66aec02a2a6511f1da05e8320da8ab1c542a5c866b69f8c73b5cfc",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/preservation-checks.json",
+      "immutable_sha256": "e1dbc88c613e46102e25939bf00f12c37a7ebfcc54d0a93d9047993887d0004f",
+      "frozen_sha256": "e1dbc88c613e46102e25939bf00f12c37a7ebfcc54d0a93d9047993887d0004f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/review-output-manifest.json",
+      "immutable_sha256": "996de97f60532bca76d4c203f5ce761c83466823706529c1143ea402e8af67d1",
+      "frozen_sha256": "996de97f60532bca76d4c203f5ce761c83466823706529c1143ea402e8af67d1",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/review.md",
+      "immutable_sha256": "e0511bd20b741b38b5f15c0f6e708c23898ba940ed85023a5ed16980fdd9187b",
+      "frozen_sha256": "e0511bd20b741b38b5f15c0f6e708c23898ba940ed85023a5ed16980fdd9187b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/row-checks.json",
+      "immutable_sha256": "04de757fe330a700ed9bdd934505f2cac29d16926a4f4252dfbd5a0d1a44007c",
+      "frozen_sha256": "04de757fe330a700ed9bdd934505f2cac29d16926a4f4252dfbd5a0d1a44007c",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/shape-checks.json",
+      "immutable_sha256": "302fb930cda4b150f69b3f410e03e2a6d0c4089b1079252fb1f188a72269b384",
+      "frozen_sha256": "302fb930cda4b150f69b3f410e03e2a6d0c4089b1079252fb1f188a72269b384",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/source-read-log.json",
+      "immutable_sha256": "4e1927abb323125c2e0353117b2c71fde922672d6687cede2c4029e03fb007d7",
+      "frozen_sha256": "4e1927abb323125c2e0353117b2c71fde922672d6687cede2c4029e03fb007d7",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/status-only-permission.json",
+      "immutable_sha256": "84b35806b3c6eb7004fd630f00b0f4c54912b63203eded27559a5a0ba88c7a83",
+      "frozen_sha256": "84b35806b3c6eb7004fd630f00b0f4c54912b63203eded27559a5a0ba88c7a83",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/status-reconciliation.json",
+      "immutable_sha256": "5c0a50b349ec1f0816645b5638016a8898bdf950a49f31b58a02b5677a148e0b",
+      "frozen_sha256": "5c0a50b349ec1f0816645b5638016a8898bdf950a49f31b58a02b5677a148e0b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/validation.json",
+      "immutable_sha256": "942285c758f184b3c0c43f76a243dbc7392fa72a741f148b1217e8021ed0231f",
+      "frozen_sha256": "942285c758f184b3c0c43f76a243dbc7392fa72a741f148b1217e8021ed0231f",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/write-review-record.py",
+      "immutable_sha256": "5313ccae41f4a59424985a9b1ec51831323283ac26ae28535c0437209d41a39b",
+      "frozen_sha256": "5313ccae41f4a59424985a9b1ec51831323283ac26ae28535c0437209d41a39b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-manifest.json",
+      "immutable_sha256": "6254d7a40644b392ff687cb41ab4b56a8a6fc2496eba2fba2b707ada76e5638b",
+      "frozen_sha256": "6254d7a40644b392ff687cb41ab4b56a8a6fc2496eba2fba2b707ada76e5638b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-row-checks.json",
+      "immutable_sha256": "6b1bdcaccaf182d4a60fd4abc568bc0ba89aebe66273bfcf55a964420d8386fe",
+      "frozen_sha256": "6b1bdcaccaf182d4a60fd4abc568bc0ba89aebe66273bfcf55a964420d8386fe",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md",
+      "immutable_sha256": "ff226d3602007daf13f465bd60a6aea0ce2ae46e9a14d86437c3ec9a9e95e348",
+      "frozen_sha256": "ff226d3602007daf13f465bd60a6aea0ce2ae46e9a14d86437c3ec9a9e95e348",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/example-checks.txt",
+      "immutable_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "frozen_sha256": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/independent-example-checks.json",
+      "immutable_sha256": "55959747a05cd7d8a2550e7ea3a139b8a8672a137b966bcc6b8d78c90733f5e0",
+      "frozen_sha256": "55959747a05cd7d8a2550e7ea3a139b8a8672a137b966bcc6b8d78c90733f5e0",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/old-topic-spot-checks.md",
+      "immutable_sha256": "196a2d2b64b0e26c94159fc5de5d18768fcaef3bfc1c67170c602ed0da014061",
+      "frozen_sha256": "196a2d2b64b0e26c94159fc5de5d18768fcaef3bfc1c67170c602ed0da014061",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/preservation-checks.json",
+      "immutable_sha256": "9c4a6df580bbbc9785629054a8b47462fc088664d39aa8d02ea593a76bdb808c",
+      "frozen_sha256": "9c4a6df580bbbc9785629054a8b47462fc088664d39aa8d02ea593a76bdb808c",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/review.md",
+      "immutable_sha256": "70601ea409e7ecca723e04b94f3089c8db11914f7eba15632f1cdc5ec38b4aa0",
+      "frozen_sha256": "70601ea409e7ecca723e04b94f3089c8db11914f7eba15632f1cdc5ec38b4aa0",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/row-checks.json",
+      "immutable_sha256": "de7dc09d4d6e35414ac7af3f6f8727139462434cb78b76d424aa1cb7cc4a8101",
+      "frozen_sha256": "de7dc09d4d6e35414ac7af3f6f8727139462434cb78b76d424aa1cb7cc4a8101",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md",
+      "immutable_sha256": "fa8dbd0ca63fa498535e1db8991c69a511917e1281f448fb0c03b503d3965027",
+      "frozen_sha256": "fa8dbd0ca63fa498535e1db8991c69a511917e1281f448fb0c03b503d3965027",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json",
+      "immutable_sha256": "f7a8e75846ed1d8adfa1deef87c2dc34b6635c039f9564742e5bb6c6d00c1301",
+      "frozen_sha256": "f7a8e75846ed1d8adfa1deef87c2dc34b6635c039f9564742e5bb6c6d00c1301",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt",
+      "immutable_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "frozen_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json",
+      "immutable_sha256": "565bb2e0cc772e9689d876a9bc8a4f3f07b19e8bb1ffa0f1fcc1de276ff25fbb",
+      "frozen_sha256": "565bb2e0cc772e9689d876a9bc8a4f3f07b19e8bb1ffa0f1fcc1de276ff25fbb",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt",
+      "immutable_sha256": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+      "frozen_sha256": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt",
+      "immutable_sha256": "49d8a1bdffb78f61b3a6f0a71b3f847d3f308e362a4ced88d96daff51db20424",
+      "frozen_sha256": "49d8a1bdffb78f61b3a6f0a71b3f847d3f308e362a4ced88d96daff51db20424",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt",
+      "immutable_sha256": "2e654d264c138ca4966372f5c908d82ab1376ae245cc883b7e2bb4c65bc0c7df",
+      "frozen_sha256": "2e654d264c138ca4966372f5c908d82ab1376ae245cc883b7e2bb4c65bc0c7df",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt",
+      "immutable_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "frozen_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json",
+      "immutable_sha256": "9c925117c781e08012c18ad8cafc4f319ff878ba840c71318c487c4d4a2e232a",
+      "frozen_sha256": "9c925117c781e08012c18ad8cafc4f319ff878ba840c71318c487c4d4a2e232a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/review.md",
+      "immutable_sha256": "b7cae3b96b469870cf6492cd563492297db6cce698d93496899db94fb7fc0c06",
+      "frozen_sha256": "b7cae3b96b469870cf6492cd563492297db6cce698d93496899db94fb7fc0c06",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt",
+      "immutable_sha256": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+      "frozen_sha256": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt",
+      "immutable_sha256": "475f9502d22e982a350a54a959b5f72ee21975d7e3cefe4f1f3583492877d1dd",
+      "frozen_sha256": "475f9502d22e982a350a54a959b5f72ee21975d7e3cefe4f1f3583492877d1dd",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt",
+      "immutable_sha256": "ba17c1b2061a4e85ae069a9c01f090de6c0abbb8eef27c4d06ad3db6db6c3046",
+      "frozen_sha256": "ba17c1b2061a4e85ae069a9c01f090de6c0abbb8eef27c4d06ad3db6db6c3046",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-manifest.json",
+      "immutable_sha256": "aeebbff8bfdd5b4ef87129c993b354611b5e941800819136af1965963b2c171e",
+      "frozen_sha256": "aeebbff8bfdd5b4ef87129c993b354611b5e941800819136af1965963b2c171e",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-preservation-checks.json",
+      "immutable_sha256": "571284b1643f6c838161ce9fb5a4e83c47a4a5c25d44852f6b70bcb93a23221a",
+      "frozen_sha256": "571284b1643f6c838161ce9fb5a4e83c47a4a5c25d44852f6b70bcb93a23221a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-row-checks.json",
+      "immutable_sha256": "9e8fc886c395bd7cb06562ad23c90c63cbbba20d2bdf14e469ba21e01562fa2c",
+      "frozen_sha256": "9e8fc886c395bd7cb06562ad23c90c63cbbba20d2bdf14e469ba21e01562fa2c",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure.md",
+      "immutable_sha256": "f2a6d68aaab7d0a115378395b9b73e290f6e8735630b606d3394223307403c00",
+      "frozen_sha256": "f2a6d68aaab7d0a115378395b9b73e290f6e8735630b606d3394223307403c00",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/committed-validation.json",
+      "immutable_sha256": "05a26fc6925c0d882226a9eedad3c4b6d8bdb5bffa80ba6eee560b7d152f81d7",
+      "frozen_sha256": "05a26fc6925c0d882226a9eedad3c4b6d8bdb5bffa80ba6eee560b7d152f81d7",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/final-status-identity.json",
+      "immutable_sha256": "9e75c9e81307b1ed3e7cbb2556b7c94641e04eb25eb3cd5001c09982f850def6",
+      "frozen_sha256": "9e75c9e81307b1ed3e7cbb2556b7c94641e04eb25eb3cd5001c09982f850def6",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/final-status-identity.md",
+      "immutable_sha256": "938a0bc3fba66b565cd86bf1c337584f661976c536bc8be668991a60449a32ce",
+      "frozen_sha256": "938a0bc3fba66b565cd86bf1c337584f661976c536bc8be668991a60449a32ce",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/findings.json",
+      "immutable_sha256": "8b34965423f99c30d8215185f6e16542a3abfc001d334fb003b89fd47ee7fa09",
+      "frozen_sha256": "8b34965423f99c30d8215185f6e16542a3abfc001d334fb003b89fd47ee7fa09",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/independent-cases.json",
+      "immutable_sha256": "f3e75e5f8d8aa15ef0745373cf001dec663d9b30d2b1eae8e596d97dc9db27f6",
+      "frozen_sha256": "f3e75e5f8d8aa15ef0745373cf001dec663d9b30d2b1eae8e596d97dc9db27f6",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/input-manifest.json",
+      "immutable_sha256": "978ac7a4da493c8a8fc71c17ed337e144fd05956b62ec62d718e832e3fc43a8a",
+      "frozen_sha256": "978ac7a4da493c8a8fc71c17ed337e144fd05956b62ec62d718e832e3fc43a8a",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/old-topic-checks.json",
+      "immutable_sha256": "9a2cc7da81b191bc3bc1be88cf43c783a5e2381cd4b55de81f66ba2576da30d1",
+      "frozen_sha256": "9a2cc7da81b191bc3bc1be88cf43c783a5e2381cd4b55de81f66ba2576da30d1",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/preservation-checks.json",
+      "immutable_sha256": "481f3153232fbe74223be6d5cc72b7ae176c30b6ff1e4bb2355cf0b69bcb2ffa",
+      "frozen_sha256": "481f3153232fbe74223be6d5cc72b7ae176c30b6ff1e4bb2355cf0b69bcb2ffa",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/review.md",
+      "immutable_sha256": "80648c0d8942bd3d3a52e32ec63d6dbe267223d80d49cb06eaa0421b402b2aa1",
+      "frozen_sha256": "80648c0d8942bd3d3a52e32ec63d6dbe267223d80d49cb06eaa0421b402b2aa1",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/row-checks.json",
+      "immutable_sha256": "68e9426270eeaebbfec087db61d80be98a76a77e41d85e64923951f9a946922d",
+      "frozen_sha256": "68e9426270eeaebbfec087db61d80be98a76a77e41d85e64923951f9a946922d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/status-reconciliation.json",
+      "immutable_sha256": "54d433c3db523004b3b7d3e2db16f950b0f9e8c5ac700fd2d49ef4686736c228",
+      "frozen_sha256": "54d433c3db523004b3b7d3e2db16f950b0f9e8c5ac700fd2d49ef4686736c228",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "immutable_sha256": "0337db456df39338180e7308d06fe69226b9dad202f0452b13d013c6f03ba3c5",
+      "frozen_sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-company-formation.md",
+      "immutable_sha256": "7935047abccbe90cb5f9740e3a6aac24eb8f34a57c1c45c5e65cb392f9b1d09e",
+      "frozen_sha256": "7935047abccbe90cb5f9740e3a6aac24eb8f34a57c1c45c5e65cb392f9b1d09e",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-company-property-tax.md",
+      "immutable_sha256": "43af5e59f006b4a5f4a51565d629798ee8415d549461be2578ae9fa8c2dda83b",
+      "frozen_sha256": "43af5e59f006b4a5f4a51565d629798ee8415d549461be2578ae9fa8c2dda83b",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "immutable_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "frozen_sha256": "55a386eae02d92195cce7d04e3fd2dce82f18edbdb6f1c41a396da1dd3a8e7eb",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-income-tax.md",
+      "immutable_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "frozen_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-nonresident-services-withholding.md",
+      "immutable_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "frozen_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-payroll.md",
+      "immutable_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "frozen_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "immutable_sha256": "8c2447d807a217f395c1d06c4d5cfdc72b327f4d942142d1f045d999a1414936",
+      "frozen_sha256": "8c2447d807a217f395c1d06c4d5cfdc72b327f4d942142d1f045d999a1414936",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-optimization.md",
+      "immutable_sha256": "39fff5caab7bffc655a31b7a90e2fbf8c7502b6f6491c7d283ba9b43b1fbaa6d",
+      "frozen_sha256": "39fff5caab7bffc655a31b7a90e2fbf8c7502b6f6491c7d283ba9b43b1fbaa6d",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-overview.md",
+      "immutable_sha256": "8b48223540341f36e06387f79f98c807a74673d062ecd6c801d5ab0e5ee61800",
+      "frozen_sha256": "8b48223540341f36e06387f79f98c807a74673d062ecd6c801d5ab0e5ee61800",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-transfer-pricing.md",
+      "immutable_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "frozen_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "immutable_sha256": "355d88b6e042a68637a244b40fc2582d833c863e9511dd5d58f64a4a0510e9ac",
+      "frozen_sha256": "355d88b6e042a68637a244b40fc2582d833c863e9511dd5d58f64a4a0510e9ac",
+      "verified_against_immutable_git": true,
+      "permitted_reversal_recovers_every_byte": true
+    }
+  ]
+}

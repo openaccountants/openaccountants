@@ -1,0 +1,30 @@
+{
+  "review_closure_sha256": "372efb6cb72b9cb0faa5f5e8a3ea7a15b931507c0585ae5c23c6624dea224054",
+  "changes": [
+    {
+      "path": "skills/burkina-faso/bf-investment-income.md",
+      "replace_exact": "This new job and its two migrated corporate rows are pending independent source review; no accountant has attested to them.",
+      "with_exact": "This new job and its two migrated corporate rows have completed independent conditional source review, with one correction closed; no accountant has attested to them.",
+      "expected_occurrences": 1,
+      "accepted_before_status_sha256": "8473b609414d9399743f51608091dfa8250217e37ede31aeb59532b0fc990a2b",
+      "expected_after_status_sha256": "04f67d4c4626e77939a0f85f02e9ebea240d5fe3bcfeebb1fec9052207094df2",
+      "before_sha256": "8473b609414d9399743f51608091dfa8250217e37ede31aeb59532b0fc990a2b",
+      "after_sha256": "04f67d4c4626e77939a0f85f02e9ebea240d5fe3bcfeebb1fec9052207094df2",
+      "reverse_replacement_recovers_accepted_source": true
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "replace_exact": "and two executable classification/distribution cases are pending independent source review.",
+      "with_exact": "and two executable classification/distribution cases have completed [independent conditional source review](../../evidence/ledgers/burkina-faso-capital-review-20261101/closure-review.md), with one correction closed.",
+      "expected_occurrences": 1,
+      "accepted_before_status_sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "expected_after_status_sha256": "bcbbf5ba68296cb8c31f1dbcbaede69e40b38bcfcee8af91f7911d8ba5123c79",
+      "before_sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "after_sha256": "bcbbf5ba68296cb8c31f1dbcbaede69e40b38bcfcee8af91f7911d8ba5123c79",
+      "reverse_replacement_recovers_accepted_source": true
+    }
+  ],
+  "no_other_content_or_platform_change": true,
+  "all_earlier_review_files_match_manifests": true,
+  "law_status": "Conditional source fidelity only; all seven domains and original holds remain partial, without attestation or merge approval."
+}

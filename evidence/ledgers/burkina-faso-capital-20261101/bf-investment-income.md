@@ -452,13 +452,17 @@ Source: https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf | printed/phys
 
 ## C49 | Deadlines and filing | CGI 610(1)-(2)
 
-Professional or ancillary securities-paying intermediaries obtain identity/real domicile before payment/account opening and report net amounts by beneficiary; third-party coupon owners are identified and their list annexed.
+Professional or ancillary securities-paying intermediaries obtain identity/real domicile before payment/account opening and report net amounts by beneficiary. Coupons are presumed to belong to the presenter absent contrary proof. For third-party coupons the presenter can supply a list with presenter and true-owner names/real domiciles and each owner’s coupon amount; the payer annexes the list if supplied.
 
 Source: https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf | printed/physical page(s) [260, 261] | read 2026-11-01 | PDF SHA256 `a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c`.
 
 > sans exiger du requérant la justification de son identité et l’indication de son domicile réel
 
 > le montant net des sommes perçues
+
+> Les coupons présentés sont, sauf preuve contraire, réputés propriété du requérant.
+> il a la faculté de remettre à l’établissement payeur une liste
+> L’établissement payeur annexe cette liste au relevé
 
 ## C50 | Deadlines and filing | CGI 610, final paragraph
 

@@ -845,7 +845,7 @@
     "id": "C49",
     "guide": "bf-investment-income",
     "section": "Deadlines and filing",
-    "rule": "Professional or ancillary securities-paying intermediaries obtain identity/real domicile before payment/account opening and report net amounts by beneficiary; third-party coupon owners are identified and their list annexed.",
+    "rule": "Professional or ancillary securities-paying intermediaries obtain identity/real domicile before payment/account opening and report net amounts by beneficiary. Coupons are presumed to belong to the presenter absent contrary proof. For third-party coupons the presenter can supply a list with presenter and true-owner names/real domiciles and each owner’s coupon amount; the payer annexes the list if supplied.",
     "act": "Loi 058-2017/AN, CGI official 2026 consolidation",
     "article": "610(1)-(2)",
     "printed_page": [
@@ -862,7 +862,12 @@
     "source_file": "cgi-2026.pdf",
     "source_sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
     "status": "writer read; pending independent review",
-    "additional_quote_fr": "le montant net des sommes perçues"
+    "additional_quote_fr": "le montant net des sommes perçues",
+    "decisive_quote_fr_fragments": [
+      "Les coupons présentés sont, sauf preuve contraire, réputés propriété du requérant.",
+      "il a la faculté de remettre à l’établissement payeur une liste",
+      "L’établissement payeur annexe cette liste au relevé"
+    ]
   },
   {
     "id": "C50",
