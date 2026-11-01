@@ -1,0 +1,242 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "59d13bd15c88310fe5a84c382385690e9a611262",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "author_and_committer": "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>|Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>",
+  "committed_validation_sha256": "3c5c1570a545d681527695fb301c51b53bb7a85a9fea1b135895ef00993d1935",
+  "all_requested_checks_passed": true,
+  "advisory_warnings": [
+    "Second distinct BI IT-IND job",
+    "Existing property slug has no classified domain"
+  ],
+  "guide_sha256": "f63f3372afca68e37ab4c767c8e483a48962205eccdfe7b5d88b05615a008d04",
+  "readme_sha256": "2fde4b1b4a17cd0f502e02c27ad2b8ef6f35ea930f40fd3bb500cc2a378d775e",
+  "files": [
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "sha256": "f63f3372afca68e37ab4c767c8e483a48962205eccdfe7b5d88b05615a008d04",
+      "bytes": 27370
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "sha256": "2fde4b1b4a17cd0f502e02c27ad2b8ef6f35ea930f40fd3bb500cc2a378d775e",
+      "bytes": 6594
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/README.md",
+      "sha256": "5104c8f4cb196383726fba07935edf498f36df97d98bfa0748e53f7c3055c98a",
+      "bytes": 10503
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/additional-fetches-network.json",
+      "sha256": "73146b33db66df1a8a85cf763925a3ffa6b74f2507bf9f80299a5c64ebebba5d",
+      "bytes": 570
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/additional-fetches.json",
+      "sha256": "cebbcca73544cecdc968ccaabfd7286446260b6bc51df9f3fcf2efb3a27c2891",
+      "bytes": 455
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/build-row-review.py",
+      "sha256": "780e2b4528a464d62342e260d4097a181506d8a63cb0736cd953b3262d163498",
+      "bytes": 10489
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/cases.json",
+      "sha256": "15fb76172df03b81858a4fd20ae9101ea3724d172a15307d14065452a5939332",
+      "bytes": 520
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/cases.md",
+      "sha256": "06eddf73ca82cb6fa06af910fb84d411ea4e3b0db699b492dba1fdc3759b7f94",
+      "bytes": 3370
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-checks.json",
+      "sha256": "1570e729c591bcbb99131d600fe818c13aa7bc9136c4260152941a345b8aeb7a",
+      "bytes": 3698
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-checks.py",
+      "sha256": "967f9c8e1075ca988854b41cead32c9bd4337c7671bbea8809eb6c5c2b775a63",
+      "bytes": 6597
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-freeze.json",
+      "sha256": "0ade298674a2a2a05f3719cb7d1cfde5161eddbf2e1a09927a7bee4096c7ebbe",
+      "bytes": 1487
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-review.json",
+      "sha256": "54aea7fa922d3457715148869da04096e49d01277ebe8cc10279ea4fd6bf5934",
+      "bytes": 2210
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-review.md",
+      "sha256": "4038fd2ec757b65e79975ebe07d1f608923f5b1bc760db461f6560ce51e8df99",
+      "bytes": 8326
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/complete-old-map-check.json",
+      "sha256": "48cfa55f7a8673dace8b01cfcdbaa1b2ca2f3a41b63987c4eaf80d75d6ea963d",
+      "bytes": 421
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/decisive-supplemental-quotes.md",
+      "sha256": "3ad25d3cbe9618eea5ab98a57de050c2f59829d0b3cbe2302ec6bc7fd4c3cce6",
+      "bytes": 4282
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/gazette-fetch.json",
+      "sha256": "bcb8ec74884623d10ac199708aa6d913e3fe957e10319ac10c13e91b23f15bbd",
+      "bytes": 266
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/mechanical-checks.json",
+      "sha256": "3f601dfa90de3f9eb6edab2561bae0598077ede48749ec0f1b16619ea24cf6e9",
+      "bytes": 32794
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/old-topic-review.json",
+      "sha256": "00e05b4e869b82df11162e719c75b197451ee2c79cd36beafd49aa87d9855609",
+      "bytes": 267488
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/review-checks.py",
+      "sha256": "6d27625e92a7539a01d7372b98fd20003908106225b44218a36bfbbfb635c282",
+      "bytes": 5845
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/review-freeze.json",
+      "sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+      "bytes": 5209
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/row-review.json",
+      "sha256": "04d05b65a902f45ca58db1a5c760a0c454c7a391fc78d931190cd359660c61a7",
+      "bytes": 47163
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/row-review.md",
+      "sha256": "4cb6b458d9cbafac9ff5bc592b55999a08d2a1b6ad1130ae96d0a558358ae49e",
+      "bytes": 14582
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/sources-read.json",
+      "sha256": "29134c75a4bd4c28aedb5fa7668692344c61d3a416068c6fa8985efeb490dd6b",
+      "bytes": 4677
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/status-only-permission.json",
+      "sha256": "7e6a03992aa571c860de5768be51016b3b7e391ce127f1868d35616671063eff",
+      "bytes": 3213
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/README.md",
+      "sha256": "1952b5666e7e4c2ce2a649d08d8791b6330cdfbec14932b3371092df44fc2fd9",
+      "bytes": 3087
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/check-repairs.py",
+      "sha256": "b0a544d36dd47298205f5795d6636dd93bee9f8458d4e342cea7f3d923726d75",
+      "bytes": 4694
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/closure-handoff.md",
+      "sha256": "e0469b7d575c2fb0e1b0984bd55e17b137c84ea9e96a2583ecea515498b166ca",
+      "bytes": 2560
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/decisive-source-supplement.json",
+      "sha256": "ebd2285510a1d63d310213f83f36da08fa39dc65ad0f4be3d0ead0ebc5098fa7",
+      "bytes": 16316
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/effective-47-row-ledger.json",
+      "sha256": "068dd0c2a8757e89fd59806e2e0ec76d3f71e9ed4e5ae2baadb8c7bb70db58c1",
+      "bytes": 82610
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/effective-47-row-ledger.md",
+      "sha256": "b037414b5f1da47bb24103e2aa2c9b4e740e525a1fcb8445255e047083939ced",
+      "bytes": 29884
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/execution-and-source-failures.json",
+      "sha256": "c1bbe35097dd3950fb96a6bdec0cbb2309532fc4a37b08371ac94dbda8edc65b",
+      "bytes": 1219
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/five-row-before-after.json",
+      "sha256": "195ccbab4183a34fe68896734f9664c432d89eae689aa44097385af8c3243c4e",
+      "bytes": 43711
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/literal-repairs.json",
+      "sha256": "4576b4f7fa5f866697ea03028e42daf9651f64e4d640a34437295d0814138ad5",
+      "bytes": 11041
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/preservation-baseline.json",
+      "sha256": "7b6dc5f974f3e1915c430fd32881338e0bc97fb831f8c9185011550fd3e3814c",
+      "bytes": 29808
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/repair-candidate.json",
+      "sha256": "a84e85a093c2110d4721f1a40e25466c95efcbbdc5f0a8fce55c2351fe6bbd84",
+      "bytes": 4968
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/run-checks.py",
+      "sha256": "a55ce23bc9709bbe2a96a19f68d2289b1ef7bb7287d38b831a199ba7859fce19",
+      "bytes": 1510
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/source-artifacts-supplement.json",
+      "sha256": "c3af42970eed211077e878a0cbf74edfda879e777e3835980dc49e354cbaa2d7",
+      "bytes": 2600
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/sources-read-supplement.json",
+      "sha256": "b4831d5c197733b160523ead9f3e194806a645f4eac701dcba533611263ced19",
+      "bytes": 1696
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/working-candidate-checks.json",
+      "sha256": "b3fcd89d87bf99eb4ad82aad6ae54fec99e9876fa0589a391e77cf1d1a9601ca",
+      "bytes": 3823
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/README.md",
+      "sha256": "cd17b698423156eb0a2085c32387c6ff61c573923c3921d3b17ee07baf036df0",
+      "bytes": 1407
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/check-publish.py",
+      "sha256": "0d628452b6601468aee0873c863993823e528ae15ed18f351b86a07fe1959c86",
+      "bytes": 4968
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/committed-validation.json",
+      "sha256": "3c5c1570a545d681527695fb301c51b53bb7a85a9fea1b135895ef00993d1935",
+      "bytes": 3871
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/preservation-baseline.json",
+      "sha256": "f57f0d352379b7a913a9b26a3c4fa49c82c93c9e0e4bc224a45b5101e878f14b",
+      "bytes": 36635
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/run-committed-checks.py",
+      "sha256": "0d2e94ef765a11edf958cb2f20be1d53e54ac056644b4553bd194d8bcde1fb32",
+      "bytes": 1563
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-publish-20261101/status-application.json",
+      "sha256": "62ec216401812fb32ed268ebde4d7ecec56309ae9004edbb3c35e40433daa6de",
+      "bytes": 3260
+    }
+  ],
+  "publication_boundary": "Normal push existing DRAFT PR1223; no ready/merge/auto-merge; parent gates next action."
+}
