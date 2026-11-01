@@ -115,10 +115,10 @@
     {
       "id": "PIT-15",
       "section": "The base",
-      "rule": "Business450m personal deduction,225m spouse,45m child at most5; eligibility/working-spouse split conditions adjacent. Not automatically a salary allowance.",
+      "rule": "Business450m personal deduction,225m spouse,45m per dependent child at most5. Male child through18 or through25 for university; disabled male without paid work requires specified Ministry certificate; female child before marriage or widowed/divorced. Both working spouses each single deduction and equal child shares; separated husband paying maintenance; non-wage-working father/taxable-working mother allocation stated beside amounts. Not a salary allowance.",
       "act_article_page": "Budget324/2024 art49 replaces ITart31,pp48-49",
       "source": "B24",
-      "exact_original_language_quote": "أربعمائة وخمسون مليون ليرة لبنانية / مائتان وخمس وعشرون مليون ليرة لبنانية للمكلف المتزوج / وخمسة وأربعون مليون ليرة لبنانية لكل ولد شرعي ما زال على عاتقه / على أن لا يتجاوز عدد الأولاد المستفيدين الخمسة"
+      "exact_original_language_quote": "أربعمائة وخمسون مليون ليرة لبنانية / مائتان وخمس وعشرون مليون ليرة لبنانية للمكلف المتزوج / وخمسة وأربعون مليون ليرة لبنانية لكل ولد شرعي ما زال على عاتقه / على أن لا يتجاوز عدد الأولاد المستفيدين الخمسة / للذكور إذا لم يتجاوز سن الثامنة عشرة أو لغاية الخامسة والعشرين كحد أقصى للذين يتابعون دراسة جامعية / للذكور المصابين بعلة مقعدة ولا يقومون بعمل مأجور / للإناث قبل زواجهن أو إذا كن أرامل أو مطلقات / يستفيد الزوجان مناصفة في ما بينهما وعلى قدم المساواة / يستفيد الزوج الملزم بدفع النفقة / تستفيد الزوجة علاوة على التنزيل المعطى للعازب من كامل التنزيل عن الزوج وكما من كامل التنزيل عن الأولاد"
     },
     {
       "id": "PIT-16",
@@ -205,10 +205,10 @@
     {
       "id": "CIT-06",
       "section": "The base;Who this applies to",
-      "rule": "Lebaneseprofit;previousincomeperiod;approvednoncalendaryear;necessaryexpenses;art11realprofitclasses,morethan4permanentworkersratherthan4+.",
+      "rule": "Lebaneseprofit;previousincomeperiod;approvednoncalendaryear;necessaryexpenses. Art11industrial(excludingcraft),publishers/printers,andnon-water/airmilllimbs:morethan4permanentworkers.Retaillimb6:morethan4personswithoutpermanencecondition.Otherlistedclassestestedseparately.",
       "act_article_page": "ITarts3,6-7,11-14pp1,6-10",
       "source": "IT",
-      "exact_original_language_quote": "على مجموع الأرباح التي يحققونها في لبنان. / خلال السنة السابقة / أكثر من أربعة اشخاص بصورة دائمة"
+      "exact_original_language_quote": "على مجموع الأرباح التي يحققونها في لبنان. / خلال السنة السابقة / أكثر من أربعة اشخاص بصورة دائمة / التجار بالمفرق الذين يستخدمون في عملهم أكثر من أربعة أشخاص / دور النشر والمطابع التي تستخدم في عملها أكثر من أربعة اشخاص بصورة دائمة / المطاحن التي تدار بغير الماء والهواء"
     },
     {
       "id": "CIT-07",
@@ -270,8 +270,8 @@
     },
     {
       "id": "VAT-06",
-      "section": "Rates, bands and thresholds",
-      "rule": "Excessinputcarryforward;annualrefundwithinmonth,min200mLBP;exportersperiod-endrequestsameperiod/minimum;otherconditionsneighborp42.",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "ExcessdeductibleinputoverVATdueattheperiodendcarriedtothenextperiodbeforetestingrefund;annualrefundwithinmonth,min200mLBP;exportersperiod-endrequestsameperiod/minimum;otherconditionsneighborp42.",
       "act_article_page": "Budget40/2026art31pp41-42;VATart30",
       "source": "B26",
       "exact_original_language_quote": "يدور الفائض إلى الفترة اللاحقة. / بعد انتهاء أية سنة ميلادية وضمن مهلة شهر / على أن لا يقل المبلغ المطالب باسترداده عن مائتي مليون ليرة لبنانية."
@@ -295,10 +295,10 @@
     {
       "id": "VAT-09",
       "section": "Penalties and interest",
-      "rule": "UBOpenaltynotordinaryVAT;2024refundandgeneralsettlementwindowsheld.",
+      "rule": "UBOpenaltynotordinaryVAT;2024refundwindowandsettlementofspecifiedfinespayableTOstate,municipalitiesandotherpublicbodiesheldpendingpublication/suspension/extensionchecks;notrestrictedtopublicentitydebtors.",
       "act_article_page": "Budget40/2026arts18,41,43pp27-30,65-66",
       "source": "B26",
-      "exact_original_language_quote": "الغرامات الخاصة بصاحب الحق الاقتصادي / الاسترداد عن العام ٢٠٢٤ / خلال مهلة ثلاثة أشهر من تاريخ نشر هذا القانون"
+      "exact_original_language_quote": "الغرامات الخاصة بصاحب الحق الاقتصادي / الاسترداد عن العام ٢٠٢٤ / خلال مهلة ثلاثة أشهر من تاريخ نشر هذا القانون / تخفيض بعض الغرامات المترتبة لصالح الدولة أو البلديات أو اتحادات البلديات أو المؤسسات العامة أو سائر أشخاص القانون العام"
     }
   ],
   "lb-payroll-social": [

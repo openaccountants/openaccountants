@@ -1,7 +1,7 @@
 ---
 name: lb-income-tax
 description: "Use this Guide for Lebanon personal income tax, salary tax and business income questions in 2026. It distinguishes the annual employment and business bands and explains the business taxable base, household deduction conditions and employer withholding rule. It includes two recomputing examples that start with established taxable income. It does not establish the current salary allowance, pension treatment, treaty relief, annual return fields or a final filing date after extensions and legal suspensions. Those topics are named non-operative holds. Use the questions and cited law before calculating, and refer unresolved filing facts for Lebanese professional review."
-version: 1.2
+version: 1.3
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -42,7 +42,7 @@ Annual taxable amounts after the applicable deductions. Tax each slice, not all 
 
 ## The base
 
-For business income, reconcile receipts and evidenced expenses needed for the business, then adjustments, the applicable art. 31 personal deduction and the bands. Personal spending is not a business deduction (Income Tax Law art. 7). The 2024 art. 49 amendment sets the business deduction at LBP 450 million, adding LBP 225 million for a qualifying spouse and LBP 45 million per qualifying child, at most five; children, spouse employment and split deductions between working spouses have conditions on pp. 48-49. Confirm these facts before using the deduction. Do not automatically reuse it for salary: the salary deduction and its later amendments remain hold PIT-H1.
+For business income, reconcile receipts and evidenced expenses needed for the business, then adjustments, the applicable art. 31 personal deduction and the bands. Personal spending is not a business deduction (Income Tax Law art. 7). The 2024 art. 49 amendment sets the business deduction at LBP 450 million, adding LBP 225 million for a qualifying spouse and LBP 45 million per dependent child, at most five. Apply the household conditions on pp. 48-49 beside these amounts: a dependent male child must be no older than eighteen, or no older than twenty-five while pursuing university study; the separate disabled-male-child rule requires no paid work and the specified Ministry of Social Affairs disability certificate. A dependent female child qualifies before marriage, or if widowed or divorced. If both spouses work, each gets the single deduction and the child deductions are shared equally. For legal separation, the husband legally required to pay maintenance receives the deduction. If the father does not work for wages and the mother carries on a taxable profession or job, she receives her own single deduction plus the full spouse and child deductions under that paragraph. Obtain evidence for the applicable child status and household allocation before deducting; do not infer eligibility from the amounts. Do not automatically reuse these business deductions for salary: the salary deduction and its later amendments remain hold PIT-H1.
 
 For wages, art. 49 includes cash and benefits in kind, and art. 50 describes deductions. Use an evidenced taxable base; gross wages are not the taxable band input. If the person also has business income, art. 57 prevents a second personal deduction under the salary schedule. Do not issue a final salary computation while PIT-H1 is unresolved.
 

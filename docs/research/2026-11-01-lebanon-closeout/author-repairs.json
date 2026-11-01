@@ -1,0 +1,144 @@
+{
+  "status": "author_repairs_applied_pending_independent_closure",
+  "reviewed_head": "17b9399bd2fb6144e46ce804d6ecc3b48308c0ea",
+  "read_on": "2026-11-01",
+  "independent_receipts_preserved_sha256": {
+    "independent-review.md": "8ecfd8ddc39b17193e9194326072b25bd984a1bfbc1d711de8d2a8cb8f9cb0b3",
+    "row-verdicts.json": "dbbc3ce585b867a52875b11b9d64cf0ab3794a89f9fd92bd569154ba7f2a325c"
+  },
+  "rows_repaired": [
+    "PIT-15",
+    "CIT-06",
+    "VAT-06",
+    "VAT-09"
+  ],
+  "predecessor_mapping_repairs": [
+    {
+      "guide": "lb-income-tax",
+      "old_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "line": 37,
+      "text": "- **Annual employer payroll declaration deadline** — By 28 February of the following year (Form R10) (approx — confirm exact form and date with MoF)  _(Income Tax Law (Decree-Law No. 144 of 1959))_",
+      "old_destination": "Who this applies to / PIT-01; Sources / PIT-H4 for non-resident collection/treaty claim",
+      "new_destination": "Personal income tax / Deadlines and filing, PIT-19; Sources / PIT-H2 (annual employer payroll declaration, current annual form/date held)"
+    },
+    {
+      "guide": "lb-corporate-income-tax",
+      "old_commit": "581bde2b4b59ae820f17c46e13b570c2e73edb05",
+      "line": 61,
+      "text": "Profit from effort or activity exerted in Lebanon. Holding and offshore companies pay no income tax on profits or on profit distribution; offshore companies also have no stamp duty on overseas contracts signed in Lebanon and no payroll tax on 30% of foreign employees' basic salary, and pay payroll tax on staff working in Lebanon ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). Inventory (2023, 2024) and fixed-asset revaluation got an extra three months; the Ministry's review deadline runs to 31/12/2030 (Budget 2026 art. 40).",
+      "old_destination": "Cross-border points; Sources / CIT-H4 (non-operative currentness hold; no special-regime amount accepted)",
+      "new_destination": "Cross-border points; Sources / CIT-H4 (holding/offshore relief) and CIT-H6 (art.40 revaluation and exceptional windows), all non-operative currentness holds"
+    },
+    {
+      "guide": "lebanon-vat",
+      "old_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "line": 125,
+      "text": "| Credit brought forward | Prior period |",
+      "old_destination": "Deadlines and filing / VAT-01,VAT-07; Sources / VAT-H4 (actual dates/form/route)",
+      "new_destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
+    },
+    {
+      "guide": "lebanon-vat",
+      "old_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "line": 164,
+      "text": "Cash refunds from MOF may not be obtainable. Carry forward.",
+      "old_destination": "Who this applies to; Ask the client first; Sources / VAT-H1 through VAT-H7 (non-operative historical workflow pending named evidence)",
+      "new_destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
+    },
+    {
+      "guide": "lebanon-vat",
+      "old_commit": "581bde2b4b59ae820f17c46e13b570c2e73edb05",
+      "line": 125,
+      "text": "| Credit brought forward | Prior period |",
+      "old_destination": "Deadlines and filing / VAT-01,VAT-07; Sources / VAT-H4 (actual dates/form/route)",
+      "new_destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
+    },
+    {
+      "guide": "lebanon-vat",
+      "old_commit": "581bde2b4b59ae820f17c46e13b570c2e73edb05",
+      "line": 182,
+      "text": "Cash refunds from MOF may not be obtainable. Carry forward.",
+      "old_destination": "Who this applies to; Ask the client first; Sources / VAT-H1 through VAT-H7 (non-operative historical workflow pending named evidence)",
+      "new_destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
+    },
+    {
+      "guide": "lb-payroll-social",
+      "old_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "line": 24,
+      "text": "- **Payroll tax remittance** — Withheld payroll tax remitted quarterly to the tax authority ((approx — confirm remittance frequency/deadline)) (approx — confirm remittance frequency/deadline)  _(Income Tax Law (Decree-Law No. 144 of 1959))_",
+      "old_destination": "Deadlines and filing / PAY-04; Sources / PAY-H3",
+      "new_destination": "Linked Personal income tax Guide / Deadlines and filing, PIT-18; Sources / PIT-H2 (salary tax remittance and current filing implementation); not NSSF suspension PAY-04"
+    },
+    {
+      "guide": "lb-payroll-social",
+      "old_commit": "581bde2b4b59ae820f17c46e13b570c2e73edb05",
+      "line": 37,
+      "text": "| Payroll tax remittance | Withheld payroll tax remitted quarterly to the tax authority (approx : confirm remittance frequency/deadline) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |",
+      "old_destination": "Deadlines and filing / PAY-04; Sources / PAY-H3",
+      "new_destination": "Linked Personal income tax Guide / Deadlines and filing, PIT-18; Sources / PIT-H2 (salary tax remittance and current filing implementation); not NSSF suspension PAY-04"
+    },
+    {
+      "guide": "lb-company-formation",
+      "old_commit": "581bde2b4b59ae820f17c46e13b570c2e73edb05",
+      "line": 24,
+      "text": "| Holding and Offshore companies | Special SAL regimes governed by Decree-Law No. 45 and No. 46 of 1983 with preferential tax treatment | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Decree-Law No. 45 of 1983 (Holding) |",
+      "old_destination": "Rates table and cases / FORM-02,FORM-03; Sources / FORM-H2",
+      "new_destination": "The base / FORM-05 (holding/offshore distinction); Corporate income tax Sources / CIT-H4 and formation Sources / FORM-H4 (special-tax conditions and entity eligibility held)"
+    }
+  ],
+  "lost_content_restored": 1,
+  "restored_rule": "VAT excess deductible input carryforward to following period",
+  "guide_hashes_before": {
+    "lb-payroll-social": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+    "lb-income-tax": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+    "lb-company-formation": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+    "lb-corporate-income-tax": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+    "lebanon-vat": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+    "lb-tax-overview": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74"
+  },
+  "guide_hashes_after": {
+    "lb-payroll-social": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+    "lb-income-tax": "b7577f88db182e81b7955169e6f2ec817656148a0ddb4c410589e499ce5cf9ef",
+    "lb-company-formation": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+    "lb-corporate-income-tax": "5d04eec680d0bfaa42ab21e68134a2c3c669b4265b92a3256151324aeb20b26d",
+    "lebanon-vat": "98854d240ec5847bc6efb2852ee04051fb8301e072d01eed87268a9f3142c213",
+    "lb-tax-overview": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74"
+  },
+  "claim_repairs": {
+    "PIT-15": {
+      "id": "PIT-15",
+      "section": "The base",
+      "rule": "Business450m personal deduction,225m spouse,45m per dependent child at most5. Male child through18 or through25 for university; disabled male without paid work requires specified Ministry certificate; female child before marriage or widowed/divorced. Both working spouses each single deduction and equal child shares; separated husband paying maintenance; non-wage-working father/taxable-working mother allocation stated beside amounts. Not a salary allowance.",
+      "act_article_page": "Budget324/2024 art49 replaces ITart31,pp48-49",
+      "source": "B24",
+      "exact_original_language_quote": "أربعمائة وخمسون مليون ليرة لبنانية / مائتان وخمس وعشرون مليون ليرة لبنانية للمكلف المتزوج / وخمسة وأربعون مليون ليرة لبنانية لكل ولد شرعي ما زال على عاتقه / على أن لا يتجاوز عدد الأولاد المستفيدين الخمسة / للذكور إذا لم يتجاوز سن الثامنة عشرة أو لغاية الخامسة والعشرين كحد أقصى للذين يتابعون دراسة جامعية / للذكور المصابين بعلة مقعدة ولا يقومون بعمل مأجور / للإناث قبل زواجهن أو إذا كن أرامل أو مطلقات / يستفيد الزوجان مناصفة في ما بينهما وعلى قدم المساواة / يستفيد الزوج الملزم بدفع النفقة / تستفيد الزوجة علاوة على التنزيل المعطى للعازب من كامل التنزيل عن الزوج وكما من كامل التنزيل عن الأولاد"
+    },
+    "CIT-06": {
+      "id": "CIT-06",
+      "section": "The base;Who this applies to",
+      "rule": "Lebaneseprofit;previousincomeperiod;approvednoncalendaryear;necessaryexpenses. Art11industrial(excludingcraft),publishers/printers,andnon-water/airmilllimbs:morethan4permanentworkers.Retaillimb6:morethan4personswithoutpermanencecondition.Otherlistedclassestestedseparately.",
+      "act_article_page": "ITarts3,6-7,11-14pp1,6-10",
+      "source": "IT",
+      "exact_original_language_quote": "على مجموع الأرباح التي يحققونها في لبنان. / خلال السنة السابقة / أكثر من أربعة اشخاص بصورة دائمة / التجار بالمفرق الذين يستخدمون في عملهم أكثر من أربعة أشخاص / دور النشر والمطابع التي تستخدم في عملها أكثر من أربعة اشخاص بصورة دائمة / المطاحن التي تدار بغير الماء والهواء"
+    },
+    "VAT-06": {
+      "id": "VAT-06",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "ExcessdeductibleinputoverVATdueattheperiodendcarriedtothenextperiodbeforetestingrefund;annualrefundwithinmonth,min200mLBP;exportersperiod-endrequestsameperiod/minimum;otherconditionsneighborp42.",
+      "act_article_page": "Budget40/2026art31pp41-42;VATart30",
+      "source": "B26",
+      "exact_original_language_quote": "يدور الفائض إلى الفترة اللاحقة. / بعد انتهاء أية سنة ميلادية وضمن مهلة شهر / على أن لا يقل المبلغ المطالب باسترداده عن مائتي مليون ليرة لبنانية."
+    },
+    "VAT-09": {
+      "id": "VAT-09",
+      "section": "Penalties and interest",
+      "rule": "UBOpenaltynotordinaryVAT;2024refundwindowandsettlementofspecifiedfinespayableTOstate,municipalitiesandotherpublicbodiesheldpendingpublication/suspension/extensionchecks;notrestrictedtopublicentitydebtors.",
+      "act_article_page": "Budget40/2026arts18,41,43pp27-30,65-66",
+      "source": "B26",
+      "exact_original_language_quote": "الغرامات الخاصة بصاحب الحق الاقتصادي / الاسترداد عن العام ٢٠٢٤ / خلال مهلة ثلاثة أشهر من تاريخ نشر هذا القانون / تخفيض بعض الغرامات المترتبة لصالح الدولة أو البلديات أو اتحادات البلديات أو المؤسسات العامة أو سائر أشخاص القانون العام"
+    }
+  },
+  "no_new_sources": true,
+  "no_new_guides": true,
+  "closure_review": "Required at new frozen head; initial independent review is not represented as approval of these repairs."
+}

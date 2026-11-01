@@ -1,7 +1,7 @@
 ---
 name: lebanon-vat
 description: "Use this Guide for Lebanon VAT, TVA Lebanon and Ministry of Finance return questions in 2026. It confirms the budget amendments to periodic filing, deduction for passenger cars, blocked utility costs and input-credit refunds. It supplies two recomputing working-paper cases using already established tax amounts and the car deduction cap. It does not certify the current VAT rate, registration threshold, supplier-based exemptions, foreign-service treatment or current portal form. Those items and the effect of extensions and suspended legal time limits are named non-operative holds. Do not infer a legal classification from a bank label or use the examples as approval to file."
-version: 2.2
+version: 2.3
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -36,6 +36,8 @@ Separate transactions by their legal character and evidence, not a supplier name
 
 Budget 2026 art. 30 permits deduction for taxable economic activity and the export/international-transport operations identified by VAT Law arts. 19-21. It addresses pre-registration stock and fixed assets expressly. Water, electricity, communications, internet and petrol costs are expressly non-deductible in amended art. 28; the old utility rows cannot establish input recovery. Keep the invoice and the business-use allocation, and test the car cap and exceptions before deduction. The older entertainment, gifts, personal-use, alcohol/tobacco and club rules need their own current source: VAT-H2.
 
+If deductible input exceeds VAT due at the end of a tax period, carry the excess to the following period before testing the refund-request rules (Budget 2026 art. 31 replacing VAT Law art. 30). Carryforward does not itself prove refund eligibility or that a cash refund is operationally available.
+
 For mixed activity, calculate the right-to-deduct turnover ratio under VAT Law art. 31 and the Ministry's declaration guidance, then apply the supported ratio to common input. The worked cases use established output and eligible input amounts, not an assumed VAT rate. The exact annual adjustment and excluded turnover items remain VAT-H3.
 
 ## Deadlines and filing
@@ -46,7 +48,7 @@ Budget art. 35 separately requires monthly electronic fixed-stamp declarations w
 
 ## Penalties and interest
 
-Do not use the old daily late-filing or monthly late-payment amounts. VAT-H6 covers current penalties and any relief. Budget art. 18 concerns beneficial-owner reporting. The special 2024-refund window in art. 41, and the public-entity penalty settlement in art. 43, require publication, suspension and extension checks before use.
+Do not use the old daily late-filing or monthly late-payment amounts. VAT-H6 covers current penalties and any relief. Budget art. 18 concerns beneficial-owner reporting. The special 2024-refund window in art. 41, and specified fines payable to public bodies under art. 43, require publication, suspension and extension checks before use.
 
 ## Cross-border points
 

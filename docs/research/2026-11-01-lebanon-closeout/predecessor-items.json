@@ -168,7 +168,7 @@
     "old_sha256": "e1b27d8e1338f5ddf9b4000c7d233ae91f18cf325aa9a9cb771739ed04dd29d5",
     "line": 37,
     "text": "- **Annual employer payroll declaration deadline** — By 28 February of the following year (Form R10) (approx — confirm exact form and date with MoF)  _(Income Tax Law (Decree-Law No. 144 of 1959))_",
-    "destination": "Who this applies to / PIT-01; Sources / PIT-H4 for non-resident collection/treaty claim"
+    "destination": "Personal income tax / Deadlines and filing, PIT-19; Sources / PIT-H2 (annual employer payroll declaration, current annual form/date held)"
   },
   {
     "guide": "lb-income-tax",
@@ -1338,7 +1338,7 @@
     "old_sha256": "f5ec006689bbab6ef7dd370fe580a6e5c3a80f4dfbdb81c5570c2ce1511cd8b8",
     "line": 61,
     "text": "Profit from effort or activity exerted in Lebanon. Holding and offshore companies pay no income tax on profits or on profit distribution; offshore companies also have no stamp duty on overseas contracts signed in Lebanon and no payroll tax on 30% of foreign employees' basic salary, and pay payroll tax on staff working in Lebanon ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). Inventory (2023, 2024) and fixed-asset revaluation got an extra three months; the Ministry's review deadline runs to 31/12/2030 (Budget 2026 art. 40).",
-    "destination": "Cross-border points; Sources / CIT-H4 (non-operative currentness hold; no special-regime amount accepted)"
+    "destination": "Cross-border points; Sources / CIT-H4 (holding/offshore relief) and CIT-H6 (art.40 revaluation and exceptional windows), all non-operative currentness holds"
   },
   {
     "guide": "lb-corporate-income-tax",
@@ -2472,7 +2472,7 @@
     "old_sha256": "c4dbcb9b224270af3134b23d19e4e296207a3bb41910e3d3c3bc0e6da61eb4e3",
     "line": 125,
     "text": "| Credit brought forward | Prior period |",
-    "destination": "Deadlines and filing / VAT-01,VAT-07; Sources / VAT-H4 (actual dates/form/route)"
+    "destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
   },
   {
     "guide": "lebanon-vat",
@@ -2697,7 +2697,7 @@
     "old_sha256": "c4dbcb9b224270af3134b23d19e4e296207a3bb41910e3d3c3bc0e6da61eb4e3",
     "line": 164,
     "text": "Cash refunds from MOF may not be obtainable. Carry forward.",
-    "destination": "Who this applies to; Ask the client first; Sources / VAT-H1 through VAT-H7 (non-operative historical workflow pending named evidence)"
+    "destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
   },
   {
     "guide": "lebanon-vat",
@@ -3696,7 +3696,7 @@
     "old_sha256": "819e603a80e2a1eff2f178cf63865e500c56a4d44e8c624749bb74c5ab3576a7",
     "line": 125,
     "text": "| Credit brought forward | Prior period |",
-    "destination": "Deadlines and filing / VAT-01,VAT-07; Sources / VAT-H4 (actual dates/form/route)"
+    "destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
   },
   {
     "guide": "lebanon-vat",
@@ -4056,7 +4056,7 @@
     "old_sha256": "819e603a80e2a1eff2f178cf63865e500c56a4d44e8c624749bb74c5ab3576a7",
     "line": 182,
     "text": "Cash refunds from MOF may not be obtainable. Carry forward.",
-    "destination": "Who this applies to; Ask the client first; Sources / VAT-H1 through VAT-H7 (non-operative historical workflow pending named evidence)"
+    "destination": "The base / VAT-06: excess deductible input carried to the following period; old cash-refund availability assertion remains Sources / VAT-H4,VAT-H6"
   },
   {
     "guide": "lebanon-vat",
@@ -4515,7 +4515,7 @@
     "old_sha256": "3d722b32938142be5a9636dc711fa9eaed72a5298648576458616ae8a40cf853",
     "line": 24,
     "text": "- **Payroll tax remittance** — Withheld payroll tax remitted quarterly to the tax authority ((approx — confirm remittance frequency/deadline)) (approx — confirm remittance frequency/deadline)  _(Income Tax Law (Decree-Law No. 144 of 1959))_",
-    "destination": "Deadlines and filing / PAY-04; Sources / PAY-H3"
+    "destination": "Linked Personal income tax Guide / Deadlines and filing, PIT-18; Sources / PIT-H2 (salary tax remittance and current filing implementation); not NSSF suspension PAY-04"
   },
   {
     "guide": "lb-payroll-social",
@@ -4704,7 +4704,7 @@
     "old_sha256": "14c62fb03cc17e385341f1b7f40aa737c602c4f63f824203b1d995a181ed2cdd",
     "line": 37,
     "text": "| Payroll tax remittance | Withheld payroll tax remitted quarterly to the tax authority (approx : confirm remittance frequency/deadline) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |",
-    "destination": "Deadlines and filing / PAY-04; Sources / PAY-H3"
+    "destination": "Linked Personal income tax Guide / Deadlines and filing, PIT-18; Sources / PIT-H2 (salary tax remittance and current filing implementation); not NSSF suspension PAY-04"
   },
   {
     "guide": "lb-payroll-social",
@@ -5388,7 +5388,7 @@
     "old_sha256": "c1d5b1dad97a0ef8197fb1f0800f997d576b3ceb0f7fe02d254629bf79a63be5",
     "line": 24,
     "text": "| Holding and Offshore companies | Special SAL regimes governed by Decree-Law No. 45 and No. 46 of 1983 with preferential tax treatment | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Decree-Law No. 45 of 1983 (Holding) |",
-    "destination": "Rates table and cases / FORM-02,FORM-03; Sources / FORM-H2"
+    "destination": "The base / FORM-05 (holding/offshore distinction); Corporate income tax Sources / CIT-H4 and formation Sources / FORM-H4 (special-tax conditions and entity eligibility held)"
   },
   {
     "guide": "lb-company-formation",

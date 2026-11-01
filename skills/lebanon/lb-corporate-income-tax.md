@@ -1,7 +1,7 @@
 ---
 name: lb-corporate-income-tax
 description: "Use this Guide for Lebanon corporate income tax, SAL and SARL profit tax, dividends and import-advance questions for 2026. It supplies the ordinary capital-company rate, distinguishes profit from distribution tax and identifies the real-profit base and customs-credit reconciliation. The two cases recompute an ordinary SAL distribution and a cash-retention comparison. It does not calculate special holding or offshore taxes, non-resident withholding, Sayrafa liability, deemed-profit coefficients or temporary revaluation relief. Current forms, extensions, suspension effects and penalty calculations are named non-operative holds. Read the conditions and obtain the missing evidence before preparing a filing or choosing a special regime."
-version: 1.2
+version: 1.3
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -32,7 +32,7 @@ Lebanese SAL/SARL companies, foreign branches and other businesses with profits 
 
 ## The base
 
-Start with the relevant profit period, reconcile income and business expenses, and apply tax adjustments (arts. 6-7, 14). Real-profit filing is mandatory for the listed art. 11 classes, including companies and foreign branches. The employee-count limb says more than four permanent employees, not four or more; it has activity-specific scope. Deemed-profit businesses need their applicable official coefficient and computation before tax: hold CIT-H1.
+Start with the relevant profit period, reconcile income and business expenses, and apply tax adjustments (arts. 6-7, 14). Real-profit filing is mandatory for the listed art. 11 classes, including companies and foreign branches. Keep art. 11's employee classes separate. Its industrial limb covers factories and other industrial establishments with more than four permanent workers, excluding craft establishments; publishers/printers and mills powered other than by water or air also have the more-than-four permanent-worker wording. The retail-trader limb requires more than four persons and does not add a permanence condition. Do not apply one employee-count test to all the listed activities. Deemed-profit businesses need their applicable official coefficient and computation before tax: hold CIT-H1.
 
 For an art. 27 advance, retain the customs assessment, trace it to the taxpayer account, deduct the accepted advance from annual tax and reconcile the balance. An excess is refundable on request if no other taxes are owed; art. 27 gives the administration thirty days from request, then Treasury-bond-rate interest for delay. Do not promise an amount before the tax account is reconciled. Do not advise filing immediately before import as a guaranteed way to remove this advance: the test concerns failures in the preceding periods.
 
