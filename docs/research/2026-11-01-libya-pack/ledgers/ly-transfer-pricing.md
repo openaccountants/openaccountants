@@ -28,3 +28,10 @@ The two `oa-check` blocks are working-paper calculations using the statute-bound
 ## Legacy coverage
 
 See [old-topic-destination-map.md](../old-topic-destination-map.md) for every original bullet, its exact original text, old blob and destination. For a new Guide there is no predecessor content to remove. No Guide was deleted.
+
+## Additional evidence from independent-review corrections
+
+| ID | Figure/rule and Guide section | Act/article; actual read page | Exact original-language excerpt | Official URL | Read on | Conditions / limit |
+|---|---|---|---|---|---|---|
+| AVOID1 | Formal-document condition for dispositions and strong evidence of a tax-evasion purpose before disregard; not every connected-party contract.; The base | Income Tax Law 7/2010 art.28; PDF 17-18 | إذا قامت لديها قرائن قوية | https://tax.gov.ly/assets/m2016.pdf | 2026-11-01 | Article28 first paragraph requires formal instrument for covered dispositions to bind authority; next paragraph permits disregard where strong indicators establish tax-evasion purpose. Historical text read, later chain unresolved. |
+| AVOID2 | Disregard conditions: unformalised dispositions, purpose of avoiding payment, evidence/indicators of attempted tax escape.; The base | Regulation 592/2010 art.73; PDF 58 | وجود أدلة وقرائن تثبت أن الممول يحاول التخلص من أداء الضريبة | https://tax.gov.ly/assets/m2016.pdf | 2026-11-01 | Read all three enumerated grounds alongside Law28; no rule disregarding every related-party arrangement is inferred. Historical text only; later chain unresolved. |

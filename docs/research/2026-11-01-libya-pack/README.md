@@ -7,7 +7,7 @@ The pack is broader than the six legacy summaries: individual trade, crafts, pro
 ## Evidence
 
 - `source-read-manifest.json`: source SHA-256, official URL, PDF size/page count, actual read scope and limits. PDFs, OCR and page images are outside Git at `output/libya-pack-2026-11-01/sources/` beside the checkout.
-- `ledgers/<slug>.md`: one rule/figure ledger per Guide, exact short original-language excerpts and act/article/page/read date. `fact-register.json` stores the 116 distinct rule records; 208 placements connect them to the eight Guides.
+- `ledgers/<slug>.md`: one rule/figure ledger per Guide, exact short original-language excerpts and act/article/page/read date. `fact-register.json` stores 119 distinct rule records after the independent-review evidence additions (116 at initial freeze); 211 placements connect them to the eight Guides.
 - `old-hashes.json`: six old Guide hashes plus the old README, taken before writing.
 - `old-topic-destination-map.md`: all 66 original substantive bullets, exact historical wording and destination. Old claims listed there are not current advice.
 - `validation.md`: mechanical checks and exact limitations. Candidate file hashes are in `candidate-guide-hashes.json`.
@@ -23,3 +23,9 @@ The public electronic portal stops at login. No taxpayer record, authenticated f
 ## Review handoff
 
 A fresh independent reviewer must check the frozen candidate against all ledger rows, reread the relevant original pages, recompute both examples per Guide, and compare all 66 old topics. Research beyond the cited material when a row fails, and record figures checked, sourced fixes and unresolved items. Preserve this writer evidence and add review evidence rather than replacing it. Do not close #468 or claim the pack is filing-ready.
+
+## Independent review closure
+
+The independent reviewer checked every initial116 rule record,208 placements,66 old topics and16 examples. The parent corrected the composite V12 quote and added the supported anti-avoidance evidence plus the treaty art18 citation/read scope. The focused reviewer accepted the exact resulting119 records/211 placements and file hashes in [focused-closure.md](../2026-11-01-libya-review/focused-closure.md) and `closure-guide-hashes.json`. The original candidate-guide-hashes and initial review receipts deliberately remain frozen historical evidence.
+
+No substantive Guide rule or example changed during correction. The cross-border Sources read-scope was expanded. All seven domains remain partial; later law/current rates and filing procedures remain unresolved. Limited historical-source acceptance is not accountant attestation or country completion. PR1193 remains draft.

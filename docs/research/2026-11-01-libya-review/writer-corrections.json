@@ -1,0 +1,21 @@
+{
+  "reviewed_freeze": "a4f20f79ffdfd90e68cfde258405a15dcb627ef9",
+  "date": "2026-11-01",
+  "R1": "Replaced composite V12 quote in register and two placements; separate original base and amended rate reading explained.",
+  "R2": "Added AVOID1 and AVOID2 with actual Arabic quotes/articles/pages/conditions, parent actually read scans17-18,58.",
+  "T10": "Added exact art18 evidence T10A with full actual PDF27 read; expanded manifest.",
+  "unique_rules_after_correction": 119,
+  "Guide_content_unchanged": false,
+  "status": "Awaiting independent focused closure",
+  "candidate_files": {
+    "docs/research/2026-11-01-libya-pack/fact-register.json": "85f21b8f634ba5ebc881325109c0ead3beb4798f812cbec6f3bfcd31305ea905",
+    "docs/research/2026-11-01-libya-pack/source-read-manifest.json": "9d3a71cd0082d0fa41dbf8246b377d9bd362328975c5180086b016920758874e",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-cross-border-tax.md": "7bbdebc018855fe6733af30171fcf9d6423f8e627d56c3eece9d1bbab6d46563",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-tax-overview.md": "f2f306d36a4952906de77fe5ab43817dbac8f37fc2adc79195c2667c1f316951",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-transfer-pricing.md": "e5cffc35adf408904f5e5196988a9b0d4b6e4eef5713bad4488c0c075ea948d0",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-vat-gst.md": "16fb0eb5e91e6cfc9ce4974cf0be101d68ac4da73817ddfaf016e3880ecc8926",
+    "skills/libya/ly-cross-border-tax.md": "6a4992c8f2fa2bf0754c300a9b9d7ae09992a92d4a5a876abec08a8b66477097",
+    "docs/research/2026-11-01-libya-pack/README.md": "9868549fa4c99d58939ce289cb66c6f63ce38928a7fcc2be66caae28814bd44e"
+  },
+  "Guide_change_scope": "Only cross-border Sources read-scope expanded to include actually read art18/PDF27; substantive Guide rules/examples unchanged."
+}

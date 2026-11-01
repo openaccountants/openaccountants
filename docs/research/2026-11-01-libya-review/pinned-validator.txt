@@ -1,0 +1,12 @@
+changed-only mode: validating 9 changed guide file(s)
+checked 8 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+
+validation passed (0 warning group(s))
+PINNED BASE: aec6ba04066bb69d1168c8028ba11dd65cb90505
+PINNED DIFF: git diff --name-only --no-renames --diff-filter=d aec6ba04066bb69d1168c8028ba11dd65cb90505
+PINNED DIFF: git diff --name-status -M100% aec6ba04066bb69d1168c8028ba11dd65cb90505
+PINNED DIFF: git diff --name-status -M90% aec6ba04066bb69d1168c8028ba11dd65cb90505
+PINNED DIFF: git diff --name-status -M90% aec6ba04066bb69d1168c8028ba11dd65cb90505
+PINNED DIFF: git diff --name-status aec6ba04066bb69d1168c8028ba11dd65cb90505 -- packages/us-federal
+PINNED DIFF: git diff --name-status HEAD -- packages/us-federal

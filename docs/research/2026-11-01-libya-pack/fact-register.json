@@ -938,12 +938,12 @@
     "id": "V12",
     "claim": "Amended service/supply contract duty 1%, burden and exceptions.",
     "section": "Rates, bands and thresholds",
-    "authority": "Law 8/2010 amended stamp schedule 28(a)",
-    "pdf_page": 146,
-    "quote": "1% من قيمة العقد",
+    "authority": "Law 8/2010 amended stamp schedule 28(a), read with original schedule 28(a)",
+    "pdf_page": "141,146",
+    "quote": "1%",
     "url": "https://tax.gov.ly/assets/m2016.pdf",
     "read_on": "2026-11-01",
-    "conditions": "Read statutory text only; complete 2026 amendment chain unresolved."
+    "conditions": "Amended rate cell at PDF146 reads only 1%; contract-value base read in original schedule at PDF141. This is a combined-text reading, not a single composite quotation. Burden/exemptions read in amended schedule. Complete 2026 amendment chain unresolved."
   },
   "V13": {
     "id": "V13",
@@ -1274,5 +1274,38 @@
     "url": "https://tax.gov.ly/",
     "read_on": "2026-11-01",
     "conditions": "Authority role paragraph read; unrelated external homepage content ignored."
+  },
+  "AVOID1": {
+    "id": "AVOID1",
+    "claim": "Formal-document condition for dispositions and strong evidence of a tax-evasion purpose before disregard; not every connected-party contract.",
+    "section": "The base",
+    "authority": "Income Tax Law 7/2010 art.28",
+    "pdf_page": "17-18",
+    "quote": "إذا قامت لديها قرائن قوية",
+    "url": "https://tax.gov.ly/assets/m2016.pdf",
+    "read_on": "2026-11-01",
+    "conditions": "Article28 first paragraph requires formal instrument for covered dispositions to bind authority; next paragraph permits disregard where strong indicators establish tax-evasion purpose. Historical text read, later chain unresolved."
+  },
+  "AVOID2": {
+    "id": "AVOID2",
+    "claim": "Disregard conditions: unformalised dispositions, purpose of avoiding payment, evidence/indicators of attempted tax escape.",
+    "section": "The base",
+    "authority": "Regulation 592/2010 art.73",
+    "pdf_page": 58,
+    "quote": "وجود أدلة وقرائن تثبت أن الممول يحاول التخلص من أداء الضريبة",
+    "url": "https://tax.gov.ly/assets/m2016.pdf",
+    "read_on": "2026-11-01",
+    "conditions": "Read all three enumerated grounds alongside Law28; no rule disregarding every related-party arrangement is inferred. Historical text only; later chain unresolved."
+  },
+  "T10A": {
+    "id": "T10A",
+    "claim": "UK treaty entertainers and sportsmen income has separate activity-state rule, including income accruing to another person.",
+    "section": "The base",
+    "authority": "UK-Libya treaty art.18",
+    "pdf_page": 27,
+    "quote": "Notwithstanding the provisions of Articles 8, 15 and 16",
+    "url": "https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf",
+    "read_on": "2026-11-01",
+    "conditions": "Personal activities exercised in other Contracting State; paragraph2 covers payment to another person. This is not the ordinary employment183-day exception. UK-Libya corridor only; later modification chain remains unresolved."
   }
 }

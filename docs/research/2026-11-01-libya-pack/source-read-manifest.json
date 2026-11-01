@@ -8,7 +8,7 @@
     "read_on": "2026-11-01",
     "source_kind": "Arabic scanned Tax Authority compilation, published as 2016; PDF metadata modified2019.",
     "actual_read_scope": "OCR rendered PDF pp.1-100,115-160,190-227; actual substantive reading: Law7 arts1-105 PDF 11-35, Reg592 arts1-82 PDF 36-60, selected Forms1,4,5,7,8,9 and receipt/certificate forms; stamp arts1-21 PDF 122-127, schedule PDF 141-146, Reg156 arts1-4 PDF 147-150, solidarity PDF 191-192, social law/allocation PDF 203-207. Other extracted pages not treated as read law.",
-    "visual_check": "Selected images actually inspected: PDF16,19,20,24,25,26,28,29,37,53,54,146,207. Numeric claims checked visually against those pages; additional rules read in OCR with neighbouring articles. OCR can contain errors; independent review required."
+    "visual_check": "Selected images actually inspected: PDF16,19,20,24,25,26,28,29,37,53,54,146,207. Numeric claims checked visually against those pages; additional rules read in OCR with neighbouring articles. OCR can contain errors; independent review required. Parent correction pass read actual PDF17-18 and58 for avoidance and146 for amended duty rate; original141 read for base."
   },
   {
     "file": "commercial23.pdf",
@@ -40,7 +40,7 @@
     "pdf_pages": 42,
     "read_on": "2026-11-01",
     "source_kind": "HMRC in-force2008 convention; English original.",
-    "actual_read_scope": "Actual treaty text arts1-5,8,10-17,19-20,23,26; PDF4-12,15,17-26,28-29,32-36; status/effective-date page onGOV.UK read separately.",
+    "actual_read_scope": "Actual treaty text arts1-5,8,10-20,23,26; PDF4-12,15,17-29,32-36; status/effective-date page onGOV.UK read separately. Parent correction pass read full art18 at actual PDF27.",
     "visual_check": "Text extraction read locally with neighbouring exceptions. Other treaty corridors and later modification chain not closed."
   },
   {
