@@ -1,6 +1,6 @@
 ---
 name: ao-income-tax
-description: "Angola p for tax year 2026, built from Lei 14/25 (the 2026 State Budget law), the tax codes and the AGT Portal do Contribuinte. Use when someone asks about p in Angola: rates, who is liable, what is taxed, the deadlines on the AGT Calendario Fiscal 2026, the portal menu path for filing, and the penalties the opened sources state. Covers companies, individuals and employers as stated in the scope section. Figures that could not be read in an official source are marked unverified on their row and listed at the end. Trigger phrases: Angola tax, AGT, Portal do Contribuinte, kwanza, Kz, e."
+description: "Angola personal income tax (IRT) for tax year 2026, built from Lei 14/25 (the 2026 State Budget law), the tax codes and the AGT Portal do Contribuinte. Use when someone asks about personal income tax (IRT) in Angola: rates, who is liable, what is taxed, the deadlines on the AGT Calendario Fiscal 2026, the portal menu path for filing, and the penalties the opened sources state. Covers companies, individuals and employers as stated in the scope section. Figures that could not be read in an official source are marked unverified on their row and listed at the end. Trigger phrases: Angola tax, AGT, Portal do Contribuinte, kwanza, Kz."
 jurisdiction: AO
 category: international
 tax_year: 2026
@@ -52,7 +52,7 @@ The Annex I table is reproduced as published. The fixed amounts jump at band edg
 ## The base
 
 - **Group A:** all pay in money or kind, less compulsory social security contributions and items not subject or exempt.
-- **Group B:** paid by someone with accounts: the value of the service. Paid by someone without accounts: worked out by the taxpayer. With accounts, simplified accounts or a purchase and sales register, the taxpayer deducts up to 30% of costs incurred; with none of these, no costs are deducted (Lei 28/20).
+- **Group B:** paid by someone with accounts: the value of the service. Paid by someone without accounts: worked out by the taxpayer. With organised accounts, the Imposto Industrial general regime rules apply. With simplified accounts or a purchase and sales register, the taxpayer deducts up to 30% of costs incurred. With none of these, no costs are deducted (Lei 28/20 art 8).
 - **Group C:** the minimum profits table figure. With organised accounts, regardless of turnover, the Imposto Industrial general regime rules apply (Lei 14/25 art 21(2)). The rule that moved Group C to actual sales at 4 times the table maximum (CIRT art 9(2)) is suspended by Lei 14/25 art 41(2).
 - **Below the charge:** INSS benefits, family allowance up to 5% of base pay, food and transport allowances up to Kz 30,000 a month each, documented travel reimbursement (AGT IRT page).
 
@@ -92,7 +92,7 @@ expected:
   tax: 65970.0
 ```
 
-**Decision: payer with accounts or without.** Fee Kz 1,000,000 and costs Kz 400,000. Withheld at 6.5% on the service value; if not withheld, 25% after deducting 30% of costs. Withholding costs Kz 155,000 less here.
+**Decision: payer with accounts or without.** Fee Kz 1,000,000 and costs Kz 400,000. Withheld at 6.5% on the service value; if not withheld, 25% after deducting 30% of costs, for a taxpayer with simplified accounts or a register. Withholding costs Kz 155,000 less here.
 
 ```oa-check
 name: Group B fee, withheld or not

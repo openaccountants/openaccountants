@@ -1,6 +1,6 @@
 ---
 name: ao-cross-border
-description: "Angola c for tax year 2026, built from Lei 14/25 (the 2026 State Budget law), the tax codes and the AGT Portal do Contribuinte. Use when someone asks about c in Angola: rates, who is liable, what is taxed, the deadlines on the AGT Calendario Fiscal 2026, the portal menu path for filing, and the penalties the opened sources state. Covers companies, individuals and employers as stated in the scope section. Figures that could not be read in an official source are marked unverified on their row and listed at the end. Trigger phrases: Angola tax, AGT, Portal do Contribuinte, kwanza, Kz, r."
+description: "Angola cross-border tax for tax year 2026, built from Lei 14/25 (the 2026 State Budget law), the tax codes and the AGT Portal do Contribuinte. Use when someone asks about cross-border tax in Angola: rates, who is liable, what is taxed, the deadlines on the AGT Calendario Fiscal 2026, the portal menu path for filing, and the penalties the opened sources state. Covers companies, individuals and employers as stated in the scope section. Figures that could not be read in an official source are marked unverified on their row and listed at the end. Trigger phrases: Angola tax, AGT, Portal do Contribuinte, kwanza, Kz."
 jurisdiction: AO
 category: cross-border
 tax_year: 2026
@@ -29,7 +29,7 @@ Payments between Angola and abroad: investment income under IAC, non-resident wo
 | Section B, listed on a regulated market, or compensation for suspended activity | 5% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais |
 | IAC rate after Lei 14/25 | Art 41(3) revokes art 27(3) of the IAC Code, with the new rate set at 10%. Which income it reaches was not read in the code | 2026 | https://www.ucm.minfin.gov.ao/cs/groups/public/documents/document/aw41/mje2/~edisp/minfin5216784.pdf |
 | Dividend exemption | Angolan company holding 25% or more for over a year before distribution | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais |
-| Reduced 2.5% or 0% under incentive packages | Old version | 2026 | unverified: no official text opened |
+| Reduced rates under incentive packages | Dividends and royalties 2.5% or 0%; interest 10% or 2.5% in certain cases (old version) | 2026 | unverified: no official text opened |
 
 ## The base
 
