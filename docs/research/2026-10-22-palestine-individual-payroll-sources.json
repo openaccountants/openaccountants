@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-10-22",
+  "source": "https://mjr.ogb.gov.ps/MergedLegislations/ViewText/111/قرار-بقانون-رقم-8-لسنة-2011م-بشأن-ضريبة-الدخل-فلسطين",
+  "authority": "Official Gazette Bureau",
+  "locators": {
+    "residence": "article1",
+    "calendar_period": "article4",
+    "allowances": "article12",
+    "spouses": "article14",
+    "bands": "article16(1)",
+    "general_returns": "articles18–19",
+    "withholding": "articles30(5),31(3)–(6),(10),(12)",
+    "penalty": "article36(4)"
+  },
+  "limits": [
+    "No certified current monthly payroll table or operational filing route.",
+    "No social-contribution regime determination.",
+    "Later amendment/emergency and territorial administration reconciliation open."
+  ],
+  "examples": "Annual computations only; no inference that dividing by twelve is authorised withholding."
+}

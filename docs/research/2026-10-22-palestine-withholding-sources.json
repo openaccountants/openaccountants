@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/palestine/ps-nonresident-withholding.md",
+  "sha256": "ef1f8132aa7e81d5362b77f6b872515e48b1c5417845acc5303940039d21cd52",
+  "source": "https://mjr.ogb.gov.ps/MergedLegislations/ViewText/111/قرار-بقانون-رقم-8-لسنة-2011م-بشأن-ضريبة-الدخل-فلسطين",
+  "source_status": "Official consolidated Arabic text retrieved; amendment links through 14/2016. Full later chain and territorial application unresolved.",
+  "locators": {
+    "7(9),7(15)": "Special-law/agreement exemptions and foreign-income exception for funds/deposits in Palestine",
+    "15(4)": "Nonresident control, real profits and resident liability on default",
+    "16(4)-(5)": "Final company tax and 10% profit distribution withholding; overlap unresolved",
+    "30(5)": "30 days from deduction subject to article31",
+    "31(1)-(3)": "Resident representative responsibility;10% taxable nonresident payment;reinsurance exception;15-day payroll rule"
+  },
+  "ownership": "origin/main OWNERS.md assigns Middle East to Michael; no Palestine issue found in current title search. Issue creation pending approval; no external publication.",
+  "review": "Independent source/editorial review by review_gi_minimum: no material errors; both calculations passed. Not professional attestation.",
+  "limitations": [
+    "Not complete cross-border coverage",
+    "No treaty rates or relief process verified",
+    "No professional attestation",
+    "No current operational forms verified"
+  ]
+}

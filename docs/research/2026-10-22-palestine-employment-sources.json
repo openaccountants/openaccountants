@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/palestine/ps-employment-benefits.md",
+  "sha256": "caee92b46bbe09d026072008c4464440520e85229a7c2d3d672f29ca9fecb3db",
+  "primary_sources": [
+    {
+      "url": "https://mjr.ogb.gov.ps/Decrees/ViewText/26866",
+      "locators": [
+        "Articles 1, 3, 6: wage and scope",
+        "Article 12: monthly labour statement",
+        "Articles 41–48: termination benefits",
+        "Articles 116–117,125: injury insurance, notifications and separate end-of-service entitlement"
+      ]
+    },
+    {
+      "url": "https://mjr.ogb.gov.ps/Decrees/Details/29244",
+      "locators": [
+        "Linked official PDF, articles1–4: suspension, effective28January2019;Gazette152published19February2019"
+      ]
+    },
+    {
+      "url": "https://mjr.ogb.gov.ps/JudicialDecisions/Download/?d=طلب+تفسير+07-2018.pdf&p=18b3e762-ac48-4aef-86a8-68924e02cd84.pdf",
+      "locators": [
+        "Judgment16October2018, Gazette148 pp147–152",
+        "Transition-specific reasoning and operative conclusions pp150–152;not a general repeal of resignation reductions"
+      ]
+    }
+  ],
+  "review": "Independent source/editorial review by review_gi_minimum found no material defects at recorded SHA256. Both calculations passed. Not professional attestation.",
+  "checks": "Targeted schema passed without warnings;two executable blocks passed",
+  "limitations": [
+    "Full later-law and case-law chain unresolved",
+    "Territorial application unresolved",
+    "No universal zero social-contribution conclusion",
+    "No professional attestation",
+    "Local draft only"
+  ]
+}
