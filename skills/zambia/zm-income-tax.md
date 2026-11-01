@@ -32,7 +32,7 @@ Employees (PAYE), sole traders, partners and landlords. Turnover K5,000,000 or l
 | Annual band 3 | K85,200 to K110,400, 30% | 2026 | same |
 | Annual band 4 | Above K110,400, 37% | 2026 | same |
 | Turnover tax | K30,000 a year or K2,500 a month or less 0%; above, up to K5,000,000, 5% | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf |
-| Excluded from turnover tax | Consultancy, mining other than artisanal, partnerships, public service vehicles under 50 seats | 2026 | same |
+| Excluded from turnover tax | Consultancy, mining other than artisanal and small-scale, partnerships, public service vehicles under 50 seats | 2026 | same |
 | Rental income tax | Up to K30,000 0%; K30,000 to K800,000 4%; above K800,000 16% | 2026 | same |
 | Presumptive tax per vehicle a year | 36 to 49 seats K10,368; 22 to 35 K7,776; 18 to 21 K5,184; 12 to 17 K2,592; under 12 K1,296; 50 seats and above leave the regime | 2026 | same |
 | Betting and gaming monthly | Casino K5,000 per table; lottery 15% net proceeds; betting 15% gross takings; machines K500 each | 2026 | same |
@@ -133,8 +133,8 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| NAPSA, PENSION CONTRIBUTION | Statutory deduction (payroll) | 5% employee / 5% employer; not a trading expense for the individual |
-| NHIMA, HEALTH INSURANCE | Statutory deduction (payroll) | 0.5% employee / 0.5% employer |
+| NAPSA, PENSION CONTRIBUTION | Statutory deduction (payroll) | Old file 5% / 5%, unverified; not a trading expense for the individual |
+| NHIMA, HEALTH INSURANCE | Statutory deduction (payroll) | Old file 0.5% / 0.5%, unverified |
 | VAT PAYMENT, ZRA VAT | EXCLUDE | VAT liability payment, not expense |
 | PROVISIONAL TAX, ZRA PROVISIONAL | Credit against liability | Not an expense |
 
@@ -172,11 +172,11 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 #### 5.3 NAPSA (social security)
 
-- **NAPSA contribution rule** : 10% total = 5% employee + 5% employer, on gross monthly earnings, capped at the NAPSA ceiling (see payroll skill, unverified) monthly insurable-earnings ceiling (max the ceiling amount per party). The earnings base includes basic salary, bonuses, commissions, severance, overtime, leave allowance, and acting allowance.
+- **NAPSA contribution rule** : Unverified for 2026 (see payroll skill). Old file: 10% total = 5% employee + 5% employer, on gross monthly earnings up to a monthly ceiling. The earnings base includes basic salary, bonuses, commissions, severance, overtime, leave allowance, and acting allowance.
 
 #### 5.4 NHIMA (health insurance)
 
-- **NHIMA contribution rule** : 1% total = 0.5% employee + 0.5% employer, on gross earnings (basic plus all allowances/overtime/bonuses). Compulsory for all workers including casual, temporary, and contract. Monthly returns due by the 10th.
+- **NHIMA contribution rule** : Unverified for 2026 (see payroll skill). Old file: 1% total = 0.5% employee + 0.5% employer, on gross earnings (basic plus all allowances/overtime/bonuses). Compulsory for all workers including casual, temporary, and contract. Monthly returns due by the 10th.
 
 #### 5.5 Self-Employed Regimes
 
@@ -244,9 +244,9 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 - **Phone/internet mixed use rule** : - Business-use portion only (MTN/Airtel/Zamtel airtime and data) **Conservative default:** 0% deduction until the business percentage is confirmed.
 
-#### 6.4 Turnover-Tax vs Income-Tax Election
+#### 6.4 Turnover Tax or Income Tax (no free election)
 
-- **Election rule** : - Turnover tax (5%, no deductions) suits low-expense businesses; the standard income-tax regime suits high-expense businesses - The election interacts with the K5,000,000 turnover ceiling and excluded-income rules **Flag for reviewer:** confirm which regime minimises tax and is correctly registered with ZRA.
+- **Regime rule** : - ZRA requires turnover tax at K5,000,000 or less unless an exclusion applies; there is no choice by expense level. Changes happen only at the start of a charge year. **Flag for reviewer:** confirm the regime registered with ZRA is the correct one.
 
 #### 6.5 Rental Income Banding
 
@@ -260,18 +260,18 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 ```
 ZAMBIA INCOME TAX: WORKING PAPER
-Charge Year: 2025
+Charge Year: 2026
 Client: ___________________________
 Status: Employee (PAYE) / Sole trader (turnover tax) / Sole trader (income tax)
 
 PART A: EMPLOYEE (PAYE), MONTHLY
   A1. Gross monthly earnings (basic + allowances)   ___________
   A2. PAYE (apply monthly bands)                     ___________
-  A3. NAPSA employee 5% (cap the ceiling amount)              ___________
-  A4. NHIMA employee 0.5%                            ___________
+  A3. NAPSA employee (rate unverified, see payroll)  ___________
+  A4. NHIMA employee (rate unverified, see payroll)  ___________
   A5. NET PAY (A1 - A2 - A3 - A4)                    ___________
-  Memo: NAPSA employer 5% (cap the ceiling amount)            ___________
-  Memo: NHIMA employer 0.5%                          ___________
+  Memo: NAPSA employer (rate unverified)             ___________
+  Memo: NHIMA employer (rate unverified)             ___________
 
 PART B: SOLE TRADER, TURNOVER TAX
   B1. Annual turnover (excl. interest/dividends/
@@ -415,7 +415,7 @@ Transfer between own accounts. Neither income nor expense. Exclude entirely.
 ### Refusal Catalogue
 
 - **R-ZM-1** : Employment status unknown. "PAYE (employee) and turnover/income tax (self-employed) are entirely different regimes. This skill cannot compute tax without knowing the person's status. Please confirm before proceeding."
-- **R-ZM-2** : Turnover near or above K5,000,000. "Turnover tax applies only to annual turnover up to ZMW 5,000,000 (PwC, ZM other taxes). Above this the business files under the standard income-tax regime, and VAT registration may be required. Escalate to a ZICA-qualified accountant."
+- **R-ZM-2** : Turnover near or above K5,000,000. "Turnover tax applies only to annual turnover up to ZMW 5,000,000 (Income Tax Act s. 64A(2), as amended by Act 17 of 2025). Above this the business files under the standard income-tax regime, and VAT registration may be required. Escalate to a ZICA-qualified accountant."
 - **R-ZM-3** : Companies, partnerships, group structures. "This skill covers individuals: employees and sole traders only. Companies and partnerships file separate returns under different rules. Escalate to a ZICA-qualified accountant."
 - **R-ZM-4** : Mining, farming, or special-sector income. "Mining and certain sector incomes are excluded from turnover tax and have bespoke regimes. Out of scope. Escalate to a ZICA-qualified accountant."
 - **R-ZM-5** : Non-resident / withholding-tax matters. "Most non-resident income is taxed via withholding tax, not the PAYE/income-tax bands. Out of scope. Escalate to a ZICA-qualified accountant."
@@ -433,9 +433,9 @@ Transfer between own accounts. Neither income nor expense. Exclude entirely.
 | Unknown business-use % (vehicle, phone, home) | 0% deduction |
 | Unknown expense category (self-employed) | Not deductible |
 | Unknown whether NAPSA ceiling applies | Apply the NAPSA ceiling (see payroll skill, unverified) ceiling |
-| Unknown turnover-tax vs income-tax election | Turnover tax if turnover ≤ K5,000,000 (see R-ZM-2) |
+| Unknown turnover-tax vs income-tax regime | Turnover tax if turnover ≤ K5,000,000 (see R-ZM-2) |
 | Unknown VAT registration | Not VAT-registered (use gross amounts) |
-| Charge year not stated | Current charge year (2025/2026 bands are identical) |
+| Charge year not stated | Charge year 2026 |
 
 ### Onboarding Fallback
 
@@ -467,7 +467,7 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 - NEVER compute tax without confirming employee (PAYE) vs self-employed status
 - NEVER apply turnover tax to interest, dividends, royalties, consultancy, or standard mining income
 - NEVER allow expense deductions for a turnover-tax taxpayer (5% is on turnover)
-- NEVER exceed the NAPSA insurable-earnings ceiling (the NAPSA ceiling (see payroll skill, unverified)/month → max the ceiling amount per party)
+- NEVER state a NAPSA ceiling as confirmed: it is unverified (see payroll skill)
 - NEVER treat NAPSA or NHIMA as a trading expense of the individual
 - NEVER allow entertainment, personal, or fine/penalty expenses as deductions
 - NEVER allow income tax / PAYE itself as a deduction
@@ -509,8 +509,8 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 
 | Breach | Charge | Source |
 | --- | --- | --- |
-| Late submission of return | 250 penalty units (K100) per month or part month | ZRA penalties page / penalties leaflet : unconfirmed |
-| Late payment of tax | 5% of the amount due, plus interest at Bank of Zambia discount rate + 2% | ZRA penalties page |
+| Late turnover tax return | 250 penalty units (K100) per month or part month; other returns see Penalties and interest above | ZRA leaflet Turnover Tax (2026) |
+| Late payment, other than turnover tax | 5% of the amount due, plus interest at Bank of Zambia discount rate + 2% | ZRA penalties page |
 
 ### Minimum Wage (2025)
 
@@ -543,10 +543,10 @@ Input: Self-employed (standard regime), taxable profit K150,000/year.
 Expected: Income tax = K12,360 + (150,000 − 110,400)×37% = K12,360 + K14,652 = K27,012.
 
 Input: Sole trader, annual turnover K200,000 (no excluded income), under K5m ceiling.
-Expected: Turnover tax = (200,000 − 12,000) × 5% = K188,000 × 5% = K9,400/year.
+Expected: Turnover tax on ZRA's example method = (200,000 − 30,000) × 5% = K170,000 × 5% = K8,500/year. If ZRA's note on total turnover governs, K10,000 (see Not yet confirmed).
 
 Input: Gross annual rent K500,000.
-Expected: Rental income tax at 4% (band K30,000-800,000) = K500,000 × 4% = K20,000. [Confirm whether the first K30,000 is 0% before applying : PwC bands as stated; reviewer to confirm marginal vs flat application.]
+Expected: Rental income tax at 4% (band K30,000-800,000) = K500,000 × 4% = K20,000. [Charging Schedule para 5(e) does not say whether bands are marginal or flat: reviewer to confirm.]
 
 Input: K850 client dinner claimed as expense (income-tax trader).
 Expected: Remove : not deductible.

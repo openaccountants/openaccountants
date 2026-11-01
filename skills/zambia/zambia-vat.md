@@ -62,7 +62,7 @@ Any supply not listed in the Exemption or Zero-Rating Orders is standard rated. 
 | NAPSA | EXCLUDE | Social security |
 | ZESCO | Domestic 16% | Electricity |
 | LWSC, SWSC | Domestic 16% | Water |
-| MTN ZM, AIRTEL ZM, ZAMTEL | Domestic 16% | Telecoms |
+| MTN ZM, AIRTEL ZM, ZAMTEL | Domestic 16% | Telecoms; input tax blocked except carrier and hotel resale |
 | GOOGLE, MICROSOFT, AWS | Reverse charge 16% | Non-resident |
 
 ## Deadlines and filing
