@@ -41,7 +41,7 @@ The 15% rate proposed earlier was not enacted: the Act says 14%. The BURS VAT pa
 
 ## The base
 
-Zero-rated foods, in natural state and unmixed ([BURS notice](https://www.burs.org.bw/images/Zero-Rated%20FoodStuff-%20Under%20Vat%20Act%20of%202026.pdf)): sorghum or maize meal (not cooked), millet grain and meal, wheat grain, maize cobs, sugar, brown bread, potatoes, tomatoes, onions, cabbage, rape, beetroots, carrots, spinach, oranges, apples, bananas, rice, samp, bread flour, cooking oil. Everything else is 14%. Exports of goods and services are zero-rated with documentary proof (Sch 1, ss 8(2)).
+Zero-rated foods, in natural state and unmixed ([BURS notice](https://www.burs.org.bw/images/Zero-Rated%20FoodStuff-%20Under%20Vat%20Act%20of%202026.pdf)): sorghum or maize meal (not cooked), millet grain and meal, wheat grain, maize cobs, sugar, brown bread, fresh potatoes, tomatoes, onions, cabbage, rape, beetroots, carrots and spinach, fresh oranges, apples and bananas (not dried, canned or bottled), rice, samp, bread flour, cooking oil. Everything else is 14%. Exports of goods and services are zero-rated with documentary proof (Sch 1, s 8(2)).
 
 Exempt (Sch 2): financial services not charged by fee; precious metals; services of public medical facilities; donated goods by non-profit bodies; education; public transport; home owners' associations; nominal supplies by Government or non-profit bodies; lease of residential premises for 45 days or more; Deposit Insurance Scheme services.
 
@@ -55,7 +55,7 @@ Excess input tax of a person mainly making zero-rated supplies is refunded withi
 
 ## Deadlines and filing
 
-1. Register: apply in the approved form to BURS within the s 12 trigger. Large unregistered persons and Government entities: from 1 August 2026 (SI 94 regs 17, 19).
+1. Register: apply in the approved form to BURS within the s 12 trigger. Large unregistered persons and Government entities: from 1 August 2026, only to report reverse-charged VAT, with no input tax credit (SI 94 regs 17(4), 19).
 2. BURS allocates Category A (periods ending Jan, Mar, May, Jul, Sep, Nov), B (Feb, Apr, Jun, Aug, Oct, Dec) or C (monthly) (s 54).
 3. Log in to e-Tax at https://eservices.burs.org.bw/; remote suppliers use https://eservices.burs.org.bw/remote-services/home.
 4. Complete return VAT 002.1 ([BURS returns](https://www.burs.org.bw/index.php/tax/returns)), including nil periods.
@@ -65,7 +65,7 @@ Excess input tax of a person mainly making zero-rated supplies is refunded withi
 
 ## Penalties and interest
 
-Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment: the greater of P50 a day or 10% a month (TAA s 102), but reg 33 of SI 90 waives this penalty for 12 months from commencement, which runs to 30 June 2027; interest still runs. False statement made deliberately or recklessly: 75% of the shortfall (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98).
+Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment: the greater of P50 a day or 10% a month (TAA s 102), but reg 33 of SI 90 waives this penalty for 12 months from commencement, which runs to 30 June 2027; interest still runs. False statement made deliberately or recklessly: 75% of the shortfall; any other false or misleading statement: 20%. Add 10 points on a second application and 25 on a third or later; half off on voluntary disclosure before discovery or audit (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98).
 
 ## Cross-border points
 

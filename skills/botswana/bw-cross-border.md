@@ -33,7 +33,7 @@ Non-residents earning in Botswana, residents with foreign income, and payers abr
 | Repatriated profit of a PE | 10% | 2026-27 | same |
 | Entertainer | 10% | 2026-27 | same |
 | Insurance premium | 3% | 2026-27 | same |
-| Non-resident capital gain, withheld by buyer | 10% of gross consideration | 2026-27 | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=954:income-tax-act-amendment-2026 (Sch 1 para 6, s 132(3)) |
+| Capital gain of a non-resident with no Botswana PE, withheld by buyer | 10% of gross consideration | 2026-27 | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=954:income-tax-act-amendment-2026 (Sch 1 para 6, s 132(3)) |
 | Remote supplier VAT threshold | P500,000 | 2026-27 | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=958:value-added-tax-act-2026 (Sch 5 para 3) |
 
 ## The base

@@ -34,7 +34,7 @@ The rate changed from 22% to 24.5% with the Act. The repealed Act applies to tax
 | IFSC, approved financial operations | 15% | 2026-27 | same (para 3(b)) |
 | IFSC, other income | 24.5% | 2026-27 | same |
 | Mutual association | 5% | 2026-27 | same (para 3(c)) |
-| Non-diamond mining with no qualifying government stake | higher of 70 - (1500/X) or 24.5%; X = taxable income as % of gross income | 2026-27 | same (para 3(a)) |
+| Mining company other than a diamond mining company in which the Government holds an equity interest | higher of 70 - (1500/X) or 24.5%; X = taxable income as % of gross income | 2026-27 | same (para 3(a)) |
 | Non-approved fund | 24.5% | 2026-27 | same (para 4) |
 | Non-resident: dividends, repatriated profit, entertainers, capital gain | 10% | 2026-27 | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=954:income-tax-act-amendment-2026 (Sch 1 para 6) |
 | Non-resident: interest, royalties, technical fees, director's fees, natural resource amounts | 15% | 2026-27 | same |
@@ -74,7 +74,7 @@ Depreciation (Sch 3), straight-line or diminishing: motor vehicles, computers, b
 
 ## Penalties and interest
 
-Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment: the greater of P50 a day or 10% a month (TAA s 102), but reg 33 of SI 90 waives this penalty for 12 months from commencement, which runs to 30 June 2027; interest still runs. False statement made deliberately or recklessly: 75% of the shortfall (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98).
+Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment: the greater of P50 a day or 10% a month (TAA s 102), but reg 33 of SI 90 waives this penalty for 12 months from commencement, which runs to 30 June 2027; interest still runs. False statement made deliberately or recklessly: 75% of the shortfall; any other false or misleading statement: 20%. Add 10 points on a second application and 25 on a third or later; half off on voluntary disclosure before discovery or audit (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98).
 
 A withholding agent is personally liable for tax not withheld (s 138(3)).
 
