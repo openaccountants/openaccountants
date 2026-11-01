@@ -63,7 +63,7 @@ If the regime is unknown, assume the higher standard: Art. 145 records, 10 years
 | Documents not produced, or audit refused | MAD 2,000, plus MAD 100 a day up to MAD 1,000 | 2026 | Art. 191-I; for income tax the fine is MAD 500 to 2,000; procedure in Art. 229 | same |
 | False invoices, false entries, repeated sales without invoice, destroying records | MAD 5,000 to 50,000, plus 1 to 3 months in prison | 2026 | Art. 192-I; intent to evade, procedure in Art. 231 | same |
 | Non-traceable settlement | 6% of the transaction | 2026 | Art. 193; MAD 20,000 or more, charged on the seller, for example company to business | same |
-| Cash expense limit | MAD 5,000 a day per supplier | 2026 | Art. 11-II, 106-II; the monthly cap is in morocco-vat | same |
+| Cash expense limit | MAD 5,000 a day per supplier | 2026 | Art. 11-II, 106-II; above it, unless paid by a traceable method; capped at MAD 50,000 a month per supplier | same |
 
 ### Step 2. Records by regime
 
@@ -99,7 +99,7 @@ Pre-numbered from a continuous series, or issued by a computer system in a conti
 
 A till receipt can replace the invoice for sales of goods to private individuals, showing date, seller, description, quantity and price with any VAT. Clinics split fees between clinic and doctors (Art. 145-IV). Tour sellers show the customer's business tax number unless they file the sales statement by customer (Art. 145-V). Non-merchants put their tax numbers on all documents (Art. 145-VII).
 
-Purchase side: a purchase invoice must carry the same Art. 145-III and VIII mentions and be regular and probative (Art. 146). Deduction is refused for an invoice from a listed defaulting supplier with no real activity, or from an inactive company (Art. 146, 228 bis). Businesses need an ICE for exemptions (Art. 164-I). Annual returns attach a sales statement with ICE by customer (Art. 20-I, 82-I).
+Purchase side: a purchase invoice must carry the same Art. 145-III and VIII mentions and be regular and probative (Art. 146). Deduction is refused for an invoice from a listed defaulting supplier with no real activity, or from an inactive company (Art. 146, 228 bis). VAT on a purchase without an invoice meeting Art. 146 is not deductible (Art. 106-I-9), and Art. 146 includes the ICE mentions. Businesses need an ICE for exemptions (Art. 164-I). Annual returns attach a sales statement with ICE by customer (Art. 20-I, 82-I).
 
 ### Step 4. Electronic accounting and invoicing
 
@@ -179,7 +179,7 @@ Refer to a licensed Moroccan expert-comptable or comptable agree: a regime chang
 
 ## Filing and payment
 
-Bookkeeping feeds the returns. All businesses must file (Art. 155) and pay electronically on DGI's services from 1 January 2017, under regulatory terms. AE turnover goes to the designated body, monthly by the end of the following month or quarterly (Art. 82 bis). CPU files an annual return by 1 April, electronically or on paper (Art. 82 quater). Requests and certificates go through electronic teleservices (Art. 169 bis).
+Bookkeeping feeds the returns. All businesses must file (Art. 155) and pay (Art. 169) electronically from 1 January 2017, under regulatory terms. AE turnover goes to the designated body, monthly before the end of the following month, or quarterly before the end of the month after the quarter (Art. 82 bis). CPU files an annual return before 1 April, electronically or on paper (Art. 82 quater). Requests and certificates go through electronic teleservices (Art. 169 bis).
 
 ## Completion checklist
 
@@ -194,11 +194,11 @@ Bookkeeping feeds the returns. All businesses must file (Art. 155) and pay elect
 
 | Source | URL | Read on |
 |---|---|---|
-| DGI, Code General des Impots 2026 (French), Art. 11, 20, 39, 41, 42 bis, 42 ter, 43, 82 bis, 82 quater, 118, 145, 146, 146 bis, 147, 155, 164, 169 bis, 185 bis, 191, 191 bis, 192, 193, 198 ter, 210 to 213, 229; these extracts read from a local text copy of the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| DGI, Code General des Impots 2026 (French), Art. 11, 20, 30, 39, 41, 42 bis, 42 ter, 43, 82 bis, 82 quater, 91, 92, 94, 106, 118, 145, 146, 146 bis, 147, 155, 164, 169, 169 bis, 185 bis, 191, 191 bis, 192, 193, 198 ter, 210 to 213, 228 bis, 229, 231, 247; these extracts read from a local text copy of the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 | DGI home page; read for any e-invoicing notice, none shown | https://www.tax.gov.ma/wps/portal/DGI/Accueil | 2026-11-01 |
 | ICE portal; page read, gives no digit count or legal basis | https://www.ice.gov.ma/ICE/ | 2026-11-01 |
 
-Not yet confirmed: accounting law 9-88 and the Code de Commerce (official text could not be opened), so the old skill's rules that RNS must keep full CGNC accounts, the three commercial books, the plan comptable and the annual inventory under that law are out of the steps; the RNS reduced statements; an AE register of receipts and a CPU register of receipts and purchases and any official model (the CGI has neither, and Art. 145 bis is repealed; Loi 114-13 and regulations not read); ICE length and 9+4+2 structure; any annual cap on the ICE fine (Art. 198 ter states none); the wording "TVA non applicable" for AE and CPU invoices; the e-invoicing clearance model, UBL 2.1 and CII formats, phasing from large firms to SMEs and B2C, the free tool at fatourati.gov.ma, e-archiving rules, and whether the implementing decree is published (press only: under review in April 2026, no decree found on 1 November 2026); what Finance Law 50-25 changed in Art. 145-I and X; the regulatory criteria for electronic accounting; SIMPL-IR, SIMPL-TVA, SIMPL-IS portal steps, adhesion and data import; the AE filing channel; the body named under Art. 82 bis.
+Not yet confirmed: accounting law 9-88 and the Code de Commerce (official text could not be opened), so the old skill's rules that RNS must keep full CGNC accounts, the three commercial books, the plan comptable and the annual inventory under that law are out of the steps; the RNS reduced statements; an AE register of receipts and a CPU register of receipts and purchases and any official model (the CGI has neither, and Art. 145 bis is repealed; Loi 114-13 and regulations not read); ICE length and 9+4+2 structure; any annual cap on the ICE fine (Art. 198 ter states none); whether a missing ICE alone costs the buyer the income tax deduction of the charge (the VAT loss is in Step 3); whether the registre de commerce number goes on invoices (Art. 145-III does not name it); whether AE and CPU individuals must issue invoices and keep copies (Art. 145 does not bind them); bank statements and contracts in the retention scope (Art. 211 names neither); the wording "TVA non applicable" for AE and CPU invoices; the e-invoicing clearance model, UBL 2.1 and CII formats, phasing from large firms to SMEs and B2C, the free tool at fatourati.gov.ma, e-archiving rules, and whether the implementing decree is published (press only: under review in April 2026, no decree found on 1 November 2026); what Finance Law 50-25 changed in Art. 145-I and X; the regulatory criteria for electronic accounting; SIMPL-IR, SIMPL-TVA, SIMPL-IS portal steps, adhesion and data import; the AE filing channel; the body named under Art. 82 bis.
 
 Removed and why: Secondary commentary list (not a permitted citation). Contributor, quality tier and last research rows (metadata). Conservative default that a near ceiling counts as breached (Art. 41 tests two actual years). Everything else is carried above or on the Not yet confirmed line.
 
