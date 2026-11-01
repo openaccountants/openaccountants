@@ -1,0 +1,82 @@
+{
+  "decision": "Accepted source fidelity for both limited drafts after N1 and N2 closure",
+  "date": "2026-11-01",
+  "reviewer": "Independent /root/niger_formation_overview_review",
+  "original_frozen_commit": "ea3aefb0bea6c30acd49d42a6ff72523162df0bc",
+  "repaired_candidate_files": [
+    {
+      "path": "skills/niger/ne-company-formation.md",
+      "sha256": "de3de318658c4bebcc41b8ce12eba88a5eb761c54c662658a431b5d39021a00b",
+      "bytes": 19873
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.json",
+      "sha256": "0ee95033302122989c83ec3bda85fd5b875e15f570d71a156791b540ae5ca3e1",
+      "bytes": 25238
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.md",
+      "sha256": "3279959fa8607630cec8b1c5f739d57e5070c15c8b2db9eb58ed2888c88c9e28",
+      "bytes": 13294
+    }
+  ],
+  "both_guides": [
+    {
+      "path": "skills/niger/ne-company-formation.md",
+      "sha256": "de3de318658c4bebcc41b8ce12eba88a5eb761c54c662658a431b5d39021a00b",
+      "all_15_checks_pass": true,
+      "oa_blocks_byte_identical": true,
+      "frontmatter_and_complete_cta_byte_identical": true
+    },
+    {
+      "path": "skills/niger/ne-tax-overview.md",
+      "sha256": "3d6f6d3811ee2c954cc23ea5cca15ff45f3b718c3f35b662221a39ae9d7e401d",
+      "all_15_checks_pass": true,
+      "oa_blocks_byte_identical": true,
+      "frontmatter_and_complete_cta_byte_identical": true
+    }
+  ],
+  "closed_findings": [
+    {
+      "id": "N1",
+      "ledger": "F24",
+      "verdict": "Closed: Guide and JSON/Markdown rules expressly require associates to sign statutes and annexed statement for adoption upon RCCM registration; original article 107 and neighbors reread on physical 29."
+    },
+    {
+      "id": "N2",
+      "ledger": "F26",
+      "verdict": "Closed: Guide and JSON/Markdown restrict mandated signature to one or more declaration authors; full actor pool stated; original article 73 and neighbors reread on physical 19."
+    }
+  ],
+  "unchanged_ledger_rows": 45,
+  "all_original_candidate_files_except_three_repairs_exact": true,
+  "old_topic_map_sha256": "d0711ae2c7c235338bb52458da55328caba0a6d2f970ba06613932c8b38e1161",
+  "all_25_original_destinations_preserved": true,
+  "prior_evidence_blobs_preserved": 13,
+  "other_guides_preserved": 5,
+  "independent_case_rechecks": 4,
+  "stock_example_checker": "2 files, 4 blocks, 0 failures, 0 missing",
+  "sources_hashes_match_initial_read": true,
+  "initial_review_evidence_hashes": {
+    "preservation.json": "4a5fe6644aa4570424f5bd89a6f2ce13cfb3a99e594bd6ddfbd956264a3b78ca",
+    "independent-cases.json": "ad796ef27b93967e901e6cb76061bb33db63f63fee0e4a539e6a2de6ce3b61df",
+    "findings.json": "57f24d4a2d21b312f6d2c3a6c94c882841639349d037785d486c694d4315f4f0",
+    "source-reads.json": "eae410da532c33558dfd426079a86740535fe4813781d0bb10bfa1b279226339",
+    "old-topics.json": "154c22a0368e11e88246dcffc5d6080836fbfa8b80e8beab763b1abd22b03ef1",
+    "review.md": "07976974b8258a5794a09211df7035559e4652435ed64313d51747fffce260c0",
+    "all-row-verdicts.json": "74dc1e8a22063f9a8df16da2429db5c57c33ae383220d3d5ebc22e2a9b5dd6a4",
+    "frozen-files.json": "b1a6b336cbd5cf4ca1134e5ff7cd9dd058d96b444270d46648d4cc796fcb098d"
+  },
+  "permitted_status_reconciliation": {
+    "paths": [
+      "skills/niger/README.md",
+      "evidence/ledgers/niger-formation-overview-20261101/writer-record.md",
+      "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.md",
+      "evidence/ledgers/niger-formation-overview-20261101/ne-tax-overview.md",
+      "skills/niger/ne-company-formation.md",
+      "skills/niger/ne-tax-overview.md"
+    ],
+    "allowed": "Factual review-status prose only: README and writer record; ledger introduction/header only; at most one closing status sentence in each Guide. Parent must record each exact before/after literal and hashes binding original reviewed bytes to reconciled bytes. No rule, number, example, source condition, old topic, frontmatter, platform field or CTA change. State independent source-fidelity review, not accountant attestation or completed country coverage. No fresh source review required for that narrowly evidenced reconciliation."
+  },
+  "limits": "All seven tax domains remain partial. Three 2025 tax homes stale, accepted prior cash/TDTA holds unchanged. Complete current CGI/amendment chain, live forms/fees/UBO and comprehensive tax jobs remain unresolved. This is not merge permission or accountant attestation."
+}

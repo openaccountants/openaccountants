@@ -1,0 +1,205 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "candidate": "ea3aefb0bea6c30acd49d42a6ff72523162df0bc",
+  "other_guide_files": 5,
+  "prior_evidence_blobs": 13,
+  "tracked_bytes_compared": [
+    {
+      "path": "evidence/ledgers/ne-cash-payment-tax.md",
+      "base_blob": "8df9dde3e2107a89da2df45ddf79f546ae2237b7",
+      "sha256": "a4971af227c3bb40744d5599100bc38816e89a5a2e5b92f359847f5f98719d67",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/ne-money-transfer-tax-repeal.md",
+      "base_blob": "5705f39fbaf0826d0d0c904fc9a03cce0da4f53b",
+      "sha256": "74382f0d98de63ba723efe75f5dc0f9a0d66b7e4c4409cdc3e20d8f0e2b74f11",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-candidate-manifest.json",
+      "base_blob": "52c0341c341501a95474fb617bae5c139b2cd7c3",
+      "sha256": "8eb1025f9ac37914cf28fbcb7ee1ec0e6adf2520b0147851dc4ab7620292726f",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-old-topics.md",
+      "base_blob": "2453201a97a9993ad1aaef239f92ce3d5f865abd",
+      "sha256": "caf94922a930ec569bcef74dce52d88f37de5ab2424f1b74168fbec006eb5435",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/examples.txt",
+      "base_blob": "6423abb87036b5a067f72fe47af549c13d9b9864",
+      "sha256": "19e2a7be540aeed3f0c3b98a05ad619dd38b9cf9540e0435c668237f9204ba4a",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/freeze-after.json",
+      "base_blob": "bd7054c16791fae3fd006dcc5a4656ae6c3cd20b",
+      "sha256": "7e9199e7f9dce3900578f11393765e8e070a8e65e429675561ebc012305917e6",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/freeze-before.json",
+      "base_blob": "76063348f80eacbc6aafb75ab4647743b0c8a270",
+      "sha256": "932fa7a1f784a6ea6c92b15e9bcd83017ffd1566f4dbc38b2d44a0fbad5bd48f",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/review.md",
+      "base_blob": "d04e90cbd0ccf155f3b8843e858a2d660ab67b8f",
+      "sha256": "4308032f3aaa8cacdae50b8549220f9fa667bcd98884ded9d0faa3b8f61b0bfc",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/scoped-validation.txt",
+      "base_blob": "17012ba011d13fad8e3ff1899c0d4b88c92c6a94",
+      "sha256": "8c1ef923f97078f46e56b33ec299508aed17e9e9dba9ab9f67da5ae20038fe90",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/skill-checks.txt",
+      "base_blob": "d90e9adc21136203f1231ba10d807e02180d66c6",
+      "sha256": "e3fd8d16439a78b79e3a295f5547043c0c54f02ad005e4c95c94e6d29d8c8959",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/sync-integrity.txt",
+      "base_blob": "696615fcef5d36ba9fc809d95d07446645bf0f24",
+      "sha256": "aab9de77347054149ce2e3e0794642fb17a371419dbd16d59ba7940a56c036f4",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-source-read-20261101.md",
+      "base_blob": "42d78b3f045b0e5eff0c988be8a3c486e9fd1c4f",
+      "sha256": "9f0cb8bd4ec5251e54c02ee15eb290605ecd0b6a5bc3289e3e4408d741c6a691",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "evidence/ledgers/niger-writer-checks-20261101.md",
+      "base_blob": "61fa75c7069ae4c5c674ace9fcd5a5286f94b055",
+      "sha256": "d2ab535959f8ebc7dbbe62665069ee6fd4d09b2055a49cd30d988e0ae8d3c352",
+      "byte_identical": true,
+      "working_tree_materialised": false
+    },
+    {
+      "path": "skills/niger/ne-cash-payment-tax.md",
+      "base_blob": "fc8713c64dfdb57db41d27d2ee3b39965046a551",
+      "sha256": "01ed691045f081c6db43c0bb7bc84a412220771fca8ba4930e4ba708c2a53081",
+      "byte_identical": true,
+      "working_tree_materialised": true
+    },
+    {
+      "path": "skills/niger/ne-corporate-income-tax.md",
+      "base_blob": "5723ef67cae46a7f4412b0bb2ba39f182993b316",
+      "sha256": "6dff9833a45e4c86d90c8a8d3478953b5e9512727008dd910fde3e75736b0f41",
+      "byte_identical": true,
+      "working_tree_materialised": true
+    },
+    {
+      "path": "skills/niger/ne-money-transfer-tax-repeal.md",
+      "base_blob": "f673468582079b4a54b163b0141826f68f4782d8",
+      "sha256": "47bb061db02053345e0accbc597623e32a3c1b589775d36715eb22df6aa68f96",
+      "byte_identical": true,
+      "working_tree_materialised": true
+    },
+    {
+      "path": "skills/niger/ne-payroll-social.md",
+      "base_blob": "6a89a39176b83bc078b14335bf235f3d7c08e0bf",
+      "sha256": "59923c83b62ff5babb4813cc6bf03ae78b3070d39917ecdb0ef9f031b2cd7282",
+      "byte_identical": true,
+      "working_tree_materialised": true
+    },
+    {
+      "path": "skills/niger/ne-vat-gst.md",
+      "base_blob": "ebc39960053d5afe49724c4c52439d60e209a538",
+      "sha256": "c5099936e9d614ceaca4d5d6301bff11f3a1b8c794c721cfcf269623da4a7f95",
+      "byte_identical": true,
+      "working_tree_materialised": true
+    }
+  ],
+  "rewritten_guide_platform_and_cta": [
+    {
+      "path": "skills/niger/ne-company-formation.md",
+      "platform_keys": [
+        "review_status",
+        "trust_label",
+        "license",
+        "authored_by",
+        "drafted_by",
+        "approved_by",
+        "validation_status",
+        "validated",
+        "tier"
+      ],
+      "platform_exact": true,
+      "full_cta_suffix_exact": true,
+      "description_words": 101,
+      "checks": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      }
+    },
+    {
+      "path": "skills/niger/ne-tax-overview.md",
+      "platform_keys": [
+        "review_status",
+        "trust_label",
+        "license",
+        "authored_by",
+        "drafted_by",
+        "approved_by",
+        "validation_status",
+        "validated",
+        "tier"
+      ],
+      "platform_exact": true,
+      "full_cta_suffix_exact": true,
+      "description_words": 109,
+      "checks": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      }
+    }
+  ],
+  "note": "Sparse checkout omits prior evidence on disk; authoritative git show candidate blobs compared directly against pinned base, not a claim of absent preservation."
+}

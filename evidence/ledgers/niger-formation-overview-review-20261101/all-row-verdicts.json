@@ -1,0 +1,637 @@
+{
+  "candidate_commit": "ea3aefb0bea6c30acd49d42a6ff72523162df0bc",
+  "row_count": 47,
+  "accepted_rows": 45,
+  "condition_clarifications": 2,
+  "scope": "Source fidelity of two limited drafts, not country completion or accountant attestation",
+  "rows": [
+    {
+      "id": "F01",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 1; OHADA members list",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        8
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Member list contains Niger; original article 1 applies by registered seat and preserves noncontrary national law. No tax residence rule inferred."
+    },
+    {
+      "id": "F02",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 309",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        76
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 309 expressly permits one natural/legal person or several, with contribution-limited liability."
+    },
+    {
+      "id": "F03",
+      "guide": "ne-company-formation",
+      "act_article": "Décret 2017-284 art. 1, replacing Décret 2014-503 art. 5",
+      "url": "https://faolex.fao.org/docs/pdf/Ner169345.pdf",
+      "physical_pages": [
+        2
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Entire 2017 decree visually read on gazette printed 265. It replaces article 5, assigning both total capital and nominal share value to statutes; the older leaflet cannot reinstate the superseded floor."
+    },
+    {
+      "id": "F04",
+      "guide": "ne-company-formation",
+      "act_article": "Décret 2014-503 arts. 2–3",
+      "url": "https://cciniger.org/download/decret-2014503-capital-social-sarl/",
+      "physical_pages": [
+        2
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "All three national decree scans inspected. Articles 2–3 permit private/notarised statutes, abolish mandatory notarial minute deposit for private statutes and require sufficient originals and same form for amendments."
+    },
+    {
+      "id": "F05",
+      "guide": "ne-company-formation",
+      "act_article": "Décret 2014-503 art. 4; AUSCGIE 13",
+      "url": "https://cciniger.org/download/decret-2014503-capital-social-sarl/",
+      "physical_pages": [
+        2
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "National article 4 visually checked against full mandatory list; OHADA article 13 continues on page 12. Summary includes the substantive categories without turning the list into a universal filing template."
+    },
+    {
+      "id": "F06",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 311-1",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        77
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 311-1 fully read: full subscription, all kind paid, half cash at subscription, remaining cash within two years of RCCM under statutes."
+    },
+    {
+      "id": "F07",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 312",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        77
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 312 threshold is strict greater-than, individual OR aggregate, CFA 5 million. Special advantages always require review. Appointment unanimity/court alternative is supported; statutory contribution auditor remains a regulated role."
+    },
+    {
+      "id": "F08",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 312",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        77
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 312 report, valuation method/reasons, nominal coverage, unquantifiable advantages and five-year joint third-party value guarantee all read. Guarantee is initial/increase value, not maintaining value."
+    },
+    {
+      "id": "F09",
+      "guide": "ne-company-formation",
+      "act_article": "Décret 2014-503 art. 6",
+      "url": "https://cciniger.org/download/decret-2014503-capital-social-sarl/",
+      "physical_pages": [
+        3
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "National article 6 original scan confirms immediate company account/notary deposit, receipt presentation to notary or registry, and statute mention."
+    },
+    {
+      "id": "F10",
+      "guide": "ne-company-formation",
+      "act_article": "Décret 2014-503 art. 7",
+      "url": "https://cciniger.org/download/decret-2014503-capital-social-sarl/",
+      "physical_pages": [
+        3
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "National article 7 original scan confirms conditional notarial DNSV and subscriber identities/bank domiciliation/payments for founder or notary declaration."
+    },
+    {
+      "id": "F11",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 314",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        78
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 314 full text read: funds unavailable until RCCM, managers access thereafter; six months runs from first deposit; withdrawal requires court authorisation."
+    },
+    {
+      "id": "F12",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 315",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        78
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 315 participation by all associates personally or specially empowered agent and nullity consequence verified."
+    },
+    {
+      "id": "F13",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 385",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        95
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original OHADA page 95 visually inspected: the single-shareholder SA sentence is present despite omission from cached OCR."
+    },
+    {
+      "id": "F14",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 387 and 823–824",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        95,
+        194
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 387 and 824 distinguish ordinary CFA 10 million and listed/public placement CFA 100 million. Nominal amount is set by statutes and whole-number expressed."
+    },
+    {
+      "id": "F15",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 388–389",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        95,
+        96
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 388–389 and original pages 95–96 visually checked: capital fully subscribed before statute signature, quarter cash at subscription, balance within three years after RCCM."
+    },
+    {
+      "id": "F16",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 389",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        96
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original page 96 confirms nominative unpaid cash shares, no capital increase except kind, no bonds while capital unpaid, and no industry-contribution SA shares."
+    },
+    {
+      "id": "F17",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 390–392",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        96
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 390–392 read with visual page 96: dated signed subscription bulletin, two originals, mandatory company/share/subscriber/depositary/notary fields and copy receipt."
+    },
+    {
+      "id": "F18",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 393",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        97
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 393 confirms eight days from funds receipt, approved credit/microfinance or notary, seat-state special company account and subscriber/payment list."
+    },
+    {
+      "id": "F19",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 394–396",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        97
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 394–396 read: notary reconciles bulletins and deposit evidence, certificate annexed when applicable, statutes signed by all or specially empowered agent after deposit certificate."
+    },
+    {
+      "id": "F20",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 853-1, 853-4–5",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        207,
+        208
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 853-1/4/5 read on pages 207–208: one/more associates, liability limited to contributions, statutory governance flexibility, capital and nominal set by statutes, public offering prohibited."
+    },
+    {
+      "id": "F21",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 853-3, 853-7–8",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        208,
+        209
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 853-3 expressly excludes 387 first paragraph and other specified SA articles; 853-7/8 provide statutory governance and president representation. No wholesale SA import asserted."
+    },
+    {
+      "id": "F22",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 14–25",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        12,
+        13
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 14–25 read: registered name uniqueness, external-document identification, lawful object, regulated-activity rules and precise seat beyond a postbox."
+    },
+    {
+      "id": "F23",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 97–101",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        28,
+        29
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 97–101 read: participation exception, RCCM legal personality, constitution at statute signature/adoption, and nonopposability before registration with third-party reliance."
+    },
+    {
+      "id": "F24",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 106–110",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        29,
+        30
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "clarify_condition",
+      "independent_source_note": "Condition clarification N1: article 107 requires associates to sign BOTH statutes AND annexed commitment statement. Candidate phrase signing the annexed statement does not expressly retain both signatures. Other adoption paths and article 110 liability are supported."
+    },
+    {
+      "id": "F25",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 111–113",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        30
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 111–113 read: mandate must determine commitments and specify terms; registration effects adoption; excess acts need statutory approval excluding interested participants and article 110 consequences."
+    },
+    {
+      "id": "F26",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 73–74",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        19,
+        20
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "clarify_condition",
+      "independent_source_note": "Condition clarification N2: article 73 permits a mandate to one or more of the declaration authors, not an unrestricted outside signatory. Candidate authorised signatory wording should state that restricted pool. Article 74 DNSV exception verified."
+    },
+    {
+      "id": "F27",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 137–140,348",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        36,
+        86
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 137–140 and 348 read: management statements/report, six-month approval, applicable 45-day auditor delivery, SARL judicial extension. Tax return deadlines and current accounting templates are expressly held."
+    },
+    {
+      "id": "F28",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 269",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        65,
+        66
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 269 across pages 65–66 read: deposit within month after approval, same period refusal decision, electronic deposit permitted and judicial injunction after unanswered informal request for 30 days."
+    },
+    {
+      "id": "F29",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 376",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        93
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Article 376 full text read: at least two strict tests (assets 125m, turnover 250m, permanent staff 50); cessation test covers two preceding years before mandate expires; optional/tenth-capital court request preserved."
+    },
+    {
+      "id": "F30",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 116–120",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        31
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 116–120 read in full: branch lacks separate personality, RCCM required; foreign branch two-year contribution duty, ministerial dispensation two years nonrenewable subject special regimes, judicial deregistration/publication."
+    },
+    {
+      "id": "F31",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 120-1–120-5",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        31,
+        32
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 120-1–5 read across pages 31–32: preparatory/auxiliary office without autonomous management/personality, local law and RCCM, 30-day correction on branch conversion and sanctions. No tax PE conclusion asserted."
+    },
+    {
+      "id": "F32",
+      "guide": "ne-company-formation",
+      "act_article": "AUSCGIE 75,78",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        20
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Articles 75/78 read: court regularisation and joint founder/first management liability for resulting harm. No invented numeric fine or current national penalty schedule."
+    },
+    {
+      "id": "F33",
+      "guide": "ne-company-formation",
+      "act_article": "CCIN/Maison formalities leaflet sectionA and notes1–2",
+      "url": "https://cciniger.org/download/formalites-de-creation-dentreprise/",
+      "physical_pages": [
+        1
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Entire one-page CCIN leaflet read: both free nominal wording and contradictory 5,000 floor present. Guide expressly follows actual 2017 amendment and rejects unverified fees, tax regime, foreign exemption and timeline claims."
+    },
+    {
+      "id": "O01",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15;2026-45 arts.9–10",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        10
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Read fiscal slices amend named CGI provisions; guide does not assert complete current consolidation."
+    },
+    {
+      "id": "O02",
+      "guide": "ne-tax-overview",
+      "act_article": "2026-45 art.10,CGI394undecies",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        10
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Signed rectification page 10: buyer bears ordinary tax involving real-regime enterprise, enterprise invoices it, buyer pays. Detailed calculation remains in unchanged accepted owning Guide."
+    },
+    {
+      "id": "O03",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,CGI394terdecies,quinquiesdecies",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        18
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original law page 18: actual payment is event; base excludes VAT. Guide does not infer a standard VAT rate from the source."
+    },
+    {
+      "id": "O04",
+      "guide": "ne-tax-overview",
+      "act_article": "2026-45 art.10,CGI394undecies1–2",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        10
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Signed page 10: supplier-requested cash, payer categories, TTC withholding and supplier non-deduction/non-imputation read. Interaction held rather than ordinary computation reused."
+    },
+    {
+      "id": "O05",
+      "guide": "ne-tax-overview",
+      "act_article": "2026-45 arts.9,25/signature",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        9,
+        10,
+        48
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Signed pages 9–10 repeal 394 bis–nonies from signature; page 48 visually confirms 21 August 2026. No current zero-rate or automatic refund claim."
+    },
+    {
+      "id": "O06",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,formerCGI394quinquies,septies–octies",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        16,
+        17
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original pages 16–17: gross before fees; effective deposit/order versus operator validation distinct. Straddling transition remains held."
+    },
+    {
+      "id": "O07",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,CGI394sexiesdecies–noniesdecies",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        18
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original page 18: fifteenth following month and VAT conditions/procedure linkage read. Overview routes to owning Guide without inventing ordinary filing calendar."
+    },
+    {
+      "id": "O08",
+      "guide": "ne-tax-overview",
+      "act_article": "2026-45 art.9,formerCGI394nonies",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        10
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Signed page 10 reproduces repealed former declaration/regulatory text. Historical filing/refund procedure not invented."
+    },
+    {
+      "id": "O09",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,CGI394septiesdecies/former394nonies",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        17,
+        18
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original pages 17–18 distinguish former TDTA/TAF sanctions link from cash/VAT sanctions link; no numeric sanctions guessed."
+    },
+    {
+      "id": "O10",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,formerCGI394bis–ter",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        16
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original page 16 lists approved channels and operations in Niger. No worldwide income/treaty proposition inferred."
+    },
+    {
+      "id": "O11",
+      "guide": "ne-tax-overview",
+      "act_article": "2026-45 arts.9–10",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "physical_pages": [
+        9,
+        10
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Signed rectification uses separate articles 9 and 10 for repeal and cash amendment. Guide correctly does not treat one as cancellation of the other."
+    },
+    {
+      "id": "O12",
+      "guide": "ne-tax-overview",
+      "act_article": "AUSCGIE1,116–120",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "physical_pages": [
+        8,
+        31
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "OHADA articles 1 and 116–120 read; corporate branch classification cannot establish missing tax PE/residence law. Held research properly distinguished."
+    },
+    {
+      "id": "O13",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 art.15,CGI394duodecies",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        17
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Original article 394 duodecies page 17 expressly uses francs CFA; guide makes no exchange-rate or monetary-union claim."
+    },
+    {
+      "id": "O14",
+      "guide": "ne-tax-overview",
+      "act_article": "2025-44 CGI394sexiesdecies;2026-45 arts.9–10",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "physical_pages": [
+        18
+      ],
+      "original_language_quote_checked": true,
+      "read_on_checked": "2026-11-01",
+      "verdict": "accepted_in_stated_scope",
+      "independent_source_note": "Both example narratives and two overview blocks independently recomputed below. September is after signed repeal; unresolved supplier-requested settlement is isolated, not assigned zero tax."
+    }
+  ]
+}

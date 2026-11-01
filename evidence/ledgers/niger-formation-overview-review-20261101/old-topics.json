@@ -1,0 +1,283 @@
+{
+  "total": 25,
+  "formation": 13,
+  "overview": 12,
+  "complete_original_pre_cta_units": true,
+  "rows": [
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:01",
+      "old_text": "# Niger Company Formation & Entity Choice",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Who this applies to",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:02",
+      "old_text": "## Entity types and incorporation",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Who this applies to",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:03",
+      "old_text": "Company law in Niger follows the OHADA Uniform Act on Commercial Companies. Incorporation is centralised through the one-stop shop (Maison de l'Entreprise / Guichet Unique). The figures below are an unverified draft and must be confirmed by a licensed Niger advisor.",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Who this applies to; Deadlines and filing and Sources hold current guichet centralisation/procedure",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:04",
+      "old_text": "- **Common entity — limited liability company (SARL)** — Société à Responsabilité Limitée — most common form for SMEs  _(OHADA Uniform Act on Commercial Companies (AUSCGIE))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Rates, bands and thresholds: SARL row; Sources holds relative SME popularity/suitability",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:05",
+      "old_text": "- **Entity — public limited company (SA)** — Société Anonyme — for larger businesses; can be single-shareholder (SAU)  _(OHADA Uniform Act on Commercial Companies (AUSCGIE))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Rates, bands and thresholds: SA row; Sources holds larger-business suitability",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:06",
+      "old_text": "- **Entity — simplified joint-stock company (SAS)** — Société par Actions Simplifiée — flexible governance form available under OHADA  _(OHADA Uniform Act on Commercial Companies (AUSCGIE))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Rates, bands and thresholds: SAS row",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:07",
+      "old_text": "- **SARL minimum share capital** — No mandatory statutory minimum since OHADA reform; commonly set at FCFA 100,000 (capital freely fixed in the statutes) XOF ((approx — confirm))  _(OHADA Uniform Act on Commercial Companies (AUSCGIE))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Rates, bands and thresholds: Niger SARL capital; Sources conflict/currentness hold; Sources holds old commonly chosen capital practice",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:08",
+      "old_text": "- **SA minimum share capital** — FCFA 10,000,000 (FCFA 100,000,000 if making a public offering) XOF  _(OHADA Uniform Act on Commercial Companies (AUSCGIE))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Rates, bands and thresholds: ordinary/public offering SA rows",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:09",
+      "old_text": "- **Registration body** — Registre du Commerce et du Crédit Mobilier (RCCM) via the Maison de l'Entreprise (one-stop shop)  _(OHADA Uniform Act / Maison de l'Entreprise du Niger)_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "The base: registration stage; Deadlines and filing guichet hold",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:10",
+      "old_text": "- **Core incorporation steps** — Reserve name, draft and notarise statutes, deposit capital, register at RCCM, obtain tax ID (NIF), register with CNSS — combined at the one-stop shop ((approx — confirm))  _([Maison de l'Entreprise du Niger / OHADA](https://niger.eregulations.org/))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "The base steps 1–6 and Deadlines and filing; NIF/CNSS/current workflow held in Sources",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:11",
+      "old_text": "- **Typical incorporation timeline** — Around 3 working days for basic registration via the one-stop shop ((approx — confirm))  _(Maison de l'Entreprise du Niger)_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Sources: current three-day timeline held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:12",
+      "old_text": "- **Tax identification** — Numéro d'Identification Fiscale (NIF) issued by the DGI at incorporation  _(Direction Générale des Impôts (Niger))_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Sources: current NIF sequence held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-company-formation",
+      "id": "ne-company-formation:13",
+      "old_text": "- **Core annual compliance** — Annual financial statements (SYSCOHADA), corporate tax return, ITS/CNSS payroll declarations, monthly TVA returns, business licence (patente) ((approx — confirm))  _(Code Général des Impôts (Niger) / OHADA / SYSCOHADA)_",
+      "old_blob": "3310b4d6f4fcc3392c27b853c1a309b3198e90d1",
+      "destination": "Deadlines and filing corporate statements; Sources tax/CNSS/TVA/patente/current accounting procedure held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:01",
+      "old_text": "# Niger Tax Overview",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Who this applies to",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:02",
+      "old_text": "## Niger tax system at a glance",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Who this applies to",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:03",
+      "old_text": "Niger is a West African UEMOA/OHADA member state. Its tax system is declarative and administered by the Direction Générale des Impôts (DGI) under the Code Général des Impôts (CGI). The figures below are an unverified draft for tax year 2025 and must be confirmed by a licensed Niger accountant.",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Who this applies to; Sources membership/currency/context holdings",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:04",
+      "old_text": "- **Tax year** — Calendar year, 1 January to 31 December  _([Code Général des Impôts (Niger)](https://www.impots.gouv.ne/media/telech/LIVRE%201%20ET%202%20ENTIER%20CGI%202025.pdf))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Sources: calendar tax year held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:05",
+      "old_text": "- **Currency** — West African CFA franc (XOF / FCFA) (BCEAO / UEMOA monetary union)",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "The base: actual source francs CFA; Sources conversion/monetary union proposition held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:06",
+      "old_text": "- **Tax authority** — Direction Générale des Impôts (DGI)  _([Direction Générale des Impôts (Niger)](https://www.impots.gouv.ne/))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Who this applies to, Sources: current administration/procedure to obtain; no unread homepage adoption",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:07",
+      "old_text": "- **Residence / taxation basis** — Residents taxed on Niger-source and, in principle, worldwide income; non-residents taxed on Niger-source income. Residence is based on habitual abode in Niger. ((approx — confirm))  _(Code Général des Impôts (Niger))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Sources: residence/worldwide/source basis held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:08",
+      "old_text": "- **Top personal income tax (ITS) rate** — 35 percent  _([Code Général des Impôts (Niger) — Impôt sur les Traitements et Salaires (ITS)](https://www.impots.gouv.ne/media/telech/Bar%C3%A8me_ITS.pdf))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Sources: top ITS rate held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:09",
+      "old_text": "- **Standard corporate income tax rate** — 30 percent  _([Code Général des Impôts (Niger) — Impôt sur les Bénéfices](https://www.impots.gouv.ne/media/telech/LIVRE%201%20ET%202%20ENTIER%20CGI%202025.pdf))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Sources: current corporate rate held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:10",
+      "old_text": "- **Does VAT exist** — Yes — TVA (value-added tax) standard rate 19% percent  _([Code Général des Impôts (Niger) — Taxe sur la Valeur Ajoutée (TVA)](https://www.pwc.co.za/en/publications/vat-in-africa/niger-overview.html))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Sources: TVA rate/exemptions held; secondary PwC reference rejected",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:11",
+      "old_text": "- **Annual income/profit return deadline** — Generally 31 March of the year following the tax year ((approx — confirm))  _(Code Général des Impôts (Niger))_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Deadlines and filing; Sources annual deadline held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "id": "ne-tax-overview:12",
+      "old_text": "- **Legal/commercial framework** — OHADA Uniform Acts apply (company law, accounting via SYSCOHADA)  _(OHADA Uniform Acts / SYSCOHADA)_",
+      "old_blob": "71cb5b8cd4230c940dfec402f39e41a34c2236db",
+      "destination": "Cross-border points, formation link; Sources current accounting details held",
+      "disposition": "Reverified corporate scope or explicit named source hold; original assertion is not silently lost.",
+      "old_unit_exact": true,
+      "destination_manually_read": true,
+      "verdict": "Accounted for by actual Guide section or named explicit source hold; no unsupported old assertion silently carried as verified law."
+    }
+  ]
+}
