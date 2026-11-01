@@ -1,6 +1,6 @@
 ---
 jurisdiction: BF
-version: 0.4
+version: 0.5
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -24,7 +24,7 @@ partial:
 
 # Burkina Faso tax pack
 
-**Partial follow-on draft, 1 November 2026.** The corporate, business-income and payroll rewrites retain their accepted independent source corrections. VAT and CNSS now have additional 2026 workpaper drafts, four executable cases and source ledgers, with separate independent source corrections closed. Three legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
+**Partial follow-on draft, 1 November 2026.** The corporate, business-income and payroll rewrites retain their accepted independent source corrections. VAT and CNSS now have additional 2026 workpaper drafts, four executable cases and source ledgers, with separate independent source corrections closed. The remaining formation, overview and optimisation Guides now have 2026 preparation drafts; their separate independent review is pending. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -36,7 +36,7 @@ partial:
 | TP | [Transfer pricing](bf-transfer-pricing.md) | 2026 draft: controlled pricing, distinct declaration/documentation size tests, July 2026 documentation contents, audit request and fines |
 | XB | [Non-resident services withholding](bf-nonresident-services-withholding.md) | 2026 draft: payer/service scope, base, general and road-freight rates, declaration fields, remittance and default branches |
 
-The unchanged [overview](bf-tax-overview.md), [formation](bf-company-formation.md) and [optimisation](bf-tax-optimization.md) remain legacy 2025 content, not current country advice. The new [VAT/social predecessor destinations](../../evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md) map all 102 original entries of those two Guides against frozen commit `f7076093d670d841cdcc4140743541ffa6d72c7b`. The [follow-on old-topic destinations](../../evidence/burkina-faso-remaining-20261101/old-topic-destinations.md) map all eight original legacy Guides against immutable main commit `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`, including every rewritten opening topic, bullet and table row. Retention does not validate an old figure.
+The [overview](bf-tax-overview.md) now routes all seven figure homes, [formation](bf-company-formation.md) covers selected OHADA and tax-registration preparation, and [lawful comparisons](bf-tax-optimization.md) covers conditional regime/CGA decisions. Their [writer checkpoint](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-record.md) contains 50 rule/routing records, 74 immutable predecessor entries and six recomputing cases. These three rewrites are pending independent source review. National SARL exceptions, current registration workflow, fees/timing and wider incentives remain explicit holds. The new [VAT/social predecessor destinations](../../evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md) map all 102 original entries of those two Guides against frozen commit `f7076093d670d841cdcc4140743541ffa6d72c7b`. The [follow-on old-topic destinations](../../evidence/burkina-faso-remaining-20261101/old-topic-destinations.md) map all eight original legacy Guides against immutable main commit `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`, including every rewritten opening topic, bullet and table row. Retention does not validate an old figure.
 
 ## Evidence and limits
 
@@ -55,3 +55,5 @@ The [initial independent review](../../evidence/ledgers/burkina-faso-review-2026
 The three additional rewrites now have a separate [independent review and correction closure](../../evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md); the earlier two-Guide acceptance remains unchanged. All130article/rule rows,348old-topic identities and six independent computations were checked. Three finding groups closed: higher ordinary-fine branches, capital-company remuneration scope and the missing IRCM scope restored as an explicit hold. The coverage gaps above remain open and all seven domains remain partial. This is the reviewed partial drafting checkpoint for this follow-on batch. It authorises no issue closure, merge, professional attestation or country-completion claim.
 
 The [independent closure receipt](../../evidence/ledgers/burkina-faso-vat-social-review-20261101/closure.md) checks all 89 records, 102 predecessor entries and four computations. Five findings are closed against exact repaired hashes. This accepts conditional source fidelity only; all stated law, timing, AMU and filing holds remain.
+
+The final three legacy-job rewrites have no review acceptance yet. Their [source identities](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/source-identities.json), [old-topic destinations](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) and [preservation receipt](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/preservation.json) are additive. Earlier accepted review evidence remains unchanged. Ten drafted Guides do not establish comprehensive coverage; all seven domains remain partial.

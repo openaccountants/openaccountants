@@ -1,0 +1,508 @@
+{
+  "bf-company-formation": [
+    {
+      "id": "F1",
+      "section": "Who this applies to",
+      "rule": "Commercial companies with a seat in an OHADA member state are governed by the Act and non-conflicting national rules. A sole trader is not a company incorporated under this Act.",
+      "act_article": "AUSCGIE 2014 arts. 1, 3–6",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "demeurent soumis aux lois non contraires",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F2",
+      "section": "The base",
+      "rule": "SARL owners have liability limited to contributions; one natural or legal person or several can form it. Do not turn the liability description into a personal-guarantee opinion.",
+      "act_article": "AUSCGIE 2014 art. 309",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "des parts sociales",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F3",
+      "section": "Rates, bands and thresholds",
+      "rule": "SARL art. 311 states a default XOF 1,000,000 minimum, expressly subject to contrary national rules, and XOF 5,000 minimum nominal parts. The Burkina national exception has not been read: neither figure is cleared as the current Burkina minimum.",
+      "act_article": "AUSCGIE 2014 art. 311",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "Sauf dispositions nationales contraires",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F4",
+      "section": "Rates, bands and thresholds",
+      "rule": "SARL shares must be fully subscribed; in-kind shares fully paid. Cash shares are at least half paid at subscription; balance within two years after RCCM registration under the articles. This does not settle the national capital-minimum hold.",
+      "act_article": "AUSCGIE 2014 art. 311-1",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "de la moitie au moins de leur valeur nominale",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F5",
+      "section": "The base",
+      "rule": "SARL articles describe and value every in-kind contribution and special advantage. An individual or aggregate in-kind value strictly over XOF 5,000,000 triggers a contribution auditor; special advantages require audit independently. Associates retain five-year third-party valuation liability where no auditor is used or a different value is adopted.",
+      "act_article": "AUSCGIE 2014 art. 312",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "est superieure a cinq millions (5.000.000)",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F6",
+      "section": "Deadlines and filing",
+      "rule": "SARL paid funds are deposited immediately in an account of the company in formation at a bank, authorised credit/microfinance institution, or with a notary; payment and deposit are recorded in the articles.",
+      "act_article": "AUSCGIE 2014 art. 313",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "font l'objet d'un depot immediat",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F7",
+      "section": "The base",
+      "rule": "SA shareholders are liable to the extent of contributions; an SA can have a single shareholder.",
+      "act_article": "AUSCGIE 2014 art. 385",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "les actionnaires ne sont responsables des dettes",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F8",
+      "section": "Rates, bands and thresholds",
+      "rule": "Ordinary SA minimum capital is XOF 10,000,000. Share nominal value is fixed freely in the articles as a whole number; the SARL XOF 5,000 nominal rule is not the SA rule. Special public-offer/sector branches are not cleared here.",
+      "act_article": "AUSCGIE 2014 art. 387",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "dix millions (10.000.000) de francs",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F9",
+      "section": "Rates, bands and thresholds",
+      "rule": "SA capital is fully subscribed before signature. Cash shares are at least one-quarter paid at subscription; the rest within three years of RCCM registration. Unpaid cash shares remain nominative. Until capital is fully paid, no capital increase except in-kind and no bond issue. SA shares cannot represent industry contributions.",
+      "act_article": "AUSCGIE 2014 arts. 388–389",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "Les actions ne peuvent representer des apports en industrie",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F10",
+      "section": "The base",
+      "rule": "SAS can have one or several associates with limited liability. Articles organise governance subject to mandatory law; a sole member uses SASU. Capital and nominal share value are fixed in the articles. SAS cannot make a public offering; SA minimum capital is excluded by art. 853-3.",
+      "act_article": "AUSCGIE 2014 arts. 853-1–853-5",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "Le montant du capital social ainsi que celui du nominal des actions est fixe par les statuts",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F11",
+      "section": "Deadlines and filing",
+      "rule": "Prepare articles naming form, name, object, seat, duration, contributors and valuations, capital/securities, special advantages, result/reserve allocations and governance. Articles follow the art. 10 authenticity rule subject to national exceptions; national execution formalities are not confirmed.",
+      "act_article": "AUSCGIE 2014 arts. 10–13",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "Les statuts mentionnent",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F12",
+      "section": "The base",
+      "rule": "A regulated activity needs its own authorisation. The seat needs a precise physical/geographical address, not only a PO box.",
+      "act_article": "AUSCGIE 2014 arts. 21, 23–25",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "ne peut pas etre constitue uniquement par une domiciliation a une boite postale",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F13",
+      "section": "Deadlines and filing",
+      "rule": "Except a participation company, register in the RCCM; legal personality starts at registration unless the Act provides otherwise. Signing articles is not proof registration occurred.",
+      "act_article": "AUSCGIE 2014 arts. 97–98",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "a compter de son immatriculation",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F14",
+      "section": "Deadlines and filing",
+      "rule": "In SA, SAS and where applicable SARL, send annual statements and management report to the auditor at least 45 days before the ordinary meeting; annual approval meeting must occur within six months after close. This is not the tax-return deadline.",
+      "act_article": "AUSCGIE 2014 arts. 137–140",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "dans les six (6) mois de la cloture",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F15",
+      "section": "Rates, bands and thresholds",
+      "rule": "SARL statutory-audit trigger is two of three strict excesses: balance sheet XOF 125m, annual turnover XOF 250m, permanent staff 50. Exit requires failure to meet two conditions for both periods preceding mandate expiry. Otherwise appointment is optional, with judicial request open to owners of at least one-tenth of capital.",
+      "act_article": "AUSCGIE 2014 art. 376",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "quote": "deux des conditions suivantes",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected company-law provisions; physical PDF pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208; SA pages 95–96 also visually inspected"
+    },
+    {
+      "id": "F16",
+      "section": "Deadlines and filing",
+      "rule": "A person/company subject to profits tax makes a declaration of existence within 30 days of starting operations or opening an establishment; current application form and CEFORE integration are not verified.",
+      "act_article": "CGI 2026 art. 557(1)",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "trente (30) jours du commencement",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "F17",
+      "section": "Deadlines and filing",
+      "rule": "Within the art. 96-1 scope, legal persons, taxable or not, identify beneficial owners and maintain an updated register at the Burkina seat/establishment, showing identity, nature/mode/extent of control and entry/exit dates; make it available to the administration.",
+      "act_article": "CGI 2026 arts. 96-1–96-2",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "tenir un registre à cet effet",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "F18",
+      "section": "Deadlines and filing",
+      "rule": "Beneficial-owner tax declarations accompany existence declaration for art. 557 persons; other covered entities file within the month following constitution. Update annually with result/income return, or constitution anniversary for other entities, and within 15 days after actual/constructive knowledge of a change. This does not prove a CEFORE registration checkbox.",
+      "act_article": "CGI 2026 art. 561-4",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "dans les quinze (15) jours",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "F19",
+      "section": "Deadlines and filing",
+      "rule": "Company accounts ordinarily close on 31 December. New companies created by 30 June close that year; later ones may close at the next 31 December. Cessation/disposal and the actual first period require separate treatment.",
+      "act_article": "CGI 2026 art. 49",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "créées au plus tard le 30 juin",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "F20",
+      "section": "The base",
+      "rule": "Newly created companies are exempt from MFP for their first operating period and from IS advances for the first period/first IS period; neither rule exempts actual profit from ordinary IS. Use the corporate Guide for figures and annual filing.",
+      "act_article": "CGI 2026 arts. 90–91",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "dispensées du versement",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "F21",
+      "section": "The base",
+      "rule": "Businesses operated in Burkina keep accounts there, in French and according to applicable OHADA accounting law; sector-specific frameworks remain separate. Route periodic tax/social jobs to the seven named Guides.",
+      "act_article": "CGI 2026 arts. 554–556",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "être tenue en français",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    }
+  ],
+  "bf-tax-overview": [
+    {
+      "id": "V1",
+      "section": "Who this applies to",
+      "rule": "Use the 2026 DGI CGI for the selected ordinary-law jobs; the Guide is an intake and routing workpaper, not a territorial-residence ruling for every taxpayer. The old blanket source-only individual-residence statement is not adopted.",
+      "act_article": "CGI 2026 title/arts. 1, 42, 46, 105",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Code général des impôts 2026",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V2",
+      "section": "The base",
+      "rule": "Separate owner business profit, company profit, remuneration, VAT, social contributions, controlled transactions and foreign-service withholding into seven source homes. Do not repeat a headline rate without the linked Guide’s conditions.",
+      "act_article": "CGI 2026 arts. 1, 28, 42, 105, 210, 225, 296 and table of contents",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Impôt sur les sociétés",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V3",
+      "section": "The base",
+      "rule": "Compute business/company profit from accounts and statutory adjustments, not gross turnover. Turnover still selects regime/minimum tests; customer VAT collected is not an ordinary profit-tax rate.",
+      "act_article": "CGI 2026 arts. 4, 48–53, 527–529",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Le bénéfice net est constitué",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V4",
+      "section": "Deadlines and filing",
+      "rule": "Prepare an obligation calendar by actual taxpayer/job and period. Annual profit declaration, VAT, payroll, social forms and corporate accounts approval are distinct tasks; use their home Guide rather than the old generic monthly or tenth-day claims.",
+      "act_article": "CGI 2026 arts. 95, 116, 230–233, 334, 561-1",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "leurs déclarations fiscales par procédés",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V5",
+      "section": "Deadlines and filing",
+      "rule": "Electronic declarations/payments have statutory effect; DGE/DME taxpayers have mandatory electronic declaration/payment rules. Current authenticated eSINTAX screens, current box IDs and confirmations have not been accessed.",
+      "act_article": "CGI 2026 art. 561-1",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Ces télédéclarations produisent les",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V6",
+      "section": "The base",
+      "rule": "Use separate employer/employee liability columns. IUTS withholding, employer TPA and CNSS are not interchangeable; do not subtract the same deduction twice or call a contribution a tax credit without its source.",
+      "act_article": "CGI 2026 arts. 105, 227, 228–229",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "taxe patronale et d’apprentissage",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V7",
+      "section": "Cross-border points",
+      "rule": "Before cross-border calculations identify service/use/place, payer, recipient establishment, control and any claimed treaty. Non-resident services withholding is a narrow job, not complete treaty/PE/residence/exit coverage.",
+      "act_article": "CGI 2026 arts. 46–47, 65, 210–214, 303–306",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Sous réserve des dispositions",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V8",
+      "section": "Penalties and interest",
+      "rule": "Route a default by the breached obligation and its date. Ordinary profit, VAT and social sanctions have different sources; no all-purpose penalty rate is provided here.",
+      "act_article": "CGI 2026 arts. 754–758, 776–778",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "pénalités",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "V9",
+      "section": "Who this applies to",
+      "rule": "Formation and lawful-choice comparisons are separate companion jobs; use primary-source capital/registration conditions and documented elections, rather than marketing cost/timing or savings claims.",
+      "act_article": "CGI 2026 arts. 530, 535, 557, 561-4",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "déclaration d’existence",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    }
+  ],
+  "bf-tax-optimization": [
+    {
+      "id": "P1",
+      "section": "Who this applies to",
+      "rule": "Use legal form and activity before comparing taxes: high turnover does not itself make a sole trader an IS company. Default IS forms and the signed IBICA election out for specified partnerships/GIE are in the corporate Guide. This workpaper is a conditional comparison, not a guaranteed saving.",
+      "act_article": "CGI 2026 arts. 1, 28, 42–44",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Les sociétés anonymes",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P2",
+      "section": "Rates, bands and thresholds",
+      "rule": "RNI applies from XOF 50m annual turnover excluding tax; start-year threshold is time-apportioned. Moving down requires three consecutive years below the threshold.",
+      "act_article": "CGI 2026 art. 527",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "trois (3) années consécutives",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P3",
+      "section": "Rates, bands and thresholds",
+      "rule": "RSI covers XOF 15m to below 50m annual turnover excluding tax, plus persons excluded from CME who are not RNI. Start-year thresholds are apportioned. Exceeding the threshold invalidates RSI during the year and must be notified within 30 days; downward CME eligibility requires three consecutive years below its limit.",
+      "act_article": "CGI 2026 art. 529",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "dans un délai de trente (30) jours",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P4",
+      "section": "Rates, bands and thresholds",
+      "rule": "CME generally covers independent activities below XOF 15m: natural persons below 5m use forfait; natural persons from 5m to below 15m and legal persons below 15m use declarative CME. CSE taxpayers and liberal professions, regardless of form, are excluded.",
+      "act_article": "CGI 2026 arts. 533–534",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "quelle que soit la forme juridique",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P5",
+      "section": "The base",
+      "rule": "CME replaces IBICA, IS, MFP, TPA and patente for covered professional activities. Other taxes remain under ordinary law; CME is not a universal exemption. Use the business Guide for full tariff zones/classes, ambulant branches and calculations.",
+      "act_article": "CGI 2026 art. 532",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "Pour les autres impôts et taxes, le droit",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P6",
+      "section": "Deadlines and filing",
+      "rule": "CME taxpayers can elect RSI by letter to the tax service before 1 February. Effective 1 January in the election year, irrevocable three years, then withdraw in January. This is not automatic acceptance of every VAT deduction.",
+      "act_article": "CGI 2026 art. 535",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "adressée au service des impôts",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P7",
+      "section": "Deadlines and filing",
+      "rule": "An eligible RSI taxpayer can apply to the DGI for RNI before 1 February. Acceptance is notified within 30 clear days of receipt; silence means acceptance. Must be current on declarations/payments, have normal SYSCOHADA accounts and standardised invoicing, and sign a timely VAT declaration/payment undertaking.",
+      "act_article": "CGI 2026 art. 530(1)–(2)",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "L’absence de réponse dans ce délai vaut acceptation",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P8",
+      "section": "Deadlines and filing",
+      "rule": "RNI option takes effect 1 January of approval year, irrevocable three years; after that taxpayer withdrawal is by January letter. Administration can revoke at any time for art. 561ff non-compliance. Both RNI and RSI require normal SYSCOHADA accounts.",
+      "act_article": "CGI 2026 arts. 528, 530(3)–531",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "L’option peut être dénoncée à",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P9",
+      "section": "The base",
+      "rule": "Ordinary taxable RNI business is within VAT scope, with State/public-body industrial/commercial activity also covered. Special VAT option exists for specified agricultural/forestry/fishing operators regardless of turnover and RNI road transport only for transport. It is irrevocable from the first day of election month. Do not turn the old only-RNI slogan into a prohibition on every special option or import obligation.",
+      "act_article": "CGI 2026 arts. 300–301",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "L’option est irrévocable",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P10",
+      "section": "Rates, bands and thresholds",
+      "rule": "IBICA CGA membership reduces profit tax 30%. Its minimum has a separate 50% membership reduction; apply both to their own amounts and still compare the minimum. New IBICA undertakings have first-operating-period MFP exemption.",
+      "act_article": "CGI 2026 arts. 14, 24–25, 27",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "réduction de 30 % de l’impôt",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P11",
+      "section": "Rates, bands and thresholds",
+      "rule": "RSI businesses have two accounting periods of patente exemption from effective start established by the tax administration. RSI CGA members receive 30% profit-tax, 50% MFP and 20% TPA reductions under art. 196; do not extend its profit-tax reduction to all RNI companies.",
+      "act_article": "CGI 2026 art. 196",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "à compter de la date de démarrage",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P12",
+      "section": "Rates, bands and thresholds",
+      "rule": "CME members of approved CGAs receive a 25% contribution reduction, not the IBICA 30% profit-tax reduction.",
+      "act_article": "CGI 2026 art. 197",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "réduction de 25 %",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P13",
+      "section": "Rates, bands and thresholds",
+      "rule": "CGA employers have a 20% TPA base abatement; TPA is 3% of the applicable base. This is an employer tax, not an employee IUTS reduction. Do not stack the same 20% relief twice by treating art. 196 and art. 228 as two discounts.",
+      "act_article": "CGI 2026 arts. 228–229",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "abattement de 20 %",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P14",
+      "section": "Rates, bands and thresholds",
+      "rule": "Company CGA membership separately halves MFP under art. 89; newly created companies have first-operating-period MFP exemption under art. 90. These do not create a general holiday from ordinary profit IS.",
+      "act_article": "CGI 2026 arts. 89–90",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "exonérées du minimum forfaitaire",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P15",
+      "section": "The base",
+      "rule": "Deductible expenses belong to the period, serve direct business interest/normal management, are real and sufficiently documented and booked as expenses, reduce net assets and generate non-exempt income. The specific arts. 54–84 conditions apply as well. A payment or invoice alone does not prove deductibility.",
+      "act_article": "CGI 2026 art. 53",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "des conditions spécifiques de déductibilité",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P16",
+      "section": "The base",
+      "rule": "Employee remuneration needs actual work. For managing associates of capital companies or their spouses, excessive or fictitious remuneration makes the whole payment a deemed distribution. No artificial salary deduction is offered here.",
+      "act_article": "CGI 2026 arts. 54, 56",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "l’ensemble des rétributions",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P17",
+      "section": "The base",
+      "rule": "For IBICA mixed private/business costs, allocate the actual business portion; only where precise allocation cannot be established does art. 11 retain two-thirds. Do not make the fallback an elective higher deduction when actual allocation is known.",
+      "act_article": "CGI 2026 art. 11",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "À défaut de pouvoir déterminer précisément",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P18",
+      "section": "Penalties and interest",
+      "rule": "Comparison is not a filing extension or sanction waiver. Each routed Guide retains the relevant late filing/payment rules; no generic penalty amount is offered here and no assumed aggregation of different penalties is allowed.",
+      "act_article": "CGI 2026 arts. 754–758, 776–778",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "déclaration",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P19",
+      "section": "Cross-border points",
+      "rule": "A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper.",
+      "act_article": "CGI 2026 arts. 65, 98-1–98-2, 210–214",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "entreprises",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    },
+    {
+      "id": "P20",
+      "section": "The base",
+      "rule": "The company comparison uses 27.5% IS on profit rounded down to XOF 1,000 and MFP at 0.5% of turnover rounded down to XOF 100,000, with RSI floor XOF 300,000. It assumes no exclusive-activity exception, first-period exemption or other credits. The larger ordinary tax/minimum controls before valid credits; full RNI and special branches remain in the corporate Guide.",
+      "act_article": "CGI 2026 arts. 87–89",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "quote": "trois cent mille (300 000) francs",
+      "read_date": "2026-11-01",
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+    }
+  ]
+}

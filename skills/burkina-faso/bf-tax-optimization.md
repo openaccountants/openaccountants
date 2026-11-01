@@ -1,81 +1,135 @@
 ---
 name: bf-tax-optimization
-description: AI-drafted from official sources (DGI Burkina Faso CGI — régimes d'imposition, CGA reductions, MFP exemption). Pending accountant verification. LEGAL optimization only. Confirm thresholds and reductions against the current consolidated CGI.
+description: >
+  Burkina Faso lawful tax comparison workpaper for 2026, covering turnover regime classification, documented CME to RSI and RSI to RNI elections, approved management centre relief, minimum tax comparisons and ordinary deduction evidence. Use it for questions about whether a tax reduction actually changes the amount payable, what conditions attach to an option, and why employer TPA relief is applied only once. It reads the official 2026 CGI and routes full business, company, VAT and payroll calculations to their existing Guides. It supplies two recomputing comparisons, not promised savings. Investment approvals, mining incentives, treaty relief, current portal boxes and accountant sign-off remain unresolved.
 jurisdiction: BF
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 1.1
 ---
 
-# Burkina Faso Tax Optimization
+# Burkina Faso lawful tax comparisons v1.1
 
-## Burkina Faso Tax Optimization Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> AI-drafted from official sources (DGI Burkina Faso CGI — régimes d'imposition, CGA reductions, MFP exemption). Pending accountant verification. LEGAL optimization only. Confirm thresholds and reductions against the current consolidated CGI.
+## Who this applies to
 
-## Section 1 -- Quick reference
+Use only after collecting the legal form, activity, taxpayer regime, actual turnover and start date. Compare compliant alternatives on the same facts and period. No artificial turnover splitting, under-declaration or evasion is an option.
 
-**Quick reference table**  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
+Use legal form and activity before comparing taxes: high turnover does not itself make a sole trader an IS company. Default IS forms and the signed IBICA election out for specified partnerships/GIE are in the corporate Guide. This workpaper is a conditional comparison, not a guaranteed saving. [CGI 2026 arts. 1, 28, 42–44](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-| Field | Value |
-| --- | --- |
-| Country | Burkina Faso |
-| Currency | FCFA (XOF) |
-| Regime CME | Turnover < 15,000,000 FCFA — flat lump sum, no TVA, simplest |
-| Regime RSI | 15,000,000 to < 50,000,000 FCFA — simplified accounting, cannot invoice TVA |
-| Regime RNI | >= 50,000,000 FCFA — full accounting, must/may invoice TVA |
-| CGA reduction — IBICA/IBNC | 30% reduction of the impôt sur les bénéfices |
-| CGA reduction — MFP | 50% reduction of the minimum tax |
-| CGA reduction — CME | 25% reduction of the contribution |
-| CGA reduction — TPA base | 20% abatement |
-| New-business MFP exemption | Exempt from MFP for the first financial year (CGI Art. 27) |
-| Regime-option deadline | Before 1 February; irrevocable for 3 years |
-| TVA invoicing | Only RNI may charge/recover TVA |
-| Authority | Direction Générale des Impôts (DGI) |
-| Primary legislation | CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538 |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | June 2026 |
 
-## Section 2 -- Regime choice by turnover
+## Rates, bands and thresholds
 
-**Regime choice by turnover**  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
+| Item and conditions | Source |
+|---|---|
+| RNI applies from XOF 50m annual turnover excluding tax; start-year threshold is time-apportioned. Moving down requires three consecutive years below the threshold. | [CGI 2026 art. 527](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| RSI covers XOF 15m to below 50m annual turnover excluding tax, plus persons excluded from CME who are not RNI. Start-year thresholds are apportioned. Exceeding the threshold invalidates RSI during the year and must be notified within 30 days; downward CME eligibility requires three consecutive years below its limit. | [CGI 2026 art. 529](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| CME generally covers independent activities below XOF 15m: natural persons below 5m use forfait; natural persons from 5m to below 15m and legal persons below 15m use declarative CME. CSE taxpayers and liberal professions, regardless of form, are excluded. | [CGI 2026 arts. 533–534](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| IBICA CGA membership reduces profit tax 30%. Its minimum has a separate 50% membership reduction; apply both to their own amounts and still compare the minimum. New IBICA undertakings have first-operating-period MFP exemption. | [CGI 2026 arts. 14, 24–25, 27](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| RSI businesses have two accounting periods of patente exemption from effective start established by the tax administration. RSI CGA members receive 30% profit-tax, 50% MFP and 20% TPA reductions under art. 196; do not extend its profit-tax reduction to all RNI companies. | [CGI 2026 art. 196](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| CME members of approved CGAs receive a 25% contribution reduction, not the IBICA 30% profit-tax reduction. | [CGI 2026 art. 197](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| CGA employers have a 20% TPA base abatement; TPA is 3% of the applicable base. This is an employer tax, not an employee IUTS reduction. Do not stack the same 20% relief twice by treating art. 196 and art. 228 as two discounts. | [CGI 2026 arts. 228–229](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| Company CGA membership separately halves MFP under art. 89; newly created companies have first-operating-period MFP exemption under art. 90. These do not create a general holiday from ordinary profit IS. | [CGI 2026 arts. 89–90](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 
-| Turnover HT | Regime | Tax basis | TVA |
-| --- | --- | --- | --- |
-| < 15,000,000 FCFA | CME | Flat lump sum (class × zone) | No |
-| 15,000,000 to < 50,000,000 | RSI | Net profit, brackets 10/20/27.5%; MFP floor 300,000 | No |
-| >= 50,000,000 | RNI | Net profit, brackets 10/20/27.5%; MFP floor 1,000,000 | Yes |
+## The base
 
-- **CME for smallest businesses** — CME for the smallest businesses is usually the lowest-admin, lowest-cost option below 15M FCFA — but it cannot recover input TVA or invoice TVA (a disadvantage when selling to TVA-registered customers who want recoverable input).  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
-- **Crossing 50M FCFA threshold** — Crossing 50M FCFA brings TVA obligations — model the cash-flow and pricing impact before growing past the threshold.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
-- **Regime change timing** — A taxpayer only drops to a lower regime after staying below the threshold for 3 consecutive years; opting up is by election before 1 February, irrevocable 3 years.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
+CME replaces IBICA, IS, MFP, TPA and patente for covered professional activities. Other taxes remain under ordinary law; CME is not a universal exemption. Use the business Guide for full tariff zones/classes, ambulant branches and calculations. [CGI 2026 art. 532](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-## Section 3 -- Centre de Gestion Agréé (CGA)
+Ordinary taxable RNI business is within VAT scope, with State/public-body industrial/commercial activity also covered. Special VAT option exists for specified agricultural/forestry/fishing operators regardless of turnover and RNI road transport only for transport. It is irrevocable from the first day of election month. Do not turn the old only-RNI slogan into a prohibition on every special option or import obligation. [CGI 2026 arts. 300–301](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-- **CGA reductions** — Joining an approved management centre yields statutory reductions: 30% off IBICA/IBNC, 50% off the MFP, 25% off the CME, and a 20% abatement on the TPA base. For profitable RNI/RSI businesses the 30% bénéfices reduction is typically the single largest legal lever.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
+Deductible expenses belong to the period, serve direct business interest/normal management, are real and sufficiently documented and booked as expenses, reduce net assets and generate non-exempt income. The specific arts. 54–84 conditions apply as well. A payment or invoice alone does not prove deductibility. [CGI 2026 art. 53](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-## Section 4 -- New-business and other levers
+Employee remuneration needs actual work. For managing associates of capital companies or their spouses, excessive or fictitious remuneration makes the whole payment a deemed distribution. No artificial salary deduction is offered here. [CGI 2026 arts. 54, 56](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-- **New-business MFP exemption** — New-business MFP exemption for the first financial year (CGI Art. 27) — time start-up investment accordingly.  _(CGI Art. 27)_
-- **TVA-registration management** — TVA-registration management: only RNI invoices TVA; staying RSI/CME avoids TVA admin but blocks input recovery — choose based on customer mix (B2B TVA-registered vs B2C).  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
-- **Profession libérale regime** — Profession libérale → IBNC under RSI/RNI (excluded from CME).  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
+For IBICA mixed private/business costs, allocate the actual business portion; only where precise allocation cannot be established does art. 11 retain two-thirds. Do not make the fallback an elective higher deduction when actual allocation is known. [CGI 2026 art. 11](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-## Section 5 -- Prohibitions
+The company comparison uses 27.5% IS on profit rounded down to XOF 1,000 and MFP at 0.5% of turnover rounded down to XOF 100,000, with RSI floor XOF 300,000. It assumes no exclusive-activity exception, first-period exemption or other credits. The larger ordinary tax/minimum controls before valid credits; full RNI and special branches remain in the corporate Guide. [CGI 2026 arts. 87–89](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-- **No evasion advice** — NEVER advise evasion, under-declaration, or artificial turnover-splitting to stay under a threshold.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
-- **No blind CME assumption** — NEVER assume CME is best without checking input-TVA recovery and customer mix.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
-- **Prohibition: engine computing numbers** — NEVER compute numbers — the engine handles arithmetic.
-- **Confirm current sources** — Confirm thresholds, reductions and option deadlines against current DGI sources.  _(CGI (Loi 058-2017/AN) Art. 13–27, 197, 527–538)_
 
-## Disclaimer
+## Deadlines and filing
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+CME taxpayers can elect RSI by letter to the tax service before 1 February. Effective 1 January in the election year, irrevocable three years, then withdraw in January. This is not automatic acceptance of every VAT deduction. [CGI 2026 art. 535](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+An eligible RSI taxpayer can apply to the DGI for RNI before 1 February. Acceptance is notified within 30 clear days of receipt; silence means acceptance. Must be current on declarations/payments, have normal SYSCOHADA accounts and standardised invoicing, and sign a timely VAT declaration/payment undertaking. [CGI 2026 art. 530(1)–(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+
+RNI option takes effect 1 January of approval year, irrevocable three years; after that taxpayer withdrawal is by January letter. Administration can revoke at any time for art. 561ff non-compliance. Both RNI and RSI require normal SYSCOHADA accounts. [CGI 2026 arts. 528, 530(3)–531](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+
+
+## Penalties and interest
+
+Comparison is not a filing extension or sanction waiver. Each routed Guide retains the relevant late filing/payment rules; no generic penalty amount is offered here and no assumed aggregation of different penalties is allowed. [CGI 2026 arts. 754–758, 776–778](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+
+
+## Cross-border points
+
+No investment code approval, mining relief, duty holiday, treaty entitlement, foreign residence outcome or permanent-establishment attribution is established here. Route related-party and foreign-service transactions before accepting any expense or cash-flow projection.
+
+A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper. [CGI 2026 arts. 65, 98-1–98-2, 210–214](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+
+
+## Two worked examples that recompute
+
+**RSI CGA relief does not erase the minimum.** Assume an established RSI company, effective CGA membership, adjusted profit XOF 400,000 and annual turnover XOF 20,000,000, with no other credits or exclusions. Ordinary IS is XOF 110,000; art. 196 reduces it to XOF 77,000. The XOF 300,000 RSI floor, halved for CGA, is XOF 150,000 and controls. The comparison company without membership owes XOF 300,000. This is statutory tax difference only: membership fees and other costs are not supplied or assumed. Rates and minimum conditions are owned by [corporate tax](bf-corporate-tax.md), CGI arts. 87–89 and 196.
+
+```oa-check
+name: RSI CGA profit relief and controlling minimum
+inputs:
+  profit: 400000
+  turnover: 20000000
+steps:
+  ordinary_profit_tax: profit * 0.275
+  member_profit_tax: ordinary_profit_tax * 0.70
+  ordinary_minimum: max(floor(turnover / 100000) * 100000 * 0.005, 300000)
+  member_minimum: ordinary_minimum * 0.50
+  member_tax: max(member_profit_tax, member_minimum)
+  nonmember_tax: max(ordinary_profit_tax, ordinary_minimum)
+  tax_difference: nonmember_tax - member_tax
+expected:
+  member_profit_tax: 77000
+  member_tax: 150000
+  nonmember_tax: 300000
+  tax_difference: 150000
+```
+
+**TPA base abatement once.** Assume a liable CGA employer with XOF 1,000,000 remuneration/benefits in the art. 228 base and no separate exemption. The 20% base abatement gives XOF 800,000 and 3% TPA is XOF 24,000. Applying a second supposed 20% tax reduction would incorrectly give XOF 19,200. Employee IUTS and CNSS are separate and not computed here.
+
+```oa-check
+name: TPA CGA base relief without double count
+inputs:
+  gross_base: 1000000
+steps:
+  relieved_base: gross_base * 0.80
+  correct_tpa: relieved_base * 0.03
+  wrong_double_relief: correct_tpa * 0.80
+  understatement: correct_tpa - wrong_double_relief
+expected:
+  relieved_base: 800000
+  correct_tpa: 24000
+  wrong_double_relief: 19200
+  understatement: 4800
+```
+
+## Ask the client first
+
+Obtain legal form and activity, start date and time-apportioned turnover, current and prior three years’ turnover/regime, election letters and dates, filing/payment compliance, accounting/invoicing systems, effective CGA membership evidence, profit reconciliation, VAT input eligibility and customer contracts, and actual membership/adviser costs. A tax reduction is not net savings until those costs are known.
+
+
+## Sources
+
+| Official source | Read on | What was actually read |
+|---|---|---|
+| [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 11, 14, 24–27, 53–56, 65, 87–90, 98-1–98-2, 196–197, 210–214, 228–229, 300–301, 527–540 and neighbouring conditions; actual 2026 text, including 2025 amendment annotations. Not the whole volume. |
+
+The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
+
+Not yet confirmed: CGA admission procedure, effective eligibility evidence, fees and service costs; filing/withdrawal form box IDs, authenticated eSINTAX workflows and proof of option receipt; interpretation of the duplicated TPA relief cross-references beyond applying a single 20% base abatement; special VAT options/import and exemption interactions beyond the linked Guide; IBNC reduction/exemption branches not explicitly computed here; net commercial savings, investment/mining/sector approvals, reorganisation and treaty relief; any automatic best-regime claim; accountant attestation.
+
+Written by OpenAccountants from the cited sources. Independent source review: pending for this rewrite. Accountant attestation: none.
 
 <!-- openaccountants-cta-block -->
 

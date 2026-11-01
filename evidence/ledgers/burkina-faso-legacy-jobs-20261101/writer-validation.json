@@ -1,0 +1,26 @@
+{
+  "state": "writer checks only, independent review pending",
+  "baseline": "60bba17a2c729f4369b7b7abf5488591b712aa99",
+  "main_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_checks": 45,
+  "guide_checks_failed": 0,
+  "oa_checks": 6,
+  "oa_failures": 0,
+  "worktree_strict_audit": {
+    "guides": 8,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "quote_locations": {
+    "records": 50,
+    "matched_layout_or_raw_readers": 50,
+    "caveat": "Literal matching is not independent law verification."
+  },
+  "prior_country_files_bound": 73,
+  "prior_guides_unchanged": 7,
+  "prior_existing_evidence_changed": 0,
+  "full_cta_and_platform_fields": "exact for all three rewrites",
+  "whitespace": "pass; committed whole-base check still to run",
+  "committed_changed_validator": "pending content freeze"
+}
