@@ -44,7 +44,7 @@ Tax is on income from a source within or deemed within Eswatini. Non-residents u
 
 ## Deadlines and filing
 
-Self-assessment applies to all taxpayers; pay on or before the return due date. For the year ended 30 June 2025 the notice set 31 October 2025 for presumptive taxpayers and 30 November 2025 for individuals with employment income above E3 million, with employment and other income, and high net worth individuals. A single-employer employee taxed on the Final Deduction System with gross employment income under E3 million does not file. Directors, clergy, partners, professionals, and people with several employers or with bank interest or dividends do file.
+Self-assessment applies to all taxpayers; pay on or before the return due date. For the year ended 30 June 2025 the notice set 31 October 2025 for presumptive taxpayers and 30 November 2025 for individuals with employment income above E3 million, with employment and other income, and high net worth individuals. A single-employer employee taxed on the Final Deduction System with gross employment income under E3 million does not file. Directors, clergy, partners, professionals, and people with several employers or with bank interest do file. A dividend already taxed by final withholding does not by itself require a return (notice para 2(d)), though para 1.1(l) lists interest or dividends from funds invested with banks, building societies and investment houses.
 
 ### How to file
 1. Register for a TIN using the ERS form at a Service Centre; registration takes 4 working days.
@@ -56,7 +56,7 @@ Provisional tax, for persons with non-remuneration income above E1,000: first pa
 
 ## Penalties and interest
 
-Late return: 20% of tax payable, or E20 a day on a loss. Late payment: 18% a year. Late provisional payment or an estimate under 90% of actual income: 20%. Keep records 5 years, in English or siSwati.
+Late return: 20% of tax payable (ERS). The daily penalty for default is E25 under s 40(8) as replaced in 2023; the ERS page still shows E20 a day on a loss, and the Act wins. Late payment: 18% a year. Late provisional payment or an estimate under 90% of actual income: 20%. Keep records 5 years, in English or siSwati.
 
 ## Cross-border points
 

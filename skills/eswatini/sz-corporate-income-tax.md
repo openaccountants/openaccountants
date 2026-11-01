@@ -28,6 +28,7 @@ Companies with income from a source within or deemed within Eswatini, branches o
 | Company rate | 25%. The ERS rates page still says 27.5%; the Third Schedule and the 2025 ERS notice say 25% | 2026 | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf |
 | Presumptive tax, company turnover to E50,000 | 0%. Excludes professionals and investment income | 2026 | https://www.ers.org.sz/IncomeTax/PresumptiveTax |
 | Presumptive tax, turnover above E50,000 and below E500,000 | 1.75% of total turnover | 2026 | https://www.ers.org.sz/IncomeTax/PresumptiveTax |
+| Development enterprise, new business in a qualifying project | 10% company rate for 10 years, not renewable, by agreement with the Minister and Cabinet approval. Sectors: manufacturing of an industrial, scientific or educational nature, mining or beneficiation, energy and power generation, assembly or agro-industry, tourism (s 69(2), Seventh Schedule) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Interest deduction cap | Net interest above 30% of tax EBITDA denied, for group companies other than banks and insurers. Carry forward 3 years (s 65sep) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Non-resident shareholders tax | 15%; 12.5% for a company registered in Botswana, Lesotho, Namibia or South Africa that is not a subsidiary or branch of a company from elsewhere (s 21) | 2026 | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf |
 | South Africa treaty dividends | 10% for a company holding at least 25%; otherwise 15% (art. 10) | 2026 | https://www.ers.org.sz/documents/SouthAfrica.pdf |
@@ -59,7 +60,7 @@ Provisional tax: first payment within 6 months of the start of the year, second 
 
 ## Penalties and interest
 
-Late return: 20% of tax payable, or E20 a day on a loss. Late payment: 18% a year. Failure to withhold: payer is liable plus 20%. Withheld but not remitted: 10% under 30 days late, 15% from 30 days, 20% from 90 days, 25% from 180 days. Under-estimating provisional tax below 90% of actual: 20% of the shortfall as defined. Records: 5 years.
+Late return: 20% of tax payable (ERS). The daily penalty for default is E25 under s 40(8) as replaced in 2023; the ERS page still shows E20 a day on a loss, and the Act wins. Late payment: 18% a year. Failure to withhold: payer is liable plus 20%. Withheld but not remitted: 10% under 30 days late, 15% from 30 days, 20% from 90 days, 25% from 180 days. Under-estimating provisional tax below 90% of actual: 20% of the shortfall as defined. Records: 5 years.
 
 ## Cross-border points
 
@@ -119,7 +120,7 @@ expected:
 | ERS, Step-by-Step Guide for New Businesses; whole page read | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-01 |
 | ERS, Income Tax Returns; whole page read | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-01 |
 
-Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. Development Approval Order rate of 10% from the old pack: not found in an official source. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 notice gives 4 months and 31 October. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.
+Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 notice gives 4 months and 31 October. The old pack's routine 60-day filing extension: no official source found. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.
 
 <!-- openaccountants-cta-block -->
 

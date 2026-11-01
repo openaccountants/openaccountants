@@ -28,7 +28,7 @@ Employers in Eswatini and their employees. PAYE runs on the year 1 July to 30 Ju
 | ENPF wage level 2026 | E4,300 a month, from 1 January 2026, Legal Notice 5 of 2025 | 2026 | https://enpf.co.sz/ |
 | ENPF maximum 2026 | E430 a month: E215 employee, E215 employer | 2026 | https://enpf.co.sz/ |
 | ENPF rate | 5% each, derived from E215 on E4,300. The rate wording itself was not seen | 2026 | https://enpf.co.sz/ |
-| ENPF later steps | E4,600 in 2027, E4,900 in 2028, then E5,200 | 2026 | https://enpf.co.sz/ |
+| ENPF other years | E4,000 in 2025 (maximum E400 a month), E4,600 in 2027, E4,900 in 2028, E5,200 in 2029 | 2026 | https://enpf.co.sz/ |
 | ENPF payment | Within 21 days after the end of the month (s 14(3)) | 2026 | http://enpf.co.sz/wp-content/uploads/2021/03/The-SNPF-Order-of-1974-1.pdf |
 | PAYE bands | Annual table in [Income tax](sz-income-tax.md); rebate E683.33 a month | 2026 | https://www.ers.org.sz/IncomeTax/Paye |
 | PAYE return and payment | Within 7 days after month-end (Fourth Schedule para 14(2) as amended). The ERS guide says the 14th; the Act wins | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |

@@ -50,7 +50,7 @@ Non-resident withholding is mostly 15%, interest 10%. See [Corporate income tax]
 
 ## Two worked examples that recompute
 
-Dividend of E100,000 to a qualifying South African company without treaty: 12.5%.
+Dividend of E100,000 to a qualifying South African company holding under 25%: 12.5% under s 21, below the 15% treaty cap. At 25% or more the treaty gives 10%.
 
 ```oa-check
 name: Dividend withholding
