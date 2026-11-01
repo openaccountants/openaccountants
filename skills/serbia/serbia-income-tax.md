@@ -1,10 +1,10 @@
 ---
 name: serbia-income-tax
 description: "Serbian personal income tax for individuals, tax year 2026. Covers the 10% salary tax and the 2026 non-taxable salary amount of RSD 34,221 a month; entrepreneurs taxed on actual profit at 10% and flat-rate (paušal) entrepreneurs, with who may use the flat-rate regime and the nine-criteria independence test; capital income at 15%; capital gains at 15% with the ten-year, family and housing exemptions; rent at 20% after 25% standard costs; other income; and the annual personal income tax with its threshold of three average annual salaries, personal deductions and 10% and 15% rates, filed on PP GPDG by 15 May 2027. Trigger on: porez na dohodak građana, porez na zarade, paušalac, test samostalnosti, PP GPDG, godišnji porez, kapitalni dobitak, porez na zakup. Out of scope: residence and non-residents (rs-cross-border), payroll (serbia-payroll), contributions (serbia-social-contributions), companies (rs-corporate-tax), VAT (serbia-vat)."
-version: 0.1
+version: 0.2
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -265,8 +265,6 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 75, 177, 178, 180, 182a, 182b) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
 Not yet confirmed: the 2026 average annual salary, and so the 2026 annual tax threshold, deductions and band edge (published in early 2027); the Art. 12b quarterly standard costs that applied in January 2026, before the 1 February 2026 adjustment, and how they apply to the first quarter of 2026; the Government decree that sets the flat-rate base (the skill reads the amount from the client's decision instead); the current NBS reference rate for late payment interest; the form codes of the entrepreneur's tax return and of the capital gains return.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

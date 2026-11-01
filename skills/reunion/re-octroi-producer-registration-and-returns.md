@@ -2,13 +2,13 @@
 name: re-octroi-producer-registration-and-returns
 description: >
   Réunion octroi de mer reference for local producers, covering the production-turnover test, partial-year threshold, following-year liability, customs identification, quarterly nil returns, invoice details and accounting separation. Distinguishes the producer threshold from import taxation and total business turnover. Uses the July 2025 customs circular and its statutory annexes, with a separately retrieved 2026 amendment to the production definition. Includes threshold examples and records the outstanding current-law and regional-tariff checks. This source-cited draft is not accountant-attested, is not a complete Réunion tax pack and does not establish current product rates or exemption eligibility.
-version: 0.1
+version: 0.2
 jurisdiction: RE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -51,8 +51,6 @@ Invoices to another taxable producer must show product nomenclature and the amou
 Obtain the production start date, preceding-year production ledger, other-department establishment details, product classification, import records and the applicable regional decisions. Confirm the current consolidated law and filing channel. Regional rates and exemptions need the product code and effective date; no universal octroi rate is supplied here. Article 27 in the circular assigns rate setting to the regional authority, and Finance Law 2026 article 99 amends the communication/effective-date framework. [2026 Finance Law, article 99](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155).
 
 Current product rates, deductions/refunds, suspension, special production cases, penalties and the full amendment chain remain outside this initial Guide. Independent source review and accountant attestation are pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,10 +1,10 @@
 ---
 name: ro-tax-overview
 description: "Use this skill for a first map of the Romanian tax system in tax year 2026: the calendar tax year, ANAF, worldwide taxation of residents, the flat 10% income tax, employee CAS 25% and CASS 10%, employer CAM 2.25%, the 16% profit tax, the 1% micro-enterprise tax and its EUR 100,000 revenue ceiling, 16% dividend tax from 2026, VAT at 21% and 11%, the Declarația unică due 25 May 2027, the D101 profit tax return due 25 June 2027, and the transfer pricing file under ANAF Order 828/2026. Every figure is taken from the Fiscal Code and Fiscal Procedure Code as consolidated by ANAF. Trigger phrases: Romania tax overview, Romanian tax system, tax in Romania 2026, ANAF basics. Out of scope: detail and computations, which are in ro-income-tax, ro-employee-income-tax, ro-cas-cass, ro-payroll-social, ro-corporate-income-tax, ro-transfer-pricing, ro-cross-border and ro-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -54,8 +54,6 @@ This is a short map. Each line points to the skill that holds the detail. The la
 | Legea 141/2025 (Monitorul Oficial nr. 699 of 25 July 2025), ANAF copy: art. II pt. 1, 5 and 42, art. VII | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: nothing beyond the open points listed in each linked skill.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

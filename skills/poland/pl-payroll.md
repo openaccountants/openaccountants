@@ -1,13 +1,13 @@
 ---
 name: pl-payroll
 description: "Polish payroll for employees (umowa o pracę) for tax year 2026: monthly PIT advances under PIT Act art. 31a-32 and 38 (12% and 32% with the PLN 120,000 threshold per payer, standard costs PLN 250 or 300, the PIT-2 reduction of PLN 300 a month), the PLN 85,528 reliefs for under-26s, returners, parents of four and working seniors, employee and employer ZUS contributions (19.52%, 8%, 2.45%, accident 1.67% for small payers, FP and Solidarity Fund 2.45%, FGŚP 0.10%, FEP 1.5%) with the PLN 282,600 annual cap, 9% health contribution, PPK, the PLN 4,806 minimum wage, ZUS DRA and PIT-4R and PIT-11 deadlines, and penalties. Trigger on: wynagrodzenie netto, zaliczka na PIT pracownika, składki ZUS pracodawcy, PIT-11, PIT-4R, koszt pracodawcy. Out of scope: self-employed ZUS in pl-zus-contributions; annual return and business income in pl-income-tax; company tax in pl-cit-corporate-tax."
-version: 0.1
+version: 0.2
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -241,8 +241,6 @@ The advances are only prepayments. If the employee has other income or reliefs (
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
 Not yet confirmed: whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

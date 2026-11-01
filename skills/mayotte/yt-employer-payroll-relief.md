@@ -2,13 +2,13 @@
 name: yt-employer-payroll-relief
 description: >
   Mayotte employer payroll relief reference for 2026. Distinguishes the January RGDU commencement from the July LODEOM commencement, the local minimum-wage reference and the prohibition on combining the two reliefs. Explains the Mayotte coefficient parameters, local contribution limits and period changes without substituting mainland figures. Includes an algebraic illustration with explicit assumptions and an evidence checklist. Complete contribution bases, sector-specific LODEOM eligibility, DSN coding, emergency measures and independent accountant verification remain outside this initial source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: YT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -47,8 +47,6 @@ At `R = 1.6 × S`, the expression is zero. At `R = S`, it is 0.24. The assumed 0
 Before claiming relief, record the employment period, establishment, employee eligibility, working time, remuneration, applicable local minimum wage, eligible contribution total and chosen relief. For LODEOM, establish the business's sector, workforce and exact schedule rather than selecting the largest endpoint. These are practical controls for the conditions above.
 
 CSSM points employers to the updated Urssaf declaration guide and payroll-software changes. The linked guide did not download successfully in this research, so no DSN code or operational filing instruction is supplied here. The complete LODEOM eligibility law, individual contribution bases, other payroll charges and emergency cyclone measures remain to be researched. Independent source review and accountant attestation are pending. [CSSM](https://www.cssm.fr/actualite/reduction-generale-degressive-unique-rgdu-et-exoneration-lodeom).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,13 +1,13 @@
 ---
 name: fr-corporate-tax
 description: "French corporate income tax (impôt sur les sociétés, IS) for companies resident in France and for foreign companies with an establishment in France, financial years closing in 2026. Covers the 25% standard rate and the 15% SME rate on the first EUR 42,500 (CGI art. 219), the 3.3% social contribution (art. 235 ter ZC), the exceptional contribution on large companies for the first two years closed from 31 December 2025, the taxable base, the parent-subsidiary regime, losses (EUR 1m plus 50% cap, one-year carry-back), tax consolidation at 95%, the interest cap (EUR 3m or 30%), form 2065, the four acomptes and the balance, penalties, and outbound withholding tax. Trigger on: IS France, impôt sur les sociétés, taux réduit PME, 2065, acompte IS, report en arrière, intégration fiscale, régime mère-fille, contribution exceptionnelle grandes entreprises. Out of scope: CFE and CVAE (fr-cfe), VAT (france-vat-return), transfer pricing (france-transfer-pricing), individual income tax (fr-personal-income-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -218,8 +218,6 @@ expected:
 | Selected corporate repair clauses: CGI arts. 1668, 119 ter, 182 B bis/119 quater, 1731, 223 A, 145/216, 187/182 B and 221; F23575 EI option; current 219 and art. 15-II effect clause. Rendered official captures, selected native clauses only; not a full amendment comparison. | Existing official URLs above, with exact quotation/range/hash/read attribution in the corporate ledger | 2026-10-29 |
 
 Not yet confirmed: the conditions of the option for IS under CGI art. 239 (not read today); the interest limitation rules for tax-consolidated groups; and the official 2027 filing calendar for years closed on 31 December 2026 (the dates given above are computed from the statute and the 15-day extension, not taken from a published calendar).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

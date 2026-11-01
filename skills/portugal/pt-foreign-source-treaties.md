@@ -1,10 +1,10 @@
 ---
 name: pt-foreign-source-treaties
 description: "Foreign income of Portuguese tax residents for tax year 2026: how Portugal taxes foreign pensions, salaries, dividends, interest, rent and gains, and how double taxation is relieved. Covers the foreign tax credit of CIRS art. 81 (lower of foreign and Portuguese tax, capped at the treaty rate), the 28% and 35% special rates for foreign capital income, aggregation at the 2026 art. 68 bands, currency conversion (art. 23), treaty exemption with progression, the IFICI exemption of art. 81(4) and why it does not cover pensions, the old NHR 10% pension rate kept only for NHR holders, Sweden (no treaty since 2022), Anexo J and the filing extension of art. 60(3). Trigger on: foreign income Portugal, foreign tax credit Portugal, crédito de imposto art. 81, Anexo J, pensão estrangeira, dividendos estrangeiros, CDT Portugal, IFICI foreign pension. Out of scope: pt-cross-border, pt-nhr-ifici, pt-irs-employees-investment, pt-income-tax, portugal-crypto-tax."
-version: 0.1
+version: 0.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -231,8 +231,6 @@ expected:
 | Aviso 18/2026/2 (IGCP), late payment interest 7.221% from 1 January 2026 | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-23 |
 
 Not yet confirmed: per-country treaty withholding rates (the AT treaty tables were not read; read each treaty); the MLI ratification and entry-into-force dates for Portugal and which treaties it modifies; whether the IFICI exempt income or 20% income changes the rate applied to a foreign pension that is aggregated (art. 81(4) says exempt income counts for the rate on other income, but AT guidance on this case was not read); whether the 25% residential rent rate of art. 72(2) is applied by AT to foreign property; the Anexo J table and code numbers (the 2027 return instructions were not read); the current list of low-tax jurisdictions (Portaria 150/2004 as amended); the late payment interest rate for 2027.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

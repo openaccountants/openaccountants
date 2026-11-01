@@ -1,13 +1,13 @@
 ---
 name: gl-payroll-ama
 description: Prepare Greenland employer registration, monthly withholding and 2026 AMA working papers with separate reporting and payment dates.
-version: 0.1
+version: 0.2
 jurisdiction: GL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -54,8 +54,6 @@ This draft does not calculate employee residence, tax-card allowances, pensions,
 ## Review output
 
 Retain the applicable source version, calculation inputs, reconciliations and unresolved classifications. A qualified local reviewer must check the actual facts and current law before filing or payment. No professional attestation is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,13 +1,13 @@
 ---
 name: pl-cross-border
 description: "Polish cross-border personal income tax (PIT) for tax year 2026. Covers individual residence (centre of vital interests or over 183 days, PIT Act art. 3), non-residents and Polish-source income (art. 3 ust. 2a-2b), the return relief for people moving to Poland (ulga na powrót, art. 21 ust. 1 pkt 152: four years, PLN 85,528 a year), withholding on payments to non-resident individuals (20% on fees, royalties and advisory services, 19% on dividends and interest, art. 29 and 30a), certificates of residence, IFT-1R and PIT-8AR, exemption with progression and credit (art. 27 ust. 8-9a), the abolition relief (art. 27g, PLN 1,360 cap), and individual exit tax (art. 30da-30df: 19% or 3% above PLN 4,000,000, PIT-NZ). Trigger on: moving to Poland, leaving Poland, non-resident, ulga na powrót, ulga abolicyjna, certyfikat rezydencji, IFT-1R, PIT-NZ, exit tax Poland. Out of scope: companies (pl-cit-corporate-tax), transfer pricing (pl-transfer-pricing), sole-trader computation (pl-income-tax), investment income (pl-capital-gains), ZUS (pl-zus-contributions)."
-version: 0.1
+version: 0.2
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -244,8 +244,6 @@ expected:
 The ISAP pages (isap.sejm.gov.pl) serve a browser check to scripted requests, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
 Not yet confirmed: whether, in the year of arrival, a person who passes 183 days is resident for the whole year or only from arrival (the MF explanations give a split-year example only for departure under the centre-of-interests test); how an employer spreads standard costs over months in which all salary is exempt when it computes monthly advances (the annual tax in Example 1 does not depend on it); treaty rates for countries other than Germany.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

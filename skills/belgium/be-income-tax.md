@@ -1,10 +1,10 @@
 ---
 name: be-income-tax
 description: "Belgian personal income tax (personenbelasting / impot des personnes physiques) for self-employed residents: traders and business owners (winst) and liberal professions (baten), for income 2026 (assessment year 2027). Covers the art. 130 scale (25%, 40%, 45%, 50%), the EUR 11,550 tax-free amount, actual costs versus the art. 51 lump sum (30% capped at EUR 6,070 for profits; 28.7% to 3% capped at EUR 5,340 for benefits), deduction of social contributions and VAPZ, restaurant and gift limits, car costs, the municipal surcharge, prepayments (voorafbetalingen) and the 2026 bonification rates, and the end of the prepayment increase for self-employed profits. Trigger on: personenbelasting zelfstandige, IPP indépendant, beroepskosten, forfaitaire beroepskosten, voorafbetalingen, bonificatie, Tax-on-web zelfstandige. Out of scope: be-employee-income-tax (employees and pensioners), be-social-contributions, belgium-payroll, be-corporate-tax, be-capital-gains, be-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -271,8 +271,6 @@ expected:
 | RSVZ, Wijzigingen VAPZ (13 October 2026) | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
 
 Not yet confirmed: whether a royal decree under art. 162 set a different increase rate for assessment year 2027 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the rates above follow the law and the ECB rate); the Tax-on-web opening date and any administrative extension for income 2026; the deductible percentage for zero-emission cars (the art. 66, §1 text on Fisconetplus does not print it); the regional surcharge rates and autonomy factor for income 2026 (the examples assume they offset exactly); the VAPZ maximum in euro for 2026; whether art. 64 still allows declining-balance depreciation for a self-employed person in 2026.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
