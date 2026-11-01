@@ -39,7 +39,7 @@ Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 Janu
 
 ## The base
 
-Five categories are in the DPR table: A employment and pensions, B business and professional, C property, D capital, E gains. Category A is taxed by final progressive withholding unless the person opts to aggregate; on aggregation withholding becomes a payment on account. Withheld tax on account gives a refund if above the tax; art. 53 to 56 deductions do not. Health expenses (with a prescription) and court-ordered maintenance give a 10% deduction. Married couples: each person's withholding is computed separately and added. Pensioners use the same formula.
+Five categories are in the DPR table: A employment and pensions, B business and professional, C property, D capital, E gains. Category A is taxed by final progressive withholding unless the person opts to aggregate; on aggregation withholding becomes a payment on account. Withheld tax on account gives a refund if above the tax; art. 53 to 56 deductions do not. Health expenses (with a prescription) and court-ordered maintenance give a 10% deduction from tax, capped at CVE 25,000 (art. 54). Married couples: each person's withholding is computed separately and added. Pensioners use the same formula.
 
 Resident: more than 183 days, continuous or not, in any 12 months; or a home at 31 December that is the habitual residence; or public duties abroad for Cape Verde; or specified crew.
 
@@ -53,7 +53,7 @@ Filed electronically on the Porton di Nos Ilha portal (the calendar names www.po
 | Category B, C, transparent-company partners, non-residents | Modelo 112 | 31 May |
 | Organised accounts | Modelo 1B | 31 May |
 | Category B, annual accounting return | DAICF | 30 September for category B holders; organised accounts 31 July |
-| Category B instalments | Portal | End March, August, November: 30% of prior-year tax each |
+| Category B instalments | Portal | End March, August, November: the calendar says 30% of prior-year tax each; for organised-accounts Category B, IRPC art. 96(3) says 15% of prior-year taxable profit in 3 equal parts |
 | Payers: withheld tax and DPR | DPR | 15th of next month |
 
 ### How to file Modelo 112
@@ -121,7 +121,7 @@ expected:
 | DNRE, DPR FAQ v6: category table and Category A answers read | https://www.mf.gov.cv/documents/54571/273413/DPR%20%E2%80%93%20Perguntas%20Frequentes_FAQ_Vers%C3%A3o%206.pdf | 2026-11-01 |
 | DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
 
-Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Whether the employee INPS 8.5% is deductible (the old skill said so; also whether the withholding base is before or after it, the FAQ says "valor base de incidencia"); how the CVE 220,000 exemption interacts with the bands once exceeded; whether the 2014 withholding formula is the one in force; the FAQ also mentions CVE 420,000 and 35,000 a month for 2015; documented health, education and housing expenses scope; category E article references after amendment; non-resident rate equal to resident rate in all cases.
+Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Which Category B instalment base applies, calendar or art. 96(3); Whether the employee INPS 8.5% is deductible (the old skill said so; also whether the withholding base is before or after it, the FAQ says "valor base de incidencia"); how the CVE 220,000 exemption interacts with the bands once exceeded; whether the 2014 withholding formula is the one in force; the FAQ also mentions CVE 420,000 and 35,000 a month for 2015; documented health, education and housing expenses scope; category E article references after amendment; non-resident rate equal to resident rate in all cases.
 
 <!-- openaccountants-cta-block -->
 

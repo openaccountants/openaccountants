@@ -61,7 +61,7 @@ The TEU replaces income tax, VAT, fire tax and the employer social contribution.
 
 1. Log in to Porton di Nos Ilha.
 2. Complete Modelo 1B with the DNRE instructions.
-3. Submit by 31 May, working day or not (art. 102).
+3. Submit by 31 May, working day or not (art. 101(1)).
 4. Pay the balance. Then file the DAICF.
 
 ### How to file Modelo 107

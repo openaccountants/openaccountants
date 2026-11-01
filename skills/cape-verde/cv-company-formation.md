@@ -64,7 +64,7 @@ expected:
   due: 15000.00
 ```
 
-Case 2, the choice at formation: sales of CVE 900,000 give 4% = CVE 36,000 on the rate alone, but under CVE 1,000,000 the minimum is the rule that applies: CVE 30,000.
+Case 2, the choice at formation: sales of CVE 900,000 give 4% = CVE 36,000 on the rate alone, but art. 25(2) says a micro company at or under CVE 1,000,000 pays the minimum: CVE 30,000 on that reading.
 
 ```oa-check
 name: Rate or minimum
@@ -99,7 +99,7 @@ expected:
 | INPS, Inscricao: all read | https://inps.cv/inscricao/ | 2026-11-01 |
 | DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
 
-Not yet confirmed: Minimum capital (old skill: CVE 1, CVE 100,000 typical); capital pay-up 50% and 30%; timeline 1 to 2 weeks; notary CVE 5,000 to 15,000; registration CVE 2,500 plus 0.2% stamp duty; chartered accountant requirement; annual financial statement duty. All came from secondary sources and are removed from the body until the Commercial Companies Code is read.
+Not yet confirmed: Whether art. 25(2) is a flat CVE 30,000 up to CVE 1,000,000, or a floor under 4%, which would give CVE 36,000 in case 2. Minimum capital (old skill: CVE 1, CVE 100,000 typical); capital pay-up 50% and 30%; timeline 1 to 2 weeks; notary CVE 5,000 to 15,000; registration CVE 2,500 plus 0.2% stamp duty; chartered accountant requirement; annual financial statement duty. All came from secondary sources and are removed from the body until the Commercial Companies Code is read.
 
 <!-- openaccountants-cta-block -->
 
