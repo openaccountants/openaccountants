@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Czech Republic: transfer pricing (2026) v0.1
+# Czech Republic: transfer pricing (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-Sbírka (the official Collection of Laws), and the guidance and forms from financnisprava.gov.cz, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 

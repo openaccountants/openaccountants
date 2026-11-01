@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.3
+# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not file, pay or take a tax position on it without review by a qualified professional in France.
 
