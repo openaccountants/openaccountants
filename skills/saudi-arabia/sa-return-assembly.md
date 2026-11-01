@@ -134,7 +134,7 @@ The assembly skill does not recompute anything. It expects structured outputs fr
 
 | Upstream skill | Output consumed | Where it lands on the CIT return |
 | --- | --- | --- |
-| `sa-corporate-tax` | CIT computation: accounting profit → taxable income via tax adjustments; CIT at 20% (general rate); 85% rate for upstream oil & gas; 30%-85% rate for natural gas investment field; permanent establishment determination | Form 800: main computation; tax adjustments schedule; depreciation schedule (under SA Income Tax Law Implementing Regulations) |
+| `sa-corporate-tax` | CIT computation: accounting profit → taxable income via tax adjustments; CIT at 20% (general rate); 85% rate for upstream oil & gas; 20% for natural gas investment (Income Tax Law art. 7(b), as amended from 1 January 2018); permanent establishment determination | Form 800: main computation; tax adjustments schedule; depreciation schedule (under SA Income Tax Law Implementing Regulations) |
 | `sa-withholding-tax` | WHT suffered (rare) and WHT agent obligations on payments to non-residents (20% management fees / 15% royalties / 15% other / 5% dividends, rent, loan charges, insurance, technical and consulting services, air tickets and freight, international telecoms; 15% land transport in the Kingdom: ZATCA WHT Guideline) | Tax credits schedule; agent compliance check |
 | `saudi-arabia-vat` | Output and input VAT; VAT return reconciliation | Cross-check vs. revenue |
 | `sa-gosi-saudization` | Employee GOSI, salary expense, Saudization tier compliance | Salary schedule; compliance attestation |
@@ -326,7 +326,7 @@ The bottom line of the return appears in the reviewer brief executive summary.
 
 #### 5.2 CIT return bottom line (foreign-owned)
 
-- **CIT return bottom line formula**: Accounting profit before tax                                 SAR X Plus: Tax adjustments (non-deductible)                       SAR X Less: Tax adjustments (extra-deductible)                     SAR X = Taxable income                                             SAR X Interest deduction limit: 50% of EBITDA: apply if breached  SAR X Loss carry-forward (25% cap per year)                        SAR X = Final taxable income                                       SAR X CIT at 20% (general) / 85% (upstream petroleum) / 30% (natural gas) SAR X = CIT liability                                              SAR X Less: Foreign tax credit (treaty-based)                      SAR X Less: Any WHT credit (rare for resident filer)               SAR X Less: Any advance CIT paid                                   SAR X = Net CIT payable                                            SAR X
+- **CIT return bottom line formula**: Accounting profit before tax                                 SAR X Plus: Tax adjustments (non-deductible)                       SAR X Less: Tax adjustments (extra-deductible)                     SAR X = Taxable income                                             SAR X Interest deduction limit: 50% of EBITDA: apply if breached  SAR X Loss carry-forward (25% cap per year)                        SAR X = Final taxable income                                       SAR X CIT at 20% (general) / 85% (upstream petroleum) / 20% (natural gas) SAR X = CIT liability                                              SAR X Less: Foreign tax credit (treaty-based)                      SAR X Less: Any WHT credit (rare for resident filer)               SAR X Less: Any advance CIT paid                                   SAR X = Net CIT payable                                            SAR X
 
 #### 5.3 Mixed-entity bottom line
 
@@ -570,7 +570,7 @@ expected:
 - **R-SA-ASM-1**: Upstream skill did not run. Name the missing skill. Continue with available data; flag the gap; do not fabricate the missing computation.
 - **R-SA-ASM-2**: Upstream self-check failed. Note the specific check; continue but flag.
 - **R-SA-ASM-3**: Cross-skill reconciliation > SAR 10,000. Raise as "Needs Input"; do not silently round.
-- **R-SA-ASM-4**: Out of scope: upstream petroleum (Aramco-style 85% rate regime), natural gas investment (30%-85% bands), banking under SAMA-regulated specialised regimes, insurance specialised regimes, listed Tadawul-specific reporting requirements beyond the standard ownership split, qualified investment funds (QIFs) under special regimes, Real Estate Investment Traded Funds (REITs) under specialised CMA rules, Special Economic Zones (Riyadh ITSEZ, Jazan, Ras Al-Khair, Cloud Computing Special Economic Zone, Special Integrated Logistics Zone), Regional Headquarters (RHQ) tax incentive regime, and entities in NEOM / Red Sea Global / Qiddiya with specialised arrangements. Flag for human specialist; do not attempt.
+- **R-SA-ASM-4**: Out of scope: upstream petroleum (Aramco-style 85% rate regime), natural gas investment (20% rate, specialist regime), banking under SAMA-regulated specialised regimes, insurance specialised regimes, listed Tadawul-specific reporting requirements beyond the standard ownership split, qualified investment funds (QIFs) under special regimes, Real Estate Investment Traded Funds (REITs) under specialised CMA rules, Special Economic Zones (Riyadh ITSEZ, Jazan, Ras Al-Khair, Cloud Computing Special Economic Zone, Special Integrated Logistics Zone), Regional Headquarters (RHQ) tax incentive regime, and entities in NEOM / Red Sea Global / Qiddiya with specialised arrangements. Flag for human specialist; do not attempt.
 - **R-SA-ASM-5**: Out of scope: PE-only filings for non-resident contractors operating without local CR; pure-play offshore service permanent establishments under treaty-protected positions; transfer pricing assessments for MNEs above CbCR threshold (handled via sa-corporate-tax with specialist support); APA negotiations with ZATCA. Refer to a specialist.
 - **R-SA-ASM-6**: Intake incomplete. Name the missing intake field (CR, TIN, VAT number, ownership split, fiscal year-end, audited FS, GOSI ID, Mudad subscription). Cannot finalise the return until provided.
 - **R-SA-ASM-7**: Asked to submit to ZATCA. This skill produces a working paper. Submission is the taxpayer's (or their authorised representative's) action, after credentialed reviewer sign-off. Decline politely; provide the filing instructions instead.
@@ -607,7 +607,7 @@ All Saudi tax payments flow through the ZATCA portal → SADAD billing mechanism
 
 | Payment | Due date | Filing reference |
 | --- | --- | --- |
-| Annual Zakat / CIT balance | **Within 120 days of FYE** (for 31 Dec FYE → 30 April 2026) | Annual return |
+| Annual Zakat / CIT balance | **Within 120 days of FYE** (for 31 Dec 2026 FYE → 30 April 2027) | Annual return |
 | Monthly VAT (turnover > SAR 40M) | Last day of following month | VAT return |
 | Quarterly VAT (turnover ≤ SAR 40M) | Last day of month after quarter | VAT return |
 | Monthly WHT | 10th of following month | WHT return |
