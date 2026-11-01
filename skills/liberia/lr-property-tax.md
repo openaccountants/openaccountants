@@ -15,7 +15,7 @@ version: 0.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Tax year: 2026 intake. Read on: 2026-11-01. This is a conditional source-cited draft awaiting independent review. Establish the applicable amendment chain, assessment and taxpayer facts before using the computations for payment. The year label is not proof that the 2020 property chapter remains unchanged throughout 2026.
+Tax year: 2026 intake. Read on: 2026-11-01. This is a conditional source-cited draft independently reviewed for source fidelity on 2026-11-01. Establish the applicable amendment chain, assessment and taxpayer facts before using the computations for payment. The year label is not proof that the 2020 property chapter remains unchanged throughout 2026.
 
 ## Who this applies to
 
@@ -138,6 +138,6 @@ expected:
 | Revenue Code as Amended2020: full Chapter20 ss2000–2010, all definitions/exemptions and neighbouring headings, physical/printed240–245 | https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf | 2026-11-01; read in part, specific scope in first column |
 | December2025 amendment, approved24March/printed1April2026: cover, preliminary/provision list, full amended63 and neighbours, final commencement; physical6 visually inspected. No fresh property-rate consolidation is asserted | https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf | 2026-11-01; read in part, specific scope in first column |
 
-The cached 2024 Chapter8/10, VAT1003/1066 and general2024 amendment scopes/commencement clauses were also read to locate overlays. Their identified provisions do not resolve the property-specific defects or prove no other amendments exist. URLs, source hashes and limited read scopes are in the additive property source manifest. Source fidelity and independent review of this new job remain pending; no accountant attestation is claimed.
+The cached 2024 Chapter8/10, VAT1003/1066 and general2024 amendment scopes/commencement clauses were also read to locate overlays. Their identified provisions do not resolve the property-specific defects or prove no other amendments exist. URLs, source hashes and limited read scopes are in the additive property source manifest. Source fidelity for this new job was independently reviewed on 2026-11-01; no accountant attestation is claimed.
 
 Not yet confirmed: Complete operative2026 property/amendment chain; authoritative unimproved-acreage wording/base and current currency/inflation treatment; s2009(a) public-land exemption cross-reference to2001(f) versus2000(c)(6); current valuation/zoning/classification practice and s60 appeal procedure; acquisition/annual forms, boxes, portal/payment references and successful filing; current market interest and application to particular partial payments; transfer/stamp/registration fees, title/foreign-ownership law and special concessions. All seven core country domains remain partial.
