@@ -51,7 +51,7 @@ Businesses registered or liable for VAT in Lebanon under Law 379 of 2001.
 | CRITICAL WARNING | Economic crisis since 2019 -- exchange rates, enforcement, refunds all affected |
 | Contributor | Open Accounting Skills Registry |
 | Validated by | Pending |
-| Last research update | April 2026 |
+| Last research update | 1 November 2026 |
 
 #### 3.1 Lebanese banks (exempt -- exclude)
 

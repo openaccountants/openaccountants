@@ -40,21 +40,21 @@ Corporate tax is assessed on the prior financial year's profits, with filing/pay
 | Sayrafa platform profits above USD 100,000, excluding salary and wage differences | additional exceptional 17% | 2026 | https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf |
 | New enterprise producing new goods: fixed-asset value ceiling | raised to a minimum of LBP 23 billion | 2026 | same |
 | Advance at customs, no income tax or VAT declarations in previous 3 years | 1.5% of import value, credited | 2026 | same |
-| Standard corporate income tax rate | 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Tax on capital gains from disposal of fixed assets | 15% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Tax base / territoriality | Profit is taxable in Lebanon if generated through effort or activity exerted in Lebanon | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Real-profit method | Mandatory for corporations, LLCs, foreign-company branches, and entities with 4+ employees or importing goods | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Deemed-profit method | Applies to insurance, savings institutions, transport companies, oil refineries, and public-works contractors; profit deemed then taxed at 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Withholding tax on dividends | 10% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959 |
-| Withholding tax on bank/treasury interest | 7% (Non-refundable and not carried forward) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959 |
-| Withholding on other movable-capital income | 10% (directors'/shareholders' fees, profit distributions, corporate loan interest) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959 |
+| Standard corporate income tax rate | 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Tax on capital gains from disposal of fixed assets | 15% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Tax base / territoriality | Profit is taxable in Lebanon if generated through effort or activity exerted in Lebanon | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Real-profit method | Mandatory for corporations, LLCs, foreign-company branches, and entities with 4+ employees or importing goods | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Deemed-profit method | Applies to insurance, savings institutions, transport companies, oil refineries, and public-works contractors; profit deemed then taxed at 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Withholding tax on dividends | 10% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
+| Withholding tax on bank/treasury interest | 7% (Non-refundable and not carried forward) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
+| Withholding on other movable-capital income | 10% (directors'/shareholders' fees, profit distributions, corporate loan interest) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
 | Non-resident WHT on services | 8.5% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2022 Budget Law |
 | Non-resident WHT on goods / other | 3.4% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2022 Budget Law |
-| Withholding tax on royalties (non-treaty) | 8.5% (Treaty rates apply where lower; lower non-treaty rate may still be used) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Filing deadline : artificial persons (entities) | 31 March of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Filing deadline : capital companies (SAL/SARL) | 31 May of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Payment deadline | Same as filing deadline (31 March or 31 May) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
-| Assessment basis | Tax in a given year is based on the previous financial year's profits | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
+| Withholding tax on royalties (non-treaty) | 8.5% (Treaty rates apply where lower; lower non-treaty rate may still be used) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Filing deadline : artificial persons (entities) | 31 March of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Filing deadline : capital companies (SAL/SARL) | 31 May of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Payment deadline | Same as filing deadline (31 March or 31 May) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Assessment basis | Tax in a given year is based on the previous financial year's profits | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
 
 ## The base
 
