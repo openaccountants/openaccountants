@@ -1,10 +1,10 @@
 ---
 name: cameroon-income-tax
 description: Use this skill whenever asked about Cameroon personal income tax (IRPP) for salaried or self-employed individuals. Trigger on phrases like "how much income tax do I pay in Cameroon", "IRPP", "impot sur le revenu", "CNPS contributions", "PAYE Cameroon", "IGS", "Impot General Synthetique", "Centre de Gestion Agree", "CGA", "barème IRPP", "Credit Foncier", "FNE", "monthly salary tax Cameroon", "net taxable income", "minimum tax", or any question about filing or computing income tax for a salaried or self-employed client in Cameroon. Also trigger when preparing or reviewing a monthly PAYE return, the annual recapitulative declaration, the DIPE employer summary, computing CNPS social security, or advising on the IGS/actual-earnings turnover regimes. This skill covers the progressive IRPP scale (CAC-inclusive), CNPS branches, Credit Foncier/FNE, council tax and CRTV royalty, the IGS small-business regime, filing deadlines, and penalties. ALWAYS read this skill before touching any Cameroon income tax work.
-version: 0.1
+version: 0.2
 jurisdiction: CM
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,61 +14,216 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Cameroon Income Tax -- IRPP
+# Cameroon income tax (IRPP) v0.2
 
-## Section 1 -- Quick Reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick Reference Table**
+Tax year 2026. Law: Code General des Impots (CGI), Edition 2026, as amended by Law 2025/012 of 17 December 2025 (Finance Law 2026). Companies are in `cameroon-corporate-income-tax`; non-residents in `cameroon-cross-border`.
 
-| Field | Value |
-| --- | --- |
-| Country | Cameroon (Republic of Cameroon) |
-| Tax | Personal Income Tax -- Impot sur le Revenu des Personnes Physiques (IRPP) |
-| Currency | XAF only (Central African CFA franc) |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Code General des Impots (General Tax Code), as amended by the 2025 Finance Law |
-| Surcharge | Additional Council Tax (Centimes Additionnels Communaux / CAC) = 10% on the base income tax (already folded into the headline scale below) |
-| Tax authority | Direction Generale des Impots (DGI), Cameroon -- https://impots.cm |
-| Social security body | Caisse Nationale de Prevoyance Sociale (CNPS) -- https://www.cnps.cm |
-| Filing portal | DGI online declaration platform (impots.cm) |
-| Monthly PAYE deadline | 15th of the month following salary payment [PwC tax administration] |
-| Annual declaration deadline | 31 July / 30 September / 31 October depending on taxpayer class (see 5.10) [PwC] |
-| Validated by | Live status: https://openaccountants.com/skills/cameroon-income-tax |
-| Validation date | Live status: https://openaccountants.com/skills/cameroon-income-tax |
-| Skill version | 0.1 |
+## Who this applies to
 
-### IRPP Rate Brackets (2025) -- CAC-inclusive scale
+Individuals with fiscal domicile in Cameroon pay IRPP on worldwide income (CGI art. 25). Fiscal domicile means a home or main stay in Cameroon, a salaried or other professional activity there unless shown to be accessory, or the centre of economic interests. People domiciled abroad pay on Cameroon-source gains.
 
-**IRPP Rate Brackets (2025)**  _([PwC -- https://taxsummaries.pwc.com/republic-of-cameroon/individual/taxes-on-personal-income])_
+Salaried, passive-income and non-professional taxpayers are covered by art. 93 undecies. Traders and professionals fall under IGS or the real regime (art. 93 quater):
 
-| Net taxable income band (XAF / year) | Rate | Cumulative tax at top of band |
-| --- | --- | --- |
-| 0 -- 2,000,000 | 11% | XAF 220,000 |
-| 2,000,001 -- 3,000,000 | 16.5% | XAF 385,000 |
-| 3,000,001 -- 5,000,000 | 27.5% | XAF 935,000 |
-| Over 5,000,000 | 38.5% | -- |
+- IGS: turnover excluding tax under XAF 50,000,000 (commercial, industrial, craft, agro-pastoral) or under XAF 30,000,000 (liberal professions).
+- Real regime: at or above those limits. Going over a limit moves the taxpayer to the real regime at once; a real-regime taxpayer who falls below stays for two probation years (art. C 39).
 
-- **Progressive scale application basis** — Progressive scale applied to overall annual net taxable income, rounded down to the nearest XAF 1,000. The headline rates already include the 10% CAC surcharge (statutory base scale 10/15/25/35% + 10% CAC = 11/16.5/27.5/38.5%).  _([PwC -- https://taxsummaries.pwc.com/republic-of-cameroon/individual/taxes-on-personal-income])_
-- **Cumulative check** — 2,000,000 x 11% = 220,000; + 1,000,000 x 16.5% = 165,000 -> 385,000; + 2,000,000 x 27.5% = 550,000 -> 935,000. Above 5,000,000, tax = 935,000 + 38.5% of the excess over 5,000,000.  _([PwC])_
+## Rates, bands and thresholds
 
-### Schedular / special rates
+| Item | Rate or amount | Source |
+|---|---|---|
+| Salary scale, up to XAF 2,000,000 | 10% (11% with CAC) | CGI art. 69(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| XAF 2,000,001 to 3,000,000 | 15% (16.5% with CAC) | same |
+| XAF 3,000,001 to 5,000,000 | 25% (27.5% with CAC) | same |
+| Over XAF 5,000,000 | 35% (38.5% with CAC) | same |
+| Communal surcharge (CAC) | 10% of the tax | same |
+| Professional expenses, salary | 30% of gross, capped at XAF 4,800,000 a year | CGI art. 34: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Business, agricultural, property and listed non-commercial income | Art. 17 rate of 30% (33% with CAC) | CGI art. 17, 69(2), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Minimum on those incomes | 2% of turnover, 2.2% with CAC | CGI art. 69(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Listed non-commercial income, art. 56(2) d, e, f, h | Final 10%; art. 56(2) g: 5% | CGI art. 69(3): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Investment income | Final 15% (16.5% with CAC) | CGI art. 70(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Dividends from a company with turnover up to XAF 3 billion | 10% (11% with CAC) | CGI art. 70(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Passive income paid to a tax haven | 30% | CGI art. 70(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Instalment, real regime and IGS | 2% of monthly turnover plus CAC (2.2%) | CGI art. 21, 91; Arrete 00001 of 5 Jan 2026 art. 2: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
+| Withholding, not on active taxpayer file | 10% | same |
+| Liberal professions and public orders under XAF 5,000,000 | 5.5% | Arrete art. 3: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
+| Gain on a building | Final 5%; 10% if paid in cash | CGI art. 90: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| IGS class 1, under XAF 500,000 | XAF 20,000 | CGI art. C 40: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Class 2, to under 1 million | XAF 30,000 | same |
+| Class 3, to under 1.5 million | XAF 40,000 | same |
+| Class 4, to under 2 million | XAF 50,000 | same |
+| Class 5, to under 2.5 million | XAF 60,000 | same |
+| Class 6, to under 5 million | XAF 150,000 | same |
+| Class 7, to under 10 million | XAF 300,000 | same |
+| Class 8, to under 20 million | XAF 500,000 | same |
+| Class 9, to under 30 million | XAF 1,000,000 | same |
+| Class 10, to under 50 million | XAF 2,000,000 | same |
+| IGS reduction for CGA members | 50% | CGI art. C 38(2), C 40(4): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Credit Foncier | Employee 1%; employer 1.5% | CGI annex law art. 6: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| National Employment Fund (FNE) | 1% employer | same |
+| CRTV audiovisual fee, monthly pay over XAF 1,000,000 | XAF 13,000 | CGI annex law art. 3: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| CNPS pension | Unverified: 4.2% employee, 4.2% employer, ceiling XAF 750,000 a month. cnps.cm did not open | n/a |
+| CNPS family and work risk | Unverified: 7% and 1.75% to 5% employer; voluntary 8.4% | n/a |
+| Development tax, top band | Unverified: XAF 2,520 a month over XAF 500,000 (old figure, not read in art. C 86 to C 88) | n/a |
+| Minimum wage | Unverified: XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State | n/a |
 
-**Schedular / special rates**  _([PwC -- taxes-on-personal-income])_
+## The base
 
-| Income type | Overall rate (CAC-inclusive) | Source |
-| --- | --- | --- |
-| Income from stocks/shares (dividends, investment income) | 16.5% (15% + CAC) | [PwC -- taxes-on-personal-income] |
-| Other non-commercial / business / professional net profits (actual-earnings regime) | 33% (30% + CAC) | [PwC -- taxes-on-personal-income] |
-| Minimum tax (turnover-based, non-salaried, regime-dependent) | 2.2% or 5.5% of turnover | [PwC -- taxes-on-personal-income] |
+Net salary = gross pay and benefits, less the capped 30%, less compulsory CNPS retirement contributions (CGI art. 32 to 34). Benefits in kind use the art. 33 scale on taxable gross pay: housing 15%, electricity 4%, water 2%; see art. 33 for other benefits. Tax = scale on net income, plus 10% CAC. Do not add CAC to the CAC-inclusive rates.
 
-- **Minimum tax non-application** — Minimum tax does NOT apply to salaried workers or taxpayers under the IGS/discharge system.  _([PwC])_
+Art. 31 exempts, among others, special allowances for job costs that are used as intended and not excessive, family allowances, and work accident benefits.
 
-### Salary income determination
+Dividends are taxed on the gross amount (art. 44). Salaried taxpayers do not itemise expenses. Rental, business and other categories follow art. 45 to 58. A person transporting passengers through a digital platform is taxed on 20% of the gross per trip (art. 58).
 
-- **Residency scope** — Residents (fiscal domicile in Cameroon) are taxed on worldwide income.  _([PwC -- income-determination])_
-- **Net salary base** — Net salary base = gross salary, less a standard 30% lump-sum deduction for professional expenses, less mandatory social contributions (CNPS employee portion).  _([PwC -- income-determination])_
+## Deadlines and filing
 
-[RESEARCH GAP -- reviewer to confirm] the exact mechanics, ordering, and any cap on the 30% professional-expense deduction against the current General Tax Code; the 30% figure is the standard PwC-reported figure but the statutory wording/cap was not transcribed.
+| Duty | Deadline | Source |
+|---|---|---|
+| Professional annual return | 15 March (art. 74) | CGI |
+| Balance of business IRPP | 15 March (art. 91) | CGI |
+| Annual income statement from payer to recipient | 15 March (art. 74 bis(5)) | CGI |
+| Recap return: senior personalities, public and parapublic staff | 31 July (art. 74 bis) | CGI |
+| Recap return: staff of large, medium and specialised-centre employers | 30 September | CGI |
+| Recap return: other individuals | 31 October | CGI |
+| Monthly instalment | 15th of next month (art. 21) | CGI |
+| IGS return and payment | 15 April, or within 15 days of each quarter end on option (art. C 41) | CGI |
+| Statistical and fiscal return (DSF) for IGS | 15 May | CGI |
+| Credit Foncier and FNE | First 20 days of next month (annex law art. 7) | CGI |
+
+**How to file the annual recap return.** The official flow was not traced page by page, so no portal steps are given. The law says: file with the tax centre of residence or online on the administration's form (art. 74 bis(2)); give income by category, tax already withheld, and the balance; pay any balance with the return by mobile phone, transfer, telepayment or cash at a bank counter (art. 74 bis(3)). An overpayment is refunded or credited on request after validation (art. 74 bis(4)).
+
+## Penalties and interest
+
+| Item | Amount | Source |
+|---|---|---|
+| Late filing or payment of self-assessed tax | 10% a month, capped at 30% of tax | CGI LPF art. L 106 |
+| Late payment interest | 1.5% a month | same |
+| Understatement interest | 1.5% a month, capped at 50% | LPF art. L 95, L 98 |
+| Understatement penalty | 30% good faith, 100% bad faith, 150% fraud | LPF art. L 96 |
+| Spontaneous payment after audit | 15% | LPF art. L 96(2) |
+| No return after formal notice | Assessment plus 100%; 150% on repeat | LPF art. L 97 |
+| Fine, no return after notice | XAF 200,000, 100,000 or 50,000 by tax office | LPF art. L 97(2) |
+| IGS unpaid | Closure of premises plus 50% | CGI art. C 45 |
+
+## Cross-border points
+
+Treaties override art. 25. Non-residents pay on Cameroon-source income; pay for work done in Cameroon is taxable (art. 30). Pensions count as Cameroon income if the payer is established there. See `cameroon-cross-border`.
+
+## Two worked examples that recompute
+
+The CNPS amount is an input; its rate is unverified.
+
+```oa-check
+name: Salary 12,000,000, 30 percent below the cap, 2026
+inputs:
+  gross: 12000000
+  cnps: 378000
+steps:
+  - prof: min(gross * 0.30, 4800000)
+  - net: gross - prof - cnps
+  - base_tax: 850000 + (net - 5000000) * 0.35
+  - total: base_tax * 1.10
+expected:
+  net: 8022000
+  total: 2098470
+```
+
+```oa-check
+name: Salary 20,000,000, 30 percent capped, 2026
+inputs:
+  gross: 20000000
+  cnps: 378000
+steps:
+  - prof: min(gross * 0.30, 4800000)
+  - net: gross - prof - cnps
+  - base_tax: 850000 + (net - 5000000) * 0.35
+  - total: base_tax * 1.10
+expected:
+  prof: 4800000
+  net: 14822000
+  total: 4716470
+```
+
+## Further worked examples
+
+All examples use XAF. Salary IRPP base = gross - 30% professional deduction - CNPS employee 4.2% (capped), then rounded down to nearest XAF 1,000, then the progressive scale in Section 1 (220,000 / 385,000 / 935,000 cumulative checkpoints).
+
+### Example 1 -- Salaried employee, mid-range salary
+
+Input: Resident employee, gross annual salary XAF 6,000,000. No other income.
+
+Reasoning:
+- 30% professional deduction: 6,000,000 x 30% = 1,800,000.
+- CNPS employee pension 4.2%; annual salary 6,000,000 is below the XAF 9,000,000 ceiling, so 4.2% x 6,000,000 = 252,000.
+- Net taxable = 6,000,000 - 1,800,000 - 252,000 = 3,948,000 (already a multiple of 1,000).
+- IRPP: first 2,000,000 -> 220,000; next 1,000,000 -> 165,000 (cumulative 385,000); remaining 948,000 @ 27.5% = 260,700.
+- Total IRPP = 385,000 + 260,700 = 645,700.
+
+Classification: Annual IRPP = XAF 645,700 (before council tax / CRTV / housing-fund withholdings).
+
+### Example 2 -- Salaried employee above the CNPS ceiling
+
+Input: Resident employee, gross annual salary XAF 12,000,000.
+
+Reasoning:
+- 30% professional deduction: 12,000,000 x 30% = 3,600,000.
+- CNPS employee pension is capped at XAF 9,000,000/year base: 4.2% x 9,000,000 = 378,000 (NOT 4.2% x 12,000,000).
+- Net taxable = 12,000,000 - 3,600,000 - 378,000 = 8,022,000.
+- IRPP: cumulative to 5,000,000 = 935,000; excess = 8,022,000 - 5,000,000 = 3,022,000 @ 38.5% = 1,163,470.
+- Total IRPP = 935,000 + 1,163,470 = 2,098,470.
+
+Classification: Annual IRPP = XAF 2,098,470. Council tax band XAF 2,520/mo and CRTV up to XAF 13,000 apply separately.
+
+### Example 3 -- Dividend / investment income (schedular flat rate)
+
+Input line:
+`15/03/2025 ; AFRILAND VIREMENT RECU ; DIVIDENDE SARL XYZ ; +5,000,000 ; XAF`
+
+Reasoning:
+Investment income from shares is taxed at the flat rate of 16.5% (15% + CAC), or 11% if the payer has turnover of XAF 3 billion or less (art. 70(2)), not the progressive salary scale. 5,000,000 x 16.5% = 825,000.
+
+Classification: Investment-income IRPP = XAF 825,000 (flat). Do NOT run through the progressive scale.
+
+### Example 4 -- Self-employed under IGS, CGA member
+
+Input: Self-employed (salon), annual VAT-exclusive turnover XAF 12,000,000. Member of an approved Centre de Gestion Agree (CGA).
+
+Reasoning:
+- Turnover XAF 12,000,000 is below XAF 50,000,000, so the taxpayer falls under the IGS (Impot General Synthetique) synthetic regime, not actual-earnings.
+- CGI art. C 40 class 8 (10 to under 20 million): IGS XAF 500,000; as a CGA member the rate is halved to XAF 250,000.
+- IGS is due in one payment by 15 April, or quarterly under art. C 41 and C 42.
+
+Classification: Annual IGS = XAF 250,000 (CGA-reduced). Minimum tax does not apply under IGS.
+
+### Example 5 -- SaaS subscription (deductible, actual-earnings)
+
+Input line:
+`01/04/2025 ; SGC PRLV ; MICROSOFT 365 ; ABONNEMENT AVRIL ; -15,000 ; XAF`
+
+Reasoning:
+Recurring software subscription, wholly for the business. Deductible operating expense for a self-employed taxpayer under the actual-earnings regime. If VAT-registered, deduct the VAT-exclusive amount (15,000 / 1.1925 = 12,579) and recover the input VAT separately.
+
+Classification: Deductible business expense = XAF 15,000 (or VAT-exclusive XAF 12,579 if registered). Not relevant to IGS or salaried taxpayers.
+
+### Example 6 -- Internal transfer (exclude)
+
+Input line:
+`15/05/2025 ; BICEC VIREMENT ; COMPTE PROPRE EPARGNE ; ; -2,000,000 ; XAF`
+
+Reasoning:
+Transfer between own accounts. Neither income nor expense. Exclude entirely.
+
+Classification: EXCLUDE.
+
+
+## Ask the client first
+
+1. Is fiscal domicile in Cameroon?
+2. Salary, business, or both?
+3. Turnover excluding tax, and is the activity a liberal profession? This decides the XAF 30 or 50 million limit.
+4. Is there a valid CGA certificate?
+5. For dividends, what is the paying company's turnover?
 
 ### Conservative Defaults
 
@@ -84,23 +239,25 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Unknown CGA membership (self-employed) | Assume NOT a CGA member (no IGS halving) |
 | Unknown VAT status | Standard 19.25% VAT-registered |
 
+
 ## Section 2 -- Required Inputs and Refusal Catalogue
 
 ### Required Inputs
 
-- **Minimum viable** — For a salaried client: gross annual (or monthly) salary, residency status, and CNPS contribution records. For a self-employed client: full-year bank statement (CSV, PDF, or pasted text) plus annual VAT-exclusive turnover and chosen tax regime.
-- **Recommended** — Monthly payslips, employer DIPE/recapitulative summary, CNPS statements, prior-year annual declaration, VAT registration evidence, CGA membership certificate (if self-employed).
-- **Ideal** — Complete income and expenditure account, asset register, evidence of council tax / CRTV withholding, Credit Foncier and FNE deduction records, provisional/instalment payment confirmations.
-- **Refusal if minimum is missing** — SOFT WARN. No salary figure or no bank statement at all = hard stop. Bank statement without supporting documents = proceed with reviewer warning: "This computation was produced from a bank statement alone. The reviewer must verify that all figures are supported by valid documentation and that the regime (IGS vs actual-earnings) is correctly determined."
+- **Minimum viable** : For a salaried client: gross annual (or monthly) salary, residency status, and CNPS contribution records. For a self-employed client: full-year bank statement (CSV, PDF, or pasted text) plus annual VAT-exclusive turnover and chosen tax regime.
+- **Recommended** : Monthly payslips, employer DIPE/recapitulative summary, CNPS statements, prior-year annual declaration, VAT registration evidence, CGA membership certificate (if self-employed).
+- **Ideal** : Complete income and expenditure account, asset register, evidence of council tax / CRTV withholding, Credit Foncier and FNE deduction records, provisional/instalment payment confirmations.
+- **Refusal if minimum is missing** : SOFT WARN. No salary figure or no bank statement at all = hard stop. Bank statement without supporting documents = proceed with reviewer warning: "This computation was produced from a bank statement alone. The reviewer must verify that all figures are supported by valid documentation and that the regime (IGS vs actual-earnings) is correctly determined."
 
 ### Refusal Catalogue
 
-- **R-CM-1** — Income type / regime unknown. "Cameroon IRPP applies different scales to salary, investment income, and business profit, and different regimes (IGS vs actual-earnings) to the self-employed. This skill cannot compute tax without knowing the income type and, for the self-employed, the annual turnover. Please confirm before proceeding."  _(R-CM-1)_
-- **R-CM-2** — Companies and partnerships. "This skill covers individuals (salaried and sole-trader/self-employed) only. Companies pay corporate income tax (IS) and file separately. Escalate to a Cameroon-qualified practitioner."  _(R-CM-2)_
-- **R-CM-3** — Non-resident / expatriate withholding. "Non-resident and expatriate taxation (withholding on Cameroon-source income, treaty relief) has different rules and is out of scope. Escalate to a Cameroon-qualified practitioner."  _(R-CM-3)_
-- **R-CM-4** — Capital gains / property disposals. "Capital gains and property-transfer taxation require specialised analysis. Out of scope. Escalate."  _(R-CM-4)_
-- **R-CM-5** — Arrears / enforcement. "Client has outstanding tax arrears or is subject to DGI enforcement. Penalties (10%/month late filing, 1.5%/month interest, and 30%-100%/150% bad-faith assessment uplifts) are severe. Do not advise. Escalate immediately."  _(R-CM-5)_
-- **R-CM-6** — VAT return requested. "This skill covers IRPP only. Cameroon standard VAT is 19.25% (17.5% + 10% CAC) and is computed separately. [PwC overview]"  _(R-CM-6)_
+- **R-CM-1** : Income type / regime unknown. "Cameroon IRPP applies different scales to salary, investment income, and business profit, and different regimes (IGS vs actual-earnings) to the self-employed. This skill cannot compute tax without knowing the income type and, for the self-employed, the annual turnover. Please confirm before proceeding."
+- **R-CM-2** : Companies and partnerships. "This skill covers individuals (salaried and sole-trader/self-employed) only. Companies pay corporate income tax (IS) and file separately. Escalate to a Cameroon-qualified practitioner."
+- **R-CM-3** : Non-resident / expatriate withholding. "Non-resident and expatriate taxation (withholding on Cameroon-source income, treaty relief) has different rules and is out of scope. Escalate to a Cameroon-qualified practitioner."
+- **R-CM-4** : Capital gains / property disposals. "Capital gains and property-transfer taxation require specialised analysis. Out of scope. Escalate."
+- **R-CM-5** : Arrears / enforcement. "Client has outstanding tax arrears or is subject to DGI enforcement. Penalties (10%/month late filing, 1.5%/month interest, and 30%-100%/150% bad-faith assessment uplifts) are severe. Do not advise. Escalate immediately."
+- **R-CM-6** : VAT return requested. "This skill covers IRPP only. Cameroon standard VAT is 19.25% (17.5% + 10% CAC) and is computed separately."
+
 
 ## Section 3 -- Transaction Pattern Library
 
@@ -139,7 +296,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | ELECTRICITE, ENEO, EAU, CAMWATER | Utilities | Deductible (business %) | Apportion if home/mixed use -- default 0% if mixed |
 | ORANGE, MTN, CAMTEL (telecom) | Telecoms | Deductible (business %) | Business portion only |
 
-- **Applicability note** — These deductions apply ONLY to self-employed taxpayers under the actual-earnings (regime du reel) regime. Salaried taxpayers rely on the standard 30% lump-sum professional-expense deduction; IGS taxpayers pay a synthetic tax on turnover and do not itemise.  _([PwC income-determination; openhubdigital 2025 Finance Law])_
+- **Applicability note** : These deductions apply ONLY to self-employed taxpayers under the actual-earnings (regime du reel) regime. Salaried taxpayers rely on the standard 30% lump-sum professional-expense deduction; IGS taxpayers pay a synthetic tax on turnover and do not itemise.
 
 ### 3.3 Expense Patterns (Debits) -- NOT Deductible
 
@@ -187,221 +344,39 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | Ecobank Cameroun | TRANSFER, PAYMENT, CHARGES | PDF/CSV; mixed FR/EN |
 | Orange Money / MTN MoMo | TRANSFERT, PAIEMENT MARCHAND, RETRAIT | Mobile-money statement export; confirm business vs personal |
 
-## Section 4 -- Worked Examples
 
-All examples use XAF. Salary IRPP base = gross - 30% professional deduction - CNPS employee 4.2% (capped), then rounded down to nearest XAF 1,000, then the progressive scale in Section 1 (220,000 / 385,000 / 935,000 cumulative checkpoints).
-
-### Example 1 -- Salaried employee, mid-range salary
-
-Input: Resident employee, gross annual salary XAF 6,000,000. No other income.
-
-Reasoning:
-- 30% professional deduction: 6,000,000 x 30% = 1,800,000.
-- CNPS employee pension 4.2%; annual salary 6,000,000 is below the XAF 9,000,000 ceiling, so 4.2% x 6,000,000 = 252,000.
-- Net taxable = 6,000,000 - 1,800,000 - 252,000 = 3,948,000 (already a multiple of 1,000).
-- IRPP: first 2,000,000 -> 220,000; next 1,000,000 -> 165,000 (cumulative 385,000); remaining 948,000 @ 27.5% = 260,700.
-- Total IRPP = 385,000 + 260,700 = 645,700.
-
-Classification: Annual IRPP = XAF 645,700 (before council tax / CRTV / housing-fund withholdings).
-
-### Example 2 -- Salaried employee above the CNPS ceiling
-
-Input: Resident employee, gross annual salary XAF 12,000,000.
-
-Reasoning:
-- 30% professional deduction: 12,000,000 x 30% = 3,600,000.
-- CNPS employee pension is capped at XAF 9,000,000/year base: 4.2% x 9,000,000 = 378,000 (NOT 4.2% x 12,000,000).
-- Net taxable = 12,000,000 - 3,600,000 - 378,000 = 8,022,000.
-- IRPP: cumulative to 5,000,000 = 935,000; excess = 8,022,000 - 5,000,000 = 3,022,000 @ 38.5% = 1,163,470.
-- Total IRPP = 935,000 + 1,163,470 = 2,098,470.
-
-Classification: Annual IRPP = XAF 2,098,470. Council tax band XAF 2,520/mo and CRTV up to XAF 13,000 apply separately.
-
-### Example 3 -- Dividend / investment income (schedular flat rate)
-
-Input line:
-`15/03/2025 ; AFRILAND VIREMENT RECU ; DIVIDENDE SARL XYZ ; +5,000,000 ; XAF`
-
-Reasoning:
-Investment income from shares is taxed at the flat schedular overall rate of 16.5% (15% + CAC), not the progressive salary scale. 5,000,000 x 16.5% = 825,000.
-
-Classification: Investment-income IRPP = XAF 825,000 (flat). Do NOT run through the progressive scale.
-
-### Example 4 -- Self-employed under IGS, CGA member
-
-Input: Self-employed (salon), annual VAT-exclusive turnover XAF 12,000,000. Member of an approved Centre de Gestion Agree (CGA).
-
-Reasoning:
-- Turnover XAF 12,000,000 is below XAF 50,000,000, so the taxpayer falls under the IGS (Impot General Synthetique) synthetic regime, not actual-earnings. [openhubdigital 2025 Finance Law]
-- Worked figure from the authority example: turnover XAF 12,000,000 -> IGS XAF 500,000; as a CGA member the rate is halved to XAF 250,000. [cga.inov.cm IGS 2025 example]
-- IGS is declared and paid quarterly within 15 days of each quarter-end.
-- [RESEARCH GAP -- reviewer to confirm] the full IGS rate/band table (published only as an image in the secondary source) against the 2025 Code General des Impots (impots.cm/en/node/1212) or the 2025 Finance Law circular.
-
-Classification: Annual IGS = XAF 250,000 (CGA-reduced), paid quarterly. Minimum tax does not apply under IGS.
-
-### Example 5 -- SaaS subscription (deductible, actual-earnings)
-
-Input line:
-`01/04/2025 ; SGC PRLV ; MICROSOFT 365 ; ABONNEMENT AVRIL ; -15,000 ; XAF`
-
-Reasoning:
-Recurring software subscription, wholly for the business. Deductible operating expense for a self-employed taxpayer under the actual-earnings regime. If VAT-registered, deduct the VAT-exclusive amount (15,000 / 1.1925 = 12,579) and recover the input VAT separately.
-
-Classification: Deductible business expense = XAF 15,000 (or VAT-exclusive XAF 12,579 if registered). Not relevant to IGS or salaried taxpayers.
-
-### Example 6 -- Internal transfer (exclude)
-
-Input line:
-`15/05/2025 ; BICEC VIREMENT ; COMPTE PROPRE EPARGNE ; ; -2,000,000 ; XAF`
-
-Reasoning:
-Transfer between own accounts. Neither income nor expense. Exclude entirely.
-
-Classification: EXCLUDE.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Residency and Scope
-
-- **Residency and Scope** — Residents (fiscal domicile in Cameroon) are taxed on worldwide income; non-residents are out of scope for this skill (R-CM-3).  _([PwC -- income-determination])_
-
-### 5.2 Salary IRPP Base
-
-- **Salary IRPP Base** — Net taxable salary = gross salary - 30% lump-sum professional-expense deduction - mandatory CNPS employee contributions, rounded down to the nearest XAF 1,000, then the progressive scale in Section 1.  _([PwC -- income-determination; taxes-on-personal-income])_
-
-[RESEARCH GAP -- reviewer to confirm] the exact statutory mechanics and any cap on the 30% deduction.
-
-### 5.3 Progressive Scale (CAC-inclusive)
-
-- **Progressive Scale application** — Apply 11% / 16.5% / 27.5% / 38.5% per Section 1. The rates already include the 10% CAC surcharge.  _([PwC])_
-
-### 5.4 Schedular Income
-
-**Schedular Income**
-
-| Income type | Treatment |
-| --- | --- |
-| Salary | Progressive scale (Section 1) |
-| Dividends / investment income from shares | Flat 16.5% (15% + CAC) [PwC] |
-| Non-commercial / business / professional profit (actual-earnings) | Flat 33% (30% + CAC) [PwC] |
-
-### 5.5 Minimum Tax
-
-- **Minimum Tax** — For non-salaried taxpayers under actual-earnings, minimum tax is 2.2% or 5.5% of turnover depending on the applicable regime. It does NOT apply to salaried workers or IGS taxpayers.  _([PwC])_
-
-### 5.6 Social Security -- CNPS (Caisse Nationale de Prevoyance Sociale)
-
-- **CNPS ceiling** — Monthly contribution ceiling for the pension branch: XAF 750,000/month (XAF 9,000,000/year), raised from XAF 300,000 by Presidential Decree.  _([PwC -- other-taxes; CNPS])_
-
-**CNPS Branches Table**
-
-| Branch | Employee | Employer |
-| --- | --- | --- |
-| Old-age / invalidity / death pension | 4.2% (capped at XAF 750,000/mo) | 4.2% (capped at XAF 750,000/mo) |
-| Family allowances (general regime) | 0% | 7% (capped at XAF 750,000/mo) -- agricultural 5.65%, private teachers 3.7% |
-| Occupational accidents / risk (class A/B/C) | 0% | 1.75% - 5% by industry risk class (uncapped on gross) |
-| **TOTAL CNPS (general regime, lowest risk class)** | **4.2%** | **12.95%** (4.2% + 7% + 1.75%) |
-| **TOTAL CNPS (general regime, highest risk class)** | **4.2%** | **16.2%** (4.2% + 7% + 5%) |
-| Voluntary insurance (self-employed / optional pension) | 8.4% of declared income | n/a |
-
-- **Employer total check** — Lowest class 4.2 + 7 + 1.75 = 12.95%; highest class 4.2 + 7 + 5 = 16.2%. Employee total = 4.2% (pension only). Sources: employee 4.2% / ceiling XAF 750,000 [PwC -- other-taxes]; employer pension 4.2%, family 7%, occupational 1.75-5% [Rivermate -- rivermate.com/guides/cameroon/taxes]; equal employer/employee pension split [CNPS -- cnps.cm].  _([PwC -- other-taxes]; [Rivermate]; [CNPS -- cnps.cm])_
-
-[RESEARCH GAP -- reviewer to confirm] the exact per-branch employer split and occupational-risk class rates against CNPS regulatory texts (cnps.cm/en/medias/textes-reglementaires1.html); secondary sources are consistent but CNPS did not publish per-branch percentages directly.
-
-### 5.7 Housing Fund and Employment Fund
-
-**Housing Fund and Employment Fund**  _([PwC -- other-taxes])_
-
-| Fund | Employee | Employer | Source |
-| --- | --- | --- | --- |
-| Credit Foncier du Cameroun (CFC, housing) | 1% | 1.5% | [PwC -- other-taxes] |
-| Fonds National de l'Emploi (FNE, employment) | 0% | 1% | [PwC -- other-taxes] |
-
-- **Computation basis** — Both are computed on taxable salary.  _([PwC -- other-taxes])_
-
-### 5.8 Other Individual Withholdings
-
-**Other Individual Withholdings**  _([PwC -- other-taxes])_
-
-| Levy | Amount | Source |
-| --- | --- | --- |
-| Local Council Tax (Taxe Communale, poll component) | Flat XAF 2,520/month on salaries above XAF 500,000 (top band) | [PwC -- other-taxes] |
-| CRTV audiovisual royalty (RAV) | Up to XAF 13,000 for gross salaries above XAF 1,000,000 (graduated) | [PwC -- other-taxes] |
-
-### 5.9 Self-Employed Regimes (2025 Finance Law)
-
-The 2025 Finance Law consolidated the prior layered regimes. Thresholds on annual turnover: [openhubdigital -- updates-to-tax-assessment-regimes-in-cameroons-2025-finance-law]
-
-**Self-Employed Regimes Table**  _([openhubdigital -- updates-to-tax-assessment-regimes-in-cameroons-2025-finance-law])_
-
-| Regime | Annual turnover (XAF) |
-| --- | --- |
-| IGS (Impot General Synthetique) -- flat synthetic tax | below 50,000,000 |
-| Actual-earnings (regime du reel) | 50,000,000 and above (also taxpayers with DGI-approved investment programs > XAF 100,000,000) |
-
-- **IGS mechanics** — IGS is computed on annual VAT-exclusive turnover at graduated rates and declared/paid quarterly within 15 days of each quarter-end. CGA (Centre de Gestion Agree) members get the rate halved.  _([cga.inov.cm -- IGS 2025])_
-
-[RESEARCH GAP -- reviewer to confirm] the IGS rate/band table (image-only in source) against the 2025 CGI or Finance Law circular. The prior layered thresholds (flat below 10M, simplified 10M-50M, real >=50M) are noted as superseded; [RESEARCH GAP -- reviewer to confirm] the exact current wording in the 2025 CGI.
-
-### 5.10 Filing Deadlines
-
-**Filing Deadlines Table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Year-end | 31 December | [PwC -- tax-administration] |
-| Monthly PAYE return (salary) | Filed and paid by 15th of the month following salary payment; employer withholds and remits | [PwC] |
-| Annual recapitulative -- senior citizens + public/semi-public employees | 31 July | [PwC] |
-| Annual recapitulative -- private-sector employees (Large Taxpayers Unit + specialised centres) | 30 September | [PwC] |
-| Annual recapitulative -- other individual taxpayers | 31 October | [PwC] |
-| Employer annual income summary (DIPE / etat recapitulatif) | 15 March | [PwC] |
-| Regularisation/balance -- Large Taxpayers' Unit | 15 March | [PwC] |
-| Regularisation/balance -- Medium-sized & Specialised Centres | 15 April | [PwC] |
-| Regularisation/balance -- Divisional Tax Centres | 15 May | [PwC] |
-| IGS (self-employed) | Quarterly, within 15 days of each quarter-end | [cga.inov.cm] |
-| Record retention | 10 years | [PwC -- tax-administration] |
-
-### 5.11 Penalties
-
-**Penalties Table**
-
-| Penalty | Amount | Source |
-| --- | --- | --- |
-| Late filing / late declaration | 10% per month, capped at 30% of tax due | [PwC -- tax-administration] |
-| Late payment interest | 1.5% per month of tax due | [PwC -- tax-administration] |
-| Assessment-related (good/bad faith) | 30% to 100%/150% under the General Tax Code | [PwC; hallelaw 2025 guide] |
-
-[RESEARCH GAP -- reviewer to confirm] the exact bad-faith multiplier in the 2025 Code General des Impots.
+## Tier 2 catalogue
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
 ### 6.1 Home Office / Mixed-Use Utilities (actual-earnings)
 
-- **Home Office / Mixed-Use Utilities** — Apportion electricity (ENEO), water (Camwater), internet by business-use proportion. Must be a dedicated, documented basis. Conservative default: 0% deduction until reviewer confirms the basis.
+- **Home Office / Mixed-Use Utilities** : Apportion electricity (ENEO), water (Camwater), internet by business-use proportion. Must be a dedicated, documented basis. Conservative default: 0% deduction until reviewer confirms the basis.
 
 ### 6.2 Vehicle Business Use (actual-earnings)
 
-- **Vehicle Business Use** — Only the business-use proportion of fuel, insurance, and maintenance is deductible; requires a usage log. Conservative default: 0% business use until a log is provided.
+- **Vehicle Business Use** : Only the business-use proportion of fuel, insurance, and maintenance is deductible; requires a usage log. Conservative default: 0% business use until a log is provided.
 
 ### 6.3 Phone / Telecom Mixed Use
 
-- **Phone / Telecom Mixed Use** — Business portion only (Orange, MTN, Camtel). Conservative default: 0% until business percentage confirmed.
+- **Phone / Telecom Mixed Use** : Business portion only (Orange, MTN, Camtel). Conservative default: 0% until business percentage confirmed.
 
 ### 6.4 CNPS Occupational-Risk Class
 
-- **CNPS Occupational-Risk Class** — Employer occupational-accident rate is 1.75%-5% depending on the industry risk class (A/B/C). Flag for reviewer: confirm the client's assigned risk class; default to 1.75% if unknown and flag.
+- **CNPS Occupational-Risk Class** : Employer occupational-accident rate is 1.75%-5% depending on the industry risk class (A/B/C). Flag for reviewer: confirm the client's assigned risk class; default to 1.75% if unknown and flag.
 
 ### 6.5 IGS vs Actual-Earnings Boundary
 
-- **IGS vs Actual-Earnings Boundary** — Turnover near XAF 50,000,000 must be confirmed (VAT-exclusive) before choosing a regime. CGA membership halves IGS -- confirm a valid certificate before applying the reduction. Flag for reviewer.
+- **IGS vs Actual-Earnings Boundary** : Turnover near XAF 50,000,000 must be confirmed (VAT-exclusive) before choosing a regime. CGA membership halves IGS -- confirm a valid certificate before applying the reduction. Flag for reviewer.
 
 ### 6.6 30% Professional Deduction Mechanics
 
-- **30% Professional Deduction Mechanics** — The standard 30% lump-sum salary deduction figure is from PwC; confirm cap/ordering against the CGI. Flag for reviewer.
+- **30% Professional Deduction Mechanics** : CGI art. 34: 30% of gross, capped at XAF 4,800,000 a year.
 
 ### 6.7 Entertainment / Gifts
 
-- **Entertainment / Gifts** — Treated as blocked in this skill; confirm any statutory partial allowance with the reviewer before deducting.
+- **Entertainment / Gifts** : Treated as blocked in this skill; confirm any statutory partial allowance with the reviewer before deducting.
+
 
 ## Section 7 -- Excel Working Paper Template
 
@@ -427,7 +402,7 @@ B. INVESTMENT INCOME (flat 16.5%)
 
 C. SELF-EMPLOYED -- IGS (turnover < 50,000,000)
   C1. Annual VAT-exclusive turnover                ___________
-  C2. IGS per band table [RESEARCH GAP]            ___________
+  C2. IGS per band table unverified            ___________
   C3. CGA member? halve C2 -> IGS due              ___________
 
 D. SELF-EMPLOYED -- ACTUAL-EARNINGS (turnover >= 50,000,000)
@@ -503,36 +478,8 @@ ONBOARDING QUESTIONS -- CAMEROON IRPP
 9. What is your CNPS occupational-risk class (employer rate 1.75%-5%)?
 10. Any capital assets, home-office use, or vehicle used for business?
 
-## Section 10 -- Reference Material
 
-### Key References
-
-**Key References Table**
-
-| Topic | Reference |
-| --- | --- |
-| Progressive IRPP scale + CAC | Code General des Impots; [PwC -- taxes-on-personal-income] |
-| Salary income determination (30% deduction) | [PwC -- income-determination] |
-| Other individual levies (council tax, CRTV, CFC, FNE) | [PwC -- other-taxes] |
-| CNPS social security | CNPS (cnps.cm); [PwC -- other-taxes]; [Rivermate] |
-| Self-employed regimes (IGS / actual-earnings, 2025 Finance Law) | [openhubdigital -- 2025 Finance Law]; [cga.inov.cm -- IGS 2025] |
-| Filing deadlines and administration | [PwC -- tax-administration] |
-| Penalties | [PwC -- tax-administration]; [hallelaw 2025 guide] |
-| VAT (context) | Standard 19.25% (17.5% + CAC); [PwC overview] |
-| Minimum wage (SMIG) | See below |
-| Primary authorities | DGI -- https://impots.cm ; CNPS -- https://www.cnps.cm |
-
-### Minimum Wage (SMIG) -- context only
-
-**SMIG Table**
-
-| Sector | Monthly SMIG (XAF) | Source |
-| --- | --- | --- |
-| Non-agricultural private sector (headline) | 60,000 | [remotepeople; Rivermate -- secondary] |
-| Agricultural private sector | 45,000 | [Rivermate -- secondary] |
-| State employees baseline | 43,969 (raised from 41,875, Feb 2024) | [Rivermate -- secondary] |
-
-[RESEARCH GAP -- reviewer to confirm] the headline XAF 60,000 SMIG against the labour-ministry SMIG decree (EOR/secondary sources only above).
+## Test suite and prohibitions
 
 ### Test Suite
 
@@ -550,7 +497,7 @@ Expected: 5,000,000 x 16.5% = XAF 825,000. NOT run through the progressive scale
 
 Test 4 -- IGS, CGA member.
 Input: Self-employed salon, turnover XAF 12,000,000, CGA member.
-Expected: IGS XAF 500,000 halved to XAF 250,000 (paid quarterly). [RESEARCH GAP on full band table.]
+Expected: IGS XAF 500,000 halved to XAF 250,000 .
 
 Test 5 -- Bracket boundary.
 Input: Net taxable income exactly XAF 5,000,000.
@@ -566,7 +513,7 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 
 ## PROHIBITIONS
 
-- NEVER apply the progressive salary scale to investment income (use flat 16.5%) or to IGS turnover
+- NEVER apply the progressive salary scale to investment income (use the flat rate) or to IGS turnover
 - NEVER compute final tax figures as definitive -- always label as estimated and pass to the deterministic engine
 - NEVER apply CNPS 4.2% on a base above the XAF 9,000,000/year ceiling
 - NEVER add the 10% CAC again on top of the 11/16.5/27.5/38.5% scale -- it is already included
@@ -576,7 +523,18 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 - NEVER treat a non-resident as worldwide-taxed without confirming residency (escalate per R-CM-3)
 - NEVER allow fines, penalties, drawings, or income tax itself as a deduction
 - NEVER skip the round-down to the nearest XAF 1,000 on the net taxable income
-- NEVER rely on a [RESEARCH GAP] figure for a filed return without reviewer confirmation against the 2025 CGI
+- NEVER rely on a unverified figure for a filed return without reviewer confirmation against the 2026 CGI
+
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| CGI Edition 2026 (DGI): arts. 17, 21, 25, 30 to 34, 44, 56, 58, 69 to 74 bis, 90 to 93 undecies, C 38 to C 46, L 95 to L 98, L 106, Credit Foncier and CRTV annex laws | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
+| Arrete 00001/MINFI/DGI of 5 Jan 2026 on withholding: arts. 1 to 9 | https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf | 2026-11-01 |
+| CNPS site | https://www.cnps.cm | Refused: 403 to fetch, no page text in browser |
+
+Not yet confirmed: CNPS rates and ceiling (site did not open); development tax bands; minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre.
 
 ## Disclaimer
 
@@ -590,7 +548,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network : accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
@@ -601,3 +559,4 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
