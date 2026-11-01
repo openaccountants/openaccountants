@@ -502,7 +502,7 @@ def find_country_skills(country_dir):
         if os.path.basename(country_dir) == "us":
             dirs[:] = []  # federal/ and states/ have their own packages
         for f in sorted(files):
-            if not f.endswith('.md') or f.startswith('.'):
+            if not f.endswith('.md') or f.startswith('.') or f == 'SOURCES.md':
                 continue
             filepath = os.path.join(root, f)
             is_redirect, line_count = _check_file_content(filepath)
@@ -807,7 +807,7 @@ def build_us_state_package(state_code):
     state_skill_count = 0
     if os.path.isdir(state_dir):
         for f in sorted(os.listdir(state_dir)):
-            if f.endswith(".md") and f != "README.md":
+            if f.endswith(".md") and f not in ("README.md", "SOURCES.md"):
                 shutil.copy2(os.path.join(state_dir, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
                 state_skill_count += 1
@@ -978,7 +978,7 @@ def build_canada_province_package(province_code):
     province_skill_count = 0
     if os.path.isdir(province_source):
         for f in sorted(os.listdir(province_source)):
-            if f.endswith(".md") and f != "README.md":
+            if f.endswith(".md") and f not in ("README.md", "SOURCES.md"):
                 shutil.copy2(os.path.join(province_source, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
                 province_skill_count += 1

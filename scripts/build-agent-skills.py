@@ -181,7 +181,7 @@ def iter_source_files():
         if not base.is_dir():
             continue
         for p in sorted(base.rglob("*.md")):
-            if p.name.lower() in {"readme.md", "references.md"}:
+            if p.name.lower() in {"readme.md", "references.md", "sources.md"}:
                 continue
             yield p
 

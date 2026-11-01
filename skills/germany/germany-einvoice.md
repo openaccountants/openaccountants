@@ -1,7 +1,7 @@
 ---
 name: germany-einvoice
 description: Use this skill whenever asked about German e-invoicing, XRechnung, ZUGFeRD, ERechV, E-Rechnungsverordnung, Peppol BIS Billing Germany, Leitweg-ID, OZG-RE invoice portal, B2B e-invoicing mandate Germany, Wachstumschancengesetz, EN 16931 Germany, GoBD e-invoice archiving, or any question about issuing, receiving, validating, or archiving electronic invoices in Germany. Also trigger when preparing XRechnung XML invoices, configuring Peppol endpoints for German public-sector invoicing, handling B2B e-invoice reception requirements, or advising on ZUGFeRD profile selection. This skill covers XRechnung CIUS, ZUGFeRD hybrid format, Peppol transmission, mandatory fields, validation rules, GoBD archiving, penalties, and interaction with German VAT returns. ALWAYS read this skill before touching any German e-invoicing work.
-version: 1.4
+version: 1.5
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -208,10 +208,10 @@ The identifiers below are checked against KoSIT’s XRechnung 3.0.2 specificatio
 | Parameter | Value | Source |
 | --- | --- | --- |
 | Version | The ELSTER viewer states: "Es wird die aktuell gültige XRechnung Version 3.0.1 verwendet." See https://www.elster.de/eportal/e-rechnung . KoSIT's own version page, read on 19 September 2026 but not linked, also lists a release 3.0.2 as in force and announces a version 4.0 for 2027. The ERechV asks for the standard "in der jeweils aktuellen Fassung" (§ 4(1)); changes are announced in the Bundesanzeiger (§ 4(2)). Confirm the version in your software |  |
-| UBL namespace | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` |  |
+| UBL namespace | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` | https://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd |
 | CII namespace | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` |  |
 | CustomizationID (UBL) | `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0` | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
-| ProfileID (BT-23) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` |  |
+| ProfileID (BT-23) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
 | Encoding | UTF-8 | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
 | Validation | KoSIT Validator (open source, Java based) |  |
 | Schema download | KoSIT's site xeinkauf.de (named in the ministry's questions and answers, no. 16; not linked here) | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html |
@@ -558,6 +558,8 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 ## Sources
 
 - UStG § 12, § 14, § 14a, § 14b, § 15, § 19, § 26a, § 27: https://www.gesetze-im-internet.de/ustg_1980/__12.html and https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustg_1980/__14a.html and https://www.gesetze-im-internet.de/ustg_1980/__14b.html and https://www.gesetze-im-internet.de/ustg_1980/__15.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__26a.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html (read 2026-10-31)
+- OASIS UBL 2.1 Invoice schema (UBL namespace): https://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd (read 2026-10-31)
+- KoSIT XRechnung 3.0.2 specification (ProfileID default): https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf (read 2026-10-31)
 - UStDV § 31, § 33, § 34, § 34a: https://www.gesetze-im-internet.de/ustdv_1980/__31.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html (read 2026-10-31)
 - AO § 146, § 147, § 158, § 162, § 370: https://www.gesetze-im-internet.de/ao_1977/__146.html and https://www.gesetze-im-internet.de/ao_1977/__147.html and https://www.gesetze-im-internet.de/ao_1977/__158.html and https://www.gesetze-im-internet.de/ao_1977/__162.html and https://www.gesetze-im-internet.de/ao_1977/__370.html (read 2026-10-31)
 - HGB § 252, EStG § 4 and § 11: https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/estg/__4.html and https://www.gesetze-im-internet.de/estg/__11.html (read 2026-10-31)

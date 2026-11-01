@@ -743,6 +743,12 @@ CHECKS = [
 CHECK_NAMES = [name for _, name, _ in CHECKS]
 
 
+def is_not_skill(filename):
+    """True for files in skills/ that are not skills: READMEs and a pack's SOURCES.md."""
+    name = os.path.basename(filename).lower()
+    return name.startswith("readme") or name == "sources.md"
+
+
 def run_checks(path, text, frontmatter):
     """``{check_name: [problems]}`` for text already in memory."""
     return {name: func(path, text, frontmatter) for _, name, func in CHECKS + LESSON_CHECKS}
