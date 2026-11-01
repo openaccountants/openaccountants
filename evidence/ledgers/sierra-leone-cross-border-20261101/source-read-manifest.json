@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ITA",
+    "file": "Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+    "bytes": 900613,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical20-22 ss10-16;57-60 ss89-96 and neighbours read. Not entire145-page unofficialconsolidation orfullamendmentchain."
+  },
+  {
+    "id": "F24",
+    "file": "The_Finance_Act_2024_0d6d83e684.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2024_0d6d83e684.pdf",
+    "sha256": "5314b7e510cfa9d39ae25391e8f8f13ae8d0689fc1503d0ec9602a1960712a20",
+    "bytes": 3410826,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical8-9/printed15-16 s9sourceamendments withneighbours, two-uphalvesdifferentiated."
+  }
+]

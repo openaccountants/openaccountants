@@ -9,6 +9,7 @@ covered_by:
   SC: sl-payroll-social
   PR: sl-payroll-social
   TP: sl-transfer-pricing
+  XB: sl-cross-border
 partial:
   IT-IND: "Existing 2025 Guide retained; current bands, deductions, rent and filing amendments not yet reconciled."
   IT-CORP: "Source-bound2026 corporate rewrite; MAT schedule/currentness, full deductions/regimes, return fields and independent review remain open."
@@ -16,12 +17,12 @@ partial:
   SC: "NASSIT source-bound2026 rewrite,28ledger rows; source review closed; later amendments/exemptions/ceiling and current payment implementation remain unresolved."
   PR: "Payroll Guide refreshed for NASSIT; current PAYE deductions, bands, return/payment forms and penalties not yet reconciled."
   TP: "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
-  XB: "Dedicated residence/withholding Guide in preparation; existing cross-border topics retained in legacy Guides."
+  XB: "New residence/foreign-income source-bound Guide; unofficial2017baseline/currentchain,treaties,withholdingprocedure and independentreview remain unresolved."
 ---
 
 # Sierra Leone: tax pack
 
-Three source drafts now: transfer pricing, NASSIT/payroll and corporate income tax. Four other legacy 2025 Guides remain pending refresh. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
+Four source drafts now: transfer pricing, NASSIT/payroll, corporate income tax and cross-border residence/foreign income. Four other legacy 2025 Guides remain pending refresh. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
 
 | Tax/job | Guide | Actual state |
 |---|---|---|
@@ -30,7 +31,7 @@ Three source drafts now: transfer pricing, NASSIT/payroll and corporate income t
 | Goods and services tax | [GST](sl-vat-gst.md) | Legacy 2025; refresh in progress |
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
 | Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
-| Cross-border | Dedicated Guide in preparation | Partial; legacy topics retained |
+| Cross-border | [Residence and foreign income](sl-cross-border.md) | New conditional source draft; independent review pending |
 | Formation | [Formation](sl-company-formation.md) | Legacy 2025; refresh in progress |
 | Tax intake | [Overview](sl-tax-overview.md) | Legacy 2025; refresh in progress |
 
@@ -40,8 +41,10 @@ The TP draft separates contemporaneous preparation, annual declarations, 45-day 
 
 The initial69-topic, six-file snapshot is preserved in [the old-topic map](../../evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md), backed by immutable predecessor hashes. The subsequent payroll delta maps all ten old payroll topics to exact new sections or explicit holds in [its preservation record](../../evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md). No predecessor topic is silently removed.
 
-Remaining country work includes the other four current-year refreshes and cross-border/residence/withholding, corporate source review and full company-law reading, the full income/GST amendment reconciliation, genuine current filing instructions and independent source review. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
+Remaining country work includes the other four current-year refreshes and full current cross-border/withholding implementation, corporate source review and full company-law reading, the full income/GST amendment reconciliation, genuine current filing instructions and independent source review. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
 
 Tracked in [Sierra Leone issue484](https://github.com/openaccountants/openaccountants/issues/484), which remains open.
 
 The corporate delta maps all15oldtopics in [its preservation record](../../evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.md), with a [figure ledger](../../evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md). MAT schedule interaction is explicit, not resolved by copying the old approximate3%.
+
+The new cross-border workpaper has [18 grouped source-ledger records](../../evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md); its presence does not close XB.

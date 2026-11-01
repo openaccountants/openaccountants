@@ -1,0 +1,203 @@
+{
+  "status": "New source-bound writer draft; independent review pending",
+  "records": [
+    {
+      "id": "X01",
+      "section": "Who this applies to; Rates",
+      "rule": "Individual residence alternativeabode+anypresence,>182counteddays12monthbeginning/endingtaxyear,governmentofficialabroad;split/tempconditions.",
+      "article": "ITA10(1)",
+      "pdf_pages": "20-21",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "more than one hundred and eighty two days",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X02",
+      "section": "Rates; The base",
+      "rule": "Temporaryresidentallconditions: residentunder10,noncitizen/nondomicile,intentiontotal<=4years,endyearresidence<=4years.",
+      "article": "ITA11",
+      "pdf_pages": "21",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "not a citizen of or domiciled in Sierra Leone",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X03",
+      "section": "The base; Examples",
+      "rule": "Excludestatutorycrossborderemployeeservices,foreigntransit,medical/fulltimestudy,diplomatic/dependantdays,notalltraveldays.",
+      "article": "ITA10(4)",
+      "pdf_pages": "21",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "medical treatment or full-time",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X04",
+      "section": "The base",
+      "rule": "Arrival splitnotpreviousyearresident:excludeperiodbeforefirstpresence.",
+      "article": "ITA10(2)",
+      "pdf_pages": "21",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "preceding the day the individual was first present",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X05",
+      "section": "The base",
+      "rule": "Departure splitnotfollowingyearresidentANDcloserforeignconnection afterlastpresence.",
+      "article": "ITA10(3)",
+      "pdf_pages": "21",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "closer connection to a foreign",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X06",
+      "section": "The base",
+      "rule": "Ordinaryresidentallsourceslessdeductions;temporarydomesticsource+remittedforeignlessdeductions.",
+      "article": "ITA14-15",
+      "pdf_pages": "22",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "which is remitted to Sierra Leone",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X07",
+      "section": "The base",
+      "rule": "NRwithholdingpaymentlimb+otherdomesticsourceevenreceivedabroad,lessalloweddeductions.",
+      "article": "ITA16",
+      "pdf_pages": "22",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "whether or not the income",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X08",
+      "section": "The base",
+      "rule": "CompanyformedORmanagement/controlORmajorityoperations;inboundPEseparateassociatedresidentperson.",
+      "article": "ITA12",
+      "pdf_pages": "21-22",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "undertakes the majority of its operations",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X09",
+      "section": "The base",
+      "rule": "Source:domesticactivity/services/realestate/propertyrichshares/residentshares/domesticuseIP/rent,debtconnections,residentdividendmanagementdirector,pension,naturalresources.",
+      "article": "ITA89(1)",
+      "pdf_pages": "57",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "whether or not the income is received",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X10",
+      "section": "The base",
+      "rule": "2024replacesinsurance/managerialtechnicalconsultancysourcelimbs;digitalproducts/servicesSLconsumersresident/NR.",
+      "article": "FA2024 s9,89(1)(k)-(m)",
+      "pdf_pages": "8-9",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2024_0d6d83e684.pdf",
+      "source_id": "F24",
+      "quote": "digital products and services",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X11",
+      "section": "Rates; The base",
+      "rule": "ResidentFTCforeignincometaxborneonforeignassessableincome;averageSLratetimesnetforeignincomeceiling.",
+      "article": "ITA90(1)-(2),(6)",
+      "pdf_pages": "58",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "reduced by any deduction properly allocated",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X12",
+      "section": "The base; Examples",
+      "rule": "Separateeachforeignincomeamount;foreignbranchaggregatedsingle receipt under4,nogeneralpooling/excesscarryforwardassumed.",
+      "article": "ITA90(3)-(4)",
+      "pdf_pages": "58",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "separately for each amount",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X13",
+      "section": "The base",
+      "rule": "Partnership/trust/beneficiaryforeign-taxattributiondependsunder90(5)scope.",
+      "article": "ITA90(5)",
+      "pdf_pages": "58",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "shall be treated as borne by the partners",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X14",
+      "section": "Rates",
+      "rule": "ForeignPEfors90 fixedforeignplacebusinesscontinuous>=183daysexcludespreparatoryauxiliary;notinbounddefinition.",
+      "article": "ITA90(6)(d)",
+      "pdf_pages": "58",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "continuously for at least 183",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X15",
+      "section": "The base",
+      "rule": "Baselines91residentforeignemploymentabroadexemptifchargeableforeign;2026chainheld,nopresententitlementclaimed.",
+      "article": "ITA91",
+      "pdf_pages": "58",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "if the income is chargeable",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X16",
+      "section": "Deadlines and filing",
+      "rule": "CGspecialnonresidentrecoverywithholding unpaidassessedorexpectednonpayment,notordinaryrateschedule.",
+      "article": "ITA92",
+      "pdf_pages": "59",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "may require any person liable",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X17",
+      "section": "Rates; Cross-border points",
+      "rule": "Branchadditionalrepatriationtax;higheractualfundsoutofprofits/chargeableincome lessdomestictaxandreinvestedretainedprofit;rateheld.",
+      "article": "ITA93",
+      "pdf_pages": "59",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "Repatriated income is the higher of",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "X18",
+      "section": "Cross-border points",
+      "rule": "Intergovernmentalagreementpriorityexcept95/96;actualtreaty/effectivedatesnotauthenticated.",
+      "article": "ITA94",
+      "pdf_pages": "59",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "source_id": "ITA",
+      "quote": "other than sections 95 and 96",
+      "read_on": "2026-11-01"
+    }
+  ]
+}
