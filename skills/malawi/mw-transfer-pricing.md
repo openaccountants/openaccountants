@@ -89,4 +89,3 @@ Get the exact notice and service/transmission evidence, stated response date, al
 | [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), s 2 marginal-note amendment | 2026-11-01 |
 
 **Not yet confirmed:** actual current TP Regulations and full 127A operative text, scope/related-party definitions, annual documentation/filing requirements and thresholds, permitted methods, current currency-point conversion order, exact 2026 commencement boundary and authenticated response portal. No full annual TP compliance claim follows from this bounded job.
-
