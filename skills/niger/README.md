@@ -1,6 +1,6 @@
 ---
 jurisdiction: NE
-version: 0.1
+version: 0.2
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -10,7 +10,7 @@ covered_by:
   SC: ne-payroll-social
   PR: ne-payroll-social
 partial:
-  IT-IND: "No standalone current-year Guide; overview/payroll legacy statements not reverified."
+  IT-IND: "No standalone current-year computation; overview now routes evidence and holds old figures, while payroll remains 2025."
   IT-CORP: "2025 legacy Guide retained unchanged; 2026 law, amendments and procedure not rebuilt."
   VAT: "2025 legacy Guide retained unchanged; 2026 rates, exemptions, recovery and filing not rebuilt."
   SC: "2025 legacy payroll/social Guide retained unchanged; CNSS current rules not rebuilt."
@@ -21,11 +21,11 @@ partial:
 
 # Niger tax pack
 
-**Partial pack, 1 November 2026.** Five legacy 2025 Guides remain unchanged. Two additional 2026 jobs have source ledgers and executable examples. Independent source review accepted both limited jobs at `aa1f342de147326021335775874f4e7071ce1415`; neither has accountant attestation. They do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
+**Partial pack, 1 November 2026.** Three legacy 2025 tax Guides remain unchanged. Two accepted limited 2026 tax jobs remain byte-identical. Formation and overview are now source-based 2026 intake drafts with separate ledgers and four executable cases; their independent review is pending. The accepted cash-payment and TDTA jobs retain their earlier review at `aa1f342de147326021335775874f4e7071ce1415`. None has accountant attestation. These contributions do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
 
 | Domain | Retained Guide | Actual status |
 |---|---|---|
-| Individual income tax | [Tax overview](ne-tax-overview.md) and [Payroll](ne-payroll-social.md) | Partial; standalone current-law job missing |
+| Individual income tax | [Tax overview](ne-tax-overview.md) and [Payroll](ne-payroll-social.md) | Partial; overview routes evidence, not a current individual-tax calculation; payroll remains 2025 |
 | Company tax | [Corporate income tax](ne-corporate-income-tax.md) | Partial; unchanged 2025 research |
 | VAT | [VAT](ne-vat-gst.md) | Partial; unchanged 2025 research |
 | Social contributions | [Payroll/social](ne-payroll-social.md) | Partial; unchanged 2025 research |
@@ -42,11 +42,14 @@ The ministry's original 2026 law and signed first rectification were downloaded 
 
 ## Retained work and review evidence
 
-[Company formation](ne-company-formation.md) and [Tax overview](ne-tax-overview.md) also remain unchanged. All five old slugs, metadata, bodies and platform CTA blocks are preserved byte-for-byte. Retention is not recertification.
+[Company formation](ne-company-formation.md) now reads the original OHADA companies Act and Niger’s 2014 decree with the actual 2017 gazetted amendment. It covers constitution/funding, registration stages, annual corporate duties and branch/office boundaries, while current guichet forms/fees, tax registrations and the complete currentness chain remain open. [Tax overview](ne-tax-overview.md) routes the two accepted tax jobs and explicitly holds the old rates, residence and general filing statements. All five other Guide files, all earlier ledgers and review evidence remain byte-identical to the pinned main base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. Existing platform fields and both rewritten Guides’ complete CTA suffixes remain exact. Retention is not recertification.
+
+- [Formation and overview figure ledgers, old-topic map and writer scope](../../evidence/ledgers/niger-formation-overview-20261101/writer-record.md).
+- Formation and overview independent review: pending; no accountant attestation. The older 58-topic map below remains historical evidence; the new immutable map explicitly accounts for every paragraph, heading and bullet replaced in these two files.
 
 - [Complete old-topic destination map](../../evidence/ledgers/niger-old-topics.md).
 - [Cash-payment rule ledger](../../evidence/ledgers/ne-cash-payment-tax.md).
 - [TDTA repeal rule ledger](../../evidence/ledgers/ne-money-transfer-tax-repeal.md).
 - [Source scope and integrity record](../../evidence/ledgers/niger-source-read-20261101.md).
 
-Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. The independent reviewer checked all 40 ledger rows, four examples, all five preserved legacy files and the 58-topic destination map. The [review and immutable candidate hashes](../../evidence/ledgers/niger-review-20261101/review.md) record the exact accepted scope. A later edit removed stale review-status wording from the two Guides and changed no rule. All seven domains remain partial.
+Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. The earlier independent reviewer checked the accepted two-job batch’s 40 ledger rows, four examples, five then-preserved legacy files and 58-topic destination map. The [review and immutable candidate hashes](../../evidence/ledgers/niger-review-20261101/review.md) record the exact accepted scope. A later edit removed stale review-status wording from the two Guides and changed no rule. All seven domains remain partial.
