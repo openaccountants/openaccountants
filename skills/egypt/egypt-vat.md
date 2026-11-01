@@ -1,10 +1,10 @@
 ---
 name: egypt-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Egypt VAT return or advise on Egyptian VAT registration, filing, and e-invoicing compliance. Trigger on phrases like "prepare Egypt VAT return", "Egyptian VAT", "ضريبة القيمة المضافة مصر", "ETA e-invoice", or any Egypt VAT request. ALWAYS read this skill before touching any Egypt VAT work.
-version: 2.0
+version: 2.1
 jurisdiction: EG
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,411 +16,245 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Egypt VAT
 
-## Section 1 — Quick reference
+For tax year 2026. Figures come from the VAT Law as amended up to Law 149 of 2026 (Official Gazette no. 30 bis (a), 28 July 2026, in force the next day). Egypt has no consolidated official text on the ETA site, so read the base law together with each amending law.
 
-**Quick reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Egypt (جمهورية مصر العربية) |
-| Tax | Value Added Tax (ضريبة القيمة المضافة — VAT) |
-| Currency | EGP (Egyptian Pound — ج.م) |
-| Standard rate | 14% |
-| Reduced rate | 5% (selected equipment, machinery, some agricultural inputs) |
-| Zero rate | 0% (exports of goods and services, international transport, diplomatic supplies) |
-| Exempt | Financial services, insurance, medical services, educational services, residential rent, utilities (in certain cases) |
-| Registration threshold | EGP 500,000 annual turnover |
-| Tax authority | Egyptian Tax Authority (ETA — مصلحة الضرائب المصرية) |
-| Filing portal | ETA e-Invoice portal — https://invoicing.eta.gov.eg |
-| Return form | VAT Return (إقرار ضريبة القيمة المضافة) |
-| Filing frequency | Monthly |
-| Deadline | Last day of the following month |
-| e-Invoice | Mandatory for all VAT-registered businesses (ETA e-Invoice system) |
-| Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by Egypt-licensed CPA (محاسب قانوني) |
-| Skill version | 2.0 |
+**Must register:**
+- Anyone selling taxable goods or services whose total taxable and exempt sales reach EGP 500,000 in the 12 months. Apply within 30 days of reaching the limit (VAT Law art. 16). The test counts exempt sales too.
+- Every importer of taxable goods or services for trade, every exporter and every distribution agent, whatever the turnover (art. 16).
+- Every producer, provider or importer of a Schedule item, whatever the turnover (arts. 1, 41).
+- Non-residents selling to unregistered customers in Egypt, under the simplified supplier system (art. 17, replaced by Law 3 of 2022; Regulations art. 21 bis text added by Decision 24 of 2023).
+- Legal persons who sell nothing taxable but must account for imported services, for reverse charge purposes (art. 17).
 
-### Key return sections
+**May register:** a person under the limit (art. 18). They then carry all the duties of a registered person.
 
-**Key return sections**
+**Not caught:** a natural person who does not carry on a business of selling goods or providing services, even if sales reach the limit (art. 16).
 
-| Section | Meaning |
-| --- | --- |
-| Section A | Taxable sales at 14% (net) |
-| Section B | Taxable sales at 5% (net) |
-| Section C | Zero-rated exports (net) |
-| Section D | Exempt supplies (net) |
-| Section E | Total output VAT |
-| Section F | Input VAT on purchases at 14% |
-| Section G | Input VAT on purchases at 5% |
-| Section H | Import VAT paid at customs |
-| Section I | Total input VAT |
-| Section J | Net VAT payable (E − I; if positive) |
-| Section K | Excess input VAT carried forward |
+**If you do not apply,** you count as registered by law from the day sales reached the limit (art. 16), and failure to register on time is treated as evasion (art. 68).
 
-### Conservative defaults
+**Small projects:** a project with annual turnover up to EGP 20 million that opts into Law 6 of 2025 files VAT quarterly (see Deadlines). Consultancy businesses earning at least 75% of turnover from consulting are outside it (Law 6/2025, art. 3). The choice locks in for five years (art. 5).
 
-**Conservative defaults**
+## Rates, bands and thresholds
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 14% standard |
-| Unknown whether 5% rate applies | 14% until confirmed |
-| Unknown whether export documentation complete | Treat as domestic 14% |
-| Unknown business-use % (vehicle, phone, home) | 0% input credit |
-| Unknown whether e-Invoice issued via ETA | No input credit until confirmed |
-| Financial service vs professional service | Treat as professional — 14% |
-| Foreign digital service (B2B) | 14% reverse-charge — buyer self-assesses |
+| Item | Figure | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| General rate | 14% | All taxable goods and services; 1% point of the tax goes to social justice programmes (art. 3, replaced by Law 149/2026 art. 1) | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf |
+| Machinery, equipment and medical devices | 5% | Used to produce a good or provide a service. Buses and passenger cars stay outside. Devices used for medical purposes count as medical devices (art. 3) | 2026 | same |
+| Machinery parts and spare parts | 14% | Regulations art. 4 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf |
+| Exports of goods and services | 0% | Conditions in Regulations art. 5; see The base (VAT Law art. 3) | 2026 | same |
+| Free zone exports and project inputs | 0% | Free zones, free cities, free markets and special economic zones; passenger cars excluded (art. 6, replaced by Law 3/2022) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf |
+| Advertising services | 14% | Listed public-interest adverts stay exempt (exempt item 57); Law 3/2022 art. 5 | 2026 | same |
+| Registration limit | EGP 500,000 | Taxable plus exempt sales, 12 months (art. 16); the minister may change it by decision | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf |
+| Tourist refund floor | EGP 1,500 per invoice | Foreign visitors staying up to 3 months; goods leave with them or otherwise (art. 30 bis) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf |
+| Credit balance refund | More than 4 consecutive periods | Art. 30(1)(3), replaced by Law 149/2026. Was 6 periods before 29 July 2026 | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf |
+| Same, Law 6/2025 projects | More than 3 months | Art. 30(1)(3) | 2026 | same |
+| Machinery tax suspension | 1 year, extendable to 3 years in total | Factories and production units, industrial production; includes medical devices (art. 28 bis, replaced by Law 149/2026) | 2026 | same |
+| Natural gas Schedule tax | EGP 20 per 1,000 cubic feet | New Schedule I item 17 (Law 149/2026 art. 3) | 2026 | same |
+| Crude oil Schedule tax | 10% of value | Schedule I item 16 (Law 157/2025 art. 5) | 2026 | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf |
+| Goodwill on shop sale or rent | 10% of 10% of the rent or sale value | Schedule I item 15 (Law 157/2025 art. 2); return type "Schedule and VAT", Excel code 46 | 2026 | same |
+| Professional and consulting services | 10% of the amount actually paid | Schedule I item 12: Schedule tax only. Craftsmen are outside it | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf |
+| Contracting and construction | 14% | Schedule I item 9 repealed by Law 157/2025 art. 6, so the general rate applies. Decision 418/2025 covers contracts straddling the change | 2026 | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf |
+| Gypsum; soap and household detergents | 14% | Schedule I items 8 and 10 (5% Schedule tax) repealed by Law 149/2026 art. 4 from 29 July 2026 | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf |
 
-### Red flag thresholds
+**Schedule I** items bear Schedule tax only: no VAT and no input credit. **Schedule II** items bear Schedule tax plus VAT, and input credit goes against the VAT only (Regulations art. 27). Check tobacco, alcohol, fuel, vehicles and similar items against the Schedule and its amendments for the rate.
 
-**Red flag thresholds**
+### Exempt list, 2026 changes
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | EGP 500,000 |
-| HIGH tax delta on single conservative default | EGP 70,000 |
-| MEDIUM counterparty concentration | >40% of output or input |
-| MEDIUM conservative default count | >4 per return |
-| LOW absolute net VAT position | EGP 1,000,000 |
+Replaced by Law 149/2026 art. 2:
+- Item 19: butane gas only. Natural gas moved to the Schedule.
+- Item 20: natural materials and mine and quarry products in their natural state, except crude oil and natural gas.
+- Item 28: sale and rent of vacant land, farmland, buildings and residential units, and sale and rent of non-residential buildings, except rent of premises used as an independent seat of a business, even with a commercial character and customer contact. Premises for religious, charitable, social, educational and health activities stay exempt, as do others the minister names.
+- Item 32: wheelchairs, prosthetics, hearing aids and other worn or implanted devices, now with their production inputs; dialysis equipment with inputs; incubators, serums, vaccines, blood, blood bags, family planning means.
+- Item 35: postal savings banking and financial services of the National Postal Authority.
+- Item 36: non-bank financial services supervised by the FRA or the Central Bank.
 
-## Section 2 — Required inputs and refusal catalogue
+Removed by Law 157/2025: items 18 (crude oil) and 48 (news agency services).
 
-### Required inputs
+Other main exempt items (list to Law 67/2016 as amended by Law 3/2022): dairy and infant food; eggs other than pasteurised; tea, sugar, coffee; mill products; bread; meat, fish and fresh produce; water purification and distribution and sewerage, not bottled water; electricity; newsprint; books and newspapers; bank operations reserved by law to banks; currency exchange; insurance and reinsurance; education, training and research; health services other than non-medical cosmetic and slimming work; land passenger transport other than tourist transport, inter-governorate air-conditioned transport and private car rental; non-tourist water and air passenger transport; medicines; Suez Canal Authority services to transiting ships (item 58).
 
-- **Required inputs before starting Egypt VAT work** — 1. ETA Tax Registration Number (TRN — رقم التسجيل الضريبي — 9 digits) 2. ETA e-Invoice portal credentials and API key for accessing issued/received e-invoices 3. Monthly bank statements in EGP (all business accounts) 4. ETA e-Invoice XML downloads for all sales and purchases 5. Import customs declarations (بيان جمركي) from Egyptian Customs Authority 6. Prior month VAT return (for carried-forward excess input credit) 7. Details of export transactions with shipping documentation
+## The base
 
-### Refusal catalogue
+**What is taxed.** Goods and services, local or imported, at every stage (art. 2). A sale happens at the earliest of invoice, delivery or performance, or payment (art. 1). Self-supply for personal use or special use counts as a sale (art. 5).
 
-- **Refuse and escalate to licensed Egyptian tax consultant** — - Partial exemption calculations (businesses with mixed taxable/exempt supplies) - VAT on real estate and construction (complex rules) - Special tax regimes (simplified VAT for certain agricultural cooperatives) - Reverse-charge on imported services — complex cases involving multiple service types - VAT refund claims for exporters (long process requiring ETA audit) - Turnover tax (ضريبة المبيعات) on certain categories — replaced by VAT but some transitional issues remain - VAT on free zones and special economic zones
+**Value.** The amount paid or due, including all charges collected from the buyer and incidental costs (art. 10). Sales between related persons cannot be below an arm's length price (related means spouses, ascendants and descendants, and 50% ownership links, art. 1). Schedule II items: value plus Schedule tax. Gold, silver, platinum and gemstones: workmanship value only (art. 10(9)). Imports: customs value plus customs tax and other charges (art. 10(7)).
 
-## Section 3 — Supplier pattern library
+**Input credit.** Deduct VAT borne on inputs tied to taxable sales, including machinery (arts. 1, 22). The credit stops at the tax due, and the rest carries forward (art. 22). No credit for: Schedule tax, input tax included in cost, exempt goods and services, and simplified supplier cases (art. 22, Law 3/2022). Indirect inputs include construction, finance, indirect production, selling and general costs (Regulations art. 1, Decision 417/2025).
 
-### 3.1 Banking and financial services
+**Mixed sales** (Regulations art. 27):
+1. Inputs for taxable sales only: full credit.
+2. Inputs for exempt or Schedule-only sales: no credit.
+3. Shared inputs: credit by taxable sales over total sales.
 
-**Banking and financial services**
+Reverse any earlier credit by an addition notice.
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Commercial International Bank (CIB) | Bank fees, transfers | Exempt | No |
-| National Bank of Egypt (NBE — البنك الأهلي المصري) | Loans, account fees | Exempt | No |
-| Banque Misr (بنك مصر) | Commercial banking | Exempt | No |
-| QNB Alahli (بنك قطر الوطني الأهلي) | Banking services | Exempt | No |
-| Banque du Caire | Business banking | Exempt | No |
-| Fawry (فوري) | Bill payment, digital collections | 14% | Yes |
-| Instapay (إنستا باي) | P2P and B2B payments | Exempt (payment service) | No |
-| Paymob | Payment gateway | 14% | Yes |
-| Vodafone Cash | Mobile money transfer | Exempt | No |
-| Orange Cash | Mobile wallet | Exempt | No |
+**Opening stock.** Credit VAT on stock held at registration if you keep regular books, hold the purchase invoices or customs papers, file the stock statement form with the application, have not costed the tax (or corrected that within one year of purchase), and the stock relates to taxable sales (Regulations art. 22 as replaced by Decision 417/2025).
 
-### 3.2 Electricity and utilities
+**Exports.** Goods: follow customs procedure and keep the export papers, including the customs export certificate, for 5 years. Services: prove the deal with a foreign recipient by contract or other suitable means, hold the tax invoice with service details, and hold proof of payment by bank transfer from abroad to a bank supervised by the Central Bank (Regulations art. 5).
 
-**Electricity and utilities**
+**Continuous services.** The invoice triggers the tax for telecoms, cleaning and security, goods transport, and contracting supported by the consultant's approved certificate (art. 33; Regulations art. 26 as replaced by Decision 417/2025).
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| EEHC / Cairo Electricity (شركة القاهرة لتوزيع الكهرباء) | Electricity — commercial | 14% | Yes |
-| Alexandria Electricity (شركة الإسكندرية لتوزيع الكهرباء) | Electricity — commercial | 14% | Yes |
-| Cairo Water (شركة مياه القاهرة) | Water supply | 14% | Yes |
-| Town Gas (طاون جاس) | Natural gas | 14% | Yes |
-| Sawi Gas | Gas — household/commercial | 14% | Yes |
+**Tax invoice.** Serial number, date, seller name, address and registration number, buyer name, address and tax registration or national number, description, value, rate, tax, total (art. 12; Regulations art. 13).
 
-### 3.3 Telecommunications
+## Deadlines and filing
 
-**Telecommunications**
+| Duty | When | Source |
+|---|---|---|
+| Monthly return, Form 10 | Within the month after the tax period ends, even with no sales | Unified Tax Procedures Law (UTPL) art. 31(a) |
+| Quarterly return, Law 6/2025 project | Every 3 months, within the month after the period, with payment | Law 6/2025 art. 12 |
+| Gold and silver, Form 10 bis | Same monthly deadline | ETA FAQ |
+| Reverse charge, Form 111 | 30 days from receiving the service | Art. 32; ETA FAQ |
+| Register | 30 days from reaching the limit | Art. 16 |
+| Notify changes | 21 days | Art. 20 |
+| Records | Keep 5 years after the financial year | Art. 13 |
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Vodafone Egypt (فودافون مصر) | Mobile, data | 14% | Yes (business use) |
-| Orange Egypt (أورنج مصر) | Mobile, fiber internet | 14% | Yes (business use) |
-| Etisalat Egypt / e& Egypt | Mobile, business lines | 14% | Yes (business use) |
-| WE (المصرية للاتصالات) | Fixed line, ADSL | 14% | Yes (business use) |
-| Telecom Egypt | Wholesale, enterprise | 14% | Yes |
+A deadline on an official holiday moves to the next working day (Regulations art. 16). The VAT law's old two-month period and 15 June April rule were overtaken by UTPL art. 31 and by art. 14 as replaced in 2022. The 2017 Regulations still show the old rule; the law wins.
 
-### 3.4 Transport and travel
+An exporter, importer or service provider acting once or twice a year can ask ETA to file only for that month (UTPL art. 31).
 
-**Transport and travel**
+### How to file the monthly return
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| EgyptAir (مصر للطيران) | Domestic flights | 14% | Yes |
-| EgyptAir | International flights | 0% (export) | No input applicable |
-| Air Arabia Egypt | Domestic/regional flights | 14% (domestic) | Yes |
-| Egyptian National Railways (ENR — السكك الحديدية) | Train tickets | Exempt | No |
-| Cairo Metro (مترو الأنفاق) | Metro tickets | Exempt | No |
-| Uber Egypt | Ride-hailing | 14% | Yes (business use) |
-| Careem Egypt | Ride-hailing | 14% | Yes (business use) |
-| InDriver Egypt | Ride-hailing | 14% | Yes |
+1. Log in to the ETA portal linked from eta.gov.eg ("بوابة الممول").
+2. Open the obligations box and pick Form 10 for the period. For an earlier period, add it through the forms box: Add form, VAT forms, tax period.
+3. Upload invoices one of three ways: one at a time; the system Excel sheet, up to 60,000 invoices; or Excel through attachments, above 60,000. ETA publishes the sales and purchases sheets on its VAT forms page.
+4. Report sales lines. Sales sheet fields include document type (DOC_TYP_S), tax type (TAX_TYP), Schedule type (TYP_SCH), invoice number (INVNUM), customer registration number (CUST_REG_NO), net (NET_AMM), tax (TAX_VAL), total (TOTAL).
+5. For an imported service needed for your business, enter the invoice value twice: once in sales and once in purchases.
+6. First return on the new system: enter the earlier credit balance once. It then carries forward automatically.
+7. No activity: choose Form 10, return type "zero".
+8. Press Submit. The system issues a reference number at the top of the page. The PDF shows the sending date; a blank date means it is only a saved draft.
+9. Pay after filing. The system issues a claim, and you pay by claim number, not registration number. You cannot pay first.
 
-### 3.5 Logistics and courier
+**Returned goods:** enter an addition or discount notice in the current return, or amend the earlier one. The notice date must match the return period.
 
-**Logistics and courier**
+**Amended return:** Add form, VAT forms, tax period, Form 10, return type original or amended. Conditions: the original was on time, no Form 4 examination notice has been issued for the period, and the period is not in anti-evasion work.
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Aramex Egypt (أرامكس مصر) | International/domestic courier | 14% | Yes |
-| DHL Egypt | International courier | 0% (export) / 14% (domestic) | Yes |
-| FedEx Egypt | International courier | 0% / 14% | Yes |
-| Egyptian Post (البريد المصري) | Postal services | 14% | Yes |
-| Mylerz | E-commerce logistics | 14% | Yes |
-| Bosta | Last-mile delivery | 14% | Yes |
+**Refund:** claim with supporting papers, including a certificate signed by a listed accountant. ETA pays within 45 days (art. 30). Grounds: exports, tax collected in error, the credit balance above, buses and passenger cars where carrying passengers is the licensed activity, and tax borne by a simplified non-resident. A late refund bears interest at the Central Bank credit and discount rate on 1 January, plus 2 points (UTPL refund chapter).
 
-### 3.6 Retail and office supplies
+**After filing:** ETA may amend within 5 years of the filing deadline; 6 years for evasion (arts. 15, 48). You have 30 days to object to an assessment. An internal committee decides within 60 days, then the appeal committee. Court appeal is 60 days from notice of its decision (arts. 56, 58, 61).
 
-**Retail and office supplies**
+## Penalties and interest
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Carrefour Egypt (كارفور مصر) | Supermarket — mixed goods | 14% / exempt food mix | Partial |
-| Spinneys Egypt | Premium supermarket | 14% | Yes |
-| Seoudi Market | Upscale grocery | 14% | Yes |
-| Metro Markets (ميترو) | Wholesale/cash-and-carry | 14% | Yes |
-| Office 1 Egypt | Office supplies | 14% | Yes |
-| B.Tech | Electronics retailer | 14% | Yes |
-| Xcite | Electronics | 14% | Yes |
+| Event | Consequence | Source |
+|---|---|---|
+| Unpaid tax | Additional tax 1.5% a month or part month from the end of the payment period | VAT Law art. 1 |
+| ETA amends after year 3 | No additional tax from the end of year 3 to the notice | Art. 15 |
+| Return or payment late up to 60 days; wrong data raising the tax | Fine EGP 3,000 to 50,000 plus tax, tripled on repeat | UTPL, Part 9 |
+| Return over 60 days late | Fine EGP 5,000 to 200,000, doubled on repeat within 3 years | UTPL, Part 9 |
+| Other non-evasion breaches under the VAT law | 1% of the tax due, minimum EGP 1,000, maximum EGP 10,000, doubled within 3 years | Fine article as replaced by Law 3/2022 |
+| Evasion, such as no invoices, wrongful credit, late registration, 60 days past due unpaid | 3 to 5 years in prison and/or fine EGP 5,000 to 50,000 | Arts. 67, 68 |
+| Non-resident registrant in default | Minister may seek a block on access to the Egyptian market | Art. 67 bis, Law 3/2022 |
+| Settlement | Tax, additional tax and half the tax as compensation for evasion | Art. 73 |
 
-### 3.7 Software and digital services
+Law 152/2026 renews the Law 79/2016 dispute settlement scheme; Decision 450/2026 sets the application.
 
-**Software and digital services**
+## Cross-border points
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Odoo Egypt | ERP — B2B | 14% | Yes |
-| Fintech Galaxy / Khazna | Fintech platform | 14% | Yes |
-| Microsoft Egypt (Azure, M365) | Cloud services — B2B | 14% (buyer reverse-charge) | Yes |
-| Google Egypt (Workspace, Ads) | Digital services — B2B | 14% (buyer reverse-charge) | Yes |
-| Amazon AWS Egypt | Cloud — B2B | 14% (buyer reverse-charge) | Yes |
-| Zoom Egypt | Video conferencing — B2B | 14% (buyer reverse-charge) | Yes |
-| ETA e-Invoice portal fees | System fees (if any) | 14% | Yes |
+- **Imported goods:** VAT at customs clearance, no final release before payment (art. 31). Not collected where a non-resident registrant already collected it (art. 5).
+- **Imported services for your taxable business:** you are importer and supplier together (art. 32); put it in Form 10.
+- **Services not needed for your business, or received by a government or other body:** pay within 30 days on Form 111 unless the supplier uses the simplified system (art. 32).
+- **Non-residents selling to unregistered customers:** register on the ETA portal on the simplified form, personally or through a representative. Input credit does not apply, but a refund claim can be filed electronically (Regulations as amended by Decision 24/2023). ETA can treat a non-applicant as registered by notice.
+- **Free zones:** taxed when goods or services enter for local consumption inside the zone or the local market (art. 7).
+- **Transit goods and services on them:** no tax, if carried under customs control (art. 5, Law 149/2026).
 
-### 3.8 Professional services
+## Two worked examples that recompute
 
-**Professional services**
+**Example 1. Mixed seller.** A Cairo firm sells EGP 3,000,000 taxable and EGP 1,000,000 exempt. Direct taxable inputs bear EGP 140,000 VAT, and shared overheads bear EGP 56,000. Output is EGP 420,000. Shared credit is 75%, EGP 42,000. Payable is EGP 238,000.
 
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Certified Public Accountant (محاسب قانوني) | Audit, tax advisory | 14% | Yes |
-| Law firm (مكتب محاماة) | Legal services | 14% | Yes |
-| Engineering / consulting firm | Technical consulting | 14% | Yes |
-| Advertising agency | Marketing, PR | 14% | Yes |
-| Recruitment firm | HR services | 14% | Yes |
-
-### 3.9 Insurance
-
-**Insurance**
-
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Misr Insurance (مصر للتأمين) | All lines | Exempt | No |
-| Suez Canal Insurance | Marine, property | Exempt | No |
-| AXA Egypt | Health, motor, property | Exempt | No |
-| Allianz Egypt | Business insurance | Exempt | No |
-
-### 3.10 Healthcare
-
-**Healthcare**
-
-| Supplier | Typical description | VAT rate | Input credit |
-| --- | --- | --- | --- |
-| Private hospital / clinic | Medical treatment | Exempt | No |
-| Pharmacy (صيدلية) | Medicines | Exempt | No |
-| Medical equipment supplier | Devices | 5% (reduced) | Yes |
-| Seif Pharmacy / El-Ezaby | Pharmacy chain | Exempt (medicines) | No |
-
-## Section 4 — Worked examples
-
-### Example 1 — Standard VAT on service sale
-
-**Scenario:** Cairo-based IT consulting firm issues e-Invoice to Egyptian corporate client.
-
-**Bank statement line (CIB format):**
-```
-Date        : 15/04/2025
-Transaction : Credit Transfer
-Description : TECH SOLUTIONS CO — INV-2025-041 — IT CONSULTING SERVICES
-Amount      : +EGP 570,000.00
-Balance     : EGP 2,570,000.00
+```oa-check
+name: Mixed seller, one month
+inputs:
+  taxable: 3000000
+  exempt: 1000000
+  direct_input: 140000
+  shared_input: 56000
+steps:
+  - output: taxable * 0.14
+  - share: taxable / (taxable + exempt)
+  - shared_credit: shared_input * share
+  - payable: output - direct_input - shared_credit
+expected:
+  output: 420000.00
+  shared_credit: 42000.00
+  payable: 238000.00
 ```
 
-**Working:**
-- ETA e-Invoice: net EGP 500,000 + VAT 14% EGP 70,000 = EGP 570,000
-- Return entry: Section A — EGP 500,000 | Output VAT: EGP 70,000
+**Example 2. Should a small B2B trader register voluntarily?** Sales are EGP 400,000 a year, below the limit, and purchases EGP 250,000 net carry 14% VAT. Unregistered, the VAT of EGP 35,000 is a cost. Registered, the trader charges business customers EGP 56,000, who can claim it, and credits the EGP 35,000. Registering saves EGP 35,000 if customers accept the same net price. If the customers are consumers who pay a fixed price of EGP 400,000, the VAT comes out of that price: net sales are EGP 350,877.19 and output VAT EGP 49,122.81, so the trader ends EGP 14,122.81 worse off. Decide on who the customers are.
 
-### Example 2 — Export of services (zero-rated)
-
-**Scenario:** Egyptian software firm exports SaaS to UK client. Payment in GBP.
-
-**Bank statement line (NBE format):**
-```
-Date        : 20/04/2025
-Transaction : Foreign Currency Credit
-Description : BRITISH TECH LTD UK — SaaS SUBSCRIPTION APR 2025
-Amount      : +EGP 1,250,000.00 (GBP 28,000)
-```
-
-**Working:**
-- Export of services consumed outside Egypt by foreign entity — 0% VAT
-- Requires: contract, bank transfer evidence, service agreement showing UK consumption
-- Return entry: Section C — EGP 1,250,000 | VAT: EGP 0
-
-### Example 3 — Reverse-charge on foreign digital service
-
-**Scenario:** Company pays for Microsoft Azure (billed from Microsoft Ireland).
-
-**Bank statement line (Banque Misr format):**
-```
-Date        : 05/04/2025
-Transaction : Foreign Payment / SWIFT
-Description : MICROSOFT IRELAND — AZURE CLOUD SERVICES APR 2025
-Amount      : -EGP 112,000.00
+```oa-check
+name: Voluntary registration, both ways
+inputs:
+  sales: 400000
+  purchases: 250000
+steps:
+  - input_vat: purchases * 0.14
+  - b2b_gain: input_vat
+  - consumer_net: sales / 1.14
+  - consumer_output: sales - consumer_net
+  - consumer_change: input_vat - consumer_output
+expected:
+  input_vat: 35000.00
+  b2b_gain: 35000.00
+  consumer_output: 49122.81
+  consumer_change: -14122.81
 ```
 
-**Working:**
-- Foreign digital service to Egyptian business — taxable in Egypt
-- Self-assess: EGP 112,000 × 14/114 = EGP 13,754 VAT (or EGP 98,246 net + EGP 13,754 VAT)
-- Declare as output VAT AND claim as input — net zero for fully taxable business
-- Include in VAT return both output (Section E) and input (Section I)
+## Ask the client first
 
-### Example 4 — Fawry payment collection (14% service fee)
+1. Annual sales, taxable and exempt, and whether a Law 6/2025 election is in place.
+2. What is sold, with Schedule and exempt item checked. Any mix?
+3. Importer, exporter, distribution agent, or non-resident?
+4. Any services bought from abroad, and needed for the business or not?
+5. Any item touched by the 2025 or 2026 changes: contracting, commercial rent, gypsum, detergents, gas, machinery?
+6. Existing credit balance and how many periods old.
 
-**Scenario:** Company uses Fawry to collect customer payments; Fawry charges a collection fee.
+### Working defaults when facts are missing
 
-**Bank statement line (QNB Alahli format):**
-```
-Date        : 30/04/2025
-Transaction : Debit — Service Fee
-Description : FAWRY FOR BANKING TECHNOLOGY — APR 2025 COLLECTION FEE
-Amount      : -EGP 57,000.00
-```
+| Gap | Default |
+|---|---|
+| Rate unknown | 14% |
+| 5% unclear | 14% until the use is shown |
+| Export papers incomplete | Domestic 14% |
+| Business use unknown | No credit |
+| No tax invoice | No credit |
 
-**Working:**
-- Fawry e-Invoice: net EGP 50,000 + VAT 14% EGP 7,000 = EGP 57,000
-- Input credit: EGP 7,000 — deductible (business service)
-- Return entry: Section F — EGP 50,000; Input VAT: EGP 7,000
+Review prompts for the reviewer's file: single transaction above EGP 500,000; tax effect of one default above EGP 70,000; one party above 40% of sales or purchases; more than four defaults in a return; net position above EGP 1,000,000.
 
-### Example 5 — Import of goods (customs VAT)
+### Reading bank lines and supplier types
 
-**Scenario:** Importing machinery from Germany. EGP equivalent at import.
+| Line or supplier type | Treatment |
+|---|---|
+| Bank fees | Exempt where reserved to banks, no input VAT |
+| Insurance premiums | Exempt |
+| Electricity | Exempt |
+| Water distribution | Exempt; bottled water taxed |
+| Hospitals, clinics, medicines | Exempt, other than non-medical cosmetic and slimming work |
+| Rail, metro, taxi, air passenger fares | Exempt, other than the carve-outs above |
+| Accountant, lawyer, consultant | Schedule 10%, no credit for the buyer |
+| Advertising agency | 14% |
+| Foreign cloud or software with SWIFT debit | Imported service; Form 10 twice if business use |
+| Customs payment | VAT claimable with customs certificate and receipt |
+| Foreign currency credit | Check export papers before 0% |
 
-**Bank statement line (CIB format):**
-```
-Date        : 08/04/2025
-Transaction : Customs Payment
-Description : CUSTOMS DUTY + VAT — BAYAN 2025-EG-04-7890 — INDUSTRIAL MACHINERY
-Amount      : -EGP 700,000.00
-```
+Keep a working paper with date, party, registration number, invoice reference, net, rate, VAT, in or out, flags; tabs for sales, purchases, customs, foreign services, summary and queries. Without invoices, net is total divided by 1.14 for estimating only; no input credit without a tax invoice. Refer partial credit disputes, refunds, free zone cases and real estate questions to a licensed Egyptian adviser.
 
-**Working:**
-- Customs declaration: CIF value EGP 4,000,000 + customs duty EGP 1,000,000 = EGP 5,000,000 × 14% = EGP 700,000 VAT
-- Pay at customs; claim as input VAT in monthly return (Section H)
-- Input credit: EGP 700,000 — full credit if machinery for taxable production
+## Sources
 
-### Example 6 — Monthly return summary
+| Source | URL | Read on |
+|---|---|---|
+| Law 67/2016, whole law, schedules and exempt list, read by OCR, key pages by image; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-01 |
+| Law 149/2026, all pages by image or OCR; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf | 2026-11-01 |
+| Correction notice for Laws 149 to 151 of 2026; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
+| Law 157/2025, arts. 2, 4, 5, 6; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf | 2026-11-01 |
+| Law 3/2022, whole law; archived copy, ETA refused the direct connection; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf | 2026-11-01 |
+| Regulations, Decree 66/2017, arts. searched, not the whole; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf | 2026-11-01 |
+| Decision 24/2023, non-resident parts; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.24-2023.pdf | 2026-11-01 |
+| Decision 417/2025; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.417.of_.2025.pdf | 2026-11-01 |
+| UTPL Law 206/2020, art. 31, refund and penalty chapters; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law 6/2025, arts. 3, 5, 12; opened and read on the page for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
+| ETA FAQ, returns (VAT), 2nd edition; archived copy; opened and read on the page for the figures cited | https://web.archive.org/web/2026/https://eta.gov.eg/sites/default/files/2024-12/faqs-value-added-tax.v2.pdf | 2026-11-01 |
+| ETA VAT laws list and VAT forms page, sales sheet archived copy; opened and read on the page for the figures cited | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-01 |
 
-**Monthly return summary**
-
-| Item | Net (EGP) | VAT (EGP) |
-| --- | --- | --- |
-| Domestic sales at 14% | 3,000,000 | 420,000 |
-| Export sales (0%) | 1,000,000 | 0 |
-| Total Output | 4,000,000 | 420,000 |
-| Local purchases | 1,500,000 | 210,000 |
-| Import VAT (customs) | 2,000,000 | 280,000 |
-| Foreign services (reverse-charge) | 200,000 | 28,000 |
-| Total Input | 3,700,000 | 518,000 |
-| **Excess input c/f** |  | **98,000** |
-
-## Section 5 — Tier 1 rules (compressed)
-
-**Rate assignment:**
-- 14% standard: most goods and services
-- 5%: selected equipment and machinery (check ETA reduced-rate schedule)
-- 0%: exports of goods with customs declaration, services exported to non-residents consumed outside Egypt, international transport
-- Exempt: financial services, insurance, medical services by licensed practitioners, educational services, residential rent, public transport (ENR, metro)
-
-**Input credit:**
-- Credit allowed on all taxable purchases for taxable business activities
-- No credit on exempt purchases (financial services, insurance)
-- Reverse-charge on imported services: output and input net to zero for fully taxable businesses
-- Import VAT paid at customs: claim as input in same month's return with customs declaration
-- e-Invoice requirement: from October 2020 ETA made e-invoice mandatory — invoices without valid ETA UUID have contested input credit eligibility
-
-**Filing mechanics:**
-- File monthly via ETA online portal by last day of following month
-- All B2B sales require ETA e-Invoice (UUID-stamped) transmitted to ETA in real time
-- Excess input VAT carries forward; refunds available for exporters after ETA audit
-
-## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
-
-**Tier 2 catalogue**
-
-| Item | Why unknowable | What to ask |
-| --- | --- | --- |
-| Reduced-rate machinery (5%) | Whether specific item is on the ministerial reduced-rate schedule | "Provide item description and HS code — need to check ETA 5% schedule." |
-| Mixed-use property rent | Commercial (14%) vs residential (exempt) | "Is the lease for commercial or residential use? Provide contract." |
-| Export qualification | Whether service consumed outside Egypt | "Where is the customer? Evidence of offshore service consumption?" |
-| Foreign digital service | B2B (reverse-charge) vs B2C — determines who accounts | "Is buyer an Egyptian TRN-registered entity?" |
-| Vehicle purchase | Business vs personal — determines input credit eligibility | "Is this vehicle registered in the company's name for business use?" |
-| Entertainment | Must prove business purpose for input credit | "List attendees and business purpose." |
-| e-Invoice validity | Old paper invoices may not qualify for input credit post-mandate | "Confirm supplier is ETA e-Invoice registered — provide UUID reference." |
-
-## Section 7 — Excel working paper
-
-**Columns:** Date | Supplier/Customer | TRN | ETA Invoice UUID | Net (EGP) | VAT Rate % | VAT (EGP) | In/Out | Zero-rated? | Exempt? | Tier 2 flag | Notes
-
-**Tab structure:**
-1. `Output_Sales` — all sales by rate
-2. `Input_Purchases` — all purchases with VAT credit
-3. `Import_Customs` — import VAT paid at customs
-4. `ReverseCharge_Foreign` — foreign services
-5. `VATSummary` — monthly return totals
-6. `Tier2_Items` — awaiting client response
-
-## Section 7 — Excel working paper
-
-- **Key formula** — Net_VAT = Total_Output_VAT - Total_Input_VAT - Prior_Excess_Credit
-
-## Section 8 — Bank statement reading guide
-
-### CIB format
-
-```
-Date        : 15/04/2025
-Transaction : Credit Transfer
-Description : COMPANY NAME — INV-2025-041 — SERVICE DESCRIPTION
-Amount      : +EGP 570,000.00
-Balance     : EGP 2,570,000.00
-```
-
-### NBE (National Bank of Egypt) format
-
-```
-15/04/2025  |  Incoming Transfer  |  COMPANY NAME  |  REF: INV-041  |  +570,000.00 EGP
-```
-
-### Key patterns:
-
-- **EGP number format:** Comma = thousands; period = decimal (EGP 570,000.00)
-- **Foreign Currency Credit:** Foreign payment — check for export zero-rate or reverse-charge
-- **Customs Payment:** Import duty + VAT — claim VAT as input with customs declaration
-- **SWIFT/Foreign Payment:** May trigger reverse-charge on imported services
-
-## Section 9 — Onboarding fallback
-
-- **When client cannot provide ETA e-Invoices for all transactions** — 1. Use bank statement amounts as VAT-inclusive totals and back-calculate: - Net = Total ÷ 1.14 | VAT = Total − Net 2. Apply conservative defaults: 14% output; 0% input credit without ETA e-Invoice UUID 3. Flag all items without e-Invoice UUID in Tier2_Items tab 4. Issue data request listing missing invoice references 5. Warn client: ETA can disallow input credit for invoices without valid UUID — systemic risk if supplier not e-Invoice registered
-
-## Section 10 — Reference material
-
-**Reference material**
-
-| Resource | Reference |
-| --- | --- |
-| ETA e-Invoice portal | https://invoicing.eta.gov.eg |
-| ETA main portal | https://www.eta.gov.eg |
-| VAT Law No. 67 of 2016 | ETA website — legislation section |
-| VAT Executive Regulations | Ministerial Decree 2017 |
-| ETA e-Invoice mandatory rules | ETA Decree 2020/2021 — phased rollout |
-| Reduced rate schedule | Annex to VAT Law — ministerial updates |
+Not yet confirmed: the number of the fine article (Law 3/2022 prints 50, while the base law text sits at art. 66); e-invoice and e-receipt scope and phases (old text said mandatory for all registered businesses; the decisions were not read); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); UTPL Part 9 article numbers; whether any later law changed the 1.5% additional tax or the art. 15 and art. 48 periods after UTPL; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
 
 ## Disclaimer
 
