@@ -1,0 +1,20 @@
+{
+  "url": "https://www.logting.fo/media/05llq3vx/1983t.pdf?ar=1983",
+  "final_url": "https://www.logting.fo/media/05llq3vx/1983t.pdf?ar=1983",
+  "status": 200,
+  "bytes": 24211926,
+  "sha256": "1d142f190312bc17b5e26ccff821775a97a831f49fbc07fbbd7cdeb01b040be6",
+  "read_date": "2026-10-31",
+  "read_pdf_pages": [
+    89,
+    91
+  ],
+  "printed_pages": [
+    64,
+    66
+  ],
+  "visual_review": true,
+  "full_pdf_location": "/private/tmp/faroe-1983-parliament.pdf",
+  "full_pdf_added_to_repository": false,
+  "web_tool_access": "Rejected size24211926bytes; ordinary direct official download HTTP200 succeeded."
+}

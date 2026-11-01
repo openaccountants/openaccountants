@@ -1,218 +1,156 @@
 ---
 name: ma-financial-statements
-description: "Use this skill whenever asked about financial statements, statutory accounts, or financial reporting obligations for self-employed people and small businesses in Morocco — who has to prepare formal accounts and who does not, the CGNC framework, the components of the états de synthèse (Bilan, CPC, ESG, Tableau de financement, ETIC), the normal vs simplified model, when IFRS applies, how accounts are filed with the DGI and deposited at the commercial court (dépôt légal), and when a statutory auditor (commissaire aux comptes) is required. Trigger on phrases like \"Morocco financial statements\", \"états de synthèse\", \"bilan CPC Maroc\", \"do I file accounts Morocco\", \"comptes annuels Maroc\", \"CGNC états de synthèse\", \"tableau de financement\", \"ETIC\", \"commissaire aux comptes Maroc\", \"dépôt des comptes Maroc\", \"القوائم المالية المغرب\", \"الميزانية المغرب\". Frame for a self-employed reader: auto-entrepreneur and CPU taxpayers do NOT prepare formal financial statements (they keep simple registers — cross-ref ma-bookkeeping); résultat net réel (RNR) taxpayers and companies prepare the full états de synthèse under the CGNC, and résultat net simplifié (RNS) prepares a reduced set. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-bookkeeping, morocco-professional-income-tax, ma-cpu, and ma-auto-entrepreneur."
-version: 1.0
+description: "Use this skill whenever asked about financial statements, statutory accounts, or financial reporting obligations for self-employed people and small businesses in Morocco for tax year 2026: who has to prepare formal accounts and who does not, the etats de synthese (Bilan, CPC, ESG, Tableau de financement, ETIC), how accounts go to the DGI with the return, deposit at the court registry (depot legal), and when a statutory auditor (commissaire aux comptes) is required. Trigger on phrases like \"Morocco financial statements\", \"états de synthèse\", \"bilan CPC Maroc\", \"do I file accounts Morocco\", \"comptes annuels Maroc\", \"CGNC états de synthèse\", \"tableau de financement\", \"ETIC\", \"commissaire aux comptes Maroc\", \"dépôt des comptes Maroc\", \"القوائم المالية المغرب\", \"الميزانية المغرب\". Auto-entrepreneur and CPU taxpayers fall outside CGI Art. 145; RNS keeps the Art. 145-VI registers; RNR taxpayers and companies keep accounts under Art. 145-I. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-bookkeeping, morocco-professional-income-tax, ma-cpu, and ma-auto-entrepreneur."
+version: 1.1
 jurisdiction: MA
-tax_year: 2025
-last_updated: 2026-10-31
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
-category: international
+category: financial-statements
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# MA Financial Statements
+# MA Financial Statements v1.1
 
-## Morocco — Financial Statements & Financial Reporting (États de Synthèse)
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This skill tells an AI agent **who has to prepare formal financial statements** in Morocco, **what those statements are**, and **how they are filed** — organised by tax regime and legal form. It does **not** compute the tax (that is `morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`) and it does **not** govern the underlying books and invoices (that is `ma-bookkeeping`). It governs the **output** of the accounting system: the **états de synthèse** under the **Code Général de Normalisation Comptable (CGNC)**.
+Tax year 2026. Law: Code General des Impots (CGI), 2026 edition; Law 17-95 (SA); Law 5-96 (SARL and other companies). Currency: MAD.
 
-The central message for a self-employed reader:
+## What this file is
 
-- **Auto-entrepreneur (AE)** and **Contribution Professionnelle Unique (CPU)** taxpayers do **NOT** prepare formal financial statements. They keep **simple registers** (registre des recettes / registre des recettes et des achats — see `ma-bookkeeping`). No bilan, no CPC.
-- **Résultat Net Réel (RNR)** taxpayers and **companies (SARL, SA, etc.)** prepare the **full états de synthèse** under the CGNC.
-- **Résultat Net Simplifié (RNS)** prepares a **reduced set** of statements.
+This skill tells an AI agent who has to prepare formal financial statements in Morocco, what those statements are, and how they are filed, by tax regime and legal form. It loads on top of `income-tax-workflow-base`. It does not compute tax (`morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`) and does not govern day-to-day books and invoices (`ma-bookkeeping`). It governs the output: the etats de synthese. The reviewer is the customer: the skill produces a working paper and a brief, not a filing.
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (CGNC, états de synthèse, bilan, CPC, ESG, tableau de financement, ETIC, commissaire aux comptes, dépôt légal, DGI) and explain them in the user's chosen language.
+Reply in the user's language. Moroccan users mix English, French and Darija; keep the native terms (CGNC, etats de synthese, bilan, CPC, ESG, tableau de financement, ETIC, commissaire aux comptes, depot legal, DGI) and explain them.
 
-## 1. Quick Reference
+## Scope statement
 
-**Quick Reference**
+Covered: auto-entrepreneur (AE), contribution professionnelle unique (CPU), resultat net simplifie (RNS), resultat net reel (RNR), and commercial companies (SARL, SA, SNC, SCS, SCA). Out of scope: tax computation, invoice rules, and bank, insurer or listed-group consolidated reporting, which go to a licensed Moroccan professional.
 
-| Field | Value |
-| --- | --- |
-| Country | Morocco (MA) |
-| Scope | Financial statements / financial reporting obligations by regime and legal form |
-| Currency | MAD (dirham marocain, DH) |
-| Authority | **Direction Générale des Impôts (DGI)** — tax.gov.ma (filing with the tax return); **greffe du tribunal de commerce** (dépôt légal) |
-| Standards | **CGNC** (Code Général de Normalisation Comptable) for statutory/individual accounts; **IFRS** for banks/insurers and (optionally) listed groups — consolidated accounts only |
-| Accounting law | **Loi 9-88** on accounting obligations of traders (dahir 25 Dec 1992); **Code de Commerce** |
-| Who prepares full états de synthèse | **RNR** taxpayers + **companies** (SARL, SA, SNC, SCS…) |
-| Who prepares a reduced set | **RNS** taxpayers (simplified presentation) *(verify the exact reduced set)* |
-| Who prepares NONE | **Auto-entrepreneur** and **CPU** — registers only (see `ma-bookkeeping`) |
-| États de synthèse — modèle normal | **5 components**: **Bilan**, **CPC**, **ESG**, **Tableau de financement (TF)**, **ETIC** — for turnover ≥ **MAD 10,000,000** *(verify threshold)* |
-| États de synthèse — modèle simplifié | **Reduced set** (Bilan + CPC at minimum; ESG dropped) — for turnover < **MAD 10,000,000** *(verify exact components — sources disagree)* |
-| Filing with DGI | États de synthèse **attached to the annual IS/IR return** via **SIMPL** (SIMPL-IS / SIMPL-IR), filed electronically |
-| IS return deadline | Within **3 months** of financial year-end (e.g. **31 March** for a calendar-year close) *(verify)* |
-| Dépôt légal (commercial court) | Companies deposit états de synthèse at the **greffe du tribunal de commerce** within **30 days** of approval by the assemblée générale, now via electronic platform *(verify)* |
-| Audit (commissaire aux comptes) | **Mandatory for all SA**; **SARL and others when turnover > MAD 50,000,000 (HT)** *(verify)* |
-| Non-dépôt penalty | Fine reported at **MAD 10,000–50,000** for failure to deposit at the court *(verify amount and article)* |
-| Contributor | Open Accountants Community |
-| Quality tier | **Research-verified — pending sign-off by a Moroccan accountant (expert-comptable)** |
-| Version | 1.0 |
-| Last research update | May 2026 |
+| Taxpayer | Tax code requirement | Output |
+|---|---|---|
+| AE | CGI Art. 145 does not apply (Art. 145-XI) | No bilan or CPC under the CGI; records go to `ma-bookkeeping` |
+| CPU | CGI Art. 145 does not apply (Art. 145-XI) | No bilan or CPC under the CGI; records go to `ma-bookkeeping` |
+| RNS | Registers, year-end lists, stock inventories, depreciation register (Art. 145-VI) | Result under Art. 38-II with the bridge to the tax result; closes 31 December (Art. 38-I) |
+| RNR | Accounts under the law in force, in electronic format (Art. 145-I), year-end inventories (Art. 145-II) | Accounts and annexes with the IR return (Art. 82-I) |
+| Company | Same (Art. 145-I), taxed or exempt (Art. 20-I) | Etats de synthese, IS return annexes, court deposit, audit if triggered |
 
-### Conservative defaults
+Do not tell an RNS taxpayer the old line that a fixed "reduced set" of statements applies: the CGI sets registers and lists, and any commercial-law duty for a trader under Law 9-88 goes to the reviewer.
 
-When the regime, legal form, turnover, or threshold is missing or ambiguous, the agent applies the **conservative default** and flags it for the reviewer:
+### What changes as a self-employed person grows
 
-- **Regime/form unknown** → assume the taxpayer **must prepare full états de synthèse under the CGNC** until AE/CPU status is confirmed; never tell someone they are exempt from accounts without confirming the regime.
-- **AE/CPU confirmed** → confirm they prepare **no formal financial statements** (registers only) and route the books question to `ma-bookkeeping`.
-- **Turnover near the MAD 10,000,000 line** → assume the **modèle normal (5 statements)** applies, not the simplified model.
-- **Turnover near the MAD 50,000,000 line** (non-SA) → assume a **commissaire aux comptes is required** and warn the user to engage one.
-- **Any figure marked *(verify)*** → present as provisional; the reviewer confirms against the current CGNC / CGI / Loi de Finances 2026 / Code de Commerce before relying on it.
+1. **AE.** Turnover collected up to MAD 500,000 (commercial, industrial, craft) or MAD 200,000 (services) (Art. 42 ter). No bilan, no CPC.
+2. **CPU.** Turnover up to MAD 2,000,000 or MAD 500,000 (Art. 41-II). Still no bilan under the CGI.
+3. **RNR.** Applies if the CPU limits are passed for two consecutive years, from 1 January of the following year (Art. 41-II), and to an AE in the same position unless RNS or CPU is chosen (Art. 43-4). Accounts now go with the IR return.
+4. **Company.** Etats de synthese, IS return, court deposit, and an auditor if it is an SA or passes the turnover test. Incorporation is not freelancing with a logo: it brings deposited accounts and possibly audit, all absent for AE and CPU.
 
-## 2. Who Prepares What
+## Filing requirements
 
-Match the taxpayer to a row first. The obligation scales sharply with regime and legal form.
+| Who | What | Deadline | Source |
+|---|---|---|---|
+| Company | Tax result return with annexes and sales statement by client | Within 3 months of year end | CGI Art. 20-I |
+| Nil or loss-making company | Explanatory statement with the return; MAD 2,000 fine if still missing 15 days after a letter | With the return | CGI Art. 20-IV, 198 bis |
+| RNR or RNS individual | Annual income return | Before 1 May | CGI Art. 82-I |
+| Nil or loss-making RNR or RNS | Explanatory statement | With the return | CGI Art. 82-IV |
+| SARL | Accounts approved by the members | Within 6 months of year end | Law 5-96 Art. 70 |
+| SA | Ordinary general meeting; one extension by court order | Within 6 months of year end | Law 17-95 Art. 115 |
+| SA | Two copies of the etats de synthese and the auditor's report to the court registry; electronic deposit allowed | Within 2 months of approval | Law 17-95 Art. 158 |
+| SARL, SNC, SCS, SCA | Two copies of the etats de synthese and any auditor's report to the court registry | Within 30 days of approval | Law 5-96 Art. 95 |
+| All taxpayers | Keep accounting documents | 10 years; electronically if accounts must be electronic | CGI Art. 211 |
 
-**Who Prepares What**
+E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were not read; see Not yet confirmed.
 
-| Taxpayer | Formal financial statements? | What they produce | Frame |
-| --- | --- | --- | --- |
-| **Auto-entrepreneur (AE)** | **No** | Register of receipts only (see `ma-bookkeeping`) | Tax is libératoire on collected turnover; no bilan, no CPC |
-| **CPU** | **No** | Register of receipts **and** purchases + vouchers | Exempt from CGNC états de synthèse |
-| **RNS (résultat net simplifié)** | **Reduced** | Simplified états de synthèse | Full bookkeeping foundation, abbreviated statements |
-| **RNR (résultat net réel)** | **Yes — full** | Complete états de synthèse (CGNC) | Same obligation as a company on the reporting side |
-| **Company (SARL, SA, …)** | **Yes — full** | Complete états de synthèse (CGNC); IFRS if bank/insurer/listed group | Plus dépôt légal and possibly audit |
+## Rates and thresholds
 
-### 2.1 What changes as a self-employed person grows
+| Item | Amount | Source | URL |
+|---|---|---|---|
+| RNS exit limit, commercial | MAD 2,000,000 | CGI Art. 39 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| RNS exit limit, services | MAD 500,000 | CGI Art. 39 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Auditor, SARL | Turnover above MAD 50,000,000 excluding taxes at a year end | Law 5-96 Art. 80 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
+| Auditor, SNC and SCS | Turnover above MAD 50,000,000 excluding taxes at year end | Law 5-96 Art. 12, 21 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
+| Late filing surcharge | 5% up to 30 days; 15% after; 20% on assessment | CGI Art. 184 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Missing deposit, SARL managers | MAD 10,000 to 50,000 | Law 5-96 Art. 108 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
+| Missing deposit, SA directors | MAD 10,000 to 50,000; extra 2 months with MAD 5,000 late penalty | Law 17-95 Art. 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf |
+| No etats de synthese, SARL managers | MAD 2,000 to 40,000 | Law 5-96 Art. 109 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
+| No etats de synthese, SA directors | MAD 20,000 to 200,000 | Law 17-95 Art. 386 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf |
 
-This is the core narrative for the reader:
+## Computation rules
 
-1. **Start as auto-entrepreneur** → keep a **register of receipts**. You do **not** prepare or file any financial statements. Your tax is computed on collected turnover (see `ma-auto-entrepreneur`).
-2. **CPU** → keep a **register of receipts and purchases**. Still **no** formal financial statements.
-3. **Move to RNR** (by option, or because the turnover ceiling was exceeded for two consecutive years — verify in `morocco-professional-income-tax` / `ma-cpu`) → you now prepare the **full états de synthèse under the CGNC** every year and attach them to your **IR return** via SIMPL-IR. This is a large step up in obligation.
-4. **Incorporate (e.g. SARL)** → the company prepares **full états de synthèse**, attaches them to the **IS return** via SIMPL-IS, **deposits** them at the **greffe du tribunal de commerce** (dépôt légal), and appoints a **commissaire aux comptes** if it is an SA or if turnover exceeds **MAD 50,000,000 HT**.
+1. Identify the regime and legal form. If unknown, assume accounts are required until AE or CPU status is confirmed (CGI Art. 145-XI). Never call someone exempt on a guess.
+2. AE or CPU confirmed: say no bilan or CPC is required by the CGI, and route records to `ma-bookkeeping`.
+3. RNS: list the Art. 145-VI items: registers of receipts and payments, third-party list, stock inventory, depreciation register.
+4. RNR or company: prepare the statements below for the return annexes (Art. 20-I, 82-I).
+5. Company: compute the deadlines from year end and from approval, using the Filing table.
+6. Test audit: SA always (Law 17-95 Art. 159); SA calling on public savings, banks, credit, investment, insurance, capitalisation and savings companies at least two auditors; SCA always (Law 5-96 Art. 34); SARL, SNC and SCS on the turnover line (SCS through Art. 21). Turnover near MAD 50,000,000: warn the user to line up an auditor.
 
-> The agent must not let the reader assume incorporation is "the same as freelancing with a logo". Incorporation brings **published accounts, dépôt légal, and possible statutory audit** — all absent for AE/CPU.
+### The statements
 
-## 3. The États de Synthèse (CGNC Components)
+The official model 100/IS/N annex set (normal accounting model), as filed by a Moroccan issuer on the AMMC site, carries the ESG and the Tableau de financement alongside the bilan and CPC. CGI Art. 82-I names the bilan, the compte de produits et charges and the etat des informations complementaires for participation companies.
 
-The **CGNC** (Code Général de Normalisation Comptable) is Morocco's accounting framework. It offers **two models** depending on size; the components below are the **modèle normal** set.
+- **Bilan:** position at the closing date, assets against equity and liabilities, with actif immobilise, actif circulant and tresorerie-actif on one side and financement permanent, passif circulant and tresorerie-passif on the other.
+- **CPC (compte de produits et charges):** revenue and charges for the year, split into exploitation, financier and non courant, ending in the net result.
+- **ESG (etat des soldes de gestion):** how the net result forms, and the capacite d'autofinancement (CAF).
+- **Tableau de financement:** resources and uses over the year.
+- **ETIC (etat des informations complementaires):** notes that explain the bilan and CPC, such as methods, fixed assets and depreciation, debts, provisions and commitments.
 
-The five états de synthèse form **an inseparable whole** (un tout indissociable):
+The turnover line and content of the simplified model were not confirmed. Until they are, prepare the normal model and flag it. The statements are approved by members or shareholders, and the SA auditor certifies them as regular and fair (Law 17-95 Art. 175).
 
-### 3.1 Bilan (balance sheet)
+## Edge cases and special rules
 
-- **Bilan** — The **patrimonial situation** at the closing date: **actif** (assets) on one side, **passif** (equity + liabilities) on the other. Structured by the CGNC masses: **actif immobilisé / actif circulant / trésorerie** and **financement permanent / passif circulant / trésorerie passif**.  _(CGNC)_
+- **Auditor v accountant:** the commissaire aux comptes certifies; the expert-comptable prepares or reviews. An auditor must be on the roll of the Ordre des Experts-Comptables (Law 17-95 Art. 160).
+- **Term:** three financial years (Law 17-95 Art. 163). A company calling on public savings cannot keep the same auditor certifying for more than 12 years (Art. 163 as amended by Law 19-20).
+- **Failure to appoint in an SA:** directors face one to six months' prison and MAD 10,000 to 50,000 fine, or either (Law 17-95 Art. 403).
+- **SARL below the line:** members may appoint an auditor; holders of at least a quarter of the capital may ask the court president to order one (Law 5-96 Art. 80). The old one-tenth figure was wrong.
+- **SNC below the line:** one member may ask the court (Law 5-96 Art. 12).
+- **Individuals:** no sole proprietor is subject to these audit rules, which attach to company forms in Law 17-95 and Law 5-96. An expert-comptable may still be engaged voluntarily.
+- **Listed SA:** publishes its statements in a legal notices journal with the meeting notice (Law 17-95 Art. 156).
+- **IFRS:** a self-employed person or ordinary SARL is not told to use IFRS; bank, insurer and listed-group questions go to a professional. Consolidated accounts are where the old file placed IFRS (see Not yet confirmed).
+- **Lost documents:** inform the inspector by registered letter within 15 days, 30 for force majeure (CGI Art. 211).
 
-### 3.2 CPC — Compte de Produits et Charges (income statement)
+## Worked examples
 
-- **CPC** — The **profit-and-loss** statement: **produits** (revenues) and **charges** (expenses) for the period, split into **exploitation** (operating), **financier** (financial), and **non courant** (non-recurring). Produces the **résultat net** (net result) of the year.  _(CGNC)_
+### Example 1: Freelance developer, auto-entrepreneur
 
-### 3.3 ESG — État des Soldes de Gestion (statement of management balances)
+Software services, turnover collected MAD 190,000, under the MAD 200,000 limit (Art. 42 ter). **Result:** no bilan, no CPC, no court deposit, no auditor. Records go to `ma-bookkeeping`, returns to `ma-auto-entrepreneur`. Flag that RNR or incorporation changes this.
 
-- **ESG** — Two cascading tables showing the **formation of the net result** (via the intermediate management balances — soldes intermédiaires de gestion) and the **capacité d'autofinancement (CAF)** — self-financing capacity. **Required in the modèle normal**; typically **dropped in the modèle simplifié**.  _(CGNC)_
+### Example 2: IT consultant on RNR, thinking of incorporating
 
-### 3.4 Tableau de financement (TF) — financing statement
+Consultancy, turnover MAD 3,000,000, above the MAD 500,000 services limit for two years, so RNR. **As an individual:** accounts under Art. 145-I, return before 1 May, no auditor. **As a SARL closing 31 December 2026:** IS return by 31 March 2027, approval by 30 June 2027, deposit within 30 days of approval. MAD 3,000,000 is below MAD 50,000,000, so no mandatory auditor. Model: flag as unconfirmed and prepare the normal model.
 
-- **Tableau de financement (TF)** — Shows the **variation of resources and uses** over the year (emplois et ressources), i.e. how the business financed its investments and how working capital moved.  _(CGNC)_
+## Self-checks
 
-### 3.5 ETIC — État des Informations Complémentaires (notes)
+1. *"I'm an auto-entrepreneur, do I file financial statements?"* No (Art. 145-XI).
+2. *"CPU, do I prepare a bilan?"* No under the CGI.
+3. *"RNS?"* Art. 145-VI registers and lists.
+4. *"What are the etats de synthese?"* Bilan, CPC, ESG, Tableau de financement, ETIC.
+5. *"Normal or simplified?"* Line unconfirmed: use normal, flag it.
+6. *"Do I use IFRS?"* Not for a freelancer or ordinary SARL.
+7. *"Where do company accounts go?"* With the return, and to the court registry: 2 months (SA), 30 days (others).
+8. *"Do I need a commissaire aux comptes?"* All SA and SCA; SARL, SNC or SCS above MAD 50,000,000; never a sole proprietor.
 
-- **ETIC** — The **explanatory notes** that make the bilan and CPC understandable: accounting methods, detail of fixed assets and depreciation, debt maturity tables, provisions, commitments, and other disclosures required by the CGNC.  _(CGNC)_
+Also check: inputs trace to documents; regime confirmed; figures match 2026; output names unconfirmed items.
 
-### 3.6 Modèle normal vs modèle simplifié
+**Prohibitions.** Do not tell an AE or CPU taxpayer they must prepare a bilan. Do not let an RNR taxpayer or company skip accounts. Do not state the simplified model as settled. Do not tell a sole proprietor they need an auditor. Do not compute tax here. Do not replace a licensed Moroccan expert-comptable or commissaire aux comptes.
 
-**Modèle normal vs modèle simplifié**
+## Sources
 
-|  | Modèle normal | Modèle simplifié |
-| --- | --- | --- |
-| Turnover trigger | **≥ MAD 10,000,000** *(verify)* | **< MAD 10,000,000** *(verify)* |
-| Bilan | Yes | Yes |
-| CPC | Yes | Yes |
-| ESG | **Yes** | **No** (dropped) |
-| Tableau de financement | Yes | *(verify — sources disagree whether it is required)* |
-| ETIC | Yes (full) | Yes (abbreviated) *(verify)* |
+| Source | URL | Read on |
+|---|---|---|
+| CGI 2026 (DGI), Art. 20, 38, 39, 41, 42 ter, 43, 82, 145, 155, 184, 198 bis, 211, read in the DGI PDF text | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| Law 17-95 consolidated to Law 78-12 (AMMC), Art. 115, 156, 158, 159, 160, 163, 175, 386, 403, 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf | 2026-11-01 |
+| Law 19-20, BO 7014, amending Art. 163 of Law 17-95 | https://www.ammc.ma/sites/default/files/LOI%20N%C2%B019-20.pdf | 2026-11-01 |
+| Law 96-21, BO 7376, amends Law 17-95 Art. 12, 130, 245 only as far as read (share form) | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf | 2026-11-01 |
+| Law 5-96, Art. 12, 21, 34, 70, 80, 95, 108, 109, archived copy of Adala dated 22 Feb 2020 (live page refused, later amendments not checked) | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm | 2026-11-01 |
+| Model 100/IS/N annexes, normal model, CFG Marches 2024 filing on AMMC | https://www.ammc.ma/sites/default/files/CFG%20MARCHES%20ETATS%20FINANCIERS%202024.pdf | 2026-11-01 |
 
-> **Caution:** public secondary sources **disagree** on the exact component list of the **modèle simplifié** (some describe two statements, others four). The agent must present the simplified set as **to be confirmed** against the CGNC text and a Moroccan expert-comptable. The reliably distinguishing fact is that the **ESG is not required** in the simplified model.
-
-### 3.7 IFRS — when it applies
-
-- **Banks and credit institutions — mandatory IFRS** — mandatory IFRS for consolidated accounts, from periods beginning Jan 2008  _(Bank Al-Maghrib Circular 56/G/2007)_
-- **Insurance and reinsurance companies** — IFRS required for their financial statements (reported from December 2022) *(verify scope)*
-- **Listed groups (AMMC-regulated)** — an irrevocable option to use IFRS or local GAAP for consolidated accounts; most use IFRS in practice  _(AMMC)_
-
-Morocco's **statutory / individual accounts are always prepared under the CGNC**. **IFRS** applies only to **consolidated accounts** of specific entities:
-
-A **self-employed person or an ordinary SARL does not use IFRS** — they use the **CGNC**. Do not tell a freelancer or a small company to prepare IFRS statements.
-
-## 4. Audit / Commissaire aux Comptes
-
-- **Commissaire aux comptes (CAC)** — A **commissaire aux comptes (CAC)** is the **statutory auditor**, appointed to certify that the états de synthèse are **régulières et sincères**. This is distinct from the **expert-comptable** who prepares/reviews the accounts.
-- **Société Anonyme (SA)** — always requires at least one commissaire aux comptes, regardless of turnover  _(Loi 17-95 (verify))_
-- **SARL and other commercial companies — CAC threshold** — MAD 50,000,000 (HT) MAD (turnover at close of financial year exceeds this amount triggers mandatory CAC *(verify)*)  _(Loi 5-96 (verify))_
-- **CAC on request** — a CAC may also be required by the company statutes, or at the request of partners holding a defined minority stake (reported as ≥ 1/10 of the capital for SARL) *(verify the exact percentage)*
-
-When the appointment is **mandatory** *(verify against Loi 17-95 on SA and Loi 5-96 on SARL/others, as amended)*:
-
-Other points:
-
-- The mandate is typically **3 financial years**, renewable *(verify)*.
-- The CAC must be enrolled with the **Ordre des Experts-Comptables**.
-- **Auto-entrepreneur, CPU, RNS, and RNR individuals are not subject to statutory audit** — the CAC regime is a **company-law** obligation, not a personal-income-tax one. (RNR/RNS taxpayers may still engage an expert-comptable voluntarily.)
-
-> The agent must not tell a sole proprietor (any regime) that they need a commissaire aux comptes. It applies to companies meeting the form/threshold tests above.
-
-## 5. Worked Examples
-
-### Example 1 — Freelance developer, auto-entrepreneur
-
-- Activity: software services; turnover collected ≈ MAD 200,000/year.
-- **Financial statements?** **None.** She keeps a **register of receipts** only (see `ma-bookkeeping`). No bilan, no CPC, no CGNC états de synthèse, no dépôt légal, no commissaire aux comptes.
-- **Filing:** declares collected turnover under the AE channel (see `ma-auto-entrepreneur`); no financial statements are attached.
-- Agent output: confirms **no formal accounts**, routes the records question to `ma-bookkeeping`, and flags that **if she moves to RNR or incorporates**, full états de synthèse under the CGNC begin.
-
-### Example 2 — IT consultant who moved to RNR, then asks about incorporating
-
-- Activity: consultancy; exceeded the service ceiling for two consecutive years, now taxed under **RNR**; turnover ≈ MAD 3,000,000.
-- **As RNR (individual):** must prepare **full états de synthèse under the CGNC** (Bilan, CPC, ESG, TF, ETIC — modèle simplifié components likely apply below MAD 10,000,000, **verify**) and **attach them to the IR return** via **SIMPL-IR**. He may engage an **expert-comptable**, but a **commissaire aux comptes is not required** for an individual.
-- **If he incorporates as a SARL:** the company prepares the **full états de synthèse**, attaches them to the **IS return** (SIMPL-IS), and performs **dépôt légal** at the greffe within **30 days** of the AG approval. A **CAC is not yet required** at MAD 3,000,000 turnover (below the MAD 50,000,000 line and not an SA) *(verify)*.
-- Agent output: distinguishes **RNR-individual** vs **SARL** obligations, flags the modèle normal/simplifié threshold, and notes the **dépôt légal** that incorporation adds.
-
-## 6. Reference + Test Suite
-
-### Legal & source references
-
-- **CGNC** — Code Général de Normalisation Comptable (the accounting framework and the five états de synthèse: Bilan, CPC, ESG, Tableau de financement, ETIC).
-- **Loi 9-88** on the accounting obligations of traders (dahir 25 Dec 1992) — makes CGNC-compliant accounting mandatory.
-- **Code de Commerce** — commercial books and obligations.
-- **Loi 17-95** on the Société Anonyme — commissaire aux comptes for SA; dépôt légal.
-- **Loi 5-96** on the SARL/SNC/SCS — CAC threshold (turnover > MAD 50,000,000 HT) and dépôt légal *(verify article/amendments)*.
-- **CGI** (Code Général des Impôts) — états de synthèse attached to the IS/IR return; IS filing within 3 months of close; SIMPL teleservices *(verify articles)*.
-- **Bank Al-Maghrib Circular 56/G/2007** — IFRS for banks' consolidated accounts.
-- **AMMC** — listed-group consolidated-accounts IFRS option.
-- **Loi de Finances 2026** — current-year confirmation of deadlines/thresholds.
-- Secondary commentary (PwC Morocco, Upsilon Consulting, Deloitte LF 2026, IFRS Foundation jurisdiction profile) used for cross-checking — **not** primary authority.
-
-### Short test suite
-
-1. *"I'm an auto-entrepreneur — do I file financial statements?"* → **No**; register of receipts only (see `ma-bookkeeping`). No bilan/CPC.
-2. *"CPU — do I prepare a bilan?"* → **No**; register of receipts and purchases only; exempt from CGNC états de synthèse.
-3. *"What are the états de synthèse?"* → under the CGNC modèle normal, **five**: **Bilan, CPC, ESG, Tableau de financement, ETIC** (an inseparable whole).
-4. *"Normal vs simplified model?"* → **modèle normal (5 statements)** at turnover ≥ **MAD 10,000,000**; **modèle simplifié** below, with the **ESG dropped** (exact reduced set to verify).
-5. *"Do I use IFRS?"* → only **banks/insurers (mandatory)** and **listed groups (optional)** for **consolidated** accounts; an ordinary self-employed person or SARL uses the **CGNC**.
-6. *"Where do I file my company accounts?"* → **attached to the IS/IR return** via **SIMPL**, and **deposited at the greffe du tribunal de commerce** (dépôt légal, ~30 days after AG approval).
-7. *"Do I need a commissaire aux comptes?"* → **all SA**; **SARL/others when turnover > MAD 50,000,000 HT**; **never** for an AE/CPU/RNS/RNR individual.
-
-## PROHIBITIONS
-
-- **Do NOT** tell an **auto-entrepreneur** or **CPU** taxpayer they must prepare a bilan, a CPC, or any CGNC états de synthèse — they keep **registers only** (`ma-bookkeeping`).
-- **Do NOT** tell an **RNR** taxpayer or a **company** they may skip the full états de synthèse under the CGNC.
-- **Do NOT** state the **modèle simplifié** component list as settled — sources disagree; present it as **to verify**, anchoring only on "ESG is dropped".
-- **Do NOT** tell a self-employed person or an ordinary SARL to prepare **IFRS** statements — IFRS is for banks/insurers/listed groups' **consolidated** accounts.
-- **Do NOT** tell any **sole proprietor** (AE/CPU/RNS/RNR) they need a **commissaire aux comptes** — that is a company-law obligation (SA, or turnover > MAD 50M HT).
-- **Do NOT** state firm thresholds, deadlines, or penalty amounts as settled — present items marked *(verify)* as provisional pending reviewer confirmation against the current CGNC / CGI / Code de Commerce / Loi de Finances 2026.
-- **Do NOT** compute the tax itself here — defer to `morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`; defer the books/invoices to `ma-bookkeeping`.
-- **Do NOT** replace a licensed Moroccan **expert-comptable / commissaire aux comptes**.
+Not yet confirmed: simplified model turnover line (old file: MAD 10,000,000) and its component list (old file: ESG dropped, tableau de financement and ETIC disputed); the old file's CGNC points that the five statements form an inseparable whole and that individual accounts stay under the CGNC with IFRS only for consolidated accounts; an auditor required by the statutes; text of Law 9-88 and the CGNC, including any Law 9-88 duties of traders on RNS, AE and CPU; whether Law 19-20, Law 24-10 or later laws changed Law 5-96 Art. 12, 70, 80, 95, 108, 109; the electronic deposit platform; the list of return annexes set by regulation; SIMPL-IS and SIMPL-IR screens; IFRS scope (Bank Al-Maghrib Circular 56/G/2007 for banks, insurers from 2022, the AMMC option for listed groups); the AE and CPU register contents. Art. 145 bis, cited by the old files, is repealed in the 2026 CGI.
 
 ## Disclaimer
 
-This skill is **research-verified** from public sources (the CGNC, the CGI, the Code de Commerce, Loi 17-95 and Loi 5-96, Bank Al-Maghrib and AMMC materials, the IFRS Foundation jurisdiction profile, the DGI / tax.gov.ma, the Loi de Finances 2026, and reputable professional commentary) and is **pending sign-off by a licensed Moroccan expert-comptable**. It is general information, **not** accounting or tax advice, and does not create a professional engagement. Component lists (especially the **modèle simplifié**), thresholds, deadlines, penalty amounts, and audit triggers change with each Loi de Finances and with amendments to company law — every item marked *(verify)* must be confirmed against current texts before reliance. Always have a licensed Moroccan **expert-comptable** or the **DGI** review before filing or relying on this output. Part of **openaccountants.com** — open-source tax skills for the self-employed.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
 
 <!-- openaccountants-cta-block -->
 

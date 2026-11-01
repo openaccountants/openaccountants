@@ -1,0 +1,172 @@
+{
+  "reviewer": "gibraltar_whole_country_review_20261028",
+  "review_date": "2026-10-28",
+  "reviewed_head": "42697c1cfdd04d72a47abe6bd702dd7cccb84c69",
+  "split_baseline": "43206e9939b3d2add9de213897fbec30aafa9c36",
+  "publication_conclusion": "request_changes",
+  "country_complete": false,
+  "close_issue_398": false,
+  "safe_partial_publication_after_bounded_repairs": true,
+  "findings": [
+    {
+      "id": "GI-R1",
+      "priority": 2,
+      "kind": "evidence_mapping",
+      "files": [
+        "ledgers/gi-connected-party-pricing-and-interest.md",
+        "tp-full-ledger-match.json"
+      ],
+      "rows": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "old_topic_anchor_rows": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "fix": "Restore actual rule-to-provision mapping and complete correct original/current paragraph map."
+    },
+    {
+      "id": "GI-R2",
+      "priority": 2,
+      "kind": "required_deep_tax_shape",
+      "files": [
+        "gi-connected-party-pricing-and-interest.md",
+        "gi-foreign-tax-relief.md"
+      ],
+      "fix": "Regroup without loss into canonical nine ordered sections, cited threshold table and3–6 intake facts; preserve exactly2 main blocks each."
+    }
+  ],
+  "new_substantive_legal_findings": [],
+  "ledger_status": {
+    "gi-connected-party-pricing-and-interest": {
+      "rows": 59,
+      "quotes": 123,
+      "all_quotes_present": true,
+      "source_context_actual_guide_rules_checked": true,
+      "rule_mapping": "request_changes",
+      "old_topic_map": "request_changes"
+    },
+    "gi-foreign-tax-relief": {
+      "rows": 33,
+      "quotes": 73,
+      "all_quotes_present": true,
+      "rule_mapping": "accepted",
+      "old_topic_map": "accepted"
+    }
+  },
+  "ledger_hashes": {
+    "country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md": "51d98b22360f34a4702c28abd78eb7f5830a987b1d99a3f69be66d4fc5f5e72f",
+    "country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md": "072d5ae6ee1fe71ee3899376b8a320f34ec11056f81c6ae437f3cb6cd078d3eb",
+    "country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/tp-full-ledger-match.json": "c984d995a6fcf0337792fa662ab560d7d1ca6e2ba6ad2140d9252b8ad3bc78c6",
+    "country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/foreign-exit-ledger-match.json": "723fe93325c851a99073089085e595c72b88f624e43891cf8b1362fe046f43c1"
+  },
+  "calculations": {
+    "files": 20,
+    "blocks": 51,
+    "main_blocks": 48,
+    "supplementary_blocks": 3,
+    "failures": 0,
+    "independent_prose_arithmetic": 159,
+    "independent_prose_failures": 0,
+    "calendar_checks": 7
+  },
+  "preservation": {
+    "untouched_guides_exact": 16,
+    "historical_research_exact": 121,
+    "original_main_controls_exact": 47,
+    "TP_old_paragraphs_exact": 44,
+    "TP_old_paragraphs_total": 45,
+    "TP_one_limitation_narrowed_without_loss": true,
+    "XB_old_paragraphs_exact": 25,
+    "XB_old_paragraphs_total": 25,
+    "protected_guide_differences": 0,
+    "lost_content_restored": 0,
+    "reviewer_guide_edits": 0
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [
+      "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+      "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+    ]
+  },
+  "all7domains_partial": true,
+  "inherited_minimum_tax_year": 2024,
+  "evidence": "pinned-evidence.json",
+  "narrative": "report.md",
+  "closure": "Only two bounded repairs require exact-change closure; preserve this pinned review."
+}

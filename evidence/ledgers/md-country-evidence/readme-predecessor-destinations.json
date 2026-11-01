@@ -1,0 +1,103 @@
+{
+  "status": "WRITER TOPIC MAPPING ONLY; not legal review or completed coverage",
+  "README_path": "skills/international/moldova/README.md",
+  "README_sha256": "0fc3921bdf0ebf3d7ff134729d269a8a06da23a36ea3c72242e7340b6a0931fc",
+  "old_topic_destinations": [
+    {
+      "id": "README-OLD-001",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "359199f9fe2fad760815bf7cbe031f9072d60238591b3495af69867646d21395",
+      "original_text": "# Moldova tax pack",
+      "destination": [
+        "# Moldova tax pack"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-002",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "a1f934dc528422714bdcd3ffa26a92d578f869a58a65e8917715cc81b08ba105",
+      "original_text": "Accountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.",
+      "destination": [
+        "Owner and writer paragraph"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-003",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "443796223524b1094e05ed5eb793377f52d0313f1908aec81e5830bcad5aa135",
+      "original_text": "## Domains",
+      "destination": [
+        "Domains table"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-004",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "c4618ae0a1886b8a6408b7225ee77aca9ae77c94d2295fc30a07494d61b09678",
+      "original_text": "| Domain | Existing/new Guides | Status |\n|---|---|---|\n| IT-IND | md-tax-overview, moldova-income-tax, moldova-tax-optimization | partial |\n| IT-CORP | md-corporate-income-tax, md-company-formation | partial |\n| VAT | moldova-vat | partial |\n| SC | moldova-social-contributions | partial |\n| PR | moldova-payroll | partial |\n| TP | md-transfer-pricing | source-cited draft, partial |\n| XB | md-cross-border | source-cited draft, partial |",
+      "destination": [
+        "Domains table"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-005",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "f47436ee894db5a232f4ee2532f1e5d8581d3125974eaff0fabf2587f5e2ce20",
+      "original_text": "Property, tax reporting, audit/compliance, cross-border residence and treaty applications, withholding, foreign tax relief, exit/mobility, and the interfaces between tax and company formation require dedicated coverage or explicit applicability decisions. Guide presence and source research do not establish comprehensive coverage.",
+      "destination": [
+        "Scope/gaps paragraph; each partial domain and Guide Sources"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-006",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "81fe2b5f7c9449cf6d2ff4f0ce9c32400740ecec32790aa27007b4b6ee7ba36e",
+      "original_text": "## Official starting sources",
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-007",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "29f1e047f173564f1bd54f659d249a14a8bba84d74cb15bdb681d89abf16f572",
+      "original_text": "- Fiscal Code No. 1163/1997, current official text page: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro\n- SFS transfer-pricing rules, current period filing instructions and notices: https://www.sfs.md/ro/pagina/preturi-de-transfer\n- Ministry of Finance Order 21/2025 amending Order 9/2024: https://www.legis.md/cautare/downloadpdf/147520\n- SFS 2025 transfer-pricing deadline notice (published June 2026): https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025\n- SFS nonresident tax practice: https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102\n- SFS permanent-establishment criteria: https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105\n- Ministry of Finance treaty inventory (page reports status at 20 June 2022; verify current status and later protocols): https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022",
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    },
+    {
+      "id": "README-OLD-008",
+      "original_path": "skills/international/moldova/README.md",
+      "original_sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "unit_sha256": "4bd35d755c9baf9f8e81f166812be63f3c9443809ed1418b478a3293b6149b98",
+      "original_text": "See [the 24 October 2026 source and gap record](../../../docs/research/2026-10-24-moldova-tp-cross-border.md) for the drafting basis and unresolved points.\n",
+      "destination": [
+        "Official starting sources; current Code correction; preserved24October research link"
+      ],
+      "status": "Predecessor README scope/ownership/domain/discovery/research topic retained; historical counts/source links do not certify present coverage. All ten updated writer drafts remain unreviewed with explicit ordinary/specialist gaps; no topic mapping is a completed-coverage claim.",
+      "independent_review": "PENDING"
+    }
+  ]
+}

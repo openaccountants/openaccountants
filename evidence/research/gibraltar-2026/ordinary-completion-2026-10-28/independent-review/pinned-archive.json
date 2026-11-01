@@ -1,0 +1,34 @@
+{
+  "original_pinned_head": "42697c1cfdd04d72a47abe6bd702dd7cccb84c69",
+  "original_conclusion": "request_changes",
+  "copied_byte_exact": [
+    {
+      "file": "calculations.txt",
+      "sha256": "1dfb6daf25ea4d62f29eb035d678b9546afb0e9f5ec307a2d91f521d6c0cc605"
+    },
+    {
+      "file": "check_pinned.py",
+      "sha256": "ba1c7bd2e2f3d41dc92e81fdac8724ef2a88e0a8ed53d9d73b4c323adf905b0b"
+    },
+    {
+      "file": "pinned-evidence.json",
+      "sha256": "759c4bdc3c9814d81ad53c68b8d043d02253df4089f268ad8639b0d0d93d9311"
+    },
+    {
+      "file": "prose-calculations.json",
+      "sha256": "df5739e9d1c3ed874602286a97130bd14f02ada5e29d8cf578fea9d05e1dc755"
+    },
+    {
+      "file": "prose_arithmetic.py",
+      "sha256": "d741bd797e7b0175b02811975fc9d28fabff5012ec5d9f253d6276eaf3976be0"
+    },
+    {
+      "file": "report.md",
+      "sha256": "e99f04efa2e786e50397a5e6e27a6fedffb2f07d9f959a2aab0595ad981fd6c2"
+    },
+    {
+      "file": "result.json",
+      "sha256": "6edb8cbab33d69df88f8edcd95062fca126cf0f6c93f0477cfab4ac93a1d5e55"
+    }
+  ]
+}

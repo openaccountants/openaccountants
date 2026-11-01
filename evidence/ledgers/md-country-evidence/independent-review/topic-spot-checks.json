@@ -1,0 +1,78 @@
+{
+  "samples": [
+    {
+      "id": "MD-PUBLIC1028-007",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-013",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-024",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-027",
+      "status": "failed_preservation",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-032",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-033",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-034",
+      "status": "failed_preservation",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-052",
+      "status": "failed_preservation",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-053",
+      "status": "failed_preservation",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-062",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-064",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-073",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1028-081",
+      "status": "checked_selected_topic_scope",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    },
+    {
+      "id": "MD-PUBLIC1024-079",
+      "status": "failed_preservation",
+      "limits": "Selected operational topic comparison, not every clause of the entire original paragraph. No blanket approval inferred."
+    }
+  ],
+  "all1564_parent_units_mechanical_hash_and_nonempty_destination": "PASS",
+  "additional_child_units": 818,
+  "semantic_preservation": "FAIL at immutable commit; full independent comparison incomplete",
+  "current_delta_note": "Original14samples preserved above as immutable8b9 findings; fivefailedsamples independentlyfocused-corrected in7a727ba. Newcurrentresults stored separately."
+}

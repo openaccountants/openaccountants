@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ubo",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "55428568956a4ded2911e90ea7fbffaedbae9c250aceca3631fce29b5645cd3e",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/ubo.pdf",
+    "publication_reuse": "pending; no clearance given"
+  },
+  {
+    "id": "companies",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/companies.pdf",
+    "publication_reuse": "pending; no clearance given"
+  },
+  {
+    "id": "finc01",
+    "url": "https://www.companieshouse.gi/publications/FINC01.pdf",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+  },
+  {
+    "id": "stamp",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "2bda1cf6a9b3a9913d8b38dee70c9fdf33646e4d539ef3ecaee2eb0dd097224d",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/stamp.pdf",
+    "publication_reuse": "pending; no clearance given"
+  },
+  {
+    "id": "uk-agreement",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "b16d03affd01b0638e14ed004a49aa3d3ea96b10141d0a824c46a1476197b75d",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/uk-agreement.pdf",
+    "publication_reuse": "pending; no clearance given"
+  },
+  {
+    "id": "spain-agreement",
+    "url": "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "47645688bc3a4bfd66eac566dad8eeab7565ecebbe2f534cabbb590596261f9b",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/spain-agreement.pdf",
+    "publication_reuse": "pending; no clearance given"
+  },
+  {
+    "id": "rates",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+    "read_on": "2026-10-31",
+    "status": 200,
+    "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+    "matches_supplied": true,
+    "local_path": "/private/tmp/gibraltar-legacy-review-b0c501e5/rates.pdf",
+    "publication_reuse": "pending; no clearance given"
+  }
+]

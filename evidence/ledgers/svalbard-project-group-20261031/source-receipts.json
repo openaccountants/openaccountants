@@ -1,0 +1,145 @@
+[
+  {
+    "name": "svalbard-law",
+    "url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+    "retrieved_utc": "2026-10-31T19:33:26.890276+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+    "error": "",
+    "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+    "bytes": 101399,
+    "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792"
+  },
+  {
+    "name": "insurance-law",
+    "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+    "retrieved_utc": "2026-10-31T19:33:26.934523+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+    "error": "",
+    "raw_sha256": "bfecdc7c653868da9925b06a979fdbc36744087afcbc7b134d1ada13629f1bc8",
+    "bytes": 219362,
+    "reader_sha256": "2673f9f6c590a041e2be85e377bfe31f5f624af08acf0dacf392d6bf1bf2a9ac"
+  },
+  {
+    "name": "svalbard-regulation",
+    "url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+    "retrieved_utc": "2026-10-31T19:33:26.820842+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+    "error": "",
+    "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+    "bytes": 52972,
+    "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507"
+  },
+  {
+    "name": "payment-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+    "retrieved_utc": "2026-10-31T19:33:27.508238+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+    "error": "",
+    "raw_sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+    "bytes": 537741,
+    "reader_sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21"
+  },
+  {
+    "name": "insurance-decision",
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+    "retrieved_utc": "2026-10-31T19:33:27.390102+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+    "error": "",
+    "raw_sha256": "b1445240dcfb22416e5439ea4e85e39747a5a7d894622223bc90120df74ef89b",
+    "bytes": 80407,
+    "reader_sha256": "0efd64100847683c07561b75fc8ea6ee29a796f8e85deb0efd3328b6ab463275"
+  },
+  {
+    "name": "svalbard-decision",
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+    "retrieved_utc": "2026-10-31T19:33:27.740170+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+    "error": "",
+    "raw_sha256": "26542e109049499820b9ab8f0ce3cf0fae17d052ee1e2078cdd1d70c54901a19",
+    "bytes": 39041,
+    "reader_sha256": "328000c5cfa3f7dbedfb45b55f74b6967600b5ce559af3067760ada761f0a92b"
+  },
+  {
+    "name": "project-amelding-direct",
+    "url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+    "retrieved_utc": "2026-10-31T20:08:37.527979+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+    "error": "",
+    "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+    "bytes": 76905,
+    "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6"
+  },
+  {
+    "name": "project-amelding-svalbard",
+    "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+    "retrieved_utc": "2026-10-31T20:08:37.558995+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+    "error": "",
+    "raw_sha256": "007d8c58cd1b2d7342fbc0a13c302c34738efc34d6c7988c468223145e403543",
+    "bytes": 110453,
+    "reader_sha256": "44855d8768e334f5ca7919b4904775525901edfdcc6ac76d7eee9d5baaa5a207"
+  },
+  {
+    "name": "project-payment-guidance",
+    "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/",
+    "retrieved_utc": "2026-10-31T20:08:37.550229+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/",
+    "error": "",
+    "raw_sha256": "452d11a6fd58279c18a73315cb7614eff94774157fee75cbe2458afcdbc4a7e4",
+    "bytes": 84679,
+    "reader_sha256": "b704543ed99849ddf7eef6aec3dfe1ef51996efc13fe79668974f12f2b59e3a2"
+  },
+  {
+    "name": "project-contact",
+    "url": "https://www.skatteetaten.no/kontakt/",
+    "retrieved_utc": "2026-10-31T20:08:37.570257+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.skatteetaten.no/kontakt/",
+    "error": "",
+    "raw_sha256": "f05a6369b42a2c5233a1f7e57e2fb2ad7136d11f4290acb6025a307843d9d4c7",
+    "bytes": 80834,
+    "reader_sha256": "26ae71f6c1de92940fdd0178612a1f7b832b77c15be76a87a56def8fb8b6b4c3"
+  },
+  {
+    "name": "project-areport-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+    "retrieved_utc": "2026-10-31T20:09:03.259485+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+    "error": "",
+    "raw_sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+    "bytes": 64474,
+    "reader_sha256": "5ec22c4e1335983e34bf956f1138c74b588fe87e47bfdc31b27d4a3268b49d48"
+  },
+  {
+    "name": "project-areport-reg",
+    "url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+    "retrieved_utc": "2026-10-31T20:09:03.237566+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+    "error": "",
+    "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+    "bytes": 58507,
+    "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3"
+  },
+  {
+    "name": "project-insurance-membership",
+    "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+    "retrieved_utc": "2026-10-31T20:09:03.437481+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+    "error": "",
+    "raw_sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+    "bytes": 235732,
+    "reader_sha256": "69308bea91450490f342399dccda2d350224681f7226e6c2dd7ba0ce08472389"
+  }
+]

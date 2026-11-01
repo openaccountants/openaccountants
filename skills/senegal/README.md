@@ -4,8 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  SC: "CSS and IPRES sites did not open; old secondary figures not rechecked, and the skill misstates IR parts and the abatement cap"
-  PR: "same: payroll examples use a 1,800,000 abatement cap; the CGI cap is 900,000"
+  SC: "CSS and IPRES sites did not open; contribution rates rest on CLEISS and PwC"
+  PR: "same: IPRES, CSS and IPM rates rest on CLEISS and PwC; tax rules follow the CGI"
 ---
 
 # Senegal: tax pack
@@ -28,7 +28,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 ## What still needs doing
 
-- Recheck social contributions and payroll: IPRES and CSS sites did not open; both skills carry known income tax errors.
+- Recheck social contributions and payroll rates against IPRES and CSS: those sites did not open.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
 

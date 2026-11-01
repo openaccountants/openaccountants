@@ -1,0 +1,46 @@
+{
+  "candidate": "3e0816e1f574c7abf144290f96b4371cdb9d77d9",
+  "verdict": "bounded acceptance",
+  "files": [
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/examples.txt",
+      "bytes": 60,
+      "sha256": "4ae8e92654081ee1e8b5e0898d1bd738d778440845b3893da9b69abd8630da6c"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/final-report.md",
+      "bytes": 8065,
+      "sha256": "126b8329a65b9616dbb9b6803da5cfafcfd41de2057e7876b3e60692fa05a27a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/row-verdicts.json",
+      "bytes": 21858,
+      "sha256": "c555b48c78460b713176f77df96fb9e6608568867e2ecb22b1e20dbac254c6dc"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/shape.txt",
+      "bytes": 3826,
+      "sha256": "fb6ffe0b7c5b7c80e8cd9793a8dd121f0e401cb2c52e206bd3563f18b06e1c1e"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/source-access.json",
+      "bytes": 10804,
+      "sha256": "812413d8acf9e38c8ef5b79f8674ce5bc346cb2b823579a559f650b855a89209"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/strict-metadata.txt",
+      "bytes": 82,
+      "sha256": "7c6a926a79fc09b6b28f42b0b447469c207c35bff893056657aa12db37db6b8f"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/verification.json",
+      "bytes": 54183,
+      "sha256": "05bc97b1a869d189d76bc17b81d66c9a39b4831ced04d3a58ff0454055aa09c7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/verify.py",
+      "bytes": 6946,
+      "sha256": "a7536ea666a00aafdcc0b55977559002349089db12d4e309b5a6668084de2088"
+    }
+  ]
+}

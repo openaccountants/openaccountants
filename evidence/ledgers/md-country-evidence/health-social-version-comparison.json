@@ -1,0 +1,26 @@
+{
+  "budget_article3_same_after_whitespace": true,
+  "budget_article4_same_after_whitespace": true,
+  "framework_article4_Jan_current_same_after_whitespace": true,
+  "framework_article6_Jan_current_same_after_whitespace": true,
+  "framework_article4_March_current_same": true,
+  "article9_change": [
+    "--- Jan149500\n",
+    "+++ March151186\n",
+    "@@ -2,7 +2,9 @@\n",
+    " ",
+    "                     medicală a străinilor",
+    " ",
+    "-(1) Străinii specificaţi la art. 2 alin. (1) lit. a)–c) din Legea nr. 274/2011 privind integrarea străinilor în Republica Moldova, beneficiarii de protecție temporară și solicitanții de azil, încadraţi în muncă în Republica Moldova în baza unui contract individual de muncă, încheiat în temeiul legislației Republicii Moldova, străinii titulari ai dreptului de şedere permanentă în Republica Moldova, precum şi beneficiarii de protecţie internaţională au aceleaşi drepturi şi obligaţii în domeniul asigurării obligatorii de asistenţă medicală ca şi cetăţenii Republicii Moldova, în conformitate cu legislaţia în vigoare, dacă tratatele internaţionale nu prevăd altfel.",
+    "+(1) Străinii specificaţi la art. 2 alin. (1) lit. a)–c) și lit. e) din Legea nr. 274/2011 privind integrarea străinilor în Republica Moldova, beneficiarii de protecție temporară și solicitanții de azil, încadraţi în muncă în Republica Moldova în baza unui contract individual de muncă, încheiat în temeiul legislației Republicii Moldova, străinii titulari ai dreptului de şedere permanentă în Republica Moldova, precum şi beneficiarii de protecţie internaţională au aceleaşi drepturi şi obligaţii în domeniul asigurării obligatorii de asistenţă medicală ca şi cetăţenii Republicii Moldova, în conformitate cu legislaţia în vigoare, dacă tratatele internaţionale nu prevăd altfel.",
+    "+",
+    "+[Art.9 al.(1) modificat prin LP200 din 10.07.25, MO490-493/18.09.25 art.639; în vigoare 18.03.26]",
+    " ",
+    " (11) Străinii angajați în condițiile art.4317 din Legea nr.200/2010 privind regimul străinilor în Republica Moldova, pe perioada corespunderii acestor condiții, nu au obligația asigurării obligatorii de asistență medicală.",
+    " "
+  ],
+  "status_regulation_bytes": 30655,
+  "current_sources_have_no_transport_truncation": true,
+  "medical_charging_article23_Jan_current_same": true,
+  "January_article30_effective_annotation_present": true
+}
