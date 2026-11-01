@@ -1,0 +1,3 @@
+Command: git diff --check
+
+Exit: 0

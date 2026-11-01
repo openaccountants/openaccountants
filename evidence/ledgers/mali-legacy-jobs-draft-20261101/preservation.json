@@ -1,0 +1,228 @@
+{
+  "base_commit": "a4d09fbf744fbabfbc4988d08e13fd3c61fca449",
+  "guides": {
+    "ml-corporate-income-tax": {
+      "predecessor_full_blob": "7a7d0e3f73e706e321297defb71d13aa0849223e",
+      "predecessor_sha256": "4f147c3bab02e510ec729e239320d92e36fa451c5200eb424ee2ce55a27c0f1d",
+      "candidate_sha256": "4f147c3bab02e510ec729e239320d92e36fa451c5200eb424ee2ce55a27c0f1d",
+      "full_file_unchanged": true,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-company-formation": {
+      "predecessor_full_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "predecessor_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "candidate_sha256": "d0cae971bd8ceedb3bf7e187a3fac13978f4aee20a8626cea656fab21f470296",
+      "full_file_unchanged": false,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-payroll-social": {
+      "predecessor_full_blob": "0fc35cae636c20f1e43ddf28cd7e561cdb2f5e99",
+      "predecessor_sha256": "e2826b52b028f8e695801a2620bea57a0af40919a84a03b165ff163b564a2b50",
+      "candidate_sha256": "e2826b52b028f8e695801a2620bea57a0af40919a84a03b165ff163b564a2b50",
+      "full_file_unchanged": true,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-vat-gst": {
+      "predecessor_full_blob": "0708448e065a705cf3649b63344a8c456bb9da5e",
+      "predecessor_sha256": "1824291c5ca34e84a4bd005007d1bf2398e1d829a5447830a5578921a0de5b1c",
+      "candidate_sha256": "1824291c5ca34e84a4bd005007d1bf2398e1d829a5447830a5578921a0de5b1c",
+      "full_file_unchanged": true,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-tax-overview": {
+      "predecessor_full_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "predecessor_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "candidate_sha256": "bc92439f45b3ae26c0212b0f5c72c87c23a43894416a1457231affbd831d410e",
+      "full_file_unchanged": false,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-income-tax": {
+      "predecessor_full_blob": "c1c32a55f0ea02d6c21e1955f7e92c310205d884",
+      "predecessor_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "candidate_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "full_file_unchanged": true,
+      "full_CTA_identical": true,
+      "CTA_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    },
+    "ml-solidarity-contribution": {
+      "predecessor_full_blob": "41131e8fad49a90703c62197b259a2250cac0a6e",
+      "predecessor_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "candidate_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "full_file_unchanged": true,
+      "full_CTA_identical": true,
+      "CTA_sha256": null,
+      "platform_fields_identical": {
+        "review_status": true,
+        "license": true,
+        "trust_label": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      }
+    }
+  },
+  "prior_receipts": {
+    "evidence/ledgers/mali-old-topics.md": "c12c0aa947683cb6aa44dc4b1b1857649aa28dab",
+    "evidence/ledgers/mali-ordinary-draft-20261101/currentness.md": "7c2721b0652ae2b09b6cf6de2a6c095e90f79e9c",
+    "evidence/ledgers/mali-ordinary-draft-20261101/example-checks.txt": "01fc6aa3875e4bc476f11be7dda258fbbf9d5a97",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-corporate-income-tax.md": "c36dfb62af33bee958f59a6dbec106d5cc14b7f3",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-income-tax.md": "8e940d9fc719a35f29c513e0853b675129cc9077",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-payroll-social.md": "e9d77e81ca417f507e25a4ca8fe9027ebfd0bcc9",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-vat-gst.md": "20028bdc523a8e048797e00248824dfee436d2cb",
+    "evidence/ledgers/mali-ordinary-draft-20261101/old-topics.md": "bcb2049709883fce070c29be342894e6c70f27da",
+    "evidence/ledgers/mali-ordinary-draft-20261101/pinned-validation.py": "273bb39f3c41510fb0d3362c53330e92b5676477",
+    "evidence/ledgers/mali-ordinary-draft-20261101/pinned-working-validation.txt": "ad0ece9d78675f5c41b17815aa8dfea98d1bf0c7",
+    "evidence/ledgers/mali-ordinary-draft-20261101/precommit-cli-no-op.txt": "602ba38cfd84150e16447cd8aef43f41ae412776",
+    "evidence/ledgers/mali-ordinary-draft-20261101/preservation.json": "8edc7a4916562bf7c4a7958430c2f332e4144a39",
+    "evidence/ledgers/mali-ordinary-draft-20261101/reviewer-corrections.json": "a9c91edb228f54a9bfb36d81bed195a28f8870d7",
+    "evidence/ledgers/mali-ordinary-draft-20261101/shape-checks.txt": "f55723f7889b3bc12fbc96b02a701ca5c6b932d0",
+    "evidence/ledgers/mali-ordinary-draft-20261101/source-record.json": "8f590df667b8280eb5603b9a41fc809ff343eb2f",
+    "evidence/ledgers/mali-ordinary-draft-20261101/sync-audit.txt": "af86bd809ce010c0b65380e11b49d59928114611",
+    "evidence/ledgers/mali-ordinary-draft-20261101/writer-record.md": "1f64113be4e28b2923250bc1e56a7af628892d49",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/changed-validation.txt": "7e974f1c46732b8ab6a551b6e707baaaed24c084",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/check-commands.json": "e98b9af1042fc3756c9f779b6999254231e7883c",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/closure-observed.json": "9c12c9201a8aab8cd664dcafbdde8e2e181314f6",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/closure-row-verdicts.json": "d16f0b03e6e6e500fe3eb8d7687bb446f07cca95",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/closure.md": "ee5a9dc019ecf97da77955808c3cef02598451d2",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/diff-check.txt": "87fcd5cbfa1d2042ae288159f4e918965836cf26",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/examples.txt": "f28665a36efa6c104cc53f6165b0c05aa8c160bd",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/readme-status-delta.json": "613f1ac383473b7856cd42615da9bb141b04cbd3",
+    "evidence/ledgers/mali-ordinary-review-20261101-closure/skill-checks.txt": "688336c9f56fe03b4196c8a3fcd17e12ab548970",
+    "evidence/ledgers/mali-ordinary-review-20261101-status-reconciliation/diff-format-independent-confirmation.json": "7b2895d7bd99d5d46d7b385e98ea72d08fab50f0",
+    "evidence/ledgers/mali-ordinary-review-20261101-status-reconciliation/diff-format-repair.json": "0484eed59a8f785ee79a69aef0daf461fd8573ad",
+    "evidence/ledgers/mali-ordinary-review-20261101-status-reconciliation/readme-exact-diff.txt": "c65b0a960eb2be074828614f52dcee98f45218c2",
+    "evidence/ledgers/mali-ordinary-review-20261101-status-reconciliation/status-reconciliation.json": "86f7be996743d5addef5cf5320a0f839a0e741fa",
+    "evidence/ledgers/mali-ordinary-review-20261101-status-reconciliation/status-reconciliation.md": "8d7529a1772317f4b1ee6b2208ff445b66ec146e",
+    "evidence/ledgers/mali-ordinary-review-20261101/candidate-and-preservation.json": "fedf317f0d27053546ff35c8206a0e1150af9180",
+    "evidence/ledgers/mali-ordinary-review-20261101/currentness-verdict.json": "6efbbce6b0a4e6d117bfd8c3c87db56382b04e78",
+    "evidence/ledgers/mali-ordinary-review-20261101/independent-examples.json": "1c3b038956bb6bcd8937218c78e4e35194ebcb33",
+    "evidence/ledgers/mali-ordinary-review-20261101/old-topic-review.json": "8652d04faa0242fda08eee2d1817be873e4d9f39",
+    "evidence/ledgers/mali-ordinary-review-20261101/review.md": "1ffa9564badbf4e5314e691fc3aaf93d15c220cb",
+    "evidence/ledgers/mali-ordinary-review-20261101/row-verdicts.json": "e89dd2784b96533da95fa2f90ed1fb3582db7d06",
+    "evidence/ledgers/mali-repair-1/writer-repair.json": "46044d576e1eac8d6397373bf8f08b830feddcab",
+    "evidence/ledgers/mali-review-20261101-closure/changed-validation.txt": "dac893f8ece26dce684ab99a877aedbde482c660",
+    "evidence/ledgers/mali-review-20261101-closure/closure-observed.json": "fe92dd75123e791feb47cf3e32f493c219b166f6",
+    "evidence/ledgers/mali-review-20261101-closure/closure.md": "c0d27d453801f778fad10f5b93355b4421c17ed1",
+    "evidence/ledgers/mali-review-20261101-closure/examples.txt": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+    "evidence/ledgers/mali-review-20261101-closure/repair-diff-check.txt": "f779db68cc92f6ef910a6b243870dcf5d36fbc15",
+    "evidence/ledgers/mali-review-20261101-closure/skill-checks.txt": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+    "evidence/ledgers/mali-review-20261101/candidate-observed.json": "ca5178e549704878ac1669278fb5944d871f2f0e",
+    "evidence/ledgers/mali-review-20261101/changed-validation.txt": "dac893f8ece26dce684ab99a877aedbde482c660",
+    "evidence/ledgers/mali-review-20261101/coverage-mali.json": "f09c266954f171ca5dced2147fd58b37603d55f8",
+    "evidence/ledgers/mali-review-20261101/diff-check.txt": "5b01a473439774b43da6320a36c8d34059c0e845",
+    "evidence/ledgers/mali-review-20261101/examples.txt": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+    "evidence/ledgers/mali-review-20261101/full-no-index-validation.txt": "03a966c81d2d44b36ca2f44d06c6c21fa34d3e6f",
+    "evidence/ledgers/mali-review-20261101/review.md": "e5676dbe9b204bdc1351a7c2ce00090f8904d746",
+    "evidence/ledgers/mali-review-20261101/skill-checks.txt": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+    "evidence/ledgers/ml-solidarity-contribution.md": "5fade82c9a481995cdff3e4cb7f7e7b2a2eb6172"
+  },
+  "checks": {
+    "five_accepted_Guides_byte_identical": true,
+    "six_existing_full_CTAs_identical": true,
+    "all_platform_fields_identical": true,
+    "all_prior_Mali_receipt_blobs_and_present_files_identical": true,
+    "all_seven_domains_remain_partial": true
+  },
+  "descriptions_words": {
+    "ml-company-formation": 111,
+    "ml-tax-overview": 111
+  },
+  "predecessor_topic_counts": {
+    "ml-company-formation": {
+      "headings_and_bullets": 14,
+      "introductions": 1
+    },
+    "ml-tax-overview": {
+      "headings_and_bullets": 11,
+      "introductions": 1
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "authority": "closure.md explicitly permits these status-only non-Guide records",
+  "before": {
+    "skills/mali/README.md": "0d5985506cc18c58631adbcec09a74c1b37742e3baf7071331f16cc5382b238f",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md": "1f6829d050ef7a01fe3a21d521d5c94d390e2f24ab2b4e2d0cf2bc95cb3e5da2",
+    "evidence/ledgers/mali-tp-xb-draft-20261101/writer-record.md": "9536f4f9820fc7dbf7aedf804eb34b91fcfd372d4b7dc665cabcb86d00b83d2f"
+  },
+  "after": {
+    "skills/mali/README.md": "54b3e0828e90faf9d55c679f960ab11de07bbaacdc8cef531b2fa3dd745cf0b7",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md": "6be5065b03b9dcef7559198a9bacd346951135fd880f0331465ade0ef2aabcc2",
+    "evidence/ledgers/mali-tp-xb-draft-20261101/writer-record.md": "53720f8c1f2fb771415f276d57c28743821a16d69ecd626aefb48ec0b340a645"
+  },
+  "replacements": [
+    {
+      "file": "skills/mali/README.md",
+      "old": "independent review of these latest checkpoints is pending below",
+      "new": "independent conditional source review of these latest checkpoints is accepted below"
+    },
+    {
+      "file": "skills/mali/README.md",
+      "old": "independent review is pending and no accountant",
+      "new": "independent conditional source review is accepted and no accountant"
+    },
+    {
+      "file": "evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md",
+      "old": "Independent review of these two new jobs remains pending.",
+      "new": "At this writer checkpoint independent review was pending. The later four-job source correction closure accepts the repaired conditional scope; all current-law and filing holds remain."
+    },
+    {
+      "file": "evidence/ledgers/mali-tp-xb-draft-20261101/writer-record.md",
+      "old": "Fresh independent pack review remains pending.",
+      "new": "At this writer checkpoint fresh independent review was pending. The later four-job correction closure accepts the repaired conditional source scope. Its F2 correction supersedes the new-file platform/CTA copy statement above; historical writer identities remain preserved."
+    }
+  ],
+  "added": "Exact closure link and bounded F1/F2 review scope paragraph",
+  "Guide_content": "unchanged from exact final acceptance"
+}
