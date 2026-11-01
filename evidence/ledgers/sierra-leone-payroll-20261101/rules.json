@@ -1,0 +1,286 @@
+{
+  "status": "Writerdraftpendingindependentreview",
+  "records": [
+    {
+      "id": "SC01",
+      "section": "Who this applies to",
+      "rule": "Coverage everyemployer/worker;other-lawexemptions;self-employedoptinconditions;privatepensionnotautomaticexemption.",
+      "article": "NASSIT Act2001 s.23-24",
+      "pdf_pages": "15-16",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "every employer and to every worker",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC02",
+      "section": "Who this applies to; Cross-border points",
+      "rule": "Workerdefinition includescontractorwork;SLwork excludingcrew andseparatepermanent-residentcrew/overseaslimbs.",
+      "article": "NASSIT Act2001 s.2",
+      "pdf_pages": "6-7",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "outside Sierra Leone for an employer in Sierra Leone",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC03",
+      "section": "The base",
+      "rule": "Cashperiodicwork/task/volumeemoluments includeleaveearnings;listedpresents/food/house/overtime/travel/bonus/commissionexclusions;printedcostofleavingwordingheld.",
+      "article": "NASSIT Act2001 s.2",
+      "pdf_pages": "5",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "overtime allowance, travelling allowance, bonus",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC04",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employee5%monthlystatutoryearnings atmonthend evenunpaid.",
+      "article": "NASSIT Act2001 s.25(1)",
+      "pdf_pages": "16",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "irrespective of whether or not",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC05",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employer10%coveredworkermonthlystatutoryearnings.",
+      "article": "NASSIT Act2001 s.25(2)",
+      "pdf_pages": "16",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "amount equal to 10%",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC06",
+      "section": "Rates, bands and thresholds",
+      "rule": "Opted-inself-employedmonthly15%professional/vocational/businessincome.",
+      "article": "NASSIT Act2001 s.25(4)",
+      "pdf_pages": "16",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "contribute 15% of his income for each month",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC07",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Bothcontributionspaidwithin15daysaftermonthend.",
+      "article": "NASSIT Act2001 s.25(3)",
+      "pdf_pages": "16",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "within fifteen days after the end of each month",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC08",
+      "section": "The base",
+      "rule": "Noemployersharerecoveryfromworker,nopastemployeedeductionfromlaterpayunlessaccidentalclericalmistakeandwritteninspectorinstructions.",
+      "article": "NASSIT Act2001 s.25(5)",
+      "pdf_pages": "16-17",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "written instructions of a Trust inspector",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC09",
+      "section": "The base",
+      "rule": "Deductedcontributionsheldintrustuntilpaid.",
+      "article": "NASSIT Act2001 s.25(6)",
+      "pdf_pages": "17",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "until they are paid to the Trust",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC10",
+      "section": "The base",
+      "rule": "Monthwhollyinvaliditypensionentitlement creditedcontributionratherthanordinarypayablededuction.",
+      "article": "NASSIT Act2001 s.26",
+      "pdf_pages": "17",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "For any month throughout which a member is entitled",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC11",
+      "section": "The base; Cross-border points",
+      "rule": "Concurrentemployersseparatelyliable;donotreducerearnstocoveremployerliability.",
+      "article": "NASSIT Act2001 s.28-29",
+      "pdf_pages": "18",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "reduce, whether directly or indirectly",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC12",
+      "section": "The base",
+      "rule": "Statutorytaxdeductibility;currentPAYEreturninteractionnotcertified.",
+      "article": "NASSIT Act2001 s.20(2)",
+      "pdf_pages": "15",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "Contributions to the Trust shall be tax deductible",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC13",
+      "section": "The base",
+      "rule": "Listedbenefitclassesonly,nodetailedeligibilityormonetaryamountcertification.",
+      "article": "NASSIT Act2001 s.38",
+      "pdf_pages": "21-22",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "invalidity grant",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC14",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Employer/selfemployedinitialregwithin30daysdateRegsinforce/Actappliestothem;SS2A/SS3.",
+      "article": "NASSIT Regulations2004 reg.1",
+      "pdf_pages": "4",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "thirty days after the date on which these Regulations come into force",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC15",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Notifybusinessname/address/locationchangeswithin10days.",
+      "article": "NASSIT Regulations2004 reg.2",
+      "pdf_pages": "4",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "within ten",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC16",
+      "section": "Deadlines and filing",
+      "rule": "Employer/employeeregistrationnumbers;SS1Ainspectorcertification;newemployermembershipproof.",
+      "article": "NASSIT Regulations2004 reg.3-6",
+      "pdf_pages": "5",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "certified by an Inspector of the Trust",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC17",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Employmentandestablishmentcessationnotificationwithin30days.",
+      "article": "NASSIT Regulations2004 reg.7",
+      "pdf_pages": "5-6",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "thirty days after an employee ceases",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC18",
+      "section": "Deadlines and filing",
+      "rule": "15daysremit;concurrentemployercontributionscreditedsameaccount.",
+      "article": "NASSIT Regulations2004 reg.8",
+      "pdf_pages": "6",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "same social security membership",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC19",
+      "section": "Deadlines and filing",
+      "rule": "Newemployerassumingestablishmentresponsibilityresponsiblepredecessorcontribution/documentdefaultsintermsofreg9.",
+      "article": "NASSIT Regulations2004 reg.9",
+      "pdf_pages": "6",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "previous employer was in default",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC20",
+      "section": "Deadlines and filing",
+      "rule": "Authorisedoffice/paymentinstrumentorinwritingDGauthorisedmanner;currente-equivalentunverified.",
+      "article": "NASSIT Regulations2004 reg.10",
+      "pdf_pages": "6",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "authorize in writing",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC21",
+      "section": "Deadlines and filing",
+      "rule": "SS4Aaccompaniespaymentunlesswrittenauthorisedothermedia;consolidatedbranchpaymentwithseparateschedules/amounts.",
+      "article": "NASSIT Regulations2004 reg.11",
+      "pdf_pages": "7",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "separate contribution schedules",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC22",
+      "section": "Deadlines and filing",
+      "rule": "Contributionfields:employerlocation/address/reg,method,eachmembername/number/earnings/shares,periodtotal.",
+      "article": "NASSIT Regulations2004 reg.12",
+      "pdf_pages": "7",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "the name and registration number of each employee",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC23",
+      "section": "Deadlines and filing",
+      "rule": "OfficialSS4Bdated/stamped/authorisedendorsementrequiredtodischargepayment;notbankdebitalone.",
+      "article": "NASSIT Regulations2004 reg.13",
+      "pdf_pages": "7",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "dated, stamped and endorsed",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC24",
+      "section": "Deadlines and filing",
+      "rule": "UnduepaymentrefundsubjectDGsatisfaction,nobenefitalreadypaid,setoff/requestedevidenceconditions.",
+      "article": "NASSIT Regulations2004 reg.14",
+      "pdf_pages": "7-8",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "already been paid the amount as benefit",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC25",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Pay/name/membership/deductionrecordsminimum12yearsafterpayperiod.",
+      "article": "NASSIT Regulations2004 reg.15-16",
+      "pdf_pages": "8",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "quote": "minimum of twelve years",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC26",
+      "section": "Penalties and interest",
+      "rule": "Interest90dayTreasurybillrateplus20%ofthatratecompoundedmonthly,not20percentagepoints;rateconversionheld.",
+      "article": "NASSIT Act2001 s.27(1)(a)",
+      "pdf_pages": "17",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "twenty per centum of that rate",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC27",
+      "section": "Penalties and interest",
+      "rule": "Afterserveddemand30daysunpaid,10%of90daybillrateoftotaloutstandingeachdefaultmonth;legalrecoveryseparate.",
+      "article": "NASSIT Act2001 s.27(1)(b)",
+      "pdf_pages": "17",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "total outstanding shall be charged as penalty for each month of default",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "SC28",
+      "section": "Penalties and interest",
+      "rule": "Nonregistrationoffenceandcontributionarrears+interestpenalty;currentmonetaryfineheldpendingredenomination/amendments.",
+      "article": "NASSIT Act2001 s.30",
+      "pdf_pages": "18",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "quote": "immediate registration of all",
+      "read_on": "2026-11-01"
+    }
+  ],
+  "unresolved_quote_locators": []
+}
