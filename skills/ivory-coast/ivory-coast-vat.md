@@ -1,45 +1,104 @@
 ---
 name: ivory-coast-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Cote d'Ivoire VAT (TVA) return. Trigger on phrases like "TVA Cote d'Ivoire", "DGI return". Standard rate 18%, reduced 9%. WAEMU member. ALWAYS read before handling Ivory Coast VAT work.
-version: 2.0
+description: >
+  Use this skill to prepare, review or explain a Côte d'Ivoire (Ivory Coast) VAT or TVA return for 2026. It covers who must charge VAT by regime, the 18% and 9% rates, exemptions and the 2026 changes for factoring and animal feed, the taxable base and when VAT falls due, mobile money deductibility, refunds of credits, monthly deadlines by taxpayer type, non-resident digital platforms and supplier classification on bank statements. Trigger on "TVA Côte d'Ivoire", "DGI return", "e-impots", "VAT Ivory Coast", "FNE", "crédit de TVA". ALWAYS read it before handling Ivory Coast VAT work. It is for businesses, accountants and foreign platforms selling into the country.
+version: 2.1
 jurisdiction: CI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Ivory Coast VAT
+# Ivory Coast VAT v2.1
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it without checking the cited official source or a licensed professional.
 
-**Quick reference**
+Tax year 2026. Authority: DGI. Currency XOF. Côte d'Ivoire is a WAEMU member (Benin, Burkina Faso, Guinea-Bissau, Mali, Niger, Senegal, Togo).
 
-| Field | Value |
-| --- | --- |
-| Country | Cote d'Ivoire |
-| Standard rate | 18% |
-| Reduced rate | 9% (milk, pasta, specified goods) |
-| Zero rate | 0% (exports, international transport) |
-| Filing portal | https://e-impots.gouv.ci |
-| Authority | Direction Generale des Impots (DGI) |
-| Currency | FCFA (XOF) |
-| Filing frequency | Monthly (reel normal, 10th/15th); Quarterly (simplifie) |
-| Registration threshold | FCFA 500M (reel normal); 200-500M (simplifie) |
-| Primary legislation | CGI, Livre II -- TVA |
-| WAEMU members | Benin, Burkina Faso, Guinea-Bissau, Mali, Niger, Senegal, Togo |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+## Who this applies to
 
-## Section 2 -- Required inputs and refusal catalogue
+VAT payers are businesses on a real regime, so turnover TTC above 200,000,000, and those who opt in. TEE and micro taxpayers may not charge VAT or pass on a deduction (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page9.html). Agriculture is outside VAT unless the operator opts; the option threshold is 50,000,000 (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page76.html).
 
-- **Minimum viable input** — Minimum viable -- bank statement. Acceptable from SGCI (Societe Generale CI), BICICI, Ecobank CI, NSIA Banque, BOA CI, or any Ivorian bank.
-- **R-CI-1 -- Investment Code** — Escalate. Specific decree required. (Trigger: company under Code des Investissements.)
+## Rates, bands and thresholds
 
-## Section 3 -- Supplier pattern library
+| Item | Rate | Conditions | Source |
+|---|---|---|---|
+| Standard | 18% | On the price before tax | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page50.html |
+| Reduced | 9% | Milk (not yoghurt or other dairy), durum wheat pasta, petroleum products, infant milk and foods, meat imported from outside ECOWAS, luxury rice | same |
+| Exports | Exempt with refund right | Art. 355, Art. 382 | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf |
+| Factoring | 18% | Taxable from 2026, Art. 344 | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page50.html |
+| Jute and sisal fibre, animal feed, inputs and packaging for feed and for fertiliser | 18% | Exemption ended 2026, Art. 355-17, 27, 28, 30 | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page51.html |
+| Dessert bananas | Outside the fruit exemption | Art. 355-9 | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page77.html |
+| Fuel for vehicles and plant of opted farmers | 95% deductible | Art. 365 | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page123.html |
+| Refund on large capital goods | Over 40,000,000 TTC | Art. 382 | https://www.dgi.gouv.ci/assets/documents/PROCEDURE_DE_REMBOURSEMENT_DE_CREDIT_TVA.pdf |
+
+Pre-2026 pages that still list animal feed as exempt are out of date; the annex wins.
+
+## The base
+
+Price, price supplements and incidental costs. Excluded: discounts on the invoice, damages, investment subsidies and true disbursements. Goods: VAT is due on delivery. Services: on payment received, unless authorised on debits. Between related parties, service VAT falls due after two years unpaid (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page49.html).
+
+Exempt (Art. 355) include butane gas, books and newspapers, teaching, medicines, fertiliser, seeds, unprocessed meat and locally grown natural food fruit (https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf). Insurance is outside VAT under the insurance contract tax. Banking pays TOB at 10% or 5%, not VAT (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page51.html).
+
+Mobile money payments escape the 250,000 XOF limit in Art. 373, so the charge stays deductible whatever the amount (https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page52.html).
+
+Refund cases, Art. 382: exports, end of business, industrial investment, leasing, capital goods above 40,000,000 TTC, reduced rate supplies, convention exemptions. Other credits carry forward.
+
+## Deadlines and filing
+
+Monthly, by the 15th. DGE and DME: industry, oil, mining 10th; trade 15th; services 20th of the next month. Non-resident platforms and foreign gambling operators file online by the 15th under a simplified procedure (https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page50.html; https://www.dgi.gouv.ci/assets/documents/CALENDRIER.pdf).
+
+Steps: 1. Total sales by rate, exempt sales and exports. 2. Total VAT on valid purchases; invoices must be supplier normalised invoices (FNE). 3. Log in at https://e-impots.gouv.ci as Contribuable. 4. Complete the return. 5. Submit and pay by the date; keep the receipt. 6. For a refund case, follow note 01248.
+
+The earlier box map (unverified, form not opened): lines 1 to 10 output, 11 to 17 input, 18 to 21 net.
+
+## Penalties and interest
+
+Non-resident platforms that fail to declare or pay are listed each quarter by the 30th of the next month (Art. 438, 439, https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page113.html). General amounts: see the last line of Sources.
+
+## Cross-border points
+
+WAEMU is not an intra-community system; goods from Senegal pay VAT at customs. The VAT on foreign digital platforms is paid through the simplified route; the DGI publishes defaulters. Foreign platforms also face the 2026 profit tax in [Income tax](ivory-coast-income-tax.md).
+
+## Two worked examples that recompute
+
+Example 1. Sales 20,000,000 at 18%, purchases with 1,800,000 VAT.
+
+```oa-check
+name: Standard month
+inputs:
+  sales: 20000000
+  input_vat: 1800000
+steps:
+  - output: sales * 0.18
+  - due: output - input_vat
+expected:
+  output: 3600000
+  due: 1800000
+```
+
+Example 2, a decision. Trader, turnover TTC 150,000,000, profit 20,000,000, clients want VAT invoices. Micro at 6% is 9,000,000 and no VAT. RSI option: profit tax 5,000,000 above the 3,000,000 minimum. The RSI costs 4,000,000 less and allows VAT invoices, with heavier filing. The option must be made before 1 February and holds three years.
+
+```oa-check
+name: Micro against RSI
+inputs:
+  turnover: 150000000
+  profit: 20000000
+steps:
+  - micro: turnover * 0.06
+  - rsi: max(profit * 0.25, max(turnover * 0.005, 3000000))
+  - saving: micro - rsi
+expected:
+  micro: 9000000
+  rsi: 5000000
+  saving: 4000000
+```
+
+## Working material carried from the earlier version
 
 ### 3.1 Ivorian banks (exempt -- exclude)
 
@@ -80,78 +139,30 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- | --- |
 | GOOGLE, MICROSOFT, AWS | Autoliquidation 18% | Non-resident |
 
-## Section 4 -- Worked examples
+Edge cases: capital goods adjustment and Investment Code firms go to a reviewer. Never confuse exempt with zero. Never treat WAEMU as intra-community. Reject invoices without the supplier's NCC.
 
-### Example 1 -- Standard sale at 18%
+## Ask the client first
 
-FCFA 20M net. TVA = FCFA 3.6M. Line 1 = FCFA 20M. Line 6 = FCFA 3.6M.
+1. Regime and turnover TTC?
+2. What is sold, and is any of it at 9% or exempt?
+3. Exports or supplies to foreign customers?
+4. Tax office, DGE or DME, and sector?
+5. Investment Code or a convention?
 
-### Example 2 -- Reduced rate milk at 9%
+## Sources
 
-FCFA 5M processed milk. TVA = FCFA 450K. Line 2 = FCFA 5M. Line 7 = FCFA 450K.
+| Source | URL | Read on |
+|---|---|---|
+| DGI, Annexe fiscale 2026 (loi n° 2025-987), note de service and arts. 1 to 41 headings; articles quoted here read in full | https://www.dgi.gouv.ci/assets/documents/ANNEXE_FISCALE_2026/files/basic-html/page2.html | 2026-11-01 |
+| DGI, Le système fiscal ivoirien (undated e-book, predates the 2026 annex; the annex wins where they differ), pp. 3-51 read | https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page3.html | 2026-11-01 |
+| DGI, Impôts et taxes en Côte d'Ivoire, édition 2025 (art. 146 table, regimes, IRVM, VAT sections read) | https://www.dgi.gouv.ci/assets/documents/IMPOTS%20ET%20TAXES%20EN%20COTE%20D%27IVOIRE%20.pdf | 2026-11-01 |
+| DGI, Calendrier des obligations fiscales (VAT and BIC parts read) | https://www.dgi.gouv.ci/assets/documents/CALENDRIER.pdf | 2026-11-01 |
+| DGI note n° 00026 of 3 Jan 2024, employer contribution part read | https://www.dgi.gouv.ci/assets/documents/DOCTRINE%20FISCALE%202024/IMPOTS%20DIRECTS/IMPOT%20SUR%20LES%20TRAITEMENTS,%20SALAIRES,%20PENSIONS%20ET%20RENTES%20VIAGERES/N%C2%B0%2000026%20MFB%20DGI%20DLCD%20DU%2003%20JAN%202024%20Pr%C3%A9cisions%20relatives%20aux%20am%C3%A9nagements%20...%20des%20salari%C3%A9s.pdf | 2026-11-01 |
+| DGI note n° 01248 on VAT credit refunds, opening part read | https://www.dgi.gouv.ci/assets/documents/PROCEDURE_DE_REMBOURSEMENT_DE_CREDIT_TVA.pdf | 2026-11-01 |
+| CNPS, communiqué on ceilings from 1 Jan 2023 (whole notice read) | https://www.cnps.ci/wp-content/uploads/2023/01/NOUVEAU-PLAFOND-DES-COTISATIONS-SOCIALES-DE-LA-CNPS.pdf | 2026-11-01 |
+| CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
-## Section 5 -- Classification rules
-
-- **Classification rules** — 18% standard, 9% reduced (milk, pasta), 0% exports, exempt (basic foodstuffs, financial, medical, education, residential rental, solar equipment, agricultural inputs).
-
-## Section 6 -- VAT return form structure
-
-- **Output lines 1-10** — Lines 1-10 (18% sales, 9% sales, exempt, exports, total, TVA 18%, TVA 9%, autoliquidation, adjustments, total brute).
-- **Input lines 11-17** — Lines 11-17 (local goods, local services, imports, capital goods, autoliquidation input, exclusions, total deductible).
-- **Net lines 18-21** — Lines 18-21 (net, credit reporte, precompte, payable/credit).
-
-## Section 7 -- Reverse charge
-
-- **Non-resident services reverse charge** — Non-resident services: self-assess 18%. Claim input if taxable. Net zero.  _(CGI Art. 344)_
-
-## Section 8 -- Deductibility and blocked input
-
-- **Blocked input items** — Blocked: vehicles < 9 seats, staff accommodation, entertainment/gifts > FCFA 500K/year/recipient, fuel for blocked vehicles, personal use, invoices without NCC.  _(CGI Art. 360-363)_
-- **Prorata rule** — Prorata. Annual recalculation.  _(CGI Art. 359)_
-
-## Section 9 -- Filing, deadlines, and penalties
-
-- **Filing deadlines** — Monthly 10th (large) or 15th (others). Quarterly for simplifie.
-- **Late filing penalty** — 25% surcharge (min FCFA 100K).
-- **Late payment penalty** — 1%/month.
-- **Failure to register penalty** — 100%.
-
-## Section 10 -- Edge cases, test suite, and escalation
-
-EC1 -- SaaS. Autoliquidation 18%. Net zero.
-
-EC2 -- Cocoa export. Zero-rated. Input recoverable.
-
-EC3 -- Motor vehicle blocked.
-
-EC4 -- WAEMU import (Senegal). VAT 18% at Ivorian customs. No intra-community.
-
-EC5 -- Capital goods adjustment. 10yr immovable, 5yr movable. Reviewer flag.
-
-Test 1 -- FCFA 20M sale. TVA FCFA 3.6M.
-
-Test 2 -- FCFA 5M milk at 9%. TVA FCFA 450K.
-
-Test 3 -- French services FCFA 15M. Output 2.7M, input 2.7M. Net zero.
-
-Test 4 -- Rubber export FCFA 100M. Zero-rated.
-
-Test 5 -- Car purchase. Input blocked. Cost = gross.
-
-Out of scope: BIC 25%, PAYE progressive, CNPS contributions.
-
-### Prohibitions
-
-- NEVER confuse zero-rated with exempt
-- NEVER treat WAEMU as intra-community
-- NEVER accept invoices without NCC
-- NEVER compute numbers -- engine handles arithmetic
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+Not yet confirmed: the full consolidated Code général des Impôts and Livre de Procédures fiscales 2026 (DGI lists them in its paid kiosk; the text was not opened), so article numbers come from the DGI documents above; rule that a reverse charge applies at 18% to foreign services (earlier version, Art. 344 not read for it); blocked input VAT list, prorata and the 500,000 gift limit (Art. 359 to 363 cited earlier; note the DGI places rates at Art. 359, so those references need checking); capital goods adjustment periods; quarterly filing for RSI, which the DGI text does not support (RSI files monthly, https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page10.html); late filing 25% and 100%, late payment 1% a month; FNE rules and e-impots form boxes.
 
 <!-- openaccountants-cta-block -->
 
