@@ -1,0 +1,129 @@
+{
+  "sources": [
+    {
+      "file": "cgi2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+      "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "bytes": 1390109,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Complete108–118 with neighbouring rental/salary boundary; physical57–59 visually rendered/read. Article81; general485–488 routing read. Not whole code/current amendment chain.",
+      "direct_valid_tls_refresh": {
+        "file": "cgi2026.pdf",
+        "url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+        "attempted_utc": "2026-11-01T18:26:25.878899+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 1390109,
+        "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "same_as_existing_cache": true
+      },
+      "act_identity": "Law2021-15 of23December2021, CGI2026 official consolidation updated by Law2025-22 of8December2025",
+      "independent_direct_valid_tls_refetch": {
+        "date": "2026-11-01",
+        "status": 200,
+        "bytes": 1390109,
+        "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "matches_frozen": true
+      },
+      "retrieval_path_note": "Web tool opened LF PDF (15 pages); CGI/LFR web tool returned inaccessible. Sandboxed direct fetch initially failed DNS; approved read-only unsandboxed urllib fetch returned200 for all3 with matching hashes. No TLS bypass."
+    },
+    {
+      "file": "lf2026.pdf",
+      "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+      "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+      "bytes": 915162,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Fiscal1–17 and final47–48 read; original physical14 visually inspected for commencement/signature. Budget tables not reviewed.",
+      "direct_valid_tls_refresh": {
+        "file": "lf2026.pdf",
+        "url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+        "attempted_utc": "2026-11-01T18:26:25.879483+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 915162,
+        "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+        "same_as_existing_cache": true
+      },
+      "act_identity": "Law2025-22 of8December2025, Finance Law2026",
+      "independent_direct_valid_tls_refetch": {
+        "date": "2026-11-01",
+        "status": 200,
+        "bytes": 915162,
+        "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+        "matches_frozen": true
+      },
+      "retrieval_path_note": "Web tool opened LF PDF (15 pages); CGI/LFR web tool returned inaccessible. Sandboxed direct fetch initially failed DNS; approved read-only unsandboxed urllib fetch returned200 for all3 with matching hashes. No TLS bypass."
+    },
+    {
+      "file": "lfr2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+      "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "bytes": 6301177,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Fiscal1–20 and final48–49 read; original physical4/6 visually inspected for securities limb and State-domain price heading. No table values adopted; first operative securities period held.",
+      "direct_valid_tls_refresh": {
+        "file": "lfr2026.pdf",
+        "url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+        "attempted_utc": "2026-11-01T18:26:25.879613+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 6301177,
+        "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+        "same_as_existing_cache": true
+      },
+      "act_identity": "Law2026-10 of24June2026, rectifying Finance Law2026",
+      "independent_direct_valid_tls_refetch": {
+        "date": "2026-11-01",
+        "status": 200,
+        "bytes": 6301177,
+        "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+        "matches_frozen": true
+      },
+      "retrieval_path_note": "Web tool opened LF PDF (15 pages); CGI/LFR web tool returned inaccessible. Sandboxed direct fetch initially failed DNS; approved read-only unsandboxed urllib fetch returned200 for all3 with matching hashes. No TLS bypass."
+    }
+  ],
+  "actual_read_scope": [
+    "CGI108–118 complete,57–59 visual;106–107 and119–121 adjacent boundaries,81 and485–488",
+    "Original LF fiscal1–17 and47–48;14 image controls commencement",
+    "LFR fiscal1–20 and48–49;original1,4,6,17 images control decisive quotes"
+  ],
+  "visual_identity_matches": [
+    {
+      "file": "tpvi-cgi-page-057.png",
+      "expected": "2d9ad36ebb9c8cb5fa67e44cf3c11d8176972f2c0ac7fede4242bfb778484840",
+      "actual": "2d9ad36ebb9c8cb5fa67e44cf3c11d8176972f2c0ac7fede4242bfb778484840",
+      "pass": true
+    },
+    {
+      "file": "tpvi-cgi-page-058.png",
+      "expected": "466562c5142f70a7396a434a9dc1eb87d856b32fcc895f415e07aadb49c0630b",
+      "actual": "466562c5142f70a7396a434a9dc1eb87d856b32fcc895f415e07aadb49c0630b",
+      "pass": true
+    },
+    {
+      "file": "tpvi-cgi-page-059.png",
+      "expected": "bf1c475de40fa49a07533d7b7347d6292797440e565ebf9452eaa3bee409af5b",
+      "actual": "bf1c475de40fa49a07533d7b7347d6292797440e565ebf9452eaa3bee409af5b",
+      "pass": true
+    },
+    {
+      "file": "tpvi-lf14.png",
+      "expected": "69fa5300a639e242b4ae537219b310b03e9a61f8dce6c541fff84f29e85fdf68",
+      "actual": "69fa5300a639e242b4ae537219b310b03e9a61f8dce6c541fff84f29e85fdf68",
+      "pass": true
+    },
+    {
+      "file": "tpvi-lfr4.png",
+      "expected": "4bd7282d68e4a7801952e17786c1ec6773c82b8ae3c5eac1d2d991df5d30b014",
+      "actual": "4bd7282d68e4a7801952e17786c1ec6773c82b8ae3c5eac1d2d991df5d30b014",
+      "pass": true
+    },
+    {
+      "file": "tpvi-lfr6.png",
+      "expected": "5a7cca25feab5c8c566d63ec2292891914350990ba052d321bd6a0b60bff57c3",
+      "actual": "5a7cca25feab5c8c566d63ec2292891914350990ba052d321bd6a0b60bff57c3",
+      "pass": true
+    }
+  ],
+  "not_full_later_law_currentness": true
+}

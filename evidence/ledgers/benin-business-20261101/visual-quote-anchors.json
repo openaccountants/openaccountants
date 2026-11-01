@@ -1,0 +1,29 @@
+[
+  {
+    "row_id": "bj-business-income-tax:21",
+    "quote": "deux cent cinquante mille",
+    "scan_file": "lf2026-page-04.png",
+    "scan_sha256": "867de39b956d83b27abf28de15bb55c6cc5e37029341fb0e8d57be5680628ac8",
+    "source_pdf_page": 4,
+    "read_date": "2026-11-01",
+    "status": "Original scan visually read by writer; cached OCR misrecognises part of this exact visible wording. Independent review pending."
+  },
+  {
+    "row_id": "bj-business-income-tax:32",
+    "quote": "entre en vigueur à compter du 1er janvier 2026",
+    "scan_file": "lf2026-page-14.png",
+    "scan_sha256": "e8f7628e7f2643b2b8b198772c2470d8c4737b5ace0d4a5f0aed4ff0cf1b2871",
+    "source_pdf_page": 14,
+    "read_date": "2026-11-01",
+    "status": "Original scan visually read by writer; cached OCR misrecognises part of this exact visible wording. Independent review pending."
+  },
+  {
+    "row_id": "bj-business-income-tax:49",
+    "quote": "Cette information est accompagnée de la situation fiscale à jour",
+    "scan_file": "lfr2026-page-03.png",
+    "scan_sha256": "b2ed1b6ea679c9550bb3a08ee7e8715f70aaad4ef9e428e66566ae704ffd990e",
+    "source_pdf_page": 3,
+    "read_date": "2026-11-01",
+    "status": "Original scan visually read by writer; cached OCR misrecognises part of this exact visible wording. Independent review pending."
+  }
+]

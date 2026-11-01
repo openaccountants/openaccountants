@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-01T18:55:52.016231+00:00",
+  "reviewer": "Codex independent Benin TPVI reviewer, no author role",
+  "immutable_evidence_files": {
+    "cases-review.json": "38a97f373cf6dbca8675f56f84e06737bbad0bf94772a01c4806a51df86760ca",
+    "every-row-review.json": "f1c9afa83cb8325283bcb3510c39106bdf0a45c49c50d6909249df3ccb1bd2c7",
+    "findings.json": "9da0a656c660ac0733967c2ba11768bc406f114c59abec8852af768505afb870",
+    "frozen-identities.json": "532f73a4a13914089c70b3c5a8794a3062ef4e28aa9fe2ef837d6fee11b7273c",
+    "preservation-review.json": "6e1aa8a3be45a466d8f82f387d93605a8947eb67122143eb71ea2decbb3c1155",
+    "review.md": "7f70737c5d9d2250298563d93a9c3544a4ac70ef72c5c95c26638db87464b9c2",
+    "source-review.json": "f89583469fb81bc7a095d7edf457b12e56488dcaf72902e0ce61c39566746cc7",
+    "status-only-transitions.json": "d162d4c8703eae33f6f2997accacbd6036f4fbc4b8420bc58bcc558751315b18",
+    "validation-review.json": "b6c56314beb54c0b7246608648e337d8d4323a7831011c46965d206846eda655"
+  },
+  "self_excluded": true
+}

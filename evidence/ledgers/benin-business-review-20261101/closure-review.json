@@ -1,0 +1,234 @@
+{
+  "review_date": "2026-11-01",
+  "result": "F1 and F2 closed; all54row source-fidelity review accepted within the stated partial preparation scope",
+  "original_frozen_commit": "cf0afc121b77fe7457fefc8bd639bf720e32c98b",
+  "closure_binding": "Working candidate byte hashes below; parent must commit and record final identities",
+  "repaired_candidate_sha256": {
+    "skills/benin/bj-business-income-tax.md": "4523d7f273421df5d1ba85a9949109cfa6f2f9592bb9b052e158a62ae47c6788",
+    "evidence/ledgers/benin-business-20261101/bj-business-income-tax.md": "56201b48d920d818bb961433511981f1a374b693ac8507b23cbc739b4454db9a",
+    "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json": "d76a33a77dd52bc44c9e3e1b6b8cbebd6ee69127873040463383098a4dd4d336"
+  },
+  "parent_repair_receipt_sha256": "a2f6414258dcb540a2b4c1ad9fcb683ffedd033feeed469bfffddbd6eb1dfb4a",
+  "F1": {
+    "verdict": "closed",
+    "act_article": "CGI60(5)",
+    "pages_read": [
+      35,
+      36
+    ],
+    "exact_quote": "à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé",
+    "reason": "The exclusion now sits next to the diversion rule; the affected ledger rule and exact source anchor are updated. No held charge allocation or disposal computation has been invented."
+  },
+  "F2": {
+    "verdict": "closed",
+    "act_article": "CGI45(1)",
+    "pages_read": [
+      28
+    ],
+    "exact_quote": "Pour l’établissement de l’impôt sur le revenu",
+    "reason": "Capital P restored in both ledger forms; no rule substance changed."
+  },
+  "narrow_diff_verified": true,
+  "only_changed_rows": [
+    42,
+    52
+  ],
+  "other52rows_exact": true,
+  "initial_reviewer_artifacts": [
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/old-topic-destinations.json",
+      "sha256": "7988d1fc99785531dfdb3e26037918aab78d890343673905546becf322c63083",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/examples.json",
+      "sha256": "e64b372360288d3ffb7acccee69d367e95d8acf319ffd2e3ba8dcdecde7c5eb3",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.md",
+      "sha256": "8949bcd247da63735609fa0d2e367ecf4b1cfdc3820fdf54ab6e656bcca5602c",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-identities.json",
+      "sha256": "bd3057253e3e3e814191438d606064afd4d488c2c578795f3efb37c1816236c2",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/mechanical-preservation.json",
+      "sha256": "3f2f7386de07262c198716da253b9eee37e746d3e99010f2d8c3c549bf9f21d7",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/findings.json",
+      "sha256": "8e5e3ef392c30119ddb24c4280223eb33b3e89236e22adc5f3c462a50635a525",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.json",
+      "sha256": "2bb08463e9ab5462deb5b4c6f0110d4d9fe1628cef21bfeb5ea8167778138e47",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/source-clause-contexts.json",
+      "sha256": "899741d820fd56da3fe132ef7439548b1944779ae1a316ec7c225c8d1bf8a1e5",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/independent-checks.py",
+      "sha256": "ce7342678fb252aee204a557ce22d71ec652541d6785e794daa0f1a2888f6fad",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-addendum.md",
+      "sha256": "84fcd0a595a0b940e1e3c296c779bbed9ff68506ccc79421a652db32d537cfd4",
+      "preserved_exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review.md",
+      "sha256": "78249e7599b7fbada0fb1b43948d965b2df724e46934277aadef3f9062dc8e70",
+      "preserved_exact": true
+    }
+  ],
+  "all_initial_findings_preserved": true,
+  "original_writer_files_recoverable_at_frozen_commit_and_blobs": {
+    "skills/benin/bj-business-income-tax.md": {
+      "sha256": "09111922111237db1e9ea8fdaa5667371ebc292e031f438e5ab748709a503fd0",
+      "git_blob": "fa513bc4a55f43be0ae2e6d194fee71b944c708d",
+      "frozen_commit": "cf0afc121b77fe7457fefc8bd639bf720e32c98b"
+    },
+    "evidence/ledgers/benin-business-20261101/bj-business-income-tax.md": {
+      "sha256": "1efbf5f252419192b20c93a13c1e274d27fcc8d6776da2f5c83e6fb89b3c9484",
+      "git_blob": "b1827c75d943b802d9f033a6ca32f860a362dfdc",
+      "frozen_commit": "cf0afc121b77fe7457fefc8bd639bf720e32c98b"
+    },
+    "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json": {
+      "sha256": "fe0d7d2e039c7dda0367d0516199d5e3b635d4242fbedf8769302b1176bb9b34",
+      "git_blob": "e490a03fbb10b1773196c14a1ce8a88487b441a8",
+      "frozen_commit": "cf0afc121b77fe7457fefc8bd639bf720e32c98b"
+    }
+  },
+  "prior_guides_exact": 10,
+  "prior_evidence_exact": 43,
+  "readme_unchanged_at_closure": true,
+  "readme_prior_prefix_preserved": true,
+  "all15shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/benin/bj-business-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/benin/bj-business-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 4 changed guide file(s)\nchecked 3 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-business-income-tax.md: BJ IT-IND also holds bj-income-tax, bj-rental-income-tax, with a different job\nWARN: skills/benin/bj-property-tfu.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/benin/bj-rental-income-tax.md: BJ IT-IND also holds bj-business-income-tax, bj-income-tax, with a different job\n\nvalidation passed (3 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "251813c96f7b883f2adc4c1bb72bc175a288bd83",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-business-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "both_examples_recomputed": true,
+  "arithmetic_results": {
+    "example1_iba_plus_levy": 304000,
+    "example1_profit_crossover": 1000000,
+    "example2_cash_iba": 1500000,
+    "example2_accrual_iba": 2100000,
+    "example2_timing_difference": 600000
+  },
+  "allowed_status_reconciliation": [
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "before": "This new job awaits independent source review and has no accountant attestation.",
+      "after": "Independent AI source review and focused repair closure passed on 1 November 2026 for this partial preparation job; no accountant has attested to this version.",
+      "input_sha256": "4523d7f273421df5d1ba85a9949109cfa6f2f9592bb9b052e158a62ae47c6788",
+      "expected_final_sha256": "43f460825997818a329517874b7916d7f24be5543f07a315299e5f4cf4740c2d",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/benin/README.md",
+      "before": "This new writer checkpoint awaits independent review and does not inherit the earlier property/rental or eight-Guide review.",
+      "after": "The [independent IBA review and focused closure](../../evidence/ledgers/benin-business-review-20261101/closure-review.md) checked all 54 ledger rows and both examples, and accepted two repairs on 1 November 2026. This remains a partial preparation job with no accountant attestation.",
+      "input_sha256": "74ebe94a19595b7f85fdd841e92b5412197657751c315dffe70df5c66ae5e942",
+      "expected_final_sha256": "345d0715ae69d63b13d2a13aa0f8198d19405191f97afc6d488a63cde517402c",
+      "occurrences": 1
+    }
+  ],
+  "status_scope": "Only these two one-occurrence literal replacements are within this closure. Do not rewrite historical writer/reviewer evidence or the pre-existing property/rental status paragraph. All7domains and allother holds remain partial/unresolved.",
+  "no_accountant_attestation_or_complete_operative_law_approval": true,
+  "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a"
+}

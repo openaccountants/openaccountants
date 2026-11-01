@@ -1,0 +1,424 @@
+{
+  "frozen_commit": "29102d1f721ee3bd8feaffa01d520e7fe92f6344",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "frozen_files": [
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.json",
+      "git_blob": "eb6f54ab14a8591dc6832f63dafa9cf1605d3752",
+      "sha256": "0c5cc67cc5e88169d12bf6aaedc359196fd4202e19831fafd09a6b8d6ac1b995"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.md",
+      "git_blob": "a966d41bef1bf8c31f9873d2881070aaefba230c",
+      "sha256": "6e630b6ba2b726ff8bfd8d829c8efa450ab31d620aaa208047338719687dded5"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.json",
+      "git_blob": "ab31f7c9957acece829b760db16cbb235887f83f",
+      "sha256": "28a0afa462d362c3a30cfe61062e224037f5b9805a47cdfc156ca15a6f39f616"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.md",
+      "git_blob": "32617398f4b316856eeeaccd5eaa187a5208efba",
+      "sha256": "d78818475f1b9845e4ee72bb6722194c181346f4716230b94fccb18b4b18dd34"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/committed-validation.json",
+      "git_blob": "8193be8b66e532ad33bdc79da492229f3ca945b0",
+      "sha256": "84404ec6f2ca928598aef56ec5c53c92c79c8f48e479eb8833abcc09f3da45e3"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/freeze-receipt.json",
+      "git_blob": "e67f47a8ca97de75fcd53b60928c67234feedb9f",
+      "sha256": "b50482a8b88f9f26caada57a4ca2144b4858ebe2a7a9fd491f2ddd96fb019629"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/old-topic-destinations.json",
+      "git_blob": "031b9cf6378a62a388901a76181ce2b98015be46",
+      "sha256": "da8e2f947cd75512010ff8fa8462114429bc5b2507d7a6dd2befb9d393638de3"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/preservation-baseline.json",
+      "git_blob": "510e19cbf4bac32b7e2e3f49a7c7f2236030b102",
+      "sha256": "af4bdf5838fae4ff45a38959c6274ce704d19e135c2ecc8e22fa8a8b16664789"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/readme-routing-change.json",
+      "git_blob": "250c19de925c90b22505c30f9d2e88751bfa8a53",
+      "sha256": "c69f875520c4e6448c988bacd25c67f44dda3f3e253857d75e6e4c23ffaf0e89"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/source-identities.json",
+      "git_blob": "05856aceed012080a7993f212a783abd97e37b68",
+      "sha256": "abf724f4cd1bec60b0e9c5800981bde96b4bc02bf2c5af140966d1dfbcfcbce2"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check-history.json",
+      "git_blob": "b02f3eece1dc6d51ef41f898e1008d3287468970",
+      "sha256": "ffe2791b6e004f6024d2d428061af0ee1ae97b00ce0b414ed5c146dd2005985f"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check.py",
+      "git_blob": "6f880052441abb5cd0101fe9661978ba3eaaaf72",
+      "sha256": "6fda41b8bda9da45c5aeae39782f4a64ab19fdb1602cda9022db5bdf4fd8dcb3"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-checks.json",
+      "git_blob": "1776b1b05146356c84a0ef27b7dcd40be047a447",
+      "sha256": "2d6f592f33dc4a59b5da7995dae3a03e946fb1df277e04ca328a969f69399ff0"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-record.md",
+      "git_blob": "e36c9776925ab11415884a77c1cf870c81b498e3",
+      "sha256": "31e6b124918d9edaf446f5b314af2038790eeb635774eaa5fa8684bc1acd474c"
+    },
+    {
+      "path": "skills/benin/README.md",
+      "git_blob": "c2c9267b65df0bfaa39c1463aa6f1e2c84d10dea",
+      "sha256": "981b92a3dbda2bb3b4cb706d2cafa4b90418f67187c062e0e8d66f1badb2cb60"
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "git_blob": "28f694f3409610bb4e44a898a8e715241dd19099",
+      "sha256": "40cac2bdcacf7ecaf1f70e5deedffade2fd40dccf66956356fa1a1c402114637"
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "git_blob": "856949e90d0c889531cdafa7b4ae936379aad06d",
+      "sha256": "4124bd25b23cbf3998c1fcbb436ac151588bbee4335e7a77201c2f9883b229a9"
+    }
+  ],
+  "preserved_files": [
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/candidate-hashes.json",
+      "sha256": "c1b79e1c8102268ceb98681fa647eb42a3ea193227d6466245cdbd3e46dcf318",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/check-results.json",
+      "sha256": "13c52c132d4079f1dfaccca94fd2240aa582e4c2e9b435a557b5d076263df69e",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/pinned-validation.py",
+      "sha256": "62cd0bdabd32a25d29bc2111f574e0ec1a41f4773d06b01292e86bf4ad7615fa",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/source-capture-manifest.json",
+      "sha256": "631b0b4a652bd73725a84db99d657addccde7671c45e5f485e3fbe4b79d642fc",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-checks.py",
+      "sha256": "ebcade8c134853ab2b07656c97abdf0d00bfade68098d388144b7bebf4dc9e81",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-record.md",
+      "sha256": "54159bad21b58563165962628293f21225fe6ae545a332db9ea7ada283cfa6b0",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-old-topics.md",
+      "sha256": "1021217e9feed705e66af1a7a3adf77eb09d1690064117a51fccc7d3d2e3e680",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/preservation.json",
+      "sha256": "f131cd188f3f63de9b4f41a6ff314286002f92037ad8a792d424e70763f9db82",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/writer-repair.json",
+      "sha256": "d82723aa42309d6f4912f662e0614342c5cfe8cbcb489cf05311f2dd6db7e947",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/build-row-receipt.py",
+      "sha256": "c5b02ecccc0f65f7c6cdca31bf752b33a7f4d78684364edf229fe69840ca89cc",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/independent-checks.py",
+      "sha256": "1a43af6d65b6b68936fadae7e45c838ca4914f17ae2f4e316d54de0d6899db1b",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/mechanical-preservation.json",
+      "sha256": "5902356b0c9c978f775d8ee83c5702f6ce4c7cc3825781ecb7c69977411197a7",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/review.md",
+      "sha256": "cec48a278d5f3ade12af975d02520eba141690d6798c9f5e847d63396b17aaef",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/row-checks.md",
+      "sha256": "82b329cb0aaa823182ba78ea7b69016fefe03c439380bb17647da88d623ff6cb",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification-network.json",
+      "sha256": "eca6ccafc99961d217d8ad7ea9e02639944cd3e06969c81006d7e1fd6abc1b80",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification.json",
+      "sha256": "2bd56e0beab4a4c8012349e0008e37391686ca7dff575df31897c0d93682c3e6",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/text-extraction.json",
+      "sha256": "348e342cd085f94f2b2a3699c26a2f2d23d9643192dfe48bd8d9dd19777556e3",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/check-closure.py",
+      "sha256": "8c1ca0f02c9edb4400d6d59e06af06ef65164148a588532269a5f6a3da7534e2",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/closure-receipt.json",
+      "sha256": "e49bb4468fd8411b1a1c8d9ae9c93ef89dfa098e57ffab13a22cabe979bf4cac",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/review.md",
+      "sha256": "687f5e1a38591f8087bfaf21d3d7bc5ea35b54af602c107e312aa05d6143e938",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-company-formation.md",
+      "sha256": "788833768f1c8bd8046cbbc7f7726f2a4475e533a15b266038eec465cf7c4c41",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-corporate-income-tax.md",
+      "sha256": "591f3f9fcea1498e79e048abf323cae4e8396931f46320364c6ea058fcdc768f",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-cross-border-withholding.md",
+      "sha256": "0d26ca39d0b604022e89332c426650ccea61aecaf3fe065951f67c0327bc0e47",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-income-tax.md",
+      "sha256": "5a2d64e0e75fc051f7aea7588ffe212785b3e7a47e5eaf0e1410214829de723d",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-payroll-social.md",
+      "sha256": "dee1670244aeb00645a94431bed507620bc002d1eb24238e2f2226baa525c070",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-tax-overview.md",
+      "sha256": "9058c5299ee7ab8f7c238b53ce7ba6601fa4734248a1981ad93de21c97657130",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-transfer-pricing.md",
+      "sha256": "34236365d9d03a3a550b644e73c939bea41609fd4c8afb53e4f9bff40a81dd52",
+      "exact": true
+    },
+    {
+      "path": "evidence/ledgers/bj-vat-gst.md",
+      "sha256": "559ada49180ebad2aaa6802d5c4e424a3bc715bbb16871b11aae89394bc7185b",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "sha256": "c8fe5e6b1c6f3febfc81e5837910ea2d619e088a31ec8c262bfcf00f409a3dd1",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "sha256": "6d6842f12a2851ee2dc4a9325deb2ef274a6be4e5e51aafcd4efc693bb141f5b",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "sha256": "d6bcfb8840801437aebeff34dfd6dd84c8d4d7103911c193a7afebd1a0ba303d",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "sha256": "d1ed53baee9c64c6b2bdcdeb699dba9a4a0af21abb8ab315b85b654bfbe27f34",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "sha256": "e12d33450dab8e9840cd6b55397651d5957e0089fc3394707956caee14fdf5d4",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "sha256": "a8063ff70ce6b565103a56befdcf1bb8ba127b87273bc15ed88f64f78059196a",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "sha256": "014b19be7f3a6d726206a24ffb893467585e8f4de8aac2a9ceca02fc6091049c",
+      "exact": true
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "sha256": "7062a8da2d6fa198874a62e4894d012b3a024878bdad2f5acffc839baa3a5137",
+      "exact": true
+    }
+  ],
+  "preserved_guide_count": 8,
+  "preserved_prior_evidence_count": 28,
+  "rewritten_old_body_units": 0,
+  "lost_content_restored": 0,
+  "readme_exactly_matches_two_partial_explanation_replacements_and_appendix": true,
+  "all_seven_domains_partial": true,
+  "no_new_platform_fields_or_cta": true,
+  "ledger_human_json_agreement": true,
+  "ledger_rows": 42,
+  "source_identities": [
+    {
+      "file": "cgi2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+      "act": "CGI 2026",
+      "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "bytes": 1390109,
+      "read_date": "2026-11-01",
+      "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+      "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+    },
+    {
+      "file": "lf2026.pdf",
+      "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+      "act": "Law 2025-22 of 8 December 2025",
+      "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+      "bytes": 915162,
+      "read_date": "2026-11-01",
+      "read_scope": "OCR fiscal arts1–17 and final arts47–48; scans PDF2 (TFU relief),4 (CGI156 amendment),14 (commencement) visually read. No budget-table valuation reused.",
+      "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+    },
+    {
+      "file": "lfr2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+      "act": "Law 2026-10 of 24 June 2026",
+      "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "bytes": 6301177,
+      "read_date": "2026-11-01",
+      "read_scope": "OCR fiscal arts1–19 and final arts48–49; scans PDF4 (new CGI106(9)) and17 (final provisions) visually read. Article20 public-domain price schedule excluded from private-property values.",
+      "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+    }
+  ],
+  "independent_examples": [
+    {
+      "id": "TFU-1",
+      "calculation": "1,200,000 x 6% = 72,000; 8,000,000 x 5% = 400,000; total 472,000",
+      "values": [
+        "72000.00",
+        "400000.00",
+        "472000.00"
+      ],
+      "decision": "Different statutory categories require different supported bases. 6%/5% are assumed actual local facts within the ranges, not national rates."
+    },
+    {
+      "id": "TFU-2",
+      "calculation": "2023 + 4 = 2027; 900,000 x 6% = 54,000",
+      "values": [
+        2027,
+        "54000.00"
+      ],
+      "decision": "Valid exclusive principal-residence use would still be exempt in 2026; full commercial conversion in 2026 ends the remaining exemption from that year. No proration invented."
+    },
+    {
+      "id": "IRF-1",
+      "calculation": "2,400,000 + 120,000 - 60,000 = 2,460,000; x12% = 295,200; +4,000 -288,000 = 11,200",
+      "values": [
+        "2460000",
+        "295200.00",
+        "11200.00"
+      ],
+      "decision": "Receipt-backed withholding is kept separate from adjusted base and ORTB. 11,200 is labelled an arithmetic reconciliation before instalments, not an authenticated payable balance or a resolution of final-withholding/ORTB settlement."
+    },
+    {
+      "id": "IRF-2",
+      "calculation": "150,000 x 6 = 900,000; x12% =108,000; exempt direct individual tenant withholding 0; business-landlord x10%=90,000",
+      "values": [
+        "900000",
+        "108000.00",
+        0,
+        "90000.00"
+      ],
+      "decision": "5 May advance remits by 10 June, not each future letting month. Direct natural-person tenant is exempt under art106(2), but landlord IRF is not extinguished. IBA/IS branch computes withholding only. No platform is assumed."
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/benin/bj-property-tfu.md",
+        "skills/benin/bj-rental-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/benin/bj-property-tfu.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-rental-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-property-tfu.md",
+        "skills/benin/bj-rental-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-property-tfu.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/benin/bj-rental-income-tax.md: BJ IT-IND also holds bj-income-tax, with a different job\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "29102d1f721ee3bd8feaffa01d520e7fe92f6344"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "warnings": [
+    "TFU slug has no standard seven-domain token; README names the separate ownership-tax job.",
+    "Rental IRF and salary ITS share IT-IND but are distinct jobs; prior salary Guide unchanged."
+  ],
+  "network_note": "Reviewer git fetch origin failed DNS resolution. Review is bound to the local frozen full commit. Parent reported a successful origin fetch immediately before branching from the stated base; parent owns remote/publication reconciliation.",
+  "source_acquisition": "No new source acquisition. Existing official source captures were sufficient for every cited check; full source files stay outside Git."
+}

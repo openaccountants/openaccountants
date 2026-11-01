@@ -1,0 +1,575 @@
+{
+  "base_commit": "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+  "exact_prior_files": [
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json",
+      "sha256": "d76a33a77dd52bc44c9e3e1b6b8cbebd6ee69127873040463383098a4dd4d336",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.md",
+      "sha256": "56201b48d920d818bb961433511981f1a374b693ac8507b23cbc739b4454db9a",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/committed-validation.json",
+      "sha256": "77ba80ed2679a1564a6322b83872b9f2f98cf0d5ea49f0996bcfb8de6349114d",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/freeze-receipt.json",
+      "sha256": "409d7c8cca1a1d347afe361410f38698f8f1981233cc4b5276c6581d8e9a3637",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.json",
+      "sha256": "ce8e301ad4e4f0918fb952d41708b90ed1ee3839b2f36653c1393272cd5cdfda",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.md",
+      "sha256": "7e731ccd6c30e036267c6c3eb4303673228587cf909b287f18a4e2fbcdad230b",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/preservation-baseline.json",
+      "sha256": "c1100633cd2d946327d194bac207dce86521276094cbf824a78f0c3665414e62",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/readme-routing-change.json",
+      "sha256": "3acdc1fab4d62401f39bd4fbc11c1ce1654f0edd69668bd78e23d05fa062c69e",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-holds.json",
+      "sha256": "fb00855b0d4e60542e04e73d06606729a45c950f50da5e79b3e501a5a0964d53",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-identities.json",
+      "sha256": "e65e7e3255d4b29961d3ab2028b08c14adc3bd11ca6a9d2417b7bce8056bcfb0",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/visual-quote-anchors.json",
+      "sha256": "5d29beebbdbaf4b544d059e8e158db7bc2949a151b4153b7e18c3c7ed6d33a8f",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-check.py",
+      "sha256": "90bc2bf6b95864ac459d2a97a6ddfc623d123ec422a626d3f67024da3ee13d43",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-checks.json",
+      "sha256": "4b8b2af20ba0b65fa710b83d6ca79007b52fa67300d6d7724f2dfe284c36f387",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-record.md",
+      "sha256": "aabcef6fde8079204ecb787ec9a8002288d1e158f6953a0c6d1499bebf21d4fb",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-eof-whitespace-repair.json",
+      "sha256": "8a6cb84584bd95317e2ad15ef74d8ca7119afa4944828c400c6af2042bbcf8ab",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-review.json",
+      "sha256": "25d9b80439c21966c971ef56e5219759473a216b64a87bf1db501dd4c7b9f2d0",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-review.md",
+      "sha256": "2936e0b614aacc6c6bdb398c51931ea960f6a8540d3048b613ecf5f6b9f07947",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/committed-closure-validation.json",
+      "sha256": "748c5f2d1cc8d4535c60795fdf8b2c5fe80650b3022b4806e2c818873d93b19b",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/examples.json",
+      "sha256": "e64b372360288d3ffb7acccee69d367e95d8acf319ffd2e3ba8dcdecde7c5eb3",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/failed-intermediate-whitespace-audit.json",
+      "sha256": "1dcf4736cef37f78b43436a55d42274732bf0b0f96b8b424488defe260ce35c1",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/findings.json",
+      "sha256": "8e5e3ef392c30119ddb24c4280223eb33b3e89236e22adc5f3c462a50635a525",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/independent-checks.py",
+      "sha256": "ce7342678fb252aee204a557ce22d71ec652541d6785e794daa0f1a2888f6fad",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/mechanical-preservation.json",
+      "sha256": "3f2f7386de07262c198716da253b9eee37e746d3e99010f2d8c3c549bf9f21d7",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/old-topic-destinations.json",
+      "sha256": "7988d1fc99785531dfdb3e26037918aab78d890343673905546becf322c63083",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/parent-F1-F2-repair-candidate.json",
+      "sha256": "a2f6414258dcb540a2b4c1ad9fcb683ffedd033feeed469bfffddbd6eb1dfb4a",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-addendum.md",
+      "sha256": "84fcd0a595a0b940e1e3c296c779bbed9ff68506ccc79421a652db32d537cfd4",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-identities.json",
+      "sha256": "bd3057253e3e3e814191438d606064afd4d488c2c578795f3efb37c1816236c2",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review.md",
+      "sha256": "78249e7599b7fbada0fb1b43948d965b2df724e46934277aadef3f9062dc8e70",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.json",
+      "sha256": "2bb08463e9ab5462deb5b4c6f0110d4d9fe1628cef21bfeb5ea8167778138e47",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.md",
+      "sha256": "8949bcd247da63735609fa0d2e367ecf4b1cfdc3820fdf54ab6e656bcca5602c",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/source-clause-contexts.json",
+      "sha256": "899741d820fd56da3fe132ef7439548b1944779ae1a316ec7c225c8d1bf8a1e5",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/status-reconciliation.json",
+      "sha256": "a74460ad3e03f66473c98b9fe0d505d1d9d6d4a8dd60a02d3809b281baf311ab",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/candidate-hashes.json",
+      "sha256": "c1b79e1c8102268ceb98681fa647eb42a3ea193227d6466245cdbd3e46dcf318",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/check-results.json",
+      "sha256": "13c52c132d4079f1dfaccca94fd2240aa582e4c2e9b435a557b5d076263df69e",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/pinned-validation.py",
+      "sha256": "62cd0bdabd32a25d29bc2111f574e0ec1a41f4773d06b01292e86bf4ad7615fa",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/source-capture-manifest.json",
+      "sha256": "631b0b4a652bd73725a84db99d657addccde7671c45e5f485e3fbe4b79d642fc",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-checks.py",
+      "sha256": "ebcade8c134853ab2b07656c97abdf0d00bfade68098d388144b7bebf4dc9e81",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-record.md",
+      "sha256": "54159bad21b58563165962628293f21225fe6ae545a332db9ea7ada283cfa6b0",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-old-topics.md",
+      "sha256": "1021217e9feed705e66af1a7a3adf77eb09d1690064117a51fccc7d3d2e3e680",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.json",
+      "sha256": "0c5cc67cc5e88169d12bf6aaedc359196fd4202e19831fafd09a6b8d6ac1b995",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.md",
+      "sha256": "6e630b6ba2b726ff8bfd8d829c8efa450ab31d620aaa208047338719687dded5",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.json",
+      "sha256": "28a0afa462d362c3a30cfe61062e224037f5b9805a47cdfc156ca15a6f39f616",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.md",
+      "sha256": "d78818475f1b9845e4ee72bb6722194c181346f4716230b94fccb18b4b18dd34",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/committed-validation.json",
+      "sha256": "84404ec6f2ca928598aef56ec5c53c92c79c8f48e479eb8833abcc09f3da45e3",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/freeze-receipt.json",
+      "sha256": "b50482a8b88f9f26caada57a4ca2144b4858ebe2a7a9fd491f2ddd96fb019629",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/old-topic-destinations.json",
+      "sha256": "da8e2f947cd75512010ff8fa8462114429bc5b2507d7a6dd2befb9d393638de3",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/preservation-baseline.json",
+      "sha256": "af4bdf5838fae4ff45a38959c6274ce704d19e135c2ecc8e22fa8a8b16664789",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/readme-routing-change.json",
+      "sha256": "c69f875520c4e6448c988bacd25c67f44dda3f3e253857d75e6e4c23ffaf0e89",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/source-identities.json",
+      "sha256": "abf724f4cd1bec60b0e9c5800981bde96b4bc02bf2c5af140966d1dfbcfcbce2",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check-history.json",
+      "sha256": "ffe2791b6e004f6024d2d428061af0ee1ae97b00ce0b414ed5c146dd2005985f",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check.py",
+      "sha256": "6fda41b8bda9da45c5aeae39782f4a64ab19fdb1602cda9022db5bdf4fd8dcb3",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-checks.json",
+      "sha256": "2d6f592f33dc4a59b5da7995dae3a03e946fb1df277e04ca328a969f69399ff0",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-record.md",
+      "sha256": "31e6b124918d9edaf446f5b314af2038790eeb635774eaa5fa8684bc1acd474c",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/checker-history.json",
+      "sha256": "dcd523149c1d6243541d40677644b1837917358f69048c7af33edfbabe77c43d",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/committed-closure-validation.json",
+      "sha256": "e0ea76614d1f073903b53f537424e0159c7d097c665fbee0258a29074f4c6904",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/independent-checks.py",
+      "sha256": "bded3debed291337a2d1053d557e213e9a4df25a42b64c25aae3db548ed005b7",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/mechanical-preservation.json",
+      "sha256": "cabae0dbc694911141c9b93f632a522a7c13934166665c1736d12c63ff6a84e3",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/review-identities.json",
+      "sha256": "efaabc6884664783a52329bb5c40efbad51553bab941c542104cde573669c6cb",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/review.md",
+      "sha256": "51f40c0351c21ee93695e12be8706d16d0ac57ae20c5efd19356372813e7f62c",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.json",
+      "sha256": "ff424cd983119c72818d0da32d4052f2aa7a5020ba0c53e1ddeb896d91176caf",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.md",
+      "sha256": "117f72f9a2b1d83e8d4ced88fd2b219b022c29609c75a7a4511350c46391db32",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/status-reconciliation.json",
+      "sha256": "3dbd412391789d5e3f8ab990f61471b27bd79f87d101f8d254a9d2514d968195",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/preservation.json",
+      "sha256": "f131cd188f3f63de9b4f41a6ff314286002f92037ad8a792d424e70763f9db82",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/writer-repair.json",
+      "sha256": "d82723aa42309d6f4912f662e0614342c5cfe8cbcb489cf05311f2dd6db7e947",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/build-row-receipt.py",
+      "sha256": "c5b02ecccc0f65f7c6cdca31bf752b33a7f4d78684364edf229fe69840ca89cc",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/independent-checks.py",
+      "sha256": "1a43af6d65b6b68936fadae7e45c838ca4914f17ae2f4e316d54de0d6899db1b",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/mechanical-preservation.json",
+      "sha256": "5902356b0c9c978f775d8ee83c5702f6ce4c7cc3825781ecb7c69977411197a7",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/review.md",
+      "sha256": "cec48a278d5f3ade12af975d02520eba141690d6798c9f5e847d63396b17aaef",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/row-checks.md",
+      "sha256": "82b329cb0aaa823182ba78ea7b69016fefe03c439380bb17647da88d623ff6cb",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification-network.json",
+      "sha256": "eca6ccafc99961d217d8ad7ea9e02639944cd3e06969c81006d7e1fd6abc1b80",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification.json",
+      "sha256": "2bd56e0beab4a4c8012349e0008e37391686ca7dff575df31897c0d93682c3e6",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/text-extraction.json",
+      "sha256": "348e342cd085f94f2b2a3699c26a2f2d23d9643192dfe48bd8d9dd19777556e3",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/check-closure.py",
+      "sha256": "8c1ca0f02c9edb4400d6d59e06af06ef65164148a588532269a5f6a3da7534e2",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/closure-receipt.json",
+      "sha256": "e49bb4468fd8411b1a1c8d9ae9c93ef89dfa098e57ffab13a22cabe979bf4cac",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/review.md",
+      "sha256": "687f5e1a38591f8087bfaf21d3d7bc5ea35b54af602c107e312aa05d6143e938",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-company-formation.md",
+      "sha256": "788833768f1c8bd8046cbbc7f7726f2a4475e533a15b266038eec465cf7c4c41",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-corporate-income-tax.md",
+      "sha256": "591f3f9fcea1498e79e048abf323cae4e8396931f46320364c6ea058fcdc768f",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-cross-border-withholding.md",
+      "sha256": "0d26ca39d0b604022e89332c426650ccea61aecaf3fe065951f67c0327bc0e47",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-income-tax.md",
+      "sha256": "5a2d64e0e75fc051f7aea7588ffe212785b3e7a47e5eaf0e1410214829de723d",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-payroll-social.md",
+      "sha256": "dee1670244aeb00645a94431bed507620bc002d1eb24238e2f2226baa525c070",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-tax-overview.md",
+      "sha256": "9058c5299ee7ab8f7c238b53ce7ba6601fa4734248a1981ad93de21c97657130",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-transfer-pricing.md",
+      "sha256": "34236365d9d03a3a550b644e73c939bea41609fd4c8afb53e4f9bff40a81dd52",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "evidence/ledgers/bj-vat-gst.md",
+      "sha256": "559ada49180ebad2aaa6802d5c4e424a3bc715bbb16871b11aae89394bc7185b",
+      "status": "exact",
+      "comparison": "unchanged Git object in sparse checkout"
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "sha256": "43f460825997818a329517874b7916d7f24be5543f07a315299e5f4cf4740c2d",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "sha256": "c8fe5e6b1c6f3febfc81e5837910ea2d619e088a31ec8c262bfcf00f409a3dd1",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "sha256": "6d6842f12a2851ee2dc4a9325deb2ef274a6be4e5e51aafcd4efc693bb141f5b",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "sha256": "d6bcfb8840801437aebeff34dfd6dd84c8d4d7103911c193a7afebd1a0ba303d",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "sha256": "d1ed53baee9c64c6b2bdcdeb699dba9a4a0af21abb8ab315b85b654bfbe27f34",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "sha256": "e12d33450dab8e9840cd6b55397651d5957e0089fc3394707956caee14fdf5d4",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "sha256": "b63bb74b1fd8a3c76a8d581915111f6e8b76010c410683e7eb9e4cdb54091c51",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "sha256": "6c01174957ea8f62c530248cca6228bd10d312f62ad4128282ac3c0f83672365",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "sha256": "a8063ff70ce6b565103a56befdcf1bb8ba127b87273bc15ed88f64f78059196a",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "sha256": "014b19be7f3a6d726206a24ffb893467585e8f4de8aac2a9ceca02fc6091049c",
+      "status": "exact",
+      "comparison": "working file"
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "sha256": "7062a8da2d6fa198874a62e4894d012b3a024878bdad2f5acffc839baa3a5137",
+      "status": "exact",
+      "comparison": "working file"
+    }
+  ],
+  "README_exact_original_prefix": true,
+  "old_Guide_bodies": 11,
+  "old_evidence_files": 83,
+  "new_guide_count": 1,
+  "old_figure_migrations": 0,
+  "old_section_destinations": 116
+}

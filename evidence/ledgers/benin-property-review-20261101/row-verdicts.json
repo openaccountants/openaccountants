@@ -1,0 +1,813 @@
+[
+  {
+    "id": "bj-property-tfu:01",
+    "section": "Who this applies to",
+    "rule": "Prepare a separate annual TFU ownership-tax working paper for property situated in Benin in 2026. A rental IRF computation is a different job, even when both appear on one assessment notice.",
+    "act_article": "CGI arts151,104(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=74",
+    "exact_french_quote": "une contribution annuelle sur les propriétés foncières sises en République du Bénin",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "additional_quote_anchors": [
+      "sont portés distinctement sur le même titre de perception que la taxe foncière unique."
+    ],
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      74
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art151 charges the annual Benin-situs property contribution; art104(3) merely puts distinct IRF/ORTB on the same title. Separate jobs are correct."
+  },
+  {
+    "id": "bj-property-tfu:02",
+    "section": "Who this applies to",
+    "rule": "Classify permanently fixed constructions as built property. Uncultivated land used commercially or industrially is assimilated to built property. Light structures without masonry foundations are normally non-built, but income-producing or commercial light structures use the built regime.",
+    "act_article": "CGI art152",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=74",
+    "exact_french_quote": "Toutefois, si ces constructions sont productives de revenus ou affectées à un usage commercial",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      74
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art152 distinguishes permanently fixed structures, commercial/industrial uncultivated land, and light structures. Its income-producing/commercial override is retained."
+  },
+  {
+    "id": "bj-property-tfu:03",
+    "section": "Who this applies to",
+    "rule": "Start with the owner on 1 January, liable for the whole year. For usufruct use the usufructuary; for an emphyteutic lease use the lessee. For a building lease, the owner owes through the completion year and the tenant from the following year; keep the owner’s name after the liable person on the notice.",
+    "act_article": "CGI art156(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=76",
+    "exact_french_quote": "due pour l’année entière par le propriétaire au 1er janvier",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      76
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art156(1)-(2) supports whole-year owner at 1 January and the usufruct, emphyteutic and building-lease exceptions, including completion-year split and notice names."
+  },
+  {
+    "id": "bj-property-tfu:04",
+    "section": "Who this applies to",
+    "rule": "If the owner cannot be reached, the possessor, agent, tenant, legatee or other successor pays on the owner’s behalf. If none is known, the administration can assess using the unique parcel number or another national/communal cadastral identifier; absence of the article598(1) particulars cannot by itself annul that notice.",
+    "act_article": "CGI art156(3)–(4); LF2026 art15",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=76",
+    "exact_french_quote": "sur la seule base du numéro unique parcellaire",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      76
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art156(3)-(4) and original LF15 support payment on behalf of an inaccessible owner and cadastral-only assessment when all listed persons are unknown. No title adjudication inferred."
+  },
+  {
+    "id": "bj-property-tfu:05",
+    "section": "Rates, bands and thresholds",
+    "rule": "For non-built property, use the commune’s applicable annual rate within the statutory 3%–7% range.",
+    "act_article": "CGI art159(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=77",
+    "exact_french_quote": "3 à 7 % pour les propriétés non bâties",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art159(1) non-built range is 3-7%; the actual local annual decision is required."
+  },
+  {
+    "id": "bj-property-tfu:06",
+    "section": "Rates, bands and thresholds",
+    "rule": "For built property, use the commune’s applicable annual rate within the statutory 4%–8% range.",
+    "act_article": "CGI art159(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=77",
+    "exact_french_quote": "4 à 8 % pour les propriétés bâties",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art159(1) built range is 4-8%; the actual local annual decision is required."
+  },
+  {
+    "id": "bj-property-tfu:07",
+    "section": "Rates, bands and thresholds",
+    "rule": "The 5% non-built and 6% built rates are statutory fallback rates only for local authorities that had adopted no rate at the Code’s commencement. They are not verified universal 2026 rates.",
+    "act_article": "CGI art159(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=77",
+    "exact_french_quote": "Pour les collectivités territoriales n’ayant adopté aucun taux",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art159(2) ties 5%/6% fallback to no rate adopted at Code commencement. The Guide correctly refuses to call them universal 2026 rates."
+  },
+  {
+    "id": "bj-property-tfu:08",
+    "section": "The base",
+    "rule": "For built property, obtain the supported rental value under the ministerial methodology. Do not substitute purchase price, actual rent or a public-land sales-price schedule without the applicable valuation evidence.",
+    "act_article": "CGI art157",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=76",
+    "exact_french_quote": "sur la base de leur valeur locative",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      76
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art157 prescribes rental value and a ministerial method. Purchase price, actual rent and LFR20 public-domain tariffs are not certified substitutes."
+  },
+  {
+    "id": "bj-property-tfu:09",
+    "section": "The base",
+    "rule": "For non-built property, use the administrative assessment at 1 January. Municipal councils determine assessments from market values, revisable every five years. They notify DGI by 30 November before the end of each five-year period for values effective the following 1 January. If no values had been adopted when this provision commenced, a ministerial order sets the bases.",
+    "act_article": "CGI art158",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=76",
+    "exact_french_quote": "sur la base de leur évaluation administrative au 1er janvier",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      76
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art158 prescribes administrative value at 1 January, market-value determinations, five-year revision and notification, with ministerial bases only under its no-adopted-value condition."
+  },
+  {
+    "id": "bj-property-tfu:10",
+    "section": "The base",
+    "rule": "Check the actual communal rate decision for the year, delivered to DGI by 30 November for the following 1 January. Where that notification is absent, article159(2) retains the preceding year’s rates. For valuation-period notification failure, article158(3) literally refers to the preceding quinquennium’s “taux”; do not invent a revised assessment from that wording.",
+    "act_article": "CGI arts158(3),159(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=77",
+    "exact_french_quote": "À défaut, les impositions sont établies selon les taux de l’année précédente.",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art159(2) retains prior-year rates after non-notification. Art158(3) actually says taux du quinquennat precedent, so preserving that wording without inventing a new valuation rule is sound."
+  },
+  {
+    "id": "bj-property-tfu:11",
+    "section": "The base",
+    "rule": "Screen the article153 exemption classes: income-unproductive public property; diplomatic/international-organism property with a headquarters agreement; agricultural land and the specified agricultural uses; qualifying school/university/sport land; school/university buildings owned by the establishment; medical/social-assistance property; and worship property owned by the religious community. Record which exact class and factual conditions are met.",
+    "act_article": "CGI art153",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=74",
+    "exact_french_quote": "affectés ou non à un usage public, mais improductifs de revenus",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      74
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art153(1)-(6) exemption screen is accurate as a screen. Exact ownership, recognized sports status and agricultural-use conditions must still be evidenced. No blanket exemption is granted."
+  },
+  {
+    "id": "bj-property-tfu:12",
+    "section": "The base",
+    "rule": "Unsubdivided land sown, planted or replanted with trees of any species has the separate article155 exemption. Do not treat every vacant plot as exempt.",
+    "act_article": "CGI art155",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=76",
+    "exact_french_quote": "Les terrains non lotis ensemencés, plantés ou replantés en bois de toutes essences",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      76
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art155 requires non-subdivided land sown/planted/replanted in woods of any species. The Guide does not exempt an ordinary vacant plot."
+  },
+  {
+    "id": "bj-property-tfu:13",
+    "section": "The base",
+    "rule": "New construction, reconstruction or extensions exclusively for the owner and family’s dwelling enter TFU in the fourth year following completion or first use. The exemption is only for the principal residence and only once for the same person. A later different use ends the remaining exemption from the year of conversion.",
+    "act_article": "CGI art154(1),(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=75",
+    "exact_french_quote": "ne sont soumises à la taxe foncière unique que la quatrième année",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      75
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art154(1),(3) gives the fourth-following-year entry, principal residence, one grant per person, exclusive family use and changed-use termination from the conversion year."
+  },
+  {
+    "id": "bj-property-tfu:14",
+    "section": "The base",
+    "rule": "To claim that temporary exemption, send the tax service a letter with a building-permit copy and title proving ownership in the completion/first-use year, before the following 1 January. Existing-property TFU must be current. Without timely declaration, taxation starts permanently on 1 January of discovery. Do not grant relief from the construction date alone.",
+    "act_article": "CGI art154(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=75",
+    "exact_french_quote": "En aucun cas, l’exemption temporaire ne peut être accordée si le propriétaire n’est à jour",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      75
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art154(2) requires the letter, permit copy, title and timely completion/first-use-year declaration, plus current pre-existing-building TFU. Late discovery rule is preserved."
+  },
+  {
+    "id": "bj-property-tfu:15",
+    "section": "The base",
+    "rule": "After the liable person, property category, exemptions, lawful value and applicable local rate are supported, multiply the taxable value by that rate. Keep IRF and its ORTB levy outside this TFU multiplication.",
+    "act_article": "CGI arts157–159;104(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "sont portés distinctement sur le même titre de perception",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Arts157-159 support category base times supported local rate; art104(3) supports keeping IRF and ORTB distinct."
+  },
+  {
+    "id": "bj-property-tfu:16",
+    "section": "Deadlines and filing",
+    "rule": "Declare acquisition or completed construction to the tax service by simple letter within 30 days. Identify the parcel and full address, including the “Rue entrée de la parcelle” number; article161(2) requires a sign on non-built property or an inscription at the building entrance. Retain the letter and evidence of delivery.",
+    "act_article": "CGI art161(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=77",
+    "exact_french_quote": "dans un délai de trente (30) jours suivant l’acquisition",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art161(1)-(2) supports simple letter within 30 days of acquisition/completion and the separate address-sign/inscription duty. No authenticated filing claimed."
+  },
+  {
+    "id": "bj-property-tfu:17",
+    "section": "Deadlines and filing",
+    "rule": "By 10 December each year, the owner or principal tenant, or property manager in their place, supplies a written occupancy statement: each tenant and let space, principal rent and charges; free occupants and space; owner-occupied space; vacant space. Inaccurate or missing information invokes article485.",
+    "act_article": "CGI art161(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=78",
+    "exact_french_quote": "au plus tard le 10 décembre de chaque année",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      77,
+      78
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art161(3) runs across PDF77-78: au is on the preceding page. The complete French quote and 10 December deadline are correct across that page boundary."
+  },
+  {
+    "id": "bj-property-tfu:18",
+    "section": "Deadlines and filing",
+    "rule": "Prepare the TFU instalment schedule from the preceding year’s total: 50% by 10 February and the remaining 50% by 30 April. Reconcile the tax notice before settling any assessed balance; this Guide does not invent a first-year provisional amount without a prior assessment.",
+    "act_article": "CGI art162",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=78",
+    "exact_french_quote": "50% du montant total de la taxe due l’année précédente",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      78
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art162 specifies prior-year total, 50% by 10 February and remaining 50% by 30 April. No unverified first-year proxy or new balance deadline is invented."
+  },
+  {
+    "id": "bj-property-tfu:19",
+    "section": "Deadlines and filing",
+    "rule": "Tenants/farm lessees pay TFU for the leased property on the owner’s behalf; the owner must accept the TFU receipt against the rent. Keep the receipt-to-rent reconciliation separate from IRF withholding to prevent two deductions for the same payment.",
+    "act_article": "CGI art163",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=78",
+    "exact_french_quote": "les propriétaires sont obligés de recevoir les quittances de cette taxe à valoir",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      78
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art163 requires tenant/farm-lessee payment on the owner behalf and receipt offset against rent. Separating this from IRF withholding prevents duplicate offsets."
+  },
+  {
+    "id": "bj-property-tfu:20",
+    "section": "Deadlines and filing",
+    "rule": "Arrange mutation of the tax record on transfer. Until mutation occurs, the former owner remains assessed and can be pursued, with recourse against the new owner. Article165(2) requires the tax-certified TFU-current statement on acts granting/transferring ownership or use and the listed permits/titles. Tax receipts create the statutory presumption in article165(1), not a substitute for resolving a disputed title.",
+    "act_article": "CGI arts164–165",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=78",
+    "exact_french_quote": "Tant que la mutation n’a pas été faite, l’ancien propriétaire continue à être imposé",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      78
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Arts164-165 support mutation responsibility, continued old-owner collection pending mutation, recourse and certified TFU-current mention. Statutory presumptions are not treated as title resolution."
+  },
+  {
+    "id": "bj-property-tfu:21",
+    "section": "Penalties and interest",
+    "rule": "For 1 January–31 December 2026, original finance-law article2 disapplies the specified TFU late increases, interest, command costs and seizure costs if all TFU principal due is paid and the landowner has an IFU. Obtain evidence of both conditions; do not extend this TFU measure to rental IRF or assume principal is forgiven.",
+    "act_article": "LF2026 art2",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=2",
+    "exact_french_quote": "au paiement intégral des droits dus en matière de taxe foncière unique",
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "read_scope": "OCR fiscal arts1–17 and final arts47–48; scans PDF2 (TFU relief),4 (CGI156 amendment),14 (commencement) visually read. No budget-table valuation reused.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      2
+    ],
+    "quote_check": "Exact wording visually confirmed in the hash-bound signed scan; OCR is a reading aid only",
+    "independent_reason": "Original LF2 scan PDF2 supports calendar-2026 listed late-charge relief only with full TFU rights payment and landowner IFU. No IRF relief or principal cancellation inferred."
+  },
+  {
+    "id": "bj-property-tfu:22",
+    "section": "Sources",
+    "rule": "The original finance law expressly commences on 1 January 2026 and its article15 inserts the cadastral-identifier rule in CGI156(4). The June rectifying fiscal amendments read do not replace CGI151–165 or original article2. This is a bounded source-chain check, not a certification of all later instruments.",
+    "act_article": "LF2026 arts15,47–48",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=14",
+    "exact_french_quote": "entre en vigueur à compter du 1er janvier 2026",
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "read_scope": "OCR fiscal arts1–17 and final arts47–48; scans PDF2 (TFU relief),4 (CGI156 amendment),14 (commencement) visually read. No budget-table valuation reused.",
+    "additional_quote_anchors": [
+      "modifiées et complétées par un quatrième paragraphe"
+    ],
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      14
+    ],
+    "quote_check": "Exact wording visually confirmed in the hash-bound signed scan; OCR is a reading aid only",
+    "independent_reason": "Original LF15/47/48 scans PDF4/14 confirm the cadastral addition and express 1 January 2026 commencement. June fiscal arts1-19/finals read do not replace CGI151-165 or original LF2. Later unidentified instruments remain held."
+  },
+  {
+    "id": "bj-rental-income-tax:01",
+    "section": "Who this applies to",
+    "rule": "Prepare a 2026 rental-income IRF and rent-withholding working paper, separately from annual TFU. IRF covers individuals and the article101(1) assimilated persons receiving property income: the State, communes, specified public establishments, associations and NGOs where they hold only property income.",
+    "act_article": "CGI art101(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54",
+    "exact_french_quote": "lorsqu’ils sont titulaires uniquement de revenus fonciers",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      54
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art101(1) names natural and assimilated persons; the listed State/commune/public-establishment/association/NGO assimilation is limited to exclusively property income."
+  },
+  {
+    "id": "bj-rental-income-tax:02",
+    "section": "Who this applies to",
+    "rule": "Partners of a property-predominant company not subject to IS enter IRF. For this chapter, more than 50% of company turnover must be article102 property income. A company subject to IS is not brought into the individual IRF computation merely because it owns a building.",
+    "act_article": "CGI art101(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54",
+    "exact_french_quote": "dont le chiffre d’affaires est composé à plus de 50% de revenus fonciers",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      54
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art101(2) is a turnover test above 50% and applies to partners of non-IS property-predominant companies. The neighbouring TPVI asset test in art109 is not substituted."
+  },
+  {
+    "id": "bj-rental-income-tax:03",
+    "section": "Who this applies to",
+    "rule": "Article102 covers built and non-built property income, furnished letting, fixed industrial installations, building-lease rent and property-right ancillary income, only where the income is not included in business profits of an industrial/commercial enterprise, farm or noncommercial profession. Classify the business-income boundary first.",
+    "act_article": "CGI art102(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54",
+    "exact_french_quote": "lorsqu’ils ne sont pas inclus dans les bénéfices d’affaires",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      54
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art102(1) includes furnished, built/non-built, building-lease and accessory rights income, subject to its prior business-profit exclusion. No universal landlord IRF treatment is asserted."
+  },
+  {
+    "id": "bj-rental-income-tax:04",
+    "section": "Rates, bands and thresholds",
+    "rule": "The IRF rate is 12% of the article103 taxable rental base.",
+    "act_article": "CGI art104(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "Le taux de l’impôt sur les revenus fonciers est fixé à 12%.",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art104(1) sets 12% for the article103 IRF base."
+  },
+  {
+    "id": "bj-rental-income-tax:05",
+    "section": "Rates, bands and thresholds",
+    "rule": "The resulting IRF is increased by a separate FCFA4,000 ORTB levy. IRF and this levy appear distinctly on the same collection title as TFU; they are not a single combined percentage.",
+    "act_article": "CGI art104(2)–(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "majoré d’une redevance de quatre mille (4 000) francs CFA",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      37,
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art104(2)-(3) adds FCFA4,000 ORTB and requires distinct amounts on the TFU title. This is not a TFU percentage uplift."
+  },
+  {
+    "id": "bj-rental-income-tax:06",
+    "section": "Rates, bands and thresholds",
+    "rule": "Tenant withholding is 12% of gross rent, reduced to 10% where the landlord is subject to IBA or IS. The 10% is a withholding classification, not a replacement individual IRF rate for every landlord.",
+    "act_article": "CGI art106(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "Ce taux est réduit à 10 % lorsque le bailleur est soumis",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(1) withholds 12% of gross rent and reduces that withholding to 10% for IBA/IS landlords. It does not replace the 12% individual IRF charging rule."
+  },
+  {
+    "id": "bj-rental-income-tax:07",
+    "section": "Rates, bands and thresholds",
+    "rule": "Natural-person tenants are exempt from withholding, except those renting through an entity subject to tax on profits. Do not infer withholding exemption from a natural-person landlord.",
+    "act_article": "CGI art106(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "à l’exception de celles qui louent par l’intermédiaire d’une entité",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(2) exemption concerns natural-person tenants, with an intermediary profits-tax entity exception. It is not an individual-landlord exemption."
+  },
+  {
+    "id": "bj-rental-income-tax:08",
+    "section": "The base",
+    "rule": "Start with gross rent. Add owner expenses contractually borne by the tenant, and subtract tenant expenses the owner paid for the tenant. Keep supporting contracts and invoices; the statute does not give this job a general percentage expense allowance.",
+    "act_article": "CGI art103(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54",
+    "exact_french_quote": "augmenté du montant des dépenses incombant normalement au propriétaire",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      54
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art103(1) adds owner costs contractually shifted to the tenant and subtracts tenant costs paid by the owner. No general expense allowance is supplied by this chapter."
+  },
+  {
+    "id": "bj-rental-income-tax:09",
+    "section": "The base",
+    "rule": "Owner-occupied housing has no imputed rental IRF under article102(2). By contrast, free provision to a third person without a legal obligation creates in-kind income valued under article157. The legal-obligation distinction must be evidenced before setting the imputed base to zero.",
+    "act_article": "CGI arts102(2),103(2),157",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "sans y être tenu par une obligation légale",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Arts102(2),103(2),157 distinguish reserved owner enjoyment from free third-party use without legal obligation, with art157 valuation for the latter."
+  },
+  {
+    "id": "bj-rental-income-tax:10",
+    "section": "The base",
+    "rule": "Prepare separate columns for gross rent paid, the adjusted article103 IRF base, the ORTB levy, withholding actually remitted and instalments. Article106(5) credits paid-and-remitted tenant withholding against tax due; article106(8) offsets withholding against instalments. A promise or unsupported deduction is not a paid-and-remitted receipt.",
+    "act_article": "CGI art106(5),(8)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56",
+    "exact_french_quote": "Les retenues effectuées et reversées par les locataires",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      56
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(5) requires withholding both performed and remitted for deduction; art106(8) offsets it against instalments. Separate evidence columns are appropriate."
+  },
+  {
+    "id": "bj-rental-income-tax:11",
+    "section": "The base",
+    "rule": "Article106(3) calls withholding final but keeps the annual declaration. Do not infer a general refund or merge the ORTB charge into withholding. For a landlord within IBA/IS, stop at the correct 10% withholding schedule and send final business-tax treatment to that tax’s working paper; the final-liability interaction is not computed here.",
+    "act_article": "CGI art106(1),(3)–(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "La retenue est libératoire mais ne dispense pas de l’obligation déclarative annuelle.",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(3) literally says liberatoire while (5)/(8) provide deductions/instalment offsets. The Guide quotes both and does not certify a refund or final IBA/IS liability. Its example is a provisional arithmetic reconciliation, not a payment instruction."
+  },
+  {
+    "id": "bj-rental-income-tax:12",
+    "section": "Deadlines and filing",
+    "rule": "By 10 February annually, give the competent tax service a statement naming tenants, prior-year rent received and withholding suffered. Pay tax on income that was not withheld with that statement. The administration can directly determine the base from leases or property-survey information, with disputes under articles583 onwards.",
+    "act_article": "CGI art105",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "au plus tard le 10 février de chaque année",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55,
+      82
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art105 requires prior-year tenant/rent/withholding statement by 10 February and tax on unwithheld income with it; direct administrative base determination and dispute reference are retained."
+  },
+  {
+    "id": "bj-rental-income-tax:13",
+    "section": "Deadlines and filing",
+    "rule": "Remit withholding spontaneously by the 10th for the preceding month’s rent. If rent was paid in advance, withhold and remit by the 10th of the month following the actual advance payment; do not spread the remittance over the accommodation months.",
+    "act_article": "CGI art106(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55",
+    "exact_french_quote": "Lorsque le loyer est versé par anticipation",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      55
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(4) ties ordinary remittance to the next-month 10th and expressly ties an advance to the month of actual payment, not subsequent letting months."
+  },
+  {
+    "id": "bj-rental-income-tax:14",
+    "section": "Deadlines and filing",
+    "rule": "For State tenancies, Treasury deducts under article106(1) from rent-payment warrants and provides DGI a named prior-month withholding statement by the 10th. Owners remain jointly liable for remittance and can face the same recovery and sanctions.",
+    "act_article": "CGI art106(6)–(7)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56",
+    "exact_french_quote": "Les propriétaires demeurent solidairement responsables du reversement",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      56
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(6)-(7) supports Treasury precompte and named monthly statement for State leases, and owner joint responsibility for remittance."
+  },
+  {
+    "id": "bj-rental-income-tax:15",
+    "section": "Deadlines and filing",
+    "rule": "IRF uses four instalments as for IBA, which article66 pays as IS: provisionally one quarter of preceding-year tax by 10 March, 10 June, 10 September and 10 December. If the prior return is not filed by the first instalment, article51 uses the penultimate year provisionally, regularised at the second instalment. Offset supported withholding without duplicating it.",
+    "act_article": "CGI arts106(8),66,51(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56",
+    "exact_french_quote": "Les retenues prévues ci-dessus sont imputées sur le montant des acomptes.",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      56
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art106(8) links IRF quarterly instalments to IBA; art66 links IBA payment to IS; art51 supplies quarters, dates and first-acompte penultimate-year regularisation."
+  },
+  {
+    "id": "bj-rental-income-tax:16",
+    "section": "Deadlines and filing",
+    "rule": "A non-IS property-predominant company files before 31 January: prior-year total receipts split between rent and other receipts, rent withholding, partners’ names/domiciles and their share counts. File at its registered-office tax service, or at the property-location service if the office is abroad. Pay unwithheld tax for partners with that statement.",
+    "act_article": "CGI art107(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56",
+    "exact_french_quote": "ou, si ce siège est situé à l’étranger",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      56
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art107(1)-(2) says before 31 January, specifies receipts/withholding/partners/parts, moves the office-abroad filing to property situs and requires company payment for partners on unwithheld income."
+  },
+  {
+    "id": "bj-rental-income-tax:17",
+    "section": "Deadlines and filing",
+    "rule": "Partners still file the article105 statement but do not owe IRF again on their profit share to the extent the company has already paid it. Article107(4)–(5) sends inaccurate company information to article485 and places late declaration/remittance sanctions on the company.",
+    "act_article": "CGI art107(3)–(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56",
+    "exact_french_quote": "dans la mesure où l’impôt a été acquitté par celle-ci",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      56
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art107(3)-(5) keeps partners annual declaration but prevents re-taxing the share to the extent already paid by the company, and allocates company information/late-remittance sanctions."
+  },
+  {
+    "id": "bj-rental-income-tax:18",
+    "section": "Cross-border points",
+    "rule": "The June rectifying law adds CGI106(9): short/long accommodation bookings and rent collection for Benin buildings through Beninese or foreign electronic matching-platform operators enter article106(1) withholding, except operations for hotel establishments. The obligation belongs to the platform owner. Do not transfer it to every individual guest.",
+    "act_article": "LFR2026 art13 inserting CGI106(9)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=4",
+    "exact_french_quote": "L’obligation de la retenue incombe au propriétaire de la plateforme",
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "read_scope": "OCR fiscal arts1–19 and final arts48–49; scans PDF4 (new CGI106(9)) and17 (final provisions) visually read. Article20 public-domain price schedule excluded from private-property values.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      4
+    ],
+    "quote_check": "Exact wording visually confirmed in the hash-bound signed scan; OCR is a reading aid only",
+    "independent_reason": "June LFR13 signed scan PDF4 adds CGI106(9), Benin-property short/long bookings and rent collection, Beninese/foreign matching operators, hotel-beneficiary exception and platform-owner obligation. Individual guests are not substituted."
+  },
+  {
+    "id": "bj-rental-income-tax:19",
+    "section": "Sources",
+    "rule": "The original finance law commences on 1 January 2026. The signed June law’s article1 has a default prior-year rule for income-tax measures unless otherwise specified, while arts48–49 repeal contrary provisions and order execution without a calendar commencement date. Record the new platform text, but hold its first operational withholding period and any retrospective catch-up until commencement/administrative transition evidence is obtained. Do not call 24 June the proven payment cutover.",
+    "act_article": "LF2026 art48; LFR2026 arts1,13,48–49",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=1",
+    "exact_french_quote": "les dispositions de la présente loi s’appliquent aux revenus de l’exercice clos au 31 décembre 2025",
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "read_scope": "OCR fiscal arts1–19 and final arts48–49; scans PDF4 (new CGI106(9)) and17 (final provisions) visually read. Article20 public-domain price schedule excluded from private-property values.",
+    "additional_quote_anchors": [
+      "Sont abrogées, toutes dispositions antérieures contraires",
+      "sera exécutée comme Loi de l’Etat."
+    ],
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      1
+    ],
+    "quote_check": "Exact wording visually confirmed in the hash-bound signed scan; OCR is a reading aid only",
+    "independent_reason": "Original LF48 has an express 1 January 2026 date. June LFR1 says prior-year income absent contrary specification; LFR13 has no payment cutover, and LFR48-49 repeal/execute without a calendar date. First operational payment/catch-up remains held, not annulled."
+  },
+  {
+    "id": "bj-rental-income-tax:20",
+    "section": "Deadlines and filing",
+    "rule": "Article66 expressly pays IBA as IS; article51 provides quarterly provisional amounts and dates. This cross-reference supports the IRF instalment timetable, not an invented universal 30-April IRF annual deadline.",
+    "act_article": "CGI arts66,51",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "exact_french_quote": "L’impôt sur les bénéfices d’affaires est déclaré et payé comme en matière d’impôt sur les sociétés.",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "verdict": "accepted within stated working-paper scope",
+    "review_date": "2026-11-01",
+    "reviewed_source_pdf_pages": [
+      37
+    ],
+    "quote_check": "Exact wording after whitespace/apostrophe normalization in freshly extracted cached PDF bytes",
+    "independent_reason": "Art66 on PDF37 and art51 on PDF32 support the cross-reference timetable. The rental annual statement remains art105 10 February, not the generic IS annual deadline."
+  }
+]

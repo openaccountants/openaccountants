@@ -5,13 +5,13 @@ not_applicable: {}
 covered_by:
   XB: bj-cross-border-withholding
 partial:
-  IT-IND: "Monthly salary ITS refreshed; complete business/property/capital and exceptional-pay computations remain open."
+  IT-IND: "Monthly salary ITS refreshed; Rental IRF and annual TFU jobs added as independently source-reviewed partial drafts; business/capital and exceptional-pay computations remain open."
   IT-CORP: "Ordinary IS working paper refreshed; all special expense/incentive/sector and authenticated filing cases not completed."
   VAT: "Monthly working paper refreshed; threshold ministerial order, product classification and authenticated workflows remain open."
   SC: "CNSS source failed in direct/web/ordinary browser; current bases, rates, ceilings and CNSS filing not verified."
   PR: "VPS and salary schedules refreshed; CNSS and full authenticated payroll filing remain open."
   TP: "Pricing/reporting screen added; current forms, documentation order detail and CbCR exchange/secondary application remain open."
-  XB: "Domestic withholding screen added; individual treaties, special distributions/platform rents/gains and authenticated filing remain open."
+  XB: "Domestic withholding screen added; individual treaties, special distributions/gains, platform commencement and authenticated filing remain open."
 ---
 
 # Benin: partial 2026 tax pack
@@ -36,3 +36,21 @@ Tracked by [BJ issue #446](https://github.com/openaccountants/openaccountants/is
 ## Independent source review
 
 The [initial review](../../evidence/ledgers/benin-review-20261101/review.md) checked 113 ledger rows, 81 legacy-topic destinations and 16 examples. The [focused closure](../../evidence/ledgers/benin-review-closure-20261101/review.md) closes its three findings and six destination corrections. Both original findings and separate repair evidence are preserved. Acceptance covers the stated partial preparation jobs only. All seven domains remain partial, CNSS remains unverified, and neither accountant attestation nor an authenticated filing is claimed.
+
+## Property and rental additions, 1 November 2026
+
+Two distinct partial jobs supplement the eight preserved Guides, with [independent source review](../../evidence/ledgers/benin-property-review-20261101/review.md) accepted for 42 ledger rows and four examples: [annual property TFU](bj-property-tfu.md) and [rental IRF/withholding](bj-rental-income-tax.md). TFU uses its own rights-holder, valuation, communal rate, exemption and payment rules. Rental IRF separates the landlord’s annual base from tenant/platform withholding. The June platform text is recorded, but its first operative withholding period remains held. No lease-registration duty or property-gain computation is claimed.
+
+All seven domains remain partial. These additions have writer checks only; they do not inherit the independent review of the earlier eight Guides and do not constitute accountant attestation or a certified filing. Source/rule ledgers and the immutable preservation baseline are in `evidence/ledgers/benin-property-20261101/`.
+
+## Individual business IBA addition, 1 November 2026
+
+[Individual business IBA](bj-business-income-tax.md) adds a distinct partial job for an established IBA sole trader, independent professional or taxable transparent-entity member. Its individual-specific minimum, loss and cash-election rules are separate from salary ITS and company IS. Shared company filing/base methods and overview sanctions retain their existing owners. The [independent IBA review and focused closure](../../evidence/ledgers/benin-business-review-20261101/closure-review.md) checked all 54 ledger rows and both examples, and accepted two repairs on 1 November 2026. This remains a partial preparation job with no accountant attestation.
+
+The numerical TPS eligibility order, June exemption-transition timing, special incentive interactions, full cash-basis transition and authenticated IBA filing remain held. All seven domains remain partial. The preceding property/rental accepted review and all ten prior Guide bodies remain intact. The new rule ledger and immutable preservation identities are in `evidence/ledgers/benin-business-20261101/`.
+
+## Property-disposal TPVI addition, 1 November 2026
+
+The [property-disposal TPVI working paper](bj-property-gains-tax.md) adds ordinary private immovable-sale computation, the separate business-balance-sheet exemption, land/construction split, gain-based tax versus sale-price minimum, and registration/payment responsibility. Property-rich securities and mining titles are screened without inventing their missing specialist bases or treaty outcomes. The [independent TPVI source review](../../evidence/ledgers/benin-tpvi-review-20261101/review.md) checked all 36 ledger rows and both executable examples on 1 November 2026.
+
+All eleven preceding Guide bodies and prior Benin evidence remain exact. All seven domains remain partial. Current reference-acquisition-value instruments, noncash/loss and securities/mining interactions, registration due-day/form details and full later-law currentness remain held. This does not reopen the accepted property/rental or IBA review.

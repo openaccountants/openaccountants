@@ -1,0 +1,16 @@
+{
+  "path": "skills/benin/README.md",
+  "before_sha256": "0d214f52ff065c74a6f08963e82706b2f552a084447dd89cba069957fd5cd5e2",
+  "after_sha256": "981b92a3dbda2bb3b4cb706d2cafa4b90418f67187c062e0e8d66f1badb2cb60",
+  "changes": [
+    {
+      "before": "complete business/property/capital and exceptional-pay computations remain open.",
+      "after": "Rental IRF and annual TFU jobs added as pending-review drafts; business/capital and exceptional-pay computations remain open."
+    },
+    {
+      "before": "special distributions/platform rents/gains and authenticated filing remain open.",
+      "after": "special distributions/gains, platform commencement and authenticated filing remain open."
+    }
+  ],
+  "append_only_addition": "\n## Property and rental additions, 1 November 2026\n\nTwo distinct pending-review jobs supplement the eight preserved Guides: [annual property TFU](bj-property-tfu.md) and [rental IRF/withholding](bj-rental-income-tax.md). TFU uses its own rights-holder, valuation, communal rate, exemption and payment rules. Rental IRF separates the landlord’s annual base from tenant/platform withholding. The June platform text is recorded, but its first operative withholding period remains held. No lease-registration duty or property-gain computation is claimed.\n\nAll seven domains remain partial. These additions have writer checks only; they do not inherit the independent review of the earlier eight Guides and do not constitute accountant attestation or a certified filing. Source/rule ledgers and the immutable preservation baseline are in `evidence/ledgers/benin-property-20261101/`.\n"
+}

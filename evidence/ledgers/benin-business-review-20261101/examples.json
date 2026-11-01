@@ -1,0 +1,21 @@
+[
+  {
+    "id": "IBA-1",
+    "profit_tax": "30000.00",
+    "minimum": "300000.000",
+    "annual_iba": "300000.000",
+    "crossover": "1000000.0",
+    "with_levy": "304000",
+    "decision": "Percentage minimum binds; established ordinary IBA status is assumed, not derived from the hypothetical turnover."
+  },
+  {
+    "id": "IBA-2",
+    "cash_profit": "5000000",
+    "accrual_profit": "7000000",
+    "minimum": "375000.000",
+    "cash_iba": "1500000.00",
+    "accrual_iba": "2100000.00",
+    "timing_difference": "600000",
+    "decision": "Default accrual versus permitted cash only with eligible activity and valid election. Same hypothetical reconciled minimum base. No basis-transition or permanent tax-saving claim."
+  }
+]

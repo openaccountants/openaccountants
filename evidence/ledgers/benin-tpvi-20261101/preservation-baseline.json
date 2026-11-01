@@ -1,0 +1,576 @@
+{
+  "base_commit": "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+  "files": [
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json",
+      "blob": "df983cb23315032847650f0530832b7c7d338e17",
+      "sha256": "d76a33a77dd52bc44c9e3e1b6b8cbebd6ee69127873040463383098a4dd4d336",
+      "bytes": 62608
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.md",
+      "blob": "4a337b2044a4458931bcdf81a67835dc13b05bd1",
+      "sha256": "56201b48d920d818bb961433511981f1a374b693ac8507b23cbc739b4454db9a",
+      "bytes": 54910
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/committed-validation.json",
+      "blob": "05925400608a5dfa5148023407b5cd8d4c4aefc9",
+      "sha256": "77ba80ed2679a1564a6322b83872b9f2f98cf0d5ea49f0996bcfb8de6349114d",
+      "bytes": 7899
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/freeze-receipt.json",
+      "blob": "f3b720244ca15207f090bc14c4c7198caaa5dca6",
+      "sha256": "409d7c8cca1a1d347afe361410f38698f8f1981233cc4b5276c6581d8e9a3637",
+      "bytes": 2639
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.json",
+      "blob": "6ca12edc37ebc0271cbf24b3373b3bc32d13c3fc",
+      "sha256": "ce8e301ad4e4f0918fb952d41708b90ed1ee3839b2f36653c1393272cd5cdfda",
+      "bytes": 2660
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.md",
+      "blob": "31de808223fb7cde8df117f682794000d3db2e05",
+      "sha256": "7e731ccd6c30e036267c6c3eb4303673228587cf909b287f18a4e2fbcdad230b",
+      "bytes": 561
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/preservation-baseline.json",
+      "blob": "cdc97d5bb71ef643b853caeb7f1c34737099d843",
+      "sha256": "c1100633cd2d946327d194bac207dce86521276094cbf824a78f0c3665414e62",
+      "bytes": 12830
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/readme-routing-change.json",
+      "blob": "e34efa72436d51d1f29bbe5191daddc933ac0f6d",
+      "sha256": "3acdc1fab4d62401f39bd4fbc11c1ce1654f0edd69668bd78e23d05fa062c69e",
+      "bytes": 1292
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-holds.json",
+      "blob": "e00f77b65c05cdff164971fdbbd0053049821115",
+      "sha256": "fb00855b0d4e60542e04e73d06606729a45c950f50da5e79b3e501a5a0964d53",
+      "bytes": 882
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-identities.json",
+      "blob": "f047c8cc689e04575161a2378fce5dc615fa7dac",
+      "sha256": "e65e7e3255d4b29961d3ab2028b08c14adc3bd11ca6a9d2417b7bce8056bcfb0",
+      "bytes": 2156
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/visual-quote-anchors.json",
+      "blob": "58376b93be6ffe3318f659d0f1ff6417ae8cbea6",
+      "sha256": "5d29beebbdbaf4b544d059e8e158db7bc2949a151b4153b7e18c3c7ed6d33a8f",
+      "bytes": 1331
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-check.py",
+      "blob": "7a43a1de6373c07e92a2a8773925f7dee272fd1c",
+      "sha256": "90bc2bf6b95864ac459d2a97a6ddfc623d123ec422a626d3f67024da3ee13d43",
+      "bytes": 4157
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-checks.json",
+      "blob": "c6e59328b4690efbfe70c2d85990fcf763e3d876",
+      "sha256": "4b8b2af20ba0b65fa710b83d6ca79007b52fa67300d6d7724f2dfe284c36f387",
+      "bytes": 4774
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-record.md",
+      "blob": "92919420efc567203fd3b2878e3ac1392d734e04",
+      "sha256": "aabcef6fde8079204ecb787ec9a8002288d1e158f6953a0c6d1499bebf21d4fb",
+      "bytes": 1125
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-eof-whitespace-repair.json",
+      "blob": "f4f3d2b6e78f401ac010c24febf7abbfaa160c81",
+      "sha256": "8a6cb84584bd95317e2ad15ef74d8ca7119afa4944828c400c6af2042bbcf8ab",
+      "bytes": 647
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-review.json",
+      "blob": "fbff04512bc98b3647acabf896deed2e813b3578",
+      "sha256": "25d9b80439c21966c971ef56e5219759473a216b64a87bf1db501dd4c7b9f2d0",
+      "bytes": 10361
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/closure-review.md",
+      "blob": "99aa800260ebc78ec8ca15126aac9a73dd192cec",
+      "sha256": "2936e0b614aacc6c6bdb398c51931ea960f6a8540d3048b613ecf5f6b9f07947",
+      "bytes": 2955
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/committed-closure-validation.json",
+      "blob": "31f2edd87db1f6d54649b0a13c089037dee79912",
+      "sha256": "748c5f2d1cc8d4535c60795fdf8b2c5fe80650b3022b4806e2c818873d93b19b",
+      "bytes": 8252
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/examples.json",
+      "blob": "409256d18e03473d24deb067801c103f4ca26fc2",
+      "sha256": "e64b372360288d3ffb7acccee69d367e95d8acf319ffd2e3ba8dcdecde7c5eb3",
+      "bytes": 727
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/failed-intermediate-whitespace-audit.json",
+      "blob": "be79639afd7c9d318ca6debb998ad94c7c8a1165",
+      "sha256": "1dcf4736cef37f78b43436a55d42274732bf0b0f96b8b424488defe260ce35c1",
+      "bytes": 761
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/findings.json",
+      "blob": "31d8704179bac13bdfa94f5f9db2c7a3d8173126",
+      "sha256": "8e5e3ef392c30119ddb24c4280223eb33b3e89236e22adc5f3c462a50635a525",
+      "bytes": 1853
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/independent-checks.py",
+      "blob": "b7c7fabfa19aaa77a236817d61fcee5c3c1744bf",
+      "sha256": "ce7342678fb252aee204a557ce22d71ec652541d6785e794daa0f1a2888f6fad",
+      "bytes": 32174
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/mechanical-preservation.json",
+      "blob": "49b3e128f0d62bc119708163634355bd6531bd9c",
+      "sha256": "3f2f7386de07262c198716da253b9eee37e746d3e99010f2d8c3c549bf9f21d7",
+      "bytes": 24986
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/old-topic-destinations.json",
+      "blob": "b449e1971c05740cccfd0d926e4e92af6127b40b",
+      "sha256": "7988d1fc99785531dfdb3e26037918aab78d890343673905546becf322c63083",
+      "bytes": 278269
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/parent-F1-F2-repair-candidate.json",
+      "blob": "03539f99ab1e2a98c0da8bd8f208be9239db7018",
+      "sha256": "a2f6414258dcb540a2b4c1ad9fcb683ffedd033feeed469bfffddbd6eb1dfb4a",
+      "bytes": 17502
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-addendum.md",
+      "blob": "33e2d8946871d7f5380c1f765cbad53191ebf8c6",
+      "sha256": "84fcd0a595a0b940e1e3c296c779bbed9ff68506ccc79421a652db32d537cfd4",
+      "bytes": 1173
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review-identities.json",
+      "blob": "87cad2ad56366afc438ead3a020e95e6eb6d8961",
+      "sha256": "bd3057253e3e3e814191438d606064afd4d488c2c578795f3efb37c1816236c2",
+      "bytes": 5369
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/review.md",
+      "blob": "c3ec0ad48d037c0634b3d70874b9beb5a5297239",
+      "sha256": "78249e7599b7fbada0fb1b43948d965b2df724e46934277aadef3f9062dc8e70",
+      "bytes": 3597
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.json",
+      "blob": "08aa65ce9c7d5105ffe4a9c188ce08384624e64e",
+      "sha256": "2bb08463e9ab5462deb5b4c6f0110d4d9fe1628cef21bfeb5ea8167778138e47",
+      "bytes": 194654
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/row-verdicts.md",
+      "blob": "bf72de6c69717f72aef4f67d0bb8fae265506b12",
+      "sha256": "8949bcd247da63735609fa0d2e367ecf4b1cfdc3820fdf54ab6e656bcca5602c",
+      "bytes": 16071
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/source-clause-contexts.json",
+      "blob": "79ef860319809106e966a3adc4f05a66515ef89a",
+      "sha256": "899741d820fd56da3fe132ef7439548b1944779ae1a316ec7c225c8d1bf8a1e5",
+      "bytes": 68959
+    },
+    {
+      "path": "evidence/ledgers/benin-business-review-20261101/status-reconciliation.json",
+      "blob": "ab05e5b5a701f832b23f7d4c13a53cae779ed5f3",
+      "sha256": "a74460ad3e03f66473c98b9fe0d505d1d9d6d4a8dd60a02d3809b281baf311ab",
+      "bytes": 1686
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/candidate-hashes.json",
+      "blob": "5d81f55c5894d055934bf99c196dcd48bf83b0d8",
+      "sha256": "c1b79e1c8102268ceb98681fa647eb42a3ea193227d6466245cdbd3e46dcf318",
+      "bytes": 2902
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/check-results.json",
+      "blob": "68926d1de6ac3fca831db17fc5fc0d10ed9d6b70",
+      "sha256": "13c52c132d4079f1dfaccca94fd2240aa582e4c2e9b435a557b5d076263df69e",
+      "bytes": 8404
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/pinned-validation.py",
+      "blob": "f292068515f338c2755623c05c7ad64fdfd2d531",
+      "sha256": "62cd0bdabd32a25d29bc2111f574e0ec1a41f4773d06b01292e86bf4ad7615fa",
+      "bytes": 1434
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/source-capture-manifest.json",
+      "blob": "7737674d86c8db09913a11a613ff2f4c3916fd04",
+      "sha256": "631b0b4a652bd73725a84db99d657addccde7671c45e5f485e3fbe4b79d642fc",
+      "bytes": 3721
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-checks.py",
+      "blob": "13beceb2ed50a5e24260938c4e7752e24e659a07",
+      "sha256": "ebcade8c134853ab2b07656c97abdf0d00bfade68098d388144b7bebf4dc9e81",
+      "bytes": 4285
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-record.md",
+      "blob": "05e36feb45678ca7a5be60703095d0868847b314",
+      "sha256": "54159bad21b58563165962628293f21225fe6ae545a332db9ea7ada283cfa6b0",
+      "bytes": 6939
+    },
+    {
+      "path": "evidence/ledgers/benin-old-topics.md",
+      "blob": "046ba510462f2a5ee893469815e333c351330524",
+      "sha256": "1021217e9feed705e66af1a7a3adf77eb09d1690064117a51fccc7d3d2e3e680",
+      "bytes": 31542
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.json",
+      "blob": "eb6f54ab14a8591dc6832f63dafa9cf1605d3752",
+      "sha256": "0c5cc67cc5e88169d12bf6aaedc359196fd4202e19831fafd09a6b8d6ac1b995",
+      "bytes": 23509
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.md",
+      "blob": "a966d41bef1bf8c31f9873d2881070aaefba230c",
+      "sha256": "6e630b6ba2b726ff8bfd8d829c8efa450ab31d620aaa208047338719687dded5",
+      "bytes": 20914
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.json",
+      "blob": "ab31f7c9957acece829b760db16cbb235887f83f",
+      "sha256": "28a0afa462d362c3a30cfe61062e224037f5b9805a47cdfc156ca15a6f39f616",
+      "bytes": 21679
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.md",
+      "blob": "32617398f4b316856eeeaccd5eaa187a5208efba",
+      "sha256": "d78818475f1b9845e4ee72bb6722194c181346f4716230b94fccb18b4b18dd34",
+      "bytes": 19412
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/committed-validation.json",
+      "blob": "8193be8b66e532ad33bdc79da492229f3ca945b0",
+      "sha256": "84404ec6f2ca928598aef56ec5c53c92c79c8f48e479eb8833abcc09f3da45e3",
+      "bytes": 2058
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/freeze-receipt.json",
+      "blob": "e67f47a8ca97de75fcd53b60928c67234feedb9f",
+      "sha256": "b50482a8b88f9f26caada57a4ca2144b4858ebe2a7a9fd491f2ddd96fb019629",
+      "bytes": 2640
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/old-topic-destinations.json",
+      "blob": "031b9cf6378a62a388901a76181ce2b98015be46",
+      "sha256": "da8e2f947cd75512010ff8fa8462114429bc5b2507d7a6dd2befb9d393638de3",
+      "bytes": 2043
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/preservation-baseline.json",
+      "blob": "510e19cbf4bac32b7e2e3f49a7c7f2236030b102",
+      "sha256": "af4bdf5838fae4ff45a38959c6274ce704d19e135c2ecc8e22fa8a8b16664789",
+      "bytes": 8599
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/readme-routing-change.json",
+      "blob": "250c19de925c90b22505c30f9d2e88751bfa8a53",
+      "sha256": "c69f875520c4e6448c988bacd25c67f44dda3f3e253857d75e6e4c23ffaf0e89",
+      "bytes": 1622
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/source-identities.json",
+      "blob": "05856aceed012080a7993f212a783abd97e37b68",
+      "sha256": "abf724f4cd1bec60b0e9c5800981bde96b4bc02bf2c5af140966d1dfbcfcbce2",
+      "bytes": 1918
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check-history.json",
+      "blob": "b02f3eece1dc6d51ef41f898e1008d3287468970",
+      "sha256": "ffe2791b6e004f6024d2d428061af0ee1ae97b00ce0b414ed5c146dd2005985f",
+      "bytes": 535
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check.py",
+      "blob": "6f880052441abb5cd0101fe9661978ba3eaaaf72",
+      "sha256": "6fda41b8bda9da45c5aeae39782f4a64ab19fdb1602cda9022db5bdf4fd8dcb3",
+      "bytes": 2501
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-checks.json",
+      "blob": "1776b1b05146356c84a0ef27b7dcd40be047a447",
+      "sha256": "2d6f592f33dc4a59b5da7995dae3a03e946fb1df277e04ca328a969f69399ff0",
+      "bytes": 3570
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-record.md",
+      "blob": "e36c9776925ab11415884a77c1cf870c81b498e3",
+      "sha256": "31e6b124918d9edaf446f5b314af2038790eeb635774eaa5fa8684bc1acd474c",
+      "bytes": 2568
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/checker-history.json",
+      "blob": "1f35632452e2d5e9131c8405367adad27ba5e88b",
+      "sha256": "dcd523149c1d6243541d40677644b1837917358f69048c7af33edfbabe77c43d",
+      "bytes": 438
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/committed-closure-validation.json",
+      "blob": "5a813333baedc3e2c9fdd25ed6244c61d7ded1b0",
+      "sha256": "e0ea76614d1f073903b53f537424e0159c7d097c665fbee0258a29074f4c6904",
+      "bytes": 721
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/independent-checks.py",
+      "blob": "e715d32e072077b2dafc5a9f93fb75d47f2e92f3",
+      "sha256": "bded3debed291337a2d1053d557e213e9a4df25a42b64c25aae3db548ed005b7",
+      "bytes": 18340
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/mechanical-preservation.json",
+      "blob": "7baf2061fcda50648686aa4bc7faa7ceb093a6d4",
+      "sha256": "cabae0dbc694911141c9b93f632a522a7c13934166665c1736d12c63ff6a84e3",
+      "bytes": 18397
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/review-identities.json",
+      "blob": "9cbab6ab93309fc5c7aaee343656bb9964689041",
+      "sha256": "efaabc6884664783a52329bb5c40efbad51553bab941c542104cde573669c6cb",
+      "bytes": 1454
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/review.md",
+      "blob": "de136fd00fd29f21030d04fbcf648b7d2e7247fd",
+      "sha256": "51f40c0351c21ee93695e12be8706d16d0ac57ae20c5efd19356372813e7f62c",
+      "bytes": 11047
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.json",
+      "blob": "c4d311ce1cb96f1f927aaa0357ce67b5ece0af0d",
+      "sha256": "ff424cd983119c72818d0da32d4052f2aa7a5020ba0c53e1ddeb896d91176caf",
+      "bytes": 64257
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.md",
+      "blob": "ea6ede84df6550539127c4f675fe7363a57a163a",
+      "sha256": "117f72f9a2b1d83e8d4ced88fd2b219b022c29609c75a7a4511350c46391db32",
+      "bytes": 9972
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/status-reconciliation.json",
+      "blob": "609f0fb2fa415befbebd73cc2584370a687b517e",
+      "sha256": "3dbd412391789d5e3f8ab990f61471b27bd79f87d101f8d254a9d2514d968195",
+      "bytes": 2357
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/preservation.json",
+      "blob": "e1bf1b7d6e30a14db0fd5e5a211f655432ada3a2",
+      "sha256": "f131cd188f3f63de9b4f41a6ff314286002f92037ad8a792d424e70763f9db82",
+      "bytes": 3940
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/writer-repair.json",
+      "blob": "1d6852d82b658cba6c77810a54c9c231d117b8bf",
+      "sha256": "d82723aa42309d6f4912f662e0614342c5cfe8cbcb489cf05311f2dd6db7e947",
+      "bytes": 3711
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/build-row-receipt.py",
+      "blob": "0afaa515315dfe18f114e5fc3ca9b814826000dd",
+      "sha256": "c5b02ecccc0f65f7c6cdca31bf752b33a7f4d78684364edf229fe69840ca89cc",
+      "bytes": 16459
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/independent-checks.py",
+      "blob": "b3c8cffa50edd16a3a2f91109b36d5d74ff9a382",
+      "sha256": "1a43af6d65b6b68936fadae7e45c838ca4914f17ae2f4e316d54de0d6899db1b",
+      "bytes": 5153
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/mechanical-preservation.json",
+      "blob": "a81d2d0191068ae9e9037151cba3568ec2f408bc",
+      "sha256": "5902356b0c9c978f775d8ee83c5702f6ce4c7cc3825781ecb7c69977411197a7",
+      "bytes": 23344
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/review.md",
+      "blob": "e754f0a49680b402a08d46ba3b3409e9e75b9905",
+      "sha256": "cec48a278d5f3ade12af975d02520eba141690d6798c9f5e847d63396b17aaef",
+      "bytes": 12102
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/row-checks.md",
+      "blob": "b8928c928c388b72187eb9643463a643d8657b3c",
+      "sha256": "82b329cb0aaa823182ba78ea7b69016fefe03c439380bb17647da88d623ff6cb",
+      "bytes": 36665
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification-network.json",
+      "blob": "5dd1899b95a7d48d61bfb76a6499603577e4e56d",
+      "sha256": "eca6ccafc99961d217d8ad7ea9e02639944cd3e06969c81006d7e1fd6abc1b80",
+      "bytes": 5892
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification.json",
+      "blob": "c1710277e0b6a95a43a1048011aad514cbda5e8e",
+      "sha256": "2bd56e0beab4a4c8012349e0008e37391686ca7dff575df31897c0d93682c3e6",
+      "bytes": 4142
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/text-extraction.json",
+      "blob": "828a7898f9069d5ae2f9c6b278e5c3f6eed8c4b5",
+      "sha256": "348e342cd085f94f2b2a3699c26a2f2d23d9643192dfe48bd8d9dd19777556e3",
+      "bytes": 622
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/check-closure.py",
+      "blob": "7b80ef70397ca1eaf92a01959edeca7877839a38",
+      "sha256": "8c1ca0f02c9edb4400d6d59e06af06ef65164148a588532269a5f6a3da7534e2",
+      "bytes": 6734
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/closure-receipt.json",
+      "blob": "d30d86050bb14523c67a139d48023297fcabce6a",
+      "sha256": "e49bb4468fd8411b1a1c8d9ae9c93ef89dfa098e57ffab13a22cabe979bf4cac",
+      "bytes": 20719
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/review.md",
+      "blob": "96be0792d0ca37a10d6abec00c5df994161e34a4",
+      "sha256": "687f5e1a38591f8087bfaf21d3d7bc5ea35b54af602c107e312aa05d6143e938",
+      "bytes": 7023
+    },
+    {
+      "path": "evidence/ledgers/bj-company-formation.md",
+      "blob": "2991a580fa506c0ee43f3d3adb1f9645fb32358a",
+      "sha256": "788833768f1c8bd8046cbbc7f7726f2a4475e533a15b266038eec465cf7c4c41",
+      "bytes": 3945
+    },
+    {
+      "path": "evidence/ledgers/bj-corporate-income-tax.md",
+      "blob": "415eb0f480d814507c4ace995febd671b3e2e691",
+      "sha256": "591f3f9fcea1498e79e048abf323cae4e8396931f46320364c6ea058fcdc768f",
+      "bytes": 4848
+    },
+    {
+      "path": "evidence/ledgers/bj-cross-border-withholding.md",
+      "blob": "282f1fc2ac598216e16f67354ac0104982b83ef9",
+      "sha256": "0d26ca39d0b604022e89332c426650ccea61aecaf3fe065951f67c0327bc0e47",
+      "bytes": 5518
+    },
+    {
+      "path": "evidence/ledgers/bj-income-tax.md",
+      "blob": "a86a9901c3025a1d1853a1fd11ca1acc63eb1ff2",
+      "sha256": "5a2d64e0e75fc051f7aea7588ffe212785b3e7a47e5eaf0e1410214829de723d",
+      "bytes": 4761
+    },
+    {
+      "path": "evidence/ledgers/bj-payroll-social.md",
+      "blob": "20a7810a6aff30b3876b22d90674b7d011a25e40",
+      "sha256": "dee1670244aeb00645a94431bed507620bc002d1eb24238e2f2226baa525c070",
+      "bytes": 2875
+    },
+    {
+      "path": "evidence/ledgers/bj-tax-overview.md",
+      "blob": "1fe6f22ef3eeb524132a9da07abbeaba5fd43ba8",
+      "sha256": "9058c5299ee7ab8f7c238b53ce7ba6601fa4734248a1981ad93de21c97657130",
+      "bytes": 4179
+    },
+    {
+      "path": "evidence/ledgers/bj-transfer-pricing.md",
+      "blob": "0c6f3a98a5a6983cb184c6450c5a9c047a3bf1d9",
+      "sha256": "34236365d9d03a3a550b644e73c939bea41609fd4c8afb53e4f9bff40a81dd52",
+      "bytes": 4632
+    },
+    {
+      "path": "evidence/ledgers/bj-vat-gst.md",
+      "blob": "9a64649b0844ccc268504ae1511ffea3daadda0a",
+      "sha256": "559ada49180ebad2aaa6802d5c4e424a3bc715bbb16871b11aae89394bc7185b",
+      "bytes": 7598
+    },
+    {
+      "path": "skills/benin/README.md",
+      "blob": "c7bf653caab73b766654259d2b57ab1d1b79be81",
+      "sha256": "345d0715ae69d63b13d2a13aa0f8198d19405191f97afc6d488a63cde517402c",
+      "bytes": 5911
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "blob": "c66475bfe1db8ddbb6fb014ce4caf1ee619f9091",
+      "sha256": "43f460825997818a329517874b7916d7f24be5543f07a315299e5f4cf4740c2d",
+      "bytes": 25440
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "blob": "ebd7f9a1f8fbf33209083f49347619601f101be6",
+      "sha256": "c8fe5e6b1c6f3febfc81e5837910ea2d619e088a31ec8c262bfcf00f409a3dd1",
+      "bytes": 15020
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "blob": "c6b397ce41b9f7ca9d9d1932e634c21d432459ad",
+      "sha256": "6d6842f12a2851ee2dc4a9325deb2ef274a6be4e5e51aafcd4efc693bb141f5b",
+      "bytes": 15909
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "blob": "268f05107b43141d8fd78c732a54a4de994f51cb",
+      "sha256": "d6bcfb8840801437aebeff34dfd6dd84c8d4d7103911c193a7afebd1a0ba303d",
+      "bytes": 17928
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "blob": "7c749197563c87de5ba7f635b42b1b4e31efb725",
+      "sha256": "d1ed53baee9c64c6b2bdcdeb699dba9a4a0af21abb8ab315b85b654bfbe27f34",
+      "bytes": 13276
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "blob": "1bfa0a555e6a8714f6e18ba54cbb1ea8aac6bb27",
+      "sha256": "e12d33450dab8e9840cd6b55397651d5957e0089fc3394707956caee14fdf5d4",
+      "bytes": 11604
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "blob": "c50227dfe49fe0e85a6c78975701f7fb1902c828",
+      "sha256": "b63bb74b1fd8a3c76a8d581915111f6e8b76010c410683e7eb9e4cdb54091c51",
+      "bytes": 16735
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "blob": "2cb2c5244410ff2bf3673b91206b704920d4bc09",
+      "sha256": "6c01174957ea8f62c530248cca6228bd10d312f62ad4128282ac3c0f83672365",
+      "bytes": 17107
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "blob": "0a022f7fe269d101c2c2e9c36e68b7c458bafd82",
+      "sha256": "a8063ff70ce6b565103a56befdcf1bb8ba127b87273bc15ed88f64f78059196a",
+      "bytes": 15485
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "blob": "8b34f58cfb71f10c6c37ec206f2652f00940df1f",
+      "sha256": "014b19be7f3a6d726206a24ffb893467585e8f4de8aac2a9ceca02fc6091049c",
+      "bytes": 14091
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "blob": "406cc271d57c38a85e92c46eeb2c2ddbda0730eb",
+      "sha256": "7062a8da2d6fa198874a62e4894d012b3a024878bdad2f5acffc839baa3a5137",
+      "bytes": 20028
+    }
+  ],
+  "all_other_repository_paths_unchanged_required": true
+}

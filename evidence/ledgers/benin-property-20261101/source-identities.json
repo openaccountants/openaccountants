@@ -1,0 +1,32 @@
+[
+  {
+    "file": "cgi2026.pdf",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+    "act": "CGI 2026",
+    "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "bytes": 1390109,
+    "read_date": "2026-11-01",
+    "read_scope": "Text pages 32 (arts51–52), 54–56 (arts101–107), 74–78 (arts151–165), 216–217 (arts485–488 plus neighbouring sanctions), 279 (art645). Read all cited clauses and adjacent scope, exemptions and payment clauses; not the whole CGI.",
+    "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+  },
+  {
+    "file": "lf2026.pdf",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+    "act": "Law 2025-22 of 8 December 2025",
+    "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "bytes": 915162,
+    "read_date": "2026-11-01",
+    "read_scope": "OCR fiscal arts1–17 and final arts47–48; scans PDF2 (TFU relief),4 (CGI156 amendment),14 (commencement) visually read. No budget-table valuation reused.",
+    "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+  },
+  {
+    "file": "lfr2026.pdf",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+    "act": "Law 2026-10 of 24 June 2026",
+    "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "bytes": 6301177,
+    "read_date": "2026-11-01",
+    "read_scope": "OCR fiscal arts1–19 and final arts48–49; scans PDF4 (new CGI106(9)) and17 (final provisions) visually read. Article20 public-domain price schedule excluded from private-property values.",
+    "retrieval": "Reused actual official capture from 2026-11-01; no new network acquisition."
+  }
+]
