@@ -1,0 +1,112 @@
+{
+  "oil": {
+    "file": "../sources/income-law.html",
+    "reader": "../sources/income-law.txt",
+    "sha256": "bb7c5db8eb6dca8861dce678cbccf7864280b2f3d457213ca52e7a7b7abec92f",
+    "reader_sha256": "f6ce7ecbac703a7946d8d9d0b14b786340469ed2599d5d0dde4c22c9eb41b098",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/L2279",
+    "read_on": "2026-11-01",
+    "read_scope": "Entire enactment, commencement and attached arts. 1 to 13.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "dmtt": {
+    "file": "../sources/dmtt-law.html",
+    "reader": "../sources/dmtt-law.txt",
+    "sha256": "30815f6fe46c25a3c7ac3a154d21088715809821583c318baac1b2b279bac382",
+    "reader_sha256": "84f1a97ee6bb410c2e8bec88b8f1d880d692ffcb149b258dc28e9a7d06e800a1",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/L1124",
+    "read_on": "2026-11-01",
+    "read_scope": "Arts. 1 to 4, 6 to 10, 17 to 22, 28 and 44 with neighbouring definitions/provisions. Not a read of all 44 articles.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "er": {
+    "file": "../sources/dmtt-er-ar.html",
+    "reader": "../sources/dmtt-er-ar.txt",
+    "sha256": "ce2f5e18588fad3164794ba11194f5a449714366060518d2170f7961d1986a58",
+    "reader_sha256": "3f3312522834ae95f3804c7c043bcc06707d8297d08d050a0f1a29e47572715a",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/RFNE17224",
+    "read_on": "2026-11-01",
+    "read_scope": "Promulgation, arts. 65 to 70, especially art. 66(A)-(F). Not the entire regulation.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "sio": {
+    "file": "../sources/sio-consolidated.docx",
+    "reader": "../sources/sio-consolidated.txt",
+    "sha256": "0e68f46e7668f6ab679f9a0601b276cf426b18690921808ac287bb0b7c86acb7",
+    "reader_sha256": "58ea009bb716cc582d2c2b71a0a51f4025fe8ed15e790b336fc26bad13815719",
+    "official_url": "https://www.lloc.gov.bh/FullAr/L2476.docx",
+    "read_on": "2026-11-01",
+    "read_scope": "Consolidated Arabic arts. 1 to 4, 17 to 33 and 47 to 49. Amendment register inspected including October 2026 law. Not the whole pension/benefits law.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "sio22": {
+    "file": "../sources/sio-amendment-2022.html",
+    "reader": "../sources/sio-amendment-2022.txt",
+    "sha256": "0ce2096184a6e09c10438c943b7c5d1e2b3c2f1dc00dc35761a05c856bcc936b",
+    "reader_sha256": "94d5dffd13b37e050cbfab269fa761008337b8d62b01048499377487669d8351",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/K1422",
+    "read_on": "2026-11-01",
+    "read_scope": "Entire Law 14/2022, including art. 33 substitution, phase-in art. 4 and commencement art. 12. Exact yearly operational phase-in remains held.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "sio26": {
+    "file": "../sources/sio-2026.html",
+    "reader": "../sources/sio-2026.txt",
+    "sha256": "c8166390ce74bb8eae19cd3ca8a15376a5f554af69e4db207689bc0435b392e9",
+    "reader_sha256": "1a3d637dcea17b5e0f19fa6906429ee55e109c394cd14ebe68cc72bb656136bb",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/L4426",
+    "read_on": "2026-11-01",
+    "read_scope": "Entire four-article enactment; corresponding amendment-register publication entry 8 October 2026 read.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "unemp": {
+    "file": "../sources/unemployment-consolidated.docx",
+    "reader": "../sources/unemployment-consolidated.txt",
+    "sha256": "7dd21d215835a81d1b35ca1efdbb08b7c41715c25ef836c319def971f6fd00ae",
+    "reader_sha256": "0b3badc66ecd8143e01200ca4bfe48af405cad6d3d5d2cc1583f2ff74a44969e",
+    "official_url": "https://www.lloc.gov.bh/FullAr/L7806.docx",
+    "read_on": "2026-11-01",
+    "read_scope": "Consolidated arts. 1 to 6, 8(E) and neighbouring scope/financing paragraphs. Not benefit computations.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "eosb": {
+    "file": "../sources/eosb-ar.html",
+    "reader": "../sources/eosb-ar.txt",
+    "sha256": "b843526a5611f4abd32a81c4e60e0fcefc18cf2e5bf555fec8f10c40b6628799",
+    "reader_sha256": "3c1963242c3f5acf7ab8baaaae81d9c933415dad0f57e8a1e74eb0d4fe1a809b",
+    "official_url": "https://www.lloc.gov.bh/Legislation/HTM/RCAB10923",
+    "read_on": "2026-11-01",
+    "read_scope": "Entire four-article enactment and attached Regulation arts. 1 to 15; compared with authentic archived SIO English translation.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "edb": {
+    "file": "../sources/edb-2026-replay.pdf",
+    "reader": "../sources/edb-2026-replay.txt",
+    "sha256": "66bebfd1cd1bf29e0824339f8ba81bbc54b4ff8d7cd78ad8ae7aeebd562d4421",
+    "reader_sha256": "b516ca429a406a683a6390f22942308ab125489eb95a3a40c6984101271009a5",
+    "official_url": "https://web.archive.org/web/20260321041012/https://www.bahrainedb.com/app/uploads/2026/01/Bahrain-EDB-MFG-Factsheet-2026.pdf",
+    "read_on": "2026-11-01",
+    "read_scope": "Both PDF pages read; operative quote p. 2. Official English original. Dated archive 21 March 2026; live URL redirects to homepage. File path names 2026; printed copyright says 2025. This limitation is preserved.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  },
+  "sij": {
+    "file": "sources/sijilat-browser-read-excerpts.txt",
+    "reader": "sources/sijilat-browser-read-excerpts.txt",
+    "sha256": "6718957d8a36aa32ddd95b1089c0f622b696477e37a8da98c77419e71d99dc72",
+    "reader_sha256": "6718957d8a36aa32ddd95b1089c0f622b696477e37a8da98c77419e71d99dc72",
+    "official_url": "https://www.sijilat.bh/guides-laws/BusinessTypes.aspx",
+    "read_on": "2026-11-01",
+    "read_scope": "Entire official Business Types page read in ordinary browser: all entities, requirements, notes and commitments. Selective visible-browser transcription preserved. Raw downloaded HTML contains stale translation strings (including retired BSC250000), so that HTML is NOT the source of the visible BSC50000 fact. Source hash here binds the clearly labelled browser read receipt, not a full DOM capture; independent reviewer should revisit visible page.",
+    "source_storage": "Public compact selective browser read receipt; full raw HTML remains private and is not used as rendered-page authority."
+  },
+  "sio-list": {
+    "file": "../sources/sio-amendments.html",
+    "reader": "../sources/sio-amendments.txt",
+    "sha256": "51ab265294c0b7c922b7c75e5b7cfdeb343800720ee9a867ed1058a583b6e013",
+    "reader_sha256": "dc5e130a31c508416e997ed8342adfc54da1da466996c0dd7d113e94e46ad418",
+    "official_url": "https://www.lloc.gov.bh/Legislation/Amendments/L2476",
+    "read_on": "2026-11-01",
+    "read_scope": "Latest amendment entries, especially Decree-Law44/2026 publication8October2026 and Law19/2026; amended Law14/2022 entry inspected.",
+    "source_storage": "Private country workspace sibling sources directory; not stored in public Git. The SHA256 binds original source bytes."
+  }
+}
