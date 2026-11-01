@@ -1,0 +1,49 @@
+{
+  "reviewed_freeze": "0c5d4df4fbf8b4ff9696178f6383fe03cf80024b",
+  "candidate_files": {
+    "skills/togo/tg-corporate-income-tax.md": "d18f9a6fb692c15cac35f527643a23b39669e44db534876d9914576283c1b58c",
+    "skills/togo/tg-vat-gst.md": "ada6b6fde1ae30edfca3b0efc3b7ca065a528f6452c97bc3b501ebf047933dc3",
+    "docs/research/2026-11-01-togo-pack/sources.json": "4cefe58fa9f507b3453bdab88b5bb5be27ffdb0e40fb5d889f446ae996b390c6",
+    "docs/research/2026-11-01-togo-pack/ledgers/tg-corporate-income-tax.md": "93a310220e6e757c9e053923fdec2a03a300a6b7fb996e8457479571f3ec129e",
+    "docs/research/2026-11-01-togo-pack/ledgers/tg-vat-gst.md": "77c0f9111e1f7cd598be697569613e242522368833ac211f59c8905e39b76ab5",
+    "skills/togo/tg-company-formation.md": "784849b39cb0b97fc15a425689e3d6d54dd6ee57dd693868d4bbc0ff16d6471c"
+  },
+  "new_ledger_rows": {
+    "tax-deductibility": {
+      "source": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+      "quote": "Les imp\u00f4ts, taxes et droits \u00e0 la charge de l'entreprise et mis en recouvrement au cours de l'exercice sont d\u00e9ductibles sauf disposition expresse d'un texte de loi.",
+      "conditions_checked": true
+    },
+    "customer-list": {
+      "source": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+      "quote": "au moins \u00e9gal \u00e0 cinq millions (5 000 000) de francs CFA hors taxes.",
+      "conditions_checked": true
+    },
+    "supplier-list": {
+      "source": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+      "quote": "doit fournir trimestriellement \u00e0 l'Administration fiscale la liste desdits fournisseurs",
+      "conditions_checked": true
+    },
+    "export-input-condition": {
+      "source": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+      "quote": "n\u2019est d\u00e9ductible que si lesdites op\u00e9rations sont imposables localement.",
+      "conditions_checked": true
+    },
+    "personnel-workplace": {
+      "source": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+      "quote": "aux d\u00e9penses expos\u00e9es pour la satisfaction des besoins collectifs du personnel sur le lieu de travail",
+      "conditions_checked": true
+    },
+    "input-timing": {
+      "source": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+      "quote": "pour les prestations de services et les travaux immobiliers, dans le mois de paiement ;",
+      "conditions_checked": true
+    },
+    "input-catchup": {
+      "source": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+      "quote": "au plus tard le 30 avril de l\u2019ann\u00e9e suivante.",
+      "conditions_checked": true
+    }
+  },
+  "result": "R1-R6 closed; limited source-faithful acceptance, seven domains remain partial; no accountant attestation"
+}

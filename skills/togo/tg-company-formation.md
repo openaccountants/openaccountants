@@ -103,7 +103,7 @@ Obtain intended activity and licences, number/type/nationality of owners, manage
 
 | Source and actual read scope | URL | Read on |
 |---|---|---|
-| OHADA AUSCGIE du 30 janvier 2014, official signed act. Arts. 4-11, 97-98, 269, 309-312, 387-389 and 853-1 to 853-5; French signed text and relevant neighbouring provisions. | https://biblio.ohada.org/doc_num.php?explnum_id=2032 | 2026-11-01 |
+| OHADA AUSCGIE du 30 janvier 2014, official signed act. Arts. 4-11, 97-98, 269, 309-312, 323, 387-389 and 853-1 to 853-5; French signed text and relevant neighbouring provisions. | https://biblio.ohada.org/doc_num.php?explnum_id=2032 | 2026-11-01 |
 | Décret n°2017-142/PR, CFE official reproduction of Journal officiel p.13. Entire decree, art. 1 replacing arts. 3 and 4 of decree 2014-119/PR. | https://cfetogo.tg/uploads/modeles/5ce99b7f8de22.pdf | 2026-11-01 |
 | CFE, Démarches, personne morale. Entire one-page checklist, document requirements, fees, published average processing time and rejection grounds. | https://www.cfetogo.tg/documents/download-renseignements_mo | 2026-11-01 |
 | CGI (loi n°2018-024) and LPF (loi n°2018-025), OTR consolidation 2025, archived official copy. Relevant articles specified above, including neighbouring conditions; actual read scopes in the source manifest. Official live download returned 404 after site migration. Current-year archived OTR PDF read locally. | https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html | 2026-11-01 |
