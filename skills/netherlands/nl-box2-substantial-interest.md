@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands: box 2, income from a substantial interest (2026) v0.1
+# Netherlands: box 2, income from a substantial interest (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from wetten.overheid.nl or belastingdienst.nl, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
