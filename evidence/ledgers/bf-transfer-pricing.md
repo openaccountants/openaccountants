@@ -1,6 +1,6 @@
 # bf-transfer-pricing: figure and rule ledger
 
-Writer source read: 2026-11-01. Candidate v0.2 is tier 2, with independent review of the R1 repair pending. The initial rejected v0.1 review and its input manifest are preserved in `burkina-faso-review-20261101/`. Full PDFs, extraction and rendered order pages are private in the sibling `sources/` directory outside Git; only short quotations needed to verify the rules appear here. CGI means Loi 058-2017/AN of 20 December 2017 as amended, official 2026 edition. Sources were actually read in the provisions specified, not merely tested for reachability.
+Writer source read: 2026-11-01. Candidate v0.2 is tier 2, with independent review of the R1 repair accepted in the closure receipt. The initial rejected v0.1 review and its input manifest are preserved in `burkina-faso-review-20261101/`. Full PDFs, extraction and rendered order pages are private in the sibling `sources/` directory outside Git; only short quotations needed to verify the rules appear here. CGI means Loi 058-2017/AN of 20 December 2017 as amended, official 2026 edition. Sources were actually read in the provisions specified, not merely tested for reachability.
 
 | ID | Figure/rule and conditions | Guide section | Act/article | Official URL | Short exact French quote | Read date |
 |---|---|---|---|---|---|---|
