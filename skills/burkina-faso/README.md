@@ -1,6 +1,6 @@
 ---
 jurisdiction: BF
-version: 0.1
+version: 0.2
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -18,13 +18,13 @@ partial:
   VAT: "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt."
   SC: "Legacy 2025 Guide retained unchanged; CNSS and separate AMU not rebuilt."
   PR: "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt."
-  TP: "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent review pending."
-  XB: "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent review pending."
+  TP: "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent AI source review accepted for the stated draft scope."
+  XB: "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent AI source review accepted for the stated draft scope."
 ---
 
 # Burkina Faso tax pack
 
-**Partial local draft, 1 November 2026.** Eight legacy 2025 Guides remain unchanged. Two new 2026 tier-2 Guides have source ledgers and executable examples; neither has independent pack approval or accountant attestation. Adding two jobs does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
+**Partial local draft, 1 November 2026.** Eight legacy 2025 Guides remain unchanged. Two new 2026 tier-2 Guides have source ledgers and executable examples and have passed independent AI source review for their stated limited scope. Neither has accountant attestation. Adding two jobs does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -46,6 +46,8 @@ The writer read the relevant articles in the official 2026 CGI and all five page
 
 Current form box identifiers and authenticated portal steps were not accessed. Do not treat the source-backed declaration fields as a verified portal walkthrough. The two Guides' `Not yet confirmed:` lines record exact unresolved items. CbCR, APAs, treaty-specific relief, investment income, permanent establishments, individual residence/foreign income, exit taxation and wider specialist regimes remain unfinished. No domain is declared inapplicable. Country coverage must continue to show all seven domains as partial.
 
-## Next action
+## Review checkpoint
 
-One independent reviewer must verify each new ledger row, recompute both cases per Guide and spot-check the retained-topic register. Resolve source-backed findings before any publication. This local batch authorises no push, PR, issue closure, merge or completion claim.
+The [initial independent review](../../evidence/ledgers/burkina-faso-review-20261101/review.md) identified one incomplete TP documentation checklist. After repair, the [dated acceptance closure](../../evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md) accepted the two limited drafts at commit `199e3dfae83beaeb0a908206b11d8317cef37c96`. Together the receipts cover 51 ledger rows, four recomputed examples and preservation checks for the eight legacy Guides. The closure records exact accepted Guide and ledger hashes; the reviewed content is unchanged by this README checkpoint.
+
+The coverage gaps above remain open and all seven domains remain partial. This is the local drafting checkpoint for this batch. It authorises no push, PR, issue closure, merge, professional attestation or country-completion claim.
