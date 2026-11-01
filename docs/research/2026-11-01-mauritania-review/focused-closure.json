@@ -1,0 +1,297 @@
+{
+  "reviewed_on": "2026-11-01",
+  "review_kind": "Focused independent source closure, not accountant attestation",
+  "candidate_from_head": "1acd93fe32b47ed8c8a44ab5fe64a8dba46bbdfd",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "writer_corrections_sha256": "721c5c30917a180fb5d637adfcc877a19f1a0de59a1bf88137f2a08f2f4e406c",
+  "candidate_files_verified": [
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/README.md",
+      "sha256": "7b2ab9899dba67bbae5d3e1d9eab8e34fe121164deb9f853e2dad28594bdab0b"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-company-formation.md",
+      "sha256": "46ed089bba871792cd655b69a5d148747266d219241a5f989717d049e157ade1"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-corporate-income-tax.md",
+      "sha256": "567796cab55f7e3db13ea0fb82f472ccec6590119e48b2219436a87f80995be9"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-cross-border.md",
+      "sha256": "1f2254c416c960f7151c588886cb467228585003cc439023f38cbaad20359c62"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-income-tax.md",
+      "sha256": "c585aa01b7e4b93ebfd070ef88da6c7ed3bc511c53cf1aeebeee2c852a92d57a"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-payroll-social.md",
+      "sha256": "c6a0e88958b2c3e5e2b5c80ee5792d855b50e3172253d0e344dd4f71efa7619b"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-tax-overview.md",
+      "sha256": "16fce1d841da887e4ebb1458b71fae3c0762bad809700d781fb2b623da2b00b7"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-transfer-pricing.md",
+      "sha256": "f4bdc8fa61f49dfd9bb628f03a459bf0f602698d9ad705485d39dac7e24fca15"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-vat-gst.md",
+      "sha256": "f70b379869f8e750f64a57a01ecb090b1e88393fd5742e7953a34bb2194a1f12"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/old-blobs.json",
+      "sha256": "10361cc30dc307ff3d90ff3cb12110cb965367b9ca84e39c557a177503179404"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/old-topic-map.md",
+      "sha256": "1f1602b3ff242b091a9cf0f3e379bb466b836d63785516a7dc8f6fd02b9188bd"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/rules.json",
+      "sha256": "b301dccc8aa873d5213a3ba851c29188bc07da9ab7a9aa4a2fc7adaed90db498"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/source-manifest.json",
+      "sha256": "7db120dcfd3f35ad8eba1ff984cde334089197781f74e58eded32deb44b8d942"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-preservation-checks.json",
+      "sha256": "94edd6de97771d3b90187bee60cda63afd8b82c3b71bc84b6524ad5f68779c9c"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-repair-validation.json",
+      "sha256": "3650e5adedb2784ca1c18787b31412f879aac5900d01b50b106517f841606718"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-validation.json",
+      "sha256": "0ae7a07071d73108aa16e23e3db8e175cb40ed348420f36858292015f7eb67d1"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-visual-source-checks.md",
+      "sha256": "702cd881d3aacab8cd3bcf7562699f2e7c8625d2be9458fe9a2196d1e91b1a5b"
+    },
+    {
+      "path": "skills/mauritania/README.md",
+      "sha256": "9d33a071bd1403b55a3bd83d291644c38d4189e0db762e9e78c6f0cab0ce0e39"
+    },
+    {
+      "path": "skills/mauritania/mr-company-formation.md",
+      "sha256": "5f316ec5edf92a4733f8b3be41c51a71db9f7abadc2a99e118f237096e364d69"
+    },
+    {
+      "path": "skills/mauritania/mr-corporate-income-tax.md",
+      "sha256": "55e82d546ca74de7aefad69f029fd6bd120cb30c4a3f0d43817261757ae83a6b"
+    },
+    {
+      "path": "skills/mauritania/mr-cross-border.md",
+      "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+    },
+    {
+      "path": "skills/mauritania/mr-income-tax.md",
+      "sha256": "bc46d9f71444c6562451b8282b84a77ce2ed29eb3daaa737736777e26c54c9c4"
+    },
+    {
+      "path": "skills/mauritania/mr-payroll-social.md",
+      "sha256": "2d51b84f27bd360afaea25f4b3104b021256f180803da3bdd13b0857138e1e6c"
+    },
+    {
+      "path": "skills/mauritania/mr-tax-overview.md",
+      "sha256": "15332ed083a6fdb990b1bb93d3681619261d3112a233196f45c1fdad4758fc3f"
+    },
+    {
+      "path": "skills/mauritania/mr-transfer-pricing.md",
+      "sha256": "95159bc573611d143a43c7354c74f5a59e91c1b6c716e329b80f114627500b38"
+    },
+    {
+      "path": "skills/mauritania/mr-vat-gst.md",
+      "sha256": "f02fddd20285a90bbaeb7edb7d79e5de47c60c8c659d7bdfcf34ab15898cf41a"
+    }
+  ],
+  "initial_review_files_unchanged": {
+    "docs/research/2026-11-01-mauritania-review/visual-checks.json": "63028045ea2e62346609157742a7b6fb44e14f95d8321ab9637d7557b8204239",
+    "docs/research/2026-11-01-mauritania-review/examples.md": "fda5502b691a10b1efcd1985315422410829841cc67732d7d4b89df0e508330b",
+    "docs/research/2026-11-01-mauritania-review/old-topic-checks.json": "c193440f5814f4239157b90c85ffb95d5dd7efbbf85b2667b0ee5e9ac9195d4c",
+    "docs/research/2026-11-01-mauritania-review/guide-metadata.json": "44db052d6508d6db6977a8a8c1922728656c11d4d848015bf6417c31c2b24986",
+    "docs/research/2026-11-01-mauritania-review/README.md": "2d06b85cc17e94436d70ad69bc8373989698d284fc21eedbe7936e31d9d0b4d1",
+    "docs/research/2026-11-01-mauritania-review/findings.json": "53101ca23bc6d03497c0a9133a0a313ebd17e6d77a853c4f81fd61716972ba67",
+    "docs/research/2026-11-01-mauritania-review/validation.json": "8a0844d04b030010fb4bfec1628bd4827d69482c0c166f72e5a589f5ef521a46",
+    "docs/research/2026-11-01-mauritania-review/source-checks.json": "e90539c8c903f66c2283aa2d3dd220dc741a4c4a477013fc8385ddea21cb17cf",
+    "docs/research/2026-11-01-mauritania-review/rule-and-placement-checks.json": "ce67f30e8093631653d18ee48535c1a596f3e6e2f745f605e21869bd837f1720",
+    "docs/research/2026-11-01-mauritania-review/freeze.json": "c85246f1843c8a3a9870ebce67a869ed476f6d11265718749943179a9ae20a55"
+  },
+  "decision": "conditional source-baseline acceptance; F1-F9 closed for these exact candidate bytes",
+  "findings": [
+    {
+      "id": "F1",
+      "status": "closed",
+      "assessment": "C04/C07/C08 now cross-reference C18/C19. Compared all new art.47 election timing/duration/non-reversal conditions and six art.48(2) restriction categories against source pp.24-25."
+    },
+    {
+      "id": "F2",
+      "status": "closed by explicit scope limit",
+      "assessment": "I09 excludes art.114(6) personnel; I14 reproduces the written-contract employer categories and20% maximum, while holding the cap-computation interpretation. The ordinary cash-only example is expressly outside114(6)."
+    },
+    {
+      "id": "F3",
+      "status": "closed",
+      "assessment": "C10 in company, formation and overview now carries the midyear transfer/cessation exception next to31December; all three ledgers match."
+    },
+    {
+      "id": "F4",
+      "status": "closed",
+      "assessment": "F09 local company address andF10 foreign personne physique marriage/equivalent document match APIM; F04/F06 distinguish these from general domicile, branch and GIE inputs."
+    },
+    {
+      "id": "F5",
+      "status": "closed",
+      "assessment": "X06 adds art124(2) interest account debit/credit trigger before its preserved quarterly/special calendars."
+    },
+    {
+      "id": "F6",
+      "status": "closed",
+      "assessment": "X10 supplies actual art221(1)-(4) representative accreditation, local VAT identity, signed/dated mandate with all minimum contents, separate return and client/penalty fallback. Art214 exclusion and2026 digital/currentness reservations remain."
+    },
+    {
+      "id": "F7",
+      "status": "closed",
+      "assessment": "N01/N02 and dependent Guide notices/ledgers/README/manifest now use actual rendered2026-001/2026-035 identities;2024-001 read scope also updated. No date inferred from handwriting/upload and no merely-proposed conclusion from comparison headings remains."
+    },
+    {
+      "id": "F8",
+      "status": "closed",
+      "assessment": "X01 now includes personnel engaged for services, Mauritanian activity and same/connected project next to the six/twelve-month durations, plus treaty/other PE reservations."
+    },
+    {
+      "id": "F9",
+      "status": "closed",
+      "assessment": "V07 expressly reserves the applicable public/state-enterprise ministerial dispensing list and names identification of that list as unresolved; no entity list invented."
+    }
+  ],
+  "counts": {
+    "guides": 8,
+    "rule_records": 80,
+    "ledger_placements": 98,
+    "old_bullet_topics": 68,
+    "old_intro_header_rows": 6,
+    "examples": 16,
+    "source_objects_hash_matched": 19,
+    "partial_domains_retained": 7
+  },
+  "metadata": [
+    {
+      "path": "skills/mauritania/mr-company-formation.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 103,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-corporate-income-tax.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 102,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-cross-border.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 103,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "no_new_platform_fields": true,
+      "no_new_cta": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-income-tax.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 103,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-payroll-social.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 105,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-tax-overview.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 101,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-transfer-pricing.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 104,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "no_new_platform_fields": true,
+      "no_new_cta": true,
+      "oa_check_blocks_unchanged": true
+    },
+    {
+      "path": "skills/mauritania/mr-vat-gst.md",
+      "version": "0.2",
+      "h1_match": true,
+      "description_words": 104,
+      "tier": 2,
+      "invisible_format_or_vertical_whitespace": false,
+      "currentness_notice_retained": true,
+      "source_date": "2026-11-01",
+      "platform_fields_preserved": true,
+      "cta_exact": true,
+      "oa_check_blocks_unchanged": true
+    }
+  ],
+  "limitations": [
+    "No complete operative 2026 or comprehensive-domain acceptance.",
+    "No live filing/payment workflow acceptance.",
+    "Unresolved special ITS cap-computation interpretation and ministerial VAT certificate list remain explicit.",
+    "No accountant attestation, private exporter CAS proof, GitHub checks, merge or publication claimed."
+  ],
+  "mechanical_checks_all_pass": true,
+  "prior_review_evidence_preserved": true
+}
