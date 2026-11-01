@@ -1,7 +1,7 @@
 ---
 name: ae-payroll-social
 description: "Use this skill for UAE payroll questions in tax year 2026: why wages are outside Corporate Tax, employee versus self-employed, directors' fees, Corporate Tax deduction of staff costs and private pension contributions, and VAT recovery on staff benefits, including the 1 October 2026 rules and the FTA cases for transport, food, accommodation, phones and parking. Names the pension, gratuity, Wage Protection System and unemployment insurance duties and who to confirm them with; it does not state their rates. Trigger on: UAE payroll, Dubai salary tax, gratuity, GPSSA, staff accommodation VAT, employee benefits UAE."
-version: 1.2
+version: 1.3
 category: PR
 jurisdiction: AE
 tax_year: 2026
@@ -148,7 +148,7 @@ Timing: the new texts and FTA Decision No. 17 of 2026 apply from 1 October 2026;
 
 **Case 3 variant: part unpaid.** Same facts, but AED 40,000 of the AED 120,000 was accrued and not paid in the period. AED 80,000 was paid, which is under the AED 90,000 cap, so the company deducts AED 80,000 and adds back AED 40,000.
 
-**Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. If the director is also a shareholder, the company deducts the pay only to the extent it matches Market Value.
+**Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. For the company's deduction, apply Article 36(1) Market Value and Business-purpose conditions only after checking Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Keep ordinary deduction rules and Article 34 where a separate Related Party transaction qualifies; the exception is not a blanket deduction approval.
 
 ```oa-check
 name: Private pension contribution over the cap, Case 3 (2026)

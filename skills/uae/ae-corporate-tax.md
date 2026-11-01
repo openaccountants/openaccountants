@@ -1,7 +1,7 @@
 ---
 name: ae-corporate-tax
 description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue not exceeding AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Wages are outside Corporate Tax; natural-person business scope has a turnover test. ALWAYS read this skill before touching any UAE corporate tax work."
-version: 2.3
+version: 2.4
 category: IT-CORP
 jurisdiction: AE
 tax_year: 2026
@@ -142,7 +142,7 @@ A QFZP distributing goods in or from a designated zone also needs an agreed-upon
 | Amounts withdrawn by a natural person Taxable Person or a partner | Not deductible |
 | Corporate Tax; foreign tax on income; recoverable input VAT | Not deductible |
 | Donations to bodies that are not Qualifying Public Benefit Entities | Not deductible |
-| Payments to connected persons (owners, directors, their related parties) | Deductible only up to market value and only if wholly and exclusively for the business |
+| Payments to connected persons (owners, directors, their related parties) | Article 36(1) limits deduction to Market Value and wholly/exclusively Business use, subject to Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Ordinary deduction rules and Article 34 where separately applicable still require review |
 
 ### Losses ([Corporate Tax Law, Articles 37-39](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA losses bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf))
 
@@ -221,11 +221,11 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
    - **Relief:** if revenue fell to AED 2,400,000 in 2027, Small Business Relief would still not be available, because 2025 revenue exceeded the threshold ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf)).
 3. **Loss cap and entertainment.**
    - **Add-backs:** a company's 2026 accounting profit is AED 800,000. It includes AED 60,000 of client entertainment and an AED 5,000 traffic fine. Add back 50% of the entertainment (AED 30,000) and the whole fine: AED 800,000 + AED 30,000 + AED 5,000 = AED 835,000.
-   - **Loss cap:** it has AED 700,000 of losses from 2024 and 2025. The cap is AED 835,000 × 75% = AED 626,250. Taxable income becomes AED 835,000 − AED 626,250 = AED 208,750, which falls inside the AED 375,000 0% band, so the tax is nil. The remaining AED 73,750 of losses carries forward.
+   - **Loss cap:** assume its AED 700,000 carried-forward Tax Losses from 2024 and 2025 are eligible under Articles 37-39, with all applicable eligibility, ownership-continuity and Business-activity conditions resolved. The cap is AED 835,000 × 75% = AED 626,250. Taxable income becomes AED 835,000 − AED 626,250 = AED 208,750, which falls inside the AED 375,000 0% band, so the tax is nil. The remaining AED 73,750 of losses carries forward.
    - **If it had elected Small Business Relief instead:** had its revenue allowed it to elect the relief in 2026, none of the AED 700,000 could be used in 2026, but all of it would survive for later non-relief years ([FTA losses bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf)).
 4. **Interest limitation.**
-   - **Facts:** a property developer has net interest expenditure of AED 20,000,000 and tax-adjusted EBITDA of AED 50,000,000.
-   - **Limit:** 30% of EBITDA is AED 50,000,000 × 30% = AED 15,000,000, which is higher than AED 12,000,000, so AED 15,000,000 is deductible. The other AED 5,000,000 carries forward for up to 10 periods ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf)).
+   - **Facts:** assume an in-scope juridical property developer, outside Article 30(6) exclusions, with Article 31 specific-interest checks resolved. Its AED 20,000,000 is eligible Net Interest Expenditure after the historical-financial-liability and qualifying-infrastructure checks in Ministerial Decision 126/2023 Articles 11 and 14; no unresolved exclusion is included in that amount. Tax-adjusted EBITDA is AED 50,000,000.
+   - **Limit:** 30% of EBITDA is AED 50,000,000 × 30% = AED 15,000,000, which is higher than AED 12,000,000, so AED 15,000,000 is deductible. The other AED 5,000,000 carries forward for up to 10 periods subject to the applicable later-period limitations and ordering rules ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf)).
 5. **QFZP that passes de minimis, with a mainland branch.**
    - **De minimis test:** a free zone distributor has revenue of AED 20,000,000 after every Article 4(3) exclusion described above, with mainland-branch revenue excluded. Assume no further excluded property or intellectual-property revenue and that a specialist has confirmed the distribution activity and customer conditions. Of that adjusted revenue, AED 800,000 is non-qualifying sales to individuals; the rest is qualifying distribution revenue. The de minimis limit is the lower of AED 20,000,000 × 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%.
    - **Branch:** the branch's AED 500,000 of taxable income is taxed at 9% with no AED 375,000 band: AED 500,000 × 9% = AED 45,000.

@@ -1,0 +1,140 @@
+{
+  "five_phase2_findings": {
+    "P2-01": "CLOSED",
+    "P2-02": "CLOSED",
+    "P2-03": "CLOSED",
+    "P2-04": "CLOSED",
+    "P2-05": "CLOSED"
+  },
+  "prior_four_findings": "CLOSED; phase2four-finding-closure.json reused",
+  "earlier_eight_groups": "CLOSED within statedpartialscope; preservationgateexplicitlyusescompletewritermap+19topicclassspots,not376manualendorsement",
+  "literal_placement_checks": [
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "version: 2.5",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "version: 2.4",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-payroll-social.md",
+      "new": "version: 1.3",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "| No sales yet, qualifying taxable expenses above AED 187,500 | Voluntary registration only after Article 8(5)-(6) evidence/eligibility checks | Expenses must be Standard-Rated, incurred in the UAE by a UAE-resident Person; prove Business in the State and intended Article 54(1)(a)-(c) supplies to the FTA. Expenses do not trigger mandatory registration; input recovery has separate conditions |",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "| Ordinary invoice to a registered customer for AED 10,000, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Simplified invoice allowed | Consideration does not exceed AED 10,000; retain Executive Regulation Article 59(5),(16) exclusions |",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "| Same ordinary-invoice scope for AED 10,001, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Full tax invoice | Above the ordinary simplified-invoice limit; Article 59(5),(16) exclusions still apply |",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "**Case 2: voluntary registration.** Assume a UAE-resident start-up carries on Business in the UAE and proves to the FTA its intention to make supplies within VAT Law Article 54(1)(a)-(c). Its qualifying Standard-Rated expenses incurred in the UAE are AED 200,000 in the last 12 months, and the Article 8(5)-(6) evidence and eligibility requirements are satisfied. This exceeds AED 187,500 for voluntary registration; expenses alone do not trigger mandatory registration. Any input recovery separately requires the ordinary Article 55 conditions, qualifying use and applicable recovery restrictions; registration alone does not establish recovery.",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "- Correct past errors under the law applicable to the period concerned. For periods before 1 January 2026, HOLD historical reverse-charge self-invoice instructions pending contemporaneous operative law: the current amended Article 48 does not reproduce the deleted earlier wording and does not prove the earlier obligation asserted in prior versions. Preserve the historical correction topic without treating that unsupported obligation as verified.",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "| Payments to connected persons (owners, directors, their related parties) | Article 36(1) limits deduction to Market Value and wholly/exclusively Business use, subject to Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Ordinary deduction rules and Article 34 where separately applicable still require review |",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-payroll-social.md",
+      "new": "**Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. For the company's deduction, apply Article 36(1) Market Value and Business-purpose conditions only after checking Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Keep ordinary deduction rules and Article 34 where a separate Related Party transaction qualifies; the exception is not a blanket deduction approval.",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "   - **Loss cap:** assume its AED 700,000 carried-forward Tax Losses from 2024 and 2025 are eligible under Articles 37-39, with all applicable eligibility, ownership-continuity and Business-activity conditions resolved.",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "   - **Facts:** assume an in-scope juridical property developer, outside Article 30(6) exclusions, with Article 31 specific-interest checks resolved. Its AED 20,000,000 is eligible Net Interest Expenditure after the historical-financial-liability and qualifying-infrastructure checks in Ministerial Decision 126/2023 Articles 11 and 14; no unresolved exclusion is included in that amount. Tax-adjusted EBITDA is AED 50,000,000.",
+      "actual_placement_present": true
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "The other AED 5,000,000 carries forward for up to 10 periods subject to the applicable later-period limitations and ordering rules",
+      "actual_placement_present": true
+    }
+  ],
+  "guide_sha256": {
+    "skills/uae/ae-corporate-tax.md": "ec9686a8b1ac15fef08e75aabfc34a4e5dca73008bcbe71bdf510a654ef50a70",
+    "skills/uae/ae-payroll-social.md": "ad563abe4061a5369177842f5905aa9df59114c25191efe395a8616702c2003e",
+    "skills/uae/uae-vat.md": "9d0152d4fb5d846b851413b67b436607585e22cd0e46a3232ebd0f0fdf5a867f"
+  },
+  "readme_reviewed_sha256": "ab08bfd2f43a8f8cdf4d94200b86aefc566f6a2963f8e327cb36f3c22f91cc72",
+  "full_cta_sha256": {
+    "skills/uae/ae-corporate-tax.md": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "skills/uae/ae-payroll-social.md": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "skills/uae/uae-vat.md": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "named_guides_unchanged_from_full_base": {
+    "skills/uae/ae-tax-residency.md": "16b54940c15f5e6d19d93034220f2cec13bba7de63fbdd9a39153e8670f50ffc",
+    "skills/uae/general-uae-corporate-tax-guide.md": "58edabb2afbbc493f8043098bb0fee70e0bb33d96eb06c28c7de773764cdf998"
+  },
+  "original_predecessor_evidence_preserved": {
+    "old-rule-destinations.md": true,
+    "writer-arithmetic.json": true,
+    "old-rule-destinations.json": true,
+    "provenance.md": true,
+    "candidate-integrity.json": true,
+    "repair-notes.md": true,
+    "source-identities.json": true,
+    "independent-review/predecessor-row-status-d75b5305.json": true,
+    "independent-review/final-hold-d75b5305.md": true,
+    "independent-review/validation-d75b5305.json": true,
+    "independent-review/row-review-status-d75b5305.json": true,
+    "independent-review/initial-hold-d75b5305.md": true,
+    "independent-review/mechanical-integrity-d75b5305.json": true,
+    "independent-review/independent-arithmetic-d75b5305.json": true,
+    "focused-corrections-d75b5305/focused-repair-record.md": true,
+    "focused-corrections-d75b5305/unchanged-line-relocation.json": true,
+    "focused-corrections-d75b5305/focused-line-changes.json": true,
+    "focused-corrections-d75b5305/destination-corrections.json": true,
+    "focused-corrections-d75b5305/preserved-evidence-sha256.json": true,
+    "focused-corrections-d75b5305/candidate-integrity.json": true,
+    "focused-corrections-d75b5305/source-scope-corrections.json": true,
+    "original/uae-vat.base.md": true,
+    "original/uae-vat.candidate-df33d21.md": true,
+    "original/prior-writer-source-notes.md": true,
+    "original/ae-payroll-social.base.md": true,
+    "original/ae-payroll-social.candidate-df33d21.md": true,
+    "original/ae-corporate-tax.base.md": true,
+    "original/ae-corporate-tax.candidate-df33d21.md": true,
+    "ledgers/ae-payroll-social.json": true,
+    "ledgers/ae-corporate-tax.json": true,
+    "ledgers/ae-payroll-social.md": true,
+    "ledgers/uae-vat.md": true,
+    "ledgers/uae-vat.json": true,
+    "ledgers/ae-corporate-tax.md": true
+  },
+  "arithmetic": "All22narrativecases/eightoa-checkpredecessorproofreused. Phase2changeseligibilityassumptions/conditionsonly; nooperands/formulas/resultsaltered. CTCase5independentrecomputationpreviouslypassed.",
+  "lost_content_restored": 0,
+  "status": "PASS / PARTIAL_RESEARCH_PUBLICATION",
+  "prohibited_claims": [
+    "accountantattestation",
+    "filingreadiness",
+    "fullcurrentlawconsolidation",
+    "countrycompletion",
+    "nativeapproval",
+    "mergeapproval"
+  ]
+}

@@ -5,6 +5,10 @@ not_applicable: {}
 covered_by:
   XB: ae-tax-residency
 partial:
+  IT-CORP: "Three-Guide review covers the team corporate draft only; detailed specialist/currentness/portal holds and the named contributor Guide remain outside its acceptance."
+  VAT: "Routine source-cited preparation scope; specialist methods, historical reverse-charge source and authenticated filing holds remain."
+  SC: "Federal tax treatment only; pension, gratuity, WPS and insurance coverage/execution held."
+  PR: "Tax treatment and staff-benefit VAT only; social payroll execution held."
   XB: "residence rules only; no non-resident withholding, treaty or exit rules"
 ---
 
@@ -18,7 +22,7 @@ Tax years: not stated (1 skill), 2026 (6 skills), 2025 (1 skill).
 |---|---|---|---|
 | Income tax | [Income tax](ae-income-tax.md) | 2026 | Ready |
 | Company tax | [Corporate tax](ae-corporate-tax.md), [General uae corporate tax guide](general-uae-corporate-tax-guide.md) | not stated, 2026 | Needs updating |
-| VAT or sales tax | [VAT](uae-vat.md) | 2026 | Ready |
+| VAT or sales tax | [VAT](uae-vat.md) | 2026 | Partial: scoped source-cited preparation; specialist, historical and filing holds remain |
 | Social contributions | [Payroll social](ae-payroll-social.md) | 2026 | Partial: federal tax treatment only; pension/gratuity/WPS/insurance coverage and execution held |
 | Payroll | [Payroll social](ae-payroll-social.md) | 2026 | Partial: tax treatment and staff-benefit VAT; social payroll execution held |
 | Transfer pricing | | | Missing |
@@ -39,4 +43,10 @@ Tracked in [\[AE\] Complete the pack](https://github.com/openaccountants/openacc
 - [Company formation](ae-company-formation.md) (2026)
 - [Tax overview](ae-tax-overview.md) (2026)
 
-The three team tax Guides remain tier 2 with independent review pending. Their precise source scopes, non-operative holds and immutable old-topic destinations are in `evidence/uae-2026-closeout`. This refresh is not a claim that the UAE pack is comprehensive or accountant-attested. Mehran Habib’s tax-residency Guide and Jonathan Ruiz’s general corporate-tax Guide are unchanged.
+The three team tax Guides remain tier 2; independent source review is complete for their stated partial scope. Their precise source scopes, non-operative holds and immutable old-topic destinations are in `evidence/uae-2026-closeout`. This refresh is not a claim that the UAE pack is comprehensive or accountant-attested. Mehran Habib’s tax-residency Guide and Jonathan Ruiz’s general corporate-tax Guide are unchanged.
+
+## Source review of the three team Guides
+
+This batch covers only the team Corporate Tax, payroll-tax/staff-benefit and VAT Guides. Named-contributor Guides remain unchanged and are not attested by this review. The [continuation evidence](../../evidence/uae-2026-closeout/independent-continuation-phase2-20261101/REVIEW.md) preserves earlier findings, source-reading scope and the stated topic-class spotcheck standard. [Focused corrections](../../evidence/uae-2026-closeout/focused-phase2-repairs-20261101/literal-repairs.json) retain the underlying historical evidence and explicit specialist, currentness and filing limits. Country coverage remains partial.
+
+Independent source review: PASS for conditional PARTIAL research publication of the three team Guides; the stated specialist, historical, currentness and filing holds remain.

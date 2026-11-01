@@ -1,0 +1,102 @@
+{
+  "baseline": "d6465d71d1f9cae64087a63b7d4b728dff4fa7d6",
+  "changes": [
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "version: 2.4",
+      "new": "version: 2.5",
+      "before_sha256": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093",
+      "after_sha256": "b52419483c33ba79324f3e5f71bdd0864cd24105f0ef1e01e9634d930ed22505"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "version: 2.3",
+      "new": "version: 2.4",
+      "before_sha256": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72",
+      "after_sha256": "4ba6b2aad9e0d008e3cd89454746e796db64fb739d06ad610fa2bb2b2bb3b833"
+    },
+    {
+      "path": "skills/uae/ae-payroll-social.md",
+      "old": "version: 1.2",
+      "new": "version: 1.3",
+      "before_sha256": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5",
+      "after_sha256": "718616a214831ccdc8f73daf40280dcdca639a657101f482ce5ffe3fca61948b"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "| No sales yet, taxable expenses above AED 187,500 | May register voluntarily | Expenses count for voluntary, not mandatory, registration |",
+      "new": "| No sales yet, qualifying taxable expenses above AED 187,500 | Voluntary registration only after Article 8(5)-(6) evidence/eligibility checks | Expenses must be Standard-Rated, incurred in the UAE by a UAE-resident Person; prove Business in the State and intended Article 54(1)(a)-(c) supplies to the FTA. Expenses do not trigger mandatory registration; input recovery has separate conditions |",
+      "before_sha256": "b52419483c33ba79324f3e5f71bdd0864cd24105f0ef1e01e9634d930ed22505",
+      "after_sha256": "139b1066a63a5890b829b710192e138d2cd2b872fd7b961859c4fd97737c94ad"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "| Invoice to a registered customer for AED 10,000 | Simplified invoice allowed | Allowed where consideration \"does not exceed\" AED 10,000 |",
+      "new": "| Ordinary invoice to a registered customer for AED 10,000, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Simplified invoice allowed | Consideration does not exceed AED 10,000; retain Executive Regulation Article 59(5),(16) exclusions |",
+      "before_sha256": "139b1066a63a5890b829b710192e138d2cd2b872fd7b961859c4fd97737c94ad",
+      "after_sha256": "dd01ebba1792d935314b0697b3c1d81a34bd340b93c170c1ddabc1b08adef891"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "| Same for AED 10,001 | Full tax invoice | Above the limit |",
+      "new": "| Same ordinary-invoice scope for AED 10,001, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Full tax invoice | Above the ordinary simplified-invoice limit; Article 59(5),(16) exclusions still apply |",
+      "before_sha256": "dd01ebba1792d935314b0697b3c1d81a34bd340b93c170c1ddabc1b08adef891",
+      "after_sha256": "ac09ff2ab24f04ec697895242b2fa5724b418b6aa4f16745cc0a0e9ecd3db3a7"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "**Case 2: voluntary registration.** A start-up has no sales yet but taxable expenses of AED 200,000 in the last 12 months. That exceeds AED 187,500, so it may register voluntarily and recover input tax. It is not required to register.",
+      "new": "**Case 2: voluntary registration.** Assume a UAE-resident start-up carries on Business in the UAE and proves to the FTA its intention to make supplies within VAT Law Article 54(1)(a)-(c). Its qualifying Standard-Rated expenses incurred in the UAE are AED 200,000 in the last 12 months, and the Article 8(5)-(6) evidence and eligibility requirements are satisfied. This exceeds AED 187,500 for voluntary registration; expenses alone do not trigger mandatory registration. Any input recovery separately requires the ordinary Article 55 conditions, qualifying use and applicable recovery restrictions; registration alone does not establish recovery.",
+      "before_sha256": "ac09ff2ab24f04ec697895242b2fa5724b418b6aa4f16745cc0a0e9ecd3db3a7",
+      "after_sha256": "09fa794884447f31e045b59f7eeabfa1ea9916bdbc0436da347b5a03470bd0bf"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "- A tax period that ended before 1 January 2026 follows the VAT Law before Decree-Law No. 16 of 2025, including the self-invoice requirement for reverse-charge supplies in that period. Correct past errors on the rules of the period concerned.",
+      "new": "- Correct past errors under the law applicable to the period concerned. For periods before 1 January 2026, HOLD historical reverse-charge self-invoice instructions pending contemporaneous operative law: the current amended Article 48 does not reproduce the deleted earlier wording and does not prove the earlier obligation asserted in prior versions. Preserve the historical correction topic without treating that unsupported obligation as verified.",
+      "before_sha256": "09fa794884447f31e045b59f7eeabfa1ea9916bdbc0436da347b5a03470bd0bf",
+      "after_sha256": "9d0152d4fb5d846b851413b67b436607585e22cd0e46a3232ebd0f0fdf5a867f"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "| Payments to connected persons (owners, directors, their related parties) | Deductible only up to market value and only if wholly and exclusively for the business |",
+      "new": "| Payments to connected persons (owners, directors, their related parties) | Article 36(1) limits deduction to Market Value and wholly/exclusively Business use, subject to Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Ordinary deduction rules and Article 34 where separately applicable still require review |",
+      "before_sha256": "4ba6b2aad9e0d008e3cd89454746e796db64fb739d06ad610fa2bb2b2bb3b833",
+      "after_sha256": "dd072d38e6960052a2ba6798f55bee858d9f504b03b965f86eac4ab5a6ebe9ff"
+    },
+    {
+      "path": "skills/uae/ae-payroll-social.md",
+      "old": "**Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. If the director is also a shareholder, the company deducts the pay only to the extent it matches Market Value.",
+      "new": "**Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. For the company's deduction, apply Article 36(1) Market Value and Business-purpose conditions only after checking Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Keep ordinary deduction rules and Article 34 where a separate Related Party transaction qualifies; the exception is not a blanket deduction approval.",
+      "before_sha256": "718616a214831ccdc8f73daf40280dcdca639a657101f482ce5ffe3fca61948b",
+      "after_sha256": "ad563abe4061a5369177842f5905aa9df59114c25191efe395a8616702c2003e"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "   - **Loss cap:** it has AED 700,000 of losses from 2024 and 2025.",
+      "new": "   - **Loss cap:** assume its AED 700,000 carried-forward Tax Losses from 2024 and 2025 are eligible under Articles 37-39, with all applicable eligibility, ownership-continuity and Business-activity conditions resolved.",
+      "before_sha256": "dd072d38e6960052a2ba6798f55bee858d9f504b03b965f86eac4ab5a6ebe9ff",
+      "after_sha256": "97480166c0bc04dd420b2787e74fa05f4bb773ecdcfd213d7c33aaab4b2800e5"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "   - **Facts:** a property developer has net interest expenditure of AED 20,000,000 and tax-adjusted EBITDA of AED 50,000,000.",
+      "new": "   - **Facts:** assume an in-scope juridical property developer, outside Article 30(6) exclusions, with Article 31 specific-interest checks resolved. Its AED 20,000,000 is eligible Net Interest Expenditure after the historical-financial-liability and qualifying-infrastructure checks in Ministerial Decision 126/2023 Articles 11 and 14; no unresolved exclusion is included in that amount. Tax-adjusted EBITDA is AED 50,000,000.",
+      "before_sha256": "97480166c0bc04dd420b2787e74fa05f4bb773ecdcfd213d7c33aaab4b2800e5",
+      "after_sha256": "1b4131e9a615fa1d6e1fe8e8c914ffdbf084c36addf94acd7ef66904a8d713bd"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "The other AED 5,000,000 carries forward for up to 10 periods",
+      "new": "The other AED 5,000,000 carries forward for up to 10 periods subject to the applicable later-period limitations and ordering rules",
+      "before_sha256": "1b4131e9a615fa1d6e1fe8e8c914ffdbf084c36addf94acd7ef66904a8d713bd",
+      "after_sha256": "ec9686a8b1ac15fef08e75aabfc34a4e5dca73008bcbe71bdf510a654ef50a70"
+    }
+  ],
+  "final_guide_hashes": {
+    "skills/uae/ae-corporate-tax.md": "ec9686a8b1ac15fef08e75aabfc34a4e5dca73008bcbe71bdf510a654ef50a70",
+    "skills/uae/ae-payroll-social.md": "ad563abe4061a5369177842f5905aa9df59114c25191efe395a8616702c2003e",
+    "skills/uae/uae-vat.md": "9d0152d4fb5d846b851413b67b436607585e22cd0e46a3232ebd0f0fdf5a867f"
+  },
+  "scope": "Five independent phase2 finding groups only; unchanged case arithmetic, sources and historical review evidence retained; pending focused closure"
+}

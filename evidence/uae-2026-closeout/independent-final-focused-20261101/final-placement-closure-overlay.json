@@ -1,0 +1,3733 @@
+{
+  "population": 531,
+  "counts": {
+    "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW": 107,
+    "STRUCTURE / NO LEGAL CLAIM": 31,
+    "PLACEMENT SOURCE CHECK ACCEPTED": 318,
+    "INTERNAL SCOPE / REFERRAL CONTROL": 24,
+    "SELECTED ROW SOURCE CHECK COMPLETED": 28,
+    "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS": 19,
+    "PROVENANCE / ROUTING CONTROL": 3,
+    "P2-04 REPEATED-EXCEPTION CORRECTION CLOSED": 1
+  },
+  "rows": [
+    {
+      "rule_id": "ae-corporate-tax-L003",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L018",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L022",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L024",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L025",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L026",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L027",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L029",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L031",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L035",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L036",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L037",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L038",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L039",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L040",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L044",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L045",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L046",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L047",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L048",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L049",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L050",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L051",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L052",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L053",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L054",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L055",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L061",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L063",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L064",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L065",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L066",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L067",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L069",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L070",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L074",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L076",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L077",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L078",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L079",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L083",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L085",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L086",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L087",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L088",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L089",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L090",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L091",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L092",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L093",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L094",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L095",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L097",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L101",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L103",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L104",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L105",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L106",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L107",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L108",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L110",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L112",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L114",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L115",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L116",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L117",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L118",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L119",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L121",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L123",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L125",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L129",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L131",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L132",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L133",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L134",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L135",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L136",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L137",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L138",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L139",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L140",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L144",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L145",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L146",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L147",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L148",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L149",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L153",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L155",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L156",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L157",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L158",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L159",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L160",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L164",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L165",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L166",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L167",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L168",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L169",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L170",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L171",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L172",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L173",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L174",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L175",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L179",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE CHECK FINDING"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L180",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L181",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L182",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L183",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L184",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L186",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L190",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L192",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L193",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L194",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L195",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L196",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L197",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L198",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L199",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L200",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L201",
+      "final_disposition": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "SELECTED ROW SOURCE CHECK COMPLETED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L202",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L203",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L207",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L209",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L210",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L211",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L212",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L213",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L214",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L215",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L216",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L217",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L218",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L219",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L220",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L221",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L222",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L223",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L224",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L225",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L226",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L227",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L228",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L229",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L230",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L231",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L232",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L233",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L234",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L235",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L236",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L237",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L238",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L239",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L240",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L287",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L288",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L289",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L290",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L291",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L292",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L293",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L294",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L295",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L296",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L297",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L303",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L305",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L306",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L307",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L308",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L309",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L310",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L311",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L313",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L317",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L318",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L319",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L321",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L323",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L324",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L325",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L326",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L330",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L332",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L333",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L334",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L336",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L340",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L342",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L343",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L344",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L345",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L346",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L347",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L348",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L349",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L350",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L354",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L355",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L356",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L357",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L358",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L359",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L360",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L361",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L362",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L363",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L364",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L365",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L366",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L003",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L020",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L022",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L024",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L025",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L026",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L027",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-payroll-social-L029",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L031",
+      "final_disposition": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L035",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L037",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L039",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L041",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L043",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L045",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L047",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L049",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L050",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L051",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L055",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L056",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L057",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L058",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L059",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L060",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L064",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L065",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L066",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L067",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L068",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L072",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L074",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L075",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L076",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L077",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L078",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L079",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L083",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L087",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L089",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L091",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L093",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L095",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L096",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L098",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L100",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L102",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L103",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L104",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L105",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L106",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L107",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L108",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "ae-payroll-social-L109",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "ae-payroll-social-L110",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L111",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L113",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L117",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L118",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L119",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L120",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L121",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L125",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L127",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L128",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L129",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L130",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L131",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L132",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L133",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L134",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L135",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L139",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L141",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L143",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L145",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L147",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L149",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L151",
+      "final_disposition": "P2-04 REPEATED-EXCEPTION CORRECTION CLOSED",
+      "basis": "Explicitlysupersedesphase1acceptanceonlyformissingArticle36(6)exception,nowallthreecategoriescorrect.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L186",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L187",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L188",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L189",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-payroll-social-L190",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L191",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-payroll-social-L195",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L196",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "INTERNAL SCOPE / REFERRAL CONTROL"
+    },
+    {
+      "rule_id": "ae-payroll-social-L197",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L198",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L199",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L203",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L207",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L208",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L209",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L210",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L211",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L212",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L213",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L214",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L215",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "ae-payroll-social-L216",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L003",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L018",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L022",
+      "final_disposition": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L024",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L026",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L027",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L028",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L029",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L031",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L033",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L037",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L038",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L039",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L040",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L041",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L042",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L046",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L047",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L048",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L049",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L050",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L051",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L052",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L053",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L054",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L060",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L062",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L063",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L064",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L065",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L066",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L067",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L068",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L069",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L071",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L075",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L077",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L078",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE CHECK FINDING"
+    },
+    {
+      "rule_id": "uae-vat-L079",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L080",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L081",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L083",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L087",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L088",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L089",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L093",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L094",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L095",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L099",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L101",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L103",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L104",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L105",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L106",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L107",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L108",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L109",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L110",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L111",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L112",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L113",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L114",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L115",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L116",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L117",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L119",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L120",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L121",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L122",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L123",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L125",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L129",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L130",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L131",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L132",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L133",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L134",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L138",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L140",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L141",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L142",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L143",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L145",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L147",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L149",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L151",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L152",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L153",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L155",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L157",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SELECTED ROW SOURCE CHECK COMPLETED",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L159",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L161",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L162",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "uae-vat-L163",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE CHECK FOUND HOLD",
+      "phase1_status": "SOURCE CHECK FOUND HOLD"
+    },
+    {
+      "rule_id": "uae-vat-L164",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L166",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L170",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L171",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L172",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L173",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L177",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L178",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L179",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L180",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L181",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L182",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L186",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L187",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L188",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L189",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L190",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L191",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L192",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L196",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L197",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L198",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L199",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L200",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L201",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L205",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L207",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L208",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L209",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L210",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L211",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L215",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L217",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L218",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L219",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L220",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L221",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L223",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L224",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L225",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L226",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE CHECK FINDING"
+    },
+    {
+      "rule_id": "uae-vat-L231",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L233",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L234",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L235",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L236",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L237",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L238",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L239",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L240",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L241",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L242",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L243",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L244",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L245",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L246",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L247",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L251",
+      "final_disposition": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L253",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L255",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L257",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L259",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L261",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L263",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L264",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L265",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L266",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L267",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L269",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L271",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L323",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L325",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L329",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L330",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L331",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L332",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L333",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L334",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L335",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L336",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L337",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L338",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L339",
+      "final_disposition": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L345",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L346",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L347",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L351",
+      "final_disposition": "FOCUSED CORRECTION CLOSED WITH STATED PARTIAL HOLDS",
+      "basis": "Identified changed-text/eight-group/four-group/five-group corrections explicitly reviewed; no old held law asserted verified.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L352",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L353",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L357",
+      "final_disposition": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L359",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L360",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L361",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L362",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L363",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L364",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L365",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L366",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L367",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L368",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L369",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L370",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L371",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L372",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L373",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L377",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L378",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L382",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L383",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L384",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L385",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L386",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L387",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L388",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L389",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L390",
+      "final_disposition": "PLACEMENT SOURCE CHECK ACCEPTED",
+      "basis": "Preserved earlier accepted source proof or focused-eight-group closure.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "PLACEMENT SOURCE CHECK ACCEPTED"
+    },
+    {
+      "rule_id": "uae-vat-L391",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L392",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L393",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L394",
+      "final_disposition": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "predecessor_status": "SOURCE ACCEPTANCE REMAINS OPEN",
+      "phase1_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    }
+  ],
+  "meaning": "No unreadcurrentruleconvertedtofakehold. Genuinehistoricalsourcegap/social/specialist/executionholdsremainexplicit. Structure/controlisnotlawacceptance. Originalinventoryrowsdonotcountdistincttaxfacts. Newinsertionsgovernedbychanged-placement/focusedrepairrecords."
+}

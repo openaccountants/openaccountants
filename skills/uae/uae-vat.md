@@ -1,7 +1,7 @@
 ---
 name: uae-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a UAE VAT return (VAT201 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT201", "create the return", "UAE VAT filing", "FTA return", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers the UAE only and only standard VAT-registered persons filing VAT201. VAT groups, profit margin schemes, partial exemption with non-trivial exempt supplies, and Designated Zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any UAE VAT work.
-version: 2.4
+version: 2.5
 category: VAT
 jurisdiction: AE
 tax_year: 2026
@@ -231,12 +231,12 @@ Before completing the boxes, open the relevant VAT201 return in EmaraTax and che
 | Question | Answer | Boundary |
 | --- | --- | --- |
 | Supplies of exactly AED 375,000 in 12 months | Not required to register | Mandatory only when supplies "exceeded" the threshold |
-| No sales yet, taxable expenses above AED 187,500 | May register voluntarily | Expenses count for voluntary, not mandatory, registration |
+| No sales yet, qualifying taxable expenses above AED 187,500 | Voluntary registration only after Article 8(5)-(6) evidence/eligibility checks | Expenses must be Standard-Rated, incurred in the UAE by a UAE-resident Person; prove Business in the State and intended Article 54(1)(a)-(c) supplies to the FTA. Expenses do not trigger mandatory registration; input recovery has separate conditions |
 | Consulting for a foreign company with no GCC residence whose director visits Dubai for 10 days, not connected to the work; advice not about UAE real estate or goods in the UAE | Can be zero-rated | "Outside the State" means present for less than 30 days and not effectively connected with the supply; all Article 31(1)(a) conditions must hold |
 | Valuation of a warehouse in Dubai for a foreign client | Standard-rated | Directly connected with real estate in the UAE |
 | Same, but the services are received in the UAE by the foreign client's UAE staff and that person could not fully recover VAT | Standard-rated | Executive Regulation Article 31(3) anti-avoidance |
-| Invoice to a registered customer for AED 10,000 | Simplified invoice allowed | Allowed where consideration "does not exceed" AED 10,000 |
-| Same for AED 10,001 | Full tax invoice | Above the limit |
+| Ordinary invoice to a registered customer for AED 10,000, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Simplified invoice allowed | Consideration does not exceed AED 10,000; retain Executive Regulation Article 59(5),(16) exclusions |
+| Same ordinary-invoice scope for AED 10,001, outside reverse charge and the mandatory or voluntarily adopted Electronic Invoice system | Full tax invoice | Above the ordinary simplified-invoice limit; Article 59(5),(16) exclusions still apply |
 | Past error of exactly AED 10,000 in tax | Use the earliest eligible return | If no return can correct it, voluntary disclosure is still required within 20 business days |
 | Pool car used by sales staff, taken home at night | Input tax blocked | Available for personal use |
 | Pickup truck or forklift | Not a "motor vehicle"; recoverable if used for taxable supplies | The definition excludes trucks, forklifts and hoists |
@@ -252,7 +252,7 @@ Sources for this section: [VAT Law, consolidated](https://tax.gov.ae/Datafolder/
 
 **Case 1: mandatory registration.** A Dubai mainland trading LLC, not registered, has taxable supplies of AED 390,000 in the 12 months to 30 June 2026. That exceeds AED 375,000, so it must apply within 30 days of becoming required to register. The FTA registers it from the first day of the month after the month in which it became required to register, whether or not it applies, and it owes VAT on its taxable supplies from that date. A late application is a penalty of AED 10,000.
 
-**Case 2: voluntary registration.** A start-up has no sales yet but taxable expenses of AED 200,000 in the last 12 months. That exceeds AED 187,500, so it may register voluntarily and recover input tax. It is not required to register.
+**Case 2: voluntary registration.** Assume a UAE-resident start-up carries on Business in the UAE and proves to the FTA its intention to make supplies within VAT Law Article 54(1)(a)-(c). Its qualifying Standard-Rated expenses incurred in the UAE are AED 200,000 in the last 12 months, and the Article 8(5)-(6) evidence and eligibility requirements are satisfied. This exceeds AED 187,500 for voluntary registration; expenses alone do not trigger mandatory registration. Any input recovery separately requires the ordinary Article 55 conditions, qualifying use and applicable recovery restrictions; registration alone does not establish recovery.
 
 **Case 3: reverse charge on software.** A registered Dubai consultancy pays a US software company AED 3,672 for a subscription. Assume the supplier has no UAE place of residence, no UAE TRN and charges no VAT. Box 3: amount AED 3,672, VAT 3,672 x 5% = AED 183.60. Box 10: the same amounts, because the consultancy makes only taxable supplies. Net effect nil. For a supply received after 1 January 2026 no self-invoice is issued; the supplier's invoice is kept.
 
@@ -348,7 +348,7 @@ expected:
 
 ### Earlier periods ([VAT Law, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf))
 
-- A tax period that ended before 1 January 2026 follows the VAT Law before Decree-Law No. 16 of 2025, including the self-invoice requirement for reverse-charge supplies in that period. Correct past errors on the rules of the period concerned.
+- Correct past errors under the law applicable to the period concerned. For periods before 1 January 2026, HOLD historical reverse-charge self-invoice instructions pending contemporaneous operative law: the current amended Article 48 does not reproduce the deleted earlier wording and does not prove the earlier obligation asserted in prior versions. Preserve the historical correction topic without treating that unsupported obligation as verified.
 - Penalties for a return or payment due before 14 April 2026 may fall under the earlier table (Cabinet Decision No. 49 of 2021); check.
 - Excess recoverable tax that arose in earlier periods is now subject to the five-year limit; check the age of any carried-forward balance.
 
