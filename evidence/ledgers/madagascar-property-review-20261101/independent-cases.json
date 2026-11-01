@@ -1,0 +1,92 @@
+{
+  "read_on": "2026-11-01",
+  "method": "Independent Decimal recomputation from statute, not oa-check output; hypothetical ordinary nonexempt supported valuation inputs. No final assessment/payment sanction.",
+  "IFT_case_and_boundary": {
+    "150000": "2000",
+    "199999": "2000",
+    "200000": "2000",
+    "200001": "2000.01",
+    "400000": "4000.00"
+  },
+  "IFPB_case": {
+    "rented_base": "240000",
+    "rented_tax": "12000.00",
+    "principal_base": "72000.00",
+    "principal_percentage": "3600.0000",
+    "principal_tax": "5000"
+  },
+  "IFPB_floor_taxable_value": "100000;5%=5000",
+  "IFPB_principal_commission_break_even": "5000/(0.05*0.30)=333333.333...; above this5% principal base exceeds floor, assuming no flat/exemption/revision.",
+  "switches": [
+    {
+      "fact": "Rice/vegetable/food/fruit-tree land in urban perimeter",
+      "result": "Exclude category6; obtain own category commune tariff; do not apply1% because urban.",
+      "source": "CDI10.01.07"
+    },
+    {
+      "fact": "Industrial/commercial land within10.02.02(2) taxed underIFPB",
+      "result": "IFT exempt; do not double-assess.",
+      "source": "CDI10.01.03(4)"
+    },
+    {
+      "fact": "Owner uses as second home or lets to third party",
+      "result": "No principal-residence30% limb; ordinary rental-value rule or supported other route required.",
+      "source": "CDI10.02.06(2)"
+    },
+    {
+      "fact": "No proven commune authorisation/specific criteria/council flat amount",
+      "result": "Cannot invent flat charge.",
+      "source": "CDI10.02.10"
+    },
+    {
+      "fact": "Necessary immediate dependency20ares versus over20",
+      "result": "20ares within literal cap; oversized/excess treatment held, not automatically first20 exempt.",
+      "source": "CDI10.01.03(3)"
+    },
+    {
+      "fact": "New cultivation effective extension in yearN",
+      "result": "Tax beginsN+6; no assumed operational calendar activation.",
+      "source": "CDI10.01.04"
+    },
+    {
+      "fact": "Reforest1499versus1500livingtrees/ha",
+      "result": "1500threshold inclusive; lower density does not establish extended first-cut exemption.",
+      "source": "CDI10.01.04"
+    },
+    {
+      "fact": "Hypothetical completion2025 and permit produced2025, applicability assumed",
+      "result": "Article05 ordinary start2026/end2030; permit2027 gives2028–2030, not five fresh years.",
+      "source": "CDI10.02.05"
+    },
+    {
+      "fact": "Q4completion2025, permit31March2026 versus1April2026",
+      "result": "Before1April special start2026 applies first case; equality fails special route, ordinary permit-production rule needs assessment.",
+      "source": "CDI10.02.05"
+    },
+    {
+      "fact": "Sale versus inheritance within exemption",
+      "result": "Sale ends personal exemption; heirs keep remaining period, no reset.",
+      "source": "CDI10.02.04"
+    },
+    {
+      "fact": "Annual October15 boundary",
+      "result": "IFTauplustard15 includes15; IFPBavant15 does not. Remote verbal exception separate from exemption application.",
+      "source": "CPFI106–107;CDI10.01.05/10.02.05"
+    },
+    {
+      "fact": "Payment and collection title",
+      "result": "Three-month VII01 rule retained; title notification sansdélai interaction must be held(F1). ChapterII heading alone does not exclude VII33 because explicitVII01cross-reference.",
+      "source": "CPF VII01/33"
+    },
+    {
+      "fact": "LFRVII32rounding",
+      "result": "Rounded-downhundreds text read; chapter-Iproperty applicability/commencement not decided. Cases already exacthundreds and do not prove rounding.",
+      "source": "LFRVII32/33;article22"
+    },
+    {
+      "fact": "Late property remittance",
+      "result": "53.4specific1% monthly;53minimum/startedmonth and51interactions held; do not substitute turnover firstmonth scale or compute final penalty.",
+      "source": "CDI20.01.51–54"
+    }
+  ]
+}

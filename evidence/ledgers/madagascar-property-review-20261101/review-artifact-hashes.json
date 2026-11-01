@@ -1,0 +1,40 @@
+{
+  "frozen_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/independent-cases.json",
+      "sha256": "a17e975c3fa1fa55e904dbd0df49a19ab8725be90d0e3eee37f19e2e46f20ff1",
+      "bytes": 3902
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-input-hashes.json",
+      "sha256": "5cc3477da89b36fee8cdf8be4bd513e8219368c706748158726ad64288dac932",
+      "bytes": 3734
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-review.md",
+      "sha256": "0344ac8c0d7e4709c91a8e357bdd27389247deaf32fcdc58e3f9a4c5ddfac79d",
+      "bytes": 10981
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/ledger-row-review.json",
+      "sha256": "a6d1b4cf80f6663cd05d91a0a212825bbc895384b2fd76d90d1af805918de1c6",
+      "bytes": 58836
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/machine-checks.json",
+      "sha256": "d193aa58eff48dd4aba7b8eaf28ab10e47f370a2d0846e93feea4910a20b79ee",
+      "bytes": 2473
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/preservation-review.json",
+      "sha256": "c344d9ac8475d8e3f3ebff34583050d3846fdfe9dc4c9f8322c0a355cd6ddf57",
+      "bytes": 55827
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/source-integrity.json",
+      "sha256": "d6b4759732847636c7883d33469fa1bfae6b75cc8fbcae229656319f24ef65b5",
+      "bytes": 5928
+    }
+  ]
+}
