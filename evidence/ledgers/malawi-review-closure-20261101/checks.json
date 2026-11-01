@@ -1,0 +1,126 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "exit_code": 0,
+    "stdout": "changed-only mode: validating 8 changed guide file(s)\nchecked 7 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+      "--head",
+      "b8a714cfdcdc43d1493c423c6aa64d0c346d1cd0",
+      "--strict-metadata"
+    ],
+    "exit_code": 0,
+    "stdout": "Sync integrity checked 7 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/malawi/mw-company-formation.md",
+      "skills/malawi/mw-corporate-income-tax.md",
+      "skills/malawi/mw-income-tax.md",
+      "skills/malawi/mw-payroll-social.md",
+      "skills/malawi/mw-tax-overview.md",
+      "skills/malawi/mw-transfer-pricing.md",
+      "skills/malawi/mw-vat-gst.md"
+    ],
+    "exit_code": 0,
+    "stdout": "checked 7 files, 14 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-company-formation.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-corporate-income-tax.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-income-tax.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-payroll-social.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-tax-overview.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-tax-overview.md (scope: other)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-transfer-pricing.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/malawi/mw-vat-gst.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/malawi/mw-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+      "b8a714cfdcdc43d1493c423c6aa64d0c346d1cd0"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

@@ -21,9 +21,9 @@ partial:
 
 # Malawi: partial 2026 source pack
 
-**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have been repaired, but enacted Act 3/2026 and the appointed TAA/cutover commencement notices remain unread. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
+**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have passed focused independent closure, but enacted Act 3/2026 and the appointed TAA/cutover commencement notices remain unread. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
 
-Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Independent review pending. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
+Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Independent review remains unaccepted because the currentness finding is open. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
 
 | Job | Guide | Status |
 |---|---|---|
@@ -42,4 +42,4 @@ Eight ledger/map files live in [evidence/ledgers](../../evidence/ledgers/mw-old-
 
 ## Independent review checkpoint
 
-Initial findings: `evidence/ledgers/malawi-review-20261101/review.md`. Additive parent repair: `evidence/ledgers/malawi-repair-1/`. Deduction restrictions and the two formation subtopics are restored; descriptions meet the specified length. The remaining source-chain hold is explicit. These changes still require focused independent closure and do not complete the pack.
+Initial findings: `evidence/ledgers/malawi-review-20261101/review.md`. Additive parent repair: `evidence/ledgers/malawi-repair-1/`. Deduction restrictions and the two formation subtopics are restored; descriptions meet the specified length. The remaining source-chain hold is explicit. The [focused closure](../../evidence/ledgers/malawi-review-closure-20261101/closure.md) closes F1–F3 for candidate `b8a714cfdcdc43d1493c423c6aa64d0c346d1cd0`. F4 remains OPEN: no operative 2026, live-use or publication acceptance follows. The pack remains incomplete.
