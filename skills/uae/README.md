@@ -19,8 +19,8 @@ Tax years: not stated (1 skill), 2026 (6 skills), 2025 (1 skill).
 | Income tax | [Income tax](ae-income-tax.md) | 2026 | Ready |
 | Company tax | [Corporate tax](ae-corporate-tax.md), [General uae corporate tax guide](general-uae-corporate-tax-guide.md) | not stated, 2026 | Needs updating |
 | VAT or sales tax | [VAT](uae-vat.md) | 2026 | Ready |
-| Social contributions | [Payroll social](ae-payroll-social.md) | 2026 | Ready |
-| Payroll | [Payroll social](ae-payroll-social.md) | 2026 | Ready |
+| Social contributions | [Payroll social](ae-payroll-social.md) | 2026 | Partial: federal tax treatment only; pension/gratuity/WPS/insurance coverage and execution held |
+| Payroll | [Payroll social](ae-payroll-social.md) | 2026 | Partial: tax treatment and staff-benefit VAT; social payroll execution held |
 | Transfer pricing | | | Missing |
 | Cross-border | [Tax residency](ae-tax-residency.md) | 2025 | Partly covered: residence rules only; no non-resident withholding, treaty or exit rules |
 
@@ -38,3 +38,5 @@ Tracked in [\[AE\] Complete the pack](https://github.com/openaccountants/openacc
 
 - [Company formation](ae-company-formation.md) (2026)
 - [Tax overview](ae-tax-overview.md) (2026)
+
+The three team tax Guides remain tier 2 with independent review pending. Their precise source scopes, non-operative holds and immutable old-topic destinations are in `evidence/uae-2026-closeout`. This refresh is not a claim that the UAE pack is comprehensive or accountant-attested. Mehran Habib’s tax-residency Guide and Jonathan Ruiz’s general corporate-tax Guide are unchanged.
