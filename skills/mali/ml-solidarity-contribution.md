@@ -9,6 +9,9 @@ tax_year_notes: "Enacted 2025 source baseline only; 2026 application is unverifi
 tier: 2
 last_updated: 2026-11-01
 version: 0.2
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Mali solidarity contribution source-baseline draft v0.2
@@ -34,7 +37,7 @@ The job covers ordinary domestic turnover whose VAT tax point is already establi
 | Monthly declaration | Previous month's operations declared in the first 15 days of each month; payment follows the domestic VAT deadlines/procedure | [Ordonnance arts. 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 | Late declaration before formal notice | 5% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 2–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 | Late declaration after formal notice | 25% of the declared tax, minimum XOF 25,000 | [Ordonnance art. 8, paragraphs 3–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
-| No return within 10 days after formal notice | Assessment by the administration and a 50% increase on the corresponding tax; the text separately states its XOF 25,000 minimum | [Ordonnance art. 8, paragraphs 4–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| No return within 10 days after formal notice | Assessment by the administration and a 50% increase on the corresponding tax; paragraph 4 sets the XOF 25,000 minimum "in all cases", but this draft has not settled how it applies to this branch | [Ordonnance art. 8, paragraphs 4–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 | Late return with no tax due | XOF 25,000 | [Ordonnance art. 8, paragraph 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 | Omission/inaccuracy | 25% of tax compromised; 50% if the nature of the infringement means the debtor's good faith cannot be accepted | [Ordonnance art. 8, paragraphs 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 
@@ -132,4 +135,4 @@ expected:
 | [DGI CSS announcement](https://www.dgi.gouv.ml/institution-de-taxes-et-prelevements-divers-au-profit-du-budget-detat/) | Announcement and link to the ordinance, including rate/base. Used as corroboration, not to replace the gazette. | 2026-11-01 |
 | [DGI digital-services explanation, 3 August 2026](https://www.dgi.gouv.ml/semaine-du-numerique-au-mali-la-dgi-sacree-meilleure-administration-digitalisee/) | E-Impôt declaration/payment and E-Liasses explanation; no authenticated CSS session or form read. | 2026-11-01 |
 
-Not yet confirmed: enacted 2026 fiscal Annex U and any specific later amendment affecting this ordinary CSS computation; precise first liable partial period in 2025; current CSS form identifiers/boxes and authenticated filing/payment/confirmation workflow; detailed VAT tax points for a particular transaction; exemption/convention and cross-border treatment; deduction timing of unpaid CSS; additional late-payment interest, general minimum-penalty interaction and sanction cumulation. The ministry's proposed 2026/rectifying bills are not used as enacted law. The preparation result must stop at any unresolved item that changes it. The 2026 source gap blocks current-year approval or publication. Independent review of the historical source baseline is pending; no accountant has attested to this draft.
+Not yet confirmed: enacted 2026 fiscal Annex U and any specific later amendment affecting this ordinary CSS computation; precise first liable partial period in 2025; current CSS form identifiers/boxes and authenticated filing/payment/confirmation workflow; detailed VAT tax points for a particular transaction; exemption/convention and cross-border treatment; deduction timing of unpaid CSS; additional late-payment interest, general minimum-penalty interaction and sanction cumulation. The ministry's proposed 2026/rectifying bills are not used as enacted law. The preparation result must stop at any unresolved item that changes it. The 2026 source gap blocks current-year approval or publication. Independent review accepted the historical source baseline only; no accountant has attested to this draft.

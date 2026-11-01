@@ -1,6 +1,6 @@
 # ml-solidarity-contribution: figure and rule ledger
 
-Tier 2 historical source-baseline draft; 2026 application unverified; independent review pending. Read date is the actual writer reading, 2026-11-01. SGG gazette text wins over the DGI announcement. Ordonnance means 2025-007/PT-RM of 7 February 2025, ratified by Loi 2025-022 of 12 June 2025. Full PDFs/text remain private in the sibling `sources/` directory outside Git. Quotes below are short original-language fragments; apostrophes/linewraps are normalised.
+Tier 2 historical source-baseline draft; 2026 application unverified; independent review accepted the historical baseline only. Read date is the actual writer reading, 2026-11-01. SGG gazette text wins over the DGI announcement. Ordonnance means 2025-007/PT-RM of 7 February 2025, ratified by Loi 2025-022 of 12 June 2025. Full PDFs/text remain private in the sibling `sources/` directory outside Git. Quotes below are short original-language fragments; apostrophes/linewraps are normalised.
 
 | ID | Figure/rule and conditions | Guide section | Act/article | Official URL | Short exact French quote | Read date |
 |---|---|---|---|---|---|---|
