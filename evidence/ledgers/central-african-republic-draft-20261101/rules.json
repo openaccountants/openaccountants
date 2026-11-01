@@ -269,11 +269,14 @@
   },
   "T01": {
     "section": "Who this applies to",
-    "text": "Controlled foreign-enterprise transfers of profit through purchase/sale prices, thin capitalisation or other means are added back under article 131. Direct majority ownership, actual decision power and common control count. A privileged-tax/non-cooperative recipient removes the dependence condition.",
+    "text": "Controlled foreign-enterprise transfers of profit through purchase/sale prices, thin capitalisation or other means are added back under article 131. Majority capital ownership directly or through an intermediary, actual decision power and common control count. A privileged-tax/non-cooperative recipient removes the dependence condition.",
     "act_article": "CGI art. 131",
     "quote": "soit par sous-capitalisation, soit par tout autre moyen",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "directement ou par personne interposée"
+    ]
   },
   "T02": {
     "section": "Rates, bands and thresholds",
@@ -631,11 +634,14 @@
   },
   "W04": {
     "section": "Deadlines and filing",
-    "text": "On business cession/cessation, retained tax is remitted within ten days of the event under article 112. Foreign-paid CAR-resident salary recipients have the article 111 personal instalment obligation; foreign payment does not remove payroll-income tax.",
+    "text": "On business cession/cessation, tax retained or tax due is paid within ten days of the event under article 112. Foreign-paid CAR-resident salary recipients have the article 111 personal instalment obligation; foreign payment does not remove payroll-income tax.",
     "act_article": "CGI arts. 111–112",
     "quote": "dans les dix jours de l’évènement.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "les retenues effectuées ou l’impôt dû"
+    ]
   },
   "O01": {
     "section": "Rates, bands and thresholds",
@@ -786,5 +792,15 @@
     "supporting_quotes": [
       "40 % du revenu brut."
     ]
+  },
+  "O08": {
+    "section": "Deadlines and filing",
+    "text": "The signed 2024 Finance Act art.11 creates the LPF annexed to the CGI; only the creation and opening scope were read here, not the complete procedural book.",
+    "act_article": "2024 Finance Act art.11; LPF art.1",
+    "quote": "Il est crée un Livre des Procédures Fiscales annéxé au Code Général des Impôts",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "pdf_pages": "35 (printed34)",
+    "read_scope": "Art.11 and opening LPF art.1, actual scan visually read; complete LPF and current chain not certified."
   }
 }

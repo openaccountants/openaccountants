@@ -1,0 +1,86 @@
+{
+  "candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "reviewed_on": "2026-11-01",
+  "decision": "corrections_required_R1_R2_R3_R4",
+  "rule_records": 81,
+  "examples": 18,
+  "old_topics": 68,
+  "files": [
+    {
+      "file": "REVIEW.md",
+      "bytes": 7005,
+      "sha256": "fcfe42eb35279a530e2fb32db0577082859e3a74ad59d517cbcb3f298498f937"
+    },
+    {
+      "file": "build-review-evidence.py",
+      "bytes": 17901,
+      "sha256": "bda7ee98707c4953d7d3bd6d43cd69f263b0f7899cd91679b48464686407e1f3"
+    },
+    {
+      "file": "cgi-p35.png",
+      "bytes": 319491,
+      "sha256": "ed8508524c9b2e8ebf98270a70d339ff38a28f34c80cb6126d947df68bc714ba"
+    },
+    {
+      "file": "cgi-p51.png",
+      "bytes": 349721,
+      "sha256": "bb4773341bc98e7079fa5cef996256928a9f8d5b5a73626a7bda889a2a5793f0"
+    },
+    {
+      "file": "example-review.json",
+      "bytes": 6799,
+      "sha256": "69c6d51027061d0d443dcd5e55002cb01ebfaa26223b41235237ff52e9cdf0f2"
+    },
+    {
+      "file": "invariants.json",
+      "bytes": 6752,
+      "sha256": "17f683e078aaa03ee86aba0b5fd1e0599ccf94c4a3ccaf759acde268a43ee904"
+    },
+    {
+      "file": "lf2024-p33.png",
+      "bytes": 1895389,
+      "sha256": "450a04d4290beff79be77fb6bc15d9baa60a2db785be22d258a6da9984e9370c"
+    },
+    {
+      "file": "lf2026-p6.png",
+      "bytes": 1528745,
+      "sha256": "4b487b642bfba39bb15cc95665308b6e9c872f30a36a7b5990a2660f5c7cf4b3"
+    },
+    {
+      "file": "ohada-p95.png",
+      "bytes": 178847,
+      "sha256": "e49962576fa6d88b0b37e22f680d453d0900ced53b3fd97addb813dfc6a8b659"
+    },
+    {
+      "file": "old-topic-review.json",
+      "bytes": 19511,
+      "sha256": "84148bea6a923354fd48deb1771fd7cbd3d17dc2b3d1fa2bd42098eaf557ae51"
+    },
+    {
+      "file": "rule-review.json",
+      "bytes": 55049,
+      "sha256": "885f41a171aa500d892d172b1e5107e42b2a876e7ce9713522938b1e5ecefad2"
+    },
+    {
+      "file": "rule-review.md",
+      "bytes": 20252,
+      "sha256": "13eef20d125f47a5919f6e75221042428d371d15c1ae14131c5e019005d1c3bd"
+    },
+    {
+      "file": "source-byte-receipts.json",
+      "bytes": 3406,
+      "sha256": "62601d07a1e2ff72aa1f9963b747b0ddf33c48d5c2c50988acb0c03016c722f2"
+    },
+    {
+      "file": "source-route.md",
+      "bytes": 1618,
+      "sha256": "0a9709b2242f9369a6710f0074938600099d420700405ec3ff12d3a6e1b0f0a8"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 7916,
+      "sha256": "1aeb85a0885d6c9ee8017ca1c3e321cac3dbbc20a485a8f25c282c499244e1d4"
+    }
+  ]
+}

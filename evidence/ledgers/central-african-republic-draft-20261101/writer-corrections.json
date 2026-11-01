@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "status": "R1-R4 repaired; focused independent closure pending",
+  "repairs": [
+    "R1 directly or intermediary majority capital limb",
+    "R2 retained tax OR tax due on cessation",
+    "R3 linked actual2024art11/addedsource row and O08 ledger",
+    "R4 explicit unsupported2006historicalclaim removal disposition"
+  ],
+  "grouped_records_now": 82,
+  "new_source_read": {
+    "file": "../sources/lf2024.pdf",
+    "sha256": "738aafbbc084ace0a25989f0b02fb7a7751bc08128090873026bcf0a2f16f223",
+    "page": "physical35/printed34",
+    "scope": "art11 and opening LPF1; actual scan read, not fullLPF"
+  },
+  "candidate_files": {
+    "skills/central-african-republic/cf-transfer-pricing.md": "aaa980fe2738f846f247ec4f70f5418617ccd173cd3830a0790e78c425ecd504",
+    "skills/central-african-republic/cf-payroll-social.md": "1ac588e65081ec4dfc3c5c3e7e2a4236d5b1f2c5b7ef614edd6b75a5e710fdf5",
+    "skills/central-african-republic/cf-tax-overview.md": "2c16ae0fcf56d3c2299d6c4134b9cff9708f35c8855427c7ec08b2c122428972",
+    "evidence/ledgers/central-african-republic-draft-20261101/rules.json": "664fca594954ab1bf5aeded0b5cf9852e840133f93794bc685a3c2fb66d0c02e",
+    "evidence/ledgers/central-african-republic-draft-20261101/cf-transfer-pricing.md": "f54bbd8c68f87597912549f169f7af796361bec64a2b3662500e1f66602dc17e",
+    "evidence/ledgers/central-african-republic-draft-20261101/cf-payroll-social.md": "a997ddd09f42be9b45087a093874a3ade704f39aed40674a3b3030f7fbab07ba",
+    "evidence/ledgers/central-african-republic-draft-20261101/cf-tax-overview.md": "197baa712ca399e6040a44dfcb273e1f47c57657195eac62153e6f84e1f24ca1",
+    "evidence/ledgers/central-african-republic-draft-20261101/old-topics.md": "ce2ab6662e3f163c930fee618fbe47453491dcc76e098928572c20138364c34c"
+  }
+}

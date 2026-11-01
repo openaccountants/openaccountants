@@ -8,10 +8,10 @@ tax_year: 2026
 tax_year_notes: "2026 research draft; conditional code baseline and named enacted amendments, not full operative coverage"
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 ---
 
-# Central African Republic controlled transfers and foreign deductions v0.1
+# Central African Republic controlled transfers and foreign deductions v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -19,7 +19,7 @@ version: 0.1
 
 ## Who this applies to
 
-Controlled foreign-enterprise transfers of profit through purchase/sale prices, thin capitalisation or other means are added back under article 131. Direct majority ownership, actual decision power and common control count. A privileged-tax/non-cooperative recipient removes the dependence condition. [CGI art. 131](https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf) (ledger T01).
+Controlled foreign-enterprise transfers of profit through purchase/sale prices, thin capitalisation or other means are added back under article 131. Majority capital ownership directly or through an intermediary, actual decision power and common control count. A privileged-tax/non-cooperative recipient removes the dependence condition. [CGI art. 131](https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf) (ledger T01).
 
 ## Rates, bands and thresholds
 

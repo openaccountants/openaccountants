@@ -8,13 +8,13 @@ tax_year: 2026
 tax_year_notes: "2026 research draft; conditional code baseline and named enacted amendments, not full operative coverage"
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Central African Republic tax map and procedure controls v0.1
+# Central African Republic tax map and procedure controls v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -45,7 +45,7 @@ Amended LPF 88 requires response to a written information request within a perio
 
 The administration has 90 days from receipt of a tax complaint to notify its decision; no notification by expiry means deemed acceptance under amended LPF 171. An agent cannot sign a dispute decision concerning an adjustment/tax they originated. Actual complaint admissibility, service and full appeal route require the complete LPF. [2025 Finance Act art. 16 replacing LPF 171](https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf) (ledger O07).
 
-The signed 2024 Finance Act creates a new LPF, and the signed 2025 Act amends it. The source reading here is selective, not a complete 2024 procedural consolidation. Filing portals, current forms/boxes, holiday/electronic-filing exceptions, service dates, objection admissibility and interest calculations must be authenticated for the actual case.
+The signed 2024 Finance Act creates a new LPF. [2024 Finance Act art. 11](https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf) (ledger O08). The signed 2025 Act amends it. The source reading here is selective, not a complete 2024 procedural consolidation. Filing portals, current forms/boxes, holiday/electronic-filing exceptions, service dates, objection admissibility and interest calculations must be authenticated for the actual case.
 
 ## Penalties and interest
 
@@ -103,6 +103,7 @@ expected:
 
 | Source | URL | Read on / scope |
 |---|---|---|
+| Signed 2024 Finance Act, LPF creation | https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf | 2026-11-01; Read art.11 and opening LPF art.1, physical PDF35/printed34; original scan visually checked; not the complete new LPF. |
 | Signed 2025 Finance Act, fiscal amendments | https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf | 2026-11-01; Read fiscal amendment section, especially arts.9–18; old/new text kept distinct; budget schedules not used. |
 
 Not yet confirmed: Complete 2024 LPF and its commencement/supersession clauses; all current procedural amendments and live channels; special/general penalty priority; tax interest calculations and exact appeal admissibility; current year bases outside specifically verified provisions. Former overview rates/deadlines are routed to the relevant Guide, not duplicated as a supposedly complete country snapshot.

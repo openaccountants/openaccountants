@@ -8,13 +8,13 @@ tax_year: 2026
 tax_year_notes: "2026 research draft; conditional code baseline and named enacted amendments, not full operative coverage"
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Central African Republic payroll withholding and social-security holds v0.1
+# Central African Republic payroll withholding and social-security holds v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,7 +38,7 @@ Obtain each worker’s classification, gross pay/benefits and verified exempt it
 
 Each remittance is accompanied by an administration-provided slip in two copies. Employer annual summary of named employee IRPP withholdings goes in before 31 January. Do not confuse it with the employee annual income return. [CGI arts. 113, 119](https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf) (ledger W03).
 
-On business cession/cessation, retained tax is remitted within ten days of the event under article 112. Foreign-paid CAR-resident salary recipients have the article 111 personal instalment obligation; foreign payment does not remove payroll-income tax. [CGI arts. 111–112](https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf) (ledger W04).
+On business cession/cessation, tax retained or tax due is paid within ten days of the event under article 112. Foreign-paid CAR-resident salary recipients have the article 111 personal instalment obligation; foreign payment does not remove payroll-income tax. [CGI arts. 111–112](https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf) (ledger W04).
 
 Obtain the actual administration slip and current remittance instructions. Retain payroll register, employee identifiers, payment and submission acknowledgements. The current tax form/boxes, submission channel, CNSS form and contribution due dates were not opened and stop live filing. For departures, read [cross-border](cf-cross-border.md).
 
