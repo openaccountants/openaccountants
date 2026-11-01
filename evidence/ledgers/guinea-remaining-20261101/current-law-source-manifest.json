@@ -1,0 +1,64 @@
+{
+  "actual_read_date": "2026-11-01",
+  "files": [
+    {
+      "file": "cgi-enacted-2021-itie.pdf",
+      "size": 2814381,
+      "sha256": "30b99dc66d6a421ebff47e84ceb0fa1f765ac3ab3afcac4ec7d4eacf8855d2ae"
+    },
+    {
+      "file": "dgi-precis-fiscal-2026.docx",
+      "size": 815712,
+      "sha256": "dd75e29f97b3f480e79922913c6a4c793b1fd8b7e2e3908bfc85ea2389924f40"
+    },
+    {
+      "file": "lfi2022.pdf",
+      "size": 21633786,
+      "sha256": "083fb9a6da66c8222a6f6431bc801c8f4541384b007c98324dd2b27b1af7053b"
+    },
+    {
+      "file": "lfr2022.pdf",
+      "size": 6020972,
+      "sha256": "c6b9f968966455ddd041a0ffc49646d371fe576b84a2cf67ad4d0635a155ed2c"
+    },
+    {
+      "file": "lfi2023.pdf",
+      "size": 5029098,
+      "sha256": "5fa7c2ce308efae4a6cfa48c558b598a491c900787793ae51b4cc6a676a16239"
+    },
+    {
+      "file": "lfr2023.pdf",
+      "size": 13286945,
+      "sha256": "027b9cd606a5bd78d4b22a9e4b97dafd8dc7f3529098f763a3cbfabb34bf4320"
+    },
+    {
+      "file": "lfi2024.pdf",
+      "size": 15183148,
+      "sha256": "cb6f32277ec4e43db532f3dedfda5d103ac55297c73629e2214c1202b5bcf254"
+    },
+    {
+      "file": "lfr2024.pdf",
+      "size": 9299845,
+      "sha256": "fcccffd60d710c9515456e51acd45a173b714f78ab081cf0e79fe0363df0751d"
+    },
+    {
+      "file": "lfi2025.pdf",
+      "size": 15038168,
+      "sha256": "069171b8eb81c4865549cc62719603dd99b910358747a0dc83714773f3f474cc"
+    },
+    {
+      "file": "lfr2025.pdf",
+      "size": 23626092,
+      "sha256": "76de1bae47d3e6ae6210c4c3e863f2f3adaf1679eedafb3a436df375f06f28f5"
+    }
+  ],
+  "visual_inspection": [
+    "lfr2022-p10",
+    "lfi2024-p10",
+    "lfi2024-p16",
+    "lfi2025-p13",
+    "lfi2025-p20",
+    "lfr2025-p23"
+  ],
+  "note": "Read scopes and unresolved2026 currentness are recorded in current-law-research.md; file acquisition is not whole-document verification."
+}

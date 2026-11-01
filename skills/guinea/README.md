@@ -3,34 +3,52 @@ jurisdiction: GN
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: [gn-income-tax]
+  IT-CORP: [gn-corporate-income-tax]
   VAT: [gn-vat-gst, gn-vat-invoice-control]
+  SC: [gn-payroll-social]
+  PR: [gn-income-tax, gn-payroll-social]
 partial:
-  IT-IND: "Legacy 2025 Guide unchanged; all bands, bases, residence and filing require current enacted-law research."
-  IT-CORP: "Legacy 2025 Guide unchanged; ordinary/mining rates, minimum tax, base, withholding and deadlines unresolved for 2026."
-  VAT: "New 2026 invoice-field control only; legacy rate/threshold/return and cross-border claims are not confirmed current law."
-  SC: "Legacy 2025 CNSS rates, branch splits, ceiling, base and remittance remain unverified for 2026."
-  PR: "Legacy 2025 withholding and remittance remain unverified for 2026."
-  TP: "No current transfer-pricing job; operative pricing and documentation provisions unavailable in this bounded research."
-  XB: "No current cross-border job; residence, non-resident withholding, treaties and relief remain unverified."
+  IT-IND: "Monthly ITS and residence/categorical routing expanded; full other personal categories, pension/foreign/multi-source reconciliation and actual-period source applicability remain unresolved."
+  IT-CORP: "Ordinary IS/IMF, profit bridge, loss limit and credit/payment methods expanded; detailed asset/finance/group/sector relief, complete withholding/foreign methods and actual-period source applicability remain unresolved."
+  VAT: "Ordinary registration, timing, input/trader-cap, monthly filing and credit/refund controls expanded; printed goods-timing defect, special exemptions/adjustments, complete procedures and actual-period source applicability remain unresolved."
+  SC: "Ordinary full-month CNSS method expanded; 15/20-day conflict, parameter instruments, special categories, partial months and multi-employer base/cap allocation remain unresolved."
+  PR: "Monthly salary ITS method expanded; complete annual irregular/multi-source reconciliation, VF/TA base conflict, separate training contribution and full employer payroll-tax methods remain unresolved."
+  TP: "Enacted pricing/documentation provisions and authority explanation located; no complete functional/comparables method, current formats, annual filing or documentation workflow is delivered."
+  XB: "Residence, salary-source, recipient and VAT-liability routing expanded; no complete treaty, PE/branch allocation, foreign-credit, exit or cross-border relief computation is delivered."
 ---
 
-# Guinea: two conditional March-text workpapers, country pack partial
+# Guinea: substantive ordinary methods, country pack partial
 
-Two new tier-2 workpapers read from enacted Law L/2026/010/CNT and its signed promulgation decree on 1 November 2026. Independent source review accepted candidate `8f84f15a2a89e62158c959d05d150dd9deb3090a` only as conditional March-text workpapers. This does not establish operative current-year law: users must confirm the version governing the actual period or invoice, including the October rectification effect, before live use. If unresolved, outputs remain hypothetical March-text analysis. No accountant attestation. Six historical 2025 Guides remain unchanged and do not supply confirmed 2026 values. Keep [issue 461](https://github.com/openaccountants/openaccountants/issues/461) open.
+This country batch expands the six historical Guides and the property workpaper. All eight files now identify 2026 source-version scope. **That does not establish comprehensive coverage or operative law for every November transaction.** Establish the applicable source versions before live use. October 2026 rectifying-law promulgation, final wording and effect remain unretrieved; a parliamentary vote or an absent online document does not settle them. No accountant attestation is claimed. Keep [issue #461](https://github.com/openaccountants/openaccountants/issues/461) open.
 
-| Job | Guide | Actual scope |
+| Job | Guide | Delivered method and limits |
 |---|---|---|
-| CFU property-rate workpaper | [Property tax](gn-property-tax.md) | Replaced CGI265 rate/base pairs only; liability, valuation, exemptions and filing unresolved |
-| VAT invoice control | [Invoice control](gn-vat-invoice-control.md) | Replaced CGI383 VI fields and arithmetic control only; underlying VAT treatment and filing unresolved |
+| Intake and combined workpapers | [Overview/router](gn-tax-overview.md) | Domain routing, source/period controls, cash reconciliation; rates stay in their owning Guides |
+| Individual salary tax | [Individual income](gn-income-tax.md) | Residence/source tests, monthly ITS, base/exemptions/deductions, local/foreign payer and annual-statement controls; other personal categories and full reconciliation remain partial |
+| Company profit tax | [Corporate](gn-corporate-income-tax.md) | IS/TPU scope, ordinary profit bridge/loss limit, current IMF, instalments and distinct credit buckets; special deductions/reliefs and foreign/sector jobs remain partial |
+| VAT | [VAT method](gn-vat-gst.md) | Franchise/option/key, rate/territory boundaries, service timing, input evidence/exclusions and reseller cap, returns and credit/refund controls; special schemes and full adjustment/procedure gaps remain |
+| Invoice fields | [Invoice control](gn-vat-invoice-control.md) | Prior sixteen-field conditional March-text method retained; v1.2 only corrects version and stale pack-scope sentence |
+| Payroll/social | [CNSS](gn-payroll-social.md) | Ordinary full-month contribution base/shares, registration, declarations and payment reconciliation; deadline/instrument and special-worker limits remain |
+| Property/rental | [CFU](gn-property-tax.md) | Ordinary liability/exemptions, occupied-property valuation, annual collection and qualifying rental withholding; original March rates/cases preserved, vacancy/period/relief/procedure limits remain |
+| Formation/reporting | [Formation](gn-company-formation.md) | Entity/capital/APIP fee-route evidence, foreign-branch controls and annual approval/registry deposit; national capital/formality instruments, detailed accounts/audit and other permissions remain partial |
 
-The source contains promulgation decree D/2026/0103/PRG/SGG signed 31 March 2026. The period before the replacements and the final promulgated status/effect of the October 2026 rectifying bill have not been established. Parliamentary adoption/news and a project document do not substitute for enacted amendments.
+## Source hierarchy and actual failures
 
-The Ministry's CGI library returned 403 through direct fetch and an ordinary Brave visit. The DGI 2021 PDF is identified as a project; no old tax rate is taken from it as enacted law. The new jobs use complete replacement provisions in the actual official 2026 law, not assumptions from the old Guides. No claim of a complete consolidated CGI follows.
+The earlier blanket enacted-CGI access gap is materially reduced. A DGI edition of the enacted CGI is available from [ITIE Guinea](https://itie-guinee.org/wp-content/uploads/2022/01/NOUVEAU-CODE-GENERAL-DES-IMPOTS.pdf), distinct from the previously identified project PDF. The official 2022-2025 finance-law amendments and the [DGI précis, version 10 April 2026](https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx) were obtained and read for the stated portions. The précis is administrative interpretation, not a consolidated enacted Code. Statutes control when its examples or procedural text conflict. The [source-chain record](../../evidence/ledgers/guinea-remaining-20261101/current-law-research.md) names exact read scope, scans, hashes, acquisition failures and unresolved October checks.
 
-[Legacy-topic destination map](../../evidence/ledgers/gn-old-topic-destinations.md) preserves every old topic. New-job ledgers sit beside that map; full captures, OCR and rendered pages remain privately outside Git.
+The available CGI visibly truncates ordinary-goods exigibility in article 366 III 2. CNSS's decree gives a twenty-day window while current agency pages give fifteen days. Guinea-specific capital/formality instruments were not obtained. [VF's enacted base, CGI 201](https://itie-guinee.org/wp-content/uploads/2022/01/NOUVEAU-CODE-GENERAL-DES-IMPOTS.pdf) refers to family-benefit contributions while [DGI guidance, §3.2.3.1](https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx) describes a broader social-contribution/ITS base. Those failures/conflicts remain explicit; successful HTTP access, a 2026 label, examples or green checks do not remove them.
 
-Historical Guides awaiting research: [individual](gn-income-tax.md), [corporate](gn-corporate-income-tax.md), [VAT](gn-vat-gst.md), [payroll/social](gn-payroll-social.md), [formation](gn-company-formation.md), [overview](gn-tax-overview.md). Their platform fields and CTA suffixes are preserved exactly. Company-law capital, fees and procedures also remain historical and unverified for 2026.
+Full official documents, raw OCR, rendered pages and browser captures remain privately in the sibling `sources` cache. Public evidence records reproducible official URLs, original-language extracts, actual read dates and hashes. No generated bundles/index, application or production data were edited.
 
-## Independent source review
+## Scope and continuity evidence
 
-The [initial review](../../evidence/ledgers/guinea-review-20261101/review.md) is preserved with its HOLD. The [focused closure](../../evidence/ledgers/guinea-closure-20261101/closure.md) accepts the repaired version within the conditional scope above. All 25 legal ledger rows and four examples carry forward unchanged; all seven domains remain partial. October promulgation, effect and the wider country gaps remain unresolved.
+The [new ledgers and immutable destination maps](../../evidence/ledgers/guinea-remaining-20261101/) account for all earlier introductions, headings, bullets and table/example items. The historical [65-topic map](../../evidence/ledgers/gn-old-topic-destinations.md), [initial HOLD](../../evidence/ledgers/guinea-review-20261101/review.md) and [conditional closure](../../evidence/ledgers/guinea-closure-20261101/closure.md) stay byte-for-byte intact as history. Their old acceptance is not silently extended to new content.
+
+All platform-owned frontmatter and complete CTA suffixes are preserved. The original property rate rows and both original cases remain exact; the original invoice legal rows and both cases also remain exact. The invoice scope-sentence correction is separately documented. All current Guides stay tier 2, without an accountant's signature.
+
+## Independent review and remaining jobs
+
+[Fresh independent review](../../evidence/ledgers/guinea-remaining-20261101/independent-review/final-review.md) passes the eight bounded Guide files at frozen content candidate `703d8b9b04cb41b8e6f02e195f89f1061ffe7d13`. It checks all 257 new legal/authority/control ledger rows, all 76 historical body items and 141 accepted-workpaper predecessor lines, and all 18 cases. The prior 25 conditional March-text legal rows are a separate carried-review population. Findings on the CNSS penalty population, property governing-version prerequisite and stale invoice pack-scope text were repaired. All 120 skill checks, executable cases, strict metadata/preservation and whitespace checks pass on the actual changed Guides. Review history is additive and all twelve older evidence files remain exact. Acceptance stays bound to the recorded Guide hashes and declared limitations; all seven domains remain partial, the PR stays draft and the country issue stays open.
+
+The `partial:` entries remain binding. Further work includes full non-salary personal categories and annual reconciliation; specialised corporate deductions, gains and relief; VAT mixed-use/capital/bad-debt and special-regime methods; complete employer payroll taxes and training contribution; dedicated TP and treaty/PE/foreign-credit/exit workflows; detailed accounting/audit/reporting; source-version closure and actual filing/sanction procedures. These are unresolved jobs, not a claim that a Guide file makes a domain complete. Niche concessions, individual treaty tables and sector approvals also require their own verified facts and texts.

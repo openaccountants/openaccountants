@@ -1,0 +1,11 @@
+{
+  "candidate": "5be81215d2fc6935e66a32707b4d02e33d4ea516",
+  "original_property_oa_checks_preserved": true,
+  "original_property_oa_count": 2,
+  "new_property_oa_count": 4,
+  "prior_files": {
+    "evidence/ledgers/gn-property-tax.md": true,
+    "evidence/ledgers/gn-vat-invoice-control.md": true,
+    "skills/guinea/gn-vat-invoice-control.md": true
+  }
+}
