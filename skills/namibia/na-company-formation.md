@@ -1,33 +1,106 @@
 ---
 name: na-company-formation
-description: "Source-cited draft: company formation & entity choice for Namibia (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Namibia company formation, 2026: Pty Ltd, Ltd, CC, section 21 and external company, BIPA steps, beneficial ownership and annual duties. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
+version: 0.2
 jurisdiction: NA
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Namibia Company Formation & Entity Choice
+# Namibia Company Formation and Entity Choice v0.2
 
-## Entity types and incorporation
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
-- **Business entity registration overview** — Business entities in Namibia are registered with the Business and Intellectual Property Authority (BIPA) under the Companies Act, 2004 and the Close Corporations Act, 1988. The most common vehicles are the private company (Pty Ltd) and the close corporation (CC).
-- **Company registrar** — Business and Intellectual Property Authority (BIPA)  _(Business and Intellectual Property Authority Act — https://www.bipa.na/business-registration/)_
-- **Private company (Pty) Ltd** — Most common form; minimum 1 director and shareholder; restricts share transfer and limits members to 50 ((approx — confirm))  _(Companies Act, 2004 — https://www.bipa.na/business-registration/companies/private/)_
-- **Public company Ltd** — May offer shares to the public; minimum 7 members; subject to fuller disclosure and audit ((approx — confirm))  _(Companies Act, 2004 — https://namiblii.org/akn/na/act/2004/28/eng@2017-01-16)_
-- **Close corporation (CC)** — Members from 1 to a maximum of 10; members own and manage the CC; no shares  _(Close Corporations Act, 1988 — https://www.bipa.na/business-registration/)_
-- **Section 21 company (not for gain)** — Company without share capital incorporated for non-profit purposes  _(Companies Act, 2004 — https://www.bipa.na/business-registration/)_
-- **External (foreign) company / branch** — Foreign companies carrying on business in Namibia must register a place of business with BIPA  _(Companies Act, 2004 — https://www.bipa.na/business-registration/)_
-- **Minimum share capital — private company** — No statutory minimum share capital prescribed; nominal capital is set in the company documents ((approx — confirm))  _(Companies Act, 2004 — https://namiblii.org/akn/na/act/2004/28/eng@2017-01-16)_
-- **Core incorporation documents (company)** — Memorandum and Articles of Association (certified by a Notary Public), plus prescribed BIPA forms  _(Companies Act, 2004 — https://www.bipa.na/business-registration/companies/private/)_
-- **Registration fees** — Variable — depend on share capital, number of directors and pro-rated annual duties (per BIPA fee schedule)  _(Companies Act, 2004 — https://www.bipa.na/business-registration/application-fees/)_
-- **Typical incorporation timeline** — Several days to a few weeks depending on document preparation and BIPA processing ((approx — confirm))  _(Companies Act, 2004 — https://www.bipa.na/business-registration/)_
-- **Annual compliance — annual duty / return to BIPA** — Companies and CCs must lodge an annual return and pay the prescribed annual duty to BIPA  _(Companies Act, 2004 — https://www.bipa.na/business-registration/)_
-- **Annual compliance — financial statements / audit** — Companies must prepare annual financial statements; private companies and CCs may have reduced audit requirements relative to public companies ((approx — confirm))  _(Companies Act, 2004 — https://namiblii.org/akn/na/act/2004/28/eng@2017-01-16)_
-- **Annual compliance — tax registration** — New entities must register with NamRA for income tax (and VAT if over threshold) and file annual income tax returns  _(Income Tax Act — https://www.namra.org.na/)_
+## Who this applies to
+
+Anyone forming a business in Namibia. Registrar: Business and Intellectual Property Authority (BIPA).
+
+## Rates, bands and thresholds
+
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Private company members | Typically maximum 50 | 2026 | https://www.bipa.na/business-registration/companies/private/ |
+| Directors | Private at least one, public at least two | 2026 | https://www.lac.org.na/laws/annoSTAT/Companies%20Act%2028%20of%202004.pdf (s.216(1)) |
+| Public company memorandum | Signed by not less than seven | 2026 | https://www.lac.org.na/laws/annoSTAT/Companies%20Act%2028%20of%202004.pdf |
+| Close corporation members | 1 to 10 | 2026 | https://www.lac.org.na/laws/annoSTAT/Close%20Corporations%20Act%2026%20of%201988.pdf (s.2(1)) |
+| Beneficial owner test | 25% or more, or control | 2026 | https://www.bipa.na/beneficial-ownership/ |
+| Beneficial ownership update | 7 working days after a change; yearly at financial year end | 2026 | https://www.bipa.na/beneficial-ownership/ |
+| Fees | Set on the BIPA schedule, effective 1 January 2020 | 2020 | https://www.bipa.na/business-registration/application-fees/ |
+
+## The base
+
+Other forms: section 21 company not for gain, and external company for a foreign company in Namibia (Companies Act 28 of 2004). CCs have members, not shares, and an accounting officer.
+
+## Deadlines and filing
+
+Private or public company ([BIPA](https://www.bipa.na/business-registration/companies/private/)): 1. Reserve the name. 2. On approval, complete the memorandum and articles booklet, in triplicate (one original, two notarised). 3. Add loose forms: notice of addresses, list of directors, auditors and public officers, certified copies of directors' IDs, name approval, beneficial ownership forms. 4. Obtain the certificate of incorporation and certificate to commence business.
+
+CC ([BIPA](https://www.bipa.na/business-registration/close-corporation/)): 1. Reserve the name. 2. Submit the founding statement in triplicate with name approval, accounting officer's consent, certified IDs, and beneficial ownership forms. Foreign passports are notarised or apostilled.
+
+After that: annual return CM23 (company) or CC7 annual duty (CC) ([BIPA](https://www.bipa.na/annual-returns/)). If no BO change, a BO2 form may serve. Register with NamRA (https://www.namra.org.na/documents/cms/uploaded/information-brochure--how-to-register-on-itas-ce02d8af03.pdf), for VAT if over the [threshold](na-vat-gst.md), and SSC if employing. Companies appoint a public officer and auditor (Companies Act s.278).
+
+## Penalties and interest
+
+BIPA refuses new applications for entities without a complete BO declaration ([BIPA](https://www.bipa.na/beneficial-ownership/)).
+
+## Cross-border points
+
+Foreign company: register an external company, or incorporate. Foreign owners supply notarised or apostilled ID.
+
+## Two worked examples that recompute
+
+Example 1. Pty profit N$500,000 at 30% gives N$150,000.
+
+```oa-check
+name: Company
+inputs:
+  p: 500000
+steps:
+  - tax: p * 0.30
+expected:
+  tax: 150000.00
+```
+
+Example 2. A decision: sole trader or company at N$500,000. Personally N$59,000 + 28% of N$150,000 = N$101,000, N$49,000 less than the company before any salary or dividend effects.
+
+```oa-check
+name: Sole v company
+inputs:
+  p: 500000
+steps:
+  - s: 59000 + (p - 350000) * 0.28
+  - d: p * 0.30 - s
+expected:
+  d: 49000.00
+```
+
+## Ask the client first
+
+1. Owners, and are any foreign?
+2. Need for outside investors?
+3. Expected profit?
+4. Not for gain?
+5. Existing foreign company?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| BIPA private companies (read: whole page) | https://www.bipa.na/business-registration/companies/private/ | 2026-11-01 |
+| BIPA close corporation (read: whole page) | https://www.bipa.na/business-registration/close-corporation/ | 2026-11-01 |
+| BIPA beneficial ownership (read: part) | https://www.bipa.na/beneficial-ownership/ | 2026-11-01 |
+| BIPA annual returns (read: list) | https://www.bipa.na/annual-returns/ | 2026-11-01 |
+| Companies Act 28 of 2004 (read: targeted) | https://www.lac.org.na/laws/annoSTAT/Companies%20Act%2028%20of%202004.pdf | 2026-11-01 |
+| Close Corporations Act (read: s.2) | https://www.lac.org.na/laws/annoSTAT/Close%20Corporations%20Act%2026%20of%201988.pdf | 2026-11-01 |
+
+Not yet confirmed: No minimum share capital; audit relief for private companies and CCs; typical timeline of days to weeks (old skill, not on pages read); annual duty amount and due date; fee amounts.
 
 <!-- openaccountants-cta-block -->
 
