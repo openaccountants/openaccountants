@@ -1,29 +1,49 @@
 ---
+version: 0.2
 name: sn-tax-overview
-description: "Source-cited draft: tax overview for Senegal (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Tax overview for Senegal, tax year 2026: main rates and deadlines from the CGI and DGID."
 jurisdiction: SN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Senegal Tax Overview
+# Senegal tax overview
 
 ## Senegal tax system at a glance
 
-- **Tax system overview** — Senegal taxes income under the Code Général des Impôts (CGI), administered by the Direction Générale des Impôts et des Domaines (DGID). The tax year is the calendar year and the currency is the West African CFA franc (XOF / FCFA).  _(Code Général des Impôts (CGI))_
-- **Tax year** — Calendar year (1 January to 31 December)  _(Code Général des Impôts (CGI) — https://taxsummaries.pwc.com/senegal/individual/tax-administration)_
-- **Currency** — West African CFA franc (XOF / FCFA)  _(Code Général des Impôts (CGI))_
-- **Tax authority** — Direction Générale des Impôts et des Domaines (DGID)  _(Code Général des Impôts (CGI) — https://www.impotsetdomaines.gouv.sn/)_
-- **Residence basis of taxation** — Residents are taxed on worldwide income; non-residents on Senegal-source income  _(Code Général des Impôts (CGI) — https://taxsummaries.pwc.com/senegal/individual/residence)_
-- **Top personal income tax (IRPP) rate** — 43% %  _(Code Général des Impôts (CGI) — IRPP barème — https://taxsummaries.pwc.com/senegal/individual/taxes-on-personal-income)_
-- **Standard corporate income tax rate** — 30% percent  _(Code Général des Impôts (CGI) — Impôt sur les sociétés — https://taxsummaries.pwc.com/senegal/corporate/taxes-on-corporate-income)_
-- **Does Senegal levy VAT (TVA)?** — Yes — standard TVA rate of 18% %  _(Code Général des Impôts (CGI) — Taxe sur la valeur ajoutée — https://taxsummaries.pwc.com/senegal/corporate/other-taxes)_
-- **Annual personal income tax return deadline** — Before 1 May of the year following the income year  _(Code Général des Impôts (CGI) — https://taxsummaries.pwc.com/senegal/individual/tax-administration)_
-- **Annual corporate income tax return deadline** — 30 April of the year following the financial year  _(Code Général des Impôts (CGI) — https://taxsummaries.pwc.com/senegal/corporate/tax-administration)_
+The CGI is administered by the DGID. The tax year is the calendar year, in XOF. Loi n. 2025-19 for 2026 does not change the rates below.
+
+| Item | Figure | Source |
+|---|---|---|
+| Top income tax rate | 43% above 50,000,000 (art. 173) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
+| Company tax | 30% (art. 36) | same |
+| VAT | 18%; 10% approved tourist lodging (art. 369) | same |
+| IMF | 0.5%, cap 5,000,000 (art. 40) | same |
+| CFCE | 3% | https://www.dgid.sn/loi-reglement |
+| CGU | 5% services; 2% traders | same |
+| Money transfer tax | 0.5%, cap 2,000 (Loi 2025-17) | same |
+| Individual return | Before 1 May (art. 60) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
+| Company return | 30 April (art. 30) | same |
+
+Residents are taxed on worldwide income, others on Senegal-source income (art. 48). Details: [income tax](senegal-income-tax.md), [company tax](sn-corporate-income-tax.md), [VAT](senegal-vat.md).
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Code general des impots, edition January 2025 (DGID): articles cited in this skill read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
+| DGID, Lois et reglements: rates table and recent measures (Loi 2025-17) read | https://www.dgid.sn/loi-reglement | 2026-11-01 |
+| Loi n. 2025-19, finance law for 2026 (scan, read by OCR, all 64 pages searched): no CGI amendment found; art. 19 adds a cashew export duty | https://budget.sec.gouv.sn/documents/public_download/69556841-a9d4-4658-8c1e-fe230a2a028a/telechargement | 2026-11-01 |
+| DGID calendar of annual filings: full table read | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-01 |
+| DGID SENTAX user guide v1.1, 2026: contents and steps read | https://www.dgid.sn/storage/uploads/guide-utilisateur-espace-connecte-1790609363.pdf | 2026-11-01 |
+| DGID communique: SENTAX for CME1, CME2 and CPR from 1 October 2026: full text read | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-01 |
+| DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
+
+Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected.
 
 <!-- openaccountants-cta-block -->
 

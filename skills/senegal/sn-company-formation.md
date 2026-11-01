@@ -1,30 +1,44 @@
 ---
+version: 0.2
 name: sn-company-formation
-description: "Source-cited draft: company formation & entity choice for Senegal (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation for Senegal, tax year 2026: tax registration steps from DGID; company law items listed as unconfirmed."
 jurisdiction: SN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Senegal Company Formation & Entity Choice
+# Senegal company formation
 
 ## Entity types, capital and incorporation
 
-- **Governing company law** — OHADA Uniform Act on Commercial Companies and Economic Interest Groups (AUSCGIE)  _(OHADA Uniform Act on Commercial Companies (AUSCGIE) — https://www.legal500.com/doing-business-in/senegal/)_
-- **Common entity types** — SARL (Société à Responsabilité Limitée), SA (Société Anonyme), SAS (Société par Actions Simplifiée)  _(OHADA Uniform Act on Commercial Companies (AUSCGIE) — https://www.legal500.com/doing-business-in/senegal/)_
-- **SARL minimum share capital** — No statutory minimum under OHADA; commonly set around XOF 100,000 in practice XOF ((approx — confirm Senegal practice)) XOF  _(OHADA Uniform Act on Commercial Companies (AUSCGIE) — https://www.kafuipartners.com/company-formation-senegal)_
-- **SA minimum share capital** — XOF 10,000,000, with at least one quarter paid up at incorporation XOF XOF  _(OHADA Uniform Act on Commercial Companies (AUSCGIE) — https://www.kafuipartners.com/company-formation-senegal)_
-- **Incorporation channel** — Registration via the APIX one-stop shop (guichet unique), issuing RCCM (commercial registry) and NINEA (tax ID)  _(APIX one-stop shop (guichet unique) — https://www.legal500.com/doing-business-in/senegal/)_
-- **Core incorporation steps** — 1) Reserve trade name with RCCM/CFE; 2) Draft statutes (notarized where required); 3) Deposit capital and obtain bank certificate where required; 4) File at APIX for RCCM + NINEA and declare existence to the tax office  _(OHADA Uniform Act on Commercial Companies (AUSCGIE) — https://www.legal500.com/doing-business-in/senegal/)_
-- **Incorporation timeline** — Around 2 days via the APIX one-stop shop ((approx — confirm current processing time))  _(APIX one-stop shop (guichet unique) — https://www.legal500.com/doing-business-in/senegal/)_
-- **Tax identification** — NINEA (Numéro d'Identification Nationale des Entreprises et Associations) issued at registration  _(Direction Générale des Impôts et des Domaines (DGID) — https://www.legal500.com/doing-business-in/senegal/)_
-- **Mandatory registrations at formation** — Employer registration with CSS (social security) and IPRES (pension) alongside RCCM and NINEA  _(Code de la Sécurité Sociale / IPRES — https://www.legal500.com/doing-business-in/senegal/)_
-- **Annual accounts (SYSCOHADA)** — Prepare annual financial statements under the SYSCOHADA chart of accounts and file with the CIT return by 30 April  _(OHADA / SYSCOHADA accounting framework — https://taxsummaries.pwc.com/senegal/corporate/tax-administration)_
-- **Core annual tax compliance** — Annual CIT return and financial statements by 30 April; monthly VAT and payroll filings; CIT installments (15 Feb, 30 Apr) and balance (15 Jun)  _(Code Général des Impôts (CGI) — https://taxsummaries.pwc.com/senegal/corporate/tax-administration)_
+| Item | Rule | Source |
+|---|---|---|
+| NINEA | Free apart from the fiscal stamp; about 3 days | https://www.dgid.sn/fiches/ninea |
+| Declaration of existence | Within 20 days of starting (CGI art. 633) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
+| Regime choice | Real, CGU or CGF by turnover | https://www.dgid.sn/particuliers |
+| Annual accounts | With the return by 30 April (arts. 30, 31) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
+| Monthly filings | VAT and withholding by the 15th (arts. 185, 363) | same |
+
+Steps: 1. Get the NINEA. 2. File the declaration of existence. 3. Choose the regime. Formalise online at https://dgid-digitale.dgid.sn.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Code general des impots, edition January 2025 (DGID): articles cited in this skill read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
+| DGID, Lois et reglements: rates table and recent measures (Loi 2025-17) read | https://www.dgid.sn/loi-reglement | 2026-11-01 |
+| Loi n. 2025-19, finance law for 2026 (scan, read by OCR, all 64 pages searched): no CGI amendment found; art. 19 adds a cashew export duty | https://budget.sec.gouv.sn/documents/public_download/69556841-a9d4-4658-8c1e-fe230a2a028a/telechargement | 2026-11-01 |
+| DGID calendar of annual filings: full table read | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-01 |
+| DGID SENTAX user guide v1.1, 2026: contents and steps read | https://www.dgid.sn/storage/uploads/guide-utilisateur-espace-connecte-1790609363.pdf | 2026-11-01 |
+| DGID communique: SENTAX for CME1, CME2 and CPR from 1 October 2026: full text read | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-01 |
+| DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
+| DGID NINEA sheet: page read | https://www.dgid.sn/fiches/ninea | 2026-11-01 |
+
+Not yet confirmed: OHADA forms (SARL, SA, SAS), SA capital of XOF 10,000,000 and SARL capital, APIX one-stop steps and timing, and CSS and IPRES employer registration. The old citations were secondary, apix.sn and the social bodies did not open, and the OHADA Uniform Act was not read.
 
 <!-- openaccountants-cta-block -->
 
