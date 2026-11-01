@@ -1,0 +1,484 @@
+{
+  "candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "count": 68,
+  "exact_extraction_check": "See invariants.json:62bullets+6openingprose records exactly match all pinnedoldblobs. All manualdestinations checked.",
+  "rows": [
+    {
+      "item": 1,
+      "slug": "cf-company-formation",
+      "label": "Common entity \u2014 limited liability company",
+      "checked_destination": "F01 preserves SARL form. Unsupported prevalence wording was descriptive boilerplate.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 2,
+      "slug": "cf-company-formation",
+      "label": "Common entity \u2014 public limited company",
+      "checked_destination": "F01 preserves SA form. Unsupported prevalence wording was descriptive boilerplate.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 3,
+      "slug": "cf-company-formation",
+      "label": "Minimum share capital \u2014 SARL",
+      "checked_destination": "F02/F03 correct default capital and cash timing; national override remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 4,
+      "slug": "cf-company-formation",
+      "label": "Minimum share capital \u2014 SA",
+      "checked_destination": "F04 preserves SA capital, quarter payment and three-year remainder.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 5,
+      "slug": "cf-company-formation",
+      "label": "Company registry",
+      "checked_destination": "F06/F08 preserve RCCM and GUFE route; current national registry channel remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 6,
+      "slug": "cf-company-formation",
+      "label": "Tax identification number",
+      "checked_destination": "F08 preserves NIF output; V08 owns statutory NIU status; current forms remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 7,
+      "slug": "cf-company-formation",
+      "label": "Core incorporation steps",
+      "checked_destination": "F05/F06/F08 correct deposit and registration; notarisation exceptions and CNSS process remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 8,
+      "slug": "cf-company-formation",
+      "label": "Typical incorporation timeline",
+      "checked_destination": "F08 distinguishes a service statement; the gap expressly rejects a universal several-weeks statutory timeline.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 9,
+      "slug": "cf-company-formation",
+      "label": "Core annual compliance",
+      "checked_destination": "F07 annual statements; C08-C13 DSF; V09 monthly VAT; W01-W04 payroll. CNSS and current SYSCOHADA package remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 10,
+      "slug": "cf-company-formation",
+      "label": "Accounting framework",
+      "checked_destination": "F07 reporting; formation Sources hold the current SYSCOHADA package.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 11,
+      "slug": "cf-company-formation",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "F01-F08 preserve company and RCCM substance; unsupported prevalence wording was descriptive boilerplate.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 12,
+      "slug": "cf-corporate-income-tax",
+      "label": "Standard corporate income tax rate",
+      "checked_destination": "C03 ordinary 30%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 13,
+      "slug": "cf-corporate-income-tax",
+      "label": "Reduced rate \u2014 agricultural activities",
+      "checked_destination": "C03 agricultural 20%, subject to entity classification.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 14,
+      "slug": "cf-corporate-income-tax",
+      "label": "Minimum lump-sum tax (IMF) \u2014 general businesses",
+      "checked_destination": "C04 preserves 1.85% and adds floor/base conditions.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 15,
+      "slug": "cf-corporate-income-tax",
+      "label": "Minimum lump-sum tax (IMF) \u2014 agriculture",
+      "checked_destination": "C04 corrects 3% to 0.3%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 16,
+      "slug": "cf-corporate-income-tax",
+      "label": "Tax base",
+      "checked_destination": "C02 territorial baseline plus X06 foreign branch; full current and non-resident scope remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 17,
+      "slug": "cf-corporate-income-tax",
+      "label": "Withholding tax on dividends",
+      "checked_destination": "X07 gross distributed capital income at 15%; treaty/source classification remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 18,
+      "slug": "cf-corporate-income-tax",
+      "label": "Withholding tax on royalties",
+      "checked_destination": "Corporate/cross-border Not yet confirmed lines withhold independent 20% royalty claim.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 19,
+      "slug": "cf-corporate-income-tax",
+      "label": "Withholding tax on non-resident service fees",
+      "checked_destination": "X07 foreign services at 15%, subject to treaties; source/base classification remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 20,
+      "slug": "cf-corporate-income-tax",
+      "label": "Withholding tax on interest",
+      "checked_destination": "X07 and cross-border gap hold interest classification; no blanket exemption is substituted.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 21,
+      "slug": "cf-corporate-income-tax",
+      "label": "Annual return filing & payment deadline",
+      "checked_destination": "C08 preserves 30 April payment and return before 1 May; C09/C10 instalments.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 22,
+      "slug": "cf-corporate-income-tax",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "C01-C04 preserve profit/minimum comparison; currentness remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 23,
+      "slug": "cf-income-tax",
+      "label": "IRPP band 1 (tax-free threshold)",
+      "checked_destination": "I03 preserves working 378,000 exemption with defective-print caveat.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 24,
+      "slug": "cf-income-tax",
+      "label": "IRPP band 2",
+      "checked_destination": "I03 marginal 8% on 378,001-1,680,000.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 25,
+      "slug": "cf-income-tax",
+      "label": "IRPP band 3",
+      "checked_destination": "I04 marginal 15% on 1,680,001-3,360,000.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 26,
+      "slug": "cf-income-tax",
+      "label": "IRPP band 4",
+      "checked_destination": "I04 marginal 28% on 3,360,001-5,040,000.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 27,
+      "slug": "cf-income-tax",
+      "label": "IRPP band 5 (top rate)",
+      "checked_destination": "I04 marginal 40% above 5,040,000.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 28,
+      "slug": "cf-income-tax",
+      "label": "Tax-free threshold",
+      "checked_destination": "I03 preserves duplicate threshold once.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 29,
+      "slug": "cf-income-tax",
+      "label": "Deduction per dependent",
+      "checked_destination": "Individual Not yet confirmed line holds 50,000 dependent deduction and three-dependent ceiling.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 30,
+      "slug": "cf-income-tax",
+      "label": "Non-resident individual withholding on CAR-source income",
+      "checked_destination": "Individual gap holds flat non-resident 15%; narrower X07 is not a substitute.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 31,
+      "slug": "cf-income-tax",
+      "label": "Capital gains tax \u2014 residents",
+      "checked_destination": "I11 preserves gains category/base; individual gap holds standalone resident 15%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 32,
+      "slug": "cf-income-tax",
+      "label": "Capital gains tax \u2014 non-residents",
+      "checked_destination": "I11 and individual gap hold non-resident 20%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 33,
+      "slug": "cf-income-tax",
+      "label": "Individual residence test",
+      "checked_destination": "I01 preserves actual dwelling/stay/interests tests, treaties and additional-person reservation.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 34,
+      "slug": "cf-income-tax",
+      "label": "Annual return filing & payment deadline",
+      "checked_destination": "I09 corrects 31 May to 30 April; I12 owns payment mechanism.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 35,
+      "slug": "cf-income-tax",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "I03-I06 distinguish progressive employee scale from business rates; blanket old sentence corrected.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 36,
+      "slug": "cf-payroll-social",
+      "label": "Social security institution",
+      "checked_destination": "CNSS is named in payroll; contribution law, rates, base and ceiling remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 37,
+      "slug": "cf-payroll-social",
+      "label": "Employer total social security contribution",
+      "checked_destination": "Payroll gap explicitly holds employer 19%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 38,
+      "slug": "cf-payroll-social",
+      "label": "Employer \u2014 old-age / pension branch",
+      "checked_destination": "Payroll gap explicitly holds pension 4%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 39,
+      "slug": "cf-payroll-social",
+      "label": "Employer \u2014 family allowances branch",
+      "checked_destination": "Payroll gap explicitly holds family 11%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 40,
+      "slug": "cf-payroll-social",
+      "label": "Employer \u2014 work-injury branch",
+      "checked_destination": "Payroll gap explicitly holds injury 2%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 41,
+      "slug": "cf-payroll-social",
+      "label": "Employee social security contribution (pension)",
+      "checked_destination": "Payroll gap explicitly holds employee 1.6%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 42,
+      "slug": "cf-payroll-social",
+      "label": "Monthly contribution earnings ceiling",
+      "checked_destination": "Payroll gap explicitly holds 600,000 ceiling.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 43,
+      "slug": "cf-payroll-social",
+      "label": "Apprenticeship / vocational training tax",
+      "checked_destination": "Payroll gap explicitly holds training/apprenticeship around 2%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 44,
+      "slug": "cf-payroll-social",
+      "label": "Payroll income tax withholding (PAYE-equivalent)",
+      "checked_destination": "W01 preserves employee IRPP; I03-I05 own salary scale and base.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 45,
+      "slug": "cf-payroll-social",
+      "label": "Withholding / contribution remittance deadline",
+      "checked_destination": "W02 preserves tax calendar with small-employer exception; universal CNSS 15th remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 46,
+      "slug": "cf-payroll-social",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "W01-W04 preserve IRPP; contribution branches, split and current law remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 47,
+      "slug": "cf-tax-overview",
+      "label": "Standard tax year",
+      "checked_destination": "O01 preserves 1 January-31 December calendar.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 48,
+      "slug": "cf-tax-overview",
+      "label": "Currency",
+      "checked_destination": "O01 uses XAF/FCFA units from budgets without an exchange-rate claim; monetary framework is not restated as verified law.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 49,
+      "slug": "cf-tax-overview",
+      "label": "Tax authority",
+      "checked_destination": "O01 preserves DGID definition in new LPF article 4.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 50,
+      "slug": "cf-tax-overview",
+      "label": "Residence basis of taxation",
+      "checked_destination": "I01/I02 preserve personal residence/worldwide baseline; C02/X06 distinguish companies; non-resident computation remains held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 51,
+      "slug": "cf-tax-overview",
+      "label": "Top personal income tax (IRPP) rate",
+      "checked_destination": "I04 preserves employee 40% top rate, without applying it to all individual income.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 52,
+      "slug": "cf-tax-overview",
+      "label": "Standard corporate income tax rate",
+      "checked_destination": "C03 preserves ordinary company 30%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 53,
+      "slug": "cf-tax-overview",
+      "label": "Value Added Tax (TVA)",
+      "checked_destination": "V01/V02 preserve VAT 19% with scope and special rates; a separate CEMAC derivation claim is not asserted.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 54,
+      "slug": "cf-tax-overview",
+      "label": "Annual personal income tax return deadline",
+      "checked_destination": "I09 corrects 31 May to 30 April.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 55,
+      "slug": "cf-tax-overview",
+      "label": "Annual corporate income tax return deadline",
+      "checked_destination": "C08 preserves company return/payment calendar.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 56,
+      "slug": "cf-tax-overview",
+      "label": "VAT return frequency",
+      "checked_destination": "V09 preserves amended monthly 15th and verifies obsolete quarterly repeal.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 57,
+      "slug": "cf-tax-overview",
+      "label": "Company law framework",
+      "checked_destination": "F01-F07 preserve OHADA company rules; current national overrides remain held.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 58,
+      "slug": "cf-tax-overview",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "O01 and dedicated I/C/V/F links replace unverified snapshot; French-style/member descriptions were contextual boilerplate.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 59,
+      "slug": "cf-vat-gst",
+      "label": "Standard VAT (TVA) rate",
+      "checked_destination": "V02 preserves standard 19%.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 60,
+      "slug": "cf-vat-gst",
+      "label": "Zero rate",
+      "checked_destination": "V02 narrows zero rate to conditional exports and international transport.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 61,
+      "slug": "cf-vat-gst",
+      "label": "Exempt supplies",
+      "checked_destination": "V13 conditions exemptions; V02 owns specific 5% goods; broad food exemption withdrawn.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 62,
+      "slug": "cf-vat-gst",
+      "label": "VAT registration / liability threshold",
+      "checked_destination": "V01 supplies 30m HT threshold, options and liberal-profession exceptions.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 63,
+      "slug": "cf-vat-gst",
+      "label": "VAT return frequency",
+      "checked_destination": "V09 verifies monthly regime.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 64,
+      "slug": "cf-vat-gst",
+      "label": "VAT return / payment deadline",
+      "checked_destination": "V09 verifies 15th following operations month.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 65,
+      "slug": "cf-vat-gst",
+      "label": "Reverse charge on imported services",
+      "checked_destination": "V12 adds place-of-supply, representative and customer-payment conditions; universal recipient self-assessment narrowed.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 66,
+      "slug": "cf-vat-gst",
+      "label": "OHADA / community levy on imports",
+      "checked_destination": "VAT gap explicitly holds old 0.05% OHADA levy.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 67,
+      "slug": "cf-vat-gst",
+      "label": "Import de minimis value",
+      "checked_destination": "VAT gap explicitly holds 200,000 import de minimis; does not substitute income-prepayment relief for VAT exemption.",
+      "outcome": "preserved_corrected_routed_or_explicitly_held"
+    },
+    {
+      "item": 68,
+      "slug": "cf-vat-gst",
+      "label": "Introductory/context paragraph",
+      "checked_destination": "V01/V02/V09 preserve VAT/rate/export/calendar. Correction R4: historical in-force-since-2006 limb has no explicit disposition or hold.",
+      "outcome": "correction"
+    }
+  ]
+}

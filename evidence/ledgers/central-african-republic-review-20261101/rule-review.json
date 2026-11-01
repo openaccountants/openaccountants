@@ -1,0 +1,1304 @@
+{
+  "candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "reviewed_on": "2026-11-01",
+  "rules_checked": 81,
+  "scope": "Baseline text and specifically identified amendments only; full-current-law and execution holds survive. 81 grouped records contain many limbs; 81 is not asserted as count of individual figures.",
+  "rows": [
+    {
+      "id": "I01",
+      "source": "cgi2023",
+      "pdf_pages_read": "5-7",
+      "article": "CGI arts. 3–4",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Dwelling owner/usufructuary/tenant; principal stay only without that dwelling; vital economic/professional interests; treaty and article 4 caveats checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 25,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I02",
+      "source": "cgi2023",
+      "pdf_pages_read": "22-24",
+      "article": "CGI art. 66",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Article 66 combines net categories irrespective of domestic/foreign source, subject to treaties; individual scope preserved.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 38,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I03",
+      "source": "cgi2023",
+      "pdf_pages_read": "13-15,29-31",
+      "article": "CGI arts. 35(17), 86",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "35(17) gives 378,000; visual p30 confirms defective 378.0000, next band 378,001-1,680,000 and 8%; interpretation is expressly held for live filing.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I04",
+      "source": "cgi2023",
+      "pdf_pages_read": "29-31",
+      "article": "CGI art. 86",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "All remaining marginal endpoints 1,680,001/3,360,000/3,360,001/5,040,000 and rates 15/28/40 checked against annual employee table.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I05",
+      "source": "cgi2023",
+      "pdf_pages_read": "14-16,30",
+      "article": "CGI arts. 36, 38–39, 86",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Cash/benefits, 30% professional costs, family allowance and employee retirement/CNSS deductions checked; no employee contribution percentage invented.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 40,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I06",
+      "source": "cgi2023",
+      "pdf_pages_read": "28-30",
+      "article": "CGI art. 81",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Article 81 business classes 30%, agriculture 20%, and minimum comparison checked; employee scale not extended to businesses.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 33,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I07",
+      "source": "cgi2023",
+      "pdf_pages_read": "29-30",
+      "article": "CGI arts. 82–83",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "0.3/1.85%, 300,000/1,850,000 floors; HT turnover plus products/profits; down-to-1000 rounding, regulated commission base, mixed separation and art83 exceptions checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 34,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I08",
+      "source": "cgi2023",
+      "pdf_pages_read": "22-24",
+      "article": "CGI arts. 64–65",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Final-levy exclusion and same-category loss carry to third subsequent year checked; pleasure/vacation property exclusion retained.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 42,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I09",
+      "source": "cgi2023",
+      "pdf_pages_read": "30-32",
+      "article": "CGI arts. 87–88",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Signed category return at residence/designated office by 30 April next fiscal year; acknowledgement and foreign movable-property nature/value/income declaration by same date checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 52,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I10",
+      "source": "cgi2023",
+      "pdf_pages_read": "29-31",
+      "article": "CGI art. 84",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Article84 individual distributed capital-income tax 15% of gross distributions checked; no standalone royalty proposition inferred.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 44,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I11",
+      "source": "cgi2023",
+      "pdf_pages_read": "20-22",
+      "article": "CGI arts. 55–57",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Personal movable/immovable rights and land-rich shares; disposal/market minus acquisition price; undeducted non-rental capital improvements and principal-home exemption checked. Other exemptions remain explicitly incomplete.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 46,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "I12",
+      "source": "cgi2023",
+      "pdf_pages_read": "35-37,57-58",
+      "article": "CGI arts. 115, 119",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Art115 imports IS payment mechanism for non-salaried IRPP; art119 excess is carryforward credit against next instalments, not unconditional cash refund.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-income-tax.md",
+          "line": 54,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "source": "cgi2023",
+      "pdf_pages_read": "37-39",
+      "article": "CGI arts. 121–122",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Entity forms/activity/election checked; base-regime corporate annual turnover <=30m exemption is only from IS, not all taxes.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 25,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "source": "cgi2023",
+      "pdf_pages_read": "39-41,51-52",
+      "article": "CGI arts. 123–126",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Territorial business/operation scope with treaty reservation, net products less expenses and direct business necessity checked. Foreign-branch qualification is correctly routed.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 37,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "source": "cgi2023",
+      "pdf_pages_read": "52-54",
+      "article": "CGI art. 133",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Art133 30% ordinary/20% agriculture; minimum is comparison, not addition.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "source": "cgi2023",
+      "pdf_pages_read": "52-54",
+      "article": "CGI art. 133 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Art133bis 0.3/1.85%, 300,000/1,850,000 floors; tax-exclusive turnover/products/profits including interest/dividends, 1000 rounding, regulated commissions and separated mixed activities checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "source": "cgi2023",
+      "pdf_pages_read": "53-54",
+      "article": "CGI art. 133 bis-1",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Narrow pooled maritime/fluvial transport and fire co-insurance exemption, annual turnover not above3m; not blanket insurance exemption.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 39,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "source": "cgi2023",
+      "pdf_pages_read": "50-52",
+      "article": "CGI art. 130",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Loss becomes next-year charge; unabsorbed amounts successively through third year following loss, not indefinite or carryback.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 41,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "source": "cgi2023",
+      "pdf_pages_read": "51-53",
+      "article": "CGI art. 132",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Calendar 12-month baseline; start in last6months permits next-year first balance but provisional31December result taxed/credited; no filing holiday.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 51,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "source": "cgi2023",
+      "pdf_pages_read": "54-58",
+      "article": "CGI arts. 135, 142",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Four copies before1May; DSF/balance by30April following instalment year, crediting payments checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 53,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "source": "cgi2023",
+      "pdf_pages_read": "57-58",
+      "article": "CGI art. 140",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Normal-real thirds due15Feb/15Jun/15Oct; first provisionally penultimate year and second regularisation checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 55,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "source": "cgi2023",
+      "pdf_pages_read": "57-58",
+      "article": "CGI art. 141",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Simplified-real halves due15Mar/15Sep; first penultimate year and regularisation by15Jun checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 57,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "source": "lf2026",
+      "pdf_pages_read": "4-7",
+      "article": "2026 Finance Act art. 9; CGI 135 bis/bis-1",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Read old/new boundary; new135bis and bis1 both say real regime and four copies; separate supporting schedules retained, overlapping scope is explicitly unresolved.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 33,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "source": "lf2026",
+      "pdf_pages_read": "5-7",
+      "article": "2026 Finance Act art. 9; CGI 135 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Approved annual statements and plausibility/coherence/comparability/internal concordance; no audit, limited review, statutory certification or assurance; taxpayer responsibility checked visuallyp6.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 43,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "source": "lf2026",
+      "pdf_pages_read": "5-7",
+      "article": "2026 Finance Act art. 9; CGI 135 bis/bis-1",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "National-order expert/comptable agree, manager/legal representative incompatibility, ministerial order; separate fiscal-counsel co-certification and taxpayer statutory-auditor signing prohibition checked; reconciliation hold retained.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 59,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "source": "cgi2023",
+      "pdf_pages_read": "40-42",
+      "article": "CGI arts. 126 bis 1–3",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Actual non-excessive employee/manager remuneration conditions checked; broader deduction computation expressly remains held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+          "line": 45,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T01",
+      "source": "cgi2023",
+      "pdf_pages_read": "50-52",
+      "article": "CGI art. 131",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "correction",
+      "independent_check": "Correction R1: foreign/common-control scope, price/thin-capitalisation/other transfers and privileged/non-cooperative dependence waiver correct, but art131(2)(a) also expressly covers majority ownership through an intermediary.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 22,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "source": "cgi2023",
+      "pdf_pages_read": "51-53",
+      "article": "CGI art. 131 bis(1)",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "No taxation or tax amount more than half lower than CAR ordinary hypothetical comparator. Exactly half is not more than half. Amount comparison, not headline rates, checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 28,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "source": "cgi2023",
+      "pdf_pages_read": "51-53",
+      "article": "CGI art. 131 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Privileged-recipient actual/normal/non-excessive proof distinct from non-cooperative outright non-deduction; OECD/UN/CEMAC list plus ministerial supplementation checked; no operative list promoted.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 34,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "source": "cgi2023",
+      "pdf_pages_read": "41-43",
+      "article": "CGI art. 126 bis 11",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "All listed services, head-office/technical/financial/accounting, commissions/honoraria, debt products and IP; outside-Community location; real/non-abnormal/non-excessive;20% before expense; last profitable non-prescribed loss-year result; distribution treatment checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 29,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "source": "cgi2023",
+      "pdf_pages_read": "41-43",
+      "article": "CGI art. 126 bis 12",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Still-valid IP rights and separate distribution treatment for recipient participating in management/capital of outside-Community enterprise checked, without reversing participation direction.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 36,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "source": "cgi2023",
+      "pdf_pages_read": "41-43",
+      "article": "CGI art. 126 bis 13",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Community-enterprise purchases, buying centres/intermediaries,5% of purchases; discounts benefit enterprise and invoice attached to supplier invoice checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-transfer-pricing.md",
+          "line": 30,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X01",
+      "source": "cgi2023",
+      "pdf_pages_read": "25-27",
+      "article": "CGI art. 72",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Residence move taxes relevant income only from domicile/residence establishment; not exemption of all other CAR-source income.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 22,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X02",
+      "source": "cgi2023",
+      "pdf_pages_read": "25-27",
+      "article": "CGI art. 73",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Income available through departure, profits since last taxed exercise and acquired/not received; provisional30days before, completion first2months next year; abandonment of all CAR residence checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 39,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X03",
+      "source": "lfr2025",
+      "pdf_pages_read": "3-5",
+      "article": "2025 supplementary Finance Act art. 9; CGI 393",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New393 excludes CAR nationals by origin from departure-clearance class; temporary/permanent and current tax; employer1month or rupture-notification day; managers under audit special permanent certificate guarantee >=10% annual turnover checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 41,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X04",
+      "source": "lfr2025",
+      "pdf_pages_read": "4-6",
+      "article": "2025 supplementary Finance Act arts. 9–10; CGI 393; LPF 28 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Borrowing/foreign transfer/state contracts prior attestation;3months from signature,1month stayed/moratorium debt; debt not yet due or duly stayed exceptions checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 28,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X05",
+      "source": "lfr2025",
+      "pdf_pages_read": "4-6",
+      "article": "2025 supplementary Finance Act art. 10; LPF 28 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "DGID manual/electronic unique administrative status evidence; approvals, foreign bank transfers, exemption, specified supplier payments and exports; regulatory issue conditions held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 43,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X06",
+      "source": "cgi2023",
+      "pdf_pages_read": "51-53",
+      "article": "CGI art. 131 bis 1",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Treaty-subject foreign branch/agency results attached to CAR parent at seat; comparison method without precise evidence checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 33,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X07",
+      "source": "cgi2023",
+      "pdf_pages_read": "65-68",
+      "article": "CGI art. 166 bis 1",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "166bis1 foreign services15% final levy treaty-subject, separate gross distributed capital-income15%; no independent20% royalty or blanket interest exemption.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 29,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "X08",
+      "source": "cgi2023",
+      "pdf_pages_read": "66-68",
+      "article": "CGI arts. 166 bis 2–5",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "166bis3 remittance by15th following invoicing/retention; invoice separation and credits/conditions read with neighbours.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-cross-border.md",
+          "line": 45,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V01",
+      "source": "lf2024",
+      "pdf_pages_read": "19-21",
+      "article": "2024 Finance Act art. 10 replacing CGI 247",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Habitual/occasional independent economic supply; <30mHT excluded; liberal-profession compulsory treatment; legal-person irrevocable authorised option, other natural persons barred; employees outside independent class.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 25,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "source": "lf2024",
+      "pdf_pages_read": "26-28",
+      "article": "2024 Finance Act art. 10 replacing CGI 257",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "General19%, customs-supported taxable-product exports/international transport0%, enumerated product tariff5%; visualp27 confirms both rates and list anomalies not silently corrected.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "source": "lf2024",
+      "pdf_pages_read": "20-22,25",
+      "article": "2024 Finance Act art. 10 replacing CGI 248",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Goods/self-supplies, services/platforms/commissions, intra-community acquisitions/imports, public orders; aid direct consideration or price supplement condition checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 36,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V04",
+      "source": "lf2024",
+      "pdf_pages_read": "25-27",
+      "article": "2024 Finance Act art. 10 replacing CGI 253–255",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Ordinary consideration plus accessory costs/non-VAT taxes; import customs/excise; real exact invoice discounts/debours excluded; margin limited used goods/travel/listed wholesalers, not general.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 38,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "source": "lf2024",
+      "pdf_pages_read": "27-29",
+      "article": "2024 Finance Act art. 10 replacing CGI 258–259",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Necessary business inputs and registered compliant invoice/import payment/self-supply/withholding evidence; end of2ndyear after chargeability exercise limit checked separately from carryforward.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 40,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V06",
+      "source": "lf2024",
+      "pdf_pages_read": "28-30",
+      "article": "2024 Finance Act art. 10 replacing CGI 260",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Blocked-credit classes and professional tourism/catering/show, enumerated petroleum and vehicle exceptions checked. Cash threshold and detailed classification held; no broad all-vehicle/all-oil rule stated.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 42,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V07",
+      "source": "lf2024",
+      "pdf_pages_read": "29-31",
+      "article": "2024 Finance Act art. 10 replacing CGI 261–261 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Direct attribution before shared prorata; numerator taxable+exports denominator total with exclusions; provisional prior actual/new forecast; definitive+correction DSF30April; below10% no deduction checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "source": "lf2024",
+      "pdf_pages_read": "30-32",
+      "article": "2024 Finance Act art. 10 replacing CGI 265, 268–271",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "NIU registration before status; supplier/address/NIU/date/nature/rate/net/VAT/client identity+number/continuous number;10years after accounting-entry year checked; machine implementation held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 52,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V09",
+      "source": "lf2024+lf2025",
+      "pdf_pages_read": "lf2024:32-34;lf2025:7-9",
+      "article": "2025 Finance Act art. 11; 2024 Act art. 10, CGI 275 bis/bis-1/bis-2",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Old/new275bis read; monthly return+payment15th after operation month real regime;275bis1 expressly abrogated and275bis2 NEANT monthly retained. No stale quarterly revival.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 54,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V10",
+      "source": "lf2024",
+      "pdf_pages_read": "33-35",
+      "article": "2024 Finance Act art. 10 replacing CGI 276",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Unlimited carryforward distinct from initial claim limit; refund for legal persons in enumerated exports/structural reduced-rate or retention/investment>100m/reciprocal missions/cessation cases; current compliance+3 consecutive credit months checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 44,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V11",
+      "source": "lf2024",
+      "pdf_pages_read": "33-35",
+      "article": "2024 Finance Act art. 10 replacing CGI 276",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "DGID request following quarter, form and3 credit returns; exporters EX1/repatriation/transport; no next-month reuse, cancellation upon rejection; full execution held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 56,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V12",
+      "source": "lf2024+lf2025",
+      "pdf_pages_read": "lf2024:22-25;lf2025:7-9",
+      "article": "2024 Finance Act art. 10, CGI 250/250 bis; 2025 Act art. 11",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Use/exploitation, material performance and intangible recipient state; non-taxable Community recipient exception250(5), separate travel/transport/platform rules; solvent accredited resident representative or customer payment;2025 nonresident withholding checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 68,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V13",
+      "source": "lf2025",
+      "pdf_pages_read": "5-8",
+      "article": "2025 Finance Act art. 10 replacing CGI 249",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New249 condition-specific financial/insurance, non-assujetti property, publichealth, authorised-price education, tariff medicine and diplomatic exemptions; reciprocity/quotas/officialuse/DGIDvisa; competitive nonprofit activity taxable.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 46,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "V14",
+      "source": "lf2026",
+      "pdf_pages_read": "6-8",
+      "article": "2026 Finance Act arts. 10–17",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Prior declare/pay then Treasury refund; public-contract/NGO/charter/mining-forest permit classes; diplomatic/UN and State gifts excluded; listed nonrefundable levies and art17 implementation held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-vat-gst.md",
+          "line": 58,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F01",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "76-78,94-96",
+      "article": "AUSCGIE arts. 309, 385",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "SARL limited contributions and1/several members; SA contribution liability and single shareholder confirmed visuallyp95 (line omitted by PDF text extraction).",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 25,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "76-78",
+      "article": "AUSCGIE art. 311",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Art311 default1m, equal shares nominal>=5000, national contrary provision reservation carried beside figure; live CAR override not asserted.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "76-78",
+      "article": "AUSCGIE art. 311-1",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Full subscription/in-kind payment; cash half at subscription, remainder2years fromRCCM under statutes checked, not all cash at formation.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "94-96",
+      "article": "AUSCGIE arts. 387–389",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "SA10m minimum; full subscription before statutes; cash quarter, remainder3years fromRCCM; visualp95 confirms25%.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 33,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "77-79",
+      "article": "AUSCGIE arts. 313–314",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Immediate deposit approved bank/credit/microfinance or notary, receipt/formingcompany account; statutes record and manager availability onRCCM; national notarial-reservation preserved.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 37,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "28-30",
+      "article": "AUSCGIE arts. 97–101",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "97 participation exception toRCCM;98 personality onRCCM unless Act otherwise;101 statutes formation distinct from third-party opposability checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 39,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "source": "ohada-companies-2014",
+      "pdf_pages_read": "35-37",
+      "article": "AUSCGIE arts. 137–140",
+      "primary_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "137/138 accounts+management report;140 SA/SAS/where applicable SARL auditor45days before ordinary meeting, meeting within6months; auditor duty scoped.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 45,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "source": "GUFE",
+      "pdf_pages_read": "web lines62-76,113-163",
+      "article": "GUFE, Procédure de création, steps 1–3",
+      "primary_url": "https://gufe-rca.org/creer-mon-entreprise/procedure-de-creation/",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Independently opened primary GUFE route; entity checklist, ID/criminal/seat/statutes/capital evidence, complete counter dossier/payment,48workinghours service statement and RCCM/NIF/affiliation+connected tax/social/sector steps verified. No statutory guarantee.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-company-formation.md",
+          "line": 47,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "W01",
+      "source": "cgi2023",
+      "pdf_pages_read": "34-36",
+      "article": "CGI art. 110",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Monthly net salary and annual scale reduced to month in110; bases/bands owned by individualGuide.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-payroll-social.md",
+          "line": 25,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "W02",
+      "source": "cgi2023",
+      "pdf_pages_read": "34-36",
+      "article": "CGI arts. 110–112",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "15th of eachmonth baseline; <=5 salaried workers quarterly by15th following quarter; only remittance exception and period-attribution hold retained.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-payroll-social.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "W03",
+      "source": "cgi2023",
+      "pdf_pages_read": "35-37",
+      "article": "CGI arts. 113, 119",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "113 two administration slip copies;119 named employer summary before31January; distinguished employee annual return.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-payroll-social.md",
+          "line": 39,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "W04",
+      "source": "cgi2023",
+      "pdf_pages_read": "34-36",
+      "article": "CGI arts. 111–112",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "correction",
+      "independent_check": "Correction R2: ten-day cession/cessation clock and111 foreign-paid resident salary obligation correct;112 covers retained amounts OR tax due, latter limb missing.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-payroll-social.md",
+          "line": 41,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O01",
+      "source": "lf2025",
+      "pdf_pages_read": "9-11",
+      "article": "2025 Finance Act art. 13 replacing LPF 4",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "NewLPF4 fiscalyear12months1Jan-31Dec/DGID definition; actual budget FCFA label checked, no invented exchange rate.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 31,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O02",
+      "source": "lf2025",
+      "pdf_pages_read": "13-15",
+      "article": "2025 Finance Act art. 18 replacing LPF 243(1)",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New243(1) missed/late registration application/return/annex/registered-publicity act500000; recidivism withinweek1000000; general/special priority not guessed.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O03",
+      "source": "lf2025",
+      "pdf_pages_read": "13-15",
+      "article": "2025 Finance Act art. 18 replacing LPF 243(2),(7)",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New243(2)25%duties, badfaith/fraud50-100%;243(7)25% declaration/paymentmethods and fraud/resistance escalation50-100% according degree checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 33,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O04",
+      "source": "lf2025",
+      "pdf_pages_read": "13-15",
+      "article": "2025 Finance Act art. 18 replacing LPF 243(10)",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New243(10) absent required tax-free exemption invoice visa50000 each detected breach; no combined sanctions assumed.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 34,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O05",
+      "source": "lf2025",
+      "pdf_pages_read": "10-12",
+      "article": "2025 Finance Act art. 14 replacing LPF 71",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New71 written identity/NIU/address/calculation/offence/date/appeal right/conditions/paymentperiod checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 42,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O06",
+      "source": "lf2025",
+      "pdf_pages_read": "11-13",
+      "article": "2025 Finance Act art. 15 replacing LPF 88",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New88 written information request max10days from receipt; missing-support minutes/inadmissibility administrative/judicial dispute phases; not old adjustment-response20days.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 44,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "O07",
+      "source": "lf2025",
+      "pdf_pages_read": "11-13",
+      "article": "2025 Finance Act art. 16 replacing LPF 171",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "New17190days from complaint receipt (old extension dropped); deemed accepted if no notifieddecision; originator barred from signing undernullity; wider admissibility held.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-tax-overview.md",
+          "line": 46,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B01",
+      "source": "cgi2023",
+      "pdf_pages_read": "70-72",
+      "article": "CGI arts. 167–169",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Annual masonry-founded buildings, attached enduring industrial plant, exemptions169 checked; distinct tax from rentIRPP/VAT.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 22,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B02",
+      "source": "cgi2023",
+      "pdf_pages_read": "70-73",
+      "article": "CGI arts. 170–172",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Rentalvalue less40%, annually with1January property status;12% marketvalue/cost minimum and down-to1000base checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 32,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "source": "cgi2023",
+      "pdf_pages_read": "72-74",
+      "article": "CGI art. 177",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "Individual/non-IS15% versus ISlegalperson30%; nearest10tax rounding and30000minimum checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 28,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "source": "cgi2023",
+      "pdf_pages_read": "70-72",
+      "article": "CGI art. 169(12)",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "169(12) first principal residential property ownerand/orfamily; other publicpurpose/ownership/location/non-income exceptions read, no rental-property blanket exemption.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 34,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "source": "cgi2023",
+      "pdf_pages_read": "71-73",
+      "article": "CGI arts. 171, 173",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "171 prefilledF61bis20day approve/correct;173 owner/debtor plus statutory exemption beneficiaries oneF66 perproperty before1Feb; forms not treated fetched.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 42,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "source": "cgi2023",
+      "pdf_pages_read": "71-73",
+      "article": "CGI art. 174",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "174 alltenants incldiplomatic/consular/international, landlord/property/prior-year-rentF67 before15Jan; non-declared timely rent non-deductible checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 44,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "source": "cgi2023",
+      "pdf_pages_read": "72-74",
+      "article": "CGI arts. 175–177 bis",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "175 locationassessment,176owner1Jan withusufruct/emphyteusis/building-on-others-land allocations;177bis31Marchpayment checked.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 46,
+          "rule_text_exact": true
+        }
+      ]
+    },
+    {
+      "id": "B08",
+      "source": "cgi2023",
+      "pdf_pages_read": "7-9",
+      "article": "CGI arts. 14–16",
+      "primary_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+      "outcome": "pass_with_stated_scope",
+      "independent_check": "14-16rent gross less40%charges; tenant-borne ownerexpense additions, landlord-borne tenantexpense reductions, qualifying subsidies/indemnities; separate from buildingtax/finalIRPP.",
+      "placements": [
+        {
+          "path": "skills/central-african-republic/cf-property-tax.md",
+          "line": 36,
+          "rule_text_exact": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "country": "CF",
+  "date": "2026-11-01",
+  "pinned_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "branch": "codex/central-african-republic-tax-2026",
+  "guides": [
+    "cf-income-tax",
+    "cf-corporate-income-tax",
+    "cf-transfer-pricing",
+    "cf-cross-border",
+    "cf-vat-gst",
+    "cf-company-formation",
+    "cf-payroll-social",
+    "cf-tax-overview",
+    "cf-property-tax"
+  ],
+  "rule_records": 81,
+  "examples": 18,
+  "independent_review": "pending",
+  "accountant_attestation": false,
+  "full_coverage": false,
+  "publication": "draft PR only; parent integrates and pushes",
+  "additional_exact_quote_extracts": 68,
+  "old_topic_records": 68,
+  "guides_content_frozen_commit": "6a2537619cb73ba0203140c3a99408a064f0d94d"
+}

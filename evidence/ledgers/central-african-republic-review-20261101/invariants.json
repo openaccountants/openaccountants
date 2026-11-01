@@ -1,0 +1,189 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "old_files": [
+    {
+      "path": "skills/central-african-republic/cf-company-formation.md",
+      "blob": "635604190072cc3d9e6340ee498ba5735c2d8a59",
+      "sha256": "a833b97f5e9a176ebfccf3140b84268b0bbac6dcff105178f87d2283497c2494",
+      "writer_receipt_matches": true,
+      "bullets": 10,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    },
+    {
+      "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+      "blob": "436cbd0e33e0a36159c04bccdd4eba5b1cc46604",
+      "sha256": "7e5192de51f8998879af4079292d46b50460bbd43c8d9ebd82ff8a1891a69320",
+      "writer_receipt_matches": true,
+      "bullets": 10,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    },
+    {
+      "path": "skills/central-african-republic/cf-income-tax.md",
+      "blob": "165e75b091c5a41a35a2481ee0f5360a7a359350",
+      "sha256": "9e46840fdeca8b0ff153ab39cc1c6e02d05f2c81322a32614812e9c0bf383a4f",
+      "writer_receipt_matches": true,
+      "bullets": 12,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    },
+    {
+      "path": "skills/central-african-republic/cf-payroll-social.md",
+      "blob": "3fcd7b5b4e7b205b69925548666a64f0c0bbc3df",
+      "sha256": "e911fcbcc1a8b44c88d449fc8796b2fbe3dc40a89ebb3e7a5c14e169423d3f2f",
+      "writer_receipt_matches": true,
+      "bullets": 10,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    },
+    {
+      "path": "skills/central-african-republic/cf-tax-overview.md",
+      "blob": "8027b001a1f845891967cc369782e45326d70407",
+      "sha256": "637f4908d63527604df465bd80b60c7f68e0ee22edffc99f7e3dbf75dd60f64b",
+      "writer_receipt_matches": true,
+      "bullets": 11,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    },
+    {
+      "path": "skills/central-african-republic/cf-vat-gst.md",
+      "blob": "c86111b8090cf435809463a1cc8bbfd2c0a3ec68",
+      "sha256": "c615cac779996367308bd7eeb1e637e975f76953498fd2346ddbf7ea7e88ed95",
+      "writer_receipt_matches": true,
+      "bullets": 9,
+      "opening_prose": 1,
+      "map_exact_complete": true
+    }
+  ],
+  "old_topic_count": 68,
+  "guides": [
+    {
+      "path": "skills/central-african-republic/cf-company-formation.md",
+      "blob": "1fe3f923283869304df99a464b68252b7f87b0ee",
+      "sha256": "4a311281bb08d429b8a845236114ac067cb782dd5fb9e68d910b22e5960f04ef",
+      "description_words": 99,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+      "blob": "49fb81dfd99060e4136ea7759702ea4205fdd2c9",
+      "sha256": "64fbb90ddc5ea0f5c9f8d7a568c3d35f3bdf8c40537ccc5ec96b72f85498912b",
+      "description_words": 97,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-cross-border.md",
+      "blob": "da4e656119842b61324634245851361c0ff808ff",
+      "sha256": "453eda554830ded8d628b7fee56959b059eaab9749044f6e198652ad7f9c5402",
+      "description_words": 97,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": true,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-income-tax.md",
+      "blob": "ebc16da21ac780f6dd7921ab7e7a625260f7f5be",
+      "sha256": "06b24d73013c9224511e570ea15875071e7d5388a43dd5bbd081ba556f8c52a0",
+      "description_words": 100,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-payroll-social.md",
+      "blob": "9d2697ea08740bf892f199384195e7faae14803d",
+      "sha256": "cdae83478b075dae6baae287acbfa084ce1b73d063d7d8bcbd7f4838747a7924",
+      "description_words": 99,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-property-tax.md",
+      "blob": "34108f4c8a5c05df1957b4593ddc9554f8b4d6ab",
+      "sha256": "725f8f8d7611d9f8e1603b4a3778e3b3775ea69a21788e0e001318cf51ba7588",
+      "description_words": 96,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": true,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-tax-overview.md",
+      "blob": "0438d41be7bbda1e1a5d13ef64475616f30300ad",
+      "sha256": "7e2b50af27f8e62ddd4e72edb0b58ccc5f9b40a56e8f72ae1702f0962f59951c",
+      "description_words": 100,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-transfer-pricing.md",
+      "blob": "203542ce6e27362c0e771e71b9082717236e8783",
+      "sha256": "78157ed8f98a0162e333cad3fae8cc32d1ed9d685c397eb67ef72261b41adb76",
+      "description_words": 97,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": true,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/central-african-republic/cf-vat-gst.md",
+      "blob": "f7204bcbd9c6987075326874eaf5b94aee2858f4",
+      "sha256": "024535d06e28b1a88d04244fc1d0c5a6bcf6218545a23113d0dc1f1ca96ca28f",
+      "description_words": 98,
+      "description_80_150": true,
+      "version": "0.1",
+      "heading_matches": true,
+      "platform_fields_preserved": true,
+      "cta_preserved_or_absent_on_new": true,
+      "new": false,
+      "all_hold_terms": true,
+      "oa_checks": 2
+    }
+  ]
+}

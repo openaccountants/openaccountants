@@ -1,0 +1,806 @@
+{
+  "I01": {
+    "section": "Who this applies to",
+    "text": "Individual fiscal residence is established by a dwelling available as owner, usufructuary or tenant; otherwise principal stay; or the centre of vital economic/professional interests. No automatic day-count test is established here. Treaty allocation and the additional persons in article 4 must be considered.",
+    "act_article": "CGI arts. 3–4",
+    "quote": "possèdent une habitation à leur disposition",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I02": {
+    "section": "The base",
+    "text": "The resident net global income baseline combines category net income without distinguishing domestic from foreign source, subject to treaty provisions. Do not extend this personal rule to companies.",
+    "act_article": "CGI art. 66",
+    "quote": "sans qu’il y ait lieu de distinguer que ces revenus ont leur source",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I03": {
+    "section": "Rates, bands and thresholds",
+    "text": "For employees: annual net taxable income through XAF 378,000 is exempt; the next slice through XAF 1,680,000 is taxed at 8%. Article 86 prints the first endpoint as “378.0000”; article 35(17) and the next slice beginning 378,001 establish the working interpretation. Confirm the defective print before live filing.",
+    "act_article": "CGI arts. 35(17), 86",
+    "quote": "le revenu net imposable inférieur ou égal à 378 000 F CFA.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "378.001-1.680.000",
+      "8%"
+    ]
+  },
+  "I04": {
+    "section": "Rates, bands and thresholds",
+    "text": "Employee annual net-income slice XAF 1,680,001–3,360,000: 15%; XAF 3,360,001–5,040,000: 28%; excess above XAF 5,040,000: 40%. These are marginal bands, not a flat rate on gross pay.",
+    "act_article": "CGI art. 86",
+    "quote": "1.680.001-3.360.000",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "1.680.001-3.360.000",
+      "15%",
+      "3.360.001-5.040.000",
+      "28%",
+      "Superieur à 5.040.000",
+      "40%"
+    ]
+  },
+  "I05": {
+    "section": "The base",
+    "text": "Salary base includes cash and benefits. Article 38 allows a 30% professional-expense deduction from gross pay and benefits; article 39 also deducts family allowances and qualifying pension/social contributions. Establish the actual gross, exempt items and deductions before applying the net-income bands.",
+    "act_article": "CGI arts. 36, 38–39, 86",
+    "quote": "les frais strictement professionnels",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "évalués à 30%."
+    ]
+  },
+  "I06": {
+    "section": "Rates, bands and thresholds",
+    "text": "Non-salaried artisan, industrial, commercial and non-commercial activity: 30% profit rate; agricultural activity: 20%, subject to the separate minimum-tax comparison. Do not apply the employee scale to business profit.",
+    "act_article": "CGI art. 81",
+    "quote": "Ce taux est reduit à 20%",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Le taux de l’impôt est fixé à 30%",
+      "Ce taux est reduit à 20%"
+    ]
+  },
+  "I07": {
+    "section": "Rates, bands and thresholds",
+    "text": "Individual minimum tax: agricultural turnover at 0.3%, with XAF 300,000 minimum; other turnover at 1.85%, with XAF 1,850,000 minimum. Base is turnover excluding tax plus covered products/profits, rounded down to XAF 1,000; regulated commission intermediaries use gross commissions, and mixed activity is separated. Article 83 preserves its specified exemptions.",
+    "act_article": "CGI arts. 82–83",
+    "quote": "a) 0,3% pour les activités agricoles ;",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "0,3% pour les activités agricoles",
+      "1,85% pour les autres activités",
+      "300 000 F CFA pour les activités agricoles",
+      "1 850 000 F CFA pour les autres activités",
+      "arrondie au millier de francs inférieur"
+    ]
+  },
+  "I08": {
+    "section": "The base",
+    "text": "Article 64 removes income subject to final levies before combining categories. A category loss carries against that category through the third following year; losses from pleasure/vacation properties are excluded. No cross-category loss netting is inferred.",
+    "act_article": "CGI arts. 64–65",
+    "quote": "jusqu’à la troisième année qui suit l’année déficitaire.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I09": {
+    "section": "Deadlines and filing",
+    "text": "Annual detailed signed return goes to the competent residence/designated tax office by 30 April following the income year; obtain an acknowledgement. Foreign movable assets require the article 88 detailed nature/value/income statement by the same date.",
+    "act_article": "CGI arts. 87–88",
+    "quote": "au plus tard le 30 Avril",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I10": {
+    "section": "The base",
+    "text": "For a resident individual receiving distributed investment income, article 84 applies 15% to the gross distribution. Source withholding and its remittance are addressed in the cross-border Guide. This does not verify an undifferentiated royalty rate.",
+    "act_article": "CGI art. 84",
+    "quote": "par application de 15%",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I11": {
+    "section": "The base",
+    "text": "Personal capital gains are a separate category under articles 55–57, including movable/immovable rights and real-estate-rich shares. The general base is disposal/market value less acquisition cost; qualifying undeducted capital improvements increase real-estate cost. Enumerated exemptions include the principal residence. This reading does not establish the old separate resident/non-resident CGT rates.",
+    "act_article": "CGI arts. 55–57",
+    "quote": "de la cession de la résidence principale ;",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "I12": {
+    "section": "Deadlines and filing",
+    "text": "Employee withholding and the small-employer calendar are in the payroll Guide. Non-salaried taxpayers follow the corporate instalment/payment mechanism by article 115. Excess paid instalments are carried to following instalments under article 119; this is not an automatic cash-refund promise.",
+    "act_article": "CGI arts. 115, 119",
+    "quote": "l’excédent est considéré comme un crédit",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C01": {
+    "section": "Who this applies to",
+    "text": "Article 121 covers capital companies and other specified profit-making entities, with entity-specific elections/exemptions. The article 122 baseline exempts base-regime companies at turnover no more than XAF 30,000,000 from IS, not from every tax. Do not infer that every legal entity uses the ordinary computation.",
+    "act_article": "CGI arts. 121–122",
+    "quote": "soumises au régime de base ;",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "inferieur ou égal à 30. 000. 000 F CFA"
+    ]
+  },
+  "C02": {
+    "section": "The base",
+    "text": "Ordinary corporate profits arise from enterprises operated or operations carried out in CAR, subject to treaties. Net profit is products less charges; directly necessary business expenses are deductible subject to the detailed limitations. Foreign branch income has a specific rule in the cross-border Guide, so neither a blanket worldwide nor blanket foreign-income exemption is correct.",
+    "act_article": "CGI arts. 123–126",
+    "quote": "les bénéfices réalisés par les entreprises exploitées en République Centrafricaine.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C03": {
+    "section": "Rates, bands and thresholds",
+    "text": "Ordinary company profit rate: 30%; agricultural activities: 20%. Compare against the statutory turnover minimum rather than adding the two taxes.",
+    "act_article": "CGI art. 133",
+    "quote": "il est réduit à 20% pour les activités agricoles.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Le taux de l’impôt est fixé à 30%",
+      "il est réduit à 20%"
+    ]
+  },
+  "C04": {
+    "section": "Rates, bands and thresholds",
+    "text": "Corporate minimum: agricultural activity 0.3% with XAF 300,000 floor; other activity 1.85% with XAF 1,850,000 floor. Turnover/products/profits exclude tax, are rounded down to XAF 1,000, and include interest/dividends. Regulated commission intermediaries use gross commissions; mixed activity is tested separately.",
+    "act_article": "CGI art. 133 bis",
+    "quote": "a)     0,3% pour les activités agricoles",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "0,3% pour les activités agricoles",
+      "1,85% pour les autres activités",
+      "300.000 F CFA pour les activités agricoles",
+      "1.850 000 F CFA pour les autres",
+      "arrondie au millier de francs inférieur"
+    ]
+  },
+  "C05": {
+    "section": "The base",
+    "text": "Article 133 bis-1 exempts the specifically described transport/fire pool co-insurers whose annual turnover is no more than XAF 3,000,000 from the minimum. This narrow exception is not an insurance-sector exemption.",
+    "act_article": "CGI art. 133 bis-1",
+    "quote": "aux opérations de coassurance",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "supérieur à 3.000.000 F CFA"
+    ]
+  },
+  "C06": {
+    "section": "The base",
+    "text": "A tax loss carries forward against following profits through the third year after the loss year. Track the year and use oldest eligible losses with supporting schedules; this does not establish a carryback.",
+    "act_article": "CGI art. 130",
+    "quote": "jusqu’au troisième exercice",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C07": {
+    "section": "Deadlines and filing",
+    "text": "Calendar-year company assessment is based on the preceding twelve-month year. A start within the final six months permits a longer first balance-sheet period, but a provisional 31 December operating account is still taxed and credited against the first final assessment.",
+    "act_article": "CGI art. 132",
+    "quote": "un compte d’exploitation provisoire",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "sur une période de douze mois",
+      "au cours des six mois",
+      "au 31 décembre"
+    ]
+  },
+  "C08": {
+    "section": "Deadlines and filing",
+    "text": "The baseline annual results return is filed in four copies before 1 May of the following year. The balance due after crediting instalments is payable with DSF no later than 30 April. Do not turn the first-year accounting concession into a filing holiday.",
+    "act_article": "CGI arts. 135, 142",
+    "quote": "avant le 1er mai de l’année suivante.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "en quatre exemplaires",
+      "au plus tard le 30 avril"
+    ]
+  },
+  "C09": {
+    "section": "Deadlines and filing",
+    "text": "Normal-real regime instalments: one third of the prior liability each by 15 February, 15 June and 15 October. First instalment uses the penultimate closed year provisionally and is regularised at the second payment.",
+    "act_article": "CGI art. 140",
+    "quote": "les 15 février, 15 juin et 15 octobre.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au 1/3 de l’impôt dû l’année précédente"
+    ]
+  },
+  "C10": {
+    "section": "Deadlines and filing",
+    "text": "Simplified-real instalments: one half of prior liability by 15 March and 15 September; the first provisionally uses the penultimate year and is regularised no later than 15 June. These are separate calendar rules, not universal dates for every company.",
+    "act_article": "CGI art. 141",
+    "quote": "les 15 mars et 15 septembre.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "égal à la moitié",
+      "les 15 mars et 15 septembre",
+      "au plus tard le 15 juin"
+    ]
+  },
+  "C11": {
+    "section": "Rates, bands and thresholds",
+    "text": "The 2026 Finance Act replaces article 135 bis and bis-1 DSF wording: four copies and specified supporting schedules; the two provisions now both use real-regime language. Preserve both texts and obtain the implementing interpretation instead of silently allocating the second paragraph to a different taxpayer group.",
+    "act_article": "2026 Finance Act art. 9; CGI 135 bis/bis-1",
+    "quote": "en quatre (4) exemplaires",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C12": {
+    "section": "The base",
+    "text": "The 2026 visa fiscal checks plausibility, overall consistency, comparability and internal concordance of approved annual statements. It is a distinct engagement, not an audit, limited review, statutory certification or assurance engagement. The taxpayer remains responsible for its information.",
+    "act_article": "2026 Finance Act art. 9; CGI 135 bis",
+    "quote": "ne constituent ni une mission d’audit,",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C13": {
+    "section": "Deadlines and filing",
+    "text": "Visa fiscal is issued by an expert-comptable or comptable agréé registered with the national order, incompatible with being the entity manager/legal representative. Ministerial order must specify procedures, diligence, attestation and transmission. The added bis-1 text also calls for fiscal-counsel co-certification and retains the statutory auditor DSF-signing prohibition; implementation must be reconciled before submission.",
+    "act_article": "2026 Finance Act art. 9; CGI 135 bis/bis-1",
+    "quote": "Cette mission est incompatible",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "read_on": "2026-11-01"
+  },
+  "C14": {
+    "section": "The base",
+    "text": "Staff remuneration is deductible only for actual work and non-excessive amounts; directors and associated managers have additional conditions. Detailed deductions, depreciation, provisions and interest limits require their own article-level reconciliation before a final tax-base computation.",
+    "act_article": "CGI arts. 126 bis 1–3",
+    "quote": "à un travail effectif et ne sont pas exagérées.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "T01": {
+    "section": "Who this applies to",
+    "text": "Controlled foreign-enterprise transfers of profit through purchase/sale prices, thin capitalisation or other means are added back under article 131. Majority capital ownership directly or through an intermediary, actual decision power and common control count. A privileged-tax/non-cooperative recipient removes the dependence condition.",
+    "act_article": "CGI art. 131",
+    "quote": "soit par sous-capitalisation, soit par tout autre moyen",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "directement ou par personne interposée"
+    ]
+  },
+  "T02": {
+    "section": "Rates, bands and thresholds",
+    "text": "A privileged-tax state is one where the enterprise is untaxed or profit/income tax is more than half below the ordinary CAR corporate comparator. Exactly half below does not satisfy this particular limb. Determine comparable tax amounts, not headline rates alone.",
+    "act_article": "CGI art. 131 bis(1)",
+    "quote": "inférieur de plus de la moitié",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "T03": {
+    "section": "The base",
+    "text": "Payments to privileged-tax recipients require proof of real operations and amounts that are neither abnormal nor excessive. Amounts paid/due to non-cooperative-state recipients are non-deductible under the distinct rule. The list is the specified OECD/UN/CEMAC list, potentially supplemented by ministerial decision; no operative list is authenticated here.",
+    "act_article": "CGI art. 131 bis",
+    "quote": "ne sont pas admises en déduction",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "T04": {
+    "section": "Rates, bands and thresholds",
+    "text": "Covered effective services, head-office/technical/financial/accounting fees, commissions, interest and IP charges paid outside the Community require proof of real, normal, non-excessive operations and cannot exceed 20% of taxable profit before those charges. In a loss year the provision uses the last profitable, non-prescribed result. Rejected sums are treated as distributions.",
+    "act_article": "CGI art. 126 bis 11",
+    "quote": "supérieure à 20 % du bénéfice",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "T05": {
+    "section": "The base",
+    "text": "IP royalties also require proof the right remains valid. Article 126 bis 12 contains a separate distribution treatment where royalties benefit an enterprise participating in management/capital of an enterprise outside the Community. Do not treat meeting the fee cap as settling this rule.",
+    "act_article": "CGI art. 126 bis 12",
+    "quote": "encore en cours de validité.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "T06": {
+    "section": "Rates, bands and thresholds",
+    "text": "Purchasing commissions/brokerage for Community enterprises are capped at 5% of purchases by buying centres/intermediaries, with rebates benefiting those enterprises and a regular invoice attached to the supplier invoice. This specific ceiling is not a universal cost-plus margin.",
+    "act_article": "CGI art. 126 bis 13",
+    "quote": "dans la limite de 5% du montant des achats",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "X01": {
+    "section": "Who this applies to",
+    "text": "Personal residence and category income are determined in the individual Guide; treaties can allocate taxing rights. For new CAR domicile/residence, income brought into charge by that move is counted only from establishment of that domicile/residence.",
+    "act_article": "CGI art. 72",
+    "quote": "ne sont comptés que du jour de cet établissement.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "X02": {
+    "section": "Deadlines and filing",
+    "text": "A departing resident is assessed on income disposed of through departure, post-last-assessed business profits and income acquired even if not yet received. Provisional return is due at least 30 days before departure and can be completed during the first two months of the next fiscal year. Abandoning every CAR residence follows the same rule.",
+    "act_article": "CGI art. 73",
+    "quote": "au moins trente jours avant la date de départ",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "les deux premiers mois"
+    ]
+  },
+  "X03": {
+    "section": "Deadlines and filing",
+    "text": "The departing-person clearance rule covers persons other than CAR nationals by origin, including temporary departure and current-year tax. Employer information is due one month before the employee leaves, or by notification of contract rupture. The text includes a bank guarantee of at least 10% annual turnover for permanent-departure certificates of managers of enterprises under audit; do not apply it to every traveller.",
+    "act_article": "2025 supplementary Finance Act art. 9; CGI 393",
+    "quote": "au moins: 10% du chiffre",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un mois avant le départ"
+    ]
+  },
+  "X04": {
+    "section": "Rates, bands and thresholds",
+    "text": "A company borrowing domestically, transferring funds abroad, or entering state contracts must first provide the stated tax-regularity attestation. LPF article 28 bis gives ordinary validity of three months from signature; one month where a tax debt has a granted stay/moratorium. Debt does not always bar issuance: the statutory not-yet-due or duly stayed conditions apply.",
+    "act_article": "2025 supplementary Finance Act arts. 9–10; CGI 393; LPF 28 bis",
+    "quote": "une validité de trois (3) mois",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un (01) mois"
+    ]
+  },
+  "X05": {
+    "section": "Deadlines and filing",
+    "text": "LPF 28 bis attestation is issued by DGID manually or electronically and is the unique administrative tax-status evidence. A valid attestation is required for specified approvals, foreign bank transfers, tax exemption, covered public/large-business supplier payments and exports; implementing issue conditions remain to be read.",
+    "act_article": "2025 supplementary Finance Act art. 10; LPF 28 bis",
+    "quote": "soit manuellement ou par voie électronique.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "X06": {
+    "section": "The base",
+    "text": "Subject to treaties, a foreign branch/agency belonging to a CAR enterprise has its results attached to and taxed at the parent seat. If precise evidence is missing, results are determined by comparison with similar normally operated CAR enterprises. This qualifies the ordinary territorial corporate base.",
+    "act_article": "CGI art. 131 bis 1",
+    "quote": "doivent être rattachés à ceux de la société mère",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "X07": {
+    "section": "Rates, bands and thresholds",
+    "text": "Foreign service remuneration is subject to 15% withholding as a final levy, subject to treaties. Distributed investment income is withheld at 15% of gross distributions under the separate paragraph. The text does not establish the old draft’s independent 20% royalty rate or an exemption for all foreign interest.",
+    "act_article": "CGI art. 166 bis 1",
+    "quote": "S’agissant des rémunérations des prestations de services versées à l’étranger",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "X08": {
+    "section": "Deadlines and filing",
+    "text": "Amounts withheld under the income prepayment mechanism are remitted by the 15th of the month following invoicing/withholding. Keep the invoice and withholding record; treaty relief must be authenticated before reducing a domestic rate.",
+    "act_article": "CGI arts. 166 bis 2–5",
+    "quote": "au plus tard le 15 du mois suivant",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V01": {
+    "section": "Who this applies to",
+    "text": "Independent economic suppliers are in scope. Receipts/turnover below XAF 30,000,000 excluding VAT are excluded; the administration can compulsorily register liberal professions and can authorise an irrevocable option by legal persons below threshold. Individuals other than liberal professionals cannot opt. Employees are not independent suppliers.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 247",
+    "quote": "inférieur à 30 000 000 FCFA",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V02": {
+    "section": "Rates, bands and thresholds",
+    "text": "General rate 19%; 0% for taxable-product exports supported by customs-endorsed declaration and international transport; 5% only for the article 257 tariff list. Product origin, description and code conditions matter. Do not classify all food, medicines or international services identically.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 257",
+    "quote": "Taux général : 19%",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Taux zéro (0%)",
+      "Taux reduit de 5%"
+    ]
+  },
+  "V03": {
+    "section": "The base",
+    "text": "Goods, self-supplies, services including electronic platforms/commissions, intracommunity acquisitions/imports and public orders are addressed by article 248. Aid is taxable where it directly pays for a supply or supplements its price; not every grant is automatically taxable.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 248",
+    "quote": "complètent le prix d’une opération imposable.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V04": {
+    "section": "The base",
+    "text": "The tax base includes the consideration, relevant incidental charges and taxes except VAT. For imports use customs value plus customs/excise duties. Real, invoice-shown discounts and exact pass-through reimbursements are excluded under article 254. Margin taxation is confined to the listed used-goods, travel-intermediation and specified wholesale transactions, not any low-margin business.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 253–255",
+    "quote": "Aucune autre activité ne peut donner lieu",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V05": {
+    "section": "The base",
+    "text": "Credit requires necessary business use, a registered supplier’s compliant invoice, or import declaration and payment proof, or the relevant self-supply declaration/withholding certificate. Claim no later than the end of the second year after VAT became chargeable; do not replace that limit with the credit carryforward rule.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 258–259",
+    "quote": "la fin de la deuxième année",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V06": {
+    "section": "The base",
+    "text": "Apply blocked-credit rules before prorata: accommodation/entertainment have a professional tourism/catering/show exception; petroleum has enumerated operational exceptions; passenger/mixed vehicles have enumerated transport/rental/stock/teaching exceptions. False invoices, specified cash payments and listed gifts/promotional distributions are also restricted. Full classification and cash-threshold reconciliation are necessary.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 260",
+    "quote": "Cette exclusion ne concerne pas les professionnels",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V07": {
+    "section": "Rates, bands and thresholds",
+    "text": "Directly attribute taxable-only and exempt-only inputs. Shared inputs use taxable/export turnover divided by total relevant turnover with statutory exclusions. Provisional prorata uses prior actual or new-business forecast receipts; definitive prorata and correction are due with DSF by 30 April following the year. Below 10% prorata no deduction is allowed.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 261–261 bis",
+    "quote": "inférieur à 10%, aucune déduction",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plus tard le 30 avril"
+    ]
+  },
+  "V08": {
+    "section": "Deadlines and filing",
+    "text": "A supplier cannot claim VAT status before registration and NIU allocation. Invoice fields include supplier name/address/NIU, date, nature, rate, net price, VAT, client identity/tax number and continuous serial number. Preserve accounting/support records for ten years after the entry year; the certified-cash-register implementing order was not read.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 265, 268–271",
+    "quote": "une série continue.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un délai de dix ans"
+    ]
+  },
+  "V09": {
+    "section": "Deadlines and filing",
+    "text": "The 2025 replacement of CGI 275 bis requires a monthly prescribed return and payment by the 15th following the operations month for the real regime. Article 275 bis-1 quarterly route was already expressly repealed in the 2024 replacement; do not revive the 2023 PDF’s quarterly wording. A no-operation month requires the statutory NEANT return.",
+    "act_article": "2025 Finance Act art. 11; 2024 Act art. 10, CGI 275 bis/bis-1/bis-2",
+    "quote": "La taxe exigible est reversée chaque mois",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plutard le 15 du mois suivant"
+    ]
+  },
+  "V10": {
+    "section": "The base",
+    "text": "Article 276 carries VAT deduction credits forward without a time limit, distinct from the deadline to first exercise input deduction. Refund eligibility is limited to listed legal-person cases and conditions: exports, structural withholding/reduced-rate credits, investment above XAF 100,000,000, reciprocal diplomatic/consular cases, or cessation. Current compliance and three consecutive credit months are required.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 276",
+    "quote": "sans limitation de délai.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "supérieurs à 100 000 000 FCFA",
+      "trois mois consécutifs"
+    ]
+  },
+  "V11": {
+    "section": "Deadlines and filing",
+    "text": "A refund request goes to DGID on its form in the month after the quarter with copies of the three credit returns; exporters also attach EX.1 export evidence, repatriation references and transport documents. A credit claimed for refund cannot be used again next month; rejection triggers the text’s cancellation rule. The full refund route must be checked before electing it.",
+    "act_article": "2024 Finance Act art. 10 replacing CGI 276",
+    "quote": "copies des trois déclarations",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "en un seul exemplaire"
+    ]
+  },
+  "V12": {
+    "section": "Cross-border points",
+    "text": "Services used/exploited in CAR are generally there; materially located services follow execution and intangible services the recipient establishment. Where a recipient established in a Community state is not VAT-taxable, article 250(5) instead locates the supply in the state of the provider resident in another member state, notwithstanding paragraphs 2–4; transport/platform rules are separate. Non-established taxable persons designate a solvent accredited resident representative; absent one the customer pays for them. The 2025 replacement also addresses customer withholding for non-residents without a permanent establishment/installation.",
+    "act_article": "2024 Finance Act art. 10, CGI 250/250 bis; 2025 Act art. 11",
+    "quote": "le pays d’établissement du preneur.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V13": {
+    "section": "The base",
+    "text": "The 2025 article 249 replacement preserves specific financial/insurance, non-assujetti property, public-health, authorised-price education, listed medicine and diplomatic exemptions with their conditions. Diplomatic official-use exemption requires reciprocity/quota and DGID invoice visa. Competitive nonprofit operations remain taxable. No broad food exemption is inferred.",
+    "act_article": "2025 Finance Act art. 10 replacing CGI 249",
+    "quote": "lorsqu’elles se situent dans un secteur concurrentiel",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "V14": {
+    "section": "Deadlines and filing",
+    "text": "The 2026 law introduces prior declaration/payment followed by Treasury reimbursement for covered exemptions: public-contract holders, national/international NGOs, investment-charter investors and mining/forest permit holders. Diplomatic/UN-covered cases and gifts to the State/its components are excluded. Listed regional/administrative levies are non-refundable. Obtain the implementing order before applying a cash-flow assumption.",
+    "act_article": "2026 Finance Act arts. 10–17",
+    "quote": "contre un remboursement par le Trésor public",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "read_on": "2026-11-01"
+  },
+  "F01": {
+    "section": "Who this applies to",
+    "text": "The OHADA SARL limits members’ debt exposure to their contributions and can have one individual/legal-person member or several. The SA similarly limits shareholder debt exposure and may have one shareholder. This is not a guarantee against personal guarantees or manager liability.",
+    "act_article": "AUSCGIE arts. 309, 385",
+    "quote": "ne sont responsables des dettes sociales",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01"
+  },
+  "F02": {
+    "section": "Rates, bands and thresholds",
+    "text": "SARL default capital is XAF 1,000,000, divided into equal shares with at least XAF 5,000 nominal value, expressly subject to contrary national provisions. A live CAR national override check remains necessary; the default is not presented as an authenticated local floor.",
+    "act_article": "AUSCGIE art. 311",
+    "quote": "Sauf dispositions nationales contraires",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un million (1.000.000)",
+      "cinq mille (5.000)"
+    ]
+  },
+  "F03": {
+    "section": "Rates, bands and thresholds",
+    "text": "SARL capital is fully subscribed; in-kind contributions are fully paid. Cash shares require at least half nominal value on subscription, with the remainder within two years of RCCM registration under the statutes. The old “all cash fully paid at incorporation” assertion is not the uniform-act default.",
+    "act_article": "AUSCGIE art. 311-1",
+    "quote": "la moitié au moins de leur valeur nominale.",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "deux (2) ans"
+    ]
+  },
+  "F04": {
+    "section": "Rates, bands and thresholds",
+    "text": "SA minimum capital is XAF 10,000,000 and fully subscribed before signing statutes. Cash shares require at least one quarter nominal value at subscription; remainder within three years of RCCM registration. The SARL cash fraction does not apply to an SA.",
+    "act_article": "AUSCGIE arts. 387–389",
+    "quote": "d’un quart au moins de leur valeur nominale.",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "dix millions (10.000.000)",
+      "trois (3) ans"
+    ]
+  },
+  "F05": {
+    "section": "The base",
+    "text": "SARL cash funds are deposited immediately against receipt in an approved bank, credit/microfinance institution or a notary’s office in the forming company’s name. Statutes record payment/deposit, and funds become available to the manager on RCCM registration. National deposit/subscription formalities require separate verification.",
+    "act_article": "AUSCGIE arts. 313–314",
+    "quote": "dans un compte ouvert au nom de la société en formation",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01"
+  },
+  "F06": {
+    "section": "The base",
+    "text": "Except a société en participation, companies require RCCM registration; legal personality begins on registration unless the Act provides otherwise. Signing statutes establishes formation but does not generally make pre-registration existence opposable to third parties.",
+    "act_article": "AUSCGIE arts. 97–101",
+    "quote": "à compter de son immatriculation",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01"
+  },
+  "F07": {
+    "section": "Deadlines and filing",
+    "text": "Managers establish annual financial statements and management report. In the article 140 companies the annual statements/report go to statutory auditors at least 45 days before the ordinary meeting, which must be within six months after year-end. Determine whether an auditor is required before applying that delivery duty.",
+    "act_article": "AUSCGIE arts. 137–140",
+    "quote": "dans les six (6) mois de la clôture",
+    "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "quarante-cinq (45) jours"
+    ]
+  },
+  "F08": {
+    "section": "Deadlines and filing",
+    "text": "GUFE’s published local route is: obtain form/checklist for entity; assemble identity, criminal-record, seat, statutes and capital-deposit evidence as applicable; submit complete dossier and pay at the counter; collect RCCM/tax/affiliation outputs and complete connected tax/social and sector-permit formalities. Its “48 working hours” is a published service statement, not a guaranteed statutory deadline established by this reading.",
+    "act_article": "GUFE, Procédure de création, steps 1–3",
+    "quote": "Sous 48 heures ouvrables",
+    "url": "https://gufe-rca.org/creer-mon-entreprise/procedure-de-creation/",
+    "read_on": "2026-11-01"
+  },
+  "W01": {
+    "section": "Who this applies to",
+    "text": "Employer payroll withholding uses monthly net salary and the annual employee scale brought down to a month. Use the salary base and bands owned by the individual Guide; do not substitute old conflicting CNSS percentages into the base.",
+    "act_article": "CGI art. 110",
+    "quote": "le barème ramené au mois",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "W02": {
+    "section": "Rates, bands and thresholds",
+    "text": "The CGI baseline states employer remittance no later than the 15th of each month. Employers with at most five workers may remit quarterly by the 15th of the following month; the exception concerns remittance, not permission to omit withholding from pay. Confirm current filing instructions and period attribution.",
+    "act_article": "CGI arts. 110–112",
+    "quote": "qui ont au plus cinq salariés",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plus tard le 15 de chaque mois",
+      "le 15 du mois suivant le trimestre"
+    ]
+  },
+  "W03": {
+    "section": "Deadlines and filing",
+    "text": "Each remittance is accompanied by an administration-provided slip in two copies. Employer annual summary of named employee IRPP withholdings goes in before 31 January. Do not confuse it with the employee annual income return.",
+    "act_article": "CGI arts. 113, 119",
+    "quote": "un bordereau établi en deux exemplaires",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "avant le 31 janvier"
+    ]
+  },
+  "W04": {
+    "section": "Deadlines and filing",
+    "text": "On business cession/cessation, tax retained or tax due is paid within ten days of the event under article 112. Foreign-paid CAR-resident salary recipients have the article 111 personal instalment obligation; foreign payment does not remove payroll-income tax.",
+    "act_article": "CGI arts. 111–112",
+    "quote": "dans les dix jours de l’évènement.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "les retenues effectuées ou l’impôt dû"
+    ]
+  },
+  "O01": {
+    "section": "Rates, bands and thresholds",
+    "text": "The fiscal year is twelve months from 1 January to 31 December, and “administration fiscale” means DGID in the amended LPF definitions. The specific taxpayer computation and due-date rules remain separate. Amounts in the signed budgets are FCFA; this Guide uses XAF/FCFA units without implying an exchange rate.",
+    "act_article": "2025 Finance Act art. 13 replacing LPF 4",
+    "quote": "période de douze mois",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "se termine le 31",
+      "décembre"
+    ]
+  },
+  "O02": {
+    "section": "Rates, bands and thresholds",
+    "text": "Amended LPF 243(1): missing/late registration, return, annex or registration/publicity act attracts XAF 500,000; recurrence within a week XAF 1,000,000. This is the general text, not a conclusion that every special fine is cumulative or displaced.",
+    "act_article": "2025 Finance Act art. 18 replacing LPF 243(1)",
+    "quote": "une amende fiscale de 500 000 FCFA",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "dans un délai d’une semaine",
+      "1 000 000"
+    ]
+  },
+  "O03": {
+    "section": "Rates, bands and thresholds",
+    "text": "Amended LPF 243(2): omissions/inaccuracies in the specified return/annex/act carry 25% of duty; bad faith/fraud 50–100%. LPF 243(7) failure of declaration/payment methods is 25%, escalating to 50–100% for the stated fraud/resistance conduct. The applicable degree must be evidenced, not automatically set to the maximum.",
+    "act_article": "2025 Finance Act art. 18 replacing LPF 243(2),(7)",
+    "quote": "la pénalité est de 25% des droits dus",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "50 à 100%"
+    ]
+  },
+  "O04": {
+    "section": "Rates, bands and thresholds",
+    "text": "Missing required DGID tax-free invoice visa for VAT exemption attracts XAF 50,000 per detected breach under the new LPF 243(10). Confirm the exemption/payment mechanism and specific act before assessing liability.",
+    "act_article": "2025 Finance Act art. 18 replacing LPF 243(10)",
+    "quote": "une amende fiscale de 50000 FCFA",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "O05": {
+    "section": "Deadlines and filing",
+    "text": "Written penalty/interest notification must identify taxpayer and offence, calculation, issue date, appeal right, appeal conditions and payment period. Preserve the actual notice and service evidence before choosing a response.",
+    "act_article": "2025 Finance Act art. 14 replacing LPF 71",
+    "quote": "les conditions d’introduction de ce recours",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "O06": {
+    "section": "Deadlines and filing",
+    "text": "Amended LPF 88 requires response to a written information request within a period not exceeding ten days of receipt; on-site missing-support minutes can make later production inadmissible in the stated dispute phases. This is not the old general twenty-day adjustment-response rule.",
+    "act_article": "2025 Finance Act art. 15 replacing LPF 88",
+    "quote": "dix (10) jours à compter de la réception",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "O07": {
+    "section": "Deadlines and filing",
+    "text": "The administration has 90 days from receipt of a tax complaint to notify its decision; no notification by expiry means deemed acceptance under amended LPF 171. An agent cannot sign a dispute decision concerning an adjustment/tax they originated. Actual complaint admissibility, service and full appeal route require the complete LPF.",
+    "act_article": "2025 Finance Act art. 16 replacing LPF 171",
+    "quote": "quatre-vingt-dix (90) jours",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01"
+  },
+  "B01": {
+    "section": "Who this applies to",
+    "text": "Built-property contribution applies annually to masonry-founded houses, factories, shops, hangars and factories, with attached industrial plant under article 168 and exemptions in article 169. It is distinct from income tax on rent and VAT.",
+    "act_article": "CGI arts. 167–169",
+    "quote": "reposant sur des fondations en maçonnerie",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "B02": {
+    "section": "The base",
+    "text": "Built-property base is rental value less a 40% allowance for deterioration, maintenance and repairs. Rental value is determined annually with the property position at 1 January and cannot be below 12% of market value or fixed-asset cost; round the base down to XAF 1,000.",
+    "act_article": "CGI arts. 170–172",
+    "quote": "sous déduction de 40 %",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "inférieure à 12%",
+      "au millier de franc inférieur"
+    ]
+  },
+  "B03": {
+    "section": "Rates, bands and thresholds",
+    "text": "Rate is 15% for individuals and legal persons not subject to IS, or 30% for IS-liable legal persons; nearest-XAF-10 rounding and XAF 30,000 minimum. Establish the taxpayer category and exemption first; this is not an across-the-board tax on market value.",
+    "act_article": "CGI art. 177",
+    "quote": "inférieur à 30.000 F CFA",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "15% pour les personnes physiques",
+      "30 % pour les personnes morales",
+      "à la dizaine de francs la plus voisine"
+    ]
+  },
+  "B04": {
+    "section": "The base",
+    "text": "The article 169 exemptions include the first residential property occupied as the owner/family’s principal home. Other exemptions have public-purpose, ownership, location or non-income conditions. A first-home exemption is not an exemption for all rental properties.",
+    "act_article": "CGI art. 169(12)",
+    "quote": "occupée à titre principal par le propriétaire",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "B05": {
+    "section": "Deadlines and filing",
+    "text": "Each owner/debtor, including statutory exemption beneficiaries, submits one administration form per property before 1 February, model F66. The administration’s rental-value notice model F61 bis has a twenty-day approval/correction response. Current forms themselves were not fetched.",
+    "act_article": "CGI arts. 171, 173",
+    "quote": "un exemplaire pour chaque propriété",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "avant le 1 er février",
+      "un délai de Vingt jours"
+    ]
+  },
+  "B06": {
+    "section": "Deadlines and filing",
+    "text": "Tenants, including diplomatic/consular and international bodies, file the specified landlord/property/rent statement before 15 January, model F67. Failure to declare rent timely can also deny the tenant’s income-tax deduction.",
+    "act_article": "CGI art. 174",
+    "quote": "avant le 15 janvier",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01"
+  },
+  "B07": {
+    "section": "Deadlines and filing",
+    "text": "The liable owner is identified at 1 January; usufruct, emphyteutic lease and building-on-another’s-land rules allocate liability differently. Assessment is at the property’s location, and payment is due by 31 March.",
+    "act_article": "CGI arts. 175–177 bis",
+    "quote": "au plus tard le 31 Mars",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au 1erjanvier"
+    ]
+  },
+  "B08": {
+    "section": "The base",
+    "text": "Individual net property income is gross rents less the statutory 40% charge allowance. Gross rents include tenant-borne owner expenses and relevant subsidies/indemnities, less landlord-borne tenant expenses. This category calculation is separate from the annual built-property contribution and does not alone establish final IRPP.",
+    "act_article": "CGI arts. 14–16",
+    "quote": "sont fixées à 40 % du revenu brut.",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "40 % du revenu brut."
+    ]
+  },
+  "O08": {
+    "section": "Deadlines and filing",
+    "text": "The signed 2024 Finance Act art.11 creates the LPF annexed to the CGI; only the creation and opening scope were read here, not the complete procedural book.",
+    "act_article": "2024 Finance Act art.11; LPF art.1",
+    "quote": "Il est crée un Livre des Procédures Fiscales annéxé au Code Général des Impôts",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "pdf_pages": "35 (printed34)",
+    "read_scope": "Art.11 and opening LPF art.1, actual scan visually read; complete LPF and current chain not certified."
+  }
+}
