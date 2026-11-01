@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "status": "Unfinished source-reference draft; fresh independent review pending",
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "prior_head": "b099213e90bf2bd24146b3cafcefb5b2356ce162",
+  "grouped_rule_records": 28,
+  "old_topics": 12,
+  "description_words": 122,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "CTA_platform": "exact",
+  "candidate_files": {
+    "skills/sierra-leone/sl-income-tax.md": "72eb2e1ec2f228507aa37f60a1b19c2ec368014cc57259ea2dd9df38b50ebd4e",
+    "skills/sierra-leone/README.md": "7b5abeef58d03defa85c0c1bcb0f6d3f750c8598aee4ad8df2d751b77f195231",
+    "evidence/ledgers/sierra-leone-income-20261101/old-topics.json": "ce891eea4a71a0eab20321aac9a90be59076909eb0d8a3f92fe20a840331c455",
+    "evidence/ledgers/sierra-leone-income-20261101/quote-check.json": "2c16f59c7e211318448190d24bfe2010eab6f5c8a903bece3d24791be1a2b7cf",
+    "evidence/ledgers/sierra-leone-income-20261101/rules.json": "9e133f9ed37d1fcf3208d8114248fd16c36271180f61947374e34ae3624d0e0e",
+    "evidence/ledgers/sierra-leone-income-20261101/source-read-manifest.json": "a6999542a1dbbabe546bb5adfcdcd600bf6ef77086d2e732be0d7b51ebeb5fcb",
+    "evidence/ledgers/sierra-leone-income-20261101/old-topics.md": "4dc4ea93d1f59560abb2e76ce9a0be05cee2792e4f6d683e825d6abdd9e4e279",
+    "evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md": "2460af08ae29bdbb4c9b101027d6a0057bbb401adb3e76edb3e4ac8935bf9919"
+  },
+  "readme_status_reconciliation": "Prior corporate/cross-border source corrections reflected from closure-v2.json; no Guide or prior review changed."
+}

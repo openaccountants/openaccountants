@@ -11,27 +11,27 @@ covered_by:
   TP: sl-transfer-pricing
   XB: sl-cross-border
 partial:
-  IT-IND: "Existing 2025 Guide retained; current bands, deductions, rent and filing amendments not yet reconciled."
-  IT-CORP: "Source-bound2026 corporate rewrite; MAT schedule/currentness, full deductions/regimes, return fields and independent review remain open."
+  IT-IND: "Source-bound2026 income/PAYE rewrite; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen;reviewpending."
+  IT-CORP: "Source-bound2026 corporate rewrite; independent source corrections closed; MAT schedule/currentness, full deductions/regimes and return fields remain open."
   VAT: "Existing 2025 Guide retained;2026 GST/digital, input, invoicing and filing changes not yet reconciled."
   SC: "NASSIT source-bound2026 rewrite,28ledger rows; source review closed; later amendments/exemptions/ceiling and current payment implementation remain unresolved."
-  PR: "Payroll Guide refreshed for NASSIT; current PAYE deductions, bands, return/payment forms and penalties not yet reconciled."
+  PR: "Payroll Guide refreshed for NASSIT; income/PAYE source rewrite is linked, with independent review pending; current methods, forms and full amendment chain remain open."
   TP: "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
-  XB: "New residence/foreign-income source-bound Guide; unofficial2017baseline/currentchain,treaties,withholdingprocedure and independentreview remain unresolved."
+  XB: "New residence/foreign-income source-bound Guide; independent source corrections closed; unofficial2017baseline/currentchain,treaties and withholdingprocedure remain unresolved."
 ---
 
 # Sierra Leone: tax pack
 
-Four source drafts now: transfer pricing, NASSIT/payroll, corporate income tax and cross-border residence/foreign income. Four other legacy 2025 Guides remain pending refresh. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
+Five source drafts now: income/PAYE, transfer pricing, NASSIT/payroll, corporate income tax and cross-border residence/foreign income. Three other legacy 2025 Guides remain pending refresh. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
 
 | Tax/job | Guide | Actual state |
 |---|---|---|
-| Income tax | [Income tax](sl-income-tax.md) | Legacy 2025; refresh in progress |
-| Company tax | [Corporate income tax](sl-corporate-income-tax.md) | Source-bound2026 corporate rewrite; independent review pending |
+| Income tax | [Income tax](sl-income-tax.md) | New source-bound2026 rewrite; independent review pending |
+| Company tax | [Corporate income tax](sl-corporate-income-tax.md) | Source-bound2026 corporate rewrite; independent source corrections closed, currentness/filing holds remain |
 | Goods and services tax | [GST](sl-vat-gst.md) | Legacy 2025; refresh in progress |
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
 | Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
-| Cross-border | [Residence and foreign income](sl-cross-border.md) | New conditional source draft; independent review pending |
+| Cross-border | [Residence and foreign income](sl-cross-border.md) | Conditional source draft; independent source corrections closed, currentness/treaty holds remain |
 | Formation | [Formation](sl-company-formation.md) | Legacy 2025; refresh in progress |
 | Tax intake | [Overview](sl-tax-overview.md) | Legacy 2025; refresh in progress |
 
@@ -41,10 +41,12 @@ The TP draft separates contemporaneous preparation, annual declarations, 45-day 
 
 The initial69-topic, six-file snapshot is preserved in [the old-topic map](../../evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md), backed by immutable predecessor hashes. The subsequent payroll delta maps all ten old payroll topics to exact new sections or explicit holds in [its preservation record](../../evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md). No predecessor topic is silently removed.
 
-Remaining country work includes the other four current-year refreshes and full current cross-border/withholding implementation, corporate source review and full company-law reading, the full income/GST amendment reconciliation, genuine current filing instructions and independent source review. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
+Remaining country work includes the other three current-year refreshes and full current cross-border/withholding implementation, full company-law reading, the full income/GST amendment reconciliation, genuine current filing instructions and independent source review. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
 
 Tracked in [Sierra Leone issue484](https://github.com/openaccountants/openaccountants/issues/484), which remains open.
 
 The corporate delta maps all15oldtopics in [its preservation record](../../evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.md), with a [figure ledger](../../evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md). MAT schedule interaction is explicit, not resolved by copying the old approximate3%.
 
 The new cross-border workpaper has [18 grouped source-ledger records](../../evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md); its presence does not close XB.
+
+The income/PAYE rewrite maps [all12oldtopics](../../evidence/ledgers/sierra-leone-income-20261101/old-topics.md) and records [28groupedsource rules](../../evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md). Its actual PAYE-form link failure is explicit, not treated as a completed filing method.

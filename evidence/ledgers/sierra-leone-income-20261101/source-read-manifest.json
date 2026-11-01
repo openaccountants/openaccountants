@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ITA",
+    "file": "Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+    "bytes": 900613,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical24-26 ss22-23;35 s38;61-63 ss97-99;73-74 s116/monthlyreturn;77-80 ss124-130 andneighbours read. Unofficial2017consolidation,notfullcurrentlaw."
+  },
+  {
+    "id": "F19",
+    "file": "2019_Finance_Act_1_8136241a71.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/2019_Finance_Act_1_8136241a71.pdf",
+    "sha256": "958a244f85af1cb15ccee59763eabf793017a07385a5f4345db5a4d6ef7555f6",
+    "bytes": 128125,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical3,printed5 s5leaveallowanceinsertion andneighbours read."
+  },
+  {
+    "id": "F20",
+    "file": "Finance_Act_2020_d8deee2366.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2020_d8deee2366.pdf",
+    "sha256": "55de00c4f7b04056c75cf25739849acd8a64a272ec618d07d1447775803f8e2d",
+    "bytes": 9518346,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Coverphysical1signed20Dec2019;commencement2;s10PAYEannual4;annualbands7-8. Originalcover/bandscanvisuallyread; printedGazettefooter4Nov2019predatesstatedpassed12Nov/assent20Dec:chronologyunresolved."
+  },
+  {
+    "id": "F21",
+    "file": "Finance_Act_2021_be1efb0bcc.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2021_be1efb0bcc.pdf",
+    "sha256": "f659b25e9d9816713ec024db85c1ca8ad4597d968a00b24d0446dfaf5f04a7d8",
+    "bytes": 210947,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical5s10leavegross/basicamendment withmargin23/body3 discrepancy;neighboursread."
+  },
+  {
+    "id": "F24",
+    "file": "The_Finance_Act_2024_0d6d83e684.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2024_0d6d83e684.pdf",
+    "sha256": "5314b7e510cfa9d39ae25391e8f8f13ae8d0689fc1503d0ec9602a1960712a20",
+    "bytes": 3410826,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical10/printed18 s12(b)nonresidentwithholdingtable andneighboursread."
+  },
+  {
+    "id": "F25",
+    "file": "The_Finance_Act_2025_beb680faed.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+    "sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+    "bytes": 701135,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical8-9 s9/10 monthly/annual penalties andPAYEextension;neighboursread."
+  },
+  {
+    "id": "F26",
+    "file": "The_Finance_Act_2026_121df05d9b.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
+    "sha256": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf",
+    "bytes": 960719,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical2commencement,6s6employmentexclusion,9NinthSch2repeal;neighboursread."
+  },
+  {
+    "id": "BANK",
+    "file": "bsl-redenomination-notice2021.pdf",
+    "url": "https://bsl.gov.sl/Public%20Notice%20on%20Redenomination.pdf",
+    "sha256": "9e09d12d56104b5981ef81ed8e7477bad14808cc2f861c1c79ac731b95255880",
+    "bytes": 130071,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Wholeonepagenotice11Aug2021denominationtable read."
+  },
+  {
+    "id": "NRA",
+    "file": "nra-paye2026-news87.html",
+    "url": "https://nra.gov.sl/news/87",
+    "sha256": "b05cf24e3d84e3efd12ab74818ff4bc3523e68124d9a911a153eb82cfa922cf1",
+    "bytes": 23060,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Wholemainnewsarticle Feb13/14 2026threshold/NASSIT/redundancyread;notfooterlinkedarticles."
+  },
+  {
+    "id": "FORMS",
+    "file": "nra-forms.html",
+    "url": "https://nra.gov.sl/forms",
+    "sha256": "ab7aae3e6a29d189cfb7199cd7366f9194927216d7ed52d875815835e3508a85",
+    "bytes": 24144,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "PublicformscataloguePAYElabel/linkactuallyread;notallforms."
+  },
+  {
+    "id": "WRONG",
+    "file": "nra-catalogue-paye-link.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Tax_Clearance_Certificate_Guidelinesv1_8163f3f1c5.pdf",
+    "sha256": "ede04bb183cdf029ca987ddba00641cab9c4fdca021e2b6fcac0ef9fef4145ea",
+    "bytes": 339997,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "ActualPDFfirstpage/TCCtitleandguidelinesread;wrongdestinationasPAYEformevidence,noTCCoperatingapproval."
+  }
+]
