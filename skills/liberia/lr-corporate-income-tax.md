@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Liberia Corporate Income Tax v0.1
+# Liberia Corporate Income Tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -36,7 +36,9 @@ A legal person deriving more than 30% of business from life insurance has 4% gro
 
 ## The base
 
-Deduct ordinary income-production expenses with adequate records. Capital expenditure follows depreciation; personal, excluded-income costs, income tax, tax interest, fines and bribes are disallowed. Business bad debts need prior inclusion and charge-off; investment losses only offset investment gains with carryforward; ordinary business losses carry no later than the fifth succeeding year. [ss 203(a)–(c),(e),206](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [C05]
+A resident company’s gross income includes worldwide economic benefits, regardless of source; a nonresident’s gross income includes only Liberia-source economic benefits and is taxed under Chapter8. A nonresident’s permanent establishment is treated as a resident legal person only with respect to income attributable to that establishment, with the related filing and advance-payment requirements. [Revenue Code ss201(c),801(d)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [C12]
+
+Deduct ordinary income-production expenses with adequate records. Capital expenditure follows depreciation; personal and excluded-income costs, Liberian or foreign income tax, interest relating to any Liberian tax, fines and bribes are disallowed. Business bad debts need prior inclusion and charge-off; investment losses only offset investment gains with carryforward; ordinary business losses carry no later than the fifth succeeding year. [ss 203(a)–(c),(e),206](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [C05]
 
 Interest to persons other than resident banks is capped at interest income plus 20% of EBITDA excluding interest income, under amended s203(d), replacing the old 50%-of-income formula. Deduct only interest attributable to the year and properly paid/accrued. [amended s203(d)](https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf) [C06]
 

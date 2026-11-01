@@ -1,6 +1,6 @@
 ---
 name: lr-payroll-social
-description: "Computes Liberia NASSCORP contributions for employees within the verified pension and employment-injury categories and sets the separate payroll withholding, contribution payment and detailed reporting calendars for 2026. Use for Liberia payroll, NASSCORP, employer contributions, pension deductions, employee registration, an expatriate worker or a missed remittance. The Guide reads the 2017 Act with the 2023 General Regulations, distinguishes gross remuneration from excluded expenses and prevents recovery of the employer share from workers. It routes personal tax bands to the income Guide. Entry-age, membership and statutory exclusions must be checked; retroactive employee deductions and live submission details remain explicit gaps, without a claim of professional attestation."
+description: "Computes Liberia NASSCORP contributions for employees within the verified pension and employment-injury categories and sets the separate payroll withholding, contribution payment and employee-detail recording calendars for 2026. Use for Liberia payroll, NASSCORP, employer contributions, pension deductions, employee registration, an expatriate worker or a missed remittance. The Guide reads the 2017 Act with the 2023 General Regulations, distinguishes gross remuneration from excluded expenses and prevents recovery of the employer share from workers. It routes personal tax bands to the income Guide. Entry-age, membership and statutory exclusions must be checked; retroactive employee deductions and live submission details remain explicit gaps, without a claim of professional attestation."
 jurisdiction: LR
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 0.1
+version: 0.2
 ---
 
-# Liberia Payroll and Social Contributions v0.1
+# Liberia Payroll and Social Contributions v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,9 +47,9 @@ Resident wages above the standard-deduction amount require withholding using res
 
 Ordinary monthly contributions fall due at that month’s end, not the following month’s 10 th. Part-month/multiple-employer cases follow specified regulation conditions. [s 89.16(h)](https://www.nasscorp.org.lr/wp-content/uploads/2024/05/NASSCORP-Act-revised-2017.pdf) [S04]
 
-Pay monthly through an approved bank, NASSCORP office or directed method with a completed Payroll Submission Form and retain the official receipt. Detailed employee e-Payroll is due by the end of the next month, with registered names/numbers/currency matching. This reporting date does not replace the contribution due date. [regs 17(1)–(3),18(A)](https://www.nasscorp.org.lr/wp-content/uploads/2024/06/GenReg-2023.pdf) [S05]
+Pay monthly through an approved bank, NASSCORP office or directed method with a completed Payroll Submission Form and retain the official receipt, as regulation17 requires. Under regulation18(A)(1), record each employee’s earnings and contributions on the approved e-Payroll form by the end of the following month, matching registered names, numbers and payment currency. That is a recording deadline; a separate transmission deadline has not been confirmed. It does not replace the contribution payment deadline or the duty to accompany payment with the Payroll Submission Form. [regs 17(1)–(3),18(A)](https://www.nasscorp.org.lr/wp-content/uploads/2024/06/GenReg-2023.pdf) [S05]
 
-Maintain two calendars: contribution payment at month-end and detailed e-Payroll by following month-end. The old following-month10 th social-payment claim is replaced. For LRA use Monthly Withholding Return and Schedule A Salary/Wages from its catalogue; actual boxes and live portal filing remain unverified. Use the official [LRA Forms and Schedules](https://www.lra.gov.lr/forms-and-schedules/) catalogue and [LITAS](https://elitas.lra.gov.lr/) link published by LRA. Select the tax kind, year and TIN; reconcile the return with the working paper and withholding credits; submit the applicable return and schedules, pay against the resulting reference and preserve submission/payment confirmation. The public catalogue was read; live portal screens, box numbers, payment references and a successful filing have not been verified. Stop before submission if the live workflow differs. [amended s50(b),(g),(h)](https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf) [O07]
+Maintain separate calendars: contribution payment ordinarily at month-end with its accompanying Payroll Submission Form, and employee-detail recording on e-Payroll by following month-end. No separate e-Payroll transmission deadline is established here. The old following-month10 th social-payment claim is replaced. For LRA use Monthly Withholding Return and Schedule A Salary/Wages from its catalogue; actual boxes and live portal filing remain unverified. Use the official [LRA Forms and Schedules](https://www.lra.gov.lr/forms-and-schedules/) catalogue and [LITAS](https://elitas.lra.gov.lr/) link published by LRA. Select the tax kind, year and TIN; reconcile the return with the working paper and withholding credits; submit the applicable return and schedules, pay against the resulting reference and preserve submission/payment confirmation. The public catalogue was read; live portal screens, box numbers, payment references and a successful filing have not been verified. Stop before submission if the live workflow differs. [amended s50(b),(g),(h)](https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf) [O07]
 
 ## Penalties and interest
 
@@ -121,7 +121,7 @@ expected:
 | December 2025 amendment, approved 24 March/printed 1 April 2026, cover/preliminary/amended 63,74,76,79,90–92,803,805,806,1000,1021; excise schedule not used | https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf | 2026-11-01; read in part, specific scope in first column |
 | NASSCORP Act 2017, ss 89.8–89.18, employment categories and contributions read | https://www.nasscorp.org.lr/wp-content/uploads/2024/05/NASSCORP-Act-revised-2017.pdf | 2026-11-01; read in part, specific scope in first column |
 
-Not yet confirmed: Live e-Payroll fields, accepted transmission and bank references; resolution of Act 89.16(m) versus regulation 16(2) for retrospective deductions; individual expatriate/injury-only status; income-tax deductibility of employee pension and later scheme changes.
+Not yet confirmed: Live e-Payroll fields, any separate transmission deadline, accepted transmission and bank references; resolution of Act 89.16(m) versus regulation 16(2) for retrospective deductions; individual expatriate/injury-only status; income-tax deductibility of employee pension and later scheme changes.
 
 <!-- openaccountants-cta-block -->
 

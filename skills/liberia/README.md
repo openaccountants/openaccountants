@@ -40,7 +40,7 @@ Eight drafted Guides, all seven core domains partial. This is a working source-c
 - The Act printed1April2026 changes ordinary GST to13%, adds a5% telecom surtax and reduces the domestic PE time threshold to30days, with a separate service aggregation test.
 - The2024 general amendment replaces the nonbank interest limit with interest income plus20% EBITDA, adds TP recharacterisation, and repeals resident-withholding subsection905(l).
 - The published VAT commencement clause and2026 LRA announcements naming1January2027 have not been reconciled with an enacted deferral instrument. Do not use this draft to select an operative invoice tax regime.
-- NASSCORP payment ordinarily falls due at month-end; detailed employee reporting is separately due by following month-end. Scheme exclusions and age of entry matter.
+- NASSCORP payment ordinarily falls due at month-end; regulation18(A)(1) requires employee-detail recording by following month-end. A separate transmission deadline remains unconfirmed; regulation17 requires the Payroll Submission Form to accompany payment. Scheme exclusions and age of entry matter.
 
 Each claim is tied to the exact law/authority and read scope in the [figure ledgers](../../docs/research/2026-11-01-liberia-pack/ledgers/). The [old-topic destination map](../../docs/research/2026-11-01-liberia-pack/old-topics.md) records every old bullet and substantive introductory statement.
 

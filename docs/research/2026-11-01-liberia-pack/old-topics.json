@@ -132,16 +132,16 @@
     "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
     "topic": "Resident company tax base",
     "old_text": "- **Resident company tax base** \u2014 Worldwide income (net profit after allowable deductions)  _(Liberia Revenue Code)_",
-    "status": "Rechecked/corrected or routed",
-    "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    "status": "Restored and source-cited after independent review F2",
+    "destination": "lr-corporate-income-tax.md#the-base opening paragraph C12 (ss201(c),801(d)); tax-profit adjustments C05\u2013C08"
   },
   {
     "old_file": "lr-corporate-income-tax.md",
     "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
     "topic": "Non-resident company tax base",
     "old_text": "- **Non-resident company tax base** \u2014 Liberia-source income only  _(Liberia Revenue Code)_",
-    "status": "Rechecked/corrected or routed",
-    "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    "status": "Restored and source-cited after independent review F2",
+    "destination": "lr-corporate-income-tax.md#the-base opening paragraph C12 (ss201(c),801(d)); tax-profit adjustments C05\u2013C08"
   },
   {
     "old_file": "lr-corporate-income-tax.md",
@@ -220,8 +220,8 @@
     "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
     "topic": "Introductory/bridging paragraph",
     "old_text": "Resident companies are taxed on worldwide income; non-resident companies on Liberia-source income. The base is accounting profit adjusted for tax purposes.",
-    "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
-    "destination": "lr-corporate-income-tax.md Who/base, Sources gaps and linked owning Guides"
+    "status": "Restored and source-cited after independent review F2",
+    "destination": "lr-corporate-income-tax.md#the-base opening paragraph C12 (ss201(c),801(d)); tax-profit adjustments C05\u2013C08"
   },
   {
     "old_file": "lr-corporate-income-tax.md",
@@ -436,8 +436,8 @@
     "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
     "topic": "NASSCORP remittance deadline",
     "old_text": "- **NASSCORP remittance deadline** \u2014 Monthly remittance to NASSCORP, generally by the 10th of the following month (approx \u2014 confirm) (approx \u2014 confirm)  _(NASSCORP Act)_",
-    "status": "Corrected; contribution/reporting dates separated",
-    "destination": "lr-payroll-social.md S04\u2013S05"
+    "status": "Corrected contribution-payment versus detail-recording dates; separate transmission deadline unconfirmed",
+    "destination": "lr-payroll-social.md#deadlines-and-filing S04\u2013S05"
   },
   {
     "old_file": "lr-tax-overview.md",

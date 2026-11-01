@@ -261,8 +261,9 @@
       "source": "C",
       "act_article": "ss203(a)\u2013(c),(e),206",
       "quote": "ordinary expenses of producing income",
-      "rule": "Deduct ordinary income-production expenses with adequate records. Capital expenditure follows depreciation; personal, excluded-income costs, income tax, tax interest, fines and bribes are disallowed. Business bad debts need prior inclusion and charge-off; investment losses only offset investment gains with carryforward; ordinary business losses carry no later than the fifth succeeding year.",
-      "read_on": "2026-11-01"
+      "rule": "Deduct ordinary income-production expenses with adequate records. Capital expenditure follows depreciation; personal and excluded-income costs, Liberian or foreign income tax, interest relating to any Liberian tax, fines and bribes are disallowed. Business bad debts need prior inclusion and charge-off; investment losses only offset investment gains with carryforward; ordinary business losses carry no later than the fifth succeeding year.",
+      "read_on": "2026-11-01",
+      "additional_exact_quote": "interest relating to any Liberian tax"
     },
     "C06": {
       "source": "A",
@@ -429,8 +430,9 @@
       "source": "G",
       "act_article": "regs17(1)\u2013(3),18(A)",
       "quote": "end of the month following the relevant month",
-      "rule": "Pay monthly through an approved bank, NASSCORP office or directed method with a completed Payroll Submission Form and retain the official receipt. Detailed employee e-Payroll is due by the end of the next month, with registered names/numbers/currency matching. This reporting date does not replace the contribution due date.",
-      "read_on": "2026-11-01"
+      "rule": "Pay monthly through an approved bank, NASSCORP office or directed method with a completed Payroll Submission Form and retain the official receipt, as regulation17 requires. Under regulation18(A)(1), record each employee\u2019s earnings and contributions on the approved e-Payroll form by the end of the following month, matching registered names, numbers and payment currency. That is a recording deadline; a separate transmission deadline has not been confirmed. It does not replace the contribution payment deadline or the duty to accompany payment with the Payroll Submission Form.",
+      "read_on": "2026-11-01",
+      "additional_exact_quote": "the employer shall record"
     },
     "S06": {
       "source": "S",
@@ -655,6 +657,14 @@
       "quote": "no less than 90 days during the tax year",
       "rule": "The2020general PE text used no less than90days in the tax year. The2026amendment uses30days; cross-commencement aggregation remains unconfirmed.",
       "read_on": "2026-11-01"
+    },
+    "C12": {
+      "source": "C",
+      "act_article": "ss201(c),801(d)",
+      "quote": "The gross income of a resident includes all economic benefits regardless of source.",
+      "additional_exact_quote": "income attributable to the permanent establishment",
+      "rule": "A resident company\u2019s gross income includes worldwide economic benefits, regardless of source; a nonresident\u2019s gross income includes only Liberia-source economic benefits and is taxed under Chapter8. A nonresident\u2019s permanent establishment is treated as a resident legal person only with respect to income attributable to that establishment, with the related filing and advance-payment requirements.",
+      "read_on": "2026-11-01"
     }
   },
   "guide_rules": {
@@ -685,6 +695,7 @@
       "C09",
       "C10",
       "C11",
+      "C12",
       "I10",
       "O07"
     ],
