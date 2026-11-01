@@ -1,0 +1,116 @@
+{
+  "read_date": "2026-11-01",
+  "private_source_location": "../sources/ relative to repository root; not committed",
+  "documents": [
+    {
+      "file": "taxation-2021.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/TAXATION_ACT_2021_R_E_CONSOLIDATED_f4f9ed8876.pdf",
+      "sha256": "b245e3af4ae3c2479a7cc1931296f76f04ddde2d570b1557d601e02725a89705",
+      "bytes": 643884,
+      "pages": 112,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Selected statutory provisions actually read: s.5 definitions; ss.17,24\u201325,36\u201339,49; ss.53\u201359,61\u201384; ss.85\u201396; ss.105\u2013113, concentrating on the specific ledger citations. Full 112-page PDF downloaded/extracted, not certified read cover to cover. Visually inspected PDF18\u201319,68,73\u201374,79; other cited clauses checked in actual selectable PDF text. Consolidation states amendments through30June2021; later annual amendments have not all been reconciled.",
+      "read_entire_document": false
+    },
+    {
+      "file": "financial-2024-25.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/Financial_Act_2024_2025_464925c180.pdf",
+      "sha256": "f63a972f2293ee0888635f04e4a3602a1c005937bcb20d7294eaa272a0a34ac5",
+      "bytes": 68289536,
+      "pages": 165,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Scanned PDF. Rendered/OCR-read selected PDF1\u201322,30\u201345,164\u2013165 (identity, charging provisions, amendments and replacement tables, penalty and assent). Visually inspected PDF10\u201312,40\u201341,164\u2013165; relied on actual page images/OCR for remaining named provisions. No full reading of unrelated 165-page fees/tariff schedules claimed.",
+      "read_entire_document": false
+    },
+    {
+      "file": "ministry-financial-2024-25.pdf",
+      "official_url": "https://mofp.gov.ss/wp-content/uploads/2025/02/Finance-Act-Book__2024-2025.pdf",
+      "sha256": "e79a901fd1fba715a476efbfcb6d26c1f643e6325a4d7780306402dfb5cc1551",
+      "bytes": 92980655,
+      "pages": 167,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Second official scanned copy,167 pages. Selected PDF1,9\u201314,39\u201342,165 rendered/OCR compared; replacement schedule PDF41 visually inspected. Body and approved schedule conflicts recur. Full ministry tariff not read.",
+      "read_entire_document": false
+    },
+    {
+      "file": "financial-2023-24.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/FINANCIAL_Act_FY_2023_2024_MAIL_97b32cab38.pdf",
+      "sha256": "ded23b09e0f5073492fa88474345ba8193b7f804e1aca7e1fb63758c39a1b443",
+      "bytes": 3840633,
+      "pages": 169,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "169 pages downloaded, text extracted; selected opening charging and amendment passages read as locators. No full-reading claim and not used to certify that historical bands were unchanged, or a complete intervening-amendment consolidation.",
+      "read_entire_document": false
+    },
+    {
+      "file": "tax-regulations-2012.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/Regulations_2012_05491867ea.pdf",
+      "sha256": "5ed28a7a8dce5d9b3eff9a1fb106514fba659f71a8a34ae300e440a0cc21de7f",
+      "bytes": 500903,
+      "pages": 86,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Selected regulation1.94, PDF68\u201370, read in actual selectable PDF text for marginal method, principal/non-principal employer distinction, historical forms and dates. Older monetary bands/8% pension deduction not treated as current. Remaining86-page regulations not read in full.",
+      "read_entire_document": false
+    },
+    {
+      "file": "filing-manual.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/NRA_e_Tax_Filing_Declaration_Manual_7425326530.pdf",
+      "sha256": "6fd021d39b5a8592918868401b9a911c58c753cf087863cb02799f1481021758",
+      "bytes": 3218239,
+      "pages": 19,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "All19 pages read in extracted selectable text, including screenshots/field labels in text. Own-TIN verification, profile, tax activity, currency, period, withholding individual/bulk template, edit/declaration, FileReturns, invoice and bank/card outcome. No login, actual taxpayer return, payment or current live form tested.",
+      "read_entire_document": true
+    },
+    {
+      "file": "registration-manual.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/NRA_e_Tax_Training_Manual_V_001_Registration_eae52f383f.pdf",
+      "sha256": "0e4f6961bda470a670362a4b45b3338b05917e09219f7d6909bc06f799554a90",
+      "bytes": 3832806,
+      "pages": 51,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Selected PDF2\u20135,8\u201310,22\u201340 read, with business route26\u201337 specifically checked: certificate/business number validation, director TIN, contact verification, existingTIN case, agent, declaration, submission/verification.51-page manual not read completely and no live registration tested.",
+      "read_entire_document": false
+    },
+    {
+      "file": "operational-2024-25.pdf",
+      "official_url": "https://cms.nra.gov.ss/uploads/Operationalization_of_the_Financial_Act_2024_2025_53a1891f10.pdf",
+      "sha256": "e7039d30ae0328808f85ebbcb3f97d0280b10896261048c87e24fd4cb637f8b1",
+      "bytes": 2317312,
+      "pages": 2,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "Both2 scanned pages visually read in full. Distinguishes Act signature25November2024 from circular operational date2December2024. Continues until replaced; not proof no later replacement exists.",
+      "read_entire_document": true
+    },
+    {
+      "file": "companies-2012-archived-20260609.pdf",
+      "official_url": "https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf",
+      "sha256": "dc0768b0e3013870807f5b37aa43e0968243549cf27453ea9ab4dc14771b7a03",
+      "bytes": 1426923,
+      "pages": 345,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "345-page archived official PDF. Title/identityPDF1\u20132 and selected ss.7\u201311,20\u201323,177\u2013180,241 read in selectable PDF text; rendered critical pages26\u201328,32\u201333,113,156\u2013157. Visually inspected26,113,156. Remaining Companies Act not read cover to cover. Official direct access failed expired certificate; dated archived official copy used without bypass.",
+      "read_entire_document": false
+    },
+    {
+      "file": "draft-finance-2025-26.pdf",
+      "official_url": "https://mofp.gov.ss/wp-content/uploads/2025/12/Draft-Finance-Bill-2025-2026.pdf",
+      "sha256": "353e5e2c1989eba8f4ffb0cc5db419945ac856266274ab4cf917aee4759fd6f0",
+      "bytes": 11669961,
+      "pages": 158,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "158-page ministry PDF downloaded. Only first3 PDF pages/title/table-of-contents read for identity: Finance Bill FY2025/2026. Official library calls it DraftFinanceBill2025\u20132026. Not treated as enacted, not used for proposed rates, no full read or assent check certified.",
+      "read_entire_document": false
+    },
+    {
+      "file": "pension-withholding-suspension-2021.pdf",
+      "official_url": "https://mol.gov.ss/sites/default/files/2021-05/NRA_Suspension%20of%20Withholding%20Tax%20on%20Pension%20Fund_Social%20Insurance%20Fund.pdf",
+      "sha256": "12032d60f1ed06c30cb059036487c0fd4f0d95b3ad3f13156349acb003ce29c4",
+      "bytes": 138447,
+      "pages": 1,
+      "read_date": "2026-11-01",
+      "actual_read_scope": "One scanned page rendered, visually read completely and OCR preserved privately. Actual signed circular date2March2021, RSS/NRA/DCG/J/19, addressed to NGOs through RRC; public web metadata26May2021 is not its signature date. Historical withholding suspension/payment instruction, not a current contribution-rate law.",
+      "read_entire_document": true
+    }
+  ]
+}

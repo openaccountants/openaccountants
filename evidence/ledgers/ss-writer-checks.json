@@ -1,0 +1,212 @@
+{
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "branch": "codex/south-sudan-tax-2026",
+  "date": "2026-11-01",
+  "description_rule": "YAML safe_load description, whitespace words via .split();80\u2013150 inclusive",
+  "guides": {
+    "skills/south-sudan/ss-company-formation.md": {
+      "sha256": "cf8eda263dd9dfc6a8775e5d699c40fe6d73cba0c801d0206b866a50376b3c15",
+      "description_words": 117,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 10,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-corporate-income-tax.md": {
+      "sha256": "e5dfabc11e7536f4c8c23c7d75d533e7d1cb1f27708e370ca31209983f95a59b",
+      "description_words": 110,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 18,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-cross-border.md": {
+      "sha256": "bd955fe3d427dd84b8604869217989f4269a68c9352b0d6a33283d7d7d3a8207",
+      "description_words": 113,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 20,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": false,
+      "new_no_platform_keys": true,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-income-tax.md": {
+      "sha256": "9fc42daf299560e39e94b43acd79345da1fb35bab6851117cd628144f1c64935",
+      "description_words": 95,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 17,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-payroll-social.md": {
+      "sha256": "6aabfe8e57c2cb04b4825a21e58ec0850ee7d2fd2502fa6ee6ec20004bcd8954",
+      "description_words": 106,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 10,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-tax-overview.md": {
+      "sha256": "30ce023b6c78f4c78b77702abd7c193435bee4c747c2d5276dbabaf50ef5e114",
+      "description_words": 120,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 11,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-transfer-pricing.md": {
+      "sha256": "4bd3f346f345257c4c93b37f1e1ef4e3a5942f22d6b7693bddefdce392986926",
+      "description_words": 117,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 5,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": false,
+      "new_no_platform_keys": true,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/south-sudan/ss-vat-gst.md": {
+      "sha256": "24fe314c07152afd7ac2d989b260bba0e423baa5dd2c95576c63e8209f8abda2",
+      "description_words": 117,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 7,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "skills/south-sudan/ss-company-formation.md",
+        "skills/south-sudan/ss-corporate-income-tax.md",
+        "skills/south-sudan/ss-cross-border.md",
+        "skills/south-sudan/ss-income-tax.md",
+        "skills/south-sudan/ss-payroll-social.md",
+        "skills/south-sudan/ss-tax-overview.md",
+        "skills/south-sudan/ss-transfer-pricing.md",
+        "skills/south-sudan/ss-vat-gst.md",
+        "--require"
+      ],
+      "returncode": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "scoped_validator": {
+    "paths": [
+      "skills/south-sudan/ss-company-formation.md",
+      "skills/south-sudan/ss-corporate-income-tax.md",
+      "skills/south-sudan/ss-cross-border.md",
+      "skills/south-sudan/ss-income-tax.md",
+      "skills/south-sudan/ss-payroll-social.md",
+      "skills/south-sudan/ss-tax-overview.md",
+      "skills/south-sudan/ss-transfer-pricing.md",
+      "skills/south-sudan/ss-vat-gst.md"
+    ],
+    "errors": [],
+    "warnings": [],
+    "method": "Actual check_guides/check_packages_frontmatter/check_new_skill_jobs/check_merge_records/check_no_deprecated_manifests invoked on eight explicit working-tree paths; added paths derived from absence in pinned base. Full CLI will be rerun after commit."
+  },
+  "readme": {
+    "applicable": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "covered_by": {
+      "IT-IND": "ss-income-tax",
+      "IT-CORP": "ss-corporate-income-tax",
+      "VAT": "ss-vat-gst",
+      "SC": "ss-payroll-social",
+      "PR": "ss-payroll-social",
+      "TP": "ss-transfer-pricing",
+      "XB": "ss-cross-border"
+    },
+    "partial": {
+      "IT-IND": "Operative 2026 amendment chain after FY 2024/25, rental-rate conflict, deduction interactions and current forms unresolved.",
+      "IT-CORP": "Operative 2026 amendment chain, advance amount formula, rental scope and current return workflow unresolved.",
+      "VAT": "Operative 2026 regime unconfirmed; opened body/schedule conflict on sales-tax rates and valuation prevents final calculation.",
+      "SC": "Current social-insurance enactment, coverage, rates, base, registration and remittance authority unresolved.",
+      "PR": "Operative 2026 amendment chain, multi-employer interaction, social contributions, state surtax and current payroll forms unresolved.",
+      "TP": "Opened related-party pricing baseline only; operative 2026 amendments and any documentation/return instrument unresolved.",
+      "XB": "Operative 2026 chain, rental conflict, withholding/exemption interaction and applicable treaties or relief procedures unresolved."
+    },
+    "country_complete": false
+  },
+  "quote_locators": {
+    "ledger_rows_checked": 98,
+    "unique_quotes": 79,
+    "matches": 98,
+    "method": "Case/whitespace/curly quote normalisation against actual selectable text/OCR; does not itself verify the legal inference or replace fresh independent review."
+  },
+  "old_topics": {
+    "rows": 85,
+    "legacy_files": 6,
+    "all_destination_files_exist": true,
+    "cta_blocks_exact": 6
+  },
+  "production_sync": "Not run: no platform database CAS/content_revision was obtained. The initial --mode sync invocation correctly failed provenance-required. The final successful local strict-metadata audit tests pinned-base preservation and version monotonicity, not production CAS permission or publication.",
+  "skipped": [
+    "Independent statutory pack review pending",
+    "Operative2026/year and country-completion approval not given",
+    "Full repository engineering tests not applicable to Guide-only content",
+    "Derived index.json/llms-full.txt freshness skipped by contributor policy; no generated output changed",
+    "No publication, production database write, taxpayer filing/payment or authority contact"
+  ]
+}
