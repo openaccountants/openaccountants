@@ -84,8 +84,6 @@ expected:
 
 ## Sources
 
-## Sources
-
 | Source | URL | Read on |
 |---|---|---|
 | Sales Tax Instructions 5 of 2015 (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf | 2026-11-01 |

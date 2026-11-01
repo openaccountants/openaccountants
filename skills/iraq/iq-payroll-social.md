@@ -86,8 +86,6 @@ expected:
 
 ## Sources
 
-## Sources
-
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Law 113 of 1982, GCT consolidated text: arts. 11, 12, 13, 15, 17, 19, 27, 45, 46, penalties | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |

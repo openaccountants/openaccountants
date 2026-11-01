@@ -24,11 +24,8 @@ Federal tax is run by the General Commission for Taxes (GCT). The Kurdistan Regi
 - No VAT: see [VAT or GST](iq-vat-gst.md).
 - Payroll: see [payroll](iq-payroll-social.md).
 - Rented property: 10% of annual rent after a 10% maintenance deduction, 9% in effect, payable in one or two instalments (https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/).
-- Property transfers: Law 48 of 2015 adds a progressive tax on value, with the first IQD 50 million exempt.
 - Oil contractors: Law 19 of 2010.
 - Returns: individuals before 1 June, companies by 31 May.
-
-## Sources
 
 ## Sources
 
@@ -39,7 +36,7 @@ Federal tax is run by the General Commission for Taxes (GCT). The Kurdistan Regi
 | GCT guide to the company income tax return (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/%D8%AF%D9%84%D9%8A%D9%84%20%D9%85%D9%84%D8%A6%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA.pdf | 2026-11-01 |
 | GCT real estate tax guide | https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/ | 2026-11-01 |
 
-Not yet confirmed: Territorial wording in the old skill conflicts with art. 13 and the GCT guide, which tax resident Iraqis on foreign income; the new text follows the law. Law 48 of 2015 band percentages were not read.
+Not yet confirmed: Territorial wording in the old skill conflicts with art. 13 and the GCT guide, which tax resident Iraqis on foreign income; the new text follows the law. Law 48 of 2015 on property transfers (a progressive tax on value, first IQD 50 million exempt): no official text opened.
 
 <!-- openaccountants-cta-block -->
 

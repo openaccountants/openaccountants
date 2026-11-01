@@ -120,7 +120,7 @@ See [VAT or GST](iq-vat-gst.md) for rates.
 
 **EC4 -- Kurdistan Region.** Dual filing may be needed. Escalate.
 
-**EC5 -- Agricultural income.** Treated as exempt in this older text; confirm against art. 7.
+**EC5 -- Agricultural income.** Exempt from income tax (art. 7(1)).
 
 ### Test suite
 
@@ -152,15 +152,13 @@ REVIEWER FLAG / ESCALATION REQUIRED
 
 ## Sources
 
-## Sources
-
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Law 113 of 1982, GCT consolidated text: arts. 11, 12, 13, 15, 17, 19, 27, 45, 46, penalties | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 | GCT guide to the company income tax return (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/%D8%AF%D9%84%D9%8A%D9%84%20%D9%85%D9%84%D8%A6%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA.pdf | 2026-11-01 |
 | Sales Tax Instructions 5 of 2015 (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf | 2026-11-01 |
 
-Not yet confirmed: Agricultural exemption, Arabic books rule beyond correspondence, social security (see payroll skill).
+Not yet confirmed: Arabic books rule beyond correspondence, social security (see payroll skill).
 
 ## Disclaimer
 
