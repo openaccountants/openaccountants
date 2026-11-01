@@ -1,0 +1,77 @@
+{
+  "status": "writer arithmetic pass; independent review still required",
+  "read_on": "2026-11-01",
+  "cases": {
+    "CT Case 1 standard versus eligible SBR": {
+      "standard": "47250.00",
+      "relief": "0"
+    },
+    "CT Case 2 standard": {
+      "tax": "180450.00"
+    },
+    "CT Case 3 addbacks and loss cap": {
+      "adjusted": "835000.0",
+      "loss_used": "626250.00",
+      "income_after_losses": "208750",
+      "loss_remaining": "73750",
+      "tax": "0.00"
+    },
+    "CT Case 4 interest": {
+      "limit": "15000000.0",
+      "carry": "5000000"
+    },
+    "CT Case 5 QFZP": {
+      "de_minimis": "1000000.00",
+      "branch_tax": "45000.00",
+      "failing_excess": "200000"
+    },
+    "CT Case 6 software ordinary-service assumption": {
+      "de_minimis": "250000.00",
+      "nonqual_excess": "4750000"
+    },
+    "CT Case 9 monthly penalties": {
+      "filing": "1500",
+      "payment": "3500.000000000000000000000001"
+    },
+    "Payroll Case 3 paid contribution": {
+      "cap": "90000.00",
+      "deduction": "90000",
+      "addback": "30000"
+    },
+    "Payroll Case 3 unpaid variant": {
+      "paid": "80000",
+      "deduction": "80000",
+      "addback": "40000"
+    },
+    "VAT Case 1 mandatory boundary": {
+      "threshold_excess": "15000"
+    },
+    "VAT Case 2 voluntary boundary": {
+      "threshold_excess": "12500",
+      "below_mandatory": "175000"
+    },
+    "VAT Case 3 imported software": {
+      "tax": "183.60",
+      "full_recovery_payable": "0",
+      "blocked_recovery_payable": "183.60"
+    },
+    "VAT Case 4 return": {
+      "box12": "20183.60",
+      "box13": "10183.60",
+      "box14": "10000"
+    },
+    "VAT Case 5 gift boundaries": {
+      "first_below": "100",
+      "second_above": "200"
+    },
+    "VAT Case 6 error boundaries": {
+      "above": "2000",
+      "below": "2000"
+    }
+  },
+  "qualitative_cases": [
+    "CT7 registration/waiver dates and CT8 turnover/investment exclusions checked to Decisions3/2024,49/2023 and CTP006",
+    "Payroll1/2 social execution held; Case4 turnover scope, Case5 health/accommodation conditions and Case6 directors classification source-checked",
+    "VAT1/2 eligibility subject to facts; Case5 ordinary taxpayer assumption, no government/charity uplift; Case6 exact-return fallback restored"
+  ]
+}

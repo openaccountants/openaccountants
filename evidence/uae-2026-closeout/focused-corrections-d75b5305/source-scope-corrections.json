@@ -1,0 +1,46 @@
+[
+  {
+    "source": "S13",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf",
+    "raw_pdf_sha256": "6b12674d6bb8209415e03834294018828999c5f923ddf8cd208148d8b65cc30e",
+    "original_extraction_sha256": "ab7d86010a084b889ac52bde49549b526eb2caddd470fb62d5ecc0e4599d9d2a",
+    "supplement_sha256": "36c9148577c60623469e64967b155e184c2b472add452b24bf3ae2774d99a44e",
+    "private_capture": "../sources/focused-corrections-d75b5305/S13.txt",
+    "actual_read_date": "2026-11-01",
+    "corrected_scope": "Original final-page Articles 4-6 re-read and captured; earlier supplied Article 1/2 excerpt remains partial, ending during Article 2(7). No detailed sampling acceptance.",
+    "does_not_create_independent_acceptance": true
+  },
+  {
+    "source": "S23",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf",
+    "raw_pdf_sha256": "a365c742ebcc2277067cb3b7416b7960f42390dea3c3b21c982daaf67a48b9ef",
+    "original_extraction_sha256": "4063508239da1a974514d2232264e1c6f1ea093788349b230a8f552805d18260",
+    "supplement_sha256": "87d681df15eb60b46ae649249ee9fbbef26bd300270119ed305880d0560b41f3",
+    "private_capture": "../sources/focused-corrections-d75b5305/S23.txt",
+    "actual_read_date": "2026-11-01",
+    "corrected_scope": "Original section 3.8.1, including the complete Example 10 conclusion on salary and board fees, re-read and captured.",
+    "does_not_create_independent_acceptance": true
+  },
+  {
+    "source": "S24",
+    "official_url": "https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf",
+    "raw_pdf_sha256": "688896c1746ed1833ecde3b5f4ec2a6df4b76638d387f864b0d45da0e3afd15f",
+    "original_extraction_sha256": "c113e773d1c94ddcff9728676da7cca98c9f70365beab6b17e3c8737f406b9d5",
+    "supplement_sha256": "92f34536caa09cc567c8b49db1f6b5d44a1ef80a82625c1481f108c963b816ab",
+    "private_capture": "../sources/focused-corrections-d75b5305/S24.txt",
+    "actual_read_date": "2026-11-01",
+    "corrected_scope": "Original section 4.5.2 employment expenditure and section 4.5.10.1 staff entertainment re-read and captured. Prior extract omitted these operative paragraphs. Other earlier selected sections are not expanded by this supplement.",
+    "does_not_create_independent_acceptance": true
+  },
+  {
+    "source": "S04",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf",
+    "raw_pdf_sha256": "13528d9196ee2e624f06637426a79e4021d346428aa6bba34a87f11e3cbcca44",
+    "original_extraction_sha256": "0bf87c650114188a0fca64ad2c614d1b8ef73bbfaf76139539a48b10120b7a86",
+    "supplement_sha256": "fdc9347139ccff88768d8615e08f472d1f86be3541eb3e799d0cfb15457f33ff",
+    "private_capture": "../sources/focused-corrections-d75b5305/S04.txt",
+    "actual_read_date": "2026-11-01",
+    "corrected_scope": "Original annex Article 8.1.1-8.1.3 and Article 15.3-15.6 re-read and captured. Prior supplied extracts did not contain all declared deadline clauses. Articles 15.1-15.2 and full legal application remain independently unaccepted.",
+    "does_not_create_independent_acceptance": true
+  }
+]

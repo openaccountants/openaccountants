@@ -1,0 +1,50 @@
+{
+  "C01": "CLOSED:fullS26Articles38-39conditionsinVAT78",
+  "C02": "CLOSED:S04proportionalcomparisonthreshold,ExcludedEntityqualification,Annex6.1specialistreferral",
+  "C03": "CLOSED:S40items2/3distinct5000caps",
+  "C04": "CLOSED:bothcandidate-df33d21VAT135/180topicpointersnow133/178",
+  "literal_checks": [
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "version: 2.3",
+      "present": true,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "version: 2.4",
+      "present": true,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "first sale or lease of a building or part specifically designed to be used by a Charity and solely for a Relevant Charitable Activity; first supply of a building or part converted to residential within 3 years of completion of conversion, only if the original building or part was neither used as nor part of a residential building within the 5 years before conversion work began",
+      "present": true,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "- **Who:** UAE Constituent Entities of an MNE Group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year. For each comparison fiscal year other than 12 months, adjust the EUR 750 million threshold proportionally to its length. Excluded Entities are not Constituent Entities; apply the Annex 1.3 exclusions. Refer Annex 6.1 special scope/revenue-threshold cases for specialist determination rather than applying this general screen alone (Annex 1.1.1-1.1.2 and 1.3.3).",
+      "present": false,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "new": "failure to issue and transmit an electronic invoice AED 100 per invoice, up to AED 5,000 per calendar month for that violation; separately, failure to issue and transmit an electronic credit note AED 100 per credit note, up to AED 5,000 per calendar month for that distinct violation (annex items 2 and 3, not one combined cap)",
+      "present": true,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "new": "Excluded Entities are not Constituent Entities; confirm the entity's Excluded Entity status before including it.",
+      "present": true,
+      "meaning": "IntermediateExcludedEntitiesAnnex1.3wordingwasitselfsupersededbylastliteralcorrection."
+    }
+  ],
+  "hashes": {
+    "skills/uae/ae-corporate-tax.md": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72",
+    "skills/uae/uae-vat.md": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093",
+    "skills/uae/ae-payroll-social.md": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5"
+  },
+  "source_status": "Noattestationorbroadercurrentlawclaim."
+}

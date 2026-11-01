@@ -1,0 +1,242 @@
+[
+  {
+    "id": "CT-LAW",
+    "sources": [
+      "S05"
+    ],
+    "read": "Actual cached text Articles2-4;11-13;18-22;28-39;43-49;51-58;66;69-70, except detailed exemption/participation methods remain referrals. Article34 all11clauses read; Article39 through listed exception. Definitions used here crosschecked in reused S01/S08.",
+    "accepted": "Resident/juridical scope; financial year; statutory rate/base; QFZP election commencement; deductible business/mixed costs, entertainment and disallowances; interest30/31; related/connected persons and exceptions; losses; credits;9months;7years.",
+    "limits": "No whole statutory exemption, cash basis or treaty determination. Row-specific OPEN remains authoritative.",
+    "source_identities": [
+      {
+        "id": "S05",
+        "raw_sha256": "d11bdd029c1b0ab6a73cadad734d6ba85b6f61fe5014fc7fdc73fb754a557c03",
+        "text_sha256": "d7e15eff1f58b7d7cba8d7f989b3de296546a0bead401fe89165810630ff0af8"
+      }
+    ]
+  },
+  {
+    "id": "CT-DISCLOSURE",
+    "sources": [
+      "S16"
+    ],
+    "read": "Actual16.1 introductory threshold/dividend/gross reporting paragraphs and16.2 introductory conditions plus16.2.1-16.2.7.",
+    "accepted": "40m,4m dividends exclusions; connected person500k including related parties.",
+    "limits": "No full173page reading.",
+    "source_identities": [
+      {
+        "id": "S16",
+        "raw_sha256": "efe696e663a72845cb233cf29558312a858996a98424b51028baa17da6132309",
+        "text_sha256": "0016804d7ab41b02d5d67f4da3b960f97a28834879aef3a1b63c20ab165c0d5f"
+      }
+    ]
+  },
+  {
+    "id": "CT-TOPUP",
+    "sources": [
+      "S04"
+    ],
+    "read": "Actual Decision Articles1-3 and Annex1.1-1.5 start; supplied focused8.1.1-8.1.3,15.3-15.6.",
+    "accepted": "2025 commencement;15/18month topup return and15month information return.",
+    "limits": "C02 short-year screen finding; Article15.1-15.2 and detailed implementation remain OPEN, never upgraded from hashes.",
+    "source_identities": [
+      {
+        "id": "S04",
+        "raw_sha256": "13528d9196ee2e624f06637426a79e4021d346428aa6bba34a87f11e3cbcca44",
+        "text_sha256": "0bf87c650114188a0fca64ad2c614d1b8ef73bbfaf76139539a48b10120b7a86"
+      }
+    ]
+  },
+  {
+    "id": "CT-WAIVER",
+    "sources": [
+      "S18"
+    ],
+    "read": "Actual supplied Issue/Summary/Detailed Analysis through waiver/automatic credit/reconsideration actions, pp1-4.",
+    "accepted": "First-period7month filing waiver,9month payment unaffected, credit to EmaraTax.",
+    "limits": "No whole15page reading.",
+    "source_identities": [
+      {
+        "id": "S18",
+        "raw_sha256": "870a2ae8dea28c1f896489f9913157822e43ae0d999e6ce0466f30a9d0535dfd",
+        "text_sha256": "6fd625de0ff4edaccd966e8d49575398dc738d6a7aa43a0bd9b1b16c8a6a7601"
+      }
+    ]
+  },
+  {
+    "id": "PAYROLL-FUND",
+    "sources": [
+      "S28",
+      "S05",
+      "S25"
+    ],
+    "read": "S28 section5.2.1 and5.2.2 paragraphs defining funds/conditions, S05 Article4(1)(g),4(3); S25 predecessor accepted contribution clause reused.",
+    "accepted": "Quoted private-social-security fund definition and conditional exemption application statement.",
+    "limits": "No social payroll execution or current detailed exemption application method accepted.",
+    "source_identities": [
+      {
+        "id": "S28",
+        "raw_sha256": "eb628cf161386ca38116fa8fb0568c7637a99ad50bb06ff61708eec49e46577e",
+        "text_sha256": "753825c38f77bcaf50abff89f33a4e91d0cbbd1e1b95ad4f31116c8448cdaf0d"
+      },
+      {
+        "id": "S05",
+        "raw_sha256": "d11bdd029c1b0ab6a73cadad734d6ba85b6f61fe5014fc7fdc73fb754a557c03",
+        "text_sha256": "d7e15eff1f58b7d7cba8d7f989b3de296546a0bead401fe89165810630ff0af8"
+      },
+      {
+        "id": "S25",
+        "raw_sha256": "ab5b183a40fcf3bfb29570f840f744342610bb33f7387a8110961cca534b9e5f",
+        "text_sha256": "937f6fe05783badc67a910f094177c3d04605691706aca1c288af0ae7aab881e"
+      }
+    ]
+  },
+  {
+    "id": "VAT-LAW",
+    "sources": [
+      "S29"
+    ],
+    "read": "Actual consolidated header; Articles3-8;11-13;17-20;45-48;54,54bis,55;64;74.",
+    "accepted": "Registration counts/boundaries;5%;ordinary zero/exempt categories subject conditions;reverse charge/no selfinvoice;input recovery chain and timing;baddebt;fiveyearcarry.",
+    "limits": "C01 rates conditions. Detailed special reverse charge and taxpayer exemptions unaccepted.",
+    "source_identities": [
+      {
+        "id": "S29",
+        "raw_sha256": "264ef5003e5d5c79107ccf130ac60485bd6c69a06fc59957166ecbf49215f120",
+        "text_sha256": "96d0f5052409b5774c79489f5b7904caf15a72fe30d141f48c90a41d7759f1c2"
+      }
+    ]
+  },
+  {
+    "id": "VAT-REGULATION",
+    "sources": [
+      "S26"
+    ],
+    "read": "Actual header; Articles4-8;29;31-32;36-45;46;51-54;57;59-60 first credit-note clause;62-65;71-75, excluding detailed apportionment method.",
+    "accepted": "Thresholds,exportservice tests and antiavoidance;benefits/health/accommodation;invoiceparticulars/timing/electronic exceptions;zones;gift thresholds;ordinaryfiling;record15years.",
+    "limits": "C01; classification categories are not complete legal methods; Article55 dated footnotes read only for later commencement; no apportionment calculation.",
+    "source_identities": [
+      {
+        "id": "S26",
+        "raw_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+        "text_sha256": "ce2835802e9e5be002d8fe5b464d2b83397c5a99eebcefb328ac2cab533aa873"
+      }
+    ]
+  },
+  {
+    "id": "VAT-PROCEDURES",
+    "sources": [
+      "S31",
+      "S33"
+    ],
+    "read": "S31 actual Articles2-5 and9-10; S33 actual Article38 and transitional footnote.",
+    "accepted": "Recordextensions;10kboundary;20businessdays;earliesteligibleerrorreturn;refund5yearand1year/90day exceptions.",
+    "limits": "S33 Article46 transitional voluntarydisclosure2year clause not independently completed in this continuation; no fullLaw reading.",
+    "source_identities": [
+      {
+        "id": "S31",
+        "raw_sha256": "9ee99980a5d74da19d9cde918cf9611ca48b27ca52960511151317e5bc3fbb0c",
+        "text_sha256": "0b44c2f45536c8ba40463f3a4c2efa53346600a4b64888b2fcbd22674baa0565"
+      },
+      {
+        "id": "S33",
+        "raw_sha256": "7740414383e68a2a8f1afdc1958905ce496434c411b2fe0ff84969c495e650f9",
+        "text_sha256": "07c929122eef011fca2af3c5af597a9c17d32e7fcb8aad8b020160529321f44e"
+      }
+    ]
+  },
+  {
+    "id": "VAT-FORM",
+    "sources": [
+      "S32"
+    ],
+    "read": "Actual commonrequirements andoutputadjustments pp10-12;Boxes1-10 selected descriptions;Boxes12-15;VAT311;period/deadlineweekendparagraph;prefilledregistration/period.",
+    "accepted": "Historical2021 formmechanics only, supersededpenalties/carryforward expressly excluded.",
+    "limits": "No signedincurrentportal or paymentreference acceptance; remaining unlistedmechanics OPEN.",
+    "source_identities": [
+      {
+        "id": "S32",
+        "raw_sha256": "3c38e43a62155092b43156a135e011401284e1e26d97e62488b96396dcfdfdb7",
+        "text_sha256": "64bc662d17c57e7b81a4e435b1b9db450f756b1f16254674196096928f9b75ab"
+      }
+    ]
+  },
+  {
+    "id": "VAT-PENALTIES",
+    "sources": [
+      "S38"
+    ],
+    "read": "Actual header;Table1items1-12;Table3allitems;generalcommencement.",
+    "accepted": "All readtablefigures andconditions at inspectedplacements.",
+    "limits": "Pre14Apriltransition held; import50percenttable1item15 not read, staysOPEN.",
+    "source_identities": [
+      {
+        "id": "S38",
+        "raw_sha256": "7eefb79d21fa72a0937cf4dcc3f62db745aa40eb95343b104cf13782da4724a4",
+        "text_sha256": "ae03ae475a27bbd0b2ad1cade65fbd78f9a9c8be16f88270cb4d8e28bd566287"
+      }
+    ]
+  },
+  {
+    "id": "VAT-EINVOICE",
+    "sources": [
+      "S30",
+      "S39",
+      "S40"
+    ],
+    "read": "WholethreecachedDecisions text; S39 entireonepage rendered and inspected.",
+    "accepted": "S30 phaseddates andB2Cexclusion;S39amending30Octoberdate text;S40 separatepenalties andvoluntaryexclusion.",
+    "limits": "C03. S39 visibly has On[bullet]2026 and Hijridateplaceholder; it does not independently establish gazettepublicationdate. One narrowlytriggered officialsearch returned samePDF only; no newsource or enacteddate established. Do not infer gazettedate from URL.",
+    "source_identities": [
+      {
+        "id": "S30",
+        "raw_sha256": "cfa0801ac93569b108b7af100ffef22b23f934314e78357655d8a7ceae68e32b",
+        "text_sha256": "32a8f5d576955d7042558a62db663f21eaa9340ef829506512a3dc27c6b55ab7"
+      },
+      {
+        "id": "S39",
+        "raw_sha256": "ec9dac4570d0b12713c9f9e1f38098cad810c9c3450dd72dffa9d2c67c0b3c2c",
+        "text_sha256": "607cc4fe801bf1814c7b30ed298f60b15870b870acd7260bbb2f7b7300d827c3"
+      },
+      {
+        "id": "S40",
+        "raw_sha256": "67fa54647a06be48481e5f0806fcd5b92ac2833c070b1e33679d82f0aa78374d",
+        "text_sha256": "8937dd02fd391ef7bc3c1b7967721191162eb599e99a10bc46d2304427b7ff1e"
+      }
+    ]
+  },
+  {
+    "id": "FOCUSED-REPAIRS",
+    "sources": [
+      "S11",
+      "S12",
+      "S27",
+      "S36"
+    ],
+    "read": "ChangedS11Article4(3)-(4)andneighbors;S12Article2(1)-(2)andpredecessoraccepteddefinitions;S27/S36wholeEnglishclauses againstchangedplacements, predecessorArabiccomparisonreused.",
+    "accepted": "Allchangedde-minimisexclusions,headquartersrelatedparty/ancillaryexcludedrepair,phone/parkingandcash/policyrepairs.",
+    "limits": "No newcontrollingArabicclaim; detailedactivityclassificationremainsexplicitpartialhold.",
+    "source_identities": [
+      {
+        "id": "S11",
+        "raw_sha256": "6d826e87b3bfaa8031b5c89b7d1bae24d9daa87b7dd98111e34f3ffa70e8d2ed",
+        "text_sha256": "54a3726c289573f0c00c76f2251b43b649759a05e90af17eb747914ea3bd65c0"
+      },
+      {
+        "id": "S12",
+        "raw_sha256": "5398950851246aeb8c434d1302c3c5ff151180b2c3ddaf687e1d426b779bbd89",
+        "text_sha256": "c88cc20050545d47b3fa798760db3a8bea253e48c7e300fe41682007a6b87a7c"
+      },
+      {
+        "id": "S27",
+        "raw_sha256": "088a57a1f8ee57f8689fb07fafd318dc82b43cf617f1aea04d7acf0a14e84161",
+        "text_sha256": "45fe785700fb80c44a4f000bbc36f6acfd7443f14665440d95593d6669019f50"
+      },
+      {
+        "id": "S36",
+        "raw_sha256": "9fa47501162be25e68850c15bcc3f27f8c7cff5fa774ae668ae554f868ae6463",
+        "text_sha256": "326b460f095a8fe3170bf006943ef2cb134da6aa4d440df13b192b85209671d0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "P2-01",
+    "source": "S26",
+    "article": "Article8(5)-(6)",
+    "quote": "he is carrying on a Business in the State",
+    "extra_quote": "he has the intention to make any of the supplies specified",
+    "other_source": "S29 Article55: ordinary inputrecovery conditions remainseparate",
+    "status": "Registration threshold is not recovery approval; factual eligibility expressly stipulated in Case2",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "source_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+    "read_on": "2026-11-01",
+    "evidence": "Independent phase2 actual source-clause reading in source-addenda.json; quoted fragments are not a replacement for the complete clause/neighbour conditions.",
+    "definition_quote": "incurred in the State by a Person who has a Place of Residence in the State.",
+    "additional_sources": [
+      {
+        "id": "S29",
+        "article": "Article55",
+        "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf",
+        "sha256": "264ef5003e5d5c79107ccf130ac60485bd6c69a06fc59957166ecbf49215f120",
+        "quote": "The Taxable Person pays the Consideration or any part thereof",
+        "read_on": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "P2-02",
+    "source": "S26",
+    "article": "Article59(5),(16)",
+    "quote": "in cases other than where the reverse charge mechanism applies",
+    "status": "Both boundary rows now expressly retain reverse-charge/ElectronicInvoice exclusions already sourced in main paragraph",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "source_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+    "read_on": "2026-11-01",
+    "evidence": "Independent phase2 actual source-clause reading in source-addenda.json; quoted fragments are not a replacement for the complete clause/neighbour conditions.",
+    "extra_quote": "Clauses 2, 3, 5, 7, 8, 15 of this Article",
+    "context": "Article59(16) says specified clauses shallnotapply for required or voluntarilyissuedElectronicInvoices; fullclause/neighbours read, not inferredfromshortfragment."
+  },
+  {
+    "id": "P2-03",
+    "source": "S29",
+    "article": "Current amendedArticle48(1),footnote21",
+    "quote": null,
+    "status": "Historical pre2026 selfinvoice obligation unverified: no contemporaneous operative text in cache; genuine nonoperative historical hold, current-law source not misrepresented as oldlaw proof",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf",
+    "source_sha256": "264ef5003e5d5c79107ccf130ac60485bd6c69a06fc59957166ecbf49215f120",
+    "read_on": "2026-11-01",
+    "evidence": "Independent phase2 actual source-clause reading in source-addenda.json; quoted fragments are not a replacement for the complete clause/neighbour conditions.",
+    "source_classification": "Historical legal assertion UNVERIFIED; currentArticle48 is inspection/provenance evidence only, not proof of a deleted prior obligation."
+  },
+  {
+    "id": "P2-04",
+    "source": "S05",
+    "article": "Article36(1),(6),readwithArticle34",
+    "quote": "Clause 1 of this Article shall not apply",
+    "extra_quote": "A Taxable Person whose shares are traded on a Recognised Stock Exchange.",
+    "status": "All three exception categories retained in repeated CTrow/payrollCase6; no blanket deduction or relatedparty exception",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf",
+    "source_sha256": "d11bdd029c1b0ab6a73cadad734d6ba85b6f61fe5014fc7fdc73fb754a557c03",
+    "read_on": "2026-11-01",
+    "evidence": "Independent phase2 actual source-clause reading in source-addenda.json; quoted fragments are not a replacement for the complete clause/neighbour conditions."
+  },
+  {
+    "id": "P2-05",
+    "source": "S05",
+    "article": "Articles30(6),31,37-39",
+    "quote": "Losses incurred before the date of commencement of Corporate Tax.",
+    "other_source": "S06Articles11,14:historicalfinancialliabilities/qualifyinginfrastructure",
+    "status": "Examples now stipulate resolved applicability and eligible inputs; unchanged arithmetic not represented as eligibility proof",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf",
+    "source_sha256": "d11bdd029c1b0ab6a73cadad734d6ba85b6f61fe5014fc7fdc73fb754a557c03",
+    "read_on": "2026-11-01",
+    "evidence": "Independent phase2 actual source-clause reading in source-addenda.json; quoted fragments are not a replacement for the complete clause/neighbour conditions.",
+    "extra_quote": "same or a similar Business or Business Activity",
+    "additional_sources": [
+      {
+        "id": "S06",
+        "article": "Articles11and14",
+        "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf",
+        "sha256": "426272086d87004817d422b9d293433f0a7a7bf61b8502a94ba9d6fc8c4b1435",
+        "quote": "shall not be subject to the General Interest Deduction Limitation Rule.",
+        "read_on": "2026-11-01",
+        "scope": "Article14(1) exclusion plus Article11historicalfinancialliability conditions read; example stipulatesresolvedinputs, doesnotinventexemptionapplication."
+      }
+    ]
+  }
+]

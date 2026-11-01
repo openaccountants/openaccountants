@@ -1,0 +1,17 @@
+{
+  "path": "skills/uae/README.md",
+  "before_sha256": "2f21d25e087adec6256c0471dfbecd36211e4bbb5f9dc8e5c73fed9e1479a206",
+  "after_sha256": "ab08bfd2f43a8f8cdf4d94200b86aefc566f6a2963f8e327cb36f3c22f91cc72",
+  "replacements": [
+    {
+      "old": "partial:\n",
+      "new": "partial:\n  IT-CORP: \"Three-Guide review covers the team corporate draft only; detailed specialist/currentness/portal holds and the named contributor Guide remain outside its acceptance.\"\n  VAT: \"Routine source-cited preparation scope; specialist methods, historical reverse-charge source and authenticated filing holds remain.\"\n  SC: \"Federal tax treatment only; pension, gratuity, WPS and insurance coverage/execution held.\"\n  PR: \"Tax treatment and staff-benefit VAT only; social payroll execution held.\"\n"
+    },
+    {
+      "old": "| VAT or sales tax | [VAT](uae-vat.md) | 2026 | Ready |",
+      "new": "| VAT or sales tax | [VAT](uae-vat.md) | 2026 | Partial: scoped source-cited preparation; specialist, historical and filing holds remain |"
+    }
+  ],
+  "append": "\n## Source review of the three team Guides\n\nThis batch covers only the team Corporate Tax, payroll-tax/staff-benefit and VAT Guides. Named-contributor Guides remain unchanged and are not attested by this review. The [continuation evidence](../../evidence/uae-2026-closeout/independent-continuation-phase2-20261101/REVIEW.md) preserves earlier findings, source-reading scope and the stated topic-class spotcheck standard. [Focused corrections](../../evidence/uae-2026-closeout/focused-phase2-repairs-20261101/literal-repairs.json) retain the underlying historical evidence and explicit specialist, currentness and filing limits. Country coverage remains partial.\n\nFinal independent correction closure pending.\n",
+  "scope": "Honest review boundaries for three teamGuides only; income/namedGuidebytes unchanged, missingTPandpartialXB retained"
+}

@@ -1,10 +1,11 @@
 ---
 name: ae-corporate-tax
-description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue under AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Note: the UAE has NO personal income tax — self-employed individuals and sole establishments are subject to corporate tax. ALWAYS read this skill before touching any UAE corporate tax work."
-version: 2.0
+description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue not exceeding AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Wages are outside Corporate Tax; natural-person business scope has a turnover test. ALWAYS read this skill before touching any UAE corporate tax work."
+version: 2.4
+category: IT-CORP
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-01
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -14,64 +15,59 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UAE Corporate Tax: 2026 rates, scope, Small Business Relief, free zones and filing
 
-Tax year 2026. In the UAE the tax period is the business's financial year, so "2026" here means tax periods running in 2026 (for most businesses, the calendar year 1 January to 31 December 2026). The rules below are the law as published on tax.gov.ae and mof.gov.ae on 25 September 2026. A short dated section covers returns for periods ending in 2025, which are being filed now.
+Tax year 2026. In the UAE the tax period is the business's financial year, so "2026" here means tax periods running in 2026 (for most businesses, the calendar year 1 January to 31 December 2026). The operative rules below were read on 1 November 2026 in the source scopes listed at the end; held methods are not confirmed. A short dated section covers returns for periods ending in 2025.
 
-## Scope and who this is for ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
+## Scope and who this is for
 
 This skill covers federal Corporate Tax under Federal Decree-Law No. 47 of 2022 for:
 
-- UAE companies and other juridical persons, including free zone companies, and foreign companies effectively managed and controlled in the UAE. These are taxable from the first dirham of taxable income. There is no turnover threshold for a juridical person (Corporate Tax Law, Article 11(3)).
+- UAE companies and other juridical persons, including free zone companies, and foreign companies effectively managed and controlled in the UAE. Subject to Article 4 exemptions, they are within the Corporate Tax regime without a turnover threshold; the rate bands still apply. There is no natural-person turnover threshold for a juridical person (Corporate Tax Law, Article 11(3)).
 - Individuals (natural persons) running a business in the UAE: sole establishments, freelancers and other self-employed people. They are taxable only when their total business turnover is more than AED 1,000,000 in a calendar year (Cabinet Decision No. 49 of 2023, Article 2).
 - Small businesses deciding whether to elect Small Business Relief.
 - A summary of the domestic minimum top-up tax for large multinational groups. The detailed work is referred out.
 
-There is no UAE tax on an individual's wages. Wages, personal investment income and real estate investment income are not business income for an individual, whatever the amount, and do not count towards the AED 1,000,000 test (Cabinet Decision No. 49 of 2023, Article 2(2)).
+Wages are outside federal Corporate Tax for a natural person. Wages, personal investment income and real estate investment income are not business income for an individual, whatever the amount, and do not count towards the AED 1,000,000 test (Cabinet Decision No. 49 of 2023, Article 2(2)).
 
 The skill does not cover VAT, excise tax, Emirate-level taxes, tax groups, business restructuring relief, or the detailed top-up tax computation.
 
 ## Ask the client first
 
-- **What kind of person is the business?** A company (LLC, free zone company, branch), a sole establishment or freelancer (natural person), or a partnership? A juridical person is in scope from the first dirham; a natural person only above AED 1,000,000 of business turnover in a calendar year. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
-- **Financial year end and first tax period.** This sets the return and payment deadline (9 months after the period ends).
-- **Revenue for this period and for every earlier tax period.** Small Business Relief fails permanently once any period's revenue has been over AED 3,000,000. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
-- **Is the business part of a multinational group?** Ask for group consolidated revenue. A constituent company of a multinational group, as defined in Cabinet Decision No. 44 of 2020 (groups with consolidated revenue of at least AED 3.15 billion), cannot use Small Business Relief ([Ministerial Decision No. 73 of 2023, Article 3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). Groups with EUR 750 million or more may be in scope of top-up tax. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf))
-- **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime.
-- **Corporate Tax registration.** The date registered, the registration deadline, and whether a late registration penalty was imposed.
-- **Losses brought forward**, the period they arose in, and any ownership change of more than 50% since then. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
-- **Interest expense and EBITDA**, if net interest is large.
-- **Related party and connected person transactions:** owners, directors, family members, group companies, and payments to them.
-- **Entertainment, fines, owner drawings and personal expenses** in the accounts.
-- **Returns already filed or due**, especially for periods ending 31 December 2025 (due 30 September 2026).
+- **What kind of person is the business?** A company (LLC, free zone company, branch), a sole establishment or freelancer (natural person), or a partnership? Subject to exemptions, a juridical person is in scope without the natural-person turnover test; a natural person only above AED 1,000,000 of business turnover in a calendar year. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
+- **Financial year end and first tax period.** This sets the return and payment deadline (9 months after the period ends). **Revenue for this period and for every earlier tax period.** Small Business Relief fails permanently once any period's revenue has been over AED 3,000,000. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
+- **Is the business part of a multinational group?** Ask for group consolidated revenue. A constituent company of a multinational group, as defined in Cabinet Decision No. 44 of 2020 (groups within Cabinet Decision No. 44 of 2020), cannot use Small Business Relief ([Ministerial Decision No. 73 of 2023, Article 3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). Screen groups against the top-up-tax scope below; this is not a determination of liability. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf)) **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime.
+- **Corporate Tax registration.** The date registered, the registration deadline, and whether a late registration penalty was imposed. **Returns already filed or due**, especially for periods ending 31 December 2025 (the due date, 30 September 2026, has passed, so check for late penalties).
+- **Losses brought forward**, the period they arose in, and any ownership change of more than 50% since then. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf)) **Interest expense and EBITDA**, if net interest is large.
+- **Related party and connected person transactions:** owners, directors, family members, group companies, and payments to them. **Entertainment, fines, owner drawings and personal expenses** in the accounts.
 
 ## The method, step by step
 
-1. **Decide whether the person is a Taxable Person.** A juridical person resident in the UAE is always one, including a free zone company. A natural person is one only if their business turnover is more than AED 1,000,000 in the calendar year, not counting wages, personal investment income or real estate investment income. Check exemptions (government entities, qualifying public benefit entities, qualifying funds and others under Article 4) and refer them out. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
+1. **Decide whether the person is a Taxable Person.** A resident juridical person, including a free zone company, is within Article 11, subject to Article 4 exemptions. A natural person is one only if their business turnover is more than AED 1,000,000 in the calendar year, not counting wages, personal investment income or real estate investment income. Check exemptions (government entities, qualifying public benefit entities, qualifying funds and others under Article 4) and refer them out. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
 2. **Check registration.** Every Taxable Person registers on EmaraTax by the deadline in FTA Decision No. 3 of 2024 (table below), including businesses that will claim Small Business Relief and free zone companies.
 3. **Fix the tax period.** It is the financial year, meaning the Gregorian calendar year or the 12-month period for which financial statements are prepared (Article 57). Changing it needs an application to the FTA (Article 58).
-4. **Test Small Business Relief** for a resident person. Revenue must be AED 3,000,000 or less in this period *and in every previous period*. The period must end on or before 31 December 2029. The person must not be a QFZP or a constituent company of a multinational group. If eligible and the client wants it, elect it on the return. Taxable income is then treated as nil and a simplified return is filed. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
+4. **Test Small Business Relief** for a resident person. Revenue must be AED 3,000,000 or less in this period *and in every previous period*. The period must start on or after 1 June 2023 and end on or before 31 December 2029 (MD 131/2026 Article One). The person must not be a QFZP or a constituent company of a multinational group. If eligible and the client wants it, elect it on the return. Taxable income is then treated as nil and a simplified return is filed. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
 5. **For a free zone company, test QFZP status**: adequate substance, qualifying income, the de minimis test, arm's length compliance with transfer pricing documentation, audited financial statements, and no election out. If any condition fails, it is taxed like a mainland company for that period and the next four.
-6. **Compute taxable income** (Article 20): start from accounting net profit under IFRS (or IFRS for SMEs where allowed). Remove exempt income (for example qualifying dividends and participation income, Articles 22-23). Add back non-deductible items: 50% of entertainment, fines, bribes, owner drawings, Corporate Tax itself, recoverable input VAT, and donations to bodies that are not qualifying public benefit entities (Articles 28, 32, 33). Apportion mixed personal and business costs. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
-7. **Apply the interest limitation** if net interest expense is more than AED 12,000,000: the deduction is the higher of AED 12,000,000 and 30% of tax-adjusted EBITDA. The excess carries forward for 10 periods. ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf))
+6. **Compute taxable income** (Article 20): start from accounting net profit under the accounting standards accepted in the UAE; standards/cash-basis eligibility is held below. Remove exempt income (for example qualifying dividends and participation income, Articles 22-23). Add back non-deductible items: 50% of entertainment, fines, bribes, owner drawings, Corporate Tax itself, recoverable input VAT, and donations to bodies that are not qualifying public benefit entities (Articles 28, 32, 33). Apportion mixed personal and business costs. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
+7. **Apply the general interest limitation** for persons in scope of Article 30, after the separate Article 31 test and historical-debt/infrastructure exclusions; for a 12-month period with net interest expense above AED 12,000,000: the deduction is the higher of AED 12,000,000 and 30% of tax-adjusted EBITDA. The excess carries forward for 10 periods. Pro-rate the monetary threshold for a non-12-month period. ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf))
 8. **Adjust related party and connected person transactions to arm's length** (Articles 34-36).
 9. **Deduct brought-forward losses**, oldest first, up to 75% of taxable income before loss relief (Article 37). ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
 10. **Apply the rates**: 0% on the first AED 375,000 of taxable income and 9% on the rest. A QFZP pays 0% on qualifying income and 9% on all other taxable income, with no AED 375,000 band. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
-11. **Take credits** (foreign tax credit, capped at the UAE tax on the same income; withholding tax credit) and compute tax payable.
+11. **Take credits in statutory order:** withholding tax credit first, then foreign tax credit capped at UAE tax on the same income (unused foreign credit is neither carried forward nor back), then applicable other incentives or relief credits, then pay the residual (Articles 44, 46-47).
 12. **File and pay within 9 months** of the end of the period on EmaraTax, and keep records for 7 years.
 
-## Rates and thresholds for 2026
+### Rates and thresholds for 2026
 
 ### Rates ([Corporate Tax Law, Article 3](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf))
 
-| Who | Taxable income | Rate |
-| --- | --- | --- |
-| Taxable Person (not a QFZP) | Portion not exceeding AED 375,000 | 0% |
-| Taxable Person (not a QFZP) | Portion exceeding AED 375,000 | 9% |
-| Qualifying Free Zone Person | Qualifying Income | 0% |
-| Qualifying Free Zone Person | All taxable income that is not Qualifying Income (no AED 375,000 band) | 9% |
-| Non-resident with no permanent establishment or nexus | UAE-sourced income, as withholding tax | 0% |
+| Who | Taxable income | Rate | Source |
+| --- | --- | --- | --- |
+| Taxable Person (not a QFZP) | Portion not exceeding AED 375,000 | 0% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Taxable Person (not a QFZP) | Portion exceeding AED 375,000 | 9% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Qualifying Free Zone Person | Qualifying Income | 0% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Qualifying Free Zone Person | All taxable income that is not Qualifying Income (no AED 375,000 band) | 9% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Non-resident with no permanent establishment or nexus | UAE-sourced income, as withholding tax | 0% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
 
-- The AED 375,000 band is given once per Taxable Person per tax period, however many businesses it runs. Splitting a business artificially to get more than one band is treated as tax avoidance (Cabinet Decision No. 116 of 2022, Article 2).
-- A multinational group in scope of top-up tax pays extra tax so that its effective rate in the UAE reaches 15% (Corporate Tax Law, Article 3(3)). See the top-up tax section.
+- The AED 375,000 band is given once per Taxable Person per tax period, however many businesses it runs. Artificial separation that brings the combined zero-rated taxable-income amount above the band is subject to the anti-abuse rule; the FTA considers legitimate commercial purpose and the financial, economic and regulatory ties (Cabinet Decision No. 116 of 2022, Article 2).
+- A multinational group in scope of top-up tax pays extra tax under the UAE GloBE computation, using the 15% minimum rate; exclusions, adjustments and safe harbours mean this is not simply 15% of accounting profit (Corporate Tax Law, Article 3(3)). See the top-up tax section.
 
 ### Natural persons ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [Small business bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf))
 
@@ -89,14 +85,14 @@ The skill does not cover VAT, excise tax, Emirate-level taxes, tax groups, busin
 | Who | A Resident Person that is a Taxable Person, natural or juridical |
 | Revenue test | Revenue of AED 3,000,000 or less in the current tax period **and in every previous tax period**; one period over the threshold ends eligibility for good |
 | Periods covered | Tax periods starting on or after 1 June 2023 and ending on or before 31 December 2029 (extended from 31 December 2026 by Ministerial Decision No. 131 of 2026, issued 29 July 2026) |
-| Excluded | A Qualifying Free Zone Person; a constituent company of a multinational group under Cabinet Decision No. 44 of 2020 (group consolidated revenue of at least AED 3.15 billion) |
+| Excluded | A Qualifying Free Zone Person; a constituent company of a multinational group under Cabinet Decision No. 44 of 2020 (apply the constituent-company definition in Cabinet Decision No. 44 of 2020; do not substitute the distinct master/local-file threshold) |
 | How | Register, then elect in the tax return for **each** period; it is not automatic |
 | Effect | Treated as having no taxable income; simplified return; no Corporate Tax |
 | What switches off | Exempt income, reliefs, deductions, tax loss relief and transfer pricing documentation (Article 55) do not apply in a relief year. Transactions must still be at arm's length when measuring revenue |
 | Losses | A loss of a relief year cannot be carried forward. Losses from earlier non-relief years cannot be used in a relief year but survive for later non-relief years |
 | Interest | Net interest expenditure of a relief year cannot be carried forward; earlier disallowed interest survives for non-relief years |
 | Anti-splitting | Artificially splitting a business to stay under AED 3,000,000 is treated as tax avoidance |
-| Accounts | Cash-basis financial statements are allowed when revenue does not exceed AED 3,000,000 |
+| Accounts | NON-OPERATIVE HOLD: confirm MD 114/2023 cash-basis eligibility separately before using cash accounts |
 
 Revenue means gross income under the accounting standards applied, not profit ([Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). The FTA's small business bulletin still says periods ending on or before 31 December 2026. Ministerial Decision No. 131 of 2026 replaces that text, so rely on the Decision.
 
@@ -104,27 +100,32 @@ Revenue means gross income under the accounting standards applied, not profit ([
 
 A Free Zone Person is a juridical person incorporated, established or registered in a free zone. Individuals and unincorporated partnerships cannot be Free Zone Persons. A Free Zone Person is a QFZP only while it meets **all** of these conditions (Corporate Tax Law, Article 18):
 
-- It keeps adequate substance in the free zone or designated zone: core income-generating activities carried on there, with adequate assets, qualified full-time staff and operating costs. Outsourcing is allowed only within a free zone and under adequate supervision.
+- It keeps adequate substance in the free zone or designated zone: core income-generating activities carried on there, with adequate assets, qualified full-time staff and operating costs. Outsourcing follows the free-zone/designated-zone location and supervision conditions. For Qualifying Intellectual Property, Article 8(3) permits outsourcing anywhere in the UAE or to an unrelated person abroad, with adequate supervision.
 - It derives Qualifying Income.
 - It has not elected to be taxed at the standard rates.
 - It complies with the arm's length principle and keeps transfer pricing documentation.
 - It prepares audited financial statements.
 - Its non-qualifying revenue does not exceed 5% of total revenue or AED 5,000,000, whichever is lower (the de minimis test in Ministerial Decision No. 229 of 2025, Article 3).
 
+For this calculation, exclude the following from **both non-qualifying revenue and total revenue** under Cabinet Decision No. 100 of 2023, Article 4(3): free-zone commercial-property transactions with a Non-Free Zone Person; free-zone non-commercial-property transactions with any person; revenue attributable to a domestic or foreign permanent establishment; and intellectual-property ownership/exploitation revenue, except revenue related to Qualifying Income under Article 7(1). Article 4(4) treats the QFZP and each permanent establishment as separate, independent related persons. Apply these exclusions before computing the percentage or comparing it with the monetary limit.
+
 **Qualifying Income** is income from transactions with other Free Zone Persons (who must be the beneficial recipients), except income from Excluded Activities. It also includes income from transactions with anyone for Qualifying Activities, qualifying intellectual property income, and other income while the de minimis test is met.
 
-**Qualifying Activities** (MD 229 of 2025): manufacturing and processing of goods or materials; trading of qualifying commodities; holding shares and other securities for investment; ownership, management and operation of ships; reinsurance; fund management; wealth and investment management; headquarter services and treasury and financing services to related parties or for its own account; aircraft financing and leasing; distribution of goods or materials in or from a designated zone; logistics services; and ancillary activities.
+**Qualifying Activities** (MD 229 of 2025): manufacturing and processing of goods or materials; trading of qualifying commodities; holding shares and other securities for investment; ownership, management and operation of ships; reinsurance; fund management; wealth and investment management; headquarter services to related parties; treasury and financing services to related parties or for its own account; aircraft financing and leasing; distribution of goods or materials in or from a designated zone; logistics services; and ancillary activities.
 
-**Excluded Activities** are always non-qualifying:
+**Excluded Activities** generate non-qualifying revenue for the de minimis test; satisfying de minimis can still bring other income into Qualifying Income under Cabinet Decision No. 100 of 2023, Article 3(1)(d):
 - transactions with natural persons, except for ships, fund management, wealth management and aircraft leasing;
 - banking;
 - insurance, other than reinsurance and captive insurance within headquarter services;
 - finance and leasing, subject to the exceptions in MD 229;
 - ownership or exploitation of immovable property, other than commercial property in a free zone let to a Free Zone Person.
+- activities ancillary to the Excluded Activities above (MD 229/2025 Article 2(2)(f)).
+
+**Detailed activity classification is a NON-OPERATIVE HOLD.** The names above are a screening list, not complete qualification tests. MD 229/2025 Article 2(3)-(4) defines each activity and ancillary status, including the uninterrupted holding period for investment securities, regulatory oversight for fund/wealth management, and customer/import conditions for distribution. Obtain a specialist determination against those definitions before treating an activity as qualifying or excluded.
 
 Always taxed at 9% even for a QFZP: income of a domestic or foreign permanent establishment (for example a mainland branch), most immovable property income, and non-qualifying intellectual property income.
 
-**Consequence of failing:** a QFZP that fails any condition, or elects out, is taxed at the standard rates from the start of that tax period **and for the four following tax periods**.
+**Consequence of failing:** failure of a condition removes QFZP status from the start of that period and for the next four periods (MD 229/2025 Article 5). An election to use standard rates takes effect from the current or following period under Corporate Tax Law Article 19; the election-duration rules are a separate unconfirmed hold below.
 
 A QFZP distributing goods in or from a designated zone also needs an agreed-upon procedures report from its auditor, for periods starting on or after 1 January 2026 ([FTA Decision No. 6 of 2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf)).
 
@@ -141,7 +142,7 @@ A QFZP distributing goods in or from a designated zone also needs an agreed-upon
 | Amounts withdrawn by a natural person Taxable Person or a partner | Not deductible |
 | Corporate Tax; foreign tax on income; recoverable input VAT | Not deductible |
 | Donations to bodies that are not Qualifying Public Benefit Entities | Not deductible |
-| Payments to connected persons (owners, directors, their related parties) | Deductible only up to market value and only if wholly and exclusively for the business |
+| Payments to connected persons (owners, directors, their related parties) | Article 36(1) limits deduction to Market Value and wholly/exclusively Business use, subject to Article 36(6): recognised-stock-exchange listed taxpayers, taxpayers under competent UAE regulatory oversight and any applicable Cabinet-determined Person are excepted from Clause 1. Ordinary deduction rules and Article 34 where separately applicable still require review |
 
 ### Losses ([Corporate Tax Law, Articles 37-39](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA losses bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf))
 
@@ -149,7 +150,7 @@ A QFZP distributing goods in or from a designated zone also needs an agreed-upon
 - The oldest losses go first. Losses must be used to the fullest extent possible each period; the client cannot choose to use less.
 - No relief for losses from before Corporate Tax started, from before the person became taxable, or from exempt activities.
 - After an ownership change of more than 50%, losses survive only if the same or a similar business continues. This test does not apply to listed companies.
-- Transfer of losses to a group company needs 75% common ownership, both resident juridical persons, neither exempt nor a QFZP, the same year end and the same accounting standards. The 75% cap applies to own and transferred losses together.
+- Transfer of losses to a group company needs 75% common ownership, both resident juridical persons, neither exempt nor a QFZP, the same year end and the same accounting standards. The ownership must run continuously from the start of the loss period to the end of the utilisation period (Article 38(1)(d)). The 75% cap applies to own and transferred losses together.
 - For how losses interact with Small Business Relief, see that section.
 
 ### Interest limitation ([Corporate Tax Law, Article 30](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf))
@@ -173,23 +174,23 @@ A QFZP distributing goods in or from a designated zone also needs an agreed-upon
   - a person and its permanent establishment;
   - partners in the same unincorporated partnership;
   - trustees, founders and beneficiaries of trusts and foundations.
-- **Control** includes the ability to exercise 50% or more of voting rights, appoint 50% or more of the board, or receive 50% or more of profits.
+- **Control** includes the ability to exercise 50% or more of voting rights, determine 50% or more of the board, receive 50% or more of profits, or otherwise exercise significant influence over the business and affairs (Article 35(2)(d)).
 - **Connected persons** are the owners, directors and officers, and their related parties. Payments to them are deductible only at market value. This does not apply to listed or regulated taxpayers.
-- **Disclosure in the return:** complete the related party schedule when the total value of all related party transactions is more than AED 40 million, and disclose each category over AED 4 million. Complete the connected person schedule where transactions with a connected person total more than AED 500,000.
-- **Master file and local file:** required where the taxpayer's revenue in the period is AED 200,000,000 or more, or it belongs to a multinational group with consolidated revenue of AED 3,150,000,000 or more. Documents must be produced within 30 days of an FTA request.
+- **Disclosure in the return:** complete the related party schedule when the total value of all related party transactions is more than AED 40 million, and disclose each category over AED 4 million. Dividends between related parties are excluded from both thresholds; report gross income and expenditure separately (Tax Returns Guide section 16.1). Complete the connected person schedule where payments or benefits with a connected person together with its related parties exceed AED 500,000; report each qualifying person separately (Tax Returns Guide sections 9.3 and 16.2).
+- **Master file and local file:** required where the taxpayer's revenue in the period is AED 200,000,000 or more, or it belongs to a multinational group with consolidated revenue of AED 3,150,000,000 or more. The local-file inclusion/exclusion conditions in MD 97/2023 Article 2(2)-(6) must also be tested; a file threshold does not mean every transaction belongs in it. Documents must be produced within 30 days of an FTA request, or the later date directed by the FTA.
 
 ### Domestic minimum top-up tax, summary only ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf); [FTA Decision No. 12 of 2026](https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf))
 
-- **Who:** UAE constituent entities of a multinational group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year.
+- **Who:** UAE Constituent Entities of an MNE Group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year. For each comparison fiscal year other than 12 months, adjust the EUR 750 million threshold proportionally to its length. Excluded Entities are not Constituent Entities; confirm the entity's Excluded Entity status before including it. Refer Annex 6.1 special scope/revenue-threshold cases for specialist determination rather than applying this general screen alone (Annex 1.1.1-1.1.2 and 1.3.3).
 - **From when:** fiscal years beginning on or after 1 January 2025.
-- **What:** a top-up tax so that the group's effective tax rate in the UAE reaches 15%, following the OECD GloBE rules.
+- **What:** a top-up tax computed under the annex's UAE GloBE rules using the 15% minimum rate, with adjustments, exclusions and safe harbours; do not calculate it as 15% of accounting profit.
 - **Registration:** within 7 months after the end of the first fiscal year in scope. Entities with a fiscal year ending before 30 April 2026 register on or before 30 November 2026.
 - **Top-up tax return:** due 15 months after the end of the fiscal year, or 18 months for the fiscal year that is the first transition year (Article 8.1.2).
 - **Pillar Two information return:** due 15 months after the end of the fiscal year. The decision gives no longer first-year period for this return (Article 15.4). The FTA may change these requirements, so check before relying on them.
 
 The computation is specialist work, so refer it out (see "When to refuse or refer").
 
-## Boundaries and exceptions ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf))
+## Boundary and exception table
 
 | Situation | Outcome |
 | --- | --- |
@@ -200,13 +201,13 @@ The computation is specialist work, so refer it out (see "When to refuse or refe
 | Revenue above AED 3,000,000 in any earlier period | Small Business Relief never available again |
 | Business with revenue under AED 3,000,000 that forgets to elect | Taxed normally; the election is made period by period on the return |
 | Free zone company, non-qualifying revenue exactly at the lower of 5% or AED 5,000,000 | Passes (the test is "does not exceed") |
-| Free zone company selling to individuals | Excluded Activity: non-qualifying revenue, which counts against the de minimis test |
+| Free zone company selling to individuals | Normally Excluded Activity and non-qualifying revenue for de minimis; MD 229/2025 Article 2(2)(a) excepts the specified ship, fund management, wealth management and aircraft activities |
 | Free zone company with a mainland branch | Branch income taxed at 9% with no AED 375,000 band |
 | QFZP claiming Small Business Relief | Not allowed |
 | Net interest expenditure of exactly AED 12,000,000 | Fully deductible (limit applies only above it) |
 | Loss brought into a Small Business Relief year | Not used that year; still available in a later non-relief year |
 
-## Worked cases ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf))
+## Worked cases
 
 The amounts are illustrations. Each case uses a calendar-year tax period unless stated.
 
@@ -220,18 +221,18 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
    - **Relief:** if revenue fell to AED 2,400,000 in 2027, Small Business Relief would still not be available, because 2025 revenue exceeded the threshold ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf)).
 3. **Loss cap and entertainment.**
    - **Add-backs:** a company's 2026 accounting profit is AED 800,000. It includes AED 60,000 of client entertainment and an AED 5,000 traffic fine. Add back 50% of the entertainment (AED 30,000) and the whole fine: AED 800,000 + AED 30,000 + AED 5,000 = AED 835,000.
-   - **Loss cap:** it has AED 700,000 of losses from 2024 and 2025. The cap is AED 835,000 × 75% = AED 626,250. Taxable income becomes AED 835,000 − AED 626,250 = AED 208,750, which falls inside the AED 375,000 0% band, so the tax is nil. The remaining AED 73,750 of losses carries forward.
+   - **Loss cap:** assume its AED 700,000 carried-forward Tax Losses from 2024 and 2025 are eligible under Articles 37-39, with all applicable eligibility, ownership-continuity and Business-activity conditions resolved. The cap is AED 835,000 × 75% = AED 626,250. Taxable income becomes AED 835,000 − AED 626,250 = AED 208,750, which falls inside the AED 375,000 0% band, so the tax is nil. The remaining AED 73,750 of losses carries forward.
    - **If it had elected Small Business Relief instead:** had its revenue allowed it to elect the relief in 2026, none of the AED 700,000 could be used in 2026, but all of it would survive for later non-relief years ([FTA losses bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf)).
 4. **Interest limitation.**
-   - **Facts:** a property developer has net interest expenditure of AED 20,000,000 and tax-adjusted EBITDA of AED 50,000,000.
-   - **Limit:** 30% of EBITDA is AED 50,000,000 × 30% = AED 15,000,000, which is higher than AED 12,000,000, so AED 15,000,000 is deductible. The other AED 5,000,000 carries forward for up to 10 periods ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf)).
+   - **Facts:** assume an in-scope juridical property developer, outside Article 30(6) exclusions, with Article 31 specific-interest checks resolved. Its AED 20,000,000 is eligible Net Interest Expenditure after the historical-financial-liability and qualifying-infrastructure checks in Ministerial Decision 126/2023 Articles 11 and 14; no unresolved exclusion is included in that amount. Tax-adjusted EBITDA is AED 50,000,000.
+   - **Limit:** 30% of EBITDA is AED 50,000,000 × 30% = AED 15,000,000, which is higher than AED 12,000,000, so AED 15,000,000 is deductible. The other AED 5,000,000 carries forward for up to 10 periods subject to the applicable later-period limitations and ordering rules ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf)).
 5. **QFZP that passes de minimis, with a mainland branch.**
-   - **De minimis test:** a free zone distributor has total revenue of AED 20,000,000 (excluding its mainland branch), all from Qualifying Activities except AED 800,000 of sales to individuals. The de minimis limit is the lower of AED 20,000,000 × 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%.
+   - **De minimis test:** a free zone distributor has revenue of AED 20,000,000 after every Article 4(3) exclusion described above, with mainland-branch revenue excluded. Assume no further excluded property or intellectual-property revenue and that a specialist has confirmed the distribution activity and customer conditions. Of that adjusted revenue, AED 800,000 is non-qualifying sales to individuals; the rest is qualifying distribution revenue. The de minimis limit is the lower of AED 20,000,000 × 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%.
    - **Branch:** the branch's AED 500,000 of taxable income is taxed at 9% with no AED 375,000 band: AED 500,000 × 9% = AED 45,000.
    - **If the test had failed:** had sales to individuals been AED 1,200,000, it would fail and be taxed at the standard rates for 2026 and the four following periods ([Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf)).
 6. **Free zone software house selling to the mainland.**
    - **Facts:** a free zone software company earns AED 5,000,000, all from mainland companies.
-   - **Outcome:** software development is not a Qualifying Activity, so all of that revenue is non-qualifying and far above the de minimis limit. It is not a QFZP. It pays 0% on the first AED 375,000 of taxable income and 9% above that, like a mainland company ([Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf)).
+   - **Outcome:** assume the receipts are ordinary development-service fees, with no qualifying intellectual-property income. Those services are not a listed Qualifying Activity, so all of that revenue is non-qualifying and far above the de minimis limit. It is not a QFZP. It pays 0% on the first AED 375,000 of taxable income and 9% above that, like a mainland company ([Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf)).
 7. **Late registration waived.**
    - **Facts:** a company incorporated on 10 February 2026 with a 31 December year end had to register within 3 months, by 10 May 2026. It registered in August 2026, so the AED 10,000 late registration penalty applies.
    - **Waiver:** if it files its first return (period ending 31 December 2026) within 7 months, by 31 July 2027, the FTA waives the penalty, or refunds it to the EmaraTax account if it was paid. The tax itself is still due within 9 months, by 30 September 2027 ([CTP006](https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf)).
@@ -243,6 +244,49 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
    - **Late filing:** AED 500 is charged on 1 October, 1 November and 1 December: 3 × AED 500 = AED 1,500.
    - **Late payment:** 14% a year, charged monthly for each month or part, on the unpaid tax. That is about AED 100,000 × 14% ÷ 12 × 3 = AED 3,500. EmaraTax computes the exact amount, so confirm it there ([Cabinet Decision No. 75 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf)).
 
+```oa-check
+name: Elect eligible Small Business Relief or use standard rates, Case 1 (2026)
+inputs:
+  taxable_income: 900000
+  band: 375000
+  rate: 0.09
+steps:
+  - tax_without_election: max(taxable_income - band, 0) * rate
+  - tax_with_eligible_election: 0
+  - tax_saved: tax_without_election - tax_with_eligible_election
+expected:
+  tax_without_election: 47250.00
+  tax_with_eligible_election: 0.00
+  tax_saved: 47250.00
+```
+
+```oa-check
+name: Relief lost, standard computation, Case 2 (2026)
+inputs:
+  taxable_income: 2380000
+  band: 375000
+  rate: 0.09
+steps:
+  - tax: (taxable_income - band) * rate
+expected:
+  tax: 180450.00
+```
+
+```oa-check
+name: Late return and late payment, Case 9
+inputs:
+  months_late: 3
+  tax_unpaid: 100000
+  filing_penalty: 500
+  annual_rate: 0.14
+steps:
+  - late_filing: months_late * filing_penalty
+  - late_payment: tax_unpaid * annual_rate / 12 * months_late
+expected:
+  late_filing: 1500.00
+  late_payment: 3500.00
+```
+
 ## When to refuse or refer
 
 - **Business structure unknown.** Stop until you know whether the client is a juridical person, a natural person, a partnership or a branch. The rules differ at every step.
@@ -252,7 +296,7 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
 - **Tax groups, loss transfers, qualifying group transfers, business restructuring relief, and participation exemption** claims.
 - **Transfer pricing documentation**, advance pricing agreements, or related party transactions near the disclosure thresholds.
 - **Non-residents:** permanent establishment or nexus questions, effective management and control, withholding tax and treaty relief.
-- **Exempt persons**: government-controlled entities, public benefit entities, investment funds, pension funds, extractive businesses.
+- **Exempt persons**: government-controlled entities, public benefit entities, investment funds, pension funds, extractive businesses. For the categories and applications within its Articles 2 and 5, exemption procedure follows [FTA Decision No. 15 of 2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf), in force from 15 September 2026.
 - **Voluntary disclosures, tax assessments, reconsideration requests**, or unfiled past periods.
 - **Unincorporated partnerships and family foundations.**
 - **Research and development incentives or tax credits**, which fall outside this skill.
@@ -286,7 +330,7 @@ Businesses claiming Small Business Relief and free zone companies must register 
 | 30 September 2026 | 30 June 2027 |
 | 31 December 2026 | 30 September 2027 |
 
-### Returns being filed now: periods ending in 2025 ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
+### Earlier returns: periods ending in 2025 ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
 
 | Tax period ended | Return and payment due |
 | --- | --- |
@@ -305,7 +349,7 @@ The same rates, the AED 375,000 band and the Small Business Relief conditions ap
 | Late payment | 14% a year, charged monthly for each month or part, on the unpaid tax from the day after the due date |
 | Incorrect return corrected before the filing deadline | No penalty; otherwise AED 500 |
 | Voluntary disclosure of an error | 1% of the tax difference for each month or part from the original due date |
-| Error found by the FTA without a voluntary disclosure | 15% of the tax difference, plus 1% a month |
+| Failure to disclose an error before audit notification | 15% of the tax difference, plus 1% per month or part; the end date depends on whether a disclosure is later submitted or an assessment is issued (Decision 75/2023 table item 11) |
 | Failure to keep records | AED 10,000, or AED 20,000 for a repeat within 24 months |
 | Late deregistration application | AED 1,000 a month, up to AED 10,000 |
 | Failure to update the tax record | AED 1,000, or AED 5,000 for a repeat within 24 months |
@@ -325,6 +369,35 @@ The same rates, the AED 375,000 band and the Small Business Relief conditions ap
 - [ ] Audited statements obtained where revenue exceeds AED 50,000,000 or the person is a QFZP.
 - [ ] Top-up tax scope checked for multinational groups (EUR 750 million) and referred out.
 - [ ] Return filed and tax paid on EmaraTax; records kept for 7 years.
+
+## Sources
+
+| Source and precise scope | URL | Read on |
+|---|---|---|
+| S01: whole Decision, definitions and arts 1-4 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S02: whole Decision arts 1-7, read with S10 amendment | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S03: Small Business Relief Guide pp 11-14, relief election, revenue and MNE exclusions; old sunset superseded by S10 | https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S04: Original annex Article 8.1.1-8.1.3 and Article 15.3-15.6 re-read and captured. Prior supplied extracts did not contain all declared deadline clauses. Articles 15.1-15.2 and full legal application remain independently unaccepted. | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |
+| S05: definitions; arts 2-4, 11-13, 18-22, 28-39, 43-58, 66 and 69-70 including neighbours and amendment footnotes | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S06: whole Decision arts 1-15, including historical-debt/infrastructure exclusions and short-period adjustment | https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S07: whole Decision arts 1-5 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S08: bulletin questions 2-7 for Free Zone definition, QFZP rate-band exclusion and historic election guidance; not current activity list | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S10: whole amending Decision, replacement clause and commencement | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S11: whole Decision arts 1-11 including de minimis exclusions, intellectual property and outsourcing neighbours | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%20100%20of%202023%20on%20Determining%20Qualifying%20Income%20for%20the%20Qualifying%20Free%20Zone%20Person%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S12: arts 1-3 and 5-7, qualifying/excluded activities, definitions, de minimis and loss of status; detailed IP formula excluded | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S13: Original final-page Articles 4-6 re-read and captured; earlier supplied Article 1/2 excerpt remains partial, ending during Article 2(7). No detailed sampling acceptance. | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |
+| S14: bulletin Q3-6 and Q8, loss limits, ordering and transfers | https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S15: whole Decision arts 1-4 including local-file inclusion/exclusion conditions | https://tax.gov.ae/Datafolder/Files/Legislation/05-06-2023/2/Ministerial%20Decision%20No.%2097%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S16: Tax Returns Guide sections 9.3, 16.1 and 16.2, return disclosure fields and exceptions; not a full 173-page guide review | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT-Returns-EN-11-11-2024.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S17: whole Decision arts 1-8, registration/deregistration/notices and commencement | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S18: CTP006 Issue, Summary and Detailed Analysis pp 1-4; taxable-person waiver examples pp 5-7, no whole 15-page review claimed | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S19: whole Decision and amended penalty table, arts 1-4 and table items 1-14 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S20: whole Decision arts 1-6, categories, exemption-application exceptions, repeal and commencement; Guide remains a referral | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S21: whole Decision arts 1-8, resident/non-resident/natural-person tables and effective date | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S22: whole Decision arts 1-5, audit threshold, QFZP, tax-group and non-resident conditions | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| A15: whole original Arabic Decision arts 1-6, especially categories and commencement | https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTaxAr.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+
+Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56.
 
 <!-- openaccountants-cta-block -->
 

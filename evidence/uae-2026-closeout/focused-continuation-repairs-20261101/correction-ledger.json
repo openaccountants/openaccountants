@@ -1,0 +1,59 @@
+[
+  {
+    "id": "UAE-CONT-F1a",
+    "source_id": "S26",
+    "article": "Executive Regulation Article38",
+    "rule": "Charity design and sole Relevant Charitable Activity condition",
+    "quote": "specifically designed to be used by a Charity and solely for a Relevant Charitable Activity.",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "source_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+    "read_on": "2026-11-01",
+    "reading_evidence": "Cached original authority-hosted English text with neighbouring clauses, independently read in continuation grouped-source-acceptance.json; source archive unchanged."
+  },
+  {
+    "id": "UAE-CONT-F1b",
+    "source_id": "S26",
+    "article": "Executive Regulation Article39(1)",
+    "rule": "Converted first supply within3years; no prior residential use or constituentpart in preceding5years",
+    "quote": "within 3 years of the completion of the conversion",
+    "additional_quote": "within 5 five years prior to the conversion work commencing.",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "source_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+    "read_on": "2026-11-01",
+    "reading_evidence": "Cached original authority-hosted English text with neighbouring clauses, independently read in continuation grouped-source-acceptance.json; source archive unchanged."
+  },
+  {
+    "id": "UAE-CONT-F2a",
+    "source_id": "S04",
+    "article": "Annex1.1.2",
+    "rule": "Proportionate comparisonthreshold for non12monthfiscalyears",
+    "quote": "the EUR 750 million threshold is adjusted proportionally",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf",
+    "source_sha256": "13528d9196ee2e624f06637426a79e4021d346428aa6bba34a87f11e3cbcca44",
+    "read_on": "2026-11-01",
+    "reading_evidence": "Cached original authority-hosted English text with neighbouring clauses, independently read in continuation grouped-source-acceptance.json; source archive unchanged."
+  },
+  {
+    "id": "UAE-CONT-F2b",
+    "source_id": "S04",
+    "article": "Annex1.1.1,1.3.3",
+    "rule": "ExcludedEntitiesqualification and Article6.1 specialscope referral",
+    "quote": "A Constituent Entity does not include an Entity that is an Excluded Entity.",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf",
+    "source_sha256": "13528d9196ee2e624f06637426a79e4021d346428aa6bba34a87f11e3cbcca44",
+    "read_on": "2026-11-01",
+    "reading_evidence": "Cached original authority-hosted English text with neighbouring clauses, independently read in continuation grouped-source-acceptance.json; source archive unchanged."
+  },
+  {
+    "id": "UAE-CONT-F3",
+    "source_id": "S40",
+    "article": "Annexitems2and3",
+    "rule": "Distinct AED100/invoice and AED100/creditnote violations, independent monthlyAED5000 caps",
+    "quote": "AED 100 for each Electronic Invoice",
+    "additional_quote": "AED 100 for each Electronic Credit Note",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20106%20of%202025.pdf",
+    "source_sha256": "67fa54647a06be48481e5f0806fcd5b92ac2833c070b1e33679d82f0aa78374d",
+    "read_on": "2026-11-01",
+    "reading_evidence": "Cached original authority-hosted English text with neighbouring clauses, independently read in continuation grouped-source-acceptance.json; source archive unchanged."
+  }
+]

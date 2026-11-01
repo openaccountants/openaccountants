@@ -1,0 +1,93 @@
+{
+  "checkpoint_content_commit": "59748bcf00301a8574fe7c4df63dfb49d1905a42",
+  "actual_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/uae/ae-corporate-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/uae/ae-corporate-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/uae/ae-payroll-social.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/uae/ae-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/uae/uae-vat.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/uae/uae-vat.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/uae/ae-corporate-tax.md",
+        "skills/uae/ae-payroll-social.md",
+        "skills/uae/uae-vat.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 3 files, 8 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 4 changed guide file(s)\nchecked 3 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "46c01152da0fdd1b722f61190c88413d0a195d02",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "46c01152da0fdd1b722f61190c88413d0a195d02",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "accepted_guide_hashes": {
+    "skills/uae/ae-corporate-tax.md": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72",
+    "skills/uae/uae-vat.md": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093",
+    "skills/uae/ae-payroll-social.md": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5"
+  },
+  "review_state": "HOLD / NOT_SOURCE_READY: phase2source/destination gates and further findings remainOPEN; this is draftbackup only.",
+  "preservation": "Committed phase1 independent review evidence exact; previouswriter/review files unchanged"
+}
