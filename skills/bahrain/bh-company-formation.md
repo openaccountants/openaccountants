@@ -1,33 +1,57 @@
 ---
 name: bh-company-formation
-description: "Source-cited draft: company formation & entity choice for Bahrain (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation and entity choice in Bahrain, 2026: W.L.L., closed and public shareholding companies, partnerships, branches, individual establishments and Sijili, with minimum capital and commitments from the Sijilat portal. Use for questions like how to set up a company in Bahrain, minimum capital W.L.L. Bahrain, or can a foreigner own 100% in Bahrain."
 jurisdiction: BH
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
+version: 0.2
+category: formation
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Company Formation & Entity Choice
+# Bahrain Company Formation and Entity Choice v0.2
 
-## Company formation in Bahrain
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Companies register with the Ministry of Industry and Commerce (MOIC) through the Sijilat online portal. The With Limited Liability company (W.L.L.) is the most common vehicle; the former Single Person Company was folded into a single-shareholder W.L.L. under Decree-Law No. 28 of 2020. Many sectors permit 100% foreign ownership.
+## What this file is
 
-- **Most common entity type** — With Limited Liability company (W.L.L.) - allows a single shareholder of any nationality (subject to activity restrictions)  _([Commercial Companies Law (Decree-Law No. 21 of 2001), as amended by Decree-Law No. 28 of 2020](https://www.healyconsultants.com/bahrain-company-registration/setup-llc/))_
-- **Single Person Company (SPC)** — Discontinued - converted into a single-shareholder W.L.L. under Decree-Law No. 28 of 2020  _(Commercial Companies Law amendment (Decree-Law No. 28 of 2020))_
-- **Other entity types** — Bahrain Shareholding Company (B.S.C. - closed and public), partnership, branch of a foreign company, and representative office  _(Commercial Companies Law (Decree-Law No. 21 of 2001))_
-- **Minimum capital - fully Bahraini-owned W.L.L.** — No statutory minimum (often cited as nominal, e.g. around BHD 50) BHD ((approx - confirm current MOIC requirement)) BHD (approx - confirm current MOIC requirement)  _(Commercial Companies Law (Decree-Law No. 21 of 2001), as amended)_
-- **Minimum capital - W.L.L. with foreign shareholders** — Around BHD 20,000 commonly required for foreign-owned W.L.L.s BHD ((approx - varies by activity; confirm with MOIC)) BHD (approx - varies by activity; confirm with MOIC)  _([MOIC commercial registration requirements](https://www.healyconsultants.com/bahrain-company-registration/setup-llc/))_
-- **Minimum capital - B.S.C. (closed)** — BHD 250,000 BHD ((approx - confirm with MOIC)) BHD (approx - confirm with MOIC)  _(Commercial Companies Law (Decree-Law No. 21 of 2001))_
-- **Registration portal / authority** — Sijilat online portal, operated by the Ministry of Industry and Commerce (MOIC)  _([MOIC Sijilat commercial registration system](https://www.sahwanlaw.com/blog/company-registration-bahrain-sijilat.html))_
-- **Trade name reservation** — Reserved via Sijilat; valid 60 days; fee around BHD 10 BHD ((approx - confirm current fee)) BHD (approx - confirm current fee)  _(MOIC Sijilat naming guidelines)_
-- **Core incorporation steps** — Reserve name, submit application and documents on Sijilat, select activities, obtain inter-agency approvals, pay fees, receive electronic Commercial Registration (CR)  _(MOIC Sijilat commercial registration process)_
-- **Typical incorporation timeline** — Around 1-3 working days for straightforward W.L.L.s; longer (often 1-3 weeks) where licences/approvals are needed ((approx - varies by activity)) (approx - varies by activity)  _(MOIC Sijilat commercial registration process)_
-- **Core post-registration / annual compliance** — Open a corporate bank account, register with SIO if employing staff, register for VAT if turnover exceeds BHD 37,500, renew the CR annually, and obtain sector licences  _(MOIC commercial registration requirements; VAT Law (Decree-Law No. 48 of 2018))_
-- **Commercial Registration renewal** — CR must be renewed annually with MOIC  _(MOIC commercial registration requirements)_
+Entity choice and registration through Sijilat, run by the Ministry of Industry and Commerce, for founders in 2026.
+
+## Rates and thresholds
+
+| Entity | Minimum capital and key rule | Source URL |
+|---|---|---|
+| W.L.L. | No minimum capital. All shares fully paid at incorporation. One individual or company can own it. No insurance, banking or investing others' funds | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx |
+| B.S.C. (public) | BHD 1,000,000; at least two founders; board of at least five | same |
+| B.S.C. (closed) | BHD 50,000; at least two persons; board of at least three; at least 50% deposited, rest within three years | same |
+| Commandite by shares | BHD 20,000; at least four founders | same |
+| Partnership, simple commandite | No minimum capital; at least two partners | same |
+| Foreign branch or representative office | Head office in Bahrain required; audited annual budget; a representative office may not deal directly with clients | same |
+| Individual establishment | Bahraini, GCC or resident FTA-state citizen, 18 or over; one registration per person | same |
+| Sijili (virtual) | Bahraini only; no business address; no foreign worker permits | same |
+| unverified: trade name reservation | 60 days, about BHD 10, per the prior version | unverified |
+| unverified: incorporation time | 1 to 3 working days, 1 to 3 weeks with licences, per the prior version | unverified |
+
+The prior version gave BHD 20,000 for a foreign W.L.L. and BHD 250,000 for a closed B.S.C. Sijilat contradicts both. Sijilat allows GCC nationals and foreigners to own 100% of W.L.L.s, B.S.C.s, partnerships and commandites.
+
+## Filing steps
+
+Reserve the name, apply on Sijilat with documents, select activities, obtain inter-agency approvals, pay fees, receive the Commercial Registration. Then open a bank account, register with the SIO if employing, register for VAT above BHD 37,500 (bahrain-vat), renew the CR annually, obtain sector licences.
+
+## Commitments
+
+W.L.L.: general assembly, auditor, financial report (or auditor solvency letter unless losses reach 50% of capital), management report, UBO, Economic Substance Report, AML, reserve capital, books for 10 years. B.S.C.: also four board meetings, governance report and officer; a public B.S.C. publishes results. A non-profit W.L.L. (N.P.C.) may not distribute profits.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Sijilat, Business Types, whole page (browser) | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
+
+Not yet confirmed: name reservation fee and validity; incorporation times; the SPC conversion under Decree-Law No. 28 of 2020; annual CR renewal from an official page.
 
 <!-- openaccountants-cta-block -->
 

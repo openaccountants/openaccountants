@@ -1,33 +1,96 @@
 ---
 name: bh-corporate-income-tax
-description: "Source-cited draft: corporate income tax for Bahrain (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company taxation in Bahrain, tax year 2026: no general corporate income tax, the 46% tax on hydrocarbon companies under Legislative Decree No. 22 of 1979, and the 15% Domestic Minimum Top-up Tax for multinational groups with revenue of EUR 750 million or more. Use for questions like does a company pay tax in Bahrain, Bahrain corporate tax rate, does DMTT apply to us, or Bahrain oil company tax."
 jurisdiction: BH
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
+version: 0.2
+category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Corporate Income Tax
+# Bahrain Corporate Income Tax v0.2
 
-## Corporate taxation: hydrocarbons and the DMTT
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Bahrain has no general corporate income tax. Only two regimes impose direct tax on business profits: a 46% tax on oil, gas and hydrocarbon companies, and (from 2025) a 15% Domestic Minimum Top-up Tax (DMTT) on Bahraini constituent entities of very large multinational groups. There is no withholding tax on dividends, interest or royalties.
+## Who this applies to
 
-- **General corporate income tax rate** — 0% - no general corporate income tax applies %  _([PwC Worldwide Tax Summaries - Bahrain Corporate](https://taxsummaries.pwc.com/bahrain/corporate/taxes-on-corporate-income))_
-- **Tax rate on oil/gas (hydrocarbon) companies** — 46% of net profits from the extraction or refinement of hydrocarbons (fossil fuels) %  _([Amiri Decree No. 22 of 1979](https://taxsummaries.pwc.com/bahrain/corporate/taxes-on-corporate-income))_
-- **Hydrocarbon tax base** — Net profits derived from the sale of crude oil, refined products and natural gas attributable to operations in Bahrain  _(Amiri Decree No. 22 of 1979)_
-- **DMTT minimum effective rate** — 15% effective rate on adjusted financial (GloBE) income of in-scope constituent entities %  _([Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024)](https://www.ey.com/en_gl/technical/tax-alerts/bahrain-issues-domestic-minimum-top-up-tax-legislation))_
-- **DMTT revenue threshold (scope)** — MNE groups with consolidated annual revenue of at least EUR 750 million in at least two of the four preceding fiscal years EUR  _([Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024)](https://www.bdo.global/en-gb/insights/tax/world-wide-tax/bahrain-domestic-minimum-top-up-tax-to-apply-in-2025))_
-- **Purely domestic businesses** — DMTT does not apply to local businesses with no operations outside Bahrain  _(Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024))_
-- **DMTT de minimis exclusion** — De minimis exclusion broadly available where average GloBE revenue is under EUR 10 million (and qualifying income below the GloBE threshold) EUR ((approx - confirm against final Regulations))  _(Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024))_
-- **DMTT transitional safe harbours** — Permanent and transitional CbCR safe harbours and a five-year exclusion for newly internationalised groups are available  _(Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024))_
-- **Withholding tax on dividends** — 0% - no withholding tax on dividends %  _(PwC Worldwide Tax Summaries - Bahrain Corporate (Withholding taxes))_
-- **Withholding tax on interest and royalties** — 0% - no withholding tax on interest or royalties %  _(PwC Worldwide Tax Summaries - Bahrain Corporate (Withholding taxes))_
-- **DMTT registration** — In-scope constituent entities must register with the NBR  _([Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024)](https://orbitax.com/news/country/article/Bahrain-Updates-Guidance-on-Do-60865))_
-- **DMTT payment for 2025** — Payable in instalments, including advance payments during the 2025 fiscal year ((approx - confirm instalment dates with NBR guidance))  _(Domestic Minimum Top-up Tax Law (Decree-Law No. 11 of 2024))_
+Companies in Bahrain. Only two regimes tax business profits: the hydrocarbon income tax and the DMTT. Purely domestic businesses with no operations outside Bahrain are outside the DMTT. A draft corporate income tax law went to the legislature on 29 December 2025 (see bh-cross-border-tax); this skill states the law in force for 2026.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| General corporate income tax | None | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
+| Hydrocarbon income tax | 46% of net profits from extraction or refinement of hydrocarbons | 2026 | same |
+| DMTT Minimum Rate | 15% effective rate on adjusted (GloBE) income, Fiscal Years starting on or after 1 January 2025 | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
+| DMTT Revenue Test | EUR 750 million or more in 2 of the 4 preceding Fiscal Years | 2026 | same |
+| Transitional CbCR safe harbour, de minimis | Bahrain revenue under EUR 10 million and profit before tax under EUR 1 million; periods in bh-transfer-pricing | 2026 | same |
+| Withholding on dividends, interest, royalties | None: neither income tax law has a withholding provision | 2026 | same |
+| DMTT Tax Return | 15 months after the last day of the Reporting Fiscal Year (ER art. 66(A)) | 2026 | same |
+
+## The base
+
+Hydrocarbon tax: net profits from the sale of crude oil, refined products and natural gas attributable to operations in Bahrain. DMTT: adjusted financial (GloBE) income of in-scope constituent entities. bh-transfer-pricing holds the safe harbour tests.
+
+## Deadlines and filing
+
+In-scope constituent entities register with the NBR. The DMTT return date is in the table.
+
+## Penalties and interest
+
+See bh-transfer-pricing for DMTT penalties.
+
+## Cross-border points
+
+See bh-cross-border-tax.
+
+## Two worked examples that recompute
+
+Hydrocarbon company with net profits of BHD 1,000,000.
+
+```oa-check
+name: Hydrocarbon tax
+inputs:
+  profit: 1000000
+steps:
+  - tax: profit * 0.46
+expected:
+  tax: 460000.00
+```
+
+Decision: does the DMTT bite? Group revenue of EUR 800 million in two of the last four years passes the test. A Bahrain entity at a 10% effective rate on BHD 1,000,000 has a 5 point gap; any substance carve-out is taken as nil here.
+
+```oa-check
+name: DMTT top-up, no carve-out
+inputs:
+  income: 1000000
+  etr: 0.10
+steps:
+  - gap: 0.15 - etr
+  - topup: income * gap
+expected:
+  topup: 50000.00
+```
+
+## Ask the client first
+
+- Any exploration, production or refining of hydrocarbons in Bahrain?
+- Member of a multinational group? Consolidated revenue for each of the last four Fiscal Years?
+- Bahrain revenue and profit before tax on the CbC report?
+- Fiscal Year start date?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Law, Legislative Decree No. 22 of 1979, read for bh-cross-border-tax, not reopened (page body did not load by script on 2026-11-01) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
+| DMTT Law and Regulations, read for bh-transfer-pricing and bh-cross-border-tax, not reopened (NBR returned 403 by script and browser on 2026-11-01) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
+
+Not yet confirmed: DMTT instalments and advance payments during 2025 (prior version, dates never confirmed); the permanent safe harbours and five-year exclusion for newly internationalised groups (prior version); whether the draft corporate income tax law has been enacted.
 
 <!-- openaccountants-cta-block -->
 
