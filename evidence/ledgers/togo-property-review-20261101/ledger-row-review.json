@@ -1,0 +1,362 @@
+[
+  {
+    "id": "P01",
+    "act_article": "CGI article 257",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "257 creates annual built/unbuilt property tax. Separate annual ownership job from rental income/transfer jobs; no combined rate asserted."
+  },
+  {
+    "id": "P02",
+    "act_article": "CGI article 258",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "All nine points of 258 read, including mobile storage/operating tools exclusion, indispensable land, commercial land and >100-metre advertising land. Guide is an inclusive scope summary, not a replacement of the full enumeration."
+  },
+  {
+    "id": "P03",
+    "act_article": "CGI article 259",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "259 requires urban agglomeration plus approved subdivision, or outside land intended for nonagricultural construction. Do not infer taxable urban status from vacancy."
+  },
+  {
+    "id": "P04",
+    "act_article": "CGI article 260",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "260(1) lists four rights-holder groups. 260(2) has specific no-indemnity reversion construction lease, tenant amortisation value/next-year entry subject to 262, owner's rent/prestations and solidarity. Specific computation explicitly held."
+  },
+  {
+    "id": "P05",
+    "act_article": "LF article 2",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LF article 2 p3: subject to contrary provisions, other fiscal provisions apply from 1 January 2026. Independently rendered/read original page. Ledger quote is only title/opening, not commencement evidence."
+  },
+  {
+    "id": "P06",
+    "act_article": "CGI article 275",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "275: 7.5% of net cadastral income. Quote omits the decisive rate, though independently read clause confirms it."
+  },
+  {
+    "id": "P07",
+    "act_article": "CGI article 270",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "270: 1 January cadastral rental value less 50%, enumerated ownership costs; indispensable construction land included where relevant. Quote omits the percentage."
+  },
+  {
+    "id": "P08",
+    "act_article": "CGI article 276",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "276: 0.5% of market value. Original quote ends before the rate; underlying figure verified."
+  },
+  {
+    "id": "P09",
+    "act_article": "CGI article 272",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "272: unbuilt market value at 1 January of assessment year. Source clause supports date, quotation opening does not fully reproduce it."
+  },
+  {
+    "id": "P10",
+    "act_article": "CGI article 273",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "273: recent transfers of subject/comparable neighbouring land, then direct estimate if none/usefully recent. Source supports evidence hierarchy."
+  },
+  {
+    "id": "P11",
+    "act_article": "CGI article 274",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "short rule substantively present; inspect neighbour spillover if any",
+    "independent_findings": "274 assigns market-value determination to cadastre. Original quote includes following heading; harmless locator spillover."
+  },
+  {
+    "id": "P12",
+    "act_article": "CGI article 262",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "262: regularly declared construction/reconstruction/additions, two years commercial/industrial/professional, five residential, starting following completion year. Separate financial/public-economic-enterprise mortgage/dation acquisition recovery branch read."
+  },
+  {
+    "id": "P13",
+    "act_article": "CGI article 261",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "correction required: condition/procedure completeness",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "All eleven 261 branches read. Ledger's full-rule summary is grounded, but Guide must state omitted qualifying conditions explicitly; see correction 1 in review record."
+  },
+  {
+    "id": "P14",
+    "act_article": "CGI article 268",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "All six 268 branches read: nonproductive specified public land, selection nurseries of listed creators, school land, built-taxable land, actual 1 January qualifying cultivation, state railway ways. Guide is a bounded screen referring to exact provision."
+  },
+  {
+    "id": "P15",
+    "act_article": "CGI article 269",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "short rule substantively present; inspect neighbour spillover if any",
+    "independent_findings": "269 exempts rural immovables. Vacancy alone proves neither rural status nor scope exclusion. Quote fully contains this short rule plus a neighbouring heading."
+  },
+  {
+    "id": "P16",
+    "act_article": "CGI article 263",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "263 rural conversion into rental housing or factory gets five years beginning year after conversion works finish. Not a general five-year commercial construction exemption."
+  },
+  {
+    "id": "P17",
+    "act_article": "CGI article 264",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "264 denies temporary exemption to commercial/industrial and 258 advertising land; taxable from following assignment year. No ordinary new-building exemption for those plots."
+  },
+  {
+    "id": "P18",
+    "act_article": "CGI article 265",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "265 irregular subdivision accesses only still-running exemption period, from year regular authorisation is obtained. No new full window begins then."
+  },
+  {
+    "id": "P19",
+    "act_article": "LPF article 100",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF100: payment proof plus assessment bulletins; 8.75% withheld allocated 3.75% property and 5% income. LPF101 has separate no-withholding advance. Guide correctly holds full calculation, does not deduct whole withholding or infer refund."
+  },
+  {
+    "id": "P20",
+    "act_article": "LPF article 85",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF85: whole-year 1 January tax, spontaneous receiver payment, two equal payments by 31 May and 31 October, landowner/tenant solidarity. Opening quote alone omits instalment dates."
+  },
+  {
+    "id": "P21",
+    "act_article": "LPF article 86",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF86: declaration by 31 May from owners/principal tenants or their managers; tenant names/premises/rent/charges, free occupants, own/vacant premises and taxable unbuilt area. Full five-item list read."
+  },
+  {
+    "id": "P22",
+    "act_article": "LPF article 87",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF87: new/rebuilt/added construction and size/use changes within four months definitive realisation; no declaration gives assessment from 1 January after presumed completion. Not a universal late-payment fine."
+  },
+  {
+    "id": "P23",
+    "act_article": "CGI article 266",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "266: permit alternative or works-opening declaration within four months; nature/use/area/title or cadastre identification, plan/sketch; also completion declaration within four months; written authority-issued form. No current form identifier inferred."
+  },
+  {
+    "id": "P24",
+    "act_article": "CGI article 267",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "267: late construction/end declarations permit unexpired fraction only from 1 January following production; first post-completion year never exempt because of lateness."
+  },
+  {
+    "id": "P25",
+    "act_article": "CGI article 281",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "281: territorial tax service of prefecture/commune where property lies. Not owner's residence."
+  },
+  {
+    "id": "P26",
+    "act_article": "CGI article 282",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "282: cadastral mutation at owners' diligence; cadastral/titled locations need prior entry/transcription as text states. 284 adds specific titled-parcel assessment-name transcription rule, correctly distinguished."
+  },
+  {
+    "id": "P27",
+    "act_article": "CGI article 283",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "283: pending mutation, former owner/natural heirs remain assessed and can be compelled to pay; recourse against new owner preserved."
+  },
+  {
+    "id": "P28",
+    "act_article": "CGI article 284",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "284: correction for actual 1 January ownership, title transcription condition, civil ownership dispute postpones assessment-name decision until final judgment. Not all tax collection suspended."
+  },
+  {
+    "id": "P29",
+    "act_article": "CGI article 285",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "285: correction decisions affect relevant and subsequent years until necessary assessment-bulletin corrections."
+  },
+  {
+    "id": "P30",
+    "act_article": "CGI article 266",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "266 last paragraphs: assessment from year following completion; first-bulletin addition counts years elapsed to discovery including discovery year; maximum addition five times current annual contribution. Guide holds actual calculation for dates/notice."
+  },
+  {
+    "id": "P31",
+    "act_article": "CGI article 278",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "278 full paragraphs: commercial/industrial vacancy/non-use; involuntary, >=3 months, all or separately rentable/exploitable part; following-month start through end of cessation month; LPF374+ claim."
+  },
+  {
+    "id": "P32",
+    "act_article": "CGI article 279",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "279 full clause: total/partial destruction or voluntary demolition during year; claim; following month after destruction or opening demolition works. Guide's compressed next-month rule correctly read with this source."
+  },
+  {
+    "id": "P33",
+    "act_article": "CGI article 280",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "280 full clause: extraordinary disappearance of unbuilt immovable; following month, on claim under374+. Not ordinary development or vacant land relief."
+  },
+  {
+    "id": "P34",
+    "act_article": "LPF article 374",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF374 entire a-g read. Normal deadline 31 December following relevant event year; (g) selects year vacancy minimum duration is reached. Guide appropriately says select actual event."
+  },
+  {
+    "id": "P35",
+    "act_article": "LPF article 375",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF375 grants taxpayer claim period equal to administration's period where recovery/reassessment procedure; Guide does not assume universal ordinary deadline."
+  },
+  {
+    "id": "P36",
+    "act_article": "LPF article 376",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "correction required: condition/procedure completeness",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF376 all six numbered points plus regularisation/stamp-duty paragraphs read. Ledger includes French/individual concept but Guide omits admissibility details and audit notices; correction2 required."
+  },
+  {
+    "id": "P37",
+    "act_article": "LPF article 377",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "LPF377 full mandate timing plus exceptions read: bar lawyers, status/function representatives, personally demanded signatories, public/ministry officers for taxes they must pay. Guide explicitly gates on exception; no unsupported automatic mandate waiver."
+  },
+  {
+    "id": "P38",
+    "act_article": "LPF article 378",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "short rule substantively present; inspect neighbour spillover if any",
+    "independent_findings": "LPF378 foreign-domiciled claimant must elect Togo domicile. Original short quote contains complete rule."
+  },
+  {
+    "id": "P39",
+    "act_article": "CGI article 262",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "article-opening locator; strengthen to decisive figure/condition clause",
+    "independent_findings": "262 with265-267,270,275: 2023 completion gives 2024-25 commercial vs2024-28 residential;2026 taxed75000 vs0,3 residential exempt assessment years left including2026. Independently recomputed and flags timely declaration/regularisation/use assumptions."
+  },
+  {
+    "id": "P40",
+    "act_article": "Loi2025-002 articles21/CGI271; CGI270/275; LPF85",
+    "source_rule_verdict": "confirmed against full clauses and neighbours within conditional scope",
+    "guide_verdict": "substantive source fidelity confirmed within stated holds",
+    "original_quote_normalized_exact_match": true,
+    "quote_evidence_verdict": "6% and land anchored; strengthen to include asset qualification",
+    "independent_findings": "LF21 replacement271 p20 visually read in full. Lease/comparison/direct hierarchy retained; qualifying balance-sheet commercial/industrial premises/installations 6% market includingland/incorporated assets. 270/275/LPF85 give6m/3m/225000/112500. Prefer 'business' to 'company' in generic translation of entreprises."
+  }
+]
