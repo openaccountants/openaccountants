@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.1
+# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's or employer's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Denmark.
 
