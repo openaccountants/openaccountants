@@ -147,11 +147,11 @@ When bank statement data is ambiguous or client circumstances are unclear, flag 
 
 #### T2-5: Salaried IRG withholding vs annual table
 
-- **T2-5**: Trigger: Need to compute IRG actually withheld from a salary. Issue: The 30,000 DZD/month exemption and salary-specific abatements differ from a naive application of the annual 0%-35% table. The exact salaried withholding schedule is not confirmed from a primary authority. Action: Flag for reviewer. Confirm against the DGI / Code des Impôts Directs (unverified) before relying on a computed net-pay figure.
+- **T2-5**: Trigger: Need to compute IRG actually withheld from a salary. Issue: The 30,000 DZD/month exemption and salary abatements differ from a naive application of the annual 0%-35% table. Action: use `algeria-payroll`.
 
 #### T2-6: 2026 SNMG change and Finance Law 2025 floors
 
-- **T2-6**: Trigger: Computation spans into 2026, or involves the lump-sum/minimum tax regime. Issue: SNMG rises to 24,000 DZD/month from 1 Jan 2026 (unverified note / unverified note). Finance Law 2025 reportedly raised the minimum lump-sum tax (IFU/FRT) floor to DZD 30,000 from DZD 10,000 effective 1 Jan 2026 (unverified). Action: Flag for reviewer. Confirm which year's SNMG and tax floors apply.  _(unverified note / unverified note)_
+- **T2-6**: Trigger: Computation spans into 2026, or involves the lump-sum/minimum tax regime. Issue: SNMG is 24,000 DZD/month under Decree 26-01; 20,000 DZD applied before. Action: use the SNMG of the year being computed. For IFU floors use `algeria-income-tax`.
 
 
 When producing a contribution / payroll computation, structure the working paper as follows:
@@ -170,14 +170,14 @@ INPUT DATA
   Residency:                     [Resident / Non-resident]
 
 CNAS COMPUTATION (salaried)
-  Gross monthly base:            DZD [____]   (floored at SNMG: 20,000 [2024-25] / 24,000 [2026])
+  Gross monthly base:            DZD [____]   (floored at SNMG: 24,000 for 2026)
   Employer 26%:                  DZD [____]
   Employee 9%:                   DZD [____]
   Sector add-on 0.375% (if any): DZD [____]
   Total 35%:                     DZD [____]
 
 CASNOS COMPUTATION (self-employed)
-  Declared income (clamped 216,000 - 4,320,000): DZD [____]
+  Declared income (clamped 288,000 - 5,760,000): DZD [____]
   Contribution 15%:              DZD [____]
     of which 7.5% insurance:     DZD [____]
     of which 7.5% retirement:    DZD [____]
@@ -186,7 +186,7 @@ IRG COMPUTATION
   Gross salary (annual):         DZD [____]
   Less employee CNAS 9%:         DZD [____]
   IRG taxable base:              DZD [____]
-  IRG (per Section 5 Rule 7/8):  DZD [____]   [confirm salaried withholding schedule]
+  IRG (see algeria-payroll):     DZD [____]
   Net pay:                       DZD [____]
 
 FILING
@@ -200,6 +200,39 @@ REVIEWER FLAGS
 CONSERVATIVE DEFAULTS APPLIED
   [List any defaults applied and their impact]
 ```
+
+#### Bank statement reading guide
+
+Statements from BNA, BEA, CPA, BADR and BDL are usually in French, sometimes Arabic, in DZD.
+
+- CNAS: "CNAS", "COTISATION CNAS", "DAC", "CAISSE NATIONALE ASSURANCES SOCIALES". unverified: monthly, about the first 10 days, for the prior month, at about 35% of gross payroll.
+- CASNOS: "CASNOS", "COTISATION CASNOS", "NON SALARIE". Usually annual, 15% of declared income within the band in the tables.
+- G50 and IRG: "G50", "RECETTE DES IMPOTS", "TRESOR", "IRG SALAIRES", "DGI". Monthly, counterparty DGI or Tresor, never CNAS or CASNOS.
+
+Tips: contribution debits are always outgoing, so inbound CNR or CNAC credits are benefits. CNAS recurs monthly and CASNOS usually annually. "MAJORATION DE RETARD" or "REGULARISATION" signals penalties or arrears: flag for the reviewer. Family benefits are outside the base.
+
+#### Onboarding fallback, bank statement only
+
+1. Find the regime: CNAS debits mean salaried, CASNOS debits mean self-employed.
+2. List every outgoing payment that matches the patterns above.
+3. Work back to the base: CNAS debit / 0.345 (0.35 on the unverified headline) gives gross monthly payroll; CASNOS debit / 0.15 gives declared income, which must sit in the band. A CASNOS debit of 43,200 DA means the 2026 floor is in play.
+4. Keep tax apart: G50, Tresor and DGI debits are IRG, not contributions.
+5. Flag for the reviewer: "Regime and base derived from bank statement amounts only. Employment status, sector and declared income have not been independently verified."
+
+#### Prohibitions
+
+- NEVER compute contributions before establishing salaried or self-employed status.
+- NEVER apply a general earnings ceiling to salaried CNAS (unverified: none reported).
+- NEVER omit the 0.375% sector add-on without confirming the sector.
+- NEVER set CASNOS below the floor in the tables.
+- NEVER conflate CNAS or CASNOS with G50 or IRG: they go to different authorities.
+- NEVER quantify arrears or penalties without an official CNAS or DGI statement: escalate.
+- NEVER mix tax years' SNMG figures: 20,000 DA through 2025, 24,000 DA in the 2026 tables.
+- NEVER present figures as definitive: this skill awaits accountant sign-off.
+
+#### Corporate tax (IBS), context only
+
+unverified: 19% manufacturing and production; 23% building, public works, hydraulics, tourism and thermal; 26% services and trade; 10,000 DA minimum on nil returns; 10% on reinvested manufacturing profits. IBS is outside this skill.
 
 ## Deadlines and filing
 
@@ -270,7 +303,7 @@ expected:
 
 mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
 
-Not yet confirmed: 26% employer and 35% total headline figures, since CLEISS shows 25% plus 0.5% FNPOS, 34.5% total; whether branch rates changed after 1 Jan 2024; CNAS monthly deadline, DAS or DAC dates and CNAS late penalties, because cnas.dz would not open and has no readable archive; CASNOS late penalty; the CASNOS site still prints 216,000 and 4,320,000 DA, computed on the old SNMG, so the 2026 amounts below come from its formula with the new SNMG and need CASNOS confirmation.
+Not yet confirmed: 26% employer and 35% total headline figures, since CLEISS shows 25% plus 0.5% FNPOS, 34.5% total; whether branch rates changed after 1 Jan 2024; CNAS monthly deadline, DAS or DAC dates and CNAS late penalties, because cnas.dz would not open and has no readable archive; CASNOS late penalty; the CASNOS site still prints 216,000 and 4,320,000 DA, computed on the old SNMG, so the 2026 amounts in the tables come from its formula with the new SNMG and need CASNOS confirmation.
 
 <!-- openaccountants-cta-block -->
 

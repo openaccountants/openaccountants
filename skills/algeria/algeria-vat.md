@@ -31,7 +31,7 @@ Real-regime businesses filing TVA on the monthly G n° 50. IFU taxpayers do not 
 | New 9% wording: health | 9% | Medical acts, and meals and lodging given to patients by health establishments | 2026 | same |
 | New 9% wording: education | 9% | State-approved education and training, including preschool, with their lodging and meals | 2026 | same |
 | New 9% wording: transport | 9% | Rail passengers and passengers by bus | 2026 | same |
-| Cash limit for input TVA | Invoices above 1,000,000 DA with tax paid in cash or bank deposit lose deduction | Code TCA | 2026 | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
+| Cash limit for input TVA | Invoices above 1,000,000 DA including tax, paid in cash or bank deposit lose deduction | Code TCA | 2026 | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
 | Omitted deduction | Claim by 20 December of the next year | Code TCA art. 30 | 2026 | same |
 | IFU ceiling | 8,000,000 DA; the old 15,000,000 DA figure was wrong | CIDTA art. 282 ter | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf |
 | TAP | Removed; no longer on G n° 50 calculations | DGI circular, 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |

@@ -73,11 +73,11 @@ Patterns, defaults and refusal rules kept so no work is lost. Any figure here is
 
 | Unknown | Conservative default | Why |
 | -- | -- | -- |
-| unverified: Tax year | Default to **2025** scale (FL 2022, still current) | Skill tax_year is 2025; no 2026 scale published |
+| Tax year | Default to the **2026** tables above | Skill tax_year is 2026 |
 | unverified: Sector (construction add-on) | Assume **no** CACOBATPH 0.375% add-on unless told construction | Avoids over-stating; flag if sector unknown |
-| unverified: Whether gross ≤ 30,000 DA | Apply the **full IRG exemption** strictly at/below 30,000 DA | Statutory exemption |
-| unverified: Abattement amount | Apply 40% floored 1,000 / capped 1,500 DA/month | Statutory bounds |
-| unverified: CNAS base below SNMG | Floor the contribution base at the **SNMG** (20,000 DA for 2025) | Contributions cannot be below SNMG |
+| Whether taxable pay ≤ 30,000 DA | Apply the **full IRG exemption** strictly at/below 30,000 DA | Statutory exemption |
+| Abattement amount | 40% of the tax, floored 1,000, capped 1,500 DA a month | Tables above |
+| unverified: CNAS base below SNMG | Floor the contribution base at the **SNMG** (24,000 DA for 2026) | Contributions cannot be below SNMG |
 | CNAS ceiling | **None**: compute on full gross (uncapped) | General salaried regime is uncapped |
 | Currency | Algerian Dinar (DZD) | Wages are paid in Dinars |
 | unverified: Headline CNAS split | **26% employer / 9% employee / 35% total** | Operative figure per unverified note/unverified note |
@@ -86,7 +86,7 @@ When an input is missing or ambiguous, apply the conservative assumption (the on
 
 #### Required inputs before computing payroll
 
-- **Required inputs**: 1. Monthly gross salary in DZD (and whether it is the ordinary/fixed base). 2. Tax/fiscal year (defaults to 2025 scale). 3. Sector (to decide the CACOBATPH 0.375% construction add-on). 4. Whether the salary is at or below the SNMG floor (20,000 DA for 2025 / 24,000 DA for 2026). 5. Any non-ordinary pay components (bonuses, primes, indemnités) and their treatment.
+- **Required inputs**: 1. Monthly gross salary in DZD (and whether it is the ordinary/fixed base). 2. Tax/fiscal year (defaults to the 2026 tables). 3. Sector (to decide the CACOBATPH 0.375% construction add-on). 4. Whether the salary is at or below the SNMG floor (24,000 DA for 2026). 5. Any non-ordinary pay components (bonuses, primes, indemnités) and their treatment.
 
 #### Refusal catalogue: DO NOT compute, refuse and request input
 
@@ -99,7 +99,7 @@ When an input is missing or ambiguous, apply the conservative assumption (the on
 | Request to omit IRG withholding or CNAS to "save money" | REFUSE: these are statutory; escalate to accountant |
 | Salary below the SNMG offered as the contribution base | REFUSE: base cannot fall below the SNMG |
 | unverified: Request to ignore the 30,000 DA monthly IRG exemption | REFUSE: statutory exemption; flag |
-| Self-employed / non-salarié income mixed in | REFUSE payroll path: non-salariés have a separate CNAS band and IRG treatment |
+| Self-employed / non-salarié income mixed in | REFUSE payroll path: non-salariés have a separate CASNOS band and IRG treatment |
 | Definitive "this is your exact tax" assertion requested | REFUSE: outputs are estimates pending accountant sign-off |
 
 
@@ -133,11 +133,6 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 
 | Question | Why it needs a reviewer |
 | -- | -- |
-| Exact ordering of abattement vs. CNAS deduction in the IRG base | Not cleanly confirmed against DGI text |
-| unverified: Interaction of the 30,000 DA exemption with the abattement floor | Mechanic not fully documented |
-| unverified: Whether the FL 2022 scale still applies for the period in question | No 2025/2026 replacement published; verify currency |
-| unverified: Exact IRG (G50) late-payment penalty percentages | Not confirmed from a primary DGI source |
-| unverified: Precise date of the annual DGI salary recap (~30 April) | Secondary source only |
 | CACOBATPH applicability for a given employer | Sector-specific |
 | Treatment of specific primes / indemnités (taxable vs exempt) | Component-specific, needs ruling |
 | unverified: Headline 26% vs CLEISS 25.5% employer reconciliation | Two presentations of the same regime |
@@ -151,18 +146,18 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 | B | Gross monthly salary (DZD) | input |
 | unverified: C | Employee CNAS 9% | `=B*0.09` |
 | D | Salary after CNAS | `=B-C` |
-| unverified: E | Abattement | `=MIN(MAX(D*0.40,1000),1500)` |
-| unverified: F | Monthly IRG base | `=MAX(0, D-E)` |
-| unverified: G | Annual IRG base | `=F*12` |
-| unverified: H | IRG annual | nested IF on G using subtract constants (55,200 / 74,400 / 103,200 / 160,800 / 237,600) |
-| unverified: I | IRG monthly (pre-exemption) | `=H/12` |
-| unverified: J | IRG monthly (final) | `=IF(B<=30000, 0, I)` |
+| E | Monthly IRG base | `=D` |
+| F | Annual IRG base | `=E*12` |
+| G | Tax before abatement, monthly | `=H/12` |
+| H | Tax on annual base | nested IF on F using subtract constants (55,200 / 74,400 / 103,200 / 160,800 / 237,600) |
+| I | Abatement | `=MIN(MAX(G*0.40,1000),1500)` |
+| J | IRG monthly (final) | `=IF(D<=30000, 0, MAX(0, G-I))`, then the second abatement formula if D is 30,001 to 35,000 |
 | K | Net pay | `=B-C-J` |
 | unverified: L | Employer CNAS 26% | `=B*0.26` |
 | unverified: M | CACOBATPH (construction only) | `=IF(construction, B*0.375%*2, 0)` |
 | unverified: N | Total employer cost | `=B+L+IF(construction, B*0.375%, 0)` |
 
-- **IRG formula for column H**: =IF(G<=240000,0, IF(G<=480000, G*0.23-55200, IF(G<=960000, G*0.27-74400, IF(G<=1920000, G*0.30-103200, IF(G<=3840000, G*0.33-160800, G*0.35-237600)))))  _(Section 11 formulas)_
+- **IRG formula for column H**: =IF(F<=240000,0, IF(F<=480000, F*0.23-55200, IF(F<=960000, F*0.27-74400, IF(F<=1920000, F*0.30-103200, IF(F<=3840000, F*0.33-160800, F*0.35-237600)))))  _(Section 11 formulas)_
 
 Suggested layout (one row per employee per month):
 
@@ -174,7 +169,7 @@ Suggested layout (one row per employee per month):
 | IRG (Impôt sur le Revenu Global) | Personal income tax |
 | Traitements et Salaires | Wages and salaries (the salary category of IRG) |
 | Retenue à la source | Withholding at source |
-| unverified: Abattement | Deduction / allowance (here, the 40% professional-expense deduction) |
+| unverified: Abattement | Deduction / allowance (here, the 40% reduction of the tax) |
 | CNAS | National Social Insurance Fund |
 | Cotisation | Contribution (social security) |
 | unverified: G50 (bordereau) | Monthly tax/contribution declaration slip |
@@ -188,7 +183,30 @@ Suggested layout (one row per employee per month):
 | DGI | Directorate-General of Taxes |
 
 
-- **Onboarding fallback steps**: If the engagement lacks key data: 1. No prior payroll register (livre de paie) available → request the last 3 months of payslips, G50 declarations, and CNAS bordereaux to back-solve the rates actually applied. 2. Unknown sector → default CACOBATPH off, FLAG; confirm before the first remittance. 3. Salary near the SNMG → confirm the contribution base is floored at the SNMG (20,000 DA for 2025 / 24,000 DA for 2026), never below. 4. Year ambiguity → default to the 2025 (FL 2022) scale; verify whether any new finance law has replaced it for periods after the research date. 5. Mixed self-employed income → route non-salarié income to a separate treatment; the non-salariés CNAS band (216,000-4,320,000 DZD/year, CLEISS) and IRG treatment differ.  _(CLEISS)_
+- **Onboarding fallback steps**: If the engagement lacks key data: 1. No prior payroll register (livre de paie) available → request the last 3 months of payslips, G50 declarations, and CNAS bordereaux to back-solve the rates actually applied. 2. Unknown sector → default CACOBATPH off, FLAG; confirm before the first remittance. 3. Salary near the SNMG → confirm the contribution base is floored at the SNMG (24,000 DA for 2026), never below. 4. Year ambiguity → default to the 2026 tables. 5. Mixed self-employed income → route non-salarié income to a separate treatment; the CASNOS band (288,000 to 5,760,000 DA a year for 2026) and IRG treatment differ.  _(CLEISS)_
+
+#### Hard rules
+
+1. The employer withholds IRG monthly and remits it on the G n° 50. Never skip it for salaried staff.
+2. Follow the order in "The base" above: gross, less 9%, exemption test, scale, then abatement off the tax.
+3. Taxable pay of 30,000 DA a month or less bears no IRG.
+4. unverified: CNAS is charged on uncapped gross. The base never falls below the SNMG (24,000 DA for 2026).
+5. Construction and public-works employers add CACOBATPH 0.375% each, employer and employee. Do not add it in other sectors.
+6. Wages are computed and paid in Algerian dinars.
+7. unverified: CNAS is remitted monthly, and the DAS annual return is due 31 January at teledeclaration.cnas.dz (employer file plus per-employee file).
+8. Every output is an estimate pending sign-off by a licensed Algerian expert-comptable. Never present it as final.
+
+#### Registration
+
+unverified: Employers register with CNAS and get an employer number before the first payroll; each employee gets a social security number. The first hire triggers this; there is no monetary threshold. A NIF from the DGI is needed for the G n° 50.
+
+#### Employer and employee burden, general sector
+
+| Contribution | Employee | Employer | Base or cap |
+| -- | -- | -- | -- |
+| IRG | Scale in the rates table | Withholding agent | Taxable pay up to 30,000 DA a month exempt |
+| CNAS, all branches | 9% | 25% plus 0.5% FNPOS on CLEISS; 26% unverified | Uncapped gross, floor SNMG |
+| CACOBATPH, construction only | 0.375% | 0.375% | Gross |
 
 ## Deadlines and filing
 

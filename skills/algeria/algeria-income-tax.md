@@ -95,7 +95,7 @@ Patterns, defaults and refusal rules kept so no work is lost. Any figure here is
 
 **Ideal**: complete income and expenditure account, asset register, all G50 monthly declarations, IFU G12/G12 bis filings, proof of provisional instalments.
 
-**Refusal if minimum is missing: SOFT WARN.** No statement or payslip at all = hard stop. Statement without supporting documents = proceed with reviewer warning: "This computation was produced from a bank statement / payslip alone. The reviewer must verify the IRG base, social contribution deductions, and any allowances against the CIDTA and the 2025 Finance Law."
+**Refusal if minimum is missing: SOFT WARN.** No statement or payslip at all = hard stop. Statement without supporting documents = proceed with reviewer warning: "This computation was produced from a bank statement / payslip alone. The reviewer must verify the IRG base, social contribution deductions, and any allowances against the CIDTA and the Finance Laws 2025 and 2026."
 
 #### Refusal Catalogue
 
@@ -120,7 +120,7 @@ This is the deterministic pre-classifier. When a bank statement / ledger transac
 | VIREMENT REÇU, VERSEMENT, DÉPÔT | Potential income | Check direction and counterparty |
 | STRIPE, PAYPAL, WISE, PAYONEER PAYOUT | Business income | Platform payout: match to invoices |
 | unverified: LOYER REÇU, LOCATION | Rental income | Schedular property rate (see Section 1) |
-| unverified: DIVIDENDES | Investment income | 15% withholding |
+| DIVIDENDES | Investment income | 10% final (see the rates table) |
 | unverified: INTÉRÊTS, PRODUITS FINANCIERS | Investment income | 10% withholding |
 | REMBOURSEMENT IMPÔT, RISTOURNE DGI | EXCLUDE | Tax refund, not income |
 | SUBVENTION, AIDE ÉTAT | Check nature | Capital grants EXCLUDE; revenue grants = income |
@@ -172,7 +172,7 @@ This is the deterministic pre-classifier. When a bank statement / ledger transac
 | -- | -- | -- |
 | unverified: CNAS, COTISATION SÉCURITÉ SOCIALE | Social contribution | Employee 9% reduces IRG base; remit with G50 |
 | unverified: CASNOS | Self-employed contribution | 15% of declared base; annual |
-| unverified: G50, VERSEMENT DGI MENSUEL | Withholding remittance | Monthly IRG + CNAS remittance: not an expense |
+| unverified: G50, VERSEMENT DGI MENSUEL | Withholding remittance | Monthly IRG remittance: not an expense |
 | ACOMPTE PROVISIONNEL, INSTALMENT IRG | Provisional instalment | Credit against final liability, not an expense |
 | TVA, PAIEMENT TVA | VAT payment | EXCLUDE: VAT liability, not expense |
 
@@ -199,7 +199,7 @@ This is the deterministic pre-classifier. When a bank statement / ledger transac
 
 ```
 ALGERIA INCOME TAX: IRG / IFU WORKING PAPER
-Tax Year: 2025
+Tax Year: 2026
 Client: ___________________________
 Residency: Resident / Non-resident
 Regime: Employee (IRG payroll) / Self-employed real / IFU micro
@@ -208,11 +208,13 @@ PART A: EMPLOYEE IRG (monthly)
   A1. Gross monthly salary (DZD)                  ___________
   A2. Less CNAS employee 9% (A1 × 0.09)           ___________
   A3. IRG taxable base (A1 - A2)                  ___________
-  A4. If A1 <= 30,000 -> IRG = 0 (exempt)         ___________
+  A4. If A3 <= 30,000 -> IRG = 0 (exempt)         ___________
   A5. Annualised base (A3 × 12)                   ___________
   A6. Annual IRG (apply progressive scale)        ___________
-  A7. Monthly IRG (A6 / 12)                       ___________
-  A8. Net pay (A1 - A2 - A7)                      ___________
+  A7. Monthly tax before abatement (A6 / 12)      ___________
+  A8. Abatement: 40% of A7, min 1,000, max 1,500  ___________
+  A9. Monthly IRG (A7 - A8, then second abatement if in band) ___________
+  A10. Net pay (A1 - A2 - A9)                     ___________
   [Spouse/dependent allowance: (unverified)
 
 PART B: SELF-EMPLOYED IFU
@@ -220,7 +222,7 @@ PART B: SELF-EMPLOYED IFU
   B2. Eligible? (B1 <= 8,000,000)  Y / N           ___________
   B3. Activity: goods (5%) / services (12%)        ___________
   B4. IFU = B1 × rate                              ___________
-  B5. Minimum IFU (DZD 20,000)                     ___________
+  B5. Minimum IFU (DZD 30,000; auto-entrepreneur 10,000) ___________
   B6. IFU due = max(B4, B5)                        ___________
 
 PART C: SELF-EMPLOYED REAL REGIME
@@ -238,14 +240,13 @@ PART E: FILING
   E1. G50 monthly remittance (within 20 days)      ___________
   E2. G12 provisional (30 June)                    ___________
   E3. G12 bis final (20 January)                   ___________
-  E4. Annual return (30 April / FY2025: 30 June)   ___________
+  E4. Annual return G n° 1 (30 June)               ___________
 
 REVIEWER FLAGS:
   [ ] Residency confirmed?
   [ ] Regime confirmed (IRG real / IFU / employee)?
   [ ] Turnover <= 8,000,000 for IFU verified?
-  [ ] IFU rate split (5%/12%) confirmed vs 2025 Finance Law?
-  [ ] IFU minimum (20,000 vs 30,000) confirmed?
+  [ ] IFU rate split (5%/12%) confirmed against the turnover mix?
   [ ] Spouse/dependent allowances confirmed vs CIDTA?
   [ ] CNAS per-branch split confirmed vs AAPI?
   [ ] CASNOS base confirmed vs official CASNOS site?
@@ -318,7 +319,7 @@ Rental, dividend, and interest income carry separate withholding; confirm whethe
 - NEVER apply the IRG scale to a salary ≤ DZD 30,000/month: it is exempt.
 - NEVER deduct business expenses under the IFU micro regime: IFU is a flat % of turnover.
 - NEVER apply spouse/dependent allowances until confirmed against the CIDTA (currently (unverified)).
-- NEVER state the IFU 5%/12% split or the DZD 20,000 minimum as final without reviewer confirmation against the 2025 Finance Law.
+- NEVER use the old DZD 20,000 IFU minimum: it is 30,000 DA, or 10,000 DA for auto-entrepreneurs.
 - NEVER allow fines, penalties, or income tax itself as a deduction.
 - NEVER include VAT (TVA) collected in business income.
 - NEVER treat CNAS/CASNOS contributions or provisional instalments as ordinary expenses.
