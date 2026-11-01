@@ -50,15 +50,17 @@ Out of scope, route elsewhere:
 | MAD 80,001 to 100,000 | 30% | Quick deduction MAD 18,000 | 2026 | same |
 | MAD 100,001 to 180,000 | 34% | Quick deduction MAD 22,000 | 2026 | same |
 | Above MAD 180,000 | 37% | Quick deduction MAD 27,400 | 2026 | same |
-| Family reduction | MAD 600 per dependant, total cap MAD 3,600 | Off the tax. Dependants: wife; own and legally taken-in children whose income does not exceed the exempt band, with the further conditions in Art. 74-II | 2026 | CGI Art. 74 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Family reduction | MAD 600 per dependant, total cap MAD 3,600 | Off the tax. Dependants: wife; own and legally taken-in children, each with annual revenu global not above the exempt band and aged 27 or under (no age limit for a child whose disability prevents self-support). A woman taxpayer claims for her husband and children when they are legally her dependants. A family change counts from the month after it happens | 2026 | CGI Art. 74 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Cotisation minimale, standard | 0.25% | Base in Art. 144-I-B | 2026 | CGI Art. 144-I-D https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Cotisation minimale, reduced | 0.15% | Commercial sales of petroleum products, gas, butter, oil, sugar, flour, water, electricity, medicines | 2026 | same |
-| Cotisation minimale, professions | 4% | Professions in Art. 89-I-12 and 91-VI-1, under IR | 2026 | same |
+| Cotisation minimale, professions | 4% | Under IR. Art. 89-I-12: lawyer, interpreter, notary, adel, bailiff, architect, quantity surveyor, land surveyor, topographer, engineer, consultant, expert in any field, approved accountant, veterinarian. Art. 91-VI-1: doctor, dentist, physiotherapist, orthoptist, speech therapist, nurse, herbalist, midwife, clinic or care-home operator, medical laboratory operator | 2026 | same |
 | Cotisation minimale floor | MAD 1,500 | IR on RNR or RNS, even with no turnover | 2026 | same |
-| RNS ceiling, trade, industry, craft, fishing shipowner | MAD 2,000,000 turnover excl. VAT | Option ends after two consecutive years over | 2026 | CGI Art. 39 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| RNS ceiling, trade, industry, craft, fishing shipowner | MAD 2,000,000 turnover excl. VAT | Annual or annualised turnover. Option ends after two consecutive years over | 2026 | CGI Art. 39 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | RNS ceiling, services and professions | MAD 500,000 turnover excl. VAT | Same | 2026 | same |
 | RNS abatement | 15% of base | Member of an approved accounting management centre | 2026 | CGI Art. 38-III https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
-| Cash payment limit | MAD 5,000 per day and MAD 50,000 per month, per supplier | Above this the charge is not deductible unless paid by listed means | 2026 | CGI Art. 11-II https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Cash payment limit | MAD 5,000 per day and MAD 50,000 per month, per supplier | Applies to Art. 10 (I-A, B and E) charges. Above this the charge is not deductible unless paid by crossed non-endorsable cheque, bill of exchange, magnetic means, bank transfer, electronic process, or set-off on dated and signed documents | 2026 | CGI Art. 11-II https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Promotional gifts | Deductible up to MAD 100 per item | Item must carry the business name, initials or brand | 2026 | CGI Art. 10-I-B-1 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Withholding on fees and rents received | 10% on fees, 5% on rents, excl. VAT | Paid to an RNR or RNS individual by a legal person or by an RNR or RNS individual. Credits against IR, with refund. An RNR or RNS client paying fees or rent to an individual must withhold too | 2026 | CGI Art. 4-IV, 4-V, 73-II-A, 73-II-B-8, 157 https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 
 Quick method: IR before reductions = income x band rate - quick deduction. Then subtract the family reduction and credits.
 
@@ -66,11 +68,13 @@ Quick method: IR before reductions = income x band rate - quick deduction. Then 
 
 The scale applies to revenu global: all IR categories combined. Professional income is one part.
 
-- **RNR:** income over charges of the year, as for Art. 8-I; the year closes on 31 December (Art. 33). Charges follow Art. 34 to 36 and Art. 10 and 11.
-- **RNS:** income over charges for the activity, excluding provisions and carried-forward losses; closes on 31 December (Art. 38).
-- **Losses, RNR only:** deduct from the following years up to the fourth year after the loss (Art. 37, 12). Art. 12 lifts the time limit for part of a loss; read it before applying it.
-- **Non-deductible:** fines, penalties and surcharges (Art. 11-I), except late-payment indemnities under law 32-10; and cash-paid charges above the limit. Depreciation of assets bought that way is also not deductible (Art. 11-II). Exception: live animals and unprocessed farm products, except between traders.
+- **RNR:** income over charges of the year, as for Art. 8-I; the year closes on 31 December (Art. 33). Charges follow Art. 34 to 36 and Art. 10 and 11. The owner's drawings are not a staff cost; the owner's own AMO (law 98-15) and pension (law 99-15) contributions are deductible (Art. 35).
+- **RNS:** income over charges for the activity, excluding provisions and carried-forward losses, and subject to Art. 11 and 35; closes on 31 December (Art. 38).
+- **Losses, RNR only:** deduct from the following years up to the fourth year after the loss (Art. 37, 12). No time limit applies to the part of a loss that comes from depreciation properly booked and deducted under Art. 10-I-F-1-b (Art. 12).
+- **Nil or loss year:** attach to the return a signed explanatory statement (état explicatif) of the origin of the loss or nil result (Art. 82-IV). If it is missing, the DGI gives 15 days by letter, then fines MAD 2,000 (Art. 198 bis).
+- **Non-deductible:** fines, penalties and surcharges (Art. 11-I), except late-payment indemnities under law 32-10; IR itself (Art. 35); purchases, works and services without a regular invoice or other proof in the taxpayer's name carrying the Art. 145 details (Art. 11-III; a reassessment becomes final only if the invoice is not completed during the Art. 220 or 221 procedure); purchases and services of a gratuitous nature (Art. 11-IV); the social solidarity contribution (Art. 11-IV); and cash-paid charges above the limit. Depreciation of assets bought that way is also not deductible (Art. 11-II). Exception: live animals and unprocessed farm products, except between traders.
 - **Cotisation minimale base (Art. 144-I-B):** turnover and other operating income, financial income, and state, local and third-party subsidies and gifts, all excluding VAT.
+- **Year covered:** the cotisation relates to the previous year's professional income (Art. 144-I-A).
 - **Exemption:** first three financial years after activity starts. No new period when the same activity resumes after a sale or stoppage (Art. 144-I-C-2). A temporary-stoppage declaration under Art. 150 bis lifts the floor only (C-3).
 - **Interaction with tax (Art. 144-I-E):** the cotisation is credited against IR. Where the IR share for professional income is below the cotisation, the difference stays with the Treasury. It is tested on the professional share, so "the higher of" holds only when professional income is the sole income.
 
@@ -88,7 +92,7 @@ Classify bank-statement lines and ledger entries. Keywords appear in **French**,
 | `CHEQUE REMIS`, `REMISE CHEQUE`, `versement espèces` | Receipt → turnover (confirm source) |
 | `تحويل وارد` (tahwil warid), `أداء زبون` (client payment), `فاتورة` (fatura) | Client payment → turnover |
 | `produits financiers`, `intérêts créditeurs`, `فوائد` | Financial income → in CM base |
-| `subvention`, `don reçu`, `إعانة` | Subsidy/grant → in CM base (and often taxable) |
+| `subvention`, `don reçu`, `إعانة` | Subsidy/grant → in CM base (Art. 144-I-B) |
 
 ### Deductible expenses (charges déductibles)
 
@@ -97,13 +101,14 @@ Classify bank-statement lines and ledger entries. Keywords appear in **French**,
 | `LOYER`, `bail`, `كراء` (kira) | Rent of business premises → deductible |
 | `SALAIRES`, `paie`, `أجور` | Staff wages → deductible (with CNSS) |
 | `CNSS`, `AMO`, `cotisations sociales` | Social charges → deductible |
+| `prélèvement exploitant`, owner's pay | Owner's drawings → **not** deductible (Art. 35) |
 | `ACHAT`, `fournisseur`, `marchandises`, `مشتريات` | Purchases / stock → deductible (COGS) |
 | `ELECTRICITE`, `EAU`, `LYDEC`, `REDAL`, `ONEE`, `كهرباء` | Utilities (business share) → deductible |
 | `TELEPHONE`, `INTERNET`, `IAM`, `INWI`, `ORANGE` | Telecom (business share) → deductible |
 | `ASSURANCE`, `تأمين` | Business insurance → deductible |
 | `HONORAIRES`, `comptable`, `avocat`, `أتعاب` | Professional fees → deductible |
 | `CARBURANT`, `GASOIL`, `AFRIQUIA`, `SHELL`, `وقود` | Fuel (business use) → deductible (substantiate) |
-| `AMORTISSEMENT`, `dotation` | Depreciation of fixed assets → deductible per CGI rates |
+| `AMORTISSEMENT`, `dotation` | Depreciation of fixed assets → deductible under Art. 10-I-F |
 | `INTERETS EMPRUNT`, `crédit`, `قرض` | Loan interest (business) → deductible |
 
 ### Non-deductible (charges non déductibles: reintegrate)
@@ -112,9 +117,9 @@ Classify bank-statement lines and ledger entries. Keywords appear in **French**,
 |---|---|
 | `AMENDE`, `PENALITE`, `majoration`, `غرامة` | Fines & penalties → **non-deductible** |
 | `IR`, `acompte IR`, `cotisation minimale` | The IR itself / CM → **non-deductible** |
-| `cadeaux` over the unit cap, `dons` non-qualifying | Excess gifts / non-qualifying donations → non-deductible |
+| `cadeaux` over MAD 100 per item, `dons` not listed in Art. 10-I-B-2 | Excess gifts / non-qualifying donations → non-deductible |
 | Cash expense > regulatory threshold (paiement espèces) | Portion over the cash-payment limit → **non-deductible** (Art. 11-II, above) |
-| `frais sans justificatif`, no invoice | Unsupported expense → non-deductible  |
+| `frais sans justificatif`, no invoice | Unsupported expense → non-deductible (Art. 11-III) |
 
 ### Likely personal (exclusions: not business)
 
@@ -177,39 +182,40 @@ Suggested workbook (one sheet, formulas shown for the reviewer):
 | B6 | **Net professional result** | `=B1+B2-B4+B5` |
 | B7 | Other revenu global (salary, rental, …) | input |
 | B8 | **Net taxable income (revenu global)** | `=MAX(B6,0)+B7` |
-| B9 | Bracket rate | lookup on B8 vs §1 scale |
-| B10 | Somme à déduire | lookup on B8 vs §1 scale |
+| B9 | Bracket rate | lookup on B8 vs the rates table |
+| B10 | Somme à déduire | lookup on B8 vs the rates table |
 | B11 | **IR brut (scale)** | `=B8*B9-B10` |
 | B12 | Dependents | input |
-| B13 | Family deduction | `=MIN(B12*600,3600)`  |
+| B13 | Family deduction | `=MIN(B12*600,3600)` |
 | B14 | **IR net (scale)** | `=MAX(B11-B13,0)` |
 | B15 | CM rate | 0.25% / 0.15% / 4% (select) |
 | B16 | CM raw | `=B3*B15` |
-| B17 | **Cotisation minimale** | `=IF(new_business_exempt,0,MAX(B16,1500))`  |
+| B17 | **Cotisation minimale** | `=IF(new_business_exempt,0,MAX(B16,1500))` |
 | B18 | **IR due (before credits)** | `=MAX(B14,B17)` (single-income case; with other income apply Art. 144-I-E, see The base) |
 | B19 | Acomptes / CM paid / withholdings | input |
 | B20 | **Net IR payable on filing** | `=MAX(B18-B19,0)` |
 
-> The lookup in B9/B10 must use the **§1 scale table**. Keep the somme-à-déduire
-> column  in step with CGI Art. 73.
+> The lookup in B9/B10 must use the rates table above. Keep the somme-à-déduire
+> column in step with CGI Art. 73.
 
 ## Deadlines and filing
 
 | Step | Deadline | Source |
 |---|---|---|
-| Choose RNS on starting | Written request to the tax inspector before 1 May of the year after the start; valid for the start year | Art. 44-I |
+| Choose RNS on starting | Written request by registered letter or by hand against receipt to the tax inspector before 1 May of the year after the start; valid for the start year | Art. 44-I |
 | Choose RNS while active | Within the revenu global filing period for the prior year | Art. 44-I |
-| Pay the cotisation minimale | Before 1 February each year | Art. 173-I |
+| Pay the cotisation minimale | Before 1 February each year, for the previous year | Art. 173-I |
 | Return with professional income on RNR or RNS | Before 1 May of the following year | Art. 82-I |
 | Return with no professional income | Before 1 March | Art. 82-I |
 | Pay the IR | Same deadline as the return | Art. 173-I |
+| Lawyers: provisional acomptes | MAD 100 per case. By option per file: at the court registry on filing, or electronically before the end of the month after the year. None for the first 60 months from the tax ID number | Art. 173-III |
 
-Steps: 1. Close the year on 31 December. 2. Reconcile accounting result to tax result. 3. Build revenu global. 4. Apply scale and family reduction. 5. Compare the cotisation under Art. 144-I-E. 6. Deduct withholdings and the cotisation paid. 7. File through the DGI online service and pay by the deadline. The old acompte calendar is removed: Art. 173 as read sets no acomptes for RNR or RNS income, only the cotisation before 1 February.
+Steps: 1. Close the year on 31 December. 2. Reconcile accounting result to tax result. 3. Build revenu global. 4. Apply scale and family reduction. 5. Compare the cotisation under Art. 144-I-E. 6. Deduct withholdings and the cotisation paid. 7. File through the DGI online service and pay by the deadline. Art. 173 sets no acomptes for RNR or RNS income other than the lawyers' acomptes. Those credit first against the cotisation, then against the IR on professional income; any balance stays with the Treasury (Art. 173-III), and the return must show them (Art. 82-I). Filing must be electronic for businesses and for the liberal professions listed by regulation (Art. 155-I). The return also carries an état des ventes by client ICE (Art. 82-I).
 
 ## Penalties and interest
 
-- **Late or missing return (Art. 184):** 5% if within 30 days, or on a late corrective return producing more tax; 15% after 30 days; 20% on assessment for no, incomplete or insufficient return. Where the cotisation exceeds the tax, or the result is nil or a loss, the surcharge is on the cotisation.
-- **Late payment (Art. 208-I):** 10% penalty, cut to 5% if paid within 30 days, plus 5% for the first month and 0.50% for each further month or part.
+- **Late or missing return (Art. 184):** 5% if within 30 days, or on a late corrective return producing more tax; 15% after 30 days; 20% on assessment for no, incomplete or insufficient return. Where the cotisation exceeds the tax, or the result is nil or a loss, the surcharge is on the cotisation. Minimum surcharge MAD 500. An incomplete return with no effect on the base or collection costs a MAD 500 fine instead.
+- **Late payment (Art. 208-I):** 10% penalty, cut to 5% if paid within 30 days, plus 5% for the first month and 0.50% for each further month or part. The increases stop running past 12 months of a pending appeal before the local, regional or national commission.
 
 ## Cross-border points
 
@@ -266,20 +272,21 @@ Other cases carried over:
 
 1. Individual or company? Company: R-MA-1.
 2. RNR or RNS? Was an RNS option filed and is it still valid? If unknown, treat as RNR and flag.
-3. Activity type: is it a profession under Art. 89-I-12 (4% rate), or a reduced-rate sale?
+3. Activity type: is it a profession under Art. 89-I-12 or 91-VI-1 (4% rate), or a reduced-rate sale?
 4. Turnover excl. VAT, other operating and financial income, subsidies; net accounting result; bank or ledger export.
 5. Other income: salary, rental, capital.
 6. Dependants and their income.
 7. Activity start date.
-8. Cotisation paid and withholdings.
+8. Cotisation paid, withholdings, and lawyers' acomptes.
 
-Defaults when facts are missing: uncertain expense stays non-deductible until supported; private-looking spend is excluded; turnover near a ceiling is flagged. Compute both tax and cotisation every time.
+Defaults when facts are missing: uncertain expense stays non-deductible until supported; private-looking spend is excluded; turnover near a ceiling is treated as breached, with a warning of the move to RNR (Art. 39). Compute both tax and cotisation every time.
+
+Escalate to the expert-comptable: RNR or RNS eligibility and a forced switch; depreciation policy, mixed business and private assets, related-party charges; revenu global assembly and withholding credits; 4% or 0.15% cotisation edge cases and the exemption window. Present the computation, assumptions and open items, never a file-ready result.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| DGI, Code General des Impots 2026 (French); Art. 11, 12, 30, 33, 37, 38, 39, 44, 73, 74, 82, 144, 173, 184, 208 extracts read from the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| DGI, Code General des Impots 2026 (French); Art. 4, 10, 11, 12, 30, 33 to 39, 44, 73, 74, 82, 89, 91, 144, 155, 157, 173, 184, 198 bis, 208 extracts read from the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 
-Not yet confirmed: the SIMPL-IR portal address and screens, and the current form number (DGI portal guide not read); the loss-year explanatory statement (état explicatif) in the old skill; the cap on deductible gifts; the old dependant age rule (under 27, none if disabled), since only the start of Art. 74-II was read; depreciation rates; residence and treaty rules; the Art. 12 exception wording in full.
-
+Not yet confirmed: the SIMPL-IR portal address and screens, and the current form number (DGI portal guide not read); depreciation rates; residence and treaty rules.
