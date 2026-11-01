@@ -11,7 +11,7 @@ Writer evidence, not independent acceptance or accountant attestation. Base `893
 | 5 | Rates, bands and thresholds: July paid/unpaid interest, ceiling and local-market rate conditions | Art. 157 | https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf | « Les intérêts échus non payés entre les personnes liées ne sont pas déductibles » | 2026-11-01; PDF p. 48 |
 | 6 | The base: Profit transfer mechanisms, information request, separate general deductibility | Arts. 54, 57 | https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf | « soit par sous-capitalisation, soit par tout autre moyen » | 2026-11-01; PDF pp. 21, 23–24 |
 | 7 | Deadlines and filing: Adjustment route through general annual return rather than invented TP filing | Line 11; annex 1 lines 10–12 | https://www.obr.bi/images/IR_SOCIETE_2021_VF_CORRIGE_octobre_2021_1.pdf | « Divers (annexer le détail) » | 2026-11-01; PDF pp. 2, 4 |
-| 8 | Deadlines and filing: Record retention | Art. 32 | https://www.obr.bi/images/LOI_RELATIVE_AUX_PROCEDURES_FISCALES_ET_NON_FISCALES_2020.pdf | « dix (10) ans » | 2026-11-01; PDF p. 11 |
+| 8 | Deadlines and filing: Record retention | Art. 32 | https://www.obr.bi/images/LOI_RELATIVE_AUX_PROCEDURES_FISCALES_ET_NON_FISCALES_2020.pdf | « une durée de dix ans » | 2026-11-01; physical PDF p.13, art.32 visually read |
 
 ## Explicit limits
 

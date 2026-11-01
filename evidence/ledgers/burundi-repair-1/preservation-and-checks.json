@@ -1,0 +1,116 @@
+{
+  "prior_head": "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf",
+  "guides": {
+    "skills/burundi/bi-company-formation.md": {
+      "sha256": "d030c03c6f952fe891f66a3dc14fa6194b489a820d97649dd184ded64b4ba787",
+      "description_words": 107,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    },
+    "skills/burundi/bi-corporate-income-tax.md": {
+      "sha256": "11cf094be1dd0b7245eed225873ac4b97d36a36252cc0d930284e4aff6f2b1f0",
+      "description_words": 103,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    },
+    "skills/burundi/bi-cross-border-tax.md": {
+      "sha256": "c219a5198c226f825cf919795e32d8f9b3fe24f5bcce16bf44d85dc84a417920",
+      "description_words": 98,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": false,
+      "version": "1.1"
+    },
+    "skills/burundi/bi-income-tax.md": {
+      "sha256": "2ae41a26836661a435206964e7a09f910eb94555bba38a7adf8dfa19cdaf074b",
+      "description_words": 103,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    },
+    "skills/burundi/bi-payroll-social.md": {
+      "sha256": "13ba76e6e8950477863113c13af4210061a405c24367ea47e72ace38f97ac383",
+      "description_words": 98,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    },
+    "skills/burundi/bi-tax-overview.md": {
+      "sha256": "11f8f4d8a10b12f534e09d3e7a8b7f1d7787c0c879e3fe2175632c6dc21059b4",
+      "description_words": 103,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    },
+    "skills/burundi/bi-transfer-pricing.md": {
+      "sha256": "a0248c77314fc08d69ce49604b6b355340a12fdc8ec529b0692989448bca246a",
+      "description_words": 101,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": false,
+      "version": "1.1"
+    },
+    "skills/burundi/bi-vat-gst.md": {
+      "sha256": "34ac483c645876a82b7083b6fe17ba3d3dc78dfe42118caa036ee2306a6f7036",
+      "description_words": 101,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.2"
+    }
+  },
+  "preserved_writer_evidence": {
+    "evidence/ledgers/bi-old-topic-destinations.md": "1fb7518e1abd651a4f913f0237699878265f120f9797d9919441a9794545c16d",
+    "evidence/ledgers/burundi-writer-20261101/README.md": "ed683ce0229cad9a7da6c7ff35547f504b4cb90de0731c6e21144ce4aae39ab0"
+  },
+  "initial_review_sha256": {
+    "evidence/ledgers/burundi-review-20261101/examples.md": "8933fe1df91a005661be496df23b1506df2508938c10ab9958921f1c45e549bc",
+    "evidence/ledgers/burundi-review-20261101/review-checks.py": "c776e6d42af021b81c62d946805f6bd8531d8ad282be8479b223fe71850f195f",
+    "evidence/ledgers/burundi-review-20261101/build-row-record.py": "e04a857ec283269f7200c1b06d0f0685c1e83e4653206154d95f7879a412ab3f",
+    "evidence/ledgers/burundi-review-20261101/README.md": "e8aec5eb9c9385694e6698adf6349723b0214c909602eb927c80692053f51a71",
+    "evidence/ledgers/burundi-review-20261101/mechanical-checks.json": "c345e5a493e4e312cc573480f992649aff5edef9ddbc306182c1348965e01257",
+    "evidence/ledgers/burundi-review-20261101/row-review.md": "0e1831788b8a82e8ec4db8a99b1cde9de72920160b075a7e624335ae8ca6a295"
+  },
+  "verification_harness_correction": "First preservation glob accidentally selected unrelated sparse-excluded Montenegro old-topic file and stopped with FileNotFoundError. Restricted here to Burundi writer/map scope; no content was affected.",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "evidence/ledgers/burundi-repair-1/pinned-validation.py"
+      ],
+      "exit": 0,
+      "stdout": "Pinned base: 8935b6fc3a7ff0f773334a45a67448f1efe37b19; comparison includes candidate working tree\nchanged-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

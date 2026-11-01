@@ -1,0 +1,34 @@
+{
+  "prior_frozen_head": "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf",
+  "findings_repaired": [
+    "F1 EBMS deduction in both2026periods",
+    "F2 payroll pension block vs political office",
+    "F3 distinct30daystockinventory filing",
+    "F4 VAT monthly convention held",
+    "F5 exact quotations/physical locators",
+    "Opening general-reference notice"
+  ],
+  "parent_source_check_correction": "Reviewer F5 suggests procedure32 physicalp12. Actual PDFp12 contains article30 continuation; article32 is on physical/printedp13. Corrected writer ledgers to13, added exact quote une dur\u00e9e de dix ans, preserved original review unchanged. Company236/278 combined range also corrected to32/37.",
+  "actual_source_read": "Modified budget58, Julybudget65, procedure11\u201313, VAT22 and IR39 visually read; VAT9/20 and company article/pagemapping from actual selectablePDF/OCR; monthlyform4 and ADBheading actualtext read.",
+  "currentness": "Original explicit domain gaps retained; no accountant attestation or comprehensive-country approval.",
+  "before_guide_sha256": {
+    "skills/burundi/bi-company-formation.md": "726af702c103ccaa0acb152d8f2ab332f008cb60f22913957a707d404bf43152",
+    "skills/burundi/bi-corporate-income-tax.md": "d4ea1db0b8e0907904c2d8442bdffd99a5008adb480299ac0362e6f9b421bc74",
+    "skills/burundi/bi-cross-border-tax.md": "2a02c11bae8fe8baa3299a0c509c3db4fef7595e95de3450f5d33e83fb3b99b8",
+    "skills/burundi/bi-income-tax.md": "ea3f121ce8e419449653a73f08ddead53e27066d568287202f2fc87991ba6bb2",
+    "skills/burundi/bi-payroll-social.md": "d989302364cf501eeb33ddcf40fc269af0e271c636f31d2ef62c8dbd6d85360b",
+    "skills/burundi/bi-tax-overview.md": "7d9b758d7780b2700a6889c24b342e1806deb3ec54763548310680c826595ede",
+    "skills/burundi/bi-transfer-pricing.md": "9b5148d93979fff1c608d7713bd62000299f7b57bee4340420a1c9e93a5cb819",
+    "skills/burundi/bi-vat-gst.md": "9160720f5e0b64b8ed3fb592f9fb1e9ba029be5fcbed5dd4e3319bc9d01730c5"
+  },
+  "after_guide_sha256": {
+    "skills/burundi/bi-company-formation.md": "d030c03c6f952fe891f66a3dc14fa6194b489a820d97649dd184ded64b4ba787",
+    "skills/burundi/bi-corporate-income-tax.md": "11cf094be1dd0b7245eed225873ac4b97d36a36252cc0d930284e4aff6f2b1f0",
+    "skills/burundi/bi-cross-border-tax.md": "c219a5198c226f825cf919795e32d8f9b3fe24f5bcce16bf44d85dc84a417920",
+    "skills/burundi/bi-income-tax.md": "2ae41a26836661a435206964e7a09f910eb94555bba38a7adf8dfa19cdaf074b",
+    "skills/burundi/bi-payroll-social.md": "13ba76e6e8950477863113c13af4210061a405c24367ea47e72ace38f97ac383",
+    "skills/burundi/bi-tax-overview.md": "11f8f4d8a10b12f534e09d3e7a8b7f1d7787c0c879e3fe2175632c6dc21059b4",
+    "skills/burundi/bi-transfer-pricing.md": "a0248c77314fc08d69ce49604b6b355340a12fdc8ec529b0692989448bca246a",
+    "skills/burundi/bi-vat-gst.md": "34ac483c645876a82b7083b6fe17ba3d3dc78dfe42118caa036ee2306a6f7036"
+  }
+}

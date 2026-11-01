@@ -9,11 +9,13 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: vat
-version: 1.1
+version: 1.2
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
 ---
 
-# Burundi: ordinary VAT registration and monthly return for 2026
+# Burundi: ordinary VAT registration and monthly return for 2026 v1.2
+
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 
 ## Who this applies to
 
@@ -53,12 +55,12 @@ Choose the rule by transaction/registration period: the modified budget applies 
 
 | Item and conditions | Rule / amount | Period | Official source |
 |---|---|---|---|
-| VAT late declaration with tax due | 10% within first 30 days; 15% after 30 and before 60; 25% from 60 through 90; beyond 90, 30% plus 1% for each further month/part; check actual statutory interval wording | 2026 | [Art. 59](https://www.obr.bi/images/LOI_N1_10_DU_16_NOVEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_12_DU_29_JUILLET_2013_PORTANT_REVISION_DE_LA_LOI_N1_02_DU_17_FEVRIER_2009_PORTANT_INSTITUTION_DE_LA_TAXE_SUR_LA_VALEUR_AJOUTEE_TVA_.pdf) |
+| VAT late declaration with tax due | 10% within first 30 days; 15% after 30 and before 60; 25% from 60 through 90; after 90 days, 30% increased by 1% per month of delay; the clause does not establish the starting-month or part-month computation convention | 2026 | [Art. 59](https://www.obr.bi/images/LOI_N1_10_DU_16_NOVEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_12_DU_29_JUILLET_2013_PORTANT_REVISION_DE_LA_LOI_N1_02_DU_17_FEVRIER_2009_PORTANT_INSTITUTION_DE_LA_TAXE_SUR_LA_VALEUR_AJOUTEE_TVA_.pdf) |
 | Late nil/credit declaration | BIF 100,000 | 2026 | [Art. 59](https://www.obr.bi/images/LOI_N1_10_DU_16_NOVEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_12_DU_29_JUILLET_2013_PORTANT_REVISION_DE_LA_LOI_N1_02_DU_17_FEVRIER_2009_PORTANT_INSTITUTION_DE_LA_TAXE_SUR_LA_VALEUR_AJOUTEE_TVA_.pdf) |
 | VAT late payment | 10% within 30 days; 25% after 30 days | 2026 | [Art. 60](https://www.obr.bi/images/LOI_N1_10_DU_16_NOVEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_12_DU_29_JUILLET_2013_PORTANT_REVISION_DE_LA_LOI_N1_02_DU_17_FEVRIER_2009_PORTANT_INSTITUTION_DE_LA_TAXE_SUR_LA_VALEUR_AJOUTEE_TVA_.pdf) |
 | VAT understated: understatement / due tax comparison | 25% if <= half; 50% if > half; 100% for fraud | 2026 | [Art. 61](https://www.obr.bi/images/LOI_N1_10_DU_16_NOVEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_12_DU_29_JUILLET_2013_PORTANT_REVISION_DE_LA_LOI_N1_02_DU_17_FEVRIER_2009_PORTANT_INSTITUTION_DE_LA_TAXE_SUR_LA_VALEUR_AJOUTEE_TVA_.pdf) |
 
-VAT invoice/electronic-system offences have separate provisions. Do not stack general tax and VAT-specific penalties without identifying the actual legal trigger. Current interest and every EBMS-specific penalty are not completed here.
+Do not calculate the post-90-day addition until the applicable starting-month and part-month convention is established. The procedure-law rule for started months of late-payment interest does not, by itself, settle this distinct VAT filing penalty. VAT invoice/electronic-system offences have separate provisions. Do not stack general tax and VAT-specific penalties without identifying the actual legal trigger. Current interest and every EBMS-specific penalty are not completed here.
 
 ## Cross-border points
 

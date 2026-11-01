@@ -9,11 +9,13 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 1.1
+version: 1.2
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
 ---
 
-# Burundi: employment withholding and ordinary INSS for 2026
+# Burundi: employment withholding and ordinary INSS for 2026 v1.2
+
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 
 ## Who this applies to
 
@@ -43,7 +45,7 @@ For casual employees income law art. 119 provides a special rate and protected l
 ## Deadlines and filing
 
 1. Keep employee identity/NIF where issued, contract, principal-employer status, dates, basic salary, allowances, actual contributions and INSS affiliation number. Produce a payslip showing gross components and tax withheld. Remit and declare employment withholding to OBR within the first fifteen days of the following month. Keep an individual annual recap and submit it within thirty days after year-end, with regularisation required by art. 115. A tax-exempt employer does not necessarily exempt its employees: art. 116 requires monthly self-declaration in that situation. [IR arts. 112–116](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf).
-2. Use [monthly joint return section III](https://www.obr.bi/images/DECLARATION_TVA-_IRE-_PF_ET_AUTRES_RETENUES_A_LA_SOURCE-2021-VF-juillet-2022-vf-1.pdf): principal permanent employees on lines 1–4, casual employees on 5–7, secondary employees line 8, political/public office line 9–11, qualifying termination compensation lines 12–15, total line 16. Record counts, taxable bases, statutory rates and tax in the displayed columns. The old printed form is a field map, not authority to override the current law.
+2. Use [monthly joint return section III](https://www.obr.bi/images/DECLARATION_TVA-_IRE-_PF_ET_AUTRES_RETENUES_A_LA_SOURCE-2021-VF-juillet-2022-vf-1.pdf): principal permanent employees on lines 1–4, casual employees on 5–7, secondary employees line 8, early-retirement/complementary-pension rows on lines 9–11, qualifying termination compensation lines 12–15, total line 16. Lines 9–11 are the historical form’s pension block, not a political/public-office category and not independent authority for current pension treatment. Record counts, taxable bases, statutory rates and tax in the displayed columns. IR art. 117 applies the principal progressive scale to political/public-office holders and end-of-mandate compensation beneficiaries; do not route them to pension lines 9–11. Confirm the current category-specific form placement with OBR before submission. [IR art. 117, PDF p. 39](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf). The old printed form is a field map, not authority to override the current law.
 3. Use the category-specific OBR [portal link](https://www.obr.bi/index.php/teledeclaration-telepaiement), retaining return acknowledgment and separate quittance/bank payment proof. The exact current taxpayer submission/payment-reference screens and current annual recap download have not been verified.
 4. INSS is quarterly for employers: complete the Déclaration des rémunérations et cotisations, Modèle VI, from the monthly capped employee calculations and payroll detail. Declaration and contribution payment are due within the first fifteen days of the month following the calendar quarter. The INSS Q3 2026 notice asks that payment identify employer, affiliation number and quarter, with the payment reference attached to the declaration. Keep the submitted schedule and bank/payment evidence. Voluntary members have a different monthly frequency. [INSS declaration/payment instructions](https://inss.gov.bi/declaration-et-versement-des-cotisations/); [Q3 2026 employer notice](https://inss.gov.bi/declaration-et-paiement-des-cotisations-du-3eme-trimestre-2026-a-linstitut-national-de-securite-sociale/).
 5. For foreign employees separately assess the budgets' annual employer charge and keep contract visa, annual gross salary and payment evidence. Do not deduct this employer charge from an employee as an INSS contribution. [Art. 103](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf).
