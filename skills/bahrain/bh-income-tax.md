@@ -33,6 +33,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | VAT mandatory registration | BHD 37,500 | 2026 | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration |
 | unverified: SIO rates and ceiling | See bh-payroll-social; figures below repeat the prior version | 2026 | unverified |
 
+## The base
+
 ### Section 1: Quick Reference
 
 **Quick Reference table**
@@ -131,8 +133,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Unknown VAT registration status | Assume not registered until confirmed; do not net out VAT |
 | Request for corporate / hydrocarbon / DMTT computation | Out of scope for this individual skill: escalate |
 
-
-## The base
 
 ### Section 3: Transaction Pattern Library
 
