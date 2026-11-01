@@ -1,0 +1,10 @@
+# Superseding source finding: deleted global-income subsection
+
+Fresh independent reviewer, 2026-11-01. This is additive evidence and does not alter any historical review file. It corrects income ledger row30 and the Cross-border section accepted within the earlier limited LF overlay at candidate416ec514979330e5980061eda4a38ab2cdef6e4a. That earlier review did not reconcile LF18; its positive conclusion for the old105–108 references is superseded by this finding.
+
+- CGI2025 original printed p32/PDF33 introduces **S/Section2: Revenu global**, then A/Revenu imposable and article96.
+- The next headings B/nonresident income, C/arrival and D/departure remain inside that subsection. Original printed p35/PDF36 ends article108 and only then starts **SectionIII: Calcul de l’Impôt**, article109.
+- LF2026 article18, printed p25, expressly says « la sous — section 2 ... est supprimée » and replaces « S/Section 2 : Revenu global » with « S/Section 2 : (supprimé) ».
+- Therefore the deleted subsection boundary is96–108. Current operative reliance on105's five-times rental-value floor,106–108's arrival/departure/treaty-move methods, or96's individual-loss bridge must be withdrawn/held. General current residence/source rules must instead rely on article2 and separately reconciled surviving provisions. Article117 lies in SectionIII, outside the deleted subsection, but117(I)'s references to98–99/global credits require reconciliation.117(III–IV)'s separately stated foreign-financial rule is distinct.
+
+Read the actual source text and visually inspected CGI PDF33 and36 and LF p25; original page images, not source-matrix assertions, establish the boundaries. CGI SHA25675b798bb621b7a66bc9e4c647e02743c6ed6a2af44bd68a38fd499e478a57a11; LF SHA2567bc46241a7c7586d9eece4fb5c95a6587ba637732480b7b4c8cfbf31112d7fd2. The source URLs are the archived ministry CGI and enacted official LF2026 already recorded in the earlier capture manifests. This is a current claim correction, not merely an unavailable form or implementation gap.

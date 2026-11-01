@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate actual committed Chad Guides against immutable country base."""
 from pathlib import Path
-import subprocess,os,json,hashlib,importlib.util,sys
+import subprocess,os,json,hashlib,importlib.util,sys,re
 ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).resolve().parent
 BASE='59c23acba2ad66dd2bb29ffc81ffbb9289769ef8'
 os.chdir(ROOT);sys.path.insert(0,str(ROOT/'scripts'))
@@ -10,6 +10,8 @@ changed=subprocess.check_output(['git','diff','--name-only','--no-renames',BASE,
 guides=[x for x in changed if x.startswith('skills/chad/') and x.endswith('.md') and not x.endswith('/README.md')]
 assert len(guides)==7,guides
 assert all(subprocess.check_output(['git','show',head+':'+x])==Path(x).read_bytes() for x in guides)
+example_count=sum(len(re.findall(r'^```oa-check\s*$',Path(x).read_text(),re.M)) for x in guides)
+assert example_count>=2*len(guides)
 env=dict(os.environ,PYTHONPATH='/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps')
 commands=[]
 for argv in [['python3','scripts/skill_checks.py',*guides],['python3','scripts/check-examples.py','--require',*guides],['python3','scripts/check-sync-integrity.py','--base',BASE,'--head',head,'--mode','audit','--strict-metadata'],['git','diff','--check',BASE,head]]:
@@ -52,6 +54,6 @@ imp='skills/chad/td-import-exemption-eligibility.md';assert subprocess.check_out
 # Zero-context saved patch, avoiding unchanged-context whitespace noise.
 patch=subprocess.check_output(['git','diff','--unified=0',BASE,head])
 (ROOT.parent/'sources'/'committed-guide-change-zero-context.diff').write_bytes(patch)
-report={'base':BASE,'validated_head':head,'changed_guides':guides,'changed_guide_count':7,'example_count':14,'metadata':metadata,'historical_files_preserved':len(history),'commands':commands,'all_pass':True}
-(OUT/'committed-validation.json').write_text(json.dumps(report,indent=2)+'\n')
-print(json.dumps({'changed_guides':7,'examples':14,'all_pass':True,'head':head}))
+report={'base':BASE,'validated_head':head,'changed_guides':guides,'changed_guide_count':7,'example_count':example_count,'metadata':metadata,'historical_files_preserved':len(history),'commands':commands,'all_pass':True}
+(OUT/os.environ.get('CHAD_VALIDATION_REPORT','committed-validation.json')).write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({'changed_guides':7,'examples':example_count,'all_pass':True,'head':head}))
