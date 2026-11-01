@@ -1,0 +1,60 @@
+{
+  "base_commit": "251813c96f7b883f2adc4c1bb72bc175a288bd83",
+  "new_job": true,
+  "replaced_old_units": 0,
+  "moved_old_units": 0,
+  "removed_old_units": 0,
+  "preserved_prior_guides": [
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "git_blob": "ebd7f9a1f8fbf33209083f49347619601f101be6",
+      "sha256": "c8fe5e6b1c6f3febfc81e5837910ea2d619e088a31ec8c262bfcf00f409a3dd1"
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "git_blob": "c6b397ce41b9f7ca9d9d1932e634c21d432459ad",
+      "sha256": "6d6842f12a2851ee2dc4a9325deb2ef274a6be4e5e51aafcd4efc693bb141f5b"
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "git_blob": "268f05107b43141d8fd78c732a54a4de994f51cb",
+      "sha256": "d6bcfb8840801437aebeff34dfd6dd84c8d4d7103911c193a7afebd1a0ba303d"
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "git_blob": "7c749197563c87de5ba7f635b42b1b4e31efb725",
+      "sha256": "d1ed53baee9c64c6b2bdcdeb699dba9a4a0af21abb8ab315b85b654bfbe27f34"
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "git_blob": "1bfa0a555e6a8714f6e18ba54cbb1ea8aac6bb27",
+      "sha256": "e12d33450dab8e9840cd6b55397651d5957e0089fc3394707956caee14fdf5d4"
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "git_blob": "c50227dfe49fe0e85a6c78975701f7fb1902c828",
+      "sha256": "b63bb74b1fd8a3c76a8d581915111f6e8b76010c410683e7eb9e4cdb54091c51"
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "git_blob": "2cb2c5244410ff2bf3673b91206b704920d4bc09",
+      "sha256": "6c01174957ea8f62c530248cca6228bd10d312f62ad4128282ac3c0f83672365"
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "git_blob": "0a022f7fe269d101c2c2e9c36e68b7c458bafd82",
+      "sha256": "a8063ff70ce6b565103a56befdcf1bb8ba127b87273bc15ed88f64f78059196a"
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "git_blob": "8b34f58cfb71f10c6c37ec206f2652f00940df1f",
+      "sha256": "014b19be7f3a6d726206a24ffb893467585e8f4de8aac2a9ceca02fc6091049c"
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "git_blob": "406cc271d57c38a85e92c46eeb2c2ddbda0730eb",
+      "sha256": "7062a8da2d6fa198874a62e4894d012b3a024878bdad2f5acffc839baa3a5137"
+    }
+  ],
+  "explanation": "New non-salary/non-rental individual-business IBA job. All ten earlier Guides and all prior Benin evidence remain byte-identical. No figure home was migrated; common company methods/deadlines and overview sanctions are linked. IBA-specific statutory rates/losses have distinct taxpayer predicates and act articles. README change is appended only."
+}
