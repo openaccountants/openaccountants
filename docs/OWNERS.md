@@ -124,7 +124,6 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 | PT | Portugal | Claude | 2026 | Issue #418 closed. |
 | RO | Romania | Claude | 2026 | Issue #419 closed. |
 | RS | Serbia | Claude | 2026 | Issue #420 closed. |
-| RU | Russia | ChatGPT | 2026 | No open PR. Issue #421 open. |
 | SE | Sweden | Claude | 2026 | Issue #422 closed. |
 | SI | Slovenia | Claude | 2026 | Issue #423 closed. |
 | SJ | Svalbard | ChatGPT | 2026 | Draft PR #846 open. Issue #424 open. |
@@ -298,7 +297,6 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | michael | europe | PT | Portugal | 19 | 0 | 0 | none |
 | michael | europe | RO | Romania | 13 | 0 | 0 | none |
 | michael | europe | RS | Serbia | 10 | 0 | 0 | none |
-| michael | europe | RU | Russia | 14 | 0 | 0 | IT-CORP, TP, XB |
 | michael | europe | SE | Sweden | 15 | 0 | 0 | none |
 | michael | europe | SI | Slovenia | 10 | 0 | 0 | none |
 | michael | europe | SJ | Svalbard | 3 | 0 | 0 | IT-CORP, VAT, SC, TP, XB |

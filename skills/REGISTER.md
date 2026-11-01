@@ -4,14 +4,14 @@ Generated from the skill tree on 2026-10-31 by `scripts/build-register.py`. One 
 
 ## Totals
 
-- Skills: 2294
-- Jurisdictions: 274 (266 countries or states, the rest pseudo-codes)
-- Tax year 2026: 1008; still 2025: 1160; no year: 121
+- Skills: 2280
+- Jurisdictions: 273 (265 countries or states, the rest pseudo-codes)
+- Tax year 2026: 994; still 2025: 1160; no year: 121
 - Signed by a named accountant (tier 1): 30, in US (21), PH (7), CA (1), MY (1)
-- Scope: 2060 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 145 other (routers, templates, patterns)
-- Domain from the README `covered_by`: 194; from the slug: 1212; no tax domain: 888
-- Pass all 10 checks: 205 of 2060 tax skills
-- Duplicates: 400 skills in 143 (country, domain) cells where the README does not name which skill covers the job
+- Scope: 2048 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 143 other (routers, templates, patterns)
+- Domain from the README `covered_by`: 194; from the slug: 1205; no tax domain: 881
+- Pass all 10 checks: 205 of 2048 tax skills
+- Duplicates: 396 skills in 142 (country, domain) cells where the README does not name which skill covers the job
 
 ## Pass rate per check
 
@@ -87,7 +87,6 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | CH | 1 | 1 | 2! | 1 | 1 | 1 | 1 | 6 | 14 | 0 | 14 |
 | FI | 2! | 2! | 1 | 1 | 1 | 1 | 2! | 0 | 14 | 0 | 14 |
 | NG | 4! | 1 | 3! |  | 1 |  |  | 0 | 0 | 0 | 14 |
-| RU | 4! |  | 1 | 1 | 1 |  |  | 0 | 14 | 0 | 14 |
 | SE | 3! | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 13 | 0 | 14 |
 | CZ | 2! | 1 | 2! | 2! | 1 | 1 | 1 | 3 | 12 | 0 | 13 |
 | ID | 3! | 1 | 1 |  | 2! |  |  | 0 | 1 | 0 | 13 |
@@ -576,10 +575,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | PT | XB | `pt-foreign-source-treaties` |
 | RO | IT-IND | `ro-employee-income-tax` |
 | RO | IT-IND | `ro-income-tax` |
-| RU | IT-IND | `ru-freelance-intake` |
-| RU | IT-IND | `ru-income-tax` |
-| RU | IT-IND | `ru-return-assembly` |
-| RU | IT-IND | `ru-self-employed-npd` |
 | RW | IT-IND | `rw-income-tax` |
 | RW | IT-IND | `rwanda-income-tax` |
 | SA | IT-IND | `sa-freelance-intake` |
@@ -1022,9 +1017,6 @@ For each country, the 3 tax skills with the fewest rates rows neither linked nor
 | RS | `rs-cross-border` | 4 | 19 | 78.9 | 0.0 |
 | RS | `serbia-vat` | 4 | 16 | 75.0 | 0.0 |
 | RS | `rs-transfer-pricing` | 8 | 19 | 57.9 | 0.0 |
-| RU | `ru-einvoice` | 8 | 8 | 0.0 | 0.0 |
-| RU | `ru-bookkeeping` | 10 | 10 | 0.0 | 0.0 |
-| RU | `ru-financial-statements` | 12 | 12 | 0.0 | 0.0 |
 | RW | `rwanda-vat` | 13 | 14 | 7.1 | 0.0 |
 | RW | `rwanda-social-contributions` | 29 | 29 | 0.0 | 0.0 |
 | RW | `rw-income-tax` | 32 | 32 | 0.0 | 0.0 |
