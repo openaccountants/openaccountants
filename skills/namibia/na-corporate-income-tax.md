@@ -35,6 +35,7 @@ Companies and close corporations with Namibian-source or deemed-source income ([
 | Petroleum operations | 35% | 2018/19 table | https://www.namra.org.na/tax-types/page/income-tax/ |
 | Long-term insurers | 40% of gross investment income taxed at the company rate; page shows 12.8% at the old 32% | 2018/19 table | https://www.namra.org.na/tax-types/page/income-tax/ |
 | Assessed loss set-off | Limit: greater of N$1 million or 80% of taxable income before set-off | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.21(1)) |
+| Assessed loss carry-forward | 5 years; 10 years for mining, petroleum and green hydrogen entities | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.21(1A)) |
 | Non-resident shareholders tax, company holding 25%+ | 10% | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.45) |
 | Non-resident shareholders tax, other | 20% | 2026 | same |
 | Interest, royalties, management and consultancy fees to non-residents | 10%: see cross-border skill | 2026 | https://www.namra.org.na/tax-types/page/withholding-tax-30120/ |
@@ -71,7 +72,7 @@ expected:
   tax: 300000.00
 ```
 
-Example 2. A decision: how much loss to use. Income before set-off N$5,000,000, balance of loss N$6,000,000. Limit is the greater of N$1m and N$4m, so N$4m is set off. Taxable N$1,000,000, tax N$300,000; N$2,000,000 of loss carries on.
+Example 2. A decision: how much loss to use. Income before set-off N$5,000,000, balance of loss N$6,000,000. Limit is the greater of N$1m and N$4m, so N$4m is set off. Taxable N$1,000,000, tax N$300,000; N$2,000,000 of loss carries on, inside the 5-year limit in s.21(1A).
 
 ```oa-check
 name: Loss limit
@@ -92,7 +93,7 @@ expected:
 
 1. Year end?
 2. Mining, petroleum, insurance or other trade?
-3. Loss balance brought forward?
+3. Loss balance brought forward, and the year each loss arose?
 4. Payments to non-residents or connected parties?
 5. Was it a registered manufacturer or EPZ enterprise?
 

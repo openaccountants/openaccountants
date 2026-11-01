@@ -34,7 +34,7 @@ Namibian payers and non-residents with Namibian-source income. A payment to an a
 | Management or consultancy fees | 10%, final | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.35A(3)(a)) |
 | Directors and entertainment fees | 25%, final | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.35A(3)(b)) |
 
-Government stock interest is outside s.34A. Treaties may reduce rates; read the treaty.
+Government stock interest is outside s.34A. Interest paid by the State, or by a Namibian bank to a foreign bank, is exempt from the s.35B tax (s.35B(7)). Treaties may reduce rates; read the treaty.
 
 ## The base
 
@@ -42,7 +42,7 @@ Gross amount paid. "Consultancy" covers administrative, managerial, technical an
 
 ## Deadlines and filing
 
-Pay and file within 20 days after the month of withholding ([NamRA](https://www.namra.org.na/tax-types/page/withholding-tax-30120/)); foreign interest by the 20th (Act). Interest is deemed paid at the earlier of payment or due date. Dividends: company or agent pays NRST. Freight tax for non-residents: forms on [NamRA](https://www.namra.org.na/tax-types/page/freight-tax/). Payment reference: see the [company skill](na-corporate-income-tax.md).
+Pay and file within 20 days after the month of withholding ([NamRA](https://www.namra.org.na/tax-types/page/withholding-tax-30120/)); interest to non-residents by the 20th of the next month (s.35B(5)); s.34A interest within 20 days after the month following the month it accrued (s.34D). Interest is deemed paid at the earlier of payment or due date. Dividends: company or agent pays NRST. Freight tax for non-residents: forms on [NamRA](https://www.namra.org.na/tax-types/page/freight-tax/). Payment reference: see the [company skill](na-corporate-income-tax.md).
 
 ## Penalties and interest
 
@@ -92,7 +92,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 24 of 1981, annotated to Act 4 of 2024 (read: ss.34A, 35, 35A, 45 and 35B) | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01 |
+| Income Tax Act 24 of 1981, annotated to Act 4 of 2024 (read: ss.34A, 34D, 35, 35A, 35B, 45) | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01 |
 | NamRA withholding page (read: whole page) | https://www.namra.org.na/tax-types/page/withholding-tax-30120/ | 2026-11-01 |
 
 Not yet confirmed: Treaty list and treaty rates (no official list opened); s.35 royalty base beyond the opening words.
