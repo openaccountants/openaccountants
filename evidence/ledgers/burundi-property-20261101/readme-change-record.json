@@ -1,0 +1,10 @@
+{
+  "path": "skills/burundi/README.md",
+  "before_sha256": "b9492a1e126861e11bbf953cc550bfcb88fef03969972ddf353fd3b80da9b428",
+  "after_sha256": "af98ff63b5404e3375a224f3e757cea5f00f4f3792ff7ac629e944a40a6708ec",
+  "changes": [
+    "Add distinct property job inventory row",
+    "Replace blanket property-transaction exclusion with exact partial scope",
+    "Append evidence/status/hold paragraph"
+  ]
+}

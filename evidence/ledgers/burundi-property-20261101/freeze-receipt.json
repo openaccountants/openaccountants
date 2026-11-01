@@ -1,0 +1,78 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "new_guide_count": 1,
+  "ledger_rows": 66,
+  "examples": 4,
+  "replaced_body_units": 0,
+  "independent_review": "pending",
+  "files": [
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/README.md",
+      "sha256": "58b1228774b687585eeae7cb4d22b14347e46bd18c95ffb50f73bac593d970a6"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/bi-property-transactions.json",
+      "sha256": "e5cedf32c1ff186f0b7ad7fdc15581a80617d26fb1e7e3303916c48a8ff377ba"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md",
+      "sha256": "1608e34b80942954db37b729ace5bbca0631dff0073a66be834e3a68e108cf3c"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/old-topic-destinations.json",
+      "sha256": "a0b3069fe2ceac2a494defad1e4ace75abfe8d56ee314ae8c1c169fb0b583043"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/old-topic-destinations.md",
+      "sha256": "217d7fd97cae51d19a63708936f3ac9b9473a92fc0428345c37224f251f1212f"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/preservation-baseline.json",
+      "sha256": "2fe86d8d0d38479e46924d8afd5e19ef89b0c784fa709c7734d0f7113657b1ed"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/readme-change-record.json",
+      "sha256": "d433dc1aa5b9f07085b19f922b6ec02c283cb3f06e1c14e3aaf416bbd38a0781"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/source-identities.json",
+      "sha256": "01770649e02f3be57449b3977db721b39fb469f10f7289911201f91a859d49c5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/support-source-routes.json",
+      "sha256": "41ec4323b124a23f54a52a524c108136bb0277c403eb9f013ce0515d372f6920"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/support-unresolved-routes.json",
+      "sha256": "044b60e02385ac62767ebe1bedd8adb2d1747c0257216d2c4f9acefcf2508b6f"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-browser-routes.json",
+      "sha256": "71c1af72c1c3b7b7e9073cf63da484a41a005c903a8a6cfd12f9e843a53d29bc"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-check.py",
+      "sha256": "193c486891dc42dd6d57e2f137410acabbcbe53da56158483c9b025c97f51ad9"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-precommit-checks.json",
+      "sha256": "dada4bdf35f2826a139797edc5589c5c416138df104668b73f91a13849505d20"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-record.md",
+      "sha256": "f517a5b3210fbb235cb94fe1d3ad25e4bbab21e375207e09b70b00667572851f"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-source-routes.json",
+      "sha256": "a3069a483a2dd209e63c62d4fb355226722ab8bbaaa17bacff4a673eb318ce79"
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "sha256": "af98ff63b5404e3375a224f3e757cea5f00f4f3792ff7ac629e944a40a6708ec"
+    },
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "sha256": "0f16686a622456df42a3d335c1569ad7c872aff8fdf31b9c3edc27ed483d93f9"
+    }
+  ]
+}

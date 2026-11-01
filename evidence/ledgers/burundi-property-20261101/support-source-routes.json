@@ -1,0 +1,35 @@
+[
+  {
+    "path": "fiscalite-communale-2025.pdf",
+    "url": "https://communebutihinda.gov.bi/wp-content/uploads/2026/01/loi_fiscalite_communale.pdf",
+    "final_url": "https://communebutihinda.gov.bi/wp-content/uploads/2026/01/loi_fiscalite_communale.pdf",
+    "status": 200,
+    "bytes": 1379598,
+    "sha256": "aad6f9c2e9c6773cc2af796aed7c63ddbf78c71f1430764d0a81808b2dde23be",
+    "content_type": "application/pdf",
+    "retrieved_utc": "2026-11-01T16:55:56.879203+00:00",
+    "tls": "default valid TLS verification",
+    "actual_identity": "Law1/02 of03March2016; upload directory2026 does not establish current text. Cover and signed finalpage identify2016 enactment.",
+    "status_for_writer": "HOLD annual tax current rules; not requested2025law."
+  },
+  {
+    "path": "bob2020-2bis.pdf",
+    "url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+    "final_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+    "status": 200,
+    "bytes": 434282,
+    "sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+    "content_type": "application/pdf",
+    "retrieved_utc": "2026-11-01T16:55:58.741672+00:00",
+    "tls": "default valid TLS verification",
+    "actual_identity": "Official Gazette BOB2BIS/2020, Law1/05 of20February2020 physical23–31, printed187–195.",
+    "read_scope": "Entire enactment articles1–35 plus entire annexI–IV, neighbouring endpoint text.",
+    "currentness_limit": "Historical baseline;2026/27 budget explicit overlays must be applied; no blanket unamended-continuity assertion."
+  },
+  {
+    "path": "electronic-title-2025.pdf",
+    "url": "https://www.obr.bi/images/Ordonnance-ministerielle-conjointeportant-determination-des-modalites-dacquisition-du-titre-foncier-electronique-securise-en-application-de-larticle.pdf",
+    "error": "<HTTPError 404: 'Not Found'>",
+    "retrieved_utc": "2026-11-01T16:55:58.967955+00:00"
+  }
+]

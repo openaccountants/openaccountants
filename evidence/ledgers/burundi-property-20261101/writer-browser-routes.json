@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.obr.bi/images/Ordonnance-ministerielle-conjointeportant-determination-des-modalites-dacquisition-du-titre-foncier-electronique-securise-en-application-de-larticle.pdf",
+    "direct": "404",
+    "ordinary_browser": "404 Not Found, actual tab1 visited2026-11-01",
+    "archive": "2026resolver inaccessible via web; no dated archive law read",
+    "result": "Held. Indexed snippets are not operative source evidence."
+  },
+  {
+    "url": "https://amategeko.gov.bi/laws_and_other_acts/loi-n1-05-du-20-fevrier-2020-portant-fixation-des-droits-denregistrement-en-matiere-fonciere/",
+    "direct": "503",
+    "ordinary_browser": "Maintenance text actual tab1 visited2026-11-01",
+    "archive": "2026resolver inaccessible; no archive law read",
+    "resolution": "Actual2020law subsequently recovered directvalidTLSfromofficialBOBPDF, fullyread, hashinsourceidentities."
+  },
+  {
+    "url": "https://communebutihinda.gov.bi/wp-content/uploads/2026/01/loi_fiscalite_communale.pdf",
+    "actual_identity": "Loi1/02du03mars2016, not2025 amendment",
+    "sha256": "aad6f9c2e9c6773cc2af796aed7c63ddbf78c71f1430764d0a81808b2dde23be",
+    "result": "Do not apply oldannualrates as2026law. Filename and2026uploaddate are not enactmentcurrentness."
+  }
+]
