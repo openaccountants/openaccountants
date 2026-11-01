@@ -1,31 +1,99 @@
 ---
 name: kw-company-formation
-description: "Source-cited draft: company formation & entity choice for Kuwait (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation and entity choice in Kuwait for tax year 2026, with the tax consequences. Covers WLL, closed and public shareholding companies, direct investment licences under Law 116 of 2013, tax exemption up to ten years, tax card and first registrations. Use for questions on setting up in Kuwait, foreign ownership, KDIPA licence, 100% ownership, which entity pays Zakat or NLST, or tax steps after incorporation. Company-law figures that could not be read at source are marked unverified. Not signed off by an accountant."
+version: 0.2
 jurisdiction: KW
-tax_year: 2025
-last_updated: 2026-07-13
+category: formation
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kuwait Company Formation & Entity Choice
+# Kuwait Company Formation and Entity Choice
 
-## Company formation in Kuwait
+Tax year 2026.
 
-The most common vehicle for businesses in Kuwait is the With Limited Liability company (WLL), alongside Kuwaiti Shareholding Companies (closed KSC and public KSCP). Foreign investors may use a Direct Investment (KDIPA) licence to hold up to 100% in eligible activities. Figures below are drafted from public guides and must be confirmed against current MOCI requirements.
+## Who this applies to
 
-- **With Limited Liability company (WLL)** — Most common SME vehicle; shareholders' liability limited to capital contribution; minimum 1 shareholder permitted  _([Companies Law No. 1 of 2016](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Kuwaiti Shareholding Company (closed) — KSC** — Capital divided into shares; used for larger ventures; subject to Zakat, NLST and KFAS contributions  _([Companies Law No. 1 of 2016](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Public Kuwaiti Shareholding Company (KSCP)** — Publicly listed on Boursa Kuwait; subject to NLST 2.5%, Zakat 1% and KFAS 1%  _([Companies Law No. 1 of 2016](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Foreign ownership** — Up to 100% foreign ownership permitted in eligible activities under a Kuwait Direct Investment Promotion Authority (KDIPA) licence; otherwise generally a Kuwaiti partner of at least 51% is required  _([Direct Investment Promotion Law No. 116 of 2013 (KDIPA)](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Minimum share capital — WLL** — No fixed statutory minimum under Companies Law No. 1 of 2016; capital must be adequate for the activity (historically KWD 1,000+) (approx — confirm with MOCI for the specific activity) KWD  _(Companies Law No. 1 of 2016)_
-- **Minimum share capital — Shareholding company** — Set by the Companies Law / executive regulations per company type; confirm current threshold with MOCI (approx — confirm) KWD  _(Companies Law No. 1 of 2016)_
-- **Registration authority** — Ministry of Commerce and Industry (MOCI) commercial register, via the Kuwait Business Centre single-window portal  _([Companies Law No. 1 of 2016](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Core incorporation steps** — Reserve trade name; notarise articles of association; deposit capital; obtain commercial licence and Chamber of Commerce membership; register in the commercial register; register with PIFSS and (if taxable) the DIT  _([Companies Law No. 1 of 2016](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Incorporation timeline** — Typically 2-6 weeks for a WLL once documents are complete (approx — confirm)  _([Doing Business in Kuwait (PwC, 2025)](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
-- **Core annual compliance** — Maintain audited financial statements; renew commercial licence and Chamber of Commerce membership annually; file Zakat/NLST/KFAS (Kuwaiti shareholding cos) and CIT returns (foreign bodies); maintain PIFSS registration  _([Companies Law No. 1 of 2016; Income Tax Decree No. 3 of 1955](https://www.pwc.com/m1/en/tax/documents/doing-business-guides/dbiku.pdf))_
+Founders and foreign investors choosing a vehicle in Kuwait.
+
+## Rates, bands and thresholds
+
+| Item | Figure and conditions | Tax year | Official URL |
+|---|---|---|---|
+| Direct investment ownership | Up to 100% of the capital of the company under a Law 116 of 2013 licence | 2026 | https://kdipa.gov.kw/wp-content/uploads/2021/08/law1162013.pdf |
+| Licensed investment exemption | Income tax or other taxes exempted for up to ten years from actual start of operations (art. 27) | 2026 | same |
+| Expansion | Exempt for no less than the original exemption period (art. 27) | 2026 | same |
+| Imports for the investment | Machinery, tools and equipment wholly or partly exempt from duties (art. 27) | 2026 | same |
+| WLL | unverified: most common small vehicle, one shareholder allowed, no fixed statutory minimum capital | 2026 | unverified |
+| Closed KSC and public KSCP | unverified: minimum capital set by the Companies Law and regulations | 2026 | unverified |
+| Kuwaiti partner | unverified: at least 51% outside a direct investment licence | 2026 | unverified |
+| Incorporation time | unverified: 2 to 6 weeks for a WLL | 2026 | unverified |
+
+## The base
+
+Entity choice sets the tax regime. Public and closed shareholding companies pay the Zakat contribution, and listed companies pay NLST, see [corporate income tax](kw-corporate-income-tax.md). A WLL is outside Law 46 of 2006 by its terms.
+
+## Deadlines and filing
+
+1. Reserve the name, notarise the articles, deposit capital, obtain the commercial licence and Chamber membership, and enter the commercial register through the Kuwait Business Center at https://kbc.moci.gov.kw. This order is carried from the earlier version and is unverified.
+2. For a licence under Law 116 of 2013, follow the KDIPA procedures at https://kdipa.gov.kw/investors-service-center/investment-licensing-procedures/.
+3. A foreign corporate body registers with the tax administration within 30 days and applies for a tax card.
+4. Each year: audited statements, licence renewal, tax or Zakat returns, and PIFSS registration.
+
+## Penalties and interest
+
+See the [corporate income tax](kw-corporate-income-tax.md) skill.
+
+## Cross-border points
+
+A foreign company can also work through an agent, and is still taxed on that activity. Agency contracts go with the tax card application (reg. art. 12).
+
+## Two worked examples that recompute
+
+**Example 1.** A licensed entity with income of KWD 500,000 and a full exemption saves KWD 75,000 at 15%.
+
+```oa-check
+name: Value of exemption
+inputs:
+  income: 500000
+steps:
+  - saved: income * 0.15
+expected:
+  saved: 75000.00
+```
+
+**Example 2 (decision).** Closed KSC or WLL, profit KWD 100,000, neither listed. The KSC bears 1%, KWD 1,000. A WLL does not fall under Law 46 of 2006.
+
+```oa-check
+name: KSC contribution
+inputs:
+  profit: 100000
+steps:
+  - zakat: profit * 0.01
+expected:
+  zakat: 1000.00
+```
+
+## Ask the client first
+
+- Who are the shareholders and their nationalities?
+- What activity, and is it on the excluded list under Council of Ministers Decision 75 of 2015?
+- Will it seek a KDIPA licence?
+- Will it list?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law 116 of 2013, English text, arts. 25 to 27 read | https://kdipa.gov.kw/wp-content/uploads/2021/08/law1162013.pdf | 2026-11-01 |
+| Law 46 of 2006, English text, arts. 1 to 5 read | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+
+Not yet confirmed: Companies Law 1 of 2016 text: moci.gov.kw law pages gave no document link. Minimum capital for WLL, KSC and KSCP. The 51% partner rule. Timeline and step order. Chamber membership and licence renewal details. Whether the KFAS contribution falls on closed KSCs.
 
 <!-- openaccountants-cta-block -->
 

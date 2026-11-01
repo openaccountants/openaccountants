@@ -1,167 +1,127 @@
 ---
 name: kuwait-tax
-description: Use this skill whenever asked about Kuwait taxation, corporate income tax, ZAKAT, or VAT status. Kuwait does NOT have VAT. CIT at 15% applies to foreign entities only. Kuwaiti entities pay ZAKAT. DMTT at 15% for qualifying MNEs from 1 Jan 2025. ALWAYS read before handling Kuwait tax work.
-version: 2.0
+description: "Routing and bookkeeping treatment for Kuwait tax work in tax year 2026. Covers bank statement patterns for Kuwaiti banks, the Ministry of Finance, customs and PIFSS, how to classify them given no VAT, corporate income tax for a foreign branch, the 5% retention, Zakat, DMTT, and test cases. Use whenever asked to classify Kuwait transactions or handle Kuwait tax work, and for Kuwait VAT status. Kuwait has no VAT. Points to the detailed Kuwait skills for each tax. Not signed off by an accountant."
+version: 2.1
 jurisdiction: KW
-tax_year: 2025
-last_updated: 2026-07-13
+category: tax-overview
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kuwait Tax
+# Kuwait Tax v2.1
 
-## Section 1 -- Quick reference
+Tax year 2026.
 
-**Quick reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Kuwait |
-| VAT/GST status | NOT IMPLEMENTED |
-| CIT | 15% flat on foreign-owned share of profits |
-| ZAKAT | 1% of net profits (listed Kuwaiti companies) |
-| NLST | 2.5% of net profits (listed companies) |
-| KFAS | 1% of net profits (shareholding companies) |
-| DMTT | 15% on MNEs with global revenue >= EUR 750M (from 1 Jan 2025) |
-| Personal income tax | None |
-| Authority | Ministry of Finance, Department of Income Tax |
-| Portal | https://www.mof.gov.kw |
-| Currency | KWD |
-| Primary legislation | Income Tax Decree No. 3/1955 as amended by Law No. 2/2008; ZAKAT Law 46/2006 |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+Anyone classifying Kuwait bank lines or starting Kuwait tax work. Rates live in the [corporate income tax](kw-corporate-income-tax.md), [VAT](kw-vat-gst.md) and [payroll](kw-payroll-social.md) skills.
 
-## Section 2 -- Required inputs and refusal catalogue
+Minimum input: a bank statement from NBK, KFH, Gulf Bank, Burgan Bank, Al Ahli United, Boubyan or any Kuwaiti bank.
 
-**Minimum viable** -- bank statement. Acceptable from NBK, KFH, Gulf Bank, Burgan Bank, Al Ahli United, Boubyan, or any Kuwaiti bank.
+## Rates, bands and thresholds
 
-## Section 3 -- Supplier pattern library
+| Item | Figure and conditions | Tax year | Official URL |
+|---|---|---|---|
+| VAT or GST | Not implemented | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
+| Corporate income tax | 15% of net taxable income (reg. art. 9) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
+| Zakat | 1% of net profit, public and closed shareholding companies. The earlier text said listed only; the law also covers closed companies | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf |
+| NLST | 2.5% of net profit, listed companies | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf |
+| DMTT | 15%, groups at EUR 750m or more, from 1 January 2025 | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
+| Personal income tax | None | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
+| Retention | 5% of the contract or each payment (reg. art. 36) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
+| Late filing | 1% per 30 days or part (reg. art. 34). No 50% cap appears in the text | 2026 | same |
+| KFAS | unverified: 1% of net profit, shareholding companies | 2026 | unverified |
+| Customs | unverified: 5% of CIF | 2026 | unverified |
+| PIFSS | unverified: see [payroll](kw-payroll-social.md) | 2026 | unverified |
 
-### 3.1 Kuwaiti banks
+## The base
 
-**Kuwaiti banks supplier patterns**
+Supplier patterns for bank lines:
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+|---|---|---|
 | NBK, NATIONAL BANK OF KUWAIT | EXCLUDE | No VAT system |
 | KFH, KUWAIT FINANCE HOUSE | EXCLUDE | Same |
 | GULF BANK | EXCLUDE | Same |
 | BURGAN BANK, BOUBYAN BANK | EXCLUDE | Same |
-
-### 3.2 Government
-
-**Government supplier patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
 | MOF, MINISTRY OF FINANCE | EXCLUDE | Tax payment |
-| CUSTOMS | Customs duty only (5% CET) | No VAT |
+| CUSTOMS | Customs duty only | No VAT |
 | PIFSS, PUBLIC INSTITUTION FOR SOCIAL SECURITY | EXCLUDE | Social insurance |
 
-## Section 4 -- Worked examples
+No VAT means no reverse charge and no input recovery; foreign VAT is an irrecoverable cost.
 
-### Example 1 -- Foreign branch CIT
+## Deadlines and filing
 
-UK company branch in Kuwait. Net profits KWD 100,000. CIT at 15% = KWD 15,000. File by 15th of 4th month after year-end.
+Income tax return by the 15th day of the 4th month after period end, with audited Arabic statements; four equal instalments on the 15th of the 4th, 6th, 9th and 12th months. The earlier "25% quarterly advance" wording meant these instalments, which follow period end.
 
-### Example 2 -- Mixed ownership
+## Penalties and interest
 
-Company 70% Kuwaiti, 30% US-owned. Profits KWD 200,000. CIT on 30% foreign share = KWD 60,000 x 15% = KWD 9,000.
+See the [corporate income tax](kw-corporate-income-tax.md) skill. A failure to register leads to an estimated assessment (reg. art. 19).
 
-## Section 5 -- Classification rules
+## Cross-border points
 
-### 5.1 No VAT
+- Government contractor: 5% retention is held until MOF clears release, then set against tax due.
+- Digital services: no VAT; income tax if the activity is Kuwait-source. Escalate.
+- Free trade zone: escalate; exemptions were not read.
+- Gulf-owned or mixed-owned business: escalate, see Sources.
 
-- **No VAT** — No VAT registration, returns, invoicing, or recovery in Kuwait.
+Test cases: foreign branch KWD 100,000 gives KWD 15,000; VAT question gives "Kuwait does not have VAT"; government payment KWD 50,000 gives retention KWD 2,500.
 
-### 5.2 CIT (foreign entities only)
+Never state Kuwait has VAT. Never apply Zakat to a company subject to Decree 3 of 1955 (Law 46 art. 4).
 
-- **CIT foreign entities only** — 15% flat on foreign-owned share. Kuwaiti-owned exempt from CIT. GCC nationals treated as foreign.
+## Two worked examples that recompute
 
-### 5.3 ZAKAT (Kuwaiti listed companies)
+**Example 1.** Foreign branch: KWD 100,000 at 15% gives KWD 15,000, filed by the 15th of the 4th month.
 
-- **ZAKAT Kuwaiti listed companies** — 1% of net profits for companies listed on Boursa Kuwait.
+```oa-check
+name: Foreign branch
+inputs:
+  income: 100000
+steps:
+  - tax: income * 0.15
+expected:
+  tax: 15000.00
+```
 
-### 5.4 Customs
+**Example 2 (decision).** A customer pays a foreign contractor KWD 50,000. Hold KWD 2,500 or become liable for the tax (reg. arts. 36 and 39). Holding is the only safe choice until MOF approves release.
 
-- **Customs rate** — 5% CIF standard (GCC Common External Tariff).
+```oa-check
+name: Retention
+inputs:
+  payment: 50000
+steps:
+  - held: payment * 0.05
+  - paid: payment - held
+expected:
+  held: 2500.00
+  paid: 47500.00
+```
 
-## Section 6 -- No VAT return
+## Ask the client first
 
-CIT return due 15th of 4th month after year-end. Audited Arabic financial statements required.
+- Foreign, Kuwaiti or Gulf owned, and in what shares?
+- Listed or closed shareholding?
+- Group revenue over EUR 750m?
+- Any contract with a government body?
 
-## Section 7 -- No reverse charge
+## Sources
 
-No VAT system means no reverse charge.
+| Source | URL | Read on |
+|---|---|---|
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Law 46 of 2006, English text, arts. 1 to 5 read | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf | 2026-11-01 |
+| Law 19 of 2000, art. 12 read | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf | 2026-11-01 |
+| Decree-Law 157 of 2024, issuing articles and arts. 1, 16, 17, 19, 20, 22, 29 to 34, 36, 38; Kuwait Al-Youm supplement 1719, 31 Dec 2024; read in Arabic by OCR, pp. 10 and 11 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf | 2026-11-01 |
 
-## Section 8 -- No input deductibility
-
-No VAT input recovery. Foreign VAT is irrecoverable cost.
-
-## Section 9 -- Filing, deadlines, and penalties
-
-**Filing and deadlines**
-
-| Obligation | Deadline |
-| --- | --- |
-| CIT return | 15th of 4th month after year-end |
-| Advance CIT | 25% quarterly instalments |
-| Tax retention (govt contracts) | 5% of contract value withheld |
-
-**Penalties**
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing | 1% per month (max 50%) |
-| Failure to register | Backdated assessment |
-
-- **Social insurance PIFSS Kuwaiti nationals** — 10.5% employee + 11.5% employer percent
-
-## Section 10 -- Edge cases, test suite, and escalation
-
-### Edge cases
-
-**EC1 -- GCC national.** Saudi-owned business in Kuwait: treated as foreign, CIT 15%.
-
-**EC2 -- Mixed ownership.** CIT on foreign share only. ZAKAT on Kuwaiti share (if listed).
-
-**EC3 -- Government contractor.** 5% retention credited against CIT.
-
-**EC4 -- Anticipating VAT.** No legislation enacted. Do not register or charge VAT.
-
-**EC5 -- Digital services.** No VAT. CIT if PE exists (escalate).
-
-**EC6 -- Free trade zone.** CIT exemptions may apply. Escalate.
-
-### Test suite
-
-**Test 1 -- Foreign branch.** KWD 100,000 profit. Expected: CIT KWD 15,000.
-
-**Test 2 -- Kuwaiti company.** 100% Kuwaiti, not listed. Expected: no CIT, no ZAKAT.
-
-**Test 3 -- Mixed ownership.** 60% Kuwaiti, 40% foreign, KWD 200K profit. Expected: CIT on KWD 80K = KWD 12,000.
-
-**Test 4 -- VAT question.** Expected: "Kuwait does not have VAT."
-
-**Test 5 -- Government retention.** KWD 50,000 payment. Expected: 5% retention = KWD 2,500.
-
-### Prohibitions
-
-- NEVER state Kuwait has VAT
-- NEVER apply CIT to 100% Kuwaiti entities
-- NEVER apply ZAKAT to foreign entities
-- NEVER treat GCC nationals as Kuwaiti for CIT
-- NEVER compute numbers -- engine handles arithmetic
+Not yet confirmed: Mixed ownership: how the 15% applies to a company part owned by Kuwaiti and part by foreign holders, and the Kuwaiti and Gulf exemption itself, including the earlier statements here that Gulf nationals are foreign and also exempt (the texts read define the taxpayer as any corporate body; Ministerial Decision 3 of 1989 on equal treatment of Gulf nationals is named in the NLST rule but the copy on the MOF site is a different document); KFAS 1% contribution; the 2.5% and 1% interaction with Free Trade Zone exemptions under Law 26 of 1995; the extension of the 5% retention rule beyond the FY 2026/2027 text for private payers; DMTT Executive Regulations detail (Ministerial Resolution 55 of 2025, not read beyond the title page); any business profits tax draft, for which no enacted text was found; the old cap of 50% on the late filing fine, which no text read supports. Earlier worked cases that taxed the foreign share of a mixed company (70/30 and 60/40 at KWD 200,000) and test 2 (100% Kuwaiti, unlisted, no tax) are held here until that point is confirmed.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
 
 <!-- openaccountants-cta-block -->
 
