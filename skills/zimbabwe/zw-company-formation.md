@@ -25,15 +25,46 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Incorporation documents**: unverified: Pvt Ltd: lodge memorandum and articles (CR forms) with director/shareholder details; PBC: lodge a statement of incorporation (PBC2) naming members, contributions and accounting officer  _(Companies and Other Business Entities Act (Chapter 24:31))_
 - **Typical incorporation timeline**: unverified: Approximately 1-4 weeks depending on name approval and document processing ((approx - confirm current DCIP turnaround))  _(Companies and Other Business Entities Act (Chapter 24:31))_
 - **Indicative registration cost**: unverified: PBC from around USD 70 (up to ~USD 140 with member certificates/by-laws); Pvt Ltd costs vary with capital and agent fees ((approx - fees change; confirm current schedule)) USD  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Post-incorporation tax registration:** Register in TaRMS for a TIN, for VAT if taxable supplies exceed USD 25,000 ([VAT](zimbabwe-vat.md); the USD 60,000 in the earlier version was wrong), and for PAYE and NSSA if employing staff.
+- **Post-incorporation tax registration:** Register in TaRMS for a TIN, for VAT if taxable supplies exceed USD 25,000 ([VAT](zimbabwe-vat.md)), and for PAYE and NSSA if employing staff.
 - **Core annual compliance:** ITF12C and QPDs: see [corporate income tax](zw-corporate-income-tax.md). unverified: annual return with DCIP and statutory records.
 - **Annual return obligation**: unverified: Registered entities must lodge an annual return with DCIP each year to remain in good standing  _(Companies and Other Business Entities Act (Chapter 24:31))_
+
+## Two worked examples that recompute
+
+VAT after incorporation: expected taxable supplies of USD 30,000 in 12 months against the USD 25,000 threshold are USD 5,000 over, so the new company registers.
+
+```oa-check
+name: VAT registration test for a new company
+inputs:
+  expected_supplies: 30000
+  threshold: 25000
+steps:
+  - excess: expected_supplies - threshold
+expected:
+  excess: 5000.00
+```
+
+Decision: company or sole trader on USD 100,000 of taxable trade income. Both pay 25% plus the 3% AIDS levy, so the choice does not change that tax; dividends and liability decide it.
+
+```oa-check
+name: Company against sole trader, income tax only
+inputs:
+  profit: 100000
+steps:
+  - company: profit * 0.25 * 1.03
+  - individual: profit * 0.25 * 1.03
+  - difference: company - individual
+expected:
+  company: 25750.00
+  difference: 0.00
+```
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
 | ZIMRA VAT Registration page | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-01 |
+| ZIMRA Tax Rates page | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 
 Not yet confirmed: every line marked unverified; the Companies and Other Business Entities Act [Chapter 24:31] and DCIP fees were not opened.
 

@@ -33,7 +33,7 @@ Traders whose taxable supplies exceed or are expected to exceed USD 25,000 or Zi
 | Digital services withholding | 15.5% | 2026 | Foreign supplier not VAT registered | https://www.zimra.co.zw/public-notices |
 | Digital services withholding, registered supplier | 3/23 tax fraction | 2026 | As stated in Public Notice 5 of 2026 | same |
 | Export tax on lithium ore or concentrate | 10% | 2026 | Lithium sulphate 0%; Act s.39 | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
-| Export tax on chrome, antimony | 10% | 2026 | Paid in USD; Act ss.42 | same |
+| Export tax on chrome, antimony | 10% | 2026 | Paid in USD; Act s.42 | same |
 
 ## The base
 

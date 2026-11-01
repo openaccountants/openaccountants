@@ -69,7 +69,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 | Country | Zimbabwe (Republic of Zimbabwe) |
 | Currencies | USD (foreign currency) **and** ZiG / ZWG (Zimbabwe Gold)  -  dual-currency payroll |
 | Standard pay frequency | Monthly (most common); daily, weekly, fortnightly equivalents published by ZIMRA |
-| Tax year | Calendar year (1 January – 31 December 2025) |
+| Tax year | Calendar year (1 January – 31 December 2026) |
 | Tax withholding system | PAYE under a **Final Deduction System (FDS)**  -  correctly-operated PAYE is the final tax  |
 | Income tax authority | Zimbabwe Revenue Authority (ZIMRA) |
 | Social security authority | National Social Security Authority (NSSA) |

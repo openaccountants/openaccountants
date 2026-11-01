@@ -230,7 +230,7 @@ This is the deterministic pre-classifier. When a bank-statement transaction matc
 | LEGAL, LAWYER, ATTORNEY (business) | Legal fees | Deductible | Must be trade-related |
 | STATIONERY, OFFICE SUPPLIES | Office supplies | Deductible |  |
 | MARKETING, GOOGLE ADS, META ADS | Advertising | Deductible |  |
-| BANK CHARGE, LEDGER FEE, IMTT* | Bank charges | Deductible (business account) | *IMTT = Intermediated Money Transfer Tax; flag for reviewer on deductibility |
+| BANK CHARGE, LEDGER FEE, IMTT* | Bank charges | Deductible (business account) | *IMTT = Intermediated Money Transfer Tax; deductible only if registered and holding a Tax Clearance Certificate (Act s.16) |
 | INSURANCE (business, indemnity) | Insurance | Deductible | Trade cover only |
 | FUEL, ZUVA, PUMA, TOTAL, ENGEN | Vehicle fuel | Deductible (business %) | Requires mileage basis |
 
@@ -396,7 +396,7 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 - **Trade and investment income taxation**  -  Individuals carrying on a trade or profession are taxed at a flat 25% on net taxable income (gross business income minus allowable expenses), plus 3% AIDS levy → 25.75% effective. This is NOT the progressive PAYE table -- that table is for employment income only. Companies and trusts are taxed at the same 25% + 3% AIDS = 25.75% effective.  _(ZIMRA corporate/business tax rates (Finance Act s.14(2b)))_
 
-#### 5.6 Self-employed professionals -- moved to QPD from 1 Jan 2025
+#### 5.6 Self-employed professionals -- on self-assessment and QPDs: see Who this applies to
 
 
 #### 5.7 Provisional tax (QPDs)
@@ -456,7 +456,7 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 #### 6.6 IMTT (Intermediated Money Transfer Tax) deductibility
 
-- **IMTT deductibility**  -  IMTT is levied on electronic transfers. Whether it is deductible against trade income depends on the nature of the transfer. Flag for reviewer to confirm deductibility before including.
+- **IMTT deductibility**  -  IMTT is levied on electronic transfers. From 2026 it is deductible only by a trader who is registered and holds a Tax Clearance Certificate (Finance Act 7 of 2025 s.16).
 
 #### 6.7 Elderly / disability credits
 
@@ -548,7 +548,7 @@ REVIEWER FLAGS:
 | RTGS | Real-Time Gross Settlement transfer | Check direction for income/expense |
 | ZIPIT | Bank-to-bank instant transfer | Check direction |
 | ECOCASH / ONEMONEY / INNBUCKS | Mobile money | Check direction; common for trade receipts |
-| IMTT | Intermediated Money Transfer Tax | Transfer tax -- reviewer to confirm deductibility |
+| IMTT | Intermediated Money Transfer Tax | Transfer tax -- see section 6.6 |
 | P35 / NSSA | Pension contribution | NSSA POBS -- capped at USD 700 insurable |
 | QPD | Quarterly Payment Date (provisional tax) | Credit against liability, not expense |
 | VDP | Value for Duty Purposes | Used for cross-border presumptive tax |
