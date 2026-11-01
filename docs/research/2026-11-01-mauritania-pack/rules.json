@@ -31,8 +31,8 @@
     {
       "id": "C04",
       "title": "Intermediate regime",
-      "text": "A company at or below MRU 5,000,000 annual turnover excluding tax uses the intermediate real regime, subject to the normal-regime transition rule. Crossing above moves it to normal the following year.",
-      "article": "CGI art. 46",
+      "text": "A company at or below MRU 5,000,000 annual turnover excluding tax uses the intermediate real regime, subject to the normal-regime transition rule and any valid election for the normal regime under art. 47. Crossing above moves it to normal the following year. Check the art. 47 election conditions in C18 before choosing this base.",
+      "article": "CGI arts. 46–47",
       "quote": "inférieur ou égale à cinq millions (5.000.000) d’Ouguiya",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
@@ -58,8 +58,8 @@
     {
       "id": "C07",
       "title": "Accounting bridge and rounding",
-      "text": "Start with the net result of all operations, including disposals, and reconcile net assets, contributions and withdrawals under art. 7. Round taxable net profit or taxable products down to the nearest MRU 10. Art. 8 products use the accrued-right principle.",
-      "article": "CGI arts. 7–9",
+      "text": "Start with the net result of all operations, including disposals, and reconcile net assets, contributions and withdrawals under art. 7. Round taxable net profit or taxable products down to the nearest MRU 10. Art. 8 products use the accrued-right principle. For an intermediate company, apply the specific art. 48(2) exclusions in C19; the general accounting bridge alone does not determine its taxable base.",
+      "article": "CGI arts. 7–9, 48(2)",
       "quote": "est arrondi à la dizaine d’Ouguiya inférieure",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
@@ -67,8 +67,8 @@
     {
       "id": "C08",
       "title": "Ordinary deductible expenses",
-      "text": "Expenses must serve the business, be real, documented with a regular invoice or import declaration bearing the supplier NIF, be booked as expenses, reduce net assets, not create exempt income and belong to the period. The later 2026 replacement of art. 14 needs its commencement resolved before this baseline can support a filing.",
-      "article": "CGI art. 14(1)",
+      "text": "Expenses must serve the business, be real, documented with a regular invoice or import declaration bearing the supplier NIF, be booked as expenses, reduce net assets, not create exempt income and belong to the period. The later 2026 replacement of art. 14 needs its commencement resolved before this baseline can support a filing. An intermediate company must also apply the art. 48(2) restrictions in C19.",
+      "article": "CGI arts. 14(1), 48(2)",
       "quote": "L’absence de la mention du numéro d’identification fiscale (NIF) du fournisseur",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
@@ -85,9 +85,9 @@
     {
       "id": "C10",
       "title": "Accounting year",
-      "text": "Close accounts at 31 December. A new enterprise can close its first balance sheet at the following year-end, but must prepare a provisional operating account at the first 31 December, tax it immediately and deduct that tax from the first balance-sheet assessment.",
+      "text": "Close accounts at 31 December, except for a transfer or cessation of activity during the year under art. 50(3). A new enterprise can close its first balance sheet at the following year-end, but must prepare a provisional operating account at the first 31 December, tax it immediately and deduct that tax from the first balance-sheet assessment. These ordinary year-end examples assume no midyear transfer or cessation.",
       "article": "CGI art. 50(3)–(5)",
-      "quote": "arrêter chaque année leurs comptes à la date du 31 décembre",
+      "quote": "sauf en cas de cession ou de cessation d’activités en cours d’année.",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
     },
@@ -220,8 +220,8 @@
     {
       "id": "I09",
       "title": "ITS formulas",
-      "text": "After base adjustments, round taxable monthly remuneration RI down to MRU 10. If RI is at most 9,000, tax = RI × 15%; above 9,000 through 21,000, tax = RI × 25% minus 900; above 21,000, tax = RI × 40% minus 4,050. Fraction-month pay is prorated; nonmonthly pensions/annuities are converted to monthly.",
-      "article": "CGI art. 114",
+      "text": "For ordinary personnel outside the special written-contract categories in art. 114(6), round taxable monthly remuneration RI down to MRU 10 after base adjustments. If RI is at most 9,000, tax = RI × 15%; above 9,000 through 21,000, tax = RI × 25% minus 900; above 21,000, tax = RI × 40% minus 4,050. Fraction-month pay is prorated; nonmonthly pensions/annuities are converted to monthly. Qualifying direct written-contract personnel of press establishments, airlines and air-navigation agencies have the separate 20% maximum described in I14; do not apply these ordinary formulas to them without resolving that rule.",
+      "article": "CGI art. 114(1)–(6)",
       "quote": "I = (R.I. x 0.40) - 4.050",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
@@ -382,9 +382,9 @@
     {
       "id": "V07",
       "title": "Input VAT controls",
-      "text": "Deduct only tax attributable to eligible taxable activity under arts. 231–243. Keep paid import entries or separately stated regular invoices; a taxable supplier must give a VAT-liability certificate to a taxable customer, and without that certificate the customer cannot deduct. Read exclusions and mixed-use allocation before computing.",
-      "article": "CGI arts. 231–243",
-      "quote": "En l’absence d’attestation d’assujettissement à la taxe sur la valeur ajoutée",
+      "text": "Deduct only tax attributable to eligible taxable activity under arts. 231–243. Keep paid import entries or separately stated regular invoices. Subject to any applicable ministerial dispensing list for public/state enterprises under art. 243(2), a taxable supplier must give a VAT-liability certificate to a taxable customer; without the required certificate the customer cannot deduct. The current dispensing list and which entities qualify are not established here. Read exclusions and mixed-use allocation before computing.",
+      "article": "CGI arts. 231–243, especially art. 243(2) final paragraph",
+      "quote": "la liste des entreprises publiques et sociétés d’État dispensées de cette obligation.",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
     },
@@ -418,9 +418,9 @@
     {
       "id": "X01",
       "title": "Domestic permanent establishment",
-      "text": "A fixed place through which a nonresident carries on business is a PE. Construction/assembly and service projects require more than six months for ordinary businesses or more than twelve months for petroleum subcontractors/operators. Read fixed-place, agency, insurance and preparatory/auxiliary rules before applying a duration shortcut. Control of a company alone does not create a PE.",
-      "article": "CGI art. 6",
-      "quote": "six (6) mois pour les autres",
+      "text": "A fixed place through which a nonresident carries on business is a PE. Under art. 6(3)(a), construction/assembly/installation projects require more than six months for ordinary businesses or more than twelve months for petroleum subcontractors/operators. Under art. 6(3)(b), the service test includes consultancy supplied by a nonresident through employees or other personnel it engages for that purpose, with such activities continuing in Mauritania for the same or a connected project beyond those respective durations. Do not use a remote contract’s duration alone or fragment connected local projects. Read the other fixed-place, agency, insurance and preparatory/auxiliary rules; control of a company alone does not create a PE. All domestic tests remain subject to the applicable treaty.",
+      "article": "CGI art. 6(1)–(8), especially (3)(b), physical pp. 11–12",
+      "quote": "pour le même projet ou un projet connexe",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
     },
@@ -463,9 +463,9 @@
     {
       "id": "X06",
       "title": "Capital withholding calendar",
-      "text": "Withhold capital income on payment and remit by the 15th of January, April, July or October for the preceding quarter. Annual distributions/bénéficiaire statements are due before 1 April. Deemed PE distributions have the special quarter following annual-return filing rule; securities/mining disposals have their own rules.",
-      "article": "CGI arts. 127–130",
-      "quote": "au plus tard le 15 des mois de janvier, avril, juillet et octobre",
+      "text": "Capital-income tax is triggered by payment in any form and, for interest, by posting to the debit or credit of an account under art. 124(2); do not wait for a cash transfer when interest has already been entered. Withhold under art. 128 and remit by the 15th of January, April, July or October for the preceding quarter. Annual distributions/bénéficiaire statements are due before 1 April. Deemed PE distributions have the special quarter following annual-return filing rule; securities/mining disposals have their own rules.",
+      "article": "CGI arts. 124, 127–130",
+      "quote": "l’inscription des intérêts au débit ou au crédit d’un compte.",
       "source": "cgi2023",
       "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
     },
@@ -598,7 +598,7 @@
     {
       "id": "F04",
       "title": "Common application dossier",
-      "text": "Prepare the completed/signed single form, valid founder identification/passports, address evidence, activity authorisation where needed, court-registry fee payment through the stated mobile-banking accounts and declared employee IDs where relevant. The site links Khidmaty for online creation and also permits the physical Guichet Unique.",
+      "text": "Prepare the completed/signed single form, valid founder identification/passports, address evidence, activity authorisation where needed, court-registry fee payment through the stated mobile-banking accounts and declared employee IDs where relevant. The site links Khidmaty for online creation and also permits the physical Guichet Unique. Founder domicile evidence, which the checklist permits to be national or foreign, does not replace the company local-address requirement in F09. Foreign applicants using the individual-business checklist also need the specific document in F10.",
       "article": "APIM creation page, Préparez votre application",
       "quote": "Formulaire unique de création d’entreprise dûment rempli et signé",
       "source": "apim",
@@ -616,7 +616,7 @@
     {
       "id": "F06",
       "title": "Other legal forms",
-      "text": "APIM requires GIE agreement/member registry/statute/manager documents, and for a branch current parent registry extract, certified parent statutes where a legal person, plus certified branch-creation/manager-appointment decision. Obtain the actual form’s current checklist before submission.",
+      "text": "APIM requires GIE agreement/member registry/statute/manager documents, and for a branch current parent registry extract, certified parent statutes where a legal person, plus certified branch-creation/manager-appointment decision. Obtain the actual form’s current checklist before submission. The separate foreign individual-business applicant condition is stated in F10, not imported into the branch/GIE document list.",
       "article": "APIM creation page, Documents spécifiques",
       "quote": "Copie certifiée conforme de la décision de création de la succursale et de nomination de son directeur",
       "source": "apim",
@@ -643,20 +643,36 @@
     {
       "id": "N01",
       "title": "2026 initial financial tax/TTE changes",
-      "text": "The Ministry’s January 2026 text replaces CGI art. 278 financial-operations-tax rates and creates electronic-transaction tax under arts. 293 octies–terdecies. It is distinct from ordinary VAT. The exact promulgation/publication and within-year operation of the later rectifying text remain required before transaction advice.",
-      "article": "LFI2026 art. 3.1, printed pp. 3–5",
-      "quote": "Taxe sur les Transactions Électroniques (TTE)",
+      "text": "The Ministry’s signed/stamped January 2026 initial Finance Act visibly bears number 2026-001 on physical page 6 (printed page 3). Its art. 3.1 replaces CGI art. 278 financial-operations-tax rates and creates electronic-transaction tax under arts. 293 octies–terdecies, distinct from ordinary VAT. The complete publication/commencement chain and application of the later rectifying Act remain required before transaction advice.",
+      "article": "Law 2026-001, physical p. 6 identity; art. 3.1, printed pp. 3–5",
+      "quote": "2026-001",
       "source": "lfi2026",
-      "url": "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf"
+      "url": "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf",
+      "quote_evidence_type": "rendered handwritten law identifier",
+      "visual_evidence": {
+        "source": "lfi2026",
+        "physical_page": 6,
+        "render": "lfi2026-6.png",
+        "sha256": "c84d9778990b70484ed7ac41e30125ede7840c83e63bf74ead72f72bba7b8ba3",
+        "writer_read_on": "2026-11-01"
+      }
     },
     {
       "id": "N02",
       "title": "2026 rectifying changes requiring commencement reconciliation",
-      "text": "The Ministry’s August 2026 publication contains replacement expense/NIF controls, digital-service place/liability/platform rules, a TTE cap, supplier reports and professional-account/audit rules. Its comparison columns are headed current provisions/proposed changes and its law-number field is blank. Keep this text in the amendment file; do not choose an operative date from its upload date.",
-      "article": "Ministry LFR2026 art. 3.1, printed pp. 6–18",
-      "quote": "Modifications envisagées",
+      "text": "The Ministry’s signed/stamped 2026 rectifying Finance Act visibly bears number 2026-035 on physical/printed page 6. Its art. 3.1 contains replacement expense/NIF controls, digital-service place/liability/platform rules, a TTE cap, supplier reports and professional-account/audit rules. Retained comparison-column headings do not make this signed text merely a proposal. The precise publication/commencement chain and implementing measures are not established here; neither the upload date nor the handwritten number alone establishes when each rule applies.",
+      "article": "Law 2026-035, physical p. 6 identity; art. 3.1, printed pp. 6–18",
+      "quote": "2026-035",
       "source": "lfr2026",
-      "url": "https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf"
+      "url": "https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf",
+      "quote_evidence_type": "rendered handwritten law identifier",
+      "visual_evidence": {
+        "source": "lfr2026",
+        "physical_page": 6,
+        "render": "lfr2026-6.png",
+        "sha256": "86a4255b926c8d817fe0f9bd51945bc0fb3f174f02a5117456a00fbba97f0a5b",
+        "writer_read_on": "2026-11-01"
+      }
     },
     {
       "id": "C17",
@@ -666,6 +682,60 @@
       "quote": "D-7 = C4  -  Somme (D1:D6)",
       "source": "is-form",
       "url": "https://impots.gov.mr/DGI/files/IS-RN-RI-fr-pdf.pdf"
+    },
+    {
+      "id": "C18",
+      "title": "Election into the normal company regime",
+      "text": "An intermediate-regime company can elect the normal regime before 1 February, effective from 1 January of that year for at least two consecutive fiscal years. A new business can elect within thirty days after beginning activity. A normal-regime taxpayer cannot elect the intermediate regime. Keep the election and effective-period evidence.",
+      "article": "CGI art. 47(1)–(3), physical pp. 24–25",
+      "quote": "peuvent opter, avant le 1er février",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C19",
+      "title": "Intermediate-company base restrictions",
+      "text": "For the intermediate company base, art. 48(2) prohibits taking exchange gains/losses into account under arts. 12/21; deducting head-office charges under art. 17; deducting gifts, donations and subsidies under art. 20; deducting depreciation deemed deferred during losses under art. 26; accelerated/degressive depreciation under arts. 27/28; and deducting provisions under art. 30. Apply these restrictions before comparing the art. 51(2) limbs.",
+      "article": "CGI art. 48(2), physical p. 25",
+      "quote": "le contribuable soumis au régime du bénéfice réel intermédiaire n’est pas autorisé",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I14",
+      "title": "Special ITS personnel maximum",
+      "text": "Art. 114(6) subjects personnel working directly under written contracts with a national or foreign press company/establishment implanted in Mauritania, airlines or air-navigation agencies to the scale in force, capped at a maximum of 20%. These special categories are excluded from this Guide’s ordinary formula examples. The exact cap-computation interpretation is not established here; obtain it before computing their tax rather than inventing a flat 20% tax or a new formula.",
+      "article": "CGI art. 114(6), physical p. 46",
+      "quote": "ce barème étant cependant plafonné à un maximum de 20%.",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "F09",
+      "title": "Company local address",
+      "text": "APIM’s FAQ requires a local address to register a company. Distinguish that company address from the common checklist’s founder/applicant domicile evidence, which can be national or foreign. Keep the actual current application/address-document checklist before submitting.",
+      "article": "APIM creation page, common domicile item and local-office FAQ",
+      "quote": "Oui, une adresse locale est requise pour l’enregistrement d’une société.",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "F10",
+      "title": "Foreign individual-business applicant document",
+      "text": "For the personne physique dossier, APIM specifies a marriage certificate or equivalent document for foreign nationals. This condition belongs to the individual-business checklist; do not turn it into a marriage-document requirement for every foreign corporate shareholder.",
+      "article": "APIM creation page, Documents spécifiques/personne physique",
+      "quote": "Certificat de mariage ou document équivalent (pour les ressortissants étrangers)",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "X10",
+      "title": "Foreign VAT representative and client fallback baseline",
+      "text": "Where a person liable for VAT is established/domiciled outside Mauritania, baseline art. 221 requires accreditation of a representative domiciled in Mauritania who undertakes the formalities and payment. The representative must be a VAT taxable person identified in Mauritania. The foreign enterprise notifies DGI and provides a signed, dated mandate identifying the foreign enterprise (name/address/capital/activity), company manager’s civil status where relevant, local representative (name/address/NIF), authority to prepare returns and declare/pay monthly VAT and act locally for DGI, start date and continuing validity until DGI is notified of termination. Use a return for the foreign supplier’s operations separate from the representative’s own return. Failing that mechanism, the client pays the VAT and applicable penalties for the person without an establishment in Mauritania on a separate return. First establish liability, including the baseline art. 214 exclusion for art. 132-withheld nonresident services; do not override it with a universal reverse charge. The 2026 digital-service replacement and its commencement/implementation remain to be reconciled.",
+      "article": "CGI art. 221(1)–(4), physical p. 86, read with arts. 214, 219–220",
+      "quote": "sur une déclaration distincte de celle de la personne désignée",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
     }
   ],
   "placements": [
@@ -1093,6 +1163,72 @@
       "id": "C17",
       "section": "Deadlines and filing",
       "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C18",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C19",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "I14",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "F09",
+      "section": "The base",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F10",
+      "section": "The base",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "X10",
+      "section": "The base",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "N02",
+      "section": "Who this applies to: common source-currentness notice",
+      "slug": "mr-transfer-pricing"
     }
-  ]
+  ],
+  "repair_from_head": "1acd93fe32b47ed8c8a44ab5fe64a8dba46bbdfd"
 }

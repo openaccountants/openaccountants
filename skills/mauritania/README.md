@@ -38,7 +38,7 @@ Preserve all six original slugs and all old topics. The ledger, old-topic map, s
 
 ## 2026 amendment hold
 
-The Ministry publishes a January initial Finance Act and an August rectifying text. The latter contains material digital-service, expense and compliance changes in comparison columns, but its number/date/commencement and implementing measures are not established in this batch. No upload date is used as a legal effective date. See the source-currentness hold at the start of every Guide.
+The Ministry publishes a January initial Finance Act and an August rectifying text. The latter contains material digital-service, expense and compliance changes in comparison columns, and its physical page 6 visibly bears the signed/stamped law number 2026-035. The initial 2026 law visibly bears 2026-001. Retained comparison-column headings do not make the rectifying Act merely a proposal. The complete publication/commencement chain and implementing measures remain unresolved; no upload date or handwritten number is used as a legal effective date. See the source-currentness hold at the start of every Guide.
 
 ## Official sources
 

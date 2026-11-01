@@ -9,15 +9,15 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 0.1
+version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
 ---
 
-# Mauritania Payroll and Social Contributions v0.1
+# Mauritania Payroll and Social Contributions v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**2026 research draft, source baseline only.** The computations below reproduce the cited official code/provisions, not a certified complete statement of operative 2026 law. The January 2023 official code lists amendments only through the January 2022 Finance Act. Selected later Finance Acts were read, including the 2024 transfer-pricing replacement, but the complete commencement/publication chain is not closed. The Ministry’s August 2026 rectifying publication changes material expense, digital-service and compliance rules; its upload date does not prove their operative date. Resolve the amendment file before using these baselines to file, pay or advise. No accountant has signed this revision.
+**2026 research draft, source baseline only.** The computations below reproduce the cited official code/provisions, not a certified complete statement of operative 2026 law. The January 2023 official code lists amendments only through the January 2022 Finance Act. Selected later Finance Acts were read, including the 2024 transfer-pricing replacement, but the complete commencement/publication chain is not closed. The signed/stamped rectifying Finance Act is visibly numbered 2026-035 on physical page 6. It changes material expense, digital-service and compliance rules; the retained comparison-column headings do not establish proposal status, and its upload date does not prove the operative date. [N02] Resolve the amendment file before using these baselines to file, pay or advise. No accountant has signed this revision.
 
 ## Who this applies to
 
@@ -108,9 +108,9 @@ expected:
 |---|---|---|
 | cnss-ministry: Full CNSS institution page: covered population, contribution financing/rates, wage floor and ceiling. Current administrative page, not the underlying rate decree or all remittance/penalty rules. | https://www.fonctionpublique.gov.mr/fr/node/47 | 2026-11-01 |
 | cnam-decree2012: All arts. 1–10, both physical pages, especially worker/company definitions, contribution table/base and monthly payment rule. | https://www.finances.gov.mr/Recueil_des_textes_relatifs_a_la_mission_du_Ministere/TEXTES/ASSURANCES/D%C3%A9cret%202012-261%20St%C3%A9%20priv%C3%A9es%20CNAM.pdf | 2026-11-01 |
-| cgi2023: Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–46, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes. | https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf | 2026-11-01 |
+| cgi2023: Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–48, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes. | https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf | 2026-11-01 |
 | cnam-affiliation: Live affiliation steps 2–5, dossier, submission, estimated processing and listed rates. No current online payment/form screens. | https://www.cnam.mr/fr/procedures_affiliation_des_employes/ | 2026-11-01 |
-| Amendment hold: August 2026 comparison text, art. 3.1 printed pp. 6–18; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
+| Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: full operative 2026 amendments and exact CNSS branch allocations, remittance deadline and penalty provisions; old CNSS component rates of 5%, 4%, 5% and 2%, which do not reconcile to the old claimed total and are not proved here; occupational-health ONMT charge/base and any wage-ceiling changes; all public, self-employed, fixed-term and special pension categories not within the private CNAM decree; current CNAM/CNSS forms, payment references and online confirmation steps.
 

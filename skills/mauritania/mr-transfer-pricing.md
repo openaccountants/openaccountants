@@ -6,15 +6,15 @@ tax_year: 2026
 last_updated: 2026-11-01
 tier: 2
 category: transfer-pricing
-version: 0.1
+version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
 ---
 
-# Mauritania Transfer Pricing and CbCR v0.1
+# Mauritania Transfer Pricing and CbCR v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**2026 research draft, source baseline only.** The computations below reproduce the cited official code/provisions, not a certified complete statement of operative 2026 law. The January 2023 official code lists amendments only through the January 2022 Finance Act. Selected later Finance Acts were read, including the 2024 transfer-pricing replacement, but the complete commencement/publication chain is not closed. The Ministry’s August 2026 rectifying publication changes material expense, digital-service and compliance rules; its upload date does not prove their operative date. Resolve the amendment file before using these baselines to file, pay or advise. No accountant has signed this revision.
+**2026 research draft, source baseline only.** The computations below reproduce the cited official code/provisions, not a certified complete statement of operative 2026 law. The January 2023 official code lists amendments only through the January 2022 Finance Act. Selected later Finance Acts were read, including the 2024 transfer-pricing replacement, but the complete commencement/publication chain is not closed. The signed/stamped rectifying Finance Act is visibly numbered 2026-035 on physical page 6. It changes material expense, digital-service and compliance rules; the retained comparison-column headings do not establish proposal status, and its upload date does not prove the operative date. [N02] Resolve the amendment file before using these baselines to file, pay or advise. No accountant has signed this revision.
 
 ## Who this applies to
 
@@ -98,8 +98,8 @@ expected:
 
 | Source and exact scope read | URL | Read on |
 |---|---|---|
-| cgi2023: Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–46, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes. | https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf | 2026-11-01 |
+| cgi2023: Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–48, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes. | https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf | 2026-11-01 |
 | lfi2024: OCR physical pp. 6–21; tax amendment provisions, especially replacement arts. 66–67, 120/125 and LPF L.3/L.25/L.131. Physical p. 8 visually inspected for duplicated wording. Not budget appropriations or full annexes. | https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf | 2026-11-01 |
-| Amendment hold: August 2026 comparison text, art. 3.1 printed pp. 6–18; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
+| Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: complete operative 2026 amendment chain, ministerial documentation-content order and current DGI art. 65 submission form; CbCR implementing order 00204 captured but not yet read, reporting schema/portal and current exchange/jurisdiction list; treaty mutual-agreement/corresponding adjustment procedure and any accepted pricing-method hierarchy; 2024 art. 66 duplicated wording/inconsistent reference to L.131(5), while L.131(6) specifies the documentary-notice penalty.

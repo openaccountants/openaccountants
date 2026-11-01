@@ -4,7 +4,7 @@
     "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/",
     "sha256": "f9742f695e81c33bc67917bf1554a24e86c9e08d4553109ec561e71293865c40",
     "bytes": 476426,
-    "read_scope": "Full creation page: legal forms, common/specific documents, complete-file timing and FAQ/online link. No private Khidmaty account or live submission.",
+    "read_scope": "Full creation page: legal forms, common/specific documents, complete-file timing and FAQ/online link. No private Khidmaty account or live submission. Repair reread: national/foreign domicile evidence, personne physique foreign-national marriage/equivalent document, and FAQ company local-address requirement.",
     "captured_on": "2026-11-01",
     "read_on": "2026-11-01"
   },
@@ -22,7 +22,7 @@
     "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf",
     "sha256": "2972be620009381468a05ee21295c8b5b01cdebc15e4a7692c1fcdf861edd71f",
     "bytes": 2524626,
-    "read_scope": "Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–46, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes.",
+    "read_scope": "Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–48, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes. Repair reread with neighbours: arts. 47–48, 50(3), 114(6), 124(2), 6(3)(b), 221 and 243(2), including visual pages 24,25,46,49,86,92.",
     "captured_on": "2026-11-01",
     "read_on": "2026-11-01"
   },
@@ -76,18 +76,20 @@
     "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf",
     "sha256": "0a2da7342dd4ef22fc6364314d88104b65c21a520cf5ce3f31027cd43d12f742",
     "bytes": 34368087,
-    "read_scope": "OCR physical pp. 6–21; tax amendment provisions, especially replacement arts. 66–67, 120/125 and LPF L.3/L.25/L.131. Physical p. 8 visually inspected for duplicated wording. Not budget appropriations or full annexes.",
+    "read_scope": "Opening physical page 5 (printed 7) visually read: signed/stamped 2024-001. OCR physical pp. 6–21; tax amendment provisions, especially replacement arts. 66–67, 120/125 and LPF L.3/L.25/L.131. Physical p. 8 visually inspected for duplicated wording. Not budget appropriations or full annexes.",
     "captured_on": "2026-11-01",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "visible_law_number": "2024-001"
   },
   {
     "id": "lfi2026",
     "url": "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf",
     "sha256": "81deb4bef7b582121c1d59b5d1b7e2b0bddf954995c7719bbdaba9b9a3692c79",
     "bytes": 5536358,
-    "read_scope": "Art. 3.1 financial-operations/electronic-transaction tax text, printed pp. 3–5, and introductory provisions. Law-number/date in selectable text unresolved; no upload-date commencement inference.",
+    "read_scope": "Art. 3.1 financial-operations/electronic-transaction tax text, printed pp. 3–5, and introductory provisions. Physical page 6 (printed 3) visually read: signed/stamped law 2026-001. Complete publication/commencement chain unresolved; no upload-date commencement inference.",
     "captured_on": "2026-11-01",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "visible_law_number": "2026-001"
   },
   {
     "id": "lfr2023",
@@ -103,9 +105,10 @@
     "url": "https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf",
     "sha256": "7f41cb8f67b8fc6af16551aac7d8861220089272267796a2cab516109bfbce17",
     "bytes": 6712151,
-    "read_scope": "Art. 3.1 comparison text printed pp. 6–18, covering art. 14, 210, 219, 221/221bis, 249bis/ter, 293decies, LPF L.8/L.8bis/L.16bis/L.20/L.25/L.26. Operative commencement and implementing texts not established.",
+    "read_scope": "Physical/printed page 6 visually read: handwritten 2026-035 with official signatures/stamps; then Art. 3.1 comparison text printed pp. 6–18, covering art. 14, 210, 219, 221/221bis, 249bis/ter, 293decies, LPF L.8/L.8bis/L.16bis/L.20/L.25/L.26. Operative commencement and implementing texts not established. Retained comparison headings alone are not evidence of proposal status.",
     "captured_on": "2026-11-01",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "visible_law_number": "2026-035"
   },
   {
     "id": "lfi2025",

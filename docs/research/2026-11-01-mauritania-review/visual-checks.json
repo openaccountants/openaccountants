@@ -1,0 +1,97 @@
+[
+  {
+    "source_render": "lfi2024-5.png",
+    "sha256": "6e81454913024ccfccd981c0ab53e01150c5f4d3c5924e6ad3241a13984ef17d",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2026-6.png",
+    "sha256": "832489f8bae0f395834be326b1b7309b8d3e4cb45bbae3700110f24cc8725030",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2024-6.png",
+    "sha256": "bc2c7ac204f31325cbf12ccbd241ddbab4ab21ebbd24dfc1c65c96adaeafccd1",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-49.png",
+    "sha256": "1051bc671eef0fbf217d89daf8853c80f6fbc1fc3a5e0c74fd439a515bdf9ce0",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-46.png",
+    "sha256": "4e600eb1a14c557ff8a3d7f529d367c0c367dab7d6c12b77424583568fe05873",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-25.png",
+    "sha256": "52c224b8873452db37b1458ee962a5caf51b207919b7818c7dc0a69d035b2eb4",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2024-9.png",
+    "sha256": "dafff50134e7cb21bc79ee682cc305075d475bebf666bb01b8f5c9c57e389fac",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2024-8.png",
+    "sha256": "7f3e36d6369ce6175b1bdedd76b137cea46f63bdd8bb1ba5bd864f1e4e7364f3",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2024-15.png",
+    "sha256": "acdc03a14366e6fa613052ec8a773b51f3b21b0a7652e0eab72f30971175a1f6",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfi2024-10.png",
+    "sha256": "8137627a16e616de376acde04bf5c163217394c682115e204c059e89f30f70bb",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfr2026-7.png",
+    "sha256": "8a167a53d7a9bcd51cc640e8852f810d890056714369acb7a2c0db48b6601172",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfr2026-6.png",
+    "sha256": "ef7e29b443d0dbabf3670c99e622ec1b4692f5c8271d2fd8ad8b5e646086964c",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-72.png",
+    "sha256": "5311305339690b0aa10633a4b1928383e1200ae1560bebae9f82a6ca4030e895",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cnam-decree2012-1.png",
+    "sha256": "9278b265336f02ea99c2fba5c9554c8e5ec53d424183293437bb544266608f54",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "lfr2023-6.png",
+    "sha256": "93fba8d37609653a19aa5a3233fb42dee2f846051bd2717f654e2d34341aaff6",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-44.png",
+    "sha256": "2b09e230846351f447be63a9eed97b0195fa3c7283afe4da5789b7e0847a0118",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-45.png",
+    "sha256": "a8c29b2564ef0b7d120ae70e037416fc5d603343a8db37e8cc433d1a4a261b3b",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-158.png",
+    "sha256": "f29abfa382b09ca0cce3806698be41ae57537bf35a2f4d9a9a00211ba8a8d176",
+    "read_on": "2026-11-01"
+  },
+  {
+    "source_render": "cgi2023-26.png",
+    "sha256": "e13fb01fd54f24a369732f7920f279a055bda6b952c0079442b0041b1c958539",
+    "read_on": "2026-11-01"
+  }
+]

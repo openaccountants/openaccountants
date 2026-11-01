@@ -10,8 +10,8 @@ Base `46c01152da0fdd1b722f61190c88413d0a195d02`.
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Standard corporate income tax rate | C05/C06: normal is 2%, intermediate 2.5% |
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Minimum tax payment (normal real regime) | C05 |
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Turnover-based minimum tax (IMF) | C05/C06 |
-| `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Normal real regime turnover threshold | C03 |
-| `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Tax base | C07/C08 |
+| `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Normal real regime turnover threshold | C03/C04/C18: threshold, transitions and valid election |
+| `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Tax base | C07/C08/C19: intermediate restrictions included |
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Withholding tax on dividends | X05 in mr-cross-border |
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Withholding tax on interest | X05 in mr-cross-border |
 | `mr-corporate-income-tax` / `cbdc08e6fc64a2baea2c4be710922682cced0ae4` | Withholding tax on royalties paid to non-residents | Not yet confirmed: classify actual royalty before rate |
@@ -39,7 +39,7 @@ Base `46c01152da0fdd1b722f61190c88413d0a195d02`.
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Step 1 — Name reservation | Not yet confirmed: universal compulsory name reservation |
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Step 2 — Notarise statutes | Not yet confirmed: universal mandatory notarisation |
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Step 3 — Deposit capital | F05; exact statutory subscription/deposit sequence unconfirmed |
-| `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Step 4 — File at the Guichet Unique | F03/F04/F08 |
+| `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Step 4 — File at the Guichet Unique | F03/F04/F08/F09/F10: local company address and foreign individual dossier distinguished |
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Incorporation timeline | F03; conditional 48 working hours, old estimate superseded |
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Annual compliance — financial statements | C11/C12 |
 | `mr-company-formation` / `11e9995a94f086eab4aa556706eeb19ffcbc85bb` | Ongoing compliance — VAT and payroll | Sibling VAT V08/payroll I11/P04/P07; CNSS calendar unconfirmed |
@@ -80,3 +80,5 @@ Base `46c01152da0fdd1b722f61190c88413d0a195d02`.
 | `mr-vat-gst` / `c8346430431fbf46e6541da6dfddd32e2068b6ec` | Reverse charge on imported services | V04/V05 and mr-cross-border; unconditional reverse charge not confirmed |
 | `mr-vat-gst` / `c8346430431fbf46e6541da6dfddd32e2068b6ec` | Exempt supplies | V05; detailed exemptions remain partial |
 | `mr-vat-gst` intro/headings | Country/title/job identity and introductory generalisations | New Who this applies to; source rows and explicit holds; platform CTA retained byte-for-byte |
+
+Repair follow-up: C10 in company, formation and overview now carries the express midyear transfer/cessation exception; ordinary year-end cases assume neither event. Original 68 bullet topics and six introductory/header rows remain accounted for.

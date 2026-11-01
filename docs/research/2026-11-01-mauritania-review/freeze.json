@@ -1,0 +1,44 @@
+{
+  "reviewed_head": "1acd93fe32b47ed8c8a44ab5fe64a8dba46bbdfd",
+  "content_commit": "832dd2107e2a183031c4b3cf7f0f9ecf05a6c067",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "status": "changes_required",
+  "guides_and_pack_readme": [
+    {
+      "path": "skills/mauritania/README.md",
+      "sha256": "bcccad5f9ded2990166e363435db790db992cc3bda8049f73f322312abd86d57"
+    },
+    {
+      "path": "skills/mauritania/mr-company-formation.md",
+      "sha256": "846364c9292ac03b9c676354f7ba2fdc34e11266069b3f14c1072aff89bfa750"
+    },
+    {
+      "path": "skills/mauritania/mr-corporate-income-tax.md",
+      "sha256": "e536e49c0d0181ace336de701d2dbbdf2e907b6c5dbd115863800bd02ac7c48e"
+    },
+    {
+      "path": "skills/mauritania/mr-cross-border.md",
+      "sha256": "e8cdc9f64d2abdfff11ec000caf7d3d7c556428536a3f4490bfeb47c6a401454"
+    },
+    {
+      "path": "skills/mauritania/mr-income-tax.md",
+      "sha256": "cf6bfd1dcc1ff315fcef4c973585893ea434040ba6ba5a6dc4413c752f33a35e"
+    },
+    {
+      "path": "skills/mauritania/mr-payroll-social.md",
+      "sha256": "1d93004f82e29b342767c7545e38130084a66a2ae7cba9679fcca37d813531b1"
+    },
+    {
+      "path": "skills/mauritania/mr-tax-overview.md",
+      "sha256": "8a21a746a28e7359a458e8960789f78dcb4fc19c314ec0b614618bbab24a5ef5"
+    },
+    {
+      "path": "skills/mauritania/mr-transfer-pricing.md",
+      "sha256": "d9b32e29584a9a90e9155f059154123a86f16862d1a5feb09f5a7a07cf8785da"
+    },
+    {
+      "path": "skills/mauritania/mr-vat-gst.md",
+      "sha256": "ad057d9e9fc0d43d2db2854b1b4d312dc61eb98be27066b99ac5981e905ee084"
+    }
+  ]
+}
