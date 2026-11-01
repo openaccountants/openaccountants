@@ -9,10 +9,10 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
-# Burkina Faso corporate tax (IS) v1.1
+# Burkina Faso corporate tax (IS) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -36,8 +36,7 @@ CME can replace IS for an eligible microenterprise; determine the regime using [
 | Specified public-interest donations; positive taxable result before gift, required recipient/date/value schedule | Limit 3‰ of turnover excluding VAT | [CGI art. 71(1)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | Justified gifts to State and its subdivisions; schedule also required | No quantitative limit | [CGI art. 71(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | Head-office share plus linked-enterprise technical/accounting/financial assistance, studies and assimilated fees together | 10% of defined overheads; precise actual services, non-excessive charges | [CGI art. 62, amended by Loi 021-2025/ALT art. 14](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
-| Ordinary securities products, subject to treaty and specific rate | 12.5%; Burkina-issued bond interest 6% | [CGI art. 140(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
-| New company's distributed share/interest products | Half ordinary rate, hence 6.25%, first three social periods, total no more than 42 months; community companies have separate 3% branch | [CGI art. 141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| Securities/distribution rates and new-company conditions | See [investment income and IRCM withholding](bf-investment-income.md#rates-bands-and-thresholds), the sole figure home; the corporate IS credit below remains here | [CGI arts. 140–141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 
 ## The base
 

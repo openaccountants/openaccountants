@@ -1,0 +1,72 @@
+{
+  "predecessor_commit": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+  "candidate_files": [
+    {
+      "path": "skills/burkina-faso/bf-investment-income.md",
+      "sha256": "530f1a6eb5c3a3ef37536edf262f026f2d0b9998019686bd1f30f2baa26ecaab",
+      "bytes": 25641
+    },
+    {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "sha256": "55a386eae02d92195cce7d04e3fd2dce82f18edbdb6f1c41a396da1dd3a8e7eb",
+      "bytes": 15451
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "bytes": 11291
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.json",
+      "sha256": "507c9e10269c6ff9e856e822e14ffc506fa39f6b914ccf3af9cf97398b740d61",
+      "bytes": 53358
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.md",
+      "sha256": "4888510f5e82b4210eef2785a97ab338c80b453212411eb4658e45410018a0d8",
+      "bytes": 32889
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/old-topic-destinations.json",
+      "sha256": "110a461789b0dc0021adbbd6f0c41d41f9f96f7a727868b9ad11fd2817d70ca4",
+      "bytes": 3496
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/old-topic-destinations.md",
+      "sha256": "b657af9659e493c2e6153659ac6b01668ebdf94e23138309fc9bde5f162f2af2",
+      "bytes": 1354
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/preservation-baseline.json",
+      "sha256": "ff8abec84bdcdccaccb8293bc1d754d3c31ba3b25aff7b2adcb255c46a62fb48",
+      "bytes": 37884
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/readme-addition.json",
+      "sha256": "8f4ebdf9b784845bb4185963333bd35706b9702905cbdf862b47971c6fd9cc75",
+      "bytes": 1010
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/source-identities.json",
+      "sha256": "937264e74c6c83a0e6ff717928fb3bcac44923e4a82b2c0c60b83d5603324af6",
+      "bytes": 5935
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-check.py",
+      "sha256": "34aa2814dcf0cac871fc0ae66796aab1b6f8f0c51fbd6ec9fbd7d57a6fcc6587",
+      "bytes": 3250
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-checks.json",
+      "sha256": "c2407154c252522ea32ddd92a11618b21b07f364b970d0f9f7574b5600376d92",
+      "bytes": 16822
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-record.md",
+      "sha256": "aa11f8b8f6fb832433365ad2b3d2d8ea7273a3ee417e2c60bd7c069643ada71f",
+      "bytes": 1149
+    }
+  ],
+  "law_review": "Pending independent review",
+  "permitted_old_file_changes": "Two corporate rate rows replaced by source-backed figure-home link, matching version/H1 increment, and append-only pack README."
+}
