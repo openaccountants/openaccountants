@@ -104,5 +104,17 @@
   ],
   "requested_base_limitation": "59c23 is newer than this existing branch base and whole-tree comparison includes unrelated pre-existing country/register differences; failed outputs preserved. Original branch base and property-only prior-head comparisons both pass.",
   "validator_warning": "No tax domain in lr-property-tax slug; extra property job sits outside seven-core-domain router; no invented domain assignment.",
-  "independent_review": "pending"
+  "independent_review": "pending",
+  "actual_pr_ancestry": {
+    "origin_main": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "head_before_receipt_update": "79952dad1837653b943adeccbd43fcb935c871aa",
+    "command": [
+      "git",
+      "merge-base",
+      "origin/main",
+      "HEAD"
+    ],
+    "full_merge_base": "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+    "passing_audits": "Existing results2 and6 use this exact merge base; results3 and7 use the exact owned prior-head delta. New receipt-only edit introduces no tax-content or metadata change."
+  }
 }
