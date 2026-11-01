@@ -1,13 +1,13 @@
 ---
 name: nl-social-contributions
 description: "Dutch social contributions for tax year 2026, for employees, employers and the self-employed. Covers who is insured for the national insurances (AOW, Anw, Wlz) and the employee insurances (WW, WIA, ZW); the 2026 national insurance premiums of 27.65% in the first box 1 band (EUR 38,883) and the AOW-age variant; employer premiums AWf (2.74% / 7.74%), Aof (6.27% / 7.63%), Wko, Whk and the Zvw employer levy (6.10%) up to the maximum premium wage of EUR 79,409; the 4.85% Zvw contribution for the self-employed; the premium base, deadlines, fines and interest; and cross-border rules (Regulation 883/2004, A1, the 25% test, telework). Trigger on: premies volksverzekeringen, premies werknemersverzekeringen, bijdrage Zvw, werkgeversheffing Zvw, maximumpremieloon, AWf, Aof, Whk, social security Netherlands, zzp Zvw, A1 Netherlands. Out of scope: the payroll run itself (nl-payroll-tax) and the income tax computation (nl-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -240,8 +240,6 @@ These are annual checks before the Belastingdienst's own rounding on the assessm
 | Rijksoverheid, Plannen voor verplichte basisverzekering arbeidsongeschiktheid voor zelfstandigen | https://www.rijksoverheid.nl/themas/werk/hervormingen-arbeidsmarkt/meer-zekerheid-voor-werkenden/verplichte-arbeidsongeschiktheidsverzekering-voor-zelfstandigen | 2026-10-22 |
 
 Not yet confirmed: the filing deadline for the 2026 income tax return (the page read covers the 2025 return); the fine for a late income tax return by a self-employed person (not on the pages read); the AOW-age band 1 rate split for a person who reaches AOW age during 2026 (month-by-month; use the official tables); the DGA employee insurance test (no source read for the criteria).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

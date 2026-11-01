@@ -2,13 +2,13 @@
 name: vi-bona-fide-residence
 description: >
   US Virgin Islands bona fide residence and residence-change reporting reference checked in October 2026. Explains the separate presence, tax-home and closer-connection requirements, alternative presence tests for US citizens and resident aliens, and the distinction between residence and income sourcing. Covers arrival-year and departure-year exceptions and Form 8898 reporting triggers, individual income thresholds and separate filing. Uses current statutory text and IRS instructions, with examples that distinguish passing one test from proving residence. Excludes nonresident-alien and military special cases from the ordinary workflow. Independent accountant review and regulatory amendment reconciliation remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: VI
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -61,8 +61,6 @@ Gross income is measured before deductions and excludes the spouse's income for 
 Retain a travel ledger, work-location evidence, housing and family facts, contracts, prior returns and the source analysis for income as recommended working papers. Section 937(b) separately governs income sourcing; becoming resident does not automatically convert US-source income into USVI-source income. [Section 937](https://uscode.house.gov/us/usc/119-121/t26/s937/).
 
 Checked 22 October 2026. Publication 570 retrieved is the 2025 edition and Form 8898 instructions are revised October 2024. This is a source-cited draft, not a completed residence opinion. Full regulatory amendment reconciliation and independent accountant review remain outstanding.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

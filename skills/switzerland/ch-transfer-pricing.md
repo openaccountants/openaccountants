@@ -1,13 +1,13 @@
 ---
 name: ch-transfer-pricing
 description: "Swiss transfer pricing for 2026. Switzerland has no transfer pricing statute: the arm's length principle works through profit tax (DBG art. 58 para. 1 let. b and c, StHG art. 24) and the 35% withholding tax on hidden profit distributions (geldwerte Leistungen, VStG art. 4 para. 1 let. b). Covers related parties, hidden profit distributions and hidden capital contributions, the ESTV safe-harbour interest rates for 2026 (CHF and foreign currency), service companies (Kreisschreiben 4), the burden of proof, rulings, APAs, MAP (StADG), country-by-country reporting (CHF 900 million), penalties, and the 35% withholding with the gross-up when it is not passed on. Trigger on: transfer pricing Switzerland, Verrechnungspreise, geldwerte Leistung, verdeckte Gewinnausschüttung, safe harbour Zinssätze, shareholder loan interest, CbCR Schweiz. Out of scope: ch-corporate-income-tax (rates, base), ch-cross-border (treaty refunds, migration), ch-cantonal-tax."
-version: 0.1
+version: 0.2
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -233,8 +233,6 @@ The edge cases: the canton, not Beta, must first show the mismatch, and in BVGer
 | Bundesverwaltungsgericht A-3092/2023, 21 March 2025 (gross-up "ins Hundert"), copy on entscheidsuche.ch | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-3092-2023_2025-03-21.pdf | 2026-10-23 |
 
 Not yet confirmed: the Zurich cantonal and communal profit tax rate for 2026 (no single official 2026 figure found, so the examples stop at federal tax); whether the "from CHF 1 million" safe-harbour rate for operating loans applies to the whole loan or only to the part above CHF 1 million (circular 2-218 does not say: footnote 1 only sets the 0.5% or 0.25% surcharge and footnote 2 points to hidden equity under Kreisschreiben 6a); the treaty time limits for a MAP request (they differ by treaty); the conditions of the cross-border notification procedure for hidden distributions to foreign group companies (VStG art. 20 para. 2 allows it, the implementing rules were not read); whether each treaty treats a hidden distribution as a dividend for the refund; the official Federal Administrative Court copies of A-2782/2022 and A-3092/2023 (read on the entscheidsuche.ch archive; A-2782/2022 is confirmed by BGer 9C_317/2024 on bger.ch); the circular 2-219 refers to the CHF circular as both 28 and 29 January 2026 (the CHF circular itself is dated 29 January 2026).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
