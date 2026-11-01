@@ -55,7 +55,7 @@ Past periods, firms up to EGP 10 million (Law 151/2026 art. 4, as corrected): op
 
 ## The base
 
-Tax = annual turnover × band rate. No costs, no depreciation, no losses: a loss-making year still pays.
+Tax = annual turnover × band rate. No costs, no depreciation, no losses: a loss-making year still pays. The regime wins when turnover × rate is below the `eg-income-tax` table on profit. The general system wins at a loss or thin margin, where losses carry forward five years (Law 91 art. 29) and depreciation counts.
 
 **What the regime removes:**
 - Development fee (رسم تنمية الموارد) and stamp duty; notarisation and registration fees on company formation, credit, mortgage and security contracts, and land registration for the project (art. 7).

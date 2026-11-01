@@ -54,6 +54,7 @@ Band tables live in `eg-income-tax` and `eg-sme-tax`. Figures owned here:
 | Few costs, turnover up to 20m | Turnover regime, if not 90% consulting for one or two clients |
 | Thin margin, heavy documented costs | Compute: the general system often wins |
 | Losses expected | General: turnover tax is due on a loss, losses carry five years |
+| Turnover over 20m and outside the tolerance | General is the only option |
 | Plans to pass 24m, or a second breach | General, or model the exit |
 | Needs freedom to change within five years | General |
 | Poor cost documents | Fix documents, then compare |
@@ -102,7 +103,8 @@ expected:
 - **Row steps:** income just over 600,000, 700,000, 800,000, 900,000 or 1,200,000 loses a band. A legitimate timing of a real receipt or a real expense can matter; invented timing cannot.
 - **Law 5/2025 windows are closed.** Non-filers had six months from 13 Feb 2025 (art. 3). Unregistered taxpayers and dispute applicants had three months, extended three more from 13 May 2025 by MoF decision 167/2025. All ended by mid August 2025. Payment and installment rules of those cases stay with cases already running.
 - **Listed shares:** gains exempt from 29 Jul 2026, losses lost (`eg-income-tax`).
-- **E-invoices:** art. 3 of Law 6 makes them a condition of the turnover regime. On the general system, regular books backed by documents support costs (Law 91 art. 28).
+- **E-invoices:** art. 3 of Law 6 makes them a condition of the turnover regime. On the general system, regular books backed by documents support costs (Law 91 arts. 22, 23).
+- **Splitting:** one business split with no economic reason to stay under 20m is outside Law 6 (art. 4 item 2). Do not design it.
 - **Lock-in:** form 11/1 is available only after five years.
 
 ## 7. Self-checks
@@ -120,7 +122,7 @@ Inputs trace to documents; rates match 2026; both systems computed; row chosen o
 | Correction notice, page image of the Law 151 table | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
 | ETA Services Guide, 2nd edition, section 18 | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-01 |
 
-Not yet confirmed: the rule that only e-invoices prove costs and input VAT from 1 July 2023. VAT registration threshold changes, Resolution 281 of 2025 and its fine: left to `egypt-vat`. Whether Law 5 relief has a successor beyond Laws 151 and 152 of 2026. The insurance and pension relief cap (see `eg-income-tax`).
+Not yet confirmed: the rule that only e-invoices prove costs and input VAT from 1 July 2023. VAT registration threshold changes, Resolution 281 of 2025 and its fine: left to `egypt-vat`. Whether Law 5 relief has a successor beyond Laws 151 and 152 of 2026.
 
 ## 9. Disclaimer
 

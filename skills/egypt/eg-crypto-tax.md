@@ -31,7 +31,7 @@ No crypto rate exists in the tax laws read. Laws 91/2005, 7/2024, 151/2026, 206/
 | Item | Rule | Conditions | Tax year | Official URL |
 |---|---|---|---|---|
 | Rates | `eg-income-tax` table | Individual whose gains are income under the classes below | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
-| Charge on organised activity | Commercial profit, or the art. 25 class covering income from any profession or activity not otherwise listed | Law 91 art. 19, art. 25 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Charge on organised activity | Commercial profit, even from a single deal (art. 19 item 3), or the class covering income from any profession or activity not otherwise listed | Law 91 art. 19; art. 32 item 3 as replaced by Law 53/2014 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
 | Listed-securities exemption | Does not apply | Covers securities listed on the Egyptian exchange (Law 151/2026) | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
 
 ## The base
@@ -50,7 +50,7 @@ Fines and the delay charge are in `eg-income-tax`. Penalties under banking law a
 
 ## Cross-border points
 
-Foreign exchanges do not change the art. 6 test: the charge reaches income realised in Egypt, and art. 5 defines it. Foreign-exchange and capital-control rules are out of scope. Moving funds across the border goes to the lawyer.
+A foreign exchange does not take income out of the charge. Under Law 91 art. 6 and art. 32 item 3 (Law 53/2014) a resident pays on income realised abroad if Egypt is the centre of the activity. Art. 3 defines Egyptian-source income. Foreign-exchange and capital-control rules are out of scope. Moving funds across the border goes to the lawyer.
 
 ## Two worked examples that recompute
 
@@ -98,7 +98,8 @@ Hand over to a lawyer and an accountant for any real filing. Never encourage cry
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law 91 of 2005: arts. 5, 6, 19, 25 (OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
+| Income Tax Law 91 of 2005: arts. 3, 6, 19, 32 (OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
+| Law 53 of 2014, arts. 6 and 32 as replaced | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-01 |
 | Law 7 of 2024 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-01 |
 | Law 151 of 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
 | Central Bank of Egypt banking-laws index (lists Law 194 of 2020; the PDF refused both fetch and archive, text unread) | https://www.cbe.org.eg/ar/laws-regulations/laws/banking-laws | 2026-11-01 |

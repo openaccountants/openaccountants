@@ -23,7 +23,7 @@ This skill covers Egyptian personal income tax (ضريبة الدخل على ا�
 ## Who this applies to
 
 - **Residents** (Law 91 art. 2): a person with a permanent home in Egypt; or present more than 183 days, continuous or not, within 12 months; or an Egyptian working abroad and paid from an Egyptian treasury.
-- **Scope of the tax** (Law 91 art. 6): annual tax on the total net income of resident and non-resident individuals for income realised in Egypt, from four sources: salaries, commercial or industrial activity, professional or non-commercial activity, and real estate. Art. 5 defines Egyptian-source income. The earlier version of this skill said residents pay on worldwide income; the text of art. 6 does not say that.
+- **Scope of the tax** (Law 91 art. 6 first para., as replaced by Law 53/2014): residents pay on income realised in Egypt, or abroad if Egypt is the centre of their commercial, industrial or professional activity. Non-residents pay on income realised in Egypt. It is not a charge on all worldwide income, but foreign receipts of an Egypt-centred business or profession are in (arts. 17, 32). Four sources: salaries, commercial or industrial activity, professional or non-commercial activity, and real estate. Art. 3 defines Egyptian-source income.
 - **Not here:** companies (`eg-corporate-tax`); the turnover regime (`eg-sme-tax`); real estate disposals and rents (`eg-real-estate-tax`); withholding (`eg-withholding-tax`); payroll operation (`eg-payroll`); crypto (`eg-crypto-tax`).
 
 ## Rates, bands and thresholds
@@ -42,29 +42,31 @@ Egypt withdraws the lower bands as income rises. Pick the row by total annual ne
 
 | Item | Amount | Conditions | Tax year | Official URL |
 |---|---|---|---|---|
-| Personal exemption | EGP 20,000 a year | Law 91 art. 13(1) as replaced by Law 7/2024. Art. 13 sits in the salaries chapter; see "Not yet confirmed" for business income | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
+| Personal exemption | EGP 20,000 a year | Salaries only. Law 91 art. 13(1) as replaced by Law 7/2024 sits in the salaries part, and no article gives it against business or professional income. Art. 7, the old general threshold, was repealed (Law 101/2012, text of art. 8). Do not deduct it from business or professional profit | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
 | Delay charge | Central Bank rate on 1 January before the due date plus 2%; 20.50% on 1 Jan 2026, so 22.50% a year on a date falling in 2026 | Law 91 art. 110; part months and pounds dropped | 2026 | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
 | Delay charge ceiling | Delay charge or additional tax may not exceed 100% of the principal tax | Law 206/2020 new article, added by Law 7/2025 | 2026 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
 | Built property disposal | 2.5% of gross value, no deduction, paid within 60 days | Law 91 art. 42 as replaced by Law 151/2026; the correction notice makes it "built" property and fixes the article number. Detail in `eg-real-estate-tax` | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf |
 | Dividends to non-resident individuals | 10%; 5% if the securities are listed in Egypt | Dividend article of Law 91 as replaced by Law 151/2026 art. 1; no costs deducted | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
 | Listed Egyptian securities, capital gains | Exempt; losses not deductible and not carried forward | Law 91 art. 31 item 7, added by Law 151/2026 art. 2. Not exempt where the disposal delists the company | From 29 Jul 2026 | same |
-| Unlisted securities and company shares, capital gains | Taxed; a non-resident seller computes and pays within 60 days | Unlisted-gains articles of Law 91 as replaced by Law 151/2026 art. 1; gain is price less acquisition cost and brokerage | From 29 Jul 2026 | same |
+| Unlisted securities and company shares, capital gains | Taxed, gains in Egypt or abroad; a non-resident seller computes and pays within 60 days | Law 91 arts. 46 bis 3 and 4 as replaced by Law 151/2026 art. 1; gain is price less acquisition cost and brokerage. At a fair value price, add the Central Bank rate for each year held if held at least three years; cost is weighted average | From 29 Jul 2026 | same |
+| Listed securities, stamp tax on sales | 0.5 per thousand each on seller and buyer; 0.25 per thousand each on same-day trades | Stamp Duty Law 111/1980 art. 83 bis as replaced by Law 153/2026. Not on listed investment fund units or approved market makers. Settlement body withholds | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf |
 
 Listed share gains tax left unpaid for 16 June 2023 to the law's start date is forgiven (Law 151 art. 5).
 
 ## The base
 
-1. Take net income by source. For a business or profession: receipts less costs needed to earn them, from regular books backed by documents (Law 91 arts. 18, 19, 28).
+1. Take net income by source. For a business or profession: receipts less costs needed to earn them, from regular books backed by documents (Law 91 arts. 22, 23; professions art. 33, 35).
 2. Add the sources into total net income and round down to EGP 10.
 3. Pick the table row and apply the bands.
 4. Credit tax withheld and advance payments.
 
-**Costs.** Bad debts need serious collection steps: a payment order, a first-instance judgment, or a claim in bankruptcy enforcement (art. 28 first para. item 4 as replaced by Law 151). A personal expense, a fine and income tax itself are not costs.
-**Donations by professionals** (art. 27): deductible up to net annual income for government bodies; up to 10% of net income for registered Egyptian charities, schools and hospitals under state supervision and Egyptian research bodies; not deductible again against another source.
-**Losses** (art. 29): carried forward to the fifth following year at the latest.
-**New professionals** (art. 31 item 5): members of a professional syndicate are exempt for three years from starting the profession.
-**Authors** (art. 31): income from writing and translating religious, scientific, cultural and literary books and articles is exempt, except sale for audio or video production.
-**Health contribution** (art. 23 item 10, added by Law 151; art. 33 item 5 for the matching item): the solidarity contribution under the Universal Health Insurance Law art. 40(9) is a deductible item.
+**Costs.** Bad debts need serious collection steps and non-collection 12 months after the due date: a payment order, a first-instance judgment, or a claim in bankruptcy enforcement (art. 28 first para. item 4 as replaced by Law 151). No such steps are needed for a debt up to EGP 10,000, if total bad debts stay within 1% of the debtor balance at year end. A personal expense, a fine and income tax itself are not costs.
+**Donations by professionals** (art. 34): deductible up to net annual income for government bodies; up to 10% of net income for registered Egyptian charities, schools and hospitals under state supervision and Egyptian research bodies; not deductible again against another source.
+**Losses** (art. 29): carried forward to the fifth following year at the latest. Art. 35 applies art. 29 to professionals, on its conditions.
+**Estimated accounts** (art. 18): repealed by Law 151/2026 art. 6; its rules continue for tax period 2027 and earlier.
+**New professionals** (art. 36 item 5): members of a professional syndicate are exempt for three years from starting the profession.
+**Authors** (art. 36 item 2): income from writing and translating religious, scientific, cultural and literary books and articles is exempt, except sale for audio or video production.
+**Health contribution** (art. 23 item 10 for business, art. 33 item 5 for professions, both added by Law 151): the solidarity contribution under the Universal Health Insurance Law art. 40(9) is a deductible item.
 **Egyptian-source fees of a non-resident:** see `eg-withholding-tax`.
 
 ### Classify transactions
@@ -198,13 +200,13 @@ Open disputes: Law 152/2026 renews the Law 79/2016 dispute committees to 31 Dece
 
 ## Cross-border points
 
-- Non-residents pay on income realised in Egypt (art. 6); art. 5 lists it.
+- Non-residents pay on income realised in Egypt (art. 6); art. 3 lists it. Residents also pay on foreign income of an activity centred in Egypt (arts. 6, 17, 32).
 - Treaties: the ETA treaty list is the starting point. Do not apply a treaty rate or a foreign tax credit here; route to `eg-withholding-tax`.
 - Non-resident sale of unlisted shares or company interests: compute and pay within 60 days. Treasury bill gains of non-residents are outside this tax (same article).
 
 ## Two worked examples that recompute
 
-**Case 1. Freelancer, net income EGP 90,000.** Row "up to 600,000". 10% on 15,000 = 1,500; 15% on 15,000 = 2,250; 20% on 20,000 = 4,000. Tax 7,750. No personal exemption is taken, for the reason under Sources.
+**Case 1. Freelancer, net income EGP 90,000.** Row "up to 600,000". 10% on 15,000 = 1,500; 15% on 15,000 = 2,250; 20% on 20,000 = 4,000. Tax 7,750. No personal exemption is taken: art. 13(1) is a salary relief.
 
 ```oa-check
 name: Freelancer net income EGP 90,000
@@ -254,7 +256,10 @@ Refuse to help hide receipts, invent costs or under-declare. Do not present outp
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law 91 of 2005, original text: arts. 2, 6, 13, 18, 19, 25, 27, 28, 29, 31 (OCR, figures confirmed only where a later law restates them) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
+| Income Tax Law 91 of 2005, original text: arts. 2, 3, 6, 13, 17 to 36 (OCR, figures confirmed only where a later law restates them) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
+| Law 53 of 2014, art. 1 (arts. 6, 13 last para., 17, 32; page image read for art. 6) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-01 |
+| Law 101 of 2012, art. 2 (text of art. 8 repealing art. 7; OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf | 2026-11-01 |
+| Law 153 of 2026, art. 1 (page image read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf | 2026-11-01 |
 | Law 7 of 2024, arts. 8 and 13(1) (bands, exemption; page images read; the ETA file carries an HTML page after the PDF end and opens once trimmed) | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-01 |
 | Law 175 of 2023 (previous band table, superseded) | https://eta.gov.eg/sites/default/files/2024-03/law_no.175-2023.pdf | 2026-11-01 |
 | Law 151 of 2026, whole text; Gazette 30 bis (a), 28 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
@@ -266,7 +271,7 @@ Refuse to help hide receipts, invent costs or under-declare. Do not present outp
 | ETA circular 1 of 2026 (Central Bank rates; page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-01 |
 | ETA Services Guide, 2nd edition: registration and section 18 only | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-01 |
 
-Not yet confirmed: whether the EGP 20,000 personal exemption (art. 13, salaries chapter) comes off business and professional income; the old skill deducted it, and Law 7/2024 art. 2 sets a start date for those taxpayers, but the examples here do not deduct it until an official page says so. The cap on life, health and pension premium relief: the old figure was the lower of 15% of net revenue or EGP 10,000, the 2005 text differs, and the amending law was not read. The non-resident's right to the exemption. Whether art. 74 is the current article number for the 30-day notice. The box numbers of the individual annual return. The deemed cost percentage where no regular books are kept (art. 28, OCR unclear). Depreciation schedules. Treatment of mixed personal and business costs beyond the general rule. Exact ETA forms for the employee annual settlement belong to `eg-payroll`.
+Not yet confirmed: any ETA page or executive regulation stating expressly that the personal exemption is salary-only (the answer above rests on the law's structure; Law 7/2024 art. 2 sets start dates for business taxpayers but for the whole law, including art. 8, so it does not extend art. 13). The premium cap for professionals: art. 13 last para. (Law 53/2014) caps salaries at the lower of 15% of net revenue or EGP 10,000; art. 33's own cap in the 2005 text is unclear in OCR and any amendment was not read. Whether Law 101/2012's repeal of art. 7 survived Law 11/2013, which replaced art. 8 again (art. 7 is absent from all later tables). Whether art. 74 is the current article number for the 30-day notice. The box numbers of the individual annual return. The deemed cost percentage where no regular books are kept (art. 35, OCR digit unclear; the old skill said 10%). Depreciation schedules. Treatment of mixed personal and business costs beyond the general rule. Exact ETA forms for the employee annual settlement belong to `eg-payroll`.
 
 <!-- openaccountants-cta-block -->
 
