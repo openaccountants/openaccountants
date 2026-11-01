@@ -2,7 +2,7 @@
 name: km-registration-and-tax-clearance
 description: >
   Comoros tax registration and clearance reference based on the enacted 2026 finance law. Covers the amended registration deadline, the distinction between the quitus fiscal and tax-regularity certificate, their validity periods and the customs withholding consequence of missing certification. Separates administrative evidence from substantive tax liability and includes a conditional withholding calculation. Flags incomplete scan wording and the need for current administrative forms rather than assuming certificates are interchangeable. Company formation, tax rates, exemptions, the complete intervening amendment chain and independent accountant review remain outside this initial source-cited draft.
-version: 0.2
+version: 0.3
 jurisdiction: KM
 tax_year: 2026
 last_updated: 2026-11-01
@@ -26,6 +26,10 @@ The new LPF article L.1 requires the specified persons, entities and legal arran
 
 Record the start date and obtain evidence that the registration request was received. Those are practical controls for the statutory deadline. This tax-registration requirement does not itself prove company incorporation, commercial-register registration, licensing or completion of every tax enrolment. Current supporting-document requirements and forms still need to be reconciled with implementing material.
 
+## Earlier registration rule: before starting
+
+The Amending Finance Law 2024 inserted CGI article 42 bis. Anyone starting a profession subject to the tax must declare to the Direction générale des Impôts "avant le commencement de ses opérations". Failure carries a fixed fine of **KMF 500,000**. Legal persons also file a beneficial-owner declaration, and companies attach their articles. Article 42 bis sits in the code and L.1 in the procedure book, and the 2026 text does not repeal 42 bis. Work to the stricter date: declare before starting, and in every case inside the fifteen days of L.1. On a sale or closure, article 42 bis gives ten days to notify the tax office and file the profit return. [2024 amending law, pages 14 to 16](https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf).
+
 ## Two documents with different conditions
 
 | Document | Provision | Stated condition and validity |
@@ -41,7 +45,7 @@ Three calendar months is not necessarily ninety days. Obtain the stated expiry d
 
 L.4 ter lists public procurement, bank/financial-institution transfers or professional financing, public approvals/visas/residence cards, professional-order registration, specified permanent departures, customs release and candidates for elective office. For departure, the listed case concerns a person fiscally domiciled in Comoros leaving permanently; do not generalise that wording into a new rule for every tourist journey. [L.4 ter, page 13](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf).
 
-The final sentence on page 13 begins to address use of a quitus where an attestation is required, but its ending is incomplete/obscured in the supplied scan. Obtain a legible official copy or administrative confirmation before asserting the exact substitution rule. This Guide does not establish that the documents can never substitute for one another.
+The final sentence on page 13 reads "Dans tous les cas où l'attestation de régularité fiscale est exigée, le quitus fiscal en tient" and stops there; the next page starts a new provision. The natural reading is "en tient lieu", meaning a quitus stands in for the attestation, but the last word is missing from the enacted scan. Treat substitution as unconfirmed until the tax office confirms it.
 
 ## Customs consequence
 
@@ -51,7 +55,17 @@ If the verified customs value is **KMF 2,000,000** and the withholding condition
 
 ## Remaining work
 
-Checked 22 October 2026. Obtain current application forms, processing rules, a legible substitution clause and guidance on crediting the advance. Complete later-amendment and registration-document reconciliation. No independent accountant review has occurred; this is not comprehensive country or formation coverage.
+Checked 1 November 2026. Obtain current application forms, processing rules, a legible substitution clause and guidance on crediting the advance. Complete later-amendment and registration-document reconciliation. No independent accountant review has occurred; this is not comprehensive country or formation coverage.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law 25-020/AU, Finance Law 2026, tax section (arts. 14 to 18), scan pages 9 to 16 | https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf | 2026-11-01 |
+| Law 24-013/AU, Amending Finance Law 2024, tax section (arts. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
+| Law 24-016/AU, Finance Law 2025, articles 1 to 25, scan, OCR read; no CGI or LPF change found beyond art. 20 | https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf | 2026-11-01 |
+| Code general des impots, 2023 edition, background only | https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf | 2026-11-01 |
+Not yet confirmed: the Amending Finance Law 2025 (Law 25-019/AU) could not be opened (official link returned 404), so any tax change in it is unverified. The Finance Law 2024 was not re-read in this refresh. The official tax authority site could not be reached. No consolidated 2026 code was found.
 
 <!-- openaccountants-cta-block -->
 
