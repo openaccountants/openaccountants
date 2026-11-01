@@ -84,11 +84,10 @@ Get full ownership/control chain, country/tax status of each counterparty, indiv
 
 ## Sources
 
- | Source and provisions actually read | Read on |
+| Source and provisions actually read | Read on |
 |---|---|
 | [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 01.01.13 IV in full; 20.01.52; 20.01.56.8 2° | 2026-11-01 |
 | [DGI 2026 CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf), IV-08–10; V-19–28 | 2026-11-01 |
-
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
 
 **Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. current implementing decision and annex identifiers, dedicated platform URL/fields, accepted pricing-method detail, the exact group-ownership threshold interpretation in IV-08, country-by-country reporting and treaty-specific corresponding adjustments. Do not use this Guide as a full documentary filing template.

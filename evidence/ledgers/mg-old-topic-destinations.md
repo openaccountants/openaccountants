@@ -73,4 +73,4 @@ Baseline db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6. Every substantive bullet from
 
 Removed and why: secondary-source citations, approximate/unconfirmed figures and generic pitch were replaced by primary-source rules or explicit Sources gaps. The formation timing and nominal-capital example have no verified legal status. Existing formation/overview prose summaries route to the same topics above. No source Guide is deleted or renamed.
 
-Lost content restored: pending independent review; this writer does not self-certify a review result.
+Lost content restored: 0 (independent closure review, 1 November 2026).

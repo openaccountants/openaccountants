@@ -91,11 +91,10 @@ Get NIF and regime/election, annual turnover, activity/product tariff details, c
 
 ## Sources
 
- | Source and provisions actually read | Read on |
+| Source and provisions actually read | Read on |
 |---|---|
 | [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 06.01.01–24; 20.01.52–54 | 2026-11-01 |
 | [DGI 2026 CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf), I-104–105 | 2026-11-01 |
-
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
 
 **Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. current electronic forms/boxes/payment-reference workflow, refund implementing decisions and case-specific agricultural tariff exemptions. Do not file a refund or claim an exemption from the headline summary alone.

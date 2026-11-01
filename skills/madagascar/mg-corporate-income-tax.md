@@ -94,14 +94,13 @@ Get the NIF, regime/election, activities and regulated sector, financial year, r
 
 ## Sources
 
- | Source and provisions actually read | Read on |
+| Source and provisions actually read | Read on |
 |---|---|
 | [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 01.01.02–05,09–15,19; 01.02.02–07; 20.01.51–54 | 2026-11-01 |
 | [DGI 2026 CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf), I-11–13 | 2026-11-01 |
-
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
 
-**Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. IS regional/transport minimum schedules, qualifying-centre implementing conditions, investment-eligible assets, detailed provisional-payment decision, sector/public-contract regimes and current portal fields. These claims from the old Guide are not calculation inputs.
+**Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. IS regional/transport minimum schedules, qualifying-centre implementing conditions, investment-eligible assets, detailed provisional-payment decision, sector/public-contract regimes, the old 10% rate on cooperative interest and rebates distributed to members, and current portal fields. These claims from the old Guide are not calculation inputs.
 
 <!-- openaccountants-cta-block -->
 

@@ -82,10 +82,9 @@ Get payer/provider legal forms, tax residences, treaty evidence, contract and gr
 
 ## Sources
 
- | Source and provisions actually read | Read on |
+| Source and provisions actually read | Read on |
 |---|---|
 | [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 01.01.02,04–05,14 II; 01.04.02–04; 20.01.53,53.3,54.1 | 2026-11-01 |
-
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
 
 **Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. operative treaty network/rates and relief procedure, historical dividend IR/IRCM interaction before LFR entry and current capital-income payment procedure, loan-interest exemptions and payment procedure, treaty PE overrides, foreign tax credits, exit and property/share-disposal regimes, current intermittent filing form/portal. Old headline dividend/interest figures are not an executable withholding table.

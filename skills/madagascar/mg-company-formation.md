@@ -92,7 +92,7 @@ Get chosen entity/activity, all partner identities and legal forms, ownership an
 
 ## Sources
 
- | Source and provisions actually read | Read on |
+| Source and provisions actually read | Read on |
 |---|---|
 | [EDBM SARL official instructions](https://orinasa.edbm.mg/Articles_3/), opening, Etapes 1–4; page labels October 2025 update | 2026-11-01 |
 | [EDBM official document selector](https://orinasa.edbm.mg/documentsLegalForm/), SARL/SARLU, shareholders, premises and manager documents | 2026-11-01 |
