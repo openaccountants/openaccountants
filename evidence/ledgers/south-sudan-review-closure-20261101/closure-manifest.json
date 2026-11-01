@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-01",
+  "repaired_freeze": "fedb90f1ba8828c7cd8c891180e12d0bab208b72",
+  "f1": "closed",
+  "disposition": "conditional source-baseline acceptance only",
+  "files": {
+    "evidence/ledgers/south-sudan-review-closure-20261101/closure-checks.json": "d83994ace83537aa21f1990b463fe729b0773c8a0343e8c50263f8f255d08a75",
+    "evidence/ledgers/south-sudan-review-closure-20261101/closure-checks.py": "cf9a6e4eb971b92bbd009bd3386fd267d6aa7d8b501eee3ae9ca2dd02263dc21",
+    "evidence/ledgers/south-sudan-review-closure-20261101/closure.md": "a97559a2b13f43a10dbaf161bed6dcc0d188a2a7632c7f2304a028484eb8074c"
+  }
+}

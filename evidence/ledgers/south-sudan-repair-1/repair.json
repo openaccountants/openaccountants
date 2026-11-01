@@ -1,0 +1,15 @@
+{
+  "reviewed_freeze": "f494e992b8dc888530c2998ac9aba0e6db29aaab",
+  "finding": "F1 annual-return-package adjacent conditions",
+  "actual_source_read": "PDF111\u2013115 actual text, including s180(1)\u2013(5),181 continuing on115.",
+  "source_url": "https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf",
+  "changed_paths": [
+    "skills/south-sudan/ss-company-formation.md",
+    "evidence/ledgers/ss-company-formation.md"
+  ],
+  "scope": "One Guide version0.2 and ledger row6; current-law hold remains, source-baseline only. Initial reviewer evidence unmodified.",
+  "after_sha256": {
+    "skills/south-sudan/ss-company-formation.md": "7733acac12d9404ae468fa08240e782303f3f2cd7f3d8db200751133b21861f7",
+    "evidence/ledgers/ss-company-formation.md": "e107fcde8b287b1732614774e259ec095fe1ed91f161f1ba1aa1b3b6594f2119"
+  }
+}

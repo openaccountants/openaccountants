@@ -1,0 +1,2167 @@
+{
+  "date": "2026-11-01",
+  "review_type": "fresh independent AI source-baseline review, not professional attestation",
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "frozen_commit": "f494e992b8dc888530c2998ac9aba0e6db29aaab",
+  "candidate_manifest_sha256": "ba2eebf0a690a2f65e55496215c6019abbf946804de1a808540a2abbcdf2a36b",
+  "files": {
+    "evidence/ledgers/ss-company-formation.md": {
+      "sha256": "3085035ac77f5efd937d5f129ffa55558adc1c3a2af52f05913ca71d6ca15822",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-corporate-income-tax.md": {
+      "sha256": "79aecb8e6d9277bcacc899dad7fd12fdb3ca2f9585413335839d0dda8cb6e5d3",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-cross-border.md": {
+      "sha256": "66ec5b100e930afc1d9207c5936761be4738f2370d0dd777d4ee32f67e401764",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-income-tax.md": {
+      "sha256": "4d92e8bb197818ef738bd084d143c58fea8bb1bd972db0b2b69db167425b743f",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-old-topic-destinations.md": {
+      "sha256": "c64429151182ae81442623daa838ca201301db8ddcc059211438f4cc859b1818",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-payroll-social.md": {
+      "sha256": "60e909580628b7c9314e140ea1f84037ab364b461671eff40c3f62d4ceb28f4b",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-preservation.json": {
+      "sha256": "4a472b72cf6909a0d023d823d5d8614a6e6bccba0ca6486afaa7bd89e13362fd",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-source-manifest.json": {
+      "sha256": "70f3611f2c59b1035f533d1f91a5fb589dad0519eab3e35a4f37650ac05aaef6",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-source-read-record.md": {
+      "sha256": "7eb3a88dfcde282262f2ad7b6b1ef960a1fb4037181f7bdb98ae9d07501dd952",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-tax-overview.md": {
+      "sha256": "28ed0dfa0a7999aaa666070bca3f097fb637edd041f7c5ee1c546af51de7acfb",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-transfer-pricing.md": {
+      "sha256": "2ff0952b3755f12e4ced64d9b09ecc2b28bfccd0c15b6e736cecd9ad016d47a0",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-vat-gst.md": {
+      "sha256": "686e63619cf1cf65d952d40dfbdb94abd1561c529617dda933807a37ebde4a20",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-writer-checks.json": {
+      "sha256": "60cf8e2ac6cb459d7a038a25815f32113f96440d713928a6ad1e12f59b957ef8",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "evidence/ledgers/ss-writer-checks.md": {
+      "sha256": "e4a819a89326cc7387081a60f3b8c867b18574e9950807578b2f9e4ed88dae41",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/README.md": {
+      "sha256": "9608f299c80ae667b31a2de72dcf184570250c4abc7efb90add183ed58bc168a",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-company-formation.md": {
+      "sha256": "cf8eda263dd9dfc6a8775e5d699c40fe6d73cba0c801d0206b866a50376b3c15",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-corporate-income-tax.md": {
+      "sha256": "e5dfabc11e7536f4c8c23c7d75d533e7d1cb1f27708e370ca31209983f95a59b",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-cross-border.md": {
+      "sha256": "bd955fe3d427dd84b8604869217989f4269a68c9352b0d6a33283d7d7d3a8207",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-income-tax.md": {
+      "sha256": "9fc42daf299560e39e94b43acd79345da1fb35bab6851117cd628144f1c64935",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-payroll-social.md": {
+      "sha256": "6aabfe8e57c2cb04b4825a21e58ec0850ee7d2fd2502fa6ee6ec20004bcd8954",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-tax-overview.md": {
+      "sha256": "30ce023b6c78f4c78b77702abd7c193435bee4c747c2d5276dbabaf50ef5e114",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-transfer-pricing.md": {
+      "sha256": "4bd3f346f345257c4c93b37f1e1ef4e3a5942f22d6b7693bddefdce392986926",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    },
+    "skills/south-sudan/ss-vat-gst.md": {
+      "sha256": "24fe314c07152afd7ac2d989b260bba0e423baa5dd2c95576c63e8209f8abda2",
+      "manifest_match": true,
+      "worktree_matches_freeze": true
+    }
+  },
+  "sources": {
+    "taxation-2021.pdf": {
+      "sha256": "b245e3af4ae3c2479a7cc1931296f76f04ddde2d570b1557d601e02725a89705",
+      "manifest_match": true
+    },
+    "financial-2024-25.pdf": {
+      "sha256": "f63a972f2293ee0888635f04e4a3602a1c005937bcb20d7294eaa272a0a34ac5",
+      "manifest_match": true
+    },
+    "ministry-financial-2024-25.pdf": {
+      "sha256": "e79a901fd1fba715a476efbfcb6d26c1f643e6325a4d7780306402dfb5cc1551",
+      "manifest_match": true
+    },
+    "financial-2023-24.pdf": {
+      "sha256": "ded23b09e0f5073492fa88474345ba8193b7f804e1aca7e1fb63758c39a1b443",
+      "manifest_match": true
+    },
+    "tax-regulations-2012.pdf": {
+      "sha256": "5ed28a7a8dce5d9b3eff9a1fb106514fba659f71a8a34ae300e440a0cc21de7f",
+      "manifest_match": true
+    },
+    "filing-manual.pdf": {
+      "sha256": "6fd021d39b5a8592918868401b9a911c58c753cf087863cb02799f1481021758",
+      "manifest_match": true
+    },
+    "registration-manual.pdf": {
+      "sha256": "0e4f6961bda470a670362a4b45b3338b05917e09219f7d6909bc06f799554a90",
+      "manifest_match": true
+    },
+    "operational-2024-25.pdf": {
+      "sha256": "e7039d30ae0328808f85ebbcb3f97d0280b10896261048c87e24fd4cb637f8b1",
+      "manifest_match": true
+    },
+    "companies-2012-archived-20260609.pdf": {
+      "sha256": "dc0768b0e3013870807f5b37aa43e0968243549cf27453ea9ab4dc14771b7a03",
+      "manifest_match": true
+    },
+    "draft-finance-2025-26.pdf": {
+      "sha256": "353e5e2c1989eba8f4ffb0cc5db419945ac856266274ab4cf917aee4759fd6f0",
+      "manifest_match": true
+    },
+    "pension-withholding-suspension-2021.pdf": {
+      "sha256": "12032d60f1ed06c30cb059036487c0fd4f0d95b3ad3f13156349acb003ce29c4",
+      "manifest_match": true
+    }
+  },
+  "guides": [
+    {
+      "path": "skills/south-sudan/ss-company-formation.md",
+      "description_words": 117,
+      "version": "0.1",
+      "title": "South Sudan company formation and compliance source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    },
+    {
+      "path": "skills/south-sudan/ss-corporate-income-tax.md",
+      "description_words": 110,
+      "version": "0.1",
+      "title": "South Sudan business profit tax source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    },
+    {
+      "path": "skills/south-sudan/ss-cross-border.md",
+      "description_words": 113,
+      "version": "0.1",
+      "title": "South Sudan residence, source and withholding source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": false,
+      "no_platform_keys": true
+    },
+    {
+      "path": "skills/south-sudan/ss-income-tax.md",
+      "description_words": 95,
+      "version": "0.1",
+      "title": "South Sudan personal income tax source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    },
+    {
+      "path": "skills/south-sudan/ss-payroll-social.md",
+      "description_words": 106,
+      "version": "0.1",
+      "title": "South Sudan payroll and social-contribution source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    },
+    {
+      "path": "skills/south-sudan/ss-tax-overview.md",
+      "description_words": 120,
+      "version": "0.1",
+      "title": "South Sudan tax source map and administration working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    },
+    {
+      "path": "skills/south-sudan/ss-transfer-pricing.md",
+      "description_words": 117,
+      "version": "0.1",
+      "title": "South Sudan related-party pricing source-baseline working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": false,
+      "no_platform_keys": true
+    },
+    {
+      "path": "skills/south-sudan/ss-vat-gst.md",
+      "description_words": 117,
+      "version": "0.1",
+      "title": "South Sudan sales tax and excise source-conflict working paper v0.1",
+      "version_matches_title": true,
+      "oa_check_blocks": 2,
+      "legacy": true
+    }
+  ],
+  "preservation": [
+    {
+      "path": "skills/south-sudan/ss-company-formation.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    },
+    {
+      "path": "skills/south-sudan/ss-corporate-income-tax.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    },
+    {
+      "path": "skills/south-sudan/ss-income-tax.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    },
+    {
+      "path": "skills/south-sudan/ss-payroll-social.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    },
+    {
+      "path": "skills/south-sudan/ss-tax-overview.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    },
+    {
+      "path": "skills/south-sudan/ss-vat-gst.md",
+      "cta_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_lines_exact": true
+    }
+  ],
+  "ledger_rows": [
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.7(2), PDF 26",
+      "short_quote": "a company limited by guarantee",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 2,
+      "line": 8,
+      "provision": "ss.7\u20139, PDF 26\u201327",
+      "short_quote": "any two or more persons",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 3,
+      "line": 9,
+      "provision": "ss.10\u201311, PDF 27\u201328",
+      "short_quote": "a subscriber of the memorandum may not take less than one share",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 4,
+      "line": 10,
+      "provision": "ss.21\u201323, PDF 32\u201333",
+      "short_quote": "the registrar shall issue a certificate",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.241, PDF 156\u2013157",
+      "short_quote": "at least one director who shall be ordinarily resident in South Sudan",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 6,
+      "line": 12,
+      "provision": "ss.177\u2013180, PDF 111\u2013114",
+      "short_quote": "within forty two days after the annual general meeting",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "finding_F1_private_company_annual_return_scope_and_certificate",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.27, PDF 22",
+      "short_quote": "Ministry of Justice and Constitutional Affairs",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 8,
+      "line": 14,
+      "provision": "PDF 26\u201337",
+      "short_quote": "A Director\u2019s TIN issued from the eTax portal",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.17(1),(3), PDF 26",
+      "short_quote": "before commencing business",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-company-formation.md",
+      "id": 10,
+      "line": 16,
+      "provision": "s.69, PDF 65\u201366",
+      "short_quote": "are null and void",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 1,
+      "line": 7,
+      "provision": "ss.64\u201368, PDF 62\u201364",
+      "short_quote": "except an insurance company",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.8, PDF 12; Schedule 1(A), PDF 41",
+      "short_quote": "at flat rate of 30%",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.70(1)\u2013(2), PDF 66",
+      "short_quote": "wholly and exclusively in connection with its economic activities",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.70(4), PDF 67",
+      "short_quote": "a maximum of two percent (2%) of income",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.71, PDF 67",
+      "short_quote": "adequate evidence of unsuccessful attempts to collect the debt",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 6,
+      "line": 12,
+      "provision": "s.74, PDF 68\u201369",
+      "short_quote": "Thirty Three percent (33%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.74(9), PDF 69",
+      "short_quote": "a maximum of five percent (5%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 8,
+      "line": 14,
+      "provision": "s.78, PDF 71\u201372",
+      "short_quote": "five (5) successive tax periods",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.77, PDF 70\u201371",
+      "short_quote": "Capital gains shall be recognized as business incomes",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 10,
+      "line": 16,
+      "provision": "s.49 Schedule 1(A), PDF 41",
+      "short_quote": "Advance Business profit Tax on imported goods",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 11,
+      "line": 17,
+      "provision": "s.84, PDF 74",
+      "short_quote": "on or before 1st April of the year following the tax period",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 12,
+      "line": 18,
+      "provision": "s.83, PDF 73\u201374",
+      "short_quote": "15 October",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 13,
+      "line": 19,
+      "provision": "s.49 approved amendment 4, PDF 39\u201340",
+      "short_quote": "shall not be deemed to be a final payment of tax",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 14,
+      "line": 20,
+      "provision": "s.68(2)\u2013(3), PDF 64",
+      "short_quote": "only the taxable business profit from South Sudan source income",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 15,
+      "line": 21,
+      "provision": "s.82, PDF 73",
+      "short_quote": "provided that the other country allows similar treatment",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 16,
+      "line": 22,
+      "provision": "ss.73,59(3)\u2013(4), PDF 68,57",
+      "short_quote": "equal to the fair market value",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 17,
+      "line": 23,
+      "provision": "s.5, PDF 19",
+      "short_quote": "\u201cTax period\u201d means the calendar year",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-corporate-income-tax.md",
+      "id": 18,
+      "line": 24,
+      "provision": "s.69, PDF 65\u201366",
+      "short_quote": "are null and void",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.5, PDF 19",
+      "short_quote": "physically present in South Sudan for 183 days or more in any tax period",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.5, PDF 19",
+      "short_quote": "established in South Sudan or has its place of effective management in South Sudan",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.54, PDF 53",
+      "short_quote": "all taxable income from",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.68(2)\u2013(3), PDF 64",
+      "short_quote": "only the taxable business profit from South Sudan source income",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.64, PDF 62\u201363",
+      "short_quote": "any workplace through which a non-resident does business",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 6,
+      "line": 12,
+      "provision": "s.64, PDF 63",
+      "short_quote": "income from labour and services performed in South Sudan",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.62(d)\u2013(e), PDF 61",
+      "short_quote": "whichever is less",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 8,
+      "line": 14,
+      "provision": "s.82, PDF 73",
+      "short_quote": "provided that the other country allows similar treatment",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.49 Schedule 1(A), PDF 40",
+      "short_quote": "Dividends",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 10,
+      "line": 16,
+      "provision": "s.48 B(i)\u2013(iii), PDF 31\u201332; Schedule 1(A), PDF 40",
+      "short_quote": "including associated costs for ancillary services",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 11,
+      "line": 17,
+      "provision": "s.49 Schedule 1(A), PDF 40",
+      "short_quote": "Government contract payment to a resident",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 12,
+      "line": 18,
+      "provision": "s.49 Schedule 1(A), PDF 40; Taxation Act ss.92(g),94(6), PDF 77\u201378",
+      "short_quote": "Technical/consultancy fees",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 13,
+      "line": 19,
+      "provision": "s.49 Schedule 1(A), PDF 40",
+      "short_quote": "Mobile Money commission given to dealers",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 14,
+      "line": 20,
+      "provision": "s.48 B(viii), PDF 33; Schedule 1(A), PDF 40",
+      "short_quote": "regardless of whether the beneficiary of the payment is resident or not",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 15,
+      "line": 21,
+      "provision": "s.49 approved amendment 4, PDF 39\u201340",
+      "short_quote": "shall not be deemed to be a final payment of tax",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 16,
+      "line": 22,
+      "provision": "s.4(2)(f), PDF 11 and Schedule 1(A), PDF 41",
+      "short_quote": "Investment rental income tax",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 17,
+      "line": 23,
+      "provision": "s.5, PDF 19",
+      "short_quote": "\u201cTax period\u201d means the calendar year",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 18,
+      "line": 24,
+      "provision": "s.95(1), PDF 79",
+      "short_quote": "within five business days of withholding",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 19,
+      "line": 25,
+      "provision": "s.63, PDF 61",
+      "short_quote": "or before 1 April of the year following the tax period",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-cross-border.md",
+      "id": 20,
+      "line": 26,
+      "provision": "s.84, PDF 74",
+      "short_quote": "on or before 1st April of the year following the tax period",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.49 Schedule 1(A), PDF 40",
+      "short_quote": "Monthly income does not exceed SSP 20,000",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.4(2)(b), PDF 10; Schedule 1(A), PDF 40",
+      "short_quote": "rate of five percent",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.4(2)(c), PDF 11; Schedule 1(A), PDF 40",
+      "short_quote": "SSP 57,000 per month",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.4(2)(d), PDF 11; Schedule 1(A), PDF 40",
+      "short_quote": "does not exceed SSP 90,000",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.4(2)(e), PDF 11; Schedule 1(A), PDF 40",
+      "short_quote": "rate of twenty percent (20%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 6,
+      "line": 12,
+      "provision": "s.4(1), PDF 10",
+      "short_quote": "standard allowable expenses of twenty percent (20%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.49 Schedule 1(A), PDF 40",
+      "short_quote": "Sole Proprietors with no Audited Financial Statements",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 8,
+      "line": 14,
+      "provision": "s.59(1)\u2013(4), PDF 57",
+      "short_quote": "including barter transactions",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.63, PDF 61",
+      "short_quote": "or before 1 April of the year following the tax period",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 10,
+      "line": 16,
+      "provision": "s.61, PDF 60",
+      "short_quote": "15 April",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 11,
+      "line": 17,
+      "provision": "s.54, PDF 53",
+      "short_quote": "all taxable income from",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 12,
+      "line": 18,
+      "provision": "s.57(1)(g), PDF 54",
+      "short_quote": "capital gains;",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 13,
+      "line": 19,
+      "provision": "s.49 approved amendment 4, PDF 39\u201340",
+      "short_quote": "shall not be deemed to be a final payment of tax",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 14,
+      "line": 20,
+      "provision": "PDF 3\u20136,8\u201319",
+      "short_quote": "An invoice will be generated for the Tax due",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 15,
+      "line": 21,
+      "provision": "s.5, PDF 19",
+      "short_quote": "\u201cTax period\u201d means the calendar year",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 16,
+      "line": 22,
+      "provision": "reg.1.94(1)(2), PDF 68",
+      "short_quote": "10% of amount over 300",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-income-tax.md",
+      "id": 17,
+      "line": 23,
+      "provision": "s.4(2)(f), PDF 11 and Schedule 1(A), PDF 41",
+      "short_quote": "Investment rental income tax",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.58(1)\u2013(2), PDF 55\u201356",
+      "short_quote": "forgiveness of an employee\u2019s debt",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.5(2), PDF 11",
+      "short_quote": "Employee pension contribution of up to five percent (5%) of gross wages",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.95(1), PDF 79",
+      "short_quote": "within five business days of withholding",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.95(3)\u2013(4), PDF 79\u201380",
+      "short_quote": "within sixty (60) days of the end of the year",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.39, PDF 41",
+      "short_quote": "liable to pay the tax not withheld",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 6,
+      "line": 12,
+      "provision": "PDF 3\u20136,8\u201319",
+      "short_quote": "An invoice will be generated for the Tax due",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.25, PDF 31",
+      "short_quote": "at the prevailing market rate",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 8,
+      "line": 14,
+      "provision": "reg.1.94(1)(3)\u2013(4), PDF 68",
+      "short_quote": "the employer designated by the employee",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.95(2), PDF 79",
+      "short_quote": "employers shall not be relieved of their responsibility",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-payroll-social.md",
+      "id": 10,
+      "line": 16,
+      "provision": "Circular RSS/NRA/DCG/J/19, PDF 1",
+      "short_quote": "has been suspended indefinitely",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.5, PDF 19",
+      "short_quote": "\u201cTax period\u201d means the calendar year",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.17(1),(3), PDF 26",
+      "short_quote": "before commencing business",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.24, PDF 30\u201331",
+      "short_quote": "for a period of six (6) years",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.25, PDF 31",
+      "short_quote": "at the prevailing market rate",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.38(1), PDF 39\u201340",
+      "short_quote": "up to a maximum of twenty five percent (25%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 6,
+      "line": 12,
+      "provision": "s.37(1)\u2013(2), PDF 39",
+      "short_quote": "the 1st day of the fourth month after the month for which payment of tax was due",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 7,
+      "line": 13,
+      "provision": "s.36, PDF 38\u201339",
+      "short_quote": "one hundred and twenty percent (120%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 8,
+      "line": 14,
+      "provision": "s.49(3), PDF 50",
+      "short_quote": "within 30 days after the action that gave rise to the appeal",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 9,
+      "line": 15,
+      "provision": "s.50, PDF 164",
+      "short_quote": "twenty percent (20%)",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 10,
+      "line": 16,
+      "provision": "PDF 3\u20136,8\u201319",
+      "short_quote": "An invoice will be generated for the Tax due",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-tax-overview.md",
+      "id": 11,
+      "line": 17,
+      "provision": "PDF 1\u20132",
+      "short_quote": "until such time that the Act is repealed and replaced by another law",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-transfer-pricing.md",
+      "id": 1,
+      "line": 7,
+      "provision": "s.5, PDF 18",
+      "short_quote": "(50%) or more of the shares or voting rights",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-transfer-pricing.md",
+      "id": 2,
+      "line": 8,
+      "provision": "ss.73,59(3)\u2013(4), PDF 68,57",
+      "short_quote": "equal to the fair market value",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-transfer-pricing.md",
+      "id": 3,
+      "line": 9,
+      "provision": "s.81, PDF 73",
+      "short_quote": "when this is not possible, the resale price method or the cost-plus method shall be used",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-transfer-pricing.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.48 B(iv), PDF 32",
+      "short_quote": "as if the scheme had not been entered into or carried out",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-transfer-pricing.md",
+      "id": 5,
+      "line": 11,
+      "provision": "s.24, PDF 30\u201331",
+      "short_quote": "for a period of six (6) years",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 1,
+      "line": 7,
+      "provision": "ss.105\u2013107, PDF 85\u201386",
+      "short_quote": "specific services",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 2,
+      "line": 8,
+      "provision": "s.108, PDF 86; Financial Act Schedule 1(A) para 5 PDF 40",
+      "short_quote": "the customs value, plus excise duty and customs duty",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 3,
+      "line": 9,
+      "provision": "ss.11,13\u201314 PDF 13\u201314 versus Schedule 1(A), PDF 40\u201341",
+      "short_quote": "Hotel, bar and restaurant services",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 4,
+      "line": 10,
+      "provision": "s.110, PDF 87",
+      "short_quote": "at the time goods are released outside the production premises",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 5,
+      "line": 11,
+      "provision": "ss.112\u2013113, PDF 88",
+      "short_quote": "not later than the 15th day of the month",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 6,
+      "line": 12,
+      "provision": "s.15, PDF 15",
+      "short_quote": "alcoholics and tobacco products are not exempted",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    },
+    {
+      "ledger": "evidence/ledgers/ss-vat-gst.md",
+      "id": 7,
+      "line": 13,
+      "provision": "Schedule 1(A) excise table PDF 41\u201342; Schedule 1(C) PDF 44",
+      "short_quote": "including station wagons and racing cars.",
+      "quote_found_in_cited_source": true,
+      "legal_read_result": "supported_as_limited_source_period_baseline",
+      "current_2026_law_accepted": false
+    }
+  ],
+  "old_topics": [
+    {
+      "id": 1,
+      "source": "skills/south-sudan/ss-company-formation.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 2,
+      "source": "skills/south-sudan/ss-company-formation.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 3,
+      "source": "skills/south-sudan/ss-company-formation.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Actual archived official Companies Act replaces secondary locator."
+    },
+    {
+      "id": 4,
+      "source": "skills/south-sudan/ss-company-formation.md:18",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Ministry of Justice agency established in opened Financial Act; current process remains unconfirmed."
+    },
+    {
+      "id": 5,
+      "source": "skills/south-sudan/ss-company-formation.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Company types preserved; sole proprietor, partnership, LLP and foreign branch expressly need separate legal routes."
+    },
+    {
+      "id": 6,
+      "source": "skills/south-sudan/ss-company-formation.md:20",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old blanket no-local-minimum / USD 100,000 foreign minimum not confirmed; capital and investment eligibility are explicit gaps."
+    },
+    {
+      "id": 7,
+      "source": "skills/south-sudan/ss-company-formation.md:21",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old blanket no-local-minimum / USD 100,000 foreign minimum not confirmed; capital and investment eligibility are explicit gaps."
+    },
+    {
+      "id": 8,
+      "source": "skills/south-sudan/ss-company-formation.md:22",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Corrected from one shareholder to ordinary private company 2\u201350 members and statutory joint-holder rule; resident director distinguished."
+    },
+    {
+      "id": 9,
+      "source": "skills/south-sudan/ss-company-formation.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Statutory memorandum/articles, registrar certificate and separate official business-TIN manual sequence; current name-reservation form unconfirmed."
+    },
+    {
+      "id": 10,
+      "source": "skills/south-sudan/ss-company-formation.md:24",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old 2\u20136 week estimate explicitly not promised; current timeline unconfirmed."
+    },
+    {
+      "id": 11,
+      "source": "skills/south-sudan/ss-company-formation.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Statutory memorandum/articles, registrar certificate and separate official business-TIN manual sequence; current name-reservation form unconfirmed."
+    },
+    {
+      "id": 12,
+      "source": "skills/south-sudan/ss-company-formation.md:26",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Company annual return and attachments expanded; annual BPT, monthly withholding and sales routes linked; NSIF obligation unconfirmed in Sources."
+    },
+    {
+      "id": 13,
+      "source": "skills/south-sudan/ss-company-formation.md:27",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-company-formation.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Investment certificate, incentives and duty-relief eligibility are explicit unresolved jobs; opened Taxation Act s.69 limits non-tax-law BPT exemptions."
+    },
+    {
+      "id": 14,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 15,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 16,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 17,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "FY 2024/25 opened ordinary BPT is flat 30% across sizes; old 10%/15% tiers superseded for that opened period. Specialist oil/mining/insurance outside scope, no current-law rollover."
+    },
+    {
+      "id": 18,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:20",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "FY 2024/25 opened ordinary BPT is flat 30% across sizes; old 10%/15% tiers superseded for that opened period. Specialist oil/mining/insurance outside scope, no current-law rollover."
+    },
+    {
+      "id": 19,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:21",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "FY 2024/25 opened ordinary BPT is flat 30% across sizes; old 10%/15% tiers superseded for that opened period. Specialist oil/mining/insurance outside scope, no current-law rollover."
+    },
+    {
+      "id": 20,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:22",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "FY 2024/25 opened ordinary BPT is flat 30% across sizes; old 10%/15% tiers superseded for that opened period. Specialist oil/mining/insurance outside scope, no current-law rollover."
+    },
+    {
+      "id": 21,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Taxable-profit computation expanded with costs, capital, representation, bad debts, losses and credits."
+    },
+    {
+      "id": 22,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:24",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Body 20% versus schedule investment-rental 30% conflict preserved; no unverified restriction to real-estate-only businesses selected."
+    },
+    {
+      "id": 23,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened 4% advance preserved with credit/settlement conditions; no universal exemption/base conclusion."
+    },
+    {
+      "id": 24,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:26",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Unaudited sole-proprietor fixed turnover schedule retained with conditions, moved out of ordinary company BPT."
+    },
+    {
+      "id": 25,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:27",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Unaudited sole-proprietor fixed turnover schedule retained with conditions, moved out of ordinary company BPT."
+    },
+    {
+      "id": 26,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:28",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Unaudited sole-proprietor fixed turnover schedule retained with conditions, moved out of ordinary company BPT."
+    },
+    {
+      "id": 27,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:29",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Unaudited sole-proprietor fixed turnover schedule retained with conditions, moved out of ordinary company BPT."
+    },
+    {
+      "id": 28,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:30",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "10% opened schedule preserved; old final-tax claim corrected by FY 2024/25 replacement s.96. Interaction with retained exemptions unresolved."
+    },
+    {
+      "id": 29,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:31",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "10% opened schedule preserved; old final-tax claim corrected by FY 2024/25 replacement s.96. Interaction with retained exemptions unresolved."
+    },
+    {
+      "id": 30,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:32",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened royalties, rent/ancillary, or mobile-money-dealer withholding retained, with payer/payment scope and current-law stop gate."
+    },
+    {
+      "id": 31,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:33",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened royalties, rent/ancillary, or mobile-money-dealer withholding retained, with payer/payment scope and current-law stop gate."
+    },
+    {
+      "id": 32,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:34",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Resident 15% / nonresident 20% retained only for government contracts; historical change from 5% not separately certified."
+    },
+    {
+      "id": 33,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:35",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Resident 15% / nonresident 20% retained only for government contracts; historical change from 5% not separately certified."
+    },
+    {
+      "id": 34,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:36",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened royalties, rent/ancillary, or mobile-money-dealer withholding retained, with payer/payment scope and current-law stop gate."
+    },
+    {
+      "id": 35,
+      "source": "skills/south-sudan/ss-corporate-income-tax.md:37",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Corrected old fiscal-year assertion to calendar tax period and 1 April annual deadline; advance dates retained."
+    },
+    {
+      "id": 36,
+      "source": "skills/south-sudan/ss-income-tax.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 37,
+      "source": "skills/south-sudan/ss-income-tax.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 38,
+      "source": "skills/south-sudan/ss-income-tax.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 39,
+      "source": "skills/south-sudan/ss-income-tax.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 40,
+      "source": "skills/south-sudan/ss-income-tax.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 41,
+      "source": "skills/south-sudan/ss-income-tax.md:24",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 42,
+      "source": "skills/south-sudan/ss-income-tax.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 43,
+      "source": "skills/south-sudan/ss-income-tax.md:26",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 44,
+      "source": "skills/south-sudan/ss-income-tax.md:27",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "All five monthly taxable-wage brackets preserved from actual FY 2024/25 enactment, not assumed gross-wage exemptions."
+    },
+    {
+      "id": 45,
+      "source": "skills/south-sudan/ss-income-tax.md:29",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old historical equality with FY 2023/24 not independently certified; actual FY 2024/25 table is reproduced directly."
+    },
+    {
+      "id": 46,
+      "source": "skills/south-sudan/ss-income-tax.md:30",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Domicile OR 183 days in any calendar tax period; exact alternatives preserved."
+    },
+    {
+      "id": 47,
+      "source": "skills/south-sudan/ss-income-tax.md:31",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "South Sudan-source scope retained; withholding route and multi-employer/current method qualifications in payroll Guide."
+    },
+    {
+      "id": 48,
+      "source": "skills/south-sudan/ss-income-tax.md:32",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Monthly wage withholding retained; 15-day month-end deadline supplemented by >SSP 300,000 five-business-day acceleration."
+    },
+    {
+      "id": 49,
+      "source": "skills/south-sudan/ss-income-tax.md:33",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Monthly wage withholding retained; 15-day month-end deadline supplemented by >SSP 300,000 five-business-day acceleration."
+    },
+    {
+      "id": 50,
+      "source": "skills/south-sudan/ss-income-tax.md:34",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Conflicting rental-income body/schedule rates and deductions, taxpayer scope unresolved. No universal 30% landlord rule."
+    },
+    {
+      "id": 51,
+      "source": "skills/south-sudan/ss-payroll-social.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 52,
+      "source": "skills/south-sudan/ss-payroll-social.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 53,
+      "source": "skills/south-sudan/ss-payroll-social.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 54,
+      "source": "skills/south-sudan/ss-payroll-social.md:18",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "PIT wage bands have one owner; payroll wage inclusions, approved pension cap, principal employer and withholding route remain in payroll Guide."
+    },
+    {
+      "id": 55,
+      "source": "skills/south-sudan/ss-payroll-social.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Monthly rule retained with accelerated remittance and statutory trigger; old approximate wording replaced."
+    },
+    {
+      "id": 56,
+      "source": "skills/south-sudan/ss-payroll-social.md:20",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 57,
+      "source": "skills/south-sudan/ss-payroll-social.md:21",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 58,
+      "source": "skills/south-sudan/ss-payroll-social.md:22",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 59,
+      "source": "skills/south-sudan/ss-payroll-social.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 60,
+      "source": "skills/south-sudan/ss-payroll-social.md:24",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 61,
+      "source": "skills/south-sudan/ss-payroll-social.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 62,
+      "source": "skills/south-sudan/ss-payroll-social.md:26",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-payroll-social.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old employer 17%, employee 8%, total 25%, gross-salary base/caps, all-employer registration, monthly remittance and rate-setting authority remain explicitly unconfirmed. Official ministry pages and historical pension circular do not establish operative 2026 contribution law."
+    },
+    {
+      "id": 63,
+      "source": "skills/south-sudan/ss-tax-overview.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 64,
+      "source": "skills/south-sudan/ss-tax-overview.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 65,
+      "source": "skills/south-sudan/ss-tax-overview.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Source hierarchy and actual 25 Nov enactment / 2 Dec circular dates retained with source-chain stop gate."
+    },
+    {
+      "id": 66,
+      "source": "skills/south-sudan/ss-tax-overview.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Official SSRA source map and filing guidance retained; current administrative route must be checked."
+    },
+    {
+      "id": 67,
+      "source": "skills/south-sudan/ss-tax-overview.md:20",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "SSP reporting and prevailing-market-rate translation under actual s.25 preserved."
+    },
+    {
+      "id": 68,
+      "source": "skills/south-sudan/ss-tax-overview.md:21",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Corrected fiscal-year conflation: tax period is calendar year; example separates July\u2013June records."
+    },
+    {
+      "id": 69,
+      "source": "skills/south-sudan/ss-tax-overview.md:22",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-cross-border.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Resident worldwide / nonresident source retained with person-specific residence alternatives."
+    },
+    {
+      "id": 70,
+      "source": "skills/south-sudan/ss-tax-overview.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Top 20% and full five bands preserved with opened period."
+    },
+    {
+      "id": 71,
+      "source": "skills/south-sudan/ss-tax-overview.md:24",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Ordinary flat 30% opened FY 2024/25 replaces obsolete size-tier caveat."
+    },
+    {
+      "id": 72,
+      "source": "skills/south-sudan/ss-tax-overview.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Sales-tax baseline retained; no current VAT-negative or single 20% headline selected because later chain and source conflict remain open."
+    },
+    {
+      "id": 73,
+      "source": "skills/south-sudan/ss-tax-overview.md:26",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Sales-tax baseline retained; no current VAT-negative or single 20% headline selected because later chain and source conflict remain open."
+    },
+    {
+      "id": 74,
+      "source": "skills/south-sudan/ss-tax-overview.md:27",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-corporate-income-tax.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Old blanket 10% CGT not established; business-gain treatment and special category disposal rules retained; other gain categories require classification."
+    },
+    {
+      "id": 75,
+      "source": "skills/south-sudan/ss-tax-overview.md:28",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-tax-overview.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Monthly/annual jobs routed to owners; actual dates and acceleration supplied, no completed filing claimed."
+    },
+    {
+      "id": 76,
+      "source": "skills/south-sudan/ss-vat-gst.md:13",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 77,
+      "source": "skills/south-sudan/ss-vat-gst.md:15",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Rebuilt into the common nine-section format; the subject remains in this Guide or the linked single-owner job below."
+    },
+    {
+      "id": 78,
+      "source": "skills/south-sudan/ss-vat-gst.md:17",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened Act is sales-tax legislation. The old categorical no-operational-VAT statement is not certified for 2026 without later-law chain."
+    },
+    {
+      "id": 79,
+      "source": "skills/south-sudan/ss-vat-gst.md:18",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Historical scope retained; body 20% / produced 1\u201320% versus replacement schedule 18%, and valuation conflict, stop final rate selection."
+    },
+    {
+      "id": 80,
+      "source": "skills/south-sudan/ss-vat-gst.md:19",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Historical scope retained; body 20% / produced 1\u201320% versus replacement schedule 18%, and valuation conflict, stop final rate selection."
+    },
+    {
+      "id": 81,
+      "source": "skills/south-sudan/ss-vat-gst.md:20",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Historical scope retained; body 20% / produced 1\u201320% versus replacement schedule 18%, and valuation conflict, stop final rate selection."
+    },
+    {
+      "id": 82,
+      "source": "skills/south-sudan/ss-vat-gst.md:21",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "15th following-month producer/service and import-time rules expanded; current form unconfirmed."
+    },
+    {
+      "id": 83,
+      "source": "skills/south-sudan/ss-vat-gst.md:22",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Input-credit and reverse-charge blanket negatives not confirmed; explicit unresolved items rather than a fabricated current VAT conclusion."
+    },
+    {
+      "id": 84,
+      "source": "skills/south-sudan/ss-vat-gst.md:23",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Exact opened commodity categories and excise rates retained; no blanket vehicle rate or full current tariff claimed."
+    },
+    {
+      "id": 85,
+      "source": "skills/south-sudan/ss-vat-gst.md:25",
+      "source_line_exists": true,
+      "destination": "skills/south-sudan/ss-vat-gst.md",
+      "destination_exists_in_freeze": true,
+      "disposition": "Opened Act is sales-tax legislation. The old categorical no-operational-VAT statement is not certified for 2026 without later-law chain."
+    }
+  ],
+  "independent_example_recomputations": [
+    {
+      "guide": "ss-tax-overview",
+      "case": "late filing",
+      "results": {
+        "three_months": 15000.000000000002,
+        "seven_months": 25000.0
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-tax-overview",
+      "case": "calendar buckets",
+      "results": {
+        "total": 140000,
+        "2025_known": 60000,
+        "2026_known": 80000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-income-tax",
+      "case": "wage bands",
+      "results": {
+        "pit": 9650.0
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-income-tax",
+      "case": "turnover boundary",
+      "results": {
+        "turnover_delta": 1,
+        "charge_delta": 400000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-corporate-income-tax",
+      "case": "representation",
+      "results": {
+        "deduction": 20000.0,
+        "profit": 380000,
+        "bpt": 114000.0
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-corporate-income-tax",
+      "case": "credits",
+      "results": {
+        "balance": 60000,
+        "excess": 20000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-payroll-social",
+      "case": "pension cap",
+      "results": {
+        "cap": 5000.0,
+        "deduction": 5000,
+        "excess": 3000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-payroll-social",
+      "case": "remittance branch",
+      "results": {
+        "a_exceeds": false,
+        "b_exceeds": true
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-vat-gst",
+      "case": "service-rate sensitivity",
+      "results": {
+        "body": 20000.0,
+        "schedule": 18000.0,
+        "difference": 2000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-vat-gst",
+      "case": "valuation sensitivity",
+      "results": {
+        "inclusive_base": 115000,
+        "schedule_base": 100000,
+        "base_delta": 15000,
+        "tax_delta": 2700.0
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-transfer-pricing",
+      "case": "CUP revenue",
+      "results": {
+        "booked": 80000,
+        "supported": 100000,
+        "adjustment": 20000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-transfer-pricing",
+      "case": "association limb",
+      "results": {
+        "49_meets_50": false,
+        "50_meets_50": true
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-cross-border",
+      "case": "presence limb",
+      "results": {
+        "days_a": 183,
+        "days_b": 182,
+        "shortfall_b": 1
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-cross-border",
+      "case": "foreign-credit ceiling",
+      "results": {
+        "foreign": 120000.0,
+        "domestic": 100000.0,
+        "ceiling": 100000
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-company-formation",
+      "case": "joint-member decision",
+      "results": {
+        "count_a": 1,
+        "count_b": 2,
+        "shortfall_a": 1
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    },
+    {
+      "guide": "ss-company-formation",
+      "case": "shares",
+      "results": {
+        "capital": 100000,
+        "allocated": 100,
+        "unallocated": 0
+      },
+      "matches_prose": true,
+      "does_not_establish_2026_applicability": true
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "skills/south-sudan/ss-company-formation.md",
+        "skills/south-sudan/ss-corporate-income-tax.md",
+        "skills/south-sudan/ss-cross-border.md",
+        "skills/south-sudan/ss-income-tax.md",
+        "skills/south-sudan/ss-payroll-social.md",
+        "skills/south-sudan/ss-tax-overview.md",
+        "skills/south-sudan/ss-transfer-pricing.md",
+        "skills/south-sudan/ss-vat-gst.md",
+        "--require"
+      ],
+      "returncode": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "f494e992b8dc888530c2998ac9aba0e6db29aaab"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "production_cas": "not run; authentic content_revision unavailable",
+  "disposition": "changes requested: F1; no operative 2026 or country-complete acceptance"
+}

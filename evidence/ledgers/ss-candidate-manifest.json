@@ -1,0 +1,100 @@
+{
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "branch": "codex/south-sudan-tax-2026",
+  "candidate_scope": "eight Guide source-baseline pack; all seven domains partial, independent review pending",
+  "frozen_commit": "reported separately after commit to avoid a self-referential commit token",
+  "files": {
+    "evidence/ledgers/ss-company-formation.md": {
+      "sha256": "3085035ac77f5efd937d5f129ffa55558adc1c3a2af52f05913ca71d6ca15822",
+      "bytes": 5040
+    },
+    "evidence/ledgers/ss-corporate-income-tax.md": {
+      "sha256": "79aecb8e6d9277bcacc899dad7fd12fdb3ca2f9585413335839d0dda8cb6e5d3",
+      "bytes": 7285
+    },
+    "evidence/ledgers/ss-cross-border.md": {
+      "sha256": "66ec5b100e930afc1d9207c5936761be4738f2370d0dd777d4ee32f67e401764",
+      "bytes": 8354
+    },
+    "evidence/ledgers/ss-income-tax.md": {
+      "sha256": "4d92e8bb197818ef738bd084d143c58fea8bb1bd972db0b2b69db167425b743f",
+      "bytes": 6988
+    },
+    "evidence/ledgers/ss-old-topic-destinations.md": {
+      "sha256": "c64429151182ae81442623daa838ca201301db8ddcc059211438f4cc859b1818",
+      "bytes": 34721
+    },
+    "evidence/ledgers/ss-payroll-social.md": {
+      "sha256": "60e909580628b7c9314e140ea1f84037ab364b461671eff40c3f62d4ceb28f4b",
+      "bytes": 4912
+    },
+    "evidence/ledgers/ss-preservation.json": {
+      "sha256": "4a472b72cf6909a0d023d823d5d8614a6e6bccba0ca6486afaa7bd89e13362fd",
+      "bytes": 2489
+    },
+    "evidence/ledgers/ss-source-manifest.json": {
+      "sha256": "70f3611f2c59b1035f533d1f91a5fb589dad0519eab3e35a4f37650ac05aaef6",
+      "bytes": 7889
+    },
+    "evidence/ledgers/ss-source-read-record.md": {
+      "sha256": "7eb3a88dfcde282262f2ad7b6b1ef960a1fb4037181f7bdb98ae9d07501dd952",
+      "bytes": 10529
+    },
+    "evidence/ledgers/ss-tax-overview.md": {
+      "sha256": "28ed0dfa0a7999aaa666070bca3f097fb637edd041f7c5ee1c546af51de7acfb",
+      "bytes": 4782
+    },
+    "evidence/ledgers/ss-transfer-pricing.md": {
+      "sha256": "2ff0952b3755f12e4ced64d9b09ecc2b28bfccd0c15b6e736cecd9ad016d47a0",
+      "bytes": 2598
+    },
+    "evidence/ledgers/ss-vat-gst.md": {
+      "sha256": "686e63619cf1cf65d952d40dfbdb94abd1561c529617dda933807a37ebde4a20",
+      "bytes": 3656
+    },
+    "evidence/ledgers/ss-writer-checks.json": {
+      "sha256": "60cf8e2ac6cb459d7a038a25815f32113f96440d713928a6ad1e12f59b957ef8",
+      "bytes": 8057
+    },
+    "evidence/ledgers/ss-writer-checks.md": {
+      "sha256": "e4a819a89326cc7387081a60f3b8c867b18574e9950807578b2f9e4ed88dae41",
+      "bytes": 2630
+    },
+    "skills/south-sudan/README.md": {
+      "sha256": "9608f299c80ae667b31a2de72dcf184570250c4abc7efb90add183ed58bc168a",
+      "bytes": 4587
+    },
+    "skills/south-sudan/ss-company-formation.md": {
+      "sha256": "cf8eda263dd9dfc6a8775e5d699c40fe6d73cba0c801d0206b866a50376b3c15",
+      "bytes": 14496
+    },
+    "skills/south-sudan/ss-corporate-income-tax.md": {
+      "sha256": "e5dfabc11e7536f4c8c23c7d75d533e7d1cb1f27708e370ca31209983f95a59b",
+      "bytes": 13862
+    },
+    "skills/south-sudan/ss-cross-border.md": {
+      "sha256": "bd955fe3d427dd84b8604869217989f4269a68c9352b0d6a33283d7d7d3a8207",
+      "bytes": 15160
+    },
+    "skills/south-sudan/ss-income-tax.md": {
+      "sha256": "9fc42daf299560e39e94b43acd79345da1fb35bab6851117cd628144f1c64935",
+      "bytes": 13673
+    },
+    "skills/south-sudan/ss-payroll-social.md": {
+      "sha256": "6aabfe8e57c2cb04b4825a21e58ec0850ee7d2fd2502fa6ee6ec20004bcd8954",
+      "bytes": 12790
+    },
+    "skills/south-sudan/ss-tax-overview.md": {
+      "sha256": "30ce023b6c78f4c78b77702abd7c193435bee4c747c2d5276dbabaf50ef5e114",
+      "bytes": 14222
+    },
+    "skills/south-sudan/ss-transfer-pricing.md": {
+      "sha256": "4bd3f346f345257c4c93b37f1e1ef4e3a5942f22d6b7693bddefdce392986926",
+      "bytes": 10332
+    },
+    "skills/south-sudan/ss-vat-gst.md": {
+      "sha256": "24fe314c07152afd7ac2d989b260bba0e423baa5dd2c95576c63e8209f8abda2",
+      "bytes": 13311
+    }
+  }
+}

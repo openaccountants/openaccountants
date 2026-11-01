@@ -1,0 +1,12 @@
+{
+  "reviewed_freeze": "f494e992b8dc888530c2998ac9aba0e6db29aaab",
+  "disposition": "changes requested, F1",
+  "finding_count": 1,
+  "new_files_only": true,
+  "files": {
+    "evidence/ledgers/south-sudan-review-20261101/review-checks.json": "fe2022ea7609ade2f8e8e76b0897bb8eb44af704607d420faa4aac93032c0402",
+    "evidence/ledgers/south-sudan-review-20261101/review-checks.py": "366f3e88705f0fc3163cc521e9a0752b2bfd379da7f889f56b548bdf2becd85c",
+    "evidence/ledgers/south-sudan-review-20261101/review.md": "cb4638d4527ea5f46f362c3e60e2bf2191b4558a839a149e75280e9cd61f1afe",
+    "evidence/ledgers/south-sudan-review-20261101/scoped-validation.json": "5a3ac1f1fc7965595df8072a00cd3b7770c12175abebfe8bba1e52812d716e58"
+  }
+}
