@@ -1,6 +1,6 @@
 ---
 name: mozambique-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Mozambique VAT (IVA) return. Standard rate 16%, reduced 5%. ISPC simplified regime for small taxpayers. Portuguese-language terminology. ALWAYS read before handling Mozambique IVA work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Mozambique VAT (IVA) return. ISPC simplified regime for small taxpayers. Portuguese-language terminology. ALWAYS read before handling Mozambique IVA work.
 version: 2.1
 jurisdiction: MZ
 tax_year: 2026
@@ -48,16 +48,20 @@ Before 2026, a valid invoice is in Portuguese and meticais, dated, sequentially 
 | AT, AUTORIDADE TRIBUTARIA | EXCLUDE | Tax payment |
 | ALFANDEGAS, CUSTOMS | Check for import IVA |  |
 | INSS | EXCLUDE | Social security |
-| EDM, ELECTRICIDADE | Domestic 16% | Electricity |
-| FIPAG | Domestic 16% | Water |
-| VODACOM MZ, TMCEL, MOVITEL | Domestic 16% | Telecoms |
-| GOOGLE, MICROSOFT, AWS | Autoliquidacao 16% | Non-resident |
+| EDM, ELECTRICIDADE | Domestic, standard rate | Electricity |
+| FIPAG | Domestic, standard rate | Water |
+| VODACOM MZ, TMCEL, MOVITEL | Domestic, standard rate | Telecoms |
+| GOOGLE, MICROSOFT, AWS | Autoliquidacao | Non-resident |
 
 ### Classification rules
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 - **Standard rate classification** , 16% standard. 5% reduced (private health/education). 0% exports. Exempt: basic foodstuffs, financial, medical (public), education (public), residential rental, public transport, agricultural inputs.
 - **ISPC classification** , ISPC: 3% of gross turnover for businesses below MZN 2,500,000. No IVA charged, no input recovery.
 
 ### IVA return form
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Output: Lines 1-8 (16% sales, exempt, exports, total, IVA liquidado, autoliquidacao, adjustments, total).
 
 Input: Lines 9-14 (local, imports, autoliquidacao input, capital goods, exclusions, total deductible).
@@ -65,13 +69,19 @@ Input: Lines 9-14 (local, imports, autoliquidacao input, capital goods, exclusio
 Net: Lines 15-17 (net, credit transitado, payable/credit).
 
 ### Reverse charge (autoliquidacao)
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 - **Non-resident services reverse charge** , Non-resident services: self-assess 16%. Net zero.
 
 ### Deductibility and blocked input
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 - **Blocked input VAT** , Blocked: vehicles < 9 seats, entertainment, personal use, fuel for blocked vehicles, invoices without NUIT.
 - **Prorata deduction** , Prorata deduction rule applies.
 
 ### Edge cases, test suite, and escalation
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Autoliquidacao 16%. Net zero.
 
 Zero-rated. Input recoverable.

@@ -41,6 +41,8 @@ Employers paying employees in Mozambique. Employers withhold on dependent-work i
 Withholding is an advance on annual IRPS. The worker's Modelo 11 sets the family situation used for the table (AT FAQ). The old skill's RSM-sourced monthly floor of MZN 20,249.99 and band figures are not kept as fact; AT's 2014 booklet shows a MZN 20,250 salary with no final tax, under old deductions.
 
 ### Transaction / Payment Pattern Library (deterministic)
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Classify bank-statement lines deterministically. Match case-insensitively; longest / most-specific pattern wins.
 
 #### Salary credits (money arriving in an employee account)
@@ -72,15 +74,16 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 | Question | Why it needs a reviewer |
 | --- | --- |
 | Full monthly PAYE per-cell deduction matrix (income × dependents) | Published PDF rendered only partial cell values |
-| Exact 25%/32% annual deduction constants | Published bracket edges do not tie under subtract method |
 | Reconciliation of 0% monthly floor vs annual assessment for sub-floor earners | Monthly table and annual scale diverge |
-| Residency determination under Lei 11/2025 | 180-day test removed; now facts-and-circumstances |
+| Residency determination under Lei 11/2025 | Reported change, law unread |
 | INSS applicability to non-residents / expats | Depends on foreign-scheme coverage proof |
 | Exact statutory penalty amounts (late M/19, late INSS) | Not cleanly extractable from primary law |
 | Whether a given bonus is "regular" (INSS base) or "irregular" (excluded) | Fact-specific characterisation |
-| 2026 INSS rate revision (if any) | Current authoritative figure is the 2024 INSS Note, still in force per  |
+| 2026 INSS rate revision (if any) | INSS rates were not confirmed on an opened official page |
 
 ### Excel Working Paper Template
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Suggested layout (one row per employee per month):
 
 **Excel Working Paper Template columns**
@@ -95,17 +98,19 @@ Suggested layout (one row per employee per month):
 | F | Employer INSS 4% | `=D*4%` |
 | G | Below PAYE floor? | `=IF(D<=20249.99,TRUE,FALSE)` |
 | H | Annual taxable (resident) | `=MAX(0,(D-E)*12)` |
-| I | Annual IRPS (resident) | nested IF on H using  deductions (,/2,100/10,500/37,500/141,540) |
+| I | Annual IRPS (resident) | nested IF on H using parcelas 0/2,100/10,500/35,700/141,540 |
 | J | Monthly IRPS (resident est.) | `=IF(B="N", D*20%, IF(G, 0, I/12))` |
 | K | Employee deductions | `=E+J` |
 | L | Net pay | `=D-K` |
 | M | Total employer cost | `=D+F` |
 
-- **Resident annual-IRPS formula (column I)** , =IF(H<=42000, H*0.10, IF(H<=168000, H*0.15-2100, IF(H<=504000, H*0.20-10500, IF(H<=1512000, H*0.25-37500, H*0.32-141540))))
+- **Resident annual-IRPS formula (column I)** , =IF(H<=42000, H*0.10, IF(H<=168000, H*0.15-2100, IF(H<=504000, H*0.20-10500, IF(H<=1512000, H*0.25-35700, H*0.32-141540))))
 
 > The column-J `IF(G,0,...)` 0%-floor shortcut and the resident annual-÷12 estimate are stand-ins for the **operative monthly PAYE matrix**, which must replace them once the full per-cell table is transcribed. **[RESEARCH GAP , reviewer to confirm.]**
 
 ### Bank Statement / Terminology Reading Guide
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 **Terminology reading guide**
 
 | Portuguese term | English / meaning |
@@ -132,12 +137,14 @@ If the engagement lacks key data:
 
 1. **No prior payroll register available** → request the last 3 months of folhas salariais and INSS/AT (M/19) receipts to back-solve the rates and PAYE cells actually applied.
 2. **Unknown dependents** → default **0 dependents**, FLAG; confirm before first remittance.
-3. **Unknown residency** → gather presence / economic-interest evidence under Lei 11/2025; do not assume the resident table without it.
+3. **Unknown residency** → gather presence and economic-interest evidence; do not assume the resident table without it.
 4. **Unknown sector / min-wage band** → use the relevant 2025 sectoral figure only as a sanity check, never as the contractual wage; obtain the employee's contract.
 5. **Expat employee** → confirm whether foreign-scheme coverage is proven before deciding INSS applicability; request the INSS exemption confirmation if claimed.
-6. **Full monthly PAYE matrix needed** → obtain the official AT table /  matrix before computing 10%-20% band withholding precisely.
+6. **Full monthly PAYE matrix needed** → obtain the official AT table before computing 10%-20% band withholding precisely.
 
 ### Test Suite
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Each test recomputes end-to-end. Resident IRPS via the annual table (÷12) per the estimation method; INSS employee 3% / employer 4%, no ceiling.
 
 Agriculture min-wage earner. Salary 6,688/mo, resident, 0 deps. Expected: IRPS PAYE 0.00 (below floor); employee INSS 200.64; net 6,487.36; employer cost 6,955.52.
@@ -146,7 +153,7 @@ Financial-sector min-wage earner. Salary 19,043.61/mo, resident. Expected: IRPS 
 
 Mid earner (20% band). Salary 30,000/mo, resident, 0 deps. Annual taxable 349,200.00; annual IRPS 59,340.00; monthly IRPS 4,945.00; net 24,155.00.
 
-Higher earner (25% band). Salary 60,000/mo, resident. Annual taxable 698,400.00; annual IRPS 137,100.00; monthly IRPS 11,425.00; net 46,775.00.
+Higher earner (25% band). Salary 60,000/mo, resident. Annual taxable 698,400.00; annual IRPS 138,900.00; monthly IRPS 11,575.00; net 46,625.00.
 
 Top-band earner (32%). Salary 150,000/mo, resident. Annual taxable 1,746,000.00; annual IRPS 417,180.00; monthly IRPS 34,765.00; net 110,735.00.
 

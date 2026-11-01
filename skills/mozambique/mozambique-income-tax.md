@@ -46,7 +46,9 @@ Tax = taxable income x band rate, less parcela a abater, then less deductions fr
 Second-category income before 2026: organised accounts above MZN 2,500,000 turnover; below that, coefficients of 0.2 on sales of goods and on accommodation, restaurants and drinks, and 0.3 on other income (https://web.archive.org/web/20251205212815/http://www.at.gov.mz/por/Perguntas-Frequentes2/IRPS). The 2026 position is unconfirmed; see Sources. Dismissal compensation due under the law with just cause is not taxed (CIRPS art. 6(d), same page).
 
 ### Transaction Pattern Library
-Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears on the bank statement (Portuguese terms common in MZ). Most specific match wins. If none match, fall through to Tier 1 rules (Section 5). Terms are in Portuguese as they appear in Mozambican statements.
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
+Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears on the bank statement (Portuguese terms common in MZ). Most specific match wins. If none match, fall through to the rates and base above. Terms are in Portuguese as they appear in Mozambican statements.
 
 #### 3.1 Income Patterns (Credits)
 
@@ -54,13 +56,13 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 
 | Pattern | Category | Treatment | Notes |
 | --- | --- | --- | --- |
-| SALÁRIO, ORDENADO, VENCIMENTO, REMUNERAÇÃO | 1st category (employment) | PAYE income | Subject to monthly PAYE 0%-32% |
+| SALÁRIO, ORDENADO, VENCIMENTO, REMUNERAÇÃO | 1st category (employment) | PAYE income | Subject to monthly withholding |
 | SUBSÍDIO (regular) | 1st category | Employment income | Regular subsidies in IRPS base; meal subsidy excluded from INSS base |
 | HONORÁRIOS, PRESTAÇÃO DE SERVIÇOS, FACTURA, RECIBO | 2nd category (business/professional) | Self-employment income | Organized accounting required |
-| COMISSÃO, COMISSÕES | 2nd category | Commission income | E-money agent commissions: 10% final WHT from 2026 (Section 11) |
-| RENDA RECEBIDA, ARRENDAMENTO | Property/rental income | Same scale | Rental income on the IRPS scale |
-| JUROS RECEBIDOS, JUROS | Investment income | Same scale | Interest income |
-| DIVIDENDOS | Investment income | Same scale | Dividend income |
+| COMISSÃO, COMISSÕES | 2nd category | Commission income | E-money agent commissions: reported 2026 change, unread |
+| RENDA RECEBIDA, ARRENDAMENTO | Property/rental income | See Rates table | Withholding rate pre-2026 |
+| JUROS RECEBIDOS, JUROS | Investment income | Check 2026 treatment | Interest income |
+| DIVIDENDOS | Investment income | Check 2026 treatment | Dividend income |
 | REEMBOLSO IMPOSTO, RESTITUIÇÃO AT | EXCLUDE | Not income | Tax refund from prior year |
 
 #### 3.2 Expense Patterns (Debits) -- 2nd Category, Fully Deductible
@@ -107,7 +109,7 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| INSS, SEGURANÇA SOCIAL | INSS contribution | Employer remits 7% (3% employee + 4% employer) |
+| INSS, SEGURANÇA SOCIAL | INSS contribution | Employer remits both shares; rates unverified |
 | PAGAMENTO POR CONTA, PPC | Advance payment | Credit against final IRPS, not an expense |
 | TRANSFERÊNCIA INTERNA, CONTA PRÓPRIA | EXCLUDE | Own-account transfer |
 | EMPRÉSTIMO, REEMBOLSO EMPRÉSTIMO | EXCLUDE | Loan principal movement |
@@ -139,24 +141,26 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 
 #### 6.4 INSS Payment Deadline Conflict
 
-[RESEARCH GAP , reviewer to confirm] The INSS official site states the remittance window runs from the 20th of the current month to the 10th of the following month;  states contributions are due by the 15th of the following month. The INSS site is the primary authority , default to the 10th and flag for the reviewer to resolve against INSS legislation. Sources: INSS , https://www.inss.gov.mz/duvidas/ ;  , 
+RSSO art. 14 sets the window: 20th of the reference month to the 10th of the next. Use the 10th. See mozambique-social-contributions.
 
 #### 6.5 ISPC vs Organized Accounting (2026 transition)
 
-- **ISPC vs organized accounting** , ISPC (simplified) and exemption regimes are abolished for IRPS from 2026 (Law 11/2025). Affected taxpayers move to organized accounting. Flag for reviewer: confirm the taxpayer's current regime status against AT before applying ISPC for any 2026 period.
+- **ISPC vs organized accounting** , Secondary commentary reports that Law 11/2025 ends the simplified and exemption regimes for IRPS; the law was not read. Flag for reviewer: confirm the taxpayer's current regime status against AT before applying ISPC for any 2026 period.
 
 #### 6.6 Residency Reclassification (2026)
 
-- **Residency reclassification** , Law 11/2025 may make foreign workers resident regardless of days present (Section 11). Flag for reviewer: confirm residency under the new test for any 2026 computation.
+- **Residency reclassification** , Secondary commentary reports a new residence test under Law 11/2025; the law was not read. Flag for reviewer: confirm residency under the new test for any 2026 computation.
 
 #### 6.7 Survival of Personal/Dependent Deductions (2026)
 
 Whether the MZN 1,800 personal deduction and dependent deductions survive Law 11/2025 is not confirmed. Flag for reviewer before relying on them for 2026.
 
 ### Excel Working Paper Template
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 ```
 MOZAMBIQUE IRPS -- WORKING PAPER (MZN)
-Tax Year: 2025
+Tax Year: 2026
 Client: ___________________________
 Residency: Resident / Non-resident
 Income category: 1st (employment) / 2nd (business) / Other
@@ -185,11 +189,11 @@ C. TAXABLE INCOME (A5 - B10)                       ___________
 
 D. IRPS COMPUTATION (pass to deterministic engine)
   Resident: tax = (C × bracket rate) − parcela a abater
-  Non-resident: tax = C × 20%
+  Non-resident: tax = C × 20% (pre-2026 text)
   D1. Gross IRPS                                    ___________
 
 E. COLLECTION DEDUCTIONS (resident only)
-  E1. Personal deduction (MZN 1,800)               ___________
+  E1. Personal deduction (amount unverified)       ___________
   E2. Dependent deduction (per table)              ___________
   E3. Double-taxation relief credit                ___________
   E4. TOTAL collection deductions                  ___________
@@ -199,16 +203,15 @@ F. IRPS PAYABLE (D1 - E4, not below 0)            ___________
   F2. IRPS due / refund                            ___________
 
 G. INSS (employment)
-  G1. Employee 3% of monthly salary                ___________
-  G2. Employer 4% of monthly salary                ___________
-  G3. Total 7% remitted by employer                ___________
+  G1. Employee share (rate unverified)             ___________
+  G2. Employer share (rate unverified)             ___________
+  G3. Total remitted by employer                   ___________
 
 REVIEWER FLAGS:
   [ ] Residency confirmed?
   [ ] Income category confirmed?
   [ ] Dependent count confirmed?
   [ ] Home office / vehicle / telecoms % confirmed?
-  [ ] INSS payment deadline resolved (10th vs 15th)?
   [ ] ISPC/exemption regime status confirmed for 2026?
   [ ] Personal/dependent deductions confirmed for the tax year?
   [ ] Entertainment / personal items excluded?
@@ -248,10 +251,10 @@ REVIEWER FLAGS:
 ### Onboarding Fallback
 If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-1. Classify all transactions using the pattern library (Section 3).
+1. Classify all transactions using the pattern library above.
 2. Mark all Tier 2 items as "PENDING -- reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
+3. Apply the conservative defaults in the Tier 2 catalogue.
+4. Generate the working paper above with clear flags.
 5. Present the following questions:
 
 ```

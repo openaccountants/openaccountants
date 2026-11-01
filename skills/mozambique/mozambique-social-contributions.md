@@ -41,6 +41,8 @@ Employers and employees in the obligatory social security system (Lei 4/2007; Re
 Contribution = rate x remuneration in the base (RSSO art. 14). RSSO art. 15 sets no percentage; the rate sits in a separate diploma not opened. Whether the meal subsidy is outside the base, and whether a ceiling exists, is unconfirmed.
 
 ### Payment pattern library
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 Deterministic pre-classifier for Mozambican bank statement transactions. Match by case-insensitive substring on the counterparty/reference. INSS and IRPS payments always EXCLUDE from any VAT return or revenue/expense classification -- they are statutory payroll obligations, not business supplies. (Portuguese is the official language; references appear in Portuguese.)
 
 #### 3.1 INSS social-security debits
@@ -100,15 +102,15 @@ Flag these for reviewer confirmation when data is ambiguous.
 
 #### T2-3 -- Law 11/2025 residency reclassification
 
-- **T2-3** , Trigger: Worker's residency status is unclear post-29 Dec 2025. Issue: Law 11/2025 removed the 180-day test and broadened residency to main residence, professional activity, centre of economic interests, Mozambican vessel/aircraft crew, and nationals on foreign assignment not fully taxed abroad. Action: Flag for reviewer to determine resident vs non-resident treatment.
+- **T2-3** , Trigger: Worker's residency status is unclear post-29 Dec 2025. Issue: secondary commentary, unread law: Law 11/2025 removed the 180-day test and broadened residency to main residence, professional activity, centre of economic interests, Mozambican vessel/aircraft crew, and nationals on foreign assignment not fully taxed abroad. Action: Flag for reviewer to determine resident vs non-resident treatment.
 
 #### T2-4 -- Digital-service / e-money agent income
 
-- **T2-4** , Trigger: Worker earns digital-service income or electronic-money agent commissions. Issue: From Law 11/2025, these are subject to a final 10% withholding -- different from standard PAYE. Action: Flag for reviewer.
+- **T2-4** , Trigger: Worker earns digital-service income or electronic-money agent commissions. Issue: secondary commentary, unread law: these are subject to a final 10% withholding -- different from standard PAYE. Action: Flag for reviewer.
 
 #### T2-5 -- Capital gains (autonomous regime)
 
-- **T2-5** , Trigger: Individual realises capital gains. Issue: Law 11/2025 added an autonomous capital-gains regime (Art. 54-A) using the same 10%--32% schedule; such income is no longer aggregated. Action: Flag for reviewer; do not aggregate into employment IRPS.
+- **T2-5** , Trigger: Individual realises capital gains. Issue: secondary commentary, unread law: Law 11/2025 added an autonomous capital-gains regime (Art. 54-A) using the same 10%--32% schedule; such income is no longer aggregated. Action: Flag for reviewer; do not aggregate into employment IRPS.
 
 #### T2-6 -- INSS arrears / penalties
 
@@ -116,9 +118,11 @@ Flag these for reviewer confirmation when data is ambiguous.
 
 #### T2-7 -- Minimum-wage breach
 
-- **T2-7** , Trigger: Basic wage appears below the 2025 sector minimum (Section 10 table). Issue: Minimum wages are sector-specific (Decrees 87/2025--94/2025). A further revision took effect ~1 April 2026 [RESEARCH GAP -- 2026 figures not yet sourced]. Action: Flag for reviewer; payroll must comply before INSS computation.
+- **T2-7** , Trigger: Basic wage appears below the sector minimum (figures unverified). Issue: Minimum wages are sector-specific (Decrees 87/2025--94/2025). 2026 figures not sourced. Action: Flag for reviewer; payroll must comply before INSS computation.
 
 ### Excel working paper template
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 MOZAMBIQUE PAYROLL / INSS COMPUTATION -- WORKING PAPER
 Client: [name]               NUIT: [____]
 Tax Year: [year]             Prepared: [date]
@@ -155,6 +159,8 @@ RESEARCH GAPS APPLIED
   [List any [RESEARCH GAP] items relied upon]
 
 ### Bank statement reading guide
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 #### How INSS and tax debits appear on Mozambican statements
 
 **BCI (Banco Comercial e de Investimentos):**
@@ -178,9 +184,11 @@ RESEARCH GAPS APPLIED
 5. The INSS figure should reconcile to 0.07 x base; the employee share alone is 0.03 x base.
 
 ### Onboarding fallback
+> Kept from the old skill. Any rate, floor, base rule or reform point in this section is unverified until the texts under "Not yet confirmed:" are read. Do not apply it as a current figure.
+
 If the client provides only a bank statement and no other information:
 
-1. **Scan for INSS debits** -- identify outgoing payments matching Section 3.1/3.4 patterns.
+1. **Scan for INSS debits** -- identify outgoing payments matching the patterns above.
 2. **Reverse-engineer the base** -- INSS / 0.07 = contribution base (e.g. 2,100.00 / 0.07 = 30,000.00).
 3. **Separate tax from social security** -- AT/IRPS debits are income tax, not INSS; IRPC/IVA are company-level.
 4. **Flag for reviewer:** "INSS and IRPS figures derived from bank statement amounts only. Contribution base composition, residency, and sector minimum wage have not been independently verified. Reviewer must confirm before filing."
