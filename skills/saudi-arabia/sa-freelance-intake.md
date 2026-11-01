@@ -1,8 +1,8 @@
 ---
 name: sa-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help with Saudi tax/Zakat compliance and mentions freelancing, self-employment, sole establishment (mu'assasah fardiyyah), LLC, JSC, branch of a foreign company, or any commercial activity in the Kingdom of Saudi Arabia (KSA). Trigger on phrases like "Saudi tax compliance", "ZATCA registration", "Saudi VAT", "Saudi Zakat return", "MISA registration", "freelance Saudi tax", "Riyadh business", "Jeddah company tax", "Saudi corporate income tax", "SAR turnover threshold", "Fatoorah Phase 2", "GOSI registration", "Saudization Nitaqat", "Saudi withholding tax", "RETT", "real estate transaction tax Saudi", "Saudi excise tax", "Hijri vs Gregorian tax year", "mixed ownership Saudi entity", "GCC owner Zakat", "non-resident Saudi tax", or any similar phrasing where the user is operating or planning to operate a business in KSA. This is the REQUIRED entry point for the Saudi freelance/SME workflow, and every downstream skill in the stack (sa-zakat, sa-corporate-tax, sa-withholding-tax, sa-rett, sa-gosi-saudization, sa-excise-tax, sa-formation, saudi-arabia-vat, saudi-einvoice, sa-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Saudi tax/Zakat residents and foreign-owned KSA entities only. ALWAYS read this skill first when starting any Saudi freelance/SME tax or Zakat workflow.
+description: Use this Guide to collect and reconcile the facts needed for a Saudi Arabia freelance or SME tax and Zakat workflow for tax year 2026. It covers resident sole establishments, privately held companies, foreign-owned companies and branches, records ownership and fiscal periods, checks registration evidence, and identifies VAT, withholding, real estate, excise, employment and e-invoicing workstreams. Trigger on Saudi business intake, ZATCA registration, mixed ownership, MISA registration, Fatoorah or Saudi compliance. It produces a documented intake package for sa-return-assembly and a qualified Saudi reviewer. Missing facts and unconfirmed legal rules remain explicit holds; this Guide does not submit returns.
 jurisdiction: SA
-version: 1.1
+version: 1.2
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -11,101 +11,41 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# SA Freelance Intake
+# SA Freelance Intake v1.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
 
 The intake orchestrator for Saudi-resident self-employed individuals, sole establishments (mu'assasah fardiyyah), single-shareholder LLCs, multi-member LLCs, joint-stock companies (JSC), and branches of foreign companies registered with ZATCA in the Kingdom of Saudi Arabia (KSA). Every downstream Saudi content skill depends on this skill producing a structured intake package first.
 
-Job: (1) confirm taxpayer is in scope, (2) classify the regime split: Zakat vs Corporate Income Tax (CIT) vs mixed: based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA registration exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off: this skill is not the preparer of record.
+Job: establish the facts, document candidate Zakat/CIT allocation, identify the other workstreams, and hand off a package with explicit holds. Outputs go to a professional authorised for the work in Saudi Arabia. A membership name alone does not establish filing authority. Do not finalise a held tax position.
 
 
 ## Ask the client first
 
-### Section 5: Questions to ask the user
+### Section 5: Six facts that change the route
 
-Use `ask_user_input_v0`. Batch where independent.
+Use structured questions where the host supports them. Read the documents first and ask only for missing facts. These six groups preserve the earlier Q1 to Q14 topics without treating a turnover estimate or missing certificate as a legal conclusion.
 
-#### 5.1 Refusal sweep (one batched `ask_user_input_v0` call, 5 single-select questions)
+1. **Status and entity:** Where is the person resident, what business is carried on, what legal form and CR/ZATCA registrations exist, and is there a Saudi PE? Obtain residence and establishment evidence. Pre-formation goes to `sa-formation`; listed companies and special sectors go to a specialist.
+2. **Owners and investment registration:** Obtain the shareholder register, direct and indirect nationalities, percentages and any change dates. Obtain MISA registration or existing licence and the activity. Unknown ownership or MISA status is a HOLD for classification, not a deemed foreign owner or an automatic bar to filing.
+3. **Revenue and VAT:** Obtain actual monthly taxable supplies, exempt and outside-scope amounts, taxable expenses, forecasts and the VAT certificate. An estimated SAR 350,000 to 400,000 is insufficient to decide registration. HOLD that decision and route to `saudi-arabia-vat` for the current-law test.
+4. **Fiscal period and prior filings:** Obtain the registered start/end dates, actual day counts, Hijri/Gregorian basis, prior returns, payments, assessments and approvals. Do not reject a Hijri period or substitute a Gregorian year because an owner is foreign.
+5. **Payments and transactions:** Identify non-resident suppliers, lenders, licensors and service providers; obtain contracts, payment dates, Saudi-source/PE facts and treaty documents. Capture all real estate transfers, including gifts and inheritance, and all excise goods including imports, production and inventory. Route for review without assuming liability or exemption.
+6. **Employees and e-invoicing:** Capture Saudi/non-Saudi headcounts, GOSI evidence, Mudad/WPS records, actual Nitaqat result, electronic-invoice status and the taxpayer's ZATCA Phase 2 notice. Unknown status stays unknown, never deemed Red or overdue.
 
-- **Q1 KSA tax residence / CR status:** CR issued and ZATCA-registered | CR issued, not yet ZATCA-registered | Pre-formation (no CR yet) | Foreign entity with PE | Non-resident, no PE.
-- **Q2 Entity type:** Sole establishment (mu'assasah fardiyyah) | Single-shareholder LLC | Multi-member LLC | JSC (closed) | JSC (listed) | Branch of foreign company | Simple joint partnership | Not sure.
-- **Q3 Ownership nationality mix (capital):** 100% Saudi nationals | 100% GCC nationals (incl. Saudi) | 100% foreign (non-GCC) | Mixed Saudi/GCC + foreign | Not sure.
-- **Q4 2026 annual turnover (SAR):** < SAR 187,500 | SAR 187,500 to 375,000 | SAR 375,000 to 3 million | SAR 3 million - 40 million | > SAR 40 million | Not sure (infer from docs).
-- **Q5 MISA investment registration (foreign owners only):** N/A (no foreign owner) | Yes, valid MISA registration | No MISA registration yet | Expired / under renewal.
-
-**Refusal sweep routing table**
-
-| Answer | Action |
-| --- | --- |
-| Q1 CR + ZATCA-registered | continue |
-| Q1 CR but not yet ZATCA-registered | flag overdue registration; route `sa-formation` for ZATCA onboarding; continue |
-| Q1 pre-formation | **REFUSE** core intake; route `sa-formation` only |
-| Q1 foreign entity with PE | continue; force CIT route; flag PE attribution to reviewer |
-| Q1 non-resident no PE | **REFUSE**: non-residents only have WHT; refer to ZATCA-registered tax adviser |
-| Q2 sole establishment / LLC (single or multi) / JSC closed / branch | continue |
-| Q2 JSC listed | flag float-share complexity; refer to SOCPA CPA |
-| Q2 not sure | route `sa-formation` first |
-| Q3 100% Saudi / 100% GCC | Zakat-only path; route `sa-zakat` |
-| Q3 100% foreign | CIT-only path; route `sa-corporate-tax`; require MISA (Q5) |
-| Q3 mixed | split path; route both `sa-zakat` + `sa-corporate-tax` |
-| Q3 not sure | request shareholder register; defer to inference |
-| Q4 < SAR 187,500 | no VAT registration (not even voluntary); continue |
-| Q4 SAR 187,500 to 375,000 | voluntary VAT election available; ask reviewer to confirm |
-| Q4 ≥ SAR 375,000 | mandatory VAT; route `saudi-arabia-vat` + `saudi-einvoice` |
-| Q4 > SAR 40 million | monthly VAT returns; Fatoorah Phase 2 wave already passed; verify integration status |
-| Q5 N/A | continue |
-| Q5 valid MISA | continue |
-| Q5 no MISA / expired | **REFUSE** workflow for foreign-owned entity; route `sa-formation`; reviewer engages corporate counsel |
-
-#### 5.2 Secondary batched questions
-
-- **Q6 VAT registration:** Yes (TIN ending 03) | No | Voluntary | Deregistered.
-- **Q7 Employees 2026 (KSA payroll):** None | 1 to 5 | 6 to 20 | 21 to 50 | > 50.
-- **Q8 Non-Saudi vs Saudi headcount split:** All Saudi | Majority Saudi | Majority non-Saudi | All non-Saudi | N/A.
-- **Q9 Nitaqat current band:** Platinum | High Green | Medium Green | Low Green | Red | Not yet assigned | N/A.
-- **Q10 Fiscal year basis:** Gregorian calendar (1 Jan - 31 Dec) | Gregorian non-calendar | Hijri (lunar) | Not sure.
-
-**Secondary questions routing table**
-
-| Answer | Action |
-| --- | --- |
-| Q6 yes | route `saudi-arabia-vat` + `saudi-einvoice` |
-| Q6 no but Q4 ≥ SAR 375,000 | flag **VAT registration overdue**; route `saudi-arabia-vat`; reviewer to register |
-| Q7 ≥ 1 | route `sa-gosi-saudization` |
-| Q7 > 50 | flag (large-employer compliance load) |
-| Q8 majority/all non-Saudi + Q9 Red/Low Green | flag Saudization risk; recommend Nitaqat remediation plan |
-| Q9 Red | flag visa-block risk; reviewer escalation |
-| Q10 Hijri + foreign ownership | conflict: Hijri only allowed for Zakat-only; flag to reviewer; default Gregorian |
-
-#### 5.3 Withholding question
-
-- **Q11 In 2026 did you pay any non-resident (foreign) suppliers, lenders, licensors, or service providers (e.g., software licences, head-office charges, foreign consultants, foreign loans)?** Yes (specify categories) | No.
-
-Any "Yes" → route `sa-withholding-tax`. Reviewer applies treaty rates where available.
-
-#### 5.4 RETT and Excise questions
-
-- **Q12 In 2026 did you sell, transfer, or grant a long lease over any real estate in KSA?** Yes | No | Inheritance / family transfer only.
-- **Q13 Do you import, manufacture, or hold inventory of tobacco, energy drinks, soft drinks, sweetened drinks, or e-cigarettes / e-liquids?** Yes | No.
-
-Q12 "Yes" (non-inheritance) → route `sa-rett`. Q13 "Yes" → route `sa-excise-tax`.
-
-#### 5.5 Fatoorah Phase 2 access
-
-- **Q14 Fatoorah Phase 2 (Integration):** Already integrated (API live) | Notified by ZATCA, integration pending | Not yet in a wave | Not sure.
-
-"Pending" or "not sure" → flag in `open_flags`; route `saudi-einvoice` for wave verification and integration readiness.
+**Routing decision record:** For each workstream record `candidate`, `supported`, `hold` or `out_of_scope`, the facts, source and reviewer needed. A candidate route requests legal verification and computation; it is not a finding that the upstream Guide is correct. The ten named-contributor Guides have not been reviewed by this revision.
 
 ### Section 3: Required inputs
 
 Some inferred from documents, the rest gap-filled. All mandatory before handoff.
 
-- **Identity / registration:** legal name (Arabic + English), Commercial Registration (CR) number, ZATCA Tax Identification Number (TIN, 10-digit), VAT registration number (15-digit ending 03 if registered), MISA investment registration number (foreign-owned entities only), national address (Wasel).
+- **Identity / registration:** legal name (Arabic + English), Commercial Registration (CR) number, ZATCA Tax Identification Number (TIN as shown on the certificate), VAT registration number (registration number copied from the certificate if registered), MISA investment registration number (foreign-owned entities only), national address (Wasel).
 - **Entity:** sole establishment (mu'assasah fardiyyah) / single-shareholder LLC / multi-member LLC / JSC / branch of foreign company / simple joint partnership. CR issuance date. Bylaws / Articles of Association.
 - **Ownership:** complete shareholder register with nationality (Saudi national / GCC national / foreign) and ownership % each. Beneficial ownership disclosure (UBO file at ZATCA).
-- **Fiscal year:** Gregorian calendar default. Hijri election only available to Zakat-only payers (no foreign ownership). Year-end date.
+- **Fiscal year:** Capture the registered period, calendar basis, start/end dates, day counts and approvals. HOLD any change or eligibility conclusion until the applicable current rules and taxpayer evidence are verified.
 - **Revenue:** 2026 annual turnover (SAR), monthly breakdown, domestic vs export mix, exempt vs zero-rated vs standard-rated for VAT.
 - **Tax history:** prior Zakat return, prior CIT return (if applicable), prior VAT returns (monthly or quarterly), prior WHT returns, outstanding ZATCA assessments or appeals.
 - **Operational:** employee count (Saudi vs non-Saudi headcount for Nitaqat), GOSI registration status, Mudad WPS active, current Nitaqat band (Platinum / High Green / Medium Green / Low Green / Red), Fatoorah Phase 2 wave assignment.
@@ -117,16 +57,18 @@ Some inferred from documents, the rest gap-filled. All mandatory before handoff.
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Zakat, Hijri year | 2.5% of the Zakat base | 2026 | Regulations art. 15, https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf |
-| Zakat, other fiscal year | 2.5% / Hijri days x fiscal days | 2026 | same |
-| Income tax on the non-Saudi share | 20% | 2026 | ZATCA guideline, https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf |
-| WHT management fees | 20% | 2026 | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf |
-| WHT royalties; land transport; other payments | 15% | 2026 | same |
-| WHT dividends, rent, loan charges, insurance, technical and consulting services, air tickets and freight, international telecoms | 5% | 2026 | same |
+| Zakat, Hijri year | 2.5% of the applicable Zakat base for an ordinary full Hijri year | 2026 | Regulations art. 15, https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf |
+| Zakat, other fiscal year | 2.5% / actual Hijri-year days x actual fiscal-year days; commencement, cessation and mergers require arts. 14 to 15 review | 2026 | same |
+| General income tax | 20% on taxable income allocated to the non-Saudi share of a resident capital company, or the covered non-Saudi resident business / Saudi PE; special sectors excluded | 2026 | ZATCA Income Tax Guideline sections 1, 2 and 4, PDF pp. 4 to 5: https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf |
+| WHT management fees, when the scope test below is met | 20% | 2026 | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf |
+| WHT royalties; land transport within the Kingdom; residual other payments, after category/scope review | 15% | 2026 | same |
+| WHT dividends, rent, loan charges, insurance/reinsurance, technical and consulting services, air tickets or air/sea freight, international telecoms, subject to definitions and exclusions below | 5% | 2026 | same |
 | VAT monthly filing | annual supplies over SAR 40 million | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx |
 | E-invoicing Wave 25 | VAT-liable revenue over SAR 187,500 in any of 2022 to 2025; integrate by 1 February 2027 | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx |
-| VAT mandatory registration | SAR 375,000 | 2026 | unverified |
-| VAT voluntary registration | SAR 187,500 | 2026 | unverified |
+| VAT registration decision | HOLD pending current threshold and scope verification; no numeric default | 2026 | unverified |
+| VAT voluntary eligibility | HOLD; taxable expenses and non-resident rules also require review | 2026 | unverified |
+
+Apply a domestic rate only after confirming a resident payer or Saudi PE, a payment to a non-resident, a Saudi income source, the precise payment category and any PE connection, exclusion, exemption or documented treaty claim. [ZATCA WHT Guideline, sections 2 to 5](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf). The table is not a rate-selection default. Unknown category means HOLD the calculation, never choose the highest rate. Natural-person payer rules cover activity-related payments, not personal consumption. Exclusions include relevant oil/gas investment dividends and specified telecom network/roaming payments. Interbank loan returns require the specific maximum-90-day and certified-statement conditions; freight definitions exclude inbound shipping to Saudi ports. Payments connected with a recipient's Saudi PE and capital gains need the separate income-tax treatment. Read the category definition and any treaty before the rate, not after.
 
 ### Section 1: Quick reference: regime decision tree at a glance
 
@@ -147,68 +89,53 @@ Some inferred from documents, the rest gap-filled. All mandatory before handoff.
 
 Thresholds for 2026. Figures not marked to a source are listed under Not yet confirmed.
 
-#### 4.1 Residency gate: Income Tax Law (Royal Decree M/1, 1425H) art. 3; Implementing Regulations for Zakat Collection (Minister of Finance Decision 1007, 1445H, amended by Decision 1248, 1446H)
+#### 4.1 Residency and business gate
 
-- **KSA tax/Zakat resident definition**: KSA tax/Zakat resident = entity established under Saudi law with a CR, or a foreign entity with a permanent establishment (PE) in KSA. Natural persons: a resident Saudi person practising a licensed activity pays Zakat (Zakat Regulations art. 3); a non-Saudi resident natural person practising an activity in the Kingdom pays income tax (ZATCA Income Tax Guideline). Non-resident with no PE → out of scope here → REFUSE.  _(Income Tax Law (Royal Decree M/1, 1425H) art. 3; Implementing Regulations for Zakat Collection (Minister of Finance Decision 1007, 1445H, amended by Decision 1248, 1446H))_
+Establish residence rather than equating a CR or PE with residence. For Zakat, art. 4 distinguishes individuals (permanent residence plus at least 30 days, or at least 183 days) and legal persons (Saudi incorporation or principal headquarters). A foreign PE is an income-tax scope route, not proof of Saudi residence. [Zakat Regulations arts. 1, 3 to 4, PDF pp. 3 to 9](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf); [Income Tax Guideline sections 1 to 2, PDF p. 4](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf). A non-resident with no PE is outside this resident-business workflow; do not assert that WHT is their only possible liability. Capital gains and non-resident VAT need separate review, as the [WHT Guideline section 1.1.1, PDF p. 8](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) makes clear.
 
 #### 4.2 Ownership-nationality gate: the Zakat/CIT split
 
-- **Fundamental Zakat/CIT split rule**: Zakat applies to the share held by a Saudi person, and "Saudi" includes GCC nationals accorded similar treatment (Zakat Regulations arts. 1, 3). Income tax applies to shares of non-Saudi partners in resident capital companies ([ZATCA Income Tax Guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf)).
-- **Zakat rate for 100% Saudi/GCC natural-person owners**: 2.5% of the Zakat base for a Hijri year; for a fiscal year that differs, 2.5% divided by the days in the Hijri year, multiplied by the days in the fiscal year (Zakat Regulations art. 15)
-- **CIT rate for 100% foreign (non-GCC) owners**: 20% percent (general rate on taxable income; oil & hydrocarbons up to 85%, natural gas 20%: both out of scope here; foreign ownership requires MISA registration issued before CR)
-- **Mixed ownership split**: Proportional split. The Saudi/GCC share of equity attracts Zakat; the foreign share of taxable income attracts CIT. Both sa-zakat and sa-corporate-tax route. Single combined ZATCA filing covers both components.
-- **GCC corporate owners treatment**: GCC corporate owners treated as foreign for CIT/Zakat split unless ZATCA accepts look-through (case-by-case; flag to reviewer).
-- **Listed JSC treatment**: Listed JSC with free-float → proportional float treatment; out of scope here → flag to reviewer.
+For an ordinary resident privately held capital company, identify the Saudi share under Zakat Regulations arts. 1 and 3 and the non-Saudi share under Income Tax Guideline sections 1 to 2. "Saudi" includes GCC nationals accorded similar treatment. Route the applicable share to `sa-zakat` or `sa-corporate-tax`; mixed ownership requires separate supported bases and allocation, not one base used twice. [Zakat Regulations](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf); [Income Tax Guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf). Natural-person business status requires its own residence/activity test.
 
-#### 4.3 VAT registration gate: VAT Law (Royal Decree M/113, 1438H) and VAT Implementing Regulations
+Use art. 15's rate in the table after the upstream base has been legally checked. Do not treat the rate as proof that all assets, deductions or exemptions have been tested. Ownership at year-end and changes are reviewed under art. 13. **HOLD:** indirect/GCC corporate look-through, listed founder/free-float allocation, consolidated or special-sector treatment. Do not classify an unclear GCC corporate shareholder as foreign by default. Listed companies, oil/gas, banks, insurers and special regimes need specialist review; no specialised rate is selected here.
 
-- **Mandatory VAT registration threshold (unverified)**: 375,000 SAR (annual taxable supplies in trailing-12-month window (or expected in next 12 months))  _(VAT Law (Royal Decree M/113, 1438H) and VAT Implementing Regulations)_
-- **Voluntary VAT registration range (unverified)**: 187,500 to 375,000 SAR (voluntary registration available)  _(VAT Law (Royal Decree M/113, 1438H) and VAT Implementing Regulations)_
-- **Below voluntary threshold (unverified)**: Below SAR 187,500 → no VAT registration permitted.  _(VAT Law (Royal Decree M/113, 1438H) and VAT Implementing Regulations)_
-- **Standard VAT rate**: 15% percent (since 1 July 2020. Zero-rated: exports, qualifying international transport, certain medicines/medical equipment. Exempt: financial services (margin-based), residential rental, residential real estate sales.)  _(Royal Order A/638)_
-- **VAT routing**: → Route `saudi-arabia-vat` + `saudi-einvoice` if registered or over threshold.
+#### 4.3 VAT registration gate
 
-#### 4.4 E-invoicing gate: Fatoorah (ZATCA E-Invoicing Regulation, December 2020)
+**NON-OPERATIVE HOLD:** the earlier mandatory/voluntary thresholds and rate/exemption lists are not instructions in this Guide. Obtain actual taxable supplies and expenses and the registration certificate; route to `saudi-arabia-vat` for a current-law test of resident and non-resident scope, rolling/forward periods, voluntary expense eligibility, registration dates, standard/zero/exempt treatment and the threshold itself. Do not mark registration mandatory, voluntary, forbidden or overdue from an estimated turnover band, and do not backdate a registration from the earliest plausible month. An already registered taxpayer routes to VAT reconciliation and e-invoicing review.
 
-Two phases:
+For a registered taxpayer, the current ZATCA notice distinguishes monthly supplies exceeding SAR 40 million from quarterly supplies not exceeding that amount. This is a periodicity test, not a registration threshold. [ZATCA 2026 VAT filing notice](https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx).
 
-- **Phase 1: Generation** (mandatory for all VAT-registered residents since 4 December 2021): structured electronic invoices with QR code for B2C; no integration required.
-- **Phase 2: Integration**: wave-based mandate by annual taxable revenue threshold. ZATCA issues each wave at least six months in advance. Wave 1 started 1 January 2023 (≥ SAR 3 billion revenue); subsequent waves progressively cover smaller taxpayers. Wave 25 covers taxpayers whose VAT-liable revenue exceeded SAR 187,500 in 2022, 2023, 2024 or 2025, with integration no later than 1 February 2027 ([ZATCA](https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx)). **Confirm the wave named in the taxpayer's ZATCA notice**: flag to reviewer if unclear.
+#### 4.4 E-invoicing gate: Fatoorah
 
-→ All VAT-registered residents → route `saudi-einvoice`. Phase 2 wave triggers integration requirements (API connection, cryptographic stamp, real-time clearance for tax invoices, near-real-time reporting for simplified invoices).
+For taxpayers subject to the E-invoicing Regulation, Phase 1 began on 4 December 2021. Wave 25 includes taxpayers with VAT-liable revenue **exceeding** SAR 187,500 in any of 2022, 2023, 2024 or 2025, with integration by 1 February 2027. ZATCA says later waves are notified at least six months before their date. [ZATCA Wave 25 announcement, complete article](https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx). Obtain the taxpayer's notice and route `saudi-einvoice`. If the notice or historical revenue is unknown, HOLD the wave conclusion. No deemed Wave 25 or earlier-wave conclusion is made from 2026 turnover. **HOLD:** the former Wave 1/Wave 24 numbers, invoice-type-specific QR/clearance/reporting rules, API and cryptographic specifications pending their own source review.
 
-#### 4.5 Excise tax gate: Excise Tax Law (Royal Decree M/86, 1438H)
+#### 4.5 Excise gate
 
-- **Excise tax rates and registration**: Excise tax applies to tobacco products, energy drinks, soft drinks, sweetened drinks and electronic smoking devices and liquids (old rates of 100% and 50% are unverified here; see `sa-excise-tax`). From 1 January 2026 sweetened drinks are taxed by tiers based on total sugar per 100 ml of the ready-to-drink product, replacing the flat 50% of retail price ([ZATCA, Arabic](https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx)). Tier amounts are unverified. Excise registration with ZATCA required before importing, producing, or holding excise goods. → Route `sa-excise-tax`.  _(Excise Tax Law (Royal Decree M/86, 1438H))_
+Collect the goods list, product composition, imports, manufacturing and inventory records and route `sa-excise-tax`. The [official Arabic announcement](https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx) states the sweetened-drink method changes from a flat retail-price percentage to graduated total-sugar bands per 100 ml of ready-to-drink product from 1 January 2026. **HOLD:** individual rates, tier amounts, registration triggers and due dates outside the cited 2026 calendar. Inventory presence alone does not establish registration liability; no excise figure is computed here.
 
-#### 4.6 RETT gate: Real Estate Transaction Tax Regulation (Royal Order A/84, 2 October 2020)
+#### 4.6 Real estate transaction gate
 
-- **RETT flat rate**: 5% percent (applies to most real estate disposals (sale, transfer, long lease, contribution in kind to a company). RETT replaced VAT on real estate from 4 October 2020 (Council of Ministers Resolution). Limited exemptions (e.g., inheritance, gifts to first-degree relatives, first-home purchase up to SAR 1 million under certain conditions). → Route sa-rett if any real estate transaction in the year.)  _(Royal Order A/84, 2 October 2020)_
+Collect every sale, transfer, long lease, contribution, gift and inheritance with deed/date/value/parties and route `sa-rett`. **NON-OPERATIVE HOLD:** the earlier flat-rate assumption, exemptions, first-home limit, notarisation deadline and inconsistent royal-instrument numbers. Do not exclude an inheritance or family transfer from review or assume the tax because an exemption is unclear. No RETT liability or exemption is determined here.
 
-#### 4.7 Withholding tax gate: Income Tax Law art. 68; Implementing Regulations art. 63
+#### 4.7 Withholding gate
 
-- **WHT applicability**: WHT on payments from KSA-resident payers to non-residents without a PE. Any non-resident payments → route sa-withholding-tax.  _(Income Tax Law art. 68; Implementing Regulations art. 63)_
-- **Dividends to non-resident**: 5% percent  _(Income Tax Law art. 68)_
-- **Loan charges / interest**: 5% percent  _(Income Tax Law art. 68)_
-- **Royalties**: 15% percent  _(Income Tax Law art. 68)_
-- **Management fees**: 20% percent  _(Income Tax Law art. 68)_
-- **Other categories**: rent 5%; technical and consulting services 5%; insurance and reinsurance 5%; air tickets, air or sea freight 5%; international telecommunications 5%; land transport within the Kingdom 15%; any other payments 15% ([ZATCA WHT Guideline, May 2026](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf))  _(Income Tax Law art. 68)_
-- **Tax treaty reduction**: Tax treaties (KSA has 50+ DTTs) may reduce rates; reviewer applies treaty.
+Apply a domestic rate only after confirming a resident payer or Saudi PE, a payment to a non-resident, a Saudi income source, the precise payment category and any PE connection, exclusion, exemption or documented treaty claim. [ZATCA WHT Guideline, sections 2 to 5](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf). The table is not a rate-selection default. Unknown category means HOLD the calculation, never choose the highest rate. Natural-person payer rules cover activity-related payments, not personal consumption. Exclusions include relevant oil/gas investment dividends and specified telecom network/roaming payments. Interbank loan returns require the specific maximum-90-day and certified-statement conditions; freight definitions exclude inbound shipping to Saudi ports. Payments connected with a recipient's Saudi PE and capital gains need the separate income-tax treatment. Read the category definition and any treaty before the rate, not after.
 
-#### 4.8 GOSI / Saudization gate: Social Insurance Law (Royal Decree M/33, 1421H); Nitaqat Program (Ministerial Decisions)
+Document each contract and classify the payment before using the rates table. Important neighbouring rules: capital gains are not automatically WHT; payments connected with a recipient's Saudi PE belong in that PE's income-tax computation; oil/gas investment dividends and specified telecom network/roaming payments have exclusions. Loan-charge interbank exclusions and air/sea freight definitions require the category's exact source test. [WHT Guideline definitions, sections 1 to 5, PDF pp. 5 to 7, 8 to 29 and 31](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf). Treaty reduction requires the actual treaty and procedure; no blanket certificate rule or treaty count is assumed. Unclear category or treaty claim remains a HOLD. Route `sa-withholding-tax` as a verification request, not automatic acceptance of its output.
 
-- **GOSI registration requirement**: Any employer with at least one employee must register with GOSI (General Organization for Social Insurance) and contribute monthly.  _(Social Insurance Law (Royal Decree M/33, 1421H))_
-- **GOSI contribution rates for Saudi employees (unverified)**: annuities 9% employer + 9% employee; SANED 0.75% each; occupational hazards 2% employer, giving 11.75% employer and 9.75% employee, wage cap SAR 45,000. The old text said 21% employer, which does not add up. A newer law applies to entrants from 3 July 2024; see `sa-gosi-saudization`  _(Social Insurance Law (Royal Decree M/33, 1421H))_
-- **GOSI employer contribution (non-Saudi employees)**: 2% % (occupational hazards only)
-- **Nitaqat Saudization requirement**: Required Saudi-employee ratio based on sector + size. New entities: typically first-year exemption (grace period), then must meet sector + size quota. Bands: Platinum / High Green / Medium Green / Low Green / Red. Red band → visa block + work-permit restrictions. Mudad WPS (Wage Protection System) mandatory: payroll must run through approved banks via Mudad portal. → Any employees → route sa-gosi-saudization.  _(Nitaqat Program (Ministerial Decisions))_
+#### 4.8 GOSI / Saudization / WPS gate
 
-#### 4.9 MISA registration gate: Investment Law (Royal Decree M/19, 1446H), which repeals the Foreign Investment Law
+Collect employees, nationality, start dates, registration evidence, contribution statements, payroll bank records, Mudad/WPS submissions and actual Nitaqat result; route `sa-gosi-saudization`. **NON-OPERATIVE HOLD:** all earlier contribution percentages, caps, new-entrant phase-in, headcount thresholds, grace periods, band consequences and salary/reporting deadlines. Do not deem unknown registration overdue or an unknown band Red. A complete payroll pack is evidence collection, not a labour-law compliance certificate.
 
-- **MISA registration requirement**: A foreign investor registers with the Ministry of Investment before making any investment, then issues the Commercial Registration; the updated law "replaced the licensing procedures with registration" ([MISA](https://misa.gov.sa/activities/laws-regulations-copy/)). Entities formed earlier hold a licence: accept a valid one. If a foreign-owned taxpayer presents at intake without a MISA registration → REFUSE the workflow and route to sa-formation for license + CR setup. Reviewer to engage Saudi corporate counsel.  _(Investment Law (Royal Decree M/19, 1446H), which repeals the Foreign Investment Law)_
+#### 4.9 MISA investment registration gate
 
-#### 4.10 Fiscal year gate: Gregorian vs Hijri
+Investment Law art. 7(2) requires a foreign investor to register before investment and expressly excludes securities governed by the Capital Market Law. MISA's FAQ 2.2 describes completed registration before CR/other licences; FAQ 2.4 says existing investors have no additional compliance requirements under the update. The law also preserves sectoral/zone regimes and acquired rights in art. 14. [Investment Law, arts. 1, 7 to 8, 14 to 16](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf); [MISA Q&A 2.2 to 2.4](https://misa.gov.sa/activities/laws-regulations-copy/); [Implementing Regulations arts. 11 to 13](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-- **Fiscal year basis rule**: Default Gregorian calendar. Unverified: Hijri tax year (lunar, ~354 days) is permitted only for Zakat-only payers (100% Saudi/GCC ownership). Mixed-ownership and CIT-only payers must use Gregorian. Flag inconsistencies to reviewer.
+Request registration or legacy licence and status evidence. Missing evidence is a **HOLD on the investment-compliance conclusion**, routed to `sa-formation` and Saudi counsel. Do not declare an existing business illegal, unable to file, or automatically refused solely because the intake lacks a new registration number. Do not change an existing tax filing deadline while this evidence is obtained. **HOLD:** universal pre-CR rule for every investor category, licence-transition details and the exact law commencement date.
+
+#### 4.10 Fiscal year gate
+
+Record the registered Hijri/Gregorian period and actual days. Zakat Regulations art. 1 defines a Zakat year irrespective of calendar, and art. 15 provides the day-count calculation; neither is a rule that foreign ownership prohibits Hijri periods. **NON-OPERATIVE HOLD:** that earlier eligibility/refusal rule and any default substitution of a Gregorian calendar. Obtain the current income-tax year rules and taxpayer approvals before changing a period or asserting eligibility. Keep ordinary elapsed-day deadline computation separate from calendar eligibility. [Zakat Regulations arts. 1 and 15](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
 ### Section 6: Intake output template
 
@@ -217,16 +144,16 @@ Two phases:
 ```
 INTAKE SUMMARY: 2026 Saudi Arabia (KSA)
 
-Taxpayer: [Legal name AR / EN] | CR: [number] | TIN: [10-digit]
-VAT No: [15-digit ending 03 | not registered]
-MISA registration: [number | N/A | MISSING]
+Taxpayer: [Legal name AR / EN] | CR: [number] | TIN: [as certified]
+VAT No: [registration number copied from the certificate | not registered]
+MISA: [registration / existing licence evidence | supported exception | HOLD]
 National address (Wasel): [captured | pending]
 
 Entity: [sole est. | s/s LLC | multi-LLC | JSC closed | branch | …]
 Ownership: [Saudi % | GCC % | Foreign %] → REGIME: [Zakat only | CIT only | Split]
 Fiscal year: [Gregorian calendar | Gregorian non-cal | Hijri]
 
-VAT: [registered | mandatory overdue | voluntary | not required]
+VAT: [certificate evidence | legally verified decision | HOLD]
 Fatoorah Phase 2: [integrated | wave pending | not yet | unknown]
 Employees: [count] | Saudi/Non-Saudi: [split] | Nitaqat: [band]
 Excise products: [yes | no]
@@ -245,12 +172,14 @@ DOWNSTREAM SKILLS:
   sa-formation [if MISA missing or entity unclear],
   sa-return-assembly [always last].
 
-OPEN FLAGS, REFUSALS TRIGGERED, CONSERVATIVE DEFAULTS APPLIED: listed below.
+OPEN FLAGS, LEGAL HOLDS, SCOPE REFERRALS: listed below. No default establishes liability.
 
 Confirm or correct anything above.
 ```
 
 #### 6.2 Structured intake package (internal JSON for sa-return-assembly)
+
+The JSON is a field schema example, not findings. Replace absent amounts, percentages and statuses with `null`; replace false/zero example values only from evidence. Add `legal_holds` with affected field, missing proof, reviewer and source needed. Existing field names are retained for interoperability.
 
 ```json
 {
@@ -326,49 +255,31 @@ Confirm or correct anything above.
 }
 ```
 
-### Section 7: Conservative defaults
+### Section 7: Missing facts and non-operative holds
 
-When uncertain, prefer the safer (higher-tax / stricter-compliance) outcome and flag. All defaults visible to reviewer in `conservative_defaults_applied`.
+Unknown is not a higher-tax fact. Use `open_flags` for missing evidence and keep any related computation unavailable. The legacy `conservative_defaults_applied` field remains for compatibility, but no assumed legal facts belong in it.
 
-**Conservative defaults table**
-
-| Ambiguity | Conservative default |
-| --- | --- |
-| Ownership % unclear between Saudi/GCC and foreign | Treat as mixed and apply split (both Zakat + CIT); flag to reviewer to confirm with shareholder register |
-| GCC corporate owner: look-through unclear | Treat as foreign (CIT); flag for ZATCA ruling |
-| Turnover near SAR 375,000 (SAR 350k to 400k) | Assume above threshold → mandatory VAT registration |
-| Trailing-12 VAT window unclear | Assume threshold breached in earliest plausible month → backdated registration risk; flag |
-| MISA registration status unknown for foreign owner | Assume MISSING → REFUSE workflow; route `sa-formation` |
-| Fatoorah Phase 2 wave unknown for VAT-registered | Assume Wave 25 applies if revenue exceeded SAR 187,500 → integration mandatory; flag for ZATCA wave confirmation |
-| Fiscal year basis unclear with mixed ownership | Default Gregorian calendar (Hijri not permitted for mixed/foreign) |
-| WHT category unclear for non-resident payment | Apply highest plausible rate (e.g., 20% management fees) and flag; treaty applied only with written documentation |
-| Nitaqat band unknown | Assume Red until proven; flag visa-block risk |
-| Excise inventory status unclear | Assume excise registration required if any excise goods present at year-end |
-| RETT exemption claim unclear | Assume 5% RETT applies; flag exemption claim to reviewer |
-| GOSI registration status unknown but employees present | Assume not registered → overdue; flag for backdated subscription |
-| PE attribution borderline for foreign entity | Assume PE exists → CIT applies; flag for treaty analysis |
-| Capital vs expense unclear | Capitalise + flag |
+| Missing or unclear topic | Required treatment |
+|---|---|
+| Saudi/GCC/foreign ownership or GCC corporate look-through | HOLD the classification; obtain the register, chain and current treatment |
+| VAT taxable supplies, expenses, window or threshold | HOLD registration/effective date; do not turn an estimated range into mandatory registration |
+| MISA registration or legacy licence | HOLD investment compliance; obtain evidence and counsel review without asserting a tax-filing bar |
+| E-invoicing wave | HOLD wave determination; obtain the actual notice and historical taxable revenue |
+| Hijri/Gregorian basis or eligibility | Keep the recorded basis; HOLD any change; do not reject Hijri for foreign ownership |
+| WHT category, PE link or treaty | HOLD the rate and claim; do not default to management fees |
+| GOSI, WPS or Nitaqat status | HOLD compliance conclusion; do not deem Red, unregistered or overdue |
+| Excise goods or RETT exemption | Capture facts and route; do not assume registration or a flat tax |
+| PE attribution, capital/expense or other deduction | HOLD the tax treatment for current-law and document review |
 
 ### Section 11: Cross-skill references
 
 **Inputs:** user documents (CR, MISA registration, ZATCA certificate, VAT certificate, bank statements, invoices, GOSI subscriber list, prior returns) + user answers. **Output:** Section 6.2 package consumed by `sa-return-assembly`.
 
-Downstream skills (via sa-return-assembly):
-
-- `sa-zakat`: Zakat at 2.5% on the Zakat base for Saudi/GCC ownership share (Implementing Regulations, Minister of Finance Decision 1007, 1445H, amended by Decision 1248, 1446H).
-- `sa-corporate-tax`: CIT 20% on taxable income for foreign ownership share (Income Tax Law, Royal Decree M/1, 1425H).
-- `sa-withholding-tax`: WHT on payments to non-residents at 5%-20% per ITL art. 68; treaty rates applied with documentation.
-- `sa-rett`: 5% Real Estate Transaction Tax on disposals (Royal Order A/84, 2 October 2020).
-- `sa-gosi-saudization`: GOSI subscriptions + Nitaqat band management + Mudad WPS payroll.
-- `sa-excise-tax`: Excise on tobacco, energy/soft/sweetened drinks, e-liquids (Royal Decree M/86, 1438H).
-- `saudi-arabia-vat`: VAT 15% (Royal Decree M/113, 1438H; Royal Order A/638 of 2020 for rate increase).
-- `saudi-einvoice`: Fatoorah Phase 1 generation and Phase 2 integration waves.
-- `sa-formation`: MISA registration, CR, ZATCA registration, entity selection.
-- `sa-return-assembly`: final orchestrator (Zakat + CIT return, VAT returns, WHT returns, working paper, reviewer brief, action list, payment via SADAD).
+Downstream Guides are workstream destinations, not incorporated legal authority. Request the calculation, supporting documents, exact legal citation and checked period from each: `sa-zakat` (base and ownership); `sa-corporate-tax` (income tax, deductions, losses and PE); `sa-withholding-tax` (source, category and treaty); `sa-rett` (property transactions); `sa-gosi-saudization` (employment); `sa-excise-tax` (goods and sugar tiers); `saudi-arabia-vat` (registration, rates, exemptions and returns); `saudi-einvoice` (notice and implementation); `sa-formation` (entity and investment evidence). `sa-return-assembly` receives the resulting package and all holds last. This revision does not attest to the contents of those ten Guides.
 
 ## Worked cases
 
-**Case 1: mixed ownership, 60% Saudi and 40% foreign (decision: what is the 2026 liability on each side?).** Zakat base SAR 2,000,000, taxable income SAR 500,000, calendar 2026 fiscal year of 365 days and a 354-day Hijri year. The Zakat percentage is not a flat 2.5%: art. 15 scales it to 365 days. Zakat on the Saudi share is SAR 30,932.20; income tax on the foreign share at 20% is SAR 40,000.
+**Case 1: mixed ownership, 60% Saudi and 40% foreign (decision: what is the 2026 liability on each side?).** Zakat base SAR 2,000,000, taxable income SAR 500,000, calendar 2026 fiscal year of 365 days and a 354-day Hijri year. Assume independently checked, unapportioned ordinary-company bases and established day counts, with no short-period, merger or specialised rule. Art. 15 scales the Zakat percentage to 365 days. Zakat on the Saudi share is SAR 30,932.20; income tax on the foreign share at 20% is SAR 40,000.
 
 ```oa-check
 name: Mixed entity, calendar fiscal year
@@ -385,7 +296,7 @@ expected:
   income_tax: 40000.00
 ```
 
-**Case 2: which withholding rate?** A resident pays a non-resident SAR 600,000 of royalties and SAR 200,000 of management fees, with no treaty relief. Royalties 15% is SAR 90,000; management fees 20% is SAR 40,000.
+**Case 2: which withholding rate?** A resident company pays a non-resident SAR 600,000 of Saudi-source royalties and SAR 200,000 of Saudi-source management fees, with no recipient-PE connection, exclusion, exemption or treaty relief and with both categories supported by contracts. Royalties 15% is SAR 90,000; management fees 20% is SAR 40,000.
 
 ```oa-check
 name: Non-resident payments
@@ -400,79 +311,33 @@ expected:
 
 ### Section 10: Final handoff to sa-return-assembly
 
-Once gap-filling and self-checks pass, output a short handoff message naming (a) taxpayer + entity + CR + TIN + ownership split, (b) regime selected (Zakat / CIT / split) with the headline computation citation, (c) downstream skills in run-order, (d) skills explicitly not running and why, (e) reviewer reminder (SOCPA CPA or ZATCA-registered tax adviser sign-off). Then invoke `sa-return-assembly` with the Section 6.2 package.
+Output taxpayer, entity, CR/TIN from certificates, ownership with evidence, registered fiscal period, candidate workstreams and the basis for each. List workstreams not run with reasons and all holds; no amount is labelled final while its facts or law are held. Then invoke `sa-return-assembly` for a partial or complete reviewer package as appropriate. Do not label a taxpayer's VAT registration mandatory or investment compliance complete from turnover or a number alone.
 
-Example (single-shareholder LLC, 100% Saudi-owned, VAT-registered, 4 employees):
-
-> Intake complete. Al-Salam Trading LLC, single-shareholder LLC, CR 1010XXXXXX, TIN 30012345XX, VAT 30012345XX0003, Riyadh national address active. 100% Saudi-owned natural person → Zakat-only. 2026 turnover SAR 2.4 million. VAT-registered (mandatory), Fatoorah Phase 1 active, not yet in Phase 2 wave (verify). 4 Saudi employees, GOSI active, Mudad WPS live, Nitaqat Medium Green. No real estate disposals, no excise products, no non-resident payments. Fiscal year Gregorian calendar. Running: sa-zakat (2.5% on Zakat base), saudi-arabia-vat, saudi-einvoice (wave check), sa-gosi-saudization, sa-return-assembly. Not running: sa-corporate-tax, sa-withholding-tax, sa-rett, sa-excise-tax, sa-formation. Needs SOCPA-licensed Saudi CPA sign-off before ZATCA submission. Handing off now.
-
-Example (mixed-ownership multi-member LLC, 60% Saudi + 40% foreign, with MISA):
-
-> Intake complete. Gulf Tech Solutions LLC, multi-member LLC, CR 1010YYYYYY, TIN 30099999XX, VAT 30099999XX0003, MISA registration 102030XX. Ownership: 60% Saudi national / 40% foreign → SPLIT regime: 60% share Zakat, 40% share CIT 20%. 2026 turnover SAR 18 million. VAT-registered (mandatory), Fatoorah Phase 2 Wave [X] live. 22 employees (12 Saudi / 10 non-Saudi), Nitaqat High Green. Paid foreign software licensor SAR 600k (royalty WHT 15%) and foreign management fees SAR 200k (WHT 20%): treaty review required. No real estate transactions, no excise. Fiscal year Gregorian calendar (Hijri not permitted with foreign ownership). Running: sa-zakat (Saudi share), sa-corporate-tax (foreign share), saudi-arabia-vat, saudi-einvoice, sa-withholding-tax, sa-gosi-saudization, sa-return-assembly. Not running: sa-rett, sa-excise-tax, sa-formation. Needs SOCPA CPA + treaty-qualified tax adviser sign-off before ZATCA submission. Handing off now.
+**Handoff format:** "Intake package for [entity], [period]. Supported routes: [list with citations]. Evidence still required: [list]. Legal holds: [list]. Computations unavailable because of holds: [list]. Remaining upstream work: [list]. Professional authorisation and sign-off required before any filing."
 
 ## When to refuse or refer
 
-
-Refusals fire from the refusal sweep or during inference. Protocol: stop the workflow, state the reason in one sentence, recommend a ZATCA-registered tax adviser or SOCPA-licensed CPA, do not work around.
-
-In-scope refusals:
-
-- Pre-formation taxpayer with no CR → `sa-formation` only.
-- Foreign-owned entity with no valid MISA registration → `sa-formation` only; corporate counsel required.
-- Non-resident with no PE in KSA → out of scope (WHT applies but is the payer's obligation).
-- Listed JSC with public free float → SOCPA CPA + ZATCA large-taxpayer office.
-- Oil, gas, or hydrocarbon producers → refuse (special CIT rates 20%-85%; specialist regime).
-- Banks, insurers, financial institutions → refuse (sector-specific Zakat/CIT rules + SAMA supervision).
-- Groups with transfer-pricing complexity (above SAR 6 million of arm's length value in 12 months for Master File and Local File; above SAR 3.2 billion group revenue for CbCR) → refuse; specialist transfer-pricing adviser required.
-- Listed JSC with free-float Zakat/CIT proportional treatment → refuse.
-
-Sample: "Stop: you have foreign ownership but no MISA investment registration on file. A MISA registration must be issued before the Commercial Registration for any foreign-owned KSA entity. Without it, the entity cannot legally operate or file with ZATCA. Engage Saudi corporate counsel and the Ministry of Investment first; I will route you to `sa-formation`."
+Stop the affected conclusion, continue independent evidence collection, and name the missing fact or legal check. Pre-formation routes to `sa-formation`. Listed companies, oil/gas, banks, insurers, funds, zones, RHQ, complex PE/treaty or related-party cases go to a professional with the relevant Saudi authority and expertise. These are workflow scope limits, not assertions of a particular rate, threshold or filing exemption. Missing MISA evidence and a Hijri year are holds for review, never automatic findings of illegality or ineligibility. Do not submit anything through this Guide.
 
 ## Completion checklist
 
 
-Run all 16 before invoking `sa-return-assembly`. Any failure → fix, do not hand off.
+Complete these before a final handoff. If something is missing, hand over a partial package with the affected line held.
 
-1. Refusal sweep used `ask_user_input_v0`, not prose.
-2. KSA residence / CR / ZATCA registration confirmed.
-3. Entity type set.
-4. Ownership %s captured (Saudi / GCC / foreign), summing to 100%.
-5. Regime split decided (Zakat / CIT / both) with reason traced to ownership %.
-6. MISA registration verified for any foreign-owned entity (number captured).
-7. Turnover recorded in SAR with bucket band.
-8. VAT status set; `mandatory_overdue_flag` set if turnover ≥ SAR 375,000 and not registered.
-9. Fatoorah Phase 1 confirmed for all VAT-registered; Phase 2 wave noted.
-10. Employee count + Saudi/non-Saudi split + Nitaqat band captured if employees present.
-11. GOSI + Mudad WPS status set.
-12. Excise registration set if dealing in excise goods.
-13. RETT transactions in 2026 captured.
-14. WHT obligations checked; `sa-withholding-tax` in list if applicable.
-15. Fiscal year basis captured (Gregorian / Hijri); Hijri rejected for mixed/foreign.
-16. All conservative defaults recorded with citation; reviewer disclaimer present in opening + handoff.
+1. Residence, legal form, CR/TIN and registered period trace to documents.
+2. Shareholder percentages reconcile to 100%; indirect/GCC/listed issues are supported or held.
+3. Each candidate workstream has facts and a source; unknown facts remain unknown.
+4. VAT registration, excise, RETT, GOSI, WPS and Nitaqat conclusions are supported separately or held.
+5. MISA evidence and transition/scope exceptions are checked or held; no unsupported filing prohibition is asserted.
+6. WHT categories, PE connections, exclusions and treaty claims are documented before rates.
+7. E-invoicing notice and historical revenue are recorded; no wave is guessed.
+8. Hijri/Gregorian basis and day counts are recorded; calendar eligibility is not inferred from ownership.
+9. The Section 6 package retains identifiers, documents, downstream list and all flags. Unavailable figures are `null`, never zero estimates.
+10. Every material legal or factual hold blocks finalising its computation and remains in the handoff for a professional authorised in Saudi Arabia.
 
 ## Legal instruments named in this skill
 
-
-Primary statutes, royal decrees, and ZATCA regulations cited (citation list, kept for reference; the table under Sources says what was opened):
-
-- **Royal Decree M/1, 1425H**: Income Tax Law (ITL).
-- **Implementing Regulations of the Income Tax Law**: Ministerial Resolution 1535, 1425H, as amended.
-- **Minister of Finance Decision 1007, 1445H, amended by Decision 1248, 1446H**: Zakat Implementing Regulations.
-- **Royal Decree M/113, 1438H**: Value Added Tax Law.
-- **VAT Implementing Regulations**: ZATCA Board Resolution 3839, 1438H, as amended.
-- **Royal Order A/638, 2020**: increase of VAT standard rate to 15% from 1 July 2020.
-- **Royal Decree M/86, 1438H**: Excise Tax Law.
-- **Royal Order A/84, 2 October 2020**: Real Estate Transaction Tax (RETT) 5% Regulation.
-- **Royal Decree M/33, 1421H**: Social Insurance Law (GOSI).
-- **Royal Decree M/19, 1446H, Investment Law, repealing the Foreign Investment Law**: Foreign Investment Law (MISA framework).
-- **ZATCA E-Invoicing Regulation, December 2020**: Fatoorah Phase 1 (Generation) and Phase 2 (Integration).
-- **ZATCA Transfer Pricing Bylaws, 15 February 2019** (and amendments): TP documentation thresholds, CbCR.
-- **Companies Law, Royal Decree M/132, 1443H (effective January 2023)**: sole establishment, LLC, JSC, simple joint partnership, branch.
-- **Council of Ministers Resolution, 4 October 2020**: RETT replacing VAT on real estate.
-- **Ministerial Decisions on Nitaqat (various, MHRSD)**: Saudization bands and quotas.
-- **Mudad WPS Regulations (MHRSD / SAMA)**: Wage Protection System.
-- **Saudi GCC VAT Framework Agreement, 2017**: basis for VAT Law.
-- **Bilateral Double Tax Treaties (DTTs)**: 50+ treaties; treaty rates verified case-by-case by reviewer.
+The Sources table identifies the texts actually read. **NON-OPERATIVE HISTORICAL TOPICS:** the earlier instrument list also named Income Tax Law M/1 (1425H), its Resolution 1535 regulations, Zakat Royal Decree M/40, VAT Law M/113 and Royal Order A/638, Excise Law M/86, conflicting RETT A/84/M/84 instruments, Social Insurance Laws M/33/M/22, Companies Law M/132, Nitaqat/WPS decisions, GCC VAT Agreement, bilateral treaties and a common "Tax Procedures Law". No unverified title, date, article attribution or universal procedural rule in that list is authority in this revision. Their relevant rules remain held where used. Obtain the operative current text before relying on any held topic; old instrument labels are retained here solely so the prior scope is not lost.
 
 ## Change log
 
@@ -480,22 +345,29 @@ Primary statutes, royal decrees, and ZATCA regulations cited (citation list, kep
 
 - **v1.1 (November 2026):** Moved to tax year 2026 and the method shape. Corrected the Zakat regulation, Zakat percentage, withholding rates, GOSI arithmetic, Investment Law registration and Wave 25. Dropped duplicated runbook lines and the old booking link block.
 
+- **v1.2 (1 November 2026):** Replaced operative assumptions with explicit local holds; corrected WHT nil-month and partnership exceptions, calendar scaling and the late-penalty example; recorded exact source scope and preserved earlier topics in the evidence ledger. Platform attribution and standard closing block preserved.
+
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual read scope | URL | Read on |
 |---|---|---|
-| Read in full text: Implementing Regulations for Zakat Collection 1445 H, Minister of Finance Decision 1007, amended by Decision 1248: arts. 1, 3, 15, 27, 102, 106, 110 | https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf | 2026-11-01 |
-| Read in full text: ZATCA, Taxpayers' Obligations: Zakat and Returns Calendar 2026 | https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Zakat%20Declaration%20and%20Tax%20Returns%20Calendar%20(EN).pdf | 2026-11-01 |
-| Read in full text: ZATCA, General Guideline for Withholding Tax, second version, May 2026 | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf | 2026-11-01 |
-| Read in full text: ZATCA, Simplified Guideline for Income Tax, second version, May 2026 | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf | 2026-11-01 |
-| Read in full text: ZATCA, Taxation Violation Fines (VAT) | https://zatca.gov.sa/en/RulesRegulations/VAT/Pages/Penalties.aspx | 2026-11-01 |
-| Read in full text: ZATCA, VAT returns for September and Q3 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx | 2026-11-01 |
-| Read in full text: ZATCA, Wave 25 e-invoicing criteria | https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx | 2026-11-01 |
-| Read in full text: ZATCA, excise regulation amendments from 1 January 2026 (Arabic) | https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx | 2026-11-01 |
-| Read in full text: ZATCA, Simplified Guide on cancellation of fines, as of 1 July 2026 | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf | 2026-11-01 |
-| Read in full text: Ministry of Investment, updated Investment Law page | https://misa.gov.sa/activities/laws-regulations-copy/ | 2026-11-01 |
+| Zakat Collection Regulations 1445H, Decision 1007 as amended by 1248; read in the original source: PDF pp. 2 to 9, 15 to 23, 58 to 63 (definitions, residence, period/rate, minimum/maximum and procedure/retention); no full-document claim | https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf | 2026-11-01 |
+| ZATCA Income Tax Guideline, May 2026; read in the original source: all 11 PDF pages, including rate diagram on p. 5 and obligations diagram on p. 6; Arabic prevails | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf | 2026-11-01 |
+| Income-tax Implementing Regulations, Arabic compilation; read in the original source: cover/amendment list and arts. 9(2), 67 to 68, PDF pp. 1 to 2, 10 to 11, 55 to 57; compilation states amendments through Decision 2568 of 1440H, so no claim to complete 2026 amendment coverage | https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf | 2026-11-01 |
+| ZATCA WHT Guideline, May 2026; read in the original source: definitions and sections 1 to 5, PDF pp. 5 to 33: source/PE/category, exclusions, rates, nil months, annual partnership exception, retention and penalties | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf | 2026-11-01 |
+| ZATCA 2026 calendar; read in the original source: complete two-page PDF, annual deadline and all monthly VAT/WHT/excise entries; 2027 illustrative dates are calculated, not published in this calendar | https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Zakat%20Declaration%20and%20Tax%20Returns%20Calendar%20(EN).pdf | 2026-11-01 |
+| ZATCA VAT penalties; read in the original source: complete offence/fine table and neighbouring repeat-offence note | https://zatca.gov.sa/en/RulesRegulations/VAT/Pages/Penalties.aspx | 2026-11-01 |
+| ZATCA September/Q3 2026 VAT notice; read in the original source: complete article and supplies split, not just title | https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx | 2026-11-01 |
+| ZATCA Wave 25; read in the original source: complete article: qualifying years, strict threshold, notification, integration date and Phase 1 context | https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx | 2026-11-01 |
+| ZATCA sweetened-drink amendment announcement, Arabic; read in the original source: complete article: 2026 effective date, sugar method and 100 ml unit; not a tier-rate schedule | https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx | 2026-11-01 |
+| ZATCA cancellation initiative; read in the original source: PDF pp. 1 to 9 including conditions and exclusions; no automatic eligibility conclusion | https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf | 2026-11-01 |
+| MISA Investment Law; read in the original source: bilingual PDF pp. 1 to 4, including arts. 1, 7 to 8 and 14 to 16 and securities exception | https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf | 2026-11-01 |
+| MISA updated law page; read in the original source: law text and Q&A 2.2 to 2.5, including existing-investor answer, not merely the registration headline | https://misa.gov.sa/activities/laws-regulations-copy/ | 2026-11-01 |
+| MISA Implementing Regulations; read in the original source: arts. 1 to 2 and 9 to 13, PDF pp. 1 to 2 and 5 to 7, applicant information and annual-update context | https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf | 2026-11-01 |
 
-Not yet confirmed: the Income Tax Law and its Implementing Regulations were not opened directly (laws.boe.gov.sa did not connect), so articles are cited through the ZATCA guidelines above, and the English guidelines defer to the Arabic text. Also unconfirmed, and carried only where marked unverified: VAT thresholds of SAR 375,000 and SAR 187,500; Wave 24 criteria (seen in a search extract, page not opened); GOSI rates and the phase-in for new entrants; excise rates and sugar tier amounts; RETT rate, exemptions and the instrument number (the old text gave both Royal Order A/84 and Royal Decree M/84); interest limit, loss carry-forward and specialised oil and gas rates; audited accounts threshold; extension practice; refund timing; income tax record retention; Hijri year eligibility; treatment of GCC corporate owners and listed float; Nitaqat bands (the old skills disagree on Yellow); Investment Law in-force date; form names such as Form 800.
+| Bureau of Experts Income Tax Law, **archived 15 February 2026** after direct TLS and ordinary-browser failure; read in original Arabic arts. 1 to 13 and amendment notes, 21 to 23, 60 to 61, 68 to 71, 76 to 77; later amendments not established | https://web.archive.org/web/20260215020442/https://laws.boe.gov.sa/boelaws/laws/lawdetails/23576008-1ce4-4685-ac3e-a9a700f2cb02/1 | 2026-11-01 |
+
+Not yet confirmed: live Income Tax Law and amendments after the 15 February 2026 archive capture (direct BOE TLS fetch and ordinary browser failed); complete later amendments to the Arabic income-tax regulation compilation; VAT registration thresholds, rate and all transaction-specific zero/exempt conditions; Hijri eligibility or changes for income tax; interest limitation and loss-relief computation; specialised oil/gas rates; indirect/GCC corporate and listed-company allocation; actual mixed-return form and box identifiers; audit thresholds and attachment law; tax-specific portal/login/bill identifiers or status-update timing beyond the published income-tax steps; general extensions/refund periods; non-Zakat/non-WHT retention; GOSI rates, caps, new-entrant rules and payment dates; Nitaqat current bands/headcount thresholds/benefits/consequences; WPS mandate/deadline; RETT rate, exemptions, first-home limit, instrument and filing/payment date; excise product rates/tier amounts and registration test; Phase 1 invoice-type technical/QR/clearance/reporting rules and earlier waves; Investment Law commencement/transition and exceptions outside the read clauses; professional credential recognition and filing authority; transfer-pricing/Master File/Local File/CbCR thresholds; common Tax Procedures Law assertion. These are NON-OPERATIVE HOLDS: do not compute, classify, refuse, backdate, declare overdue, promise a date or finalise the affected line from a held rule. Named-contributor Guides remain outside this review and do not resolve a hold by themselves.
 
 <!-- openaccountants-cta-block -->
 

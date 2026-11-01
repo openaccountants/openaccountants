@@ -23,7 +23,7 @@ Tax years: not stated (1 skill), 2026 (2 skills), 2025 (9 skills).
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. The two team Guides are intake and assembly workflows with explicit legal holds; their current-year label does not certify the ten other Guides or resolve those holds. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
