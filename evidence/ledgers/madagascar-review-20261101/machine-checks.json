@@ -1,0 +1,23 @@
+{
+  "scoped-validator": {
+    "chunk_id": "b8a472",
+    "wall_time_seconds": 0.216708167,
+    "exit_code": 0,
+    "original_token_count": 48,
+    "output": "changed-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+  },
+  "strict-metadata": {
+    "chunk_id": "5818d7",
+    "wall_time_seconds": 0.420909834,
+    "exit_code": 0,
+    "original_token_count": 21,
+    "output": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+  },
+  "examples": {
+    "chunk_id": "6674eb",
+    "wall_time_seconds": 0.000029,
+    "exit_code": 0,
+    "original_token_count": 15,
+    "output": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n"
+  }
+}
