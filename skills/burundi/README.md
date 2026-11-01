@@ -26,7 +26,7 @@ Independent AI source review and focused repair closure passed for candidate `e4
 
 | Domain | Guide | Status |
 |---|---|---|
-| IT-IND | bi-income-tax; bi-capital-income-tax | original business/rental scope accepted; new capital scope independent review pending; partial |
+| IT-IND | bi-income-tax; bi-capital-income-tax | original business/rental scope accepted; capital scope independent AI review and focused repair closure passed; partial |
 | IT-CORP | bi-corporate-income-tax | sourced from the law; partial |
 | VAT | bi-vat-gst | sourced from the law; partial |
 | SC and PR | bi-payroll-social | sourced from the law; partial |
@@ -54,4 +54,4 @@ The new [property-transactions Guide](bi-property-transactions.md) separates the
 
 The new [capital-income and disposal-gains workpaper](bi-capital-income-tax.md) supplies the statutory private-immovable coefficient base, housing exemption predicates, capped land-registration-duty credit and January/July Treasury exemption distinction. The single individual headline rate row now routes to that exact figure home; its complete predecessor bytes and every old-topic destination are preserved in [capital writer evidence](../../evidence/ledgers/burundi-capital-20261101/README.md). Only that row and the individual Guide's version/H1 change. All other old Guide bodies and all earlier review evidence are preserved.
 
-This new scope is a tier-2 draft pending fresh independent source review. Property reference prices, exact holding-range boundaries, professional-property and financial-asset mechanics, relief execution and private-capital filing fields remain held. All seven domains remain partial. Earlier property acceptance remains bound to its previously reviewed bytes and is not acceptance of this new addition. No accountant attestation or live filing approval.
+This tier-2 scope passed independent AI source review and [focused repair closure](../../evidence/ledgers/burundi-capital-review-20261101/closure-review.md) within its stated limits. Property reference prices, exact holding-range boundaries, professional-property and financial-asset mechanics, relief execution and private-capital filing fields remain held. All seven domains remain partial. Earlier property acceptance remains bound to its previously reviewed bytes and is not acceptance of this new addition. No accountant attestation or live filing approval.

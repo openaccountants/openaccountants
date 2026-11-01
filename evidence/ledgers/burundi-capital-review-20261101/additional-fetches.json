@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://www.obr.bi/images/PDF/Ordonnance_relative_aux_I.R.pdf",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  }
+]

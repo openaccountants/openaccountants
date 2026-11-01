@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "accepted_candidate_sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+  "original_review_freeze_sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+  "repair_candidate_sha256": "a84e85a093c2110d4721f1a40e25466c95efcbbdc5f0a8fce55c2351fe6bbd84",
+  "files": [
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-checks.py",
+      "sha256": "967f9c8e1075ca988854b41cead32c9bd4337c7671bbea8809eb6c5c2b775a63",
+      "bytes": 6597
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-checks.json",
+      "sha256": "1570e729c591bcbb99131d600fe818c13aa7bc9136c4260152941a345b8aeb7a",
+      "bytes": 3698
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/status-only-permission.json",
+      "sha256": "7e6a03992aa571c860de5768be51016b3b7e391ce127f1868d35616671063eff",
+      "bytes": 3213
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-review.md",
+      "sha256": "4038fd2ec757b65e79975ebe07d1f608923f5b1bc760db461f6560ce51e8df99",
+      "bytes": 8326
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/closure-review.json",
+      "sha256": "54aea7fa922d3457715148869da04096e49d01277ebe8cc10279ea4fd6bf5934",
+      "bytes": 2210
+    }
+  ],
+  "preserve_all_initial_review_evidence": true,
+  "future_closure_or_status_reconciliation_evidence_must_be_additive": true
+}
