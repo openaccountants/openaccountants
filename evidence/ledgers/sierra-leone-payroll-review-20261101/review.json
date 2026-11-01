@@ -1,0 +1,400 @@
+{
+  "review_kind": "Fresh independent source-bound payroll draft review",
+  "read_on": "2026-11-01",
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "frozen_head": "48a6568aa0346659987b56f60ab13552f2dc5419",
+  "frozen_guide_sha256": "e0445980105f60e8bdf55c0eb23c71e2ceebf441247e714591014d1ff08ddcae",
+  "writer_ledger_sha256": "f5da3374768ee3d53794368b00e97980f95641639b36e877799407012b6d9bd3",
+  "review_decision": "Changes requested. All28ledger rows and neighbours checked;3body-completeness/condition fixes and1citation fix required before source-bound closure. This is not operative2026 or full-country approval.",
+  "rows_checked": 28,
+  "findings": [
+    {
+      "id": "PR01",
+      "priority": 2,
+      "lines": [
+        22,
+        44
+      ],
+      "ledger_rows": [
+        "SC02"
+      ],
+      "title": "Carry the contractor normal-work condition into the body",
+      "finding": "The draft says the definition includes work through contractors but never states that this contractor limb concerns employment in or in connection with the normal work of the establishment. Section2 also requires remunerated employment linked to an establishment. Keep the condition beside the contractor statement so the paragraph cannot be read as covering every contractor arrangement.",
+      "source": "NASSIT Act2001 s.2; physical PDF6\u20137",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "source_excerpt": "normal work of the establishment",
+      "required_fix": "State that persons employed by or through a contractor in or in connection with the normal work of the establishment are included, subject to the definition\u2019s remaining conditions. Update SC02 wording consistently."
+    },
+    {
+      "id": "PR02",
+      "priority": 2,
+      "lines": [
+        36,
+        54
+      ],
+      "ledger_rows": [
+        "SC15"
+      ],
+      "title": "Include self-employed people in the change-notice row",
+      "finding": "The table labels the10day name/address/location change duty as an employer duty. Regulation2 expressly applies it to every employer or self-employed person, while the Guide\u2019s scope and rates include opted-in self-employed people. Omitting that actor can cause a reader to miss their change notice.",
+      "source": "NASSIT Regulations2004 reg.2; physical PDF4",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "source_excerpt": "Every employer or self-employed person",
+      "required_fix": "Label the row employer/self-employed business name/address/location change and name the Director-General as recipient; retain10days after change. Keep SC15 actor scope explicit."
+    },
+    {
+      "id": "PR03",
+      "priority": 2,
+      "lines": [
+        47
+      ],
+      "ledger_rows": [
+        "SC10"
+      ],
+      "title": "Make the invalidity exception usable as a workpaper rule",
+      "finding": "The whole-month trigger is correctly retained, but \u201cspecific credited-contribution treatment\u201d does not state that no contribution is payable for that member or identify the credited amount. Section26 supplies both. Its prior12month reference matters because the general average-monthly-earnings definition elsewhere uses a different reference period.",
+      "source": "NASSIT Act2001 s.26; physical PDF17; neighbouring s.2 PDF5",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "source_excerpt": "during the period of twelve months preceding",
+      "required_fix": "State no contribution is payable for a month throughout which entitlement exists; instead credit the contribution that would have been payable on that member\u2019s average monthly earnings during the12months preceding the month entitlement began. Do not turn this source rule into a new benefit-eligibility claim. Update SC10."
+    },
+    {
+      "id": "PR04",
+      "priority": 2,
+      "lines": [
+        34,
+        47
+      ],
+      "ledger_rows": [
+        "SC01",
+        "SC07",
+        "SC10",
+        "SC11",
+        "SC18"
+      ],
+      "title": "Link the Act provisions to the Act",
+      "finding": "The base step4 link names Act ss.24,26,28 but points only to Regulations.pdf. The Regulations support the same-membership sentence, not the private-pension and invalidity provisions. The remittance row likewise names Act s.25(3) in a Regulations-only link, although reg.8 independently supports the timing.",
+      "source": "Act ss.24,26,28 and Regulations reg.8; physical ActPDF15\u201318,RegPDF6",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "required_fix": "Split the citations by document, linking Act references to act2001.pdf and reg.8 to Regulations.pdf. In the timing row either give two links or label only the supporting reg.8 source."
+    }
+  ],
+  "per_row": [
+    {
+      "id": "SC01",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.23-24",
+      "physical_pdf_pages": "15-16",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act15\u201316 ss.23\u201324: every employer/worker within defined scope; self-employed opt-in and conditions; other-law exemption preserved; private pension does not exempt. Ceased-employment voluntary continuation in s.23(2) was read as neighbour; no exhaustive eligibility claim made."
+    },
+    {
+      "id": "SC02",
+      "status": "Repair PR01",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.2",
+      "physical_pdf_pages": "6-7",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act6\u20137: remunerated employment/establishment definition; by/through contractor normal-work limb; Sierra Leone non-crew limb; permanent-resident ship-owner office/agent or overseas Sierra Leone employer limbs. Territory/permanent-residence conditions correct; contractor normal-work condition should be explicit."
+    },
+    {
+      "id": "SC03",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.2",
+      "physical_pdf_pages": "5",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act5: paid/payable cash emoluments at fixed/determined intervals, normal work/tasks/volume and leave; all listed exclusions match. Printed \u201ccost of leaving\u201d is real in scan and held rather than silently changed. No no-cap or gross-pay assumption adopted."
+    },
+    {
+      "id": "SC04",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(1)",
+      "physical_pdf_pages": "16",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act16 s.25(1):5%, immediately month end, irrespective of actual payment. Matches table/base and example premise."
+    },
+    {
+      "id": "SC05",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(2)",
+      "physical_pdf_pages": "16",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act16 s.25(2):10% per worker/month. No employer-share recovery under s.25(5)(a) and no remuneration reduction under s.29."
+    },
+    {
+      "id": "SC06",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(4)",
+      "physical_pdf_pages": "16",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act16 s.25(4)15% income each month from profession/vocation/business/occupation for self-employed person agreeing to membership; s.23(1)(b)regulation conditions remain adjacent."
+    },
+    {
+      "id": "SC07",
+      "status": "Verified; citation PR04",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(3)",
+      "physical_pdf_pages": "16",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act16 s.25(3)15days after month end for employee/employer contributions; Reg6 reg.8(1)also states deadline for employer/self-employed. No PAYE-calendar inference. Source labelling correction requested."
+    },
+    {
+      "id": "SC08",
+      "status": "Verified; ledger precision note",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(5)",
+      "physical_pdf_pages": "16-17",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act16\u201317 s.25(5):own-share recovery prohibited; prior-period member deduction prohibited except accidental mistake OR clerical error, with written Trust-inspector instructions. Guide slash phrasing is consistent; writer ledger compressed \u201caccidentalclericalmistake\u201d should spell the OR out when touched."
+    },
+    {
+      "id": "SC09",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.25(6)",
+      "physical_pdf_pages": "17",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act17 s.25(6):deducted contributions deemed held in trust until paid; Guide does not claim all unpaid payroll amounts are trust money."
+    },
+    {
+      "id": "SC10",
+      "status": "Repair PR03 and PR04",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.26",
+      "physical_pdf_pages": "17",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act17 s.26:whole month of entitlement to invalidity pension; no payable contribution; credit equivalent to contribution on member\u2019s average monthly earnings during12months preceding entitlement month. Correct direction/whole-month trigger but draft needs explicit no-payable and credit-base rule; link points to wrong document."
+    },
+    {
+      "id": "SC11",
+      "status": "Verified; citation PR04",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.28-29",
+      "physical_pdf_pages": "18",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act18 ss.28\u201329:each concurrent employer responsible only for own obligations; no direct/indirect reduction of earnings/other emoluments because of statutory liability/charges. Reg8(2)does not replace Act28."
+    },
+    {
+      "id": "SC12",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.20(2)",
+      "physical_pdf_pages": "15",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act15 s.20(2):contributions tax deductible. Body explicitly withholds current PAYE-return/limit implementation; no invented return field or automatic complete deduction computation."
+    },
+    {
+      "id": "SC13",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.38",
+      "physical_pdf_pages": "21-22",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act21\u201322 s.38:old-age pension/gratuity,retirement grant,invalidity pension/grant,survivors pension/grant plus conditional prescribed benefits. Guide uses non-exhaustive class summary, makes no eligibility/amount promise; s.39 neighbour read incidentally not certified."
+    },
+    {
+      "id": "SC14",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.1",
+      "physical_pdf_pages": "4",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg4 reg.1(1):employer/self-employed,30days from Regulations commencement or Act-applicability date;SS2A/SS3. Reg1(2)branches deemed one establishment read. No simple30days-from-incorporation substitution."
+    },
+    {
+      "id": "SC15",
+      "status": "Repair PR02",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.2",
+      "physical_pdf_pages": "4",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg4 reg.2:every employer OR self-employed business name/address/location change; furnish Director-General new details within10days after change. Timing correct; self-employed actor missing in table."
+    },
+    {
+      "id": "SC16",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.3-6",
+      "physical_pdf_pages": "5",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg5 regs.3\u20136:registration numbers;SS1A appropriate parts certified by Trust inspector; unable employee supplies necessary particulars; self-employedSS1A/SS3 and other required forms; existing member supplies certificate or other membership/number evidence. Draft says certified as prescribed and records issued numbers; no invented current portal flow."
+    },
+    {
+      "id": "SC17",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.7",
+      "physical_pdf_pages": "5-6",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg5\u20136 reg.7:employer notifies Director-General within30days after employee ceases or establishment ceases; employee may also notify. Draft correctly retains two clocks, no claim employee report replaces employer duty."
+    },
+    {
+      "id": "SC18",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.8",
+      "physical_pdf_pages": "6",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg6 reg.8:15days after contribution month;concurrent employers\u2019 amounts credited under same membership. Reg14(4)repeat condition also read; no one-employer exemption."
+    },
+    {
+      "id": "SC19",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.9",
+      "physical_pdf_pages": "6",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg6 reg.9:person assuming employer responsibility for establishment liable for contribution/other monies and document defaults of previous employer. Workpaper reference is bounded by its terms; no share-sale/asset-sale universal safe-harbour claim."
+    },
+    {
+      "id": "SC20",
+      "status": "Verified within stated scope",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.10",
+      "physical_pdf_pages": "6",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg6 reg.10:nearest Area Office;specified instruments/approved delivery points;other manner Director-General authorises in writing. Draft intentionally does not reproduce a fully authenticated current electronic filing/payment method; hold is explicit. Current authority page\u2019s cash/cheque/bank transfer instruction independently read but not treated as full legal authorisation chain."
+    },
+    {
+      "id": "SC21",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.11",
+      "physical_pdf_pages": "7",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg7 reg.11:SS4A accompanies all contribution payments or other forms/media authorised in writing; consolidated branch/sub-office/depot payment conditional on separate schedules and distinct unit amounts. Both conditions retained."
+    },
+    {
+      "id": "SC22",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.12",
+      "physical_pdf_pages": "7",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg7 reg.12(a)\u2013(g):employer identity/location/postal address/number;payment manner;each employee identity/number;earnings;deduction;employer contribution;period total. Draft covers all7statutory field groups. Actual current electronic boxes remain outside approval."
+    },
+    {
+      "id": "SC23",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.13",
+      "physical_pdf_pages": "7",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg7 reg.13:officialSS4B dated,stamped,endorsed by authorised Trust official is prescribed discharge receipt for contributions/other monies. Draft distinguishes bank movement from receipt and holds current electronic equivalent."
+    },
+    {
+      "id": "SC24",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.14",
+      "physical_pdf_pages": "7-8",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg8 reg.14(1)\u2013(4):Director-General satisfied payment not due;refund discretionary;no refund if benefit already paid to member/dependants;may withhold against monies due;may require written application/information. Draft says conditions apply and does not promise automatic refund."
+    },
+    {
+      "id": "SC25",
+      "status": "Verified",
+      "source_sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "article": "NASSIT Regulations2004 reg.15-16",
+      "physical_pdf_pages": "8",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Reg8 regs.15\u201316:employee name,SSnumber,pay,deductions;necessary modifications for self-employed records;minimum12years after end of relevant pay period. Draft table plus record step preserves core employer record/retention rule; actor-specific modern record format unclaimed."
+    },
+    {
+      "id": "SC26",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.27(1)(a)",
+      "physical_pdf_pages": "17",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act17 s.27(1)(a):90dayTreasurybill rate plus20%OFthat rate,compounded monthly. No20percentage-point or flat20%penalty error. Applicable rate and period conversion explicitly unresolved."
+    },
+    {
+      "id": "SC27",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.27(1)(b)",
+      "physical_pdf_pages": "17",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act17\u201318 s.27(1)(b):demand served;unpaid contribution+interest30days later;further10%OF90daybill rate on total outstanding for each default month. Legal recovery/criminal proceedings separate. s.27(2)remission text read with printed cross-reference defect; no remission implementation certified."
+    },
+    {
+      "id": "SC28",
+      "status": "Verified",
+      "source_sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "article": "NASSIT Act2001 s.30",
+      "physical_pdf_pages": "18",
+      "official_url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "writer_excerpt_visually_confirmed": true,
+      "review_note": "Act18 s.30:non-registration offence;immediate registration;contribution arrears+interest/penalty under s.27. OriginalLe5million/3month wording read; draft withholds current monetary fine pending denomination/later law. No offence-fine conversion invented."
+    }
+  ],
+  "examples": {
+    "case1": {
+      "legal_premise": "Hypothetical covered worker,verified statutory earnings,no s.26credit and no unresolved base condition.5/10shares under s.25(1)\u2013(3). No PAYE/net-pay result.",
+      "independent_arithmetic": {
+        "employee": 500.0,
+        "employer": 1000.0,
+        "remittance": 1500.0,
+        "employer_cost": 11000.0
+      },
+      "result": "Pass"
+    },
+    "case2": {
+      "legal_premise": "Same hypothetical covered-worker context;actual bonus and travel allowances genuinely meet s.2exclusions,not relabelled ordinary pay. Compares wrong gross-pay treatment with sourced statutory base; no optional election or current filing endorsement.",
+      "independent_arithmetic": {
+        "gross": 13000,
+        "correct": 1500.0,
+        "incorrect": 1950.0,
+        "difference": 450.0
+      },
+      "result": "Pass;edge-case classification decision"
+    }
+  },
+  "old_topics_checked": 10,
+  "lost_content_restored": 0,
+  "old_topics_result": "All10predecessor bullets independently compared to pinned exact text,wholefilehash and current section/hold destination. No silent loss found. Fiveotherlegacy2025Guides unchanged. See preservation-and-metadata.json.",
+  "mechanical_result": "All15shape checks,2examples,PRvalidation,strictmetadataaudit and pinneddiffwhitespace pass. Earlier accidental --help probe ran full-tree generated-output checks and failed on stale index/llms; correct PRmode passed. See validation.json.",
+  "limits": [
+    "Complete commencement and subsequent amendment/instrument chain, operative2026 consolidation and additional exemptions/earnings ceiling were not proved.",
+    "Printed included-allowance \u201ccost of leaving\u201d interpretation remains unresolved; no silent correction to \u201cliving\u201d.",
+    "PAYE bands/base/deduction/return fields/penalties and separate remittance calendar, minimum wage and generic employer-cost estimate remain held.",
+    "Detailed benefit eligibility/amounts, treaty/social-security agreements, applicable interest rates/conversion/remission and redenominated fines remain held.",
+    "No current e-registration/payment/SS4B-equivalent authentication or successful live filing test.",
+    "No accountant attestation, full-country coverage signoff, merge/publication authority, or repetition of already closed TP source review."
+  ],
+  "next_step": "Writer repairs PR01\u2013PR04,retains pending professional-review fields and all substantive holds,updates rule ledger/hash freeze. Reviewer then performs focused closure against exact repaired hashes.",
+  "edits_by_reviewer": "Only this reviewer evidence directory;noGuide/writerledger/README/manifest/source edits;no commit,push,PRcomment,merge or production write."
+}

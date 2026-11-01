@@ -1,5 +1,5 @@
 {
-  "status": "Writerdraftpendingindependentreview",
+  "status": "source-bound corrections accepted",
   "records": [
     {
       "id": "SC01",
@@ -14,11 +14,11 @@
     {
       "id": "SC02",
       "section": "Who this applies to; Cross-border points",
-      "rule": "Workerdefinition includescontractorwork;SLwork excludingcrew andseparatepermanent-residentcrew/overseaslimbs.",
+      "rule": "Remunerated employment by or through a contractor in or in connection with the normal work of the establishment, subject to remaining worker-definition conditions; Sierra Leone non-crew and separate permanent-resident crew/overseas limbs.",
       "article": "NASSIT Act2001 s.2",
       "pdf_pages": "6-7",
       "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
-      "quote": "outside Sierra Leone for an employer in Sierra Leone",
+      "quote": "in or in connection with the normal work of the establishment",
       "read_on": "2026-11-01"
     },
     {
@@ -74,7 +74,7 @@
     {
       "id": "SC08",
       "section": "The base",
-      "rule": "Noemployersharerecoveryfromworker,nopastemployeedeductionfromlaterpayunlessaccidentalclericalmistakeandwritteninspectorinstructions.",
+      "rule": "No employer-share recovery; no prior-period employee deduction from later pay except accidental mistake OR clerical error, with written Trust-inspector instructions.",
       "article": "NASSIT Act2001 s.25(5)",
       "pdf_pages": "16-17",
       "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
@@ -94,11 +94,11 @@
     {
       "id": "SC10",
       "section": "The base",
-      "rule": "Monthwhollyinvaliditypensionentitlement creditedcontributionratherthanordinarypayablededuction.",
+      "rule": "For a whole month of invalidity-pension entitlement no contribution is payable; credit the contribution on average monthly earnings during the 12 months preceding the month entitlement began.",
       "article": "NASSIT Act2001 s.26",
       "pdf_pages": "17",
       "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
-      "quote": "For any month throughout which a member is entitled",
+      "quote": "a contribution shall not be payable",
       "read_on": "2026-11-01"
     },
     {
@@ -144,11 +144,11 @@
     {
       "id": "SC15",
       "section": "Rates, bands and thresholds; Deadlines and filing",
-      "rule": "Notifybusinessname/address/locationchangeswithin10days.",
+      "rule": "Every employer or self-employed person must furnish the Director-General changed business name, address or location details within 10 days after the change.",
       "article": "NASSIT Regulations2004 reg.2",
       "pdf_pages": "4",
       "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
-      "quote": "within ten",
+      "quote": "employer or self-employed person",
       "read_on": "2026-11-01"
     },
     {
