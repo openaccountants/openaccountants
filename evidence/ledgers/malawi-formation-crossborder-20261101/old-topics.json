@@ -1,0 +1,208 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "old_formation_blob": "457e67f0b642eb9f3c8db1c8ac7407f1e5820acb",
+  "all_pre_cta_body_units": [
+    {
+      "id": "O01",
+      "old_section": "Opening",
+      "exact_old_topic": "# Malawi company formation: tax-registration handoff v1.3",
+      "old_topic_sha256": "823766522a60cf3d0f27c02f9e4dfe47b944b6c6590152ef2fc62fab36116ecf",
+      "destination": "Opening notice; Who this applies to",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O02",
+      "old_section": "Opening",
+      "exact_old_topic": "> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.",
+      "old_topic_sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "Opening notice; Who this applies to",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O03",
+      "old_section": "Who this applies to",
+      "exact_old_topic": "## Who this applies to",
+      "old_topic_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "Who this applies to",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O04",
+      "old_section": "Who this applies to",
+      "exact_old_topic": "**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted [Taxation (Amendment) Act 3 of 2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has now been read in full and its relevant changes are identified in the company, individual and TP drafts. Appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover remain unread; period allocation and the complete operative chain are not approved. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.",
+      "old_topic_sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "Who this applies to",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O05",
+      "old_section": "Who this applies to",
+      "exact_old_topic": "Use to prepare the tax-registration handoff for a newly established company/business. TAA 21(1) requires a business that becomes potentially liable under a tax law to apply for taxpayer registration. This verifies a tax job; it does not validate the company’s legal incorporation, shareholder/director rules or registry fees. [TAA 21](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Keep the existing incorporation documents and current registry requirements as inputs rather than assuming a certificate settles tax registration.",
+      "old_topic_sha256": "28938e00cf604da9e59a24eeb1e6b52d37e45640ab5753998aa379eeef54c235",
+      "destination": "Who this applies to",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O06",
+      "old_section": "Rates, bands and thresholds",
+      "exact_old_topic": "## Rates, bands and thresholds",
+      "old_topic_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "Rates, bands and thresholds",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O07",
+      "old_section": "Rates, bands and thresholds",
+      "exact_old_topic": "| Tax-registration condition | Statutory rule | Official source |\n|---|---|---|\n| Successful registration application | TIN issued within 14 days of receipt through service of certificate | [TAA 22(1)–(2)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |\n| TIN identity/control | One personal TIN at a time, used across tax laws; not transferable | [TAA 22(3)–(5)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |\n| Change to TIN-certificate details | Written notification within 21 days | [TAA 22(7)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |\n| Separate VAT enrolment | Apply the current scope in [VAT](mw-vat-gst.md); company registration alone is insufficient | [Act 5/2026 s 4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content) |",
+      "old_topic_sha256": "c14c0787f92d48cc99afc35dd5b59545d009480f81fa2e8a7a8f76ef76b2b95d",
+      "destination": "Rates, bands and thresholds",
+      "disposition": "Separate VAT enrolment retained in The base handoff; underlying owning VAT Guide and all its review evidence preserved byte-identically."
+    },
+    {
+      "id": "O08",
+      "old_section": "Rates, bands and thresholds",
+      "exact_old_topic": "The 14-day TIN provision is not a promised incorporation time. No minimum company capital, shareholder cap, director number or setup fee is verified in this table.",
+      "old_topic_sha256": "b838d78ad9e9465858e36a349c0401d7eb01709b84b54125b395f71f10b4aebe",
+      "destination": "Rates, bands and thresholds",
+      "disposition": "Minimum capital/fees remain unconfirmed; actual membership/director/no-par provisions now cited separately."
+    },
+    {
+      "id": "O09",
+      "old_section": "The base",
+      "exact_old_topic": "## The base",
+      "old_topic_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "The base",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O10",
+      "old_section": "The base",
+      "exact_old_topic": "Identify the actual legal taxpayer, true identity and existing TIN before preparing the application. Do not create a new company tax identity by reusing a shareholder’s TIN. Reconcile the legal name, incorporation evidence, registered/business addresses, activity, contact details and authorized person against source documents. The prescribed application must be accompanied by the prescribed documentary evidence under 21(4); obtain the actual current form rather than invent a fixed attachment list. [TAA 21–22](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Share-allocation arithmetic below is only a consistency check on supplied records, not a statement of Malawi minimum capital.",
+      "old_topic_sha256": "8a58cc0c171b3e4324986dc976fa0c54c029320fbf9b7188694b7e8d86e26eab",
+      "destination": "The base",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O11",
+      "old_section": "Deadlines and filing",
+      "exact_old_topic": "## Deadlines and filing",
+      "old_topic_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "Deadlines and filing",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O12",
+      "old_section": "Deadlines and filing",
+      "exact_old_topic": "Check for an existing TIN; assemble the current prescribed registration form and documentary identity evidence; resolve inconsistencies; submit through the actual MRA registration channel; retain submission proof; obtain the TIN certificate and verify the legal person/details. Under 22(5), true identity and no existing TIN are conditions to issuance. Use that TIN on tax claims, notices, returns and statements under 23(1). Notify certificate-detail changes in writing within 21 days. Then determine company-income-tax, VAT, payroll/pension and licence obligations separately with their own sources. [TAA 21–23](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). The actual registry sequence, portal fields and tax-type activation acknowledgements remain outside this verified handoff.",
+      "old_topic_sha256": "81f43c7050b829d3aaa2c0b349267042ec2c1ff054337a2ea141ea7332872b68",
+      "destination": "Deadlines and filing",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O13",
+      "old_section": "Penalties and interest",
+      "exact_old_topic": "## Penalties and interest",
+      "old_topic_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "Penalties and interest",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O14",
+      "old_section": "Penalties and interest",
+      "exact_old_topic": "TAA 22(6) allows the Commissioner General to register a taxpayer that failed to register for appropriate tax types;23 prohibits false representation of a TIN. Tax registration does not cure missed filings or payments. Do not quote an unverified registry penalty or current company filing fee. [TAA 22–23](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content).",
+      "old_topic_sha256": "e88fe2a02af79605ee869a57541b9cf0a503859519a226946e693dc32b6649e4",
+      "destination": "Penalties and interest",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O15",
+      "old_section": "Cross-border points",
+      "exact_old_topic": "## Cross-border points",
+      "old_topic_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "Cross-border points",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O16",
+      "old_section": "Cross-border points",
+      "exact_old_topic": "If a non-resident with no fixed place of business is required to register, TAA 28(2) requires a representative taxpayer in Malawi. That is a tax representation rule; it does not prove a company-law resident-director requirement or a treaty residence result. [TAA 28(2)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content).",
+      "old_topic_sha256": "bc219fd125eaafc65b4d44aaed9eb3478c82848691446de71034bc665a384eb1",
+      "destination": "Cross-border points",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O17",
+      "old_section": "Two worked examples that recompute",
+      "exact_old_topic": "## Two worked examples that recompute",
+      "old_topic_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "Two worked examples that recompute",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O18",
+      "old_section": "Two worked examples that recompute",
+      "exact_old_topic": "Hypothetical capital amounts supplied in incorporation records, equal-rights cash shares only. These are arithmetic consistency controls, with no asserted statutory minimum or filing fee.",
+      "old_topic_sha256": "661be3a0d25a461c9b5a9b330c732f4935a55f55d15fd2be66d211da74fdcda8",
+      "destination": "Two worked examples that recompute",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O19",
+      "old_section": "Two worked examples that recompute",
+      "exact_old_topic": "```oa-check\nname: Share allocation reconciles supplied capital\ninputs:\n  shares_a: 60\n  shares_b: 40\n  nominal: 1000\nsteps:\n  - shares: shares_a + shares_b\n  - capital: shares * nominal\nexpected:\n  shares: 100\n  capital: 100000\n```",
+      "old_topic_sha256": "03664f8f89f7573ea954627c7d5beecfa58075bc04582dc55e88386f9696087f",
+      "destination": "The base; Two worked examples that recompute",
+      "disposition": "Old nominal-share arithmetic replaced explicitly by no-par consideration and private-member decision cases; historical assumptions are identified, not asserted as current law."
+    },
+    {
+      "id": "O20",
+      "old_section": "Two worked examples that recompute",
+      "exact_old_topic": "```oa-check\nname: Single shareholder supplied capital\ninputs:\n  shares: 500\n  nominal: 200\nsteps:\n  - capital: shares * nominal\nexpected:\n  capital: 100000\n```",
+      "old_topic_sha256": "014873948ede511648043187d9c4c48af3fa3b40bc694a9457b3b8b7d95186d4",
+      "destination": "The base; Two worked examples that recompute",
+      "disposition": "Old nominal-share arithmetic replaced explicitly by no-par consideration and private-member decision cases; historical assumptions are identified, not asserted as current law."
+    },
+    {
+      "id": "O21",
+      "old_section": "Ask the client first",
+      "exact_old_topic": "## Ask the client first",
+      "old_topic_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "Ask the client first",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O22",
+      "old_section": "Ask the client first",
+      "exact_old_topic": "Get incorporation/legal-form evidence, shareholder/director consents and identity as required by the actual registry, legal name/address/activity, existing TINs, intended tax types, authorized representative and contact details, payroll/fund facts, current registry form/fee schedule and MRA registration requirements.",
+      "old_topic_sha256": "5472b32c9cb3e917c38e3ff3a09bb952dc34263c5ec589760d45c475722424f0",
+      "destination": "Ask the client first",
+      "disposition": "Retained or expanded with cited company-law scope and the unchanged currentness hold."
+    },
+    {
+      "id": "O23",
+      "old_section": "Sources",
+      "exact_old_topic": "## Sources",
+      "old_topic_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "Sources",
+      "disposition": "Prior TAA source preserved; newly read company-law provisions close only their bounded text gaps. Currentness, forms/fees and listed drafting anomalies remain held."
+    },
+    {
+      "id": "O24",
+      "old_section": "Sources",
+      "exact_old_topic": "| Official source and portions actually read | Read on |\n|---|---|\n| [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 21–23 and 28(2) read in full | 2026-11-01 |\n| [VAT Act 5/2026](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), s 4 registration categories | 2026-11-01 |",
+      "old_topic_sha256": "b9b2e00c5ccbe59c9719377854952bca4fdccdfd02fd97245c5e30bd471a8449",
+      "destination": "Sources",
+      "disposition": "Prior TAA source preserved; newly read company-law provisions close only their bounded text gaps. Currentness, forms/fees and listed drafting anomalies remain held."
+    },
+    {
+      "id": "O25",
+      "old_section": "Sources",
+      "exact_old_topic": "**Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, restricted share transfers, statutory registers, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.",
+      "old_topic_sha256": "c51626f1a0167011c8b3cc1b6a338c32210263ac510ee6344ead39074e7403a3",
+      "destination": "Sources",
+      "disposition": "Prior TAA source preserved; newly read company-law provisions close only their bounded text gaps. Currentness, forms/fees and listed drafting anomalies remain held."
+    }
+  ],
+  "cta": "Whole suffix retained byte-identically",
+  "new_crossborder": "Absent at immutable base; new job, no old topics displaced"
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "X01",
+    "guide_section": "Who this applies to; The base",
+    "rule": "The principal inclusive residence definition includes the 183-day test and local entities; PE includes an office or fixed business place.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 2",
+    "physical_or_printed_pages": "14–15",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "183",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X02",
+    "guide_section": "Who this applies to; The base",
+    "rule": "Income includes actual or deemed Malawi-source cash, noncash amounts and capital gains; assessable income excludes exemptions.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 11",
+    "physical_or_printed_pages": "19",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "his assessable",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X03",
+    "guide_section": "Rates, bands and thresholds; The base; example1",
+    "rule": "Nonresident final tax requires Malawi source and no attribution to the recipient PE; the cited rate is 15% of gross.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 76A(1)",
+    "physical_or_printed_pages": "54",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "15 per",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X04",
+    "guide_section": "The base",
+    "rule": "First Schedule income/amounts and pension or annuity payments are excluded from section 76A.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 76A(3)",
+    "physical_or_printed_pages": "54",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "any pension or annuity payment",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X05",
+    "guide_section": "Rates, bands and thresholds",
+    "rule": "The 2023 amendment inserts the effective-management phrase into 76A(1).",
+    "source_key": "tax2023",
+    "act_article": "Act 17/2023 s 5",
+    "physical_or_printed_pages": "4",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content",
+    "short_exact_original_language_quote": "and having a place of effective management",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X06",
+    "guide_section": "Rates, bands and thresholds",
+    "rule": "The 2024 amendment deletes that phrase; the separately appointed Part II date is distinguished.",
+    "source_key": "tax2024",
+    "act_article": "Act 12/2024 ss 1,4",
+    "physical_or_printed_pages": "1–2",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content",
+    "short_exact_original_language_quote": "and having a place of effective management",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X07",
+    "guide_section": "The base",
+    "rule": "Services/trade in Malawi have a source rule independent of payer residence or payment location.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(1)(a)",
+    "physical_or_printed_pages": "25",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "wherever payment",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X08",
+    "guide_section": "The base",
+    "rule": "PE-deduction-connected services can be sourced in Malawi even when worked abroad.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(1)(d)",
+    "physical_or_printed_pages": "26",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "wherever such services, work or labour",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X09",
+    "guide_section": "The base",
+    "rule": "PE-connected amounts have a deemed source regardless of recipient residence or payment place.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(5)",
+    "physical_or_printed_pages": "26",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "regardless of the place of residence",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X10",
+    "guide_section": "The base",
+    "rule": "Dividends attributable to taxable income of a Malawi-incorporated company have a deemed Malawi source.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(4)",
+    "physical_or_printed_pages": "26",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "Any dividend attributable to taxable income",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X11",
+    "guide_section": "The base",
+    "rule": "Separate source rules cover PE/Malawi-held foreign currency and Malawi property/company-interest gains.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(6)–(7)",
+    "physical_or_printed_pages": "26",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "property located in Malawi",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X12",
+    "guide_section": "The base",
+    "rule": "Pension source has a wholly-outside-service exception and proportionate rule; state service abroad has a sole-purpose condition.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 27(1)(b)–(c)",
+    "physical_or_printed_pages": "25–26",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "performed wholly outside Malawi",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X13",
+    "guide_section": "Deadlines and filing",
+    "rule": "Accrual, payment, remittance and crediting trigger deduction; the cited text requires remittance forthwith.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 76A(2)",
+    "physical_or_printed_pages": "54",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "to remit it forthwith",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X14",
+    "guide_section": "The base",
+    "rule": "The 2025 amendment removes foreign-company/nonresident additional 5% provisos.",
+    "source_key": "tax-may2025",
+    "act_article": "Act 14/2025 s 3",
+    "physical_or_printed_pages": "1–2",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content",
+    "short_exact_original_language_quote": "not incorporated in Malawi",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X15",
+    "guide_section": "The base",
+    "rule": "Later MAT/company amendments are separate; no blanket foreign-company 35% claim is made.",
+    "source_key": "tax-dec2025",
+    "act_article": "Act 36/2025 ss 3–6",
+    "physical_or_printed_pages": "3–5",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content",
+    "short_exact_original_language_quote": "the higher of",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X16",
+    "guide_section": "The base; Sources",
+    "rule": "Actual Act 3/2026 scope is distinguished; it is not a complete rewrite of 76A or the foreign-credit formula.",
+    "source_key": "taxation-act3-2026-media",
+    "act_article": "Act 3/2026 ss 11–13",
+    "physical_or_printed_pages": "1–6",
+    "url": "https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf",
+    "short_exact_original_language_quote": "nine years",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X17",
+    "guide_section": "The base; Rates, bands and thresholds; example2",
+    "rule": "Agreement-based foreign credit depends on an applicable agreement and included foreign income, capped by A × B / C.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 123(1)–(3)",
+    "physical_or_printed_pages": "80–81",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "A is the amount of the foreign income",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X18",
+    "guide_section": "The base; example2",
+    "rule": "Total credit has a domestic-tax ceiling, and later foreign-tax changes require corresponding adjustment.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 123(3)",
+    "physical_or_printed_pages": "81",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "shall not exceed the total tax chargeable",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X19",
+    "guide_section": "The base",
+    "rule": "No-agreement relief applies to a person in Malawi or a person outside Malawi deemed to derive Malawi-source income under 27(1)(c); proof of tax on the same income and a request are required, with 123(3) caps.",
+    "source_key": "tax-principal",
+    "act_article": "Taxation Act 124",
+    "physical_or_printed_pages": "81",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+    "short_exact_original_language_quote": "proves to the satisfaction of the Commissioner",
+    "read_on": "2026-11-01",
+    "additional_quotes": [
+      "any person in or any person outside Malawi",
+      "terms of section 27(1)(c)"
+    ]
+  },
+  {
+    "id": "X20",
+    "guide_section": "Deadlines and filing",
+    "rule": "Treaty priority is conditional on the Minister’s gazetted implementation order.",
+    "source_key": "taa-2021",
+    "act_article": "TAA 4(1)–(2)",
+    "physical_or_printed_pages": "11",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+    "short_exact_original_language_quote": "brought into force by order of the Minister",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X21",
+    "guide_section": "Rates, bands and thresholds; Cross-border points",
+    "rule": "The nonresident entity/50% underlying-ownership barrier and look-through definition apply to the specified relief.",
+    "source_key": "taa-2021",
+    "act_article": "TAA 4(6)–(7)",
+    "physical_or_printed_pages": "12",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+    "short_exact_original_language_quote": "fifty percent or more",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X22",
+    "guide_section": "Deadlines and filing",
+    "rule": "Pre-commencement international agreements continue under the TAA transition provision.",
+    "source_key": "taa-2021",
+    "act_article": "TAA 129(1)",
+    "physical_or_printed_pages": "80",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+    "short_exact_original_language_quote": "continues to have effect under this Act",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X23",
+    "guide_section": "Penalties and interest",
+    "rule": "Failure to withhold creates personal liability for the amount; manager liability and the care defence are separate.",
+    "source_key": "taa-2021",
+    "act_article": "TAA 73(1)–(6)",
+    "physical_or_printed_pages": "52",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+    "short_exact_original_language_quote": "personally liable to pay the amount",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X24",
+    "guide_section": "Cross-border points",
+    "rule": "The 2021 appointed date remains held: old 122 is deleted, 123/124 refer to the TAA and old Part VIII is deleted.",
+    "source_key": "misc2021",
+    "act_article": "Act 15/2021 s 1 and Schedule",
+    "physical_or_printed_pages": "1,2,6",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content",
+    "short_exact_original_language_quote": "in accordance",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "X25",
+    "guide_section": "Cross-border points",
+    "rule": "A registrable nonresident without a fixed business place needs a local tax representative.",
+    "source_key": "taa-2021",
+    "act_article": "TAA 28(2)",
+    "physical_or_printed_pages": "23–24",
+    "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+    "short_exact_original_language_quote": "shall appoint a representative taxpayer in Malawi",
+    "read_on": "2026-11-01"
+  }
+]

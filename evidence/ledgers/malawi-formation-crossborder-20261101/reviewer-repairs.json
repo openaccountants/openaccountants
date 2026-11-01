@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "changes": [
+    "M1 Companies360(1)(e) foreign-company exclusion restored, no natural-person-only claim",
+    "M2 exactTaxation124 eligibility gate restored, same-income/proof/request/caps and appointed-commencement hold preserved",
+    "M3 cached registrarHTML identity and narrow public-link read scope added"
+  ],
+  "actual_parent_reads": "OriginalCompanies2013physical206 visuallyread; Taxation124and27(1)sourcecontext read; actualcachedregistrarHTMLanchorlinks inspected",
+  "candidate_files": {
+    "skills/malawi/mw-company-formation.md": "699a2b9c0d846980782e1552fa06fda37145e19e970fdcbce1d0d85313854876",
+    "skills/malawi/mw-cross-border-tax.md": "8f005e795603b73881acc925e8061464c0be0522cd665ebe8ecfa6c02cbbbf18",
+    "evidence/ledgers/malawi-formation-crossborder-20261101/mw-company-formation.json": "9086d84a2c07f8d3620971e76c3413ee78785efded484c940095abd281e611c5",
+    "evidence/ledgers/malawi-formation-crossborder-20261101/mw-company-formation.md": "def49a87303f8cbadb4efa59c2b73017d8b8ad77e5aa3f55f05fd8413b6f9326",
+    "evidence/ledgers/malawi-formation-crossborder-20261101/mw-cross-border-tax.json": "24b1e15bd8a1ef03bb5f88a5f877d7caf8d555d4908c10c109c3c01a542d80a5",
+    "evidence/ledgers/malawi-formation-crossborder-20261101/mw-cross-border-tax.md": "dcd4c30a6971b8ef59ffe1265371f7df6410240ac620fdf24bdebd93bfa7b06b",
+    "evidence/ledgers/malawi-formation-crossborder-20261101/source-read-manifest.json": "b2a1c0a5c5ad5f8e4ac70257562591c146883241da781a946c8f92f58f296e53"
+  },
+  "limits": "F4 and every prior currentness/live-use stop remain open"
+}

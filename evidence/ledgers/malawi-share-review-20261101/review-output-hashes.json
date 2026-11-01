@@ -1,0 +1,24 @@
+{
+  "immutable_review_inputs_and_outputs": {
+    "evidence/ledgers/malawi-share-review-20261101/all-row-verdicts.json": "a69794d3b44c7127bc098bb71653c50037f0f57953097b59385a20978b17067b",
+    "evidence/ledgers/malawi-share-review-20261101/allowed-status-literals.json": "3a0d07ff184cbf8d2a51cd4a78063aadb229b0bb064617765410b2efa43f8dbf",
+    "evidence/ledgers/malawi-share-review-20261101/check-review.py": "1987f1da5928724992a8dbcffa798c971aa68a0c9b069db942ce995508db5a49",
+    "evidence/ledgers/malawi-share-review-20261101/committed-validation.json": "0ae5bb53fa35b68b998d59a9a9bdcd629f3db618ee94f0ba88f3941938385626",
+    "evidence/ledgers/malawi-share-review-20261101/frozen-and-preservation.json": "c46d025a4937a1eaadaf40c649732abe028651dc667e90a6039dd6e38ef9f4f8",
+    "evidence/ledgers/malawi-share-review-20261101/frozen-writer-inputs.json": "01ce14aa38fcf7fb10bd166a96119aa718de340f293cb45fe8f53bc4b6e3a8bd",
+    "evidence/ledgers/malawi-share-review-20261101/independent-cases.json": "ba186800da39bbe2c0737c458ec0bad98f19e84ac98e56a456f65d2841560443",
+    "evidence/ledgers/malawi-share-review-20261101/initial-harness-failure.json": "cefb9b9f899fccb52c2e613e5d4abc764d2f48d0c5f5b0e1bd68caf02f78a47e",
+    "evidence/ledgers/malawi-share-review-20261101/old-topics.json": "cbad8d94f7879d519617fc8d599359a6e2009acab40c6e590abbb4be96a474a1",
+    "evidence/ledgers/malawi-share-review-20261101/review.md": "9cbbc9d76d83013ee5ebca8d241b995225793849793ba04100c6f169a0eb59ec",
+    "evidence/ledgers/malawi-share-review-20261101/source-reads.json": "7afeb419107a99980153a05ca24556c4d29b25720fe3a424db7993083e7e0656"
+  },
+  "review_date": "2026-11-01",
+  "reviewer": "fresh independent AI reviewer",
+  "finding_count": 0,
+  "disposition": "ACCEPT_CONDITIONAL_CITED_TEXT_FIDELITY_ONLY",
+  "F4": "OPEN",
+  "all_seven_domains": "partial",
+  "current_law_accepted": false,
+  "live_use_accepted": false,
+  "accountant_attestation": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "prospective exact literals only; reviewer did not edit README",
+  "path": "skills/malawi/README.md",
+  "before_sha256": "d76e06c4ab451956cb1f2d77f5e63a9cb5ae0f8096ff2f818067591d07411bd8",
+  "literal_replacements": [
+    {
+      "before": "No current-year source acceptance or publication approval is claimed.",
+      "after": "No current-year or live-use acceptance is claimed. Conditional research publication is accepted only under the focused disposition below; F4 remains open."
+    },
+    {
+      "before": "Independent review remains unaccepted because the currentness finding is open.",
+      "after": "Operative-current-law acceptance remains withheld because F4 is open; conditional research publication is accepted only under the focused disposition below."
+    },
+    {
+      "before": "Fresh independent review accepts this new job for cited-text fidelity only; F4, currentness, appointed-cutover, live-use, publication and accountant-attestation holds remain.",
+      "after": "Fresh independent review accepts this new job for cited-text fidelity only; F4, currentness, appointed-cutover, live-use, publication-currentness and accountant-attestation holds remain."
+    }
+  ],
+  "append_exactly": "\n## Focused corporate correction and conditional publication\n\nThe [focused independent review](../../evidence/ledgers/malawi-corporate-label-review-20261101/review.md) accepts the corporate v1.4 correction at SHA-256 `8c7103980ebe451c36547efa01dff3da3ef9d5b8461740fe8c81147016ea14d1`. The active corporate Guide now holds the unresolved (hb)/(hc) paragraph chain without approving either removal or continuing exemption. The [additive correction ledger](../../evidence/ledgers/malawi-corporate-label-repair-20261101/correction-ledger.md) supersedes the old corporate ledger row 12 and destination-map removal description for current reading; those historical files remain unchanged.\n\nThe reviewed PR 1216 formation, cross-border and listed-share additions, together with this bounded corporate correction, are accepted for publication as conspicuously conditional, partial source research. This supersedes only the blanket publication nonacceptance in the [earlier focused closure](../../evidence/ledgers/malawi-review-closure-20261101/closure.md), the [Act 3 delta review](../../evidence/ledgers/malawi-act3-review-20261101/review.md) and their corresponding historical README checkpoint wording. Their operative-law and live-use findings remain effective. Historical findings and receipts remain immutable; the older references to no publication acceptance do not bar this conditional research publication.\n\nF4 remains OPEN. Actual appointed TAA/2021 cutover notices including the identified GN 21/23 chain, complete operative/currentness chain, general-law commencement and period allocation, the paragraph-label mismatch and every other stated job hold remain unresolved. All nine Guides retain their live-use stops, and all seven domains remain partial. No operative 2026 position, live calculation, withholding, payment, filing, accountant attestation or country completion is approved. The earlier 67-record/four-case and 29-record/two-case acceptances retain their original boundaries. This is content publication readiness only; required GitHub checks and a genuine native approving review remain separate merge gates.\n",
+  "expected_after_sha256": "e54c0462fb2e83451ea42ade023706bec0221e8b3981ad8eddeaeeb32eb01d48",
+  "expected_after_git_blob": "ecdf04d07249ced1c1c17aa0cb755b19f230c03c",
+  "restrictions": "Apply each once and append once; no rules, figures, examples, trust fields, hold removal, partial-domain change or historical receipt edits authorised. Preserve a separate parent reconciliation receipt."
+}

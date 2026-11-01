@@ -1,0 +1,56 @@
+{
+  "stage": "pre-commit",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "actual_head": "067535f8a04a85f74271816950766a46b7541a15",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/malawi/mw-listed-share-withholding.md"
+      ],
+      "exit": 0,
+      "stdout": "skills/malawi/mw-listed-share-withholding.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/malawi/mw-listed-share-withholding.md",
+        "skills/malawi/mw-company-formation.md",
+        "skills/malawi/mw-cross-border-tax.md"
+      ],
+      "exit": 0,
+      "stdout": "checked 3 files, 6 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--strict-metadata",
+        "--worktree"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_pass": false,
+  "harness_failure": "AssertionError in README restoration check: harness added an extra newline after splitting before appended heading; diff showed only that harness-created blank line. No content-preservation failure."
+}

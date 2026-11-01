@@ -1,0 +1,75 @@
+{
+  "content_head": "b0896ee43b19a31a312e783d65b44d22a5d52038",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit": 0,
+      "stdout": "changed-only mode: validating 5 changed guide file(s)\nchecked 4 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/malawi/mw-listed-share-withholding.md: MW PR also holds mw-payroll-social, with a different job\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/malawi/mw-corporate-income-tax.md",
+        "skills/malawi/mw-company-formation.md",
+        "skills/malawi/mw-cross-border-tax.md",
+        "skills/malawi/mw-listed-share-withholding.md"
+      ],
+      "exit": 0,
+      "stdout": "checked 4 files, 8 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--strict-metadata",
+        "--head",
+        "b0896ee43b19a31a312e783d65b44d22a5d52038"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/malawi/mw-corporate-income-tax.md"
+      ],
+      "exit": 0,
+      "stdout": "skills/malawi/mw-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "b0896ee43b19a31a312e783d65b44d22a5d52038"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_pass": true,
+  "prior_unchanged_paths": 93,
+  "corporate_and_readme_expected_hashes_match": true,
+  "all_independent_review_files_exact": true,
+  "diff_aid_original_bytes_preserved": true,
+  "publication": "READY_WITH_STATED_PARTIAL_SCOPE",
+  "F4": "OPEN",
+  "operative_current_law_and_live_use_approved": false
+}

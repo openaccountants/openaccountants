@@ -1,0 +1,63 @@
+{
+  "scope": "actual independent working-tree command invocations; no committed CI or current-law acceptance",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/malawi/mw-corporate-income-tax.md"
+      ],
+      "returncode": 0,
+      "result": "All15checks pass; actual independent invocation in this review."
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/malawi/mw-corporate-income-tax.md",
+        "skills/malawi/mw-company-formation.md",
+        "skills/malawi/mw-cross-border-tax.md",
+        "skills/malawi/mw-listed-share-withholding.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 4 files, 8 oa-check blocks, 0 failures, 0 missing\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--strict-metadata",
+        "--worktree"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "returncode": 0,
+      "stdout": ""
+    }
+  ],
+  "corporate_independent_arithmetic": {
+    "case1": {
+      "ordinary": 6000000,
+      "mat": 50000000,
+      "payable": 50000000,
+      "new_credit": 44000000
+    },
+    "case2": {
+      "ordinary": 1900000000,
+      "mat": 100000000,
+      "valid_credit": 44000000,
+      "payable": 1856000000
+    }
+  }
+}

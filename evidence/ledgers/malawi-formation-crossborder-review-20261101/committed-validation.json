@@ -1,0 +1,9 @@
+{
+  "content_commit": "c36c1d1b89b3d51e3e830c6709456371fc0ae3c5",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "committed_changed_validator": "2 actual Guides; zero warnings",
+  "strict_audit": "2 source Guides; zero errors/warnings/notices",
+  "examples": "Four repaired candidate cases pass.",
+  "whole_base_whitespace": "pass",
+  "source_scope": "Exact independent conditional source closure; all stated gaps and holds remain"
+}
