@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-cross-border-withholding.md",
+  "sha256": "bf25485fa399c071e8e5fcc885edb946d041f4049a876ca95bee3a268b65628c",
+  "source": "https://agoyemen.net/lib_details.php?id=198",
+  "locators": [
+    "2–4: definitions, residence and permanent establishment",
+    "68: incidental commission/brokerage, credit and remittance",
+    "71(a): payer/recipient scope, 10% gross basis and exclusions",
+    "71(b): government/local-authority borrowing exemption",
+    "71(c): statement copies and 15 days from deduction"
+  ],
+  "checks": "Targeted schema passed without warnings; two executable examples passed",
+  "review": "Independent full source/editorial review by review_gi_minimum found no material defects at recorded hash; both examples passed. No professional attestation.",
+  "limitations": [
+    "Current amendments and administrative applicability unresolved",
+    "No treaty rates or relief process verified",
+    "No final-tax/credit conclusion for article71",
+    "Local draft, no professional attestation"
+  ]
+}

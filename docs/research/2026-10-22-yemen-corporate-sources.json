@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-corporate-income-tax.md",
+  "sha256": "fcfed6852d293ae55df24b14cd9f0ec4a8201eb3b5e9aa363d41b8a02cb64904",
+  "sources": [
+    {
+      "url": "https://agoyemen.net/lib_details.php?id=198",
+      "locators": [
+        "13: deduction conditions",
+        "19: five-year loss carry and 100% ownership change",
+        "63: ordinary and selected special rates",
+        "88: ten-year records",
+        "95–96: return/payment and certification",
+        "162: return/objection holidays"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/8-2021/",
+      "locators": [
+        "Issuing authority and 3 May 2020 date",
+        "Article 1 adding 160(c): small-business exemption and exclusions"
+      ]
+    }
+  ],
+  "ownership_check": "Shared OWNERS assigns Middle East to Michael. No Yemen issue in current title search; no accepted country-specific assignment invented. Shared main and Ryan main had no Yemen directory; Ryan tree response truncated=false. Unpublished contributor work not ruled out.",
+  "review": "Independent source/editorial review completed by review_gi_minimum; no material defects; both calculations passed. No professional attestation.",
+  "checks": "One Guide schema passed without warnings; two executable examples passed",
+  "limitations": [
+    "Full current amendment chain unresolved",
+    "Administration-specific applicability unresolved",
+    "No publication or professional attestation",
+    "No complete corporate or country coverage"
+  ]
+}
