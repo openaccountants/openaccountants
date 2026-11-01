@@ -1,0 +1,56 @@
+{
+  "T": {
+    "file": "tax-booklet-2026.pdf",
+    "title": "Israel Tax Authority, 2026 salary deduction booklet, updated April 2026",
+    "url": "https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf",
+    "scope": "Printed/PDF pp. 1-4 and 10-13 read for publication scope, freeze, reform, earned/unearned bands, separate surtax bases, credit value and limits; selected s.3(i) and one-off-payment rows on p.15. No full-document or final legal acceptance.",
+    "read_on": "2026-11-01",
+    "sha256": "de6fee7208bdde4ec8b8731be95bcea2106aba449d949e5e646c2a0d5f2182a1",
+    "acquisition": "ordinary browser download after direct 403"
+  },
+  "G": {
+    "file": "rights-guide-2025.pdf",
+    "title": "Israel Tax Authority, Know Your Rights and Duties, tax year 2025, published July 2026",
+    "url": "https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf",
+    "scope": "Selected sections: PDF p.7 refund/online filing; p.8 six-year refund paragraph; pp.21,40,48-49,54,58,84,91; pp.118-120 advances/withholding; pp.139-142 VAT annex. Printed pages are PDF minus 2. This is a research read, not acceptance of all provisions. The 2025 annual-return figures do not prove 2026 figures; VAT annex expressly names January 2026 values.",
+    "read_on": "2026-11-01",
+    "sha256": "5012033e55e0c415a3b50a797acb2d5b5ddae06e2bdbe16c466c78baec9960d0",
+    "acquisition": "ordinary browser download after direct 403"
+  },
+  "C": {
+    "file": "crypto-circular-5-2018.pdf",
+    "title": "Israel Tax Authority Circular 5/2018, distributed payment assets",
+    "url": "https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf",
+    "scope": "All six pages, including scope, classification, barter, business/mining distinction, VAT and audit evidence. Does not establish FIFO, staking, DeFi or a universal crypto tax rate.",
+    "read_on": "2026-11-01",
+    "sha256": "4c285e7db078567e61f8d955448283b57df9ed622e4d245b8c30902fc1ed2259",
+    "acquisition": "ordinary browser download after direct 403"
+  },
+  "R": {
+    "file": "reporting-circular-4-2026.pdf",
+    "title": "Israel Tax Authority Circular 4/2026, Form 150",
+    "url": "https://www.gov.il/BlobFolder/policy/professional-directives-180226-1/he/IncomeTax_professional-directives-180226-1.pdf",
+    "scope": "Printed/PDF pp. 1-4: scope, conditional annual-return attachment, and section 2.1.2 immigrant/returner reporting cutover. Remaining detailed form sections not accepted.",
+    "read_on": "2026-11-01",
+    "sha256": "990c91e3270bb60cb8d045aa905889bb6ac6d0ed58585d02e0e86b4518e37e93",
+    "acquisition": "ordinary browser download after direct 403"
+  },
+  "N": {
+    "file": "btl-self-employed.html",
+    "title": "National Insurance Institute, self-employed contribution rates",
+    "url": "https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx",
+    "scope": "Working-age table, January 2026 band/ceiling, age/retirement exceptions and minimum income. Reuses prior independent acceptance of eight insurance figures; current full HTML cached with normal TLS.",
+    "read_on": "2026-11-01",
+    "sha256": "6e30c2acc67740e26be86f1d4ef23f6a257af3d265d6c0e805d6995878684304",
+    "acquisition": "normal TLS direct fetch"
+  },
+  "P": {
+    "file": "btl-employees.html",
+    "title": "National Insurance Institute, employee contribution rates",
+    "url": "https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx",
+    "scope": "January 2026 band and ceiling plus column 2 controlling-shareholder working-age table; neighbouring ordinary/other-age employee conditions read. Totals only, not an inferred health split.",
+    "read_on": "2026-11-01",
+    "sha256": "bcfd8d4d82e400daf51e707fe5f9c630036d7eac6dd5b17099f2a77e4804952d",
+    "acquisition": "normal TLS direct fetch"
+  }
+}
