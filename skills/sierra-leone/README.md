@@ -11,11 +11,11 @@ covered_by:
   TP: sl-transfer-pricing
   XB: sl-cross-border
 partial:
-  IT-IND: "Source-bound2026 income/PAYE rewrite; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen;reviewpending."
+  IT-IND: "Source-bound2026 income/PAYE rewrite; independent source corrections closed; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen."
   IT-CORP: "Source-bound2026 corporate rewrite; independent source corrections closed; MAT schedule/currentness, full deductions/regimes and return fields remain open."
   VAT: "Existing 2025 Guide retained;2026 GST/digital, input, invoicing and filing changes not yet reconciled."
   SC: "NASSIT source-bound2026 rewrite,28ledger rows; source review closed; later amendments/exemptions/ceiling and current payment implementation remain unresolved."
-  PR: "Payroll Guide refreshed for NASSIT; income/PAYE source rewrite is linked, with independent review pending; current methods, forms and full amendment chain remain open."
+  PR: "Payroll Guide refreshed for NASSIT; income/PAYE source rewrite is linked, with independent source corrections closed; current methods, forms and full amendment chain remain open."
   TP: "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
   XB: "New residence/foreign-income source-bound Guide; independent source corrections closed; unofficial2017baseline/currentchain,treaties and withholdingprocedure remain unresolved."
 ---
@@ -26,7 +26,7 @@ Five source drafts now: income/PAYE, transfer pricing, NASSIT/payroll, corporate
 
 | Tax/job | Guide | Actual state |
 |---|---|---|
-| Income tax | [Income tax](sl-income-tax.md) | New source-bound2026 rewrite; independent review pending |
+| Income tax | [Income tax](sl-income-tax.md) | Source-bound2026 rewrite; independent source corrections closed, methods/currentness holds remain |
 | Company tax | [Corporate income tax](sl-corporate-income-tax.md) | Source-bound2026 corporate rewrite; independent source corrections closed, currentness/filing holds remain |
 | Goods and services tax | [GST](sl-vat-gst.md) | Legacy 2025; refresh in progress |
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
@@ -50,3 +50,5 @@ The corporate delta maps all15oldtopics in [its preservation record](../../evide
 The new cross-border workpaper has [18 grouped source-ledger records](../../evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md); its presence does not close XB.
 
 The income/PAYE rewrite maps [all12oldtopics](../../evidence/ledgers/sierra-leone-income-20261101/old-topics.md) and records [28groupedsource rules](../../evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md). Its actual PAYE-form link failure is explicit, not treated as a completed filing method.
+
+Income/PAYE independent review checked all28groupedrules,12oldtopics and bothcases. Four corrections closed against the [exact repaired candidate](../../evidence/ledgers/sierra-leone-income-review-20261101/closure.json): domestic-assistant valuation, complying-fund deduction scope, employer annual-statement timing and monthly penalty classification. This accepts conditional source-reference work only; full2026chain and live forms remain open.

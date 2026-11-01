@@ -92,7 +92,7 @@
     {
       "id": "I09",
       "section": "The base",
-      "rule": "Housingmarketlesspayment;utilitiesactual;assistant/mealcostlesscontribution;waiveramount;vehiclescheduleheld.",
+      "rule": "Housing market less payment; utilities actual; domestic assistant total employment income paid for employee services less employee payment; meals employer cost less employee consideration; waiver amount; vehicle schedule held.",
       "article": "ITA23(2)",
       "source_id": "ITA",
       "pdf_pages": "25",
@@ -191,8 +191,8 @@
     {
       "id": "I18",
       "section": "The base",
-      "rule": "Otherpensionindividual30%employmentincomelessemployerforbenefit;fullcurrentinteractionheld.",
-      "article": "ITA38",
+      "rule": "Contributions to complying retirement fund: individual30% employment income less employer contributions for benefit; s38(3) other pension/annuity acquisition expense against receipts under NinthSchedule4, not same employment deduction; current interaction held.",
+      "article": "ITA38(1)-(3)",
       "source_id": "ITA",
       "pdf_pages": "35",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
@@ -246,8 +246,8 @@
     {
       "id": "I23",
       "section": "Deadlines and filing",
-      "rule": "Employeecertificate28daysyearend/7dayscessation;filerattaches;employerrecords/annualstatement.",
-      "article": "ITA127-128",
+      "rule": "Employee certificate28days yearend/7days cessation; filer attaches; employer records and prescribed annual statement within28days yearend or Commissioner extension.",
+      "article": "ITA127-128, especially128(2)",
       "source_id": "ITA",
       "pdf_pages": "78-79",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
@@ -268,10 +268,10 @@
     {
       "id": "I25",
       "section": "Penalties and interest",
-      "rule": "Monthlylate large5000/medium2500/small500;nonfiler10000/5000/1000;annualdistinct.",
-      "article": "FA2025 s10,150(1)(c)-(d)",
+      "rule": "Monthly late large5000/medium2500/small500; nonfiler10000/5000/1000; 97A filing within30days late/after30days nonfiler; annual distinct.",
+      "article": "FA2025 ss9-10;97A;150(1)(c)-(d)",
       "source_id": "F25",
-      "pdf_pages": "9",
+      "pdf_pages": "8-9",
       "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
       "quote": "large taxpayer    - NLe5,000.00",
       "read_on": "2026-11-01"
