@@ -1,50 +1,55 @@
 ---
 name: zambia-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Zambia VAT return. Standard rate 16%. Unique 100% withholding VAT mechanism. ALWAYS read before handling Zambia VAT work.
-version: 2.0
+description: "Use this skill to prepare, review or classify transactions for a Zambia VAT return for 2026: 16% rate, K800,000 registration threshold, Smart Invoice input tax rule, reverse VAT, blocked input tax, monthly return by the 18th. Trigger on Zambia VAT, ZRA VAT return, reverse VAT Zambia, input tax claim, withholding VAT agent. Covers registered suppliers and businesses deciding whether to register. Not for mining refund disputes or MFEZ certificates, which are referred."
 jurisdiction: ZM
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-11-01
+version: 2.1
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Zambia VAT Return Skill v2.0
+# Zambia VAT Return Skill v2.1
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-| Field | Value |
-|---|---|
-| Country | Zambia |
-| Standard rate | 16% |
-| Zero rate | 0% (exports, agricultural inputs, basic foodstuffs, medical equipment) |
-| Filing portal | https://taxonline.zra.org.zm |
-| Authority | Zambia Revenue Authority (ZRA) |
-| Currency | ZMW (Zambian Kwacha) |
-| Filing frequency | Monthly |
-| Deadline | 18th of following month |
-| Registration threshold | ZMW 800,000 annual turnover |
-| Withholding VAT | 100% of VAT amount (unique to Zambia) |
-| Primary legislation | VAT Act No. 4 of 1995 (Cap. 331) |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+Charge year 2026. Authority: Zambia Revenue Authority (ZRA). Law: Value Added Tax Act, Cap. 331. Currency: Kwacha (ZMW, K).
 
----
+## Who this applies to
 
-## Section 2 -- Required inputs and refusal catalogue
+Anyone making taxable supplies of goods or services in Zambia in the course of business. Suppliers dealing only in exempt supplies cannot register. Mining and MFEZ cases are escalated (see Ask the client first).
 
-**Minimum viable** -- bank statement. Acceptable from Zanaco, Stanbic Bank Zambia, Standard Chartered ZM, FNB Zambia, Absa ZM, or any Zambian bank.
+## Rates, bands and thresholds
 
-**R-ZM-1 -- Mining sector.** Message: "Mining has specific provisions and development agreements. Escalate."
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Standard rate | 16% | 2026 | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf |
+| Zero rate | 0%: exports with evidence, goods imported by diplomats with reciprocal privileges, supplies to donors for official purposes, cement, roofing sheets, bricks and blocks to approved public benefit organisations | 2026 | same |
+| Mandatory registration | Annual taxable supplies above K800,000 (leaflet also says K200,000 per quarter) | 2026 | same |
+| Voluntary registration | Turnover above K400,000 but below the threshold; renew 30 days before the new charge year | 2026 | same |
+| Input tax time limit | 90 days from invoice date to submitting the return | 2026 | https://www.zra.org.zm/wp-content/uploads/2026/06/Claiming-input-tax.pdf |
+| Diesel input tax cap | Mining, processing, exploration 70%; other suppliers 90%; diesel resellers 100% | 2026 | same |
+| Electricity input tax cap | Mining and mineral processing 80% | 2026 | same |
+| Business gifts or samples | Taxable above K100 per year | 2026 | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf |
 
-**R-ZM-2 -- MFEZ.** Message: "Multi-Facility Economic Zone operators require certificate verification. Escalate."
+Any supply not listed in the Exemption or Zero-Rating Orders is standard rated. Example exempt supplies per ZRA: health and medical services, education, funeral services.
 
----
+## The base
 
-## Section 3 -- Supplier pattern library
+**Output tax.** Tax point is the earliest of payment received, invoice issued, goods or services delivered, goods supplied.
+
+**Input tax.** Output less input. From 1 January 2025 only Smart Invoice invoices are claimable; a non-smart invoice gives no claim. Imports need form CE 20, receipt and Release Order. Late registrants assessed by ZRA cannot claim input tax incurred before registration.
+
+**Blocked input tax (ZRA leaflet).** Telephone and internet (with carrier and hotel resale exceptions); motor vehicles with side windows or a rear seat (dealers, lessors and hire businesses excepted; repairs claimable if business use, apportioned if mixed); business entertainment; food, drink, transport, hospitality or housing for directors, staff or customers; staff dwelling houses unless built for sale; goods lost in the business must have input tax refunded. Partially exempt businesses claim only the taxable share by an approved method.
+
+**Reverse VAT (VAT Act s. 8(5) and (6)).** Applies to imported services performed, used or enjoyed in Zambia from a non-resident with no appointed tax agent. The recipient raises a tax invoice, charges 16% and declares output VAT. ZRA says this "cannot be claimed as input tax", so it is a cost, not net zero. Outside scope: exempt services, and persons not eligible or below the threshold.
+
+**Withholding VAT.** The 2026 leaflet lists withholding VAT agents due by the 16th and marks it "currently suspended". While suspended, do not assume a customer withholds.
+
+**Bank statement patterns.**
 
 | Pattern | Treatment | Notes |
 |---|---|---|
@@ -60,92 +65,78 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | MTN ZM, AIRTEL ZM, ZAMTEL | Domestic 16% | Telecoms |
 | GOOGLE, MICROSOFT, AWS | Reverse charge 16% | Non-resident |
 
----
+## Deadlines and filing
 
-## Section 4 -- Worked examples
+Monthly return and payment on or before the 18th of the following month; nil returns are required. Oil marketing companies: 10-day periods due on the 15th, 25th and 5th.
 
-### Example 1 -- Withholding VAT
+**How to register.** Log in to the portal, click the registration module, Tax Type Amendment, answer YES to "Are you dealing in taxable goods & services for VAT purposes?", complete the form and submit. Have three months of bank statements, a business plan and a 12-month cash flow.
 
-Government ministry pays supplier. Invoice ZMW 500K + ZMW 80K VAT = ZMW 580K. Ministry withholds ZMW 80K (100% of VAT). Supplier receives ZMW 500K. Claims ZMW 80K credit (Box 19).
+**How to file.** Log in at the ZRA portal (www.zra.org.zm, tax portal) with TPIN, password and captcha, enter the one-time password sent to email and phone, then choose Returns, File a return. Enter tax type Value Added Tax, account name and return period. Click Next. Answer YES or NO to the transaction questions; these decide which schedules open (for example Schedules 1 and 2 for standard-rated output). Complete the schedules, verify summary Schedules A, B and C, click Next, verify VAT payable or repayable in Schedule D, click Submit. The return reference number is generated automatically. A filed return cannot be amended on the portal: write to ZRA. Refunds are due within 30 days of the repayment return, and ZRA can offset other tax owed.
 
-### Example 2 -- Reverse charge
+The manual return form opens with Section A: Sales, line 8 standard rated local sales, line 9 sales at minimum taxable value, line 10 disposal of capital assets, line 11 total standard rated outputs.
 
-SA firm services ZMW 200K. Output Box 6 = ZMW 32K. Input Box 13 = ZMW 32K. Net zero.
+## Penalties and interest
 
----
+Late return: K400 or 0.5% of tax payable per day, whichever is greater; applies to nil and repayment returns too. Late payment: 0.5% per day plus interest at the Bank of Zambia discount rate plus 2%. (ZRA Introduction to VAT leaflet, 2026.) Remission conditions changed from 1 January 2026 (Act 19 of 2025).
 
-## Section 5 -- Classification rules
+## Cross-border points
 
-16% standard. 0% exports, agricultural inputs (seeds/fertilizers/pesticides), basic foodstuffs (mealie meal, bread, milk), medical equipment, electricity (first 300 kWh domestic). Exempt: financial, medical, education, residential rental, public transport, postal, water (domestic).
+Exports are zero rated with evidence. A non-resident supplying a VAT-registered person appoints an independent VAT-registered tax agent: agent logs in to TaxOnline, Registration, Applications, Application for Reverse VAT, completes the form, uploads the appointment letter, submits. The agent files by the 18th. Agency fees carry 16% and are not claimable on that return; the non-resident stays jointly liable.
 
----
+## Two worked examples that recompute
 
-## Section 6 -- VAT return form
+**Simple.** Sales K348 including VAT, purchases K232 including VAT (ZRA's example).
 
-Output: Boxes 1-8 (standard 16%, zero-rated, exempt, total, output VAT, reverse charge output, adjustments, total output).
+```oa-check
+name: Output less input
+inputs:
+  output: 48
+  input: 32
+steps:
+  - vat: output - input
+expected:
+  vat: 16.00
+```
 
-Input: Boxes 9-16 (local purchases, imports, input local, input imports, reverse charge input, capital goods, adjustments, allowable input).
+**Decision: pay a non-resident with or without a tax agent.** A VAT-registered firm buys K200,000 of consultancy. With no tax agent it self-accounts K32,000 with no input claim. If the supplier appoints an agent, the agent charges K32,000 on a Smart Invoice, claimable as ordinary input tax if not otherwise blocked. Agent route net cost K0 against K32,000, before any fee passed on.
 
-Net: Boxes 17-20 (net, credit b/f, withholding VAT credits, net payable).
+```oa-check
+name: Reverse VAT cost with and without agent
+inputs:
+  fee: 200000
+  rate: 0.16
+steps:
+  - no_agent_cost: fee * rate
+  - agent_cost: 0
+  - saving: no_agent_cost - agent_cost
+expected:
+  no_agent_cost: 32000.00
+  saving: 32000.00
+```
 
----
+## Ask the client first
 
-## Section 7 -- Withholding VAT and reverse charge
+- Registered, and from what date? Annual taxable supplies?
+- Are any supplies exempt?
+- Is every purchase invoice a Smart Invoice, and dated within 90 days?
+- Any imported services, and does the supplier have a Zambian tax agent?
+- Mining or mineral processing? Message: "Mining has specific provisions and development agreements. Escalate."
+- MFEZ? Message: "Multi-Facility Economic Zone operators require certificate verification. Escalate."
+Minimum input: a bank statement.
 
-Withholding VAT: designated agents withhold 100% of VAT amount. Supplier claims credit (Box 19). Unique to Zambia.
+## Sources
 
-Reverse charge: non-resident services. Self-assess 16%. Net zero. VAT Act s.13.
+| Source | URL | Read on |
+|---|---|---|
+| VAT (Amendment) Act No. 19 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2019%20of%202025%20The%20Value%20Added%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
+| ZRA leaflet Introduction to VAT (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf | 2026-11-01 |
+| ZRA leaflet Claiming Input Tax (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Claiming-input-tax.pdf | 2026-11-01 |
+| ZRA leaflet Reverse VAT (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Reverse-VAT.pdf | 2026-11-01 |
+| ZRA Guide to Filing Tax Returns (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
+| ZRA leaflet Post-Registration Requirements (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
+| ZRA Smart Invoice FAQs (2026), scope questions; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/08/Smart-Invoice-FAQs.pdf | 2026-11-01 |
 
----
-
-## Section 8 -- Deductibility and blocked input
-
-Blocked (s.18): vehicles < 9 seats (unless taxi/hire), entertainment, club subscriptions, personal use, invoices without TPIN.
-
-Partial exemption: s.17. ZRA may approve alternative methods. Refund after 4 months excess credits.
-
----
-
-## Section 9 -- Filing, deadlines, and penalties
-
-Monthly, 18th of following month. Late filing: 1,000 penalty units or 0.5% of tax, whichever greater. Late payment: 5%/month + BoZ discount rate interest.
-
----
-
-## Section 10 -- Edge cases, test suite, and escalation
-
-**EC1 -- SaaS.** Reverse charge 16%. Net zero.
-**EC2 -- Copper export.** Zero-rated. Input recoverable.
-**EC3 -- Withholding VAT.** 100% withheld. Supplier claims credit Box 19.
-**EC4 -- Motor vehicle blocked.**
-**EC5 -- Mining.** Escalate.
-**EC6 -- Agricultural inputs.** Zero-rated.
-**EC7 -- Bad debt relief.** 12+ months. Documentation required.
-
-**Test 1** -- ZMW 100K sale. Output ZMW 16K.
-**Test 2** -- ZMW 50K purchase + ZMW 8K VAT. Recoverable.
-**Test 3** -- SA services ZMW 200K. Output 32K, input 32K. Net zero.
-**Test 4** -- Copper export ZMW 5M. Zero-rated.
-**Test 5** -- Govt pays supplier ZMW 300K + 48K VAT. Withholding 48K. Credit Box 19.
-**Test 6** -- Entertainment. Blocked.
-
-Out of scope: CIT 30%, PAYE 0%-37.5%, NAPSA 5%+5%, Skills Levy 0.5%.
-
-### Prohibitions
-
-- NEVER confuse Zambia withholding VAT (100%) with other countries' rates
-- NEVER ignore withholding VAT credits
-- NEVER allow recovery on blocked categories
-- NEVER accept invoices without TPIN
-- NEVER compute numbers -- engine handles arithmetic
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+Not yet confirmed: the VAT Act and the Exemption and Zero-Rating Orders themselves were not opened; ZRA leaflets stand in, so old claims that basic foodstuffs, agricultural inputs, medical equipment and domestic electricity are zero rated, and that financial, residential rental, public transport, postal and domestic water supplies are exempt, are unconfirmed; bad debt relief after 12 months; old blocked items club subscriptions and invoices without TPIN; refund after 4 months of excess credits; old box numbers 1 to 20 (replaced, only lines 8 to 11 read here); whether the K800,000 annual and K200,000 quarterly tests apply together; withholding VAT at 100% of VAT with a return credit, and the date of suspension; old filing penalty of 1,000 units; 5% a month late payment charge (the old file figure conflicts with the leaflet).
 
 <!-- openaccountants-cta-block -->
 
