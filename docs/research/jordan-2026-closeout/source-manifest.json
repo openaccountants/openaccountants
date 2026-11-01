@@ -101,5 +101,31 @@
     "scope": "Independent fresh official PDF response pp9 and17, lines398-418 and675-683, read2026-11-01; author reread retained response. Art12 payer/exclusions and art36 both-timely conditions completed; no later-amendment clearance.",
     "read_date": "2026-11-01",
     "sha256": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131"
+  },
+  "SCHEDULES": {
+    "url": "https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+    "cache": "primary-schedule-list-titles.txt",
+    "sha256": "d7c4a89e909f20a2cdb660a31b5f5ec8064997182f3738e0589b1de2b5a7142e",
+    "scope": "Recovered original author tool output of the official list actually fetched/read; reread2026-11-01. Not a fresh retrieval; title/file-list scope only. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+    "read_date": "2026-11-01",
+    "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+    "parent_lines_1_based": [
+      1613,
+      1639
+    ]
+  },
+  "RATES-READ": {
+    "url": "https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "cache": "primary-rate-search-first-page.txt",
+    "sha256": "f5d13a659b4445cebf3e401f2a552695a117f8f63ce217ec428728086bff9905",
+    "scope": "Recovered original author official rate-search first-page read, not a schedule-content read. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+    "read_date": "2026-11-01",
+    "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+    "parent_lines_1_based": [
+      2324,
+      2371
+    ]
   }
 }

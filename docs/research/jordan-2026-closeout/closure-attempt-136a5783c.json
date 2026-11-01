@@ -1,0 +1,290 @@
+{
+  "inspected_head": "136a5783c6dab634956fb39aaff94d48131f43ea",
+  "initial_review_head": "2cec36c47e29f010fe0884693d40018c1313df7e",
+  "merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "read_date": "2026-11-01",
+  "verdict": "closure_attempt_JR07_evidence_repairs_required",
+  "limited_source_baseline_publication_acceptable_at_this_head": false,
+  "legal_wording_requests_JR01_to_JR06": "closed_within_conditional_source_baseline",
+  "JR07": "open_only_for_three_bounded_evidence_repairs",
+  "counts": {
+    "original_requests": 7,
+    "closed_requests": 6,
+    "substantive_affected_rows_rechecked": 18,
+    "original_mapping_repair_rows": 34,
+    "original_mapping_rows_remaining": 4,
+    "remaining_affected_rows_including_source_read_records": 6,
+    "current_rows_identity_and_association_key_coverage": 220,
+    "historical_rows_preserved": 218,
+    "initial_receipts_preserved": 9,
+    "non_null_source_hashes_matched": 13,
+    "new_quote_nonblank_lines_identity_checked": 931,
+    "new_quote_line_identity_mismatches": 0
+  },
+  "remaining_repairs": [
+    {
+      "id": "JR07-A",
+      "rows": [
+        "jordan-gst:C013"
+      ],
+      "action": "Add GST7 to the existing GSTBASE association and matching ledger cell. GSTBASE quotes buyer-price only; art7(c)/(d) tied-supply clauses are quoted in GST7.",
+      "safe_association": [
+        "GSTBASE",
+        "GST7"
+      ]
+    },
+    {
+      "id": "JR07-B",
+      "rows": [
+        "jo-payroll-social:C002"
+      ],
+      "action": "Add SSC20 to the existing SSC3/IT12 association and matching ledger cell for the employee registration/data duty. SSC20 contains art21 names/data; SSC3 quotes coverage exceptions.",
+      "safe_association": [
+        "SSC3",
+        "SSC20",
+        "IT12"
+      ]
+    },
+    {
+      "id": "JR07-C",
+      "rows": [
+        "jordan-gst:C008",
+        "jordan-gst:C009",
+        "jordan-gst:C049",
+        "jordan-gst:C050"
+      ],
+      "action": "Replace the unrelated RATES extract with the actual cached official rate-search first-page output. Add a separate SCHEDULES source/evidence group for the actual opened schedule-list titles below, then use the precise row associations specified. Preserve all currentness and product-classification holds. Do not describe the separately retained official search result as a fresh opened list read.",
+      "safe_associations": {
+        "jordan-gst:C008": [
+          "GST7",
+          "SCHEDULES"
+        ],
+        "jordan-gst:C009": [
+          "RATES",
+          "SCHEDULES"
+        ],
+        "jordan-gst:C049": [
+          "SCHEDULES"
+        ],
+        "jordan-gst:C050": [
+          "RATES"
+        ]
+      },
+      "primary_opened_title_excerpt": {
+        "file": "../sources/agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+        "lines_1_based": [
+          1613,
+          1639
+        ],
+        "sha256_full_cache": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+        "official_url": "https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+        "provenance": "Recovered original author tool output of the official list actually fetched/read; reread2026-11-01. Not a fresh retrieval; title/file-list scope only.",
+        "exact_excerpt": "لعرض وتحميل جداول الضريبة العامة على المبيعات، يرجى الاختيار من القائمة ادناه...\nاسم الملف\nاسم الملف \nالنوع\nالحجم\nعرض وتحميل\nجدول رقم 4  الخاص بالسلع والخدمات التي تكون الضريبة العامة والخاصة المستحقة عليها  غير قابلة للخصم أو الرد\n345 ك.ب\nكشف ببعض السلع والخدمات والجهات المعفاة من ضريبة المبيعات كلي او جزئي او منح مزايا ضريبية\n703 ك.ب\nكشف السلع الخاضعة للضريبة بنسبة 10%\n64 ك.ب\nكشف السلع الخاضعة للضريبة بنسبة 5%\n64 ك.ب\nكشف السلع الخاضعة للضريبة بنسبة 4%\n92 ك.ب\nكشف السلع الخاضعة للضريبة بنسبة 2%\n74 ك.ب\nجدول رقم 3 الخاص بالسلع والخدمات المعفاة من الضريبة-  ثانيا الخدمات المعفاة\n66 ك.ب\nجدول رقم 3 الخاص بالسلع والخدمات المعفاة من الضريبة-  اولا  السلع المعفاة\n81 ك.ب\nجدول رقم 2 الخاص بالسلع والخدمات الخاضعة للضريبة بنسبة او بمقدار صفر\n122 ك.ب\nالجدول رقم 1 الملحق بقانون الضريبة العامة على المبيعات الخاص بالسلع والخدمات الخاضعة للضريبة الخاصة\n45 ك.ب\n  صفحة   1  من    1"
+      },
+      "primary_opened_rate_search_excerpt": {
+        "file": "../sources/agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+        "lines_1_based": [
+          2324,
+          2371
+        ],
+        "sha256_full_cache": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+        "official_url": "https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+        "provenance": "Recovered original author official rate-search first-page read, not a schedule-content read.",
+        "exact_excerpt": "\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.\n\n--- HISTORICAL TOOL OUTPUT ---\n\nشارك\nبامكانك البحث عن نسب ضريبة المبيعات، عن طريق الاسم، بنود التعرفة او النسب الضريبية..\nنسب ضريبة المبيعات \n(السلع والخدمات الخاضعة للضريبة بنسبة او مقدار صفر، السلع الخاضغة للضريبة بنسة 2%، السلع\nيرجى الانتظار\nالاسم\nبنود التعرفة\nالنسبة الضريبية\nالاسم\nبنود التعرفة\nالنسبة الضريبية\nمدخلات صناعة الالبان من صناديق وعلب واقفاص واصناف مماثلة\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nاقلام حبر جاف وأقلام الرصاص واقلام تلوين (باستثناء ما ورد في جدول السلع الخاضعة لنسبة 4% �\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nاجبان محضره (باستثناء ما ورد في جدول السلع الخاضعة لنسبة 4%)\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nحلاوة الطّحينة بالسّكر لا تحتوي على كاكاو(باستثناء ما ورد في جدول السلع الخاضعة لنسبة 5%)\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nأسماك الانقليس محضرة أو محفوظة كاملة او مقطعة ولكن غير مفرومة\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nمحضرات واصناف محفوظة أخر من لحوم او من أحشاء وأطراف عدا الخنزير(باستثناء ما ورد في جدول �\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nسجق (بانواعه) ومنتجات مماثلة، من لحوم او من أحشاء وأطراف محضرات غذائية أساسها هذه المنتج\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nالطّحينة (باستثناء ما ورد في جدول السلع الخاضعة لنسبة 5%)\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nنباتات وأجزاؤها بذور وثمار من الأنواع المستعملة أساسا في صناعة العطور أو الصيدلة أو في �\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\nبذور سمسم وإن كان مكسرا\nالسلع الخاضعة للضريبة  بنسبة 10%\n10\n  صفحة   1  من    35\n1"
+      },
+      "separate_search_corroboration": {
+        "file": "docs/research/jordan-2026-closeout/independent-additional-search.json",
+        "locator": "Decoded JSON string: official ISTD schedule-list search-result block beginning at character11044, title جداول الضريبة العامة على المبيعات - وزارة",
+        "scope": "Search-tool official-result content only; no separate opened-list read asserted. Existing historical opened list above is the preferred evidence."
+      }
+    }
+  ],
+  "accepted_input_hashes": {
+    "source_manifest": "4251eadc4b67206cd63b6b74ca6be96b970deaabf4e916dcc1cc1cb5504a9630",
+    "claim_evidence_groups": "927fdedb2005704fce9ed301392f1e2f89e251a1a67b7aecbc60426494c88787",
+    "author_repair_manifest": "8d3449d716d0b50fa2ce447f4c166e2f03cf306ad7ff93cc1e153d80f9e0609c",
+    "validation_receipt": "92793eea7eae50498d90b6f25f3593e3e73b87cf4da0fb2b9c367c095b700da8"
+  },
+  "initial_review_receipts": {
+    "independent-additional-primary-followup.json": {
+      "sha256": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131",
+      "matches_initial_receipt": true
+    },
+    "independent-additional-primary.json": {
+      "sha256": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001",
+      "matches_initial_receipt": true
+    },
+    "independent-additional-search.json": {
+      "sha256": "f79aae14f56363c9dc7f54f9d9eaee787918db2f8cc30e4e20c31c501358f19d",
+      "matches_initial_receipt": true
+    },
+    "independent-build-review.py": {
+      "sha256": "0060f241f83971de26bf96307c59509b9b1f0283dcd3e05394c68ba246475b48",
+      "matches_initial_receipt": true
+    },
+    "independent-correction-requests.json": {
+      "sha256": "3a4f0f2f97e4b123f75eed38fc86c530393a72f78facb4f1dc8b289bdd400437",
+      "matches_initial_receipt": true
+    },
+    "independent-integrity-checks.json": {
+      "sha256": "20b260253e40783748c7c2cd5c1cf2de340b4bac29c1b5debd454190451581d5",
+      "matches_initial_receipt": true
+    },
+    "independent-review.md": {
+      "sha256": "4eec3debaed130bb5e9943e5a50a2a99a7dd539c03773f8ee660f7f89491c14a",
+      "matches_initial_receipt": true
+    },
+    "independent-row-verdicts.json": {
+      "sha256": "f446df17ed4cc3f63ee7eca2f0de1d4e746f7a251bb01dcf4ce18f89b233cb06",
+      "matches_initial_receipt": true
+    },
+    "independent-validation.txt": {
+      "sha256": "294a1e5dee0165053d6eb6e2301b8b891cefb0bab690e640a74523c2fa032aee",
+      "matches_initial_receipt": true
+    }
+  },
+  "source_cache_hashes": {
+    "IT": {
+      "sha256": "d70fa7979a8d47c1d2c6b976eafc05426d52089ce37685649f07d3a66c8192f6",
+      "matches_manifest": true
+    },
+    "IT-P": {
+      "sha256": "16b5e418dec7ed50b5d0fe1744c6bcd97ccdafcefdbbeedfb9bf80d1078848e8",
+      "matches_manifest": true
+    },
+    "GST": {
+      "sha256": "9311b44fb636a18650ddc08e2eaa99adf7b471ab26ef8c2b4fcef890639471c5",
+      "matches_manifest": true
+    },
+    "GST-P": {
+      "sha256": "d60528f22723660c94e1ab9ab610460b956312bfce26943de4ecb5c22be6e8fa",
+      "matches_manifest": true
+    },
+    "SSC": {
+      "sha256": "7bd6415d26a15ed0ecb3b0005d655f93455622f83a52c2375ef0bb53b975e8a6",
+      "matches_manifest": true
+    },
+    "SSC-EN": {
+      "sha256": "6c163737e567fb21695c4103754441d6ab0d17f12047a20f9a8071e066a50c64",
+      "matches_manifest": true
+    },
+    "CAP": {
+      "sha256": "7bbd3dbe8d3e135973e4550d189889d7232e8843f119add3b1057ceae3d34e6e",
+      "matches_manifest": true
+    },
+    "LISTS": {
+      "sha256": "d70fa7979a8d47c1d2c6b976eafc05426d52089ce37685649f07d3a66c8192f6",
+      "matches_manifest": true
+    },
+    "FORMS": {
+      "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "matches_manifest": true
+    },
+    "TP": {
+      "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "matches_manifest": true
+    },
+    "REDUCTION": {
+      "sha256": "9311b44fb636a18650ddc08e2eaa99adf7b471ab26ef8c2b4fcef890639471c5",
+      "matches_manifest": true
+    },
+    "MOIN": {
+      "sha256": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001",
+      "matches_manifest": true
+    },
+    "MOIN-FOLLOWUP": {
+      "sha256": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131",
+      "matches_manifest": true
+    }
+  },
+  "ledgers": [
+    {
+      "guide": "jo-company-formation",
+      "historical_table_unchanged": true,
+      "sha256": "3a047d2aab8137258b47aac91212b3d051ff3a06a80d905ac4bf81c4552a09c2"
+    },
+    {
+      "guide": "jo-corporate-income-tax",
+      "historical_table_unchanged": true,
+      "sha256": "00e76f525a2c8cf6a7643d56388b34d9be69647c931128056bd3774d43104408"
+    },
+    {
+      "guide": "jo-income-tax",
+      "historical_table_unchanged": true,
+      "sha256": "78a7fbd4f8451abe6819304d75680b98b48d372a78467f8340b36214978bdb54"
+    },
+    {
+      "guide": "jo-payroll-social",
+      "historical_table_unchanged": true,
+      "sha256": "e5c57e76e489606c8b0b08448e00180a2f893002cbacd0363d82dcb3071b92a4"
+    },
+    {
+      "guide": "jo-tax-overview",
+      "historical_table_unchanged": true,
+      "sha256": "a9aea8f5fccb3eac6234c7649f3f82cf172df92132b23b80b54f77eb17d71012"
+    },
+    {
+      "guide": "jordan-gst",
+      "historical_table_unchanged": true,
+      "sha256": "957a2f8f1d96ab02f39bbec50f1b83574f8a3b3b1b25f9b1e556936c6208dfc0"
+    }
+  ],
+  "guide_integrity": [
+    {
+      "guide": "jo-company-formation",
+      "full_cta_unchanged_from_base": true,
+      "blob": "86cf31c3f60c956829df9963317eaf77bd3ef736",
+      "sha256": "4e55d33eb4e75ab05ef572c42653efcdc1b46fb436c0d6dd806a5306844b9dea",
+      "formation_byte_identical": true
+    },
+    {
+      "guide": "jo-corporate-income-tax",
+      "full_cta_unchanged_from_base": true,
+      "blob": "5b30748572454598c90b84a5872ac5f483392135",
+      "sha256": "1673b23a7bccc3da2af684ddd4750b398a41f350c20036e2d89e8964dec2f6e5",
+      "formation_byte_identical": true
+    },
+    {
+      "guide": "jo-income-tax",
+      "full_cta_unchanged_from_base": true,
+      "blob": "638b0a8e9cad45b67d6a5664956add1f0bbd16dc",
+      "sha256": "cffd29391e10b1cc02a184b2340da8f311327656e4bdb4e56106973883533174",
+      "formation_byte_identical": true
+    },
+    {
+      "guide": "jo-payroll-social",
+      "full_cta_unchanged_from_base": true,
+      "blob": "4b4922ace7e5f732fe6df12d54fc828e1483fc66",
+      "sha256": "778ae006d46ec41d60436d77aae58b7ccef7e112b755877d8f713e218070681d",
+      "formation_byte_identical": true
+    },
+    {
+      "guide": "jo-tax-overview",
+      "full_cta_unchanged_from_base": true,
+      "blob": "8c883a76ae3c025b8448af62383282ed119a624e",
+      "sha256": "2003a6654bcf45068ef1f83d50b02ecee2abea333327ff1feef33b0b4671c9be",
+      "formation_byte_identical": true
+    },
+    {
+      "guide": "jordan-gst",
+      "full_cta_unchanged_from_base": true,
+      "blob": "877a127821b7cca483eb480f4c2b21e20f9f199b",
+      "sha256": "89ab9c3c627fd82d30fffce8815cae72070da82b6ac96a96ddbbae175dd2a2d8",
+      "formation_byte_identical": true
+    }
+  ],
+  "validation_read": {
+    "head_matches": true,
+    "all_commands_returned_zero": true,
+    "note": "Exact-head author validation read and matched; not re-run by this focused reviewer. 75 shape checks,10 examples, changed-guide validator, strict metadata and whole-base whitespace checks pass in receipt."
+  },
+  "retained_application_holds": [
+    "JO-IT-CURRENT",
+    "JO-GST-CURRENT",
+    "JO-SSC-CURRENT",
+    "JO-SSC-REDUCTION",
+    "named schedules/input/registration/current-form/portal/investment/formation holds"
+  ],
+  "native_review_approval_asserted": false,
+  "guide_edits_commits_merges_performed": false
+}

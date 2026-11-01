@@ -490,6 +490,7 @@
     "jo-payroll-social:C001": [],
     "jo-payroll-social:C002": [
       "SSC3",
+      "SSC20",
       "IT12"
     ],
     "jo-payroll-social:C003": [],
@@ -727,10 +728,12 @@
       "GST7"
     ],
     "jordan-gst:C008": [
-      "GST7"
+      "GST7",
+      "SCHEDULES"
     ],
     "jordan-gst:C009": [
-      "RATES"
+      "RATES",
+      "SCHEDULES"
     ],
     "jordan-gst:C010": [
       "GSTREG"
@@ -742,7 +745,8 @@
       "GSTREF"
     ],
     "jordan-gst:C013": [
-      "GSTBASE"
+      "GSTBASE",
+      "GST7"
     ],
     "jordan-gst:C014": [
       "GSTINPUT"
@@ -818,7 +822,7 @@
       "MANIFEST"
     ],
     "jordan-gst:C049": [
-      "RATES"
+      "SCHEDULES"
     ],
     "jordan-gst:C050": [
       "RATES"
