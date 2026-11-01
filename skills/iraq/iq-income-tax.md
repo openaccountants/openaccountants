@@ -1,7 +1,7 @@
 ---
 name: iq-income-tax
-version: 0.2
-description: "Personal income tax for individuals in federal Iraq, tax year 2026: annual bands 3% to 15%, allowances, income report before 1 June, payment and penalties. Written for tax year 2026 from the Iraqi law and General Commission for Taxes pages. Use for questions about federal Iraq; the Kurdistan Region runs its own administration. Trigger phrases: Iraq tax, Iraqi dinar tax, General Commission for Taxes, GCT Baghdad."
+version: 0.3
+description: "Personal income tax source extracts for federal Iraq, with explicit holds on current rates, allowances and filing steps. Use this Guide when a question mentions federal Iraq, the General Commission for Taxes, GCT Baghdad, or Iraqi dinar tax. It identifies the source version, the evidence actually read, the conditions attached to its extracts, the facts needed from the taxpayer, and the unresolved matters that stop a current filing calculation. It does not cover the Kurdistan Region. Follow the linked country Guides for the underlying job and keep every stated hold attached to any answer."
 jurisdiction: IQ
 tax_year: 2026
 last_updated: 2026-11-01
@@ -11,113 +11,95 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iraq Personal Income Tax
+# Iraq Personal Income Tax 0.3
 
-Tax year: 2026. Income earned in 2025 is assessed in assessment year 2026 (GCT guide: tax falls on income of the year before the assessment year).
+> **General reference.** Source extracts and research holds only. This Guide does not establish the law currently in force for a filing.
+
+Tax year: 2026 is the question-routing year, not a certification that these older instruments remain unchanged. **IQ-CURRENT hold:** the complete later-amendment and commencement chain through 2026 has not been established. The extracts below describe only the named source version. Do not use their figures for a current liability until that hold is closed.
 
 ## Who this applies to
 
-Federal Iraq. Iraqi residents are taxed on income arising in or outside Iraq, and non-resident Iraqis are taxed at the same rates on Iraqi-source income (art. 13 as amended by CPA Order 49 of 2004). Non-resident non-Iraqis are in the art. 13(1)(b) scale, which has the same bands. A non-Iraqi resident gets allowances in proportion to full months in Iraq, except government-contracted teachers (art. 12(2)). The Kurdistan Region is out of scope.
+Source baseline: Income Tax Law 113 of 1982, GCT consolidation including 2004 amendments. Article 5(1) concerns a resident **Iraqi national** and income inside or outside Iraq; art. 5(2) concerns a nonresident and Iraqi-source income even if not received there; art. 5(3) excludes foreign-source income of a non-Iraqi resident. These are source-text extracts subject to IQ-CURRENT, not a residence test or treaty conclusion.
 
 ## Rates, bands and thresholds
 
-The bands are annual. GCT's 2019 circular confirms this: it gives these bands for an annual calculation and monthly equivalents of IQD 20,833, 41,666 and 83,333. The 2019 circular is the latest official scale we could open, and the 2026 guidelines do not restate it.
+**Historical annual scale only, IQ-CURRENT applies to every row.** Article 13(1)(a) applies the resident-individual scale after the legal allowances. The same marginal amounts appear in art. 13(1)(b) for nonresidents, subject to art. 19. No allowance entitlement is inferred from the rate scale.
 
-| Item | Amount | Tax year | Official URL |
-|---|---|---|---|
-| Band 1, annual taxable income to IQD 250,000 | 3% | 2026 | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf |
-| Band 2, IQD 250,001 to 500,000 | 5% | 2026 | same |
-| Band 3, IQD 500,001 to 1,000,000 | 10% | 2026 | same |
-| Band 4, over IQD 1,000,000 | 15% | 2026 | same |
-| Allowance, taxpayer (single, or wife's income taxed separately) | IQD 2,500,000 | 2026 | https://tax.mof.gov.iq/uploads/Najwan/thwabit/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1.pdf |
-| Allowance, married with housewife or merged income | IQD 4,500,000 in total | 2026 | same |
-| Allowance, wife whose husband cannot work, certified by a medical committee | IQD 5,000,000 | 2026 | same |
-| Allowance, widow or divorced woman | IQD 3,200,000 | 2026 | same |
-| Allowance, over 63 | extra IQD 300,000 | 2026 | same |
-| Allowance, each child, no limit on number | IQD 200,000 | 2026 | same |
+| Item and source version | Amount | Official URL |
+|---|---|---|
+| Law 113, art. 13, 2004 consolidation, first IQD 250,000 of taxable annual income | 3% | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf |
+| Same art., next IQD 250,000 | 5% | same |
+| Same art., next IQD 500,000 | 10% | same |
+| Same art., excess over IQD 1,000,000 | 15% | same |
 
-GCT's guide also shows doubled figures for assessment years 2010, 2011 and 2013 only. They are not current.
-
-A child counts while under 18, or at any age if unable to earn through disability, or while studying at secondary or higher level until the course ends or age 25, whichever is first (art. 12(3)).
+The public sector 2019 allowance cases belong in [payroll](iq-payroll-social.md). Historical doubled allowances for 2010, 2011 and 2013 are not evidence of a 2026 entitlement.
 
 ## The base
 
-Net income after expenses spent to earn it, backed by acceptable documents (GCT guide). Article 7 lists exemptions. Taxpayers outside the bookkeeping rules are assessed under GCT's annual guidelines; the 2026 guidelines state profits before allowances. A taxpayer with several income sources has only the smallest cut by 50%, and only for absolute-profit sources (2026 guidelines, seventh principle). Losses: see [corporate income tax](iq-corporate-income-tax.md), same art. 11.
+Article 3 distinguishes the preceding-year basis for the art. 2(1),(2),(3),(6) income categories from the same-assessment-year basis for art. 2(4),(5), where known. It also contains source-cessation, provisional-assessment and nonresident receipt/account-credit rules. Do not turn the GCT guide's short preceding-year summary into a rule for every income category.
 
-Employees: tax is on salary and overtime; GCT's 2019 notes exclude allowances (mukhassasat) in the state-employee calculation, and take 10% of nominal salary off for permanent state staff pensions. A married woman gets the single allowance unless the couple file a merger request with her employer in January.
+Expense eligibility, exemptions, personal allowances, family conditions, guideline assessments and loss relief require their own conditions. They are held below, except the loss source extract in [company tax](iq-corporate-income-tax.md).
 
 ## Deadlines and filing
 
-1. Tell your GCT branch you have started, with the lease and licence (GCT guide).
-2. File the income report (taqrir dariba al-dakhl) at your branch before 1 June of the assessment year, registered or not (art. 27(2)). The authority can extend for a legitimate excuse (art. 27(3)).
-3. GCT assesses and notifies you. Pay within 21 days of notice (art. 45). Instalments need a written request (art. 46).
-4. Object within 21 days of notice, then appeal to the appeal committee within 21 days of rejection (GCT guide).
+Historical source workflow, subject to IQ-CURRENT: art. 27(2) requires a taxable-income report before 1 June of the assessment year, registered or unregistered, if not already requested by written or published notice. Art. 27(1) separately gives 21 days from a request; art. 27(3) permits an extension for a legitimate excuse. Article 44 requires notice of the amount and due date; art. 45 uses 21 days from notice. These extracts do not establish the current form, portal, branch submission, receipt, payment reference or extensions. Do not file using this incomplete workflow. Source: https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf.
 
 ## Penalties and interest
 
-- Late report: 10% of the tax, capped at IQD 500,000.
-- Late payment: 5% added after 21 days, doubled after a further 21 days (art. 45), plus bank interest noted under that article.
-- Concealing income: at least twice the tax (GCT guide).
-- Bookkeeping breach: 10% to 25% of assessed income, minimum IQD 500.
+Held: no current penalty or interest calculation is supplied. Article 45 in the old consolidation contains additions and discretionary relief, with separate footnoted interest provisions. A bare percentage would omit the relief and other charges. See IQ-PIT-PROCEDURE below.
 
 ## Cross-border points
 
-Foreign-source income of Iraqi residents is in scope. Interest and annuities paid abroad: see [corporate income tax](iq-corporate-income-tax.md). Iraq's treaties in force per GCT: Yemen, Sudan, Tunisia, Hungary, UAE.
+Use the nationality/source distinction above. Treaty eligibility, foreign-tax credits, outward payments and permanent establishments require a separate check; use the source extracts and holds in [company tax](iq-corporate-income-tax.md). No country list here establishes a treaty in force.
 
 ## Two worked examples that recompute
 
-Single resident, annual income IQD 12,000,000. Allowance leaves 9,500,000. Tax IQD 1,345,000.
+Arithmetic demonstrations of the historical art. 13 scale only. Both assume the stated amount is already taxable after all legally available deductions. Neither assumes an allowance or determines a 2026 bill.
+
+At IQD 1,000,000 taxable income, the historical tax is IQD 70,000.
 
 ```oa-check
-name: Single, IQD 12m
+name: Historical scale to one million
 inputs:
-  income: 12000000
-  allowance: 2500000
+  taxable: 1000000
 steps:
-  - taxable: income - allowance
-  - b1: 250000 * 0.03
-  - b2: 250000 * 0.05
-  - b3: 500000 * 0.10
-  - b4: (taxable - 1000000) * 0.15
-  - tax: b1 + b2 + b3 + b4
+  - tax: 250000 * 0.03 + 250000 * 0.05 + 500000 * 0.10
 expected:
-  tax: 1345000
+  tax: 70000
 ```
 
-GCT's own contract-staff case: IQD 700,000 a month, married, housewife, no children. Monthly tax IQD 42,083.
+Decision sensitivity: if a separately verified deduction reduces an already-taxable IQD 9.5m to IQD 9m, the historical-scale difference is IQD 75,000. The example does not establish that any deduction is available.
 
 ```oa-check
-name: GCT circular case, monthly 700,000
+name: Historical deduction sensitivity
 inputs:
-  monthly: 700000
-  allowance: 4500000
+  before: 9500000
+  after: 9000000
 steps:
-  - taxable: monthly * 12 - allowance
-  - tax: 250000 * 0.03 + 250000 * 0.05 + 500000 * 0.10 + (taxable - 1000000) * 0.15
-  - per_month: round(tax / 12)
+  - first: 70000 + (before - 1000000) * 0.15
+  - second: 70000 + (after - 1000000) * 0.15
+  - difference: first - second
 expected:
-  per_month: 42083
+  first: 1345000
+  second: 1270000
+  difference: 75000
 ```
 
 ## Ask the client first
 
-- Iraqi or not, and resident or not?
-- Federal Iraq or Kurdistan Region?
-- Employee, or business or profession?
-- Marital status, spouse's income, children, age?
-- Books kept under Regulation 2 of 1985, or assessed by guidelines?
+- Federal Iraq or Kurdistan Region, and which income and assessment year?
+- Nationality, residence evidence and location of each income source?
+- Employment, business, profession or another income category?
+- Family circumstances, dependency evidence and other income sources?
+- Books, notices, payments and any claimed foreign tax?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual read scope | URL | Read on |
 |---|---|---|
-| Income Tax Law 113 of 1982, GCT consolidated text: arts. 11, 12, 13, 15, 17, 19, 27, 45, 46, penalties | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
-| GCT circular on direct withholding, 2019, with worked notes (scan, read in full) | https://tax.mof.gov.iq/uploads/Najwan/thwabit/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1.pdf | 2026-11-01 |
-| GCT circular, allowances and rate scale, 2017 (scan, page 1 read) | https://tax.mof.gov.iq/uploads/Hiba/%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AD%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%20%D9%88%D9%85%D9%82%D9%8A%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9.pdf | 2026-11-01 |
-| GCT income tax guide | https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%AF%D8%AE%D9%84/ | 2026-11-01 |
-| GCT 2026 assessment-year business profit guidelines (general principles and headings read) | https://tax.mof.gov.iq/wp-content/uploads/2026/05/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7-%D8%A7%D9%84%D8%B3%D9%86%D9%88%D9%8A%D9%87-%D9%84%D8%A7%D8%B1%D8%A8%D8%A7%D8%AD-%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D9%87-%D9%84%D9%84%D8%B3%D9%86%D9%87-%D9%A2%D9%A0%D9%A2%D9%A6-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%D9%8A%D9%87.pdf | 2026-11-01 |
+| Law 113: PDF pp. 5–6 arts. 3–5; p. 13 art. 11; p. 16 art. 13; p. 26 art. 27; p. 33 arts. 44–46, visually read with neighbours | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 
-Not yet confirmed: Risk allowance exemption of 30% of basic salary and the rule treating undocumented taxpayers as unmarried: no official page opened. Employer remittance within 15 days: see the payroll skill. Whether a 2026 budget law changed bands or allowances: none found, but no 2026 budget text could be opened. Parts of GCT law text are the consolidated copy; amendments after it were not all read.
+Not yet confirmed: **IQ-CURRENT** complete later amendments and 2026 budget effects; **IQ-PIT-BASE** current expenses, exemption categories (including agriculture), allowance increases, child dependency/income/age rules, spouse merger, age relief and non-Iraqi proration; **IQ-PIT-GUIDELINES** application of the 2026 profit-guideline activities, expense treatment, multi-source reduction and continuing circulars; **IQ-PIT-PROCEDURE** registration documents, current income-report submission, objection/appeal routes, instalments, late-report cap, concealment, books penalty and all interest/additions. Earlier draft subjects remain preserved in the evidence ledger; none of these holds is a current entitlement or obligation.
 
 <!-- openaccountants-cta-block -->
 

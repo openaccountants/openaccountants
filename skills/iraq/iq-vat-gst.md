@@ -1,7 +1,7 @@
 ---
 name: iq-vat-gst
-version: 0.2
-description: "Iraq has no VAT or GST. Selective sales tax for tax year 2026: 10% hotels, 300% tobacco and alcohol, 15% cars and tickets, telecom status unverified, payment timing. Written for tax year 2026 from the Iraqi law and General Commission for Taxes pages. Use for questions about federal Iraq; the Kurdistan Region runs its own administration. Trigger phrases: Iraq tax, Iraqi dinar tax, General Commission for Taxes, GCT Baghdad."
+version: 0.3
+description: "Federal Iraq consumption-tax source extracts for hotels, listed imports and tickets, with explicit holds on current law and unsupported VAT-absence conclusions. Use this Guide when a question mentions federal Iraq, the General Commission for Taxes, GCT Baghdad, or Iraqi dinar tax. It identifies the source version, the evidence actually read, the conditions attached to its extracts, the facts needed from the taxpayer, and the unresolved matters that stop a current filing calculation. It does not cover the Kurdistan Region. Follow the linked country Guides for the underlying job and keep every stated hold attached to any answer."
 jurisdiction: IQ
 tax_year: 2026
 last_updated: 2026-11-01
@@ -11,85 +11,92 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iraq VAT / GST
+# Iraq VAT and Sales Tax 0.3
 
-Tax year: 2026. Iraq has no VAT or GST. It has sales taxes on listed items.
+> **General reference.** Source extracts and research holds only. This Guide does not establish the law currently in force for a filing.
+
+Tax year: 2026 is the question-routing year, not a certification that these older instruments remain unchanged. **IQ-CURRENT hold:** the complete later-amendment and commencement chain through 2026 has not been established. The extracts below describe only the named source version. Do not use their figures for a current liability until that hold is closed.
 
 ## Who this applies to
 
-Hotels and restaurants of excellent and first class, importers of cars, cigarettes and alcohol, local producers of those, airlines and travel offices, and telecom providers, in federal Iraq. There is no VAT registration threshold, reverse charge or input credit in these instruments.
+Historical selective-sales-tax extracts only. Decision 36/1997 and the bundled Instructions 7/1997 as amended by Instructions 4/2005 concern excellent and first-class hotels/restaurants. Instructions 5/2015 concern listed imports, local production, mobile/internet services and national-carrier tickets. Their existence does not establish whether a different VAT, registration, reverse-charge or input-credit obligation exists in 2026.
 
 ## Rates, bands and thresholds
 
-| Item | Amount | Tax year | Official URL |
-|---|---|---|---|
-| Excellent and first-class hotels and restaurants, all services | 10% | 2026 | https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf |
-| Cigarettes, all tobacco products, alcohol, imported or local | 300% of value | 2026 | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf |
-| Car imports, on customs declaration value | 15% | 2026 | same |
-| Air tickets on Iraqi Airways and national carriers | 15% | 2026 | same |
-| unverified: mobile and internet services, Instructions 5 of 2015 set 20%; 2026 status disputed | 20% | 2026 | unverified |
+**IQ-CURRENT and IQ-SALES-CURRENT apply to every row. These are source-version amounts, not a 2026 rate list.**
+
+| Historical instrument and condition | Amount | Official URL |
+|---|---|---|
+| Decision 36/1997 first clause and Instructions 7/1997 art. 1, excellent/first-class hotels and restaurants, value of all services | 10% | https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf |
+| Instructions 5/2015 art. 4(3), imported cigarettes/tobacco and alcohol, customs-declaration goods value; local producer collection separately addressed in art. 4(3)(b) | 300% | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf |
+| Same instrument art. 4(1), imported cars, customs-declaration goods value | 15% | same |
+| Same instrument arts. 1(6),(9), 4(2), tickets for Iraqi Airways / other national carriers, domestic or international journeys | 15% | same |
+| unverified: mobile/internet present rate and later cancellation/reintroduction chain | Held | unverified |
 
 ## The base
 
-Hotels: value of all services, on invoices showing the tax. Cars and imported tobacco: value on the customs declaration, collected at border tax units. Tickets: ticket price. These are final revenue with no credit in the instructions.
+Historical hotel instructions art. 3 require an invoice showing service amounts and sales tax, with amounts recorded for GCT. Article 4, as replaced in 2005, converts foreign-currency service charges at the Central Bank's announced market exchange rate. The 2015 instrument uses customs-declaration value for the specified imports. “Final revenue” wording does not prove the absence of an input-credit right in every law. Current customs valuation and duties are held separately.
 
 ## Deadlines and filing
 
-- Hotels and restaurants: pay GCT within the first 10 days of the following month (Decision 36 of 1997). GCT's form computes monthly tax; keep the registers.
-- Importers: pay at the border unit.
-- Local producers, airlines and travel offices, telecom: pay every 3 months, with a report certified by the accountant on the GCT form, in the first half of the month after the quarter.
+Historical hotel instructions art. 3 remits in the first ten days of the following month and art. 7 requires records subject to GCT control. Instructions 5/2015 art. 4 collects the specified imports at border tax units; its national-carrier/travel-office and local-producer clauses require a quarterly report certified by the competent accountant, on the GCT form, signed by the taxpayer or legal representative, in the first half of the following month. These source extracts do not establish present forms, registration, submission channel, receipt or payment reference. Do not file from this incomplete workflow.
 
 ## Penalties and interest
 
-Hotels: overdraft bank interest on tax not remitted, and the management bears uncollected tax and interest. GCT's form charges late interest per day.
+Historical hotel instructions art. 6 makes management responsible for the commercial banks' overdraft-rate interest on collected tax not remitted within art. 3's period, and for tax plus that interest if tax was not collected. The present interest rate, calculation convention, relief and other penalties remain held; no numerical interest calculation is supplied.
 
 ## Cross-border points
 
-Telecom service counts as supplied in Iraq even when its installations are abroad (Instructions 5, art. 2). Foreign currency hotel bills convert at the Central Bank's rate. Customs changes under Cabinet Decision 957 were reported for 2026 but no official text was opened; see Sources.
+The 2015 text art. 2 treats the specified mobile/internet service as provided in Iraq even if the necessary installations are abroad. This is a historical scope clause, not confirmation of the present telecom levy. Foreign-currency hotel conversion is above. Customs changes, digital supplies and Kurdistan Region treatment require separate source checks.
 
 ## Two worked examples that recompute
 
-First-class hotel, bill IQD 1,000,000.
+Historical arithmetic only, after independently establishing the instrument and classification. These examples do not determine 2026 liability or customs duty.
+
+First-class hotel service amount IQD 1m under the historical decision gives IQD 100,000 sales tax.
 
 ```oa-check
-name: Hotel bill
+name: Historical hotel example
 inputs:
-  bill: 1000000
+  services: 1000000
 steps:
-  - tax: bill * 0.10
+  - tax: services * 0.10
 expected:
   tax: 100000
 ```
 
-Decision: import cigarettes at declared IQD 10m, or a car at the same value. The cigarettes carry IQD 28.5m more tax.
+Classification decision: at the same IQD 10m customs-declaration value, the historical tobacco and car percentages differ by IQD 28.5m. Do not select a product classification by description alone; match the import documents.
 
 ```oa-check
-name: Cigarettes against car
+name: Historical import classification sensitivity
 inputs:
   value: 10000000
 steps:
-  - cigarettes: value * 3
+  - tobacco: value * 3
   - car: value * 0.15
-  - gap: cigarettes - car
+  - difference: tobacco - car
 expected:
-  gap: 28500000
+  tobacco: 30000000
+  car: 1500000
+  difference: 28500000
 ```
 
 ## Ask the client first
 
-- What is supplied or imported?
-- Hotel or restaurant grade?
-- Imported or locally produced?
-- Federal Iraq or Kurdistan Region?
+- Federal Iraq or Kurdistan Region, and transaction date?
+- Exact goods/service, hotel grade or carrier licence?
+- Importer, producer, airline, travel office or service provider?
+- Invoice, customs declaration, currency and value?
+- Current authority notice, registration and prior filings?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual read scope | URL | Read on |
 |---|---|---|
-| Sales Tax Instructions 5 of 2015 (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf | 2026-11-01 |
-| Decision 36 of 1997 and Instructions 2 of 1997, hotels and restaurants | https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf | 2026-11-01 |
+| Instructions 5/2015: all three PDF pages visually read, arts. 1–5 and gazette publication date | https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf | 2026-11-01 |
+| Decision 36/1997 and Instructions 7/1997 plus amendment 4/2005: all three PDF pages visually read; defective text layer was not used as quotation authority | https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf | 2026-11-01 |
 
-Not yet confirmed: Current status of the 20% telecom tax: press reports say it was cancelled in 2022, revived in 2025 or 2026, and a Communications fee was annulled in 2026; no official text opened. Telecom services 5% in the old skill: no official source. Cabinet Decision 957 customs changes: no official text. Whether the 2015 rates still stand in 2026: no later instrument found, none ruled out.
+Not yet confirmed: **IQ-CURRENT / IQ-SALES-CURRENT** full later-amendment chain and continued 2026 force of the hotel, tobacco/alcohol, car and ticket instruments; **IQ-SALES-TELECOM** later mobile/internet cancellation/reintroduction and current charge, including the unsupported legacy percentage; **IQ-VAT-ABSENCE** no evidence sufficient to assert a general absence of VAT/GST, registration, reverse charge, invoicing, staged collection or input credits in 2026; **IQ-SALES-WORKFLOW** current registrations, forms, channels, confirmations, payment references, penalties and interest; **IQ-CUSTOMS** current duties, valuation and Cabinet Decision 957. Old “no VAT / no credit / no registration” answers are superseded research holds, never operative instructions.
 
 <!-- openaccountants-cta-block -->
 
