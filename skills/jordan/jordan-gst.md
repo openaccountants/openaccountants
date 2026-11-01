@@ -40,7 +40,7 @@ Sale price the buyer must pay. A zero-rated or exempt item sold tied to a taxabl
 
 Input tax deducted: tax on returns, bad debts, purchases and imports for business other than Schedule 4 items, and pre-registration stock. Schedule 4 lists non-deductible items (https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA). Older list of blocked items, to check against Schedule 4: entertainment and hospitality, private motor vehicles, non-business items, purchases tied to exempt supplies, gifts above limits. Partial exemption by turnover with ISTD approval is not confirmed.
 
-Imports: GST on CIF plus customs duties, collected by Jordan Customs, recoverable if for taxable supplies. Services from a non-resident: importing a service is taxable under art. 6(a); self-assess 16% and claim input if used for taxable supplies.
+Imports: GST on CIF plus customs duties, collected by Jordan Customs, recoverable if for taxable supplies. Services from a non-resident: importing a service is taxable under art. 6(a); self-assess 16% and claim input if used for taxable supplies. Pay at the earliest of one month from paying the fee, customs release of the item carrying the service, or six months from receiving the service; the Director may let a registered importer defer.
 
 Supplier patterns for bank statements:
 

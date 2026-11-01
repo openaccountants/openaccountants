@@ -34,7 +34,7 @@ Firms employing insured workers and those workers, under the Social Security Law
 | Hazardous occupation addition | 1% of wage, employer | On top of other contributions, early retirement article | same |
 | Voluntary insured | 17.5% | Art. 59(a)(3), reached by the yearly steps | same |
 | Wage ceiling 2026 | JOD 3,733 | Set from 1.77% inflation; JOD 3,668 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
-| Older insured ceiling | JOD 5,000 base | Insured above that wage before 15 Oct 2009; read art. 20 for the case | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
+| Older insured ceiling | JOD 5,000 base | Insured covered before 15 Oct 2009, art. 20(c)(1); pre-date wages above JOD 5,000 stay frozen, art. 20(c)(2); read art. 20 for the case | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
 | Maximum net unemployment benefit 2026 | JOD 623 | JOD 612 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
 | Minimum wage | unverified | No Ministry of Labour text read | unverified |
 
@@ -100,7 +100,7 @@ expected:
 - Headcount of the firm.
 - Age, nationality and prior coverage of the worker.
 - Hazardous occupation or not.
-- Wage history above JOD 5,000 before 15 Oct 2009.
+- Whether the worker was insured before 15 Oct 2009, and any wage above JOD 5,000 before that date.
 
 ## Sources
 
