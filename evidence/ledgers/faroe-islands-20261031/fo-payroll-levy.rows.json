@@ -1,0 +1,611 @@
+[
+  {
+    "id": "PL-001",
+    "section": "Who this applies to",
+    "claim": "Enumerated paid healthcare, insurance, finance and necessary electronic-service activities; not all exempt businesses.",
+    "act_article": "Payroll Levy Act193/1993 §1(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      305,
+      308
+    ],
+    "original_language_quote": "§ 1. 1) Avgjald verður goldið til landskassan av hesum virkjum, sum móti samsýning lata tænastur:\n1. Læknavirksemi, tannlækna- og annað dentalvirksemi, kiropraktikk, fysioterapi og onnur verulig heilsurøkt.\n2. Tryggingarvirksemi.\n3. Banka-, sparikassa- og fíggjarvirksemi og serligar elektroniskar tænastur, ið eru neyðugar fyri hetta virksemið..",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-002",
+    "section": "Who this applies to",
+    "claim": "Express named-institution exceptions, not a purpose-based extension.",
+    "act_article": "Payroll Levy Act193/1993 §1(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      309,
+      309
+    ],
+    "original_language_quote": "2. stk. 1) Avgjaldskyldan eftir stk. 1 fevnir tó ikki um Vinnuframagrunnin, Færøernes Realkreditinstitut, Húsalánsgrunnin, Búnaðargrunnin, Fíggjargrunnin frá 1992, Framtaksgrunnin.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-003",
+    "section": "Who this applies to",
+    "claim": "No MVG small-sales threshold appears in this levy charging/base text; mixed activities separately allocated.",
+    "act_article": "Payroll Levy Act193/1993 §§1–5",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      305,
+      320
+    ],
+    "original_language_quote": "§ 1. 1) Avgjald verður goldið til landskassan av hesum virkjum, sum móti samsýning lata tænastur:\n1. Læknavirksemi, tannlækna- og annað dentalvirksemi, kiropraktikk, fysioterapi og onnur verulig heilsurøkt.\n2. Tryggingarvirksemi.\n3. Banka-, sparikassa- og fíggjarvirksemi og serligar elektroniskar tænastur, ið eru neyðugar fyri hetta virksemið..\n2. stk. 1) Avgjaldskyldan eftir stk. 1 fevnir tó ikki um Vinnuframagrunnin, Færøernes Realkreditinstitut, Húsalánsgrunnin, Búnaðargrunnin, Fíggjargrunnin frá 1992, Framtaksgrunnin.\n§ 2. 2) Verandi virki, sum eru avgjaldsskyldug, skulu verða skrásett hjá TAKS.\n§ 3. 2) TAKS útflýggjar virkjum fráboðan um, at tey eru skrásett eftir § 2.\n2. stk. Fráboðan til skrásetingar skal fara fram í seinasta lagi 8 dagar, áðrenn virkið byrjar. Broytingar í skrásetingarviðurskiftunum skulu verða fráboðaðar í seinasta lagi 8 dagar aftaná, at broytingin er gjørd.\n3. stk. 3) Um eitt virki ikki hevur deild ella líknandi her á landi skal tað verða skrásett við einum persóni, sum er búsitandi her á landi, ella við einum virki, sum hevur handilsstað her á landi. Ásetingarnar í 1. pkt eru ikki galdandi í tann mun, annað er ásett í sáttmála frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landstýri hinumegin (Hoyvíkssáttmálanum).\nII. Avgjaldssatsurin og avgjaldsgrundarlagið\n§ 4. Avgjaldið er 2,5% av avgjaldsgrundarlagnum fyri virki nevnd í § 1, stk. 1, nr. 1.\n2. stk. 4) 2) Avgjaldið er 10% av avgjaldsgrundarlagnum fyri virki, nevnd í § 1, stk. 1, nr. 2 og 12% av avgjaldsgrundarlagnum fyri virki, nevnd í § 1, stk. 1, nr. 3.\n§ 5. Avgjaldsgrundarlagið er fyri tey í § 1, stk. 1, nr. 1 nevndu virkir útgoldin A-lønarupphædd hjá virkinum við avlopi av sjálvstøðugum vinnuvirki afturatløgdum ella undirskoti frádrignum, gjørt upp eftir reglunum fyri uppgerð av skattskyldugari inntøku.\n2. stk. Avgjaldsgrundarlagið er fyri tey í § 1, stk. 1 nr. 2 og 3 nevndu virki útgoldna A-lønarupphæddin hjá virkinum í avgjaldstíðarskeiðnum.\n3. stk. Í samband við uppgerð av lønarupphæddini, skal lønarsamsýning í naturalia viðroknast í lønarupphæddina í tann mun, tað gevur rætt til frítíðarendurgjald sambært frítíðarlógini.\n4. stk. Virkir, sum bæði hava virksemi eftir § 1, stk. 1 og annað virksemi, skulu grundað á eitt økisuppbýti av virkinum, gera eitt býti av virkisins lønarupphædd og yvirskoti ella halli, sum viðvíkir tí avgjaldsskylduga partinum av virkinum, ávikavist restini av virkinum. Landsstýrið kann áseta nærri reglur fyri uppgerðina av avgjaldsgrundarlagnum eftir 1. og 2. pkt.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-004",
+    "section": "Rates, bands and thresholds",
+    "claim": "Healthcare 2.5%.",
+    "act_article": "Payroll Levy Act193/1993 §4(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      315,
+      315
+    ],
+    "original_language_quote": "§ 4. Avgjaldið er 2,5% av avgjaldsgrundarlagnum fyri virki nevnd í § 1, stk. 1, nr. 1.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-005",
+    "section": "Rates, bands and thresholds",
+    "claim": "Insurance 10%; finance including specified electronic services 12%.",
+    "act_article": "Payroll Levy Act193/1993 §4(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      316,
+      316
+    ],
+    "original_language_quote": "2. stk. 4) 2) Avgjaldið er 10% av avgjaldsgrundarlagnum fyri virki, nevnd í § 1, stk. 1, nr. 2 og 12% av avgjaldsgrundarlagnum fyri virki, nevnd í § 1, stk. 1, nr. 3.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-006",
+    "section": "Rates, bands and thresholds",
+    "claim": "Quarterly period and 25% provisional B-income component.",
+    "act_article": "Payroll Levy Act193/1993 §6(1)–(3)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      322,
+      324
+    ],
+    "original_language_quote": "§ 6. Avgjaldstíðarskeiðið er ársfjórðingurin.\n2. stk. 2) TAKS skal í seinasta lagi 7 dagar aftaná, at avgjaldstíðarskeiðið er úti, senda fyribils uppgerð og krav til avgjaldsskylduga virki um avgjaldsgrundarlagið og avgjaldsupphæddina.\n3. stk. Grundarlagið fyri fyribils ársfjórðingsuppgerðini er útgoldna A-lønarupphæddin og 25% av fyribils skrásettu B-inntøkuni hjá sjálvstøðugt vinnurekandi.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-007",
+    "section": "Rates, bands and thresholds",
+    "claim": "Below DKK50 payment may be waived, not automatic exemption.",
+    "act_article": "Payroll Levy Act193/1993 §6(7)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      328,
+      328
+    ],
+    "original_language_quote": "7. stk. Er avgjaldið fyri eitt avgjaldstíðarskeið minni enn 50 kr., kann sleppast undan at gjalda upphæddina.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-008",
+    "section": "Rates, bands and thresholds",
+    "claim": "Below DKK50 annual refund not paid.",
+    "act_article": "Payroll Levy Act193/1993 §7(6)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      336,
+      336
+    ],
+    "original_language_quote": "6. stk. Afturgjaldingarupphæddir lægri enn 50 kr., verða ikki útgoldnar.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-009",
+    "section": "The base",
+    "claim": "Healthcare paid A-wages plus taxable business profit or minus taxable business loss.",
+    "act_article": "Payroll Levy Act193/1993 §5(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      317,
+      317
+    ],
+    "original_language_quote": "§ 5. Avgjaldsgrundarlagið er fyri tey í § 1, stk. 1, nr. 1 nevndu virkir útgoldin A-lønarupphædd hjá virkinum við avlopi av sjálvstøðugum vinnuvirki afturatløgdum ella undirskoti frádrignum, gjørt upp eftir reglunum fyri uppgerð av skattskyldugari inntøku.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-010",
+    "section": "The base",
+    "claim": "Insurance/finance paid A-wages only, no healthcare profit component.",
+    "act_article": "Payroll Levy Act193/1993 §5(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      318,
+      318
+    ],
+    "original_language_quote": "2. stk. Avgjaldsgrundarlagið er fyri tey í § 1, stk. 1 nr. 2 og 3 nevndu virki útgoldna A-lønarupphæddin hjá virkinum í avgjaldstíðarskeiðnum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-011",
+    "section": "The base",
+    "claim": "Benefits in kind included to extent giving holiday compensation entitlement.",
+    "act_article": "Payroll Levy Act193/1993 §5(3)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      319,
+      319
+    ],
+    "original_language_quote": "3. stk. Í samband við uppgerð av lønarupphæddini, skal lønarsamsýning í naturalia viðroknast í lønarupphæddina í tann mun, tað gevur rætt til frítíðarendurgjald sambært frítíðarlógini.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-012",
+    "section": "The base",
+    "claim": "Mixed activities split wages and profit/loss by business division; no statutory turnover safe harbour supplied.",
+    "act_article": "Payroll Levy Act193/1993 §5(4)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      320,
+      320
+    ],
+    "original_language_quote": "4. stk. Virkir, sum bæði hava virksemi eftir § 1, stk. 1 og annað virksemi, skulu grundað á eitt økisuppbýti av virkinum, gera eitt býti av virkisins lønarupphædd og yvirskoti ella halli, sum viðvíkir tí avgjaldsskylduga partinum av virkinum, ávikavist restini av virkinum. Landsstýrið kann áseta nærri reglur fyri uppgerðina av avgjaldsgrundarlagnum eftir 1. og 2. pkt.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-013",
+    "section": "The base",
+    "claim": "Provisional base and final annual reconciliation distinguished.",
+    "act_article": "Payroll Levy Act193/1993 §§6(3),7(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      324,
+      330
+    ],
+    "original_language_quote": "3. stk. Grundarlagið fyri fyribils ársfjórðingsuppgerðini er útgoldna A-lønarupphæddin og 25% av fyribils skrásettu B-inntøkuni hjá sjálvstøðugt vinnurekandi.\n4. stk. Avgjaldið fyri eitt avgjaldstíðarskeið fellur til gjaldingar og skal inngjaldast í seinasta lagi 1 mánað og 10 dagar aftaná endan á avgjaldstíðarskeiðnum.\nStk. 5.5) 6) Er avgjaldið ikki goldið, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu.\n6. stk. Er síðsti rættstundis inngjaldingardagur ein leygardagur, sunnudagur ella halgidagur, verður freistin flutt til fyrsta gerandisdag.\n7. stk. Er avgjaldið fyri eitt avgjaldstíðarskeið minni enn 50 kr., kann sleppast undan at gjalda upphæddina.\n8. stk. Endaliga uppgerðin og inngjaldingin av avgjaldinum, grundað á samlaða avgjaldsgrundarlagið, skal gerast eftir reglunum í § 7.\n§ 7. Fyribils uppgerðin og inngjaldingin av avgjaldi eftir § 6, skal regulerast í mun til tað samlaða avgjaldsgrundarlagið hjá virkinum. Reguleringin skal gerast aftaná, at inntøkuárið hjá virkinum er farið. Í samband við endaligu skattauppgerðina og inngjaldingina av avgjaldinum, er uppgerðartíðarskeiðið inntøkuárið hjá virkinum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-014",
+    "section": "Deadlines and filing",
+    "claim": "TAKS registration and registration notice.",
+    "act_article": "Payroll Levy Act193/1993 §§2,3(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      310,
+      311
+    ],
+    "original_language_quote": "§ 2. 2) Verandi virki, sum eru avgjaldsskyldug, skulu verða skrásett hjá TAKS.\n§ 3. 2) TAKS útflýggjar virkjum fráboðan um, at tey eru skrásett eftir § 2.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-015",
+    "section": "Deadlines and filing",
+    "claim": "Registration eight days before start; changes eight days after change.",
+    "act_article": "Payroll Levy Act193/1993 §3(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      312,
+      312
+    ],
+    "original_language_quote": "2. stk. Fráboðan til skrásetingar skal fara fram í seinasta lagi 8 dagar, áðrenn virkið byrjar. Broytingar í skrásetingarviðurskiftunum skulu verða fráboðaðar í seinasta lagi 8 dagar aftaná, at broytingin er gjørd.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-016",
+    "section": "Deadlines and filing",
+    "claim": "Provisional demand within seven days of quarter end.",
+    "act_article": "Payroll Levy Act193/1993 §6(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      323,
+      323
+    ],
+    "original_language_quote": "2. stk. 2) TAKS skal í seinasta lagi 7 dagar aftaná, at avgjaldstíðarskeiðið er úti, senda fyribils uppgerð og krav til avgjaldsskylduga virki um avgjaldsgrundarlagið og avgjaldsupphæddina.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-017",
+    "section": "Deadlines and filing",
+    "claim": "Ordinary quarterly payment one month and ten days after end, including Q2 10August.",
+    "act_article": "Payroll Levy Act193/1993 §6(4)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      325,
+      325
+    ],
+    "original_language_quote": "4. stk. Avgjaldið fyri eitt avgjaldstíðarskeið fellur til gjaldingar og skal inngjaldast í seinasta lagi 1 mánað og 10 dagar aftaná endan á avgjaldstíðarskeiðnum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-018",
+    "section": "Deadlines and filing",
+    "claim": "Saturday/Sunday/holiday last timely date moves to first working day.",
+    "act_article": "Payroll Levy Act193/1993 §6(6)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      327,
+      327
+    ],
+    "original_language_quote": "6. stk. Er síðsti rættstundis inngjaldingardagur ein leygardagur, sunnudagur ella halgidagur, verður freistin flutt til fyrsta gerandisdag.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-019",
+    "section": "Deadlines and filing",
+    "claim": "Short duration/nonpayment/insolvency shortening powers; specific demand considered.",
+    "act_article": "Payroll Levy Act193/1993 §§9–10",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      341,
+      348
+    ],
+    "original_language_quote": "§ 9. 2) Fyri virkir, sum bert verða rikin í stutta tíð, kann TAKS áseta, at uppgerðartíðarskeiðið er tað tíðarskeiðið, sum virkið verður rikið í. TAKS kann somuleiðis fyri tílík virki, stytta um freistirnar fyri at senda uppgerð og krav út, og fyri at inngjalda avgjaldið.\n§ 10. 2) 8) Um eitt virki fleiri ferðir ikki hevur goldið avgjaldið rættstundis, kann TAKS stytta avgjaldstíðarskeiðið umframt freistina fyri inngjalding av avgjaldinum. Sama er galdandi:\n1) Um virki ella tess ánari:\na) í samband við úttøku ikki er førur fyri at rinda sína skuld.\nb) hevur steðgað sínum gjaldingum,\nc) er undir fríari akkord ella likvidatión ella\nd) er undir endurskipanarviðgerð ella trotabúsviðgerð.\n2) Um deyðsbúgvið hjá virkisánara verður viðgjørt eftir kapitli III í skiftilógini.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-020",
+    "section": "Deadlines and filing",
+    "claim": "Annual reconciliation and exact original final-demand phrase; detailed date interpretation remains open.",
+    "act_article": "Payroll Levy Act193/1993 §7(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      330,
+      331
+    ],
+    "original_language_quote": "§ 7. Fyribils uppgerðin og inngjaldingin av avgjaldi eftir § 6, skal regulerast í mun til tað samlaða avgjaldsgrundarlagið hjá virkinum. Reguleringin skal gerast aftaná, at inntøkuárið hjá virkinum er farið. Í samband við endaligu skattauppgerðina og inngjaldingina av avgjaldinum, er uppgerðartíðarskeiðið inntøkuárið hjá virkinum.\nÍrestandi avgjaldið skal gjaldast í seinasta lagi leypandi mánað og 10 dagar aftaná, at kravið er útskrivað.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-021",
+    "section": "Deadlines and filing",
+    "claim": "Timely return overpayment refund within three weeks of last timely submission date.",
+    "act_article": "Payroll Levy Act193/1993 §7(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      332,
+      332
+    ],
+    "original_language_quote": "2. stk. Fer fyribils avgjaldsinngjaldingin hjá virkinum eftir § 6 uppum tað endaliga uppgjørda avgjaldið, verður tað ov nógv inngoldna avgjaldið afturgoldið í seinasta lagi 3 vikur roknað frá síðsta rættstundis innsendan av sjálvuppgávu, um so er, at sjálvuppgávan er innsend rættstundis.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-022",
+    "section": "Deadlines and filing",
+    "claim": "Inspection obstruction suspends refund period, previous returns required, earlier debts offset, minimum payout.",
+    "act_article": "Payroll Levy Act193/1993 §7(3)–(6)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      333,
+      336
+    ],
+    "original_language_quote": "3. stk. 2) Kann TAKS orsakað av viðurskiftum hjá virkinum ikki kanna avgjaldsgrundarlagið fyri viðkomandi uppgerðartíðarskeið, verður útgjaldingarfreistin avbrotin, inntil viðurskiftini hjá virkinum ikki longur forða fyri eftirliti.\n4. stk. 2) Útgjalding fer bert fram, um TAKS hevur móttikið sjálvuppgávu fyri undanfarin ár.\n5. stk. Krav upp á avgjald og møguligar rentur fyri eldri uppgerðartíðarskeið verður mótroknað í sambandi við útgjalding, sjálvt um kravið ikki er forfallið.\n6. stk. Afturgjaldingarupphæddir lægri enn 50 kr., verða ikki útgoldnar.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-023",
+    "section": "Penalties and interest",
+    "claim": "0.7% each commenced month from due date, including booked interest.",
+    "act_article": "Payroll Levy Act193/1993 §6(5)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      326,
+      326
+    ],
+    "original_language_quote": "Stk. 5.5) 6) Er avgjaldið ikki goldið, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-024",
+    "section": "Penalties and interest",
+    "claim": "Late return 1% min300 max1000, special-circumstances waiver.",
+    "act_article": "Payroll Levy Act193/1993 §8",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      339,
+      340
+    ],
+    "original_language_quote": "§ 8. Fyriliggur sjálvuppgávan fyri eitt uppgerðartíðarskeið ikki rættstundis, verður avgjaldið hækkað fyri viðkomandi tíðarskeið við 1%, tó í minsta lagi við 300 kr. og í mesta lagi við 1.000 kr.\n2. stk. 2) TAKS kann frítaka fyri hækking av avgjaldi eftir stk.1, tá ið serligar umstøður tala fyri hesum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-025",
+    "section": "Penalties and interest",
+    "claim": "Correction underpayment payable within14days of demand.",
+    "act_article": "Payroll Levy Act193/1993 §11(1)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      349,
+      349
+    ],
+    "original_language_quote": "§ 11. 2) Verður staðfest, at eitt virki hevur givið skeiva sjálvuppgávu soleiðis, at virkið hevur rindað ov lítið í avgjaldi, krevur TAKS virkið eftir tí skyldugu upphæddini til gjaldingar í seinasta lagi 14 dagar eftir uppkrav.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-026",
+    "section": "Penalties and interest",
+    "claim": "Estimated base on missing return/inadequate accounts.",
+    "act_article": "Payroll Levy Act193/1993 §11(2)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      350,
+      350
+    ],
+    "original_language_quote": "2. stk. 2) Kann støddin á tí avgjaldi, sum virkið skal rinda, ikki gerast upp við grundarlagi í roknskapum virkisins, ella tí, at sjálvuppgávan ikki verður latin inn, kann TAKS gera eina áseting grundað á meting av avgjaldsgrundarlagnum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-027",
+    "section": "Penalties and interest",
+    "claim": "DKK50 reminder-letter fee.",
+    "act_article": "Payroll Levy Act193/1993 §11(3)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      351,
+      351
+    ],
+    "original_language_quote": "3. stk. Rindað verður eitt gjald uppá 50 kr. fyri áminningarskriv um rindan av avgjaldi.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-028",
+    "section": "Penalties and interest",
+    "claim": "Operator liability; foreign representative and business joint liability.",
+    "act_article": "Payroll Levy Act193/1993 §12",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      352,
+      352
+    ],
+    "original_language_quote": "§ 12. Fyri rindan av avgjaldi eftir hesari lóg heftir tann ið, sum eigari, uppsitari ella líknandi, rekur virkið fyri egna rokning. Er eitt útlendskt virki skrásett við einum umboðsmanni her sambært § 3, stk. 3, bera hesin og virkið samábyrgd fyri rindan av avgjaldinum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-029",
+    "section": "Penalties and interest",
+    "claim": "Intentional/gross negligence fines, evasion maximum2years, no fixed fine invented.",
+    "act_article": "Payroll Levy Act193/1993 §18",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      366,
+      371
+    ],
+    "original_language_quote": "§ 18. Við sekt verður tann revsaður, ið við vilja ella av grovum ósketni:\n1) Gevur skeivar ella villleiðandi upplýsingar ella ikki gevur upplýsingar at nýta í samband við eftirlitið við uppkravdum avgjaldi ella eftirlitið við afturgjalding.\n2) Brýtur § 14, stk. 2 ella 3, § 15, stk. 3, 2. pkt.\n2. stk. Í fyriskipanum sambært hesi lóg, kann sekt áleggjast tí, sum við vilja ella av grovum ósketni brýtur reglurnar í fyriskipanunum.\n3. stk. 2) Tann, sum fremur eitt av nevndu brotum við vilja við tí í hyggju at sleppa undan at rinda avgjald til landskassan, verður sektaður ella fær fongsil í upp til 2 ár.\n4. stk. Fyri lógarbrot, sum verða framd av partafeløgum, smápartafeløgum ella tílíkum, kann sektarábyrgd verða áløgd felagnum sum slíkum.",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-030",
+    "section": "Cross-border points",
+    "claim": "Foreign local representative, only extent of Hoyvík treaty exception.",
+    "act_article": "Payroll Levy Act193/1993 §3(3)",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      313,
+      313
+    ],
+    "original_language_quote": "3. stk. 3) Um eitt virki ikki hevur deild ella líknandi her á landi skal tað verða skrásett við einum persóni, sum er búsitandi her á landi, ella við einum virki, sum hevur handilsstað her á landi. Ásetingarnar í 1. pkt eru ikki galdandi í tann mun, annað er ásett í sáttmála frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landstýri hinumegin (Hoyvíkssáttmálanum).",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-031",
+    "section": "Sources",
+    "claim": "Current consolidation title through31/2023.",
+    "act_article": "Payroll Levy Act193/1993 Title/commencement",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payroll-levy.reader.txt",
+    "reader_lines": [
+      294,
+      296
+    ],
+    "original_language_quote": "Løgtingslóg nr. 193 frá 10. desember 1993 um lønarhæddaravgjald, sum seinast broytt við løgtingslóg nr. 31 frá 9. mars 2023\n10. desember 1993Nr. 193\nLøgtingslóg um lønarhæddaravgjald, sum seinast broytt við løgtingslóg nr. 31 frá 9. mars 2023",
+    "kind": "statute"
+  },
+  {
+    "id": "PL-032",
+    "section": "Deadlines and filing",
+    "claim": "Payment agreement viaTAKS,bank orhomebank.",
+    "act_article": "TAKS business payment agreement guidance",
+    "url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payment-agreements.reader.txt",
+    "reader_lines": [
+      23,
+      23
+    ],
+    "original_language_quote": "Ein gjaldsavtala við TAKS kann stovnast gjøgnum TAKS, peningastovn ella heimabanka.",
+    "kind": "official guidance"
+  },
+  {
+    "id": "PL-033",
+    "section": "Deadlines and filing",
+    "claim": "Two official business payment agreement applications.",
+    "act_article": "TAKS business payment agreement guidance",
+    "url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payment-agreements.reader.txt",
+    "reader_lines": [
+      25,
+      25
+    ],
+    "original_language_quote": "Fyll út og send okkum umsóknina “Gjaldsavtala hjá virkjum við TAKS\" ella “Gjaldsavtala hjá virkjum við TAKS um at gjalda rokningar á Vinnuglugganum\", alt eftir um gjaldast skal um Vinnuglugganum ella ikki.",
+    "kind": "official guidance"
+  },
+  {
+    "id": "PL-034",
+    "section": "Deadlines and filing",
+    "claim": "PBS5108748,debtorgroup5,typeLA,GS BO+LA+Vtal+00000; neveruse sample taxpayer id.",
+    "act_article": "TAKS business payment agreement guidance",
+    "url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "read_date": "2026-10-31",
+    "source_file": "sources/payment-agreements.reader.txt",
+    "reader_lines": [
+      45,
+      45
+    ],
+    "original_language_quote": "51087485LA:LønhæddaravgjaldBOLA59522500000BO + LA + Vtal + 00000",
+    "kind": "official guidance"
+  },
+  {
+    "id": "PL-035",
+    "section": "Deadlines and filing",
+    "claim": "Businessname/addressandidentity",
+    "act_article": "TAKS V01 guidance Section1",
+    "url": "https://taks.cdn.fo/media/2583/veglei%C3%B0ing-til-skr%C3%A1setingarskjali%C3%B0-til-vinnuskr%C3%A1nna-v01-091220.pdf?s=DItd4f8Ry-pMJPvdHTj67_QvgYo",
+    "read_date": "2026-10-31",
+    "source_file": "sources/registration-guidance.web-extract.txt",
+    "original_language_quote": "Her verður upplýst, hvør skal skrásetast í vinnuskránni, t.e. navn, bústaður o.s.fr.",
+    "kind": "official guidance PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-036",
+    "section": "Deadlines and filing",
+    "claim": "Actualactivitystartdate",
+    "act_article": "TAKS V01 guidance Section2",
+    "url": "https://taks.cdn.fo/media/2583/veglei%C3%B0ing-til-skr%C3%A1setingarskjali%C3%B0-til-vinnuskr%C3%A1nna-v01-091220.pdf?s=DItd4f8Ry-pMJPvdHTj67_QvgYo",
+    "read_date": "2026-10-31",
+    "source_file": "sources/registration-guidance.web-extract.txt",
+    "original_language_quote": "Byrjanardagur er tann dagur, tá ið farið verður undir virksemið, sama um fólk er sett í starv ella ikki.",
+    "kind": "official guidance PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-037",
+    "section": "Deadlines and filing",
+    "claim": "Levyandstartdateseparateobligation",
+    "act_article": "TAKS V01 guidance Section3",
+    "url": "https://taks.cdn.fo/media/2583/veglei%C3%B0ing-til-skr%C3%A1setingarskjali%C3%B0-til-vinnuskr%C3%A1nna-v01-091220.pdf?s=DItd4f8Ry-pMJPvdHTj67_QvgYo",
+    "read_date": "2026-10-31",
+    "source_file": "sources/registration-guidance.web-extract.txt",
+    "original_language_quote": "Her skal boðast frá, um virkið er mvg-skyldigt ella lønhæddaravgjaldsskyldigt, og nær skyldan byrjar.",
+    "kind": "official guidance PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-038",
+    "section": "Deadlines and filing",
+    "claim": "Authorisedsignatureandattachments",
+    "act_article": "TAKS V01 guidance Signature",
+    "url": "https://taks.cdn.fo/media/2583/veglei%C3%B0ing-til-skr%C3%A1setingarskjali%C3%B0-til-vinnuskr%C3%A1nna-v01-091220.pdf?s=DItd4f8Ry-pMJPvdHTj67_QvgYo",
+    "read_date": "2026-10-31",
+    "source_file": "sources/registration-guidance.web-extract.txt",
+    "original_language_quote": "Skrásetingarskjalið skal undirskrivast av stjóra felagsins ella teimum, sum hava tekningarrætt. Viðtøkur,\neigarabók, avrit av fráboðan um nýskráseting frá Skráseting Føroya og stovningarsamtykt skulu leggjast við.",
+    "kind": "official guidance PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-039",
+    "section": "Deadlines and filing",
+    "claim": "Entitytypeattachmentsandsoletrader/partnershipplan",
+    "act_article": "TAKS V01 section4",
+    "url": "https://taks.cdn.fo/media/1938/v01-skr%C3%A1setingarskjal-til-vinnuskr%C3%A1nna-161220.pdf?s=5Yrnkhknbc6vaTXl_Pu3BDPa7b8",
+    "read_date": "2026-10-31",
+    "source_file": "sources/V01.web-extract.txt",
+    "original_language_quote": "Fyriliggja skal:\nRakstrarætlan*)\nFyriliggja skulu:\nRakstrarætlan*),\níognarsáttmáli",
+    "kind": "official current-listed form PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-040",
+    "section": "Deadlines and filing",
+    "claim": "Detailedactivityandprincipalactivity",
+    "act_article": "TAKS V01 section5",
+    "url": "https://taks.cdn.fo/media/1938/v01-skr%C3%A1setingarskjal-til-vinnuskr%C3%A1nna-161220.pdf?s=5Yrnkhknbc6vaTXl_Pu3BDPa7b8",
+    "read_date": "2026-10-31",
+    "source_file": "sources/V01.web-extract.txt",
+    "original_language_quote": "5. Ítøkilig frágreiðing um, hvat virkið ger (Skal ásetast)",
+    "kind": "official current-listed form PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-041",
+    "section": "Deadlines and filing",
+    "claim": "Staffidentityandrights",
+    "act_article": "TAKS V01 section8",
+    "url": "https://taks.cdn.fo/media/1938/v01-skr%C3%A1setingarskjal-til-vinnuskr%C3%A1nna-161220.pdf?s=5Yrnkhknbc6vaTXl_Pu3BDPa7b8",
+    "read_date": "2026-10-31",
+    "source_file": "sources/V01.web-extract.txt",
+    "original_language_quote": "Niðanfyristandandi starvsfólk skulu hava fylgjandi rættindi til Vinnugluggan:",
+    "kind": "official current-listed form PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-042",
+    "section": "Deadlines and filing",
+    "claim": "AccountantaccessVG03",
+    "act_article": "TAKS V01 section9",
+    "url": "https://taks.cdn.fo/media/1938/v01-skr%C3%A1setingarskjal-til-vinnuskr%C3%A1nna-161220.pdf?s=5Yrnkhknbc6vaTXl_Pu3BDPa7b8",
+    "read_date": "2026-10-31",
+    "source_file": "sources/V01.web-extract.txt",
+    "original_language_quote": "Nummarið er VG03.",
+    "kind": "official current-listed form PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  },
+  {
+    "id": "PL-043",
+    "section": "Deadlines and filing",
+    "claim": "Securesubmission",
+    "act_article": "TAKS V01 page2",
+    "url": "https://taks.cdn.fo/media/1938/v01-skr%C3%A1setingarskjal-til-vinnuskr%C3%A1nna-161220.pdf?s=5Yrnkhknbc6vaTXl_Pu3BDPa7b8",
+    "read_date": "2026-10-31",
+    "source_file": "sources/V01.web-extract.txt",
+    "original_language_quote": "Send umsóknina um álítandi postskipan til taks@taks.fo ella lat okkum hana á annan tryggan hátt.",
+    "kind": "official current-listed form PDF read through web tool; selected exact-text extract, raw PDF not preserved"
+  }
+]

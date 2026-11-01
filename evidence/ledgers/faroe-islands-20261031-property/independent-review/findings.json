@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PT-IR-01",
+    "priority": "P2",
+    "status": "OPEN",
+    "file": "skills/faroe-islands/fo-property-transfer-registration.md",
+    "line": 161,
+    "problem": "The mortgage-form row omits the mandatory conditional treatment of edits to the fixed terms, although PT018 records it.",
+    "required_repair": "State that additions, deletions or corrections to fixed text on pages 3–4 must also be included in the particular terms on pages 1–2. Keep the current approved-blank gap open; no form fields need to be invented.",
+    "authority": "Regulation 63/1962 §3(3)",
+    "official_url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+    "read_date": "2026-10-31",
+    "original_language_quote": "Um so er, at skoytt verður uppí, strikað verður út ella rættingar gjørdar í tí fasta tekstinum (s. 3-4), mega hesar broytingar eisini vera tiknar við í skjalsins serteksti (s. 1-2).",
+    "ledger_row": "PT018",
+    "source_verified": "Fresh complete official regulation and neighbouring provisions read; all PT018 quote chunks verified."
+  },
+  {
+    "id": "PT-IR-02",
+    "priority": "P2",
+    "status": "OPEN",
+    "file": "skills/faroe-islands/fo-property-transfer-registration.md",
+    "line": 264,
+    "problem": "The title-declaration procedure does not state the published placement requirement before signatures for an individual or legal person.",
+    "required_repair": "When the declaration route is used, state that the relevant declaration belongs before the signatures. Add a short original-language agency receipt with official URL/read date. Preserve the statutory attached-permission and pending-application routes and the unresolved application-execution gap.",
+    "authority": "Umhvørvisstovan, Tinglýsing, Keyp av fastogn – fyri útlendingar; Acquisition Act158/2021 §7 supplies the statutory route",
+    "official_url": "https://www.us.fo/tinglysing/",
+    "read_date": "2026-10-31",
+    "original_language_quote": "frammanfyri undirskriftirnar",
+    "context": "The individual heading directs placement before signatures; the separate company/legal-person heading independently gives the same instruction. Full live headings read in web reader and normal browser; this is not a blank-form inference.",
+    "ledger_row": "Add bounded agency procedural receipt; PT039 statutory declaration route remains valid."
+  }
+]

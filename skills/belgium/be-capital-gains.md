@@ -1,10 +1,10 @@
 ---
 name: be-capital-gains
 description: "Belgium capital gains tax for individuals from 1 January 2026 (income year 2026, assessment year 2027), under the law of 6 April 2026 and Circular 2026/C/74: the 10% tax on gains on shares, bonds, funds, ETFs, derivatives, crypto, investment gold and life insurance; the EUR 10,000 exemption and its carry-forward; the 31 December 2025 value step-up and the cost option to 2030; the 20% substantial interest scale (1.25% to 10%); internal gains (33%); speculation (33%); bank withholding and opt-out; losses; real estate gains. Trigger on: Belgium capital gains tax, meerwaardebelasting, plus-values Belgique, solidariteitsbijdrage, aanmerkelijk belang, Belgian shares gain, fotomoment."
-version: 2.1
+version: 2.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -280,8 +280,6 @@ Not yet confirmed:
 - Where the line between a sale "up to" 31 December 2030 (statute) and "up to and including" (circular) matters, rely on the circular only with the risk named.
 - The rules for life insurance contracts (art. 102/1: premiums paid, value at 31 December 2025, the 8-year and 130% tests) are summarised, not worked through; read Circular 2026/C/74, nos. 177 to 189, before advising on a policy.
 - Penalties for an intermediary that misses the art. 326bis report were not checked.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

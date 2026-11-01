@@ -1,13 +1,13 @@
 ---
 name: se-corporate-tax
 description: "Swedish corporate income tax (bolagsskatt) for aktiebolag, ekonomiska föreningar and other legal persons resident in Sweden, and for foreign companies with a permanent establishment (fast driftställe) in Sweden. Covers the 20.6% rate under Inkomstskattelagen 65 kap. 10 §, the taxable base, periodiseringsfond (25%, six years, schablonintäkt), inventarier depreciation, tax-exempt dividends and gains on näringsbetingade andelar, the interest limitation rule (30% of tax EBITDA, SEK 5 million), loss carry-forward and the ownership-change restrictions, koncernbidrag, Inkomstdeklaration 2 deadlines, preliminärskatt, kostnadsränta, förseningsavgift, skattetillägg and kupongskatt. Tax year 2026. Trigger on: bolagsskatt, Swedish corporate tax, aktiebolag tax, INK2, periodiseringsfond, koncernbidrag, näringsbetingade andelar, ränteavdragsbegränsning, underskottsavdrag, kupongskatt. Out of scope: sole traders (se-income-tax), egenavgifter (se-social-contributions), payroll (sweden-payroll), VAT (sweden-vat-return), individual capital gains (se-capital-gains)."
-version: 0.1
+version: 0.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -184,8 +184,6 @@ expected:
 | Skatteverket: Ränta på skattekontot (basränta and kostnadsränta) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-10-22 |
 
 Not yet confirmed: which named Skatteverket service, other than accounting software and Filöverföring, will take Inkomstdeklaration 2 for financial years ending September to December 2026 once the e-service is withdrawn on 29 December 2026; whether the basränta changes after 22 October 2026 (Skatteverket showed 2.5% from 1 December 2024 as current); reduced kupongskatt rates under individual tax treaties (not covered here).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

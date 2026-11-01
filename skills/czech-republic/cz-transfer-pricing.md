@@ -1,19 +1,19 @@
 ---
 name: cz-transfer-pricing
 description: "Use this skill for Czech transfer pricing (převodní ceny) in tax year 2026. It covers the arm's length rule and the definition of related persons (spojené osoby, the 25% capital or voting test and other links) in Income Taxes Act § 23(7), the self-adjustment in § 23(3)(a)(17), the related-party transactions annex to the corporate return (Přehled transakcí se spojenými osobami, 25 5404/E) and who must file it (CZK 40 million assets, CZK 80 million turnover or 50 employees, plus a foreign related party, a tax loss or an investment incentive), documentation under Tax Code § 92 and Financial Administration guidance D-334 and GFŘ D-34, binding rulings on prices (APAs, § 38nc and § 38nd, guidance GFŘ D-32), country-by-country reporting (EUR 750 million), penalties and late payment interest. Trigger on: transfer pricing Czech Republic, převodní ceny, spojené osoby, cena obvyklá, závazné posouzení ceny, Local File Czech. Out of scope: corporate tax in general (cz-corporate-income-tax), withholding and exit tax (cz-cross-border), VAT (cz-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Czech Republic: transfer pricing (2026) v0.1
+# Czech Republic: transfer pricing (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-Sbírka (the official Collection of Laws), and the guidance and forms from financnisprava.gov.cz, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -244,8 +244,6 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the form version of the annex for tax periods starting in 2026 (vzor 12 covers periods starting in 2025 and parts of 2026 periods whose filing deadline falls by 31 December 2026; a later vzor had not been found); whether Pokyn GFŘ D-35, announced in D-34 to replace D-334, has been issued (it was not found on the Financial Administration pages read, and D-334 is listed as current); the Czech act that transposes EU directive 2017/1852 and its procedure; the day-count basis the Financial Administration uses to compute late payment interest; whether Article 9(2) appears in each Czech treaty; and the point in the range (median or nearest edge) to which the tax office adjusts a price that falls outside the arm's length range, which the guidance read does not state.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,13 +1,13 @@
 ---
 name: pl-civil-law-contracts
 description: "Polish PIT and ZUS on civil-law contracts and board fees for tax year 2026: mandate contracts (umowa zlecenie), specific-task contracts (umowa o dzieło) and fees of management and supervisory board members. Covers PIT Act art. 13 pkt 7 and 8, the 20% and 50% standard costs and the PLN 120,000 cap on 50% costs, the 12% advance under art. 41, the 12% flat tax on contracts up to PLN 200, the under-26 relief for zlecenie, PIT-11 and the annual payer declarations; ZUS for zlecenie (compulsory pension, disability and accident, voluntary sickness, the student exemption, the multiple-contract and minimum wage rules), dzieło with one's own employer, board members, FP, FS, FGŚP and the 9% health contribution. Trigger on: umowa zlecenie, umowa o dzieło, składki od zlecenia, 50% koszty autorskie, wynagrodzenie członka zarządu, rada nadzorcza ZUS. Out of scope: employees in pl-payroll; the self-employed in pl-zus-contributions; the annual return in pl-income-tax."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -244,8 +244,6 @@ The advances are prepayments. The contractor's annual return applies the full sc
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
 Not yet confirmed: nothing open. The independent review on 2026-10-23 settled the PIT-4R / PIT-8AR split (MF forms list and PIT Act art. 41 ust. 4), the reclassification start date (8 July 2026, Sejm ELI record) and health on two titles for a board member (Health Act art. 82 ust. 1).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

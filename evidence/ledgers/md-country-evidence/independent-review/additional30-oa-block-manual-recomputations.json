@@ -1,0 +1,186 @@
+{
+  "scope": "The30evidence oa-check blocks include14social controls. Together with20Guide blocks these are50, separate from58standalone JSON cases.",
+  "method": "Independent explicit arithmetic and retained primary assumption scopes, not writer checker success alone. All laws/paragraphs underlying these stated methods individually read in3913-row review. Real client evidence, unknown operational implementation and excluded periods not approved.",
+  "cases": [
+    {
+      "source_file": "corporate-expense-procedure-controls.md",
+      "case": 1,
+      "recomputation": "29700*.02=594;min500,594+min700,594=1094;1200-1094=106;20000-106=19894;2m*.0075=15000;allowed15000;addback5000.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "corporate-expense-procedure-controls.md",
+      "case": 2,
+      "recomputation": "300000/20=15000;17400*.75=13050;gap1950;20*22=440persondays;*70=30800 foodcap;35000-30800=4200;*75=33000 transportcap;40000-33000=7000.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "corporate-expense-procedure-controls.md",
+      "case": 3,
+      "recomputation": "2m*.03=60000;min80000,60000=60000 listed h–l;excess20000;plus separate motor20000=80000 allowed.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "corporate-expense-procedure-controls.md",
+      "case": 4,
+      "recomputation": "900000+15000=915000 taxable;*.12=109800;less96000=13800 due;wrong halfgain40000 leaves875000*.12=105000;understatement4800;min96000,109800*.8=87840;paid96000 meansshortfall0.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "fixed-medical-proration-control.md",
+      "case": 1,
+      "recomputation": "12636/365*183=6335.309589041096; displayed6335.309589 within1e-6. Later-entry branch only, not missedMarch full-premium branch.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "individual-procedure-controls.md",
+      "case": 1,
+      "recomputation": "12000+9000+5000=26000;aggregatecap20000;excess6000;60000-20000=40000;taxbefore7200/after4800/reduction2400.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "individual-procedure-controls.md",
+      "case": 2,
+      "recomputation": "60000*40000/100000=24000 assetA;B36000;ownerquarterproceeds10000,cost6000,gain4000,inclusion2000,tax240;60%period proceeds24000,cost14400,gain9600,inclusion4800,tax576;remaining16000proceeds/9600cost;rawgain9600+16000-9600=16000.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "late-rate-controls.md",
+      "case": 1,
+      "recomputation": "ceil6+5=11%;11/365=.0301369863%;round4=.0301%;decimal.000301;10000*.000301*20=60.20 tax;10000*.001*20=200 social;20-6=14 medicaldays;10000*.000301*14=42.14.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "late-rate-controls.md",
+      "case": 2,
+      "recomputation": "10000-4000=6000 secondprincipal;10000*.000301*10=30.10;6000*.000301*10=18.06;sum48.16;wrong60.20;over12.04.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "payroll-loan-controls.md",
+      "case": 1,
+      "recomputation": "36500*30/365*.0832=249.60 benefit. Exact PNG denominator365; Code19(d) supplies positive-gap limitation.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "payroll-loan-controls.md",
+      "case": 2,
+      "recomputation": "8.32-3=5.32%;36500*10/365*.0532=53.20;29200*20/365*.0532=85.12;sum138.32;wrong original30days159.60;over21.28;max8.32-9,0=0 positivebenefit.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "service-entrepreneur-medical-controls.md",
+      "case": 1,
+      "recomputation": "10000*.154=1540;2527-1540=987 positive annualdifference.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "service-entrepreneur-medical-controls.md",
+      "case": 2,
+      "recomputation": "20000*.154=3080;max2527-3080,0=0 topup;3080-2527=553 abovebenchmark, not refund.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "travel-asset-procedure-controls.md",
+      "case": 1,
+      "recomputation": "Private100*.7=70/day;3days210;separateforeign60*100+5*50=6250;domesticsameday0;foreignsameday100;lodging(250+150)/2=200;separatenodoc200*.5=100.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "travel-asset-procedure-controls.md",
+      "case": 2,
+      "recomputation": "120000/5=24000annual;/12*9=18000;balance102000;110000-102000=8000salegain;max95000-102000,0=0 donationgain;min102000,20000=20000 qualifyingforcedlossdeduction.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "travel-asset-procedure-controls.md",
+      "case": 3,
+      "recomputation": "200000*.15=30000 currentrepair;50000-30000=20000 separateasset;min30,48=30months;20000/30*9=6000depreciation;combined36000.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 1,
+      "recomputation": "10000*.24=2400;cost12400.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 2,
+      "recomputation": "10000*.29=2900.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 3,
+      "recomputation": "20000*.32=6400.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 4,
+      "recomputation": "20000*.39=7800.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 5,
+      "recomputation": "800000/1m=.8;social2400=employer1800+state600.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 6,
+      "recomputation": "12*1906.5=22878.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 7,
+      "recomputation": "12*2580.5=30966.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 8,
+      "recomputation": "2*1906.5=3813 touchedmonths.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 9,
+      "recomputation": "1906.5*10/30=635.50 June-only newhire.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 10,
+      "recomputation": "500*.06=30;500>298.24 stated fullday minimum.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 11,
+      "recomputation": "17400*.68=11832 deemedinsuredincome;100000*.547=54700 separateallocation.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 12,
+      "recomputation": "1.2m*.15=180000;100000*.35=35000;total215000;*.533=114595.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 13,
+      "recomputation": "11*485.59+485.51=5827.",
+      "result": "PASS within stated documented/hypothetical scope"
+    },
+    {
+      "source_file": "social-writer-controls.md",
+      "case": 14,
+      "recomputation": "10000*.001*10=100 simple socialcharge.",
+      "result": "PASS within stated documented/hypothetical scope"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "guides": 18,
+  "errors": [],
+  "warnings": [
+    "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+    "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+  ],
+  "scope": "Country source-guide frontmatter/provenance validation; generated global inventory excluded."
+}

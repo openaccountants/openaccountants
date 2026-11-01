@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "id": "F-L01",
+      "issue": "CIT058/TP018 missingexactmandatoryaccounts-channelquote",
+      "closed": true,
+      "evidence": "returnsreader32and39 nowquoted"
+    },
+    {
+      "id": "F-L02",
+      "issue": "Initial12exactopsomittedterminalvlsnreferenceappend;actualrebuildfailedwithonlythatmissingdelta",
+      "closed": true,
+      "evidence": "corrected13ops reconstruct40854andreverse20572441exactly;originalfailedtooloutputnotretroactivelyPASS"
+    },
+    {
+      "id": "F-L03",
+      "issue": "CIT004commencementdateinfullfilebutnotitsquotedanchor",
+      "closed": true,
+      "evidence": "sameprimaryTaxreader1128exactquotedcommencementnowinrow"
+    }
+  ]
+}

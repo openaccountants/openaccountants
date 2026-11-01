@@ -1,13 +1,13 @@
 ---
 name: gr-capital-gains
 description: "Greek capital gains tax for individuals for tax year 2026, declared on the 2027 E1 return, under the Income Tax Code, ν. 4172/2013, arts. 41 to 43. Covers the 15% tax on gains from selling shares, partnership interests, bonds, derivatives and a whole business (art. 42); listed shares taxed only for a holding of at least 0.5% bought from 2009; the equity-value rule for unlisted shares; losses carried forward 5 years; stock options (art. 42A, 15% or 5%); the 15% tax on property gains (art. 41), which is suspended for transfers up to 31 December 2026 (ν. 5162/2024 art. 90); E1 codes 829 to 876 and deadlines; non-residents. Trigger phrases: capital gains tax Greece, υπεραξία, φόρος υπεραξίας, selling shares Greece, selling property Greece tax, E1 code 829. Out of scope: salary, business and rental income (gr-income-tax), residence and inbound regimes (gr-cross-border), company gains (gr-corporate-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -247,8 +247,6 @@ expected:
 | Housing Policy portal (stegasi.gov.gr): suspension of property capital gains tax to 31.12.2026 (ν. 5162/2024 art. 90) | https://stegasi.gov.gr/programs/anastoli-epivolis-forou-yperaxias-apo-metavivasi-akiniton/ | 2026-10-23 |
 
 Not yet confirmed: whether the suspension of art. 41 will be extended past 31 December 2026 (a Ministry of Finance draft bill put to public consultation in October 2026, open to 1 November 2026, extends it to 2027 according to press reports; it is not enacted, and the codification and the Housing Policy portal both give 31 December 2026); the legal basis AADE relies on to treat corporate bond gains as exempt; the fixed fine under ΚΦΔ art. 53 for a late return with tax due by an individual who keeps no books; whether the 0.5% holding in art. 42(1)(β) is tested only at the date of sale or over an earlier period (the law's wording is present tense; we did not read an AADE circular on it); how AADE applies "included in the acquisition price and the sale price" for costs in art. 42(3) (we treat purchase costs as added to cost and sale costs as deducted from proceeds); the Greek tax treatment of crypto-assets, which the codified Code does not address; any amendment to arts. 41 to 43 made during 2026 after ν. 5264/2025; the late-payment interest rate under ΚΦΔ art. 52; the 2026 E1 form and code numbers, which AADE has not yet published.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

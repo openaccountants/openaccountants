@@ -1,10 +1,10 @@
 ---
 name: cz-tax-overview
 description: "Use this skill as the entry point for Czech tax in tax year 2026. It gives the headline figures and points to the skill that holds the detail: individual income tax at 15% and 23% above CZK 1,762,812 (36 times the 2026 average wage of CZK 48,967), the basic credit of CZK 30,840, corporate income tax at 21%, VAT at 21% and 12% with the CZK 2,000,000 registration threshold, late payment interest, and the return deadlines for 2026 (1 April, 3 May and 1 July 2027). Trigger on: Czech tax overview, taxes in the Czech Republic, Czech tax rates 2026, daně v ČR. Out of scope: the detail of each tax, which lives in cz-employee-income-tax, cz-income-tax, cz-corporate-income-tax, cz-vat-return, cz-employee-contributions, cz-social-health, cz-payroll, cz-transfer-pricing and cz-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -70,8 +70,6 @@ For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the Financial Administration had not published the filing dates for 2026 returns; 1 April, 3 May and 1 July 2027 are counted from Tax Code §§ 33(4) and 136.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

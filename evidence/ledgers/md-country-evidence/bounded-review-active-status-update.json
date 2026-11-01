@@ -1,0 +1,280 @@
+{
+  "status": "Active review-status update only; final independent metadata/hash recheck pending",
+  "reviewed_tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "source_decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+  "Guide_changes": [
+    {
+      "Guide": "skills/international/moldova/md-company-formation.md",
+      "before_sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "after_sha256": "2568a39d2d062b187ec483263ea78a81cc970f084dd1a322d92b178c5a4ff0e5",
+      "old_version": "0.6",
+      "new_version": "0.7",
+      "status_replacements": [
+        {
+          "before": "requires independent whole-country review",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "Whole-country independent review is pending.",
+          "after": "The bounded source-review record is linked under Sources.",
+          "occurrences": 1
+        },
+        {
+          "before": "independent country review and accountant attestation remain open",
+          "after": "the bounded source-review record is linked under Sources and accountant attestation remains open",
+          "occurrences": 1
+        },
+        {
+          "before": "comprehensive country coverage or completed independent review is claimed",
+          "after": "comprehensive country coverage or accountant attestation is claimed",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/md-corporate-income-tax.md",
+      "before_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "after_sha256": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+      "old_version": "0.13",
+      "new_version": "0.14",
+      "status_replacements": [
+        {
+          "before": "requires whole-country independent review before publication",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "These are writer primary-source checks; independent whole-country review is still pending.",
+          "after": "These writer primary-source observations are supplemented by the bounded source-review record linked below.",
+          "occurrences": 1
+        },
+        {
+          "before": "without accountant attestation or completed whole-country review",
+          "after": "without accountant attestation or comprehensive country coverage",
+          "occurrences": 1
+        },
+        {
+          "before": "domain stays partial until ordinary gaps and whole-pack review are resolved",
+          "after": "domain stays partial until ordinary gaps are resolved",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/md-cross-border.md",
+      "before_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "after_sha256": "6c3878625755d8b9bbc8af6c10689f302874cc6840690f7e001bee178622d0ae",
+      "old_version": "0.8",
+      "new_version": "0.9",
+      "status_replacements": [
+        {
+          "before": "independent whole-country review is pending",
+          "after": "the bounded source-review record is linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "partial pending the identified implementation gaps and independent whole-country review",
+          "after": "partial because of the identified implementation gaps",
+          "occurrences": 1
+        },
+        {
+          "before": "their independent review and explicit country gaps remain open",
+          "after": "their explicit country gaps remain open and their bounded source-review record is linked under Sources",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/md-tax-overview.md",
+      "before_sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "after_sha256": "6e6f32be0fe446df9e4ffc1ed730b13c65bbfb85ef0f74fdbc86e20180a846b2",
+      "old_version": "0.4",
+      "new_version": "0.5",
+      "status_replacements": [
+        {
+          "before": "Independent whole-country review and accountant attestation remain open.",
+          "after": "A bounded source-review record is linked under Sources; accountant attestation remains open.",
+          "occurrences": 1
+        },
+        {
+          "before": "whole-country review pending",
+          "after": "a bounded source-review record linked under Sources",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/md-transfer-pricing.md",
+      "before_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "after_sha256": "6b12db6690efecc0c88bbb477c1187627ad07e0bafeb4ce45cfe5c8ca3dcc986",
+      "old_version": "0.6",
+      "new_version": "0.7",
+      "status_replacements": [
+        {
+          "before": "awaiting independent country-pack review",
+          "after": "with a bounded source-review record linked under Sources",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/moldova-income-tax.md",
+      "before_sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "after_sha256": "fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e",
+      "old_version": "0.11",
+      "new_version": "0.12",
+      "status_replacements": [
+        {
+          "before": "requires independent whole-country review",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "Whole-country independent review and accountant attestation are not yet complete.",
+          "after": "Bounded source review is recorded under Sources; accountant attestation is not provided.",
+          "occurrences": 1
+        },
+        {
+          "before": "Ordinary gaps and whole-country independent review keep this domain partial.",
+          "after": "The remaining ordinary gaps keep this domain partial.",
+          "occurrences": 1
+        },
+        {
+          "before": "have not completed whole-pack review",
+          "after": "have a bounded source-review record linked under Sources",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/moldova-payroll.md",
+      "before_sha256": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26",
+      "after_sha256": "c6537ba21906a12e99ac50293cb4dfdd0b64970a9e38db750d6f2412135d1df2",
+      "old_version": "0.9",
+      "new_version": "0.10",
+      "status_replacements": [
+        {
+          "before": "requires whole-country independent review",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "It has not completed independent whole-country review or accountant attestation.",
+          "after": "The bounded source-review record is linked under Sources; accountant attestation is not provided.",
+          "occurrences": 1
+        },
+        {
+          "before": "not accountant attestation or completed pack review",
+          "after": "not accountant attestation or comprehensive coverage",
+          "occurrences": 1
+        },
+        {
+          "before": "domain stays partial until ordinary gaps and whole-country independent review are closed",
+          "after": "domain stays partial until ordinary gaps are closed",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/moldova-social-contributions.md",
+      "before_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "after_sha256": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68",
+      "old_version": "0.12",
+      "new_version": "0.13",
+      "status_replacements": [
+        {
+          "before": "requires whole-country independent review",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "It is not independently reviewed or accountant-attested; the country remains partial.",
+          "after": "It has a bounded source-review record linked under Sources and is not accountant-attested; the country remains partial.",
+          "occurrences": 1
+        },
+        {
+          "before": "No whole-country independent review or accountant attestation is claimed.",
+          "after": "The bounded source-review record is linked below; no accountant attestation or comprehensive country coverage is claimed.",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/moldova-tax-optimization.md",
+      "before_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "after_sha256": "81a761e584f26f068fe2d47382710e0d14e2d44c55b4ef0a019fce865b67ed3f",
+      "old_version": "0.5",
+      "new_version": "0.6",
+      "status_replacements": [
+        {
+          "before": "Whole-country independent legal/application review and accountant attestation remain pending.",
+          "after": "The bounded source-review record is linked under Sources; accountant attestation remains pending.",
+          "occurrences": 1
+        },
+        {
+          "before": "Independent whole-country review and accountant attestation remain pending.",
+          "after": "A bounded source-review record is linked under Sources; accountant attestation remains pending.",
+          "occurrences": 1
+        },
+        {
+          "before": "whole-country independent review pending",
+          "after": "a bounded source-review record linked under Sources",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    },
+    {
+      "Guide": "skills/international/moldova/moldova-vat.md",
+      "before_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "after_sha256": "4301b1c7c3267fea647fb733c77db543ee2e2f19b6b1a90d2ebd018ac4f3fa07",
+      "old_version": "2.4",
+      "new_version": "2.5",
+      "status_replacements": [
+        {
+          "before": "still requires independent pack review",
+          "after": "has a bounded source-review record linked under Sources",
+          "occurrences": 1
+        },
+        {
+          "before": "This draft has not completed independent whole-country review or accountant attestation.",
+          "after": "The bounded source-review record is linked under Sources; accountant attestation is not provided.",
+          "occurrences": 1
+        },
+        {
+          "before": "does not establish whole-country coverage or independent review",
+          "after": "does not establish comprehensive country coverage or accountant attestation",
+          "occurrences": 1
+        }
+      ],
+      "added_status_note": "**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.",
+      "exact_CTA_retained": true
+    }
+  ],
+  "all3913ledger_rows_unchanged": true,
+  "all_cases_original_source_files_and_topic_text_unchanged": true,
+  "README_before_sha256": "0fc3921bdf0ebf3d7ff134729d269a8a06da23a36ea3c72242e7340b6a0931fc",
+  "README_after_sha256": "93a1730a47aa960723dac49e736fa2036c462ead4ac2c2352a1a52d8da5c6a8b",
+  "README_original_text": "---\njurisdiction: MD\nversion: \"2.20\"\nlast_updated: 2026-10-31\napplicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]\nnot_applicable: {}\ncovered_by:\n  TP: md-transfer-pricing\n  XB: md-cross-border\npartial:\n  IT-IND: \"2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual CET18 and full capital-cost evidence list are now mapped; remaining regime forms, commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending.\"\n  IT-CORP: \"2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and the full actual VEN12 income/expense/relief/credit/founder/instalment/subdivision schedules are mapped with current-law boundaries and source defects; unapplied asset classes and remaining approved tax-return/update forms, statutory discrepancy procedures, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending.\"\n  VAT: \"2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending.\"\n  SC: \"2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; IPC21 code/field method is supplied in the payroll companion; actual CAS18-AN annual/monthly fixed-contribution and IRM19 event/classifier methods now mapped; current CNAS refund application/evidence/settlement method now supplied; current CNAM fixed-premium refund conditions/form/stages also supplied; current CNAS payment-type/fiscal-code/balance correction method now supplied; actual CNAM legal-representative correction-application fields now supplied; full CNAM correction regulation/entitlement/deadlines, farm-specific category, remaining implementation/commencement gaps and whole-country independent review remain open.\"\n  PR: \"2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual IPC21/IALS21 forms/code lists, ISAPTI17/employee-information and IRM19 event/identity/risk/relation/termination fields are now mapped; missing annual-prefix/ambiguous exception/portal fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending.\"\n  TP: \"2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; current information-form fields/codes, APA application model and actual IUPT25/IUPT24 annual adjustment fields/changeover are mapped; portal acceptance, legacy country mapping, retention and specific procedure gaps remain explicit; whole-country independent review is pending.\"\n  XB: \"2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; current INR14 form/instructions/classifier now mapped with annual-period, caption and entity-country conflicts explicit; actual IALS21 and IPC21 nonresident source-code mappings are supplied; other approved forms and refund/departure procedures remain open; whole-country independent review is pending.\"\n---\n\n# Moldova tax pack\n\nAccountable owner: Michael. Assigned writer: ChatGPT under [OWNERS.md](../../../OWNERS.md). Eight existing Guides were present before this batch. Two missing core areas now have draft Guides: [transfer pricing](md-transfer-pricing.md) and [cross-border tax](md-cross-border.md). The new Guides are source-cited drafts, not independently reviewed or accountant-attested. Existing material remains unverified and partial; no domain is marked complete.\n\nAll ten Guides now have 2026 writer drafts and two recomputing examples each: [corporate-income](md-corporate-income-tax.md), [social/medical](moldova-social-contributions.md), [individual-income](moldova-income-tax.md), [payroll](moldova-payroll.md), [VAT](moldova-vat.md), [transfer-pricing](md-transfer-pricing.md), [cross-border](md-cross-border.md), [formation](md-company-formation.md), [overview](md-tax-overview.md) and [tax planning](moldova-tax-optimization.md). Their figure ledgers ([corporate](../../../ledgers/md-corporate-income-tax.md), [social](../../../ledgers/moldova-social-contributions.md), [individual](../../../ledgers/moldova-income-tax.md), [payroll](../../../ledgers/moldova-payroll.md), [VAT](../../../ledgers/moldova-vat.md), [TP](../../../ledgers/md-transfer-pricing.md), [XB](../../../ledgers/md-cross-border.md), [formation](../../../ledgers/md-company-formation.md), [overview](../../../ledgers/md-tax-overview.md), [planning](../../../ledgers/moldova-tax-optimization.md)) retain predecessor-topic destinations. Formation corrects the old SA capital figure; the overview corrects the blanket resident-worldwide-income assumption. Planning supplies actual IT-park eligibility, monthly employee minimum, tax composition, transitions and comparisons instead of unsupported savings/blanket prohibitions. The ordinary tax/medical daily rate and the distinct social/IT-park late-charge rules are separately sourced. Stated ordinary form/annex and implementation gaps remain open. Source controls and complete topic mapping are writer evidence, not comprehensive coverage. No whole-country independent review has been completed for this expansion.\n\nThe subsequently merged corporate PR #1008 is preserved and mapped separately in [its predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.md). The local draft corrects its company/individual capital-gain scope and supplies enacted VEN12 fixed-asset-loss/donation classification from [MF Order 10/2024](https://www.legis.md/cautare/getResults?doc_id=141590&lang=ro) and TP adjustment-row changes from [MF Order 145/2024](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro), read 30 October 2026. This reconciliation does not complete the ordinary form gaps or independent review.\n\nThe three subsequently merged supporting drafts (PRs #1009, #1010 and #1011) are preserved in [their complete writer destination table](../../../ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.md). Source-checked additions include SRL governance, individual-registration/name tariffs and actual individual-registration form instructions; only BE-8’s first page is used, with AML/PEP and change-clock gaps retained. Overview headlines and planning entry/term conditions are reconciled with the connected Guides. These additions do not verify all company forms or complete the independent country review.\n\nThe formation draft now maps the actual company application and instructions, BE-1/BE-2 core forms and the current statutory ownership/disclosure/due-diligence interface. Current [Law 308/2017](https://www.legis.md/cautare/getResults?doc_id=155856&lang=ro) and [ASP guidance](https://www.asp.gov.md/ro/servicii/intrebari-frecvente?grup=2718), read 30 October 2026, confirm the beneficial-owner update clock and signer roles. The ordinary company/individual post-formation applications, instructions and BE-3 core are now mapped to actual filing fields, authority and separate deadlines. The individual instructions’ unrelated corporate-administrator sentence and the limited scope of provisional-data form 3-34 are explicitly distinguished. Discrepancy-removal procedure, other entity-specific variants, current national PEP-list screening and other named ordinary/specialist gaps remain explicit. This is writer work; whole-country independent review is still pending.\n\nFormation now distinguishes the actual founder tax-evasion declarations from the wider SRL administrator eligibility/representation rules, supplies the conditional Civil Code release right after delayed registration, and maps the sourced debutant-company and specified geographic registration-fee relief. The enacted free electronic beneficial-owner service clock and the noncommercial name-service qualifier are also reconciled. SME-law, accounting and income-tax populations remain separate. First-year/programme implementation, other named ordinary gaps and independent review remain open.\n\nThe corporate and individual drafts now apply the actual enacted return-changeover rules: SIMM24 from reporting 2024, DAP24 from 2024 and UNIF25 from 2025, including each order’s early-obligation exception. Current legal taxpayer/regime and whole-year staffing/VAT conditions control form selection. Actual SIMM/UNIF25/DAP24 annexes have since been downloaded and retained. The methods and remaining read-scope/implementation gaps are stated below; attachment presence does not complete country review.\n\nThe corporate draft now supplies selected actual VEN12 period/signature/main-reconciliation and representation-expense instructions, including inactive legacy rows and the capital-gain annex disabled from 2020. Current Code rules control the instruction’s stale S-election period; the printed 360,000 personal threshold agrees with current Code33. The full official form/instructions have since been retained and read, as recorded below; remaining ordinary gaps and independent whole-country review remain open.\n\nThe social/medical draft now supplies the actual initial-registration population and four continuing conditions for the article-43^17 foreign-worker route, with January/current comparison and the loss-of-eligibility rule. Current law scope, actual registration/electronic-identity documents and the separate EU/Schengen interaction must still be established; neither foreign nationality nor remote work alone proves an insurance exemption. Remaining ordinary gaps and whole-country independent review keep coverage partial.\n\nActual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The corporate draft supplies the current category-A SME row method and identifies the printed retired-category/name mismatch. The individual draft supplies UNIF25 income-tax and DAP24 professional/expense/relief methods, including the DAP24 cross-reference/self-referential-header defects. UNIF25 later/supporting tables have since been read and applied to the scopes below; portal/rounding implementation, other ordinary gaps and independent country review remain open. The 360,000 personal-exemption threshold is current, correcting the earlier writer description of it as stale.\n\nThe actual social tariff, travel destination-rate, asset-life and asset-register/repair annexes are now retained and read to the scopes in [the annex manifest](../../../ledgers/md-country-evidence/downloaded-numeric-annexes.json), on 31 October 2026. The corporate draft supplies destination/currency/category examples, five selected asset-class rows and the actual 29-column register/seven-column repair method. The social draft distinguishes insured-benefit classes and payment clocks directly from annex1. Other asset classes, minimum transport tariffs, later implementation gaps and independent whole-country review remain open; full binary retention is not full-catalogue verification.\n\nThe remaining UNIF25 annexes are now read in full to instruction136 and formpage4, with the unchanged binaries and [full-read observations](../../../ledgers/md-country-evidence/unif25-remaining-attachment-read.json) retained. Individual, payroll, cross-border and overview drafts now map supporting schedules, annual resident/nonresident payment information and local/property reporting fields. Current Code15(a¹) overrides the stale day-worker relief sentence; the form's legacy social header does not replace monthly declarations. Actual annex/column/year inconsistencies, classifiers, local rates and portal implementation remain explicit. This is writer work, with no independent country-review or completeness claim.\n\nThe TP draft now maps the complete current information annex and approved APA application model, read 31 October 2026. [Both official binaries](../../../ledgers/md-country-evidence/tp-approved-attachments.json) are retained unchanged. The field method distinguishes affiliation and taxpayer-role codes, separate APA reporting and the model’s maximum-10-day proceedings undertaking. The annex’s incorrect date caption and comments numbering remain explicit. Portal acceptance, technical payment/refund handling, retention and other named procedures remain open; these form methods do not establish comprehensive coverage or independent review.\n\nThe cross-border draft now supplies the actual INR14 nine-column method, gross-payment/withholding reconciliation and printed column-9 control sum. [All three current attachments](../../../ledgers/md-country-evidence/inr14-current-attachments.json), read 31 October 2026, are retained unchanged. The instructions’ monthly-period wording does not override the annual Code deadline; classifier caption/list anomalies, entity-country implementation and authenticated field acceptance remain explicit. Other ordinary forms and independent whole-country review remain open.\n\nThe payroll and cross-border drafts now map the actual current IALS21 form/country list and IPC21 main form, insured-category catalogue and completion requirements, read 31 October 2026. [Five original official attachments](../../../ledgers/md-country-evidence/payroll-current-attachments.json) are retained unchanged, with the IALS21 DOC conversion documented. The method distinguishes numerical rows, income-source codes, ECO classifications, nominal social/benefit bases and annual control sums. Missing annual-prefix values, overlapping source rules and authenticated portal implementation remain explicit. Other ordinary gaps and independent whole-country review remain open.\n\nThe individual draft now maps the complete MF Order40 capital-cost proof list and actual current CET18 form, read 31 October 2026. [Both official attachments](../../../ledgers/md-country-evidence/capital-cet18-current-attachments.json) are retained unchanged. The method links nine acquisition routes to documents, preserves the statutory self-built-property exception and maps actual E7 education, resident/nonresident and capital fields. K7 loss-sign, generic education-cap wording and authenticated portal limits remain explicit. Other ordinary gaps and independent whole-country review remain open.\n\nThe corporate draft now maps the full actual VEN12 form and instructions, read31October2026, with [both original attachments and complete read scope](../../../ledgers/md-country-evidence/ven12-full-current-attachments.json) retained. Income/expense signed adjustments, replacement-property conditions, noncash donation fields, separate income/tax relief, capped foreign credit, founder income/tax transfers, next-period instalments and territorial allocation are supplied. The allocation base is row170 before instalments, not the cash balance. Inactive printed schedules, the inconsistent TP paragraph label, incomplete founder header, historical election years and remaining donation-value/credit/portal gaps are explicit. This is writer work; coverage remains partial and independent whole-country review is pending.\n\nThe planning/payroll/TP drafts now map the actual current IT-park reporting suite: IU17monthlytax and cumulativeeligibility annex, ISAPTI17annualsalary/individualemployee information, and IUPT25/IUPT24 related-party adjustments. [Nine original officialDOCX/all14renderedpages](../../../ledgers/md-country-evidence/itpark-current-attachments.json), currentinlineIU17instructions and actualenactedOrder106 were read31October2026. January2026removal of monthly TPfields and2024/2025annualbridges are explicit. IUPTminimum-average/partial-year/equality/signedrefund-floor wording, actualpayment/refund/portal acceptance and salary-month cross-regime cases remain unresolved. Otherordinarygaps and independent whole-country review keep coverage partial.\n\nCurrent IRM19/CAS18-AN reporting methods now use the actual Order126 attachments and30April2026amendment. [Eight original official files/all14renderedpages](../../../ledgers/md-country-evidence/employment-current-attachments.json) were read31October2026. The Guides distinguish event records from monetary contributions, apply current payer/retired-category rules, preserve the IRM19zero-ID/additionalCNAMpaper route and category158exception, and retain the CASstatus-direction/caption/farm-category and authenticated-implementation limits. Refund applications and other named ordinary gaps remain open; whole-country independent review is still pending.\n\nThe social draft now supplies the [current CNAS refund procedure and actual application](moldova-social-contributions.md#cnas-refund-application-and-settlement), using the eight-page agency consolidation linked in its30October2026update. Arrears/returns, case-specific documents,30-day examination versus Treasury execution, and taxpayer application versus institutional decision/register are distinct. Separate amendment commencement, CNAM refunds and other named ordinary gaps remain open; no complete-coverage or independent-review claim is made.\n\nThe social draft also supplies the [current CNAM fixed-medical-premium refund](moldova-social-contributions.md#cnam-fixed-medical-premium-refund-conditions-application-and-stages), reconciled to the actual10October2025amendment and current approved application. Strict paid-percentage benchmark, actual timely fixed payment, earlier proportional-day repeal and separate territorial/central/Treasury stages are explicit. Other named ordinary/correction/registration gaps and whole-country independent review remain open.\n\nPR #793 merged on31October2026. Its subsequently rewritten TP/XB Guides and README are preserved in the [complete predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.md), with full incoming text and exact topic hashes. The deeper local methods, source limits, existing examples and all seven partial entries remain. Repair PRs [#1024](https://github.com/openaccountants/openaccountants/pull/1024), [#1026](https://github.com/openaccountants/openaccountants/pull/1026), [#1027](https://github.com/openaccountants/openaccountants/pull/1027) and [#1028](https://github.com/openaccountants/openaccountants/pull/1028) also merged on31October2026. Their full text, examples, review notes and topic destinations, together with the subsequent README update #1029, are retained in the [repair reconciliation](../../../ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.md). Ten drafts remain: gaps and country review are still open. Those merged PRs are historical and cannot receive this expanded batch. The earlier merged batch does not establish review or completeness for these expanded drafts.\n\nThe social draft now also supplies the [current CNAS payment-correction application and recording method](moldova-social-contributions.md#cnas-payment-corrections-and-recording-dates). Its six-page official source separates source/destination fields, credit limits, ten-working-day Treasury dispatch and the actual Treasury/system recording dates. Other named ordinary gaps, publication coordination and whole-country independent review remain.\n\nThe social draft now maps the [actual CNAM correction application](moldova-social-contributions.md#cnam-correction-application-fields-and-evidence): applicant/represented payer, wrong identifier, separate source/destination payment fields and the optional bank-detail attachment. The original DOC and complete read scope are retained. Full operative regulation, entitlement and institutional deadlines remain unverified; all seven domains and whole-country review stay open.\n\n## Domains\n\n| Domain | Existing/new Guides | Status |\n|---|---|---|\n| IT-IND | md-tax-overview, moldova-income-tax, moldova-tax-optimization | partial |\n| IT-CORP | md-corporate-income-tax, md-company-formation | partial |\n| VAT | moldova-vat | partial |\n| SC | moldova-social-contributions | partial |\n| PR | moldova-payroll | partial |\n| TP | md-transfer-pricing | source-cited draft, partial |\n| XB | md-cross-border | source-cited draft, partial |\n\nProperty, tax reporting, audit/compliance, cross-border residence and treaty applications, withholding, foreign tax relief, exit/mobility, and the interfaces between tax and company formation require dedicated coverage or explicit applicability decisions. Guide presence and source research do not establish comprehensive coverage.\n\n## Official starting sources\n\n- Fiscal Code No. 1163/1997, consolidation operative 30 October 2026, selected corporate, individual-income and payroll articles read: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro . The earlier linked document 142855 is an April 2024 consolidation and must not be treated as current 2026 law.\n- SFS transfer-pricing rules, current period filing instructions and notices: https://www.sfs.md/ro/pagina/preturi-de-transfer\n- Ministry of Finance Order 21/2025 amending Order 9/2024: https://www.legis.md/cautare/downloadpdf/147520\n- SFS 2025 transfer-pricing deadline notice (published June 2026): https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025\n- SFS nonresident tax practice: https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/102\n- SFS permanent-establishment criteria: https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105\n- Ministry of Finance treaty inventory (page reports status at 20 June 2022; verify current status and later protocols): https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022\n\nSee [the 24 October 2026 source and gap record](../../../docs/research/2026-10-24-moldova-tp-cross-border.md) for the drafting basis and unresolved points.\n",
+  "README_current_status_note": "\n**Current review status, 31 October 2026.** All ten Guides have a [bounded independent source review](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md): 3,913 ledger rows, 20 Guide examples, 30 additional evidence blocks and 58 standalone cases checked; 80 topic units semantically sampled. The 14 social controls are included in those 30 evidence blocks. [Decision and limits](../../../ledgers/md-country-evidence/independent-review/FINAL-DECISION.json). All seven domains remain partial; ordinary gaps and issue [#411](https://github.com/openaccountants/openaccountants/issues/411) remain open. No accountant attestation or comprehensive country coverage is claimed. Earlier writer-checkpoint references to pending review are historical; the completed review has the bounded scope in the linked record.\n",
+  "copied_independent_evidence_files": 54,
+  "trust": "Source-cited draft only; review_status/tier/trust_label/byline/license untouched; sevenpartialdomainsretained"
+}

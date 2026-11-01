@@ -2,13 +2,13 @@
 name: aw-individual-income-tax
 description: >
   Aruba individual income tax and wage tax table calculations for 2026. Covers the distinction between taxable income, annualized net wages and table income, progressive bands, the maximum annual tax-free amount, downward rounding and worked annual calculations. Use for questions about Aruba income tax brackets, loonbelasting, inkomstenbelasting or tabelinkomen. This is a calculation reference after the income base and allowance entitlement have been established. It does not determine residence, deductions, special income treatment, credits, return deadlines, monthly payroll withholding or social contributions. Official indexed guidance still requires direct source rechecking before release.
-version: 0.1
+version: 0.2
 jurisdiction: AW
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -52,8 +52,6 @@ Keep the income-base calculation, allowance evidence, table year and rounding st
 Annual return deadlines, residence, partial-year treatment, spousal allocation, deductions, special rates and credits are unresolved here. Obtain the relevant current return instructions and taxpayer facts before completing an assessment. Social insurance has a separate base and is outside this table.
 
 General research reference only; professional review and the applicable official instructions are required for an actual return.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

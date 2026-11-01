@@ -1,0 +1,7 @@
+{
+  "commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "finding": "MD-REVIEW-015",
+  "decision": "FOCUSED PASS",
+  "basis": "Actual Guide diff independently compared with unchanged full CNAS point13.3; above70 missing-policy threshold now preserved, exact70 unresolved, general >=70 eligibility intact. No source rows or examples changed.",
+  "whole_pack": "INCOMPLETE"
+}

@@ -1,10 +1,10 @@
 ---
 name: hu-income-tax
 description: "Hungarian personal income tax for the self-employed (egyéni vállalkozó), tax year 2026. Covers the three regimes: flat-rate taxation (átalányadózás) with the 45%, 80% and 90% cost ratios, the HUF 38,736,000 and 193,680,000 revenue ceilings and the tax-free HUF 1,936,800; the real-cost regime (vállalkozói személyi jövedelemadó) with the owner's draw (vállalkozói kivét) at 15%, business profit at 9%, the 2% income minimum and the 15% tax on the business dividend base (vállalkozói osztalékalap); and the small-taxpayer fixed tax (KATA) of HUF 50,000 a month with the 40% surtax above HUF 18 million. Also the 2026 family allowance, the mothers' and under-25 allowances, quarterly advances and the 20 May return. Trigger phrases: egyéni vállalkozó adó, átalányadó, vállalkozói kivét, osztalékalap, KATA, szja egyéni vállalkozó, self-employed tax Hungary. Out of scope: hu-social-contributions (TB and szocho), hu-payroll (employees), hu-cross-border, hu-corporate-tax."
-version: 2.1
+version: 2.2
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -223,8 +223,6 @@ The edge case: from his third year, if business income ever fell below 2% of rev
 | MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
 Not yet confirmed: the form number of the 2026 annual szja return (NAV had not published the 2026 form when read); the full list of revenue-reducing items and the small-business investment allowance conditions (read only in NAV sheet 3, not each paragraph of 49/B. § (6)); the 49/C. § adjustments to the dividend base other than investment spending; the treatment of a sole trader who switches regime during the year; local business tax (helyi iparűzési adó), which is not covered here.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: bl-annual-business-contribution
 description: >
   Saint-Barthélemy annual business contribution reference researched in 2026 from the local Contributions Code, its 2024 amendment and official administrative material. Covers the fixed and employee-based components, dormant companies, separate activities, annual payment, new-business treatment and dissolution evidence. Highlights the amended staff-count documentation and the mismatch with wording on an older form. Includes conditional calculations without assuming an unsupported headcount method. Complete amendment reconciliation, special exemptions, penalties, current forms and independent accountant review remain outstanding. This is a source-cited draft for the local CFAE, not a general assertion of tax-free business profits.
-version: 0.1
+version: 0.2
 jurisdiction: BL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -61,8 +61,6 @@ Article 10 provides one contribution within the same tax year for the specified 
 ## Remaining work
 
 Checked 22 October 2026. Complete the later-amendment and special-exemption audit, resolve headcount edge cases and obtain current filing instructions. Penalties, appeals and all other local/French tax and social obligations are outside this Guide. No independent accountant review has occurred and this is not comprehensive country coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

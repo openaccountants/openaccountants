@@ -1,0 +1,114 @@
+[
+  {
+    "name": "registry",
+    "url": "https://www.us.fo/tinglysing/",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only.",
+    "fetch_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "forms",
+    "url": "https://www.us.fo/oydublod/",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only.",
+    "fetch_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "duty",
+    "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+    "final_url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+    "status": 200,
+    "sha256": "d161ed1a8afdb71dadd6b37222d591354506f856457aa53d1c67545cba935e0c",
+    "bytes": 84399,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "fee",
+    "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+    "final_url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+    "status": 200,
+    "sha256": "3cc215fba941e00a4134363c1deed21e784d6369b88426adcfeb2fd2a6634822",
+    "bytes": 67705,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "digital-act",
+    "url": "https://www.logir.fo/Logtingslog/128-fra-13-12-2024-um-broyting-i-logtingslog-um-tinglysing-lov-om-Gaeldsbreve-logtingslog-um",
+    "final_url": "https://www.logir.fo/Logtingslog/128-fra-13-12-2024-um-broyting-i-logtingslog-um-tinglysing-lov-om-Gaeldsbreve-logtingslog-um",
+    "status": 200,
+    "sha256": "d56670169276dc0fe70f7ca240d6d441aee4d905d43d662b1e47b495bf51b897",
+    "bytes": 182577,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "digital-commence",
+    "url": "https://www.logir.fo/Kunngerd/60-fra-22-04-2025-um-at-seta-i-gildi-asetingar-fyri-akfarsbokina-i-logtingslog-um",
+    "final_url": "https://www.logir.fo/Kunngerd/60-fra-22-04-2025-um-at-seta-i-gildi-asetingar-fyri-akfarsbokina-i-logtingslog-um",
+    "status": 200,
+    "sha256": "b6c99763569912affdd9f008c0f67ee40fd8bb4eb0217d245b741b3bca7847ad",
+    "bytes": 58392,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "digital-tech",
+    "url": "https://logir.fo/Kunngerd/85-fra-06-05-2025-um-toknilig-krov-og-fyriskipan-av-tinglysingarskipanini",
+    "final_url": "https://logir.fo/Kunngerd/85-fra-06-05-2025-um-toknilig-krov-og-fyriskipan-av-tinglysingarskipanini",
+    "status": 200,
+    "sha256": "ef14f2eaf30565516de0ab3a2110aada2289cb97c8db8be45ebd3e5fffb9eae4",
+    "bytes": 100133,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "registration-act",
+    "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+    "final_url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+    "status": 200,
+    "sha256": "1a9c02f9fc8b2e4b06f906284f014bfcfcb4349bd806e894f0079b03e36a8b84",
+    "bytes": 306401,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "registration-reg",
+    "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+    "final_url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+    "status": 200,
+    "sha256": "5f2446fef0e490fee26e6b8f6c52e5850cabb0a863a03d7ffbd911a0e897c46d",
+    "bytes": 185572,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "acquisition",
+    "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+    "final_url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+    "status": 200,
+    "sha256": "e162a7d65f94c0bb46a84e7974c7165e86d4af73eb9a97ccf268fa93457439dd",
+    "bytes": 78432,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "appeal-reg",
+    "url": "https://logir.fo/Kunngerd/161-fra-14-12-2021-um-starvsskipan-fyri-Foroya-Kaerustovn",
+    "final_url": "https://logir.fo/Kunngerd/161-fra-14-12-2021-um-starvsskipan-fyri-Foroya-Kaerustovn",
+    "status": 200,
+    "sha256": "d92f20af4498fcd430787f15aa516fb7afff65df399c32d6771deb765d48c6a2",
+    "bytes": 239653,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  },
+  {
+    "name": "appeal-act",
+    "url": "https://logir.fo/Logtingslog/147-fra-25-11-2021-um-Foroya-Kaerustovn",
+    "final_url": "https://logir.fo/Logtingslog/147-fra-25-11-2021-um-Foroya-Kaerustovn",
+    "status": 200,
+    "sha256": "27fd78f6b14691f91798b55014d2bc39eb04c69982735dd469e937fd8232e177",
+    "bytes": 88892,
+    "read_date": "2026-10-31",
+    "full_capture_publication": "Not committed; full captures private. Selected operative statutory excerpts only."
+  }
+]

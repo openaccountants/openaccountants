@@ -1,0 +1,1 @@
+Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).

@@ -1,10 +1,10 @@
 ---
 name: poland-vat-return
 description: "Polish VAT (podatek od towarów i usług) for tax year 2026: who must register, the 23%, 8%, 5% and 0% rates, the small-business exemption of PLN 240,000 (raised from PLN 200,000 on 1 January 2026) and the EU SME scheme, the JPK_V7M and JPK_V7K files due on the 25th, refunds in 40 days, KSeF structured e-invoicing (mandatory from 1 February 2026 for businesses with 2024 sales over PLN 200 million, from 1 April 2026 for the rest, with a PLN 10,000 a month carve-out to the end of 2026), split payment above PLN 15,000 for Annex 15 goods, the white list, reverse charge, the 30% additional liability and 10.50% late interest. Trigger on: Polish VAT, JPK_V7, KSeF, zwolnienie podmiotowe, MPP, biała lista, VAT-R. Out of scope: KSeF schema detail (poland-einvoice), income tax (pl-income-tax, pl-cit-corporate-tax), cross-border income (pl-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -189,8 +189,6 @@ expected:
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,249 @@
+EEEEEEEEEE.....s........................EFEFE......................F...................F.......................................................................................
+======================================================================
+ERROR: test_formation_super_rate_starts_in_2025_26 (test_au_guide_regressions.AustralianGuideRegressionTests.test_formation_super_rate_starts_in_2025_26)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 48, in test_formation_super_rate_starts_in_2025_26
+    line = self.line_for("australia-formation.md", "**R-AU-F4")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 22, in line_for
+    text = (GUIDES / name).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/australia-formation.md'
+
+======================================================================
+ERROR: test_kilometre_cap_matches_the_stated_rate_and_distance (test_au_guide_regressions.AustralianGuideRegressionTests.test_kilometre_cap_matches_the_stated_rate_and_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 72, in test_kilometre_cap_matches_the_stated_rate_and_distance
+    line = self.line_for("australia-tax-optimization.md", "**Business-use substantiation**")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 22, in line_for
+    text = (GUIDES / name).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/australia-tax-optimization.md'
+
+======================================================================
+ERROR: test_kilometre_rates_are_bound_to_their_financial_years (test_au_guide_regressions.AustralianGuideRegressionTests.test_kilometre_rates_are_bound_to_their_financial_years)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 66, in test_kilometre_rates_are_bound_to_their_financial_years
+    line = self.line_for("australia-tax-optimization.md", "**Business-use substantiation**")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 22, in line_for
+    text = (GUIDES / name).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/australia-tax-optimization.md'
+
+======================================================================
+ERROR: test_nfp_super_rates_follow_the_table_years (test_au_guide_regressions.AustralianGuideRegressionTests.test_nfp_super_rates_follow_the_table_years)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 29, in test_nfp_super_rates_follow_the_table_years
+    header = self.line_for(name, "| Item |")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 22, in line_for
+    text = (GUIDES / name).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-not-for-profit.md'
+
+======================================================================
+ERROR: test_nfp_workpaper_dates_the_rate_from_july_2025 (test_au_guide_regressions.AustralianGuideRegressionTests.test_nfp_workpaper_dates_the_rate_from_july_2025)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 57, in test_nfp_workpaper_dates_the_rate_from_july_2025
+    line = self.line_for("au-not-for-profit.md", "  Super guarantee ")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_guide_regressions.py", line 22, in line_for
+    text = (GUIDES / name).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-not-for-profit.md'
+
+======================================================================
+ERROR: test_payroll_guide_rows (test_au_payroll_tax_table.PayrollTaxTableTest.test_payroll_guide_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_payroll_tax_table.py", line 15, in test_payroll_guide_rows
+    text = read("australia-payroll.md")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_payroll_tax_table.py", line 10, in read
+    return (AU / name).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/australia-payroll.md'
+
+======================================================================
+ERROR: test_rates_card_row (test_au_payroll_tax_table.PayrollTaxTableTest.test_rates_card_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_payroll_tax_table.py", line 22, in test_rates_card_row
+    text = read("au-rates-2026-27.md")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_payroll_tax_table.py", line 10, in read
+    return (AU / name).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-rates-2026-27.md'
+
+======================================================================
+ERROR: test_crypto_rate_scale (test_au_refresh_2026_27.Refresh202627Test.test_crypto_rate_scale)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 15, in test_crypto_rate_scale
+    text = read("au-crypto-tax.md")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 10, in read
+    return (AU / name).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-crypto-tax.md'
+
+======================================================================
+ERROR: test_payg_instalment_factors (test_au_refresh_2026_27.Refresh202627Test.test_payg_instalment_factors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 29, in test_payg_instalment_factors
+    text = read("au-payg-instalments.md")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 10, in read
+    return (AU / name).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-payg-instalments.md'
+
+======================================================================
+ERROR: test_rental_thresholds (test_au_refresh_2026_27.Refresh202627Test.test_rental_thresholds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 21, in test_rental_thresholds
+    text = read("au-rental-property.md")
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_au_refresh_2026_27.py", line 10, in read
+    return (AU / name).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/skills/australia/au-rental-property.md'
+
+======================================================================
+ERROR: test_a_future_default_never_drags_undated_claims_forward (test_contradiction_tax_year.RealPackagesTreeTests.test_a_future_default_never_drags_undated_claims_forward)
+The structural regression, exercised through extract_claims.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_contradiction_tax_year.py", line 257, in test_a_future_default_never_drags_undated_claims_forward
+    ahead = scanner.resolve_tax_year() + 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/scripts/detect-contradictions.py", line 193, in resolve_tax_year
+    raise ValueError(f"no valid rates.YYYY.json files found in {rates_dir}")
+ValueError: no valid rates.YYYY.json files found in /Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/packages/us-federal
+
+======================================================================
+ERROR: test_untagged_guides_bind_to_the_year_they_say_they_cover (test_contradiction_tax_year.RealPackagesTreeTests.test_untagged_guides_bind_to_the_year_they_say_they_cover)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_contradiction_tax_year.py", line 232, in test_untagged_guides_bind_to_the_year_they_say_they_cover
+    default = scanner.resolve_tax_year()
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/scripts/detect-contradictions.py", line 193, in resolve_tax_year
+    raise ValueError(f"no valid rates.YYYY.json files found in {rates_dir}")
+ValueError: no valid rates.YYYY.json files found in /Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/packages/us-federal
+
+======================================================================
+ERROR: test_repository_copy_follows_the_rules (test_copy_rules.CopyRulesTest.test_repository_copy_follows_the_rules)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_copy_rules.py", line 79, in test_repository_copy_follows_the_rules
+    text = (ROOT / rel).read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/agent-skills/LICENSE.md'
+
+======================================================================
+FAIL: test_a_skeleton_rates_file_never_becomes_the_default_year (test_contradiction_tax_year.RealPackagesTreeTests.test_a_skeleton_rates_file_never_becomes_the_default_year)
+ANNUAL-UPDATE-RUNBOOK.md has next year's skeleton created in December,
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_contradiction_tax_year.py", line 283, in test_a_skeleton_rates_file_never_becomes_the_default_year
+    self.assertTrue(rates, "packages/us-federal has no canonical rates files")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : packages/us-federal has no canonical rates files
+
+======================================================================
+FAIL: test_us_federal_guides_carry_no_frontmatter_tax_year (test_contradiction_tax_year.RealPackagesTreeTests.test_us_federal_guides_carry_no_frontmatter_tax_year)
+The premise the rest of this class rests on; assert it, don't assume.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_contradiction_tax_year.py", line 225, in test_us_federal_guides_carry_no_frontmatter_tax_year
+    g.name for g in self._guides()
+                    ~~~~~~~~~~~~^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_contradiction_tax_year.py", line 206, in _guides
+    self.assertTrue(guides, "packages/us-federal has no guides to check")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : packages/us-federal has no guides to check
+
+======================================================================
+FAIL: test_report_routes_texas_to_state_pack (test_coverage_routing.TexasCoverageRoutingTest.test_report_routes_texas_to_state_pack)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_coverage_routing.py", line 28, in test_report_routes_texas_to_state_pack
+    self.assertTrue(os.path.isfile(os.path.join(
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        cr.REPO_ROOT, self.texas["dir"], "README.md")))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_topic_folders_are_not_countries (test_repo_layout.RepoLayoutTests.test_topic_folders_are_not_countries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/faroe-publish-2026-10-31/repository/tests/test_repo_layout.py", line 18, in test_topic_folders_are_not_countries
+    self.assertIn("malta", names)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: 'malta' not found in {'faroe-islands'}
+
+----------------------------------------------------------------------
+Ran 175 tests in 7.727s
+
+FAILED (failures=4, errors=13, skipped=1)
