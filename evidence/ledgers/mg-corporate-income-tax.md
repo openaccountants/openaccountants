@@ -1,0 +1,37 @@
+# Figure and rule ledger: mg-corporate-income-tax
+
+Candidate tax year 2026. Writer read the listed portions on 2026-11-01. Short French extracts identify the text; full captures stay outside this repository. All examples use hypothetical inputs. Independent review pending.
+
+| ID | Guide section and rule / figure | Act / article or authority heading | Official URL | Short exact original-language quote | Read on |
+|---|---|---|---|---|---|
+| 1 | Who this applies to: IR mandatory at MGA 400m; election from MGA 200m, real regime links VAT | CDI 01.01.02 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « supérieur ou égal à Ar 400 000 000 » | 2026-11-01 |
+| 2 | Who this applies to / Cross-border points: resident companies worldwide; seat or effective management; non-residents source only | CDI 01.01.04–05 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « quelle que soit leur origine » | 2026-11-01 |
+| 3 | The base: accounting year; taxable net profit; new first period maximum 18 months absent permission | CDI 01.01.09–10 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « sans pouvoir excéder 18 mois » | 2026-11-01 |
+| 4 | Rates: 20%; round profit down to MGA 1,000; existing-at-1-January minimum | CDI 01.01.14 I-A | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Le taux de l’impôt est fixé à 20p.100. » | 2026-11-01 |
+| 5 | Rates: general minimum MGA 1m plus 1% turnover; named sectors MGA 500k plus 1%; petroleum 0.7%; retail fuel 0.1%; transport regulatory | CDI 01.01.14 I-A | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Ar 1 000 000, majoré de 1p.100 du chiffre d’affaires annuel hors taxe » | 2026-11-01 |
+| 6 | Rates / The base: IS ordinary 5%, not 70% base; round down MGA 10k; 3% new-joiner conditions; reductions and floor | CDI 01.02.02,04,05,05 bis | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Le taux de l’impôt est fixé à 5p.100 de la base imposable. » | 2026-11-01 |
+| 7 | Deadlines: 15 May, 15 November, fourth-month day 15; bimonthly provisional payments; receipt | CPF I-11; CDI 01.01.15 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « au plus tard le 15 Mai de l’année suivante » | 2026-11-01 |
+| 8 | Deadlines: regular books, PCG2005 financial statements and online deposit | CDI 01.01.19 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Les états financiers susvisés sont également à déclarer dans la plateforme en ligne » | 2026-11-01 |
+| 9 | Penalties: missing return MGA 200k at >=400m, first month 3%, later 1%, started month and MGA 10k floor; understatement 40% minimum MGA 100k | CDI 20.01.52–54 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « 3p.100 du montant à payer pour le premier mois » | 2026-11-01 |
+| 10 | The base: deductions limited to necessary duly justified charges; carryforward loss 5 years | CDI 01.01.10 1°,11° | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Ce report peut être effectué sur une période de 5 ans. » | 2026-11-01 |
+
+| LFR | Cooperative IR regardless turnover; authorized merger-loss transfer; financial statement annex schedules | Loi 2026-004, amendments 01.01.11 III,13 VII,19; art22 | https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf | « Les sociétés coopératives sont également, soumises à l’impôt sur les revenus » | 2026-11-01 |
+
+| Detail-1 | IR optional entry MGA200m | 01.01.02 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « supérieur ou égal à Ar 200 000 000 » | 2026-11-01 |
+| Detail-2 | Round IR profit down1000 | 01.01.14 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « arrondi au millier d’Ariary inférieur » | 2026-11-01 |
+| Detail-3 | Agriculture/artisan/industry/mining/hotel/tourism minimum fixed500k plus1% | 01.01.14 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Ar 500 000, majoré de 1p.100 du chiffre d’affaires annuel hors taxe » | 2026-11-01 |
+| Detail-4 | Petroleum minimum fixed1m plus0.7% | 01.01.14 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Ar 1 000 000, majoré de 7p.1000 » | 2026-11-01 |
+| Detail-5 | Retail fuel minimum0.1% | 01.01.14 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « 1p.1000 du chiffre d'affaires hors taxe » | 2026-11-01 |
+| Detail-6 | New approved-centre/qualifying online registrant3% | 01.02.05 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « ce taux est de 3p.100 » | 2026-11-01 |
+| Detail-7 | Round IS base down10k | 01.02.05 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « arrondie à la dizaine de milliers d’Ariary inférieur » | 2026-11-01 |
+| Detail-8 | Approved-centre base allowance50%, cap10m excludes qualifying new adherents | 01.02.04 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « abattement de 50p.100 sur la base imposable sans excéder Ar 10 000 000 » | 2026-11-01 |
+| Detail-9 | IS supported-cost relief2% and3%turnover floor | 01.02.05 bis | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « une réduction d’impôt de 2p.100 » | 2026-11-01 |
+| Detail-10 | IS relief floor3%turnover | 01.02.05 bis | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « ne doit pas être inférieur à 3p. 100 du chiffre d’affaires » | 2026-11-01 |
+| Detail-11 | IR June close15November | CPF I-11 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « au plus tard le 15 Novembre de la même année » | 2026-11-01 |
+| Detail-12 | IR other close day15 fourth month | CPF I-11 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « 15ème jour du quatrième mois qui suit la clôture » | 2026-11-01 |
+| Detail-13 | IR provisional every2months by15lastmonth | CPF I-11 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « tous les bimestres et au plus tard le 15 du dernier mois » | 2026-11-01 |
+| Detail-14 | Late payment subsequent month1% floor10k started month counted | 20.01.53 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Tout mois commencé étant dû en entier. » | 2026-11-01 |
+| Detail-15 | Late payment floor10k | 20.01.53 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « ne doit pas être inférieur à Ar 10 000 » | 2026-11-01 |
+| Detail-16 | Understatement40% floor100k | 20.01.54 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « L’amende à payer ne doit pas être inférieure à Ar 100 000. » | 2026-11-01 |
+
+Old-topic destinations: [complete country map](mg-old-topic-destinations.md).
