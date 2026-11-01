@@ -16,7 +16,7 @@ partial:
 
 # Guinea: two conditional March-text workpapers, country pack partial
 
-Two new tier-2 workpapers read from enacted Law L/2026/010/CNT and its signed promulgation decree on 1 November 2026. Independent source review accepted candidate `8f84f15a2a89e62158c959d05d150dd9deb3090a` only as conditional March-text workpapers. This does not establish operative current-year law: users must confirm the version governing the actual period or invoice, including the October rectification effect, before live use. If unresolved, outputs remain hypothetical March-text analysis. No accountant attestation. Six historical 2025 Guides remain unchanged and do not supply confirmed 2026 values. Keep [issue 461](https://github.com/openaccountants/openaccountants/issues/461) open.
+Two new tier-2 workpapers read from enacted Law L/2026/010/CNT and its signed promulgation decree on 1 November 2026. Independent source review accepted candidate `8f84f15a2a89e62158c959d05d150dd9deb3090a` only as conditional March-text workpapers. This does not establish operative current-year law: users must confirm the version governing the actual period or invoice, including the October rectification effect, before live use. If unresolved, outputs remain hypothetical March-text analysis. No accountant attestation. Four historical 2025 tax Guides remain unchanged; payroll/social and formation are expanded below with independent review pending. Keep [issue 461](https://github.com/openaccountants/openaccountants/issues/461) open.
 
 | Job | Guide | Actual scope |
 |---|---|---|
@@ -29,7 +29,7 @@ The Ministry's CGI library returned 403 through direct fetch and an ordinary Bra
 
 [Legacy-topic destination map](../../evidence/ledgers/gn-old-topic-destinations.md) preserves every old topic. New-job ledgers sit beside that map; full captures, OCR and rendered pages remain privately outside Git.
 
-Historical Guides awaiting research: [individual](gn-income-tax.md), [corporate](gn-corporate-income-tax.md), [VAT](gn-vat-gst.md), [payroll/social](gn-payroll-social.md), [formation](gn-company-formation.md), [overview](gn-tax-overview.md). Their platform fields and CTA suffixes are preserved exactly. Company-law capital, fees and procedures also remain historical and unverified for 2026.
+Historical tax Guides awaiting research: [individual](gn-income-tax.md), [corporate](gn-corporate-income-tax.md), [VAT](gn-vat-gst.md), [overview](gn-tax-overview.md). Payroll/social and formation have new sourced methods below. All existing platform fields and complete CTA suffixes are preserved exactly. Formation and reporting remain partial for the stated gaps.
 
 ## Independent source review
 
@@ -38,3 +38,5 @@ The [initial review](../../evidence/ledgers/guinea-review-20261101/review.md) is
 ## Remaining-work draft, independent review pending
 
 The expanded [payroll/social Guide](gn-payroll-social.md) now computes ordinary full-month CNSS contributions from current authority guidance and the CNSS-hosted Code/decree. The decree states a twenty-day payment window; current agency pages state fifteen days. The earlier agency date is an operational control, not a resolved legal amendment. The new [ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-payroll-social.md) records the source limits. No accountant attestation or full-domain acceptance follows. The unchanged prior reviews retain their original scope.
+
+The rewritten [formation Guide](gn-company-formation.md) adds entity choice, capital funding, route-specific APIP fees, incorporation evidence, foreign-branch controls and annual approval/registry deposit. Guinea capital/formality instruments, some fee applicability and full reporting/tax duties remain explicit gaps. Its [new ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-company-formation.md) and [immutable predecessor map](../../evidence/ledgers/guinea-remaining-20261101/predecessor-destinations.json) preserve the old scope and holds. Review pending.

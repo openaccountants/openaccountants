@@ -3,7 +3,7 @@
   "prepared_on": "2026-11-01",
   "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
-  "destination_status": "Payroll destinations populated; remaining five historical Guides retained unchanged pending research.",
+  "destination_status": "Payroll and formation mapped to new methods/explicit holds. Other four historical Guides remain byte-identical. Earlier 65-topic map is retained as history, not changed acceptance.",
   "guides": [
     {
       "path": "skills/guinea/gn-company-formation.md",
@@ -41,11 +41,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 13,
-            "line_end_at_pinned_base": 13,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -63,11 +62,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 15,
-            "line_end_at_pinned_base": 15,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -85,11 +83,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 17,
-            "line_end_at_pinned_base": 17,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -107,11 +104,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 19,
-            "line_end_at_pinned_base": 19,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -129,11 +125,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 20,
-            "line_end_at_pinned_base": 20,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -151,11 +146,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 21,
-            "line_end_at_pinned_base": 21,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -173,11 +167,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 22,
-            "line_end_at_pinned_base": 22,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Choose form: attributed APIP capital guidance; Boundary and Sources: national instrument hold",
+            "status": "explicit_hold_national_capital_instrument",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -195,11 +188,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 23,
-            "line_end_at_pinned_base": 23,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Choose form / Boundary / Sources: Guinea capital mechanism held, CFA never relabelled GNF",
+            "status": "explicit_hold_unverified_minimum",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -217,11 +209,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 24,
-            "line_end_at_pinned_base": 24,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -239,11 +230,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 25,
-            "line_end_at_pinned_base": 25,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -261,11 +251,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 26,
-            "line_end_at_pinned_base": 26,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Reconcile published fees; Worked cases; Sources: sliding capital duty held",
+            "status": "expanded_fee_routes_and_explicit_duty_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -283,11 +272,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 27,
-            "line_end_at_pinned_base": 27,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Filing and payment: conditional APIP72hour service statement",
+            "status": "replaced_unverified_timing",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         },
         {
@@ -305,11 +293,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-company-formation.md",
-            "line_start_at_pinned_base": 28,
-            "line_end_at_pinned_base": 28,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": "pending writer exact destination or explicit hold"
+            "heading_or_hold": "Verify completion: company-law reporting; separate CNSS; Sources: tax and detailed accounting holds",
+            "status": "expanded_and_explicit_tax_reporting_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
           }
         }
       ],
