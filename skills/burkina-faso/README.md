@@ -13,26 +13,26 @@ covered_by:
   TP: bf-transfer-pricing
   XB: bf-nonresident-services-withholding
 partial:
-  IT-IND: "2026 ordinary IBICA/IBNC and CME draft; live form workflow, personal/foreign income and specialist execution remain incomplete; independent review pending."
-  IT-CORP: "2026 ordinary IS, MFP and advance-payment draft; current form workflow, specialist exemptions and PE attribution remain incomplete; independent review pending."
+  IT-IND: "2026 ordinary IBICA/IBNC and CME draft; live form workflow, personal/foreign income and specialist execution remain incomplete; independent source corrections closed for the partial draft scope."
+  IT-CORP: "2026 ordinary IS, MFP and advance-payment draft; current form workflow, specialist exemptions and PE attribution remain incomplete; independent source corrections closed for the partial draft scope."
   VAT: "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt."
   SC: "Legacy 2025 Guide retained unchanged; CNSS and separate AMU not rebuilt."
-  PR: "2026 IUTS/TPA draft; portal forms, administrative rounding, SMIG and current CNSS/AMU integration remain incomplete; independent review pending."
+  PR: "2026 IUTS/TPA draft; portal forms, administrative rounding, SMIG and current CNSS/AMU integration remain incomplete; independent source corrections closed for the partial draft scope."
   TP: "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent AI source review accepted for the stated draft scope."
   XB: "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent AI source review accepted for the stated draft scope."
 ---
 
 # Burkina Faso tax pack
 
-**Partial follow-on draft, 1 November 2026.** Three legacy Guides now have 2026 statutory computations, source ledgers and six executable cases, pending independent review. Five legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
+**Partial follow-on draft, 1 November 2026.** Three legacy Guides now have 2026 statutory computations, source ledgers and six executable cases, with independent source corrections closed for the exact repaired candidates. Five legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
 
 | Domain | Guide | Actual status |
 |---|---|---|
-| IT-IND | [Business income](bf-income-tax.md) | 2026 draft: IBICA/IBNC profit and minima, CME tariff/election, statutory preparation; independent review pending |
-| IT-CORP | [Corporate tax](bf-corporate-tax.md) | 2026 draft: ordinary IS, MFP, deductions, advances and statutory preparation; independent review pending |
+| IT-IND | [Business income](bf-income-tax.md) | 2026 draft: IBICA/IBNC profit and minima, CME tariff/election, statutory preparation; independent source corrections closed for the partial draft scope |
+| IT-CORP | [Corporate tax](bf-corporate-tax.md) | 2026 draft: ordinary IS, MFP, deductions, advances and statutory preparation; independent source corrections closed for the partial draft scope |
 | VAT | [VAT](bf-vat.md) | Legacy 2025; needs full source rebuild |
 | SC | [Social contributions](bf-social-contributions.md) | Legacy 2025; needs full source rebuild |
-| PR | [Payroll](bf-payroll.md) | 2026 draft: IUTS/TPA bases, current allowances, family reductions, payment frequency and annual statements; independent review pending |
+| PR | [Payroll](bf-payroll.md) | 2026 draft: IUTS/TPA bases, current allowances, family reductions, payment frequency and annual statements; independent source corrections closed for the partial draft scope |
 | TP | [Transfer pricing](bf-transfer-pricing.md) | 2026 draft: controlled pricing, distinct declaration/documentation size tests, July 2026 documentation contents, audit request and fines |
 | XB | [Non-resident services withholding](bf-nonresident-services-withholding.md) | 2026 draft: payer/service scope, base, general and road-freight rates, declaration fields, remittance and default branches |
 
@@ -50,4 +50,4 @@ Current form box identifiers and authenticated portal steps were not accessed. D
 
 The [initial independent review](../../evidence/ledgers/burkina-faso-review-20261101/review.md) identified one incomplete TP documentation checklist. After repair, the [dated acceptance closure](../../evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md) accepted the two limited drafts at commit `199e3dfae83beaeb0a908206b11d8317cef37c96`. Together the receipts cover 51 ledger rows, four recomputed examples and preservation checks for the eight legacy Guides. The closure records exact accepted Guide and ledger hashes; the only later Guide edit corrects the closing review-status sentence.
 
-The three additional rewrites require a fresh independent review; the earlier acceptance does not cover them. The coverage gaps above remain open and all seven domains remain partial. This is the local drafting checkpoint for this follow-on batch. It authorises no issue closure, merge, professional attestation or country-completion claim.
+The three additional rewrites now have a separate [independent review and correction closure](../../evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md); the earlier two-Guide acceptance remains unchanged. All130article/rule rows,348old-topic identities and six independent computations were checked. Three finding groups closed: higher ordinary-fine branches, capital-company remuneration scope and the missing IRCM scope restored as an explicit hold. The coverage gaps above remain open and all seven domains remain partial. This is the reviewed partial drafting checkpoint for this follow-on batch. It authorises no issue closure, merge, professional attestation or country-completion claim.
