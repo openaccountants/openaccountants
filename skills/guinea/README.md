@@ -7,7 +7,7 @@ covered_by:
 partial:
   IT-IND: "Categorical routing and monthly salary ITS expanded; other personal income categories, full pension/foreign/multi-source reconciliation and current source-version applicability remain unresolved."
   IT-CORP: "Ordinary IS/IMF, profit bridge, loss limit, instalments and credits expanded from enacted/amended sources and April guidance; currentness, specialised deductions/reliefs, complete withholding and foreign/sector methods remain unresolved."
-  VAT: "New 2026 invoice-field control only; legacy rate/threshold/return and cross-border claims are not confirmed current law."
+  VAT: "Ordinary scope, registration, timing, input/trader-cap, monthly filing and credit/refund controls expanded; actual-period currentness, printed goods-timing defect, specialised exemptions/adjustments and full procedures remain unresolved."
   SC: "2026 ordinary full-month CNSS base/contribution method added; deadline conflict, parameter instruments, special categories, partial months and multi-employer cap allocation remain unresolved."
   PR: "Current salary-tax withholding, employer salary/apprenticeship taxes and tax remittance remain unresolved; CNSS is computed separately."
   TP: "No current transfer-pricing job; operative pricing and documentation provisions unavailable in this bounded research."
@@ -46,3 +46,5 @@ The expanded [property Guide](gn-property-tax.md) now adds ordinary liability, e
 The rewritten [corporate Guide](gn-corporate-income-tax.md) adds ordinary IS/IMF scope, the2% prior-year IMF with bounds, accounting-to-tax bridge, loss limitation, instalments and separate credit buckets. It corrects the old unqualified dividend/interest defaults and keeps recipient/treaty/filing limits explicit. [Corporate ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-corporate-income-tax.md). Independent review pending; source-version and special-method gaps remain.
 
 The rewritten [individual Guide](gn-income-tax.md) replaces the unverified annual IRPP scale with categorical routing and a monthly ITS method, residence/source tests, allowances, employee contributions, local/foreign withholding and annual-statement controls. The law’s25% allowance cap overrides inconsistent DGI15% examples. [Individual ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-income-tax.md). Independent review pending; wider individual-tax methods remain partial.
+
+The rewritten [VAT method](gn-vat-gst.md) adds franchise/option/key controls, standard and zero-rate boundaries, service receipt timing, input evidence/exclusions, the unchanged-goods90%imputation cap, tenth-day monthly filing and electronic refund controls. The [VAT ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-vat-gst.md) records source limitations. Invoice v1.2 only corrects its stale six-legacy-Guide scope sentence and numeric version; all original legal rows and examples remain unchanged. Review pending.

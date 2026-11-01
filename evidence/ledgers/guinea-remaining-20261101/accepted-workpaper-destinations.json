@@ -456,553 +456,553 @@
           "exact_text": "# Guinea VAT invoice control v1.1",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L13",
           "destination": "skills/guinea/gn-vat-invoice-control.md / H1",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 15,
           "exact_text": "> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L15",
           "destination": "skills/guinea/gn-vat-invoice-control.md / H1",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 17,
           "exact_text": "## Who this applies to",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L17",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 19,
           "exact_text": "**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L19",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 21,
           "exact_text": "Use to check a Guinea VAT invoice governed by CGI 383 VI after independently establishing that the invoicing duty applies. Article 13 of Law L/2026/010/CNT of 31 March 2026 replaces the full list of mandatory invoice fields. This Guide checks those fields and reconciles amounts; it does not determine VAT registration, taxability, the correct rate or input-credit entitlement. The official bundle contains the signed promulgation decree. Periods before the replacement and the final effect of the October rectifying bill remain unresolved. [Law art. 13, decree arts. 1–2, PDF pp. 20–21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L21",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 23,
           "exact_text": "## Rates, bands and thresholds",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L23",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 25,
           "exact_text": "The list has sixteen numbered requirements, some conditional. There is no monetary exemption or tax-rate rule in the opened replacement paragraph. Mark each field **present**, **missing**, or **not applicable with documented reason**. Do not count a conditional field as mandatory for every invoice. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L25",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 27,
           "exact_text": "| Statutory item | Required information and condition | Official source |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L27",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 28,
           "exact_text": "|---|---|---|",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L28",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 29,
           "exact_text": "| 1° | Supplier name and address | [CGI 383 VI 1°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L29",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 30,
           "exact_text": "| 2° | Customer or recipient name and address | [CGI 383 VI 2°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L30",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 31,
           "exact_text": "| 3° | Supplier NIF and VAT registration key | [CGI 383 VI 3°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L31",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 32,
           "exact_text": "| 4° | For services where the recipient is liable under CGI 373 bis II: recipient NIF and VAT registration key | [CGI 383 VI 4°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L32",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 33,
           "exact_text": "| 5° | Where the customer is liable: reference to CGI 373 bis stating that customer liability | [CGI 383 VI 5°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L33",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 34,
           "exact_text": "| 6° | Where the liable person is a fiscal representative under CGI 373 quinquies: its NIF, VAT registration key, name and address | [CGI 383 VI 6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L34",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 35,
           "exact_text": "| 7° | Unique invoice number based on a chronological, continuous sequence | [CGI 383 VI 7°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L35",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 36,
           "exact_text": "| 8° | Invoice date | [CGI 383 VI 8°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L36",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 37,
           "exact_text": "| 9° | If different from invoice date: date of supply/service and date an advance is paid | [CGI 383 VI 9°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L37",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 38,
           "exact_text": "| 10° | For each item/service: quantity, precise description, unit price excluding tax and legally applicable VAT rate, or the Code provision exempting the supply | [CGI 383 VI 10°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L38",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 39,
           "exact_text": "| 11° | Discounts, rebates or cash discounts acquired and quantifiable at the transaction and directly linked to it | [CGI 383 VI 11°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L39",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 40,
           "exact_text": "| 12° | Total VAT due on the transaction | [CGI 383 VI 12°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L40",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 41,
           "exact_text": "| 13° | Total excluding tax | [CGI 383 VI 13°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L41",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 42,
           "exact_text": "| 14° | Total including all taxes | [CGI 383 VI 14°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L42",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 43,
           "exact_text": "| 15° | If the taxpayer elected VAT on debits: exact wording “TVA d’après les débits - article 366 bis du CGI” | [CGI 383 VI 15°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L43",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 44,
           "exact_text": "| 16° | If the margin regime applies: exact wording “TVA sur marge - article 410 bis du CGI” | [CGI 383 VI 16°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L44",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 46,
           "exact_text": "## The base",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L46",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 48,
           "exact_text": "0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L48",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 49,
           "exact_text": "1. Obtain the invoice, contract/order, supply or advance evidence, supplier registration details and independently established VAT treatment. Check invoice date and supply/advance dates against the source records.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L49",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 50,
           "exact_text": "2. Check items 1°–3° and 7°–14° line by line, applying the date and exemption conditions in the table. Match the unique number against the supplier's chronological sequence where the records are available; a number printed on one invoice cannot prove continuity.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L50",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 51,
           "exact_text": "3. Establish whether customer liability or a fiscal representative applies from a separately verified conclusion. Apply 4°–6° only when their stated conditions hold. The cross-referenced articles are not reproduced by this amendment, so this Guide cannot decide their scope.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L51",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 52,
           "exact_text": "4. If an evidenced debit-basis election or margin regime applies, check the exact respective wording in 15° or 16°. Do not elect a regime merely by printing its wording.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L52",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 53,
           "exact_text": "5. Reconcile quantities and unit prices to the net lines, directly related discounts to the transaction, the separately validated VAT amounts to total VAT, and net plus tax amounts to the printed tax-inclusive total. Use the statutory totals in 12°–14°; arithmetic agreement does not prove the rate or tax treatment is correct. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L53",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 54,
           "exact_text": "6. Produce a discrepancy list with the field, evidence, invoice value, expected value and correction requested. Keep the original invoice and correction correspondence in the workpaper; no statutory retention duration is asserted here. An internally corrected spreadsheet does not correct the supplier's invoice.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L54",
           "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 56,
           "exact_text": "## Deadlines and filing",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L56",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Deadlines and filing",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 58,
           "exact_text": "This is an invoice-review job, not a VAT return submission. Route a missing mandatory field or arithmetic mismatch for correction before approving the document through this workflow. No statutory invoice-issue deadline, correction instrument, return due date, portal/form/box, submission receipt or payment reference has been verified from article 383 VI. Do not invent those details from the field list.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L58",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Deadlines and filing",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 60,
           "exact_text": "## Penalties and interest",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L60",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Penalties and interest",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 62,
           "exact_text": "The opened amendment sets invoice contents. It does not establish an invoice penalty, interest rate or automatic input-credit refusal. Record the defect without asserting an unverified sanction or deduction consequence.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L62",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Penalties and interest",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 64,
           "exact_text": "## Cross-border points",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L64",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Cross-border points",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 66,
           "exact_text": "Items 4°–6° expressly address recipient liability and fiscal representatives, with references to CGI 373 bis and 373 quinquies. Check the required identifiers and liability reference when a separately verified cross-border conclusion triggers them. This list alone does not prove that every imported service is reverse charged or every foreign supplier must appoint a representative. [CGI 383 VI 4°–6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L66",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Cross-border points",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 68,
           "exact_text": "## Two worked examples that recompute",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L68",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 70,
           "exact_text": "Both cases assume the March version governs the relevant invoice. Without confirmed governing-version evidence, they are hypothetical arithmetic illustrations only and do not require a live invoice correction.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L70",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 72,
           "exact_text": "First, two lines have net amounts of GNF 20,000,000 and GNF 30,000,000. The independently validated tax amounts supplied to this control are GNF 3,600,000 and GNF 5,400,000. Net total is GNF 50,000,000, total VAT is GNF 9,000,000 and gross total is GNF 59,000,000. The example does not establish a statutory VAT rate.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L72",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 74,
           "exact_text": "```oa-check",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L74",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 75,
           "exact_text": "name: Invoice totals reconcile from separately validated amounts",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L75",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 76,
           "exact_text": "inputs:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L76",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 77,
           "exact_text": "  line_one_net: 20000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L77",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 78,
           "exact_text": "  line_two_net: 30000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L78",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 79,
           "exact_text": "  validated_line_one_vat: 3600000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L79",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 80,
           "exact_text": "  validated_line_two_vat: 5400000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L80",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 81,
           "exact_text": "steps:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L81",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 82,
           "exact_text": "  - total_net: line_one_net + line_two_net",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L82",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 83,
           "exact_text": "  - total_vat: validated_line_one_vat + validated_line_two_vat",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L83",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 84,
           "exact_text": "  - total_gross: total_net + total_vat",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L84",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 85,
           "exact_text": "expected:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L85",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 86,
           "exact_text": "  total_net: 50000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L86",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 87,
           "exact_text": "  total_vat: 9000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L87",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 88,
           "exact_text": "  total_gross: 59000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L88",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 89,
           "exact_text": "```",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L89",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 91,
           "exact_text": "Second, a draft has independently validated net of GNF 40,000,000 and VAT of GNF 7,200,000, but printed gross of GNF 48,000,000. The correct arithmetic gross is GNF 47,200,000, leaving a GNF 800,000 discrepancy. The decision is to return the invoice for correction; it does not pass the control merely because all field labels are printed. The tax amounts are inputs, not a rate conclusion.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L91",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 93,
           "exact_text": "```oa-check",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L93",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 94,
           "exact_text": "name: Return mismatched invoice for correction",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L94",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 95,
           "exact_text": "inputs:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L95",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 96,
           "exact_text": "  validated_net: 40000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L96",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 97,
           "exact_text": "  validated_vat: 7200000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L97",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 98,
           "exact_text": "  printed_gross: 48000000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L98",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 99,
           "exact_text": "steps:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L99",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 100,
           "exact_text": "  - expected_gross: validated_net + validated_vat",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L100",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 101,
           "exact_text": "  - discrepancy: abs(printed_gross - expected_gross)",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L101",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 102,
           "exact_text": "expected:",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L102",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 103,
           "exact_text": "  expected_gross: 47200000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L103",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 104,
           "exact_text": "  discrepancy: 800000",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L104",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 105,
           "exact_text": "```",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L105",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 107,
           "exact_text": "## Ask the client first",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L107",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Ask the client first",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 109,
           "exact_text": "Obtain evidence establishing the governing version for the invoice, including any October effect; the invoice and supporting supply/advance documents; supplier and customer identifiers; the separately verified registration/tax treatment and rate; any recipient-liability or representative conclusion; any debit-basis election or margin-regime evidence; and the invoice sequence and correction history.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L109",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Ask the client first",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 111,
           "exact_text": "## Sources",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L111",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 113,
           "exact_text": "| Official source and portions actually read | Read on |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L113",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 114,
           "exact_text": "|---|---|",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L114",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 115,
           "exact_text": "| [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 13 replacing all sixteen items of CGI 383 VI on pp. 20–21; signed promulgation decree arts. 1–2 on p. 27, corroborated on p. 28. Invoice pages and signed decree visually inspected. | 2026-11-01 |",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L115",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         },
         {
           "line": 117,
           "exact_text": "**Not yet confirmed:** underlying CGI 383 I–V and VII+, registration threshold, applicable VAT rates/exemptions/zero-rating and taxable base, scope of recipient liability and fiscal representation, debit/margin eligibility and elections, input deductions/refunds, issue/correction deadlines and instruments, retention duration, penalties/interest, return/payment portal/forms/boxes/deadlines/receipts, periods before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. The six legacy Guides remain historical and do not resolve these current-year gaps.",
           "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L117",
           "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
-          "status": "retained_byte_identical"
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
         }
       ]
     }

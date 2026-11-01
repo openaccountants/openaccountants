@@ -3,7 +3,7 @@
   "prepared_on": "2026-11-01",
   "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
-  "destination_status": "Payroll, formation, corporate and individual mapped to new methods/holds; VAT and overview remain historical pending research. Old65-topic map stays unchanged history.",
+  "destination_status": "All five substantive legacy Guides mapped to new methods and holds; overview remains historical. Original source text/hash/blob remains exact.",
   "guides": [
     {
       "path": "skills/guinea/gn-company-formation.md",
@@ -1544,11 +1544,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 13,
-            "line_end_at_pinned_base": 13,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1566,11 +1565,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 15,
-            "line_end_at_pinned_base": 15,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1588,11 +1586,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 17,
-            "line_end_at_pinned_base": 17,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1610,11 +1607,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 18,
-            "line_end_at_pinned_base": 18,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates and territoriality: zero exports limited; outsideGuineaservices distinct",
+            "status": "corrected_overbroad_zero_services_claim",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1632,11 +1628,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 19,
-            "line_end_at_pinned_base": 19,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates and inputeligibility: actual362/laterconditions; specificlistsheld",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1654,11 +1649,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 20,
-            "line_end_at_pinned_base": 20,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to: franchise359/option360/key373quater",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1676,11 +1670,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 21,
-            "line_end_at_pinned_base": 21,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing: monthlyreturn/nil/creditdetails",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1698,11 +1691,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 22,
-            "line_end_at_pinned_base": 22,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing:2025law10threplaces15th",
+            "status": "corrected_superseded_fifteenth_deadline",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1720,11 +1712,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 23,
-            "line_end_at_pinned_base": 23,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base and Cross-border:373bisregisteredrecipientconditions",
+            "status": "qualified_overbroad_B2B_statement",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1742,11 +1733,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 24,
-            "line_end_at_pinned_base": 24,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Cross-border:373quater/quinquiesrepresentationonlyifregistrationrequired",
+            "status": "qualified_universal_registration_statement",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         },
         {
@@ -1764,11 +1754,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-vat-gst.md",
-            "line_start_at_pinned_base": 26,
-            "line_end_at_pinned_base": 26,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
           }
         }
       ],
