@@ -1,0 +1,107 @@
+[
+  {
+    "name": "transaction-act.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf",
+    "ok": true,
+    "bytes": 719023,
+    "sha256": "74af2de67b414f577a5a0b76a48153da9ae15461193d12072c796fbb62c56901",
+    "text_ok": true
+  },
+  {
+    "name": "deductions-rules.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf",
+    "ok": true,
+    "bytes": 130603,
+    "sha256": "b333fa23aa5e35af57e776599fe9b1a0b94ff28145ee1caeb7d423da8384ba65",
+    "text_ok": true
+  },
+  {
+    "name": "transit-guidance.pdf",
+    "url": "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf",
+    "ok": true,
+    "bytes": 524786,
+    "sha256": "7f5623434ab05994b5de4c6dbbfd49f8bb80279464c3cc04e68290cf35def962",
+    "text_ok": true
+  },
+  {
+    "name": "annex19-guidance.pdf",
+    "url": "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Annex%2019%20Special%20Customs%20Procedures%20GN%20FINAL.pdf",
+    "ok": true,
+    "bytes": 329833,
+    "sha256": "9a41fb1fd6da5a02ec99076156a9b127faaab6a71453c7eb03579e2f0239e3e4",
+    "text_ok": true
+  },
+  {
+    "name": "treaty-volume1.pdf",
+    "url": "https://assets.publishing.service.gov.uk/media/6a56149a6d6d5c7e2845c8d1/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v1of2.pdf",
+    "ok": true,
+    "bytes": 1688231,
+    "sha256": "0017e6af7e1b355a94377a7fc96344f2ab5d7932400033593db6b43c97796b57",
+    "text_ok": true
+  },
+  {
+    "name": "treaty-volume2.pdf",
+    "url": "https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf",
+    "ok": true,
+    "bytes": 2232268,
+    "sha256": "ec022208f1db48edf9407912000f008e788e0e232054c9742b621f2ca6f287e0",
+    "text_ok": true
+  },
+  {
+    "name": "council-register.html",
+    "url": "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009",
+    "ok": false,
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "name": "deductions-announcement.html",
+    "url": "https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358",
+    "ok": true,
+    "bytes": 70666,
+    "sha256": "31a9990a121ffd5d7a27ccedbd42901a300dfe1c35cd800e4a0ee866bc7ac740"
+  },
+  {
+    "name": "imports-exports-act.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/legislations/imports-and-exports-act-1986-423/download",
+    "ok": true,
+    "bytes": 495128,
+    "sha256": "90e0cdb5bc98a66e1c66a806f6114ca2e24eaa717b79b58436d4cbb07c1a1206",
+    "text_ok": true
+  },
+  {
+    "name": "annex19-regulations.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-annex-19-regulations-2026-8553/download",
+    "bytes": 143750,
+    "sha256": "89944eff4174921de82fa23129091622d2013b538c17114deb570db80b5555b3",
+    "ok": true
+  },
+  {
+    "name": "union-procedures-regulations.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-special-customs-procedures-concerning-union-goods-regulations-2026-8575/download",
+    "bytes": 343842,
+    "sha256": "91c2dd7e65f9800f318ccf70642fc65e5ad013249526bc701e964f7cf861f4fc",
+    "ok": true
+  },
+  {
+    "name": "eu-deminimis.pdf",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1788905860333&uri=OJ%3AL_202302831",
+    "ok": false,
+    "error": "Command '['pdftotext', '-layout', 'work/sources/consumption/eu-deminimis.pdf', 'work/sources/consumption/eu-deminimis.txt']' returned non-zero exit status 1."
+  },
+  {
+    "name": "eu-deminimis-browser.txt",
+    "url": "https://eur-lex.europa.eu/eli/reg/2023/2831/oj/eng",
+    "read_on": "2026-10-28",
+    "ok": true,
+    "method": "Normal browser visible DOM; no challenge solved",
+    "sha256": "cdb007bba88b952ffad491db9644f516ec9cd43d4e21076528cb14887b3aab8e"
+  },
+  {
+    "name": "council-register-browser.txt",
+    "url": "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009",
+    "read_on": "2026-10-28",
+    "ok": true,
+    "method": "Normal browser visible DOM; no challenge solved",
+    "sha256": "a339ff30afe81e4836ebdc1f2bbc14ce8e42a9be0b2f3c700ac1cbd59f0fcdab"
+  }
+]

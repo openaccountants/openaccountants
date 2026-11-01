@@ -1,0 +1,7 @@
+# Stamp-duty amendment status: unresolved primary evidence
+
+Checked again 22 October 2026. The official [Act index](https://www.gibraltarlaws.gov.gi/index.php/legislations/stamp-duties-act-2005-1262) identifies 23 December 2024 as the current-version update and lists 2024-37 as the latest amending legislation. Its historical-version display also labels that version out of date; this UI inconsistency cannot prove a later enactment. The official [Bills register](https://www.gibraltarlaws.gov.gi/bills) continues to list B05/2025, dated 27 March 2025. Listings in that register do not establish whether a Bill was subsequently enacted.
+
+Exact-title searches and the cited register did not identify an enacted successor. The [16 March 2026 agenda](https://www.parliament.gi/uploads/contents/agenda/2026/Revised%20Agenda%20-%20Monday%2016%20March%202026.pdf) includes the Bill at first/second reading and committee/third reading. An agenda is not a record of passage. Search absence is not proof of non-enactment.
+
+Missing evidence: the final enacted instrument, assent/publication and operative commencement provisions, or an authoritative parliamentary status record establishing the Bill's disposition. The Guide therefore retains its dated-consolidation treatment and a prominent limitation for affected transactions. No proposed relief, amended rate or altered special-duty rule is presented as enacted. This blocker is specific to those current-liability conclusions; other source-review work can continue.

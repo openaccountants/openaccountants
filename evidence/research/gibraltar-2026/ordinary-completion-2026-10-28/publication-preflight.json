@@ -1,0 +1,141 @@
+{
+  "accepted_head": "4e4634311af031904af4659d73b51d554fa127ac",
+  "publication_scope": "Reviewed still-partial source-cited draft; no complete-country claim",
+  "accepted_guide_and_ledger_hashes": {
+    "gi-connected-party-pricing-and-interest": {
+      "sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "ledger_json_sha256": "68732992f0577c2a9e17bb2b70b3ecc0721dd2cbdbfba28f07091b975f2ceb03",
+      "ledger_md_sha256": "f910a671844294744d15ce5b3894c9754aa65887b912352efa8a760b8b101104",
+      "canonical_sections": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "intake_facts": 6,
+      "main_blocks_exact": 2,
+      "quote_rows": 59,
+      "quotes_exact_to_pinned": 123,
+      "old_map_rows": 45,
+      "old_paragraphs_exact": 44,
+      "pinned_paragraphs_changed_or_replaced": [
+        {
+          "anchor": "Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence unde",
+          "sha256": "969e2dc90e59bcd937a233415ff6f308b4446b6d82fbe7bd76a0bd4693a98efc"
+        },
+        {
+          "anchor": "The complete v0.7 writer rule ledger and old-topics map are prepared for the independent country review in the [country research ledger](../../research/gibralta",
+          "sha256": "d47a92d50d62ca836aaa4e14f2a250e8804c33fb4cb31a0b43c2a8d4ab68982c"
+        }
+      ]
+    },
+    "gi-foreign-tax-relief": {
+      "sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "ledger_json_sha256": "29803dedc23144fa01dcbc212ee1179b9963d28783d0ff67d22eab441eabd3c5",
+      "ledger_md_sha256": "535d93498b3d2b2322fd8d697bb95bff4692fbe18bca3330431ca1db41c0d6a1",
+      "canonical_sections": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "intake_facts": 6,
+      "main_blocks_exact": 2,
+      "quote_rows": 33,
+      "quotes_exact_to_pinned": 73,
+      "old_map_rows": 25,
+      "old_paragraphs_exact": 24,
+      "pinned_paragraphs_changed_or_replaced": [
+        {
+          "anchor": "**Remaining asset-transfer textual limit:** paragraphs 18A(1)(a)\u2013(b) describe loss of Gibraltar's taxing right on head-office/PE asset transfers, while paragrap",
+          "sha256": "2d8e04e944d5a6db92d1c9260b4de6af3052b42c872538a2b27bc796faed6264"
+        },
+        {
+          "anchor": "Independent review and professional attestation are pending. Claim forms, foreign-currency conversion, disputed sourcing, assessed-but-unpaid tax and the applic",
+          "sha256": "d96e5df1eb60bac5681c403f0c355769231d63c8ed7066dbc850483034168166"
+        },
+        {
+          "anchor": "The [complete writer rule ledger and old-topics map](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md) are ready fo",
+          "sha256": "5b240754bd56b51ce49426b445f988f1eeadaf737f7026bcc050c73c7216968a"
+        }
+      ]
+    }
+  },
+  "readme_sha256": "0039cdae38d1b04fa67b8ec5cc21a9169c202d5e0d750ed443055a5dce9503c3",
+  "review_artifacts_byte_exact": [
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure.md",
+      "sha256": "4060c0c86a683ebf02337fecd33b3821e2ac9ae3df59e614dfee7a6222d85e82"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-result.json",
+      "sha256": "e0126898f13c09a2104e7aab086d58f4a4205ea3d01ab2e09e7cac2b52183338"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/closure-evidence.json",
+      "sha256": "d0a82428bffef09d4c451a766fec5aaddd5e08226177b20281ea8ebd81b7322c"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/closure-4e463431/check_closure.py",
+      "sha256": "aefc2ee190ca923ab2d4202c993e2392a9ecb9fbc1d7f56eaa88e9048be0a5a9"
+    }
+  ],
+  "original_review_artifacts_byte_exact": 7,
+  "calculation_blocks": 51,
+  "calculation_failures": 0,
+  "repository_tests": 129,
+  "repository_test_failures": 0,
+  "changed_guide_schemas": 18,
+  "schema_errors": 0,
+  "schema_warning_groups": 2,
+  "full_schema_guides": 2285,
+  "full_schema_generated_blocks": 6137,
+  "full_schema_warning_groups": 3,
+  "strict_metadata_guides": 18,
+  "strict_metadata_errors": 0,
+  "coverage": {
+    "code": "GI",
+    "name": "Gibraltar",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/gibraltar",
+    "skills": 18,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [],
+    "missing": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "IT-IND": "Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled",
+      "IT-CORP": "CT4 payment-on-account reduction form fields/submission and remaining ordinary deduction/claim implementation remain unverified",
+      "VAT": "Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified",
+      "SC": "Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified",
+      "PR": "Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion",
+      "TP": "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; complete domestic documentation scope remains to verify",
+      "XB": "Domestic foreign-tax-relief claim/correction submission; exit payment/return implementation and asset-transfer-definition mismatch; remaining residence/treaty procedure limits remain unverified"
+    },
+    "has_readme": true,
+    "complete": false
+  },
+  "no_generated_source_changes": true,
+  "lost_content_restored": 0,
+  "published": false
+}

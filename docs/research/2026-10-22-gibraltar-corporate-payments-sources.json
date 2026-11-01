@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "locators": "Sections 39, 64\u201365; Schedule 10"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate",
+      "locators": "Payments on Account, CT4 reduction and return penalty FAQs"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf",
+      "limitation": "Stale 10% footer and irregular dates; not used as current rate authority"
+    }
+  ]
+}

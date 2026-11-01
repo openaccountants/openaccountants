@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Treaty Series78/2024",
+    "url": "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf",
+    "as_of": "2026-10-22",
+    "sha256": "47645688bc3a4bfd66eac566dad8eeab7565ecebbe2f534cabbb590596261f9b",
+    "locators": "Articles2\u20139; signature/force cover"
+  },
+  {
+    "title": "Gibraltar November2021FAQ",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/FAQs%20-%20International%20Tax%20Agreement%20-%20Spain.pdf",
+    "as_of": "2026-10-22",
+    "sha256": "09c4ce36526e6afc22d76ebee4272c6dc9f1c0405261fdd885181963bdcdd745",
+    "locators": "Printed pp7\u201310; move2026 example end2029 conflicts with treaty move-year+4"
+  },
+  {
+    "title": "BOE status/text",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-3947",
+    "as_of": "2026-10-22",
+    "locators": "Entry4March2021; latest update13March2021; Article2Spanishtext; webread no localhash"
+  }
+]

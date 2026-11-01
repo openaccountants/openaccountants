@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-31",
+  "content_commit": "aa9b268280e281538974a824874ff57e9e2018f2",
+  "source_main": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "pr": 778,
+  "state": "reviewed partial, ready for normal push and Michael review; no merge",
+  "files": {
+    "evidence/research/gibraltar-2026/publication-2026-10-31/SOURCE-PUBLICATION.md": "6c59d2303ceb1a55235f5b3aa39aa7741d54c3cf2655a1a2c028624c4e8b34c6",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/changed-guide-validation-precommit.txt": "a6044298bc28b20c89303ca96faf8e1e5c0f1ad523efefff99726d94480d9a53",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/changed-guide-validation.txt": "060b3212fbd00208807f9841883b2b2e8bfe0dfc2cea45bfb8cff76d97f7061e",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/examples-precommit.txt": "cf9fcda9d40158f3bf16bb1915a9c13440ef2f3257918fb051f7a9cb9ad2db68",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/examples.txt": "af4f3b704035cef3cdecc6cc0cc1b714664d586fe0599eb2d3b10d12420b6fd6",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/publication-verification.json": "d06017de1712b819bd15ba8ec4ceb81b65012d93ea8838f9224c204579e9da96",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/source-publication-map.json": "050c8e30ef900b250a95c6132f87c0326389e8c94350d7d71eca4d98b8eb1960",
+    "evidence/research/gibraltar-2026/publication-2026-10-31/strict-sync-audit.txt": "c1a03fe26039a5acc8780f1e733752cabe56085df96e105a05f74647e9d0d493"
+  }
+}

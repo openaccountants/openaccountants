@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-31",
+  "verdict": "accepted_partial_scope",
+  "reviewed_commit": "4458f6a311bbae70ac953b47effdbbd3a2058b30",
+  "independent_ai_review": true,
+  "human_attestation": false,
+  "material_findings": [],
+  "counts": {
+    "rows_reviewed": 36,
+    "shared_excerpts_checked": 50,
+    "examples_recomputed": 4,
+    "official_urls_fresh_http_200": 13,
+    "pdf_raw_hash_matches": 10,
+    "dynamic_html_current_content_matches": 3,
+    "inherited_guides_unchanged": 18,
+    "unchanged_country_partial_values": 7,
+    "new_guide_standard_checks_passed": 10
+  },
+  "inputs_stable_at_close": true,
+  "guide_edited": false,
+  "country_readme_edited": false,
+  "commit_push_merge_performed": false,
+  "allowed_status_change": "Narrow dated README review-status pointer only; preserve stated gaps and partials.",
+  "not_established": [
+    "complete Category 2 job",
+    "country completion",
+    "resolution of declared wealth/cash/part-year/mixed-credit/legacy gaps",
+    "publication-rights clearance",
+    "human attestation",
+    "remote CI",
+    "platform ingest",
+    "merge approval"
+  ],
+  "files": {
+    "checks.txt": "375b97201161f714b460c8f058b75ddb9f5f40a02a28157cf3aed786477e94eb",
+    "input-hashes.json": "f741bc130ce795feadb2524da8a0c7f5fa8b36dfd9edfb125d5a2a73b245b43f",
+    "review.md": "3c1c53e12800490ff68efca274da17d6897b7757089952d4f53fd5e033f55406",
+    "row-outcomes.json": "cc385c141c2256b29e20bea62c76996af122f3e95e314303c4d49abeb5b58dcd",
+    "source-access.json": "bfc8ab5539d438b405cc82be564e3bf98b82b7d5db8029d6af443f96af534b81"
+  }
+}
