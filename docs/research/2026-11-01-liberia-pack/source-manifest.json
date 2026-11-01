@@ -1,0 +1,140 @@
+[
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/ANACTT1.pdf",
+    "file": "ANACTT1.pdf",
+    "bytes": 1512914,
+    "sha256": "b63e53e7c77d9a70cb7956f3befd8bd71d6c4dc6119f1f03052cd49f23d8ddd4",
+    "text_chars": 7,
+    "scope": "VAT amendment, cover and amended1003/1066(a), substantive pages1\u20132",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+    "file": "TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+    "bytes": 1507776,
+    "sha256": "4ee7dea9c9e4bf9280f3893e8e5623d53d1984969672364dfe1d7c8a81c99584",
+    "text_chars": 7,
+    "scope": "2024 Chapters8/10 amendment, substantive pages1\u20132 and cover",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+    "file": "TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+    "bytes": 3435693,
+    "sha256": "c6c0733e0db6d185f7333d3b5b6fa668876180296e5aaeec057f3648d19db8d3",
+    "text_chars": 15,
+    "scope": "December 2024 general amendment, approved17December/printed20December2024, substantive pages1\u20139",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf",
+    "file": "LRC-Amendment-December-2025.pdf",
+    "bytes": 2819192,
+    "sha256": "6d498c8d05fa33a8386bc4d2439efeaced5aa283c0c0ab984c3dd1fbc8a98d88",
+    "text_chars": 304,
+    "scope": "December2025 amendment, approved24March/printed1April2026, cover/preliminary/amended63,74,76,79,90\u201392,803,805,806,1000,1021; excise schedule not used",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2022/06/revenueauthorityact.pdf",
+    "file": "revenueauthorityact.pdf",
+    "bytes": 3022264,
+    "sha256": "fd6e29fad0f0edc8cb1e5bf10ed6d7237708ea579433c677974c0ef77232ee5b",
+    "text_chars": 70859,
+    "scope": "Captured, not read yet"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "bytes": 1151092,
+    "sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "text_chars": 949119,
+    "scope": "Revenue Code 2020, selected general, income, nonresident, filing and GST provisions",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2022/01/Adminsitrative-Regulation-on-transfer-pricing-2016.pdf",
+    "file": "Adminsitrative-Regulation-on-transfer-pricing-2016.pdf",
+    "bytes": 16231357,
+    "sha256": "592c3f89d2f84f59af3be405b75bd1b452b5d0b1a73a71673f87c510a18437c6",
+    "text_chars": 61889,
+    "scope": "Transfer Pricing Regulations2016, regs3\u20136 read including surrounding method/documentation clauses",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/wp-content/uploads/2022/01/Transfer_Pricing_Practice_Note.pdf",
+    "file": "Transfer_Pricing_Practice_Note.pdf",
+    "bytes": 2998760,
+    "sha256": "1bfe5cf1d36031daf1ee61509b153a16a93f170a3c82c6e6374dcf6228c42cea",
+    "text_chars": 43,
+    "scope": "Practice Note1\u20132017, paras1\u20133,7\u201311,13 read; other guidance not relied upon",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.nasscorp.org.lr/wp-content/uploads/2024/05/NASSCORP-Act-revised-2017.pdf",
+    "file": "nasscorp-act-2017.pdf",
+    "bytes": 873197,
+    "sha256": "2937a00ae260334649a50de1f08d9581531fa449b31c2771d86971286f706cb5",
+    "scope": "NASSCORP Act2017, ss89.8\u201389.18, employment categories and contributions read",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.nasscorp.org.lr/wp-content/uploads/2024/06/GenReg-2023.pdf",
+    "file": "nasscorp-reg-2023.pdf",
+    "bytes": 1037610,
+    "sha256": "d1731e734daec04dbbb7842826ce948a90f99410cb98dccb0852a79cc0836850",
+    "scope": "NASSCORP General Regulations2023, regs1\u20134,13\u201318,21 andSchedulesI\u2013III read",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.lra.gov.lr/domestic-tax-profile/businesstaxkinds/",
+    "file": "business-tax.html",
+    "bytes": 326967,
+    "sha256": "adac643205d12fcce6390caddcd90b208fa56e5b97b62d61ff2871910b5745dc",
+    "scope": "LRA Business Tax Kinds, registration, entity documents, annual renewal and payment instructions read",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.nic.gov.lr/pages/starting-a-business/",
+    "file": "nic-start.html",
+    "bytes": 20226,
+    "sha256": "811f16f5e766b5d67f47df27c3d44c80533ee9459ace910633ff8780d838a5d2",
+    "scope": "National Investment Commission, Starting a Business, application and name reservation paragraphs read",
+    "read_on": "2026-11-01"
+  },
+  {
+    "url": "https://www.nasscorp.org.lr/faq/",
+    "file": "nasscorp-faq.html",
+    "bytes": 174797,
+    "sha256": "3bfeceb2354867e94299513252b92c6ee341356a8cded278fd986d71657089c4",
+    "scope": "Captured, not yet read"
+  },
+  {
+    "url": "https://www.moci.gov.lr/index.php/media/press-releases/public-service-announcement-psa-january-20-2026",
+    "file": "lbr-2026.html",
+    "bytes": 69746,
+    "sha256": "c8e42db1ab0b07d336a1879d1f788a59c9aa8a317442f6f9fa62883c6f2221c0",
+    "scope": "Captured, not yet read"
+  },
+  {
+    "url": "https://www.moci.gov.lr/sites/default/files/documents/MoCI.BusinessHandbook.013017_signed.pdf",
+    "file": "business-handbook.pdf",
+    "bytes": 994440,
+    "sha256": "ce67f1d46a4179509546b20eb39aeaa79e0054cae829ad39ddb3d84ee0d3583b",
+    "scope": "Captured, not yet read"
+  },
+  {
+    "url": "https://www.lra.gov.lr/lra-commits-to-deepening-partnership-with-civil-society-on-revenue-mobilization/",
+    "file": "vat-announcement-20260929.html",
+    "sha256": "fa49130022f6a85e3d5a3e25136bc55703909e38194cbd536ca23227f331bb47",
+    "read_on": "2026-11-01",
+    "scope": "LRA29September2026 announcement, VAT implementation sentence read"
+  },
+  {
+    "url": "https://www.lra.gov.lr/forms-and-schedules/",
+    "file": "forms.html",
+    "sha256": "150bed16a8973c5d8b25cc7e90e310a5ee1c5cb64dafea2fa51e4b05121311d6",
+    "read_on": "2026-11-01",
+    "scope": "LRA Forms and Schedules, named return/schedule links read; not a completed portal filing"
+  }
+]
