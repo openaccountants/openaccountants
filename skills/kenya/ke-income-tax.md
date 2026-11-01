@@ -1,11 +1,11 @@
 ---
 name: ke-income-tax
 description: Use this skill whenever asked about Kenyan income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay", "KRA", "iTax", "income tax return", "personal relief", "insurance relief", "turnover tax", "presumptive tax", "self-employed tax Kenya", or any question about filing or computing income tax for a self-employed or sole proprietor client in Kenya. ALWAYS read this skill before touching any Kenyan income tax work.
-version: 2.1
+version: 2.2
 jurisdiction: KE
 tax_year: 2025
-tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The SHIF treatment was updated on 2026-10-31.
-last_updated: 2026-10-31
+tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The SHIF treatment was updated on 2026-10-31. Finance Act, 2026 changes are listed in their own section and are not yet worked into the rates or examples.
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | iTax (itax.kra.go.ke) |
 | Currency | KES only |
 | Return form | Self-assessment return |
-| Filing deadline | 30 June of the following year |
+| Filing deadline | 30 June of the following year. Finance Act, 2026 s.18 moves individuals to the last day of the fourth month after the year of income, in force 1 January 2027: see "Finance Act, 2026" |
 | Instalment tax | Quarterly (20th of 4th, 6th, 9th, 12th months) |
 | Personal relief | KES 28,800/year (credit against tax) |
 | Insurance relief | 15% of qualifying premiums, cap KES 60,000/year |
@@ -405,6 +405,32 @@ Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
 - NEVER give insurance relief on SHIF contributions
 - NEVER present calculations as definitive
 
+## Finance Act, 2026
+
+Published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
+
+| Section | Change | In force |
+|---|---|---|
+| s.2 | "Management or professional fee" includes interchange and merchant service fees on card payments. "Royalty" is redefined to include software, proprietary or off-the-shelf, whether licence, development, training, maintenance or support fees | 1 July 2026 |
+| s.3 | Gratuity contribution added to s.5(4): contract of at least three years, amount not above 31% of emoluments for the contract period | 1 July 2026 |
+| s.4 | New s.6B: non-resident rental income tax, a final tax. Return and payment by the 20th of the month after the month rent is paid, unless a resident receiving the rent deducts under s.35(1)(c). See `non-resident-rental-income-tax-on-kenyan-property` | 1 July 2026 |
+| s.5 | Income Tax Act s.8(5A) deleted | 1 July 2026 |
+| s.7, s.16, s.21 | Scrap metal and winnings added to s.10 and s.35. Withholding: 1.5% of the gross amount on scrap metal, 20% on winnings | 1 July 2026 |
+| s.8 | Trust income is deemed income of the trustee, executor or administrator. A beneficiary is not liable on income on which that person paid tax | 1 July 2026 |
+| s.9 | s.12(1)(a) replaced: covers a person with no income chargeable for the year other than emoluments | 1 July 2026 |
+| s.10 | Bad debts of money lenders, banks and licensed financial institutions include principal, interest and related amounts. Deficit carry-forward proviso for investors of at least KES 10 billion before 1 July 2025 | 1 July 2026 |
+| s.15 | Income Tax Act s.23 repealed | 1 July 2026 |
+| s.17 | s.52(1): notice to furnish a return now runs to the last day of the fourth month after the year of income | 1 January 2027 |
+| s.18 | s.52B(1): individuals file with self-assessment by the last day of the fourth month after the year of income; others by the last day of the sixth month after the accounting period | 1 January 2027 |
+| s.19 | First Schedule: benefits arising due to death added to paragraph 53 proviso; capital gains on transfer of property to a registered real estate investment trust exempt (paragraph 76) | 1 July 2026 |
+| s.20 | Second Schedule: 100% first-year allowance on item (iv) where investment is over KES 10 billion; item (a)(viii) 10% is per year in equal instalments | 1 July 2026 |
+
+If a client's year of income ends on 31 December, the s.18 date is 30 April. The Act does not say in s.1 which year of income is the first one caught; check KRA guidance before quoting 30 April for the 2026 return.
+
+The rest of the Act (other Income Tax amendments, VAT, excise, Tax Procedures, fees and levies, housing levy, stamp duty, road maintenance) is held in `evidence/research/kenya-2026/finance-act-2026-extract.md`.
+
+> Finance Act, 2026 extract contributed by CPA Julian Njoroge Maina, 25241.
+
 ## Sources
 
 1. Income Tax Act, Chapter 470 (not re-read in this update; read date unverified)
@@ -414,6 +440,8 @@ Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
 5. Income Tax Act, s15(2)(ae) (section text not re-read in this update; read date unverified)
 6. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
 7. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
+8. Finance Act, 2026, Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026, text as held in evidence/research/kenya-2026/finance-act-2026-extract.md, read 2026-11-01
+9. EY Global Tax Alert 2026-1445, read 2026-11-01 (secondary, confirms assent and the 1 January 2027 filing date) -- https://taxnews.ey.com/news/2026-1445-kenya-enacts-finance-act-2026
 
 ### Disclaimer
 
