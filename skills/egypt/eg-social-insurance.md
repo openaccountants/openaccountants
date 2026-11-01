@@ -92,6 +92,7 @@ Law 148 obliges employers to insure the **actual wage**; the minimum exists to s
 | Blocking inspectors, false or missing data | EGP 30,000 to 100,000; doubled on repeat | art. 165 |
 | Evading sums owed through false or hidden data | EGP 20,000 to 50,000 | art. 166 |
 | Not filing names, wages, contributions | EGP 20,000 to 50,000; doubled on repeat | art. 167 |
+| Injury: not moving the injured worker to treatment (art. 50), or not telling police without good excuse (art. 61) | Prison up to one year and EGP 50,000 to 100,000, or either; up to three years if death or over 50% disability follows | art. 167 |
 | Not insuring a worker, or not on the true period or wage; charging workers insurance costs | EGP 20,000 to 100,000; doubled on repeat; court orders repayment | art. 168 |
 
 Fines are reviewed every ten years from commencement (art. 170).

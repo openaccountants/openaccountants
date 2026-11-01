@@ -38,7 +38,7 @@ Tax year: calendar 2026 (the annual settlement runs January to December whatever
 | Annual net income rounding | Down to the nearest EGP 10 | 2026 | Applied before the bands. Law 91 art. 8 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
 | Withholding by a non-original employer | 10% on account | 2026 | Treatment code 2; a payment on account, no longer final (art. 72 bis, Law 30/2023, from January 2024) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Economic zone treatment | 5% of the annual base | 2026 | Suez Canal zone companies set up before 24 June 2015 whose status still runs; codes 6 and 7 | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
-| Insurance, pension and health premiums cap | Lower of 15% of net income or EGP 10,000 a year, within the amount paid | 2026 | Law 54/1975 funds, health premiums, life cover for self, spouse, minor children, pension premiums. Excess is taxed. Art. 13(3) and (4) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
+| Insurance, pension and health premiums cap | Lower of 15% of net income or EGP 10,000 a year, within the amount paid | 2026 | Law 54/1975 funds, health premiums, life cover for self, spouse, minor children, pension premiums. Excess is taxed. Art. 13(3) and (4), last para. as replaced by Law 53/2014 | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf |
 | Law 155/2024 insurance fund contributions | Fully exempt | 2026 | Funds set up or regularised under Law 155/2024, art. 75 last paragraph, from regularisation | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Employee profit share | Exempt up to 100% of annual wages | 2026 | After general assembly approval. Excess goes in other earnings. Art. 13(6) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Martyrs fund contribution | EGP 5 per EGP 10,000 | 2026 | Basic pay runs only; all workers except Egyptian daily workers | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
@@ -243,6 +243,7 @@ expected:
 | ETA annual settlement guide for 2025, overview, steps and first field tables (pages 1 to 11) | https://eta.gov.eg/sites/default/files/2026-01/uptcp_annual_payroll_claculation_form_guide_v_2.2_1.pdf | 2026-11-01 |
 | ETA monthly form guide, overview and steps to page 9 | https://eta.gov.eg/sites/default/files/2026-01/uptcp_submitting_payroll_claculation_form_guide_v_1.7_highlights.pdf | 2026-11-01 |
 | ETA 2026 private sector monthly form, all column headers | https://eta.gov.eg/sites/default/files/2026-03/nmwdhj_alqta_alkhas_2026.xlsx | 2026-11-01 |
+| Law 53/2014, art. 1, art. 13 last para. (OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-01 |
 | Law 151/2026, art. 2 page read | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
 | NOSI notice on 2026 band, 30 Nov 2025, whole page | https://www.nosi.gov.eg/ar/news/Pages/2025-11-30.aspx | 2026-11-01 |
 | National Wages Council, Ministry of Planning, 2025, headline decision | https://mped.gov.eg/singlenews?id=6009 | 2026-11-01 |
