@@ -1,0 +1,3 @@
+# Gibraltar company returns — 22 October 2026
+
+Corporate Guide v0.11. Read sections29–30 in full; current official corporate page checked. Added registration OR assessableincome obligation, branchincome scope, noformissued doesnotremove obligation, signedaccounts requirement for belowthreshold independentreport route. Existing paragraph narrowed to ordinaryperiod to avoid hiding29(4)extendedperiod return rule. Extendedend30June2026=>31March2027return; didnot infer paymentextension from filing provision. No all-accounts signature generalisation from30(1)(ca) and no unverified electronicfiling route. Independent review pending. Section31/31A read but not added without assessmentexceptions review.

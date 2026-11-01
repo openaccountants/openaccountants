@@ -1,10 +1,10 @@
 ---
 name: moldova-tax-optimization
-description: Use this skill whenever asked about reducing tax in Moldova, tax planning, or legal strategies to minimise tax for a self-employed person, IT business, or small company in Moldova, tax year 2026. Trigger on phrases like "reduce tax Moldova", "Moldova IT Park", "7% tax IT", "small business 4% Moldova", "turnover tax Moldova", "sole proprietor vs SRL", "Moldova dividends 6%", "independent entrepreneur Moldova", "defer corporate tax until dividends Moldova", "save tax Moldova", "tax planning Moldova". This skill covers the IT park 7%-of-revenue single tax, the 4% small-company regime, the independent entrepreneur 15% single tax, the standard 12% system, dividend extraction at 6%, the option to pay 2023 to 2026 corporate tax only when dividends are paid, and the eligibility and anti-avoidance red lines. ALWAYS read this skill before advising on any Moldovan tax optimisation. Computations sit in md-corporate-income-tax, moldova-income-tax, moldova-social-contributions and moldova-payroll.
-version: 0.2
+description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited draft corrects unsupported savings and blanket prohibitions and states remaining form, procedure and case-specific gaps. A bounded source-review record is linked under Sources; accountant attestation remains pending."
+version: "0.8"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
@@ -12,106 +12,240 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova Tax Optimization
+# Moldova tax planning and regime comparison, 2026 v0.8
 
-## Moldova Tax Optimization Skill v0.2
+## Who this applies to
 
-**Tier 2. Sources: the Fiscal Code of the Republic of Moldova (Codul fiscal nr. 1163/1997, consolidated to Law LP235 of 2 October 2026), read on 30 October 2026 and listed in Sources below. Figures must agree with `md-corporate-income-tax.md`, `moldova-income-tax.md` and `moldova-social-contributions.md`; those skills win if they differ. No Moldovan tax adviser has signed this off. Aggressive positions are never advised; every suggestion must be reviewed.**
+Use this Guide to compare an ordinary Moldovan business, the eligible non-VAT small-business regime and an actual IT-park resident, and to evaluate company distributions and genuine independent work. Establish legal eligibility before comparing amounts. An SRL, an individual entrepreneur and the new registered independent service entrepreneur are different legal/tax populations; an invoice or a software-related description does not select a regime. This is a source-cited draft, with stated implementation gaps and a bounded source-review record linked under Sources. [Code arts. 13–15, 24(11^1), 54^1–54^4, 88, 368][code]; [Law 77/2016 arts. 2, 7–8][park].
 
-## Section 1 -- Quick Reference
+Read the connected [corporate](md-corporate-income-tax.md), [individual](moldova-income-tax.md), [payroll](moldova-payroll.md), [social/medical](moldova-social-contributions.md), [VAT](moldova-vat.md), [formation](md-company-formation.md) and [cross-border](md-cross-border.md) methods for the actual taxpayer. Do not present a savings range or a universal best entity as a verified result: no fetched primary source establishes those savings for an identified population.
 
-**Quick Reference**
+## Rates, bands and thresholds
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Moldova |
-| Currency | MDL (leu) |
-| Headline levers | **IT park 7% of sales revenue**; 4% small-company regime; independent entrepreneur 15% single tax; 6% on dividends; corporate tax on 2023 to 2026 profits deferred until dividends are paid |
-| Standard income tax, individuals and companies | **12%** (Fiscal Code art. 15(a), (b)) |
-| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |
-| VAT registration threshold | over **MDL 1.7 million** in any 12 consecutive months from 1 March 2026; MDL 1.5 million before that date (art. 112(1); Law LP12/2026) |
-| Anti-avoidance | IT park 70% eligible-revenue test; 4% regime closed to VAT payers, consultancy firms and owners of more than three small companies |
+| Item | Verified 2026 rule/input | Primary source |
+|---|---|---|
+| Ordinary company or individual-entrepreneur income tax | **12% of the applicable taxable-income base**; the legal person and individual have different deductions/procedures | [Code art. 15(a)–(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Eligible SME accounting-income regime | **4% of the article-54^2 base**, not profit and not a general option for every small freelancer | [Code arts. 54^1–54^3](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park monthly single tax | Greater of **7% of monthly accounting sales revenue** and the statutory monthly employee minimum | [Code arts. 369–371](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park employee minimum | **30% × 17,400 = 5,220 MDL** for each employee counted under article 369(2) for the month | [Code arts. 369(2), 370(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [enacted Government Decision 773/2025](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |
+| IT-park main-activity test | At least **70%** permitted-activity sales revenue, measured cumulatively each month from the statutory start; conditional relief for at most **two calendar months** | [Code art. 368(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [Law 77 art. 2](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro) |
+| Ordinary dividend to a resident individual | **6%** withholding; the specified undistributed **2008–2011** profits use **15%** | [Code art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro); [Government Decision 773](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |
 
-> **Moldova's headline is the IT park single tax:** 7% of monthly sales revenue, with a floor per employee, replaces income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax (Fiscal Code arts. 370, 372). For an IT business with a large payroll, this is usually the biggest lever.
+The independent-service and independent-retail regimes are different populations from an ordinary individual entrepreneur. For an **eligible registered service entrepreneur**, the single tax is **15% of its defined income base up to 1.2 million MDL**, and **35% only on the excess**. The statutory tax composition and annual medical allocation/top-up must be checked separately; “single tax” does not certify that no further amount can arise. For **eligible independent retail excluding excise goods**, the income-tax rate is **1%**, with the ordinary full-year **3,000 MDL minimum** and specific cessation/cash-register rules. Current article 69^13(3) limits that retail route to persons registered before **1 July 2026**; do not present it as an unrestricted new-entry option in October. The full amendment/commencement history remains a stated gap. Use the [individual](moldova-income-tax.md) and [social/medical](moldova-social-contributions.md) methods, actual registration and activity conditions before comparing either regime. [Code arts. 69^6–69^13, 69^20–69^26][code].
 
-## Section 2 -- IT Park (7% of sales revenue)
+The IT-park forecast-wage input comes from the enacted decision, not a draft or the prior year's 16,100 figure. This is not an independent review or a whole-Code audit. [January Code][jan]; [current Code][code].
 
-**IT Park (7% of sales revenue)**
+## The base
 
-| Feature | Detail |
-| --- | --- |
-| Tax | **7% of sales revenue** booked monthly, but at least **30% of the forecast average monthly wage per employee** each month, which is **MDL 5,220** per employee in 2026 (30% of the MDL 17,400 forecast wage, Government Decision 773/2025) (Fiscal Code arts. 369(1), (2), 370(1), (2)) |
-| What it replaces | Income tax on business profit; income tax on salaries; employer social contributions; employees' health insurance premiums; local taxes; property tax; road-use tax for Moldovan-registered vehicles (art. 372(1)) |
-| What it does not replace | Tax withheld under arts. 88(5), 89, 90, 90^1 and 91 (for example 6% on dividends and 12% on payments to non-residents), contributions on non-salary payments to individuals, VAT, excise and other road taxes (art. 372(2)) |
-| Who | Legal entities and individuals registered as entrepreneurs who meet the conditions of the IT parks law (Law 77/2016) (art. 368(1)) |
-| Eligibility test | **70% or more** of sales revenue from activities permitted under art. 8 of Law 77/2016, measured monthly on a cumulative basis; up to 2 months below 70% are allowed if the year as a whole reaches 70% (art. 368(2), (3)) |
-| Permitted activities | Listed by CAEM code in Law 77/2016 art. 8: custom software (62.01), computer games publishing (58.21), other software publishing (58.29), IT consultancy (62.02), computer facilities management (62.03), other IT services (62.09), data processing and hosting (63.11), web portals (63.12), plus narrowly limited computer training, research and development, electronic components, specialised design, film and video post-production and game audio work |
-| How long | Each park runs for a term set by Government decision, at most 20 years (Law 77/2016 art. 9(2)); a resident's contract runs at least 4 years and not past the park's term (art. 7(2)) |
-| Filing and payment | Monthly return and payment by the 25th of the following month (art. 373(1), (2)) |
-| Best for | Software and IT service firms with significant payroll, because the 7% also covers payroll taxes |
+### Establish IT-park status and the real eligible activity
 
-IT park residents cannot use the corporate tax deferral to the dividend date (art. 87(1^1)). Detail of the computation: [md-corporate-income-tax](md-corporate-income-tax.md).
+Law 77 defines a resident as a Moldovan-registered business person entered in the park's resident register and carrying out a permitted main activity under a contract with its administration. The registered person signs that contract, enters the register on signing and receives the prescribed status confirmation. Article 7 provides a contract of at least **four years**, within the park's lifetime, and contractual provisions including activities, reports and the mandatory membership contribution. A generic SRL or IT invoice is not evidence of park status. Obtain the actual registration/contract and applicable dates; the complete Government registration-form procedure and current membership-fee amount remain unverified here. [Law 77 arts. 2, 7][park].
 
-## Section 3 -- 4% Small-Company Regime
+Law 77 article 9(2) sets a **20-year maximum** for a park’s operation; the actual term is fixed by its Government creation decision. This maximum and the resident contract’s four-year minimum are different clocks. The Moldova park’s actual creation/extension decision and end date remain unverified here; do not turn the statutory ceiling into a guaranteed twenty-year individual tax holiday. [Law 77 art. 9][park].
 
-- **4% small-company regime**: a company not registered for VAT may pay 4% of the income in its financial accounts instead of 12% on profit (Fiscal Code arts. 54^1, 54^2, 54^3). No profit computation; good for low-expense businesses below the VAT threshold.
-- **Who is excluded**: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company with VAT-exempt supplies without deduction right above MDL 1.7 million uses the standard regime (art. 54^1(3^1)).
-- **Choosing it**: record the choice in the accounting policy by 25 April, or for a new company by the 25th of the month after the quarter of registration (art. 54^1(3)).
-- **When it ends**: from the date the company registers for VAT (art. 54^1(4)). Registration is compulsory once supplies pass MDL 1.7 million in any 12 consecutive months (art. 112(1), in force from 1 March 2026; MDL 1.5 million before that date, Law LP12/2026).
-- **Payments**: quarterly by the 25th of the month after the quarter; annual report by 25 March (art. 54^4(2), (3)). No quarterly instalments under art. 84 and no 12% advance on interim dividends (arts. 84(4), 80^1(4)).
+The current article-8 list is broader than software development but has precise restrictions. Match the real service, contract/deliverable and applicable classification; a broad CAEM heading alone does not prove every activity within it qualifies. [Law 77 art. 8(a)–(r)][park].
 
-## Section 4 -- Standard System & Extraction (SRL / ÎI)
+| Permitted main-activity category | Classification and limiting condition in article 8 |
+|---|---|
+| Custom software, game publishing, other software publishing | **62.01, 58.21, 58.29** respectively |
+| Computer-facility management, data processing/hosting, web portals, IT consultancy, other IT services | **62.03, 63.11, 63.12, 62.02, 62.09** respectively |
+| Other education | **85.59**, limited to computer training |
+| Natural-science/engineering R&D | **72.19**, using specialised high-performance computing and limited to the listed **72.19.11, .12, .13, .21, .29 and .50** services; retain the statute's biotechnology exclusions |
+| Biotechnology R&D | **72.11**, limited to the described bioinformatics and nanobiotechnology research/development |
+| Electronic components/modules | **26.11**, limited to microprocessors and integrated circuits |
+| Postproduction special effects/animation | **59.12**, specialised high-performance computing; limited to **59.12.14 and 59.12.15** |
+| Specialised design | **74.10**, using specialised high-performance computing |
+| Game-industry postproduction | **59.12**, exclusively for computer games and limited to digital colour correction/restoration **59.12.13** and sound editing/design **59.12.17** |
+| Game-industry audio/music | **59.20**, exclusively for computer games, limited to original sound recordings **59.20.13** |
+| Contact centres | **82.20**, technology/customer-channel based, exclusively for export, including the stated freight procurement/logistics customer relations |
+| Other workforce provision | **78.30**, computer/electronic/technical/software mediated, exclusively for export; limited to listed IT/telecom HR **78.30.11**, other administrative HR **78.30.12** and the described freight procurement/logistics/customer-relations personnel |
 
-**Standard System & Extraction (SRL / ÎI)**
+For each month, divide eligible article-8 service/work sales revenue by total product/goods/service/work sales revenue. Use year-to-date figures for a continuing resident, or figures from the start of the special regime for a new resident that year. Exactly **70%** passes the threshold. The at-most-two-month relief in article 368(3) requires the relevant full-year/special-period ratio also to reach 70%; do not assume a temporary shortfall is harmless before the full condition is established. [Code art. 368(2)–(3)][code].
 
-| Item | Rate |
-| --- | --- |
-| Corporate income tax (SRL) | **12%** of taxable income (art. 15(b)) |
-| Individual entrepreneur (ÎI) | **12%** of annual taxable income (art. 15(a)) |
-| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |
-| Dividends between Moldovan companies | not taxable (art. 20 lit. z19)) |
-| Independent entrepreneur (services only) | **15%** single tax on service income up to MDL 1,200,000 a year, **35%** above; includes income tax, social and health contributions and local taxes (arts. 69^20, 69^25) |
-| Independent retail activity (individual, no excise goods) | **1%** of income, at least MDL 3,000 (arts. 69^6, 69^11(1)) |
+**AUDIT FLASH POINT** The old blanket statement that all non-IT revenue is prohibited is not the statutory method. Article 368 tests the permitted main-activity share; article 369 taxes the actual monthly sales base. Keep genuine other sales in the denominator/base as required, test the cumulative condition and do not relabel ineligible work as eligible. A revenue mix that fails the actual status conditions engages article 378. [Code arts. 368–369, 378][code]; [Law 77 arts. 8, 18–19][park].
 
-- **Dividend vs salary extraction**: the owner can take profit as dividends at 6% instead of salary taxed at 12% plus contributions. Model salary against dividend with the contribution effect from [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md).
-- **Defer corporate tax until dividends are paid**: a company with at most 249 staff and turnover or total assets up to MDL 100 million may pay the 12% tax on 2023 to 2026 profits only when it distributes them, in proportion to the dividend paid over pre-tax profit (art. 87(1^1)). Profit kept in the company stays untaxed until then, and there are no quarterly instalments for those years (art. 84(6)). Not open to IT park residents, the 4% regime, individual entrepreneurs, farms, free zone residents, financial and insurance companies, and large trade companies. Worked example: [md-corporate-income-tax](md-corporate-income-tax.md).
-- **Interim dividends**: on the standard regime, paying dividends during the year triggers an advance of 12% of the current year's profit from which they are paid, due by the 25th of the following month (art. 80^1(1), (1^1)).
-- **Donations**: charitable and sponsorship donations to eligible recipients are deductible up to 5% of taxable income (art. 36(1), (2)).
-- **Losses**: tax losses are carried forward and spread over the next five years (art. 32(1)).
+### Calculate the single tax and the charges it does not replace
 
-## Section 5 -- Red Lines (do not cross)
+Determine monthly sales revenue under SNC/IFRS, including the actual accounting treatment, rather than using profit, all bank credits or a cumulative annual tax base. Returns/discounts reduce the base in the period of the return/discount, including those relating to prior-period sales. Count employees who worked, took paid leave or were in another situation that would generate insured income under the standard regime for at least **one day** under an employment contract during the month. Use that established statutory count; do not invent an FTE or salary-percentage reduction of the monthly minimum. Calculate `max(monthly_sales_base × 7%, counted_employees × 5,220)` for the ordinary 2026 case. [Code arts. 369–371][code]; [Government Decision 773][wage].
 
-- **IT park 70% test**: at least 70% of sales revenue must come from activities permitted under Law 77/2016; non-IT income placed in an IT park entity is a misuse (art. 368(2), (3)). AUDIT FLASH POINT.
-- **4% regime conditions**: not for VAT-registered companies, consultancy companies above the 60% test, or a shareholder with more than 25% in more than three small companies, who must move the extra companies to the standard regime (art. 54^1(1), (3^2), (4)).
-- **Independent entrepreneur scope**: the 15% regime covers service activities only (art. 69^20).
-- **Under-declaration**: understating tax in a return costs 20% to 30% of the amount, and evasion 80% to 100% (art. 261(4), (5)). Understating income while using the dividend-date deferral costs MDL 1,000 to 10,000 (art. 260(6)).
-- **Non-eligible income routing**: do not route non-eligible income through the 4% or 7% regimes.
+Article 372(1) includes business income tax, salary income tax, employer compulsory social contributions, employee compulsory medical premiums, local taxes, immovable-property tax and the stated domestic-registered-vehicle road-use tax. The tax does **not** absorb VAT, excise, the other stated road charges, dividend/non-salary withholding, covered contributions on non-salary payments or other obligations not expressly included. Ordinary civil-service payments and owner dividends are not converted into covered salary merely because the payer is a park resident. Keep the actual administration contribution, verification/audit costs and other separate obligations in any comparison. [Code arts. 367(4), 372][code]; [Law 77 arts. 7(3), 15(1)–(1^1), 18][park].
 
-## PROHIBITIONS
+Under article 376, accounting fixed-asset records continue although the special tax-depreciation calculation is not required during the regime; non-sales income has its stated single-tax treatment, special-regime losses are not later carried into the ordinary article-32 loss computation, and the registered individual park-business income has the stated personal-return exclusion. Do not extend those rules to every personal receipt. Covered park salary is finally taxed, without chapter-4 salary exemptions/deductions for that period or transferring the unused relief to a spouse. Employees must receive the written explanation required by Law 77 article 16(3). [Code arts. 376–377][code]; [Law 77 art. 16][park].
 
-- **Non-IT revenue in IT Park**: NEVER place non-IT revenue in the IT park 7% regime to dodge tax (70% eligibility test).
-- **4% regime for VAT-registered business**: NEVER present the 4% regime for a VAT-registered business; it is for companies not registered for VAT.
-- **Single-client work as safe self-employment**: NEVER present single-client work as safe self-employment.
-- **Deferral as a permanent saving**: NEVER present the art. 87(1^1) deferral as a tax saving; the tax is paid when profits are distributed.
-- **Contradicting rate skills**: NEVER contradict the rates in `md-corporate-income-tax.md`, `moldova-income-tax.md` or `moldova-social-contributions.md`.
-- **Unconfirmed figures as confirmed**: NEVER present items on the "Not yet confirmed" line as confirmed, nor optimisation as definitive advice; route to a licensed Moldovan tax adviser.
+### Compare the 4% SME and ordinary systems using their real bases
 
-## Disclaimer
+Apply the [corporate Guide's SME eligibility/election method](md-corporate-income-tax.md) before comparing. Article 54^1 excludes VAT-registered taxpayers, peasant farms, individual entrepreneurs and the specified consultancy-heavy businesses whose prior-year CAEM **70.22** service share is above **60%** of sales. The election/mandatory-general supply tests use **1.5 million MDL through 26 March 2026** and **1.7 million from 27 March**, together with the actual prior-31-December supply categories and the **over-50%** exempt-without-credit condition in the relevant election route. These are not a universal SME turnover ceiling. No-prior-income/new-entity routes, the **over-25% in more than three SMEs** ownership rule and VAT entry/exit dates have their own conditions. Preserve the accounting-policy choice and actual regime period. [Code arts. 54^1–54^1/1][code]; [January Code][jan]; [Law 41/2026 arts. I, X][march].
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Moldova) before acting upon.
+The 4% base is the defined financial-accounting income, reduced for current returns/discounts and excluding article-20 income and exchange/sum differences. Ordinary operating expenses do not reduce this SME base. Ordinary 12% tax instead uses the legally reconciled taxable-income base, deductions, losses and credits. The arithmetic break-even `4% × SME_base = 12% × ordinary_taxable_base` is a comparison under established assumptions, not a legal right to choose either regime or a total-cost conclusion. Payroll, VAT, fees, payment timing, distributable profit and owner tax can change the result. [Code arts. 12, 14–15, 24, 32, 54^1–54^4][code].
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+### Distinguish salary, dividends and genuine independent work
+
+An SRL dividend is a distribution of legally available net profit, not a substitute label for every payment to a working owner. Establish the members' decision, distributable profits/losses/reserves, paid contributions, creditor restrictions and solvency. Interim dividends require the prescribed interim financial statements and sufficient funds. The default payment period is **30 days after the decision**, unless the permitted different term applies. Keep company tax, any article-80^1 current-profit advance or article-87 deferred company tax, and recipient withholding separate. The ordinary resident-individual **6%** is applied to the dividend after company tax under the assumed ordinary case; historic profits and other recipient populations need their actual rule. [Law 135 arts. 39–40][srl]; [Code arts. 12(3), 15, 20(z^19), 80^1, 87, 90^1–92][code].
+
+Salary requires the actual employment/remuneration, cumulative PIT, medical and employer-category social methods in the [payroll Guide](moldova-payroll.md). For the new independent-service entrepreneur, Code 88(8) specifically tests the counterparty conditions in article 24(11^1); it is not a general one-client test for every individual entrepreneur. Non-business individual service income and administrator mandates have article 88(5)–(6)'s rules. Labour Code article 2(3) applies labour legislation where a court finds that a civil contract actually regulates employment; article 45 identifies work for and under an employer's authority and the associated obligations. Record the actual work/control/contract facts. The old automatic single-client warning is not a certified numerical classification rule or a promise that single-client work is safe. [Code arts. 24(11^1), 88][code]; [Labour Code arts. 2(3), 45, operative 28 October 2026][labour].
+
+## Deadlines and filing
+
+| Obligation | Verified rule | Primary source |
+|---|---|---|
+| IT-park single tax | Compute/report and pay monthly by the **25th of the following month**; approved electronic form and actual headquarters treasury allocation | [Code art. 373(1)–(2), (4)][code] |
+| IT-park related-party single-tax adjustment report | By the **25th of the sixth month** after the relevant article-12^1 fiscal period | [Code art. 373(1^1)][code] |
+| Park salary information to SFS | Annually by **25 January** following the payment year | [Code art. 374(1)(a)][code] |
+| Park salary information to employee | By **1 March** following the covered payment year; retain the stated months/amounts | [Code art. 374(1)(b)][code] |
+| Other park reporting | Separate payroll/non-salary and excluded-tax reports remain required under their actual rules | [Code art. 374(1)(c), (2)][code] |
+| Annual park eligibility verification | Required if the special regime was used for at least **one month**; performed by an audit entity under the prescribed indicator verification | [Law 77 art. 18][park] |
+| SME regime | Quarterly payments by the following month's **25th**; annual return by **25 March** | [Code art. 54^4(2)–(3)][code] |
+| Ordinary company tax and dividend withholding | Use the [corporate Guide](md-corporate-income-tax.md) and actual distribution/recipient dates; they are separate liabilities | [Code arts. 80^1, 83–87, 90^1–92][code] |
+
+IT-park entry/exit changes the tax regime from the **month after** status acquisition/withdrawal. For salary accrued under one regime and paid under the other, retain the mechanism applicable at accrual when calculating/paying income tax and medical premiums at payment. Do not tax the same covered special-regime salary twice or assume ordinary-regime accrual becomes exempt solely because payment was later. [Code art. 375][code].
+
+### Complete the actual monthly IU17 return
+
+The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. The May 2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](../../evidence/ledgers/md-country-evidence/itpark-current-attachments.json).
+
+Use the registered name/fiscal code, CAEM-2 activity, actual park registration code, four-character head-office CUATM, SFS office and submission date. The monthly period format is **L/NN/YYYY**, with month 1–12. This monthly period code does not replace the separate annual IUPT code or the annual salary-information year. Establish resident status and the applicable entry/exit month before selecting the return. [Order 135 annex 2 part I points 1–8][parkorder]; [actual IU17 header][iu17actual]; [Code arts. 368, 375][code].
+
+| IU17 field | Working-paper method |
+|---|---|
+| 010 column 3 | Current-month accounting sales from account 611 under SNC/IFRS, with the applicable statutory returns/discounts treatment. Do not substitute profit, all cash receipts or cumulative sales. |
+| 010 columns 5–6 | Printed **7%** rate; calculated turnover tax in 6 = column 3 × column 5. Column 4 is marked unused for this row. |
+| 020 columns 3–6 | Actual qualifying employee count in 3, reporting-year forecast average wage in 4 and printed **30%** in 5; minimum tax in 6 =3 × 4 × 5. One qualifying insured/work/paid-leave day counts under the statutory test; do not invent an FTE reduction. |
+| 030 column 6 and control sum | Larger of 010 column 6 and 020 column 6. The form's control sum is that same 030 column 6 amount. |
+
+Sources: [actual IU17 form][iu17actual]; [current annex 2 part I points 9–12][parkorder]; [Code arts.369–371][code]. For a **2026** period, the established forecast-wage input is **17,400**, giving **5,220** per counted employee. Instruction 10's phrase referring to the wage in force when completing a return does not authorise substituting a later year's wage into an earlier reporting-year correction: Code 370(2) and the form's own header identify the reporting year. A late/corrected-period implementation must retain that year's legal input. [Code 370(2)][code]; [HG773/2025][wage]; [actual IU17 column 4][iu17actual].
+
+For an assumed ordinary eligible month with sales **200,000** and three counted employees, 010 gives **14,000**,020 gives **15,660**, and 030/control sum is **15,660**. If another month has no sales but the same three counted employees, its minimum remains **15,660**; do not suppress it because turnover is zero. This arithmetic assumes status and the statutory employee population are established; it does not settle an actual eligibility breach or validate a zero-sales eligibility denominator. [Code 369–371][code]; [actual IU17][iu17actual]; [annex 2 I 9–11][parkorder].
+
+**Eligibility annex: monthly and cumulative columns are different from the monthly tax base.** Row 1 contains total sales tied to main 010 column 3; row 2 contains sales of the actual Law 77 article 8 permitted services/works; row 3 is **row 2 ÷ row 1 × 100**. Column 3 is the reported month; column 4 is year-to-date for an existing resident, or from application of the special regime for a new resident in that year. Reconcile both columns independently. For example, monthly eligible sales 140,000 of total 200,000 give **70%**, while cumulative eligible 650,000 of total 1,000,000 give **65%**. A passing monthly percentage does not establish the cumulative condition; apply the Code 368 full-period and conditional two-month rules above. Do not invent a 0/0 percentage or assume it establishes eligibility. [Actual IU17 annex][iu17actual]; [Order 135 annex 2 part II points 1–4, including 1^1][parkorder]; [Code 368][code].
+
+**Keep the 2025/2026 changeover separate.** Order 106, published **28 October 2025**, removes monthly IU17 rows **011/012** and their old instruction points **9^1/9^2** from **1 January 2026**; its new general related-party return and instructions also take effect on that date. The separate **IUPT24** annexes are the **2024** route; the general annex 7 form is actually labelled **IUPT25** and contains an explicit 2025 bridge for adjustments previously reported monthly. Do not restore the removed monthly rows or count the same TP adjustment twice. The [TP Guide's actual IUPT field method](md-transfer-pricing.md) supplies the annual reconciliation and its specific unresolved floor/refund cases. The [payroll Guide's actual ISAPTI17 and employee-information method](moldova-payroll.md) supplies the separate annual salary outputs; those are not the IPC21 insured-income base or another 7% payroll charge. [Enacted Order 106 points 1–8][park106]; [actual IUPT25][iupt25actual] and [2024-specific form][iupt24actual]; [Code 373–375][code].
+
+Keep head-only or the authorised two-signature route, electronic submission receipt, actual payment/treasury reconciliation and corrections for the relevant regime/year. Actual attachments do not establish portal acceptance, park registration/contract, verification compliance, membership fees or a refund right. [Order 135 annex 2 I12][parkorder]; [Code 373–374][code]; [Law 77 arts.7,18][park].
+
+## Penalties and interest
+
+If the actual status conditions are breached, article 378 recalculates the resident's covered tax/social/medical obligations under the standard regime from the breach month, at the resident's expense, without recalculating the employees' obligations. Article 378(3) expressly disapplies article 228 in that breach case. For late **single-tax payment**, article 378(4) instead selects the annual social-budget late-charge rate; Law 320/2025 article 4 supplies **0.1% of debt per delayed day for 2026**. Do not substitute the ordinary 0.0301% article-228 tax rate for that specific park rule. Fines are separate from single tax and use the prescribed classification. [Code art. 378][code]; [Law 320/2025 art. 4][socialbudget].
+
+Annual verification and Law 77 article 19's withdrawal grounds, notice/cure and court-challenge routes also matter. Do not convert the conditional two-month revenue test into permission to ignore false reporting, unpaid liabilities or other residency conditions. Ordinary SME, payroll, withholding and company-tax penalties retain their own provisions and case-specific exceptions. [Law 77 arts. 18–19][park]; [Code arts. 368, 378][code].
+
+## Cross-border points
+
+Law 77 article 7(4) permits the stated remote work in Moldova and/or abroad; it does not establish exemption from another country's payroll, permanent-establishment or residence rules. Test actual foreign work/management, customer/source facts, associated-party pricing, dividend recipient and treaty evidence through the [cross-border](md-cross-border.md) and [transfer-pricing](md-transfer-pricing.md) Guides. Export-only conditions in article 8(q)–(r) must be established for those activities; a foreign invoice alone does not prove every required fact. [Law 77 arts. 7–8][park]; [Code arts. 71–79^3, 91, 373(1^1)][code].
+
+## Two worked examples that recompute
+
+### 1. IT-park eligibility and the 2026 employee minimum
+
+Assume current park status, qualifying activities, established cumulative eligible sales of 490,000 MDL and total sales of 700,000, with all other residency conditions met. The ratio is exactly 70%. For the current month, accounting sales are 100,000 and two employees each satisfy article 369(2)'s counted-employee rule. Seven percent gives 7,000; the employee minimum is 2 × 17,400 × 30% = 10,440, so the monthly single tax is **10,440 MDL**. Fees, excluded taxes, employee insured salary basis and any earlier balances are separate. [Code arts. 368–372][code]; [Government Decision 773][wage].
+
+```oa-check
+name: Moldova 2026 IT park cumulative eligibility and binding monthly floor
+inputs:
+  cumulative_eligible_sales: 490000
+  cumulative_total_sales: 700000
+  monthly_sales_base: 100000
+  counted_employees: 2
+  forecast_wage: 17400
+  minimum_fraction: 0.30
+  single_tax_rate: 0.07
+steps:
+  eligible_share: cumulative_eligible_sales / cumulative_total_sales
+  minimum_per_employee: forecast_wage * minimum_fraction
+  employee_minimum: counted_employees * minimum_per_employee
+  revenue_tax: monthly_sales_base * single_tax_rate
+  single_tax: max(revenue_tax, employee_minimum)
+expected:
+  eligible_share: 0.70
+  minimum_per_employee: 5220
+  employee_minimum: 10440
+  revenue_tax: 7000
+  single_tax: 10440
+```
+
+### 2. Ordinary profit/dividend tax versus an assumed eligible SME alternative
+
+Assume the two legal alternatives have actually been established for the relevant period. Accounting income/SME base is 1,000,000 MDL and ordinary taxable income and pre-company-tax accounting profit are both 100,000. There are no returns, exempt/FX items, loss/credit adjustments, deferral or interim-tax complications. After paying company tax, all available profit can lawfully be distributed to a resident individual from non-historic profits, with no reserve/solvency restriction. In the ordinary case, company tax is 12,000; the 88,000 dividend has 5,280 withholding, leaving **82,720**. In the SME case, company tax is 40,000; the 60,000 dividend has 3,600 withholding, leaving **56,400**. These are assumed base/distribution comparisons, not proof that either regime or full distribution is available, a salary substitute, or a total saving including other taxes/fees. [Code arts. 15, 54^1–54^4, 90^1(3^1)][code]; [Law 135 arts. 39–40][srl].
+
+```oa-check
+name: Moldova 2026 ordinary versus eligible SME tax and lawful dividend extraction
+inputs:
+  sme_accounting_base: 1000000
+  ordinary_taxable_income: 100000
+  accounting_profit_before_company_tax: 100000
+  ordinary_rate: 0.12
+  sme_rate: 0.04
+  dividend_rate: 0.06
+steps:
+  ordinary_company_tax: ordinary_taxable_income * ordinary_rate
+  ordinary_gross_dividend: accounting_profit_before_company_tax - ordinary_company_tax
+  ordinary_dividend_tax: ordinary_gross_dividend * dividend_rate
+  ordinary_owner_net: ordinary_gross_dividend - ordinary_dividend_tax
+  ordinary_combined_tax: ordinary_company_tax + ordinary_dividend_tax
+  sme_company_tax: sme_accounting_base * sme_rate
+  sme_gross_dividend: accounting_profit_before_company_tax - sme_company_tax
+  sme_dividend_tax: sme_gross_dividend * dividend_rate
+  sme_owner_net: sme_gross_dividend - sme_dividend_tax
+expected:
+  ordinary_company_tax: 12000
+  ordinary_dividend_tax: 5280
+  ordinary_owner_net: 82720
+  ordinary_combined_tax: 17280
+  sme_company_tax: 40000
+  sme_dividend_tax: 3600
+  sme_owner_net: 56400
+```
+
+## Ask the client first
+
+Obtain these six groups of facts:
+
+- legal form/registrations and regime dates; actual products/services and CAEM/CSPM restrictions.
+- park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence; membership/verification costs.
+- VAT status and prior-year supply mix; consultancy/ownership/SME tests and election policy.
+- actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash; owners' residence/type and profit-origin years.
+- paid work, mandates and independent-service counterparty/control facts; foreign work/management and associated transactions.
+- accepted filings and outstanding debt.
+
+Model the legally available choices using those numbers before presenting a saving.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 15, 20 lit. z19), 32, 36, 54^1 to 54^4, 69^6, 69^11, 69^20, 69^25, 80^1, 84, 87, 90^1, 112, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
-| Legea nr. 77/2016 cu privire la parcurile pentru tehnologia informației (to LP125/2024): arts. 7(2), 8, 9(2) | https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro | 2026-10-30 |
-| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |
-| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
-Not yet confirmed: the end date of the Moldova IT Park's own term (set by Government decision, not read); the date from which the MDL 1.7 million figure in art. 54^1(3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million); the old "savings of 20% to 50% of the total tax burden" claim for IT park residents (no official source); whether single-client work by an ÎI or independent entrepreneur is reclassified as employment (no Fiscal Code rule found); 2026 salary contribution rates for the salary-vs-dividend comparison (see the sibling skills).
+Read 30 October 2026. The bounded source-review record is linked under Sources; accountant attestation remains pending.
+
+| Primary source | Scope actually read | Read date |
+|---|---|---|
+| [Current Fiscal Code][code] and [January Code][jan] | Full selected articles 367–379 in both versions; existing selected SME, company/individual, withholding and worker provisions retained in connected ledgers; no whole-Code verification | 2026-10-30 |
+| [Law 77/2016, current operative consolidation][park] | Definitions/status/contract, complete article-8 activity list, incentives, employee social/medical rules, annual verification and withdrawal articles | 2026-10-30 |
+| [Enacted Government Decision 773/2025][wage] | Actual 17,400 forecast-wage input for 2026; no proposal used | 2026-10-30 |
+| [Law 135/2007 current arts. 39–40][srl] | SRL net-profit distribution, interim statements, decision/payment/creditor and solvency conditions | 2026-10-30 |
+| [Labour Code, operative 28 October 2026][labour] | Articles 2/45 civil-contract/employment test; future December and later versions not used | 2026-10-30 |
+| [Law 41/2026][march] | SME threshold change and selected connected commencement provisions already retained in corporate evidence | 2026-10-30 |
+| [Order 59/2026 point 2][iuamend] | Directly read monthly IU17 accounting-sales amendment, not all form attachments | 2026-10-30 |
+| [Social budget Law 320/2025 art. 4][socialbudget] | 2026 daily 0.1% input selected by Code article 378(4) for late single-tax payment | 2026-10-30 |
+
+| [Current Order 135/2017, inline IU17 instructions][parkorder] and [enacted Order 106/2025][park106] | Full current inline instructions and actual amendment read: monthly period/base/count, separate cumulative eligibility, removal of monthly TP rows and January 2026 commencement. Nine linked original DOCX files/all 14 rendered pages read; actual IUPT and salary methods are in the TP/payroll companions. Source/portal ambiguities remain explicit | 2026-10-31 |
+
+**Not yet confirmed:** full Government park registration/contract/application and indicator-verification instructions, actual current membership fee; authenticated IU17/ISAPTI/employee-information and IUPT correction/validation, salary-month cross-regime reconciliation, IUPT minimum/partial-year/equality/refund-floor implementation beyond the actual fields now mapped in the companion Guides; every taxpayer-specific revenue/accounting classification, withdrawal/re-entry/penalty/credit allocation and historical transition; full implementation of the corporate deferral option and the named SME/ordinary return implementation gaps; all independent-worker case law, sector authorisations, foreign payroll/social/treaty consequences and other incentive schemes. The old 20–50% saving, universal non-IT prohibition, automatic single-client reclassification and blanket “6% instead of salary” proposition are not certified. Their topics are retained in the sourced comparison/conditional methods or these gaps. Complete topic mapping is not comprehensive country coverage or independent review.
+
+[code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
+[jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
+[park]: https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro
+[wage]: https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro
+[srl]: https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro
+[labour]: https://www.legis.md/cautare/getResults?doc_id=155518&lang=ro
+[march]: https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro
+[iuamend]: https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro
+[socialbudget]: https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro
+
+[parkorder]: https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro
+[park106]: https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro
+[iu17actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_1_135md.docx
+[iupt25actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an7_135md.docx
+[iupt24actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an9_135md.docx
 
 <!-- openaccountants-cta-block -->
 
@@ -119,7 +253,7 @@ Not yet confirmed: the end date of the Moldova IT Park's own term (set by Govern
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

@@ -1,0 +1,32 @@
+{
+  "schema": {
+    "errors": [],
+    "warnings": []
+  },
+  "preservation": {
+    "fo-payroll-contributions": {
+      "exact_inverse": true,
+      "main_oa_blocks": 2,
+      "oa_byte_exact": true,
+      "all_original_H2_order": true,
+      "original_URL_occurrence_subsequence": true,
+      "CTA_byte_exact": true,
+      "original_words": 3923,
+      "current_words": 5008,
+      "sha256": "966f2af989d24fb363086d49b5c5040751b0673190db597ddbcb0f00d5091383",
+      "bytes": 39644
+    },
+    "fo-company-registration-reporting": {
+      "exact_inverse": true,
+      "main_oa_blocks": 0,
+      "oa_byte_exact": true,
+      "all_original_H2_order": true,
+      "original_URL_occurrence_subsequence": true,
+      "CTA_byte_exact": true,
+      "original_words": 2644,
+      "current_words": 2870,
+      "sha256": "b6812fa88d586c353c8ca7fdfaed60591519226949223f0b12db55630009c72e",
+      "bytes": 21704
+    }
+  }
+}

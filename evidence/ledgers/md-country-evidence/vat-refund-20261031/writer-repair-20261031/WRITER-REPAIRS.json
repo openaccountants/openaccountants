@@ -1,0 +1,36 @@
+{
+  "writer_status": "FOUR FINDINGS REPAIRED; ADDITIONAL SIX-QUESTION STANDARD REPAIR; INDEPENDENT CLOSURE PENDING",
+  "baseline_commit": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "findings": {
+    "MD-DR-01": "Audit-initiation payment cutoff now local to ordinary cap row and base method",
+    "MD-DR-02": "Registered VAT payer condition now local to e-Factura row and base method",
+    "MD-DR-03": "Appended MD-VATR-185 with exact current Code101⁴ repeal quote, officialURL/date/context; existing184rows unchanged",
+    "MD-DR-04": "Exact standard General reference notice after H1, only This skill→This Guide terminology substitution"
+  },
+  "additional_standard_fix": "Intake now6questions; old questions5and7 combined without dropping any fact. No numeric example changed.",
+  "preservation": {
+    "initial_review_files_byte_exact": 7,
+    "original_inputs_byte_exact": 5,
+    "previous_source_rows_unchanged": 184,
+    "companion_VAT_destination_units_unchanged": 242,
+    "other_Guides_byte_exact": 10,
+    "raw_primary_sources_unchanged": true
+  },
+  "new_repeal_row": {
+    "id": "MD-VATR-185",
+    "rule_or_figure": "Current Code article101⁴ is repealed; legacy HG93 PPP references do not revive it",
+    "Guide_section": "Who this applies to",
+    "act_article_or_official_section": "Fiscal Code1163/1997 article101⁴ (repealed)",
+    "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "exact_original_language_quote": "Articolul 1014. – abrogat.",
+    "read_date": "2026-10-31",
+    "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+    "source_context": "Articolul 1014. – abrogat.\n\n",
+    "source_text_sha256": "80a76d34a5c0c4105c3c62f7cec3b644bc0f61226f9c5733e5355e7eff83f903",
+    "independent_review": "PENDING NEW JOB DELTA REVIEW"
+  },
+  "notes": [
+    "No authorities contacted, push, merge or professional attestation. All seven domains and remaining tax-job list stay partial.",
+    "First baseline-copy attempt stopped on basename collision; partial duplicate copies preserved; canonical snapshot keeps full source directories."
+  ]
+}

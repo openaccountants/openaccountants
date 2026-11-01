@@ -1,0 +1,45 @@
+{
+  "LSR-1": {
+    "kind": "locator-only; no quotation or tax-rule change",
+    "old_locator": "Article 25(1) purpose test",
+    "new_locator": "Article 28(1) purpose test",
+    "row": "LEG-17",
+    "quote_sha256": "fca215802572fda8d6dc06706a8508ea68e7e1a6a9e566dce719d869e8d2aede",
+    "context_source": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+    "context_native_lines": [
+      1588,
+      1600
+    ],
+    "exact_context": "                                          ARTICLE 28\n\n\n                                     Entitlement to benefits\n\n\n       (1)     Notwithstanding the other provisions of this Agreement, a benefit under this\nAgreement shall not be granted in respect of an item of income or a capital gain if it is\nreasonable to conclude, having regard to all relevant facts and circumstances, that obtaining\nthat benefit was one of the principal purposes of any arrangement or transaction that resulted\ndirectly or indirectly in that benefit, unless it is established that granting that benefit in these\ncircumstances would be in accordance with the object and purpose of the relevant provisions\nof this Agreement.",
+    "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+    "original_read_date": "2026-10-31"
+  },
+  "LSR-2": {
+    "kind": "writer-process pointer correction, no new statutory amount or rule",
+    "guide": "skills/gibraltar/gi-property-stamp-duty.md",
+    "replacements": [
+      [
+        "version: \"0.5\"",
+        "version: \"0.6\""
+      ],
+      [
+        "# Gibraltar property conveyance and mortgage stamp duty\n",
+        "# Gibraltar property conveyance and mortgage stamp duty v0.6\n"
+      ],
+      [
+        "This Guide does not compute a separate penalty or interest amount for the stated job. Keep the domestic return/payment and dispute requirements in the linked taxpayer Guides separate from the allocation, formation or relief test. The unresolved procedural limits remain listed in Sources. This is a scope boundary, not a finding that no penalty applies.",
+        "See [Stamping, responsibility and late instruments](#stamping-responsibility-and-late-instruments) in Deadlines and filing for this Guide's section 16 penalty and interest method, and \u201cBase-penalty examples only\u201d in Two worked examples that recompute for its controls. Those examples exclude interest, further penalties, court fines and other charges; they are not total settlement amounts. The limitations on later interest notices, day counting and actual settlement remain explicit in that method and Sources."
+      ]
+    ],
+    "retained_method": "Stamping, responsibility and late instruments; section 16(1), (3)\u2013(4) with existing later-notice/day-count/settlement caveats",
+    "retained_control": "Late stamping base penalty before interest or further charges",
+    "source": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.txt",
+    "native_lines": [
+      496,
+      502
+    ],
+    "exact_source_excerpt": "16.(1) Save where other provision is made in this Act, any unstamped or insufficiently\nstamped instrument may be stamped after the execution thereof, on payment of the unpaid\nduty and a penalty of an amount equal to 10% of the duty payable or \u00a3100, whichever shall be\nthe greater, and also by way of further penalty, where the unpaid duty exceeds \u00a31,000, of\ninterest on such duty, at the rate of 5 per cent per annum or such other rate which may be\nprescribed by the Minister by notice in the Gazette, from the day upon which the instruments\nwas first executed up to the time when the amount of interest is equal to the unpaid duty.",
+    "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+    "original_read_date": "2026-10-31"
+  }
+}

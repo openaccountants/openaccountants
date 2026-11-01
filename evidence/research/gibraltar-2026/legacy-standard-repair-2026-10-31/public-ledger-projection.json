@@ -1,0 +1,1130 @@
+{
+  "projection_notice": "Distinct publication derivative, not the reviewed original ledger. All rule/claim/locator/source/date and full-quote hashes retained; full context independently reviewed privately. Short exact locator quotations do not reproduce complete rules or waive source-owner rights.",
+  "original_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/ledger.json",
+  "original_sha256": "034bd722aa3e8371e596fafc5e5bda438d6564a3e7e588e5cf6e09facb17dd63",
+  "reviewed_research_head": "82c31460b651c22677a28587ab37e274a59199ab",
+  "projection": {
+    "read_date": "2026-10-31",
+    "scope": "Legacy-standard delta only, not full country substantive review",
+    "rows": [
+      {
+        "id": "LEG-01",
+        "slug": "gi-company-formation",
+        "guide_line": 66,
+        "claim": "| Ownership indication, UBO regulation 3(2) | 25% plus one share or more than 25%; other control/fallback tests remain required | https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ubo",
+            "article": "regulation 3(1), corporate entities: ownership, other control and fallback",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+            "native_text_lines": [
+              220,
+              270
+            ],
+            "source_text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+            "public_excerpt": "\u201cbeneficial owner\u201d means;\n\n         (a) in the case of a Listed Entity, or a majority owned subsidiary",
+            "public_excerpt_sha256": "88dd1371864ecfe1bc0ae0be19158309c60492869f651c5f4e6cc8a573b79797",
+            "original_full_quote_sha256": "ec9c71af0e23b00891e1214bdf8cd017a217625259d90373f43833e019f8d628",
+            "original_full_quote_words": 272,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ubo",
+            "article": "regulation 3(2)\u2013(3) ownership indication and amendment power",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+            "native_text_lines": [
+              410,
+              425
+            ],
+            "source_text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+            "public_excerpt": "(2) In paragraph (b) of the meaning of \u201cbeneficial owner\u201d in subregulation (1), a shareholding\nof",
+            "public_excerpt_sha256": "8ae27d7ebbcaea08d91d113e225a91850ff9a881fd4b174efa86ec79e6c89e7c",
+            "original_full_quote_sha256": "03b49eeefa3a5c9c8ddba02adb6b1b19f66dd5d47cb35128dfa8f4078e39eb55",
+            "original_full_quote_words": 203,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-02",
+        "slug": "gi-company-formation",
+        "guide_line": 67,
+        "claim": "| Civil penalty ceiling, UBO regulation 42 | Up to \u00a310,000 only for the specified failures/persons, safeguards and appeals below | https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ubo",
+            "article": "regulations 42\u201343: cap, specified failures/persons, reasonable-steps safeguard, notices and appeal",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+            "native_text_lines": [
+              2363,
+              2428
+            ],
+            "source_text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+            "public_excerpt": "appropriate, not\nexceeding \u00a310,000.00, on any person specified in subregulation (7) (\u201cspecified person\u201d) who\nfails to",
+            "public_excerpt_sha256": "a16a6e51edeaf4614c02bb72f126c5735a83578cdbba9ccce6016715125f1c41",
+            "original_full_quote_sha256": "1b814eff09ade605090ace245a76a1bb0a64cb33b371f5f441f2026060a038c7",
+            "original_full_quote_words": 382,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-03",
+        "slug": "gi-income-tax-assessment-appeals",
+        "guide_line": 45,
+        "claim": "| Ordinary assessment appeal, ITA section 35 | 28 days from service of the assessment notice; service, written grounds and late-permission conditions below | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "section 35(1)\u2013(4): service, written notice, grounds and late admission",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              4731,
+              4756
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "notice at least 14 days prior to\nthe hearing of the appeal shall be contested in",
+            "public_excerpt_sha256": "fa1d5efad1865c54c4da448be2f8aff0ed736d2525ea93b2b60deccb32aa8dd7",
+            "original_full_quote_sha256": "06c37d4e0a1a1314e65c46337977b7e3dc466f0079e5e3bb0b0b68e06040306a",
+            "original_full_quote_words": 264,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-04",
+        "slug": "gi-income-tax-assessment-appeals",
+        "guide_line": 46,
+        "claim": "| Postponement application, ITA section 36 | Separate written application within 28 days of service; eligibility and discretion below | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "section 36(1)\u2013(4): return/assessment/appeal conditions, exclusion of undisputed tax, written application and discretion",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              4779,
+              4795
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "36.(1) Any person other than a company who, having complied with section 28 or any\ncompany",
+            "public_excerpt_sha256": "e6db814d7608e5a6a5e6350cb1ff24abf62c78607df29bb6017bae9efadd2621",
+            "original_full_quote_sha256": "e206d07f12930d622908b420a07182233ab660275303a6dec3b7bdeb888c58df",
+            "original_full_quote_words": 189,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-05",
+        "slug": "gi-income-tax-assessment-appeals",
+        "guide_line": 47,
+        "claim": "| Overpayment claim, ITA section 61 | Six years from relevant assessment-year/accounting-period end; proof and finality limits below | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "section 61: proof, six-year period, certification",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              6041,
+              6050
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "61.(1) If it be proved to the satisfaction of the Commissioner that any person for any",
+            "public_excerpt_sha256": "b69c1c7a20aabd5c11063184b65380b1aa66bfe9f69d205bb539b8523f92f3ab",
+            "original_full_quote_sha256": "df2f04f3377a3411d51e1d27115d2948e14958d7b9b241529b24f9cf01fa284c",
+            "original_full_quote_words": 102,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ita",
+            "article": "section 38: finality subject to section 61 and prohibition on reopening matters determined on appeal",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              4925,
+              4948
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "be made within 30 days immediately after the finality\n           of the assessment, the agreement of the",
+            "public_excerpt_sha256": "de7b2394deb8ebcea5045926ba6d8522ddcb44168894499a7bff6c0519d48c22",
+            "original_full_quote_sha256": "0282bcf9c04f0f3bae2b5e1d663f6ae98fe39368a8461ac43d4686dd53fd12d1",
+            "original_full_quote_words": 269,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-06",
+        "slug": "gi-spain-tax-residence",
+        "guide_line": 45,
+        "claim": "| Dual-resident individual overnight limb, Article 2(1)(b) | More than 183 Spanish nights; defined sporadic absences and alternative family/home/asset tests below | https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "spain-agreement",
+            "article": "Article 2(1)(a)\u2013(b)(ii): domestic dual-residence prerequisite and alternative limbs",
+            "official_url": "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/spain-agreement.txt",
+            "native_text_lines": [
+              94,
+              129
+            ],
+            "source_text_sha256": "51a1f796cf2fbddc38be181a0cf35ee8ade22864e40bb7d9df974d532826e0c3",
+            "public_excerpt": "home for their exclusive use in Gibraltar and remain in\n             Gibraltar over 183 days;",
+            "public_excerpt_sha256": "2bb25b917a257cc749b8d66b6b5442d0e73388764e5d76055ea9a811fbb22d32",
+            "original_full_quote_sha256": "c0ee1f7e71d5dd156656cdf64c460bd59e4226a5c74af1220a188d2615f4ee84",
+            "original_full_quote_words": 262,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-07",
+        "slug": "gi-spain-tax-residence",
+        "guide_line": 46,
+        "claim": "| Entity historical exception, Article 2(2)(b) | Only specified pre-16 November 2018 entities meeting all cumulative historical conditions below; not a new 2026 election | https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf |",
+        "kind": "statutory-summary",
+        "note": "Historical exception only; the 10%/20% figures within the source are historical treaty wording, not new current rates.",
+        "excerpts": [
+          {
+            "source": "spain-agreement",
+            "article": "Article 2(2)(b)\u2013(c): limited triggers, incorporation/test dates, every cumulative historical condition and related-party turnover",
+            "official_url": "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/spain-agreement.txt",
+            "native_text_lines": [
+              190,
+              238
+            ],
+            "source_text_sha256": "51a1f796cf2fbddc38be181a0cf35ee8ade22864e40bb7d9df974d532826e0c3",
+            "public_excerpt": "(b)   Paragraphs (iii) and (iv) of paragraph (2)(a) above shall not apply to any\n            legal person,",
+            "public_excerpt_sha256": "44c77416f3d21939fb5bdf0eb3ad2a40e61353b15ff00d2d3f6f8a0881583e86",
+            "original_full_quote_sha256": "d2d95b26c0a7c91b386b9b3701af05b5ad7090c20f9147674832f3e083c6c69e",
+            "original_full_quote_words": 376,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-08",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 33,
+        "claim": "| Current qualifying training, Schedule 3 paragraph 16 | Additional 50% deduction with Commissioner-approved training and ordinary deduction conditions below | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 16(1)\u2013(2): employer/self-employed additional deduction",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8796,
+              8801
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "16.(1) Where a person has incurred cost in the provision of qualifying training, an employer\nmay",
+            "public_excerpt_sha256": "f54c14f10aebfe4c11b0a756b4e3806dff71ded38cdc05eea9519804be61f97a",
+            "original_full_quote_sha256": "d71c8fed14b442fc29c9b181fb5f0964ed9a83469421ab3792cfbad45abc5280",
+            "original_full_quote_words": 61,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 16(3): Commissioner approval",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8807,
+              8808
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(3) In this paragraph \u201cqualifying training\u201d means any qualification and training as\napproved by the Commissioner.",
+            "public_excerpt_sha256": "46e8ba4539448c962e37ae1ab1ec63358be6fe6ef27348abc3632b2008d95d6d",
+            "original_full_quote_sha256": "1ca2b86ab06af66b877e6a27f069c3e2be470af1dacb8f355fc077d9b3630deb",
+            "original_full_quote_words": 16,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-09",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 34,
+        "claim": "| Historical training enhancement, Schedule 3 paragraph 16(2A) | Additional 60% only for periods ending 1 July 2021\u201330 June 2023 | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "Native text says \u201c1 July to 2021\u201d; the Guide preserves the previously stated 1 July 2021 interpretation and the closed end date, not a new 2026 enhancement.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 16(2A)\u2013(3): period-specific 60% and qualifying-training definition",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8803,
+              8808
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(2A) In respect of accounting periods or years of assessment, as the case may be, ending",
+            "public_excerpt_sha256": "87c89d71776f8096fdc5bc1757cb23ba925ad9b6542254e69fe5dd5442e2fe7d",
+            "original_full_quote_sha256": "66248953185da2cec011efda0b417789d1cabe104cb60f3da9938660427a443b",
+            "original_full_quote_words": 61,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-10",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 35,
+        "claim": "| Planning credit, Schedule 3 paragraph 17 | Up to 100% eligible fees, total \u00a35,000, own-property application made within 24 months of trade start and approved under the Town Planning Act, first 3 years and period-tax cap below | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 17(1)(a)\u2013(b): application, own property and timing",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8812,
+              8817
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "and\n\n       (b) within 24 months from the day on which it commenced trading,",
+            "public_excerpt_sha256": "64ecd26454f2c156b2573741a1bc2ab99bfc19f68fde269e3a81a17a4f1f6ce5",
+            "original_full_quote_sha256": "5a53ce2937cf256c9ac03e08dbe4314816cd68693af5f3bcdcfe5a1902b314a5",
+            "original_full_quote_words": 47,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 17(1)\u2013(2): eligible fees, percentage, aggregate/period/years limits",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8825,
+              8838
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "must not exceed \u00a35,000;\n\n       (b) may be claimed in respect of any tax liability incurred in",
+            "public_excerpt_sha256": "bc1b0872de3a78348dd26c4f6568ec6b876cbc13c9741c8cc33feaa3521bf17a",
+            "original_full_quote_sha256": "4eb93ed5c8cbe62768176df51fafe010259cb191511262fd2de4df7600ce3b45",
+            "original_full_quote_words": 110,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-11",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 36,
+        "claim": "| Historical startup credit, Schedule 3 paragraph 17A | Only qualifying 2016/17 entry window below; no fresh 2026 entry | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "statutory-summary",
+        "note": "Existing detailed conditions remain in The base. This row does not reopen a claim window.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 17A: closed entry window, new activity, employees, discretion, three years and no carry/set-off",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8842,
+              8861
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "eligible for\n           a tax credit in respect of its first 3 years of trading or business",
+            "public_excerpt_sha256": "543d7acfbff6934a029afc8f68fc244d2f4c4992d626c3dc6e248deec13907e4",
+            "original_full_quote_sha256": "0b65ee15d58219a1dc6b653906c40d27dffcac763acf72c39a8be4f891e46e86",
+            "original_full_quote_words": 182,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-12",
+        "slug": "gi-uk-employment-pensions-treaty",
+        "guide_line": 41,
+        "claim": "| Ordinary employment short stay | At most 183 days in every relevant 12-month window AND non-host-resident employer AND cost not borne by host PE | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-14-income-from-employment |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 14(1)\u2013(2): ordinary duties and all three conjunctive short-stay conditions",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              943,
+              971
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "in the aggregate 183 days in any twelve month period commencing\n                or ending in the fiscal",
+            "public_excerpt_sha256": "884e0aa0158abce607285f5f92db0d705afb7f567f792899f59c1ce951a73b99",
+            "original_full_quote_sha256": "4bc388f911706e1893166304743ad5c10abbfc6b6fd79125ba813095f08e6305",
+            "original_full_quote_words": 177,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-13",
+        "slug": "gi-uk-employment-pensions-treaty",
+        "guide_line": 42,
+        "claim": "| Gibraltar same-income credit | Lesser of Gibraltar and UK tax on same income, subject to Article 22(3) exclusion | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 22(1): Gibraltar inclusion and same-income lesser-tax credit",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              1210,
+              1226
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(1)     In the case of Gibraltar, double taxation shall be avoided as follows:\n\n\n       (a)     when imposing",
+            "public_excerpt_sha256": "8da13ba31cf397e16aced9c5dfc0c3d22905dc79f5e8de143f0617c1df00b5cc",
+            "original_full_quote_sha256": "0d8ac7d43c590347bf516088ad8ddcecbc86ce1f5cd8090f7a25c2956cb58c9c",
+            "original_full_quote_words": 123,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 22(3): exclusion where UK tax solely due to UK-resident attribution",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              1276,
+              1279
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(3)      The provisions of paragraph (1) shall not apply where the United Kingdom tax\npayable is",
+            "public_excerpt_sha256": "71c22adc9cd05f9d0ef13ffaf4fc8bb9065d395c2f3b5401b757a8a2577f6ab2",
+            "original_full_quote_sha256": "63f039c88dd23aa384e1785c7e7db882142b33fa279280c4bb1e231b2dd07028",
+            "original_full_quote_words": 48,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-14",
+        "slug": "gi-uk-employment-pensions-treaty",
+        "guide_line": 43,
+        "claim": "| Offshore enterprise threshold | 30 days under Article 21(4) is an enterprise PE test, not employee income-tax exemption | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities |",
+        "kind": "statutory-summary",
+        "note": "Threshold is enterprise PE, not an employment exemption; the full employment subsection remains in the preserved method.",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 21(2)\u2013(4)(a): offshore scope, enterprise PE rule, 30-day exception and associated-activity aggregation",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              1118,
+              1138
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "in the aggregate 30\ndays in any twelve month period beginning or ending in the fiscal",
+            "public_excerpt_sha256": "992fb80c9c1f6ddf5523efd643fb416a2513396a9a67b4702878680e0626260c",
+            "original_full_quote_sha256": "8148abc38c12d8240722da504afe1fc1bc1c3fb3db6cc2a768386d5cf4f4d770",
+            "original_full_quote_words": 189,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 21(4)(b): associated enterprise definition",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              1141,
+              1147
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(b)      an enterprise shall be regarded as associated with another enterprise if one\nBack to Top",
+            "public_excerpt_sha256": "70512b74f5849d26f0a5542c24d7f44ed7c0f7e30bf3ecb0cfa378866bf603bf",
+            "original_full_quote_sha256": "b6f0f522c3fb0af1c25b3d8da4a606d8abf8c60a7e13471b8fe0d9a808b5aee1",
+            "original_full_quote_words": 50,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-15",
+        "slug": "gi-uk-investment-income-treaty",
+        "guide_line": 60,
+        "claim": "| Ordinary dividend source exemption | Other-territory beneficial-owner residence; property-vehicle andPE exceptions below | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-10-dividends |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 10(1)\u2013(2): residence/beneficial ownership and ordinary/property/pension rules",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              648,
+              674
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "shall\n               not exceed 15 per cent of the gross amount of the dividends other than where",
+            "public_excerpt_sha256": "02f2dbc2be23658a8c2db097b4f2866cbf54ca06b723c706ee448fa3f6a62d5d",
+            "original_full_quote_sha256": "ec51919440c70b46a8f26e08467a8d3cf2bffa4a5d30855cf8cb9cfdbb107625",
+            "original_full_quote_words": 224,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 10(4): effectively-connected PE exception",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              683,
+              690
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(4)     The provisions of paragraphs (1) and (2) shall not apply if the beneficial owner\nof",
+            "public_excerpt_sha256": "0165e560f3e9a89d54ae54097112fe9c9836db9eeadacc3d19c2edea452f8149",
+            "original_full_quote_sha256": "7574ccbc267d21b528a20cdbf5642cb9ea3219596b1e8bea675a0e9997bcb261",
+            "original_full_quote_words": 75,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-16",
+        "slug": "gi-uk-investment-income-treaty",
+        "guide_line": 61,
+        "claim": "| Property investment vehicle dividend | 15% gross ceiling only under Article 10(2)(b) conditions; qualifying other-territory pension scheme remains exempt | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-10-dividends |",
+        "kind": "statutory-summary",
+        "note": "",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 10(2): entire qualifying property-vehicle and pension exception, gross ceiling and company-profit limitation",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              652,
+              674
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "shall\n               not exceed 15 per cent of the gross amount of the dividends other than where",
+            "public_excerpt_sha256": "02f2dbc2be23658a8c2db097b4f2866cbf54ca06b723c706ee448fa3f6a62d5d",
+            "original_full_quote_sha256": "8bcbe6652ff461744cb1f6bb2abddf8cbf4343fe4b8a50978f4839d61edca18f",
+            "original_full_quote_words": 197,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-17",
+        "slug": "gi-uk-investment-income-treaty",
+        "guide_line": 62,
+        "claim": "| Interest/royalty ownership route, Articles 11(2)\u2013(3) and 12(2)\u2013(3) | Less than 25% non-resident shares/other rights; all other residence, beneficial-owner, recipient and anti-abuse conditions below | https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-11-interest |",
+        "kind": "statutory-summary",
+        "note": "Ownership is a strict less-than test and refers to direct/indirect shares or other rights held by non-residents of the recipient territory. This row is an eligibility summary; it does not replace the distinct interest/royalty lists or PE, source and related-party rules preserved in The base.",
+        "excerpts": [
+          {
+            "source": "uk-agreement",
+            "article": "Article 11(2)\u2013(3) parent condition",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              710,
+              716
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(2)      However, interest arising in a territory may also be taxed in that territory\naccording to",
+            "public_excerpt_sha256": "c159a8201b96f26af3f00d833442708d060f95403de6448b835891fb48d6cb4f",
+            "original_full_quote_sha256": "2d9411ad25c577d7f23fabfc2b4f190104566448e42cc795c6e19f8fdc787d96",
+            "original_full_quote_words": 68,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 11(3)(a) beneficial-owner parent",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              723,
+              723
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(a)     the interest is beneficially owned by:",
+            "public_excerpt_sha256": "950c3b327e28f85dbc190cdf727e664413722b64c0b22cf2f510da78dcdf96e1",
+            "original_full_quote_sha256": "7e03686ea8c4adf79159b589598c62256b5f1601ee9c9a29c674fc2c8c357501",
+            "original_full_quote_words": 7,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 11(3)(a)(iv) ownership route",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              736,
+              738
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "company less than 25 per cent of whose shares or other rights are\n                      owned, directly or",
+            "public_excerpt_sha256": "0d614a5f7ceca4b53596e9b5a6da3ae6636aa04ee6bba182ac1b65ba81b7201f",
+            "original_full_quote_sha256": "d24fb89af90e5f975678605cebd3eb16fc796adeb78723430b95fd9311f6c113",
+            "original_full_quote_words": 29,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 12(2)\u2013(3) parent condition",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              820,
+              827
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(2)     However, royalties arising in a territory may also be taxed in that territory\naccording to",
+            "public_excerpt_sha256": "2934f5359f52eb528e6184b11495d08fe432632ddcc79c485122ee825a071244",
+            "original_full_quote_sha256": "6a9af2bef48884beb162d378db698bc6f76e6ed856032a87fd0d31d6449986de",
+            "original_full_quote_words": 74,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 12(3)(d) ownership route",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              841,
+              843
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "company less than 25 per cent of whose shares or other rights are owned,\n               directly or",
+            "public_excerpt_sha256": "53ed148bdd16359101e5d0576cf2cde909ebe8c97af3529cf61b8d94d74015d3",
+            "original_full_quote_sha256": "602b706845b0e08401d87302226a86ab2d19d8c18130ad26db63673556917ef9",
+            "original_full_quote_words": 30,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "uk-agreement",
+            "article": "Article 25(1) purpose test",
+            "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+            "native_text_lines": [
+              1594,
+              1600
+            ],
+            "source_text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+            "public_excerpt": "(1)     Notwithstanding the other provisions of this Agreement, a benefit under this\nAgreement shall not be",
+            "public_excerpt_sha256": "cd4f7754a92201613a4465bd2f4f8f809f3c4108603ac218b814368381ee522c",
+            "original_full_quote_sha256": "fca215802572fda8d6dc06706a8508ea68e7e1a6a9e566dce719d869e8d2aede",
+            "original_full_quote_words": 92,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-18",
+        "slug": "gi-property-stamp-duty",
+        "guide_line": 50,
+        "claim": "| Up to \u00a3200,000 | Zero | https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing rate/condition cells preserved. Citation attachment only. The explicit unresolved Bill B05/2025 enactment/commencement warning remains; these are not certified current-liability schedules.",
+        "excerpts": [
+          {
+            "source": "stamp",
+            "article": "Schedule 1 conveyance paragraph (1)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.txt",
+            "native_text_lines": [
+              1340,
+              1345
+            ],
+            "source_text_sha256": "61750c0f7d6c68862bd1cecacede03c60089e9970b6440a6f81c120c7c873882",
+            "public_excerpt": "does\nnot exceed \u00a3200,000 a sum equivalent to zero per cent of the amount or\nvalue",
+            "public_excerpt_sha256": "2e5f5d14c11853728a4a4bbdfca14f0cb3c10fa91d7585cda094ad61a7d16658",
+            "original_full_quote_sha256": "f870864bff4ed9f5697dbdf101f80766952296242257947b4bfcd7b01a682c93",
+            "original_full_quote_words": 43,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-19",
+        "slug": "gi-property-stamp-duty",
+        "guide_line": 51,
+        "claim": "| Above \u00a3200,000 through \u00a3350,000 | 2% on first \u00a3250,000; 5.5% on excess | https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing rate/condition cells preserved. Citation attachment only. The explicit unresolved Bill B05/2025 enactment/commencement warning remains; these are not certified current-liability schedules.",
+        "excerpts": [
+          {
+            "source": "stamp",
+            "article": "Schedule 1 conveyance paragraph (2), except qualifying paragraph (1A)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.txt",
+            "native_text_lines": [
+              1365,
+              1370
+            ],
+            "source_text_sha256": "61750c0f7d6c68862bd1cecacede03c60089e9970b6440a6f81c120c7c873882",
+            "public_excerpt": "to duty exceeds \u00a3200,000 but does\nnot exceed \u00a3350,000, a sum equivalent to 2.0% (two point",
+            "public_excerpt_sha256": "1c6b942d03e6dcd3709e96a8ec0f494c18a21f027e308a56ea4f338d065cef9f",
+            "original_full_quote_sha256": "eedd1271d78251583b7cd0d6e8d566292e505d2a3eb75a27df74ca511a213b0e",
+            "original_full_quote_words": 72,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-20",
+        "slug": "gi-property-stamp-duty",
+        "guide_line": 52,
+        "claim": "| Above \u00a3350,000 | 3% on first \u00a3350,000; 3.5% on next \u00a3450,000; 4.5% above \u00a3800,000 | https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing rate/condition cells preserved. Citation attachment only. The explicit unresolved Bill B05/2025 enactment/commencement warning remains; these are not certified current-liability schedules.",
+        "excerpts": [
+          {
+            "source": "stamp",
+            "article": "Schedule 1 conveyance paragraph (3), except qualifying paragraph (1A)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.txt",
+            "native_text_lines": [
+              1372,
+              1379
+            ],
+            "source_text_sha256": "61750c0f7d6c68862bd1cecacede03c60089e9970b6440a6f81c120c7c873882",
+            "public_excerpt": "to duty exceeds \u00a3350,000, a sum\nequivalent to 3.0% (three point zero per cent) on the",
+            "public_excerpt_sha256": "d4502ea690a6095afa69a54027df463f619f261f246e033abcde0889a1f9601a",
+            "original_full_quote_sha256": "fa9c420f7aa71ae028ef65800e1162a5b4f1f5c5ed29633219c3bd606e271be1",
+            "original_full_quote_words": 93,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-21",
+        "slug": "gi-residential-property-disposals",
+        "guide_line": 39,
+        "claim": "| Current holdings | Five or more taxable properties, owned or held in whole or in part, directly or indirectly | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing table cell preserved. Citation attachment only; aggregation and gain-derivation limits remain open.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 1 Part 2 paragraph 1(2)(a)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              7374,
+              7377
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(2) Where any person owns or holds, directly or indirectly, including through a property\nholding entity:",
+            "public_excerpt_sha256": "dbd2b036551eb32701b25b703d583e879544cecfcb581545a2a5030c78cf4862",
+            "original_full_quote_sha256": "13aeb5e0323e5050698315bf4586c97f637ad3bf8578f307932af47ce1563189",
+            "original_full_quote_words": 29,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-22",
+        "slug": "gi-residential-property-disposals",
+        "guide_line": 40,
+        "claim": "| Historical alternative | An aggregate in five or more taxable properties, in whole or in part, over five consecutive basis periods | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing table cell preserved. Citation attachment only; aggregation and gain-derivation limits remain open.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 1 Part 2 paragraph 1(2)(b)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              7374,
+              7380
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(2) Where any person owns or holds, directly or indirectly, including through a property\nholding entity:",
+            "public_excerpt_sha256": "dbd2b036551eb32701b25b703d583e879544cecfcb581545a2a5030c78cf4862",
+            "original_full_quote_sha256": "92251455ebe6f9a759e36265c7999b16b3646bf438f15e33104acccc9d634088",
+            "original_full_quote_words": 49,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-23",
+        "slug": "gi-residential-property-disposals",
+        "guide_line": 41,
+        "claim": "| Transactions charged when the conditions apply | Profits on disposal of such property by the person or property-holding entity; profits on direct or indirect disposal of shares in a property-holding entity, including nominee holdings | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf |",
+        "kind": "existing-row-source-attachment",
+        "note": "Existing table cell preserved. Citation attachment only; aggregation and gain-derivation limits remain open.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 1 Part 2 paragraph 1(2): threshold prerequisite and property/share profits",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              7374,
+              7391
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(2) Where any person owns or holds, directly or indirectly, including through a property\nholding entity:",
+            "public_excerpt_sha256": "dbd2b036551eb32701b25b703d583e879544cecfcb581545a2a5030c78cf4862",
+            "original_full_quote_sha256": "48845d45e2597bb9c1372fd833a3a0a97a077922aaf33e5e8c318ca029d482bf",
+            "original_full_quote_words": 140,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-24",
+        "slug": "gi-company-formation",
+        "guide_line": 248,
+        "claim": "name: Gibraltar formation authorised and subscribed capital reconciliation",
+        "kind": "executable-existing-scenario",
+        "note": "Writer arithmetic: 1000\u00d7\u00a31=\u00a31000; (100+100)\u00d7\u00a31=\u00a3200; 1000\u2212200=800 not subscribed. These are hypothetical amounts already in the old method, not statutory minimum capital.",
+        "excerpts": [
+          {
+            "source": "companies",
+            "article": "Companies Act section 10: share capital and initial allocations",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/companies.txt",
+            "native_text_lines": [
+              1553,
+              1586
+            ],
+            "source_text_sha256": "818e03dd4073f24f8e77e09fe97f6ce95297deae5adc6f7f7ab8a050713a5e7c",
+            "public_excerpt": "10.(1) The statement of capital and initial shareholdings required to be delivered in the case\nof",
+            "public_excerpt_sha256": "0db25975573ab9a71be6ace5b1d272e721788895cea4d26ce93e0e74dfc4f44c",
+            "original_full_quote_sha256": "d66cb1d93a65087fafa8ce3107ac6a194db0ff5d1e3644133711bd962df82b1d",
+            "original_full_quote_words": 248,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "finc01",
+            "article": "FINC01 contents: authorised capital and initial shareholding",
+            "official_url": "https://www.companieshouse.gi/publications/FINC01.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/finc01.txt",
+            "native_text_lines": [
+              24,
+              32
+            ],
+            "source_text_sha256": "a30488984d104ca8fcdc7e90dc304e4e99c9262e7eaa04a4e3e5d357298c5c29",
+            "public_excerpt": "G       Statement of Authorised Capital, Initial Shareholding and Prescribed particulars\n        of rights attached to shares in",
+            "public_excerpt_sha256": "97ca7b3fa954db259009244034e70e25283f28681d10583d26fdad8bcb776077",
+            "original_full_quote_sha256": "6b05c80d1890ef040effeffa99da1186ce7204aaa282c416ef8fa039af7a2606",
+            "original_full_quote_words": 67,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "finc01",
+            "article": "FINC01 G3 and nominal-value footnote",
+            "official_url": "https://www.companieshouse.gi/publications/FINC01.pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/finc01.txt",
+            "native_text_lines": [
+              272,
+              294
+            ],
+            "source_text_sha256": "a30488984d104ca8fcdc7e90dc304e4e99c9262e7eaa04a4e3e5d357298c5c29",
+            "public_excerpt": "currencies separately e.g.: \u00a3100 +\n\u20ac100 + $10 etc.\n\n\n\n\n_______________________________________________________________\n1 Total number of shares held",
+            "public_excerpt_sha256": "e05690d332ba594573036ec77fcfcd24e2ddb8da26954863e8377459df758487",
+            "original_full_quote_sha256": "394566d5d1c9fc35fe172a78f4e6347661ec010c0bc5eed61c3c1055a30ad7f9",
+            "original_full_quote_words": 73,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-25",
+        "slug": "gi-company-formation",
+        "guide_line": 271,
+        "claim": "name: Gibraltar company ownership indication share boundary",
+        "kind": "executable-existing-scenario",
+        "note": "Writer arithmetic: 25/100=25%, 26/100=26%, (100\u00d7.25)+1=26. Does not clear 25-share owner of reporting under other-control facts.",
+        "excerpts": [
+          {
+            "source": "ubo",
+            "article": "regulation 3(2)\u2013(3)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+            "native_text_lines": [
+              410,
+              425
+            ],
+            "source_text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+            "public_excerpt": "(2) In paragraph (b) of the meaning of \u201cbeneficial owner\u201d in subregulation (1), a shareholding\nof",
+            "public_excerpt_sha256": "8ae27d7ebbcaea08d91d113e225a91850ff9a881fd4b174efa86ec79e6c89e7c",
+            "original_full_quote_sha256": "03b49eeefa3a5c9c8ddba02adb6b1b19f66dd5d47cb35128dfa8f4078e39eb55",
+            "original_full_quote_words": 203,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ubo",
+            "article": "regulation 3(1)(b) other-control/fallback investigation",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+            "native_text_lines": [
+              220,
+              270
+            ],
+            "source_text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+            "public_excerpt": "\u201cbeneficial owner\u201d means;\n\n         (a) in the case of a Listed Entity, or a majority owned subsidiary",
+            "public_excerpt_sha256": "88dd1371864ecfe1bc0ae0be19158309c60492869f651c5f4e6cc8a573b79797",
+            "original_full_quote_sha256": "ec9c71af0e23b00891e1214bdf8cd017a217625259d90373f43833e019f8d628",
+            "original_full_quote_words": 272,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-26",
+        "slug": "gi-income-tax-assessment-appeals",
+        "guide_line": 217,
+        "claim": "name: Gibraltar assessment disputed amount for separate postponement application",
+        "kind": "executable-existing-scenario",
+        "note": "Writer arithmetic: \u00a320,000\u2212\u00a312,000=\u00a38,000 disputed; remainder \u00a312,000. Hypothetical figures already in old method. Not an approval, suspension or revised assessment.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "section 36(1)\u2013(4) eligibility, exclusion of undisputed part and discretion",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              4779,
+              4795
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "36.(1) Any person other than a company who, having complied with section 28 or any\ncompany",
+            "public_excerpt_sha256": "e6db814d7608e5a6a5e6350cb1ff24abf62c78607df29bb6017bae9efadd2621",
+            "original_full_quote_sha256": "e206d07f12930d622908b420a07182233ab660275303a6dec3b7bdeb888c58df",
+            "original_full_quote_words": 189,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-27",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 93,
+        "claim": "name: Gibraltar approved training additional deduction and accounting adjustment",
+        "kind": "executable-existing-scenario",
+        "note": "Writer arithmetic: existing \u00a32000 eligible cost \u00d750%=\u00a31000 additional; total \u00a33000. The ordinary accounting expense is not deducted again in the tax adjustment. Commissioner approval and ordinary deduction eligibility remain assumptions.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 16(1)\u2013(2)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8796,
+              8801
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "16.(1) Where a person has incurred cost in the provision of qualifying training, an employer\nmay",
+            "public_excerpt_sha256": "f54c14f10aebfe4c11b0a756b4e3806dff71ded38cdc05eea9519804be61f97a",
+            "original_full_quote_sha256": "d71c8fed14b442fc29c9b181fb5f0964ed9a83469421ab3792cfbad45abc5280",
+            "original_full_quote_words": 61,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 16(3)",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8807,
+              8808
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(3) In this paragraph \u201cqualifying training\u201d means any qualification and training as\napproved by the Commissioner.",
+            "public_excerpt_sha256": "46e8ba4539448c962e37ae1ab1ec63358be6fe6ef27348abc3632b2008d95d6d",
+            "original_full_quote_sha256": "1ca2b86ab06af66b877e6a27f069c3e2be470af1dacb8f355fc077d9b3630deb",
+            "original_full_quote_words": 16,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-28",
+        "slug": "gi-training-planning-and-startup-reliefs",
+        "guide_line": 112,
+        "claim": "name: Gibraltar planning credit aggregate and period tax limits",
+        "kind": "executable-existing-scenario",
+        "note": "Writer arithmetic: min(\u00a36200,\u00a35000)=\u00a35000 potential; min(\u00a35000,\u00a33000 tax)=\u00a33000 usable; unused potential \u00a32000. Existing scenario; no refund/carry-forward right established.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 17(1) conditions",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8812,
+              8817
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "and\n\n       (b) within 24 months from the day on which it commenced trading,",
+            "public_excerpt_sha256": "64ecd26454f2c156b2573741a1bc2ab99bfc19f68fde269e3a81a17a4f1f6ce5",
+            "original_full_quote_sha256": "5a53ce2937cf256c9ac03e08dbe4314816cd68693af5f3bcdcfe5a1902b314a5",
+            "original_full_quote_words": 47,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          },
+          {
+            "source": "ita",
+            "article": "Schedule 3 paragraph 17(1)\u2013(2) caps",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              8825,
+              8838
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "must not exceed \u00a35,000;\n\n       (b) may be claimed in respect of any tax liability incurred in",
+            "public_excerpt_sha256": "bc1b0872de3a78348dd26c4f6568ec6b876cbc13c9741c8cc33feaa3521bf17a",
+            "original_full_quote_sha256": "4eb93ed5c8cbe62768176df51fafe010259cb191511262fd2de4df7600ce3b45",
+            "original_full_quote_words": 110,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      },
+      {
+        "id": "LEG-29",
+        "slug": "gi-income-tax-assessment-appeals",
+        "guide_line": 158,
+        "claim": "Postponement of collection **does not change the original due date** for section 64 surcharges on tax ultimately found due. Do not describe it as interest-free or surcharge-free payment relief. Section 36(11) separately provides repayment with interest in its specified overpayment circumstances, using the published rates; this Guide does not quote an unverified interest rate. [Section 36(10)\u2013(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "kind": "preserved-topic-relocation",
+        "note": "Exact old paragraph moved into Penalties and interest. No new interest rate or general refund-interest entitlement.",
+        "excerpts": [
+          {
+            "source": "ita",
+            "article": "section 36(9)\u2013(11): due date, surcharge and specified overpayment-interest rule",
+            "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+            "original_language": "English",
+            "read_date": "2026-10-31",
+            "path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+            "native_text_lines": [
+              4827,
+              4841
+            ],
+            "source_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+            "public_excerpt": "(9) Nothing in this section shall require payment of taxation to be made earlier than would",
+            "public_excerpt_sha256": "65af9fdd1d3edf6efbebbcd1eb2bc956604e34960895b1eb78b895ba90e9872f",
+            "original_full_quote_sha256": "e6d4f301145650b24953e9f0a7c4b75b42aa642d63bee62b096a2cd0e819c6bc",
+            "original_full_quote_words": 152,
+            "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+ERROR   skills/france/fr-business-accounting.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/fr-business-accounting.md: [unversioned-body-change] body changed without advancing last_updated or version (02af08daaca0 -> 5edd23f367be)
+ERROR   skills/france/fr-business-accounting.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/fr-capital-gains.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/france/fr-capital-gains.md: [unversioned-body-change] body changed without advancing last_updated or version (df27e12cf923 -> 8ef3cf59e026)
+ERROR   skills/france/fr-capital-gains.md: [version-regression] frontmatter version moved backwards: 1.4 -> 1.2
+ERROR   skills/france/fr-cfe.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/france/fr-cfe.md: [unversioned-body-change] body changed without advancing last_updated or version (4e9149c3b6a4 -> 6da512e54887)
+ERROR   skills/france/fr-cfe.md: [version-regression] frontmatter version moved backwards: 0.3 -> 0.2
+ERROR   skills/france/fr-corporate-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-23
+ERROR   skills/france/fr-corporate-tax.md: [heading-version-regression] body heading version moved backwards: v0.4 -> v0.1
+ERROR   skills/france/fr-corporate-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (5f5c985cdbe2 -> 5debbaf76a5f)
+ERROR   skills/france/fr-corporate-tax.md: [version-regression] frontmatter version moved backwards: 0.4 -> 0.1
+ERROR   skills/france/fr-cross-border.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-23
+ERROR   skills/france/fr-cross-border.md: [heading-version-regression] body heading version moved backwards: v0.3 -> v0.1
+ERROR   skills/france/fr-cross-border.md: [unversioned-body-change] body changed without advancing last_updated or version (fcaee9c22ea5 -> 9aeb5d8b1e8a)
+ERROR   skills/france/fr-cross-border.md: [version-regression] frontmatter version moved backwards: 0.3 -> 0.1
+ERROR   skills/france/fr-crypto-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-23
+ERROR   skills/france/fr-crypto-tax.md: [heading-version-regression] body heading version moved backwards: v1.3 -> v1.0
+ERROR   skills/france/fr-crypto-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (afe16e348c89 -> ecfd94fa548d)
+ERROR   skills/france/fr-crypto-tax.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/fr-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-23
+ERROR   skills/france/fr-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (3859e8ad8580 -> 54db439a31d2)
+ERROR   skills/france/fr-income-tax.md: [version-regression] frontmatter version moved backwards: 3.4 -> 2.0
+ERROR   skills/france/fr-personal-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/france/fr-personal-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (73d89c4b53fb -> 52ae787b88f3)
+ERROR   skills/france/fr-personal-income-tax.md: [version-regression] frontmatter version moved backwards: 1.10 -> 1.2
+ERROR   skills/france/fr-rental-income.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/fr-rental-income.md: [unversioned-body-change] body changed without advancing last_updated or version (afd3edc1a29b -> e9032ca5bcdb)
+ERROR   skills/france/fr-rental-income.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/fr-social-contributions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/france/fr-social-contributions.md: [unversioned-body-change] body changed without advancing last_updated or version (b3e864e29fd9 -> d919e7d20743)
+ERROR   skills/france/fr-social-contributions.md: [version-regression] frontmatter version moved backwards: 2.4 -> 2.2
+ERROR   skills/france/fr-tax-audit.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/fr-tax-audit.md: [unversioned-body-change] body changed without advancing last_updated or version (9bf9da3fda26 -> 9345d60bc8dc)
+ERROR   skills/france/fr-tax-audit.md: [version-regression] frontmatter version moved backwards: 1.4 -> 1.0
+ERROR   skills/france/france-bookkeeping.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-23
+ERROR   skills/france/france-bookkeeping.md: [unversioned-body-change] body changed without advancing last_updated or version (cfeede5e3c51 -> a552378989e6)
+ERROR   skills/france/france-bookkeeping.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/france-einvoice.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-23
+ERROR   skills/france/france-einvoice.md: [unversioned-body-change] body changed without advancing last_updated or version (a124dff6eddc -> 5dacd5db19f8)
+ERROR   skills/france/france-einvoice.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.0
+ERROR   skills/france/france-financial-statements.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/france-financial-statements.md: [unversioned-body-change] body changed without advancing last_updated or version (caa75ab8aada -> 938a606e0b90)
+ERROR   skills/france/france-financial-statements.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.0
+ERROR   skills/france/france-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-23
+ERROR   skills/france/france-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (6dfed3948da3 -> 82e297d09dbd)
+ERROR   skills/france/france-formation.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/france-payroll.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/france-payroll.md: [unversioned-body-change] body changed without advancing last_updated or version (a542b5eac496 -> f13c9f08fc20)
+ERROR   skills/france/france-payroll.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/france-tax-optimization.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/france-tax-optimization.md: [unversioned-body-change] body changed without advancing last_updated or version (2db22eb424a0 -> 5449921c2f09)
+ERROR   skills/france/france-tax-optimization.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.0
+ERROR   skills/france/france-transfer-pricing.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/france/france-transfer-pricing.md: [unversioned-body-change] body changed without advancing last_updated or version (abc57433aeda -> 2f9b579d3d89)
+ERROR   skills/france/france-transfer-pricing.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.0
+ERROR   skills/france/france-vat-return.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/france/france-vat-return.md: [unversioned-body-change] body changed without advancing last_updated or version (556070418776 -> d0e2da7cdaa0)
+ERROR   skills/france/france-vat-return.md: [version-regression] frontmatter version moved backwards: 2.17 -> 2.2
+ERROR   skills/france/leaving-france-exit-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-23
+ERROR   skills/france/leaving-france-exit-tax.md: [heading-version-regression] body heading version moved backwards: v0.3 -> v0.1
+ERROR   skills/france/leaving-france-exit-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (74f2c0140102 -> 723a2c3f6e32)
+ERROR   skills/france/leaving-france-exit-tax.md: [version-regression] frontmatter version moved backwards: 0.3 -> 0.1
+ERROR   skills/international/bahrain/bh-cross-border-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/bahrain/bh-transfer-pricing.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/italy/it-impatriati.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-26
+ERROR   skills/italy/it-impatriati.md: [unversioned-body-change] body changed without advancing last_updated or version (17b7b0a6d2d2 -> 17e4c281d086)
+ERROR   skills/italy/it-impatriati.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+ERROR   skills/italy/it-inps-contributions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-24
+ERROR   skills/italy/it-inps-contributions.md: [unversioned-body-change] body changed without advancing last_updated or version (0488fb601c0f -> 8388e321154e)
+ERROR   skills/italy/it-inps-contributions.md: [version-regression] frontmatter version moved backwards: 2.2 -> 2.1
+ERROR   skills/italy/it-irap.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/italy/it-irap.md: [unversioned-body-change] body changed without advancing last_updated or version (d476e1521825 -> 1f4aeb436468)
+ERROR   skills/italy/it-irap.md: [version-regression] frontmatter version moved backwards: 0.5 -> 0.4
+ERROR   skills/italy/italy-bookkeeping.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-22
+ERROR   skills/italy/italy-bookkeeping.md: [heading-version-regression] body heading version moved backwards: v1.1 -> v1.0
+ERROR   skills/italy/italy-bookkeeping.md: [unversioned-body-change] body changed without advancing last_updated or version (b94c03bb3013 -> 76381fb7556e)
+ERROR   skills/italy/italy-bookkeeping.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/italy/italy-einvoice.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-22
+ERROR   skills/italy/italy-einvoice.md: [unversioned-body-change] body changed without advancing last_updated or version (3fafc3f6fbed -> caa2070a3f49)
+ERROR   skills/italy/italy-einvoice.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/italy/italy-financial-statements.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-22
+ERROR   skills/italy/italy-financial-statements.md: [unversioned-body-change] body changed without advancing last_updated or version (e08e96053f8b -> 3d5da4ee7577)
+ERROR   skills/italy/italy-financial-statements.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/italy/italy-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-22
+ERROR   skills/italy/italy-formation.md: [heading-version-regression] body heading version moved backwards: v1.1 -> v1.0
+ERROR   skills/italy/italy-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (c829ed7fd6ae -> fc91a1064d0e)
+ERROR   skills/italy/italy-formation.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/italy/italy-tax-optimization.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-22
+ERROR   skills/italy/italy-tax-optimization.md: [unversioned-body-change] body changed without advancing last_updated or version (d38c57b1c48b -> 48c55b2fdf1d)
+ERROR   skills/italy/italy-tax-optimization.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/italy/italy-vat-return.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-24
+ERROR   skills/italy/italy-vat-return.md: [heading-version-regression] body heading version moved backwards: v2.2 -> v2.1
+ERROR   skills/italy/italy-vat-return.md: [unversioned-body-change] body changed without advancing last_updated or version (ac81b4399f7d -> 21358c2e37bd)
+ERROR   skills/italy/italy-vat-return.md: [version-regression] frontmatter version moved backwards: 2.2 -> 2.1
+ERROR   skills/kenya/ke-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/kenya/ke-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (371e98f243eb -> 73e1a4a99417)
+ERROR   skills/kenya/ke-income-tax.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+ERROR   skills/kenya/ke-nhif-nssf.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/kenya/ke-nhif-nssf.md: [heading-version-regression] body heading version moved backwards: v2.1 -> v2.0
+ERROR   skills/kenya/ke-nhif-nssf.md: [unversioned-body-change] body changed without advancing last_updated or version (404020af1500 -> 0c699847a806)
+ERROR   skills/kenya/ke-nhif-nssf.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+ERROR   skills/morocco/ma-auto-entrepreneur-4.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/morocco/ma-auto-entrepreneur-4.md: [unversioned-body-change] body changed without advancing last_updated or version (f726eb99f9d3 -> 8bbd8d7bb597)
+ERROR   skills/morocco/ma-auto-entrepreneur-4.md: [version-removed] frontmatter version was removed
+ERROR   skills/myanmar/myanmar-company-formation-entity-choice.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/myanmar/myanmar-company-formation-entity-choice.md: [unversioned-body-change] body changed without advancing last_updated or version (1425986ec080 -> 2b87f6689dee)
+ERROR   skills/myanmar/myanmar-company-formation-entity-choice.md: [version-removed] frontmatter version was removed
+ERROR   skills/myanmar/myanmar-personal-income-tax-2.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/myanmar/myanmar-personal-income-tax-2.md: [unversioned-body-change] body changed without advancing last_updated or version (fc12746ba938 -> 950cf742d175)
+ERROR   skills/myanmar/myanmar-personal-income-tax-2.md: [version-removed] frontmatter version was removed
+ERROR   skills/myanmar/myanmar-personal-income-tax-4.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/myanmar/myanmar-personal-income-tax-4.md: [unversioned-body-change] body changed without advancing last_updated or version (68945aea7d1e -> eb7e0de960ad)
+ERROR   skills/myanmar/myanmar-personal-income-tax-4.md: [version-removed] frontmatter version was removed
+ERROR   skills/myanmar/myanmar-vat-gst-2.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/myanmar/myanmar-vat-gst-2.md: [unversioned-body-change] body changed without advancing last_updated or version (958083cea35f -> 43e67cf3b878)
+ERROR   skills/myanmar/myanmar-vat-gst-2.md: [version-removed] frontmatter version was removed
+ERROR   skills/myanmar/myanmar-vat-gst.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-08-22
+ERROR   skills/myanmar/myanmar-vat-gst.md: [unversioned-body-change] body changed without advancing last_updated or version (af9876d6ef2d -> 0e0d290f3778)
+ERROR   skills/myanmar/myanmar-vat-gst.md: [version-removed] frontmatter version was removed
+ERROR   skills/netherlands/netherlands-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-30
+ERROR   skills/netherlands/netherlands-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (acd7d2d73715 -> 9b02c6ff55ba)
+ERROR   skills/netherlands/netherlands-formation.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/netherlands/netherlands-owner-occupied-home-tax-scheme.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-01
+ERROR   skills/netherlands/netherlands-owner-occupied-home-tax-scheme.md: [unversioned-body-change] body changed without advancing last_updated or version (8cf999ca60de -> ae31eb758986)
+ERROR   skills/netherlands/netherlands-owner-occupied-home-tax-scheme.md: [version-removed] frontmatter version was removed
+ERROR   skills/netherlands/nl-deductions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/netherlands/nl-deductions.md: [unversioned-body-change] body changed without advancing last_updated or version (6818d7c62fc2 -> b5427e49f24b)
+ERROR   skills/netherlands/nl-deductions.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.2
+ERROR   skills/netherlands/nl-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-24
+ERROR   skills/netherlands/nl-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (fcacac895e90 -> f2e4dea3911b)
+ERROR   skills/netherlands/nl-income-tax.md: [version-regression] frontmatter version moved backwards: 2.2 -> 2.1
+ERROR   skills/netherlands/nl-zzp-deductions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-26
+ERROR   skills/netherlands/nl-zzp-deductions.md: [unversioned-body-change] body changed without advancing last_updated or version (bc1381c0b29a -> 16e62fdb2fc2)
+ERROR   skills/netherlands/nl-zzp-deductions.md: [version-regression] frontmatter version moved backwards: 2.2 -> 2.1
+ERROR   skills/orchestrator/fr-freelance-intake.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/orchestrator/fr-freelance-intake.md: [unversioned-body-change] body changed without advancing last_updated or version (82757841fe99 -> e456e7bf11f9)
+ERROR   skills/orchestrator/fr-freelance-intake.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/orchestrator/fr-return-assembly.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/orchestrator/fr-return-assembly.md: [unversioned-body-change] body changed without advancing last_updated or version (3438cea4bd3a -> 9fdc2f2dab1d)
+ERROR   skills/orchestrator/fr-return-assembly.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/uk/gb-tax-relief-under-the-merged-scheme.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/uk/gb-tax-relief-under-the-merged-scheme.md: [unversioned-body-change] body changed without advancing last_updated or version (74664119791a -> f9b2a9d9593d)
+ERROR   skills/uk/gb-tax-relief-under-the-merged-scheme.md: [version-removed] frontmatter version was removed
+ERROR   skills/uk/uk-capital-gains-sa108.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/uk/uk-capital-gains-sa108.md: [unversioned-body-change] body changed without advancing last_updated or version (0c8ceb6919fb -> cafcff8d139a)
+ERROR   skills/uk/uk-capital-gains-sa108.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+ERROR   skills/uk/uk-crypto-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/uk/uk-crypto-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (fc48b7cc97af -> 9bd1b7c2fe42)
+ERROR   skills/uk/uk-crypto-tax.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+ERROR   skills/uk/uk-financial-statements.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-30
+ERROR   skills/uk/uk-financial-statements.md: [heading-version-regression] body heading version moved backwards: v1.2 -> v1.1
+ERROR   skills/uk/uk-financial-statements.md: [unversioned-body-change] body changed without advancing last_updated or version (fd99364b9cb7 -> c1b011a59f4f)
+ERROR   skills/uk/uk-financial-statements.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+ERROR   skills/uk/uk-rental-sa105.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/uk/uk-rental-sa105.md: [unversioned-body-change] body changed without advancing last_updated or version (b22949d96e9d -> 7b7e2577b056)
+ERROR   skills/uk/uk-rental-sa105.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+ERROR   skills/uk/uk-student-loan-repayment.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-23
+ERROR   skills/uk/uk-student-loan-repayment.md: [heading-version-regression] body heading version moved backwards: v2.3 -> v2.2
+ERROR   skills/uk/uk-student-loan-repayment.md: [unversioned-body-change] body changed without advancing last_updated or version (de08e7c7e669 -> dd8e64a7ea61)
+ERROR   skills/uk/uk-student-loan-repayment.md: [version-regression] frontmatter version moved backwards: 2.3 -> 2.2
+ERROR   skills/uk/uk-tax-optimization.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-23
+ERROR   skills/uk/uk-tax-optimization.md: [heading-version-regression] body heading version moved backwards: v1.2 -> v1.1
+ERROR   skills/uk/uk-tax-optimization.md: [unversioned-body-change] body changed without advancing last_updated or version (a4fbdd98e4d5 -> 044fc2bfa2c0)
+ERROR   skills/uk/uk-tax-optimization.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+Sync integrity checked 64 source guide(s): 166 error(s), 0 warning(s), 0 notice(s).

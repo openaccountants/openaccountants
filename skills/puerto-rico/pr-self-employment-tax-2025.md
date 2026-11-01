@@ -2,13 +2,13 @@
 name: pr-self-employment-tax-2025
 description: >
   Puerto Rico federal self-employment tax reference for 2025 earnings and 2026 filing. Explains why the Puerto Rico-source federal income exclusion does not remove the separate social security and Medicare calculation. Covers Form 1040-SS and Schedule SE, the net-earnings threshold, the 92.35 percent adjustment, combined wage cap, Medicare component and additional Medicare thresholds. Includes examples with and without employee wages and distinguishes the filing extension from payment. Local income tax, employer payroll obligations, special occupations, optional methods and independent accountant review remain outside this source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: PR
 tax_year: 2025
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -62,8 +62,6 @@ Retain business income and expense records, the Schedule C/F inputs, all wage st
 ## Remaining review
 
 Checked 22 October 2026. Optional methods, church/ministry rules, approved exemptions, international social-security agreements, additional child tax credit, estimated-payment schedules, late-payment relief and local income-tax deductions remain outside this initial scope. No independent accountant review has occurred. Employer payroll, local unemployment/disability and workers' compensation need separate Guides.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

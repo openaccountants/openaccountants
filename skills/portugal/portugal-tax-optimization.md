@@ -1,10 +1,10 @@
 ---
 name: portugal-tax-optimization
 description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses no ano fiscal de 2026: particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, tributação conjunta, IRS Jovem, deduções à coleta, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social, PPR, englobamento e linhas vermelhas (cláusula geral anti-abuso). Fora do âmbito, ver: pt-income-tax (cálculo da Categoria B), pt-irs-employees-investment (Categorias A, E, F, G, H), pt-nhr-ifici, pt-social-contributions, portugal-vat-return, pt-corporate-tax, portugal-crypto-tax. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on: \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
-version: 1.3
+version: 1.4
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -552,8 +552,6 @@ Not yet confirmed: the "50% reduction in months 13 to 24" of self-employed contr
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e computacionais e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuintes não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, consultor fiscal ou profissional licenciado equivalente na sua jurisdição) antes da entrega ou atuação.
 
 A versão mais atualizada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

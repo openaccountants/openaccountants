@@ -1,0 +1,5 @@
+# UK Gibraltar business-profits writer verification
+
+22 October 2026. Michael, issue #398, PR #514. Read published agreement Articles 3–5, 7–9, 21 and entitlement provisions. Expanded existing corporate Guide, no new Guide count. Writer verification only; independent review/attestation pending.
+
+Preserved differences among Article 5(4) exclusion limbs, paragraph (5) complementary/cohesive-operation requirements, factual control alongside >50% numerical route, habitual contractual authority, independent-agent condition and subsidiary-control limitation. Project duration is >12 months, not a universal grace period. Article 7 attribution uses functions/assets/risks, not all source-market revenue. Article 9 separate-enterprise adjustment is not unconditional. Article 8 incidental rental test and Article 21 associated activity aggregation retain their limits. Two numerical checks cover strict ownership boundary and overlapping offshore days; neither establishes legal classification. Domestic registration, actual attribution, project/day measurement and other corridors remain open.

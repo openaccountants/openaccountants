@@ -1,0 +1,50 @@
+{
+  "old_guides": [
+    {
+      "path": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-company-income-tax.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-income-tax.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-payroll-tax.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-social-contributions.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-tax-residence.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "baseline_equal": true,
+      "hash_matches": true
+    }
+  ],
+  "exact_readme_unit_claim_failures": [
+    50
+  ],
+  "lost_content_restored": 0,
+  "cta_new_guide_absent": true,
+  "readme_stage_note": "Project-group predecessor map line 50 is exact at its immediate destination, the perimeter predecessor README. Current README intentionally supersedes it using the separately reviewed perimeter old-topics-destinations map; not an untracked deletion."
+}

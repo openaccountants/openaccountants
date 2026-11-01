@@ -1,0 +1,335 @@
+[
+  {
+    "id": "tax",
+    "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "raw_file": "tax.html",
+    "raw_sha256": "db1f5c69a30b751417ab77ab6462cc8bc8c4f1dd68d46f5736eca16ec5595332",
+    "reader_file": "tax.reader.txt",
+    "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+    "actual_exact_quote_anchor_LF": [
+      317,
+      321,
+      337,
+      365,
+      372,
+      379,
+      381,
+      383,
+      430,
+      431,
+      434,
+      452,
+      454,
+      458,
+      531,
+      537,
+      539,
+      540,
+      541,
+      542,
+      544,
+      558,
+      561,
+      565,
+      567,
+      569,
+      572,
+      575,
+      636,
+      642,
+      643,
+      645,
+      649,
+      653,
+      686,
+      689,
+      693,
+      707,
+      710,
+      734,
+      748,
+      751,
+      752,
+      759,
+      760,
+      761,
+      762,
+      765,
+      770,
+      801,
+      805,
+      810,
+      814,
+      817,
+      1043,
+      1057,
+      1059,
+      1063,
+      1071,
+      1072,
+      1108
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "rate",
+    "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "raw_file": "rate.html",
+    "raw_sha256": "30d85b62c859c57588cd35690a2bf3c9a1661e1344717c9a97132e4066b3e40e",
+    "reader_file": "rate.reader.txt",
+    "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+    "actual_exact_quote_anchor_LF": [
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      315,
+      316,
+      317,
+      318,
+      333,
+      336
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "church",
+    "url": "https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar",
+    "raw_file": "church.html",
+    "raw_sha256": "a7093defb05042158a04c7d33b73a47ff40419f4dd0e188361e540f04655bb82",
+    "reader_file": "church.reader.txt",
+    "reader_sha256": "8e21110bc2ae123a7675e4178c067c2d7f0177a0ff832588c49e85e3c62934b3",
+    "actual_exact_quote_anchor_LF": [
+      347,
+      349,
+      352,
+      357
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "support",
+    "url": "https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog",
+    "raw_file": "support.html",
+    "raw_sha256": "7a832819f7aeb6066d656225fd42d8306ac12bb23ba95f5fa01e7d1ee6eccbb8",
+    "reader_file": "support.reader.txt",
+    "reader_sha256": "fb0862bc2f01f57486f8a324ba678d729c47cc6008443441932a86a0537df07c",
+    "actual_exact_quote_anchor_LF": [
+      297,
+      302,
+      314,
+      323,
+      326,
+      333,
+      360,
+      363
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "consumption",
+    "url": "https://logir.fo/Kunngerd/98-fra-14-12-1987-um-uppgerd-av-skattligu-eginnytsluni",
+    "raw_file": "consumption.html",
+    "raw_sha256": "c6d092a7f43292b450371d8b0138837967f13e8e78cd890a850e8080bdc8cae6",
+    "reader_file": "consumption.reader.txt",
+    "reader_sha256": "bdd531f5e52010dcb57f968315cde6c9af1f0494a64e27c5b8377122a12e194a",
+    "actual_exact_quote_anchor_LF": [
+      298,
+      311,
+      315
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "national",
+    "url": "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt",
+    "raw_file": "national.html",
+    "raw_sha256": "0c473793428343f069bd55146192f510c48bcc7d59e7aaefda7d1120453ee0fa",
+    "reader_file": "national.reader.txt",
+    "reader_sha256": "c5ee6062ec3c3f1576779370049946b7ed74d2c64f35671592e5bcbce91af853",
+    "actual_exact_quote_anchor_LF": [
+      22
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "municipal",
+    "url": "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt",
+    "raw_file": "municipal.html",
+    "raw_sha256": "31362eed49002cdb57ccdee3d6a47e090dabc7811e2942bbc20bc853d00730cd",
+    "reader_file": "municipal.reader.txt",
+    "reader_sha256": "d3fd68c6779bda1340cbcf20baff6026299b8375f1ddf54f6189bdb8b439aaac",
+    "actual_exact_quote_anchor_LF": [
+      53,
+      67
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "child",
+    "url": "https://www.taks.fo/fo/borgari/fradrattur/barnafradrattur",
+    "raw_file": "child.html",
+    "raw_sha256": "638333a9b4fab8e66917bcc9e0b73e1b6cb964397499bc46ae653e073f4b4f28",
+    "reader_file": "child.reader.txt",
+    "reader_sha256": "9e4fef13626016d9b24da3eb4462dcc45404b622ad5caa7b7622f7dde27611c3",
+    "actual_exact_quote_anchor_LF": [
+      50
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "rent",
+    "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-husaleiga",
+    "raw_file": "rent.html",
+    "raw_sha256": "cdbcbeb4c952bc76e4ba520e01366c0e4d9ae77b18f137e25d22f06fb854fe17",
+    "reader_file": "rent.reader.txt",
+    "reader_sha256": "e1725158cae0c9d994dcbee82fd23db68e7cbf0c8c3c555e25dbd20bdd4fdd13",
+    "actual_exact_quote_anchor_LF": [
+      26
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "returns",
+    "url": "https://www.taks.fo/en/individuals/tax/tax-return",
+    "raw_file": "returns.html",
+    "raw_sha256": "898fd1d2cb434246397302fc2d0fd434c624d3eb8982b5451e8e80ad71b61570",
+    "reader_file": "returns.reader.txt",
+    "reader_sha256": "029ab6b1ceefd2463307e1d4dfb9bb4e2d2b1a8f5932bfdf06ada83ba0fa68a2",
+    "actual_exact_quote_anchor_LF": [
+      40
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "spouse",
+    "url": "https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur",
+    "raw_file": "spouse.html",
+    "raw_sha256": "56eb96fc06f288355ffae1a47d31a32311802b80e7a17e1e94ef703b166bdeb4",
+    "reader_file": "spouse.reader.txt",
+    "reader_sha256": "f44ee1a5080cba769b1d0f75fe4e9d082856e0b4c92d1f85b81a52c42eaf6b6b",
+    "actual_exact_quote_anchor_LF": [
+      25,
+      26
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "residence",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting",
+    "raw_file": "residence.html",
+    "raw_sha256": "7ab705a6f9027687bbf1d619113a90bd7c4bd05e506626d3355c131d731f1a30",
+    "reader_file": "residence.reader.txt",
+    "reader_sha256": "8096aa78420c7ac166ff7af80dc624a557b6ddef06c5c1441bbdd56ff79c9d5a",
+    "actual_exact_quote_anchor_LF": [
+      58
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "capital",
+    "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "raw_file": "capital.html",
+    "raw_sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262",
+    "reader_file": "capital.reader.txt",
+    "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+    "actual_exact_quote_anchor_LF": [
+      309,
+      324,
+      326,
+      331,
+      337,
+      340,
+      343,
+      346,
+      353,
+      365,
+      369,
+      372,
+      375,
+      378,
+      386,
+      388,
+      392,
+      414,
+      421,
+      425,
+      430,
+      438
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "pension",
+    "url": "https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum",
+    "raw_file": "pension.html",
+    "raw_sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42",
+    "reader_file": "pension.reader.txt",
+    "reader_sha256": "ed84f7d349a6aaccb0634da4e3e7f85bbde63fe42190c68b5c27ee64f72f4f64",
+    "actual_exact_quote_anchor_LF": [
+      411,
+      412,
+      413,
+      414
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "id": "depreciation",
+    "url": "https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174",
+    "raw_file": "depreciation.html",
+    "raw_sha256": "689e5c100bb0af72262b5b2f94d44adbacd1a130d0e157d6f409bc04d149ef6d",
+    "reader_file": "depreciation.reader.txt",
+    "reader_sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599",
+    "actual_exact_quote_anchor_LF": [
+      304,
+      315,
+      317,
+      322,
+      325,
+      340,
+      343
+    ],
+    "reading_note": "Selected quote anchors checked for ledger; full article ranges in ledger are context locators, not an assertion of full acquired-law read. Root full method reads remain attributed to root."
+  },
+  {
+    "file": "audit-2024.pdf",
+    "sha256": "b714cc60ae7361abc5facde1c8b2df0dbabc0c0348da376ed711f9af3012f71c",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "audit-2024.reader.txt",
+    "sha256": "b3e8644a81fd19d96838b484dde81112b72d8d8139e2428c4b9a3106373ec167",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "audit-2024-page-045.png",
+    "sha256": "423939ac463697a56edb870dd4e8532f6b593ec2619d74910289920f3bc72785",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "calculator-180days-150000.ax.txt",
+    "sha256": "b4dd0463406b592ea99e2da42201537872fe6fd432a91a0a1c984765e942aeed",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "calculator-365days-150000.ax.txt",
+    "sha256": "8bc645e3b42b82a8e80a5057258004832e06683f01d1e2c0e4ea0852ebcf6fa9",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "calculator-180days-150000.png",
+    "sha256": "dee0159b89b8ef97a2812fd3de5a3f21b02e7508aea956770eb05d61fcb3576d",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  },
+  {
+    "file": "root-web-receipts.json",
+    "sha256": "2f5be635a379ddc27f47446a75e727cdd45a8b0c3687c484b0786de6b4bcbd83",
+    "reading_note": "Audit selected2191–2330, church printed45; calculator retained AX fields read, no own UI replay. Whole artifact acquisition is not full reading."
+  }
+]

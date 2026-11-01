@@ -1,10 +1,10 @@
 ---
 name: se-capital-gains
 description: "Sweden capital gains tax: 30% on capital income, ISK investment savings account (schablonbeskattning), exit tax on departure. Trigger on: \"Sweden CGT\", \"capital gains Sweden\", \"Sweden 30% capital gains\", \"ISK account Sweden\", \"investeringssparkonto\", \"sell shares Sweden\", \"Sweden exit tax\", \"Sweden capital income tax\"."
-version: 1.0
+version: 1.1
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -129,8 +129,6 @@ Not yet confirmed: whether an existing deferral is taxed when its owner leaves S
 > Working paper only. ISK standard income rates change every year; confirm the
 > current year rate from Skatteverket. Have a qualified Swedish tax adviser (skatterådgivare)
 > review.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

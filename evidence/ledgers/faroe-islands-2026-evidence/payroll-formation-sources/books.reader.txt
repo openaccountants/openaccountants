@@ -1,0 +1,438 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 23 frá 20. mars 2018 um bókhald (Bókhaldslógin)
+20. mars 2018Nr. 23
+Løgtingslóg um bókhald
+(Bókhaldslógin)
+Samsvarandi samtykt Løgtingsins staðfestir og kunnger løgmaður hesa løgtingslóg:
+Bókhaldsskylda
+§ 1. Løgtingslógin er galdandi fyri vinnurekandi fyritøkur av einum og hvørjum slagi, uttan mun til eigaraviðurskifti ella ábyrgdarviðurskifti, sum eru stovnaðar í Føroyum, og fyri vinnuvirksemi, sum fyritøkur, ið eru heimahoyrandi uttanlands, útinna í Føroyum.
+Stk. 2. Løgtingslógin er harumframt galdandi fyri hesar fyritøkur, felagsskapir og samskipanir o.tíl.:
+1)   Fyritøkur o.tíl., sum hava skyldu at rinda avgjald, ella sum hava fulla ella avmarkaða skattskyldu til landið, í tann mun tær ikki eru fevndar av stk. 1. TAKS kann heilt ella partvíst undantaka einstakar fyritøkur o.tíl. frá løgtingslógini. Er fyritøkan o.tíl. harumframt fevnd av nr. 2, kann undantak bert gerast eftir avtalu við viðkomandi myndugleika.
+2)   Fyritøkur o.tíl., ið sum treyt fyri at fáa beinleiðis stuðul frá landinum skulu lata roknskaparupplýsingar, í tann mun tær ikki eru fevndar av stk. 1. Játtandi myndugleikin kann heilt ella partvíst undantaka einstakar fyritøkur frá løgtingslógini. Er fyritøkan harumframt fevnd av nr. 1, kann undantak tó bert gerast eftir avtalu við TAKS.
+Stk. 3. Løgtingslógin er ikki galdandi fyri hesar fyritøkur, felagsskapir og samskipanir o.tíl.:
+1)   Fyritøkur o.tíl., sum eru fevndar av reglunum um roknskaparhald landsins.
+2)   Fyritøkur o.tíl., sum einans eru fevndar av roknskaparreglum, ásettar í ella við heimild í kommunustýrislógini.
+Samskifti
+§ 2. Landsstýrismaðurin kann áseta reglur um, at skrivligt samskifti við myndugleikar um viðurskifti, sum eru fevnd av hesi løgtingslóg ella reglum, givnar við heimild í hesi løgtingslóg, skal vera talgilt.
+Stk. 2. Landsstýrismaðurin kann áseta nærri reglur um talgilt samskifti, undir hesum reglur um nýtslu av ávísum kt-skipanum, serligum talgildum formatum og talgildari undirskrift o.tíl.
+Stk. 3. Landsstýrismaðurin kann áseta, at avgerðir, tiknar av Skráseting Føroya ella øðrum myndugleikum eftir reglum, sum eru givnar eftir stk. 1 ella 2, eru endaligar innan fyrisitingina.
+§ 3. Landsstýrismaðurin kann áseta reglur um, at myndugleikar kunnu lata avgerðir og onnur skjøl eftir hesi løgtingslóg ella eftir reglum, givnar við heimild í hesi løgtingslóg, uttan undirskrift, við maskinendurgivnari undirskrift, ella á annan samsvarandi hátt, ella við at nýta tøkni, sum tryggjar eintýdda eyðmerking av tí, sum hevur latið avgerðina ella skjalið. Avgerðir og skjøl av hesum slagi eru javnsett við avgerðir og skjøl, ið hava persónliga undirskrift.
+Stk. 2. Landsstýrismaðurin kann áseta reglur um, at avgerðir og onnur skjøl, ið einans eru ávikavist tiknar ella givnar við støði í elektroniskari dátuviðgerð, kunnu verða skrivað út við einans myndugleikanum sum sendara.
+§ 4. Har tað eftir hesi løgtingslóg ella eftir reglum, givnar við heimild í hesi løgtingslóg, verður kravt, at eitt skjal, sum er latið av øðrum enn einum myndugleika, skal verða undirskrivað, kann kravið lúkast við at nýta tøkni, sum tryggjar eintýdda eyðmerking av tí, sum hevur latið skjalið, sbr. tó stk. 2. Slík skjøl eru javnsett við skjøl, ið hava persónliga undirskrift.
+Stk. 2. Landsstýrismaðurin kann áseta nærri reglur um frávik frá undirskriftarkravinum. Í slíkum førum kann avgerast, at tað fyri ávís sløg av skjølum ikki kann víkjast frá kravinum um persónliga undirskrift.
+Allýsingar
+§ 5. Ein fyritøka er vinnurekandi ella útinnir vinnuvirksemi, tá ið hon veitir vørur, rættindi, lán, tænastur o.tíl., sum fyritøkan vanliga fær viðurgjald fyri.
+Stk. 2. Uttan mun til stk. 1 verður ein fyritøka mett sum vinnurekandi ella sum at útinna vinnuvirksemi, um hon er fevnd av løgtingslóg um parta- og smápartafeløg, kongligari fyriskipan um ígildissetan fyri Føroyar av lov om erhvervsdrivende fonde, kongligari fyriskipan um ígildissetan fyri Føroyar av lov om erhvervsdrivende virksomheder ella í aðrar mátar er vinnurekandi sambært lóg. Hetta er galdandi uttan mun til, um fyritøkurnar heilt ella partvíst eru undantiknar frá krøvunum í omanfyrinevndu lógum.
+§ 6. Sum roknskapartilfar verður roknað
+1)   skrásetingar, undir hesum transaktiónssporið, sbr. § 7, stk. 1,
+2)   møguligar lýsingar av bókhaldinum, undir hesum avtalur um elektroniskt dátuumbýti, sbr. § 16, stk. 2,
+3)   møguligar lýsingar av skipanum, ið varðveita og finna varðveitt roknskapartilfar fram, sbr. § 16, stk. 3,
+4)   skjøl og onnur skjalprógv, sbr. § 8,
+5)   aðrar upplýsingar, sum eru neyðugar fyri eftirlitssporið, sbr. § 7, stk. 2,
+6)   roknskapir, sum skulu gerast sambært lóg, og
+7)   møguligar grannskoðanarprotokollir.
+Stk. 2. Um ikki annað er ásett í aðrari lóggávu, fevnir ein roknskapur, sbrt. stk. 1, nr. 6, eisini um møguligar leiðslufrágreiðingar og møguligar grannskoðanarátekningar o.a., ið er knýtt at roknskapinum.
+Stk. 3. Grannskoðaraprotokollir, sbrt. stk. 1, nr. 7 er trúnaðartilfar, sum bert verður givin atgongd til, um Skráseting Føroya ella ein annar almennur myndugleiki, ið hevur heimild eftir aðrari lóggávu, krevur at fáa atgongd til grannskoðaraprotokollina.
+§ 7. Transaktiónssporið merkir í hesum føri tað samband, sum er millum einstøku skrásetingarnar og ársroknskapin, skattauppgerðina og avgjaldsuppgerðina, studningsroknskapin ella samsvarandi roknskaparuppsetan hjá tí bókhaldsskylduga, ið skal gerast sambært lóg.
+Stk. 2. Eftirlitssporið merkir í hesum føri tær upplýsingar, ið skjalprógva, at skrásetingarnar eru rættar.
+§ 8. Skjøl merkir í hesum føri eitt og hvørt neyðugt skjalprógv fyri transaktiónum, sum verða skrásettar í bókhaldinum, uttan mun til, um skjalprógvið er á elektroniskum miðli, pappíri ella øðrum miðli.
+Stk. 2. Uttanhýsis skjøl merkir í hesum føri eitt og hvørt skjalprógv, sum kemur frá øðrum enn tí, sum hevur bókhaldsskylduna. Onnur skjøl verða mett sum innanhýsis skjøl.
+Almenn bókhaldskrøv
+§ 9. Bókhaldið skal leggjast til rættis og fremjast í samsvari við góðan bókhaldssið og við fyriliti fyri slagi og vavi fyritøkunnar. Harumframt skal bókhaldið leggjast til rættis og fremjast soleiðis, at roknskapartilfarið ikki verður oyðilagt, beint burtur ella avlagað, eins og tað skal tryggjast móti villum og misnýtslu.
+Stk. 2. Verður roknskapartilfarið rættað, skulu bæði upprunaliga innihaldið og broytingin týðiliga síggjast í tilfarinum.
+Skrásetingar og skjalprógv
+§ 10. Allar transaktiónir skulu skrásetast neyvt við fyriliti fyri slagi og vavi fyritøkunnar. Transaktiónirnar skulu skrásetast skjótast gjørligt eftir, at viðurskiftini, sum eru orsøk til skrásetingarnar, eru til staðar. Ein fyritøka, sum vegna sítt slag og vav ikki er før fyri at skráseta keyp ella sølu, kann í staðin skráseta við grundarlagi í dagligu kassauppgerðunum.
+Stk. 2. Skrásetingarnar skulu, í tann mun, tað ber til, gerast í somu raðfylgju sum transaktiónirnar. Skrásetingarnar skulu vísa til skjølini, sum hoyra til skrásetingarnar, og skulu innihalda upplýsingar, sum vísa nær og hvar einstaka skrásetingin er skrásett í bókhaldinum.
+Stk. 3. Skrásetingarnar skulu, í tann mun tað er neyðugt eftir slagi og vavi fyritøkunnar, stemmast av við goymslurnar, undir hesum kassagoymslurnar og likvidgoymslurnar.
+Stk. 4. Skrásetingarnar skulu gerast í donskum krónum, í evrum ella í viðkomandi fremmandum gjaldoyra. Ein fyritøka kann bert skifta til skrásetingar í øðrum gjaldoyra, tá roknskaparárið byrjar, uttan so, at hetta fremmanda gjaldoyra er vorðið viðkomandi, áðrenn nevnda roknskaparár byrjar.
+Stk. 5. Um skrásett verður í fremmandum gjaldoyra, t.d. í evrum, skulu tað í roknskapartilfarinum vera upplýsingar, undir hesum um kursin á transaktiónsdegnum ella líknandi umrokningarfaktorar, sum altíð gera tað møguligt at umrokna til danskar krónur. Landsstýrismaðurin kann við kunngerð áseta nærri reglur um teir umrokningarfaktorar, sum eru nevndir í 1. pkt.
+§ 11. Allar skrásetingar skulu kunna førast til roknskapin, uppgerðina ella uppsetingina, nevnd í § 7, stk. 1. Tølini í ávikavist roknskapinum, uppgerðini ella uppsetingini skulu kunna verða býtt sundur í tær skrásetingar, sum tær eru samansettar av.
+§ 12. Ein og hvør skráseting skal skjalprógvast við skjølum. Eru uttanhýsis skjøl skrivað út, skulu hesi, í tann mun, tað ber til, nýtast. Skjøl skulu upplýsa tað, sum er neyðugt fyri at eyðmerkja eftirlitssporið, undir hesum greidliga vísa transaktiónsdagfesting og upphædd.
+Stk. 2. Um skrásett verður við støði í elektroniskum dátuumbýti, skal tann bókhaldsskyldugi harumframt skjalprógva einstøku flytingina og hvar einstaka skrásetingin, í mun til tíð, er í bókhaldinum.
+Varðveitsla av roknskapartilfari
+§ 13. Tann bókhaldsskyldugi skal varðveita roknskapartilfarið á tryggan hátt í 5 ár frá endanum av tí roknskaparári, sum tilfarið viðvíkur. Tilfarið skal varðveitast soleiðis, at tilfarið í øllum varðveitslutíðarskeiðinum sjálvstøðugt og eintýtt kann verða funnið fram.
+Stk. 2. Verður roknskapartilfarið varðveitt á elektroniskum miðli, mikrofilmi ella á annan tílíkan hátt, skal tilfarið, uttan viðgerð, útrokning ella tillaging, kunna verða skrivað út í klárskrift.
+Stk. 3. Lýsingar av skipanum at finna og skriva út roknskapartilfar í klárskrift, sbr. § 16, stk. 3, nr. 2, skulu vera til skjals í klárskrift.
+Stk. 4. Ásetingarnar í stk. 1-3 eru ikki galdandi fyri kassareglar og samsvarandi innanhýsis skjøl.
+§ 14. Roknskapartilfarið skal varðveitast á ein slíkan hátt, at almennir myndugleikar o.o., sum eftir aðrari lóggávu hava rætt til at krevja innlit í roknskapartilfarið, uttan trupulleikar kunnu sleppa framat tilfarinum.
+Stk. 2. Roknskapartilfarið kann varðveitast í elektroniskum formi í Føroyum ella uttanlands, um tann bókhaldsskyldugi
+1)   varðveitir tilfarið í samsvari við hesa løgtingslóg,
+2)   altíð kann fáa hendur á tilfarið og geva atgongd til tilfarið her í landinum,
+3)   varðveitir møguligar lýsingar av nýttum skipanum o.tíl. og møguligum neyðugum loyniorðum í Føroyum, og
+4)   ansar eftir, at roknskapartilfarið verður skrivað út í klárskrift, ella er tøkt í øðrum viðurkendum fíluformati.
+Stk. 3. Verður roknskapartilfarið ikki varðveitt elektroniskt, skal tað varðveitast á pappíri í Føroyum, sbr. tó stk. 4-6.
+Stk. 4. Roknskapartilfarið kann varðveitast á pappíri í Danmark, Finnlandi, Íslandi, Noregi ella Svøríki. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi.
+Stk. 5. Roknskapartilfarið fyri verandi mánaða og undanfarna mánaða kann varðveitast á pappíri uttanlands. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi.
+Stk. 6. Innanhýsis og uttanhýsis skjøl, ið viðvíkja virkseminum hjá tí bókhaldsskylduga uttanlands, kunnu varðveitast á pappíri í viðkomandi landi alla ta tíðina, tilfarið skal varðveitast, sbr. § 13. Annað roknskapartilfar, ið viðvíkur virkseminum hjá tí bókhaldsskylduga uttanlands, kann fyri verandi mánaða og undanfarnu 3 mánaðirnar eftir somu treytum varðveitast á pappíri í viðkomandi landi. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi.
+§ 15. Heldur bókhaldsskyldan uppat, skal seinasta virkandi leiðsla ansa eftir, at roknskapartilfarið framhaldandi verður varðveitt í samsvari við hesa løgtingslóg. Verður fyritøkan tikin av, við at skiftirætturin leggur uppí, kann skiftirætturin gera av, at onnur enn seinasta virkandi leiðsla skal varðveita roknskapartilfarið.
+Stk. 2. Í øðrum førum, har leiðslan fer frá, skulu limirnir í fráfarandi leiðsluni ansa eftir, at roknskapartilfarið fyri tíðarskeiðið fram til fráfaringina verður varðveitt í samsvari við hesa løgtingslóg. Tá ið nýggj leiðsla tekur við, skulu limirnir í fráfarnu leiðsluni lata nýggju leiðsluni roknskapartilfarið.
+Lýsingar av skipanum, ið skráseta og varðveita roknskapartilfar o.tíl.
+§ 16. Tann bókhaldsskyldugi skal gera eina lýsing av skráseting av transaktiónum og varðveitslu av roknskapartilfari, sum hóskar til virksemi fyritøkunnar. Lýsingin skal gera tað møguligt hjá einum, ið kemur uttanífrá, og sum hevur eina rímiliga vitan um roknskap og ta nýttu tøknina, altíð at kunna fylgja, hvussu skrásetingarnar verða gjørdar, og hvussu roknskapartilfarið verður funnið og skrivað út í klárskrift. Lýsingin skal vera skrivað á einum máli, sum er vanligt fyri almennar myndugleikar, og við at nýta vanlig orð og fakorð á økinum.
+Stk. 2. Lýsingin av, hvussu transaktiónir verða skrásettar, skal í minsta lagi hava nøktandi upplýsingar um,
+1)   hvussu skipanirnar tryggja, at tilfar, ið er grundarlag undir skrásetingum, undir hesum eisini avtalur í sambandi við elektroniskt dátuumbýti, sum er grundarlag undir skrásetingum, er fullgott og neyvt,
+2)   hvussu skipanirnar tryggja eina fullgóða og neyva skráseting av transaktiónum, undir hesum av konteringsleiðbeining, brúktu kt-skipanunum, manuellum mannagongdum o.tíl., og
+3)   hvussu sjálvvirkandi skrásetingar verða gjørdar, undir hesum útrokningargrundarlag og útrokningarfrymil.
+Stk. 3. Lýsingin av, hvussu roknskapartilfar verður varðveitt, skal í minsta lagi hava nøktandi upplýsingar um
+1)   tær mannagongdir, sum verða nýttar í sambandi við varðveitslu av roknskapartilfari,
+2)   hvussu roknskapartilfar verður funnið og skrivað út í klárskrift, undir hesum upplýsingar um loyniorð o.tíl. og upplýsingar um, hvussu bronglaðar dátur verða umsettar, og
+3)   hvussu skráseting í fremmandum gjaldoyra verður umroknað til danskar krónur.
+Stk. 4. Uttan mun til stk. 1-3 nýtist tann bókhaldsskyldugi ikki at gera nevndu lýsingar, um hann nýtir eina kt-standardskipan at skráseta transaktiónir og varðveita roknskapartilfar. Undantak eftir 1. pkt. er treytað av, at
+1)   munandi broytingar ikki eru gjørdar í kt-standardskipanini, og at
+2)   tann, sum veitir kt-standarskipanina, hevur gjørt slíkar lýsingar, sum fyritøkan hevur í varðveitslu.
+Atgongd hjá almennum myndugleikum til roknskapartilfar
+§ 17. Í tann mun ein almennur myndugleiki eftir aðrari lóggávu kann krevja innlit í roknskapartilfarið hjá tí bókhaldsskylduga, kann almenni myndugleikin krevja, at tann bókhaldsskyldugi uttan kostnað gevur myndugleikanum atgongd til alt, sum er neyðugt fyri at finna fram og lesa roknskapartilfarið, eins og myndugleikin kann krevja, at tilfarið verður latið myndugleikunum, tá ið biðið verður um tað. Er tilfarið goymt í útlandinum, kann myndugleikin tó krevja, at tilfarið verður sent ella latið myndugleikunum. Harumframt kann myndugleikin krevja, at skrásetingar í fremmandum gjaldoyra, eisini evrum, verða umroknaðar til danskar krónur. Er roknskapartilfarið, uttanhýsis skjøl undantikin, á øðrum málum enn føroyskum ella donskum, kann myndugleikin krevja, at tann bókhaldsskyldugi uttan kostnað umsetir tilfarið til føroyskt.
+Stk. 2. Atgongdin til roknskapartilfarið eftir stk. 1 er eisini galdandi, um tilfarið er í varðveitslu hjá triðjamanni.
+Stk. 3. Um roknskapartilfarið verður varðveitt í elektroniskum formi, kann ein myndugleiki krevja, at roknskapartilfarið verður latið í einum viðurkendum fíluformati ella verður sent talgilt í einum viðurkendum formati eftir reglum, ásettar við heimild í § 2.
+Stk. 4. Skráseting Føroya kann tó altíð krevja viðkomandi roknskapartilfar.
+Stk. 5. Tann bókhaldsskyldugi skal svara umbøn myndugleikans eftir stk. 1 skjótast gjørligt. Viðvíkur umbønin virksemi uttanlands, skal tann bókhaldsskyldugi svara umbønini í seinasta lagi ein mánað eftir, at myndugleikin hevur sent umbønina.
+Revsiásetingar
+§ 18. Um ikki hægri revsing er ásett í aðrari lóggávu, verður við sekt revsaður tann, sum brýtur ásetingarnar í §§ 9-17.
+Stk. 2. Í reglum, ið verða givnar sambært hesi løgtingslóg, kann revsing verða ásett við sekt fyri brot á reglurnar.
+Stk. 3. Revsiábyrgd kann verða áløgd løgfrøðiligum persónum sambært reglunum í 5. kapitli í revsilógini.
+Stk. 4. Fyrningarfreistin fyri revsiábyrgd er 5 ár.
+§ 19. Verður roknskapartilfarið ikki varðveitt soleiðis, sum ásett er í § 14, sbr. § 17, og hevur hetta vanda fyri misnýtslu við sær, kann tann bókhaldsskyldugi við dómi missa rættin at varðveita roknskapartilfar uttanlands. Frádømingin er millum 1 og 5 ár, roknað frá endaligum dómi. Meðan málið verður viðgjørt, kann rætturin við úrskurði gera av, at tann bókhaldsskyldugi ikki kann varðveita roknskapartilfar uttanlands, fyrr enn málið er endaliga avgjørt. Við dómi í málinum kann verða avgjørt, at kæra hevur ikki steðgandi virknað.
+Gildiskoma og skiftisreglur
+§ 20. Henda løgtingslóg kemur í gildi 1. apríl 2018, og er galdandi fyri roknskaparár, ið byrja 1. apríl 2018 ella seinni.
+Stk. 2. Samstundis, sum henda løgtingslóg kemur í gildi, fer úr gildi løgtingslóg nr. 75 frá 24. oktober 1978 um bókhaldsskyldu. Tó eru higartil galdandi reglur framhaldandi galdandi fyri roknskaparár, sum byrjaðu innan 1. apríl 2018.
+Í Tinganesi, 20. mars 2018
+Aksel V. Johannesen (sign.)
+løgmaður
+Lm. nr. 51/2017
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Vinnumálaráðið
+Útgávudagur: 23-03-2018
+Tilvísingar
+Avtøkur
+Løgtingsmál
+Løgtingsmál nr: 51/2017
+Kunngerðablaðið
+Kunngerðarblað  2018 A - Løgtingslóg 23 frá 20. mars 2018
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

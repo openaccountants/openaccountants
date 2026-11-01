@@ -1,0 +1,20 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+      "sha256": "b6a8c0a19f3121e2785893fdcee4fd129c2e0b24b26ce85ff84155476dc6b347",
+      "locators": "Articles 1, 4, 14\u201319, 21\u201322, 24, 28\u201329; Protocol 3"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+      "sha256": "b16d03affd01b0638e14ed004a49aa3d3ea96b10141d0a824c46a1476197b75d",
+      "locators": "Printed pp21\u201328, 30\u201331, 40"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152",
+      "retrieval": "web tool; no local hash",
+      "locators": "Treaty summary pension and arbitration rows; conflicts explicitly recorded"
+    }
+  ]
+}

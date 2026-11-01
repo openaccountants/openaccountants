@@ -1,0 +1,39 @@
+{
+  "status": "Read-only GitHub observations; no external message/comment/review sent",
+  "records": [
+    {
+      "number": 1009,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1009",
+      "title": "[MD] Tax overview: refresh to 2026 from the Fiscal Code",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "237daf15839a241e6685ae5e7b8a9c54cd2d9853",
+      "merge_commit_sha": "52d5195caccb4872ec3de9972a03399f386e4b2e",
+      "merged_at": "2026-10-30T20:50:53Z",
+      "observed_utc": "2026-10-30T21:15:51.624Z"
+    },
+    {
+      "number": 1010,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1010",
+      "title": "[MD] Company formation: refresh to 2026 (Law 135/2007, ASP fees)",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "1842b83d6915e4879a75aa1f393d274e91b1561a",
+      "merge_commit_sha": "3504d383beb1440f0fb391d29a06ce6e5ed6a18f",
+      "merged_at": "2026-10-30T20:51:24Z",
+      "observed_utc": "2026-10-30T21:15:51.624Z"
+    },
+    {
+      "number": 1011,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1011",
+      "title": "[MD] Tax optimization: refresh to 2026 from the Fiscal Code",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "3c68fa1150bd1e2f6e4a723c37bcd8c6797bc826",
+      "merge_commit_sha": "7bf59a0bfc79c25d13ecc3d58062ba65df055aec",
+      "merged_at": "2026-10-30T20:51:56Z",
+      "observed_utc": "2026-10-30T21:15:51.624Z"
+    }
+  ],
+  "disposition": "Preserve the deeper local country drafts, adopt source-verified additions and retain every incoming unit with destinations. Independent country review remains pending."
+}

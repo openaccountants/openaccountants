@@ -1,0 +1,44 @@
+{
+  "reviewed_commit": "8b9c5551be5a00884b472567e01ce8063918cbfc",
+  "decision": "INCOMPLETE; DO NOT PUBLISH AS WHOLE-PACK APPROVED",
+  "reason": "1923immutableledgerrowsunread;010quotecontextrepairpending;49standalonecasesunrecomputed.",
+  "row_counts": {
+    "total": 3882,
+    "substantively_read_at_claim_source_scope": 1959,
+    "no_issue_in_checked_scope": 1950,
+    "citation_or_source_interpretation_failures": 9,
+    "unread": 1923,
+    "fully_verified_all_year_commencement_chain": 0
+  },
+  "mechanical_provenance": {
+    "all_source_files_present": 3882,
+    "all_recorded_source_text_hashes_match": 3882,
+    "all_quotes_found_after_layout_normalization": 3882,
+    "all_provided_contexts_found": 3882,
+    "actual_fresh_fetch_of_all_sources_by_reviewer": false,
+    "writer_read_dates": {
+      "2026-10-30": 2596,
+      "2026-10-31": 1286
+    }
+  },
+  "examples": {
+    "all_retained_oa_check_blocks_recomputed": 50,
+    "current_Guide_oa_check_blocks": 20,
+    "retained_evidence_oa_check_blocks": 30,
+    "manual_Guide_examples_and_source_assumptions_checked": 12,
+    "incoming_PR_repair_examples_recomputed_separately": 8,
+    "standalone_cases_inventory": 58,
+    "standalone_cases_independently_recomputed": 9
+  },
+  "predecessor_topics": {
+    "parent_units": 1564,
+    "additional_child_units": 818,
+    "mechanical_hash_and_nonempty_destination_pass": true,
+    "full_semantic_preservation_pass": false,
+    "selected_topic_spotchecks": 14,
+    "failed_topic_spotchecks": 5
+  },
+  "origin_main_reference_at_ownership_read": "c37e9d6898e2ddbbc14dec335d17cf9e59855029",
+  "findings": 10,
+  "next_review_work": "Corporate381-555;individual636;payroll615;social497;remaining49standalone;010delta;preservation/temporalchecks."
+}

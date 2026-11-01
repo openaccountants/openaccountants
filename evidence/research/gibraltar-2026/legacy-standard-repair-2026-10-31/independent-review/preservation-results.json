@@ -1,0 +1,109 @@
+{
+  "errors": [],
+  "guides": [
+    {
+      "slug": "gi-company-formation",
+      "original_content_lines": 70,
+      "original_topics": 7,
+      "old_controls": 0,
+      "new_controls": 2,
+      "description_words": 87,
+      "description_appended": true,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-income-tax-assessment-appeals",
+      "original_content_lines": 70,
+      "original_topics": 13,
+      "old_controls": 1,
+      "new_controls": 1,
+      "description_words": 91,
+      "description_appended": false,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-property-stamp-duty",
+      "original_content_lines": 81,
+      "original_topics": 12,
+      "old_controls": 3,
+      "new_controls": 0,
+      "description_words": 85,
+      "description_appended": true,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-residential-property-disposals",
+      "original_content_lines": 56,
+      "original_topics": 10,
+      "old_controls": 2,
+      "new_controls": 0,
+      "description_words": 88,
+      "description_appended": true,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-spain-tax-residence",
+      "original_content_lines": 78,
+      "original_topics": 8,
+      "old_controls": 2,
+      "new_controls": 0,
+      "description_words": 96,
+      "description_appended": false,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-training-planning-and-startup-reliefs",
+      "original_content_lines": 12,
+      "original_topics": 5,
+      "old_controls": 0,
+      "new_controls": 2,
+      "description_words": 86,
+      "description_appended": true,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-uk-employment-pensions-treaty",
+      "original_content_lines": 71,
+      "original_topics": 10,
+      "old_controls": 2,
+      "new_controls": 0,
+      "description_words": 91,
+      "description_appended": false,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    },
+    {
+      "slug": "gi-uk-investment-income-treaty",
+      "original_content_lines": 114,
+      "original_topics": 12,
+      "old_controls": 4,
+      "new_controls": 0,
+      "description_words": 98,
+      "description_appended": false,
+      "other_frontmatter_identical": true,
+      "CTA_presence_and_suffix_identical": true,
+      "full_standard_notice_present": true
+    }
+  ],
+  "total_original_lines": 552,
+  "total_topics": 77,
+  "total_old_controls": 14,
+  "total_new_controls": 5,
+  "description_appends": 4,
+  "ledger_rows": 29,
+  "source_excerpt_bindings": 46,
+  "binding_errors": []
+}
