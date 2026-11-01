@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Morocco: auto-entrepreneur regime, tax year 2026
 
-## Scope ([CGI 2026 edition, Art. 42 bis and 42 ter](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+## Scope
 
 This skill covers individuals taxed as auto-entrepreneurs (AE) in Morocco for 2026: income tax on turnover collected, the droit complémentaire, client withholding, registration, declarations, penalties and leaving the regime. The currency is the dirham (MAD, DH). The tax authority is the Direction Générale des Impôts (DGI).
 
