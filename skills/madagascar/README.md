@@ -36,3 +36,7 @@ Eight tier-2 source drafts, read against the official DGI 2026 codes and the sig
 [Overview](mg-tax-overview.md) routes computations; [formation](mg-company-formation.md) prepares the official SARL dossier, with company-law/fee gaps explicit. Operational filing instructions remain partial until the actual forms, boxes, portal validation and payment references have been read.
 
 The precise radio/posted-publication date activating the July LFR is not established; transition transactions remain outside this candidate. The old salary ceiling and territorial-only resident summary were corrected from the 2026 CDI. The social rates and old quarterly schedule are not carried into executable computations. The full old-topic map is [here](../../evidence/ledgers/mg-old-topic-destinations.md); one ledger per Guide lives alongside it. Full source captures are private and are not committed.
+
+## Annual property-tax follow-on
+
+[Annual land and built-property tax](mg-annual-property-tax.md) adds the distinct IFT/IFPB computation and statutory declaration job. Its [figure ledger](../../evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md) cites the national baseline and July collection-title amendment. Independent review is pending. Actual commune tariffs, valuations, flat charges, live forms/payment references and publication activation dates remain held. This addition does not replace any of the eight reviewed source drafts above or complete any of the seven partial domains.

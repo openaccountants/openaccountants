@@ -1,0 +1,7 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "path": "skills/madagascar/README.md",
+  "before_sha256": "6ebc32315e2f0c21632dd6f801565cb3339b16924f94eb941928a628af56209b",
+  "literal_append": "\n## Annual property-tax follow-on\n\n[Annual land and built-property tax](mg-annual-property-tax.md) adds the distinct IFT/IFPB computation and statutory declaration job. Its [figure ledger](../../evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md) cites the national baseline and July collection-title amendment. Independent review is pending. Actual commune tariffs, valuations, flat charges, live forms/payment references and publication activation dates remain held. This addition does not replace any of the eight reviewed source drafts above or complete any of the seven partial domains.\n",
+  "after_sha256": "eb68d28e49fb0206795798be902880897ec64dbc1e056bea36bf97ad4b367e2e"
+}

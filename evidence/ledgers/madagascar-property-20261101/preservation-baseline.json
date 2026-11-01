@@ -1,0 +1,179 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+      "git_blob": "a2862f5f172200642fbf34d18a46595bbb8e59d3",
+      "sha256": "f0ab81f12997a38eb94ba7e55a491dd455e823b190b9b8e57ed911044298cc56",
+      "bytes": 878
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+      "git_blob": "78e0b65284372ef59716e35038bde878f6840b0c",
+      "sha256": "1b2f19788147503ca9a27f50f056201ac01b3cec9547c9d9ec29110d526f3641",
+      "bytes": 5049
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+      "git_blob": "f8a8d07e9623af7428c998c4cb08d27d32bbf4b1",
+      "sha256": "485e790ca4ec4bc1fdd00ba2f0920dc04c0a0eb3208ab20609b77a70d52acb85",
+      "bytes": 819
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+      "git_blob": "5fa4d3a8af4bd145edd5eae9af20dea1b1a98e22",
+      "sha256": "797e20098705e441cd686b1c7a0f97c335dbd3b875eefc9f10e022e0c08a14a0",
+      "bytes": 5777
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+      "git_blob": "68692efa01603800772372989dd57d708f4eb4c5",
+      "sha256": "fe6b730083c1fa81d585fa3ba74183687ce276709a5a08b1377a33270c75ea95",
+      "bytes": 2289
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+      "git_blob": "bb5e5488ba8494ca851505161631b597ebb6c421",
+      "sha256": "b388593330051121b04385335ebc13e982dc9436bb65ee0118c2db3050053f89",
+      "bytes": 11034
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+      "git_blob": "fc5a82923f2f783af9be21cff369612f42849201",
+      "sha256": "c225556a77ae58f2c26dcfcb7f3ad3e8e03d470c01fa68f5850e5140521990af",
+      "bytes": 29387
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+      "git_blob": "18be5124ca07cdebeb2ff8ab0554b58533fa8285",
+      "sha256": "11217a54edd37875a8f58b26d557193584ee45cd898c6a024740ae43c219e751",
+      "bytes": 50536
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+      "git_blob": "5b2f5c7c9958b55800bfcccfe0bd40b40d3332b8",
+      "sha256": "1abd67cc15983077700f473785b2ef79eb23edfaa5691dea72b9e260b8a64bd6",
+      "bytes": 816
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+      "git_blob": "5bb0ae7bcd51c6399a2c3c46dde5ff17c699ce87",
+      "sha256": "a957eef400cc26ec67febc5cd9ee9c0877d56695419ad36f40a3da7611c829a7",
+      "bytes": 4695
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+      "git_blob": "5c26bc3397de884a84b0a0494de227a45f5c116b",
+      "sha256": "587c699f4816aca6f2be1e03b75658005f175f9b0ae4ab5f8da86085db0f3da4",
+      "bytes": 3925
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+      "git_blob": "0f02b218de38b447592f6383e8a67211e118055e",
+      "sha256": "818e08102d4ff163b29a57e3b9530e517300852532bb63a0874e35d324f1be78",
+      "bytes": 3675
+    },
+    {
+      "path": "evidence/ledgers/mg-company-formation.md",
+      "git_blob": "e49fcf388d2dfe8f5de911a2ccdfc00a183d03f0",
+      "sha256": "d6bfe97eb8f594fed7f8e22ea309a9cdb31b61d4d687776b7d6a1f5494858a73",
+      "bytes": 1767
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "git_blob": "d1b20573e6ab96f41deeceb85f893886439c3aa2",
+      "sha256": "9dc1441e2a1aa0e9611537b76b5d177bdc5b745b6abd08dc480707f1cf8359ae",
+      "bytes": 7580
+    },
+    {
+      "path": "evidence/ledgers/mg-cross-border.md",
+      "git_blob": "485857e46cee6cddfde045dc2d3307d1b9cb142f",
+      "sha256": "15fd2bcc003ca44db41b6b11fcb843cd2fe667b5b1e972460101a76a8a266c17",
+      "bytes": 3362
+    },
+    {
+      "path": "evidence/ledgers/mg-income-tax.md",
+      "git_blob": "763c664f19e261a0e4c444a8cc300b200efc1002",
+      "sha256": "fd39053353510da35253d0f9ab6e1823b3ce574b678ae8b133e16084c682465c",
+      "bytes": 6803
+    },
+    {
+      "path": "evidence/ledgers/mg-old-topic-destinations.md",
+      "git_blob": "28406a23eaad44873419eeadfbf0017c890d5d64",
+      "sha256": "2135557e6b1fe0c875b50846e184206a0985a946aaab17863b128736110eab71",
+      "bytes": 8126
+    },
+    {
+      "path": "evidence/ledgers/mg-payroll-social.md",
+      "git_blob": "2b27896db06354f49b261e2ab033cdce8969747f",
+      "sha256": "eabe180cea4971b3521bc5c150b2043044935ce5158db126c65fad9eaead88a4",
+      "bytes": 2851
+    },
+    {
+      "path": "evidence/ledgers/mg-tax-overview.md",
+      "git_blob": "7d2193f18a6982ce6e63f928629610bc9c1edf71",
+      "sha256": "5623d46a1bcea0582b261d84b7af0feafcf90867a16477b4013c58f703d3da91",
+      "bytes": 1827
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "git_blob": "be6a1180f2c93e527c1b8e398b2c55d73bf1bdd7",
+      "sha256": "aba45a767d60ef2c0a50c944a36cb3ab368b53a1b102011b199178c9f626754c",
+      "bytes": 5382
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "git_blob": "2651941ecdfea7f5053c001abe85e8f88f2483d4",
+      "sha256": "f899597b1881f496ce991c476efb98240062f24ffc89c6cbffd0a26f9818dc26",
+      "bytes": 5523
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "git_blob": "5e77fb06040fe6a87420e64e6fe5ac955ca464d1",
+      "sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4",
+      "bytes": 7506
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "git_blob": "a14325355ce9edee0b81aef96b3a6af24033bab8",
+      "sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3",
+      "bytes": 10758
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "git_blob": "7c2c4f440352ced269272e4375ca134fc36503b1",
+      "sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff",
+      "bytes": 8371
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "git_blob": "e6f786a96607792b3069658199aec24d0b625ec9",
+      "sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf",
+      "bytes": 9743
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "git_blob": "be167ab1b55a4eb492b94f3b9adcc54614db6f5e",
+      "sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6",
+      "bytes": 8461
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "git_blob": "68f0415844230b5349fe9582eba23e1053e9a3d9",
+      "sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f",
+      "bytes": 8121
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "git_blob": "96827d5a2be02bdc71516e1a548569fa9afbc7ee",
+      "sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36",
+      "bytes": 9191
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "git_blob": "130aac74be845a105d4c44b68db782386b167057",
+      "sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3",
+      "bytes": 10601
+    }
+  ]
+}

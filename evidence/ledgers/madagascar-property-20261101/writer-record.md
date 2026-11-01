@@ -1,0 +1,5 @@
+# Madagascar annual property-tax writer checkpoint
+
+New job mg-annual-property-tax, source-cited tier-2 draft, independent review pending. Base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. 50 rule/figure rows, two recomputing cases with minimum/base boundaries. Eight prior Guides and 21 prior country evidence files are byte-preserved; zero old body replacements. Existing platform metadata/CTA unchanged. New Guide carries no platform keys, licence stamp, review attribution or CTA. No accountant attestation or country-completion claim.
+
+Commencement (LFI24/LFR22) remains unproved; actual commune decisions/forms/portal/payment details and other declared holds are not fabricated. Cached official sources are reused offline, with actual read scopes and PDF/text hashes. Writer checks establish syntax/arithmetic/preservation, not independent review. The writer is authorised to push a backup draft country PR after checks. Parent assigns a fresh independent reviewer; no merge is authorised by these writer checks.
