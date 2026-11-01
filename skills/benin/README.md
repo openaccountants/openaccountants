@@ -5,13 +5,13 @@ not_applicable: {}
 covered_by:
   XB: bj-cross-border-withholding
 partial:
-  IT-IND: "Monthly salary ITS refreshed; complete business/property/capital and exceptional-pay computations remain open."
+  IT-IND: "Monthly salary ITS refreshed; Rental IRF and annual TFU jobs added as pending-review drafts; business/capital and exceptional-pay computations remain open."
   IT-CORP: "Ordinary IS working paper refreshed; all special expense/incentive/sector and authenticated filing cases not completed."
   VAT: "Monthly working paper refreshed; threshold ministerial order, product classification and authenticated workflows remain open."
   SC: "CNSS source failed in direct/web/ordinary browser; current bases, rates, ceilings and CNSS filing not verified."
   PR: "VPS and salary schedules refreshed; CNSS and full authenticated payroll filing remain open."
   TP: "Pricing/reporting screen added; current forms, documentation order detail and CbCR exchange/secondary application remain open."
-  XB: "Domestic withholding screen added; individual treaties, special distributions/platform rents/gains and authenticated filing remain open."
+  XB: "Domestic withholding screen added; individual treaties, special distributions/gains, platform commencement and authenticated filing remain open."
 ---
 
 # Benin: partial 2026 tax pack
@@ -36,3 +36,9 @@ Tracked by [BJ issue #446](https://github.com/openaccountants/openaccountants/is
 ## Independent source review
 
 The [initial review](../../evidence/ledgers/benin-review-20261101/review.md) checked 113 ledger rows, 81 legacy-topic destinations and 16 examples. The [focused closure](../../evidence/ledgers/benin-review-closure-20261101/review.md) closes its three findings and six destination corrections. Both original findings and separate repair evidence are preserved. Acceptance covers the stated partial preparation jobs only. All seven domains remain partial, CNSS remains unverified, and neither accountant attestation nor an authenticated filing is claimed.
+
+## Property and rental additions, 1 November 2026
+
+Two distinct pending-review jobs supplement the eight preserved Guides: [annual property TFU](bj-property-tfu.md) and [rental IRF/withholding](bj-rental-income-tax.md). TFU uses its own rights-holder, valuation, communal rate, exemption and payment rules. Rental IRF separates the landlord’s annual base from tenant/platform withholding. The June platform text is recorded, but its first operative withholding period remains held. No lease-registration duty or property-gain computation is claimed.
+
+All seven domains remain partial. These additions have writer checks only; they do not inherit the independent review of the earlier eight Guides and do not constitute accountant attestation or a certified filing. Source/rule ledgers and the immutable preservation baseline are in `evidence/ledgers/benin-property-20261101/`.

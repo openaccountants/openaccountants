@@ -1,0 +1,6 @@
+{
+  "initial_examples": {"files": 2, "blocks": 4, "failures": 3, "failing_case": "Adjusted rental IRF and remitted credit", "wrong_expected": {"irf":294600,"assessment_with_ortb":298600,"cash_reconciliation_before_instalments":10600}},
+  "repair": {"reason":"Writer arithmetic slip; the formula recomputed correctly", "correct_expected":{"irf":295200,"assessment_with_ortb":299200,"cash_reconciliation_before_instalments":11200}},
+  "final_examples": {"files":2,"blocks":4,"failures":0,"missing":0},
+  "independent_review":"pending"
+}
