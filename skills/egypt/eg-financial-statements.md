@@ -96,6 +96,75 @@ expected:
 
 Example 3: EGX-listed joint-stock company. Files with the ETA, FRA and EGX. New auditing standards from the financial year starting on or after 1 January 2027.
 
+**Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified, and where it differs from the tables above the tables win.
+
+**Conservative defaults**
+
+When a fact is uncertain, the AI must take the safer, more compliant path and tell the user it is doing so:
+
+- If the taxpayer is a company, assume audited EAS financial statements are required and must be filed with the tax return, unless it is clearly a partnership (and even then, confirm: practice and lender/bank requirements often force an audit anyway).
+- If the taxpayer is an individual (sole proprietor or professional), assume NO formal statutory financial statements: but assume the ETA still expects proper supporting accounts (income, costs, fixed-asset/depreciation schedules) behind the return. See eg-bookkeeping.
+- Do not assume an entity is on the simplified MSME regime unless turnover is confirmed within the threshold and the taxpayer has opted in. See eg-sme-tax.
+- Flag, do not guess, thresholds and effective dates. Egypt is mid-reform: new SME accounting/auditing standards and a 2027 overhaul of auditing standards are in train (see Section 6). Always tell the user to verify the current rule.
+**2a. Sole proprietor (منشأة فردية) and professional (مهنة حرة)**
+
+- **Sole proprietor taxation and filing**: A self-employed individual is taxed as a natural person under Income Tax Law No. 91 of 2005. They do not prepare or file a statutory set of financial statements (no audited balance sheet filed at a registry). What they DO: - Keep proper books and records: see eg-bookkeeping. Egypt's digital ecosystem (e-invoicing منظومة الفاتورة الإلكترونية, e-receipt منظومة الإيصال الإلكتروني) is increasingly the backbone of those records. - File the annual personal income-tax return by 31 March following the fiscal year. Commercial/industrial income (نشاط تجاري وصناعي) and professional income (مهن حرة) are declared on the return with supporting accounts: a statement of revenues and deductible costs, depreciation, and net taxable profit. - There is no statutory audit requirement for the individual's accounts. A voluntary review by an accountant is common where amounts are large or a bank asks for it. - A simplified MSME taxpayer (Law No. 6 of 2025, turnover ≤ EGP 20m) is even lighter: simplified record-keeping and stand-alone simplified forms, with the small-enterprise turnover-based regime instead of full profit accounting. See eg-sme-tax. *Verify the current turnover bands and opt-in conditions.*
+
+Plain-language framing for the user: "As a sole proprietor in Egypt you file your income-tax return with supporting accounts: not a full audited set of financial statements. If you form a company, that changes; see below."
+
+**2b. Company (شركة): what changes on incorporation**
+
+- **What changes on incorporation**: Once you incorporate (most commonly a limited liability company / ش.ذ.م.م or a joint-stock company / شركة مساهمة), you become a separate legal person and: - You must prepare annual financial statements under EAS: typically a statement of financial position (balance sheet / قائمة المركز المالي), statement of comprehensive income (قائمة الدخل الشامل), statement of cash flows (قائمة التدفقات النقدية), statement of changes in equity (قائمة التغير في حقوق الملكية), and notes (الإيضاحات المتممة). - These statements must generally be audited by a registered auditor (مراجع حسابات مقيد): except partnerships (see Section 4). - The audited financial statements are filed with the corporate income-tax return to the ETA (corporate returns are due within 4 months of year-end). - Regulated and listed entities additionally file with the FRA and, if EGX-listed, with the Egyptian Exchange; company records are maintained at GAFI / the commercial registry (السجل التجاري).
+
+**Sole proprietor vs Company comparison table**
+
+|  | Sole proprietor / professional | Company |
+| --- | --- | --- |
+| Legal person | Natural person | Separate legal entity |
+| Formal financial statements | **No** | **Yes (EAS)** |
+| Statutory audit | **No** | **Yes** (except partnerships) |
+| Filed with | ETA income-tax return + supporting accounts | ETA tax return + (if regulated/listed) FRA/EGX |
+| unverified: Deadline | **31 March** (individual) | **Within 4 months** of year-end (corporate) |
+| Standards | n/a (records only) | EAS (IFRS-aligned) |
+**3a. What EAS is**
+
+- **What EAS is**: The Egyptian Accounting Standards (EAS / المعايير المحاسبية المصرية) are the mandatory reporting framework for companies in Egypt. They are based on and largely converged with IFRS, but are not identical: there are local departures and a lag behind the latest IFRS amendments. Key points (research-verified): - The current comprehensive EAS set was issued in 2015, with significant amendments in 2019 and 2023. - The 2019 update added standards mirroring IFRS 9 (financial instruments), IFRS 15 (revenue from contracts with customers), and IFRS 16 (leases). - In early 2023 a standard similar to IFRS 17 (insurance contracts) was issued, effective for periods beginning on or after 1 July 2024. - EAS includes special/simplified requirements for small and medium-sized entities (SMEs).
+
+Caveat to surface to the user: EAS is IFRS-aligned, not IFRS itself. Recognition or measurement under EAS can differ from current IFRS (e.g., timing of newly adopted standards, certain local treatments). Never tell a user "EAS = IFRS." *Verify the specific standard.*
+
+**3b. EAS vs full IFRS: who uses what**
+
+- **EAS vs full IFRS applicability**: - Public interest entities (PIEs): listed companies, public-subscription companies, securities companies, and investment funds established by banks and insurance companies: apply EAS. - EGX-listed companies report under EAS (the IFRS-converged Egyptian framework), not a separate "full IFRS" mandate. *Verify for a specific issuer, as some prepare additional IFRS group packs.* - Banks follow standards set by the Central Bank of Egypt (CBE); insurers and other non-bank financial entities follow standards/regulation set by the FRA (الهيئة العامة للرقابة المالية). - Multinational subsidiaries often also prepare full IFRS for group consolidation in addition to local EAS statutory accounts.
+**4a. Who must be audited**
+
+- **Who must be audited**: Under the Companies Law and the Capital Market Law, all companies must prepare annual audited financial statements: except partnership companies (شركات الأشخاص) and limited partnership companies. The audit must be performed by a registered auditor (مراجع حسابات مقيد بسجل المراجعين). - Joint-stock (شركة مساهمة) and LLC (ش.ذ.م.م): audit required. - Partnerships (general / limited): statutory carve-out: but lenders, banks, partners, or the ETA may still require audited or reviewed accounts in practice. *Verify for the specific entity.* - Sole proprietor / professional: no statutory audit (natural person).
+
+**4b. Auditing standards**
+
+- **Auditing standards, quality management, and 2027 reform**: - Egypt's auditing standards are the Egyptian Standards on Auditing, Review and Other Assurance Services (ESAROAS), adopted by Ministry of Investment Decision No. 166/2008 and aligned with the International Standards on Auditing (ISA). - Quality management: ISQM 1 and ISQM 2 are being applied (reported effective from 2025 per the profession's SMO action plan). - Major reform ahead: Prime Minister Decree No. 3725 of 2025 approved new Egyptian auditing/financial-review standards that cancel the existing standards from 1 January 2027: the first comprehensive update since 2008. *Flag this date to any user planning a 2027+ audit.*
+Layla is a freelance software developer registered as a sole proprietor (منشأة فردية), turnover ~EGP 1.2m in 2025.
+
+- Financial statements? No. As a natural person she files an income-tax return, not statutory audited financials.
+- Audit? No statutory audit.
+- What she files: annual personal income-tax return by 31 March 2026 for FY2025, with supporting accounts (revenues, deductible costs, depreciation, net taxable profit). She keeps records via the ETA digital systems (eg-bookkeeping).
+- Could the MSME regime help? Her turnover is under EGP 20m, so she may qualify for the simplified regime with even lighter record-keeping: route to eg-sme-tax to confirm bands and opt-in. *Verify thresholds.*
+
+Reply: "You don't prepare or file formal financial statements. File your income-tax return with supporting accounts; no audit is required."
+Layla converts to a single-shareholder/limited liability company to win larger contracts.
+
+- Financial statements? Yes: full EAS set (financial position, comprehensive income, cash flows, changes in equity, notes).
+- Audit? Yes: by a registered auditor (LLC is not a partnership).
+- What she files: corporate income-tax return within 4 months of year-end, with the audited EAS statements attached; company records at GAFI / commercial registry.
+- Standards: EAS (IFRS-aligned). She does not report under full IFRS unless a group/lender requires it.
+
+Reply: "Incorporating triggers audited EAS financial statements filed with your corporate tax return: a significant step up in compliance from the sole proprietor return."
+**Escalate to a qualified Egyptian accountant (محاسب قانوني) when:**
+
+- **Escalation triggers**: - The entity is a company and needs statutory financial statements or an audit: the auditor must be registered and sign the report. - The entity is regulated (bank, insurer, securities firm, fund): FRA/CBE sector standards apply, outside this skill's scope. - A transaction touches a standard where EAS departs from IFRS (financial instruments, leases, revenue, insurance, deferred tax). - Anything spanning the 2027 auditing-standards changeover (Decree 3725/2025) or the new SME accounting/auditing standards still being rolled out. - Group/IFRS consolidation, transfer pricing, or business-combination accounting.
+**PROHIBITIONS**
+
+- **AI prohibitions**: The AI applying this skill must NOT: - Tell a sole proprietor or professional that they must file statutory financial statements or be audited. Natural persons file the income-tax return with supporting accounts: not audited financials. - State that EAS is identical to IFRS. EAS is IFRS-aligned with local departures and an adoption lag. Flag standard-specific differences. - Assert audit thresholds, turnover bands, or effective dates as settled. Egypt is mid-reform (SME standards; 2027 auditing overhaul; MSME bands). Mark these "verify" and route to a qualified accountant. - Sign, certify, or imply audit opinion or assurance. Only a registered Egyptian auditor (مراجع حسابات مقيد) may audit and sign. - Apply this skill to banks, insurers, or other FRA/CBE-regulated entities: they follow sector standards outside scope. - Replace a credentialed reviewer. All output is research-verified and pending sign-off by a qualified Egyptian accountant.
+
 ## Self-checks
 
 - Inputs trace to source documents.

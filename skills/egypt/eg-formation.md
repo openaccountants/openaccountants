@@ -149,6 +149,87 @@ expected:
 
 **Case 4: two founders with investors.** LLC through GAFI: multiple owners and outside capital rule out a sole proprietorship.
 
+**Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified, and where it differs from the tables above the tables win.
+
+**Conservative defaults**
+
+- **Default to registering, not waiting.** Operating without a tax card / tax file is non-compliant. If income is at or near any threshold, assume registration is required and confirm with ETA.
+- **Conservative VAT trigger.** VAT Law art. 16 reads EGP 500,000. The old version treated EGP 250,000 as the trigger; that figure stays unconfirmed (see "Not yet confirmed:"), so ask ETA before relying on either.
+- **Default to "syndicate first" for regulated professions.** Lawyers, doctors, engineers, accountants and similar professions generally **cannot practise lawfully** without syndicate (نقابة) membership: treat it as a prerequisite, not optional.
+- **Default to sole proprietorship (منشأة فردية) for a solo freelancer** unless there is a specific reason for an LLC (see Section 5). Do not recommend an LLC by default.
+- **Never present a fee, threshold, rate, or procedure as final** without an Egyptian accountant's sign-off and a same-day check against ETA / GAFI portals. Fees and thresholds change frequently by decree.
+**Decision table**
+
+**Decision table: Simplified vs General**
+
+| unverified: Factor | Lean **Simplified** (Law 6/2025) | Lean **General** (Law 91/2005) |
+| --- | --- | --- |
+| unverified: Annual turnover | ≤ **EGP 20,000,000** (eligibility cap) | Any; required if over the cap |
+| unverified: Profit margin | **High margin**: turnover tax (0.4% to 1.5% of turnover) beats profit tax | **Thin margin / loss-making**: % of turnover can exceed tax on small/zero profit |
+| Bookkeeping appetite | Wants **simpler** filing & quarterly VAT | Can maintain **full accounts** and substantiate expenses |
+| Deductible expenses | Few real, documentable expenses | **Large documentable expenses** that lower net profit |
+| unverified: Stability | Comfortable with a **5-year commitment** | Wants flexibility year to year |
+| Activity status | Eligible activity (not excluded/regulated-out) | Excluded from the simplified regime |
+
+**Rule of thumb**
+
+**Rule of thumb:** a low-cost solo freelancer with a high margin usually pays **less under the simplified turnover regime**; a low-margin reseller or a business with heavy documentable costs may pay **less under the general system**. **Model both** and get accountant sign-off before electing: the simplified regime is a **5-year lock-in** and enrolment is **not automatic** (a request to ETA must be submitted and accepted). See `eg-sme-tax`.
+**5. Sole proprietor vs LLC comparison**
+
+Most solo freelancers should default to a sole proprietorship (منشأة فردية). An LLC (شركة ذات مسؤولية محدودة) formed through GAFI adds cost and compliance but provides limited liability and a separate legal personality.
+
+**Sole proprietor vs LLC comparison table**
+
+| Factor | Sole proprietor (منشأة فردية) | LLC (ش.ذ.م.م) via GAFI |
+| --- | --- | --- |
+| Legal personality | None: same as the individual | Separate legal entity |
+| Liability | **Unlimited personal** liability | **Limited** to capital contributed |
+| Owners | One individual | One+ (single-member LLC is possible: **verify**) |
+| Set-up authority | ETA + commercial register / syndicate | **GAFI** (الهيئة العامة للاستثمار) |
+| Minimum capital | N/A | **No statutory minimum** reported (verify) |
+| Set-up cost | Low (nominal register fees) | Higher: GAFI incorporation fees, notarisation, bank account, lawyer/accountant |
+| Compliance | Lighter; can use simplified regime | Heavier; audited accounts, corporate filings |
+| Income tax | Personal income tax (general) or simplified turnover regime | Corporate income tax (the SME turnover regime may apply if eligible: **verify**) |
+| Best for | Solo freelancers, professionals, small traders | Businesses wanting liability protection, partners/investors, larger contracts, scaling |
+
+**When an LLC makes sense**
+
+- You want **limited liability** (e.g. higher-risk contracts, debt exposure).
+- You have or plan **partners or outside investors**.
+- **Clients/tenders require** a company rather than an individual.
+- You are **scaling** beyond a one-person practice.
+
+**Forming an LLC via GAFI (overview only)**
+
+- **LLC formation steps via GAFI**: 1. Create an account on the GAFI e-portal and reserve a company name. 2. Submit the incorporation application with the articles of association, founders' IDs/passports, and required approvals; pay incorporation fees. 3. Obtain the commercial register entry and the company tax card / tax file from ETA. 4. Register for VAT/e-invoicing (if applicable) and social insurance for the company and any employees. > Incorporation fees are reported in the **low hundreds of USD** range depending on entity type, plus professional fees. **Verify all current GAFI fees, capital rules, and the document checklist**: these change. Forming an LLC should be done with a credentialed Egyptian lawyer/accountant.
+**7. Tier 2, Reference, and checklist**
+
+**Tier 2: escalate to a credentialed Egyptian accountant/lawyer when**
+
+- The activity may sit on the **commercial vs professional** line (which register/syndicate applies).
+- A **regulated profession** is involved (syndicate licensing nuances).
+- The taxpayer is a **foreign national** or has cross-border / free-zone / SEZ considerations.
+- Turnover is near the **VAT threshold** or the **EGP 20m** simplified-regime cap.
+- The taxpayer is **choosing between sole proprietorship and an LLC**, or forming an LLC at all.
+- There is **single-client concentration** or business **fragmentation** (simplified-regime exclusion risk: see `eg-sme-tax`).
+- **Prior-year non-registration**, back taxes, or penalty exposure exists.
+**Registration checklist (verify each item before filing)**
+
+- [ ] National ID (or passport + residence permit for foreigners).
+- [ ] Proof of business address (lease/ownership): confirm activity allows it.
+- [ ] **ETA tax file opened** + **tax card (البطاقة الضريبية)** issued.
+- [ ] **Commercial register** entry (commercial/industrial activity) **or** confirm professional/syndicate path applies.
+- [ ] **Syndicate (نقابة) membership** secured (regulated professions).
+- [ ] **Regime chosen**: simplified (Law 6/2025) vs general: modelled and signed off.
+- [ ] **VAT registration** done if over the (verified) threshold.
+- [ ] **E-invoicing / e-receipt** onboarding done if in scope.
+- [ ] **Social insurance (NOSI)** registration done; reference wage chosen.
+- [ ] **(LLC only)** GAFI incorporation, articles of association, name reservation, company tax card, bank account.
+
+**Deregistration / closing down**
+
+- **Deregistration process**: To stop activity, notify the ETA and close the tax file, settle any outstanding income tax / VAT and file final returns, cancel the commercial register entry and/or syndicate membership, and stop social insurance contributions with NOSI. For an LLC, follow the GAFI liquidation/strike-off procedure. Deregistering for VAT requires meeting ETA conditions. Verify the current step-by-step deregistration procedure and any clearance requirements: closing badly leaves dormant liabilities and penalties.
+
 ## When to refuse or refer
 
 Refer to a credentialed Egyptian accountant or lawyer when the activity sits between commercial and professional, a regulated profession raises licensing questions, the client is a foreign national or in a free zone or special economic zone, turnover is near a threshold, the client is choosing sole proprietor or LLC, there is single-client concentration or fragmentation, or there are unregistered prior years, back taxes or penalties.
