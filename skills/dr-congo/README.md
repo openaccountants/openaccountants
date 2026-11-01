@@ -13,24 +13,24 @@ covered_by:
 partial:
   IT-IND: "IRPP residence/global-income/selected base/scale/reporting rewrite accepted as conditional source-faithful research only; carried law, full category calculations, special workers, family/minimum interactions and authenticated filing remain unresolved."
   IT-CORP: "Ordinary 2026 IS calculation/selected expense/loss/payment preparation rewrite accepted as conditional source-faithful research only; complete allowances, interest, special regimes, transition and authenticated filing remain unverified."
-  VAT: "2026 source-bound VAT workpaper drafted; carried law, rate implementation, full exemptions/tax points/deductions, imported-service collection and authenticated filing remain held; independent review pending."
-  SC: "CNSS base, branch rates, declaration and penalty workpaper drafted from primary texts; current-order chain, minimum wage, caps, special categories, INPP/ONEM and authenticated filing remain held; independent review pending."
-  PR: "2026 monthly withholding/expatriate-employer levy source workpaper drafted; carried law, monthly IRPP implementation, special workers and authenticated filing remain held; independent review pending."
+  VAT: "2026 source-bound VAT workpaper drafted; carried law, rate implementation, full exemptions/tax points/deductions, imported-service collection and authenticated filing remain held; independent source corrections closed for this conditional draft scope."
+  SC: "CNSS base, branch rates, declaration and penalty workpaper drafted from primary texts; current-order chain, minimum wage, caps, special categories, INPP/ONEM and authenticated filing remain held; independent source corrections closed for this conditional draft scope."
+  PR: "2026 monthly withholding/expatriate-employer levy source workpaper drafted; carried law, monthly IRPP implementation, special workers and authenticated filing remain held; independent source corrections closed for this conditional draft scope."
   TP: "Source-checked 2026 pricing/documentation/reporting draft; implementing file contents, current electronic forms, CbC exchange lists and related procedures are not confirmed."
   XB: "Source-checked 2026 nonresident-payment draft; technical-service/passive-income overlap, earlier-period royalties, treaty/sector relief, current forms and full residence/PE/credit/exit methods remain unverified."
 ---
 
 # DR Congo: tax pack
 
-**Partial pack, 1 November 2026.** Two existing 2025 Guides, the overview and formation, remain byte-for-byte unchanged. The VAT and payroll/social Guides now have conditional source-bound research drafts, with fresh independent review pending. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f 05e 8c 9785a 0573787887e 403e 07 daf 20a 41e 75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde 60a 16e 113f 9056297e 6d 6 ae 09d 0294 bec 075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
+**Partial pack, 1 November 2026.** Two existing 2025 Guides, the overview and formation, remain byte-for-byte unchanged. The VAT and payroll/social Guides now have conditional source-bound research drafts, with fresh independent source corrections closed for this conditional draft scope. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f 05e 8c 9785a 0573787887e 403e 07 daf 20a 41e 75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde 60a 16e 113f 9056297e 6d 6 ae 09d 0294 bec 075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
 | Income tax | [Income tax](cd-income-tax.md) | 2026 | Source-reviewed conditional research; legal-chain reconciliation remains open |
 | Company tax | [Corporate income tax](cd-corporate-income-tax.md) | 2026 | Source-reviewed conditional workpaper; currentness and live-filing holds remain |
-| VAT or sales tax | [VAT or GST](cd-vat-gst.md) | 2026 | Conditional research draft; independent review and stated legal/procedure holds pending |
-| Social contributions | [Payroll social](cd-payroll-social.md) | 2026 | Conditional research draft; independent review and stated legal/procedure holds pending |
-| Payroll | [Payroll social](cd-payroll-social.md) | 2026 | Conditional research draft; independent review and stated legal/procedure holds pending |
+| VAT or sales tax | [VAT or GST](cd-vat-gst.md) | 2026 | Conditional research draft; independent source corrections closed, stated legal/procedure holds remain |
+| Social contributions | [Payroll social](cd-payroll-social.md) | 2026 | Conditional research draft; independent source corrections closed, stated legal/procedure holds remain |
+| Payroll | [Payroll social](cd-payroll-social.md) | 2026 | Conditional research draft; independent source corrections closed, stated legal/procedure holds remain |
 | Transfer pricing | [Pricing, documentation and reporting](cd-transfer-pricing.md) | 2026 | Source-checked draft; stated implementation gaps remain |
 | Cross-border | [Nonresident payments](cd-cross-border.md) | 2026 | Source-checked draft; stated classification/treaty/procedure gaps remain |
 
@@ -40,8 +40,8 @@ A current-year label or a passed source review of one job does not establish com
 
 - Income tax: preserve the completed 42-row independent source review and 14-topic destination map; resolve carried law, complete category calculations, family/minimum and other stated interactions before claiming completion.
 - Company tax: preserve the completed independent source review of the ordinary IS workpaper and its 41-row ledger; resolve complete allowances/interest, specialist regimes, reform transitions and authenticated filing before claiming completion.
-- VAT: independently review the new source ledger and transaction-version/deduction cases; resolve the stated law, implementation and procedure holds before completion.
-- Social contributions: independently review the new CNSS base, branch allocation, filing and penalty workpaper; resolve current orders, minimum/cap/special categories and INPP/ONEM.
+- VAT: preserve the completed independent source review and resolve the stated law, implementation and procedure holds before completion.
+- Social contributions: preserve the completed independent CNSS source review and resolve current orders, minimum/cap/special categories and INPP/ONEM.
 - Payroll: resolve monthly IRPP application, carried law, special workers and live filing; keep the separate expatriate-employer and annual-report obligations.
 - Preserve the accepted review evidence and independently review any later changes to tax content or source conditions before publication.
 - Confirm the current TP file specifications, annual electronic return, CbC notifications/exchange list and actual submission/receipt process.
@@ -72,3 +72,5 @@ The [IRPP ledger](../../evidence/ledgers/cd-income-tax.md) records 42 rows and t
 ## VAT and payroll follow-on: independent review pending
 
 The [new evidence directory](../../evidence/dr-congo-remaining-20261101/README.md) records 37 VAT and 34 payroll/social rule rows, actual primary-source reading scopes, exact predecessor topic destinations and four recomputing cases. It builds on main `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8` after [historical PR1173](https://github.com/openaccountants/openaccountants/pull/1173) merged. The four earlier reviewed Guides and all earlier evidence remain unchanged. No new source review, operative-law completeness, accepted filing or accountant attestation is claimed. All seven domains remain partial.
+
+The [VAT/payroll independent review and repair closure](../../evidence/dr-congo-remaining-review-20261101/closure-repair-1/closure-review.md) checked all71rows,27predecessor destinations and four independent computations. Three finding groups closed against exact Guide/ledger hashes: principal-payment relief conditions, IRPP source locators and original-versus-August industrial-material scope. This accepts conditional source fidelity only; all seven domains and stated legal/implementation/filing holds remain partial.
