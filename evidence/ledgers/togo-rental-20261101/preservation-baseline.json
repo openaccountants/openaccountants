@@ -1,0 +1,290 @@
+{
+  "frozen_prior_head": "ea5f83bc4f60aad2b7f5fff85e921d27e0b360fa",
+  "unchanged_files": [
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-company-formation.md",
+      "sha256": "c7005c2ab49bbaff1d4c5274836996004ae5236e598ee9ed74fb2a352abd5fe5",
+      "git_blob": "020600f9fa4b9af450b85a5c4f6a7b6d00f25c54"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-corporate-income-tax.md",
+      "sha256": "93a310220e6e757c9e053923fdec2a03a300a6b7fb996e8457479571f3ec129e",
+      "git_blob": "b18cf10bbf3f942ba7fc0801ac2598af888d6bad"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-cross-border.md",
+      "sha256": "827cfe34d32269269baf2a261f3c1d6fbc30b1d7ef6346f6680022429eb0a19a",
+      "git_blob": "94b812cc49ffdb0959034a787a7db0aa015ae7d8"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-income-tax.md",
+      "sha256": "851f096549a65faef460714a15506c166abd3f6b0ed5cc06c083f5913ef00305",
+      "git_blob": "ec146a6e48bdadf7b09a26dcf7af6d6ccb329631"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-payroll-social.md",
+      "sha256": "a908e97cc645fa7e0dfe2c082939dff673f4c7494f357ef467b90d5c250f930d",
+      "git_blob": "96ef55043b8888b3538a5a733e82190c3dc9c879"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-tax-overview.md",
+      "sha256": "9377dddcc836891d0de8eb4fcbc3d8049110a2628da21f3437ad2822139ff56f",
+      "git_blob": "d822197739f119ed348db76c6b97f42fa83d4993"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-transfer-pricing.md",
+      "sha256": "de7a8acde9ecc31a4e0c5fbbff334f150a9ca6288e704dbae3bddd6cd8296107",
+      "git_blob": "3cfb603a9238f43f3de0ab79fde179a9b2cae8f6"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/ledgers/tg-vat-gst.md",
+      "sha256": "77c0f9111e1f7cd598be697569613e242522368833ac211f59c8905e39b76ab5",
+      "git_blob": "1d45d2c039af2adfa3aa2c597c871945919956b0"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/old-hashes.json",
+      "sha256": "74c1b99aa0b2199a7b8aa0d56355ddb1f77fa9f87a763b3c731a0860faf0d414",
+      "git_blob": "d191ab5b839ba396cd3bcbda2920d3300d60fb86"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/old-topics.md",
+      "sha256": "08b08e5170696a932a30afcb1340595740b1ddf357c37c2f23ff65fabef99b4b",
+      "git_blob": "f090d6f1df6f57af3aec798b69b3ad5e499db142"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/review-status.md",
+      "sha256": "3c9f167ea035cf09eb20cf9491c306932c9cb6c1748eeba51640cdca89d4dbf6",
+      "git_blob": "98d0858b9cc38e055143d44569eb28fc272560cb"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/sources.json",
+      "sha256": "4cefe58fa9f507b3453bdab88b5bb5be27ffdb0e40fb5d889f446ae996b390c6",
+      "git_blob": "8c056da8a06defc48b08b6dec3b061cf11be17a9"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-pack/validation.txt",
+      "sha256": "43b4f94d8bb6848dd8c9987402f6abfb66fe6543387ab7532a53d3f500520319",
+      "git_blob": "01b02d91dbebcb7f8903ffd4c353555511bc2974"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/closure-candidate-hashes.json",
+      "sha256": "2643a083536633676e410df0ccc2814fa6e4653c861639cde1e44bc322912016",
+      "git_blob": "717d9b7c14333b7e8b90b30583da3076458a6a40"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/focused-closure-validation.txt",
+      "sha256": "29604668b233dd2bb7cfae1ca32f513035561b2089d1c5e8aca65cad4d137d88",
+      "git_blob": "5107dbb0d917567dc8d4af42d4944b6c2d8d745f"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/focused-closure.md",
+      "sha256": "11cc7b99e0f26890ef87e27ec653d1258aaf35228984836347df10116520913c",
+      "git_blob": "1a676ab8e250fe4ad6ee7d26ff106be106ab85e1"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/independent-review.md",
+      "sha256": "57b7af5bfd467ee907a2c2c0d7cb97eb42f1167a333d17a02f416e56bc6ebcd4",
+      "git_blob": "bb8bfa899899f9287ff5528fcfe41d773d0210df"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/independent-validation.txt",
+      "sha256": "1be20719665ce83dcc932966714c97942d4ac91f26287edc9418f5c4d3c84bd9",
+      "git_blob": "124465980fd9dcb992d78132b7a1968aaa69d999"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/ledger-row-review.tsv",
+      "sha256": "79fe6505a49ae223b7b6d4a8bcece12bf446f32b45df0a08fe56078ae61d9ece",
+      "git_blob": "a43b8f1e1c38c5510f9324ba823ce3d0ca4bd2d1"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/quote-matching.txt",
+      "sha256": "61c645cfcb08ddb1fbca15df7dc284cfd98da10d38edf5748d594c19e83924ff",
+      "git_blob": "200c255cff834c0f6aee86d69204ae38e773f863"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/validate-review.py",
+      "sha256": "70edf5ef3498713ce1cfdc6af9c2ac9d7be9702de2085210a99f383e10d7f678",
+      "git_blob": "816a8381d50ce1a5b1be5788b70259a0b231de45"
+    },
+    {
+      "path": "docs/research/2026-11-01-togo-review/writer-corrections.json",
+      "sha256": "45e60d3fba1e7d91d4849e7273f6cb5a756f5f7ed37ba8e08b07c3d62558f17c",
+      "git_blob": "22eebee3eab4ba703ea598110c6466373f8b7086"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/committed-validation.json",
+      "sha256": "df129f710bd89aa698790e38fe5fc035c6ccc1d7af1be7d4d24eb08117c52832",
+      "git_blob": "79f28c9035b8e1a1811a0a4fae726993f30bd198"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/freeze-receipt.json",
+      "sha256": "08f152af27a3c1160eb2929c3b1c2a320a41ab89128a5d38798d7aa1ee9675d5",
+      "git_blob": "367c9fd718703f7a8761334d6df929ffafffeddd"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/old-topic-destinations.json",
+      "sha256": "8221fe973852432be12c879117844b66f3069e203e6570b697ba4073c1c74b19",
+      "git_blob": "e7f0ab08c3a28205b92f00d52609ad6e4d1b8537"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/preservation-baseline.json",
+      "sha256": "362a0e135868298bfc1afc3d6fe0f2b7aae198512eddca02134145ca456943c3",
+      "git_blob": "439e9f59f9685272b73cfd413895973e7a5d4a00"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/readme-addition.json",
+      "sha256": "80e81626abe944dab28c7633da18222ab0e3b89f4b20cb2ece4399dd28eb76ea",
+      "git_blob": "ceb0a4d8beebd3f6620d5993eafa611d32692663"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/reviewer-repairs.json",
+      "sha256": "5ef8cd8fb8ed9de5782d86046a208f17e8960b4beadda6260c9478f95c281cfb",
+      "git_blob": "0146a73ba2945d52944b35f74120820bf0a15b06"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/source-identities.json",
+      "sha256": "b096cd4da3181e3ef4f844dd196164a4772aff0de50d4a815b0f9b7df07be073",
+      "git_blob": "c697b9a0fbffb16dddb08c3608d98bf11017c535"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.json",
+      "sha256": "9df4862a08c2729688d9a28d210d692b75c059c09342cc0105122e9b7de6434a",
+      "git_blob": "fd7978fc9c46805d7bf3902692d2f923f5119263"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.md",
+      "sha256": "40db8e95919b36876e3cf31ee996a4e27c014b8492129118c3e46f5e845bffc1",
+      "git_blob": "fc8140f8d5801cb4599eeec43b4fd76a95ef2fae"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/writer-checks.json",
+      "sha256": "bb2f20a919f2d94dfb2803dfb60f8c24e3ea79e1698553620bd92ece886ed9b9",
+      "git_blob": "fb3fa5f25d58daa187ce45854e9f226e55fc3377"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/writer-record.md",
+      "sha256": "dedc989d90edf3ab93449c3781a1a7506a6e996e8a07f73b57b6c1de33d8924c",
+      "git_blob": "72c5022693614779921dd6b9176ea187efb7b5f9"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-freeze.json",
+      "sha256": "92550aa9d615b56260ff49ab9f5dd952aae7dbd540483e1d28e17cc549ec950a",
+      "git_blob": "6f6e04db668d6d9ff45a194295c9a1c373cd686e"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-receipt.json",
+      "sha256": "ce63dc6cbe09696c920b9585f9e062160bb381ae3b27ef82ee833d34e4902858",
+      "git_blob": "5bb8e248925c7c67a9f50147b6f1ae3d78404228"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-record.md",
+      "sha256": "94e95d34ff98c4da94795a23037be6c79dd8ca5da8bd3e3ba0b84a70a8fe62ba",
+      "git_blob": "1aacc2d6e1c3f125ac70795459af70d203bc8d4d"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-row-review.json",
+      "sha256": "ba49749c9772075a225346713ce78602ddaad3fa2358bcd971f6a25db1b4ed92",
+      "git_blob": "468525d9c237eb9c32205dfb05c84d56e1045a9d"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/committed-closure-validation.json",
+      "sha256": "df3db5d406bdcd25041b75959d860c9239ed25432e7a924ee67e332158fb1008",
+      "git_blob": "0e3e43dad22cac04a1c381a1b4cd73f5451d4c88"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/initial-review-freeze.json",
+      "sha256": "84db394d6b4ea1a6701673694f3f6b72f17083feb4abf0ec4d81724fc10bc6f7",
+      "git_blob": "3bba631f5daec099944430e83f7a3d0c21902447"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.json",
+      "sha256": "5c93533fbc819e2e58258544c08389a6ea273742beaeeaf7e179f62ac8c38577",
+      "git_blob": "00feae8e4c04cdd77d48a0e229728c552a66fcdf"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.tsv",
+      "sha256": "86808f7a87cf5cecc2505ad506f470920a8577b782f8ea4e566ad6d044f99818",
+      "git_blob": "ede7f2629436aa2e181757000998c17cb7231712"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/mechanical-receipt.json",
+      "sha256": "a77117ed79bd61505d97625dd0476a4b65dc9d36748c2d3083cc1d266e86cd54",
+      "git_blob": "8131d031d9b585f0ee7a08c9c68201f0564c8c75"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/private-source-artifacts.json",
+      "sha256": "6c347d5d6ffff2eac0851f4a1962112f314ddb10020efe243dfe9045e35ad7cd",
+      "git_blob": "b00558b7d4bf03d5a28153c363e09ad6abc8de21"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/review-record.md",
+      "sha256": "f40de736f32c1e0251471dc8ebf04532e84a0820f0c3aa877a8716355ecd8c01",
+      "git_blob": "ad01830fdbc316d4a8fbd0aca4d6c1149e597970"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/status-only-allowance.json",
+      "sha256": "4c16b6d56c05da846836b898b2ee139797ff5e93d46e85d77c01c937b8a45157",
+      "git_blob": "13d353d2f17046d9529ec207791738f6025c9097"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/status-reconciliation.json",
+      "sha256": "decfe7fea59c79362738c56f57de2a76dd824c824c3e9ebd1ed472cb5b1de147",
+      "git_blob": "01b1180d99e7817e03937aad8db95c8020bf49be"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/validate-closure.py",
+      "sha256": "e36675269887214af2abd4ba36e4d6ab54695f0bd89f13a969793586b0da6461",
+      "git_blob": "ea185021329058ce38b96f52e99601743749afcb"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/validate-review.py",
+      "sha256": "642ee037fff578c844994e0657e435c79b8e5cbf0dba16cb2e235d749cccce52",
+      "git_blob": "b353c1ea74423fa8b1735ef117837a6396e9a8bb"
+    },
+    {
+      "path": "skills/togo/tg-company-formation.md",
+      "sha256": "784849b39cb0b97fc15a425689e3d6d54dd6ee57dd693868d4bbc0ff16d6471c",
+      "git_blob": "36f9875bd4f9f16cf3ddcef0e88e7c1a30921129"
+    },
+    {
+      "path": "skills/togo/tg-corporate-income-tax.md",
+      "sha256": "d18f9a6fb692c15cac35f527643a23b39669e44db534876d9914576283c1b58c",
+      "git_blob": "bff93c0bf064ad2498460ebefff934eb555fbd5f"
+    },
+    {
+      "path": "skills/togo/tg-cross-border.md",
+      "sha256": "487c1a42a8474a3f8d434ff1fa18a9518c3c852964c41731f141e18829084de5",
+      "git_blob": "c0eeda17abfde4709daa642f652d60cf7e46fce0"
+    },
+    {
+      "path": "skills/togo/tg-income-tax.md",
+      "sha256": "5751e99a51586ce0f0fa2ed1040a165d9ee351e9782c109378d73f51ac11de71",
+      "git_blob": "cd1bc71b30e74e3ea63a645a9d54fb93cbfa59b4"
+    },
+    {
+      "path": "skills/togo/tg-payroll-social.md",
+      "sha256": "e84cfeca4f26eba222b88de643e5d4d344fbab104a319f142923e0d1293181cd",
+      "git_blob": "3ba9fd26dcedbeac9013fcd393212ae865c7d4de"
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "sha256": "24f6700844f6bcf205e3eae4c7ccd28cc20f9f2740afc7545e52131d2450969a",
+      "git_blob": "eef795d0a291a5dcdcdb17b1bc850a6f4738949b"
+    },
+    {
+      "path": "skills/togo/tg-tax-overview.md",
+      "sha256": "44f73f2d512162ecd581e90d84bebffdcf11d42cf384272944bb825ebf18fa65",
+      "git_blob": "d3885b9c29c0725f07486a7e6945e996822ad079"
+    },
+    {
+      "path": "skills/togo/tg-transfer-pricing.md",
+      "sha256": "455cf875208e38431e1d07b092cbb8d11bd7d6c21486b7ec12c59d8cbebc4477",
+      "git_blob": "edff0c494b8d693dff70f2946cca757b2ee712e0"
+    },
+    {
+      "path": "skills/togo/tg-vat-gst.md",
+      "sha256": "ada6b6fde1ae30edfca3b0efc3b7ca065a528f6452c97bc3b501ebf047933dc3",
+      "git_blob": "7f14530feb364e2edc788bbafee022645236a211"
+    }
+  ]
+}

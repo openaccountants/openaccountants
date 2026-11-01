@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "examples": {
+    "files": 1,
+    "blocks": 2,
+    "failures": 0
+  },
+  "preservation": {
+    "prior_guides": 9,
+    "prior_evidence_files": 48,
+    "result": "exact"
+  },
+  "scope": "New ordinary collection job; independent review pending."
+}
