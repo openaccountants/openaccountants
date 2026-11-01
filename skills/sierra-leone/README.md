@@ -13,7 +13,7 @@ covered_by:
 partial:
   IT-IND: "Source-bound2026 income/PAYE rewrite; initial28source corrections closed; new2018benefit-interaction hold independently reviewed; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen."
   IT-CORP: "Source-bound2026 corporate rewrite; independent source corrections closed; MAT schedule/currentness, full deductions/regimes and return fields remain open."
-  VAT: "Source-bound 2026 GST rewrite, 41 ledger records; independent review pending. Full current amendment chain, schedule conflicts and current forms remain open."
+  VAT: "Source-bound 2026 GST rewrite, 41 ledger records; independent source corrections closed. Full current amendment chain, schedule conflicts and current forms remain open."
   SC: "NASSIT source-bound2026 rewrite,28ledger rows; source review closed; later amendments/exemptions/ceiling and current payment implementation remain unresolved."
   PR: "Payroll Guide refreshed for NASSIT; income/PAYE source rewrite is linked, with independent source corrections closed; current methods, forms and full amendment chain remain open."
   TP: "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
@@ -28,7 +28,7 @@ Six source drafts now: income/PAYE, transfer pricing, NASSIT/payroll, corporate 
 |---|---|---|
 | Income tax | [Income tax](sl-income-tax.md) | Source-bound2026 rewrite; independent source corrections closed, methods/currentness holds remain |
 | Company tax | [Corporate income tax](sl-corporate-income-tax.md) | Source-bound2026 corporate rewrite; independent source corrections closed, currentness/filing holds remain |
-| Goods and services tax | [GST](sl-vat-gst.md) | Source-bound 2026 rewrite; independent source review pending, currentness and schedule conflicts held |
+| Goods and services tax | [GST](sl-vat-gst.md) | Source-bound 2026 rewrite; independent source corrections closed, currentness and schedule conflicts held |
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
 | Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
 | Cross-border | [Residence and foreign income](sl-cross-border.md) | Conditional source draft; independent source corrections closed, currentness/treaty holds remain |
@@ -57,4 +57,4 @@ A subsequent actual2018Act read identified the all-benefits market-value amendme
 
 The [I29 delta acceptance](../../evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/review.md) verifies the added2018source interaction, preserves the prior28rules and bothcases, and leaves all currentness/filing holds open.
 
-The GST rewrite records [41 grouped rules](../../evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md), maps [all 12 old topics](../../evidence/ledgers/sierra-leone-gst-20261101/old-topics.md) and includes two executable cases. It distinguishes the return deadline from the payment deadline. Schedule classification, penalty priority, full amendment continuity and current forms remain explicit holds. Independent GST review is pending; earlier five Guide review receipts are preserved.
+The GST rewrite records [41 grouped rules](../../evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md), maps [all 12 old topics](../../evidence/ledgers/sierra-leone-gst-20261101/old-topics.md) and includes two executable cases. It distinguishes the return deadline from the payment deadline. Schedule classification, penalty priority, full amendment continuity and current forms remain explicit holds. Independent GST source review checked all 41 records, 12 old topics and both computations; its two source-link/page-locator findings closed against [exact repaired hashes](../../evidence/ledgers/sierra-leone-gst-review-20261101/CLOSURE.md). Earlier five Guide review receipts are preserved.

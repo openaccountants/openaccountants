@@ -1,0 +1,12 @@
+{
+  "authority": "closure.json permits factual README status only",
+  "before": {
+    "skills/sierra-leone/README.md": "59ed972869a159b1047cf449b3cece4b438d22501f6a0b837fdb9c0a89617129",
+    "evidence/ledgers/sierra-leone-gst-20261101/README.md": "d62d88b97e41243de039c9cd6cdf1b12e6f53930af22a31ca886179931c02b0a"
+  },
+  "after": {
+    "skills/sierra-leone/README.md": "e1ebb5a9fc0dcc3a6da3b517c1091d120824c29ea1a0debbfe2028f926fef68a",
+    "evidence/ledgers/sierra-leone-gst-20261101/README.md": "b4a867bd84e9280d325e79f603c1076db86d0c7df0a7f2a913cd2bcc88da623e"
+  },
+  "scope": "Pending to accepted conditional source review, exact closure link; all substantive law and holds unchanged"
+}

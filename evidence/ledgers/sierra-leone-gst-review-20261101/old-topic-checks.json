@@ -1,0 +1,105 @@
+{
+  "base": "ce1c6c38ed868ea2998dc5a12dbe81b6889fcef0",
+  "base_blob": "cd508eb620eeaded016ef79e509c40ac6c2dcae4",
+  "old_file_sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+  "topics": [
+    {
+      "id": 1,
+      "old_text": "# Sierra Leone VAT / GST",
+      "line_sha256": "a94cb1920e4b6973b94bb7bf91100c493c0803fd3cd61706de1668d9c20c9925",
+      "destination": "H1",
+      "disposition": "Renamed to Goods and Services Tax v1.0; same country/job.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 2,
+      "old_text": "## Goods and Services Tax (GST)",
+      "line_sha256": "164bf834cf02745e138cacd188b115d526443d8fb0db615c8ab686a8c8380dba",
+      "destination": "Canonical sections",
+      "disposition": "Legacy single heading replaced with the nine required sections.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 3,
+      "old_text": "Sierra Leone levies a single-rate Goods and Services Tax (GST), a VAT-style consumption tax introduced in 2010 and administered by the NRA under the Goods and Services Tax Act 2009. There is no separate sales tax.",
+      "line_sha256": "2e8b0ddd1235bc902b8c2de91f98da850e882de3288be3b2a3a3ba8579c29218",
+      "destination": "Who this applies to / Sources: Not yet confirmed",
+      "disposition": "2010 history and no-separate-sales-tax claim explicitly held; rate/authority facts use primary cited rules.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 4,
+      "old_text": "- **Standard GST rate** \u2014 15 percent  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+      "line_sha256": "7a17da2dc02b1274ce91fe5b516c5b0b2504dae83e982248710f8101245b9073",
+      "destination": "Rates / The base s14",
+      "disposition": "15% ordinary taxable rate retained with exemptions/zero-rate and GST-exclusive conditions.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 5,
+      "old_text": "- **GST on imports** \u2014 15 percent (applied to imported goods and services for local use)  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+      "line_sha256": "6d8785acf190aef3906741a7a0d87c90cbd690e4c2434a6c996028b2229c215d",
+      "destination": "Rates / The base ss25-26 / Cross-border s24",
+      "disposition": "Goods import classification/value retained; blanket imported-services claim corrected to conditional reverse-charge/digital tests.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 6,
+      "old_text": "- **Zero-rated supplies** \u2014 0 percent (Exports and certain supplies are zero-rated (approx \u2014 confirm))  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "ca2406e3a41c3001b593a15c66090af332507c818edc559e7a82e4aa249296cc",
+      "destination": "Rates / Cross-border s2 andFirstSchedule",
+      "disposition": "Zero-rate goods exports/stores retained with external-delivery evidence, not every foreign-customer service.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 7,
+      "old_text": "- **Exempt supplies** \u2014 Basic foodstuffs, financial services, education, medical services and similar items are exempt (approx \u2014 confirm)  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "20e90e2b71530698c4fb040cfae2843ac315c8cba03df57c3e960c965155d95a",
+      "destination": "Rates / Sources",
+      "disposition": "Specific2023entry conditions replace generic categories;2026renewable/HS/numbering conflicts explicitly held.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 8,
+      "old_text": "- **Registration threshold** \u2014 100,000 NLe (Annual taxable turnover of NLe 100,000 or more (approx \u2014 confirm))  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "55d950f29f6498086e887f3331b8589df18d0b61ce8d44e86f0b8a030a8ea7be",
+      "destination": "Rates / The base s15",
+      "disposition": "Old100000 corrected to2024Le500000 replacement; allturnover and compulsory tests distinguished.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 9,
+      "old_text": "- **Filing frequency** \u2014 Monthly GST returns (approx \u2014 confirm)  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "8ee5bbcd839119cb5fec5f75d263d4aeeee0669895ea7e40c4fb1e19411944bc",
+      "destination": "Who this applies to / Deadlines",
+      "disposition": "Monthly statutory period plus otherprescribedperiod condition retained.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 10,
+      "old_text": "- **Return and payment deadline** \u2014 By the last working day of the month following the tax period (approx \u2014 confirm)  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "bad62f66a9ec8e589eaa70b7659c4a503ccb20ca36305be2abe4b15b55a5896b",
+      "destination": "Deadlines / Sources",
+      "disposition": "Oldcombineddeadline corrected to2025return21days and2026paymentendfollowingmonth; currentholiday/procedureheld.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 11,
+      "old_text": "- **Input tax credit** \u2014 Registered persons may credit input GST against output GST on taxable supplies  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "eb6b9f0a64ba61fd45d253071a0eaadd9a92d286b19cb02f114d271e9b2e04c5",
+      "destination": "The base ss27-29",
+      "disposition": "Input netting,blockedcategories,direct/shared attribution,documents andconditions retained.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    },
+    {
+      "id": 12,
+      "old_text": "- **Reverse charge on imported services** \u2014 Recipients of services from non-resident suppliers self-account for GST under the reverse-charge mechanism (approx \u2014 confirm)  _(Goods and Services Tax Act 2009)_",
+      "line_sha256": "9b3a40c3657e0ee51f0a5f89da5159c783e523950ee21e93ee98c58ad72c7cd5",
+      "destination": "Cross-border s24",
+      "disposition": "Blanketreversecharge corrected to actualnonresident/agent/taxability/useconditions; digitalinteractionheld.",
+      "reviewer_verdict": "Exact predecessor text/hash verified; stated destination and disposition independently checked in current Guide"
+    }
+  ],
+  "complete_non_CTA_topics": 12,
+  "cta_equal": true
+}
