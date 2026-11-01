@@ -357,8 +357,8 @@ The same rates, the AED 375,000 band and the Small Business Relief conditions ap
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Corporate Tax Law, Articles 37-39 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, opened, spot-checked only: opened; searched for the arm's length, rate and filing articles |
-| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-01, opened, spot-checked only: opened; searched for the arm's length, rate and filing articles |
+| Corporate Tax Law, Articles 37-39 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, opened, spot-checked only: searched for the arm's length, rate and filing articles |
+| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-01, opened, spot-checked only: searched for the arm's length, rate and filing articles |
 | Cabinet Decision No. 49 of 2023 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, link opened, not re-read |
 | Tax Returns Guide | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT-Returns-EN-11-11-2024.pdf | 2026-11-01, opened, spot-checked only: AED 40 million, AED 4 million and AED 500,000 passages read |
 | Small Business Relief Guide | https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf | 2026-11-01, link opened, not re-read |
