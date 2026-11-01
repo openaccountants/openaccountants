@@ -1,6 +1,6 @@
 # Malawi listed-share withholding writer record, 1 November 2026
 
-**New conditional draft backup. Fresh independent source review pending. F4 remains OPEN.** No accountant attestation, current-law/publication acceptance, live withholding/payment/filing approval or whole-country completion is claimed.
+**New conditional draft backup. Independent cited-text review conditionally accepted. F4 remains OPEN.** No accountant attestation, current-law/publication acceptance, live withholding/payment/filing approval or whole-country completion is claimed.
 
 Accepted prior head: `067535f8a04a85f74271816950766a46b7541a15`. Actual fetched public main and full merge base: `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. Existing branch: `codex/malawi-remaining-guides-2026`; existing draft PR #1216. The first sandboxed fetch failed on DNS; the authorised ordinary fetch with network access succeeded. The branch and PR identity were checked against the actual remote. No new branch or PR, rebase, merge, force push, generated export, private app or production write belongs to this change.
 

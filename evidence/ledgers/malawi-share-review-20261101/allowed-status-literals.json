@@ -1,0 +1,36 @@
+{
+  "condition": "No substantive finding in this source-fidelity review. Parent may apply only listed literal replacements with separate immutable before/after/hash receipt. Historical pending requests in prior records may remain. No blanket acceptance of current law.",
+  "allowed": [
+    {
+      "path": "skills/malawi/mw-listed-share-withholding.md",
+      "before": "Fresh independent source review of this addition is pending.",
+      "after": "Fresh independent review accepts this addition for cited-text fidelity only; F4, currentness, appointed-cutover, live-use, publication and accountant-attestation holds remain."
+    },
+    {
+      "path": "skills/malawi/README.md",
+      "before": "Fresh independent review of this new job is pending.",
+      "after": "Fresh independent review accepts this new job for cited-text fidelity only; F4, currentness, appointed-cutover, live-use, publication and accountant-attestation holds remain."
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/writer-record.md",
+      "before": "**New conditional draft backup. Fresh independent source review pending. F4 remains OPEN.**",
+      "after": "**New conditional draft backup. Independent cited-text review conditionally accepted. F4 remains OPEN.**"
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/mw-listed-share-withholding.md",
+      "before": "Writer evidence only. Independent review pending.",
+      "after": "Writer evidence. Independent cited-text review conditionally accepted."
+    }
+  ],
+  "prohibited_changes": [
+    "statutory rules",
+    "numeric values",
+    "source ledger rows or quotations",
+    "example blocks",
+    "review/trust metadata",
+    "F4 or appointed/currentness/live-use holds",
+    "coverage/partial declarations",
+    "prior review evidence"
+  ],
+  "reviewer_applied_status_edits": false
+}

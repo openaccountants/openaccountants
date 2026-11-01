@@ -1,6 +1,6 @@
 # Rule and figure ledger: listed-share withholding
 
-Writer evidence only. Independent review pending. Every row retains F4/commencement/current-law/live-use holds. Exact quotations below are decisive excerpts; complete conditions are read in the cited neighbours and detailed JSON. See `source-read-manifest.json` for source hashes and actual scopes.
+Writer evidence. Independent cited-text review conditionally accepted. Every row retains F4/commencement/current-law/live-use holds. Exact quotations below are decisive excerpts; complete conditions are read in the cited neighbours and detailed JSON. See `source-read-manifest.json` for source hashes and actual scopes.
 
 | ID | Guide section and rule | Act/article and printed page | Official URL | Exact decisive quotation | Read on / status |
 |---|---|---|---|---|---|
