@@ -1,0 +1,84 @@
+{
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "old_file": "skills/sierra-leone/sl-corporate-income-tax.md",
+  "old_file_sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+  "topics": [
+    {
+      "id": "C-OLD-01",
+      "exact_old_text": "- **Standard corporate income tax rate** \u2014 30% percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/corporation-tax))_",
+      "destination": "Rates, bands and thresholds: FA2026 resident30%"
+    },
+    {
+      "id": "C-OLD-02",
+      "exact_old_text": "- **Non-resident company rate** \u2014 30% on Sierra Leone-source taxable income percent  _(Income Tax Act 2000)_",
+      "destination": "Sources: standaloneNR30%held; Whoapplies residence/sourcebase"
+    },
+    {
+      "id": "C-OLD-03",
+      "exact_old_text": "- **Mining company rate** \u2014 Generally 30% (subject to mining-specific regimes and agreements) percent (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "Sources: mining30%held pendingregime"
+    },
+    {
+      "id": "C-OLD-04",
+      "exact_old_text": "- **Agriculture / qualifying sector incentive** \u2014 Reduced rates and tax holidays available for approved agriculture and priority-sector investors (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "The base specialmanufacturing; Sources agriculture/priorityholidaysheld"
+    },
+    {
+      "id": "C-OLD-05",
+      "exact_old_text": "- **Minimum/turnover tax** \u2014 A minimum tax of around 3% of turnover may apply to companies in a loss or low-profit position percent (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "Rates MATcomparison/sourceambiguity; Sources oldapprox3%held"
+    },
+    {
+      "id": "C-OLD-06",
+      "exact_old_text": "- **Tax base** \u2014 Accounting profit adjusted for tax (non-deductibles added back, capital allowances and exempt income deducted)  _(Income Tax Act 2000)_",
+      "destination": "The base accountsbridge/capitalallowances"
+    },
+    {
+      "id": "C-OLD-07",
+      "exact_old_text": "- **Withholding tax on dividends** \u2014 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border resident15 correctedNR20; actualscopeheld"
+    },
+    {
+      "id": "C-OLD-08",
+      "exact_old_text": "- **Withholding tax on interest** \u2014 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border resident15 correctedNR20; actualscopeheld"
+    },
+    {
+      "id": "C-OLD-09",
+      "exact_old_text": "- **Withholding tax on royalties** \u2014 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border resident15 source;NRroyaltycurrentheld"
+    },
+    {
+      "id": "C-OLD-10",
+      "exact_old_text": "- **Withholding tax on rent** \u2014 10% resident; 15% non-resident percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border residentrent15corrected;NRrentheld"
+    },
+    {
+      "id": "C-OLD-11",
+      "exact_old_text": "- **Withholding tax on management/professional fees** \u2014 15% (resident and non-resident) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border resident15/NR20; scopeheld"
+    },
+    {
+      "id": "C-OLD-12",
+      "exact_old_text": "- **Withholding tax on contractors (goods & services)** \u2014 6.5% resident; 11.5% non-resident percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Cross-border contractor5/20;old6.5/11.5held"
+    },
+    {
+      "id": "C-OLD-13",
+      "exact_old_text": "- **Contractor WHT threshold** \u2014 WHT on supplier/contractor payments applies above NLe 500 in the month of payment NLe (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "Sources thresholdNLe500held"
+    },
+    {
+      "id": "C-OLD-14",
+      "exact_old_text": "- **Annual return deadline** \u2014 Within 120 days of year end (by 30 April for a calendar-year company) (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "Deadlines fourmonths notuniversal120days"
+    },
+    {
+      "id": "C-OLD-15",
+      "exact_old_text": "- **Provisional tax instalments** \u2014 Quarterly provisional tax instalments are payable during the year, with final balance on filing (approx \u2014 confirm)  _(Income Tax Act 2000)_",
+      "destination": "Deadlines baseline113calendar and currentreconciliationhold"
+    }
+  ],
+  "lost_content_restored": 0,
+  "note": "All15predecessorbullets mapped. No openingprose exists beyond oldheading/frontmatter. Boilerplate/platformCTA preserved byteexact."
+}

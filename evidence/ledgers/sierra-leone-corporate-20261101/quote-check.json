@@ -1,0 +1,182 @@
+[
+  {
+    "id": "C01",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "21-22"
+  },
+  {
+    "id": "C02",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "22"
+  },
+  {
+    "id": "C03",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C04",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "6"
+  },
+  {
+    "id": "C05",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C06",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "6"
+  },
+  {
+    "id": "C07",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C08",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "33"
+  },
+  {
+    "id": "C09",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "5-6"
+  },
+  {
+    "id": "C10",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "6"
+  },
+  {
+    "id": "C11",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C12",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "27"
+  },
+  {
+    "id": "C13",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "30-32"
+  },
+  {
+    "id": "C14",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "35-36"
+  },
+  {
+    "id": "C15",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "6,9"
+  },
+  {
+    "id": "C16",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "56-57"
+  },
+  {
+    "id": "C17",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "5"
+  },
+  {
+    "id": "C18",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "6"
+  },
+  {
+    "id": "C19",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C20",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "5"
+  },
+  {
+    "id": "C21",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "61"
+  },
+  {
+    "id": "C22",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "7"
+  },
+  {
+    "id": "C23",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "70-71"
+  },
+  {
+    "id": "C24",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "71"
+  },
+  {
+    "id": "C25",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "71"
+  },
+  {
+    "id": "C26",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "61-62"
+  },
+  {
+    "id": "C27",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C28",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C29",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "8"
+  },
+  {
+    "id": "C30",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C31",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "7"
+  },
+  {
+    "id": "C32",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C33",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C34",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C35",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "9"
+  },
+  {
+    "id": "C36",
+    "quote_match_in_claimed_pages": true,
+    "claimed_pages": "2"
+  }
+]
