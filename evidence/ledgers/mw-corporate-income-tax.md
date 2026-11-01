@@ -1,0 +1,26 @@
+# Malawi figure and rule ledger: mw-corporate-income-tax
+
+Tax year 2026; independently review before publication. Each row records the portion actually read on 2026-11-01. Quotations are short exact identifying fragments, not full captures. Earlier principal texts are read with the amendments identified. Examples are hypothetical and are not legal source figures.
+
+| ID | Guide section / rule / figure and condition | Act / section | Opened official URL | Short exact original-language quote | Read on |
+|---|---|---|---|---|---|
+| 1 | Rates: ordinary company 30% | Taxation Eleventh(c); Act 17/2023 s 11 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content | “thirty per cent of taxable income” | 2026-11-01 |
+| 2 | Rates: additional 10% on taxable income above 5 bn after amendment, general nonmining company | Eleventh(c)(ii); Act 12/2024 s 7; Act 36/2025 s 6 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content | “an additional tax of ten percent shall be charged” | 2026-11-01 |
+| 3 | Rates: supernormal threshold 10 bnto 5 bn | Act 36/2025 s 6(a) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “substituting therefor, the word “five”” | 2026-11-01 |
+| 4 | Scope: foreign-incorporation extra 5%removed in ordinary(c) | Act 14/2025 s 3(a) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content | “companies not incorporated in Malawi” | 2026-11-01 |
+| 5 | Scope: source/deemed Malawi income; higher income tax afterMATcredit orMAT | Act 36/2025 s 3 substituting s 66 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “sources within or deemed to be within Malawi” | 2026-11-01 |
+| 6 | MAT 0.5%turnover | Act 36/2025 s 6(b), Eleventh(j) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “a minimum alternative tax at the rate of 0.5 per cent.” | 2026-11-01 |
+| 7 | MATturnover>5 bn and at least 3 assessmentyears business, not 3 lossyears | s 66 A(3), Act 36/2025 s 4 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “has been engaged in business for at least three” | 2026-11-01 |
+| 8 | MATturnover includes exempt income excludesfinalwithholding | s 66 A(2) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “but shall not include final withholding” | 2026-11-01 |
+| 9 | MATcreditdifference,6 followingyearsFIFO nonrefundable ceilingordinaryminusMAT | s 66 B | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “any of the six years of assessment following the year” | 2026-11-01 |
+| 10 | MATcreditnonrefundableFIFO | s 66 B(2)(c)–(d) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “are non-refundable” | 2026-11-01 |
+| 11 | Base:noncapital expenseswhollyexclusivelynecessarily | s 28(1), Act 17/2023 s 3 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content | “wholly and exclusively and necessarily incurred” | 2026-11-01 |
+| 12 | Sourceincludes capitalgains; listedshares 12 monthsexemption repealed | s 11; Act 36/2025 s 5 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “deleting paragraph (hb)” | 2026-11-01 |
+| 13 | Provisional quarterlywithin 30 daysquarterend; at least 90%actual | Taxation 84 A(1),(3) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content | “within 30 days after the end of each quarter” | 2026-11-01 |
+| 14 | Filing:old 84(1)180 daysdeleted; do not cite currentfromthattext | Act 15/2021 Schedule Taxation 84 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content | “Delete subsections (1), (2), (3), (4), (7), (8)” | 2026-11-01 |
+| 15 | Filing:prescribedreturn managerdeclaration and electronicregistrationnumber | TAA 40(1),(3),38(3) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content | “signed by a duly authorized manager” | 2026-11-01 |
+| 16 | Penaltylatepayment 20% plusbanklendingrate 5 perannummonthpart | TAA 87(1)–(3) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content | “twenty per centum of the unpaid” | 2026-11-01 |
+| 17 | Provisionalunderestimate<90%actual triggers 20%+interest | TAA 86 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content | “less than ninety percent of the actual income tax” | 2026-11-01 |
+| 18 | Sourceperioddate noticesconflict 30/31 Dec so 2025 boundaryexcluded | MRA publicnotice updated | https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf | “with effect from 31st December 2025” | 2026-11-01 |
+
+[Complete old-topic destination map](mw-old-topic-destinations.md).
