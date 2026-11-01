@@ -1,0 +1,578 @@
+[
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 13,
+    "old": "# Somalia Corporate Income Tax",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 15,
+    "old": "## Corporate / business income tax",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 17,
+    "old": "- **Corporate / business income tax overview** — Company (business profit) tax is payable to the Federal Government of Somalia on a progressive scale by annual income, with USD-denominated brackets. Top-rate and threshold figures below come from the Somalia Investment Promotion Office; a licensed Somali accountant should confirm the intermediate brackets and withholding rates.  _(Somalia Investment Promotion Office — Tax Regime)_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 18,
+    "old": "- **Corporate income tax structure** — Progressive rates from 9% to 30% by annual income band (brackets start around USD 2,400) % (approx — confirm)  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 19,
+    "old": "- **Top corporate rate** — 30% on annual business income above USD 30,000 %  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 20,
+    "old": "- **Entry threshold for company tax** — Progressive brackets begin around USD 2,400 of annual income USD (approx — confirm)  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 21,
+    "old": "- **Alternative cited rate range** — Some guides report an effective company tax of 10%–15% for many businesses % (approx — confirm)  _(TaxAtlas — Somalia tax summary (https://taxatlas.io/country/somalia))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 22,
+    "old": "- **Tax base** — Net business profit (income less allowable expenses) arising in Somalia (approx — confirm)  _(Income Tax Law (Law No. 5 of 1966, as amended) (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; source-led replacement, unsupported predecessor inference held"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 23,
+    "old": "- **Withholding tax** — Withholding tax is recognised as a direct-tax category; specific statutory rates on dividends, interest and royalties are not uniformly published (approx — confirm)  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 24,
+    "old": "- **WHT on dividends** — Rate not uniformly published — confirm with the Inland Revenue Department (approx — confirm)  _(Inland Revenue Department (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 25,
+    "old": "- **WHT on interest** — Rate not uniformly published — confirm with the Inland Revenue Department (approx — confirm)  _(Inland Revenue Department (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 26,
+    "old": "- **WHT on royalties** — Rate not uniformly published — confirm with the Inland Revenue Department (approx — confirm)  _(Inland Revenue Department (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-corporate-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+    "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "line": 27,
+    "old": "- **Filing / payment deadlines** — Annual corporate filing deadlines not yet uniformly codified; sales tax and payroll withholding remitted monthly (approx — confirm)  _(Inland Revenue Department (https://taxatlas.io/country/somalia))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-cross-border-residence.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "7ad7f9918f17f06b5891bafba9c7cdaeadc3ebec",
+    "sha256": "3316b7247e777f3f32325d44b82e559fe5822c87b3430efc50495e32e9ccbbfc",
+    "line": "all",
+    "old": "Every introduction, heading, paragraph, bullet and table item, plus metadata and entire CTA suffix",
+    "destination": "Same path, byte-identical. Prior review scope remains historical; no recertification."
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 13,
+    "old": "# Somalia Personal Income Tax",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 15,
+    "old": "## Personal income tax rates and bands",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 17,
+    "old": "- **Monthly income up to USD 200** — 0% (tax-free) % (Bands reflect Somalia Investment Promotion Office figures; a licensed Somali accountant should confirm exact current thresholds.)  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 18,
+    "old": "- **Monthly income USD 201 – 800** — Progressive rate (commonly cited 12%–6% band) % ((approx — confirm))  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 19,
+    "old": "- **Monthly income USD 801 – 1,500** — Progressive rate up to ~15% % ((approx — confirm))  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 20,
+    "old": "- **Monthly income above USD 1,500** — 18% %  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 21,
+    "old": "- **Tax-free threshold** — First USD 200 of monthly employment income is exempt USD  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds / Sources Not yet confirmed; new statutory baseline, old unsupported scale/estimate held"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 22,
+    "old": "- **Quarterly rental income USD 500 – 20,000** — 15% %  _(Somalia Investment Promotion Office — Tax Regime (Law No. 5 of 1966) (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; old rental bands held, complete current rental job unresolved"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 23,
+    "old": "- **Quarterly rental income above USD 20,000** — 22.5% %  _(Somalia Investment Promotion Office — Tax Regime (Law No. 5 of 1966) (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; old rental bands held, complete current rental job unresolved"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 24,
+    "old": "- **Residence test** — Individuals present/working in Somalia and earning Somali-source income are within charge; a precise day-count residence test is not yet uniformly codified ((approx — confirm))  _(Income Tax Law (Law No. 5 of 1966, as amended) (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: Who this applies to / Cross-border points; canonical residence Guide link and source/withholding conditions; old summary superseded"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 25,
+    "old": "- **Non-residents** — Taxed on Somali-source income; employment income subject to the same PAYE withholding on Somali-source earnings ((approx — confirm))  _(Income Tax Law (Law No. 5 of 1966, as amended) (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 26,
+    "old": "- **Collection method** — Employers withhold income tax from gross monthly salary under a PAYE system and remit to the Inland Revenue Department  _(Inland Revenue Department — PAYE withholding (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-income-tax.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+    "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "line": 27,
+    "old": "- **Taxpayer registration** — Anyone earning business or investment income in Somalia must register with the IRD on Form TR1  _(Inland Revenue Department — taxpayer registration (Form TR1) (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: Deadlines and filing / Sources Not yet confirmed; current registration and FormTR1 validity explicitly held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 13,
+    "old": "# Somalia Payroll & Social Contributions",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 15,
+    "old": "## Payroll withholding and social contributions",
+    "destination": "Same slug: Who this applies to; job title/scope preserved, replaced by sourced conditional method"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 17,
+    "old": "Employers operate PAYE withholding on employees' monthly salaries and remit to the Inland Revenue Department. Somalia does not yet have a comprehensive, nationally codified social-security contribution scheme; published employer/employee contribution rates are limited and should be confirmed with a local accountant.",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 19,
+    "old": "- **Payroll withholding (PAYE)** — Employers withhold progressive income tax from gross monthly salary (0% up to USD 200, rising to 18% above USD 1,500) %  _(Inland Revenue Department — PAYE withholding (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 20,
+    "old": "- **Remittance deadline** — PAYE and sales tax remitted monthly to the Inland Revenue Department ((approx — confirm))  _(Inland Revenue Department (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: Deadlines and filing; statutory requirements replace unsupported old timing; actual workflow held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 21,
+    "old": "- **Social security scheme** — No comprehensive national social-security / pension contribution scheme is yet uniformly enforced at the federal level ((approx — confirm))  _(Federal Ministry of Finance — Revenue Directorate (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; contribution rate/cap/absence assertion explicitly held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 22,
+    "old": "- **Employer social-security contribution** — No uniformly published statutory employer contribution rate — confirm locally ((approx — confirm))  _(Federal Ministry of Finance — Revenue Directorate (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; contribution rate/cap/absence assertion explicitly held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 23,
+    "old": "- **Employee social-security contribution** — No uniformly published statutory employee contribution rate — confirm locally ((approx — confirm))  _(Federal Ministry of Finance — Revenue Directorate (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; contribution rate/cap/absence assertion explicitly held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 24,
+    "old": "- **Wage base / cap** — PAYE applied to gross monthly employment income; no published cap on the income-tax base ((approx — confirm))  _(Inland Revenue Department — PAYE (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: The base / Sources Not yet confirmed; contribution rate/cap/absence assertion explicitly held"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 25,
+    "old": "- **Employer registration** — Employers must register with the Inland Revenue Department and obtain a Tax Identification Number to operate payroll withholding  _(Inland Revenue Department — taxpayer registration (Form TR1) (https://www.revenuedirectorate.gov.so/direct-tax))_",
+    "destination": "Same slug: The base / Cross-border points / Sources Not yet confirmed; no unsupported rate applied"
+  },
+  {
+    "file": "skills/somalia/so-payroll-social.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "ad49d808b6318427025197391e308c0cc460f98b",
+    "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "line": 26,
+    "old": "- **Payroll currency** — Formal-sector salaries and PAYE bands are commonly expressed in USD  _(Somalia Investment Promotion Office — Tax Regime (https://sominvest.gov.so/procedures/tax-regime/))_",
+    "destination": "Same slug: Rates, bands and thresholds; published table USD denomination, no general payroll currency mandate inferred"
+  },
+  {
+    "file": "skills/somalia/so-tax-overview.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "250335adfda92ea145df228bd7cce98b7bb28c9e",
+    "sha256": "bb8d862f5b79f351769eb68a73a0587ca819786b48e09b8a244e4262013bb516",
+    "line": "all",
+    "old": "Every introduction, heading, paragraph, bullet and table item, plus metadata and entire CTA suffix",
+    "destination": "Same path, byte-identical. Prior review scope remains historical; no recertification."
+  },
+  {
+    "file": "skills/somalia/so-transfer-pricing.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "7cd3a525cc8c1e49e9ba60a66682df97e96418dc",
+    "sha256": "24cfca52c38f913740004e616af6280f4ef1ab92c43f98e06b899072bb858cdd",
+    "line": "all",
+    "old": "Every introduction, heading, paragraph, bullet and table item, plus metadata and entire CTA suffix",
+    "destination": "Same path, byte-identical. Prior review scope remains historical; no recertification."
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 13,
+    "old": "# Somalia VAT / GST",
+    "destination": "Who this applies to / Rates, bands and thresholds / The base: bounded ordinary domestic invoice method; general5% sourced; full VAT/current-sector generalisation held"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 15,
+    "old": "## Sales tax (no full VAT yet)",
+    "destination": "Who this applies to / Rates, bands and thresholds / The base: bounded ordinary domestic invoice method; general5% sourced; full VAT/current-sector generalisation held"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 17,
+    "old": "Somalia does not yet operate a full value-added tax. Instead a 5% Sales Tax applies to most goods and services, collected at the point of sale, with a formal VAT system under development with international assistance. Since 18 August 2024 the Federal Ministry of Finance has applied a split-payment mechanism so the tax is remitted immediately at the time of sale.",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 19,
+    "old": "- **Is there a VAT/GST?** — No full VAT yet — a 5% Sales Tax operates while a formal VAT system is being developed  _(Federal Ministry of Finance — Sales Tax (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 20,
+    "old": "- **Headline sales tax rate** — 5% %  _(Federal Ministry of Finance — Sales Tax — https://tradingeconomics.com/somalia/sales-tax-rate)_",
+    "destination": "Who this applies to / Rates, bands and thresholds / The base: bounded ordinary domestic invoice method; general5% sourced; full VAT/current-sector generalisation held"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 21,
+    "old": "- **Import sales tax** — Sales tax is also levied on imports, collected by the Customs Department alongside import duty and excise  _(Federal Ministry of Finance — Customs Department (https://mof.gov.so/departments/revenue-department))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 22,
+    "old": "- **Split-payment mechanism** — Since 18 August 2024, sales tax is remitted directly to the central treasury at the time of sale  _(Federal Ministry of Finance — Sales Tax (split payments) (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 23,
+    "old": "- **Filing frequency** — Monthly — taxpayers report sales tax collected each month to the Inland Revenue Department on the prescribed form  _(Inland Revenue Department — monthly sales tax return (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 24,
+    "old": "- **Registration threshold** — No clearly published mandatory registration turnover threshold; businesses collecting sales tax must register with the IRD (approx — confirm) (approx — confirm)  _(Inland Revenue Department (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 25,
+    "old": "- **Reverse charge** — No general reverse-charge mechanism — Somalia has a sales tax, not an input/output VAT, so cross-border service reverse charge does not apply (approx — confirm) (approx — confirm)  _(Federal Ministry of Finance — Sales Tax (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-vat-gst.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "8b668c08f2caa01bf556fbcda9aad9939ab9be71",
+    "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+    "line": 26,
+    "old": "- **Input tax credit** — As a single-stage sales tax (not VAT), there is generally no input-tax credit mechanism (approx — confirm) (approx — confirm)  _(Federal Ministry of Finance — Sales Tax (https://www.vatcalc.com/somalia/somalia-split-payments-sales-tax/))_",
+    "destination": "Sources Not yet confirmed / Deadlines and filing / Cross-border points: exact predecessor mechanism/threshold/procedure explicitly held; no unsupported exemption inferred"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 13,
+    "old": "# Somalia Company Formation & Entity Choice",
+    "destination": "Who this applies to / The base / Sources Not yet confirmed: company/branch packet supported; sole-trader/NGO/entitychoice unsupported aspects held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 15,
+    "old": "## Entity types and incorporation",
+    "destination": "Who this applies to / The base / Sources Not yet confirmed: company/branch packet supported; sole-trader/NGO/entitychoice unsupported aspects held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 17,
+    "old": "- **Common entity types** — Sole proprietorship, Limited Liability Company (LLC), Public Limited Company (PLC), branch office of a foreign company, and NGO  _(Ministry of Commerce and Industry — business registration, https://www.ebusiness.gov.so/)_",
+    "destination": "Who this applies to / The base / Sources Not yet confirmed: company/branch packet supported; sole-trader/NGO/entitychoice unsupported aspects held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 18,
+    "old": "- **Minimum share capital (LLC)** — No statutory minimum — initial capital is based on the nature and size of the business  _(Ministry of Commerce and Industry — company registration, https://www.b2bhub.ltd/hub-database/company-formationsomalia)_",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 19,
+    "old": "- **Registry authority** — Ministry of Commerce and Industry, via the Somali Business Registration System (eBusiness portal)  _(Somali Company Registry (eBusiness Somalia), https://www.ebusiness.gov.so/)_",
+    "destination": "Who this applies to / The base / Sources Not yet confirmed: company/branch packet supported; sole-trader/NGO/entitychoice unsupported aspects held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 20,
+    "old": "- **Step 1 — Name reservation** — Reserve a unique company name with the Somali Chamber of Commerce and Industry  _(Somali Chamber of Commerce and Industry, https://www.b2bhub.ltd/hub-database/company-formationsomalia)_",
+    "destination": "The base step2: Company Registrar reservation replaces Chamber claim; art11 source"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 21,
+    "old": "- **Step 2 — Articles of association** — Draft and file the articles of association, then notarise the articles and other legal documents  _(Ministry of Commerce and Industry — company registration, https://www.b2bhub.ltd/hub-database/company-formationsomalia)_",
+    "destination": "The base steps3–4: actual domestic documents and foreign certified packet; blanket all-documents notarisation held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 22,
+    "old": "- **Step 3 — Tax registration** — Obtain a Tax Identification Number from the Somali Revenue Authority / Inland Revenue Department  _(Inland Revenue Department — taxpayer registration (Form TR1), https://www.revenuedirectorate.gov.so/direct-tax)_",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 23,
+    "old": "- **Step 4 — Register the company** — Register with the Ministry of Commerce and Industry via the online business registry  _(Ministry of Commerce and Industry — business registration, https://www.ebusiness.gov.so/)_",
+    "destination": "Who this applies to / The base / Sources Not yet confirmed: company/branch packet supported; sole-trader/NGO/entitychoice unsupported aspects held"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 24,
+    "old": "- **Incorporation timeline** — Commonly cited as around 4 days via the online portal ((approx — confirm))  _(Somali Business Registration System (eBusiness), https://enterworld.io/company-registration-somalia)_",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 25,
+    "old": "- **Incorporation cost** — Official registration fees vary by entity and capital; confirm current schedule on the eBusiness portal ((approx — confirm))  _(Somali Business Registration System (eBusiness), https://www.ebusiness.gov.so/)_",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 26,
+    "old": "- **Core annual compliance** — Maintain tax registration (TIN), file/remit monthly sales tax and PAYE, and renew business licences with the Ministry of Commerce and Industry ((approx — confirm))  _(Ministry of Commerce and Industry; Inland Revenue Department, https://www.revenuedirectorate.gov.so/direct-tax)_",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  },
+  {
+    "file": "skills/somalia/so-company-formation.md",
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "blob": "d282a144d25613c8170e94febafc6a2165d58c6b",
+    "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "line": 28,
+    "old": "Companies in Somalia are registered through the Ministry of Commerce and Industry and the Somali Business Registration System, with name reservation via the Somali Chamber of Commerce and Industry. The online registry has streamlined incorporation, and there is no fixed statutory minimum share capital for a private LLC.",
+    "destination": "Rates, bands and thresholds / Deadlines and filing / Sources Not yet confirmed: operative capital, time, fee, registration or renewal claim held; sourced boundaries replace unsupported certainty"
+  }
+]

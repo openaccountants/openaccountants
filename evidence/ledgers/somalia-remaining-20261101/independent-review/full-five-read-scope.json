@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-01",
+  "candidate": "ed486fe6323e9a71e048771ba3cc7893f54ef68a",
+  "prior_read_scope": "frozen-three-read-scope.json",
+  "new_source_review": [
+    {
+      "filename": "sales-expansion-archive-20250415.pdf",
+      "url": "https://web.archive.org/web/20250415080835id_/http://revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+      "sha256": "4eb87c9448b1df03dae892fc63ec466097f3a02c333d772c686e2939a1ffd43b",
+      "bytes": 1425438,
+      "actual_read_scope": "All five original scan pages visually read; arts1\u20138, recitals, date and signature. Authorised cache reused, no fresh download."
+    },
+    {
+      "filename": "company-regulation-somali-live.browser.txt",
+      "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+      "sha256": "dd33f2f382b91ddad8a16ac4deb8f5ab43c520f0e96856dcc2ec0efdcb2d15c5",
+      "bytes": 29714,
+      "actual_read_scope": "Full cached original Somali main text arts1\u201324 and schedules1\u20132 read; wider ICC list displayed but not audited. Official HTML independently opened in web reader for clauses and neighbours."
+    },
+    {
+      "filename": "company-regulation-live.browser.txt",
+      "url": "https://ebusiness.gov.so/knowledge-base/resource/company-law-regulations-english",
+      "sha256": "efa5ab45566bced4936372394d50ecb88a7f29f1c13e1def2f44653e093bfd32",
+      "bytes": 25604,
+      "actual_read_scope": "Cached main text and independently opened English HTML, especially arts13\u201323 and schedules1\u20132; annual-report translation compared to Somali. No blocked Ministry PDF read claimed."
+    },
+    {
+      "filename": "ebusiness-fees-first-page.browser.txt",
+      "url": "https://ebusiness.gov.so/fees",
+      "sha256": "599d23ae946b392e1a63ae193f4ff03a16a644dcb7d938f3be2fc02e5bf78035",
+      "bytes": 1805,
+      "actual_read_scope": "Cached full service table plus first ten licence rows read. Web reader timed out twice; ordinary IAB opened and complete rendered service table independently read, confirming literal $50.00 fee cells and first10of149licences. No payment/login or further pages."
+    },
+    {
+      "filename": "company-law-2019-osag.pdf",
+      "url": "https://www.osagsomalia.com/media/documents/bulletins-contents/legislation/2019/Sharciga_Shirkadaha.pdf",
+      "sha256": "58c1a5c2ee52ef5580c0989908f03b258c9ecdfa34e72d42ab4262978b6839df",
+      "bytes": 1716533,
+      "actual_read_scope": "Cached extracted text PDF2,6\u201314,38\u201340 read, including original law identity, art6 court personality, arts12\u201314 registration,19reservation and72annualreport; visual PDF12,13,39,40 inspected. Not whole corporate law."
+    },
+    {
+      "filename": "gazette-1984-osag.pdf",
+      "url": "https://osagsomalia.com/media/documents/bulletins/1984/1984.pdf",
+      "sha256": "22994112ba7f62d8dce7616aed9dde43e8dcc34a3b9a9ebc975facd591a403b6",
+      "bytes": 31848453,
+      "actual_read_scope": "Original sales-law scans PDF16\u201321 visually read; scan cuts bottomlines and exemptions opening. Historical scope/base/rate and machinery/penalty conflicts used to assess explicit holds; no current amendment chain claimed."
+    }
+  ],
+  "indirect_tax_html": {
+    "url": "https://revenuedirectorate.gov.so/indirect-tax",
+    "read": "Independently opened official page via web reader; sales table rows and preceding text read. Literal row Telecommunication,15%; Banks and Express,25%; Supply Chain service Companies,10%; ordinary wholesale5%. Used to confirm published conflict, not operative sector rates."
+  }
+}

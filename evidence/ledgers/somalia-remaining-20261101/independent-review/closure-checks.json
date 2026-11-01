@@ -1,0 +1,526 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "reviewed_candidate": "ed486fe6323e9a71e048771ba3cc7893f54ef68a",
+  "closure_candidate": "2dd804ca1cde948dd5adcce2e2c3156fb3d58e0f",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md",
+        "skills/somalia/so-vat-gst.md",
+        "skills/somalia/so-company-formation.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/somalia/so-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md",
+        "skills/somalia/so-vat-gst.md",
+        "skills/somalia/so-company-formation.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 5 files, 10 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 6 changed guide file(s)\nchecked 5 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "2dd804ca1cde948dd5adcce2e2c3156fb3d58e0f",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 5 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "2dd804ca1cde948dd5adcce2e2c3156fb3d58e0f"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "ledger_delta": [
+    {
+      "id": "SO-039",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-040",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-041",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-042",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-043",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-044",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-045",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-046",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-047",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-048",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-049",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-050",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-051",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-052",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-053",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-054",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-055",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-056",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-057",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-058",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-059",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-060",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-061",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-062",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-063",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-064",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-065",
+      "changed_keys": [
+        "quote",
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-066",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-067",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-068",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-069",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-070",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-071",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-072",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-073",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-074",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-075",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-076",
+      "changed_keys": [
+        "quote",
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-077",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-078",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-079",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    },
+    {
+      "id": "SO-080",
+      "changed_keys": [
+        "rule"
+      ],
+      "allowed_keys_only": true,
+      "rule_semantic_recheck": "All source conditions and Guide-context gates remain preserved; summary readability only."
+    }
+  ],
+  "findings_closed": {
+    "F1_primary": "fixed in ed486fe63; retained, optional adult added",
+    "F2_q_g": "fixed in ed486fe63; retained",
+    "F3_SO065": true,
+    "F4_SO076": true
+  },
+  "ledger_ids_preserved": true,
+  "ledger_other_fields_preserved": true,
+  "quote_changes": [
+    {
+      "id": "SO-065",
+      "old": "Telecomunications services",
+      "new": "Telecommunication"
+    },
+    {
+      "id": "SO-076",
+      "old": "50 USD",
+      "new": "$50.00"
+    }
+  ],
+  "manifest": {
+    "files": {
+      "skills/somalia/README.md": true,
+      "skills/somalia/so-company-formation.md": true,
+      "skills/somalia/so-corporate-income-tax.md": true,
+      "skills/somalia/so-cross-border-residence.md": true,
+      "skills/somalia/so-income-tax.md": true,
+      "skills/somalia/so-payroll-social.md": true,
+      "skills/somalia/so-tax-overview.md": true,
+      "skills/somalia/so-transfer-pricing.md": true,
+      "skills/somalia/so-vat-gst.md": true
+    },
+    "history": {
+      "evidence/ledgers/so-cross-border-residence.md": true,
+      "evidence/ledgers/so-transfer-pricing.md": true,
+      "evidence/ledgers/somalia-candidate-manifest.json": true,
+      "evidence/ledgers/somalia-old-topics.md": true,
+      "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": true,
+      "evidence/ledgers/somalia-review-20261101/review.md": true,
+      "evidence/ledgers/somalia-review-closure-20261101/closure-checks.json": true,
+      "evidence/ledgers/somalia-review-closure-20261101/closure.md": true,
+      "evidence/ledgers/somalia-source-read-20261101.md": true,
+      "evidence/ledgers/somalia-writer-checks-20261101.md": true
+    },
+    "expansion_evidence": {
+      "evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.json": true,
+      "evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.md": true,
+      "evidence/ledgers/somalia-remaining-20261101/rule-rows.json": true,
+      "evidence/ledgers/somalia-remaining-20261101/so-company-formation.md": true,
+      "evidence/ledgers/somalia-remaining-20261101/so-corporate-income-tax.md": true,
+      "evidence/ledgers/somalia-remaining-20261101/so-income-tax.md": true,
+      "evidence/ledgers/somalia-remaining-20261101/so-payroll-social.md": true,
+      "evidence/ledgers/somalia-remaining-20261101/so-vat-gst.md": true
+    }
+  },
+  "historical_base_preserved": {
+    "evidence/ledgers/so-cross-border-residence.md": true,
+    "evidence/ledgers/so-transfer-pricing.md": true,
+    "evidence/ledgers/somalia-candidate-manifest.json": true,
+    "evidence/ledgers/somalia-old-topics.md": true,
+    "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": true,
+    "evidence/ledgers/somalia-review-20261101/review.md": true,
+    "evidence/ledgers/somalia-review-closure-20261101/closure-checks.json": true,
+    "evidence/ledgers/somalia-review-closure-20261101/closure.md": true,
+    "evidence/ledgers/somalia-source-read-20261101.md": true,
+    "evidence/ledgers/somalia-writer-checks-20261101.md": true
+  },
+  "review_history_preserved": {
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-row-review.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-mechanical.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-read-scope.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-review.md": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-read-scope.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-row-review.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-mechanical.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-review.md": true
+  },
+  "old_mapping_unchanged_since_full_review": {
+    "evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.md": true
+  },
+  "preservation": {
+    "skills/somalia/so-income-tax.md": {
+      "platform_metadata": true,
+      "complete_cta": true,
+      "matches_worktree": true
+    },
+    "skills/somalia/so-corporate-income-tax.md": {
+      "platform_metadata": true,
+      "complete_cta": true,
+      "matches_worktree": true
+    },
+    "skills/somalia/so-payroll-social.md": {
+      "platform_metadata": true,
+      "complete_cta": true,
+      "matches_worktree": true
+    },
+    "skills/somalia/so-vat-gst.md": {
+      "platform_metadata": true,
+      "complete_cta": true,
+      "matches_worktree": true
+    },
+    "skills/somalia/so-company-formation.md": {
+      "platform_metadata": true,
+      "complete_cta": true,
+      "matches_worktree": true
+    }
+  },
+  "unchanged_guides": {
+    "so-cross-border-residence.md": true,
+    "so-transfer-pricing.md": true,
+    "so-tax-overview.md": true
+  }
+}
