@@ -105,7 +105,7 @@ Not yet confirmed: Schedules 1, 2 and 3 are absent from the copy read, so the ze
 | Country | Ethiopia |
 | Standard rate | 15% |
 | Zero rate | 0% (exports, gold to NBE) |
-| Filing portal | https://etax.mor.gov.et |
+| Filing portal | etax.mor.gov.et |
 | Authority | Ministry of Revenues (MOR) |
 | Currency | ETB (Ethiopian Birr) |
 | Filing frequency | Monthly |
@@ -189,7 +189,7 @@ EC3 -- Coffee export. Zero-rated. Input recoverable.
 
 EC4 -- Threshold crossed. Must register for VAT.
 
-EC5 -- Construction + WHT. 2% WHT is income tax, not VAT. VAT still 15%.
+EC5 -- Construction + WHT. 3% WHT is income tax, not VAT. VAT still 15%.
 
 EC6 -- Investment incentive. Capital goods import may be exempt. Escalate.
 
@@ -211,7 +211,7 @@ Test 7 -- Below threshold ETB 1.5M. Not required to register. Category B tax.
 
 Test 8 -- Sedan ETB 2M + VAT 300K. Blocked.
 
-Out of scope: CIT 30% (mining 25%), PAYE 0%-35%, pension 7%+7%.
+Out of scope: CIT 30% (mining 25%), PAYE 0%-35%, pension 7% employee + 11% employer.
 
 #### Prohibitions
 

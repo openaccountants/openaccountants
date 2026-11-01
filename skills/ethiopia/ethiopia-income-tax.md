@@ -418,11 +418,11 @@ Net pay = 2,000 − 0 − 140 = **1,860**.
 Schedule C is progressive on annual taxable income. Over 168,000 → top rate 35%.
 Tax via the same progressive identity, top band: 200,000 falls over 168,000.
 Cumulative tax to 168,000 = (24k@0) + (24k@15%=3,600) + (36k@20%=7,200) + (36k@25%=9,000) + (48k@30%=14,400) = 34,200.
-Excess 200,000 − 168,000 = 32,000 × 30% = 9,600.
-Income tax = 34,200 + 9,600 = **43,800**.
-MAT check: 2.5% × turnover 600,000 = 15,000. Income tax 43,800 > 15,000, so MAT does not bite.
+Excess 200,000 − 168,000 = 32,000 × 35% = 11,200.
+Income tax = 34,200 + 11,200 = **45,400**.
+MAT check: 2.5% × turnover 600,000 = 15,000. Income tax 45,400 > 15,000, so MAT does not bite.
 
-**Classification:** Schedule C income tax = 43,800 (MAT not triggered).
+**Classification:** Schedule C income tax = 45,400 (MAT not triggered).
 
 > Cumulative-tax arithmetic verified: 3,600 + 7,200 + 9,000 + 14,400 = 34,200 at ETB 168,000. ✓
 
@@ -680,7 +680,7 @@ Expected: PAYE = 0. Pension 140. Net 1,860.
 
 **Test 6, Schedule C with MAT check.**
 Input: annual taxable business income 200,000, turnover 600,000.
-Expected: income tax = 34,200 + (32,000×0.30=9,600) = 43,800. MAT = 2.5%×600,000 = 15,000. Tax due = max(43,800, 15,000) = 43,800.
+Expected: income tax = 34,200 + (32,000×0.35=11,200) = 45,400. MAT = 2.5%×600,000 = 15,000. Tax due = max(45,400, 15,000) = 45,400.
 
 **Test 7, Category B gross sales tax.**
 Input: non-professional, non-VAT, annual gross sales 400,000.

@@ -1,6 +1,7 @@
 ---
 name: et-tax-overview
 description: "Source-cited draft: tax overview for Ethiopia (tax year 2026) - rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+version: 0.2
 jurisdiction: ET
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,15 +18,45 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Ethiopia operates a federal direct- and indirect-tax system administered by the Ministry of Revenues. The framework was substantially reformed in 2024-2025 by a new VAT Proclamation and an Income Tax Amendment Proclamation; the figures below reflect the post-reform position. This is an unverified draft for review by a licensed Ethiopia accountant.
 
-- **Tax (budget) year** - 8 July to 7 July (Ethiopian fiscal year, Hamle 1 to Sene 30)  _([Income Tax Proclamation No. 979/2016](unverified))_
+- **Tax (budget) year** - 8 July to 7 July (Ethiopian fiscal year, Hamle 1 to Sene 30)  _(Income Tax Proclamation No. 979/2016)_
 - **Currency** - Ethiopian Birr (ETB)  _(National Bank of Ethiopia Establishment Proclamation)_
 - **Tax authority** - Ministry of Revenues (federal); Ethiopian Customs Commission for customs  _(Ministry of Revenues Establishment Regulation)_
-- **Residence basis of taxation** - Residents taxed on worldwide income; non-residents taxed only on Ethiopian-source income  _([Income Tax Proclamation No. 979/2016 (as amended by No. 1395/2025)](unverified))_
-- **Top personal income tax rate** - 35% %  _([Income Tax (Amendment) Proclamation No. 1395/2025](unverified))_
-- **Standard corporate income tax rate** - 30% %  _([Income Tax Proclamation No. 979/2016](unverified))_
-- **Does VAT exist** - Yes - Value Added Tax at a standard rate of 15% %  _([Value Added Tax Proclamation No. 1341/2024](unverified))_
-- **Annual income tax return deadline (companies / Category A)** - Within 4 months of the end of the tax year (i.e. by 7 November for an 8 July–7 July year) (unverified) (unverified) _([Tax Administration Proclamation No. 983/2016](unverified))_
-- **VAT return frequency and deadline** - Monthly, by the last day of the following calendar month (Proc. 1341/2024 art. 58) _([Value Added Tax Proclamation No. 1341/2024](unverified))_
+- **Residence basis of taxation** - Residents taxed on worldwide income; non-residents taxed only on Ethiopian-source income  _(Income Tax Proclamation No. 979/2016 (as amended by No. 1395/2025))_
+- **Top personal income tax rate** - 35%  _(Income Tax (Amendment) Proclamation No. 1395/2025)_
+- **Standard corporate income tax rate** - 30%  _(Income Tax Proclamation No. 979/2016)_
+- **Does VAT exist** - Yes - Value Added Tax at a standard rate of 15%  _(Value Added Tax Proclamation No. 1341/2024)_
+- **Annual income tax return deadline (companies / Category A)** - Within 4 months of the end of the tax year (i.e. by 7 November for an 8 July–7 July year) _(Proc. 979/2016 art. 83(4))_
+- **VAT return frequency and deadline** - Monthly, by the last day of the following calendar month (Proc. 1341/2024 art. 58) _(Value Added Tax Proclamation No. 1341/2024)_
+
+## Two worked examples that recompute
+
+Simple case: VAT at the standard 15% on a sale of ETB 100,000.
+
+```oa-check
+name: Standard VAT
+inputs:
+  v: 100000
+steps:
+  - vat: v * 0.15
+expected:
+  vat: 15000.00
+```
+
+Edge case: monthly employment income of ETB 30,000, in the top band of Proc. 1395/2025 art. 11.
+
+```oa-check
+name: Top band employment tax
+inputs:
+  s: 30000
+steps:
+  - lower: 300 + 600 + 750 + 1200
+  - top: (s - 14000) * 0.35
+  - tax: lower + top
+expected:
+  lower: 2850.00
+  top: 5600.00
+  tax: 8450.00
+```
 
 ## Sources
 
