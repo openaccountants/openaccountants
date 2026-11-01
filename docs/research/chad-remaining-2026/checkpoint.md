@@ -13,3 +13,7 @@ The sparse checkout initially hid the tracked evidence tree. Materialised only C
 ## Current work
 
 Official 2026 finance-law PDF and September import order reused from sibling sources cache. CGI original official endpoint previously failed TLS hostname validation. Two source agents are investigating official alternatives and current core methods. No new Guide acceptance yet; review pending. Country issue stays open.
+
+## Frozen substantive checkpoint
+
+Six legacy Guides expanded to2026; one new TP Guide; accepted import Guide unchanged. All8countryGuides pass15checks and16cases recompute, including2unchanged prior import cases.159immutable predecessor editorial lines mapped. Source-ledger rows: income30,CIT24,VAT17,TP7,CNPS16+payroll6,formation26; router adds no statutory figures. New-pack source review is in progress, separate from old acceptance. Preliminary income review found no critical defect; the reviewer identified omitted compulsory CEMAC expert validation in CIT and a formation source-attribution wording defect, both corrected before this freeze. Full acceptance and committed validation pending.

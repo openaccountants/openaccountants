@@ -1,0 +1,38 @@
+[
+  {
+    "file": "cnps-employer-guide-archive-20240717.pdf",
+    "bytes": 675468,
+    "sha256": "2755ba38e916c57710904308851312407cb18591a0e30a839e9ca1b3f795cf77",
+    "read_on": "2026-11-01"
+  },
+  {
+    "file": "cnps-insured-guide-archive-20240717.pdf",
+    "bytes": 1346719,
+    "sha256": "e2a4c6e3f4add0adf6e5442f49e6e7a36380311e0c8c2a1284318b297dabeb34",
+    "read_on": "2026-11-01"
+  },
+  {
+    "file": "cnps-employer-page-archive-20260223.html",
+    "bytes": 27510,
+    "sha256": "9ef9a097d1e073a724886b3a0cc56d9c31dc0d0f6a0ae1256d516f11092310f2",
+    "read_on": "2026-11-01"
+  },
+  {
+    "file": "anie-formation-archive-20250710.pdf",
+    "bytes": 93914,
+    "sha256": "0b88af29d5558ab159c4fee62c8488a4383cb0902aef5ffd6826ef6e479715c9",
+    "read_on": "2026-11-01"
+  },
+  {
+    "file": "ohada-auscgie-2014-official.pdf",
+    "bytes": 16313466,
+    "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "file": "ohada-audcif-2017.pdf",
+    "bytes": 5683426,
+    "sha256": "6444eb3865dc866a3a986e241c41a41e96045b9263b9a77a8992c7398dac17a6",
+    "read_on": "2026-11-01"
+  }
+]
