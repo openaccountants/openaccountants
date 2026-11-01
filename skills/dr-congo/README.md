@@ -39,7 +39,7 @@ A current-year label or a passed source review of one job does not establish com
 ## What still needs doing
 
 - Income tax: bring [Income tax](cd-income-tax.md) up to the current tax year.
-- Company tax: independently review the new ordinary IS workpaper and its39-row ledger; resolve complete allowances/interest, specialist regimes, reform transitions, rounding and authenticated filing before claiming completion.
+- Company tax: independently review the new ordinary IS workpaper and its41-row ledger; resolve complete allowances/interest, specialist regimes, reform transitions, rounding and authenticated filing before claiming completion.
 - VAT or sales tax: bring [VAT or GST](cd-vat-gst.md) up to the current tax year.
 - Social contributions: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
 - Payroll: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
@@ -59,4 +59,6 @@ Tracked in [\[CD\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Corporate expansion awaiting independent review
 
-The [corporate ledger](../../evidence/ledgers/cd-corporate-income-tax.md) records39new rule rows. The [corporate old-topic destination map](../../evidence/ledgers/dr-congo-corporate-old-topics.md) accounts for all16old bold-rule topics and supersedes only the initial map’s unchanged-corporate statement for this rewrite. The original86-topic map and prior review evidence remain historical records. New source reading covers ordinary IS scope, selected expense and loss conditions, minimum tax, provisional payments, annual return/attachments and assembly minutes. The authenticated portal/form/receipt path and stated legal gaps remain open. No new review acceptance, completed domain or publication follows from this expansion.
+The [corporate ledger](../../evidence/ledgers/cd-corporate-income-tax.md) records41new rule rows. The [corporate old-topic destination map](../../evidence/ledgers/dr-congo-corporate-old-topics.md) accounts for all16old bold-rule topics and supersedes only the initial map’s unchanged-corporate statement for this rewrite. The original86-topic map and prior review evidence remain historical records. New source reading covers ordinary IS scope, selected expense and loss conditions, minimum tax, provisional payments, annual return/attachments and assembly minutes. The authenticated portal/form/receipt path and stated legal gaps remain open. No new review acceptance, completed domain or publication follows from this expansion.
+
+The corporate expansion also carries an explicit research hold for unreconciled original2025 provisions imported by the2026Finance Law. The actual2025rectifying article9 has been read, but does not replace the missing original chain. The rewrite and its examples remain conditional research; no final2026liability or live filing approval is claimed.

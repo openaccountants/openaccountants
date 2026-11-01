@@ -9,13 +9,15 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
-tax_year_notes: "Income earned in 2026 under the IS reform; ordinary calculation and filing preparation only. Earlier IBP periods and transition cases require separate work."
+version: 1.1
+tax_year_notes: "Income earned in 2026 under the IS reform; ordinary calculation and filing preparation only. Earlier IBP periods, transition cases and the full carried-2025 measure chain require separate work; no final 2026 liability or live filing approval."
 ---
 
-# DR Congo corporate income tax: ordinary IS workpaper v1.0
+# DR Congo corporate income tax: ordinary IS workpaper v1.1
 
 ## Who this applies to
+
+**RESEARCH HOLD.** Finance Law25/060 article16 carries selected provisions of Finance Law24/011 into2026. The original enacted24/011 provisions have not been fully retrieved and reconciled in this expansion. Use the cited rules below only as a conditional research workpaper until that chain and the stated scope conditions are established. Do not report final2026liability or filing readiness from this draft. [2026Finance Law,art.16](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf).
 
 Use this draft for an ordinary, non-mining company whose 2026 income is established as subject to Impôt sur les Sociétés (IS). It prepares a tax reconciliation, minimum-tax comparison and filing checklist. Independent source review of this rewrite is pending; the two previously reviewed TP/nonresident Guides have separate review evidence.
 
@@ -84,7 +86,7 @@ Use the [transfer-pricing Guide](cd-transfer-pricing.md) for connected-party pri
 
 ## Two worked examples that recompute
 
-Both examples assume established ordinary IS scope for 2026, no sector or treaty adjustment, valid turnover and otherwise supported costs, and figures that do not engage the unresolved decimal-rounding wording. The prior-tax base is an assumed independently established input, not a claim about the reform treatment of a particular taxpayer's 2025 assessment.
+Both examples assume that the cited text governs after reconciliation of the carried-law chain, established ordinary IS scope for 2026, no sector or treaty adjustment, valid turnover and otherwise supported costs, and figures that do not engage the unresolved decimal-rounding wording. The prior-tax base is an assumed independently established input, not a claim about the reform treatment of a particular taxpayer's 2025 assessment.
 
 ### 1. Expense reconciliation: profit-based tax is larger
 
@@ -159,10 +161,11 @@ expected:
 | Laws 23/052 and 23/053 of 30 November 2023, official combined gazette copy | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01: this expansion read procedure art.13 PDF4–5; IS arts.3–13 PDF12–15, art.20 PDF17, arts.46–57 PDF23–26 and final arts.150–153 PDF44. Cited scope checked visually against the scanned pages; detailed capital-allowance rules not reconstructed. |
 | Finance Law 25/060 of 29 December 2025, 2026 revenue volume | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01: expansion read articles16–31 in relevant OCR, with articles18–19 PDF17,23–24 PDF19 and31 PDF27 visually checked. Other source portions retain their separate prior read receipts. |
 | Rectifying Finance Law 26/032 of 7 August 2026 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01: tax/commencement portions screened in actual captured OCR for changes to this job, including arts14–19 and49–51. Passive-income changes belong to the separate payment Guide; no claim that every annex or later instrument has been checked. |
+| Rectifying Finance Law25/044 of28June2025, carriedarticle9 | https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf | 2026-11-01: actualPDF12–13 read,PDF12 visually checked. The carriedarticle9 concerns mediation/re-examination procedures; it does not supply the missing original24/011 fiscal provisions. No complete2025law reconciliation claimed. |
 | Ministry, IS/IRPP direct-tax reform | https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp | 2026-11-01: reform commencement field,1 January2026, actually opened in web reader. |
 | DGI, IS public declaration instructions | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01: taxpayer, deadline, form/signature/bank-attestation instructions and observed public service links; no authenticated submission read. |
 
-Not yet confirmed: complete current penalty and interest rates/procedures; actual form numbers, field mappings, portal access, payment-reference and receipt workflow; first-year provisional-payment and 2025-IBP-to-2026-IS transition details; pre-reform loss carry-forward; non-multiple-of-CDF100 rounding under the unusual article150 decimal wording; complete depreciation, allowances, interest/thin-capitalisation and unrealised-gain/revaluation rules; property-company article49(3)/50(4) interaction, provincial Kinshasa rental tax and tenant withholding; mining corporate rate/concessions and mining dividend relief; whether any historical small-company turnover thresholds or goods/service percentages apply to a particular legal entity under the current reform, and the micro-business ministerial lump sum; resident dividend/interest/royalty withholding, treaty and sector relief; complete PE/residence/source/foreign-credit/exit analysis; actual nonresident technical/passive-service boundaries. Historical secondary-source figures are not preserved as current law; every old topic is retained in the destination map or this explicit gap list. Country coverage remains partial.
+Not yet confirmed: full enacted24/011 carried-measure reconciliation under25/060art.16; complete current penalty and interest rates/procedures; actual form numbers, field mappings, portal access, payment-reference and receipt workflow; first-year provisional-payment and 2025-IBP-to-2026-IS transition details; pre-reform loss carry-forward; non-multiple-of-CDF100 rounding under the unusual article150 decimal wording; complete depreciation, allowances, interest/thin-capitalisation and unrealised-gain/revaluation rules; property-company article49(3)/50(4) interaction, provincial Kinshasa rental tax and tenant withholding; mining corporate rate/concessions and mining dividend relief; whether any historical small-company turnover thresholds or goods/service percentages apply to a particular legal entity under the current reform, and the micro-business ministerial lump sum; resident dividend/interest/royalty withholding, treaty and sector relief; complete PE/residence/source/foreign-credit/exit analysis; actual nonresident technical/passive-service boundaries. Historical secondary-source figures are not preserved as current law; every old topic is retained in the destination map or this explicit gap list. Country coverage remains partial.
 
 <!-- openaccountants-cta-block -->
 
