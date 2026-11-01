@@ -1,6 +1,6 @@
 ---
 name: mw-vat-gst
-description: "Malawi 2026 current VAT computation, K50 m registration rule, foreign digital supply boundary and monthly filing; pre-amendment/portal details remain partial."
+description: "Malawi draft for 2026 ordinary domestic VAT working papers and registration screening under the cited amendments. Use it to distinguish supported output tax from eligible input credit, reconcile an excess credit separately from a refund entitlement, and identify the special registration boundary for non-resident digital supplies. The two examples assume that the underlying transactions and input claims have already been classified correctly. Earlier-period thresholds, amendment transitions, complete exemption and zero-rate schedules, imported-service treatment, refund eligibility and live portal fields remain outside the established job where stated. This partial Guide does not certify every supply or replace checking commencement and the actual filing requirements."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 ---
 
-# Malawi VAT: current domestic computation and digital-supply boundary v1.0
+# Malawi VAT: current domestic computation and digital-supply boundary v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

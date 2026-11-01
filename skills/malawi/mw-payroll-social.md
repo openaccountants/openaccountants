@@ -1,6 +1,6 @@
 ---
 name: mw-payroll-social
-description: "Malawi 2026 mandatory occupational pension contribution working papers under the 2023 Act, remittance duties and PAYE reconciliation; tax deductibility and exemption orders remain partial."
+description: "Malawi draft for 2026 payroll reconciliation and occupational pension contribution working papers under the cited pension statute. Use it only after confirming that the mandatory scheme applies to the employer and employees concerned. It separates employer and employee contributions, contribution remittance duties and supplied PAYE amounts, with two arithmetic controls for individual and aggregate payroll schedules. It does not assume that pension contributions are automatically deductible before applying the income-tax bands. Commencement and exemption orders, defined-benefit directions, expatriate coverage, sector levies, current interest and authenticated fund procedures remain explicit limitations. This is a conditional partial job rather than a complete Malawi payroll filing service."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 1.0
+version: 1.1
 ---
 
-# Malawi payroll: pension contributions and PAYE reconciliation v1.0
+# Malawi payroll: pension contributions and PAYE reconciliation v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

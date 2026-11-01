@@ -69,4 +69,4 @@ Baseline `db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6`. Every labelled substantive 
 
 Removed and why: secondary-source/approximate figures were replaced by actual enacted provisions or preserved as Sources gaps. The old corporation MAT continuous-loss condition, uniform 30% ceiling, current K25 million VAT threshold, and automatic pension deduction are not silently reused. Historical 2025 rate descriptions do not become 2026 rules. Current annual filing was not inferred from deleted 84(1). Unsupported registry timing/fee claims remain explicit unknowns.
 
-Lost content restored: pending independent review. Full country coverage remains partial.
+Lost content restored: 2 subtopics after initial independent review, restricted share transfers and statutory registers explicitly restored to the formation Sources gap line. Neither is recertified as a current legal rule. Full country coverage remains partial.

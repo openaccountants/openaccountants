@@ -1,15 +1,15 @@
 ---
 name: mw-transfer-pricing
-description: "Malawi 2026 TP information-notice handling, audit evidence retention and amended currency-point penalties; full pricing/documentation scope remains partial."
+description: "Malawi draft for 2026 handling of a transfer-pricing information notice and retention of audit records under the cited tax-administration provisions. Use it to identify the actual notice, response period, missing information, written audit-completion evidence and relevant retention period before preparing a response file. The examples compute statutory penalty units and compare record-retention dates; they do not supply an unverified conversion from currency points into kwacha or authorise destruction of records. Full related-party scope, annual documentation thresholds, pricing methods, current regulations, amendment commencement and authenticated submission remain explicit gaps. This limited procedural job does not establish complete transfer-pricing compliance for an enterprise."
 jurisdiction: MW
 category: transfer-pricing
 tax_year: 2026
 last_updated: 2026-11-01
 tier: 2
-version: 1.0
+version: 1.1
 ---
 
-# Malawi transfer pricing: information-notice response and retention v1.0
+# Malawi transfer pricing: information-notice response and retention v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

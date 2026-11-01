@@ -23,4 +23,6 @@ Tax year 2026; independently review before publication. Each row records the por
 | 17 | Provisionalunderestimate<90%actual triggers 20%+interest | TAA 86 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content | “less than ninety percent of the actual income tax” | 2026-11-01 |
 | 18 | Sourceperioddate noticesconflict 30/31 Dec so 2025 boundaryexcluded | MRA publicnotice updated | https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf | “with effect from 31st December 2025” | 2026-11-01 |
 
+| 19 | Base: taxable/exempt restrictions, final-tax cost disallowance; common costs apportioned taxable/total income unless Commissioner approves/directs alternative for unreasonable result | s28(2)(a)–(d), Act17/2023 s3(c) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content | “expenditure related to income that is subject to a final tax shall not be deductible” | 2026-11-01 |
+
 [Complete old-topic destination map](mw-old-topic-destinations.md).

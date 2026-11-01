@@ -1,6 +1,6 @@
 ---
 name: mw-tax-overview
-description: "Malawi 2026 tax intake and source routing across current company MAT, PAYE, VAT, pension and TP notice jobs; partial country coverage."
+description: "Malawi tax-intake router for the partial 2026 country drafts. Use it to gather the entity, income, turnover, assessment period, transaction and employee facts that determine which source-led computation job to open. It routes ordinary company tax and MAT, individual tax, domestic VAT, conditional pension reconciliation, tax registration and a limited transfer-pricing notice response. The two turnover projections are intake controls and do not establish tax-registration liability by themselves. Annual filing deadlines, commencement and transition checks, specialist sectors, full incorporation law, cross-border withholding and treaties, and comprehensive transfer-pricing compliance remain unconfirmed where stated. Presence of these Guides is not complete country coverage or accountant attestation."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
-version: 1.0
+version: 1.1
 ---
 
-# Malawi 2026 tax router and evidence checks v1.0
+# Malawi 2026 tax router and evidence checks v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

@@ -1,6 +1,6 @@
 ---
 name: mw-corporate-income-tax
-description: "Malawi 2026 non-mining company income-tax and MAT working papers, supernormal band, six-year credit controls and partial filing scope."
+description: "Malawi draft for 2026 ordinary non-mining company income-tax and minimum alternative tax working papers. Use it to reconcile taxable income separately from statutory turnover, identify the additional taxable-income band, compare the ordinary charge with MAT, and control carried MAT credits by origin and expiry. It states the deduction restrictions for exempt and final-tax income and the apportionment of common expenditure. The two cases assume supported adjusted income and eligible credit records. This partial job excludes specialist sectors, a complete capital-gains computation, withholding and treaties, unresolved commencement boundaries, and authenticated annual filing steps. Read its source-chain limitations before applying it to a live period."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 ---
 
-# Malawi ordinary company tax and minimum alternative tax v1.0
+# Malawi ordinary company tax and minimum alternative tax v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
@@ -34,7 +34,7 @@ MAT does not require a continuous loss position. Age is measured in years of ass
 
 ## The base
 
-Start with tax-adjusted taxable income, not turnover. Section 28(1), replaced in 2023, permits noncapital expenditure/losses wholly, exclusively and necessarily incurred for trade or income production. Reconcile accounting depreciation, capital allowances, exemptions, capital gains and non-allowable costs separately. General capital gains enter section 11 income; the old listed-share holding-period exemption in First Schedule(hb) was removed by Act 36/2025 s 5, so do not assume twelve-month holdings exempt. Detailed gain/basis rules remain outside this working paper. [2023 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content); [2025 s 5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content).
+Start with tax-adjusted taxable income, not turnover. Section 28(1), replaced in 2023, permits noncapital expenditure/losses wholly, exclusively and necessarily incurred for trade or income production. Section 28(2) permits deduction only for expenditure producing taxable income when taxable and exempt income coexist, and disallows expenditure related to income subject to a final tax. If common expenditure cannot be directly attributed, the deductible share is common expenditure multiplied by taxable income divided by total income. If that formula gives an unreasonable result, the Commissioner General may approve or direct another apportionment method. Apply those restrictions before using the adjusted taxable-income input. Reconcile accounting depreciation, capital allowances, exemptions, capital gains and non-allowable costs separately. General capital gains enter section 11 income; the old listed-share holding-period exemption in First Schedule(hb) was removed by Act 36/2025 s 5, so do not assume twelve-month holdings exempt. Detailed gain/basis rules remain outside this working paper. [2023 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content); [2025 s 5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content).
 
 Compute ordinary tax, adding the marginal excess charge. For a company meeting both MAT conditions, turnover includes exempt amounts but excludes final-withholding payments (66A(2)). Compute MAT. Apply only valid, unexpired prior MAT credit to ordinary income tax, capped at ordinary tax less current MAT, then pay the higher result and MAT. If current MAT exceeds ordinary income tax, section 66B grants the difference as a new credit. Track origin, use, expiry and FIFO; never refund or use a credit to reduce liability below current MAT. [Sections 66–66B](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content).
 

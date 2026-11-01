@@ -1,6 +1,6 @@
 ---
 name: mw-income-tax
-description: "Malawi 2026 ordinary monthly PAYE and annual non-employment rate computations from enacted December 2025 tables; pension deductions and full filing scope remain partial."
+description: "Malawi draft for 2026 individual income-tax working papers, distinguishing the employment and non-employment schedules. Use it to route a taxpayer to the correct income category, reconcile supplied taxable income, apply the stated annual or monthly bands, and check the two numerical cases. It does not treat every receipt as salary or replace the taxpayer's source, residence and exemption analysis with a headline rate. Benefits, mixed income, pension deductibility, withholding finality, transitions and current filing procedures remain limited as specified in the body. This is a partial source-led computation draft, subject to the identified amendment and commencement checks and independent review."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 ---
 
-# Malawi individual income tax: current salary bands v1.0
+# Malawi individual income tax: current salary bands v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

@@ -1,6 +1,6 @@
 ---
 name: mw-company-formation
-description: "Malawi 2026 tax-registration handoff for a newly established business, TIN controls and tax-type routing; company-law incorporation conditions remain explicit gaps."
+description: "Malawi draft for 2026 tax-registration handoff following the establishment of a business. Use it to distinguish legal incorporation from obtaining a taxpayer identification number, check whether the taxpayer already has a TIN, reconcile true identity and supporting records, and route income-tax, VAT and employer obligations for separate assessment. The two share examples check only arithmetic supplied in the incorporation records and establish no statutory capital minimum. Company-law forms, membership and transfer restrictions, statutory registers, registry fees, annual compliance and live registration fields remain explicit source gaps. This partial handoff requires the actual current prescribed documents and does not certify that a company has been validly incorporated."
 jurisdiction: MW
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 1.0
+version: 1.1
 ---
 
-# Malawi company formation: tax-registration handoff v1.0
+# Malawi company formation: tax-registration handoff v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
@@ -87,7 +87,7 @@ Get incorporation/legal-form evidence, shareholder/director consents and identit
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 21–23 and 28(2) read in full | 2026-11-01 |
 | [VATAct 5/2026](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), s 4 registration categories | 2026-11-01 |
 
-**Not yet confirmed:** CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.
+**Not yet confirmed:** CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, restricted share transfers, statutory registers, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.
 
 <!-- openaccountants-cta-block -->
 
