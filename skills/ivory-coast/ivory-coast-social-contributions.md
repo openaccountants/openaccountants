@@ -115,7 +115,7 @@ This is the deterministic pre-classifier for bank-statement and payroll transact
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| CMU, COUVERTURE MALADIE UNIVERSELLE | EXCLUDE, CMU health contribution | Flat XOF 500 + 500 per person/month |
+| CMU, COUVERTURE MALADIE UNIVERSELLE | EXCLUDE, CMU health contribution | Flat, amount unverified (see the rates table) |
 | CNAM | EXCLUDE, CMU health | Caisse Nationale d'Assurance Maladie (CMU manager) |
 
 ### 3.3 CNPS débits appearing on specific Ivorian banks
@@ -163,14 +163,20 @@ This is the deterministic pre-classifier for bank-statement and payroll transact
 
 **CMU débits:**
 - Description: "CMU", "COUVERTURE MALADIE UNIVERSELLE", or "CNAM"
-- Amount: XOF 1,000 × number of covered persons (500 EE + 500 ER)
+- Amount: per covered person, amount unverified (see the rates table)
 
 **Key identification tips:**
 1. CNPS contribution débits are always outgoing, never credits (an incoming "PENSION CNPS" is a benefit received, not a contribution).
 2. They recur monthly or quarterly with amounts tied to the appel de cotisations.
 3. Do not confuse with DGI/ITS débits (payroll tax) or TVA (VAT), those are tax, not social security.
-4. Régularisation lump sums may bundle principal with the 10% penalty + majorations, flag for breakdown.
+4. Régularisation lump sums may bundle principal with penalties, flag for breakdown.
 
+
+## Judgement points
+
+- Headcount near 20 with seasonal staff: flag it, because the count sets monthly or quarterly payment.
+- Arrears: do not estimate. Get the CNPS statement, separate principal from penalty and refer it.
+- Self-employed RSTI or public sector (IPS-CGRAE): stop. These rates do not apply.
 
 ## Ask the client first
 

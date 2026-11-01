@@ -69,7 +69,7 @@ The host of staff seconded by a non-resident employer is jointly liable for the 
 
 ## Two worked examples that recompute
 
-Example 1. Local employee, 500,000 XOF, 1 part, AT/MP 2%.
+Example 1. Local employee, 500,000 XOF, 1 part, AT/MP 2%, one CMU person. The 500 XOF CMU in each side is the unverified amount from Social contributions.
 
 ```oa-check
 name: Local employee 500000
@@ -117,7 +117,7 @@ Before computing, you MUST have:
 3. **Local vs expatriate status** (contract classification per AEJ).
 4. **Employer headcount** (to set CNPS periodicity: ≥20 monthly, <20 quarterly).
 5. **CNPS AT/MP risk-class rate** for the employer (2%-5%).
-6. **Number of CMU-covered persons** per employee (for the flat 500 XOF/person each side).
+6. **Number of CMU-covered persons** per employee (CMU amount unverified, see [Social contributions](ivory-coast-social-contributions.md)).
 
 ### 8.2 Refusal Catalogue, STOP and refuse if:
 

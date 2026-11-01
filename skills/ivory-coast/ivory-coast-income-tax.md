@@ -147,7 +147,7 @@ expected:
 
 Pattern library for bank statements. Its treatments are classification aids; the rates above win.
 
-Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears in the FCFA bank statement. If multiple match, use the most specific. If none match, fall through to Tier 1 rules (Section 5).
+Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears in the FCFA bank statement. If multiple match, use the most specific. If none match, ask the client.
 
 ### 3.1 Income Patterns (Credits)
 
@@ -233,7 +233,7 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | --- | --- | --- |
 | VIREMENT INTERNE, ENTRE MES COMPTES | EXCLUDE | Own-account transfer |
 | REMBOURSEMENT PRET, PRINCIPAL CREDIT | EXCLUDE | Loan principal movement |
-| CNPS, COTISATION SOCIALE | CNPS deduction line | Employee CNPS reduces taxable base via payroll, not a business expense line |
+| CNPS, COTISATION SOCIALE | CNPS deduction line | Employee CNPS is a payroll item, not a business expense line |
 | TVA PAIEMENT, DGI TVA | EXCLUDE | VAT liability payment |
 
 ### 3.8 Ivorian Banks & Mobile Money -- Statement Format Reference
@@ -272,9 +272,16 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | CNPS / COTISATION | Social security | Employee 6.3% pension reduces net pay |
 | HONORAIRES | Professional fees | Business income (BNC) |
 | AGIOS / FRAIS / COMMISSION | Bank charges | Deductible (business account) |
-| RETENUE A LA SOURCE | Withholding tax | BNC WHT (7.5% / 20%) |
+| RETENUE A LA SOURCE | Withholding tax | BNC WHT (7.5%) |
 | TVA | VAT (18%) | Liability/recoverable, not income/expense |
 
+
+## Judgement points
+
+- Parts: use 1 part until the family situation is documented.
+- Local or expatriate: use local and flag it until the contract is seen; the employer tax moves from 2.8% to 12%.
+- Regime: flag turnover near a band limit or unconfirmed CGA membership.
+- Home and mixed-use utilities, and vehicle costs: 0% business use until a documented basis or log is provided.
 
 ## Ask the client first
 

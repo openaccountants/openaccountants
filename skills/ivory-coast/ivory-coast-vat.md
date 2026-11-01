@@ -137,7 +137,7 @@ expected:
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| GOOGLE, MICROSOFT, AWS | Autoliquidation 18% | Non-resident |
+| GOOGLE, MICROSOFT, AWS | Check: reverse charge unconfirmed | Non-resident; see the last line of Sources |
 
 Edge cases: capital goods adjustment and Investment Code firms go to a reviewer. Never confuse exempt with zero. Never treat WAEMU as intra-community. Reject invoices without the supplier's NCC.
 
