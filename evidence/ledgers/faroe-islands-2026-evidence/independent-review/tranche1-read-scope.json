@@ -1,0 +1,281 @@
+{
+  "new_local_reads": [
+    {
+      "id": "tax",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/tax.reader.txt",
+      "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+      "raw_sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c",
+      "new_actual_native_LF": [
+        [
+          294,
+          336
+        ],
+        [
+          418,
+          421
+        ],
+        [
+          457,
+          457
+        ],
+        [
+          593,
+          624
+        ],
+        [
+          775,
+          777
+        ],
+        [
+          799,
+          804
+        ],
+        [
+          810,
+          819
+        ],
+        [
+          1057,
+          1076
+        ],
+        [
+          1088,
+          1090
+        ],
+        [
+          1128,
+          1128
+        ]
+      ]
+    },
+    {
+      "id": "assessment",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/assessment.reader.txt",
+      "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+      "raw_sha256": "274e5c894ae4a05b2373ee9858bf42c32ded6950faf5bf86bf2e7272eecc7d38",
+      "new_actual_native_LF": [
+        [
+          322,
+          326
+        ]
+      ]
+    },
+    {
+      "id": "capital",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/capital.reader.txt",
+      "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+      "raw_sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262",
+      "new_actual_native_LF": [
+        [
+          309,
+          320
+        ],
+        [
+          346,
+          385
+        ],
+        [
+          420,
+          439
+        ]
+      ]
+    },
+    {
+      "id": "admin",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/admin.reader.txt",
+      "reader_sha256": "70770eb2ceee7d7da82d1424967b1ad6dce5abfe8996c1d75341954908b46ffc",
+      "raw_sha256": "b320aa7e72fff866311e1487fec9c7864c077825b7c57c358382cac1310f9115",
+      "new_actual_native_LF": [
+        [
+          327,
+          338
+        ]
+      ]
+    },
+    {
+      "id": "returns",
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/returns.reader.txt",
+      "reader_sha256": "029ab6b1ceefd2463307e1d4dfb9bb4e2d2b1a8f5932bfdf06ada83ba0fa68a2",
+      "raw_sha256": "898fd1d2cb434246397302fc2d0fd434c624d3eb8982b5451e8e80ad71b61570",
+      "new_actual_native_LF": [
+        [
+          32,
+          32
+        ],
+        [
+          39,
+          39
+        ]
+      ]
+    }
+  ],
+  "identical_source_previous_actual_reads_reused": [
+    {
+      "id": "tax",
+      "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+      "actual_previous_ranges_reused": [
+        [
+          575,
+          591
+        ],
+        [
+          601,
+          616
+        ],
+        [
+          645,
+          657
+        ],
+        [
+          868,
+          883
+        ],
+        [
+          531,
+          574
+        ],
+        [
+          1106,
+          1109
+        ],
+        [
+          884,
+          924
+        ],
+        [
+          427,
+          435
+        ],
+        [
+          462,
+          506
+        ],
+        [
+          685,
+          688
+        ],
+        [
+          337,
+          367
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "depreciation",
+      "reader_sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599",
+      "actual_previous_ranges_reused": [
+        [
+          390,
+          427
+        ],
+        [
+          299,
+          389
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "group",
+      "reader_sha256": "fc4012cdf76358c00a6d3c4ed519f5bba2912b7ef620c096776f28ebde106c0a",
+      "actual_previous_ranges_reused": [
+        [
+          1,
+          372
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "assessment",
+      "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+      "actual_previous_ranges_reused": [
+        [
+          304,
+          316
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "company",
+      "reader_sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c",
+      "actual_previous_ranges_reused": [
+        [
+          337,
+          345
+        ],
+        [
+          488,
+          496
+        ],
+        [
+          523,
+          529
+        ],
+        [
+          600,
+          617
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "capital",
+      "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+      "actual_previous_ranges_reused": [
+        [
+          324,
+          336
+        ],
+        [
+          413,
+          419
+        ],
+        [
+          438,
+          438
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    },
+    {
+      "id": "regulation",
+      "reader_sha256": "738bfad66d22b7927b6a38fb09e091ee5768893943f9e8e0589d5851aaf5ddb4",
+      "actual_previous_ranges_reused": [
+        [
+          299,
+          326
+        ]
+      ],
+      "source": "previouscompletedindependent-review/source-read-ledger.json;notnewfullreading"
+    }
+  ],
+  "web": [
+    {
+      "source": "vls-N-Q-web-response.json",
+      "sha256": "5ffad5d4999b4570fb03fba8f17754acbe430e3b3fcf005a4c54f9cde4f3a1a5",
+      "actual_read_web_ranges": [
+        [
+          620,
+          690
+        ]
+      ],
+      "note": "TAKSVLSNspecifiedextractonly;notwhole907lines"
+    },
+    {
+      "source": "tp-cb-web-source-response.json",
+      "sha256": "4fcb3c3c6e399b061a6d50b6197f63c1002cefe4f528f4604fd41fdd3dfbee3d",
+      "actual_read": "TPPDFextracts306\u2013399 includingduplicates350\u2013372;2018amendmentanchorquotesrow10;cachedCbCR20\u2013119",
+      "note": "Onlyprinted/receivedscopes,notwholePDF"
+    },
+    {
+      "source": "source-failure-check-web.json",
+      "sha256": "4c7eda1ddb9b77e324d119a7255072f56d681311d06c4f59992fa70e4770fb47",
+      "actual_read": "FreshofficialCbCR0\u2013119 andreturns0\u2013135 wereoutput/read;retainedtoolresultincludesreturnfullandCbCRfollowup.Quote-misscheckonly,notbroadresearch."
+    }
+  ],
+  "row_review": "All123sourcecellsreadinboundedIDbatches;matchingGuidewordingalreadyreadincompletedbodyreview,CITnewfullactualdiffreadthistranche.",
+  "unread": "Fullacquiredlawsnotclaimedread;oldfull8countryreviewnotrestarted;PIT/VAT/XB/payroll/formationledgersoutsidefirsttranche."
+}

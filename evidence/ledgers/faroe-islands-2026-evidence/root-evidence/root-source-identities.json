@@ -1,0 +1,106 @@
+[
+  {
+    "id": "law",
+    "url": "https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/law.reader.txt",
+    "reader_sha256": "43b888ab0fb7d765263e4015daf4fcbe8e430b5dcf43b31f8c5a84ec6d5af644",
+    "raw_sha256": "9894b644b872c88353823b8bd91222e3d23f9ba10fa7cc37afd4620f3d452ad4",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "reg",
+    "url": "https://logir.fo/Kunngerd/35-fra-20-03-2000-um-lutfalsligan-fradrattarraett-fyri-meirvirdisgjald-og-um-javnan-av-inngangandi-avgjaldi",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/reg.reader.txt",
+    "reader_sha256": "3b287022c2a74d08d119e924fa50f0e0a69b4ba4afd1cf49b8bf347976d6ad78",
+    "raw_sha256": "b087762b7651c58ef79ad936e832a8b5c8b68ce83719d57ef23dd5bfd1ad22f0",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "fuel",
+    "url": "https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/fuel.reader.txt",
+    "reader_sha256": "5a2a850017d119c033cfa922e532f4b740216d35f37de0ce778271d74a92a620",
+    "raw_sha256": "8c2e44e648bc3d9bf28a5e7c29add544b1860e04b974aa8fa0dac54fa711a83e",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "returns",
+    "url": "https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/returns.reader.txt",
+    "reader_sha256": "6977ecc0db0b729ce48a62e1ac091dd7ca6f609bef393a070e382976555afcfa",
+    "raw_sha256": "500ed72fd360ce3ce199d4c6c2cb5c8ee64afda1ae11ebdcdf5ca76fab382957",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "tourism",
+    "url": "https://www.taks.fo/fo/vinna/mvg/mvg-og-ferdavinna",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/tourism.reader.txt",
+    "reader_sha256": "248fdd05d5f0cddb63716aac9ca9fb377b13cb7a80432cfc364a1db3e31fc291",
+    "raw_sha256": "cb88cef5aa4a1d04fa07b170c537f1b1dcd5a4ec7512d3c20c0ce8556aa130d9",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "tax",
+    "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/tax.reader.txt",
+    "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+    "raw_sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "rate",
+    "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/rate.reader.txt",
+    "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+    "raw_sha256": "274e5c894ae4a05b2373ee9858bf42c32ded6950faf5bf86bf2e7272eecc7d38",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "capital",
+    "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/capital.reader.txt",
+    "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+    "raw_sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "admin",
+    "url": "https://logir.fo/Logtingslog/61-fra-02-05-2022-um-fyrisiting-av-skatti-tolli-og-avgjaldi",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/admin.reader.txt",
+    "reader_sha256": "70770eb2ceee7d7da82d1424967b1ad6dce5abfe8996c1d75341954908b46ffc",
+    "raw_sha256": "b320aa7e72fff866311e1487fec9c7864c077825b7c57c358382cac1310f9115",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "royalty",
+    "url": "https://www.taks.fo/en/business/tax/tax-and-royalties",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/royalty.reader.txt",
+    "reader_sha256": "85d5a6a142b2588b91f53ad79ff1b530f69a589361e191454a38107f3fb25a14",
+    "raw_sha256": "6a18c449fbe58ea9eb8a515255381b1625d1d3e09c8a381a4dcc345a897b9cb4",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "refund",
+    "url": "https://www.taks.fo/en/business/tax/dividend-tax-refunds",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/refund.reader.txt",
+    "reader_sha256": "7972bae92c5bb7f438d656f579929920778f2d64e139f435f2d97e74d7ef4ff5",
+    "raw_sha256": "fdd0cc3552841558137bc287365f09d949c5a127e580a86ff38ed7549c246f97",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "relief",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/relief.reader.txt",
+    "reader_sha256": "9da91f128b441a86f676d24c7eefdc410a75be7bd10a6cb91200f9cbc6162d0e",
+    "raw_sha256": "b74cd22fe7bdb9e5e32e299e34ffc6e3139796512248c7d37253bc8bb0488283",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  },
+  {
+    "id": "residence",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/root-evidence/residence.reader.txt",
+    "reader_sha256": "8096aa78420c7ac166ff7af80dc624a557b6ddef06c5c1441bbdd56ff79c9d5a",
+    "raw_sha256": "7ab705a6f9027687bbf1d619113a90bd7c4bd05e506626d3355c131d731f1a30",
+    "acquisition": "Actual verified-TLS authority retrieval, current law selected provisions; copy is not assertion of whole-source reading. Earlier whole-Guide review retained, current ledger selected quotes matched28October."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-31",
+  "base_commit": "1be072a097ddbec72d5d83063e548c2221386105",
+  "status": "frozen partial candidate awaiting independent review; no push",
+  "excluded_self": "candidate-manifest.json is bound by the final Git commit and separately reported SHA256",
+  "files": {
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/README.before.md": "22557be83185d15bf7cb2b16efafff32ba11829e87d4e924fdc1dc4e35646c54",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/README.md": "5e3fd8731e633025b7442d46b9885315cc5d73e655d952f561956f1091d1b460",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/before.json": "592c9f25eb3dc99849e8a3575aa489c029848e5ef613fb9ea252fd08f983d014",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/changed-guide-validation.txt": "4c6fbafdce32c90bcf660d8da1fb61e76b76617cf87e8a16853e732c071222eb",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/draft-options.md": "90f6c32fdb66f2b674a79159ea209a6c43c9dfc84ff2dc04c0384a2d3cd12768",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/example-checks.txt": "4916995b995854e142b802ac2678584eff4e0af6439ea42b692679a65a353da9",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/ledger.json": "db985f1976764a0cb6a16ec89fd3784ba1681b5ea5b05e3fbe46377df0fb9d39",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/ledger.md": "d060993b2e0f478a646633dbf6ad8f9e84a875df2f2010d7a299a3f00c552b31",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/old-topic-destinations.json": "4fd5bab0e9da338750859e4079da6b2d7d61fff3f28b4f1e596c880631589182",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/old-topic-destinations.md": "f2bbe0fa55c242740903effae556af80a4f599052850b9bd8dd87faa599bc4ac",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/preservation-and-bindings.txt": "86302537c638568bdd889c04fcdd325330fe8897ff541585992097d17d2e7b46",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/skill-checks-initial.txt": "da059115095084447d7687884d72e64f043224e9414e7db9d2fea578c9874c2e",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/skill-checks.txt": "7d72c28811f14175e210401507ad3f5232da78a715f3a21a6f763616120e043b",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/source-receipts.json": "838084b3366d361472a95bc147eece56f81c626e833c1b248975dd3018f3fc68",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/source-urls.json": "add42ee7214ea9671c12bcd4de8275c520efa26e87d28be768975448837c9c0a",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/strict-metadata-audit.txt": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6",
+    "evidence/research/gibraltar-2026/category-2-2026-10-31/verify.py": "261ab9c84838e0e5c83cdfdd96c15e748a4b0c0a5d21bca6a022f2a96a30da2f",
+    "skills/gibraltar/README.md": "da3877eef00dbb9228a3907162d5f28efc767a3cf6c66d240dd8f19c9d07ca26",
+    "skills/gibraltar/gi-category-2-income-tax.md": "e43b90cc3aae20a54e7a77fe58f9d03d5074ac14bad39c1102c0ad6fe998871d"
+  }
+}

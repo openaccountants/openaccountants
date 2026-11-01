@@ -1,0 +1,2301 @@
+{
+  "candidate": "3e0816e1f574c7abf144290f96b4371cdb9d77d9",
+  "manifest_sha256": "1a5b235a0e17185e7fad57afc65cecc261a877c6fce9ce544a372d8a698b8cdc",
+  "input_count": 18,
+  "rows": 41,
+  "unique_quote_groups": 31,
+  "checks": 567,
+  "failures": 0,
+  "predecessor_Guides_exact": 9,
+  "prior_Svalbard_evidence_files_unchanged": 136,
+  "description_words": 107,
+  "API_members": {
+    "nl/nl-20190301-002.xml": "0871014acd5dc24eaab8c6a5d1132d0a3faeaad3956c8fa037b09d346dc9982a",
+    "sf/sf-20210621-2056.xml": "cc63f9af79f4fcb7cc1cfc96d7326b2a4d99e52bca78ed1682b644bd728c8e3a",
+    "sf/sf-19830215-0086.xml": "f73699163e492de3948507543635a50551b57df644552cd400e5599b02b22bc0"
+  },
+  "arithmetic": {
+    "direct_boundary_percent": 25.0,
+    "direct_qualifying_percent": 26.0,
+    "shares_exceeding_threshold": 100.0,
+    "indirect_downstream_excess": 5,
+    "indirect_upstream_excess": 0,
+    "economic_product_percent": 15.0,
+    "first_daily_NOK": "672.5",
+    "second_daily_NOK": "1345",
+    "third_daily_NOK": "2017.5",
+    "first_56_days_NOK": "37660.0",
+    "next_70_days_NOK": "94150",
+    "18_week_cumulative_NOK": "131810.0"
+  },
+  "details": [
+    {
+      "check": "manifest pinned",
+      "pass": true
+    },
+    {
+      "check": "input skills/svalbard/sj-svalbard-company-beneficial-owners.md",
+      "pass": true
+    },
+    {
+      "check": "input skills/svalbard/README.md",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/sj-svalbard-company-beneficial-owners.md",
+      "pass": true
+    },
+    {
+      "check": "input REUSE.toml",
+      "pass": true
+    },
+    {
+      "check": "input LICENSES/NLOD-2.0.txt",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/SOURCE-LICENSING.md",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-dataset-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.txt",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.xml",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.txt",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.xml",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.txt",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.xml",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/line-map.json",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/predecessor-README.md",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/preservation.json",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/procedure-source-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "input evidence/ledgers/svalbard-beneficial-owners-20261031/rows.json",
+      "pass": true
+    },
+    {
+      "check": "41 rows",
+      "pass": true
+    },
+    {
+      "check": "Guide hash",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-001",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-001",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-001",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-002",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-002",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-002",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-003",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-003",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-003",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-004",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-004",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-004",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-005",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-005",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-005",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-006",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-006",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-006",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-007",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-007",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-007",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-008",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-008",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-008",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-009",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-009",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-009",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-010",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-010",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-010",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-011",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-011",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-011",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-012",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-012",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-012",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-013",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-013",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-013",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-014",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-014",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-014",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-015",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-015",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-015",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-016",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-016",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-016",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-017",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-017",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-017",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-018",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-018",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-018",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-019",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-019",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-019",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-020",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-020",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-020",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-021",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-021",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-021",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-022",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-022",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-022",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-023",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-023",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-023",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-024",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-024",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-024",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-025",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-025",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-025",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-026",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-026",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-026",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-027",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-027",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-027",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-028",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-028",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-028",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-029",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-029",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-029",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-030",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-030",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-030",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-031",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-031",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-031",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-032",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-032",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-032",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-033",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-033",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-033",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-034",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-034",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-034",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-035",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-035",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-035",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-036",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-036",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-036",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-037",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-037",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-037",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-038",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-038",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-038",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-039",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-039",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-039",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-040",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-040",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-040",
+      "pass": true
+    },
+    {
+      "check": "raw source SJ-RRH-041",
+      "pass": true
+    },
+    {
+      "check": "reader SJ-RRH-041",
+      "pass": true
+    },
+    {
+      "check": "complete reader quote SJ-RRH-041",
+      "pass": true
+    },
+    {
+      "check": "archive hash gjeldende-lover.tar.bz2",
+      "pass": true
+    },
+    {
+      "check": "exact API member nl/nl-20190301-002.xml",
+      "pass": true
+    },
+    {
+      "check": "fresh dataset metadata gjeldende-lover.tar.bz2",
+      "pass": true
+    },
+    {
+      "check": "archive hash gjeldende-sentrale-forskrifter.tar.bz2",
+      "pass": true
+    },
+    {
+      "check": "exact API member sf/sf-20210621-2056.xml",
+      "pass": true
+    },
+    {
+      "check": "exact API member sf/sf-19830215-0086.xml",
+      "pass": true
+    },
+    {
+      "check": "fresh dataset metadata gjeldende-sentrale-forskrifter.tar.bz2",
+      "pass": true
+    },
+    {
+      "check": "private procedure raw rrh-as",
+      "pass": true
+    },
+    {
+      "check": "private procedure reader rrh-as",
+      "pass": true
+    },
+    {
+      "check": "private procedure raw rrh-altinn",
+      "pass": true
+    },
+    {
+      "check": "private procedure reader rrh-altinn",
+      "pass": true
+    },
+    {
+      "check": "private procedure raw rrh-overview",
+      "pass": true
+    },
+    {
+      "check": "private procedure reader rrh-overview",
+      "pass": true
+    },
+    {
+      "check": "38 direct fresh quote matches",
+      "pass": true
+    },
+    {
+      "check": "public API NLOD declaration",
+      "pass": true
+    },
+    {
+      "check": "public download no auth",
+      "pass": true
+    },
+    {
+      "check": "nine predecessors",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-company-income-tax.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-income-tax.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-payroll-tax.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-project-group-payroll.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-social-contributions.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-tax-residence.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "pass": true
+    },
+    {
+      "check": "predecessor exact skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "pass": true
+    },
+    {
+      "check": "README baseline snapshot",
+      "pass": true
+    },
+    {
+      "check": "README original unit 1",
+      "pass": true
+    },
+    {
+      "check": "README destination 1",
+      "pass": true
+    },
+    {
+      "check": "README original unit 2",
+      "pass": true
+    },
+    {
+      "check": "README destination 2",
+      "pass": true
+    },
+    {
+      "check": "README original unit 3",
+      "pass": true
+    },
+    {
+      "check": "README destination 3",
+      "pass": true
+    },
+    {
+      "check": "README original unit 4",
+      "pass": true
+    },
+    {
+      "check": "README destination 4",
+      "pass": true
+    },
+    {
+      "check": "README original unit 5",
+      "pass": true
+    },
+    {
+      "check": "README destination 5",
+      "pass": true
+    },
+    {
+      "check": "README original unit 6",
+      "pass": true
+    },
+    {
+      "check": "README destination 6",
+      "pass": true
+    },
+    {
+      "check": "README original unit 7",
+      "pass": true
+    },
+    {
+      "check": "README destination 7",
+      "pass": true
+    },
+    {
+      "check": "README original unit 8",
+      "pass": true
+    },
+    {
+      "check": "README destination 8",
+      "pass": true
+    },
+    {
+      "check": "README original unit 9",
+      "pass": true
+    },
+    {
+      "check": "README destination 9",
+      "pass": true
+    },
+    {
+      "check": "README original unit 10",
+      "pass": true
+    },
+    {
+      "check": "README destination 10",
+      "pass": true
+    },
+    {
+      "check": "README original unit 11",
+      "pass": true
+    },
+    {
+      "check": "README destination 11",
+      "pass": true
+    },
+    {
+      "check": "README original unit 12",
+      "pass": true
+    },
+    {
+      "check": "README destination 12",
+      "pass": true
+    },
+    {
+      "check": "README original unit 13",
+      "pass": true
+    },
+    {
+      "check": "README destination 13",
+      "pass": true
+    },
+    {
+      "check": "README original unit 14",
+      "pass": true
+    },
+    {
+      "check": "README destination 14",
+      "pass": true
+    },
+    {
+      "check": "README original unit 15",
+      "pass": true
+    },
+    {
+      "check": "README destination 15",
+      "pass": true
+    },
+    {
+      "check": "README original unit 16",
+      "pass": true
+    },
+    {
+      "check": "README destination 16",
+      "pass": true
+    },
+    {
+      "check": "README original unit 17",
+      "pass": true
+    },
+    {
+      "check": "README destination 17",
+      "pass": true
+    },
+    {
+      "check": "README original unit 19",
+      "pass": true
+    },
+    {
+      "check": "README destination 19",
+      "pass": true
+    },
+    {
+      "check": "README original unit 21",
+      "pass": true
+    },
+    {
+      "check": "README enumerated count/status update",
+      "pass": true
+    },
+    {
+      "check": "README original unit 23",
+      "pass": true
+    },
+    {
+      "check": "README destination 23",
+      "pass": true
+    },
+    {
+      "check": "README original unit 25",
+      "pass": true
+    },
+    {
+      "check": "README destination 25",
+      "pass": true
+    },
+    {
+      "check": "README original unit 27",
+      "pass": true
+    },
+    {
+      "check": "README destination 27",
+      "pass": true
+    },
+    {
+      "check": "README original unit 28",
+      "pass": true
+    },
+    {
+      "check": "README destination 28",
+      "pass": true
+    },
+    {
+      "check": "README original unit 29",
+      "pass": true
+    },
+    {
+      "check": "README destination 29",
+      "pass": true
+    },
+    {
+      "check": "README original unit 30",
+      "pass": true
+    },
+    {
+      "check": "README destination 30",
+      "pass": true
+    },
+    {
+      "check": "README original unit 31",
+      "pass": true
+    },
+    {
+      "check": "README destination 31",
+      "pass": true
+    },
+    {
+      "check": "README original unit 32",
+      "pass": true
+    },
+    {
+      "check": "README destination 32",
+      "pass": true
+    },
+    {
+      "check": "README original unit 33",
+      "pass": true
+    },
+    {
+      "check": "README destination 33",
+      "pass": true
+    },
+    {
+      "check": "README original unit 34",
+      "pass": true
+    },
+    {
+      "check": "README destination 34",
+      "pass": true
+    },
+    {
+      "check": "README original unit 35",
+      "pass": true
+    },
+    {
+      "check": "README destination 35",
+      "pass": true
+    },
+    {
+      "check": "README original unit 37",
+      "pass": true
+    },
+    {
+      "check": "README destination 37",
+      "pass": true
+    },
+    {
+      "check": "README original unit 39",
+      "pass": true
+    },
+    {
+      "check": "README destination 39",
+      "pass": true
+    },
+    {
+      "check": "README original unit 41",
+      "pass": true
+    },
+    {
+      "check": "README destination 41",
+      "pass": true
+    },
+    {
+      "check": "README original unit 43",
+      "pass": true
+    },
+    {
+      "check": "README destination 43",
+      "pass": true
+    },
+    {
+      "check": "README original unit 44",
+      "pass": true
+    },
+    {
+      "check": "README destination 44",
+      "pass": true
+    },
+    {
+      "check": "README original unit 45",
+      "pass": true
+    },
+    {
+      "check": "README destination 45",
+      "pass": true
+    },
+    {
+      "check": "README original unit 46",
+      "pass": true
+    },
+    {
+      "check": "README destination 46",
+      "pass": true
+    },
+    {
+      "check": "README original unit 47",
+      "pass": true
+    },
+    {
+      "check": "README destination 47",
+      "pass": true
+    },
+    {
+      "check": "README original unit 48",
+      "pass": true
+    },
+    {
+      "check": "README destination 48",
+      "pass": true
+    },
+    {
+      "check": "README original unit 49",
+      "pass": true
+    },
+    {
+      "check": "README destination 49",
+      "pass": true
+    },
+    {
+      "check": "README original unit 50",
+      "pass": true
+    },
+    {
+      "check": "README destination 50",
+      "pass": true
+    },
+    {
+      "check": "README original unit 51",
+      "pass": true
+    },
+    {
+      "check": "README destination 51",
+      "pass": true
+    },
+    {
+      "check": "README original unit 53",
+      "pass": true
+    },
+    {
+      "check": "README destination 53",
+      "pass": true
+    },
+    {
+      "check": "README original unit 55",
+      "pass": true
+    },
+    {
+      "check": "README destination 55",
+      "pass": true
+    },
+    {
+      "check": "README original unit 57",
+      "pass": true
+    },
+    {
+      "check": "README destination 57",
+      "pass": true
+    },
+    {
+      "check": "README original unit 59",
+      "pass": true
+    },
+    {
+      "check": "README destination 59",
+      "pass": true
+    },
+    {
+      "check": "README original unit 61",
+      "pass": true
+    },
+    {
+      "check": "README destination 61",
+      "pass": true
+    },
+    {
+      "check": "README original unit 63",
+      "pass": true
+    },
+    {
+      "check": "README destination 63",
+      "pass": true
+    },
+    {
+      "check": "README original unit 64",
+      "pass": true
+    },
+    {
+      "check": "README destination 64",
+      "pass": true
+    },
+    {
+      "check": "README original unit 65",
+      "pass": true
+    },
+    {
+      "check": "README destination 65",
+      "pass": true
+    },
+    {
+      "check": "README original unit 66",
+      "pass": true
+    },
+    {
+      "check": "README destination 66",
+      "pass": true
+    },
+    {
+      "check": "README original unit 67",
+      "pass": true
+    },
+    {
+      "check": "README destination 67",
+      "pass": true
+    },
+    {
+      "check": "README original unit 68",
+      "pass": true
+    },
+    {
+      "check": "README destination 68",
+      "pass": true
+    },
+    {
+      "check": "README original unit 69",
+      "pass": true
+    },
+    {
+      "check": "README destination 69",
+      "pass": true
+    },
+    {
+      "check": "README original unit 70",
+      "pass": true
+    },
+    {
+      "check": "README destination 70",
+      "pass": true
+    },
+    {
+      "check": "README original unit 71",
+      "pass": true
+    },
+    {
+      "check": "README destination 71",
+      "pass": true
+    },
+    {
+      "check": "README original unit 72",
+      "pass": true
+    },
+    {
+      "check": "README destination 72",
+      "pass": true
+    },
+    {
+      "check": "README original unit 73",
+      "pass": true
+    },
+    {
+      "check": "README destination 73",
+      "pass": true
+    },
+    {
+      "check": "README original unit 74",
+      "pass": true
+    },
+    {
+      "check": "README destination 74",
+      "pass": true
+    },
+    {
+      "check": "README original unit 75",
+      "pass": true
+    },
+    {
+      "check": "README destination 75",
+      "pass": true
+    },
+    {
+      "check": "README original unit 76",
+      "pass": true
+    },
+    {
+      "check": "README destination 76",
+      "pass": true
+    },
+    {
+      "check": "README original unit 77",
+      "pass": true
+    },
+    {
+      "check": "README destination 77",
+      "pass": true
+    },
+    {
+      "check": "README original unit 78",
+      "pass": true
+    },
+    {
+      "check": "README destination 78",
+      "pass": true
+    },
+    {
+      "check": "README original unit 79",
+      "pass": true
+    },
+    {
+      "check": "README destination 79",
+      "pass": true
+    },
+    {
+      "check": "README original unit 81",
+      "pass": true
+    },
+    {
+      "check": "README destination 81",
+      "pass": true
+    },
+    {
+      "check": "README original unit 83",
+      "pass": true
+    },
+    {
+      "check": "README destination 83",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged docs/research/2026-10-22-svalbard-review.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged docs/research/2026-10-22-svalbard-sources.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged docs/research/2026-10-24-svalbard-independent-review.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged docs/research/2026-10-24-svalbard-review.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged docs/research/2026-10-24-svalbard-sources.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/sj-svalbard-coal-export-duty.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/sj-svalbard-project-group-payroll.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/sj-svalbard-visitor-environmental-levy.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/candidate-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/direct-fetches.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/final-input-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/final-notice-checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/final-report.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/final-test-results.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/final-verdict.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/initial-candidate-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/initial-report.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/initial-verdict.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/notice-supplement-report.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/notice-supplement-verdict.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/preservation-checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/repair-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/repair-test-results.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verdict.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verification-checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verification-report.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/row-checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/source-checks.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-2026-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-law-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/customs-law-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fee-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fund-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-law-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/fund-refund-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/governor-travel-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/independent-review/sources/refund-form-browser.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/main-readme-reconciliation-20261031/incoming-README.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/main-readme-reconciliation-20261031/resolution.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/preservation.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/refund-form-observation.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sj-svalbard-coal-export-duty.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sj-svalbard-visitor-environmental-levy.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/source-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/coal-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/coal-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/environment-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/capture-storage.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/ledger.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/old-topics-destinations.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/predecessor-README.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/rows.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/source-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-perimeter-20261031/writer-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/guide-line-map.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/examples.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/final-report.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-07e3395b5b5c.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-1ef4f068503e.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-36101bb9611c.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-5e4f6dfb02bc.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-67e1b822e50e.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7b3b8b803426.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7d819792cfc7.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-8af1a9e5995b.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a3646faa8504.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a7e251667aa4.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-acb9cbbb07d9.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-ae697adc3722.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-cf10309d2bf0.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-db2cd5f21db0.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-e65fe648ec5c.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-fetch-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/preservation-check.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/shape.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/independent-review/verification.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/predecessor-README.md",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/preservation.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/rows.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/source-receipts.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.html",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/checkpoint.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/combined-review-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/examples.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/results.json",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/shape.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/sync.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/unit.txt",
+      "pass": true
+    },
+    {
+      "check": "prior evidence unchanged evidence/ledgers/svalbard-project-group-20261031/writer-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "line-map Guide hash",
+      "pass": true
+    },
+    {
+      "check": "Guide line 1",
+      "pass": true
+    },
+    {
+      "check": "Guide line 2",
+      "pass": true
+    },
+    {
+      "check": "Guide line 3",
+      "pass": true
+    },
+    {
+      "check": "Guide line 4",
+      "pass": true
+    },
+    {
+      "check": "Guide line 5",
+      "pass": true
+    },
+    {
+      "check": "Guide line 6",
+      "pass": true
+    },
+    {
+      "check": "Guide line 7",
+      "pass": true
+    },
+    {
+      "check": "Guide line 8",
+      "pass": true
+    },
+    {
+      "check": "Guide line 9",
+      "pass": true
+    },
+    {
+      "check": "Guide line 10",
+      "pass": true
+    },
+    {
+      "check": "Guide line 11",
+      "pass": true
+    },
+    {
+      "check": "Guide line 12",
+      "pass": true
+    },
+    {
+      "check": "Guide line 13",
+      "pass": true
+    },
+    {
+      "check": "Guide line 14",
+      "pass": true
+    },
+    {
+      "check": "Guide line 15",
+      "pass": true
+    },
+    {
+      "check": "Guide line 16",
+      "pass": true
+    },
+    {
+      "check": "Guide line 17",
+      "pass": true
+    },
+    {
+      "check": "Guide line 18",
+      "pass": true
+    },
+    {
+      "check": "Guide line 19",
+      "pass": true
+    },
+    {
+      "check": "Guide line 20",
+      "pass": true
+    },
+    {
+      "check": "Guide line 21",
+      "pass": true
+    },
+    {
+      "check": "Guide line 22",
+      "pass": true
+    },
+    {
+      "check": "Guide line 23",
+      "pass": true
+    },
+    {
+      "check": "Guide line 25",
+      "pass": true
+    },
+    {
+      "check": "Guide line 27",
+      "pass": true
+    },
+    {
+      "check": "Guide line 29",
+      "pass": true
+    },
+    {
+      "check": "Guide line 31",
+      "pass": true
+    },
+    {
+      "check": "Guide line 33",
+      "pass": true
+    },
+    {
+      "check": "Guide line 35",
+      "pass": true
+    },
+    {
+      "check": "Guide line 37",
+      "pass": true
+    },
+    {
+      "check": "Guide line 39",
+      "pass": true
+    },
+    {
+      "check": "Guide line 41",
+      "pass": true
+    },
+    {
+      "check": "Guide line 42",
+      "pass": true
+    },
+    {
+      "check": "Guide line 43",
+      "pass": true
+    },
+    {
+      "check": "Guide line 44",
+      "pass": true
+    },
+    {
+      "check": "Guide line 45",
+      "pass": true
+    },
+    {
+      "check": "Guide line 46",
+      "pass": true
+    },
+    {
+      "check": "Guide line 47",
+      "pass": true
+    },
+    {
+      "check": "Guide line 48",
+      "pass": true
+    },
+    {
+      "check": "Guide line 49",
+      "pass": true
+    },
+    {
+      "check": "Guide line 50",
+      "pass": true
+    },
+    {
+      "check": "Guide line 51",
+      "pass": true
+    },
+    {
+      "check": "Guide line 52",
+      "pass": true
+    },
+    {
+      "check": "Guide line 54",
+      "pass": true
+    },
+    {
+      "check": "Guide line 56",
+      "pass": true
+    },
+    {
+      "check": "Guide line 58",
+      "pass": true
+    },
+    {
+      "check": "Guide line 59",
+      "pass": true
+    },
+    {
+      "check": "Guide line 60",
+      "pass": true
+    },
+    {
+      "check": "Guide line 61",
+      "pass": true
+    },
+    {
+      "check": "Guide line 62",
+      "pass": true
+    },
+    {
+      "check": "Guide line 64",
+      "pass": true
+    },
+    {
+      "check": "Guide line 66",
+      "pass": true
+    },
+    {
+      "check": "Guide line 68",
+      "pass": true
+    },
+    {
+      "check": "Guide line 69",
+      "pass": true
+    },
+    {
+      "check": "Guide line 70",
+      "pass": true
+    },
+    {
+      "check": "Guide line 71",
+      "pass": true
+    },
+    {
+      "check": "Guide line 72",
+      "pass": true
+    },
+    {
+      "check": "Guide line 73",
+      "pass": true
+    },
+    {
+      "check": "Guide line 75",
+      "pass": true
+    },
+    {
+      "check": "Guide line 77",
+      "pass": true
+    },
+    {
+      "check": "Guide line 79",
+      "pass": true
+    },
+    {
+      "check": "Guide line 81",
+      "pass": true
+    },
+    {
+      "check": "Guide line 82",
+      "pass": true
+    },
+    {
+      "check": "Guide line 83",
+      "pass": true
+    },
+    {
+      "check": "Guide line 84",
+      "pass": true
+    },
+    {
+      "check": "Guide line 85",
+      "pass": true
+    },
+    {
+      "check": "Guide line 87",
+      "pass": true
+    },
+    {
+      "check": "Guide line 89",
+      "pass": true
+    },
+    {
+      "check": "Guide line 91",
+      "pass": true
+    },
+    {
+      "check": "Guide line 93",
+      "pass": true
+    },
+    {
+      "check": "Guide line 95",
+      "pass": true
+    },
+    {
+      "check": "Guide line 97",
+      "pass": true
+    },
+    {
+      "check": "Guide line 99",
+      "pass": true
+    },
+    {
+      "check": "Guide line 101",
+      "pass": true
+    },
+    {
+      "check": "Guide line 102",
+      "pass": true
+    },
+    {
+      "check": "Guide line 103",
+      "pass": true
+    },
+    {
+      "check": "Guide line 104",
+      "pass": true
+    },
+    {
+      "check": "Guide line 105",
+      "pass": true
+    },
+    {
+      "check": "Guide line 106",
+      "pass": true
+    },
+    {
+      "check": "Guide line 107",
+      "pass": true
+    },
+    {
+      "check": "Guide line 108",
+      "pass": true
+    },
+    {
+      "check": "Guide line 109",
+      "pass": true
+    },
+    {
+      "check": "Guide line 110",
+      "pass": true
+    },
+    {
+      "check": "Guide line 111",
+      "pass": true
+    },
+    {
+      "check": "Guide line 112",
+      "pass": true
+    },
+    {
+      "check": "Guide line 113",
+      "pass": true
+    },
+    {
+      "check": "Guide line 114",
+      "pass": true
+    },
+    {
+      "check": "Guide line 115",
+      "pass": true
+    },
+    {
+      "check": "Guide line 116",
+      "pass": true
+    },
+    {
+      "check": "Guide line 117",
+      "pass": true
+    },
+    {
+      "check": "Guide line 119",
+      "pass": true
+    },
+    {
+      "check": "Guide line 121",
+      "pass": true
+    },
+    {
+      "check": "Guide line 122",
+      "pass": true
+    },
+    {
+      "check": "Guide line 123",
+      "pass": true
+    },
+    {
+      "check": "Guide line 124",
+      "pass": true
+    },
+    {
+      "check": "Guide line 125",
+      "pass": true
+    },
+    {
+      "check": "Guide line 126",
+      "pass": true
+    },
+    {
+      "check": "Guide line 127",
+      "pass": true
+    },
+    {
+      "check": "Guide line 128",
+      "pass": true
+    },
+    {
+      "check": "Guide line 129",
+      "pass": true
+    },
+    {
+      "check": "Guide line 130",
+      "pass": true
+    },
+    {
+      "check": "Guide line 131",
+      "pass": true
+    },
+    {
+      "check": "Guide line 132",
+      "pass": true
+    },
+    {
+      "check": "Guide line 133",
+      "pass": true
+    },
+    {
+      "check": "Guide line 134",
+      "pass": true
+    },
+    {
+      "check": "Guide line 136",
+      "pass": true
+    },
+    {
+      "check": "Guide line 138",
+      "pass": true
+    },
+    {
+      "check": "Guide line 139",
+      "pass": true
+    },
+    {
+      "check": "Guide line 140",
+      "pass": true
+    },
+    {
+      "check": "Guide line 141",
+      "pass": true
+    },
+    {
+      "check": "Guide line 142",
+      "pass": true
+    },
+    {
+      "check": "Guide line 144",
+      "pass": true
+    },
+    {
+      "check": "Guide line 146",
+      "pass": true
+    },
+    {
+      "check": "Guide line 147",
+      "pass": true
+    },
+    {
+      "check": "Guide line 148",
+      "pass": true
+    },
+    {
+      "check": "Guide line 149",
+      "pass": true
+    },
+    {
+      "check": "Guide line 150",
+      "pass": true
+    },
+    {
+      "check": "Guide line 151",
+      "pass": true
+    },
+    {
+      "check": "Guide line 152",
+      "pass": true
+    },
+    {
+      "check": "Guide line 153",
+      "pass": true
+    },
+    {
+      "check": "Guide line 155",
+      "pass": true
+    },
+    {
+      "check": "Guide line 157",
+      "pass": true
+    },
+    {
+      "check": "description 80-150 words",
+      "pass": true
+    },
+    {
+      "check": "H1/frontmatter version parity",
+      "pass": true
+    },
+    {
+      "check": "no new platform-owned keys",
+      "pass": true
+    },
+    {
+      "check": "full notice",
+      "pass": true
+    },
+    {
+      "check": "five intake questions",
+      "pass": true
+    }
+  ]
+}

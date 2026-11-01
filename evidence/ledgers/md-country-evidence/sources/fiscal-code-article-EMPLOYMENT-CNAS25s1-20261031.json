@@ -1,0 +1,14 @@
+{
+  "article": "EMPLOYMENT-CNAS25s1-20261031",
+  "official_url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+  "text": "25.1 Potrivit art.5 alin. (1) lit. f) al Legii nr. 489/1999, în cazul în care persoanele fizice\nspecificate, în anul de gestiune nu calculează contribuţii de asigurări sociale nu au obligaţia prezentării\nDării de seamă forma CAS18-AN.",
+  "sha256": "d4319bce5a26ca2584cf97aaedc1392653b2424935b51730db436f03455b1036",
+  "read_date": "2026-10-31",
+  "source_points": {
+    "point25s1": "25.1 Potrivit art.5 alin. (1) lit. f) al Legii nr. 489/1999, în cazul în care persoanele fizice\nspecificate, în anul de gestiune nu calculează contribuţii de asigurări sociale nu au obligaţia prezentării\nDării de seamă forma CAS18-AN."
+  },
+  "origin_retained_source": "ledgers/md-country-evidence/sources/cnas-2026-instructions.txt",
+  "origin_retained_sha256": "3549dd40fd7e35c0e5e6dea56ce1045c0a29d54763e8d93a8ad588cbe83dbbc1",
+  "scope": "Selected exact text re-read from previously fetched official2026PDF text; not a fresh network fetch or whole-PDF reread",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

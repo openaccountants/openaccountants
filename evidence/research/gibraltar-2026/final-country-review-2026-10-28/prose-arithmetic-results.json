@@ -1,0 +1,909 @@
+{
+  "checks": 129,
+  "failures": 0,
+  "results": [
+    {
+      "guide": "corporate",
+      "example": "shared expense",
+      "actual": "9000.0",
+      "expected": "9000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "head office cap",
+      "actual": "25000.0",
+      "expected": "25000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "head office disallowance",
+      "actual": "15000",
+      "expected": "15000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "rent2/3cap",
+      "actual": "12000.0",
+      "expected": "12000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "rent supported lower",
+      "actual": "9000",
+      "expected": "9000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "rent higher capped",
+      "actual": "12000",
+      "expected": "12000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "gift equality",
+      "actual": "100",
+      "expected": "100",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "gift outside",
+      "actual": "101",
+      "expected": "101",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "profit bridge",
+      "actual": "104000",
+      "expected": "104000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "plant pool allowance",
+      "actual": "1500.0",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "plant total",
+      "actual": "31500",
+      "expected": "31500",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "computer total",
+      "actual": "51500",
+      "expected": "51500",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "closing pool",
+      "actual": "8500",
+      "expected": "8500",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "sixmonth pool",
+      "actual": "750.0",
+      "expected": "750",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "residual equality",
+      "actual": "150.0",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "disposal pool",
+      "actual": "2250.0",
+      "expected": "2250",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "building4percent",
+      "actual": "26000.0",
+      "expected": "26000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "industrial disposal",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "construction full relief",
+      "actual": "1000000",
+      "expected": "1000000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "construction split",
+      "actual": "150000.0",
+      "expected": "150000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "stock consideration",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "stock market",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "stock reconciliation",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "unrestricted loss remaining",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "designated cap",
+      "actual": "50000.0",
+      "expected": "50000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "transferred losses",
+      "actual": "40000.0",
+      "expected": "40000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "extended6months",
+      "actual": "60000.0",
+      "expected": "60000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "extended12months",
+      "actual": "120000.0",
+      "expected": "120000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "instalment",
+      "actual": "10000.0",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "higher residual",
+      "actual": "6000",
+      "expected": "6000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "lower excess",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "sixmonth annualisation",
+      "actual": "12000.0",
+      "expected": "12000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "CT4 each",
+      "actual": "5000.0",
+      "expected": "5000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "CT4 reduction",
+      "actual": "14000",
+      "expected": "14000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "CT4 later residual",
+      "actual": "4000",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "partial surcharge",
+      "actual": "120.0",
+      "expected": "120",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "small penalties",
+      "actual": "1300",
+      "expected": "1300",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "medium penalties",
+      "actual": "4000",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "large penalties",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "PE ownership50",
+      "actual": "50.0",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "PE ownership51",
+      "actual": "51.0",
+      "expected": "51",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "offshore30",
+      "actual": "30",
+      "expected": "30",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "offshore31",
+      "actual": "31",
+      "expected": "31",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "mixed residual",
+      "actual": "10000",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "larger protected loss residual",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "minimumtopup",
+      "actual": "888",
+      "expected": "888",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "health smaller prorated",
+      "actual": "1800.0",
+      "expected": "1800",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "health GIBS prorated",
+      "actual": "2250.0",
+      "expected": "2250",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "health ABS cap",
+      "actual": "5395",
+      "expected": "5395",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "jointcustodyhalf",
+      "actual": "2900.0",
+      "expected": "2900",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "nurserycap",
+      "actual": "5480",
+      "expected": "5480",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "dependant excess",
+      "actual": "110",
+      "expected": "110",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "dependant nonresident",
+      "actual": "140",
+      "expected": "140",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "dependant resident",
+      "actual": "290",
+      "expected": "290",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "pensionpersonal cap",
+      "actual": "10000.0",
+      "expected": "10000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "gymcredit liability",
+      "actual": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "school credit",
+      "actual": "800.0",
+      "expected": "800",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "importedpension",
+      "actual": "500.0",
+      "expected": "500",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "approvedpension",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "deathdeductionreduction",
+      "actual": "4000.0",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "deathdeductionleft",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "individualeachPOA",
+      "actual": "3000.0",
+      "expected": "3000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "individualbalance",
+      "actual": "1500",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "individualexcess",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "individualfilingpenalties",
+      "actual": "850",
+      "expected": "850",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "nonresidentfloor",
+      "actual": "4000.0",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "nonresidentfloorrestriction",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "GIBS40000",
+      "actual": "7990.0",
+      "expected": "7990",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "ABS20000",
+      "actual": "4160.0",
+      "expected": "4160",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "lowtaper17601",
+      "actual": "44.40",
+      "expected": "44.40",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "lowtaper17822",
+      "actual": "0.20",
+      "expected": "0.20",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "hightaper101000",
+      "actual": "700.0",
+      "expected": "700",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "MW employee",
+      "actual": "69.12",
+      "expected": "69.12",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "MW employer",
+      "actual": "173.98",
+      "expected": "173.98",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "PN employer",
+      "actual": "180.0",
+      "expected": "180",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "T2 employee",
+      "actual": "16.99",
+      "expected": "16.99",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "weekly employee",
+      "actual": "30.0",
+      "expected": "30",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "weekly employer",
+      "actual": "54.0",
+      "expected": "54",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "dailydeduction",
+      "actual": "2.88",
+      "expected": "2.88",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "old daily illustration",
+      "actual": "2.94",
+      "expected": "2.94",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "two week minimum employee",
+      "actual": "28.68",
+      "expected": "28.68",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "two week minimum employer",
+      "actual": "63.96",
+      "expected": "63.96",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "three week cap employee",
+      "actual": "122.37",
+      "expected": "122.37",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "three week cap employer",
+      "actual": "168.66",
+      "expected": "168.66",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "small employer credit",
+      "actual": "760",
+      "expected": "760",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "first yearcredit",
+      "actual": "1500",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "expense benefit",
+      "actual": "500",
+      "expected": "500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "voucher benefit",
+      "actual": "500",
+      "expected": "500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "carbenefit",
+      "actual": "8000.0",
+      "expected": "8000",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "fuelbenefit",
+      "actual": "1500.0",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "loanbenefit",
+      "actual": "1500.0",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "accommodationbenefit",
+      "actual": "18000",
+      "expected": "18000",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "assetbenefit",
+      "actual": "2700",
+      "expected": "2700",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "employerbenefittax20",
+      "actual": "200.0",
+      "expected": "200",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "employerbenefittax29",
+      "actual": "5800.0",
+      "expected": "5800",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "highsalarycost",
+      "actual": "3243.65",
+      "expected": "3243.65",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8 PAYE shortfall",
+      "actual": "300",
+      "expected": "300",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8 SI shortfall",
+      "actual": "200",
+      "expected": "200",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "SEguide100incorrect22",
+      "actual": "20.0",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "SEguide120incorrect48",
+      "actual": "24.0",
+      "expected": "24",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "SE liabilityreconciliation",
+      "actual": "150",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8micrototal",
+      "actual": "300",
+      "expected": "300",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8smalltotal",
+      "actual": "600",
+      "expected": "600",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8mediumtotal",
+      "actual": "1500",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "P8largetotal",
+      "actual": "3000",
+      "expected": "3000",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "monthly employeeSI",
+      "actual": "162.3500",
+      "expected": "162.35",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "monthly employerSI",
+      "actual": "243.65",
+      "expected": "243.65",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "monthly pay",
+      "actual": "1335.26",
+      "expected": "1335.26",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "monthly employer cost",
+      "actual": "1867.15",
+      "expected": "1867.15",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "roundedmonthnotannualmax",
+      "actual": "2121.12",
+      "expected": "2121.12",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "sharedweekemployee",
+      "actual": "10.79",
+      "expected": "10.79",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "sharedweekemployer",
+      "actual": "2.22",
+      "expected": "2.22",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "example": "PAYE2months",
+      "actual": "1040.4000",
+      "expected": "1040.40",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "standard boundaryold",
+      "actual": "150.0",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "standard boundarynew",
+      "actual": "160.0",
+      "expected": "160",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "importbase",
+      "actual": "11200",
+      "expected": "11200",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "importtax",
+      "actual": "1680.0",
+      "expected": "1680",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "duplicatedfreight",
+      "actual": "60.0",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "historical weightedrate",
+      "actual": "0.06",
+      "expected": "0.06",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "historical duty",
+      "actual": "6000.0",
+      "expected": "6000",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "difference",
+      "actual": "9000",
+      "expected": "9000",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "prior taxcap",
+      "actual": "6000.0",
+      "expected": "6000",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "deduction",
+      "actual": "6000",
+      "expected": "6000",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "deductiontaxsaving",
+      "actual": "900.0",
+      "expected": "900",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "zeropriorpaidcap",
+      "actual": "0.0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "equaltaxdifference",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "guide": "consumption",
+      "example": "initialwindowinclusive90",
+      "actual": "90",
+      "expected": "90",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "example": "surchargecompounded",
+      "actual": "1320.0000",
+      "expected": "1320",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "example": "surchargecompounded",
+      "actual": "1320.0000",
+      "expected": "1320",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+Browser tab: 13, Title: "Skattaútrokning 2026", URL: "https://www.eskatt.fo/sjtp/sjtpsim.aspx".
+1 AXWebArea Skattaútrokning 2026, URL: eskatt.fo/sjtp/sjtpsim.aspx
+	2 container UpdatePanel1
+		3 container
+			4 container     Skattaútrokning     Ár Tilhaldskommuna 1. des. 2025 Skattskyldugt dagatal Rudda   2026 TÓRSHAVN 365     Skattaprosent v.m.   Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500
+				5 container     Skattaútrokning     Ár Tilhaldskommuna 1. des. 2025 Skattskyldugt dagatal Rudda   2026 TÓRSHAVN 365     Skattaprosent v.m.   Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500 Barnafrádráttur í kommunuskatti pr. barn
+					6 container
+						7 container   Skattaútrokning     Ár Tilhaldskommuna 1. des. 2025 Skattskyldugt dagatal Rudda   2026 TÓRSHAVN 365     Skattaprosent v.m.   Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500 Barnafrádráttur í kommunuskatti pr. barn 9.000 Fyritíðarpensjónsfrádráttur -- Vel --  
+							8 container ctl05_tblMeta
+								9 container
+									10 container Skattaútrokning
+										11 text Skattaútrokning
+								12 container
+									13 container Ár
+										14 text Ár
+									15 container Tilhaldskommuna 1. des. 2025
+										16 text Tilhaldskommuna 1. des.
+										17 text 2025
+									18 container Skattskyldugt dagatal
+										19 text Skattskyldugt dagatal
+									20 container Rudda
+										21 button Rudda, ID: ctl05_btnCLEAR
+								22 container
+									23 container 2026
+										24 text 2026
+									25 container TÓRSHAVN
+										26 text TÓRSHAVN
+									27 container 365  
+										28 text 365
+							29 container
+								30 container   Skattaprosent v.m.   Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500 Barnafrádráttur í kommunuskatti pr. barn 9.000 Fyritíðarpensjónsfrádráttur -- Vel --   Trýst fyri hjálp Grein 25b inntøku og linkað við exemption í 2024? Nei   Trýst fyri hjálp   Tal av børnum:  0 Úrslitið er bert ein fyribils útrokning.   
+									31 container
+										32 container  Skattaprosent v.m.   Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500 Barnafrádráttur í kommunuskatti pr. barn 9.000 Fyritíðarpensjónsfrádráttur -- Vel --   Trýst fyri hjálp Grein 25b inntøku og linkað við exemption í 2024? Nei   Trýst fyri hjálp   Tal av børnum:  0 Úrslitið er bert ein fyribils útrokning.   Útskriva
+											33 container ctl06_ctl01_tblMeta
+												34 container
+													35 container Skattaprosent v.m.
+														36 text Skattaprosent v.m.
+												37 container
+													38 container Kommunuskattaprosent 19,00 Kirkjuskattaprosent 0,85 Barnafrádráttur í landsskatti pr. barn 6.500 Barnafrádráttur í kommunuskatti pr. barn 9.000 Fyritíðarpensjónsfrádráttur -- Vel --   Trýst fyri hjálp Grein 25b inntøku og linkað við exemption í 2024? Nei   Trýst fyri hjálp
+														39 container
+															40 container Kommunuskattaprosent
+																41 text Kommunuskattaprosent
+															42 container 19,00
+																43 text 19,00
+															44 container Kirkjuskattaprosent
+																45 text Kirkjuskattaprosent
+															46 container 0,85
+																47 text 0,85
+															48 container Barnafrádráttur í landsskatti pr. barn
+																49 text Barnafrádráttur í landsskatti pr. barn
+															50 container 6.500
+																51 text 6.500
+															52 container Barnafrádráttur í kommunuskatti pr. barn
+																53 text Barnafrádráttur í kommunuskatti pr. barn
+															54 container 9.000
+																55 text 9.000
+															56 container Fyritíðarpensjónsfrádráttur
+																57 text Fyritíðarpensjónsfrádráttur
+															58 container -- Vel --
+																59 pop up button (collapsed, settable) Value: -- Vel --, ID: ctl06_ctl01_drpPENSION, Secondary Actions: Expand
+																	60 menu
+																		61 (selected) -- Vel --
+																		62 kr. 0
+																		63 kr. 10.500
+																		64 kr. 16.200
+															65 container Trýst fyri hjálp
+																66 button Description: Trýst fyri hjálp, URL: eskatt.fo/sjtp/images/questionmark.gif, ID: ctl06_ctl01_btnINFO_990, Help: Um tú ert fyritíðarpensjónistur, og tú ert stakur, skalt tú velja kr. 16.200 Um tú ert fyritíðarpensjónistur, og tú ert giftur, skalt tú velja kr. 10.500 Um tú ikki ert fyritíðarpensjónistur, skalt tú einki gera/velja.
+															67 container Grein 25b inntøku og linkað við exemption í 2024?
+																68 text Grein 25b inntøku og linkað við exemption í 2024?
+															69 container Nei
+																70 pop up button (collapsed, settable) Value: Nei, ID: ctl06_ctl01_drpSerFradrattur25b, Secondary Actions: Expand
+																	71 menu
+																		72 (selected) Nei
+																		73 Ja
+															74 container Trýst fyri hjálp
+																75 button Description: Trýst fyri hjálp, URL: eskatt.fo/sjtp/images/questionmark.gif, ID: ctl06_ctl01_btnINFO_SerFradrattur25b, Help: Vel ja, um tú hevði uttanlandsinntøku eftir § 25b og varð linkað við exemption í 2024 Vel nei, um tú ikki hevði uttanlandsinntøku eftir § 25b og varð linkað við exemption í 2024 Fyri tey, sum í 2024 longu høvdu uttanlandsinntøku eftir grein 25b og sum vórðu linkað við exemption, fáa frádrátt, tó í mesta lagi: 120.000 kr. fyri 2025 96.000 kr. fyri 2026 72.000 kr. fyri 2027 48.000 kr. fyri 2028 og fram
+													76 container Tal av børnum:  0
+														77 container
+															78 container Tal av børnum: 
+																79 text Tal av børnum:
+															80 container 0
+																81 text 0
+											82 table
+												83 row
+													84 cell
+														85 text Úrslit
+											86 container ctl06_SJUPGContent
+												87 text Úrslitið er bert ein fyribils útrokning.
+												88 container
+													89 table
+														90 row
+															91 cell
+																92 text Fyribilsútrokning - Dagatal:365
+														93 row
+															94 cell
+																95 text Skattskyldug inntøka
+															96 cell
+																97 text 150.000,00
+														98 row
+															99 cell
+																100 text Inntøka, umroknað til heilt ár
+															101 cell
+																102 text 150.000,00
+														103 row
+															104 cell
+																105 text Bruttoskattur
+															106 cell
+																107 text 33.850,00
+														108 row
+															109 cell
+																110 text Niðurroknaður skattur
+															111 cell
+																112 text 33.850,00
+														113 row
+															114 cell
+																115 text Persónsfrádráttur
+															116 cell
+																117 text 0,00
+														118 row
+															119 cell
+																120 text Barnafrádráttur
+															121 cell
+																122 text 0,00
+														123 row
+															124 cell
+																125 text Pensionistafrádráttur
+															126 cell
+																127 text 0,00
+														128 row
+															129 cell
+																130 text Minking orsakað av skattahámarki
+															131 cell
+																132 text 0,00
+														133 row
+															134 cell
+																135 text Nettoskattur
+															136 cell
+																137 text 33.850,00
+														138 row
+															139 cell
+																140 text Linking í skatti
+															141 cell
+																142 text 0,00
+														143 row
+															144 cell
+																145 text Nettoskattur eftir linking
+															146 cell
+																147 text 33.850,00
+														148 row
+															149 cell
+																150 text FAS-skattur
+															151 cell
+																152 text 0,00
+														153 row
+															154 cell
+																155 text 25b: nettoskattur
+															156 cell
+																157 text 0,00
+														158 row
+															159 cell
+																160 text 25b: linking í skatti
+															161 cell
+																162 text 0,00
+														163 row
+															164 cell
+																165 text 25b: nettoskattur eftir linking
+															166 cell
+																167 text 0,00
+														168 row
+															169 cell
+																170 text Sekt
+															171 cell
+																172 text 0,00
+														173 row
+															174 cell
+																175 text Skattur í alt
+															176 cell
+																177 text 33.850,00
+														178 row
+															179 cell
+																180 text AM-gjald 3%
+															181 cell
+																182 text 4.500,00
+														183 row
+															184 cell
+																185 text Skattur í alt, íroknað AM-gjald
+															186 cell
+																187 text 38.350,00
+														188 row
+															189 cell
+																190 text Samdøgursfrádráttur í alt
+															191 cell
+																192 text 0,00
+														193 row
+															194 cell
+																195 text Goldin, sosial trygd uttanlands
+															196 cell
+																197 text 0,00
+														198 row
+															199 cell
+																200 text Exemptionlinking í 2024 (J/N)
+															201 cell
+																202 text 0,00
+													203 table
+														204 row
+															205 cell
+																206 text Úr útlandi:
+														207 row
+															208 cell
+																209 text Bruttoinntøka: kredittlinking
+															210 cell
+																211 text 0,00
+														212 row
+															213 cell
+																214 text Goldin uttanlandsskattur
+															215 cell
+																216 text 0,00
+														217 row
+															218 cell
+																219 text 25b: kredittinntøka
+															220 cell
+																221 text 0,00
+														222 row
+															223 cell
+																224 text 25b: frádráttur
+															225 cell
+																226 text 0,00
+														227 row
+															228 cell
+																229 text Goldin uttanlandsskattur
+															230 cell
+																231 text 0,00
+														232 row
+															233 cell
+																234 text 25a: kredittinntøka
+															235 cell
+																236 text 0,00
+														237 row
+															238 cell
+																239 text Fríir ágóðar - 25a: kredittur
+															240 cell
+																241 text 0,00
+														242 row
+															243 cell
+																244 text 25a: sjófrádráttur
+															245 cell
+																246 text 0,00
+														247 row
+															248 cell
+																249 text Goldin uttanlandsskattur
+															250 cell
+																251 text 0,00
+														252 row
+															253 cell
+																254 text Samdøgursfrádráttur
+															255 cell
+																256 text 0,00
+														257 row
+															258 cell
+																259 text Bruttoinntøka: eksemptiónslinking
+															260 cell
+																261 text 0,00
+														262 row
+															263 cell
+																264 text Goldin uttanlandsskattur
+															265 cell
+																266 text 0,00
+														267 row
+															268 cell
+																269 text 25b: eksemptiónsinntøka
+															270 cell
+																271 text 0,00
+														272 row
+															273 cell
+																274 text 25b: frádráttur
+															275 cell
+																276 text 0,00
+														277 row
+															278 cell
+																279 text Goldin uttanlandsskattur
+															280 cell
+																281 text 0,00
+														282 row
+															283 cell
+																284 text 25a: eksemptiónsinntøka
+															285 cell
+																286 text 0,00
+														287 row
+															288 cell
+																289 text Fríir ágóðar - 25a: eksemptión
+															290 cell
+																291 text 0,00
+														292 row
+															293 cell
+																294 text 25a: sjófrádráttur
+															295 cell
+																296 text 0,00
+														297 row
+															298 cell
+																299 text Goldin uttanlandsskattur
+															300 cell
+																301 text 0,00
+														302 row
+															303 cell
+																304 text Samdøgursfrádráttur
+															305 cell
+																306 text 0,00
+														307 row
+															308 cell
+																309 text Bruttoinntøka uttan linking
+															310 cell
+																311 text 0,00
+														312 row
+															313 cell
+																314 text Goldin uttanlandsskattur
+															315 cell
+																316 text 0,00
+														317 row
+															318 cell
+																319 text 25b: inntøka uttan linking
+															320 cell
+																321 text 0,00
+														322 row
+															323 cell
+																324 text 25b: frádráttur
+															325 cell
+																326 text 0,00
+														327 row
+															328 cell
+																329 text Goldin uttanlandsskattur
+															330 cell
+																331 text 0,00
+														332 row
+															333 cell
+																334 text 25a: inntøka uttan linking
+															335 cell
+																336 text 0,00
+														337 row
+															338 cell
+																339 text Fríir ágóðar - 25a: uttan linking
+															340 cell
+																341 text 0,00
+														342 row
+															343 cell
+																344 text 25a: sjófrádráttur
+															345 cell
+																346 text 0,00
+														347 row
+															348 cell
+																349 text Goldin uttanlandsskattur
+															350 cell
+																351 text 0,00
+														352 row
+															353 cell
+																354 text Samdøgursfrádráttur
+															355 cell
+																356 text 0,00
+														357 row
+															358 cell
+																359 text Úr Føroyum:
+														360 row
+															361 cell
+																362 text Vanlig a- og b-inntøka
+															363 cell
+																364 text 150.000,00
+														365 row
+															366 cell
+																367 text FAS-inntøka
+															368 cell
+																369 text 0,00
+														370 row
+															371 cell
+																372 text 25a: sjóinntøka Føroyar
+															373 cell
+																374 text 0,00
+														375 row
+															376 cell
+																377 text Atvinnuinntøka
+															378 cell
+																379 text 0,00
+														380 row
+															381 cell
+																382 text Aðrir inntøkufrádráttir
+															383 cell
+																384 text 0,00
+														385 row
+															386 cell
+																387 text Eftirlønarfrádráttur - Føroyar
+															388 cell
+																389 text 0,00
+														390 row
+															391 cell
+																392 text Eftirlønarfrádráttur - útland
+															393 cell
+																394 text 0,00
+														395 row
+															396 cell
+																397 text 25a: sjófrádráttur í før.25A-inntøku
+															398 cell
+																399 text 0,00
+												400 container Útskriva     Umaftur  
+													401 button Útskriva, ID: ctl06_SjupgBtns1_btnPRINT
+													402 button Umaftur, ID: ctl06_SjupgBtns1_btnSIMBACK
+
+The focused UI element is 1 AXWebArea Skattaútrokning 2026, URL: eskatt.fo/sjtp/sjtpsim.aspx
