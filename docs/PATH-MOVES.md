@@ -10902,3 +10902,5 @@ Shared folders grouped under `skills/foundation/` and `skills/reference/`, and s
 | skills/colombia/co-income-tax.md | skills/colombia/colombia-income-tax.md |
 | skills/argentina/ar-income-tax.md | skills/argentina/argentina-income-tax.md |
 | skills/morocco/ma-income-tax.md | skills/morocco/morocco-professional-income-tax.md |
+| skills/us/states/ma/maryland-sales-tax.md | skills/us/states/md/md-sales-tax.md (duplicate, folded) |
+| skills/us/states/ma/maine-sales-tax.md | skills/us/states/me/me-sales-tax.md (duplicate, folded) |
