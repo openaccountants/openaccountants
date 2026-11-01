@@ -1,0 +1,73 @@
+{
+  "frozen_content_commit": "456042344ec2760856c9054a91b293155d6d1ed7",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_sha256": "3c9cbb6981f1098adfb52d1ba0d993093b4686443b41e267eb6efc8036d53d34",
+  "guide_git_blob": "b1a9b4f0bbd2b8377d7ff800f928c99e37453b8e",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "receipt": "evidence/ledgers/gabon-property-20261101/validation/committed-guide-validator.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "456042344ec2760856c9054a91b293155d6d1ed7",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "receipt": "evidence/ledgers/gabon-property-20261101/validation/committed-strict-metadata.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/gabon/ga-annual-property-tax.md",
+        "skills/gabon/ga-company-formation.md",
+        "skills/gabon/ga-corporate-income-tax.md",
+        "skills/gabon/ga-cross-border.md",
+        "skills/gabon/ga-income-tax.md",
+        "skills/gabon/ga-payroll-social.md",
+        "skills/gabon/ga-tax-overview.md",
+        "skills/gabon/ga-transfer-pricing.md",
+        "skills/gabon/ga-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "receipt": "evidence/ledgers/gabon-property-20261101/validation/committed-examples.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "evidence/ledgers/gabon-property-20261101/validate-evidence.py"
+      ],
+      "exit_code": 0,
+      "receipt": "evidence/ledgers/gabon-property-20261101/validation/committed-evidence.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "456042344ec2760856c9054a91b293155d6d1ed7"
+      ],
+      "exit_code": 0,
+      "receipt": "evidence/ledgers/gabon-property-20261101/validation/committed-whitespace.txt"
+    }
+  ],
+  "prior_review_preserved": true,
+  "new_property_review": "pending",
+  "current_law_attestation": false
+}

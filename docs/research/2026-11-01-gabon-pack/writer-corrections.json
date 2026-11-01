@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "d90a78e28adb1804d0e1fd904886dc16c00cd2bb",
+  "status": "Four review findings corrected; focused independent closure pending",
+  "repairs": [
+    "F1 direct attribution then shared-input prorata, preserving exact90hold",
+    "F2 car/displacement non-cumulation baseline condition beside exemption",
+    "F3 evidence no longer asserts employer aggregate18, Guide already held it",
+    "F4 both art208threshold locators toPDF73; full208/208bis read",
+    "Minor I-SHARES ledger up to six children, not six shares"
+  ],
+  "rules_count": 93,
+  "new_read_scope": {
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "pages": [
+      40,
+      73,
+      84
+    ],
+    "actual_scope": "CGI91bis,208/208bis,226-227 with neighbours; later amendments and implementation not certified"
+  },
+  "candidate_files": {
+    "docs/research/2026-11-01-gabon-pack/ledgers/ga-income-tax.md": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8",
+    "docs/research/2026-11-01-gabon-pack/ledgers/ga-payroll-social.md": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7",
+    "docs/research/2026-11-01-gabon-pack/ledgers/ga-vat-gst.md": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7",
+    "skills/gabon/ga-vat-gst.md": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+    "skills/gabon/ga-payroll-social.md": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+    "docs/research/2026-11-01-gabon-pack/rules.json": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a"
+  }
+}

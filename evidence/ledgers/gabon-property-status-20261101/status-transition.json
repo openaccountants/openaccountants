@@ -1,0 +1,528 @@
+{
+  "date": "2026-11-01",
+  "reviewed_head": "e536c610f22884e70826777242fa3fb3f64978a5",
+  "accepted_eight_guide_head": "9f93faa2af8c970d0b12ad6ca54ebe93ae1bbc03",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "authority_path": "evidence/ledgers/gabon-property-review-20261101/permitted-status-transitions.json",
+  "authority_sha256": "7f54e058ab4b0c81867a95c80147835229434a16750ce18ba4326501783f9993",
+  "review_outcome": "Source fidelity passes for explicitly partial property research draft only, zero substantive findings",
+  "changes": [
+    {
+      "path": "skills/gabon/ga-annual-property-tax.md",
+      "before_sha256": "3c9cbb6981f1098adfb52d1ba0d993093b4686443b41e267eb6efc8036d53d34",
+      "after_sha256": "37f97f102683741ead084dcb1da552830f30d79310c41cac5da7c0232a4b09ea",
+      "after_git_blob": "7a58de06fa85fe79103a8734185dac917c3d0793",
+      "exact_replacements": [
+        {
+          "before": "It has not received its own independent review or accountant attestation.",
+          "after": "The frozen property draft received an [independent source-fidelity review](../../evidence/ledgers/gabon-property-review-20261101/README.md). It has not received accountant attestation."
+        },
+        {
+          "before": "Fresh independent review is pending; prior accepted eight-Guide review is preserved, not reused as property approval.",
+          "after": "Independent source-fidelity review passed for the frozen partial property draft only; prior accepted eight-Guide review is preserved. Currentness, implementation, country completion and accountant attestation remain unproved."
+        }
+      ]
+    },
+    {
+      "path": "skills/gabon/README.md",
+      "before_sha256": "24e27873c7a9a78b762d74cfabac7a043e1aaaccb2c55189fe1cabcdf98a4a50",
+      "after_sha256": "e18f0c602ec80eca76d6cf0502a87d803f9a578ce13b318d7c9447188ce99798",
+      "after_git_blob": "5828afbf70f925469fa131c655fc63f9f883b487",
+      "exact_replacements": [
+        {
+          "before": "a new partial research draft pending its own independent review.",
+          "after": "a partial research draft with [independent source-fidelity review](../../evidence/ledgers/gabon-property-review-20261101/README.md)."
+        }
+      ]
+    }
+  ],
+  "immutable_review_files": [
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/README.md",
+      "sha256": "d97a852360076fe3d7a3666afb73b74dc041ef0ec9e2a47b5417fde9bcdcc14f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/all-18-cases.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/changed-only-noindex.txt",
+      "sha256": "982ca369d0e48fddab45156550a8a48a3d1a5ccc4417a594dc5f3b5fb548ed5f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/committed-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/every-quote-verdicts.json",
+      "sha256": "284f80ca19af35aaee9b22a0a1d8c2d36c55e2df483320757581d8c4454ebce5"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/every-row-verdicts.json",
+      "sha256": "76276abe6e14316ff0755e07e1e6aed288012054dc293c380c838a592b82841f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/every-tariff-value-verdicts.json",
+      "sha256": "0bd2a465fb8e6936be35e0d5fa503bc6d642eccf95bafd4523db8286e5be7160"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/evidence-integrity.json",
+      "sha256": "06eb2045c31d569f29aac494554e6e6ac1e463936e28085c7dc61f0bcde831fc"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/findings.json",
+      "sha256": "1c3e7e7c4139baf999fef4f7db3750c5031d59460e5be9c1a841592832826156"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/frozen-hashes.json",
+      "sha256": "10f448c0a30034a940bbf04556679af0bfa858dbcf2ea2ca7f7f466d543fff57"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/independent-cases.json",
+      "sha256": "4725a93fb820695b2be8075edf9900918bbe36980af32aa1cc911fa0809bb7ed"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/mechanical-checks.json",
+      "sha256": "b66fc443e8a04a6b10b073323d8a472466affcaa31e40c62b9a984dfc1edf01b"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/operational-notes.json",
+      "sha256": "56051a3543dc47ce278fd5bcd1e6c3cecbb3193c1403234460e455aa3ab80d1c"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/permitted-status-transitions.json",
+      "sha256": "7f54e058ab4b0c81867a95c80147835229434a16750ce18ba4326501783f9993"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/preservation-verdicts.json",
+      "sha256": "d80a628cfe4b9f673c7deb6ea6db495de79f21a0551e5f4e63615c38f0cdffbe"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/property-15-checks.txt",
+      "sha256": "acb38a6f0b8a4e31c3bc8f3083b8d358a4526e96b2b6203d260d9d3c8201f4ed"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/review.py",
+      "sha256": "b21aeb3bf9e9ea88e16d46c36a1665f3ca30921df6380daddd5399a7844c3959"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/cgi-cfu-108-114.txt",
+      "sha256": "1465bbeea1a2a19c064bc5dc61f941bc4b7a0248e984e66d670acd17f2f419ff"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/cgi-penalties-228-229.txt",
+      "sha256": "b8338d9334896ff3c6800737b0baf680722bb8442fb3d67c7730f33e34717155"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lf-cfu-9-16.txt",
+      "sha256": "49bbe2ac4892d17181e65ff9aa04458aac8445dd4188bd0a0b85965baeed6b5f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lf-final.txt",
+      "sha256": "e7b4cb0d89e52a38c7fb7c0d747e836bb28590273ec3925c69ea2b82d45db02b"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lf-identity.txt",
+      "sha256": "7d81dd3234b0277cd52643590617e4be3209cfdd0c12cd8d3334cdf646c6a7ba"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lfr-10-13.txt",
+      "sha256": "d9d49b8c7d4ff1154bfd8a1a7d8dbf5da8f982bb4c2f669c631fd3d0f4ce8960"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lfr-final.txt",
+      "sha256": "2a2638d0e28de4d2d796fb1627b4a4bd56ffcf3de0bc0a0ea9a77ac31687be4b"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/lfr-identity.txt",
+      "sha256": "852bb536845d7d0cec218c497c1b80a1dcffba4f00a9e97bc7db30e68a32fe3c"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/reviewer-CGI-scope.txt",
+      "sha256": "b983722c3e30bcc3d9bd74deed52e2216b6da1cfceb93552fe5b5dcfdf3bb02f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/reviewer-LF-scope.txt",
+      "sha256": "2e2ca6e1dd07e95a3e7f26b323e8db82846c1dc64115326d846195118ba41019"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-extracts/reviewer-LFR-scope.txt",
+      "sha256": "0a0e04a07f9014ac7264bc807d8c331a24fa0eca61b80a4741b99bb397a2ad22"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/source-verdicts.json",
+      "sha256": "cddf900c2f00b0f6eee3f8525040e6c6a152e8dbd894b580566d6f82f18cfeca"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/strict-full-mergebase.txt",
+      "sha256": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-review-20261101/tariff-intervals-and-held-row.json",
+      "sha256": "d0474b87a697f7641a7204dae518777039a85c775bfc14ff9c239a323e820b83"
+    }
+  ],
+  "immutable_inherited_files": [
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/README.md",
+      "sha256": "ead04572daa7ecada50dc3925a9a2260d6a241c5759619c358ae8bdb85a98ce9"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/guide-inventory.json",
+      "sha256": "f5a251d2360ea77add532b0b52be697859caf200ea6a7171e2714e2f733427a9"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-company-formation.md",
+      "sha256": "9d999d649da7e4bae3dd7ec113ce0d3bd8faafbff6912b8e43e2b9ee8b821f66"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-corporate-income-tax.md",
+      "sha256": "f272f1d3b29d57ce75d784a52251924c31a57457ac5405ded81615e2ddbc4542"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-cross-border.md",
+      "sha256": "59e59871586645df997f15b83f86740dcd11397b98e73f12aada5e9b55afaaf8"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-income-tax.md",
+      "sha256": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-payroll-social.md",
+      "sha256": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-tax-overview.md",
+      "sha256": "519da0d3deb7b47cb78c53c118b58269e6db8f1e953bb39db862666b4d70301d"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-transfer-pricing.md",
+      "sha256": "193bb7dac5f61e378f93be13fe9a50fa5a2770aa8f1fd7b3a1ab94070932b8b8"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-vat-gst.md",
+      "sha256": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-files.json",
+      "sha256": "0a42449de79d74db620e916ed85517b0627537fd5b52294222069b07e2db500e"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topic-map.md",
+      "sha256": "9259d692f553ea8de96ee7040cdc97409bfb0c0d07547a3ee5cbbbd7323fe0bf"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topics.json",
+      "sha256": "72848524963df608900c7dbc388c4b5683aa058b980c9b86111bbfbee09ced59"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/rules.json",
+      "sha256": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/source-manifest.json",
+      "sha256": "e49fa2cc766f9128ef62c6e9f05ebf9c09cf070b0529f0991849990f07b89411"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/changed-guides.txt",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/examples.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/skill-checks.txt",
+      "sha256": "1764ad5cfda9aeb1c368ab9d0726dfcf570133fef9c83f7fef0223cd01216216"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/sync-commit.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/sync-worktree.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/writer-corrections.json",
+      "sha256": "eb14d7d5ca49ca8f482919d6661149a63b6252c176764d56e466475904a632e3"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/writer-preservation-validation.json",
+      "sha256": "0ce333ea81fe98616a90ed46996ab9765b846da4872e45f31f2f06009adf1bdb"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/CLOSURE.json",
+      "sha256": "d31bed2590fd5ed77c1255824447c524dca8bd3a4538cd5574d6ed4e4cc894fd"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/CLOSURE.md",
+      "sha256": "6e58befcbf101424b1a2219f95fa3f91427c2b963c968788a5a51ccbe5f5ee1f"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/REVIEW.md",
+      "sha256": "3d9bdc2c747f4809eaf59b8e540bb25079eb8ea2334be1ff6d8fec6cdf91f572"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/all-rule-review.csv",
+      "sha256": "ff12ffd3886ec90e95ed189abdc47c8f467962176f64b8b34a6da97a2f868a2b"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-39-41.txt",
+      "sha256": "8969e2ca4a6584bafc3a22eebff8baa5115dfcd677611ec1b50d40dd26b1f7f8"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-72-74.txt",
+      "sha256": "96f98e9fa996c45d0aee0fadd321dda26a62a44ec6f2668b5d6a947a1577b85f"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-83-85.txt",
+      "sha256": "23b0c15e77546774ca4615e033dab59942cc9d97f0f57e96e4e80a7896acee4a"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-checks.py",
+      "sha256": "0f8dd5f38789b80087eb19dd1d388a97283ff26393c94c484f155ff9f10f6ecf"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-examples-validation.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-guide-validation.txt",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-sync-validation.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/csv-format-independent-confirmation.json",
+      "sha256": "97d661ab178682aad3a9c54894d015a1b3424e056c08300a55e8bcc23db489a4"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/csv-format-reconciliation.json",
+      "sha256": "f80ade8004423cd7b2973e06c93b08d78eb25f02333871810319804f5f72396f"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/example-review.json",
+      "sha256": "6f243087f7b181387c386b6c24072c7b56e4015cc3d90805e455684941f93a8f"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/examples-validation.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/guide-validation.txt",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/mechanical-summary.txt",
+      "sha256": "84aad0c78c74cbf0ca1d2f0a9bf1c981bdc04cb124a3764672cdf1b8b5d9ce9f"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/metadata.json",
+      "sha256": "25b8a3cf952d8b963783eb834414b84ce0fe0c745e6df995caafd8a59c6b4f85"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/old-topic-coverage.json",
+      "sha256": "7c63079207a0ee37f8c1752bf91e598d6e3d0a207ff6016fb354e92c1f941432"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/placement-coverage.json",
+      "sha256": "aa007c6a9a417dfd573a114e4bf6456e9b2891d7c76c9a78547d5addba20c85b"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/preservation.json",
+      "sha256": "a5ef17b658be8eb4ecb782ce489893578f1a1b8283066be48eaf2cfb815c4d39"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/review-checks.py",
+      "sha256": "c00793357fff765bb29659298a61f6f92682bdc419e0809306a54be12e53de0e"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/rule-coverage.json",
+      "sha256": "cfb534ebf19ae251cfe501361eb0838aac3b401638640c34dafbb532bb2a9ab5"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/source-checks.json",
+      "sha256": "9594797ee2be922b962c4c31d8398ca4be6edbf69c587191f5d4e25da246dce6"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/sync-validation.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/README.md",
+      "sha256": "311dd819e82851d2e6e9077ac2799a7904c364b04e671ee98e87062e28f7dded"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/frozen-content.json",
+      "sha256": "95a0c25ba7c4c22604dde406d0acdc9c406211f5f1875002c8fb3446e47dec34"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/ga-annual-property-tax.md",
+      "sha256": "23c0a71d195db1b27d4c3e0d8f5344adccfdc8448ed7a721b6f129d8ff4108f4"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/instrument-search.md",
+      "sha256": "6494f4985a01f1551e97eabd7ce9ecd484764844f426f87a14c6df055788d67c"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/old-topic-destinations.json",
+      "sha256": "d34c561a5dd7c9a014de13c5eba4115449d19613ccbce23058dff0b81802184f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/old-topics-reference.json",
+      "sha256": "44a60b7129c56cf5abe01835b8389b2830aa84408b33693481c75769151aa999"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/preservation.json",
+      "sha256": "e453fc99b51e00717618af964465f3ba3579f33083fc7876f61ca55b1eac39b6"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/rules.json",
+      "sha256": "690f14dcfc8a7a6ae3482d3aa64315eced715fc6458abbcc9ab5f5eb56208c04"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/sources.json",
+      "sha256": "d70263f01e554e418de6225a17d84ac58fb587f2e2f2d7aa5257efb0a89f4d1b"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/tariff-rows.json",
+      "sha256": "7f71ee99dadd278864b949f3b12f60fec02703172133e81ea8d8649a930f7c17"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validate-evidence.py",
+      "sha256": "4d5a8215f24b9ce04971056bf6c97add47a54c794ce3e740cd9be3e6018ce7ee"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/COMMITTED-VALIDATION.json",
+      "sha256": "f1b182914298cacff9f11cc41a7013415c5c842c1cc47b3d4bb6cf17a9ee2dc3"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/README.md",
+      "sha256": "25b1235f902e4e6abd61a8f60d0be597e87a9c6a1ade47e454a9138a713d27e0"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/committed-evidence.txt",
+      "sha256": "d3997852477e696636262c5e4a177e045aa8ba7834bfce73769a4b2dec767611"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/committed-examples.txt",
+      "sha256": "4d0d3383b7ad687adae9cac2d34d6c93765b04e3ae27aaf10d5993363a476763"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/committed-guide-validator.txt",
+      "sha256": "efbcf615b1a28410803d0cc1803dda0e8e74cb68b28615033e61c0fb0d1dd653"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/committed-strict-metadata.txt",
+      "sha256": "960e34e8b902a41a6b0274837b9ca7d5d32e33f1dcb1c303ca7d454ab885fb64"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/committed-whitespace.txt",
+      "sha256": "191f9e9ec66af4e8679af0e10135158bf0cbe0def594d1400b42847d61527ec7"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/evidence-final.json",
+      "sha256": "944c35357d490010050a93f6861b9fab711158a9675b133da5b62a70598a8b54"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/evidence-initial.json",
+      "sha256": "558524b560353e7ec3bd2538d61d33dd6139b0d975f5e654986108450b6e0228"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/examples-all-nine.txt",
+      "sha256": "4f46f3c338e02c88e3867b74d8e8a7737a85e2778f1ba7ca8645c1bc002e4846"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/examples-initial.txt",
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/operational-failures.txt",
+      "sha256": "c588030cbc7d69afd09d66f47eb4f4750d11f3951b462a01ea32efd84b92aed4"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/shape-final.json",
+      "sha256": "e11f39ff7e7fddae70e5a80564df75f824ed68bf08a4e333b894341dcb7b7b4e"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/shape-initial.json",
+      "sha256": "e11f39ff7e7fddae70e5a80564df75f824ed68bf08a4e333b894341dcb7b7b4e"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/strict-worktree.txt",
+      "sha256": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validation/whitespace-precommit.txt",
+      "sha256": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d"
+    },
+    {
+      "path": "skills/gabon/ga-company-formation.md",
+      "sha256": "6c115f54661102018bb2989d1b10b1a929574278dfb185965c9d4550063dee89"
+    },
+    {
+      "path": "skills/gabon/ga-corporate-income-tax.md",
+      "sha256": "4793e35a96cff9effab93a2cde32aa81f002e92e57e6836bce235210c09b9802"
+    },
+    {
+      "path": "skills/gabon/ga-cross-border.md",
+      "sha256": "434cb9573588d40fbd98ef2b1714d27400c028749dad74ee0d7d6e5a431ff9bb"
+    },
+    {
+      "path": "skills/gabon/ga-income-tax.md",
+      "sha256": "01669d939fbd2e6e23aa0f09e85350e9c43ce68fddbb491dee7e59d16a7cf2da"
+    },
+    {
+      "path": "skills/gabon/ga-payroll-social.md",
+      "sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4"
+    },
+    {
+      "path": "skills/gabon/ga-tax-overview.md",
+      "sha256": "7979df35fd99a1eb3aefb8fb0189b5de501765ca0fad6a42f2ac39b41d0047b6"
+    },
+    {
+      "path": "skills/gabon/ga-transfer-pricing.md",
+      "sha256": "5e47e0ca07a9d3171799700cda6c657c648ea2cd8e7b2857164f255216e29914"
+    },
+    {
+      "path": "skills/gabon/ga-vat-gst.md",
+      "sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a"
+    }
+  ],
+  "prior_review": {
+    "grouped_rules": 93,
+    "placements": 127,
+    "topics": 77,
+    "cases": 16,
+    "F1_F4": "closed and unchanged"
+  },
+  "property_review": {
+    "grouped_records": 72,
+    "published_tariff_cells_verified": 184,
+    "new_cases": 2,
+    "exact_quote_placements": 160
+  },
+  "all_seven_domains_partial": true,
+  "currentness_certified": false,
+  "accountant_attestation": false,
+  "country_completion": false,
+  "merge_approval": false,
+  "preserved_holds": [
+    "complete intervening amendment chain and first operative assessments",
+    "untitled-interest scope",
+    "joint ministerial zoning order and parcel mapping",
+    "individual market/construction/acquisition valuation priority",
+    "corporate rental/book/real-value interaction",
+    "malformed last building band and excess/fractional-area algorithms",
+    "agricultural valuation-to-liability link, declaration self-references and special deadlines",
+    "relief continuity/commencement and accepted procedure",
+    "current forms, boxes, authenticated filing/payment reference/acceptance receipts",
+    "sanctions applicability and cumulation",
+    "separate occupancy, registration/acquisition, property VAT and disposal workflows outside this Guide",
+    "all seven country domains remain partial"
+  ],
+  "operational_failure": "Initial default-sandbox git fetch failed DNS; authorised network fetch succeeded. No validation failure is masked."
+}

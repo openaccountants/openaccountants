@@ -1,0 +1,345 @@
+{
+  "complete_intervals": [
+    {
+      "rule_id": "P-B01",
+      "original_interval": "1 à 10 000 000",
+      "guide_interval": "1 à 10 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B02",
+      "original_interval": "10 000 001 à 20 000 000",
+      "guide_interval": "10 000 001 à 20 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B03",
+      "original_interval": "20 000 001 à 30 000 000",
+      "guide_interval": "20 000 001 à 30 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B04",
+      "original_interval": "30 000 001 à 40 000 000",
+      "guide_interval": "30 000 001 à 40 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B05",
+      "original_interval": "40 000 001 à 50 000 000",
+      "guide_interval": "40 000 001 à 50 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B06",
+      "original_interval": "50 000 001 à 60 000 000",
+      "guide_interval": "50 000 001 à 60 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B07",
+      "original_interval": "60 000 001 à 70 000 000",
+      "guide_interval": "60 000 001 à 70 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B08",
+      "original_interval": "70 000 001 à 80 000 000",
+      "guide_interval": "70 000 001 à 80 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B09",
+      "original_interval": "80 000 001 à 90 000 000",
+      "guide_interval": "80 000 001 à 90 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B10",
+      "original_interval": "90 000 001 à 100 000 000",
+      "guide_interval": "90 000 001 à 100 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B11",
+      "original_interval": "100 000 001 à 150 000 000",
+      "guide_interval": "100 000 001 à 150 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B12",
+      "original_interval": "150 000 001 à 200 000 000",
+      "guide_interval": "150 000 001 à 200 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B13",
+      "original_interval": "200 000 001 à 250 000 000",
+      "guide_interval": "200 000 001 à 250 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B14",
+      "original_interval": "250 000 001 à 300 000 000",
+      "guide_interval": "250 000 001 à 300 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B15",
+      "original_interval": "300 000 001 à 350 000 000",
+      "guide_interval": "300 000 001 à 350 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B16",
+      "original_interval": "350 000 001 à 400 000 000",
+      "guide_interval": "350 000 001 à 400 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B17",
+      "original_interval": "400 000 001 à 450 000 000",
+      "guide_interval": "400 000 001 à 450 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B18",
+      "original_interval": "450 000 001 à 500 000 000",
+      "guide_interval": "450 000 001 à 500 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B19",
+      "original_interval": "500 000 001 à 550 000 000",
+      "guide_interval": "500 000 001 à 550 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B20",
+      "original_interval": "550 000 001 à 600 000 000",
+      "guide_interval": "550 000 001 à 600 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B21",
+      "original_interval": "600 000 001 à 650 000 000",
+      "guide_interval": "600 000 001 à 650 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 13
+    },
+    {
+      "rule_id": "P-B22",
+      "original_interval": "650 000 001 à 700 000 000",
+      "guide_interval": "650 000 001 à 700 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B23",
+      "original_interval": "700 000 001 à 750 000 000",
+      "guide_interval": "700 000 001 à 750 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B24",
+      "original_interval": "750 000 001 à 800 000 000",
+      "guide_interval": "750 000 001 à 800 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B25",
+      "original_interval": "800 000 001 à 850 000 000",
+      "guide_interval": "800 000 001 à 850 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B26",
+      "original_interval": "850 000 001 à 900 000 000",
+      "guide_interval": "850 000 001 à 900 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B27",
+      "original_interval": "900 000 001 à 950 000 000",
+      "guide_interval": "900 000 001 à 950 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-B28",
+      "original_interval": "950 000 001 à 1 000 000 000",
+      "guide_interval": "950 000 001 à 1 000 000 000",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L01",
+      "original_interval": "1 à 100 m²",
+      "guide_interval": "1 à 100 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L02",
+      "original_interval": "101 à 200 m²",
+      "guide_interval": "101 à 200 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L03",
+      "original_interval": "201 à 300 m²",
+      "guide_interval": "201 à 300 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L04",
+      "original_interval": "301 à 400 m²",
+      "guide_interval": "301 à 400 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L05",
+      "original_interval": "401 à 500 m²",
+      "guide_interval": "401 à 500 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L06",
+      "original_interval": "501 à 600 m²",
+      "guide_interval": "501 à 600 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L07",
+      "original_interval": "601 à 700 m²",
+      "guide_interval": "601 à 700 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L08",
+      "original_interval": "701 à 800 m²",
+      "guide_interval": "701 à 800 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L09",
+      "original_interval": "801 à 900 m²",
+      "guide_interval": "801 à 900 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L10",
+      "original_interval": "901 à 1000 m²",
+      "guide_interval": "901 à 1000 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L11",
+      "original_interval": "1001 à 1500 m²",
+      "guide_interval": "1001 à 1500 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L12",
+      "original_interval": "1501 à 2000 m²",
+      "guide_interval": "1501 à 2000 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L13",
+      "original_interval": "2001 à 2500 m²",
+      "guide_interval": "2001 à 2500 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L14",
+      "original_interval": "2501 à 3000 m²",
+      "guide_interval": "2501 à 3000 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L15",
+      "original_interval": "3001à 3500 m²",
+      "guide_interval": "3001à 3500 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L16",
+      "original_interval": "3501 à 4000 m²",
+      "guide_interval": "3501 à 4000 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L17",
+      "original_interval": "4001 à 4500 m²",
+      "guide_interval": "4001 à 4500 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    },
+    {
+      "rule_id": "P-L18",
+      "original_interval": "4501 à 5000 m²",
+      "guide_interval": "4501 à 5000 m²",
+      "verdict": "exact interval matches; fractional/endpoints outside printed integer intervals held",
+      "actual_pdf_page": 14
+    }
+  ],
+  "malformed_held_row": [
+    {
+      "original_row": {
+        "range": "1 000 000 0001 à +",
+        "values": [
+          1139177,
+          911342,
+          455671,
+          151890
+        ],
+        "quote": "1 000 000 0001 à +                        1 139 177                       911 342                     455 671              151 890",
+        "page": 14
+      },
+      "four_values_visually_checked": true,
+      "verdict": "source matches; held from operative calculation due malformed interval and unresolved excess algorithm"
+    }
+  ],
+  "published_complete_tariff_values": 184,
+  "held_row_values_observed": 4
+}

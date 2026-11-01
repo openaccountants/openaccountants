@@ -1,0 +1,90 @@
+[
+  {
+    "guide": "ga-corporate-income-tax",
+    "git_blob": "f6109ae56cf66eea1f30a145a8537e88cba6d786",
+    "sha256": "4793e35a96cff9effab93a2cde32aa81f002e92e57e6836bce235210c09b9802",
+    "description_words": 107,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": false,
+    "new_has_no_platform_or_author_trust_fields": null,
+    "new_has_no_cta": null
+  },
+  {
+    "guide": "ga-income-tax",
+    "git_blob": "bafc3f5d0f8a0bc7c571a2f17559818fc61d5b9b",
+    "sha256": "01669d939fbd2e6e23aa0f09e85350e9c43ce68fddbb491dee7e59d16a7cf2da",
+    "description_words": 106,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": true,
+    "new_has_no_platform_or_author_trust_fields": true,
+    "new_has_no_cta": true
+  },
+  {
+    "guide": "ga-payroll-social",
+    "git_blob": "5d54b4eb6aa5461b7cf8516496cb558e2c8ab2c0",
+    "sha256": "d988237ddd183a78d6df380e850369b59a4f67fabf67c35b56fa8d34437b65c0",
+    "description_words": 105,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": false,
+    "new_has_no_platform_or_author_trust_fields": null,
+    "new_has_no_cta": null
+  },
+  {
+    "guide": "ga-vat-gst",
+    "git_blob": "ea5915ba32f53e03d36a41189fb04c77530a0727",
+    "sha256": "53b2114486618bc417637ed9503b554bd6ecccc57101c029daf3338da1526077",
+    "description_words": 104,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": false,
+    "new_has_no_platform_or_author_trust_fields": null,
+    "new_has_no_cta": null
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "git_blob": "e3662c1a57637e7a8f431ce2f70b2b8af441fc6f",
+    "sha256": "5e47e0ca07a9d3171799700cda6c657c648ea2cd8e7b2857164f255216e29914",
+    "description_words": 103,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": true,
+    "new_has_no_platform_or_author_trust_fields": true,
+    "new_has_no_cta": true
+  },
+  {
+    "guide": "ga-cross-border",
+    "git_blob": "5d3986dcd013a59bbc4acff8cd446ed86df84ee4",
+    "sha256": "434cb9573588d40fbd98ef2b1714d27400c028749dad74ee0d7d6e5a431ff9bb",
+    "description_words": 104,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": true,
+    "new_has_no_platform_or_author_trust_fields": true,
+    "new_has_no_cta": true
+  },
+  {
+    "guide": "ga-company-formation",
+    "git_blob": "b9d23eb758e31837a3f58862da700f41ce17fafe",
+    "sha256": "6c115f54661102018bb2989d1b10b1a929574278dfb185965c9d4550063dee89",
+    "description_words": 108,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": false,
+    "new_has_no_platform_or_author_trust_fields": null,
+    "new_has_no_cta": null
+  },
+  {
+    "guide": "ga-tax-overview",
+    "git_blob": "c183773e65b17494af7bcc497107923a08a7617f",
+    "sha256": "7979df35fd99a1eb3aefb8fb0189b5de501765ca0fad6a42f2ac39b41d0047b6",
+    "description_words": 110,
+    "description_80_to_150": true,
+    "version_h1_matches": true,
+    "new": false,
+    "new_has_no_platform_or_author_trust_fields": null,
+    "new_has_no_cta": null
+  }
+]

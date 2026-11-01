@@ -1,0 +1,5 @@
+2026-11-01, before initial freeze
+1. Default-sandbox git fetch origin: exit 128, Could not resolve host: github.com. Retried via authorised network escalation; exit 0.
+2. Direct CGI official refresh: SSL UNEXPECTED_EOF_WHILE_READING. Web open also inaccessible. Historical cached original independently extracted and hash-checked; prior accepted review had matched a fresh official fetch. No TLS bypass. Fresh initial and July law downloads succeeded and matched originals.
+3. Default-sandbox gh pr view 1212: exit 1, error connecting to api.github.com. Authorised network read succeeded and preserved the existing PR metadata outside Git.
+4. Initial git add of new evidence path: exit 1 because evidence/ledgers/gabon-property-20261101 is outside this worktree's sparse-checkout definition. The dependent commit did not run. Retried git add --sparse with exactly the intended three paths; no global sparsity change or unrelated file added.

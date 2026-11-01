@@ -1,0 +1,4 @@
+Command: python3 scripts/check-examples.py --require skills/gabon/ga-annual-property-tax.md skills/gabon/ga-company-formation.md skills/gabon/ga-corporate-income-tax.md skills/gabon/ga-cross-border.md skills/gabon/ga-income-tax.md skills/gabon/ga-payroll-social.md skills/gabon/ga-tax-overview.md skills/gabon/ga-transfer-pricing.md skills/gabon/ga-vat-gst.md
+checked 9 files, 18 oa-check blocks, 0 failures, 0 missing
+
+Exit: 0

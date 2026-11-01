@@ -1,0 +1,350 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "d90a78e28adb1804d0e1fd904886dc16c00cd2bb",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "scope": "Frozen working-tree six-file repair closure; accepted only by exact content hashes, not by a new commit id",
+  "status": "Focused corrections accepted; original source review passes for the explicitly partial research draft only",
+  "findings": {
+    "F1": "closed: direct attribution precedes ratio, shared inputs only, original 90 percent hold preserved",
+    "F2": "closed: adjacent baseline non-cumulation expressly stated with CGI citation and currentness/commencement hold",
+    "F3": "closed: no employer total asserted in P-CNSS rule or matching ledger; pension split and branches unchanged",
+    "F4": "closed: both threshold source locators now article208 PDF73",
+    "minor_I_SHARES": "closed: six children expressly stated in rule and ledger"
+  },
+  "candidate_files": [
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-income-tax.md",
+      "sha256": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8",
+      "expected_sha256": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "553c4d94d826e6fce3085f2c705ce63d1b01dd3d"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-payroll-social.md",
+      "sha256": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7",
+      "expected_sha256": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "e20f218822d9df88af9c95deb9f72df0c75dd3e3"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-vat-gst.md",
+      "sha256": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7",
+      "expected_sha256": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "502b2d7e48b2bb87b5ad5746f39d44fd1f02b013"
+    },
+    {
+      "path": "skills/gabon/ga-vat-gst.md",
+      "sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+      "expected_sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "7598d53a2e4b770d46e83e324ba474b50057e855"
+    },
+    {
+      "path": "skills/gabon/ga-payroll-social.md",
+      "sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+      "expected_sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "cf9fe916239761214c0c3e059225251b526c2203"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/rules.json",
+      "sha256": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a",
+      "expected_sha256": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a",
+      "matches_frozen_writer_receipt": true,
+      "git_blob": "f3de20229302deb678245ef74bc0c2c16cd250a8"
+    }
+  ],
+  "writer_corrections_receipt_sha256": "eb14d7d5ca49ca8f482919d6661149a63b6252c176764d56e466475904a632e3",
+  "unique_rule_records": 93,
+  "changed_rule_ids": [
+    "I-SHARES",
+    "P-CNSS",
+    "P-CAR",
+    "V-PRORATA",
+    "V-DOMCAP",
+    "V-FORESTCAP"
+  ],
+  "supporting_source_checks": [
+    {
+      "rule_id": "P-CAR",
+      "act_article": "CGI91bis",
+      "pdf_page_1_based": 40,
+      "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+      "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+      "exact_original_language_quote": "L’indemnité de voiture ou d’entretien de véhicule et l’indemnité de déplacement ne sont pas cumulables.",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Read full adjacent article and conditions on actual selectable PDF page; historical2025baseline only, full currentness not proved.",
+      "source_hash_matches": true,
+      "quote_on_claimed_actual_pdf_page": true,
+      "quote_in_matching_ledger_block": true,
+      "url_and_hash_in_matching_ledger_block": true
+    },
+    {
+      "rule_id": "V-PRORATA",
+      "act_article": "CGI226",
+      "pdf_page_1_based": 84,
+      "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+      "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+      "exact_original_language_quote": "seule la fraction de la taxe qui les a grevées est déductible par application d’un prorata",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Read full adjacent article and conditions on actual selectable PDF page; historical2025baseline only, full currentness not proved.",
+      "source_hash_matches": true,
+      "quote_on_claimed_actual_pdf_page": true,
+      "quote_in_matching_ledger_block": true,
+      "url_and_hash_in_matching_ledger_block": true
+    }
+  ],
+  "guide_checks": [
+    {
+      "guide": "ga-corporate-income-tax",
+      "sha256": "4793e35a96cff9effab93a2cde32aa81f002e92e57e6836bce235210c09b9802",
+      "unchanged_from_original_candidate": true,
+      "description_words": 107,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-income-tax",
+      "sha256": "01669d939fbd2e6e23aa0f09e85350e9c43ce68fddbb491dee7e59d16a7cf2da",
+      "unchanged_from_original_candidate": true,
+      "description_words": 106,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-payroll-social",
+      "sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+      "unchanged_from_original_candidate": false,
+      "description_words": 105,
+      "description_unchanged": true,
+      "version": 0.2,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-vat-gst",
+      "sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+      "unchanged_from_original_candidate": false,
+      "description_words": 104,
+      "description_unchanged": true,
+      "version": 0.2,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-transfer-pricing",
+      "sha256": "5e47e0ca07a9d3171799700cda6c657c648ea2cd8e7b2857164f255216e29914",
+      "unchanged_from_original_candidate": true,
+      "description_words": 103,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-cross-border",
+      "sha256": "434cb9573588d40fbd98ef2b1714d27400c028749dad74ee0d7d6e5a431ff9bb",
+      "unchanged_from_original_candidate": true,
+      "description_words": 104,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-company-formation",
+      "sha256": "6c115f54661102018bb2989d1b10b1a929574278dfb185965c9d4550063dee89",
+      "unchanged_from_original_candidate": true,
+      "description_words": 108,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    },
+    {
+      "guide": "ga-tax-overview",
+      "sha256": "7979df35fd99a1eb3aefb8fb0189b5de501765ca0fad6a42f2ac39b41d0047b6",
+      "unchanged_from_original_candidate": true,
+      "description_words": 110,
+      "description_unchanged": true,
+      "version": 0.1,
+      "h1_matches_version": true,
+      "cta_unchanged": true,
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "currency_hold_unchanged": true,
+      "not_yet_confirmed_unchanged": true,
+      "platform_and_author_fields_unchanged": {
+        "authored_by": true,
+        "trust_label": true,
+        "license": true,
+        "review_status": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true
+      }
+    }
+  ],
+  "historical_and_preservation_files": [
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/source-manifest.json",
+      "sha256": "e49fa2cc766f9128ef62c6e9f05ebf9c09cf070b0529f0991849990f07b89411",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/guide-inventory.json",
+      "sha256": "f5a251d2360ea77add532b0b52be697859caf200ea6a7171e2714e2f733427a9",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "skills/gabon/README.md",
+      "sha256": "38796d57a2d1c79978040f6b16276eeea55ef0f2d8db4d30588dd370314e3b44",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-files.json",
+      "sha256": "0a42449de79d74db620e916ed85517b0627537fd5b52294222069b07e2db500e",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topics.json",
+      "sha256": "72848524963df608900c7dbc388c4b5683aa058b980c9b86111bbfbee09ced59",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topic-map.md",
+      "sha256": "9259d692f553ea8de96ee7040cdc97409bfb0c0d07547a3ee5cbbbd7323fe0bf",
+      "unchanged_from_original_candidate": true
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/README.md",
+      "sha256": "ead04572daa7ecada50dc3925a9a2260d6a241c5759619c358ae8bdb85a98ce9",
+      "unchanged_from_original_candidate": true
+    }
+  ],
+  "domain_partial_count": 7,
+  "unchanged_example_blocks": 16,
+  "current_law_attestation": false,
+  "country_complete": false,
+  "authorized_publication_action_performed": false
+}

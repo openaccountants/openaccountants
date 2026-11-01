@@ -1,0 +1,20 @@
+Candidate: eb07e603a6b3e299132abbed1b5200383af2e364
+Base: 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8
+Command: python3 evidence/ledgers/gabon-property-status-20261101/verify-status.py
+
+{
+  "status": "pass",
+  "permitted_changed_files": 2,
+  "permitted_exact_substitutions": 3,
+  "review_evidence_files_immutable": 31,
+  "inherited_files_immutable": 82,
+  "original_eight_guides_unchanged": true,
+  "prior_93_rule_127_placement_77_topic_16_case_review_preserved": true,
+  "F1_F4_closed_unchanged": true,
+  "property_review_72_rows_184_cells_two_cases": "accepted source fidelity only",
+  "all_seven_domains_partial": true,
+  "current_law_attestation": false,
+  "merge_approval": false
+}
+
+Exit: 0
