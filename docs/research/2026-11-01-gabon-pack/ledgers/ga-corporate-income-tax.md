@@ -232,4 +232,3 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 - Source SHA-256: `85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941`.
 - PDF page (1-based, main quote): 12.
 - Currency: 2025 code and 2014 company-law rows remain historical baselines; enacted2026 texts do not establish the complete intervening and implementing chain.
-
