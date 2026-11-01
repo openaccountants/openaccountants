@@ -1,6 +1,6 @@
 ---
 name: israel-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for an Israel VAT (Ma'am: מע"מ) return or advise on Israeli VAT registration, filing, and reporting. Trigger on phrases like "prepare Ma'am return", "Israeli VAT", "מע"מ", "doch maam", or any Israel VAT request. ALWAYS read this skill before touching any Israel Ma'am-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Israel VAT (Ma'am, מע"מ) return or advise on Israeli VAT registration, filing, and reporting. Trigger on phrases like "prepare Ma'am return", "Israeli VAT", "מע"מ", "doch maam", or any Israel VAT request. ALWAYS read this skill before touching any Israel Ma'am-related work.
 version: 2.1
 jurisdiction: IL
 tax_year: 2026
