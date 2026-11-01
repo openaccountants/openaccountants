@@ -1,0 +1,30 @@
+{
+  "candidate_commit": "ea3aefb0bea6c30acd49d42a6ff72523162df0bc",
+  "initial_review_complete": true,
+  "findings": [
+    {
+      "id": "N1",
+      "priority": "condition clarification",
+      "ledger": "F24",
+      "file": "skills/niger/ne-company-formation.md",
+      "section": "The base, step 5",
+      "source": "AUSCGIE 107, physical page 29",
+      "issue": "Automatic adoption on registration requires associates to sign both statutes and annexed commitment statement. Candidate compresses this to signing the annexed statement. State both signatures explicitly in the Guide and corresponding ledger rule.",
+      "short_exact_quote": "La signature, par les associes, des statuts et de cet etat emporte reprise"
+    },
+    {
+      "id": "N2",
+      "priority": "condition clarification",
+      "ledger": "F26",
+      "file": "skills/niger/ne-company-formation.md",
+      "section": "Deadlines and filing, first paragraph",
+      "source": "AUSCGIE 73, physical page 19",
+      "issue": "Mandated signature may be by one or more declaration authors (founders/first members of management, administration or direction), not an unrestricted external authorised signatory. Narrow Guide and ledger wording to that pool.",
+      "short_exact_quote": "par l’une de ces personnes ou plusieurs d’entre elles"
+    }
+  ],
+  "mathematical_failures": 0,
+  "preservation_failures": 0,
+  "overview_source_findings": 0,
+  "decision": "Conditional source-fidelity acceptance after these two small formation condition clarifications; no merge approval or accountant attestation."
+}

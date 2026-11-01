@@ -332,7 +332,7 @@
     "id": "F24",
     "guide": "ne-company-formation",
     "section": "The base",
-    "rule": "Preconstitution founders acts disclosed in detailed statement; without constituent assembly, signed annexed statement adopted upon registration. Other adoption paths require statutory process. Unadopted acts do not bind company; signatories jointly and indefinitely liable.",
+    "rule": "Preconstitution founders acts are disclosed in a detailed statement; without a constituent assembly, associates sign both statutes and the annexed commitment statement for adoption upon registration. Other adoption paths require statutory process. Unadopted acts do not bind the company; signatories are jointly and indefinitely liable.",
     "act_article": "AUSCGIE 106–110",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
     "original_language_quote": "sont tenues solidairement et indefiniment",
@@ -341,7 +341,10 @@
       30
     ],
     "read_on": "2026-11-01",
-    "quote_note": "Short original-language excerpt; line wrapping and apostrophe glyphs normalised. Original scan governs where cached OCR omits text."
+    "quote_note": "Short original-language excerpt; line wrapping and apostrophe glyphs normalised. Original scan governs where cached OCR omits text.",
+    "additional_original_language_quotes": [
+      "des statuts et de cet état"
+    ]
   },
   {
     "id": "F25",
@@ -361,7 +364,7 @@
     "id": "F26",
     "guide": "ne-company-formation",
     "section": "Deadlines and filing",
-    "rule": "Regularity/conformity declaration by founders/first management at registry or rejection; authorised signer permitted. Exception where notarised subscription/payment declaration duly established and filed.",
+    "rule": "Founders and first management, administration and direction authors file the regularity/conformity declaration at the registry or registration is rejected. Its authors sign it or mandate one or more of those authors to sign. The exception is a notarised subscription/payment declaration duly established and filed.",
     "act_article": "AUSCGIE 73–74",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
     "original_language_quote": "a peine de rejet de la demande d’immatriculation",
@@ -370,7 +373,10 @@
       20
     ],
     "read_on": "2026-11-01",
-    "quote_note": "Short original-language excerpt; line wrapping and apostrophe glyphs normalised. Original scan governs where cached OCR omits text."
+    "quote_note": "Short original-language excerpt; line wrapping and apostrophe glyphs normalised. Original scan governs where cached OCR omits text.",
+    "additional_original_language_quotes": [
+      "par l'une de ces personnes ou plusieurs d'entre elles"
+    ]
   },
   {
     "id": "F27",

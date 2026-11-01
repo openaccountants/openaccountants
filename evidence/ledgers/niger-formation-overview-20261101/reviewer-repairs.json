@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-01",
+  "changes": [
+    "N1 article107 adoption requires associates signing both statutes and annexed commitment statement",
+    "N2 article73 delegated signers limited to one or more declaration authors, not generic outside signers"
+  ],
+  "actual_parent_read": "Original cached OHADA73and107text plus adjacent statutory provisions read; no new source or current-law continuity claim",
+  "candidate_files": {
+    "skills/niger/ne-company-formation.md": "de3de318658c4bebcc41b8ce12eba88a5eb761c54c662658a431b5d39021a00b",
+    "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.json": "0ee95033302122989c83ec3bda85fd5b875e15f570d71a156791b540ae5ca3e1",
+    "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.md": "3279959fa8607630cec8b1c5f739d57e5070c15c8b2db9eb58ed2888c88c9e28"
+  }
+}

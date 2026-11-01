@@ -1,0 +1,58 @@
+{
+  "cases_checked": 4,
+  "failed": 0,
+  "cases": [
+    {
+      "guide": "ne-company-formation",
+      "case": "Cash funding",
+      "method": "Independent exact rational arithmetic, not evaluation of writer oa-check expressions",
+      "calculation": {
+        "sarl_initial": 5000000,
+        "sa_initial": 2500000,
+        "sarl_balance": 5000000,
+        "sa_balance": 7500000,
+        "initial_difference": 2500000
+      },
+      "verdict": "pass",
+      "source_condition": "All cash, capital fully subscribed, quarter/half at subscription; subsequent payment periods and SA unpaid-capital restrictions remain material."
+    },
+    {
+      "guide": "ne-company-formation",
+      "case": "Kind contribution boundary",
+      "method": "Independent aggregation and strict comparison",
+      "calculation": {
+        "aggregate_at": 5000000,
+        "required_at": false,
+        "aggregate_above": 5100000,
+        "required_above": true,
+        "excess_above": 100000
+      },
+      "verdict": "pass",
+      "source_condition": "No special advantage; latter independently requires auditor regardless of numeric boundary. This is contribution valuation, not annual audit."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "case": "Monthly supported subtotal",
+      "method": "Independent addition with unresolved branch excluded from completed subtotal, not treated as zero",
+      "calculation": {
+        "supported_ordinary_subtotal": 10000,
+        "separately_flagged_settlement": 500000
+      },
+      "verdict": "pass",
+      "source_condition": "Two underlying ordinary liabilities assumed checked; supplier-requested branch remains unresolved."
+    },
+    {
+      "guide": "ne-tax-overview",
+      "case": "Post-repeal charge reconciliation",
+      "method": "Independent debit reconciliation",
+      "calculation": {
+        "debited": 1015000,
+        "principal_plus_separate_fee": 1010000,
+        "difference_for_review": 5000,
+        "permitted_former_tdta_under_repealed_provisions": 0
+      },
+      "verdict": "pass",
+      "source_condition": "Both order and validation September, after signed repeal; fee correctness/refund and straddling transition not determined."
+    }
+  ]
+}

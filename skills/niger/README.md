@@ -21,7 +21,7 @@ partial:
 
 # Niger tax pack
 
-**Partial pack, 1 November 2026.** Three legacy 2025 tax Guides remain unchanged. Two accepted limited 2026 tax jobs remain byte-identical. Formation and overview are now source-based 2026 intake drafts with separate ledgers and four executable cases; their independent review is pending. The accepted cash-payment and TDTA jobs retain their earlier review at `aa1f342de147326021335775874f4e7071ce1415`. None has accountant attestation. These contributions do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
+**Partial pack, 1 November 2026.** Three legacy 2025 tax Guides remain unchanged. Two accepted limited 2026 tax jobs remain byte-identical. Formation and overview are now source-based 2026 intake drafts with separate ledgers and four executable cases; independent source-fidelity review has accepted their 47 ledger rows, 25 old-topic destinations and four examples after two company-law corrections. All seven domains remain partial. The accepted cash-payment and TDTA jobs retain their earlier review at `aa1f342de147326021335775874f4e7071ce1415`. None has accountant attestation. These contributions do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
 
 | Domain | Retained Guide | Actual status |
 |---|---|---|
@@ -45,7 +45,7 @@ The ministry's original 2026 law and signed first rectification were downloaded 
 [Company formation](ne-company-formation.md) now reads the original OHADA companies Act and Niger’s 2014 decree with the actual 2017 gazetted amendment. It covers constitution/funding, registration stages, annual corporate duties and branch/office boundaries, while current guichet forms/fees, tax registrations and the complete currentness chain remain open. [Tax overview](ne-tax-overview.md) routes the two accepted tax jobs and explicitly holds the old rates, residence and general filing statements. All five other Guide files, all earlier ledgers and review evidence remain byte-identical to the pinned main base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. Existing platform fields and both rewritten Guides’ complete CTA suffixes remain exact. Retention is not recertification.
 
 - [Formation and overview figure ledgers, old-topic map and writer scope](../../evidence/ledgers/niger-formation-overview-20261101/writer-record.md).
-- Formation and overview independent review: pending; no accountant attestation. The older 58-topic map below remains historical evidence; the new immutable map explicitly accounts for every paragraph, heading and bullet replaced in these two files.
+- Formation and overview independent source-fidelity review: accepted within the limited read scope; [closure evidence](../../evidence/ledgers/niger-formation-overview-review-20261101/closure.md). No accountant attestation or complete country coverage. The older 58-topic map below remains historical evidence; the new immutable map explicitly accounts for every paragraph, heading and bullet replaced in these two files.
 
 - [Complete old-topic destination map](../../evidence/ledgers/niger-old-topics.md).
 - [Cash-payment rule ledger](../../evidence/ledgers/ne-cash-payment-tax.md).
