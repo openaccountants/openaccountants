@@ -1,6 +1,6 @@
 ---
 jurisdiction: ML
-version: 0.2
+version: 0.3
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -22,7 +22,7 @@ partial:
 
 # Mali tax pack
 
-**Partial source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** The formation and overview legacy 2025 Guides remain unchanged. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
+**Partial source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** The formation and overview jobs have now been rebuilt as conditional source-reference drafts; independent review of this latest checkpoint is pending below. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -60,3 +60,9 @@ Payroll includes original CANAM Decrees 10-578 and 10-601 of 2010, with contribu
 Fresh [rule ledgers and writer evidence](../../evidence/ledgers/mali-ordinary-draft-20261101/writer-record.md) identify the actual read scope, exact source quotes and immutable base. The [follow-on old-topic map](../../evidence/ledgers/mali-ordinary-draft-20261101/old-topics.md) records every former introduction, heading, bullet and platform field/CTA disposition. Earlier merged CSS reviews and ledgers remain unchanged and are historical evidence of their frozen candidates.
 
 All seven core domains remain partial, TP and XB remain missing, and issue #471 stays open. The [fresh independent review and exact correction closure](../../evidence/ledgers/mali-ordinary-review-20261101-closure/closure.md) checked all 119 source-rule rows plus the shared currentness gate, 79 old-topic entries and eight independent computations. Four substantive condition findings and the undated-guidance description were corrected. Acceptance covers the stated older-source workpapers only; these drafts have no accountant attestation and confer no operative 2026 approval. Current-law reconciliation, final wage-tax relief, additional corporate minimum-floor computation, actual form boxes and authenticated submission/payment remain open. The merged CSS Guide remains the accepted historical 2025 source baseline with its mandatory 2026 hold unchanged.
+
+## Formation and overview follow-on checkpoint, 1 November 2026
+
+The two remaining legacy jobs now have substantive conditional research drafts. [Company formation](ml-company-formation.md) uses the original OHADA 2014 company Act, OHADA 2010 commercial Act, Mali Loi 2015-014 and official administrative guidance to distinguish entity forms, capital and payment, registration, annual approval and auditor tests. [Tax overview](ml-tax-overview.md) provides category-specific intake and payment reconciliation while linking the existing figure homes. Each has two executable cases. Neither supplies an operative 2026 or publication approval.
+
+The [fresh ledgers, complete predecessor map and preservation evidence](../../evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md) bind this checkpoint to `a4d09fbf744fbabfbc4988d08e13fd3c61fca449`. The four accepted ordinary Guides, historical CSS and every earlier receipt remain unchanged. Earlier immutable review receipts continue to describe their own candidates. All seven core domains remain applicable and partial, TP and XB remain missing at this checkpoint, and #471 stays open. Complete later operative law, Annex U, current office checklists/forms/fees and authenticated filing remain unresolved.
