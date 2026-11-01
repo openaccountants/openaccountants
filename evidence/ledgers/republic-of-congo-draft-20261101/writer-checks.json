@@ -1,0 +1,139 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "date": "2026-11-01",
+  "guide_count": 8,
+  "grouped_rule_records": 89,
+  "quote_anchor_count": 180,
+  "worked_cases": 16,
+  "old_topics": 73,
+  "old_opening_paragraphs": 3,
+  "metadata": [
+    {
+      "file": "skills/republic-of-congo/cg-company-formation.md",
+      "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085",
+      "description_words": 113,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+      "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149",
+      "description_words": 108,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-cross-border.md",
+      "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747",
+      "description_words": 105
+    },
+    {
+      "file": "skills/republic-of-congo/cg-income-tax.md",
+      "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713",
+      "description_words": 108,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-payroll-social.md",
+      "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2",
+      "description_words": 115,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-tax-overview.md",
+      "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889",
+      "description_words": 111,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+      "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e",
+      "description_words": 109
+    },
+    {
+      "file": "skills/republic-of-congo/cg-vat-gst.md",
+      "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9",
+      "description_words": 107,
+      "cta_byte_identical": true,
+      "platform_fields_identical": true
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/republic-of-congo/cg-company-formation.md",
+        "skills/republic-of-congo/cg-corporate-income-tax.md",
+        "skills/republic-of-congo/cg-cross-border.md",
+        "skills/republic-of-congo/cg-income-tax.md",
+        "skills/republic-of-congo/cg-payroll-social.md",
+        "skills/republic-of-congo/cg-tax-overview.md",
+        "skills/republic-of-congo/cg-transfer-pricing.md",
+        "skills/republic-of-congo/cg-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/republic-of-congo/cg-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-cross-border.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-tax-overview.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/republic-of-congo/cg-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/republic-of-congo/cg-company-formation.md",
+        "skills/republic-of-congo/cg-corporate-income-tax.md",
+        "skills/republic-of-congo/cg-cross-border.md",
+        "skills/republic-of-congo/cg-income-tax.md",
+        "skills/republic-of-congo/cg-payroll-social.md",
+        "skills/republic-of-congo/cg-tax-overview.md",
+        "skills/republic-of-congo/cg-transfer-pricing.md",
+        "skills/republic-of-congo/cg-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "evidence/ledgers/republic-of-congo-draft-20261101/pinned-validation.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Pinned base: 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8; comparison includes candidate working tree\nchanged-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata",
+        "--worktree"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "independent_review": "pending",
+  "currentness": "Initial2026 baseline only; all7domains partial",
+  "prior_noop_validator": "Earlier uncommitted changed-only invocation saw0files and was not counted as validation; pinned adapter above checks actual staged/working-tree candidate paths."
+}
