@@ -19,5 +19,8 @@
   "independent_review": "pending",
   "accountant_attestation": false,
   "full_coverage": false,
-  "publication": "draft PR only; parent integrates and pushes"
+  "publication": "draft PR only; parent integrates and pushes",
+  "additional_exact_quote_extracts": 68,
+  "old_topic_records": 68,
+  "guides_content_frozen_commit": "6a2537619cb73ba0203140c3a99408a064f0d94d"
 }

@@ -21,7 +21,11 @@
     "act_article": "CGI arts. 35(17), 86",
     "quote": "le revenu net imposable inférieur ou égal à 378 000 F CFA.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "378.001-1.680.000",
+      "8%"
+    ]
   },
   "I04": {
     "section": "Rates, bands and thresholds",
@@ -29,7 +33,15 @@
     "act_article": "CGI art. 86",
     "quote": "1.680.001-3.360.000",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "1.680.001-3.360.000",
+      "15%",
+      "3.360.001-5.040.000",
+      "28%",
+      "Superieur à 5.040.000",
+      "40%"
+    ]
   },
   "I05": {
     "section": "The base",
@@ -37,7 +49,10 @@
     "act_article": "CGI arts. 36, 38–39, 86",
     "quote": "les frais strictement professionnels",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "évalués à 30%."
+    ]
   },
   "I06": {
     "section": "Rates, bands and thresholds",
@@ -45,7 +60,11 @@
     "act_article": "CGI art. 81",
     "quote": "Ce taux est reduit à 20%",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Le taux de l’impôt est fixé à 30%",
+      "Ce taux est reduit à 20%"
+    ]
   },
   "I07": {
     "section": "Rates, bands and thresholds",
@@ -53,7 +72,14 @@
     "act_article": "CGI arts. 82–83",
     "quote": "a) 0,3% pour les activités agricoles ;",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "0,3% pour les activités agricoles",
+      "1,85% pour les autres activités",
+      "300 000 F CFA pour les activités agricoles",
+      "1 850 000 F CFA pour les autres activités",
+      "arrondie au millier de francs inférieur"
+    ]
   },
   "I08": {
     "section": "The base",
@@ -101,7 +127,10 @@
     "act_article": "CGI arts. 121–122",
     "quote": "soumises au régime de base ;",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "inferieur ou égal à 30. 000. 000 F CFA"
+    ]
   },
   "C02": {
     "section": "The base",
@@ -117,7 +146,11 @@
     "act_article": "CGI art. 133",
     "quote": "il est réduit à 20% pour les activités agricoles.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Le taux de l’impôt est fixé à 30%",
+      "il est réduit à 20%"
+    ]
   },
   "C04": {
     "section": "Rates, bands and thresholds",
@@ -125,7 +158,14 @@
     "act_article": "CGI art. 133 bis",
     "quote": "a)     0,3% pour les activités agricoles",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "0,3% pour les activités agricoles",
+      "1,85% pour les autres activités",
+      "300.000 F CFA pour les activités agricoles",
+      "1.850 000 F CFA pour les autres",
+      "arrondie au millier de francs inférieur"
+    ]
   },
   "C05": {
     "section": "The base",
@@ -133,7 +173,10 @@
     "act_article": "CGI art. 133 bis-1",
     "quote": "aux opérations de coassurance",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "supérieur à 3.000.000 F CFA"
+    ]
   },
   "C06": {
     "section": "The base",
@@ -149,7 +192,12 @@
     "act_article": "CGI art. 132",
     "quote": "un compte d’exploitation provisoire",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "sur une période de douze mois",
+      "au cours des six mois",
+      "au 31 décembre"
+    ]
   },
   "C08": {
     "section": "Deadlines and filing",
@@ -157,7 +205,11 @@
     "act_article": "CGI arts. 135, 142",
     "quote": "avant le 1er mai de l’année suivante.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "en quatre exemplaires",
+      "au plus tard le 30 avril"
+    ]
   },
   "C09": {
     "section": "Deadlines and filing",
@@ -165,7 +217,10 @@
     "act_article": "CGI art. 140",
     "quote": "les 15 février, 15 juin et 15 octobre.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au 1/3 de l’impôt dû l’année précédente"
+    ]
   },
   "C10": {
     "section": "Deadlines and filing",
@@ -173,7 +228,12 @@
     "act_article": "CGI art. 141",
     "quote": "les 15 mars et 15 septembre.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "égal à la moitié",
+      "les 15 mars et 15 septembre",
+      "au plus tard le 15 juin"
+    ]
   },
   "C11": {
     "section": "Rates, bands and thresholds",
@@ -269,7 +329,10 @@
     "act_article": "CGI art. 73",
     "quote": "au moins trente jours avant la date de départ",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "les deux premiers mois"
+    ]
   },
   "X03": {
     "section": "Deadlines and filing",
@@ -277,7 +340,10 @@
     "act_article": "2025 supplementary Finance Act art. 9; CGI 393",
     "quote": "au moins: 10% du chiffre",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un mois avant le départ"
+    ]
   },
   "X04": {
     "section": "Rates, bands and thresholds",
@@ -285,7 +351,10 @@
     "act_article": "2025 supplementary Finance Act arts. 9–10; CGI 393; LPF 28 bis",
     "quote": "une validité de trois (3) mois",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un (01) mois"
+    ]
   },
   "X05": {
     "section": "Deadlines and filing",
@@ -333,7 +402,11 @@
     "act_article": "2024 Finance Act art. 10 replacing CGI 257",
     "quote": "Taux général : 19%",
     "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "Taux zéro (0%)",
+      "Taux reduit de 5%"
+    ]
   },
   "V03": {
     "section": "The base",
@@ -373,7 +446,10 @@
     "act_article": "2024 Finance Act art. 10 replacing CGI 261–261 bis",
     "quote": "inférieur à 10%, aucune déduction",
     "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plus tard le 30 avril"
+    ]
   },
   "V08": {
     "section": "Deadlines and filing",
@@ -381,7 +457,10 @@
     "act_article": "2024 Finance Act art. 10 replacing CGI 265, 268–271",
     "quote": "une série continue.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un délai de dix ans"
+    ]
   },
   "V09": {
     "section": "Deadlines and filing",
@@ -389,7 +468,10 @@
     "act_article": "2025 Finance Act art. 11; 2024 Act art. 10, CGI 275 bis/bis-1/bis-2",
     "quote": "La taxe exigible est reversée chaque mois",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plutard le 15 du mois suivant"
+    ]
   },
   "V10": {
     "section": "The base",
@@ -397,7 +479,11 @@
     "act_article": "2024 Finance Act art. 10 replacing CGI 276",
     "quote": "sans limitation de délai.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "supérieurs à 100 000 000 FCFA",
+      "trois mois consécutifs"
+    ]
   },
   "V11": {
     "section": "Deadlines and filing",
@@ -405,7 +491,10 @@
     "act_article": "2024 Finance Act art. 10 replacing CGI 276",
     "quote": "copies des trois déclarations",
     "url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "en un seul exemplaire"
+    ]
   },
   "V12": {
     "section": "Cross-border points",
@@ -445,7 +534,11 @@
     "act_article": "AUSCGIE art. 311",
     "quote": "Sauf dispositions nationales contraires",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "un million (1.000.000)",
+      "cinq mille (5.000)"
+    ]
   },
   "F03": {
     "section": "Rates, bands and thresholds",
@@ -453,7 +546,10 @@
     "act_article": "AUSCGIE art. 311-1",
     "quote": "la moitié au moins de leur valeur nominale.",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "deux (2) ans"
+    ]
   },
   "F04": {
     "section": "Rates, bands and thresholds",
@@ -461,7 +557,11 @@
     "act_article": "AUSCGIE arts. 387–389",
     "quote": "d’un quart au moins de leur valeur nominale.",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "dix millions (10.000.000)",
+      "trois (3) ans"
+    ]
   },
   "F05": {
     "section": "The base",
@@ -485,7 +585,10 @@
     "act_article": "AUSCGIE arts. 137–140",
     "quote": "dans les six (6) mois de la clôture",
     "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "quarante-cinq (45) jours"
+    ]
   },
   "F08": {
     "section": "Deadlines and filing",
@@ -509,7 +612,11 @@
     "act_article": "CGI arts. 110–112",
     "quote": "qui ont au plus cinq salariés",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au plus tard le 15 de chaque mois",
+      "le 15 du mois suivant le trimestre"
+    ]
   },
   "W03": {
     "section": "Deadlines and filing",
@@ -517,7 +624,10 @@
     "act_article": "CGI arts. 113, 119",
     "quote": "un bordereau établi en deux exemplaires",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "avant le 31 janvier"
+    ]
   },
   "W04": {
     "section": "Deadlines and filing",
@@ -533,7 +643,11 @@
     "act_article": "2025 Finance Act art. 13 replacing LPF 4",
     "quote": "période de douze mois",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "se termine le 31",
+      "décembre"
+    ]
   },
   "O02": {
     "section": "Rates, bands and thresholds",
@@ -541,7 +655,11 @@
     "act_article": "2025 Finance Act art. 18 replacing LPF 243(1)",
     "quote": "une amende fiscale de 500 000 FCFA",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "dans un délai d’une semaine",
+      "1 000 000"
+    ]
   },
   "O03": {
     "section": "Rates, bands and thresholds",
@@ -549,7 +667,10 @@
     "act_article": "2025 Finance Act art. 18 replacing LPF 243(2),(7)",
     "quote": "la pénalité est de 25% des droits dus",
     "url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "50 à 100%"
+    ]
   },
   "O04": {
     "section": "Rates, bands and thresholds",
@@ -597,7 +718,11 @@
     "act_article": "CGI arts. 170–172",
     "quote": "sous déduction de 40 %",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "inférieure à 12%",
+      "au millier de franc inférieur"
+    ]
   },
   "B03": {
     "section": "Rates, bands and thresholds",
@@ -605,7 +730,12 @@
     "act_article": "CGI art. 177",
     "quote": "inférieur à 30.000 F CFA",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "15% pour les personnes physiques",
+      "30 % pour les personnes morales",
+      "à la dizaine de francs la plus voisine"
+    ]
   },
   "B04": {
     "section": "The base",
@@ -621,7 +751,11 @@
     "act_article": "CGI arts. 171, 173",
     "quote": "un exemplaire pour chaque propriété",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "avant le 1 er février",
+      "un délai de Vingt jours"
+    ]
   },
   "B06": {
     "section": "Deadlines and filing",
@@ -637,7 +771,10 @@
     "act_article": "CGI arts. 175–177 bis",
     "quote": "au plus tard le 31 Mars",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "au 1erjanvier"
+    ]
   },
   "B08": {
     "section": "The base",
@@ -645,6 +782,9 @@
     "act_article": "CGI arts. 14–16",
     "quote": "sont fixées à 40 % du revenu brut.",
     "url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "supporting_quotes": [
+      "40 % du revenu brut."
+    ]
   }
 }
