@@ -7,10 +7,10 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 ---
 
-# Burkina Faso transfer pricing v0.1
+# Burkina Faso transfer pricing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -40,10 +40,25 @@ Reconcile each controlled transaction to contracts, invoices, delivery/service e
 
 For documentation used from **14 July 2026**, use Arrêté 2026-000287/MEF/SG/DGI. Article 7 repeals the 2022 documentation order; article 8 makes the new order effective on signature. The October 2026 CGI still reproduces the 2022 order: use the separately published signed 2026 order for the current documentation contents. [2026 order arts. 7–8](https://dgi.bf/wp-content/uploads/2026/09/ARRETE-N%C2%B02026-00287_MEF_SG_DGI-PORTANT-FIXATION-DU-CONTENU-DE-LA-DOCUMENTATION-DES-PRIX-DE-TRANSFERT.pdf).
 
-Prepare two files under articles 1–3 of that order:
+Prepare both files under articles 1–3 of that order. Check off the following contents against the underlying documents.
 
-- **Master file:** ownership and locations; business and profit drivers; supply chains of the five largest products/services and any other product/service over 5% of group turnover; important service arrangements; markets; functions, assets and risks; reorganisations; intangibles and agreements; financing; consolidated accounts; unilateral APAs and relevant rulings.
-- **Local file:** local organisation, business strategy, relevant restructurings and competitors; controlled transactions by category, value, counterparty and country; material agreements; functional/comparability analysis; the most appropriate method and why selected; tested party where applicable; assumptions and any multi-year analysis; comparables, search and data sources; adjustments; arm's-length conclusion; relevant foreign rulings; annual accounts and reconciliations linking the method's financial data to them.
+**Master file, article 2:**
+
+1. **Structure:** a chart of the group's legal and ownership structure and the geographical locations of its operating entities.
+2. **Business:** important profit drivers; supply chains of the five largest goods/services ranked by turnover and any other good/service over 5% of group turnover; important intragroup service arrangements excluding R&D services, with the main service sites' capabilities and the cost-allocation and service-pricing policies; principal geographical markets for those goods/services; key functions, important risks and assets contributing to value; significant reorganisations and acquisitions/disposals of assets during the fiscal year.
+3. **Intangibles:** the group's development, ownership and exploitation strategy, including main R&D installations and R&D management locations; important intangibles/categories and their legal owners; important cost-sharing, principal research-service and licence agreements; R&D/intangible pricing policies; significant transfers of interests in intangibles during the year, identifying the entities, countries and consideration.
+4. **Financing:** how the group is financed, including important financing agreements with independent lenders; each group entity with a central financing function, its country of incorporation law and effective-management location; intragroup-financing pricing policies.
+5. **Financial and tax position:** annual consolidated group accounts for the fiscal year if otherwise prepared for financial reporting, regulatory, internal-management, tax or other purposes; a list and short descriptions of unilateral APAs and other tax-authority decisions concerning the allocation of profits between countries.
+
+[2026 order art. 2(1)–(5)](https://dgi.bf/wp-content/uploads/2026/09/ARRETE-N%C2%B02026-00287_MEF_SG_DGI-PORTANT-FIXATION-DU-CONTENU-DE-LA-DOCUMENTATION-DES-PRIX-DE-TRANSFERT.pdf#page=1).
+
+**Local file, article 3:**
+
+1. **Organisation and business:** management structure and organisation chart; the people to whom local management reports and the countries of their principal offices; the local business and strategy; restructurings or intangible transfers affecting it during the current **or preceding** year, explaining their impact; principal competitors.
+2. **Controlled transactions:** the transactions and their context; payments and receipts by category and by the payer's/recipient's tax-residence country; counterparties and the nature of each related-enterprise relationship; copies of material intercompany agreements; detailed functional/comparability analysis of the local enterprise and relevant related enterprises, including changes from earlier years; the most appropriate method and reasons for choosing it; tested-party identity where applicable and reasons for selection; important assumptions; reasons for any multi-year analysis; uncontrolled internal/external comparables and relevant independent-enterprise financial indicators, with the comparable-data search method and sources; comparability adjustments and whether they affect the tested party, the comparables or both; why the method supports an arm's-length conclusion; a summary of the financial information used to apply the method; relevant foreign tax-authority decisions linked to the described transactions to which Burkina Faso is not a party.
+3. **Financial information:** the enterprise's annual accounts for the fiscal year; information and allocation tables reconciling the method's financial data to those accounts; summary tables of the comparables' financial data **and the sources from which those data are drawn**.
+
+[2026 order art. 3(1)–(3)](https://dgi.bf/wp-content/uploads/2026/09/ARRETE-N%C2%B02026-00287_MEF_SG_DGI-PORTANT-FIXATION-DU-CONTENU-DE-LA-DOCUMENTATION-DES-PRIX-DE-TRANSFERT.pdf#page=3).
 
 Do not turn an illustrative comparable margin into a statutory safe harbour. Document the selection and adjustments that support the actual transaction. [2026 order arts. 2–3](https://dgi.bf/wp-content/uploads/2026/09/ARRETE-N%C2%B02026-00287_MEF_SG_DGI-PORTANT-FIXATION-DU-CONTENU-DE-LA-DOCUMENTATION-DES-PRIX-DE-TRANSFERT.pdf).
 
