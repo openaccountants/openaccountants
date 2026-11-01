@@ -215,7 +215,7 @@ South Africa does not have formal safe harbour rules for transfer pricing.
 | Related skill | Interaction |
 | --- | --- |
 | south-africa-corporate-tax | TP adjustments under s.31 directly affect taxable income |
-| south-africa-vat | TP adjustments may affect open market value for VAT purposes |
+| za-vat-return | TP adjustments may affect open market value for VAT purposes |
 | south-africa-bookkeeping | TP documentation builds on IFRS-compliant accounting records |
 | Thin capitalisation (IN 127) | Interacts with TP for intercompany loan pricing |
 | Secondary adjustment (s.31(3)) | Deemed loan with interest implications |
