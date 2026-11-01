@@ -30,6 +30,36 @@ URSB registers public and private companies, foreign companies and legal documen
 4. Register for VAT above UGX 300,000,000 a year (https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/).
 5. File provisional and annual income tax returns (https://ura.go.ug/en/domestic-taxes/returns/).
 
+## Two worked examples that recompute
+
+Example 1. A new private company expects taxable sales of UGX 90,000,000 in its first quarter. The quarterly test is 300,000,000 / 4 = 75,000,000, so it registers for VAT.
+
+```oa-check
+name: Formation, VAT quarterly test
+inputs:
+  threshold: 300000000
+  quarter: 90000000
+steps:
+  - test: threshold / 4
+  - excess: quarter - test
+expected:
+  test: 75000000.00
+  excess: 15000000.00
+```
+
+Example 2. A decision: what to set aside for the first provisional instalment on estimated tax of UGX 10,000,000, with nothing withheld. Instalment = 50% x 10,000,000 = UGX 5,000,000 (https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/, s.111, 2021 text).
+
+```oa-check
+name: Formation, first instalment
+inputs:
+  estimate: 10000000
+  withheld: 0
+steps:
+  - instalment: estimate * 0.5 - withheld
+expected:
+  instalment: 5000000.00
+```
+
 ## Sources
 
 | Source | URL | Read on |

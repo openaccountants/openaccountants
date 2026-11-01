@@ -41,6 +41,33 @@ Currency: Ugandan shilling (UGX). Residents are taxed on worldwide income and no
 
 Stamp duty: financial services businesses file monthly returns; 2% a month on failure; records kept five years; vehicle transfer UGX 30,000 for motorcycles, tricycles and quadricycles, and UGX 200,000 for other vehicles. Excise: new rates on cement, fuel, sugar, plastics, cooking oil and paints. All https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/.
 
+## Two worked examples that recompute
+
+Example 1. Annual resident income of UGX 5,000,000: 180,000 + 25% of 80,000 = UGX 200,000.
+
+```oa-check
+name: Overview, annual resident
+inputs:
+  income: 5000000
+steps:
+  - tax: 180000 + (income - 4920000) * 0.25
+expected:
+  tax: 200000.00
+```
+
+Example 2. A decision: does turnover of UGX 200,000,000 need VAT registration? It is 100,000,000 below the UGX 300,000,000 threshold, so not on the annual test.
+
+```oa-check
+name: Overview, VAT threshold headroom
+inputs:
+  threshold: 300000000
+  turnover: 200000000
+steps:
+  - headroom: threshold - turnover
+expected:
+  headroom: 100000000.00
+```
+
 ## Sources
 
 | Source | URL | Read on |

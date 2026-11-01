@@ -38,7 +38,7 @@ Individuals with Uganda tax to pay. Residents are taxed on worldwide income and 
 | Non-resident, monthly, 335,000 to 410,000 | 33,500 + 20% over 335,000 | 2026-27 | same |
 | Non-resident, monthly, 410,000 to 10,000,000 | 48,500 + 30% over 410,000 | 2026-27 | same |
 | Non-resident, monthly, above 10,000,000 | As above + 10% over 10,000,000 | 2026-27 | same |
-| Rental tax, individuals | 30% of chargeable income (2021 text) | 2021 text | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
+| Rental tax, individuals | 12% of gross rent over UGX 2,820,000 a year, no expenses | URA guide, FY 2022-23 | https://ura.go.ug/en/guide-on-rental-income-tax |
 | Small business, turnover to UGX 10m | Nil | 2024 text | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 |
 | Turnover UGX 10m to 30m | UGX 80,000 without records; 0.4% over 10m with records | 2024 text | same |
 | Turnover UGX 30m to 50m | UGX 200,000 without; 8,000 + 0.5% over 30m with | 2024 text | same |
@@ -113,9 +113,10 @@ expected:
 | URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
 | URA compendium of domestic tax laws, as of July 2021: ITA Cap 340, VAT Act Cap 349 (only the sections cited; old numbering) | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-01 |
 | Income Tax Act, ULII consolidated text at 2024-12-23 (read in a browser: Schedule tables and rate lines only) | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 | 2026-11-01 |
+| URA, Rental Income Tax guide FY 2022-23 | https://ura.go.ug/en/guide-on-rental-income-tax | 2026-11-01 |
 | URA, Object to Tax Assessment | https://ura.go.ug/en/domestic-taxes/objection-appeals/object-to-tax-assessment/ | 2026-11-01 |
 
-Not yet confirmed: the residence test (old file: 183 days in 12 months, permanent home, government officials; the wording was not re-read in law, so do not state it as confirmed); whether employee NSSF is deductible for PAYE (old file said no, confirm); owner-occupier mortgage relief; the old statement that PAYE is final where there is no other income beyond URA's filing exception; the provisional instalment formula in the 2024 text; the enacted text of the Income Tax (Amendment) Act 2026 (ULII blocked script access and it was not found listed).
+Not yet confirmed: the 2021 text writes the UGX 30m to 50m band as "Eight thousand shillings plus 0.5%", which does not run on from the band below (0.4% of 20m is 80,000), and the 2024 text was not re-read on this; the rental rate in the amending Act itself, and whether 2026 changed the rental threshold; the residence test (old file: 183 days in 12 months, permanent home, government officials; the wording was not re-read in law, so do not state it as confirmed); whether employee NSSF is deductible for PAYE (old file said no, confirm); owner-occupier mortgage relief; the old statement that PAYE is final where there is no other income beyond URA's filing exception; the provisional instalment formula in the 2024 text; the enacted text of the Income Tax (Amendment) Act 2026 (ULII blocked script access and it was not found listed).
 
 <!-- openaccountants-cta-block -->
 
