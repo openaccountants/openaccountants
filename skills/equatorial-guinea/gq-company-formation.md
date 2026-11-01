@@ -1,30 +1,50 @@
 ---
 name: gq-company-formation
-description: "Source-cited draft: company formation & entity choice for Equatorial Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Company formation in Equatorial Guinea for tax year 2026. Covers the entity types under OHADA, tax registration within 15 working days, the tax forms each company files, bookkeeping and audit report tests, and the items not yet confirmed such as minimum capital and local ownership rules. Use for questions such as how do I set up a company in Equatorial Guinea, what is the minimum capital for an SL or SA, do I need a local shareholder, how do I get an NIF, and how long does incorporation take. Applies to founders, foreign investors and advisers. Tax rules come from Ley 1/2024; OHADA and local content figures could not be read from an official text and are marked unverified.
 jurisdiction: GQ
-tax_year: 2025
-last_updated: 2026-07-13
+category: formation
+tax_year: 2026
+tier: 2
+last_updated: 2026-11-01
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Equatorial Guinea Company Formation & Entity Choice
+# Equatorial Guinea Company Formation and Entity Choice v0.2
 
-## Entity types, share capital and incorporation
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-- **Common entity types** — SARL (LLC), SA (public limited), SAS (simplified joint-stock), SNC (general partnership), SCS (limited partnership)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Legal framework for company formation** — Companies in Equatorial Guinea are formed under the OHADA Uniform Act on Commercial Companies and Economic Interest Groups. The most common forms are the SARL (limited liability company) and the SA (public limited company).  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_
-- **Minimum share capital — SARL** — 1,000,000 XAF  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Minimum share capital — SA** — 10,000,000 (shares of at least XAF 10,000 each) XAF  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Minimum shareholders — SARL** — 1 (sole-shareholder SARL permitted); no statutory maximum  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Registered office** — A physical registered office in Equatorial Guinea is mandatory; a postal address does not suffice  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Local ownership / director requirement** — Foreign-owned companies commonly required to have 35% of shares held by EG nationals and one-third of directors EG nationals (approx — confirm current local-content requirements by sector) (approx — confirm current local-content requirements by sector)  _(Equatorial Guinea investment / commercial regulations (https://www.healyconsultants.com/equatorial-guinea-company-registration/setup-llc/))_
-- **Capital deposit** — Share capital must be deposited in a local bank account; a bank certificate is provided to the notary  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Incorporation steps** — Notarised articles of association, capital deposit & bank certificate, registration with the Commercial Register (RCCM), tax/NIF registration, and social-security registration (approx — confirm full sequence and required licences) (approx — confirm full sequence and required licences)  _(OHADA Uniform Act on Commercial Companies; General Tax Code of Equatorial Guinea)_
-- **Incorporation timeline** — Approximately 8 to 16 weeks depending on structure and sector (approx — confirm) (approx — confirm)  _(Equatorial Guinea company registration practice (OHADA) (https://www.expanship.com/gq/blog/incorporation-requirements-in-equatorial-guinea))_
-- **Core annual compliance** — Annual financial statements (OHADA SYSCOHADA), annual CIT return, monthly VAT and payroll filings, and Commercial Register updates  _(OHADA Uniform Act on Accounting (SYSCOHADA); General Tax Code of Equatorial Guinea)_
+## Entity types, capital and incorporation
+
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Entity types taxed as companies | SA, SAS, SL, cooperatives, general and limited partnerships (art 37) | 2026 | https://boe.gob.gq/files/LEY%20TRIBUTARIA.pdf |
+| Tax registration | Within 15 working days of starting, at the local tax office (art 13) | 2026 | same |
+| Registration papers | Name, representative with power of attorney, capital, statutes, notarial deed, office, activities (art 13.3) | 2026 | same |
+| Books | SYSCOHADA; retained 10 years for VAT (arts 79, 166) | 2026 | same |
+| Audit report | Required unless under two of three limits; always for an SA (art 79) | 2026 | same |
+| Minimum capital SARL | unverified: 1,000,000 XAF, old skill from a commercial site; OHADA made it default, so national law can differ | 2026 | unverified |
+| Minimum capital SA | unverified: 10,000,000 XAF | 2026 | unverified |
+| Minimum members SARL | unverified: 1 | 2026 | unverified |
+| Local ownership | unverified: 35% held by nationals and one third of directors | 2026 | unverified |
+| Timeline | unverified: 8 to 16 weeks | 2026 | unverified |
+
+Old-skill items also unverified: physical registered office required; capital deposited in a local bank with a certificate to the notary; steps of notarised articles, deposit, RCCM entry, NIF, social security.
+
+Annual cycle: accounts, DEF, monthly VAT and payroll, register updates. See [Corporate income tax](gq-corporate-income-tax.md).
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Ley 1/2024 General Tributaria, Boletin Oficial del Estado scan, read by OCR; arts 13, 37, 79, 166 read | https://boe.gob.gq/files/LEY%20TRIBUTARIA.pdf | 2026-11-01 |
+
+The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
+
+Not yet confirmed: every row marked unverified; the OHADA Uniform Act text did not open on ohada.org or ohada.com; the investment law on boe.gob.gq was not read.
 
 <!-- openaccountants-cta-block -->
 
