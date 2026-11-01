@@ -1,0 +1,859 @@
+{
+  "candidate": "ae03c48733c558b6c8df9945a9810c5ebbe30bf8",
+  "read_on": "2026-11-01",
+  "rows": [
+    {
+      "id": "O01",
+      "source": "C",
+      "act_article": "s3(e)\u2013(f)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s3(e),(f): ratification plus entry into force and anti-conduit restriction match; no assumed treaty list.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "O02",
+      "source": "C",
+      "act_article": "s4",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s4(a)-(g): named taxes and distinction for concession payments preserved; pack makes no property/customs completion claim.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O03",
+      "source": "C",
+      "act_article": "s6(a),(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s6(a)-(c): LRD default, permitted USD books, equivalents and payment-day CBL market rate match; other translations refer to buying rate via s6(c).",
+      "guides": [
+        "lr-income-tax",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O04",
+      "source": "C",
+      "act_article": "s222(a)\u2013(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s222(a)-(d): calendar default, application/compelling need, transitional and cessation short-year rules match summary.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O05",
+      "source": "C",
+      "act_article": "s53(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s53(a): resident tax obligation, unique TIN, free issuance and withholding-agent supply all match.",
+      "guides": [
+        "lr-company-formation",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O06",
+      "source": "C",
+      "act_article": "s55(a)\u2013(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s55(a),(b): English books maintained in Liberia, listed source documents, production and seven-year retention match.",
+      "guides": [
+        "lr-transfer-pricing",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O07",
+      "source": "A",
+      "act_article": "amendeds50(b),(g),(h)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read amended s50(b),(g),(h) and unchanged 50(c),(d): electronic 11:59pm, other 5pm, receipts and no payment extension from filing extension match.",
+      "guides": [
+        "lr-income-tax",
+        "lr-corporate-income-tax",
+        "lr-payroll-social",
+        "lr-transfer-pricing",
+        "lr-cross-border",
+        "lr-vat-gst",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O08",
+      "source": "C",
+      "act_article": "s51(a)\u2013(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s51(a),(b): compounded 5%, 50% cap, net liability and separate 6/1-month failure triggers match; zero-tax regulatory flat amount is not invented.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O09",
+      "source": "C",
+      "act_article": "s52(a)\u2013(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s52(a)-(c): 5%/25% and 0.5%/50%, partial-payment reduction and same-month coordination match; example recomputed.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O10",
+      "source": "C",
+      "act_article": "ss11,14(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read ss11,14(a): CBL market rate and monthly compound interest match; no unverified fixed current rate.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O11",
+      "source": "A",
+      "act_article": "amendeds55(e)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read amended s55(e): 150% of underpayment resulting from record failure, additional civil penalties and conviction distinction match.",
+      "guides": [
+        "lr-transfer-pricing",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "O12",
+      "source": "N",
+      "act_article": "amended ss76,90\u201392",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read April2026 published ss76,90-92 including conviction language: high-level offence warning matches; no numerical penalty substituted for everyday lateness.",
+      "guides": [
+        "lr-company-formation",
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "I01",
+      "source": "C",
+      "act_article": "s200(a) table",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(a) annual table: 0-70000 nil; no second zero-band deduction.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I02",
+      "source": "C",
+      "act_article": "s200(a) table",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(a) annual table: next band through200000 is5% over70000; band cumulative amount6500 checks.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I03",
+      "source": "C",
+      "act_article": "s200(a) table",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(a) annual table: through800000,6500+15% over200000; example500000 gives51500.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I04",
+      "source": "C",
+      "act_article": "s200(a) table",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(a) annual table: over800000,96500+25%; example900000 gives121500.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I05",
+      "source": "C",
+      "act_article": "s205(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s205(a): zero bracket already reflects70000; double-deduction prohibition and example correct.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I06",
+      "source": "C",
+      "act_article": "s201(a)\u2013(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s201(a)-(c): worldwide economic benefits for residents; exclusions/deductions and nonresident-source distinction match. Corporate Guide should explicitly carry old worldwide-base statement, see F2.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I07",
+      "source": "C",
+      "act_article": "s202(a)\u2013(f)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s202(a)-(f): sickness/death conditions, donative receipt, noncash benefit excess100000 and personal-sale1600000 boundary match; no invented comprehensive exemption list.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I08",
+      "source": "C",
+      "act_article": "s800(a)\u2013(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s800(a)-(c): more than182days ending-year test, abode, government post, prior-year first arrival and literal employee-entry exclusion match; unusual assignment interpretation held.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I09",
+      "source": "C",
+      "act_article": "s900(a)\u2013(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s900(a)-(d): taxable-income filing,90% employment exception, small/petty distinctions and election for deductions/losses preserved.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "I10",
+      "source": "C",
+      "act_article": "s902",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s902: final return/payment end-third-month,March31 calendar year; extension condition separate.",
+      "guides": [
+        "lr-income-tax",
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "I11",
+      "source": "C",
+      "act_article": "s207(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s207(a) and neighboringrollovers: proceeds minus adjusted cost match; donor/estate/death and rollover tests not treated as blanket exemption.",
+      "guides": [
+        "lr-income-tax"
+      ]
+    },
+    {
+      "id": "C01",
+      "source": "C",
+      "act_article": "s200(b)(2)(C)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(b)(2)(A)-(C): ordinary25% versus2% gross minimum, sector carveouts and small-taxpayer test match.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C02",
+      "source": "C",
+      "act_article": "s200(b)(2)(C)(i)\u2013(v)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(b)(2)(C)(i)-(v): five-year carry, minimum floor, published0.5-1.5% sector determination limited to no more than a year match.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C03",
+      "source": "C",
+      "act_article": "s200(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(c): below3m4%turnover, election and below200000 petty-trader carveout match; no small-business universal25% assertion.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C04",
+      "source": "C",
+      "act_article": "s200(b)(2)(B)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read s200(b)(2)(B): more than30%life insurance business4%gross presumptive; full sector computation explicitly excluded.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C05",
+      "source": "C",
+      "act_article": "ss203(a)\u2013(c),(e),206",
+      "status": "correction_required",
+      "check": "Read203(a)-(c),(e),206(a)-(f): ordinary/records, capital, baddebt, losses and fifth-yearcarry match. Tax-interest disallowance should specify Liberian-tax interest, not generic tax interest; see F3.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C06",
+      "source": "A",
+      "act_article": "amendeds203(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected December2024 amended203(d): received interest plus20%EBITDA excluding interestincome, residentbank exception and properyear/accrual conditions match; numericalexample recomputed.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C07",
+      "source": "C",
+      "act_article": "s204(b)\u2013(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read204(a)-(c),(e),(f): heavy30/light40, fixed/intangible15years, nondepreciableland/inventory, placedinservice/disposal/pool10000 and mixeduse match.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C08",
+      "source": "C",
+      "act_article": "ss214\u2013216",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read214-216: legalpersons excepttrust/partnership accrual; reliable liability/economicperformance, entitlement and writtenpermission for methodchange match.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C09",
+      "source": "A",
+      "act_article": "amended ss602,702,741",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read amended602/702/741: renewable25/rice15/mining30/petroleum30 compared2%gross, credit and2025minimum effect match; no conceded sectorbase exemption claimed.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C10",
+      "source": "C",
+      "act_article": "s904(a),(d),(e)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read904(a),(d),(e): ordinary2%gross advances, TINconditionedresidentWHTcredit,15days quarter and no prior-minimum-credit againstadvance match.",
+      "guides": [
+        "lr-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "C11",
+      "source": "C",
+      "act_article": "s801(a)\u2013(e)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read801(a)-(f): incorporation plusmanagement/operations, localactivity plusresidentownership, partnership/trust alternatives, vessel/NDE exceptions and PE attribution match.",
+      "guides": [
+        "lr-corporate-income-tax",
+        "lr-company-formation"
+      ]
+    },
+    {
+      "id": "W01",
+      "source": "C",
+      "act_article": "s905(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read905(a),(b): resident nonexempt15% ordinary propertyincome WHT, rent separate; project rules separately listed.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W02",
+      "source": "C",
+      "act_article": "s905(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read905(d):10%rent and expected twelve-month70000 threshold match.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W03",
+      "source": "C",
+      "act_article": "s905(f)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read905(f)(1)-(3): nonemployment services10%,100000single/1maggregatepayer-year, includibleincome and goods/mixed exclusion match; case200000 qualifies.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W04",
+      "source": "C",
+      "act_article": "s905(e),(j)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read905(e),(j): annualstandarddeduction threshold, residentrates, ten-day remittance and payeedetails match.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "W05",
+      "source": "C",
+      "act_article": "s806(b),(d),(h)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read806(a),(d),(h): ordinarynonresidentrent15%,ten-dayremittance andstatementdetails match; no universal nonresidentrate asserted.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W06",
+      "source": "N",
+      "act_article": "amended ss805(a)(6),806(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected April2026 amended805(a)(6),806(b): software-used-in-Liberia source and15%software-saleWHT match, subjectexempt/projectqualification.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W07",
+      "source": "B",
+      "act_article": "amendeds806(e)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read2024Ch8/10 amendment806(e):20%ordinarynonresidentservices inclboard/management/commission, noteverytypeincome; case recomputed.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W08",
+      "source": "C",
+      "act_article": "ss806(f),905(h)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read806(f),905(h): namedproducer/contractholderpayers and5interest/5dividend/6services specialrates match; noallinvestorbenefit assumed.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W09",
+      "source": "A",
+      "act_article": "amendeds806(g)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected amended806(g) withdefinitions/exceptions:15%acquisition, nonresident-nonresident provision, lien/management exposure andCGapproval match.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W10",
+      "source": "C",
+      "act_article": "s806(i)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read806(i), then December2024 physical11 confirms repeal placed under905(l): ordinary-election currentperiod+nextfour andcredit/refund match; no mistaken repeal of806(i).",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W11",
+      "source": "N",
+      "act_article": "amendeds803(a),(b)(6)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected April2026 amended803(a),(b)(6):30days generaltaxyear and30aggregateservicedays twelve-month commencing/endingyear match; establishmentconditions andtransitionhold stated.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W12",
+      "source": "C",
+      "act_article": "s805(a)\u2013(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read805(a)-(c): localactivities/employment/property/ownership/IP/interest/dividend fees andvessel-use exclusion match; softwareamendment separately incorporated.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "W13",
+      "source": "C",
+      "act_article": "s213(a)\u2013(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read213(a),(b): foreignincome/in-lieutax paid/accrued, averageLiberianratecap andcountryseparation match; assumption20%notstatedaslaw.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "S01",
+      "source": "S",
+      "act_article": "s89.8(a)\u2013(e),89.15",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read89.8(a)-(g),89.15: oneemployee scheme andstatutoryexclusions match; foreignforces/internationalstaff recruitment details not converted to nationalityexemption.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S02",
+      "source": "S",
+      "act_article": "s89.16(a),(b)\u2013(f)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read89.16(a)-(f):4employee4employer pension+2employerinjury; categories and65month-end restriction match; both examples recomputed.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S03",
+      "source": "G",
+      "act_article": "reg2 Earnings",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read2023reg2 Earnings: paymentsservicesinclsalary/wages/bonus minus exgratia andspecialexpense travelallowance match; notallcash treatedasbase.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S04",
+      "source": "S",
+      "act_article": "s89.16(h)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read89.16(g),(h): ordinarymonth-endcontributiondate andpartmonth/multiemployer regulationqualifier match; separate taxWHTten-daydate notborrowed.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S05",
+      "source": "G",
+      "act_article": "regs17(1)\u2013(3),18(A)",
+      "status": "correction_required",
+      "check": "Read2023regs17(1)-(4),18(A)(1)-(3): paymentmethod/form/receipt andrecordmatching correct. Following-month-end expressly governs recording details, not a separately evidenced transmission deadline; see F1.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S06",
+      "source": "S",
+      "act_article": "s89.18",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read89.18:4%unpaid permonth/part, recoverabledebt andbenefitshortfall recovery match; no criminal default assumption.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S07",
+      "source": "S",
+      "act_article": "s89.16(m)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read89.16(m) includingwrittenfalse-declarationexception and2023reg16(1),(2): employer-share protection/trust correct; retroactive-employee conflict heldratherthanresolved withoutlaw.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S08",
+      "source": "G",
+      "act_article": "reg4(1),(3),(6)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readreg4(1)-(6): hiringoneormore,15daysfromlegalentity,officeform,attachments,code/certificate match; no guaranteedapproval.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "S09",
+      "source": "G",
+      "act_article": "reg6",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readreg6(1)-(3):30calendardays suspension/insuredcessation,continuedcontribution andDGwaiver match.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "F01",
+      "source": "L",
+      "act_article": "Business Tax Kinds, registration",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadcachedandliveLRAregistrationparagraphs: beforebusiness,12monthvalidity,annualrenewal andsectorpreauthorization match.",
+      "guides": [
+        "lr-company-formation"
+      ]
+    },
+    {
+      "id": "F02",
+      "source": "L",
+      "act_article": "entity document list",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadcachedandliveLRAentitydocumentlists: LLCcertificate,corporateincorporation/IDs,partnershipagreement,soleIDphoto,foreignauthoritydocuments match; discrepancywithNICnotconcealed.",
+      "guides": [
+        "lr-company-formation"
+      ]
+    },
+    {
+      "id": "F03",
+      "source": "I",
+      "act_article": "Starting a Business, application",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadcachedandliveNICapplicationparagraphs:RF001,A/B,E/F/Qasapplicable,physicalLBRsubmission,TIN/BPScoordination,bankwindow/receipt/certificate match; liveportalboxes notpretendedverified.",
+      "guides": [
+        "lr-company-formation"
+      ]
+    },
+    {
+      "id": "F04",
+      "source": "I",
+      "act_article": "Starting a Business, name reservation",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadcachedandliveNICnameparagraph:120days matches; approximateUSD15notstatedstatutoryfee; old6month/700/900quotes withheld.",
+      "guides": [
+        "lr-company-formation"
+      ]
+    },
+    {
+      "id": "T01",
+      "source": "C",
+      "act_article": "ss208,211",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read208(a),(b),211: practicalcontrol andrelatives/partners conditions,50%aggregation,PEownerandarm'slengthallocation match; domesticdealingsincluded.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T02",
+      "source": "T",
+      "act_article": "regs3.5,4.1",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readregs3.5,4.1withriskcontrolandcapacity: transactionclasses,FAR/contracts/markets/strategy andmaterialadjustments match.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T03",
+      "source": "T",
+      "act_article": "reg4.2(a)\u2013(g)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readreg4.2(a)-(h): mostappropriatemethodfiveordinarychoices,authorityforalternative,writtenproofandpermission match; noautomaticmargin/hierarchy invented.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T04",
+      "source": "T",
+      "act_article": "reg5.1(b)\u2013(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readandvisuallyinspected5.1(b)-(d): literal25%greater versus25%of mismatchreal,medianoutside-range adjustreal; Guideholdsinterpretation andcaseassumesestablishedapplicablerange.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T05",
+      "source": "T",
+      "act_article": "regs5.2,5.3",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read5.2,5.3(a)-(e): samecounterpartylinkedaggregation,actualnonduplicatebeneficialservices,shareholder/incidentalexclusions,benefit-basedallocationandliteraluncontrolledwording match.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T06",
+      "source": "T",
+      "act_article": "reg6.1(a)\u2013(d)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read6.1(a)-(d): related-income-returnfilers annualTPreturn,contemporaneousinformationbeforeduedate,simplifiedsmallpackagewithoutsubstantivepricingwaiver match.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T07",
+      "source": "T",
+      "act_article": "reg6.1(e)(i)\u2013(xxxv)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read6.1(e)(i)-(xxxv): publishednoticeCGdiscretion,master/localcategories,financialtieout/FAR/method/comparables/APAs match; Guidehigh-levelsummarynotcompleteformclaim.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T08",
+      "source": "A",
+      "act_article": "amendeds211 adjustment procedure",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readandvisuallyinspected2024amended211adjustmentprocedure: debttiequity/source/type/expense allocation powers match.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T09",
+      "source": "P",
+      "act_article": "PracticeNote10.1,11",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadPracticeNote10.1and11allparagraphs: smallaccounts/categoryamounts/reasons/contracts package andadditionalannualreturn match; currentformfields held.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T10",
+      "source": "T",
+      "act_article": "reg6.2(c)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read6.2(c)alllimbs: treatycountryadjustment,sameprofitsLiberia,CGarm'slengthacceptance andrequestconditions match; notautomaticforeignassessmentrelief.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "T11",
+      "source": "A",
+      "act_article": "amendeds55(i)(2)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read2024amended55(i)(2): directsCbCRregulations; nooperational750m/deadlineinferred.",
+      "guides": [
+        "lr-transfer-pricing"
+      ]
+    },
+    {
+      "id": "V01",
+      "source": "B",
+      "act_article": "amended ss1000(b)(3),1021(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read2024Ch8/10Act806(e),1000(b)(3),1021(b):12%goods/servicesbaseline andtelecomexception match; no current13%confusion.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V02",
+      "source": "N",
+      "act_article": "amended ss1000(b)(3),1021(b)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadandvisuallyinspectedApril2026amended1000/1021:13%goods/services,zeroexportgoods plusadditional5%telecom,conditional18%calculation matches.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V03",
+      "source": "V",
+      "act_article": "amended VAT ss1003,1066(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadandvisuallyinspectedVATamendment1003/1066(a),cover/preamble:15%,18monthsor1July2026whicheversooner,subject1066(b),separateeffectiveclause match; coreVATlaw/exceptiondeferralunresolved.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V04",
+      "source": "Q",
+      "act_article": "29September2026 announcement",
+      "status": "checked_with_declared_scope_limits",
+      "check": "ReadcachedandliveLRA29September2026announcement:Jan1,2027implementationisadministrativeannouncement; Guidedoesnotpretendthisaloneamendscommencement.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V05",
+      "source": "C",
+      "act_article": "ss1000(a),(c),1001,1002,1021(a),1022",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read1000(a),(c),1001,1002,1021(a),1022: manufacturer/import/listedservices scope matches,notuniversalretailVAT.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V06",
+      "source": "C",
+      "act_article": "ss1006(a),1026(a)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read1006/1026actualprovisionsnotstaleTOC:3mactual/expected12month,21dayapplication,aggregation andvoluntarymanufactureconditions match; currenttransitionthresholdheld.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V07",
+      "source": "C",
+      "act_article": "ss1004,1025",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read1004/1025:considerationincdutiesnotGST,qualifyingdiscounts,relatedbelowmarket/noconsiderationandcustomsadditions match; can-use language preserveszerootherwise.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V08",
+      "source": "C",
+      "act_article": "ss1008,1029,1045",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Readactual1008,1029(notstaleTOC1028),1045plus1000(e)/1021(e):monthly21daysnilreturns,paymentdates/importarrival match withtransitionhold.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "V09",
+      "source": "C",
+      "act_article": "s1000(c)(2)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read1000(c)(2):registeredmanufacturerused-to-produce exception matches; nofullVATcreditchainasserted.",
+      "guides": [
+        "lr-vat-gst"
+      ]
+    },
+    {
+      "id": "O13",
+      "source": "N",
+      "act_article": "December2025Act preliminarySectionThree and Part3; cover",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read cover, preliminary Section Three and Part3: approved24March2026, printed1April2026 and handbill effectiveness match; no retroactive start assumed.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    },
+    {
+      "id": "O14",
+      "source": "N",
+      "act_article": "amendeds74(d), physicalpage7",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected physical7 amended74(d): ordinary lookback duration really absent, while7/10-year exceptions remain; legal-resolution hold is correct.",
+      "guides": [
+        "lr-tax-overview"
+      ]
+    },
+    {
+      "id": "S10",
+      "source": "S",
+      "act_article": "s89.8(e), s89.16(f)",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read and visually inspected89.8(e),89.16(f):48born1980+ and51before1980entrylimits distinctfrom65contributionend match.",
+      "guides": [
+        "lr-payroll-social"
+      ]
+    },
+    {
+      "id": "W14",
+      "source": "C",
+      "act_article": "s803(a),2020text",
+      "status": "checked_with_declared_scope_limits",
+      "check": "Read2020 803(a): no less than90days baseline; amended30days frompublication, straddlingtreatment explicitlyheld.",
+      "guides": [
+        "lr-cross-border"
+      ]
+    }
+  ]
+}

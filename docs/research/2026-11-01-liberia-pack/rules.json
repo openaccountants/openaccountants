@@ -1,0 +1,786 @@
+{
+  "read_date": "2026-11-01",
+  "sources": {
+    "C": [
+      "Revenue Code 2020, selected general, income, nonresident, filing and GST provisions",
+      "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+      "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.txt"
+    ],
+    "A": [
+      "December 2024 general amendment, approved17December/printed20December2024, substantive pages1\u20139",
+      "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.txt"
+    ],
+    "B": [
+      "2024 Chapters8/10 amendment, substantive pages1\u20132 and cover",
+      "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.txt"
+    ],
+    "N": [
+      "December2025 amendment, approved24March/printed1April2026, cover/preliminary/amended63,74,76,79,90\u201392,803,805,806,1000,1021; excise schedule not used",
+      "https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf",
+      "LRC-Amendment-December-2025.txt"
+    ],
+    "V": [
+      "VAT amendment, cover and amended1003/1066(a), substantive pages1\u20132",
+      "https://www.lra.gov.lr/wp-content/uploads/2025/02/ANACTT1.pdf",
+      "ANACTT1.txt"
+    ],
+    "T": [
+      "Transfer Pricing Regulations2016, regs3\u20136 read including surrounding method/documentation clauses",
+      "https://www.lra.gov.lr/wp-content/uploads/2022/01/Adminsitrative-Regulation-on-transfer-pricing-2016.pdf",
+      "Adminsitrative-Regulation-on-transfer-pricing-2016.txt"
+    ],
+    "P": [
+      "Practice Note1\u20132017, paras1\u20133,9\u201311,13 read; other guidance not relied upon",
+      "https://www.lra.gov.lr/wp-content/uploads/2022/01/Transfer_Pricing_Practice_Note.pdf",
+      "Transfer_Pricing_Practice_Note.txt"
+    ],
+    "S": [
+      "NASSCORP Act2017, ss89.8\u201389.18, employment categories and contributions read",
+      "https://www.nasscorp.org.lr/wp-content/uploads/2024/05/NASSCORP-Act-revised-2017.pdf",
+      "nasscorp-act-2017.txt"
+    ],
+    "G": [
+      "NASSCORP General Regulations2023, regs1\u20134,13\u201318,21 andSchedulesI\u2013III read",
+      "https://www.nasscorp.org.lr/wp-content/uploads/2024/06/GenReg-2023.pdf",
+      "nasscorp-reg-2023.txt"
+    ],
+    "L": [
+      "LRA Business Tax Kinds, registration, entity documents, annual renewal and payment instructions read",
+      "https://www.lra.gov.lr/domestic-tax-profile/businesstaxkinds/",
+      "business-tax.html"
+    ],
+    "I": [
+      "National Investment Commission, Starting a Business, application and name reservation paragraphs read",
+      "https://www.nic.gov.lr/pages/starting-a-business/",
+      "nic-start.html"
+    ],
+    "Q": [
+      "LRA29September2026 announcement, VAT implementation sentence read",
+      "https://www.lra.gov.lr/lra-commits-to-deepening-partnership-with-civil-society-on-revenue-mobilization/",
+      "vat-announcement-20260929.html"
+    ],
+    "F": [
+      "LRA Forms and Schedules, named return/schedule links read; not a completed portal filing",
+      "https://www.lra.gov.lr/forms-and-schedules/",
+      "forms.html"
+    ]
+  },
+  "rules": {
+    "O01": {
+      "source": "C",
+      "act_article": "s3(e)\u2013(f)",
+      "quote": "the international agreement takes priority",
+      "rule": "A ratified international agreement in force prevails to the extent of inconsistency. Treaty privileges are denied to a treaty-state resident used or established by a nonresident to obtain them; treaty relief is not automatic.",
+      "read_on": "2026-11-01"
+    },
+    "O02": {
+      "source": "C",
+      "act_article": "s4",
+      "quote": "The Real Property Tax",
+      "rule": "The Code separately lists income tax, GST, excise, customs, real-property tax and government fees. This pack does not compute every listed tax.",
+      "read_on": "2026-11-01"
+    },
+    "O03": {
+      "source": "C",
+      "act_article": "s6(a),(c)",
+      "quote": "Dollar amounts stated in this Code are in Liberian dollars",
+      "rule": "Statutory dollar amounts are LRD unless expressly denominated otherwise. Books can be in LRD or USD, but USD books must show LRD taxable-income and tax equivalents. USD payment translates LRD due at the CBL market rate on payment day; other foreign-exchange translations follow s 6(c).",
+      "read_on": "2026-11-01"
+    },
+    "O04": {
+      "source": "C",
+      "act_article": "s222(a)\u2013(d)",
+      "quote": "the calendar year",
+      "rule": "The default tax year is the calendar year. A legal person other than a trust or estate needs written permission for a different twelve-month year on compelling need. Changes produce a transitional year; cessation closes the tax books at the end of the second month after cessation and produces a short year.",
+      "read_on": "2026-11-01"
+    },
+    "O05": {
+      "source": "C",
+      "act_article": "s53(a)",
+      "quote": "No taxpayer is to be charged a fee for obtaining a TIN",
+      "rule": "A resident with a tax obligation must obtain one TIN, must not obtain multiple TINs, and must give it to the withholding agent. Obtaining the TIN itself is free.",
+      "read_on": "2026-11-01"
+    },
+    "O06": {
+      "source": "C",
+      "act_article": "s55(a)\u2013(b)",
+      "quote": "retained for 7 years after the end of the tax period",
+      "rule": "Keep adequate English-language books and supporting invoices, bank and customs records in Liberia; produce them on request. Retain them for seven years after the relevant period ends.",
+      "read_on": "2026-11-01"
+    },
+    "O07": {
+      "source": "A",
+      "act_article": "amendeds50(b),(g),(h)",
+      "quote": "11.59 pm in case of electronic",
+      "rule": "The filing/payment cutoff is 11:59 pm using electronic channels and 5 pm otherwise. Keep the submission confirmation email and attached electronic form showing submission date, and successful electronic-payment notification. A filing extension under s 50(c) does not extend payment.",
+      "read_on": "2026-11-01"
+    },
+    "O08": {
+      "source": "C",
+      "act_article": "s51(a)\u2013(b)",
+      "quote": "50 percent of the amount of tax shown",
+      "rule": "Late filing starts at 5% for a delay not exceeding one month; subsequent months or part-months add 5% to tax plus preceding filing penalties, capped 50%. Use unpaid net liability after timely payments/withholding. Separate failure-to-file liability arises after six months for income returns or one month for other returns; do not confuse this with the ordinary monthly penalty.",
+      "read_on": "2026-11-01"
+    },
+    "O09": {
+      "source": "C",
+      "act_article": "s52(a)\u2013(c)",
+      "quote": "both penalties are imposed",
+      "rule": "Late payment of tax shown starts 5% and compounds monthly/part-monthly on tax plus that penalty, cap 25%; failure to pay correct liability also has 0.5% monthly/part-monthly, cap 50%. Partial payments reduce the subsequent balance. Where s 51(a) and s 52(a) overlap, reduce the filing penalty by the payment penalty for that same month; s 52(b) has no such reduction.",
+      "read_on": "2026-11-01"
+    },
+    "O10": {
+      "source": "C",
+      "act_article": "ss11,14(a)",
+      "quote": "interest, compounded monthly",
+      "rule": "Unpaid tax also bears monthly-compounded interest using the CBL market rate under s 11. No fixed 2026 interest percentage is supplied here.",
+      "read_on": "2026-11-01"
+    },
+    "O11": {
+      "source": "A",
+      "act_article": "amendeds55(e)",
+      "quote": "150 percent of any underpayment of tax",
+      "rule": "Inadequate recordkeeping attracts a fine of 150% of resulting tax underpayment, in addition to applicable filing/payment penalties. This is not 150% of transaction value. Conviction conditions for repeated/substantial failure are in the same paragraph.",
+      "read_on": "2026-11-01"
+    },
+    "O12": {
+      "source": "N",
+      "act_article": "amended ss76,90\u201392",
+      "quote": "10 percent of the tax understated",
+      "rule": "The 2026 amendment adds offences for facilitating tax evasion, including advisers/accountants, and changes evasion/knowing noncompliance penalties. These require legal review; routine late filing is not itself a conviction.",
+      "read_on": "2026-11-01"
+    },
+    "I01": {
+      "source": "C",
+      "act_article": "s200(a) table",
+      "quote": "0 to 70,000",
+      "rule": "Resident annual taxable income through LRD 70,000: nil.",
+      "read_on": "2026-11-01"
+    },
+    "I02": {
+      "source": "C",
+      "act_article": "s200(a) table",
+      "quote": "5% of the excess over 70,000",
+      "rule": "Resident annual taxable income over LRD 70,000 through 200,000:5% of excess over 70,000.",
+      "read_on": "2026-11-01"
+    },
+    "I03": {
+      "source": "C",
+      "act_article": "s200(a) table",
+      "quote": "6,500 + 15% of the excess over 200,000",
+      "rule": "Resident annual taxable income over LRD 200,000 through 800,000:6,500+15% of excess over 200,000.",
+      "read_on": "2026-11-01"
+    },
+    "I04": {
+      "source": "C",
+      "act_article": "s200(a) table",
+      "quote": "96,500 + 25% of the excess over 800,000",
+      "rule": "Resident annual taxable income above LRD 800,000:96,500+25% of excess over 800,000.",
+      "read_on": "2026-11-01"
+    },
+    "I05": {
+      "source": "C",
+      "act_article": "s205(a)",
+      "quote": "No additional amount shall be deducted as a standard deduction",
+      "rule": "The LRD 70,000 standard deduction is already reflected in the zero band. Do not deduct it again before using the table.",
+      "read_on": "2026-11-01"
+    },
+    "I06": {
+      "source": "C",
+      "act_article": "s201(a)\u2013(c)",
+      "quote": "regardless of source",
+      "rule": "Resident gross income includes worldwide economic benefits, including employment cash/noncash benefits, business receipts, nonexempt investment income, pensions and gains on investment/business property. Deduct only statutory exclusions, deductions and allowances.",
+      "read_on": "2026-11-01"
+    },
+    "I07": {
+      "source": "C",
+      "act_article": "s202(a)\u2013(f)",
+      "quote": "Gifts and Transfers by Death",
+      "rule": "Statutory exclusions include qualifying sickness/disability/death receipts and gifts/transfers by death. Noncash employee benefits are valued at fair market value with only aggregate excess over LRD 100,000 included; personal-use property gain exclusion ends when disposal proceeds reach LRD 1,600,000. Read each exception before treating a receipt as exempt.",
+      "read_on": "2026-11-01"
+    },
+    "I08": {
+      "source": "C",
+      "act_article": "s800(a)\u2013(c)",
+      "quote": "more than 182 days in a 12-month period",
+      "rule": "Residence arises from normal abode plus presence at any time, more than 182 days in a twelve-month period ending in the tax year, or government posting abroad. Prior-year nonresidents are excluded for the period before first arrival. Section 800(c) has express non-presence exclusions, including its wording for entry to perform employee services, transit, medical treatment/full-time study and diplomatic presence; do not use a bare 183-day test for an assignee.",
+      "read_on": "2026-11-01"
+    },
+    "I09": {
+      "source": "C",
+      "act_article": "s900(a)\u2013(d)",
+      "quote": "90 percent or more of gross income",
+      "rule": "A resident with taxable income generally files; the exception includes 90% or more gross income from employment subject to withholding and s 200(c) taxpayers. Eligible persons can elect to file to claim losses, deductions or credits. Small/petty-trader requirements differ.",
+      "read_on": "2026-11-01"
+    },
+    "I10": {
+      "source": "C",
+      "act_article": "s902",
+      "quote": "last day of the third month",
+      "rule": "Income return and final payment are due by the last day of the third month after the tax year, March 31 for a calendar year.",
+      "read_on": "2026-11-01"
+    },
+    "I11": {
+      "source": "C",
+      "act_article": "s207(a)",
+      "quote": "subtracting the transferor\u2019s adjusted tax cost",
+      "rule": "Taxable disposal gain/loss starts with proceeds less adjusted tax cost. Gifts, death transfers, personal-use exclusions, rollovers and investment-loss restrictions require their own tests; there is no separate universal flat capital-gains rate in this Guide.",
+      "read_on": "2026-11-01"
+    },
+    "C01": {
+      "source": "C",
+      "act_article": "s200(b)(2)(C)",
+      "quote": "a regular tax of 25% or a minimum tax of 2%",
+      "rule": "For ordinary resident legal persons outside the statutory special regimes, compare 25% taxable income with 2% gross income; pay the greater. Check the small-taxpayer regime first.",
+      "read_on": "2026-11-01"
+    },
+    "C02": {
+      "source": "C",
+      "act_article": "s200(b)(2)(C)(i)\u2013(v)",
+      "quote": "fifth succeeding tax year",
+      "rule": "Excess minimum tax over regular tax carries forward for at most the next five tax years; credit cannot reduce later regular tax below that year\u2019s minimum. A duly published sector determination can temporarily substitute a 0.5%\u20131.5% minimum rate; none is assumed here.",
+      "read_on": "2026-11-01"
+    },
+    "C03": {
+      "source": "C",
+      "act_article": "s200(c)",
+      "quote": "turnover of less than $3,000,000",
+      "rule": "A business natural/legal person below LRD 3 m annual turnover falls in 4% presumptive tax unless electing ordinary taxation; petty-trader rules apply to natural persons below LRD 200,000. Do not apply 25% automatically to every registered business.",
+      "read_on": "2026-11-01"
+    },
+    "C04": {
+      "source": "C",
+      "act_article": "s200(b)(2)(B)",
+      "quote": "more than 30 percent of their business from life insurance",
+      "rule": "A legal person deriving more than 30% of business from life insurance has 4% gross presumptive income tax instead of ordinary income tax; full insurance computations are outside this Guide.",
+      "read_on": "2026-11-01"
+    },
+    "C05": {
+      "source": "C",
+      "act_article": "ss203(a)\u2013(c),(e),206",
+      "quote": "ordinary expenses of producing income",
+      "rule": "Deduct ordinary income-production expenses with adequate records. Capital expenditure follows depreciation; personal and excluded-income costs, Liberian or foreign income tax, interest relating to any Liberian tax, fines and bribes are disallowed. Business bad debts need prior inclusion and charge-off; investment losses only offset investment gains with carryforward; ordinary business losses carry no later than the fifth succeeding year.",
+      "read_on": "2026-11-01",
+      "additional_exact_quote": "interest relating to any Liberian tax"
+    },
+    "C06": {
+      "source": "A",
+      "act_article": "amendeds203(d)",
+      "quote": "20 percent of the taxpayer",
+      "rule": "Interest to persons other than resident banks is capped at interest income plus 20% of EBITDA excluding interest income, under amended s203(d), replacing the old 50%-of-income formula. Deduct only interest attributable to the year and properly paid/accrued.",
+      "read_on": "2026-11-01"
+    },
+    "C07": {
+      "source": "C",
+      "act_article": "s204(b)\u2013(c)",
+      "quote": "30 percent per year for the heavy",
+      "rule": "Pool heavy movable machinery at 30% and light machinery at 40%; fixed and intangible property use fifteen-year straight-line. Land/inventory are not depreciable. Pool additions enter when placed in service, disposals reduce the pool; excess proceeds create income and a residual below LRD 10,000 can be deducted. Mixed use is apportioned.",
+      "read_on": "2026-11-01"
+    },
+    "C08": {
+      "source": "C",
+      "act_article": "ss214\u2013216",
+      "quote": "must account for income on an accrual basis",
+      "rule": "A legal person other than a trust/partnership uses accrual accounting. Recognition requires entitlement for income and liability, reliable measurement and economic performance for expense. Method changes generally require prior written permission.",
+      "read_on": "2026-11-01"
+    },
+    "C09": {
+      "source": "A",
+      "act_article": "amended ss602,702,741",
+      "quote": "rice production projects shall be 15 percent",
+      "rule": "Renewable-resource extraction generally uses 25%, rice production 15%, mining 30%, petroleum 30%, each compared with 2% gross minimum under the amended sections, with minimum credits and 2025 effective rules. Concession agreements and sector bases are not resolved by these headline rates.",
+      "read_on": "2026-11-01"
+    },
+    "C10": {
+      "source": "C",
+      "act_article": "s904(a),(d),(e)",
+      "quote": "2 percent of the gross income for the quarter",
+      "rule": "Ordinary income-return filers make 2% gross-income quarterly advances, with qualifying resident withholding credits if a TIN was supplied. Due 15 days after quarter end, with the approved statement. Prior minimum-tax carryforward cannot reduce these advances; final annual comparison is separate.",
+      "read_on": "2026-11-01"
+    },
+    "C11": {
+      "source": "C",
+      "act_article": "s801(a)\u2013(e)",
+      "quote": "Has its management and control in Liberia",
+      "rule": "Corporate residence is not incorporation alone: Liberian formation plus management/control or majority operations qualifies; some local business plus majority resident ownership, and resident partners/trustees, are other limbs. Vessel and nonresident-domestic-entity exceptions apply. Maintaining a bank account/agent/meetings alone is insufficient; a nonresident PE is resident only for attributable income.",
+      "read_on": "2026-11-01"
+    },
+    "W01": {
+      "source": "C",
+      "act_article": "s905(b)",
+      "quote": "15 percent of the amount of the payment",
+      "rule": "Resident nonexempt interest, dividends, royalties, licence fees and similar property-right payments ordinarily bear 15% withholding; rent has its separate rule.",
+      "read_on": "2026-11-01"
+    },
+    "W02": {
+      "source": "C",
+      "act_article": "s905(d)",
+      "quote": "10 percent of the amount of each payment",
+      "rule": "Resident rent withholding is 10% if twelve-month expected rent reaches LRD 70,000.",
+      "read_on": "2026-11-01"
+    },
+    "W03": {
+      "source": "C",
+      "act_article": "s905(f)",
+      "quote": "the payment is $100,000 or more",
+      "rule": "Resident nonemployment services bear 10% withholding if a payment reaches LRD 100,000 or expected aggregate payee payments reach LRD 1 m in payer\u2019s year. Goods are excluded; split mixed goods/services appropriately.",
+      "read_on": "2026-11-01"
+    },
+    "W04": {
+      "source": "C",
+      "act_article": "s905(e),(j)",
+      "quote": "Within 10 days after the last day of a month",
+      "rule": "Resident wages above the standard-deduction amount require withholding using resident rates. Remit monthly within 10 days after month end with payee identity, payment type/amount and tax withheld.",
+      "read_on": "2026-11-01"
+    },
+    "W05": {
+      "source": "C",
+      "act_article": "s806(b),(d),(h)",
+      "quote": "Within 10 days after the last day of a month",
+      "rule": "Ordinary nonresident rent is 15%; remit nonresident withholding within 10 days after month end with payee name/address, payment type/amount and withholding. The 2026 software-inclusive 15% rule is stated separately.",
+      "read_on": "2026-11-01"
+    },
+    "W06": {
+      "source": "N",
+      "act_article": "amended ss805(a)(6),806(b)",
+      "quote": "or from the sale of software",
+      "rule": "From the 2026 amendment, Liberia-used software is expressly within source and the ordinary 15% nonresident withholding rule for interest/dividends/royalties/licence/property-right income includes software sales. Exempt income and special project rules still need testing.",
+      "read_on": "2026-11-01"
+    },
+    "W07": {
+      "source": "B",
+      "act_article": "amendeds806(e)",
+      "quote": "at the rate of 20",
+      "rule": "Ordinary payments to nonresidents for services that would be gross income for a resident bear 20% withholding. This is a gross payment rule, not a universal 20% tax on every type of nonresident individual income.",
+      "read_on": "2026-11-01"
+    },
+    "W08": {
+      "source": "C",
+      "act_article": "ss806(f),905(h)",
+      "quote": "Payments for services, 6 percent",
+      "rule": "Qualifying mining/petroleum/renewable-resource project payments have special 5% interest,5% dividends and 6% services withholding instead of ordinary rates; test payer/project status rather than assuming every investor qualifies.",
+      "read_on": "2026-11-01"
+    },
+    "W09": {
+      "source": "A",
+      "act_article": "amendeds806(g)",
+      "quote": "no acquisition of asset shall be completed",
+      "rule": "Liberian investment-asset acquisition payments to nonresidents bear 15% withholding, including nonresident-to-nonresident transactions; default creates an asset lien payable by asset management and CG approval is needed before completion. Exceptions for s 801(b)/(c) ownership interests remain.",
+      "read_on": "2026-11-01"
+    },
+    "W10": {
+      "source": "C",
+      "act_article": "s806(i)",
+      "quote": "next four succeeding tax periods",
+      "rule": "A nonresident can elect to file under ordinary income rules, crediting withholding and potentially seeking a refund. The election covers that period and the next four periods; compare gross withholding with verified net-basis liability, not just a single payment.",
+      "read_on": "2026-11-01"
+    },
+    "W11": {
+      "source": "N",
+      "act_article": "amendeds803(a),(b)(6)",
+      "quote": "thirty (30) days or more",
+      "rule": "From 1 April 2026, the general PE threshold is no less than 30 days of business activity in the tax year, including through an agent. Furnishing services/consultancy through personnel has a separate aggregate 30 days in a twelve-month period commencing or ending in the tax year. Apply the establishment/activity conditions and any applicable treaty, not days alone.",
+      "read_on": "2026-11-01"
+    },
+    "W12": {
+      "source": "C",
+      "act_article": "s805(a)\u2013(c)",
+      "quote": "transportation or use exclusively within Liberia",
+      "rule": "Liberia-source includes local activity/employment, local immovable property and related indirect disposals, resident ownership disposals, locally used assets/IP, specified interest and resident dividends/management/director fees. Vessel income has the exclusive-Liberia-use exception; software is updated by 2026 law.",
+      "read_on": "2026-11-01"
+    },
+    "W13": {
+      "source": "C",
+      "act_article": "s213(a)\u2013(b)",
+      "quote": "determined on a country-by-country basis",
+      "rule": "Foreign income tax/in-lieu tax on foreign-source income can be credited, capped at Liberian tax on that income using the taxpayer\u2019s average rate, separately for each country. It is not an unlimited credit or an automatic exemption.",
+      "read_on": "2026-11-01"
+    },
+    "S01": {
+      "source": "S",
+      "act_article": "s89.8(a)\u2013(e),89.15",
+      "quote": "Every employer with one (1) or more employees",
+      "rule": "Employers with at least one employee enter the statutory pension/injury scheme, subject to express exclusions. Check age of entry, existing membership and category. Armed forces, specified foreign diplomatic/international staff recruited abroad, home outworkers, resident household family, domestic servants and vessel workers have statutory exclusions; nationality alone is not an exemption.",
+      "read_on": "2026-11-01"
+    },
+    "S02": {
+      "source": "S",
+      "act_article": "s89.16(a),(b)\u2013(f)",
+      "quote": "2% under the Employment Injury Scheme",
+      "rule": "For an employee covered by both schemes: employee 4% pension; employer 4% pension plus 2% injury, total 10% gross remuneration. Injury-only and pension-only categories differ; pension contributions cease for persons attaining 65 by month end.",
+      "read_on": "2026-11-01"
+    },
+    "S03": {
+      "source": "G",
+      "act_article": "reg2 Earnings",
+      "quote": "excluding any ex gratia payments",
+      "rule": "Insurable earnings include employment-service payments, salaries/wages/bonuses, but exclude employer ex-gratia payments and travel allowance/concession covering special employment expenses. Do not apply the percentage indiscriminately to every cash movement.",
+      "read_on": "2026-11-01"
+    },
+    "S04": {
+      "source": "S",
+      "act_article": "s89.16(h)",
+      "quote": "ordinarily fall due on the last day of the month",
+      "rule": "Ordinary monthly contributions fall due at that month\u2019s end, not the following month\u2019s 10 th. Part-month/multiple-employer cases follow specified regulation conditions.",
+      "read_on": "2026-11-01"
+    },
+    "S05": {
+      "source": "G",
+      "act_article": "regs17(1)\u2013(3),18(A)",
+      "quote": "end of the month following the relevant month",
+      "rule": "Pay monthly through an approved bank, NASSCORP office or directed method with a completed Payroll Submission Form and retain the official receipt, as regulation17 requires. Under regulation18(A)(1), record each employee\u2019s earnings and contributions on the approved e-Payroll form by the end of the following month, matching registered names, numbers and payment currency. That is a recording deadline; a separate transmission deadline has not been confirmed. It does not replace the contribution payment deadline or the duty to accompany payment with the Payroll Submission Form.",
+      "read_on": "2026-11-01",
+      "additional_exact_quote": "the employer shall record"
+    },
+    "S06": {
+      "source": "S",
+      "act_article": "s89.18",
+      "quote": "four percent (4%) of the amount unpaid",
+      "rule": "Default adds 4% of unpaid contributions for each month/part after due date, recoverable as debt. The Act also provides recovery where employer default reduces benefits; legal escalation is separate.",
+      "read_on": "2026-11-01"
+    },
+    "S07": {
+      "source": "S",
+      "act_article": "s89.16(m)",
+      "quote": "the employer\u2019s contribution or any other charges",
+      "rule": "Do not deduct/recover employer contributions from employees. Employee deductions are held in trust. The Act restricts later recovery of a missed employee deduction; reg 16(2) has a bona-fide-error recovery clause, so obtain a legal resolution before retroactive deductions rather than assuming that regulation overrides the Act.",
+      "read_on": "2026-11-01"
+    },
+    "S08": {
+      "source": "G",
+      "act_article": "reg4(1),(3),(6)",
+      "quote": "not later than 15 days",
+      "rule": "An employer hiring staff registers with NASSCORP within 15 days of becoming a legal entity, completes the office application/attachments and receives an employer code/certificate used on correspondence.",
+      "read_on": "2026-11-01"
+    },
+    "S09": {
+      "source": "G",
+      "act_article": "reg6",
+      "quote": "within thirty (30) calendar days",
+      "rule": "Notify NASSCORP in writing within 30 calendar days of suspending operations or an insured employee leaving. Failure can continue contribution liability subject to Director General waiver.",
+      "read_on": "2026-11-01"
+    },
+    "F01": {
+      "source": "L",
+      "act_article": "Business Tax Kinds, registration",
+      "quote": "Business registrations are valid for a period of 12 months",
+      "rule": "LBR registration is required before business activity and is renewed annually. Obtain sector authorisations where applicable; registration alone is not a sector licence.",
+      "read_on": "2026-11-01"
+    },
+    "F02": {
+      "source": "L",
+      "act_article": "entity document list",
+      "quote": "Certificate of Formation",
+      "rule": "For LLCs the LRA list names certificate of formation and member/applicant IDs; business corporations need incorporation and subscriber/beneficial-owner IDs; partnerships need their agreement and partner IDs; sole traders need legal ID and photo. Foreign entities have additional authority/resolution/good-standing/representative documents.",
+      "read_on": "2026-11-01"
+    },
+    "F03": {
+      "source": "I",
+      "act_article": "Starting a Business, application",
+      "quote": "Registration Form (RF-001)",
+      "rule": "NIC identifies RF-001, constitutional documents and ID with Form A/B, with E/F/Q as applicable, submission at LBR, coordinated TIN/BPS, payment atbank window, receipt back to LBR, then approval/certificate. Its LLC document wording differs from the LRA list; confirm the selected entity\u2019s live checklist.",
+      "read_on": "2026-11-01"
+    },
+    "F04": {
+      "source": "I",
+      "act_article": "Starting a Business, name reservation",
+      "quote": "120 days",
+      "rule": "NIC says a reserved name lasts 120 days. The old six-month claim is not supported. Its approximate fee is not treated as a statutory fixed fee; no 700/900 USD agent-price claim is retained.",
+      "read_on": "2026-11-01"
+    },
+    "T01": {
+      "source": "C",
+      "act_article": "ss208,211",
+      "quote": "fifty per cent or more",
+      "rule": "Relatedness includes practical directions/control, relatives, partners, PE/head office and direct/indirect 50% rights to income/capital/votes with related-person aggregation. Arm\u2019s length allocation applies to related transactions, including domestic ones.",
+      "read_on": "2026-11-01"
+    },
+    "T02": {
+      "source": "T",
+      "act_article": "regs3.5,4.1",
+      "quote": "Comparability",
+      "rule": "Controlled dealings cover goods/services, tangible/intangible assets, loans, manufacture/distribution and PE/head-office dealings. Compare product/service, functions/assets/risks, contracts, economy/markets, strategy; adjust material differences. Risk control/mitigation and financial capacity matter as well as contracts.",
+      "read_on": "2026-11-01"
+    },
+    "T03": {
+      "source": "T",
+      "act_article": "reg4.2(a)\u2013(g)",
+      "quote": "appropriate transfer pricing method",
+      "rule": "Select the most appropriate CUP, resale-price, cost-plus, TNMM or profit-split method using nature, comparability, reliable data and strengths/weaknesses. Another method needs written CG approval and proof ordinary methods cannot reasonably apply. No universal cost-plus margin or automatic method hierarchy is supplied.",
+      "read_on": "2026-11-01"
+    },
+    "T04": {
+      "source": "T",
+      "act_article": "reg5.1(b)\u2013(d)",
+      "quote": "the median of the arm\u2019s length range",
+      "rule": "The full range requires equally comparable transactions and a highest indicator no more than 25% above the lowest. Uncertain comparability calls for a statistical/interquartile approach. The wording of 5.1(c) says exceeds 25% of the lowest, while 5.1(b) says 25% greater; do not resolve borderline contradictory wording by inventing a safe harbour. Outside the applicable arm\u2019s length range adjust to the median, not the nearest endpoint.",
+      "read_on": "2026-11-01"
+    },
+    "T05": {
+      "source": "T",
+      "act_article": "regs5.2,5.3",
+      "quote": "services",
+      "rule": "Closely linked same counterparty transactions can be combined when not reliably separable. Related services must actually be rendered, nonduplicative, commercially beneficial and independently payable/performable; exclude incidental group membership/shareholder costs. Joint-service allocations need reasonable measurable benefit-based criteria; the literal uncontrolled-transaction wording of 5.3(e)(ii) is not silently rewritten.",
+      "read_on": "2026-11-01"
+    },
+    "T06": {
+      "source": "T",
+      "act_article": "reg6.1(a)\u2013(d)",
+      "quote": "prior to the due",
+      "rule": "Related-party income-return filers file a TP return with the annual income return. Keep sufficient pricing information in place before the income-return due date. Small taxpayers have a simplified documentation package, not a waiver of arm\u2019s length pricing.",
+      "read_on": "2026-11-01"
+    },
+    "T07": {
+      "source": "T",
+      "act_article": "reg6.1(e)(i)\u2013(xxxv)",
+      "quote": "Masterfile",
+      "rule": "The regulation provides for CG notice requiring master/local files: group structure, business/value chain, services, intangibles, finance, accounts/rulings; local management, transactions/agreements, FAR, methods/comparables, assumptions, adjustments, financial tie-outs and relevant APAs. Keep the full prescribed categories; a narrative contract alone is insufficient.",
+      "read_on": "2026-11-01"
+    },
+    "T08": {
+      "source": "A",
+      "act_article": "amendeds211 adjustment procedure",
+      "quote": "re-characterize",
+      "rule": "The 2024 amendment expressly permits recharacterising related arrangements, including debt as equity, income/source/type and allocating expenditure.",
+      "read_on": "2026-11-01"
+    },
+    "T09": {
+      "source": "P",
+      "act_article": "PracticeNote10.1,11",
+      "quote": "Copies of all agreements",
+      "rule": "The small taxpayer package includes accounts, each controlled transaction category and counterparties, payment/receipt amounts, method/arm\u2019s length explanation, and agreements. TP return filing is additional to retention and production on request; current return fields remain unverified.",
+      "read_on": "2026-11-01"
+    },
+    "T10": {
+      "source": "T",
+      "act_article": "reg6.2(c)",
+      "quote": "Double Taxation Treaty",
+      "rule": "A foreign adjustment permits a request for a corresponding Liberian adjustment where a treaty exists and the same profits are also taxable in Liberia; CG must accept consistency with arm\u2019s length. It is not automatic relief from any foreign assessment.",
+      "read_on": "2026-11-01"
+    },
+    "T11": {
+      "source": "A",
+      "act_article": "amendeds55(i)(2)",
+      "quote": "Country",
+      "rule": "The law directs regulations on country-by-country reporting. That enabling/direction clause does not itself establish an operational EUR 750 m threshold or current CbCR filing deadline. No such figures are asserted.",
+      "read_on": "2026-11-01"
+    },
+    "V01": {
+      "source": "B",
+      "act_article": "amended ss1000(b)(3),1021(b)",
+      "quote": "12 percent",
+      "rule": "The 2024 Chapters 8/10 Act sets ordinary GST 12%, with export goods 0%; its 12% services rule excludes  telecommunications. Treat this as the enacted pre-April 2026 baseline, not the current 13% rule.",
+      "read_on": "2026-11-01"
+    },
+    "V02": {
+      "source": "N",
+      "act_article": "amended ss1000(b)(3),1021(b)",
+      "quote": "13 percent",
+      "rule": "The Act printed 1 April 2026 sets 13% goods/services GST, export goods 0%, and an additional 5% surtax on telecommunications. Within this GST framework telecom therefore totals 18%. GST/VAT commencement conflict remains unresolved below.",
+      "read_on": "2026-11-01"
+    },
+    "V03": {
+      "source": "V",
+      "act_article": "amended VAT ss1003,1066(a)",
+      "quote": "on July 1, 2026",
+      "rule": "The 2024 VAT amendment sets 15% standard VAT and commencement eighteen months after handbill publication or 1 July 2026, whichever is sooner, subject to 1066(b). The full VAT Act/1066(b)/later deferral instrument have not been reconciled here. Do not apply 15% to a 2026 invoice merely because it appears in this law.",
+      "read_on": "2026-11-01"
+    },
+    "V04": {
+      "source": "Q",
+      "act_article": "29September2026 announcement",
+      "quote": "implementation of VAT on January 1, 2027",
+      "rule": "LRA\u2019s 29 September 2026 announcement describes 1 January 2027 VAT implementation. This is evidence of the announced administrative position, not the legal instrument reconciling the published commencement clause.",
+      "read_on": "2026-11-01"
+    },
+    "V05": {
+      "source": "C",
+      "act_article": "ss1000(a),(c),1001,1002,1021(a),1022",
+      "quote": "registered manufacturer",
+      "rule": "Under the cited GST framework, goods tax attaches to taxable manufacturer supplies/imports, and services tax to specified taxable services by registered providers. This is not a universal retail sales tax or an assumed multistage input-credit VAT.",
+      "read_on": "2026-11-01"
+    },
+    "V06": {
+      "source": "C",
+      "act_article": "ss1006(a),1026(a)",
+      "quote": "equalled or exceeded $3,000,000",
+      "rule": "The 2020 GST text uses LRD 3 m taxable amount over actual/expected twelve-months for manufacturer/services registration, with application within 21 days; related supply aggregation and voluntary manufacturer registration conditions apply. The old LRD 5 m claim is unsupported; current transition registration threshold needs reconciliation before action.",
+      "read_on": "2026-11-01"
+    },
+    "V07": {
+      "source": "C",
+      "act_article": "ss1004,1025",
+      "quote": "consideration payable",
+      "rule": "The taxable amount uses consideration including relevant duties/charges excluding this GST, less qualifying discounts; related or no-consideration supplies can use fair market value. Imports follow the customs-value-plus-statutory-additions rule, not merely the invoice price.",
+      "read_on": "2026-11-01"
+    },
+    "V08": {
+      "source": "C",
+      "act_article": "ss1008,1029,1045",
+      "quote": "within 21 days after the end",
+      "rule": "GST returns are monthly, and due respectively within 21 days of period end even if nil; output payment follows return due date, import GST generally at arrival/customs collection. The actual registration and transition must first be established.",
+      "read_on": "2026-11-01"
+    },
+    "V09": {
+      "source": "C",
+      "act_article": "s1000(c)(2)",
+      "quote": "unless the importer is a registered manufacturer",
+      "rule": "GST import liability has an exception for registered manufacturers\u2019 imports used to produce their manufactured goods. Do not replace this with a blanket no-relief statement or assume a full VAT input-credit chain.",
+      "read_on": "2026-11-01"
+    },
+    "O13": {
+      "source": "N",
+      "act_article": "December2025Act preliminarySectionThree and Part3; cover",
+      "quote": "This Act shall take effect immediately upon publication to handbill.",
+      "rule": "The amendment was approved24March2026 and printed1April2026; its general effectiveness is upon handbill publication, subject to contrary transition rules.",
+      "read_on": "2026-11-01"
+    },
+    "O14": {
+      "source": "N",
+      "act_article": "amendeds74(d), physicalpage7",
+      "quote": "ends on the date on which the return was required to be filed",
+      "rule": "The published amended ordinary assessment-period sentence omits an express lookback duration. Do not silently restore the previous seven-year wording; obtain legal resolution before relying on a limitation defence.",
+      "read_on": "2026-11-01"
+    },
+    "S10": {
+      "source": "S",
+      "act_article": "s89.8(e), s89.16(f)",
+      "quote": "forty-eight (48) years",
+      "rule": "Pension maximum entry age48 for persons born1980or later,51 for those bornbefore1980; existing membership and pension contribution end-at65 rules are separate.",
+      "read_on": "2026-11-01"
+    },
+    "W14": {
+      "source": "C",
+      "act_article": "s803(a),2020text",
+      "quote": "no less than 90 days during the tax year",
+      "rule": "The2020general PE text used no less than90days in the tax year. The2026amendment uses30days; cross-commencement aggregation remains unconfirmed.",
+      "read_on": "2026-11-01"
+    },
+    "C12": {
+      "source": "C",
+      "act_article": "ss201(c),801(d)",
+      "quote": "The gross income of a resident includes all economic benefits regardless of source.",
+      "additional_exact_quote": "income attributable to the permanent establishment",
+      "rule": "A resident company\u2019s gross income includes worldwide economic benefits, regardless of source; a nonresident\u2019s gross income includes only Liberia-source economic benefits and is taxed under Chapter8. A nonresident\u2019s permanent establishment is treated as a resident legal person only with respect to income attributable to that establishment, with the related filing and advance-payment requirements.",
+      "read_on": "2026-11-01"
+    }
+  },
+  "guide_rules": {
+    "lr-income-tax": [
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I06",
+      "I07",
+      "I08",
+      "I09",
+      "I10",
+      "I11",
+      "O03",
+      "O07"
+    ],
+    "lr-corporate-income-tax": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "I10",
+      "O07"
+    ],
+    "lr-payroll-social": [
+      "O07",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "W04"
+    ],
+    "lr-company-formation": [
+      "C11",
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "O05",
+      "O12"
+    ],
+    "lr-transfer-pricing": [
+      "O06",
+      "O07",
+      "O11",
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "lr-cross-border": [
+      "O01",
+      "O07",
+      "O13",
+      "W01",
+      "W02",
+      "W03",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W09",
+      "W10",
+      "W11",
+      "W12",
+      "W13",
+      "W14"
+    ],
+    "lr-vat-gst": [
+      "O07",
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "V09"
+    ],
+    "lr-tax-overview": [
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O14"
+    ]
+  }
+}

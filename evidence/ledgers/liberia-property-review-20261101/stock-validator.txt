@@ -1,0 +1,6 @@
+changed-only mode: validating 10 changed guide file(s)
+checked 9 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: skills/liberia/lr-property-tax.md: no tax domain in the slug, so its country cell was not checked
+
+validation passed (1 warning group(s))
