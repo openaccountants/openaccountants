@@ -1,0 +1,16 @@
+{
+  "method": "repository validator functions over eight explicit Guide paths; added files computed from pinned base",
+  "paths": [
+    "skills/south-sudan/ss-company-formation.md",
+    "skills/south-sudan/ss-corporate-income-tax.md",
+    "skills/south-sudan/ss-cross-border.md",
+    "skills/south-sudan/ss-income-tax.md",
+    "skills/south-sudan/ss-payroll-social.md",
+    "skills/south-sudan/ss-tax-overview.md",
+    "skills/south-sudan/ss-transfer-pricing.md",
+    "skills/south-sudan/ss-vat-gst.md"
+  ],
+  "errors": [],
+  "warnings": [],
+  "generated_index_check": "skipped by contributor policy; not a derived-output change"
+}

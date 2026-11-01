@@ -9,11 +9,11 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 tax_year_notes: "2026 preparation from opened statutory sources; operative later-law chain not confirmed."
 ---
 
-# South Sudan company formation and compliance source-baseline working paper v0.1
+# South Sudan company formation and compliance source-baseline working paper v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -34,7 +34,7 @@ All figures below retain the period and conditions of the opened source. Read th
 | Memo | English memorandum: name/limited, South Sudan office, objects, liability and capital/share division where applicable; each subscriber at least one share, dated signature/witness particulars. | [ss.10–11, PDF 27–28](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) |
 | Incorporate | Deliver memorandum/articles to registrar; registration number; registrar certificate establishes incorporation; declaration of compliance under s.23(2). | [ss.21–23, PDF 32–33](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) |
 | Director | At least one director ordinarily resident in South Sudan; natural person,18 minimum, consent and disqualification checks; public-company age limit also applies. | [s.241, PDF 156–157](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) |
-| Company return | Share-capital company annual return with s.177 exceptions; within 42 days after AGM, signed director/secretary; s.180 balance sheet/auditor/director reports attached. | [ss.177–180, PDF 111–114](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) |
+| Company return | Share-capital annual return, subject to s.177 exceptions, completed and forwarded within 42 days after AGM; copy signed by both a director and secretary. Section 180(1) attachments do not apply to a private company unless at least one shareholder is a public company. Private-company certificates under s.181 are separately required. | [ss.177–181, PDF 111–115](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) |
 | Company agency | Opened FY 2024/25 company registration/assessment agency Ministry of Justice and Constitutional Affairs; fees Schedule 27 and SSRA collection. No operational current form or price inferred. | [s.27, PDF 22](https://cms.nra.gov.ss/uploads/Financial_Act_2024_2025_464925c180.pdf) |
 | Business tin | Historical eTax business registration: Ministry of Justice registration number/certificate and validation, director TIN, existing TIN certificate if applicable; Business or Company, validation, contact verification, optional agent, declaration, Complete Registration; manual describes verification. | [PDF 26–37](https://cms.nra.gov.ss/uploads/NRA_e_Tax_Training_Manual_V_001_Registration_eae52f383f.pdf) |
 
@@ -45,7 +45,7 @@ All figures below retain the period and conditions of the opened source. Read th
 3. Check director residence, natural-person status, consent, age and disqualifications. No person should be appointed merely to fill a numeric box without meeting the Act. [s.241, PDF 156–157](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf)
 4. Deliver the statutory documents to the registrar, obtain the actual certificate and registration number, and verify that they match the approved documents. Establish any required declaration of compliance. The archived Act supplies the legal sequence; it does not establish today’s online screens or processing time. [ss.21–23, PDF 32–33](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf)
 5. Prepare the separate business-TIN handoff using the official manual, then check current instructions before submitting. Registration, tax clearance, investment certification, work permits and trade licences are distinct jobs; a certificate for one does not complete the others. [PDF 26–37](https://cms.nra.gov.ss/uploads/NRA_e_Tax_Training_Manual_V_001_Registration_eae52f383f.pdf)
-6. Establish the annual-return calendar and statutory attachments. Section 177 has incorporation-year/AGM-related exceptions; the return is not simply due on the tax return date. [ss.177–180, PDF 111–114](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf)
+6. Establish the annual-return calendar and package. Section 177 has incorporation-year/AGM-related exceptions; the return is not simply due on the tax return date. Under s.179, complete and forward the copy within 42 days after the AGM, signed by both a director and secretary. Apply s.180(1) balance-sheet/auditor/director-report attachments only after checking s.180(5): a private company is excluded unless at least one shareholder is a public company. Where required, copies are certified by both a director and secretary; retain required annexes, certified English translations and any required corrections. Separately, a private company must endorse or accompany its s.177 return with the s.181 certificate, signed by both officers, confirming no public share/debenture invitation since incorporation. If the return shows more than 50 members, add the similarly signed certificate that the excess consists wholly of persons excluded from that limit. [ss.177–181, PDF 111–115](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf)
 
 ## Deadlines and filing
 
@@ -114,7 +114,7 @@ expected:
 
 | Official source | Actual read scope relevant to this Guide | Read on |
 |---|---|---|
-| [Companies Act 2012, archived official Justice PDF, capture 2026-06-09](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) | s.7(2), PDF 26; ss.7–9, PDF 26–27; ss.10–11, PDF 27–28; ss.21–23, PDF 32–33; s.241, PDF 156–157; ss.177–180, PDF 111–114; direct fetch and normal browser failed expired certificate; dated 2026 archive actually opened. No warning bypassed. | 2026-11-01 |
+| [Companies Act 2012, archived official Justice PDF, capture 2026-06-09](https://web.archive.org/web/20260609050816/https://mojca.gov.ss/wp-content/uploads/2023/03/Companies-Act-2012.pdf) | s.7(2), PDF 26; ss.7–9, PDF 26–27; ss.10–11, PDF 27–28; ss.21–23, PDF 32–33; s.241, PDF 156–157; ss.177–181, PDF 111–115; direct fetch and normal browser failed expired certificate; dated 2026 archive actually opened. No warning bypassed. | 2026-11-01 |
 | [Enacted Financial Act FY 2024/25, SSRA signed copy](https://cms.nra.gov.ss/uploads/Financial_Act_2024_2025_464925c180.pdf) | s.27, PDF 22 | 2026-11-01 |
 | [Official eTax registration training manual v0.1](https://cms.nra.gov.ss/uploads/NRA_e_Tax_Training_Manual_V_001_Registration_eae52f383f.pdf) | PDF 26–37 | 2026-11-01 |
 | [Taxation Act 2009, revised edition 2021, official SSRA copy](https://cms.nra.gov.ss/uploads/TAXATION_ACT_2021_R_E_CONSOLIDATED_f4f9ed8876.pdf) | s.17(1),(3), PDF 26; s.69, PDF 65–66 | 2026-11-01 |
