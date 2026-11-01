@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "grouped_rule_records": 72,
+  "exact_quote_placements": 160,
+  "built_complete_rows": 28,
+  "land_rows": 18,
+  "tariff_values_checked": 184,
+  "held_malformed_row": 1,
+  "preserved_accepted_files": 56,
+  "existing_guides_unchanged": 8,
+  "old_topics_unchanged": 77,
+  "prior_cases_unchanged": 16,
+  "all_seven_partial_domains_preserved": true,
+  "lost_content_restored": 0,
+  "current_law_attestation": false,
+  "fresh_independent_property_review": "pending"
+}
+
+Exit code: 0

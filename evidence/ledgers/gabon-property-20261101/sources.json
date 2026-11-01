@@ -1,0 +1,35 @@
+[
+  {
+    "id": "CGI",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "file": "cgi-2025.pdf",
+    "sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Independently extracted cached original PDF; cover amendment list and full CFU278-300actualPDF108-114, P996-999actual228-229. Historical2025baseline. No complete2026lawchain.",
+    "hash_kind": "downloaded original bytes",
+    "status": "historical baseline",
+    "acquisition_status": "Cached official original hash rechecked; prior independent review fresh-fetch identical. This writer direct refresh failed SSL unexpected EOF; web tool inaccessible. No TLS bypass."
+  },
+  {
+    "id": "LF",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "file": "lf-2026.pdf",
+    "sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Independently extracted actualPDF1,3,9-16,71-72; fullCFU278-298bisactual9-15/printed7-13; tariffpages13-14visuallyrendered/read; TFH376-378boundary16; enactment/scope1,3,78-79andpromulgation71-72. No completebudgetread.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification",
+    "acquisition_status": "Fresh official HTTPSdownloadHTTP200,2159991bytes,identicalSHA256;webtoolalsoopened;readoriginalcachedPDF."
+  },
+  {
+    "id": "LFR",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "file": "lfr-2026.pdf",
+    "sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Independently extracted actualPDF1-2,10-13,86; full284(1)andrestsunchangedon10/printed9;neighbouringhousingboundaries10-11; P1000paras1and3actual12-13;101-102andpromulgation86. No fullbudgetread.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification",
+    "acquisition_status": "Fresh official HTTPSdownloadHTTP200,5178214bytes,identicalSHA256;webtoolinaccessible;readoriginalcachedPDF."
+  }
+]
