@@ -66,6 +66,90 @@ Tax = annual turnover × band rate. No costs, no depreciation, no losses: a loss
 
 **What stays:** VAT registration and rates (`egypt-vat`), payroll tax on the annual settlement, and every tax law where Law 6 is silent (art. 6).
 
+**Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified, and where it differs from the tables above the tables win.
+
+- **Default to general income-tax system unless opted in**: Default to the general income-tax system unless the user confirms they have formally applied to and been accepted into the Law 6/2025 regime. The regime is opt-in by request: it is not automatic.
+- **Default to higher band near boundary**: Default to the higher band if turnover is near a band boundary.
+- **Assume VAT registration required**: Assume VAT registration is still required at the standard EGP 500,000 registration threshold: Law 6/2025 simplifies VAT filing frequency, it does not abolish VAT.
+- **Assume e-invoicing mandatory**: Assume e-invoicing / e-receipt compliance is mandatory to keep the incentives.
+- **Assume 5-year lock-in applies**: Assume the 5-year lock-in applies once enrolled: do not advise the user they can freely exit.
+- **Never compute final liability without sign-off**: Never compute a final liability without a credentialed Egyptian accountant sign-off. This skill is research-verified, not authority-certified.
+- **Enrolment steps**: 1. Register / update registration with the Egyptian Tax Authority (eta.gov.eg). 2. Submit a formal request to benefit from Law 6/2025 (طلب الانتفاع بأحكام القانون) through the ETA portal. 3. Integrate with ETA electronic systems: e-invoice (الفاتورة الإلكترونية) and/or e-receipt (الإيصال الإلكتروني) as applicable. 4. Maintain simplified books and file the special simplified returns on time.
+Refuse or escalate (do **not** silently produce a number) in these cases:
+
+- **R-EG-1: Over threshold**: Turnover exceeds EGP 20m (outside the growth cushion). The taxpayer belongs in the general system; refuse to apply turnover rates.
+- **R-EG-2: Artificial fragmentation**: The user appears to have split one business into several entities to stay under EGP 20m. The law excludes this; refuse and warn it is an abuse risk (تجزئة المشروع).
+- **R-EG-3: Client-concentration exclusion**: Consultancy / professional arrangements where ~90%+ of revenue comes from one or two clients may be excluded (anti-disguised-employment). Flag and require verification.
+- **R-EG-4: Not enrolled**: The user has not submitted the request to benefit. Do not apply the regime; default to the general system.
+- **R-EG-5: Mid-commitment exit request**: User wants to leave within 5 years. Explain the lock-in; do not assume they can exit.
+- **R-EG-6: Out-of-scope taxpayer**: Free zones, special economic zones, oil & gas, banks/insurance, or entities barred by sector rules. Refuse and refer to a credentialed Egyptian accountant.
+- **R-EG-7: Prior-year liabilities / open audits**: Settlement of past dues and the "waiver" provisions have their own deadlines and conditions; refuse to opine on amnesty without ETA confirmation.
+- **R-EG-8: No credentialed sign-off**: Always required before filing: never present output as final.
+- **Income tax formula**: Income tax under the regime = turnover × band rate (see §1 table). There is no profit computation, no depreciation schedule, no expense substantiation for the income-tax charge: the rate already embeds an assumed margin. This is the main attraction: predictability and almost no accounting overhead.
+
+- **Stamp duty exemption**: Stamp duty (ضريبة الدمغة) on the enterprise's contracts/instruments.
+- **State Financial Resources Development Fee exemption**: State Financial Resources Development Fee (رسم تنمية موارد الدولة).
+- **Notarisation / registration fees exemption**: Notarisation / registration fees for articles of association and contracts.
+- **Capital gains tax exemption**: Capital gains tax on the sale of machinery, equipment, and fixed assets.
+- **Dividend tax exemption**: Tax on dividends (ضريبة الأرباح الموزعة) distributed within the regime.
+- **Withholding/advance-payment removal**: Withholding tax (الخصم تحت حساب الضريبة) and advance-payment systems at source: the enterprise is taken out of these collection mechanisms.
+- **Above 20% or repeated breach**: If the excess is above 20%, or the threshold is breached repeatedly, all reduced-tax benefits are revoked from the following year and the taxpayer moves to the general system.
+- **5-year audit deferral**: Income tax and VAT returns of an enrolled enterprise are not inspected (audited) until 5 years have passed from the request date, provided the taxpayer stays compliant. This is a major compliance relief, not a permanent exemption.
+| unverified: Return | Standard system | Under Law 6/2025 |
+| --- | --- | --- |
+| VAT (ضريبة القيمة المضافة) | Monthly | **Quarterly**: filed within one month after the quarter-end, with payment |
+| Income tax (ضريبة الدخل) | Annual, profit-based, complex | **Annual simplified return** on a special template, turnover-based |
+| Payroll / wage tax (ضريبة كسب العمل) | Monthly remittance + reconciliation | Obligation limited to the **annual settlement declaration** plus remittance |
+| Withholding tax | Periodic | **Removed** (enterprise taken out of the WHT/advance-payment system) |
+
+The regime simplifies filing cadence, not the existence of the taxes.
+- **Standard VAT rate**: 14% % (verify current; certain goods/services have special rates such as the 5% machinery rate or the schedule/table-tax items)
+- **E-invoicing/e-receipt precondition**: E-invoicing / e-receipt integration is a precondition for staying in the regime: non-compliance can forfeit the incentives.
+Because the turnover tax is charged on gross turnover regardless of profit, it favours high-margin, low-cost activities (typical of freelancers and professionals) and can hurt low-margin, high-cost activities.
+
+**Break-even logic**
+
+- **Break-even comparison**: Compare: - Simplified tax = Turnover × band rate (e.g. 0.5% for a EGP 1.5m freelancer). - General income tax = Net profit × progressive personal income tax rate (top brackets reach roughly the high-20s/30s percent: verify current 2026 brackets, which were widened by the 2025 reforms). The simplified regime wins whenever: ``` Turnover × band_rate  <  Net_profit × effective_general_rate ``` Rearranging, the simplified regime is cheaper when your net margin exceeds: ``` break-even margin  ≈  band_rate / effective_general_rate ``` Because band rates are tiny (0.4% to 1.5%) and the general top rate is large, the break-even margin is very low: for most genuinely profitable freelancers and small service businesses, the simplified regime is dramatically cheaper.
+
+The general system can still win when:
+
+- The business runs at a loss or near-zero margin (turnover tax is payable even on a loss; income tax on a loss is nil and losses may carry forward).
+- The business has very high deductible costs (e.g. trading/reselling with thin markups), making the effective profit-based charge lower than 0.4% to 1.5% of turnover.
+- The taxpayer values loss carry-forward and capital allowances that the simplified flat charge ignores.
+
+Always weigh the non-tax benefits: no audit for 5 years, no WHT/advance payments, quarterly (not monthly) VAT, exemptions from stamp duty / development fee / capital gains / dividends: these reduce cost and friction even when the headline tax is close.
+
+Remember the **5-year lock-in (§2)**: a taxpayer who expects to scale past EGP 20m soon, or to swing into losses, should model multiple years before committing.
+**Tier 2: escalate to a credentialed Egyptian accountant when**
+
+- Turnover is within ~10% of any band boundary or of the EGP 20m cap.
+- The activity may be excluded (client concentration, fragmentation, regulated sector). See R-EG-2, R-EG-3, R-EG-6.
+- There are prior-year liabilities, open audits, or amnesty/settlement questions (R-EG-7).
+- The taxpayer is considering exit within the 5-year lock-in (R-EG-5).
+- Cross-border income, free-zone/SEZ status, or non-resident issues arise.
+- VAT registration status, schedule-tax (table-tax) items, or special VAT rates are involved.
+
+1. Q: Freelancer with EGP 1.2m turnover: which band? → 0.5% (500k to <2m).
+2. Q: EGP 2.5m turnover band? → 0.75% (2m to <3m).
+3. Q: EGP 8m turnover band? → 1.0% (3m to <10m).
+4. Q: EGP 15m turnover band? → 1.5% (10m to <20m).
+5. Q: EGP 25m turnover, second breach: eligible? → No, apply R-EG-1.
+6. Q: Is the tax on profit or turnover? → Turnover (gross رقم الأعمال).
+7. Q: How often is VAT filed in the regime? → Quarterly.
+8. Q: Can the taxpayer leave after 2 years? → No: 5-year lock-in (R-EG-5).
+9. Q: Is dividend tax due on distributions within the regime? → No (exempted).
+10. Q: Is enrolment automatic? → No: must submit a request to ETA (R-EG-4).
+11. Q: Low-margin reseller, 2% margin, EGP 9m: does simplified always win? → No, compare with the general system (Example 3).
+12. Q: 90% of revenue from one client: proceed? → Flag R-EG-3 (exclusion risk), escalate.
+- Do NOT present any tax figure as final or filed without sign-off from a qualified Egyptian accountant (محاسب قانوني / EGP-credentialed tax advisor).
+- Do NOT assume a taxpayer is in the Law 6/2025 regime: confirm they have submitted and had accepted the request to benefit.
+- Do NOT advise structuring or splitting a business to stay under EGP 20m (fragmentation is excluded and is an abuse risk: R-EG-2).
+- Do NOT tell a taxpayer they can freely exit before 5 years.
+- Do NOT treat the turnover tax as covering VAT, payroll tax, or registration obligations: those still exist (with simplified cadence).
+- Do NOT apply the regime to over-threshold, regulated-sector, or free-zone/SEZ taxpayers (R-EG-6).
+- Do NOT quote rates, thresholds, the VAT rate, or income-tax brackets as settled without verifying against ETA and the Executive Regulations: flag anything unconfirmed with "verify current value".
+- Do NOT opine on amnesty/settlement of prior-year dues without ETA confirmation (R-EG-7).
+
 ## Deadlines and filing
 
 | Return | Rule | Source |
