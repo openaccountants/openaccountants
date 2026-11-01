@@ -1,7 +1,7 @@
 ---
 name: ae-corporate-tax
 description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue not exceeding AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Wages are outside Corporate Tax; natural-person business scope has a turnover test. ALWAYS read this skill before touching any UAE corporate tax work."
-version: 2.2
+version: 2.3
 category: IT-CORP
 jurisdiction: AE
 tax_year: 2026
@@ -181,7 +181,7 @@ A QFZP distributing goods in or from a designated zone also needs an agreed-upon
 
 ### Domestic minimum top-up tax, summary only ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf); [FTA Decision No. 12 of 2026](https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf))
 
-- **Who:** UAE constituent entities of a multinational group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year.
+- **Who:** UAE Constituent Entities of an MNE Group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year. For each comparison fiscal year other than 12 months, adjust the EUR 750 million threshold proportionally to its length. Excluded Entities are not Constituent Entities; confirm the entity's Excluded Entity status before including it. Refer Annex 6.1 special scope/revenue-threshold cases for specialist determination rather than applying this general screen alone (Annex 1.1.1-1.1.2 and 1.3.3).
 - **From when:** fiscal years beginning on or after 1 January 2025.
 - **What:** a top-up tax computed under the annex's UAE GloBE rules using the 15% minimum rate, with adjustments, exclusions and safe harbours; do not calculate it as 15% of accounting profit.
 - **Registration:** within 7 months after the end of the first fiscal year in scope. Entities with a fiscal year ending before 30 April 2026 register on or before 30 November 2026.

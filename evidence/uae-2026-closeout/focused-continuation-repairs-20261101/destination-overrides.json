@@ -1,0 +1,26 @@
+[
+  {
+    "identity": {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "original_line": 135,
+      "original_sha256": "f4076f707169d48b3a4885cf7ab76d7b4b443141ea5fa5407770651bd8cc0a99"
+    },
+    "previous_destination": "skills/uae/uae-vat.md line 173",
+    "current_destination": "skills/uae/uae-vat.md line 133",
+    "destination_text": "- Do not decide reverse charge from a TRN alone. Check the supplier's residence, the place of supply, who accounts for VAT and any domestic reverse charge. A valid UAE tax invoice for a normal domestic standard-rated purchase belongs in Box 9; a TRN does not override Article 48.",
+    "reason": "Corrected corresponding candidate predecessor identity; prior base identity override alone did not correct this record."
+  },
+  {
+    "identity": {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "original_line": 180,
+      "original_sha256": "f4076f707169d48b3a4885cf7ab76d7b4b443141ea5fa5407770651bd8cc0a99"
+    },
+    "previous_destination": "skills/uae/uae-vat.md line 181",
+    "current_destination": "skills/uae/uae-vat.md line 178",
+    "destination_text": "- A Designated Zone does not automatically put services outside UAE VAT. Article 51(6) treats their place of supply as inside the UAE, subject to the tightly conditioned shipping/delivery exception in Article 51(7). Apply the normal rate or exemption rules, rather than assuming every service is 5%. Water and energy are inside the UAE under Article 51(8).",
+    "reason": "Corrected corresponding candidate predecessor identity; prior base identity override alone did not correct this record."
+  }
+]
