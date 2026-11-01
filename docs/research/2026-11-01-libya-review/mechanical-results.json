@@ -1,0 +1,1569 @@
+{
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "freeze": "a4f20f79ffdfd90e68cfde258405a15dcb627ef9",
+  "guides": {
+    "skills/libya/ly-company-formation.md": {
+      "sha256": "2ed3096a361c022110945778074fc79f57a4e01163f9184670cdb41b6998ada0",
+      "bytes": 13689,
+      "description_words": 120,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "608addd8a02e1ad4b14114f932a4a2248a661131eeaf50046df5758bd79c285a",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 3935,
+      "shrinkage_over_25pct": false
+    },
+    "skills/libya/ly-corporate-income-tax.md": {
+      "sha256": "cbc9e4b026eb6b225b328a7b4c3190387a49dd6c527d760fd74c110446e1e20f",
+      "bytes": 12385,
+      "description_words": 111,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "69baa1fe90a36eaa58d79a4d45849b3e44533b0a9839fff2976bc24913f23a19",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 3732,
+      "shrinkage_over_25pct": false
+    },
+    "skills/libya/ly-cross-border-tax.md": {
+      "sha256": "39d5d0ef8b4ec90a0a9a1bc2d78eed50be8aaa171a1abebc86b1990e63a4df07",
+      "bytes": 12544,
+      "description_words": 117,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": false,
+      "no_platform_fields_or_cta": true
+    },
+    "skills/libya/ly-income-tax.md": {
+      "sha256": "d339de7e2165a1fb8211fba00a1fd3debdc98a3423189f24d59edc85f90b275b",
+      "bytes": 13224,
+      "description_words": 113,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "7bee08031025f6fedf4e98f0af7cc0078e9f72259ce3191e8797f8c2d07938fe",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 4304,
+      "shrinkage_over_25pct": false
+    },
+    "skills/libya/ly-payroll-social.md": {
+      "sha256": "e028bd073edf7a80e07645467ac9dda679d9640b10ce666102901169a6ec2a68",
+      "bytes": 13132,
+      "description_words": 110,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "8a1055d09b2567b7ba2e18ea49982c2dc170066cc5e9219a327c4e133c60a479",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 3583,
+      "shrinkage_over_25pct": false
+    },
+    "skills/libya/ly-tax-overview.md": {
+      "sha256": "f29e0d8d2ad7c5a5d6ca09cfccce3d79b00ae0eee942fa191cd9335a115d0742",
+      "bytes": 11727,
+      "description_words": 120,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "a320892d35e645492c413010557282aed00edec71325f478d49cb1374857af10",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 3917,
+      "shrinkage_over_25pct": false
+    },
+    "skills/libya/ly-transfer-pricing.md": {
+      "sha256": "b9d74a000c69da860309bcc5b72aa430a51329e2e3e6d7dcf8b208d895dcdaf0",
+      "bytes": 11373,
+      "description_words": 115,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": false,
+      "no_platform_fields_or_cta": true
+    },
+    "skills/libya/ly-vat-gst.md": {
+      "sha256": "2aa36fa31bfa0adff5d78f5aa610b3ebe7c34e476a35453b226b3e7011469403",
+      "bytes": 10976,
+      "description_words": 111,
+      "opening_exact": true,
+      "title_version_matches": true,
+      "legacy": true,
+      "old_sha256": "80a771a650a1fd1023dbaa6e273937a6deaec5237112187ea1211fddb944b0c3",
+      "platform_lines_exact": true,
+      "cta_exact": true,
+      "old_bytes": 2230,
+      "shrinkage_over_25pct": false
+    }
+  },
+  "old_topics": [
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 17,
+      "topic": "Common entity types",
+      "destination": "ly-company-formation.md → Who this applies to / The base",
+      "treatment": "LLC/JSC statute read; branch tax status retained and operative foreign permission left unresolved.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 18,
+      "topic": "Minimum capital — LLC (locally owned)",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 19,
+      "topic": "Minimum capital — LLC with foreign participation",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 20,
+      "topic": "Minimum capital — joint stock company (JSC)",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 21,
+      "topic": "Foreign ownership of branches/JVs",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 22,
+      "topic": "Registration body",
+      "destination": "ly-company-formation.md → Deadlines and filing",
+      "treatment": "Commercial Register retained with official authority link; municipality sequence unresolved.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 23,
+      "topic": "Core incorporation steps",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 24,
+      "topic": "Typical incorporation timeline",
+      "destination": "ly-company-formation.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 25,
+      "topic": "Tax registration on formation",
+      "destination": "ly-company-formation.md → Deadlines and filing",
+      "treatment": "Reverified Form 1 activity notification; unverified TIN workflow not invented.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-company-formation.md",
+      "line": 26,
+      "topic": "Core annual compliance",
+      "destination": "ly-company-formation.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 17,
+      "topic": "Corporate income tax base and filing overview",
+      "destination": "ly-corporate-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 18,
+      "topic": "Corporate income tax rate",
+      "destination": "ly-corporate-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 19,
+      "topic": "Tax base",
+      "destination": "ly-corporate-income-tax.md → Who this applies to",
+      "treatment": "Replaced inferred resident-company shorthand with actual art. 63 national-company/branch wording.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 20,
+      "topic": "Jihad tax surcharge",
+      "destination": "ly-corporate-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 21,
+      "topic": "Stamp duty on contracts",
+      "destination": "ly-vat-gst.md → Rates, bands and thresholds / The base",
+      "treatment": "Service contract source verified; old subcontract shorthand corrected to legal assignment distinction.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 22,
+      "topic": "Withholding tax on dividends",
+      "destination": "ly-corporate-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 23,
+      "topic": "Withholding tax on interest",
+      "destination": "ly-corporate-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 24,
+      "topic": "Withholding tax on royalties",
+      "destination": "ly-corporate-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 25,
+      "topic": "Annual return filing deadline",
+      "destination": "ly-corporate-income-tax.md → Deadlines and filing",
+      "treatment": "Corrected to balance-sheet approval, capped four months after financial year-end.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 26,
+      "topic": "Payment dates",
+      "destination": "ly-corporate-income-tax.md → Deadlines and filing (link to ly-income-tax)",
+      "treatment": "Corrected from single dates to statutory 10th-25th windows with threshold and due-date conditions.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 27,
+      "topic": "Tax year",
+      "destination": "ly-corporate-income-tax.md → Deadlines and filing",
+      "treatment": "General art. 22 and company art. 71 exceptions distinguished.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-corporate-income-tax.md",
+      "line": 28,
+      "topic": "Import service fee",
+      "destination": "ly-corporate-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 17,
+      "topic": "Personal income tax scope and rate basis",
+      "destination": "ly-income-tax.md → Who this applies to / The base",
+      "treatment": "Salary-only assertion corrected; all statutory individual categories added.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 18,
+      "topic": "First band",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 19,
+      "topic": "Second band",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 20,
+      "topic": "Scope of personal income tax",
+      "destination": "ly-income-tax.md → Who this applies to / The base",
+      "treatment": "Salary-only assertion corrected; all statutory individual categories added.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 21,
+      "topic": "Personal exemption — single",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 22,
+      "topic": "Personal exemption — married, no children",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 23,
+      "topic": "Personal exemption — married/widowed/divorced with children",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 24,
+      "topic": "Deductible — social security contribution",
+      "destination": "ly-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 25,
+      "topic": "Deductible — direct work expenses",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 26,
+      "topic": "Deductible — disciplinary fines",
+      "destination": "ly-income-tax.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 27,
+      "topic": "Stamp duty on salaries",
+      "destination": "ly-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 28,
+      "topic": "Social Unity (Solidarity) Fund",
+      "destination": "ly-payroll-social.md → Rates, bands and thresholds",
+      "treatment": "Separate solidarity-law amendment source; collection practice unresolved.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 29,
+      "topic": "Collection mechanism",
+      "destination": "ly-payroll-social.md → Deadlines and filing",
+      "treatment": "Employer collection retained; unsupported monthly ten-day calendar replaced with read 60-day statutory text.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-income-tax.md",
+      "line": 30,
+      "topic": "PAYE remittance deadline",
+      "destination": "ly-income-tax.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 17,
+      "topic": "Social security and payroll contributions overview",
+      "destination": "ly-payroll-social.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 18,
+      "topic": "Employee social security contribution",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 19,
+      "topic": "Employer social security contribution (Libyan entity)",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 20,
+      "topic": "Employer social security contribution (foreign branch)",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 21,
+      "topic": "Public treasury contribution",
+      "destination": "ly-payroll-social.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 22,
+      "topic": "Contribution base",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 23,
+      "topic": "Social security remittance deadline",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 24,
+      "topic": "Coverage of expatriates",
+      "destination": "ly-payroll-social.md → Who this applies to",
+      "treatment": "Corrected blanket coverage to regulatory and agreement conditions.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 25,
+      "topic": "Payroll income tax withholding (PAYE-equivalent)",
+      "destination": "ly-payroll-social.md → Deadlines and filing",
+      "treatment": "Employer collection retained; unsupported monthly ten-day calendar replaced with read 60-day statutory text.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 26,
+      "topic": "Social Unity (Solidarity) Fund",
+      "destination": "ly-payroll-social.md → Rates, bands and thresholds",
+      "treatment": "Separate solidarity-law amendment source; collection practice unresolved.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-payroll-social.md",
+      "line": 27,
+      "topic": "Stamp duty on net salaries",
+      "destination": "ly-payroll-social.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 17,
+      "topic": "Overview of Libyan tax system",
+      "destination": "ly-tax-overview.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 18,
+      "topic": "Standard tax year",
+      "destination": "ly-tax-overview.md → Deadlines and filing",
+      "treatment": "General art. 22 and company art. 71 exceptions distinguished.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 19,
+      "topic": "Currency",
+      "destination": "ly-tax-overview.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 20,
+      "topic": "Tax authority",
+      "destination": "ly-tax-overview.md → The base",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 21,
+      "topic": "Personal income tax basis",
+      "destination": "ly-income-tax.md → Who this applies to / The base",
+      "treatment": "Salary-only assertion corrected; all statutory individual categories added.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 22,
+      "topic": "Corporate income tax basis",
+      "destination": "ly-corporate-income-tax.md → Who this applies to",
+      "treatment": "Replaced inferred resident-company shorthand with actual art. 63 national-company/branch wording.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 23,
+      "topic": "Headline personal income tax rate",
+      "destination": "ly-income-tax.md → Rates, bands and thresholds",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 24,
+      "topic": "Headline corporate income tax rate",
+      "destination": "ly-corporate-income-tax.md → Rates, bands and thresholds",
+      "treatment": "Reverified or corrected against statute; currentness limit retained.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 25,
+      "topic": "Does Libya have VAT/GST?",
+      "destination": "ly-tax-overview.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 26,
+      "topic": "Stamp duty",
+      "destination": "ly-vat-gst.md → Rates, bands and thresholds / The base",
+      "treatment": "Service contract source verified; old subcontract shorthand corrected to legal assignment distinction.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 27,
+      "topic": "Jihad tax",
+      "destination": "ly-tax-overview.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 28,
+      "topic": "Corporate return filing deadline",
+      "destination": "ly-corporate-income-tax.md → Deadlines and filing",
+      "treatment": "Corrected to balance-sheet approval, capped four months after financial year-end.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-tax-overview.md",
+      "line": 29,
+      "topic": "Social Unity (Solidarity) Fund contribution",
+      "destination": "ly-payroll-social.md → Rates, bands and thresholds",
+      "treatment": "Separate solidarity-law amendment source; collection practice unresolved.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 17,
+      "topic": "VAT / GST",
+      "destination": "ly-vat-gst.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 18,
+      "topic": "VAT registration threshold",
+      "destination": "ly-vat-gst.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 19,
+      "topic": "VAT filing frequency",
+      "destination": "ly-vat-gst.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 20,
+      "topic": "Reverse charge",
+      "destination": "ly-vat-gst.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 21,
+      "topic": "Import service fee",
+      "destination": "ly-vat-gst.md → Sources: Not yet confirmed",
+      "treatment": "Old assertion preserved as unresolved or corrected; not asserted as a current filing rule.",
+      "verbatim_original_matches": true
+    },
+    {
+      "file": "skills/libya/ly-vat-gst.md",
+      "line": 22,
+      "topic": "Stamp duty on contracts (nearest indirect tax)",
+      "destination": "ly-vat-gst.md → Rates, bands and thresholds / The base",
+      "treatment": "Service contract source verified; old subcontract shorthand corrected to legal assignment distinction.",
+      "verbatim_original_matches": true
+    }
+  ],
+  "sources": [
+    {
+      "file": "tax-encyclopedia-2016.pdf",
+      "official_url": "https://tax.gov.ly/assets/m2016.pdf",
+      "sha256": "2bbd8962f6d55ac6a2f7306b36e8e99dc80b4a7e25a210c50c7cd0f35d4338e0",
+      "bytes": 84536475
+    },
+    {
+      "file": "commercial23.pdf",
+      "official_url": "https://ssf.gov.ly/wp-content/uploads/2012/09/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B1%D9%82%D9%85-23-%D9%84%D9%84%D8%B9%D8%A7%D9%85-2010-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A.pdf",
+      "sha256": "fbe1c853619fc6d58eace3353295bc3d4ce3b58473b01f585a3f98662b9f7cec",
+      "bytes": 1701947
+    },
+    {
+      "file": "social-law13-amendments.pdf",
+      "official_url": "https://ssf.gov.ly/wp-content/uploads/2017/11/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B6%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A-%D8%B1%D9%82%D9%85-13-%D9%84%D8%B3%D9%86%D8%A9-80-%D9%85-%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+      "sha256": "a5d2e709c8035bbeeffe3e942cd4b857e19889a9673f16d838bd2c415765d8ba",
+      "bytes": 2671862
+    },
+    {
+      "file": "uk-libya-treaty.pdf",
+      "official_url": "https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf",
+      "sha256": "73f5ffda2cf7ad8c82dc5545f6d666e2340f1a16ad4769bf9e4b4bf05d3479b6",
+      "bytes": 102886
+    },
+    {
+      "file": "treaty-index.pdf",
+      "official_url": "https://tax.gov.ly/assets/ET.pdf",
+      "sha256": "3b108e17e50261268bc26e1768b70f27caccfc9c2616e3892b7ab443bf0fbab4",
+      "bytes": 893626
+    }
+  ],
+  "ledger_placements": {
+    "ly-company-formation.md": [
+      {
+        "id": "G2",
+        "line": 7
+      },
+      {
+        "id": "G4",
+        "line": 8
+      },
+      {
+        "id": "G6",
+        "line": 9
+      },
+      {
+        "id": "F1",
+        "line": 10
+      },
+      {
+        "id": "F2",
+        "line": 11
+      },
+      {
+        "id": "F3",
+        "line": 12
+      },
+      {
+        "id": "F4",
+        "line": 13
+      },
+      {
+        "id": "F5",
+        "line": 14
+      },
+      {
+        "id": "F6",
+        "line": 15
+      },
+      {
+        "id": "F7",
+        "line": 16
+      },
+      {
+        "id": "F8",
+        "line": 17
+      },
+      {
+        "id": "F9",
+        "line": 18
+      },
+      {
+        "id": "F10",
+        "line": 19
+      },
+      {
+        "id": "F11",
+        "line": 20
+      },
+      {
+        "id": "C1",
+        "line": 21
+      },
+      {
+        "id": "C9",
+        "line": 22
+      },
+      {
+        "id": "P1",
+        "line": 23
+      },
+      {
+        "id": "V14",
+        "line": 24
+      }
+    ],
+    "ly-corporate-income-tax.md": [
+      {
+        "id": "G1",
+        "line": 7
+      },
+      {
+        "id": "G2",
+        "line": 8
+      },
+      {
+        "id": "G4",
+        "line": 9
+      },
+      {
+        "id": "G5",
+        "line": 10
+      },
+      {
+        "id": "G6",
+        "line": 11
+      },
+      {
+        "id": "G7",
+        "line": 12
+      },
+      {
+        "id": "C1",
+        "line": 13
+      },
+      {
+        "id": "C2",
+        "line": 14
+      },
+      {
+        "id": "C3",
+        "line": 15
+      },
+      {
+        "id": "C4",
+        "line": 16
+      },
+      {
+        "id": "C5",
+        "line": 17
+      },
+      {
+        "id": "C6",
+        "line": 18
+      },
+      {
+        "id": "C7",
+        "line": 19
+      },
+      {
+        "id": "C8",
+        "line": 20
+      },
+      {
+        "id": "C9",
+        "line": 21
+      },
+      {
+        "id": "C10",
+        "line": 22
+      },
+      {
+        "id": "C11",
+        "line": 23
+      },
+      {
+        "id": "C12",
+        "line": 24
+      },
+      {
+        "id": "C13",
+        "line": 25
+      },
+      {
+        "id": "C14",
+        "line": 26
+      },
+      {
+        "id": "C15",
+        "line": 27
+      },
+      {
+        "id": "I1",
+        "line": 28
+      },
+      {
+        "id": "I18",
+        "line": 29
+      },
+      {
+        "id": "I19",
+        "line": 30
+      },
+      {
+        "id": "I20",
+        "line": 31
+      },
+      {
+        "id": "I21",
+        "line": 32
+      },
+      {
+        "id": "I22",
+        "line": 33
+      },
+      {
+        "id": "I23",
+        "line": 34
+      },
+      {
+        "id": "I24",
+        "line": 35
+      },
+      {
+        "id": "I25",
+        "line": 36
+      },
+      {
+        "id": "I32",
+        "line": 37
+      },
+      {
+        "id": "I34",
+        "line": 38
+      },
+      {
+        "id": "I35",
+        "line": 39
+      },
+      {
+        "id": "I36",
+        "line": 40
+      },
+      {
+        "id": "I37",
+        "line": 41
+      },
+      {
+        "id": "I38",
+        "line": 42
+      }
+    ],
+    "ly-cross-border-tax.md": [
+      {
+        "id": "G1",
+        "line": 7
+      },
+      {
+        "id": "G2",
+        "line": 8
+      },
+      {
+        "id": "I1",
+        "line": 9
+      },
+      {
+        "id": "I15",
+        "line": 10
+      },
+      {
+        "id": "I26",
+        "line": 11
+      },
+      {
+        "id": "C1",
+        "line": 12
+      },
+      {
+        "id": "P3",
+        "line": 13
+      },
+      {
+        "id": "C11",
+        "line": 14
+      },
+      {
+        "id": "C12",
+        "line": 15
+      },
+      {
+        "id": "T1",
+        "line": 16
+      },
+      {
+        "id": "T2",
+        "line": 17
+      },
+      {
+        "id": "T3",
+        "line": 18
+      },
+      {
+        "id": "T4",
+        "line": 19
+      },
+      {
+        "id": "T5",
+        "line": 20
+      },
+      {
+        "id": "T6",
+        "line": 21
+      },
+      {
+        "id": "T7",
+        "line": 22
+      },
+      {
+        "id": "T8",
+        "line": 23
+      },
+      {
+        "id": "T9",
+        "line": 24
+      },
+      {
+        "id": "T10",
+        "line": 25
+      },
+      {
+        "id": "T11",
+        "line": 26
+      },
+      {
+        "id": "T12",
+        "line": 27
+      },
+      {
+        "id": "X1",
+        "line": 28
+      },
+      {
+        "id": "X2",
+        "line": 29
+      },
+      {
+        "id": "X3",
+        "line": 30
+      }
+    ],
+    "ly-income-tax.md": [
+      {
+        "id": "G1",
+        "line": 7
+      },
+      {
+        "id": "G2",
+        "line": 8
+      },
+      {
+        "id": "G3",
+        "line": 9
+      },
+      {
+        "id": "G4",
+        "line": 10
+      },
+      {
+        "id": "G5",
+        "line": 11
+      },
+      {
+        "id": "G6",
+        "line": 12
+      },
+      {
+        "id": "G7",
+        "line": 13
+      },
+      {
+        "id": "I1",
+        "line": 14
+      },
+      {
+        "id": "I2",
+        "line": 15
+      },
+      {
+        "id": "I3",
+        "line": 16
+      },
+      {
+        "id": "I4",
+        "line": 17
+      },
+      {
+        "id": "I5",
+        "line": 18
+      },
+      {
+        "id": "I6",
+        "line": 19
+      },
+      {
+        "id": "I7",
+        "line": 20
+      },
+      {
+        "id": "I8",
+        "line": 21
+      },
+      {
+        "id": "I9",
+        "line": 22
+      },
+      {
+        "id": "I10",
+        "line": 23
+      },
+      {
+        "id": "I11",
+        "line": 24
+      },
+      {
+        "id": "I12",
+        "line": 25
+      },
+      {
+        "id": "I13",
+        "line": 26
+      },
+      {
+        "id": "I14",
+        "line": 27
+      },
+      {
+        "id": "I15",
+        "line": 28
+      },
+      {
+        "id": "I16",
+        "line": 29
+      },
+      {
+        "id": "I17",
+        "line": 30
+      },
+      {
+        "id": "I18",
+        "line": 31
+      },
+      {
+        "id": "I19",
+        "line": 32
+      },
+      {
+        "id": "I20",
+        "line": 33
+      },
+      {
+        "id": "I21",
+        "line": 34
+      },
+      {
+        "id": "I22",
+        "line": 35
+      },
+      {
+        "id": "I23",
+        "line": 36
+      },
+      {
+        "id": "I24",
+        "line": 37
+      },
+      {
+        "id": "I25",
+        "line": 38
+      },
+      {
+        "id": "I26",
+        "line": 39
+      },
+      {
+        "id": "I27",
+        "line": 40
+      },
+      {
+        "id": "I28",
+        "line": 41
+      },
+      {
+        "id": "I29",
+        "line": 42
+      },
+      {
+        "id": "I30",
+        "line": 43
+      },
+      {
+        "id": "I31",
+        "line": 44
+      },
+      {
+        "id": "I32",
+        "line": 45
+      },
+      {
+        "id": "I33",
+        "line": 46
+      },
+      {
+        "id": "I34",
+        "line": 47
+      },
+      {
+        "id": "I35",
+        "line": 48
+      },
+      {
+        "id": "I36",
+        "line": 49
+      },
+      {
+        "id": "I37",
+        "line": 50
+      },
+      {
+        "id": "I38",
+        "line": 51
+      },
+      {
+        "id": "I39",
+        "line": 52
+      },
+      {
+        "id": "P3",
+        "line": 53
+      }
+    ],
+    "ly-payroll-social.md": [
+      {
+        "id": "G2",
+        "line": 7
+      },
+      {
+        "id": "G4",
+        "line": 8
+      },
+      {
+        "id": "G5",
+        "line": 9
+      },
+      {
+        "id": "G6",
+        "line": 10
+      },
+      {
+        "id": "P1",
+        "line": 11
+      },
+      {
+        "id": "P2",
+        "line": 12
+      },
+      {
+        "id": "P3",
+        "line": 13
+      },
+      {
+        "id": "P4",
+        "line": 14
+      },
+      {
+        "id": "P5",
+        "line": 15
+      },
+      {
+        "id": "P6",
+        "line": 16
+      },
+      {
+        "id": "P7",
+        "line": 17
+      },
+      {
+        "id": "P8",
+        "line": 18
+      },
+      {
+        "id": "P9",
+        "line": 19
+      },
+      {
+        "id": "P10",
+        "line": 20
+      },
+      {
+        "id": "P11",
+        "line": 21
+      },
+      {
+        "id": "P12",
+        "line": 22
+      },
+      {
+        "id": "P13",
+        "line": 23
+      },
+      {
+        "id": "I10",
+        "line": 24
+      },
+      {
+        "id": "I14",
+        "line": 25
+      },
+      {
+        "id": "I15",
+        "line": 26
+      },
+      {
+        "id": "I26",
+        "line": 27
+      },
+      {
+        "id": "I27",
+        "line": 28
+      },
+      {
+        "id": "I28",
+        "line": 29
+      },
+      {
+        "id": "I35",
+        "line": 30
+      },
+      {
+        "id": "I38",
+        "line": 31
+      },
+      {
+        "id": "T9",
+        "line": 32
+      }
+    ],
+    "ly-tax-overview.md": [
+      {
+        "id": "G1",
+        "line": 7
+      },
+      {
+        "id": "G2",
+        "line": 8
+      },
+      {
+        "id": "G3",
+        "line": 9
+      },
+      {
+        "id": "G4",
+        "line": 10
+      },
+      {
+        "id": "G5",
+        "line": 11
+      },
+      {
+        "id": "G6",
+        "line": 12
+      },
+      {
+        "id": "I2",
+        "line": 13
+      },
+      {
+        "id": "I15",
+        "line": 14
+      },
+      {
+        "id": "C1",
+        "line": 15
+      },
+      {
+        "id": "C9",
+        "line": 16
+      },
+      {
+        "id": "P1",
+        "line": 17
+      },
+      {
+        "id": "P2",
+        "line": 18
+      },
+      {
+        "id": "P4",
+        "line": 19
+      },
+      {
+        "id": "V1",
+        "line": 20
+      },
+      {
+        "id": "V12",
+        "line": 21
+      },
+      {
+        "id": "V13",
+        "line": 22
+      },
+      {
+        "id": "F1",
+        "line": 23
+      },
+      {
+        "id": "F2",
+        "line": 24
+      },
+      {
+        "id": "F4",
+        "line": 25
+      },
+      {
+        "id": "F10",
+        "line": 26
+      },
+      {
+        "id": "T1",
+        "line": 27
+      },
+      {
+        "id": "T4",
+        "line": 28
+      },
+      {
+        "id": "T9",
+        "line": 29
+      },
+      {
+        "id": "O1",
+        "line": 30
+      }
+    ],
+    "ly-transfer-pricing.md": [
+      {
+        "id": "G1",
+        "line": 7
+      },
+      {
+        "id": "G2",
+        "line": 8
+      },
+      {
+        "id": "I25",
+        "line": 9
+      },
+      {
+        "id": "C4",
+        "line": 10
+      },
+      {
+        "id": "C5",
+        "line": 11
+      },
+      {
+        "id": "C7",
+        "line": 12
+      },
+      {
+        "id": "C8",
+        "line": 13
+      },
+      {
+        "id": "C9",
+        "line": 14
+      },
+      {
+        "id": "T1",
+        "line": 15
+      },
+      {
+        "id": "T2",
+        "line": 16
+      },
+      {
+        "id": "T3",
+        "line": 17
+      },
+      {
+        "id": "T4",
+        "line": 18
+      },
+      {
+        "id": "T5",
+        "line": 19
+      },
+      {
+        "id": "T7",
+        "line": 20
+      },
+      {
+        "id": "T8",
+        "line": 21
+      },
+      {
+        "id": "T12",
+        "line": 22
+      }
+    ],
+    "ly-vat-gst.md": [
+      {
+        "id": "G2",
+        "line": 7
+      },
+      {
+        "id": "G6",
+        "line": 8
+      },
+      {
+        "id": "V1",
+        "line": 9
+      },
+      {
+        "id": "V2",
+        "line": 10
+      },
+      {
+        "id": "V3",
+        "line": 11
+      },
+      {
+        "id": "V4",
+        "line": 12
+      },
+      {
+        "id": "V5",
+        "line": 13
+      },
+      {
+        "id": "V6",
+        "line": 14
+      },
+      {
+        "id": "V7",
+        "line": 15
+      },
+      {
+        "id": "V8",
+        "line": 16
+      },
+      {
+        "id": "V9",
+        "line": 17
+      },
+      {
+        "id": "V10",
+        "line": 18
+      },
+      {
+        "id": "V11",
+        "line": 19
+      },
+      {
+        "id": "V12",
+        "line": 20
+      },
+      {
+        "id": "V13",
+        "line": 21
+      },
+      {
+        "id": "V14",
+        "line": 22
+      },
+      {
+        "id": "V15",
+        "line": 23
+      }
+    ]
+  },
+  "scope": [
+    "A\tdocs/research/2026-11-01-libya-pack/README.md",
+    "A\tdocs/research/2026-11-01-libya-pack/candidate-guide-hashes.json",
+    "A\tdocs/research/2026-11-01-libya-pack/fact-register.json",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-company-formation.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-corporate-income-tax.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-cross-border-tax.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-income-tax.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-payroll-social.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-tax-overview.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-transfer-pricing.md",
+    "A\tdocs/research/2026-11-01-libya-pack/ledgers/ly-vat-gst.md",
+    "A\tdocs/research/2026-11-01-libya-pack/old-hashes.json",
+    "A\tdocs/research/2026-11-01-libya-pack/old-topic-destination-map.md",
+    "A\tdocs/research/2026-11-01-libya-pack/source-read-manifest.json",
+    "A\tdocs/research/2026-11-01-libya-pack/validation.md",
+    "M\tskills/libya/README.md",
+    "M\tskills/libya/ly-company-formation.md",
+    "M\tskills/libya/ly-corporate-income-tax.md",
+    "A\tskills/libya/ly-cross-border-tax.md",
+    "M\tskills/libya/ly-income-tax.md",
+    "M\tskills/libya/ly-payroll-social.md",
+    "M\tskills/libya/ly-tax-overview.md",
+    "A\tskills/libya/ly-transfer-pricing.md",
+    "M\tskills/libya/ly-vat-gst.md"
+  ],
+  "all_7_domains_partial": true,
+  "distinct_ledger_records": 116,
+  "ledger_placements_total": 208,
+  "frozen_content_hashes": {
+    "docs/research/2026-11-01-libya-pack/README.md": "e331171baac742c0464896b5849889bfefefcd0d42ab930d6e12e7bb91ad850f",
+    "docs/research/2026-11-01-libya-pack/candidate-guide-hashes.json": "63c8725252efea4ccb41bbddf5111adce9eb656773f3c4776d25d128dd45b1bb",
+    "docs/research/2026-11-01-libya-pack/fact-register.json": "ed2bd5481ed8f5a74aa69601222a5c2ce656786789fe8a83c21678d7608544d5",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-company-formation.md": "dea6af327d82edf3d6239633385d5b4d4e3042d8086e7812922f877dc909e5bf",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-corporate-income-tax.md": "679dc8075477839ce16515b8dc4763d59a5cb1840dc2527fbda5b4f0773e81a1",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-cross-border-tax.md": "b2c2780040c9e6b9b4877e863f5e635e5fd2a5306e47e0f3d759b6f99fc8c2bd",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-income-tax.md": "d0e9f15895c6b6b1689abef4d35ae1e1478ea2a172d1e816b0a5151f617e1d9e",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-payroll-social.md": "bf2b71e4323f61c2c877acbab085f4e787944a3c88dc3141e9bd6822fb5b54cc",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-tax-overview.md": "f7a3e241a6cf2fda50cdf861e3704d17a0541faf6d7df514059d51e0b0473bae",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-transfer-pricing.md": "d336792f7174f5ea15a0c608ec547657861b5a7789491f6d2c3a7a236d8bb7ea",
+    "docs/research/2026-11-01-libya-pack/ledgers/ly-vat-gst.md": "3914fdecbc46b27e0653c741e1aa0777c48bf8e65b4eac88fc5f120f2131ca07",
+    "docs/research/2026-11-01-libya-pack/old-hashes.json": "a2492bb27910c1728f9a2d184ae068b83f1b546ae4212aaab5a1625590bdaab2",
+    "docs/research/2026-11-01-libya-pack/old-topic-destination-map.md": "8f6313fa32db54da1ad652d5462f1fb717a72c07a6bcff9478c3d845e7b42861",
+    "docs/research/2026-11-01-libya-pack/source-read-manifest.json": "270191f9992ed2e6976a4cb06c7c1ce89f8f5fc6a368b746211d348020b9346e",
+    "docs/research/2026-11-01-libya-pack/validation.md": "ed85efaeff8e5597ea4acdaf8dd59fdd52d6609affa881a164440387a370e11a",
+    "skills/libya/README.md": "b53b0eda597f4450093263d8a1e5c1ac78c17e502732dafab855ec9a64ef55c4",
+    "skills/libya/ly-company-formation.md": "2ed3096a361c022110945778074fc79f57a4e01163f9184670cdb41b6998ada0",
+    "skills/libya/ly-corporate-income-tax.md": "cbc9e4b026eb6b225b328a7b4c3190387a49dd6c527d760fd74c110446e1e20f",
+    "skills/libya/ly-cross-border-tax.md": "39d5d0ef8b4ec90a0a9a1bc2d78eed50be8aaa171a1abebc86b1990e63a4df07",
+    "skills/libya/ly-income-tax.md": "d339de7e2165a1fb8211fba00a1fd3debdc98a3423189f24d59edc85f90b275b",
+    "skills/libya/ly-payroll-social.md": "e028bd073edf7a80e07645467ac9dda679d9640b10ce666102901169a6ec2a68",
+    "skills/libya/ly-tax-overview.md": "f29e0d8d2ad7c5a5d6ca09cfccce3d79b00ae0eee942fa191cd9335a115d0742",
+    "skills/libya/ly-transfer-pricing.md": "b9d74a000c69da860309bcc5b72aa430a51329e2e3e6d7dcf8b208d895dcdaf0",
+    "skills/libya/ly-vat-gst.md": "2aa36fa31bfa0adff5d78f5aa610b3ebe7c34e476a35453b226b3e7011469403"
+  }
+}

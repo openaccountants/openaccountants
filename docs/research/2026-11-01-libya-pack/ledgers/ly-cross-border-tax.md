@@ -36,3 +36,9 @@ The two `oa-check` blocks are working-paper calculations using the statute-bound
 ## Legacy coverage
 
 See [old-topic-destination-map.md](../old-topic-destination-map.md) for every original bullet, its exact original text, old blob and destination. For a new Guide there is no predecessor content to remove. No Guide was deleted.
+
+## Additional evidence from independent-review corrections
+
+| ID | Figure/rule and Guide section | Act/article; actual read page | Exact original-language excerpt | Official URL | Read on | Conditions / limit |
+|---|---|---|---|---|---|---|
+| T10A | UK treaty entertainers and sportsmen income has separate activity-state rule, including income accruing to another person.; The base | UK-Libya treaty art.18; PDF 27 | Notwithstanding the provisions of Articles 8, 15 and 16 | https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf | 2026-11-01 | Personal activities exercised in other Contracting State; paragraph2 covers payment to another person. This is not the ordinary employment183-day exception. UK-Libya corridor only; later modification chain remains unresolved. |
