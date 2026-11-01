@@ -2,13 +2,13 @@
 name: lc-vat
 description: >
   Saint Lucia VAT registration, standard-rate calculation and return reference checked for 2026. Covers the statutory EC$400,000 registration threshold, forward-looking and three-month tests, standard VAT arithmetic, tourism-rate distinctions and nil-return filing. Use for Saint Lucia VAT, registration deadlines, taxable turnover, standard-rate invoices or tourism accommodation VAT. It uses the Attorney General Chambers revised legislation rather than old government pages retaining the original EC$180,000 threshold. Input recovery, exemptions, levy interaction and current amendments require further checking. This Guide does not claim complete VAT compliance or accountant review.
-version: 0.1
+version: 0.2
 jurisdiction: LC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -43,8 +43,6 @@ The [tourism order, S.I. 188/2020, paragraph 3](https://attorneygeneralchambers.
 Retain registration-trigger evidence, supply classification and separate tax calculations. Reconcile output VAT to invoices, and support every input deduction independently. This Guide does not establish recoverability for all purchases, refund entitlement or a zero-rating/exemption list.
 
 Payment mechanics, invoices, mixed supplies, input apportionment, imports, current sector amendments and the Health and Citizen Security Levy need separate checks. The examples calculate VAT only, not the total of every tax or levy. Independent review and amendment verification remain merge requirements.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

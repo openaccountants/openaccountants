@@ -1,13 +1,13 @@
 ---
 name: gi-property-stamp-duty
 description: Prepare an ordinary Gibraltar property conveyance stamp-duty calculation, separating the whole-property value test from consideration bands and excluding unverified relief eligibility.
-version: 0.1
+version: 0.2
 jurisdiction: GI
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -50,8 +50,6 @@ Attach a copy of the executed instrument or proposed execution version to the ca
 ## Scope remaining
 
 Relief eligibility, mortgages, leases, indirect property investments, gifts, exemptions, electronic filing, payment timing and penalties are not computed here. Do not reuse this table for those transactions. A reviewer must check current amendments and the actual facts before filing or paying. No accountant attestation is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

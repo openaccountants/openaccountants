@@ -2,13 +2,13 @@
 name: tc-hotel-tourism-tax
 description: >
   Turks and Caicos hotel and tourism tax reference checked for 2026. Covers the administrative scope of the twelve percent levy, advance registration, the application-based small-provider exemption and monthly filing. Includes tax-exclusive and tax-inclusive examples and the 2026 switch to automated emailed remittance forms. Distinguishes accommodation and prescribed tourism services from a universal sales tax, and hotel-attached restaurants from other designated establishments. Use after the transaction’s taxable status and tax base have been established. The operative ordinance, subsequent amendments, records-retention conflict and special transaction rules require further reconciliation. This source-cited draft is not independently accountant-reviewed.
-version: 0.1
+version: 0.2
 jurisdiction: TC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -46,8 +46,6 @@ The [July 2026 notice](https://www.gov.tc/revenue/news/inland-revenue-department
 Reconcile registered activity, invoices, tax collected, returns and payments each month. Preserve the records while the retention rule is resolved: the tourism-tax overview says seven years, while the generic FAQ says five. This batch does not certify either as the controlling statutory period.
 
 The link labelled as the hotel-tax ordinance on the Revenue homepage opened a business-licence consultation document. The separately linked February 2024 hotel-tax advisory also describes proposals. Neither has been treated as enacted law. The actual ordinance and amendment chain still need retrieval and reconciliation before merge, including rate, base, exemption, retention and penalty provisions. Independent accountant review is pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

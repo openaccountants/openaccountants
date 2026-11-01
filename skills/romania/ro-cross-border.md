@@ -1,13 +1,13 @@
 ---
 name: ro-cross-border
 description: "Use this skill when a person or company crosses Romania's border for tax: tax residence tests for individuals (domicile, centre of vital interests, more than 183 days in any 12 months) and for companies (Romanian legal person or place of effective management), arriving in Romania (the Z015 residence questionnaire, the digital nomad exemption), leaving (the Z017 questionnaire 30 days before departure, the extra three years of worldwide tax after a move to a non-treaty state, and the 16% company exit tax with a five-year instalment option), non-residents with Romanian income, withholding on outbound dividends, interest, royalties and service fees (16%, 10%, 50%), EU directive exemptions and treaty relief. Tax year 2026 (calendar year). Trigger phrases: moving to Romania, leaving Romania, non-resident Romania, expat Romania, exit tax Romania, digital nomad Romania, withholding tax Romania, certificat de rezidenta fiscala. Out of scope: ro-income-tax, ro-corporate-income-tax, ro-payroll-social, ro-cas-cass, ro-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -262,8 +262,6 @@ Not yet confirmed:
 - The Romanian body that issues A1 certificates, and its procedure.
 - The 2026 national minimum gross wage (used only to confirm that no personal deduction applies in Example 1).
 - Treaty withholding rates for individual treaty partners.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

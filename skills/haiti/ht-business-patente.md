@@ -2,13 +2,13 @@
 name: ht-business-patente
 description: >
   Haiti business patente reference under the replacement Tax Code effective 1 October 2026. Covers establishment-level liability, the fixed and proportional components, current commune groupings, turnover and payroll definitions, rounding, new-business treatment and filing evidence. Includes a worked calculation and distinguishes special rules for professionals, artisans and nonprofit entities. Uses the enactment rather than conflicting old webpage formulas and municipality lists. Incorporation, other business permissions, negative-base treatment, operational implementation decisions and independent accountant review are not established by this source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -57,8 +57,6 @@ Patente is due **between 1 October and 31 January** of the current fiscal year, 
 Notify creation, transfer, disposal or cessation in writing within **30 days**. Article 28 requires new commune taxpayers to declare and pay the first-year fixed charge at expiry of that period; its transfer exception must be checked for a move between communes. [2026 Code, articles 27–28, page 14](https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf#page=14).
 
 The [older DGI patente page](https://dgi.gouv.ht/dgi_sev/la-patente/) mixes 2-per-thousand and 4-per-thousand text and an older commune grouping. Use the enacted articles cited here for this new-code draft. Patente does not establish completion of incorporation, sector licensing, other taxes or all business compliance. Implementation decisions and independent review remain outstanding.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

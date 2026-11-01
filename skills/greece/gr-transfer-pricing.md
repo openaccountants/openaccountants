@@ -1,13 +1,13 @@
 ---
 name: gr-transfer-pricing
 description: "Greek transfer pricing for tax year 2026: who counts as a connected person (Income Tax Code, ν. 4172/2013, art. 2(ζ): the 33% test, relatives, control or decisive influence), the arm's length rule for companies (art. 50) and business restructurings (art. 51), the documentation file and Summary Information Table (ΣΠΠ) under art. 25 of the Tax Procedure Code (ν. 5104/2024, formerly art. 21 of ν. 4174/2013), the EUR 100,000 and EUR 200,000 exemptions tied to EUR 5,000,000 turnover, the ΣΠΠ deadline, the 30-day production rule, APAs (art. 26), the fines in arts. 55 and 56, and country-by-country reporting at EUR 750,000,000. Trigger on: Greek transfer pricing, ενδοομιλικές συναλλαγές, φάκελος τεκμηρίωσης, ΣΠΠ, Summary Information Table Greece, Greek APA, Greek CbCR. Out of scope: company tax computation (gr-corporate-income-tax), exit tax and withholding (gr-cross-border), individuals (gr-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -195,8 +195,6 @@ expected:
 | AADE, Ενδοομιλικές συναλλαγές (ΣΠΠ e-service, deadline, list of decisions: ΠΟΛ 1097/2014, ΠΟΛ 1144/2014) | https://www.aade.gr/endoomilikes-synallages | 2026-10-23 |
 
 Not yet confirmed: the content of the Master File, Local File and ΣΠΠ under ΠΟΛ 1097/2014 as amended by ΠΟΛ 1144/2014 (the decisions were identified but their text was not checked, so this skill does not list the file's contents or the ΣΠΠ fields); whether a newer decision under ΚΦΔ art. 83(29) replaced them; whether individuals carrying on a business are bound by art. 25, given that ΚΦΕ art. 50 names only legal persons and entities; the late payment interest rate under ΚΦΔ art. 52; any APA application fee; whether any AADE decision after Α.1341/2019 changed the country-by-country procedure; any 2026 law amending the Tax Procedure Code after ν. 5259/2025; the domestic rules implementing the EU dispute resolution directive 2017/1852.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

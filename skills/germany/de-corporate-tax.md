@@ -1,13 +1,13 @@
 ---
 name: de-corporate-tax
 description: "German corporate income tax (Körperschaftsteuer, KSt) for tax year 2026: GmbH, UG, AG and other companies resident in Germany, and German permanent establishments of foreign companies. Covers the 15% rate under § 23 KStG and the enacted cuts from 2028, the 5.5% solidarity surcharge, how trade tax adds to the burden, the taxable base, the § 8b participation exemption, loss carry-forward (EUR 1m plus 70% for 2024 to 2027, 60% from 2028) and carry-back, § 8c share changes, Organschaft, the interest barrier, prepayments, filing deadlines, late filing surcharges, interest, and Kapitalertragsteuer on outbound dividends. Trigger on: Körperschaftsteuer, KSt, GmbH tax Germany, German corporate tax rate, Soli on KSt, § 8b KStG, § 8c KStG, Organschaft, Zinsschranke, Verlustvortrag GmbH, Mindestbesteuerung, KSt-Vorauszahlungen, Kapitalertragsteuer Dividende. Out of scope: trade tax detail (de-trade-tax), transfer pricing (germany-transfer-pricing), individual shareholders (germany-income-tax, de-capital-gains), shareholder exit tax (leaving-germany-exit-tax), VAT (germany-vat-return)."
-version: 0.5
+version: 0.6
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -294,8 +294,6 @@ expected:
 | AO § 240(3) and § 224(2) no. 1 (three-day grace payment-method exception), selected operative clauses re-read | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-29 |
 
 Not yet confirmed: the ELSTER form set for tax year 2026. ELSTER's 2026 instructions page was empty on 2026-10-22, so the skill names the 2025 set (KSt 1 and annexes).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

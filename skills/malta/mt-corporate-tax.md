@@ -1,13 +1,13 @@
 ---
 name: mt-corporate-tax
 description: "Malta corporate income tax for basis year 2026 (year of assessment 2027): companies resident in Malta and Malta permanent establishments of foreign companies. Covers the 35% company rate, the full imputation system and the five tax accounts, shareholder refunds (six-sevenths, five-sevenths, two-thirds, full), the elective 15% final tax without imputation (LN 188 of 2025), the taxable base, loss carry-forward, group loss relief (51%) and fiscal units (95%), notional interest deduction, provisional tax, the company return and its deadline, interest and additional tax, outbound withholding, and Pillar Two status. Trigger on: Malta corporate tax, Malta company tax rate, 35% Malta, six-sevenths refund, Malta tax accounts, Malta fiscal unit, Malta group relief, Malta provisional tax company, Malta 15% final tax election. Out of scope: participation exemption detail (mt-holding-company-participation-exemption), company residence, CFC and exit tax (mt-company-residence-and-substance), transfer pricing (malta-transfer-pricing), individuals (malta-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -249,8 +249,6 @@ expected:
 MTCA pages sit behind a bot check; they were read in a browser.
 
 Not yet confirmed: whether the Gazette notice and rules that start the 175% deduction in art. 14(1)(ha) have been issued; the names and numbers of the return attachments (TRA forms) in the YA 2027 e-Return; MTCA's online filing extension dates for 2026 year ends; whether losses brought forward and group relief reduce income taxed under the 15% election; how the reg. 3(4)(a) floor treats shareholders not registered for refunds and Malta-resident individuals under article 43(6); the meaning of "specifically empowered to consolidate its results" in rule 6(2) S.L. 123.189; any regulations under article 22B Cap. 123; wear and tear rates under the Deductions (Wear and Tear) Rules (not read for this skill).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
