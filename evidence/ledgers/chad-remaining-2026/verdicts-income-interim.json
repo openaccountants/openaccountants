@@ -1,0 +1,188 @@
+{
+  "stage": "income reviewed; whole pack pending writer freeze",
+  "reviewed_utc": "2026-11-01T16:46:41.958100+00:00",
+  "immutable_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "sources": {
+    "cgi-2025-archive.pdf": {
+      "sha256": "75b798bb621b7a66bc9e4c647e02743c6ed6a2af44bd68a38fd499e478a57a11",
+      "bytes": 10284128
+    },
+    "finance-law-2026.pdf": {
+      "sha256": "7bc46241a7c7586d9eece4fb5c95a6587ba637732480b7b4c8cfbf31112d7fd2",
+      "bytes": 15295926
+    }
+  },
+  "guides": {
+    "td-income-tax": {
+      "sha256": "ba2555b6740e44c2a03f0a3e1e75a961458ddb03b31fe17f854272855d30a465",
+      "ledger_sha256": "74c91b26f7e57e3b5e297a18c8196f394aa6b56b6903863c73ec7d4b1b9b5880",
+      "rows": [
+        {
+          "id": 1,
+          "verdict": "pass",
+          "independent_basis": "LF3 new article1 and CGI9 distinguish labour/capital; new text read with old block."
+        },
+        {
+          "id": 2,
+          "verdict": "pass",
+          "independent_basis": "LF3 new scale; first 800000 zero; scan p4 checked."
+        },
+        {
+          "id": 3,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms10.5%; marginal slice5200000."
+        },
+        {
+          "id": 4,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms6000001\u20137500000,15%."
+        },
+        {
+          "id": 5,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms7500001\u20139000000,20%."
+        },
+        {
+          "id": 6,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms9000001\u201312000000,25%."
+        },
+        {
+          "id": 7,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms above12000000,30%; OCR B0 corrected by image."
+        },
+        {
+          "id": 8,
+          "verdict": "pass",
+          "independent_basis": "LF3 new1V expressly15% net per category except rent10%; p4 scan."
+        },
+        {
+          "id": 9,
+          "verdict": "pass",
+          "independent_basis": "LF4 new2I preserves convention reservation; each category domestic/foreign."
+        },
+        {
+          "id": 10,
+          "verdict": "pass",
+          "independent_basis": "CGI2I/II and LF4 old block plus remainder unchanged; both day formulations retained."
+        },
+        {
+          "id": 11,
+          "verdict": "pass",
+          "independent_basis": "CGI2III domestic income and special44II are separately disclosed."
+        },
+        {
+          "id": 12,
+          "verdict": "pass",
+          "independent_basis": "CGI4I\u2013II spouse own income and community shares/half verified."
+        },
+        {
+          "id": 13,
+          "verdict": "pass",
+          "independent_basis": "CGI8 and9I\u2013III year and net category sum verified."
+        },
+        {
+          "id": 14,
+          "verdict": "pass",
+          "independent_basis": "CGI44I\u2013III resident abroad and double nonresident salary condition verified."
+        },
+        {
+          "id": 15,
+          "verdict": "pass",
+          "independent_basis": "CGI45 plus LF8 pp15\u201316 retained exemptions; actual use and15% denominator correct."
+        },
+        {
+          "id": 16,
+          "verdict": "pass",
+          "independent_basis": "CGI45(13), LF8 old block and remainder unchanged; scan p16 all-personnel condition and30% basic salary verified."
+        },
+        {
+          "id": 17,
+          "verdict": "pass",
+          "independent_basis": "LF5 p6 deletion read with LF8 p16 new45(18); both scans checked; not mistaken abolition."
+        },
+        {
+          "id": 18,
+          "verdict": "pass",
+          "independent_basis": "CGI3(4), LF5 old/new and remainder unchanged; under35 graduates, recruited workers, five years correctly conditional."
+        },
+        {
+          "id": 19,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI46I\u2013VI read with47\u201348; Guide holds detailed housing/cash interaction rather than asserting valuation."
+        },
+        {
+          "id": 20,
+          "verdict": "pass",
+          "independent_basis": "CGI47I\u2013II3.5% pension cap and separately mandatory social deductions; compulsory requirement verified."
+        },
+        {
+          "id": 21,
+          "verdict": "pass",
+          "independent_basis": "CGI10\u201313 receipts, owner charges shifted to tenant and relevant subsidies; net formula verified."
+        },
+        {
+          "id": 22,
+          "verdict": "pass",
+          "independent_basis": "CGI14I\u2013IV,15 and17(7);30%/5%, actual justified costs and five next years verified."
+        },
+        {
+          "id": 23,
+          "verdict": "pass",
+          "independent_basis": "LF15 new119 scan p22; individual10/legal15 and equipment separate paragraph retained."
+        },
+        {
+          "id": 24,
+          "verdict": "pass",
+          "independent_basis": "LF14 new118, old exempt clause and continuation p22 verified."
+        },
+        {
+          "id": 25,
+          "verdict": "pass",
+          "independent_basis": "CGI847\u2013850 neighbours read; administration scale,15followingmonth,849 eTAX acknowledgement verified."
+        },
+        {
+          "id": 26,
+          "verdict": "pass",
+          "independent_basis": "CGI986\u2013994 original clauses read; January, annual60000 threshold and foreign-recipient requirement verified."
+        },
+        {
+          "id": 27,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI983\u2013985 read with neighbours; nature/foreign/signed form supported;30April explicitly held."
+        },
+        {
+          "id": 28,
+          "verdict": "pass",
+          "independent_basis": "CGI1042I\u2013II read with1038\u20131044;1.5% month/part50%max and prosecution verified."
+        },
+        {
+          "id": 29,
+          "verdict": "pass",
+          "independent_basis": "CGI1038\u20131044 original and neighbours read; notice conditions and separate2% recovery timeline correctly distinguished."
+        },
+        {
+          "id": 30,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI105\u2013108 and117III\u2013IV read with104/110/116; five-times floor and treaty/paid-tax relief exclusions verified."
+        }
+      ],
+      "independently_recomputed_cases": [
+        {
+          "case": 1,
+          "net": 7720000,
+          "tax": 815000.0
+        },
+        {
+          "case": 2,
+          "labour_tax": 1821000.0,
+          "gross_tax": 2171000,
+          "incorrect_combined": 2721000.0,
+          "overstatement": 550000
+        }
+      ],
+      "mechanical_checks": "15/15 passed;2oa-check passed"
+    }
+  }
+}

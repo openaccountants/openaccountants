@@ -1,0 +1,40 @@
+# Independent closure review: Chad remaining preparation methods
+
+Fresh independent reviewer, separate from the sole Guide writer. Reviewed 2026-11-01. Immutable predecessor base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`; initial full candidate `75a9b56f7dd12827836f90599fb92ec83310d37b`; reviewed correction candidate `416ec514979330e5980061eda4a38ab2cdef6e4a`.
+
+**Decision: accept the defined preparation and working-paper scopes only.** No blocking claim or preservation defect remains in the correction candidate. This is independent AI source review, not accountant attestation, complete current-law certification, a completed tax domain or permission to file. All seven tax domains, formation/reporting depth and the wider jobs in the README remain partial. Existing Guide metadata still correctly says pending review; no licensed review fields were invented.
+
+## Extent of review
+
+I independently checked all **126 source-ledger rows**: income 30, corporate 24, VAT 17, transfer pricing 7, CNPS 16, DGI payroll 6, formation/reporting 26. The overview ledger adds editorial routing controls and two hypothetical reconciliation cases, without new statutory rates or dates. `verdicts.json` records a verdict and source-specific independent basis for every row, each Guide/ledger hash, eight actual source capture hashes, all 159 predecessor destinations and the independently recomputed cases.
+
+I read the actual original-language source clauses and neighbours, rather than accepting the writer/source researchers' matrices as evidence. Original scans inspected where important: LF2026 printed pp 4,6,16,22,49,81; CNPS employer PDF p 11; the complete ANIE one-page sheet; AUSCGIE printed p 77; AUDCIF PDF pp 20,24. The LF scale image resolves OCR's `B0%` to 30%. Old/new LF blocks were kept separate, including disability relocation, rate changes and invoice/credit rules.
+
+Source scope: CGI1–17,25–26,37–41,44–48,104–108,110,116–119,129–152,171–190,226–246,842–850,857–858,886–891,983–1008,1038–1045,1056–1069 and relevant neighbouring clauses; LF3–5,7–15,20,22–35,37,43,73 and relevant continuation blocks. AUSCGIE309–313,346–349,376–389,702–704,853-1–853-13,117–120,137–146,269 and neighbouring definitions; AUDCIF1–24,112–113. CNPS employer registration/contribution/payment/annual-reconciliation sections pp 4–12, insured coverage/contribution sections pp 6–8, and the archived employer page's PDF linkage; ANIE entire formation sheet. This is a scoped source read, not a claim that the whole CGI or all later instruments were reviewed.
+
+All **159 nonblank predecessor editorial lines** match their immutable original blobs and are accounted for, including introductions, headings, bullets, table rows and example lines. I checked the destinations semantically as well as mechanically. Unsupported old claims are explicit holds, including the company forfait boundary, original WHT topics, individual annual deadline, SARL partner/SA-ceiling claims, cement/digital-platform/commodity questions and broader regional membership claims. No lost content needs restoring: **Lost content restored: 0**. Withheld old numerical assertions were not recertified from their secondary citations.
+
+The six rewritten legacy Guides retain the exact existing platform/byline/licence/review fields and complete CTA suffixes. Their names and jurisdiction remain unchanged. The new TP Guide has no inherited platform fields/CTA to preserve and does not invent licensed authorship. The prior import Guide matches its immutable base byte-for-byte, including its two examples; all historical Chad review evidence remains unchanged. Its previous narrow non-wheat acceptance and wheat hold are preserved, not expanded by this review.
+
+## Findings closed
+
+1. Corporate filing omitted CGI1004(I)'s compulsory CEMAC-approved expert validation of RSI/real-regime accounts. The writer added a before filing requirement and an explicit hold if unavailable, with ledgerC24. Verified against the original clause.
+2. Formation incorrectly attributed the predecessor's unsupported 2–8 week estimate to ANIE. Corrected to identify it as an unsupported predecessor estimate, while retaining current cost/time gaps. Verified against the complete ANIE sheet, which has no such timetable.
+3. Formation applied normal-system double-entry/records language after choosing either normal or SMT. Corrected to distinguish normal records from AUDCIF21 cash accounting for eligible SMT entities; detailed SMT implementation remains held. F21 ledger now contains the qualification and original-language art 21 support. Verified against arts 13,16–21.
+4. VAT ledgerV01/source matrix incorrectly referred to a nonexistent accepted platform Guide. Corrected to the actual explicit VAT platform-method hold. No platform acceptance was inferred.
+
+The first two corrections preceded candidate `75a9b56f7`; the last two are in correction candidate `416ec5149`. The interim income review and its JSON/mechanical results have separate additive history files. No earlier acceptance document was rewritten.
+
+## Calculations and mechanical verification
+
+I independently recomputed all **14 new examples** and their substantive decisions, rather than treating executable success as proof of legal correctness: income 815000 and 2171000, corporate 6006000/6000000 controlling liabilities, VAT237545 and 198000/385000, payroll 40000remittance/250400cost and 100000remittance/1000late charge, capital payment fractions, strict audit thresholds, both 10million TP adjustments, and router payment/credit separations. Hypothetical inputs/comparables are not statutory rates or safe harbours. Full values and boundary decisions appear in `verdicts.json`.
+
+The independent audit script `review-checks.py` verifies the correction manifest's exact file hashes against committed bytes, immutable base identities, complete predecessor text, platform fields and CTA suffixes. All seven changed Guides pass all 15 mechanical checks; all 14 executable new cases pass. Strict sync integrity reports zero errors/warnings/notices, and the entire base-to-candidate diff passes whitespace checking. The prior import examples remain byte-for-byte and are not used to expand that Guide's acceptance. Mechanical results and exact command output are in `mechanical-results.json`.
+
+The exact reviewed Guide/ledger/map hashes are the files in `closure-candidate-manifest.json`, independently verified and duplicated under `frozen_file_sha256` in `verdicts.json`; substantive acceptance attaches to those bytes. Later substantive amendments require their own review. No application, generated package/index or production data changes are part of this review.
+
+## Actual unresolved source and implementation limits
+
+These are scope gaps rather than incorrect operative claims: individual business/agricultural/noncommercial bases and disposals; annual individual due date, monthly payroll table, detailed benefits and treaty/credit/exit interactions; corporate depreciation maxima, low-turnover company regime, minimum-tax floor/period contradictions and advance-base arrêté; VAT lower RSI entitlement, period/commodity conflicts, cement implementation, digital platforms and input-centimes/refund implementation; CNPS later minimum-wage/rate instruments, partial months/years, multiple employers and special agreements; national SARL implementation, fees/timing, registry penalties and detailed accounting; payment-specific cross-border withholding conflicts, treaty relief, property/local taxes and complete customs/HS workflow, including wheat. Live portal/forms/boxes/payment-reference procedures remain unacquired.
+
+The official CGI was recovered from a dated archive after ordinary access failures; the archived CNPS/ANIE guidance is accurately labelled and does not prove absence of later legislation. No new rate was guessed to remove a gap. No question or research task is passed to Michael by this review. Any later source-only or income addendum is outside this candidate and outside this acceptance until separately reviewed.

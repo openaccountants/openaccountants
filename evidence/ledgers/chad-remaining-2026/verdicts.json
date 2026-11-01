@@ -1,0 +1,1675 @@
+{
+  "stage": "final independent scoped acceptance",
+  "reviewed_utc": "2026-11-01T17:18:37.203713+00:00",
+  "immutable_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "sources": {
+    "cgi-2025-archive.pdf": {
+      "sha256": "75b798bb621b7a66bc9e4c647e02743c6ed6a2af44bd68a38fd499e478a57a11",
+      "bytes": 10284128
+    },
+    "finance-law-2026.pdf": {
+      "sha256": "7bc46241a7c7586d9eece4fb5c95a6587ba637732480b7b4c8cfbf31112d7fd2",
+      "bytes": 15295926
+    },
+    "cnps-employer-guide-archive-20240717.pdf": {
+      "sha256": "2755ba38e916c57710904308851312407cb18591a0e30a839e9ca1b3f795cf77",
+      "bytes": 675468
+    },
+    "cnps-insured-guide-archive-20240717.pdf": {
+      "sha256": "e2a4c6e3f4add0adf6e5442f49e6e7a36380311e0c8c2a1284318b297dabeb34",
+      "bytes": 1346719
+    },
+    "cnps-employer-page-archive-20260223.html": {
+      "sha256": "9ef9a097d1e073a724886b3a0cc56d9c31dc0d0f6a0ae1256d516f11092310f2",
+      "bytes": 27510
+    },
+    "anie-formation-archive-20250710.pdf": {
+      "sha256": "0b88af29d5558ab159c4fee62c8488a4383cb0902aef5ffd6826ef6e479715c9",
+      "bytes": 93914
+    },
+    "ohada-auscgie-2014-official.pdf": {
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "bytes": 16313466
+    },
+    "ohada-audcif-2017.pdf": {
+      "sha256": "6444eb3865dc866a3a986e241c41a41e96045b9263b9a77a8992c7398dac17a6",
+      "bytes": 5683426
+    }
+  },
+  "guides": {
+    "td-income-tax": {
+      "sha256": "ba2555b6740e44c2a03f0a3e1e75a961458ddb03b31fe17f854272855d30a465",
+      "ledger_sha256": "74c91b26f7e57e3b5e297a18c8196f394aa6b56b6903863c73ec7d4b1b9b5880",
+      "rows": [
+        {
+          "id": 1,
+          "verdict": "pass",
+          "independent_basis": "LF3 new article1 and CGI9 distinguish labour/capital; new text read with old block."
+        },
+        {
+          "id": 2,
+          "verdict": "pass",
+          "independent_basis": "LF3 new scale; first 800000 zero; scan p4 checked."
+        },
+        {
+          "id": 3,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms10.5%; marginal slice5200000."
+        },
+        {
+          "id": 4,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms6000001–7500000,15%."
+        },
+        {
+          "id": 5,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms7500001–9000000,20%."
+        },
+        {
+          "id": 6,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms9000001–12000000,25%."
+        },
+        {
+          "id": 7,
+          "verdict": "pass",
+          "independent_basis": "LF3 scan p4 confirms above12000000,30%; OCR B0 corrected by image."
+        },
+        {
+          "id": 8,
+          "verdict": "pass",
+          "independent_basis": "LF3 new1V expressly15% net per category except rent10%; p4 scan."
+        },
+        {
+          "id": 9,
+          "verdict": "pass",
+          "independent_basis": "LF4 new2I preserves convention reservation; each category domestic/foreign."
+        },
+        {
+          "id": 10,
+          "verdict": "pass",
+          "independent_basis": "CGI2I/II and LF4 old block plus remainder unchanged; both day formulations retained."
+        },
+        {
+          "id": 11,
+          "verdict": "pass",
+          "independent_basis": "CGI2III domestic income and special44II are separately disclosed."
+        },
+        {
+          "id": 12,
+          "verdict": "pass",
+          "independent_basis": "CGI4I–II spouse own income and community shares/half verified."
+        },
+        {
+          "id": 13,
+          "verdict": "pass",
+          "independent_basis": "CGI8 and9I–III year and net category sum verified."
+        },
+        {
+          "id": 14,
+          "verdict": "pass",
+          "independent_basis": "CGI44I–III resident abroad and double nonresident salary condition verified."
+        },
+        {
+          "id": 15,
+          "verdict": "pass",
+          "independent_basis": "CGI45 plus LF8 pp15–16 retained exemptions; actual use and15% denominator correct."
+        },
+        {
+          "id": 16,
+          "verdict": "pass",
+          "independent_basis": "CGI45(13), LF8 old block and remainder unchanged; scan p16 all-personnel condition and30% basic salary verified."
+        },
+        {
+          "id": 17,
+          "verdict": "pass",
+          "independent_basis": "LF5 p6 deletion read with LF8 p16 new45(18); both scans checked; not mistaken abolition."
+        },
+        {
+          "id": 18,
+          "verdict": "pass",
+          "independent_basis": "CGI3(4), LF5 old/new and remainder unchanged; under35 graduates, recruited workers, five years correctly conditional."
+        },
+        {
+          "id": 19,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI46I–VI read with47–48; Guide holds detailed housing/cash interaction rather than asserting valuation."
+        },
+        {
+          "id": 20,
+          "verdict": "pass",
+          "independent_basis": "CGI47I–II3.5% pension cap and separately mandatory social deductions; compulsory requirement verified."
+        },
+        {
+          "id": 21,
+          "verdict": "pass",
+          "independent_basis": "CGI10–13 receipts, owner charges shifted to tenant and relevant subsidies; net formula verified."
+        },
+        {
+          "id": 22,
+          "verdict": "pass",
+          "independent_basis": "CGI14I–IV,15 and17(7);30%/5%, actual justified costs and five next years verified."
+        },
+        {
+          "id": 23,
+          "verdict": "pass",
+          "independent_basis": "LF15 new119 scan p22; individual10/legal15 and equipment separate paragraph retained."
+        },
+        {
+          "id": 24,
+          "verdict": "pass",
+          "independent_basis": "LF14 new118, old exempt clause and continuation p22 verified."
+        },
+        {
+          "id": 25,
+          "verdict": "pass",
+          "independent_basis": "CGI847–850 neighbours read; administration scale,15followingmonth,849 eTAX acknowledgement verified."
+        },
+        {
+          "id": 26,
+          "verdict": "pass",
+          "independent_basis": "CGI986–994 original clauses read; January, annual60000 threshold and foreign-recipient requirement verified."
+        },
+        {
+          "id": 27,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI983–985 read with neighbours; nature/foreign/signed form supported;30April explicitly held."
+        },
+        {
+          "id": 28,
+          "verdict": "pass",
+          "independent_basis": "CGI1042I–II read with1038–1044;1.5% month/part50%max and prosecution verified."
+        },
+        {
+          "id": 29,
+          "verdict": "pass",
+          "independent_basis": "CGI1038–1044 original and neighbours read; notice conditions and separate2% recovery timeline correctly distinguished."
+        },
+        {
+          "id": 30,
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "CGI105–108 and117III–IV read with104/110/116; five-times floor and treaty/paid-tax relief exclusions verified."
+        }
+      ],
+      "independently_recomputed_cases": [
+        {
+          "case": 1,
+          "net": 7720000,
+          "tax": 815000.0
+        },
+        {
+          "case": 2,
+          "labour_tax": 1821000.0,
+          "gross_tax": 2171000,
+          "incorrect_combined": 2721000.0,
+          "overstatement": 550000
+        }
+      ],
+      "mechanical_checks": "15/15 passed;2oa-check passed"
+    },
+    "td-corporate-income-tax": {
+      "sha256": "aba119b2fb928b42f00b47eaa40385f89830fba4831b62ceeb9de519fb4650ed",
+      "ledger_sha256": "0ea85af0005924b1298a4e131dcb364c13b430c59b3cb1b5807b92d462926cba",
+      "rows": [
+        {
+          "id": "C01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "129–132 scope/exemptions and5III3 natural-person shareholder exception checked."
+        },
+        {
+          "id": "C02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "134I territory/treaty limit checked."
+        },
+        {
+          "id": "C03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "142III PE/cycle and>6months/>183days/12months checked."
+        },
+        {
+          "id": "C04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "25I–VI net-assets/disposal/stock/WIP rules checked."
+        },
+        {
+          "id": "C05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26II all five cumulative conditions checked."
+        },
+        {
+          "id": "C06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26III7–11 useful life, actual accounting, first use/proration and capital repairs checked; rates held."
+        },
+        {
+          "id": "C07",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26VII<=250000 movable/small tools boundary checked."
+        },
+        {
+          "id": "C08",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "134II third following year and separate deferred depreciation checked."
+        },
+        {
+          "id": "C09",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26XXXVIII cash>=500000 includes equality; distinct VAT threshold checked."
+        },
+        {
+          "id": "C10",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26XX andXXIX separate0.5% caps andXXVIII special gifts checked."
+        },
+        {
+          "id": "C11",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "26XXI–XXIII actual-service10%cap/exceptions/loss-year rule and1000V schedule checked."
+        },
+        {
+          "id": "C12",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "139 bank advances+2points and half-capital controlling-shareholder limit checked."
+        },
+        {
+          "id": "C13",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "140 IS/IRPP nondeduction and property-tax distinction checked."
+        },
+        {
+          "id": "C14",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "143–14430%/25% and20000-unit floor checked; both cases independently recomputed."
+        },
+        {
+          "id": "C15",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "149–1522%/accessory receipts/exemptions/annual credit checked; missing monetary floor held."
+        },
+        {
+          "id": "C16",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "842I normal monthly/RSI quarterly read with151–152; conflict explicitly held."
+        },
+        {
+          "id": "C17",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "843 advance dates/thirds checked; missing arrêté base held."
+        },
+        {
+          "id": "C18",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1008IV–V,XIII/VII and844 four-month return/following-month balance/single15day extension checked."
+        },
+        {
+          "id": "C19",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "999–1000 required DSF/accounts/schedules and exemption reporting checked."
+        },
+        {
+          "id": "C20",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF37new9961–5 electronic obligations plus5% monthly penalty checked against pp56–57."
+        },
+        {
+          "id": "C21",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1060 exact May15–31fine1500000 and June750000/monthpart checked without grace-period inference."
+        },
+        {
+          "id": "C22",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1041/1044/1045 and1062(2) separate sanctions,100/150%,1.5%cap50 and200000 checked."
+        },
+        {
+          "id": "C23",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF7new26XIV two/three years,50%/thirds,50m certified accounts and>5years write-off checked; specialist held."
+        },
+        {
+          "id": "C24",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1004I compulsory CEMAC-approved expert validation independently found, added to Guide/ledger and verified."
+        }
+      ]
+    },
+    "td-vat-gst": {
+      "sha256": "2c9b784f0cb01b20b3e2a05af946d6a91426184190925f7365dfaec25823b9d6",
+      "ledger_sha256": "75368c821289525c8ccc6fb54b8ce91f147270264fa1bece247d6d5ebaadf92e",
+      "rows": [
+        {
+          "id": "V01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "226–228 andLF29new227 transaction categories checked; nonexistent accepted-platform claim corrected to explicit hold."
+        },
+        {
+          "id": "V02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF30new229I–IV exact500/100/50m bounds checked; lower entitlement contradiction held."
+        },
+        {
+          "id": "V03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF30new229V supplier/customer/predicate and collection conditions checked."
+        },
+        {
+          "id": "V04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "231–232 delivery/use and resident representative/customer route checked."
+        },
+        {
+          "id": "V05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "233–234 delivery/import declaration/cash service/public-sector/advance-debit rules checked."
+        },
+        {
+          "id": "V06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "235–237 gross consideration/import/disbursement/discount and1000-base rounding checked."
+        },
+        {
+          "id": "V07",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF32new238 full list read and p49 scan checked;17.5/9/0%, air/aircraft scope and cement hold correct."
+        },
+        {
+          "id": "V08",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF73newLF2024art14 read pp81–82 and p81scan;10%ofprincipal,19.25/9.9 arithmetic checked."
+        },
+        {
+          "id": "V09",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "239I–VI,X necessity/documents/month/following-month/second-year deadline checked."
+        },
+        {
+          "id": "V10",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "241–242 cashHT>=500000,other exclusions andstaff-bus/business exceptions checked."
+        },
+        {
+          "id": "V11",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "243 numerator/denominator exclusions,monthlyactual/nearest1% andapprovedsectors checked."
+        },
+        {
+          "id": "V12",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "244 fourfollowingyear boundary,onefifth/yearpart andnoncapitalfullrepayment checked."
+        },
+        {
+          "id": "V13",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF33new246pp50–51 invoice/NIF,foreign exception,known-taxpayer5% andunknownsupplier limits checked."
+        },
+        {
+          "id": "V14",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "886–887andLF30new229III nil/monthly/first15days checked with38Vconflict held."
+        },
+        {
+          "id": "V15",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF35new891pp54–55 24months,5mtrader validation,no doubleoffset,refund/electronicproof conditions checked."
+        },
+        {
+          "id": "V16",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1068–1069return300000,late5%/cap50,cumulativefine andprorata100000 checked."
+        },
+        {
+          "id": "V17",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF31new230(6),(15) pp44–48 read; domesticjetA1 andmilk/meat/table overlap held rather than classified."
+        }
+      ]
+    },
+    "td-payroll-social": {
+      "sha256": "4fda45912a92a67611c2968a2600ad43cf665bbfefc6de2cb8dbbdf67b874a99",
+      "ledger_sha256": "7c9e23db5c177c7b50c5d211ad2abc90ede9355343201ebce0b7453f83eb5d58",
+      "rows": [
+        {
+          "id": "SC01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide4–6 firstemployee/temporary/probationary coverage read."
+        },
+        {
+          "id": "SC02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "InsuredGuide6 domestic-only affiliation andnationality/sex/age neutrality read."
+        },
+        {
+          "id": "SC03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide7 paid-month gross/allbenefits includingbackpay read."
+        },
+        {
+          "id": "SC04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide7–8 reimbursement-character condition read."
+        },
+        {
+          "id": "SC05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide7–9 SMIG59995rounded60000 read; historical/current-instrument limit explicit."
+        },
+        {
+          "id": "SC06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide9annual6m/month500kceilings read."
+        },
+        {
+          "id": "SC07",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide8branch7.5/4/8.5 total20% read."
+        },
+        {
+          "id": "SC08",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide8employer5pension+7.5+4=16.5 andemployee3.5 checked."
+        },
+        {
+          "id": "SC09",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide9andInsuredGuide7remitbothshares read."
+        },
+        {
+          "id": "SC10",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide10–11>=20monthly/<20quarterly read."
+        },
+        {
+          "id": "SC11",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide11nextperiod20th/Q1April20 read with scan."
+        },
+        {
+          "id": "SC12",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide11onepermille/day andexamples checked visually; simplecharge confirmed."
+        },
+        {
+          "id": "SC13",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide10completeddeclaration+payment andofficeassessment read."
+        },
+        {
+          "id": "SC14",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide12annualremuneration/6mceiling/recap read."
+        },
+        {
+          "id": "SC15",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide5–6 permanentworkerID/start/departure records read."
+        },
+        {
+          "id": "SC16",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "EmployerGuide6cessation notice andworkercessation form read."
+        },
+        {
+          "id": "PR01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "187–1907.5%actualgrossbenefits and188exemptions/recruitment/exclusions read."
+        },
+        {
+          "id": "PR02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "171–178scope/gross/temp-labour/174<=100000andotherexemptions/12permille read."
+        },
+        {
+          "id": "PR03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "177residualfraction<=1000andnearest10tax read; boundary held, roundcase inputs avoid issue."
+        },
+        {
+          "id": "PR04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF22–28new180–186deletions pp32–34 read;174notdeleted."
+        },
+        {
+          "id": "PR05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "176/846–850/986–987 collection15th/eTaxcopy/Januarystatement read."
+        },
+        {
+          "id": "PR06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1041–1044/1061 actualoffence-specific rules and1042monthly1.5cap50 read."
+        }
+      ]
+    },
+    "td-company-formation": {
+      "sha256": "d39cb383033d3b129ca93504a86a444b72b59dec82edd8992d8bc4cd2d793b84",
+      "ledger_sha256": "7e4f8be2cea7204bfcf67c9e2928fcff9e9f6b71011234bc3cff34da94f8c254",
+      "rows": [
+        {
+          "id": "F01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "309oneormanynatural/legalshareholders read;old50ceilingheld."
+        },
+        {
+          "id": "F02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "311one-milliondefault/nationalreservation read."
+        },
+        {
+          "id": "F03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "ANIEwholepage+scan100000/private-deednoteread; implementinginstrument/currentnessheld."
+        },
+        {
+          "id": "F04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "311-1fullsubscription/in-kind/half-cash/two-yearbalance read andp77scan."
+        },
+        {
+          "id": "F05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "312single/aggregate>5mvaluation/advantagesread andp77scan."
+        },
+        {
+          "id": "F06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "313immediatedeposit/approvedinstitution/notary/statutes read andp77scan."
+        },
+        {
+          "id": "F07",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "387–389SA10m/fullsubscription/quartercash read."
+        },
+        {
+          "id": "F08",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "389three-yearSAcashbalance read;oldtwoyears corrected."
+        },
+        {
+          "id": "F09",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "853-1/4/5oneormany/capitalstatutes/no publicoffer read."
+        },
+        {
+          "id": "F10",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "ANIEallfiveoutputs read andscanchecked."
+        },
+        {
+          "id": "F11",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "ANIEcompletepieces/threecopies/completedossierread andscanchecked;unsupportedtimingmisattribution corrected."
+        },
+        {
+          "id": "F12",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "376two STRICT >125m/>250m/>50testsread; equalitycaseindependentlyevaluated."
+        },
+        {
+          "id": "F13",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "702SAauditor/alternateandpublicoffer2each;853-13SASthreshold/controlroutesread."
+        },
+        {
+          "id": "F14",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "14045days/sixmonthsand348SARLjudicialextension read."
+        },
+        {
+          "id": "F15",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "269onemonthafterapproval/refusaldecision read."
+        },
+        {
+          "id": "F16",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "117–120branch/no separatepersonality/twoyears+nonrenewabledispensation read."
+        },
+        {
+          "id": "F17",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "346profitlesslosses10%reserveuntil20%capital read with143–146."
+        },
+        {
+          "id": "F18",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF8fullnormalstatementsetread;TAFIRElegacydistinctioncorrect."
+        },
+        {
+          "id": "F19",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF11–13strict60/40/30mSMTbounds/opting read andPDF20scan."
+        },
+        {
+          "id": "F20",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF7civil/first-yearrules read."
+        },
+        {
+          "id": "F21",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF16–21normal-record/cash-SMTdistinctionread;post-freezefixverified."
+        },
+        {
+          "id": "F22",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF112–113supersession/2018individual/2019consolidated dates read."
+        },
+        {
+          "id": "F23",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF23fourmonths/finalisationdate read andPDF24scan."
+        },
+        {
+          "id": "F24",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "AUDCIF24ten-yearrecords read andPDF24scan."
+        },
+        {
+          "id": "F25",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF20new147owner/beneficialowner/geolocation/docs/permanentNIF andnotaxprepayment read."
+        },
+        {
+          "id": "F26",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "LF43new1059II500000/monthregistration/change read;old50000withdrawn."
+        }
+      ]
+    },
+    "td-transfer-pricing": {
+      "sha256": "f501de2349f5a31c42326142a5c431a1048dac81496aa2f07e3bdf018657489c",
+      "ledger_sha256": "5edb55bf448512f508fb3874411c9dd72416c5b539c5ef2cc545be97eabd57a7",
+      "rows": [
+        {
+          "id": "X01",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "41I–IV/26XXII/134foreigncontrol/commoncontrol/privileged-taxroute read."
+        },
+        {
+          "id": "X02",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1000XIVfunctions/assets/risks/methodselection/comparables and41IVChadcomparators read."
+        },
+        {
+          "id": "X03",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1000XIV500mTURNOVER ORGROSSASSETS includingequality/foreignrelatedentities andDSFattachment read."
+        },
+        {
+          "id": "X04",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1000XIVmissing/incompletedocumentdisallowance and1060month10m/20m/third25m+5m wording read; cumulativeinterpretationheld."
+        },
+        {
+          "id": "X05",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "1000XIVrequest>=onemonth/extension<=threetotal/30dayformal demand/APAright read."
+        },
+        {
+          "id": "X06",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "85718%definednonestablishedprofessionalpaymentruleandoil/miningexceptionread;notgeneralised operationally."
+        },
+        {
+          "id": "X07",
+          "verdict": "pass_with_explicit_scope_limits",
+          "independent_basis": "85812.5%externallyfundednonresidentcontract/netbase/correspondent/25%taxuplift/treatyreservationread;specialistheld."
+        }
+      ]
+    },
+    "td-tax-overview": {
+      "sha256": "018505d04c32d0e26befa64ee23d9846b6a3ef1272e3f0b6076ea02432814f23",
+      "ledger_sha256": "0c4eb488971154a7d8a547bbdf59c9d78b151b2e5bdd46920c5eb9c2ba311416",
+      "verdict": "pass_as_editorial_router; no new statutory rate or date; all destination holds respected"
+    }
+  },
+  "frozen_candidate": "416ec514979330e5980061eda4a38ab2cdef6e4a",
+  "decision": "Accept the stated preparation/working-paper scopes only. No blocking defects remain after four corrections. All seven tax domains and wider formation/reporting remain partial; no filing-ready or accountant-attested acceptance.",
+  "source_ledger_row_count": 126,
+  "frozen_file_sha256": {
+    "evidence/ledgers/chad-remaining-2026/old-topics.md": "a4a6db0b8c8709ea83d776b226f7aeeb208fc989591991477580729acee516d8",
+    "evidence/ledgers/chad-remaining-2026/td-company-formation.md": "7e4f8be2cea7204bfcf67c9e2928fcff9e9f6b71011234bc3cff34da94f8c254",
+    "evidence/ledgers/chad-remaining-2026/td-corporate-income-tax.md": "0ea85af0005924b1298a4e131dcb364c13b430c59b3cb1b5807b92d462926cba",
+    "evidence/ledgers/chad-remaining-2026/td-income-tax.md": "74c91b26f7e57e3b5e297a18c8196f394aa6b56b6903863c73ec7d4b1b9b5880",
+    "evidence/ledgers/chad-remaining-2026/td-payroll-social.md": "7c9e23db5c177c7b50c5d211ad2abc90ede9355343201ebce0b7453f83eb5d58",
+    "evidence/ledgers/chad-remaining-2026/td-tax-overview.md": "0c4eb488971154a7d8a547bbdf59c9d78b151b2e5bdd46920c5eb9c2ba311416",
+    "evidence/ledgers/chad-remaining-2026/td-transfer-pricing.md": "5edb55bf448512f508fb3874411c9dd72416c5b539c5ef2cc545be97eabd57a7",
+    "evidence/ledgers/chad-remaining-2026/td-vat-gst.md": "75368c821289525c8ccc6fb54b8ce91f147270264fa1bece247d6d5ebaadf92e",
+    "skills/chad/README.md": "b33d0407aa75774f33a0198497080035fa7da7ee12d5b36663618da870c14517",
+    "skills/chad/td-company-formation.md": "d39cb383033d3b129ca93504a86a444b72b59dec82edd8992d8bc4cd2d793b84",
+    "skills/chad/td-corporate-income-tax.md": "aba119b2fb928b42f00b47eaa40385f89830fba4831b62ceeb9de519fb4650ed",
+    "skills/chad/td-import-exemption-eligibility.md": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+    "skills/chad/td-income-tax.md": "ba2555b6740e44c2a03f0a3e1e75a961458ddb03b31fe17f854272855d30a465",
+    "skills/chad/td-payroll-social.md": "4fda45912a92a67611c2968a2600ad43cf665bbfefc6de2cb8dbbdf67b874a99",
+    "skills/chad/td-tax-overview.md": "018505d04c32d0e26befa64ee23d9846b6a3ef1272e3f0b6076ea02432814f23",
+    "skills/chad/td-transfer-pricing.md": "f501de2349f5a31c42326142a5c431a1048dac81496aa2f07e3bdf018657489c",
+    "skills/chad/td-vat-gst.md": "2c9b784f0cb01b20b3e2a05af946d6a91426184190925f7365dfaec25823b9d6"
+  },
+  "predecessor_destination_verdicts": {
+    "skills/chad/td-company-formation.md": [
+      {
+        "body_line": 3,
+        "destination": "td-company-formation.md, Who this applies to and Base1(entitychoice)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-company-formation.md, Who this applies to and Base1(entitychoice)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 7,
+        "destination": "td-company-formation.md, Who this applies to and Base1(entitychoice)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 9,
+        "destination": "Base1single/multiplepartners;old50partnerceilingexplicitHOLDinSources",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 10,
+        "destination": "Base1SAgovernance/funding;oldSARLceilingforcingSAruleexplicitHOLDinSources",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 11,
+        "destination": "Base1SAS;Cross-borderbranch;SNC/SCS/GIEmethodsHOLDinSources",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 12,
+        "destination": "Rates:OHADAdefaultyieldsnationalrule;ANIE100kqualified;currentnationalinstrumentHOLD",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 13,
+        "destination": "Rates and Case1:10mminimum",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 14,
+        "destination": "Rates/Base2/Case1:quarterinitial,balance3years,correctslegacy2years",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 15,
+        "destination": "Base2–4GUCEdossier,capital,ANIEfiveoutputs,currentNIF;liveformsHOLD",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 16,
+        "destination": "Base2–4GUCEdossier,capital,ANIEfiveoutputs,currentNIF;liveformsHOLD",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 17,
+        "destination": "HOLD:Base3andSources,noconfirmed2–8weekpromise",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 18,
+        "destination": "Rates/Base5/Case2:exactOHADA376SARLtwo-strict-tests,SA/SASadditionalroutes",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 19,
+        "destination": "Base6–7/Deadlines:SYSCOHADA,approval/RCCM,taxreturnsrefertoowningGuides",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 20,
+        "destination": "Base4:newCGI147LF20NIFdocuments/beneficialowners",
+        "verdict": "pass_destination_verified"
+      }
+    ],
+    "skills/chad/td-corporate-income-tax.md": [
+      {
+        "body_line": 3,
+        "destination": "td-corporate-income-tax.md, Who this applies to and The base (ordinary company scope and territorial profit)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-corporate-income-tax.md, Who this applies to and The base (ordinary company scope and territorial profit)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 7,
+        "destination": "td-corporate-income-tax.md, Who this applies to and The base (ordinary company scope and territorial profit)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 8,
+        "destination": "Rates30%, replaces unsupported35%; CGI143",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 9,
+        "destination": "Rates and Base7:2%turnover comparison replaces1.5%; CGI149–152",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 10,
+        "destination": "Base1–6 and Who:netprofit/territorial,treaty conditions supplied",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 11,
+        "destination": "HOLD: Rates and Not yet confirmed, nocompanyIGL;sub50millionregimeunresolved",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 12,
+        "destination": "Rates:normal>=500m;RSI100–<500m and50–<100m;229boundariesqualified",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 13,
+        "destination": "Rates:normal>=500m;RSI100–<500m and50–<100m;229boundariesqualified",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 14,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 15,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 16,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 17,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 18,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 19,
+        "destination": "HOLD: Cross-border and Not yet confirmed:each original dividend/interest/bond/service/CEMAC/petroleum-royalty topic retained forrecipient/treatyanalysis;limitedLF2026changesreferenced",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 20,
+        "destination": "Deadlines2:4monthsreturn/calendar30April;paymentfollowingmonth,notundifferentiateddeadline",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 21,
+        "destination": "Deadlines2–4:minimummonthlynormal/quarterlyRSIconflictflagged;annualbalanceandadvancebaseheld",
+        "verdict": "pass_destination_verified"
+      }
+    ],
+    "skills/chad/td-import-exemption-eligibility.md": [
+      {
+        "body_line": 3,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 5,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 7,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 9,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 11,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 13,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 15,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 17,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 18,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 19,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 20,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 21,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 22,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 23,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 25,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 27,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 29,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 30,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 31,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 32,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 33,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 35,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 37,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 39,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 41,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 43,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 45,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 47,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 49,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 51,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 53,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 55,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 56,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 57,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 58,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 59,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 60,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 61,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 62,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 63,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 64,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 65,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 66,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 67,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 68,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 70,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 72,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 73,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 74,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 75,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 76,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 77,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 78,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 79,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 80,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 81,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 82,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 83,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 84,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 85,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 86,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 88,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 90,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 91,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 92,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 93,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 94,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 95,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 97,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 99,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 100,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 101,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 102,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      },
+      {
+        "body_line": 104,
+        "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained",
+        "verdict": "preserved_exactly_prior_scope_only"
+      }
+    ],
+    "skills/chad/td-income-tax.md": [
+      {
+        "body_line": 3,
+        "destination": "td-income-tax.md, Who this applies to (scope)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 7,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 8,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 9,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 10,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 11,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 12,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 13,
+        "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 14,
+        "destination": "td-income-tax.md, The base step4; actual mandatory deduction replaces automatic3.5%claim",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 15,
+        "destination": "td-income-tax.md, The base step3 and rates (conditions/caps supplied)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 16,
+        "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 17,
+        "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 18,
+        "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 19,
+        "destination": "HOLD: td-income-tax.md, Deadlines and filing and Not yet confirmed; unverified30April removed from operative rule",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 20,
+        "destination": "td-income-tax.md, Deadlines and filing (847–850;15followingmonth)",
+        "verdict": "pass_destination_verified"
+      }
+    ],
+    "skills/chad/td-payroll-social.md": [
+      {
+        "body_line": 3,
+        "destination": "td-payroll-social.md, Who this applies to",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-payroll-social.md, Who this applies to",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 7,
+        "destination": "Rates and Base1–3:actualauthorityschedule,floor,ceiling,shareandcurrentnesslimits",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 8,
+        "destination": "Rates and Base2:500kbasecapderives82500/17500shares;annualreconciliationinBase3",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 9,
+        "destination": "Rates and Base1–3:actualauthorityschedule,floor,ceiling,shareandcurrentnesslimits",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 10,
+        "destination": "Rates and Base2:500kbasecapderives82500/17500shares;annualreconciliationinBase3",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 11,
+        "destination": "Rates and Base4:7.5%grosswith188exceptions",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 12,
+        "destination": "Rates and Base5–6:1.2%gross,174exceptions,180–186deleted",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 13,
+        "destination": "Base7refertdincome;Deadlines15/eTax;livepayrollscaleheld",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 14,
+        "destination": "Deadlines:DGI15followingmonth,846–849",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 15,
+        "destination": "Deadlines:>=20monthly,<20quarterly,20followingperiod",
+        "verdict": "pass_destination_verified"
+      }
+    ],
+    "skills/chad/td-tax-overview.md": [
+      {
+        "body_line": 3,
+        "destination": "td-tax-overview.md, Who this applies to and The base (2026routerreplacesduplicateheadlines)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-tax-overview.md, Who this applies to and The base (2026routerreplacesduplicateheadlines)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 7,
+        "destination": "td-tax-overview.md, Who this applies to and The base (2026routerreplacesduplicateheadlines)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 9,
+        "destination": "Formation/reporting Deadlines:AUDCIF7civil-year;CorporateDeadlinesseparateperiods",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 10,
+        "destination": "SubstantiveGuideRatesspecifyXAF/FCFA;routerdoesnotclaimregionalmonetarylaw",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 11,
+        "destination": "RatesroutesDGI/NIF and FormationBase4;exactMinistrytitlenotrecertified",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 12,
+        "destination": "IncomeWho/ Cross-borderresidenceandsourceconditions",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 13,
+        "destination": "RatesrouterlinktoincomeRates,onlyonefigurehome",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 14,
+        "destination": "RatesrouterlinktoCITRates,replaces35%/1.5%headlines",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 15,
+        "destination": "RatesrouterlinktoVATRates,replaces18%headlineandincludescentimes",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 16,
+        "destination": "RatesrouterlinktoCITRates,replaces35%/1.5%headlines",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 17,
+        "destination": "Deadlinesroutescorporatereturn/paymentdistinction",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 18,
+        "destination": "RateslinktoOHADAprimaryacts;regionalCEMACtreaty/monetarymembershipclaimHOLDwidercross-borderSources",
+        "verdict": "pass_explicit_hold"
+      }
+    ],
+    "skills/chad/td-vat-gst.md": [
+      {
+        "body_line": 3,
+        "destination": "td-vat-gst.md, Who this applies to (scope)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 5,
+        "destination": "td-vat-gst.md, Who this applies to (scope)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 7,
+        "destination": "td-vat-gst.md, Who this applies to (scope)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 9,
+        "destination": "td-vat-gst.md, Who this applies to (scope)",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 11,
+        "destination": "Rates:17.5%principal plus10%centimes=19.25%;replacesunsupported18%",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 12,
+        "destination": "Rates exact9%listconditions;cementheldinsourcesnotsilentlyassigned9%",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 13,
+        "destination": "Rates0%exactLF32list;oldagri-foodblanket0%HOLDcommodity/exemptionoverlapinRatesandSources",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 14,
+        "destination": "Who/Sourceholds:229real/RSIboundaries;noinventeduniversalVATthreshold",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 15,
+        "destination": "Deadlines:229IIImonthly/15nextmonth;38Vquarterlycontradictionexplicit",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 16,
+        "destination": "HOLD:Cross-border and Not yet confirmed,LF29new227existsbutcompleteplatformmethodnotbuilt",
+        "verdict": "pass_explicit_hold"
+      },
+      {
+        "body_line": 17,
+        "destination": "Base1,5:231–232foreigncustomerpaymentseparatefrom229Vbuyerself-liquidation",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 18,
+        "destination": "Base6–10:239–246support,timing,exclusions,prorata,adjustments",
+        "verdict": "pass_destination_verified"
+      },
+      {
+        "body_line": 19,
+        "destination": "HOLD:Who and Not yet confirmed,banking/financial/medical/educationalclassificationandcomplete230table",
+        "verdict": "pass_explicit_hold"
+      }
+    ]
+  },
+  "predecessor_destination_count": 159,
+  "independent_case_recomputations": {
+    "income": [
+      {
+        "net": 7720000,
+        "tax": 815000
+      },
+      {
+        "labour": 1821000,
+        "total": 2171000,
+        "incorrect": 2721000,
+        "overstatement": 550000
+      }
+    ],
+    "corporate": [
+      {
+        "rounded": 20020000,
+        "IS": 6006000,
+        "minimum": 4000000,
+        "remaining": 2006000
+      },
+      {
+        "rounded": 10000000,
+        "industrial": 2500000,
+        "ordinary_comparison": 3000000,
+        "minimum_and_liability": 6000000
+      }
+    ],
+    "VAT": [
+      {
+        "base": 1234000,
+        "principal": 215950,
+        "centimes": 21595,
+        "tax": 237545,
+        "commercial_total": 1472112
+      },
+      {
+        "reduced": 198000,
+        "ordinary": 385000,
+        "difference": 187000
+      }
+    ],
+    "payroll": [
+      {
+        "employerCNPS": 33000,
+        "employeeCNPS": 7000,
+        "CNPSremit": 40000,
+        "forfaitaire": 15000,
+        "training": 2400,
+        "employer_cost": 250400
+      },
+      {
+        "employerCNPS": 82500,
+        "employeeCNPS": 17500,
+        "remit": 100000,
+        "dailycharge10days": 1000,
+        "due": 101000,
+        "uncapped_overstatement": 60000,
+        "9employees": "quarterly",
+        "20employees": "monthly"
+      }
+    ],
+    "formation": [
+      {
+        "SARLinitial": 500000,
+        "balance": 500000,
+        "years": 2,
+        "SAinitial": 2500000,
+        "balanceSA": 7500000,
+        "yearsSA": 3
+      },
+      {
+        "boundary_exceeded_count": 1,
+        "above_exceeded_count": 2,
+        "mandatory_under_size_route": [
+          false,
+          true
+        ]
+      }
+    ],
+    "TP": [
+      {
+        "addback": 10000000,
+        "profit": 90000000
+      },
+      {
+        "shortfall": 10000000,
+        "adjusted_above": 90000000,
+        "adjusted_below": 90000000,
+        "500masset_boundary_meets": true,
+        "490m_with300mturnover_meets": false
+      }
+    ],
+    "router": [
+      {
+        "unpaidA": 50000,
+        "unpaidB": 0,
+        "remaining": 50000
+      },
+      {
+        "potentialcreditA": 50000,
+        "unpaidB": 50000,
+        "signedaggregate": 0,
+        "offset_permission": "unresolved"
+      }
+    ]
+  },
+  "new_case_count": 14,
+  "prior_import_examples": "2blocksbyte-for-bytepreserved; earlier acceptance not expanded",
+  "corrections_closed": [
+    "CIT1004CEMAC-approvedaccountvalidation",
+    "ANIEtimingmisattribution",
+    "normalrecordsversusSMTart21",
+    "V01nonexistentacceptedplatformGuide"
+  ]
+}

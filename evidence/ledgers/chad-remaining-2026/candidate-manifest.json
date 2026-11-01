@@ -1,0 +1,24 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "status": "frozen for independent review; not full coverage",
+  "files": {
+    "evidence/ledgers/chad-remaining-2026/old-topics.md": "a4a6db0b8c8709ea83d776b226f7aeeb208fc989591991477580729acee516d8",
+    "evidence/ledgers/chad-remaining-2026/predecessor-identities.json": "1e417e1000eaf781afd3349b10e0050c740f5f6a7402a1913375a04bd7583a7f",
+    "evidence/ledgers/chad-remaining-2026/td-company-formation.md": "afb9e7987a9f72ab182cb005a508b28b967e93de473f854f6f75d76e47b06bab",
+    "evidence/ledgers/chad-remaining-2026/td-corporate-income-tax.md": "0ea85af0005924b1298a4e131dcb364c13b430c59b3cb1b5807b92d462926cba",
+    "evidence/ledgers/chad-remaining-2026/td-income-tax.md": "74c91b26f7e57e3b5e297a18c8196f394aa6b56b6903863c73ec7d4b1b9b5880",
+    "evidence/ledgers/chad-remaining-2026/td-payroll-social.md": "7c9e23db5c177c7b50c5d211ad2abc90ede9355343201ebce0b7453f83eb5d58",
+    "evidence/ledgers/chad-remaining-2026/td-tax-overview.md": "0c4eb488971154a7d8a547bbdf59c9d78b151b2e5bdd46920c5eb9c2ba311416",
+    "evidence/ledgers/chad-remaining-2026/td-transfer-pricing.md": "5edb55bf448512f508fb3874411c9dd72416c5b539c5ef2cc545be97eabd57a7",
+    "evidence/ledgers/chad-remaining-2026/td-vat-gst.md": "7335238a17b37e559862fffd4b7e7988c1ccb5356db1d45a3c6ce39402c3756d",
+    "skills/chad/README.md": "b33d0407aa75774f33a0198497080035fa7da7ee12d5b36663618da870c14517",
+    "skills/chad/td-company-formation.md": "bf68c843614f2b1e87cbbf83b932891bfe4850365041eb51890420e5c782c24a",
+    "skills/chad/td-corporate-income-tax.md": "aba119b2fb928b42f00b47eaa40385f89830fba4831b62ceeb9de519fb4650ed",
+    "skills/chad/td-import-exemption-eligibility.md": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+    "skills/chad/td-income-tax.md": "ba2555b6740e44c2a03f0a3e1e75a961458ddb03b31fe17f854272855d30a465",
+    "skills/chad/td-payroll-social.md": "4fda45912a92a67611c2968a2600ad43cf665bbfefc6de2cb8dbbdf67b874a99",
+    "skills/chad/td-tax-overview.md": "018505d04c32d0e26befa64ee23d9846b6a3ef1272e3f0b6076ea02432814f23",
+    "skills/chad/td-transfer-pricing.md": "f501de2349f5a31c42326142a5c431a1048dac81496aa2f07e3bdf018657489c",
+    "skills/chad/td-vat-gst.md": "2c9b784f0cb01b20b3e2a05af946d6a91426184190925f7365dfaec25823b9d6"
+  }
+}

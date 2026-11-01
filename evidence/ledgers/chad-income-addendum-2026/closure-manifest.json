@@ -1,0 +1,11 @@
+{
+  "supersedes": "e03ccd3d6",
+  "source_rows": 34,
+  "files": {
+    "skills/chad/td-income-tax.md": "dbda410e0e89f243365635209589f13213fb2dfd968be80ae4991d04b5865ad2",
+    "skills/chad/td-payroll-social.md": "4d375d91b468c995575135168b786d7cbed831d70ec5628ac49d554cda3c2ba9",
+    "skills/chad/README.md": "208f4ae7ba98debd7aac2fe633fd9cead0e34a4d74c7060bb5dc75cad7a91fff",
+    "evidence/ledgers/chad-income-addendum-2026/ledger.md": "8bd3b00b9ccc63fb0d4875ba139cf20c656af6d51dcf60ac87f094768b531391",
+    "docs/research/chad-remaining-2026/business-income-source-addendum.md": "f86aabc35838035986c06baca0cd0b21ddbceecf4be8af2eb3cf10c6c407b0df"
+  }
+}
