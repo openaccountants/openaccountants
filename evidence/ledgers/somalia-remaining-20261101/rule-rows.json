@@ -526,7 +526,7 @@
       "so-payroll-social"
     ],
     "section": "Who this applies to / Sources",
-    "rule": "Circular inflation powers; public-notice postponement; member-state collections need allocation circular; precise notices not located",
+    "rule": "Formal circulars can adjust listed amounts for inflation. Public notice can postpone specified regulations. Federal Member State collection needs the allocation instrument; precise notices remain unlocated.",
     "provision": "Reg2-2,106-1,107-1",
     "pdf_page": "3,38–39",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -541,7 +541,7 @@
       "so-payroll-social"
     ],
     "section": "Who this applies to / Sources",
-    "rule": "Annual report describes implementation delays and FY2026plans; not itself application instrument",
+    "rule": "The official annual report describes income-tax implementation delays and FY2026 plans. It is not itself the operative application instrument.",
     "provision": "Directorate Annual Report2025",
     "pdf_page": "3,11–13,18",
     "url": "https://revenuedirectorate.gov.so/sites/default/files/Annual%20Revenue%20Performance_2025_FINAL11.pdf",
@@ -555,7 +555,7 @@
       "so-corporate-income-tax"
     ],
     "section": "Who this applies to / The base",
-    "rule": "Presumptive only resident individual, exclusively domestic business,notpartner,three-yearaverage≤50000;notcorporations",
+    "rule": "Presumptive taxation applies to qualifying resident individuals with exclusively domestic business income, no partnership membership, and three-year average turnover at most USD 50,000 before adjustments. It is not a corporation regime.",
     "provision": "Reg9-1(1)",
     "pdf_page": "5",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -568,7 +568,7 @@
       "so-income-tax"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Professional/primarily property-leasing/circular activity exclusions; adequate-records election out binds current+2followingyears",
+    "rule": "Professional, principally property-leasing and circular-listed activities are excluded, subject to transition. An adequate-records election out binds the election year and following two years.",
     "provision": "Reg9-1(2),9-2",
     "pdf_page": "5–6",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -581,7 +581,7 @@
       "so-income-tax"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Quarterly maximum37.50versus1.5%definedcashturnover;otherincomeordinary;businessimmovabletreatedinvestment",
+    "rule": "Eligible quarterly business tax is the higher of USD 37.50 and1.5% of defined cash-basis turnover. Other income follows ordinary rules; business immovable property is treated as investment property.",
     "provision": "Reg9-1(4)–(5)",
     "pdf_page": "5–6",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -594,7 +594,7 @@
       "so-income-tax"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "First5implementationyears threshold increasedBY250/200/150/100/50%; professional/activity exclusions suspended but no uplift for otherwise excluded",
+    "rule": "For the first five implementation assessment years, the threshold increases BY 250/200/150/100/50%. Professional/activity exclusions are suspended, but otherwise excluded individuals do not receive the uplift.",
     "provision": "Reg105-1(1)–(2)",
     "pdf_page": "34",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -607,7 +607,7 @@
       "so-income-tax"
     ],
     "section": "The base / Sources",
-    "rule": "Modified cash is separate accounting regime, ordinary individualrates; full method/technology/transition held",
+    "rule": "Modified cash is a distinct accounting regime with ordinary individual rates. Its full eligibility, technology and transition workflow is held.",
     "provision": "Reg9-3,105-1(3)–(4)",
     "pdf_page": "6–8,34–35",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -620,7 +620,7 @@
       "so-corporate-income-tax"
     ],
     "section": "The base",
-    "rule": "Openinglosses retain oldlawrestrictions and carryover conditions",
+    "rule": "Opening losses retain old-law restrictions, including carryover conditions; they do not receive a fresh unrestricted life.",
     "provision": "Reg105-4",
     "pdf_page": "36",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -633,7 +633,7 @@
       "so-corporate-income-tax"
     ],
     "section": "Deadlines and filing",
-    "rule": "Ordinaryquarter instalment(A-B)/C-D;Acurrentestimate,Bpriorinstalments+priorcreditableWHT,Cremaininginclcurrent,DcurrentcreditableWHT",
+    "rule": "Ordinary instalment=(A-B)/C-D. A=current estimate; B=prior instalments and prior creditable withholding; C=remaining instalments including current; D=current-quarter creditable withholding.",
     "provision": "Reg97-1",
     "pdf_page": "29",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -646,7 +646,7 @@
       "so-corporate-income-tax"
     ],
     "section": "Deadlines and filing / Sources",
-    "rule": "Firstimplementationyear company/trust transition relief/floors require separate actual eligibility computation; no unconditional50%claim",
+    "rule": "First-implementation-year company/trust transition relief and instalment floors require a separate eligibility computation. No unconditional relief claim is made.",
     "provision": "Reg105-10",
     "pdf_page": "37–38",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -659,7 +659,7 @@
       "so-payroll-social"
     ],
     "section": "Rates, bands and thresholds / The base / Worked examples",
-    "rule": "Published monthly0to100zero;100to5006%excess100;500to150024+12%excess500;above1500144+18%excess1500;guidancenotannualamendment",
+    "rule": "Published primary monthly guidance: throughUSD100 zero; then6% excessUSD100; aboveUSD500,USD 24+12% excessUSD500; aboveUSD1,500,USD 144+18% excessUSD1,500. This does not amend annual law.",
     "provision": "Directorate monthlytable",
     "pdf_page": "HTML",
     "url": "https://revenuedirectorate.gov.so/direct-tax",
@@ -672,7 +672,7 @@
       "so-payroll-social"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Ministry primary monthly tables/yearend reconciliation delegated; no numericmonthlytableinreg",
+    "rule": "The Ministry must produce primary monthly tables and year-end reconciliation instructions/forms. The regulation contains no numeric monthly table.",
     "provision": "Reg90-1(1)–(2)",
     "pdf_page": "26",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -685,7 +685,7 @@
       "so-payroll-social"
     ],
     "section": "The base",
-    "rule": "Primary recognisedcontributionsreduction subject expectedannualstatutorylimit;notautomatic10000fullcap",
+    "rule": "Primary withholding reduction for recognised contributions is subject to the expected annual statutory-limit restriction; USD 10,000 is not asserted as the whole limit.",
     "provision": "Reg90-1(3),70-1",
     "pdf_page": "26–27,21",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -698,7 +698,7 @@
       "so-payroll-social"
     ],
     "section": "The base",
-    "rule": "One primary generallyearliest;newemployment secondary if prior/current,noanswer/suspicion;Ministryprimaryswitch;secondary18%highestordinaryrate,no primaryretirementreduction;Ministryhardshipapproval;listrequired",
+    "rule": "Only one primary employment, generally earliest. New employment is secondary on prior/current work, no answer or suspicion. Ministry approval can switch primary status or relieve hardship. Secondary withholding uses the highest ordinary rate, without primary pension reduction; employee list required.",
     "provision": "Reg90-2(1)–(7)",
     "pdf_page": "27–28",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -711,7 +711,7 @@
       "so-payroll-social"
     ],
     "section": "The base",
-    "rule": "Noncashshortfalldoesnotcancelwithholding;employerfunds,nondeductible,nonrecoverable,creditedemployee,notextraemployeeincome",
+    "rule": "Noncash pay does not remove withholding. Employer funds a cash shortfall; it is credited to employee tax, excluded from employee income, nondeductible and nonrecoverable by employer.",
     "provision": "Reg90-3",
     "pdf_page": "28",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -724,7 +724,7 @@
       "so-payroll-social"
     ],
     "section": "The base / Sources",
-    "rule": "In-kind benefit phasedtransition referenced,fullvaluationheld;actualimplementationyearneeded",
+    "rule": "The in-kind benefit phased transition is identified, but full valuation is held. The actual implementation year must be established.",
     "provision": "Reg105-2",
     "pdf_page": "35",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -737,7 +737,7 @@
       "so-payroll-social"
     ],
     "section": "Who this applies to / The base / Sources",
-    "rule": "Employerchoicewithoutpenalty oldornew until earlierdirect/circularmandatorynotice or fifthimplementationyearend",
+    "rule": "Employer can choose old/new withholding without penalty until earlier mandatory direct/circular notice or the end of the fifth implementation assessment year.",
     "provision": "Reg105-8",
     "pdf_page": "37",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
@@ -750,7 +750,7 @@
       "so-vat-gst"
     ],
     "section": "Who this applies to",
-    "rule": "Instrument dated9December2023; article8 signature commencement, archive15April2025; not complete amendment audit",
+    "rule": "Signed instrument dated9December2023; signature commencement under article8. Official-site archive captured15April2025. No complete amendment audit claimed.",
     "provision": "RegMOF/OM/0089/23 arts.1,8",
     "pdf_page": "1–5",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -763,7 +763,7 @@
       "so-vat-gst"
     ],
     "section": "Who this applies to / The base",
-    "rule": "Expands specified retail/professional/other sectors and broadcatchall; other payroll/profittaxesunaffected;notallcurrently5%",
+    "rule": "Regulation expands retail, professional and other sectors with a goods/services catch-all. Payroll/profit taxes are unaffected. This is not proof all sectors currently bear5%.",
     "provision": "Regarts.1–2",
     "pdf_page": "2",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -776,7 +776,7 @@
       "so-vat-gst"
     ],
     "section": "Rates, bands and thresholds / The base / Worked examples",
-    "rule": "General5%valuegoodsservices;conditional ordinarydomesticapplication,notuniversalcurrentsectorrate",
+    "rule": "General sales-tax baseline is5% of goods/service value. Application is conditional on ordinary domestic taxable status and current sector treatment.",
     "provision": "Regart.3(1)",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -789,7 +789,7 @@
       "so-vat-gst"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Sellerbusiness/companyliableatcompletionofexchange/services;notcurrentreturnpaymentdeadline",
+    "rule": "Seller business/company owes tax when goods exchange or service provision completes; this is not a current return-payment deadline.",
     "provision": "Regart.3(1)",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -802,7 +802,7 @@
       "so-vat-gst"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Invoiceeachsale,showvalueand5%tax;inclusive/exclusivealgebraonlyifactualcontractsoagrees",
+    "rule": "Invoice each sale with value and5% tax. Inclusive/exclusive algebra applies only to established actual contract terms.",
     "provision": "Regart.3(2)",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -815,7 +815,7 @@
       "so-vat-gst"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Consecutiveinvoice sequence starts1eachyear;showdate",
+    "rule": "Consecutive invoice numbering begins1 each year and must show sale date.",
     "provision": "Regart.3(3)",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -828,7 +828,7 @@
       "so-vat-gst"
     ],
     "section": "The base",
-    "rule": "Produceinvoicesonrequestresponsiblerevenueofficers;nostatutoryretentionperiodasserted",
+    "rule": "Produce invoices when the responsible revenue officers request them. No statutory retention period is asserted.",
     "provision": "Regart.4",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -841,7 +841,7 @@
       "so-vat-gst"
     ],
     "section": "Penalties and interest",
-    "rule": "Penaltiesdonotextinguishtax;numericregsanctionsandreconciliationheld",
+    "rule": "Penalties do not extinguish tax. Numeric regulation sanctions and their current reconciliation are held.",
     "provision": "Regart.5",
     "pdf_page": "3",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -854,7 +854,7 @@
       "so-vat-gst"
     ],
     "section": "Penalties and interest",
-    "rule": "Complaintcommittee/courtappealdescribed,butcurrentroute/deadlineheld",
+    "rule": "The regulation describes a complaint committee and court appeal; the current route/deadline remains held.",
     "provision": "Regart.7",
     "pdf_page": "4",
     "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
@@ -867,11 +867,11 @@
       "so-vat-gst"
     ],
     "section": "Rates, bands and thresholds / Sources",
-    "rule": "Authoritygeneralgoods5%,sectorconflicts;notadoptedunsupportedsectorrates",
+    "rule": "Authority ordinary-goods5% agrees with baseline, while certain sectors conflict. Unsupported sector rates are not adopted.",
     "provision": "Directorate indirecttax",
     "pdf_page": "HTML",
     "url": "https://www.revenuedirectorate.gov.so/indirect-tax",
-    "quote": "Telecomunications services",
+    "quote": "Telecommunication",
     "read_date": "2026-11-01"
   },
   {
@@ -880,7 +880,7 @@
       "so-company-formation"
     ],
     "section": "Who this applies to / The base",
-    "rule": "RegistrarwithinMOCI,domesticcompanyversusforeignbranch,certificate/licence/sectorpermitdistinct",
+    "rule": "Company Registrar is within MOCI. Domestic company and foreign branch packets differ. Certificate, business licence and sector permit are distinct.",
     "provision": "Reg001/2021 arts.1,6–9,19",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -893,7 +893,7 @@
       "so-company-formation"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Registrarnameapplication applicantname/address/proposedname;checkrestrictions;reservationmax90days",
+    "rule": "Registrar name application supplies applicant name/address and proposed name; check restrictions. Published regulation reservation maximum90 days.",
     "provision": "Regarts.10–11",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -906,7 +906,7 @@
       "so-company-formation"
     ],
     "section": "Rates, bands and thresholds / The base",
-    "rule": "Certificate1workingdayaftersubmissionANDacceptance;notwholeprocesspromise;certificatecontentsanddeficiencyresponse",
+    "rule": "Certificate within one working day after submission AND acceptance, not a whole-process promise. Certificate contents and written deficiency response are specified.",
     "provision": "Regart.6(1)–(4)",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -919,7 +919,7 @@
       "so-company-formation"
     ],
     "section": "The base",
-    "rule": "Approvedapplication,memorandum/articles shareholdernames/type/quota,founder/shareholderpassports,additionalrequestedinformation",
+    "rule": "Approved application, memorandum/articles with shareholder names/share type/quota, founder/shareholder passports and prescribed additional information.",
     "provision": "Regart.8",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -932,7 +932,7 @@
       "so-company-formation"
     ],
     "section": "The base",
-    "rule": "Company/directoraddresses,eachboardmemberpassport/phone/email/bankstatement",
+    "rule": "Company/director addresses and each board member passport, telephone, email and bank-account statement are required.",
     "provision": "Regart.13",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -945,7 +945,7 @@
       "so-company-formation"
     ],
     "section": "The base / Cross-border points",
-    "rule": "Foreignbranch4notarisedembassy-certifieddocumentcategoriespluspassports/localdirectors/representative;foreigninvestmentlawpreserved",
+    "rule": "Foreign branch requires four notarised/embassy-certified document categories, plus passport/local-director/representative details. Foreign-investment requirements are preserved.",
     "provision": "Regart.19(1)–(3)",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -958,7 +958,7 @@
       "so-company-formation"
     ],
     "section": "The base",
-    "rule": "Onlineapplicationpermitted;notproofofactualauthenticatedscreens",
+    "rule": "Online application is permitted; this is not evidence of the current authenticated screen sequence.",
     "provision": "Regart.17",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -971,7 +971,7 @@
       "so-company-formation"
     ],
     "section": "The base / Deadlines and filing",
-    "rule": "Certificatevalidcompanylifesubjectmajorchanges/reregistration;notuniversalannuallicencerenewal",
+    "rule": "Incorporation certificate lasts company life subject to major changes/re-registration. This is not a universal annual operating-licence renewal rule.",
     "provision": "Regart.6(5),7",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -984,7 +984,7 @@
       "so-company-formation"
     ],
     "section": "The base",
-    "rule": "Regulatedsectorcannotstartuntilrequiredotheragencyapprovaldespitecertificate/licence",
+    "rule": "Regulated business cannot start until the required other-agency authorisation is granted, despite certificate/licence.",
     "provision": "Regart.9",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -997,7 +997,7 @@
       "so-company-formation"
     ],
     "section": "Rates, bands and thresholds / Worked examples",
-    "rule": "Reg100incorporationfeevslive50servicefeeforlistedtypes;holdoperativeamount,notautomaticcheaperchoice",
+    "rule": "Published incorporation feeUSD100 conflicts with current listed registry service feeUSD50. Operative amount is held; do not automatically choose the cheaper source.",
     "provision": "Regart.14;livefee table",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -1010,11 +1010,11 @@
       "so-company-formation"
     ],
     "section": "Rates, bands and thresholds / Sources",
-    "rule": "Live50companyregistrationserviceentry;activitylicencefeesdifferent;notwhole149licencetableaudit",
+    "rule": "Live company-registration service entryUSD50. Activity licence fees differ; no complete149-row licence audit is claimed.",
     "provision": "Registry currentfees",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/fees",
-    "quote": "50 USD",
+    "quote": "$50.00",
     "read_date": "2026-11-01"
   },
   {
@@ -1023,7 +1023,7 @@
       "so-company-formation"
     ],
     "section": "Rates, bands and thresholds / Deadlines and filing",
-    "rule": "Somali30daysafteranniversary;Englishomitsanniversary;indexedPDFconflictunread;exactoperativedeadlineheld",
+    "rule": "Original Somali says30 days after anniversary; English omits anniversary; different indexed PDF was not read. Exact operative annual deadline is held.",
     "provision": "Regart.15(1)",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -1036,7 +1036,7 @@
       "so-company-formation"
     ],
     "section": "Deadlines and filing",
-    "rule": "Annualreportname,addresses,management,type/activity,shares,changes,licensedactivity;prescribedforms",
+    "rule": "Annual report includes company/management addresses, type/activity, share details, management/share changes and licensed-activity confirmation. Registrar can prescribe forms.",
     "provision": "Regart.15(2)–(3)",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -1049,7 +1049,7 @@
       "so-company-formation"
     ],
     "section": "Deadlines and filing",
-    "rule": "Notifydirectors/shareholders/officers/businessactivitychanges;numericdeadlineunverified",
+    "rule": "Notify director, shareholder, officer and business-activity changes to Registrar. Numeric deadline is unverified.",
     "provision": "Regart.12(2)",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
@@ -1062,7 +1062,7 @@
       "so-company-formation"
     ],
     "section": "The base / Penalties and interest",
-    "rule": "CompaniesLawprevails;numericpenalties/currentappealrouteheld",
+    "rule": "Companies Law has priority. Numeric penalties and the current challenge route remain held.",
     "provision": "Regarts.6(2),15(4),18,21–22",
     "pdf_page": "HTML",
     "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",

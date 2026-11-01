@@ -24,7 +24,7 @@ partial:
 
 # Somalia tax pack
 
-**Partial source-based working papers, 1 November 2026.** Five existing Guides are expanded on the follow-on branch after merged [PR1180](https://github.com/openaccountants/openaccountants/pull/1180). Fresh independent review is pending for the complete follow-on pack. Neither legal currentness gates nor country acceptance criteria disappear when mechanical checks pass. No accountant has attested. [Issue486](https://github.com/openaccountants/openaccountants/issues/486) stays open.
+**Partial source-based working papers, 1 November 2026.** Five existing Guides are expanded on the follow-on branch after merged [PR1180](https://github.com/openaccountants/openaccountants/pull/1180). Fresh independent review checked all 80 unique rule/figure rows, all 61 predecessor body lines and ten executable cases. Acceptance is limited to the expressly conditional source baseline. Neither legal currentness gates nor country acceptance criteria disappear when mechanical checks pass. No accountant has attested. [Issue486](https://github.com/openaccountants/openaccountants/issues/486) stays open.
 
 | Job | Guide | What the expansion does | Specific unresolved work |
 |---|---|---|---|
@@ -58,6 +58,6 @@ All five rewritten slugs preserve every platform-owned frontmatter value and com
 - [Current complete figure/rule ledger](../../evidence/ledgers/somalia-remaining-20261101/rule-rows.json), with one rendered ledger per changed Guide.
 - [Complete predecessor destinations](../../evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.md).
 - [Income source reading](../../evidence/ledgers/somalia-remaining-20261101/somalia-remaining-source-findings.md) and [other source reading](../../evidence/ledgers/somalia-remaining-20261101/somalia-other-source-findings.md).
-- [Initial three-Guide fresh review](../../evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-review.md); complete five-Guide review pending.
+- [Initial three-Guide fresh review](../../evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-review.md); [complete five-Guide review](../../evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-review.md), with targeted quotation closure required before publication acceptance.
 
 The original pricing/residence acceptance remains bound to the earlier historical statutory baseline and repaired candidate recorded in its [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) and [closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md). That acceptance is not extended to any new expansion or claimed as operative2026 approval. Full PDFs, scans, OCR and browser captures remain in the private sibling source cache; official URLs, dates, hashes and actual reading scope are committed for review.
