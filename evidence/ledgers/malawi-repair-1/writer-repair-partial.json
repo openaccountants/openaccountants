@@ -1,0 +1,42 @@
+{
+  "original_candidate": "9dcab78579d5e78dbdf7fa615186a8fdab96dcee",
+  "review_record_commit": "92a81d063ecf3c1f79d36b3950bacf67de0e0aae",
+  "before_sha256": {
+    "skills/malawi/mw-corporate-income-tax.md": "decb966cb23778400086e6d8a880a2cb031fe7ddfb280e9fff2a98fe963223c2",
+    "skills/malawi/mw-income-tax.md": "ea0adce5124019704e3bc05ec9677a0f93e69dde6f1d40d5830e44558433589d",
+    "skills/malawi/mw-vat-gst.md": "10a1dbe75f64d41cea5e469d6d709db993f60a38fdc5e1195e1a116d1251e468",
+    "skills/malawi/mw-payroll-social.md": "8875600800b683edd9b4001242fe1e0f51145568118f221f0b56f4d1e81bb019",
+    "skills/malawi/mw-company-formation.md": "254abc853ab53aaa9023ba64c6961d69901d9322c2a12493aa1bf4433e0012ef",
+    "skills/malawi/mw-tax-overview.md": "fa2d9c3bae02796f9b1e69539a704ef8e9256e6bcf8f067a93751cecc4212374",
+    "skills/malawi/mw-transfer-pricing.md": "c97250bbb8e2e10f484a159a76636fb74cd323dd39d654cbbac40fdeb69d9f94",
+    "evidence/ledgers/mw-old-topic-destinations.md": "6bea188877fd2bbda5a7cf8e7b3e3a4e0ad385a32d3469100a68978b4963bbf8",
+    "evidence/ledgers/mw-corporate-income-tax.md": "f2c576e2c8a0a9b9da542c522e3381b68e2b34a747a1517002af2d410a243b6b"
+  },
+  "after_sha256": {
+    "skills/malawi/mw-corporate-income-tax.md": "33a9ec6e271dd768c89eac15ca7821cfe0c978beb4776c00dbea039536373305",
+    "skills/malawi/mw-income-tax.md": "c1c97400695493a75895cfed4ed0af1a757efef50fb7577d5dadd67cbf46c13c",
+    "skills/malawi/mw-vat-gst.md": "a91f1d84d1b971fd89360693f903a4d1e6ae3674b155e4bbc973e33b901ad0a3",
+    "skills/malawi/mw-payroll-social.md": "6a22a09779d892306b8330ad9f6c4e70bec500418ab43a0b96071d4e1bcf7b44",
+    "skills/malawi/mw-company-formation.md": "e60f51c700f6055f03d53a038451827e05bb8f29800adf3821ae86655521b112",
+    "skills/malawi/mw-tax-overview.md": "17eecf0b6efd0228beeab47859a162356cce22fbe435fc83c7789262804f4598",
+    "skills/malawi/mw-transfer-pricing.md": "476f97f5afff0f31565139191c00f6e0142328bd414efc675cc4bc681dd24afa",
+    "evidence/ledgers/mw-old-topic-destinations.md": "171d3f0ccf015634d78ad605f6e9e8fa6ac6d91f97b64c2ffa8fb1b0967225ed",
+    "evidence/ledgers/mw-corporate-income-tax.md": "f4d2204ff5352b93f18d907c0e6fc219654f2c6c184a30cd1750840d805c179e"
+  },
+  "description_word_counts": {
+    "mw-corporate-income-tax": 103,
+    "mw-income-tax": 100,
+    "mw-vat-gst": 103,
+    "mw-payroll-social": 104,
+    "mw-company-formation": 106,
+    "mw-tax-overview": 104,
+    "mw-transfer-pricing": 101
+  },
+  "repairs": [
+    "Corporate s28(2) conditions and ledger row19",
+    "Two formation subtopics explicitly restored as unverified Sources gaps",
+    "Seven descriptions80\u2013150words;versions1.1"
+  ],
+  "still_open": "Finding4: Act3/2026 and TAA/cutover appointed commencement evidence; no approval requested until resolved.",
+  "preserved": "All14oa blocks, original platform fields and exact6CTA suffixes, all original rejected review evidence and private initial receipts."
+}

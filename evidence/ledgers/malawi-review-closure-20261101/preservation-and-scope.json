@@ -1,0 +1,147 @@
+{
+  "candidate": "b8a714cfdcdc43d1493c423c6aa64d0c346d1cd0",
+  "initial_candidate": "9dcab78579d5e78dbdf7fa615186a8fdab96dcee",
+  "pinned_base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "initial_review_commit": "92a81d063ecf3c1f79d36b3950bacf67de0e0aae",
+  "guide_checks": [
+    {
+      "path": "skills/malawi/mw-company-formation.md",
+      "sha256": "bd7a3f418b29f838cf3d177076ad5c8e39f662878ffa0968e264bc5e21841357",
+      "description_words": 106,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    },
+    {
+      "path": "skills/malawi/mw-corporate-income-tax.md",
+      "sha256": "4e7a59276089115c3bc8191a4b7e3b141ee90b10747c1bf5ada1bd678f9e28ff",
+      "description_words": 103,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    },
+    {
+      "path": "skills/malawi/mw-income-tax.md",
+      "sha256": "ae1e4ff96352d701086cec8d56608675e3f8dffa88efeaa91276f6bdb8bd42e6",
+      "description_words": 100,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    },
+    {
+      "path": "skills/malawi/mw-payroll-social.md",
+      "sha256": "81a68db0aad5fc65c6a884b142be830a9f6a02b0920eeda0ded7df5578994b6f",
+      "description_words": 104,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    },
+    {
+      "path": "skills/malawi/mw-tax-overview.md",
+      "sha256": "d9e640183d44914d3688b51358c01dfe17fc5280c90b6da2dda081e4ae2796a7",
+      "description_words": 104,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    },
+    {
+      "path": "skills/malawi/mw-transfer-pricing.md",
+      "sha256": "3241bd33dd3efd12048dfe633aba76dfac5b0566875332424fb82bf611907a79",
+      "description_words": 101,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true
+    },
+    {
+      "path": "skills/malawi/mw-vat-gst.md",
+      "sha256": "ad8e2913dc11e7ec83360e37f8e710f5b9159a36962962e776edf7973e548056",
+      "description_words": 103,
+      "description_in_80_150": true,
+      "version": "1.2",
+      "body_heading_matches": true,
+      "oa_blocks_byte_equal_to_initial": true,
+      "oa_count": 2,
+      "platform_fields_equal_to_initial": true,
+      "hold_present": true,
+      "cta_equal_to_pinned_base": true
+    }
+  ],
+  "initial_review_files_unchanged": {
+    "evidence/ledgers/malawi-review-20261101/candidate-hashes.json": true,
+    "evidence/ledgers/malawi-review-20261101/checks.json": true,
+    "evidence/ledgers/malawi-review-20261101/ledger-checks.md": true,
+    "evidence/ledgers/malawi-review-20261101/preservation.json": true,
+    "evidence/ledgers/malawi-review-20261101/review.md": true,
+    "evidence/ledgers/malawi-review-20261101/source-downloads.json": true
+  },
+  "ledger_changes": [
+    {
+      "path": "evidence/ledgers/mw-company-formation.md",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/mw-corporate-income-tax.md",
+      "old_rows_preserved": true,
+      "new_rows": [
+        "| 19 | Base: taxable/exempt restrictions, final-tax cost disallowance; common costs apportioned taxable/total income unless Commissioner approves/directs alternative for unreasonable result | s28(2)(a)\u2013(d), Act17/2023 s3(c) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content | \u201cexpenditure related to income that is subject to a final tax shall not be deductible\u201d | 2026-11-01 |"
+      ]
+    },
+    {
+      "path": "evidence/ledgers/mw-income-tax.md",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/mw-old-topic-destinations.md",
+      "only_change_restoration_receipt": true
+    },
+    {
+      "path": "evidence/ledgers/mw-payroll-social.md",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/mw-tax-overview.md",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/mw-transfer-pricing.md",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/mw-vat-gst.md",
+      "byte_equal": true
+    }
+  ],
+  "initial_capture_manifest_all_entries_match": true,
+  "initial_capture_files_checked": 82,
+  "actual_s28_pdf_sha256": "05e5a8ca32bf219b40657f84dddd861828608a710e0967e31ea1dbe6b4ea6e0a",
+  "scope": "F1\u20133 closure only. F4 remains open; no current-law or publication acceptance."
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "path": "skills/malawi/mw-company-formation.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: company formation & entity choice for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 tax-registration handoff for a newly established business, TIN controls and tax-type routing; company-law incorporation conditions remain explicit gaps."
+      ],
+      "category": [
+        "None",
+        "formation"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  },
+  {
+    "path": "skills/malawi/mw-corporate-income-tax.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: corporate income tax for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 non-mining company income-tax and MAT working papers, supernormal band, six-year credit controls and partial filing scope."
+      ],
+      "category": [
+        "None",
+        "international"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  },
+  {
+    "path": "skills/malawi/mw-income-tax.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: personal income tax for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 ordinary monthly PAYE and annual non-employment rate computations from enacted December 2025 tables; pension deductions and full filing scope remain partial."
+      ],
+      "category": [
+        "None",
+        "international"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  },
+  {
+    "path": "skills/malawi/mw-payroll-social.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: payroll & social contributions for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 mandatory occupational pension contribution working papers under the 2023 Act, remittance duties and PAYE reconciliation; tax deductibility and exemption orders remain partial."
+      ],
+      "category": [
+        "None",
+        "payroll"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  },
+  {
+    "path": "skills/malawi/mw-tax-overview.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: tax overview for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 tax intake and source routing across current company MAT, PAYE, VAT, pension and TP notice jobs; partial country coverage."
+      ],
+      "category": [
+        "None",
+        "orchestrator"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  },
+  {
+    "path": "skills/malawi/mw-vat-gst.md",
+    "cta_byte_equal": true,
+    "frontmatter_changes": {
+      "description": [
+        "Source-cited draft: vat / gst for Malawi (tax year 2025) \u2014 rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.",
+        "Malawi 2026 current VAT computation, K50 m registration rule, foreign digital supply boundary and monthly filing; pre-amendment/portal details remain partial."
+      ],
+      "category": [
+        "None",
+        "international"
+      ],
+      "tax_year": [
+        "2025",
+        "2026"
+      ],
+      "last_updated": [
+        "2026-07-13",
+        "2026-11-01"
+      ],
+      "version": [
+        "None",
+        "1.0"
+      ]
+    },
+    "platform_field_changes": []
+  }
+]

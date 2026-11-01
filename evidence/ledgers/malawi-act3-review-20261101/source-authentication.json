@@ -1,0 +1,14 @@
+{
+  "url": "https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf",
+  "local_sha256": "ebfda9d7b0d2731a0a83f7c5e4683a2b677cdeb348c313f7f8d208661758e680",
+  "read_utc": "2026-11-01T10:46:58.386494+00:00",
+  "error": "HTTP Error 403: Forbidden",
+  "browser_header_retry": {
+    "status": 200,
+    "bytes": 2617646,
+    "sha256": "ebfda9d7b0d2731a0a83f7c5e4683a2b677cdeb348c313f7f8d208661758e680",
+    "matches_local": true
+  },
+  "web_tool_attempt": "Both actual PDF and Act inventory page unavailable",
+  "browser_attempt": "In-app browser unavailable; no further browser action"
+}
