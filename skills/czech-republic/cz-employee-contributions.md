@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Czech Republic: employee and employer social and health contributions (2026) v0.1
+# Czech Republic: employee and employer social and health contributions (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Czech Social Security Administration (ČSSZ), the General Health Insurance Company (VZP), the Czech National Bank and the statutes in the Collection of Laws (e-Sbírka), read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
