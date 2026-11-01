@@ -1,6 +1,6 @@
 # td-import-exemption-eligibility: figure and rule ledger
 
-Narrow 2026 eligibility draft, independent review pending. Actual source read 2026-11-01: complete two-page signed order, operative articles and date visually checked. Full PDF/text/page renders remain private outside Git. Short original French excerpts only; curly apostrophes normalise typography. Working-paper evidence requests and arithmetic are instructions, not a claimed statutory document list or customs valuation rule.
+Narrow 2026 eligibility draft, independent review accepted 2026-11-01 (see chad-review-closure-1). Actual source read 2026-11-01: complete two-page signed order, operative articles and date visually checked. Full PDF/text/page renders remain private outside Git. Short original French excerpts only; curly apostrophes normalise typography. Working-paper evidence requests and arithmetic are instructions, not a claimed statutory document list or customs valuation rule.
 
 | ID | Rule/conditions | Guide section | Act/article | Official URL | Short exact original-language quote | Read on |
 |---|---|---|---|---|---|---|
