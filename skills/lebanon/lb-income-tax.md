@@ -1,7 +1,7 @@
 ---
 name: lb-income-tax
-description: "Personal income tax in Lebanon for tax year 2026: salary tax, business income, family allowances, filing. Sources and unverified rows are marked per row."
-version: 1.1
+description: "Use this Guide for Lebanon personal income tax, salary tax and business income questions in 2026. It distinguishes the annual employment and business bands and explains the business taxable base, household deduction conditions and employer withholding rule. It includes two recomputing examples that start with established taxable income. It does not establish the current salary allowance, pension treatment, treaty relief, annual return fields or a final filing date after extensions and legal suspensions. Those topics are named non-operative holds. Use the questions and cited law before calculating, and refer unresolved filing facts for Lebanese professional review."
+version: 1.2
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,103 +9,108 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 ---
 
 # Lebanon Personal Income Tax
 
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Lebanon.
+
 ## Who this applies to
 
-Employees, sole traders, partners and self-employed professionals with income from activity in Lebanon. Lebanon taxes by schedule, not on a single total.
-
-
+Individuals with Lebanese business or employment income. Keep the schedules separate: Income Tax Law arts. 1-3 and 46. For wages, establish the public/private payer, residence and place of work; the old shorthand that any Lebanese funding makes every salary taxable is not a substitute for art. 46. This Guide supplies the annual bands and business base. Salary allowances, pensions and final filing remain subject to the holds below.
 
 ## Rates, bands and thresholds
 
-| Item | Amount | Tax year | Official URL |
+Annual taxable amounts after the applicable deductions. Tax each slice, not all income at the highest rate. Budget 324/2024 arts. 46-47 replace Income Tax Law arts. 32 and 58. The 2025 tax chapter and 2026 budget amendments were screened for later changes to these bands.
+
+| Annual taxable slice, LBP | Business rate | Employment rate | Official source |
 |---|---|---|---|
-| Advance at customs, taxpayers with no income tax or VAT declarations in the previous 3 years | 1.5% of import value, credited against tax due, penalties still apply | 2026 | https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf |
-| Payroll tax bracket rescaling context | Employment income is taxed under a dedicated payroll tax with progressive brackets, withheld at source by the employer. Brackets have been repeatedly re-scaled to track currency depreciation; the figures below reflect the 2024-2025 budget-law updates and should be confirmed against the latest circular. | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened |
-| Progressive payroll tax rate range | 2% to 25% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Annual payroll bracket range (2025) | LL 360 million up to LL 13.5 billion (approx : confirm against 2025 MoF circular) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2024 Budget Law |
-| Family exemption : single individual | LL 450,000,000 per year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2024 Budget Law |
-| Additional exemption : married with unemployed spouse | LL 225,000,000 added to the single exemption | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2024 Budget Law |
-| Additional exemption : per legitimate child | LL 45,000,000 per child (Subject to maximum number of children per the law) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2024 Budget Law |
-| Rate reduction for pensions | Payroll rates halved for retirement pensions and similar benefits | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Business/professional income tax basis | Income of sole proprietorships, general partnerships and self-employed professionals is taxed on a separate progressive schedule under Chapter 1. | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened |
-| Progressive business income tax rate range | 4% to 25% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Annual business-income bracket range | LL 540 million up to LL 13.5 billion (approx : confirm 2025 indexation) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2024 Budget Law |
-| Residence and territorial taxation context | Salary tax is withheld and remitted by employers; resident individuals are taxed on Lebanon-source employment and business income under the territorial principle. | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened |
-| When salary is taxable in Lebanon | If the beneficiary is resident in Lebanon, OR the service is performed in/benefits a Lebanese company, OR the funding source is in Lebanon | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Payroll tax collection mechanism | Withheld at source by the employer and remitted to the tax authority | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Non-resident tax payment frequency | Quarterly, within 15 days of the end of each quarter | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2022 Budget Law |
-| Annual employer payroll declaration deadline | By 28 February of the following year (Form R10) (approx : confirm exact form and date with MoF) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Business: first 540,000,000 | 4% | Not applicable | [2024 art. 46, p. 45](https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf) |
+| Business: above 540,000,000 to 1,440,000,000 | 7% | Not applicable | same |
+| Business: above 1,440,000,000 to 3,240,000,000 | 12% | Not applicable | same |
+| Business: above 3,240,000,000 to 6,240,000,000 | 16% | Not applicable | same |
+| Business: above 6,240,000,000 to 13,500,000,000 | 21% | Not applicable | same |
+| Business: above 13,500,000,000 | 25% | Not applicable | same |
+| Employment: first 360,000,000 | Not applicable | 2% | [2024 art. 47, pp. 46-47](https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf) |
+| Employment: above 360,000,000 to 900,000,000 | Not applicable | 4% | same |
+| Employment: above 900,000,000 to 1,800,000,000 | Not applicable | 7% | same |
+| Employment: above 1,800,000,000 to 3,600,000,000 | Not applicable | 11% | same |
+| Employment: above 3,600,000,000 to 7,200,000,000 | Not applicable | 15% | same |
+| Employment: above 7,200,000,000 to 13,500,000,000 | Not applicable | 20% | same |
+| Employment: above 13,500,000,000 | Not applicable | 25% | same |
 
 ## The base
 
-Salary, business and movable-capital income are taxed separately. Family allowances are deducted before the salary bands. Band tables: unverified, so do not compute band tax from this skill until the Ministry text is opened.
+For business income, reconcile receipts and evidenced expenses needed for the business, then adjustments, the applicable art. 31 personal deduction and the bands. Personal spending is not a business deduction (Income Tax Law art. 7). The 2024 art. 49 amendment sets the business deduction at LBP 450 million, adding LBP 225 million for a qualifying spouse and LBP 45 million per qualifying child, at most five; children, spouse employment and split deductions between working spouses have conditions on pp. 48-49. Confirm these facts before using the deduction. Do not automatically reuse it for salary: the salary deduction and its later amendments remain hold PIT-H1.
+
+For wages, art. 49 includes cash and benefits in kind, and art. 50 describes deductions. Use an evidenced taxable base; gross wages are not the taxable band input. If the person also has business income, art. 57 prevents a second personal deduction under the salary schedule. Do not issue a final salary computation while PIT-H1 is unresolved.
 
 ## Deadlines and filing
 
-Employers withhold and remit salary tax. Business income returns use the Ministry's e-services (eservices.finance.gov.lb): IDAL describes the steps as open E-services, supply the required information and documents, receive an E-pin by email, then file the form online ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). Form R10 and 28 February: unverified.
+Employers withhold. Income Tax Law art. 63 as replaced by 2025 budget art. 17 requires remittance every three months by the fifteenth of the next month; foreign-currency pay uses the BDL rate at each month end and is remitted in LBP. No numeric exchange rate is supplied here. The old R10 annual-return claim is wrong: the Ministry index distinguishes annual R5/R6/R7 from periodic R10. Current portal fields, annual form, payment reference, extensions and suspension effects are hold PIT-H2. Prepare the reconciliation and stop before submission until those are obtained.
 
 ## Penalties and interest
 
-Late declarations and incorrect information carry financial penalties, multiplied on repeat violations (Budget 2026 art. 18, [Citizen Budget](https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf)). Amounts: unverified. An exceptional 85% reduction of penalties owed to public entities applied if paid within three months of the law's publication, with a reduced penalty of at least LBP 200,000 or USD 5; that window has passed unless extended (art. 43).
+Hold PIT-H3 covers the applicable filing/payment penalties. Budget 2026 art. 18 is about beneficial-owner declarations, not a general payroll penalty. Do not apply its figures to an ordinary late income return. The temporary art. 43 settlement is held pending the publication date and later deadline-suspension analysis.
 
 ## Cross-border points
 
-Non-resident salary tax payment frequency is in the table (unverified). Offshore company staff: see [corporate income tax](lb-corporate-income-tax.md).
+Determine source, residence and payer under art. 46 before selecting the salary schedule. Treaty relief, non-resident remittance rules and pension treatment are hold PIT-H4. NSSF belongs in [Payroll and social contributions](lb-payroll-social.md); company profit and import advances in [Corporate income tax](lb-corporate-income-tax.md).
 
 ## Two worked examples that recompute
 
-### Example 1: family allowance total (unverified allowance amounts)
-
-Married, non-working spouse, two children: 450,000,000 + 225,000,000 + 2 x 45,000,000 = LL 765,000,000.
+Business taxable profit, already after allowable deductions, is LBP 900 million. The first slice costs LBP 21.6 million and the next LBP 25.2 million, total LBP 46.8 million.
 
 ```oa-check
-name: Family allowance, married, two children
+name: Business taxable profit 900 million
 inputs:
-  single: 450000000
-  spouse: 225000000
-  child: 45000000
-  children: 2
+  base: 900000000
 steps:
-  - total: single + spouse + child * children
+  - first: min(base, 540000000) * 0.04
+  - second: max(min(base, 1440000000) - 540000000, 0) * 0.07
+  - tax: first + second
 expected:
-  total: 765000000
+  tax: 46800000
 ```
 
-### Example 2: import advance, decision to file overdue declarations first
 
-Goods worth LL 2,000,000,000, no declarations for 3 years. Unfiled: 1.5% advance is LL 30,000,000 at customs. Filed: no advance under art. 27. The advance is credited, so the cost is cash timing, and penalties remain either way.
+Classification decision: two separately established taxable bases of LBP 900 million produce different results. Employment costs LBP 28.8 million; business costs LBP 46.8 million. The LBP 18 million difference is why the income character must be evidenced. These are annual taxable-base examples, not gross-to-net salary calculations or an election to relabel employment.
 
 ```oa-check
-name: Article 27 advance
+name: Employment versus business character
 inputs:
-  value: 2000000000
+  employment_base: 900000000
+  business_base: 900000000
 steps:
-  - advance: value * 0.015
+  - salary_tax: 360000000 * 0.02 + (employment_base - 360000000) * 0.04
+  - business_tax: 540000000 * 0.04 + (business_base - 540000000) * 0.07
+  - difference: business_tax - salary_tax
 expected:
-  advance: 30000000
+  salary_tax: 28800000
+  business_tax: 46800000
+  difference: 18000000
 ```
+
 
 ## Ask the client first
 
-- Employee, sole trader, partner or professional?
-- Marital status, spouse working, number of children.
-- Currency of pay and the rate used.
-- Resident, and where the work is done.
-- Declarations filed for the last 3 years?
+- What is the income character, payer, residence and place of work?
+- What is the taxable year and evidenced business or salary base?
+- Is the spouse working, and who claims each qualifying child and personal deduction?
+- What currencies and monthly conversion records were used?
+- Are there multiple employers, pensions, foreign receipts or overdue declarations?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and read scope | URL | Read on |
 |---|---|---|
-| Ministry of Finance Citizen Budget 2026, measures list, all pages (hosted by Institut des Finances, a Ministry body) | https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf | 2026-11-01 |
-| IDAL, Doing Business, Tax System (whole page) | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
-| Ministry of Finance, finance.gov.lb tax pages | unverified: CAPTCHA, not read | not read |
+| Income Tax Law 144/1959, arts. 1-3, 7, 11-14, 46, 49-50, 57-59; only these clauses and neighbours read; older consolidation | https://www.finance.gov.lb/en-us/Taxation/LRT/Documents/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf | 2026-11-01 |
+| Budget 324/2024, arts. 46-49, pp. 45-49; amounts read from page images | https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf | 2026-11-01 |
+| Budget 2025, Decree 56/2025, tax chapter arts. 16-53, PDF pp. 27-71; amendment headings screened, art. 17 read in full | https://finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%202025.pdf | 2026-11-01 |
+| Budget 40/2026, arts. 16-18, 27-35, 40-43, 51-52 and closing art. 57; relevant clauses and neighbours read, annexes not read | https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf | 2026-11-01 |
 
-Not yet confirmed: every row marked unverified. finance.gov.lb returned a CAPTCHA during this refresh, which we did not solve; only archive indexes of it were read, and the text of 2026 Budget Law No. 40 of 10 Feb 2026 was not opened (the law number comes from a search summary, not an official page). Citizen Budget wording covers measures only, so anything else in that law is unread.
+Not yet confirmed: PIT-H1: current salary personal allowances, disability relief, part-year allocation and gross-to-net computation. PIT-H2: annual forms/boxes, portal/payment sequence, 2026 extensions and legal-suspension effect. PIT-H3: current late-filing/payment penalties and any available settlement. PIT-H4: pension rate reduction, treaty relief and non-resident collection frequency. These holds are non-operative; historical claims and every replaced item remain in the per-Guide ledger and immutable Git versions.
 
 <!-- openaccountants-cta-block -->
 

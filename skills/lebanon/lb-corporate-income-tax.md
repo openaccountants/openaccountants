@@ -1,7 +1,7 @@
 ---
 name: lb-corporate-income-tax
-description: "Corporate income tax in Lebanon for tax year 2026: rate, withholding, holding and offshore companies, filing. Sources and unverified rows are marked per row."
-version: 1.1
+description: "Use this Guide for Lebanon corporate income tax, SAL and SARL profit tax, dividends and import-advance questions for 2026. It supplies the ordinary capital-company rate, distinguishes profit from distribution tax and identifies the real-profit base and customs-credit reconciliation. The two cases recompute an ordinary SAL distribution and a cash-retention comparison. It does not calculate special holding or offshore taxes, non-resident withholding, Sayrafa liability, deemed-profit coefficients or temporary revaluation relief. Current forms, extensions, suspension effects and penalty calculations are named non-operative holds. Read the conditions and obtain the missing evidence before preparing a filing or choosing a special regime."
+version: 1.2
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,122 +9,104 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 ---
 
 # Lebanon Corporate Income Tax
 
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Lebanon.
+
 ## Who this applies to
 
-SAL, SARL, branches and other entities with profit from activity in Lebanon, plus holding and offshore companies.
-
-Lebanese resident corporate entities are taxed at a flat 17% on net profits realised in Lebanon, computed under either the real-profit or deemed-profit method depending on entity type and activity.
-
-Distributions and certain cross-border payments are subject to withholding under the Tax on Movable Capital and the non-resident withholding regime.
-
-Corporate tax is assessed on the prior financial year's profits, with filing/payment deadlines that differ by entity type.
+Lebanese SAL/SARL companies, foreign branches and other businesses with profits in Lebanon. The standard-company calculations below do not extend a special holding or offshore regime to an ordinary trading business. Income Tax Law arts. 3 and 6 tax Lebanese profits for the preceding income period; art. 14 addresses approved non-calendar accounting periods.
 
 ## Rates, bands and thresholds
 
-| Item | Amount | Tax year | Official URL |
-|---|---|---|---|
-| Corporate tax, SAL and SARL | 17% of profit | 2026 | https://www.investinlebanon.gov.lb/en/doing_business/tax_system |
-| Profit on sale of fixed assets including shares | 15% | 2026 | same |
-| Withholding on movable-capital proceeds generated in Lebanon (dividends, interest and income on shares, directors' amounts from profits, reserve distributions) | 10% | 2026 | same |
-| Holding: tax on capital and reserves | LBP 1.8 million to LBP 5 million maximum, graduated | 2026 | same |
-| Holding: interest on loans to Lebanese companies, maturity under 3 years | 10% | 2026 | same |
-| Holding: gain on shares in Lebanese companies held under 2 years | 10% | 2026 | same |
-| Holding: patent and rights rentals from a Lebanese company | 10% | 2026 | same |
-| Holding: management fees | 5% | 2026 | same |
-| Offshore: fixed annual tax | LBP 1 million | 2026 | same |
-| Offshore: profit on sale of fixed assets in Lebanon | 15% | 2026 | same |
-| Sayrafa platform profits above USD 100,000, excluding salary and wage differences | additional exceptional 17% | 2026 | https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf |
-| New enterprise producing new goods: fixed-asset value ceiling | raised to a minimum of LBP 23 billion | 2026 | same |
-| Advance at customs, no income tax or VAT declarations in previous 3 years | 1.5% of import value, credited | 2026 | same |
-| Standard corporate income tax rate | 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Tax on capital gains from disposal of fixed assets | 15% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Tax base / territoriality | Profit is taxable in Lebanon if generated through effort or activity exerted in Lebanon | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Real-profit method | Mandatory for corporations, LLCs, foreign-company branches, and entities with 4+ employees or importing goods | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Deemed-profit method | Applies to insurance, savings institutions, transport companies, oil refineries, and public-works contractors; profit deemed then taxed at 17% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Withholding tax on dividends | 10% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
-| Withholding tax on bank/treasury interest | 7% (Non-refundable and not carried forward) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
-| Withholding on other movable-capital income | 10% (directors'/shareholders' fees, profit distributions, corporate loan interest) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Tax on Movable Capital (Decree-Law No. 146 of 1959) |
-| Non-resident WHT on services | 8.5% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2022 Budget Law |
-| Non-resident WHT on goods / other | 3.4% | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; 2022 Budget Law |
-| Withholding tax on royalties (non-treaty) | 8.5% (Treaty rates apply where lower; lower non-treaty rate may still be used) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Filing deadline : artificial persons (entities) | 31 March of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Filing deadline : capital companies (SAL/SARL) | 31 May of the year following the income year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Payment deadline | Same as filing deadline (31 March or 31 May) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Assessment basis | Tax in a given year is based on the previous financial year's profits | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
+| Item and conditions | Amount | Official source |
+|---|---|---|
+| Ordinary capital-company profit, SAL/SARL | 17% | [Income Tax Law art. 32 as replaced by Budget 324/2024 art. 46, pp. 45-46](https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf); [MoF notice 4859](https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4859.pdf) |
+| Ordinary company distribution, subject to character and exemption checks | 10% | [MoF notice 4676, Income Tax Law art. 72 bis](https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4676.pdf) |
+| Fixed-asset disposal profit, SAL/SARL; classification required | 15% | [IDAL SAL/SARL tax sections](https://www.investinlebanon.gov.lb/en/doing_business/tax_system) |
+| Import advance: failure to file business-results or VAT declarations in any period of the preceding three years | 1.5% of the customs-defined import value, credited to annual tax; penalties remain | [Budget 40/2026 art. 27, p. 38](https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf) |
+| New industrial enterprise asset condition under Income Tax Law art. 5 bis II(c) | Minimum LBP 23 billion; not a ceiling or a complete exemption test | [Budget 40/2026 art. 28, p. 38](https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf) |
 
 ## The base
 
-Profit from effort or activity exerted in Lebanon. Holding and offshore companies pay no income tax on profits or on profit distribution; offshore companies also have no stamp duty on overseas contracts signed in Lebanon and no payroll tax on 30% of foreign employees' basic salary, and pay payroll tax on staff working in Lebanon ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). Inventory (2023, 2024) and fixed-asset revaluation got an extra three months; the Ministry's review deadline runs to 31/12/2030 (Budget 2026 art. 40).
+Start with the relevant profit period, reconcile income and business expenses, and apply tax adjustments (arts. 6-7, 14). Real-profit filing is mandatory for the listed art. 11 classes, including companies and foreign branches. The employee-count limb says more than four permanent employees, not four or more; it has activity-specific scope. Deemed-profit businesses need their applicable official coefficient and computation before tax: hold CIT-H1.
+
+For an art. 27 advance, retain the customs assessment, trace it to the taxpayer account, deduct the accepted advance from annual tax and reconcile the balance. An excess is refundable on request if no other taxes are owed; art. 27 gives the administration thirty days from request, then Treasury-bond-rate interest for delay. Do not promise an amount before the tax account is reconciled. Do not advise filing immediately before import as a guaranteed way to remove this advance: the test concerns failures in the preceding periods.
 
 ## Deadlines and filing
 
-Corporate tax is filed through E-services, not for holding companies, which file manually ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). Steps: open E-services, send the required information and documents, receive the E-pin by email, open the form online. Deadlines are in the table (unverified).
+Income Tax Law art. 13 supplies the ordinary return framework, but old calendar dates are not a complete 2026 filing instruction. Current annual forms, portal boxes, payment references, extensions and Law 46/2026 suspension effects are hold CIT-H2. IDAL describes Ministry E-services registration, documentary review and emailed E-pin; it identifies holding returns as a manual exception. Obtain the current account-specific route before submission.
 
 ## Penalties and interest
 
-Late declarations and incorrect information carry financial penalties, multiplied on repeat violations (Budget 2026 art. 18, [Citizen Budget](https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf)). Amounts: unverified. An exceptional 85% reduction of penalties owed to public entities applied if paid within three months of the law's publication, with a reduced penalty of at least LBP 200,000 or USD 5; that window has passed unless extended (art. 43).
+Budget 2026 arts. 16-17 raise specified fixed/minimum Tax Procedures Law penalties for 2026 business years. Match the breached article and entity class; the original generic art. 18 wording is withdrawn because art. 18 concerns beneficial ownership. Current ordinary penalties and any temporary settlement are hold CIT-H3. The prior assertion that an art. 43 relief window has simply expired is not an instruction to reject relief without checking later suspension/extension law.
 
 ## Cross-border points
 
-Withholding on non-residents and royalties is in the table (unverified).
+Hold CIT-H4 covers the old bank-interest rate, non-resident goods/services/royalty withholding, treaties and holding/offshore amounts and exemptions. The official IDAL page and older special-regime PDFs do not establish all current amounts and conditions. Preserve the topics but do not compute them as standard company tax. Sayrafa profits require the actual scope and implementation of Budget 2026 art. 52, including its USD threshold, salary exclusion and retrospective rule; hold CIT-H5. Revaluation windows under arts. 40-42 remain CIT-H6 until commencement and suspension effects are established.
 
 ## Two worked examples that recompute
 
-### Example 1: tax and dividend
-
-Profit LL 1,000,000,000 at 17%, full distribution at 10%.
+An ordinary SAL has reconciled taxable profit LBP 1 billion and no reliefs, credits or special regime. Tax is LBP 170 million. If the entire LBP 830 million balance is an ordinary taxable distribution, withholding is LBP 83 million and shareholders receive LBP 747 million.
 
 ```oa-check
-name: SAL profit and dividend
+name: Ordinary SAL and full dividend
 inputs:
   profit: 1000000000
 steps:
   - cit: profit * 0.17
-  - net: profit - cit
-  - wht: net * 0.10
-  - cash: net - wht
+  - balance: profit - cit
+  - wht: balance * 0.10
+  - cash: balance - wht
 expected:
   cit: 170000000
   wht: 83000000
   cash: 747000000
 ```
 
-### Example 2: distribute or retain
 
-Retaining the LL 830,000,000 defers the LL 83,000,000 withholding. Distribution leaves LL 747,000,000 with shareholders. The deciding figure is the 10% on the amount paid out.
+Distribution decision: retain all LBP 830 million or distribute half now. Half produces LBP 41.5 million withholding and LBP 373.5 million shareholder cash, leaving LBP 415 million retained. This compares cash timing only; it does not establish that retaining an amount avoids a tax or deemed-distribution rule for an unknown entity.
 
 ```oa-check
-name: Distribute half
+name: Retain versus half distribution
 inputs:
-  net: 830000000
+  available: 830000000
 steps:
-  - paid: net * 0.5
-  - wht: paid * 0.10
+  - distribution: available / 2
+  - withholding: distribution * 0.10
+  - shareholder_cash: distribution - withholding
+  - retained: available - distribution
 expected:
-  wht: 41500000
+  withholding: 41500000
+  shareholder_cash: 373500000
+  retained: 415000000
 ```
+
 
 ## Ask the client first
 
-- Entity type: SAL, SARL, branch, holding, offshore.
-- Real-profit or deemed-profit method.
-- Year end, and any Sayrafa gains above USD 100,000.
-- Payments to non-residents, and any treaty.
-- Declarations filed for the last 3 years?
+- What is the registered legal form, permitted activity and profit period?
+- Is this ordinary trading, a holding/offshore company or a deemed-profit activity?
+- What expenses, distributions and fixed-asset disposals occurred?
+- What payments go abroad, and to whom?
+- Which prior declarations and customs advances appear on the tax account?
+- Are there Sayrafa gains, revaluations or pending penalties?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and read scope | URL | Read on |
 |---|---|---|
-| Ministry of Finance Citizen Budget 2026, measures list, all pages (hosted by Institut des Finances, a Ministry body) | https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf | 2026-11-01 |
-| IDAL, Doing Business, Tax System (whole page) | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
-| Ministry of Finance, finance.gov.lb tax pages | unverified: CAPTCHA, not read | not read |
+| Income Tax Law 144/1959, arts. 3, 6-7, 11-15; clauses and neighbours read, older consolidation | https://www.finance.gov.lb/en-us/Taxation/LRT/Documents/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf | 2026-11-01 |
+| MoF notice 4859, 14 November 2017, whole page; CIT commencement | https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4859.pdf | 2026-11-01 |
+| MoF notice 4676, 7 November 2017, whole page; distribution rate | https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4676.pdf | 2026-11-01 |
+| Budget 324/2024 art. 46, pp. 45-46; 17% company rate read in image | https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf | 2026-11-01 |
+| Budget 40/2026 arts. 16-18, 27-29, 40-43, 52, 57; clauses and neighbours, not annexes | https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf | 2026-11-01 |
+| IDAL Tax System, SAL/SARL, holding/offshore and online declaration sections; undated page read; special-regime amounts not accepted as current | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
 
-Not yet confirmed: every row marked unverified. finance.gov.lb returned a CAPTCHA during this refresh, which we did not solve; only archive indexes of it were read, and the text of 2026 Budget Law No. 40 of 10 Feb 2026 was not opened (the law number comes from a search summary, not an official page). Citizen Budget wording covers measures only, so anything else in that law is unread.
+Not yet confirmed: CIT-H1: all deemed-profit coefficients and special base computations. CIT-H2: current filing/payment forms, boxes, dates, extensions and legal suspension. CIT-H3: exact applicable ordinary penalties and settlement availability. CIT-H4: bank-interest, non-resident and treaty withholding; holding/offshore current fixed/graduated taxes, exemptions and payroll carve-outs. CIT-H5: operative Sayrafa computation and implementation. CIT-H6: revaluation and exceptional windows after publication and later legislation. No held rule is a filing input; original values are preserved in the ledger, not current rates.
 
 <!-- openaccountants-cta-block -->
 

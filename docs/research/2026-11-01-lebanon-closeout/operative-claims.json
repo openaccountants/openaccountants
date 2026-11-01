@@ -1,0 +1,430 @@
+{
+  "lb-income-tax": [
+    {
+      "id": "PIT-01",
+      "section": "Who this applies to",
+      "rule": "Separate business/employment/movable-capital schedules; territorial business-profit scope; salary public/private payer/residence/work test.",
+      "act_article_page": "Income Tax Law144/1959 arts.1-3p1,46p25",
+      "source": "IT",
+      "exact_original_language_quote": "تتناول ضريبة الدخل: 1- أرباح المهن الصناعية والتجارية وغير التجارية. 2- الرواتب والأجور ومعاشات التقاعد. 3- دخل رؤوس الأموال المنقولة. / صندوق خاص، الى كل شخص مقيم في لبنان، وكذلك الى كل شخص مقيم في الخارج لقاء خدمات اديت في لبنان."
+    },
+    {
+      "id": "PIT-02",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 0 through 540000000;4%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "أربعة بالمائة / خمسمائة وأربعون مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-03",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 540,000,000 through 1440000000;7%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "سبعة بالمائة / مليار وأربعمائة وأربعون مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-04",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 1,440,000,000 through 3240000000;12%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "اثنا عشر بالمائة / ثلاثة مليارات ومائتان وأربعون مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-05",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 3,240,000,000 through 6240000000;16%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "ستة عشر بالمائة / ستة مليارات ومائتان وأربعون مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-06",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 6,240,000,000 through 13500000000;21%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "واحد وعشرون بالمائة / ثلاثة عشر مليار وخمسمائة مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-07",
+      "section": "Rates, bands and thresholds",
+      "rule": "Business marginal slice above 13,500,000,000 through unlimited;25%. Tax base already after deductions.",
+      "act_article_page": "Budget324/2024 art46 replaces ITart32,pp45-46",
+      "source": "B24",
+      "exact_original_language_quote": "خمسة وعشرون بالمائة / الذي يزيد عن /١٣،٥٠٠،٠٠٠،٠٠٠/ل.ل."
+    },
+    {
+      "id": "PIT-08",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 0 through 360000000;2%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "اثنان بالمائة / ثلاثمائة وستون مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-09",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 360,000,000 through 900000000;4%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "أربعة بالمائة / تسعمائة مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-10",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 900,000,000 through 1800000000;7%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "سبعة بالمائة / مليار وثمانمائة مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-11",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 1,800,000,000 through 3600000000;11%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "أحد عشر بالمائة / ثلاث مليارات وستمائة مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-12",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 3,600,000,000 through 7200000000;15%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "خمسة عشر بالمائة / سبعة مليارات ومائتا مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-13",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 7,200,000,000 through 13500000000;20%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "عشرون بالمائة / ثلاثة عشر مليار وخمسمائة مليون ليرة لبنانية"
+    },
+    {
+      "id": "PIT-14",
+      "section": "Rates, bands and thresholds",
+      "rule": "Employment marginal slice above 13,500,000,000 through unlimited;25%. Requires evidenced taxable salary base;gross-to-net allowance held.",
+      "act_article_page": "Budget324/2024 art47 replaces ITart58,pp46-47",
+      "source": "B24",
+      "exact_original_language_quote": "خمسة وعشرون بالمائة / الذي يزيد عن /١٣،٥٠٠،٠٠٠،٠٠٠/ل.ل."
+    },
+    {
+      "id": "PIT-15",
+      "section": "The base",
+      "rule": "Business450m personal deduction,225m spouse,45m child at most5; eligibility/working-spouse split conditions adjacent. Not automatically a salary allowance.",
+      "act_article_page": "Budget324/2024 art49 replaces ITart31,pp48-49",
+      "source": "B24",
+      "exact_original_language_quote": "أربعمائة وخمسون مليون ليرة لبنانية / مائتان وخمس وعشرون مليون ليرة لبنانية للمكلف المتزوج / وخمسة وأربعون مليون ليرة لبنانية لكل ولد شرعي ما زال على عاتقه / على أن لا يتجاوز عدد الأولاد المستفيدين الخمسة"
+    },
+    {
+      "id": "PIT-16",
+      "section": "The base",
+      "rule": "Business receipts less necessary evidenced costs;personal spending excluded.",
+      "act_article_page": "ITarts6-7pp6-8",
+      "source": "IT",
+      "exact_original_language_quote": "إن الربح الصافي هو مجموع واردات المكلف الخاضعة للضريبة بعد تنزيل جميع النفقات والأعباء التي تقتضيها ممارسة التجارة أو الصناعة أو المهنة. / النفقات الشخصية"
+    },
+    {
+      "id": "PIT-17",
+      "section": "The base",
+      "rule": "Salary includes cash/in-kind benefits;deductions need evidence;dual business/salary taxpayer cannot take personal deduction twice.",
+      "act_article_page": "ITarts49-50p26,57p30",
+      "source": "IT",
+      "exact_original_language_quote": "مجموع الرواتب والاجور والتخصيصات والتعويضات والجوائز والاكراميات والمنافع النقدية والعينية / فلا يستفيد الا من التنزيل المنصوص عليه في الباب الاول"
+    },
+    {
+      "id": "PIT-18",
+      "section": "Deadlines and filing",
+      "rule": "Employer withholding every3months by15ofnextmonth;FX salaries converted atBDLmonthendrate and remitted inLBP;finaldate/formstillhold.",
+      "act_article_page": "Budget2025 art17 replaces ITart63;PDFp28/Gazettep26",
+      "source": "B25",
+      "exact_original_language_quote": "وأن يؤدي المبالغ المقتطعة إلى الخزينة كل ثلاثة أشهر في موعد لا يتعدى الخامس عشر من الشهر الذي يلي فترة الثلاثة أشهر المعنية / وفقا لسعر الصرف المعتمد من مصرف لبنان في نهاية كل شهر"
+    },
+    {
+      "id": "PIT-19",
+      "section": "Deadlines and filing",
+      "rule": "Correct annual-versus-periodic form distinction;no asserted currentboxes.",
+      "act_article_page": "MoFsalaryindex,annualnavigation and decision449/1of17May2016",
+      "source": "MOFINDEX",
+      "exact_original_language_quote": "التصريح السنوي (ر5) والكشوفات السنوية ر6 والكشف الإجمالي ر7 / تقديم البيان الدوري \"ر10 \""
+    },
+    {
+      "id": "PIT-20",
+      "section": "Penalties and interest",
+      "rule": "Art18 isUBO-specific,notordinarysalaryreturnpenalty;temporarysettlementcurrentnessheld.",
+      "act_article_page": "Budget40/2026 art18pp27-30",
+      "source": "B26",
+      "exact_original_language_quote": "الغرامات الخاصة بصاحب الحق الاقتصادي"
+    }
+  ],
+  "lb-corporate-income-tax": [
+    {
+      "id": "CIT-01",
+      "section": "Rates, bands and thresholds",
+      "rule": "Ordinary capital-company rate17%;notallentities/specialregimes.",
+      "act_article_page": "Budget324/2024art46p46;ITart32",
+      "source": "B24",
+      "exact_original_language_quote": "أما أرباح شركات الأموال (الشركات المغفلة- الشركات المحدودة المسؤولية- شركات التوصية بالأسهم بالنسبة للشركاء الموصين) فتخضع لضريبة نسبية قدرها ١٧%"
+    },
+    {
+      "id": "CIT-02",
+      "section": "Rates, bands and thresholds",
+      "rule": "Ordinarydistribution10%;old5%withdrawnfrom27Oct2017;character/exemptionschecked.",
+      "act_article_page": "Notice4676of7Nov2017;ITart72bis,p1",
+      "source": "DIV",
+      "exact_original_language_quote": "اعتماد معدل ضريبة ١٠% على الأرباح التي تتخذ قراراً بتوزيعها اعتباراً من تاريخ ٢٠١٧/١٠/٢٧"
+    },
+    {
+      "id": "CIT-03",
+      "section": "Rates, bands and thresholds",
+      "rule": "SAL/SARLfixedassetdisposalprofit15%;classificationrequired;officialguidancebaseline.",
+      "act_article_page": "IDALTaxSystem,SAL/SARLsections",
+      "source": "IDAL-T",
+      "exact_original_language_quote": "15% tax on profits received from the sale of fixed assets including financial assets (shares)"
+    },
+    {
+      "id": "CIT-04",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "1.5%customs-definedimportvalueifbusiness/VATdeclarationfailureinanyperiodoftheprevious3years;annualtaxcredit;penaltiesremain;excessrequestifnoothertax;30dayrefundthenTreasurybondinterest.",
+      "act_article_page": "Budget40/2026art27p38,wholeclause",
+      "source": "B26",
+      "exact_original_language_quote": "تستوفي إدارة الجمارك مبلغ نسبته ١،٥% / خلال أي فترة من السنوات الثلاث السابقة للسنة التي يتم خلالها الإستيراد / ويحسم من الضريبة السنوية / ضمن مهلة أقصاها ثلاثون يوماً من تاريخ تقديم الطلب"
+    },
+    {
+      "id": "CIT-05",
+      "section": "Rates, bands and thresholds",
+      "rule": "Industrialfixedassetminimum23bn,notceiling;oneconditiononly.",
+      "act_article_page": "Budget40/2026art28p38;IT5bisII(c)",
+      "source": "B26",
+      "exact_original_language_quote": "أن لا تقل قيمة الأصول الثابتة التي تملكها المؤسسة الجديدة في لبنان وتخصصها لإنتاج السلع والمواد الجديدة عن ثلاثة وعشرين مليار ليرة لبنانية."
+    },
+    {
+      "id": "CIT-06",
+      "section": "The base;Who this applies to",
+      "rule": "Lebaneseprofit;previousincomeperiod;approvednoncalendaryear;necessaryexpenses;art11realprofitclasses,morethan4permanentworkersratherthan4+.",
+      "act_article_page": "ITarts3,6-7,11-14pp1,6-10",
+      "source": "IT",
+      "exact_original_language_quote": "على مجموع الأرباح التي يحققونها في لبنان. / خلال السنة السابقة / أكثر من أربعة اشخاص بصورة دائمة"
+    },
+    {
+      "id": "CIT-07",
+      "section": "Deadlines and filing",
+      "rule": "IDALbaselineE-servicesdocumentreview/E-pin,holdingmanualexception;currentformsheld.",
+      "act_article_page": "IDALOnlineDeclaration",
+      "source": "IDAL-T",
+      "exact_original_language_quote": "Click on the box: “E-services”. / the ministry will send you an “E-pin” via email / “Holding companies” which are required to fill the declaration manually and not online."
+    },
+    {
+      "id": "CIT-08",
+      "section": "Penalties and interest",
+      "rule": "2026specifiedfixed/minimumpenaltychanges;articlematchingrequired,notgeneralUBOpenalty.",
+      "act_article_page": "Budget40/2026arts16-18pp26-30",
+      "source": "B26",
+      "exact_original_language_quote": "رفع قيمة الغرامات المقطوعة / تطبق أحكام هذه المادة إعتباراً من أعمال سنة ٢٠٢٦ / الغرامات الخاصة بصاحب الحق الاقتصادي"
+    }
+  ],
+  "lebanon-vat": [
+    {
+      "id": "VAT-01",
+      "section": "Rates, bands and thresholds;Deadlines and filing",
+      "rule": "Onecalendar-monthstatutoryfiling/paymentreplaces20days;actualextensionsandsuspensionheld.",
+      "act_article_page": "Budget40/2026art51p79;VATarts35(4),39",
+      "source": "B26",
+      "exact_original_language_quote": "تعدل مهلة تقديم التصريح الدوري / والمهلة الواردة في المادة ٣٩ منه بحيث تصبح شهراً بدلاً من عشرين يوماً."
+    },
+    {
+      "id": "VAT-02",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "PassengeracquisitionVATcapUSD30000exVAT;proportionalexcesslimit.",
+      "act_article_page": "Budget40/2026art30replacesVATart28,p40",
+      "source": "B26",
+      "exact_original_language_quote": "في حال كانت قيمة هذه السيارة لا تتجاوز مبلغ ٣٠،٠٠٠ د.أ. دون الضريبة على القيمة المضافة / ويحتسب حق الحسم الجزئي في حال وجوده استناداً إلى هذه الضريبة القصوى"
+    },
+    {
+      "id": "VAT-03",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "Carcapexceptionfarepayingtransport/rental/hotelsandresorts4starsup.",
+      "act_article_page": "Budget40/2026art30,p41",
+      "source": "B26",
+      "exact_original_language_quote": "لا يطبق الحد الأقصى المشار إليه أعلاه في حال كانت تلك السيارة مستخدمة في أنشطة خدمات نقل الركاب بالأجرة، أو أنشطة تأجير السيارات، أو أنشطة الفنادق والمنتجعات السياحية المصنفة أربعة نجوم وما فوق."
+    },
+    {
+      "id": "VAT-04",
+      "section": "The base",
+      "rule": "Ordinarytaxableactivitydeduction,exports/internationaltransportidentifiedbyarts19-21,stock/fixedassetpre-registrationconditions,utility/fuelblocked.",
+      "act_article_page": "Budget40/2026art30pp40-41;VATart28",
+      "source": "B26",
+      "exact_original_language_quote": "العمليات المتعلقة بالتصدير والعمليات المشابهة وعمليات النقل الدولي / تكون غير قابلة للحسم / استهلاك الماء والكهرباء والاتصالات والإنترنت والبنزين."
+    },
+    {
+      "id": "VAT-05",
+      "section": "The base;Two worked examples that recompute",
+      "rule": "Partialdeductionratiorelevantturnoveroverallsupplies;annualadjustment/turnoverdetailheld.",
+      "act_article_page": "MoFDeclaration,partialdeduction;VATart31/Decree7336art12",
+      "source": "VAT",
+      "exact_original_language_quote": "نسبة الحسم هي النسبة بين قيمة مجموع العمليات التي تمنح الخاضع للضريبة حق الحسم وبين قيمة مجموع كافة العمليات التي قام بها الخاضع للضريبة بما فيها تلك التي لا تمنحه هذا الحق."
+    },
+    {
+      "id": "VAT-06",
+      "section": "Rates, bands and thresholds",
+      "rule": "Excessinputcarryforward;annualrefundwithinmonth,min200mLBP;exportersperiod-endrequestsameperiod/minimum;otherconditionsneighborp42.",
+      "act_article_page": "Budget40/2026art31pp41-42;VATart30",
+      "source": "B26",
+      "exact_original_language_quote": "يدور الفائض إلى الفترة اللاحقة. / بعد انتهاء أية سنة ميلادية وضمن مهلة شهر / على أن لا يقل المبلغ المطالب باسترداده عن مائتي مليون ليرة لبنانية."
+    },
+    {
+      "id": "VAT-07",
+      "section": "Deadlines and filing",
+      "rule": "Calendarquartersbaseline,old20daypostalpageoverridden/held.",
+      "act_article_page": "MoFDeclaration,taxperiods",
+      "source": "VAT",
+      "exact_original_language_quote": "الفترة الضريبية المعتمدة هي الفصل الميلادي، بحيث تقسم السنة الميلادية إلى أربع فترات ضريبية"
+    },
+    {
+      "id": "VAT-08",
+      "section": "Deadlines and filing",
+      "rule": "Separatemonthlyfixedstampdeclaration15days;licensedmachinesexcluded;historictransitionownterms.",
+      "act_article_page": "Budget40/2026art35p45;StampLaw43(6)",
+      "source": "B26",
+      "exact_original_language_quote": "يسددوا رسم الطابع المالي المقطوع / شهرياً / بتصاريح شهرية الكترونية خلال مهلة ١٥ يوماً / يعفى من موجب تقديم التصاريح / باستخدام آلة واسمة في حال كانوا قد استحصلوا على ترخيص"
+    },
+    {
+      "id": "VAT-09",
+      "section": "Penalties and interest",
+      "rule": "UBOpenaltynotordinaryVAT;2024refundandgeneralsettlementwindowsheld.",
+      "act_article_page": "Budget40/2026arts18,41,43pp27-30,65-66",
+      "source": "B26",
+      "exact_original_language_quote": "الغرامات الخاصة بصاحب الحق الاقتصادي / الاسترداد عن العام ٢٠٢٤ / خلال مهلة ثلاثة أشهر من تاريخ نشر هذا القانون"
+    }
+  ],
+  "lb-payroll-social": [
+    {
+      "id": "PAY-01",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "Ordinaryfamilybaseceiling28mLBPmonthlyfrom1May2026,notgeneralpayrollcap.",
+      "act_article_page": "Memo831I/Vp1;Decree2923of24Apr2026;SSL68(2)",
+      "source": "N831",
+      "exact_original_language_quote": "يعدل، اعتباراً من ٢٠٢٦/٥/١، الحد الأقصى للكسب الخاضع للحسومات / ليصبح /٢٨،٠٠٠،٠٠٠/ل.ل."
+    },
+    {
+      "id": "PAY-02",
+      "section": "Rates, bands and thresholds;Two worked examples that recompute",
+      "rule": "Eligibleordinaryspouse2.1mmonthly,child1.155mupto5,total7.875mfrom1May;eligibilityseparate.",
+      "act_article_page": "Memo831II/Vp1;SSL46-48",
+      "source": "N831",
+      "exact_original_language_quote": "عن الشريك (الزوج أو الزوجة) /٢،١٠٠،٠٠٠/ل.ل. / عن كل ولد (لغاية خمسة أولاد) /١،١٥٥،٠٠٠/ل.ل. / /٧،٨٧٥،٠٠٠/ل.ل."
+    },
+    {
+      "id": "PAY-03",
+      "section": "Who this applies to;The base",
+      "rule": "Ordinaryfamilybenefitdistinguishedfromowner-driverandnonowner-driver/newspapervendorparagraphs;specialratesheld.",
+      "act_article_page": "Memo831II-IVp1",
+      "source": "N831",
+      "exact_original_language_quote": "السائقين العموميين الذين يقودون سياراتهم بأنفسهم / السائقين العموميين غير المالكين وباعة الصحف والمجلات"
+    },
+    {
+      "id": "PAY-04",
+      "section": "Deadlines and filing",
+      "rule": "Specificallylistedlegalperiodssuspended1Mar-31Jul2026;includesSSL80;discretionaryadministrativelimitsexcluded;actualduedateheld.",
+      "act_article_page": "Memo843p1andattachedLaw46arts1-2p2",
+      "source": "N843",
+      "exact_original_language_quote": "تعتبر معلقة حكماً من تاريخ ٢٠٢٦/٣/١ ولغاية ٢٠٢٦/٧/٣١ ضمناً المهل القانونية / المهل المنصوص عنها في المادة ٨٠ / المهل الممنوحة من الادارة أو المحددة من قبلها تبعاً لسلطتها الاستنسابية"
+    },
+    {
+      "id": "PAY-05",
+      "section": "Penalties and interest",
+      "rule": "LaterNSSFLaw47debt/penaltyroutecoversdebtsdue31Dec2025,30Jul2027limit,conditions/defaultsandnewpenaltytable;nospecificreliefcertified.",
+      "act_article_page": "Memo846I-II,IV-VIp1-3;Law47/2026",
+      "source": "N846",
+      "exact_original_language_quote": "المتوجبة لغاية ٢٠٢٥/١٢/٣١ / خلال فترة أقصاها ٢٠٢٧/٧/٣٠ / جدول الغرامات الجديد"
+    }
+  ],
+  "lb-company-formation": [
+    {
+      "id": "FORM-01",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "SARLcapitalbaseline5mLBP;1to20limited-liabilityparticipants.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "Capital: minimum of LBP 5,000,000 composed of social parts / at least one partner (single partner) and a maximum of twenty"
+    },
+    {
+      "id": "FORM-02",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "SALcapitalbaseline30mLBPandatleast3shareholders.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "Capital: minimum of 30,000,000 LBP / Shareholders: minimum of 3"
+    },
+    {
+      "id": "FORM-03",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "IDALannualretainerlawyerSAL/SARLandprincipalSALauditor;currentcompanylawchainheld.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "Lawyer: mandatory appointment of a lawyer with annual retainer / Auditors: mandatory appointment of one principal auditor"
+    },
+    {
+      "id": "FORM-04",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "SARLauditortriggerheld;IDALlistscapital,partnercountandonefifthrequest.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "the number of partners exceeds 20 / the capital amount equals 30 million LBP / representing 1/5 of the capital"
+    },
+    {
+      "id": "FORM-05",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "HoldinglimitedobjectSAL;offshoresingleshareholderpossible,notordinarySALheadcountrule.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "A Holding Company is a special type of Joint Stock Company that has a limited object / Shareholders: minimum of 1."
+    },
+    {
+      "id": "FORM-06",
+      "section": "Rates, bands and thresholds;The base",
+      "rule": "Branchtradeswithinparentobject;representativeofficerestrictedpromotion/marketing.",
+      "act_article_page": "IDALChooseaBusinessStructure,relevantnamedentitysections",
+      "source": "IDAL-F",
+      "exact_original_language_quote": "must have the same object as the mother foreign company / restricted and limited in its activities to the promotion and marketing"
+    }
+  ],
+  "lb-tax-overview": [
+    {
+      "id": "OV-01",
+      "section": "Who this applies to;The base",
+      "rule": "Routebusiness,salary/pension,movablecapitalseparately;territorialbusinessprofitnotuniversalforeignearningsrule.",
+      "act_article_page": "IncomeTaxLawarts1-3p1",
+      "source": "IT",
+      "exact_original_language_quote": "أرباح المهن الصناعية والتجارية وغير التجارية / الرواتب والأجور ومعاشات التقاعد / دخل رؤوس الأموال المنقولة / الأرباح التي يحققونها في لبنان"
+    },
+    {
+      "id": "OV-02",
+      "section": "The base",
+      "rule": "Approveddifferentaccountingperiodratherthanunconditionalcalendaryear.",
+      "act_article_page": "ITarts13-14pp10-11",
+      "source": "IT",
+      "exact_original_language_quote": "تتبع في قفل حساباتها بموافقة الدوائر المالية المختصة سنة تجارية غير السنة المدنية"
+    },
+    {
+      "id": "OV-03",
+      "section": "Deadlines and filing",
+      "rule": "E-servicesdocumentreviewandE-pin,holdingmanualexception;currentimplementationheld.",
+      "act_article_page": "IDALOnlineDeclaration",
+      "source": "IDAL-T",
+      "exact_original_language_quote": "the ministry will send you an “E-pin” via email / “Holding companies” which are required to fill the declaration manually and not online."
+    },
+    {
+      "id": "OV-04",
+      "section": "Rates, bands and thresholds",
+      "rule": "Linksrouteonetruehome;notduplicateoperativefigures.",
+      "act_article_page": "OfficialSAL/SARLandspecialentitysectionsasroutingcontext",
+      "source": "IDAL-T",
+      "exact_original_language_quote": "TAXES OF JOINT STOCK COMPANIES (S.A.L) / TAXES OF LIMITED LIABILITY COMPANIES (S.A.R.L)"
+    }
+  ]
+}

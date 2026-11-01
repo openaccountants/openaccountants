@@ -1,0 +1,114 @@
+[
+  {
+    "id": "B26",
+    "file": "budget-law-2026.pdf",
+    "url": "https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+    "read_scope": "Downloaded 927 pages; read relevant clauses and neighbours: arts.16-18 pp.26-30;27-35 pp.38-45;40-43 pp.65-66;51-52 pp.79-80;57 p.82. Tax chapter amendment headings screened in extracted text; numerical clauses accepted only after image reading. Fee tables and fiscal annexes not substantively read."
+  },
+  {
+    "id": "B24",
+    "file": "budget-law-2024.pdf",
+    "url": "https://finance.gov.lb/en-us/Finance/BI/ABDP/Documents/Budget%202024.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+    "read_scope": "Downloaded 1006 pages; read arts.46-49 pp.45-49 in rendered images including business bands, salary bands and business family deduction; pp.50-52 were examined to identify adjacent articles, not accepted as new income rules. No claim all annexes read."
+  },
+  {
+    "id": "B25",
+    "file": "budget-law-2025.pdf",
+    "url": "https://finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%202025.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "921fb75a42297c0bceced7fd8867427b43682dfb3700f8900b8ab433b7a54899",
+    "read_scope": "Downloaded scanned 224-page Gazette; cover, adopting Decree56/2025 and first budget clauses read. Screened tax chapter arts.16-53, PDFpp.27-71, by rendered page/contact sheets for amendments affecting the retained ordinary rules; art17 replacing art63 read in full at PDFp28 / Gazettep26. No OCR text available; other fiscal annexes unread. This screens these budget amendments, not every non-budget 2025/26 legal instrument."
+  },
+  {
+    "id": "IT",
+    "file": "income-law.pdf",
+    "url": "https://www.finance.gov.lb/en-us/Taxation/LRT/Documents/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+    "read_scope": "Read arts.1-3,6-7,11-15,46-50,57-59 and neighbours. Ministry older consolidation, 53pages, not current for every numeric amendment; later budget replacements control. No currentness implied by download."
+  },
+  {
+    "id": "CIT",
+    "file": "mof-cit-notice.pdf",
+    "url": "https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4859.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "bb789ca337db9a512fa5e27a7919b68afdfe0941b23158b85a8dd603c6948cd0",
+    "read_scope": "Whole one-page notice 4859 of14Nov2017 read in rendered image;17%from27Oct2017, superseding15%."
+  },
+  {
+    "id": "DIV",
+    "file": "mof-dividend-notice.pdf",
+    "url": "https://www.finance.gov.lb/en-us/Taxation/LRT/TP/Documents/4676.pdf",
+    "read_on": "2026-11-01",
+    "sha256": "04de1563518f7381bbdd6a5d68504836d7bce6f247c0c662037440514beec394",
+    "read_scope": "Whole one-page notice4676 of7Nov2017 read in image;art72bis reduced5% withdrawn;10%from27Oct2017."
+  },
+  {
+    "id": "IDAL-T",
+    "file": "authority-pages-web.json",
+    "url": "https://www.investinlebanon.gov.lb/en/doing_business/tax_system",
+    "read_on": "2026-11-01",
+    "sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+    "read_scope": "Official page via web reading service, substantive SAL/SARL, holding/offshore and online-declaration text read; undated. Hash is cached tool text representation, not origin HTML bytes. Old special-regime amounts not accepted as current."
+  },
+  {
+    "id": "IDAL-F",
+    "file": "authority-pages-web.json",
+    "url": "https://www.investinlebanon.gov.lb/en/doing_business/starting_a_business/choose_a_business_structure",
+    "read_on": "2026-11-01",
+    "sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+    "read_scope": "Official page via web reading service, all entity sections SAL/SARL/holding/offshore/branch/representative read; undated guidance baseline, not the complete statute. Hash is tool text representation."
+  },
+  {
+    "id": "VAT",
+    "file": "vat-admin-web.json",
+    "url": "https://www.finance.gov.lb/ar-lb/Taxation/Companies/VAT/Pages/Declaration.aspx",
+    "read_on": "2026-11-01",
+    "sha256": "ee4ee27f6ff4f48406b1c275753918ef552aa6423137d7194d58f578a7f080c6",
+    "read_scope": "Official Ministry page via web reader; periods, deduction/apportionment and non-resident paragraphs read. The old20day/postal route was not accepted. Hash is tool text representation."
+  },
+  {
+    "id": "N831",
+    "file": "nssf831.pdf",
+    "url": "https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing",
+    "read_on": "2026-11-01",
+    "sha256": "7f93a6eba0026679cd2a01f557d04c403db5f92fe102a49f7b829eccf830b793",
+    "read_scope": "Whole one-page Arabic memo read in rendered image. Official provenance: memo831 row linked by NSSF2026index. General family branch plus specific driver/vendor paragraphs distinguished."
+  },
+  {
+    "id": "N843",
+    "file": "nssf843.pdf",
+    "url": "https://drive.google.com/file/d/1r3zBw08rayUiNKRVbQwWnFVqHRwUcsD6/view?usp=sharing",
+    "read_on": "2026-11-01",
+    "sha256": "e2c94e3d25ad743beb4ce6ea420d29c5eb2f355b651e1f2c178c3a3e71fca506",
+    "read_scope": "Both rendered pages read: memo and attached Gazette Law46/2026, especially arts1-2 suspending1Mar-31Jul2026 and discretionary-time-limit exception."
+  },
+  {
+    "id": "N846",
+    "file": "nssf846.pdf",
+    "url": "https://drive.google.com/file/d/1TgzCAn9WhaCLEAn0rC7MBwig3cXm6oXj/view?usp=sharing",
+    "read_on": "2026-11-01",
+    "sha256": "b289998bcc4e80278a7214ca9554ec7069511d581248b32f20d930b068c78996",
+    "read_scope": "All3rendered pages read, eligibility,85%reduction,instalments,30Jul2027limit,defaults,old-debt writeoff exclusions and new penalty table; taxpayer-specific operative implementation held."
+  },
+  {
+    "id": "NINDEX",
+    "file": "authority-pages-web.json",
+    "url": "https://www.cnss.gov.lb/%D8%A7%D9%84%D9%85%D8%B0%D9%83%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D8%A9-2026/",
+    "read_on": "2026-11-01",
+    "sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+    "read_scope": "All memo index rows822-852 screened, including828/830(unopened) and852(index only); hash is tool text representation."
+  },
+  {
+    "id": "MOFINDEX",
+    "file": "mof-tax-links-web.json",
+    "url": "https://www.finance.gov.lb/ar-lb/Taxation/LRT/DASS",
+    "read_on": "2026-11-01",
+    "sha256": "a5010a636ec16a5e893c43d5da20ea209a7353b185122f76764b40dafdc0d6f6",
+    "read_scope": "Ministry index opening/annualR5R6R7 link and periodicR10 decision title read via web service. No form boxes or operative portal read; hash is cached tool representation."
+  }
+]

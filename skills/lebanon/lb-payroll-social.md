@@ -1,7 +1,7 @@
 ---
 name: lb-payroll-social
-description: "Payroll and NSSF contributions in Lebanon for tax year 2026, including the May 2026 family branch ceiling. Sources and unverified rows are marked per row."
-version: 1.1
+description: "Use this Guide for Lebanon payroll, NSSF, CNSS, family-branch earnings ceilings and family-benefit questions in 2026. It distinguishes ordinary employees from special worker categories and confirms the May family-branch changes against the official Arabic memo. It also identifies the later legal-time suspension and social-security debt-relief documents. The examples recompute a capped family base and the spouse and child benefit cap. They do not apply an unconfirmed contribution percentage or establish full payroll net pay. Current contribution rates, medical and end-of-service parameters, operational filing dates and foreign-worker coverage remain named non-operative holds requiring further primary-source evidence."
+version: 1.2
 jurisdiction: LB
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,101 +9,97 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: payroll
 ---
 
 # Lebanon Payroll and Social Contributions
 
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Lebanon.
+
 ## Who this applies to
 
-Employers and employees under the Labour Law and the National Social Security Fund (NSSF).
-
-Social security is administered by the National Social Security Fund (NSSF) across three branches: sickness/maternity, family allowances, and end-of-service indemnity. Employers carry most of the burden; the employee contributes only to the medical scheme. Wage ceilings are revised frequently to track currency depreciation.
+Payroll working papers for ordinary NSSF-covered employees in Lebanon. NSSF memo 831 distinguishes ordinary family-benefit parameters from special public-driver and newspaper-vendor arrangements. Apply the ordinary rows only after establishing the category. Salary income tax is in [Personal income tax](lb-income-tax.md); a family benefit paid by NSSF is not a salary-tax personal allowance.
 
 ## Rates, bands and thresholds
 
-| Item | Amount | Tax year | Official URL |
-|---|---|---|---|
-| Family branch earnings ceiling, from 1 May 2026 | LL 28,000,000 a month (replaces the LL 18 million below) | 2026 | https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing |
-| Family benefit monthly maximum, from 1 May 2026 | LL 7,875,000: LL 2,100,000 spouse, LL 1,155,000 per child up to five | 2026 | same |
-| Sickness and maternity earnings ceiling, per memo 805 of 22 Aug 2025 | LL 120,000,000 a month | 2026 | https://www.cnss.gov.lb/65-%d9%83%d8%b1%d9%83%d9%8a-120-%d9%85%d9%84%d9%8a%d9%88%d9%86-%d8%a7%d9%84%d8%ad%d8%af%d9%91-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d9%84%d9%84%d9%83%d8%b3%d8%a8-%d9%88%d8%b2%d9%8a%d8%a7%d8%af%d8%a9/ |
-| Official minimum wage from 1 Aug 2025 | LL 28,000,000 monthly, LL 1,300,000 daily | 2026 | https://www.cnss.gov.lb/59-%d9%83%d8%b1%d9%83%d9%8a-%d8%a2%d9%84%d9%8a%d9%91%d8%a9-%d8%a7%d8%ad%d8%aa%d8%b3%d8%a7%d8%a8-%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%d9%83%d8%a7%d8%aa-%d8%a7%d9%84%d8%b6%d9%85%d8%a7%d9%86-%d8%a8%d8%b9/ |
-| Employer : sickness/maternity contribution | 8% on a maximum monthly base of LL 120 million | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Employer : family benefits contribution | 6% on a maximum monthly base of LL 28 million from 1 May 2026 (LL 18 million before) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Employer : end-of-service indemnity contribution | 8.5% of total annual earnings (no ceiling) (approx: older note gave 5%; verify current end-of-service rate with NSSF) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Employee : medical scheme contribution | 3% on a maximum monthly base of LL 120 million | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Wage ceiling : sickness/maternity & medical | LL 120 million per month | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Wage ceiling : family allowances, until 30 April 2026 | LL 18 million per month | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
-| Payroll (salary) tax withholding | Employer withholds progressive payroll tax (2%-25%) at source : separate from NSSF | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| Payroll tax remittance | Withheld payroll tax remitted quarterly to the tax authority (approx : confirm remittance frequency/deadline) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959) |
-| NSSF contribution remittance | Declared and paid to the NSSF on a monthly/quarterly basis (approx : confirm exact remittance schedule with NSSF) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Social Security Law (Decree-Law No. 13955 of 1963) |
+| Item and period, ordinary family branch | Amount | Official source |
+|---|---|---|
+| Monthly earnings ceiling from 1 May 2026 | LBP 28,000,000 | [NSSF memo 831, paragraph I; Social Security Law art. 68(2), Decree 2923/2026](https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing) |
+| Monthly spouse benefit from 1 May 2026, eligibility required | LBP 2,100,000 | [Memo 831 II, arts. 46-48](https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing) |
+| Monthly benefit per eligible child, at most five | LBP 1,155,000 | same |
+| Monthly ordinary family-benefit maximum | LBP 7,875,000 | same |
+| Contribution rates and other branch ceilings | Unverified: PAY-H1; do not calculate an employer or employee contribution from this table | [NSSF official publications index](https://www.cnss.gov.lb/%D8%A7%D9%84%D9%85%D8%B0%D9%83%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D8%A9-2026/) |
 
 ## The base
 
-NSSF rates apply to earnings up to each branch ceiling. The May 2026 family ceiling and benefits come from Decree 2923 of 24 April 2026 (decree number from a [Forvis Mazars alert](https://www.forvismazars.com/lb/en/content/download/1293126/file/Alert%2023-2026-%20Amendments%20to%20NSSF%20family%20and%20education%20branch%20.pdf), decree text not opened). Convert with care: ceilings are in LL. Note memo 805 calls LL 120 million five times the minimum wage, while memo 801 gave LL 140 million for that multiple at LL 28 million, so read decree 887 before relying on the multiple.
+For the ordinary family branch, take evidenced contributory earnings and cap them at the monthly ceiling for the applicable period. The memo changes the ceiling and benefit amounts from 1 May 2026; it does not itself establish all ordinary employer contribution percentages, contributory pay exclusions or sickness/end-of-service rules. Those are PAY-H1. Keep gross pay, reimbursements and benefits separate until the contributory basis is established. The old medical ceiling and minimum-wage figures remain PAY-H2 pending their decree and later-amendment chain; do not derive them from a multiple in a press note.
 
 ## Deadlines and filing
 
-Salary tax and payroll filing use E-services ([IDAL](https://www.investinlebanon.gov.lb/en/doing_business/tax_system)). IDAL says NSSF contributions are not declared online, but cnss.gov.lb now lists e-services, so check the account route. NSSF extended the 2025 annual name declaration (memo 828) and deferred contribution due dates (memo 830); neither memo was opened.
+NSSF memo 843 applies Law 46/2026 and suspends the specifically listed legal periods from 1 March through 31 July 2026, including those under Social Security Law art. 80, while excluding discretionary administrative time limits. This is not a blanket instruction that every payment is deferred by the same number of days. Match the obligation and original due date. The current account route, monthly/quarterly schedule, annual declaration, memos 828/830 and any further extensions remain PAY-H3. Stop before submission/payment until the actual applicable date and reference are established.
 
 ## Penalties and interest
 
-Late declarations and incorrect information carry financial penalties, multiplied on repeat violations (Budget 2026 art. 18, [Citizen Budget](https://institutdesfinances.gov.lb/sites/default/files/2026-04/Pamphlet-Citizen%20Budget%202026-Apr26-En-final.pdf)). Amounts: unverified. An exceptional 85% reduction of penalties owed to public entities applied if paid within three months of the law's publication, with a reduced penalty of at least LBP 200,000 or USD 5; that window has passed unless extended (art. 43).
+Memo 846 is later than the budget summary: it implements Law 47/2026 with conditions for debt relief, instalments and a new penalty table. The published route concerns debts due through 31 December 2025, a 30 July 2027 application/payment limit, exclusions and consequences for default. Do not substitute the budget's temporary general penalty reduction. An individual employer's entitlement, instalments and exact new penalty row remain PAY-H4; the entire three-page memo is in the source ledger.
 
 ## Cross-border points
 
-Foreign employees of offshore companies: see [corporate income tax](lb-corporate-income-tax.md).
+Foreign-worker coverage, reciprocity, offshore staff and non-resident payroll are PAY-H5. Do not infer social-security exemption from foreign nationality or a company label. Use a Lebanese professional for those coverage decisions.
 
 ## Two worked examples that recompute
 
-### Example 1: salary above both ceilings (8%, 6%, 3% unverified)
+For a fully eligible ordinary employee after 1 May, monthly contributory earnings LBP 40 million exceed the family ceiling. The family base is LBP 28 million, LBP 12 million below uncapped pay. This is a base computation only; no unconfirmed contribution rate is applied.
 
 ```oa-check
-name: Salary LL 200 million
+name: Family branch capped base
 inputs:
-  pay: 200000000
+  earnings: 40000000
+  ceiling: 28000000
 steps:
-  - sick_er: min(pay, 120000000) * 0.08
-  - fam_er: min(pay, 28000000) * 0.06
-  - sick_ee: min(pay, 120000000) * 0.03
+  - family_base: min(earnings, ceiling)
+  - excess: earnings - family_base
 expected:
-  sick_er: 9600000
-  fam_er: 1680000
-  sick_ee: 3600000
+  family_base: 28000000
+  excess: 12000000
 ```
 
-### Example 2: May 2026 ceiling change
 
-The family ceiling rise adds cost for pay at or above LL 28 million: 6% of the LL 10 million increase.
+Eligibility decision: the documents establish an eligible spouse and six eligible children. Count at most five children: monthly family benefit LBP 7,875,000. Without an eligible spouse, five eligible children produce LBP 5,775,000. A sixth child does not raise the child cap. This is a benefit calculation, not employer contribution or salary tax.
 
 ```oa-check
-name: Family ceiling change
+name: Five-child cap and spouse eligibility
 inputs:
-  old: 18000000
-  new: 28000000
+  children: 6
+  child_amount: 1155000
+  spouse_amount: 2100000
 steps:
-  - extra: (new - old) * 0.06
+  - children_benefit: min(children, 5) * child_amount
+  - with_spouse: children_benefit + spouse_amount
+  - without_spouse: children_benefit
 expected:
-  extra: 600000
+  with_spouse: 7875000
+  without_spouse: 5775000
 ```
+
 
 ## Ask the client first
 
-- Monthly pay and currency.
-- Period: before or from 1 May 2026.
-- Spouse and children, for family benefits.
-- Employer type and NSSF registration.
+- What is the worker category and NSSF coverage evidence?
+- Which pay month, contributory earnings and currency apply?
+- What spouse and child eligibility documents are available?
+- Which branch, due date, employer category and prior declaration are involved?
+- Are there arrears, settlements, foreign workers or special-regime staff?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and read scope | URL | Read on |
 |---|---|---|
-| NSSF information memo 831 of 4 May 2026 (one page, linked from cnss.gov.lb) | https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing | 2026-11-01 |
-| NSSF press note 65 on memo 805 of 22 Aug 2025 (opening paragraphs) | https://www.cnss.gov.lb/65-%d9%83%d8%b1%d9%83%d9%8a-120-%d9%85%d9%84%d9%8a%d9%88%d9%86-%d8%a7%d9%84%d8%ad%d8%af%d9%91-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d9%84%d9%84%d9%83%d8%b3%d8%a8-%d9%88%d8%b2%d9%8a%d8%a7%d8%af%d8%a9/ | 2026-11-01 |
-| NSSF press note 59 on memo 801 of 1 Aug 2025 (opening paragraphs) | https://www.cnss.gov.lb/59-%d9%83%d8%b1%d9%83%d9%8a-%d8%a2%d9%84%d9%8a%d9%91%d8%a9-%d8%a7%d8%ad%d8%aa%d8%b3%d8%a7%d8%a8-%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%d9%83%d8%a7%d8%aa-%d8%a7%d9%84%d8%b6%d9%85%d8%a7%d9%86-%d8%a8%d8%b9/ | 2026-11-01 |
-| IDAL, Doing Business, Tax System (whole page) | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
-| Ministry of Finance, finance.gov.lb tax pages | unverified: CAPTCHA, not read | not read |
+| NSSF 2026 memo index, rows 822-852 screened; linked official documents | https://www.cnss.gov.lb/%D8%A7%D9%84%D9%85%D8%B0%D9%83%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D8%A9-2026/ | 2026-11-01 |
+| NSSF memo 831, 4 May 2026, whole one-page Arabic scan read; Decree 2923, Social Security Law art. 68(2) | https://drive.google.com/file/d/1LXzz54n5z6hZ7fajiek3aZr6EadZqShk/view?usp=sharing | 2026-11-01 |
+| NSSF memo 843, 3 August 2026, both pages including Law 46/2026 arts. 1-2 read | https://drive.google.com/file/d/1r3zBw08rayUiNKRVbQwWnFVqHRwUcsD6/view?usp=sharing | 2026-11-01 |
+| NSSF memo 846, 11 September 2026, all three pages read including amended penalty table and conditions | https://drive.google.com/file/d/1TgzCAn9WhaCLEAn0rC7MBwig3cXm6oXj/view?usp=sharing | 2026-11-01 |
 
-Not yet confirmed: every row marked unverified. finance.gov.lb returned a CAPTCHA during this refresh, which we did not solve; only archive indexes of it were read, and the text of 2026 Budget Law No. 40 of 10 Feb 2026 was not opened (the law number comes from a search summary, not an official page). Citizen Budget wording covers measures only, so anything else in that law is unread.
+Not yet confirmed: PAY-H1: ordinary employer/employee percentages, sickness/maternity and end-of-service calculation, pay exclusions. PAY-H2: pre-May family ceiling, current sickness ceiling and minimum wage after the full decree/amendment chain. PAY-H3: portal/payment steps, remittance dates, annual return and memos 828/830 plus further extensions. PAY-H4: taxpayer-specific Law 47/2026 relief and instalment eligibility, exact current penalty calculation. PAY-H5: foreign-worker, reciprocity, offshore and special driver/vendor rules. All prior values remain non-operative in the lineage ledger; no payroll amount is certified for filing.
 
 <!-- openaccountants-cta-block -->
 
