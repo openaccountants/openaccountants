@@ -1,10 +1,10 @@
 ---
 name: uae-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a UAE VAT return (VAT201 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT201", "create the return", "UAE VAT filing", "FTA return", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers the UAE only and only standard VAT-registered persons filing VAT201. VAT groups, profit margin schemes, partial exemption with non-trivial exempt supplies, and Designated Zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any UAE VAT work.
-version: 2.1
+version: 2.2
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-01
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -155,6 +155,15 @@ The box layout is from the FTA's returns user guide (August 2021 edition, the la
 | Free goods or services for employees' personal benefit (including entertainment) | Blocked unless: required by UAE (or free zone) labour law; or a contractual obligation or documented policy (see the 1 October 2026 change below); or health insurance (including enhanced) for employees and family up to one spouse and three children under 18; or the provision is itself a deemed supply |
 
 **Change from 1 October 2026** ([Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf)): the labour-law exception excludes staff accommodation unless the Ministry of Human Resources and Emiratisation makes it mandatory; the contract-or-policy exception applies "in accordance with the cases and conditions specified by the Authority" (until 30 September 2026 the goods or services must be provided "in order that they may perform their role" and this must be shown to be normal business practice, [Executive Regulation as at October 2025](https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf)). A new rule also blocks input tax on a supply above a value set by a Minister's decision where it is paid, or intended to be paid, in cash. We did not find that decision on the FTA or MoF sites: check before relying on either side of it.
+
+**Employee benefits from 1 October 2026** ([FTA Decision No. 17 of 2026](https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf)): the contract-or-policy exception covers six cases only: transport, food and drink, accommodation, new employees' accommodation for up to 30 days, phones and internet, and parking fees. Each has conditions, and a cash option defeats transport, food and accommodation. The conditions are set out in `ae-payroll-social`.
+
+**Supplier and supply checks from 1 October 2026** ([FTA Decision No. 13 of 2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%2013%20of%202026%20on%20Measures%2018%2008%202026.pdf)): these are the steps a business takes under VAT Law Article 54(bis) before deducting input tax.
+
+- **Supplier (Article 3):** verify identity, address and place of business, and risk indicators (address or key staff changed more than twice in 12 months; transactions out of proportion to the business). Where supplies exceed, or are expected to exceed, AED 375,000 over 12 months, also get a UAE bank's written confirmation that the supplier has an account, and review public reviews and media coverage.
+- **Each supply (Article 4):** genuine commercial reason; payment by electronic means, or cash only for a documented reason within the legal limits; price and margin in line with the market; supply within the supplier's licensed activity; goods' origin and title.
+- **When (Article 5):** verify a supplier at first dealing, and again if not verified in the previous 12 months. Keep records and a documented policy naming who is responsible.
+- **Exception (Article 6):** a supply under AED 10,000 before VAT, unless supplies from that supplier exceed, or are expected to exceed, AED 100,000 over 12 months.
 
 **Partial exemption.** A business with exempt supplies apportions input tax that relates to both taxable and exempt supplies. A new apportionment method set by Cabinet Decision No. 149 of 2026 applies from the first tax year beginning after 1 October 2027. Refer apportionment cases out.
 
@@ -382,6 +391,8 @@ expected:
 | Ministerial Decision No. 244 of 2025 | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: pilot 1 July 2026; AED 50,000,000 phase |
 | Ministerial Decision No. 66 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: 1 January 2027 date |
 | FTA Profit Margin Scheme Guide VATGPM1 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Profit%20Margin-Scheme-EN-02-01-2026-re.pdf | 2026-09-25; 2026-10-31, link opened, not re-read |
+| FTA Decision No. 17 of 2026 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf | 2026-11-01, whole Decision read |
+| FTA Decision No. 13 of 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%2013%20of%202026%20on%20Measures%2018%2008%202026.pdf | 2026-11-01, whole Decision read |
 | Cabinet Decision No. 149 of 2026 (link returned 404 to fetch on 2026-10-31; not re-read, unverified at this link; its changes appear as footnotes in the consolidated 09-2026 Regulation) | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-09-25 |
 | Executive Regulation as at October 2025 (404 to fetch and in a browser on 2026-10-31; not re-read, unverified at this link; superseded by the consolidated 09-2026 Regulation) | https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf | 2026-09-25 |
 

@@ -1,9 +1,10 @@
 ---
 name: ae-payroll-social
-description: "Source-cited draft: payroll & social contributions for United Arab Emirates (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Use this skill for UAE payroll questions in tax year 2026: why no income tax is withheld from wages, employee versus self-employed, directors' fees, Corporate Tax deduction of staff costs and private pension contributions, and VAT recovery on staff benefits, including the 1 October 2026 rules and the FTA cases for transport, food, accommodation, phones and parking. Names the pension, gratuity, Wage Protection System and unemployment insurance duties and who to confirm them with; it does not state their rates. Trigger on: UAE payroll, Dubai salary tax, gratuity, GPSSA, staff accommodation VAT, employee benefits UAE."
+version: 1.1
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-01
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -13,9 +14,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UAE payroll for tax year 2026: no tax on wages, what the employer's tax return and VAT return do with payroll, and the pension, gratuity and insurance points to confirm
 
-## Scope and who this is for ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [CTGTNP1: Taxation of natural persons](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf))
+## Scope and who this is for
 
-This skill is for anyone running or advising on a UAE payroll in calendar year 2026: an employer, a payroll provider, or an accountant answering "what do I deduct from this salary, and what does the company owe?". Figures are for tax year 2026, the calendar year, and the law as published on 25 September 2026.
+This skill is for anyone running or advising on a UAE payroll in calendar year 2026: an employer, a payroll provider, or an accountant answering "what do I deduct from this salary, and what does the company owe?". Figures are for tax year 2026, the calendar year, and the law as published and checked on 1 November 2026.
 
 What it covers:
 
@@ -72,7 +73,7 @@ Companion Skills: Corporate Tax for the employer is in `ae-corporate-tax`; the i
 4. Run payroll: gross pay, less the employee's pension share where it applies (check), less any other lawful deductions. No tax line.
 5. Accrue the end-of-service gratuity for expatriate staff each month so the liability is in the accounts when the person leaves. Confirm the day-count and the pay basis with MOHRE or the free zone.
 6. For the employer's Corporate Tax return, deduct payroll costs as Business expenditure, test related-party pay at Market Value, and cap private pension fund contributions at the limit shown under the figures below ([CTGDTI1](https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf); [Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf)).
-7. For the employer's VAT return, block input tax on goods and services given free to staff for their personal benefit unless an exception applies, and apply the stricter accommodation wording to supplies from 1 October 2026 ([VAT Executive Regulation, Article 53](https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf); [Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf)).
+7. For the employer's VAT return, block input tax on goods and services given free to staff for their personal benefit unless an exception applies, and apply the stricter accommodation wording to supplies from 1 October 2026 ([VAT Executive Regulation, Article 53](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [Cabinet Decision No. 149 of 2026, as consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf)).
 8. File and pay each item on its own timetable (see "Filing and payment" below) and keep the payroll records that support the Corporate Tax deduction.
 
 ## Figures for tax year 2026 ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [CTGDTI1](https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf); [Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf))
@@ -98,7 +99,7 @@ These are real and current obligations, but their figures are published by bodie
 
 The Ministry of Finance's Ministerial Decision No. 115 of 2023 confirms that the statutory end-of-service benefit is the one "as per the provisions of Federal Decree- Law No. 33 of 2021 and Federal Law No. 7 of 1999" ([Ministerial Decision No. 115 of 2023, Article 1](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf)). Read those laws themselves, not a summary, for the amounts.
 
-## VAT on what the employer gives to staff ([VAT Executive Regulation, Article 53, as amended](https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf); [Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf))
+## VAT on what the employer gives to staff ([VAT Executive Regulation, Article 53, as amended](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [Cabinet Decision No. 149 of 2026, as consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
 
 The payroll question for VAT is the input tax a VAT-registered employer pays on things it buys and hands to staff.
 
@@ -120,12 +121,18 @@ Exceptions (3) and (4) are not changed.
 
 What this means in practice:
 
-- **Staff accommodation.** From 1 October 2026 the labour-law exception no longer covers accommodation unless a MOHRE decision or directive makes it mandatory. Whether a contract or policy can still bring accommodation within exception (2) depends on the "cases and conditions" the FTA specifies. As of 25 September 2026 this skill has not seen those conditions on the FTA site; treat recovery on accommodation supplied from 1 October 2026 as unsettled and check the FTA's published guidance before claiming it. The block only matters where the accommodation carries VAT, such as a hotel stay or a hotel or serviced apartment, which are not "residential buildings" (Executive Regulation, Article 37(2)). A lease of a residential building is exempt "where the lease is more than 6 six months or the tenant of the property is a holder of an ID card issued by Federal Authority for Identity and Citizenship" (Article 43(1)), so an ordinary long staff flat lease has no input tax to block.
-- **Contract or policy benefits generally.** The old test (needed for the role, and normal business practice) is replaced by the FTA's own cases and conditions. Check them before claiming.
+- **Staff accommodation.** From 1 October 2026 the labour-law exception no longer covers accommodation unless a MOHRE decision or directive makes it mandatory. Under exception (2), recovery needs a contractual obligation or documented policy and all the conditions of case 3 or case 4 in the list below. The block only matters where the accommodation carries VAT, such as a hotel stay or a hotel or serviced apartment, which are not "residential buildings" (Executive Regulation, Article 37(2)). A lease of a residential building is exempt "where the lease is more than 6 six months or the tenant of the property is a holder of an ID card issued by Federal Authority for Identity and Citizenship" (Article 43(1)), so an ordinary long staff flat lease has no input tax to block.
+- **Contract or policy benefits generally.** The old test (needed for the role, and normal business practice) is replaced by the six cases in [FTA Decision No. 17 of 2026](https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf), issued 9 September 2026 and in force from 1 October 2026 (the FTA publishes it as an unofficial translation). A benefit outside these cases is not within exception (2):
+  1. **Transport:** only between home and work or client premises, or directly for the job; not for personal benefit; the employee cannot opt for cash instead.
+  2. **Food and drink:** the home is remote, distant or isolated; no suitable food preparation facilities at home or work and no nearby restaurants; linked to the work or required residence period; no cash option.
+  3. **Accommodation:** no cash option; tied to operational needs and not part of benefits or ordinary pay; the work requires living near the workplace, site or client; for the employee alone, with no family or personal use, unless the employee must live permanently near the workplace so that this is the usual home; commensurate with the job and basic needs, with no significant recreational or personal elements.
+  4. **New employees' accommodation:** temporary, no longer than 30 days, and commensurate with the job and basic needs.
+  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring with records.
+  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy; receipts showing date, time, amount and tax.
 - **Health insurance.** Recovery continues for the employee, one spouse and up to three children under 18. Input tax on cover for a fourth child, or a child aged 18 or over, falls outside exception (3) and is blocked unless another exception applies.
 - **Entertainment of non-staff.** Input tax on entertainment for customers, potential customers, officials, shareholders or investors stays blocked for non-government employers.
 
-Timing: the new texts apply from 1 October 2026; where a cost straddles that date, check with the FTA which text governs it. The changes to the input-tax apportionment rules in the same Decision start later, from the first tax year commencing after 1 October 2027; they are not payroll rules and are covered in `uae-vat`.
+Timing: the new texts and FTA Decision No. 17 of 2026 apply from 1 October 2026. The changes to the input-tax apportionment rules in the same Decision start later, from the first tax year commencing after 1 October 2027; they are not payroll rules and are covered in `uae-vat`.
 
 ## Corporate Tax on payroll costs for the employer ([CTGDTI1, sections 4.5.2 and 4.5.10](https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf); [Ministerial Decision No. 115 of 2023, Article 5](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf); [CTGEPF1: Pension Funds and Social Security Funds](https://tax.gov.ae/Datafolder/Files/Guides/CT/Exempt%20Persons%20-%20Public%20Benefit%20Entities%20Pension%20Funds%20and%20Social%20Security%20Funds%20-%2001%2012%202023.pdf))
 
@@ -146,10 +153,10 @@ Timing: the new texts apply from 1 October 2026; where a cost straddles that dat
 | Freelancer or contractor, business turnover not above AED 1,000,000 in the calendar year | No Corporate Tax registration for that person | The payer still withholds nothing |
 | Freelancer or contractor, business turnover exceeds AED 1,000,000 in the calendar year | Taxable Person; registers and files Corporate Tax | The test is "exceeds", so exactly AED 1,000,000 is not over it; Wage, Personal Investment income and Real Estate Investment income do not count towards it |
 | Health insurance for employee, one spouse, up to three children under 18 | VAT input tax recoverable (exception 3) | A fourth child or a child aged 18 or over is outside the exception |
-| Staff accommodation supplied from 1 October 2026 | VAT input tax blocked unless mandatory under MOHRE decisions or within FTA-specified contract/policy cases | Unsettled until the FTA publishes the cases and conditions. Matters only for accommodation that carries VAT (hotel, hotel or serviced apartment); a residential lease over six months or to an Emirates ID holder is exempt, so there is no input tax |
+| Staff accommodation supplied from 1 October 2026 | VAT input tax blocked unless mandatory under MOHRE decisions, or within case 3 or case 4 of FTA Decision No. 17 of 2026 | A cash option defeats case 3. Matters only for accommodation that carries VAT (hotel, hotel or serviced apartment); a residential lease over six months or to an Emirates ID holder is exempt, so there is no input tax |
 | Private pension fund contribution | Deductible when paid, up to the 15% cap per member | Unpaid or excess contributions are added back |
 
-## Worked cases ([CTGTNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf); [Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf); [Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf); [VAT Executive Regulation, Articles 37, 43 and 53](https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf))
+## Worked cases
 
 **Case 1: expatriate employee on the mainland.** A Dubai mainland company employs an expatriate on a monthly salary with housing and transport allowances. Payroll result: gross pay is paid in full with no tax deduction, because the whole package is a Wage. No GPSSA pension deduction, because the employee is not a UAE or GCC national. The company accrues the Labour Law end-of-service gratuity each month (check the day-count and basis with MOHRE), pays through the Wage Protection System if it applies (check), and confirms the employee holds unemployment insurance (check). The salary and allowances are deductible in the company's Corporate Tax return if not excessive.
 
@@ -159,21 +166,53 @@ Timing: the new texts apply from 1 October 2026; where a cost straddles that dat
 
 **Case 4: consultant paid by invoice.** A company engages a self-employed consultant who invoices AED 1,200,000 in calendar year 2026 and has no employment contract. The payments are not a Wage. The company withholds nothing. The consultant's business turnover exceeds AED 1,000,000, so the consultant must register for and pay Corporate Tax on their own account (route the consultant to the `ae-income-tax` skill). The company deducts the fees as a business expense, at Market Value if the consultant is a related party.
 
-**Case 5: health insurance and accommodation, VAT-registered employer.** An employer buys family health cover for an employee with a spouse and four children (ages 4, 9, 14 and 19) and, from October 2026, pays for a serviced apartment for the employee. Input tax on the cover for the employee, spouse and the three children under 18 is recoverable under exception (3). The cover for the 19-year-old is outside exception (3), so its input tax is blocked unless another exception applies. A serviced apartment is not a "residential building" for VAT, so its charge carries VAT. Input tax on the October 2026 serviced-apartment charge is blocked unless a MOHRE decision or directive makes that accommodation mandatory, or the case falls within the contract-or-policy cases the FTA specifies; until those cases are published, do not claim it without checking. Had the employer instead leased an ordinary residential flat for more than six months (or to a tenant holding an Emirates ID card), the lease would be exempt: there would be no input tax on the rent, and the Article 53 change would not arise.
+**Case 5: health insurance and accommodation, VAT-registered employer.** An employer buys family health cover for an employee with a spouse and four children (ages 4, 9, 14 and 19) and, from October 2026, pays for a serviced apartment for the employee. Input tax on the cover for the employee, spouse and the three children under 18 is recoverable under exception (3). The cover for the 19-year-old is outside exception (3), so its input tax is blocked unless another exception applies. A serviced apartment is not a "residential building" for VAT, so its charge carries VAT. Input tax on the October 2026 serviced-apartment charge is blocked unless a MOHRE decision or directive makes that accommodation mandatory, or a contract or documented policy provides it and every condition of case 3 of FTA Decision No. 17 of 2026 is met (or case 4, for a new employee, up to 30 days). If the employee could take a housing allowance instead, or the apartment is part of the ordinary package, it fails case 3. Had the employer instead leased an ordinary residential flat for more than six months (or to a tenant holding an Emirates ID card), the lease would be exempt: there would be no input tax on the rent, and the Article 53 change would not arise.
+
+**Case 3 variant: part unpaid.** Same facts, but AED 40,000 of the AED 120,000 was accrued and not paid in the period. AED 80,000 was paid, which is under the AED 90,000 cap, so the company deducts AED 80,000 and adds back AED 40,000.
 
 **Case 6: executive director with board fees.** An employee who is a senior manager also sits on the board and receives board-meeting fees. Following the FTA's own example, both the salary and the fees are typically a Wage, so neither is taxed. If the director is also a shareholder, the company deducts the pay only to the extent it matches Market Value.
+
+```oa-check
+name: Private pension contribution over the cap, Case 3 (2026)
+inputs:
+  paid: 120000
+  remuneration: 600000
+  cap_rate: 0.15
+steps:
+  - cap: remuneration * cap_rate
+  - deducted: min(paid, cap)
+  - added_back: paid - deducted
+expected:
+  deducted: 90000.00
+  added_back: 30000.00
+```
+
+```oa-check
+name: Accrued contribution not paid, Case 3 variant (2026)
+inputs:
+  accrued: 120000
+  unpaid: 40000
+  remuneration: 600000
+  cap_rate: 0.15
+steps:
+  - paid: accrued - unpaid
+  - deducted: min(paid, remuneration * cap_rate)
+  - added_back: accrued - deducted
+expected:
+  deducted: 80000.00
+  added_back: 40000.00
+```
 
 ## When to refuse or refer
 
 - Refer any pension rate, cap, deadline or penalty question to GPSSA, or the Abu Dhabi Pension Fund for UAE nationals employed in Abu Dhabi, or to an adviser who works from that fund's current published rules. Do not quote rates from memory or from private summaries.
 - Refer gratuity calculations for a leaving employee, especially with unpaid leave, part-time service, a change of contract type or a dispute, to MOHRE's rules or a UAE employment adviser.
 - Refer free zone employers (including the financial free zones) whose employment rules differ from the federal Labour Law to the free zone authority's rules.
-- Refer VAT recovery on staff accommodation that carries VAT (hotel, hotel or serviced apartment) supplied from 1 October 2026 until the FTA's cases and conditions under the new exception (2) are published; if a claim is material, consider asking the FTA for a clarification.
 - Refer any employee who also has UAE business income, or a contractor near the AED 1,000,000 turnover line, to the `ae-income-tax` skill ([Cabinet Decision No. 49 of 2023, Article 2](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf)).
 - Refuse to present the employer's pension, gratuity or insurance figures as confirmed by this skill. It does not contain them.
 - Refer tax obligations of the employee in their home country (for example, citizens of countries that tax worldwide income) to that country's rules; UAE payroll does not handle them.
 
-## Filing and payment ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf))
+## Filing and payment ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 149 of 2026, as consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
 
 - **Employee tax:** nothing to file or pay; there is no payroll tax return.
 - **Pension contributions:** monthly, to GPSSA, or the Abu Dhabi Pension Fund for UAE nationals employed in Abu Dhabi. Check the due day and the late-payment consequence with the right fund.
@@ -181,9 +220,9 @@ Timing: the new texts apply from 1 October 2026; where a cost straddles that dat
 - **Employer's Corporate Tax:** payroll costs go into the employer's Corporate Tax return, which is filed, and any tax paid, no later than nine months after the end of the Tax Period. For a calendar-year company, the 2026 return is due by 30 September 2027. Details are in `ae-corporate-tax`.
 - **Employer's VAT:** input tax on staff benefits is claimed, or not, in the VAT return for the period in which it is incurred. Apply the amended Article 53 texts to periods from 1 October 2026. Details are in `uae-vat`.
 
-### Returns being filed now: calendar year 2025 ([Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
+### Earlier returns: calendar year 2025 ([Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
 
-A calendar-year company is preparing its 2025 Corporate Tax return, due by 30 September 2026. The payroll rules above were the same in 2025: Wage outside Corporate Tax, employee costs deductible if not excessive, private pension contributions deductible when paid up to the 15% cap. The VAT change of 1 October 2026 does not affect 2025 VAT periods; for those, the earlier texts of exceptions (1) and (2) apply.
+The 2025 Corporate Tax return of a calendar-year company was due by 30 September 2026. The payroll rules above were the same in 2025: Wage outside Corporate Tax, employee costs deductible if not excessive, private pension contributions deductible when paid up to the 15% cap. The VAT change of 1 October 2026 does not affect 2025 VAT periods; for those, the earlier texts of exceptions (1) and (2) apply.
 
 ## Completion checklist ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [Ministerial Decision No. 115 of 2023](https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf))
 
@@ -194,9 +233,24 @@ A calendar-year company is preparing its 2025 Corporate Tax return, due by 30 Se
 - [ ] Wage Protection System and unemployment insurance obligations confirmed with MOHRE.
 - [ ] Related-party salaries checked against Market Value.
 - [ ] Private pension contributions: paid in the period and within 15% of each member's deductible remuneration; any excess added back.
-- [ ] VAT input tax on staff benefits reviewed against Article 53, using the texts in force from 1 October 2026 for later costs; claims on accommodation that carries VAT (hotel, hotel or serviced apartment) held until the FTA's conditions are checked; exempt residential leases carry no input tax to claim.
+- [ ] VAT input tax on staff benefits reviewed against Article 53, using the texts in force from 1 October 2026 for later costs; claims on transport, food, accommodation, phones and parking tested against FTA Decision No. 17 of 2026; exempt residential leases carry no input tax to claim.
 - [ ] Health insurance recovery limited to the employee, one spouse and up to three children under 18.
 - [ ] Contractors near the AED 1,000,000 turnover line told to check their own Corporate Tax position.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Cabinet Decision No. 49 of 2023, Articles 1 and 2 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, opened, spot-checked only: Art. 2 read |
+| CTGTNP1, section 3.8.1 | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-01, link opened, not re-read |
+| CTGDTI1: Determination of Taxable Income | https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf | 2026-11-01, link opened, not re-read |
+| Ministerial Decision No. 115 of 2023 | https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf | 2026-11-01, opened, spot-checked only: Art. 5, 15% cap read |
+| VAT Executive Regulation, Article 53 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-11-01, opened, spot-checked only: opened, searched for Article 53 text |
+| FTA Decision No. 17 of 2026 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf | 2026-11-01, opened, spot-checked only: whole Decision read |
+| CTGEPF1: Pension Funds and Social Security Funds | https://tax.gov.ae/Datafolder/Files/Guides/CT/Exempt%20Persons%20-%20Public%20Benefit%20Entities%20Pension%20Funds%20and%20Social%20Security%20Funds%20-%2001%2012%202023.pdf | 2026-11-01, link opened, not re-read |
+| Corporate Tax Law, Articles 48 and 53 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, link opened, not re-read |
+
+Not yet confirmed: GPSSA and Abu Dhabi Pension Fund rates, caps and due dates; the Labour Law gratuity day-count; Wage Protection System and unemployment insurance terms. gpssa.gov.ae refused the fetch and uaelegislation.gov.ae was blocked to fetch and browser on 2026-11-01, so all are unverified. The separate Cabinet Decision No. 149 of 2026 link returned no document; its text was read as consolidated in the Executive Regulation file. Figures not named above were checked on the earlier reading only.
 
 <!-- openaccountants-cta-block -->
 

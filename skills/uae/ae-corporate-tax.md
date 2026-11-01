@@ -1,10 +1,10 @@
 ---
 name: ae-corporate-tax
-description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue under AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Note: the UAE has NO personal income tax — self-employed individuals and sole establishments are subject to corporate tax. ALWAYS read this skill before touching any UAE corporate tax work."
-version: 2.0
+description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue under AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Note: the UAE has NO personal income tax: self-employed individuals and sole establishments are subject to corporate tax. ALWAYS read this skill before touching any UAE corporate tax work."
+version: 2.1
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-01
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -14,9 +14,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UAE Corporate Tax: 2026 rates, scope, Small Business Relief, free zones and filing
 
-Tax year 2026. In the UAE the tax period is the business's financial year, so "2026" here means tax periods running in 2026 (for most businesses, the calendar year 1 January to 31 December 2026). The rules below are the law as published on tax.gov.ae and mof.gov.ae on 25 September 2026. A short dated section covers returns for periods ending in 2025, which are being filed now.
+Tax year 2026. In the UAE the tax period is the business's financial year, so "2026" here means tax periods running in 2026 (for most businesses, the calendar year 1 January to 31 December 2026). The rules below are the law as published on tax.gov.ae and mof.gov.ae, checked on 1 November 2026. A short dated section covers returns for periods ending in 2025.
 
-## Scope and who this is for ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
+## Scope and who this is for
 
 This skill covers federal Corporate Tax under Federal Decree-Law No. 47 of 2022 for:
 
@@ -41,7 +41,7 @@ The skill does not cover VAT, excise tax, Emirate-level taxes, tax groups, busin
 - **Interest expense and EBITDA**, if net interest is large.
 - **Related party and connected person transactions:** owners, directors, family members, group companies, and payments to them.
 - **Entertainment, fines, owner drawings and personal expenses** in the accounts.
-- **Returns already filed or due**, especially for periods ending 31 December 2025 (due 30 September 2026).
+- **Returns already filed or due**, especially for periods ending 31 December 2025 (the due date, 30 September 2026, has passed, so check for late penalties).
 
 ## The method, step by step
 
@@ -62,13 +62,13 @@ The skill does not cover VAT, excise tax, Emirate-level taxes, tax groups, busin
 
 ### Rates ([Corporate Tax Law, Article 3](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf))
 
-| Who | Taxable income | Rate |
-| --- | --- | --- |
-| Taxable Person (not a QFZP) | Portion not exceeding AED 375,000 | 0% |
-| Taxable Person (not a QFZP) | Portion exceeding AED 375,000 | 9% |
-| Qualifying Free Zone Person | Qualifying Income | 0% |
-| Qualifying Free Zone Person | All taxable income that is not Qualifying Income (no AED 375,000 band) | 9% |
-| Non-resident with no permanent establishment or nexus | UAE-sourced income, as withholding tax | 0% |
+| Who | Taxable income | Rate | Source |
+| --- | --- | --- | --- |
+| Taxable Person (not a QFZP) | Portion not exceeding AED 375,000 | 0% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Taxable Person (not a QFZP) | Portion exceeding AED 375,000 | 9% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Qualifying Free Zone Person | Qualifying Income | 0% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Qualifying Free Zone Person | All taxable income that is not Qualifying Income (no AED 375,000 band) | 9% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Non-resident with no permanent establishment or nexus | UAE-sourced income, as withholding tax | 0% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
 
 - The AED 375,000 band is given once per Taxable Person per tax period, however many businesses it runs. Splitting a business artificially to get more than one band is treated as tax avoidance (Cabinet Decision No. 116 of 2022, Article 2).
 - A multinational group in scope of top-up tax pays extra tax so that its effective rate in the UAE reaches 15% (Corporate Tax Law, Article 3(3)). See the top-up tax section.
@@ -206,7 +206,7 @@ The computation is specialist work, so refer it out (see "When to refuse or refe
 | Net interest expenditure of exactly AED 12,000,000 | Fully deductible (limit applies only above it) |
 | Loss brought into a Small Business Relief year | Not used that year; still available in a later non-relief year |
 
-## Worked cases ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf))
+## Worked cases
 
 The amounts are illustrations. Each case uses a calendar-year tax period unless stated.
 
@@ -243,6 +243,33 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
    - **Late filing:** AED 500 is charged on 1 October, 1 November and 1 December: 3 × AED 500 = AED 1,500.
    - **Late payment:** 14% a year, charged monthly for each month or part, on the unpaid tax. That is about AED 100,000 × 14% ÷ 12 × 3 = AED 3,500. EmaraTax computes the exact amount, so confirm it there ([Cabinet Decision No. 75 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf)).
 
+```oa-check
+name: Relief lost, standard computation, Case 2 (2026)
+inputs:
+  taxable_income: 2380000
+  band: 375000
+  rate: 0.09
+steps:
+  - tax: (taxable_income - band) * rate
+expected:
+  tax: 180450.00
+```
+
+```oa-check
+name: Late return and late payment, Case 9
+inputs:
+  months_late: 3
+  tax_unpaid: 100000
+  filing_penalty: 500
+  annual_rate: 0.14
+steps:
+  - late_filing: months_late * filing_penalty
+  - late_payment: tax_unpaid * annual_rate / 12 * months_late
+expected:
+  late_filing: 1500.00
+  late_payment: 3500.00
+```
+
 ## When to refuse or refer
 
 - **Business structure unknown.** Stop until you know whether the client is a juridical person, a natural person, a partnership or a branch. The rules differ at every step.
@@ -252,7 +279,7 @@ The amounts are illustrations. Each case uses a calendar-year tax period unless 
 - **Tax groups, loss transfers, qualifying group transfers, business restructuring relief, and participation exemption** claims.
 - **Transfer pricing documentation**, advance pricing agreements, or related party transactions near the disclosure thresholds.
 - **Non-residents:** permanent establishment or nexus questions, effective management and control, withholding tax and treaty relief.
-- **Exempt persons**: government-controlled entities, public benefit entities, investment funds, pension funds, extractive businesses.
+- **Exempt persons**: government-controlled entities, public benefit entities, investment funds, pension funds, extractive businesses. Applications for exemption follow [FTA Decision No. 15 of 2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf), in force from 15 September 2026.
 - **Voluntary disclosures, tax assessments, reconsideration requests**, or unfiled past periods.
 - **Unincorporated partnerships and family foundations.**
 - **Research and development incentives or tax credits**, which fall outside this skill.
@@ -286,7 +313,7 @@ Businesses claiming Small Business Relief and free zone companies must register 
 | 30 September 2026 | 30 June 2027 |
 | 31 December 2026 | 30 September 2027 |
 
-### Returns being filed now: periods ending in 2025 ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
+### Earlier returns: periods ending in 2025 ([Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
 
 | Tax period ended | Return and payment due |
 | --- | --- |
@@ -325,6 +352,35 @@ The same rates, the AED 375,000 band and the Small Business Relief conditions ap
 - [ ] Audited statements obtained where revenue exceeds AED 50,000,000 or the person is a QFZP.
 - [ ] Top-up tax scope checked for multinational groups (EUR 750 million) and referred out.
 - [ ] Return filed and tax paid on EmaraTax; records kept for 7 years.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Corporate Tax Law, Articles 37-39 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, opened, spot-checked only: opened; searched for the arm's length, rate and filing articles |
+| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-01, opened, spot-checked only: opened; searched for the arm's length, rate and filing articles |
+| Cabinet Decision No. 49 of 2023 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, link opened, not re-read |
+| Tax Returns Guide | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT-Returns-EN-11-11-2024.pdf | 2026-11-01, opened, spot-checked only: AED 40 million, AED 4 million and AED 500,000 passages read |
+| Small Business Relief Guide | https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf | 2026-11-01, link opened, not re-read |
+| Ministerial Decision No. 97 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/05-06-2023/2/Ministerial%20Decision%20No.%2097%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, opened, spot-checked only: Art. 2 read: AED 200,000,000 and AED 3,150,000,000 |
+| FTA Decision No. 6 of 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-11-01, opened, spot-checked only: agreed-upon procedures passage read |
+| FTA Decision No. 15 of 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf | 2026-11-01, opened, spot-checked only: Art. 3 timing read |
+| Cabinet Decision No. 100 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%20100%20of%202023%20on%20Determining%20Qualifying%20Income%20for%20the%20Qualifying%20Free%20Zone%20Person%20-%20for%20publishing.pdf | 2026-11-01, link opened, not re-read |
+| Cabinet Decision No. 75 of 2023 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-01, opened, spot-checked only: penalty table read |
+| Cabinet Decision No. 142 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-01, opened, spot-checked only: EUR 750 million and 15-month passages read |
+| Cabinet Decision No. 116 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-01, opened, spot-checked only: Art. 2, AED 375,000 band read |
+| Ministerial Decision No. 73 of 2023, Article 3 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, link opened, not re-read |
+| FTA Decision No. 3 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-01, link opened, not re-read |
+| Ministerial Decision No. 126 of 2023 | https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf | 2026-11-01, opened, spot-checked only: AED 12,000,000 passage read |
+| Free Zone Persons bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-11-01, link opened, not re-read |
+| CTP006 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-01, opened, spot-checked only: 7-month waiver read |
+| Ministerial Decision No. 229 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-11-01, opened, spot-checked only: Art. 3, 5% and AED 5,000,000 read |
+| Ministerial Decision No. 84 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-01, opened, spot-checked only: AED 50,000,000 read |
+| FTA losses bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf | 2026-11-01, link opened, not re-read |
+| Small business bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf | 2026-11-01, link opened, not re-read |
+| FTA Decision No. 12 of 2026 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf | 2026-11-01, opened, spot-checked only: 7 months and 30 November 2026 read |
+
+Not yet confirmed: every figure not named in the Read on column was checked on the skill's earlier reading only, and the date of that reading is not recorded. FTA Decision No. 4 of 2026 (accounting records and commercial books, effective 30 July 2026) was seen by title only; its effect on the 7-year record rule is not stated here.
 
 <!-- openaccountants-cta-block -->
 

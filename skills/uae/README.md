@@ -22,7 +22,7 @@ Tax years: not stated (1 skill), 2026 (6 skills), 2025 (1 skill).
 | Social contributions | [Payroll social](ae-payroll-social.md) | 2026 | Ready |
 | Payroll | [Payroll social](ae-payroll-social.md) | 2026 | Ready |
 | Transfer pricing | | | Missing |
-| Cross-border | | | Missing |
+| Cross-border | [Tax residency](ae-tax-residency.md) | 2025 | Partly covered: residence rules only; no non-resident withholding, treaty or exit rules |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
@@ -30,7 +30,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 - Company tax: bring [General uae corporate tax guide](general-uae-corporate-tax-guide.md) up to the current tax year.
 - Write the transfer pricing skill.
-- Write the cross-border skill.
+- Cross-border: finish what is left out (residence rules only; no non-resident withholding, treaty or exit rules).
 
 Tracked in [\[AE\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/431).
 
@@ -38,4 +38,3 @@ Tracked in [\[AE\] Complete the pack](https://github.com/openaccountants/openacc
 
 - [Company formation](ae-company-formation.md) (2026)
 - [Tax overview](ae-tax-overview.md) (2026)
-- [Tax residency](ae-tax-residency.md) (2025)
