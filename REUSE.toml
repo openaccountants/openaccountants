@@ -42,3 +42,10 @@ path = [
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Glimpse Ltd and Open Accountants contributors"
 SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
+
+# Exact statutory API data and generated readers retain their source licence.
+[[annotations]]
+path = "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Stiftelsen Lovdata; source Norwegian legislative authorities"
+SPDX-License-Identifier = "NLOD-2.0"

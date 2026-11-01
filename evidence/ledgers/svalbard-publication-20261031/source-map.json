@@ -1,0 +1,1118 @@
+{
+  "reviewed_source_candidate": "13b1e523f",
+  "existing_remote_pr_head": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+  "status": "Reviewed partial source-cited drafts; no accountant attestation or blanket legal clearance",
+  "copied_exact_records": [
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/candidate-manifest.json",
+      "sha256": "80ab5c1c7c50cc862f0baa37e79b05e36d18e80d6860db22f13691eb609ff3fe"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/checks.json",
+      "sha256": "e8722c1c8a09aeeaa619b04333daced1131dc3458a139775f3645bfd63ef1318"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/direct-fetches.json",
+      "sha256": "feff9d6019e68ab45510263e387993c5aefdc2e582a7c1cef66ef5e91a571c3a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/final-input-manifest.json",
+      "sha256": "0a815051c6aef7a1bcb04a19af056daeb6e60df6e9967676faad02e2a9fcad6b"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/final-notice-checks.json",
+      "sha256": "50431853f1aa86a9323b733977ba75a80578d948d4ea028353c56368d21bafa4"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/final-report.md",
+      "sha256": "19ed52ca7189682202bd96cd37ccf85dd452f4074356684786e42cea21c0ff38"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/final-test-results.json",
+      "sha256": "e8722c1c8a09aeeaa619b04333daced1131dc3458a139775f3645bfd63ef1318"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/final-verdict.json",
+      "sha256": "f49b4704b2780a7a0d41a9a5bbb2967de15aac2794e6cbdeee3ae140f4295ae6"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-candidate-manifest.json",
+      "sha256": "b7390cca790548cfa1ccf2e05150c01d063d15adf6a6f811d52c5b9ab137f713"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-report.md",
+      "sha256": "4b314bd1984f839835a74d32fe82e6ab9de77e159ff70298f0d5177056fbb166"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-verdict.json",
+      "sha256": "d4e17293f4b840496d41cf3fa085b242a7641b2ac397304fe2f120be1a155d32"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/notice-supplement-report.md",
+      "sha256": "a077a272903013d621224dcdfb855642192bd8edfa2bc92e35941cdae0022fbe"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/notice-supplement-verdict.json",
+      "sha256": "1d0ec5d08c891f4bc296b519843682aae7f69c75d2231328f1957546aaf3c32d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/preservation-checks.json",
+      "sha256": "c24223c068473f1ec8ca468cf4a7a9b60332959828290883ce5357a29c6bbf54"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/repair-manifest.json",
+      "sha256": "64ae73f1bf93a1961e98aa51698947419066f2482e2978595011f066518aa2cf"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/repair-test-results.json",
+      "sha256": "e8722c1c8a09aeeaa619b04333daced1131dc3458a139775f3645bfd63ef1318"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verdict.json",
+      "sha256": "757532cf3bae8d00934358795ffe01108b90fdf8990aaf88936315dad101bd38"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verification-checks.json",
+      "sha256": "8693cd208d3a360fcd48403908c21c804412fdedcdf1d9959e3ef4e15bff4171"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/repair-verification-report.md",
+      "sha256": "fb593fa017bbdb0da2c71249e2cbe884c28b3e2b1a6cd1487409a117f2d74333"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/row-checks.json",
+      "sha256": "1de0bba7138707d6a00218882a85e77a67838147a354af4a8382451750039a5b"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/source-checks.json",
+      "sha256": "ac430877e148e1e208968c39dd3cb2e25b815fabc9a90250c65ad1b191f8009b"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/main-readme-reconciliation-20261031/incoming-README.md",
+      "sha256": "4922d2717b4f35da70854f6d98fa3b14a7a5e845bc7db002fa74e6c610985457"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/main-readme-reconciliation-20261031/resolution.json",
+      "sha256": "04b02dd37de3755c17ea8857efedd1e3b6553d248296d4927dc071c6208edf47"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/preservation.json",
+      "sha256": "8a5370ec865c6ec89c82adda20966be4946eb6c89b841dbb25c7d37ea1950cff"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/refund-form-observation.txt",
+      "sha256": "b530931a3ad1a2f201f6541191dac1bdc112c6bcf75c6ff61ccce9ed2b300526"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-coal-export-duty.json",
+      "sha256": "9e528316e3d1a3c48f4c786c90778a4a8b7edb95338c7c0f514c0a3f33dacee1"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-visitor-environmental-levy.json",
+      "sha256": "2a6edd39ece77219c8c29e016c346b993519c907e5f5d9edaf07cff6db4f40e7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/source-receipts.json",
+      "sha256": "e1a726dbb10b2b0acee2439c0166f594d9f3d7f3ffd28e6a0909a167874f57b8"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/guide-line-map.json",
+      "sha256": "5ec34db9856f7232f5c868533d788691cba12650025174586d6f49ea9d905701"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/examples.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/final-report.md",
+      "sha256": "c794594c8a9efd51d68b5cc24b1bfc44306a5ad928b051d6f1d7e91682ce37ec"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-fetch-receipts.json",
+      "sha256": "cb69d98cfaab8c156211c777a1f255d51b89253f3d05446134a8fa145048be56"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/preservation-check.json",
+      "sha256": "a36f3cb4123640eb3faa90b70d4e17c7cc2028c0d95667befc6606047fdea2f6"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/shape.txt",
+      "sha256": "172bea477930c7cfe05a6aa3d607fa9dc7eb6fe15ab07e22659442ac63c6a4c7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/verification.json",
+      "sha256": "edfa226a7e47d9b0504a16fbedac57b89e677af067c8b95a15892b5a1ad648e9"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/predecessor-README.md",
+      "sha256": "99a86177fa3886d3c900f1077b7928962684932cfbaf810ac2cf5cc360dd1d52"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/preservation.json",
+      "sha256": "4e0bb5c373cf8722780a411bd89e3fdc5e0c3c8b1ae981998de2f76312bf1e08"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/rows.json",
+      "sha256": "2705a8712df598d1ce74577848a8d18c06c04068d90258ee00dd19c7a5b90f6c"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/source-receipts.json",
+      "sha256": "a8ee54076d600f838ba546d67142dd5ba921a0ce8a1d1739060f0e54f7c07538"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/checkpoint.json",
+      "sha256": "863fe75dfabcd173cb1d0de5ec497cf1d9678f62e4347709da240ad1eaff778e"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/combined-review-manifest.json",
+      "sha256": "c406cf9cb0b25758b5cd013b47dc700ed605b022ee716368df39a59a13ba9345"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/examples.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/results.json",
+      "sha256": "ad93bcd556a8dd3a1aec7ef82509a4a09e8e1457e0aa9d4558e584f9db720564"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/shape.txt",
+      "sha256": "3360cec35fd011d3b913d8222a6cd675b9166ab257a209835ddfead3062905b2"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/sync.txt",
+      "sha256": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/validation-d4df5db80/unit.txt",
+      "sha256": "47031a5c51a9ed0cefc2cf5fda72feb36a6d49077a46decfcf02463c2a4520c2"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/writer-manifest.json",
+      "sha256": "fe24716b6a480ccaeab4cdfa3f29ffd095eb3e1572d47b93cbd4722d9fd9abb4"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/capture-storage.json",
+      "sha256": "a8575ba5366249fd49e69b55ad0b5b00a07cbc45047d3094944c5fefa729873e"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/ledger.md",
+      "sha256": "c371cd06257c2eb189e012fe93594cc8d971e7abe1a5d59d8e062a8b5b07a374"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/old-topics-destinations.json",
+      "sha256": "54e1ede8c2ea3b75aebffce633539939b3223e4fd6ceff50b3e90132f4edf9f9"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/predecessor-README.md",
+      "sha256": "96b25a2bca2c94ce5449e6423d3819e093f87416d4086e6b2cae523c2787a418"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/rows.json",
+      "sha256": "d1af0e1f35ec47c425706bb976b5c6c6692dcf2fd769afb34f4895c0bf68c5c7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/source-receipts.json",
+      "sha256": "4df84901278a266f1ee75c4b5bda25b3c3f4193b6ccc54fc614f25bd06592f0d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/writer-manifest.json",
+      "sha256": "c7d98f83d0eea787cb43f4d375f8b12ba044863a5dcb0cfb5758bbfe35cd14a0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/REVIEW-REQUEST.md",
+      "sha256": "4bee4c9be583f6189b1979640ad60fde3487196bf6f0bbfcc8148bd1ed266b03"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/SOURCE-LICENSING.md",
+      "sha256": "bee080f1a2120790b8e3e7240380f3e3e7e3b4e8f49e0b533bd0196aa290f805"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-dataset-receipts.json",
+      "sha256": "118bb6c5813070501f167913da53df872eb938647dd098dcc431d649114a5f4d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.txt",
+      "sha256": "871dcaced420b28fb926164feff8a2de07cde9d2a230497d015e07c6356f584d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.xml",
+      "sha256": "0871014acd5dc24eaab8c6a5d1132d0a3faeaad3956c8fa037b09d346dc9982a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.txt",
+      "sha256": "82b292a005ae64034a4160c63943010d0268aa30fb148cbfc633fecee2ebf085"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.xml",
+      "sha256": "f73699163e492de3948507543635a50551b57df644552cd400e5599b02b22bc0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.txt",
+      "sha256": "9d4826f4112686d919f63df4c9095d97ff4bef0dd5b6ac8087e6efe1742506a0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.xml",
+      "sha256": "cc63f9af79f4fcb7cc1cfc96d7326b2a4d99e52bca78ed1682b644bd728c8e3a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/examples.txt",
+      "sha256": "4ae8e92654081ee1e8b5e0898d1bd738d778440845b3893da9b69abd8630da6c"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/final-report.md",
+      "sha256": "126b8329a65b9616dbb9b6803da5cfafcfd41de2057e7876b3e60692fa05a27a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/review-record-manifest.json",
+      "sha256": "8693841bc91a2fb196284351fd2ad1b0a484d7bd8bbe7eaa94dd4e0684161a2d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/row-verdicts.json",
+      "sha256": "c555b48c78460b713176f77df96fb9e6608568867e2ecb22b1e20dbac254c6dc"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/shape.txt",
+      "sha256": "fb6ffe0b7c5b7c80e8cd9793a8dd121f0e401cb2c52e206bd3563f18b06e1c1e"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/source-access.json",
+      "sha256": "812413d8acf9e38c8ef5b79f8674ce5bc346cb2b823579a559f650b855a89209"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/strict-metadata.txt",
+      "sha256": "7c6a926a79fc09b6b28f42b0b447469c207c35bff893056657aa12db37db6b8f"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/verification.json",
+      "sha256": "05bc97b1a869d189d76bc17b81d66c9a39b4831ced04d3a58ff0454055aa09c7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/independent-review/verify.py",
+      "sha256": "a7536ea666a00aafdcc0b55977559002349089db12d4e309b5a6668084de2088"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/line-map.json",
+      "sha256": "b9dc16caa0e0a5ab9acb0454baf13a0223d354aadbacd4f0529a52bb81715fd5"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/predecessor-README.md",
+      "sha256": "1ad918ffca000660da2f4dc6a16bede2cca942b3ddc2b22cba774dc37bdc199a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/preservation.json",
+      "sha256": "76c927a97dbadca16276af9d37e11927b3a5f874b49910474f12e4c7cb60b236"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/procedure-source-receipts.json",
+      "sha256": "7e7715501966ae6aeb88bba28b68122f1abd20bb157a9249a06f7ed2f5770518"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/rows.json",
+      "sha256": "05b6074de94d85e4af119b18f0ab492abac25f52f5d3ea1a41085900bd14801f"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/writer-manifest.json",
+      "sha256": "1a5b235a0e17185e7fad57afc65cecc261a877c6fce9ce544a372d8a698b8cdc"
+    },
+    {
+      "path": "evidence/ledgers/sj-svalbard-coal-export-duty.md",
+      "sha256": "513dfd6368cbb581ee4f36b45335df39842a2c0e94751390dcf5ea001d5da82c"
+    },
+    {
+      "path": "evidence/ledgers/sj-svalbard-visitor-environmental-levy.md",
+      "sha256": "cd90e74db25866705ce9b8fab8ed82d99c2d3e92d1f3bd75b0f3bd890fc98983"
+    },
+    {
+      "path": "evidence/ledgers/sj-svalbard-company-beneficial-owners.md",
+      "sha256": "98d52ff3acbed70a848142a5c7917afb0c3ea68213064a2759456ecd49702f71"
+    },
+    {
+      "path": "evidence/ledgers/sj-svalbard-project-group-payroll.md",
+      "sha256": "601cd7234c79e672a222267d88c3c80dbe8a61cfb6cbf0eb4ed645f3cc2ec714"
+    }
+  ],
+  "private_capture_files": [
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-2026-browser.txt",
+      "sha256": "0a090dae9d4a0c48590e16dc38f291ad313123c1eff4af8888132c254b8c9b36",
+      "bytes": 5174,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-2026-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-law-browser.txt",
+      "sha256": "c666ac0f01e42e151430590df62f50e263dbdffa614267b59e79bb5e9f2113e1",
+      "bytes": 15728,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1925-07-17-2"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-law-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/customs-law-browser.txt",
+      "sha256": "377c95f7afe9324013d5e88a6c179ea283b0225e696b990f82e00f767c80646e",
+      "bytes": 110713,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2022-03-11-8"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/customs-law-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fee-browser.txt",
+      "sha256": "397a2e030ddab025f47b4704cc54dd95144f3b87f3c2de6748b3516abc006bc5",
+      "bytes": 10403,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fee-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fund-browser.txt",
+      "sha256": "df56d56add6977c8866bd31fe6f812d4d1af5f30c20b01b1ceffe997c37a4683",
+      "bytes": 5711,
+      "official_urls": [
+        "https://www.sysselmesteren.no/svalbards-miljovernfond/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fund-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-law-browser.txt",
+      "sha256": "ac05e59f7681700628830ffa6aa56d0ac72722cfb6adee64bb132ba87b679e2d",
+      "bytes": 153121,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-law-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/fund-refund-browser.txt",
+      "sha256": "3463f73ef836d42a574afeecd76582cb3750d624f05401bdff209ddb40a38cb2",
+      "bytes": 4041,
+      "official_urls": [
+        "https://www.miljovernfondet.no/refusjon-av-avgift/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/fund-refund-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/governor-travel-browser.txt",
+      "sha256": "0324877d145f67c87b71ea93d2e5f98b2a03da5742f676a25baa1eb2f48e6d99",
+      "bytes": 7383,
+      "official_urls": [
+        "https://www.sysselmesteren.no/ferdsel-pa-svalbard/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/governor-travel-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/refund-form-browser.txt",
+      "sha256": "8ccf9d7076e73bd68ea582d4ce989aae3feb32d5cc8f33640c01feb7716ff9c5",
+      "bytes": 3199,
+      "official_urls": [
+        "https://skjema.no/sysselmesteren/confirmprivacylogin?shortname=ref_miljoavgift&returnUrl=https%3A%2F%2Fskjema.no%2Fsysselmesteren%2Fref_miljoavgift&userLoggedInWithSecurityLevel=0&requiredSecurityLevel=0"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/independent-review/sources/refund-form-browser.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.html",
+      "sha256": "92639bf7d496f21b0cab5c4275cb905144428e1dc07b74bd449724e50cc67f2a",
+      "bytes": 29214,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.txt",
+      "sha256": "bb0cd111850e6e8551e8c01640ef5ef0ec62e81b1d2f195f3df38db6460632fd",
+      "bytes": 2701,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/coal-law.html",
+      "sha256": "fcdd726f1b66e2110fc1daf64c4f5107e21fb05b968a805dbdd5c5c727901f1e",
+      "bytes": 47069,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1925-07-17-2"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/coal-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/coal-law.txt",
+      "sha256": "44bec8921cefc7e39e2a09c09c08f2afe3bb716f3756bac61dfbdab1c55a086e",
+      "bytes": 9668,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1925-07-17-2"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/coal-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.html",
+      "sha256": "970f234e454973763fe219f9f0af3f4566da4ff16f4018ad4c0ba3756e358107",
+      "bytes": 40357,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.txt",
+      "sha256": "36bcc2cc118a68c988ade66ba87dc30be6878f42b22b26540b186e2099e62143",
+      "bytes": 5368,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.html",
+      "sha256": "42ee8bb7ed2f8f6e54edd0b32893b2e2b1a37d278f6b5588c010111a86c74aa1",
+      "bytes": 25687,
+      "official_urls": [
+        "https://www.sysselmesteren.no/svalbards-miljovernfond/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.txt",
+      "sha256": "4cea6e5e2f7a3f375c3225b12fdc8259c977ea1994362a2467024d04e75a974d",
+      "bytes": 2742,
+      "official_urls": [
+        "https://www.sysselmesteren.no/svalbards-miljovernfond/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-law.html",
+      "sha256": "041b5c36bd01aab65c5fa64babe47d7f82fb62841ddad41f2f6ca1e3ff2dbf84",
+      "bytes": 281199,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/environment-law.txt",
+      "sha256": "db673ea46cad1206681d28ecdbc37ede484efb84cd0cdadca7d15462169643a1",
+      "bytes": 81464,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/environment-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.html",
+      "sha256": "51898d8fcf81c776e68928e39f9ac6c322798372403448671b2332e4cb1da146",
+      "bytes": 31948,
+      "official_urls": [
+        "https://www.miljovernfondet.no/refusjon-av-avgift/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.txt",
+      "sha256": "b31ceef3208b9f10d3ca53b638e811b07388c3c0c090aaa80c2e29cc7642ef10",
+      "bytes": 1867,
+      "official_urls": [
+        "https://www.miljovernfondet.no/refusjon-av-avgift/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.html",
+      "sha256": "37398123375d0af80b3f09b2f6357fddf465fdf4f55123b192042560da4d0e7e",
+      "bytes": 44572,
+      "official_urls": [
+        "https://www.sysselmesteren.no/ferdsel-pa-svalbard/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.txt",
+      "sha256": "8703837bb57f024a07a05b7c50b883f7475dd02b30f91e459f8676f657380ed7",
+      "bytes": 9272,
+      "official_urls": [
+        "https://www.sysselmesteren.no/ferdsel-pa-svalbard/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-07e3395b5b5c.html",
+      "sha256": "26542e109049499820b9ab8f0ce3cf0fae17d052ee1e2078cdd1d70c54901a19",
+      "bytes": 39041,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-07e3395b5b5c.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-1ef4f068503e.html",
+      "sha256": "b1445240dcfb22416e5439ea4e85e39747a5a7d894622223bc90120df74ef89b",
+      "bytes": 80407,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-1ef4f068503e.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-36101bb9611c.html",
+      "sha256": "55c7e2d42cb6f1337aafcfc86290a8cb5d762377b2c7cfa2cdd4ac4102c2177c",
+      "bytes": 3333464,
+      "official_urls": [
+        "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-36101bb9611c.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-5e4f6dfb02bc.html",
+      "sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "bytes": 58507,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-5e4f6dfb02bc.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-67e1b822e50e.html",
+      "sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "bytes": 101399,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1996-11-29-68"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-67e1b822e50e.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7b3b8b803426.html",
+      "sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+      "bytes": 64474,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2012-06-22-43"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7b3b8b803426.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7d819792cfc7.html",
+      "sha256": "518fd25d6a18c38155a1c039cd7e1fbed30274e5f34ac5ae10da9bea8be37052",
+      "bytes": 76905,
+      "official_urls": [
+        "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-7d819792cfc7.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-8af1a9e5995b.html",
+      "sha256": "8e8bebad4e26d651f40a36e873fa489b788929d7d2f48a236d5c82de06fa67b5",
+      "bytes": 110453,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-8af1a9e5995b.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a3646faa8504.html",
+      "sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+      "bytes": 235732,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a3646faa8504.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a7e251667aa4.html",
+      "sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "bytes": 52972,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-a7e251667aa4.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-acb9cbbb07d9.html",
+      "sha256": "f7da980b3015c74111a1155628bca5acf1fbec343045f9ea1fda61a3b4ed5589",
+      "bytes": 84679,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-acb9cbbb07d9.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-ae697adc3722.html",
+      "sha256": "bfecdc7c653868da9925b06a979fdbc36744087afcbc7b134d1ada13629f1bc8",
+      "bytes": 219362,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-ae697adc3722.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-cf10309d2bf0.html",
+      "sha256": "168c0500e66357bdf269ad6d94c88f0f4acd9efa142b968ddb4584976207892a",
+      "bytes": 66152,
+      "official_urls": [
+        "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-cf10309d2bf0.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-db2cd5f21db0.html",
+      "sha256": "d1552f187bbdeff155b5bf8ad96916452d517fed40c11a56fa9c8c7e250e16b1",
+      "bytes": 81182,
+      "official_urls": [
+        "https://www.skatteetaten.no/kontakt/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-db2cd5f21db0.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-e65fe648ec5c.html",
+      "sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "bytes": 537741,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2005-06-17-67"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/independent-review/fresh-e65fe648ec5c.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.html",
+      "sha256": "b1445240dcfb22416e5439ea4e85e39747a5a7d894622223bc90120df74ef89b",
+      "bytes": 80407,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.txt",
+      "sha256": "0efd64100847683c07561b75fc8ea6ee29a796f8e85deb0efd3328b6ab463275",
+      "bytes": 18696,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/insurance-decision.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.html",
+      "sha256": "bfecdc7c653868da9925b06a979fdbc36744087afcbc7b134d1ada13629f1bc8",
+      "bytes": 219362,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.txt",
+      "sha256": "2673f9f6c590a041e2be85e377bfe31f5f624af08acf0dacf392d6bf1bf2a9ac",
+      "bytes": 51766,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/insurance-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.html",
+      "sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "bytes": 537741,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2005-06-17-67"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.txt",
+      "sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21",
+      "bytes": 142279,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2005-06-17-67"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/payment-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.html",
+      "sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "bytes": 76905,
+      "official_urls": [
+        "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.txt",
+      "sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "bytes": 5264,
+      "official_urls": [
+        "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-direct.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.html",
+      "sha256": "007d8c58cd1b2d7342fbc0a13c302c34738efc34d6c7988c468223145e403543",
+      "bytes": 110453,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.txt",
+      "sha256": "44855d8768e334f5ca7919b4904775525901edfdcc6ac76d7eee9d5baaa5a207",
+      "bytes": 9548,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-amelding-svalbard.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.html",
+      "sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+      "bytes": 64474,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2012-06-22-43"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.txt",
+      "sha256": "5ec22c4e1335983e34bf956f1138c74b588fe87e47bfdc31b27d4a3268b49d48",
+      "bytes": 14225,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2012-06-22-43"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.html",
+      "sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "bytes": 58507,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.txt",
+      "sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "bytes": 10068,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-areport-reg.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.html",
+      "sha256": "f05a6369b42a2c5233a1f7e57e2fb2ad7136d11f4290acb6025a307843d9d4c7",
+      "bytes": 80834,
+      "official_urls": [
+        "https://www.skatteetaten.no/kontakt/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.txt",
+      "sha256": "26ae71f6c1de92940fdd0178612a1f7b832b77c15be76a87a56def8fb8b6b4c3",
+      "bytes": 5114,
+      "official_urls": [
+        "https://www.skatteetaten.no/kontakt/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-contact.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.html",
+      "sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+      "bytes": 235732,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.txt",
+      "sha256": "69308bea91450490f342399dccda2d350224681f7226e6c2dd7ba0ce08472389",
+      "bytes": 56619,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-insurance-membership.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.html",
+      "sha256": "452d11a6fd58279c18a73315cb7614eff94774157fee75cbe2458afcdbc4a7e4",
+      "bytes": 84679,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.txt",
+      "sha256": "b704543ed99849ddf7eef6aec3dfe1ef51996efc13fe79668974f12f2b59e3a2",
+      "bytes": 9492,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/project-payment-guidance.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.html",
+      "sha256": "26542e109049499820b9ab8f0ce3cf0fae17d052ee1e2078cdd1d70c54901a19",
+      "bytes": 39041,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.txt",
+      "sha256": "328000c5cfa3f7dbedfb45b55f74b6967600b5ce559af3067760ada761f0a92b",
+      "bytes": 4936,
+      "official_urls": [
+        "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-decision.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.html",
+      "sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "bytes": 101399,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1996-11-29-68"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.txt",
+      "sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "bytes": 23287,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1996-11-29-68"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.html",
+      "sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "bytes": 52972,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.html"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.txt",
+      "sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "bytes": 9450,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-project-group-20261031/sources/svalbard-regulation.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz",
+      "sha256": "ad5054e08c86d4ca598a256e87c81c8b7acd55748812d574473f51e6417f61ef",
+      "bytes": 200105,
+      "official_urls": [
+        "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.txt",
+      "sha256": "8cd26aadd531d7a0122ff44560503cc0fd1507f2283273658525068333e80ccd",
+      "bytes": 244319,
+      "official_urls": [
+        "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz",
+      "sha256": "ab17e07d4bd554c1eb5730a1700dc343f27f2eeee69b80d157ac36a4197050c0",
+      "bytes": 16083,
+      "official_urls": [
+        "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.txt",
+      "sha256": "cc7190a35242986dfb306c1d3ce5c08631f16ddf99be9a41525a841e1e86790c",
+      "bytes": 4511,
+      "official_urls": [
+        "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz",
+      "sha256": "f60b927a1db433a9e57f2ab5cded62f4fb00fe679d9c3fcaa51ed230cd3d89f9",
+      "bytes": 33157,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2024-01-12-1"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.txt",
+      "sha256": "49c395ea03bb727fa4e9b9c989ff0e66578355d1aadd94bdcc353a04fb713ef7",
+      "bytes": 91360,
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2024-01-12-1"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz",
+      "sha256": "05998170276ee68ac47eaffd56fa9592ab181dbea9fbec54ff814460d2754713",
+      "bytes": 17732,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/suppleringsskatt/om-suppleringsskatt/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.txt",
+      "sha256": "ce925bc43fcc3f0c3092e26867c5a012590d558189c6975b55ac66195d051c3a",
+      "bytes": 7219,
+      "official_urls": [
+        "https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/suppleringsskatt/om-suppleringsskatt/"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.txt"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz",
+      "sha256": "2c9a5eb5df4ec02c8e1f187af2727c936367aad7bec79c5f4c91f5961a1711f1",
+      "bytes": 58385,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2024-03-26-541"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.txt",
+      "sha256": "b558b19f0e48a8fca22576d8085cb7b5c33012b8d9e573bfb227a5ff35d90524",
+      "bytes": 173445,
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2024-03-26-541"
+      ],
+      "provenance": "Original dated source receipts and review source-access records retained with unchanged hashes",
+      "private_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/repository/evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.txt"
+    }
+  ],
+  "official_source_urls": [
+    "https://api.lovdata.no/swagger",
+    "https://api.lovdata.no/swagger/api.json",
+    "https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2",
+    "https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2",
+    "https://api.lovdata.no/v1/publicData/list",
+    "https://data.norge.no/nlod/en/2.0",
+    "https://info.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-reelle-rettighetshavere/",
+    "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+    "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+    "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+    "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+    "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+    "https://lovdata.no/dokument/NL/lov/2019-03-01-2",
+    "https://lovdata.no/dokument/NL/lov/2024-01-12-1",
+    "https://lovdata.no/dokument/SF/forskrift/1983-02-15-86",
+    "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+    "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+    "https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056",
+    "https://lovdata.no/dokument/SF/forskrift/2024-03-26-541",
+    "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+    "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+    "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "https://skjema.no/sysselmesteren/ref_miljoavgift",
+    "https://www.brreg.no/reelle-rettighetshavere/",
+    "https://www.brreg.no/reelle-rettighetshavere/reelle-rettighetshavere-i-aksjeselskap/",
+    "https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/",
+    "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+    "https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/suppleringsskatt/om-suppleringsskatt/",
+    "https://www.skatteetaten.no/kontakt/",
+    "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/",
+    "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/",
+    "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+    "https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "https://www.sysselmesteren.no/svalbards-miljovernfond/"
+  ],
+  "no_source_destroyed": true
+}
