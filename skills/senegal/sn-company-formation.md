@@ -21,9 +21,35 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Declaration of existence | Within 20 days of starting (CGI art. 633) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
 | Regime choice | Real, CGU or CGF by turnover | https://www.dgid.sn/particuliers |
 | Annual accounts | With the return by 30 April (arts. 30, 31) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
-| Monthly filings | VAT and withholding by the 15th (arts. 185, 363) | same |
+| Monthly filings | VAT by the 15th (art. 363); salary withholding by the 15th, or quarterly for real simplified and CGU employers (art. 185) | same |
 
 Steps: 1. Get the NINEA. 2. File the declaration of existence. 3. Choose the regime. Formalise online at https://dgid-digitale.dgid.sn.
+
+## Two worked examples that recompute
+
+Example 1: an individual provides services with turnover of 400,000. CGU at 5% is 20,000, so the 30,000 minimum applies (art. 141).
+
+```oa-check
+name: CGU services at the minimum
+inputs:
+  turnover: 400000
+steps:
+  - cgu: max(turnover * 0.05, 30000)
+expected:
+  cgu: 30000.00
+```
+
+Example 2: an individual trader with turnover of 10,000,000. CGU at 2% is 200,000, above the 25,000 minimum (art. 141).
+
+```oa-check
+name: CGU trader above the minimum
+inputs:
+  turnover: 10000000
+steps:
+  - cgu: max(turnover * 0.02, 25000)
+expected:
+  cgu: 200000.00
+```
 
 ## Sources
 

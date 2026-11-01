@@ -31,6 +31,34 @@ The CGI is administered by the DGID. The tax year is the calendar year, in XOF. 
 
 Residents are taxed on worldwide income, others on Senegal-source income (art. 48). Details: [income tax](senegal-income-tax.md), [company tax](sn-corporate-income-tax.md), [VAT](senegal-vat.md).
 
+## Two worked examples that recompute
+
+Example 1: a sale of 1,000,000 before VAT at 18% (art. 369). VAT is 180,000.
+
+```oa-check
+name: VAT at the standard rate
+inputs:
+  sale: 1000000
+steps:
+  - vat: sale * 0.18
+expected:
+  vat: 180000.00
+```
+
+Example 2: profit of 40,000,000 at 30% (art. 36), with prior-year turnover of 500,000,000. IS of 12,000,000 is above the IMF of 2,500,000 (art. 40).
+
+```oa-check
+name: IS above IMF
+inputs:
+  profit: 40000000
+  turnover: 500000000
+steps:
+  - imf: min(turnover * 0.005, 5000000)
+  - tax: max(profit * 0.30, imf)
+expected:
+  tax: 12000000.00
+```
+
 ## Sources
 
 | Source | URL | Read on |

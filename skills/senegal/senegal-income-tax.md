@@ -47,7 +47,7 @@ Individuals with a tax home in Senegal are taxed on worldwide income; others on 
 | Private clinic practitioners | 10%, final | Non-employed medical staff (art. 212 ter) | same |
 | CGU, services | 5%, minimum 30,000 | Individuals, turnover with tax at most 50,000,000 (arts. 135, 141) | same |
 | CGU, traders and producers | 2%, minimum 25,000 | Same | same |
-| CGF on rents | 1, 1.5 or 2 months of gross rent, minimum 30,000 | Bands to 12M, to 18M, above; gross rents under 30M | https://www.dgid.sn/loi-reglement |
+| CGF on rents | 1, 1.5 or 2 months of gross rent, minimum 30,000 | Bands to 12M, to 18M, above; gross rents up to 30M | https://www.dgid.sn/loi-reglement |
 | TRIMF per year | 900; 3,600; 4,800; 12,000; 18,000; 36,000 | Gross income under 600k; under 1M; under 2M; under 7M; under 12M; 12M and over (art. 282) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
 
 Family reduction, applied to the tax (art. 174). This is not an income-splitting quotient.
@@ -148,14 +148,14 @@ Benefits-in-kind values from the old version are on the "Not yet confirmed:" lin
 | Item | Date | Source |
 |---|---|---|
 | Annual return | Before 1 May (art. 60); calendar says 30 April | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
-| Instalments on real regimes | 15 February, 30 April, each one third of last year's tax (art. 214) | same |
+| Instalments on real regimes | 15 February, 30 April, each one third of last year's tax (art. 214). Nothing for people whose only income has suffered withholding (art. 213) | same |
 | Balance | 15 June (art. 214) | same |
-| Salary withholding | First 15 days of next month (art. 185) | same |
+| Salary withholding | First 15 days of next month; real simplified and CGU employers: first 15 days of January, April, July and October for the past quarter (art. 185) | same |
 | Annual salary and third-party statements | 31 January, Etat 1024 (art. 191) | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf |
 | CGU declaration | Before 1 March (art. 147) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
 | CGU payment, tax up to 100,000 | Once, before 1 March (art. 145) | same |
 | CGU payment, above 100,000 | One third each in first 15 days of March and May (art. 144) | same |
-| CGF | Date on the DGID calendar, art. 79 | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf |
+| CGF | Declare before 1 February; pay in three equal parts by end February, April and June, or once by end February (art. 79) | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
 
 How to file:
 1. Log in to Mon Espace Perso if an individual or a business with turnover of at most 100 million; otherwise SENTAX where your tax centre has moved to it. CME1, CME2 and CPR must use SENTAX from 1 October 2026; paper is refused.

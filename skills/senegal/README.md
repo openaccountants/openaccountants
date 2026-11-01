@@ -37,4 +37,4 @@ Tracked in [\[SN\] Complete the pack](https://github.com/openaccountants/openacc
 ## Other skills
 
 - [Company formation](sn-company-formation.md) (2026)
-- [Tax overview](sn-tax-overview.md) (2025)
+- [Tax overview](sn-tax-overview.md) (2026)
