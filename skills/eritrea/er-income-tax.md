@@ -58,7 +58,7 @@ Rent: within one month from the end of the fiscal year (art 19).
 
 Business (art 26): 4 months after year end if balance sheet and profit and loss are required, 2 months if only a daily income and expense summary, 1 month if no books are required. Regulations category test (Legal Notice 119/2012): A is any body, or a person with gross income over 1,000,000 Nakfa. B is a person over 200,000 up to 1,000,000, a professional over 30,000, or an importer, exporter, wholesaler or distributor up to 1,000,000. C is a person up to 200,000, or a professional up to 30,000. Category A keeps a journal, pre-numbered invoices, stock cards, and cost and depreciation records; B a daily book and the same documents (Legal Notice 20/1995 art 16). Receipts must be issued without being asked (Legal Notice 81/2003).
 
-Steps: fill the declaration, deliver it with payment to the Inland Revenue Department office, keep the receipt. An assessment can be appealed to the Tax Appeal Commission within 30 days with a cash deposit (arts 55, 61): 75% of the tax, or 30% for a first assessment; further appeal to the High Court on law within 30 days (art 58).
+Steps: fill the declaration, deliver it with payment to the Inland Revenue Department office, keep the receipt. An assessment can be appealed to the Tax Appeal Commission within 30 days with a cash deposit (art 55). A business pays the lesser of 75% of the tax assessed and 75% of the tax finally assessed for the last preceding year; on a first assessment it pays 30%; in all other cases 50%; further appeal to the High Court on law within 30 days (art 58).
 
 ## Penalties and interest
 

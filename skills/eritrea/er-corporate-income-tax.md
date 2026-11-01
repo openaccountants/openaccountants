@@ -34,10 +34,10 @@ Any incorporated body with income originating in Eritrea (Proc 62/1994 arts 2(2)
 | Loss carry-forward | 5 years | Lost if ownership changes by over 25% | Proc 116/2001 art 5, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-116-2001/eritrean-proc-116-2001.pdf |
 | Mining | 38% | Mining licence holder; plus 5% of gross deductible if reinvested | Proc 69/1995 tax article, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-69-1995/eritrean-proc-69-1995.pdf |
 | Petroleum | 35% | Petroleum operations; 15% on interest | Proc 109/2000, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-109-2000/eritrean-proc-109-2000.pdf |
-| Depreciation, building | 5% | Of original cost | Legal Notice 20/1995, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-notice-20-1995/eritrean-notice-20-1995.pdf |
-| Depreciation, machinery | 16% then 12% | First year, then seven subsequent years | same |
-| Depreciation, furniture | 10% | Of original cost | same |
-| Depreciation, vehicles | 20% | Of original cost | same |
+| Depreciation, building | Up to 5% a year | Of original cost; the Department can permit other rates | Legal Notice 20/1995, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-notice-20-1995/eritrean-notice-20-1995.pdf |
+| Depreciation, machinery | Up to 16% then 12% | First year, then seven subsequent years | same |
+| Depreciation, furniture | Up to 10% a year | Of original cost | same |
+| Depreciation, vehicles | Up to 20% a year | Of original cost | same |
 
 ## The base
 
@@ -45,7 +45,7 @@ Taxable income is gross income less expenses wholly, necessarily and exclusively
 
 ## Deadlines and filing
 
-Declare and pay within 4 months of the end of the accounting period, with balance sheet and profit and loss (art 26(1)(a)). Payments abroad: withhold, declare and pay within one month of paying the fee (art 26(2)(b)). The year follows the Eritrean fiscal year unless the Department allows another. Steps: prepare accounts, fill the declaration, deliver with payment to the Inland Revenue Department, keep the receipt. Appeal within 30 days with a deposit (art 55). Mining tax is due within 90 days after year end (Proc 69/1995).
+Declare and pay within 4 months of the end of the accounting period, with balance sheet and profit and loss (art 26(1)(a)). Payments abroad: withhold, declare and pay within one month of paying the fee (art 26(2)(b)). The year follows the Eritrean fiscal year unless the Department allows another. Steps: prepare accounts, fill the declaration, deliver with payment to the Inland Revenue Department, keep the receipt. Appeal within 30 days with a cash deposit: the lesser of 75% of the tax assessed and 75% of the tax finally assessed for the last preceding year, or 30% on a first assessment (art 55). Mining tax is due within 90 days after year end (Proc 69/1995).
 
 ## Penalties and interest
 

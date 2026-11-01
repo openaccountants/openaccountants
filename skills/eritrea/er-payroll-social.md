@@ -35,6 +35,7 @@ Employers in Eritrea with employees. The National Pension covers both the public
 | Overtime, day | 1.25 times | 6:00 to 22:00 | art 53, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-118-2001/eritrean-proc-118-2001.pdf |
 | Overtime, night | 1.5 times | 22:00 to 6:00 | same |
 | Overtime, rest day | 2 times |  | same |
+| Overtime, public holiday | 2.5 times |  | same |
 | Annual leave | 14 working days plus 1 a year | Cap 35 | art 56, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-118-2001/eritrean-proc-118-2001.pdf |
 | Notice | 7, 14, 21 or 30 days | Under 1 year; 1 to 2; over 2 to 5; beyond that, unless the contract provides otherwise | art 30, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-118-2001/eritrean-proc-118-2001.pdf |
 | Severance | 2, 3, 4 weeks of wages a year | First 5 years; years 6 to 10; after 10; on last wage | art 32, https://tile.loc.gov/storage-services/service/ll/lleritrea/eritrean-proc-118-2001/eritrean-proc-118-2001.pdf |

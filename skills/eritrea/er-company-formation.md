@@ -31,6 +31,7 @@ Founders choosing a form. Forms listed by the Commercial Code include share comp
 | Private limited share | At least 10 | Equal value | same |
 | Share company capital | 50,000 | Code says "Ethiopian dollars" | art 306, https://mojeritrea.net/wp-content/uploads/2023/05/Commercial-Code.pdf |
 | Share par value | 10 |  | same |
+| Share company members | At least 5 | Not fewer than five to establish | art 307, https://mojeritrea.net/wp-content/uploads/2023/05/Commercial-Code.pdf |
 | Restricted business | Banking, insurance | Private limited company may not do these | art 513, https://mojeritrea.net/wp-content/uploads/2023/05/Commercial-Code.pdf |
 
 ## The base
@@ -95,7 +96,7 @@ expected:
 
 Scans were read by OCR and the key rate pages checked by eye. The Library of Congress item pages show a security check, which we did not pass; the PDFs came straight from its public file host. Scanned gazettes use "Birr" in 1994 and "Nakfa" in later amendments.
 
-Not yet confirmed: Old guide items not confirmed: nakfa conversion of the capital figures; minimum of five shareholders for a share company; one-member company (the law says two); name reservation, capital deposit and licence steps; timeline of 1 to 4 weeks; foreign investment licence. Old sources (formation vendors) were removed. Business licensing Proc 72/1995 was not read in full. No published 2026 amendment, circular or form could be opened; the Ministry of Finance site did not connect. No official portal or online filing page could be opened either.
+Not yet confirmed: Old guide items not confirmed: nakfa conversion of the capital figures; one-member company (the law says two); name reservation, capital deposit and licence steps; timeline of 1 to 4 weeks; foreign investment licence. Old sources (formation vendors) were removed. Business licensing Proc 72/1995 was not read in full. No published 2026 amendment, circular or form could be opened; the Ministry of Finance site did not connect. No official portal or online filing page could be opened either.
 
 <!-- openaccountants-cta-block -->
 
