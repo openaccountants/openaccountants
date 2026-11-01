@@ -2,13 +2,13 @@
 name: sj-svalbard-payroll-tax
 description: >
   Svalbard payroll-tax reference for 2026 using the consolidated Act, enacted annual rates and official guidance. Covers gross-basis withholding, the annual twelve-basic-amount threshold, multiple employers, the new youth allowance and refund mechanism, monthly reporting and the changed payment deadline. Shows worked income-tax calculations and distinguishes employee insurance contributions from employer contributions. Applies only to Svalbard, not all territories grouped under the SJ code. Insurance membership, full benefits valuation, special payments, rounding implementation and independent accountant review require further work before treating this as a complete payroll manual.
-version: 0.1
+version: 0.2
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -59,8 +59,6 @@ For 2026, payment of withheld tax is due **no later than the first working day a
 ## Verification limits
 
 Checked 22 October 2026. This covers Svalbard only, not Jan Mayen. Full social-insurance membership, benefits, holiday-pay timing, corrections, special groups, youth refund administration and payroll rounding need further treatment. Independent accountant review has not occurred; this is not complete payroll coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,13 +1,13 @@
 ---
 name: dk-payroll
 description: "Use this skill to run Danish payroll for 2026: registering as an employer on virk.dk, the monthly eIndkomst report and its 2026 deadlines (the 10th of the next month for small and medium employers, the last banking day of the month for large ones), the eSkattekort (hovedkort, bikort, frikort) and the forskudsopgørelse behind it, the withholding order (ATP, then 8% AM-bidrag, then A-skat at the trækprocent after the monthly fradrag), ATP of DKK 99 employee and DKK 198 employer a month, holiday pay under the Holiday Act (ferietillæg 1%, feriegodtgørelse 12.5%, FerieKonto), free car and free phone, payslips and penalties. Trigger phrases: lønkørsel, A-skat, am-bidrag, trækprocent, skattekort, eIndkomst, feriepenge, fri bil, Danish payroll. Out of scope: the employee's own tax computation (dk-income-tax), employer social contributions and Samlet Betaling (dk-social-contributions), self-employed B-tax (dk-income-tax), company tax (dk-corporate-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -275,8 +275,6 @@ expected:
 | virk.dk, Feriepenge: arbejdsgiver (FerieKonto deadlines, DKK 4 fee) | https://virk.dk/vejledning/feriepenge/fp-arbejdsgiver/ | 2026-10-23 |
 
 Not yet confirmed: the statutory basis of the monthly payslip duty (Skattestyrelsen's guidance says "must" in Danish and "should" in English, and names no provision).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

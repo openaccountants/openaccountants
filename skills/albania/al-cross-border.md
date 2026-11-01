@@ -1,13 +1,13 @@
 ---
 name: al-cross-border
 description: "Albanian cross-border tax for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' (as amended to Law No. 81/2025) and Law No. 9920/2008 on tax procedures. Covers tax residence of individuals (home, 183 days, centre of vital interests, the 24-month rule for foreign artists) and of companies (incorporation or management and control); what Albania taxes non-residents on (Albanian-source income, art. 4); permanent establishment; final withholding at 8% on dividends and 15% on interest, royalties, services and other payments to non-residents; how treaty rates are applied and documented (45 treaties in force); the foreign tax credit for residents; the tax representative; and leaving Albania (part-year return, exit tax on business assets). Trigger phrases: non-resident Albania, Albanian withholding tax, treaty Albania, double tax Albania, PE Albania, moving to or leaving Albania, foreign tax credit Albania. Out of scope: income tax rates and returns (albania-income-tax), corporate tax computation (al-corporate-tax), payroll (albania-payroll), social contributions (albania-social-contributions), VAT (albania-vat)."
-version: 0.1
+version: 0.2
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -214,8 +214,6 @@ expected:
 | General Directorate of Taxes, tax representative | https://tatime.gov.al/entitete/?artikull=perfaqesuesi-tatimor | 2026-10-23 |
 
 Not yet confirmed: the content and form of the treaty application documentation under the Minister's instruction (the "Annex 2" treaty form linked from tatime.gov.al returned an error page on 2026-10-23); whether a treaty rate may be applied at source without prior approval in every case, or only through the refund route for some treaties; whether art. 29(2) lets a non-resident parent receive dividends from an Albanian subsidiary free of withholding when it holds 10% for 24 months; how tax on a non-resident's gain from shares in an Albanian company, and on Albanian rent received by a non-resident individual, is collected (neither is in the art. 58(2) withholding list); the filing deadline for the part-year return on change of residence (art. 61(4) states no date); the rate on an individual trader's art. 47 gain (the Instruction's 15% example is a company); the treaty in force status and effective date for India (blank on the treaty list); the current quarter's late payment interest rate under Law 9920/2008 art. 76(3); treaty rates for treaties other than Italy.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

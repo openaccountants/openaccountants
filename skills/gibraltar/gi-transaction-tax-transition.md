@@ -6,7 +6,7 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-31
+last_updated: 2026-11-01
 version: "0.10"
 verified_by: pending
 sources:
@@ -40,9 +40,9 @@ sources:
   - url: "https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf"
     title: "Treaty Volume II: Annexes 18 and 24"
     as_of: "2026-10-28"
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -306,8 +306,6 @@ The preserved production, cost-floor and rate-sensitivity illustrations and the 
 ### Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

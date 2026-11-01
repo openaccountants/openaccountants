@@ -1,13 +1,13 @@
 ---
 name: hu-capital-and-rental-income
 description: "Hungarian personal income tax on capital income, rental income and the sale of real estate for private individuals, and the annual return (szja bevallás) and NAV's return proposal (bevallási tervezet), tax year 2026. Covers interest (65. §) and dividends (66. §) at 15%; the 13% social contribution tax (szocho) on them and the HUF 7,747,200 cap that applies to dividends but not interest, capital gains on securities (67. §), controlled capital market transactions (67/A. §) and their three-year loss offset, long-term investment accounts (TBSZ, 67/B. §: 0%, 10%, 15%), the NYESZ pension savings credit, rental income (16.-17. §) with the 10% flat cost or itemised costs and no szocho, real estate sales (62.-63. §) with the holding-period reduction, and the 20 May deadline. Triggers: kamatadó, osztalékadó, szocho kamat, TBSZ, NYESZ, árfolyamnyereség, lakáskiadás adó, ingatlan bérbeadás, ingatlaneladás adó, bevallási tervezet, szja bevallás. Out of scope: hu-income-tax (self-employed), hu-payroll (wages), hu-social-contributions, hu-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -214,8 +214,6 @@ expected:
 | NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-10-23 |
 
 Not yet confirmed: whether rental income, which bears no szocho, still counts towards the HUF 7,747,200 szocho cap. Szocho tv. 2. § (2) counts income under 1. § (1)-(3); rental income is consolidated-base income under 1. § (1), but 5. § (2) h) takes it out of the 1. § (1)-(3) liability, and neither the act, NAV information sheet 49 nor the 25SZJA guide (line 286) says whether exempt income still counts. Also not read: the depreciation rates for let property in the Szja tv. 11. számú melléklet and the cost list in the 3. számú melléklet; the definition of a tax-free NYESZ pension payout in the NYESZ act (2005. évi CLVI. törvény) and whether szocho applies to the other income from a non-pension NYESZ withdrawal.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

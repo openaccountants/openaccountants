@@ -1,49 +1,67 @@
 ---
 name: bw-company-formation
-description: "Source-cited draft: company formation & entity choice for Botswana (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Forming a business in Botswana: private, public, close, guarantee and external companies, business names, CIPA online fees, OBRS steps, annual returns and BURS registration. Use for setting up in Botswana.
+version: 1.0
 jurisdiction: BW
-tax_year: 2025
-last_updated: 2026-07-13
+category: orchestrator
+tax_year: 2026
+tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Botswana Company Formation & Entity Choice
+# Botswana Company Formation and Entity Choice v1.0
 
-## Common entity types
+> **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 
-- **Private company (Pty) Ltd** — Limited by shares; max 25 shareholders; minimum 1 director  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/types-of-entities)_
-- **Public company** — May offer shares to the public; higher disclosure and governance requirements  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/types-of-entities)_
-- **Business name / sole proprietorship** — Registered business name for an individual trader; not a separate legal entity  _(Registration of Business Names Act — https://www.cipa.co.bw/types-of-entities)_
-- **External (foreign) company / branch** — A foreign company carrying on business in Botswana registers as an external company with CIPA  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/types-of-entities)_
+Tax year: 2026-27 (1 July 2026 to 30 June 2027). The Income Tax Act, 2026, Tax Administration Act, 2026 and Value Added Tax Act, 2026 commenced on 1 July 2026 and replace the old Cap. 52:01 and Cap. 50:03 regimes.
 
-Entities are registered with the Companies and Intellectual Property Authority (CIPA) under the Companies Act. The most common vehicle for business is the private company limited by shares.
+## Entity types
 
-## Capital
+From CIPA ([archive 26 Sep 2026](https://web.archive.org/web/20260926061814/https://www.cipa.co.bw/selecting-and-reserving-an-entity-name)), under the Companies Act, 2003 (Cap. 42:01):
 
-Botswana company law does not impose a statutory minimum share capital for a private company; shares may be issued at a nominal value set by the founders.
+- Private company: up to 25 shareholders, at least 1 shareholder and 1 director, name ends (Proprietary) Limited.
+- Public company: any number of shareholders, name ends Limited, usually listed.
+- Close company: up to five individuals, no corporate members, not for banking or insurance, name ends CC.
+- Company limited by guarantee: no dividends.
+- Business name: a trading style, not a legal entity; it is you.
+- External company: a foreign company registering here.
 
-- **Minimum share capital** — No statutory minimum for a private company  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/frequently-asked-questions)_
+## Fees
 
-## Incorporation steps, cost and timeline
+| Item | Online | At CIPA | Source |
+|---|---|---|---|
+| Reserve company or business name | P20 | P60 | https://web.archive.org/web/20251014004157/https://www.cipa.co.bw/wp-content/uploads/2019/10/fees-for-frequently-used-services.pdf |
+| Register private, public or close company | P360 | P900 | same |
+| Register guarantee or external company | P4,600 | P6,000 | same |
+| Register business name | P150 | P450 | same |
+| Change company name | P1,000 | P1,500 | same |
 
-Incorporation is done through CIPA's Online Business Registration System (OBRS): reserve a name, file the incorporation documents, and receive a Certificate of Incorporation. Fees below are CIPA's published statutory fees.
+## Steps
 
-- **Name reservation** — Reserve a unique company name via CIPA OBRS — reserved for 30 days  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/selecting-and-reserving-an-entity-name)_
-- **Name reservation fee** — BWP 20 BWP BWP (approx — confirm current CIPA schedule)  _(CIPA Schedule of Fees — https://www.cipa.co.bw/wp-content/uploads/2019/10/fees-for-frequently-used-services.pdf)_
-- **Company registration fee** — BWP 360 BWP BWP (approx — confirm current CIPA schedule)  _(CIPA Schedule of Fees — https://www.cipa.co.bw/wp-content/uploads/2019/10/fees-for-frequently-used-services.pdf)_
-- **Incorporation timeline** — Name and application feedback typically within ~24 hours via OBRS; full incorporation commonly 1–3 weeks (approx — confirm)  _(CIPA Online Business Registration System — https://www.cipa.co.bw/)_
+1. On CIPA's Online Business Registration System, reserve the name.
+2. File incorporation details, including beneficial owners ([FAQ](https://web.archive.org/web/20230423011758/https://www.cipa.co.bw/frequently-asked-questions)).
+3. Pay by card, or by deposit at a CIPA office or First National Bank branch.
+4. Appoint a company secretary within three months of incorporation (same FAQ).
+5. Register with BURS on Form BURS 1, with certified Certificate of Incorporation and director forms ([BURS](https://www.burs.org.bw/index.php/tax/registration)). Beneficial ownership and biometric rules: TAA Regs regs 10, 11.
+6. Register for VAT if over the threshold in [VAT](bw-vat-gst.md).
+7. File the CIPA annual return in the incorporation month each year, or face de-registration and restoration fees (same FAQ).
 
-## Core annual compliance
+## Sources
 
-Companies must keep a constitution, file annual returns with CIPA, and meet tax registration and filing obligations. The Companies (Amendment) Act, 2025 added new constitution and licensed-secretary requirements.
+| Source | Link | Read |
+|---|---|---|
+| CIPA fees, archive copy of 14 Oct 2025 (cipa.co.bw returned 403 to fetch and browser) | https://web.archive.org/web/20251014004157/https://www.cipa.co.bw/wp-content/uploads/2019/10/fees-for-frequently-used-services.pdf | 2026-11-01 |
+| CIPA entity page, archive copy of 26 Sep 2026 | https://web.archive.org/web/20260926061814/https://www.cipa.co.bw/selecting-and-reserving-an-entity-name | 2026-11-01 |
+| CIPA FAQ, archive copy of 23 Apr 2023 | https://web.archive.org/web/20230423011758/https://www.cipa.co.bw/frequently-asked-questions | 2026-11-01 |
+| BURS Registration page, documents list only (page predates the 2026 Acts) | https://www.burs.org.bw/index.php/tax/registration | 2026-11-01 |
+| Tax Administration Act, 2026 (No. 14 of 2026), read: ss 14, 18, 27, 41, 98, 101 to 103; Regulations SI 90 regs 3, 4, 21, 28, 30, 33, 34 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=955:tax-administration-act-2026 | 2026-11-01 |
 
-- **CIPA annual return** — Companies must file an annual return with CIPA  _(Companies Act, 2003 (Cap. 42:01) — https://www.cipa.co.bw/frequently-asked-questions)_
-- **Company constitution** — All companies must adopt a formal constitution in the prescribed format; companies without one have 12 months to comply (Introduced by the Companies (Amendment) Act, 2025 — confirm commencement)  _(Companies (Amendment) Act, 2025 — https://www.brimco.io/business/understanding-the-botswana-companies-act-amendment-act-of-2025/)_
-- **Licensed company secretary** — Company secretaries must be licensed by the Registrar, to be met within 24 months of the Act's commencement (Companies (Amendment) Act, 2025 — confirm commencement)  _(Companies (Amendment) Act, 2025 — https://www.brimco.io/business/understanding-the-botswana-companies-act-amendment-act-of-2025/)_
-- **Tax registration** — Register with BURS for an income tax TIN and for VAT if turnover exceeds BWP 1,000,000 BWP BWP  _(Income Tax Act (Cap. 52:01) / Value Added Tax Act (Cap. 50:03) — https://www.burs.org.bw/)_
+Not yet confirmed: no statutory minimum capital (old file; FAQ page not showing it); the 30-day name reservation and 1 to 3 week timeline (old file, no page read); Companies (Amendment) Act, 2025 constitution and licensed-secretary requirements with 12 and 24 month windows (old file cited a private blog; Act not opened); current fees after October 2025.
 
 <!-- openaccountants-cta-block -->
 

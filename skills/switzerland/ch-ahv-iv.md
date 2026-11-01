@@ -1,10 +1,10 @@
 ---
 name: ch-ahv-iv
 description: "Swiss AHV/IV/EO social contributions of the self-employed and of non-employed persons for 2026. Covers who counts as self-employed, the full rate of 10.0% (AHV 8.1%, IV 1.4%, EO 0.5%) from CHF 60,500, the full sliding scale from CHF 10,100 (5.371%) and the minimum contribution of CHF 530, how the contribution income is found (tax assessment, add-back of own contributions, interest on own capital, rounding), provisional (Akonto) and final contributions, the allowance past reference age, 5% late interest, non-employed contributions by wealth (CHF 530 to 26,500), voluntary BVG and the pillar 3a limits for 2026 (CHF 7,258 / 20% up to CHF 36,288). Trigger on: AHV Selbständige, AHV/IV/EO self-employed, sinkende Beitragsskala, Akontobeiträge, Beitragsverfügung, Nichterwerbstätige AHV, Säule 3a Selbständige. Out of scope: ch-payroll (employees), ch-federal-income-tax and ch-cantonal-tax (the tax return), ch-cross-border (which country insures)."
-version: 2.1
+version: 2.2
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -262,8 +262,6 @@ expected:
 | ESTV, Kreisschreiben Nr. 18a, Steuerliche Behandlung von Vorsorgebeiträgen und -leistungen der Säule 3a, 22 December 2025 | https://www.estv.admin.ch/dam/de/sd-web/yQgKmvu80LEr/dbst-ks-2025-1-018a-dv-de.pdf | 2026-10-23 |
 
 Not yet confirmed: the interest rate on own capital for contribution year 2026 (published by the BSV in January 2027; example 2 assumes the 2025 rate of 1%); the minimum contribution and non-employed table for 2027 (only the 2027 sliding-scale limits were read); how the 13th AHV pension will be financed after 2026; each fund's administration cost rate (up to 5%); the EO part of each sliding-scale band (the sheet gives only the total; the IV part is in IVV art. 1bis); the split of the CHF 530 minimum between IV and EO for the self-employed (AHVG art. 8 para. 2 sets only the AHV part, CHF 435).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

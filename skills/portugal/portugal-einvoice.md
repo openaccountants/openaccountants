@@ -1,10 +1,10 @@
 ---
 name: portugal-einvoice
 description: "Utilize esta skill sempre que lhe forem colocadas questões sobre faturação eletrónica em Portugal em 2026: códigos ATCUD, comunicação mensal dos elementos das faturas (SAF-T(PT) até ao dia 5), código QR, software de faturação certificado pela AT (volume de negócios acima de EUR 50.000, uso de programa informático ou contabilidade organizada), aplicações de faturação da AT, portal e-fatura, faturas em PDF aceites até 31 de dezembro de 2026 e assinatura ou selo eletrónico qualificado a partir de 2027, faturação eletrónica nos contratos públicos (CCP art. 299.º-B, PME obrigadas a partir de 1 de janeiro de 2027), SAF-T da contabilidade (períodos de 2027, entregue em 2028), arquivo por 10 anos e coimas do RGIT. Fora do âmbito: taxas e declaração periódica de IVA (portugal-vat-return), IES e demonstrações financeiras (portugal-financial-statements), lançamentos (portugal-bookkeeping). LEIA SEMPRE esta skill antes de tocar em qualquer trabalho de conformidade de faturação em Portugal. Trigger also on: \"ATCUD\", \"SAF-T Portugal\", \"e-fatura\", \"QR code invoice\", \"certified software AT\", \"Peppol Portugal\", \"B2G e-invoice\", \"invoice hash chain\", \"Portaria 195/2020\", \"Decreto-Lei 28/2019\", \"PDF invoices Portugal 2027\", or \"Qualified Electronic Signature Portugal\"."
-version: 1.1
+version: 1.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -344,8 +344,6 @@ Not yet confirmed: whether the 2027 State Budget postpones again the end of PDF 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, Revisor Oficial de Contas, advogado fiscalista ou equivalente licenciado na sua jurisdição) antes de serem entregues ou utilizados como base para qualquer actuação.
 
 A versão mais atualizada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

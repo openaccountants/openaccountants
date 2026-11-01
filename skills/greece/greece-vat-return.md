@@ -12,10 +12,10 @@ description: >
   "Greek island VAT". Out of scope: e-invoicing and myDATA transmission (greece-einvoice), company
   set-up (gr-company-formation), income tax (gr-income-tax), the country overview (gr-tax-overview),
   cross-border income (gr-cross-border). gr-vat-return points here.
-version: 2.1
+version: 2.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -197,8 +197,6 @@ expected:
 | AADE press release 17.2.2026 (e-invoicing dates and fines) | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 
 Not yet confirmed: the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

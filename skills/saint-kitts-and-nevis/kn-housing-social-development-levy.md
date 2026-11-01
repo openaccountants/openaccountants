@@ -2,13 +2,13 @@
 name: kn-housing-social-development-levy
 description: >
   Saint Kitts and Nevis payroll levy reference checked for 2026. Covers the Housing and Social Development Levy exemption thresholds introduced in July 2025, the monthly employee calculation, employer contribution and worked boundary examples. Use for ordinary payroll levy deductions after the applicable wage base is established. Explains why the exemption threshold is not a tax-free allowance and why social security ceilings must not cap this levy. Separates historical December bonus relief from current ordinary payroll. Legislative amendment reconciliation, special payments and independent accountant review remain outstanding; this is a source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: KN
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -60,8 +60,6 @@ Maintain separate ledger lines for employee levy, employer levy, social security
 The Board's [18 December 2025 notice](https://socialsecurity.kn/press/treatment-of-bonus-paid-in-december-2/) specifically exempts December 2025 bonuses and extra salary payments from levy deductions. It does not establish December 2026 levy relief. Classify any December 2026 payment against the applicable legislation and a current notice before applying an exemption. Do not import the separate social-security bonus treatment automatically.
 
 This Guide does not settle nonstandard wage components, irregular payroll, statutory exemptions outside the stated cutoff, penalties or a December 2026 special measure. The amended levy legislation and any later instruments need reconciliation before merge. Independent accountant review is pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

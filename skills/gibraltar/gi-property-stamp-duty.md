@@ -6,7 +6,7 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-31
+last_updated: 2026-11-01
 version: "0.6"
 verified_by: pending
 sources:
@@ -19,9 +19,9 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf"
     title: "Stamp Duties Act 2005, sections 4A–4B, 11–16, 19–19C and Schedules 1–2; 23 December 2024 consolidation"
     as_of: "2026-10-22"
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -206,8 +206,6 @@ The dates below preserve the source reads recorded in the existing Guide. This s
 
 Not yet confirmed: Bill B05/2025 enactment/commencement; full relief/estate prescriptions, leases/gifts/indirect property/security categories, actual electronic certificate/payment, later interest notices, court procedure and case-specific liabilities remain unresolved. The country remains partial; this continuation does not grant professional attestation.
 
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
