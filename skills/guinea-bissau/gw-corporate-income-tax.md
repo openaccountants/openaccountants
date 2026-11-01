@@ -73,7 +73,7 @@ How to file the DCI-SMT (DGCI Instrução de Serviço 10/2022): get a Kontaktu l
 
 ## Penalties and interest
 
-Failure to declare start of activity or use of a false NIF: FCFA 250,000 (art. 61). Art. 62 sets a penalty of 25% of the minimum tax for group A and small group B. Late or missing DECIRF: FCFA 100,000 to 3,000,000 (Lei 8/2020 art. 8). Under the Imposto de Capitais code, unpaid or late withheld tax costs a fine equal to the tax, minimum FCFA 250,000 (art. 38); voluntary correction halves fines (art. 42). The 2026 budget text sets FCFA 25,000 to 750,000 for missing or unlogged books and for failure to ask for invoices.
+Failure to declare start of activity or use of a false NIF: FCFA 250,000 (art. 61). Art. 62 sets a penalty of 25% of the minimum tax for group A and small group B. Late or missing DECIRF: FCFA 100,000 to 3,000,000 (Lei 8/2020 art. 8). For the import and invoice advance, Lei 6-A/95 art. 5-A sets FCFA 150,000 for a late or missing DECIRF, 20% of the tax not withheld, and FCFA 300,000 for late or missing payment, doubled on the first repeat and tripled on the second. Under the Imposto de Capitais code, unpaid or late withheld tax costs a fine equal to the tax, minimum FCFA 250,000 (art. 38); voluntary correction halves fines (art. 42). The 2026 budget text sets FCFA 25,000 to 750,000 for missing or unlogged books and for failure to ask for invoices.
 
 ## Cross-border points
 
@@ -96,7 +96,7 @@ expected:
   total: 5400000
 ```
 
-Decision: thin margin, or restructure? Turnover FCFA 500,000,000 and profit 4,000,000: 25% is 1,000,000 but the minimum is 5,000,000, so the effective rate on profit is 125%. Any profit under FCFA 20,000,000 at this turnover pays the same CI, so extra cost cuts no tax until profit passes that line.
+Decision: thin margin, or restructure? Turnover FCFA 500,000,000 and profit 4,000,000: 25% is 1,000,000 but the minimum is 5,000,000, so the effective rate on profit is 125%. Any profit under FCFA 20,000,000 at this turnover pays the same CI, so extra cost cuts no Contribuição Industrial until profit passes that line; only the derrama falls.
 
 ```oa-check
 name: Minimum tax bites

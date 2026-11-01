@@ -23,6 +23,7 @@ Guinea-Bissau is an OHADA member, so company law follows the OHADA Uniform Act o
 | Foreign branch | Possible; conversion period | unverified |
 | SARL minimum capital | unverified: old skill said no fixed minimum, often XOF 1,000,000 | unverified |
 | SA minimum capital | unverified: old skill said XOF 10,000,000 | unverified |
+| Annual financial statements | unverified: old skill said OHADA SYSCOHADA framework | unverified |
 | One-stop shop, Centro de Formalização de Empresas | unverified: steps, 1 to 3 week timing, fees | unverified |
 
 ## Tax steps after formation
@@ -54,7 +55,7 @@ expected:
   ci: 800000
 ```
 
-The same company charges IVA, as forecast turnover passes FCFA 40,000,000. A month of FCFA 6,000,000 sales with FCFA 300,000 input IVA: 1,140,000 less 300,000 = 840,000.
+The same company charges IVA once the tax administration confirms the forecast, as it passes FCFA 40,000,000 (Código do IVA art. 37(3)). A month of FCFA 6,000,000 sales with FCFA 300,000 input IVA: 1,140,000 less 300,000 = 840,000.
 
 ```oa-check
 name: First IVA month

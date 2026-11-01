@@ -25,6 +25,8 @@ IVA replaced the IGV. The Código do IVA is Lei 4/2022, and Despacho 130/GMF/202
 | Simplified | FCFA 10,000,000 up to 40,000,000 | 5% of sales, no deduction, file quarterly |
 | Small taxpayer | Under FCFA 10,000,000 | Exempt from IVA; single small-taxpayer tax set by separate law |
 
+A new business uses its forecast for the current year, once the tax administration confirms it (art. 37(3)). A period shorter than a year is annualised (art. 37(4)). Turnover excludes IVA and sales of capital goods (art. 37(5)). A small taxpayer moves up when the threshold is passed in two consecutive years, or in one year by more than 25% (art. 45(2)). The 5% does not apply to sales of used capital goods (art. 38(2)).
+
 ## Rates, bands and thresholds
 
 | Item | Rate or amount | Tax year | Official URL |
@@ -65,7 +67,7 @@ Excess credits carry forward. After 12 months, a credit above FCFA 1,000,000 can
 | Simplified return and payment | Last working day of April, July, October, January, even if nil | art. 42 |
 | Simplified records | Within 30 days of receipt | art. 40 |
 
-How to file a monthly return: use the model approved by the DGCI at the tax office or authorised bank (art. 31). Report output IVA by rate, exempt sales, and deductible input IVA, then pay by the same date. We could not confirm the box numbers or an electronic IVA form on Kontaktu; the portal's published form is the older IGV return. Simplified invoices must read "IVA Simplificado – Não confere direito à dedução" (art. 39).
+How to file a monthly return: use the model approved by the DGCI at the tax office or authorised bank (art. 31). Report output IVA by rate, exempt sales, and deductible input IVA, then pay by the same date. We could not confirm the box numbers or an electronic IVA form on Kontaktu; the portal's published form is the older IGV return. Invoices are issued online on Kontaktu, by the taxpayer's own software, or printed by a DGCI-approved printer (Despacho MF 1/2023 art. 15). Simplified invoices must read "IVA Simplificado – Não confere direito à dedução" (art. 39).
 
 ## Penalties and interest
 
