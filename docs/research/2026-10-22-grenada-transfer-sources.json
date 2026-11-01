@@ -1,0 +1,72 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap257C-PROPERTY-TRANSFER-TAX-ACT.pdf",
+      "bytes": 156445,
+      "sha256": "28f22376613f369390fd69dee8a0bec9a70f6b58d182c212301aa3dea1ea130f"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf",
+      "bytes": 300535,
+      "sha256": "a3ea42326bd2acffa7b3d26d3ad09db49d916e2635c22e8fa3b7e4c7a31f6c7c"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-23-of-2015-Property-Transfer-Tax-Amendment.pdf",
+      "bytes": 276173,
+      "sha256": "0ceae99f5a87861d2d846e6a8f5992af98904cc6c1ae1153fc2ab18579033ff1"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf",
+      "bytes": 191824,
+      "sha256": "d23e0513028f89fecdac0baae2da081b79858053c792d5cb6485a9f777fbddde"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-32-of-2016-Investment-Priority-Sectors-Regulations.pdf",
+      "bytes": 97705,
+      "sha256": "2f10121e5222a8419e017ec3f54fcd98d639d086c59906cddef71a99ab62442f"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-42-of-2014-Investment-Act.pdf",
+      "bytes": 389996,
+      "sha256": "5d78a65970a07cfade0f01387164b204d736926065e0830a21cb6638e446b23a"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-7-of-2016-Investment-Amendment-1.pdf",
+      "bytes": 263956,
+      "sha256": "5c146a386222f80f1f401158394b4ff7d14507d79e2d49baec69f046e39f3612"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-31-of-2016-Proclamation.pdf",
+      "bytes": 38310,
+      "sha256": "998899845c8bb23d5640a8735a109d135a33ce19bbc0d2c7088817b7619ebb91"
+    }
+  ],
+  "corroboration": {
+    "url": "https://ird.gd/taxes/property-transfer-tax",
+    "access": "official indexed text; no local capture/hash claimed"
+  },
+  "review_status": "independent review pending",
+  "gaps": [
+    "Later amendments and current approval procedure; regulation 5 medical professional-cost interaction",
+    "Tourism/investment approvals and concession computation",
+    "Noncitizen gift-recipient threshold treatment above EC$150000",
+    "Current forms, regional citizenship exceptions and closing process"
+  ],
+  "commencement_search": {
+    "url": "https://tile.loc.gov/storage-services/service/ll/llflg/20/13/21/76/48/_2/01/60/42/7_/01/2013217648_20160427_01/2013217648_20160427_01.pdf",
+    "finding": "Gazette notice lists SRO 27 of 2016 but this two-page capture does not contain its operative commencement text; effective date not inferred. Resolved subsequently by the actual Parliament-hosted SRO 27 of 2016, section 2: Act 9 of 2016 commenced 1 May 2016."
+  },
+  "commencement_verified": {
+    "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf",
+    "effective_date": "2016-05-01",
+    "provision": "Section 2, Act 9 of 2016"
+  },
+  "investment_framework": {
+    "original_act_commencement": "2016-04-29",
+    "authority": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-31-of-2016-Proclamation.pdf",
+    "amending_act_printed_commencement": "2016-04-15",
+    "amending_act": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-7-of-2016-Investment-Amendment-1.pdf",
+    "priority_regulations_commencement": "2016-05-01"
+  }
+}
