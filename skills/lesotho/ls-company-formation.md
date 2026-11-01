@@ -55,7 +55,7 @@ Not stated on the page read. See ls-income-tax and ls-vat-gst for tax penalties.
 
 ## Cross-border points
 
-A foreign company registers as an external company with its foreign certificate of incorporation. A Lesotho branch pays 25% on repatriated income as well as income tax (see ls-corporate-income-tax).
+LNDC classes a company owned 100% by local shareholders as internal and one owned 100% by foreign shareholders as external. Shareholders can be people or companies. An external company files with its foreign certificate of incorporation. A Lesotho branch of a non-resident company pays 25% on repatriated income as well as income tax (see ls-corporate-income-tax). Unverified: how mixed ownership is classed, and whether an external company is taxed as a branch; the Companies Act was not read.
 
 ## Two worked examples that recompute
 
@@ -72,7 +72,7 @@ expected:
   total: 530.00
 ```
 
-Example 2, a decision: an external company costs M500 more in fees than a local one: M1,030 against M530. Weigh this with branch tax on repatriated income.
+Example 2, a decision: an external company costs M500 more in fees than a local one: M1,030 against M530.
 
 ```oa-check
 name: External against internal
