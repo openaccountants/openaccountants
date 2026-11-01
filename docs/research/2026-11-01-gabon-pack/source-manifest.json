@@ -1,0 +1,82 @@
+[
+  {
+    "id": "CGI",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "file": "cgi-2025.pdf",
+    "sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "hash_kind": "downloaded original bytes",
+    "status": "historical baseline"
+  },
+  {
+    "id": "LF",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "file": "lf-2026.pdf",
+    "sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification"
+  },
+  {
+    "id": "LFR",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "file": "lfr-2026.pdf",
+    "sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification"
+  },
+  {
+    "id": "OHADA",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "file": "auscgie-2014.pdf",
+    "sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "hash_kind": "downloaded original bytes",
+    "status": "historical baseline"
+  },
+  {
+    "id": "CNSS",
+    "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "file": "cnss-decree.html",
+    "sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read heading, recitals and full decree0487/PR/MASI arts1-5, signature/date. Gazette issue heading29November2025 conflicts with decree18December2025; retained as source-quality issue.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification"
+  },
+  {
+    "id": "CNAMGS",
+    "official_url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "file": "cnamgs.html",
+    "sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read employer page sections assessment/base, cap, private/public rates, declaration/payment steps, quarterly schedule and late declaration/payment sections. Page undated; underlying decree not independently obtained.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification"
+  },
+  {
+    "id": "ANPI",
+    "official_url": "https://www.investingabon.ga/formalisation",
+    "file": "anpi.html",
+    "sha256": "1d3282a10d05ac997523b385e2019251ff58a34e7f9891bde894c8621c5f08aa",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read dossier/licensing sections and entire displayed10-step creation circuit. Linked downloadable dossier/guide returns same page. No authenticated creation submission or fee schedule inspected.",
+    "hash_kind": "downloaded original bytes",
+    "status": "read primary source; no blanket current-law certification"
+  },
+  {
+    "id": "CNSSPOST",
+    "official_url": "https://fr.linkedin.com/posts/cnss-gabon_cnssemployeur-cnsstravailleur-cnsspluspr%C3%A8sdevous-activity-7416830583407910912-XCKD",
+    "file": "cnss-announcement-read-excerpt.txt",
+    "sha256": "e59d658bb289dcb8acabba463eada3c2aaf33a394ed8fe6b413ee7f934f3354e",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Read CNSS organization announcement opening paragraphs through first DTS date; issuer social-account primary announcement, not a decree. This cache is a transcribed read excerpt, not original HTML. Comments not relied upon.",
+    "hash_kind": "transcribed read excerpt",
+    "status": "read primary source; no blanket current-law certification"
+  }
+]

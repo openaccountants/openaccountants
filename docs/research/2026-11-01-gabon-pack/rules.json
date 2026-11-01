@@ -1,0 +1,1838 @@
+[
+  {
+    "id": "C-SCOPE",
+    "source": "CGI",
+    "act_article": "CGI art7-I",
+    "exact_original_language_quote": "les bénéfices imposables sont les bénéfices réalisés par les entreprises exploitées ou sur les opérations réalisées au Gabon",
+    "rule": "Corporate source rule is subject to conventions; residence includes registration or effective management; nonresident PE profits and connected similar activity fall within art7-I.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 5,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Who this applies to"
+      ],
+      "ga-cross-border": [
+        "Who this applies to"
+      ],
+      "ga-tax-overview": [
+        "Who this applies to"
+      ]
+    }
+  },
+  {
+    "id": "C-BASE",
+    "source": "CGI",
+    "act_article": "CGI art8",
+    "exact_original_language_quote": "Le bénéfice imposable est le bénéfice net déterminé",
+    "rule": "Compute net business profit including asset disposal gains; reconcile accounts to tax, do not tax gross receipts at the corporate rate.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 8,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "C-DEDUCT",
+    "source": "LF",
+    "act_article": "LF041/2025 art4 replacing CGI art11",
+    "exact_original_language_quote": "être exposés dans l'intérêt direct de l'exploitation",
+    "rule": "Deductibility requires business interest, actual justified charge, net asset reduction, correct year and no statutory exclusion or abnormal management; electronic invoice condition introduced with six-month customs-document exception from promulgation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "read_scope": "Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used.",
+    "pdf_page_1_based": 3,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "C-INVOICE",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art11bis",
+    "exact_original_language_quote": "être appuyés de factures électroniques normalisées ou de documents en tenant lieu, admis par voie règlementaire.",
+    "rule": "July wording permits normalized e-invoices or regulatory substitutes; implementation and date-specific substitute eligibility remain a filing hold.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 2,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "C-LOSS",
+    "source": "CGI",
+    "act_article": "CGI art11-IV",
+    "exact_original_language_quote": "jusqu’au cinquième exercice qui suit l’exercice déficitaire",
+    "rule": "Carry deficits forward through fifth following year, only up to future profit; exempt-activity losses excluded, partially exempt losses separated, reduced-rate-year losses proportioned by rates.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 16,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "C-YEAR",
+    "source": "CGI",
+    "act_article": "CGI art15",
+    "exact_original_language_quote": "douze mois correspondant à l’exercice budgétaire, c’est-à-dire l’année civile",
+    "rule": "Calendar-year corporate period; new business commencing in final six months can close first balance sheet at end of following budget year.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 23,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Deadlines and filing"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "C-RATE",
+    "source": "CGI",
+    "act_article": "CGI art16",
+    "exact_original_language_quote": "Le taux est fixé à 30 %.",
+    "rule": "Ordinary corporate rate30%; taxable profit rounded down to XAF1000.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 23,
+    "additional_exact_quotes": [
+      "arrondi au millier FCFA inférieur."
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "C-SECTOR",
+    "source": "CGI",
+    "act_article": "CGI art16",
+    "exact_original_language_quote": "Ce taux est porté à 35 % pour les entreprises du secteur pétrolier et minier.",
+    "rule": "Oil/mining statutory headline rate35%; specialized sector regime/contracts not covered.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 24,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds"
+      ],
+      "ga-tax-overview": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "C-RETURN",
+    "source": "CGI",
+    "act_article": "CGI art20",
+    "exact_original_language_quote": "avant le 30 avril de l’année suivante",
+    "rule": "Annual results declaration before30April following year, two copies and acknowledged receipt; current DSF attachments and portal boxes not verified.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 24,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Deadlines and filing"
+      ],
+      "ga-tax-overview": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "C-INSTAL",
+    "source": "CGI",
+    "act_article": "CGI art21",
+    "exact_original_language_quote": "Le premier est égal au quart, le deuxième au tiers",
+    "rule": "First instalment one quarter and second one third of previous-year tax;30November and30January, balance by30April. Reduction needs special declaration; inaccuracy over one tenth triggers sanctions.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 25,
+    "additional_exact_quotes": [
+      "le 30 novembre et le 30 janvier.",
+      "le 30 avril au plus tard."
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "C-MIN",
+    "source": "CGI",
+    "act_article": "CGI arts24-25",
+    "exact_original_language_quote": "1 % à la base de référence",
+    "rule": "Corporate liability floor greater of1% reference turnover and XAF500000; turnover includes business operations and miscellaneous/financial/FX/nonordinary products; floor base rounded down XAF1000.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 26,
+    "additional_exact_quotes": [
+      "500.000 FCFA correspondant au minimum de perception.",
+      "La base ainsi obtenue est arrondie au millier FCFA inférieur."
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds"
+      ],
+      "ga-tax-overview": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "C-RELIEF",
+    "source": "CGI",
+    "act_article": "CGI art26",
+    "exact_original_language_quote": "au titre des deux premiers exercices en cas de déficit",
+    "rule": "Minimum-tax relief for qualifying newly registered companies, two deficit years, qualifying PME/PMI three years; excluded old business/relabeling and late registration conditions must be tested, not assumed.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 27,
+    "additional_exact_quotes": [
+      "la durée d’exonération est de trois ans pour les PME/PMI",
+      "au moins deux ans avant leur immatriculation."
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "C-BOOKS",
+    "source": "CGI",
+    "act_article": "CGI art17",
+    "exact_original_language_quote": "suivant le système comptable OHADA",
+    "rule": "Industrial/commercial businesses keep OHADA accounts; sector accounts and analytical-accounting requisition exceptions exist.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 24,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Deadlines and filing"
+      ],
+      "ga-company-formation": [
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "I-SCOPE",
+    "source": "CGI",
+    "act_article": "CGI art74",
+    "exact_original_language_quote": "ou y ayant séjourné au moins 183 jours dans l’année",
+    "rule": "IRPP habitual residence OR183days, home/main stay/centre of interests or business, not days alone; abroad resident Gabon-source income included, subject treaties.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 35,
+    "additional_exact_quotes": [
+      "une résidence habituelle au Gabon",
+      "pour leurs revenus ayant leur origine au Gabon"
+    ],
+    "guide_sections": {
+      "ga-income-tax": [
+        "Who this applies to"
+      ],
+      "ga-cross-border": [
+        "Who this applies to"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds",
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "I-WORLD",
+    "source": "CGI",
+    "act_article": "CGI art162",
+    "exact_original_language_quote": "sans qu’il y ait lieu de distinguer que ces revenus ont leur source au Gabon ou hors du Gabon",
+    "rule": "Resident net global categories aggregate domestic and foreign income subject to conventions; old territorial blanket statement is unsafe.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 58,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Who this applies to"
+      ],
+      "ga-cross-border": [
+        "Who this applies to"
+      ],
+      "ga-tax-overview": [
+        "Who this applies to",
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "I-HOUSE",
+    "source": "CGI",
+    "act_article": "CGI arts75-79",
+    "exact_original_language_quote": "le contribuable peut demander des impositions distinctes pour ses enfants",
+    "rule": "Household taxation with separate assessment conditions for spouses and own-income children; special polygamous/death/partnership cases not interchangeable.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 35,
+    "guide_sections": {
+      "ga-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "I-ROUND",
+    "source": "CGI",
+    "act_article": "CGI art168",
+    "exact_original_language_quote": "arrondi au millier de francs CFA inférieur",
+    "rule": "Round taxable annual income down XAF1000, divide by family shares, apply one-share schedule then multiply; subtract source deductions and applicable credits.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 60,
+    "guide_sections": {
+      "ga-income-tax": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "I-SHARES",
+    "source": "CGI",
+    "act_article": "CGI art170",
+    "exact_original_language_quote": "célibataire, divorcé ou veuf sans enfant à charge : 1",
+    "rule": "Ordinary single/no dependants1share, married/no child2; married1child2.5,2children3,3children3.5, then0.5 per child up to6; extra shares and dependent rules in171-173 must be checked.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 61,
+    "additional_exact_quotes": [
+      "marié sans enfant à charge, célibataire ou divorcé ayant un enfant à charge : 2",
+      "dans la limite de six enfants."
+    ],
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "I-BANDS",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "11.000.001 FCFA et plus",
+    "rule": "One-share annual schedule:0-1500000zero; to1920000=5%Q-75000; to2700000=10%Q-171000; to3600000=15%Q-306000; to5160000=20%Q-486000; to7500000=25%Q-744000; to11000000=30%Q-1119000; above=35%Q-1669000.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "I-BASE",
+    "source": "CGI",
+    "act_article": "CGI art92",
+    "exact_original_language_quote": "après déduction des retenues de cotisations sociales obligatoires",
+    "rule": "Salary base includes cash and in-kind benefits net of mandatory pension/health deductions and qualifying main-home acquisition contributions limited XAF500000/month for5years; not a universal gross-salary percentage.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 41,
+    "guide_sections": {
+      "ga-income-tax": [
+        "The base"
+      ],
+      "ga-payroll-social": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "I-FEES",
+    "source": "CGI",
+    "act_article": "CGI art94",
+    "exact_original_language_quote": "les frais professionnels évalués forfaitairement à 20 %, mais limités à 10.000.000 FCFA",
+    "rule": "Ordinary annual professional expense deduction20% capped XAF10000000 conditional timely declaration before relance/miseendemeure; parliamentary/minister25% and actual-expense proof exceptions.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 41,
+    "additional_exact_quotes": [
+      "L’abattement forfaitaire de 20 % s’applique lorsque les revenus perçus ont été déclarés",
+      "les indemnités allouées aux parlementaires et aux Ministres."
+    ],
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds",
+        "The base"
+      ],
+      "ga-payroll-social": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "I-RETURN",
+    "source": "CGI",
+    "act_article": "CGI art167",
+    "exact_original_language_quote": "avant le 1er mars de l’année",
+    "rule": "General IRPP return before1March following year; simplified/real professional income under128-133 before30April with results declaration; current forms and withholding-only filing exceptions not established.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 60,
+    "additional_exact_quotes": [
+      "avant le 30 avril de l’année qui suit celle de la réalisation de ces revenus"
+    ],
+    "guide_sections": {
+      "ga-income-tax": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "I-MIN",
+    "source": "CGI",
+    "act_article": "CGI arts175-175bis",
+    "exact_original_language_quote": "Les contribuables soumis à l’impôt synthétique libératoire sont exonérés",
+    "rule": "Professional-category global IRPP has1% turnover/XAF500000minimum; impôt synthétique libératoire excluded, new sole businesses first2deficit years with late-registration restriction.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "additional_exact_quotes": [
+      "taux de 1 %",
+      "à la somme de 500.000 FCFA",
+      "au titre des deux premiers exercices en cas de déficit"
+    ],
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-RENT",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art178bis",
+    "exact_original_language_quote": "Il est perçu au taux de 5% du montant des loyers imposables.",
+    "rule": "July rental withholding5% taxable rent; no withholding if landlord liable to IS in Gabon; LFI10% is earlier wording and date-specific transition unresolved.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 3,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "P-WITHHOLD",
+    "source": "CGI",
+    "act_article": "CGI arts95-96",
+    "exact_original_language_quote": "dans les quinze premiers jours du mois suivant",
+    "rule": "Employer salary IRPP withholding remitted first15days next month with authority return/receipt; supplied foreign staff6months and unspecified salary allocation use special art95 rules.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 42,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Deadlines and filing",
+        "Cross-border points"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "P-TCS",
+    "source": "CGI",
+    "act_article": "CGI arts346-351",
+    "exact_original_language_quote": "La part de revenu inférieure ou égale à 150.000 FCFA par mois est exonérée",
+    "rule": "TCS5% on art92net salary base after monthly XAF150000exempt slice; listed performance/annual bonuses exempt up to XAF4000000annual aggregate; monthly withholding, deductible from gross income for IRPP under351.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 120,
+    "additional_exact_quotes": [
+      "Le taux de la taxe complémentaire sur les traitements et salaires est fixé à 5 %.",
+      "dans la limite annuelle et globale de 4.000.000 FCFA."
+    ],
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "P-CNSS",
+    "source": "CNSS",
+    "act_article": "Decree0487/PR/MASI arts2-4",
+    "exact_original_language_quote": "Assurance vieillesse, invalidité et décès: 16%, soit 11% part employeur et 5% part travailleur.",
+    "rule": "CNSS family/maternity5%, occupational2%, pension16%(11%employer5%worker); employer total18%, worker5%; remuneration incl benefits excludes expenses/social benefits; XAF1500000monthly cap.",
+    "read_on": "2026-11-01",
+    "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "read_scope": "Read heading, recitals and full decree0487/PR/MASI arts1-5, signature/date. Gazette issue heading29November2025 conflicts with decree18December2025; retained as source-quality issue.",
+    "pdf_page_1_based": null,
+    "additional_exact_quotes": [
+      "y compris les indemnités, primes et gratifications, commissions",
+      "à l'exclusion des remboursements de frais et des prestations sociales."
+    ],
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "P-START",
+    "source": "CNSSPOST",
+    "act_article": "CNSS official announcement, opening paragraphs",
+    "exact_original_language_quote": "Date d’effet : Depuis le 1er janvier 2026.",
+    "rule": "CNSS states new rates effective1January2026 and first DTS30April2026; statutory decree page has conflicting issue/decree dates, resolve original gazette before filing.",
+    "read_on": "2026-11-01",
+    "official_url": "https://fr.linkedin.com/posts/cnss-gabon_cnssemployeur-cnsstravailleur-cnsspluspr%C3%A8sdevous-activity-7416830583407910912-XCKD",
+    "source_sha256": "e59d658bb289dcb8acabba463eada3c2aaf33a394ed8fe6b413ee7f934f3354e",
+    "read_scope": "Read CNSS organization announcement opening paragraphs through first DTS date; issuer social-account primary announcement, not a decree. This cache is a transcribed read excerpt, not original HTML. Comments not relied upon.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Who this applies to",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "P-HEALTH",
+    "source": "CNAMGS",
+    "act_article": "CNAMGS employer page, assessment and private-sector rates",
+    "exact_original_language_quote": "Cotisations patronales : 4,1%",
+    "rule": "Published private health employer4.1% worker2%, monthly capXAF2500000 on IRPP elements; public rates different. Underlying decree/effective-version chain not independently checked.",
+    "read_on": "2026-11-01",
+    "official_url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "read_scope": "Read employer page sections assessment/base, cap, private/public rates, declaration/payment steps, quarterly schedule and late declaration/payment sections. Page undated; underlying decree not independently obtained.",
+    "pdf_page_1_based": null,
+    "additional_exact_quotes": [
+      "Assiette des éléments imposables à l’Impôt sur le Revenu des Personnes Physiques (IRPP)"
+    ],
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "P-HEALTHFILE",
+    "source": "CNAMGS",
+    "act_article": "CNAMGS employer page, declaration/payment and schedule",
+    "exact_original_language_quote": "Déclaration Trimestrielle des Rémunérations",
+    "rule": "Published workflow: use DTR file on e-CNAMGS, credentials from registration/recovery directorate, declare then bank payment/proof. Quarterly schedule ends30April,31July,31October,31January; current authenticated screens not inspected.",
+    "read_on": "2026-11-01",
+    "official_url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "read_scope": "Read employer page sections assessment/base, cap, private/public rates, declaration/payment steps, quarterly schedule and late declaration/payment sections. Page undated; underlying decree not independently obtained.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "P-HOUSING",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI arts401-404bis",
+    "exact_original_language_quote": "Le taux du prélèvement pour le Fonds National de l’Habitat est fixé à 3%.",
+    "rule": "Housing fund3% on CNSS-family/accident salary base within CNSS cap, public employers excluding State and CNSS-private employers; same salary withholding filing/payment, effective period must be resolved for2026.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 10,
+    "additional_exact_quotes": [
+      "à l’exception de l’Etat",
+      "dans la limite du plafond fixé"
+    ],
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-CAR",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art91bis",
+    "exact_original_language_quote": "dans la limite de 100.000 FCFA par mois.",
+    "rule": "Car allowance exemption up toXAF100000monthly only own vehicle used professionally and no employer-provided/maintained vehicle; precise midyear application hold.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 3,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-SCOPE",
+    "source": "CGI",
+    "act_article": "CGI arts207-209",
+    "exact_original_language_quote": "si leur chiffre d’affaires hors taxes est supérieur ou égal à 60.000.000 FCFA.",
+    "rule": "Independent economic taxable activities; ordinary domestic threshold XAF60000000, forestry XAF500000000. Below threshold remains2years; voluntary option only eligible legal persons on express request and other conditions208bis.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 73,
+    "additional_exact_quotes": [
+      "restent assujettis à la TVA sur une période de 2 ans.",
+      "être une personne morale"
+    ],
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Who this applies to"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-NONRES",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art208ter",
+    "exact_original_language_quote": "quel que soit leur chiffre d’affaires réalisé au Gabon.",
+    "rule": "Nonresident taxable persons liable regardless Gabon turnover; exact July implementation period not assumed.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 4,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Who this applies to",
+        "Rates, bands and thresholds"
+      ],
+      "ga-cross-border": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "V-BASE",
+    "source": "CGI",
+    "act_article": "CGI arts212-220",
+    "exact_original_language_quote": "La base d’imposition est arrondie au millier de francs CFA inférieur.",
+    "rule": "Sales delivery/import consumption/services payment timing with debit authorization exception. Consideration excludes CSS/VAT; import value plus duty/excise; round taxable base XAF1000down.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 82,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-RATESLF",
+    "source": "LF",
+    "act_article": "LF041/2025 art4, CGI art221",
+    "exact_original_language_quote": "Taux normal : 18%",
+    "rule": "LFI ordinary18%, listed10%/5%/zero categories; specific item lists replaced or extended inJuly. Do not apply lower rates by general product similarity.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "read_scope": "Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used.",
+    "pdf_page_1_based": 6,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-RATESLFR",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art221",
+    "exact_original_language_quote": "fer à béton fabriqué au Gabon.",
+    "rule": "July18%standard,10%specified auto parts/axles/tiles/nails,5%imported newspapers/magazines and mineral water,3%locallymade rebar,zeroexports/international transport and listed aircraft/ship work, plus qualifying foreign-place services. Le reste sans changement preserves unreplaced wording; full item reconciliation held.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-EXEMPT",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art210",
+    "exact_original_language_quote": "L’importation et la commercialisation des véhicules électriques.",
+    "rule": "July exemptions include listed foods/materials, natural mineral water produced inGabon, electric vehicles; industrial fishing diesel conditional authorization/current license/compliance and active collectivity membership fornonGabonese. Exemption differs from zero rating.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 5,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-INPUT",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI arts222-224",
+    "exact_original_language_quote": "ou tout document en tenant lieu admis par voie règlementaire.",
+    "rule": "Input supported by normalized e-invoice or regulatory substitute; supplier-exigibility rule, omitted credit12months; new registrant inventory only acquired in registrationyear, fixedassets not credited; statutory excluded charges no credit.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "additional_exact_quotes": [
+      "jusqu’au douzième mois",
+      "lorsque la taxe devient exigible chez le fournisseur.",
+      "au cours de l’exercice d’assujettissement."
+    ],
+    "guide_sections": {
+      "ga-vat-gst": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-PRORATA",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art227",
+    "exact_original_language_quote": "Si le prorata est inférieur ou égal à 10%, aucune déduction n’est admise",
+    "rule": "July prorata <=10%no deduction; >90%full; strictly between10and90 actual ratio. Text leaves exact90% boundary unresolved; do not infer it.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "additional_exact_quotes": [
+      "s’il est supérieur à 90%, l’intégralité du droit à déduction peut être exercée.",
+      "supérieur à 10% et inférieur à 90%"
+    ],
+    "guide_sections": {
+      "ga-vat-gst": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "V-FILE",
+    "source": "CGI",
+    "act_article": "CGI art237",
+    "exact_original_language_quote": "au plus tard le 20 du mois suivant",
+    "rule": "Ordinary monthly VAT declaration/payment by20next month with input/output schedules; nil return stillrequired, exporters include customs references.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 87,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Deadlines and filing"
+      ],
+      "ga-tax-overview": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "V-RC",
+    "source": "CGI",
+    "act_article": "CGI art240",
+    "exact_original_language_quote": "doit être payée par la personne cliente pour le compte",
+    "rule": "Client pays nonresident VAT withheld for supplier withoutPE/professional installation; July simplifieddigital regime must be considered before applying this mechanically.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 88,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "V-DIGITAL",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI arts248septies-248nonies",
+    "exact_original_language_quote": "dans les vingt premiers jours suivant chaque trimestre",
+    "rule": "Eligible nonresident digital supplier/platform without accredited solvent representative can opt simplified registration/quarterly filing20days, no Gaboninput credit, BEAC lastday monthlyFX, CSS also simplified; VATregistration alone creates noPE.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 9,
+    "additional_exact_quotes": [
+      "ne disposent pas du droit à déduction de la TVA",
+      "n’est pas susceptible de constituer un établissement stable",
+      "au dernier jour du mois fiscal concerné"
+    ],
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Deadlines and filing",
+        "Cross-border points"
+      ],
+      "ga-cross-border": [
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "V-CSS",
+    "source": "CGI",
+    "act_article": "TFNC section7 CSS arts13-27",
+    "exact_original_language_quote": "Le taux de la CSS est de 1 %",
+    "rule": "CSS ordinary annual turnover threshold XAF 30000000; 1% separate base excludes VAT/CSS; article 17/24 exemptions include exports and international transport. Ordinary payment by the twentieth monthly; nonresident representative/client and July digital rules separately tested.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 265,
+    "additional_exact_quotes": [
+      "au plus tard le 20 de chaque mois",
+      "à l’exclusion de la TVA et de la CSS elle-même."
+    ],
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "X-WHT",
+    "source": "CGI",
+    "act_article": "CGI art206",
+    "exact_original_language_quote": "Le taux de la retenue à la source est fixé à 25 %",
+    "rule": "Covered article206 payments:25% of gross excluding turnover taxes; Gabon debtor, nonresident recipient without professional permanent installation; remittance first15days next month.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 72,
+    "additional_exact_quotes": [
+      "dans les quinze premiers jours du mois qui suit le paiement"
+    ],
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "X-DIV",
+    "source": "CGI",
+    "act_article": "CGI arts108-111",
+    "exact_original_language_quote": "dont le taux est fixé à 20 %",
+    "rule": "Ordinary movable-capital levy20%, with payment/account-credit trigger; specified instrument exceptions and30day payer remittance.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 46,
+    "additional_exact_quotes": [
+      "dans les trente jours qui suivent la mise en paiement",
+      "au taux de 15 %.",
+      "prélèvement libératoire au taux de 10 %"
+    ],
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "X-OCAM",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art7",
+    "exact_original_language_quote": "A compter du 1er janvier 2026",
+    "rule": "OCAM convention ceases effects in Gabon from1January2026; valid other treaties and pre2026 established facts are distinguished.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 16,
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "Cross-border points"
+      ],
+      "ga-tax-overview": [
+        "Rates, bands and thresholds",
+        "Cross-border points"
+      ]
+    }
+  },
+  {
+    "id": "X-PE",
+    "source": "CGI",
+    "act_article": "CGI art7-II",
+    "exact_original_language_quote": "supérieure à trois mois",
+    "rule": "Construction/installation/supervision more than3months; same/connected service project more than183days in12months; fixed-place, agent, auxiliary and anti-fragmentation tests also matter.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 6,
+    "additional_exact_quotes": [
+      "plus de cent quatre-vingt-trois jours",
+      "période quelconque de douze mois."
+    ],
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "X-EXIT",
+    "source": "CGI",
+    "act_article": "CGI arts165-166",
+    "exact_original_language_quote": "au moins trente jours avant la date de départ",
+    "rule": "Arrival scope begins on establishing residence; departure provisional return at least30days before leaving, complement first2months next year, tax proof and undertaking/security requirements.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 59,
+    "additional_exact_quotes": [
+      "des deux premiers mois de l’année fiscale suivant celle du départ."
+    ],
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "X-GAIN",
+    "source": "LF",
+    "act_article": "LF041/2025 art4, CGI art23para6",
+    "exact_original_language_quote": "prélèvement libératoire de 25 %",
+    "rule": "Covered direct/indirect share gains:25% final levy collected by the Gabon company within1month under the initial2026 law; transaction-date/currentness hold.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "read_scope": "Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used.",
+    "pdf_page_1_based": 4,
+    "guide_sections": {
+      "ga-cross-border": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "T-ADJUST",
+    "source": "CGI",
+    "act_article": "CGI art12",
+    "exact_original_language_quote": "les bénéfices indirectement transférés",
+    "rule": "Indirect foreign-related profit transfers through pricing, undercapitalisation or other means are reintegrated; majority capital, actual power/common control and low-tax/noncooperative exceptions.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 22,
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Who this applies to",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "T-BENEFIT",
+    "source": "CGI",
+    "act_article": "CGI art13",
+    "exact_original_language_quote": "L’intérêt général du groupe ne suffit pas à lui seul",
+    "rule": "Own business interest must support group aid. Low/no-tax IP, interest and services need proof of real and non-excessive transactions. Privileged regime comparison is less than half hypothetical Gabon tax; ministerial noncooperative list required.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 22,
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "T-START",
+    "source": "CGI",
+    "act_article": "CGI artP831",
+    "exact_original_language_quote": "Au début de chaque exercice fiscal",
+    "rule": "At the start of each exercise, provide relationships, method, activities and foreign treatment information; includes Gabon and foreign links.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 191,
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Who this applies to",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "T-DOC",
+    "source": "CGI",
+    "act_article": "CGI artP831bis",
+    "exact_original_language_quote": "Le fichier local doit être finalisé et déposé",
+    "rule": "Master file available and local file finalized/deposited by the tax-return deadline; electronic official-language documentation/certified translation;60day cure notice; functions, assets, risks and method analysis.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 192,
+    "additional_exact_quotes": [
+      "dans un délai de soixante jours",
+      "dans la langue officielle de la République Gabonaise."
+    ],
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "T-CBCR",
+    "source": "CGI",
+    "act_article": "CGI artP831ter",
+    "exact_original_language_quote": "491.967.750.000 FCFA.",
+    "rule": "Prior-year consolidated turnover excluding tax at least XAF491967750000; CbCR due12months after close, group parent identified by year end; parent/local filing, exchange and qualifying substitute conditions.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 192,
+    "additional_exact_quotes": [
+      "dans les douze mois de la clôture de l’exercice fiscal",
+      "au plus tard le dernier jour de l’exercice fiscal imposable."
+    ],
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "T-EXTRA",
+    "source": "CGI",
+    "act_article": "CGI artP831quater",
+    "exact_original_language_quote": "y compris le bilan et le compte de résultat.",
+    "rule": "Associated noncooperative recipients require additional company documents including balance sheet and profit-and-loss account.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 194,
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "T-PEN",
+    "source": "CGI",
+    "act_article": "CGI artP1010bis",
+    "exact_original_language_quote": "avec un minimum de 65.000.000 FCFA par exercice fiscal.",
+    "rule": "TP documentation failure:5% of total intragroup exchanges with XAF65000000 annual minimum.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 231,
+    "additional_exact_quotes": [
+      "à 5 % du montant global des échanges intragroupes"
+    ],
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Rates, bands and thresholds",
+        "Penalties and interest"
+      ]
+    }
+  },
+  {
+    "id": "T-CBCRPEN",
+    "source": "CGI",
+    "act_article": "CGI artP1010ter",
+    "exact_original_language_quote": "plafonné à 100.000.000 FCFA par exercice fiscal.",
+    "rule": "CbCR documentation failure:0.5perthousand consolidated turnover excluding tax with XAF100000000 annual cap.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 231,
+    "additional_exact_quotes": [
+      "0,5 ‰ (0,5 pour mille)"
+    ],
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "Rates, bands and thresholds",
+        "Penalties and interest"
+      ]
+    }
+  },
+  {
+    "id": "F-FORMS",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts309,323,385,853-1",
+    "exact_original_language_quote": "La société à responsabilité limitée est une société",
+    "rule": "SARL limited liability with one or more founders and natural-person managers; SA can have one shareholder; SAS one or more founders and statutory governance subject to mandatory rules.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 66,
+    "guide_sections": {
+      "ga-company-formation": [
+        "Who this applies to",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "F-SARL",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts311-311-1",
+    "exact_original_language_quote": "Sauf dispositions nationales contraires, le capital social doit être",
+    "rule": "Historical SARL default minimum XAF1000000 subject to national derogation; cash shares half paid initially and remainder within2years, in-kind fully paid. Gabon current minimum unresolved.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 66,
+    "additional_exact_quotes": [
+      "de la moitié au moins de leur valeur nominale.",
+      "deux (2) ans à compter de l'immatriculation"
+    ],
+    "guide_sections": {
+      "ga-company-formation": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "F-SA",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts387-389",
+    "exact_original_language_quote": "dix millions (10.000.000) de francs CFA.",
+    "rule": "Ordinary SA historical minimum XAF10000000; cash shares quarter paid initially and remainder within3years, subject to sector/currentness holds.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 84,
+    "additional_exact_quotes": [
+      "d'un quart au moins de leur valeur nominale.",
+      "trois (3) ans à compter de l'immatriculation"
+    ],
+    "guide_sections": {
+      "ga-company-formation": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "F-SAS",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts853-4-853-5",
+    "exact_original_language_quote": "Le montant du capital social ainsi que celui du nominal des actions est fixé par les statuts.",
+    "rule": "SAS capital and nominal share amount fixed by statutes; no public offering.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 192,
+    "guide_sections": {
+      "ga-company-formation": [
+        "Rates, bands and thresholds",
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "F-OFFICE",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts23-25",
+    "exact_original_language_quote": "Le siège social ne peut pas être constitué uniquement par une domiciliation à une boite postale.",
+    "rule": "Statutes identify the seat at the principal establishment or administrative/financial management; a precise geographical address, not solely a post-office box.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 6,
+    "guide_sections": {
+      "ga-company-formation": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "F-DEPOSIT",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts10,313-314",
+    "exact_original_language_quote": "ou en l'étude d'un notaire.",
+    "rule": "Historical default authenticated statutes and national derogations; SARL funds may be deposited with eligible bank/credit/microfinance institution or notary, released after RCCM.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 67,
+    "guide_sections": {
+      "ga-company-formation": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "F-RCCM",
+    "source": "OHADA",
+    "act_article": "AUSCGIE arts97-98",
+    "exact_original_language_quote": "à compter de son immatriculation au registre du commerce et du",
+    "rule": "Ordinary legal personality starts with RCCM registration; participation-company exception.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "read_scope": "Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established.",
+    "pdf_page_1_based": 21,
+    "guide_sections": {
+      "ga-company-formation": [
+        "The base"
+      ]
+    }
+  },
+  {
+    "id": "F-ANPI",
+    "source": "ANPI",
+    "act_article": "ANPI formalisation, displayed creation circuit",
+    "exact_original_language_quote": "Soumission du dossier sur GNI",
+    "rule": "ANPI displays dossier/GNI, validation, tax-act registration, RCCM, NIF, social registration, gazette and FUE circuit. Dossier links and actual submission not verified.",
+    "read_on": "2026-11-01",
+    "official_url": "https://www.investingabon.ga/formalisation",
+    "source_sha256": "1d3282a10d05ac997523b385e2019251ff58a34e7f9891bde894c8621c5f08aa",
+    "read_scope": "Read dossier/licensing sections and entire displayed10-step creation circuit. Linked downloadable dossier/guide returns same page. No authenticated creation submission or fee schedule inspected.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-company-formation": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "F-TAX",
+    "source": "CGI",
+    "act_article": "CGI artP817",
+    "exact_original_language_quote": "dans les quarante-cinq jours qui suivent le début de ses activités.",
+    "rule": "Tax registration within45days after activity starts, location plan and internet-failure fallback; substantial change within15days; foreign representative exception must be tested separately.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 187,
+    "guide_sections": {
+      "ga-company-formation": [
+        "Rates, bands and thresholds",
+        "Deadlines and filing"
+      ],
+      "ga-tax-overview": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "F-UBO",
+    "source": "CGI",
+    "act_article": "CGI artP818quater",
+    "exact_original_language_quote": "l’identité du détenteur ultime des parts ou actions sociales",
+    "rule": "Annual DSF beginning/end shareholding annex identifies ultimate holders; this does not establish UBO disclosure at incorporation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 189,
+    "guide_sections": {
+      "ga-company-formation": [
+        "Deadlines and filing"
+      ]
+    }
+  },
+  {
+    "id": "G-DELAY",
+    "source": "CGI",
+    "act_article": "CGI artsP998-999",
+    "exact_original_language_quote": "5 % des droits déclarés.",
+    "rule": "Late declaration before formal notice5%; within7days after notice10%; no return after notice ex officio100%, repeat150%; nil/deficit fixed penalties are distinct.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 228,
+    "additional_exact_quotes": [
+      "10 % des droits déclarés",
+      "dans les sept jours suivant la mise en demeure"
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Penalties and interest"
+      ],
+      "ga-income-tax": [
+        "Penalties and interest"
+      ],
+      "ga-payroll-social": [
+        "Penalties and interest"
+      ],
+      "ga-vat-gst": [
+        "Penalties and interest"
+      ],
+      "ga-cross-border": [
+        "Penalties and interest"
+      ],
+      "ga-company-formation": [
+        "Penalties and interest"
+      ],
+      "ga-tax-overview": [
+        "Penalties and interest"
+      ]
+    }
+  },
+  {
+    "id": "G-INTEREST",
+    "source": "CGI",
+    "act_article": "CGI artP996",
+    "exact_original_language_quote": "intérêt de retard de 1,5 % par mois, plafonné à 50 %",
+    "rule": "Assessment underdeclaration interest1.5% per month capped50%, commenced month counted whole; not a universal ordinary late-payment rate.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 228,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "G-PAY",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI artP1000",
+    "exact_original_language_quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+    "rule": "July DGE/CIME late or partial electronic payment:10% penalty plus P996 interest; no collection-penalty cumulation with P998 late declaration per new paragraph3. Date-specific review required.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 12,
+    "additional_exact_quotes": [
+      "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration"
+    ],
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Penalties and interest"
+      ],
+      "ga-income-tax": [
+        "Penalties and interest"
+      ],
+      "ga-payroll-social": [
+        "Penalties and interest"
+      ],
+      "ga-vat-gst": [
+        "Penalties and interest"
+      ],
+      "ga-cross-border": [
+        "Penalties and interest"
+      ],
+      "ga-company-formation": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ],
+      "ga-tax-overview": [
+        "Penalties and interest"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND1",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 0 à 1.500.000 FCFA 0",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND2",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 1.500.001 à 1.920.000 FCFA 5 % x Q - 75.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND3",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 1.920.001 à 2.700.000 FCFA 10 % x Q - 171.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND4",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 2.700.001 à 3.600.000 FCFA 15 % x Q - 306.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND5",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 3.600.001 à 5.160.000 FCFA 20 % x Q - 486.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND6",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 5.160.001 à 7.500.000 FCFA 25 % x Q - 744.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND7",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "De 7.500.001 à 11.000.000 FCFA 30 % x Q - 1.119.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "I-BAND8",
+    "source": "CGI",
+    "act_article": "CGI art174",
+    "exact_original_language_quote": "11.000.001 FCFA et plus 35 % x Q - 1.669.000",
+    "rule": "Annual one-share band and direct formula, after article168 rounding and family-share allocation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 62,
+    "guide_sections": {
+      "ga-income-tax": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-CNSSFAM",
+    "source": "CNSS",
+    "act_article": "Decree0487/PR/MASI art2",
+    "exact_original_language_quote": "Prestations familiales et prestations de maternité : 5%",
+    "rule": "Family and maternity contribution 5%; employer allocation is not explicit in the quoted decree and remains on hold.",
+    "read_on": "2026-11-01",
+    "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "read_scope": "Read heading, recitals and full decree0487/PR/MASI arts1-5, signature/date. Gazette issue heading29November2025 conflicts with decree18December2025; retained as source-quality issue.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-CNSSACC",
+    "source": "CNSS",
+    "act_article": "Decree0487/PR/MASI art2",
+    "exact_original_language_quote": "Accident de travail et maladies professionnelles : 2%",
+    "rule": "Occupational contribution2%; employer-side allocation confirmation retained as source-quality hold.",
+    "read_on": "2026-11-01",
+    "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "read_scope": "Read heading, recitals and full decree0487/PR/MASI arts1-5, signature/date. Gazette issue heading29November2025 conflicts with decree18December2025; retained as source-quality issue.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-CNSSCAP",
+    "source": "CNSS",
+    "act_article": "Decree0487/PR/MASI art4",
+    "exact_original_language_quote": "1.500.000 francs CFA par mois.",
+    "rule": "Monthly salary ceilingXAF1500000.",
+    "read_on": "2026-11-01",
+    "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "read_scope": "Read heading, recitals and full decree0487/PR/MASI arts1-5, signature/date. Gazette issue heading29November2025 conflicts with decree18December2025; retained as source-quality issue.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-HEALTHCAP",
+    "source": "CNAMGS",
+    "act_article": "CNAMGS employer page, ceiling",
+    "exact_original_language_quote": "2 500 000 FCFA.",
+    "rule": "Published monthly health ceilingXAF2500000, not the CNSS ceiling.",
+    "read_on": "2026-11-01",
+    "official_url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "read_scope": "Read employer page sections assessment/base, cap, private/public rates, declaration/payment steps, quarterly schedule and late declaration/payment sections. Page undated; underlying decree not independently obtained.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "P-HEALTHWORK",
+    "source": "CNAMGS",
+    "act_article": "CNAMGS employer page, private rates",
+    "exact_original_language_quote": "Cotisations salariales : 2%",
+    "rule": "Published private employee health rate2%.",
+    "read_on": "2026-11-01",
+    "official_url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "read_scope": "Read employer page sections assessment/base, cap, private/public rates, declaration/payment steps, quarterly schedule and late declaration/payment sections. Page undated; underlying decree not independently obtained.",
+    "pdf_page_1_based": null,
+    "guide_sections": {
+      "ga-payroll-social": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "T-CBCRRATE",
+    "source": "CGI",
+    "act_article": "CGI artP1010ter",
+    "exact_original_language_quote": "0,5 ‰ (0,5 pour mille)",
+    "rule": "CbCR failure is0.5perthousand, not0.5percent.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 231,
+    "guide_sections": {
+      "ga-transfer-pricing": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "C-FLOOR",
+    "source": "CGI",
+    "act_article": "CGI art24",
+    "exact_original_language_quote": "500.000 FCFA correspondant au minimum de perception.",
+    "rule": "Corporate fixed minimumXAF500000; apply together with turnover minimum and relief tests.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 26,
+    "guide_sections": {
+      "ga-corporate-income-tax": [
+        "Rates, bands and thresholds"
+      ],
+      "ga-tax-overview": [
+        "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+      ]
+    }
+  },
+  {
+    "id": "V-TEN",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art221(2)",
+    "exact_original_language_quote": "Taux réduit : 10%",
+    "rule": "July specified10%items, read entire paragraph and retained prior items before classification.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 6,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-FIVE",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art221(3)",
+    "exact_original_language_quote": "Taux réduit : 5%",
+    "rule": "July imported newspapers/magazines/mineral water5%, other retained terms need reconciliation.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-THREE",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art221(4)",
+    "exact_original_language_quote": "Taux réduit : 3%",
+    "rule": "July locally manufactured rebar3%; imports do not meet that origin condition.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-ZERO",
+    "source": "LFR",
+    "act_article": "LFR002/2026 art4, CGI art221(5)",
+    "exact_original_language_quote": "Taux zéro : 0%",
+    "rule": "Zero rate for specified international transactions and qualifying foreign-place services; not blanket exemption.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "read_scope": "Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed.",
+    "pdf_page_1_based": 7,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-DOMCAP",
+    "source": "CGI",
+    "act_article": "CGI art208",
+    "exact_original_language_quote": "60.000.000 FCFA.",
+    "rule": "Ordinary domestic turnover thresholdXAF60000000.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 53,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-FORESTCAP",
+    "source": "CGI",
+    "act_article": "CGI art208",
+    "exact_original_language_quote": "500.000.000 FCFA",
+    "rule": "Forestry thresholdXAF500000000; no application to July nonresident threshold exception.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 69,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  },
+  {
+    "id": "V-CSSCAP",
+    "source": "CGI",
+    "act_article": "TFNC section7 CSS art14",
+    "exact_original_language_quote": "au moins à 30.000.000 FCFA.",
+    "rule": "CSS thresholdXAF30000000; separate scope and July digital amendments.",
+    "read_on": "2026-11-01",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
+    "pdf_page_1_based": 261,
+    "guide_sections": {
+      "ga-vat-gst": [
+        "Rates, bands and thresholds"
+      ]
+    }
+  }
+]
