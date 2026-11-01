@@ -1,0 +1,14 @@
+{
+  "cgi2026": {
+    "independent_extractor": "pdftotext -layout PDF -",
+    "independent_text_sha256": "332d10e266b4c53162c44f41cbcf6486f489306bb0b9472c356f7335d675fc83",
+    "saved_text_sha256": "332d10e266b4c53162c44f41cbcf6486f489306bb0b9472c356f7335d675fc83",
+    "equal_after_whitespace": true
+  },
+  "ohada-companies-2014": {
+    "independent_extractor": "pdftotext -layout PDF -",
+    "independent_text_sha256": "30896817ff4b8c57e40c6b5640d2d7c4801fdf04627c20c7e8708afcad4c4726",
+    "saved_text_sha256": "30896817ff4b8c57e40c6b5640d2d7c4801fdf04627c20c7e8708afcad4c4726",
+    "equal_after_whitespace": true
+  }
+}

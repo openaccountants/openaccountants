@@ -1,6 +1,6 @@
 ---
 name: bj-corporate-income-tax
-description: "Benin 2026 ordinary corporate income tax working paper: rates, sector minimum gates, produits encaissables, instalments and annual attachments. Narrow preparation scope; special regimes and authenticated filing require separate completion. Includes two recomputing minimum-tax decisions; no accountant attestation."
+description: "Prepare an ordinary Benin corporate income-tax calculation and instalment reconciliation for 2026 using the law governing the actual accounting period. Use this Guide to screen company scope and territorial conditions, compare ordinary tax with the applicable minimum, distinguish separate levies and organise annual financial-statement attachments and payment evidence. Two executable examples show how the minimum affects the result. Complete expense adjustments, credits, incentives, mining and other special sectors require separate supported calculations. This produces a working paper and filing-preparation checklist. Authenticated return submission, payment acceptance and accountant attestation are not established. Trigger phrases include Benin IS, corporate minimum tax, advance payments and annual company return."
 jurisdiction: BJ
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Benin corporate IS working paper v0.1
+# Benin corporate IS working paper v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

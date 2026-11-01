@@ -1,15 +1,15 @@
 ---
 name: bj-transfer-pricing
-description: "Benin 2026 transfer-pricing preparation: cross-border control and privileged-regime gates, separate annual declaration/documentation/CbCR thresholds, evidence reconciliation and current audit-duration overlay. No invented benchmark, completed electronic form or blanket CbCR exemption. Two executable decisions; no accountant attestation."
+description: "Prepare a Benin cross-border related-party pricing and reporting screen for 2026. Use this Guide to establish legal or actual control, identify privileged-regime counterparties, reconcile controlled transactions and test the separate annual declaration, audit documentation and country-by-country reporting conditions. It distinguishes own turnover or assets from group turnover and records the current audit-duration rule with its declared-turnover definition. Two executable cases show a pricing comparison and the alternative reporting thresholds. The output is an evidence schedule and filing decision for further supported work. It does not invent a benchmark, safe harbour, treaty exchange list or completed electronic return. Trigger phrases include Benin transfer pricing, TP documentation, CbCR and audit duration."
 jurisdiction: BJ
 category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 ---
 
-# Benin transfer-pricing and reporting screen v0.1
+# Benin transfer-pricing and reporting screen v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,7 +42,7 @@ This job identifies required work and reconciles transactions. It does not produ
 
 The annual declaration is electronic and due by 30 April; article 470 delegates its content/format to a ministerial order. CbCR is electronic within the separate period above and uses its own prescribed model. Obtain the actual current form/schema, applicable exchange list and portal acceptance evidence before filing. No authenticated fields or schema were accessed. [CGI 2026, art. 470](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=203) [CGI 2026, art. 471](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=203)
 
-For audits, use the actual notice and the current law. LFR article 17 replaces the old on-site duration: two months where declared annual turnover does not exceed FCFA 2 billion, four months otherwise; the latter can extend by four months for the listed technical/TP/exchange cases, with reasoned notice at least three days before expiry. This timing does not replace the separate article 542/543 document-response deadlines. [LFR 2026, art. 17](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5) [CGI 2026, art. 542](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=238) [CGI 2026, art. 543](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=239)
+For audits, use the actual notice and the current law. LFR article 17 replaces the old on-site duration: two months where declared annual turnover does not exceed FCFA 2 billion, four months otherwise. For this test, declared annual turnover is the amount declared for any tax in any year under audit, including the current year; do not select only one favourable return or year. The four-month period can extend by four months for the listed technical/TP/exchange cases, with reasoned notice at least three days before expiry. This timing does not replace the separate article 542/543 document-response deadlines. [LFR 2026, art. 17](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5) [CGI 2026, art. 542](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=238) [CGI 2026, art. 543](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=239)
 
 ## Penalties and interest
 

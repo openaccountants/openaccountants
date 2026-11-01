@@ -1,6 +1,6 @@
 ---
 name: bj-vat-gst
-description: "Benin 2026 VAT: prepare a monthly calculation for confirmed VAT taxpayers, classify exemptions and zero-rated exports, test deduction conditions and the BTP fuel limit, and screen foreign/platform transactions under the June rectifying law. Threshold instrument and completed filing remain unresolved. Two executable cases; no accountant attestation."
+description: "Prepare a monthly Benin VAT calculation for 2026 where taxpayer status and transaction classification have been independently established. Use this Guide to screen ordinary supplies, exemptions, exports, input-tax conditions, the construction-sector fuel restriction and foreign or platform transactions under the June rectifying law. Two executable cases recompute output tax, supported deductions and an excluded fuel portion. The operative numerical registration-threshold instrument and certain product, scheme and platform details remain unresolved. The output is a supported calculation and filing-preparation checklist. It does not prove registration, authenticated submission, accepted payment or accountant attestation. Trigger phrases include Benin VAT, TVA, input deduction, imported services and digital platforms."
 jurisdiction: BJ
 tax_year: 2026
 last_updated: 2026-11-01
@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Benin monthly VAT working paper v0.1
+# Benin monthly VAT working paper v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
