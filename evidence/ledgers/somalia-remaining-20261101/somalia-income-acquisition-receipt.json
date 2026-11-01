@@ -1,0 +1,48 @@
+[
+  {
+    "file": "income-tax-regulation-0141-2025.pdf",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "failed-normal-TLS"
+  },
+  {
+    "file": "income-tax-manual-english-2025.pdf",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Somalia%20Income%20Tax%20Manual_English%20Version.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "failed-normal-TLS"
+  },
+  {
+    "file": "revenue-annual-performance-2025.pdf",
+    "url": "https://revenuedirectorate.gov.so/sites/default/files/Annual%20Revenue%20Performance_2025_FINAL11.pdf",
+    "bytes": 2064773,
+    "sha256": "e519207280f86f1478d27aef1178999c344b1cc8ed24703869774778cf17ff38",
+    "status": "downloaded-normal-TLS",
+    "read_date": "2026-11-01"
+  },
+  {
+    "file": "income-tax-regulation-0141-2025.pdf",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "bytes": 31658312,
+    "sha256": "161a88e6529fd8200ae8f5b9db07bcedf9d1ab04dc0efae43d5f7b813995c51e",
+    "status": "downloaded-ordinary-IAB-browser-after-direct-TLS403",
+    "pages": 39,
+    "read_date": "2026-11-01",
+    "ocr": "income-tax-regulation-0141-2025.ocr.txt",
+    "visually_inspected_PDF_pages": [
+      5,
+      6,
+      26,
+      27,
+      34,
+      37,
+      38
+    ]
+  },
+  {
+    "file": null,
+    "url": "https://mof.gov.so/sites/default/files/Publications/Somalia%20Income%20Tax%20Manual_English%20Version.pdf",
+    "status": "web-tool-full-text-readable-PDF25pages; ordinary-browser-official-index.php-download-link-timeout15sec",
+    "read_date": "2026-11-01",
+    "read_scope": "PDF pages1-13 narrative, forms contents22-25 in extracted text; contradictions noted"
+  }
+]
