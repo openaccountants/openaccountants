@@ -1,0 +1,33 @@
+{
+  "permitted_after_F1_acceptance": true,
+  "scope": "Only these three literal review-status replacements. Do not alter a tax rule, source, scope gap, date, metadata, evidence artifact or any of seven partial entries. Initial writer/review status records remain historical and unchanged. Parent must verify expected final hashes and rerun committed checks after committing.",
+  "replacements": [
+    {
+      "path": "skills/madagascar/mg-capital-income.md",
+      "before": "This addition awaits independent source review and carries no accountant attestation.",
+      "after": "Independent AI source review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "before": "## Capital-income follow-on awaiting independent review",
+      "after": "## Capital-income follow-on"
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "before": "All seven ordinary domains remain partial; this new draft awaits independent review and has no accountant attestation.",
+      "after": "All seven ordinary domains remain partial; independent AI source review accepted this addition’s stated partial scope on 1 November 2026. See the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+    }
+  ],
+  "files": [
+    {
+      "path": "skills/madagascar/mg-capital-income.md",
+      "before_status_sha256": "e3f3cfddca2ac38bcd9f22e50c60a5a05d7b8f3fbbf266192c49d1d31cadd057",
+      "expected_after_status_sha256": "1a0079e3e70d8b10879ebbecb1fcced3b62aa80804d4be99fc208c1e5e47b41a"
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "before_status_sha256": "a1bd4dbf1ad20fd4bc0728446973bcc2086501303ff7de71c66a37a6255c94e3",
+      "expected_after_status_sha256": "5ad18a8f6d134e27f46392bf5a56b3f58ce19fdcb2eebec2c0d63071b2da6079"
+    }
+  ]
+}

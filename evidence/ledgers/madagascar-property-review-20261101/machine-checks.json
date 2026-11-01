@@ -1,0 +1,58 @@
+{
+  "head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "new_frontmatter_platform_keys_absent": true,
+  "new_CTA_absent": true,
+  "general_reference_notice": true,
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/skill_checks.py",
+        "skills/madagascar/mg-annual-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/madagascar/mg-annual-property-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/madagascar/mg-annual-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 9 guides (3 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: 0 same-job groups, see skills/DUPLICATES.md\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    }
+  ],
+  "stock_warning_retained": "WARN: 0 same-job groups, see skills/DUPLICATES.md",
+  "incidental_initial_invocation": "validate-guides.py --help is not a help flag in this script: it ran default validation and reported index.json/llms-full stale. Scoped documented --no-index-check succeeds. No generated files altered."
+}

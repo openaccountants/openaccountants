@@ -1,0 +1,18 @@
+{
+  "method": "Decimal recomputation independent of oa-check engine",
+  "case1": {
+    "gross": "10005999",
+    "after_allowance": "5002999.5",
+    "rounded_base": "5002000",
+    "ircm": "1000400.0",
+    "net": "9005599.0"
+  },
+  "case2": {
+    "income": "1234567",
+    "rounded_base": "1234000",
+    "cooperative_ircm": "123400.0",
+    "ordinary_ircm": "246800.0",
+    "difference": "123400.0"
+  },
+  "classification": "Case 2 is a documented fact/category decision, not an election; ordinary nonexempt receipts only; no historical II-B result or disposal formula."
+}

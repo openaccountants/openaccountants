@@ -1,0 +1,848 @@
+[
+  {
+    "id": "P01",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to",
+    "rule": "IFT is annual on January 1 facts; land is covered regardless of legal status/use, subject to exemptions; owner or actual occupant is assessed.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.01–02",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "un impôt annuel établi en raison des faits existant au 1er Janvier",
+      "quelles que soient leur situation juridique et leur affectation",
+      "au nom des propriétaires ou des occupants effectifs au 1er Janvier"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P02",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to",
+    "rule": "IFPB uses January 1 facts; assess the owner or usufructuary identified after the bare owner, or failing that the apparent owner.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.01–02",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "au 1er Janvier de l’année d’imposition",
+      "ou de l’usufruitier dont le nom doit figurer sur l’avis d’imposition à la suite de celui du nu-propriétaire",
+      "ou à défaut, du propriétaire apparent"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P03",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to",
+    "rule": "Construction materials do not remove IFPB; each completed part is assessed separately; habitable or actually inhabited counts as completed.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.02(1)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "toutes les constructions quelle que soit la nature des matériaux utilisés",
+      "chaque partie est imposable isolément dès qu’elle est achevée",
+      "habitable ou habité en fait"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P04",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to",
+    "rule": "IFPB includes industrial/commercial land occupied by the owner or others free or for consideration, fixed industrial equipment and assimilated commercial installations.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.02(2)–(3)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "les terrains employés à usage industriel ou commercial",
+      "à titre gratuit ou onéreux",
+      "l’outillage des établissements industriels fixé à perpétuelle demeure",
+      "reposant sur des fondations spéciales faisant corps avec l’immeuble"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P05",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to",
+    "rule": "Land taxed under IFPB article 10.02.02(2) is exempt from IFT; do not double-assess that category.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.03(4)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Les terrains visés par l’article 10.02.02, 2° du présent Code imposés à l’IFPB."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P06",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to / Sources",
+    "rule": "LFI entry requires radio or posted publication; actual activation date remains unproved.",
+    "act": "Loi 2025-021 portant Loi de Finances pour 2026",
+    "article": "24",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+    "exact_french_quotes": [
+      "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P07",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Who this applies to / Sources",
+    "rule": "July LFR entry requires radio or posted publication; the signature alone does not prove the activation date.",
+    "act": "Loi 2026-004 portant Loi de Finances Rectificative pour 2026",
+    "article": "22",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+    "exact_french_quotes": [
+      "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfr-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P08",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds",
+    "rule": "IFT categories 1–5 use commune tariffs per hectare voted for four years; absent a vote, prior tariffs/rates carry forward.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "un tarif exprimé en Ariary par ha de la première à la cinquième catégorie, voté pour quatre ans",
+      "A défaut d’un vote de tarif et taux, sont reconduits ceux de la période antérieure"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P09",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds / Two worked examples that recompute",
+    "rule": "IFT category 6 uses 1% of supported market value; the minimum is MGA 2,000 per assessment.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "1p.100 de la valeur vénale du terrain.",
+      "ne peut en aucune façon être inférieur à Ar 2 000 par taxation."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P10",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds / Two worked examples that recompute",
+    "rule": "For rented IFPB property, annualised declared rent cannot be lower than the commission-criteria rental value.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.06(1)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Au montant des loyers déclarés ramenés à l’année",
+      "ne doit pas être inférieure à celle obtenue par application des critères d’évaluation"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P11",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds / Two worked examples that recompute",
+    "rule": "Property personally occupied by the owner as principal residence uses 30% of commission rental value, not a landlord allowance.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.06(2)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "30p.100 de la valeur locative obtenue par application des critères d’évaluation",
+      "pour l’immeuble occupé par le propriétaire lui-même, à titre de résidence principale."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P12",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds",
+    "rule": "Industrial property uses the 30% rule only for an enterprise approved under the Law on Industrial Development.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.06(3)",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "30p.100 de la valeur locative citée précédemment",
+      "pour les entreprises agréées au titre de la Loi sur le Développement de l’Industrie."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P13",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds / Two worked examples that recompute",
+    "rule": "Ordinary IFPB is 5% of the applicable taxable rental value, minimum MGA 5,000 per building.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.10",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "application d’un taux fixe de 5p.100 à la valeur locative",
+      "ne doit pas être inférieur à Ar 5 000 par immeuble."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P14",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds",
+    "rule": "A derogating flat charge requires a commune-authorised building, specific criteria determined after commission opinion and a council-fixed amount.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.10",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "les immeubles construits avec l’autorisation de la Commune",
+      "critères spécifiques déterminés par le secrétaire et/ou les techniciens membres de la commission après avis de la Commission",
+      "Les montants des forfaits sont fixés par délibération du Conseil Municipal ou Communal."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P15",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Rates, bands and thresholds",
+    "rule": "Rental values can be revised annually by council vote; absent revision, a 5% base uplift applies for a new three-year period; an intervening revision is immediately applicable.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.09",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "peuvent être révisées, chaque année",
+      "une majoration de 5p.100 de la base sera appliquée pour une nouvelle période de 3 ans",
+      "la valeur qui en résulte sera immédiatement applicable."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P16",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT category 1 lists the specified single or associated plantation crops; category 2 covers woods, forests, lakes and marshes.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Première catégorie (en plantation unique ou associée)",
+      "cacao, café, cannes à sucre, cocotiers, coton, girofle, palmiers à huile, plantes à parfum, poivre, sisal, vanille.",
+      "bois, forêts, lacs, marécages"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P17",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT category 3 covers market-garden/food crops, rice and unlisted plantations; category 4 covers grazing, unexploitable/fallow land; category 5 covers exploitable but unused land.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "cultures maraîchères et vivrières, riz et autres plantations non dénommées",
+      "pâturages naturels et artificiels, terrains non exploitables, terrains en jachères.",
+      "terrains exploitables non exploités."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P18",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT category 6 includes the stated non-agricultural, urban unbuilt and construction-site classes; mayoral urban-perimeter order and agricultural exclusions must be respected.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "périmètre urbanisé de la Commune fixé par arrêté du Maire en conformité, s’il existe, avec le schéma d’urbanisme",
+      "construction hors d’état d’usage",
+      "construction de caractéristique sans rapport avec la surface et la localisation du terrain",
+      "à l’exclusion des terrains destinés à la culture rizicole, maraîchère, vivrière et à la culture d’arbres fruitiers"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P19",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT market value follows the latest transfer acts or, failing those, comparison with commission standard values.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "d’après les actes translatifs les plus récents, ou, à défaut, par comparaison avec des valeurs types fixées par la commission"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P20",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT is assessed in the commune of the land; the competent fiscal centre determines the base and liquidates tax.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.06–07",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "au chef-lieu de la Commune où est situé le terrain.",
+      "établi par le Centre fiscal territorialement compétent. Il détermine l’assiette et assure la liquidation."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P21",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFT permanent exemptions require the stated public-service/no-income or gratuitous exclusive-use conditions; immediate necessary dependencies have a 20-are limit, with excess treatment held.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.03",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "affectés à un service public ou à un service reconnu d’utilité publique et sont improductifs de revenus",
+      "Les terrains gratuitement et exclusivement affectés",
+      "à des œuvres gratuites à caractère médical ou social",
+      "à l’enseignement ou à l’exercice du culte",
+      "dépendance nécessaire et immédiate des bâtiments tels que cour, passage, jardin, n’excédant pas 20 ares."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P22",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "New cultivation must effectively extend cultivated area; tax starts in the sixth year following development; qualifying reforestation needs at least 1,500 living trees per hectare for relief through the first actual cut year.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.04",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "constituant une extension effective de la surface cultivée",
+      "à compter de la 6ème année qui suit celle de la mise en valeur",
+      "1 500 arbres vivants par hectare",
+      "jusqu’à la fin de l’année au cours de laquelle la première coupe est effectivement réalisée."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P23",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "The IFPB commission proposes values for council vote; decisions need at least 50% of members present; owners must be informed before an on-site check; the tax representative is secretary.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.08",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "propositions de valeurs locatives qui sont soumises au vote des conseillers municipaux ou communaux",
+      "en présence d’au moins 50p.100 des membres",
+      "Les propriétaires doivent être informés en temps utile",
+      "joue le rôle de secrétaire de la Commission"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P24",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "IFPB permanent exemptions require the stated public-owner public/general-interest service and no income, or gratuitous exclusive assignment to free works of a social and medical character, education or worship.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.03",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "affectés à un service public ou d’intérêt général et sont improductifs de revenus.",
+      "Les immeubles ou partie d’immeubles gratuitement et exclusivement affectés",
+      "à des œuvres gratuites à caractère social et médical"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P25",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "The base",
+    "rule": "New construction/reconstruction/additions have a conditional five-year personal exemption; a change of owner ends it except heirs retain the deceased owner's remaining period.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.04",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Sous réserve des dispositions de l’article 10.02.05",
+      "exonérées pendant 5 ans à compter de l’année d’achèvement.",
+      "L’exonération est personnelle, elle est caduque dès que l’immeuble change de propriétaire",
+      "les héritiers continuent à bénéficier de l’exonération accordée au de cujus"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P26",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "IFT annual declaration is due to the commune by October 15, written or online, with location, area by use and tenant/rent details.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "I-106",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "au bureau de la Commune du lieu de la situation de l’immeuble, au plus tard le 15 Octobre",
+      "une déclaration écrite ou en ligne",
+      "La superficie par nature de culture ou autres affectations",
+      "Les noms et prénoms des locataires ainsi que le montant du loyer."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P27",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "IFPB annual declaration is due to the commune before October 15, with bare/furnished rentals/rents, own occupation, free occupation and vacancies.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "I-107",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "avant le 15 Octobre de chaque année",
+      "la consistance des locaux loués nus d’une part, celle des locaux loués meublés d’autre part",
+      "Les noms et prénoms des occupants à titre gratuit",
+      "La consistance des locaux vacants."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P28",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "Remote rural communes can record verbal declarations in duplicate registers; communes consolidate the information for the competent fiscal centre.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "I-106–107",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Pour les Communes rurales éloignées",
+      "simple déclaration verbale consignée sur un registre tenu en double exemplaire par le Maire ou son représentant.",
+      "transmises au Centre fiscal territorialement compétent pour les besoins de l’assiette et de la liquidation"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P29",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "Rental changes between October 15 and January 1 require the owner's corrective declaration at the fiscal centre before the assessment year starts.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "I-106–107",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Si entre le 15 Octobre et le 1er Janvier de l’année d’imposition",
+      "déclaration rectificative au bureau du Centre fiscal avant le début de l’année d’imposition."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P30",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "The assessment notice needs mayor/deputy signature and fiscal-centre visa or QR code, with identity, commune, year, property/use/category, base, tariff/rate and amount; missing visa/QR makes it void.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-01",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "avis d’imposition préalablement signé par le Maire",
+      "ou doté d’un code QR",
+      "dépourvu du visa du Centre Fiscal ou d’un code QR est nul et de nul effet.",
+      "Numéro d’immatriculation fiscale ou numéro de carte d’identité",
+      "Base imposable",
+      "Montants à payer"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P31",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "VII-01 states exigibility from March1 subject to special local-tax provisions and payment within3months of assessment-notice receipt; commune collects. VII-33 expressly coversVII-01 debts and its notified-title letter demands payment without delay/immediately exigible. Obtain actualtitle, notification/formaldemand/service/dates and hold interaction before a final payment deadline; do not infer universal immediatepayment or repeal of3months.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-01;VII-33",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "exigibles à partir du 1er mars",
+      "sous réserve des dispositions particulières",
+      "Les Communes sont chargées du recouvrement des impôts fonciers.",
+      "dans les 3 mois de la date de la réception de l’avis d’imposition.",
+      "Les créances visées aux articles VII-01 et VII-32 du présent Code",
+      "La lettre de notification tient lieu de mise en demeure.",
+      "Elle contient sommation d’avoir à payer sans délai",
+      "Celles-ci sont immédiatement exigibles."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P32",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "A mayoral decision can permit instalments based on prior-year tax; taxpayers can request staged payment from the commune collection officer.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-02",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Sur décision du Maire",
+      "acomptes calculés sur les impôts de l’année précédente.",
+      "demander un paiement échelonné auprès du responsable de recouvrement"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P33",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "The fiscal-centre chief can defer for seasonal-resource reasons, but not beyond November 1.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-03",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "de façon à tenir compte du moment où les contribuables disposent dans l’année du maximum de ressources",
+      "au-delà du 1er Novembre."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P34",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing / Cross-border points",
+    "rule": "The full assessment is immediately exigible on the listed departure, sale, insolvency or rights-uplift sanction events; do not assume the normal notice period.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-04",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Changement de domicile ou de résidence hors de la Commune.",
+      "Départ définitif du territoire",
+      "Vente volontaire ou forcée.",
+      "Faillite ou règlement judiciaire.",
+      "majoration de droits pour insuffisance ou défaut de déclaration."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P35",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "Payment goes to the commune collection agent through legally valid or minister-authorised methods; actual references and receipt workflow remain held.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-06",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "modes de paiement ayant cours légal",
+      "modes de paiement autorisés par le Ministre",
+      "auprès de l’agent chargé du recouvrement de la Commune du lieu de la situation de l’immeuble."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P36",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "IFT temporary-exemption request/declaration goes to the fiscal centre by October 15 each year with location, area, cultivation and development/recépage dates; obtain the chief's certificate.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.05",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "au bureau du Centre fiscal du lieu de la situation de l’immeuble une demande et une déclaration",
+      "au plus tard le 15 Octobre de chaque année.",
+      "date du commencement des travaux de mise en valeur ou de recépage",
+      "Une attestation d’exonération est délivrée par le Chef du Centre fiscal"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P37",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "IFPB exemption needs a fiscal-centre request and required attachments; start follows permit production, end follows the fifth post-completion year; last-quarter completion has a permit-before-April-1 condition.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.02.05",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "une demande en y annexant les pièces requises",
+      "L’exonération est accordée à partir de l’année suivant celle au cours de laquelle le permis d’habiter a été produit",
+      "fin de la 5ème année suivant celle de l’achèvement.",
+      "lorsque la construction a été achevée au cours du dernier trimestre civil",
+      "si le permis d’habiter est produit avant le 1avril de ladite année."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P38",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "The baseline CPF requires the IFPB collection title at the same time as the assessment notice.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "VII-33",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Pour l’impôt foncier sur la propriété bâtie, le titre de perception est émis en même temps que l’avis d’imposition."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P39",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "July LFR extends simultaneous collection title/assessment notice to both IFPB and IFT; activation remains unproved.",
+    "act": "Loi 2026-004 portant Loi de Finances Rectificative pour 2026",
+    "article": "Amendment to CPF VII-33;22",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+    "exact_french_quotes": [
+      "Pour l’impôt foncier sur la propriété bâtie et l’impôt foncier sur les terrains",
+      "émis en même temps que l’avis d’imposition."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfr-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P40",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "Involuntary plantation/crop loss permits an IFT relief request within three months of the event, proportional to established gross-income loss; the mayor can seek collective relief; detailed claim forms remain held.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.10",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "circonstances indépendantes de la volonté du contribuable",
+      "dans les 3 mois qui suivent l’événement",
+      "proportionnel à la perte de revenu brut constatée au cours de l’année d’imposition.",
+      "la totalité ou la majorité des terrains d’une Commune",
+      "demande collective de décharge ou réduction"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P41",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing",
+    "rule": "A transfer act presented to the fiscal centre must carry a legal-status certificate; this is not a full conveyance or transactional-tax computation.",
+    "act": "DGI Code des procédures fiscales, LFI 2026",
+    "article": "I-108",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Tout acte de transfert de propriété présenté au Centre fiscal doit être accompagné d’un certificat de situation juridique."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cpf-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P42",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Penalties and interest",
+    "rule": "IFT/IFPB declaration default has the specific MGA 20,000 penalty under the general breach and article 52.2.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "20.01.52;20.01.52.2",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Le défaut de dépôt de toute déclaration",
+      "Le montant de la pénalité est d’Ar 20 000 pour les impôts prévus aux articles 10.01.01, 10.02.01"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P43",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Penalties and interest",
+    "rule": "Book II late remittance has a specific 1%-per-month rule; the general floor/started-month interaction is held, so no final sanction is computed.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "20.01.53;20.01.53.4",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Tout retard dans le versement des impôts, droits et taxes prévus par les dispositions du Livre II",
+      "1p.100 par mois de retard.",
+      "Le montant total des pénalités de retard à payer pour chaque nature d’impôt et pour chaque période",
+      "Tout mois commencé étant dû en entier."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P44",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Penalties and interest",
+    "rule": "Refusal of IFPB access under articles 10.02.08/13 attracts MGA 200,000.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "20.01.56.3",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "le refus d’accès prévu aux articles 10.02.08 et 10.02.13 sera puni d’une amende d’Ar 200.000."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P45",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Penalties and interest",
+    "rule": "The commune conducts the census; tax agents or mandated entities can census/verify on site at least every five years; a census is not declaration/payment acceptance.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "10.01.09;10.02.13",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "La Commune doit effectuer le recensement des immeubles",
+      "du moins tous les cinq ans",
+      "du moins tous les cinq (5) ans."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P46",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Cross-border points",
+    "rule": "Free zones and enterprises remain subject to the ordinary IFT/IFPB provisions; status alone is not a property exemption.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "30.01.14–15",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "relatives à l’IFT et à l’IFPB sont applicables au Zones et Entreprises Franches."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P47",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Cross-border points",
+    "rule": "Large-mining-investment holders/transformation entities have separate property and annex-tax rules; refer without computing unproved eligibility, caps or implementing provisions.",
+    "act": "DGI Code des impôts, LFI 2026",
+    "article": "30.02.22–23",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "exact_french_quotes": [
+      "Le Titulaire et l'Entité de Transformation sont assujettis",
+      "ainsi qu’à la taxe annexe à l’IFPB"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/cdi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P48",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing / Sources",
+    "rule": "The original LFI corroborates the 2026 exemption-request and assessment/liquidation reallocations to the fiscal centre.",
+    "act": "Loi 2025-021 portant Loi de Finances pour 2026",
+    "article": "Amendments10.01.05–09;10.02.05–13",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+    "exact_french_quotes": [
+      "Modifier le groupe de mots « bureau de la Commune »",
+      "par « bureau du Centre fiscal »",
+      "Il détermine l’assiette et assure la liquidation."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P49",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Deadlines and filing / Sources",
+    "rule": "The original LFI corroborates commune declaration consolidation and the notice/payment framework.",
+    "act": "Loi 2025-021 portant Loi de Finances pour 2026",
+    "article": "Amendments I-106–107;VII-01–06;VII-33",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+    "exact_french_quotes": [
+      "La Commune est chargée de collecter et de consolider",
+      "avant le 15 Octobre de chaque année",
+      "Les Communes sont chargées du recouvrement des impôts fonciers."
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfi-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  },
+  {
+    "id": "P50",
+    "guide": "skills/madagascar/mg-annual-property-tax.md",
+    "section": "Penalties and interest / Sources",
+    "rule": "July's general article 20.01.52 amendment was read; the observed amendment does not replace property-specific article 52.2; activation remains held.",
+    "act": "Loi 2026-004 portant Loi de Finances Rectificative pour 2026",
+    "article": "Amendment20.01.52;22",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+    "exact_french_quotes": [
+      "Le défaut de dépôt de toute déclaration",
+      "passibles d’une amende"
+    ],
+    "read_on": "2026-11-01",
+    "cached_text": "../sources/lfr-2026.txt",
+    "status": "independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation"
+  }
+]

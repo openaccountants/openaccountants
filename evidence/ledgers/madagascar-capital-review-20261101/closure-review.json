@@ -1,0 +1,64 @@
+{
+  "decision": "accepted for stated partial source-fidelity scope; F1 closed",
+  "review_date": "2026-11-01",
+  "frozen_target": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "source_content_commit": "918a4af3712e455678bf6084874a2f01313bdb12",
+  "repaired_guide_sha256": "e3f3cfddca2ac38bcd9f22e50c60a5a05d7b8f3fbbf266192c49d1d31cadd057",
+  "rows_reviewed_initially": 46,
+  "findings_closed": [
+    "F1"
+  ],
+  "open_findings": [],
+  "status_only_reconciliation": {
+    "permitted_after_F1_acceptance": true,
+    "scope": "Only these three literal review-status replacements. Do not alter a tax rule, source, scope gap, date, metadata, evidence artifact or any of seven partial entries. Initial writer/review status records remain historical and unchanged. Parent must verify expected final hashes and rerun committed checks after committing.",
+    "replacements": [
+      {
+        "path": "skills/madagascar/mg-capital-income.md",
+        "before": "This addition awaits independent source review and carries no accountant attestation.",
+        "after": "Independent AI source review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+      },
+      {
+        "path": "skills/madagascar/README.md",
+        "before": "## Capital-income follow-on awaiting independent review",
+        "after": "## Capital-income follow-on"
+      },
+      {
+        "path": "skills/madagascar/README.md",
+        "before": "All seven ordinary domains remain partial; this new draft awaits independent review and has no accountant attestation.",
+        "after": "All seven ordinary domains remain partial; independent AI source review accepted this addition’s stated partial scope on 1 November 2026. See the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+      }
+    ],
+    "files": [
+      {
+        "path": "skills/madagascar/mg-capital-income.md",
+        "before_status_sha256": "e3f3cfddca2ac38bcd9f22e50c60a5a05d7b8f3fbbf266192c49d1d31cadd057",
+        "expected_after_status_sha256": "1a0079e3e70d8b10879ebbecb1fcced3b62aa80804d4be99fc208c1e5e47b41a"
+      },
+      {
+        "path": "skills/madagascar/README.md",
+        "before_status_sha256": "a1bd4dbf1ad20fd4bc0728446973bcc2086501303ff7de71c66a37a6255c94e3",
+        "expected_after_status_sha256": "5ad18a8f6d134e27f46392bf5a56b3f58ce19fdcb2eebec2c0d63071b2da6079"
+      }
+    ]
+  },
+  "unchanged_holds": "All initial holds remain; all seven ordinary domains remain partial. No accountant attestation or country completion.",
+  "closure_evidence": [
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/closure-review.md",
+      "sha256": "915bb59ccd3f791cf111e101d89e3f374bfe4855c33301317c5f7d0518e9d1bf"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/closure-checks.json",
+      "sha256": "221f2407d5142496b4720de0f42849fef7bbef988da8089d3393a36b49e98dce"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/status-only-permission.json",
+      "sha256": "4ddb5aacd0b7de652d5ef5ec4c993267bf0feba26272b10cf50427f56bb16799"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/parent-F1-repair-candidate.json",
+      "sha256": "ace7963cd883b7cd91c72d38b29b4a5217b52e0ef7ed638b179cfdee56e6e058"
+    }
+  ]
+}

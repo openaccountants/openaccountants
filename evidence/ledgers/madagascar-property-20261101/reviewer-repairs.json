@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-01",
+  "frozen_writer_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "scope": "F1notifiedcollectiontitle/three-month interaction held; F2 IFPB socialANDmedical conjunction. Same primarysources; no rate, example or activationdate changed. Initial review evidence preserved.",
+  "source_read": "Full actual CPF VII-33 and neighboring ending/next article; CDI10.02.03\u201305 paragraph conditions reread from original cached text.",
+  "changes": [
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "75f8d4a60134a9d9347aee72b6c3d57b35077bda3622bfaa2aa3da8daefec30d",
+      "after_sha256": "ba308220b0941260a8b2bd724bdb1f6b48073879fa4dbd07960bb1add425c009",
+      "before": "gratuitously and exclusively assigned to free social/medical works, education or worship.",
+      "after": "gratuitously and exclusively assigned to free works of a social and medical character, education or worship."
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "ba308220b0941260a8b2bd724bdb1f6b48073879fa4dbd07960bb1add425c009",
+      "after_sha256": "4bcf39fb861b7cfdd7870ff747466e47bc4b54af3fa95c061bc2d29674cfbb6b",
+      "before": "Under VII-01 taxes become exigible from **1 March**, subject to special local-tax provisions, and the taxpayer must discharge them within **three months of receiving the assessment notice**. Do not substitute 1 March for the notice-based payment period.",
+      "after": "VII-01 states that taxes become exigible from **1 March**, subject to special local-tax provisions, and states payment within **three months of receiving the assessment notice**. Do not substitute 1 March for that notice-based wording. VII-33 expressly includes VII-01 debts: its collection-title notification letter is a formal demand to pay without delay and describes the sums as immediately exigible. Obtain the actual title, notification/formal-demand document, service method and dates. The interaction of that notification with the VII-01 three-month period remains unresolved here: do not give a final payment deadline where it matters, and do not infer that every property assessment is immediately payable or that the three-month provision was repealed."
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "4bcf39fb861b7cfdd7870ff747466e47bc4b54af3fa95c061bc2d29674cfbb6b",
+      "after_sha256": "1c6cdb98e10734400432687ee6f0451ef2a91ed05745beae622ce226810fc336",
+      "before": "Preserve both texts and refer an IFT notice whose validity/timing depends on the unproved LFR activation date.",
+      "after": "Preserve both texts and refer an IFT notice whose validity/timing depends on the unproved LFR activation date. Issue timing does not prove actual notification; the VII-33 immediate-demand language and its unresolved interaction with VII-01 must also be checked as above."
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "1c6cdb98e10734400432687ee6f0451ef2a91ed05745beae622ce226810fc336",
+      "after_sha256": "3f3626dd6ce0710b861507f1bd74466dba52a98798621918616c128bf509a62a",
+      "before": "assessment notice, its signature/visa/QR, receipt date and payment records;",
+      "after": "assessment notice, its signature/visa/QR, receipt date and payment records; collection title, notification/formal-demand document, service method and dates;"
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "3f3626dd6ce0710b861507f1bd74466dba52a98798621918616c128bf509a62a",
+      "after_sha256": "cb50e663f9171dd3d8186d5b1c683a6e69b45020263e26c4099c49d3d904e36d",
+      "before": "no boundary-period notice determination.",
+      "after": "no boundary-period notice determination. The VII-01 three-month wording versus VII-33 notified-title immediate-demand interaction remains unresolved; no final payment deadline is supplied for a case affected by it."
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "before_sha256": "4007dfb36023adbd7c81a47d64201062163a7ed51677cb3269132ae450f98333",
+      "after_sha256": "04a985d50f9c8a6db007a2f7544f29cc3b1bd6e11f3b95fad38a756cff6340ea",
+      "changed_rows": [
+        "P24",
+        "P31"
+      ],
+      "other_48_rows": "object-identical"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "before_sha256": "458e9ed9c019d30636ea3f7793643b59748df8b51806034042a31ac2199b433c",
+      "after_sha256": "8407075e784297b12a39e039c64fcb7b318a1c8aafd451fb9cffccdfb20cea61",
+      "changed_rows": [
+        "P24",
+        "P31"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "sha256": "cb50e663f9171dd3d8186d5b1c683a6e69b45020263e26c4099c49d3d904e36d"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "sha256": "04a985d50f9c8a6db007a2f7544f29cc3b1bd6e11f3b95fad38a756cff6340ea"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "sha256": "8407075e784297b12a39e039c64fcb7b318a1c8aafd451fb9cffccdfb20cea61"
+    }
+  ]
+}

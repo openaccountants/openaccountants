@@ -1,0 +1,83 @@
+{
+  "head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "content_commit": "15695d500186ca1b1d1d6d418b57d1e5d79a54d4",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "branch": "codex/madagascar-property-2026",
+  "draft_pr": 1224,
+  "read_on": "2026-11-01",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "sha256": "4007dfb36023adbd7c81a47d64201062163a7ed51677cb3269132ae450f98333",
+      "git_blob": "7e3c1f91b653bde833616e928f1affa914b61a81",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "sha256": "458e9ed9c019d30636ea3f7793643b59748df8b51806034042a31ac2199b433c",
+      "git_blob": "4caab5921e66a7b1a113b0bd73d9a12d5ae87912",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.json",
+      "sha256": "10c78266864e4c6538280eb2a682766f4744ff4cfd24138b64a83bbd2dc6fd92",
+      "git_blob": "8c61ab1cd2aa269d9057b794d399af3817571baf",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.md",
+      "sha256": "10d1b8a50a654aeec9cc676ac4f948c8cff0cd851adbc9046118a591a487b05d",
+      "git_blob": "d714962d5c0ff3f726636b1ddadce43da660d595",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/preservation-baseline.json",
+      "sha256": "f5a3d2fba6186c11cf435cd084791289323ee429e598dc76ec449adf1e6ba9bb",
+      "git_blob": "508addb9d2b9fbb46c3da8237f944f2fbb848094",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/readme-addition.json",
+      "sha256": "96de4f604df9618c255d7725b9feac2c6f7220ecea4dcd7fe0b6803abeeed913",
+      "git_blob": "a78008aaec0a64ddd574ec3a1a4500929bc47381",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/source-identities.json",
+      "sha256": "31b2a83587e3d3b0e38f5b6aae6b05a5edaf3aa814514bc987fc343d0136e7f3",
+      "git_blob": "d5c0f3210a75524f6658c6bf29044f1134aac257",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-check.py",
+      "sha256": "82950dfee2b7f637cef7b104226d7ff9ff0705f79b96c3d34b3c34bf0a24e195",
+      "git_blob": "4649f4780e676eea230dd7791ab2df54cf63ebc8",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-checks.json",
+      "sha256": "047a51aeee80ded37c39d4534b4de830f3f5970c83671267252ee172084bdc22",
+      "git_blob": "c132eecd84736c1421573a2847ba37f6f766f237",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-record.md",
+      "sha256": "da93fdbadd919e62480f3996d2389224a7b2741f6c596073639805030decd60a",
+      "git_blob": "5451be1a645b49c4c13c534a0c54242a0329eb66",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "sha256": "eb68d28e49fb0206795798be902880897ec64dbc1e056bea36bf97ad4b367e2e",
+      "git_blob": "57cf258b95c5d4c22e2a3a2b6cb94cd3584be581",
+      "worktree_equals_frozen": true
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "sha256": "75f8d4a60134a9d9347aee72b6c3d57b35077bda3622bfaa2aa3da8daefec30d",
+      "git_blob": "8faeffe8746f6184097f0fda45b9a00c2ba72129",
+      "worktree_equals_frozen": true
+    }
+  ],
+  "scope": "Read-only source/Guide review plus additive reviewer evidence. No accountant attestation or release/merge approval."
+}

@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=<existing-validation-deps> python3 evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+  "returncode": 0,
+  "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n{\n  \"source_rule_rows\": 46,\n  \"shape_checks\": 15,\n  \"shape_problems\": {\n    \"tax_year_current\": [],\n    \"sources_read_dates\": [],\n    \"rates_rows_sourced\": [],\n    \"canonical_headings\": [],\n    \"two_oa_checks\": [],\n    \"version_numeric\": [],\n    \"tier_honest\": [],\n    \"no_em_dash\": [],\n    \"not_yet_confirmed\": [],\n    \"reviewed_on\": [],\n    \"read_date_evidence\": [],\n    \"sources_columns\": [],\n    \"source_hosts\": [],\n    \"jurisdiction_body\": [],\n    \"year_matches_link\": []\n  },\n  \"prior_guides_unchanged\": 9,\n  \"prior_evidence_blobs_unchanged\": 48,\n  \"new_guide_sha256\": \"0ccca3441ab66da12136c8c4d9761f3f3dc6788315be53ec8783899a70e055a0\",\n  \"old_topic_rule\": \"All prior introductions/headings/bullets/tables/frontmatter/CTA remain at identical old Guide blobs; no old Guide rewrite.\"\n}\n",
+  "stderr": "",
+  "independent_review": "pending"
+}
