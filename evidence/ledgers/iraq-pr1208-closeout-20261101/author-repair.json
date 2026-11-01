@@ -1,0 +1,93 @@
+{
+  "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+  "initial_review_preserved": true,
+  "repairs": [
+    "IQ021 independence condition beside amount and in ledger",
+    "IQ005/010/009/011/036/037 exact Arabic lexical corrections",
+    "IQ040 hotel crossreference corrected",
+    "PIT/CORP/overview five explicitly named held predecessor subjects",
+    "Read status truthful at limited recorded scope; payroll law18–19 context"
+  ],
+  "precise_old_destinations_repaired": [
+    [
+      "pre-pr",
+      "iq-corporate-income-tax.md",
+      19
+    ],
+    [
+      "pre-pr",
+      "iq-income-tax.md",
+      26
+    ],
+    [
+      "pre-pr",
+      "iq-income-tax.md",
+      27
+    ],
+    [
+      "pre-pr",
+      "iq-income-tax.md",
+      28
+    ],
+    [
+      "pre-pr",
+      "iq-tax-overview.md",
+      18
+    ],
+    [
+      "original-pr",
+      "iq-income-tax.md",
+      120
+    ]
+  ],
+  "files": {
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/claim-rows.json": {
+      "before_sha256": "be0122511b8129fa75488b310e83a6300d709ab77f4d5ea1db7314fd6fcc9da7",
+      "after_sha256": "8f39760fe40df85321081579800ac639193186e86cefb842a4d6be9d2a4d7400"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-corporate-income-tax.md": {
+      "before_sha256": "9341a8983a6d56f461fcaf57db3bd98a5f2deba98206c4ebc6a233612f1b39e3",
+      "after_sha256": "935362552e87bdacc0ac9faf43a2f76dd18153e1992394be0bb9bd5607f32430"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-income-tax.md": {
+      "before_sha256": "8f0439118fd82ef1dbb9fd938ed44136f1a961eff518d3ec7209289f64807017",
+      "after_sha256": "711d7fe3f5ee71bb08451c92119f3fd16a6a9ef9720e0be2bbd3b3285a46ea92"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-payroll-social.md": {
+      "before_sha256": "865d594dd31eb482b83bd70af878569542a7b7c0cb56fd5a6c7388dce44c4568",
+      "after_sha256": "f454d305c9ede9b2d0287a6e864ddaa658371e3e228f5f89c3e9ecfe5e24e3d3"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-vat-gst.md": {
+      "before_sha256": "afe3668c56bf50afa21ff0df34ec20808a7b5eb213c220f15f4b8786c0406d03",
+      "after_sha256": "9778d24deaa72c4b4baf2e897e1c29b3e6c5a4d39066359071f2e31a44470d83"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/old-lines.json": {
+      "before_sha256": "4e1de697f8959d369367687666d2b98f8698156d8fc34502c5e96f7e3e5caec6",
+      "after_sha256": "b9a89817ca0c8f76aedf279c4bee724c271f49656fa15a0a1fbcca3ecff4ecf7"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/old-topic-destinations.md": {
+      "before_sha256": "7b55c6e86cbfe7cfefa4aed0644cb12377c1c9fdb0873d78dae6acccfd33a4a4",
+      "after_sha256": "6ded3f815f9e3a7a2ac6b212ae90cafc457415de59504c001c377926ad7c7f3b"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/source-manifest.json": {
+      "before_sha256": "e792ea622532ec31ad962077b80dd0dbcb2f586d26d26c1c972cc55800e155f7",
+      "after_sha256": "bf2affd24af1f1ed417495696415be96fb5b7522e5642707aff1b2bc6e2369f6"
+    },
+    "skills/iraq/iq-corporate-income-tax.md": {
+      "before_sha256": "34b0194086224b32f115de1fc975c641c7ac7999affba9b0021eb81ab7943614",
+      "after_sha256": "c1a64678198eeff2595433a7b7b95359a21398c4e90814acb1e9bd23c72f09c4"
+    },
+    "skills/iraq/iq-income-tax.md": {
+      "before_sha256": "913bdb5980a0891e4a8c138a7c2afd2d2938680a748cb99a3667893405b55e03",
+      "after_sha256": "b2a05dc6341c193f068fcf3a99b42760a8a7bfc307fe8b775394f926b6d4e9de"
+    },
+    "skills/iraq/iq-payroll-social.md": {
+      "before_sha256": "cf54f0dfccf823420fdd58b9135544546bed3af497ee5c17d4e9dd8e7dba5dac",
+      "after_sha256": "a6a4f684179aeac43ab478409cbe4fd93311f76c0142bb64f2814df6987abda5"
+    },
+    "skills/iraq/iq-tax-overview.md": {
+      "before_sha256": "5756800c3bfcbdcb25807a3a50bfbd15273d6b277aa86f7804b4c79c52e2dec0",
+      "after_sha256": "795e1b77b5372b4d639554a4a71db71853d593a043e5b97d88940c9ed3da24f1"
+    }
+  }
+}
