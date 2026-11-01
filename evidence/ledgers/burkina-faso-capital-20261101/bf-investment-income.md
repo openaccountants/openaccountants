@@ -561,4 +561,3 @@ The corporate IS credit stays in bf-corporate-tax; it is not an individual credi
 Source: https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf | printed/physical page(s) 45 | read 2026-11-01 | PDF SHA256 `a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c`.
 
 > encaissés par les sociétés et compris dans les bénéfices imposables
-

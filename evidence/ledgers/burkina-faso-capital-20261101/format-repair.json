@@ -1,0 +1,7 @@
+{
+  "path": "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.md",
+  "reason": "Initial whole-base git diff --check reported a new blank line at EOF. Removed only the final extra newline.",
+  "before_sha256": "4888510f5e82b4210eef2785a97ab338c80b453212411eb4658e45410018a0d8",
+  "after_sha256": "65177d2dba4b2cad8107e0f08ff36236bc3ce99a70b2ebc3571162fbea6dbdd6",
+  "law_change": false
+}
