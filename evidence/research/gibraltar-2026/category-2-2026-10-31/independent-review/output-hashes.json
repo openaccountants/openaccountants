@@ -1,0 +1,11 @@
+{
+  "excluded_self": "output-hashes.json bound separately",
+  "files": {
+    "checks.txt": "375b97201161f714b460c8f058b75ddb9f5f40a02a28157cf3aed786477e94eb",
+    "input-hashes.json": "f741bc130ce795feadb2524da8a0c7f5fa8b36dfd9edfb125d5a2a73b245b43f",
+    "review.md": "3c1c53e12800490ff68efca274da17d6897b7757089952d4f53fd5e033f55406",
+    "row-outcomes.json": "cc385c141c2256b29e20bea62c76996af122f3e95e314303c4d49abeb5b58dcd",
+    "source-access.json": "bfc8ab5539d438b405cc82be564e3bf98b82b7d5db8029d6af443f96af534b81",
+    "verdict.json": "b0b6ad6236f38006e992fd1b8635acd96cce94f57086bff5e06cf398cb4e10ed"
+  }
+}

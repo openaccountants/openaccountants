@@ -2,13 +2,13 @@
 name: yt-vat-and-goods-imports
 description: >
   Mayotte reference distinguishing the absence of local VAT from customs and octroi de mer obligations on goods. Explains EU customs-territory membership, import declarations, separate destination taxation and the need for tariff classification and exemption evidence. Uses French customs guidance and flags conflicting VAT recodification dates in retrieved tax publications rather than prescribing an unverified future invoice citation. Services, detailed valuation, product tariffs, electronic reporting and independent accountant review are outside this initial source-cited draft; no claim of comprehensive territorial coverage is made.
-version: 0.1
+version: 0.2
 jurisdiction: YT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -39,8 +39,6 @@ Check the destination's import treatment separately. Customs' general overseas V
 The customs page cites CGI article 294(1) for Mayotte's VAT non-application. Retrieved tax-authority publications give inconsistent dates for replacing CGI references with the CIBS, and a direct current-date Légifrance fetch failed. The non-application statement is corroborated by customs, but this research has not completed the amendment chain governing the precise new reference and commencement. Do not use this Guide to prescribe a future CIBS invoice citation. [Customs](https://www.douane.gouv.fr/fiche/vos-echanges-commerciaux-avec-mayotte); [tax-authority DOM tax page](https://www.impots.gouv.fr/professionnel/questions/quels-impots-dois-je-payer-pour-mon-activite-dans-les-dom).
 
 Current product tariffs, exemptions, detailed customs valuation, service transactions and electronic reporting obligations still need separate verification. The tax-authority URL returned a maintenance page when directly opened; the research record distinguishes that from retrieved search text. Independent source review and accountant attestation remain pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

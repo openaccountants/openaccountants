@@ -1,13 +1,13 @@
 ---
 name: be-employee-income-tax
 description: "Belgian personal income tax (personenbelasting / impot des personnes physiques) for employees and pensioners who are Belgian residents, for income 2026 (assessment year 2027). Covers the art. 130 scale (25%, 40%, 45%, 50%), the tax-free amount of EUR 11,550 and its supplements for children and dependants, the 30% lump sum for employee expenses capped at EUR 6,070 versus actual costs, the fiscal work bonus, the pension and replacement income reduction, the main federal reductions (pension savings, long-term savings, gifts, childcare), the municipal surcharge, joint assessment and the marital quotient, the credit for payroll withholding (bedrijfsvoorheffing), the refund or balance, Tax-on-web filing, the simplified proposal, tax increases and late interest. Trigger on: Belgian tax return employee, aangifte personenbelasting, Tax-on-web, belastingvrije som, forfaitaire beroepskosten, huwelijksquotient, bedrijfsvoorheffing refund, voorstel vereenvoudigde aangifte, gemeentebelasting. Out of scope: be-income-tax (self-employed), belgium-payroll, be-capital-gains, be-cross-border, be-social-contributions, belgium-crypto-tax."
-version: 0.1
+version: 0.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -264,8 +264,6 @@ expected:
 | RSZ, administrative instructions 2026/3, contribution rates | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html | 2026-10-23 |
 
 Not yet confirmed: the Tax-on-web opening date and any administrative extension for income 2026 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the legal end dates of art. 308 are given instead); the regional surcharge rates and the autonomy factor for income 2026 that split the basic tax between the federal state and the regions (the examples assume they offset exactly); the indexed regional amounts for service vouchers and the regional home loan rules; the detail of the new minimum tax credit for dependent children in chapter 2 of the law of 15 July 2026; which date fixes the municipality whose rate applies; the social work bonus amounts and ceilings for January to June 2026 (RSZ 2026/3 shows only the amounts from 1 July 2026) and for blue-collar workers in detail.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

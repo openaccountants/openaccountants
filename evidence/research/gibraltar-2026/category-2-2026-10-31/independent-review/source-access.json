@@ -1,0 +1,168 @@
+{
+  "sources": [
+    {
+      "id": "RULES",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "63e0dc460366a812052d879a29d468ba9dcf9f4fb89dec57e91bc08e0b3627da",
+      "fresh_sha256": "63e0dc460366a812052d879a29d468ba9dcf9f4fb89dec57e91bc08e0b3627da",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "AMEND",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "83773d65a1e1fc1e441b3f9779a0c9682e97d4f59b4d26cca66495150805e80a",
+      "fresh_sha256": "83773d65a1e1fc1e441b3f9779a0c9682e97d4f59b4d26cca66495150805e80a",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "APPLICATION",
+      "url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "6f01b532b1602ca3fefd102e69f5dabd1e1e68d65f9c54da7a0e5dbf15aa1bb9",
+      "fresh_sha256": "6f01b532b1602ca3fefd102e69f5dabd1e1e68d65f9c54da7a0e5dbf15aa1bb9",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "CHECKLIST",
+      "url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "1672c5a78382e4b68e48aac5dd334cfaf04f487a970352a95dd757385d5a14f2",
+      "fresh_sha256": "1672c5a78382e4b68e48aac5dd334cfaf04f487a970352a95dd757385d5a14f2",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "ACCOM",
+      "url": "https://www.gibraltarfinance.gi/uploads/forms/CAT%202%20Approval%20of%20Residential%20Accommodation%20Form.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "be022140cfd03c4d63260968d3b75173c38cbd971f46097da786c7103bedbf8e",
+      "fresh_sha256": "be022140cfd03c4d63260968d3b75173c38cbd971f46097da786c7103bedbf8e",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "IT1C",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "0eb9e07c0372eee646535d12a37da6326c2cdd428f6ef70ce82f0051db640dfb",
+      "fresh_sha256": "0eb9e07c0372eee646535d12a37da6326c2cdd428f6ef70ce82f0051db640dfb",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "FAQ",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "01b68ae7d34145ec14437f69db9b9ef85f053e7f38d41404d96e845c18534d28",
+      "fresh_sha256": "75e831170109df4a69cc2d7c9c40d7b0664492f1d6b6f8698d9c7422548d840d",
+      "byte_match": false,
+      "second_html_fetch_sha256": "201225cbe281024dcf5372f473894c9625311b8b208479aa4702b18fb538382b",
+      "current_content_check": "Cited visible excerpt unchanged after whitespace normalization; dynamic raw HTML differs."
+    },
+    {
+      "id": "PAYMENTS",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/report-changes",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "1103bfd033b8b1fa1265c97fc37368e267515b3e2f2076e27f0c2f39a9808052",
+      "fresh_sha256": "a044f90e5230fb7e05a0e979703bebbba927c4551c4f71ed1786a2d19a6a88b3",
+      "byte_match": false,
+      "second_html_fetch_sha256": "d91341c628cc73b208131fb01f768f4344869bb17a0f800d9996b74a2aa849e5",
+      "current_content_check": "Payment portal label and tax.egov.gi link present; dynamic raw HTML differs."
+    },
+    {
+      "id": "PAYGUIDE",
+      "url": "https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "c30bbcf315bfe1abc7f19afdedef570ba4f210363c9bd2246b3bfff11889ef99",
+      "fresh_sha256": "c30bbcf315bfe1abc7f19afdedef570ba4f210363c9bd2246b3bfff11889ef99",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "ANNOUNCE",
+      "url": "https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "63811fe5dfeab306aa053a63ac651009edb046043e7e0b121a186c747fa278ed",
+      "fresh_sha256": "4d6402aad233122a072c4eefff090f3db8ab473c8b19a4d9c1ac125103668bf4",
+      "byte_match": false,
+      "second_html_fetch_sha256": "744aa34b41f0814437541276e627e794f1115017dab7db2d1a4f61e25ddee2a7",
+      "current_content_check": "Cited visible excerpt unchanged after whitespace normalization; dynamic raw HTML differs."
+    },
+    {
+      "id": "OLDGUIDE",
+      "url": "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "fd5d1cee8fe2bc20d768413f4199836fe6003acad9c6c5dfc360aea55ad6ea40",
+      "fresh_sha256": "fd5d1cee8fe2bc20d768413f4199836fe6003acad9c6c5dfc360aea55ad6ea40",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "RATES",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+      "fresh_sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    },
+    {
+      "id": "ACT",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "read_date": "2026-10-31",
+      "method": "ordinary direct urllib GET; bytes held in memory only",
+      "http_status": 200,
+      "writer_capture_sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "fresh_sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "byte_match": true,
+      "second_html_fetch_sha256": null,
+      "current_content_check": "Exact raw PDF match; privately read native text and relevant neighbouring provisions."
+    }
+  ],
+  "blank_payment_form": {
+    "url": "https://tax.egov.gi/taxpayments/Default",
+    "method": "web open of official egov link",
+    "observed": "Name, Phone, Email, Next, Finalize and Review; generated reference instruction distinguishes later bank transfer.",
+    "limits": "No taxpayer data, form creation, submission or payment."
+  },
+  "reuse_clearance": "Not assessed; parent publication-rights filtering remains separate. No fresh full captures persisted or copied into Git.",
+  "access_limits": "No access block or CAPTCHA encountered in successful ordinary direct source GETs; earlier web open could not parse amendment URL, ordinary direct GET succeeded."
+}

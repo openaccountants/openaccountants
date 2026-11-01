@@ -42,3 +42,26 @@ path = [
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Glimpse Ltd and Open Accountants contributors"
 SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
+
+# Exact statutory API data and generated readers retain their source licence.
+[[annotations]]
+path = "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Stiftelsen Lovdata; source Norwegian legislative authorities"
+SPDX-License-Identifier = "NLOD-2.0"
+
+# Two Japan Guides adapt MIT-licensed work by Kazuki Nagata
+# (https://github.com/kazukinagata/shinkoku). MIT requires its copyright and
+# permission notice in copies; see LICENSES/MIT.txt.
+[[annotations]]
+path = [
+  "skills/japan/jp-etax-filing.md",
+  "skills/japan/jp-incorporation.md",
+  "packages/japan/jp-etax-filing.md",
+  "packages/japan/jp-incorporation.md",
+  "agent-skills/jp-etax-filing/SKILL.md",
+  "agent-skills/jp-incorporation/SKILL.md",
+]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Glimpse Ltd and Open Accountants contributors", "2025 Kazuki Nagata"]
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0 AND MIT"

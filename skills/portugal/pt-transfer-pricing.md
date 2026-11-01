@@ -1,13 +1,13 @@
 ---
 name: pt-transfer-pricing
 description: "Use this skill for Portuguese transfer pricing (preços de transferência) under article 63 of the IRC Code and Portaria 268/2021. It covers related parties (relações especiais, the 20% holding test), domestic and cross-border dealings, permanent establishments, the arm's length rule and methods, intra-group services, self-adjustments in the Modelo 22, the documentation file (Dossier Principal and Dossier Específico), the EUR 10 million exemption and the EUR 100,000 / EUR 500,000 transaction exemption, the SME simplified file, disclosure in the IES, country-by-country reporting (EUR 750 million) and its notification, advance pricing agreements (art. 138 CIRC, Portaria 267/2021), penalties under RGIT art. 117(6), and corresponding adjustments and the EU dispute procedure (Lei 120/2019). Tax year 2026. Trigger on: transfer pricing Portugal, preços de transferência, dossier fiscal, relações especiais, CbCR Portugal, APPT, Portaria 268/2021. Out of scope: IRC rates and the base in general (pt-corporate-tax), treaty relief for individuals (pt-foreign-source-treaties), VAT (portugal-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -230,8 +230,6 @@ Both headroom figures are zero or more, so the exemption applies. A negative fig
 | LGT art. 35, compensatory interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-22 |
 
 Not yet confirmed: whether the 2026 State Budget law (Orçamento do Estado 2026) touched any rule here (its text was not read; the consolidated CIRC pages read on 2026-10-22 show no 2025 or 2026 change to arts. 63, 87-A, 121-A, 130 or 138, and art. 87 shows Lei 64/2025 as the last change); the APA fee amounts in Portaria 923/99 (not read); which IES annex and table carries the art. 63(7) disclosure for 2026 filings (the current IES instructions were not read); the legal interest rate under art. 559 of the Civil Code that sets compensatory interest; the base of the "5% for each day of delay" in RGIT art. 117(6) (the text does not say 5% of what); the SME size tests in the annex to Decree-Law 372/2007; and the Madeira and Azores rates, which are outside this skill.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "MD-CORP-004",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Cu excepţia cazurilor când este prevăzut altceva, se aplică următoarele metode de evidenţă:\n\na) pentru persoanele fizice care nu desfăşoară activitate de întreprinzător – contabilitatea de casă;\n\nb) pentru persoanele fizice care desfăşoară activitate de întreprinzător – contabilitatea de casă sau contabilitatea de angajamente;\n\nc) pentru persoanele juridice – contabilitatea de angajamente.\n\n(2) Prin contabilitate de casă se înţelege metoda conform căreia:\n\na) venitul este raportat la anul fiscal în care acesta este obţinut în mijloace băneşti sau sub altă formă;\n\nb) deducerea se permite în anul fiscal pe parcursul căruia au fost suportate cheltuielile, cu excepţia cazurilor când aceste cheltuieli trebuie raportate la un alt an fiscal, în scopul reflectării corecte a venitului.\n\n(3) Prin contabilitatea de angajamente se înţelege metoda conform căreia:\n\na) venitul este raportat la perioada fiscală în care a fost câștigat;\n\nb) deducerea se permite în perioada fiscală în care au fost calculate sau au fost suportate cheltuielile ori au fost efectuate alte plăţi, cu condiţia că aceste cheltuieli şi plăţi nu trebuie raportate la o altă perioadă fiscală în scopul reflectării corecte a venitului;\n\nc) pierderile aferente returnării activelor livrate în anii precedenţi, sumele reducerii de preţ, disconturilor şi rabaturilor acordate/primite în perioada de gestiune pentru livrările/achiziţiile efectuate în anii precedenţi se raportează şi se deduc respectiv în scopuri fiscale în perioada fiscală în care acestea au fost constatate şi/sau calculate, şi/sau acordate;\n\nd) cheltuielile aferente sumei T.V.A. care se exclude din deducere conform art.102 alin.(6) se raportează şi se deduc respectiv în scopuri fiscale în perioada fiscală în care acestea au fost raportate la cheltuieli;\n\ne) venitul aferent sumei T.V.A., atribuită anterior la costuri sau la cheltuieli, care se deduce conform art.102 alin.(7) se raportează în scopuri fiscale în perioada fiscală în care aceasta a fost dedusă.",
+    "quote": "(3) Prin contabilitatea de angajamente se înţelege metoda conform căreia: a) venitul este raportat la perioada fiscală în care a fost câștigat; b) deducerea se"
+  },
+  {
+    "id": "MD-CORP-010",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(32) În situația în care, pe parcursul perioadei fiscale, oricare dintre asociații/acționarii întreprinderilor reglementate de prezentul capitol deține peste 25% din valoarea/numărul titlurilor de participare sau al drepturilor de vot la mai mult de 3 întreprinderi mici și mijlocii, aceștia  trebuie să stabilească subiectul pentru care se aplică regimul de impozitare în modul general stabilit de titlul II.\n\nRegimul de impozitare în modul general stabilit se aplică începând  cu trimestrul în care se înregistrează situația respectivă, astfel încât condiția referitoare la numărul maxim de 3 întreprinderi mici și mijlocii la care oricare dintre asociați/acționari deține peste 25% din valoarea/numărul titlurilor de participare sau al drepturilor de vot să fie îndeplinită.",
+    "quote": "(32) În situația în care, pe parcursul perioadei fiscale, oricare dintre asociații/acționarii întreprinderilor reglementate de prezentul capitol deține peste 25% din valoarea/numărul titlurilor de participare"
+  },
+  {
+    "id": "MD-CORP-011",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(4) Agenţii economici care, pe parcursul perioadei fiscale declarate, devin plătitori de T.V.A. vor aplica regimul de impozitare în modul general stabilit din momentul în care sunt înregistraţi ca plătitori de T.V.A.\n\n(5) Agenţii economici care, pe parcursul perioadei fiscale declarate, au încetat a fi plătitori de T.V.A. vor aplica regimul de impozitare prevăzut de prezentul capitol din momentul menţionat la art.113 alin.(4).\n\n(6) Agenţii economici care aplică regimul de impozitare conform prezentului capitol utilizează regulile de evidenţă prevăzute la cap.6 din prezentul titlu.",
+    "quote": "(4) Agenţii economici care, pe parcursul perioadei fiscale declarate, devin plătitori de T.V.A. vor aplica regimul de impozitare în modul general stabilit din momentul în"
+  },
+  {
+    "id": "MD-CORP-012",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Prin perioadă fiscală se înţelege anul calendaristic la a cărui încheiere se determină venitul.\n\n(2) Pentru agenţii economici nou-creaţi, perioadă fiscală se consideră perioada de la data înregistrării agentului economic şi până la finele anului calendaristic.\n\n(3) Pentru agenţii economici lichidaţi sau reorganizaţi, perioadă fiscală se consideră perioada stabilită conform art.121 alin.(3) şi (31.\n\n(4) Prin derogare de la prevederile alin.(1) al prezentului articol, pentru agenţii economici specificaţi la art.541 alin.(4), perioadă fiscală privind aplicarea regimului de impozitare conform prezentului capitol se consideră perioada de la începutul anului calendaristic şi până la data înregistrării acestora ca plătitori de T.V.A.\n\n(5) Prin derogare de la prevederile alin.(1) al prezentului articol, pentru agenţii economici specificaţi la art.541 alin.(5), perioada fiscală privind aplicarea regimului de impozitare conform prezentului capitol se consideră perioada de la data la care aceştia au încetat a fi plătitori de T.V.A. şi până la sfârșitul anului calendaristic.",
+    "quote": "(1) Prin perioadă fiscală se înţelege anul calendaristic la a cărui încheiere se determină venitul."
+  },
+  {
+    "id": "MD-CORP-013",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Obiect al impunerii este venitul determinat conform contabilităţii financiare, obţinut în perioada fiscală de declarare.\n\n(2) În scopul aplicării prevederilor prezentului capitol, valoarea returului de marfă sau a discontului (reducerii) urmează să micşoreze mărimea obiectului impunerii în perioada fiscală în care a avut loc returul de marfă (s-a acordat discontul), inclusiv în cazul în care vânzarea mărfurilor respective a avut loc în perioadele fiscale precedente.\n\n(3) În obiectul impunerii nu se includ veniturile prevăzute la art. 20 și veniturile rezultate din diferența de curs valutar și/sau diferența de sumă.",
+    "quote": "(1) Obiect al impunerii este venitul determinat conform contabilităţii financiare, obţinut în perioada fiscală de declarare."
+  },
+  {
+    "id": "MD-CORP-015",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(2) Calcularea impozitului se efectuează anual. Achitarea impozitului la buget se efectuează în rate, trimestrial, până la data de 25 a lunii următoare trimestrului corespunzător.\n\n(21) – abrogat.\n\n(3) Darea de seamă privind impozitul pe venit se prezintă nu mai târziu de 25 martie a anului următor perioadei fiscale de declarare.",
+    "quote": "(2) Calcularea impozitului se efectuează anual. Achitarea impozitului la buget se efectuează în rate, trimestrial, până la data de 25 a lunii următoare trimestrului corespunzător."
+  },
+  {
+    "id": "MD-CORP-016",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(5) Contribuabilii care au filiale şi/sau subdiviziuni în afara unităţii administrativ-teritoriale în care se află sediul central (adresa juridică) achită impozitul calculat la buget corespunzător sediului central (adresa juridică) al contribuabilului.\n\n(6) Persoana responsabilă a contribuabilului care a iniţiat procedurile de încetare a activităţii este obligată, în termen de 6 luni de la adoptarea unei astfel de decizii în conformitate cu legislaţia in vigoare, să prezinte darea de seamă privind impozitul pe venit.",
+    "quote": "(5) Contribuabilii care au filiale şi/sau subdiviziuni în afara unităţii administrativ-teritoriale în care se află sediul central (adresa juridică) achită impozitul calculat la buget corespunzător"
+  },
+  {
+    "id": "MD-CORP-019",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Prin derogare de la prevederile art. 56 alin. (2) din Legea nr. 100/2017 cu privire la actele normative, prezenta lege intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, cu excepția prevederilor art. I pct. 4, care intră în vigoare la data de 1 mai 2026.\n\n(2) Prevederile art. I pct. 3 și 7 se aplică pentru perioadele fiscale în care contribuabilii aplică prevederile art. 87 alin. (11) din Codul fiscal nr. 1163/1997.",
+    "quote": "(1) Prin derogare de la prevederile art. 56 alin. (2) din Legea nr. 100/2017 cu privire la actele normative, prezenta lege intră în vigoare la"
+  },
+  {
+    "id": "MD-CORP-028",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(10) Se permite deducerea cheltuielilor ordinare şi necesare suportate de contribuabil pe parcursul perioadei fiscale, neconfirmate documentar, în mărime de 0,2% din venitul impozabil.\n\n(101) Se permite deducerea cheltuielilor ordinare și necesare suportate de contribuabil pe parcursul perioadei fiscale, neconfirmate documentar, pentru procurările care au fost achitate prin intermediul cardului de plată de afaceri (business).",
+    "quote": "(10) Se permite deducerea cheltuielilor ordinare şi necesare suportate de contribuabil pe parcursul perioadei fiscale, neconfirmate documentar, în mărime de 0,2% din venitul impozabil."
+  },
+  {
+    "id": "MD-CORP-031",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(15) Se permite deducerea cheltuielilor achitate de contribuabili în decursul perioadei fiscale sub formă de taxe de aderare şi cotizaţii de membru destinate activităţii patronatelor, fundaţiilor şi altor asociaţii de reprezentare a activităţii de întreprinzător. Plafonul de deductibilitate a acestor cheltuieli constituie 0,15% din fondul de retribuire a muncii sau suma taxelor de aderare și a cotizațiilor de membru în mărime ce nu depășește două salarii medii lunare pe economie, prognozate și aprobate de Guvern pentru anul în care au fost suportate.\n\n(151) Se permite deducerea cheltuielilor efectuate de contribuabili în decursul perioadei fiscale sub formă de alocaţii financiare destinate activităţii sindicatelor pentru utilizarea lor în scopurile stabilite în contractul colectiv de muncă. Plafonul de deductibilitate a acestor cheltuieli constituie 0,15% din fondul de retribuire a muncii sau suma taxelor de aderare și a cotizațiilor de membru în mărime ce nu depășește două salarii medii lunare pe economie, prognozate și aprobate de Guvern pentru anul în care au fost suportate.",
+    "quote": "(15) Se permite deducerea cheltuielilor achitate de contribuabili în decursul perioadei fiscale sub formă de taxe de aderare şi cotizaţii de membru destinate activităţii patronatelor,"
+  },
+  {
+    "id": "MD-CORP-043",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(5) Evidenţa mijloacelor fixe în scopuri fiscale se ţine pentru fiecare obiect separat.\n\n(6) Amortizarea mijloacelor fixe se calculează începând cu luna următoare celei în care mijlocul fix se pune în funcţiune prin utilizarea metodei liniare de amortizare. Mărimea amortizării mijloacelor fixe ce urmează a fi dedusă se determină prin înmulţirea valorii mijloacelor fixe la norma de amortizare respectivă prevăzută la alin.(7).",
+    "quote": "(5) Evidenţa mijloacelor fixe în scopuri fiscale se ţine pentru fiecare obiect separat."
+  },
+  {
+    "id": "MD-CORP-045",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(7) Norma amortizării pentru fiecare mijloc fix se determină ca raport dintre 100% şi durata de funcţionare utilă a acestuia stabilită de Guvern.",
+    "quote": "(7) Norma amortizării pentru fiecare mijloc fix se determină ca raport dintre 100% şi durata de funcţionare utilă a acestuia stabilită de Guvern."
+  },
+  {
+    "id": "MD-CORP-046",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(11) Cheltuielile aferente reparaţiei curente şi capitale a mijloacelor fixe ce nu corespund prevederilor alin.(2) se permit spre deducere în limita a 15% din suma calculată a locaţiunii, arendei, leasingului operaţional sau redevenţei (plăţii pentru concesiune), suportată pe parcursul perioadei fiscale, iar în cazul cheltuielilor de reparaţie a mijloacelor de transport aerian internaţional – în mărime de 100% din suma calculată a ratei de leasing operaţional, suportată pe parcursul perioadei fiscale. În sensul prezentului alineat, prin mijloacele fixe ce nu corespund prevederilor alin.(2) se înţeleg mijloacele fixe care sunt utilizate în activitatea de întreprinzător a agentului economic conform contractului de arendă, locaţiune, leasing operaţional, concesiune, ale căror cheltuieli aferente, potrivit contractului nominalizat, revin arendaşului, locatarului sau concesionarului.\n\n(111) Este permisă deducerea în mărime de 100% a cheltuielilor aferente reparaţiei mijloacelor de transport proprii utilizate la prestarea serviciilor de transport rutier de persoane în regim de taxi.",
+    "quote": "(11) Cheltuielile aferente reparaţiei curente şi capitale a mijloacelor fixe ce nu corespund prevederilor alin.(2) se permit spre deducere în limita a 15% din suma"
+  },
+  {
+    "id": "MD-CORP-047",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(12) Nu se permite deducerea amortizării mijloacelor fixe primite cu titlu gratuit, cu excepţia cazurilor în care valoarea acestora a fost inclusă în venitul impozabil al contribuabilului.\n\n(13) În cazul finanţării parţiale a procurărilor mijloacelor fixe din surse ce constituie venituri neimpozabile, amortizarea se va calcula pentru partea suportată de către întreprindere.\n\n(14) Prin derogare de la alin.(12) şi (13), suma subvenţiilor obţinute ca urmare a efectuării investiţiilor prin procurarea mijloacelor fixe din sursele proprii nu influenţează asupra mărimii costului de intrare a mijloacelor fixe.",
+    "quote": "(12) Nu se permite deducerea amortizării mijloacelor fixe primite cu titlu gratuit, cu excepţia cazurilor în care valoarea acestora a fost inclusă în venitul impozabil"
+  },
+  {
+    "id": "MD-CORP-050",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Nu se permite deducerea impozitului pe venit, instituit în prezentul titlu, a penalităţilor şi a amenzilor aferente lui, precum şi a amenzilor şi penalităţilor aferente altor impozite, taxe şi plăţi obligatorii la buget, a amenzilor şi penalităţilor aplicate pentru încălcarea actelor normative.\n\n(2) Nu se permite deducerea impozitelor achitate în numele unei persoane, alta decât contribuabilul.",
+    "quote": "(1) Nu se permite deducerea impozitului pe venit, instituit în prezentul titlu, a penalităţilor şi a amenzilor aferente lui, precum şi a amenzilor şi penalităţilor"
+  },
+  {
+    "id": "MD-CORP-051",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Se permite deducerea oricărei datorii compromise, conform legislaţiei, dacă această datorie s-a format în cadrul desfăşurării activităţii de întreprinzător.\n\n(2) Nu se permite deducerea provizioanelor, cu excepţia reducerilor pentru pierderi la active şi la angajamente condiţionale, pentru băncile și organizațiile de creditare nebancară, efectuate conform alin.(3), şi pentru pierderi la împrumuturi şi dobânzile aferente (provizioane), pentru organizaţiile de creditare nebancară, efectuate conform alin.(4).",
+    "quote": "(1) Se permite deducerea oricărei datorii compromise, conform legislaţiei, dacă această datorie s-a format în cadrul desfăşurării activităţii de întreprinzător."
+  },
+  {
+    "id": "MD-CORP-052",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Dacă, pe parcursul perioadei fiscale, cheltuielile aferente activităţii de întreprinzător depăşesc venitul brut al contribuabilului în perioada fiscală curentă, suma pierderilor rezultate din această activitate va fi reportată eşalonat pe următoarele cinci perioade fiscale.\n\n(2) Suma reportată pe una din perioadele fiscale următoare celei în care s-au înregistrat pierderile este egală cu suma totală a pierderilor, redusă cu suma totală permisă spre deducere în fiecare din următoarele patru perioade fiscale.\n\n(3) Dacă contribuabilul a suportat pierderi pe parcursul a mai mult de o perioadă fiscală, prevederile prezentului articol se aplică faţă de aceste pierderi în ordinea în care au apărut.",
+    "quote": "(1) Dacă, pe parcursul perioadei fiscale, cheltuielile aferente activităţii de întreprinzător depăşesc venitul brut al contribuabilului în perioada fiscală curentă, suma pierderilor rezultate din această"
+  },
+  {
+    "id": "MD-CORP-053",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Agentul economic rezident are dreptul la deducerea oricăror donaţii făcute de el pe parcursul perioadei fiscale în scopuri filantropice sau de sponsorizare, cu excepția donației de alimente făcute în conformitate cu Legea  nr. 299/2022 privind prevenirea pierderii și risipei de alimente, dar nu mai mult de 5% din venitul impozabil.\n\n(2) Pot fi deduse, conform alin.(1) din prezentul articol, numai donaţiile făcute în scopuri filantropice sau de sponsorizare în favoarea autorităţilor publice şi instituţiilor publice specificate la art.51, a organizaţiilor necomerciale specificate la art.52 alin.(1), a organizațiilor sindicale și patronale, precum şi în favoarea caselor de copii de tip familial.\n\n(3) Donaţiile în scopuri filantropice sau de sponsorizare vor fi deduse numai în cazul confirmării lor în modul stabilit de Guvern.",
+    "quote": "(1) Agentul economic rezident are dreptul la deducerea oricăror donaţii făcute de el pe parcursul perioadei fiscale în scopuri filantropice sau de sponsorizare, cu excepția"
+  },
+  {
+    "id": "MD-CORP-054",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Contribuabilul are dreptul de a trece în cont impozitul pe venit, achitat în orice stat străin, dacă acest venit urmează a fi supus impozitării şi în Republica Moldova. Trecerea în cont a impozitului pe venit poate fi efectuată cu condiţia prezentării de către contribuabil a documentului, care confirmă achitarea (reţinerea) impozitului pe venit peste hotarele Republicii Moldova, certificat de organul competent al statului străin respectiv, cu traducere în limba de stat, cu excepţia celui emis în limba engleză sau în limba rusă.\n\n(2) Mărimea trecerii în cont, specificată la alin.(1), pentru orice an fiscal nu poate depăşi suma care ar fi fost calculată la cotele aplicate în Republica Moldova faţă de acest venit.\n\n(3) Trecerea în cont a impozitului achitat în alt stat se efectuează în perioada fiscală în care venitul respectiv este supus impozitării în Republica Moldova.",
+    "quote": "(1) Contribuabilul are dreptul de a trece în cont impozitul pe venit, achitat în orice stat străin, dacă acest venit urmează a fi supus impozitării"
+  },
+  {
+    "id": "MD-CORP-060",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(4) Prevederile prezentului articol nu se aplică agenţilor economici impozitaţi conform regimului fiscal stabilit la cap.71 din prezentul titlu şi celui stabilit la cap.1 titlul X.\n\n(5) Prin derogare de la prevederile alin.(1) şi (2) ale prezentului articol, agenţii economici care aplică perioada fiscală prevăzută la art.121 alin.(4) sunt obligaţi să achite, până la data de 25 a fiecăror trei luni ale perioadei fiscale curente, sume egale cu 1/4 din:\n\na) suma calculată drept impozit ce urmează a fi plătit, conform prezentului titlu, pentru perioada fiscală respectivă; sau\n\nb) impozitul ce urma să fie plătit, conform prezentului titlu, pentru perioada fiscală precedentă.",
+    "quote": "(4) Prevederile prezentului articol nu se aplică agenţilor economici impozitaţi conform regimului fiscal stabilit la cap.71 din prezentul titlu şi celui stabilit la cap.1 titlul"
+  },
+  {
+    "id": "MD-CORP-064",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Persoanele specificate la art.90 care achită dividende acţionarilor (asociaţilor) săi pe parcursul perioadei fiscale achită ca parte a impozitului o sumă egală cu 12% din profitul perioadei fiscale în curs, din care se vor achita dividende.\n\n(11) Impozitul determinat conform alin.(1) se achită la buget până la data de 25 a lunii următoare celei în care au fost efectuate plăţile în contul dividendelor.\n\n(2) Suma impozitului achitată de agentul economic conform alin.(1) este trecută în cont ca impozit aplicat venitului impozabil al agentului economic respectiv pentru perioada fiscală în care a fost făcută achitarea.\n\n(3) Dacă, în vreo perioadă fiscală, trecerile în cont, permise agentului economic în conformitate cu alin.(2), depăşesc suma impozitului pe venit în perioada fiscală respectivă, diferenţa va fi compensată conform modului stabilit în art.175 şi 176.\n\n(4) Prevederile prezentului articol nu se aplică agenţilor economici impozitaţi conform regimului fiscal stabilit la cap.71 din prezentul titlu şi celui stabilit la cap.1 titlul X.",
+    "quote": "(1) Persoanele specificate la art.90 care achită dividende acţionarilor (asociaţilor) săi pe parcursul perioadei fiscale achită ca parte a impozitului o sumă egală cu 12%"
+  },
+  {
+    "id": "MD-CORP-066",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Persoanele menţionate la art.90 reţin şi achită un impozit în mărime de:\n\n- 12% din plăţile direcţionate spre achitare nerezidentului aferente veniturilor de la art.71, cu excepţia celor specificate la art. 71 alin. (1) lit. a), precum și a celor specificate la liniuţele a doua, a treia şi a patra din prezentul alineat;\n\n- 15% din dividende, inclusiv sub formă de acţiuni sau cote-părţi, aferente profitului nerepartizat obţinut în perioadele fiscale 2008–2011 inclusiv;\n\n- 15% din sumele specificate la art.901 alin.(31) liniuţa a treia;\n\n- 6% din dividendele specificate la art. 71 alin. (1) lit. e).\n\n(2) Prevederile alin.(1) nu se aplică:\n\na) veniturilor nerezidentului ce ţin de activitatea reprezentanţei permanente a acestora în Republica Moldova;\n\nb) veniturilor specificate la art. 71 alin. (1) lit. n) și o) din care se efectuează reţineri conform art.88.",
+    "quote": "(1) Persoanele menţionate la art.90 reţin şi achită un impozit în mărime de: - 12% din plăţile direcţionate spre achitare nerezidentului aferente veniturilor de la"
+  },
+  {
+    "id": "MD-CORP-067",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(1) Impozitul reţinut conform art.6918 şi art.88–91 se achită la buget de către persoana care a efectuat reţinerea până la data de 25 a lunii următoare lunii în care au fost efectuate plăţile.\n\n(2) Dările de seamă privind impozitul pe venit, privind primele de asigurare obligatorie de asistenţă medicală reţinute şi contribuţiile de asigurări sociale de stat obligatorii calculate se prezintă de către plătitorii veniturilor Serviciului Fiscal de Stat până la data de 25 a lunii următoare lunii în care au fost efectuate plăţile, cu excepţia dării de seamă indicate la alin.(3), pentru care este prevăzut alt termen de prezentare.\n\n(3) Persoanele care sunt obligate să reţină impozitul în conformitate cu art.6918 şi art.88–91, cu excepţia impozitului reţinut pentru câștigurile de la loterii şi/sau pariuri sportive în partea în care valoarea fiecărui câștig nu depăşeşte scutirea personală stabilită la art.33 alin.(1), vor prezenta Serviciului Fiscal de Stat, până la data de 25 a lunii următoare încheierii anului fiscal, o dare de seamă, în care vor indica numele şi prenumele (denumirea), adresa şi codul fiscal al persoanei fizice sau juridice în folosul căreia au fost efectuate plăţile, precum şi suma totală a plăţii şi a impozitului pe venit reţinut. Această dare de seamă va include şi datele despre persoanele şi/sau veniturile scutite de impozitare prealabilă conform art.90, precum şi sumele veniturilor achitate în folosul lor. În cazul în care, pe parcursul perioadei fiscale, persoanele care sunt obligate să reţină la sursă impozitul se lichidează sau se reorganizează prin dezmembrare, acestea urmează să prezinte darea de seamă menţionată în termen de 15 zile de la data aprobării bilanţului de lichidare/ repartiţie a întreprinderii în proces de lichidare sau reorganizare.\n\n(4) Persoanele indicate la alin.(3) sunt obligate, până la 1 martie al anului fiscal imediat următor celui în care au fost efectuate plăţile, să prezinte beneficiarului acestor plăţi (cu excepţia celor ce au obţinut venituri conform art.901 şi art.91 alin.(1)) informaţii privind tipul venitului achitat, suma acestuia, suma scutirilor acordate conform art.33-35, suma deducerilor prevăzute la art. 352 alin. (1) și (2), precum şi suma impozitului reţinut, în cazul reţinerii.",
+    "quote": "(1) Impozitul reţinut conform art.6918 şi art.88–91 se achită la buget de către persoana care a efectuat reţinerea până la data de 25 a lunii"
+  },
+  {
+    "id": "MD-CORP-068",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(2) Pentru neplata impozitului, taxei în termenul şi în bugetul stabilite conform legislaţiei fiscale se plăteşte o majorare de întârziere, determinată în conformitate cu alin.(3) pentru fiecare zi de întârziere a plăţii lor, pentru perioada care începe după scadenţa impozitului, taxei şi care se încheie în ziua plăţii lor efective inclusiv.\n\n(21) În cazul în care contribuabilul descoperă că darea de seamă fiscală prezentată anterior conţine greşeli sau omisiuni şi prezintă darea de seamă corectată, precum şi în cazul în care contribuabilul nu are obligaţia prezentării dării de seamă, dar descoperă că au fost efectuate greşit calculul şi plata impozitelor şi taxelor, iar în urma acestora apar obligaţii fiscale suplimentare, se aplică majorarea de întârziere (penalitatea) în conformitate cu prezentul articol, dar nu mai mult decât obligaţia fiscală corespunzătoare.\n\n(3) Cuantumul majorării de întârziere se determină anual în funcţie de rata de bază (rotunjită până la următorul procent întreg), stabilită de Banca Naţională a Moldovei în luna noiembrie a anului precedent anului fiscal de gestiune, aplicată la operaţiunile de politică monetară pe termen scurt, majorată cu 5 puncte, împărţită la numărul de zile ale anului şi aproximată conform regulilor matematice până la 4 semne după virgulă.",
+    "quote": "(2) Pentru neplata impozitului, taxei în termenul şi în bugetul stabilite conform legislaţiei fiscale se plăteşte o majorare de întârziere, determinată în conformitate cu alin.(3)"
+  },
+  {
+    "id": "MD-CORP-072",
+    "quote_in_source": true,
+    "context_in_source": true,
+    "hash_match": true,
+    "changed_keys": [
+      "exact_original_language_quote",
+      "source_context",
+      "source_binding_correction"
+    ],
+    "context": "(4) Diminuarea impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, stabilite în cotă procentuală, prin prezentarea către Serviciul Fiscal de Stat a unei dări de seamă fiscale cu informaţii sau date neveridice se sancţionează cu amendă de la 20% la 30% din suma diminuată.\n\n(41) Prevederile alin.(4) nu se aplică în cazul în care contribuabilul depune de sine stătător darea de seamă corectată în conformitate cu art.188, cu condiţia ca aceasta să nu conţină informaţii şi date neveridice.\n\n(5) Eschivarea de la calculul şi de la plata impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, stabilite în cotă procentuală, se sancţionează cu o amendă de la 80% la 100% din suma impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii nedeclarate, stabilite în cotă procentuală.",
+    "quote": "(4) Diminuarea impozitelor, a taxelor, a primelor de asigurare obligatorie de asistenţă medicală şi a contribuţiilor de asigurări sociale de stat obligatorii, stabilite în cotă"
+  }
+]

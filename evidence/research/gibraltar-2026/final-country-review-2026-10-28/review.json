@@ -1,0 +1,206 @@
+{
+  "candidate": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "review_date": "2026-10-28",
+  "review_type": "fresh independent whole-country new-material source/editorial review",
+  "independence": "Separate reviewer agent with no writer context at dispatch; no delegation. Writer messages during review reported bounded repairs, which are excluded from this pinned initial disposition.",
+  "recommendation": "changes_required",
+  "findings": [
+    {
+      "id": "GI-R1",
+      "priority": "P2",
+      "guide": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "line": 271,
+      "ledger_rows": [
+        "IND-60"
+      ],
+      "ledger": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "ledger_line": 70,
+      "proof_ids": [
+        "IT1p1",
+        "ITGyear"
+      ],
+      "problem": "The IT1 allowance/election year is described as commencing 1 July 2026 without preserving the taxpayer-type distinction. That is the PAYE/HEPSS period; Other uses the year ending 30 June 2026.",
+      "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf",
+      "source_locator": "complete physical page 1, Important information, Section 2 period labels; corroborated by guidance page 3",
+      "exact_quote": "PAYE/HEPSS - Year commencing 01 July 2026\nOther - Year ending 30 June 2026",
+      "source_sha256": "0424f1e3bc81a6ea7040cba4892561bd88abcbcbaedd1a38a2977fce72b4efc6",
+      "correction": "Explicitly distinguish the PAYE/HEPSS allowance/election year commencing 1 July 2026 from Other year ending 30 June 2026. Preserve the separately correct income period, email categories, ID/authority and receipt deadline. Update IND-60 summary.",
+      "guide_change_required": true,
+      "status_at_pin": "open"
+    },
+    {
+      "id": "GI-R2",
+      "priority": "P2",
+      "guide": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "line": 159,
+      "ledger_rows": [
+        "IND-40"
+      ],
+      "ledger": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "ledger_line": 50,
+      "proof_ids": [
+        "A12"
+      ],
+      "problem": "The rule 12 table states that a spouse/partner must not be entitled to rule 7 relief. The statutory condition tests the claimant, if the claimant is a spouse or civil partner; the present wording can instead be read as testing the other partner.",
+      "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+      "source_locator": "Allowances Rules 12, printed page 22",
+      "exact_quote": "if a spouse or civil partner, he is not entitled for the year of assessment to claim a deduction under rule 7",
+      "source_sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+      "correction": "Say: if the claimant is a spouse/civil partner, the claimant must not be entitled to rule 7 relief. Make the same claimant-specific condition explicit in IND-40. Do not change the separately sourced joint-custody rule.",
+      "guide_change_required": true,
+      "status_at_pin": "open"
+    },
+    {
+      "id": "GI-R3",
+      "priority": "P2",
+      "guide": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "line": 322,
+      "ledger_rows": [
+        "PAY-P057",
+        "PAY-P059"
+      ],
+      "ledger": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+      "ledger_line": 1361,
+      "additional_ledger_lines": [
+        59,
+        61
+      ],
+      "proof_ids": [
+        "SGadmin"
+      ],
+      "problem": "SGadmin contains only table-of-contents entries ending in page 8. A true quote match therefore fails the rule/source-context test: it does not establish the 15-day payment, portal, written-authority or annual assessment/refund/collection conditions.",
+      "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf",
+      "source_locator": "operative physical page 8, Monthly remittances, Change of contribution rate, End of contribution year",
+      "exact_quote": "All monthly payments must be paid to the Income Tax Office within fifteen days from the end of each month.",
+      "additional_source_quote": "unless written authority has been issued by the Income Tax Office.",
+      "source_sha256": "1ce3b5b26ca05d8f51c4f92f4ccc1fb8f95d7bc577e6c2cc21c04618b8245ad8",
+      "correction": "Replace SGadmin with complete short exact quotations from operative physical page 8 and fix the extractor to select that body occurrence. Update both JSON and canonical Markdown proof. No Guide method or £2,400 less £2,250 arithmetic change is required: actual page 8 supports it.",
+      "guide_change_required": false,
+      "status_at_pin": "open"
+    }
+  ],
+  "all333_checked": true,
+  "counts": {
+    "corporate": {
+      "rows": 118,
+      "proof_units": 118,
+      "quote_snippets": 372,
+      "visual_snippets": 0,
+      "guide_sha256": "aee5a9f04743ad23b8ddd43d9ac4e95fbd22b92a8888467741349f9953a03c67",
+      "ledger_json_sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f"
+    },
+    "individual": {
+      "rows": 60,
+      "proof_units": 87,
+      "quote_snippets": 457,
+      "visual_snippets": 0,
+      "guide_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
+      "ledger_json_sha256": "f4ce1cf826c0420743bea33d8c6f5cacec16f13a758ef4b27bce62d78e1f025a"
+    },
+    "payroll": {
+      "rows": 105,
+      "proof_units": 117,
+      "quote_snippets": 637,
+      "visual_snippets": 51,
+      "guide_sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+      "ledger_json_sha256": "ed787b2653845c0e6ebaf6dd05185b2d4b28228f0cbb83c74844e2d9f7032c3d"
+    },
+    "consumption": {
+      "rows": 50,
+      "proof_units": 63,
+      "quote_snippets": 502,
+      "visual_snippets": 0,
+      "guide_sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+      "ledger_json_sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6"
+    }
+  },
+  "total_quote_snippets": 1968,
+  "text_snippets_checked": 1917,
+  "visual_snippets_checked": 51,
+  "text_quote_match_exceptions_remaining": 0,
+  "rows_affected": 4,
+  "other_rows_checked": 329,
+  "corporate_disposition": "Source-cited-draft ordinary methods supported within explicit stated limits; no actionable new-material finding.",
+  "individual_disposition": "GI-R1 and GI-R2 require precise type/year and claimant corrections before acceptance.",
+  "payroll_disposition": "Ordinary methods supported, but SGadmin proof requires GI-R3 repair before complete ledger acceptance.",
+  "consumption_disposition": "Source-cited-draft ordinary methods supported within explicit stated limits; no actionable new-material finding.",
+  "arithmetic": {
+    "executable_files": 28,
+    "oa_checks": 61,
+    "oa_check_failures": 0,
+    "additional_prose_checks": 129,
+    "additional_prose_failures": 0
+  },
+  "validation": {
+    "targeted_schema_guides": 18,
+    "targeted_schema_errors": 0,
+    "targeted_schema_warnings": [
+      "Inherited gi-global-minimum-tax tax_year2024 freshness warning"
+    ],
+    "strict_metadata_guides": 4,
+    "strict_metadata_errors": 0,
+    "strict_metadata_warnings": 0,
+    "unit_tests": 129,
+    "unit_tests_passed": true,
+    "full_pr_validation_no_index_check_passed": true,
+    "full_validation_limit": "The full validator invocation with --help (not a supported flag) ran full mode and failed on stale generated index.json counts. No generated inventory was changed; --no-index-check and targeted18Guide schema checks pass.",
+    "remote_fetch_limit": "git fetch origin failed because github.com did not resolve in this sandbox. Exact local candidate and official-source cache hashes are the review basis; parent independently checks the remote.",
+    "full_pr_validation_scope": "Repository PR-mode check ran during writer repair worktree; exact pinned eighteen Guide inputs and61examples separately validated from commit bytes."
+  },
+  "preservation": {
+    "original_guides": 18,
+    "original_research_records_byte_exact": 121,
+    "accepted_research_records_byte_exact": 32,
+    "old_controls_byte_exact": 47,
+    "old_paragraph_maps_checked": 346,
+    "spotchecks": 24,
+    "protected_platform_metadata_and_CTA_preserved": true,
+    "main_guides_canonical_sections": 9,
+    "main_guide_checks_each": 2,
+    "lost_content_restored": 0
+  },
+  "cross_guide_consistency": {
+    "finding": "No additional contradiction found in the reviewed ordinary methods. Company and individual payment calendars remain distinct; benefit values are kept distinct from SI earnings; domestic pension provisions do not override treaty determinations; customs debt remedies remain distinct from section102refunds; transition deduction remains an income-profit deduction.",
+    "frozen_scope": "Earlier accepted interest/foreign-exit methods and32review files are unchanged and were not reopened or treated as approval of the four new candidates.",
+    "finite_domestic_check": "Positive s6notice/s63–63Arecord duties and s37claim/correction clocks re-read. CT1/CT100 are not proof of a distinct domestic foreign-credit correction route. No exemption inferred from an unlocated local-file form."
+  },
+  "remaining_country_status": {
+    "all_seven_domains_partial": true,
+    "issue398_must_remain_open": true,
+    "not_cleared": [
+      "Corporate extended-period/allocation/disposal/Gazette questions",
+      "Individual part-year,senior/dependant/special-home,property/energy/SI deduction and credit interactions",
+      "Payroll current-linked tables versus notes,missed-SI recovery,concurrent allocation,annual/quarterly schedules,benefit threshold and pension cross-reference",
+      "Consumption section102export-refund channel/deadline,warehousing endpoints,relief extension,commodity/aid/currency/transition cases",
+      "TP specialised scope/group-floor implementation and domestic foreign-credit/exit operational limits"
+    ]
+  },
+  "acceptance_scope": "No acceptance of the pinned four-Guide candidate until the three findings are closed on an exact repair head. Any later acceptance is only independent AI source/editorial acceptance of these source-cited-draft ordinary methods and their preserved limitations. It is not country completeness, a legal clearance, professional attestation or merge authorisation.",
+  "reviewer_actions": {
+    "guide_edits": false,
+    "commits": false,
+    "pushes": false,
+    "external_messages_or_comments": false,
+    "live_filings_or_payments": false,
+    "paid_apis": false,
+    "professional_attestation": false
+  },
+  "artifacts": [
+    "review.md",
+    "review.json",
+    "row-check-results.json",
+    "prose-arithmetic-results.json",
+    "original-topic-spotchecks.json",
+    "preservation-and-shape.json",
+    "example-check-summary.json",
+    "independent-examples.log",
+    "independent-schema-results.json",
+    "independent-metadata.log",
+    "independent-unit-tests.log",
+    "repo-pr-validation.log",
+    "ct4-independent-cell-comparison.json",
+    "ct4-metadata-check.json"
+  ],
+  "source_receipt_checks": 63,
+  "source_receipt_hash_failures": 0
+}

@@ -1,0 +1,830 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	    <meta name="description" content="">
+        
+	    <title>Lógasavn</title>
+
+	    <link href="https://logir.fo:443//css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://logir.fo:443//css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://logir.fo:443//css/fonts.css" rel="stylesheet">
+    	<link href="https://logir.fo:443//css/sumoselect.css" rel="stylesheet">
+        <link href="https://logir.fo:443//css/skin-win7/ui.fancytree.css" rel="stylesheet">
+        <link href="https://logir.fo:443//css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    	<link href="https://logir.fo:443//css/theme.css" rel="stylesheet">
+        <link href="https://logir.fo:443//css/responsive.css" rel="stylesheet">
+
+        <link rel="icon" href="https://logir.fo:443//favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="https://logir.fo:443//favicon.ico" type="image/x-icon">
+
+        
+    <meta property="og:image"content="https://logir.fo/img/logo_big.png" />
+    <meta property="og:title" content="Løgtingslóg nr. 23 frá 20. mars 2018 um bókhald (Bókhaldslógin)"/>
+    
+    <link href="https://logir.fo:443/css/pages/view-law.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        
+        <a class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101" title="Scroll Up"></a>
+
+         <!-- PAGE_BODY -->
+        <section class="page-wrap" style="display: none">
+		
+            <!-- header -->
+            <header class="header">
+	        
+                <nav class="navbar affix-top" data-spy="affix" data-offset-top="51">
+				    <div class="container">
+				
+					    <div class="navbar-header">
+						    <a class="navbar-brand" href="https://logir.fo:443/">
+							    <img src="https://logir.fo:443//img/logo.png" alt="Company Logo" title="LÓGARSAVNIÐ">
+						    </a>
+						    <button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+							    <span class="sr-only">Toggle navigation</span>
+							    <span class="fa fa-bars fa-lg"></span>
+						    </button>
+					    </div>
+                	    <div class="collapse navbar-collapse" id="navigation">
+                    	    <div class="inner-wrap">
+                                <ul class="nav navbar-nav" id="top-nav">
+								    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#contact-us-modal"><span class="icon icon18"><img src="https://logir.fo:443//img/v2/i-email.svg" alt="Skriva til netvørðin"></span></a></li>
+								    
+								    <li><a href="/MyLawList.aspx"><span class="icon icon18"><img src="https://logir.fo:443//img/v2/i-favorite.svg" alt="Tín lógalisti"></span></a></li>
+								    <li class="nav-group"><a href="javascript:__doPostBack(&#39;_ctl0:_ctl0&#39;,&#39;&#39;)"><span class="icon icon-flag"><img src="https://logir.fo:443//img/v2/i-flag-en.svg" alt="Enskt"></span></a></li>
+								    <li><a href="javascript:__doPostBack(&#39;_ctl0:_ctl1&#39;,&#39;&#39;)"><span class="icon icon-flag"><img src="https://logir.fo:443//img/v2/i-flag-fo.svg" alt="Føroyskt"></span></a></li>
+								    
+                                    
+                                        <li class="nav-group"><a href="#" data-toggle="modal" data-target="#sign-in-modal"><span class="icon icon18"><img src="https://logir.fo:443//img/v2/i-user.svg" alt="icon"></span></a></li>
+                                    
+                                </ul>
+                                <ul class="nav navbar-nav" id="main-nav">
+                                    <li><a href="/LawDatabase.aspx">Um lógasavnið</a></li><li><a href="/Reservations.aspx">Fyrivarni</a></li><li><a href="/Links.aspx">Slóðir</a></li><li><a href="/LawsByNews.aspx">Kunngerðasavnið</a></li><li><a href="http://www.kunngerdaportalur.fo/" target="_blank">Kunngerðaportalurin</a></li>
+                                </ul>
+                            </div>
+                	    </div>
+				    </div>
+                </nav>
+
+            </header>
+            <!-- /header -->
+	
+    	    <!-- content -->
+            <section class="content-section">
+        	    <div class="container">
+            	    <div class="row">
+                        <div class="col-sm-7 mb-big left-side">
+                            
+
+<!-- tabs -->
+<div class="tabs-wrap search-tabs mb-big" data-remote-validation="/CheckExpressionJson.aspx?rnd=571276363" data-search-url="/List.aspx">
+    <ul class="nav nav-tabs" role="tablist">
+        <li id="search-tabs__search-tab" role="presentation" class="active">
+            <a href="#search-tabs__search-tab-content" aria-controls="search-tabs__search-tab-content" role="tab" data-toggle="tab">Leita</a>
+        </li>
+        <li id="search-tabs__advanced-tab" role="presentation">
+            <a href="#search-tabs__advanced-tab-content" aria-controls="search-tabs__advanced-tab-content" role="tab" data-toggle="tab">Víðkað leiting</a>
+        </li>
+        <li id="search-tabs__filter-tab" role="presentation">
+            <a href="#search-tabs__filter-tab-content" aria-controls="search-tabs__filter-tab-content" role="tab" data-toggle="tab">Sálda</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+		<!-- Leita -->
+        <form role="tabpanel" class="tab-pane in active" id="search-tabs__search-tab-content" aria-labelledby="search-tabs__search-tab" action="https://logir.fo:443//Redirect.aspx?command=search" method="post" data-form-index="0">
+			<div class="row form-row">
+				<div class="col-sm-12 mb-12">
+					<div class="form-group">
+						<label for="search-form__free-text">Frítekstur</label>
+						<input id="search-form__free-text" class="form-control js__remote-validation" type="text" placeholder="" title="Frítekstur" name="SearchForm_FreeText">
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-4 mb-half-xs">
+					<div class="form-group">
+						<label for="search-form__nr">Nr.</label>
+                        <input id="search-form__nr" class="form-control" type="text" placeholder="" title="Nr." name="SearchForm_Number"/>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 mb-xs">
+					<div class="form-group">
+						<label for="search-form__year">Ár</label>
+                        <input id="search-form__year" class="form-control" type="text" placeholder="" title="Ár" name="SearchForm_Year"/>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-2 col-sm-4 text-right">
+					<button class="btn btn-default" type="submit">Leita</button>
+				</div>
+			</div>
+        </form>
+		<!-- /Leita -->
+								
+		<!-- VÃ­Ã°kaÃ° leiting -->
+        <form role="tabpanel" class="tab-pane in" id="search-tabs__advanced-tab-content" aria-labelledby="search-tabs__advanced-tab" action="https://logir.fo:443//Redirect.aspx?command=search" method="post" data-form-index="1">
+			<button class="btn-collapse" type="button" data-toggle="collapse" data-target="#form-hidden2" aria-expanded="false" aria-controls="form-hidden">
+				<span class="fa fa-angle-double-down fa-lg"></span>
+			</button>
+            <div class="row form-row mb-half">
+				<div class="col-sm-12 mb-half">
+					<div class="form-group">
+						<label for="adv-search-form__in-titles">Við orðum úr heitinum</label>
+                        <input id="adv-search-form__in-titles" class="form-control js__remote-validation" type="text" placeholder="" title="Við orðum úr heitinum" name="SearchForm_SearchInTitle"/>
+					</div>	
+				</div>
+				<div class="col-sm-12 mb-half">
+					<div class="form-group">
+						<label for="adv-search-form__exact-phrase">Við hesi orðing</label>
+                        <input id="adv-search-form__exact-phrase" class="form-control" type="text" placeholder="" title="Við hesi orðing" name="SearchForm_SearchForExact"/>
+					</div>	
+				</div>
+				<div class="col-sm-12 mb-half">
+					<div class="form-group">
+						<label for="adv-search-form__all-words">Við øll orðunum</label>
+                        <input id="adv-search-form__all-words" class="form-control" type="text" placeholder="" title="Við øll orðunum" name="SearchForm_SearchForAll"/>
+					</div>	
+				</div>
+			</div>
+			<div class="collapse" id="form-hidden2">
+				<div class="row form-row">
+					<div class="col-sm-12 mb-half">
+						<div class="form-group">
+							<label for="adv-search-form__without-word">Uttan orðini</label>
+                            <input id="adv-search-form__without-word" class="form-control" type="text" placeholder="" title="Uttan orðini" name="SearchForm_SearchWithout"/>
+						</div>	
+					</div>
+					<div class="col-lg-6 col-md-7 col-sm-8 mb-half">
+						<div class="date-control-group">
+							<div class="form-group">
+								<label for="adv-search-form__date-from">Útgávudagur Frá:</label>
+								<div class="date-control">
+                                    <input id="adv-search-form__date-from" type="text" class="form-control" placeholder="" title="Útgávudagur Frá" name="SearchForm_FromDate" data-range="from"/>
+									<button type="button" class="btn-date-picker"><span class="fa fa-calendar"></span></button>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="adv-search-form__to">Til:</label>
+								<div class="date-control">
+                                    <input id="adv-search-form__to" type="text" class="form-control" placeholder="" title="Til" name="SearchForm_ToDate" data-range="to"/>
+									<button type="button" class="btn-date-picker"><span class="fa fa-calendar"></span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-5 col-sm-4 hidden-xs">&nbsp;</div>
+					<div class="col-sm-12 mb-half">
+						<div class="form-group">
+							<label for="adv-search-form__validity-status">Gildisstøða</label>
+                            <select id="adv-search-form__validity-status" class="form-control sumoselect-dropdown" name="SearchForm_ValidityStatusId">
+                                <option value="" selected>---</option><option value="56" >Galdandi</option><option value="55" >Áður galdandi</option><option value="1542268606" >Søgulig</option><option value="137009996" >Í koming</option>
+                            </select>
+						</div>	
+					</div>
+					<div class="col-sm-12 mb">
+						<div class="form-group">
+							<label for="adv-search-form__edition-category">Útgávustøða</label>
+                            <select id="adv-search-form__edition-category" class="form-control sumoselect-dropdown" name="SearchForm_EditionCategoryId">
+                                <option value="" selected>---</option><option value="2034106882" >Broytingarrættarregla</option><option value="-99" >Høvuðsrættarregla</option>
+                            </select>
+						</div>	
+					</div>
+					<div class="col-sm-12 mb">
+						<div class="form-group">
+							<label for="adv-search-form__authority">Myndugleiki</label>
+							<select id="adv-search-form__authority" class="form-control sumoselect-dropdown" name="SearchForm_AuthorityId">
+								<option value="" selected>---</option><option value="5" >Almanna- og bústaðamálaráðið</option><option value="7" >Fíggjarmálaráðið</option><option value="968817112" >Heilsu- og orkumálaráðið</option><option value="14" >Løgmansskrivstovan</option><option value="1837232464" >Mentamálaráðið</option><option value="20" >Uttanríkis- og fiskimálaráðið</option><option value="9" >Vinnumálaráðið</option><option value="2" >Eingin</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-12 mb">
+						<div class="form-group">
+							<label for="adv-search-form__law-category">Rættarreglubólkur</label>
+							<select id="adv-search-form__law-category" class="form-control sumoselect-dropdown" name="SearchForm_LawCategoryId">
+								<option value="" selected>---</option><option value="46" >Løgtingslóg</option><option value="44" >Kunngerð</option><option value="436521299" >Fráboðan</option><option value="47" >Løgtingslógarkunngerð</option><option value="54" >Tingskipan</option><option value="357380443" >Rundskriv</option><option value="2132006586" >Leiðbeining</option><option value="39" >Anordning</option><option value="155518978" >Anordningsbekendtgørelse</option><option value="48" >Lov</option><option value="49" >Lovbekendtgørelse</option><option value="40" >Bekendtgørelse</option><option value="45" >Lagtingslov</option><option value="43" >Kundgørelse</option><option value="41" >Forordning</option><option value="50" >Midlertidig bestemmelse</option><option value="42" >Kirkjulig fyriskipan</option><option value="51" >Norske Lov</option><option value="52" >Plakat</option><option value="53" >Politivedtægt</option><option value="676618607" >Cirkulære</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="toolbar form-footer">
+				<div class="group-left">
+				</div>
+				<div class="group-right">
+					<a  href="https://logir.fo:443//Redirect.aspx?command=reset%>"><span class="title">Nullstilla</span> <span class="icon fa fa-undo"></span></a>
+					<button class="btn btn-default" type="submit">Leita</button>
+				</div>
+			</div>
+        </form>
+		<!-- /VÃ­Ã°kaÃ° leiting -->
+								
+		<!-- SÃ¡lda -->
+        <form role="tabpanel" class="tab-pane in" id="search-tabs__filter-tab-content" aria-labelledby="search-tabs__filter-tab" action="https://logir.fo:443//Redirect.aspx?command=search" method="post" data-form-index="2">
+            <button class="btn-collapse" type="button" data-toggle="collapse" data-target="#form-hidden" aria-expanded="false" aria-controls="form-hidden">
+				<span class="fa fa-angle-double-down fa-lg"></span>
+			</button>
+            <div class="row mb-half">
+				<div class="col-sm-6 mb-half-xs">
+					<div class="form-group">
+						<label style="padding-right: 1.87rem">Rættarregluevni (einans høvuðslógir og galdandi lógir):</label>
+						<div class="tree-wrap tree-wrap--with-expanders" data-name="SearchForm_SubjectTree">
+							<ul><li id="0" class="folder">Øll rættarregluevni<ul><li id="713181755" class="folder">1. Stjórnar- og fyrisitingarrættur<ul><li id="166514190" class="">Fløgg</li><li id="2138657512" class="">Fíggjarspurningar landsins og landsgranskoðan</li><li id="1676548912" class="">Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.</li><li id="1855690761" class="">Hagtøl</li><li id="890716895" class="">Landsstýrið</li><li id="91479288" class="">Lóggáva</li><li id="1746059155" class="">Løgtingið</li><li id="1589136173" class="">Ríkisborgarararættur</li><li id="995950042" class="">Tíð</li><li id="360660193" class="">Tænastumenn o.tíl.</li><li id="1646527249" class="">Verja</li><li id="1911499280" class="">Yvirtøkuskipan</li><li id="86560201" class="">Fólkayvirlit</li></ul></li><li id="1378420800" class="folder">2. Uttanríkisviðurskifti, fólkarættur og mannarættindi<ul><li id="641566572" class="">Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.</li><li id="1436183001" class="">Norðurlendskar avtalur og samstarv</li><li id="1079342023" class="">Hernaðarviðurskifti</li><li id="2021983335" class="">Mannarættindi o.tíl.</li><li id="644041753" class="">Handilssáttmálar</li></ul></li><li id="618413937" class="">3. Kommunalar lógir m.a. skattir, veðhald og ognartøka</li><li id="816277353" class="folder">4. Útbúgvingar og undirvísing<ul><li id="103401099" class="">Fyrisiting av undirvísingarverkinum</li><li id="845675503" class="">Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.</li><li id="118363056" class="">Yrkisútbúgvingar</li><li id="1968789949" class="">Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar</li><li id="1706501088" class="">Skúlabókaútgáva, skúlabókasøvn og Nám</li><li id="1466519510" class="">Hægri útbúgvingar og lærustovnar</li><li id="1162746158" class="">Útbúgvingarstuðul</li><li id="1628258353" class="">Onnur lóggáva</li></ul></li><li id="1230086807" class="folder">5. Mentan<ul><li id="1970002979" class="">Søvn og friðing</li><li id="1352184539" class="">Mál, skrivingarlag og bókaútgáva</li><li id="1774235614" class="">Mentunarhús- og grunnar</li></ul></li><li id="1711184160" class="folder">6. Kirkja<ul><li id="2070638531" class="">Fyrisiting og fíggjarviðurskifti fólkakirkjunnar</li><li id="422622889" class="">Halgidagar</li><li id="804690422" class="">Kirkjuligar gerðir</li><li id="620502898" class="">Kirkjur og kirkjugarðar</li><li id="1778495996" class="">Kirkjulið og limaskapur</li><li id="1870352993" class="">Starvsfólkaviðurskifti fólkakirkjunnar</li></ul></li><li id="1184824264" class="folder">7. Almannaviðurskifti<ul><li id="1136857699" class="">Almannapensjónir o.l.</li><li id="1436437347" class="">Barnastuðul, barnavernd o.l.</li><li id="1453685276" class="">Forsorg og arbeiðsmarknaður</li><li id="286007708" class="">Vanlukkutrygging, heilsutrygd o.l.</li><li id="446899519" class="">Verkløg, bústaðarviðurskifti o.l.</li><li id="1942914947" class="">Heiðursgávur, grunnar o.l.</li><li id="1175675889" class="">Millumtjóða avtalur um sosiala trygd o.l.</li><li id="1996535515" class="">Almannaviðurskifti annars</li></ul></li><li id="1840436188" class="">8. Skattir o.tíl.</li><li id="947990473" class="">9. Avgjøld og tollur</li><li id="697020872" class="">10. Arbeiðsmarknaður</li><li id="640751221" class="">11. Landbúnaður, djór og matvørur</li><li id="753492208" class="folder">12. Byggi- og býarskipanir og umhvørvisvernd<ul><li id="523573894" class="">Byggi og býarskipanir</li><li id="2040893383" class="">Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.</li><li id="460982573" class="">Vatnveiting og vatnburturveiting</li></ul></li><li id="800125130" class="folder">13. Fiskivinna, fiskaaling og veiða<ul><li id="1585510930" class="">Fiskiskapur</li><li id="339381119" class="">Fiskileiðir</li><li id="1211676652" class="">Fiskiveiðieftirlit</li><li id="588405586" class="">Inn og útflutningur av fiski</li><li id="2058344566" class="">Fíggjarviðurskifti fiskivinnurnar</li><li id="743822767" class="">Fiskaaling</li><li id="1111213855" class="">Hvalaveiða</li><li id="1608897950" class="">Fugla- og haruveiða</li></ul></li><li id="95297759" class="folder">14. Vegir, ferðsla og flutningur<ul><li id="794951322" class="">Ferðsla</li><li id="855037102" class="">Flutningur</li><li id="1124199867" class="">Flogferðsla</li><li id="169596129" class="">Ferjur og strandferðsla</li><li id="998269373" class="">Vegir og tunlar</li><li id="1467437932" class="">Postur</li></ul></li><li id="768508772" class="">15. Byggi- og bústaðarlógir, verkløg o.l.</li><li id="1956958201" class="folder">16. Heilsulógir<ul><li id="521474173" class="">Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.</li><li id="1650703925" class="">Heilsustarvsfólk</li><li id="348161587" class="">Sjúkrahúsverk o.tíl.</li><li id="978932032" class="">Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.</li><li id="203853913" class="">Smittandi sjúkur o.l.</li><li id="730264787" class="">Misnýtsla og sjúkufyribygging</li><li id="1231354094" class="">Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.</li><li id="1883005763" class="">Kanningar av børnum</li><li id="581211140" class="">Barnakonur</li><li id="831847417" class="">Sinnsibrek</li></ul></li><li id="582177366" class="folder">17. Rættargangur<ul><li id="1481034941" class="">Rættargangslóg o.tíl.</li><li id="40815476" class="">Millumtjóða ásetanir</li><li id="130274041" class="">Rættargjøld</li><li id="117883962" class="">Gerðarrættur</li><li id="1197664511" class="">Fútarættarmál</li><li id="590144425" class="">Uppboð</li><li id="1957912216" class="">Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.</li><li id="1620761029" class="">Notarialskipan</li></ul></li><li id="1157803307" class="folder">18. Revsilógir og løgreglan<ul><li id="205656777" class="">Borgarlig revsilóg o.tíl.</li><li id="1664174460" class="">Millumtjóða sakarmál</li><li id="545325568" class="">Løgreglan</li><li id="435720340" class="">Fongsulsverk</li><li id="685073886" class="">Pass og visa</li><li id="117296879" class="">Vápn, spreingievni og fýrverk</li><li id="1314620077" class="">Sjónvarpseygleiðing o.l.</li><li id="1995425897" class="">Funnið fæ</li><li id="234722486" class="">Hjálp til neyðstødd (druknaði)</li><li id="926654880" class="">Tatovering</li></ul></li><li id="1193576361" class="">19. Útlendingar</li><li id="221575368" class="folder">20. Fíggjarrættur<ul><li id="390636594" class="">Avtalur</li><li id="1055094505" class="">Keyp</li><li id="1121973418" class="">Endurgjald</li><li id="1275304705" class="">Skuld</li><li id="67511585" class="">Vekslar og kekkar</li><li id="1433415153" class="">Fyrning og ógilding</li><li id="1738643728" class="">Trygging</li><li id="1205278808" class="">Upphavsrættur, einkarættur, vørumerki og mynstur</li><li id="1189223989" class="">Myntir</li><li id="994674970" class="">Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.</li><li id="950142977" class="">Partafeløg, vinnurekandi grunnar o.tíl.</li><li id="442395449" class="">Felagsskráir</li><li id="1420865788" class="">Sjólóg, sjóvinna, manning av skipum o.tíl.</li><li id="891933128" class="">Loðsur, sjóvegisreglur, bjarging o.tíl.</li><li id="766101067" class="">Skipasýn, skipauppmáling, skipaskráseting o.tíl.</li><li id="1598711378" class="">Havdálking frá skipum</li><li id="348093116" class="">Havnir</li><li id="1968710496" class="">Kavarar</li><li id="329783606" class="">Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.</li><li id="728606655" class="">Kortlegging, útskifting og matrikulering</li></ul></li><li id="1834218668" class="folder">21. Vinnulívsrættur<ul><li id="836418777" class="">Handil, bókføring og grannskoðan</li><li id="1470673850" class="">Handverk, ídnaður og vinnustuðul o.tíl.</li><li id="597422430" class="">Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra</li><li id="1352982749" class="">Mát og vekt</li><li id="542992033" class="">Góðmálmur</li><li id="403346866" class="">Ráevni í undirgrundini</li><li id="1639837694" class="">Ferðavinna</li><li id="1912031964" class="">Fjar- og samskifti</li><li id="1484195444" class="">Fjølmiðlar</li><li id="660190096" class="">Orka, ravmagn og tekniskar innleggingar</li><li id="1251177135" class="">Spæl, innsavningar og stuttleiki</li></ul></li><li id="753167584" class="">22. Persónsupplýsingar</li><li id="2134438411" class="folder">23. Persóns-, familju- og arvarættur<ul><li id="484757272" class="">Hjúnarlag</li><li id="885191745" class="">Børn</li><li id="1282842628" class="">Løgræði</li><li id="1527241837" class="">Innheinting av uppihaldspeningi</li><li id="1635227187" class="">Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði</li><li id="1171451134" class="">Persónsnøvn</li><li id="115564886" class="">Skráir</li><li id="997427235" class="">Arvur og skifti</li><li id="847206606" class="">Horvin</li></ul></li></ul></li></ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 mb-half-xs">
+					<div class="form-group">
+						<label>Rættarreglubólkur:</label>
+						<div class="tree-wrap" data-name="SearchForm_CategoryTree">
+                            <ul><li id="0" class="folder">Allir rættarreglubólkar<ul><li id="46" class="">Løgtingslóg</li><li id="44" class="">Kunngerð</li><li id="436521299" class="">Fráboðan</li><li id="47" class="">Løgtingslógarkunngerð</li><li id="54" class="">Tingskipan</li><li id="357380443" class="">Rundskriv</li><li id="2132006586" class="">Leiðbeining</li><li id="39" class="">Anordning</li><li id="155518978" class="">Anordningsbekendtgørelse</li><li id="48" class="">Lov</li><li id="49" class="">Lovbekendtgørelse</li><li id="40" class="">Bekendtgørelse</li><li id="45" class="">Lagtingslov</li><li id="43" class="">Kundgørelse</li><li id="41" class="">Forordning</li><li id="50" class="">Midlertidig bestemmelse</li><li id="42" class="">Kirkjulig fyriskipan</li><li id="51" class="">Norske Lov</li><li id="52" class="">Plakat</li><li id="53" class="">Politivedtægt</li><li id="676618607" class="">Cirkulære</li></ul></li></ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 mb-half-xs">
+					<div class="form-group">
+						<label>Gildisstøða:</label>
+						<div class="tree-wrap" data-name="SearchForm_ValidityStatusTree">
+                            <ul><li id="0" class="folder">Allar gildisstøður<ul><li id="56" class="">Galdandi</li><li id="55" class="">Áður galdandi</li><li id="1542268606" class="">Søgulig</li><li id="137009996" class="">Í koming</li></ul></li></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="collapse" id="form-hidden">
+                <div class="row mb-half">
+                    <div class="col-sm-3 mb-half-xs">
+                        <div class="form-group">
+                            <label>Ár:</label>
+                            <div class="tree-wrap" data-name="SearchForm_YearsTree">
+                                <ul><li id="0" class="folder">Øll ár<ul><li id="Y2026" class="">2026</li><li id="Y2025" class="">2025</li><li id="Y2024" class="">2024</li><li id="Y2023" class="">2023</li><li id="Y2022" class="">2022</li><li id="Y2021" class="">2021</li><li id="Y2020" class="">2020</li><li id="Y2019" class="">2019</li><li id="Y2018" class="">2018</li><li id="Y2017" class="">2017</li><li id="Y2016" class="">2016</li><li id="Y2015" class="">2015</li><li id="Y2014" class="">2014</li><li id="Y2013" class="">2013</li><li id="Y2012" class="">2012</li><li id="Y2011" class="">2011</li><li id="Y2010" class="">2010</li><li id="Y2009" class="">2009</li><li id="Y2008" class="">2008</li><li id="Y2007" class="">2007</li><li id="Y2006" class="">2006</li><li id="Y2005" class="">2005</li><li id="Y2004" class="">2004</li><li id="Y2003" class="">2003</li><li id="Y2002" class="">2002</li><li id="Y2001" class="">2001</li><li id="Y2000" class="">2000</li><li id="Y1999" class="">1999</li><li id="Y1998" class="">1998</li><li id="Y1997" class="">1997</li><li id="Y1996" class="">1996</li><li id="Y1995" class="">1995</li><li id="Y1994" class="">1994</li><li id="Y1993" class="">1993</li><li id="Y1992" class="">1992</li><li id="Y1991" class="">1991</li><li id="1980-1989" class="">1980-1989</li><li id="1970-1979" class="">1970-1979</li><li id="1960-1969" class="">1960-1969</li><li id="1950-1959" class="">1950-1959</li><li id="1940-1949" class="">1940-1949</li><li id="1930-1939" class="">1930-1939</li><li id="1920-1929" class="">1920-1929</li><li id="1910-1919" class="">1910-1919</li><li id="-1900" class="">- 1900</li></ul></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-half-xs">
+                        <div class="form-group fields-of-responsibility-form-group">
+                            <label>Felagsmál / Sermál:</label>
+                            <div class="tree-wrap tree-wrap--half-height" data-name="SearchForm_SermalFelagsmalTree">
+                                <ul><li id="0" class="folder">Øll Felagsmál / Sermál<ul><li id="2034106888" class="">Felagsmál</li><li id="2034106889" class="">Sermál</li></ul></li></ul>
+                            </div>
+                        </div>
+	                    <div class="form-group">
+		                    <label>Útgávustøða:</label>
+		                    <div class="tree-wrap tree-wrap--half-height" data-name="SearchForm_EditionCategoryTree">
+			                    <ul><li id="0" class="folder">Allar útgávustøður<ul><li id="2034106882" class="">Broytingarrættarregla</li><li id="-99" class="">Høvuðsrættarregla</li></ul></li></ul>
+		                    </div>
+	                    </div>
+                    </div>
+                    <div class="col-sm-3 mb-half-xs">
+                        <div class="form-group">
+                            <label>Mál:</label>
+                            <div class="tree-wrap" data-name="SearchForm_LanguageCategoryTree">
+                                <ul><li id="0" class="folder">Øll mál<ul><li id="61" class="">Føroyskt</li><li id="59" class="">Danskt</li></ul></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-half-xs">
+                        <div class="form-group">
+                            <label>Myndugleiki:</label>
+                            <div class="tree-wrap" data-name="SearchForm_AuthorityTree">
+                                <ul><li id="0" class="folder">Allir myndugleikar<ul><li id="5" class="">Almanna- og bústaðamálaráðið</li><li id="7" class="">Fíggjarmálaráðið</li><li id="968817112" class="">Heilsu- og orkumálaráðið</li><li id="14" class="">Løgmansskrivstovan</li><li id="1837232464" class="">Mentamálaráðið</li><li id="20" class="">Uttanríkis- og fiskimálaráðið</li><li id="9" class="">Vinnumálaráðið</li><li id="2" class="">Eingin</li></ul></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+			<div class="form-footer">
+			    <div class="row hidden-xs">
+				    <div class="col-sm-3"></div>
+                    <div class="col-sm-9">
+                        <label for="filter-form__free-text">Frítekstur</label>
+                    </div>
+                </div>
+			    <div class="row hidden-xs">
+				    <div class="col-sm-3">
+                        <div class="checkbox white single filter-form__select-all">
+                            <label>
+                                <input type="checkbox" data-action="select_all"/> 
+                                <span class="radio-check-control"></span>
+                                <span class="radio-check-label">Vel alt ella einki</span>
+                            </label>
+                        </div>
+                    </div>
+				    <div class="col-sm-9">
+                        <div class="input-group filter-form__free-text-group">
+                            <input id="filter-form__free-text" class="form-control js__remote-validation" type="text" placeholder="" title="Frítekstur" name="SearchForm_FreeText1">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Leita</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+				
+                <div class="form-group visible-xs mb">
+                    <label for="filter-form__free-text--xs">Frítekstur</label>
+                    <input id="filter-form__free-text--xs" class="form-control js__remote-validation" type="text" placeholder="" title="Frítekstur" name="SearchForm_FreeText1">
+                </div>
+				<div class="row visible-xs">
+                    <div class="col-xs-6">
+                        <div class="checkbox white single filter-form__select-all">
+                            <label>
+                                <input type="checkbox" data-action="select_all"/> 
+                                <span class="radio-check-control"></span>
+                                <span class="radio-check-label">Vel alt ella einki</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <button class="btn btn-default pull-right" type="submit">Leita</button>
+                    </div>
+                </div>
+			</div>
+			
+        </form>
+		<!-- /SÃ¡lda -->
+    </div>
+</div>
+<!-- /tabs --> 
+
+                            
+                        </div>
+
+                        
+                            <div class="col-sm-5">
+                                <div class="header-tipp color-light-8">
+                                    <div class="category">Tipp</div>
+		                            <span><DIV class=WordSection1>
+<H3 style="BACKGROUND: black"><SPAN lang=DA style="COLOR: white">Hent at vita, tá ið tú leitar í lógasavninum</SPAN></H3>
+<P class=MsoNormal style="BACKGROUND: black"><I><SPAN lang=DA style="COLOR: #cccccc">Skrivar tú <B>trygging</B> verður eisini leitað eftir øðrum endingum av orðinum sum t.d. trygging<U>ar</U> og trygging<U>arvirksemi</U>.</SPAN></I><BR>
+<P class=MsoNormal style="BACKGROUND: black"><I><SPAN lang=DA style="COLOR: #cccccc">Skrivar tú <B>?trygging</B> verður leitað eftir orðum sum t.d. <U>lívs</U>trygging og <U>lívs</U>trygging<U>ar</U>.</SPAN></I><BR>
+<P class=MsoNormal style="BACKGROUND: black"><I><SPAN lang=DA style="COLOR: #cccccc">Skrivar tú <B>”trygging”</B> verður einans leitað eftir júst hesum sniðnum av orðinum.</SPAN></I><BR></DIV></span>
+                                    <a class="more-link" href="/LawDatabase.aspx">Fleiri góð ráð</a>
+	                            </div>
+                            </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            
+    <div class="col-sm-9 col-sm-push-3 doc-page-main-col mb-big-xs">
+        <h1 class="mb-big">Løgtingslóg nr. 23 frá 20. mars 2018 um bókhald (Bókhaldslógin)</h1>
+        <div class="doc-wrap">
+            
+<div id="div_content" style=" " class="content_body">
+    <DIV class=WordSection1>
+<P class=topnrdato><SPAN style="FLOAT: right">20. mars 2018</SPAN><SPAN>Nr. 23</SPAN></P>
+<P class=MsoTitle>Løgtingslóg um bókhald </P>
+<P class=MsoSubtitle>(Bókhaldslógin)</P>
+<P class=Indledning2>Samsvarandi samtykt Løgtingsins staðfestir og kunnger løgmaður hesa løgtingslóg:</P>
+<P class=Tekstoverskrift>Bókhaldsskylda</P>
+<P class=Paragraftekst><B>§ 1.</B> Løgtingslógin er galdandi fyri vinnurekandi fyritøkur av einum og hvørjum slagi, uttan mun til eigaraviðurskifti ella ábyrgdarviðurskifti, sum eru stovnaðar í Føroyum, og fyri vinnuvirksemi, sum fyritøkur, ið eru heimahoyrandi uttanlands, útinna í Føroyum. </P>
+<P class=Stk><I>Stk. 2.</I> Løgtingslógin er harumframt galdandi fyri hesar fyritøkur, felagsskapir og samskipanir o.tíl.:</P>
+<P class=Nummer>1)&nbsp;&nbsp; Fyritøkur o.tíl., sum hava skyldu at rinda avgjald, ella sum hava fulla ella avmarkaða skattskyldu til landið, í tann mun tær ikki eru fevndar av stk. 1. TAKS kann heilt ella partvíst undantaka einstakar fyritøkur o.tíl. frá løgtingslógini. Er fyritøkan o.tíl. harumframt fevnd av nr. 2, kann undantak bert gerast eftir avtalu við viðkomandi myndugleika. </P>
+<P class=Nummer>2)&nbsp;&nbsp; Fyritøkur o.tíl., ið sum treyt fyri at fáa beinleiðis stuðul frá landinum skulu lata roknskaparupplýsingar, í tann mun tær ikki eru fevndar av stk. 1. Játtandi myndugleikin kann heilt ella partvíst undantaka einstakar fyritøkur frá løgtingslógini. Er fyritøkan harumframt fevnd av nr. 1, kann undantak tó bert gerast eftir avtalu við TAKS.</P>
+<P class=Stk><I>Stk. 3.</I> Løgtingslógin er ikki galdandi fyri hesar fyritøkur, felagsskapir og samskipanir o.tíl.:</P>
+<P class=Nummer>1)&nbsp;&nbsp; Fyritøkur o.tíl., sum eru fevndar av reglunum um roknskaparhald landsins. </P>
+<P class=Nummer>2)&nbsp;&nbsp; Fyritøkur o.tíl., sum einans eru fevndar av roknskaparreglum, ásettar í ella við heimild í kommunustýrislógini. </P>
+<P class=Tekstoverskrift>Samskifti</P>
+<P class=Paragraftekst><B>§ 2. </B>Landsstýrismaðurin<B> </B>kann áseta reglur um, at skrivligt samskifti við myndugleikar um viðurskifti, sum eru fevnd av hesi løgtingslóg ella reglum, givnar við heimild í hesi løgtingslóg, skal vera talgilt. </P>
+<P class=Stk><I>Stk. 2.</I> Landsstýrismaðurin kann áseta nærri reglur um talgilt samskifti, undir hesum reglur um nýtslu av ávísum kt-skipanum, serligum talgildum formatum og talgildari undirskrift o.tíl. </P>
+<P class=Stk><I>Stk. 3.</I> Landsstýrismaðurin kann áseta, at avgerðir, tiknar av Skráseting Føroya ella øðrum myndugleikum eftir reglum, sum eru givnar eftir stk. 1 ella 2, eru endaligar innan fyrisitingina.</P>
+<P class=Paragraftekst><B>§ 3.</B> Landsstýrismaðurin kann áseta reglur um, at myndugleikar kunnu lata avgerðir og onnur skjøl eftir hesi løgtingslóg ella eftir reglum, givnar við heimild í hesi løgtingslóg, uttan undirskrift, við maskinendurgivnari undirskrift, ella á annan samsvarandi hátt, ella við at nýta tøkni, sum tryggjar eintýdda eyðmerking av tí, sum hevur latið avgerðina ella skjalið. Avgerðir og skjøl av hesum slagi eru javnsett við avgerðir og skjøl, ið hava persónliga undirskrift. </P>
+<P class=Stk><I>Stk. 2.</I> Landsstýrismaðurin kann áseta reglur um, at avgerðir og onnur skjøl, ið einans eru ávikavist tiknar ella givnar við støði í elektroniskari dátuviðgerð, kunnu verða skrivað út við einans myndugleikanum sum sendara. </P>
+<P class=Paragraftekst><B>§ 4.</B> Har tað eftir hesi løgtingslóg ella eftir reglum, givnar við heimild í hesi løgtingslóg, verður kravt, at eitt skjal, sum er latið av øðrum enn einum myndugleika, skal verða undirskrivað, kann kravið lúkast við at nýta tøkni, sum tryggjar eintýdda eyðmerking av tí, sum hevur latið skjalið, sbr. tó stk. 2. Slík skjøl eru javnsett við skjøl, ið hava persónliga undirskrift. </P>
+<P class=Stk><I>Stk. 2.</I> Landsstýrismaðurin kann áseta nærri reglur um frávik frá undirskriftarkravinum. Í slíkum førum kann avgerast, at tað fyri ávís sløg av skjølum ikki kann víkjast frá kravinum um persónliga undirskrift.</P>
+<P class=Tekstoverskrift>Allýsingar</P>
+<P class=Paragraftekst><B>§ 5.</B> Ein fyritøka er vinnurekandi ella útinnir vinnuvirksemi, tá ið hon veitir vørur, rættindi, lán, tænastur o.tíl., sum fyritøkan vanliga fær viðurgjald fyri. </P>
+<P class=Stk><I>Stk. 2</I>. Uttan mun til stk. 1 verður ein fyritøka mett sum vinnurekandi ella sum at útinna vinnuvirksemi, um hon er fevnd av løgtingslóg um parta- og smápartafeløg, kongligari fyriskipan um ígildissetan fyri Føroyar av lov om erhvervsdrivende fonde, kongligari fyriskipan um ígildissetan fyri Føroyar av lov om erhvervsdrivende virksomheder ella í aðrar mátar er vinnurekandi sambært lóg. Hetta er galdandi uttan mun til, um fyritøkurnar heilt ella partvíst eru undantiknar frá krøvunum í omanfyrinevndu lógum.</P>
+<P class=Paragraftekst><B>§ 6.</B> Sum roknskapartilfar verður roknað</P>
+<P class=Nummer>1)&nbsp;&nbsp; skrásetingar, undir hesum transaktiónssporið, sbr. § 7, stk. 1, </P>
+<P class=Nummer>2)&nbsp;&nbsp; møguligar lýsingar av bókhaldinum, undir hesum avtalur um elektroniskt dátuumbýti, sbr. § 16, stk. 2,</P>
+<P class=Nummer>3)&nbsp;&nbsp; møguligar lýsingar av skipanum, ið varðveita og finna varðveitt roknskapartilfar fram, sbr. § 16, stk. 3, </P>
+<P class=Nummer>4)&nbsp;&nbsp; skjøl og onnur skjalprógv, sbr. § 8, </P>
+<P class=Nummer>5)&nbsp;&nbsp; aðrar upplýsingar, sum eru neyðugar fyri eftirlitssporið, sbr. § 7, stk. 2, </P>
+<P class=Nummer>6)&nbsp;&nbsp; roknskapir, sum skulu gerast sambært lóg, og </P>
+<P class=Nummer>7)&nbsp;&nbsp; møguligar grannskoðanarprotokollir. </P>
+<P class=Stk><I>Stk. 2.</I> Um ikki annað er ásett í aðrari lóggávu, fevnir ein roknskapur, sbrt. stk. 1, nr. 6, eisini um møguligar leiðslufrágreiðingar og møguligar grannskoðanarátekningar o.a., ið er knýtt at roknskapinum. </P>
+<P class=Stk><I>Stk. 3</I>. Grannskoðaraprotokollir, sbrt. stk. 1, nr. 7 er trúnaðartilfar, sum bert verður givin atgongd til, um Skráseting Føroya ella ein annar almennur myndugleiki, ið hevur heimild<SPAN style="COLOR: red"> </SPAN>eftir aðrari lóggávu, krevur at fáa atgongd til grannskoðaraprotokollina.<I>&nbsp;</I></P>
+<P class=Paragraftekst><B>§ 7.</B> Transaktiónssporið merkir í hesum føri tað samband, sum er millum einstøku skrásetingarnar og ársroknskapin, skattauppgerðina og avgjaldsuppgerðina, studningsroknskapin ella samsvarandi roknskaparuppsetan hjá tí bókhaldsskylduga, ið skal gerast sambært lóg. </P>
+<P class=Stk><I>Stk. 2.</I> Eftirlitssporið merkir í hesum føri tær upplýsingar, ið skjalprógva, at skrásetingarnar eru rættar.</P>
+<P class=Paragraftekst><B>§ 8.</B> Skjøl merkir í hesum føri eitt og hvørt neyðugt skjalprógv fyri transaktiónum, sum verða skrásettar í bókhaldinum, uttan mun til, um skjalprógvið er á elektroniskum miðli, pappíri ella øðrum miðli. </P>
+<P class=Stk><I>Stk. 2.</I> Uttanhýsis skjøl merkir í hesum føri eitt og hvørt skjalprógv, sum kemur frá øðrum enn tí, sum hevur bókhaldsskylduna. Onnur skjøl verða mett sum innanhýsis skjøl. </P>
+<P class=Tekstoverskrift>Almenn bókhaldskrøv</P>
+<P class=Paragraftekst><B>§ 9.</B> Bókhaldið skal leggjast til rættis og fremjast í samsvari við góðan bókhaldssið og við fyriliti fyri slagi og vavi fyritøkunnar. Harumframt skal bókhaldið leggjast til rættis og fremjast soleiðis, at roknskapartilfarið ikki verður oyðilagt, beint burtur ella avlagað, eins og tað skal tryggjast móti villum og misnýtslu. </P>
+<P class=Stk><I>Stk. 2.</I> Verður roknskapartilfarið rættað, skulu bæði upprunaliga innihaldið og broytingin týðiliga síggjast í tilfarinum. </P>
+<P class=Tekstoverskrift>Skrásetingar og skjalprógv</P>
+<P class=Paragraftekst><B>§ 10.</B> Allar transaktiónir skulu skrásetast neyvt við fyriliti fyri slagi og vavi fyritøkunnar. Transaktiónirnar skulu skrásetast skjótast gjørligt eftir, at viðurskiftini, sum eru orsøk til skrásetingarnar, eru til staðar. Ein fyritøka, sum vegna sítt slag og vav ikki er før fyri at skráseta keyp ella sølu, kann í staðin skráseta við grundarlagi í dagligu kassauppgerðunum. </P>
+<P class=Stk><I>Stk. 2.</I> Skrásetingarnar skulu, í tann mun, tað ber til, gerast í somu raðfylgju sum transaktiónirnar. Skrásetingarnar skulu vísa til skjølini, sum hoyra til skrásetingarnar, og skulu innihalda upplýsingar, sum vísa nær og hvar einstaka skrásetingin er skrásett í bókhaldinum. </P>
+<P class=Stk><I>Stk. 3</I>. Skrásetingarnar skulu, í tann mun tað er neyðugt eftir slagi og vavi fyritøkunnar, stemmast av við goymslurnar, undir hesum kassagoymslurnar og likvidgoymslurnar.</P>
+<P class=Stk><I>Stk. 4.</I> Skrásetingarnar skulu gerast í donskum krónum, í evrum ella í viðkomandi fremmandum gjaldoyra. Ein fyritøka kann bert skifta til skrásetingar í øðrum gjaldoyra, tá roknskaparárið byrjar, uttan so, at hetta fremmanda gjaldoyra er vorðið viðkomandi, áðrenn nevnda roknskaparár byrjar. </P>
+<P class=Stk><I>Stk. 5</I>. Um skrásett verður í fremmandum gjaldoyra, t.d. í evrum, skulu tað í roknskapartilfarinum vera upplýsingar, undir hesum um kursin á transaktiónsdegnum ella líknandi umrokningarfaktorar, sum altíð gera tað møguligt at umrokna til danskar krónur. Landsstýrismaðurin kann við kunngerð áseta nærri reglur um teir umrokningarfaktorar, sum eru nevndir í 1. pkt.</P>
+<P class=Paragraftekst><B>§ 11.</B> Allar skrásetingar skulu kunna førast til roknskapin, uppgerðina ella uppsetingina, nevnd í § 7, stk. 1. Tølini í ávikavist roknskapinum, uppgerðini ella uppsetingini skulu kunna verða býtt sundur í tær skrásetingar, sum tær eru samansettar av. </P>
+<P class=Paragraftekst><B>§ 12.</B> Ein og hvør skráseting skal skjalprógvast við skjølum. Eru uttanhýsis skjøl skrivað út, skulu hesi, í tann mun, tað ber til, nýtast. Skjøl skulu upplýsa tað, sum er neyðugt fyri at eyðmerkja eftirlitssporið, undir hesum greidliga vísa transaktiónsdagfesting og upphædd. </P>
+<P class=Stk><I>Stk. 2.</I> Um skrásett verður við støði í elektroniskum dátuumbýti, skal tann bókhaldsskyldugi harumframt skjalprógva einstøku flytingina og hvar einstaka skrásetingin, í mun til tíð, er í bókhaldinum. </P>
+<P class=Tekstoverskrift>Varðveitsla av roknskapartilfari</P>
+<P class=Paragraftekst><B>§ 13.</B> Tann bókhaldsskyldugi skal varðveita roknskapartilfarið á tryggan hátt í 5 ár frá endanum av tí roknskaparári, sum tilfarið viðvíkur. Tilfarið skal varðveitast soleiðis, at tilfarið í øllum varðveitslutíðarskeiðinum sjálvstøðugt og eintýtt kann verða funnið fram. </P>
+<P class=Stk><I>Stk. 2.</I> Verður roknskapartilfarið varðveitt á elektroniskum miðli, mikrofilmi ella á annan tílíkan hátt, skal tilfarið, uttan viðgerð, útrokning ella tillaging, kunna verða skrivað út í klárskrift.</P>
+<P class=Stk><I>Stk. 3.</I> Lýsingar av skipanum at finna og skriva út roknskapartilfar í klárskrift, sbr. § 16, stk. 3, nr. 2, skulu vera til skjals í klárskrift. </P>
+<P class=Stk><I>Stk. 4</I>. Ásetingarnar í stk. 1-3 eru ikki galdandi fyri kassareglar og samsvarandi innanhýsis skjøl.</P>
+<P class=Paragraftekst><B>§ 14. </B>Roknskapartilfarið skal varðveitast á ein slíkan hátt, at almennir myndugleikar o.o., sum eftir aðrari lóggávu hava rætt til at krevja innlit í roknskapartilfarið, uttan trupulleikar kunnu sleppa framat tilfarinum.</P>
+<P class=Stk><I>Stk. 2.</I> Roknskapartilfarið kann varðveitast í elektroniskum formi í Føroyum ella uttanlands, um tann bókhaldsskyldugi</P>
+<P class=Nummer>1)&nbsp;&nbsp; varðveitir tilfarið í samsvari við hesa løgtingslóg, </P>
+<P class=Nummer>2)&nbsp;&nbsp; altíð kann fáa hendur á tilfarið og geva atgongd til tilfarið her í landinum, </P>
+<P class=Nummer>3)&nbsp;&nbsp; varðveitir møguligar lýsingar av nýttum skipanum o.tíl. og møguligum neyðugum loyniorðum í Føroyum, og </P>
+<P class=Nummer>4)&nbsp;&nbsp; ansar eftir, at roknskapartilfarið verður skrivað út í klárskrift, ella er tøkt í øðrum viðurkendum fíluformati.</P>
+<P class=Stk><I>Stk. 3.</I> Verður roknskapartilfarið ikki varðveitt elektroniskt, skal tað varðveitast á pappíri í Føroyum, sbr. tó stk. 4-6. </P>
+<P class=Stk><I>Stk. 4.</I> Roknskapartilfarið kann varðveitast á pappíri í Danmark, Finnlandi, Íslandi, Noregi ella Svøríki. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi. </P>
+<P class=Stk><I>Stk. 5.</I> Roknskapartilfarið fyri verandi mánaða og undanfarna mánaða kann varðveitast á pappíri uttanlands. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi. </P>
+<P class=Stk><I>Stk. 6.</I> Innanhýsis og uttanhýsis skjøl, ið viðvíkja virkseminum hjá tí bókhaldsskylduga uttanlands, kunnu varðveitast á pappíri í viðkomandi landi alla ta tíðina, tilfarið skal varðveitast, sbr. § 13. Annað roknskapartilfar, ið viðvíkur virkseminum hjá tí bókhaldsskylduga uttanlands, kann fyri verandi mánaða og undanfarnu 3 mánaðirnar eftir somu treytum varðveitast á pappíri í viðkomandi landi. Ásetingarnar í stk. 2, nr. 1 og 2, verða at nýta samsvarandi.</P>
+<P class=Paragraftekst><B>§ 15.</B> Heldur bókhaldsskyldan uppat, skal seinasta virkandi leiðsla ansa eftir, at roknskapartilfarið framhaldandi verður varðveitt í samsvari við hesa løgtingslóg. Verður fyritøkan tikin av, við at skiftirætturin leggur uppí, kann skiftirætturin gera av, at onnur enn seinasta virkandi leiðsla skal varðveita roknskapartilfarið. </P>
+<P class=Stk><I>Stk. 2.</I> Í øðrum førum, har leiðslan fer frá, skulu limirnir í fráfarandi leiðsluni ansa eftir, at roknskapartilfarið fyri tíðarskeiðið fram til fráfaringina verður varðveitt í samsvari við hesa løgtingslóg. Tá ið nýggj leiðsla tekur við, skulu limirnir í fráfarnu leiðsluni lata nýggju leiðsluni roknskapartilfarið. </P>
+<P class=Tekstoverskrift>Lýsingar av skipanum, ið skráseta og varðveita roknskapartilfar o.tíl.</P>
+<P class=Paragraftekst><B>§ 16.</B> Tann bókhaldsskyldugi skal gera eina lýsing av skráseting av transaktiónum og varðveitslu av roknskapartilfari, sum hóskar til virksemi fyritøkunnar. Lýsingin skal gera tað møguligt hjá einum, ið kemur uttanífrá, og sum hevur eina rímiliga vitan um roknskap og ta nýttu tøknina, altíð at kunna fylgja, hvussu skrásetingarnar verða gjørdar, og hvussu roknskapartilfarið verður funnið og skrivað út í klárskrift. Lýsingin skal vera skrivað á einum máli, sum er vanligt fyri almennar myndugleikar, og við at nýta vanlig orð og fakorð á økinum. </P>
+<P class=Stk><I>Stk. 2.</I> Lýsingin av, hvussu transaktiónir verða skrásettar, skal í minsta lagi hava nøktandi upplýsingar um,</P>
+<P class=Nummer>1)&nbsp;&nbsp; hvussu skipanirnar tryggja, at tilfar, ið er grundarlag undir skrásetingum, undir hesum eisini avtalur í sambandi við elektroniskt dátuumbýti, sum er grundarlag undir skrásetingum, er fullgott og neyvt, </P>
+<P class=Nummer>2)&nbsp;&nbsp; hvussu skipanirnar tryggja eina fullgóða og neyva skráseting av transaktiónum, undir hesum av konteringsleiðbeining, brúktu kt-skipanunum, manuellum mannagongdum o.tíl., og </P>
+<P class=Nummer>3)&nbsp;&nbsp; hvussu sjálvvirkandi skrásetingar verða gjørdar, undir hesum útrokningargrundarlag og útrokningarfrymil. </P>
+<P class=Stk><I>Stk. 3.</I> Lýsingin av, hvussu roknskapartilfar verður varðveitt, skal í minsta lagi hava nøktandi upplýsingar um</P>
+<P class=Nummer>1)&nbsp;&nbsp; tær mannagongdir, sum verða nýttar í sambandi við varðveitslu av roknskapartilfari, </P>
+<P class=Nummer>2)&nbsp;&nbsp; hvussu roknskapartilfar verður funnið og skrivað út í klárskrift, undir hesum upplýsingar um loyniorð o.tíl. og upplýsingar um, hvussu bronglaðar dátur verða umsettar, og </P>
+<P class=Nummer>3)&nbsp;&nbsp; hvussu skráseting í fremmandum gjaldoyra verður umroknað til danskar krónur. </P>
+<P class=Stk><I>Stk. 4.</I> Uttan mun til stk. 1-3 nýtist tann bókhaldsskyldugi ikki at gera nevndu lýsingar, um hann nýtir eina kt-standardskipan at skráseta transaktiónir og varðveita roknskapartilfar. Undantak eftir 1. pkt. er treytað av, at</P>
+<P class=Nummer>1)&nbsp;&nbsp; munandi broytingar ikki eru gjørdar í kt-standardskipanini, og at </P>
+<P class=Nummer>2)&nbsp;&nbsp; tann, sum veitir kt-standarskipanina, hevur gjørt slíkar lýsingar, sum fyritøkan hevur í varðveitslu. </P>
+<P class=Tekstoverskrift>Atgongd hjá almennum myndugleikum til roknskapartilfar</P>
+<P class=Paragraftekst><B>§ 17.</B> Í tann mun ein almennur myndugleiki eftir aðrari lóggávu kann krevja innlit í roknskapartilfarið hjá tí bókhaldsskylduga, kann almenni myndugleikin krevja, at tann bókhaldsskyldugi uttan kostnað gevur myndugleikanum atgongd til alt, sum er neyðugt fyri at finna fram og lesa roknskapartilfarið, eins og myndugleikin kann krevja, at tilfarið verður latið myndugleikunum, tá ið biðið verður um tað. Er tilfarið goymt í útlandinum, kann myndugleikin tó krevja, at tilfarið verður sent ella latið myndugleikunum. Harumframt kann myndugleikin krevja, at skrásetingar í fremmandum gjaldoyra, eisini evrum, verða umroknaðar til danskar krónur. Er roknskapartilfarið, uttanhýsis skjøl undantikin, á øðrum málum enn føroyskum ella donskum, kann myndugleikin krevja, at tann bókhaldsskyldugi uttan kostnað umsetir tilfarið til føroyskt.</P>
+<P class=Stk><I>Stk. 2</I>. Atgongdin til roknskapartilfarið eftir stk. 1 er eisini galdandi, um tilfarið er í varðveitslu hjá triðjamanni.</P>
+<P class=Stk><I>Stk. 3.</I> Um roknskapartilfarið verður varðveitt í elektroniskum formi, kann ein myndugleiki krevja, at roknskapartilfarið verður latið í einum viðurkendum fíluformati ella verður sent talgilt í einum viðurkendum formati eftir reglum, ásettar við heimild í § 2. </P>
+<P class=Stk><I>Stk. 4</I>. Skráseting Føroya kann tó altíð krevja viðkomandi roknskapartilfar. </P>
+<P class=Stk><I>Stk. 5.</I> Tann bókhaldsskyldugi skal svara umbøn myndugleikans eftir stk. 1 skjótast gjørligt. Viðvíkur umbønin virksemi uttanlands, skal tann bókhaldsskyldugi svara umbønini í seinasta lagi ein mánað eftir, at myndugleikin hevur sent umbønina.</P>
+<P class=Tekstoverskrift>Revsiásetingar</P>
+<P class=Paragraftekst><B>§ 18.</B> Um ikki hægri revsing er ásett í aðrari lóggávu, verður við sekt revsaður tann, sum brýtur ásetingarnar í §§ 9-17.</P>
+<P class=Stk><I>Stk. 2.</I> Í reglum, ið verða givnar sambært hesi løgtingslóg, kann revsing verða ásett við sekt fyri brot á reglurnar. </P>
+<P class=Stk><I>Stk. 3.</I> Revsiábyrgd kann verða áløgd løgfrøðiligum persónum sambært reglunum í 5. kapitli í revsilógini.</P>
+<P class=Stk><I>Stk. 4</I>. Fyrningarfreistin fyri revsiábyrgd er 5 ár.</P>
+<P class=Paragraftekst><B>§ 19.</B> Verður roknskapartilfarið ikki varðveitt soleiðis, sum ásett er í § 14, sbr. § 17, og hevur hetta vanda fyri misnýtslu við sær, kann tann bókhaldsskyldugi við dómi missa rættin at varðveita roknskapartilfar uttanlands. Frádømingin er millum 1 og 5 ár, roknað frá endaligum dómi. Meðan málið verður viðgjørt, kann rætturin við úrskurði gera av, at tann bókhaldsskyldugi ikki kann varðveita roknskapartilfar uttanlands, fyrr enn málið er endaliga avgjørt. Við dómi í málinum kann verða avgjørt, at kæra hevur ikki steðgandi virknað.</P>
+<P class=Tekstoverskrift>Gildiskoma og skiftisreglur</P>
+<P class=Paragraftekst><B>§ 20.</B> Henda løgtingslóg kemur í gildi 1. apríl 2018, og er galdandi fyri roknskaparár, ið byrja 1. apríl 2018 ella seinni. </P>
+<P class=Stk><I>Stk. 2.</I> Samstundis, sum henda løgtingslóg kemur í gildi, fer úr gildi løgtingslóg nr. 75 frá 24. oktober 1978 um bókhaldsskyldu. Tó eru higartil galdandi reglur framhaldandi galdandi fyri roknskaparár, sum byrjaðu innan 1. apríl 2018.</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>Í Tinganesi, 20. mars 2018</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B>Aksel V. Johannesen (sign.)</B></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>løgmaður</P>
+<P class=MsoNormal>Lm. nr. 51/2017</P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>&nbsp;</P></DIV>
+</div>
+
+        </div>
+        
+    </div>
+    
+    <aside class="col-sm-3 col-sm-pull-9 mb-big-xs doc-page-side-col">
+		<div class="side-col-toggle mb-xs hidden-lg hidden-md hidden-sm">
+			<a class="btn btn-link" role="button" data-toggle="collapse" href="#side-col" aria-expanded="false" aria-controls="side-col">
+				<span class="fa fa-angle-double-down fa-lg"></span> Um rættarregluna o.a. 
+			</a>
+		</div>
+		<div class="collapse in" id="side-col">
+			<!-- About the law -->
+            <div class="side-block">
+				<h2 class="title">Um rættarregluna</h2>
+				<div class="doc-info">
+					<div><strong>Bólkur:</strong> Løgtingslóg</div>
+					<div><strong>Gildisstøða:</strong> Galdandi</div>
+					<div><strong>Felagsmál/Sermál:</strong> Sermál</div>
+					<div><strong>Myndugleiki:</strong> Vinnumálaráðið                                                            </div>
+					<div><strong>Útgávudagur:</strong> 23-03-2018</div>
+				</div>
+			</div>
+            <!-- /About the law -->
+            
+            <!-- References -->
+            
+			    <div class="side-block">
+				    <h2 class="title">Tilvísingar</h2>
+                    <ul class="side-block__links">
+                        <li><button type="button" class="btn btn-link side-block__link js--law-references-link" data-url="/Controls/ReferenceList.aspx?id=1942133449&t=Removements">Avtøkur</button></li>
+                    </ul>
+                </div>
+            
+            <!-- /References -->
+            
+            <!-- Comments -->
+            
+            <!-- /Comments -->
+            
+            <!-- Copied versions -->
+            
+            <!-- /Copied versions -->
+            
+            <!-- Løgtingsmál -->
+            
+                <div class="side-block">
+                    <h2 class="title">Løgtingsmál</h2>
+                    <a href="https://www.logting.fo/mal/mal/?id=8625" target="_blank">Løgtingsmál nr: 51/2017</a>
+                </div>
+            
+            <!-- /Løgtingsmál -->
+            
+            <!-- Publication -->
+            
+			    <div class="side-block">
+				    <h2 class="title">Kunngerðablaðið</h2>
+				    <p class="mb-half">Kunngerðarblað  2018 A - Løgtingslóg 23 frá 20. mars 2018</p>
+				    <div class="doc-download">
+					    <div class="thumb"><img src="/GetImage.aspx?objType=File&objId=25155" alt="Rættarreglan soleiðis sum hon upprunaliga varð kunngjørd í Kunngerðablaðnum" title="Rættarreglan soleiðis sum hon upprunaliga varð kunngjørd í Kunngerðablaðnum"></div>
+					    <a class="link" href="/GetFile/getpdf.aspx?objType=File&objId=25154"><span class="fa fa-download fa-2x"></span></a>
+				    </div>
+			    </div>
+            
+            <!-- /Publication -->
+            
+            <!-- Options -->
+            
+			<div class="side-block">
+				<h2 class="title">Valmøguleikar</h2>
+				<div class="doc-options">
+                    
+					    <a href="javascript:void(0);" class="js--doc-options__print-action" data-url="/Content/Logtingslog/23-fra-20-03-2018-um-bokhald?_=1341804291"><span class="fa fa-print fa-lg"></span>Prenta</a>
+                    
+
+					<a href="javascript:void(0);" class="js--doc-options__send-action" data-url="/SendEmail.aspx" data-id="1942133449"><span class="fa fa-envelope fa-lg"></span>Send</a>
+					<a href="/GetFile/law.aspx?objType=Law&objId=1942133449&objFormat=PDF"><span class="fa fa-file-pdf-o fa-lg"></span>PDF</a>
+					<a href="/GetFile/law.aspx?objType=Law&objId=1942133449&objFormat=DOC"><span class="fa fa-file-word-o fa-lg"></span>Word</a>
+				</div>
+			</div>
+            
+            <!-- /Options -->
+            
+            <!-- Your law list -->
+			<div class="side-block">
+				<h2 class="title">Tín lógalisti</h2>
+				<div class="law-list" data-action-url="/Controls/MyLawListConnection.aspx?id=1942133449&_=1341804291&change=1">
+					<div><a href="javascript:void(0);" class="js--law-list__action" style=""><span class="fa-stack fa-lg"><span class="fa fa-heart-o fa-stack-lg"></span><span class="fa fa-plus-circle fa-stack-1x"></span></span>Set á tín lógarlista</a></div>
+					<div><a href="javascript:void(0);" class="js--law-list__action" style="display:none"><span class="fa-stack fa-lg"><span class="fa fa-heart-o fa-stack-lg"></span><span class="fa fa-minus-circle fa-stack-1x"></span></span>Strika av tínum lógarlista</a></div>
+					<div><a href="/MyLawList.aspx"><span class="fa fa-heart-o fa-lg"></span>Tín lógalisti</a></div>
+				</div>
+			</div>
+            <!-- /Your law list -->
+            
+            <!-- Share -->
+			
+            
+            <!-- /Share -->
+		</div>
+        
+        <!-- Modals -->
+        <div class="modal fade" id="law-references-modal" tabindex="-1" role="dialog" aria-labelledby="law-references__title">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                        <h2 class="modal-title" id="law-references__title">&nbsp;</h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="modal fade" id="send-law-modal" tabindex="-1" role="dialog" aria-labelledby="send-law__title">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                        <h2 class="modal-title" id="send-law__title">Send rættarreglu til teldupost</h2>
+                    </div>
+                    <fieldset class="modal-body">
+                    
+                        <div class="form-group mb-half">
+                            <label for="send-law__email">Teldupostur<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="send-law__email" class="form-control" type="text" title="Teldupostur"/>
+                        </div>
+                        <div id="send-law__message" class="alert alert-danger hidden" role="alert"></div>
+                    </fieldset>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+                        <button id="send-law__send" type="button" class="btn btn-default" data-processing-text="Leitar">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- /Modals -->
+	</aside>
+
+    <!-- include _doPostBack script -->
+    <form method="post" action="./23-fra-20-03-2018-um-bokhald" id="form_doPostBack">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU0OTg1NDI5OA9kFgJmD2QWAgIID2QWAmYPZBYCZg9kFgJmDxYCHgRUZXh0BZalATxESVYgY2xhc3M9V29yZFNlY3Rpb24xPg0KPFAgY2xhc3M9dG9wbnJkYXRvPjxTUEFOIHN0eWxlPSJGTE9BVDogcmlnaHQiPjIwLiBtYXJzIDIwMTg8L1NQQU4+PFNQQU4+TnIuIDIzPC9TUEFOPjwvUD4NCjxQIGNsYXNzPU1zb1RpdGxlPkzDuGd0aW5nc2zDs2cgdW0gYsOza2hhbGQgPC9QPg0KPFAgY2xhc3M9TXNvU3VidGl0bGU+KELDs2toYWxkc2zDs2dpbik8L1A+DQo8UCBjbGFzcz1JbmRsZWRuaW5nMj5TYW1zdmFyYW5kaSBzYW10eWt0IEzDuGd0aW5nc2lucyBzdGHDsGZlc3RpciBvZyBrdW5uZ2VyIGzDuGdtYcOwdXIgaGVzYSBsw7hndGluZ3Nsw7NnOjwvUD4NCjxQIGNsYXNzPVRla3N0b3ZlcnNrcmlmdD5Cw7NraGFsZHNza3lsZGE8L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDEuPC9CPiBMw7hndGluZ3Nsw7NnaW4gZXIgZ2FsZGFuZGkgZnlyaSB2aW5udXJla2FuZGkgZnlyaXTDuGt1ciBhdiBlaW51bSBvZyBodsO4cmp1bSBzbGFnaSwgdXR0YW4gbXVuIHRpbCBlaWdhcmF2acOwdXJza2lmdGkgZWxsYSDDoWJ5cmdkYXJ2acOwdXJza2lmdGksIHN1bSBlcnUgc3Rvdm5hw7BhciDDrSBGw7hyb3l1bSwgb2cgZnlyaSB2aW5udXZpcmtzZW1pLCBzdW0gZnlyaXTDuGt1ciwgacOwIGVydSBoZWltYWhveXJhbmRpIHV0dGFubGFuZHMsIMO6dGlubmEgw60gRsO4cm95dW0uIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDIuPC9JPiBMw7hndGluZ3Nsw7NnaW4gZXIgaGFydW1mcmFtdCBnYWxkYW5kaSBmeXJpIGhlc2FyIGZ5cml0w7hrdXIsIGZlbGFnc3NrYXBpciBvZyBzYW1za2lwYW5pciBvLnTDrWwuOjwvUD4NCjxQIGNsYXNzPU51bW1lcj4xKSZuYnNwOyZuYnNwOyBGeXJpdMO4a3VyIG8udMOtbC4sIHN1bSBoYXZhIHNreWxkdSBhdCByaW5kYSBhdmdqYWxkLCBlbGxhIHN1bSBoYXZhIGZ1bGxhIGVsbGEgYXZtYXJrYcOwYSBza2F0dHNreWxkdSB0aWwgbGFuZGnDsCwgw60gdGFubiBtdW4gdMOmciBpa2tpIGVydSBmZXZuZGFyIGF2IHN0ay4gMS4gVEFLUyBrYW5uIGhlaWx0IGVsbGEgcGFydHbDrXN0IHVuZGFudGFrYSBlaW5zdGFrYXIgZnlyaXTDuGt1ciBvLnTDrWwuIGZyw6EgbMO4Z3RpbmdzbMOzZ2luaS4gRXIgZnlyaXTDuGthbiBvLnTDrWwuIGhhcnVtZnJhbXQgZmV2bmQgYXYgbnIuIDIsIGthbm4gdW5kYW50YWsgYmVydCBnZXJhc3QgZWZ0aXIgYXZ0YWx1IHZpw7AgdmnDsGtvbWFuZGkgbXluZHVnbGVpa2EuIDwvUD4NCjxQIGNsYXNzPU51bW1lcj4yKSZuYnNwOyZuYnNwOyBGeXJpdMO4a3VyIG8udMOtbC4sIGnDsCBzdW0gdHJleXQgZnlyaSBhdCBmw6FhIGJlaW5sZWnDsGlzIHN0dcOwdWwgZnLDoSBsYW5kaW51bSBza3VsdSBsYXRhIHJva25za2FwYXJ1cHBsw71zaW5nYXIsIMOtIHRhbm4gbXVuIHTDpnIgaWtraSBlcnUgZmV2bmRhciBhdiBzdGsuIDEuIErDoXR0YW5kaSBteW5kdWdsZWlraW4ga2FubiBoZWlsdCBlbGxhIHBhcnR2w61zdCB1bmRhbnRha2EgZWluc3Rha2FyIGZ5cml0w7hrdXIgZnLDoSBsw7hndGluZ3Nsw7NnaW5pLiBFciBmeXJpdMO4a2FuIGhhcnVtZnJhbXQgZmV2bmQgYXYgbnIuIDEsIGthbm4gdW5kYW50YWsgdMOzIGJlcnQgZ2VyYXN0IGVmdGlyIGF2dGFsdSB2acOwIFRBS1MuPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMy48L0k+IEzDuGd0aW5nc2zDs2dpbiBlciBpa2tpIGdhbGRhbmRpIGZ5cmkgaGVzYXIgZnlyaXTDuGt1ciwgZmVsYWdzc2thcGlyIG9nIHNhbXNraXBhbmlyIG8udMOtbC46PC9QPg0KPFAgY2xhc3M9TnVtbWVyPjEpJm5ic3A7Jm5ic3A7IEZ5cml0w7hrdXIgby50w61sLiwgc3VtIGVydSBmZXZuZGFyIGF2IHJlZ2x1bnVtIHVtIHJva25za2FwYXJoYWxkIGxhbmRzaW5zLiA8L1A+DQo8UCBjbGFzcz1OdW1tZXI+MikmbmJzcDsmbmJzcDsgRnlyaXTDuGt1ciBvLnTDrWwuLCBzdW0gZWluYW5zIGVydSBmZXZuZGFyIGF2IHJva25za2FwYXJyZWdsdW0sIMOhc2V0dGFyIMOtIGVsbGEgdmnDsCBoZWltaWxkIMOtIGtvbW11bnVzdMO9cmlzbMOzZ2luaS4gPC9QPg0KPFAgY2xhc3M9VGVrc3RvdmVyc2tyaWZ0PlNhbXNraWZ0aTwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgMi4gPC9CPkxhbmRzc3TDvXJpc21hw7B1cmluPEI+IDwvQj5rYW5uIMOhc2V0YSByZWdsdXIgdW0sIGF0IHNrcml2bGlndCBzYW1za2lmdGkgdmnDsCBteW5kdWdsZWlrYXIgdW0gdmnDsHVyc2tpZnRpLCBzdW0gZXJ1IGZldm5kIGF2IGhlc2kgbMO4Z3RpbmdzbMOzZyBlbGxhIHJlZ2x1bSwgZ2l2bmFyIHZpw7AgaGVpbWlsZCDDrSBoZXNpIGzDuGd0aW5nc2zDs2csIHNrYWwgdmVyYSB0YWxnaWx0LiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gTGFuZHNzdMO9cmlzbWHDsHVyaW4ga2FubiDDoXNldGEgbsOmcnJpIHJlZ2x1ciB1bSB0YWxnaWx0IHNhbXNraWZ0aSwgdW5kaXIgaGVzdW0gcmVnbHVyIHVtIG7DvXRzbHUgYXYgw6F2w61zdW0ga3Qtc2tpcGFudW0sIHNlcmxpZ3VtIHRhbGdpbGR1bSBmb3JtYXR1bSBvZyB0YWxnaWxkYXJpIHVuZGlyc2tyaWZ0IG8udMOtbC4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMy48L0k+IExhbmRzc3TDvXJpc21hw7B1cmluIGthbm4gw6FzZXRhLCBhdCBhdmdlcsOwaXIsIHRpa25hciBhdiBTa3LDoXNldGluZyBGw7hyb3lhIGVsbGEgw7jDsHJ1bSBteW5kdWdsZWlrdW0gZWZ0aXIgcmVnbHVtLCBzdW0gZXJ1IGdpdm5hciBlZnRpciBzdGsuIDEgZWxsYSAyLCBlcnUgZW5kYWxpZ2FyIGlubmFuIGZ5cmlzaXRpbmdpbmEuPC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyAzLjwvQj4gTGFuZHNzdMO9cmlzbWHDsHVyaW4ga2FubiDDoXNldGEgcmVnbHVyIHVtLCBhdCBteW5kdWdsZWlrYXIga3VubnUgbGF0YSBhdmdlcsOwaXIgb2cgb25udXIgc2tqw7hsIGVmdGlyIGhlc2kgbMO4Z3RpbmdzbMOzZyBlbGxhIGVmdGlyIHJlZ2x1bSwgZ2l2bmFyIHZpw7AgaGVpbWlsZCDDrSBoZXNpIGzDuGd0aW5nc2zDs2csIHV0dGFuIHVuZGlyc2tyaWZ0LCB2acOwIG1hc2tpbmVuZHVyZ2l2bmFyaSB1bmRpcnNrcmlmdCwgZWxsYSDDoSBhbm5hbiBzYW1zdmFyYW5kaSBow6F0dCwgZWxsYSB2acOwIGF0IG7DvXRhIHTDuGtuaSwgc3VtIHRyeWdnamFyIGVpbnTDvWRkYSBlecOwbWVya2luZyBhdiB0w60sIHN1bSBoZXZ1ciBsYXRpw7AgYXZnZXLDsGluYSBlbGxhIHNramFsacOwLiBBdmdlcsOwaXIgb2cgc2tqw7hsIGF2IGhlc3VtIHNsYWdpIGVydSBqYXZuc2V0dCB2acOwIGF2Z2Vyw7BpciBvZyBza2rDuGwsIGnDsCBoYXZhIHBlcnPDs25saWdhIHVuZGlyc2tyaWZ0LiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gTGFuZHNzdMO9cmlzbWHDsHVyaW4ga2FubiDDoXNldGEgcmVnbHVyIHVtLCBhdCBhdmdlcsOwaXIgb2cgb25udXIgc2tqw7hsLCBpw7AgZWluYW5zIGVydSDDoXZpa2F2aXN0IHRpa25hciBlbGxhIGdpdm5hciB2acOwIHN0w7jDsGkgw60gZWxla3Ryb25pc2thcmkgZMOhdHV2acOwZ2Vyw7AsIGt1bm51IHZlcsOwYSBza3JpdmHDsCDDunQgdmnDsCBlaW5hbnMgbXluZHVnbGVpa2FudW0gc3VtIHNlbmRhcmEuIDwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgNC48L0I+IEhhciB0YcOwIGVmdGlyIGhlc2kgbMO4Z3RpbmdzbMOzZyBlbGxhIGVmdGlyIHJlZ2x1bSwgZ2l2bmFyIHZpw7AgaGVpbWlsZCDDrSBoZXNpIGzDuGd0aW5nc2zDs2csIHZlcsOwdXIga3JhdnQsIGF0IGVpdHQgc2tqYWwsIHN1bSBlciBsYXRpw7AgYXYgw7jDsHJ1bSBlbm4gZWludW0gbXluZHVnbGVpa2EsIHNrYWwgdmVyw7BhIHVuZGlyc2tyaXZhw7AsIGthbm4ga3JhdmnDsCBsw7prYXN0IHZpw7AgYXQgbsO9dGEgdMO4a25pLCBzdW0gdHJ5Z2dqYXIgZWludMO9ZGRhIGV5w7BtZXJraW5nIGF2IHTDrSwgc3VtIGhldnVyIGxhdGnDsCBza2phbGnDsCwgc2JyLiB0w7Mgc3RrLiAyLiBTbMOtayBza2rDuGwgZXJ1IGphdm5zZXR0IHZpw7Agc2tqw7hsLCBpw7AgaGF2YSBwZXJzw7NubGlnYSB1bmRpcnNrcmlmdC4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IExhbmRzc3TDvXJpc21hw7B1cmluIGthbm4gw6FzZXRhIG7DpnJyaSByZWdsdXIgdW0gZnLDoXZpayBmcsOhIHVuZGlyc2tyaWZ0YXJrcmF2aW51bS4gw40gc2zDrWt1bSBmw7hydW0ga2FubiBhdmdlcmFzdCwgYXQgdGHDsCBmeXJpIMOhdsOtcyBzbMO4ZyBhdiBza2rDuGx1bSBpa2tpIGthbm4gdsOta2phc3QgZnLDoSBrcmF2aW51bSB1bSBwZXJzw7NubGlnYSB1bmRpcnNrcmlmdC48L1A+DQo8UCBjbGFzcz1UZWtzdG92ZXJza3JpZnQ+QWxsw71zaW5nYXI8L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDUuPC9CPiBFaW4gZnlyaXTDuGthIGVyIHZpbm51cmVrYW5kaSBlbGxhIMO6dGlubmlyIHZpbm51dmlya3NlbWksIHTDoSBpw7AgaG9uIHZlaXRpciB2w7hydXIsIHLDpnR0aW5kaSwgbMOhbiwgdMOmbmFzdHVyIG8udMOtbC4sIHN1bSBmeXJpdMO4a2FuIHZhbmxpZ2EgZsOmciB2acOwdXJnamFsZCBmeXJpLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyPC9JPi4gVXR0YW4gbXVuIHRpbCBzdGsuIDEgdmVyw7B1ciBlaW4gZnlyaXTDuGthIG1ldHQgc3VtIHZpbm51cmVrYW5kaSBlbGxhIHN1bSBhdCDDunRpbm5hIHZpbm51dmlya3NlbWksIHVtIGhvbiBlciBmZXZuZCBhdiBsw7hndGluZ3Nsw7NnIHVtIHBhcnRhLSBvZyBzbcOhcGFydGFmZWzDuGcsIGtvbmdsaWdhcmkgZnlyaXNraXBhbiB1bSDDrWdpbGRpc3NldGFuIGZ5cmkgRsO4cm95YXIgYXYgbG92IG9tIGVyaHZlcnZzZHJpdmVuZGUgZm9uZGUsIGtvbmdsaWdhcmkgZnlyaXNraXBhbiB1bSDDrWdpbGRpc3NldGFuIGZ5cmkgRsO4cm95YXIgYXYgbG92IG9tIGVyaHZlcnZzZHJpdmVuZGUgdmlya3NvbWhlZGVyIGVsbGEgw60gYcOwcmFyIG3DoXRhciBlciB2aW5udXJla2FuZGkgc2FtYsOmcnQgbMOzZy4gSGV0dGEgZXIgZ2FsZGFuZGkgdXR0YW4gbXVuIHRpbCwgdW0gZnlyaXTDuGt1cm5hciBoZWlsdCBlbGxhIHBhcnR2w61zdCBlcnUgdW5kYW50aWtuYXIgZnLDoSBrcsO4dnVudW0gw60gb21hbmZ5cmluZXZuZHUgbMOzZ3VtLjwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgNi48L0I+IFN1bSByb2tuc2thcGFydGlsZmFyIHZlcsOwdXIgcm9rbmHDsDwvUD4NCjxQIGNsYXNzPU51bW1lcj4xKSZuYnNwOyZuYnNwOyBza3LDoXNldGluZ2FyLCB1bmRpciBoZXN1bSB0cmFuc2FrdGnDs25zc3BvcmnDsCwgc2JyLiDCpyA3LCBzdGsuIDEsIDwvUD4NCjxQIGNsYXNzPU51bW1lcj4yKSZuYnNwOyZuYnNwOyBtw7hndWxpZ2FyIGzDvXNpbmdhciBhdiBiw7NraGFsZGludW0sIHVuZGlyIGhlc3VtIGF2dGFsdXIgdW0gZWxla3Ryb25pc2t0IGTDoXR1dW1iw710aSwgc2JyLiDCpyAxNiwgc3RrLiAyLDwvUD4NCjxQIGNsYXNzPU51bW1lcj4zKSZuYnNwOyZuYnNwOyBtw7hndWxpZ2FyIGzDvXNpbmdhciBhdiBza2lwYW51bSwgacOwIHZhcsOwdmVpdGEgb2cgZmlubmEgdmFyw7B2ZWl0dCByb2tuc2thcGFydGlsZmFyIGZyYW0sIHNici4gwqcgMTYsIHN0ay4gMywgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjQpJm5ic3A7Jm5ic3A7IHNrasO4bCBvZyBvbm51ciBza2phbHByw7Nndiwgc2JyLiDCpyA4LCA8L1A+DQo8UCBjbGFzcz1OdW1tZXI+NSkmbmJzcDsmbmJzcDsgYcOwcmFyIHVwcGzDvXNpbmdhciwgc3VtIGVydSBuZXnDsHVnYXIgZnlyaSBlZnRpcmxpdHNzcG9yacOwLCBzYnIuIMKnIDcsIHN0ay4gMiwgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjYpJm5ic3A7Jm5ic3A7IHJva25za2FwaXIsIHN1bSBza3VsdSBnZXJhc3Qgc2FtYsOmcnQgbMOzZywgb2cgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjcpJm5ic3A7Jm5ic3A7IG3DuGd1bGlnYXIgZ3Jhbm5za2/DsGFuYXJwcm90b2tvbGxpci4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IFVtIGlra2kgYW5uYcOwIGVyIMOhc2V0dCDDrSBhw7ByYXJpIGzDs2dnw6F2dSwgZmV2bmlyIGVpbiByb2tuc2thcHVyLCBzYnJ0LiBzdGsuIDEsIG5yLiA2LCBlaXNpbmkgdW0gbcO4Z3VsaWdhciBsZWnDsHNsdWZyw6FncmVpw7BpbmdhciBvZyBtw7hndWxpZ2FyIGdyYW5uc2tvw7BhbmFyw6F0ZWtuaW5nYXIgby5hLiwgacOwIGVyIGtuw710dCBhdCByb2tuc2thcGludW0uIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDM8L0k+LiBHcmFubnNrb8OwYXJhcHJvdG9rb2xsaXIsIHNicnQuIHN0ay4gMSwgbnIuIDcgZXIgdHLDum5hw7BhcnRpbGZhciwgc3VtIGJlcnQgdmVyw7B1ciBnaXZpbiBhdGdvbmdkIHRpbCwgdW0gU2tyw6FzZXRpbmcgRsO4cm95YSBlbGxhIGVpbiBhbm5hciBhbG1lbm51ciBteW5kdWdsZWlraSwgacOwIGhldnVyIGhlaW1pbGQ8U1BBTiBzdHlsZT0iQ09MT1I6IHJlZCI+IDwvU1BBTj5lZnRpciBhw7ByYXJpIGzDs2dnw6F2dSwga3JldnVyIGF0IGbDoWEgYXRnb25nZCB0aWwgZ3Jhbm5za2/DsGFyYXByb3Rva29sbGluYS48ST4mbmJzcDs8L0k+PC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyA3LjwvQj4gVHJhbnNha3Rpw7Nuc3Nwb3Jpw7AgbWVya2lyIMOtIGhlc3VtIGbDuHJpIHRhw7Agc2FtYmFuZCwgc3VtIGVyIG1pbGx1bSBlaW5zdMO4a3Ugc2tyw6FzZXRpbmdhcm5hciBvZyDDoXJzcm9rbnNrYXBpbiwgc2thdHRhdXBwZ2Vyw7BpbmEgb2cgYXZnamFsZHN1cHBnZXLDsGluYSwgc3R1ZG5pbmdzcm9rbnNrYXBpbiBlbGxhIHNhbXN2YXJhbmRpIHJva25za2FwYXJ1cHBzZXRhbiBoasOhIHTDrSBiw7NraGFsZHNza3lsZHVnYSwgacOwIHNrYWwgZ2VyYXN0IHNhbWLDpnJ0IGzDs2cuIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDIuPC9JPiBFZnRpcmxpdHNzcG9yacOwIG1lcmtpciDDrSBoZXN1bSBmw7hyaSB0w6ZyIHVwcGzDvXNpbmdhciwgacOwIHNramFscHLDs2d2YSwgYXQgc2tyw6FzZXRpbmdhcm5hciBlcnUgcsOmdHRhci48L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDguPC9CPiBTa2rDuGwgbWVya2lyIMOtIGhlc3VtIGbDuHJpIGVpdHQgb2cgaHbDuHJ0IG5lecOwdWd0IHNramFscHLDs2d2IGZ5cmkgdHJhbnNha3Rpw7NudW0sIHN1bSB2ZXLDsGEgc2tyw6FzZXR0YXIgw60gYsOza2hhbGRpbnVtLCB1dHRhbiBtdW4gdGlsLCB1bSBza2phbHByw7NndmnDsCBlciDDoSBlbGVrdHJvbmlza3VtIG1pw7BsaSwgcGFwcMOtcmkgZWxsYSDDuMOwcnVtIG1pw7BsaS4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IFV0dGFuaMO9c2lzIHNrasO4bCBtZXJraXIgw60gaGVzdW0gZsO4cmkgZWl0dCBvZyBodsO4cnQgc2tqYWxwcsOzZ3YsIHN1bSBrZW11ciBmcsOhIMO4w7BydW0gZW5uIHTDrSwgc3VtIGhldnVyIGLDs2toYWxkc3NreWxkdW5hLiBPbm51ciBza2rDuGwgdmVyw7BhIG1ldHQgc3VtIGlubmFuaMO9c2lzIHNrasO4bC4gPC9QPg0KPFAgY2xhc3M9VGVrc3RvdmVyc2tyaWZ0PkFsbWVubiBiw7NraGFsZHNrcsO4djwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgOS48L0I+IELDs2toYWxkacOwIHNrYWwgbGVnZ2phc3QgdGlsIHLDpnR0aXMgb2cgZnJlbWphc3Qgw60gc2Ftc3ZhcmkgdmnDsCBnw7PDsGFuIGLDs2toYWxkc3Npw7Agb2cgdmnDsCBmeXJpbGl0aSBmeXJpIHNsYWdpIG9nIHZhdmkgZnlyaXTDuGt1bm5hci4gSGFydW1mcmFtdCBza2FsIGLDs2toYWxkacOwIGxlZ2dqYXN0IHRpbCByw6Z0dGlzIG9nIGZyZW1qYXN0IHNvbGVpw7BpcywgYXQgcm9rbnNrYXBhcnRpbGZhcmnDsCBpa2tpIHZlcsOwdXIgb3nDsGlsYWd0LCBiZWludCBidXJ0dXIgZWxsYSBhdmxhZ2HDsCwgZWlucyBvZyB0YcOwIHNrYWwgdHJ5Z2dqYXN0IG3Ds3RpIHZpbGx1bSBvZyBtaXNuw710c2x1LiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gVmVyw7B1ciByb2tuc2thcGFydGlsZmFyacOwIHLDpnR0YcOwLCBza3VsdSBiw6bDsGkgdXBwcnVuYWxpZ2EgaW5uaWhhbGRpw7Agb2cgYnJveXRpbmdpbiB0w73DsGlsaWdhIHPDrWdnamFzdCDDrSB0aWxmYXJpbnVtLiA8L1A+DQo8UCBjbGFzcz1UZWtzdG92ZXJza3JpZnQ+U2tyw6FzZXRpbmdhciBvZyBza2phbHByw7NndjwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgMTAuPC9CPiBBbGxhciB0cmFuc2FrdGnDs25pciBza3VsdSBza3LDoXNldGFzdCBuZXl2dCB2acOwIGZ5cmlsaXRpIGZ5cmkgc2xhZ2kgb2cgdmF2aSBmeXJpdMO4a3VubmFyLiBUcmFuc2FrdGnDs25pcm5hciBza3VsdSBza3LDoXNldGFzdCBza2rDs3Rhc3QgZ2rDuHJsaWd0IGVmdGlyLCBhdCB2acOwdXJza2lmdGluaSwgc3VtIGVydSBvcnPDuGsgdGlsIHNrcsOhc2V0aW5nYXJuYXIsIGVydSB0aWwgc3Rhw7Bhci4gRWluIGZ5cml0w7hrYSwgc3VtIHZlZ25hIHPDrXR0IHNsYWcgb2cgdmF2IGlra2kgZXIgZsO4ciBmeXJpIGF0IHNrcsOhc2V0YSBrZXlwIGVsbGEgc8O4bHUsIGthbm4gw60gc3Rhw7BpbiBza3LDoXNldGEgdmnDsCBncnVuZGFybGFnaSDDrSBkYWdsaWd1IGthc3NhdXBwZ2Vyw7B1bnVtLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gU2tyw6FzZXRpbmdhcm5hciBza3VsdSwgw60gdGFubiBtdW4sIHRhw7AgYmVyIHRpbCwgZ2VyYXN0IMOtIHNvbXUgcmHDsGZ5bGdqdSBzdW0gdHJhbnNha3Rpw7NuaXJuYXIuIFNrcsOhc2V0aW5nYXJuYXIgc2t1bHUgdsOtc2EgdGlsIHNrasO4bGluaSwgc3VtIGhveXJhIHRpbCBza3LDoXNldGluZ2FybmFyLCBvZyBza3VsdSBpbm5paGFsZGEgdXBwbMO9c2luZ2FyLCBzdW0gdsOtc2EgbsOmciBvZyBodmFyIGVpbnN0YWthIHNrcsOhc2V0aW5naW4gZXIgc2tyw6FzZXR0IMOtIGLDs2toYWxkaW51bS4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMzwvST4uIFNrcsOhc2V0aW5nYXJuYXIgc2t1bHUsIMOtIHRhbm4gbXVuIHRhw7AgZXIgbmV5w7B1Z3QgZWZ0aXIgc2xhZ2kgb2cgdmF2aSBmeXJpdMO4a3VubmFyLCBzdGVtbWFzdCBhdiB2acOwIGdveW1zbHVybmFyLCB1bmRpciBoZXN1bSBrYXNzYWdveW1zbHVybmFyIG9nIGxpa3ZpZGdveW1zbHVybmFyLjwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDQuPC9JPiBTa3LDoXNldGluZ2FybmFyIHNrdWx1IGdlcmFzdCDDrSBkb25za3VtIGtyw7NudW0sIMOtIGV2cnVtIGVsbGEgw60gdmnDsGtvbWFuZGkgZnJlbW1hbmR1bSBnamFsZG95cmEuIEVpbiBmeXJpdMO4a2Ega2FubiBiZXJ0IHNraWZ0YSB0aWwgc2tyw6FzZXRpbmdhciDDrSDDuMOwcnVtIGdqYWxkb3lyYSwgdMOhIHJva25za2FwYXLDoXJpw7AgYnlyamFyLCB1dHRhbiBzbywgYXQgaGV0dGEgZnJlbW1hbmRhIGdqYWxkb3lyYSBlciB2b3LDsGnDsCB2acOwa29tYW5kaSwgw6HDsHJlbm4gbmV2bmRhIHJva25za2FwYXLDoXIgYnlyamFyLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiA1PC9JPi4gVW0gc2tyw6FzZXR0IHZlcsOwdXIgw60gZnJlbW1hbmR1bSBnamFsZG95cmEsIHQuZC4gw60gZXZydW0sIHNrdWx1IHRhw7Agw60gcm9rbnNrYXBhcnRpbGZhcmludW0gdmVyYSB1cHBsw71zaW5nYXIsIHVuZGlyIGhlc3VtIHVtIGt1cnNpbiDDoSB0cmFuc2FrdGnDs25zZGVnbnVtIGVsbGEgbMOta25hbmRpIHVtcm9rbmluZ2FyZmFrdG9yYXIsIHN1bSBhbHTDrcOwIGdlcmEgdGHDsCBtw7hndWxpZ3QgYXQgdW1yb2tuYSB0aWwgZGFuc2thciBrcsOzbnVyLiBMYW5kc3N0w71yaXNtYcOwdXJpbiBrYW5uIHZpw7Aga3VubmdlcsOwIMOhc2V0YSBuw6ZycmkgcmVnbHVyIHVtIHRlaXIgdW1yb2tuaW5nYXJmYWt0b3Jhciwgc3VtIGVydSBuZXZuZGlyIMOtIDEuIHBrdC48L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDExLjwvQj4gQWxsYXIgc2tyw6FzZXRpbmdhciBza3VsdSBrdW5uYSBmw7hyYXN0IHRpbCByb2tuc2thcGluLCB1cHBnZXLDsGluYSBlbGxhIHVwcHNldGluZ2luYSwgbmV2bmQgw60gwqcgNywgc3RrLiAxLiBUw7hsaW5pIMOtIMOhdmlrYXZpc3Qgcm9rbnNrYXBpbnVtLCB1cHBnZXLDsGluaSBlbGxhIHVwcHNldGluZ2luaSBza3VsdSBrdW5uYSB2ZXLDsGEgYsO9dHQgc3VuZHVyIMOtIHTDpnIgc2tyw6FzZXRpbmdhciwgc3VtIHTDpnIgZXJ1IHNhbWFuc2V0dGFyIGF2LiA8L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDEyLjwvQj4gRWluIG9nIGh2w7hyIHNrcsOhc2V0aW5nIHNrYWwgc2tqYWxwcsOzZ3Zhc3QgdmnDsCBza2rDuGx1bS4gRXJ1IHV0dGFuaMO9c2lzIHNrasO4bCBza3JpdmHDsCDDunQsIHNrdWx1IGhlc2ksIMOtIHRhbm4gbXVuLCB0YcOwIGJlciB0aWwsIG7DvXRhc3QuIFNrasO4bCBza3VsdSB1cHBsw71zYSB0YcOwLCBzdW0gZXIgbmV5w7B1Z3QgZnlyaSBhdCBlecOwbWVya2phIGVmdGlybGl0c3Nwb3Jpw7AsIHVuZGlyIGhlc3VtIGdyZWlkbGlnYSB2w61zYSB0cmFuc2FrdGnDs25zZGFnZmVzdGluZyBvZyB1cHBow6ZkZC4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IFVtIHNrcsOhc2V0dCB2ZXLDsHVyIHZpw7Agc3TDuMOwaSDDrSBlbGVrdHJvbmlza3VtIGTDoXR1dW1iw710aSwgc2thbCB0YW5uIGLDs2toYWxkc3NreWxkdWdpIGhhcnVtZnJhbXQgc2tqYWxwcsOzZ3ZhIGVpbnN0w7hrdSBmbHl0aW5naW5hIG9nIGh2YXIgZWluc3Rha2Egc2tyw6FzZXRpbmdpbiwgw60gbXVuIHRpbCB0w63DsCwgZXIgw60gYsOza2hhbGRpbnVtLiA8L1A+DQo8UCBjbGFzcz1UZWtzdG92ZXJza3JpZnQ+VmFyw7B2ZWl0c2xhIGF2IHJva25za2FwYXJ0aWxmYXJpPC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyAxMy48L0I+IFRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgc2thbCB2YXLDsHZlaXRhIHJva25za2FwYXJ0aWxmYXJpw7Agw6EgdHJ5Z2dhbiBow6F0dCDDrSA1IMOhciBmcsOhIGVuZGFudW0gYXYgdMOtIHJva25za2FwYXLDoXJpLCBzdW0gdGlsZmFyacOwIHZpw7B2w61rdXIuIFRpbGZhcmnDsCBza2FsIHZhcsOwdmVpdGFzdCBzb2xlacOwaXMsIGF0IHRpbGZhcmnDsCDDrSDDuGxsdW0gdmFyw7B2ZWl0c2x1dMOtw7BhcnNrZWnDsGludW0gc2rDoWx2c3TDuMOwdWd0IG9nIGVpbnTDvXR0IGthbm4gdmVyw7BhIGZ1bm5pw7AgZnJhbS4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IFZlcsOwdXIgcm9rbnNrYXBhcnRpbGZhcmnDsCB2YXLDsHZlaXR0IMOhIGVsZWt0cm9uaXNrdW0gbWnDsGxpLCBtaWtyb2ZpbG1pIGVsbGEgw6EgYW5uYW4gdMOtbMOta2FuIGjDoXR0LCBza2FsIHRpbGZhcmnDsCwgdXR0YW4gdmnDsGdlcsOwLCDDunRyb2tuaW5nIGVsbGEgdGlsbGFnaW5nLCBrdW5uYSB2ZXLDsGEgc2tyaXZhw7Agw7p0IMOtIGtsw6Fyc2tyaWZ0LjwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDMuPC9JPiBMw71zaW5nYXIgYXYgc2tpcGFudW0gYXQgZmlubmEgb2cgc2tyaXZhIMO6dCByb2tuc2thcGFydGlsZmFyIMOtIGtsw6Fyc2tyaWZ0LCBzYnIuIMKnIDE2LCBzdGsuIDMsIG5yLiAyLCBza3VsdSB2ZXJhIHRpbCBza2phbHMgw60ga2zDoXJza3JpZnQuIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDQ8L0k+LiDDgXNldGluZ2FybmFyIMOtIHN0ay4gMS0zIGVydSBpa2tpIGdhbGRhbmRpIGZ5cmkga2Fzc2FyZWdsYXIgb2cgc2Ftc3ZhcmFuZGkgaW5uYW5ow71zaXMgc2tqw7hsLjwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgMTQuIDwvQj5Sb2tuc2thcGFydGlsZmFyacOwIHNrYWwgdmFyw7B2ZWl0YXN0IMOhIGVpbiBzbMOta2FuIGjDoXR0LCBhdCBhbG1lbm5pciBteW5kdWdsZWlrYXIgby5vLiwgc3VtIGVmdGlyIGHDsHJhcmkgbMOzZ2fDoXZ1IGhhdmEgcsOmdHQgdGlsIGF0IGtyZXZqYSBpbm5saXQgw60gcm9rbnNrYXBhcnRpbGZhcmnDsCwgdXR0YW4gdHJ1cHVsbGVpa2FyIGt1bm51IHNsZXBwYSBmcmFtYXQgdGlsZmFyaW51bS48L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gUm9rbnNrYXBhcnRpbGZhcmnDsCBrYW5uIHZhcsOwdmVpdGFzdCDDrSBlbGVrdHJvbmlza3VtIGZvcm1pIMOtIEbDuHJveXVtIGVsbGEgdXR0YW5sYW5kcywgdW0gdGFubiBiw7NraGFsZHNza3lsZHVnaTwvUD4NCjxQIGNsYXNzPU51bW1lcj4xKSZuYnNwOyZuYnNwOyB2YXLDsHZlaXRpciB0aWxmYXJpw7Agw60gc2Ftc3ZhcmkgdmnDsCBoZXNhIGzDuGd0aW5nc2zDs2csIDwvUD4NCjxQIGNsYXNzPU51bW1lcj4yKSZuYnNwOyZuYnNwOyBhbHTDrcOwIGthbm4gZsOhYSBoZW5kdXIgw6EgdGlsZmFyacOwIG9nIGdldmEgYXRnb25nZCB0aWwgdGlsZmFyacOwIGhlciDDrSBsYW5kaW51bSwgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjMpJm5ic3A7Jm5ic3A7IHZhcsOwdmVpdGlyIG3DuGd1bGlnYXIgbMO9c2luZ2FyIGF2IG7DvXR0dW0gc2tpcGFudW0gby50w61sLiBvZyBtw7hndWxpZ3VtIG5lecOwdWd1bSBsb3luaW9yw7B1bSDDrSBGw7hyb3l1bSwgb2cgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjQpJm5ic3A7Jm5ic3A7IGFuc2FyIGVmdGlyLCBhdCByb2tuc2thcGFydGlsZmFyacOwIHZlcsOwdXIgc2tyaXZhw7Agw7p0IMOtIGtsw6Fyc2tyaWZ0LCBlbGxhIGVyIHTDuGt0IMOtIMO4w7BydW0gdmnDsHVya2VuZHVtIGbDrWx1Zm9ybWF0aS48L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAzLjwvST4gVmVyw7B1ciByb2tuc2thcGFydGlsZmFyacOwIGlra2kgdmFyw7B2ZWl0dCBlbGVrdHJvbmlza3QsIHNrYWwgdGHDsCB2YXLDsHZlaXRhc3Qgw6EgcGFwcMOtcmkgw60gRsO4cm95dW0sIHNici4gdMOzIHN0ay4gNC02LiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiA0LjwvST4gUm9rbnNrYXBhcnRpbGZhcmnDsCBrYW5uIHZhcsOwdmVpdGFzdCDDoSBwYXBww61yaSDDrSBEYW5tYXJrLCBGaW5ubGFuZGksIMONc2xhbmRpLCBOb3JlZ2kgZWxsYSBTdsO4csOta2kuIMOBc2V0aW5nYXJuYXIgw60gc3RrLiAyLCBuci4gMSBvZyAyLCB2ZXLDsGEgYXQgbsO9dGEgc2Ftc3ZhcmFuZGkuIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDUuPC9JPiBSb2tuc2thcGFydGlsZmFyacOwIGZ5cmkgdmVyYW5kaSBtw6FuYcOwYSBvZyB1bmRhbmZhcm5hIG3DoW5hw7BhIGthbm4gdmFyw7B2ZWl0YXN0IMOhIHBhcHDDrXJpIHV0dGFubGFuZHMuIMOBc2V0aW5nYXJuYXIgw60gc3RrLiAyLCBuci4gMSBvZyAyLCB2ZXLDsGEgYXQgbsO9dGEgc2Ftc3ZhcmFuZGkuIDwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDYuPC9JPiBJbm5hbmjDvXNpcyBvZyB1dHRhbmjDvXNpcyBza2rDuGwsIGnDsCB2acOwdsOta2phIHZpcmtzZW1pbnVtIGhqw6EgdMOtIGLDs2toYWxkc3NreWxkdWdhIHV0dGFubGFuZHMsIGt1bm51IHZhcsOwdmVpdGFzdCDDoSBwYXBww61yaSDDrSB2acOwa29tYW5kaSBsYW5kaSBhbGxhIHRhIHTDrcOwaW5hLCB0aWxmYXJpw7Agc2thbCB2YXLDsHZlaXRhc3QsIHNici4gwqcgMTMuIEFubmHDsCByb2tuc2thcGFydGlsZmFyLCBpw7AgdmnDsHbDrWt1ciB2aXJrc2VtaW51bSBoasOhIHTDrSBiw7NraGFsZHNza3lsZHVnYSB1dHRhbmxhbmRzLCBrYW5uIGZ5cmkgdmVyYW5kaSBtw6FuYcOwYSBvZyB1bmRhbmZhcm51IDMgbcOhbmHDsGlybmFyIGVmdGlyIHNvbXUgdHJleXR1bSB2YXLDsHZlaXRhc3Qgw6EgcGFwcMOtcmkgw60gdmnDsGtvbWFuZGkgbGFuZGkuIMOBc2V0aW5nYXJuYXIgw60gc3RrLiAyLCBuci4gMSBvZyAyLCB2ZXLDsGEgYXQgbsO9dGEgc2Ftc3ZhcmFuZGkuPC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyAxNS48L0I+IEhlbGR1ciBiw7NraGFsZHNza3lsZGFuIHVwcGF0LCBza2FsIHNlaW5hc3RhIHZpcmthbmRpIGxlacOwc2xhIGFuc2EgZWZ0aXIsIGF0IHJva25za2FwYXJ0aWxmYXJpw7AgZnJhbWhhbGRhbmRpIHZlcsOwdXIgdmFyw7B2ZWl0dCDDrSBzYW1zdmFyaSB2acOwIGhlc2EgbMO4Z3RpbmdzbMOzZy4gVmVyw7B1ciBmeXJpdMO4a2FuIHRpa2luIGF2LCB2acOwIGF0IHNraWZ0aXLDpnR0dXJpbiBsZWdndXIgdXBww60sIGthbm4gc2tpZnRpcsOmdHR1cmluIGdlcmEgYXYsIGF0IG9ubnVyIGVubiBzZWluYXN0YSB2aXJrYW5kaSBsZWnDsHNsYSBza2FsIHZhcsOwdmVpdGEgcm9rbnNrYXBhcnRpbGZhcmnDsC4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IMONIMO4w7BydW0gZsO4cnVtLCBoYXIgbGVpw7BzbGFuIGZlciBmcsOhLCBza3VsdSBsaW1pcm5pciDDrSBmcsOhZmFyYW5kaSBsZWnDsHNsdW5pIGFuc2EgZWZ0aXIsIGF0IHJva25za2FwYXJ0aWxmYXJpw7AgZnlyaSB0w63DsGFyc2tlacOwacOwIGZyYW0gdGlsIGZyw6FmYXJpbmdpbmEgdmVyw7B1ciB2YXLDsHZlaXR0IMOtIHNhbXN2YXJpIHZpw7AgaGVzYSBsw7hndGluZ3Nsw7NnLiBUw6EgacOwIG7DvWdnaiBsZWnDsHNsYSB0ZWt1ciB2acOwLCBza3VsdSBsaW1pcm5pciDDrSBmcsOhZmFybnUgbGVpw7BzbHVuaSBsYXRhIG7DvWdnanUgbGVpw7BzbHVuaSByb2tuc2thcGFydGlsZmFyacOwLiA8L1A+DQo8UCBjbGFzcz1UZWtzdG92ZXJza3JpZnQ+TMO9c2luZ2FyIGF2IHNraXBhbnVtLCBpw7Agc2tyw6FzZXRhIG9nIHZhcsOwdmVpdGEgcm9rbnNrYXBhcnRpbGZhciBvLnTDrWwuPC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyAxNi48L0I+IFRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgc2thbCBnZXJhIGVpbmEgbMO9c2luZyBhdiBza3LDoXNldGluZyBhdiB0cmFuc2FrdGnDs251bSBvZyB2YXLDsHZlaXRzbHUgYXYgcm9rbnNrYXBhcnRpbGZhcmksIHN1bSBow7Nza2FyIHRpbCB2aXJrc2VtaSBmeXJpdMO4a3VubmFyLiBMw71zaW5naW4gc2thbCBnZXJhIHRhw7AgbcO4Z3VsaWd0IGhqw6EgZWludW0sIGnDsCBrZW11ciB1dHRhbsOtZnLDoSwgb2cgc3VtIGhldnVyIGVpbmEgcsOtbWlsaWdhIHZpdGFuIHVtIHJva25za2FwIG9nIHRhIG7DvXR0dSB0w7hrbmluYSwgYWx0w63DsCBhdCBrdW5uYSBmeWxnamEsIGh2dXNzdSBza3LDoXNldGluZ2FybmFyIHZlcsOwYSBnasO4cmRhciwgb2cgaHZ1c3N1IHJva25za2FwYXJ0aWxmYXJpw7AgdmVyw7B1ciBmdW5uacOwIG9nIHNrcml2YcOwIMO6dCDDrSBrbMOhcnNrcmlmdC4gTMO9c2luZ2luIHNrYWwgdmVyYSBza3JpdmHDsCDDoSBlaW51bSBtw6FsaSwgc3VtIGVyIHZhbmxpZ3QgZnlyaSBhbG1lbm5hciBteW5kdWdsZWlrYXIsIG9nIHZpw7AgYXQgbsO9dGEgdmFubGlnIG9yw7Agb2cgZmFrb3LDsCDDoSDDuGtpbnVtLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyLjwvST4gTMO9c2luZ2luIGF2LCBodnVzc3UgdHJhbnNha3Rpw7NuaXIgdmVyw7BhIHNrcsOhc2V0dGFyLCBza2FsIMOtIG1pbnN0YSBsYWdpIGhhdmEgbsO4a3RhbmRpIHVwcGzDvXNpbmdhciB1bSw8L1A+DQo8UCBjbGFzcz1OdW1tZXI+MSkmbmJzcDsmbmJzcDsgaHZ1c3N1IHNraXBhbmlybmFyIHRyeWdnamEsIGF0IHRpbGZhciwgacOwIGVyIGdydW5kYXJsYWcgdW5kaXIgc2tyw6FzZXRpbmd1bSwgdW5kaXIgaGVzdW0gZWlzaW5pIGF2dGFsdXIgw60gc2FtYmFuZGkgdmnDsCBlbGVrdHJvbmlza3QgZMOhdHV1bWLDvXRpLCBzdW0gZXIgZ3J1bmRhcmxhZyB1bmRpciBza3LDoXNldGluZ3VtLCBlciBmdWxsZ290dCBvZyBuZXl2dCwgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjIpJm5ic3A7Jm5ic3A7IGh2dXNzdSBza2lwYW5pcm5hciB0cnlnZ2phIGVpbmEgZnVsbGfDs8OwYSBvZyBuZXl2YSBza3LDoXNldGluZyBhdiB0cmFuc2FrdGnDs251bSwgdW5kaXIgaGVzdW0gYXYga29udGVyaW5nc2xlacOwYmVpbmluZywgYnLDumt0dSBrdC1za2lwYW51bnVtLCBtYW51ZWxsdW0gbWFubmFnb25nZHVtIG8udMOtbC4sIG9nIDwvUD4NCjxQIGNsYXNzPU51bW1lcj4zKSZuYnNwOyZuYnNwOyBodnVzc3Ugc2rDoWx2dmlya2FuZGkgc2tyw6FzZXRpbmdhciB2ZXLDsGEgZ2rDuHJkYXIsIHVuZGlyIGhlc3VtIMO6dHJva25pbmdhcmdydW5kYXJsYWcgb2cgw7p0cm9rbmluZ2FyZnJ5bWlsLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAzLjwvST4gTMO9c2luZ2luIGF2LCBodnVzc3Ugcm9rbnNrYXBhcnRpbGZhciB2ZXLDsHVyIHZhcsOwdmVpdHQsIHNrYWwgw60gbWluc3RhIGxhZ2kgaGF2YSBuw7hrdGFuZGkgdXBwbMO9c2luZ2FyIHVtPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjEpJm5ic3A7Jm5ic3A7IHTDpnIgbWFubmFnb25nZGlyLCBzdW0gdmVyw7BhIG7DvXR0YXIgw60gc2FtYmFuZGkgdmnDsCB2YXLDsHZlaXRzbHUgYXYgcm9rbnNrYXBhcnRpbGZhcmksIDwvUD4NCjxQIGNsYXNzPU51bW1lcj4yKSZuYnNwOyZuYnNwOyBodnVzc3Ugcm9rbnNrYXBhcnRpbGZhciB2ZXLDsHVyIGZ1bm5pw7Agb2cgc2tyaXZhw7Agw7p0IMOtIGtsw6Fyc2tyaWZ0LCB1bmRpciBoZXN1bSB1cHBsw71zaW5nYXIgdW0gbG95bmlvcsOwIG8udMOtbC4gb2cgdXBwbMO9c2luZ2FyIHVtLCBodnVzc3UgYnJvbmdsYcOwYXIgZMOhdHVyIHZlcsOwYSB1bXNldHRhciwgb2cgPC9QPg0KPFAgY2xhc3M9TnVtbWVyPjMpJm5ic3A7Jm5ic3A7IGh2dXNzdSBza3LDoXNldGluZyDDrSBmcmVtbWFuZHVtIGdqYWxkb3lyYSB2ZXLDsHVyIHVtcm9rbmHDsCB0aWwgZGFuc2thciBrcsOzbnVyLiA8L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiA0LjwvST4gVXR0YW4gbXVuIHRpbCBzdGsuIDEtMyBuw710aXN0IHRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgaWtraSBhdCBnZXJhIG5ldm5kdSBsw71zaW5nYXIsIHVtIGhhbm4gbsO9dGlyIGVpbmEga3Qtc3RhbmRhcmRza2lwYW4gYXQgc2tyw6FzZXRhIHRyYW5zYWt0acOzbmlyIG9nIHZhcsOwdmVpdGEgcm9rbnNrYXBhcnRpbGZhci4gVW5kYW50YWsgZWZ0aXIgMS4gcGt0LiBlciB0cmV5dGHDsCBhdiwgYXQ8L1A+DQo8UCBjbGFzcz1OdW1tZXI+MSkmbmJzcDsmbmJzcDsgbXVuYW5kaSBicm95dGluZ2FyIGlra2kgZXJ1IGdqw7hyZGFyIMOtIGt0LXN0YW5kYXJkc2tpcGFuaW5pLCBvZyBhdCA8L1A+DQo8UCBjbGFzcz1OdW1tZXI+MikmbmJzcDsmbmJzcDsgdGFubiwgc3VtIHZlaXRpciBrdC1zdGFuZGFyc2tpcGFuaW5hLCBoZXZ1ciBnasO4cnQgc2zDrWthciBsw71zaW5nYXIsIHN1bSBmeXJpdMO4a2FuIGhldnVyIMOtIHZhcsOwdmVpdHNsdS4gPC9QPg0KPFAgY2xhc3M9VGVrc3RvdmVyc2tyaWZ0PkF0Z29uZ2QgaGrDoSBhbG1lbm51bSBteW5kdWdsZWlrdW0gdGlsIHJva25za2FwYXJ0aWxmYXI8L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDE3LjwvQj4gw40gdGFubiBtdW4gZWluIGFsbWVubnVyIG15bmR1Z2xlaWtpIGVmdGlyIGHDsHJhcmkgbMOzZ2fDoXZ1IGthbm4ga3JldmphIGlubmxpdCDDrSByb2tuc2thcGFydGlsZmFyacOwIGhqw6EgdMOtIGLDs2toYWxkc3NreWxkdWdhLCBrYW5uIGFsbWVubmkgbXluZHVnbGVpa2luIGtyZXZqYSwgYXQgdGFubiBiw7NraGFsZHNza3lsZHVnaSB1dHRhbiBrb3N0bmHDsCBnZXZ1ciBteW5kdWdsZWlrYW51bSBhdGdvbmdkIHRpbCBhbHQsIHN1bSBlciBuZXnDsHVndCBmeXJpIGF0IGZpbm5hIGZyYW0gb2cgbGVzYSByb2tuc2thcGFydGlsZmFyacOwLCBlaW5zIG9nIG15bmR1Z2xlaWtpbiBrYW5uIGtyZXZqYSwgYXQgdGlsZmFyacOwIHZlcsOwdXIgbGF0acOwIG15bmR1Z2xlaWt1bnVtLCB0w6EgacOwIGJpw7Bpw7AgdmVyw7B1ciB1bSB0YcOwLiBFciB0aWxmYXJpw7AgZ295bXQgw60gw7p0bGFuZGludW0sIGthbm4gbXluZHVnbGVpa2luIHTDsyBrcmV2amEsIGF0IHRpbGZhcmnDsCB2ZXLDsHVyIHNlbnQgZWxsYSBsYXRpw7AgbXluZHVnbGVpa3VudW0uIEhhcnVtZnJhbXQga2FubiBteW5kdWdsZWlraW4ga3JldmphLCBhdCBza3LDoXNldGluZ2FyIMOtIGZyZW1tYW5kdW0gZ2phbGRveXJhLCBlaXNpbmkgZXZydW0sIHZlcsOwYSB1bXJva25hw7BhciB0aWwgZGFuc2thciBrcsOzbnVyLiBFciByb2tuc2thcGFydGlsZmFyacOwLCB1dHRhbmjDvXNpcyBza2rDuGwgdW5kYW50aWtpbiwgw6Egw7jDsHJ1bSBtw6FsdW0gZW5uIGbDuHJveXNrdW0gZWxsYSBkb25za3VtLCBrYW5uIG15bmR1Z2xlaWtpbiBrcmV2amEsIGF0IHRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgdXR0YW4ga29zdG5hw7AgdW1zZXRpciB0aWxmYXJpw7AgdGlsIGbDuHJveXNrdC48L1A+DQo8UCBjbGFzcz1TdGs+PEk+U3RrLiAyPC9JPi4gQXRnb25nZGluIHRpbCByb2tuc2thcGFydGlsZmFyacOwIGVmdGlyIHN0ay4gMSBlciBlaXNpbmkgZ2FsZGFuZGksIHVtIHRpbGZhcmnDsCBlciDDrSB2YXLDsHZlaXRzbHUgaGrDoSB0cmnDsGphbWFubmkuPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMy48L0k+IFVtIHJva25za2FwYXJ0aWxmYXJpw7AgdmVyw7B1ciB2YXLDsHZlaXR0IMOtIGVsZWt0cm9uaXNrdW0gZm9ybWksIGthbm4gZWluIG15bmR1Z2xlaWtpIGtyZXZqYSwgYXQgcm9rbnNrYXBhcnRpbGZhcmnDsCB2ZXLDsHVyIGxhdGnDsCDDrSBlaW51bSB2acOwdXJrZW5kdW0gZsOtbHVmb3JtYXRpIGVsbGEgdmVyw7B1ciBzZW50IHRhbGdpbHQgw60gZWludW0gdmnDsHVya2VuZHVtIGZvcm1hdGkgZWZ0aXIgcmVnbHVtLCDDoXNldHRhciB2acOwIGhlaW1pbGQgw60gwqcgMi4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gNDwvST4uIFNrcsOhc2V0aW5nIEbDuHJveWEga2FubiB0w7MgYWx0w63DsCBrcmV2amEgdmnDsGtvbWFuZGkgcm9rbnNrYXBhcnRpbGZhci4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gNS48L0k+IFRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgc2thbCBzdmFyYSB1bWLDuG4gbXluZHVnbGVpa2FucyBlZnRpciBzdGsuIDEgc2tqw7N0YXN0IGdqw7hybGlndC4gVmnDsHbDrWt1ciB1bWLDuG5pbiB2aXJrc2VtaSB1dHRhbmxhbmRzLCBza2FsIHRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgc3ZhcmEgdW1iw7huaW5pIMOtIHNlaW5hc3RhIGxhZ2kgZWluIG3DoW5hw7AgZWZ0aXIsIGF0IG15bmR1Z2xlaWtpbiBoZXZ1ciBzZW50IHVtYsO4bmluYS48L1A+DQo8UCBjbGFzcz1UZWtzdG92ZXJza3JpZnQ+UmV2c2nDoXNldGluZ2FyPC9QPg0KPFAgY2xhc3M9UGFyYWdyYWZ0ZWtzdD48Qj7CpyAxOC48L0I+IFVtIGlra2kgaMOmZ3JpIHJldnNpbmcgZXIgw6FzZXR0IMOtIGHDsHJhcmkgbMOzZ2fDoXZ1LCB2ZXLDsHVyIHZpw7Agc2VrdCByZXZzYcOwdXIgdGFubiwgc3VtIGJyw710dXIgw6FzZXRpbmdhcm5hciDDrSDCp8KnIDktMTcuPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IMONIHJlZ2x1bSwgacOwIHZlcsOwYSBnaXZuYXIgc2FtYsOmcnQgaGVzaSBsw7hndGluZ3Nsw7NnLCBrYW5uIHJldnNpbmcgdmVyw7BhIMOhc2V0dCB2acOwIHNla3QgZnlyaSBicm90IMOhIHJlZ2x1cm5hci4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMy48L0k+IFJldnNpw6FieXJnZCBrYW5uIHZlcsOwYSDDoWzDuGdkIGzDuGdmcsO4w7BpbGlndW0gcGVyc8OzbnVtIHNhbWLDpnJ0IHJlZ2x1bnVtIMOtIDUuIGthcGl0bGkgw60gcmV2c2lsw7NnaW5pLjwvUD4NCjxQIGNsYXNzPVN0az48ST5TdGsuIDQ8L0k+LiBGeXJuaW5nYXJmcmVpc3RpbiBmeXJpIHJldnNpw6FieXJnZCBlciA1IMOhci48L1A+DQo8UCBjbGFzcz1QYXJhZ3JhZnRla3N0PjxCPsKnIDE5LjwvQj4gVmVyw7B1ciByb2tuc2thcGFydGlsZmFyacOwIGlra2kgdmFyw7B2ZWl0dCBzb2xlacOwaXMsIHN1bSDDoXNldHQgZXIgw60gwqcgMTQsIHNici4gwqcgMTcsIG9nIGhldnVyIGhldHRhIHZhbmRhIGZ5cmkgbWlzbsO9dHNsdSB2acOwIHPDpnIsIGthbm4gdGFubiBiw7NraGFsZHNza3lsZHVnaSB2acOwIGTDs21pIG1pc3NhIHLDpnR0aW4gYXQgdmFyw7B2ZWl0YSByb2tuc2thcGFydGlsZmFyIHV0dGFubGFuZHMuIEZyw6Fkw7htaW5naW4gZXIgbWlsbHVtIDEgb2cgNSDDoXIsIHJva25hw7AgZnLDoSBlbmRhbGlndW0gZMOzbWkuIE1lw7BhbiBtw6FsacOwIHZlcsOwdXIgdmnDsGdqw7hydCwga2FubiByw6Z0dHVyaW4gdmnDsCDDunJza3Vyw7BpIGdlcmEgYXYsIGF0IHRhbm4gYsOza2hhbGRzc2t5bGR1Z2kgaWtraSBrYW5uIHZhcsOwdmVpdGEgcm9rbnNrYXBhcnRpbGZhciB1dHRhbmxhbmRzLCBmeXJyIGVubiBtw6FsacOwIGVyIGVuZGFsaWdhIGF2Z2rDuHJ0LiBWacOwIGTDs21pIMOtIG3DoWxpbnVtIGthbm4gdmVyw7BhIGF2Z2rDuHJ0LCBhdCBrw6ZyYSBoZXZ1ciBpa2tpIHN0ZcOwZ2FuZGkgdmlya25hw7AuPC9QPg0KPFAgY2xhc3M9VGVrc3RvdmVyc2tyaWZ0PkdpbGRpc2tvbWEgb2cgc2tpZnRpc3JlZ2x1cjwvUD4NCjxQIGNsYXNzPVBhcmFncmFmdGVrc3Q+PEI+wqcgMjAuPC9CPiBIZW5kYSBsw7hndGluZ3Nsw7NnIGtlbXVyIMOtIGdpbGRpIDEuIGFwcsOtbCAyMDE4LCBvZyBlciBnYWxkYW5kaSBmeXJpIHJva25za2FwYXLDoXIsIGnDsCBieXJqYSAxLiBhcHLDrWwgMjAxOCBlbGxhIHNlaW5uaS4gPC9QPg0KPFAgY2xhc3M9U3RrPjxJPlN0ay4gMi48L0k+IFNhbXN0dW5kaXMsIHN1bSBoZW5kYSBsw7hndGluZ3Nsw7NnIGtlbXVyIMOtIGdpbGRpLCBmZXIgw7pyIGdpbGRpIGzDuGd0aW5nc2zDs2cgbnIuIDc1IGZyw6EgMjQuIG9rdG9iZXIgMTk3OCB1bSBiw7NraGFsZHNza3lsZHUuIFTDsyBlcnUgaGlnYXJ0aWwgZ2FsZGFuZGkgcmVnbHVyIGZyYW1oYWxkYW5kaSBnYWxkYW5kaSBmeXJpIHJva25za2FwYXLDoXIsIHN1bSBieXJqYcOwdSBpbm5hbiAxLiBhcHLDrWwgMjAxOC48L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9IlRFWFQtQUxJR046IGNlbnRlciIgYWxpZ249Y2VudGVyPiZuYnNwOzwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0iVEVYVC1BTElHTjogY2VudGVyIiBhbGlnbj1jZW50ZXI+Jm5ic3A7PC9QPg0KPFAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSJURVhULUFMSUdOOiBjZW50ZXIiIGFsaWduPWNlbnRlcj7DjSBUaW5nYW5lc2ksIDIwLiBtYXJzIDIwMTg8L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9IlRFWFQtQUxJR046IGNlbnRlciIgYWxpZ249Y2VudGVyPiZuYnNwOzwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0iVEVYVC1BTElHTjogY2VudGVyIiBhbGlnbj1jZW50ZXI+PEI+QWtzZWwgVi4gSm9oYW5uZXNlbiAoc2lnbi4pPC9CPjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0iVEVYVC1BTElHTjogY2VudGVyIiBhbGlnbj1jZW50ZXI+bMO4Z21hw7B1cjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbD5MbS4gbnIuIDUxLzIwMTc8L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9IlRFWFQtQUxJR046IGNlbnRlciIgYWxpZ249Y2VudGVyPiZuYnNwOzwvUD48L0RJVj5kZBZ7oUAc8bPMPTLYz1XQl8e0xq9R8sYTA2yzlON1KQmW" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AA9833B3" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAO40+KWwIiTXTKCbw7T9t/z/nt6o3y/4pbUj7P9MebBIhJL9GubYpwuVe/CWEaxBWcUYOxW54FsLdRj4RqKXjF7JnQoVMEKqw9ulLVAoUtyNQ==" /></form>
+    <!-- /include _doPostBack script -->
+
+                        </div>
+                    </div>
+			    </div>
+		    </section>
+        
+        </section>
+	    <!-- /PAGE_BODY -->
+
+        <!-- FOOTER -->
+        <footer class="footer" style="display: none">
+ 		    <div class="container">
+        	    <div class="left mb-xs">
+            	    <div class="footer-links">
+                	    <a href="/Reservations.aspx">Fyrivarni</a>
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#contact-us-modal">Samskifti</a>
+                    </div>
+                </div>
+                <div class="right">
+            	    <div class="footer-copyright color-grey">
+                	    logir.fo &copy; Øll rættindi tilskilað
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /FOOTER -->
+	
+	    <!-- Modals -->
+	    <form class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="contact-us__title">
+		    <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+				    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+					    <h2 class="modal-title" id="contact-us__title">Samskifti</h2>
+				    </div>
+				    <fieldset class="modal-body">
+					    <div class="form-group mb-half">
+						    <label for="contact-us__name">Navn<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="contact-us__name" class="form-control" type="text" title="Navn"/>
+					    </div>
+					    <div class="form-group mb-half">
+						    <label for="contact-us__email">Teldupostur<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="contact-us__email" class="form-control" type="email" title="Teldupostur"/>
+					    </div>
+					    <div class="form-group mb-half">
+						    <label for="contact-us__subject">Evni<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="contact-us__subject" class="form-control" type="text" title="Evni"/>
+					    </div>
+					    <div class="form-group mb-half">
+						    <label for="contact-us__question">Fyrispurningur<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+						    <textarea id="contact-us__question" class="form-control" rows="5" title="Fyrispurningur"></textarea>
+					    </div>
+                        <div id="contact-us__message" class="alert alert-danger hidden" role="alert"></div>
+				    </fieldset>
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+					    <button id="contact-us__send" type="button" class="btn btn-default" data-processing-text="Leitar" data-url="/SendMessage.aspx" data-support-email="logasavn@tinganes.fo">Send</button>
+				    </div>
+			    </div>
+		    </div>
+	    </form>
+
+        <form class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in__title">
+		    <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+				    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+					    <h2 class="modal-title" id="sign-in__title">Rita inn</h2>
+				    </div>
+				    <fieldset class="modal-body">
+					    <div class="form-group mb-half">
+						    <label for="sign-in__username">Brúkaranavn<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="sign-in__username" class="form-control" type="text" title="Brúkaranavn"/>
+					    </div>
+					    <div class="form-group mb-half">
+						    <label for="sign-in__pwd">Loyniorð<span class="color-red">*</span></label>
+                            <small class="color-red hidden"></small>
+                            <input id="sign-in__pwd" class="form-control" type="password" title="Loyniorð"/>
+					    </div>
+                        <div id="sign-in__message" class="alert hidden" role="alert"></div>
+				    </fieldset>
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+					    <button id="sign-in__login" type="button" class="btn btn-default" data-processing-text="Leitar" data-url="/SignOn.aspx">Rita inn</button>
+				    </div>
+			    </div>
+		    </div>
+	    </form>
+        <!-- /Modals -->
+    
+        <!-- BLOCK UI -->
+        <div class="block-ui__panel" style="display: none">
+            <h2 class="block-ui__text">
+                Leitar
+                <img class="block-ui__spinner"src="https://logir.fo:443//img/v2/loading.svg" alt="Loading"/>
+            </h2>
+        </div>
+        <!-- /BLOCK UI -->
+    
+        <noscript>
+            <div class="noscript">
+                <section class="page-wrap">
+                    <!-- header -->
+                    <header class="header">
+	                    <nav class="navbar">
+				            <div class="container">
+					            <div class="navbar-header">
+						            <a class="navbar-brand" href="https://logir.fo:443/">
+							            <img src="https://logir.fo:443//img/logo.png" alt="Company Logo" title="LÓGARSAVNIÐ">
+						            </a>
+					            </div>
+                                <ul class="nav navbar-nav" id="top-nav">
+								    <li class="nav-group"><a href="https://logir.fo:443/?lang=en"><span class="icon icon-flag"><img src="https://logir.fo:443//img/v2/i-flag-en.svg" alt="Enskt"></span></a></li>
+								    <li><a href="https://logir.fo:443/?lang=fo"><span class="icon icon-flag"><img src="https://logir.fo:443//img/v2/i-flag-fo.svg" alt="Føroyskt"></span></a></li>
+                                </ul>
+                	        </div>
+                        </nav>
+                    </header>
+                    <!-- /header -->
+                    
+                    <!-- content -->
+                    <section class="content-section">
+                        <div class="container">
+                            <span><DIV class=WordSection1>
+<H2><I><SPAN lang=FO>JAVASCRIPT ER NEYÐUGT</SPAN></I></H2>
+<P class=MsoNormal style="LINE-HEIGHT: 200%"><SPAN style="COLOR: #5d5d5d">Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú </SPAN><SPAN lang=DA style="COLOR: #c00000"><A href="https://aboutjavascript.com/">vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga</A></SPAN><SPAN style="COLOR: #5d5d5d">.</SPAN><BR>
+<SPAN style="COLOR: #5d5d5d">Ger JavaScript virkið í tínum kaga og</SPAN><SPAN style="COLOR: #c00000"> <SPAN lang=DA><A href="https://logir.fo/v2">les síðuna inn av nýggjum</A></SPAN></SPAN><SPAN style="COLOR: #5d5d5d">.</SPAN><BR>
+<SPAN style="COLOR: #5d5d5d">&nbsp;</SPAN><BR></DIV></span>
+
+                            
+                        </div>
+                    </section>
+	            </section>
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="left mb-xs">
+                            <div class="footer-links">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="footer-copyright color-grey">
+                                logir.fo &copy; Øll rættindi tilskilað
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- /FOOTER -->
+            </div>
+        </noscript>
+    
+        <script type="text/javascript">
+            document.getElementsByClassName('page-wrap')[0].setAttribute('style', null);
+            document.getElementsByClassName('footer')[0].setAttribute('style', null);
+        </script>
+
+        <script src="https://logir.fo:443//js/jquery.min.js"></script>
+        <script src="https://logir.fo:443//js/bootstrap.min.js"></script>
+        <script src="https://momentjs.com/downloads/moment.min.js"></script>
+        <script src="https://logir.fo:443//js/jquery.sumoselect.min.js"></script>
+	    <script src="https://logir.fo:443//js/jquery.autogrow-textarea.min.js"></script>
+        <script src="https://logir.fo:443//js/jquery.validate.min.js"></script>
+        <script src="https://logir.fo:443//js/jquery.slimscroll.js"></script>
+        <script src="https://logir.fo:443//js/fancytree/jquery.fancytree.ui-deps.js"></script>
+        <script src="https://logir.fo:443//js/fancytree/jquery.fancytree.min.js"></script>
+        <script src="https://logir.fo:443//js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="https://logir.fo:443//js/custom.js"></script>
+
+        <script src="https://logir.fo:443//js/google-analytics.js"></script>
+    
+        <!-- components -->
+        <script src="https://logir.fo:443//js/components/search-tabs.js"></script>
+        <script src="https://logir.fo:443//js/components/modal.js"></script>
+        <script src="https://logir.fo:443//js/helpers/validation-helper.js"></script>
+        <script src="https://logir.fo:443//js/pages/site-master.js"></script>
+    
+        
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e061339f6cc2ac9"></script>
+    <script src="https://logir.fo:443/js/helpers/print-helper.js"></script>
+    <script src="https://logir.fo:443/js/components/list-actions.js"></script>
+    <script src="https://logir.fo:443/js/pages/view-law.js"></script>
+    
+
+        <script>
+            window.onbeforeunload = function (event) {
+                $('.block-ui__panel').hide();
+            };
+
+        </script>
+    </body>
+</html>

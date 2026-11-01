@@ -1,0 +1,8 @@
+{
+  "candidate": "d4df5db8011936d6677b7ac4e3fbcfcd615e6434",
+  "checks": "9Guides90shape checks;18examples;strictsync9sources;152unit tests",
+  "changed_only": "9Guides pass;3 documented distinct-job/domain warnings",
+  "review_status": "Independent review pending for41project bindings and2perimeter bindings; accepted prior47levy rows unchanged",
+  "source_capture_storage": "Perimeter rawHTML losslessly gzipped; compare decompressed raw hashes. Reader text unchanged. Other captures remain raw.",
+  "manifest_note": "Project writer manifest pins README at6d4309641. Later perimeter README changes are intentional and bound by its own manifest. Original inputs and both README predecessors retained in Git."
+}

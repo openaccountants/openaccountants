@@ -1,0 +1,31 @@
+{
+  "candidate_head": "6f53123a0306500efec732d97e42abc5ef764388",
+  "source_baseline": "f7d59d7c4679192f0e5d3bbe286742fb78531c11",
+  "guide_sha256": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
+  "original_research_files_exact": 121,
+  "accepted_ordinary_evidence_files_exact": 32,
+  "other_accepted_manifest_files_exact": 39,
+  "inherited_individual_rows_exact": 60,
+  "inherited_proof_units_exact": 87,
+  "new_row_locations_verified": 14,
+  "guide_slugs": 18,
+  "calculation_controls": 65,
+  "calculation_files": 29,
+  "schema_validation_exit": 0,
+  "strict_metadata_exit": 0,
+  "coverage_complete": false,
+  "coverage_missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "CTA_and_protected_metadata_exact": true,
+  "new_independent_closure": "pending; read separate reviewer record",
+  "new_material_pushed": false,
+  "country_complete": false,
+  "unit_tests": "No code changed; previous f7d59d7c suite green. New published-head CI must pass before publication is considered verified."
+}

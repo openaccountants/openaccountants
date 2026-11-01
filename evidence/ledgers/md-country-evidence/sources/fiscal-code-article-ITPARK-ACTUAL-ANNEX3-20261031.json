@@ -1,0 +1,88 @@
+{
+  "article": "ITPARK-ACTUAL-ANNEX3-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_3_135md.docx",
+  "text": "Anexa nr.3 la \nOrdinul Ministerului Finanțelor nr.135 din 06 noiembrie 2017\nПриложение № 3 \nк Приказу Министерства финансов № 135   от  06 ноября 2017 г.\n\nForma /Форма ISAPTI 17\n\n\nNOTA DE INFORMARE \nprivind plгțile salariale efectuate de cгtre rezidentul parcului \npentru tehnologia informației оn folosul angajaților \nИНФОРМАЦИЯ\nо выплате по оплате труда, осуществленных резидентом\n информационно-технологического парка в пользу работников\n\nDenumirea contribuabilului ____________________________________________\nНаименование налогоплательщика \n\nCodul fiscal __________________________________________________________\nФискальный код \n\nGenul principal de activitate conform CAEM-2_______________________\nОсновной вид деятельности согласно КЭДМ-2\n\nCodul de оnregistrare al rezidentului parcului_______________\nРегистрационный код резидента парка\n\nCodul localității (CUATM)______________________________________________\nКод местности (КАТЕМ)\n Denumirea subdiviziunii SFS _____________________________\nНаименование подразделения ГНС\n\nAnul calendaristic ____________________________________________________\nКалендарный год \n\nData prezentării ______________________________________________________\nДата представления\n\nNumărul de înscrieri __________________________________________________\nКоличество записей    \n\nNr. crt.№п/п\nCodul fiscal al angajatului Фискальный код работника\nNumele și prenumele angajatului \nФамилия и имя работника\nSuma venitului din plгțile salariale, (lei)\nСумма дохода, в виде выплат по оплате труда (в леях)\nNr. de luni оn care angajatul a activat оn parcul pentru tehnologia informației \n№ месяцев, в которых работник работал в информационно-технологическом парке\n1\n2\n3\n4\n5\n\n\n\n\n\n\n\n\n\n\nTotal (Итого)\n\nX\n\nSuma de control ____________________________________________________________________________\nКонтрольная сумма                    (suma totală pe Notă, col.4) (итого по Информации, гр.4)\n\nNumărul curent se indică în mod consecutiv pe toată Nota, indiferent de numărul de pagini.\nПорядковый номер указывается нарастающим итогом по всей Информации, независимо от количества страниц.\n\nConducător/Руководитель ____________________________\nContabil șef/Главный бухгалтер _______________________",
+  "sha256": "52e52c511022842bb055cc75e42300ce0152975dfc7fecb97591823a0833301b",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T03:43:27.598266+00:00",
+  "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex3.docx",
+  "binary_sha256": "8697ee2ec2b7bac6b4e91aaac07bf18ebb985cddeb0cfb6c795da15808a45ab3",
+  "binary_size_bytes": 19810,
+  "full_binary_retained": true,
+  "source_points": {
+    "table_00": "Denumirea contribuabilului ____________________________________________\nНаименование налогоплательщика \n\nCodul fiscal __________________________________________________________\nФискальный код \n\nGenul principal de activitate conform CAEM-2_______________________\nОсновной вид деятельности согласно КЭДМ-2\n\nCodul de оnregistrare al rezidentului parcului_______________\nРегистрационный код резидента парка\n\nCodul localității (CUATM)______________________________________________\nКод местности (КАТЕМ)\n Denumirea subdiviziunii SFS _____________________________\nНаименование подразделения ГНС\n\nAnul calendaristic ____________________________________________________\nКалендарный год \n\nData prezentării ______________________________________________________\nДата представления\n\nNumărul de înscrieri __________________________________________________\nКоличество записей    ",
+    "table_01": "Nr. crt.№п/п\nCodul fiscal al angajatului Фискальный код работника\nNumele și prenumele angajatului \nФамилия и имя работника\nSuma venitului din plгțile salariale, (lei)\nСумма дохода, в виде выплат по оплате труда (в леях)\nNr. de luni оn care angajatul a activat оn parcul pentru tehnologia informației \n№ месяцев, в которых работник работал в информационно-технологическом парке\n1\n2\n3\n4\n5\n\n\n\n\n\n\n\n\n\n\nTotal (Итого)\n\nX",
+    "body_paragraph_000": "Anexa nr.3 la ",
+    "body_paragraph_001": "Ordinul Ministerului Finanțelor nr.135 din 06 noiembrie 2017",
+    "body_paragraph_002": "Приложение № 3 ",
+    "body_paragraph_003": "к Приказу Министерства финансов № 135   от  06 ноября 2017 г.",
+    "body_paragraph_005": "Forma /Форма ISAPTI 17",
+    "body_paragraph_008": "NOTA DE INFORMARE ",
+    "body_paragraph_009": "privind plгțile salariale efectuate de cгtre rezidentul parcului ",
+    "body_paragraph_010": "pentru tehnologia informației оn folosul angajaților ",
+    "body_paragraph_011": "ИНФОРМАЦИЯ",
+    "body_paragraph_012": "о выплате по оплате труда, осуществленных резидентом",
+    "body_paragraph_013": " информационно-технологического парка в пользу работников",
+    "body_paragraph_017": "Suma de control ____________________________________________________________________________",
+    "body_paragraph_018": "Контрольная сумма                    (suma totală pe Notă, col.4) (итого по Информации, гр.4)",
+    "body_paragraph_020": "Numărul curent se indică în mod consecutiv pe toată Nota, indiferent de numărul de pagini.",
+    "body_paragraph_021": "Порядковый номер указывается нарастающим итогом по всей Информации, независимо от количества страниц.",
+    "body_paragraph_023": "Conducător/Руководитель ____________________________",
+    "body_paragraph_024": "Contabil șef/Главный бухгалтер _______________________"
+  },
+  "table_cells": [
+    [
+      [
+        "Denumirea contribuabilului ____________________________________________\nНаименование налогоплательщика \n\nCodul fiscal __________________________________________________________\nФискальный код \n\nGenul principal de activitate conform CAEM-2_______________________\nОсновной вид деятельности согласно КЭДМ-2\n\nCodul de оnregistrare al rezidentului parcului_______________\nРегистрационный код резидента парка\n\nCodul localității (CUATM)______________________________________________\nКод местности (КАТЕМ)",
+        " Denumirea subdiviziunii SFS _____________________________\nНаименование подразделения ГНС\n\nAnul calendaristic ____________________________________________________\nКалендарный год \n\nData prezentării ______________________________________________________\nДата представления\n\nNumărul de înscrieri __________________________________________________\nКоличество записей    "
+      ]
+    ],
+    [
+      [
+        "Nr. crt.№п/п",
+        "Codul fiscal al angajatului Фискальный код работника",
+        "Numele și prenumele angajatului \nФамилия и имя работника",
+        "Suma venitului din plгțile salariale, (lei)\nСумма дохода, в виде выплат по оплате труда (в леях)",
+        "Nr. de luni оn care angajatul a activat оn parcul pentru tehnologia informației \n№ месяцев, в которых работник работал в информационно-технологическом парке"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Total (Итого)",
+        "",
+        "X"
+      ]
+    ]
+  ],
+  "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex3-render/itpark-current-annex3.pdf",
+  "rendered_pdf_sha256": "f45a2b98e7ac54a8c93f9e30099541fcd254d8ecfbb32154658f4c1f91c5bcd0",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+  "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "portal_test": false,
+  "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+}

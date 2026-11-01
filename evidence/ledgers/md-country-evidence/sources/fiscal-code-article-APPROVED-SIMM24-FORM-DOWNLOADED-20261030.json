@@ -1,0 +1,23 @@
+{
+  "article": "APPROVED-SIMM24-FORM-DOWNLOADED-20261030",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20501%20ro/an_1_143_md.docx",
+  "text": "                                                                                                                                                     Anexa nr. 1\n                                                                                                                         la Ordinul ministrului finanțelor\n                                                                                                                             nr. 143 din 27 noiembrie 2024\nForma SIMM24M\n\n\n                                                                    DAREA DE SEAMĂ\n                                             privind impozitul pe venitul agenților economici subiecți\n                                 ai regimurilor fiscale stabilite la capitolul 71 și 73 din titlul II a Codului fiscal\n\n\n Codul fiscal                                                                  Denumirea contribuabilului\n\n Serviciul Fiscal de Stat                                                      Perioada fiscală\n\n Codul localității (CUATM)                                                     Data prezentării\n\n Genul principal de activitate                                                 Cod (CAEM)\n\n\n\n                                Categoria contribuabilului (în pătrățelul literei selectate se pune semnul “√”)\n\n       A     Subiecţi ai sectorului întreprinderilor mici şi mijlocii\n\n       B     Agenţii economici care desfăşoară activităţi în domeniul comercializării deşeurilor de metale feroase şi neferoase\n\n\n\n                                                    Indicatori                                                                           Suma\n                                                          1                                                                                 2\n 1. Venituri conform contabilității financiare\n\n 2. Veniturile neimpozabile prevăzute la art. 20 din Codul fiscal\n\n 3. Valoarea returului de marfă\n\n 4. Valoarea discountului (reducerii)\n\n 5. Veniturile rezultate din diferența de curs valutar\n\n 6. Venit impozabil (rând 1 – rând 2 – rând 3 – rând 4 – rând 5)\n\n 7. Cota impozitului pe venit\n\n 8. Impozitul pe venit conform cotei în vigoare (rând 6 * rând 7)\n\n 9. Trecerea în cont a impozitului pe venit achitat în afara Republicii Moldova\n\n 10. Impozitul pe venit (rând 8 – rând 9)\n\n\n          Declarăm că informația din darea de seamă este veridică și purtăm răspundere conform legislației în vigoare, în cazul\nincluderii informației false sau care creează incertitudini.\n\n\nConducător _______________                                                                                                                Contabil-șef _______________",
+  "sha256": "f7e01e4985988f462e33e4545d1c01d3a9370c0470b4766244fb829479b71e31",
+  "read_date": "2026-10-30",
+  "observed_utc": "2026-10-30T22:40:10.225616+00:00",
+  "format": "Actual approved-order annex downloaded through normal visible browser link and bounded download event, retained unchanged; text extracted from bundled LibreOffice render; no portal submission",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/simm24-form.docx",
+  "binary_sha256": "722facc7e364027926bed189a3911e7e802cac574613e79fb2119bdf54d6bba2",
+  "binary_size_bytes": 34147,
+  "full_binary_retained": true,
+  "rendered_pdf_relative_to_country_workspace": "validation/simm24-form-render/simm24-form.pdf",
+  "rendered_pdf_sha256": "fc52e781a7c769b03a8a514f71167af3c93b13503cd2347facdfcfe80d4b7cd9",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "source_points": {},
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "read_scope": "Complete rendered form/instructions read and visually inspected; current statutory applicability and documented source inconsistencies control application.",
+  "source_inconsistencies": "The linked annex actually says SIMM24M and contains categoryB/chapter7^3; enacted order says SIMM24 and currentCodechapter7^3 is repealed. Only currently eligible chapter7^1/categoryA method is applied; no portal-name/version or live-categoryB validation claim."
+}

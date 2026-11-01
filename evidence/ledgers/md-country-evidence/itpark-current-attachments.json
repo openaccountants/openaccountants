@@ -1,0 +1,221 @@
+{
+  "status": "Nine official attachments/full14renderedpages read; inlineIU17instructions and actualenacted106read; methods/source conflicts/portal limits require independent country review",
+  "records": [
+    {
+      "article": "ITPARK-ACTUAL-ANNEX1-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_1_135md.docx",
+      "sha256": "c31e8140d3b855d14b76b0696f546fe2f886cdade830a58f291ac01126da2cc5",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.593214+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex1.docx",
+      "binary_sha256": "6612e8e026dba33ba5c338e3c25612861847c2490f8d52b5b065f16d5134bf47",
+      "binary_size_bytes": 20430,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex1-render/itpark-current-annex1.pdf",
+      "rendered_pdf_sha256": "60dd774962e52ad902da9cb553de5ef9889eaf5bad7d3be437e3999534dba706",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX3-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_3_135md.docx",
+      "sha256": "52e52c511022842bb055cc75e42300ce0152975dfc7fecb97591823a0833301b",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.598266+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex3.docx",
+      "binary_sha256": "8697ee2ec2b7bac6b4e91aaac07bf18ebb985cddeb0cfb6c795da15808a45ab3",
+      "binary_size_bytes": 19810,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex3-render/itpark-current-annex3.pdf",
+      "rendered_pdf_sha256": "f45a2b98e7ac54a8c93f9e30099541fcd254d8ecfbb32154658f4c1f91c5bcd0",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX4-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_4_135md.docx",
+      "sha256": "b0a90f23af62487cf3de222d2ab8649dd00a693296b5f0ebdd66679a97aa42cb",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.601729+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex4.docx",
+      "binary_sha256": "d7ce38b2a2fb08b8904addaac1b47307c278b0687ba8f10a5c5eb79300c18897",
+      "binary_size_bytes": 15646,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex4-render/itpark-current-annex4.pdf",
+      "rendered_pdf_sha256": "654f77a39c88d3ee205b764f6fa08d0c2c3f62b872048ffbd6e80f001dffb4bb",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX5-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_5_135md.docx",
+      "sha256": "f124da0ce62f37ba4100793c127dd5ee53287aeb0cbb9299fd91c08878e18607",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.605432+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex5.docx",
+      "binary_sha256": "a2c450eb41269594a898df58969f8e8ca27690237dc7d69a542347b5a21a82ce",
+      "binary_size_bytes": 15179,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex5-render/itpark-current-annex5.pdf",
+      "rendered_pdf_sha256": "5b53e7f34faf5910f1a49472c447d5eaa7fd133b30fda85939123876c8d5721f",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX6-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_6_135md.docx",
+      "sha256": "9a5abb34ca57d6a9ed2a7ab2fd3c2b3d08ca7d917bbc3af0b185317c37ea272b",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.607544+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex6.docx",
+      "binary_sha256": "56a2da54d1db2aeefab4650be37056bf29306374f128f84a8fee7efc2dd14436",
+      "binary_size_bytes": 13288,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex6-render/itpark-current-annex6.pdf",
+      "rendered_pdf_sha256": "c93e6f0e942ded60f0f916c67ef0a9d73c751b507f687f8257c1d017a33ec798",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX7-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an7_135md.docx",
+      "sha256": "59bab8a09d59ebd023ee4f3dca60ae5be3dacdecfd7056d10031c34f111f8627",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.613364+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex7.docx",
+      "binary_sha256": "4709caf644dc64bd4231f0fb3fc749062dac13dbe426bf6a2ff3c093153d1abf",
+      "binary_size_bytes": 21416,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex7-render/itpark-current-annex7.pdf",
+      "rendered_pdf_sha256": "bfde62d1953d7d2bf5f7fe7369eb47e0080434fb2384f497a0ef0768a6f2366f",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX8-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an8_135md.docx",
+      "sha256": "8c6b12566573375452a9943df7e5c97d87e565c2d9e3960642aafc2eef4d156b",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.620999+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex8.docx",
+      "binary_sha256": "d2bbb853b914a1092cbbce632b268dafcb9b9464964fedc4104a03f9176fb500",
+      "binary_size_bytes": 20780,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex8-render/itpark-current-annex8.pdf",
+      "rendered_pdf_sha256": "5175a715a0c929f4cb7882e24c1a130250b4d1674551d4f33147229f4b5c165d",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX9-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an9_135md.docx",
+      "sha256": "447888cd471631ff95e1b95d9d7b6324941dd4e557a489314b5d5b62a50ab13a",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.626698+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex9.docx",
+      "binary_sha256": "8e24a10735a625ef8e5350d691d5f5a5fa7132c82a6235d5dc89ff298ddda591",
+      "binary_size_bytes": 21201,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex9-render/itpark-current-annex9.pdf",
+      "rendered_pdf_sha256": "100be79b5e8deb7a5bea2c788e948ef722d8283768656baf1afdf747a87677e9",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    },
+    {
+      "article": "ITPARK-ACTUAL-ANNEX10-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an10_135md.docx",
+      "sha256": "0f0946b0bc8d7714e383e7ca2e4dea3315909d97f4302e81207064eec25ab7f2",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T03:43:27.631825+00:00",
+      "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex10.docx",
+      "binary_sha256": "8f578ea87bb7ebe999a2c61df0d3301ac369fc0492245cfcc49fd31ff45aab0b",
+      "binary_size_bytes": 20434,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex10-render/itpark-current-annex10.pdf",
+      "rendered_pdf_sha256": "294f4b68dd72bb73ccd942b4150d2acdc323ab8f5f820652bb3b7d0ede6291c2",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+    }
+  ],
+  "additional_retained_sources": [
+    "ITPARK-IU17-INLINE-INSTRUCTIONS-20261031",
+    "ITPARK-ORDER106-ENACTED-20261031"
+  ]
+}

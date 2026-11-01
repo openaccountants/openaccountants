@@ -1,13 +1,13 @@
 ---
 name: gr-partnerships-single-entry
 description: "Greek income tax for tax year 2026 on partnerships and other legal entities that keep single-entry books: general and limited partnerships (ΟΕ, ΕΕ), civil-law partnerships (αστικές εταιρείες, κοινωνίες), joint ventures (κοινοπραξίες) and similar entities under the Income Tax Code (ν. 4172/2013) arts. 45, 47, 58, 64, 67, 68 and 71. Covers who may keep single-entry books (EUR 1.5m turnover, ν. 4308/2014 art. 2), profit as income less expenses with no deemed-profit floor, the 22% rate, losses, the trade fee, the 80% prepayment, form N, profit shares to partners (no withholding), the switch from double to single entry, and penalties. Trigger on: ΟΕ ΕΕ φορολογία, απλογραφικά βιβλία, προσωπική εταιρεία φόρος, αστική εταιρεία έντυπο Ν. Out of scope: entities on double-entry books (gr-corporate-income-tax), sole traders and partners' own income (gr-income-tax), VAT (gr-vat-return), EFKA (gr-efka)."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -198,8 +198,6 @@ expected:
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 
 Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52); no AADE circular found that says in terms whether art. 49 applies to single-entry entities (the EUR 3,000,000 floor makes the point academic at single-entry size); the official text of ν. 5164/2024 art. 47, which amended ν. 4308/2014 art. 2 after the Ministry of Finance codified text (posted February 2024) was made (AADE's May 2026 manual still applies the EUR 1,500,000 test); the AADE decision setting the filing window for tax year 2026 returns, and any extension; whether any 2026 law amended the ITC articles above after ν. 5264/2025.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

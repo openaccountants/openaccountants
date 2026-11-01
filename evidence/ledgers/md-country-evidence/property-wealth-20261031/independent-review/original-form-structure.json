@@ -1,0 +1,44 @@
+[
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 1460,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 64,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 99,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 78,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 102,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 79,
+    "nonempty_missing_in_original_XML": []
+  },
+  {
+    "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031-units.json",
+    "original_sha256_exact": true,
+    "paragraphs": 113,
+    "nonempty_missing_in_original_XML": []
+  }
+]

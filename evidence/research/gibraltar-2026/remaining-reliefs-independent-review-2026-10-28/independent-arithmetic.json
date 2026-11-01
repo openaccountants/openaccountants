@@ -1,0 +1,117 @@
+{
+  "method": "Independent Decimal calculations written from the statutory rules and scenario inputs, then compared with expected fields.",
+  "results": [
+    {
+      "name": "Solar installation aggregate cap and two-year joint allocation",
+      "independent_method": "min(8000,6000)=6000; 6000/2=3000; 3000*0.60=1800; 3000*0.40=1200",
+      "independent_results": {
+        "total_deduction": "6000",
+        "each_year": "3000",
+        "first_claimant_each_year": "1800.00",
+        "second_claimant_each_year": "1200.00"
+      },
+      "writer_expected": {
+        "total_deduction": 6000,
+        "each_year": 3000,
+        "first_claimant_each_year": 1800,
+        "second_claimant_each_year": 1200
+      },
+      "checks": {
+        "total_deduction": true,
+        "each_year": true,
+        "first_claimant_each_year": true,
+        "second_claimant_each_year": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Performance improvement to rating D including EPC cost",
+      "independent_method": "(10000+200)*0.30=3060",
+      "independent_results": {
+        "evidenced_total": "10200",
+        "income_deduction": "3060.00"
+      },
+      "writer_expected": {
+        "evidenced_total": 10200,
+        "income_deduction": 3060
+      },
+      "checks": {
+        "evidenced_total": true,
+        "income_deduction": true
+      },
+      "passed": true
+    },
+    {
+      "name": "EV charger aggregate cap and agreed allocation",
+      "independent_method": "min(2800,2000)=2000; 2000*0.75=1500; 2000*0.25=500",
+      "independent_results": {
+        "deduction": "2000",
+        "first_claimant": "1500.00",
+        "second_claimant": "500.00"
+      },
+      "writer_expected": {
+        "deduction": 2000,
+        "first_claimant": 1500,
+        "second_claimant": 500
+      },
+      "checks": {
+        "deduction": true,
+        "first_claimant": true,
+        "second_claimant": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Disabled business access cost cap, eligibility assumed",
+      "independent_method": "min(18000,15000)=15000",
+      "independent_results": {
+        "income_deduction": "15000"
+      },
+      "writer_expected": {
+        "income_deduction": 15000
+      },
+      "checks": {
+        "income_deduction": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Full-year GIBS income 40000",
+      "independent_method": "2720+1520+3750=7990",
+      "independent_results": {
+        "tax": "7990.00"
+      },
+      "writer_expected": {
+        "tax": 7990
+      },
+      "checks": {
+        "tax": true
+      },
+      "passed": true
+    },
+    {
+      "name": "ABS minimum deduction top-up and pre-credit liability",
+      "independent_method": "4343-3455=888; 24343-4343=20000; 560+2040+1560=4160",
+      "independent_results": {
+        "topup": "888",
+        "taxable": "20000",
+        "tax_before_credit": "4160.00"
+      },
+      "writer_expected": {
+        "topup": 888,
+        "taxable": 20000,
+        "tax_before_credit": 4160
+      },
+      "checks": {
+        "topup": true,
+        "taxable": true,
+        "tax_before_credit": true
+      },
+      "passed": true
+    }
+  ],
+  "new_scenarios": 4,
+  "preserved_main_examples": 2,
+  "conditional_eligibility_preserved": true,
+  "deduction_is_not_tax_saved": true
+}

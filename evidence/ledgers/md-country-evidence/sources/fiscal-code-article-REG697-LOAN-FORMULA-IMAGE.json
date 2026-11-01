@@ -1,0 +1,12 @@
+{
+  "article": "REG697-LOAN-FORMULA-IMAGE",
+  "official_url": "https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png",
+  "read_date": "2026-10-30",
+  "format": "ExactmathematicaltranscriptionfromofficialPNGrenderedandvisuallyinspectedintheordinarybrowser;sourcereadimage,notDOMtext;binarycurlreturned403,noPNGfileclaimedretained",
+  "text": "F = S × (Nzl / 365) × ((Rd − Rdc) / 100)",
+  "sha256": "75b64a4098a5032cd1ded220dd309fb5f8ab20ae07c47a0c9ba566a490a4e1d4",
+  "embedded_in": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+  "legal_context": "Government697/2014 regulationpoint8(4),currentJanuary2026consolidation;variabledefinitionsandmonthly/repaymentwordinginretainedREG697-SCOPE-BENEFITS",
+  "observed_DOM_dimensions": "200by93pixels",
+  "visual_observation": "CuaofficialimageScreenshotthisturnshowedF=S×Nzl/365×(Rd−Rdc)/100;positive-differencesafeguardcomesfromCode19(d),notfromanimaginedmaxsymbolintheimage"
+}

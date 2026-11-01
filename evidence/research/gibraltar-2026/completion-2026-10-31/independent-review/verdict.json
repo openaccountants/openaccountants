@@ -1,0 +1,81 @@
+{
+  "reviewed_commit": "393be24383a0fee17a7fcc3ea6a6bd2d87d4076a",
+  "review_scope": "minimum-tax delta full35row primary-source review; sixGuide mechanical preservation; README truthfulness and validation; not completecountry acceptance",
+  "verdict": "CHANGES_REQUESTED_EVIDENCE",
+  "ledger_rows_checked": 35,
+  "new_substantive_tax_errors_found": 0,
+  "blocking_findings": [
+    {
+      "id": "R1",
+      "type": "writer ledger sourcequote completeness",
+      "count": "one systematic evidence defect across grouped rows; each35row disposition in row-review.json",
+      "required": "Repair writer quotes/process classification and bind new ledger hashes; request bounded closure of evidence repairs."
+    }
+  ],
+  "country_complete": false,
+  "ready_for_review": false,
+  "push_or_merge_authorised_by_this_review": false,
+  "validation": {
+    "seven_guides_skill_checks": "70/70 pass",
+    "whole_country_examples": {
+      "files": 19,
+      "blocks": 29,
+      "failures": 0
+    },
+    "whole_changed_country_validation": {
+      "errors": 11,
+      "warning_groups": 55,
+      "pass": false
+    }
+  },
+  "preservation": {
+    "errors": [],
+    "mechanical_files": [
+      {
+        "file": "skills/gibraltar/gi-foreign-tax-relief.md",
+        "old_body_nonblank_lines": 111,
+        "mapped_lines": 111,
+        "blocks_byte_exact": 2
+      },
+      {
+        "file": "skills/gibraltar/gi-transaction-tax-transition.md",
+        "old_body_nonblank_lines": 168,
+        "mapped_lines": 168,
+        "blocks_byte_exact": 2
+      },
+      {
+        "file": "skills/gibraltar/gi-corporate-tax.md",
+        "old_body_nonblank_lines": 259,
+        "mapped_lines": 259,
+        "blocks_byte_exact": 2
+      },
+      {
+        "file": "skills/gibraltar/gi-connected-party-pricing-and-interest.md",
+        "old_body_nonblank_lines": 141,
+        "mapped_lines": 141,
+        "blocks_byte_exact": 2
+      },
+      {
+        "file": "skills/gibraltar/gi-payroll-social-insurance.md",
+        "old_body_nonblank_lines": 274,
+        "mapped_lines": 274,
+        "blocks_byte_exact": 2
+      },
+      {
+        "file": "skills/gibraltar/gi-individual-income-tax.md",
+        "old_body_nonblank_lines": 226,
+        "mapped_lines": 226,
+        "blocks_byte_exact": 2
+      }
+    ],
+    "old_body_lines": 1179,
+    "mechanical_oa_blocks": 12,
+    "old_topics": 30,
+    "exact_old_topic_prose_missing": [],
+    "minimum_oa_blocks_byte_exact": 2,
+    "historical_moved_files": 170,
+    "move_errors": []
+  },
+  "input_manifest_sha256": "91a420ad12786e3eb41a5ce7e57be90a60de0948bde2471cbdc2d0b1f7e81e0f",
+  "reviewer": "independent Codex agent; not writer; no accountant attestation"
+}

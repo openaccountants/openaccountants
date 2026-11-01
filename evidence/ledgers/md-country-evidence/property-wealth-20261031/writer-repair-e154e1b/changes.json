@@ -1,0 +1,1792 @@
+{
+  "date": "2026-10-31",
+  "scope": "Eight required property corrections, two new H1 repairs, and exact-target inline citations in 104 legacy rate rows; no original source/ledger/review mutation.",
+  "changes": [
+    {
+      "file": "skills/moldova/moldova-income-tax.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 24,
+      "rows": [
+        {
+          "old_line": 37,
+          "before": "| Ordinary individual/individual-entrepreneur/justice/medical professional income tax | 12% of annual taxable income | [Art. 15(a)][code] |",
+          "after": "| Ordinary individual/individual-entrepreneur/justice/medical professional income tax | 12% of annual taxable income | [Art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(a)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 38,
+          "before": "| Day worker | 12% of taxable income without chapter-4 exemptions | [Art. 15(a^1)][code] |",
+          "after": "| Day worker | 12% of taxable income without chapter-4 exemptions | [Art. 15(a^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(a^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 39,
+          "before": "| Statutory peasant farm | 7% of taxable income; not a general agricultural-company or distribution rate | [Art. 15(c)][code] |",
+          "after": "| Statutory peasant farm | 7% of taxable income; not a general agricultural-company or distribution rate | [Art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(c)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 40,
+          "before": "| Standard personal exemption | 29,700 a year; annual taxable-income test strictly below 360,000, excluding art. 90^1 income and including the stated independent-retail/plant-purchasing income | [Art. 33(1)–(1^1)][code]; [January version][jan] |",
+          "after": "| Standard personal exemption | 29,700 a year; annual taxable-income test strictly below 360,000, excluding art. 90^1 income and including the stated independent-retail/plant-purchasing income | [Art. 33(1)–(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 33(1)–(1^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "jan",
+              "label": "January version",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 41,
+          "before": "| Increased personal exemption | 34,620 a year for the exact statutory categories | [Art. 33(2)][code] |",
+          "after": "| Increased personal exemption | 34,620 a year for the exact statutory categories | [Art. 33(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 33(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 42,
+          "before": "| Qualifying spouse exemption | 21,780 a year with art. 33(2)-category spouse and non-use conditions | [Art. 34][code] |",
+          "after": "| Qualifying spouse exemption | 21,780 a year with art. 33(2)-category spouse and non-use conditions | [Art. 34](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 34",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 43,
+          "before": "| Ordinary qualifying dependent | 9,900 a year | [Art. 35(1)][code] |",
+          "after": "| Ordinary qualifying dependent | 9,900 a year | [Art. 35(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 44,
+          "before": "| Specified disabled dependent | 21,780 a year under the exact disability/relationship conditions | [Art. 35][code] |",
+          "after": "| Specified disabled dependent | 21,780 a year under the exact disability/relationship conditions | [Art. 35](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 45,
+          "before": "| Dependent's income condition | Not above 12,400 annually, excluding the specified State disability allowances | [Art. 35(2)(b)][code] |",
+          "after": "| Dependent's income condition | Not above 12,400 annually, excluding the specified State disability allowances | [Art. 35(2)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35(2)(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 46,
+          "before": "| Taxable capital-gain inclusion | 50% of recognised current-period gains exceeding recognised capital losses | [Arts. 40(7), 41][code] |",
+          "after": "| Taxable capital-gain inclusion | 50% of recognised current-period gains exceeding recognised capital losses | [Arts. 40(7), 41](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 40(7), 41",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 47,
+          "before": "| Ordinary resident-individual dividend withholding | 6%; historical 2008–2011 undistributed-profit category 15%; separate pre-2008 exemption/category check | [Art. 90^1(3^1), 20(z^10)][code] |",
+          "after": "| Ordinary resident-individual dividend withholding | 6%; historical 2008–2011 undistributed-profit category 15%; separate pre-2008 exemption/category check | [Art. 90^1(3^1), 20(z^10)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3^1), 20(z^10)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 48,
+          "before": "| Royalty final withholding | 12% for the covered individual payment, with the independent-service-entrepreneur exception | [Art. 90^1(3^1)][code] |",
+          "after": "| Royalty final withholding | 12% for the covered individual payment, with the independent-service-entrepreneur exception | [Art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 49,
+          "before": "| Specified domestic bank/credit-issuer and similar interest | 6% final withholding under the stated payer/category rule, excluding art. 20(z^20) cases | [Art. 90^1(3^7)][code] |",
+          "after": "| Specified domestic bank/credit-issuer and similar interest | 6% final withholding under the stated payer/category rule, excluding art. 20(z^20) cases | [Art. 90^1(3^7)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3^7)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 50,
+          "before": "| Other covered interest and preliminary resident withholding | 12% advance/creditable route under arts. 89–90, rather than assuming every interest receipt is finally taxed at 6% | [Arts. 89–90][code] |",
+          "after": "| Other covered interest and preliminary resident withholding | 12% advance/creditable route under arts. 89–90, rather than assuming every interest receipt is finally taxed at 6% | [Arts. 89–90](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 89–90",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 51,
+          "before": "| Property use paid by art. 90 payers | 12% final withholding for the covered movable/immovable use, excluding agricultural land rent | [Art. 90^1(3)][code] |",
+          "after": "| Property use paid by art. 90 payers | 12% final withholding for the covered movable/immovable use, excluding agricultural land rent | [Art. 90^1(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 52,
+          "before": "| Covered resident non-business immovable-property letting to other specified tenants | 7% of monthly contract value, with registration/payment duties | [Art. 90^1(3^4)][code] |",
+          "after": "| Covered resident non-business immovable-property letting to other specified tenants | 7% of monthly contract value, with registration/payment duties | [Art. 90^1(3^4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3^4)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 53,
+          "before": "| Covered gambling | 18%, with the exact lottery/sports-bet exemption; 1% of the standard personal exemption = 297 is the relevant statutory lottery/sports reference, not a universal deduction from every gambling receipt | [Arts. 90^1(3^3), 20(p^1)][code] |",
+          "after": "| Covered gambling | 18%, with the exact lottery/sports-bet exemption; 1% of the standard personal exemption = 297 is the relevant statutory lottery/sports reference, not a universal deduction from every gambling receipt | [Arts. 90^1(3^3), 20(p^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 90^1(3^3), 20(p^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 54,
+          "before": "| Promotional-campaign winnings | 12% on the part above the standard personal exemption, 29,700 | [Arts. 90^1(3^3), 20(p^2)][code] |",
+          "after": "| Promotional-campaign winnings | 12% on the part above the standard personal exemption, 29,700 | [Arts. 90^1(3^3), 20(p^2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 90^1(3^3), 20(p^2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 55,
+          "before": "| Independent retail | 1% of its income base; ordinary full-year minimum 3,000, with 750 quarterly and 250-per-active-month rules as applicable | [Arts. 69^10–69^12][code] |",
+          "after": "| Independent retail | 1% of its income base; ordinary full-year minimum 3,000, with 750 quarterly and 250-per-active-month rules as applicable | [Arts. 69^10–69^12](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 69^10–69^12",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 56,
+          "before": "| Retail eligibility measures | Resident individual without legal organisational form; non-excise retail; commercial area up to 50 m² and period income not above 1.2 million; current art. 69^13 adds its 1 July 2026 registration cut-off | [Arts. 69^6–69^7, 69^13][code]; [January comparison][jan] |",
+          "after": "| Retail eligibility measures | Resident individual without legal organisational form; non-excise retail; commercial area up to 50 m² and period income not above 1.2 million; current art. 69^13 adds its 1 July 2026 registration cut-off | [Arts. 69^6–69^7, 69^13](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January comparison](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 69^6–69^7, 69^13",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "jan",
+              "label": "January comparison",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 57,
+          "before": "| Plant-product purchasing regime | 6% final withholding by covered business purchaser; annual 1.2-million ceiling and separate 12% excess route | [Arts. 69^14–69^19][code] |",
+          "after": "| Plant-product purchasing regime | 6% final withholding by covered business purchaser; annual 1.2-million ceiling and separate 12% excess route | [Arts. 69^14–69^19](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 69^14–69^19",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 58,
+          "before": "| Registered independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on the excess | [Arts. 69^20–69^26][code] |",
+          "after": "| Registered independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on the excess | [Arts. 69^20–69^26](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 69^20–69^26",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 59,
+          "before": "| Personal medical/insurance/first-home interest reference caps | One forecast monthly average salary, 17,400, for the separate statutory routes and actual conditions below | [Art. 35^2(3)–(5)][code]; [CNAS point 12.1, Government Decision 773/2025][cnas] |",
+          "after": "| Personal medical/insurance/first-home interest reference caps | One forecast monthly average salary, 17,400, for the separate statutory routes and actual conditions below | [Art. 35^2(3)–(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [CNAS point 12.1, Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35^2(3)–(5)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "cnas",
+              "label": "CNAS point 12.1, Government Decision 773/2025",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 60,
+          "before": "| Own training/education and dependent-child education deduction | 20,000 cumulatively for the covered institutions/beneficiaries, not 20,000 per child/provider | [Art. 35^2(6), effective 1 January version][jan]; [current Code][code] |",
+          "after": "| Own training/education and dependent-child education deduction | 20,000 cumulatively for the covered institutions/beneficiaries, not 20,000 per child/provider | [Art. 35^2(6), effective 1 January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [current Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "jan",
+              "label": "Art. 35^2(6), effective 1 January version",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "code",
+              "label": "current Code",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/md-corporate-income-tax.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 13,
+      "rows": [
+        {
+          "old_line": 31,
+          "before": "| Ordinary company profit tax | 12% of taxable income | [Art. 15(b)][code] |",
+          "after": "| Ordinary company profit tax | 12% of taxable income | [Art. 15(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 32,
+          "before": "| Statutory peasant-farm category | 7% of taxable income | [Art. 15(c)][code] |",
+          "after": "| Statutory peasant-farm category | 7% of taxable income | [Art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(c)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 33,
+          "before": "| Individual entrepreneur | 12% of annual taxable income | [Art. 15(a)][code] |",
+          "after": "| Individual entrepreneur | 12% of annual taxable income | [Art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(a)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 34,
+          "before": "| Income estimated under arts. 225 or 225^1 | 15% of the excess of the estimated income over the business's booked gross income; this is not the ordinary company rate | [Art. 15(d)][code] |",
+          "after": "| Income estimated under arts. 225 or 225^1 | 15% of the excess of the estimated income over the business's booked gross income; this is not the ordinary company rate | [Art. 15(d)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(d)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 35,
+          "before": "| Eligible non-VAT SME regime | 4% of the defined accounting-income base, not ordinary taxable profit | [Arts. 54^2–54^3][code] |",
+          "after": "| Eligible non-VAT SME regime | 4% of the defined accounting-income base, not ordinary taxable profit | [Arts. 54^2–54^3](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Arts. 54^2–54^3",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 36,
+          "before": "| SME election/mandatory-general threshold in art. 54^1(3)(a), (3^1) | 1.5 million in the text operative from 1 January through 26 March; 1.7 million from 27 March 2026. These tests use the specified previous-year supply income and conditions | [January Code][jan]; [Law 41/2026 art. I(1), X(1)][amend]; [27 March Code][mar] |",
+          "after": "| SME election/mandatory-general threshold in art. 54^1(3)(a), (3^1) | 1.5 million in the text operative from 1 January through 26 March; 1.7 million from 27 March 2026. These tests use the specified previous-year supply income and conditions | [January Code](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [Law 41/2026 art. I(1), X(1)](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro); [27 March Code](https://www.legis.md/cautare/getResults?doc_id=153668&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "jan",
+              "label": "January Code",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "amend",
+              "label": "Law 41/2026 art. I(1), X(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "mar",
+              "label": "27 March Code",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=153668&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 37,
+          "before": "| Business/management consultancy exclusion from SME regime | Prior-year CAEM 70.22 service income above 60% of sales income | [Art. 54^1(1)][code] |",
+          "after": "| Business/management consultancy exclusion from SME regime | Prior-year CAEM 70.22 service income above 60% of sales income | [Art. 54^1(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 54^1(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 38,
+          "before": "| SME shareholding interaction | A holder above 25% in more than 3 SMEs triggers selection of the entity/entities moving to general taxation from the relevant quarter | [Art. 54^1(3^2)][code] |",
+          "after": "| SME shareholding interaction | A holder above 25% in more than 3 SMEs triggers selection of the entity/entities moving to general taxation from the relevant quarter | [Art. 54^1(3^2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 54^1(3^2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 39,
+          "before": "| Basic depreciable tangible asset test | Business-use balance-sheet property with useful life above 1 year and value above 12,000 | [Art. 26^1(2)][code] |",
+          "after": "| Basic depreciable tangible asset test | Business-use balance-sheet property with useful life above 1 year and value above 12,000 | [Art. 26^1(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 26^1(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 40,
+          "before": "| Ordinary tax loss carryforward | Following 5 tax periods; maintain origin order and remaining eligible balances | [Art. 32][code] |",
+          "after": "| Ordinary tax loss carryforward | Following 5 tax periods; maintain origin order and remaining eligible balances | [Art. 32](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 32",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 41,
+          "before": "| Resident-individual dividend withholding | 6%; 15% for dividends from undistributed 2008–2011 profits | [Art. 90^1(3^1)][code] |",
+          "after": "| Resident-individual dividend withholding | 6%; 15% for dividends from undistributed 2008–2011 profits | [Art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 90^1(3^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 42,
+          "before": "| Nonresident dividend withholding | 6% ordinary domestic rate; 15% for the specified historic-profit/capital cases | [Art. 91(1)][code] |",
+          "after": "| Nonresident dividend withholding | 6% ordinary domestic rate; 15% for the specified historic-profit/capital cases | [Art. 91(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 91(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 43,
+          "before": "| Other covered nonresident-source payments | 12%, subject to the actual art. 71 category, statutory exclusions and applicable treaty | [Art. 91][code] |",
+          "after": "| Other covered nonresident-source payments | 12%, subject to the actual art. 71 category, statutory exclusions and applicable treaty | [Art. 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 91",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/moldova-payroll.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 18,
+      "rows": [
+        {
+          "old_line": 35,
+          "before": "| Ordinary personal employment tax | 12% of the taxable base, withheld using the cumulative method | [Code art. 15(a), 88][code]; [regulation points 36–44][reg] |",
+          "after": "| Ordinary personal employment tax | 12% of the taxable base, withheld using the cumulative method | [Code art. 15(a), 88](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 36–44](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 15(a), 88",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation points 36–44",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 36,
+          "before": "| Day-worker income tax | 12%, without chapter-4 exemptions | [Art. 15(a^1)][code]; [regulation point 9^2][reg] |",
+          "after": "| Day-worker income tax | 12%, without chapter-4 exemptions | [Art. 15(a^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation point 9^2](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 15(a^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation point 9^2",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 37,
+          "before": "| Ordinary private/commercial employer social contribution | 24% of the applicable contribution base | [CNAS point 9.2][cnas]; [IPC21 table 2, row 1.1(b)][ipc] |",
+          "after": "| Ordinary private/commercial employer social contribution | 24% of the applicable contribution base | [CNAS point 9.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [IPC21 table 2, row 1.1(b)](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS point 9.2",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            },
+            {
+              "reference": "ipc",
+              "label": "IPC21 table 2, row 1.1(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 38,
+          "before": "| Specified budgetary/public employer social contribution | 29%, with the stated higher-education/medical exceptions | [CNAS point 9.1][cnas]; [IPC21 row 1.1(a)][ipc] |",
+          "after": "| Specified budgetary/public employer social contribution | 29%, with the stated higher-education/medical exceptions | [CNAS point 9.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [IPC21 row 1.1(a)](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS point 9.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            },
+            {
+              "reference": "ipc",
+              "label": "IPC21 row 1.1(a)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 39,
+          "before": "| Listed aviation special conditions | Specified public category 39%; specified private category 32%; check the exact annex-2 occupation | [CNAS points 10–10.2][cnas]; [Law 489 annex 2][social] |",
+          "after": "| Listed aviation special conditions | Specified public category 39%; specified private category 32%; check the exact annex-2 occupation | [CNAS points 10–10.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 annex 2](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS points 10–10.2",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            },
+            {
+              "reference": "social",
+              "label": "Law 489 annex 2",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 40,
+          "before": "| Qualifying agriculture | Employer 18% plus State 6%, total 24%; qualifying CAEM 01.1–01.6 income at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][cnas] |",
+          "after": "| Qualifying agriculture | Employer 18% plus State 6%, total 24%; qualifying CAEM 01.1–01.6 income at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro); [CNAS points 13–13.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "social",
+              "label": "Law 489 art. 17(3^1)–(3^2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "cnas",
+              "label": "CNAS points 13–13.4",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 41,
+          "before": "| Ordinary employee social deduction | No additional employee 6% under these employer-category tariffs | [CNAS points 9–10][cnas] |",
+          "after": "| Ordinary employee social deduction | No additional employee 6% under these employer-category tariffs | [CNAS points 9–10](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS points 9–10",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 42,
+          "before": "| Ordinary employee medical premium | 9% of covered gross remuneration, withheld by the payer; do not split into an assumed 4.5%/4.5% | [Medical budget art. 4(1)][medicalbudget]; [Law 1593 arts. 4, 6, 12, 20][health] |",
+          "after": "| Ordinary employee medical premium | 9% of covered gross remuneration, withheld by the payer; do not split into an assumed 4.5%/4.5% | [Medical budget art. 4(1)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 arts. 4, 6, 12, 20](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "medicalbudget",
+              "label": "Medical budget art. 4(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "health",
+              "label": "Law 1593 arts. 4, 6, 12, 20",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 43,
+          "before": "| National minimum monthly salary input | 6,300 from 1 January; apply actual worked time and the separate social floor | [CNAS point 19.1][cnas]; [Law 489 art. 22][social] |",
+          "after": "| National minimum monthly salary input | 6,300 from 1 January; apply actual worked time and the separate social floor | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 art. 22](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS point 19.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            },
+            {
+              "reference": "social",
+              "label": "Law 489 art. 22",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 44,
+          "before": "| Part-time/reduced-work social floor | Contribution at least 25% of the contribution on the full national minimum, alongside the time-proportionate minimum base | [Law 489 art. 22(1)][social] |",
+          "after": "| Part-time/reduced-work social floor | Contribution at least 25% of the contribution on the full national minimum, alongside the time-proportionate minimum base | [Law 489 art. 22(1)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "social",
+              "label": "Law 489 art. 22(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 45,
+          "before": "| Forecast monthly average salary | 17,400; reference input, not an automatic contractual wage or ceiling | [CNAS point 12.1 citing Government Decision 773/2025][cnas] |",
+          "after": "| Forecast monthly average salary | 17,400; reference input, not an automatic contractual wage or ceiling | [CNAS point 12.1 citing Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "cnas",
+              "label": "CNAS point 12.1 citing Government Decision 773/2025",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 46,
+          "before": "| Standard personal exemption | 29,700 annually; monthly twelfth 2,475 for an eligible month. Resident's annual taxable-income test is strictly below 360,000, excluding art. 90^1 income and including the specified retail/plant-purchasing income | [Code art. 33(1)–(1^1), January comparison][jan]; [current art. 33][code]; [regulation points 10–10^1, 18][reg] |",
+          "after": "| Standard personal exemption | 29,700 annually; monthly twelfth 2,475 for an eligible month. Resident's annual taxable-income test is strictly below 360,000, excluding art. 90^1 income and including the specified retail/plant-purchasing income | [Code art. 33(1)–(1^1), January comparison](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [current art. 33](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 10–10^1, 18](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "jan",
+              "label": "Code art. 33(1)–(1^1), January comparison",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "code",
+              "label": "current art. 33",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation points 10–10^1, 18",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 47,
+          "before": "| Increased personal exemption | 34,620 annually; monthly twelfth 2,885, only for the statutory categories and documented entitlement | [Art. 33(2)][code]; [regulation points 30–32][reg] |",
+          "after": "| Increased personal exemption | 34,620 annually; monthly twelfth 2,885, only for the statutory categories and documented entitlement | [Art. 33(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 30–32](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 33(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation points 30–32",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 48,
+          "before": "| Qualifying spouse exemption | 21,780 annually; monthly twelfth 1,815. Spouse must be in art. 33(2)'s category and not use the personal exemption; not a universal spouse allowance | [Art. 34][code]; [regulation points 11–13, 33][reg] |",
+          "after": "| Qualifying spouse exemption | 21,780 annually; monthly twelfth 1,815. Spouse must be in art. 33(2)'s category and not use the personal exemption; not a universal spouse allowance | [Art. 34](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 11–13, 33](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 34",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation points 11–13, 33",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 49,
+          "before": "| Ordinary qualifying dependent | 9,900 annually; monthly twelfth 825 | [Art. 35(1)][code]; [regulation points 14–15, 34–35][reg] |",
+          "after": "| Ordinary qualifying dependent | 9,900 annually; monthly twelfth 825 | [Art. 35(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 14–15, 34–35](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation points 14–15, 34–35",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 50,
+          "before": "| Specified disabled dependent | 21,780 annually; monthly twelfth 1,815; apply the actual statutory disability/relationship conditions | [Art. 35][code] |",
+          "after": "| Specified disabled dependent | 21,780 annually; monthly twelfth 1,815; apply the actual statutory disability/relationship conditions | [Art. 35](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 51,
+          "before": "| Dependent's income condition | Income not above 12,400 annually, with the specified disability-State-allowance exclusion | [Art. 35(2)(b)][code] |",
+          "after": "| Dependent's income condition | Income not above 12,400 annually, with the specified disability-State-allowance exclusion | [Art. 35(2)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 35(2)(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 52,
+          "before": "| Employer-owned property for personal use | Statutory benefit uses 0.0373% per day of the prescribed tax-undepreciated value fixed from the start month | [Art. 19(e)][code]; [regulation point 8(5)][reg] |",
+          "after": "| Employer-owned property for personal use | Statutory benefit uses 0.0373% per day of the prescribed tax-undepreciated value fixed from the start month | [Art. 19(e)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation point 8(5)](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Art. 19(e)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "reg",
+              "label": "regulation point 8(5)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/moldova-tax-optimization.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 8,
+      "rows": [
+        {
+          "old_line": 27,
+          "before": "| Ordinary company or individual-entrepreneur income tax | **12% of the applicable taxable-income base**; the legal person and individual have different deductions/procedures | [Code art. 15(a)–(b)][code] |",
+          "after": "| Ordinary company or individual-entrepreneur income tax | **12% of the applicable taxable-income base**; the legal person and individual have different deductions/procedures | [Code art. 15(a)–(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 15(a)–(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 28,
+          "before": "| Eligible SME accounting-income regime | **4% of the article-54^2 base**, not profit and not a general option for every small freelancer | [Code arts. 54^1–54^3][code] |",
+          "after": "| Eligible SME accounting-income regime | **4% of the article-54^2 base**, not profit and not a general option for every small freelancer | [Code arts. 54^1–54^3](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 54^1–54^3",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 29,
+          "before": "| IT-park monthly single tax | Greater of **7% of monthly accounting sales revenue** and the statutory monthly employee minimum | [Code arts. 369–371][code] |",
+          "after": "| IT-park monthly single tax | Greater of **7% of monthly accounting sales revenue** and the statutory monthly employee minimum | [Code arts. 369–371](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 369–371",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 30,
+          "before": "| IT-park employee minimum | **30% × 17,400 = 5,220 MDL** for each employee counted under article 369(2) for the month | [Code arts. 369(2), 370(2)][code]; [enacted Government Decision 773/2025][wage] |",
+          "after": "| IT-park employee minimum | **30% × 17,400 = 5,220 MDL** for each employee counted under article 369(2) for the month | [Code arts. 369(2), 370(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [enacted Government Decision 773/2025](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 369(2), 370(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "wage",
+              "label": "enacted Government Decision 773/2025",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 31,
+          "before": "| IT-park main-activity test | At least **70%** permitted-activity sales revenue, measured cumulatively each month from the statutory start; conditional relief for at most **two calendar months** | [Code art. 368(2)–(3)][code]; [Law 77 art. 2][park] |",
+          "after": "| IT-park main-activity test | At least **70%** permitted-activity sales revenue, measured cumulatively each month from the statutory start; conditional relief for at most **two calendar months** | [Code art. 368(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [Law 77 art. 2](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 368(2)–(3)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "park",
+              "label": "Law 77 art. 2",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 32,
+          "before": "| Ordinary dividend to a resident individual | **6%** withholding; the specified undistributed **2008–2011** profits use **15%** | [Code art. 90^1(3^1)][code] |",
+          "after": "| Ordinary dividend to a resident individual | **6%** withholding; the specified undistributed **2008–2011** profits use **15%** | [Code art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 90^1(3^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 33,
+          "before": "| Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)][code] |",
+          "after": "| Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 91(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 34,
+          "before": "| IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)][park]; [Government Decision 773][wage] |",
+          "after": "| IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro); [Government Decision 773](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "park",
+              "label": "Law 77 art. 16(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "wage",
+              "label": "Government Decision 773",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/moldova-social-contributions.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 20,
+      "rows": [
+        {
+          "old_line": 37,
+          "before": "| Ordinary commercial private/state/municipal employers; specified higher-education and medical institutions | Employer social contribution 24% of the applicable base | [CNAS point 9.2; Law 489 annex 1, 1.1][instructions] |",
+          "after": "| Ordinary commercial private/state/municipal employers; specified higher-education and medical institutions | Employer social contribution 24% of the applicable base | [CNAS point 9.2; Law 489 annex 1, 1.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 9.2; Law 489 annex 1, 1.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 38,
+          "before": "| Specified budgetary/public authorities and institutions | Employer social contribution 29%; check the higher-education/medical exceptions | [CNAS point 9.1; annex 1, 1.1][instructions] |",
+          "after": "| Specified budgetary/public authorities and institutions | Employer social contribution 29%; check the higher-education/medical exceptions | [CNAS point 9.1; annex 1, 1.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 9.1; annex 1, 1.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 39,
+          "before": "| Listed civil-aviation special-condition roles | 39% in the specified public category; 32% in the specified private category. A general “hazardous” description does not establish either category | [CNAS points 10–10.2; annex 1, 1.2; Law 489 annex 2][instructions] |",
+          "after": "| Listed civil-aviation special-condition roles | 39% in the specified public category; 32% in the specified private category. A general “hazardous” description does not establish either category | [CNAS points 10–10.2; annex 1, 1.2; Law 489 annex 2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS points 10–10.2; annex 1, 1.2; Law 489 annex 2",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 40,
+          "before": "| Independent family physician | 24% of the defined professional income; employees follow their own employer category | [CNAS point 11; annex 1, 1.3][instructions] |",
+          "after": "| Independent family physician | 24% of the defined professional income; employees follow their own employer category | [CNAS point 11; annex 1, 1.3](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 11; annex 1, 1.3",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 41,
+          "before": "| Qualifying agriculture | Total social tariff 24%: employer 18%, state-budget transfer 6%; qualifying CAEM 01.1–01.6 income must be at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][instructions] |",
+          "after": "| Qualifying agriculture | Total social tariff 24%: employer 18%, state-budget transfer 6%; qualifying CAEM 01.1–01.6 income must be at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro); [CNAS points 13–13.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "social",
+              "label": "Law 489 art. 17(3^1)–(3^2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "instructions",
+              "label": "CNAS points 13–13.4",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 42,
+          "before": "| Employee social withholding in ordinary employment | The listed ordinary employer tariff is the employer's liability; do not deduct an additional old 6% employee social tariff | [CNAS points 9–10; annex 1, 1.1–1.2][instructions] |",
+          "after": "| Employee social withholding in ordinary employment | The listed ordinary employer tariff is the employer's liability; do not deduct an additional old 6% employee social tariff | [CNAS points 9–10; annex 1, 1.1–1.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS points 9–10; annex 1, 1.1–1.2",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 43,
+          "before": "| Ordinary employee/covered civil-contract health premium | 9% of covered salary/other remuneration; ordinary employee premium is withheld by the payer | [Medical budget art. 4(1)][medicalbudget]; [Law 1593 arts. 4, 6, 12, 20 and annex 1][health] |",
+          "after": "| Ordinary employee/covered civil-contract health premium | 9% of covered salary/other remuneration; ordinary employee premium is withheld by the payer | [Medical budget art. 4(1)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 arts. 4, 6, 12, 20 and annex 1](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "medicalbudget",
+              "label": "Medical budget art. 4(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "health",
+              "label": "Law 1593 arts. 4, 6, 12, 20 and annex 1",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 44,
+          "before": "| National minimum monthly wage used in the contribution floor | 6,300 from 1 January; contribution base at least the minimum proportionate to time worked; part-time/reduced-work social contribution at least 25% of the full-minimum contribution | [CNAS point 19.1][instructions]; [Law 489 art. 22(1), January version][socialjan] |",
+          "after": "| National minimum monthly wage used in the contribution floor | 6,300 from 1 January; contribution base at least the minimum proportionate to time worked; part-time/reduced-work social contribution at least 25% of the full-minimum contribution | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 art. 22(1), January version](https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 19.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            },
+            {
+              "reference": "socialjan",
+              "label": "Law 489 art. 22(1), January version",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 45,
+          "before": "| Forecast monthly average salary | 17,400 | [CNAS point 12.1 citing Government Decision 773/2025][instructions] |",
+          "after": "| Forecast monthly average salary | 17,400 | [CNAS point 12.1 citing Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 12.1 citing Government Decision 773/2025",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 46,
+          "before": "| IT-park insured employment income | 68% of forecast average salary = 11,832 a month for the specified insured-income purpose; this is not the worker's actual cash salary | [CNAS point 12.1][instructions] |",
+          "after": "| IT-park insured employment income | 68% of forecast average salary = 11,832 a month for the specified insured-income purpose; this is not the worker's actual cash salary | [CNAS point 12.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 12.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 47,
+          "before": "| IT-park single-tax allocation to social budget | 54.7% of the single tax; distinct from the new service entrepreneur's allocation | [CNAS point 12.2][instructions] |",
+          "after": "| IT-park single-tax allocation to social budget | 54.7% of the single tax; distinct from the new service entrepreneur's allocation | [CNAS point 12.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 12.2",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 48,
+          "before": "| Specified founders, independent retailers, plant-product purchasers and patents | Annual fixed social amount 22,878; monthly amount 1,906.50, subject to the category/period/exemption rules | [Social budget art. 3(1)][socialbudget]; [CNAS points 15, 17][instructions] |",
+          "after": "| Specified founders, independent retailers, plant-product purchasers and patents | Annual fixed social amount 22,878; monthly amount 1,906.50, subject to the category/period/exemption rules | [Social budget art. 3(1)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS points 15, 17](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "socialbudget",
+              "label": "Social budget art. 3(1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "instructions",
+              "label": "CNAS points 15, 17",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 49,
+          "before": "| Justice professions | Annual fixed social amount 30,966; monthly 2,580.50, subject to the category, overlap and suspension rules | [Social budget art. 3(2)][socialbudget]; [CNAS point 16][instructions] |",
+          "after": "| Justice professions | Annual fixed social amount 30,966; monthly 2,580.50, subject to the category, overlap and suspension rules | [Social budget art. 3(2)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS point 16](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "socialbudget",
+              "label": "Social budget art. 3(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "instructions",
+              "label": "CNAS point 16",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 50,
+          "before": "| Taxi-driver fixed social category | 1,906.50 monthly only January–June; from 1 July ordinary employer treatment and IPC21 replace this special category | [CNAS points 2.2, 18–18.3][instructions] |",
+          "after": "| Taxi-driver fixed social category | 1,906.50 monthly only January–June; from 1 July ordinary employer treatment and IPC21 replace this special category | [CNAS points 2.2, 18–18.3](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS points 2.2, 18–18.3",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 51,
+          "before": "| Covered day worker | Social 6% of daily remuneration; the stated 169-hour monthly norm gives 37.28 hourly and 298.24 for eight hours in the 2026 instruction | [CNAS point 19.1][instructions] |",
+          "after": "| Covered day worker | Social 6% of daily remuneration; the stated 169-hour monthly norm gives 37.28 hourly and 298.24 for eight hours in the 2026 instruction | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS point 19.1",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 52,
+          "before": "| New independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on excess; 53.3% of that tax allocated to social budget. Do not impose the ordinary employer tariff on the same single-tax receipt | [CNAS points 2.1, 20; Law 489 annex 1, 1.10][instructions] |",
+          "after": "| New independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on excess; 53.3% of that tax allocated to social budget. Do not impose the ordinary employer tariff on the same single-tax receipt | [CNAS points 2.1, 20; Law 489 annex 1, 1.10](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "instructions",
+              "label": "CNAS points 2.1, 20; Law 489 annex 1, 1.10",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 53,
+          "before": "| Voluntary social contract | 22,878 annual; qualifying individually working agricultural landholder/tenant 5,827 annual; at least one twelfth monthly | [Social budget art. 3(3)][socialbudget]; [CNAS points 22–22.4][instructions] |",
+          "after": "| Voluntary social contract | 22,878 annual; qualifying individually working agricultural landholder/tenant 5,827 annual; at least one twelfth monthly | [Social budget art. 3(3)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS points 22–22.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |",
+          "expansions": [
+            {
+              "reference": "socialbudget",
+              "label": "Social budget art. 3(3)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "instructions",
+              "label": "CNAS points 22–22.4",
+              "url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 54,
+          "before": "| Fixed annual health premium | 12,636 for covered fixed categories, subject to the category and entry-date rules | [Medical budget art. 4(2)][medicalbudget] |",
+          "after": "| Fixed annual health premium | 12,636 for covered fixed categories, subject to the category and entry-date rules | [Medical budget art. 4(2)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "medicalbudget",
+              "label": "Medical budget art. 4(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 55,
+          "before": "| Eligible early-payment health amount | 2,527 for the stated annex-2 groups 1, 3 and 4 paid within the statutory deadline; exclude digital nomads and concurrent groups 2/2^1 | [Medical budget art. 4(3)][medicalbudget]; [Law 1593 art. 22][health] |",
+          "after": "| Eligible early-payment health amount | 2,527 for the stated annex-2 groups 1, 3 and 4 paid within the statutory deadline; exclude digital nomads and concurrent groups 2/2^1 | [Medical budget art. 4(3)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 art. 22](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "medicalbudget",
+              "label": "Medical budget art. 4(3)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "health",
+              "label": "Law 1593 art. 22",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 56,
+          "before": "| Fixed health groups 2/2^1 and digital nomads | 12,636 under the separate statutory conditions; no automatic early-payment reduction | [Medical budget art. 4(4), (6)][medicalbudget] |",
+          "after": "| Fixed health groups 2/2^1 and digital nomads | 12,636 under the separate statutory conditions; no automatic early-payment reduction | [Medical budget art. 4(4), (6)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "medicalbudget",
+              "label": "Medical budget art. 4(4), (6)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/md-company-formation.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 9,
+      "rows": [
+        {
+          "old_line": 29,
+          "before": "| Ordinary SRL capital | Amount set in the statute and/or registered in the State Register. Article 21 states no fixed numerical minimum; this is not a certified universal **1 MDL** minimum or an exemption from sector-specific capital rules | [Law 135 art. 21][srl] |",
+          "after": "| Ordinary SRL capital | Amount set in the statute and/or registered in the State Register. Article 21 states no fixed numerical minimum; this is not a certified universal **1 MDL** minimum or an exemption from sector-specific capital rules | [Law 135 art. 21](https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "srl",
+              "label": "Law 135 art. 21",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 30,
+          "before": "| SRL contributions | Each member must pay the subscribed contribution in full within **six months after registration**; total contributions cannot be below subscribed capital | [Law 135 art. 22(2), (6)–(8)][srl] |",
+          "after": "| SRL contributions | Each member must pay the subscribed contribution in full within **six months after registration**; total contributions cannot be below subscribed capital | [Law 135 art. 22(2), (6)–(8)](https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "srl",
+              "label": "Law 135 art. 22(2), (6)–(8)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 31,
+          "before": "| SA minimum capital | **600,000 MDL** under the currently operative general SA law. | [Law 1134 art. 38(1)–(6)][sa] |",
+          "after": "| SA minimum capital | **600,000 MDL** under the currently operative general SA law. | [Law 1134 art. 38(1)–(6)](https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "sa",
+              "label": "Law 1134 art. 38(1)–(6)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 32,
+          "before": "| Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff][asp]; [Law 220 art. 4][register] |",
+          "after": "| Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1); [Law 220 art. 4](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "asp",
+              "label": "ASP current company-registration tariff",
+              "url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1",
+              "definition_exact": true
+            },
+            {
+              "reference": "register",
+              "label": "Law 220 art. 4",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 33,
+          "before": "| Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff][asp]; [Law 220 art. 4(6)][register] |",
+          "after": "| Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1); [Law 220 art. 4(6)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "asp",
+              "label": "ASP tariff",
+              "url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1",
+              "definition_exact": true
+            },
+            {
+              "reference": "register",
+              "label": "Law 220 art. 4(6)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 34,
+          "before": "| Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service][aspii] |",
+          "after": "| Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii) |",
+          "expansions": [
+            {
+              "reference": "aspii",
+              "label": "ASP individual-registration service",
+              "url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 35,
+          "before": "| Paid name-service tracks | **71 MDL / three working days; 142 / 24 hours; 213 / four hours; 284 / one hour** | [ASP name-service tariff][aspname] |",
+          "after": "| Paid name-service tracks | **71 MDL / three working days; 142 / 24 hours; 213 / four hours; 284 / one hour** | [ASP name-service tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223) |",
+          "expansions": [
+            {
+              "reference": "aspname",
+              "label": "ASP name-service tariff",
+              "url": "https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 36,
+          "before": "| Name reservation | On request, up to **six months**; name availability is checked before an online filing | [Law 220 art. 9(7)–(8)][register] |",
+          "after": "| Name reservation | On request, up to **six months**; name availability is checked before an online filing | [Law 220 art. 9(7)–(8)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "register",
+              "label": "Law 220 art. 9(7)–(8)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 37,
+          "before": "| Ordinary registration clock | **24 hours on a working day**, calculated from the working day immediately after the necessary documents were submitted | [Law 220 art. 5(2)][register] |",
+          "after": "| Ordinary registration clock | **24 hours on a working day**, calculated from the working day immediately after the necessary documents were submitted | [Law 220 art. 5(2)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "register",
+              "label": "Law 220 art. 5(2)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/md-tax-overview.md",
+      "kind": "same-target rate-table citation format only",
+      "affected_rows": 12,
+      "rows": [
+        {
+          "old_line": 27,
+          "before": "| Individual/individual-entrepreneur and listed professional income tax | **12% of annual taxable income**, with the actual taxpayer/base/regime classification | [Code art. 15(a)][code] |",
+          "after": "| Individual/individual-entrepreneur and listed professional income tax | **12% of annual taxable income**, with the actual taxpayer/base/regime classification | [Code art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 15(a)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 28,
+          "before": "| Legal-person income tax | **12% of taxable income**, subject to actual special/exempt regimes | [Code art. 15(b)][code] |",
+          "after": "| Legal-person income tax | **12% of taxable income**, subject to actual special/exempt regimes | [Code art. 15(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 15(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 29,
+          "before": "| Standard VAT | **20%** of the taxable value; reduced rates and exemptions require their own conditions | [Code art. 96(a)–(b)][code] |",
+          "after": "| Standard VAT | **20%** of the taxable value; reduced rates and exemptions require their own conditions | [Code art. 96(a)–(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 96(a)–(b)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 30,
+          "before": "| Ordinary income-tax period | Calendar year; first-year, liquidation, reorganisation, IT-park and permitted non-calendar-period rules are separate | [Code art. 12^1][code] |",
+          "after": "| Ordinary income-tax period | Calendar year; first-year, liquidation, reorganisation, IT-park and permitted non-calendar-period rules are separate | [Code art. 12^1](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 12^1",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 31,
+          "before": "| Ordinary VAT period | Calendar month; article 94(d)'s specified electronic-services category has a quarterly period | [Code art. 114(1)–(1^1)][code] |",
+          "after": "| Ordinary VAT period | Calendar month; article 94(d)'s specified electronic-services category has a quarterly period | [Code art. 114(1)–(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 114(1)–(1^1)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 39,
+          "before": "| Peasant-farm income tax | **7%** belongs to the statutory farmer-household category, not every agricultural company | [Code art. 15(c)][code]; [individual](moldova-income-tax.md) / [corporate](md-corporate-income-tax.md) |",
+          "after": "| Peasant-farm income tax | **7%** belongs to the statutory farmer-household category, not every agricultural company | [Code art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [individual](moldova-income-tax.md) / [corporate](md-corporate-income-tax.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 15(c)",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 40,
+          "before": "| Standard personal exemption | **29,700 MDL** annually for the qualifying resident individual with the article-33 annual taxable-income measure **strictly below 360,000**; the statutory exclusions/inclusions and increased-relief categories still apply | [Code art. 33][code]; [individual](moldova-income-tax.md) |",
+          "after": "| Standard personal exemption | **29,700 MDL** annually for the qualifying resident individual with the article-33 annual taxable-income measure **strictly below 360,000**; the statutory exclusions/inclusions and increased-relief categories still apply | [Code art. 33](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [individual](moldova-income-tax.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 33",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 41,
+          "before": "| Eligible non-VAT SME | **4%** of the defined accounting-income base; actual supply mix, consultancy, ownership, election and dates control | [Code arts. 54^1–54^4][code]; [corporate](md-corporate-income-tax.md) |",
+          "after": "| Eligible non-VAT SME | **4%** of the defined accounting-income base; actual supply mix, consultancy, ownership, election and dates control | [Code arts. 54^1–54^4](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [corporate](md-corporate-income-tax.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 54^1–54^4",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 42,
+          "before": "| Actual IT-park resident | Greater of **7% of monthly sales** and the counted-employee minimum; **5,220 MDL per counted employee** in 2026 from **30% × 17,400**. Only the specified taxes/payments are included | [Code arts. 369–372][code]; [enacted forecast][wage]; [planning](moldova-tax-optimization.md) |",
+          "after": "| Actual IT-park resident | Greater of **7% of monthly sales** and the counted-employee minimum; **5,220 MDL per counted employee** in 2026 from **30% × 17,400**. Only the specified taxes/payments are included | [Code arts. 369–372](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [enacted forecast](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro); [planning](moldova-tax-optimization.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 369–372",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "wage",
+              "label": "enacted forecast",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 43,
+          "before": "| Ordinary dividends | **6%** for resident-individual/nonresident recipients, with the specified **15%** historic-profit/capital exceptions. Resident-company receipts have article 20(z^19)’s separate treatment and historic exception | [Code arts. 20(z^19), 90^1, 91][code]; [corporate](md-corporate-income-tax.md) / [cross-border](md-cross-border.md) |",
+          "after": "| Ordinary dividends | **6%** for resident-individual/nonresident recipients, with the specified **15%** historic-profit/capital exceptions. Resident-company receipts have article 20(z^19)’s separate treatment and historic exception | [Code arts. 20(z^19), 90^1, 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [corporate](md-corporate-income-tax.md) / [cross-border](md-cross-border.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 20(z^19), 90^1, 91",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 44,
+          "before": "| Other nonresident-source payments | **12%** only for the actual covered category, with statutory exclusions and evidenced treaty treatment | [Code arts. 71, 79^3, 91][code]; [cross-border](md-cross-border.md) |",
+          "after": "| Other nonresident-source payments | **12%** only for the actual covered category, with statutory exclusions and evidenced treaty treatment | [Code arts. 71, 79^3, 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [cross-border](md-cross-border.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code arts. 71, 79^3, 91",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        },
+        {
+          "old_line": 45,
+          "before": "| VAT registration | The ordinary statutory test moves from **1.5 million** to **1.7 million MDL on 1 March 2026**; exclude/include supplies as article 112 requires. This is distinct from the SME threshold’s 27 March amendment | [Code art. 112][code]; [Law 12/2026][vatamend]; [VAT](moldova-vat.md) |",
+          "after": "| VAT registration | The ordinary statutory test moves from **1.5 million** to **1.7 million MDL on 1 March 2026**; exclude/include supplies as article 112 requires. This is distinct from the SME threshold’s 27 March amendment | [Code art. 112](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [Law 12/2026](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro); [VAT](moldova-vat.md) |",
+          "expansions": [
+            {
+              "reference": "code",
+              "label": "Code art. 112",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+              "definition_exact": true
+            },
+            {
+              "reference": "vatamend",
+              "label": "Law 12/2026",
+              "url": "https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro",
+              "definition_exact": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "[Code 277(2)–(3),278]",
+      "after": "[Code 277(3)–(4),278]",
+      "operative_article": "277(3)–(4)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "[Code 280(1¹)–(1²)]",
+      "after": "[Code 280(1¹)]",
+      "operative_article": "280(1¹)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "article 281(1¹) uses",
+      "after": "article 281(1) uses",
+      "operative_article": "281(1)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "under article 281(4).",
+      "after": "under article 281(3).",
+      "operative_article": "281(3)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "[Code 281(3)–(5),282¹]",
+      "after": "[Code 281(2),(2¹),(3),(4),282¹]",
+      "operative_article": "281(2),(2¹),(3),(4),282¹",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-001",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "under 277(1)(e¹);",
+      "after": "under 277(1)(f);",
+      "operative_article": "277(1)(f)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-002",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "and permanent disabled-person carers",
+      "after": "and family members who permanently maintain and care for persons with disabilities",
+      "operative_article": "283(1)(k)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-002",
+      "kind": "required pinpoint or exemption-condition repair",
+      "before": "Free-zone administrations have article 283(5)'s managed-property exemption.",
+      "after": "Free-zone administrations have article 283(5)'s exemption for land and plots while held in their management.",
+      "operative_article": "283(5)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "source_evidence": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "evidence_read_date": "2026-10-31",
+      "fresh_successful_live_read_claimed": false
+    },
+    {
+      "file": "skills/moldova/moldova-income-tax.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.13",
+      "new_version": "0.14",
+      "old_H1": "# Moldova individual income tax and self-employment, 2026 v0.13",
+      "new_H1": "# Moldova individual income tax and self-employment, 2026 v0.14"
+    },
+    {
+      "file": "skills/moldova/md-corporate-income-tax.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.15",
+      "new_version": "0.16",
+      "old_H1": "# Moldova corporate income tax, 2026 v0.15",
+      "new_H1": "# Moldova corporate income tax, 2026 v0.16"
+    },
+    {
+      "file": "skills/moldova/moldova-payroll.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.11",
+      "new_version": "0.12",
+      "old_H1": "# Moldova payroll withholding, 2026 v0.11",
+      "new_H1": "# Moldova payroll withholding, 2026 v0.12"
+    },
+    {
+      "file": "skills/moldova/moldova-tax-optimization.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.7",
+      "new_version": "0.8",
+      "old_H1": "# Moldova tax planning and regime comparison, 2026 v0.7",
+      "new_H1": "# Moldova tax planning and regime comparison, 2026 v0.8"
+    },
+    {
+      "file": "skills/moldova/moldova-social-contributions.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.14",
+      "new_version": "0.15",
+      "old_H1": "# Moldova social contributions and medical insurance, 2026 v0.14",
+      "new_H1": "# Moldova social contributions and medical insurance, 2026 v0.15"
+    },
+    {
+      "file": "skills/moldova/md-company-formation.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.8",
+      "new_version": "0.9",
+      "old_H1": "# Moldova company formation and entity choice, 2026 v0.8",
+      "new_H1": "# Moldova company formation and entity choice, 2026 v0.9"
+    },
+    {
+      "file": "skills/moldova/md-tax-overview.md",
+      "finding": "legacy citation-format version",
+      "kind": "version and matching H1 only",
+      "old_version": "0.6",
+      "new_version": "0.7",
+      "old_H1": "# Moldova tax overview, 2026 v0.6",
+      "new_H1": "# Moldova tax overview, 2026 v0.7"
+    },
+    {
+      "file": "skills/moldova/md-property-tax.md",
+      "finding": "MD-PW-003",
+      "kind": "version and matching H1 only",
+      "old_version": "0.1",
+      "new_version": "0.2",
+      "old_H1": "# Moldova immovable-property and land tax, 2026",
+      "new_H1": "# Moldova immovable-property and land tax, 2026 v0.2"
+    },
+    {
+      "file": "skills/moldova/md-wealth-tax.md",
+      "finding": "MD-PW-003",
+      "kind": "version and matching H1 only",
+      "old_version": "0.1",
+      "new_version": "0.2",
+      "old_H1": "# Moldova residential-property wealth tax, 2026",
+      "new_H1": "# Moldova residential-property wealth tax, 2026 v0.2"
+    }
+  ],
+  "same_target_citation_rows": 104,
+  "new_law_read_claimed": false,
+  "source_access_record": "../independent-review/source-access.json",
+  "publication_reuse_clearance": false
+}

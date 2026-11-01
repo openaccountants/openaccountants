@@ -1,0 +1,82 @@
+[
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "### Family, municipality and ceiling\n",
+    "new": "### Family, municipality and ceiling\n\nFor a full-year cohabiting spouse case under §4, first establish each spouse's own taxable income. Where the lower nonnegative income is below DKK 30,000 and the other is above it, the ordinary adjustment transfers the unused amount: `transfer = 30,000 − lower income`; raise the lower income to DKK 30,000 and reduce the higher income by that transfer. TAKS expressly illustrates DKK 20,000 / 300,000 becoming DKK 30,000 / 290,000, and DKK 0 / 300,000 becoming DKK 30,000 / 270,000, automatically at year-end. Keep the spouses separately assessed on the adjusted bases. This bounded method does not settle negative-income, separation, death or part-year spouse cases. [Tax Act §4][tax]; [TAKS spouse adjustment][spouse]\n"
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "Part-year annualisation and credit/ceiling ordering in unusual cases require the additional checks listed in Sources.",
+    "new": "Use the bounded part-year method below; unusual credit/ceiling interactions require the additional checks listed in Sources."
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "### Capital income, rentals and interest support\n",
+    "new": "### Ordinary arrival and departure during the year\n\nLiability continues while the statutory residence/source conditions are met. Acquiring a home without actually taking up residence does not itself start the home-based route; the 180-day stay route instead starts retrospectively from the first qualifying arrival. Preserve the actual home, arrival/departure and presence evidence. A registration date alone does not decide tax residence. A home retained after departure requires the actual facts to be assessed. [Tax Act §§1, 6–8][tax]; [TAKS VLS C.1][residence]\n\nFor a bounded 2026 ordinary resident period with no credits, church membership, foreign relief, spouse transfer or special-rate income, §24(2) requires conversion to full-year income. The TAKS 2026 calculator demonstrates the administrative sequence: actual taxable income × `365 / taxable days`, rounded down to DKK 100; compute the current full-year national and municipal taxes on that annualised base, then multiply their sum by `taxable days / 365`. The municipal exempt amount is applied in the annual calculation before this reduction. Treat this as the observed calculator working-paper method, not an express statutory rounding rule for every component. [Tax Act §§24(2), 46–47][tax]; [TAKS calculator guidance][calculator-info]; [TAKS 2026 calculator][calculator]\n\n**Observed control, not a client assessment:** for DKK 150,000 income over 180 taxable days in Tórshavn, without church tax or any credit, the official calculator shows annualised income DKK 304,100, gross annual tax DKK 85,644 and reduced tax DKK 42,235.40; its final income-tax display is DKK 42,235. The unrounded annual equivalent is DKK 304,166.67. This recomputes as national DKK 33,565 plus municipal DKK 52,079, then ×180/365. Its separately displayed 3% AM charge is DKK 4,500 on actual income. The calculator is expressly indicative. Its displayed child-credit amount differs from the current Assessment Act, so no child-credit result is adopted from it. Part-year credits, spouse cases, changing church membership and final settlement rounding remain separate questions. [Assessment Act §§1–2][rate]; [TAKS calculator][calculator]\n\n### Capital income, rentals and interest support\n"
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "Capital Income Act §19 permits capped foreign-tax credit for income from a country **without** a double-tax treaty. Treaty credits/exemptions and ordinary foreign-tax relief need separate authority; do not use that clause as a universal credit rule.",
+    "new": "Capital Income Act §19 permits capped foreign-tax credit for capital income from a country **without** a double-tax treaty. Tax Act §154 supplies the separate ordinary-income credit; the [cross-border Guide’s bounded method](fo-cross-border-payments.md#ordinary-foreign-tax-credit) explains source expenses, the positive-base fraction and credit ordering. Treaty credits/exemptions, nonpositive bases and the other stated limits require their own authority; do not use §19 as a universal credit rule."
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "Not yet confirmed: complete part-year annualisation and commencement/cessation procedure,",
+    "new": "Not yet confirmed: part-year credit and spouse adjustments beyond the bounded no-credit calculator method,"
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "ordinary foreign-tax/treaty relief,",
+    "new": "foreign-credit nonpositive bases, tax changes, unused-credit treatment and treaty relief,"
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "[returns]: https://www.taks.fo/en/individuals/tax/tax-return",
+    "new": "[returns]: https://www.taks.fo/en/individuals/tax/tax-return\n[spouse]: https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur\n[residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting\n[calculator-info]: https://www.taks.fo/fo/borgari/skattur/skattaroknarin\n[calculator]: https://www.eskatt.fo/sjtp/sjtpsim.aspx"
+  },
+  {
+    "file": "fo-individual-income-tax.md",
+    "old": "| [TAKS housing/rents][rent]",
+    "new": "| [TAKS spouse adjustment][spouse] | Explicit full-year 0/300,000 and 20,000/300,000 adjustment examples; Tax Act §4 checked with them | 2026-10-28 |\n| [TAKS VLS C.1][residence] | Selected residence commencement/cessation discussion, cross-checked against current §§6–8; obsolete examples excluded | 2026-10-28 |\n| [TAKS calculator][calculator] and [guidance][calculator-info] | Actual 2026 synthetic no-credit/no-church 365-day and 180-day runs at DKK 150,000; indicative observed method, child-credit display excluded | 2026-10-28 |\n| [TAKS housing/rents][rent]"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "Fixed-place/agent tests, aggregation, exclusions and profit attribution remain incomplete here.",
+    "new": "The ordinary fixed-place/attribution method follows below; agency tests, aggregation and exclusions need the actual applicable instrument."
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "### Royalties and distributions\n",
+    "new": "TAKS explains that domestic fixed-place interpretation follows the treaty concept, referring to Nordic Article 5 and listing management premises, a branch, office, factory, workshop and extraction site. Establish an actual place and business activity; this list alone does not decide an agency or treaty exception. Once a branch PE is established, attribute the income it would earn as an independent enterprise dealing at arm's length with its head enterprise. Include connected asset gains/losses and deduct only expenses incurred to earn the Faroese taxable income. Build an evidenced bridge from attributable third-party receipts, direct costs and supportable head-office allocations, then the Faroese tax adjustments. This is a profit-attribution working paper, not a gross-receipts levy. [Tax Act §2(1)(d), (2)][tax]; [TAKS VLS C.2, fixed establishment][residence]\n\nFor example, an established ordinary company branch with DKK 1,000,000 attributable receipts, DKK 600,000 deductible direct costs and DKK 100,000 independently supported attributable head-office costs has DKK 300,000 ordinary profit before other tax adjustments, and DKK 54,000 at the qualifying 18% company rate. These allocations are hypothetical proved inputs, not automatic percentage deductions or a method for attributing internal finance/intangibles. Reconcile depreciation, financing limitations and losses under the corporate/TP Guides. [Tax Act §§2(2), 31, 37b][tax]; [Assessment Act §5(2)][rate]\n\n### Royalties and distributions\n"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "Later disposal requires an individual security calculation using the acquisition basis used for the exit computation and FIFO. Section 2c(3)–(4) adjusts the deferred balance for subsequent gains/losses and foreign-tax/loss effects; death is treated as disposal of all inventory securities under subsection 5. These adjustment mechanics need a transaction-specific calculation beyond the simple exit example below.",
+    "new": "For each later disposal, use the original acquisition basis used in the exit computation, actual sale proceeds and FIFO. For a positive gain, compute the Faroese tax and credit eligible actual foreign tax under the applicable treaty or §19; pay the positive residual and reduce the deferred balance by the payment. If comparing actual proceeds with departure value produces a loss, §2c(3) separately reduces the balance by that loss's Faroese tax value. A foreign deduction of that loss invokes the separate foreign negative-tax-value payment rule; do not ignore it. Actual acquisition-basis losses have §2c(4)'s separate adjustment. Death is treated as disposal of all inventory securities under subsection 5.\n\n**Bounded later-disposal control:** original cost DKK 100,000, departure value DKK 150,000 and initial deferred tax DKK 17,500; later sale DKK 140,000, no foreign tax, no foreign deduction of the value fall, no other inventory securities or prior balance adjustments. Actual gain DKK 40,000 gives DKK 14,000 tax paid and reduces the balance to DKK 3,500. The DKK 10,000 fall from departure value has DKK 3,500 Faroese tax value, reducing the remaining balance to zero. Do not substitute departure value for the original gain basis, or import this fixture into foreign-loss or rising-value cases without the separate §2c computation."
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "Controlled-transaction pricing and thin capitalisation belong to the separate TP Guide. This Guide does not establish a general interest-withholding exemption. [Tax Act §§37a–37b][tax]",
+    "new": "Controlled-transaction pricing and thin capitalisation belong to the separate TP Guide. [Tax Act §§37a–37b][tax]\n\n**Ordinary corporate-loan interest:** a non-bank Faroese company paying genuine loan interest to a foreign company with no Faroese full liability, PE connection or other domestic taxable connection has no withholding imposed by the cited ordinary royalty, distribution or bank-deposit provisions. This is an inference from their defined scope, not a treaty-granted zero rate: Tax Act §2 exhaustively lists nonresident income categories without a general loan-interest category; Assessment Act §7 covers royalties; Capital Income Act §15 covers distributions; §16 covers interest credited by Faroese banks/postgiro to individuals/estates. Thus DKK 20,000 genuine interest in that bounded fixture is paid DKK 20,000 without those withholdings. A disguised distribution, bank deposit, PE-connected debt, different recipient or special instrument requires its own classification; §16's 35% bank-deposit withholding must not be described as a general corporate-interest rate. [Tax Act §2][tax]; [Assessment Act §7][rate]; [Capital Income Act §§2, 15–16][capital]; [TAKS VLS C.2][residence]"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "general interest withholding, company migration/closure, full §2c later-disposal/foreign-loss deferral calculations,",
+    "new": "interest cases outside the bounded genuine corporate-loan fixture, company migration/closure, §2c actual-loss/foreign-loss and rising-value deferral calculations,"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "complete fixed-place/agency PE and attribution analysis,",
+    "new": "agency PE, treaty exclusions and complex finance/intangible attribution,"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "[relief]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting",
+    "new": "[relief]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting\n[residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting"
+  },
+  {
+    "file": "fo-cross-border-payments.md",
+    "old": "| [TAKS VLS O, double taxation][relief]",
+    "new": "| [TAKS VLS C.2][residence] | Fixed-place examples, independent-enterprise branch attribution and exhaustive domestic source categories, checked against current §2; obsolete treaty/worker examples excluded | 2026-10-28 |\n| [TAKS VLS O, double taxation][relief]"
+  }
+]

@@ -1,10 +1,10 @@
 ---
 name: luxembourg-vat-return
 description: "Luxembourg VAT (TVA) for tax year 2026 in the deep-tax shape: who must charge VAT, the four rates in art. 39 of the VAT law of 12 February 1979 (17%, 14%, 8%, 3%) and the goods and services in annexes A, B and C, the small business franchise under arts. 57 to 57quater (EUR 50,000, tolerance to EUR 55,000, EU SME scheme at EUR 100,000), the filing frequency set by turnover (annual up to EUR 112,000, quarterly to EUR 620,000, monthly above), due dates (before the 15th after the period; annual-only filers before 1 March; annual recap before 1 May), reverse charge, recapitulative statements, fines under art. 77 and interest under art. 85. Trigger on: Luxembourg VAT return, TVA Luxembourg, AED, eCDF, déclaration TVA, régime de franchise, état récapitulatif. Out of scope: income tax of the owner in luxembourg-income-tax; companies in lu-corporate-tax; non-residents in lu-cross-border; funds, SOPARFI and VAT groups (refer)."
-version: 2.1
+version: 2.2
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -174,8 +174,6 @@ expected:
 | Guichet.lu, VAT return frequency and deadlines | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
 
 Not yet confirmed: the AED coordinated text is not binding and the consolidated text on Legilux was not available, so article wording should be checked against the Mémorial before a dispute; the grand-ducal regulation that sets the EUR 112,000 and EUR 620,000 filing bands was not read (the figures come from the AED and Guichet.lu pages).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

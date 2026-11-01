@@ -2,13 +2,13 @@
 name: vi-individual-income-tax-filing
 description: >
   US Virgin Islands individual income-tax filing reference checked in 2026. Separates full-year bona fide residents from US citizens and resident aliens with Virgin Islands income who do not qualify, and explains worldwide reporting, joint-return residence, dual filing and tax allocation. Includes an adjusted-gross-income allocation example, payments reconciliation and the 2025 Form 8689 credit route. Records conflicting line references in IRS Publication 570 rather than carrying them into the computation. Flags separate self-employment obligations and source determinations. Does not publish unverified 2026 return lines, tax brackets, incentives or nonresident-alien filing instructions. Independent accountant review remains pending.
-version: 0.1
+version: 0.2
 jurisdiction: VI
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -61,8 +61,6 @@ A taxpayer with no ordinary US income-tax filing requirement can still have US s
 ## Verification limits
 
 Checked 22 October 2026 against the statute and downloaded IRS material. This draft does not settle incentives, foreign reporting, estate/trust rules, nonresident-alien cases, zero/negative AGI, all income-source exceptions or 2026 rate schedules. Independent accountant review and complete current-year reconciliation remain outstanding.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

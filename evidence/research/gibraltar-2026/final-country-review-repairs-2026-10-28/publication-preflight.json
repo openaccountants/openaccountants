@@ -1,0 +1,20 @@
+{
+  "accepted_head": "4d2640c63d82b4a1a67479364190fd12b238439f",
+  "primary_review_head": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "acceptance": "Three findings independently closed; four ordinary source-cited drafts with explicit limits",
+  "accepted_content_blobs_checked": 41,
+  "prior_review_artifacts_exact": 14,
+  "main_reconciled": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "existing_remote_head_before_push": "b98e7f01d8d5468e0ad4a99a09d03392244d1ab6",
+  "archive_only": true,
+  "guide_readme_ledger_changes_after_acceptance": 0,
+  "examples": 61,
+  "independent_prose_calculations": 129,
+  "schemas": 18,
+  "strict_metadata_guides": 4,
+  "repository_unit_tests": 129,
+  "CI_for_publication_head": "Pending after push",
+  "country_complete": false,
+  "issue_398": "Keep open; all seven domains remain partial",
+  "no_merge_or_new_CLA_or_attestation": true
+}

@@ -1,19 +1,19 @@
 ---
 name: dk-corporate-tax
 description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (denmark-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
-version: 0.1
+version: 0.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.1
+# Denmark: corporate income tax (selskabsskat) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 
@@ -228,8 +228,6 @@ expected:
 | skat.dk: global minimum tax for large groups (GloBE) | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe | 2026-10-22 |
 
 Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary acontoskat surcharge rates (Skattestyrelsen publishes them by 15 December 2026; the 2025 rates are shown above); the effective dates of the individual Pillar Two charging rules (income inclusion rule, undertaxed profits rule, Danish top-up tax); the R&D enhanced deduction percentages for 2026; the commencement order the Minister issued under lov nr. 1694/2024, § 18, stk. 2, for the 0.85-point addition (the Ministry table and Den juridiske vejledning apply 0.85 for 2026, but the order itself was not located).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
