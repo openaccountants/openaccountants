@@ -2,9 +2,13 @@
 jurisdiction: KW
 applicable: [IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable:
-  IT-IND: "Individuals are exempt on income from trade or work (Executive Regulations of Law 2 of 2008, art. 8)."
+  IT-IND: "Own natural-person work/trade income is exempt unless it represents a corporate body's share (Executive Regulations of Law 2/2008 art. 8(2), https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf)."
 covered_by: {}
-partial: {}
+partial:
+  IT-CORP: "Kuwaiti/Gulf and mixed ownership, original-Decree filing/fine exceptions, authenticated filing steps and DMTT executive detail remain held."
+  VAT: "Current implementation and all no-tax consequences need affirmative official evidence; customs and framework rules remain held."
+  SC: "PIFSS coverage, rates, ceiling, remittance and penalties remain held."
+  PR: "Only own-work income-tax exemption is sourced; insurance and indemnity workflow remain held."
 ---
 
 # Kuwait: tax pack
@@ -15,15 +19,15 @@ Tax years: 2026 (6 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | | | Does not apply: Individuals are exempt on income from trade or work (Executive Regulations of Law 2 of 2008, art. 8). |
-| Company tax | [Corporate income tax](kw-corporate-income-tax.md) | 2026 | Ready |
-| VAT or sales tax | [VAT or GST](kw-vat-gst.md) | 2026 | Ready |
-| Social contributions | [Payroll social](kw-payroll-social.md) | 2026 | Ready |
-| Payroll | [Payroll social](kw-payroll-social.md) | 2026 | Ready |
+| Income tax | | | Does not apply: Own natural-person work/trade income is exempt unless it represents a corporate body's share (Executive Regulations of Law 2/2008 art. 8(2), https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf). |
+| Company tax | [Corporate income tax](kw-corporate-income-tax.md) | 2026 | Partial, see source holds |
+| VAT or sales tax | [VAT or GST](kw-vat-gst.md) | 2026 | Partial, see source holds |
+| Social contributions | [Payroll social](kw-payroll-social.md) | 2026 | Partial, see source holds |
+| Payroll | [Payroll social](kw-payroll-social.md) | 2026 | Partial, see source holds |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+The current-year label does not resolve the source holds. Partial means operational coverage remains incomplete. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 

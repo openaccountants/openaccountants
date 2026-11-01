@@ -1,7 +1,7 @@
 ---
 name: kw-payroll-social
-description: "Payroll and social contributions in Kuwait for tax year 2026. Covers the absence of tax on individual income from work, Public Institution for Social Security contributions for Kuwaiti nationals, Gulf nationals, expatriates and end-of-service pay. Use for questions on Kuwait payroll, PIFSS, employer cost, salary tax, gratuity or indemnity. The contribution figures are marked unverified because the PIFSS rate pages could not be opened in this review, and the reader must confirm them with PIFSS before payroll runs. Not signed off by an accountant."
-version: 0.2
+description: "Payroll intake and social contribution verification in Kuwait for tax year 2026. Covers the income-tax exemption for a natural person's own work, the exception for income representing a corporate body's share, and the evidence needed before payroll can be calculated. Use for Kuwait salary tax, PIFSS contributions, insured salary, employer cost, GCC insurance extension and end-of-service indemnity questions. Contribution rates, ceilings, remittance dates, nationality coverage and indemnity formulas are held as unverified source gaps. Worked cases separate the verified income-tax component from contribution amounts supplied in an employer's records. This Guide does not authorise a payroll run without those missing checks."
+version: 0.3
 jurisdiction: KW
 category: international
 tax_year: 2026
@@ -12,91 +12,86 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kuwait Payroll and Social Contributions
+# Kuwait Payroll and Social Contributions v0.3
 
-Tax year 2026. Contribution figures below could not be read at source and are marked unverified. Confirm them with PIFSS before running payroll.
+Tax year 2026.
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
 
-Employers in Kuwait. Social insurance applies to Kuwaiti nationals through PIFSS; Gulf nationals and expatriates are treated as shown.
+Employers checking Kuwait payroll. The confirmed income-tax rule covers a natural person's income from trade or work in Kuwait, unless it represents a corporate body's share (Executive Regulations of Law 2 of 2008, art. 8). It does not establish social-insurance or indemnity exemptions by nationality.
 
 ## Rates, bands and thresholds
 
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Tax on salaries | None: the income tax falls on corporate bodies and individuals are exempt (reg. arts. 1 and 8) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| Employer contribution, Kuwaiti | unverified: 11.5% of monthly salary | 2026 | unverified |
-| Employee basic contribution, Kuwaiti | unverified: 8% of monthly salary | 2026 | unverified |
-| Additional employee contribution | unverified: 2.5%, making 10.5% in total | 2026 | unverified |
-| Monthly salary ceiling | unverified: KWD 2,750 | 2026 | unverified |
-| Expatriates (non-GCC) | unverified: outside PIFSS; employer owes end-of-service indemnity | 2026 | unverified |
-| GCC nationals | unverified: home-state scheme through the GCC insurance extension | 2026 | unverified |
-| Remittance deadline | unverified: by the 15th of the following month | 2026 | unverified |
-| End-of-service indemnity | unverified: 15 days a year for the first 5 years, then one month a year, private sector | 2026 | unverified |
+| Income tax on a person's own salary | Exempt under art. 8(2), unless the income represents a corporate body's share | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
+| PIFSS rates, insured salary and due dates | unverified: NON-OPERATIVE HOLD. Do not use the historical rates or ceiling in Sources | 2026 | unverified |
+| Nationality coverage and indemnity | unverified: NON-OPERATIVE HOLD. No zero contribution or gratuity conclusion is authorised | 2026 | unverified |
 
 ## The base
 
-Unverified: contributions fall on monthly salary up to the ceiling above.
+Identify the legal recipient of each payment before applying art. 8. Keep gross pay, any confirmed employee deductions, employer contributions and indemnity accrual separate. No contribution base is established here.
 
 ## Deadlines and filing
 
-PIFSS runs employer forms and services under the employer tab at https://www.pifss.gov.kw. Steps for the monthly remittance could not be read and are not given here.
+PIFSS service entry point: https://www.pifss.gov.kw. The current remittance form, procedure and deadline have not been verified. Obtain the employee's coverage confirmation and current assessment, reconcile them to payroll, and retain the evidence. Do not submit or release payroll using the held figures.
 
 ## Penalties and interest
 
-Not confirmed; see Sources.
+Unverified: PIFSS and labour-law penalties. No penalty calculation is authorised.
 
 ## Cross-border points
 
-Foreign employees pay no Kuwaiti tax on salary. Their home state's tax is a separate question.
+The natural-person income-tax exemption does not decide foreign tax, GCC insurance extension, non-GCC coverage or employer indemnity. Refer each of those questions for the current source and the employee's facts.
 
 ## Two worked examples that recompute
 
-Both use the unverified figures above and must be rerun if PIFSS shows otherwise.
-
-**Example 1.** Kuwaiti employee on KWD 2,000: employer KWD 230, employee KWD 210.
+**Example 1.** An employee receives KWD 2,000 as their own salary, not a corporate body's share. Art. 8(2) exempts that salary from Kuwait income tax. The income-tax component is zero. KWD 2,000 remains before social deductions; this is not approved net pay.
 
 ```oa-check
-name: Kuwaiti employee KWD 2,000, unverified rates
+name: Own salary, income-tax component only
 inputs:
   salary: 2000
 steps:
-  - base: min(salary, 2750)
-  - employer: base * 0.115
-  - employee: base * 0.105
+  - income_tax: salary * 0
+  - before_social_deductions: salary - income_tax
 expected:
-  employer: 230.00
-  employee: 210.00
+  income_tax: 0.00
+  before_social_deductions: 2000.00
 ```
 
-**Example 2 (decision).** Hire a Kuwaiti on KWD 3,000 or a non-GCC expatriate on the same pay. The Kuwaiti costs KWD 316.25 a month in employer contributions at the ceiling; the expatriate costs none but accrues indemnity, 15 days a year in the first five years.
+**Example 2 (decision).** A payroll record specifies gross salary KWD 3,000, an employee deduction of KWD 200 and employer contribution of KWD 250 for that month. Reconcile the supplied amounts: net cash KWD 2,800 and employer cash cost KWD 3,250. The KWD 200 and KWD 250 are example document inputs, not legal rates. Release only after their current legal basis and coverage are checked. If the supporting assessment is missing, hold the payroll rather than assume expatriate contributions are zero or apply historical percentages.
 
 ```oa-check
-name: Employer contribution above the ceiling, unverified rates
+name: Reconcile documented payroll amounts before release decision
 inputs:
-  salary: 3000
+  gross_salary: 3000
+  documented_employee_deduction: 200
+  documented_employer_contribution: 250
 steps:
-  - base: min(salary, 2750)
-  - employer: base * 0.115
+  - net_cash: gross_salary - documented_employee_deduction
+  - employer_cash_cost: gross_salary + documented_employer_contribution
 expected:
-  base: 2750.00
-  employer: 316.25
+  net_cash: 2800.00
+  employer_cash_cost: 3250.00
 ```
 
 ## Ask the client first
 
-- Nationality of each employee: Kuwaiti, GCC or other?
-- Monthly salary and allowances?
-- Private or public sector?
-- Length of service for indemnity?
+- Employee nationality and current insurance coverage confirmation?
+- Gross pay, allowances and the current insured-salary assessment?
+- Private or public sector and the employment contract?
+- Length of service, termination reason and current indemnity assessment?
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, art. 8(2), with arts. 1 to 3 and 9 to 14; Arabic OCR read and PDF page 8 visually checked | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 
-Not yet confirmed: All PIFSS figures: only the PIFSS home page opened on 2026-11-01 and it carries no rates; Social Security Law 61 of 1976 not read. Labour Law 6 of 2010 indemnity and its caps not read; manpower.gov.kw did not open. Secondary payroll sites disagree on the employee rate, and were not used. Any 2026 change to the ceiling and any employer unemployment contribution. PIFSS late-payment penalties.
+Not yet confirmed: NON-OPERATIVE HOLDS. Social Security Law 61 of 1976 and amendments; historical employer 11.5%, employee basic 8% plus additional 2.5% (10.5% total), KWD 2,750 monthly ceiling, claimed remittance by the following month's 15th; no current statutory text read supports using these. Historical claims that non-GCC expatriates are outside PIFSS, GCC nationals use home-state schemes, and social insurance applies only to Kuwaiti nationals are not operational conclusions. Labour Law 6 of 2010: historical 15 days per year for the first five years, then one month per year, all calculation caps and entitlement conditions, not verified. Current PIFSS penalties and any unemployment contribution. Prior writer reports only PIFSS homepage opened and manpower.gov.kw failed on 2026-11-01; those are access reports, not law readings. Historical calculation examples KWD 2,000 yielding employer 230/employee 210 and KWD 3,000 yielding employer 316.25, and the Kuwaiti-versus-expatriate hiring comparison, are withdrawn from operative use pending those checks.
 
 <!-- openaccountants-cta-block -->
 

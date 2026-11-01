@@ -1,7 +1,7 @@
 ---
 name: kw-vat-gst
-description: "VAT, GST, excise and customs position in Kuwait for tax year 2026. Kuwait has no VAT or GST law in the Ministry of Finance legislation lists, so there is no registration, return, invoice or reverse charge. Use for questions such as does Kuwait have VAT, should I charge VAT to a Kuwaiti customer, can I recover VAT in Kuwait, Kuwait excise, GCC VAT agreement and Kuwait, and customs duty on imports. Lists what is unverified because the customs site could not be opened. Not signed off by an accountant."
-version: 0.2
+description: "VAT, GST, excise and customs source checks for Kuwait tax year 2026. Use for questions about Kuwait VAT registration, invoice charges, returns, reverse charge, input recovery, digital services, GCC framework agreements and import duties. The Ministry of Finance legislation lists were read, but their omission of a tax title does not prove that no tax is in force. Current implementation status and all resulting no-tax conclusions remain on hold until affirmative official evidence is read. Worked cases reconcile invoice amounts and quantify a disputed charge without deciding tax liability. Customs figures and the GCC framework dates are retained only as non-operative historical claims in Sources."
+version: 0.3
 jurisdiction: KW
 category: international
 tax_year: 2026
@@ -12,89 +12,87 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kuwait VAT / GST
+# Kuwait VAT / GST v0.3
 
 Tax year 2026.
 
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
 ## Who this applies to
 
-Anyone asking whether VAT, GST or excise applies in Kuwait. No taxpayer group is covered, because no such tax is enacted in the MOF lists read.
+Businesses reviewing a Kuwait indirect-tax question. The MOF laws, decree-laws and resolutions lists below were read. No VAT or excise enactment was identified in those lists, but absence from an index is not affirmative evidence that no tax applies. Do not classify a transaction as exempt, zero-rated or outside scope from that finding.
 
 ## Rates, bands and thresholds
 
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
-| VAT or GST status | Not implemented: the MOF lists of laws, decree-laws and resolutions carry no VAT law | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
-| VAT standard rate | Not applicable. Do not apply the 5% GCC framework rate | 2026 | same |
-| Registration threshold | Not applicable | 2026 | same |
-| Return frequency | Not applicable | 2026 | same |
-| Reverse charge | Not applicable | 2026 | same |
-| Excise | No excise law in the MOF lists | 2026 | same |
-| Customs duty | unverified: 5% of CIF value on most goods, higher on tobacco, carried from the earlier version. customs.gov.kw did not open | 2026 | unverified |
+| VAT, GST and excise status | unverified: NON-OPERATIVE HOLD. MOF title searches did not establish current legal status | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
+| Rate, registration threshold and return frequency | unverified: no current rule established. Do not adopt a GCC framework percentage as Kuwait law | 2026 | unverified |
+| Reverse charge, input recovery and invoice requirements | unverified: no current Kuwait procedure established | 2026 | unverified |
+| Customs duty | unverified: rate, tariff classification and exemptions require current customs evidence | 2026 | unverified |
 
 ## The base
 
-There is no VAT base. Foreign VAT charged to a Kuwaiti business is not recoverable in Kuwait, as there is no return to claim it on.
+No taxable base or recovery right is established by this Guide. Separate net price, any separately invoiced foreign tax and gross amount. Foreign VAT is not automatically an irrecoverable cost: establish the relevant foreign refund or deduction right before final classification.
 
 ## Deadlines and filing
 
-No VAT filing exists. Do not register, charge or show VAT on Kuwaiti invoices.
+Do not initiate or omit a registration, return or payment on the strength of the old no-VAT statement. Obtain the current enacted text or affirmative competent-authority statement and the transaction facts, then record the applicable filing procedure and due date. The present Guide does not provide that procedure.
 
 ## Penalties and interest
 
-None, because there is no VAT.
+Unverified. Do not infer that penalties are absent because no enactment was identified in the index.
 
 ## Cross-border points
 
-A supplier in a GCC state with VAT applies its own state's rules to a Kuwaiti customer. Digital services into Kuwait carry no Kuwaiti VAT; income tax depends on Kuwait-source activity, see [corporate income tax](kw-corporate-income-tax.md).
+A foreign supplier's home-state VAT treatment, Kuwait treatment of imported goods or digital services, and any foreign refund right need separate determination. For Kuwait-source corporate income use [corporate income tax](kw-corporate-income-tax.md); this Guide does not supply a permanent-establishment test.
 
 ## Two worked examples that recompute
 
-**Example 1.** A Kuwaiti company invoices KWD 1,000. VAT added is zero, so the customer pays KWD 1,000.
+**Example 1.** A foreign supplier's invoice states KWD 1,000 net and KWD 200 foreign tax. The gross invoice is KWD 1,200. Record those components for review; the arithmetic does not establish that KWD 200 is deductible, refundable or a final cost.
 
 ```oa-check
-name: Kuwaiti invoice, no VAT
+name: Reconcile foreign invoice without assuming recoverability
 inputs:
-  net: 1000
-  vat_rate: 0
+  net_price: 1000
+  invoiced_foreign_tax: 200
 steps:
-  - vat: net * vat_rate
-  - gross: net + vat
+  - invoice_total: net_price + invoiced_foreign_tax
 expected:
-  vat: 0.00
-  gross: 1000.00
+  invoice_total: 1200.00
 ```
 
-**Example 2 (decision).** A foreign seller asks whether to charge 5% on a KWD 2,000 sale. Answer: no. Charging it would overcharge the customer by KWD 100 with no authority to collect it.
+**Example 2 (decision).** A supplier quotes KWD 2,000 and proposes adding 5% labelled Kuwait VAT without providing the law. That proposal adds KWD 100 and produces a KWD 2,100 invoice. Request the legal basis and hold the disputed KWD 100 for review. Do not accept the charge or reject it as legally impossible solely from the GCC framework or an MOF index search. The 5% is the supplier's hypothetical proposal, not a verified Kuwait tax rate.
 
 ```oa-check
-name: Overcharge if 5% is wrongly added
+name: Quantify proposed disputed charge before deciding its legal basis
 inputs:
-  net: 2000
+  quoted_price: 2000
+  supplier_proposed_rate: 0.05
 steps:
-  - wrong_vat: net * 0.05
-  - correct_vat: net * 0
+  - disputed_charge: quoted_price * supplier_proposed_rate
+  - proposed_total: quoted_price + disputed_charge
 expected:
-  wrong_vat: 100.00
-  correct_vat: 0.00
+  disputed_charge: 100.00
+  proposed_total: 2100.00
 ```
 
 ## Ask the client first
 
-- Where is the seller established?
-- Where is the customer established?
-- Goods or services?
-- Is the question about a sale in Kuwait or a purchase from a VAT state?
+- Seller and customer establishment, and transaction date?
+- Goods, services or digital services, and where supplied?
+- Import declaration or invoice showing the charge and its legal basis?
+- Foreign VAT registration and any proposed refund or deduction route?
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| MOF list of laws, list pages read for VAT and excise titles | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx | 2026-11-01 |
-| MOF list of decree-laws, list page read for VAT and excise titles | https://www.mof.gov.kw/MOFDesicions/mofDesicions2.aspx | 2026-11-01 |
-| MOF list of resolutions, list page read for VAT and excise titles | https://www.mof.gov.kw/MOFDesicions/mofDesicions3.aspx | 2026-11-01 |
+| MOF laws list, financial/tax law titles read; index scope only, no VAT or excise title identified | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx | 2026-11-01 |
+| MOF decree-laws list, financial/tax decree titles including 157/2024 read; index scope only | https://www.mof.gov.kw/MOFDesicions/mofDesicions2.aspx | 2026-11-01 |
+| MOF resolutions list, tax resolution titles and 2025 DMTT material read; index scope only | https://www.mof.gov.kw/MOFDesicions/mofDesicions3.aspx | 2026-11-01 |
 
-Not yet confirmed: A date for any Kuwait VAT or excise law: none found, and no official announcement was opened; customs duty rates, because the customs site did not open; the GCC VAT Framework Agreement text (2017) and GCC Excise Framework Agreement (2016), carried from the earlier version and not read.
+Not yet confirmed: NON-OPERATIVE HOLDS. The inherited assertions that Kuwait has no VAT/GST, no general consumption or sales tax, no excise, no registration, return, invoice tax, reverse charge, input recovery or penalties, and that foreign VAT is irrecoverable. Current enactment, commencement and implementation dates require affirmative official evidence. Historical GCC VAT Framework Agreement (2017), claimed 5% framework rate, GCC Excise Framework Agreement (2016) and Kuwait signature/domestic-adoption status have not been read at source. Historical customs 5% of CIF on most goods, higher tobacco/product rates and the description of customs as the main indirect tax remain unverified; customs.gov.kw access failure was reported by the prior writer, not treated as a source reading. Old domestic zero-VAT invoice cases and digital-services no-VAT conclusion must not be used as current tax advice.
 
 <!-- openaccountants-cta-block -->
 
