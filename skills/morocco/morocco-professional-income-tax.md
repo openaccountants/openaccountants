@@ -26,6 +26,8 @@ depends_on:
 
 Built by Michael Cutajar and the OpenAccountants team. All articles are from the Code General des Impots 2026 (CGI), published by the Direction Generale des Impots (DGI).
 
+> **General reference only.** This does not constitute tax, legal or financial advice. Verify figures against the cited sources or with a licensed professional before relying on them.
+
 ## Who this applies to
 
 Individuals with professional income under CGI Art. 30: commercial, industrial and artisanal professions; property developers, land subdividers and property dealers; liberal professions and any other profession; and repetitive income not in another category. The taxpayer is on RNR by default, or RNS by option where turnover allows (Art. 39).
