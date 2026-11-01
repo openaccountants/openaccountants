@@ -30,3 +30,5 @@ Writer evidence only. No independent source acceptance is claimed. Root owns fre
 ## Source storage correction
 
 Full downloaded source HTML, PDF, DOCX and full-text readers stay OUTSIDE Git in the country workspace sibling `../sources`. The first local evidence commit mistakenly included them; a normal corrective commit removes those public-tree copies while preserving identical private bytes and historical commit. `source-storage-correction.json` lists every exact path and original SHA256. This repository retains only compact decisive quotes, source URLs/hashes/read scopes and the selective visible-browser read receipt. The initial raw-HTML whitespace-check failure remains saved privately.
+
+The raw-packaging commits are retained only on the private local checkpoint branch `codex/bahrain-private-raw-packaging-checkpoint-20261101`. Public ancestry is remade cleanly from the unchanged remote Bahrain head by a normal commit; no raw-source commit is pushed. No history was reset, rebased, force-pushed or discarded.
