@@ -1,0 +1,502 @@
+{
+  "reviewer": "Fresh independent AI source reviewer; not writer and not accountant attestation",
+  "read_on": "2026-11-01",
+  "frozen_commit": "2aa7624745122e9c896b3cc126f38dfe5317d0d0",
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "verdict": "Corrections required before source-review acceptance; keep existing draft PR open. Not full-country or operative-filing approval.",
+  "figures_rules_checked": 39,
+  "worked_examples_recomputed": 2,
+  "old_topics_preserved": 69,
+  "lost_content_restored": 0,
+  "files_sha256": {
+    "skills/sierra-leone/sl-transfer-pricing.md": "886693a27fb7b7d45890ca6e8246364ea9c2d31ff6535af3a19690d82b0b96ab",
+    "skills/sierra-leone/README.md": "d1f12157d0deaba548d5fbf2247c3b30439f7184067ebaa38dc3c9e6df12a00c",
+    "evidence/ledgers/sierra-leone-draft-20261101/sl-transfer-pricing.md": "d748a8cb1d0d2f5c8b0d731782b2791ec493d1a3118ca586d908804cc419a1ac",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-ledger-register.json": "562d2fb69f64c8f84d6a3ab1ecfd5c2cffdbafef1cf46e1a35fdf2b85ea309d6",
+    "evidence/ledgers/sierra-leone-draft-20261101/old-topic-register.json": "12a4a72688d96aef15c6d748df8ed7333d32f6edfed3129b0a72a69aebad7101"
+  },
+  "sources": [
+    {
+      "file": "Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "bytes": 12141624,
+      "sha256": "59ded6ae590ff6cf38d11eb77c7cd1fcb1c3d1f79e1a9bdc10fc446503f16ba8",
+      "independent_read_on": "2026-11-01",
+      "scope": "All32physical pages read using complete OCR; original scan pages7,9,11,12,13,14,16,18,19,30,31,32 visually inspected for critical conditions/numerals/anomalies."
+    },
+    {
+      "file": "The_Finance_Act_2026_121df05d9b.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
+      "bytes": 960719,
+      "sha256": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf",
+      "independent_read_on": "2026-11-01",
+      "scope": "Physical2left commencement read;7right new97filing and8left150penalty text read and original rendered pages7-8visually inspected. Not all Act/schedules."
+    },
+    {
+      "file": "The_Finance_Act_2025_beb680faed.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+      "bytes": 701135,
+      "sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+      "independent_read_on": "2026-11-01",
+      "scope": "Failed prerequisite check prompted targeted beyond-citation reading of s10replacement150, printed8-9, original9right visually inspected. No full2025amendment-chain certification."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "guide_line": 44,
+      "ledger_rows": [
+        "TP11"
+      ],
+      "issue": "Foreign geographic comparables lose statutory entry and adjustment conditions.",
+      "evidence": "Reg9(6) allows other-market comparables in absence of information on same-market uncontrolled transactions, acceptable by Commissioner-General;9(7) case-by-case reg3 reliability;9(8) expected geographic/other-factor effects on price/profitability and necessary adjustments. Actual PDF13-14 visually inspected.",
+      "required_fix": "State absence-of-same-market-information, Commissioner acceptance, case-by-case reliability and geographic-difference assessment/adjustments beside the foreign-comparable instruction; extend ledger locator to13-14."
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "guide_line": 35,
+      "ledger_rows": [
+        "TP36",
+        "TP37"
+      ],
+      "issue": "The opening subsection150(3) prerequisite is lost from penalty presentation.",
+      "evidence": "FinanceAct2026s12 inserts150(4) for a related-party person who fails to comply with subsection(3). FinanceAct2025s10 replaced150; subsection3 extends filing/penalties to capital gains, withholding and PAYE. Actual2026PDF8left and2025PDF9right visually inspected. This is not a straightforward standalone TP-filing condition.",
+      "required_fix": "Preserve literal150(3) qualifier in table/penalty discussion and ledger, cite/read2025replacement, name unresolved effect/cross-reference in Sources. Keep cap example explicitly conditional on applicability; do not silently change subsection3 to97(3) or assert universal liability."
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "guide_line": 47,
+      "ledger_rows": [
+        "TP17"
+      ],
+      "issue": "HTVI entry criteria are not stated beside ex-post evidence rule.",
+      "evidence": "Reg12(5),PDF18original: at transaction time no reliable comparables exist AND projections/valuation assumptions are highly uncertain, making ultimate success hard to predict. Reg12(6)-(7) then govern ex-post evidence.",
+      "required_fix": "Add those two conjunctive entry conditions to Guide and ledger before necessity/reliability/not-sole-basis rule; no new numerical threshold."
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "guide_line": 45,
+      "ledger_rows": [
+        "TP12"
+      ],
+      "issue": "Commodity quoted-price date is not operationally defined.",
+      "evidence": "Reg1,PDF4 defines date of transaction as shipping date supported by bill of lading/equivalent contemporaneous transport document, unless reliable contemporaneous evidence establishes actual agreed pricing date accords with independent dealing. Reg10 uses that defined date.",
+      "required_fix": "State date definition and exception beside commodity rule; add ledger row with short exact quote, article/page, source URL/read date."
+    },
+    {
+      "id": "F5",
+      "priority": "P2",
+      "guide_line": 59,
+      "ledger_rows": [
+        "TP27"
+      ],
+      "issue": "Statutory APA power is presented as available program without confirming operation.",
+      "evidence": "Reg8(1),PDF11original: Commissioner-General MAY HAVE an APA program. This source alone does not establish currently operating application channel.",
+      "required_fix": "Describe statutory power and conditional process; place actual program availability/current application channel in explicit unconfirmed items unless independently authenticated. Retain45day confirmation versus completed agreement distinction."
+    },
+    {
+      "id": "F6",
+      "priority": "P3",
+      "guide_line": 59,
+      "ledger_rows": [
+        "TP27",
+        "TP28",
+        "TP07",
+        "TP09",
+        "TP16",
+        "TP23"
+      ],
+      "issue": "Ledger article/page locators are narrower or incorrect despite supported substantive summaries.",
+      "evidence": "APA45day commitment is8(5), withdrawal8(6), not cited8(1)-(4)/8(5). Tested-party conditions continuePDF10; range conditions start10; intangibles continue17-18; master/local detail spans19-29. All39short quotes locate in declared OCR page after whitespace normalization.",
+      "required_fix": "Correct APA subsections and widen multi-page rule locators in both Markdown/JSON ledger. No quote-text alteration needed for the39existing snippets."
+    }
+  ],
+  "rows": [
+    {
+      "id": "TP01",
+      "writer_article": "2021 regs.1-2",
+      "reviewed_physical_pages": "3-6",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Associated/controlled definitions and reg2 consistency/allocation verified. Associated-person Act definition itself is not exhaustively reproduced."
+    },
+    {
+      "id": "TP02",
+      "writer_article": "2021 reg.3",
+      "reviewed_physical_pages": "6-7",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Economically relevant comparability factors and reasonably accurate adjustments read."
+    },
+    {
+      "id": "TP03",
+      "writer_article": "2021 reg.3(3)",
+      "reviewed_physical_pages": "7",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms OR trigger for missing control or capacity, reallocation to party with both and risk-free ceiling."
+    },
+    {
+      "id": "TP04",
+      "writer_article": "2021 reg.4(1)-(3)",
+      "reviewed_physical_pages": "7-9",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Five methods, strengths/weaknesses, nature, reliable data and comparability checked."
+    },
+    {
+      "id": "TP05",
+      "writer_article": "2021 reg.4(4)-(5)",
+      "reviewed_physical_pages": "8-9",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms unusual local residual-profit-split requirement once specified traditional-method functions remunerated; one method sufficient."
+    },
+    {
+      "id": "TP06",
+      "writer_article": "2021 reg.4(6)-(7)",
+      "reviewed_physical_pages": "9",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Commissioner convinced, inability reasonably to use listed methods and comparable independent outcome; requirements must be established."
+    },
+    {
+      "id": "TP07",
+      "writer_article": "2021 reg.5",
+      "reviewed_physical_pages": "9-10",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F6"
+      ],
+      "independent_note": "Tested party applies to cost-plus/resale/TNMM; least complex and reliable comparables; foreign sufficient information and Commissioner review."
+    },
+    {
+      "id": "TP08",
+      "writer_article": "2021 reg.6",
+      "reviewed_physical_pages": "10",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Same/similar circumstances plus economically linked/continuum and inability reliably to analyse separately."
+    },
+    {
+      "id": "TP09",
+      "writer_article": "2021 reg.7(1)-(5)",
+      "reviewed_physical_pages": "10-11",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F6"
+      ],
+      "independent_note": "Full-range criteria and uncertain-comparability statistical/IQR rule checked, including original page11."
+    },
+    {
+      "id": "TP10",
+      "writer_article": "2021 reg.7(6)-(7)",
+      "reviewed_physical_pages": "11",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan verifies no adjustment inside range and median outside; independent examples correct."
+    },
+    {
+      "id": "TP11",
+      "writer_article": "2021 reg.9",
+      "reviewed_physical_pages": "12-14",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F1"
+      ],
+      "independent_note": "Secret-comparable prohibition and no hierarchy checked. Foreign-market entry and geographic-adjustment conditions omitted from Guide; F1."
+    },
+    {
+      "id": "TP12",
+      "writer_article": "2021 reg.10",
+      "reviewed_physical_pages": "4-5,14",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F4"
+      ],
+      "independent_note": "Original reg10 conditions verified. Guide lacks actual date-of-transaction definition; F4."
+    },
+    {
+      "id": "TP13",
+      "writer_article": "2021 reg.11(1)",
+      "reviewed_physical_pages": "15",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Actually rendered; actual or expected benefit; willing pay/in-house alternative; comparable independent charge."
+    },
+    {
+      "id": "TP14",
+      "writer_article": "2021 reg.11(2)",
+      "reviewed_physical_pages": "15-16",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Shareholder-only condition and ownership/reporting/tax/governance costs read; acquisition-benefit exception not misrepresented as categorical nondeductibility."
+    },
+    {
+      "id": "TP15",
+      "writer_article": "2021 reg.11(3)-(5)",
+      "reviewed_physical_pages": "16",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms separate services and joint-service inability to identify specific recipients plus reasonable allocation. Ambiguous exclusive-uncontrolled variable is expressly held."
+    },
+    {
+      "id": "TP16",
+      "writer_article": "2021 reg.12",
+      "reviewed_physical_pages": "16-18",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F6"
+      ],
+      "independent_note": "Functions/control/assets/risks/capacity, contract divergence and transferor/transferee perspectives checked. Summary ledger locator should extend through17-18."
+    },
+    {
+      "id": "TP17",
+      "writer_article": "2021 reg.12(5)-(7)",
+      "reviewed_physical_pages": "18",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F3"
+      ],
+      "independent_note": "Original scan verifies HTVI entry conditions and necessity/not-sole-basis test. Guide omits HTVI entry criteria; F3."
+    },
+    {
+      "id": "TP18",
+      "writer_article": "2021 reg.13",
+      "reviewed_physical_pages": "18",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan verifies domestic/elsewhere relationship declaration in prescribed form with return."
+    },
+    {
+      "id": "TP19",
+      "writer_article": "2021 reg.14",
+      "reviewed_physical_pages": "18",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan verifies each year, without notice/demand, prescribed format with annual return."
+    },
+    {
+      "id": "TP20",
+      "writer_article": "2021 reg.15(1)-(3)",
+      "reviewed_physical_pages": "19",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms English and complexity/volume proportionality."
+    },
+    {
+      "id": "TP21",
+      "writer_article": "2021 reg.15(4)",
+      "reviewed_physical_pages": "19",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms contemporaneous documentation at statutory return filing date; distinguished from mandatory submission."
+    },
+    {
+      "id": "TP22",
+      "writer_article": "2021 reg.15(5)-(6)",
+      "reviewed_physical_pages": "19",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms receipt of written request plus45days and additional-information power."
+    },
+    {
+      "id": "TP23",
+      "writer_article": "2021 regs.16-27",
+      "reviewed_physical_pages": "19-29",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F6"
+      ],
+      "independent_note": "All listed master/local categories and authentic-document support read. Quote on19 supports include master/local; wider summary needs wider locator. Detailed statutory checklist still referred out, not certified live filing procedure."
+    },
+    {
+      "id": "TP24",
+      "writer_article": "2021 reg.28",
+      "reviewed_physical_pages": "29",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Whole arrangement, commercial irrationality, prevention of acceptable pricing, both perspectives and realistic options read; alternative transaction possible."
+    },
+    {
+      "id": "TP25",
+      "writer_article": "2021 reg.29",
+      "reviewed_physical_pages": "30",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms domestic appropriate corresponding taxable-income adjustment to other party."
+    },
+    {
+      "id": "TP26",
+      "writer_article": "2021 reg.30",
+      "reviewed_physical_pages": "30-31",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scans verify foreign made/proposed adjustment, same income already taxed in SL, treaty intention and consistency in principle AND amount."
+    },
+    {
+      "id": "TP27",
+      "writer_article": "2021 reg.8(1)-(4)",
+      "reviewed_physical_pages": "11-12",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F5",
+        "F6"
+      ],
+      "independent_note": "Original scan: program discretionary may-have, confirmation45days under8(5), not8(1)-(4). F5/F6."
+    },
+    {
+      "id": "TP28",
+      "writer_article": "2021 reg.8(5)",
+      "reviewed_physical_pages": "12",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F6"
+      ],
+      "independent_note": "Original scan: withdrawal at any time with no further obligation in8(6), not8(5). F6."
+    },
+    {
+      "id": "TP29",
+      "writer_article": "2021 reg.31(1)",
+      "reviewed_physical_pages": "32",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms PartXII referral; no blanket all-penalty cap asserted."
+    },
+    {
+      "id": "TP30",
+      "writer_article": "2021 reg.31(2)",
+      "reviewed_physical_pages": "32",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms negative NOT wording; held, no silent reversal or automatic defence."
+    },
+    {
+      "id": "TP39",
+      "writer_article": "2021 reg.30(3)-(4)",
+      "reviewed_physical_pages": "30-31",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scans verify particulars, residence/year/amounts/analysis, foreign recourse finality and applicable treaty MAP time limit; Guide retains conditions."
+    },
+    {
+      "id": "TP31",
+      "writer_article": "2021 reg.11(5)(b)",
+      "reviewed_physical_pages": "16",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original scan confirms exclusive uncontrolled rather than controlled wording; interpretation held."
+    },
+    {
+      "id": "TP32",
+      "writer_article": "Finance Act2026 s8, ITA97(3)",
+      "reviewed_physical_pages": "2026:7 right",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original image confirms prescribed format/information/filing published in gazette."
+    },
+    {
+      "id": "TP33",
+      "writer_article": "Finance Act2026 s8, ITA97(6)(d)(i)",
+      "reviewed_physical_pages": "2026:7 right",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original image confirms one month from parent company submission to tax administration in parent residence country."
+    },
+    {
+      "id": "TP34",
+      "writer_article": "Finance Act2026 s8, ITA97(6)(d)(ii)",
+      "reviewed_physical_pages": "2026:7 right",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original image confirms two months from actual SL annual-return submission."
+    },
+    {
+      "id": "TP35",
+      "writer_article": "Finance Act2026 s8, ITA97(6)(d)(iii)",
+      "reviewed_physical_pages": "2026:7 right",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Original image confirms one year from tax-year end related to examination/assessment. No imported numerical threshold."
+    },
+    {
+      "id": "TP36",
+      "writer_article": "Finance Act2026 s12, ITA150(4)(a)-(d)",
+      "reviewed_physical_pages": "2026:8 left;2025:9 right",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F2"
+      ],
+      "independent_note": "Original images confirm four3%defaults and CbC on notification. Opening subsection(3) prerequisite omitted and interpretation not settled; F2."
+    },
+    {
+      "id": "TP37",
+      "writer_article": "Finance Act2026 s12, ITA150(4)(e)",
+      "reviewed_physical_pages": "2026:8 left",
+      "quote_located": true,
+      "status": "correction_required",
+      "findings": [
+        "F2"
+      ],
+      "independent_note": "Original image confirms multiple-violation cap3% related transaction value. Same omitted opening prerequisite; F2. Example arithmetic conditional only."
+    },
+    {
+      "id": "TP38",
+      "writer_article": "Finance Act2026 s1",
+      "reviewed_physical_pages": "2026:2 left",
+      "quote_located": true,
+      "status": "supported_with_stated_limits",
+      "findings": [],
+      "independent_note": "Commencement text read: deemed1Jan2026 unless otherwise provided."
+    }
+  ],
+  "remaining_limits": [
+    "Complete later subsidiary-instrument chain and authenticated gazetted formats/channel not proven.",
+    "CbC implementation, notification, threshold, no-home-parent-master-file case and interaction of old/new preparation/submission clocks remain open.",
+    "Subsection150(3) cross-reference effect unresolved; no all-penalty/interest cap or multi-transaction aggregation conclusion.",
+    "Reg31(2) negative wording and11(5)(b) exclusive-uncontrolled variable remain held.",
+    "No treaty inventory/procedure or live APA program authenticated.",
+    "Six2025legacy Guides unchanged, not source reverified; all country domains remain partial."
+  ]
+}

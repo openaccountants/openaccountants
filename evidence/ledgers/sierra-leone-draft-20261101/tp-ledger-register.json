@@ -1,5 +1,5 @@
 {
-  "status": "Writerdraft;independentreviewpending",
+  "status": "Initial review findings repaired; focused independent closure pending",
   "rows": [
     {
       "id": "TP01",
@@ -73,7 +73,7 @@
       "rule": "Tested party functional analysis,reliableapplication/reliablecomparables,foreignpartyinformation.",
       "article": "2021 reg.5",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "9",
+      "pdf_page": "9-10",
       "quote": "The selection of the tested party shall be consistent with the functional analysis",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -95,7 +95,7 @@
       "rule": "Full range requires sufficient similarity and materialdifferences identified+adjusted; uncertainty usesstatistical/IQR.",
       "article": "2021 reg.7(1)-(5)",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "11",
+      "pdf_page": "10-11",
       "quote": "the interquartile range shall be considered",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -114,10 +114,10 @@
     {
       "id": "TP11",
       "section": "The base",
-      "rule": "No reliance on secret comparables; foreigncomparables reliable/casebycase.",
+      "rule": "No secretcomparables unavailablebothparties. Other geographic markets only absent same-marketinformation, acceptableCG, reg3case-by-case reliability, geographic/otherpriceprofitability effects andnecessaryadjustments.",
       "article": "2021 reg.9",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "13",
+      "pdf_page": "13-14",
       "quote": "not available to both the taxpayer",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -125,7 +125,7 @@
     {
       "id": "TP12",
       "section": "The base",
-      "rule": "Commodity exportbelowquote/importabovequote specific quotedprice; substantiatedadjustments/resalehigherprice conditions.",
+      "rule": "Commodity exportbelowquote/importabovequote specific quotedprice; substantiatedadjustments/resalehigherprice conditions. Transactiondate defined in reg1; newTP40records shipping-date/actualarm-lengthpricingdateexception.",
       "article": "2021 reg.10",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
       "pdf_page": "14",
@@ -172,7 +172,7 @@
       "rule": "Intangible functions/assets/risks/control andcapacity,bothperspectives/realisticalternatives,notcontractualownershipalone.",
       "article": "2021 reg.12",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "16",
+      "pdf_page": "16-18",
       "quote": "contractual arrangements",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -180,7 +180,7 @@
     {
       "id": "TP17",
       "section": "The base",
-      "rule": "HTVI lateroutcomes onlynecessary toassess exantereliability,notsoleadjustmentbasis.",
+      "rule": "HTVI entry: no reliablecomparables AND highlyuncertainfuturecashflow/income/valuationassumptions makingultimatesuccesshardtopredict attransactiondate. Subsequentoutcomes onlynecessarytoreviewexantereliability, notsoleadjustmentbasis.",
       "article": "2021 reg.12(5)-(7)",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
       "pdf_page": "18",
@@ -249,7 +249,7 @@
       "rule": "Master+localfile;grouporganisation/business/intangibles/finance/financialtaxposition;detailedlocalbusiness/relationship/transactions/reconciliation.",
       "article": "2021 regs.16-27",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "19",
+      "pdf_page": "19-29",
       "quote": "include a master file and a local file",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -290,10 +290,10 @@
     {
       "id": "TP27",
       "section": "Deadlines",
-      "rule": "APA45daywrittencommitmentacceptingrequest/terms,notcompletedagreementguarantee;nonresidenttransactions.",
-      "article": "2021 reg.8(1)-(4)",
+      "rule": "CGmayhaveAPAprogram; actualcurrentavailabilityunverified. Ifoperating, statutoryrequestformat/info andreg8(5)45daywrittencommitmentacceptance/fee/terms,notcompletedagreementguarantee;nonresidentdealings.",
+      "article": "2021 reg.8(1)-(5)",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
-      "pdf_page": "12",
+      "pdf_page": "11-12",
       "quote": "within 45 days after receiving the request",
       "read_on": "2026-11-01",
       "read_scope": "Neighbouring paragraphs/conditions read in complete32-page instrument; OCRquotes require independentoriginalpagecheck."
@@ -302,7 +302,7 @@
       "id": "TP28",
       "section": "Deadlines",
       "rule": "APAwithdrawal leavesneitherpartyobligatedbyrequest.",
-      "article": "2021 reg.8(5)",
+      "article": "2021 reg.8(6)",
       "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
       "pdf_page": "12",
       "quote": "at any time",
@@ -400,7 +400,7 @@
     {
       "id": "TP36",
       "section": "Rates/penalties",
-      "rule": "Specifieddisclosure/local/master/CbC(onnotification)default3%transactionvalue.",
+      "rule": "If ITA150(4)legallyapplies: openingcondition is relatedparty person failing150(3); relationshipto2025replacement150(3)CG/WHT/PAYEisunresolved. Specifieddisclosure/local/master/CbC(onnotification)default3%transactionvalue.",
       "article": "Finance Act2026 s12, ITA150(4)(a)-(d)",
       "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
       "pdf_page": "8",
@@ -411,7 +411,7 @@
     {
       "id": "TP37",
       "section": "Rates/penalties/examples",
-      "rule": "Multipleviolationsnotexceed3%relatedtransactionvalue.",
+      "rule": "If ITA150(4)legallyapplies: openingcondition is relatedparty person failing150(3); relationshipto2025replacement150(3)CG/WHT/PAYEisunresolved. Multipleviolationsnotexceed3%relatedtransactionvalue.",
       "article": "Finance Act2026 s12, ITA150(4)(e)",
       "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
       "pdf_page": "8",
@@ -429,6 +429,28 @@
       "quote": "on the 1st day of January 2026",
       "read_on": "2026-11-01",
       "read_scope": "Actual2026statutorytextandneighbouringconditions; PDF7-8originalimagesvisuallychecked."
+    },
+    {
+      "id": "TP40",
+      "section": "The base",
+      "rule": "Commodity transactiondate is shipment evidenced by billoflading/equivalentcontemporaneoustransportdocument,unlessreliablecontemporaneousevidenceactualagreedpricingdateaccordsarm-lengthdealing.",
+      "article": "2021 reg.1 date-of-transaction definition, read with reg.10",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "pdf_page": "4,14",
+      "quote": "are shipped as evidenced by the bill of lading",
+      "read_on": "2026-11-01",
+      "read_scope": "Actualreg1definitionandreg10read;definitionlinksquotedpricingdate."
+    },
+    {
+      "id": "TP41",
+      "section": "Penalties/Sources hold",
+      "rule": "2026ITA150(4)openingfailureofsubsection3qualifiermustberetained;2025replacement150(3)extendsfiling/penaltiestoCG/WHT/PAYE. PreciseeffectonTPunresolved,notrewrittenas97(3).",
+      "article": "Finance Act2025 s10 replacement ITA150(3), read with Finance Act2026 s12 inserted150(4)",
+      "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+      "pdf_page": "9",
+      "quote": "shall be applicable to capital gains, withholding and PAYE",
+      "read_on": "2026-11-01",
+      "read_scope": "2025printed8-9actualread;originalPDF9imagechecked;2026physical8openingconditionread."
     }
   ],
   "quote_location_failures_requiring_writer_resolution": []

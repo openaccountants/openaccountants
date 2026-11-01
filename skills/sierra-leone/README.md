@@ -15,7 +15,7 @@ partial:
   VAT: "Existing 2025 Guide retained;2026 GST/digital, input, invoicing and filing changes not yet reconciled."
   SC: "Existing 2025 Guide retained; current NASSIT law/base/payment implementation not yet independently verified."
   PR: "Existing 2025 Guide retained; current PAYE deductions, return/payment forms and penalties not yet reconciled."
-  TP: "New 2026 draft,39 ledger rows; independent review, later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
+  TP: "New 2026 draft, 41 ledger rows; independent source review closed, but later instruments, gazetted formats, notification/threshold implementation and two textual conflicts remain unresolved."
   XB: "Dedicated residence/withholding Guide in preparation; existing cross-border topics retained in legacy Guides."
 ---
 
@@ -29,7 +29,7 @@ First additive draft: one new transfer-pricing Guide, six existing 2025 Guides p
 | Company tax | [Corporate income tax](sl-corporate-income-tax.md) | Legacy 2025; refresh in progress |
 | Goods and services tax | [GST](sl-vat-gst.md) | Legacy 2025; refresh in progress |
 | Payroll and social | [Payroll](sl-payroll-social.md) | Legacy 2025; refresh in progress |
-| Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 source draft, independent review pending |
+| Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
 | Cross-border | Dedicated Guide in preparation | Partial; legacy topics retained |
 | Formation | [Formation](sl-company-formation.md) | Legacy 2025; refresh in progress |
 | Tax intake | [Overview](sl-tax-overview.md) | Legacy 2025; refresh in progress |

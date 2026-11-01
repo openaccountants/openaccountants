@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-01",
+  "initial_review_commit": "2aa7624745122e9c896b3cc126f38dfe5317d0d0",
+  "candidate_kind": "Uncommitted exact-file-hash freeze; parent to commit normal branch update",
+  "verdict": "All6initial findings closed for this41row conditional source-reference TP draft. Accepted only with explicit unresolved law/implementation holds; not operative-filing approval, full TP domain/country closure, accountant attestation or merge authorisation.",
+  "candidate_file_hashes": {
+    "skills/sierra-leone/sl-transfer-pricing.md": "2f39aa3dd8260f076ce985ab736f59ed7586c6dd7972c72c8c59eca9ee4c2a5f",
+    "skills/sierra-leone/README.md": "d2babbad2277139710769001c5df55ec699e8ac65187211237381cd3d606838c",
+    "evidence/ledgers/sierra-leone-draft-20261101/README.md": "5616b5c765ce80570b15cf822729da42097ad175b7975f284523352716a607a4",
+    "evidence/ledgers/sierra-leone-draft-20261101/sl-transfer-pricing.md": "2794a9cb784ca6db05d2d36d8a36e219121787dfffc8261cd24cbc62620816c8",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-ledger-register.json": "3cbd9dacbdcdce071d9ac5ee2a09cd37cc90ddb787f43819f054374d1cf33a27",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-source-read-manifest.json": "d23cb779c710691c775cce0268d7e665352a0026614dff15ee0fe6fd984cc805"
+  },
+  "source_hashes": [
+    {
+      "file": "Statutory_Instrument_Transfer_Pricing_Regulations_2021_73e383ce7f.pdf",
+      "sha256": "59ded6ae590ff6cf38d11eb77c7cd1fcb1c3d1f79e1a9bdc10fc446503f16ba8",
+      "bytes": 12141624
+    },
+    {
+      "file": "The_Finance_Act_2026_121df05d9b.pdf",
+      "sha256": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf",
+      "bytes": 960719
+    },
+    {
+      "file": "The_Finance_Act_2025_beb680faed.pdf",
+      "sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+      "bytes": 701135
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "status": "closed",
+      "checked": "Guide base4 and TP11 now carry absent same-market information, Commissioner acceptance, no hierarchy, case-by-case reg3 reliability and geographic/other-factor effects/adjustments. Reg9PDF13-14 unchanged source independently read in initial review."
+    },
+    {
+      "id": "F2",
+      "status": "closed_by_explicit_qualification_and_hold",
+      "checked": "Table, penalty body, TP36/37/41 and case preserve subsection150(3) prerequisite.2025 replacement cited, no silent correction to97(3); actual liability interpretation remains explicitly unresolved. Case assumes legal applicability after resolution, not an unconditional penalty prediction."
+    },
+    {
+      "id": "F3",
+      "status": "closed",
+      "checked": "Guide base7 and TP17 now state both no reliable comparables AND highly uncertain projections/assumptions at transaction time before later-outcome necessity/not-sole-basis test. Matches actualPDF18original read."
+    },
+    {
+      "id": "F4",
+      "status": "closed",
+      "checked": "Guide base5 and newTP40 preserve bill-of-lading/equivalent contemporaneous shipment date plus reliable contemporaneous evidence of actual agreed pricing date consistent with independent dealing. OriginalPDF4 newly visually inspected at closure; reg10PDF14 already independently inspected."
+    },
+    {
+      "id": "F5",
+      "status": "closed_by_conditional_statutory_process_and_hold",
+      "checked": "APA paragraph states discretionary statutory power, conditional operating process and no current availability conclusion; Sources explicitly holds availability/channel.45day commitment versus completed agreement distinction retained."
+    },
+    {
+      "id": "F6",
+      "status": "closed",
+      "checked": "Both ledgers correct APA8(5)confirmation and8(6)withdrawal and widen TP07(9-10),TP09(10-11),TP11(13-14),TP16(16-18),TP23(19-29),TP27(11-12). Existing short quote text unaltered."
+    }
+  ],
+  "new_rows": [
+    {
+      "id": "TP40",
+      "verdict": "supported",
+      "article": "2021 reg.1 date-of-transaction definition, read with reg.10",
+      "quote": "are shipped as evidenced by the bill of lading",
+      "pages": "2021PDF4definition,14reg10",
+      "verification": "OriginalPDF4visually inspected in closure, literal shipment/exceptions read. Exact short quote located."
+    },
+    {
+      "id": "TP41",
+      "verdict": "supported_explicit_interpretation_hold",
+      "article": "Finance Act2025 s10 replacement ITA150(3), read with Finance Act2026 s12 inserted150(4)",
+      "quote": "shall be applicable to capital gains, withholding and PAYE",
+      "pages": "2025PDF9right,2026PDF8left",
+      "verification": "2025replacement150(3)and2026inserted150(4)opening independently read/visually inspected at initial review; new excerpt matches exact text and qualifier is retained rather than interpreted away."
+    }
+  ],
+  "ledger_units_checked_total": 41,
+  "initial_units_preserved": 39,
+  "description_words": 115,
+  "version": "1.1",
+  "tier": 2,
+  "metadata": "No accountant attribution/review fields or copied CTA; title/frontmatter version match.",
+  "mechanical_checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/sierra-leone/sl-transfer-pricing.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/sierra-leone/sl-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/sierra-leone/sl-transfer-pricing.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 2 changed guide file(s)\nchecked 1 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+        "--worktree",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "aec6ba04066bb69d1168c8028ba11dd65cb90505"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "examples_independently_recomputed": {
+    "range": {
+      "outside_margin_percent": 3,
+      "inside_margin_percent": 5,
+      "median_profit": 60000,
+      "outside_adjustment": 30000,
+      "inside_adjustment": 0
+    },
+    "cap": {
+      "single_default": 60000,
+      "uncapped_sum": 180000,
+      "capped_penalty": 60000,
+      "excess_if_added": 120000
+    },
+    "assumptions": "Same accepted benchmark/base and legal applicability after150(3)resolution; no statutory safe harbour, tax liability or multi-transaction aggregation conclusion."
+  },
+  "old_guides": [
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-income-tax.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-payroll-social.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-vat-gst.md",
+      "byte_identical_to_base": true,
+      "hash_matches": true
+    }
+  ],
+  "old_topics_count": 69,
+  "old_topic_exact_destinations_verified": true,
+  "lost_content_restored": 0,
+  "all7domains_remain_partial": true,
+  "unchanged_initial_review_sha256": "e77cbfe50b10776a319e0c2f2ec4dee629c0ba3bfd7467f40f672ab92b9b8e4d",
+  "remaining_limits": [
+    "Complete later subsidiary-instrument chain and authenticated gazetted formats/channel not proven.",
+    "CbC implementation, notification, threshold, no-home-parent-master-file case and interaction of old/new preparation/submission clocks remain open.",
+    "Subsection150(3) cross-reference effect unresolved; no all-penalty/interest cap or multi-transaction aggregation conclusion.",
+    "Reg31(2) negative wording and11(5)(b) exclusive-uncontrolled variable remain held.",
+    "No treaty inventory/procedure or live APA program authenticated.",
+    "Six2025legacy Guides unchanged, not source reverified; all country domains remain partial."
+  ],
+  "status_note": "Writer evidence/pack README and Guide still say focused review pending at this frozen candidate. Parent can append/link this closure and update status wording accurately; this closure does not authorise broader content changes without review.",
+  "reviewer_actions": "Read-only candidate review plus append-only closure evidence. No Guide/ledger edit, commit, push, PR state change, merge or production write."
+}
