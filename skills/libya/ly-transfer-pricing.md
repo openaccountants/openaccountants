@@ -116,4 +116,3 @@ expected:
 | Tax Authority live law and regulation catalogues; law titles and the income-law history paragraph, not a consolidated 2026 certificate | https://tax.gov.ly/Law1.aspx ; https://tax.gov.ly/Law2.aspx ; https://tax.gov.ly/TaxHistory.aspx | 2026-11-01 |
 | UK-Libya convention, English original: arts. 1-5, 8, 10, 12-13, 26; actual treaty PDF pp. 4-12, 15, 17, 20-21, 36; live in-force status page also read | https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf ; https://www.gov.uk/government/publications/libya-tax-treaties | 2026-11-01 |
 Not yet confirmed: complete domestic amendment chain and administrative practice through 2026; complete domestic and 2026 amendment chain; domestic arm's-length documentation legislation, thresholds, master/local file, CbCR, prescribed methods, APA process, penalty regime and filing forms. No absence or exemption is claimed.
-

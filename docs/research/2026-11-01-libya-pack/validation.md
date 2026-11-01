@@ -55,3 +55,5 @@ PASS: 8 Guides; 6 legacy metadata/CTA matches; 2 new Guides clean; all descripti
 ```
 
 No full-tree validator or index rebuild was run, because generated inventories are outside this country batch. Source PDFs were read locally from the recorded official downloads; no bulk link checker or private filing session was treated as legal proof. Source currentness, current contribution rates, VAT status and live filing procedures remain the explicit partial gaps in the pack README. Independent review of this exact content is still required.
+
+The first whitespace check found an extra blank line at EOF in each new Guide. Both were removed in a follow-up commit without rewriting history. Shape, arithmetic, pinned-scope validation and strict metadata checks were rerun successfully; the full candidate diff then passed `git diff <pinned-base> --check`.

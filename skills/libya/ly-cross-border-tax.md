@@ -114,4 +114,3 @@ expected:
 | UK-Libya convention: English original, arts. 1-5, 8, 10-17, 19-20, 23 and 26, relevant conditions and neighbouring exceptions; PDF pp. 4-26, 28-29, 32-36; HMRC status page identifies it as in force | https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf ; https://www.gov.uk/government/publications/libya-tax-treaties | 2026-11-01 |
 | Tax authority treaty index: single-page names and entry dates only; not rate articles or an exhaustive current inventory | https://tax.gov.ly/assets/ET.pdf | 2026-11-01 |
 Not yet confirmed: complete domestic amendment chain and administrative practice through 2026; complete 2026 domestic and treaty-modification chain; other corridors' operative articles and protocols; current residence/relief/refund procedures; universal domestic withholding-zero claims; current exit-clearance implementation and a complete exit-tax inventory.
-
