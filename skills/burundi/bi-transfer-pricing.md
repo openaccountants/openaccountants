@@ -112,4 +112,3 @@ expected:
 | [OBR corporate income return, 2021](https://www.obr.bi/images/IR_SOCIETE_2021_VF_CORRIGE_octobre_2021_1.pdf) | Read for All 8 pages and annexes; line routing only, historical incentive or penalty text is not authority for 2026. | 2026-11-01 |
 
 Not yet confirmed: Authenticated current TP implementing order and its method hierarchy, documentation language/deadline, any monetary exemption, annual standalone return, country-by-country filing, safe harbors, APA/MAP execution and TP-specific penalties; annual financing application across the July budget cutover; current local-market average interest evidence. The 2013 order link returned HTTP 404 and is not a completed current-law check.
-

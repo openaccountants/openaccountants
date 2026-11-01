@@ -124,4 +124,3 @@ expected:
 | [Signed Burundi–Morocco convention](https://www.obr.bi/images/MAROC._DTA_Sign%C3%A9_par_les_Ministres_%C3%A0_ratifier.pdf) | Read for Actual PDF pp. 20–22: assistance tail, diplomatic rights, anti-abuse, entry/effectiveness, termination and signatures. Rate articles not reviewed for application. | 2026-11-01 |
 
 Not yet confirmed: Diplomatic/public-service individual residence condition illegible in the principal scan; treaty-by-treaty exchange/entry/effective dates and reduction procedures, residence tie-breakers, beneficial ownership and treaty PE changes; current foreign exchange/repatriation rules; any branch remittance tax; current interest order and authenticated filing/payment-reference screens. No treaty rate or absence of treaties is inferred.
-
