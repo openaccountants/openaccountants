@@ -22,7 +22,7 @@ Keep Moroccan terms (CNSS, AMO, TNS, retraite, SMIG, DGI) and reply in the user'
 
 Morocco is extending cover to all workers under framework Law 09-21. Three groups, three mechanics. Place the user first.
 
-- **TNS:** self-employed people who are neither employees nor auto-entrepreneurs, brought in category by category. Law 98-15 sets the AMO scheme, Law 99-15 the pension scheme, and a decree for each category sets its flat income. Decrees read: traders and artisans keeping accounts (2-21-751, amended by 2-22-338), individuals keeping accounts (the decree in BO 7376 of 6 Feb 2025, amended by 2-22-859), owners of artisanal fishing boats (2-22-337), plus further category decrees in the same issue. Reported also covered: CPU payers (see `ma-cpu`), health, legal and other regulated professions. Confirm a named profession against its decree. Never move one category's base to another. If the category decree is not found, ask; do not assume a base. Treat affiliation as mandatory until the decree says otherwise.
+- **TNS:** self-employed people who are neither employees nor auto-entrepreneurs, brought in category by category. Law 98-15 sets the AMO scheme, Law 99-15 the pension scheme, and a decree for each category sets its flat income. Decrees read: traders and artisans keeping accounts (2-21-751, amended by 2-22-338 and then 2-22-859), individuals keeping accounts (2-22-858), owners of artisanal fishing boats (2-22-337), plus further category decrees in the same issue. Reported also covered: CPU payers (see `ma-cpu`), health, legal and other regulated professions. Confirm a named profession against its decree. Never move one category's base to another. If the category decree is not found, ask; do not assume a base. Treat affiliation as mandatory until the decree says otherwise.
 - **Auto-entrepreneurs:** cover under decree 2-21-928, amended by 2-22-208. See `ma-auto-entrepreneur`.
 - **Anyone who hires:** ordinary CNSS on real salary, separate from the owner's own cover. Payslip mechanics are in `morocco-payroll`. An owner who hires has two CNSS relationships.
 
@@ -32,12 +32,16 @@ Morocco is extending cover to all workers under framework Law 09-21. Three group
 |---|---|---|---|---|
 | TNS AMO, active | unverified for 2026: 6.37% | On flat income | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
 | TNS pension | unverified for 2026: 10% | On flat income | 2024 | same |
-| TNS AMO, pensioners | unverified for 2026: 4.52% of base pensions | Taken by the payer. Reported by a search result for cnss.ma; page not read | not read | unverified |
+| TNS AMO, pensioners | unverified for 2026: 4.52% of base pensions | Taken by the payer of the pension | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
+| SMIG, non-agricultural | unverified for 2026: MAD 16.29 an hour, 3,111.39 a month for 191 hours | Rises of 5% agreed for January 2025 and January 2026. Decree text not read. This is the value the multiples below use | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
 | Flat income, general band | unverified for 2026: 1.75 to 2.75 times SMIG | CLEISS summary. The decrees below show other multiples for some categories, so use the decree | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Traders, artisans keeping accounts, simplified net result | 1 times the value | Value = SMIG times normal annual non-agricultural hours. Decree 2-21-751 art. 4 as amended; text elided in the BO, confirm the original | 2026 | https://www.sgg.gov.ma/BulletinOfficiel.aspx |
-| Same, real net result, profit up to MAD 100,000 | 3.2 times the value | Same | 2026 | same |
-| Same, real net result, profit above MAD 100,000 | 6 times the value | Same | 2026 | same |
-| Individuals keeping accounts, simplified net result | 1 times the value | Art. 4 of the decree in BO 7376 | 2026 | same |
+| Traders, artisans keeping accounts, simplified net result | 1 times the value | Value = SMIG times normal annual non-agricultural hours. Decree 2-21-751 art. 4 as amended by 2-22-859 | 2026 | https://www.sgg.gov.ma/BulletinOfficiel.aspx |
+| Same, real net result, profit to MAD 50,000 | 2 times | Decree 2-22-859, for tax returns filed from 1 January 2023. Replaces the 3.2 and 6 scale of 2-22-338 | 2026 | same |
+| Same, profit 50,001 to 100,000 | 3 times | Same. The BO text reads "ne dépassent pas 50.000" here, a misprint: decree 2-22-858 has "supérieurs à" | 2026 | same |
+| Same, profit 100,001 to 150,000 | 4 times | Same | 2026 | same |
+| Same, profit 150,001 to 200,000 | 5 times | Same | 2026 | same |
+| Same, profit above 200,000 | 6 times | Same | 2026 | same |
+| Individuals keeping accounts, simplified net result | 1 times the value | Decree 2-22-858 art. 4 | 2026 | same |
 | Same, real net result, profit to MAD 50,000 | 2 times | Same | 2026 | same |
 | Same, profit 50,001 to 100,000 | 3 times | Same | 2026 | same |
 | Same, profit 100,001 to 150,000 | 4 times | Same | 2026 | same |
@@ -65,7 +69,7 @@ The old table figures for auto-entrepreneurs (base 50% of services turnover, 20%
 
 **TNS.** Contribution = flat income from the category decree times the AMO rate, plus the same base times the pension rate. Contributions rest on flat income, not on real profit (art. 5 of the decrees). "No income" does not mean no contribution.
 
-For traders, artisans and individuals keeping accounts on the real net result, the base is first set on the provisional multiple (3.2, or 2) from the month after accounts begin until the end of the month the first tax return is due. After that, if there is no update, it is 6 times, then updated from the tax return for the year. If the return shows a lower band, CNSS refunds the difference on its own initiative and informs the person.
+For traders, artisans and individuals keeping accounts on the real net result, the base is first set on 2 times from the month after accounts begin until the end of the month the first tax return is due. After that, if there is no update, it is 6 times, then updated from the tax return for the year. If the return shows a lower band, CNSS refunds the difference on its own initiative and informs the person.
 
 AMO and pension are separate schemes with separate decrees. Confirm the category is in both.
 
@@ -160,7 +164,7 @@ Escalate to a Moroccan expert-comptable: unclear roll-out or start date, opting 
 
 | Source | URL | Read on |
 |---|---|---|
-| Bulletin officiel 7376, 6 Feb 2025 (French translation), decrees 2-22-208, 2-22-337, 2-22-338, 2-22-858, 2-22-859 read in part; found from the listing page, PDF held locally | https://www.sgg.gov.ma/BulletinOfficiel.aspx | 2026-11-01 |
+| Bulletin officiel 7376, 6 Feb 2025 (French translation), decrees 2-22-208, 2-22-337, 2-22-338, 2-22-858, 2-22-859 read (some amended text elided in the BO, so the original 2-21-751 was not seen); found from the listing page, PDF held locally | https://www.sgg.gov.ma/BulletinOfficiel.aspx | 2026-11-01 |
 | CLEISS, Les cotisations au Maroc, table at 1 January 2024 (French public body, not a Moroccan source) | https://www.cleiss.fr/docs/cotisations/maroc.html | 2026-11-01 |
 | cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
 

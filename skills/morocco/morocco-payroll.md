@@ -57,6 +57,7 @@ Payments to people outside the permanent staff are not on this payroll route: se
 | Intern allowance | Exempt to MAD 6,000 a month, 12 months | Art. 57-16. ANAPEC registration; one use per intern, remaining months carry to a new employer; employer commits to hire at least 60%. Above the cap the exemption is lost in full | 2026 | same |
 | Intern hired on CDI | Gross salary to MAD 10,000 a month exempt, 24 months | Art. 57-16, same conditions | 2026 | same |
 | New company, association or cooperative | Gross salary to MAD 10,000 a month exempt, 24 months from hire | Art. 57-20. Created 1 Jan 2015 to 31 Dec 2026; up to 10 employees; CDI; hired in the first two years of operations | 2026 | same |
+| First job, CDI | Whole salary exempt, first 36 months, no cap | Art. 247-XXXIII. CDI signed 1 Jan 2021 to 31 Dec 2026; employee's first hire; age 35 or under at the first contract. Goes on the art. 79-V list; art. 200-III applies if the conditions fail | 2026 | same |
 | Doctoral student under a research contract | Exempt to MAD 6,000 a month, 36 months | Art. 57-21. One use | 2026 | same |
 | Stock option top-up | Exempt to 10% of share value at grant | Art. 57-14. Registered shares, three-year hold from exercise | 2026 | same |
 | Company savings plan top-up | Exempt to 10% of annual taxable salary | Art. 57-19 and 68-VIII conditions | 2026 | same |
@@ -167,7 +168,7 @@ expected:
 1. Is the worker subordinated, or truly independent? Permanent staff or not?
 2. Gross pay, split into salary, allowances, benefits, bonus.
 3. Dependants, and any change this month.
-4. Job category for art. 59-I-B or C, or a relief: intern, CDI after internship, new-company hire, doctoral student.
+4. Job category for art. 59-I-B or C, or a relief: intern, CDI after internship, new-company hire, first job at 35 or under, doctoral student.
 5. Employer's creation and start date, and head count under any relief.
 6. Any supplementary pension, group insurance, social-housing loan.
 
@@ -179,7 +180,7 @@ Do not file or pay for the user. Produce computations and draft payslips only.
 
 | Source | URL | Read on |
 |---|---|---|
-| Code Général des Impôts 2026, DGI, arts 56 to 60, 73 to 75, 79, 80, 155, 156, 174, 200, 208, 247 read by section | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| Code Général des Impôts 2026, DGI, arts 56 to 60, 73 to 75, 79, 80, 155, 156, 174, 200, 208, 247 (including XXXII, XXXIII, XXXXIII) read by section | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 | CLEISS, Les cotisations au Maroc, table at 1 January 2024 (French public body, not a Moroccan source) | https://www.cleiss.fr/docs/cotisations/maroc.html | 2026-11-01 |
 | cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
 
