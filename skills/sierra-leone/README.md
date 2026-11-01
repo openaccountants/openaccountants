@@ -22,7 +22,7 @@ partial:
 
 # Sierra Leone: tax pack
 
-Six source drafts now: income/PAYE, transfer pricing, NASSIT/payroll, corporate income tax, cross-border residence/foreign income and GST. Two other legacy 2025 Guides remain pending refresh. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
+Eight source drafts now: the six independently source-reviewed tax workpapers, plus formation and tax intake/overview rewrites awaiting independent review. No legacy 2025 Guide remains in this country pack; that year refresh does not establish operative law or complete coverage. All seven tax domains remain partial. This checkpoint is for review and backup while the rest of the country is written. Guide presence does not establish comprehensive coverage, operative 2026 approval or accountant attestation.
 
 | Tax/job | Guide | Actual state |
 |---|---|---|
@@ -32,8 +32,8 @@ Six source drafts now: income/PAYE, transfer pricing, NASSIT/payroll, corporate 
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
 | Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
 | Cross-border | [Residence and foreign income](sl-cross-border.md) | Conditional source draft; independent source corrections closed, currentness/treaty holds remain |
-| Formation | [Formation](sl-company-formation.md) | Legacy 2025; refresh in progress |
-| Tax intake | [Overview](sl-tax-overview.md) | Legacy 2025; refresh in progress |
+| Formation | [Formation](sl-company-formation.md) | Conditional 2026 rewrite; independent source review pending |
+| Tax intake | [Overview](sl-tax-overview.md) | Conditional 2026 rewrite; independent source review pending |
 
 The writer actually read the 2021 transfer-pricing regulations, the 2026 filing/penalty amendments and neighbouring conditions using cached primary PDFs; critical 2026 and conflicting 2021 text was visually checked. Sources were downloaded once for offline work. The acquisition cache includes other tax statutes and Finance Acts; downloaded material is not automatically recorded as read or verified.
 
@@ -41,7 +41,7 @@ The TP draft separates contemporaneous preparation, annual declarations, 45-day 
 
 The initial69-topic, six-file snapshot is preserved in [the old-topic map](../../evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md), backed by immutable predecessor hashes. The subsequent payroll delta maps all ten old payroll topics to exact new sections or explicit holds in [its preservation record](../../evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md). No predecessor topic is silently removed.
 
-Remaining country work includes the other two current-year refreshes and full current cross-border/withholding implementation, full company-law reading, the full income/GST amendment reconciliation, genuine current filing instructions and independent source review. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
+Remaining country work includes independent review of formation/overview, full current cross-border/withholding implementation, full operative company-law reconciliation, the full income/GST amendment reconciliation and genuine current filing instructions. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
 
 Tracked in [Sierra Leone issue484](https://github.com/openaccountants/openaccountants/issues/484), which remains open.
 
@@ -58,3 +58,5 @@ A subsequent actual2018Act read identified the all-benefits market-value amendme
 The [I29 delta acceptance](../../evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/review.md) verifies the added2018source interaction, preserves the prior28rules and bothcases, and leaves all currentness/filing holds open.
 
 The GST rewrite records [41 grouped rules](../../evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md), maps [all 12 old topics](../../evidence/ledgers/sierra-leone-gst-20261101/old-topics.md) and includes two executable cases. It distinguishes the return deadline from the payment deadline. Schedule classification, penalty priority, full amendment continuity and current forms remain explicit holds. Independent GST source review checked all 41 records, 12 old topics and both computations; its two source-link/page-locator findings closed against [exact repaired hashes](../../evidence/ledgers/sierra-leone-gst-review-20261101/CLOSURE.md). Earlier five Guide review receipts are preserved.
+
+Formation and overview now have [source ledgers and a complete predecessor map](../../evidence/ledgers/sierra-leone-formation-overview-20261101/writer-record.md). The actual NIB 2026 company-law download is a bill with unproved Gazette commencement, despite the homepage calling it an Act. Existing six Guide review receipts and accepted Guide bytes remain intact. These two additions await fresh independent review.

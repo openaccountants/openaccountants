@@ -1,0 +1,99 @@
+{
+  "sources": [
+    {
+      "id": "C09",
+      "file": "formation-companies2009.pdf",
+      "url": "https://bsl.gov.sl/Companies_Act_2009_05_pdf_67839.pdf",
+      "sha256": "1263967794b88fb2e725e734336d3e88747dd2ff72f3970518dee679e853e7d5",
+      "bytes": 833714,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical15-18 ss15-25; physical21-23 ss31-34; physical41-42 s85; physical79-80 s185; physical89 s211; physical104-105 ss249-251; physical115-116 ss281-282; physical118-119 s288; physical123-124 s296; physical125 s302; physical128 s308; physical132-134 ss317-321; physical185-186 ss484-486. Selected sections and neighbours only, not the complete251-page Act."
+    },
+    {
+      "id": "C14",
+      "file": "formation-companies2014-wipo.pdf",
+      "url": "https://www.wipo.int/wipolex/en/legislation/details/20537",
+      "sha256": "8633f823dbaef9416ae17bf1bbdd691d08a2de31ee3cd2662aac4306a33b91f8",
+      "bytes": 129305,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical1-5 cover/Gazette identity and ss2,4-11,17,21; physical9 s43; physical11 ss54-56; physical12 ss60-62 and physical1 s63. WIPO legal-details page opened; fresh publicly supplied iframe PDF fetched with valid TLS and cached. Same government Gazette also cached from public mirror but WIPO copy is citation payload."
+    },
+    {
+      "id": "NIB",
+      "file": "formation-nib2022.pdf",
+      "url": "https://nib.gov.sl/wp-content/uploads/2025/05/THE-NATIONAL-INVESTMENT-BOARD-ACT-2022.pdf",
+      "sha256": "62549e8aeeb6bd257a2d056a334eeaed4cae2a4c4e6baf7887c7200a541d5377",
+      "bytes": 571602,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical2-5 signature/Gazette identity and ss48-53, physical17 s23 and neighbouring directorates. Not entire18-page Act."
+    },
+    {
+      "id": "BILL",
+      "file": "formation-nib-bill2026.pdf",
+      "url": "https://nib.gov.sl/wp-content/uploads/2026/03/COMPANIES-002.pdf",
+      "sha256": "9101c11ec60d1163eb508d5112f8e9b17a9c2b4b78772f0ac78d5f45dc666df1",
+      "bytes": 4119215,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical1 cover visually inspected: A BILL and blank commencement. Physical699-702 repeal/savings and actual body s749 commencement read. Not full896-page proposal; contents/body numbering disagree, so body locators used."
+    },
+    {
+      "id": "HOME",
+      "file": "formation-nib-home.html",
+      "url": "https://nib.gov.sl/",
+      "sha256": "04584a231824e182f4988289faa1a5c090469e4a3d8c2ea3f0222029957baaa8",
+      "bytes": 153503,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Current homepage company-law2026 promotion section read; not accepted as evidence of enactment."
+    },
+    {
+      "id": "REG",
+      "file": "formation-nib-registration.html",
+      "url": "https://nib.gov.sl/business-registration-2/",
+      "sha256": "fd075157cb1f98c05215bd0bfa5db7dad0fbe2be202d8994d0974cfa3da0d1f5",
+      "bytes": 104223,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Business types, governance, post-registration and portal paragraphs read. Portal link returns same information page; authenticated filing, fees and processing not tested."
+    },
+    {
+      "id": "RAA",
+      "file": "Revenue_Administration_Act_2017_a505c603d7.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Revenue_Administration_Act_2017_a505c603d7.pdf",
+      "sha256": "888c20502c15cda828b869ecbaf0a461487f2a3ffccf95f6a4ea3c78377f0d04",
+      "bytes": 305532,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical15-16 containing actual ss21-24, TIN application/issue/use and changes. Selected baseline only; no claim full amendment chain."
+    },
+    {
+      "id": "NRA",
+      "file": "THE_NATIONAL_REVENUE_AUTHORITY_ACT_2022_73b1f19cd7.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/THE_NATIONAL_REVENUE_AUTHORITY_ACT_2022_73b1f19cd7.pdf",
+      "sha256": "8e127fbf56f6ceed3b5db7379aa954873e3aaf579ce9fb4fd96a3b281b23e8b8",
+      "bytes": 448774,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Physical4 ss2 and Schedule; physical6 s42 and neighbouring savings; physical11-12 s15 functions. Selected provisions only."
+    },
+    {
+      "id": "ITA",
+      "file": "Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+      "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+      "bytes": 900613,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cover unofficial-through2017 disclaimer; actual ss10-16,45-47, with surrounding definitions/scope. Not a current consolidated chain."
+    },
+    {
+      "id": "BSL",
+      "file": "bsl-redenomination-notice2021.pdf",
+      "url": "https://bsl.gov.sl/Public%20Notice%20on%20Redenomination.pdf",
+      "sha256": "9e09d12d56104b5981ef81ed8e7477bad14808cc2f861c1c79ac731b95255880",
+      "bytes": 130071,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Entire one-page11August2021 notice, denomination table and prospective wording read; not proof of2021 introduction date."
+    }
+  ],
+  "transport_failures": [
+    "Parliament2014 native curl: TLS issuer validation failure; ordinary browser ERR_CERT_AUTHORITY_INVALID; web open502. No bypass.",
+    "Initial WIPO unsigned bare PDF redirected to HTML rather than PDF; fresh publicly supplied iframe link from legal-details page yielded actual PDF with valid TLS. The failed payload is not used as law."
+  ],
+  "no_claim": "Downloaded does not mean read. No full operative2026 legal chain or current filing acceptance claimed."
+}

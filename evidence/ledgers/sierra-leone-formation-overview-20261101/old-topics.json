@@ -1,0 +1,234 @@
+[
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "# Sierra Leone Company Formation & Entity Choice",
+    "destination": "New H1 and canonical nine sections; original jurisdiction/job scope retained",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "## Entity types and incorporation",
+    "destination": "New H1 and canonical nine sections; original jurisdiction/job scope retained",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Common entity types** — Private company limited by shares, public limited company, company limited by guarantee, unlimited company, sole proprietorship and partnership (business name)  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "Who this applies to; Sources: business-name/sole-proprietor/partnership law held",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Most common vehicle** — Private company limited by shares (Ltd)  _(Companies Act 2009)_",
+    "destination": "Sources: unsupported popularity claim explicitly held",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Minimum share capital** — No mandatory statutory minimum for a private company; a nominal share capital is typically used on registration ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "Rates: actual2014 amendment, no current monetary minimum invented",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Minimum directors** — At least two directors  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "Rates: public-only amendment and retained211(3) interaction hold",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Company secretary** — Every company must appoint a company secretary  _(Companies Act 2009 (https://www.sierra-leone.org/Laws/2009-05.pdf))_",
+    "destination": "The base step5",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Registration authority** — Office of the Administrator and Registrar-General (OARG), Freetown  _(Companies Act 2009)_",
+    "destination": "The base step2: NIB correction",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Incorporation documents** — Memorandum and Articles of Association plus prescribed registration forms filed with the OARG  _(Companies Act 2009)_",
+    "destination": "The base steps3-4",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Tax registration** — Obtain a Taxpayer Identification Number (TIN) from the NRA after incorporation  _(Income Tax Act 2000)_",
+    "destination": "The base step7: actualTINtrigger",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Social-security registration** — Register as an employer with NASSIT before paying staff  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "The base step7 routes to preservedpayroll",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Incorporation timeline** — Typically around 1–2 weeks once documents and name reservation are complete ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "Deadlines; Sources: no verifiedservicepromise",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Annual return** — File an annual return with the OARG and maintain statutory registers  _(Companies Act 2009)_",
+    "destination": "Deadlines: class-specificannualreturn",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Financial statements** — Prepare annual financial statements; audit required depending on size/type of company ((approx — confirm))  _(Companies Act 2009)_",
+    "destination": "Deadlines: preparation,audit,smalldefinition and currentcapsheld",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "- **Local business licence** — Obtain an annual business/trade licence from the relevant local council ((approx — confirm))  _(Local Government Act 2004)_",
+    "destination": "Sources: localcouncillicenceheld",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-company-formation",
+    "old_topic": "Companies in Sierra Leone are formed under the Companies Act 2009 and registered with the Office of the Administrator and Registrar-General (OARG) in Freetown. The private company limited by shares is the most common vehicle for business.",
+    "destination": "Who this applies to; The base; Sources: old introduction corrected and unsupported/currentness assertions held",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "# Sierra Leone Tax Overview",
+    "destination": "New H1 and canonical nine sections; original jurisdiction/job scope retained",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "## The Sierra Leone tax system at a glance",
+    "destination": "New H1 and canonical nine sections; original jurisdiction/job scope retained",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "Sierra Leone operates a residence-based direct tax system administered by the National Revenue Authority (NRA) under the Income Tax Act 2000 (as amended). The headline taxes are personal income tax (PAYE), 30% corporate income tax, a 15% Goods and Services Tax (GST), and NASSIT social-security contributions.",
+    "destination": "Who this applies to; The base; Sources: old introduction corrected and unsupported/currentness assertions held",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Tax authority** — National Revenue Authority (NRA)  _([National Revenue Authority Act 2002](https://www.nra.gov.sl/))_",
+    "destination": "The base: NRA2022continuation/repeal",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Currency** — New Leone (SLE / NLe); redenominated from old Leone in 2021 by removing three zeros ((approx — confirm))  _(Bank of Sierra Leone redenomination)_",
+    "destination": "The base: prospective2021notice and unprovedintroductiondate",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Tax year** — Calendar year, 1 January to 31 December  _(Income Tax Act 2000)_",
+    "destination": "The base: ordinary/substituted/transitionalyear",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Basis of taxation** — Residence-based; residents taxed on worldwide income, non-residents on Sierra Leone-source income  _(Income Tax Act 2000)_",
+    "destination": "Who this applies to: residenceclassification; cross-borderfigurehome",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Top personal income tax rate** — 30 percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "Rates: incomefigurehome; no duplicatedrate",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Standard corporate income tax rate** — 30 percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/corporation-tax))_",
+    "destination": "Rates: companyfigurehome; specialregimesunresolved",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Consumption tax — Goods and Services Tax (GST)** — 15 percent (standard rate)  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_",
+    "destination": "Rates: GSTfigurehome",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Social security — NASSIT contributions** — 15 percent of basic salary (10% employer, 5% employee)  _(National Social Security and Insurance Trust Act 2001)_",
+    "destination": "Rates: payrollfigurehome",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Annual corporate return deadline** — Within 120 days after the end of the accounting year (by 30 April for a calendar-year taxpayer) ((approx — confirm))  _(Income Tax Act 2000)_",
+    "destination": "Deadlines: companyfigurehome; Sourcesapproximateclaimreplaced",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  },
+  {
+    "guide": "sl-tax-overview",
+    "old_topic": "- **Monthly PAYE/NASSIT remittance** — By the 15th day of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "destination": "Deadlines: separateincomepayrollfigurehomes",
+    "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "old_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+  }
+]
