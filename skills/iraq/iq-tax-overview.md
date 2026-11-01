@@ -1,9 +1,10 @@
 ---
 name: iq-tax-overview
-description: "Source-cited draft: tax overview for Iraq (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+version: 0.2
+description: "Overview of the federal Iraq tax system for tax year 2026: authority, income, company, sales, property and payroll taxes, and where each skill sits. Written for tax year 2026 from the Iraqi law and General Commission for Taxes pages. Use for questions about federal Iraq; the Kurdistan Region runs its own administration. Trigger phrases: Iraq tax, Iraqi dinar tax, General Commission for Taxes, GCT Baghdad."
 jurisdiction: IQ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -12,20 +13,33 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Iraq Tax Overview
 
+Tax year: 2026.
+
 ## Iraq tax system at a glance
 
-- **Territorial income tax system administered by GCT; KRI separate administration** — Iraq taxes income on a territorial basis under the Income Tax Law, administered by the General Commission for Taxes. The economy is oil-dependent and the Kurdistan Region (KRI) runs a separate tax administration with its own rates and procedures.
-- **Tax (assessment) year** — Calendar year (1 January to 31 December)  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq))_
-- **National currency** — Iraqi dinar (IQD)  _(Central Bank of Iraq (https://taxsummaries.pwc.com/iraq))_
-- **Federal tax authority** — General Commission for Taxes (GCT)  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq))_
-- **Kurdistan Region tax administration** — The Kurdistan Region of Iraq (KRI) operates a separate tax authority with distinct rates and procedures  _(Kurdistan Region Income Tax administration (https://taxsummaries.pwc.com/iraq/corporate/withholding-taxes))_
-- **Basis of taxation** — Territorial — all income derived from Iraq is taxable regardless of the recipient's residence  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/individual/taxes-on-personal-income))_
-- **Top personal income tax rate** — 15% percent  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/individual/taxes-on-personal-income))_
-- **Standard corporate income tax rate** — 15% percent (flat rate at all income levels (no progressive scale))  _(Income Tax Law No. 113 of 1982 — https://taxsummaries.pwc.com/iraq/corporate/taxes-on-corporate-income)_
-- **Oil & gas sector corporate tax rate** — 35% percent (income from contracts with foreign oil companies, branches, offices and subcontractors in oil/gas production and related industries)  _(Income Tax Law No. 113 of 1982 — https://taxsummaries.pwc.com/iraq/corporate/taxes-on-corporate-income)_
-- **Value added tax (VAT)** — Iraq has no broad-based VAT; a selective sales tax applies to specified goods and services  _(Sales Tax regime (introduced 2015) (https://taxsummaries.pwc.com/iraq/individual/other-taxes))_
-- **Corporate return filing deadline** — 31 May of the assessment year  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/corporate/tax-administration))_
-- **Individual return filing deadline** — 31 March of the assessment year  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq))_
+Federal tax is run by the General Commission for Taxes (GCT). The Kurdistan Region has a separate administration. Currency is the Iraqi dinar (IQD); payments to GCT are in dinars and correspondence in Arabic.
+
+- Income tax: Law 113 of 1982, see [income tax](iq-income-tax.md).
+- Company tax: see [corporate income tax](iq-corporate-income-tax.md).
+- No VAT: see [VAT or GST](iq-vat-gst.md).
+- Payroll: see [payroll](iq-payroll-social.md).
+- Rented property: 10% of annual rent after a 10% maintenance deduction, 9% in effect, payable in one or two instalments (https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/).
+- Property transfers: Law 48 of 2015 adds a progressive tax on value, with the first IQD 50 million exempt.
+- Oil contractors: Law 19 of 2010.
+- Returns: individuals before 1 June, companies by 31 May.
+
+## Sources
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Law 113 of 1982, GCT consolidated text: arts. 11, 12, 13, 15, 17, 19, 27, 45, 46, penalties | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
+| GCT income tax guide | https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%AF%D8%AE%D9%84/ | 2026-11-01 |
+| GCT guide to the company income tax return (scan, read in full by OCR) | https://tax.mof.gov.iq/uploads/Najwan/%D8%AF%D9%84%D9%8A%D9%84%20%D9%85%D9%84%D8%A6%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA.pdf | 2026-11-01 |
+| GCT real estate tax guide | https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/ | 2026-11-01 |
+
+Not yet confirmed: Territorial wording in the old skill conflicts with art. 13 and the GCT guide, which tax resident Iraqis on foreign income; the new text follows the law. Law 48 of 2015 band percentages were not read.
 
 <!-- openaccountants-cta-block -->
 
