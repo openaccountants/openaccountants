@@ -64,9 +64,9 @@ When an input is missing or ambiguous, apply the **conservative** assumption (th
 | --- | --- | --- |
 | Whether employer is enrolled in medical scheme | If headcount ≥ 7 → assume **enrolled** (7.5%/7.5%); FLAG | Mandatory once registration criteria met |
 | Headcount unknown | Compute **without** medical scheme but FLAG; never silently apply 15% | Avoids fabricating a 15% deduction |
-| Transport allowance split | If basic vs gross not given, treat **basic = gross** for medical (higher base) and include transport in pension base | Pension base now includes transport (2026) |
+| Transport allowance split | If basic vs gross not given, treat **basic = gross** for medical (higher base) and include transport in the pension and maternity bases | RRA states both on gross |
 | Pension rate | Use **12% (6%/6%)** for 2026 | Presidential Order 086/01 |
-| Casual labour (< 30 days) | Apply **15% flat**; do NOT assume a tax-free slice | Tax-free portion unconfirmed |
+| Casual labour (30 days or fewer in 12 months) | Apply **15%**, first FRW 60,000 a month at 0% | Art 56 |
 | Salary ceiling on RSSB | Apply percentages on **full gross/basic** (no cap) | No ceiling found; flag |
 | Tax year | Default to **2026** rates | Skill tax_year is 2026 |
 | Currency | Rwandan Franc (RWF) | Local currency |
@@ -78,7 +78,7 @@ When an input is missing or ambiguous, apply the **conservative** assumption (th
 
 1. Gross monthly salary in RWF, and the **basic-salary** component (medical scheme uses basic).
 2. Transport-allowance amount (see Not yet confirmed on its base).
-3. Pay frequency and whether the worker is a **casual labourer** (< 30 days engagement).
+3. Pay frequency and whether the worker is a **casual labourer** (30 days or fewer in 12 months, art 2).
 4. Number of employees on the payroll (drives medical-scheme enrolment).
 5. Tax/fiscal year (2026 vs the 2027 pension step).
 6. Whether the employer is a public institution or private (medical-scheme mandate).
@@ -94,7 +94,6 @@ When an input is missing or ambiguous, apply the **conservative** assumption (th
 | Medical scheme needed but basic-salary component not given | REFUSE the medical line : request basic salary; compute the rest |
 | Request to omit PAYE or RSSB contributions to "save money" | REFUSE : statutory; escalate to accountant |
 | Request to skip pension at the old 6% rate for a 2026 period | REFUSE : 2026 rate is 12% (6%/6%) |
-| Request to treat casual labour tax-free slice as a fixed figure | REFUSE the exact figure : flag the research gap; apply 15% flat |
 | Self-employed / non-employment income mixed in | REFUSE payroll path : route to a Rwanda income-tax skill (annual return) |
 | Definitive "this is your exact tax" assertion requested | REFUSE : outputs are estimates pending accountant sign-off |
 
@@ -109,7 +108,7 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 | Pattern (case-insensitive) | Classification |
 | --- | --- |
 | `SALARY`, `UMUSHAHARA`, `SALAIRE`, `PAYROLL`, `NET PAY` | Net salary payment |
-| `TRANSF.* [employer]`, `ABONO`, `WAGE` | Net salary payment |
+| `TRANSF.* [employer]`, `WAGE` | Net salary payment |
 | `RSSB REFUND`, `REMBOURSEMENT RSSB` | RSSB refund/adjustment : not income |
 | `RRA REFUND`, `PAYE REFUND` | PAYE refund/adjustment : not income |
 
@@ -119,7 +118,7 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 
 | Pattern | Classification |
 | --- | --- |
-| `RRA`, `PAYE`, `IMPOSTO`, `WITHHOLDING TAX` | PAYE withholding remitted to RRA (liability settlement) |
+| `RRA`, `PAYE`, `WITHHOLDING TAX` | PAYE withholding remitted to RRA (liability settlement) |
 | `RSSB`, `PENSION`, `OCCUPATIONAL`, `MATERNITY` | RSSB contribution (pension / occupational / maternity) |
 | `RAMA`, `MEDICAL INSURANCE`, `ASSURANCE MALADIE` | RSSB medical-insurance contribution |
 | `CBHI`, `MUTUELLE`, `CBHIS` | CBHI (employee-only) collected/remitted |
@@ -131,11 +130,9 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 
 | Question | Why it needs a reviewer |
 | --- | --- |
-| Casual-labour tax-free portion (30,000 vs 60,000) | Secondary sources conflict; only the 15% flat rate is confirmed |
-| Penalty percentages (20% / 40% / 60%) | Sourced from an advisory firm summarising Law 020/2023, not RRA primary text |
 | Medical-scheme remittance date (10th vs 15th) | One RRA medical page references the 10th; general RSSB deadline is the 15th |
 | Absence of an RSSB salary ceiling/cap | No cap found in sources; confirm explicitly with RSSB |
-| Exact maternity-base treatment of benefits in kind | "Excl. transport/termination" confirmed; in-kind edge cases not |
+| Exact maternity-base treatment of transport and benefits in kind | RRA says gross; the old file excluded transport and termination pay on secondary sources |
 | Whether a specific private employer must enrol in medical scheme | Depends on ≥ 7 employees + registration criteria |
 
 ### Carried: Excel Working Paper Template
@@ -181,9 +178,9 @@ Suggested layout (one row per employee per month):
 | Maternity / Maternité | Maternity-leave benefits scheme |
 | RAMA / Medical insurance / Assurance maladie | RSSB medical-insurance scheme (basic salary) |
 | CBHI / CBHIS / Mutuelle de Santé | Community-Based Health Insurance (employee-only, on net) |
-| Casual labourer | Worker engaged < 30 days/year (flat 15% PAYE) |
+| Casual labourer | Unskilled worker engaged 30 days or fewer in 12 months (15%, first FRW 60,000 a month at 0%) |
 | Net pay / Net à payer | Take-home pay after deductions |
-| Transport allowance / Indemnité de transport | Allowance now in pension base (2026) |
+| Transport allowance / Indemnité de transport | Part of gross for pension and maternity on RRA's wording |
 
 ### Carried: Onboarding Fallback
 
@@ -192,7 +189,7 @@ If the engagement lacks key data:
 1. **No prior payroll register available** → request the last 3 months of payroll and RRA/RSSB receipts to back-solve the rates actually applied.
 2. **Unknown headcount** → default medical scheme OFF, FLAG; confirm before first remittance.
 3. **Unknown basic-vs-gross split** → request the contract; medical needs basic salary specifically.
-4. **Unknown transport allowance** → confirm; it enters the pension base (2026) and is excluded from the maternity base.
+4. **Unknown transport allowance** → confirm; RRA states pension and maternity on gross, so include it.
 5. **Year ambiguity** → default 2026 table/rates; switch only for periods ≥ 1 Jan of a later year (pension steps up again in 2027).
 
 
@@ -298,7 +295,7 @@ expected:
 | RRA, declaration and payment of RSSB contributions page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-01 |
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
-Not yet confirmed: occupational hazards rate 2%; the split of 14% and later pension rates; whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; the 30-day limit for casual labour; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023.
+Not yet confirmed: occupational hazards rate 2%; the split of 14% and later pension rates; whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023.
 
 <!-- openaccountants-cta-block -->
 

@@ -46,7 +46,7 @@ Pension and maternity are on gross; medical on basic; CBHI on net. Employee cont
 
 **Minimum viable**: gross monthly salary and whether a transport allowance is included. Without the gross figure, STOP.
 
-**Recommended**: the basic-salary component (needed if medical/RAMA applies), the transport-allowance amount (excluded from the maternity base), residency status, and whether the worker is a regular employee or casual labour.
+**Recommended**: the basic-salary component (needed if medical/RAMA applies), the transport-allowance amount, residency status, and whether the worker is a regular employee or casual labour.
 
 **Ideal**: the employer's RSSB registration status and which schemes apply (medical/RAMA optional), the E-Tax/MyRRA monthly declaration, and bank statements showing RRA/RSSB remittances.
 
@@ -54,8 +54,8 @@ Pension and maternity are on gross; medical on basic; CBHI on net. Employee cont
 
 - **R-RW-1: Medical (RAMA) contribution without basic salary** : Trigger: employer is RAMA-enrolled but only the gross figure is supplied. Message: "The medical scheme contribution (7.5% employee + 7.5% employer) is computed on basic salary, not gross. Cannot compute without the basic-salary component."
 - **R-RW-2: KIFC foreign-income exemption** : Trigger: client claims the 5-year KIFC exemption on foreign-sourced income. Message: "The KIFC PIT exemption depends on holding a qualifying KIFC licence and on the source/timing of the income. This is case-specific and outside the scope of this skill. Escalate to a Rwandan licensed accountant / RRA-registered tax agent."
-- **R-RW-3: Arrears, penalties and interest** : Trigger: client has unpaid PAYE/RSSB and asks for the total owed. Message: "Late-payment interest (0.5%--1.5%/month, capped at 100% of annual tax) and administrative fines (5%--30%, plus a possible 60% non-declaration penalty) under Tax Procedures Law No. 020/2023 depend on the exact delay and turnover band. Do not estimate. Request an RRA statement and escalate to a reviewer."
-- **R-RW-4: Pension phased increases beyond 2026** : Trigger: client asks for pension contributions for 2027 onward. Message: "The scheduled pension step-ups (7% each from 2027 up to 10% each by 2030) are reported by PwC but I have not confirmed the underlying RSSB ministerial order text. Treat the 2025 6%+6% rate as firm; flag future years for reviewer confirmation. [RESEARCH GAP: reviewer to confirm 2027--2030 steps against the RSSB order.]"
+- **R-RW-3: Arrears, penalties and interest** : Trigger: client has unpaid PAYE/RSSB and asks for the total owed. Message: "Late-payment interest (0.5%--1.5%/month, capped at 100% of the tax) and administrative fines (5%, 10% or 30% if declared on time; 20%, 40% or 60% if not) under Tax Procedures Law No. 020/2023 depend on the exact delay and turnover band. Do not estimate. Request an RRA statement and escalate to a reviewer."
+- **R-RW-4: Pension phased increases beyond 2026** : Trigger: client asks for pension contributions for 2027 onward. Message: "Presidential Order 086/01 sets the total: 14% from 2027, 16% 2028, 18% 2029, 20% 2030. The split between employer and employee is not confirmed. Flag the split for reviewer confirmation."
 - **R-RW-5: Minimum wage** : Trigger: client asks for the national minimum wage. Message: "Rwanda has no enforceable national minimum wage; the 1974 statutory rate is obsolete and effective wages are set by sector/collective agreement. The widely cited ~RWF 60,000/month figure is unconfirmed press/HR-guide speculation. [RESEARCH GAP: no gazetted statutory rate; reviewer to confirm.]"
 
 ### Carried: Payment pattern library
@@ -113,7 +113,7 @@ Flag these for reviewer confirmation.
 
 #### T2-1: Transport allowance treatment
 
-- **Transport allowance** : Trigger: the gross/transport split is unclear or transport is paid as a separate line. Issue: transport is included in the pension base (from 2025) but excluded from the maternity base. Mis-classifying it shifts both contributions and the PAYE base. Action: confirm the exact transport amount before computing.
+- **Transport allowance** : Trigger: the gross/transport split is unclear or transport is paid as a separate line. Issue: RRA states pension and maternity on gross; the old file excluded transport from maternity on secondary sources. Include it until RSSB confirms otherwise. Action: confirm the exact transport amount before computing.
 
 #### T2-2: Medical (RAMA) enrolment
 
@@ -121,7 +121,7 @@ Flag these for reviewer confirmation.
 
 #### T2-3: Casual labour vs regular employment
 
-- **Casual vs regular** : Trigger: short-term or irregular engagement. Issue: casual labour is taxed at flat 15%; RSSB applicability is case-specific. Action: confirm engagement nature; flag RSSB registration question.
+- **Casual vs regular** : Trigger: short-term or irregular engagement. Issue: casual labour is taxed at 15% with the first FRW 60,000 a month at 0%; RSSB applicability is case-specific. Action: confirm engagement nature; flag RSSB registration question.
 
 #### T2-4: Expatriate / KIFC foreign-income exemption
 
@@ -129,11 +129,11 @@ Flag these for reviewer confirmation.
 
 #### T2-5: Arrears, interest and penalties
 
-- **Arrears/penalties** : Trigger: unpaid PAYE/RSSB from prior periods. Issue: interest 0.5%--1.5%/month (capped at 100% of annual tax) plus 5%/10%/30% administrative fines and a possible 60% non-declaration penalty. Action: do not estimate; request an RRA statement; escalate.
+- **Arrears/penalties** : Trigger: unpaid PAYE/RSSB from prior periods. Issue: interest 0.5%--1.5%/month (capped at 100% of the tax) plus fines of 5%/10%/30% if declared on time or 20%/40%/60% if not. Action: do not estimate; request an RRA statement; escalate.
 
 #### T2-6: Future-year pension step-ups
 
-- **Future step-ups** : Trigger: computation requested for 2027 onward. Issue: scheduled 7%--10% step-ups are unconfirmed at primary source. Action: flag; confirm against the RSSB ministerial order before applying.
+- **Future step-ups** : Trigger: computation requested for 2027 onward. Issue: the totals are in Presidential Order 086/01; the split is unconfirmed. Action: flag the split before applying.
 
 ### Carried: Excel working paper template
 
@@ -153,7 +153,7 @@ INPUT DATA
 EMPLOYEE SOCIAL SECURITY (does not reduce PAYE)
   Pension EE        6%  x gross:               [____]
   Occ. hazards EE   0%  x gross:               0
-  Maternity EE      0.3% x (gross - transport): [____]
+  Maternity EE      0.3% x gross:               [____]
   Subtotal EE social security (pre-PAYE):      [____]
 
 PAYE
@@ -173,7 +173,7 @@ NET PAY = gross - pension EE - maternity EE - PAYE - CBHIS [- medical EE]: [____
 EMPLOYER COST ON TOP OF GROSS
   Pension ER 6% x gross:                       [____]
   Occ. hazards ER 2% x gross:                  [____]
-  Maternity ER 0.3% x (gross - transport):     [____]
+  Maternity ER 0.3% x gross:                   [____]
   Medical ER 7.5% x basic (if enrolled):       [____]
   Employer total:                              [____]
 
@@ -229,7 +229,7 @@ If the client provides only a bank statement and no payroll detail:
 1. **Scan for RRA and RSSB debits**: identify all outgoing payments matching Section 4 patterns.
 2. **Separate tax from contributions**: "RRA / E-TAX / PAYE / UMUSORO" = PAYE; "RSSB / PENSION / RAMA / CBHI / MUTUELLE" = social contributions.
 3. **Sum the monthly remittances** to estimate total payroll cost; note that a single unified debit may combine PAYE + RSSB.
-4. **Do not reverse-engineer individual salaries** from a combined debit without the declaration: the differing bases (gross / gross-excl-transport / net / basic) make this unreliable.
+4. **Do not reverse-engineer individual salaries** from a combined debit without the declaration: the differing bases (gross / net / basic) make this unreliable.
 5. **Flag for reviewer:** "Payroll figures derived from bank statement totals only. Gross/basic/transport split, residency, and RAMA enrolment have not been verified. Reviewer must confirm before relying on the monthly declaration."
 
 

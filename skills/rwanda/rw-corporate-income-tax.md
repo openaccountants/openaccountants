@@ -91,7 +91,7 @@ Failure to withhold makes the payer personally liable for the tax, fines and int
 
 ## Cross-border points
 
-Service fees, interest, royalties and dividends to non-residents take 15% unless a treaty reduces it. A place of services counts as a permanent establishment after more than 90 days in 12 months (art 5). The 2026 gazette of 01/02/2026 carries a Hong Kong double tax agreement. Reduced rates must be taken from the treaty text. Controlled transactions must be at arm's length.
+Service fees, interest, royalties and dividends to non-residents take 15% unless a treaty reduces it. A place of services counts as a permanent establishment after more than 90 days in 12 months (art 5). Reduced rates must be taken from the treaty text. Controlled transactions must be at arm's length.
 
 ## Two worked examples that recompute
 
@@ -148,7 +148,7 @@ expected:
 | RRA, Declare withholding tax page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/withholding-tax-wht/declare-withholding-tax | 2026-11-01 |
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
-Not yet confirmed: whether the Order under art 50 bis has been issued (none on the RRA laws page as read 2026-11-01), so the 1.5% digital tax is not treated as live; the list of treaties and their rates; incentive rates under the investment law (Law art 69 points to it, not read); the Handbook line that goods sold in Rwanda fall within 15% was not tested; art 60 items 3 (royalties) was missing in our text extract and rests on the old file.
+Not yet confirmed: whether the Order under art 50 bis has been issued (none on the RRA laws page as read 2026-11-01), so the 1.5% digital tax is not treated as live; the list of treaties and their rates, including the Hong Kong agreement the first draft cited, which no saved source shows; incentive rates under the investment law (Law art 69 points to it, not read); the Handbook line that goods sold in Rwanda fall within 15% was not tested; art 60 items 3 (royalties) was missing in our text extract and rests on the old file.
 
 <!-- openaccountants-cta-block -->
 

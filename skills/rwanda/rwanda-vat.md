@@ -84,7 +84,7 @@ Since Law 009/2025, fuel and road transport of goods are taxable. Fee-based fina
 | Period | Due |
 |---|---|
 | Monthly | 15 days after month end |
-| Quarterly | 15 April, 15 July, 15 October, and the fourth quarter date in https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf |
+| Quarterly | 15 April, 15 July, 15 October, 15 January (https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf). Opting monthly is written notice, irrevocable for two years. |
 
 File even with no sales or a nil result (art 28). Pay by the same date (art 29). Import VAT is due at the customs point.
 
@@ -183,7 +183,7 @@ expected:
 | Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
-Not yet confirmed: the 20,000,000 and 5,000,000 thresholds are from the RRA page; the article of the law was not found in our extract; the 4th quarter date in CG Instructions 001/2023 was cut in our extract; RRA Pay PAYE page shows March to May style quarters for PAYE, which differ from the Instructions, so confirm with RRA before relying on either; old return boxes A1-A7, B1-B9, C1-C3 could not be matched to any page read and are removed from the body; the old supplier pattern treatments of REG, WASAC and BK are working defaults; the medical scheme payment date is not a VAT point; Order 003/24 on foreign service authorisation was not read; Order 001/25 list of exempt financial services was only partly extracted.
+Not yet confirmed: three old file lines not re-read in the law, kept as prompts only: 18% at market value on stock held at cessation; a supply to a special economic zone being zero-rated with a certificate; handwritten non-EBM invoices giving no input credit; the 20,000,000 and 5,000,000 thresholds are from the RRA page; the article of the law was not found in our extract; CG Instructions 001/2023 predate Law 049/2023; RRA Pay PAYE page shows March to May style quarters for PAYE, which differ from the Instructions, so confirm with RRA before relying on either; old return boxes A1-A7, B1-B9, C1-C3 could not be matched to any page read and are removed from the body; the old supplier pattern treatments of REG, WASAC and BK are working defaults; the medical scheme payment date is not a VAT point; Order 003/24 on foreign service authorisation was not read; Order 001/25 list of exempt financial services was only partly extracted.
 
 <!-- openaccountants-cta-block -->
 

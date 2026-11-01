@@ -48,7 +48,7 @@ The first-year tables in arts 14 and 56 (0/20/30) applied only to the first year
 
 Employment income covers wages, leave and sick pay, commissions, bonuses, allowances, reimbursed private expenses, redundancy pay and pensions (art 15). Not taxed: reimbursement wholly for the employer's business, employer contributions to RSSB, RSSB pensions (art 16). Employee RSSB contributions are not on that list, so PAYE is on gross; see the payroll skill. Benefits: car 10% of employment income, housing 20%, others at market value (art 18; Handbook PAYE chapter).
 
-Real regime: income from all business activities less expenses that are wholly for the business, real, documented with invoices or receipts accepted by RRA, and of the period (arts 19, 24). Taxable income is rounded to the nearest FRW 1,000 (art 14). Not deductible: fines, income tax, entertainment except general sporting activity for staff, donations beyond 1% of turnover to non-profits, 20% of overheads with inseparable private use, and more (art 25). Losses carry forward 5 tax periods; RRA can authorise more (art 31; Order 003, art 33). Foreign losses do not offset. Depreciation: buildings and heavy machinery 5%, purchased intangibles 10%, computers 50% (pool), other assets 25% (pool) (art 27).
+Real regime: income from all business activities less expenses that are wholly for the business, real, documented with invoices or receipts accepted by RRA, and of the period (arts 19, 24). Taxable income is rounded to the nearest FRW 1,000 (art 14). Not deductible: fines, income tax, entertainment except general sporting activity for staff, donations beyond 1% of turnover to non-profits, 20% of overheads with inseparable private use, and more (art 25). Losses carry forward 5 tax periods; RRA can authorise more (art 31; Order 003, art 33). Foreign losses do not offset. Depreciation: buildings and heavy machinery 5%, purchased intangibles 10%, information and communication systems with a life of 10 years or more 10%, computers and shorter-life systems 50% (pool), other assets 25% (pool) (art 27).
 
 Micro and small regimes tax turnover or a flat amount, with no expenses. A small business may opt for the real regime; the choice binds for 3 years, and simplified records (daily sales, daily purchases, money transactions) suffice (art 14; Order 003, art 32). Liberal professions cannot use the flat or lump-sum regimes (art 14). Road transport has its own flat table in the annex to the law.
 
@@ -162,8 +162,8 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| RSSB PENSION, PENSIYO | Statutory contribution | Employee 6% / Employer 6% (see §3.x and Section 1) |
-| RSSB OCCUPATIONAL, OCCUPATIONAL HAZARD | Statutory contribution | Employer 2% only |
+| RSSB PENSION, PENSIYO | Statutory contribution | Employee 6% / Employer 6% of gross |
+| RSSB OCCUPATIONAL, OCCUPATIONAL HAZARD | Statutory contribution | Employer 2% only (rate unverified) |
 | RSSB MATERNITY | Statutory contribution | Employee 0.3% / Employer 0.3% |
 | RSSB MEDICAL, RAMA | Statutory contribution | Employer 7.5% / Employee 7.5% of basic salary (public sector / opt-in) |
 | CBHI, MUTUELLE, MUTUELLE DE SANTÉ | Statutory contribution | Employee 0.5% of net salary |
@@ -250,8 +250,8 @@ C. REAL REGIME : NET PROFIT (if applicable)
   C4. PIT (apply annual bracket table)            ___________
 
 D. RSSB CONTRIBUTIONS (employee side)
-  D1. Pension 6% of (basic+housing+transport)     ___________
-  D2. Maternity 0.3% (excl. transport)            ___________
+  D1. Pension 6% of gross                         ___________
+  D2. Maternity 0.3% of gross                     ___________
   D3. Medical 7.5% of basic (if applicable)       ___________
   D4. CBHI 0.5% of net salary                     ___________
   D5. TOTAL employee RSSB                         ___________
