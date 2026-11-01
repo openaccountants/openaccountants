@@ -8,10 +8,7 @@ tax_year: 2026
 tax_year_notes: "2026 research job; identified older DGI baseline through 2017 only, complete operative current chain unproved."
 version: 0.1
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Mali cross-border payment and allocation source-reference draft v0.1
@@ -129,21 +126,3 @@ expected:
 | [DGI, older CGI/LPF consolidation](https://www.dgi.gouv.ml/CGI/) | CGI arts. 4, 43–51, 79–85, 93–98, 196–198; LPF arts. 57–61, 439–450, 615–616 and neighbours read offline; selected provisions with amendment labels through 2017, not the entire code or a 2026 consolidation | 2026-11-01 |
 
 Not yet confirmed: complete later law and enacted 2026 Annex U; current domestic rates/bases and operative due dates; current residence, treaty instruments/status/termination/PE/relief, outbound dividends/interest and corresponding credits; article 80 denominator edge cases; no-NIF branch interactions; current forms/boxes/registration/authentication/remittance/certificates; article 444/450 interest cross-reference and cumulative sanctions; exit, customs, foreign exchange and sector/convention rules. No complete XB coverage, operative 2026 approval or accountant attestation is given.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

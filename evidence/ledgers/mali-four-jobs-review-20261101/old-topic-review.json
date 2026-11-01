@@ -1,0 +1,153 @@
+{
+  "legacy_predecessor": "a4d09fbf744fbabfbc4988d08e13fd3c61fca449",
+  "candidate": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "entry_count": 27,
+  "full_predecessor_introductions_read": true,
+  "all_25_headings_and_bullets_checked": true,
+  "two_introductions_checked": true,
+  "entries": [
+    {
+      "predecessor_topic": "ml-company-formation: line 13, Mali Company Formation & Entity Choice",
+      "candidate_destination": "New title / Who this applies to, then canonical sections",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 15, Entity types and incorporation",
+      "candidate_destination": "New title / Who this applies to, then canonical sections",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 19, Société à Responsabilité Limitée (SARL)",
+      "candidate_destination": "Who this applies to: SARL form and founder scope",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 20, Société Anonyme (SA)",
+      "candidate_destination": "Who this applies to: SA form and single shareholder",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 21, Entreprise Individuelle",
+      "candidate_destination": "Who this applies to: Individual-trader status; removed unsupported standalone liability simplification",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 22, SARL minimum share capital",
+      "candidate_destination": "Rates, bands and thresholds: Corrected total-capital versus nominal-share distinction",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 23, SA minimum share capital",
+      "candidate_destination": "Rates, bands and thresholds: Ordinary and public-offer source scope retained with holds",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 24, Commercial register",
+      "candidate_destination": "Deadlines and filing: RCCM personality and application timing",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 25, Incorporation route",
+      "candidate_destination": "Deadlines and filing: Official government API route, held current company checklist",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 26, Typical incorporation timeline",
+      "candidate_destination": "Deadlines and filing; Sources: Removed unsupported processing estimate; dated government timetable not a promise",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 27, Tax identification",
+      "candidate_destination": "Deadlines and filing: NIF request and distinct registration identifiers",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 28, Core annual compliance — financial statements",
+      "candidate_destination": "The base; Deadlines and filing: Annual statements and separate tax-return figure home",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 29, Core annual compliance — shareholders' meeting",
+      "candidate_destination": "Rates, bands and thresholds; The base: Accounts approval and deposit source deadlines",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: line 30, Statutory auditor (commissaire aux comptes)",
+      "candidate_destination": "Rates, bands and thresholds; The base: SA mandatory auditor and strict SARL tests",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-company-formation: introduction, Company law in Mali follows the OHADA Uniform Act on Commercial Companies and Economic Interest Groups (AUSCGIE). The most co…",
+      "candidate_destination": "Who this applies to / The base / Sources: source-specific scope and explicit currentness limits",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 13, Mali Tax Overview",
+      "candidate_destination": "New title / Who this applies to, then canonical sections",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 15, Mali tax system at a glance",
+      "candidate_destination": "New title / Who this applies to, then canonical sections",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 19, Standard tax year",
+      "candidate_destination": "Deadlines and filing: Ordinary company period with first-period exceptions; no universal filing period",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 20, Currency",
+      "candidate_destination": "Who this applies to: BCEAO currency description; no invented exchange rate",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 21, Tax authority",
+      "candidate_destination": "Who this applies to: DGI domestic-tax/NIF role, no blanket agency assumption",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 22, Basis of taxation for residents",
+      "candidate_destination": "The base; Cross-border points: Replaced blanket worldwide/source rule with category-specific source tests",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 23, Top personal income tax (ITS) rate",
+      "candidate_destination": "Rates, bands and thresholds: Existing wage figure home linked; rate not duplicated",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 24, Standard corporate income tax rate",
+      "candidate_destination": "Rates, bands and thresholds: Existing corporate figure home linked; rate not duplicated",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 25, Does Mali levy VAT?",
+      "candidate_destination": "Rates, bands and thresholds: Existing VAT figure home linked; rate not duplicated",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 26, Annual income/corporate return deadline",
+      "candidate_destination": "Deadlines and filing: Removed universal March date; linked tax-specific filing homes",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: line 27, Minimum lump-sum tax (Impôt Minimum Forfaitaire)",
+      "candidate_destination": "Rates, bands and thresholds: Existing corporate minimum home and held extra floor linked",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    },
+    {
+      "predecessor_topic": "ml-tax-overview: introduction, Mali is a West African, francophone, civil-law jurisdiction whose tax rules sit in the Code Général des Impôts (CGI) and are …",
+      "candidate_destination": "Who this applies to / The base / Sources: source-specific scope and explicit currentness limits",
+      "verdict": "destination observed; unsupported legacy assertion corrected, linked or expressly held"
+    }
+  ],
+  "TP_and_XB": "Both slugs absent at predecessor9d5451d3c373312f2207c904cdf59eaf38386824. Seven existing Guide contents preserve their original destinations byte-for-byte; no fictitious old-topic movement claimed.",
+  "important_corrections_observed": [
+    "Nominal SARL share floor distinguished from total capital freely set.",
+    "Universal worldwide-income and March-return claims replaced with category-specific routing.",
+    "Old uncertain topITS rate routes to accepted wage workpaper, whose relief hold remains.",
+    "Unverified typical incorporation time is expressly not promised.",
+    "Annual SYSCOHADA/tax/meeting/audit jobs remain separately located and current accounting implementation held."
+  ]
+}

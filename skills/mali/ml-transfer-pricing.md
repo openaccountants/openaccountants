@@ -8,10 +8,7 @@ tax_year: 2026
 tax_year_notes: "2026 research job; identified older DGI baseline through 2017 only, complete operative current chain unproved."
 version: 0.1
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Mali transfer-pricing source-reference draft v0.1
@@ -126,21 +123,3 @@ expected:
 | [DGI, older CGI/LPF consolidation](https://www.dgi.gouv.ml/CGI/) | CGI arts. 49–51, 79–85, 94–98, 196–197; embedded Décret 2012-277 arts. 7–8 with 2017 amendment labels; LPF arts. 57–61 and neighbours read offline, not the entire code or a 2026 consolidation | 2026-11-01 |
 
 Not yet confirmed: full later statutory/regulatory chain and enacted 2026 Annex U; operative annual threshold, deadline, penalty and partial-month treatment; current non-cooperative lists and privileged-regime comparisons; any later pricing-method, financing or reporting rules; current declaration/model/boxes/upload/authentication/payment; advance-agreement practice or silence protection; special limitation and full sanction/dispute interactions; treaty/corresponding-adjustment relief. No operative 2026 approval, comprehensive TP coverage or accountant attestation is given.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

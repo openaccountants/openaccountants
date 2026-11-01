@@ -1,0 +1,70 @@
+{
+  "read_date": "2026-11-01",
+  "source_files": {
+    "dgi-cgi.html": {
+      "sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "bytes": 5882035
+    },
+    "dgi-cgi.txt": {
+      "sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "bytes": 1072324
+    },
+    "ohada-auscgie-2014.pdf": {
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "bytes": 16313466
+    },
+    "ohada-auscgie-selected.ocr.txt": {
+      "sha256": "f9616dc67fa87f1bf286f4881067bef291969cde471a57389c8d6bf934122edc",
+      "bytes": 55351
+    },
+    "ohada-audcg-2010.pdf": {
+      "sha256": "fd266cfbffd10b1fc3816afe959f41b82d8534af4206057721298832ece904ae",
+      "bytes": 1115331
+    },
+    "ohada-audcg-2010-selected.ocr.txt": {
+      "sha256": "f3e9ecc4d9063c27c864f45acf2fd58747fb00bcb0a084b890dee52976ae5d4a",
+      "bytes": 60708
+    },
+    "jo-2015-26.pdf": {
+      "sha256": "f941c00eca554c63c0ca1ac097436fed38b5f3abf82e10da8f109c23ce80192a",
+      "bytes": 264269
+    },
+    "jo-2015-26.raw.txt": {
+      "sha256": "46979225319ca28cbebf60d00ce93242302ebcf8f8c66e3dfb482a8afa754e1d",
+      "bytes": 149211
+    },
+    "administration-soletrader.html": {
+      "sha256": "99a16f6d741046b0f8f34eb6659c0bf2c99f55fefcd5a1c950d156692bdc8315",
+      "bytes": 71469
+    },
+    "administration-soletrader.txt": {
+      "sha256": "7e5d3d5441661e7317141d71bc513fdce6f8dab1bca505df7778919374fdba65",
+      "bytes": 4044
+    },
+    "dgi-nif.html": {
+      "sha256": "9121b5578f46139cd913d63eade9600634cdc2f8b1e5368126fa6a3737828534",
+      "bytes": 106749
+    },
+    "dgi-nif.txt": {
+      "sha256": "2922a8f6ba16ab81496f844a796ccc8e204927cf74fbdd97e5fce6cab36a9ce7",
+      "bytes": 4350
+    },
+    "bceao-cfa.html": {
+      "sha256": "fc13147378252fbb592a71986ed90c787870bfc9c47f7b1a364df5d25e908728",
+      "bytes": 120465
+    },
+    "bceao-cfa.txt": {
+      "sha256": "e2c7dce3fd39ff3ba6a79a912a5de8b6b9cca452c34457778307db1f24a054c5",
+      "bytes": 8885
+    },
+    "jo-2025-33-5.pdf": {
+      "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+      "bytes": 1445924
+    },
+    "jo-2025-33-5.txt": {
+      "sha256": "197c86f8e2504cb2d79fff4d0cbd4f90eb906e866b7399faf3132166e2ff11c9",
+      "bytes": 198580
+    }
+  },
+  "no_new_network_or_authentication": "Existing normal-TLS primary-source cache reused. No portal login, CAPTCHA/TLS bypass or new fetch."
+}
