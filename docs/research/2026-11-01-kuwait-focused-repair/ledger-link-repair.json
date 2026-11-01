@@ -1,0 +1,15 @@
+{
+  "path": "docs/research/2026-11-01-kuwait-focused-repair/kw-corporate-income-tax-effective-ledger.md",
+  "changes": [
+    {
+      "old": "../sources.md",
+      "new": "../2026-11-01-kuwait-closeout/sources.md"
+    },
+    {
+      "old": "../old-topic-destinations.md",
+      "new": "../2026-11-01-kuwait-closeout/old-topic-destinations.md"
+    }
+  ],
+  "sha256": "145a3e8026124408d06bbb7376bd4c9e77582c2c666ce9c511dfac3ab2438961",
+  "scope": "Evidence-link-only; sources/ledger interpretation unchanged"
+}

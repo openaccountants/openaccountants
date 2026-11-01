@@ -1,0 +1,2 @@
+$ python3 scripts/check-examples.py --require skills/kuwait/kuwait-tax.md skills/kuwait/kw-company-formation.md skills/kuwait/kw-corporate-income-tax.md skills/kuwait/kw-payroll-social.md skills/kuwait/kw-tax-overview.md skills/kuwait/kw-vat-gst.md
+checked 6 files, 12 oa-check blocks, 0 failures, 0 missing

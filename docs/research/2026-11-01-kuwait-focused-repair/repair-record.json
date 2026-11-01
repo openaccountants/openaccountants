@@ -1,0 +1,79 @@
+{
+  "baseline": "130ca34154c9ce79f50f047a44a3f0efdea8219d",
+  "edits": [
+    {
+      "path": "skills/kuwait/kw-corporate-income-tax.md",
+      "old": "version: 0.3",
+      "new": "version: 0.4",
+      "before_sha256": "354ee4ed1ce30d267f8169713f0036d1b6793f4db97c5cbb4cbf01799bf1520a",
+      "after_sha256": "06d50e294a588f3546ec9de257818ad84ad091a06e393eca574136976af73c66"
+    },
+    {
+      "path": "skills/kuwait/kw-corporate-income-tax.md",
+      "old": "# Kuwait Corporate Income Tax v0.3",
+      "new": "# Kuwait Corporate Income Tax v0.4",
+      "before_sha256": "06d50e294a588f3546ec9de257818ad84ad091a06e393eca574136976af73c66",
+      "after_sha256": "533760986552c72d9f6950eba2dcaf47a54b706de2702f5fb94da3b8ccafc277"
+    },
+    {
+      "path": "skills/kuwait/kw-company-formation.md",
+      "old": "version: 0.3",
+      "new": "version: 0.4",
+      "before_sha256": "a83af8433bea8923b85871137b1dc30ce558271c5133f6d36edc71e25194c90f",
+      "after_sha256": "3c74b5beff7631cc07e3ed4fbd49f4af1812c766808af4015e9aa612767a2c7b"
+    },
+    {
+      "path": "skills/kuwait/kw-company-formation.md",
+      "old": "# Kuwait Company Formation and Entity Choice v0.3",
+      "new": "# Kuwait Company Formation and Entity Choice v0.4",
+      "before_sha256": "3c74b5beff7631cc07e3ed4fbd49f4af1812c766808af4015e9aa612767a2c7b",
+      "after_sha256": "9eaf77a39fd8cccb1218e13c4b1fa651647299f6a139491021849578d0188af1"
+    },
+    {
+      "path": "skills/kuwait/kw-corporate-income-tax.md",
+      "old": "Refund claim: five years from final settlement notice or actual payment, whichever is earlier (art. 42)",
+      "new": "Refund claim: five years from final settlement notice or the date the taxpayer became aware of the right to recover overpaid tax, whichever is earlier (art. 42)",
+      "before_sha256": "533760986552c72d9f6950eba2dcaf47a54b706de2702f5fb94da3b8ccafc277",
+      "after_sha256": "ae3054f86ff1f56bf829af1ae893b2a4cc71b2b9f565627dfdc2aaecf4927775"
+    },
+    {
+      "path": "skills/kuwait/kw-corporate-income-tax.md",
+      "old": "| Who is in scope | Reg. art. 1 defines corporate bodies broadly by legal personality and Kuwait activity, directly or through an agent. This does not settle the held Kuwaiti/Gulf or mixed-ownership exemptions. Law 46/2006 art. 4 excludes special-law government companies and companies subject to Decree 3/1955 from Zakat | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |",
+      "new": "| Who is in scope | Reg. art. 1 defines corporate bodies broadly by legal personality and Kuwait activity, directly or through an agent. This does not settle the held Kuwaiti/Gulf or mixed-ownership exemptions. Law 46/2006 art. 4 excludes special-law government companies and companies subject to Decree 3/1955 from Zakat | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf; https://www.mof.gov.kw/Desicions/Decree/PDF/Q46-2006.pdf |",
+      "before_sha256": "ae3054f86ff1f56bf829af1ae893b2a4cc71b2b9f565627dfdc2aaecf4927775",
+      "after_sha256": "92c0c1c790d8e6f7620aa3c966526df84446a6d2103978159b0c0be6e78a9b9c"
+    },
+    {
+      "path": "skills/kuwait/kw-company-formation.md",
+      "old": "| Licensed investment exemption | A granted exemption covers its specified taxes and duration, up to ten years from actual operation (arts. 27 and 29). A licence alone is not an exemption; Law 157/2024 art. 12 disallows tax exemptions against DMTT | 2026 | same |",
+      "new": "| Licensed investment exemption | A granted exemption covers its specified taxes and duration, up to ten years from actual operation (arts. 27 and 29). A licence alone is not an exemption; Law 157/2024 art. 12 disallows tax exemptions against DMTT | 2026 | same; https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |",
+      "before_sha256": "9eaf77a39fd8cccb1218e13c4b1fa651647299f6a139491021849578d0188af1",
+      "after_sha256": "7e133db0d57c3f1cb6f71ca49f027ea3a71c1ba330e2b97431cecdc569ee02a8"
+    },
+    {
+      "path": "skills/kuwait/kw-corporate-income-tax.md",
+      "old": "KFAS 1% contribution",
+      "new": "historical KFAS 1% contribution on net profit after transfers to statutory reserve and loss offsets (NON-OPERATIVE HOLD; neither rate, base nor applicability is verified)",
+      "before_sha256": "92c0c1c790d8e6f7620aa3c966526df84446a6d2103978159b0c0be6e78a9b9c",
+      "after_sha256": "275651686da038bcd7840248268ad27eee36f9400b5bbd9f0a9deaa0b582e046"
+    }
+  ],
+  "effective_ledger": {
+    "path": "docs/research/2026-11-01-kuwait-focused-repair/kw-corporate-income-tax-effective-ledger.md",
+    "supersedes": "Original corporate R42 paraphrase and historicalKFAShold only; allotherrows unchanged",
+    "original_sha256_preserved": "1ed3659d8bae810fb853241a4562329c975e90c765e68151af344560f4d8dab5",
+    "original_still_exact": true,
+    "R42_extra_read_scope": "OfficialregactualPDFp21 independentlyvisuallyread; unchangedsourcehash; two exact non-contiguous fragments separately quoted"
+  },
+  "old_topics": {
+    "original_sha256": "c86f0e3a725ec79383d95d03adb3233773c5c7b8579f2f8a804af8714eb0c935",
+    "corrected_old_row": "| `kw-payroll-social.md:22` | - **Monthly contributory salary ceiling** — KWD 2,750 per month ((approx — confirm current ceiling)) KWD  _(Social Security Law No. 61 of 1976 (https://taxsummaries.pwc.com/kuwait/individual/other-taxes))_ | `kw-payroll-social.md` Team metadata and tax-year label | Obsolete display metadata replaced; no tax rule. |",
+    "new_row": "| `kw-payroll-social.md:22` | - **Monthly contributory salary ceiling** — KWD 2,750 per month ((approx — confirm current ceiling)) KWD  _(Social Security Law No. 61 of 1976 (https://taxsummaries.pwc.com/kuwait/individual/other-taxes))_ | `kw-payroll-social.md` Sources: Not yet confirmed (NON-OPERATIVE HOLD) | Historical KWD 2,750 ceiling retained as an unverified NON-OPERATIVE HOLD; current ceiling and applicability unresolved. |",
+    "scope": "One destination classification corrected additively; all107original units retained"
+  },
+  "candidate_hashes": {
+    "skills/kuwait/kw-corporate-income-tax.md": "275651686da038bcd7840248268ad27eee36f9400b5bbd9f0a9deaa0b582e046",
+    "skills/kuwait/kw-company-formation.md": "7e133db0d57c3f1cb6f71ca49f027ea3a71c1ba330e2b97431cecdc569ee02a8"
+  },
+  "status": "Pending focusedindependentclosure; no newtax/currentness/filingacceptance"
+}

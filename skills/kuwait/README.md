@@ -41,3 +41,9 @@ Tracked in [\[KW\] Complete the pack](https://github.com/openaccountants/openacc
 - [Tax](kuwait-tax.md) (2026)
 - [Company formation](kw-company-formation.md) (2026)
 - [Tax overview](kw-tax-overview.md) (2026)
+
+## Independent review and effective correction evidence
+
+The [effective corporate ledger](../../docs/research/2026-11-01-kuwait-focused-repair/kw-corporate-income-tax-effective-ledger.md) supersedes only the identified R42 paraphrase and historical KFAS hold in the preserved writer ledger. The [effective topic map](../../docs/research/2026-11-01-kuwait-focused-repair/effective-old-topic-destinations.md) corrects the payroll-ceiling destination while retaining every original topic. Original writer evidence and immutable initial review findings remain available.
+
+CONDITIONAL PARTIAL: independent research review passed for the six Kuwait Guides at the recorded hashes; explicit source, currentness and filing holds remain. No accountant attestation, operational filing readiness or country-pack completion is claimed.

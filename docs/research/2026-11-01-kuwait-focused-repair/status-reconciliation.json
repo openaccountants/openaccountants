@@ -1,0 +1,21 @@
+{
+  "permission_file": "docs/research/2026-11-01-kuwait-independent-review/focused-closure-hashes.json",
+  "old_literal": "Focused independent correction closure pending.",
+  "new_literal": "CONDITIONAL PARTIAL: independent research review passed for the six Kuwait Guides at the recorded hashes; explicit source, currentness and filing holds remain. No accountant attestation, operational filing readiness or country-pack completion is claimed.",
+  "before_sha256": "02cfc3e51c2733dc2b6547da85224d1bbdbb9f3f3b819cd47e0ae33081fa20e5",
+  "after_sha256": "39bbd297875cd45ed191ec2ac5446b692565ce2650529642565eb675421840ce",
+  "initial_and_focused_review_hashes": {
+    "docs/research/2026-11-01-kuwait-independent-review/preservation-and-cases.md": "afa6d39eb262fe9cfc0629aa2c83f59fbb5fe680a4d2dd9b9148dbb28f1a7c83",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-4.txt": "ac98da9860be30d16ffbb6055a033464edef9a5ebba4b34d0a349653f9f52881",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-5.txt": "c7d112570fafd5284069035482c44a79d0ce17864f395cd6fb7fbd04df49b0ae",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-1.txt": "99f7ec9382295bee6e3bb4f8e3e4d6c32336a95b4a173c31c80a55ef0c104ac6",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-2.txt": "6f34c07e62736803ca92f37b34b95850779575cb421fd42637012082937ea28f",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-3.txt": "d77ca249972add88937e2610bd1e476b04470813ef5216999b178fac2fbf7bd6",
+    "docs/research/2026-11-01-kuwait-independent-review/initial-hashes-and-preservation.json": "be96c8b8c44257e68befd92d6e0c2d920ddd45655964955a922114408cd58bb8",
+    "docs/research/2026-11-01-kuwait-independent-review/validation-results.json": "61f5010cabcd2abefc6ba994b1ae6ef6f31651c645ca31cdbd4165782fa8717f",
+    "docs/research/2026-11-01-kuwait-independent-review/initial-findings.md": "e108fb3511d47a4a2f292616621b1d2319d6133e4c41ee8700c27ae4f968ef0b",
+    "docs/research/2026-11-01-kuwait-independent-review/focused-closure-hashes.json": "40c4795fd1c0e780fd8267967c22ee2f46c275beb891d2785af0bf67cb87a743",
+    "docs/research/2026-11-01-kuwait-independent-review/per-row-verdicts.md": "2375b22cc5510412574429461a84cebffb9bf6bbb43b9f7f4c60343248f5b5f7",
+    "docs/research/2026-11-01-kuwait-independent-review/focused-closure.md": "1a9b1a82c9b801d384e0edfb62418f305acc772dfc9115042970a1862a60e382"
+  }
+}

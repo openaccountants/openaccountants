@@ -1,0 +1,121 @@
+{
+  "candidate": "130ca34154c9ce79f50f047a44a3f0efdea8219d",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "sources": {
+    "REG": {
+      "file": "la2-2008.pdf",
+      "sha256": "218254a7ab7405afb26d0b26c336ecb3cce7b5fcfa363b88c21b7a0180da2229",
+      "matches": true
+    },
+    "DEC": {
+      "file": "IncomeTaxDecree1955New.pdf",
+      "sha256": "a6141ca66fde6b3a08d8804ec63384900fb79c7663e21362bbd6731054e2064e",
+      "matches": true
+    },
+    "ZT": {
+      "file": "Q46-2006.pdf",
+      "sha256": "26b6d3e9c71c45dc09d03a55695a76b341fd4090a1b4308c95eac83481d241f6",
+      "matches": true
+    },
+    "NL": {
+      "file": "LawNo19Of2000NationalLabor.pdf",
+      "sha256": "13a588a04586f1ac6dc516811665f9b2cc8af9c896b52d8345a9bd52a6b5a2f4",
+      "matches": true
+    },
+    "DM": {
+      "file": "DecreeLawDMTTNo157of2024.pdf",
+      "sha256": "371e065185cbe078b7baa21c00eb1a279d324e466b3ea29be0aa8754366323c2",
+      "matches": true
+    },
+    "BUD": {
+      "file": "mez-generalization-2027.pdf",
+      "sha256": "faff01dc0030997172763d96fedb9dffc20c6f3dd2eb62b5cda9a52d3d3d74b6",
+      "matches": true
+    },
+    "KD": {
+      "file": "KDIPA-lawbookarabic.pdf",
+      "sha256": "e28d11fce2c38d81f3ed8c7334a924729c93848a6b40fd658e985c36dcd4b12a",
+      "matches": true
+    },
+    "I1": {
+      "file": "mofDesicions1.aspx",
+      "sha256": "931dff554b121c5e2a8164d66f64065b529739f84eab1ba6eb0b7b06912a0e56",
+      "matches": true
+    },
+    "I2": {
+      "file": "mofDesicions2.aspx",
+      "sha256": "149446be443b2e5db98b9a6ace297a126955e94e6eca1230fbda4ee879e1249b",
+      "matches": true
+    },
+    "I3": {
+      "file": "mofDesicions3.aspx",
+      "sha256": "b3b731c103cd63b2458312de97698939c8c39bcbd56e67779ebbb8b0613aeb4c",
+      "matches": true
+    }
+  },
+  "guides_readme": {
+    "skills/kuwait/README.md": "29fd8b2daf6d64489b7d2b910c9c612d546966ea9241b073f9f858d65ff6e42f",
+    "skills/kuwait/kuwait-tax.md": "b62b1da77dbd2d0f5b4ac24e261a5e1ec2bd3a0565b323d5ce459b279891fc63",
+    "skills/kuwait/kw-company-formation.md": "a83af8433bea8923b85871137b1dc30ce558271c5133f6d36edc71e25194c90f",
+    "skills/kuwait/kw-corporate-income-tax.md": "354ee4ed1ce30d267f8169713f0036d1b6793f4db97c5cbb4cbf01799bf1520a",
+    "skills/kuwait/kw-payroll-social.md": "0af02af811cdf725adcf8e14f8be7c9d94fdb3ff60c9c50247b1e80a7451cbc6",
+    "skills/kuwait/kw-tax-overview.md": "f2983fe73841d123cac86fb0fe69e1706048404d2c7a10bdac45c5fec4950f04",
+    "skills/kuwait/kw-vat-gst.md": "d2407803d325d97e2b83f0639e3479189e6479cddad73b6c85e4755d317b5940"
+  },
+  "incoming_metadata_cta": {
+    "skills/kuwait/kuwait-tax.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    },
+    "skills/kuwait/kw-company-formation.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    },
+    "skills/kuwait/kw-corporate-income-tax.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    },
+    "skills/kuwait/kw-payroll-social.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    },
+    "skills/kuwait/kw-tax-overview.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    },
+    "skills/kuwait/kw-vat-gst.md": {
+      "full_cta_exact": true,
+      "name_exact": true,
+      "jurisdiction_exact": true,
+      "tier_exact": true,
+      "trust_label_exact": true,
+      "review_status_exact": true,
+      "license_exact": true
+    }
+  }
+}

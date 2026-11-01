@@ -1,7 +1,7 @@
 ---
 name: kw-company-formation
 description: "Company formation and entity choice in Kuwait for tax year 2026, with the tax consequences. Covers WLL, closed and public shareholding companies, direct investment licences under Law 116 of 2013, tax exemption up to ten years, tax card and first registrations. Use for questions on setting up in Kuwait, foreign ownership, KDIPA licence, 100% ownership, which entity pays Zakat or NLST, or tax steps after incorporation. Company-law and incorporation procedures are non-operative holds. Any tax incentive requires its actual grant and is not a DMTT exemption. Not signed off by an accountant."
-version: 0.3
+version: 0.4
 jurisdiction: KW
 category: international
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kuwait Company Formation and Entity Choice v0.3
+# Kuwait Company Formation and Entity Choice v0.4
 
 Tax year 2026.
 
@@ -27,7 +27,7 @@ Founders and foreign investors choosing a vehicle in Kuwait.
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
 | Direct investment ownership | Up to 100% foreign capital for a Kuwaiti company established for licensed direct investment under Law 116/2013 art. 12, subject to the statutory licensing basis | 2026 | https://kdipa.gov.kw/wp-content/uploads/2021/08/law1162013.pdf |
-| Licensed investment exemption | A granted exemption covers its specified taxes and duration, up to ten years from actual operation (arts. 27 and 29). A licence alone is not an exemption; Law 157/2024 art. 12 disallows tax exemptions against DMTT | 2026 | same |
+| Licensed investment exemption | A granted exemption covers its specified taxes and duration, up to ten years from actual operation (arts. 27 and 29). A licence alone is not an exemption; Law 157/2024 art. 12 disallows tax exemptions against DMTT | 2026 | same; https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
 | Expansion | Licensed expansion: exemption grant under arts. 27(2) and 29, for no less than the original exemption period, from actual production/operation of the expansion | 2026 | same |
 | Imports for the investment | Granted relief can wholly/partly exempt qualifying direct-investment imports (art. 27(3)); five-year restrictions on disposal/other use and payment of duties on permitted disposal apply. This is not the general customs tariff | 2026 | same |
 | WLL | unverified: NON-OPERATIVE HOLD. WLL characteristics, shareholder numbers and capital are not established | 2026 | unverified |
