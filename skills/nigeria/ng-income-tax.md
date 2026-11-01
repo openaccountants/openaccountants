@@ -35,7 +35,7 @@ A resident individual is one who, in the year, is domiciled in Nigeria, has a pe
 
 ## The base
 
-Chargeable income is total income under NTA s.28 less eligible deductions (s.30(1)). Eligible deductions (s.30(2)(a)): National Housing Fund, National Health Insurance Scheme and Pension Reform Act contributions, interest on loans for an owner-occupied house, life insurance or deferred annuity premiums paid in the preceding year, and rent relief. A deduction must be claimed in writing (s.31).
+Chargeable income is total income under NTA s.28 less eligible deductions (s.30(1)). Total income includes chargeable gains (s.28(2)(a)(v)) and is after capital allowances (s.28(2)(b)(ii)). Eligible deductions (s.30(2)(a)): National Housing Fund, National Health Insurance Scheme and Pension Reform Act contributions, interest on loans for an owner-occupied house, life insurance or deferred annuity premiums paid in the preceding year, and rent relief. A deduction must be claimed in writing (s.31).
 
 The consolidated relief allowance and the 1% minimum tax of the old Personal Income Tax Act are not in the NTA provisions read for individuals; that Act is repealed (s.195). Do not apply them to 2026.
 

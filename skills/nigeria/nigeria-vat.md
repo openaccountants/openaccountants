@@ -55,7 +55,7 @@ Set by the Nigeria Tax Administration Act 2025, not read. See "Not yet confirmed
 
 ## Cross-border points
 
-A non-resident supplying Nigeria registers and charges VAT (s.150(1)). Where it supplies from abroad, the Nigerian taxable customer withholds and remits (s.150(2)) unless an appointed collector has collected (s.150(4)). Goods bought through a non-resident platform with VAT already collected are not charged again on proof of payment (s.150(8)). Exports other than oil and gas are zero rated (s.186(n) to (p)).
+A non-resident supplying Nigeria registers and charges VAT (s.150(1)). Where it supplies from abroad, the Nigerian taxable customer withholds and remits (s.150(2)) unless an appointed collector has collected; if the collector failed to collect, the customer still withholds (s.150(4)). Goods bought through a non-resident platform with VAT already collected are not charged again on proof of payment (s.150(8)). Exports other than oil and gas are zero rated (s.186(n) to (p)).
 
 ## Two worked examples that recompute
 

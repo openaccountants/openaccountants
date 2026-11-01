@@ -27,7 +27,7 @@ Anyone forming a business in Nigeria from 2026: business name, private company, 
 | Small company: gross turnover NGN 100,000,000 or less a year and total fixed assets not over NGN 250,000,000 | 0% company tax, no development levy | 2026 | NTA ss.56(a), 59(1), definition of small company | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
 | Any other company | 30%; falls to 25% only from a date set by presidential order | 2026 | NTA s.56(b) and proviso | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
 | Development levy, companies other than small and non-resident companies | 4% of assessable profits | 2026 | NTA s.59(1) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Minimum effective tax rate: MNE group turnover at least EUR 750 million, or company turnover NGN 50,000,000,000 and above | 15% of net income | 2026 | NTA s.57 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
+| Minimum effective tax rate: MNE group turnover at least £750 million as printed in the copy read, or company turnover NGN 50,000,000,000 and above | 15% of net income | 2026 | NTA s.57 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
 | Band 1, first NGN 800,000 | 0% | 2026 | NTA s.58, Fourth Schedule (a) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
 | Band 6, above NGN 50,000,000 | 25% | 2026 | Fourth Schedule (f) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
 
@@ -86,7 +86,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 | Foreign ownership | Practically restricted (must be resident sole proprietor or partners) | 100% permitted | 100% permitted | 100% permitted | Subject to objects and security vetting | unverified, earlier text not re-read |
 | Min. share capital / capital | None | ₦100,000 (minimum issued share capital under CAMA 2020 for private companies); sectoral floors override | None statutory | ₦2,000,000 minimum issued share capital under CAMA 2020 | Not share capital based | unverified, earlier text not re-read |
 | Minimum capital for companies with foreign participation | n/a | ₦100,000,000 minimum issued share capital required for NIPC business permit (foreign-owned companies) | Same NIPC requirement applies | Same NIPC requirement applies | n/a | unverified, earlier text not re-read |
-| Tax treatment | Personal Income Tax (PIT) at progressive rates | Companies Income Tax (CIT): 0% / 30% per NTA 2025 | Pass-through where partners are taxed (state PIT) unless elected; CIT if treated as company | CIT 30% (typically large company) | Tax-exempt for non-trading income; CIT on trading profits not applied to objects | unverified, earlier text not re-read |
+| Tax treatment | Personal Income Tax (PIT) at progressive rates | Companies Income Tax (CIT): 0% / 30% per NTA 2025 | From 2026 all LLP profits are deemed distributed and taxed proportionately in the partners' hands (NTA s.10(5)) | CIT 30% (typically large company) | Tax-exempt for non-trading income; CIT on trading profits not applied to objects | unverified, earlier text not re-read |
 | Annual filing with CAC | Annual return (Form CAC/BN/7) | Annual return + audited financial statements (small companies exempt from audit under CAMA s.402) | Annual return + statement of accounts | Annual return + audited financial statements | Annual return + statement of affairs | unverified, earlier text not re-read |
 | Suffix on name | none (use "Enterprises", "Ventures", etc.) | "Limited" or "Ltd" | "Limited Liability Partnership" or "LLP" | "Public Limited Company" or "Plc" | "Incorporated Trustees of …" | unverified, earlier text not re-read |
 | Admin burden | Low | Medium | Medium | High | Medium-High | unverified, earlier text not re-read |
@@ -129,7 +129,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Tax
 
-- **BN tax treatment**: - Profits taxed in the hands of the proprietor (or partners pro rata) under the Personal Income Tax Act (PITA) at progressive rates administered by the state IRS of the proprietor's residence. - 2025 PIT bands (NTA 2025-aligned): 0% on first ₦800,000; 15% on next ₦2,200,000; 18%, 21%, 23%, 25% on subsequent bands; top rate 25% above ₦50,000,000 (verify against current NTA 2025 schedule when filing). - VAT registration mandatory if taxable turnover exceeds ₦100,000,000 small-company threshold (small companies under NTA 2025 are VAT-exempt below this turnover; previously the registration threshold was ₦25,000,000 under Finance Act 2019). - Withholding tax (WHT) at 5% / 10% applies on services received from the BN.  _(Personal Income Tax Act (PITA); Finance Act 2019; NTA 2025)_
+- **BN tax treatment**: - Profits taxed in the hands of the proprietor (or partners pro rata) under the NTA personal bands from 2026 (the Personal Income Tax Act applies to 2025 and earlier) administered by the state IRS of the proprietor's residence. - 2026 PIT bands (NTA Fourth Schedule): 0% on first ₦800,000; 15% on next ₦2,200,000; 18%, 21%, 23%, 25% on subsequent bands; top rate 25% above ₦50,000,000 (unverified: unofficial copy). - VAT registration mandatory if taxable turnover exceeds ₦100,000,000 small-company threshold (small companies under NTA 2025 are VAT-exempt below this turnover; previously the registration threshold was ₦25,000,000 under Finance Act 2019). - Withholding tax (WHT) at 5% / 10% applies on services received from the BN.  _(Personal Income Tax Act (PITA); Finance Act 2019; NTA 2025)_
 
 ##### When to use
 
@@ -167,7 +167,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 - **CIT: small company**: 0% percent (turnover ≤ ₦100,000,000 and fixed assets ≤ ₦250,000,000)  _(NTA 2025)_
 - **CIT, every other company**: 30% (NTA 2025 s.56(b))
-- **Other Ltd tax obligations**: - Development levy of 4% on assessable profits replaces education tax under NTA s.59; small companies do not pay it. - Development levy (consolidated) under NTA 2025: small companies exempt. - VAT 7.5% on taxable supplies; small companies (turnover ≤ ₦100M) are VAT-exempt under NTA 2025. - WHT on services and certain transactions per the WHT Regulations 2024. - Capital Gains Tax 30% on gains realised by companies (aligned to CIT under NTA 2025). - Annual returns and audited financial statements within 42 days of the AGM (or 9 months after FY end if no AGM held: for small companies that dispense with AGM).  _(NTA 2025; WHT Regulations 2024)_
+- **Other Ltd tax obligations**: - Development levy of 4% on assessable profits under NTA s.59, with no separate education tax in the NTA text read (s.59(3)(a) sends 50% of the levy to the Tertiary Education Trust Fund); small and non-resident companies do not pay it. - VAT 7.5% on taxable supplies (NTA s.147); the NTA text read holds no small-company VAT exemption. - WHT on services and certain transactions per the WHT Regulations 2024. - Chargeable gains form part of a company's total profits (NTA s.27(1)), so they bear the s.56 rate: 0% small company, 30% any other company. - Annual returns and audited financial statements within 42 days of the AGM (or 9 months after FY end if no AGM held: for small companies that dispense with AGM).  _(NTA 2025; WHT Regulations 2024)_
 
 ##### When to use
 
@@ -199,7 +199,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Tax
 
-- **LLP tax treatment**: - Nigerian tax treatment of LLPs is transitional and not yet uniformly resolved: FIRS practice has historically taxed LLPs as if they were partnerships (pass-through to partners under PITA) unless the LLP elects or is treated as a company. - The NTA 2025 begins to align LLP taxation with that of companies in many respects; advise the user that the position is fluid and confirm against the current NTA 2025 implementing regulations. - Conservative default: assume LLP profits are taxable in the partners' hands at PIT rates unless FIRS confirms company treatment.  _(NTA 2025; PITA)_
+- **LLP tax treatment**: - From 2026 all LLP profits are deemed distributed and are taxable income, proportionately, in the hands of the partners (NTA s.10(5)). - Pre-2026: FIRS practice taxed LLPs as partnerships (pass-through to partners under PITA) unless the LLP elected or was treated as a company.  _(NTA s.10(5); PITA for pre-2026)_
 
 ##### When to use
 
@@ -230,8 +230,8 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Tax
 
-- **Plc CIT rate**: 30% percent (typically falls in the large-company band under NTA 2025)  _(NTA 2025)_
-- **Other Plc tax obligations**: Education tax, development levy, withholding obligations as for other companies. Special tax considerations for listed companies (e.g., reduced CGT on quoted-share disposals: confirm against current NTA 2025 schedule).  _(NTA 2025)_
+- **Plc CIT rate**: 30% as any other company under NTA s.56(b); NTA has no large-company band  _(NTA 2025)_
+- **Other Plc tax obligations**: Development levy of 4% (NTA s.59) and withholding obligations as for other companies; no separate education tax in the NTA text read. Special tax considerations for listed companies (for share disposals see NTA s.34(1)(a)).  _(NTA 2025)_
 
 ##### When to use
 
@@ -257,7 +257,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Tax
 
-- **IT tax treatment**: - Income applied wholly to the objects of the association is exempt from CIT under PITA / CITA exemption provisions, retained under NTA 2025 for bona fide non-profits. - Trading income unrelated to the objects is taxable: see R-NG-F7. - VAT on taxable supplies still applies above threshold. - PAYE on staff salaries.  _(PITA; CITA; NTA 2025)_
+- **IT tax treatment**: - From 2026, profits of a person engaged in educational, religious or charitable activities of a public character are exempt where not derived from a trade or business it carries on (NTA s.162(1)(a)(iii)). Pre-2026: PITA / CITA exemption provisions. - Trading income unrelated to the objects is taxable: see R-NG-F7. - VAT applies on taxable supplies (NTA s.147); no threshold figure appears in the NTA text read. - PAYE on staff salaries.  _(NTA s.162; PITA and CITA for pre-2026)_
 
 ##### When to use
 
@@ -282,7 +282,7 @@ CAC registration is now fully electronic through the public portal at pre.cac.go
 
 ##### Federal Inland Revenue Service / Nigeria Revenue Service
 
-- **FIRS/NRS registration and filings**: - TIN issuance is automatic at CAC registration (post-CAMA 2020). No separate paper application required for routine cases. - The taxpayer can activate the TIN on the FIRS TaxPro Max portal (taxpromax.firs.gov.ng) to file returns electronically. - Mandatory filings (companies): CIT annual return: 6 months after FY end (s.55 CITA / NTA 2025); VAT monthly return: by the 21st day of the following month; WHT monthly schedule: by the 21st day; Education tax with CIT; Transfer pricing declaration and disclosure forms for related-party transactions (FIRS TP Regulations 2018).  _(s.55 CITA; NTA 2025; FIRS TP Regulations 2018)_
+- **FIRS/NRS registration and filings**: - TIN issuance is automatic at CAC registration (post-CAMA 2020). No separate paper application required for routine cases. - The taxpayer can activate the TIN on the FIRS TaxPro Max portal (taxpromax.firs.gov.ng) to file returns electronically. - Mandatory filings (companies), pre-2026 law only: CIT annual return: 6 months after FY end (s.55 CITA); VAT monthly return: by the 21st day of the following month; WHT monthly schedule: by the 21st day; Education tax with CIT. From 2026 these dates sit in the Nigeria Tax Administration Act 2025, not read. Transfer pricing declaration and disclosure forms for related-party transactions (FIRS TP Regulations 2018).  _(s.55 CITA, pre-2026; FIRS TP Regulations 2018)_
 
 ##### State IRS (e.g., LIRS, FCT-IRS, OYIRS, RIRS)
 
@@ -330,12 +330,12 @@ CAC registration is necessary but not sufficient for regulated activities. Commo
 | --- | --- | --- | --- | --- | --- |
 | BN (sole proprietor) | PIT (state IRS) | Progressive 0% / 15% / 18% / 21% / 23% / 25% per NTA 2025 PIT schedule | First ₦800,000 of total income exempt | Annual Form A (state IRS) | unverified, earlier text not re-read |
 | BN (partnership) | PIT pass-through to each partner | Progressive PIT bands | Same as sole proprietor | Each partner files Form A; partnership statement of accounts | unverified, earlier text not re-read |
-| Ltd / RC | Companies Income Tax | 0% / 30% per NTA 2025 bands | 0% for small companies (turnover ≤ ₦100M and fixed assets ≤ ₦250M); education tax exempt; development levy exempt | Annual CIT return (FIRS) 6 months after FY end | unverified, earlier text not re-read |
-| LLP | Likely PIT pass-through; subject to FIRS treatment under NTA 2025 implementing regs | Same as PIT bands for partners | Same as BN partnership in conservative view | Annual statement of accounts to CAC; partners file PIT | unverified, earlier text not re-read |
-| Plc | CIT | 30% (typically large company) | Generally outside small-company band by scale | Annual audited accounts + CIT return; quarterly reporting if listed | unverified, earlier text not re-read |
+| Ltd / RC | Companies Income Tax | 0% / 30% per NTA 2025 bands | 0% for small companies (turnover ≤ ₦100M and fixed assets ≤ ₦250M); development levy exempt (NTA s.59(1)) | Annual CIT return; pre-2026 6 months after FY end (FIRS), 2026 date not read | unverified, earlier text not re-read |
+| LLP | Profits deemed distributed and taxed in partners' hands (NTA s.10(5)) | Same as PIT bands for partners | Same as BN partnership | Annual statement of accounts to CAC; partners file PIT | unverified, earlier text not re-read |
+| Plc | CIT | 30% (any other company, NTA s.56(b)) | Generally outside small-company band by scale | Annual audited accounts + CIT return; quarterly reporting if listed | unverified, earlier text not re-read |
 | Incorporated Trustee | Exempt on income applied to objects; CIT on unrelated trading income | 0% on objects-related income; 30% on trading | n/a | Annual return + statement of affairs | unverified, earlier text not re-read |
 
-- **Notes on tax treatment comparison**: - NTA 2025 small-company definition: turnover ≤ ₦100,000,000 AND fixed assets ≤ ₦250,000,000. Both conditions must be met. - VAT registration threshold under NTA 2025: small companies are exempt; entities above ₦100,000,000 turnover must register and charge VAT at 7.5%. - WHT regime updated by the Deduction of Tax at Source (Withholding) Regulations 2024, effective 1 January 2025 (with deferred application for some transactions to 1 July 2025). - Capital allowances and Pioneer Status incentives remain available under NTA 2025 for qualifying companies in priority sectors.  _(NTA 2025; Deduction of Tax at Source (Withholding) Regulations 2024)_
+- **Notes on tax treatment comparison**: - NTA 2025 small-company definition: turnover ≤ ₦100,000,000 AND fixed assets ≤ ₦250,000,000. Both conditions must be met. - VAT: the NTA text read has no small-company exemption and no registration threshold figure; the rate is 7.5% (s.147). - WHT regime updated by the Deduction of Tax at Source (Withholding) Regulations 2024, effective 1 January 2025 (with deferred application for some transactions to 1 July 2025). - Capital allowances are deducted under NTA s.27(1) and the First Schedule. Pioneer Status under the repealed Industrial Development (Income Tax Relief) Act (s.195(e)) continues only for the unexpired period (s.182(2)); new priority-sector relief is the economic development incentive (s.165 onward).  _(NTA 2025; Deduction of Tax at Source (Withholding) Regulations 2024)_
 
 #### Section 13: Decision Tree
 
@@ -359,7 +359,7 @@ Q3: Is this a regulated sector (banking, insurance, capital markets, telecom, br
   NO  → go to Q4
 
 Q4: Multiple professional partners wanting limited liability and pass-through-style tax?
-  YES → LLP (caveat: tax treatment evolving under NTA 2025)
+  YES → LLP (NTA s.10(5): profits taxed in partners' hands)
   NO  → go to Q5
 
 Q5: Plans to raise public equity or list on the NGX within 3 years?
@@ -379,7 +379,7 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 
 #### Section 14: Worked Example: Solo Software Developer in Lagos
 
-**Scenario.** Chioma, Nigerian, 29, freelance software developer in Lagos. Expects ₦60,000,000 gross revenue in 2025, mostly Lagos-based SME and one US client. No employees. Home office. Comfortable with corporate substance but cost-conscious.
+**Scenario.** Chioma, Nigerian, 29, freelance software developer in Lagos. Expects ₦60,000,000 gross revenue in 2026, mostly Lagos-based SME and one US client. No employees. Home office. Comfortable with corporate substance but cost-conscious.
 
 ##### Option A: Business Name (sole proprietorship)
 
@@ -398,12 +398,11 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 ##### Option B: Private Limited Company (Ltd / RC)
 
 - Incorporate "Chioma Tech Solutions Ltd" with ₦1,000,000 issued share capital (cushion above ₦100,000 minimum).
-- Stamp duty on share capital: 0.75% × ₦1,000,000 = ₦7,500.
+- Stamp duty on share capital: 0.75% × ₦1,000,000 = ₦7,500 (NTA s.135, Ninth Schedule item 8, unverified: unofficial copy).
 - CAC fees plus professional fees: ~₦80,000-₦150,000 all-in.
 - TIN automatic; register on TaxPro Max.
 - Tax: CIT under NTA 2025: turnover ₦60M ≤ ₦100M and fixed assets well under ₦250M → small company → 0% CIT.
 - VAT: as above, not confirmed.
-- Education tax exempt for small companies.
 - Development levy exempt.
 - Chioma can pay herself a director's salary subject to PAYE through LIRS; remaining retained profit accumulates in the company.
 - Annual return to CAC; statement of accounts (audit not mandatory for small companies under CAMA s.402(3) provided the company meets the small-company criteria).
@@ -411,7 +410,7 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 
 ##### Recommendation
 
-- **Private Limited (Ltd) wins decisively** at this turnover level. The NTA 2025 small-company 0% CIT band, combined with makes the Ltd the natural choice for a tech founder with ₦60M turnover, far outweighing the higher PIT she would pay on the same profit as a BN.
+- **Private Limited (Ltd) wins decisively** at this turnover level. The NTA 2025 small-company 0% CIT band makes the Ltd the better choice at ₦60M turnover before tax on salary or dividends taken out, which must be computed first (see the decision example below).
 - Chioma should **incorporate the Ltd**, register on TaxPro Max, register with LIRS for PAYE on her own director's salary (sized to fund living expenses), and budget for **NDPA 2023 registration with the NDPC** because she processes client personal data.
 
 #### Section 15: Conservative Defaults
@@ -421,10 +420,10 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 #### Section 16: Sources
 
 - **Companies and Allied Matters Act 2020** (CAMA 2020): Parts B (companies), C (LLPs), E (Business Names), F (Incorporated Trustees).
-- **Nigeria Tax Act 2025** (NTA 2025): consolidated tax statute introducing the 0% / 30% CIT bands, small-company VAT exemption, development levy, and education tax restructuring; restructures FIRS as the Nigeria Revenue Service.
-- **Companies Income Tax Act** (CITA): as amended by Finance Acts 2019, 2020, 2021, 2023 and superseded in parts by NTA 2025.
-- **Personal Income Tax Act** (PITA): as amended.
-- **Value Added Tax Act**: as amended.
+- **Nigeria Tax Act 2025** (NTA 2025): consolidated tax statute with the 0% / 30% company rates (s.56) and the 4% development levy (s.59). Repeals the Companies Income Tax Act, Personal Income Tax Act, Capital Gains Tax Act, Value Added Tax Act and Stamp Duties Act (s.195).
+- **Companies Income Tax Act** (CITA): as amended by Finance Acts 2019, 2020, 2021, 2023. Repealed by NTA s.195; pre-2026 years only.
+- **Personal Income Tax Act** (PITA): as amended. Repealed by NTA s.195; pre-2026 years only.
+- **Value Added Tax Act**: as amended. Repealed by NTA s.195; pre-2026 years only.
 - **Investments and Securities Act 2025**: capital markets framework.
 - **Nigeria Data Protection Act 2023** (NDPA 2023) and NDPR 2019 (residual application).
 - **Nigerian Investment Promotion Commission Act** (NIPC Act): foreign investment framework, Negative List, business permit.
@@ -486,12 +485,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025. UNOFFICIAL COPY hosted by Premium Times, not an official host. Sections read: ss.56 to 59, 195, Fourth Schedule, definition of small company | https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf | 2026-11-01 |
+| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025. UNOFFICIAL COPY hosted by Premium Times, not an official host. Sections read: ss.10, 27, 34, 56 to 59, 135, 147, 162, 165, 182, 195, Fourth and Ninth Schedules, definition of small company | https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf | 2026-11-01 |
 | NRS notice of 20 July 2026 on e-invoicing (read by an earlier pass; official) | https://www.nrs.gov.ng/ | 2026-11-01 |
 
 NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
 
-Not yet confirmed: every NTA figure in this skill. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text in the pre-2026 section. Lost content restored: 0, nothing removed.
+Not yet confirmed: every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 
