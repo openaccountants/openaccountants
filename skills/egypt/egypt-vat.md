@@ -21,7 +21,7 @@ For tax year 2026. Figures come from the VAT Law as amended up to Law 149 of 202
 ## Who this applies to
 
 **Must register:**
-- Anyone selling taxable goods or services whose total taxable and exempt sales reach EGP 500,000 in the 12 months. Apply within 30 days of reaching the limit (VAT Law art. 16). The test counts exempt sales too.
+- Anyone selling taxable goods or services whose total taxable and exempt sales reach EGP 500,000 in the 12 months. Apply within 30 days of reaching the limit (VAT Law art. 16; UTPL art. 25). The test counts exempt sales too.
 - Every importer of taxable goods or services for trade, every exporter and every distribution agent, whatever the turnover (art. 16).
 - Every producer, provider or importer of a Schedule item, whatever the turnover (arts. 1, 41).
 - Non-residents selling to unregistered customers in Egypt, under the simplified supplier system (art. 17, replaced by Law 3 of 2022; Regulations art. 21 bis text added by Decision 24 of 2023).
@@ -31,9 +31,11 @@ For tax year 2026. Figures come from the VAT Law as amended up to Law 149 of 202
 
 **Not caught:** a natural person who does not carry on a business of selling goods or providing services, even if sales reach the limit (art. 16).
 
-**If you do not apply,** you count as registered by law from the day sales reached the limit (art. 16), and failure to register on time is treated as evasion (art. 68).
+**If you do not apply,** the tax office registers you from the data it holds and tells you within 5 working days (Unified Tax Procedures Law (UTPL) art. 25; UTPL art. 4 repealed VAT Law art. 16 paras 3 and 4). Failure to register on time is treated as evasion (art. 68(1)).
 
-**Small projects:** a project with annual turnover up to EGP 20 million that opts into Law 6 of 2025 files VAT quarterly (see Deadlines). Consultancy businesses earning at least 75% of turnover from consulting are outside it (Law 6/2025, art. 3). The choice locks in for five years (art. 5).
+**Under the limit:** a person below the limit must still register on the ETA electronic system for an annual fee set by the Minister, at most EGP 500, which stops when sales reach the limit (UTPL art. 25).
+
+**Small projects:** a project with annual turnover up to EGP 20 million that opts into Law 6 of 2025 files VAT quarterly (see Deadlines). A consultancy earning at least 90% of annual turnover from one or two persons is outside it (Law 6/2025, art. 4). The choice locks in for five years (art. 5).
 
 ## Rates, bands and thresholds
 
@@ -54,10 +56,12 @@ For tax year 2026. Figures come from the VAT Law as amended up to Law 149 of 202
 | Crude oil Schedule tax | 10% of value | Schedule I item 16 (Law 157/2025 art. 5) | 2026 | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf |
 | Goodwill on shop sale or rent | 10% of 10% of the rent or sale value | Schedule I item 15 (Law 157/2025 art. 2); return type "Schedule and VAT", Excel code 46 | 2026 | same |
 | Professional and consulting services | 10% of the amount actually paid | Schedule I item 12: Schedule tax only. Craftsmen are outside it | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf |
-| Contracting and construction | 14% | Schedule I item 9 repealed by Law 157/2025 art. 6, so the general rate applies. Decision 418/2025 covers contracts straddling the change | 2026 | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf |
-| Gypsum; soap and household detergents | 14% | Schedule I items 8 and 10 (5% Schedule tax) repealed by Law 149/2026 art. 4 from 29 July 2026 | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf |
+| Contracting and construction | 14% | Schedule I item 9 repealed by Law 157/2025 art. 6. Decision 418/2025 art. 1 has the contractor collect VAT at the rate set by law on the invoice, and covers contracts straddling the change | 2026 | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf |
+| Gypsum; soap and household detergents | 14% | Schedule I items 8 and 10 (5% Schedule tax) repealed by Law 149/2026 art. 4 from 29 July 2026. The repeal names no rate: 14% follows from arts. 2 and 3, because neither item is on the exempt list. Gypsum in its natural state falls under exempt item 20 | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf |
+| Air-conditioned inter-governorate transport (bus, rail) | 5% of value | Schedule I item 11 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf |
+| Other Schedule I items as enacted | Edible oils and fats 0.5%; crackers and flour confectionery, processed potato products, fertilisers and pesticides, media and film production 5% | Schedule I items 3 to 7 and 13; later amendments to items 3 and 4 changed the description | 2026 | same |
 
-**Schedule I** items bear Schedule tax only: no VAT and no input credit. **Schedule II** items bear Schedule tax plus VAT, and input credit goes against the VAT only (Regulations art. 27). Check tobacco, alcohol, fuel, vehicles and similar items against the Schedule and its amendments for the rate.
+**Schedule I** items bear Schedule tax only: no VAT and no input credit, except that tax paid on machinery parts, equipment and spare parts used for Schedule-only output can be settled against Schedule tax (art. 27). **Schedule II** items bear Schedule tax plus VAT, and input credit goes against the VAT only (Regulations art. 27). Check tobacco, alcohol, fuel, vehicles and similar items against the Schedule and its amendments for the rate.
 
 ### Exempt list, 2026 changes
 
@@ -94,19 +98,19 @@ Reverse any earlier credit by an addition notice.
 
 **Continuous services.** The invoice triggers the tax for telecoms, cleaning and security, goods transport, and contracting supported by the consultant's approved certificate (art. 33; Regulations art. 26 as replaced by Decision 417/2025).
 
-**Tax invoice.** Serial number, date, seller name, address and registration number, buyer name, address and tax registration or national number, description, value, rate, tax, total (art. 12; Regulations art. 13).
+**Tax invoice.** Serial number, date, seller name, address and registration number, buyer name, address and tax registration or national number, description, value, rate, tax, total (Regulations art. 13; VAT Law art. 12 was repealed by UTPL art. 4).
 
 ## Deadlines and filing
 
 | Duty | When | Source |
 |---|---|---|
-| Monthly return, Form 10 | Within the month after the tax period ends, even with no sales | Unified Tax Procedures Law (UTPL) art. 31(a) |
+| Monthly return, Form 10 | Within the month after the tax period ends, even with no sales | UTPL art. 31(a) |
 | Quarterly return, Law 6/2025 project | Every 3 months, within the month after the period, with payment | Law 6/2025 art. 12 |
 | Gold and silver, Form 10 bis | Same monthly deadline | ETA FAQ |
 | Reverse charge, Form 111 | 30 days from receiving the service | Art. 32; ETA FAQ |
-| Register | 30 days from reaching the limit | Art. 16 |
-| Notify changes | 21 days | Art. 20 |
-| Records | Keep 5 years after the financial year | Art. 13 |
+| Register | 30 days from reaching the limit | Art. 16; UTPL art. 25 |
+| Notify changes | 30 days from the change; heirs 60 days from death | UTPL art. 28 (VAT Law art. 20 repealed) |
+| Records | Keep 5 years after the tax period | UTPL art. 38 (VAT Law art. 13 repealed) |
 
 A deadline on an official holiday moves to the next working day (Regulations art. 16). The VAT law's old two-month period and 15 June April rule were overtaken by UTPL art. 31 and by art. 14 as replaced in 2022. The 2017 Regulations still show the old rule; the law wins.
 
@@ -128,9 +132,9 @@ An exporter, importer or service provider acting once or twice a year can ask ET
 
 **Amended return:** Add form, VAT forms, tax period, Form 10, return type original or amended. Conditions: the original was on time, no Form 4 examination notice has been issued for the period, and the period is not in anti-evasion work.
 
-**Refund:** claim with supporting papers, including a certificate signed by a listed accountant. ETA pays within 45 days (art. 30). Grounds: exports, tax collected in error, the credit balance above, buses and passenger cars where carrying passengers is the licensed activity, and tax borne by a simplified non-resident. A late refund bears interest at the Central Bank credit and discount rate on 1 January, plus 2 points (UTPL refund chapter).
+**Refund:** claim with supporting papers, including a certificate signed by a listed accountant unless the payment shows on the ETA electronic system. ETA pays within 45 days (art. 30). Grounds: exports, tax collected in error, the credit balance above, buses and passenger cars where carrying passengers is the licensed activity, and tax borne by a simplified non-resident. A late refund bears interest at the Central Bank credit and discount rate on 1 January, plus 2 points (UTPL refund chapter).
 
-**After filing:** ETA may amend within 5 years of the filing deadline; 6 years for evasion (arts. 15, 48). You have 30 days to object to an assessment. An internal committee decides within 60 days, then the appeal committee. Court appeal is 60 days from notice of its decision (arts. 56, 58, 61).
+**After filing:** ETA may assess or amend within 5 years of the filing deadline; 6 years for evasion (UTPL art. 44). You have 30 days from notice to object to an assessment, or the assessment becomes final (UTPL art. 55). An internal committee decides within 60 days of receiving the file, extendable once, then the appeal committee. Court appeal is 60 days (UTPL art. 55). VAT Law art. 48 and the dispute chapter except art. 62 were repealed by UTPL art. 4.
 
 ## Penalties and interest
 
@@ -138,12 +142,12 @@ An exporter, importer or service provider acting once or twice a year can ask ET
 |---|---|---|
 | Unpaid tax | Additional tax 1.5% a month or part month from the end of the payment period | VAT Law art. 1 |
 | ETA amends after year 3 | No additional tax from the end of year 3 to the notice | Art. 15 |
-| Return or payment late up to 60 days; wrong data raising the tax | Fine EGP 3,000 to 50,000 plus tax, tripled on repeat | UTPL, Part 9 |
-| Return over 60 days late | Fine EGP 5,000 to 200,000, doubled on repeat within 3 years | UTPL, Part 9 |
-| Other non-evasion breaches under the VAT law | 1% of the tax due, minimum EGP 1,000, maximum EGP 10,000, doubled within 3 years | Fine article as replaced by Law 3/2022 |
-| Evasion, such as no invoices, wrongful credit, late registration, 60 days past due unpaid | 3 to 5 years in prison and/or fine EGP 5,000 to 50,000 | Arts. 67, 68 |
+| Return or payment late up to 60 days; wrong data raising the tax | Fine EGP 3,000 to 50,000 plus tax, tripled on repeat | UTPL art. 69 |
+| Return over 60 days late | Fine EGP 5,000 to 200,000, doubled on repeat within 3 years | UTPL art. 70 |
+| Other non-evasion breaches under the VAT law | 1% of the tax due, minimum EGP 1,000, maximum EGP 10,000, doubled within 3 years | Art. 50 as added by Law 3/2022 art. 2 (old art. 66 repealed by UTPL art. 4) |
+| Evasion, such as no invoices, wrongful credit, late registration | 3 to 5 years in prison and/or fine EGP 5,000 to 50,000 | Arts. 67, 68 |
 | Non-resident registrant in default | Minister may seek a block on access to the Egyptian market | Art. 67 bis, Law 3/2022 |
-| Settlement | Tax, additional tax and half the tax as compensation for evasion | Art. 73 |
+| Settlement of an offence | Pay 100% of the tax amounts due before prosecution, 150% before judgment, 175% after a final judgment | UTPL art. 75 (VAT Law art. 73 repealed) |
 
 Law 152/2026 renews the Law 79/2016 dispute settlement scheme; Decision 450/2026 sets the application.
 
@@ -249,12 +253,12 @@ Keep a working paper with date, party, registration number, invoice reference, n
 | Regulations, Decree 66/2017, arts. searched, not the whole; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf | 2026-11-01 |
 | Decision 24/2023, non-resident parts; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.24-2023.pdf | 2026-11-01 |
 | Decision 417/2025; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.417.of_.2025.pdf | 2026-11-01 |
-| UTPL Law 206/2020, art. 31, refund and penalty chapters; read for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
-| Law 6/2025, arts. 3, 5, 12; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
+| UTPL Law 206/2020, issuing art. 4 (VAT repeals), arts. 25, 28, 31, 38, 44, 55, 69, 70, 75, refund chapter; read for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law 6/2025, arts. 4, 5, 12; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
 | ETA FAQ, returns (VAT), 2nd edition; archived copy; read for the figures cited | https://web.archive.org/web/2026/https://eta.gov.eg/sites/default/files/2024-12/faqs-value-added-tax.v2.pdf | 2026-11-01 |
 | ETA VAT laws list and VAT forms page, sales sheet archived copy; read for the figures cited | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-01 |
 
-Not yet confirmed: the number of the fine article (Law 3/2022 prints 50, while the base law text sits at art. 66); e-invoice and e-receipt scope and phases (old text said mandatory for all registered businesses; the decisions were not read); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); UTPL Part 9 article numbers; whether any later law changed the 1.5% additional tax or the art. 15 and art. 48 periods after UTPL; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
+Not yet confirmed: the EGP 250,000 VAT limit attributed to Resolution 281 of 2025: VAT Law art. 16 reads EGP 500,000, ETA's VAT law list shows no such decision, and the minister's power to change the limit means a decision outside that list would displace the figure; e-invoice and e-receipt scope and phases (old text said mandatory for all registered businesses; the decisions were not read); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); whether any later law changed the 1.5% additional tax; the Schedule rate reading of 14% has no ETA instruction behind it for gypsum and detergents; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
 
 ## Disclaimer
 
