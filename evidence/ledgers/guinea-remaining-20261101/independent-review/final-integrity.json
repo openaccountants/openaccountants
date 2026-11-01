@@ -1,0 +1,1644 @@
+{
+  "frozen_candidate": "703d8b9b04cb41b8e6f02e195f89f1061ffe7d13",
+  "current_HEAD": "dbd246e03a7bfcad7cc1955ba2f904b2b96ec5c5",
+  "guide_count": 8,
+  "guides": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "sha256": "f572c69c1fad8005da80bd159b8e4ac8e163cb91cc99bab13a7f766c5536f359",
+      "git_blob": "973d2e11012b80cf0f4b955f11b33a233cd9cdeb",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "sha256": "178071d8a109983b6f0a38d45f0e35e687bc5bc9b3aec378914de37b75faeb2b",
+      "git_blob": "d46233ccf22703a6afd32341e6f552055266cb27",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "sha256": "12af07ec398e833baa76de68b69dc290315401968077703405109cda6795f105",
+      "git_blob": "24a4e99fcb1db34ede2f717f4399561bc7137f6b",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "sha256": "2a06226a82b7ff823ea60f081b210dd0a16e429b7689b270ee1e0cede38b701d",
+      "git_blob": "1f0dc7e38bd897059a91fb59cc632cfa3837b047",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "sha256": "10ba592f6fe9782226f9e6226edbac4f5904d68af729d72bd30feedc622e3e27",
+      "git_blob": "a4ea6cbda2eb8d6b74a7bb2f8ff0510a52c5e95b",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "sha256": "44e868060d16b587b580506966be53752568cdb27bce578663ae0625b85d2de3",
+      "git_blob": "aa91928a2d686e4467752b9ca987921407a66b29",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "sha256": "83135fc41ebe98bf87b19d39e199702f3cf8b0ddc2aad1bdb87f782c453140b6",
+      "git_blob": "db4d183bd2befb93436b131488b9cdb94585ec1b",
+      "matches_frozen": true
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "sha256": "2a2c575e5260ef10f0c3a5c840f9a3ef7d89592635433e49dce71ddc1f2ff78a",
+      "git_blob": "f3a20e87739bc8d1225da7baea506137fab10a52",
+      "matches_frozen": true
+    }
+  ],
+  "README_sha256": "3a58d278ee8e10add2283503da623b105e15a3075518d83ceaff7ba35d2ebe88",
+  "README_matches_frozen": true,
+  "legacy_source_item_count": 76,
+  "legacy_preservation": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-company-formation:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:introduction_or_context_paragraph:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Choose form: attributed APIP capital guidance; Boundary and Sources: national instrument hold",
+            "status": "explicit_hold_national_capital_instrument",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Choose form / Boundary / Sources: Guinea capital mechanism held, CFA never relabelled GNF",
+            "status": "explicit_hold_unverified_minimum",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:25",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Reconcile published fees; Worked cases; Sources: sliding capital duty held",
+            "status": "expanded_fee_routes_and_explicit_duty_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:27",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Filing and payment: conditional APIP72hour service statement",
+            "status": "replaced_unverified_timing",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-company-formation:bullet:28",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Verify completion: company-law reporting; separate CNSS; Sources: tax and detailed accounting holds",
+            "status": "expanded_and_explicit_tax_reporting_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-corporate-income-tax:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Who this applies to; The base: profit bridge; IMF method",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:introduction_or_context_paragraph:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Who this applies to; The base: profit bridge; IMF method",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Rates, bands and thresholds: CGI229 rows",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Rates, bands and thresholds: CGI229 rows",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Rates and The base:2% prior-year IMF method; worked cases",
+            "status": "corrected_superseded_3_percent",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "The base: accounting-to-tax bridge, losses and distinct IMF base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:25",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "The base step6; Sources: disposal/reinvestment/share/merger specific method holds",
+            "status": "ordinary_gains_confirmed_general_15_percent_rejected",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:27",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Deadlines and filing; IMF credit buckets; two worked examples",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:28",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "heading_or_hold": "Deadlines and filing; IMF credit buckets; two worked examples",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-income-tax:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Who this applies to; Rates, bands and thresholds; The base",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:18",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "The base step5: deductibleemployeecompulsoryamount fromCNSSGuide",
+            "status": "corrected_employee_share_and_noemployerdeduction",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Who this applies to: CGI4alternatives and15categoricalscope",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:25",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "The base step7; Deadlines and filing: employerwithholding/DMU/10dayremit",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Who this applies to; Cross-border points; foreignsalary/treatyholds",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-income-tax:bullet:27",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "heading_or_hold": "Deadlines and filing: Januaryemployerstatement andforeignpayerbranch; no universal31March",
+            "status": "unsupported_universal_deadline_rejected_and_specificdutiespreserved",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-payroll-social:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:introduction_or_context_paragraph:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds sickness combined row and explanation",
+            "status": "corrected_employer_only_misclassification",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds family/occupational rows",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:25",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to final paragraph; Sources: salary tax hold",
+            "status": "explicit_hold_current_salary_tax",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:27",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Deadlines and filing: separate CNSS frequency and15/20conflict; Sources: salarytax remittancehold",
+            "status": "expanded_and_explicit_tax_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-payroll-social:bullet:28",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-tax-overview:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Who this applies to; Rates routing table; The base",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:introduction_or_context_paragraph:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Who this applies to; Rates routing table; The base",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "The base step2: calendarbusinessperiod withfirstperiodexception, monthlyjobs separate",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "The base step3: GNF andverifiedforeignconversion",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Deadlines and filing: currentDGI, separateCNSS/APIP",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "The base step1; Cross-border; owningindividual/corporateGuide",
+            "status": "qualified_old_worldwide_summary",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Rates table: individualmonthlyITSowner; oldannual35%notretained",
+            "status": "rejected_unsupported_old_IRPP_toprate",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Rates table: corporateGuideownsCGI229rates",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:25",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Rates table: VATGuideownsCGI373rates",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Deadlines and filing: nouniversalMarchreturn,specificownercalendars",
+            "status": "rejected_unsupported_universal_deadline",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:27",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "The base step2; Deadlines: VATownermonthly10thamendment",
+            "status": "corrected_old15daydate_byownerlink",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-tax-overview:bullet:28",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "heading_or_hold": "Rates route: formationaccounts/registry; Sources: detaileddetailedaccountingstandardsheld",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "old_complete_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "old_full_frontmatter_exact": true,
+      "platform_fields_preserved": true,
+      "full_current_CTA_preserved": true,
+      "stored_CTA_exact": true,
+      "predecessor_items": [
+        {
+          "id": "gn-vat-gst:heading_h1:13",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:heading_h2:15",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:17",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:18",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Rates and territoriality: zero exports limited; outsideGuineaservices distinct",
+            "status": "corrected_overbroad_zero_services_claim",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:19",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Rates and inputeligibility: actual362/laterconditions; specificlistsheld",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:20",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Who this applies to: franchise359/option360/key373quater",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:21",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Deadlines and filing: monthlyreturn/nil/creditdetails",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:22",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Deadlines and filing:2025law10threplaces15th",
+            "status": "corrected_superseded_fifteenth_deadline",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:23",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "The base and Cross-border:373bisregisteredrecipientconditions",
+            "status": "qualified_overbroad_B2B_statement",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:bullet:24",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Cross-border:373quater/quinquiesrepresentationonlyifregistrationrequired",
+            "status": "qualified_universal_registration_statement",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        },
+        {
+          "id": "gn-vat-gst:introduction_or_context_paragraph:26",
+          "exact_slice": true,
+          "exact_hash": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "heading_or_hold": "Who this applies to; Rates; The base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Original exact text retained; current conditions and holds replace unsupported old scope."
+          },
+          "destination_independently_read": true
+        }
+      ]
+    }
+  ],
+  "accepted_predecessor_line_count": 141,
+  "accepted_predecessor_preservation": [
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "old_full_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "every_nonblank_old_body_line_exact_and_present": true,
+      "all_original_oa_checks_unchanged": true,
+      "current_oa_count": 4,
+      "destinations_and_explicit_exceptions_read": true
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "old_full_source_exact": true,
+      "old_sha_exact": true,
+      "old_blob_exact": true,
+      "every_nonblank_old_body_line_exact_and_present": true,
+      "all_original_oa_checks_unchanged": true,
+      "current_oa_count": 2,
+      "destinations_and_explicit_exceptions_read": true
+    }
+  ],
+  "prior_review_history": [
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/checks.json",
+      "unchanged": true,
+      "sha256": "bb269786003e0eb7cc5bf80ddec29c67ad8251d4476879e16c2f69ce6e25a640"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/preservation.json",
+      "unchanged": true,
+      "sha256": "475294129ba0603087ae7e28c2b818b2287910976b06ca970f9f2dfe55f15c37"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/review.md",
+      "unchanged": true,
+      "sha256": "b48a11134798c5e2dd674f54b7f8ffa594f3f905ec61d1e96be64ee8151b398e"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/sources.json",
+      "unchanged": true,
+      "sha256": "7ceebc53d26bd90ed99f3fbb2631db0c42fffd2ee9abc01b96280e11bfd8cd2d"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/checks.json",
+      "unchanged": true,
+      "sha256": "8de1fd4ae5877e599b7673dd01a6414e273fdc9b23d3f59b7f2e6353d611d4c7"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/closure.md",
+      "unchanged": true,
+      "sha256": "1e5c739693e7f5d3e749a1f1a66be935076e6cfb9e98046b82229ce97e82fc32"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/integrity.json",
+      "unchanged": true,
+      "sha256": "7c1eb85fc3fbfb8591a54cd7844f2be6f4ca5775b4a8e21af71004e1a6fa2a93"
+    },
+    {
+      "path": "evidence/ledgers/gn-property-tax.md",
+      "unchanged": true,
+      "sha256": "5d802f827c99990f666cf96410f7ce8bbd1ede90ace862c3e9c1ae7f4165e93e"
+    },
+    {
+      "path": "evidence/ledgers/gn-vat-invoice-control.md",
+      "unchanged": true,
+      "sha256": "c2cdbad33438bf9a786176df9e8cd9815394d38e401483ad77b89e92bc4b23e0"
+    },
+    {
+      "path": "evidence/ledgers/gn-old-topic-destinations.md",
+      "unchanged": true,
+      "sha256": "fb853bdbc11613c7fe442217019e6d2d7e10526ebf4bea5baa782197fbeb0ebf"
+    },
+    {
+      "path": "evidence/ledgers/gn-source-scope-20261101.md",
+      "unchanged": true,
+      "sha256": "31ae0e2d1c59c650290c087a614d52fe3252884eb16df2e3754321e0c30ee509"
+    },
+    {
+      "path": "evidence/ledgers/guinea-repair-1/writer-repair.json",
+      "unchanged": true,
+      "sha256": "0fa1ba887c5aaeb5a85b023953ceceb41531237dacc890009f900e6d7ea9e076"
+    }
+  ],
+  "source_checks": [
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-code-1994.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-code-1994.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-reglement-1994.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-reglement-1994.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-cotisations-employeurs-browser-2026-11-01.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-recouvrement-browser-2026-11-01.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cnss-immatriculation-browser-2026-11-01.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "ohada-auscgie-2014.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "ohada-auscgie-2014.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-creation.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-creation.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-sarl.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-sarl.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-sarl-info-2025.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-creation-formulaire-2026.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-sa.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-sas.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-succursale.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "apip-individuelle.html",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cgi-enacted-2021-itie.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "cgi-enacted-2021-itie.txt",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "dgi-precis-fiscal-2026.docx",
+      "matches": true
+    },
+    {
+      "manifest": "source-hashes.json",
+      "file": "dgi-precis-fiscal-2026.txt",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "cgi-enacted-2021-itie.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "dgi-precis-fiscal-2026.docx",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfi2022.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfr2022.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfi2023.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfr2023.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfi2024.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfr2024.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfi2025.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "current-law-source-manifest.json",
+      "file": "lfr2025.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "salary-source-read-manifest.json",
+      "file": "cgi-enacted-2021-itie.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "salary-source-read-manifest.json",
+      "file": "dgi-precis-fiscal-2026.docx",
+      "matches": true
+    },
+    {
+      "manifest": "salary-source-read-manifest.json",
+      "file": "lfi2024.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "salary-source-read-manifest.json",
+      "file": "lfi2025.pdf",
+      "matches": true
+    },
+    {
+      "manifest": "salary-source-read-manifest.json",
+      "file": "lf2026.pdf",
+      "matches": true
+    }
+  ],
+  "unique_source_files_checked": 32,
+  "lost_content_restored": 0,
+  "original_conditional_source_manifest_checks": [
+    {
+      "file": "lf2026.pdf",
+      "matches": true
+    },
+    {
+      "file": "embassy-lfr-nov1.html",
+      "matches": true
+    },
+    {
+      "file": "dgb-2026-page.txt",
+      "matches": true
+    },
+    {
+      "file": "dgb-2026-page.html",
+      "matches": true
+    },
+    {
+      "file": "embassy-lfr-nov1.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026.txt",
+      "matches": true
+    },
+    {
+      "file": "dgb-projects-page.txt",
+      "matches": true
+    },
+    {
+      "file": "dgb.html",
+      "matches": true
+    },
+    {
+      "file": "Loi-de-Finances-Initiale-2026.pdf",
+      "matches": true
+    },
+    {
+      "file": "dgb-projects-page.html",
+      "matches": true
+    },
+    {
+      "file": "dgi.html",
+      "matches": true
+    },
+    {
+      "file": "apip-cgi.html",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-022.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-023.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-021.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-009.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-008.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-020.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-018.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-024.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-025.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-019.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-027.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-026.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-023.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-022.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-008.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-020.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-021.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-009.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-025.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-019.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-018.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-024.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-026.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-027.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-016.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-017.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-029.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-015.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-014.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-028.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-010.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-011.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-007.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-013.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-012.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-006.png",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-017.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-016.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-014.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-028.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-029.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-015.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-011.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-010.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-006.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-012.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-013.txt",
+      "matches": true
+    },
+    {
+      "file": "lf2026-pages/page-007.txt",
+      "matches": true
+    }
+  ],
+  "original_conditional_source_files_count": 60,
+  "post_freeze_evidence_HEAD": "dbd246e03a7bfcad7cc1955ba2f904b2b96ec5c5",
+  "all_guide_bytes_still_equal_frozen": true
+}
