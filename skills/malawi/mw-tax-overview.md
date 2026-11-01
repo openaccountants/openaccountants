@@ -89,7 +89,7 @@ Get taxpayer/legal identity and TIN, activities, income type/source, actual asse
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 2,21–23,38–40,91 | 2026-11-01 |
 | [Act 36/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content), ss 3–6 and current income tables | 2026-11-01 |
 | [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), s 3 foreign-incorporation surcharge removal | 2026-11-01 |
-| [April 2026 gazettebundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), VATAct 5 and TaxAdminAct 6 | 2026-11-01 |
+| [April 2026 gazettebundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), VAT Act 5 and Tax Admin Act 6 | 2026-11-01 |
 | [Taxation historicalconsolidation](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), s 2 definition only, not old current-rate metadata | 2026-11-01 |
 | [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), section 84 deletion and VAT administrative substitutions | 2026-11-01 |
 

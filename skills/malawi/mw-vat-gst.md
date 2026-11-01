@@ -30,7 +30,7 @@ Use for current ordinary domestic taxable transactions after Act 5/2026 applies.
 | Ordinary taxable supplies | 17.5% standard rate | [VAT 9 amended by Act 37/2025 s 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/b0ea0034-2169-45bd-9afe-c7321fb17337/content) |
 | Ordinary annual taxable business/mining turnover registration | K50,000,000 or more, after Act 5/2026 applies | [Act 5/2026 s 4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content) |
 | Nonresident digital supplier/intermediary/marketplace within amended definitions | Registration irrespective of threshold | [Act 5/2026 ss 2,4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content) |
-| Monthly return and payment | By 25 th of following month | [VAT 34, renumbered 3–4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content); [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content) |
+| Monthly return and payment | By 25th of following month | [VAT 34, renumbered 3–4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content); [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content) |
 | Refund claim for excess input tax | Six months from relevant period under amended TAA 81(1); not the old twelve-month refund window | [Act 6/2026 s 4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content); [TAA 81](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |
 
 Exemption and zero rating depend on the current statutory schedules and product conditions. Do not use “basic foodstuffs and medicines” as a general zero-rated category. May 2025 replaces First Schedule 9 with ordinary-bread exemption; April 2026 again amends the exemption and zero-rate schedules. This Guide does not give a complete tariff-classification table.
@@ -43,7 +43,7 @@ Act 5/2026 replaces 30(3): no deduction for exempt-supply purchases/imports or d
 
 ## Deadlines and filing
 
-Prepare the prescribed monthly VAT return, output transaction schedule, compliant purchase/customs documents, tax point analysis, credit history and any refund workpaper. VAT 34(1) makes the period the calendar month unless directed otherwise;34(3) and(4), after 2021 renumbering, put declaration and payment by the 25 th of the next month. TAA 40 governs the prescribed manner and signature, and 38(3) electronic acceptance through a document registration number. Keep that acknowledgement and payment proof. [VAT 34](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content); [Act 15/2021 Schedule](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 38–40](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Current portal boxes, registration form and electronic-invoice implementation notices remain unverified; the 2024 PartII electronic-invoicing text needs its appointed-date notice before a historical application claim.
+Prepare the prescribed monthly VAT return, output transaction schedule, compliant purchase/customs documents, tax point analysis, credit history and any refund workpaper. VAT 34(1) makes the period the calendar month unless directed otherwise;34(3) and(4), after 2021 renumbering, put declaration and payment by the 25th of the next month. TAA 40 governs the prescribed manner and signature, and 38(3) electronic acceptance through a document registration number. Keep that acknowledgement and payment proof. [VAT 34](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content); [Act 15/2021 Schedule](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 38–40](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Current portal boxes, registration form and electronic-invoice implementation notices remain unverified; the 2024 PartII electronic-invoicing text needs its appointed-date notice before a historical application claim.
 
 ## Penalties and interest
 
@@ -51,7 +51,7 @@ Identify late return separately from late payment. Use TAA 87 for late payment a
 
 ## Cross-border points
 
-Act 5/2026 adds digital supplies to VAT 7(1) and the place rule 26(3): the recipient’s usual residence or establishment controls regardless of contract/payment place. That digital regime is not a generic statement that all imported services use the same procedure. Traditional imported-service reverse charge, B2 B exclusions and non-resident registration/payment forms remain outside this current computation. [Act 5/2026 ss 2–3,7–8](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
+Act 5/2026 adds digital supplies to VAT 7(1) and the place rule 26(3): the recipient’s usual residence or establishment controls regardless of contract/payment place. That digital regime is not a generic statement that all imported services use the same procedure. Traditional imported-service reverse charge, B2B exclusions and non-resident registration/payment forms remain outside this current computation. [Act 5/2026 ss 2–3,7–8](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
 
 ## Two worked examples that recompute
 
@@ -97,7 +97,7 @@ Get the transaction date, tax regime/registration, annual turnover, goods/servic
 |---|---|
 | [VAT principal official-library consolidation](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content), ss 11,24–32,34; historical 2014 text reconciled only as stated | 2026-11-01 |
 | [Act 37/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/b0ea0034-2169-45bd-9afe-c7321fb17337/content), s 2 standard rate | 2026-11-01 |
-| [Gazette 2026 bundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), VATAct 5 ss 2–11 and TAAAct 6 s 4; printed operative text read | 2026-11-01 |
+| [Gazette 2026 bundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), VAT Act 5 ss 2–11 and TAA Act 6 s 4; printed operative text read | 2026-11-01 |
 | [Act 18/2023](https://elibrary.rat.gov.mw/server/api/core/bitstreams/33eae3f0-090c-4dcc-b47a-cfa2ad663851/content), s 2 input/export documentation | 2026-11-01 |
 | [Act 14/2024](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f90f7edf-5012-4ad7-a6f7-bc9866c31195/content), PartI and PartII commencement/invoicing text | 2026-11-01 |
 | [Act 15/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/d650225f-a811-49bf-aa40-f4757d8c7225/content), s 2 bread exemption | 2026-11-01 |

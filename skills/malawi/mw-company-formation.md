@@ -88,7 +88,7 @@ Get incorporation/legal-form evidence, shareholder/director consents and identit
 | Official source and portions actually read | Read on |
 |---|---|
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 21–23 and 28(2) read in full | 2026-11-01 |
-| [VATAct 5/2026](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), s 4 registration categories | 2026-11-01 |
+| [VAT Act 5/2026](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), s 4 registration categories | 2026-11-01 |
 
 **Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; CompaniesAct 2013 primary text and current incorporation authority mandate; private/public/guarantee/partnership/branch rules; minimum capital, maximum 50 members, restricted share transfers, statutory registers, director/residence requirement, name reservation/consent forms, exact incorporation steps/timing, registry fees, annual return/AGM/accounts rules. CRIPC official home failed direct DNS and browser DNS on this read; no successful live read is claimed. The old VAT K25 m and 180-day annual-tax claims are superseded or unresolved as stated in the owning Guides.
 

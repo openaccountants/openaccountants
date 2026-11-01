@@ -94,7 +94,7 @@ Get the taxable-pay reconciliation and pay frequency, period, each income catego
 | Official source and portions actually read | Read on |
 |---|---|
 | [Act 36/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content), s 6 Appendix A/B read in full | 2026-11-01 |
-| [MRA updatednotice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), V–VI current annual/monthly tables; date wording compared with earlier notice | 2026-11-01 |
+| [MRA updated notice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), V–VI current annual/monthly tables; date wording compared with earlier notice | 2026-11-01 |
 | [Taxation official-library consolidation](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), s 11,102; PAYE Rules 3,6,10 only, not old rates | 2026-11-01 |
 | [Act 17/2023](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content), s 4 replacement 37 | 2026-11-01 |
 | [Act 15/2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Schedule 84/102 cutover | 2026-11-01 |
