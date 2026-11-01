@@ -1,10 +1,10 @@
 ---
 name: portugal-financial-statements
 description: "Utilize esta skill na preparação, revisão ou aconselhamento sobre demonstrações financeiras anuais de uma sociedade portuguesa para exercícios de 2026. Acione com expressões como \"demonstrações financeiras\", \"IES\", \"Informação Empresarial Simplificada\", \"SNC\", \"NCRF\", \"NCRF-PE\", \"NC-ME\", \"balanço\", \"demonstração de resultados\", \"demonstração de fluxos de caixa\", \"anexo\", \"Portal das Finanças\", \"depósito de contas\", \"ROC\", \"revisão legal de contas\" ou qualquer questão sobre preparação e depósito de contas estatutárias ao abrigo da lei portuguesa. Abrange o referencial SNC, os novos limiares dimensionais do DL 126-B/2025 (micro EUR 450.000 / 900.000, pequenas EUR 5.000.000 / 10.000.000, médias EUR 25.000.000 / 50.000.000), as demonstrações obrigatórias por dimensão, formatos, anexo, prazo de aprovação, submissão da IES até 15 de julho e a revisão legal de contas (CSC art. 262.º: EUR 1.500.000 / 3.000.000 / 50). Fora do âmbito: IRC e impostos diferidos em detalhe (pt-corporate-tax), plano de contas e lançamentos (portugal-bookkeeping), declaração periódica de IVA (portugal-vat-return). Trigger also on: \"Portuguese financial statements\", \"SNC accounts\", \"IES filing Portugal\", \"NCRF\", \"NC-ME microentities\", \"NCRF-PE small entities\", \"Portugal size thresholds 2026\", \"Portal das Finanças deposit of accounts\", \"ROC statutory audit Portugal\"."
-version: 1.2
+version: 1.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -351,8 +351,6 @@ Not yet confirmed: the registration fee for the accounts filing (the old version
 ## Aviso Legal
 
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de serem submetidos ou utilizados como base de decisão.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

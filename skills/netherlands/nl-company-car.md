@@ -1,13 +1,13 @@
 ---
 name: nl-company-car
 description: "Dutch company car benefit (bijtelling privegebruik auto) in payroll for tax year 2026. Covers when an employer adds private use of a car or van to wage (Wet LB 1964 art. 13bis): the 22% addition on the catalogue value including VAT and BPM, 25% for cars first admitted before 2017, the 2026 zero-emission discount (18% up to EUR 30,000, 22% above), the 60-month rule that fixes the rate in force at first admission, 35% of market value for cars older than 16 years, vans, the 500 km private-use proof (rittenregistratie, Verklaring geen privegebruik), the employee's own contribution (eigen bijdrage), Zvw and employee-insurance effects, and why the werkkostenregeling cannot absorb it. Trigger on: bijtelling, auto van de zaak, company car Netherlands, lease car tax, eigen bijdrage auto, rittenregistratie, bestelauto. Out of scope: general payroll (nl-payroll-tax), entrepreneurs' own cars in box 1 profit (nl-zzp-deductions), VAT on private use (nl-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -189,8 +189,6 @@ expected:
 | Kennisgroep Belastingdienst KG:213:2026:1 (youngtimer age 25 from 2027) | https://kennisgroepen.belastingdienst.nl/publicaties/kg21320261-heretikettering-bij-wetswijziging-privegebruik-auto/ | 2026-10-23 |
 
 Not yet confirmed: (1) the retroactive repair of art. 13bis(5)(b) (market value from 16 instead of 15 years) is announced but was not in the law text on 23 October 2026; (2) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

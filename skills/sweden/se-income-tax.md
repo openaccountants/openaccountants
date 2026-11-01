@@ -1,10 +1,10 @@
 ---
 name: se-income-tax
 description: "Use for Swedish personal income tax for income year 2026 (return filed in 2027), with the full computation for a sole trader (enskild firma, enskild näringsidkare). Covers municipal and regional tax (2026 average 32.38%), state tax of 20% above the SEK 643,000 skiktgräns, the basic deduction (grundavdrag) and the higher amount from 66, the job tax credit (jobbskatteavdrag), the 7% pension contribution and its credit, capital income at 30%, ISK and capital insurance standard income with the SEK 300,000 tax-free amount, ROT and RUT, business income on the NE form (schablonavdrag for egenavgifter, räntefördelning, expansionsfond, depreciation, home office, representation), F-tax instalments, the 2 May deadline (3 May 2027), final tax dates, late-filing fees, tax surcharge and cost interest. Trigger on: Swedish income tax, kommunalskatt, statlig inkomstskatt, grundavdrag, jobbskatteavdrag, NE-bilaga, enskild firma, F-skatt, ISK, rot, rut, kvarskatt. Out of scope: se-employee-income-tax, se-social-contributions, sweden-payroll, se-capital-gains, se-closely-held-company-312, se-corporate-tax, se-cross-border."
-version: 2.2
+version: 2.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -250,8 +250,6 @@ expected:
 | Skatteverket, betala kvarskatt | https://www.skatteverket.se/privat/deklaration/betalakvarskatt.4.12815e4f14a62bc048f106ca.html | 2026-10-24 |
 
 Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; the public service fee rate (only the 2026 maximum was read); the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish; the 2-5% straight-line rates for buildings in the old version (the law sets the rate by the building's economic life, IL 19 kap. 5 §, and no official page with a 2-5% range was read).
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

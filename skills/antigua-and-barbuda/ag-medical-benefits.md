@@ -1,13 +1,13 @@
 ---
 name: ag-medical-benefits
 description: Prepare separate Medical Benefits Scheme calculations for ordinary employees, age categories and low earnings without importing social-security ceilings.
-version: 0.1
+version: 0.2
 jurisdiction: AG
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -55,8 +55,6 @@ The operative legislation for the rate table, wage definition, exceptions, contr
 ## Review output
 
 Retain the calculation, source versions and factual classification. A qualified local reviewer must check current amendments and the actual case before anyone files, pays or relies on the result. No professional attestation is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

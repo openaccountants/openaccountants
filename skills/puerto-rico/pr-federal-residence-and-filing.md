@@ -2,13 +2,13 @@
 name: pr-federal-residence-and-filing
 description: >
   Puerto Rico federal residence and filing reference for the 2025 tax year, checked against federal law and the IRS territory guide. Separates presence, tax home and closer connection from income sourcing and the federal exclusion. Covers alternative presence tests for US citizens and resident aliens, federal-government wages, departure exceptions and change-of-residence reporting. Explains why local registration or an incentive decree does not establish the federal tests. Includes a practical evidence checklist without promising a blanket tax exemption. Local personal tax calculations, investment sourcing, military exceptions and independent accountant review remain outside this initial draft.
-version: 0.1
+version: 0.2
 jurisdiction: PR
 tax_year: 2025
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -61,8 +61,6 @@ Retain a dated travel calendar, work-location records, home and family facts, ev
 ## Remaining review
 
 Checked 22 October 2026. Local personal-income rates, deductions, Act 60 eligibility, investment gains, move-year exceptions, military rules and information-return deadlines need their own verification. No independent accountant review has occurred. This is a source-cited federal framework, not comprehensive jurisdiction coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

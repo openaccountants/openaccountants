@@ -1,13 +1,13 @@
 ---
 name: ie-transfer-pricing
 description: "Use this skill for Irish transfer pricing under Part 35A of the Taxes Consolidation Act 1997 (TCA), as substituted by Finance Act 2019 and amended since. It covers who is associated (s.835B), the arm's length rule and the 2022 OECD Guidelines (s.835C, s.835D), Pillar One Amount B (s.835DA, from 2025), the domestic non-trading exclusion (s.835E), the SME exclusion (s.835EA) and the uncommenced SME regime (s.835F), documentation, master file EUR 250m and local file EUR 50m thresholds, the 30-day request and the EUR 4,000 or EUR 25,000 penalties (s.835G), corresponding adjustments (s.835H), the EUR 25m capital asset thresholds (s.835HA, s.835HB), country-by-country reporting (s.891H, EUR 750m), APAs, MAP and the EU dispute regulations. Tax year 2026. Trigger on: transfer pricing Ireland, Part 35A, Irish local file, master file Ireland, CbCR Ireland, Revenue APA, s.835G penalty. Out of scope: corporation tax rates and the base in general (ie-corporation-tax), treaties and non-residents generally (ie-cross-border), VAT (ie-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -231,8 +231,6 @@ expected:
 | Revenue, CT payment and filing (filing date, 0.0219% daily interest) | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-22 |
 
 Not yet confirmed: the percentages of the s.1077E tax-geared penalties (not stated here); what TP questions the 2026 CT1 asks; whether the Finance (No. 2) Bill 2026 is amended at later stages to touch Part 35A or s.891H (as initiated it does not); how profit is attributed between an Irish branch and its foreign head office (not part of Part 35A, not covered here).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
