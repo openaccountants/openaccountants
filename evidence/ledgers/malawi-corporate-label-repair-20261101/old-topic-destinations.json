@@ -1,0 +1,282 @@
+{
+  "baseline": "10a6b7587b0eb7faabfcaca071eab674544e6f6b",
+  "all_corporate_body_units": [
+    {
+      "unit": 1,
+      "old_line": 16,
+      "old_text": "# Malawi ordinary company tax and minimum alternative tax v1.3",
+      "old_sha256": "e243cac4441ea6d43b3ef3477a5009501ba7ebd00f7df8ace7e6f10bc936df75",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L16",
+      "disposition": "Same H1, version1.3 advanced to1.4 only."
+    },
+    {
+      "unit": 2,
+      "old_line": 18,
+      "old_text": "> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.",
+      "old_sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L18",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 3,
+      "old_line": 20,
+      "old_text": "## Who this applies to",
+      "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L20",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 4,
+      "old_line": 22,
+      "old_text": "**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted [Taxation (Amendment) Act 3 of 2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has now been read in full and its relevant changes are identified in the company, individual and TP drafts. Appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover remain unread; period allocation and the complete operative chain are not approved. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.",
+      "old_sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L22",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 5,
+      "old_line": 24,
+      "old_text": "Use for an ordinary non-mining company computing income tax under section 66 and the Eleventh Schedule. The income is received/accrued from sources within or deemed within Malawi. Act 14 of 2025 removed the ordinary company extra tax for incorporation outside Malawi; do not restore the old branch surcharge. Mining, insurance, priority-industry approvals and special regimes require their own verified computation. [Act 36/2025 ss 3–4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content); [Act 14/2025 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content). The two MRA December notices disagree between 30 and 31 December 2025; these examples are for periods wholly after both dates, not transition allocation.",
+      "old_sha256": "1595e1f728aba01f9b2f4b9547f2921badfb0c3427e8cc9a1b3f0daa6f9a48b7",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L24",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 6,
+      "old_line": 26,
+      "old_text": "## Rates, bands and thresholds",
+      "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L26",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 7,
+      "old_line": 28,
+      "old_text": "| Item and exact scope | Cited-text figure; currentness check pending | Official law |\n|---|---|---|\n| Ordinary non-mining company taxable income | 30% | [Act 17/2023 s 11, Eleventh(c)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content) |\n| Taxable income above K5,000,000,000 | Additional 10% on the excess, producing a 40% marginal rate | [Act 12/2024 s 7](https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content), read with [Act 36/2025 s 6(a)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content) and [Act 3/2026 s 12](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) |\n| Minimum alternative tax (MAT) | 0.5% total turnover | [Act 36/2025 ss 4,6(b)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content) |\n| MAT scope | Turnover **exceeds** K5,000,000,000 and business engaged for at least three years of assessment | [Section 66A(3)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content) |\n| MAT credit life | Six following years of assessment; oldest first; non-refundable | [Section 66B(2)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content) |",
+      "old_sha256": "e3a7ea0dad0a75e5700f65d780fd113c88443121e3708ee7dd9b9b19948720bc",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L28",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 8,
+      "old_line": 36,
+      "old_text": "The additional-tax chain matters: Act 36/2025 s 6(a) changes the word after “of”, reducing the additional rate from 10% to 5%; it does not reduce the K10 billion threshold. Act 3/2026 s 12 then restores the 10% additional rate and changes the threshold after “above” from K10 billion to K5 billion. The table and examples use that final cited-text combination, not an earlier-period computation. [Act 36/2025 s 6(a)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content); [Act 3/2026 s 12](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf).",
+      "old_sha256": "a60829b4d97cea58fdabb39019191ab2d84ab508bb45ea0c8a67bb9880403643",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L36",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 9,
+      "old_line": 38,
+      "old_text": "MAT does not require a continuous loss position. Age is measured in years of assessment, not assumed trading anniversaries.",
+      "old_sha256": "154fd97204fc1cdf4b80ac9aea93eced726050dbca91ede3a66d0b2c50bceb64",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L38",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 10,
+      "old_line": 40,
+      "old_text": "## The base",
+      "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L40",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 11,
+      "old_line": 42,
+      "old_text": "Start with tax-adjusted taxable income, not turnover. Section 28(1), replaced in 2023, permits noncapital expenditure/losses wholly, exclusively and necessarily incurred for trade or income production. Section 28(2) permits deduction only for expenditure producing taxable income when taxable and exempt income coexist, and disallows expenditure related to income subject to a final tax. If common expenditure cannot be directly attributed, the deductible share is common expenditure multiplied by taxable income divided by total income. If that formula gives an unreasonable result, the Commissioner General may approve or direct another apportionment method. Apply those restrictions before using the adjusted taxable-income input. Act 3/2026 s 4 also inserts section 45(l) into the deductions-not-allowed provision: add back any levy payable under the Taxation Act or any other written law. Reconcile this with the levies actually charged in the accounts before fixing the taxable-income input. [Taxation 45](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content); [Act 3/2026 s 4](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf). Reconcile accounting depreciation, capital allowances, exemptions, capital gains and non-allowable costs separately. General capital gains enter section 11 income; the old listed-share holding-period exemption in First Schedule(hb) was removed by Act 36/2025 s 5, so do not assume twelve-month holdings exempt. Detailed gain/basis rules remain outside this working paper. [2023 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content); [2025 s 5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content).",
+      "old_sha256": "34cdafd1bb74ddd28b4ccfbd0512938116587a34a7b289e7e2af553a017490fd",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L42",
+      "disposition": "Same The base paragraph; unsupported removal identification replaced with precise source-chain hold; general gain rule, deductions and all other prose retained."
+    },
+    {
+      "unit": 12,
+      "old_line": 44,
+      "old_text": "Compute ordinary tax, adding the marginal excess charge. For a company meeting both MAT conditions, turnover includes exempt amounts but excludes final-withholding payments (66A(2)). Compute MAT. Apply only valid, unexpired prior MAT credit to ordinary income tax, capped at ordinary tax less current MAT, then pay the higher result and MAT. If current MAT exceeds ordinary income tax, section 66B grants the difference as a new credit. Track origin, use, expiry and FIFO; never refund or use a credit to reduce liability below current MAT. [Sections 66–66B](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content).",
+      "old_sha256": "0459b024979cf8577448b45eaa7a8f0685a63804265cfe1b4ded576416298d0a",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L44",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 13,
+      "old_line": 46,
+      "old_text": "## Deadlines and filing",
+      "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L46",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 14,
+      "old_line": 48,
+      "old_text": "Prepare the income-tax reconciliation, MAT turnover bridge, assessment-year age evidence, credit-year register and provisional receipts. Taxation 84A requires provisional payments within thirty days after each quarter; aggregate instalments must meet at least 90% actual liability, with separate seasonal-income rules. [Taxation 84A](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content). Obtain the current annual filing deadline and prescribed return before submission: the old consolidated section 84(1) stating 180 days was deleted by the 2021 administrative cutover and is not cited as current law. TAA 40 requires the prescribed form/manner, signed by the authorized manager with completeness/accuracy declaration. Electronic filing recognition uses the document registration number under 38(3); keep it and payment proof. [2021 cutover Schedule](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 38–40](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Portal boxes and annual due-date authority remain partial.",
+      "old_sha256": "c360b47d764ac1957c94d29568dc77806739c5583eba11c491c2f21f1bb0321d",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L48",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 15,
+      "old_line": 50,
+      "old_text": "## Penalties and interest",
+      "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L50",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 16,
+      "old_line": 52,
+      "old_text": "Late payment under TAA 87 attracts 20% unpaid tax plus interest at the prevailing bank lending rate plus five percentage points per annum, applied for each month or part of the outstanding period. Do not substitute the old monthly tax-law penalties from superseded guidance. Under-estimation below 90% actual annual tax invokes TAA 86; obtain assessment dates and principal before calculating its penalty/interest. The current bank rate is not supplied here. [TAA 86–87](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content).",
+      "old_sha256": "c1724484526e458a6bc8afbb8f391dc376324f2cc9c86b97436efcc738380378",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L52",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 17,
+      "old_line": 54,
+      "old_text": "## Cross-border points",
+      "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L54",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 18,
+      "old_line": 56,
+      "old_text": "Confirm Malawi source/deemed source and distinguish resident/foreign incorporation from treaty entitlement. Ordinary foreign-incorporated companies no longer receive the removed extra charge. Dividends, interest, royalties, mining payments and treaty relief remain separate withholding jobs; this Guide does not turn the old unsourced headline figures into a withholding table.",
+      "old_sha256": "966cf67fa5a45b160602d06b8b142a0bf1974d911cf66f98d8459d890c3b9999",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L56",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 19,
+      "old_line": 58,
+      "old_text": "## Two worked examples that recompute",
+      "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L58",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 20,
+      "old_line": 60,
+      "old_text": "Hypothetical ordinary non-mining companies already operating for at least three years of assessment. Both cases assume a period to which the Act 3/2026 changes apply, without allocating a straddling period. Taxable income is after all allowed adjustments, including levy add-backs; turnover is the statutory MAT turnover. First, MAT creates a credit.",
+      "old_sha256": "074faf00df1f003339bccbe88aac3a4c9d8d1206486a82d1019016d12cd54279",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L60",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 21,
+      "old_line": 62,
+      "old_text": "```oa-check\nname: MAT controls and creates credit\ninputs:\n  taxable_income: 20000000\n  turnover: 10000000000\nsteps:\n  - ordinary: taxable_income * 0.30\n  - mat: turnover * 0.005\n  - payable: max(ordinary, mat)\n  - new_credit: max(0, mat - ordinary)\nexpected:\n  ordinary: 6000000\n  mat: 50000000\n  payable: 50000000\n  new_credit: 44000000\n```",
+      "old_sha256": "613b91edd388adc618ab988bc0ef7ff95fe5f0b09a9375d22dccbebb00d3adc9",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L62",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 22,
+      "old_line": 79,
+      "old_text": "Second, taxable income crosses the additional-tax boundary. A valid oldest prior MAT credit is used subject to the current MAT floor.",
+      "old_sha256": "9a248d7db3119907dff2fce011d682fc9670bfe4913369c2d638bb66251d9569",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L79",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 23,
+      "old_line": 81,
+      "old_text": "```oa-check\nname: Additional band and carried MAT credit\ninputs:\n  taxable_income: 6000000000\n  turnover: 20000000000\n  valid_old_credit: 44000000\nsteps:\n  - ordinary: taxable_income * 0.30 + max(0, taxable_income - 5000000000) * 0.10\n  - mat: turnover * 0.005\n  - credit_used: min(valid_old_credit, max(0, ordinary - mat))\n  - payable: max(mat, ordinary - credit_used)\nexpected:\n  ordinary: 1900000000\n  mat: 100000000\n  credit_used: 44000000\n  payable: 1856000000\n```",
+      "old_sha256": "7f34ecca908f0eb40ac8558a2d5e6b89880b0549ae6a714de8da57842607c9a4",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L81",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 24,
+      "old_line": 99,
+      "old_text": "## Ask the client first",
+      "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L99",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 25,
+      "old_line": 101,
+      "old_text": "Get activity/special approvals, incorporation and Malawi-source facts, exact assessment period, business-start/assessment-year history, taxable-income reconciliation, total-turnover/exemption/final-withholding bridge, MAT credits by origin, prior assessments and provisional receipts. Confirm the current prescribed filing notice and form.",
+      "old_sha256": "c8d4587c8fdf5ef817b9382448186f64599b6052f6b94988909b4c3d19d8c039",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L101",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 26,
+      "old_line": 103,
+      "old_text": "## Sources",
+      "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L103",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 27,
+      "old_line": 105,
+      "old_text": "| Official source and portions actually read | Read on |\n|---|---|\n| [Act 17/2023](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content), ss 3,4,11 | 2026-11-01 |\n| [Act 12/2024](https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content), s 7 rate amendment, visually/OCR read printed p 3 | 2026-11-01 |\n| [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), ss 2–3 | 2026-11-01 |\n| [Act 36/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content), ss 3–6 in full | 2026-11-01 |\n| [Act 3/2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf), all six pages screened; ss 4 and 12 applied here, with principal section 45 context | 2026-11-01 |\n| [Taxation principal official-library copy](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), ss 2,11,84A; this consolidation is old and is not used for current rates/annual filing | 2026-11-01 |\n| [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 38–40,86–87 | 2026-11-01 |\n| [2021 cutover Act 15](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Taxation Schedule entries 84,102,106 | 2026-11-01 |\n| [MRA updated notice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), income-tax/MAT rates and date compared with earlier notice | 2026-11-01 |",
+      "old_sha256": "adad8c6efc0dc1ab9041dccee67050e0f5fb498c16817f99ad5ce9863662a970",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L105",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 28,
+      "old_line": 117,
+      "old_text": "**Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; annual filing/balance-payment deadline under current authority; authenticated return fields; exact commencement/straddling-period allocation at the December 2025 amendment; full capital allowances, losses, indexed gains and specialist sectors; new listed-share final withholding and its exemptions under Act 3/2026 s 13 must be reconciled before any listed-share disposal computation; dividend 10%, bank interest finality/rate, royalty resident/non-resident split and mining 10% claims from the old file. Do not apply those old withholding figures pending their own source checks.",
+      "old_sha256": "aa07ac705da3e07020bf4f2fbf5b2ec474b08a9ee72ffe9934f430a66f2d292e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L117",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 29,
+      "old_line": 119,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L119",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 30,
+      "old_line": 121,
+      "old_text": "---",
+      "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L121",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 31,
+      "old_line": 123,
+      "old_text": "## Talk to a verified accountant",
+      "old_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L123",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 32,
+      "old_line": 125,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L125",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 33,
+      "old_line": 130,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L130",
+      "disposition": "retained byte-exact"
+    },
+    {
+      "unit": 34,
+      "old_line": 133,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "old_sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L133",
+      "disposition": "retained byte-exact"
+    }
+  ],
+  "old_capital_gains_topic": "Retained in The base as unresolved-label hold and linked to existing listed-share Guide; no legal exemption conclusion approved.",
+  "old_ledger_row12": "evidence/ledgers/mw-corporate-income-tax.md row12 preserved unchanged as historical evidence; unsupported removal description superseded for current reading by correction-ledger.md in this candidate.",
+  "old_destination_map": "evidence/ledgers/mw-old-topic-destinations.md Capital gains row preserved unchanged as history; current destination is repaired The base with existing detailed basis gaps retained.",
+  "lost_topics": 0,
+  "prior_evidence_immutable": true
+}
