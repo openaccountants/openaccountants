@@ -1,0 +1,15 @@
+{
+  "basis": "9adb1b3e9 statutory content, plus non-statutory review-note references only",
+  "files": {
+    "evidence/ledgers/chad-income-addendum-2026/ledger.md": "8bd3b00b9ccc63fb0d4875ba139cf20c656af6d51dcf60ac87f094768b531391",
+    "skills/chad/README.md": "4af51ddcdaf666d550ddc8a8369216881fa9d0e248c77abafd27c305dfff6e65",
+    "skills/chad/td-company-formation.md": "6a9893ee967dbba678a104c4cb766f8f942d6598708c5171d92e6f825b7fe82e",
+    "skills/chad/td-corporate-income-tax.md": "aac584e86f0f9250b2ee8a97f7c8b983209c2f65c4c0011d45d3ee286a246ea9",
+    "skills/chad/td-import-exemption-eligibility.md": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+    "skills/chad/td-income-tax.md": "3fed6c53b8cbfbb5eaa3a9858dfdad71e05cbb646b2be0c21757198835359983",
+    "skills/chad/td-payroll-social.md": "d046407d2621530811f5ab0c691ab825137e1921a9d3da772ed2b636dde77ddc",
+    "skills/chad/td-tax-overview.md": "eb8dbd8de5ec57d93efc8b7d7a6f2d865ffaa6ff361d9afdd9fc09c5a19b51c4",
+    "skills/chad/td-transfer-pricing.md": "2a87550a15579f7176ea99c6df8ac33d332206fe52e9fa067377fee474bd2d97",
+    "skills/chad/td-vat-gst.md": "33d8835636b375ba224c2cece78339939ecaf92c6b7cbd8ee53691d358908e53"
+  }
+}

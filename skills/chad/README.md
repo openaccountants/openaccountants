@@ -19,7 +19,7 @@ partial:
 
 # Chad: partial 2026 working-paper pack
 
-Six legacy Guides have source-ledger-backed 2026 expansions and a new transfer-pricing Guide supplies the domestic adjustment/documentation method. Independent review of these expansions is pending. Current-year metadata and passing structural checks do not establish comprehensive coverage, a live filing procedure or accountant attestation.
+Six legacy Guides have source-ledger-backed 2026 expansions and a new transfer-pricing Guide supplies the domestic adjustment/documentation method. Independent review evidence for the126row scoped expansion is preserved; the separately sourced income/payroll addendum has its own closure evidence below. Current-year metadata and passing structural checks do not establish comprehensive coverage, a live filing procedure or accountant attestation.
 
 ## Coverage and remaining jobs
 
@@ -55,4 +55,6 @@ Draft continuation [PR #1219](https://github.com/openaccountants/openaccountants
 
 ## Income addendum
 
-The126row scoped review at416ec5149 remains historical evidence. Subsequent LF18 reading supersedes the operative105housing-floor/106–108departure portion of old income ledger30. The income/payroll v1.2 addendum supplies ordinary positive BIC/BNC bases, IGL routes and the payroll substitution gate, with34additional source rows and2additional cases. Its source findings and separate review live in `evidence/ledgers/chad-income-addendum-2026/`; review pending until closure. Earlier review is not silently extended.
+The126row scoped review at416ec5149 remains historical evidence. Subsequent LF18 reading supersedes the operative105housing-floor/106–108departure portion of old income ledger30. The income/payroll v1.2 addendum supplies ordinary positive BIC/BNC bases, IGL routes and the payroll substitution gate, with34additional source rows and2additional cases. Its source findings and separate review live in `evidence/ledgers/chad-income-addendum-2026/`; source-review closure is recorded separately, including the superseded older housing/departure claim. Earlier review is not silently extended.
+
+The final Guide closing notes point here for review evidence and limits. Those notes do not alter a statutory method, the platform’s professional-review fields or the stamped CTA. Final source-Guide hashes are pinned with the addendum closure.

@@ -115,7 +115,7 @@ expected:
 | [OHADA company law](https://biblio.ohada.org/doc_num.php?explnum_id=2032) and [accounting law](https://biblio.ohada.org/doc_num.php?explnum_id=2061) |2026-11-01| Formation/reporting researcher read the exact capital, audit, accounts and timetable clauses listed in that Guide |
 | [CNPS employer Guide, dated archive](https://web.archive.org/web/20240717045908id_/https://cnps-tchad.com/wp-content/uploads/2021/06/GUIDE-DE-LEMPLOYEUR.pdf) |2026-11-01| Actual contribution guidance and source-currentness qualification recorded in payroll ledger |
 
-Not yet confirmed: all substantive holds listed in the README and destination Guides, including comprehensive later-law/implementation updates, live filing screens, wider cross-border, property/compliance and specialist accounting scope. The router does not close those gaps. Cases are hypothetical reconciliation controls, not sourced tax amounts. Independent review pending; no accountant attestation.
+Not yet confirmed: all substantive holds listed in the README and destination Guides, including comprehensive later-law/implementation updates, live filing screens, wider cross-border, property/compliance and specialist accounting scope. The router does not close those gaps. Cases are hypothetical reconciliation controls, not sourced tax amounts. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
 
 <!-- openaccountants-cta-block -->
 

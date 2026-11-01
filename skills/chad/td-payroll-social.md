@@ -129,7 +129,7 @@ expected:
 | [Official CGI2025, ministry archive2025-07-20](https://web.archive.org/web/20250720004455id_/https://www.finances.gouv.td/index.php/le-ministere/le-ministre/item/download/438_afa372566d4acca63cb857e846d67eef) |2026-11-01| Arts31/37,171–190,846–850,986–987,1041–1044,1061 and neighbouring exemption/collection clauses |
 | [Enacted LF2026](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf) |2026-11-01| Arts22–28 deleting180–186, plus37 electronic declarations; read old/new clauses pp32–34,56–57 |
 
-Not yet confirmed: later SMIG/rate instruments beyond the2026archived CNPS link, partial-month/multiple-employer/expat rules, annual recap exact filing date, transport allowances without reimbursement character, live CNPS/DGI forms and payment screens, monthly IRPP table and article177 residual-base boundaries. These keep SC/PR partial. Independent review pending, no accountant attestation.
+Not yet confirmed: later SMIG/rate instruments beyond the2026archived CNPS link, partial-month/multiple-employer/expat rules, annual recap exact filing date, transport allowances without reimbursement character, live CNPS/DGI forms and payment screens, monthly IRPP table and article177 residual-base boundaries. These keep SC/PR partial. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
 
 <!-- openaccountants-cta-block -->
 
