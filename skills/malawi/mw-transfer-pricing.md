@@ -9,7 +9,7 @@ tier: 2
 version: 1.0
 ---
 
-# Malawi transfer pricing: information-notice response and retention v 1.0
+# Malawi transfer pricing: information-notice response and retention v1.0
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

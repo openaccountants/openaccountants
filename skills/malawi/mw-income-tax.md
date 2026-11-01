@@ -7,12 +7,12 @@ last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.0
 ---
 
-# Malawi individual income tax: current salary bands v 1.0
+# Malawi individual income tax: current salary bands v1.0
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
