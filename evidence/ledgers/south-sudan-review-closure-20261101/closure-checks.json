@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-01",
+  "scope": "F1 focused independent closure, with original unchanged review carried forward",
+  "initial_freeze": "f494e992b8dc888530c2998ac9aba0e6db29aaab",
+  "repaired_freeze": "fedb90f1ba8828c7cd8c891180e12d0bab208b72",
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "f1": "closed; corrected annual-return scope agrees with read Companies Act ss.177\u2013181 PDF111\u2013115",
+  "source_pdf_sha256": "dc0768b0e3013870807f5b37aa43e0968243549cf27453ea9ab4dc14771b7a03",
+  "changed_quote_texts": [
+    "does not apply to a private company unless at least one shareholder is a public company",
+    "a certificate signed both by a director and by the secretary"
+  ],
+  "both_exact_quotes_match": true,
+  "guide_sha256": "7733acac12d9404ae468fa08240e782303f3f2cd7f3d8db200751133b21861f7",
+  "ledger_sha256": "e107fcde8b287b1732614774e259ec095fe1ed91f161f1ba1aa1b3b6594f2119",
+  "formation_description_words": 117,
+  "formation_version": "0.2",
+  "unchanged_other_guides": {
+    "skills/south-sudan/ss-corporate-income-tax.md": true,
+    "skills/south-sudan/ss-cross-border.md": true,
+    "skills/south-sudan/ss-income-tax.md": true,
+    "skills/south-sudan/ss-payroll-social.md": true,
+    "skills/south-sudan/ss-tax-overview.md": true,
+    "skills/south-sudan/ss-transfer-pricing.md": true,
+    "skills/south-sudan/ss-vat-gst.md": true
+  },
+  "unchanged_ledger_rows": 97,
+  "changed_row_count": 1,
+  "all_16_oa_blocks_byte_identical": true,
+  "old_topic_map_byte_identical": true,
+  "old_topic_rows": 85,
+  "six_legacy_cta_and_platform_lines_exact": [
+    "skills/south-sudan/ss-company-formation.md",
+    "skills/south-sudan/ss-corporate-income-tax.md",
+    "skills/south-sudan/ss-income-tax.md",
+    "skills/south-sudan/ss-payroll-social.md",
+    "skills/south-sudan/ss-tax-overview.md",
+    "skills/south-sudan/ss-vat-gst.md"
+  ],
+  "both_added_guides_no_platform_keys": true,
+  "initial_review_evidence_hashes_unchanged": {
+    "evidence/ledgers/south-sudan-review-20261101/review-checks.json": true,
+    "evidence/ledgers/south-sudan-review-20261101/review-checks.py": true,
+    "evidence/ledgers/south-sudan-review-20261101/review.md": true,
+    "evidence/ledgers/south-sudan-review-20261101/scoped-validation.json": true
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/south-sudan/ss-company-formation.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/south-sudan/ss-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "skills/south-sudan/ss-company-formation.md",
+        "skills/south-sudan/ss-corporate-income-tax.md",
+        "skills/south-sudan/ss-cross-border.md",
+        "skills/south-sudan/ss-income-tax.md",
+        "skills/south-sudan/ss-payroll-social.md",
+        "skills/south-sudan/ss-tax-overview.md",
+        "skills/south-sudan/ss-transfer-pricing.md",
+        "skills/south-sudan/ss-vat-gst.md",
+        "--require"
+      ],
+      "returncode": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "fedb90f1ba8828c7cd8c891180e12d0bab208b72"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "disposition": "conditional source-baseline acceptance only; no further findings in focused change",
+  "holds": [
+    "all seven domains partial",
+    "post-June2021 annual amendment chain unreconciled",
+    "enacted FY2025/26 and FY2026/27 not established",
+    "sales-rate and valuation conflicts unresolved",
+    "rental-rate and taxpayer-scope conflict unresolved",
+    "current social-insurance law and mechanics unresolved",
+    "later company-law and live registry procedures unresolved"
+  ],
+  "production_cas": "not run; no authentic content_revision",
+  "not_claimed": [
+    "operative2026 acceptance",
+    "accountant attestation",
+    "country completion",
+    "live filing or payment",
+    "production sync/publication permission"
+  ]
+}
