@@ -1,10 +1,10 @@
 ---
 name: ma-auto-entrepreneur
-description: Use this skill whenever asked about Morocco's auto-entrepreneur regime — the simplified turnover-based tax and social-cover status for freelancers and micro-businesses. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers turnover ceilings, the 0.5%/1% liberatory IR, the single-client 80,000 MAD anti-disguised-salary withholding, dedicated CNSS/AMO cover, registration via the RNAE (Poste Maroc / ae.gov.ma), excluded regulated professions, and exit on ceiling breach. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and morocco-professional-income-tax for alternatives.
-version: 1.0
+description: Use this skill whenever asked about Morocco's auto-entrepreneur regime for tax year 2026, the turnover-based income tax option for individuals running a small commercial, industrial, artisanal or service activity. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers the MAD 500,000 and 200,000 ceilings, the 0.5% and 1% liberatory rates, the droit complémentaire bands, the 30% client withholding above MAD 80,000 from one client, excluded professions, monthly or quarterly declarations, penalties and exit after two years over a ceiling. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and morocco-professional-income-tax for alternatives.
+version: 1.1
 jurisdiction: MA
-tax_year: 2025
-last_updated: 2026-10-31
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,192 +14,238 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# MA Auto Entrepreneur
+# Morocco: auto-entrepreneur regime, tax year 2026
 
-## Morocco — Auto-Entrepreneur Regime (Statut de l'Auto-Entrepreneur)
+## Scope ([CGI 2026 edition, Art. 42 bis and 42 ter](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
-The **auto-entrepreneur** (AE) status is Morocco's flagship simplified regime for freelancers, sole traders, and micro-businesses. It replaces ordinary income-tax accounting with a single **impôt libératoire** computed as a flat percentage of **turnover actually collected** (chiffre d'affaires encaissé), bundles a dedicated social-cover scheme (**CNSS / AMO**), and is administered through the national register **RNAE** (Registre National de l'Auto-Entrepreneur). It is governed by **Loi n° 114-13** and Articles **42 bis, 42 ter, 43, 44-II and 73-III** of the **Code Général des Impôts (CGI)**.
+This skill covers individuals taxed as auto-entrepreneurs (AE) in Morocco for 2026: income tax on turnover collected, the droit complémentaire, client withholding, registration, declarations, penalties and leaving the regime. The currency is the dirham (MAD, DH). The tax authority is the Direction Générale des Impôts (DGI).
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, IR, CNSS, AMO, DGI, RNAE) and explain them in the user's chosen language.
+The AE tax applies to collected turnover with no deduction of expenses (Art. 42 bis). It is liberatory (Art. 73, last paragraph), so a person with only liberatory income need not file the annual global income return unless they consider themselves overtaxed or claim the Art. 28 or Art. 74 deductions (Art. 86-3°).
 
-## 1. Quick Reference
+Reply in the user's language. Moroccan users mix English, French and Darija, so keep the native terms (auto-entrepreneur, IR, DGI, CNSS, AMO, RNAE) and explain them.
 
-**Quick Reference table**
+Out of scope, route elsewhere: TVA detail to `morocco-vat`; employees to `morocco-payroll`; companies to `morocco-income-tax`; the CPU regime to `ma-cpu`; net-income regimes to `morocco-professional-income-tax`; CNSS and AMO detail to `ma-social-contributions`.
 
-| Field | Value |
-| --- | --- |
-| Country | Morocco (MA) |
-| Regime | Auto-entrepreneur (statut de l'auto-entrepreneur) — impôt libératoire on turnover |
-| Currency | MAD (dirham marocain, DH) |
-| Turnover ceiling — commercial / industrial / artisanal | **MAD 500,000 / year** *(verify current value)* |
-| Turnover ceiling — services (prestations de services) | **MAD 200,000 / year** *(verify current value)* |
-| IR rate — commercial / industrial / artisanal | **0.5% of collected turnover** *(verify current value)* |
-| IR rate — services | **1% of collected turnover** *(verify current value)* |
-| Single-client anti-disguised-salary rule | Amounts > **MAD 80,000 / year** from one client (services) → client withholds **30%** at source on the excess, liberatory *(verify rate)* |
-| Tax base | Turnover **collected**, no deduction of expenses |
-| Authority | **Direction Générale des Impôts (DGI)** — tax.gov.ma |
-| Register / portal | **RNAE** via Poste Maroc / Al Barid Bank — `rn.ae.gov.ma` (a.k.a. ae.gov.ma) |
-| Social cover | Dedicated **CNSS / AMO** scheme, mandatory since décret 2.21.477 (2021) |
-| Filing & payment | **Quarterly**, online, including nil (néant) declarations |
-| Primary legislation | Loi 114-13; CGI Art. 42 bis, 42 ter, 43, 44-II, 73-III |
-| Contributor | Open Accountants Community |
-| Quality tier | **Research-verified — pending sign-off by a Moroccan accountant (expert-comptable)** |
-| Version | 1.0 |
-| Last research update | May 2026 |
+## Ask the client first
 
-### Conservative defaults
+1. What exactly is the activity? Check it against the excluded list and the activity lists below.
+2. Is it commercial, industrial or artisanal, service, or a mix? This sets the rate and ceiling.
+3. How much turnover was actually collected in the year, per activity?
+4. For services, how much was invoiced to each client in the year? Is any client above MAD 80,000, and is that client a company or an individual on the net real or simplified regime?
+5. Was either ceiling exceeded last year as well as this year?
+6. Is declaration monthly or quarterly, and were any periods missed?
 
-When data is missing or ambiguous, the agent applies the **conservative default** and flags it for the reviewer:
+If the activity mix is not given, work with services (1%, MAD 200,000) until the client confirms otherwise. If the activity could fall on the excluded list, treat it as excluded until confirmed.
+
+## The method, step by step
+
+1. Confirm eligibility: an individual, an activity not excluded, turnover within the limits, and membership of the social security scheme (Art. 42 ter-II).
+2. Split collected turnover by activity and test each ceiling.
+3. For services, find each client's annual total. Anything above MAD 80,000 for one client is the surplus, taken out of the AE rate.
+4. Apply 0.5% or 1% to the remaining collected turnover.
+5. Apply 30% to the surplus. The client withholds it where the client is a withholding payer.
+6. Find the droit complémentaire band from the annual tax amount and add it.
+7. Declare and pay by the deadline, and test the two-year exit rule.
 
-- **Activity mix unknown** → treat the activity as **services (1%)**, the higher rate, until the user confirms it is commercial/industrial/artisanal (0.5%).
-- **Turnover near a ceiling** → assume the ceiling is **breached** and warn about exit consequences rather than assume continued eligibility.
-- **Single-client revenue near MAD 80,000** → assume the **30% withholding** on the excess applies, and tell the user to confirm with the paying client.
-- **Eligibility uncertain (possible regulated profession)** → assume the activity is **excluded** and route to `ma-cpu` / `morocco-professional-income-tax` until confirmed.
-- **2026 figures** → all rates and ceilings carry "verify current value"; check the **Loi de Finances 2026** and the DGI before finalising any number.
-
-## 2. Eligibility & Excluded Activities
-
-### Who can opt in
-
-- **Eligibility criteria** — Resident **physical persons** (individuals) carrying on an **industrial, commercial, artisanal, or service** activity on their own account. Annual turnover within the ceilings above. Registered in the **RNAE** and holding the AE card. A person may combine activities (e.g. commerce + services) **provided each branch stays under its own ceiling** and **neither branch exceeds its limit** — see §3 for the combined-activity test.  _(Loi 114-13)_
-
-### Excluded activities (professions réglementées and others)
-
-- **Excluded activities** — The AE status is **not available** to **regulated/liberal professions** and a list of other activities, including (non-exhaustive — confirm against the regulatory list): - **Liberal professions:** lawyers (avocats), notaries (notaires), doctors and health professionals (médecins, dentistes, pharmaciens), chartered accountants / experts-comptables, architects, engineers in regulated practice, court officers (huissiers, adouls), etc. - **Financial / insurance** intermediation. - **Real-estate development** (promotion immobilière). - **Regulated transport** operators. - Activities subject to **special licensing or excise** (e.g. tobacco, alcohol). > **Default rule:** if there is *any* doubt that the activity is a regulated profession, treat it as **excluded** and route the user to `ma-cpu` (Contribution Professionnelle Unique) or `morocco-professional-income-tax` (régime du résultat net simplifié / réel). Do **not** assert eligibility for a borderline profession.
-
-## 3. Rates & Computation
-
-### Turnover bands and liberatory IR
-
-**Turnover bands and liberatory IR**
-
-| Activity | Annual ceiling | IR rate on collected turnover |
-| --- | --- | --- |
-| Commercial / industrial / artisanal | MAD 500,000 *(verify)* | **0.5%** *(verify)* |
-| Services (prestations de services) | MAD 200,000 *(verify)* | **1%** *(verify)* |
-
-- **Libératoire tax treatment** — Tax is a flat percentage of **turnover actually collected** during the period — **no expense deduction**. The tax is **libératoire**: it discharges the AE's income tax on that activity, so AE turnover is **not** re-entered on the progressive IR scale and **no annual global IR return** is filed for the AE activity.
-- **IR libératoire formula** — IR libératoire = turnover collected in the quarter × rate (0.5% or 1%)
-
-> Some sources reference a small **supplementary/professional duty** layered on top of the base rate in certain brackets. Treat any add-on as **"verify current value against the DGI auto-entrepreneur guide / Loi de Finances 2026"** before using it in a computation.
-
-### Combined activities
-
-- **Combined activities rule** — If a user runs both a commercial and a service branch, apply **each rate to its own turnover** and check **each branch against its own ceiling**. Breaching **either** ceiling triggers the exit rule in §5.
-
-### The single-client > MAD 80,000 rule (anti-salary-disguise)
-
-- **Single-client >80,000 withholding rule** — To stop employers re-labelling employees as auto-entrepreneurs, the law caps how much an AE may bill **one single client**: - For **services**, when annual revenue from **one client** exceeds **MAD 80,000**, the **excess above 80,000** is **not** taxed at the 1% liberatory rate. - Instead the **paying client withholds tax at source at 30%** *(verify rate — historically 30%, per CGI Art. 73)* on the excess, and this withholding is **liberatory** for that excess.  _(CGI Art. 73)_
-- **Single-client withholding formula** — Taxed at 1% liberatory   = min(client revenue, 80,000) Subject to 30% withholding = max(client revenue − 80,000, 0) 30% withholding (by client) = max(client revenue − 80,000, 0) × 30%   (verify rate)
-
-> Practical effect: an AE doing essentially full-time work for **one** company gets pushed toward an employee-like 30% rate on the excess. If a user's revenue is concentrated in one client, flag both the **tax** consequence and the **labour-law risk** of disguised employment (requalification en contrat de travail).
-
-## 4. Social Cover (CNSS / AMO for Auto-Entrepreneurs)
-
-Since **décret n° 2.21.477 (2021)** and the généralisation of **AMO** (Assurance Maladie Obligatoire) to non-salaried workers (**TNS**), CNSS affiliation is **mandatory** for every auto-entrepreneur.
-
-### What it covers
-
-- **CNSS/AMO coverage** — - **AMO** — mandatory health insurance: medical costs, hospitalisation, medicines, for the AE, spouse, and children. - **Basic retirement** (retraite de base). - **Daily allowances** for maternity / temporary incapacity, subject to contribution conditions.  _(décret n° 2.21.477 (2021))_
-
-### How contributions are computed
-
-- **CNSS contribution computation** — Contributions are **forfaitaires** (flat-rate by bracket), **based on declared turnover**, and **collected quarterly alongside the tax** through the AE portal. - The CNSS scheme uses **fixed brackets T1 to T8**; declared (annualised) turnover places the AE in a bracket, each with a **set contribution amount** *(verify the current T1–T8 amounts on cnss.ma / ae.gov.ma — not consistently published)*. - A **minimum** contribution applies even with **zero turnover** — historically **~MAD 300 / quarter (≈ MAD 1,200 / year)** *(verify current value)*. - Commonly cited bases: services ≈ **50% of turnover**, commercial ≈ **20% of turnover** used to set the bracket *(verify — methodology varies by source)*. > **Default:** when the exact bracket amount is unknown, quote the **minimum ~MAD 300/quarter** floor and tell the user the precise figure must be read off the **CNSS / ae.gov.ma** bracket table for their declared turnover. Do **not** invent a T1–T8 amount.
-
-## 5. Registration & Filing / Payment Calendar
-
-### Registration (RNAE)
-
-- **RNAE registration steps** — 1. Apply on **`rn.ae.gov.ma`** (the RNAE portal, run by **Poste Maroc / Al Barid Bank**) or at a **Barid Bank** branch. 2. Provide CIN (national ID), activity, and address; registration is **free**. 3. Processing typically **7–15 days**; you receive the **auto-entrepreneur card** and a tax identifier. 4. CNSS affiliation is created alongside registration.
-
-### Filing & payment (quarterly)
-
-**Quarterly filing/payment calendar**
-
-| Quarter | Period | Declare & pay by *(verify exact dates each year)* |
-| --- | --- | --- |
-| Q1 | Jan–Mar | end of **April** |
-| Q2 | Apr–Jun | end of **July** |
-| Q3 | Jul–Sep | end of **October** |
-| Q4 | Oct–Dec | end of **January** (following year) |
-
-- **Filing/payment rules** — Declaration and payment are **quarterly**, **online**, and **nil declarations (déclaration néant) are still required** when there is no turnover. Payment is online (carte bancaire, virement, réseaux agréés). The **CNSS contribution is collected at the same time** as the tax. > Missing a declaration (including a nil one) or a payment risks penalties and, ultimately, **radiation** from the RNAE. Confirm exact deadlines for 2026 on ae.gov.ma.
-
-## 6. Worked Examples
-
-> All figures use the 2026 rates/ceilings flagged "verify". Recompute with confirmed values before relying on them.
-
-### Example 1 — Service freelancer, multiple clients
-
-Sara is a freelance web developer (services). 2026 collected turnover **MAD 150,000**, spread across 5 clients (largest single client MAD 45,000).
-
-- Within the services ceiling (200,000). Eligible.
-- No client exceeds 80,000 → no 30% withholding.
-- **IR = 150,000 × 1% = MAD 1,500** for the year.
-- Plus CNSS quarterly contributions per her turnover bracket *(verify amount)*.
-
-### Example 2 — Services with one dominant client (>80k rule)
-
-Youssef does design work; 2026 turnover **MAD 120,000**, of which **MAD 100,000 from a single agency** and MAD 20,000 from others.
-
-- Within ceiling (200,000). Eligible.
-- Single client = 100,000 > 80,000 → excess = **20,000**.
-  - First 80,000 from that client + the 20,000 from other clients = **100,000 at 1%** → **MAD 1,000**.
-  - Excess **20,000 × 30% = MAD 6,000** withheld at source by the agency *(verify rate)*, liberatory on that slice.
-- **Total tax ≈ MAD 7,000.** Flag the disguised-employment risk given the concentration.
-
-### Example 3 — Commercial activity at the lower rate
-
-Khadija resells handmade goods (commercial/artisanal). 2026 collected turnover **MAD 400,000**.
-
-- Within commercial ceiling (500,000). Eligible.
-- **IR = 400,000 × 0.5% = MAD 2,000** for the year.
-- Plus CNSS quarterly contributions per bracket *(verify)*.
-
-### Example 4 — Ceiling breach → exit
-
-Omar (services) collects **MAD 230,000** in 2026, exceeding the 200,000 services ceiling.
-
-- One year over is **tolerated**; the AE is generally **radiated only if the ceiling is exceeded two consecutive years** *(verify the current grace rule)*.
-- On exit, Omar moves to **`ma-cpu` (CPU)** or the **`morocco-professional-income-tax`** régimes (résultat net simplifié / réel) and ordinary IR/TVA obligations may begin.
-- Action: model the post-exit position with `ma-cpu` and `morocco-professional-income-tax` and advise on TVA registration thresholds.
-
-## 7. Tier 2 — Reviewer Judgement Required
-
-Escalate to the **Moroccan expert-comptable** reviewer when:
-
-- **Single-client concentration** suggests **disguised employment** (labour-law requalification risk beyond the 30% tax point).
-- **Ceiling breach** in the current or prior year — exit mechanics, CPU vs net-income routing, and TVA registration.
-- **Borderline excluded activity** (possible regulated profession) — eligibility call.
-- **Combined activities** straddling both ceilings.
-- **CNSS bracket / AMO** entitlement disputes or arrears.
-- **VAT (TVA)** interaction — AE turnover is generally outside ordinary TVA, but confirm against the TVA thresholds (see `morocco-vat`) if activity is borderline.
-- Any client-specific number where the agent had to fall back to a "verify" value.
-
-The agent must **never** present these as settled; it presents the computation, the assumptions, and the open items for the reviewer to sign off.
-
-## 8. Reference
-
-### Legal references
-
-- **Legal references** — - **Loi n° 114-13** relative au statut de l'auto-entrepreneur (19 February 2015). - **Code Général des Impôts (CGI)** — Art. **42 bis, 42 ter** (regime & conditions), **43, 44-II** (turnover ceilings / base), **73-III** (rates, including the single-client withholding). - **Décret n° 2.21.477 (2021)** — mandatory CNSS / AMO affiliation for auto-entrepreneurs (généralisation AMO to TNS). - **Loi de Finances 2026** — confirm current rates, ceilings, and any add-on duty; **2025 IR reform context:** the ordinary IR scale was reformed (exempt band raised to **MAD 40,000**, top rate reduced to **37%**), which is the fallback regime if an AE exits. - Authority: **Direction Générale des Impôts (DGI)** — tax.gov.ma. Register: **RNAE** — rn.ae.gov.ma (Poste Maroc / Al Barid Bank). Social: **CNSS** — cnss.ma.  _(Loi n° 114-13; CGI Art. 42 bis, 42 ter, 43, 44-II, 73-III; Décret n° 2.21.477 (2021); Loi de Finances 2026)_
-
-### Short test suite
-
-1. **Q:** Service freelancer, MAD 90,000 turnover, no client over 80k. **A:** IR = 90,000 × 1% = **MAD 900**; within ceiling; CNSS per bracket.
-2. **Q:** Commercial AE, MAD 600,000 turnover. **A:** **Ceiling breached** (>500,000) — flag exit, route to `ma-cpu` / `morocco-professional-income-tax`.
-3. **Q:** Services AE, single client pays MAD 130,000. **A:** 80,000 at 1% (MAD 800); **50,000 × 30% = MAD 15,000** withheld by client *(verify rate)*; flag disguised-employment risk.
-4. **Q:** Doctor wants AE status. **A:** **Excluded** (regulated profession) — route to `morocco-professional-income-tax`.
-5. **Q:** Zero turnover this quarter. **A:** Still file a **déclaration néant**; **minimum CNSS** (~MAD 300/quarter, verify) still due.
-6. **Q:** Activity mix not stated. **A:** Default to **services / 1%** and the 200,000 ceiling until confirmed.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - **Do NOT** confirm eligibility for any **regulated/liberal profession** (lawyer, doctor, notary, expert-comptable, architect, etc.) — default to **excluded**. - **Do NOT** apply the AE liberatory rates to turnover **above a ceiling** — once breached, the regime no longer applies; route to `ma-cpu` / `morocco-professional-income-tax`. - **Do NOT** ignore the **single-client > MAD 80,000** rule for services — apply the 30% withholding on the excess *(verify rate)* and flag disguised-employment risk. - **Do NOT** deduct business expenses — the base is **turnover collected**, gross. - **Do NOT** invent CNSS **T1–T8** bracket amounts — quote the minimum floor and send the user to cnss.ma / ae.gov.ma for the exact figure. - **Do NOT** state any rate, ceiling, or deadline as final without the **"verify current value"** caveat against the **Loi de Finances 2026** and the DGI. - **Do NOT** advise on **TVA**, employees/payroll, multi-state, or company forms (SARL/SA) under this skill — route to the relevant skill. - **Do NOT** issue a return as filed without **expert-comptable** sign-off.
-
-## Disclaimer
-
-This skill is **research-verified** against public sources (DGI / tax.gov.ma, the auto-entrepreneur portal ae.gov.ma, PwC Worldwide Tax Summaries, and reporting on the Loi de Finances 2025/2026) as of **May 2026**. It is **YMYL** content and is **pending sign-off by a Moroccan accountant (expert-comptable)**. Rates, ceilings, CNSS bracket amounts, and deadlines change with each Loi de Finances and must be **re-verified** before use. Nothing here is a substitute for advice from a licensed Moroccan expert-comptable or the DGI. Part of **openaccountants.com** — open-source tax skills for the self-employed.
+### Rates, bands and thresholds ([CGI Art. 42 bis, 42 ter, 45 bis-II, 73](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+
+| Item | Figure | Who and when | Article | Official URL |
+|---|---|---|---|---|
+| Ceiling, commercial, industrial, artisanal | MAD 500,000 collected a year | Option condition, tested each year | Art. 42 ter-II-A | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Ceiling, services | MAD 200,000 collected a year | Option condition, tested each year | Art. 42 ter-II-A | same |
+| IR rate, commercial, industrial, artisanal | 0.5% of collected turnover | Up to MAD 500,000 | Art. 73-III | same |
+| IR rate, services | 1% of collected turnover | Up to MAD 200,000 | Art. 73-III | same |
+| One-client limit, services only | MAD 80,000 a year | Surplus leaves the AE rate | Art. 42 bis, 45 bis-II | same |
+| Withholding on the surplus | 30%, liberatory | Applied by a client that is a legal person or an individual on the net real or simplified regime | Art. 73-II-G-8°, 157-II | same |
+| Gains on business assets | Art. 73-I scale | Net gains on sale or withdrawal of tangible and intangible assets, computed under Art. 40-II | Art. 42 bis | same |
+
+The tax is increased by a droit complémentaire from the Art. 73-II-B-6° table, on terms set by regulation (Art. 73-III). Bands are by annual tax in dirhams:
+
+| Annual tax (MAD) | Per quarter (MAD) | Per year (MAD) | Official URL |
+|---|---|---|---|
+| Under 500 | 300 | 1,200 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| 500 to 1,000 | 390 | 1,560 | same |
+| 1,001 to 2,500 | 570 | 2,280 | same |
+| 2,501 to 5,000 | 720 | 2,880 | same |
+| 5,001 to 10,000 | 1,050 | 4,200 | same |
+| 10,001 to 25,000 | 1,500 | 6,000 | same |
+| 25,001 to 50,000 | 2,250 | 9,000 | same |
+| Over 50,000 | 3,600 | 14,400 | same |
+
+The lowest band applies at any tax amount under MAD 500, so a nil year sits in that band on the table's wording. The implementing regulation was not read; see "Not yet confirmed".
+
+### The base ([CGI Art. 42 bis, 43-5°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+
+- The base is turnover collected in the year, not invoiced, with no expenses.
+- Mixed activities: apply each rate to its own turnover. The option holds if turnover in each category stays within its own limit, or if total turnover stays within the limit for the main activity (Art. 43-5°).
+- One client: first MAD 80,000 stays at the AE rate, the surplus goes to withholding. The rule covers services only. Goods sold to one client are not caught.
+- A person mostly working for one company also has a labour-law risk of being treated as an employee. That is outside tax; refer it.
+
+### Who can opt in ([CGI Art. 42 ter; Decree 2-15-263; Decree 2-15-303](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+
+Individuals carrying on a professional activity alone as auto-entrepreneurs under the applicable legislation (Art. 42 bis). The Art. 42 ter-II-B condition is joining the social security scheme. Loi 114-13 is the status law; Decree 2-15-303 lists the activities allowed.
+
+Decree 2-15-263 excludes: architects, insurers, lawyers, money changers, surgeons, dental surgeons, statutory auditors, goods commission agents, accountants, tobacco retailers, publishers, chartered accountants, driving-school operators, cinema operators, clinic operators, medical laboratory operators, private school operators, surveyors (géomètres, topographes), hoteliers, bailiffs, printers, booksellers, land developers and property promoters, aircraft or helicopter lessors, mandataires négociants, property dealers, retail and wholesale jewellers, export and import merchants, quantity surveyors, doctors, notaries, event and reception service providers, pharmacists, opticians, radiologists, consultancy offices (bureau d'études), customs agents and veterinarians.
+
+Decree 2-15-303 list 1 covers food, textile, wood, metal and similar manufacture, shop and market retail, mail order and internet sales, and handicrafts. List 2 covers services such as IT consulting and development, business and management consulting, design, photography, cleaning, transport, repairs, building finishing work, beauty and hairdressing, sport, tutoring support and artistic trades. "Conseil pour les affaires" is on list 2, but a "bureau d'études" is excluded, so a consultant's real set-up must be checked.
+
+## Boundary and exception table
+
+| Situation | Result | Source |
+|---|---|---|
+| Over a ceiling for one year only | Option stays valid | Art. 43-4° |
+| Over a ceiling for two consecutive years | Net real regime from 1 January of the next year, unless RNS or CPU is elected; AE regime lost for good | Art. 43-4° |
+| Services client above MAD 80,000, company payer | 30% on surplus withheld by client | Art. 42 bis, 157-II |
+| Services client above MAD 80,000, payer is a private individual or CPU taxpayer | Surplus still leaves the AE rate; the client is not a named withholder. Refer | Art. 45 bis-II, 157-II |
+| TVA, manufacturer or service provider, turnover up to MAD 500,000 | Exempt without deduction right | Art. 91-II-3° |
+| TVA, trader | Not covered by Art. 91-II-3°; use `morocco-vat` | Art. 89, 91 |
+| Bookkeeping duties of Art. 145 | Not applicable, except holding an email address | Art. 145-X, XI |
+| Excluded profession | No AE option; use `ma-cpu` or `morocco-professional-income-tax` | Art. 42 ter-III |
+
+## Worked cases
+
+### Case 1: service freelancer, several clients
+
+Sara is a freelance web developer. She collects MAD 150,000 in 2026 from 5 clients, the largest paying MAD 45,000. She is within the ceiling and no client is above 80,000.
+
+```oa-check
+name: Services AE, MAD 150,000 collected
+inputs:
+  turnover: 150000
+  droit: 2280
+steps:
+  - ir: turnover * 0.01
+  - total: ir + droit
+expected:
+  ir: 1500.00
+  total: 3780.00
+```
+
+### Case 2: which should I choose, AE or CPU?
+
+The same MAD 150,000 under CPU, "Autres prestations" coefficient 20% (Art. 40-I), rate 10% (Art. 73-II-B-6°): income 30,000, tax 3,000, droit band 2,501 to 5,000 at MAD 2,880, total MAD 5,880. AE costs MAD 3,780, so AE is MAD 2,100 cheaper. Past MAD 200,000 of services a year, AE stops being available in the long run and CPU comes back into play. Use `ma-cpu` for its conditions.
+
+```oa-check
+name: AE or CPU at MAD 150,000 services
+inputs:
+  turnover: 150000
+  ae_droit: 2280
+  cpu_droit: 2880
+steps:
+  - ae_total: turnover * 0.01 + ae_droit
+  - cpu_tax: turnover * 0.20 * 0.10
+  - cpu_total: cpu_tax + cpu_droit
+  - saving: cpu_total - ae_total
+expected:
+  ae_total: 3780.00
+  cpu_total: 5880.00
+  saving: 2100.00
+```
+
+### Case 3: one dominant client
+
+Youssef does design work and collects MAD 120,000: MAD 100,000 from one agency (a company) and MAD 20,000 from others. The surplus above 80,000 is MAD 20,000.
+
+```oa-check
+name: Services AE with one client above 80,000
+inputs:
+  one_client: 100000
+  others: 20000
+steps:
+  - surplus: max(one_client - 80000, 0)
+  - ir: (one_client - surplus + others) * 0.01
+  - withheld: surplus * 0.30
+  - total_tax: ir + withheld
+expected:
+  surplus: 20000.00
+  ir: 1000.00
+  withheld: 6000.00
+  total_tax: 7000.00
+```
+
+Whether the droit band counts only the MAD 1,000 is not settled here; on that footing it is MAD 1,560. Flag the concentration as a disguised-employment risk.
+
+### Case 4: commercial activity
+
+Khadija resells handmade goods and collects MAD 400,000. Tax is 400,000 x 0.5% = MAD 2,000. Droit band 1,001 to 2,500: MAD 2,280.
+
+```oa-check
+name: Commercial AE, MAD 400,000 collected
+inputs:
+  turnover: 400000
+  droit: 2280
+steps:
+  - ir: turnover * 0.005
+  - total: ir + droit
+expected:
+  ir: 2000.00
+  total: 4280.00
+```
+
+### Case 5: ceiling breach
+
+Omar (services) collects MAD 230,000 in 2026. One year over does not end the option. If 2027 is also over, the net real regime applies from 1 January 2028 unless he elects RNS or CPU, and he can never return to AE. Model the exit with `ma-cpu` and `morocco-professional-income-tax`, and check TVA.
+
+## When to refuse or refer
+
+Refer to a Moroccan expert-comptable when:
+
+- one client's share suggests disguised employment;
+- a ceiling is breached in the current or prior year, including the rate for the excess turnover;
+- the activity is borderline for the excluded list;
+- mixed activities straddle both ceilings;
+- CNSS or AMO entitlement or arrears are disputed;
+- TVA may apply;
+- business assets are sold or withdrawn, because the Art. 73-I scale then applies.
+
+Do not confirm eligibility for an excluded profession. Do not deduct expenses. Do not invent social contribution amounts outside the table above. Do not present a return as filed without the client's own review.
+
+## Filing and payment ([CGI Art. 44-II, 82 bis, 148-V, 173-II, 184, 208](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+
+Registration: the option is made when filing the déclaration d'existence with the designated body (Art. 44-II, 148-V). That body sends a copy to the tax administration.
+
+Steps each period:
+
+1. Add up turnover collected in the period, per activity.
+2. Complete the model form set by the designated body (Art. 82 bis-I), including a nil period if the portal asks for one.
+3. Pay to the same body within the deadline (Art. 173-II).
+4. Keep proof of filing and payment.
+
+| Option | Period | Deadline |
+|---|---|---|
+| Monthly | Each month | Before the end of the following month |
+| Quarterly, Q1 | Jan to Mar | Before 30 April |
+| Quarterly, Q2 | Apr to Jun | Before 31 July |
+| Quarterly, Q3 | Jul to Sep | Before 31 October |
+| Quarterly, Q4 | Oct to Dec | Before 31 January of the next year |
+
+Rules for control, sanctions, disputes and limitation are those of the CPU regime (Art. 82 bis-IV).
+
+Late filing (Art. 184): 5% up to 30 days late; 15% after 30 days; 20% on assessment for no return or an incomplete one. The minimum is MAD 100 for an AE turnover return, and an incomplete return with no effect on the base costs MAD 100.
+
+Late payment (Art. 208-I): penalty 10%, or 5% if within 30 days; surcharge 5% for the first month and 0.5% for each further month or part month.
+
+Social cover: Art. 42 ter-II-B requires membership of the scheme. AMO health cover, base pension and daily allowances detail sits in `ma-social-contributions`.
+
+## Completion checklist
+
+- [ ] Activity checked against both decrees
+- [ ] Turnover is collected, split by activity
+- [ ] Each ceiling tested, this year and last
+- [ ] Each services client tested against MAD 80,000
+- [ ] Surplus withheld or referred
+- [ ] Droit complémentaire band found
+- [ ] Deadline and any Art. 184 or 208 cost stated
+- [ ] TVA position routed
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| CGI 2026 (DGI), Art. 40, 42 bis to 44, 45 bis, 73, 82 bis, 86, 91, 145, 148, 157, 173, 184, 208 read in text extract | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| Decrees 2-15-263 and 2-15-303, as annexed to the CGI 2026 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+
+Not yet confirmed: cnss.ma and ae.gov.ma would not open in a browser on 2026-11-01 and have no 2026 archive copy, so these old-version items are unverified and kept out of the rules: social contribution rules and the "T1 to T8" brackets, whether they match the eight CGI bands; the bases of 50% (services) and 20% (commercial) of turnover; Décret 2.21.477 as the AMO source; the RNAE portal address rn.ae.gov.ma, Poste Maroc or Al Barid Bank as designated body, free registration, the 7 to 15 day processing and card; online payment channels; duty to file nil returns and radiation for missed returns. Also unread: the regulation fixing droit complémentaire terms, including part years and whether the withheld surplus counts for the band; the rate on turnover above a ceiling in a year still within the option; the full text of Loi 114-13, including residence as a condition. The old list named engineers, adouls, regulated transport, alcohol and financial intermediaries as excluded; Decree 2-15-263 does not name them, so check any such case individually.
 
 <!-- openaccountants-cta-block -->
 
