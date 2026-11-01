@@ -1,0 +1,12 @@
+{
+  "article": "FORMATION-ENTITY-FOUNDER-CONVICTION-PDF",
+  "official_url": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/7/7-17.pdf",
+  "observed_utc": "2026-10-30T21:51:39.493461+00:00",
+  "read_date": "2026-10-30",
+  "text": "                                                      I.P. „Agenţia Servicii Publice”\n\n\n\n\n                                   DECLARAŢIE\n\nSubsemnatul/ta,                                                IDNP                     ,\n\nîn calitate de administrator al ___________________________________, în calitate\n\nde fondator al__________________________________ în temeiul art. 13 alin. (1)\n\nlit. g) din Legea nr. 220/2007 cu privire la înregistrarea de stat a persoanelor juridice\n\nşi a întreprinzătorilor individuali, declar pe proprie răspundere că nu am antecedente\n\npenale nestinse pentru fapte de evaziune fiscală.\n\n\n\n_________________                                     ______________________\n       Data                                                        (semnătura)\n",
+  "sha256": "5375692a5aa4aa195b7d955301cfbce833d44d126c6fb92a32f3a42f7361ac2b",
+  "pdf_sha256": "c31fa10abad54bced3d7f5c664a6cd7f2cb1cca4827cf14be67eb00d45e25ac2",
+  "retained_pdf_relative_to_country_workspace": "primary-attachments/administrator-founder-conviction-declaration.pdf",
+  "format": "Direct official PDF; pdftotext-layout extraction; pages1-1of1 read and rendered pages visually inspected",
+  "visual_inspection": "Pages1-1 inspected; blank template, no filed application or portal test. All pages inspected."
+}

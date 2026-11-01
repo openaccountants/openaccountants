@@ -2,13 +2,13 @@
 name: lc-first-time-land-interest
 description: >
   Saint Lucia first-time residential landowner interest deduction introduced by the July 2026 Income Tax Amendment No. 2 Act. Covers resident eligibility, the prior-ownership test, maximum parcel size, deed-registration date, qualifying paid interest and exclusion from the ordinary aggregate deduction cap. Use for a first residential land purchase, Saint Lucia land-loan interest relief or section 59D. It distinguishes an income deduction from a tax credit and from owner-occupied dwelling mortgage relief. It does not establish property transfer tax, registration charges, joint-borrower allocation or a taxpayer’s complete income tax position. Independent professional review remains outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: LC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -43,8 +43,6 @@ A parcel of exactly 22,000 square feet meets the size boundary; 22,001 does not.
 Retain the registered deed, parcel survey, prior-title evidence, loan agreement, trace of loan use and lender statement separating interest paid from principal. Record residential intent and residence evidence. Reconcile this claim separately from owner-occupied dwelling-house deductions and avoid claiming the same expenditure twice without a legal basis.
 
 Joint purchasers, refinanced loans, mixed-use borrowing, pre-registration interest and insufficient assessable income require review of the full Act and the facts. Section 59D does not supply a special credit or a transfer-tax exemption. Current filing mechanics and independent accountant review remain outstanding.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

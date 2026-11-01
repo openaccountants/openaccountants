@@ -2,13 +2,13 @@
 name: ht-service-withholding-and-payment-reporting
 description: >
   Haiti service-payment withholding and annual payee-reporting reference under the replacement Code effective 1 October 2026. Distinguishes resident contractor withholding, the financial-statements taxpayer exclusion, specified intellectual-property remuneration and the enacted nonresident-service provision. Explains monthly remittance, annual beneficiary identification, creditable versus final treatment and the expense-deduction consequence of withholding failures. Includes conditional arithmetic and preserves an unresolved cross-reference in the nonresident rule. Does not establish treaty relief, cross-transition treatment, tax-inclusive withholding bases or operational forms. Independent source review and accountant attestation remain pending.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -67,8 +67,6 @@ Check that evidence supports residence, provider tax regime, payment category, b
 ## Disclaimer and remaining work
 
 Source-cited research draft, not independent professional attestation or a complete withholding pack. Resolve the overseas-service cross-reference, applicable implementation and transition instructions, current forms, treaty questions and disputed bases before giving transaction-specific filing advice.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

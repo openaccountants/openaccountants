@@ -1,0 +1,68 @@
+{
+  "base_remote": "7ccafa2fbee9fc63dec342c648f6e1ca97f6b405",
+  "ten_guides": [
+    {
+      "path": "skills/moldova/moldova-income-tax.md",
+      "remote_sha256": "386b104ad58df0234011135e9811ad3576266ecdbb5f5a5f0b98d437dca058d7",
+      "current_sha256": "c6f49b7cc71ccc66540796f7f6779973fe3d7eeef83b277ce2eaeac9d29ea789",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/md-corporate-income-tax.md",
+      "remote_sha256": "9785c0ae32c7be0da7c0b02776c07e07b963b8325ee30f16726237826e7ab5c4",
+      "current_sha256": "663695efc1ad18819a604ff6059d7c5326aa101efb3973d970382154f69af917",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/moldova-payroll.md",
+      "remote_sha256": "a9dcaa66169eb7674b8917fa31eef3f73f46e630d5851e4693fad8078331dbce",
+      "current_sha256": "054132cd7eca0990005713fe447045da8188e52a895feeb545711de94e4e0555",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/moldova-tax-optimization.md",
+      "remote_sha256": "3c8538deddd2095f2bd349266cf78af585ec2f9d2b18bbfb17a5e25cee0ed2a1",
+      "current_sha256": "a6b32149732b5a161bc3080e1cbe0d6ad7a99c3024c84657d6688d73d2b36751",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/moldova-social-contributions.md",
+      "remote_sha256": "bfdcf9a4c95d036ac5537a56e7a3bb6f551b617fefa95bb2960264086669b6dd",
+      "current_sha256": "e453dc373ce2b796cd6e7c1a187ac9b813a8f86bfd42f8e5c7b5130970cd2b3f",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/md-company-formation.md",
+      "remote_sha256": "5decae5cd3408f726eedc777d48016acb06d1511e4cd66749aedaf8a9ed0d658",
+      "current_sha256": "a2446f47c1ed9277f8be6492b9eb2e9527a16d8db732f0b2c0a061d7786b87f4",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/md-cross-border.md",
+      "remote_sha256": "c50f40dcdcf8745e7f9d38b7991e94084b3e89aa5039b72815d017699df2db91",
+      "current_sha256": "8e38b9296a7e1780424e3c3256e3554ba8fc24d00a8781b772f3d9e44e4f4dae",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/md-tax-overview.md",
+      "remote_sha256": "86867a415e18b19e4416a6f9c7f24db91e7848ecbce74efbf8e8dd58c20eafd0",
+      "current_sha256": "6f9dd87d460ebbb52d26b7d11a13539c217720cd1dd8b88083a6da7aa0a84476",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/md-transfer-pricing.md",
+      "remote_sha256": "370c9d4e59b8831180f5734b60d0bd34b9ed0e8f2593171df6ce2dd7bbb4618c",
+      "current_sha256": "f88ed95ace0a73175579a88c67dd6e142518fe55b541c6caec31682628930e28",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    },
+    {
+      "path": "skills/moldova/moldova-vat.md",
+      "remote_sha256": "46b35e10934f7a593f2da07588db7b9e8c5d9ea5c12a9ab14d47ee9ff4e7f7e2",
+      "current_sha256": "0ef637780aa7d2c2595c59403ceab27b04ce46be870aafaf16a453141fe8afe7",
+      "preservation": "PASS; exact tax methods/platform metadata/CTA retained; evidence paths and matching content version/H1 advanced; VAT adds refund pointer"
+    }
+  ],
+  "source_rows_checked": 184,
+  "all_active_pack_relative_links": "PASS",
+  "readme_removed_and_why": "README shortened into a map. Historical writer notes/chronology retained byte-for-byte in layout-20261031/README-before-map-repair.md; methods remain in Guides and all seven partial entries remain explicit. Stale review-status contradictions corrected. No tax topic removed."
+}

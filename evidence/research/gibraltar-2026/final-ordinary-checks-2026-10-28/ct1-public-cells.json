@@ -1,0 +1,1617 @@
+[
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E1",
+    "value": "Income Tax Office"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "BN1",
+    "value": "Corporate Tax Return"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E2",
+    "value": "HM Government of Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "BN2",
+    "value": "Form CT1 (ITA 2010)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "BN3",
+    "value": "Version 3/2018"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E4",
+    "value": "Your Company Tax Return - Explanatory Notes"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B8",
+    "value": "1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E8",
+    "value": "Every company registered in Gibraltar, or having assessable income in Gibraltar, is required to make a full and complete return of its income by the filing date, in accordance with section 29 of the Income Tax Act 2010 (\"ITA 2010\").  A return must be submitted even if there is no tax liability in the period covered by the return.  "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B13",
+    "value": "2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E13",
+    "value": "The components of a full and complete return are as follows:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E15",
+    "value": "a)    "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "G15",
+    "value": "Completed Form CT1 "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E17",
+    "value": "b)    "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "G17",
+    "value": "Detailed tax computation (for companies with assessable income in Gibraltar)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E19",
+    "value": "c)    "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "G19",
+    "value": "Accounts (see table below for minimum accounts filing requirements)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E21",
+    "value": "d)    "
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "G21",
+    "value": "P8 reconciliation (for companies with accounting periods not ending on 30th June)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B23",
+    "value": "3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E23",
+    "value": "Minimum accounts filing requirements for all companies"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E25",
+    "value": "Type of registration under the Companies Act 2014 (\"CA 2014\")"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "T25",
+    "value": "No assessable income in Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AH25",
+    "value": "Assessable income in Gibraltar less than \u00a31.75m"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AV25",
+    "value": "Assessable income in Gibraltar equal to or greater than \u00a31.75m"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E28",
+    "value": "Company not registered in Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "T28",
+    "value": "No requirement to submit a return"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AH28",
+    "value": "Unaudited accounts plus an Independent Accountant's Report"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AV28",
+    "value": "Audited accounts"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E31",
+    "value": "Company incorporated in Gibraltar (section 14, CA 2014)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "T31",
+    "value": "Accounts as required under the Companies Act 2014 (subject to 9 month deadline imposed by section 29(3) of the ITA 2010)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E34",
+    "value": "Public limited company                    (section 14 or 38, CA 2014)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E37",
+    "value": "Company redomiciled into Gibraltar (section 442, CA 2014)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E40",
+    "value": "A non-Gibraltar company with a place of business in Gibraltar (section 431 Part XII, CA 2014)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AH40",
+    "value": "Unaudited accounts of the non-Gibraltar company plus an extract of the Gibraltar-based activity plus a statement confirming that the Gibraltar figures have been extracted from the non-Gibraltar companies accounts"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AV40",
+    "value": "If the non-Gibraltar company's accounts are audited, then those audited accounts plus an extract of the Gibraltar-based activity plus a statement confirming that the Gibraltar figures have been extracted from the non-Gibraltar company's accounts.  If the non-Gibraltar company's accounts are not audited, then audited accounts of the Gibraltar-based activity"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E44",
+    "value": "A branch of a non-Gibraltar company (section 435 Part XIV, CA 2014)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E49",
+    "value": "Company in the process of liquidation"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "T49",
+    "value": "Accounts as required under the Companies Act 2014, subject to (i) below"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E51",
+    "value": "These accounts are the minimum requirements for the company to be compliant with its filing obligations under s29 of the ITA 2010.  Companies may exceed this minimum filing requirement."
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E53",
+    "value": "(i)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "F53",
+    "value": "A company which is in the process of being liquidated and has assessable income in Gibraltar is required to comply with the minimum accounts filing requirements stated above plus a detailed tax computation plus full settlement of the tax liability on the filing date;"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E54",
+    "value": "A company which is pending being struck off the Register (under the Companies Act 2014) is required to make a full and complete return until such time as it is struck off and thereby dissolved.  In the event that a company which has previously been struck off should be reinstated on the Register, its filing obligations in accordance with s29 of the Income Tax Act 2010 will apply as per the table above."
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E56",
+    "value": "An incomplete return will incur penalties under section 65 of the ITA 2010."
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B59",
+    "value": "4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E59",
+    "value": "How to complete this form"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E61",
+    "value": "Download and complete a fillable pdf version of this Form, from the 'Downloads' section of our webpage www.gibraltar.gov.gi:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E64",
+    "value": "Box by box guidance on how to complete this form is available on our Guidance Note CT100:  How to Complete Form CT1 which is available online in the 'Downloads' section of our webpage (as above), or from our offices at :"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "F65",
+    "value": "St Jago's Stone Block"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "S65",
+    "value": "331 Main Street"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "AE65",
+    "value": "Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B67",
+    "value": "5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E67",
+    "value": "Authority to act as Agent"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E68",
+    "value": "A tax return will only be accepted if it is submitted by a statutory officer, shareholder or authorised agent.   See our Guidance Note CT101:  How to Register as an Agent, which is available online (as above) or from our offices at the above address, for further details."
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "B71",
+    "value": "6"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E71",
+    "value": "General"
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "cell": "E73",
+    "value": "Throughout this form, other than in box F1 and where explicitly stated, \"company\" means the company which is the subject of this return."
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "H1",
+    "value": "Income Tax Office"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BL1",
+    "value": "Corporate Tax Return"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "H2",
+    "value": "HM Government of Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BL2",
+    "value": "Form CT1 (ITA 2010)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BL3",
+    "value": "Version 3/2018"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D5",
+    "value": "Section A - Period in respect of which this return is made:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A8",
+    "value": "A1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "F8",
+    "value": "From:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "L8",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "N8",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "P8",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "R8",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "T8",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "V8",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "X8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "Z8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AB8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AD8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AJ8",
+    "value": "A2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AL8",
+    "value": "To:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AP8",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AR8",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AT8",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AV8",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AX8",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AZ8",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BB8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BD8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BF8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BH8",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D11",
+    "value": "Section B - Taxpayer Details"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A15",
+    "value": "B1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D15",
+    "value": "Name"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A19",
+    "value": "B2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D19",
+    "value": "Incorporation number"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A21",
+    "value": "B3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D21",
+    "value": "Taxpayer Identification Number (TIN)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A23",
+    "value": "B4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D23",
+    "value": "Registered address"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A29",
+    "value": "B5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D29",
+    "value": "Standard Industrial Classification of Economic Activity"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A31",
+    "value": "B6"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D31",
+    "value": "Trading address - enter below if different to registered address, otherwise please tick this box:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A33",
+    "value": "B7"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A37",
+    "value": "B8"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D37",
+    "value": "Trading name - enter below if different to company name, otherwise please tick this box:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A39",
+    "value": "B9"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D43",
+    "value": "If the company is registered in Gibraltar under the Companies Act 2014, please tick the relevant box below to confirm the type of registration, Otherwise, tick box B15:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A46",
+    "value": "B10"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D46",
+    "value": "Company incorporated in Gibraltar - other than Public Limited Company "
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A48",
+    "value": "B11"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D48",
+    "value": "Public Limited Company "
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A50",
+    "value": "B12"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D50",
+    "value": "Redomiciled company "
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A52",
+    "value": "B13"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D52",
+    "value": "Company incorporated outside Gibraltar carrying on business in Gibraltar (Part XII)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A54",
+    "value": "B14"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D54",
+    "value": "Limited company incorporated outside the United Kingdom and Gibraltar and has a branch in Gibraltar (Part XIV)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A56",
+    "value": "B15"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D56",
+    "value": "Company is not registered in Gibraltar"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A58",
+    "value": "B16"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "C58",
+    "value": "If the company commenced to trade in the accounting period which is the subject of this return, please enter commencement date.  Otherwise, please leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AP60",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AR60",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AT60",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AV60",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AX60",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AZ60",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BB60",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BD60",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BF60",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BH60",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A62",
+    "value": "B17"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "C62",
+    "value": "If the company ceased to trade in the accounting period which is the subject of this return, please enter date of cessation.  Otherwise, please leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AP64",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AR64",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AT64",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AV64",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AX64",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "AZ64",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BB64",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BD64",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BF64",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "BH64",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A66",
+    "value": "B18"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D66",
+    "value": "If the company is in the process of being liquidated, please tick this box.  Otherwise, please leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "A68",
+    "value": "B19"
+  },
+  {
+    "sheet": "xl/worksheets/sheet2.xml",
+    "cell": "D68",
+    "value": "If the company is in the process of being struck off, please tick this box.  Otherwise, please leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "D2",
+    "value": "Section C - Turnover and Assessable Income Declaration "
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E5",
+    "value": "To be completed by companies with assessable income in Gibraltar in the period which is the subject of this return.  "
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A7",
+    "value": "C1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E7",
+    "value": "Total turnover/ gross income/ revenue in the period"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AG7",
+    "value": "\u00a3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AJ7",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP7",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV7",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BB7",
+    "value": "."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E8",
+    "value": "(as per the company's accounts, including income which is not subject to tax in Gibraltar under the ITA 2010)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AY9",
+    "value": "Yes"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BC9",
+    "value": "No"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A10",
+    "value": "C2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "D10",
+    "value": "Does the company have assessable income in Gibraltar in the period equal to or in excess of \u00a31,750,000?"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AW10",
+    "value": "C3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BE10",
+    "value": "C4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A13",
+    "value": "C5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E13",
+    "value": "Taxable Profit or (Loss) for the period"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI13",
+    "value": "\u00a3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP13",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV13",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BB13",
+    "value": "."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E18",
+    "value": "Section D - Company Size"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E21",
+    "value": "To be completed by companies with no assessable income in Gibraltar in the period which is the subject of this return.   "
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A23",
+    "value": "D1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "D23",
+    "value": "Tick the box that describes the size of the company under the Companies Act 2014:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "G25",
+    "value": "Micro-entity"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "S25",
+    "value": "Small"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AC25",
+    "value": "Medium"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AN25",
+    "value": "Large"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "D27",
+    "value": "Size of company                 (assubmitted to Companies' House)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "R27",
+    "value": "A company's size is determined by the fact that it meets at least two of the following criteria:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AQ27",
+    "value": "Minimum filing requirement"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q29",
+    "value": "Net Turnover                      (pro-rated if not equal to 12 months)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AA29",
+    "value": "Balance Sheet Total                         (total assets)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI29",
+    "value": "Average number of persons employed in each year"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E33",
+    "value": "Micro-Entity"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q33",
+    "value": "Does not exceed \u00a3632,000"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AA33",
+    "value": "Does not exceed \u00a3316,000"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI33",
+    "value": "Does not exceed 10"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AQ33",
+    "value": "Abridged              Balance Sheet"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E37",
+    "value": "Small"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q37",
+    "value": "Does not exceed \u00a310.2 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AA37",
+    "value": "Does not exceed \u00a35.1 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI37",
+    "value": "Does not exceed 50"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AQ37",
+    "value": "Abridged              Balance Sheet"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E41",
+    "value": "Medium"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q41",
+    "value": "Does not exceed        \u00a336 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AA41",
+    "value": "Does not exceed \u00a318 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI41",
+    "value": "Does not exceed 250"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AQ41",
+    "value": "Full Abridged Accounts"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BA41",
+    "value": "2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E45",
+    "value": "Large                                         1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q45",
+    "value": "Exceeds \u00a336 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AA45",
+    "value": "Exceeds \u00a318 million"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI45",
+    "value": "Exceeds 250"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AQ45",
+    "value": "Full Accounts"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BA45",
+    "value": "3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "G49",
+    "value": "1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "H49",
+    "value": "A public company is a large company for the purposes of the Companies Act."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "G51",
+    "value": "2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "H51",
+    "value": "Full Abridged Accounts consist of a Balance Sheet, Abridged Profit and Loss Account, Notes, Directors' Report and Auditor's Report."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "G53",
+    "value": "3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "H53",
+    "value": "Full Accounts consit of a Balance Sheet, Profit and Loss Account, Notes, Directors' Report and Auditor's Report."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "D58",
+    "value": "Section E - Supplemental Information"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E61",
+    "value": "To be completed by all companies."
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A63",
+    "value": "E1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E63",
+    "value": "Total number of employees at the date entered in A2 above:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV63",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A65",
+    "value": "E2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E65",
+    "value": "Depreciation charged to the Profit & Loss Account:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AI65",
+    "value": "\u00a3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP65",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV65",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A67",
+    "value": "E3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E67",
+    "value": "If the company has declared a dividend in this period, enter total dividend.  Otherwise, leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AG69",
+    "value": "\u00a3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AJ69",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP69",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV69",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E71",
+    "value": "If the company has paid or received any amounts in respect of the following, please enter the relevant amount(s).  Otherwise, leave blank:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "Q73",
+    "value": "Paid"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AO73",
+    "value": "Received"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A74",
+    "value": "E4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E74",
+    "value": "Director's Fees (other than corporate directors)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "R74",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "X74",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AD74",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A76",
+    "value": "E5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E76",
+    "value": "Intercompany Interest: "
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "R76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "X76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AD76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BB76",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "A78",
+    "value": "E6"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "E78",
+    "value": "Royalties:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "R78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "X78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AD78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AP78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "AV78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet3.xml",
+    "cell": "BB78",
+    "value": ","
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C2",
+    "value": "Section F - Person Submitting this Return"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C5",
+    "value": "The person filing this return must be authorised to do so:  Statutory officer (director or secretary), Shareholder or Authorised Agent"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A7",
+    "value": "F1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C7",
+    "value": "Name"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C11",
+    "value": "Submitting capacity:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "W11",
+    "value": "F2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AA11",
+    "value": "Shareholder"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AK11",
+    "value": "F3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AN11",
+    "value": "Accountant"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AO11",
+    "value": "Director"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AW11",
+    "value": "F4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "BA11",
+    "value": "Company Secretary"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C12",
+    "value": "(please tick as many as may be relevant)"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "W13",
+    "value": "F5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AA13",
+    "value": "Accountant"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AK13",
+    "value": "F6"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AN13",
+    "value": "Auditor"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AO13",
+    "value": "Auditor"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AW13",
+    "value": "F7"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "BA13",
+    "value": "Legal Adviser"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "W15",
+    "value": "F8"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AA15",
+    "value": "Liquidator"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AK15",
+    "value": "F9"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AO15",
+    "value": "Other authorised person"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A18",
+    "value": "F10"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C18",
+    "value": "Telephone"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A20",
+    "value": "F11"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C20",
+    "value": "Email"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C25",
+    "value": "Section G - DECLARATION"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A29",
+    "value": "G1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C29",
+    "value": "WARNING"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M29",
+    "value": "Providing false information in this tax return is an offence under section 66 of the ITA 2010.  "
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M31",
+    "value": "An unsigned Form CT1 shall render the return incomplete and the company liable to penalties under section 65 of the ITA 2010."
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A36",
+    "value": "G2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C36",
+    "value": "I confirm that the information contained in this return is correct and complete to the best of my knowledge and belief.  I further confirm that I am the person named in F1 above and that I am authorised  to file this return.  I understand that giving false information in the return is an offence under the Income Tax Act 2010."
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A41",
+    "value": "G3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM41",
+    "value": "To be signed by authorised person"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "A45",
+    "value": "G4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C45",
+    "value": "Date"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M45",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "O45",
+    "value": "D"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "Q45",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "S45",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "U45",
+    "value": "M"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "W45",
+    "value": "/"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "Y45",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AA45",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AC45",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AE45",
+    "value": "Y"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "C48",
+    "value": "Section H - Documents submitted with this Form"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "E51",
+    "value": "Please tick all of the documents which are being submitted with this form:"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I53",
+    "value": "H1"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M53",
+    "value": "Audited Accounts of the company"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI53",
+    "value": "H2"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM53",
+    "value": "Unaudited Accounts of the company"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I55",
+    "value": "H3"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M55",
+    "value": "Independent Accountant's Report"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI55",
+    "value": "H4"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM55",
+    "value": "Abridged Balance Sheet"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I57",
+    "value": "H5"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M57",
+    "value": "Full Abridged Accounts"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI57",
+    "value": "H6"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM57",
+    "value": "Detailed Corporate Tax Computation"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I59",
+    "value": "H7"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M59",
+    "value": "P8 Reconciliation"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI59",
+    "value": "H8"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM59",
+    "value": "Extract of Gibraltar business activity"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I61",
+    "value": "H9"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M61",
+    "value": "Confirmation that extract of Gibraltar business activity is derived from the accounts of the non-Gibraltar company"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI61",
+    "value": "H10"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM61",
+    "value": "Copy of bank transfer - payment of balance of liability"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "I63",
+    "value": "H11"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "M63",
+    "value": "Cheque payment of balance of liability"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AI63",
+    "value": "H12"
+  },
+  {
+    "sheet": "xl/worksheets/sheet4.xml",
+    "cell": "AM63",
+    "value": "Other - please state:"
+  }
+]

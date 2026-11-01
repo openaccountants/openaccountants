@@ -1,0 +1,16 @@
+{
+  "baseline": "e04d1f908",
+  "original_candidate": "594f214eb17e0a5f81e5c9fec19f0faeaa5f37ae",
+  "guide": "skills/faroe-islands/fo-property-transfer-registration.md",
+  "old_sha256": "a47e5eb7e726c24f806f9bcea58b469ed298041cdccb4af8d80489c51050efa2",
+  "current_sha256": "e4e9fb45678690c822d246d8722f931a9008aed8664a16dc29274c0bc768d0c1",
+  "repairs": {
+    "PT-IR-01": "Carry the already verified PT018 fixed-text amendment rule into the Guide.",
+    "PT-IR-02": "Add published declaration placement with new PT044 agency receipt."
+  },
+  "only_other_changes": "Version/H1 0.1 to 0.2",
+  "original_43_rows_and_54_statutory_quote_bindings": "Unchanged",
+  "new_procedural_bindings": 1,
+  "examples": "All original oa-check blocks byte-identical",
+  "existing_gaps": "Unchanged; no country completion or trust upgrade"
+}

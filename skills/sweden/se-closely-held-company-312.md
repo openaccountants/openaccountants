@@ -1,13 +1,13 @@
 ---
 name: se-closely-held-company-312
 description: "Use for the Swedish 3:12 rules for an individual who owns qualified shares (kvalificerade andelar) in a closely held company (fåmansföretag) for income year 2026, filed on form K10 with the 2027 return. Covers what a fåmansföretag and a qualified share are, the new single gränsbelopp rule from 2026 (grundbelopp of four income base amounts, SEK 322,400; wage-based amount of 50% of the payroll above eight income base amounts; interest of 11.55% on cost above SEK 100,000; saved dividend space with no uplift), dividends within the limit taxed at 20%, the excess taxed as earned income up to SEK 7,506,000, gains on qualified shares, losses, and the 3 May 2027 deadline. Trigger on: 3:12, fåmansföretag, K10, gränsbelopp, grundbelopp, lönebaserat utrymme, sparat utdelningsutrymme, utdelning aktiebolag, kvalificerade andelar. Out of scope: se-corporate-tax, se-employee-income-tax, se-capital-gains, sweden-payroll, se-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -221,8 +221,6 @@ expected:
 | Skatteverket: Belopp och procent inkomstår 2026 (statslåneränta 2.55%, income base amount 2026 SEK 83,400) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-23 |
 
 Not yet confirmed: the wording of the repealed 57 kap. 12 § second paragraph, 21 § second paragraph and 25-35 §§ that still apply until 2028 (data.riksdagen.se shows only the current text; Skatteverket calls them the index and capital-base rules for shares bought before 1990 or 1992); the new wording of the outsider rule in 57 kap. 5 § beyond the shorter four-year period from 2027; whether the 30% outsider threshold stays Skatteverket's practice under the new wording; whether a foreign company can be a fåmansföretag for a Swedish resident owner; that the part of a dividend taxed in tjänst carries no social contributions and is not pensionable income (socialavgiftslagen and socialförsäkringsbalken not read); the K10 form version for income year 2026, not yet published on 23 October 2026.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: gp-producer-octroi-compliance
 description: >
   Guadeloupe reference for independent producers assessing internal octroi de mer liability and recurring compliance. Explains the prior-year production-turnover threshold, inclusive boundary, start-up proration, identification timing and quarterly electronic returns, with worked eligibility examples. Uses the 2026 statutory threshold and the official July 2025 customs circular, distinguishing production activity from resale and services. Product rates, local exemptions, deduction entitlements and detailed classification are outside this initial Guide. It does not establish complete Guadeloupe tax coverage, and independent source review and transaction-specific amendment checks remain necessary before operational use.
-version: 0.1
+version: 0.2
 jurisdiction: GP
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -53,8 +53,6 @@ Operationally, reconcile the sales ledger to the return, separating product code
 - Use the [Martinique–Guadeloupe movement Guide](../martinique/mq-antilles-goods-movements.md) for qualifying inter-island movements, which have separate reporting rules.
 
 Source-cited draft, not accountant-attested. Rates, exemptions, input deductions, penalties, general VAT, payroll and income taxes remain outside scope. The 2026 threshold was checked against official statutory retrieval; a complete review of amendments to every procedure in the 2025 circular remains outstanding.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "tranche1-report.md",
+    "sha256": "5187562b2732a0e888001fead75b82c24a4bd85c21a8d2760bf16be904c17502"
+  },
+  {
+    "path": "tranche1-row-verdicts.json",
+    "sha256": "7ed5e79fb522196e8e17e65f10bd38c30e85bd4994b3cef73aee09d38b35e6b6"
+  },
+  {
+    "path": "tranche1-read-scope.json",
+    "sha256": "bb58de1b8c42b7bf0258a24d041746c59960708778907be4d8b9a05efe477e61"
+  },
+  {
+    "path": "tranche1-finding-history.json",
+    "sha256": "75e308a46ca4fe65de24de4253a169092ab44f18490f811b18c1838462ddae93"
+  },
+  {
+    "path": "tranche1-preservation-coverage.json",
+    "sha256": "8bb447233c2a481831a849a6bd19e944010f60aebb1399bf989ad8537ee96aff"
+  },
+  {
+    "path": "tranche1-controls.py",
+    "sha256": "f2e48c9c04d98a384b800d3e7a3c4a7c11cb9fb73e394ed4672c449267af789f"
+  },
+  {
+    "path": "tranche1-controls.json",
+    "sha256": "b42a1528ffb9c68a62e6544edb40f96716dd617a7a3ab989937dab8702edaf5b"
+  },
+  {
+    "path": "source-failure-check-web.json",
+    "sha256": "4c7eda1ddb9b77e324d119a7255072f56d681311d06c4f59992fa70e4770fb47"
+  },
+  {
+    "path": "preflight.json",
+    "sha256": "2dbe95f3aeae1859b65666cf3c0f4010f36d8495f23ef2b0ade9a6c428471600"
+  }
+]

@@ -1,19 +1,19 @@
 ---
 name: ro-transfer-pricing
 description: "Romanian transfer pricing for tax year 2026: who is an affiliated person (Fiscal Code art. 7 pt. 26, the 25% holding or effective control test), the arm's length rule and the five methods (art. 11(4)), the transfer pricing file (dosarul prețurilor de transfer) under Fiscal Procedure Code art. 108(2) and ANAF Order 828/2026 (which replaces Order 442/2016 for 2026 transactions), the large taxpayer thresholds per affiliated person (EUR 100,000 services / 200,000 interest / 250,000 intangibles and royalties / 350,000 tangible goods), preparation by the corporate tax return deadline and filing in SPV within 30 working days, the on-request regime for small and medium taxpayers (EUR 50,000 / 100,000 / 150,000 / 200,000, 30 to 60 working days to present), the interquartile range and the median adjustment, APAs and their EUR 10,000 / 20,000 fees, the RON 2,000 to 14,000 fine for not preparing or presenting the file, and country-by-country reporting. Trigger on: transfer pricing Romania, prețuri de transfer, dosarul prețurilor de transfer, persoane afiliate, OPANAF 828/2026, OPANAF 442/2016, acord de preț în avans, CbCR Romania. Out of scope: corporate tax rates, base and filing (ro-corporate-income-tax), withholding and exit tax (ro-cross-border), VAT market value rules (ro-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Romania: transfer pricing (prețuri de transfer) v0.2
+# Romania: transfer pricing (prețuri de transfer) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Romania.
 
@@ -298,8 +298,6 @@ expected:
 | ANAF, Ghid al prețurilor de transfer (updated November 2025; predates Order 828/2026) | https://static.anaf.ro/static/10/Anaf/Prezentare_R/Ghid%20Preturi%20de%20Transfer%20(1).pdf | 2026-10-23 |
 
 Not yet confirmed: (1) Whether several contracts of the same category with one affiliated person are added together for the Order 828/2026 thresholds. The Order measures "each individual transaction with each affiliated person" (art. 2(3) and (8)) and does not define a transaction. (2) Whether filing the annual file late in SPV, while it was prepared on time, is itself fined under CPF art. 336(1)(e). (3) The Portal Legislativ (legislatie.just.ro) could not be loaded on 23 October 2026, so no later amendment to Order 828/2026 was checked there. ANAF's consolidated Procedure Code still lists Order "446/2016" (a typing error for 442/2016) under art. 108(2) and does not yet list Order 828/2026. (4) Whether ANAF spreads the non-declaration penalty on a corporate tax difference across the quarterly due dates rather than starting it after the annual due date, as Example 2 does. (5) Whether a reduced fine for paying half the minimum within 15 days applies under the general contraventions law (OG 2/2001), which was not read. (6) The treatment of secondary adjustments, such as whether an excess paid to a foreign parent becomes a dividend, was not researched. (7) Whether the CbCR report, the CbCR notification and the SPV filing deadline move when they fall on a non-working day was not checked.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

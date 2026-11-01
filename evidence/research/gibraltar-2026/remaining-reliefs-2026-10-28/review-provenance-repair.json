@@ -1,0 +1,12 @@
+{
+  "base_repair_head": "fd1605e74b3fcbb5c54566e97ef9c27fd95588a7",
+  "purpose": "Use a neutral, exact-scope review link that remains accurate after publication",
+  "guide_only_replacement": {
+    "old": "The new property/energy addition is local v0.11 material outside the published f7d59d7c review. The [complete current ledger and topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows/proofs unchanged and add 14 bounded source/limit rows. The prior review retains its exact scope. The [four conditional relief scenarios](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved. No new independent acceptance or publication is claimed.",
+    "new": "The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](../../research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved."
+  },
+  "guide_sha256_before": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+  "guide_sha256_after": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
+  "other_changes": "README review link/state wording; supplementary-control title only; ledger Guide hash/status. No tax rule, source proof, number, arithmetic, original topic or protected field changed.",
+  "independent_closure_pending": true
+}

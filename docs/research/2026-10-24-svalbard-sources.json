@@ -1,0 +1,399 @@
+{
+  "scope": "Svalbard only; Jan Mayen excluded",
+  "read_on": "2026-10-24",
+  "base": "aa79233523f0aff9e57f440195b161f0aabf8a9d",
+  "sources": [
+    {
+      "key": "act",
+      "url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-24",
+      "sha256": "9a0f0435d5bee5f12a011938e28ff8b5f352134cbf9f5c59a6a91bd3a847cf6f",
+      "bytes": 101264,
+      "text_chars": 21602
+    },
+    {
+      "key": "annual",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+      "read_on": "2026-10-24",
+      "sha256": "2743970b3bb96a956739282fcc44f1bc17f0315a11a2832780707d38a37546a4",
+      "bytes": 38906,
+      "text_chars": 3913
+    },
+    {
+      "key": "payment",
+      "url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "read_on": "2026-10-24",
+      "sha256": "7eb689605b3dc5aebd1097a27530c58ee2276070d8aa66961e58fa8e886ad56c",
+      "bytes": 535668,
+      "text_chars": 136654
+    },
+    {
+      "key": "admin",
+      "url": "https://lovdata.no/dokument/NL/lov/2016-05-27-14",
+      "read_on": "2026-10-24",
+      "sha256": "c460a9e45b6196a203c85b1d7b7d1d837f95faab2cc96bf94dc9984dd0483b65",
+      "bytes": 520928,
+      "text_chars": 147284
+    },
+    {
+      "key": "income",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14",
+      "read_on": "2026-10-24",
+      "sha256": "b8b2abae1f3b90de08432bff9d9a2dc8178a41a5cfd6b0732f18030ad848d626",
+      "bytes": 146591,
+      "text_chars": 29070
+    },
+    {
+      "key": "social",
+      "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19",
+      "read_on": "2026-10-24",
+      "sha256": "57ae4ac905997d76f6fa85effa0c0ab23a37bc15c719b6c8766c67dc69082b16",
+      "bytes": 166884,
+      "text_chars": 32083
+    },
+    {
+      "key": "vat",
+      "url": "https://lovdata.no/dokument/NL/lov/2009-06-19-58",
+      "read_on": "2026-10-24",
+      "sha256": "c7f80ed7105a70cccc153b135772ea2a19072b7677d2742e1219509497d7efa1",
+      "bytes": 580772,
+      "text_chars": 135629
+    },
+    {
+      "key": "payroll",
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-lonn/",
+      "read_on": "2026-10-24",
+      "sha256": "114f8a5e0d6e6f13e1c5681e2e3572012da28cba68e90401aa1e9055d7c6c75c",
+      "bytes": 80139,
+      "text_chars": 6360
+    },
+    {
+      "key": "business",
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/naring-pa-svalbard/",
+      "read_on": "2026-10-24",
+      "sha256": "cfaebc2b32f4a948333dfff3e93ba28162cf0e99072a5b27da0e252aeaee6940",
+      "bytes": 79762,
+      "text_chars": 4181
+    },
+    {
+      "key": "residence",
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/hvem-er-skattemessig-bosatt-pa-svalbard/",
+      "read_on": "2026-10-24",
+      "sha256": "d76628d5d4ad1dad2ffd5870edc5c2337f9cbd49756ebb6af1bcd35dde987211",
+      "bytes": 73006,
+      "text_chars": 6606
+    },
+    {
+      "key": "rates",
+      "url": "https://www.skatteetaten.no/en/rates/tax-rates-on-svalbard",
+      "read_on": "2026-10-24",
+      "sha256": "9cb1aaed20871cdb6d641054edf98bdbc1afc5efc9ecba4822c2774d8435cc7d",
+      "bytes": 71762,
+      "text_chars": 805
+    },
+    {
+      "key": "g",
+      "url": "https://www.nav.no/grunnbelopet",
+      "read_on": "2026-10-24",
+      "sha256": "477e0b1356700efbe993484d943743b63176548aadd63767d6ca9b90a04e629b",
+      "bytes": 276868,
+      "text_chars": 10972
+    },
+    {
+      "key": "income1",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_1",
+      "read_on": "2026-10-24",
+      "sha256": "09485c7604f77563003619c47842afd26f702092ca587cf2bbabd3e245b88d66",
+      "bytes": 135218,
+      "text_chars": 25241
+    },
+    {
+      "key": "income2",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_2",
+      "read_on": "2026-10-24",
+      "sha256": "297f74d88f3556ed86dcebca38180c21b40ee25db8a667bb6060cd5d7aa67769",
+      "bytes": 291240,
+      "text_chars": 72287
+    },
+    {
+      "key": "income4",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_4",
+      "read_on": "2026-10-24",
+      "sha256": "64afc8abdbbabb1c5cc77353200bfc0c36112c1ca5fc524ab72a065662089faf",
+      "bytes": 222462,
+      "text_chars": 51800
+    },
+    {
+      "key": "income5",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_5",
+      "read_on": "2026-10-24",
+      "sha256": "902965d7d3b082f536bf84c3274bdc964c84a5d7895cd6bcc1fdbd7228df25ab",
+      "bytes": 251945,
+      "text_chars": 57778
+    },
+    {
+      "key": "income6",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_6",
+      "read_on": "2026-10-24",
+      "sha256": "882f8db26d4bcd07c5d59f71defc0ebf709185b7a721c5c585decd3ed81209f8",
+      "bytes": 370651,
+      "text_chars": 102333
+    },
+    {
+      "key": "income9",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_9",
+      "read_on": "2026-10-24",
+      "sha256": "ecf0a3c9213547da37775c8606ff669587b72611da7ba656617099c4ef4bed8d",
+      "bytes": 222601,
+      "text_chars": 54801
+    },
+    {
+      "key": "income10",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_10",
+      "read_on": "2026-10-24",
+      "sha256": "f2279bee3d17b174007b660c7258b8fe7ecbac382923bea5c1e277e0d16a81f0",
+      "bytes": 363633,
+      "text_chars": 101121
+    },
+    {
+      "key": "income13",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_13",
+      "read_on": "2026-10-24",
+      "sha256": "6664d49d59c843b433d8c0fe1f9789e410f7766121af21582991e65cb44fe734",
+      "bytes": 141376,
+      "text_chars": 28690
+    },
+    {
+      "key": "income14",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14",
+      "read_on": "2026-10-24",
+      "sha256": "043bb97a50c7a8c10464eae5b59fa5a6f3a54c4f26855391e48201f13f215c25",
+      "bytes": 326556,
+      "text_chars": 84494
+    },
+    {
+      "key": "income16",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_16",
+      "read_on": "2026-10-24",
+      "sha256": "2c673d61f45614cd23d9e8c917bd3f1e03dc134d043e8654b469e2900a2218c6",
+      "bytes": 231536,
+      "text_chars": 56548
+    },
+    {
+      "key": "social2",
+      "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_2",
+      "read_on": "2026-10-24",
+      "sha256": "e86e88f8573743a10026b91ded3f93a5b7d12cd5fe0c3922307d086ff24f0324",
+      "bytes": 258113,
+      "text_chars": 60451
+    },
+    {
+      "key": "social23",
+      "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+      "read_on": "2026-10-24",
+      "sha256": "ce65357f6686e4d51957a8cd0cde883870b927ac041a162225b5eae3ae80bd68",
+      "bytes": 219227,
+      "text_chars": 49346
+    },
+    {
+      "key": "socialrates",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+      "read_on": "2026-10-24",
+      "sha256": "a8e5f37730e7363053685e4fa4b70634dad44fdaea64246c0056b6261fe7e4f0",
+      "bytes": 80272,
+      "text_chars": 17423
+    },
+    {
+      "key": "mainrates",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747",
+      "read_on": "2026-10-24",
+      "sha256": "43a2689294a3f4cc0b149ac824e677adbe3400fcf51cb447dc47e46ac3cfa99c",
+      "bytes": 82689,
+      "text_chars": 17595
+    },
+    {
+      "key": "navsvalbard",
+      "url": "https://www.nav.no/svalbard",
+      "read_on": "2026-10-24",
+      "sha256": "33466286eb193701fc56690da090a8b492079be6257056e898360774a482b52d",
+      "bytes": 59412,
+      "text_chars": 2860
+    },
+    {
+      "key": "adminreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360",
+      "read_on": "2026-10-24",
+      "sha256": "c15d7e748a11c626ae1d1998f5239291fce3e17a1138d0afaea2a4f5b2c6398d",
+      "bytes": 147652,
+      "text_chars": 27000
+    },
+    {
+      "key": "paymentreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2007-12-21-1766",
+      "read_on": "2026-10-24",
+      "sha256": "5b4ab4def38552dd6d9b06d04efb4bae5323bee1116a074f8f270914c0d73a09",
+      "bytes": 843366,
+      "text_chars": 208108
+    },
+    {
+      "key": "socialmembership",
+      "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+      "read_on": "2026-10-24",
+      "sha256": "6030318bad6be5dfbe9a5f5b36c1cb3800a9ba2883c1b857f516e12174ede298",
+      "bytes": 235597,
+      "text_chars": 53984
+    },
+    {
+      "key": "adminreg8",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_7",
+      "read_on": "2026-10-24",
+      "sha256": "2f302336aea13089677573b7d1cfacc4e3379fed60ab2bcb97ab97d5398d70f0",
+      "bytes": 312422,
+      "text_chars": 72185
+    },
+    {
+      "key": "adminreg14",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13",
+      "read_on": "2026-10-24",
+      "sha256": "b9884b55a8acb602d17e0cad227ce5077385080e49662bfe33dd4db2be485dfc",
+      "bytes": 133322,
+      "text_chars": 23631
+    },
+    {
+      "key": "benefits",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2025-12-15-2559",
+      "read_on": "2026-10-24",
+      "sha256": "c520f679dbcbd68affbb478f708bf749ce27b5794b678cf53a68da4479c3fac0",
+      "bytes": 33688,
+      "text_chars": 3605
+    },
+    {
+      "key": "svalreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-24",
+      "sha256": "90458f5066a02aaaf65b8e47ea2be27962d56ab72b5d1df7b6606712339e791f",
+      "bytes": 52837,
+      "text_chars": 8322
+    },
+    {
+      "key": "interest",
+      "url": "https://www.skatteetaten.no/satser/forsinkelsesrenter/",
+      "read_on": "2026-10-24",
+      "sha256": "c7e9a2422122ce59ae2e4f17f1d6952b338fbf10a14dd4b4a09c9495933fcd9d",
+      "bytes": 62445,
+      "text_chars": 583
+    },
+    {
+      "key": "abc",
+      "url": "https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23",
+      "read_on": "2026-10-24",
+      "sha256": "5df124347ea4a76707bbee7118c5e37ff31c45580c6874707cab909366a7b96d",
+      "bytes": 2697634,
+      "text_chars": 68554
+    },
+    {
+      "key": "benefitscurrent",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-12-15-2559",
+      "read_on": "2026-10-24",
+      "sha256": "8ca80dcadbb1c6156898737c06ea980260abd82a136116adae654e6837a18ff9",
+      "bytes": 34405,
+      "text_chars": 3965
+    },
+    {
+      "key": "social24",
+      "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_9",
+      "read_on": "2026-10-24",
+      "sha256": "98805e80031246821b645523110e55792bcd2c383fe0439e9f99ac8f2a09f78a",
+      "bytes": 230380,
+      "text_chars": 52240
+    },
+    {
+      "key": "wealthguidance",
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-annen-inntekt/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "otherincome",
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/andre-inntekter/",
+      "read_on": "2026-10-24",
+      "sha256": "0f8fd719f6f2b106af56a665043d29e90baa414125bf73d32ee5b62a7ccdc877",
+      "bytes": 62780,
+      "text_chars": 1023
+    },
+    {
+      "key": "income7",
+      "url": "https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_7",
+      "read_on": "2026-10-24",
+      "sha256": "a411e85ee91f6c758863b1e3ed6ca2b657e7de75581cf1033e2c48d1373714fe",
+      "bytes": 156282,
+      "text_chars": 31260
+    },
+    {
+      "key": "allowances",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216",
+      "read_on": "2026-10-24",
+      "sha256": "093b5a2dd39aad385ae559c8d0b08d408a1e2c928bf652b5a028a07c2079f465",
+      "bytes": 62501,
+      "text_chars": 16875
+    },
+    {
+      "key": "incomereg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158",
+      "read_on": "2026-10-24",
+      "sha256": "8bf64bcaf773b8809b133e9ce6057f0fa57037633f641468b345ff5561449ddc",
+      "bytes": 292420,
+      "text_chars": 59547
+    },
+    {
+      "key": "incomereg5",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_5",
+      "read_on": "2026-10-24",
+      "sha256": "e40d406060aaacd65bbdbdf777ea308b6aca30c0c1775bcee28c6b60dd012668",
+      "bytes": 470730,
+      "text_chars": 117324
+    },
+    {
+      "key": "creditreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_16-3-1-1",
+      "read_on": "2026-10-24",
+      "sha256": "ed70e72e2a6a48c7061863982c29b6e23467caa3b5a728b59632f79d1f78a919",
+      "bytes": 264806,
+      "text_chars": 57157
+    },
+    {
+      "key": "prepay2026",
+      "url": "https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/",
+      "read_on": "2026-10-24",
+      "sha256": "31baa3aff9ebf939437cef0231100b4ee2352fadcd8077b4f4cbef56c8fc527b",
+      "bytes": 203631,
+      "text_chars": 102273
+    },
+    {
+      "key": "areport",
+      "url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+      "read_on": "2026-10-24",
+      "sha256": "1438a00e560d7d377e3d85cb43dc0eec4a635c4713b7ac25eab63f092f7d99cb",
+      "bytes": 64339,
+      "text_chars": 13030
+    },
+    {
+      "key": "areportreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-24",
+      "sha256": "8cf2f61aae084056df74ea669f06b0932fc882e1af4a00c5f7c635b69b7956fe",
+      "bytes": 58372,
+      "text_chars": 8809
+    },
+    {
+      "key": "youthconsultation_error_response",
+      "url": "https://www.regjeringen.no/contentassets/337ef9a31fcc495bb63bb37166c52a1d/horingsnotat-fribelop-for-ungdom-pa-svalbard.pdf",
+      "read_on": "2026-10-24",
+      "sha256": "b8d355f205fdaf0480ec37cd9cb2e3ab30057dfb7494bae787e6788f7742b357",
+      "bytes": 5811,
+      "scope": "Explanatory section3.5 only as history, checked against enacted 2026 Svalbard regulation section5. No claimed PDF-byte hash.",
+      "retrieval": "curl produced an HTML refusal response, not PDF bytes; hash below identifies that response only. Primary PDF sections2.1,3.3\u20133.5 were read successfully with web PDF reader."
+    }
+  ],
+  "retrieval": "Fresh HTTPS retrieval with normal user agent after initial urllib 403; browser fallback opened wage page successfully. No challenge solved. HTML/text retained in local work/sources; hashes identify fetched snapshots, not proof of legal correctness. Current handbook paragraph years checked against enacted decisions.",
+  "scope_note": "Fresh read scope extends to ordinary credit allocation/documentation, imported 2026 payroll allowances and communications, claim rounding, and separate a-melding sanctions. Primary consultation history is interpretive only; no proposed rate or alternative is used."
+}

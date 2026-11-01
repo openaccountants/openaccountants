@@ -4,7 +4,7 @@ description: A drafting guide to the tax year 2026 Form 1040 rates, standard ded
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-31
-version: 1.1
+version: 1.2
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -173,7 +173,7 @@ The 2026 IRS Tax Calendar names the extended date for the 2025 return:
 | Extended due date after Form 4868, 2025 return | October 15 | "October 15 Individuals. If you have an automatic 6-month extension to file your income tax return for 2025, file Form 1040 or Form 1040-SR and pay any tax, interest, and penalties due." |
 | Living and working outside the United States and Puerto Rico: further extension | Form 4868 by June 15 gives 4 more months, to October 15 | June 15 entry: "If you want additional time to file your return, file Form 4868 to obtain 4 additional months to file and pay what you estimate you owe in tax to avoid penalties and interest. Then, file Form 1040 or Form 1040-SR by October 15." |
 
-For a calendar-year 2026 return the general rule points to April 15, 2027, subject to the weekend and holiday rule and to any later IRS announcement. Confirm the date on the IRS page once it is printed.
+For a calendar-year 2026 return the date is April 15, 2027: the IRS prints "The tax deadline for 2026 tax returns is April 15, 2027" ([How to file](https://www.irs.gov/filing/individuals/how-to-file), reviewed 19-Oct-2026, read 2026-10-31). Extra time applies to people in a federally declared disaster, abroad, or in a designated combat zone.
 
 ### Fiscal year filers
 
@@ -184,13 +184,13 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 | Weekend or holiday | delayed to the next business day | "If day 15 falls on a Saturday, Sunday or legal holiday, the due date is delayed until the next business day" |
 | Combat zone relief | the taxpayer must tell the IRS | "Taxpayers, including civilians working with the Department of Defense, must notify the IRS directly of their status for qualifying combat zone relief" |
 
-### Free filing options, 2026 filing season (2025 returns)
+### Free filing options, as printed by the IRS on 2026-10-31
 
 | What | Value | Note |
 |---|---|---|
 | Source | all figures below | https://www.irs.gov/filing/individuals/how-to-file |
-| Free File guided software | adjusted gross income of USD 89,000 or less | "Free File - If your adjusted gross income is $89,000 or less. If higher, you can use Free File Fillable Forms." The page is for 2025 returns; it prints no 2026 figure |
-| IRS-certified volunteers | earn USD 69,000 or less, or have a disability, or are 60 or older, or need language support | "If you earn $69,000 or less, have a disability, are 60 years or older or need language support" |
+| Free File guided software | adjusted gross income of USD 95,000 or less | "Free File - If your adjusted gross income is $95,000 or less." Above that, the page points to Free File Fillable Forms. Page reviewed 19-Oct-2026. The [IRS Free File page](https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free), reviewed 21-Oct-2026, also prints USD 95,000 and says "IRS Free File has closed. Please check back January 2027." Earlier versions of this row said USD 89,000 |
+| IRS-certified volunteers | earn USD 70,244 or less, or have a disability, or are 60 or older, or need language support | "If you earn $70,244 or less, have a disability, are 60 years or older or need language support". Earlier versions of this row said USD 69,000 |
 
 ## The method, step by step
 
@@ -206,6 +206,76 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 10. If more time is needed, file Form 4868 by the original due date for the automatic extension, and still pay by the original due date ([When to file](https://www.irs.gov/filing/individuals/when-to-file)). The extended return is due October 15 ([Publication 509](https://www.irs.gov/pub/irs-pdf/p509.pdf)). Check first whether the client qualifies for the automatic 2-month rule for people abroad, combat zone relief, or a disaster postponement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)).
 11. Pay any balance due. The IRS Make a payment page covers card, digital wallet, other electronic options and cash; if the client cannot pay in full, the IRS may agree a payment arrangement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)). The IRS tells those who cannot pay in full that they "should pay what they can now and apply for an online payment plan", and that "An extension to file is not an extension to pay" ([IR-2026-44](https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension)).
 12. If returns for earlier years are outstanding, the IRS says to file them as soon as possible ([When to file](https://www.irs.gov/filing/individuals/when-to-file)). Each earlier year uses that year's figures, not the 2026 tables.
+
+### How to file Form 1040 and pay, step by step
+
+Line numbers are from the 2025 Form 1040, the latest the IRS had printed when read. Check them against the 2026 form when it is issued.
+
+**What you need first:** a taxpayer identification number; Forms W-2, 1099 and any other income records; last year's return and adjusted gross income; any Identity Protection PIN; and bank details for a refund or payment.
+
+1. **Pick the filing route.** Free File at IRS.gov/freefile for adjusted gross income of USD 95,000 or less, reached only through the IRS site. Each partner sets its own limits on income, age and state, so check the partner too. It is closed now and the IRS says to check back in January 2027 ([IRS Free File](https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free), read 2026-10-31). Otherwise Free File Fillable Forms, IRS-certified volunteers, a tax professional, tax software, or paper forms ([How to file](https://www.irs.gov/filing/individuals/how-to-file), read 2026-10-31).
+2. **Complete Form 1040** in this order ([Form 1040](https://www.irs.gov/pub/irs-pdf/f1040.pdf), read 2026-10-31): income to line 9 (total income), adjustments, line 11a adjusted gross income, line 12e standard or itemized deduction, line 15 taxable income, then tax, credits and other taxes to line 24 (total tax). Payments total on line 33. The refund is line 34, with line 35a the part refunded; a balance owed goes on line 37. Attach Schedules 1, 1-A, 2, 3, A or C as the method above says.
+3. **Enter the Identity Protection PIN if you have one.** A wrong or missing IP PIN gets an e-filed return rejected, and it delays a paper return ([IRS: IP PIN](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin), read 2026-10-31).
+4. **Send it by April 15, 2027.** E-file is timed by transmission; paper by postmark, to the address in the form instructions ([Topic no. 301](https://www.irs.gov/taxtopics/tc301), read 2026-10-31). Need more time? There are 3 ways to get the extension to October 15, all by that date: pay what you owe with an online payment option and tick the box saying the payment is for an extension (no Form 4868 needed); request it electronically through IRS Free File; or file Form 4868 by mail, online with an IRS e-filing partner, or through a tax professional. Tax owed is still due by the April date ([IRS: get an extension](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return), read 2026-10-31).
+5. **Pay any balance by the due date.** Bank account (Direct Pay) is free and works as a guest. Debit or credit card and digital wallet carry fees. You can also use your online account, same-day wire, check or money order, or cash. Send Form 1040-V with any check or money order ([Form 1040-V](https://www.irs.gov/pub/irs-pdf/f1040v.pdf), read 2026-10-31). If you cannot pay in full, use a payment plan, set up in your Individual Account ([IRS: payments](https://www.irs.gov/payments), read 2026-10-31; [Amended return FAQ](https://www.irs.gov/filing/amended-return-frequently-asked-questions), read 2026-10-31).
+6. **Track the refund and your account.** E-filing with direct deposit is the quickest and safest way to get a refund ([IRS: get ready to file](https://www.irs.gov/individuals/get-ready-to-file-your-taxes), read 2026-10-31). Use Where's My Refund? on IRS.gov, which updates once every 24 hours. Your [IRS Online Account](https://www.irs.gov/payments/online-account-for-individuals) (read 2026-10-31) shows refund status, balances by tax year, payment history, adjusted gross income, W-2 and certain 1099 documents, and notices. Check 24 hours after e-filing a current-year return, 3 days after e-filing a prior-year return, or 4 weeks after a paper return. Expect it about 3 weeks after e-filing, or 6 or more weeks after the IRS receives a mailed return. You need your SSN or ITIN, filing status, tax year and exact refund amount ([IRS: refunds](https://www.irs.gov/refunds), read 2026-10-31). Record your adjusted gross income for next year ([How to file](https://www.irs.gov/filing/individuals/how-to-file), read 2026-10-31).
+7. **To correct it,** file Form 1040-X if filing status, income, deductions, credits, dependents or tax changes. You generally do not need to if the IRS already fixed the error. A refund claim is generally due within 3 years of filing the original or 2 years of paying the tax, whichever is later ([IRS: file an amended return](https://www.irs.gov/filing/file-an-amended-return), read 2026-10-31). E-file works for the current or two prior tax periods. File on paper if the return is for tax year 2021 or before, or if the original was filed on paper earlier this year for a prior tax year. A federal change can change your state tax: correct the state return with your state tax agency, and do not attach it to Form 1040-X. Allow 8 to 12 weeks, sometimes up to 16; it can take up to 3 weeks to appear in Where's My Amended Return ([Amended return FAQ](https://www.irs.gov/filing/amended-return-frequently-asked-questions), read 2026-10-31). Full method: `us-amended-return-form-1040-including-capital`.
+
+**Stop and get a professional when:** anything under "When to refuse or refer" applies, or the IRS has sent a notice about the return.
+
+### Worked decision: which should I take, the standard deduction or itemized deductions? (tax year 2026)
+
+The IRS rule is to itemize when allowable itemized deductions exceed the standard deduction, or when you cannot use the standard deduction ([Topic no. 501](https://www.irs.gov/taxtopics/tc501), read 2026-10-31). A married couple filing jointly, under 65, has adjusted gross income of USD 200,000 and pays USD 14,000 of deductible mortgage interest, USD 11,000 of state and local tax (under the USD 40,400 cap), and USD 6,000 of cash gifts to charity. This uses adjusted gross income as the contribution base, with no carryover.
+
+- Itemized: charity counts above 0.5% of 200,000 = USD 1,000, so USD 5,000. Total 14,000 + 11,000 + 5,000 = USD 30,000.
+- Standard: USD 32,200, plus up to USD 2,000 of cash gifts for a joint non-itemizer = USD 34,200.
+- The deciding figure: the couple needs itemized deductions above USD 34,200, so USD 4,200 more than they have. Standard is better. With USD 20,000 of mortgage interest, itemized is USD 36,000 and itemizing wins by USD 1,800.
+- What the choice is worth: on the Table 1 schedule, taxable income of USD 165,800 on the standard route gives tax of USD 25,900; taxable income of USD 170,000 if itemized gives USD 26,824. Standard saves USD 924, which is USD 4,200 at 22%. This assumes no other income adjustments.
+
+```oa-check
+name: Standard or itemized, married filing jointly, 2026
+inputs:
+  agi: 200000
+  mortgage: 14000
+  salt: 11000
+  cash_gifts: 6000
+steps:
+  - floor: agi * 0.005
+  - itemized: mortgage + min(salt, 40400) + cash_gifts - floor
+  - standard_route: 32200 + min(cash_gifts, 2000)
+  - gap: standard_route - itemized
+  - itemized_higher_mortgage: itemized + 6000
+  - itemizing_wins_by: itemized_higher_mortgage - standard_route
+expected:
+  itemized: 30000
+  standard_route: 34200
+  gap: 4200
+  itemized_higher_mortgage: 36000
+  itemizing_wins_by: 1800
+```
+
+```oa-check
+name: Tax on each route, married filing jointly, 2026 Table 1
+inputs:
+  agi: 200000
+  standard_route: 34200
+  itemized: 30000
+  band_base: 11600
+  band_start: 100800
+  band_rate: 0.22
+steps:
+  - taxable_standard: agi - standard_route
+  - taxable_itemized: agi - itemized
+  - tax_standard: band_base + (taxable_standard - band_start) * band_rate
+  - tax_itemized: band_base + (taxable_itemized - band_start) * band_rate
+  - standard_saves: tax_itemized - tax_standard
+expected:
+  taxable_standard: 165800
+  taxable_itemized: 170000
+  tax_standard: 25900
+  tax_itemized: 26824
+  standard_saves: 924
+```
 
 ## Ask the client first
 
@@ -235,22 +305,37 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 
 ## Sources
 
-- https://www.irs.gov/pub/irs-drop/rp-25-32.pdf (Revenue Procedure 2025-32: rate schedules; deductions, credits and other amounts for tax year 2026)
-- https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm (Public Law 119-21: senior, tips, overtime, vehicle loan interest, state and local tax cap, charitable rules, § 68 limit)
-- https://www.law.cornell.edu/uscode/text/26/170 (LII mirror of the U.S. Code, § 170(p): cash-only rule for non-itemizers)
-- https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill (IR-2025-103: which returns the 2026 figures apply to; 2025 standard deduction; Lifetime Learning Credit)
-- https://www.irs.gov/newsroom/new-and-enhanced-deductions-for-individuals (IRS Tax Tip 2026-12: new deductions available to itemizers and non-itemizers)
-- https://www.irs.gov/individuals/check-if-you-need-to-file-a-tax-return (filing thresholds, tax year 2025)
-- https://www.irs.gov/taxtopics/tc301 (Topic no. 301: deadlines, extensions, attachments, signing, payment)
-- https://www.irs.gov/filing/individuals/when-to-file (fiscal year filers, Form 4868, earlier years)
-- https://www.irs.gov/filing/individuals/how-to-file (forms by income type, free filing options)
-- https://www.irs.gov/forms-pubs/about-form-1040 (Form 1040 and 1040-SR, Schedules 1, 1-A, 2 and 3)
-- https://www.irs.gov/publications/p501 (Publication 501, tax year 2025: dependant filing thresholds and the gross income test for dependants)
-- https://www.irs.gov/newsroom/who-needs-to-file-a-tax-return (FS-2023-02: self-employment USD 400 or more)
-- https://www.law.cornell.edu/uscode/text/26/6017 (LII mirror of 26 U.S. Code § 6017: self-employment return requirement)
-- https://www.irs.gov/pub/irs-pdf/p509.pdf (Publication 509, 2026 Tax Calendar: October 15 extended due date)
-- https://www.irs.gov/individual-tax-filing (taxpayer identification number required to file)
-- https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension (IR-2026-44: pay what you can and apply for an online payment plan)
+- https://www.irs.gov/pub/irs-drop/rp-25-32.pdf (Revenue Procedure 2025-32: rate schedules; deductions, credits and other amounts for tax year 2026, link checked 2026-10-31)
+- https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm (Public Law 119-21: senior, tips, overtime, vehicle loan interest, state and local tax cap, charitable rules, § 68 limit, link checked 2026-10-31)
+- https://www.law.cornell.edu/uscode/text/26/170 (LII mirror of the U.S. Code, § 170(p): cash-only rule for non-itemizers, link checked 2026-10-31)
+- https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill (IR-2025-103: which returns the 2026 figures apply to; 2025 standard deduction; Lifetime Learning Credit, link checked 2026-10-31)
+- https://www.irs.gov/newsroom/new-and-enhanced-deductions-for-individuals (IRS Tax Tip 2026-12: new deductions available to itemizers and non-itemizers, link checked 2026-10-31)
+- https://www.irs.gov/individuals/check-if-you-need-to-file-a-tax-return (filing thresholds, tax year 2025, link checked 2026-10-31)
+- https://www.irs.gov/taxtopics/tc301 (Topic no. 301: deadlines, extensions, attachments, signing, payment, link checked 2026-10-31)
+- https://www.irs.gov/filing/individuals/when-to-file (fiscal year filers, Form 4868, earlier years, link checked 2026-10-31)
+- https://www.irs.gov/filing/individuals/how-to-file (forms by income type, free filing options, link checked 2026-10-31)
+- https://www.irs.gov/forms-pubs/about-form-1040 (Form 1040 and 1040-SR, Schedules 1, 1-A, 2 and 3, link checked 2026-10-31)
+- https://www.irs.gov/publications/p501 (Publication 501, tax year 2025: dependant filing thresholds and the gross income test for dependants, link checked 2026-10-31)
+- https://www.irs.gov/newsroom/who-needs-to-file-a-tax-return (FS-2023-02: self-employment USD 400 or more, link checked 2026-10-31)
+- https://www.law.cornell.edu/uscode/text/26/6017 (LII mirror of 26 U.S. Code § 6017: self-employment return requirement, link checked 2026-10-31)
+- https://www.irs.gov/pub/irs-pdf/p509.pdf (Publication 509, 2026 Tax Calendar: October 15 extended due date, link checked 2026-10-31)
+- https://www.irs.gov/individual-tax-filing (taxpayer identification number required to file, link checked 2026-10-31)
+- https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension (IR-2026-44: pay what you can and apply for an online payment plan, link checked 2026-10-31)
+- https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free (IRS Free File: USD 95,000, closed until January 2027, read 2026-10-31)
+- https://www.irs.gov/filing/individuals/how-to-file (free options, April 15, 2027 deadline, read 2026-10-31)
+- https://www.irs.gov/pub/irs-pdf/f1040.pdf (2025 Form 1040 line numbers, read 2026-10-31)
+- https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin (IP PIN, read 2026-10-31)
+- https://www.irs.gov/payments (payment options, read 2026-10-31)
+- https://www.irs.gov/pub/irs-pdf/f1040v.pdf (Form 1040-V, read 2026-10-31)
+- https://www.irs.gov/refunds (refund timing, read 2026-10-31)
+- https://www.irs.gov/filing/file-an-amended-return (Form 1040-X and refund claim limits, read 2026-10-31)
+- https://www.irs.gov/filing/amended-return-frequently-asked-questions (amended return e-file and processing, read 2026-10-31)
+- https://www.irs.gov/taxtopics/tc501 (standard or itemized, read 2026-10-31)
+- https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return (the 3 extension routes, read 2026-10-31)
+- https://www.irs.gov/individuals/get-ready-to-file-your-taxes (Where's My Refund, Online Account, direct deposit, read 2026-10-31)
+- https://www.irs.gov/payments/online-account-for-individuals (what the Online Account shows, read 2026-10-31)
+
+Not yet confirmed: the IRS page does not say which tax year its USD 95,000 Free File limit and USD 70,244 volunteer limit belong to, so confirm both when Free File reopens in January 2027; the 2026 Form 1040 line numbers; how the IRS validates an e-filed return with the prior-year figure, because the page tried returned 404; how e-file acceptance is shown to a filer.
 
 This skill has not been reviewed or approved by a named accountant.
 

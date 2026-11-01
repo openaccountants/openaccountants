@@ -1,0 +1,46 @@
+[
+  {
+    "id": "foreign2023",
+    "url": "https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara-og",
+    "read_on": "2026-10-28",
+    "final_url": "https://logir.fo/LawNotFound.aspx",
+    "bytes": 45215,
+    "sha256": "26d0ec8edd7a10277dc00972b9fc4e54c1b681d41e3d5d262de212692dad06ff",
+    "reader_sha256": "80d39022a63f84148bb89f55bbc2f9eccdc6a5b83747276a22b8194f13927885",
+    "acquired": true,
+    "actual_read": false
+  },
+  {
+    "id": "pension2020",
+    "url": "https://logir.fo/Logtingslog/78-fra-07-06-2020-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin-og-logtingslog-um-skatt",
+    "read_on": "2026-10-28",
+    "final_url": "https://logir.fo/Logtingslog/78-fra-07-06-2020-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin-og-logtingslog-um-skatt",
+    "bytes": 78863,
+    "sha256": "18875eeda35556b859304b5b077640b69f34305d82664d3d0e2a7d66beff8b28",
+    "reader_sha256": "5d08fe670313eeaf07aa89e57d8e6fedc43046c5cce39304db85244971e310ad",
+    "acquired": true,
+    "actual_read": false
+  },
+  {
+    "id": "pension2018",
+    "url": "https://logir.fo/Logtingslog/69-fra-30-04-2018-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin",
+    "read_on": "2026-10-28",
+    "final_url": "https://logir.fo/Logtingslog/69-fra-30-04-2018-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin",
+    "bytes": 123104,
+    "sha256": "2e7de7fa8fdff33e43d175ebd1c85fb6130bebcea43bd128ffd5764402c8b9f1",
+    "reader_sha256": "e11841b74ea517865cc5baab863b04443aba9ece94f80501eafe36f82cad1cc0",
+    "acquired": true,
+    "actual_read": false
+  },
+  {
+    "id": "pensionreg",
+    "url": "https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti",
+    "read_on": "2026-10-28",
+    "final_url": "https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti",
+    "bytes": 71430,
+    "sha256": "e675dcdbda64249afab44d98b0584d8e37bef9fefaa835b274fc2615dfa093d2",
+    "reader_sha256": "f93b09e968d6bbe57ada1356d8b8642de7e7b02f8bc5310d09a6476f51dbeae6",
+    "acquired": true,
+    "actual_read": false
+  }
+]

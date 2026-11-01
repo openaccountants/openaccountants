@@ -1,0 +1,527 @@
+{
+  "warning": "Inventory only. The14social-writer controls are represented among the50oa-check blocks and are excluded here. Actual/expected equality in writer JSON is not independent recomputation.",
+  "cases": [
+    {
+      "id": "capital-cet18-controls:01",
+      "source_file": "ledgers/md-country-evidence/capital-cet18-controls.json",
+      "name": "Capital-loss magnitude is deducted once, not subtracted as a negative",
+      "immutable_case_sha256": "cd815327c009c069c990944a93ae531851a613b8b26dba978e11466de74f7046",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "capital-cet18-controls:02",
+      "source_file": "ledgers/md-country-evidence/capital-cet18-controls.json",
+      "name": "Loss deduction is capped by recognised gains",
+      "immutable_case_sha256": "39ff64ec4a5bb99c126c810dea9798560b38f60650e695589502cb0c03916f7f",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "capital-cet18-controls:03",
+      "source_file": "ledgers/md-country-evidence/capital-cet18-controls.json",
+      "name": "Own and dependent-child education share the E7 statutory ceiling",
+      "immutable_case_sha256": "1093602ef338985cd274d16545282cf564e910c051390fc638c291eb4161a37f",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "capital-cet18-controls:04",
+      "source_file": "ledgers/md-country-evidence/capital-cet18-controls.json",
+      "name": "CET18 resident income, relief/deduction and tax transfers",
+      "immutable_case_sha256": "358259807f51bdf9f06ee98f332e68f32e5e13e342bf8c1d2f04edd111abd028",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "capital-cet18-controls:05",
+      "source_file": "ledgers/md-country-evidence/capital-cet18-controls.json",
+      "name": "CET18 excess field uses magnitude of a negative balance",
+      "immutable_case_sha256": "5f6e0f1198ffcd626cb99402d9918da5567ce9b756214b4e68fff0e5adcf71ab",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "cnam-refund-current-controls:01",
+      "source_file": "ledgers/md-country-evidence/cnam-refund-current-controls.json",
+      "name": "Strict paid-premium comparison does not enlarge the actual fixed payment",
+      "immutable_case_sha256": "790a2d20cf01028a0834dd6345e87633a9979ec4c805cdd1abd6205dcfc93a9d",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "cnas-correction-current-controls:01",
+      "source_file": "ledgers/md-country-evidence/cnas-correction-current-controls.json",
+      "name": "Executed supported payment correction conserves the recorded amount",
+      "immutable_case_sha256": "3548adb2f40951e2736edc16723ecd68f1462f7e7084cef027f6507cc2312aa6",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "cnas-refund-current-controls:01",
+      "source_file": "ledgers/md-country-evidence/cnas-refund-current-controls.json",
+      "name": "Requested bank refund and identified future allocation partition the credit once",
+      "immutable_case_sha256": "695daf59e3efb1aa1503e3bf190819e8a1373b4990c4e485d8141450a7b3d5e4",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "downloaded-return-controls:01",
+      "source_file": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "name": "SME positive current-categoryA base",
+      "immutable_case_sha256": "f390869cdfb964d2e21d21d8065ec32f1d9340223b6f811fadcc3ff3f4673682",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "downloaded-return-controls:02",
+      "source_file": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "name": "SME negative raw base reported as zero",
+      "immutable_case_sha256": "a89e0b31b994ecec01e6be8752b8e86e02ba3138cdb9da7af2fb453ec1496c31",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "downloaded-return-controls:03",
+      "source_file": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "name": "DAP24 correct professional row numbers",
+      "immutable_case_sha256": "9fe5b8a6bb3acc72802799e9b190e9858d21648b1c39858245146a74803ad779",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "downloaded-return-controls:04",
+      "source_file": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "name": "UNIF25 A_individual_entrepreneur",
+      "immutable_case_sha256": "515e189c4cb2507f4af363ee2cdcc8497a62edc957af566c425ca4093707e057",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "downloaded-return-controls:05",
+      "source_file": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "name": "UNIF25 B_peasant_farm",
+      "immutable_case_sha256": "7161784d195cd8deea938aa3b559a3b951bde919dd9d6d1e53450cc909b297c0",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "employment-current-form-controls:01",
+      "source_file": "ledgers/md-country-evidence/employment-current-form-controls.json",
+      "name": "Full-year eligible founder fixed contribution",
+      "immutable_case_sha256": "3fa60470947c1c6c9918fbd01f25a1640eb77bb69b09370fa46e6c2abdfca29e",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "employment-current-form-controls:02",
+      "source_file": "ledgers/md-country-evidence/employment-current-form-controls.json",
+      "name": "Changed employer status partitions founder reporting without duplicating months",
+      "immutable_case_sha256": "3f6a149a7cde54e451ece687ea48a4f19b7519a780cf55cfbe9e6aada1f6c4ba",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "employment-current-form-controls:03",
+      "source_file": "ledgers/md-country-evidence/employment-current-form-controls.json",
+      "name": "CAS serial denotes person while monetary total sums all month rows",
+      "immutable_case_sha256": "0a86863f5ef446f297f3eb1aead30ab2096aa0839485cee9ea35fc74a4713607",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "inr14-form-controls:01",
+      "source_file": "ledgers/md-country-evidence/inr14-form-controls.json",
+      "name": "INR14 gross, withholding, control and record count use separate bases",
+      "immutable_case_sha256": "241dbe51d887b8e18e7085b859480b4bd7a96b833e3eaea33174b2e749389d95",
+      "recomputation_status": "PASS independentmanualarithmetic",
+      "legal_assumptions_status": "PASS statedformscope;reportability/exemptionstipulated;actualINRform/instructionsreadXB279-308",
+      "calculation": "40000+60000=100000column8;0+7200=7200column9andcontrol;entries2"
+    },
+    {
+      "id": "itpark-current-form-controls:01",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "IU17 monthly maximum and monetary control",
+      "immutable_case_sha256": "952b3715f4e4af10a88a2c315995429272438e6d408ed1d34e7e8825436d9906",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS under assumed eligible status/count; PLAN003-005,086,119-122",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:02",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "Zero sales does not cancel a positive statutory employee minimum",
+      "immutable_case_sha256": "c3be1ea9b145e5d6e7acc39b21f7286d6cda3d3f27de98dd50fc63208248db46",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS under assumed status/count; no0/0eligibility conclusion",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:03",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "Monthly70percent does not establish cumulative eligibility",
+      "immutable_case_sha256": "de32738ce33368751314152e398ad8af194016e32074584660349fe98c25a5ee",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS; cumulative rule PLAN002/015/124, noautomaticstatusloss",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:04",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "Annual salary control and individual statements use paid salary",
+      "immutable_case_sha256": "a8ecdf3e28ac704d45affa4bc5fe2e39c6d21cdb792897ad8a967fe999dfb5a8",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS actual salary form mapped in PR389–459; not deemed insured salary",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:05",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "IUPT clear upward adjustment is additional assessed tax",
+      "immutable_case_sha256": "62c772e9810292dfb0a4b85fc077266426688f99428becb4c3ada5d14d87dc4a",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS for exactunambiguous14abranch withestablishedM; TP426-434; actualcashledgerexcluded",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:06",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "IUPT clear downward adjustment differs from paid excess",
+      "immutable_case_sha256": "bab9d9a76b65b670b833c40a918c3be200686fd107838d2711d93919f4e134e9",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS for exact14bbranch withestablishedM; TP435; nocashrefundentitlement",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:07",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "2024monthly TP adjustments are disjoint from later012",
+      "immutable_case_sha256": "7cea530817871d2c09514fdc41bf46eafdc97c4d7c7c351e5a8aa1bf81d85c33",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS under assumed disjointbuckets; TP460-463 and429bridge",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "itpark-current-form-controls:08",
+      "source_file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "name": "Printed12month average is not the annual minimum total",
+      "immutable_case_sha256": "9a9dd93a403ad81c020d25ffc870a62df22f00efd3522338eab8ab005735cc08",
+      "recomputation_status": "PASS independent manual arithmetic",
+      "legal_assumptions_status": "PASS literal generic12month demonstration only; source ambiguity expressly excludes certification of operative minimum/partial-year filing algorithm",
+      "review_evidence": "standalone-eight-itpark-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:01",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Germany categoryI documented ordinary trip",
+      "immutable_case_sha256": "67e4992738f6674be0ff6750fa2c9a7f5bcb949986e039aeac0abf4c36aa00cc",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:02",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Valid private70percent allowance decision",
+      "immutable_case_sha256": "c4f174703168abab128f99b0a0ef2012321ead61f4d4ae140903e9fbce64b6d9",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:03",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Qualifying separate no-lodging-document case",
+      "immutable_case_sha256": "d87721aeb4a4007e90b9d48f8a1fb50a8e317b63d834110a43b4a7a00ae58f1d",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:04",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Domestic single-day allowance exception",
+      "immutable_case_sha256": "c8429771993fefb83204e66f539e4d3c4d2f8dfe5186e0ae1e9169acafd1f3b1",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:05",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Ordinary new8471 asset commissionedJune",
+      "immutable_case_sha256": "115a7b1bff5896b2653b6ad4543a115d0ab86c945a142f0b8f1006e3fe6354b4",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:06",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Longer-contract ordinary rented-asset repair",
+      "immutable_case_sha256": "cea8bd1d4a9b7bc03aa9dd9414774fe9512edc31c4e5489ff34d7992fb5d02bf",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "numeric-annex-controls:07",
+      "source_file": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "name": "Owned-asset repair register with consistent month units",
+      "immutable_case_sha256": "a4a63427f154f17eb5f86e48e29b55bcdcbab4268e9477baee80903b2d734865",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "payroll-current-form-controls:01",
+      "source_file": "ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "name": "Ordinary nominal social base and separate employer-funded sickness field",
+      "immutable_case_sha256": "a27e2de2b7460ebe99e2407c70813d0d19cfd65e0237924d87c8ae13113803e9",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "payroll-current-form-controls:02",
+      "source_file": "ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "name": "IPC21 printed control differs from total PIT and subdivision salary control",
+      "immutable_case_sha256": "76c8de06725581ca459c918d2d29a4506ea68936fae9218ef0f199276d152f17",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "payroll-current-form-controls:03",
+      "source_file": "ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "name": "IALS21 relief total and withholding control use different columns",
+      "immutable_case_sha256": "edfb4ccfa726291f418595ac1bed3039726283bfb4c95608fd3e88dd23c75496",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "payroll-current-form-controls:04",
+      "source_file": "ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "name": "IPC21 tolerance sums absolute corrections rather than netting",
+      "immutable_case_sha256": "7823e895298366a38aa04356749ba89b0bd068eb274828917d7d315e3c797a69",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "tp-approved-form-controls:01",
+      "source_file": "ledgers/md-country-evidence/tp-approved-form-controls.json",
+      "name": "Information threshold aggregates opposing flows without netting",
+      "immutable_case_sha256": "cbae4de5d5931570eba3d38f9ed2f0255c453507ad7a92a6b8761eff1274c453",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "tp-approved-form-controls:02",
+      "source_file": "ledgers/md-country-evidence/tp-approved-form-controls.json",
+      "name": "Principal, advances and actual APA-covered values stay separate",
+      "immutable_case_sha256": "88540c0fc878aa219b5dda0417a1e22d62a913ed1abe7f182504a405a2b79173",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:01",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Signed expense adjustments feed040 with the correct sign",
+      "immutable_case_sha256": "77daa428b3bf8e90267e00ab2993eb49627766de379c80fa2a06b2dbc15b9ee6",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:02",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Annex7.1representation percentage units",
+      "immutable_case_sha256": "622489fd7c2cd771834c0fecd6f41ae01bc1c2ab69796902c43672d880a9dca7",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:03",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Gagauzia subdivision liquidatedQ3 under employee route",
+      "immutable_case_sha256": "f2f80ec54c05880ceb4f38f15cbaec6b4e8c1201e6f420e34ef49b4ac69e4fdd",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:04",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Peasant-farm founder allocation uses the actual7percent category",
+      "immutable_case_sha256": "dea525d086103c927da97a14f42c04e16edb702834cfcd83bc3c9775fc03eb2b",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:05",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Annex10foreigncreditpositiveinputs",
+      "immutable_case_sha256": "a479e42ed264083d485ba3f2d0f37d81cfb782d24820ec32bbd49e9f13cebda7",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:06",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Table6excludeshectares and has no road-tax column",
+      "immutable_case_sha256": "1213b64c6eea35e7c0de29a8fa29db2923d058dd7cde1a848286de72a33181fe",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "unif25-later-controls:07",
+      "source_file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "name": "Day-worker currentCode excludes the stale personal exemption",
+      "immutable_case_sha256": "9115abf4e68d7aaeaede4c18179db915a9c9d4bce334f6227f42882ceb4160ae",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:01",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Signed income and expense differences reach main040 once",
+      "immutable_case_sha256": "68fe5ef9a95a9d8521088fd8f8673d58d89c739e4ea15d35f74d678d51bdbd91",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:02",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Noncash donation has separate deemed income and cost adjustment",
+      "immutable_case_sha256": "7f7662a8080440582abef068581a7ffcc84a0eea4788ae2b4925bfa1f72aa0ab",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:03",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Income exemption and tax relief are not both subtracted as tax",
+      "immutable_case_sha256": "dd192d13adb159062cd77ee36b792a5abd48c8bacaa8ab6f48dc6d3489023df8",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:04",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Foreign-credit allocated ceiling uses main150 after relief",
+      "immutable_case_sha256": "0a31ba0a6af617f7b52dfa5fb9c5a01f5b14e9c6caabb8c9a3313c45ac4dd3cd",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:05",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Subdivision total uses assessed row170 before instalments",
+      "immutable_case_sha256": "adf81836a3bf01e351de0fea8a6729d96304d2af471f5a7136ce77d9d06c73d8",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:06",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Founder annex distinguishes relieved income from relieved tax",
+      "immutable_case_sha256": "932c1b5edd4aeac3799bd0ec0690b44cfbb3d3a01d22ef7833b02472972711d6",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:07",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Changeover surplus recognised once over three periods",
+      "immutable_case_sha256": "3edb0b4d449e1bfe4d4490a54b443f3d6b8fe3a4d21d3356b839b988c7dbe273",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-full-controls:08",
+      "source_file": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "name": "Same-nature replacement basis adds only uncovered acquisition expense",
+      "immutable_case_sha256": "fc8ca87d72704696bc7045924408d82bfcc065086eda4c1e2470a2608d3a570a",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-ordinary-return-controls:01",
+      "source_file": "ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "name": "Both caps bind; signed addback, loss deduction and two payment categories",
+      "immutable_case_sha256": "f9f20388404ce1ee73870d889a927ba40e60c4deaa31a2224d55eb6fab144ee0",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-ordinary-return-controls:02",
+      "source_file": "ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "name": "Actual costs below both caps; excess payment is separate from tax loss",
+      "immutable_case_sha256": "0b9eb6a5b357326cac7a4e60f684e3cb76fb1ee121c7ec2f84553e911baae176",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-ordinary-return-controls:03",
+      "source_file": "ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "name": "Negative row040; no capped deductions or carried loss use; tax loss and overpayment coexist",
+      "immutable_case_sha256": "4800fd0edcd6d798ca882736f7bd9ca3e3e5bc26b7e1653b156173823690ee68",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-ordinary-return-controls:04",
+      "source_file": "ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "name": "Representation cap binds",
+      "immutable_case_sha256": "a624c01b1c019d4f4b8935abb546b6cb4c821d3c596a3f9697e95254f582debd",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    },
+    {
+      "id": "ven12-ordinary-return-controls:05",
+      "source_file": "ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "name": "Representation cap does not bind",
+      "immutable_case_sha256": "9a3e63d36f73631bbce2a1da52f466d82cb7555188c9eba45fb94c5ede163226",
+      "recomputation_status": "PASS independent explicit recomputation",
+      "legal_assumptions_status": "PASS within stated hypothetical/source bounds",
+      "evidence": "standalone-remaining49-recomputations.json"
+    }
+  ]
+}
