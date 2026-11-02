@@ -26,7 +26,7 @@ Any employer that pays wages withholds ISR each calendar month (LISR Art. 96) by
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Monthly wage withholding | SAT monthly tariff for 2026: 1.92% from MXN 0.01 rising to 35% over MXN 425,642.00 a month (cuota fija MXN 133,488.54 on the top band); full table in RMF 2026 Anexo 8, A.V | 2026 | [LISR Art. 96](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf); [RMF 2026 Anexo 8](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) |
+| Monthly wage withholding | SAT monthly tariff for 2026: 1.92% from MXN 0.01 rising to 35% over MXN 425,642.00 a month (cuota fija MXN 133,488.54 on the top band); full table in RMF 2026 Anexo 8, A.V | 2026 | [LISR Art. 96](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf); [RMF 2026 Anexo 8](https://dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025) |
 | Aguinaldo and other year-end bonuses paid to all staff | Exempt up to 30 days of the general minimum wage of the worker's area; the rest taxed | 2026 | LISR Art. 93 fr. XIV |
 | PTU (employee profit share) | Exempt up to 15 days of the general minimum wage of the worker's area; the rest taxed | 2026 | LISR Art. 93 fr. XIV |
 | Prima vacacional paid to all staff | Exempt up to 15 days of the general minimum wage of the worker's area | 2026 | LISR Art. 93 fr. XIV |
@@ -104,7 +104,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 93, 94, 96, 97, 150, 156 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
-| SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025), monthly Art. 96 tariff for 2026 (A.V); read from the Internet Archive copy | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
+| SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025), monthly Art. 96 tariff for 2026 (A.V); read from the Internet Archive copy | https://dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025 | 2026-10-29 |
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 8 (ISR tariffs for 2025) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |
 
 Not yet confirmed: whether the minimum-wage references in LISR Art. 93 fr. XIV are read as the UMA (the law text says salario mínimo); aguinaldo of at least 15 days' wages (LFT Art. 87; no archived copy of the LFT); PTU being taxed at the annual tariff rather than through the payroll tables (earlier drafts cited LISR Art. 98); proration rules for multi-month or irregular payments (earlier drafts cited Arts. 96, 106); the worker's annual-return thresholds as they apply in 2026; earlier drafts' rule that a seconded employee becomes Mexican resident after 183 days (cited as Art. 9; the 183-day test found in the text read is the construction-PE rule in Art. 2); Código Fiscal de la Federación penalties of 45%-85% and 50%-150% (Arts. 64-65), updating and interest (Art. 20) and the employer's joint liability for ISR withheld but not paid (no archived copy of the CFF); savings-fund exemption limits for 2026.
