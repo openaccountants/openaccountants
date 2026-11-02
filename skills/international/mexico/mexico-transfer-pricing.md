@@ -41,7 +41,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Item | Detail |
 | --- | --- |
 | Required? | Yes, for taxpayers with related-party transactions (general obligation under Art. 76 LISR) |
-| Threshold | All entities with controlled transactions must have TP study available |
+| Threshold | All entities with controlled transactions must have TP study available. Exemption (LISR Art. 76 fr. IX final paragraph): business taxpayers whose prior-year income did not exceed MXN 13,000,000.00, and professional-services taxpayers whose prior-year income from services did not exceed MXN 3,000,000.00, are not obliged to keep this documentation (exceptions: the Art. 179 penultimate-paragraph case and contractors/assignatarios) |
 | Content | Functions/assets/risks, method selection, comparables, arm's length analysis |
 | Language | Spanish |
 | Filing | Not filed; maintained and available on SAT request |
@@ -52,7 +52,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Detail |
 | --- | --- |
-| Required? | Yes, for entities with cumulative income > MXN ~1,940 million (2025; indexed annually) |
+| Required? | Yes, for taxpayers referenced in CFF Art. 32-H frs. I, II, III, IV and VI with related-party transactions (LISR Art. 76-A first paragraph); for the large-taxpayer class of Art. 32-H fr. I the threshold is accumulated income equal to or above MXN 1,103,204,520.00 (amount updated by the RMF through DOF 28-12-2025; re-indexed each January under CFF Art. 32-H) |
 | Format | Per BEPS Action 13 / OECD standards with Mexico-specific content |
 | Language | Spanish |
 | Filing deadline | May 15 of the following fiscal year |
@@ -76,7 +76,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Detail |
 | --- | --- |
-| Threshold | Consolidated group revenue > MXN 12 billion (approx. EUR 750m; updated: ~MXN 16.59 billion per indexed thresholds) |
+| Threshold | Multinational group with consolidated accounting revenues equal to or above MXN 12,000 million in the prior year (LISR Art. 76-A fr. III item 6). The amount is fixed in the statute and modifiable only by Congress through the Ley de Ingresos de la Federacion (LIF 2025 contains no modification); it is not inflation-indexed. The EUR 750m OECD figure is a comparator only, with no Mexican primary source |
 | Filing deadline | December 31 of the following fiscal year |
 | Content | Per OECD Annex III |
 | Filing method | Electronic |
@@ -144,11 +144,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Offence | Penalty |
 | --- | --- |
-| Late/incomplete TP informative return documentation | MXN 199,630 -- MXN 284,220 (indexed annually) |
-| Failure to file Local File / Master File | Similar administrative fines |
-| SAT TP adjustment -- tax omission | 55-75% of historical omitted taxes |
-| Late payment surcharge | 1.47% monthly on unpaid tax |
-| Inflation adjustment | Tax debt indexed for inflation |
+| Late/incomplete Art. 76-A informative returns (CFF Art. 81 fr. XL, updated amounts in RMF Anexo 5 item XXXVII) | MXN 199,630 -- MXN 284,220 |
+| Failure to file Local File / Master File | Same CFF Art. 81 fr. XL range (Art. 76-A returns) |
+| SAT TP adjustment -- tax omission | 55-75% of the omitted contributions (CFF Art. 76; Art. 64 repealed) |
+| Late payment surcharge (recargos) | Annual variable rate under CFF Art. 22, applied to the updated amount |
+| Inflation adjustment | Contributions updated under CFF Art. 65 |
 | Non-compliance with maquiladora safe harbor | Deemed permanent establishment of foreign principal |
 
 ## Section 7 -- Advance Pricing Agreements (APA)
@@ -216,6 +216,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | CbCR | SAT uses CbCR for risk-based audit selection |
 | Double tax treaties | Mexico's DTA network provides MAP for TP disputes |
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 76 frs. IX and X, 76-A, 179, 180, 181, 182 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 32-H, 34-A, 65, 76, 81 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
+| SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (updated fine amounts for CFF infractions; item XXXVII: MXN 199,630.00 to MXN 284,220.00 for CFF Art. 81 fr. XL) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
+
+Not yet confirmed: the June deadline for the maquiladora informative return (LISR Art. 32-A second paragraph not read in full); APA duration and scope details (CFF Art. 34-A read only at the heading level); interquartile-range and median-adjustment mechanics (not stated in the LISR text read; OECD practice); the "May 2026 first Local File deadline" and other Section 9 developments (news items, no archived primary source); Pillar Two status in Mexico.
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
@@ -226,7 +236,7 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network -- accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
