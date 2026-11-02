@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es",
+    "read_at": "2026-10-27T21:10:59.716268+00:00",
+    "status": 200,
+    "bytes": 87853,
+    "sha256": "333ecf206a88278a285a18204eaa09b88b7158c14d9c90d1de9d654e11afa019",
+    "file": "sources/TGSS-current-system.html",
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es"
+  },
+  {
+    "url": "https://www.seg-social.es/wps/wcm/connect/wss/3ac14a8e-a144-471c-8667-affaf8787453/Compendio%2BBNR%2B2025.pdf?MOD=AJPERES",
+    "read_at": "2026-10-27T21:10:59.716806+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "read_at": "2026-10-27T21:10:59.717045+00:00",
+    "status": 200,
+    "bytes": 500808,
+    "sha256": "cb5515be4dfa46cb84ab6be4f546bb60155d06e6bd7d9e658c2acdea842d8e45",
+    "file": "sources/LETA-current.html",
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "read_at": "2026-10-27T21:10:59.717238+00:00",
+    "status": 200,
+    "bytes": 988922,
+    "sha256": "6269d3bd555814c601f9526cc250c782894f6f8330a840cc572d027f09c6356c",
+    "file": "sources/RD2064-current.html",
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579"
+  }
+]

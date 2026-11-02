@@ -1,0 +1,842 @@
+[
+  {
+    "guide_lf": 65,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1065,
+    "LF_end": 1068,
+    "quote": "      0,00\n      0,00\n      12.500,00\n      9,50 "
+  },
+  {
+    "guide_lf": 66,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1070,
+    "LF_end": 1073,
+    "quote": "      12.500,00\n      1.187,50\n      9.500,00\n      12,50 "
+  },
+  {
+    "guide_lf": 67,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1075,
+    "LF_end": 1078,
+    "quote": "      22.000,00\n      2.375,00\n      11.000,00\n      16,00 "
+  },
+  {
+    "guide_lf": 68,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1080,
+    "LF_end": 1083,
+    "quote": "      33.000,00\n      4.135,00\n      20.000,00\n      19,00 "
+  },
+  {
+    "guide_lf": 69,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1085,
+    "LF_end": 1088,
+    "quote": "      53.000,00\n      7.935,00\n      37.000,00\n      21,50 "
+  },
+  {
+    "guide_lf": 70,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1090,
+    "LF_end": 1093,
+    "quote": "      90.000,00\n      15.890,00\n      30.000,00\n      23,50 "
+  },
+  {
+    "guide_lf": 71,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1095,
+    "LF_end": 1098,
+    "quote": "      120.000,00\n      22.940,00\n      55.000,00\n      24,50 "
+  },
+  {
+    "guide_lf": 72,
+    "source": "S1",
+    "article": "611-1",
+    "LF_start": 1100,
+    "LF_end": 1103,
+    "quote": "      175.000,00\n      36.415,00\n      En adelante\n      25,50"
+  },
+  {
+    "guide_lf": 80,
+    "source": "S2",
+    "article": "4",
+    "LF_start": 858,
+    "LF_end": 861,
+    "quote": "      0,00\n      0,00\n      12.985,35\n      9,00 %"
+  },
+  {
+    "guide_lf": 81,
+    "source": "S2",
+    "article": "4",
+    "LF_start": 863,
+    "LF_end": 866,
+    "quote": "      12.985,35\n      1.168,68\n      8.083,25\n      11,65 %"
+  },
+  {
+    "guide_lf": 82,
+    "source": "S2",
+    "article": "4",
+    "LF_start": 868,
+    "LF_end": 871,
+    "quote": "      21.068,60\n      2.110,38\n      14.131,40\n      14,90 %"
+  },
+  {
+    "guide_lf": 83,
+    "source": "S2",
+    "article": "4",
+    "LF_start": 873,
+    "LF_end": 876,
+    "quote": "      35.200,00\n      4.215,96\n      24.800,00\n      18,40 %"
+  },
+  {
+    "guide_lf": 84,
+    "source": "S2",
+    "article": "4",
+    "LF_start": 878,
+    "LF_end": 881,
+    "quote": "      60.000,00\n      8.779,16\n      En adelante\n      22,50 %"
+  },
+  {
+    "guide_lf": 92,
+    "source": "S3",
+    "article": "23",
+    "LF_start": 1354,
+    "LF_end": 1357,
+    "quote": "      0,00\n      0,00\n      13.000,00\n      9,50%"
+  },
+  {
+    "guide_lf": 93,
+    "source": "S3",
+    "article": "23",
+    "LF_start": 1359,
+    "LF_end": 1362,
+    "quote": "      13.000,00\n      1.235,00\n      8.100,00\n      12,00%"
+  },
+  {
+    "guide_lf": 94,
+    "source": "S3",
+    "article": "23",
+    "LF_start": 1364,
+    "LF_end": 1367,
+    "quote": "      21.100,00\n      2.207,00\n      14.100,00\n      15,00%"
+  },
+  {
+    "guide_lf": 95,
+    "source": "S3",
+    "article": "23",
+    "LF_start": 1369,
+    "LF_end": 1372,
+    "quote": "      35.200,00\n      4.322,00\n      24.800,00\n      18,50%"
+  },
+  {
+    "guide_lf": 96,
+    "source": "S3",
+    "article": "23",
+    "LF_start": 1374,
+    "LF_end": 1377,
+    "quote": "      60.000,00\n      8.910,00\n      En adelante\n      22,50%"
+  },
+  {
+    "guide_lf": 104,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 836,
+    "LF_end": 839,
+    "quote": "      –\n      0,00\n      12 450,00\n      9,00"
+  },
+  {
+    "guide_lf": 105,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 841,
+    "LF_end": 844,
+    "quote": "      12 450,00\n      1 120,50\n      5 257,20\n      12,00"
+  },
+  {
+    "guide_lf": 106,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 846,
+    "LF_end": 849,
+    "quote": "      17 707,20\n      1 751,36\n      15 300,00\n      14,00"
+  },
+  {
+    "guide_lf": 107,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 851,
+    "LF_end": 854,
+    "quote": "      33 007,20\n      3 893,36\n      20 400,00\n      19,20"
+  },
+  {
+    "guide_lf": 108,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 856,
+    "LF_end": 859,
+    "quote": "      53 407,20\n      7 810,16\n      16 592,80\n      21,50"
+  },
+  {
+    "guide_lf": 109,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 861,
+    "LF_end": 864,
+    "quote": "      70 000,00\n      11 377,62\n      20 000,00\n      22,50"
+  },
+  {
+    "guide_lf": 110,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 866,
+    "LF_end": 869,
+    "quote": "      90 000,00\n      15 877,62\n      85 000,00\n      25,00"
+  },
+  {
+    "guide_lf": 111,
+    "source": "S4",
+    "article": "2",
+    "LF_start": 871,
+    "LF_end": 874,
+    "quote": "      175 000,00\n      37 127,62\n      En adelante\n      26,00"
+  },
+  {
+    "guide_lf": 119,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 597,
+    "LF_end": 600,
+    "quote": "      0\n      0\n      13.000,00\n      8,50"
+  },
+  {
+    "guide_lf": 120,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 602,
+    "LF_end": 605,
+    "quote": "      13.000,00\n      1.105,00\n      8.000,00\n      11,00"
+  },
+  {
+    "guide_lf": 121,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 607,
+    "LF_end": 610,
+    "quote": "      21.000,00\n      1.985,00\n      14.200,00\n      14,50"
+  },
+  {
+    "guide_lf": 122,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 612,
+    "LF_end": 615,
+    "quote": "      35.200,00\n      4.044,00\n      24.800,00\n      18,00"
+  },
+  {
+    "guide_lf": 123,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 617,
+    "LF_end": 620,
+    "quote": "      60.000,00\n      8.508,00\n      30.000,00\n      22,50"
+  },
+  {
+    "guide_lf": 124,
+    "source": "S5",
+    "article": "1",
+    "LF_start": 622,
+    "LF_end": 625,
+    "quote": "      90.000,00\n      15.258,00\n      En adelante\n      24,50"
+  },
+  {
+    "guide_lf": 132,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1407,
+    "LF_end": 1410,
+    "quote": "      0,00\n      0,00\n      12.450,00\n      8,00 "
+  },
+  {
+    "guide_lf": 133,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1412,
+    "LF_end": 1415,
+    "quote": "      12.450,00\n      996,00\n      7.750,00\n      10,60 "
+  },
+  {
+    "guide_lf": 134,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1417,
+    "LF_end": 1420,
+    "quote": "      20.200,00\n      1.817,50\n      15.000,00\n      13,60 "
+  },
+  {
+    "guide_lf": 135,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1422,
+    "LF_end": 1425,
+    "quote": "      35.200,00\n      3.857,50\n      4.800,00\n      17,80 "
+  },
+  {
+    "guide_lf": 136,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1427,
+    "LF_end": 1430,
+    "quote": "      40.000,00\n      4.711,90\n      10.000,00\n      18,30 "
+  },
+  {
+    "guide_lf": 137,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1432,
+    "LF_end": 1435,
+    "quote": "      50.000,00\n      6.541,90\n      10.000,00\n      19,00 "
+  },
+  {
+    "guide_lf": 138,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1437,
+    "LF_end": 1440,
+    "quote": "      60.000,00\n      8.441,90\n      60.000,00\n      24,50 "
+  },
+  {
+    "guide_lf": 139,
+    "source": "S6",
+    "article": "31",
+    "LF_start": 1442,
+    "LF_end": 1445,
+    "quote": "      120.000,00\n      23.141,90\n      En adelante\n      27,00 "
+  },
+  {
+    "guide_lf": 147,
+    "source": "S7",
+    "article": "2",
+    "LF_start": 1310,
+    "LF_end": 1316,
+    "quote": "0\n\n0\n\n12.450,00\n\n9,50"
+  },
+  {
+    "guide_lf": 148,
+    "source": "S7",
+    "article": "2",
+    "LF_start": 1318,
+    "LF_end": 1324,
+    "quote": "12.450,00\n\n1.182,75\n\n7.750,00\n\n11,20"
+  },
+  {
+    "guide_lf": 149,
+    "source": "S7",
+    "article": "2",
+    "LF_start": 1326,
+    "LF_end": 1332,
+    "quote": "20.200,00\n\n2.050,75\n\n13.800,00\n\n13,30"
+  },
+  {
+    "guide_lf": 150,
+    "source": "S7",
+    "article": "2",
+    "LF_start": 1334,
+    "LF_end": 1340,
+    "quote": "34.000,00\n\n3.886,15\n\n26.000,00\n\n17,90"
+  },
+  {
+    "guide_lf": 151,
+    "source": "S7",
+    "article": "2",
+    "LF_start": 1342,
+    "LF_end": 1348,
+    "quote": "60.000,00\n\n8.540,15\n\nEn adelante.\n\n22,50"
+  },
+  {
+    "guide_lf": 159,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 744,
+    "LF_end": 747,
+    "quote": "      0\n      0\n      12.000\n      8,8"
+  },
+  {
+    "guide_lf": 160,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 749,
+    "LF_end": 752,
+    "quote": "      12.000\n      1.056\n      10.000\n      11,7"
+  },
+  {
+    "guide_lf": 161,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 754,
+    "LF_end": 757,
+    "quote": "      22.000\n      2.226\n      10.000\n      14,6"
+  },
+  {
+    "guide_lf": 162,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 759,
+    "LF_end": 762,
+    "quote": "      32.000\n      3.686\n      10.000\n      17"
+  },
+  {
+    "guide_lf": 163,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 764,
+    "LF_end": 767,
+    "quote": "      42.000\n      5.386\n      10.000\n      19,4"
+  },
+  {
+    "guide_lf": 164,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 769,
+    "LF_end": 772,
+    "quote": "      52.000\n      7.326\n      10.000\n      21,9"
+  },
+  {
+    "guide_lf": 165,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 774,
+    "LF_end": 777,
+    "quote": "      62.000\n      9.516\n      10.000\n      24,4"
+  },
+  {
+    "guide_lf": 166,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 779,
+    "LF_end": 782,
+    "quote": "      72.000\n      11.956\n      28.000\n      26,1"
+  },
+  {
+    "guide_lf": 167,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 784,
+    "LF_end": 787,
+    "quote": "      100.000\n      19.264\n      50.000\n      27,35"
+  },
+  {
+    "guide_lf": 168,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 789,
+    "LF_end": 792,
+    "quote": "      150.000\n      32.939\n      50.000\n      28,35"
+  },
+  {
+    "guide_lf": 169,
+    "source": "S8",
+    "article": "2",
+    "LF_start": 794,
+    "LF_end": 797,
+    "quote": "      200.000\n      47.114\n      en adelante\n      29,35"
+  },
+  {
+    "guide_lf": 177,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 897,
+    "LF_end": 900,
+    "quote": "      0,00\n      0,00\n      13.072,50\n      9,50"
+  },
+  {
+    "guide_lf": 178,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 902,
+    "LF_end": 905,
+    "quote": "      13.072,50\n      1.241,89\n      8.137,50\n      12,00"
+  },
+  {
+    "guide_lf": 179,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 907,
+    "LF_end": 910,
+    "quote": "      21.210,00\n      2.218,39\n      15.750,00\n      15,00"
+  },
+  {
+    "guide_lf": 180,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 912,
+    "LF_end": 915,
+    "quote": "      36.960,00\n      4.580,89\n      15.540,00\n      18,50"
+  },
+  {
+    "guide_lf": 181,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 917,
+    "LF_end": 920,
+    "quote": "      52.500,00\n      7.455,79\n      7.500,00\n      20,50"
+  },
+  {
+    "guide_lf": 182,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 922,
+    "LF_end": 925,
+    "quote": "      60.000,00\n      8.993,29\n      20.000,00\n      23,00"
+  },
+  {
+    "guide_lf": 183,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 927,
+    "LF_end": 930,
+    "quote": "      80.000,00\n      13.593,29\n      10.000,00\n      24,00"
+  },
+  {
+    "guide_lf": 184,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 932,
+    "LF_end": 935,
+    "quote": "      90.000,00\n      15.993,29\n      40.000,00\n      25,00"
+  },
+  {
+    "guide_lf": 185,
+    "source": "S9",
+    "article": "110-1",
+    "LF_start": 937,
+    "LF_end": 940,
+    "quote": "      130.000,00\n      25.993,29\n      en adelante\n      25,50"
+  },
+  {
+    "guide_lf": 193,
+    "source": "S10",
+    "article": "13 bis",
+    "LF_start": 1365,
+    "LF_end": 1371,
+    "quote": "0\n\n0\n\n12.450,00\n\n9,50"
+  },
+  {
+    "guide_lf": 194,
+    "source": "S10",
+    "article": "13 bis",
+    "LF_start": 1373,
+    "LF_end": 1379,
+    "quote": "12.450,00\n\n1.182,75\n\n7.750,00\n\n12,00"
+  },
+  {
+    "guide_lf": 195,
+    "source": "S10",
+    "article": "13 bis",
+    "LF_start": 1381,
+    "LF_end": 1387,
+    "quote": "20.200,00\n\n2.112,75\n\n15.000,00\n\n15,00"
+  },
+  {
+    "guide_lf": 196,
+    "source": "S10",
+    "article": "13 bis",
+    "LF_start": 1389,
+    "LF_end": 1395,
+    "quote": "35.200,00\n\n4.362,75\n\n24.800,00\n\n18,50"
+  },
+  {
+    "guide_lf": 197,
+    "source": "S10",
+    "article": "13 bis",
+    "LF_start": 1397,
+    "LF_end": 1403,
+    "quote": "60.000,00\n\n8.950,75\n\nEn adelante\n\n22,50"
+  },
+  {
+    "guide_lf": 205,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2145,
+    "LF_end": 2148,
+    "quote": "      0\n      0\n      13.748,00\n      9,00"
+  },
+  {
+    "guide_lf": 206,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2151,
+    "LF_end": 2154,
+    "quote": "      13.748,00\n      1.237,32\n      5.674,00\n      11,50"
+  },
+  {
+    "guide_lf": 207,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2157,
+    "LF_end": 2160,
+    "quote": "      19.422,00\n      1.889,83\n      16.502,00\n      14,00"
+  },
+  {
+    "guide_lf": 208,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2163,
+    "LF_end": 2166,
+    "quote": "      35.924,00\n      4.200,11\n      21.642,00\n      18,50"
+  },
+  {
+    "guide_lf": 209,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2169,
+    "LF_end": 2172,
+    "quote": "      57.566,00\n      8.203,88\n      35.702,00\n      23,50"
+  },
+  {
+    "guide_lf": 210,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2175,
+    "LF_end": 2178,
+    "quote": "      93.268,00\n      16.593,85\n      30.477,00\n      25,00"
+  },
+  {
+    "guide_lf": 211,
+    "source": "S11",
+    "article": "18 bis",
+    "LF_start": 2181,
+    "LF_end": 2184,
+    "quote": "      123.745,00\n      24.213,1\n      en adelante\n      26,00"
+  },
+  {
+    "guide_lf": 219,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 866,
+    "LF_end": 869,
+    "quote": "      0,00\n      0,00\n      12.450,00\n      7,75"
+  },
+  {
+    "guide_lf": 220,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 871,
+    "LF_end": 874,
+    "quote": "      12.450,00\n      964,88\n      7.750,00\n      9,75"
+  },
+  {
+    "guide_lf": 221,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 876,
+    "LF_end": 879,
+    "quote": "      20.200,00\n      1.720,50\n      4.000,00\n      16,00"
+  },
+  {
+    "guide_lf": 222,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 881,
+    "LF_end": 884,
+    "quote": "      24.200,00\n      2.360,50\n      11.000,00\n      17,50"
+  },
+  {
+    "guide_lf": 223,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 886,
+    "LF_end": 889,
+    "quote": "      35.200,00\n      4.285,50\n      24.800,00\n      21,00"
+  },
+  {
+    "guide_lf": 224,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 891,
+    "LF_end": 894,
+    "quote": "      60.000,00\n      9.493,50\n      20.200,00\n      23,50"
+  },
+  {
+    "guide_lf": 225,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 896,
+    "LF_end": 899,
+    "quote": "      80.200,00\n      14.240,50\n      19.000,00\n      24,00"
+  },
+  {
+    "guide_lf": 226,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 901,
+    "LF_end": 904,
+    "quote": "      99.200,00\n      18.800,50\n      21.000,00\n      24,50"
+  },
+  {
+    "guide_lf": 227,
+    "source": "S12",
+    "article": "1",
+    "LF_start": 906,
+    "LF_end": 909,
+    "quote": "      120.200,00\n      23.945,50\n      en adelante\n      25,00"
+  },
+  {
+    "guide_lf": 235,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1036,
+    "LF_end": 1039,
+    "quote": "      0\n      0\n      10.000\n      9"
+  },
+  {
+    "guide_lf": 236,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1041,
+    "LF_end": 1044,
+    "quote": "      10.000\n      900\n      8.000\n      11,25"
+  },
+  {
+    "guide_lf": 237,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1046,
+    "LF_end": 1049,
+    "quote": "      18.000\n      1.800\n      12.000\n      14,25"
+  },
+  {
+    "guide_lf": 238,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1051,
+    "LF_end": 1054,
+    "quote": "      30.000\n      3.510\n      18.000\n      17,50"
+  },
+  {
+    "guide_lf": 239,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1056,
+    "LF_end": 1059,
+    "quote": "      48.000\n      6.660\n      22.000\n      19"
+  },
+  {
+    "guide_lf": 240,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1061,
+    "LF_end": 1064,
+    "quote": "      70.000\n      10.840\n      20.000\n      21,75"
+  },
+  {
+    "guide_lf": 241,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1066,
+    "LF_end": 1069,
+    "quote": "      90.000\n      15.190\n      30.000\n      22,75"
+  },
+  {
+    "guide_lf": 242,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1071,
+    "LF_end": 1074,
+    "quote": "      120.000\n      22.015\n      55.000\n      23,75"
+  },
+  {
+    "guide_lf": 243,
+    "source": "S13",
+    "article": "1",
+    "LF_start": 1076,
+    "LF_end": 1079,
+    "quote": "      175.000\n      35.077,50\n      En adelante\n      24,75"
+  },
+  {
+    "guide_lf": 251,
+    "source": "S14",
+    "article": "1",
+    "LF_start": 813,
+    "LF_end": 816,
+    "quote": "      0\n      0\n      13.362,22\n      8,50"
+  },
+  {
+    "guide_lf": 252,
+    "source": "S14",
+    "article": "1",
+    "LF_start": 818,
+    "LF_end": 821,
+    "quote": "      13.362,22\n      1.135,79\n      5.642,41\n      10,70"
+  },
+  {
+    "guide_lf": 253,
+    "source": "S14",
+    "article": "1",
+    "LF_start": 823,
+    "LF_end": 826,
+    "quote": "      19.004,63\n      1.739,53\n      16.421,05\n      12,80"
+  },
+  {
+    "guide_lf": 254,
+    "source": "S14",
+    "article": "1",
+    "LF_start": 828,
+    "LF_end": 831,
+    "quote": "      35.425,68\n      3.841,42\n      21.894,72\n      17,40"
+  },
+  {
+    "guide_lf": 255,
+    "source": "S14",
+    "article": "1",
+    "LF_start": 833,
+    "LF_end": 836,
+    "quote": "      57.320,40\n      7.651,10\n      en adelante\n      20,50"
+  },
+  {
+    "guide_lf": 263,
+    "source": "S15",
+    "article": "1",
+    "LF_start": 735,
+    "LF_end": 738,
+    "quote": "      0,00\n      0,00\n      12.450,00\n      9,0"
+  },
+  {
+    "guide_lf": 264,
+    "source": "S15",
+    "article": "1",
+    "LF_start": 740,
+    "LF_end": 743,
+    "quote": "      12.450,00\n      1.120,5\n      7.750,00\n      12,0"
+  },
+  {
+    "guide_lf": 265,
+    "source": "S15",
+    "article": "1",
+    "LF_start": 745,
+    "LF_end": 748,
+    "quote": "      20.200,00\n      2.050,5\n      15.000,00\n      14,0"
+  },
+  {
+    "guide_lf": 266,
+    "source": "S15",
+    "article": "1",
+    "LF_start": 750,
+    "LF_end": 753,
+    "quote": "      35.200,00\n      4.150,5\n      18.207,20\n      18,5"
+  },
+  {
+    "guide_lf": 267,
+    "source": "S15",
+    "article": "1",
+    "LF_start": 755,
+    "LF_end": 760,
+    "quote": "      53.407,20\n      7.518,83\n\nEn adelante\n\n      21,5»"
+  }
+]

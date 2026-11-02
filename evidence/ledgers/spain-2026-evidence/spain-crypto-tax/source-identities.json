@@ -1,0 +1,175 @@
+[
+  {
+    "key": "L",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/L.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/L.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "2026-10-28T00:08:44.705891+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "R",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "sources/R.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader": "sources/R.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired": "2026-10-28T00:08:45.360812+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LGT",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/LGT.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/LGT.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28T00:08:43.654027+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "RGAT",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984",
+    "raw": "sources/RGAT.body",
+    "raw_sha256": "331301467bae286138d51c24d2ee01ed9ee22504688d2aec1a89a010647ecad9",
+    "reader": "sources/RGAT.reader.txt",
+    "reader_sha256": "b76a655e2d022064ac576895ce82157c07b08c9720fcc78d90aa73f8ff43ca89",
+    "acquired": "2026-10-28T00:08:44.730508+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Wealth",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+    "raw": "sources/Wealth.body",
+    "raw_sha256": "fbdf29912cda9d18ebdc18437a360c32e825cf0768f74a6c2afcd9f65a165a74",
+    "reader": "sources/Wealth.reader.txt",
+    "reader_sha256": "d09ca48c7efabd51d372a878f0fe8a5c39d8182134dee20510bcc0b8f2710ebc",
+    "acquired": "2026-10-28T00:08:41.044032+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Investor",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c11-ganancias-perdidas-patrimoniales/monedas-virtuales/compra-venta-monedas-virtuales-tributacion-inversor.html",
+    "raw": "sources/Investor.body",
+    "raw_sha256": "c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1",
+    "reader": "sources/Investor.reader.txt",
+    "reader_sha256": "01aa6fd99f15b0a9890f6bb34b82ede6ac2207c9e8cf2d5ed07e0762329221fa",
+    "acquired": "2026-10-28T00:08:29.078203+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "FAQ721",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-721-decla-sobre-monedas-extranjero/preguntas-frecuentes-sobre-modelo-721.html",
+    "raw": "sources/FAQ721.body",
+    "raw_sha256": "84c76663ae990f6e99b76467e82678edc65ce3ab1ac0ea4482cc0986c62255e4",
+    "reader": "sources/FAQ721.reader.txt",
+    "reader_sha256": "e1d17de56c42a47322816c69c41140786f8b6f60278d4c842e197723bf2c901a",
+    "acquired": "2026-10-28T00:08:30.449606+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "O721",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-17429",
+    "raw": "sources/O721.body",
+    "raw_sha256": "23a61e2b9c0c9395580e91d0f467b3c440e86ad993868897134d1c2bfdae50a4",
+    "reader": "sources/O721.reader.txt",
+    "reader_sha256": "469472385147372fa6c32b3fafd864f284a25c18dd01b99f07146fa18158f561",
+    "acquired": "2026-10-28T00:08:52.998659+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Interest",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "raw": "sources/Interest.body",
+    "raw_sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "reader": "sources/Interest.reader.txt",
+    "reader_sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "acquired": "2026-10-28T00:08:29.239287+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "FIFO",
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1604-18",
+    "raw": "sources/FIFO.body",
+    "raw_sha256": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "reader": "sources/FIFO.reader.txt",
+    "reader_sha256": "463506a393df18284f664b1694a0e3065d1b9420c7ea8bfa15f0c6d9f07b29ec",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading.",
+    "capture_kind": "Verbatim official interactive-browser accessibility capture, not an HTTP response body. Selected Spanish ruling text re-read;2018/2022/2016 ruling dates retained, not fabricated2026quotes."
+  },
+  {
+    "key": "Staking",
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1766-22",
+    "raw": "sources/Staking.body",
+    "raw_sha256": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "reader": "sources/Staking.reader.txt",
+    "reader_sha256": "9fe84c5a0354e779d38793df6f42185a99a09b4436ef915900306101c87bc917",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading.",
+    "capture_kind": "Verbatim official interactive-browser accessibility capture, not an HTTP response body. Selected Spanish ruling text re-read;2018/2022/2016 ruling dates retained, not fabricated2026quotes."
+  },
+  {
+    "key": "Mining",
+    "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3625-16",
+    "raw": "sources/Mining.body",
+    "raw_sha256": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "reader": "sources/Mining.reader.txt",
+    "reader_sha256": "4a9bc0fb57eef26fbef974dbdfc01185cb3d8a2340e727820872c7e57e05a588",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading.",
+    "capture_kind": "Verbatim official interactive-browser accessibility capture, not an HTTP response body. Selected Spanish ruling text re-read;2018/2022/2016 ruling dates retained, not fabricated2026quotes."
+  },
+  {
+    "key": "AML",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737",
+    "raw": "sources/AML.body",
+    "raw_sha256": "87abb0d13f739c14f505c54c41ee7fbaaeeba5e59b152a9f5801d8fe56376e62",
+    "reader": "sources/AML.reader.txt",
+    "reader_sha256": "c111f8360d65bdf833a60244f15f5720284814a02248a0d86edd013b597a461f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Bforal",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+    "raw": "sources/Bforal.body",
+    "raw_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "reader": "sources/Bforal.reader.txt",
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Aforal",
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "raw": "sources/Aforal.body",
+    "raw_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "reader": "sources/Aforal.reader.txt",
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Gforal",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc",
+    "raw": "sources/Gforal.body",
+    "raw_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "reader": "sources/Gforal.reader.txt",
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Nforal",
+    "url": "https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1",
+    "raw": "sources/Nforal.body",
+    "raw_sha256": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "reader": "sources/Nforal.reader.txt",
+    "reader_sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

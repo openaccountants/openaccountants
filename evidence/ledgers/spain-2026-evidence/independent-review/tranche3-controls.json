@@ -1,0 +1,258 @@
+{
+  "scope": "Own separating calculations. Actual city/CN/IAE/status/election/evidence/elapsed calendar inputs remain claimant gates; no statutory safe margin or generic bankdeadline invented.",
+  "count": 42,
+  "checks": [
+    {
+      "name": "Ceuta computer output CN8471",
+      "actual": "1050",
+      "expected": "1050",
+      "pass": true
+    },
+    {
+      "name": "Ceuta importbase without doubled incidental",
+      "actual": "10600",
+      "expected": "10600",
+      "pass": true
+    },
+    {
+      "name": "Ceuta componentimport CN8473",
+      "actual": "371",
+      "expected": "371",
+      "pass": true
+    },
+    {
+      "name": "Ceuta directproducer interior",
+      "actual": "679",
+      "expected": "679",
+      "pass": true
+    },
+    {
+      "name": "Ceuta import plus interior own remittances",
+      "actual": "1050",
+      "expected": "1050",
+      "pass": true
+    },
+    {
+      "name": "Ceuta invalid service and electricity credit separator",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla officecomputer import",
+      "actual": "1060",
+      "expected": "1060",
+      "pass": true
+    },
+    {
+      "name": "Melilla general consultancy",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "Melilla advertising",
+      "actual": "50",
+      "expected": "50",
+      "pass": true
+    },
+    {
+      "name": "Melilla service return noinputrecovery",
+      "actual": "850",
+      "expected": "850",
+      "pass": true
+    },
+    {
+      "name": "Melilla own import plus service remittances",
+      "actual": "1910",
+      "expected": "1910",
+      "pass": true
+    },
+    {
+      "name": "Melilla computers cannot use Ceuta3.5percent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Ceuta included4percent price base",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "Ceuta included4percent tax",
+      "actual": "400",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "Ceuta electronic service versus telecommunication rate",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla electronic service versus telecommunications",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla protectedhousing max2garage equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla mainlyresidential50percent equality qualifies",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla49.99percent fails residentialarea limb",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Melilla exactly6m notmonthlytrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Melilla6m.01 monthlytrigger",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla objective prior450k equality passes amountgate",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla objective construction priorpublic40k equality",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Ceuta objective service100k equality passes amountgate",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla modules generalservice quarterlybase",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "Melilla modules generalservice quarterlytax",
+      "actual": "120",
+      "expected": "120",
+      "pass": true
+    },
+    {
+      "name": "Melilla modules actualannualyield Q4balance",
+      "actual": "280",
+      "expected": "280",
+      "pass": true
+    },
+    {
+      "name": "Melilla modules hospitality1.5 coefficient",
+      "actual": "45/2",
+      "expected": "45/2",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly machinery",
+      "actual": "890.00",
+      "expected": "890",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly medical",
+      "actual": "862.5000",
+      "expected": "862.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly ships_aircraft",
+      "actual": "906.5000",
+      "expected": "906.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly internal_transport",
+      "actual": "906.5000",
+      "expected": "906.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly external_transport",
+      "actual": "851.5000",
+      "expected": "851.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly trucks",
+      "actual": "818.5000",
+      "expected": "818.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly furniture",
+      "actual": "906.5000",
+      "expected": "906.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly tools",
+      "actual": "780.00",
+      "expected": "780",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly IT",
+      "actual": "780.00",
+      "expected": "780",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly electronic",
+      "actual": "818.5000",
+      "expected": "818.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export monthly other",
+      "actual": "862.5000",
+      "expected": "862.50",
+      "pass": true
+    },
+    {
+      "name": "Melilla export fractional11 versus exact10months",
+      "actual": "20",
+      "expected": "20",
+      "pass": true
+    },
+    {
+      "name": "Melilla reduction linear not compounded",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Melilla fee separate from depreciation",
+      "actual": "750",
+      "expected": "750",
+      "pass": true
+    }
+  ]
+}

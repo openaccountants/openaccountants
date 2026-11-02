@@ -1,0 +1,9 @@
+{
+  "finding": "S-L01 independently confirmed",
+  "source": "LIRPF80.2, RIRPF114.2.b",
+  "exact_short_quote": "El tipo de gravamen se expresará con dos decimales.",
+  "date": "2026-10-28",
+  "before_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+  "after_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+  "scope": "Only general foreign-credit formula, example2 intermediate percentage/limit, source row and version. Inputs, binding50250cap, final192130tax and22770refund unchanged. One original executable example intentionally corrected, no substantive topic dropped."
+}

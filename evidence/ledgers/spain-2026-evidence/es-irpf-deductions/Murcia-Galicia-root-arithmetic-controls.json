@@ -1,0 +1,232 @@
+{
+  "count": 37,
+  "controls": [
+    {
+      "name": "Murcia pesetas41000",
+      "actual": "246.41",
+      "expected": "246.41",
+      "pass": true
+    },
+    {
+      "name": "Murcia pesetas46000",
+      "actual": "276.47",
+      "expected": "276.47",
+      "pass": true
+    },
+    {
+      "name": "oldhome3040threepercent",
+      "actual": "91.20",
+      "expected": "91.20",
+      "pass": true
+    },
+    {
+      "name": "oldhome9040cap",
+      "actual": "246.41",
+      "expected": "246.41",
+      "pass": true
+    },
+    {
+      "name": "oldhome9040twopercent",
+      "actual": "180.80",
+      "expected": "180.80",
+      "pass": true
+    },
+    {
+      "name": "oldhome8000less6000",
+      "actual": "60.00",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "oldhome9040national",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "sharedchargerequal3000A",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "sharedchargerequal3000B",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "sharedchargerequal6000A",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "sharedchargerequal6000B",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "sharedcharger754000A",
+      "actual": "3000.00",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "sharedcharger754000B",
+      "actual": "1000.00",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "sharedcharger756000A",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "sharedcharger756000B",
+      "actual": "1500.00",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "EVagency35000BI20kbase",
+      "actual": "4500.000",
+      "expected": "4500",
+      "pass": true
+    },
+    {
+      "name": "EVcontraryliteral",
+      "actual": "6000.0",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "EV32kbase225cap",
+      "actual": "7000",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "EV32kbase30cap",
+      "actual": "7000",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "EVcarry4500less3000",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "Galicia onechild100/200/200",
+      "actual": "60.00",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "Galicia twochild200/100",
+      "actual": "90.00",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "name": "Galicia twochild200/200",
+      "actual": "90.00",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "name": "Galicia textbooks childA",
+      "actual": "105",
+      "expected": "105",
+      "pass": true
+    },
+    {
+      "name": "Galicia childB200",
+      "actual": "30.00",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "name": "Galicia total135",
+      "actual": "135.00",
+      "expected": "135",
+      "pass": true
+    },
+    {
+      "name": "Galicia payerA nonbinding",
+      "actual": "45.00",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "name": "Galicia payerB nonbinding",
+      "actual": "45.00",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "name": "works9000threeannualcredits",
+      "actual": "1350.00",
+      "expected": "1350",
+      "pass": true
+    },
+    {
+      "name": "works2026carry350",
+      "actual": "350.00",
+      "expected": "350",
+      "pass": true
+    },
+    {
+      "name": "works2027oldandnew",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "smallerfirst450then150",
+      "actual": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "name": "smallerfirst900carry800",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "2026worksremainingnew",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "2026fixedremainingnew",
+      "actual": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "name": "threehomebase2026credit",
+      "actual": "900.00",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "threehometotalrelief",
+      "actual": "3150.00",
+      "expected": "3150",
+      "pass": true
+    }
+  ],
+  "section_pins": {
+    "Murcia": "45cb278cce7618db0881140f934dad8513a96ca2e24e8b3079e77507503c7322",
+    "Galicia": "1e2cd8171da6e0edabc491cef6db68b42bd66b6d9bc7fa2906eb824596263093"
+  },
+  "status": "Writer arithmetic checks only; hypothetical selected interpretations and competing outcomes remain labelled; no independent PASS"
+}

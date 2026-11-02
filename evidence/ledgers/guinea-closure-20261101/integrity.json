@@ -1,0 +1,509 @@
+{
+  "candidate": "8f84f15a2a89e62158c959d05d150dd9deb3090a",
+  "original_candidate": "ea0fe54f95ca0059c989faabc9195a12a2497208",
+  "base": "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297",
+  "protected_files": [
+    {
+      "path": "skills/guinea/README.md",
+      "sha256": "e8b4e7d0ce186d425d0bc5dddd77af9f930edaa2fd05d96d3211098007c90d68",
+      "same_as_original": true,
+      "working_tree_matches": true
+    },
+    {
+      "path": "evidence/ledgers/gn-old-topic-destinations.md",
+      "sha256": "fb853bdbc11613c7fe442217019e6d2d7e10526ebf4bea5baa782197fbeb0ebf",
+      "same_as_original": true,
+      "working_tree_matches": true
+    },
+    {
+      "path": "evidence/ledgers/gn-source-scope-20261101.md",
+      "sha256": "31ae0e2d1c59c650290c087a614d52fe3252884eb16df2e3754321e0c30ee509",
+      "same_as_original": true,
+      "working_tree_matches": true
+    },
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "sha256": "3d3c490e3a2925f27f3702f771a4adf4c1951bee067a29a7ed92a974e290d75b",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "sha256": "36e3519ff66d3770a70983d5806914677e57a12d238de0f6925c502c1b617f41",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "sha256": "2671045f22d434771ed9131896f681b6719a8bb29f9566a7d242a99514383eec",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "sha256": "bfa1355fd698a25c6947de1c1129878171ea2e2df1f9aa5cc251d4ac504a3238",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "sha256": "a98b1e336b8e2464e2a516536e3ff38395638fdd2796b40346057d9b02e551f7",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "sha256": "031265a90237a27278f32b1a06ef914e4ebf068ec79f120b6f7f36f47b2beca6",
+      "same_as_baseline": true,
+      "same_as_original": true,
+      "same_as_independent_first_review": true,
+      "frontmatter_identical": true,
+      "full_cta_identical": true
+    }
+  ],
+  "new_guide_metadata_and_cases": [
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "sha256": "38945a4cc0390f40310f63d2c737dfd6c09c0876b5476fa1f4bf742b4f9a67c4",
+      "description_words": 105,
+      "description_within_80_150": true,
+      "version_1_1": true,
+      "body_version_1_1": true,
+      "platform_written_keys_absent": true,
+      "oa_blocks_unchanged": true,
+      "first_workflow_step_gates_currentness": true
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "sha256": "4d3008a143a2053770005d08becf7f26f838733462058c99ff7e73c3171437c2",
+      "description_words": 106,
+      "description_within_80_150": true,
+      "version_1_1": true,
+      "body_version_1_1": true,
+      "platform_written_keys_absent": true,
+      "oa_blocks_unchanged": true,
+      "first_workflow_step_gates_currentness": true
+    }
+  ],
+  "ledgers": [
+    {
+      "path": "evidence/ledgers/gn-property-tax.md",
+      "sha256": "5d802f827c99990f666cf96410f7ce8bbd1ede90ace862c3e9c1ae7f4165e93e",
+      "legal_rows": 6,
+      "legal_rows_unchanged": true,
+      "original_ledger_preserved_as_prefix": true
+    },
+    {
+      "path": "evidence/ledgers/gn-vat-invoice-control.md",
+      "sha256": "c2cdbad33438bf9a786176df9e8cd9815394d38e401483ad77b89e92bc4b23e0",
+      "legal_rows": 19,
+      "legal_rows_unchanged": true,
+      "original_ledger_preserved_as_prefix": true
+    }
+  ],
+  "private_source_files_match_initial_capture_manifest": true,
+  "private_source_file_count": 60,
+  "private_source_checks": [
+    {
+      "path": "lf2026.pdf",
+      "expected": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b",
+      "actual": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b",
+      "matches": true
+    },
+    {
+      "path": "embassy-lfr-nov1.html",
+      "expected": "f6393ef1bacb07f236200b8f40a89973440af34b419b35069c2ffe12c6486a27",
+      "actual": "f6393ef1bacb07f236200b8f40a89973440af34b419b35069c2ffe12c6486a27",
+      "matches": true
+    },
+    {
+      "path": "dgb-2026-page.txt",
+      "expected": "4d6751dc14de7f188696313b4432f711739891146c01e2d269648c8197ff973e",
+      "actual": "4d6751dc14de7f188696313b4432f711739891146c01e2d269648c8197ff973e",
+      "matches": true
+    },
+    {
+      "path": "dgb-2026-page.html",
+      "expected": "66224278fdb924e1f43849aed0f4837bd4432bc2e734b1f7a2fa64b8f1ae6500",
+      "actual": "66224278fdb924e1f43849aed0f4837bd4432bc2e734b1f7a2fa64b8f1ae6500",
+      "matches": true
+    },
+    {
+      "path": "embassy-lfr-nov1.txt",
+      "expected": "d9f5ccabdb853bbccdd372b961150f7adbd4c813293115464bfe1a50d677a9ad",
+      "actual": "d9f5ccabdb853bbccdd372b961150f7adbd4c813293115464bfe1a50d677a9ad",
+      "matches": true
+    },
+    {
+      "path": "lf2026.txt",
+      "expected": "48c76d2f58d59a628ad24ded5ed17bfe35df4b3fd434352b3613c73d719341f0",
+      "actual": "48c76d2f58d59a628ad24ded5ed17bfe35df4b3fd434352b3613c73d719341f0",
+      "matches": true
+    },
+    {
+      "path": "dgb-projects-page.txt",
+      "expected": "171337df3c6d8279f2befb1beb3cc2e664d44bc60ceda14af45ed454c17945b2",
+      "actual": "171337df3c6d8279f2befb1beb3cc2e664d44bc60ceda14af45ed454c17945b2",
+      "matches": true
+    },
+    {
+      "path": "dgb.html",
+      "expected": "2f32c96a6b53fd9615b0a967ee00a90ad7ac67e92e101d74a756e85e93de22c8",
+      "actual": "2f32c96a6b53fd9615b0a967ee00a90ad7ac67e92e101d74a756e85e93de22c8",
+      "matches": true
+    },
+    {
+      "path": "Loi-de-Finances-Initiale-2026.pdf",
+      "expected": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b",
+      "actual": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b",
+      "matches": true
+    },
+    {
+      "path": "dgb-projects-page.html",
+      "expected": "305e9c82099ba0ec4254c35adbb00910920cd8db57fe8603f7032ecee814f852",
+      "actual": "305e9c82099ba0ec4254c35adbb00910920cd8db57fe8603f7032ecee814f852",
+      "matches": true
+    },
+    {
+      "path": "dgi.html",
+      "expected": "dcb36f1359a99c22f1a6425b5622674efe35c7fb677f80cf85028d3ea9a170ab",
+      "actual": "dcb36f1359a99c22f1a6425b5622674efe35c7fb677f80cf85028d3ea9a170ab",
+      "matches": true
+    },
+    {
+      "path": "apip-cgi.html",
+      "expected": "a3aca7160375986f4bc27bd7841ba2ce2a7e75320f966523899f7c00e770ea58",
+      "actual": "a3aca7160375986f4bc27bd7841ba2ce2a7e75320f966523899f7c00e770ea58",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-022.txt",
+      "expected": "f7564a81cf84d3235360080556b94f54134e07689160b8a4132949b1b10f8e2e",
+      "actual": "f7564a81cf84d3235360080556b94f54134e07689160b8a4132949b1b10f8e2e",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-023.txt",
+      "expected": "7fc62caa856a8a911f52fdadb66fce5af340865ba58c4f4f48e3206a5c41391c",
+      "actual": "7fc62caa856a8a911f52fdadb66fce5af340865ba58c4f4f48e3206a5c41391c",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-021.txt",
+      "expected": "5e95adebec5de760d3227b56747adf4178573300bee2c23043a77c6bcbcde164",
+      "actual": "5e95adebec5de760d3227b56747adf4178573300bee2c23043a77c6bcbcde164",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-009.txt",
+      "expected": "900da24728ec301ee5e3aa8dab4b373a4e9ddeed54611681954997896f6b26ff",
+      "actual": "900da24728ec301ee5e3aa8dab4b373a4e9ddeed54611681954997896f6b26ff",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-008.txt",
+      "expected": "a954c90be750974e9498d68431526720089fba1f1f7f8eb8f0d122be5a49a3bc",
+      "actual": "a954c90be750974e9498d68431526720089fba1f1f7f8eb8f0d122be5a49a3bc",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-020.txt",
+      "expected": "c00ee9cffeac5d6aaea6fcc833405e015b2f9402116630a6d75366d2fceaa554",
+      "actual": "c00ee9cffeac5d6aaea6fcc833405e015b2f9402116630a6d75366d2fceaa554",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-018.txt",
+      "expected": "8b2c7851cad3f6b354ad2297efaa3590f8d6add2248f23837ef59586bf325ecd",
+      "actual": "8b2c7851cad3f6b354ad2297efaa3590f8d6add2248f23837ef59586bf325ecd",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-024.txt",
+      "expected": "bf4b5ea880accfef6e62c11bdee73f3e66d9f0e4ca277af48341ef998dd8832f",
+      "actual": "bf4b5ea880accfef6e62c11bdee73f3e66d9f0e4ca277af48341ef998dd8832f",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-025.txt",
+      "expected": "908b2ff0c230a1941f857b1c8fa58a1f4a2cc88d0b51c8bf33a2aea31375df8a",
+      "actual": "908b2ff0c230a1941f857b1c8fa58a1f4a2cc88d0b51c8bf33a2aea31375df8a",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-019.txt",
+      "expected": "e50a0cc5eaa4b9c3abc00155b8494ebc0eed062c1b8562bf9bd53e6da0674da2",
+      "actual": "e50a0cc5eaa4b9c3abc00155b8494ebc0eed062c1b8562bf9bd53e6da0674da2",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-027.txt",
+      "expected": "629ff3bbc628104ef81ac0743416bb4e4d02c386de53d056ed78080991b65c59",
+      "actual": "629ff3bbc628104ef81ac0743416bb4e4d02c386de53d056ed78080991b65c59",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-026.txt",
+      "expected": "20d2add851bf39edcc6b5e830930f962db7e19dffa2cab8610eed551eda6c302",
+      "actual": "20d2add851bf39edcc6b5e830930f962db7e19dffa2cab8610eed551eda6c302",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-023.png",
+      "expected": "550bf98c0f741ea3c86fcbd7b381702686774e231def797e9afa8da088ab6896",
+      "actual": "550bf98c0f741ea3c86fcbd7b381702686774e231def797e9afa8da088ab6896",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-022.png",
+      "expected": "ccb28f28786e09720b986833d3f6a55cc6fd4e834a262988b138bfb7c08f717f",
+      "actual": "ccb28f28786e09720b986833d3f6a55cc6fd4e834a262988b138bfb7c08f717f",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-008.png",
+      "expected": "52fd12b057668594372fbb9f58d8a91126bfac81e6b18b211b0c38bfb180e8d3",
+      "actual": "52fd12b057668594372fbb9f58d8a91126bfac81e6b18b211b0c38bfb180e8d3",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-020.png",
+      "expected": "502669ad04516da10f2d2a1c4c0fd9c201ddc128796467559698dde1bdb5bbea",
+      "actual": "502669ad04516da10f2d2a1c4c0fd9c201ddc128796467559698dde1bdb5bbea",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-021.png",
+      "expected": "54bf681cbefa2fe5862ef12e126beb46deb0c6f872a864494651e94fe1e8de1b",
+      "actual": "54bf681cbefa2fe5862ef12e126beb46deb0c6f872a864494651e94fe1e8de1b",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-009.png",
+      "expected": "d04f7e36099449104c63482107ff9468a9403765c829228f3ecf2edb15936424",
+      "actual": "d04f7e36099449104c63482107ff9468a9403765c829228f3ecf2edb15936424",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-025.png",
+      "expected": "f634881b6ea1971dd65cdd41891418f17fd8c97ee7beb877bb35510df6443c07",
+      "actual": "f634881b6ea1971dd65cdd41891418f17fd8c97ee7beb877bb35510df6443c07",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-019.png",
+      "expected": "01cb57d01a5236e102da69ece736c580ec7baef03d06d68ec36aac9f44607fdd",
+      "actual": "01cb57d01a5236e102da69ece736c580ec7baef03d06d68ec36aac9f44607fdd",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-018.png",
+      "expected": "a6f65941e69ddb2ce2e7e3403ce8584a474f425efa45b782d57287f1108beee6",
+      "actual": "a6f65941e69ddb2ce2e7e3403ce8584a474f425efa45b782d57287f1108beee6",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-024.png",
+      "expected": "78368dbd4e6abfad2ce98b15ec3a11a4dc585d1a3b39c61fdb9419fef7a1f4dc",
+      "actual": "78368dbd4e6abfad2ce98b15ec3a11a4dc585d1a3b39c61fdb9419fef7a1f4dc",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-026.png",
+      "expected": "11b35a0f611960714a26f795846744e9bba7106e71a1f8c375627500ccd80d07",
+      "actual": "11b35a0f611960714a26f795846744e9bba7106e71a1f8c375627500ccd80d07",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-027.png",
+      "expected": "7c7a6b04316f3fc113ebfe35786a6e3215597b456c4e2b566eb6d8fcf89dcb1f",
+      "actual": "7c7a6b04316f3fc113ebfe35786a6e3215597b456c4e2b566eb6d8fcf89dcb1f",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-016.png",
+      "expected": "1e424fb04b2f728e12c49288caccbd491d8ee39704a00b614abbbff064da1aa4",
+      "actual": "1e424fb04b2f728e12c49288caccbd491d8ee39704a00b614abbbff064da1aa4",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-017.png",
+      "expected": "e0bd91e698099845b60e9ed82cfa5dd2edde7ab2f693debb4fa08f57f84baad0",
+      "actual": "e0bd91e698099845b60e9ed82cfa5dd2edde7ab2f693debb4fa08f57f84baad0",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-029.png",
+      "expected": "5b453f4419fcba3868353db8da9b42a50ec2903795d5d32717c8d110883d40fb",
+      "actual": "5b453f4419fcba3868353db8da9b42a50ec2903795d5d32717c8d110883d40fb",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-015.png",
+      "expected": "6419a4bb9f74b56bae1964595503a1d703903543444946be301f7745b0ed83ba",
+      "actual": "6419a4bb9f74b56bae1964595503a1d703903543444946be301f7745b0ed83ba",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-014.png",
+      "expected": "34c698abcce1dde48e5808309117124907b74c2355a6e6b488026e1f8b12ae3e",
+      "actual": "34c698abcce1dde48e5808309117124907b74c2355a6e6b488026e1f8b12ae3e",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-028.png",
+      "expected": "58a3843b126e27dda26bfd1494ac1967f1e87690a8cb1ee5efd68f53ddab769a",
+      "actual": "58a3843b126e27dda26bfd1494ac1967f1e87690a8cb1ee5efd68f53ddab769a",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-010.png",
+      "expected": "d7e5084296f46c916ba52135c670f98b8ddcf120fde58e9f4a2c6664767ac97b",
+      "actual": "d7e5084296f46c916ba52135c670f98b8ddcf120fde58e9f4a2c6664767ac97b",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-011.png",
+      "expected": "528c6107ecb0bcf289aca0b391e10ff0545290ae1473c1d327fbabb89d10f0bb",
+      "actual": "528c6107ecb0bcf289aca0b391e10ff0545290ae1473c1d327fbabb89d10f0bb",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-007.png",
+      "expected": "502d4b5af05f9c9a765d464341bea8d68063c3bb2fee6039155352b1b312a905",
+      "actual": "502d4b5af05f9c9a765d464341bea8d68063c3bb2fee6039155352b1b312a905",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-013.png",
+      "expected": "3f3f960fb316e3051f065e2ead8109809c56c9d202c59a693bfbe5657e73519c",
+      "actual": "3f3f960fb316e3051f065e2ead8109809c56c9d202c59a693bfbe5657e73519c",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-012.png",
+      "expected": "734ebc349f30c58ac381c9a98ea54c755cada92cbe29d9e50af8ea588ac81f66",
+      "actual": "734ebc349f30c58ac381c9a98ea54c755cada92cbe29d9e50af8ea588ac81f66",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-006.png",
+      "expected": "46cd38659ea52a25c921edf352e852115f84e1355d7001c1d539cfac1f3b80a9",
+      "actual": "46cd38659ea52a25c921edf352e852115f84e1355d7001c1d539cfac1f3b80a9",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-017.txt",
+      "expected": "7bc435b45e4932ae3f1b4c7361f6ea8812f3c1f511bf277af573d70170cce8ec",
+      "actual": "7bc435b45e4932ae3f1b4c7361f6ea8812f3c1f511bf277af573d70170cce8ec",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-016.txt",
+      "expected": "76d31d9632817859c8c0fb02f938dd2a052ff2f8e7b0094447d7a2b47ba74905",
+      "actual": "76d31d9632817859c8c0fb02f938dd2a052ff2f8e7b0094447d7a2b47ba74905",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-014.txt",
+      "expected": "ec33f49097f4eaf095a9b4f8e1cfae3389147770abd738bdc7234ee576b08968",
+      "actual": "ec33f49097f4eaf095a9b4f8e1cfae3389147770abd738bdc7234ee576b08968",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-028.txt",
+      "expected": "edb3bd29328fe4c4c92326ecc7ba207fe84ed2d47836b0dbe6a3e7832b2ca24c",
+      "actual": "edb3bd29328fe4c4c92326ecc7ba207fe84ed2d47836b0dbe6a3e7832b2ca24c",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-029.txt",
+      "expected": "9084a3de9b12a3f742ae9ebd65ebeb3a2a2a5040b97a3aeccea8e05b4d216e66",
+      "actual": "9084a3de9b12a3f742ae9ebd65ebeb3a2a2a5040b97a3aeccea8e05b4d216e66",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-015.txt",
+      "expected": "058095a4bb4a3e9ce6f9e659a787d5cbdb735f61805771c829e68612e75d2a6d",
+      "actual": "058095a4bb4a3e9ce6f9e659a787d5cbdb735f61805771c829e68612e75d2a6d",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-011.txt",
+      "expected": "abbdac6abcd74151423d40609bf865aa5f7802e0a6da2491b8040e1a20d504ba",
+      "actual": "abbdac6abcd74151423d40609bf865aa5f7802e0a6da2491b8040e1a20d504ba",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-010.txt",
+      "expected": "3964d259d113117705470923a268cc3cf0f2eb90b8e8367c17c19759bf0fb771",
+      "actual": "3964d259d113117705470923a268cc3cf0f2eb90b8e8367c17c19759bf0fb771",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-006.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-012.txt",
+      "expected": "e8883a03194a4427220ea87423a5324a95056010494090ff9504c4ede8bef279",
+      "actual": "e8883a03194a4427220ea87423a5324a95056010494090ff9504c4ede8bef279",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-013.txt",
+      "expected": "e78513e9efefc7a72dfa726f11e5600d2e9a42a5346032a3ac8abae2581f180d",
+      "actual": "e78513e9efefc7a72dfa726f11e5600d2e9a42a5346032a3ac8abae2581f180d",
+      "matches": true
+    },
+    {
+      "path": "lf2026-pages/page-007.txt",
+      "expected": "4c1365202cb35a6c83a961bb30bc690046db0afdde7df4880e72f25aa2a39b4e",
+      "actual": "4c1365202cb35a6c83a961bb30bc690046db0afdde7df4880e72f25aa2a39b4e",
+      "matches": true
+    }
+  ],
+  "initial_candidate_receipt_still_addresses_original": true,
+  "initial_independent_checks_match_private_initial_results": true,
+  "initial_independent_preservation_matches_private_initial_results": true,
+  "initial_independent_sources_match_private_initial_results": true,
+  "initial_review_files": [
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/checks.json",
+      "sha256": "bb269786003e0eb7cc5bf80ddec29c67ad8251d4476879e16c2f69ce6e25a640",
+      "matches_repair_frozen_commit": true
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/preservation.json",
+      "sha256": "475294129ba0603087ae7e28c2b818b2287910976b06ca970f9f2dfe55f15c37",
+      "matches_repair_frozen_commit": true
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/review.md",
+      "sha256": "b48a11134798c5e2dd674f54b7f8ffa594f3f905ec61d1e96be64ee8151b398e",
+      "matches_repair_frozen_commit": true
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/sources.json",
+      "sha256": "7ceebc53d26bd90ed99f3fbb2631db0c42fffd2ee9abc01b96280e11bfd8cd2d",
+      "matches_repair_frozen_commit": true
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "base_commit": "1be072a09",
+  "existing_guides": [
+    {
+      "old_path": "skills/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "destination": "skills/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "before_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "current_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-company-accounts-and-reporting.md",
+      "destination": "skills/gibraltar/gi-company-accounts-and-reporting.md",
+      "before_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "current_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-company-formation.md",
+      "destination": "skills/gibraltar/gi-company-formation.md",
+      "before_sha256": "359f9762dce7a5d73b5beb9dfcffc51244a5f145be32cbb3ad1e0404f5c00711",
+      "current_sha256": "359f9762dce7a5d73b5beb9dfcffc51244a5f145be32cbb3ad1e0404f5c00711",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "destination": "skills/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "before_sha256": "e1240542c19a0c4f3cac8a0252f4f8d2e2571d6188b154a4d91e928f2f1be80d",
+      "current_sha256": "e1240542c19a0c4f3cac8a0252f4f8d2e2571d6188b154a4d91e928f2f1be80d",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-corporate-tax.md",
+      "destination": "skills/gibraltar/gi-corporate-tax.md",
+      "before_sha256": "56166f611c15fa93aa60868024b94fdaf0b82129eb1ffe24c81b3e3dc0c3475f",
+      "current_sha256": "56166f611c15fa93aa60868024b94fdaf0b82129eb1ffe24c81b3e3dc0c3475f",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-einvoice.md",
+      "destination": "skills/gibraltar/gi-einvoice.md",
+      "before_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "current_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-foreign-tax-relief.md",
+      "destination": "skills/gibraltar/gi-foreign-tax-relief.md",
+      "before_sha256": "d5427c1d432b62cd9eca6dfd2c7b2128e51d92f13eac053469feb8cb7f38df39",
+      "current_sha256": "d5427c1d432b62cd9eca6dfd2c7b2128e51d92f13eac053469feb8cb7f38df39",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-global-minimum-tax.md",
+      "destination": "skills/gibraltar/gi-global-minimum-tax.md",
+      "before_sha256": "c990bb86a134fbc3a20efb13f05f04cf7b3c8623f7e882c28dc835e990f39b26",
+      "current_sha256": "c990bb86a134fbc3a20efb13f05f04cf7b3c8623f7e882c28dc835e990f39b26",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-income-tax-assessment-appeals.md",
+      "destination": "skills/gibraltar/gi-income-tax-assessment-appeals.md",
+      "before_sha256": "6ac1976d6e7ed9748aee3eb8036aca4587d8d29737350e5f184d1e5a7ba11f17",
+      "current_sha256": "6ac1976d6e7ed9748aee3eb8036aca4587d8d29737350e5f184d1e5a7ba11f17",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-individual-income-tax.md",
+      "destination": "skills/gibraltar/gi-individual-income-tax.md",
+      "before_sha256": "5039468a5ba8c3bf6baf5b752174fe81099449fd565d2c017897fb26cc6a197c",
+      "current_sha256": "5039468a5ba8c3bf6baf5b752174fe81099449fd565d2c017897fb26cc6a197c",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-payroll-social-insurance.md",
+      "destination": "skills/gibraltar/gi-payroll-social-insurance.md",
+      "before_sha256": "801ccb9427aa93f38ce6faad5033ca223353e13932f629ca17c3cee51c4edad7",
+      "current_sha256": "801ccb9427aa93f38ce6faad5033ca223353e13932f629ca17c3cee51c4edad7",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-property-stamp-duty.md",
+      "destination": "skills/gibraltar/gi-property-stamp-duty.md",
+      "before_sha256": "0dedd5f962df8896a647cc8f5d41cdbf49843aef915ee3741723198a65ca7860",
+      "current_sha256": "0dedd5f962df8896a647cc8f5d41cdbf49843aef915ee3741723198a65ca7860",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-residential-property-disposals.md",
+      "destination": "skills/gibraltar/gi-residential-property-disposals.md",
+      "before_sha256": "a38b5abe9eb3a422d248b601a9296e035cb919c2029568cfa6cb9e7cfa936331",
+      "current_sha256": "a38b5abe9eb3a422d248b601a9296e035cb919c2029568cfa6cb9e7cfa936331",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-spain-tax-residence.md",
+      "destination": "skills/gibraltar/gi-spain-tax-residence.md",
+      "before_sha256": "7529755baf66cd852d8eb6950d19e871ce82db990e708d9a372f2921cf43eaa2",
+      "current_sha256": "7529755baf66cd852d8eb6950d19e871ce82db990e708d9a372f2921cf43eaa2",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "destination": "skills/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "before_sha256": "14f7a1ca3475e77aa0e30db8577da4ea596387de37b1f66edd90307c5d543bb5",
+      "current_sha256": "14f7a1ca3475e77aa0e30db8577da4ea596387de37b1f66edd90307c5d543bb5",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-transaction-tax-transition.md",
+      "destination": "skills/gibraltar/gi-transaction-tax-transition.md",
+      "before_sha256": "714ebf8daa59de87450022bf5cc333ac859af1099360be5c56dc4084ea5966ac",
+      "current_sha256": "714ebf8daa59de87450022bf5cc333ac859af1099360be5c56dc4084ea5966ac",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "destination": "skills/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "before_sha256": "c9a674bf071f66317e3a3ea3c30472c05969fc952cb05a3f8324fcf562f66998",
+      "current_sha256": "c9a674bf071f66317e3a3ea3c30472c05969fc952cb05a3f8324fcf562f66998",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    },
+    {
+      "old_path": "skills/gibraltar/gi-uk-investment-income-treaty.md",
+      "destination": "skills/gibraltar/gi-uk-investment-income-treaty.md",
+      "before_sha256": "0236703bafd5c742fe11e0177da62b550f578d29a03006a5ef904136ed897399",
+      "current_sha256": "0236703bafd5c742fe11e0177da62b550f578d29a03006a5ef904136ed897399",
+      "status": "All original topics, examples, attribution, metadata and CTA unchanged byte for byte"
+    }
+  ],
+  "new_job": {
+    "path": "skills/gibraltar/gi-category-2-income-tax.md",
+    "job": "category-2-individual",
+    "origin": "No inherited content moved. Ordinary individual Guide already excludes Category 2; exclusion and all topics remain unchanged. README adds a route only."
+  },
+  "readme_changes": [
+    "Add dated candidate pointer and gap disclosure",
+    "Add Category 2 link and job to IT-IND routing row",
+    "Update two file-count statements from eighteen to nineteen; counts are not coverage claims"
+  ],
+  "all_seven_partial_values_unchanged": true
+}

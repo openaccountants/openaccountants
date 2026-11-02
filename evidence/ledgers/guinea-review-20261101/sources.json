@@ -1,0 +1,60 @@
+{
+  "read_on": "2026-11-01",
+  "independently_fetched": [
+    {
+      "url": "https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf",
+      "file": "law.pdf",
+      "bytes": 10628785,
+      "status": 200,
+      "sha256": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b"
+    },
+    {
+      "url": "https://sn.ambaguinee.org/?p=119469",
+      "file": "embassy.html",
+      "bytes": 119354,
+      "status": 200,
+      "sha256": "ceb614e4b5715c39582fbf737ad6d0e9b3189b75c921b033255f2d6880cc254c"
+    },
+    {
+      "url": "https://dgb.gov.gn/2026-lf/",
+      "file": "dgb-2026.html",
+      "bytes": 103590,
+      "status": 200,
+      "sha256": "66224278fdb924e1f43849aed0f4837bd4432bc2e734b1f7a2fa64b8f1ae6500"
+    },
+    {
+      "url": "https://dgb.gov.gn/projets-de-lois-de-finances/",
+      "file": "projects.html",
+      "bytes": 107082,
+      "status": 200,
+      "sha256": "305e9c82099ba0ec4254c35adbb00910920cd8db57fe8603f7032ecee814f852"
+    },
+    {
+      "url": "https://assembleenationale.gov.gn/plfr-2026-intercom/",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "web_open_results": {
+    "law_pdf": "too large in web tool; independent direct HTTP fetch succeeded",
+    "dgb_2026": "opened and read link to LFI",
+    "projects": "opened and read rectifying project listing",
+    "assembly": "direct HTTP 403; web tool opened and read 29 October examination article",
+    "embassy": "web tool inaccessible; independent direct HTTP fetch succeeded and article read"
+  },
+  "private_source_directory": "sibling review-sources, outside Git",
+  "independently_rendered_and_visually_read_pdf_pages": [
+    19,
+    20,
+    21,
+    24,
+    27,
+    28
+  ],
+  "neighbouring_law_read_through_private_ocr": [
+    19,
+    22,
+    23,
+    24
+  ],
+  "full_source_captures_committed": false
+}

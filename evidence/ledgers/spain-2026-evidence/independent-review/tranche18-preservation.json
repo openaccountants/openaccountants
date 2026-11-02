@@ -1,0 +1,24 @@
+{
+  "current_Guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "published_baseline_sha256": "dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c",
+  "exact_changed_native_LF": [
+    4,
+    1261
+  ],
+  "delta": [
+    [
+      4,
+      "version: 2.3",
+      "version: 2.4"
+    ],
+    [
+      1261,
+      "Birth/adoption/foster relief requires descendant-minimum entitlement. For the second/third-and-later amount, the preceding children counted for ordering must have been held for **more than 183 days**. Exclude a child adopted during the year from the foster route; use the birth/adoption route where entitled. Share the applicable amount equally between entitled declaring taxpayers. The birth/adoption amount continues for two following years; the fostering amount follows actual qualifying days. Multiple adoption requires at least two adoptions on the same date. The event credits a/b/c are compatible with one another and d under the express statutory conditions ([art. 4.Uno.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4)).",
+      "Birth/adoption/foster relief requires descendant-minimum entitlement. For the second/third-and-later fostering or delegated-guardianship amount, the preceding children counted for ordering must have been held for **more than 183 days**. Exclude a child adopted during the year from the foster route; use the birth/adoption route where entitled. Share the applicable amount equally between entitled declaring taxpayers. The birth/adoption amount continues for two following years; the fostering amount follows actual qualifying days. Multiple adoption requires at least two adoptions on the same date. The event credits a/b/c are compatible with one another and d under the express statutory conditions ([art. 4.Uno.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4))."
+    ]
+  ],
+  "all_other_bytes_in_lines_exact": true,
+  "original_two_oa_exact": true,
+  "ordered_URLs_exact": true,
+  "protected_metadata_byline_CTA": "all identical except authorised versionLF4; body delta1261 is sourced S-L25 scope correction"
+}

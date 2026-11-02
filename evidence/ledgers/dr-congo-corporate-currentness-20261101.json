@@ -1,0 +1,18 @@
+{
+  "initial_expansion_candidate": "36f2b3a8211e9dc0169dc24a8c1a5c36e279b871",
+  "old_guide_sha256": "15a79b774b21c595712aba1d1b4539f5f5548550cb360da1c618c909c130fd9f",
+  "new_guide_sha256": "c167b192e579a985cd92190883ad94c4b48117a71d66182ed355f45c3860789b",
+  "change": "Explicit currentness hold for unresolved original2025carryforward,2additional ledger rows; no source-rate or oa-check arithmetic change",
+  "new_version": "1.1",
+  "ledger_rows": 41,
+  "current_2026_review_acceptance": false,
+  "additional_source": {
+    "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf",
+    "final_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf",
+    "bytes": 54130408,
+    "sha256": "f5550e6eae855c868b8e449f78f3d5b4e337df543dcff3dbf3d5fa9428066d33",
+    "fetched_on": "2026-11-01",
+    "read_scope": "Fetch only; pending read of carried article9"
+  },
+  "read_scope": "Actual2025rectifyingart.9 PDF12\u201313read,PDF12visually; not whole2025actread"
+}

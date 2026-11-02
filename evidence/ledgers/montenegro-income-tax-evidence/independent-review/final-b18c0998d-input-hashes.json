@@ -1,0 +1,331 @@
+{
+  "commit": "b18c0998da08c65eeb459d22d24dbce6f0ef146a",
+  "working_tree_clean": true,
+  "files": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/OWNERS.md",
+      "sha256": "e118034a7a7af2d5021c522aecb4fc33e57fcfa3617e1fca397af216c0323c5e",
+      "bytes": 31007
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/docs/skill-template.md",
+      "sha256": "c27d84593170832a55ec01332e72f2b8c08e7cfc17c0d911c359d954b87f8dbc",
+      "bytes": 18000
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "sha256": "d17201d9c8b36300c4641718df0672f37b4fc2537a576691e75080ba70718893",
+      "bytes": 12832
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/classification-boundaries.json",
+      "sha256": "47a72dff89b007eb6e249dcdb4fb2a06caf2686639277a2ac2e2e7301b588426",
+      "bytes": 1699
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-classification-8a3ac55c8.json",
+      "sha256": "1a34f25df110ac093d8f571094bcb48d921b496127635bf823ffaeefa9814f8a",
+      "bytes": 5052
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-findings-8a3ac55c8.json",
+      "sha256": "d4eebcd3f52415f0845b2e2d55e7eeb40525553b21b5deb4b1dabcaa3026ab06",
+      "bytes": 5671
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-ledger-dispositions-8a3ac55c8.json",
+      "sha256": "6d742ca6b2c85808b482bd82e7c013dc7bb0b2ef502c0edc7699310008e994ba",
+      "bytes": 394418
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-preservation-8a3ac55c8.json",
+      "sha256": "61078bdebea1ba932cb87562ed258117373bd26aca168d7605f8226fd2dd2c47",
+      "bytes": 4135
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-recomputations-8a3ac55c8.json",
+      "sha256": "26983f83ac4dbd7fa6293524e42b56c56e9231f416e3bafc3ce80830e74e26c9",
+      "bytes": 32241
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-report-8a3ac55c8.md",
+      "sha256": "d2f91b06f8c82a82b4088e9b024dea1c853b358a1d3f5357f513553551813cd9",
+      "bytes": 8757
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-report-formatting-correction.json",
+      "sha256": "7a0c77ca033004a2bed82670bc111496a5650fd054eee3b63b696d4c19e66863",
+      "bytes": 573
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-reviewed-input-hashes-8a3ac55c8.json",
+      "sha256": "08936cddabe3f63f7b59cdb3db45d94d165a1afee4c0854ccde5f5ce35f1c39d",
+      "bytes": 18464
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-source-contexts-8a3ac55c8.json",
+      "sha256": "97d119877d9b2912e91e302abfdca351458a1606d9b9988cecbf6e0969f9ed82",
+      "bytes": 84877
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/independent-review/independent-source-integrity-8a3ac55c8.json",
+      "sha256": "13d58d2faff0e59ba0a0ac2c67d67b461f0235e4e57d7e6989e0af32b220e6ce",
+      "bytes": 11220
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/old-topic-destinations.json",
+      "sha256": "6cbe101b2b8b8d4123d3045084ad183da968f7f18582aa76a1e14dfdbef73ab1",
+      "bytes": 142708
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/README.md",
+      "sha256": "35a2bcaac6fabef78caf669cf9ed3ee17e7d00d1dc97979b97309bb4f743d085",
+      "bytes": 4579
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/manifest.json",
+      "sha256": "b1fd32579aa4198bbccaffdba8b5b28f1a363c2dc0230403cd22db9be6834c72",
+      "bytes": 1922
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/me-company-formation.md",
+      "sha256": "f5cf7b7a9d09e268ff2c784dd8c0aef0c77fe21f56dcd91558fcb59cf599ec4d",
+      "bytes": 16231
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/me-corporate-income-tax.md",
+      "sha256": "1e5072957005d7f386e9220a2b6b1f6ab8427e00e8dd10e0ff7d2c1ceab6b691",
+      "bytes": 36601
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/me-cross-border.md",
+      "sha256": "7dbfefae9dd5ea088d870fb4bf730d43330f415f142f33c82d7aedecc0574bcb",
+      "bytes": 24761
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/me-tax-overview.md",
+      "sha256": "bbb50be667b396517fece294890798d55d85e99449b4530e99eff894a136d872",
+      "bytes": 12572
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/me-transfer-pricing.md",
+      "sha256": "dab1720c22b9ec24c23a69bd39e7f16a9a9435aeee9785b0740a909380fc0aa5",
+      "bytes": 34041
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/montenegro-income-tax.md",
+      "sha256": "0570e8666c926441aca1ea041e02b0f06b6f2b909b4d2721c58f1b1fd934df66",
+      "bytes": 46411
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/montenegro-payroll.md",
+      "sha256": "2b230e54c4740e6783edeaa31aabd6b78c64f9e39f5f4f75cc84e3a9a0c77611",
+      "bytes": 46132
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/montenegro-social-contributions.md",
+      "sha256": "3f2c8feadaa753ad3c323a301f2bdf4c34adaf36e2e48b5bd753ff021b467b55",
+      "bytes": 33933
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/montenegro-tax-optimization.md",
+      "sha256": "e2d0256ed3796f6979dd438b1697c73407d827ecbb8b19dddabc5223c84ea559",
+      "bytes": 14472
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/predecessor/montenegro-vat.md",
+      "sha256": "5754ad6b79e00569b027fdf8b509b230200f9f65e91753dd349cfea69d61b4a0",
+      "bytes": 39390
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/repair-response.md",
+      "sha256": "3042dd766d18f5394da4cea389ccd5cb01174d61dbcce0fe3ed1b3289d57e83a",
+      "bytes": 2624
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "sha256": "92fb843155577fe564af275f76b6d728e3d0f708d137c79f1b3bffcbed81bd48",
+      "bytes": 8345
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/administration-amendment104-2026.pdf",
+      "sha256": "321e9ee4fe8d6ad3f036bb274a826eac40500bf6857e337fbe483212f530f136",
+      "bytes": 241669
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/administration-amendment104-2026.txt",
+      "sha256": "d0b2073d78f3cb72f746de9bbbf346b5a2b2660d3d71a6278eafed0a6ddf3d2d",
+      "bytes": 74076
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/administration-law-pre104-2026.docx",
+      "sha256": "cec34ce039466010c4bb9efe727282a7065433b123afb6ad443bac49f60b173a",
+      "bytes": 68663
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/administration-law-pre104-2026.txt",
+      "sha256": "216edd36b71095943ec532383607267d43738cfdc297868e330438c94572779d",
+      "bytes": 124155
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/annual-return-amendment103-2025.pdf",
+      "sha256": "819bd44fe67918b4e83f5dbffddf7b243b2bad0fb542ef20cc3594334c477a2a",
+      "bytes": 660899
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/annual-return-amendment103-2025.txt",
+      "sha256": "87f163682aedcf2d9fd4ea4a5612c030f4968c887cb04d62ff4478c436df9e6e",
+      "bytes": 86574
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/annual-return-rule-through103-2025.pdf",
+      "sha256": "0283420a1f9c9e7b7f87b6184487a525c873470a3af4b866840faf4ee6bfc3dc",
+      "bytes": 19888
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/annual-return-rule-through103-2025.txt",
+      "sha256": "766e09ffd5402b55a778c0214c0a3d17a0015a59f931cb42d00a253772f0169d",
+      "bytes": 3341
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/contribution-law-through160-2025.docx",
+      "sha256": "a8ef9ee08c70490169c6bdcce7e984019afa37e4421131a52ab2aba8ef9a4e03",
+      "bytes": 26153
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/contribution-law-through160-2025.txt",
+      "sha256": "a07942f0a049028852790a8718f819eb25a0fe5675ebc5847d022f079464fa6b",
+      "bytes": 31243
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/interest-decision-20260724.pdf",
+      "sha256": "d21388aca1a63d5bbf901e3bce545ae244ecae187ffdc0269cef7c14000502ac",
+      "bytes": 180894
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/interest-decision-20260724.txt",
+      "sha256": "a1c3646c7d908afa5b88c8958eb3a415b0763bf863b7b9590ccd4ca930f1bd00",
+      "bytes": 1245
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/local-financing-law-through149-2025.pdf",
+      "sha256": "3dab54d86310625a1217cdd3149ad9cab42662bc0ec3c986844f78c3d29b70fb",
+      "bytes": 71311
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/local-financing-law-through149-2025.txt",
+      "sha256": "0a64ca377efdab64a6a3f469e961f5e79dd9822cef29e1f2d03ecde60ca08e0d",
+      "bytes": 43158
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/manifest.json",
+      "sha256": "32d116ffbd38d2344fd8151f70ecb76ef6fd79420b009aca4a185f0d6e86fa79",
+      "bytes": 8904
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pausal-deadline-notice2026.html",
+      "sha256": "a0f8434cde8255f5095765e038f87c5fd31ddd5f0bd078ecf28be97fdb688bbc",
+      "bytes": 541067
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pausal-deadline-notice2026.txt",
+      "sha256": "193230411dfc296b1df91f9a50d3bfe739c3bcbcc0a8a900fc497c5c66365beb",
+      "bytes": 2378
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pausal-rule-through118-2024.pdf",
+      "sha256": "ef163bda3745817b5e10802816ae50a351698ada5cfb1e602c08220be2be2a22",
+      "bytes": 60775
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pausal-rule-through118-2024.txt",
+      "sha256": "30b630761e905453e51238edae757e87cd99bb078513f0bcd8fa9c4c9d9109cf",
+      "bytes": 14571
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment160-2025.pdf",
+      "sha256": "8b6e5ebd4fc57c1ce06b0dc11f99711106c712a48b0c4782d47bee84751ea353",
+      "bytes": 144769
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment160-2025.txt",
+      "sha256": "cac1d78ae7c308c48b0a7ba16fd4f5c9c798735dd0e6abdf01fb02e47f0f7e3f",
+      "bytes": 12671
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment70-2026-record.html",
+      "sha256": "ee2a0a1b9a9ba1234396411f5528dd89c278eead50f57ccd2e0993b093092331",
+      "bytes": 264275
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment70-2026-record.txt",
+      "sha256": "a5b00f80e72b830e10d56416667acbc497110b5ee00348828f98e35708690fa9",
+      "bytes": 2464
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment70-2026.pdf",
+      "sha256": "29d66a55c3de2dc38bb65e653d594938613d06a616d5249f25ce2fddcbf5ea6a",
+      "bytes": 92491
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-amendment70-2026.txt",
+      "sha256": "28f1334a4cae8ca398d43aaa12155e0087796a4b8bc0cf23152276c54dfa3c5e",
+      "bytes": 1985
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-law-through160-2025.pdf",
+      "sha256": "8707ed33811dc0bb68037602015d255b01f9cf8557d0795c0531095ce25a4dcf",
+      "bytes": 333668
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/pit-law-through160-2025.txt",
+      "sha256": "e9b03d1a36cd6e951d3b03c1260cede52cab0e1f1b8e138343fdcd2dd588c26e",
+      "bytes": 87615
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/seasonal-tax-informator-2026.pdf",
+      "sha256": "c1bb28e069e60d00dc34121ed66e563728e3a36585bbaa3381b463731e18e1b0",
+      "bytes": 1118187
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/seasonal-tax-informator-2026.txt",
+      "sha256": "5502cc86c7481dab5b69f2e5aeea0aa46e108c5b13ab2a857d8b397efea49635",
+      "bytes": 34865
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/vat-law-through12-2026.pdf",
+      "sha256": "148d12b7b1f3437d1944840c50d9dc413c5c1502101a900c809b806953137a09",
+      "bytes": 411337
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/sources/vat-law-through12-2026.txt",
+      "sha256": "5343b7d4a2c39c8cea98aa89f86d125e6cd7542dbccd28ad422fef4515d22262",
+      "bytes": 134538
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax-evidence/validation/candidate.json",
+      "sha256": "bdd50153e1b8a1bbc252d987ebc5681ef12119ee9643ba5bb13c137502203a98",
+      "bytes": 352
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax.md",
+      "sha256": "aab9847763da6601057ead985974b9d01b78fb845d5500dd304d33e7541489cd",
+      "bytes": 329612
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/ledgers/montenegro-income-tax.writer.json",
+      "sha256": "c085a52c1164d3eb14efce9b9c5b3f96eb8bbd2a60cfd20849427c8bf478723d",
+      "bytes": 440524
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/skills/international/montenegro/README.md",
+      "sha256": "4db2ce721e358f00db08d96988c751df50563fec7eb2bc8e97cbc13b3eadf806",
+      "bytes": 5656
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/repository/skills/international/montenegro/montenegro-income-tax.md",
+      "sha256": "b5b37cac312c11cb1c154019c036c22e4dfe3d253aae32e2b4f833ff3b0b4c91",
+      "bytes": 57124
+    }
+  ]
+}

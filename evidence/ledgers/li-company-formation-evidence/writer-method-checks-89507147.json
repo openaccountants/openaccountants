@@ -1,0 +1,153 @@
+{
+  "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "controls": [
+    {
+      "name": "GmbH three contributions total",
+      "actual": "10000",
+      "expected": "10000",
+      "basis": "PGR122/391; cash evidence assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "GmbH no capital shortfall",
+      "actual": "0",
+      "expected": "0",
+      "basis": "PGR122",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "AG ordinary quarter per-share funding screen",
+      "actual": "25000.00",
+      "expected": "25000",
+      "basis": "PGR284; uniform shares assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "AG overall minimum controls low fractional sum",
+      "actual": "50000",
+      "expected": "50000",
+      "basis": "PGR122/284",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "AG higher fractional total controls larger subscription",
+      "actual": "100000.00",
+      "expected": "100000",
+      "basis": "PGR122/284; no higher articles requirement assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Minimum GmbH member50 qualifies amount screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR391; no currency transformation assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Member contribution75 not a multiple50",
+      "actual": "25",
+      "expected": "25",
+      "basis": "PGR391(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Member contribution100 multiple50",
+      "actual": "0",
+      "expected": "0",
+      "basis": "PGR391(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Exactly3shareholders fits simplified count",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR390(5); all other conditions separate",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Four shareholders fails simplified count",
+      "actual": "False",
+      "expected": "False",
+      "basis": "PGR390(5)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Micro exact all three thresholds",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(1a)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Micro two exact and one excessive still meets numerical screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(1a); two-of-three, not all three",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Micro two just exceeded fails",
+      "actual": "False",
+      "expected": "False",
+      "basis": "PGR1064(1a)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Small equality screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(1)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Medium ceiling equality screen",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(2); small limits also exceeded",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Large two medium limits just exceeded",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Two-period condition cannot be inferred from current year alone",
+      "actual": "False",
+      "expected": "False",
+      "basis": "PGR1064(4); first-application exception distinct",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Stable two-period condition",
+      "actual": "True",
+      "expected": "True",
+      "basis": "PGR1064(4); legal classification and exceptions separate",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Size alone does not prove actual review waiver",
+      "actual": "False",
+      "expected": "False",
+      "basis": "PGR1058a; example missing unanimous decision and declaration/registration",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    }
+  ],
+  "preservation": {
+    "li-company-formation": {
+      "guide_sha256": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+      "old_calculation_blocks_retained_exact": 2,
+      "protected_metadata_CTA_unchanged": true,
+      "relative_markdown_links_exist": true
+    },
+    "li-tax-overview": {
+      "guide_sha256": "cceeca6ee4cdb2ba6f5164da3836efebf72430b4f6046b8b059acd31449e4219",
+      "old_calculation_blocks_retained_exact": 0,
+      "protected_metadata_CTA_unchanged": true,
+      "relative_markdown_links_exist": true
+    }
+  },
+  "remaining": "Actual route/waiver/permissions/nonCHF/special-entity facts and whole-pack independent source/legal review, not established by these numerical screens."
+}

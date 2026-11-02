@@ -1,0 +1,6 @@
+{
+  "scope": "Independent control harness, no Guide/source defect silently repaired.",
+  "initial": "A redundant Ceuta equality control was replaced by a source-number assertion. Initial expectation4070.02 against ordinary end rounding failed:4070.03. A second component-rounding expectation also failed4070.03.",
+  "row_start_check": "First seal harness wrongly required multiline oa wordings in a single named start line and stopped at0622. Only0622/0635 are complete fenced blocks; checking exact multiline text beginning at named LF resolves this without changing ledger or Guide.",
+  "resolved": "Actual retained S26LF162–194 prints4008.78+61.24=4070.02; first exact component ordinarily rounds4008.79, so both stage alternatives total4070.03. Final controls explicitly separate printed addends from arithmetic. Guide copies no disputed fixture amounts and reserves final rounding. No new universal rounding rule or source correction adopted."
+}

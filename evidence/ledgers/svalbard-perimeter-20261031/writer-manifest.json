@@ -1,0 +1,108 @@
+{
+  "inputs": [
+    {
+      "path": "skills/svalbard/README.md",
+      "sha256": "f69c0aeb7658ea25bb2b1de86c6413eafd9f7a250492622da8dbdf75f7fe5c49"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "sha256": "2a548f1eb056eef5d04e1a18e1b3f968c2a85ce124ca16ac0e922db927d2df48"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-company-income-tax.md",
+      "sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-income-tax.md",
+      "sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-payroll-tax.md",
+      "sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-project-group-payroll.md",
+      "sha256": "2e0854e642cd7dd89da03353da5fcbfc4099f3178478977ff5be87f1c137ef31"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-social-contributions.md",
+      "sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-tax-residence.md",
+      "sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7"
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "sha256": "d30213477809875245d0fc31743bd026396369df510bce840eef1a7746c4c8d7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/ledger.md",
+      "sha256": "c371cd06257c2eb189e012fe93594cc8d971e7abe1a5d59d8e062a8b5b07a374"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/old-topics-destinations.json",
+      "sha256": "54e1ede8c2ea3b75aebffce633539939b3223e4fd6ceff50b3e90132f4edf9f9"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/predecessor-README.md",
+      "sha256": "96b25a2bca2c94ce5449e6423d3819e093f87416d4086e6b2cae523c2787a418"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/rows.json",
+      "sha256": "d1af0e1f35ec47c425706bb976b5c6c6692dcf2fd769afb34f4895c0bf68c5c7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/source-receipts.json",
+      "sha256": "4df84901278a266f1ee75c4b5bda25b3c3f4193b6ccc54fc614f25bd06592f0d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz",
+      "sha256": "ad5054e08c86d4ca598a256e87c81c8b7acd55748812d574473f51e6417f61ef"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.txt",
+      "sha256": "8cd26aadd531d7a0122ff44560503cc0fd1507f2283273658525068333e80ccd"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz",
+      "sha256": "ab17e07d4bd554c1eb5730a1700dc343f27f2eeee69b80d157ac36a4197050c0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.txt",
+      "sha256": "cc7190a35242986dfb306c1d3ce5c08631f16ddf99be9a41525a841e1e86790c"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz",
+      "sha256": "f60b927a1db433a9e57f2ab5cded62f4fb00fe679d9c3fcaa51ed230cd3d89f9"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.txt",
+      "sha256": "49c395ea03bb727fa4e9b9c989ff0e66578355d1aadd94bdcc353a04fb713ef7"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz",
+      "sha256": "05998170276ee68ac47eaffd56fa9592ab181dbea9fbec54ff814460d2754713"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.txt",
+      "sha256": "ce925bc43fcc3f0c3092e26867c5a012590d558189c6975b55ac66195d051c3a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz",
+      "sha256": "2c9a5eb5df4ec02c8e1f187af2727c936367aad7bec79c5f4c91f5961a1711f1"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.txt",
+      "sha256": "b558b19f0e48a8fca22576d8085cb7b5c33012b8d9e573bfb227a5ff35d90524"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/capture-storage.json",
+      "sha256": "a8575ba5366249fd49e69b55ad0b5b00a07cbc45047d3094944c5fefa729873e"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "fo-country-by-country-reporting-001",
+    "lf": 31,
+    "section": "## Who this applies to",
+    "wording": "Tax Act §§118b–g govern country-by-country reporting (CbCR). A multinational group operates through constituent entities in more than one tax jurisdiction. The perimeter includes qualifying permanent establishments and entities excluded from consolidation solely for size or materiality. Determine the ultimate parent using the consolidation/control definition, not the group's preferred reporting company. [§118b][law]",
+    "sources": "[tax §118 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF884–899; exact anchor LF884: “§ 118 b. Í hesi grein, umframt í §§ 118 c-g, verða niðanfyri standandi hugtøk brúkt og skilt”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-002",
+    "lf": 33,
+    "section": "## Who this applies to",
+    "wording": "This Guide prepares an obligation assessment and reporting workpaper. It does not certify a particular exchange relationship, submit a report, determine transfer prices or calculate minimum tax.",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  },
+  {
+    "id": "fo-country-by-country-reporting-003",
+    "lf": 39,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Faroese ultimate-parent threshold | Consolidated revenue at least DKK 5.6 billion in the financial year preceding the reporting year | 2026; [Tax Act §118c(1)][law] |",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “5,6 mia. kr. roknskaparárið frammanundan inntøkuárinum, sum tað skal fráboðast um.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-004",
+    "lf": 40,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Report deadline | Twelve months after the reporting year's last day | 2026; [Tax Act §118c(2)][law] |",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF901: “12 mánaðir eftir síðsta dag í tí inntøkuári, sum hon skal greiða frá.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-005",
+    "lf": 41,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Notification | Before the reporting income year ends | 2026; [Tax Act §118f][law]; [Regulation §2][regulation] |",
+    "sources": "[tax §118 f](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF915–916; exact anchor LF915: “§ 118 f. Tað ultimativa móðurfelagið, sbrt. § 118 c, stk. 1, ella eitt føroyskt umboðsmóðurfelag, sbrt. §118”; [regulation §2](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF304–305; exact anchor LF304: “§ 2. Fráboðan eftir §§ 1 og 3 kann latast talgilt sambært ávísing frá skattamyndugleikanum. Fráboðanin skal latast”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-006",
+    "lf": 43,
+    "section": "## Rates, bands and thresholds",
+    "wording": "[Tax Act][law]; [Regulation 151/2019][regulation]. Equality meets the revenue test. For a 2026 calendar reporting year, examine 2025 consolidated revenue; a 2026 revenue figure alone does not answer that test. TAKS directs foreign-currency threshold questions to OECD currency-fluctuation guidance; no spot-rate conversion method is established here. [TAKS][taks]",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “§ 118 c. 1) Ultimativa móðurfelagið í einum fleirtjóða samtaki, sum er skattskyldugt í Føroyum, skal handa TAKS”; TAKS actual webLF14–16; original quote “Markið á 5,6 milliardir krónur skal tulkast sambært vegleiðing hjá OECD um gjaldoyrasveiggj.” https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-007",
+    "lf": 47,
+    "section": "## The base",
+    "wording": "1. Establish the group perimeter, parent residence, consolidation rules, reporting year and prior-year consolidated revenue.\n2. If the Faroese-taxable ultimate parent meets §118c, record its reporting obligation.\n3. For a Faroese constituent entity that is not the ultimate parent, apply §118d: local filing can arise where the parent has no home-country reporting duty, the required automatic CbCR exchange arrangement is absent despite an international tax-information agreement, or a systemic failure has been notified. Preserve evidence of the actual trigger; a general tax treaty is insufficient.\n4. Evaluate surrogate relief under §118e. The surrogate jurisdiction must require reporting, have the prescribed exchange arrangements, have no systemic failure or no notification of that failure to the constituent, and receive the required surrogate notification; the Faroese constituent must also notify TAKS. The surrogate must actually file the group report in its home jurisdiction. Keep filing, exchange and notification evidence together.\n5. Where multiple Faroese entities face local filing, document the §118d(2) selection and notification of the reporting entity. The statutory wording refers to one or two triggering conditions; if all three arise, obtain an interpretation rather than silently extending it.\n6. Maintain separate report and notification tasks. Foreign reporting does not by itself discharge the Faroese notification obligation. [§§118c–f][law]",
+    "sources": "[tax §118 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF884–899; exact anchor LF884: “§ 118 b. Í hesi grein, umframt í §§ 118 c-g, verða niðanfyri standandi hugtøk brúkt og skilt”; [tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “§ 118 c. 1) Ultimativa móðurfelagið í einum fleirtjóða samtaki, sum er skattskyldugt í Føroyum, skal handa TAKS”; [tax §118 d](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF902–908; exact anchor LF902: “§ 118 d. 1) Eitt samtaksfelag, sum ikki er tað ultimativa móðurfelagið, skal lata land fyri land frágreiðingina”; [tax §118 e](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF909–914; exact anchor LF909: “§ 118 e. Eitt samtaksfelag skal ikki handa skattamyndugleikunum eina land fyri land frágreiðing, um frágreiðingin, vegna fleirtjóða”; [tax §118 f](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF915–916; exact anchor LF915: “§ 118 f. Tað ultimativa móðurfelagið, sbrt. § 118 c, stk. 1, ella eitt føroyskt umboðsmóðurfelag, sbrt. §118”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-008",
+    "lf": 54,
+    "section": "## The base",
+    "wording": "**Local-filing threshold boundary:** §118c expressly states the prior-year revenue threshold; §118d does not repeat it. TAKS describes the regime using the group threshold. For a foreign-parent case below or near that threshold, or a mismatch between home-country and Faroese thresholds, obtain a documented application of the rules rather than infer an unconditional local-filing exemption. [Tax Act][law]; [TAKS][taks]",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “§ 118 c. 1) Ultimativa móðurfelagið í einum fleirtjóða samtaki, sum er skattskyldugt í Føroyum, skal handa TAKS”; TAKS actual webLF14–16; original quote “Markið á 5,6 milliardir krónur skal tulkast sambært vegleiðing hjá OECD um gjaldoyrasveiggj.” https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding; [tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “§ 118 c. 1) Ultimativa móðurfelagið í einum fleirtjóða samtaki, sum er skattskyldugt í Føroyum, skal handa TAKS”; [tax §118 d](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF902–908; exact anchor LF902: “§ 118 d. 1) Eitt samtaksfelag, sum ikki er tað ultimativa móðurfelagið, skal lata land fyri land frágreiðingina”; TAKS webLF14, “minst 5,6 milliardir krónur”; difference not silently resolved.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-009",
+    "lf": 58,
+    "section": "### What to compile",
+    "wording": "Regulation §4 and its annex require three tables: jurisdiction totals, constituent entities/activities, and explanatory information. Keep related-party and independent-party revenue separate. The revenue definition excludes intra-group payments treated as dividends in the payer's jurisdiction. Cash tax includes withholding paid by others on the entity's income; current-year accrued tax excludes deferred tax and provisions for uncertain tax liabilities. These are distinct measures. [Regulation §4(2)][regulation]",
+    "sources": "[regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF308: “talvu 1-3, sbr. skjal 1.”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF311: “Umsetningurin fevnir ikki um gjøld frá øðrum samtakseindum, sum verða roknað sum útlutanir í gjaldarans skattarættardømi.”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF313: “Goldin skattur fevnir um kelduskatt, sum aðrar eindir hava goldið, bæði atknýttar og sjálvstøðugar fyritøkur, í sambandi við”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF314: “ikki um útsettan skatt ella burturleggingar til óvissar skattaskyldur.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-010",
+    "lf": 60,
+    "section": "### What to compile",
+    "wording": "Use consistent employee/FTE methodology across years and entities. Tangible assets exclude cash and financial assets. Allocate PE assets to the PE jurisdiction; the regulation separately addresses PE capital and retained earnings. Do not mechanically allocate every PE field in the same way. [§4(2)(6)–(9)][regulation]",
+    "sources": "[regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF317: “fulltíðarstørv hjá samtakseindum, sum skattliga eru heimahoyrandi í viðkomandi skattarættardømi. Talið av starvsfólkum kann antin verða grundað á”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF318: “tøkan pening ella fíggjarognir.”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF315: “Góðtikið fæ: Samlaða góðtikna fæið fyri allar samtakseindir, sum eru skattliga heimahoyrandi í viðkomandi skattarættardømi. Hvat føstum rakstratstøðum”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF316: “Samanspardur vinningur: Samlaði samanspardi vinningurin við ársenda hjá øllum samtakseindunum, sum skattliga eru heimahoyrandi í viðkomandi skattarættardømi. Hvat”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-011",
+    "lf": 62,
+    "section": "### What to compile",
+    "wording": "The workpaper should reconcile each table row to source accounts and tax records, explain currency and perimeter choices, and identify every adjustment. Do not equate the sum of jurisdiction revenue rows with consolidated revenue without explaining consolidation eliminations.",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  },
+  {
+    "id": "fo-country-by-country-reporting-012",
+    "lf": 66,
+    "section": "## Deadlines and filing",
+    "wording": "For a calendar 2026 report, the statutory twelve-month deadline is **31 December 2027**. The notification belongs to **2026**, before year-end; do not delay it until the report deadline. [§§118c and 118f][law]",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF901: “12 mánaðir eftir síðsta dag í tí inntøkuári, sum hon skal greiða frá.”; [tax §118 f](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF915–916; exact anchor LF915: “§ 118 f. Tað ultimativa móðurfelagið, sbrt. § 118 c, stk. 1, ella eitt føroyskt umboðsmóðurfelag, sbrt. §118”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-013",
+    "lf": 68,
+    "section": "## Deadlines and filing",
+    "wording": "Notification identifies the reporting entity, address, tax jurisdiction and registration/V-number or foreign TIN where applicable. Faroese, Danish and English notifications are permitted. Cessation of the reporting duty also requires notification. [Regulation §§1–3][regulation]",
+    "sources": "[regulation §1](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF299–303; exact anchor LF299: “§ 1. Fráboðan, sum skal latast sambært § 118 f í løgtingslóg um landsskatt og kommunuskatt, skal innihalda”; [regulation §2](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF304–305; exact anchor LF304: “§ 2. Fráboðan eftir §§ 1 og 3 kann latast talgilt sambært ávísing frá skattamyndugleikanum. Fráboðanin skal latast”; [regulation §3](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF306–307; exact anchor LF306: “§ 3. Fráboðan skal latast skattamyndugleikanum, um tað eru umstøður, sum bera í sær, at skyldan at lata”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-014",
+    "lf": 70,
+    "section": "## Deadlines and filing",
+    "wording": "TAKS publishes reporting and notification templates. Its guidance accepts the report through a secure delivery route and requires a power of attorney where a third party files. Retrieve the current templates, agree the secure route and preserve receipts. No transmission was tested for this Guide. [TAKS][taks]",
+    "sources": "[TAKS CbCR guidance](https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding), actual webLF19,43,48–50,72–74; exact quotes “TAKS skal hava avrit av fulltrú, um triðipersónur letur inn vegna samtaksfelagið.” and “Send um álítandi postskipan”. No transmission tested.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-015",
+    "lf": 72,
+    "section": "## Deadlines and filing",
+    "wording": "If a parent refuses information needed for local filing, the regulation requires the constituent to request it, report the information it has obtained or collected, and notify the authority of the refusal. Missing access is not a licence to omit the filing silently. [Regulation §4(5)][regulation]",
+    "sources": "[regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF321: “Stk. 5. Ein samtakseind, sum er skyldug at gera eina land fyri land frágreiðing eftir § 118 d”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-016",
+    "lf": 76,
+    "section": "## Penalties and interest",
+    "wording": "Section 139c, items 1–2, provides for a fine for intentional or grossly negligent failure to deliver the report under §§118c–e on time, or for false or misleading information in it. The provision does not state a monetary amount. Do not infer a fixed fine from this Guide. Notification-specific exposure and current penalty practice remain to be checked separately. [Tax Act §139c][law]",
+    "sources": "[tax §139 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1065–1070; exact anchor LF1065: “Við bót verður revsaður tann, sum tilvitað ella av grovum ósketni:”; [tax §139 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1065–1070; exact anchor LF1065: “1) Við bót verður revsaður tann, sum tilvitað ella av grovum ósketni:”; [tax §139 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF1065–1070; exact anchor LF1067: “2) Gevur skeivar ella villleiðandi upplýsingar í land fyri land frágreiðingini.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-017",
+    "lf": 80,
+    "section": "## Cross-border points",
+    "wording": "Retain evidence for the exact counterpart jurisdiction and reporting period. TAKS links the OECD activated-exchange list, but this Guide has not verified any bilateral route. Do not substitute OECD membership, signature of a multilateral agreement or a generic treaty for effective exchange coverage. The complete §118e conditions control the surrogate analysis. [Tax Act][law]; [TAKS][taks]",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “§ 118 c. 1) Ultimativa móðurfelagið í einum fleirtjóða samtaki, sum er skattskyldugt í Føroyum, skal handa TAKS”; TAKS actual webLF14–16; original quote “Markið á 5,6 milliardir krónur skal tulkast sambært vegleiðing hjá OECD um gjaldoyrasveiggj.” https://www.taks.fo/fo/vinna/skattur/land-fyri-land-fragreiding; [tax §118 e](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF909–914; exact anchor LF909: “§ 118 e. Eitt samtaksfelag skal ikki handa skattamyndugleikunum eina land fyri land frágreiðing, um frágreiðingin, vegna fleirtjóða”; TAKS actual webLF22–25/64–67 refers to exchange agreements; exact anchor “Virkjaðar avtalur um útveksling”; no bilateral route inferred.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "express rule / record instruction"
+  },
+  {
+    "id": "fo-country-by-country-reporting-018",
+    "lf": 86,
+    "section": "### 1. Prior-year boundary",
+    "wording": "Assume a Faroese ultimate parent, a DKK-denominated calendar-year group and no threshold-conversion issue. Verified 2025 consolidated revenue of DKK 5,600,000,000 meets the threshold for the 2026 report. DKK 5,599,999,999 is one krone below it. This tests §118c only, not every foreign-parent local-filing scenario.",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “5,6 mia. kr. roknskaparárið frammanundan inntøkuárinum, sum tað skal fráboðast um.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-country-by-country-reporting-019",
+    "lf": 88,
+    "section": "### 1. Prior-year boundary",
+    "wording": "```oa-check\nname: Faroese CbCR ultimate-parent threshold boundary\ninputs:\n  threshold: 5600000000\n  at_boundary: 5600000000\n  below_boundary: 5599999999\nsteps:\n  equality_margin: at_boundary - threshold\n  lower_margin: below_boundary - threshold\nexpected:\n  equality_margin: 0\n  lower_margin: -1\n```",
+    "sources": "[tax §118 c](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), reader LF900–901; exact anchor LF900: “5,6 mia. kr. roknskaparárið frammanundan inntøkuárinum, sum tað skal fráboðast um.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-country-by-country-reporting-020",
+    "lf": 104,
+    "section": "### 2. Cash versus accrued tax",
+    "wording": "Assume a jurisdiction row has DKK 12 million of cash income tax plus DKK 2 million of qualifying withholding paid on its income. Cash tax is DKK 14 million. Its current-year tax expense is independently established at DKK 15 million; DKK 3 million deferred tax and DKK 1 million uncertain-tax provision are excluded from that accrued measure. Do not replace one column with the other.",
+    "sources": "[regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF313: “Goldin skattur fevnir um kelduskatt, sum aðrar eindir hava goldið, bæði atknýttar og sjálvstøðugar fyritøkur, í sambandi við”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF314: “ikki um útsettan skatt ella burturleggingar til óvissar skattaskyldur.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-country-by-country-reporting-021",
+    "lf": 106,
+    "section": "### 2. Cash versus accrued tax",
+    "wording": "```oa-check\nname: Faroese CbCR distinct tax columns\ninputs:\n  direct_cash_tax: 12000000\n  qualifying_withholding: 2000000\n  total_expense: 19000000\n  deferred_tax: 3000000\n  uncertain_tax: 1000000\nsteps:\n  cash_tax: direct_cash_tax + qualifying_withholding\n  current_accrued_tax: total_expense - deferred_tax - uncertain_tax\nexpected:\n  cash_tax: 14000000\n  current_accrued_tax: 15000000\n```",
+    "sources": "[regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF313: “Goldin skattur fevnir um kelduskatt, sum aðrar eindir hava goldið, bæði atknýttar og sjálvstøðugar fyritøkur, í sambandi við”; [regulation §4](https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan), reader LF308–325; exact anchor LF314: “ikki um útsettan skatt ella burturleggingar til óvissar skattaskyldur.”",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "hypothetical inputs / derived arithmetic; not quoted statutory amounts"
+  },
+  {
+    "id": "fo-country-by-country-reporting-022",
+    "lf": 124,
+    "section": "## Ask the client first",
+    "wording": "- What are the ultimate parent, tax residences, group perimeter and reporting year?\n- What do the prior-year consolidated accounts show, and in which currency?\n- Who will file, under what obligation, and where is the filing/exchange evidence?\n- Have TAKS or another authority notified a systemic failure?\n- Has each required notification been made, with what receipt?\n- Are all constituent and PE records available, including withholding and tax-expense reconciliations?",
+    "sources": "Operational workpaper, intake, caveat or expressly reserved scope; no separate tax entitlement asserted. See substantive rows and whole-unit mapping.",
+    "read_on": "2026-10-28 selected quoted primary scopes; old operational claims retain original read dates",
+    "status": "operational / explicit boundary"
+  }
+]

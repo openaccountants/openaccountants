@@ -1,0 +1,62 @@
+[
+  {
+    "name": "payroll-levy",
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "final_url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "status": 200,
+    "bytes": 110555,
+    "sha256": "bd7f712993654a7a79e35e8d30d61b5bbd37d987aebb87c2634029faf232023d",
+    "reader_sha256": "cce4c5fa3f007018bc1ee8c22cf3ff1ba5f2645ba89adced046f009c5486b046",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "start-business",
+    "url": "https://www.taks.fo/fo/borgari/bolkar/at-stovna-virki/",
+    "final_url": "https://www.taks.fo/fo/borgari/bolkar/at-stovna-virki/",
+    "status": 200,
+    "bytes": 27338,
+    "sha256": "56d86abb073c683fc09bd10bff7737dba9ce25745c24d813185488cc020f5ade",
+    "reader_sha256": "818e37e579b07d268c6e66637ad4c1994828800da46e77f6434d4414c08074f3",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "payment-agreements",
+    "url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "final_url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "status": 200,
+    "bytes": 17951,
+    "sha256": "5bd60f97f7312334f317f0c3e1f46265b6df738d3e29082e30eee59db7742a00",
+    "reader_sha256": "8de9192018c378d4e5ad6a20c3b0d853fb6f926b89d4c1c8e1d4d1820c65ed7f",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "law-index",
+    "url": "https://www.taks.fo/fo/log/logir/",
+    "final_url": "https://www.taks.fo/fo/log/logir/",
+    "status": 200,
+    "bytes": 23661,
+    "sha256": "cd7b0e078308b41b6ef39dfebede58723228301ab080c3fe573da9cb35f6b017",
+    "reader_sha256": "b3fc4d01e815f20d0bc04150e0bb6a352b7f6d46c41ee85fb8cbeb0496bee306",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "vat-current",
+    "url": "https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24",
+    "final_url": "https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24",
+    "status": 200,
+    "bytes": 394299,
+    "sha256": "a398abdca8a86748815ecbe9e324cecf56b9da9460db35ea8be7fdb67d0be673",
+    "reader_sha256": "43b888ab0fb7d765263e4015daf4fcbe8e430b5dcf43b31f8c5a84ec6d5af644",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "vat-filing",
+    "url": "https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd",
+    "final_url": "https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd",
+    "status": 200,
+    "bytes": 17286,
+    "sha256": "500ed72fd360ce3ce199d4c6c2cb5c8ee64afda1ae11ebdcdf5ca76fab382957",
+    "reader_sha256": "00207e273db600a7336da65988d4f9e9c6bb49bf99369df5d66e5553617fd776",
+    "read_date": "2026-10-31"
+  }
+]

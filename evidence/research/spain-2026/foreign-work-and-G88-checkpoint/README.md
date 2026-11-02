@@ -1,0 +1,5 @@
+# Spain foreign-work and Gipuzkoa credit-allocation checkpoint
+
+The exact independently reviewed State and four-foral ordinary employee foreign-work methods retain each own legal gate, cap, denominator, election and foreign-tax credit difference. Own Gipuzkoa law, manual and quota-target formula support an expressly labelled positive-income allocation inference, with its limits visible. Current VAT/SC scope and restored contribution bylines remain unchanged. Five country domains remain partial. See [the bounded review](reports/scope-delta.md); the [frozen whole-pack review](reports/frozen-whole-pack-needs-fixes.md) remains NEEDS FIXES, with later exact repairs bound separately. This is not a country-ready claim or accountant attestation.
+
+ARCHIVE-MAP.json preserves primary bodies, actual read scopes, private drafts, separate immutable reader-locator erratum and independent review byte-for-byte in deduplicated gzip blobs. Complete acquisition is distinct from actual legal reading. Original private paths resolve by their output-relative suffix.

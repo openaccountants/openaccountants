@@ -1,0 +1,11 @@
+{
+  "prior_Guide_exact_after_reversing_only_documented_additions": true,
+  "original_ledger_rows": 121,
+  "new_ledger_rows": 21,
+  "old_topics_exact": true,
+  "Guide_CTA_exact": true,
+  "two_original_examples_exact": true,
+  "guide_sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec",
+  "review": "PENDING",
+  "provenance_repair": "Advance Guide last_updated to2026-10-31 per independent VAL-F1; tax prose, rules, examples and CTA unchanged."
+}

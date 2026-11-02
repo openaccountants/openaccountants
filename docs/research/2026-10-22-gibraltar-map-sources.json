@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf",
+      "sha256": "dacd7337497720fcdaabf21e77ab8b89f655732500157f21d3a1241006b28aab",
+      "locators": "Scope; sections 6.2\u20136.3, 7.1\u20137.2"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/downloads-ito",
+      "locators": "Dispute Resolution MAP guidance link; web retrieval"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+      "locators": "Article 24"
+    }
+  ]
+}

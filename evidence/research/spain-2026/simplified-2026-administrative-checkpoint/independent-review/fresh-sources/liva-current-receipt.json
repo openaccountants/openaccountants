@@ -1,0 +1,11 @@
+{
+  "name": "liva-current",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+  "utc": "2026-10-27T23:30:20.957558Z",
+  "status": 200,
+  "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 1769465,
+  "sha256": "d2eeb32b44d5ea21d551c8580da10dce6d0fdd602e1fb6b69aa7ae0d5a6c7996",
+  "same_as_writer_body": true
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/spain-vat-return.md",
+    "sha256": "a86645db838f32384769c2889eab3e672039dd4527274b3230fbb4623149c44c",
+    "bytes": 292122
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/spain-vat-return/rows.json",
+    "sha256": "2555176885080dee3ca05a93c93b8a3c053c05e34d04430983f991cba196e96b",
+    "bytes": 159510
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/spain-vat-return/source-read-receipts.json",
+    "sha256": "77bd33b4c18b44443abc42c2e9ba9150d46a362a42ad538047fb0908ec3caa61",
+    "bytes": 57197
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/spain-vat-return/writer-status.md",
+    "sha256": "f775bd9bd4a9e493ec8baf3224889fe0bf8beeb369163ca79d013f676f814648",
+    "bytes": 1452
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/spain-vat-return/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

@@ -1,0 +1,14 @@
+All six candidate file SHA256 hashes match writer-corrections.json
+Focused three-Guide validator: 0 errors, 0 warnings
+skills/togo/tg-company-formation.md: all 15 checks pass
+skills/togo/tg-corporate-income-tax.md: all 15 checks pass
+skills/togo/tg-vat-gst.md: all 15 checks pass
+All 16 originally recomputed example blocks unchanged; six CTA suffixes still exact
+New ledger row tax-deductibility: exact excerpt located, linked conditions checked
+New ledger row customer-list: exact excerpt located, linked conditions checked
+New ledger row supplier-list: exact excerpt located, linked conditions checked
+New ledger row export-input-condition: exact excerpt located, linked conditions checked
+New ledger row personnel-workplace: exact excerpt located, linked conditions checked
+New ledger row input-timing: exact excerpt located, linked conditions checked
+New ledger row input-catchup: exact excerpt located, linked conditions checked
+Seven domains remain partial; OHADA art323 in both manifest and Guide Sources

@@ -1,0 +1,324 @@
+{
+  "scope": "Independent separating arithmetic and legal threshold controls, with claimant conditions preserved. No statutory new2026 reduced-fee amount inferred.",
+  "count": 53,
+  "checks": [
+    {
+      "name": "annual simplified base",
+      "actual": "38000",
+      "expected": "38000",
+      "passed": true
+    },
+    {
+      "name": "state scale and minimum",
+      "actual": "4353.50",
+      "expected": "4353.50",
+      "passed": true
+    },
+    {
+      "name": "Madrid published quota and minimum",
+      "actual": "3783.04",
+      "expected": "3783.04",
+      "passed": true
+    },
+    {
+      "name": "annual total tax",
+      "actual": "8136.54",
+      "expected": "8136.54",
+      "passed": true
+    },
+    {
+      "name": "withholding credit",
+      "actual": "9000.00",
+      "expected": "9000",
+      "passed": true
+    },
+    {
+      "name": "refund",
+      "actual": "863.46",
+      "expected": "863.46",
+      "passed": true
+    },
+    {
+      "name": "output VAT",
+      "actual": "12600.00",
+      "expected": "12600",
+      "passed": true
+    },
+    {
+      "name": "input VAT",
+      "actual": "2100.00",
+      "expected": "2100",
+      "passed": true
+    },
+    {
+      "name": "net VAT",
+      "actual": "10500",
+      "expected": "10500",
+      "passed": true
+    },
+    {
+      "name": "cash received",
+      "actual": "63600",
+      "expected": "63600",
+      "passed": true
+    },
+    {
+      "name": "cash before annual settlement",
+      "actual": "31000",
+      "expected": "31000",
+      "passed": true
+    },
+    {
+      "name": "cash after settlement",
+      "actual": "31863.46",
+      "expected": "31863.46",
+      "passed": true
+    },
+    {
+      "name": "net annual business cash less final IRPF crosscheck",
+      "actual": "31863.46",
+      "expected": "31863.46",
+      "passed": true
+    },
+    {
+      "name": "day based income",
+      "actual": "1736",
+      "expected": "1736",
+      "passed": true
+    },
+    {
+      "name": "annual12 shortcut is materially different",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "band4 lower bound",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "band4 upper bound",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "ordinary components",
+      "actual": "31.50",
+      "expected": "31.50",
+      "passed": true
+    },
+    {
+      "name": "full ordinary month",
+      "actual": "378.000",
+      "expected": "378",
+      "passed": true
+    },
+    {
+      "name": "professional collected invoice",
+      "actual": "1060",
+      "expected": "1060",
+      "passed": true
+    },
+    {
+      "name": "invoice VAT is not profit",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "generic7percent income",
+      "actual": "10416.00",
+      "expected": "10416",
+      "passed": true
+    },
+    {
+      "name": "generic3percent income",
+      "actual": "10864.00",
+      "expected": "10864",
+      "passed": true
+    },
+    {
+      "name": "company90days floor test equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "89days does not meet same90day condition",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "company floor uses group7",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "pluriactividad excess refund",
+      "actual": "1338.16",
+      "expected": "1338.16",
+      "passed": true
+    },
+    {
+      "name": "pluriactividad refund cap binds",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "simplified provisions cap binds",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "Ceuta10percent retains same cap",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "new activity maximum reduction",
+      "actual": "20000.00",
+      "expected": "20000",
+      "passed": true
+    },
+    {
+      "name": "exact70percent withholding exemption amountgate",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "69.99percent does not meet exemption",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "home supplies proportion",
+      "actual": "60.0000",
+      "expected": "60",
+      "passed": true
+    },
+    {
+      "name": "Spain meals actual lower than daily cap",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "Spain overnight maximum",
+      "actual": "53.34",
+      "expected": "53.34",
+      "passed": true
+    },
+    {
+      "name": "health ordinary per person cap",
+      "actual": "500",
+      "expected": "500",
+      "passed": true
+    },
+    {
+      "name": "health disabled per person cap",
+      "actual": "1500",
+      "expected": "1500",
+      "passed": true
+    },
+    {
+      "name": "family first18months CC only",
+      "actual": "50.00",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "family next6months CC only",
+      "actual": "25.00",
+      "expected": "25",
+      "passed": true
+    },
+    {
+      "name": "Ceuta period-specific CC change",
+      "actual": "25.00",
+      "expected": "25",
+      "passed": true
+    },
+    {
+      "name": "statutory module200k fails150k",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "published agency200k passes250k",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "published agency100k B2B passes125k",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "published agency220k purchases passes250k",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "347 exact threshold not exceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "347 threshold penny above",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "720 same block exact50k does not exceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "720 increased holdings exact20k not exceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "tax late2complete months",
+      "actual": "30.00",
+      "expected": "30",
+      "passed": true
+    },
+    {
+      "name": "tax beyond12months15percent",
+      "actual": "150.00",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "name": "social insurance duties met first month10percent",
+      "actual": "100.00",
+      "expected": "100",
+      "passed": true
+    },
+    {
+      "name": "SS statutory interest multiplier",
+      "actual": "4.0625",
+      "expected": "4.0625",
+      "passed": true
+    }
+  ]
+}

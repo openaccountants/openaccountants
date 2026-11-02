@@ -1,0 +1,466 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a9"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_bytes": 248833,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt",
+    "reader_sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707#a7"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a13"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "actual_raw_sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "actual_raw_bytes": 463345,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt",
+    "reader_sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969#a21"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+    "actual_raw_sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+    "actual_raw_bytes": 1477792,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt",
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a8"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a25"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/78313c4b702477eae31a.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/78313c4b702477eae31a.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7d4665be9e7406f39630f684b76461bc38bb70b354a82d2c11591c1c5c8678be",
+    "actual_raw_sha256": "7d4665be9e7406f39630f684b76461bc38bb70b354a82d2c11591c1c5c8678be",
+    "actual_raw_bytes": 1978184,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/78313c4b702477eae31a.reader.txt",
+    "reader_sha256": "22fdeb4fb5a16a54ae734bbaefbf16e633a5bb43f147b677c842551ca56f71cc",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1#a85"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-10"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a19"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a95bis"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a24"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a14"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a46"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a31"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/fa1eee0aacd1dfdec128.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/fa1eee0aacd1dfdec128.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+    "actual_raw_sha256": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+    "actual_raw_bytes": 195902,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/fa1eee0aacd1dfdec128.reader.txt",
+    "reader_sha256": "61ae2b2294c8299fb1a13b4e9431c06d1f9cd861fcdd3ab08392d72bf2a2853f",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532#a14"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#dacuarta"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimon-proced-bienes-adquiridos-1994.html",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e7b6e7929076b68a2c6d.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e7b6e7929076b68a2c6d.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "actual_raw_sha256": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "actual_raw_bytes": 18261,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e7b6e7929076b68a2c6d.reader.txt",
+    "reader_sha256": "08f2f2bc70ce7e88fe606cf526c988787cc680c060ee0881dd7535abc21029e8",
+    "selected_url": "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimon-proced-bienes-adquiridos-1994.html"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a16"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a18"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/4bb7787b48c068e2f576.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/root-remaining-primary-reads-20261028/4bb7787b48c068e2f576.reader.txt",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/4bb7787b48c068e2f576.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "actual_raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "actual_raw_bytes": 1000017,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/root-remaining-primary-reads-20261028/4bb7787b48c068e2f576.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a121"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/4bb7787b48c068e2f576.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/root-remaining-primary-reads-20261028/4bb7787b48c068e2f576.reader.txt",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/4bb7787b48c068e2f576.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "actual_raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "actual_raw_bytes": 1000017,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/root-remaining-primary-reads-20261028/4bb7787b48c068e2f576.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a123"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_bytes": 248833,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt",
+    "reader_sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707#a5"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/110af01bfad3918d482b.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/110af01bfad3918d482b.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "033df559dc795e15d5a9125b814cebc923c8bd176994a840b1894130605ae9ec",
+    "actual_raw_sha256": "033df559dc795e15d5a9125b814cebc923c8bd176994a840b1894130605ae9ec",
+    "actual_raw_bytes": 66621,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/110af01bfad3918d482b.reader.txt",
+    "reader_sha256": "121d5e556741302eb7c0d2aff1d0b7cf6edc87e955b78665f3d7ab2c8da38e4c",
+    "selected_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a21"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a28"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "actual_raw_bytes": 248833,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3990cb068d4b44c25f70.reader.txt",
+    "reader_sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707#a2"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a22"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-electricity-10kw-source-review/source-map-and-immutability.json",
+    "claimed_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "actual_raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "actual_raw_bytes": 1493014,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "actual_raw_bytes": 534905,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/99126a9578e7652162da.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a4"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a93"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a66"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-capital-cumulative-review/source-identities.json",
+    "claimed_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "actual_raw_bytes": 2028806,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/47c1ae204f6c94e2824f.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a76"
+  }
+]

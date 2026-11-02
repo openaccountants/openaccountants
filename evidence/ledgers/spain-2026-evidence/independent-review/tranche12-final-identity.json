@@ -1,0 +1,14 @@
+{
+  "guide_sha256": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+  "ledger_sha256": "fa43bd269b922892eba752bba4eb03d0fda8a4cc2a79eab2b09b90632768e653",
+  "final_single_map_change": {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 86,
+    "section": "## Rates, bands and thresholds / ### R\u00e9gimen General, ordinary full-time employment",
+    "wording": "| Accident/occupational base | Floor 1,424.40/month; ceiling 5,101.20/month | Apply applicable daily/partial-period rules | [2026 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2) |",
+    "destination": "SOURCE CORRECTION: current LF86 ordinary full-month occupational floor is1424.50 =1221\u00d77/6 under2026order2.2/SMI1. The old fixed1424.40 occupational-floor statement is corrected;1424.40 remains the absolute statutory lower bound and unchanged CCgroup4\u20137 table amount, not the operative full-month SMI-plus-sixth result."
+  },
+  "same_197_source_anchors": 197,
+  "own_controls": 96
+}

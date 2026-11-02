@@ -1,0 +1,1710 @@
+{
+  "count": 284,
+  "checks": [
+    {
+      "name": "CIT_coef_araba_2026_1983",
+      "actual": "3137/1000",
+      "expected": "3137/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1984",
+      "actual": "57/20",
+      "expected": "57/20",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1985",
+      "actual": "2631/1000",
+      "expected": "2631/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1986",
+      "actual": "2477/1000",
+      "expected": "2477/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1987",
+      "actual": "2359/1000",
+      "expected": "2359/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1988",
+      "actual": "1127/500",
+      "expected": "1127/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1989",
+      "actual": "1073/500",
+      "expected": "1073/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1990",
+      "actual": "1031/500",
+      "expected": "1031/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1991",
+      "actual": "1993/1000",
+      "expected": "1993/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1992",
+      "actual": "967/500",
+      "expected": "967/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1993",
+      "actual": "479/250",
+      "expected": "479/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1994",
+      "actual": "1879/1000",
+      "expected": "1879/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1995",
+      "actual": "1793/1000",
+      "expected": "1793/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1996",
+      "actual": "1729/1000",
+      "expected": "1729/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1997",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1998",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_1999",
+      "actual": "1639/1000",
+      "expected": "1639/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2000",
+      "actual": "153/100",
+      "expected": "153/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2001",
+      "actual": "377/250",
+      "expected": "377/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2002",
+      "actual": "741/500",
+      "expected": "741/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2003",
+      "actual": "73/50",
+      "expected": "73/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2004",
+      "actual": "1443/1000",
+      "expected": "1443/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2005",
+      "actual": "177/125",
+      "expected": "177/125",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2006",
+      "actual": "139/100",
+      "expected": "139/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2007",
+      "actual": "671/500",
+      "expected": "671/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2008",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2009",
+      "actual": "259/200",
+      "expected": "259/200",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2010",
+      "actual": "323/250",
+      "expected": "323/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2011",
+      "actual": "319/250",
+      "expected": "319/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2012",
+      "actual": "633/500",
+      "expected": "633/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2013",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2014",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2015",
+      "actual": "1251/1000",
+      "expected": "1251/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2016",
+      "actual": "1243/1000",
+      "expected": "1243/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2017",
+      "actual": "1221/1000",
+      "expected": "1221/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2018",
+      "actual": "301/250",
+      "expected": "301/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2019",
+      "actual": "1189/1000",
+      "expected": "1189/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2020",
+      "actual": "1179/1000",
+      "expected": "1179/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2021",
+      "actual": "1167/1000",
+      "expected": "1167/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2022",
+      "actual": "1113/1000",
+      "expected": "1113/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2023",
+      "actual": "1071/1000",
+      "expected": "1071/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2024",
+      "actual": "26/25",
+      "expected": "26/25",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_araba_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1983",
+      "actual": "3137/1000",
+      "expected": "3137/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1984",
+      "actual": "57/20",
+      "expected": "57/20",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1985",
+      "actual": "2631/1000",
+      "expected": "2631/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1986",
+      "actual": "2477/1000",
+      "expected": "2477/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1987",
+      "actual": "2359/1000",
+      "expected": "2359/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1988",
+      "actual": "1127/500",
+      "expected": "1127/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1989",
+      "actual": "1073/500",
+      "expected": "1073/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1990",
+      "actual": "1031/500",
+      "expected": "1031/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1991",
+      "actual": "1993/1000",
+      "expected": "1993/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1992",
+      "actual": "967/500",
+      "expected": "967/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1993",
+      "actual": "479/250",
+      "expected": "479/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1994",
+      "actual": "1879/1000",
+      "expected": "1879/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1995",
+      "actual": "1793/1000",
+      "expected": "1793/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1996",
+      "actual": "1729/1000",
+      "expected": "1729/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1997",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1998",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_1999",
+      "actual": "1639/1000",
+      "expected": "1639/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2000",
+      "actual": "153/100",
+      "expected": "153/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2001",
+      "actual": "377/250",
+      "expected": "377/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2002",
+      "actual": "741/500",
+      "expected": "741/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2003",
+      "actual": "73/50",
+      "expected": "73/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2004",
+      "actual": "1443/1000",
+      "expected": "1443/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2005",
+      "actual": "177/125",
+      "expected": "177/125",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2006",
+      "actual": "139/100",
+      "expected": "139/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2007",
+      "actual": "671/500",
+      "expected": "671/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2008",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2009",
+      "actual": "259/200",
+      "expected": "259/200",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2010",
+      "actual": "323/250",
+      "expected": "323/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2011",
+      "actual": "319/250",
+      "expected": "319/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2012",
+      "actual": "633/500",
+      "expected": "633/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2013",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2014",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2015",
+      "actual": "1251/1000",
+      "expected": "1251/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2016",
+      "actual": "1243/1000",
+      "expected": "1243/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2017",
+      "actual": "1221/1000",
+      "expected": "1221/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2018",
+      "actual": "301/250",
+      "expected": "301/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2019",
+      "actual": "1189/1000",
+      "expected": "1189/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2020",
+      "actual": "1179/1000",
+      "expected": "1179/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2021",
+      "actual": "1167/1000",
+      "expected": "1167/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2022",
+      "actual": "1113/1000",
+      "expected": "1113/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2023",
+      "actual": "1071/1000",
+      "expected": "1071/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2024",
+      "actual": "26/25",
+      "expected": "26/25",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_bizkaia_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1983",
+      "actual": "3137/1000",
+      "expected": "3137/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1984",
+      "actual": "57/20",
+      "expected": "57/20",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1985",
+      "actual": "2631/1000",
+      "expected": "2631/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1986",
+      "actual": "2477/1000",
+      "expected": "2477/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1987",
+      "actual": "2359/1000",
+      "expected": "2359/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1988",
+      "actual": "1127/500",
+      "expected": "1127/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1989",
+      "actual": "1073/500",
+      "expected": "1073/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1990",
+      "actual": "1031/500",
+      "expected": "1031/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1991",
+      "actual": "1993/1000",
+      "expected": "1993/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1992",
+      "actual": "967/500",
+      "expected": "967/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1993",
+      "actual": "479/250",
+      "expected": "479/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1994",
+      "actual": "1879/1000",
+      "expected": "1879/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1995",
+      "actual": "1793/1000",
+      "expected": "1793/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1996",
+      "actual": "1729/1000",
+      "expected": "1729/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1997",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1998",
+      "actual": "1701/1000",
+      "expected": "1701/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_1999",
+      "actual": "1639/1000",
+      "expected": "1639/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2000",
+      "actual": "153/100",
+      "expected": "153/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2001",
+      "actual": "377/250",
+      "expected": "377/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2002",
+      "actual": "741/500",
+      "expected": "741/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2003",
+      "actual": "73/50",
+      "expected": "73/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2004",
+      "actual": "1443/1000",
+      "expected": "1443/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2005",
+      "actual": "177/125",
+      "expected": "177/125",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2006",
+      "actual": "139/100",
+      "expected": "139/100",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2007",
+      "actual": "671/500",
+      "expected": "671/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2008",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2009",
+      "actual": "259/200",
+      "expected": "259/200",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2010",
+      "actual": "323/250",
+      "expected": "323/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2011",
+      "actual": "319/250",
+      "expected": "319/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2012",
+      "actual": "633/500",
+      "expected": "633/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2013",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2014",
+      "actual": "629/500",
+      "expected": "629/500",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2015",
+      "actual": "1251/1000",
+      "expected": "1251/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2016",
+      "actual": "1243/1000",
+      "expected": "1243/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2017",
+      "actual": "1221/1000",
+      "expected": "1221/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2018",
+      "actual": "301/250",
+      "expected": "301/250",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2019",
+      "actual": "1189/1000",
+      "expected": "1189/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2020",
+      "actual": "1179/1000",
+      "expected": "1179/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2021",
+      "actual": "1167/1000",
+      "expected": "1167/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2022",
+      "actual": "1113/1000",
+      "expected": "1113/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2023",
+      "actual": "1071/1000",
+      "expected": "1071/1000",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2024",
+      "actual": "26/25",
+      "expected": "26/25",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "CIT_coef_gipuzkoa_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1994",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1995",
+      "actual": "539/250",
+      "expected": "539/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1996",
+      "actual": "519/250",
+      "expected": "519/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1997",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1998",
+      "actual": "397/200",
+      "expected": "397/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_1999",
+      "actual": "1931/1000",
+      "expected": "1931/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2000",
+      "actual": "933/500",
+      "expected": "933/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2001",
+      "actual": "449/250",
+      "expected": "449/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2002",
+      "actual": "433/250",
+      "expected": "433/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2003",
+      "actual": "337/200",
+      "expected": "337/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2004",
+      "actual": "327/200",
+      "expected": "327/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2005",
+      "actual": "1583/1000",
+      "expected": "1583/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2006",
+      "actual": "1531/1000",
+      "expected": "1531/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2007",
+      "actual": "1489/1000",
+      "expected": "1489/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2008",
+      "actual": "143/100",
+      "expected": "143/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2009",
+      "actual": "713/500",
+      "expected": "713/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2010",
+      "actual": "701/500",
+      "expected": "701/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2011",
+      "actual": "34/25",
+      "expected": "34/25",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2012",
+      "actual": "133/100",
+      "expected": "133/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2013",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2014",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2015",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2016",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2017",
+      "actual": "1281/1000",
+      "expected": "1281/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2018",
+      "actual": "1261/1000",
+      "expected": "1261/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2019",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2020",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2021",
+      "actual": "303/250",
+      "expected": "303/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2022",
+      "actual": "1121/1000",
+      "expected": "1121/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2023",
+      "actual": "541/500",
+      "expected": "541/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2024",
+      "actual": "21/20",
+      "expected": "21/20",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_araba_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1994",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1995",
+      "actual": "539/250",
+      "expected": "539/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1996",
+      "actual": "519/250",
+      "expected": "519/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1997",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1998",
+      "actual": "397/200",
+      "expected": "397/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_1999",
+      "actual": "1931/1000",
+      "expected": "1931/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2000",
+      "actual": "933/500",
+      "expected": "933/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2001",
+      "actual": "449/250",
+      "expected": "449/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2002",
+      "actual": "433/250",
+      "expected": "433/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2003",
+      "actual": "337/200",
+      "expected": "337/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2004",
+      "actual": "327/200",
+      "expected": "327/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2005",
+      "actual": "1583/1000",
+      "expected": "1583/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2006",
+      "actual": "1531/1000",
+      "expected": "1531/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2007",
+      "actual": "1489/1000",
+      "expected": "1489/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2008",
+      "actual": "143/100",
+      "expected": "143/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2009",
+      "actual": "713/500",
+      "expected": "713/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2010",
+      "actual": "701/500",
+      "expected": "701/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2011",
+      "actual": "34/25",
+      "expected": "34/25",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2012",
+      "actual": "133/100",
+      "expected": "133/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2013",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2014",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2015",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2016",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2017",
+      "actual": "1281/1000",
+      "expected": "1281/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2018",
+      "actual": "1261/1000",
+      "expected": "1261/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2019",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2020",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2021",
+      "actual": "303/250",
+      "expected": "303/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2022",
+      "actual": "1121/1000",
+      "expected": "1121/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2023",
+      "actual": "541/500",
+      "expected": "541/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2024",
+      "actual": "21/20",
+      "expected": "21/20",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_bizkaia_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1994",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1995",
+      "actual": "539/250",
+      "expected": "539/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1996",
+      "actual": "519/250",
+      "expected": "519/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1997",
+      "actual": "203/100",
+      "expected": "203/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1998",
+      "actual": "397/200",
+      "expected": "397/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_1999",
+      "actual": "1931/1000",
+      "expected": "1931/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2000",
+      "actual": "933/500",
+      "expected": "933/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2001",
+      "actual": "449/250",
+      "expected": "449/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2002",
+      "actual": "433/250",
+      "expected": "433/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2003",
+      "actual": "337/200",
+      "expected": "337/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2004",
+      "actual": "327/200",
+      "expected": "327/200",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2005",
+      "actual": "1583/1000",
+      "expected": "1583/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2006",
+      "actual": "1531/1000",
+      "expected": "1531/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2007",
+      "actual": "1489/1000",
+      "expected": "1489/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2008",
+      "actual": "143/100",
+      "expected": "143/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2009",
+      "actual": "713/500",
+      "expected": "713/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2010",
+      "actual": "701/500",
+      "expected": "701/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2011",
+      "actual": "34/25",
+      "expected": "34/25",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2012",
+      "actual": "133/100",
+      "expected": "133/100",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2013",
+      "actual": "1309/1000",
+      "expected": "1309/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2014",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2015",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2016",
+      "actual": "1307/1000",
+      "expected": "1307/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2017",
+      "actual": "1281/1000",
+      "expected": "1281/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2018",
+      "actual": "1261/1000",
+      "expected": "1261/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2019",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2020",
+      "actual": "1249/1000",
+      "expected": "1249/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2021",
+      "actual": "303/250",
+      "expected": "303/250",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2022",
+      "actual": "1121/1000",
+      "expected": "1121/1000",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2023",
+      "actual": "541/500",
+      "expected": "541/500",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2024",
+      "actual": "21/20",
+      "expected": "21/20",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2025",
+      "actual": "51/50",
+      "expected": "51/50",
+      "pass": true
+    },
+    {
+      "name": "PIT_coef_gipuzkoa_2026_2026",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "residential30",
+      "actual": "1596",
+      "expected": "1596",
+      "pass": true
+    },
+    {
+      "name": "rural35",
+      "actual": "1482",
+      "expected": "1482",
+      "pass": true
+    },
+    {
+      "name": "restricted70",
+      "actual": "684",
+      "expected": "684",
+      "pass": true
+    },
+    {
+      "name": "otherDwelling20",
+      "actual": "1824",
+      "expected": "1824",
+      "pass": true
+    },
+    {
+      "name": "residentialFloor",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "insuranceCap",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "nonresidentialDep",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "nonresidentialBase",
+      "actual": "7000",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "nonresidentialTax",
+      "actual": "1330",
+      "expected": "1330",
+      "pass": true
+    },
+    {
+      "name": "noExpenseThirdCountry",
+      "actual": "2880",
+      "expected": "2880",
+      "pass": true
+    },
+    {
+      "name": "wageFinal",
+      "actual": "3572",
+      "expected": "3572",
+      "pass": true
+    },
+    {
+      "name": "BAgrossWithholding",
+      "actual": "3800",
+      "expected": "3800",
+      "pass": true
+    },
+    {
+      "name": "BArefund",
+      "actual": "228",
+      "expected": "228",
+      "pass": true
+    },
+    {
+      "name": "individualDividend",
+      "actual": "855",
+      "expected": "855",
+      "pass": true
+    },
+    {
+      "name": "individualCapGlobal",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "corporateNoIndividualExemption",
+      "actual": "1140",
+      "expected": "1140",
+      "pass": true
+    },
+    {
+      "name": "sharedWithholding60",
+      "actual": "684",
+      "expected": "684",
+      "pass": true
+    },
+    {
+      "name": "sharedWithholding40",
+      "actual": "456",
+      "expected": "456",
+      "pass": true
+    },
+    {
+      "name": "pension12000",
+      "actual": "960",
+      "expected": "960",
+      "pass": true
+    },
+    {
+      "name": "pension18700",
+      "actual": "2970",
+      "expected": "2970",
+      "pass": true
+    },
+    {
+      "name": "pension20000",
+      "actual": "3490",
+      "expected": "3490",
+      "pass": true
+    },
+    {
+      "name": "pensionAveragePayment",
+      "actual": "349",
+      "expected": "349",
+      "pass": true
+    },
+    {
+      "name": "indexedBasis",
+      "actual": "253547",
+      "expected": "253547",
+      "pass": true
+    },
+    {
+      "name": "netSale",
+      "actual": "398500",
+      "expected": "398500",
+      "pass": true
+    },
+    {
+      "name": "gain",
+      "actual": "144953",
+      "expected": "144953",
+      "pass": true
+    },
+    {
+      "name": "gainTax",
+      "actual": "2754107/100",
+      "expected": "2754107/100",
+      "pass": true
+    },
+    {
+      "name": "buyer3Gross",
+      "actual": "12000",
+      "expected": "12000",
+      "pass": true
+    },
+    {
+      "name": "sellerBalance",
+      "actual": "1554107/100",
+      "expected": "1554107/100",
+      "pass": true
+    },
+    {
+      "name": "buyerWrong3Gain",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "NavarraImputation",
+      "actual": "209",
+      "expected": "209",
+      "pass": true
+    },
+    {
+      "name": "partYearImputation",
+      "actual": "4180/73",
+      "expected": "4180/73",
+      "pass": true
+    },
+    {
+      "name": "PIT1994BeforeException",
+      "actual": "203000",
+      "expected": "203000",
+      "pass": true
+    },
+    {
+      "name": "PIT1994Dec31Exception",
+      "actual": "215600",
+      "expected": "215600",
+      "pass": true
+    },
+    {
+      "name": "exceptionDifference",
+      "actual": "12600",
+      "expected": "12600",
+      "pass": true
+    },
+    {
+      "name": "PEquota",
+      "actual": "24960",
+      "expected": "24960",
+      "pass": true
+    },
+    {
+      "name": "PEbalance",
+      "actual": "19960",
+      "expected": "19960",
+      "pass": true
+    },
+    {
+      "name": "PEshare60",
+      "actual": "11976",
+      "expected": "11976",
+      "pass": true
+    },
+    {
+      "name": "PEshare40",
+      "actual": "7984",
+      "expected": "7984",
+      "pass": true
+    },
+    {
+      "name": "PEordinaryOwn19Interpretation",
+      "actual": "45600",
+      "expected": "45600",
+      "pass": true
+    },
+    {
+      "name": "ResidentComparatorNotPEEnactment",
+      "actual": "46416",
+      "expected": "46416",
+      "pass": true
+    },
+    {
+      "name": "BasqueRemittance",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "StateNavarraRemittance",
+      "actual": "1900",
+      "expected": "1900",
+      "pass": true
+    },
+    {
+      "name": "remittanceDifference",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "interestDerived",
+      "actual": "65/16",
+      "expected": "65/16",
+      "pass": true
+    },
+    {
+      "name": "interestYear",
+      "actual": "1625/4",
+      "expected": "1625/4",
+      "pass": true
+    },
+    {
+      "name": "interest73days",
+      "actual": "325/4",
+      "expected": "325/4",
+      "pass": true
+    },
+    {
+      "name": "thresholdInclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "thresholdNextCent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "annualiseHalf",
+      "actual": "12000002",
+      "expected": "12000002",
+      "pass": true
+    },
+    {
+      "name": "calendarMondayFeb2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "calendarMondayApr27",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "calendarMondayJul27",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "calendarMondayOct26",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    }
+  ],
+  "scope": "231 actual own coefficient cells plus selected independent computations. B/A gross withholding valid; G cross-reference discrepancy is not silently resolved by arithmetic."
+}

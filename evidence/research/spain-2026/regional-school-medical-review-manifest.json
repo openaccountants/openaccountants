@@ -1,0 +1,17 @@
+{
+  "final_sha256": "89f5cbe7587a1b7254162a8018db9f51cee92db6881e82fd915271d0fe00cc7f",
+  "initial_reviewed_sha256": "134d5f9068dac2035e3e0c5ff6bd9ea671c811605201edc5bf01bea35797af0f",
+  "baseline_sha256": "9feae85b06c5b5c2cb22bc4f80e6b94e7029b999b70e378ec7f72a60e48869f0",
+  "metadata_byte_identical": true,
+  "full_CTA_byte_identical": true,
+  "oa_blocks_byte_identical": true,
+  "oa_count": 2,
+  "authored_H2_count": 9,
+  "M1_resolved": true,
+  "M2_resolved": true,
+  "finite_scope_pass": true,
+  "professional_attestation": false,
+  "whole_country_completion_claim": false,
+  "final_remediation_hunks": 3,
+  "old_Cantabria_Canary_home_Balearic_Galicia_carry_sections_byte_identical": true
+}

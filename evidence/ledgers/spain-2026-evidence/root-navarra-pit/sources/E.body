@@ -1,0 +1,144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+	<link href="https://www.navarra.es/nr/Navarra/css/style.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="https://www.navarra.es/nr/navarra/js/search.js"></script>
+	<script language="JavaScript" src="https://www.navarra.es/nr/navarra/js/functions.js"></script>
+    <script language="JavaScript" src="calendar1.js"></script>
+    <script language="JavaScript" src="include.js"></script>
+	<script language="javascript">
+
+function ir(iPos)
+{
+	document.FrmSearch.POS.value = iPos;
+	document.FrmSearch.submit();
+}
+
+    function validar() {
+if (!bFechaValida(window.document.forms['FrmSearch'].iniFecha.value)) {
+	alert("Fecha incorrecta");
+	window.document.forms['FrmSearch'].iniFecha.focus();
+	return false;
+}
+if (!bFechaValida(window.document.forms['FrmSearch'].finFecha.value)) {
+	alert("Fecha incorrecta");
+	window.document.forms['FrmSearch'].finFecha.focus();
+	return false;
+}
+
+    window.document.forms['FrmSearch'].POS.value = 0;
+
+return true;
+	}
+	</script>
+	<title>Lexnavarra</title>
+
+<meta name="FECHA" content="2026-10-28"/>
+<meta name="Language" content="Spanish"/>
+<meta name="STRURL" content="http://www.lexnavarra.es/"/>
+<meta name="RESUMEN" content="Lexnavarra. Legislación de Navarra"/>
+<link href="https://www.navarra.es/es/css/estilos.css" rel="stylesheet" type="text/css">
+<link href="https://www.navarra.es/nr/navarra/css/styleGeneral.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.navarra.es/nr/navarra/js/comun.js" ></script>
+<script type="text/JavaScript" src="https://www.navarra.es/js/funcionalidades.js"></script>
+<link href="https://www.navarra.es/css/consola.css" rel="stylesheet" type="text/css">
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/Dates.js"
+type="text/javascript"></script>
+
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/Windows.js"
+type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var IDS_FRAMEWORK_VIRTUAL_PATH =  "https://www.navarra.es/NR/System/WBC";
+// -->
+</script>
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/CommonClient.js"
+type="text/javascript"></script>
+</head>
+<body>
+<div id="estructura">
+    <a href="#contenido" class="navegacion" accesskey="1">(ir al contenido)</a>
+
+
+    <div id="cabecera">
+        <h1><a style='background: url(/images/logo-GOB-2019-Agenda-2030.gif) left top no-repeat;width:210px;margin-left:20px' href="https://www.navarra.es/" accesskey="0"><span>navarra.es</span></a></h1>
+ <p class="idiomas">
+<strong>Castellano</strong> <span> |</span> <a href='/?Idioma=eu' lang='eu' xml:lang='eu'>Euskara</a>  <span> |</span> <a href='/?Idioma=fr' lang='fr' xml:lang='fr'>Français</a>  <span>|</span> <a href='/?Idioma=en' lang='en' xml:lang='en'>English</a> 
+
+ </p>
+<form class="buscador" id="frmSearch" action="https://www.navarra.es/es/buscador/-/buscador/filter/0/sort/_score/facet/0/tag/0/date/0/type/0/rpp/10/page/1/q/" method="get">
+<fieldset>
+<label for="cadena">
+buscador
+</label>
+<input name="cadena" value="introduzca palabra/s"
+onblur="if(this.value==''){this.value='introduzca palabra/s'}"
+onfocus="this.value=''" type="text" id="cadena" />
+<input name="c" type="hidden" id="c" value="/home_es/" />
+<input class="boton" type="submit" value="Buscar" onclick="window.location='https://www.navarra.es/es/buscador/-/buscador/filter/0/sort/_score/facet/0/tag/0/date/0/type/0/rpp/10/page/1/q/'+this.form.cadena.value; return false;"/>
+</fieldset>
+</form>
+<map title="navegación primer nivel" id="primerNivel">
+<ul>
+<li class="primero on"><a href="https://www.navarra.es/" accesskey="n">Navarra</a></li>
+<li><a href="https://www.navarra.es/home_es/Catalogo+de+servicios/" accesskey="s">Trámites</a></li>
+<li><a href="https://www.navarra.es/home_es/Temas/" accesskey="t">Temas</a></li>
+<li><a href="https://www.navarra.es/home_es/Gobierno+de+Navarra/" accesskey="g">Gobierno</a></li>
+<li><a href="https://www.navarra.es/home_es/Actualidad/" accesskey="a">Actualidad</a></li>
+</ul></map>
+</div>
+
+<div id="contenido_modificado">
+<script>
+function l(l,r) {
+	window.location.href = "#" + r;
+}
+</script>
+
+
+<hr class="navegacion" />
+<map title="menú de ubicación" id="migas">
+<ul><li><a href="http://www.navarra.es/">Navarra</a> :
+
+
+<ul><li><a href="/">Lexnavarra</a></li><li> : Legislación</li></ul>
+
+</li></ul></li></ul>
+</map>
+<h1 style="color:black;font-weight:normal;font-family:georgia;'">LEX<span style="color:red;font-size:1.3em;">N</span>AVARRA</h1>
+
+<div style='text-align:center;font-size:0.8em;float:right;margin-left:20px'>
+<a style='text-align:center;' href='?r=58954&d=1'><img style='border:0' src='/images/pdf_icon.gif'/><br>Versión para imprimir</a><br><a style='text-align:center;' href='?r=5958954'>Version en euskera</a>
+<br></div>
+<p class=norma>ORDEN FORAL 187E/2026, DE 31 DE AGOSTO, DE LA CONSEJERA DE VIVIENDA, JUVENTUD Y POLÍTICAS MIGRATORIAS POR LA QUE SE MODIFICAN LOS INGRESOS MÍNIMOS QUE DEBEN ACREDITAR LOS SUJETOS PASIVOS PARA TENER DERECHO A LAS DEDUCCIONES PARA FACILITAR EL ACCESO A UNA VIVIENDA EN RÉGIMEN DE ALQUILER REGULADAS EN EL ARTÍCULO 68 QUINQUIES DEL TEXTO REFUNDIDO DE LA LEY FORAL DEL IMPUESTO SOBRE LA RENTA DE LAS PERSONAS FÍSICAS, APROBADO POR DECRETO FORAL LEGISLATIVO 4/2008, DE 2 DE JUNIO</p>
+
+<P align="left">BON&nbsp;N.º 185 - 17/09/2026
+</p><hr>
+<ul><li style='list-style-type:none'><i><a href='javascript:l(58954,"Preámbulo");'>Preámbulo</a></i></li><li style='list-style-type:none'><i><a href='javascript:l(58954,"Ar.Único");'>Artículo Único</a></i></li><li style='list-style-type:none'><i><a href='javascript:l(58954,"Dt.Única");'>Disposición Transitoria Única</a></i></li><li style='list-style-type:none'><i><a href='javascript:l(58954,"Df.Única");'>Disposición Final Única</a></i></li></ul><div style='clear:both'><hr></div>
+<p><a name="Preámbulo"></a><b>Preámbulo</b></p><p class=Xdef>Para la satisfacción del derecho a una vivienda digna y adecuada, el artículo 3 bis <a href='javascript:l(29980,"ar.3 bis");'></a> de la Ley Foral 10/2010, de 10 de mayo, del Derecho a la Vivienda en Navarra, configura un sistema de deducciones fiscales por arrendamiento abonadas de forma anticipada, distinguiendo dos modalidades: la deducción por arrendamiento para emancipación y la deducción por arrendamiento para acceso a vivienda.</p><p class=Xdef>Dichas deducciones fiscales se regulan en el artículo 68 <a href='javascript:l(29657,"ar.68");'></a> quinquies del Texto Refundido de la Ley Foral del Impuesto sobre la Renta de las Personas Físicas, aprobado por Decreto Foral Legislativo 4/2008, de 2 de junio.</p><p class=Xdef>La letra C del mencionado artículo establece las condiciones generales aplicables a ambas deducciones, entre las que se encuentra, en su apartado 2, la exigencia de acreditar unos ingresos mínimos obtenidos durante el periodo impositivo cuyo plazo ordinario de presentación de declaraciones del impuesto sobre la renta de las personas físicas haya concluido en la fecha de solicitud. En particular:</p><p class=Xdef>a) Para la deducción por arrendamiento para emancipación: 3.000 euros calculados como la suma de la parte general de la base imponible más las rentas exentas.</p><p class=Xdef>b) Para la deducción por arrendamiento para acceso a vivienda: los ingresos exigidos para la inscripción en el Censo de solicitantes de vivienda protegida en régimen de arrendamiento, o en el caso del programa de vivienda de integración social en arrendamiento los exigidos para el acceso a este programa.</p><p class=Xdef>En relación con esta segunda modalidad, el artículo 21.1 <a href='javascript:l(29980,"ar.21");'></a> de la Ley Foral 10/2010 establece que únicamente podrán inscribirse en el Censo de solicitantes de vivienda protegida quienes cumplan los requisitos mínimos de acceso previstos en dicha ley foral.</p><p class=Xdef>Estos requisitos se recogen en el capítulo I, del título III <a href='javascript:l(29980,"ar.17");'></a> de la Ley Foral 10/2010, cuya redacción ha sido modificada por la Ley Foral 9/2025, de 30 de junio, para el Derecho a la Vivienda Asequible en Navarra<a href='javascript:l(57965);'></a>. En concreto, el artículo 18 <a href='javascript:l(29980,"ar.18");'></a> establece que, en el caso de viviendas en régimen de arrendamiento, las personas destinatarias deberán tener unos ingresos familiares ponderados entre 5.000 euros y hasta 2,5 veces el indicador de suficiencia adquisitiva por renta adecuada (SARA).</p><p class=Xdef>Como consecuencia de esta modificación, los ingresos mínimos exigidos para acceder a la deducción por arrendamiento para acceso a vivienda se han elevado a 5.000 euros. Sin embargo, dicha modificación no ha afectado a la deducción por arrendamiento para emancipación, cuyo importe mínimo continúa fijado en 3.000 euros en el artículo 68 quinquies <a href='javascript:l(29657,"ar.68 quinquies");'></a> del Decreto Foral Legislativo 4/2008, por lo que resulta necesario actualizarlo para equipararlo.</p><p class=Xdef>A tal efecto, el apartado 10 de la letra C del artículo 68 quinquies <a href='javascript:l(29657,"ar.68 quinquies");'></a> habilita a la persona titular del departamento competente en materia de vivienda para modificar, mediante orden foral, entre otros, los requisitos de ingresos mínimos y máximos de acceso a las deducciones.</p><p class=Xdef>En su virtud, y de conformidad con las facultades que me otorga el artículo 41 <a href='javascript:l(3925,"ar.41");'></a> de la Ley Foral 14/2004, de 3 de diciembre, del Gobierno de Navarra y de su presidenta o presidente, ordeno:</p>
+<p><a name="Ar.Único"></a><b>Artículo Único</b></p><p class=XA1>El sujeto pasivo de la deducción por arrendamiento para emancipación regulada en el artículo 68 quinquies <a href='javascript:l(29657,"ar.68 quinquies");'></a> del Texto Refundido de la Ley Foral del Impuesto sobre la Renta de las Personas Físicas, aprobado por Decreto Foral Legislativo 4/2008, de 2 de junio, deberá acreditar unos ingresos mínimos de 5.000 euros, obtenidos en el periodo impositivo cuyo plazo ordinario de presentación de la declaración del impuesto sobre la renta de las personas físicas haya finalizado en la fecha de solicitud de la deducción, calculados como la suma de la parte general de la base imponible más las rentas exentas.</p><p class=XA1>El resto de los requisitos se mantendrán en los términos establecidos en el citado precepto.</p>
+<p><a name="Dt.Única"></a><b>Disposición Transitoria Única</b></p><p class=XA1>Las previsiones contenidas en la presente orden foral serán de aplicación a las renovaciones anuales que se aprueben desde su entrada en vigor.</p>
+<p><a name="Df.Única"></a><b>Disposición Final Única</b></p><p class=XA1>La presente orden foral entrará en vigor el día siguiente al de su publicación en el Boletín Oficial de Navarra.</p><p class=XA1></p>
+</div>
+
+<div id="pie">
+<!--googleoff: all-->
+<a href="https://www.navarra.es" class="gobiernoNavarra">
+<img src="https://www.navarra.es/es/imgs/logo.gobierno-de-navarra.gif" alt="Gobierno de Navarra" />
+</a>
+<p>
+<a href="https://www.navarra.es/home_es/Indices/Sugerencias/default.htm" accesskey="c">Contacte con nosotros</a> |
+<a href="https://www.navarra.es/es/declaracion-de-accesibilidad" accesskey="2">Accesibilidad</a> |
+<a href="https://www.navarra.es/home_es/Aviso/avisoLegal.htm">Aviso legal</a> |
+</p>
+<!--googleon: all-->
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+{
+  "status": "WRITER CHECKS ONLY; INDEPENDENT WHOLE-PACK REVIEW PENDING",
+  "guide_sha256": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
+  "controls": [
+    {
+      "name": "Formalgroupstrictly900millionboundary",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(2)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Formalgroup900millionplus1",
+      "actual": "True",
+      "expected": "True",
+      "authority": "SteV31b(2)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Groupgoods1millionexactdoesnotcross",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(3)(a)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Groupgoodscase600000plus500000",
+      "actual": "1100000",
+      "expected": "1100000",
+      "authority": "SteV31b(3)(a);assumedsameparty/year",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Groupgoodscaseexcess",
+      "actual": "100000",
+      "expected": "100000",
+      "authority": "SteV31b(3)(a)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Groupother250000exactdoesnotcross",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(3)(b)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Separategoods500000exactdoesnotcross",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(5)(a)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Separateother125000exactdoesnotcross",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(5)(b)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Separateothercase80000plus60000",
+      "actual": "140000",
+      "expected": "140000",
+      "authority": "SteV31b(5)(b);assumedsameparty/category/year",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Separateotherexcess15000",
+      "actual": "15000",
+      "expected": "15000",
+      "authority": "SteV31b(5)(b)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Relationship25percentexactqualifies",
+      "actual": "True",
+      "expected": "True",
+      "authority": "SteV31b(7);assumed31a(a)/(c)",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Relationshipbelow25notformal7gate",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(7);residualevidencenotexempted",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "All3sizeroutewhenallstrictlyabove",
+      "actual": "True",
+      "expected": "True",
+      "authority": "SteV31b(4);PGR1064(2);othergatesassumed",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Generic2of3classisnotALL3TPgate",
+      "actual": "False",
+      "expected": "False",
+      "authority": "SteV31b(4);allcriteriastrictlyexceeded",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Grossmarkup8percenton100000",
+      "actual": "8000.00",
+      "expected": "8000",
+      "authority": "Assumedcase;notastatutorymargin",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Grosscostplussales",
+      "actual": "108000",
+      "expected": "108000",
+      "authority": "Assumedcase",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "Sameprofitmarginonsalesnot8percent",
+      "actual": "True",
+      "expected": "True",
+      "authority": "Assumeddenominatorcomparison",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "CbCprior-year900millionisexemptscreen",
+      "actual": "True",
+      "expected": "True",
+      "authority": "CbCAct2(1)(c);assumeno waiver",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    },
+    {
+      "name": "CbCprior-year900millionplus1notexemptscreen",
+      "actual": "False",
+      "expected": "False",
+      "authority": "CbCAct2(1)(c);actualfilerrolecheckseparate",
+      "verdict": "WRITER CONTROL; INDEPENDENT RECHECK PENDING"
+    }
+  ],
+  "all_three_original_blocks_preserved_exact": true,
+  "nine_authored_sections": true,
+  "current_oa_blocks": 2,
+  "protected_metadata_and_CTA_unchanged": true,
+  "remaining": "These boundary controls assume their statutory route/status facts; currency/period/size disputes and actual payload/foreign/treaty application remain explicit."
+}

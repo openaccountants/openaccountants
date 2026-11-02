@@ -1,0 +1,30 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf",
+      "sha256": "74af2de67b414f577a5a0b76a48153da9ae15461193d12072c796fbb62c56901",
+      "locators": "Commencement table page 1; sections 98\u2013102 printed pages 66\u201368; Schedule 2 paragraphs 1\u20133 printed pages 103\u2013106; section6 printed page15; sections130\u2013131 printed pages82\u201384"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf",
+      "sha256": "b333fa23aa5e35af57e776599fe9b1a0b94ff28145ee1caeb7d423da8384ba65",
+      "locators": "LN2026/338, rules 2\u20136, printed pages 2\u20135"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009",
+      "locators": "Observations: Provisional application as of15/07/2026; Article336(2)",
+      "retrieval": "Official HTML read; no local archive hash"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6a56149a6d6d5c7e2845c8d1/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v1of2.pdf",
+      "sha256": "0017e6af7e1b355a94377a7fc96344f2ab5d7932400033593db6b43c97796b57",
+      "locators": "Articles248 and336; signed14July2026"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf",
+      "sha256": "ec022208f1db48edf9407912000f008e788e0e232054c9742b621f2ca6f287e0",
+      "locators": "Annex24 PartII paragraph3(a)"
+    }
+  ]
+}

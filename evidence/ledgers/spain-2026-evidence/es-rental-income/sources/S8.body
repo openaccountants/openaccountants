@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Arrendamiento de inmuebles destinados a vivienda</title><meta name="ObjectId" content="5790c89071839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='c840c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario.html'>Capítulo 4. Rendimientos del capital inmobiliario</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='c390c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Reducciones del rendimiento neto</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Arrendamiento de inmuebles destinados a vivienda</h1><p><strong><strong>Normativa:&nbsp;</strong>Art. 23.2 Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p class="verde"><em><strong>Delimitaci&oacute;n de "<em>arrendamiento de un bien inmueble destinado a vivienda"</em>:</strong></em></p>
+<p><em>Se considera que se trata de un arrendamiento de un bien inmueble destinado a vivienda cuando, de acuerdo con lo dispuesto en el art&iacute;culo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (LAU),&nbsp;el arrendamiento recaiga &ldquo;sobre una edificaci&oacute;n habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario&rdquo;.</em></p>
+<p><em>Por su parte, ha de tenerse en cuenta que el art&iacute;culo 3 de la <abbr title="Ley de Arrendamientos Urbanos">LAU</abbr> dispone que &ldquo;se considera arrendamiento para uso distinto del de vivienda, aquel arrendamiento que recayendo sobre una edificaci&oacute;n tenga como destino primordial uno distinto del establecido en el art&iacute;culo anterior&rdquo;. A&ntilde;adiendo adem&aacute;s que &ldquo;en especial, tendr&aacute;n esta consideraci&oacute;n los arrendamientos de fincas urbanas celebrados por temporada, sea esta de verano o cualquier otra&rdquo;. Por ello, en ning&uacute;n caso resultar&aacute; aplicable la reducci&oacute;n se&ntilde;alada cuando el arrendamiento del inmueble se celebre por temporada, sea &eacute;sta de verano, o cualquier otra.</em></p>
+</div>
+<div class="letrita sangrado-izq">
+<p><strong>Precisi&oacute;n: a</strong><strong>rrendamiento de vivienda a una persona jur&iacute;dica</strong></p>
+<p>Como regla general, no resulta aplicable la citada reducci&oacute;n en la medida en que, al tratarse de una persona jur&iacute;dica, no se cumplen los requisitos consistentes en que el inmueble se destine a la vivienda y que el uso exclusivo de la misma recaiga en la persona f&iacute;sica determinada en el contrato de arrendamiento.</p>
+<p>Tampoco resulta aplicable dicha reducci&oacute;n cuando el arrendamiento del inmueble se realice a una sociedad para un destino gen&eacute;rico de utilizaci&oacute;n por &ldquo;sus empleados&rdquo;.&nbsp;</p>
+<p>Sin embargo, la reducci&oacute;n s&iacute; resultar&aacute; aplicable sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jur&iacute;dica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas f&iacute;sicas. Esto es, cuando desde el primer momento quede plenamente identificada la finalidad del arrendamiento en los t&eacute;rminos exigidos por la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> constando el uso exclusivo de la vivienda para una persona f&iacute;sica determinada (Criterio fijado por el Tribunal Econ&oacute;mico-Administrativo Central, en su Resoluci&oacute;n de 8 de septiembre de 2016, en recurso extraordinario de alzada para la unificaci&oacute;n de criterio).</p>
+</div>
+<p>En los supuestos de <strong>arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto positivo</strong>, calculado por diferencia entre la totalidad de ingresos &iacute;ntegros y los gastos necesarios que tengan la consideraci&oacute;n de deducibles en los t&eacute;rminos anteriormente comentados, <strong>se reducir&aacute; en alguno de los porcentajes que siguientes,</strong> atendiendo a la fecha en la que se haya celebrado el contrato:</p>
+<div>
+<p class="border border-primary rounded-sm border-size-1 p-3"><span class="verde"><strong><em>Atenci&oacute;n:</em></strong> </span><em>desde el 1 de enero de 2024, se aplican nuevos porcentajes de</em> <em>reducci&oacute;n por arrendamiento de inmuebles destinados a vivienda para los contratos que hayan sido celebrados con posterioridad al 26 de mayo de 2023,</em>&nbsp;<em>de acuerdo con la disposici&oacute;n final novena de la Ley 12/2023, de 24 de mayo, por el derecho a la vivienda (<abbr title="Bolet&iacute;n Oficial del Estado">BOE</abbr> de 15 de mayo). </em></p>
+<ol type="A">
+<li>
+<p><strong>Contratos de arrendamiento de vivienda celebrados a partir del 26 de mayo de 2023</strong></p>
+<p><strong>Con car&aacute;cter general</strong>, se fija una reducci&oacute;n del <strong>50 por 100</strong>.</p>
+<p>No obstante, en su lugar, podr&aacute; aplicarse alguno de los siguientes porcentajes incrementados si en el momento de celebrar el contrato se cumplen todos los requisitos que se se&ntilde;alan a continuaci&oacute;n:</p>
+<ol type="a">
+<li>
+<p>En un <strong>90 por 100</strong> cuando se haya formalizado por el mismo arrendador un nuevo contrato de arrendamiento sobre una vivienda situada en <strong>zonas de mercado residencial tensionado</strong>, en el que <strong>la renta inicial se hubiera rebajado en m&aacute;s de un 5 por 100</strong> en relaci&oacute;n con la &uacute;ltima renta del anterior contrato de arrendamiento de la misma vivienda, una vez aplicada, en su caso, la cl&aacute;usula de actualizaci&oacute;n anual del contrato anterior.</p>
+</li>
+<li>
+<p>En un <strong>70 por 100</strong> cuando, no cumpli&eacute;ndose los requisitos de la letra anterior, concurra alguna de las siguientes circunstancias:</p>
+<ul>
+<li>
+<p>Cuando el arrendatario sea una <strong>persona f&iacute;sica</strong>:</p>
+<ul>
+<li>
+<p>Que el arrendador alquile por primera vez la vivienda, y</p>
+</li>
+<li>
+<p>Que la vivienda est&eacute; situada en una zona de mercado residencial tensionado y,</p>
+</li>
+<li>
+<p>Que el arrendatario tenga una edad comprendida entre 18 y 35 a&ntilde;os.</p>
+</li>
+</ul>
+<p>Cuando existan varios arrendatarios de una misma vivienda, esta reducci&oacute;n se aplicar&aacute; sobre la parte del rendimiento neto que proporcionalmente corresponda a los arrendatarios que cumplan los requisitos previstos en esta letra.</p>
+</li>
+<li>
+<p>Cuando el arrendatario sea una <strong>Administraci&oacute;n P&uacute;blica o entidad sin fines lucrativos</strong> a las que sea de aplicaci&oacute;n el r&eacute;gimen especial regulado en el t&iacute;tulo II de la Ley 49/2002, de 23 de diciembre, de r&eacute;gimen fiscal de las entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo, que destine la vivienda a alguno de los siguientes fines:</p>
+<ul>
+<li>
+<p>Al alquiler social con una renta mensual inferior a la establecida en el programa de ayudas al alquiler del plan estatal de vivienda, o</p>
+</li>
+<li>
+<p>Al alojamiento de personas en situaci&oacute;n de vulnerabilidad econ&oacute;mica a que se refiere la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso m&iacute;nimo vital, o</p>
+</li>
+<li>
+<p>cuando la vivienda est&eacute; acogida a alg&uacute;n programa p&uacute;blico de vivienda o calificaci&oacute;n en virtud del cual la Administraci&oacute;n competente establezca una limitaci&oacute;n en la renta del alquiler.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>En un <strong>60 por 100</strong> cuando, no cumpli&eacute;ndose los requisitos de las letras anteriores, la vivienda hubiera sido objeto de una actuaci&oacute;n de rehabilitaci&oacute;n que hubiera finalizado en los dos a&ntilde;os anteriores a la fecha de celebraci&oacute;n del contrato.</p>
+<p class="letrita sangrado-izq">A estos efectos, se estar&aacute; al concepto de rehabilitaci&oacute;n previsto en el apartado 1 del art&iacute;culo 41 del Reglamento del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+</li>
+</ol>
+<div class="letrita border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3" p=""><strong>Precisiones:</strong>
+<ul>
+<li>
+<p>La reducci&oacute;n ser&aacute; aplicable mientras se sigan cumpliendo los requisitos establecidos con anterioridad.</p>
+</li>
+<li>
+<p>Las zonas de mercado residencial tensionado a las que podr&aacute; resultar de aplicaci&oacute;n esta reducci&oacute;n ser&aacute;n las recogidas en la resoluci&oacute;n que, de acuerdo con lo dispuesto en la legislaci&oacute;n estatal en materia de vivienda, apruebe el Ministerio de Vivienda y Agenda Urbana.</p>
+<p>Puede consultar dichas zonas de mercado residencial tensionado en el siguiente enlace: <a href="https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi/consultar-zonas-de-mercado-residencial-tensionado">https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi/consultar-zonas-de-mercado-residencial-tensionado</a></p>
+</li>
+<li>
+<p>En ning&uacute;n caso resultar&aacute;n de aplicaci&oacute;n estas reducciones en relaci&oacute;n con los contratos de arrendamiento que incumplan lo dispuesto en el apartado 6 del art&iacute;culo 17 de la Ley de Arrendamientos Urbanos.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Contratos de arrendamiento de vivienda celebrados con anterioridad al 26 de mayo de 2023</strong></p>
+<p>A los rendimientos netos de capital inmobiliario derivados de estos contratos les resultar&aacute; de aplicaci&oacute;n la reducci&oacute;n del <strong>60 por 100</strong>, prevista en el apartado 2 del art&iacute;culo 23 de la Ley del IRPF en su redacci&oacute;n vigente a 31 de diciembre de 2021.</p>
+</li>
+</ol>
+<p>Estas reducciones s&oacute;lo resultar&aacute;n aplicables sobre los rendimientos netos positivos que hayan sido calculados por el contribuyente en una autoliquidaci&oacute;n presentada antes de que se haya iniciado un procedimiento de verificaci&oacute;n de datos, de comprobaci&oacute;n limitada o de inspecci&oacute;n que incluya en su objeto la comprobaci&oacute;n de tales rendimientos.</p>
+</div>
+<p>En ning&uacute;n caso resultar&aacute; de aplicaci&oacute;n la reducci&oacute;n respecto de la parte de los rendimientos netos positivos derivada de <strong>ingresos no incluidos o de gastos indebidamente deducidos</strong> en la autoliquidaci&oacute;n del contribuyente y <strong>que se regularicen</strong> en alguno de los procedimientos citados en el p&aacute;rrafo anterior, incluso cuando esas circunstancias hayan sido declaradas o aceptadas por el contribuyente durante la tramitaci&oacute;n del procedimiento<strong>.</strong></p>
+<p class="letrita sangrado-izq">T&eacute;ngase en cuenta que la sentencia del <abbr title="Tribunal Supremo">TS</abbr> 1312/2020 (recurso de casaci&oacute;n 1434/2019), sobre la base de la distinci&oacute;n entre declaraci&oacute;n y autoliquidaci&oacute;n, fij&oacute; como criterio interpretativo en relaci&oacute;n&nbsp;con la&nbsp;redacci&oacute;n anterior al 11 de julio de 2021, que dispon&iacute;a que la reducci&oacute;n del 60 por 100&nbsp;"solo resultaba aplicable respecto de los rendimientos declarados por el contribuyente", que&nbsp;dicha reducci&oacute;n no se perd&iacute;a por no haber incluido los rendimientos en la autoliquidaci&oacute;n y, por ello, que los contribuyentes pod&iacute;an, al ser regularizados, incluir rentas no declaradas y solicitar la aplicaci&oacute;n de la reducci&oacute;n del 60 por 100 sobre el rendimiento neto resultante.</p>
+<p class="letrita sangrado-izq">Como consecuencia del citado criterio interpretativo fijado por la sentencia del TS 1312/2020 y, con el fin de aclarar de forma definitiva que la reducci&oacute;n por el arrendamiento de bienes inmuebles destinados a vivienda no puede aplicarse sobre el rendimiento neto positivo calculado durante la tramitaci&oacute;n de un procedimiento de comprobaci&oacute;n, se procedi&oacute; a modificar en este sentido, con efectos desde el 11 de julio de 2021, la redacci&oacute;n del art&iacute;culo 23.2 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> por el art&iacute;culo.3.tres de la Ley 11/2021, de 9 de julio, de medidas de prevenci&oacute;n y lucha contra el fraude fiscal, de transposici&oacute;n de la Directiva (<abbr title="Uni&oacute;n Europea">UE</abbr>) 2016/1164, del Consejo, de 12 de julio de 2016, por la que se establecen normas contra las pr&aacute;cticas de elusi&oacute;n fiscal que inciden directamente en el funcionamiento del mercado interior, de modificaci&oacute;n de diversas normas tributarias y en materia de regulaci&oacute;n del juego.</p>
+<div class="border border-primary rounded-sm border-size-1 p-3 mb-3 pt-3 px-3 page-break-after--always_pdf">
+<p><em><span class="verde"><strong>Alquileres tur&iacute;sticos: </strong></span></em></p>
+<p><em>En los alquileres tur&iacute;sticos no resultan aplicables las reducciones previstas en el art&iacute;culo 23.2 de la Ley de IRPF, ya que no tienen por finalidad satisfacer una necesidad permanente de vivienda sino cubrir una necesidad de car&aacute;cter temporal. V&eacute;ase al respecto la Resoluci&oacute;n del Tribunal Econ&oacute;mico-Administrativo Central (TEAC), de 8 de marzo de 2018, Reclamaci&oacute;n n&uacute;mero <span class="criterioNegrita">00/05663/2017</span>, reca&iacute;da en recurso extraordinario de alzada para unificaci&oacute;n de criterio.</em></p>
+<p><em>Hasta el 31 de enero de 2024, el art&iacute;culo 54 ter del Reglamento General de las actuaciones y los procedimientos de gesti&oacute;n e inspecci&oacute;n tributaria y de desarrollo de las normas comunes de los procedimientos de aplicaci&oacute;n de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio, en la redacci&oacute;n dada por la disposici&oacute;n final segunda del Real Decreto 366/2021, de 25 de mayo, regulaba de forma independiente la obligaci&oacute;n de informar sobre la cesi&oacute;n del uso de viviendas con fines tur&iacute;sticos, dirigida, en particular, a las plataformas colaborativas que intermedian en la cesi&oacute;n. </em></p>
+<p><em>La declaraci&oacute;n se presentaba a trav&eacute;s del modelo 179, aprobado por Orden <abbr title="Ministerio de Hacienda">HAC</abbr>/612/2021, de 16 de junio, con periodicidad anual, en el plazo comprendido entre el 1 y el 31 de enero de cada a&ntilde;o, en relaci&oacute;n con la informaci&oacute;n y operaciones que correspondieran al a&ntilde;o natural inmediato anterior.</em></p>
+<p><em>Desde el 1 de febrero de 2024, esta obligaci&oacute;n de informaci&oacute;n se incluye dentro de los supuestos de la nueva obligaci&oacute;n de informaci&oacute;n de determinadas actividades por los operadores de plataformas. Por este motivo, se han aprobado a trav&eacute;s de la Orden <abbr title="Ministerio de Hacienda">HAC</abbr>/72/2024, de 1 de febrero, el modelo 040 "Declaraci&oacute;n censal de alta, modificaci&oacute;n y baja en el registro de operadores de plataforma extranjeros no cualificados y en el registro de otros operadores de plataforma obligados a comunicar informaci&oacute;n" y el modelo 238 "Declaraci&oacute;n informativa para la comunicaci&oacute;n de informaci&oacute;n por parte de operadores de plataformas", de modo que para el ejercicio 2024 y siguientes, se elimina la obligaci&oacute;n de presentar la declaraci&oacute;n informativa sobre la cesi&oacute;n de uso de viviendas con fines tur&iacute;sticos (modelo 179).</em></p>
+</div><ol class="list-unstyled mb-0"><li class="position-relative mb-2"><a target="_self" data-aeat-id="9b90c89071839910VgnVCM100000dc381e0aRCRD" href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/arrendamiento-inmuebles-destinados-vivienda/cuadro-reducciones-arrendamiento.html" class="d-block mb-2">Cuadro-resumen: reducciones por arrendamiento de viviendas del artículo 23.2 de la Ley del IRPF aplicables en 2025</a></li></ol><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

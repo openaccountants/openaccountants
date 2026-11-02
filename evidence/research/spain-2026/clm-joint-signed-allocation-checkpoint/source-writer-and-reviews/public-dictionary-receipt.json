@@ -1,0 +1,10 @@
+{
+  "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Disenyo_registro/DR_100_199/diccionarioXSD_2025.properties",
+  "final_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Disenyo_registro/DR_100_199/diccionarioXSD_2025.properties",
+  "status": 200,
+  "bytes": 425375,
+  "sha256": "67409ad3027f2548d90bd64ea5eeff7fa344ace87377a048527d2c7de92fe93b",
+  "retrieved_utc": "2026-10-27T23:02:05.923504+00:00",
+  "file": "sources/diccionarioXSD_2025.properties",
+  "route": "Actual public AEAT footer Dise\u00f1os de registro > Modelos > 100-199 > 100 individual 2025 dictionary. Web open had Unicode decode failure; raw response retained and ISO-8859-1 readable derivative. Not a calculation control specification."
+}

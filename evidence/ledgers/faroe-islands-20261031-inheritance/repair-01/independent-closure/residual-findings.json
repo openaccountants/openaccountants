@@ -1,0 +1,12 @@
+[
+  {
+    "id": "FO-EST-005",
+    "priority": 2,
+    "files": [
+      "skills/faroe-islands/fo-inheritance-duty.md:25",
+      "skills/faroe-islands/fo-estate-income-tax.md:26"
+    ],
+    "finding": "Frontmatter version is0.2 in both Guides, but both H1s still say v 0.1. This contradicts the template version-agreement rule and finding-disposition assertion that headings advanced.",
+    "required_fix": "Change only both H1s to v 0.2, refresh current hashes/manifest and disposition evidence; preserve this bounded closure record and all prior review bytes."
+  }
+]

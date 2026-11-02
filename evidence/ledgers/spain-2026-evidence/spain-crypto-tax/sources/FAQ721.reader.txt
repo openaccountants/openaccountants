@@ -1,0 +1,183 @@
+
+
+     
+	  
+    
+	
+
+Agencia Tributaria: Preguntas frecuentes sobre el modelo 721 (HTML) - ¿Quiénes están obligados a presentar el modelo ...
+ 
+
+
+  	
+[[ID:body]]
+
+  
+	  
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Declaraciones Informativas
+
+Modelo 721. Declaración informativa sobre monedas virtuales situadas en el extranjero
+
+
+
+
+ 
+			 
+				
+[[ID:acc-main]]
+
+[[ID:js-nombre-canal]]
+
+Preguntas frecuentes sobre el modelo 721 (HTML)
+Saltar índice de la informaciónÍndice
+Índice:
+
+[[ID:indicePaginado]]
+
+¿Quiénes están obligados a presentar el modelo 721?
+
+¿Qué información debe suministrarse en el modelo 721?
+
+¿Respecto de qué monedas virtuales no resultará de aplicación esta obligación de información?
+
+¿Qué se entiende por "moneda virtual"?
+
+¿Cuándo se entiende una moneda virtual situada en el extranjero?
+
+Plazo de presentación del modelo 721
+
+[[ID:js-nombre-canal-paginado]]
+
+¿Quiénes están obligados a presentar el modelo 721?
+
+Los obligados a presentar el modelo 721, “Declaración informativa sobre monedas virtuales situadas en el extranjero”, son los delimitados en el apartado 1 del artículo 42 quater del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio (RGAT, en adelante), es decir, las personas físicas y jurídicas residentes en territorio español, los establecimientos permanentes en dicho territorio de personas o entidades no residentes y las entidades a que se refiere el artículo 35.4 de la Ley 58/2003, de 17 de diciembre, General Tributaria, que sean titulares de monedas virtuales en el extranjero, o respecto de las cuales tengan la condición de beneficiarios, autorizados o de alguna otra forma ostenten poder de disposición, o de las que sean titulares reales, custodiadas por personas o entidades que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir monedas virtuales, a 31 de diciembre de cada año.
+
+Dicha obligación también se extiende a quienes hayan sido titulares, autorizados, o beneficiarios de las citadas monedas virtuales, o hayan tenido poderes de disposición sobre las mismas, o hayan sido titulares reales en cualquier momento del año al que se refiera la declaración y que hubieran perdido dicha condición a 31 de diciembre de ese año. En estos supuestos, la información a suministrar será la correspondiente a la fecha en la que dicha extinción se produjo.
+
+[[ID:0f220c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+¿Qué se entiende por “titular real”?
+
+[[ID:collapse-0f220c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+A estos efectos, se entenderá por titular real quien tenga dicha consideración de acuerdo con lo previsto en el apartado 2 del artículo 4 de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo, respecto de las monedas virtuales en el extranjero.
+
+[[ID:21620c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+¿Tienen obligación de presentar el modelo 721 los sujetos domiciliados en el País Vasco y Navarra?
+
+[[ID:collapse-21620c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+La declaración informativa sobre monedas virtuales situadas en el extranjero se extiende a todos los obligados tributarios delimitados en el apartado 1 del artículo 42 quater del RGAT, debiéndose presentar la correspondiente declaración por parte de los sujetos domiciliados en el País Vasco y Navarra, con arreglo a la respectiva normativa, estatal o foral a la que estén sometidos.
+
+[[ID:f9720c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+¿Están obligadas a informar las herencias yacentes? ¿Y los herederos?
+
+[[ID:collapse-f9720c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+Las herencias yacentes están obligadas a informar en la medida en la que son entidades del artículo 35.4 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+
+Los herederos o legatarios estarán obligados a informar desde que exista aceptación tácita o expresa de la herencia.
+
+[[ID:89820c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+¿El hecho de que las monedas virtuales situadas en el extranjero estén custodiadas en un “monedero caliente” / “hot wallet” o en un “monedero frío” /“cold wallet” es relevante para determinar si existe o no obligación de presentar el modelo 721?
+
+[[ID:collapse-89820c165f1fb810VgnVCM100000dc381e0aRCRD]]
+
+Para que exista la obligación de declaración de las monedas virtuales situadas en el extranjero mediante la presentación del modelo 721 deben concurrir dos requisitos:
+
+Que dichas monedas virtuales sean custodiadas por personas o entidades que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir monedas virtuales.
+
+Que las personas o entidades a que se refiere el párrafo anterior no sean residentes en España o establecimientos permanentes en territorio español de personas o entidades residentes en el extranjero.
+
+En consecuencia, por lo que se refiere al primer requisito, únicamente si las monedas virtuales son custodiadas por personas o entidades que proporcionen servicios para salvaguardar claves criptográficas privadas en nombre de terceros o para mantener, almacenar y transferir monedas, se entraría a valorar el segundo requisito y el resto cuyo cumplimiento implican la obligación de presentación de esta declaración informativa.
+
+En este sentido, por lo que se refiere al primer requisito, debe señalarse que en el ecosistema de los criptoactivos existen distintos medios por los que las monedas virtuales o los medios de acceso a éstas, esto es, las claves criptográficas privadas, pueden ser custodiados.
+
+Con carácter general se pueden distinguir los llamados “wallets” o monederos custodios y no custodios, en función de si la custodia y, por tanto, de alguna manera el control, de los criptoactivos o sus claves se mantiene por un tercero o por el propio usuario. Asimismo, se distinguen entre los llamados “hot wallets” y “cold wallets”, según el monedero esté conectado a internet y las claves se mantengan custodiadas “online” o no. Según se observa en la práctica, y de nuevo en términos generales, podría decirse que los “cold wallets” funcionan como monederos no custodios.
+
+Por tanto, con independencia de si se trata de un “hot wallet” o de un “cold wallet”, las monedas virtuales que se mantengan en monederos respecto de los cuales el consultante mantenga el control de las claves criptográficas privadas y, por consiguiente, no estén custodiadas por personas o entidades que proporcionen servicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir monedas virtuales, de conformidad con la disposición adicional decimoctava, letra d), de la LGT y con el artículo 42 quater del RGAT, no se tendrían en cuenta en el cómputo de los saldos a los que se refieren los apartados 3.c) y 5.d) del artículo 42 quater y, en consecuencia, no se informaría sobre las mismas en el marco de la obligación de información sobre monedas virtuales situadas en el extranjero.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Sólo la página actual
+
+[[ID:pdf-Todo]]
+Todas las páginas del índice
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+ContinuarGenerar PDFSiguiente¿Qué información debe suministrarse en el modelo 721?
+		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 08/septiembre/2026
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

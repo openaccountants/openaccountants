@@ -1,0 +1,338 @@
+[
+  {
+    "line": 27,
+    "section": "Who this applies to",
+    "text": "IGIC applies in the Canary Islands under [Ley 20/1991 arts. 3–8](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a3). A Canary establishment does not use the peninsula/Balearic IVA return for its local IGIC supplies. Determine the actual establishment, goods movement, customer status and transaction before choosing the territorial tax. Movements of goods from mainland Spain, other EU territory or another third territory into the islands are imports for IGIC; they are not ordinary mainland intra-EU acquisitions.",
+    "references": {}
+  },
+  {
+    "line": 29,
+    "section": "Who this applies to",
+    "text": "This Guide supplies the ordinary sole-trader/company computation and the small-business franchise gateway. The regional exemption/rate/regime provisions were consolidated in [Decreto Legislativo 1/2025](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249); many older Ley 4/2012 article references were repealed and restated there. Ley 20/1991 still supplies the principal charge, place, time, base and deduction rules. Read both, including effective dates. The new 50,000 ordinary REPEP ceiling visible in the latest art. 89 starts in **2027**; the separate July 2026 election has different conditions.",
+    "references": {}
+  },
+  {
+    "line": 31,
+    "section": "Who this applies to",
+    "text": "Check exemption before rate. Current regional arts. 2–30 cover the actual social, health, education, financial, insurance, land, building and letting conditions. A genuine residential letting exemption is distinct from hotel-type accommodation. Regional art. 21 also excludes temporary use of furnished/equipped homes promoted through tourist channels for consideration, even without hotel services; test those facts and any separately available REPEP franchise. A tax-exempt output does not automatically preserve input recovery. Special modules, retail, agriculture, margin, travel, group, cash and gold regimes and product-specific AIEM assessments require their own conditions; the ordinary method below does not certify every specialist claim.",
+    "references": {}
+  },
+  {
+    "line": 35,
+    "section": "Rates, bands and thresholds",
+    "text": "| Item | Applicable rule | Tax year/period | Official source |",
+    "references": {}
+  },
+  {
+    "line": 37,
+    "section": "Rates, bands and thresholds",
+    "text": "| Ordinary general IGIC | 7% | 2026 | [DL 1/2025 art. 32](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a3-4) |",
+    "references": {}
+  },
+  {
+    "line": 38,
+    "section": "Rates, bands and thresholds",
+    "text": "| Enumerated zero-rated supplies | 0%; actual art. 33 product/service conditions | 2026 | [Art. 33](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a3-5) |",
+    "references": {}
+  },
+  {
+    "line": 39,
+    "section": "Rates, bands and thresholds",
+    "text": "| Petroleum/refined petroleum, including biofuel mixtures | 1% | From 1 January 2026 | [Art. 33 bis, January version](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249&p=20251229&tn=1#a3-13) |",
+    "references": {}
+  },
+  {
+    "line": 40,
+    "section": "Rates, bands and thresholds",
+    "text": "| Gas added to the specific rate | 1% | From 1 July 2026; do not backdate this addition | [Art. 33 bis amendment](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a3-13) |",
+    "references": {}
+  },
+  {
+    "line": 41,
+    "section": "Rates, bands and thresholds",
+    "text": "| Enumerated superreduced/reduced supplies | 3% / 5%, respectively; apply the precise product/housing rules | 2026 | [Arts. 34–35/38](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a3-6) |",
+    "references": {}
+  },
+  {
+    "line": 42,
+    "section": "Rates, bands and thresholds",
+    "text": "| Enumerated increased/special supplies | 9.5% / 15% / 20%, with the vehicle, vessel, aircraft and product conditions | 2026 | [Arts. 32/36–41](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a3-4) |",
+    "references": {}
+  },
+  {
+    "line": 43,
+    "section": "Rates, bands and thresholds",
+    "text": "| Ordinary REPEP prior-year turnover | No more than 30,000; individual established taxpayer and regime conditions | 2026 ordinary gateway | [Art. 89, explicit deferred amendment and previous text](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a8-11) |",
+    "references": {}
+  },
+  {
+    "line": 44,
+    "section": "Rates, bands and thresholds",
+    "text": "| Exceptional REPEP entry | 2025 total turnover no more than 50,000; valid July 2026 census election | Effective 1 July 2026 | [DA 7](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#da-9) |",
+    "references": {}
+  },
+  {
+    "line": 45,
+    "section": "Rates, bands and thresholds",
+    "text": "| General prorrata | Deduction-entitling turnover / included total turnover ×100, rounded up to a whole percentage | 2026 annual method | [Ley 20/1991 art. 37](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a37) |",
+    "references": {}
+  },
+  {
+    "line": 46,
+    "section": "Rates, bands and thresholds",
+    "text": "| Compulsory special prorrata | General recovery exceeds special recovery by 10% or more | 2026 annual comparison | [Art. 36.2.2](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a36) |",
+    "references": {}
+  },
+  {
+    "line": 47,
+    "section": "Rates, bands and thresholds",
+    "text": "| Investment-good annual change | Strictly more than 10 percentage points; four following years, nine for land/buildings; divide adjustment by 5/10 | 2026 method | [Arts. 40–41](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a40) |",
+    "references": {}
+  },
+  {
+    "line": 48,
+    "section": "Rates, bands and thresholds",
+    "text": "| Ordinary input claim/carry | Four-year statutory periods, subject to each rule's starting point and exceptions | 2026 | [Art. 33.3/5](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a33) |",
+    "references": {}
+  },
+  {
+    "line": 50,
+    "section": "Rates, bands and thresholds",
+    "text": "Choose the rate in force at **accrual**, not invoice entry or eventual payment. The specific 1% gas addition is separate from mainland IVA's temporary energy rules. Housing, vehicles and exceptional La Palma recovery relief require their own statutory category, evidence and period; a general-rate example does not determine their rate.",
+    "references": {}
+  },
+  {
+    "line": 56,
+    "section": "The base / 1. Establish charge, location, payer and accrual",
+    "text": "For goods apply [art. 16](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a16), including dispatch, installation and immovable-property rules. Ordinary B2B services follow the recipient establishment to which the service is supplied; ordinary B2C services follow the supplier's establishment, subject to art. 17's specified outside-EU recipient categories and special rules. Immovable-property services follow the property; transport, events, catering, vehicle hire, telecommunications and electronically supplied services need their actual art. 17 category. A foreign customer's address alone does not establish exemption.",
+    "references": {}
+  },
+  {
+    "line": 58,
+    "section": "The base / 1. Establish charge, location, payer and accrual",
+    "text": "Under [art. 19](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a19), a Canary-established business recipient normally accounts for a taxable supply by a non-established supplier under reverse charge. The statutory exceptions include taxable immovable-property letting and intermediation in such letting. Other domestic reverse-charge categories include the defined construction/subcontract chains, specified property transfers, waste, metals and electronics. For the specified mobile/computer products, a non-reseller's same-operation invoice threshold is **over 10,000 excluding IGIC**; a qualifying reseller does not have that monetary exemption. Do not reverse-charge every foreign purchase without testing location, establishment and the exception.",
+    "references": {}
+  },
+  {
+    "line": 60,
+    "section": "The base / 1. Establish charge, location, payer and accrual",
+    "text": "[Art. 18](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a18) ordinarily accrues goods when made available and services when performed. Continuous supplies accrue when each price becomes due; qualifying long intervals/no-due-date cases have the annual 31 December rule. A received advance accrues to the amount actually received before supply. Imports have their separate declaration/entry and special-regime release rule. An unpaid ordinary invoice does not defer output tax to collection unless an applicable special regime changes that timing.",
+    "references": {}
+  },
+  {
+    "line": 64,
+    "section": "The base / 2. Determine consideration and import value",
+    "text": "For ordinary supplies, [arts. 22–23](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a22) start with total consideration. Include charged commissions, transport, insurance, packaging, price-linked subsidies, assumed customer debts and the applicable other levies. Exclude IGIC itself, qualifying contemporaneous documented discounts, genuine non-consideration compensation and evidenced amounts paid in the customer's name and account under an express mandate. Qualifying inter-island transport/port/insurance costs have art. 22.3.d's distinct exclusion. A separately labelled reimbursement does not by itself satisfy it. Non-cash, related-party and composite transactions need the actual art. 23 valuation rule.",
+    "references": {}
+  },
+  {
+    "line": 66,
+    "section": "The base / 2. Determine consideration and import value",
+    "text": "Imports follow [art. 25](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a25): establish customs value and the prescribed duties/other charges and incidental expenses to the required destination, excluding IGIC and the incorporated AIEM exclusion. Keep the customs assessment and importer's identity. Calculate AIEM separately if the actual commodity code is within its charge; it is not an extra universal IGIC rate or an IGIC input credit.",
+    "references": {}
+  },
+  {
+    "line": 68,
+    "section": "The base / 2. Determine consideration and import value",
+    "text": "For returns, cancellations, later discounts and bad debt, follow the applicable art. 22 reduction and art. 20 rectifying-invoice rules before adjusting output. Ordinary bad-debt relief under art. 22.7 normally requires **one year** from accrual without collection; where the creditor's preceding-year turnover is no more than **6,010,121.04**, the creditor can use **six months or one year**. For instalment/deferred payments, the statutory long-term deferral test compares the last/only maturity with accrual; count the waiting period from the unpaid instalment's maturity. Record the debt in the required books. The debtor must be a business recipient, or the nonbusiness recipient's base excluding IGIC must be **strictly above 50**. Evidence a judicial, notarial or other reliably proved collection demand; public debt instead requires the competent body's prescribed certificate. Modify within **six months** after the chosen waiting period. [D 268/2011 art. 2](https://www3.gobiernodecanarias.org/libroazul/pdf/65872.pdf) requires evidenced dispatch of the rectifying invoice and creditor communication within **one month** of its issue.",
+    "references": {}
+  },
+  {
+    "line": 70,
+    "section": "The base / 2. Determine consideration and import value",
+    "text": "Art. 22.8 excludes secured/insured portions and connected-party debts. The recipient-territory test includes the Canary Islands, peninsula, Balearics, Ceuta and Melilla; the specified qualifying EU insolvency exception is separate. Pre-insolvency-accrual debts cannot use ordinary bad-debt relief after the insolvency order: test art. 22.6's insolvency route and its own clock instead. Partial collections include their proportional IGIC. Later recovery from a nonbusiness debtor and withdrawal/collection agreement have the statutory upward-correction rules; withdrawal or agreement requires a rectifying invoice within one month. Keep these events in the correction ledger. Do not write off unpaid output tax merely because an invoice aged.",
+    "references": {}
+  },
+  {
+    "line": 74,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Under [arts. 28–33](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a28), recover only IGIC legally accrued, borne by the claimant, supported by the required invoice/import document, and used in deduction-entitling activity. Mainland IVA is not entered as IGIC input. Export/defined outside-territory supplies can preserve recovery; ordinary exempt health/financial/residential activity does not acquire it from a zero-output figure. Receive the document and satisfy accrual before claiming; retain the correct source year's definitive percentage if claiming later.",
+    "references": {}
+  },
+  {
+    "line": 76,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Private/non-business costs and blocked art. 30 entertainment, gifts, jewellery, food, tobacco and other specified costs are excluded, subject to their actual resale/industrial and business-travel exceptions. For mixed-use **investment goods**, art. 29.7 permits evidenced business-use allocation. Its passenger-car rule presumes **50%**, with the enumerated goods-transport, paid passenger transport, instruction, manufacturer demonstration, commercial-agent and security exceptions presumed **100%**. A return entry or accounting ledger alone does not prove use. These are IGIC provisions; do not import an IRPF motor-expense deduction from them.",
+    "references": {}
+  },
+  {
+    "line": 78,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "A documented purchase from a qualifying exempt **retailer** can carry art. 29.3's recoverable implicit burden, provided the invoice states the retailer condition and the claimant otherwise has recovery entitlement. Use `price ×0.7×(ordinary applicable percentage/100)`; at a 7% underlying rate that is **4.9% of the qualifying consideration**. Do not also claim separately charged IGIC on that same exempt invoice. This is not a general credit on purchases from every exempt business.",
+    "references": {}
+  },
+  {
+    "line": 80,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "First classify differentiated sectors under [art. 34](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a34). Different activities have different **CNAE groups**; different deduction regimes require their art. 37 percentages to differ by **strictly more than 50 percentage points** from the principal activity, identified by the preceding year's largest turnover. An ancillary activity stays with its parent only if it contributes to that activity and prior-year turnover is **no more than 15%** of the parent's; use reasonable forecasts for a new ancillary activity and correct if actual results exceed the limit. The principal, its ancillary activities and other activities within the 50-point boundary form one sector; distinct activities beyond it form another. The specified special regimes and finance leases have their separate sector rules.",
+    "references": {}
+  },
+  {
+    "line": 82,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Allocate exclusive input to its own sector and apply that sector's deduction method independently. For input genuinely shared across sectors, use the art. 37 aggregate entitling/included turnover of those sectors, with the specific statutory special-regime exclusions and deemed non-entitlement. Thus independent fully entitling/non-entitling sectors with 60/40 turnover, 1,000 input exclusive to the first and 1,000 shared recover **1,000+600=1,600**, rather than pooling both inputs at 60%. Within a sector, remove blocked/private amounts first. For general prorrata compute `P = ceil(100×eligible turnover/included total turnover)/100` using art. 37's exclusions: outside-island establishments, IGIC itself, disposal of used investment goods, non-habitual property/financial transactions and specified non-subject operations. Property letting is deemed habitual for this purpose. Do not use all bank receipts as the denominator.",
+    "references": {}
+  },
+  {
+    "line": 84,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Calculate general recovery `G = P×otherwise eligible input`. Calculate special recovery `S = taxable-only input +P×shared input`; exempt-only input contributes zero. Special is compulsory when `G>0 and G≥1.10×S`, or a valid election applies. Apply the preceding year's percentage provisionally, then calculate the current definitive entitlement and post **definitive less provisional recovery** at the annual adjustment. A negative adjustment reduces input; it is not new taxable turnover ([arts. 35–39](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a35)).",
+    "references": {}
+  },
+  {
+    "line": 86,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Investment goods under art. 40.8–9 are tangible work/exploitation instruments normally used for **more than one year**; the statutory acquisition-value floor is **500,000 pesetas**. Repairs, separately acquired repair spares, packaging, work clothes and the specified blocked goods are excluded. Accounting capitalisation alone does not satisfy the tax definition. For investment goods retain the year, actual start of use, original input and definitive deduction. A subsequent annual percentage change strictly above **10 points** gives a tax adjustment `(original deducted amount − current-percentage entitlement)/5`, or `/10` for land/buildings; a positive amount is paid back, a negative amount is additional deduction. Entry in an input-adjustment box therefore uses the opposite sign. Sales during the adjustment period use art. 42's single remaining-period treatment and actual taxable/exempt outcome.",
+    "references": {}
+  },
+  {
+    "line": 88,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "For an ordinary investment-good sale after entry into use, [article 42](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a42) makes one adjustment for the **sale year and all remaining years** of the article 40 period, even if earlier years did not use prorrata. A taxable, nonexempt sale is treated as 100% deduction-entitling for those years. Let `I` be original input IGIC, `D0` the original definitive deduction, `n` the years remaining including sale year, and `k=5` (movables) or `10` (land/buildings). The provisional additional deduction is `(I - D0) × n/k`, but the actual additional deduction **cannot exceed IGIC charged to the buyer on the sale**. Use the smaller amount. This cap restricts extra input recovery; the sale's output tax remains in output tax.",
+    "references": {}
+  },
+  {
+    "line": 90,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "For an exempt/non-subject sale that does not preserve recovery, use 0% entitlement for the sale year and remaining years: repay `D0 × n/k`. The same non-entitling rule applies to the specified change to blocked/private purposes. The statutory exempt/non-subject supplies that preserve deduction entitlement instead use the 100% rule; their additional deduction is capped at the hypothetical IGIC obtained by applying the current rate for goods of the same nature to the **domestic value of the exported goods**. Establish that value and rate rather than treating every zero-output sale as a zero-entitlement sale. A transfer within article 9.1 uses buyer subrogation rather than a seller's single-sale adjustment; article 42.3 also brings a pre-use disposal into the adjustment rules.",
+    "references": {}
+  },
+  {
+    "line": 92,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Example: machinery acquired and brought into use in 2024, original input EUR 14,000, original definitive deduction 50% = EUR 7,000, sold in 2026. The five-year window ends in 2028, so `n=3` for 2026–2028. At taxable sale base EUR 5,000 and rate 7%, output tax is EUR 350. Uncapped extra input is `(14,000 - 7,000) × 3/5 = EUR 4,200`, but the lawful extra deduction is **EUR 350**, not EUR 4,200. On the same original deduction and remaining years, a non-entitling exempt sale instead requires EUR 4,200 repayment. Post the repayment/additional deduction with the proper opposite input-adjustment sign and retain the year/percentage/value/output-tax calculation.",
+    "references": {}
+  },
+  {
+    "line": 94,
+    "section": "The base / 3. Recover eligible input, then allocate",
+    "text": "Startup inputs use [arts. 43/43 bis](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a43). Establish business intention by objective evidence and use the proposed provisional percentage, unless ATC fixes another. The first counted year is the habitual-start year only when operations begin **before 1 July**; otherwise it is the following year. A 1 July 2026 start therefore counts **2027–2030**. At the end of the four counted calendar years, compute one definitive art. 37 percentage from **aggregate entitling turnover divided by aggregate included total turnover**, rounded upward, rather than averaging annual percentages. Under general prorrata multiply the eligible pre-start pool by that definitive percentage. Under special prorrata retain [art.39](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a39): exclusive-entitling input is recovered in full, exclusive-non-entitling input gives zero, and the global percentage applies only to shared eligible input. Tax repayment equals provisional recovery minus definitive entitlement; an additional deduction has the opposite sign, and the input-adjustment entry reverses the repayment sign. For example, qualifying input 10,000 provisionally recovered at 80%, with aggregate four-year entitling/included turnover 300,000/500,000, gives definitive 6,000 and repayment 2,000/input adjustment −2,000. Keep art. 43 bis's separate remaining investment-good adjustments after this global correction.",
+    "references": {}
+  },
+  {
+    "line": 98,
+    "section": "The base / 4. Small-business franchise and its 2026 transition",
+    "text": "[Regional arts. 89–91](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#a8-11) ordinarily cover established individuals whose preceding-year total turnover does not exceed **30,000 in 2026**, after annualising a start year and applying the actual all-activity/worldwide turnover and succession rules. Companies do not qualify merely because they are small. The exemption covers qualifying outputs and denies related input recovery; imports and reverse-charge liabilities still require their separate treatment. Invoice wording is **“exención franquicia fiscal”**. Keep the census, records and information-return obligations. A valid renunciation operates across the taxpayer's activities for at least **three years**, with the prescribed tacit first-return route and revocation rules.",
+    "references": {}
+  },
+  {
+    "line": 100,
+    "section": "The base / 4. Small-business franchise and its 2026 transition",
+    "text": "The exceptional [DA 7](https://www.boe.es/buscar/act.php?id=BOC-j-2025-90249#da-9) allowed excluded/renouncing individuals with **2025 turnover no more than 50,000** to elect entry effective **1 July 2026**, by a modification census return **during July 2026**. A late election has no effect; 50,000 was not an automatic all-year 2026 ceiling. For electors, first-half inputs retain first-half entitlement and final prorrata uses **first-half transactions**; under special prorrata this reconciliation applies to the shared pool. Second-half inputs have no recovery, except the statutory investment-good regularisation rules. First-half investment inputs retain their first-half benchmark; second-half ones start at zero. For assets already used before 2026, the annual percentage includes the entire year and treats second-half franchise outputs as non-entitling. Record each acquisition/use period before adjusting. The ordinary 50,000 ceiling begins **1 January 2027**.",
+    "references": {}
+  },
+  {
+    "line": 104,
+    "section": "The base / 5. Reconcile the return",
+    "text": "Sum tax by valid rate, recipient reverse charges and signed output corrections; subtract eligible current input, import input, signed annual/investment adjustments and available prior credits. Keep prior-credit opening, use and closing balances; do not deduct more prior credit than exists. A negative balance carries under art. 33, or is requested at the eligible year-end/monthly refund route under arts. 45–46. Exemption does not turn a disallowed input balance into a refund.",
+    "references": {}
+  },
+  {
+    "line": 106,
+    "section": "The base / 5. Reconcile the return",
+    "text": "The ATC's linked [420 instructions](https://www3.gobiernodecanarias.org/tributos/atc/documents/65729/201004/Instrucciones_modelo_420.pdf/59fbc2b2-7aff-4a68-95ea-4984da563cfc?t=1742821063325) map output to **25**, eligible inputs/adjustments to **40**, their difference to **41**, the specified bad-debt recipient adjustment to **42**, prior credit to **43**, previous same-period result to **44**, and result `45=41+42−43−44`. Reverse-charge output is 19/20; ordinary/import current and investment inputs use 26–33; input corrections 35, compensation 36, investment 37, startup 38 and annual 39. Bases are reported before prorrata, quotas after recovery limitations. These published instructions retain old Ley 4/2012 references and do not by themselves prove the final 2026 program's rate-row capacity; use the actual 2026 form for its detailed fields. No live filing or program-parity run is claimed.",
+    "references": {}
+  },
+  {
+    "line": 110,
+    "section": "Deadlines and filing",
+    "text": "| Obligation | Rule | Period | Official source |",
+    "references": {}
+  },
+  {
+    "line": 112,
+    "section": "Deadlines and filing",
+    "text": "| Ordinary quarterly 420 | Days 1–20 April/July/October; Q4 throughout following January; non-working-day extension |2026 income periods |[ATC 420, updated 13 July 2026](https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420) |",
+    "references": {}
+  },
+  {
+    "line": 113,
+    "section": "Deadlines and filing",
+    "text": "| Direct debit 420 | First 15 days of the following ordinary quarter month; first 20 days of January, with the specified extension |2026 route |[Same ATC page](https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420) |",
+    "references": {}
+  },
+  {
+    "line": 114,
+    "section": "Deadlines and filing",
+    "text": "| SII filers |417 instead of 420; establish compulsory/elected monthly status and current calendar |2026 |[ATC 420 scope](https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420),[D 268/2011 arts. 9–10/57](https://www3.gobiernodecanarias.org/libroazul/pdf/65872.pdf) |",
+    "references": {}
+  },
+  {
+    "line": 115,
+    "section": "Deadlines and filing",
+    "text": "| Annual summary 425 | January following the year, subject to actual exemption/status; franchise turnover information is distinct from a payable quarterly return |2026 filed 2027 |[D 268/2011 and current ATC instructions](https://www3.gobiernodecanarias.org/libroazul/pdf/65872.pdf) |",
+    "references": {}
+  },
+  {
+    "line": 116,
+    "section": "Deadlines and filing",
+    "text": "| Quarterly refund |Ordinary negative result is carried; year-end refund request in Q4, unless registered for the monthly refund route |2026 |[Ley 20/1991 arts. 33/45–46](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a45) |",
+    "references": {}
+  },
+  {
+    "line": 118,
+    "section": "Deadlines and filing",
+    "text": "Use the competent ATC portal and approved program. The current 420 page states that submitting it through a generic electronic register is invalid. Electronic filing is compulsory apart from the specified individual-exclusive-property-lessor exception with prior-year turnover no more than 50,000. Preserve the submitted return, receipt, payment reference and census/election history. Mainland 036/303 obligations do not replace the Canary census and IGIC forms.",
+    "references": {}
+  },
+  {
+    "line": 122,
+    "section": "Penalties and interest",
+    "text": "Apply the actual conduct and tax outcome under [LGT arts. 26–28/188/191/198](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27). Voluntary late payable returns without prior request attract **1% plus 1% per complete late month** within 12 months, then **15% plus interest after those 12 months**, with the conditional 25% surcharge reduction. Ordinary non-economic-loss late returns start at **200**, halved under the no-request rule. Classified underpayment offences carry 50%/50–100%/100–150%, with reductions only on their conditions. Collection surcharges are 5/10/20% by stage. Use the period's actual interest rate; these are separate from incorrectly recovered input, invoice and information-return offences. A paid tax balance does not by itself cure an omitted return.",
+    "references": {}
+  },
+  {
+    "line": 126,
+    "section": "Cross-border points",
+    "text": "Canary territory is outside EU VAT territory. Mainland-to-island goods need their actual export/import evidence; export treatment and importer input entitlement are different questions. Ordinary cross-border B2B services follow the correct establishment under art. 17 and art. 19's payer rules; islands-to-mainland services are not automatically local 7% invoices. Check special property/digital-service rules before treating a supply as outside territory. Foreign input taxes follow their own refund mechanism and are not claimed in 420. AIEM depends on the goods' tariff classification and domestic/import exemption and must be checked separately ([Ley 20/1991 arts. 8/11/16–19/25/67–73](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a8)).",
+    "references": {}
+  },
+  {
+    "line": 132,
+    "section": "Two worked examples that recompute / Example 1: ordinary business, reverse charge and an implicit retail burden",
+    "text": "Assume a fully deduction-entitling Canary ordinary business, no blocked expenses, valid documents, no franchise/cash regime, local sales 20,000 at 7%, a taxable non-established-supplier B2B service 2,000 at 7% reverse charge, local deductible input 350 and import IGIC 280. A passenger-car lease has IGIC 70 and a supported 50% business-use presumption. A qualifying exempt retailer invoice is 1,000 for goods whose underlying rate is 7%, giving implicit eligible burden 49. Output is 1,540; recoverable input is 854; net tax 686. Applying 200 existing credit gives 486 payable. These are hypothetical facts; the implicit burden is not separately charged invoice tax.",
+    "references": {}
+  },
+  {
+    "line": 173,
+    "section": "Two worked examples that recompute / Example 2: compulsory special prorrata and a capital adjustment",
+    "text": "One sector has annual entitling turnover 60,000 and ordinary exempt non-entitling turnover 40,000. Otherwise eligible input is 1,000 taxable-only,6,000 exempt-only and 3,000 shared. General recovery 6,000 exceeds 110% of special recovery 2,800, so special is compulsory. Against 3,500 provisional recovery the ordinary annual correction is−700. A separate qualifying investment good still in its five-year adjustment window had 7,000 input and 80% original recovery; current 60% is a 20-point change. Pay back 280, entered as **−280 additional input adjustment**. Total annual entitlement across these two input calculations is 2,520 and the combined correction against 3,500 provisional recovery is−980. This is an annual input reconciliation, not a whole-quarter output-tax calculation.",
+    "references": {}
+  },
+  {
+    "line": 213,
+    "section": "Ask the client first",
+    "text": "1. Which establishments, goods movements and customer business statuses locate each supply, import or service?",
+    "references": {}
+  },
+  {
+    "line": 214,
+    "section": "Ask the client first",
+    "text": "2. What actual products, tax points, invoice values and exemptions establish the rate and output period?",
+    "references": {}
+  },
+  {
+    "line": 215,
+    "section": "Ask the client first",
+    "text": "3. Which census regimes/elections applied, including prior turnover, renunciation and any timely July 2026 franchise entry?",
+    "references": {}
+  },
+  {
+    "line": 216,
+    "section": "Ask the client first",
+    "text": "4. What invoice/import documents, private use, exempt activities and differentiated sectors limit recovery?",
+    "references": {}
+  },
+  {
+    "line": 217,
+    "section": "Ask the client first",
+    "text": "5. What startup/investment dates, original recovery, provisional percentages and prior credits need reconciliation?",
+    "references": {}
+  },
+  {
+    "line": 218,
+    "section": "Ask the client first",
+    "text": "6. What filings, payments, requests, notices and actual portal status determine the correction and collection route?",
+    "references": {}
+  }
+]

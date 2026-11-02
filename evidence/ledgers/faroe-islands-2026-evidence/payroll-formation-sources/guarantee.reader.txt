@@ -1,0 +1,391 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 68 frá 9. juni 1988 um trygdargrunn fyri avreiðingar og lønir v.m., sum seinast broytt við løgtingslóg nr. 37 frá 16. mai 2024
+9. juni 1988Nr. 68
+Løgtingslóg um trygdargrunn fyri avreiðingar og lønir v.m., sum seinast broytt við løgtingslóg nr. 37 frá 16. mai 2024
+§ 1. 1) 2) Trygdargrunnur verður stovnaður fyri at tryggja løntakarum lønarkrøv, herundir fiski- og útróðrarpartar, og føroyskum skipa/bátaeigarum part av avrokning fyri fisk avreiddan til føroysk fiskavirki í samband við
+1.    at arbeiðsgevarin ella fiskavirkið eru komin í fíggjartrot.
+2.    at arbeiðsgevarin doyr, og búgvið verður tikið til skiftiviðgerðar eftir 3. kap. í skiftilógini, ella
+3.    at fyritøkan heldur uppat, og tað verður sannað, at arbeiðsgevarin er ikki førur fyri at rinda kravið.
+Stk. 2. 3) Treytin fyri at fáa pening úr grunninum fyri krøv í sambandi við avreiðingar er, at avreiðingin er gjørd seinastu 90 dagarnar áðrenn freistdagin.
+Stk. 3. Upphæddin, sum latin verður fyri avreiðingar, kann í mesta lagi vera 50% av avreiðingarvirðinum.
+Stk. 4. 3) Treytin fyri at fáa pening úr grunninum fyri lønarkrøv er, at lønin er vunnin seinastu 90 dagarnar áðrenn freistdagin.
+Stk. 5. Krøv mótvegis grunninum í sambandi við frítíðarløn skulu vera vunnin seinastu 6 mánaðirnar áðrenn freistdagin.
+Stk. 6. 1) Landsstýrismaðurin ásetir nærri reglur um, hvørjar avreiðingar og hvørji fiskavirki koma undir hesa lóg.
+Stk. 7. 4) Krøvini um “føroysk skip/bátareigarar”, sum eru ásett í § 1, stk. 1 eru ikki galdandi í tann mun, annað er ásett í sáttmála frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landsstýri hinumegin (Hoyvíkssátmálanum).
+§ 2. 2) Umframt part av avrokning til skipa/bátaeigarar fyri fisk avreiddan til føroysk fiskavirkir, fevnir trygdin um lønarkrøv og krøv um frítíðarløn, um so er, at krøvini, jbr. tó § 1, stk. 4 og 5, eru ella í konkursi vildu komið undir § 95, stk. 1, nr. 1, 4 og 5 (í nr. 5 tó bert tey krøv, sum í konkursi vildu komið undir § 95, stk. 1, nr. 1), jbr. stk. 2 í konkurslógini. Trygdin fevnir eisini um tílík krøv, sum koma undir § 94, nr. 2 í konkurslógini, um so er, at skiftirætturin í skiftisviðgerðini váttar, at konkurs- ella deyðsbúgvið ikki er ført fyri at rinda krøvini.
+2. stk.5) Í teimum í § 1, nr. 3 nevndu førum ger grunnurin av, hvør dagur kemur í staðin fyri freistdagin, um kravið hevur framíhjárætt eftir § 95, 1. stk., nr. 5 í konkurslógini, og um útgjalding skal sýtast sambært § 95, 2. stk. í konkurslógini. Er fyritøkan undir endurskipanarviðgerð, er dagurin, tá skiftirætturin fekk áheitanina um endurskipanarviðgerð, freistdagur, um fyritøkan vegna insolvens er hildin uppat áðrenn 3 vikur aftaná, at endurskipanin hevur mist gildi eftir konkurslógini.
+§ 3. 1) 3) Fyri tey krøv, sum nevnd eru í konkurslógini § 94, nr. 2 og § 95, stk. 1, nr. 1 og 5 (í nr. 5 tó bert tey krøv, sum í konkursi vildu komið undir § 95, stk. 1, nr. 1), kann grunnurin í tí einstaka førinum rinda í mesta lagi kr. 60.000,- til hvønn løntakara. Landsstýrismaðurin kann í kunngerð hækka hesa upphædd.
+§ 4. 1) Grunnurin rindar peningin, tá kravið er fráboðað og skjalprógvað fyri grunninum. Grunnurin kann rinda ávegisgjøld.
+Stk. 2. 1) Treytin fyri útgjalding er, at kravið er gjaldkomið, og at arbeiðsgevarin hevur skyldu til at rinda tað í § 7, stk. 1, nevnda gjald.
+§ 5. Almennir myndugleikar, arbeiðsgevarar og yrkisfelagsskapir skulu eftir áheitan geva grunninum upplýsingar, sum hava týdning fyri avgerðir um at rinda út pening úr grunninum.
+§ 6. Grunnurin tekur við kravi løntakarans og skipa/bátaeigarans.
+§ 7. 1) 6) 7) 8)  9) 10) Fæ grunsins verður fingið til vega við, at allir arbeiðsgevarar í Føroyum rinda inn í grunnin í mesta lagi 2/1000 av tí samlaðu útgoldnu A inntøkuni fyri hvørt ár. Landsstýrið ásetir í kunngerð innanfyri galdandi hámark frammanfyri nevnda gjald. Arbeiðsgevarar rinda ikki gjald fyri løn hjá útlendingum undir FAS skipanini, ella fyri løn hjá útlendingum umborð á skipum, sum eftir § 2, stk. 1, litra j, 2. pkt. í løgtingslóg nr. 86 frá 1. september 1983 um landsskatt og kommunuskatt við seinni broytingum, verða javnmett við skip, ið eru skrásett við heimstaði í Føroyum, og sum, um tey vóru føroysk, lúka treytirnar í § 1, stk. 1, í løgtingslóg um Føroyska Altjóða Skipaskrá.
+2. stk. 9) Almannastovan er í sambandi við útgjalding av almanna pensiónum og forsorgarveitingum undantikin frá stk. 1.
+Stk. 3. 1) 9) Landsstýrismaðurin ásetir í kunngerð nærri reglur um, hvussu og nær arbeiðsgevarin skal rinda tað í 1. stk. nevnda gjald.
+Stk. 4. 9) 11) Rindar arbeiðsgevarin ikki rættstundis, skal hann gjalda 0,7% í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu
+5. stk. 8) 9) 10) Arbeiðsgevaragjaldið og rentur eftir hesi lóg og innkrevjingarkostnaður av hesum kunnu krevjast inn við panting.
+§ 7 b. 3) 30 mió. kr. verða fluttar úr trygdargrunninum í landskassan.
+§ 8. 1) Landsstýrismaðurin ásetir reglur um
+1)   hvussu krøvini skulu fráboðast og ásetir fráboðanarfreistir,
+2)   hvørji skjalprógv skulu fylgja við fráboðanini,
+3)   hvussu grunnurin viðger krøvini og
+4)   útgjaldingar úr grunninum.
+§ 9. 1) 12) Grunnurin verður umsitin av TAKS. Avgerðir, sum TAKS tekur, kunnu innan 4 vikur eftir at kærarin hevur fingið fráboðan um avgerðina, kærast til Føroya Kærustovn.
+2. stk. Grunnurin rindar fyri ta umsiting, sum umrødd er í stk. 1.
+§ 10. Hevur ein løntakari ella skipa/bátaeigari givið grunninum skeivar upplýsingar ella tagt umstøður, sum hava týdning fyri útgjalding úr grunninum, kunnu upphæddir, sum av órøttum eru móttiknar, verða kravdar afturgoldnar av løntakaranum ella skipa/bátaeigaranum.
+§ 11. Um ikki hægri revsing er ásett sambært lóggávuni annars, verður hann revsaður við sekt, sum
+a.    letur vera við rættstundis at inngjalda tað í § 7, 1. stk. nevnda gjald,
+b.    letur vera við at lata grunninum upplýsingar, tá grunnurin biður um teir ella gevur skeivar ella misvísandi upplýsingar, jbr. § 5.
+2. stk. Er lógarbrotið gjørt av einum partafelagi, lutafelagi ella líknandi, kann áleggjast sjálvum felagnum sektarábyrgd.
+§ 12. Henda lóg kemur í gildi 1. januar 1988. Samstundis fara úr gildi løgtingslóg nr. 49 frá 7. juni 1979 um trygdargrunn fyri avreiðingar og lønir á fiskavirkjum við seinni broytingum og løgtingslóg nr. 34 frá 30. apríl 1987 um trygdargrunn løntakaranna.
+2. stk. Lógin fevnir eisini um lønarkrøv v.m., sum vóru gjaldkomin 1. januar 1987 ella seinni.
+3. stk. Fæið hjá trygdargrunninum fyri avreiðingar og lønir á fiskavirkjum pr. 31. desember 1987 verður flutt í trygdargrunn fyri avreiðingar og lønir v.m. Hesin grunnurin krevur inn gjaldið frá fiskavirkjum fyri árið 1987.
+1) Broytt við løgtingslóg nr. 44 frá 30. mars 2001.
+2) Broytt við løgtingslóg nr. 123 frá 21. mai 1993, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, stk. 4 og 5 og § 3 fáa gildi dagin eftir, at henda lóg er kunngjørd og fevna um krøv, har freistdagurin ella tann dagur, sum sambært § 2, stk. 2 kemur í staðin fyri freistdagin, er tann dagur, lógin er kunngjørd ella seinni.”
+3) Broytt við løgtingslóg nr. 63 frá 25. mai 2009.
+4) Broytt við løgtingslóg nr. 47 frá 16. mai 2006, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi samstundis sum sáttmáli frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landsstýri hinumegin fær gildi.”
+5) Broytt við løgtingslóg nr. 31 frá 9. mars 2023, har § 24 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. september 2023.”
+6) Broytt við løgtingslóg nr. 15 frá 16. februar 2001, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og er galdandi frá 1. januar 2001.”
+7) Broytt við løgtingslóg nr. 52 frá 8. mai 1991, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 2, stk. 1 og § 3 koma í gildi dagin eftir, at henda lóg er kunngjørd og fevna um krøv, har dekretdagurin ella tann dagur, sum sambært § 2, stk. 2 kemur í staðin fyri dekretdagin, er tann dagin lógin er kunngjørd ella seinni. Stk. 3. § 7, stk. 1 kemur í gildi beinanvegin, og verður gjaldið fyri 1991 roknað av samlaðu A-inntøkuni í 1991.”
+8) Broytt við løgtingslóg nr. 70 frá 13. juni 1995.
+9) Broytt við løgtingslóg nr. 38 frá 16. apríl 1997, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi dagin eftir, at hon er kunngjørd, tó fær § 1, nr. 1 gildi frá 1. januar 1997. Samstundis verður danski teksturin í lógini strikaður.”
+10) Broytt við løgtingslóg nr. 61 frá 20. mai 1996.
+11) Broytt við løgtingslóg nr. 49 frá 16. mai 2006.
+12) Broytt við løgtingslóg nr. 37 frá 16. mai 2024, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. Kæra send til kærunevnd trygdargrunsins, sum ikki er avgreidd, tá ið henda løgtingslóg kemur í gildi, viðger og avgreiðir Føroya Kærustovnur sambært reglunum í løgtingslógini um Føroya Kærustovn.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 18-06-1988
+Tilvísingar
+Heimildir
+Broytingar
+Kunngerðablaðið
+Kunngerðarblað  1988 A - Løgtingslóg 68 frá 9. juni 1988
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

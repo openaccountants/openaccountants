@@ -1,0 +1,1421 @@
+{
+  "source_checks": [
+    {
+      "key": "LIRPF",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIRPF.body",
+      "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "matches": true
+    },
+    {
+      "key": "LIRPF",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIRPF.reader.txt",
+      "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "matches": true
+    },
+    {
+      "key": "RIRPF",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RIRPF.body",
+      "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "matches": true
+    },
+    {
+      "key": "RIRPF",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RIRPF.reader.txt",
+      "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "matches": true
+    },
+    {
+      "key": "LGSS",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LGSS.body",
+      "sha256": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+      "matches": true
+    },
+    {
+      "key": "LGSS",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LGSS.reader.txt",
+      "sha256": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+      "matches": true
+    },
+    {
+      "key": "LETA",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LETA.body",
+      "sha256": "1cc0fd43329b73c5b82fc7d648e5b543071b34adf2008ff8c166753308b968ed",
+      "matches": true
+    },
+    {
+      "key": "LETA",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LETA.reader.txt",
+      "sha256": "73507e33a186bc1de3487e7e7d144feece66287c934160ebc3be51b0f4330241",
+      "matches": true
+    },
+    {
+      "key": "Order",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Order.body",
+      "sha256": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+      "matches": true
+    },
+    {
+      "key": "Order",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Order.reader.txt",
+      "sha256": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+      "matches": true
+    },
+    {
+      "key": "RGAT",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RGAT.body",
+      "sha256": "331301467bae286138d51c24d2ee01ed9ee22504688d2aec1a89a010647ecad9",
+      "matches": true
+    },
+    {
+      "key": "RGAT",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RGAT.reader.txt",
+      "sha256": "b76a655e2d022064ac576895ce82157c07b08c9720fcc78d90aa73f8ff43ca89",
+      "matches": true
+    },
+    {
+      "key": "RETAreg",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RETAreg.body",
+      "sha256": "b5257a40de72c87ee7482ff6b30dad29780ce3a2c83c87a76eaf1d9baec2fdc1",
+      "matches": true
+    },
+    {
+      "key": "RETAreg",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RETAreg.reader.txt",
+      "sha256": "7e1bda5c76f949dd8b335f2cca182ce6bb2df0459c41f33445803568bca93d9f",
+      "matches": true
+    },
+    {
+      "key": "LIVA",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIVA.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "key": "LIVA",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIVA.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "key": "RIVA",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RIVA.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "key": "RIVA",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RIVA.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "key": "LGT",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LGT.body",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "matches": true
+    },
+    {
+      "key": "LGT",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LGT.reader.txt",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "matches": true
+    },
+    {
+      "key": "Madrid",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Madrid.body",
+      "sha256": "615adc6d0f26e87272a3ae1e3945488990d8338e2c3a621a1fe04ac2c6d6acfe",
+      "matches": true
+    },
+    {
+      "key": "Madrid",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Madrid.reader.txt",
+      "sha256": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "matches": true
+    },
+    {
+      "key": "RDL13",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RDL13.body",
+      "sha256": "21231b1cbbbff38216c5e10c7ab759e13d52d771c6191d040141a9271c1e83ff",
+      "matches": true
+    },
+    {
+      "key": "RDL13",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/RDL13.reader.txt",
+      "sha256": "8182e06d3a4a1def5716a693051506d4d84878821396da748d28e9d9eed852e7",
+      "matches": true
+    },
+    {
+      "key": "CeutaAct",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/CeutaAct.body",
+      "sha256": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d",
+      "matches": true
+    },
+    {
+      "key": "CeutaAct",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/CeutaAct.reader.txt",
+      "sha256": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596",
+      "matches": true
+    },
+    {
+      "key": "Form347",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form347.body",
+      "sha256": "6fc99c43b5874ed2fe8d87ebc51482239aeb15ddb0bd8e56ec3efef2a1d2aee1",
+      "matches": true
+    },
+    {
+      "key": "Form347",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form347.reader.txt",
+      "sha256": "24595c885fefbdff5907af9f4c2253bb0e81edef96e9a33835dda6d368bad7d1",
+      "matches": true
+    },
+    {
+      "key": "Form390",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form390.body",
+      "sha256": "f8a0027314b563484faa96ff8e7fc1425b8ca61ebada1daa7e919922bb47cddf",
+      "matches": true
+    },
+    {
+      "key": "Form390",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form390.reader.txt",
+      "sha256": "af7a80be2e3a4793babbb41e3edfd8cbcaeac94e05eb69d512309d836ad0197d",
+      "matches": true
+    },
+    {
+      "key": "Form036",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form036.body",
+      "sha256": "2d12b38b984169cddcfdb14db748a662fa6a8889e75f32e2fd094df706b1a3bc",
+      "matches": true
+    },
+    {
+      "key": "Form036",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Form036.reader.txt",
+      "sha256": "02b1e2622e9d7c0956e5bf11d3ea321977a6888d28a537d987cedf14a5e562ac",
+      "matches": true
+    },
+    {
+      "key": "Entry",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Entry.body",
+      "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+      "matches": true
+    },
+    {
+      "key": "Entry",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Entry.reader.txt",
+      "sha256": "9ed84a580eeeeca13a823be283d5e2f37610d88f02d42530262fe4d28ee59c0a",
+      "matches": true
+    },
+    {
+      "key": "Note",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Note.body",
+      "sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+      "matches": true
+    },
+    {
+      "key": "Note",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Note.reader.txt",
+      "sha256": "11f29a9f8e1e5983e9c02aa1c6340f8bfd8277f0c45dae8cc9d2bc868618430a",
+      "matches": true
+    },
+    {
+      "key": "TGSS",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/TGSS.body",
+      "sha256": "0e25088e0b49015260c18f9c8f85dc2d6db2da6b72fa903c398a231e599f9071",
+      "matches": true
+    },
+    {
+      "key": "TGSS",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/TGSS.reader.txt",
+      "sha256": "70df1e4b5500dbbfc4b446ccc7c093ee4715eabec494dbb6d1cee94165aaeb57",
+      "matches": true
+    },
+    {
+      "key": "Interest",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Interest.body",
+      "sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+      "matches": true
+    },
+    {
+      "key": "Interest",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Interest.reader.txt",
+      "sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+      "matches": true
+    },
+    {
+      "key": "Rent",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Rent.body",
+      "sha256": "2e5fd7a83743f84bb88bc6924e2ccd3754b9ffee9eb3e316cb4856f86833321f",
+      "matches": true
+    },
+    {
+      "key": "Rent",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Rent.reader.txt",
+      "sha256": "13c52e7c8e2d46c11f9f06d22106035e3f154e47862a1a74637213009deac3a9",
+      "matches": true
+    },
+    {
+      "key": "EU",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU.body",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "key": "EU",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU.reader.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "key": "Modules",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Modules.body",
+      "sha256": "27d9c99e6cc5614c33e48c8c0128bcf74a95c94ada5ca88e44dde273f9e5f73a",
+      "matches": true
+    },
+    {
+      "key": "Modules",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/Modules.reader.txt",
+      "sha256": "e8982f322707423caba7ac113207b98718d5f65f388a90298e398157fa26dd22",
+      "matches": true
+    },
+    {
+      "key": "PGC",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/PGC.body",
+      "sha256": "c34e731c015b3a84d315c67115038626223a92180726613609352519a87afa62",
+      "matches": true
+    },
+    {
+      "key": "PGC",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/PGC.reader.txt",
+      "sha256": "a6059f67b389cb521708729892c605320c83491caab2e7fd86ef57604ccb74f4",
+      "matches": true
+    },
+    {
+      "key": "LIS",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIS.body",
+      "sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+      "matches": true
+    },
+    {
+      "key": "LIS",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/LIS.reader.txt",
+      "sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+      "matches": true
+    },
+    {
+      "key": "EU_BOE",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU_BOE.body",
+      "sha256": "601e64cc08d8510bb2c7d9552d69837cd2c346e0e7cb1e9c8ba5de95678713b8",
+      "matches": true
+    },
+    {
+      "key": "EU_BOE",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU_BOE.reader.txt",
+      "sha256": "ed8e745e000db1a1cffff9809fd0da477f47a22339d1cf2752f5f2b1d04313c6",
+      "matches": true
+    },
+    {
+      "key": "EU_2026",
+      "kind": "raw",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU_2026.body",
+      "sha256": "95b658c62f1ac6936790a05392ebc0e40342062f2bc6c368f0757a7d3dca421d",
+      "matches": true
+    },
+    {
+      "key": "EU_2026",
+      "kind": "reader",
+      "path": ".claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-autonomous-worker/sources/EU_2026.reader.txt",
+      "sha256": "940079b493bec6529584b06e3de99c2f670c76b46a4d7eb147206f8db0ad1993",
+      "matches": true
+    }
+  ],
+  "quote_checks": [
+    {
+      "key": "037",
+      "reader": "sources/Form036.reader.txt",
+      "LF": [
+        395,
+        395
+      ],
+      "present": true
+    },
+    {
+      "key": "037abolish",
+      "reader": "sources/Form036.reader.txt",
+      "LF": [
+        303,
+        303
+      ],
+      "present": true
+    },
+    {
+      "key": "130dates",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        6394,
+        6398
+      ],
+      "present": true
+    },
+    {
+      "key": "130nil",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        6398,
+        6398
+      ],
+      "present": true
+    },
+    {
+      "key": "303dates",
+      "reader": "sources/RIVA.reader.txt",
+      "LF": [
+        6544,
+        6548
+      ],
+      "present": true
+    },
+    {
+      "key": "347VAT",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        3359,
+        3359
+      ],
+      "present": true
+    },
+    {
+      "key": "347cash",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        3249,
+        3255
+      ],
+      "present": true
+    },
+    {
+      "key": "347exclude",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        3175,
+        3189
+      ],
+      "present": true
+    },
+    {
+      "key": "347period",
+      "reader": "sources/Form347.reader.txt",
+      "LF": [
+        616,
+        620
+      ],
+      "present": true
+    },
+    {
+      "key": "347threshold",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        3239,
+        3245
+      ],
+      "present": true
+    },
+    {
+      "key": "347who",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        3137,
+        3139
+      ],
+      "present": true
+    },
+    {
+      "key": "390",
+      "reader": "sources/Form390.reader.txt",
+      "LF": [
+        664,
+        670
+      ],
+      "present": true
+    },
+    {
+      "key": "720accounts",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        4029,
+        4037
+      ],
+      "present": true
+    },
+    {
+      "key": "720accounts20",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        4033,
+        4039
+      ],
+      "present": true
+    },
+    {
+      "key": "720period",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        4031,
+        4035
+      ],
+      "present": true
+    },
+    {
+      "key": "720properties",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        5032,
+        5040
+      ],
+      "present": true
+    },
+    {
+      "key": "720securities",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        4109,
+        4117
+      ],
+      "present": true
+    },
+    {
+      "key": "Ceuta5",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        11216,
+        11220
+      ],
+      "present": true
+    },
+    {
+      "key": "DT32",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        12189,
+        12199
+      ],
+      "present": true
+    },
+    {
+      "key": "EUdelay",
+      "reader": "sources/EU_2026.reader.txt",
+      "LF": [
+        394,
+        408
+      ],
+      "present": true
+    },
+    {
+      "key": "EUmixed",
+      "reader": "sources/EU_BOE.reader.txt",
+      "LF": [
+        195,
+        197
+      ],
+      "present": true
+    },
+    {
+      "key": "EUone",
+      "reader": "sources/EU_BOE.reader.txt",
+      "LF": [
+        174,
+        176
+      ],
+      "present": true
+    },
+    {
+      "key": "LISbase",
+      "reader": "sources/LIS.reader.txt",
+      "LF": [
+        1440,
+        1440
+      ],
+      "present": true
+    },
+    {
+      "key": "RETA2025",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1388,
+        1388
+      ],
+      "present": true
+    },
+    {
+      "key": "RETA7",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12815,
+        12817
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAcessation",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1902,
+        1908
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAcomponents",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1376,
+        1384
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAexpense",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2882,
+        2886
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAfloor",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12785,
+        12787
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAtraining",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1908,
+        1908
+      ],
+      "present": true
+    },
+    {
+      "key": "RETAwho",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12659,
+        12659
+      ],
+      "present": true
+    },
+    {
+      "key": "SSinterest",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        2676,
+        2678
+      ],
+      "present": true
+    },
+    {
+      "key": "SSlate",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        2638,
+        2652
+      ],
+      "present": true
+    },
+    {
+      "key": "SSspecialdeadline",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12821,
+        12823
+      ],
+      "present": true
+    },
+    {
+      "key": "TGSSamount",
+      "reader": "sources/TGSS.reader.txt",
+      "LF": [
+        950,
+        954
+      ],
+      "present": true
+    },
+    {
+      "key": "TRADE",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        1078,
+        1116
+      ],
+      "present": true
+    },
+    {
+      "key": "TRADEcontract",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        1160,
+        1160
+      ],
+      "present": true
+    },
+    {
+      "key": "VAT10",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        7039,
+        7039
+      ],
+      "present": true
+    },
+    {
+      "key": "VAT21",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        6990,
+        6990
+      ],
+      "present": true
+    },
+    {
+      "key": "VAT4",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        7149,
+        7149
+      ],
+      "present": true
+    },
+    {
+      "key": "VATcities",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        1415,
+        1415
+      ],
+      "present": true
+    },
+    {
+      "key": "VATinput",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        7524,
+        7532
+      ],
+      "present": true
+    },
+    {
+      "key": "VATinvoice",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        7814,
+        7824
+      ],
+      "present": true
+    },
+    {
+      "key": "VATplace",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        5213,
+        5225
+      ],
+      "present": true
+    },
+    {
+      "key": "VATterritory",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        1417,
+        1421
+      ],
+      "present": true
+    },
+    {
+      "key": "activity",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2796,
+        2796
+      ],
+      "present": true
+    },
+    {
+      "key": "advance20",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        6252,
+        6254
+      ],
+      "present": true
+    },
+    {
+      "key": "advance70",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        6234,
+        6242
+      ],
+      "present": true
+    },
+    {
+      "key": "annualRETA",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        7240,
+        7242
+      ],
+      "present": true
+    },
+    {
+      "key": "annualtax",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        5909,
+        5909
+      ],
+      "present": true
+    },
+    {
+      "key": "assetPartial",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2105,
+        2105
+      ],
+      "present": true
+    },
+    {
+      "key": "assets",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2085,
+        2095
+      ],
+      "present": true
+    },
+    {
+      "key": "basis",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2827,
+        2831
+      ],
+      "present": true
+    },
+    {
+      "key": "books",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        3820,
+        3836
+      ],
+      "present": true
+    },
+    {
+      "key": "carIRPF",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2109,
+        2123
+      ],
+      "present": true
+    },
+    {
+      "key": "carVAT",
+      "reader": "sources/LIVA.reader.txt",
+      "LF": [
+        7691,
+        7699
+      ],
+      "present": true
+    },
+    {
+      "key": "census",
+      "reader": "sources/RGAT.reader.txt",
+      "LF": [
+        2119,
+        2121
+      ],
+      "present": true
+    },
+    {
+      "key": "ceuta75",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2237,
+        2241
+      ],
+      "present": true
+    },
+    {
+      "key": "ceutadate",
+      "reader": "sources/CeutaAct.reader.txt",
+      "LF": [
+        634,
+        636
+      ],
+      "present": true
+    },
+    {
+      "key": "control",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12665,
+        12675
+      ],
+      "present": true
+    },
+    {
+      "key": "directors",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2163,
+        2163
+      ],
+      "present": true
+    },
+    {
+      "key": "enforcement",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2276,
+        2284
+      ],
+      "present": true
+    },
+    {
+      "key": "family",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2203,
+        2207
+      ],
+      "present": true
+    },
+    {
+      "key": "gains",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2831,
+        2831
+      ],
+      "present": true
+    },
+    {
+      "key": "group7",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        637,
+        640
+      ],
+      "present": true
+    },
+    {
+      "key": "health",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2896,
+        2898
+      ],
+      "present": true
+    },
+    {
+      "key": "homeSupplies",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2898,
+        2898
+      ],
+      "present": true
+    },
+    {
+      "key": "interest",
+      "reader": "sources/Interest.reader.txt",
+      "LF": [
+        122,
+        122
+      ],
+      "present": true
+    },
+    {
+      "key": "interest26",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2164,
+        2164
+      ],
+      "present": true
+    },
+    {
+      "key": "irrecoverable",
+      "reader": "sources/PGC.reader.txt",
+      "LF": [
+        2722,
+        2726
+      ],
+      "present": true
+    },
+    {
+      "key": "late",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2209,
+        2217
+      ],
+      "present": true
+    },
+    {
+      "key": "late25",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2235,
+        2239
+      ],
+      "present": true
+    },
+    {
+      "key": "madridMinimum",
+      "reader": "sources/Madrid.reader.txt",
+      "LF": [
+        906,
+        908
+      ],
+      "present": true
+    },
+    {
+      "key": "madridScale",
+      "reader": "sources/Madrid.reader.txt",
+      "LF": [
+        789,
+        836
+      ],
+      "present": true
+    },
+    {
+      "key": "meals",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2900,
+        2900
+      ],
+      "present": true
+    },
+    {
+      "key": "mealsOvernight",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        1656,
+        1658
+      ],
+      "present": true
+    },
+    {
+      "key": "mealsSpain",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        1658,
+        1660
+      ],
+      "present": true
+    },
+    {
+      "key": "methods",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2237,
+        2237
+      ],
+      "present": true
+    },
+    {
+      "key": "moduleEntry",
+      "reader": "sources/Entry.reader.txt",
+      "LF": [
+        104,
+        110
+      ],
+      "present": true
+    },
+    {
+      "key": "moduleNote",
+      "reader": "sources/Note.reader.txt",
+      "LF": [
+        84,
+        90
+      ],
+      "present": true
+    },
+    {
+      "key": "moduleOrder",
+      "reader": "sources/Modules.reader.txt",
+      "LF": [
+        716,
+        722
+      ],
+      "present": true
+    },
+    {
+      "key": "modulePurchases",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2970,
+        2972
+      ],
+      "present": true
+    },
+    {
+      "key": "moduleRepeal",
+      "reader": "sources/Note.reader.txt",
+      "LF": [
+        62,
+        66
+      ],
+      "present": true
+    },
+    {
+      "key": "modulebaseline",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2952,
+        2966
+      ],
+      "present": true
+    },
+    {
+      "key": "new20",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        3069,
+        3079
+      ],
+      "present": true
+    },
+    {
+      "key": "payer",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        4370,
+        4380
+      ],
+      "present": true
+    },
+    {
+      "key": "penalty191",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        8209,
+        8209
+      ],
+      "present": true
+    },
+    {
+      "key": "penalty191grave",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        8223,
+        8223
+      ],
+      "present": true
+    },
+    {
+      "key": "penalty191very",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        8229,
+        8229
+      ],
+      "present": true
+    },
+    {
+      "key": "penalty198",
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        8412,
+        8416
+      ],
+      "present": true
+    },
+    {
+      "key": "pluriactivity",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1398,
+        1398
+      ],
+      "present": true
+    },
+    {
+      "key": "prof15",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        5638,
+        5638
+      ],
+      "present": true
+    },
+    {
+      "key": "prof7",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        5640,
+        5644
+      ],
+      "present": true
+    },
+    {
+      "key": "provisions",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2287,
+        2289
+      ],
+      "present": true
+    },
+    {
+      "key": "reduced",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2415,
+        2427
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedStages",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2429,
+        2445
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedamount",
+      "reader": "sources/RDL13.reader.txt",
+      "LF": [
+        2253,
+        2257
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedcompany",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2447,
+        2451
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedend",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2431,
+        2431
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedextension",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2421,
+        2433
+      ],
+      "present": true
+    },
+    {
+      "key": "reducedspecial",
+      "reader": "sources/LETA.reader.txt",
+      "LF": [
+        2449,
+        2457
+      ],
+      "present": true
+    },
+    {
+      "key": "reliefs",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        3029,
+        3045
+      ],
+      "present": true
+    },
+    {
+      "key": "rents",
+      "reader": "sources/Rent.reader.txt",
+      "LF": [
+        94,
+        96
+      ],
+      "present": true
+    },
+    {
+      "key": "retaband4",
+      "reader": "sources/Order.reader.txt",
+      "LF": [
+        1329,
+        1332
+      ],
+      "present": true
+    },
+    {
+      "key": "retabasechanges",
+      "reader": "sources/RETAreg.reader.txt",
+      "LF": [
+        2649,
+        2661
+      ],
+      "present": true
+    },
+    {
+      "key": "retaday",
+      "reader": "sources/RETAreg.reader.txt",
+      "LF": [
+        2735,
+        2743
+      ],
+      "present": true
+    },
+    {
+      "key": "retaincome",
+      "reader": "sources/LGSS.reader.txt",
+      "LF": [
+        12803,
+        12813
+      ],
+      "present": true
+    },
+    {
+      "key": "retainvaliddays",
+      "reader": "sources/RETAreg.reader.txt",
+      "LF": [
+        2723,
+        2743
+      ],
+      "present": true
+    },
+    {
+      "key": "retaregulariseFull",
+      "reader": "sources/RETAreg.reader.txt",
+      "LF": [
+        2745,
+        2777
+      ],
+      "present": true
+    },
+    {
+      "key": "shareprofessional",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        2800,
+        2800
+      ],
+      "present": true
+    },
+    {
+      "key": "simplified",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2239,
+        2246
+      ],
+      "present": true
+    },
+    {
+      "key": "simplifiedAnnual",
+      "reader": "sources/RIRPF.reader.txt",
+      "LF": [
+        2247,
+        2247
+      ],
+      "present": true
+    },
+    {
+      "key": "stateMinimum",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        4342,
+        4344
+      ],
+      "present": true
+    },
+    {
+      "key": "stateScale",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        4672,
+        4748
+      ],
+      "present": true
+    },
+    {
+      "key": "worldwide",
+      "reader": "sources/LIRPF.reader.txt",
+      "LF": [
+        1319,
+        1319
+      ],
+      "present": true
+    }
+  ],
+  "guide_ledger_wording_mismatches": [],
+  "nonempty_guide_lines_not_covered": []
+}

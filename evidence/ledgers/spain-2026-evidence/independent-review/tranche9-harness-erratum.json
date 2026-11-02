@@ -1,0 +1,7 @@
+{
+  "initial_failure": "Own control harness TypeError multiplying Fraction by Decimal on one separator expression.",
+  "repair": "Use exact Fraction(2979001,100) rather than Decimal in that expression.",
+  "Guide_effect": "None. All60controls pass after harness repair.",
+  "table_check_precision": "157independentvector matches;1explicitAbove94750vsstatutory94750.01cent-boundary semantic comparison, not a literal158identity claim.",
+  "snapshot_scope_erratum": "tranche9-initial-ledger.md/rows.json were captured after writer repaired4ab02c9e, not the180914b2predecessor. Actual predecessor used and rehashed from history-180914b2-S-L10. Names are retained, not retrospective pre-repair evidence."
+}

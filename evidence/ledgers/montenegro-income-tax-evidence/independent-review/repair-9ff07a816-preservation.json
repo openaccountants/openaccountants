@@ -1,0 +1,3025 @@
+{
+  "commit": "9ff07a816c1adafbb944598e2f2a8edca2c2f90f",
+  "files": [
+    {
+      "path": "skills/international/montenegro/README.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": false
+    },
+    {
+      "path": "skills/international/montenegro/me-company-formation.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-corporate-income-tax.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-cross-border.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-tax-overview.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-transfer-pricing.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-income-tax.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": false
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-payroll.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-social-contributions.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-tax-optimization.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-vat.md",
+      "manifest_and_git_base_pass": true,
+      "current_equals_frozen": true
+    }
+  ],
+  "predecessor_nonblank_lines": 415,
+  "map_records": [
+    {
+      "old_line": 1,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 2,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 3,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 4,
+      "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 5,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 6,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 7,
+      "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 8,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 9,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 10,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 11,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 12,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 13,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 14,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 15,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 17,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 19,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 21,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 23,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 24,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 25,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 26,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 27,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 28,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 29,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 31,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 33,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 34,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 35,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 36,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 37,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 38,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 39,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 40,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 41,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 42,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 43,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 44,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 45,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 46,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 47,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 48,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 49,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 50,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 51,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 52,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 53,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 54,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 55,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 56,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 57,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 58,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 59,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 60,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 61,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 62,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 63,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 64,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 65,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 67,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 69,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 71,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 73,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 75,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 77,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 78,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 79,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 80,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 82,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 84,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 85,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 86,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 87,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 88,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 89,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 90,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 91,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 92,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 93,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 94,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 96,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 98,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 100,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 102,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 104,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 105,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 106,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 107,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 108,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 109,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 110,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 111,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 112,
+      "destination": "Guide bank classification: output VAT/recoverable input scope clarified; nonrecoverable VAT checked in underlying cost workpaper",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": "Checked legally against original finding and unchanged primary law, not treated as verbatim"
+    },
+    {
+      "old_line": 113,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 114,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 115,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 116,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 118,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 120,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 122,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 124,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 126,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 128,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 129,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 130,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 131,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 132,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 133,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 134,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 136,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 138,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 139,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 140,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 141,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 143,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 145,
+      "destination": "Guide correction: corrected lottery/betting stake deduction versus total global-jackpot base, PIT37s(2)",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": "Checked legally against original finding and unchanged primary law, not treated as verbatim"
+    },
+    {
+      "old_line": 147,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 149,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 150,
+      "destination": "Guide correction: original relief conditions retained and PIT32b(3) related/former-employment exclusion added",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": "Checked legally against original finding and unchanged primary law, not treated as verbatim"
+    },
+    {
+      "old_line": 151,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 152,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 154,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 156,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 157,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 158,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 160,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 162,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 163,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 164,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 165,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 166,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 167,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 168,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 169,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 170,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 171,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 172,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 173,
+      "destination": "Guide correction: annual other-payer statement scoped to other personal earnings under PIT14/47(5)",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": "Checked legally against original finding and unchanged primary law, not treated as verbatim"
+    },
+    {
+      "old_line": 174,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 176,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 178,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 179,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 180,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 181,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 182,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 184,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 186,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 187,
+      "destination": "Guide correction: credit cap clarified by foreign country under PIT44; existing rates/proof/no-carry-forward topics preserved",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": "Checked legally against original finding and unchanged primary law, not treated as verbatim"
+    },
+    {
+      "old_line": 188,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 189,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 190,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 191,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 192,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 193,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 195,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 197,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 199,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 201,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 203,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 204,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 205,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 206,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 207,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 208,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 209,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 210,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 211,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 212,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 213,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 214,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 215,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 216,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 217,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 218,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 219,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 220,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 221,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 222,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 223,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 224,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 225,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 226,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 227,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 228,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 229,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 230,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 231,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 232,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 233,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 235,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 237,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 239,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 240,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 241,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 242,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 243,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 244,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 245,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 246,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 247,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 248,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 249,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 251,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 253,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 255,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 256,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 257,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 258,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 259,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 260,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 261,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 262,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 263,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 264,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 265,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 266,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 267,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 268,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 269,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 271,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 273,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 275,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 276,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 277,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 278,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 279,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 280,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 281,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 282,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 283,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 284,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 285,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 286,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 287,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 288,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 289,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 290,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 291,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 292,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 293,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 295,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 297,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 299,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 300,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 301,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 302,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 303,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 304,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 305,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 306,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 307,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 308,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 309,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 310,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 311,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 312,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 313,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 314,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 315,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 316,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 317,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 319,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 321,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 323,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 324,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 325,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 326,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 327,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 328,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 329,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 330,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 331,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 332,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 333,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 334,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 335,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 336,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 337,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 338,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 339,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 340,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 341,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 342,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 343,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 344,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 345,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 346,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 347,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 348,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 350,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 352,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 354,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 355,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 356,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 357,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 358,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 359,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 360,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 361,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 362,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 363,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 364,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 365,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 366,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 367,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 368,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 369,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 371,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 373,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 375,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 376,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 377,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 378,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 379,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 380,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 381,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 382,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 383,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 384,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 385,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 386,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 387,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 388,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 389,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 390,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 392,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 394,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 396,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 397,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 398,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 399,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 400,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 401,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 402,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 403,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 404,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 405,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 406,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 407,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 408,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 409,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 410,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 411,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 413,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 415,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 417,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 418,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 419,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 420,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 421,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 422,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 423,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 424,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 425,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 426,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 427,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 428,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 429,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 430,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 432,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 434,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 436,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 437,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 438,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 439,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 440,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 441,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 442,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 443,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 444,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 445,
+      "destination": "Retained examples appendix: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 446,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 448,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 450,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 451,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 452,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 453,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 454,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 455,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 457,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 459,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 460,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 461,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 462,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 463,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 464,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 465,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 466,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 467,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 468,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 469,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 470,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 471,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 472,
+      "destination": "Guide Sources table, same URL with newly read date",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 474,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 475,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 476,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 477,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 478,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 479,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 480,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 481,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 483,
+      "destination": "Guide Sources: old pausal/printed-layout gaps closed; all other gaps preserved plus specific 2026 form/rounding gaps",
+      "verbatim_match": null,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 485,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 487,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 489,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 491,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 492,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 493,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 494,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 496,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 497,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 499,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 500,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    },
+    {
+      "old_line": 501,
+      "destination": "Guide: unchanged exact line",
+      "verbatim_match": true,
+      "disposition": "PASS",
+      "correction_review": null
+    }
+  ],
+  "all_original11_blocks_exact": true,
+  "all_original9_appendix_prose_and_blocks_verbatim": true,
+  "guide_examples_exactly2": true,
+  "cta_exact": true,
+  "protected_metadata_exact": true,
+  "stable_original_review_copies": [
+    {
+      "file": "independent-report-8a3ac55c8.md",
+      "sha256": "d2f91b06f8c82a82b4088e9b024dea1c853b358a1d3f5357f513553551813cd9",
+      "exact": true
+    },
+    {
+      "file": "independent-report-formatting-correction.json",
+      "sha256": "7a0c77ca033004a2bed82670bc111496a5650fd054eee3b63b696d4c19e66863",
+      "exact": true
+    },
+    {
+      "file": "independent-recomputations-8a3ac55c8.json",
+      "sha256": "26983f83ac4dbd7fa6293524e42b56c56e9231f416e3bafc3ce80830e74e26c9",
+      "exact": true
+    },
+    {
+      "file": "independent-reviewed-input-hashes-8a3ac55c8.json",
+      "sha256": "08936cddabe3f63f7b59cdb3db45d94d165a1afee4c0854ccde5f5ce35f1c39d",
+      "exact": true
+    },
+    {
+      "file": "independent-source-contexts-8a3ac55c8.json",
+      "sha256": "97d119877d9b2912e91e302abfdca351458a1606d9b9988cecbf6e0969f9ed82",
+      "exact": true
+    },
+    {
+      "file": "independent-ledger-dispositions-8a3ac55c8.json",
+      "sha256": "6d742ca6b2c85808b482bd82e7c013dc7bb0b2ef502c0edc7699310008e994ba",
+      "exact": true
+    },
+    {
+      "file": "independent-preservation-8a3ac55c8.json",
+      "sha256": "61078bdebea1ba932cb87562ed258117373bd26aca168d7605f8226fd2dd2c47",
+      "exact": true
+    },
+    {
+      "file": "independent-classification-8a3ac55c8.json",
+      "sha256": "1a34f25df110ac093d8f571094bcb48d921b496127635bf823ffaeefa9814f8a",
+      "exact": true
+    },
+    {
+      "file": "independent-findings-8a3ac55c8.json",
+      "sha256": "d4eebcd3f52415f0845b2e2d55e7eeb40525553b21b5deb4b1dabcaa3026ab06",
+      "exact": true
+    },
+    {
+      "file": "independent-source-integrity-8a3ac55c8.json",
+      "sha256": "13d58d2faff0e59ba0a0ac2c67d67b461f0235e4e57d7e6989e0af32b220e6ce",
+      "exact": true
+    }
+  ]
+}

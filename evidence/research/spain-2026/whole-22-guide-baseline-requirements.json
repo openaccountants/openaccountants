@@ -1,0 +1,194 @@
+{
+  "source_checkpoint": "bba54325f2f975ced58da68251ca202377677d7f",
+  "requirements": [
+    {
+      "domain": "IT-IND",
+      "requirement": "Resident annual State/regional scales, bases, minima, losses, credits, gains, rentals, special incoming regime and foral ordinary methods.",
+      "status": "partial ordinary coverage",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "I01\u2013I05 conditional regional and mixed-quota work"
+    },
+    {
+      "domain": "IT-IND",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "I01\u2013I05 conditional regional and mixed-quota work"
+    },
+    {
+      "domain": "IT-CORP",
+      "requirement": "State/Basque/Navarra ordinary annual base reconciliation, rates, loss/finance/capitalisation/credits, payments; provincial monetary correction.",
+      "status": "partial ordinary coverage",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "C01 positive Basque surcharge bridge; exact5% State capitalisation overlap qualified"
+    },
+    {
+      "domain": "IT-CORP",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "C01 positive Basque surcharge bridge; exact5% State capitalisation overlap qualified"
+    },
+    {
+      "domain": "VAT",
+      "requirement": "Common-territory IVA, IGIC and IPSI ordinary taxable supply, base/rate, recovery, mixed use/prorrata, credits and filing.",
+      "status": "partial ordinary coverage",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "V01 simultaneous U/P and V02 decisive irrecoverable-VAT threshold"
+    },
+    {
+      "domain": "VAT",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "V01 simultaneous U/P and V02 decisive irrecoverable-VAT threshold"
+    },
+    {
+      "domain": "SC",
+      "requirement": "Employee/employer, household/agricultural employee and full-rate RETA ordinary base/rate/payment/benefits methods.",
+      "status": "partial ordinary coverage",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "S01 new reduced fee and S02 equality; S03 baseline interest now separately closed"
+    },
+    {
+      "domain": "SC",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "S01 new reduced fee and S02 equality; S03 baseline interest now separately closed"
+    },
+    {
+      "domain": "PR",
+      "requirement": "State/foral withholding: annual computation, family minima, caps, changes, collection and111/190.",
+      "status": "supplied ordinary scope reviewed",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "No additional ordinary core gap demonstrated in current review chain"
+    },
+    {
+      "domain": "PR",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "No additional ordinary core gap demonstrated in current review chain"
+    },
+    {
+      "domain": "TP",
+      "requirement": "Related parties, valuation methods, evidence, documentation,232 and private231 reporting.",
+      "status": "supplied ordinary scope reviewed",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "No additional ordinary core gap demonstrated; named niche/publicCbCR excluded"
+    },
+    {
+      "domain": "TP",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "No additional ordinary core gap demonstrated; named niche/publicCbCR excluded"
+    },
+    {
+      "domain": "XB",
+      "requirement": "Residence, nonresidents/PE, exit tax, treaty interaction, foreign relief and collection; new foral route.",
+      "status": "partial ordinary coverage",
+      "evidence": "Current22 snapshots; exact-review-chain.json; primary receipts; remaining-work.json",
+      "remaining": "I05 mixed quota and C01 positive-PE surcharge branch; actual treaty facts remain taxpayer evidence"
+    },
+    {
+      "domain": "XB",
+      "requirement": "Current year, rates/base, statutory filing/payment, penalties, cross-border routing, intake and source inventory",
+      "status": "structural pass with substantive limits",
+      "evidence": "All22 current2026/tier2/9H2; all44 example blocks recomputed. Numerical green is not complete law coverage.",
+      "remaining": "I05 mixed quota and C01 positive-PE surcharge branch; actual treaty facts remain taxpayer evidence"
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Primary authority, actual body read, article and read date",
+      "status": "bounded pass; ordinary work remains",
+      "evidence": "Nine fresh official bodies plus14 hash-verified rereads; exact-source prior independent review chain. Do not infer every law was freshly downloaded in this final pass.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Independent review covers exact current22 source bytes",
+      "status": "pass at bba54325",
+      "evidence": "107 exact-chain assertions pass;21 match59af84aa hashes; deductions matches b6a9a233 latest regional independent report.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Original22 paths and protected platform metadata",
+      "status": "pass",
+      "evidence": "All original paths remain; protected original frontmatter lines byte-identical.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Full CTA tails and original references",
+      "status": "pass",
+      "evidence": "All full original CTA tails identical; references byte-identical.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Five accounting Guides outside tax-first milestone",
+      "status": "preserved; not audited as current tax Guides",
+      "evidence": "All five byte-identical to original base30545a0d; do not count as missing tax domains.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Rule11 old versus new no-loss review",
+      "status": "pass with declared reduction evidence",
+      "evidence": "Original16tax content accounted by historical independent review and41-item restoration ledger; eight files >25% shorter explicitly listed in report.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Description80\u2013150words,9orderedH2,two recomputing examples,year2026,tier2",
+      "status": "pass",
+      "evidence": "22/22;44oa blocks no failure. Details in pack-hashes-structure-preservation.json.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Relative file-link targets",
+      "status": "pass for file existence",
+      "evidence": "All parsed relative targets exist; not a universal external HTTP link or rendered-anchor certification.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Required Guide validator",
+      "status": "pass with preexisting warnings",
+      "evidence": "2267 source and6122 generated frontmatter blocks;3preexisting warning groups; validation.txt.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Full-country ordinary completeness",
+      "status": "not achieved",
+      "evidence": "remaining-work.json identifies finite unfinished ordinary branches; partial entries remain necessary.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Licensed accountant review/tier1",
+      "status": "not claimed",
+      "evidence": "Independent AI/source review is tier2 only; no licence or accountant attestation inferred.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "One country review batch and honest partial draft PR",
+      "status": "allowed after review/normal checks; not complete-country signoff",
+      "evidence": "Country-batch rule; docs/pack-readme-template.md partial and skill-template.md30; report explains scope.",
+      "remaining": ""
+    },
+    {
+      "domain": "PACK",
+      "requirement": "Merge/release/issue closure",
+      "status": "not certified by this audit",
+      "evidence": "PR independent-review comment before merge; CI and applicable workflow checks; do not close complete-country objective while ordinary work remains.",
+      "remaining": ""
+    }
+  ]
+}

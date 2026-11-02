@@ -1,0 +1,13 @@
+{
+  "commit": "46abcea31b0ac0556fddaf28ffcfd114e2b71459",
+  "decision": "PASS focused013/014 corrections; wholepack INCOMPLETE",
+  "013": "ActualGuide now identifies printed0310 vsinstructions03010, retains both sourcecodes/namedcategory workingpaper, acceptedmachinecode unresolved. Addeddiscrepancymetadata434/435/484 matchesactualprimary; originalsourcecontexts unchanged.",
+  "014": "NewIND651 fullretained69¹² read: annual3000,quarterlyI–III1%min750,QIVdifference,notice25afterquarter/payment25afternoticedeadline,start/cessation250perregisteredmonth,localtreasuryaddress. CorrectGuideprose unchanged.",
+  "machine": "IND651 recordedprimarySHA/exactquote/fullcontext PASS. Originalread30Oct versus31Octretainedcontextrecheck accuratelydistinguished.",
+  "image": {
+    "original_filename": "repository/ledgers/md-country-evidence/sources/attachments/reg697-loan-formula_543-20261031.png",
+    "bytes": 2602,
+    "sha256": "0ab7d96e78ae4bbef6198e701d2e4ddf5a1786924273cd097488d1cb53833731",
+    "independent_view": "Savedactual294×137PNG visuallyread and matches independentnormalIABexactURL screenshot aswellasretainedformula. No formula max symbol; Code19(d) separatelysuppliespositive-only rule."
+  }
+}

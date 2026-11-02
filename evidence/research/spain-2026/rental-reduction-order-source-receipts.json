@@ -1,0 +1,38 @@
+[
+  {
+    "key": "aeat-order",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/rendimientos-periodo-generacion-superior-dos-anos.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/rendimientos-periodo-generacion-superior-dos-anos.html",
+    "status": 200,
+    "sha256": "f3916846bcd6f50aa7bc590f9fc13a0a5c361b02e4963e41ccd540a5439a8d93",
+    "bytes": 13805,
+    "fetched_utc": "2026-10-27T17:02:57.839521+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "f3916846bcd6f50aa7bc590f9fc13a0a5c361b02e4963e41ccd540a5439a8d93",
+    "actual_body_read": true
+  },
+  {
+    "key": "lirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "bytes": 2028806,
+    "fetched_utc": "2026-10-27T17:02:58.744517+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "actual_body_read": true
+  },
+  {
+    "key": "rirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "status": 200,
+    "sha256": "ad765ce4b1d8e6e268f3cb2111d40a1f21a2b582f274c7bd3f4ab5813ed3867e",
+    "bytes": 1000017,
+    "fetched_utc": "2026-10-27T17:02:59.348758+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "ad765ce4b1d8e6e268f3cb2111d40a1f21a2b582f274c7bd3f4ab5813ed3867e",
+    "actual_body_read": true
+  }
+]

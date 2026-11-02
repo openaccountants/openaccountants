@@ -1,0 +1,21 @@
+{
+  "baseline": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "status": "Statutory-baseline draft; operative2026 regulatory/transition conditions not confirmed; independent source review pending; no accountant attestation",
+  "candidate_files": {
+    "skills/somalia/README.md": "0c18de54995e8ae6b1923616da05af64f9d4fc6bf55daa18728a81f6abd7c036",
+    "skills/somalia/so-transfer-pricing.md": "a1f5b5d1705ff8d518460b67d9ca9bdb0554c0ef7096a3365c1e453bc668415d",
+    "skills/somalia/so-cross-border-residence.md": "250f31d48ed6c89e0719708c0b6c29f446c94077aeb9e05f2448c90494b1a1c6",
+    "evidence/ledgers/so-transfer-pricing.md": "84ea0dba940a9ce8c334e68e823202d25ffc74aa2c012948965dc87932741c4d",
+    "evidence/ledgers/so-cross-border-residence.md": "8aa4670cafd9e9be80068ff221b3392eeeaa22085e5349a46fca3bc8637ba4fe",
+    "evidence/ledgers/somalia-old-topics.md": "5128943da8ef5d881b77d8948bcde51e6e6ccbf6852c78d6a6afc419e6d8ffa0",
+    "evidence/ledgers/somalia-source-read-20261101.md": "5e3bd1396cc0c54be8804a9220b4ce884808ba6ab2c6e3c2b93f2d8a77ccd60e"
+  },
+  "unchanged_legacy_files": {
+    "skills/somalia/so-company-formation.md": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+    "skills/somalia/so-corporate-income-tax.md": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+    "skills/somalia/so-income-tax.md": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+    "skills/somalia/so-payroll-social.md": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+    "skills/somalia/so-tax-overview.md": "bb8d862f5b79f351769eb68a73a0587ca819786b48e09b8a244e4262013bb516",
+    "skills/somalia/so-vat-gst.md": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66"
+  }
+}

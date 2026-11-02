@@ -1,0 +1,1943 @@
+{
+  "status": "WRITER RECONCILIATION ONLY; original745topicbaseline and corporate95unitreconciliation preserved separately. Not independentapproval/comprehensivecoverage.",
+  "read_on": "2026-10-30",
+  "records": [
+    {
+      "PR": 1009,
+      "PR_url": "https://github.com/openaccountants/openaccountants/pull/1009",
+      "merged_main_commit": "52d5195caccb4872ec3de9972a03399f386e4b2e",
+      "slug": "md-tax-overview",
+      "original_path": "skills/international/moldova/md-tax-overview.md",
+      "incoming_file_text": "---\nname: md-tax-overview\ndescription: \"Tax overview for the Republic of Moldova for tax year 2026: one page on how the system works under the Fiscal Code (Codul fiscal nr. 1163/1997) and who runs it (the State Tax Service, SFS). Covers the calendar tax year; the Moldovan leu; residence for companies and individuals; the flat 12% income tax for individuals and companies and the personal exemption; the 4% small-company regime and the IT park 7% single tax; dividends (6% withheld from resident individuals and non-residents) and the 12% withholding on other payments abroad; VAT at 20% with an MDL 1.7 million registration threshold and monthly returns; and the main deadlines (company return 25 March, individual return 30 April, VAT by the 25th). Trigger phrases: Moldova tax system, Moldova taxes overview, taxes in Moldova, impozite Moldova, SFS Moldova. Out of scope: the detail in the domain skills linked below.\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Moldova Tax Overview\n\n## The Moldovan tax system at a glance\n\nMoldova's national taxes are set out in one Fiscal Code (Codul fiscal nr. 1163/1997) and collected by the State Tax Service. Income tax is flat at 12% for both individuals and companies, with special regimes for small companies and IT park residents. Figures below are from the consolidated Fiscal Code on legis.md as amended to Law LP235 of 2 October 2026 (in force 30 October 2026).\n\n- **Tax year (taxable period)**: the calendar year. A new company's first period runs from registration to 31 December _(Fiscal Code art. 12^1(1), (2))_\n- **National currency**: Moldovan leu (MDL); Fiscal Code amounts are stated in lei _(Fiscal Code, e.g. art. 112(1))_\n- **Tax authority**: State Tax Service (Serviciul Fiscal de Stat, SFS) _(Fiscal Code arts. 83(4), 92(1))_\n- **Residence, companies**: a legal entity is resident if its activity is organised or managed in Moldova, or if Moldova is its main place of business _(Fiscal Code art. 5 pct. 5 lit. b))_. Detail: [md-corporate-income-tax](md-corporate-income-tax.md).\n- **Residence, individuals**: a person with a permanent home in Moldova, or present at least 183 days in the tax year _(Fiscal Code art. 5 pct. 5 lit. a))_. Detail: [moldova-income-tax](moldova-income-tax.md).\n- **Basis of taxation**: residents in business are taxed on income from Moldova and abroad; non-residents are taxed on Moldovan-source income listed in art. 71 _(Fiscal Code arts. 13(1)(a), 14(1)(a), 71)_\n- **Headline personal income tax rate**: 12%, flat _(Fiscal Code art. 15(a))_\n- **Personal exemption**: MDL 29,700 a year for a resident with annual taxable income under MDL 360,000 _(Fiscal Code art. 33(1))_. Detail: [moldova-income-tax](moldova-income-tax.md).\n- **Headline corporate income tax rate**: 12% of taxable income; 7% for peasant (farmer) households _(Fiscal Code art. 15(b), (c))_\n- **Small companies not registered for VAT**: may pay 4% of accounting income instead _(Fiscal Code arts. 54^1, 54^3)_\n- **IT park residents**: a single tax of 7% of sales revenue, at least 30% of the forecast average monthly wage per employee each month (MDL 5,220 in 2026, on a forecast wage of MDL 17,400), replacing income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax _(Fiscal Code arts. 370, 372(1); Government Decision 773/2025)_. Detail: [moldova-tax-optimization](moldova-tax-optimization.md).\n- **Dividends**: 6% withheld from dividends paid to resident individuals and to non-residents; dividends between Moldovan companies are not taxed _(Fiscal Code arts. 90^1(3^1), 91(1), 20 lit. z19))_\n- **Other payments to non-residents**: 12% withholding on Moldovan-source income such as services, interest and royalties; a treaty rate applies where it is lower _(Fiscal Code arts. 91(1), 79^3(1))_\n- **Does Moldova levy VAT?**: Yes. Standard rate 20%; reduced 8% on items such as bread and dairy _(Fiscal Code art. 96 lit. a), b))_. Detail: [moldova-vat](moldova-vat.md).\n- **VAT registration**: required once supplies exceed MDL 1.7 million in any 12 consecutive months, from 1 March 2026; the threshold was MDL 1.5 million before that date _(Fiscal Code art. 112(1); Law LP12/2026)_\n- **Social and health contributions**: see [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md)\n- **Annual personal income tax return deadline**: 30 April of the year after the tax year _(Fiscal Code art. 83(4)(b))_\n- **Annual corporate income tax return deadline**: the 25th day of the third month after the tax year, so 25 March 2027 for 2026; tax is paid by the same date _(Fiscal Code arts. 83(4)(a), 87(1))_\n- **Corporate tax instalments**: 25 March, 25 June, 25 September and 25 December _(Fiscal Code art. 84(1))_\n- **VAT return frequency and deadline**: monthly (the VAT tax period is a calendar month), due by the 25th of the following month _(Fiscal Code arts. 114(1), 115(1))_\n- **Tax withheld at source**: paid by the 25th of the month after payment _(Fiscal Code art. 92(1))_\n\n## Sources\n\n| Source | URL | Read on |\n|---|---|---|\n| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 20 lit. z19), 33, 54^1, 54^3, 71, 79^3, 83, 84, 87, 90^1, 91, 92, 96, 112, 114, 115, 370, 372 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |\n| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |\n| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |\n\nNot yet confirmed: social insurance and health insurance contribution rates for 2026 (set in the annual social insurance budget law and Law 1593/2002, not read here; see the sibling skills); treaty withholding rates; changes in force from 2027 shown on legis.md.\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "incoming_file_sha256": "ecf78c14f2a2836b166b3d0d9e32f27a08077cfeaa3e83faff32d1e54eefee73",
+      "current_Guide_sha256": "6e6f32be0fe446df9e4ffc1ed730b13c65bbfb85ef0f74fdbc86e20180a846b2",
+      "incoming_pre_CTA_units": 31,
+      "old_topic_destinations": [
+        {
+          "id": "MD-PUBLIC1009-001",
+          "incoming_section": "Front matter",
+          "original_text": "---\n\nname: md-tax-overview\ndescription: \"Tax overview for the Republic of Moldova for tax year 2026: one page on how the system works under the Fiscal Code (Codul fiscal nr. 1163/1997) and who runs it (the State Tax Service, SFS). Covers the calendar tax year; the Moldovan leu; residence for companies and individuals; the flat 12% income tax for individuals and companies and the personal exemption; the 4% small-company regime and the IT park 7% single tax; dividends (6% withheld from resident individuals and non-residents) and the 12% withholding on other payments abroad; VAT at 20% with an MDL 1.7 million registration threshold and monthly returns; and the main deadlines (company return 25 March, individual return 30 April, VAT by the 25th). Trigger phrases: Moldova tax system, Moldova taxes overview, taxes in Moldova, impozite Moldova, SFS Moldova. Out of scope: the detail in the domain skills linked below.\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+          "unit_sha256": "837c45c67e206155d4da06bd9a757e518e751fd0c8518a10640e47ac705e2b20",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed. Strictbelow360000 measure and statutoryinclusions/exclusions retained; headline is not automatic eligibility. Historic2008-2011andother15% exceptions supplied; residentcompanyreceiptrule not universal exemption.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-002",
+          "incoming_section": "Front matter",
+          "original_text": "# Moldova Tax Overview",
+          "unit_sha256": "9e4d62b0ad2bf8811dc13c4c3507b73737ef8810b823cd3733894b23aeee1917",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Front matter"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-003",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "## The Moldovan tax system at a glance",
+          "unit_sha256": "dea0631bc0bf135a9cb31bc2af68ac4138b4b6927e10e079b044696008356e58",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-004",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "Moldova's national taxes are set out in one Fiscal Code (Codul fiscal nr. 1163/1997) and collected by the State Tax Service. Income tax is flat at 12% for both individuals and companies, with special regimes for small companies and IT park residents. Figures below are from the consolidated Fiscal Code on legis.md as amended to Law LP235 of 2 October 2026 (in force 30 October 2026).",
+          "unit_sha256": "aa8e43a418d030cb4a225707e2a79ed4a5fe02b4a13c51638f34cfb366b60d71",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-005",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Tax year (taxable period)**: the calendar year. A new company's first period runs from registration to 31 December _(Fiscal Code art. 12^1(1), (2))_",
+          "unit_sha256": "3421de1ea15bae0eb1c5cdb495c5532ff0d4ec87977525e8ae45c927ea0c6cec",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-006",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **National currency**: Moldovan leu (MDL); Fiscal Code amounts are stated in lei _(Fiscal Code, e.g. art. 112(1))_",
+          "unit_sha256": "c1600d723f8e03228047552fcca663ef27690d995686c3ebf43f32dfe3fba9c2",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-007",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Tax authority**: State Tax Service (Serviciul Fiscal de Stat, SFS) _(Fiscal Code arts. 83(4), 92(1))_",
+          "unit_sha256": "1cfbb256377bf4375468a73f0f8478fce24d8c0b7735468b0ca6e154543b120e",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-008",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Residence, companies**: a legal entity is resident if its activity is organised or managed in Moldova, or if Moldova is its main place of business _(Fiscal Code art. 5 pct. 5 lit. b))_. Detail: [md-corporate-income-tax](md-corporate-income-tax.md).",
+          "unit_sha256": "8ee2e3431c5d51e28e2e495bd24ed67838dd64fffae9f438dc825103df90b60c",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-009",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Residence, individuals**: a person with a permanent home in Moldova, or present at least 183 days in the tax year _(Fiscal Code art. 5 pct. 5 lit. a))_. Detail: [moldova-income-tax](moldova-income-tax.md).",
+          "unit_sha256": "76f1eee85327a90af25d7739ea350b56289d597d756e3bcb4339ee8a39104415",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-010",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Basis of taxation**: residents in business are taxed on income from Moldova and abroad; non-residents are taxed on Moldovan-source income listed in art. 71 _(Fiscal Code arts. 13(1)(a), 14(1)(a), 71)_",
+          "unit_sha256": "15cb66f51b4b37ad006a5d6660e1f3ca9e49dae671f786c95b1ae7e10933d3a3",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-011",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Headline personal income tax rate**: 12%, flat _(Fiscal Code art. 15(a))_",
+          "unit_sha256": "dc2fd5b70175a33eee9992f64a466639281ab33e366ee82d1d98d65ff22d5943",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-012",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Personal exemption**: MDL 29,700 a year for a resident with annual taxable income under MDL 360,000 _(Fiscal Code art. 33(1))_. Detail: [moldova-income-tax](moldova-income-tax.md).",
+          "unit_sha256": "45437bc7c846517bcadf9cbf27205a58a06c7d84af9ea481710ae0a307ed0a24",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Strictbelow360000 measure and statutoryinclusions/exclusions retained; headline is not automatic eligibility.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-013",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Headline corporate income tax rate**: 12% of taxable income; 7% for peasant (farmer) households _(Fiscal Code art. 15(b), (c))_",
+          "unit_sha256": "f6bd1eacdd503126e8d4e1176a65e4c13d16a821df9b8e05bbf20a1dce299ea7",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-014",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Small companies not registered for VAT**: may pay 4% of accounting income instead _(Fiscal Code arts. 54^1, 54^3)_",
+          "unit_sha256": "29773b3c5571c63c73684baf9bec31d4a992b2f1b981b0148fc03d13278242cd",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-015",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **IT park residents**: a single tax of 7% of sales revenue, at least 30% of the forecast average monthly wage per employee each month (MDL 5,220 in 2026, on a forecast wage of MDL 17,400), replacing income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax _(Fiscal Code arts. 370, 372(1); Government Decision 773/2025)_. Detail: [moldova-tax-optimization](moldova-tax-optimization.md).",
+          "unit_sha256": "205e10c6d70063e6ab147fac601c3d62b0078e798a76be1ee9aff587e9684fc2",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-016",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Dividends**: 6% withheld from dividends paid to resident individuals and to non-residents; dividends between Moldovan companies are not taxed _(Fiscal Code arts. 90^1(3^1), 91(1), 20 lit. z19))_",
+          "unit_sha256": "ed4e83e73e0360809df85d7dcccb4b94da0abcdef634199c96c02ad4024e9a8b",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Historic2008-2011andother15% exceptions supplied; residentcompanyreceiptrule not universal exemption.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-017",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Other payments to non-residents**: 12% withholding on Moldovan-source income such as services, interest and royalties; a treaty rate applies where it is lower _(Fiscal Code arts. 91(1), 79^3(1))_",
+          "unit_sha256": "d8d879b7391c261c6e01c6463be6534bb6afd0f388c5587f776af40888c2fb1e",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds: Other headlines require their actual scope",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/md-cross-border.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-cross-border.md#The base",
+            "skills/international/moldova/md-cross-border.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-018",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Does Moldova levy VAT?**: Yes. Standard rate 20%; reduced 8% on items such as bread and dairy _(Fiscal Code art. 96 lit. a), b))_. Detail: [moldova-vat](moldova-vat.md).",
+          "unit_sha256": "befc48d9c8f7204d27c5308fbb76c2641a21c2e06b95a385b9955756fe127eae",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-019",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **VAT registration**: required once supplies exceed MDL 1.7 million in any 12 consecutive months, from 1 March 2026; the threshold was MDL 1.5 million before that date _(Fiscal Code art. 112(1); Law LP12/2026)_",
+          "unit_sha256": "bdad0533f72d0cb87a321cfe39a99051113fea5385169ac58adec50f1de9598c",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-020",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Social and health contributions**: see [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md)",
+          "unit_sha256": "836236ddb7d501f5830c2a4495e34b66b844b51b0f89acd74ed3bdd4e9282768",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-021",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Annual personal income tax return deadline**: 30 April of the year after the tax year _(Fiscal Code art. 83(4)(b))_",
+          "unit_sha256": "9ba8cd4b7d54010223008e9232c7b446049a63480b06ca29d2bb66e125cb160c",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-022",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Annual corporate income tax return deadline**: the 25th day of the third month after the tax year, so 25 March 2027 for 2026; tax is paid by the same date _(Fiscal Code arts. 83(4)(a), 87(1))_",
+          "unit_sha256": "45d981e08af70811c6d5dfcf48c8d72e7ad621112d13bac9de1e778573e283af",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-023",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Corporate tax instalments**: 25 March, 25 June, 25 September and 25 December _(Fiscal Code art. 84(1))_",
+          "unit_sha256": "820130fb34a1bd604bfb1e684306dce934adbfa3de359fb920d4e7249bf0500e",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-024",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **VAT return frequency and deadline**: monthly (the VAT tax period is a calendar month), due by the 25th of the following month _(Fiscal Code arts. 114(1), 115(1))_",
+          "unit_sha256": "0e65429a04ae60f0a7b0fe1fabd425fb56fc0d4a83a44a6f5282adb5bbc0a4e2",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Ordinarymonthretained witharticle94(d)electronic-servicesquarterexception; monthlyheadline notapplieduniversally.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-025",
+          "incoming_section": "The Moldovan tax system at a glance",
+          "original_text": "- **Tax withheld at source**: paid by the 25th of the month after payment _(Fiscal Code art. 92(1))_",
+          "unit_sha256": "ad71692111078fccc180299377b6653e7d47c89396c20f1ff8f1293fa20f4d69",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Who this applies to",
+            "skills/international/moldova/md-tax-overview.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-tax-overview.md#The base",
+            "skills/international/moldova/md-tax-overview.md#Deadlines and filing",
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-026",
+          "incoming_section": "Sources",
+          "original_text": "## Sources",
+          "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-027",
+          "incoming_section": "Sources",
+          "original_text": "| Source | URL | Read on |",
+          "unit_sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-028",
+          "incoming_section": "Sources",
+          "original_text": "| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 20 lit. z19), 33, 54^1, 54^3, 71, 79^3, 83, 84, 87, 90^1, 91, 92, 96, 112, 114, 115, 370, 372 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |",
+          "unit_sha256": "b54565506c9aaa4b4a57d78b9d6396789d1baf133f591ba57c4036d694c93715",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-029",
+          "incoming_section": "Sources",
+          "original_text": "| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |",
+          "unit_sha256": "e65a90d7312eb6a45c9e2efac89bf4fc19d2398637b7dc91a53788c051686abf",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-030",
+          "incoming_section": "Sources",
+          "original_text": "| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |",
+          "unit_sha256": "5f53f78d4d3912c86550365af7e63d4da31f4809665643d0feb3cfe2e88907b5",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1009-031",
+          "incoming_section": "Sources",
+          "original_text": "Not yet confirmed: social insurance and health insurance contribution rates for 2026 (set in the annual social insurance budget law and Law 1593/2002, not read here; see the sibling skills); treaty withholding rates; changes in force from 2027 shown on legis.md.",
+          "unit_sha256": "f9dd8990feb896988374268c174a05441b08f3779cd1f9c3627b3a33e78a2990",
+          "destination": [
+            "skills/international/moldova/md-tax-overview.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        }
+      ],
+      "CTA_exact_match": true
+    },
+    {
+      "PR": 1010,
+      "PR_url": "https://github.com/openaccountants/openaccountants/pull/1010",
+      "merged_main_commit": "3504d383beb1440f0fb391d29a06ce6e5ed6a18f",
+      "slug": "md-company-formation",
+      "original_path": "skills/international/moldova/md-company-formation.md",
+      "incoming_file_text": "---\nname: md-company-formation\ndescription: \"Company formation and entity choice in the Republic of Moldova for tax year 2026. Covers the limited liability company (SRL) under Law 135/2007 (no statutory minimum capital, contributions paid within 6 months, one or more founders, no cap on members), the joint-stock company (SA, minimum capital MDL 600,000), the individual entrepreneur (II) and the independent entrepreneur (antreprenor independent, 15% single tax on service income up to MDL 1.2 million); registration at the Public Services Agency (ASP) in 24 hours or 4 hours, with the 2026 ASP fees for name reservation and registration; the IDNO as the tax code; the 150-day deadline for annual financial statements; and the first-year tax calendar (12% income tax or the 4% regime, VAT registration over MDL 1.7 million, monthly withholding). Trigger phrases: set up a company in Moldova, SRL Moldova, register company Moldova, ASP registration fee, întreprinzător individual, antreprenor independent, Moldova entity choice. Out of scope: tax computations (md-corporate-income-tax, moldova-income-tax, moldova-vat, moldova-payroll) and tax planning (moldova-tax-optimization).\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Moldova Company Formation & Entity Choice\n\n## Entity types, capital and annual compliance\n\nThe most common Moldovan business vehicle is the limited liability company (SRL). Registration is handled by the Public Services Agency (Agenția Servicii Publice, ASP). Figures below are from Law 135/2007 on limited liability companies (as amended to LP41/2026), the Fiscal Code (as amended to LP235/2026) and the ASP service pages, all read on 30 October 2026.\n\n- **Most common entity type**: Societate cu Răspundere Limitată (SRL), a commercial company with legal personality whose capital is divided into shares (părți sociale) and whose debts are backed by the company's own assets _(Law 135/2007 art. 2(1))_. The full name must include the words \"societate cu răspundere limitată\" _(ASP, state registration of a legal entity, specific requirements)_\n- **Founders and members of an SRL**: one or more individuals and/or legal entities; the number of members is not limited (200 at most for a crowdfunding investment vehicle) _(Law 135/2007 art. 11(1), (3), (4))_. A board is compulsory above 50 members _(Law 135/2007 art. 63(1))_\n- **Joint-stock company**: Societate pe Acțiuni (SA), for larger or public capital raising; registered by ASP like an SRL _(ASP, state registration of a legal entity: online filing for SRL and SA)_\n- **Sole trader vehicle**: Întreprinzător Individual (II), activity on one's own account without forming a legal entity, taxed at 12% on income _(ASP, registration of an individual entrepreneur; Fiscal Code art. 15(a))_\n- **Independent entrepreneur (antreprenor independent)**: a registration for individuals providing services only, recorded by ASP within 24 hours, paying one monthly single tax of 15% of service income up to MDL 1,200,000 a year and 35% above, which includes income tax, social and health contributions and local taxes _(Fiscal Code arts. 69^20, 69^21, 69^25, 69^26)_. Detail: [moldova-income-tax](moldova-income-tax.md).\n- **Minimum share capital for an SRL**: no statutory minimum. The capital is set in the articles and/or entered in the state register; the former minimum (art. 21(3)) is repealed _(Law 135/2007 art. 21(1)-(3))_\n- **Paying in SRL capital**: each member pays its subscribed contribution in full within 6 months of registration; contributions are presumed to be cash unless the articles say otherwise _(Law 135/2007 art. 22(1), (2))_\n- **Minimum share capital for an SA (joint-stock company)**: MDL 600,000 _(Law 1134/1997 on joint-stock companies, art. 38(2))_. The old figure of MDL 20,000 is no longer the law.\n- **Registration authority**: Public Services Agency (ASP), State Register of legal units _(ASP, state registration of a legal entity)_\n- **Incorporation timeline**: registration within 24 hours, counted from the working day after the documents are filed; 4 hours on the urgent track _(ASP, state registration of a legal entity)_. If the company is not registered within 3 months of the articles being signed, the founders are released from their share obligations unless the articles say otherwise _(ASP, specific requirements for SRL)_\n- **State registration fee, legal entity (SRL, SA)**: MDL 1,149 for 24 hours; MDL 4,596 for 4 hours; free for applicants who qualify for the reliefs in Law 220/2007 art. 4 and Law 179/2016 art. 15 _(ASP, state registration of a legal entity, terms and fees)_\n- **State registration fee, individual entrepreneur (II)**: MDL 364 for 24 hours; MDL 1,456 for 4 hours _(ASP, registration of an individual entrepreneur, terms and fees)_\n- **Name check and reservation**: free in 5 working days; MDL 71 in 3 working days; MDL 142 in 24 hours; MDL 213 in 4 hours; MDL 284 in 1 hour. A reserved name is required before applying _(ASP, name check and reservation, terms and fees)_\n- **Core incorporation steps**: reserve the name at ASP; sign the articles (statut) by all founders; file the registration application with founders' and administrator's IDs and pay the fee (MPay or bank transfer); receive the registration decision, articles and, on request, a register extract. The state identification number (IDNO) is also the tax code _(ASP, state registration of a legal entity; Law 135/2007 art. 12(1))_. Open a bank account and register for VAT separately when required (next items).\n- **VAT registration**: required once supplies exceed MDL 1.7 million in any 12 consecutive months (from 1 March 2026; MDL 1.5 million before that date); notify the SFS by the last day of the month in which the threshold is passed _(Fiscal Code art. 112(1); Law LP12/2026)_\n- **Income tax regime choice in year one**: 12% of taxable income on the standard regime, or 4% of accounting income for a company not registered for VAT, chosen in the accounting policy by the 25th of the month after the quarter of registration _(Fiscal Code arts. 15(b), 54^1(3)(c), 54^3)_. Detail: [md-corporate-income-tax](md-corporate-income-tax.md).\n- **Core annual compliance**: annual income tax return by 25 March (25th of the third month after year end), with quarterly instalments on 25 March, June, September and December; VAT returns monthly by the 25th; tax withheld from salaries and other payments, and the monthly withholding report, by the 25th of the following month _(Fiscal Code arts. 83(4)(a), 84(1), 114(1), 115(1), 92(1), (2))_. Annual financial statements (with the management report and, where required, the auditor's report) go to the owners and the National Bureau of Statistics within 150 days of year end, so by 30 May 2027 for 2026; a public-interest entity has 120 days _(Law 287/2017 on accounting and financial reporting, art. 33(1), (3))_.\n\n## Sources\n\n| Source | URL | Read on |\n|---|---|---|\n| Legea nr. 135/2007 privind societățile cu răspundere limitată, consolidated to LP41/2026: arts. 2, 11, 12, 21, 22, 63 | https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro | 2026-10-30 |\n| Codul fiscal nr. 1163/1997, consolidated to LP235/2026: arts. 15, 54^1, 54^3, 69^20, 69^21, 69^25, 69^26, 83, 84, 92, 112, 114, 115 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |\n| Legea nr. 1134/1997 privind societățile pe acțiuni, 2026 version (to LP92/2026, in force 11.06.2026): art. 38(2) | https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro | 2026-10-30 |\n| Legea contabilității și raportării financiare nr. 287/2017, version in force in 2026 (to LP320/2023, in force 01.01.2025): art. 33 | https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro | 2026-10-30 |\n| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |\n| ASP, state registration of a legal entity (terms, fees, documents, SRL requirements) | https://asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1 | 2026-10-30 |\n| ASP, state registration of an individual entrepreneur (terms and fees) | https://asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii | 2026-10-30 |\n| ASP, name check and reservation (terms and fees) | https://asp.gov.md/ro/servicii/persoane-juridice/asistenta-inregistrare/223 | 2026-10-30 |\n\nNot yet confirmed: the eligibility conditions for the ASP fee reliefs (Law 220/2007 art. 4, Law 179/2016 art. 15, not read); whether bank account opening and social insurance registration need a separate step for a legal entity (the ASP page says only that the IDNO is the tax code).\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "incoming_file_sha256": "5ac6473ae9d5a13caf797cde2c81c1465cc40dee2bcf0a794bc178a830f26b36",
+      "current_Guide_sha256": "2568a39d2d062b187ec483263ea78a81cc970f084dd1a322d92b178c5a4ff0e5",
+      "incoming_pre_CTA_units": 32,
+      "old_topic_destinations": [
+        {
+          "id": "MD-PUBLIC1010-001",
+          "incoming_section": "Front matter",
+          "original_text": "---\n\nname: md-company-formation\ndescription: \"Company formation and entity choice in the Republic of Moldova for tax year 2026. Covers the limited liability company (SRL) under Law 135/2007 (no statutory minimum capital, contributions paid within 6 months, one or more founders, no cap on members), the joint-stock company (SA, minimum capital MDL 600,000), the individual entrepreneur (II) and the independent entrepreneur (antreprenor independent, 15% single tax on service income up to MDL 1.2 million); registration at the Public Services Agency (ASP) in 24 hours or 4 hours, with the 2026 ASP fees for name reservation and registration; the IDNO as the tax code; the 150-day deadline for annual financial statements; and the first-year tax calendar (12% income tax or the 4% regime, VAT registration over MDL 1.7 million, monthly withholding). Trigger phrases: set up a company in Moldova, SRL Moldova, register company Moldova, ASP registration fee, întreprinzător individual, antreprenor independent, Moldova entity choice. Out of scope: tax computations (md-corporate-income-tax, moldova-income-tax, moldova-vat, moldova-payroll) and tax planning (moldova-tax-optimization).\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+          "unit_sha256": "25930b77b4664476ae55963d69b90ea12bf3af6baaf05b7bb829f9b9a0baa1bb",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Complete the actual individual-registration application"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed. Generalunlimitedmembers,qualifyingcrowdfunding200cap,andmandatoryboardabove50members directlyread incurrentLaw135arts11/63. Actual364/1456agencytariffs andapplication3-6/instructions/BE8firstpageverified;remainingAML/PEP/clocks explicit.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-002",
+          "incoming_section": "Front matter",
+          "original_text": "# Moldova Company Formation & Entity Choice",
+          "unit_sha256": "197cfb274908ca145bffb70641dac9b82afe02609a25561e7f79c0bc50bc0e91",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Front matter"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-003",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "## Entity types, capital and annual compliance",
+          "unit_sha256": "a867cf8610e054a877feb31d6bc8d908176c7d604e7d45618c5efda043af315e",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Accounts120/150/180daypopulations retained;30May2027notcertifiedasfilingduedatewithoutrollover/actualcategorycheck. TaxinstalmentandVAT/payerregimeconditionsstayseparate.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-004",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "The most common Moldovan business vehicle is the limited liability company (SRL). Registration is handled by the Public Services Agency (Agenția Servicii Publice, ASP). Figures below are from Law 135/2007 on limited liability companies (as amended to LP41/2026), the Fiscal Code (as amended to LP235/2026) and the ASP service pages, all read on 30 October 2026.",
+          "unit_sha256": "c78e942121ab4a2bf2e42d5de01cf837f87a0acfceb3cef049617962e8d8c71c",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Noverifiedprevalencestatistic;retainSRLidentity/choice methodwithoutclaiminguniversalmostcommonorbest.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-005",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Most common entity type**: Societate cu Răspundere Limitată (SRL), a commercial company with legal personality whose capital is divided into shares (părți sociale) and whose debts are backed by the company's own assets _(Law 135/2007 art. 2(1))_. The full name must include the words \"societate cu răspundere limitată\" _(ASP, state registration of a legal entity, specific requirements)_",
+          "unit_sha256": "f6e9f903bae2991549ae32d8692485ad3a3bc1765dd0c96dea946c951d5dc004",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Noverifiedprevalencestatistic;retainSRLidentity/choice methodwithoutclaiminguniversalmostcommonorbest.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-006",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Founders and members of an SRL**: one or more individuals and/or legal entities; the number of members is not limited (200 at most for a crowdfunding investment vehicle) _(Law 135/2007 art. 11(1), (3), (4))_. A board is compulsory above 50 members _(Law 135/2007 art. 63(1))_",
+          "unit_sha256": "39b1e774c5d88c838161888563a373c475a69352fe467500da7eb1a6901faf4c",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#The base: Prepare the SRL decision, statute and contributions"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Generalunlimitedmembers,qualifyingcrowdfunding200cap,andmandatoryboardabove50members directlyread incurrentLaw135arts11/63.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-007",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Joint-stock company**: Societate pe Acțiuni (SA), for larger or public capital raising; registered by ASP like an SRL _(ASP, state registration of a legal entity: online filing for SRL and SA)_",
+          "unit_sha256": "a3d6f4ab3f04a0bdf53af0e40585a2b4a7149a72918b5bc8e3bb5adc509dcfda",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-008",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Sole trader vehicle**: Întreprinzător Individual (II), activity on one's own account without forming a legal entity, taxed at 12% on income _(ASP, registration of an individual entrepreneur; Fiscal Code art. 15(a))_",
+          "unit_sha256": "0f47493af2320fea7b527b94e3a52dfd174bb720df4aa6d5fd29f5ab78b616ae",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Complete the actual individual-registration application"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actual364/1456agencytariffs andapplication3-6/instructions/BE8firstpageverified;remainingAML/PEP/clocks explicit.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-009",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Independent entrepreneur (antreprenor independent)**: a registration for individuals providing services only, recorded by ASP within 24 hours, paying one monthly single tax of 15% of service income up to MDL 1,200,000 a year and 35% above, which includes income tax, social and health contributions and local taxes _(Fiscal Code arts. 69^20, 69^21, 69^25, 69^26)_. Detail: [moldova-income-tax](moldova-income-tax.md).",
+          "unit_sha256": "44d657ad1dfb9882a04ccdf901e84db76ba28c5246fba53df05c0d709430f8f1",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Services-onlyspecificregisteredpopulation and15/35rates preserved in connected methods;notordinaryIIorallfreelancers.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-010",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Minimum share capital for an SRL**: no statutory minimum. The capital is set in the articles and/or entered in the state register; the former minimum (art. 21(3)) is repealed _(Law 135/2007 art. 21(1)-(3))_",
+          "unit_sha256": "8d9c12b88fc27d4721c28e5c94f204882ab4b5fbb2f225570b2a9b835a5ce6a3",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-011",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Paying in SRL capital**: each member pays its subscribed contribution in full within 6 months of registration; contributions are presumed to be cash unless the articles say otherwise _(Law 135/2007 art. 22(1), (2))_",
+          "unit_sha256": "01c0552bb12fcf08aae4f50971ebc48b54bccb0a563d68464c7683d6c51e46ff",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-012",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Minimum share capital for an SA (joint-stock company)**: MDL 600,000 _(Law 1134/1997 on joint-stock companies, art. 38(2))_. The old figure of MDL 20,000 is no longer the law.",
+          "unit_sha256": "ae08bb9b556f10e17b76963f99544d5519a74d40e8cd48cc6beaf680a14d6578",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-013",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Registration authority**: Public Services Agency (ASP), State Register of legal units _(ASP, state registration of a legal entity)_",
+          "unit_sha256": "aa7e545d16068624235c0d4399740d23c423d5ef382ff2fa62218050a5774152",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-014",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Incorporation timeline**: registration within 24 hours, counted from the working day after the documents are filed; 4 hours on the urgent track _(ASP, state registration of a legal entity)_. If the company is not registered within 3 months of the articles being signed, the founders are released from their share obligations unless the articles say otherwise _(ASP, specific requirements for SRL)_",
+          "unit_sha256": "3f4ebc27342da9ad97e94c4c24c43909e5f786a1592702150ea771267c2b9165",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Prepare the SRL decision, statute and contributions",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Statutorythree-monthtrigger isapprovalofstatute underLaw135art16(3);Civil248(2)consequence notcertified fromagency signing-date summary.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-015",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **State registration fee, legal entity (SRL, SA)**: MDL 1,149 for 24 hours; MDL 4,596 for 4 hours; free for applicants who qualify for the reliefs in Law 220/2007 art. 4 and Law 179/2016 art. 15 _(ASP, state registration of a legal entity, terms and fees)_",
+          "unit_sha256": "98d9ae60aa501eb233cc1b34ab1db686edab8119bf611a82a5e4d2ebeb4e955d",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-016",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **State registration fee, individual entrepreneur (II)**: MDL 364 for 24 hours; MDL 1,456 for 4 hours _(ASP, registration of an individual entrepreneur, terms and fees)_",
+          "unit_sha256": "1d24af0a836db8c162c7abfd0b9d286588170a870d85d4d90a50866235a542cb",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Complete the actual individual-registration application"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actual364/1456agencytariffs andapplication3-6/instructions/BE8firstpageverified;remainingAML/PEP/clocks explicit.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-017",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Name check and reservation**: free in 5 working days; MDL 71 in 3 working days; MDL 142 in 24 hours; MDL 213 in 4 hours; MDL 284 in 1 hour. A reserved name is required before applying _(ASP, name check and reservation, terms and fees)_",
+          "unit_sha256": "69f52a7cac7b9c59d4717cfb1613d32e7870d6ed50eb093a126a0418fbd1e3af",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Assemble and submit the registration file"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualpaidtariffsverified;five-dayfreedisplay retainsfootnote21qualification. Availabilitycheck distinguishedfromoptionalreservation,notuniversalprepaidreservationrequirement.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-018",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Core incorporation steps**: reserve the name at ASP; sign the articles (statut) by all founders; file the registration application with founders' and administrator's IDs and pay the fee (MPay or bank transfer); receive the registration decision, articles and, on request, a register extract. The state identification number (IDNO) is also the tax code _(ASP, state registration of a legal entity; Law 135/2007 art. 12(1))_. Open a bank account and register for VAT separately when required (next items).",
+          "unit_sha256": "18d98632ba2a84233fe3fcfd922720d82d0a083c6afb15450c9be1aa3344d709",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base: Assemble and submit the registration file"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualpaidtariffsverified;five-dayfreedisplay retainsfootnote21qualification. Availabilitycheck distinguishedfromoptionalreservation,notuniversalprepaidreservationrequirement.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-019",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **VAT registration**: required once supplies exceed MDL 1.7 million in any 12 consecutive months (from 1 March 2026; MDL 1.5 million before that date); notify the SFS by the last day of the month in which the threshold is passed _(Fiscal Code art. 112(1); Law LP12/2026)_",
+          "unit_sha256": "003cbd7a2749e68676ddb03c1293e57e09929db3bfaee9be1f18fad7051d567a",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-020",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Income tax regime choice in year one**: 12% of taxable income on the standard regime, or 4% of accounting income for a company not registered for VAT, chosen in the accounting policy by the 25th of the month after the quarter of registration _(Fiscal Code arts. 15(b), 54^1(3)(c), 54^3)_. Detail: [md-corporate-income-tax](md-corporate-income-tax.md).",
+          "unit_sha256": "b8621a7f0ca4175025d2ca56fa5bb7fa5db1d8e1c235b1cbc3f2b37d4e9facce",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Who this applies to",
+            "skills/international/moldova/md-company-formation.md#Rates, bands and thresholds",
+            "skills/international/moldova/md-company-formation.md#The base",
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-021",
+          "incoming_section": "Entity types, capital and annual compliance",
+          "original_text": "- **Core annual compliance**: annual income tax return by 25 March (25th of the third month after year end), with quarterly instalments on 25 March, June, September and December; VAT returns monthly by the 25th; tax withheld from salaries and other payments, and the monthly withholding report, by the 25th of the following month _(Fiscal Code arts. 83(4)(a), 84(1), 114(1), 115(1), 92(1), (2))_. Annual financial statements (with the management report and, where required, the auditor's report) go to the owners and the National Bureau of Statistics within 150 days of year end, so by 30 May 2027 for 2026; a public-interest entity has 120 days _(Law 287/2017 on accounting and financial reporting, art. 33(1), (3))_.",
+          "unit_sha256": "9d948c077db0a403dea044e6ce4262787664a7ea99cc6a4fb3d95e12fa6210c9",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Deadlines and filing",
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Accounts120/150/180daypopulations retained;30May2027notcertifiedasfilingduedatewithoutrollover/actualcategorycheck. TaxinstalmentandVAT/payerregimeconditionsstayseparate.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-022",
+          "incoming_section": "Sources",
+          "original_text": "## Sources",
+          "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-023",
+          "incoming_section": "Sources",
+          "original_text": "| Source | URL | Read on |",
+          "unit_sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-024",
+          "incoming_section": "Sources",
+          "original_text": "| Legea nr. 135/2007 privind societățile cu răspundere limitată, consolidated to LP41/2026: arts. 2, 11, 12, 21, 22, 63 | https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro | 2026-10-30 |",
+          "unit_sha256": "263400f3d84d4c334f41ee70b5b25ccc852b9493737ac8266136e51448c74522",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-025",
+          "incoming_section": "Sources",
+          "original_text": "| Codul fiscal nr. 1163/1997, consolidated to LP235/2026: arts. 15, 54^1, 54^3, 69^20, 69^21, 69^25, 69^26, 83, 84, 92, 112, 114, 115 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |",
+          "unit_sha256": "1bfa24bb5d88e6b859c38b44e25a24154570743924e03448cd318557e3b81aaa",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-026",
+          "incoming_section": "Sources",
+          "original_text": "| Legea nr. 1134/1997 privind societățile pe acțiuni, 2026 version (to LP92/2026, in force 11.06.2026): art. 38(2) | https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro | 2026-10-30 |",
+          "unit_sha256": "c101cf13d0ca2e906cc734a866ad113fa71b04612a748e7ecf80727ab17bfe33",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-027",
+          "incoming_section": "Sources",
+          "original_text": "| Legea contabilității și raportării financiare nr. 287/2017, version in force in 2026 (to LP320/2023, in force 01.01.2025): art. 33 | https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro | 2026-10-30 |",
+          "unit_sha256": "f9d89c6df2f8154a993600fc8d5acf7f0dc25da4012b9a7471c2a95847713c5e",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-028",
+          "incoming_section": "Sources",
+          "original_text": "| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |",
+          "unit_sha256": "f7b2634f9bb1134f0fcd41741154cbc6e6315221a480074a739b274da977d4f6",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-029",
+          "incoming_section": "Sources",
+          "original_text": "| ASP, state registration of a legal entity (terms, fees, documents, SRL requirements) | https://asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1 | 2026-10-30 |",
+          "unit_sha256": "b0ccafef8df51f44776bda93336587f3237c09f312c481a8485152e43202433f",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-030",
+          "incoming_section": "Sources",
+          "original_text": "| ASP, state registration of an individual entrepreneur (terms and fees) | https://asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii | 2026-10-30 |",
+          "unit_sha256": "c0c12cfa5e3928f12d5981d3ba562e6bd9e6daebefac259e824a286d5e30d942",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-031",
+          "incoming_section": "Sources",
+          "original_text": "| ASP, name check and reservation (terms and fees) | https://asp.gov.md/ro/servicii/persoane-juridice/asistenta-inregistrare/223 | 2026-10-30 |",
+          "unit_sha256": "ff1883fef28a9842bc0ffa21ace266609aba4447030fa32cd4002d64cb689742",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1010-032",
+          "incoming_section": "Sources",
+          "original_text": "Not yet confirmed: the eligibility conditions for the ASP fee reliefs (Law 220/2007 art. 4, Law 179/2016 art. 15, not read); whether bank account opening and social insurance registration need a separate step for a legal entity (the ASP page says only that the IDNO is the tax code).",
+          "unit_sha256": "7c1b72fd253f7a640743c40a9cb8ac2c61ca4fd6d7fb8a25e285387225a5a4aa",
+          "destination": [
+            "skills/international/moldova/md-company-formation.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        }
+      ],
+      "CTA_exact_match": true
+    },
+    {
+      "PR": 1011,
+      "PR_url": "https://github.com/openaccountants/openaccountants/pull/1011",
+      "merged_main_commit": "7bf59a0bfc79c25d13ecc3d58062ba65df055aec",
+      "slug": "moldova-tax-optimization",
+      "original_path": "skills/international/moldova/moldova-tax-optimization.md",
+      "incoming_file_text": "---\nname: moldova-tax-optimization\ndescription: Use this skill whenever asked about reducing tax in Moldova, tax planning, or legal strategies to minimise tax for a self-employed person, IT business, or small company in Moldova, tax year 2026. Trigger on phrases like \"reduce tax Moldova\", \"Moldova IT Park\", \"7% tax IT\", \"small business 4% Moldova\", \"turnover tax Moldova\", \"sole proprietor vs SRL\", \"Moldova dividends 6%\", \"independent entrepreneur Moldova\", \"defer corporate tax until dividends Moldova\", \"save tax Moldova\", \"tax planning Moldova\". This skill covers the IT park 7%-of-revenue single tax, the 4% small-company regime, the independent entrepreneur 15% single tax, the standard 12% system, dividend extraction at 6%, the option to pay 2023 to 2026 corporate tax only when dividends are paid, and the eligibility and anti-avoidance red lines. ALWAYS read this skill before advising on any Moldovan tax optimisation. Computations sit in md-corporate-income-tax, moldova-income-tax, moldova-social-contributions and moldova-payroll.\nversion: 0.2\njurisdiction: MD\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: tax-optimization\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Moldova Tax Optimization\n\n## Moldova Tax Optimization Skill v0.2\n\n**Tier 2. Sources: the Fiscal Code of the Republic of Moldova (Codul fiscal nr. 1163/1997, consolidated to Law LP235 of 2 October 2026), read on 30 October 2026 and listed in Sources below. Figures must agree with `md-corporate-income-tax.md`, `moldova-income-tax.md` and `moldova-social-contributions.md`; those skills win if they differ. No Moldovan tax adviser has signed this off. Aggressive positions are never advised; every suggestion must be reviewed.**\n\n## Section 1 -- Quick Reference\n\n**Quick Reference**\n\n| Field | Value |\n| --- | --- |\n| Country | Republic of Moldova |\n| Currency | MDL (leu) |\n| Headline levers | **IT park 7% of sales revenue**; 4% small-company regime; independent entrepreneur 15% single tax; 6% on dividends; corporate tax on 2023 to 2026 profits deferred until dividends are paid |\n| Standard income tax, individuals and companies | **12%** (Fiscal Code art. 15(a), (b)) |\n| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |\n| VAT registration threshold | over **MDL 1.7 million** in any 12 consecutive months from 1 March 2026; MDL 1.5 million before that date (art. 112(1); Law LP12/2026) |\n| Anti-avoidance | IT park 70% eligible-revenue test; 4% regime closed to VAT payers, consultancy firms and owners of more than three small companies |\n\n> **Moldova's headline is the IT park single tax:** 7% of monthly sales revenue, with a floor per employee, replaces income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax (Fiscal Code arts. 370, 372). For an IT business with a large payroll, this is usually the biggest lever.\n\n## Section 2 -- IT Park (7% of sales revenue)\n\n**IT Park (7% of sales revenue)**\n\n| Feature | Detail |\n| --- | --- |\n| Tax | **7% of sales revenue** booked monthly, but at least **30% of the forecast average monthly wage per employee** each month, which is **MDL 5,220** per employee in 2026 (30% of the MDL 17,400 forecast wage, Government Decision 773/2025) (Fiscal Code arts. 369(1), (2), 370(1), (2)) |\n| What it replaces | Income tax on business profit; income tax on salaries; employer social contributions; employees' health insurance premiums; local taxes; property tax; road-use tax for Moldovan-registered vehicles (art. 372(1)) |\n| What it does not replace | Tax withheld under arts. 88(5), 89, 90, 90^1 and 91 (for example 6% on dividends and 12% on payments to non-residents), contributions on non-salary payments to individuals, VAT, excise and other road taxes (art. 372(2)) |\n| Who | Legal entities and individuals registered as entrepreneurs who meet the conditions of the IT parks law (Law 77/2016) (art. 368(1)) |\n| Eligibility test | **70% or more** of sales revenue from activities permitted under art. 8 of Law 77/2016, measured monthly on a cumulative basis; up to 2 months below 70% are allowed if the year as a whole reaches 70% (art. 368(2), (3)) |\n| Permitted activities | Listed by CAEM code in Law 77/2016 art. 8: custom software (62.01), computer games publishing (58.21), other software publishing (58.29), IT consultancy (62.02), computer facilities management (62.03), other IT services (62.09), data processing and hosting (63.11), web portals (63.12), plus narrowly limited computer training, research and development, electronic components, specialised design, film and video post-production and game audio work |\n| How long | Each park runs for a term set by Government decision, at most 20 years (Law 77/2016 art. 9(2)); a resident's contract runs at least 4 years and not past the park's term (art. 7(2)) |\n| Filing and payment | Monthly return and payment by the 25th of the following month (art. 373(1), (2)) |\n| Best for | Software and IT service firms with significant payroll, because the 7% also covers payroll taxes |\n\nIT park residents cannot use the corporate tax deferral to the dividend date (art. 87(1^1)). Detail of the computation: [md-corporate-income-tax](md-corporate-income-tax.md).\n\n## Section 3 -- 4% Small-Company Regime\n\n- **4% small-company regime**: a company not registered for VAT may pay 4% of the income in its financial accounts instead of 12% on profit (Fiscal Code arts. 54^1, 54^2, 54^3). No profit computation; good for low-expense businesses below the VAT threshold.\n- **Who is excluded**: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company with VAT-exempt supplies without deduction right above MDL 1.7 million uses the standard regime (art. 54^1(3^1)).\n- **Choosing it**: record the choice in the accounting policy by 25 April, or for a new company by the 25th of the month after the quarter of registration (art. 54^1(3)).\n- **When it ends**: from the date the company registers for VAT (art. 54^1(4)). Registration is compulsory once supplies pass MDL 1.7 million in any 12 consecutive months (art. 112(1), in force from 1 March 2026; MDL 1.5 million before that date, Law LP12/2026).\n- **Payments**: quarterly by the 25th of the month after the quarter; annual report by 25 March (art. 54^4(2), (3)). No quarterly instalments under art. 84 and no 12% advance on interim dividends (arts. 84(4), 80^1(4)).\n\n## Section 4 -- Standard System & Extraction (SRL / ÎI)\n\n**Standard System & Extraction (SRL / ÎI)**\n\n| Item | Rate |\n| --- | --- |\n| Corporate income tax (SRL) | **12%** of taxable income (art. 15(b)) |\n| Individual entrepreneur (ÎI) | **12%** of annual taxable income (art. 15(a)) |\n| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |\n| Dividends between Moldovan companies | not taxable (art. 20 lit. z19)) |\n| Independent entrepreneur (services only) | **15%** single tax on service income up to MDL 1,200,000 a year, **35%** above; includes income tax, social and health contributions and local taxes (arts. 69^20, 69^25) |\n| Independent retail activity (individual, no excise goods) | **1%** of income, at least MDL 3,000 (arts. 69^6, 69^11(1)) |\n\n- **Dividend vs salary extraction**: the owner can take profit as dividends at 6% instead of salary taxed at 12% plus contributions. Model salary against dividend with the contribution effect from [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md).\n- **Defer corporate tax until dividends are paid**: a company with at most 249 staff and turnover or total assets up to MDL 100 million may pay the 12% tax on 2023 to 2026 profits only when it distributes them, in proportion to the dividend paid over pre-tax profit (art. 87(1^1)). Profit kept in the company stays untaxed until then, and there are no quarterly instalments for those years (art. 84(6)). Not open to IT park residents, the 4% regime, individual entrepreneurs, farms, free zone residents, financial and insurance companies, and large trade companies. Worked example: [md-corporate-income-tax](md-corporate-income-tax.md).\n- **Interim dividends**: on the standard regime, paying dividends during the year triggers an advance of 12% of the current year's profit from which they are paid, due by the 25th of the following month (art. 80^1(1), (1^1)).\n- **Donations**: charitable and sponsorship donations to eligible recipients are deductible up to 5% of taxable income (art. 36(1), (2)).\n- **Losses**: tax losses are carried forward and spread over the next five years (art. 32(1)).\n\n## Section 5 -- Red Lines (do not cross)\n\n- **IT park 70% test**: at least 70% of sales revenue must come from activities permitted under Law 77/2016; non-IT income placed in an IT park entity is a misuse (art. 368(2), (3)). AUDIT FLASH POINT.\n- **4% regime conditions**: not for VAT-registered companies, consultancy companies above the 60% test, or a shareholder with more than 25% in more than three small companies, who must move the extra companies to the standard regime (art. 54^1(1), (3^2), (4)).\n- **Independent entrepreneur scope**: the 15% regime covers service activities only (art. 69^20).\n- **Under-declaration**: understating tax in a return costs 20% to 30% of the amount, and evasion 80% to 100% (art. 261(4), (5)). Understating income while using the dividend-date deferral costs MDL 1,000 to 10,000 (art. 260(6)).\n- **Non-eligible income routing**: do not route non-eligible income through the 4% or 7% regimes.\n\n## PROHIBITIONS\n\n- **Non-IT revenue in IT Park**: NEVER place non-IT revenue in the IT park 7% regime to dodge tax (70% eligibility test).\n- **4% regime for VAT-registered business**: NEVER present the 4% regime for a VAT-registered business; it is for companies not registered for VAT.\n- **Single-client work as safe self-employment**: NEVER present single-client work as safe self-employment.\n- **Deferral as a permanent saving**: NEVER present the art. 87(1^1) deferral as a tax saving; the tax is paid when profits are distributed.\n- **Contradicting rate skills**: NEVER contradict the rates in `md-corporate-income-tax.md`, `moldova-income-tax.md` or `moldova-social-contributions.md`.\n- **Unconfirmed figures as confirmed**: NEVER present items on the \"Not yet confirmed\" line as confirmed, nor optimisation as definitive advice; route to a licensed Moldovan tax adviser.\n\n## Disclaimer\n\nThis skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Moldova) before acting upon.\n\nThe most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.\n\n## Sources\n\n| Source | URL | Read on |\n|---|---|---|\n| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 15, 20 lit. z19), 32, 36, 54^1 to 54^4, 69^6, 69^11, 69^20, 69^25, 80^1, 84, 87, 90^1, 112, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |\n| Legea nr. 77/2016 cu privire la parcurile pentru tehnologia informației (to LP125/2024): arts. 7(2), 8, 9(2) | https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro | 2026-10-30 |\n| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |\n| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |\n\nNot yet confirmed: the end date of the Moldova IT Park's own term (set by Government decision, not read); the date from which the MDL 1.7 million figure in art. 54^1(3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million); the old \"savings of 20% to 50% of the total tax burden\" claim for IT park residents (no official source); whether single-client work by an ÎI or independent entrepreneur is reclassified as employment (no Fiscal Code rule found); 2026 salary contribution rates for the salary-vs-dividend comparison (see the sibling skills).\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "incoming_file_sha256": "38fee6e59492a0ea86426aa8a9d6505c213dde47ef966bb4eafb598851d26300",
+      "current_Guide_sha256": "81a761e584f26f068fe2d47382710e0d14e2d44c55b4ef0a019fce865b67ed3f",
+      "incoming_pre_CTA_units": 71,
+      "old_topic_destinations": [
+        {
+          "id": "MD-PUBLIC1011-001",
+          "incoming_section": "Front matter",
+          "original_text": "---\n\nname: moldova-tax-optimization\ndescription: Use this skill whenever asked about reducing tax in Moldova, tax planning, or legal strategies to minimise tax for a self-employed person, IT business, or small company in Moldova, tax year 2026. Trigger on phrases like \"reduce tax Moldova\", \"Moldova IT Park\", \"7% tax IT\", \"small business 4% Moldova\", \"turnover tax Moldova\", \"sole proprietor vs SRL\", \"Moldova dividends 6%\", \"independent entrepreneur Moldova\", \"defer corporate tax until dividends Moldova\", \"save tax Moldova\", \"tax planning Moldova\". This skill covers the IT park 7%-of-revenue single tax, the 4% small-company regime, the independent entrepreneur 15% single tax, the standard 12% system, dividend extraction at 6%, the option to pay 2023 to 2026 corporate tax only when dividends are paid, and the eligibility and anti-avoidance red lines. ALWAYS read this skill before advising on any Moldovan tax optimisation. Computations sit in md-corporate-income-tax, moldova-income-tax, moldova-social-contributions and moldova-payroll.\nversion: 0.2\njurisdiction: MD\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: tax-optimization\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+          "unit_sha256": "e4fde43c6d81e37272d7c1a51a263831f86dd11fca41f26e626a9217309c39b0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-002",
+          "incoming_section": "Front matter",
+          "original_text": "# Moldova Tax Optimization",
+          "unit_sha256": "455c96fcf36df1e139bed4ed54ad89992c7cf1c259623f81243c258966791229",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Front matter"
+          ],
+          "writer_disposition": "2026writerdraft;versionadvanced;protectedtrust/license/teammetadata andexactCTAunchanged. Formation retains its original formation category rather than the merged draft generic international category. No attestation or completed country review claimed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-003",
+          "incoming_section": "Moldova Tax Optimization Skill v0.2",
+          "original_text": "## Moldova Tax Optimization Skill v0.2",
+          "unit_sha256": "a3c13dd09794919d5547d63d6ed63c576137e91ecc12a5f2e6f1b20a7b4d44f4",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-004",
+          "incoming_section": "Moldova Tax Optimization Skill v0.2",
+          "original_text": "**Tier 2. Sources: the Fiscal Code of the Republic of Moldova (Codul fiscal nr. 1163/1997, consolidated to Law LP235 of 2 October 2026), read on 30 October 2026 and listed in Sources below. Figures must agree with `md-corporate-income-tax.md`, `moldova-income-tax.md` and `moldova-social-contributions.md`; those skills win if they differ. No Moldovan tax adviser has signed this off. Aggressive positions are never advised; every suggestion must be reviewed.**",
+          "unit_sha256": "8eb81edfee226fca1ed1cf9753bb7499b6b5b709e3e465faf362311ac920ad79",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-005",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "## Section 1 -- Quick Reference",
+          "unit_sha256": "7006ff302d793189d56218439b9fc0b23dd217ba27079775698666ddbe0ec47e",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-006",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "**Quick Reference**",
+          "unit_sha256": "4529ace52bf1243db200af35c1f4967e0331f8ef42788298ae686afad15cfa17",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-007",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Field | Value |",
+          "unit_sha256": "1824849c9b30da5cac9f463382b2c0bdc0b6c6f9f15fc8e34fb2cd53cc6de0b5",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-008",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Country | Republic of Moldova |",
+          "unit_sha256": "9a794008b97ffe2ed60e313283c3bacbed2a6a578e09527f0a416ebde5720206",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-009",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Currency | MDL (leu) |",
+          "unit_sha256": "31a078e3bc5c8489b02f76def7a100cf5c8afd27c445ac7a6cf7c57ee89334f0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-010",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Headline levers | **IT park 7% of sales revenue**; 4% small-company regime; independent entrepreneur 15% single tax; 6% on dividends; corporate tax on 2023 to 2026 profits deferred until dividends are paid |",
+          "unit_sha256": "c8a7fd1fc6796e2a2bd1ebc6b860019fa8f9a0d82f165a5c958847a5131e66c7",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-011",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Standard income tax, individuals and companies | **12%** (Fiscal Code art. 15(a), (b)) |",
+          "unit_sha256": "d09839a3311c360c303fa1670508b84f5f8d1a94e7c673f9a37285d4739a9e75",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-012",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |",
+          "unit_sha256": "aaca06c9564c37c2e8018096a70928395b8efc02b563bef32f70b87b0c31010d",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-013",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| VAT registration threshold | over **MDL 1.7 million** in any 12 consecutive months from 1 March 2026; MDL 1.5 million before that date (art. 112(1); Law LP12/2026) |",
+          "unit_sha256": "ac56b824036309e060be14bfc1e42c7ca97c0cabb6e0fa05f339a933551a2e3e",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-014",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "| Anti-avoidance | IT park 70% eligible-revenue test; 4% regime closed to VAT payers, consultancy firms and owners of more than three small companies |",
+          "unit_sha256": "f2d5f727b1243073add17fc62687aabdb964681186f777348d009e305fd1a91a",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-015",
+          "incoming_section": "Section 1 -- Quick Reference",
+          "original_text": "> **Moldova's headline is the IT park single tax:** 7% of monthly sales revenue, with a floor per employee, replaces income tax on profit and on salaries, employer social contributions, employees' health insurance premiums, local taxes, property tax and the road-use tax (Fiscal Code arts. 370, 372). For an IT business with a large payroll, this is usually the biggest lever.",
+          "unit_sha256": "b8f160a60fdd644a1c4f5668eba492d49cbe52de716027355fdea8e0be599d49",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Universalbestranking notadopted; compareactualeligiblebase/payroll/minimum/fees/otherobligations withtwoexistingassumedcases.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-016",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "## Section 2 -- IT Park (7% of sales revenue)",
+          "unit_sha256": "d59c3f5141075e882377ffed7c7ade877b364bbece10c176a451337d712a8d6e",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-017",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "**IT Park (7% of sales revenue)**",
+          "unit_sha256": "2e7bc13f0dfde7cd9951db047f222c77a06cb593cbca8b0e9b3f8a17f3958d1b",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-018",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Feature | Detail |",
+          "unit_sha256": "d86e7f4687a36d8bb800c342a6a8006b94957a427afebcaebd0593f692a30334",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-019",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Tax | **7% of sales revenue** booked monthly, but at least **30% of the forecast average monthly wage per employee** each month, which is **MDL 5,220** per employee in 2026 (30% of the MDL 17,400 forecast wage, Government Decision 773/2025) (Fiscal Code arts. 369(1), (2), 370(1), (2)) |",
+          "unit_sha256": "d45106d740fdc01a11f33caaddbd27aaa980fb34f17b64183a4f8c1a11a9810b",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-020",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| What it replaces | Income tax on business profit; income tax on salaries; employer social contributions; employees' health insurance premiums; local taxes; property tax; road-use tax for Moldovan-registered vehicles (art. 372(1)) |",
+          "unit_sha256": "390e9d96477da2b1f1911dfc0433d4a6f07fd195f5891a6565e848a927b53536",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-021",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| What it does not replace | Tax withheld under arts. 88(5), 89, 90, 90^1 and 91 (for example 6% on dividends and 12% on payments to non-residents), contributions on non-salary payments to individuals, VAT, excise and other road taxes (art. 372(2)) |",
+          "unit_sha256": "d3592a380cc9fed26ad959ae47df924711abdf88e720b6334595553e76e520cf",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-022",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Who | Legal entities and individuals registered as entrepreneurs who meet the conditions of the IT parks law (Law 77/2016) (art. 368(1)) |",
+          "unit_sha256": "30a74939b37b9c39218f75544105f4f9a0f12001b0ba8dbfc74a4bc7a506466a",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-023",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Eligibility test | **70% or more** of sales revenue from activities permitted under art. 8 of Law 77/2016, measured monthly on a cumulative basis; up to 2 months below 70% are allowed if the year as a whole reaches 70% (art. 368(2), (3)) |",
+          "unit_sha256": "aecbce938e9fdc74d03abd058c206d73ba6398dd5fb81d167d83955b1fa86cb0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-024",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Permitted activities | Listed by CAEM code in Law 77/2016 art. 8: custom software (62.01), computer games publishing (58.21), other software publishing (58.29), IT consultancy (62.02), computer facilities management (62.03), other IT services (62.09), data processing and hosting (63.11), web portals (63.12), plus narrowly limited computer training, research and development, electronic components, specialised design, film and video post-production and game audio work |",
+          "unit_sha256": "bf7d3d83c17f059aa3afc2a0ca7cb81eafeb266ab26bc14210a9c83ce23cac0d",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-025",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| How long | Each park runs for a term set by Government decision, at most 20 years (Law 77/2016 art. 9(2)); a resident's contract runs at least 4 years and not past the park's term (art. 7(2)) |",
+          "unit_sha256": "9113639f8a42ac18a99a9aa047fb8b8fb07b5ab0d356d449040077e4ff25d4a5",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. ActualLaw77art9read:20yearparkceilingdistinctfromresident4yearminimum;actualGovernmentcreation/extensionterm remainsunverified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-026",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Filing and payment | Monthly return and payment by the 25th of the following month (art. 373(1), (2)) |",
+          "unit_sha256": "879537652e0c09bef36c6fe229695fc41c9a8f963834dfe1bf35b5db095abdbc",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-027",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "| Best for | Software and IT service firms with significant payroll, because the 7% also covers payroll taxes |",
+          "unit_sha256": "970ca1d99ac94706b059ae261509c481ae55feba3388189f69225dd7cd60ce9f",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Universalbestranking notadopted; compareactualeligiblebase/payroll/minimum/fees/otherobligations withtwoexistingassumedcases.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-028",
+          "incoming_section": "Section 2 -- IT Park (7% of sales revenue)",
+          "original_text": "IT park residents cannot use the corporate tax deferral to the dividend date (art. 87(1^1)). Detail of the computation: [md-corporate-income-tax](md-corporate-income-tax.md).",
+          "unit_sha256": "80d203a5f066931e491754ba9487bcd5df80f30105e37c6fdab8b07dfd3854ac",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-029",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "## Section 3 -- 4% Small-Company Regime",
+          "unit_sha256": "849b7b71aa1fc44dd67bb9d00c57269ca996477bdebd14cdc26119f2adaf546d",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-030",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "- **4% small-company regime**: a company not registered for VAT may pay 4% of the income in its financial accounts instead of 12% on profit (Fiscal Code arts. 54^1, 54^2, 54^3). No profit computation; good for low-expense businesses below the VAT threshold.",
+          "unit_sha256": "ee2e366d2a14fead0d25d073a84ad1cfd1e18d4090002c742af368117366b894",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-031",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "- **Who is excluded**: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company with VAT-exempt supplies without deduction right above MDL 1.7 million uses the standard regime (art. 54^1(3^1)).",
+          "unit_sha256": "737042677952d0a6eb186f51d8376f9df1f9505ebace18d40ea0094309efc491",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-032",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "- **Choosing it**: record the choice in the accounting policy by 25 April, or for a new company by the 25th of the month after the quarter of registration (art. 54^1(3)).",
+          "unit_sha256": "1f9d358d14fa6aa755d37ca3f5a5628c0baab2b1c54d68f8fc71ed30841ffbb8",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-033",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "- **When it ends**: from the date the company registers for VAT (art. 54^1(4)). Registration is compulsory once supplies pass MDL 1.7 million in any 12 consecutive months (art. 112(1), in force from 1 March 2026; MDL 1.5 million before that date, Law LP12/2026).",
+          "unit_sha256": "db8eaecb0051db91f4f1ffdb58da0179f0c759eea839245180ede2e5084f584f",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-034",
+          "incoming_section": "Section 3 -- 4% Small-Company Regime",
+          "original_text": "- **Payments**: quarterly by the 25th of the month after the quarter; annual report by 25 March (art. 54^4(2), (3)). No quarterly instalments under art. 84 and no 12% advance on interim dividends (arts. 84(4), 80^1(4)).",
+          "unit_sha256": "ebf3a2ad49ba63135870f729723f106b83e89e155b75cfa935a1b73f61b35d9e",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-035",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "## Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "unit_sha256": "73e5fdf0417e0fddfc0c61a4caeecaade01feeaef18567868cd917e544e20c93",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-036",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "**Standard System & Extraction (SRL / ÎI)**",
+          "unit_sha256": "91436d35b03c07507eb925d601001234e1c236d5edab405c21378d51ec476d8c",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-037",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Item | Rate |",
+          "unit_sha256": "c1c8ce5bb0342e6c7d8248c4c3860c24563690a2c3e1c981ef35012a58e0727c",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-038",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Corporate income tax (SRL) | **12%** of taxable income (art. 15(b)) |",
+          "unit_sha256": "cdca44b2491de022542775fb68467c780b207d46ef2ce34c61bbe009c088c28a",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-039",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Individual entrepreneur (ÎI) | **12%** of annual taxable income (art. 15(a)) |",
+          "unit_sha256": "eabc53ad78e7b5db604f676af00d4fa643e19c6cb62908fea990df81b8acb4e7",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-040",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Dividends to resident individuals | **6%** withheld (art. 90^1(3^1)) |",
+          "unit_sha256": "aaca06c9564c37c2e8018096a70928395b8efc02b563bef32f70b87b0c31010d",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-041",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Dividends between Moldovan companies | not taxable (art. 20 lit. z19)) |",
+          "unit_sha256": "8c148f6daa3aabef5302c57df1a6993837dfa63fdcbe9de19fbec4a1f42c3754",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-042",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Independent entrepreneur (services only) | **15%** single tax on service income up to MDL 1,200,000 a year, **35%** above; includes income tax, social and health contributions and local taxes (arts. 69^20, 69^25) |",
+          "unit_sha256": "e2bb272fc5f7a155832c2d2b4458c01890b00288a0bda8c92a7b61b74560e46a",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-043",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "| Independent retail activity (individual, no excise goods) | **1%** of income, at least MDL 3,000 (arts. 69^6, 69^11(1)) |",
+          "unit_sha256": "aeb421d7aa7faf226b0257908620bce9b5ae8753b2f0ff2d559b7ddc4593a530",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-044",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "- **Dividend vs salary extraction**: the owner can take profit as dividends at 6% instead of salary taxed at 12% plus contributions. Model salary against dividend with the contribution effect from [moldova-social-contributions](moldova-social-contributions.md) and [moldova-payroll](moldova-payroll.md).",
+          "unit_sha256": "ff97df0b66c21e02792bf08c9a7165a822a32731738b3e38ca631d79674318ff",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-045",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "- **Defer corporate tax until dividends are paid**: a company with at most 249 staff and turnover or total assets up to MDL 100 million may pay the 12% tax on 2023 to 2026 profits only when it distributes them, in proportion to the dividend paid over pre-tax profit (art. 87(1^1)). Profit kept in the company stays untaxed until then, and there are no quarterly instalments for those years (art. 84(6)). Not open to IT park residents, the 4% regime, individual entrepreneurs, farms, free zone residents, financial and insurance companies, and large trade companies. Worked example: [md-corporate-income-tax](md-corporate-income-tax.md).",
+          "unit_sha256": "efd9037697c3d4d27e9d96a3c3a9273eb0281770fedfa0b35288b49a64017ae0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-046",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "- **Interim dividends**: on the standard regime, paying dividends during the year triggers an advance of 12% of the current year's profit from which they are paid, due by the 25th of the following month (art. 80^1(1), (1^1)).",
+          "unit_sha256": "65f5d4ba604b9c9e8ee8c00cf6ffb8bb56ca9bdc8cf7cd054f4457075707f6c7",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-047",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "- **Donations**: charitable and sponsorship donations to eligible recipients are deductible up to 5% of taxable income (art. 36(1), (2)).",
+          "unit_sha256": "c894dc57427d70d3733bf3045175a2cd76e6057478abda2fc5952f412c5a409e",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-048",
+          "incoming_section": "Section 4 -- Standard System & Extraction (SRL / ÎI)",
+          "original_text": "- **Losses**: tax losses are carried forward and spread over the next five years (art. 32(1)).",
+          "unit_sha256": "a92eed3120479073018395069b48a45dc668843af4b32a1c509ce626f8e6be17",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-049",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "## Section 5 -- Red Lines (do not cross)",
+          "unit_sha256": "4245f4c16b8d0a9958dd82193e2dc4ee62e894d18476f27d120bb94343870ccd",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-050",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "- **IT park 70% test**: at least 70% of sales revenue must come from activities permitted under Law 77/2016; non-IT income placed in an IT park entity is a misuse (art. 368(2), (3)). AUDIT FLASH POINT.",
+          "unit_sha256": "427f8e2bca5e277cafa03fa474988127daf535703f17fd7079492756789276c1",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "CORRECTED blanketprohibition:actualCode368cumulative70%condition/two-monthconditionalexception;separatesales/nonsales classification andnoineligiblerouting. NotallnonITsalesareautomaticallyillegal;noinventedpermissionoruniversalban.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-051",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "- **4% regime conditions**: not for VAT-registered companies, consultancy companies above the 60% test, or a shareholder with more than 25% in more than three small companies, who must move the extra companies to the standard regime (art. 54^1(1), (3^2), (4)).",
+          "unit_sha256": "6453817d60ba738c85dbd43c002515a95c8d6ecf88ce778fa91ec4cf082a4c25",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-052",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "- **Independent entrepreneur scope**: the 15% regime covers service activities only (art. 69^20).",
+          "unit_sha256": "3bdf3c48f58f40f8b27de670ecfb45921fb6161a534961a5e3bbbf3577a1ac73",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-053",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "- **Under-declaration**: understating tax in a return costs 20% to 30% of the amount, and evasion 80% to 100% (art. 261(4), (5)). Understating income while using the dividend-date deferral costs MDL 1,000 to 10,000 (art. 260(6)).",
+          "unit_sha256": "d0dccd2c11c35553a073a51bcf11a167d8e2f44ca759a3354befb41e0e4a040c",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Distinguish salary, dividends and genuine independent work",
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-054",
+          "incoming_section": "Section 5 -- Red Lines (do not cross)",
+          "original_text": "- **Non-eligible income routing**: do not route non-eligible income through the 4% or 7% regimes.",
+          "unit_sha256": "c93aae9449966abfb3b600f18c042c2f6c447378ea515125a3b8eb4d52820bd0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-055",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "## PROHIBITIONS",
+          "unit_sha256": "065bc830c7c4c824c974319e7bef09035edb8236ad0ff9abc64c99122bef2183",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-056",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **Non-IT revenue in IT Park**: NEVER place non-IT revenue in the IT park 7% regime to dodge tax (70% eligibility test).",
+          "unit_sha256": "80b1d1d1065110bfcb57f42e4e4f7600710b03453d08bd873c3ce07a088d245d",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Establish IT-park status and the real eligible activity",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "CORRECTED blanketprohibition:actualCode368cumulative70%condition/two-monthconditionalexception;separatesales/nonsales classification andnoineligiblerouting. NotallnonITsalesareautomaticallyillegal;noinventedpermissionoruniversalban. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-057",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **4% regime for VAT-registered business**: NEVER present the 4% regime for a VAT-registered business; it is for companies not registered for VAT.",
+          "unit_sha256": "01d260e0f07ee5d9d3419a944f802ede7dd938fb9d6c615605893a77051935f6",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#The base: Compare the 4% SME and ordinary systems using their real bases",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualconsultancy60%/ownershipabove25%inmorethan3SMEs/selectionanddateconditionsretained;SME1.7mstart27MarchseparatefromVAT1March. Nodefaultclaim4%alwayscheaper. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-058",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **Single-client work as safe self-employment**: NEVER present single-client work as safe self-employment.",
+          "unit_sha256": "95f320f5e0db4fe8c0cd7c172a6455ba9101d164c8d1ff4cee743c94b2f43daa",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-059",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **Deferral as a permanent saving**: NEVER present the art. 87(1^1) deferral as a tax saving; the tax is paid when profits are distributed.",
+          "unit_sha256": "76c934cf4e6243f7b15f28cfc3bed79000ecfec6b3c2c81b14b8c31894218712",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-060",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **Contradicting rate skills**: NEVER contradict the rates in `md-corporate-income-tax.md`, `moldova-income-tax.md` or `moldova-social-contributions.md`.",
+          "unit_sha256": "ef85c76c6a5b4c4181b6d71298edb69141a3688b1d4d4fbd63a68a8784179bf7",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-061",
+          "incoming_section": "PROHIBITIONS",
+          "original_text": "- **Unconfirmed figures as confirmed**: NEVER present items on the \"Not yet confirmed\" line as confirmed, nor optimisation as definitive advice; route to a licensed Moldovan tax adviser.",
+          "unit_sha256": "5383fd64a49cbec6da04a838718c3dc3426871027100a828dd003e790e795aaa",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-062",
+          "incoming_section": "Disclaimer",
+          "original_text": "## Disclaimer",
+          "unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-063",
+          "incoming_section": "Disclaimer",
+          "original_text": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Moldova) before acting upon.",
+          "unit_sha256": "dc4f55c7f39a5992b1812411a0f4a811a88de89c4f6e7c8a9c9b479d795502e0",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-064",
+          "incoming_section": "Disclaimer",
+          "original_text": "The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
+          "unit_sha256": "9bfa54a19ef73c9d9913d8d64b5e700360ff8caebdf43e5e70217ddf8fa2d505",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Who this applies to",
+            "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-tax-optimization.md#The base",
+            "skills/international/moldova/moldova-tax-optimization.md#Deadlines and filing",
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Same-topicactualconditionalredlines/uncertainties retained inGuideandunchangedstampeddisclaimer;oldduplicatewrappers,skillterminologyandunsupportedautomaticclassificationnotcopiedasnewlaw.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-065",
+          "incoming_section": "Sources",
+          "original_text": "## Sources",
+          "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-066",
+          "incoming_section": "Sources",
+          "original_text": "| Source | URL | Read on |",
+          "unit_sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-067",
+          "incoming_section": "Sources",
+          "original_text": "| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 15, 20 lit. z19), 32, 36, 54^1 to 54^4, 69^6, 69^11, 69^20, 69^25, 80^1, 84, 87, 90^1, 112, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |",
+          "unit_sha256": "b3d3bd4763bda47c9376f859130d790b3783aa1f012d60fed9c0a52647cba811",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-068",
+          "incoming_section": "Sources",
+          "original_text": "| Legea nr. 77/2016 cu privire la parcurile pentru tehnologia informației (to LP125/2024): arts. 7(2), 8, 9(2) | https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro | 2026-10-30 |",
+          "unit_sha256": "70463f012d512b3d17f23076b6a398f3d7588ad248c9b5d8d051a6e5b6991358",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-069",
+          "incoming_section": "Sources",
+          "original_text": "| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |",
+          "unit_sha256": "5f53f78d4d3912c86550365af7e63d4da31f4809665643d0feb3cfe2e88907b5",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-070",
+          "incoming_section": "Sources",
+          "original_text": "| Law LP12 of 19 February 2026 amending Fiscal Code art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |",
+          "unit_sha256": "f7b2634f9bb1134f0fcd41741154cbc6e6315221a480074a739b274da977d4f6",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        },
+        {
+          "id": "MD-PUBLIC1011-071",
+          "incoming_section": "Sources",
+          "original_text": "Not yet confirmed: the end date of the Moldova IT Park's own term (set by Government decision, not read); the date from which the MDL 1.7 million figure in art. 54^1(3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million); the old \"savings of 20% to 50% of the total tax burden\" claim for IT park residents (no official source); whether single-client work by an ÎI or independent entrepreneur is reclassified as employment (no Fiscal Code rule found); 2026 salary contribution rates for the salary-vs-dividend comparison (see the sibling skills).",
+          "unit_sha256": "f4507eb450db5a158a810901998aefd7dcc7655281e502d4484019e0e21842ba",
+          "destination": [
+            "skills/international/moldova/moldova-tax-optimization.md#Sources",
+            "skills/international/moldova/moldova-income-tax.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-income-tax.md#The base",
+            "skills/international/moldova/moldova-income-tax.md#Sources",
+            "skills/international/moldova/moldova-social-contributions.md#Rates, bands and thresholds",
+            "skills/international/moldova/moldova-social-contributions.md#The base",
+            "skills/international/moldova/moldova-social-contributions.md#Sources"
+          ],
+          "writer_disposition": "Subject retained/expanded in the deeper local country pack. Writer destination mapping only; independent source/application/preservation review pending. Actualindependent-service15%/35%andretail1%/3000routes supplied withregistration/scope,medicaltopupandcurrentpre1July2026retailregistrationcondition;historiccommencementgapnotclosed. Distributionlaw/solvency,companytax/advance/withholdingandactualworkclassification distinguished;deferralnotpermanentexemption and2023-2025denominator/rounding/formgapsnotcertified. Officialsourcesread/retainedorpreciseremaininggap named;no oldunsupportedsavingsrange,completecoverageorindependentreview claim.",
+          "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+        }
+      ],
+      "CTA_exact_match": true
+    }
+  ],
+  "total_subsequent_supporting_units": 134,
+  "remaining": "Ordinary/specialist gaps,actualcompanyforms/AML/timeinteraction/otherannexes andfullcountryreview remain explicit. No newcountrypush."
+}

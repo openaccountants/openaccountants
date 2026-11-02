@@ -1,0 +1,6 @@
+{
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737",
+  "acquired_utc": "2026-10-28T18:10:29.395773+00:00",
+  "raw_sha256": "87abb0d13f739c14f505c54c41ee7fbaaeeba5e59b152a9f5801d8fe56376e62",
+  "reader_derivation": "HTMLParser data text/block newlines; raw bytes untouched. Selected Art1.5definition only read."
+}

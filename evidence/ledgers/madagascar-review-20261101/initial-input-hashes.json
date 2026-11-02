@@ -1,0 +1,25 @@
+{
+  "HEAD": "95f2800a07ece2d1d2c6e7260b474b18e8dce68b",
+  "files": {
+    "CLAUDE.md": "26bdad0beb0ce9bc183b8e53ea7ca59fd513157765be3f249e3778adc0b6dbe7",
+    "docs/skill-template.md": "6098c740bb6113e8f073f66898e352c988c84591c08a94d298fcd2b4e6b66c7b",
+    "evidence/ledgers/mg-company-formation.md": "d6bfe97eb8f594fed7f8e22ea309a9cdb31b61d4d687776b7d6a1f5494858a73",
+    "evidence/ledgers/mg-corporate-income-tax.md": "fdf184a681c5daf53305ece1657e1c26e7c31eb1aafeed77297cf46c3ec9e6f0",
+    "evidence/ledgers/mg-cross-border.md": "15fd2bcc003ca44db41b6b11fcb843cd2fe667b5b1e972460101a76a8a266c17",
+    "evidence/ledgers/mg-income-tax.md": "fd39053353510da35253d0f9ab6e1823b3ce574b678ae8b133e16084c682465c",
+    "evidence/ledgers/mg-old-topic-destinations.md": "790690a77a025e0afd8e2d0796a6e3320454d266ba620ca164adbecfaf2f3ebb",
+    "evidence/ledgers/mg-payroll-social.md": "eabe180cea4971b3521bc5c150b2043044935ce5158db126c65fad9eaead88a4",
+    "evidence/ledgers/mg-tax-overview.md": "5623d46a1bcea0582b261d84b7af0feafcf90867a16477b4013c58f703d3da91",
+    "evidence/ledgers/mg-transfer-pricing.md": "94913cfe756c3123154579277486ad7c86260f718fbf2e26a35b5809b9ffdb5b",
+    "evidence/ledgers/mg-vat-gst.md": "2c081f8f94d07dd7d3a88f994916c8f2daca5e00044e848c7abf7e4cc78eb4f2",
+    "skills/madagascar/README.md": "bf67db768e155ba093c19d3a204ba517cced048813ec8f6d8bbb702d1384ca00",
+    "skills/madagascar/mg-company-formation.md": "dbd1d70d9c845ae6f07e68dafbd5a64ecaf859c8c99000871da780e18fd22995",
+    "skills/madagascar/mg-corporate-income-tax.md": "8a4e0519316e788ea3927787ff8addfaef74762bcfe3e446c4fa1ad3f5dc4978",
+    "skills/madagascar/mg-cross-border.md": "d67ea7b31c1acdaf2f9bda9c02246e52dcf938a010e32321404c1053034de43a",
+    "skills/madagascar/mg-income-tax.md": "298211e7e7ac3b8a58d002db019efa6e8b401154422599f39c380144cc490e07",
+    "skills/madagascar/mg-payroll-social.md": "b330a444c2aa1b2b2c62c65ea38fb23b9861d7866e7c82812f0f8af6864f58d3",
+    "skills/madagascar/mg-tax-overview.md": "877f792ca56639ec22acfb66fc9d84fd16b2f172def43065437533f4c8793cd9",
+    "skills/madagascar/mg-transfer-pricing.md": "1c68060267db5f12a9255f7e2a8e018172866877eae2f0a5c3b22ab88b51ecc4",
+    "skills/madagascar/mg-vat-gst.md": "648bec6983fc588b9fc99eb6da7ae8374ad57b3904c6eff3566922b61b01bb05"
+  }
+}

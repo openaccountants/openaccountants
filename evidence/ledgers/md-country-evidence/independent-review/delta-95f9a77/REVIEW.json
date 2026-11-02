@@ -1,0 +1,14 @@
+{
+  "commit": "95f9a773ea2dab1629360881a45a36148743bd69",
+  "findings": {
+    "MD-REVIEW-011": "PASS focused correction",
+    "MD-REVIEW-012": "PASS focused correction"
+  },
+  "checked_rows": [
+    "MD-CORP-556",
+    "MD-CORP-557"
+  ],
+  "machine": "Both rows primarytextSHA/quote/context match unchanged retained original source",
+  "substantive": "21(1) actual prior-month comparison and no-supplies cost floor;24(13) management ceiling subject to correct tobacco tariff heads, ethylalcohol2207/2208, petroleum ministry limits. Current Guide explicitly bars sector deduction using management norm alone; numeric sector limits clearly bounded source-cited limitation. Correct02010 prose retained.",
+  "scope": "Focused correction only; whole country incomplete"
+}

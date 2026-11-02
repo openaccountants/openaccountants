@@ -1,0 +1,157 @@
+[
+  {
+    "path": "ledgers/es-foral-income-tax.md",
+    "sha256": "74df19856a5cf41afc1da883e856bbf3e0423da0c9a9ab1ed169caa1fcc2fffb",
+    "bytes": 5585158
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/rows.json",
+    "sha256": "a2732e4d7de1b85becf73b0840c879df8cf0e59fa1f3818c60614ffbe92adc49",
+    "bytes": 6555694
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/source-read-receipts.json",
+    "sha256": "eb94902cd1cb8fa594ae3974f37371d87d3b9ebebc7548b407755aabe7233a4a",
+    "bytes": 383657
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-status.md",
+    "sha256": "e434615d67f0b222fe387f324b31b233f0821f7c327ea92f4a6fceed8df6c4f6",
+    "bytes": 4406
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/actual-source-read-scopes.json",
+    "sha256": "2f10b381787fb2542729488bb440e9367bfebfb22cc8ccb3bf1da2085f700886",
+    "bytes": 2403756
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-separating-controls.json",
+    "sha256": "f2da03a6ecaf2fbc349415362c6db36ced2e09ab407cbb93117ac21d80aefc0e",
+    "bytes": 7809
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/old-topic-overrides.json",
+    "sha256": "658517abfe92f21c60407a12395eba30ef05c1bfb1eafc2dc4099b4e2f332f90",
+    "bytes": 2731
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/non-rule-dispositions.json",
+    "sha256": "abe96da9ee9805a64765aae48a97e2b71aec503bbb347c44dd19b0824fd50e9e",
+    "bytes": 7244
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-source-reading-disposition.json",
+    "sha256": "d7fcb196e3675b61c81423402788a435942aa9e18bb4f7f654ee52ac8f36eba9",
+    "bytes": 3031
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/root-navarra-pit/root-finite-arithmetic-controls.json",
+    "sha256": "8b04422785542ce1fd16623fd097c75bd9c6edfb0d38a676982004868b1a245b",
+    "bytes": 3522
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L26-extend-quotes.py",
+    "sha256": "f4af830d36ede9727bf62e9692b304f65bc42ab33229c5a927b85e1a5af373e7",
+    "bytes": 4867
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L26-exact-replacements.json",
+    "sha256": "881cc84aad1ebedb6264c2424ba8d5e1824f2ca73c8573d6e6dbef6b4e1446bf",
+    "bytes": 11169
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L26-checks.json",
+    "sha256": "23854837869ba7bf3e3d3c8d46df58a671268786f97f615abbe9a882b2d930cf",
+    "bytes": 1169
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/write-ledger.py",
+    "sha256": "fb38f6b04cfc2773d2e1b1a48fe21b173fab97262f523f85fef39a2036e8df94",
+    "bytes": 19121
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L27-extend-quotes.py",
+    "sha256": "e8731a10f743b4d5c4e4b9f47b22b9b6b0ae9592a77d67fcf698c396ef5e816e",
+    "bytes": 5186
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L27-exact-replacements.json",
+    "sha256": "2aae68c691319783e6c29540b06d963b585bdc1a204c6ea8267a5abfc9644d12",
+    "bytes": 17174
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L27-checks.json",
+    "sha256": "157d8db666e05f84d1a0dcc8e4c16aafb0eaa9ccc3d054fda3578f7615ec0550",
+    "bytes": 1306
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L28-current-rule.py",
+    "sha256": "f301d31d1522e667bd4b2669dfc1f82dbe388f20522c2cfef69df837edd5329d",
+    "bytes": 4698
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L28-exact-replacements.json",
+    "sha256": "73eb20425625a97584cf02dd44812c98dfc1dcd8126cbf884325684cde18649e",
+    "bytes": 4567
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L28-checks.json",
+    "sha256": "d6023ecd03364b90d091cdf88576e5354b52f6874c4ef8cc932e3bf833d3c843",
+    "bytes": 399
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L29-operative-size.py",
+    "sha256": "0987125b657bc7ee2bc3994476b9932b63240f01fd7af60225ed3342a2a52a6f",
+    "bytes": 5805
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L29-exact-replacements.json",
+    "sha256": "1389b8e962c026f0117a828f52111838dd27a54a7d7e0428d8e360f8e60a5cfe",
+    "bytes": 70541
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L29-checks.json",
+    "sha256": "1de8c99f670ae840ff0631a93d14bbed95802ed1aa8b6dc14c2e4fe7d5bd99a9",
+    "bytes": 1292
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L30-current-amendment.py",
+    "sha256": "c47e81ad8fdb96972203f5045035d383a4084ad163e8e779f02cc572153685a1",
+    "bytes": 4507
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L30-exact-replacements.json",
+    "sha256": "19bc72e689a4c3e75905fc2742b1c87da1c679379dd3cff30f0dd791244d3eeb",
+    "bytes": 4189
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L30-checks.json",
+    "sha256": "8a23daa09b82a3cc83293770c9436f7db717418ab9a976637ad8105644b44224",
+    "bytes": 376
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L31-care-qualification.py",
+    "sha256": "65c2b5e3c62109e11d3406e753be6b52a0f4c2579ffc657b2a5a48c17623a32c",
+    "bytes": 6492
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L31-exact-replacements.json",
+    "sha256": "3f01a253a9eecf8090d2687ffe6fec7471c9ed0017f82703e3ebcf29de972279",
+    "bytes": 9363
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/S-L31-checks.json",
+    "sha256": "24fdee3127899381ac373ba4b2e457880a5a8631e9c665f30401089add6e152f",
+    "bytes": 569
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/check-scopes.py",
+    "sha256": "bee01af5fd9239f0c7ff141b876dca508069c466d12c84ac170847e4e985b164",
+    "bytes": 2048
+  }
+]

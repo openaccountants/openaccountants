@@ -1,0 +1,308 @@
+{
+  "baseline": "b73481249024bd5c3701cd73643f433e542b2ea5",
+  "files": [
+    {
+      "name": "china-pit.md",
+      "sha256": "c2a8981167cebfd8ae5e819d81de8be276370419d96f6f027e1be06a1b1edbb8",
+      "words": 1586,
+      "urls": [
+        "https://etax.chinatax.gov.cn",
+        "https://github.com/cn/individual-income-tax-law",
+        "https://www.chinatax.gov.cn",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "china-to-singapore-relocation-tax.md",
+      "sha256": "8d49fd76fbbd694eb639ceeac12ee70f665f6f5bf3145b681777ff204b0330c0",
+      "words": 1753,
+      "urls": [
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "china-vat.md",
+      "sha256": "bd5c33fa11dede26c333a614499d2fc6cb67ae8cb11b70d7c0fabfaac0e1ae37",
+      "words": 6034,
+      "urls": [
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202603/t479704.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html",
+        "https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2026"
+    },
+    {
+      "name": "cn-corporate-tax.md",
+      "sha256": "fcd27b4d0cd9c1ac85176a210952edebb6c43298049fb548942c279cfb0a8fa8",
+      "words": 6072,
+      "urls": [
+        "https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202511/t478219.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202601/t478977.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202607/t480970.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2026"
+    },
+    {
+      "name": "cn-fapiao-einvoice.md",
+      "sha256": "4d5f55131d773c53c983b8f81f4b6d91078531a0c68cfd8c0a7baf37a7b3044f",
+      "words": 892,
+      "urls": [
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "cn-formation.md",
+      "sha256": "86a00de59c2442e92fc68e87a67457065e4701de5364fc0e22627b88b394e6e0",
+      "words": 3135,
+      "urls": [
+        "https://openaccountants.com",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "cn-freelance-intake.md",
+      "sha256": "485db53f1732d4c3b0336523da1a07126794df80ab854e8ee2e5723473283b19",
+      "words": 2376,
+      "urls": [
+        "https://calendly.com/openaccountants-info/30min",
+        "https://openaccountants.com",
+        "https://openaccountants.com/network",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "cn-iit.md",
+      "sha256": "e0d41b65f8b545ed4b5584ae676b3d435779d99a6a5ea08f1a5544133903753c",
+      "words": 6048,
+      "urls": [
+        "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5213592/content.html",
+        "https://fgk.chinatax.gov.cn/zcfgk/c102440/c5213594/content.html",
+        "https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_00a4ed7054fc4d82ac30702f52001a14.shtml",
+        "https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml",
+        "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2017-05/03/content_f7a7387e2ba441a995345e7c0d60e44f.shtml",
+        "https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444839.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202001/t451944.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202012/t456203.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462542.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462550.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468395.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468458.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468460.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202412/t474540.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202502/t475327.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202508/t477416.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202602/t479400.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202606/t480766.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202607/t481046.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202609/t481448.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/202507/t476884.html",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2026"
+    },
+    {
+      "name": "cn-return-assembly.md",
+      "sha256": "ac0badf2dde94fdb5188b30f4a2c367a2d5f26599c9802bbd06353c5c74aab29",
+      "words": 3583,
+      "urls": [
+        "https://etax.chinatax.gov.cn",
+        "https://etax.chinatax.gov.cn/szrs",
+        "https://etax.chinatax.gov.cn）",
+        "https://etax.chinatax.gov.cn）+",
+        "https://etax.chinatax.gov.cn）完成提交。本技能不替代法定审计、税务鉴证或专业税务师事务所服务。",
+        "https://gss.mof.gov.cn",
+        "https://inv-veri.chinatax.gov.cn",
+        "https://inv-veri.chinatax.gov.cn）；白条入账",
+        "https://www.accaglobal.com/cn",
+        "https://www.chinatax.gov.cn",
+        "https://www.cicpa.org.cn",
+        "https://www.customs.gov.cn",
+        "https://www.ecctaa.com",
+        "https://www.mof.gov.cn",
+        "https://www.oecd.org/tax/beps",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network",
+        "https://www.safe.gov.cn"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "cn-social-insurance.md",
+      "sha256": "6443938e63ef2e3175bc6a870c2fc413c4ac054513a2003274b46851e5bd964c",
+      "words": 2129,
+      "urls": [
+        "https://hrss.sz.gov.cn",
+        "https://rsj.beijing.gov.cn",
+        "https://rsj.sh.gov.cn",
+        "https://si.12333.gov.cn",
+        "https://www.chinatax.gov.cn",
+        "https://www.mohurd.gov.cn",
+        "https://www.nhsa.gov.cn",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network",
+        "https://www.shgjj.com"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "cn-stamp-tax.md",
+      "sha256": "c087a17753712f887ce9fc435063a069209e78c3b7ed93563629bf3a7b64a106",
+      "words": 6093,
+      "urls": [
+        "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193073/content.html",
+        "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203534/content.html",
+        "https://guangdong.chinatax.gov.cn/gdsw/grsdsgg_hmqsc_bzms_grzf/2021-08/31/content_30f96f132c0240c6b486a09f97d40dce.shtml",
+        "https://guangdong.chinatax.gov.cn/gdsw/zssw_nsrwkt_sphg_zbsp/2022-07/08/b5cbcdef663d476bbcb821cb6ab21a8c/files/5e07417a94ab464895b4c817b3e75c5c.pdf",
+        "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202212/t465345.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/rdwd/202303/t466552.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/rdwd/202309/t468612.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/P020220630368115809685.pdf",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463168.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463170.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463184.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202409/t473303.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html",
+        "https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050011/20240722144157010.shtml",
+        "https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20220725150043296.shtml",
+        "https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20250207161507617.shtml",
+        "https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20260413100927171.shtml",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2026"
+    },
+    {
+      "name": "cn-vat.md",
+      "sha256": "8ff1bd448e5fc1a3392ef6b3544cbb016c4c019a850d1d507c941f3e1dba7d4e",
+      "words": 6916,
+      "urls": [
+        "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html",
+        "https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html",
+        "https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2026"
+    },
+    {
+      "name": "cn-withholding.md",
+      "sha256": "0f52540541cb4e3e7074e7af0c97f7d56c833bd6df23d809772e6618d95315f2",
+      "words": 2468,
+      "urls": [
+        "https://etax.chinatax.gov.cn",
+        "https://etax.chinatax.gov.cn）；非居民企业境内代扣代缴申报系统",
+        "https://its.jszxbs.cn/（个人所得税扣缴申报）",
+        "https://www.chinatax.gov.cn",
+        "https://www.chinatax.gov.cn）的\"税收法律法规",
+        "https://www.openaccountants.com",
+        "https://www.openaccountants.com/connect",
+        "https://www.openaccountants.com/network"
+      ],
+      "year": "2025"
+    },
+    {
+      "name": "references.md",
+      "sha256": "e20b7ba427adc893d2f5680a9b17fc7e81ec93c2dd9b97b51e25bb5d4cb6f073",
+      "words": 231,
+      "urls": [
+        "https://github.com/YutHelloWorld/personal-income-tax-calculator",
+        "https://github.com/cn/individual-income-tax-law"
+      ],
+      "year": null
+    }
+  ]
+}

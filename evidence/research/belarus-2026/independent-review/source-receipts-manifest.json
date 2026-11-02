@@ -1,0 +1,1213 @@
+{
+  "candidate": "d2ccb587628dfbee6f2e2817cef6ed5d05e5aceb",
+  "receipts": [
+    {
+      "path": "work/independent-review/accident-payments.txt",
+      "sha256": "af83559fb8ccfa598cc93d9d76375bc525a76801da156ae4cca31cfa49b248f8",
+      "bytes": 552361,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/administrative-code-12.15.txt",
+      "sha256": "c04d5ec3c14dcffd4faa67ee1d6aea93fa32c5f8a557415be99c741aa7aa7908",
+      "bytes": 2206,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/administrative-code-14.2.txt",
+      "sha256": "f9d4de912e19df47b6733d3728344bcc0662e47b19640424452e76813e1ae7f6",
+      "bytes": 4154,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/administrative-code-14.4.txt",
+      "sha256": "9897d89324cdda4a17a4b78cdeb40e13ae81bcc7c1152d6db3634709c1c73f33",
+      "bytes": 18637,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/administrative-code-14.5.txt",
+      "sha256": "38446602e8c03dcee2bb0b00630d1cb5aacd9c3e7baadc6c101d6877db8c429d",
+      "bytes": 10949,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/administrative-code.txt",
+      "sha256": "ad66d4b889d4a84a3d7623d34e51b1cfa2d90aadfb91ba4ff4e7dc76f4175b07",
+      "bytes": 1015517,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/amend660-first-pages-ax.txt",
+      "sha256": "757ddd0e05e4b34556c776b2a212a179327c503cbcb0c754c05603b32145b6c3",
+      "bytes": 28245,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/customs-136-source-web.json",
+      "sha256": "3ecada13882a828e6eafa587a0ef80a8a9b67632458d0b5d2c0ba3ed75da93ac",
+      "bytes": 21916,
+      "read_date": "2026-10-24",
+      "kind": "fresh official web PDF excerpt",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/customs-vat-deferral369-ax.txt",
+      "sha256": "40cd078e6060f313bda6e29d6c61755356d2d13f9eaaea54b8156a3b1876f7cb",
+      "bytes": 10477,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/customs-vat-deferral369.txt",
+      "sha256": "e13ca61c856fe9f4048c76b28e5e041606b7379b5bb2bb5ae1cf89ccbe6612c0",
+      "bytes": 4184,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Initial failed navigation; use customs-vat-deferral369-ax.txt instead."
+    },
+    {
+      "path": "work/independent-review/eaeu-import-source-web.json",
+      "sha256": "bca19428836cc1bab8d7af537aad1c83ad593fd2ef44a29fed781690835cfbf8",
+      "bytes": 46657,
+      "read_date": "2026-10-24",
+      "kind": "fresh official web PDF excerpt",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/form143-page1-ax.txt",
+      "sha256": "b1d39bf23428166a57dda7519ec986c5ab2c703812f174726db653282ba51025",
+      "bytes": 9501,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-17.txt",
+      "sha256": "f6a351abfe0fdc87891405047deaea7cf93b7dca877e41bcf66204dc4420d5a1",
+      "bytes": 10944,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-20.txt",
+      "sha256": "fa8db1c4bd03369aeed1703cfe8b5bc0852d3f4e002d20665609b9262acd0eeb",
+      "bytes": 9173,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-4.txt",
+      "sha256": "75bc209fd5bf763a2330cac2937acee5a8beb7e17be9a6d645ddc8e6e0472144",
+      "bytes": 4698,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-44.txt",
+      "sha256": "63555560e1e95a467198965d3515536fb68268f88d983c546ec039c9ce226a6a",
+      "bytes": 10994,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-55.txt",
+      "sha256": "1ba9c1ec70314426880e89e04aaa2e628c39da3dcccc2467997b7a5692bab4c9",
+      "bytes": 9608,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-70.txt",
+      "sha256": "3e5729e34958b8442f87781f53727763a081986d95c1ddb11cf3e99553ffa53a",
+      "bytes": 26623,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-85.txt",
+      "sha256": "121fa63b337ecc08a19790822b445b5a64f0371d3e812305cbbeda657e58800b",
+      "bytes": 36172,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-87.txt",
+      "sha256": "0ed3247a980f4ce6bec4c8a9aa318b505c9b3a4b40a732fc75abdab6a476dd74",
+      "bytes": 17643,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-88.txt",
+      "sha256": "3add0d133b6a21988acb28ad3c5d4e5bf5ecc8ab335ecbfbfaf017364a274715",
+      "bytes": 12070,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-89.txt",
+      "sha256": "a94cde0ac094b7cd110f88c87c4464c06a20debaa2b17069e4b855e8c6be291d",
+      "bytes": 16840,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-90.txt",
+      "sha256": "39cebb121c2eeec46268ae392c4ccef829a499ed34659f9662ad168b0e99b928",
+      "bytes": 11985,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-91.txt",
+      "sha256": "8fdc7f18b4c66507afe99da04990dcac3d9cce63a881ee8dc6375b3ec89810b8",
+      "bytes": 24586,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-92.txt",
+      "sha256": "ef7f538ee0b128106c30fe960f279a75a809ba1dfc3ab16591a6b174ee3398e5",
+      "bytes": 17641,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-93.txt",
+      "sha256": "b3b95696a75ff63f2f9d5a95db94b356c31897c86ab93037034361004de7a5fa",
+      "bytes": 4684,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-94.txt",
+      "sha256": "7d9706bd6781df15a49daf7c59dbd405e4f15435d81eb6fd5e4af80f140a13d5",
+      "bytes": 3648,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-95.txt",
+      "sha256": "a0eb64da126fc173bbfa63cd47190509bc8ef64447d643760f12ec1132690116",
+      "bytes": 2675,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-96.txt",
+      "sha256": "8069adeae39a10d400d76e5a8e0550bd728bd7415e2f159fc2497872c9fb3d0e",
+      "bytes": 9128,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code-97.txt",
+      "sha256": "267cac2dd1f36e7033025ec540ae6eedddd8a8ca41f0e59e47eef90ceb5d5f1e",
+      "bytes": 21698,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/general-code.txt",
+      "sha256": "538f124af4d062d29f8b17962eae99c34170b5b4f2cf3294d053c1a59e265c09",
+      "bytes": 997990,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/insurance-decree.txt",
+      "sha256": "55a98efba30774ac56a6a26437c0065b44c55281ed70515263a6cd671fd208b6",
+      "bytes": 978740,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page60-ax.txt",
+      "sha256": "832c378a7df62985b7f3e2f2db4d80c4062ad1f746582189940cce1b385e4321",
+      "bytes": 13068,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page62-ax.txt",
+      "sha256": "478e558b074308750ad8e99945acd09fd735c78e7f44cb9f99e45b6930d1239e",
+      "bytes": 13944,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page65-ax.txt",
+      "sha256": "bc3f243070169477482e39e4c4916ed647d8246f9be46a278ebeab5bf237941a",
+      "bytes": 9832,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page76-ax.txt",
+      "sha256": "745c9ce9b5721fab686d00702d36ebc3d948e5608adee9d7eb56be90c9c6e7bb",
+      "bytes": 9540,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page79-ax.txt",
+      "sha256": "d23680ba72e645adece16425983fb113abc55c40c92485756b79bc5e23c4e956",
+      "bytes": 8464,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-page87-ax.txt",
+      "sha256": "1020c6bb1e2f21fcb589afee1aac4904c3654a31f178f6205773d56e65d2c52d",
+      "bytes": 15142,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law127-pages1-2-88-89-ax.txt",
+      "sha256": "a7dbce4707acdbc3105271b2a8db0f72a16e05a655c34bf13012ec87696e6f6a",
+      "bytes": 33420,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law47-page80-ax.txt",
+      "sha256": "6b6fa9c00d4ae5b7fe7f5ef84cf3420746d5142ae38d1cffc1cd08d831e4ba82",
+      "bytes": 9147,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law47-page81-ax.txt",
+      "sha256": "94eb185577d59f558adc79a3b200ae3348dc1894fcc9ef999ff24e1a09bcbfc2",
+      "bytes": 4019,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law47-page83-ax.txt",
+      "sha256": "ba8db59d43a457aa646a7d8af296aaa51fc39116206346a5d66bbced164b0513",
+      "bytes": 5306,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/law47-page98-ax.txt",
+      "sha256": "59a93dcb720831406ee2e7e5595517051cc975741437d576029330cf332bec29",
+      "bytes": 26678,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-corporate2026.txt",
+      "sha256": "fd431bcb873ef6813ec9631dede6baebcc29339c381e785cf088c85ac8306e38",
+      "bytes": 23904,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-eaeu.txt",
+      "sha256": "b140500036c2ca38c53a6888993d7751990f43db7953465438ce1bd420f78647",
+      "bytes": 2747,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-entrepreneur-transition.txt",
+      "sha256": "357ba1c133b519ba2fd76611de6c4927386e6bed4e773162159aa1cfce26c84c",
+      "bytes": 6862,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-income-information.txt",
+      "sha256": "d66991a0e5b707b1480333106c381d09a95e3be5e57268f974c719be57ff30ee",
+      "bytes": 14644,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-professional-2026.txt",
+      "sha256": "96ddd6787f6f120546093698f7119378b989c6b035af7827c59280cc36417283",
+      "bytes": 5783,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-professional-minimum.txt",
+      "sha256": "333fdb439e247533f9bbc59d27485d5bd224f3331265b5a895b8a31f38cca931",
+      "bytes": 12679,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-rent-january.txt",
+      "sha256": "416e067a1cb502e09bb4c7622494221837904b46ac20b4c5d416c7b0ade25f36",
+      "bytes": 5165,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "UI capture is not independent proof of January selection; enacted 47-Z supplies January rates."
+    },
+    {
+      "path": "work/independent-review/mns-rent-rates.txt",
+      "sha256": "416e067a1cb502e09bb4c7622494221837904b46ac20b4c5d416c7b0ade25f36",
+      "bytes": 5165,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-rent.txt",
+      "sha256": "05e22980d5fd8e0f36f3e9c856ea8da68b7e6ad12ca1fbed5de0397fec408656",
+      "bytes": 3214,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-simplified2026.txt",
+      "sha256": "f3098e152c066cca260d3f3caf6752bcde97b9c8695ddaf0a0e1f7b633ba7c70",
+      "bytes": 8797,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-single-tax-transition.txt",
+      "sha256": "090f16648b268aadc11a9a8011437449ea9966de422568f6f7f170fad87d7a70",
+      "bytes": 13567,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-treaty-lithuania.txt",
+      "sha256": "f724ec18dbb15b50e3c5d744cb04e188efd3993002868f70a0ee46543c5e90cf",
+      "bytes": 3668,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/mns-treaty-suspension.txt",
+      "sha256": "46f24e097a4f566b87008d1a07dcf8b29c01e2b33fae7682887d2028e7b21ee3",
+      "bytes": 348,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Server-error receipt; primary Resolution 164 supplies the legal proof."
+    },
+    {
+      "path": "work/independent-review/offshore-list353.txt",
+      "sha256": "8514948c241c45da37f0b3c17fffd0bd813083b292d5c390c264ec5c50314762",
+      "bytes": 5621,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/res742-page32-ax.txt",
+      "sha256": "c9a0c21807a55d396748edeeea5d9e3d7fb59ae54fae2d2d4de81f5021528e24",
+      "bytes": 24344,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/res742-page34-ax.txt",
+      "sha256": "090a305808aeba2e079b06f0c245cde257521bbc0588ba32a6ed472b27270e09",
+      "bytes": 41083,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-10.txt",
+      "sha256": "709c2a17771e0eee8208c7f32ec8aaae3882c9a7647c23fe5c1cc32b272ab5e6",
+      "bytes": 3807,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-11.txt",
+      "sha256": "49caa7e9b14bfd8a5a5bc2e820e1cef2a3580f79af9331129e5556158e74ee2d",
+      "bytes": 6150,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-12.txt",
+      "sha256": "4823944c348bba25f335fa14e3acc86262589082bebb5c3e5faa7ff7ef6f4ffb",
+      "bytes": 2913,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-13.txt",
+      "sha256": "403bc50b34a126605fda679311f1e56bba24e7d8c771510da7bb4bb2214386a8",
+      "bytes": 6144,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-4.txt",
+      "sha256": "26787220b4ac10af52406082c8bb023867c95c11f59a777f3f3e504d6147d9cf",
+      "bytes": 7238,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-5.txt",
+      "sha256": "14014e673a57aae3ed2c09249a0088d8a62e10eca62e8798cff7bacd56a06673",
+      "bytes": 5098,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-6.txt",
+      "sha256": "74eeab3b1789035dac376624fcc93a502e7bac5f37ab76532a2dd77163b1ef82",
+      "bytes": 9956,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-7.txt",
+      "sha256": "28b976d4cf73d3b6fe11c5d93f6e8b1b4ae5c2cb47d0924f876e836a7dfe747d",
+      "bytes": 8643,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-8.txt",
+      "sha256": "d3df77e821dc00469b5d2f595e4548c5a0218c2d8b054ff15cdd543f4d68b7bb",
+      "bytes": 11064,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law-9.txt",
+      "sha256": "e56697f7d073655b28f68829a0a61c63e823079485908626aa7b780e17cf3205",
+      "bytes": 7486,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/social-law.txt",
+      "sha256": "dc77a0f78609083f0e8b0f07a7389e2bee68f9a4f46ed839af52afb572241d72",
+      "bytes": 183506,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-112.txt",
+      "sha256": "b3dba92ea247398f15149f22397196914ad7ed9bd19636e2435eb68c960a7510",
+      "bytes": 2041,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-114.txt",
+      "sha256": "8d47c32c1f3e0d81fd3b9f5295259ffc7f50f1efbd58a011d4d1af731b771086",
+      "bytes": 7230,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-117.txt",
+      "sha256": "5da0e1493104c75296f14014ecdd9c75a7a1e3266dc72717231173956c674aa4",
+      "bytes": 25939,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-120.txt",
+      "sha256": "f6d9cc2950addb90cf0753d295f6cc84effeece98422ea6d57023768256c8c3f",
+      "bytes": 106240,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-121.txt",
+      "sha256": "827533c53e9af6ddf011fb7bc93b489b89c7011ccc42a2aeb8c6af69906d04c5",
+      "bytes": 37499,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-122.txt",
+      "sha256": "b8931b6d7726685223ecbfe89087cd4cb59c481286022eeae07d0cfe61cbe4b4",
+      "bytes": 37259,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-123.txt",
+      "sha256": "f71acd1481f067e4248130603d365dec79400168158d785c17967c6a85b0fcc1",
+      "bytes": 20785,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-124.txt",
+      "sha256": "72e4ca47ac02e00860bb3cf4335b9fe7609580a00870960bfcc45d99cb990331",
+      "bytes": 16030,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-127.txt",
+      "sha256": "f988d28c8fe8ef21897c58daef8093e3d62509aef79d382ecbe1621a10c020e3",
+      "bytes": 11877,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-131.txt",
+      "sha256": "2d117267b17629cf65fbc9212070f62b1ba39b9367d6b333ef9e432cc0482d7c",
+      "bytes": 87247,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-132.txt",
+      "sha256": "b12ea9d0e8dd2f985fe628fec115ecd1ce0f5be0a7d4f798f33ae940818e0cc9",
+      "bytes": 28307,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-133.txt",
+      "sha256": "ea4bb3296192e8e833919440443858b5826a6bfd911626cf9baea029eacee804",
+      "bytes": 121520,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-134.txt",
+      "sha256": "1201e1d42236d9c5e4cd127348080c35d143ed7f66881d6cc29af0fc6358435f",
+      "bytes": 35215,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-135.txt",
+      "sha256": "4d6552a5e1b3cd2ff54966cde4d2faef9372fbf035108c65246dc044defbe53b",
+      "bytes": 6681,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-136.txt",
+      "sha256": "10717ef32d57efa471bd7c9bf67a163bbe76bbde88197a963f30c200feea1257",
+      "bytes": 5885,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-137.txt",
+      "sha256": "5ca790d26eadf4beeba1b6411e9c29fb302d7474c908d3e452abaa21cf054e1d",
+      "bytes": 24014,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-166.txt",
+      "sha256": "5003500a08f8bf8c1fd3bdd814344a9e14763db2405fd72e868d859136e80815",
+      "bytes": 254,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-167.txt",
+      "sha256": "31c6a25705c6b877d9ae894a4374ba69be1c48d298589652dc9cacb9abfdf941",
+      "bytes": 21082,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-168.txt",
+      "sha256": "0476f0ac4b2ffd585142ea3556af8f2022848b42664828c4b1e74f66e4e5fd7e",
+      "bytes": 25890,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-169.txt",
+      "sha256": "e6479088e62329dd7ec2aae807e6dd575ebae405bcee6cc28adc00f2f6afc7c1",
+      "bytes": 6911,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-170.txt",
+      "sha256": "0654568be90bfd409659943416a6af3bc20583cff4389192619aac7e0fab4fe3",
+      "bytes": 29969,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-171.txt",
+      "sha256": "38cc20e44cb55c1b7f1b8e16f41df5bf03bb998d592f298a8c2da3e69a198960",
+      "bytes": 8984,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-172.txt",
+      "sha256": "8256ea441304c56f81c9b816090585ea2e9bd96694dfead1146f189ad72f55ea",
+      "bytes": 12061,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-173.txt",
+      "sha256": "8fc2930a1c889838dda81ba2b4ef2b2a1480e646ebad7bb2422b28f8cd9758df",
+      "bytes": 15806,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-174.txt",
+      "sha256": "0f232814c50e06c2a8af0b6f46ca506881868f04f05a5b181f05320f3de4935c",
+      "bytes": 78164,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-175.txt",
+      "sha256": "7769b9104b2dbdee51d912cee9d11390b3ec1876374c3e8399f4d810272d27f0",
+      "bytes": 63681,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-176.txt",
+      "sha256": "f9690e97672c1e551235aa8a3718ec72dbcde9e29b79aaa80c727f7b21abc99d",
+      "bytes": 8779,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-177.txt",
+      "sha256": "4ad3bd97246db2028ddcc2857260f6e189a85b991e8535b5febfef144cdc7641",
+      "bytes": 12199,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-178.txt",
+      "sha256": "5a2b63504af9686c412ee41a65fc51544a3e30bfdc49ef46c3fedc8c695059b7",
+      "bytes": 15645,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-179.txt",
+      "sha256": "965317ad530fb02d78c4f7d9101a16f2f0e7775c63edda4e6fa897edc3cdbe30",
+      "bytes": 10990,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-180.txt",
+      "sha256": "15cdb6356a631ac4d44a3730766a8113d46d78a946f18e2d8925edb9b8c5fda9",
+      "bytes": 36173,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-181.txt",
+      "sha256": "8a155ebaeb78615c537ddff826021f2d1c665934dd87babdd5e7f9fad05e58d4",
+      "bytes": 20548,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-182.txt",
+      "sha256": "6ce23ad2727b3dd83df56a35c792d23b1280b336c43dc7e58b404749ad92e7d6",
+      "bytes": 15696,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-183.txt",
+      "sha256": "2aef2a8d51729d39ff6682871c3677e939d878d9b86a2db5d71794c09941df6f",
+      "bytes": 26144,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-184.txt",
+      "sha256": "e12624bfdd4cce26166999dfbd82f8d2c7300c590ed89ca793c3169b74bdc769",
+      "bytes": 8872,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-185.txt",
+      "sha256": "bc18d297eb35ef1c2e58e9964391e3117814e49bb8207a590bae5280cac79aa9",
+      "bytes": 695,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-186.txt",
+      "sha256": "6129a79d0349b9ecd961a70af7dedc914affbf12a9aa499503f473e9eca39a60",
+      "bytes": 16342,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-187.txt",
+      "sha256": "27723fa728213dac06230534dfa29cd8588f4f030787411cc9800564a835340d",
+      "bytes": 16839,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-189.txt",
+      "sha256": "6b3a6e93eb4670d91afcd356b57d7cd93260a24fe19fce8f84cb95ad9f24aace",
+      "bytes": 26040,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-190.txt",
+      "sha256": "c0bafeef8bdd231d5a4bbab3e8eb72afd562361d2e64c25de1f5b8e4ce683ce8",
+      "bytes": 19609,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-191.txt",
+      "sha256": "e635ddda2d43bacceabdbd09bd9cc7f62358cec6377b4f40ab31f8ead6e5ba0d",
+      "bytes": 12282,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-192.txt",
+      "sha256": "e920fe8bda19a3bf326a99a8934de215a3abe3c380ddfa0d8fcaf495e317f980",
+      "bytes": 10505,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-193.txt",
+      "sha256": "74ceed317e0a9bbf388334bd37746dcda168417384a343cbc4df19f3ae3d6ec2",
+      "bytes": 17074,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-194.txt",
+      "sha256": "a6a455e73eba138dae154b5fb94e32fb380fa8ecdb4a7c988dcad583b44741ca",
+      "bytes": 48396,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-199.txt",
+      "sha256": "2e34badfd701e3a8a36e02f2f24fdbf3090e41dfbeeaee70705be9e3966a7912",
+      "bytes": 27533,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-205.txt",
+      "sha256": "5aea99cb3546a4653b7b972e4d08b38afaf9830db7d0b451bbb657748ea71c24",
+      "bytes": 92775,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-208.txt",
+      "sha256": "a5343ef76b00402cfc8ab62cf691f0882f07192dae075d13f6465180738fb8d7",
+      "bytes": 102358,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-209.txt",
+      "sha256": "1dbccda45dc3b58652e2818388de1a7d8a321dc9bd6f309ddcaafcecb649978d",
+      "bytes": 42153,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-210.txt",
+      "sha256": "3a36bf0578fcf334bfcc99fcffac6de7765aac8bf2e54ee05ee67770071b21fa",
+      "bytes": 23158,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-211.txt",
+      "sha256": "44355f06655a186043ba6e6a9cb02ddf38125791e839a613f3de455f4dfbceb3",
+      "bytes": 51024,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-214.txt",
+      "sha256": "b60c482345fd22c9e56155da4f6708b18f591936dac8fdd7c4658e216e70417c",
+      "bytes": 18086,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-216.1.txt",
+      "sha256": "c3ab79708baa8361ae16b4d960cd312a79ddff5c03da75677a81a23b8f7e1411",
+      "bytes": 3716,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-216.txt",
+      "sha256": "fb855ff053a4b2d1c7e97dfbbe0225b1f8d0ea00e011de0407a63d7fab34676e",
+      "bytes": 28454,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-217.txt",
+      "sha256": "1103570401bac967862013be0af2d6587447bc6997a5c737ac7d2a510fec2fc9",
+      "bytes": 2737,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-218.txt",
+      "sha256": "edf0bbc590d0179aada6c9e23736fc570eb20e26c71117ef5a9d222e1ad25722",
+      "bytes": 9042,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-219.txt",
+      "sha256": "b8de7a07534d1cdeebf12ab3ccea342dcebf25b47e6999a09f4b0d7a14812a38",
+      "bytes": 15652,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-221.txt",
+      "sha256": "2fc6aa3eae755d2f7a757e5dd94417485f54e89f69ddbc2e4efea18a2f369dc9",
+      "bytes": 6494,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-222.txt",
+      "sha256": "4aa93586fdbf75eae33cdfb2e812a67b04ff06cb537bed350b41625b80ebd5fe",
+      "bytes": 4689,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-224.txt",
+      "sha256": "d7532b0bbfe6c77951555e42222eb9fd246fe36e3a09f5f59bbaa280a3c82400",
+      "bytes": 26046,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-263.txt",
+      "sha256": "fc57cac7d25f20bc9c805d24628c5229285242c1dce656589319c4da1b4b8c50",
+      "bytes": 5030,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-264.txt",
+      "sha256": "f62b8a77ae12ce7d3f93c5599463c67e42b3d2b92911bb00467db431c6a8f9a0",
+      "bytes": 5309,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-265.txt",
+      "sha256": "afdbb20cf457ad5ecfd747039828116566b9fd0674b0279c3e9493b9c569d67c",
+      "bytes": 1609,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-267.txt",
+      "sha256": "1a5d9fb490f94aa11aded9ef9cc95ff9946d3f196946c040e496e738027397c3",
+      "bytes": 7366,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-324.txt",
+      "sha256": "23c4e96aa280401d7e517a4c0f80a8948069a37c802b61346ac7a5c9fe311b97",
+      "bytes": 28354,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-326.txt",
+      "sha256": "2880047b4818d1d7ba78457bb0ff6b3b105974ecc6f763cb5008e901f0a33604",
+      "bytes": 16720,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-327.txt",
+      "sha256": "2dd98e5c2a4b8cc9588904ea68990f57dae24a0dc42c0b9dbc9dee5ed05586c4",
+      "bytes": 14668,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-328.txt",
+      "sha256": "1b3290df8a4f30c7870a8ca092a2e467a885e6905da31c4d07ab3f4bdf1d545d",
+      "bytes": 52551,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-329.txt",
+      "sha256": "1c0b4cc70db52f2bd17f3f420f05e6c09bb06b62b5b308955fb84f6cbee22e8c",
+      "bytes": 243,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-332.txt",
+      "sha256": "4c96b8e514dc6ace2503d61c41b3a4e2d9c2473cb5296059436fbb4f275cfece",
+      "bytes": 831,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-335.txt",
+      "sha256": "0eeafda754c53621833030434edf0296ad5957989f6b460e32860b8579daec90",
+      "bytes": 6514,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-336.txt",
+      "sha256": "cb20f168646d2819bfb066fcfd924d5237b99c2c13c8c319c49ffa61b738774f",
+      "bytes": 9498,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-337.txt",
+      "sha256": "d5bee40d594e5fe7b7c1ceab53b09645fbd52616410e0b9ab9c81f57ac93b8eb",
+      "bytes": 17816,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-340.txt",
+      "sha256": "7230cd229c5e0267c13f6a40370ce7bc568817ac6b165393a7acb29c6570b594",
+      "bytes": 8907,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-341.txt",
+      "sha256": "547c7981ec490a341e0d2529d3b26b5121069b0bfbc09652d0a861e9ec2427a8",
+      "bytes": 482,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-342.txt",
+      "sha256": "e42bc8d52da76d0b0ff9c38efce7e528ee6c398c51123b6ce2b3f3cf0968d912",
+      "bytes": 34066,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-343.txt",
+      "sha256": "2412ebc768910a41f8ddef7679bcd72f0307ff54475d690f97790678c0f7828e",
+      "bytes": 7452,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-344.txt",
+      "sha256": "29f2a61c190c25d08e340147dec5ff12ce315eb0c36da50174422770d7d8571e",
+      "bytes": 8186,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-381.3.txt",
+      "sha256": "0237ecd07f67bac0bb682474c373ee51c0e25cca023b8decc47571473b2bf07b",
+      "bytes": 1558,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code-381.6.txt",
+      "sha256": "a7ef8f2aad2aae451eeca0360bd145f25cb7bfc7cafad0b3efe9cc2d759d3816",
+      "bytes": 730,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/special-code.txt",
+      "sha256": "53e9527f3a702fc2b4b7efd8eb2ff3bf0393c7def362d30d3b8142ffe10fd927",
+      "bytes": 4206499,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    },
+    {
+      "path": "work/independent-review/treaty-suspension164.txt",
+      "sha256": "88692648f93d6c819a04d935e7139e8964efe18cf5d4b43054936204ebe09537",
+      "bytes": 18157,
+      "read_date": "2026-10-24",
+      "kind": "browser displayed DOM/AX text",
+      "limit": "Saved displayed content, not a raw official legal-file hash."
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "name": "Guide frozen SHA",
+    "actual": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+    "expected": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6686",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6688",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6692",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6694",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6694",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6700",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6696",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6702",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6478",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6624",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "AEAT147 exact quote LF20",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6799",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6807",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6490",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6590",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6734",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6737",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6770",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6775",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6780",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6785",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6790",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6811",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6797",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6712",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6524",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR exact quote LF1037",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR exact quote LF1063",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR exact quote LF1716",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6710",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6714",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF5937",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF5943",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6530",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR exact quote LF1914",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR exact quote LF1916",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6528",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6532",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6540",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6538",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6546",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF6704",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6788",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6616",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6618",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6730",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6754",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Order149151 exact quote LF335",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Order149151 exact quote LF343",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Order149151 exact quote LF339",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6646",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6656",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6678",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6680",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6696",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6756",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6686",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6688",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote LF6692",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF2209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF2213",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF8191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF8408",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF8461",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF2138",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote LF2270",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote LF7051",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF raw unchanged",
+    "actual": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "expected": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF reader unchanged",
+    "actual": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "expected": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF raw unchanged",
+    "actual": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "expected": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF reader unchanged",
+    "actual": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "expected": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR raw unchanged",
+    "actual": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "expected": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "pass_check": true
+  },
+  {
+    "name": "IRNR reader unchanged",
+    "actual": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "expected": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "pass_check": true
+  },
+  {
+    "name": "LGT raw unchanged",
+    "actual": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "expected": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "pass_check": true
+  },
+  {
+    "name": "LGT reader unchanged",
+    "actual": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "expected": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "pass_check": true
+  },
+  {
+    "name": "Order149151 raw unchanged",
+    "actual": "c9a5a562f39830b9d48cc2a2f71dbc7bdd45234cead7eccbf17f2168cfba884d",
+    "expected": "c9a5a562f39830b9d48cc2a2f71dbc7bdd45234cead7eccbf17f2168cfba884d",
+    "pass_check": true
+  },
+  {
+    "name": "Order149151 reader unchanged",
+    "actual": "088107475974db36698d2167107507d004272a50a6dfeb60f56e2819165440d7",
+    "expected": "088107475974db36698d2167107507d004272a50a6dfeb60f56e2819165440d7",
+    "pass_check": true
+  },
+  {
+    "name": "AEAT147 raw unchanged",
+    "actual": "16f60576608a6bd707fa9e2346273e582e24509a8023abfb117f227f1c79f270",
+    "expected": "16f60576608a6bd707fa9e2346273e582e24509a8023abfb117f227f1c79f270",
+    "pass_check": true
+  },
+  {
+    "name": "AEAT147 reader unchanged",
+    "actual": "02caf45226c655cc11392ee9632272343f794ae231c25c72005d39e8552bcb3f",
+    "expected": "02caf45226c655cc11392ee9632272343f794ae231c25c72005d39e8552bcb3f",
+    "pass_check": true
+  },
+  {
+    "name": "every exact current rule wording in Guide",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "main oa count",
+    "actual": "2",
+    "expected": "2",
+    "pass_check": true
+  },
+  {
+    "name": "example1 salary tax",
+    "actual": "26400",
+    "expected": "26400",
+    "pass_check": true
+  },
+  {
+    "name": "example1 Spanish dividend tax",
+    "actual": "760",
+    "expected": "760",
+    "pass_check": true
+  },
+  {
+    "name": "example1 combined",
+    "actual": "27160",
+    "expected": "27160",
+    "pass_check": true
+  },
+  {
+    "name": "example2 ordinary",
+    "actual": "167500",
+    "expected": "167500",
+    "pass_check": true
+  },
+  {
+    "name": "example2 savings",
+    "actual": "74880",
+    "expected": "74880",
+    "pass_check": true
+  },
+  {
+    "name": "historical raw fraction retained as correction history",
+    "actual": "1005000/13",
+    "expected": "1005000/13",
+    "pass_check": true
+  },
+  {
+    "name": "current effective percentage",
+    "actual": "25.77",
+    "expected": "25.77",
+    "pass_check": true
+  },
+  {
+    "name": "current rounded-rate foreign limit",
+    "actual": "77310",
+    "expected": "77310",
+    "pass_check": true
+  },
+  {
+    "name": "example2 binding credit",
+    "actual": "50250",
+    "expected": "50250",
+    "pass_check": true
+  },
+  {
+    "name": "example2 after credit",
+    "actual": "192130",
+    "expected": "192130",
+    "pass_check": true
+  },
+  {
+    "name": "example2 salary withheld",
+    "actual": "156000",
+    "expected": "156000",
+    "pass_check": true
+  },
+  {
+    "name": "example2 dividend withheld",
+    "actual": "58900",
+    "expected": "58900",
+    "pass_check": true
+  },
+  {
+    "name": "example2 return",
+    "actual": "-22770",
+    "expected": "-22770",
+    "pass_check": true
+  }
+]

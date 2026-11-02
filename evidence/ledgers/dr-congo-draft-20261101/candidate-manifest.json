@@ -1,0 +1,19 @@
+{
+  "status": "Frozen writer inputs for independent review; no publication",
+  "base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "files": {
+    "skills/dr-congo/README.md": "2fdcc7726514405c8d1c005206777bd7c4ba0e67b1b3c792e8194b310ade51ce",
+    "skills/dr-congo/cd-transfer-pricing.md": "e2df9741382af5a594da5427535f97554254107183647f50b4e3d34ab382ea11",
+    "skills/dr-congo/cd-cross-border.md": "fccf4d746204323234a281f17c0ee6e689c9db5b28d024e7ba4567e7514266fe",
+    "evidence/ledgers/cd-transfer-pricing.md": "fb43ef99ad34cf1cabb26ff9182e916dad2aee0d2b6fc9df476db8827d7c1b17",
+    "evidence/ledgers/cd-cross-border.md": "45c74527fa8a686fb08b0ddcf6184c9d34361c01a7034342f95a7fc8dec6acf0",
+    "evidence/ledgers/dr-congo-old-topics.md": "7ee17f03578d38cdc6214bab2c953fa83d203a09e51a1a5990d490e91a894de7",
+    "evidence/ledgers/dr-congo-draft-20261101/source-record.json": "315598ab9c30303104c19bf6dfae9c6bc9d43a1cbbdd15d2d1f57028b9c489ed"
+  },
+  "ledger_counts": {
+    "cd-transfer-pricing": 37,
+    "cd-cross-border": 32
+  },
+  "full_sources_private": true,
+  "legacy_guides_unchanged": 6
+}

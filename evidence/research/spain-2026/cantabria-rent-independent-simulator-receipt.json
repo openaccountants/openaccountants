@@ -1,0 +1,54 @@
+{
+  "read_utc": "2026-10-27T17:25:43.200579+00:00",
+  "official_application_url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "independent_review_tab": "1623102642",
+  "application_identity": "Renta2025,version1.19OPEN",
+  "inputs": "Only supplied fictional PRUEBA SIMULACION research .ses imported into a new blank official tab; no actual taxpayer data/authentication/filing/payment.",
+  "import_receipt": {
+    "file": "../cantabria-fictional-simulation.ses",
+    "verified_sha256": "638ff3a7608d94d96e48df4b9003e2f6a76e6423c160e0c6070ce326e9ef0c64",
+    "initial_extension_filechooser": "Failed because extension file-URL access disabled; no permission change made.",
+    "successful_fallback": "Used native file picker to select exactly the fictional .ses; imported summary visibly recalculated."
+  },
+  "pre_trial_summary_independently_observed": {
+    "gross_employment": "30000.00",
+    "employment_net": "25000.00",
+    "positive_bank_interest": "10000.00",
+    "general_BI": "25000.00",
+    "savings_BI": "10000.00",
+    "pension_reduction": "1500.00",
+    "general_BL": "23500.00",
+    "personal_family_minimum": "5550.00",
+    "regional_gross_quota": "2865.75",
+    "regional_credit": "300.00"
+  },
+  "own_actual_UI_trials": [
+    {
+      "trial": 1,
+      "action": "Opened ordinary Cantabria rental editor, changed only amount to3500,accepted,read recalculated result,then reopened editor to confirm amount retained.",
+      "editor_amount_after_reopen": "3500,00",
+      "observed_credit_field_0946": "blank",
+      "interpretation": "No credit; equality at10%of35000fails.",
+      "AX_observation": "76 text field ID:fWzLga0,Por arrendamiento de vivienda habitual por j\u00f3venes,mayores y con discapacidad; noValue. Reopened editor18text field Importe satisfecho Value3500,00."
+    },
+    {
+      "trial": 2,
+      "action": "Changed only retained3500amount to3500,01,accepted,read recalculated regional-credit page and eligibility amount.",
+      "observed_credit_field_0946": "300,00",
+      "observed_rent_total_field_1128": "3.500,01",
+      "observed_eligible_rent_field_1129": "3.500,01",
+      "observed_credit_field_1130": "300,00",
+      "AX_observation": "76 text field Value300,00;338disabled text field total satisfied Value3.500,01;344eligible amount Value3.500,01;350credit Value300,00."
+    }
+  ],
+  "own_UI_trials_count": 2,
+  "writer_UI_observations_count": 6,
+  "own_new_downloaded_sessions": 0,
+  "important_evidence_limits": [
+    "I did not independently rerun all six writer observations.",
+    "No new downloaded session is claimed for either own trial; this is an actual UI observation receipt.",
+    "Writer supplied only one final downloaded .ses; prior writer intermediate equality outcomes are recorded observations, not separate files.",
+    "Initial getAttribute(value)read returned stale serialized values; I used recalculated AXstate and reopened editor to confirm actual live values.",
+    "SavedRESUMENcache must not replace actualIRPF2025/currentUIcalculation."
+  ]
+}

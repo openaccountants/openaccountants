@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/es-canary-islands-igic.md",
+    "sha256": "f3fbc2f6ec343dfdd20187ba5908b028ebd7c83952a212636918cc189094f0fb",
+    "bytes": 152319
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-canary-islands-igic/rows.json",
+    "sha256": "a3e0d949813c1475ba5e02485d2b395d5285229efd41b44cf3167d8102b5eff2",
+    "bytes": 167516
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-canary-islands-igic/source-read-receipts.json",
+    "sha256": "8bcd118a2f37733bf7d9e43bb6190aec0aa7bc86bda860237a3882b8db65aeef",
+    "bytes": 48294
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-canary-islands-igic/writer-status.md",
+    "sha256": "3cc1b4a3810bd1cc7a3072b777ad2be91a5324d2dee466d9ef0c75a91d865e3b",
+    "bytes": 1459
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-canary-islands-igic/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

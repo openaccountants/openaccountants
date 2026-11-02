@@ -1,0 +1,655 @@
+{
+  "reviewed_on": "2026-10-31",
+  "original_base": "8b75d6090a5a12b9259764b040947fe68071884d",
+  "latest_main_checked": "482f05d80a379fa22de7d8915d804c8e1051b73d",
+  "pairs": [
+    {
+      "slug": "es-autonomous-worker",
+      "guide_sha256": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+      "ledger_sha256": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-beckham",
+      "guide_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+      "ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-canary-islands-igic",
+      "guide_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "ledger_sha256": "f3fbc2f6ec343dfdd20187ba5908b028ebd7c83952a212636918cc189094f0fb",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-capital-gains",
+      "guide_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "ledger_sha256": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-ceuta-melilla-ipsi",
+      "guide_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "ledger_sha256": "41fd5a36bb182967cdbc50f2cf919363785ba65848bdb5c086a2f4c347980899",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-corporate-tax",
+      "guide_sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+      "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-estimated-tax",
+      "guide_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "ledger_sha256": "b44ae8932a0048419050c8fb67e30674ecf578cdb9a0deaf0c84a0dc73ea0bf1",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-foral-corporate-tax",
+      "guide_sha256": "226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929",
+      "ledger_sha256": "f6523c92cd59a3894210cbe62f12c04b620e398c4ae0fe81cd0522ec452bf709",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-foral-income-tax",
+      "guide_sha256": "fa181e424cf4030776d01acd1ccb05d13a601b83a69309ede919b5efdfac9ed7",
+      "ledger_sha256": "766e76aef0953a25503a402fdfe133468152d6238c1f13886ad834625211e4ff",
+      "verdict": "EXACT_APPROVED_DELTA_AND_ORIGINAL_LEDGER_PREFIX"
+    },
+    {
+      "slug": "es-foral-non-resident-tax",
+      "guide_sha256": "2f228730516db2b97f0f700cb46d08395dc84e41347b8a60162e384881b66e5b",
+      "ledger_sha256": "e9597ad12395a722f888cd9b927209c98342ab2d394c62a60736eb29214f9c0e",
+      "verdict": "EXACT_APPROVED_DELTA_AND_ORIGINAL_LEDGER_PREFIX"
+    },
+    {
+      "slug": "es-foral-payroll",
+      "guide_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "ledger_sha256": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-income-tax",
+      "guide_sha256": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+      "ledger_sha256": "99d3d3675aae17adcd0f04bad21a2d22b5e7dcc8b64f5d98af60caea2a700448",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-irpf-deductions",
+      "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+      "ledger_sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-modelo-111",
+      "guide_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "ledger_sha256": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-non-resident-income-tax-irnr-and",
+      "guide_sha256": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+      "ledger_sha256": "e6d267324516381e9f09083d3614d8780b03da7c197d2bf239e781663c4661d0",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-rental-income",
+      "guide_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "ledger_sha256": "d306f92e524564f6d412fdf2ee901d3fa38eebd28476e1099a11369dcf55adb0",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-social-contributions",
+      "guide_sha256": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+      "ledger_sha256": "b97e69d8101a113a8e10fc1ef960d6e30b5e6ccc3ad1f12a378c2142b7298791",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "es-vat-return",
+      "guide_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "ledger_sha256": "418e4b14dd08bd9e2e2c0f056cc5640c4e270650469b537f022c492ebea1c1e4",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "spain-crypto-tax",
+      "guide_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "ledger_sha256": "7c4f1c0ce0aa36b631ad3799efa6fdf19e55114d236cd0bdec05f3c554f9ee1e",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "spain-payroll",
+      "guide_sha256": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+      "ledger_sha256": "5f014d016726afe6b3abe97d116fdb0ff297328ac75fb6fde7035946ddd691b0",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "spain-transfer-pricing",
+      "guide_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "ledger_sha256": "8fcbf7ccd6a8b44922db500eac09386b2ce65de894c9cf8aa6d902831d8231d4",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    },
+    {
+      "slug": "spain-vat-return",
+      "guide_sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+      "ledger_sha256": "a86645db838f32384769c2889eab3e672039dd4527274b3230fbb4623149c44c",
+      "verdict": "UNCHANGED_SEALED_PAIR"
+    }
+  ],
+  "unchanged_other_spain_files": {
+    "skills/international/spain/spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "skills/international/spain/es-rental-income.md": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+    "skills/international/spain/es-corporate-tax.md": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+    "skills/international/spain/es-estimated-tax.md": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "skills/international/spain/es-modelo-111.md": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "skills/international/spain/spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "skills/international/spain/es-beckham.md": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+    "skills/international/spain/spain-formation.md": "5e34749a921379db5b0c6a2a6c1ed3a14044ce0aa20cac5beb83ea9cd620c9ab",
+    "skills/international/spain/es-irpf-deductions.md": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+    "skills/international/spain/es-autonomous-worker.md": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+    "skills/international/spain/es-capital-gains.md": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "skills/international/spain/es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "skills/international/spain/es-social-contributions.md": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+    "skills/international/spain/es-foral-corporate-tax.md": "226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929",
+    "skills/international/spain/es-foral-payroll.md": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "skills/international/spain/es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "skills/international/spain/references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "skills/international/spain/es-income-tax.md": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+    "skills/international/spain/spain-crypto-tax.md": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+    "skills/international/spain/es-vat-return.md": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+    "skills/international/spain/spain-payroll.md": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+    "skills/international/spain/spain-tax-optimization.md": "01a96870e6ada23c600a1f159066485ffa7a5edf19172373e4afa25cb79eb150",
+    "skills/international/spain/es-non-resident-income-tax-irnr-and.md": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+    "skills/international/spain/spain-vat-return.md": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+    "skills/international/spain/spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "skills/international/spain/spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2"
+  },
+  "original_sealed_review_files_unchanged": 245,
+  "preserved_review_copies": {
+    "scope-review": {
+      "scope-review.md": "8ef085b25bbff4b6a9a3c0a0fe1ba29c1e22f075fb01183e955764443a1c792a",
+      "scope-matrix.json": "831870d870628c5b75be75b3eaa8483808c73440e2f0897eefc691963afd4ca1",
+      "manifest.json": "f374aacda40dc1170bef7819287a462af31dc09c9f7ba32b7eae6ad2ee150207"
+    },
+    "a4-independent-review": {
+      "report.md": "ed405198842188301391d5658290537e98ef43faa634c5ab7e7afcfc9491d878",
+      "independent-checks.json": "da4fe62afcea2c54e40353f8078a76a85d35bf77fa2b092422ffc26f85de2350",
+      "source-read-checks.json": "97dfb581aa30d844c6e48275d90024acaf7bb2b57f1d2730de2643550c19e608",
+      "manifest.json": "91734ac62062cfe77f4f63cedc8dd19daccd9299e4ec863f14de876607ca3677",
+      "independent-controls.json": "fb62e1bef72db75c9be9c7c4d1ffa233bbbae4e0768117028edb48742bf6bbf9",
+      "verify.py": "9dcae07c61756348a129ba344e0434c08e8a7a26e1fa6e9b82bc8d567f267300"
+    },
+    "a1-gross-independent-review": {
+      "report.md": "c2cd999ecb5c22bed7fab1e52986d68b364ced54cd26e9d23d4e30a828b1b015",
+      "independent-checks.json": "449792de6ed208cebbf6801cef68eb7dba9b3208802d086e9a4cb192995dbd24",
+      "source-read-checks.json": "4119dcc0b0c6e56b2bd1a2728ea5c179cd0a53c162f04d65e82d902177c50edc",
+      "manifest.json": "ed3539d1323398fb1e2d50232d135a88a8f65fd039f1cde716201320f3d41c93",
+      "independent-controls.json": "8627ccaf93b000ff3d96b4e3899a98c6692696b350f50975449715001b20a8bb",
+      "verify.py": "dfeef2118119e3afaeff6b91f77da9cbd7756b23277f4c818c80547710a7349a"
+    },
+    "a1-net-rejection": {
+      "report.md": "b0505f0b11023c67e9c326d4be002989ffb4eacd9c020f1bff8a82f8c42efe4a",
+      "independent-checks.json": "558837d07944cf38006a234527103d26d68dbcf7e4c80fb1266f7ed9fe22b822",
+      "source-read-checks.json": "4119dcc0b0c6e56b2bd1a2728ea5c179cd0a53c162f04d65e82d902177c50edc",
+      "manifest.json": "514ac4c030c8f13038794dc8a679ab0cffa0b58d01f9efc4aec0a099e03efe7d",
+      "independent-controls.json": "b1197e08f5007617a90388e160edcc05b7c36e951e8be0794242bc70b4d68f62",
+      "verify.py": "ffdc85960aeeae282b0b912d391d5aea73123699500fef5f7fa73003376a660a"
+    },
+    "residual-crypto": {
+      "report.md": "59817f836c2261ea7c58ff7ff3108b814bff13674972d609751404b31731c24f",
+      "source-checks.json": "2b8457849432ed431c1f3438d26a64f22ce8c72773fac7c2bd5d47c3909a5d67",
+      "verdict.json": "86bf170ec504adbe0d1d83448a5f94dc3c2b2affc3fd35814455abbfd07c0422",
+      "manifest.json": "ece246e85771aba5543bb651d54b921d6eb2049eea38ccf9b0cd2153d17dcd99"
+    }
+  },
+  "preserved_scope_counts": {
+    "A": 4,
+    "B": 33,
+    "C": 36
+  },
+  "status": {
+    "partial_domains": [
+      "IT-IND"
+    ],
+    "open_findings": [
+      "A2",
+      "A3"
+    ],
+    "resolved_method_gaps": [
+      "A1",
+      "A4"
+    ],
+    "country_complete": false,
+    "close_issue391": false,
+    "accountant_attestation": false
+  },
+  "local_markdown_links": [
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-2026-evidence/independent-review/final-country-review.json",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-closeout-20261031/README.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../research/spain-2026/regional-attribution-22-guide-checkpoint.json",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-closeout-20261031/scope-review/scope-review.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-income-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-irpf-deductions.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-foral-income-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-vat-return.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "spain-vat-return.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-canary-islands-igic.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-ceuta-melilla-ipsi.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-social-contributions.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "spain-payroll.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-modelo-111.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-foral-payroll.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "spain-transfer-pricing.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-non-resident-income-tax-irnr-and.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-foral-non-resident-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-beckham.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-capital-gains.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-rental-income.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-autonomous-worker.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "es-estimated-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "spain-crypto-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-closeout-20261031/foreign-assignment-controls.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-closeout-20261031/baseline-country-status.txt",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "../../../ledgers/spain-closeout-20261031/scope-review/scope-matrix.json",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/README.md",
+      "target": "references.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "scope-review/scope-review.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "scope-review/scope-matrix.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "baseline-country-status.txt",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a1-gross-independent-review/report.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a1-source-contexts.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a1-old-topic-destinations.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a1-writer-controls.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "scope-review/scope-review.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "scope-review/scope-review.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a4-independent-review/report.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "source-contexts.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "old-topic-destinations.json",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "foreign-assignment-controls.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "a1-net-rejection/report.md",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "sources/",
+      "exists": true
+    },
+    {
+      "file": "ledgers/spain-closeout-20261031/README.md",
+      "target": "validation-schemas.json",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-income-tax.md",
+      "target": "../../../ledgers/spain-closeout-20261031/foreign-assignment-controls.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-income-tax.md",
+      "target": "es-foral-non-resident-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-income-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-income-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-income-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-non-resident-tax.md",
+      "target": "es-non-resident-income-tax-irnr-and.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-non-resident-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-non-resident-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    },
+    {
+      "file": "skills/international/spain/es-foral-non-resident-tax.md",
+      "target": "es-foral-corporate-tax.md",
+      "exists": true
+    }
+  ],
+  "owners_actual_table_counts": {
+    "Claude": 32,
+    "ChatGPT": 23
+  },
+  "owners_change_scope": {
+    "only_country_row_changed": "ES",
+    "other_changes": "ownership totals and Spain handover bullet only",
+    "non_ES_rows_unchanged": 54,
+    "totals": "32 Claude / 23 ChatGPT"
+  },
+  "source_archives": [
+    {
+      "key": "G-IRNR-2026",
+      "url": "https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9",
+      "archive_path": "sources/G-IRNR-2026.pdf",
+      "sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+      "bytes": 799094
+    },
+    {
+      "key": "A-NF21-2025-original",
+      "url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf",
+      "archive_path": "sources/A-NF21-2025-original.pdf",
+      "sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+      "bytes": 621844
+    },
+    {
+      "key": "B-IRPF-regulation",
+      "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf/c17e2f7e-e4dd-789c-235e-21add02afe5e?t=1710491329241",
+      "archive_path": "sources/B-IRPF-regulation.pdf",
+      "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+      "bytes": 678881
+    },
+    {
+      "key": "A-IRPF-regulation",
+      "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+      "archive_path": "sources/A-IRPF-regulation.pdf",
+      "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+      "bytes": 989922
+    },
+    {
+      "key": "G-IRPF-regulation",
+      "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+      "archive_path": "sources/G-IRPF-regulation.pdf",
+      "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+      "bytes": 1555948
+    },
+    {
+      "key": "A-IRPF-current",
+      "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+      "archive_path": "sources/A-IRPF-current.pdf",
+      "sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+      "bytes": 1602000
+    },
+    {
+      "key": "G-IRNR-regulation-current",
+      "url": "https://www.gipuzkoa.eus/documents/2456431/null/DF%2011-2016%20(2026-0)/0988d0d9-65e5-f1f1-e6af-c452b324b425",
+      "archive_path": "sources/G-IRNR-regulation-current.pdf",
+      "sha256": "bb3521e2400a576ebe932b72915bfe677551d5b4ed68f4066dddecdd2521e186",
+      "bytes": 437119
+    },
+    {
+      "key": "G-NF2-2025-original",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/11/28/c2508038.pdf",
+      "archive_path": "sources/G-NF2-2025-original.pdf",
+      "sha256": "879562b3c97c3ee33e2ab57927d522aae04d34a13ddab721e600da3614a289d8",
+      "bytes": 367480
+    },
+    {
+      "key": "G-IRNR-historical2020",
+      "url": "https://www.gipuzkoa.eus/documents/2456431/19242636/NF%2B16-2014%2B%282020-3%29.pdf/1f4447cb-30a6-fe43-38b1-b8368b0bca8d?t=1612341442000",
+      "archive_path": "sources/G-IRNR-historical2020.pdf",
+      "sha256": "d6de8e1ee9c388025e57ab606ad514877082525f84d7fd078eedeb6bd25ce3de",
+      "bytes": 684209
+    },
+    {
+      "key": "N-TEAF-FIFO-2017",
+      "url": "https://teaf.navarra.es/documents/43159255/43226379/TEAF-0246-2015.pdf/de0de97c-69ca-c224-f7e9-5ee14116effb?t=1732265656130",
+      "archive_path": "sources/N-TEAF-FIFO-2017.pdf",
+      "sha256": "62ead0d70328d1decdc86567fd357bced70b026903fc58b8d36c1f733e7e43cb",
+      "bytes": 74124
+    },
+    {
+      "key": "A-2025-manual",
+      "url": "https://web.araba.eus/documents/d/araba/manual_renta_renta2025_es-pdf",
+      "archive_path": "sources/A-2025-manual.pdf",
+      "sha256": "ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d",
+      "bytes": 2821713
+    },
+    {
+      "key": "N-2025-manual",
+      "url": "https://www.navarra.es/documents/48192/35409067/Manual%2Bte%C3%B3rico%2Bde%2Bla%2Bcampa%C3%B1a%2Bde%2B2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?download=true&t=1775726152475",
+      "archive_path": "sources/N-2025-manual.pdf",
+      "sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+      "bytes": 2360617
+    },
+    {
+      "key": "A-DF36-2026",
+      "url": "https://www.araba.eus/botha/Boletines/2026/122/2026_122_02967_C.pdf",
+      "archive_path": "sources/A-DF36-2026.pdf",
+      "sha256": "dff415556ee1188a8091cedcc79fef4168fba2bbec74266fa3e6f1bace83e583",
+      "bytes": 378516
+    }
+  ],
+  "approved_support_hashes_still_match": true,
+  "validation": {
+    "new_checks_this_seal": "identity, preservation, packaging and recorded-result consistency; no blind whole-pack legal or test rerun",
+    "prior_independent_delta_examples": "A1 original2, A4 original2 plus all5 linked controls recomputed/passed in exact delta reviews",
+    "writer_recorded_results": {
+      "all22_schema_and_mechanical_errors": [
+        "skills/international/spain/es-irpf-deductions.md: (h) no_em_dash: 7 em dash(es)"
+      ],
+      "all22_warnings": [
+        "1 guides fail check (c) rates_rows_sourced",
+        "skills/international/spain/es-irpf-deductions.md: (c) rates_rows_sourced: 8 of 434 rates table row(s) without a URL"
+      ],
+      "preexisting_unchanged_failure": true,
+      "changed2_errors": [],
+      "changed2_warnings": [],
+      "baseline_deductions_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+      "examples_output": "checked 23 files, 49 oa-check blocks, 0 failures, 0 missing\n",
+      "initial_plain_python_issue": "PyYAML was absent in plain python; reused pinned validation dependency directory for subsequent checks."
+    },
+    "writer_unit_tests": "149 pass after recorded macOS temporary-path/CI variable correction; initial1failure7errors preserved in note",
+    "does_not_claim_full22_mechanical_green": true
+  },
+  "tracked_change_scope_pass": true,
+  "untracked_outside_batch": [
+    "resp.txt"
+  ],
+  "excluded_from_verdict": [
+    "untracked resp.txt",
+    "future integration/commit/PR checks; preserve these exact reviewed hashes after integration"
+  ],
+  "resolved_findings": [
+    {
+      "id": "F-FINAL-01",
+      "status": "RESOLVED",
+      "description": "Checkpoint initially retained baseline byte counts for2changed pairs despite correct candidate hashes. Writer corrected exactly4byte fields; all new sizes now independently verified. No Guide, ledger, status or source bytes changed."
+    }
+  ],
+  "open_publication_findings": [],
+  "verdict": "PASS_FOR_ONE_ACCURATELY_PARTIAL_COUNTRY_CHECKPOINT_ONLY"
+}

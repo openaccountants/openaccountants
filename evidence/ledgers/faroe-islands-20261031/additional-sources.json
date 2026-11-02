@@ -1,0 +1,48 @@
+[
+  {
+    "name": "vat-bill-82-2004.pdf",
+    "url": "https://www.logting.fo/files/casestate/4549/082.04%20Meirvirdisgjald.pdf",
+    "final_url": "https://www.logting.fo/files/casestate/4549/082.04%20Meirvirdisgjald.pdf",
+    "status": 200,
+    "bytes": 133407,
+    "sha256": "9859c359842950285a4a60176d4ea33252c44e92c0e9bd6e8dd8fb1ed259d2b6",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "inheritance.html",
+    "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "final_url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "status": 200,
+    "bytes": 17474,
+    "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122",
+    "read_date": "2026-10-31",
+    "reader_sha256": "ee27942a8aa9617cf7fae0aed9e53ffc45dca68f1c65898daf059c511542bbd1"
+  },
+  {
+    "name": "property.html",
+    "url": "https://www.us.fo/tinglysing/",
+    "error": "HTTP Error 403: Forbidden",
+    "read_date": "2026-10-31",
+    "web_tool_read_success": true
+  },
+  {
+    "name": "companies.html",
+    "url": "https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog",
+    "final_url": "https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog",
+    "status": 200,
+    "bytes": 1201450,
+    "sha256": "852c34f2a4a7d8fc26b7ea444fc2a213bb3edc0f3983667ddc5b9a9741a48531",
+    "read_date": "2026-10-31",
+    "reader_sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c"
+  },
+  {
+    "name": "accounts.html",
+    "url": "https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin",
+    "final_url": "https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin",
+    "status": 200,
+    "bytes": 1999137,
+    "sha256": "541d3985f8ad609d7d19d69f447344dac8de7e1d58fbd850128ed2ec5985edd5",
+    "read_date": "2026-10-31",
+    "reader_sha256": "589c8213abf4e022e41ddff3f8f243cbc0cbb7b155e3eaa423e5e0072f000c77"
+  }
+]

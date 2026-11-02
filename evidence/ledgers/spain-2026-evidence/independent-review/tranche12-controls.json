@@ -1,0 +1,581 @@
+{
+  "count": 96,
+  "checks": [
+    {
+      "name": "employercomponent0",
+      "actual": "1203.88",
+      "expected": "1203.88",
+      "pass": true
+    },
+    {
+      "name": "employercomponent1",
+      "actual": "280.57",
+      "expected": "280.57",
+      "pass": true
+    },
+    {
+      "name": "employercomponent2",
+      "actual": "10.20",
+      "expected": "10.20",
+      "pass": true
+    },
+    {
+      "name": "employercomponent3",
+      "actual": "30.61",
+      "expected": "30.61",
+      "pass": true
+    },
+    {
+      "name": "employercomponent4",
+      "actual": "38.26",
+      "expected": "38.26",
+      "pass": true
+    },
+    {
+      "name": "employercomponent5",
+      "actual": "76.52",
+      "expected": "76.52",
+      "pass": true
+    },
+    {
+      "name": "employeecomponent0",
+      "actual": "239.76",
+      "expected": "239.76",
+      "pass": true
+    },
+    {
+      "name": "employeecomponent1",
+      "actual": "79.07",
+      "expected": "79.07",
+      "pass": true
+    },
+    {
+      "name": "employeecomponent2",
+      "actual": "5.10",
+      "expected": "5.10",
+      "pass": true
+    },
+    {
+      "name": "employeecomponent3",
+      "actual": "7.65",
+      "expected": "7.65",
+      "pass": true
+    },
+    {
+      "name": "employersolidarity",
+      "actual": "8.94",
+      "expected": "8.94",
+      "pass": true
+    },
+    {
+      "name": "employeesolidarity",
+      "actual": "1.79",
+      "expected": "1.79",
+      "pass": true
+    },
+    {
+      "name": "employertotal",
+      "actual": "1648.98",
+      "expected": "1648.98",
+      "pass": true
+    },
+    {
+      "name": "employeetotal",
+      "actual": "333.37",
+      "expected": "333.37",
+      "pass": true
+    },
+    {
+      "name": "employercost",
+      "actual": "7648.98",
+      "expected": "7648.98",
+      "pass": true
+    },
+    {
+      "name": "preIRPFcash",
+      "actual": "5666.63",
+      "expected": "5666.63",
+      "pass": true
+    },
+    {
+      "name": "parttimeCC",
+      "actual": "4792/5",
+      "expected": "4792/5",
+      "pass": true
+    },
+    {
+      "name": "parttimeAT",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "houseemployer0",
+      "actual": "183.14",
+      "expected": "183.14",
+      "pass": true
+    },
+    {
+      "name": "houseemployer1",
+      "actual": "14.55",
+      "expected": "14.55",
+      "pass": true
+    },
+    {
+      "name": "houseemployer2",
+      "actual": "10.67",
+      "expected": "10.67",
+      "pass": true
+    },
+    {
+      "name": "houseemployer3",
+      "actual": "0.39",
+      "expected": "0.39",
+      "pass": true
+    },
+    {
+      "name": "houseemployer4",
+      "actual": "7.28",
+      "expected": "7.28",
+      "pass": true
+    },
+    {
+      "name": "houseemployee0",
+      "actual": "45.59",
+      "expected": "45.59",
+      "pass": true
+    },
+    {
+      "name": "houseemployee1",
+      "actual": "15.04",
+      "expected": "15.04",
+      "pass": true
+    },
+    {
+      "name": "houseemployee2",
+      "actual": "1.46",
+      "expected": "1.46",
+      "pass": true
+    },
+    {
+      "name": "houseemployertotal",
+      "actual": "216.03",
+      "expected": "216.03",
+      "pass": true
+    },
+    {
+      "name": "houseemployeetotal",
+      "actual": "62.09",
+      "expected": "62.09",
+      "pass": true
+    },
+    {
+      "name": "houseremitted",
+      "actual": "278.12",
+      "expected": "278.12",
+      "pass": true
+    },
+    {
+      "name": "houseprecash",
+      "actual": "837.91",
+      "expected": "837.91",
+      "pass": true
+    },
+    {
+      "name": "SMIannual",
+      "actual": "17094",
+      "expected": "17094",
+      "pass": true
+    },
+    {
+      "name": "SMImonthlywithsixth",
+      "actual": "2849/2",
+      "expected": "2849/2",
+      "pass": true
+    },
+    {
+      "name": "CCgroup7table",
+      "actual": "7122/5",
+      "expected": "7122/5",
+      "pass": true
+    },
+    {
+      "name": "ATformulaexceedsCCtable",
+      "actual": "1/10",
+      "expected": "1/10",
+      "pass": true
+    },
+    {
+      "name": "RETAcomputable",
+      "actual": "10416",
+      "expected": "10416",
+      "pass": true
+    },
+    {
+      "name": "RETA180days",
+      "actual": "1736",
+      "expected": "1736",
+      "pass": true
+    },
+    {
+      "name": "not6assumedmonths",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "full365different12",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "RETACC",
+      "actual": "339.60",
+      "expected": "339.60",
+      "pass": true
+    },
+    {
+      "name": "RETAAT",
+      "actual": "15.60",
+      "expected": "15.60",
+      "pass": true
+    },
+    {
+      "name": "RETAcessation",
+      "actual": "10.80",
+      "expected": "10.80",
+      "pass": true
+    },
+    {
+      "name": "RETAtraining",
+      "actual": "1.20",
+      "expected": "1.20",
+      "pass": true
+    },
+    {
+      "name": "RETAMEI",
+      "actual": "10.80",
+      "expected": "10.80",
+      "pass": true
+    },
+    {
+      "name": "RETAtotal",
+      "actual": "378",
+      "expected": "378",
+      "pass": true
+    },
+    {
+      "name": "components315",
+      "actual": "63/2",
+      "expected": "63/2",
+      "pass": true
+    },
+    {
+      "name": "TGSS314not315",
+      "actual": "1/10",
+      "expected": "1/10",
+      "pass": true
+    },
+    {
+      "name": "published3months",
+      "actual": "6648/25",
+      "expected": "6648/25",
+      "pass": true
+    },
+    {
+      "name": "diagnosticMEI",
+      "actual": "8.56",
+      "expected": "8.56",
+      "pass": true
+    },
+    {
+      "name": "diagnostictotal",
+      "actual": "88.56",
+      "expected": "88.56",
+      "pass": true
+    },
+    {
+      "name": "diagnostic3months",
+      "actual": "265.68",
+      "expected": "265.68",
+      "pass": true
+    },
+    {
+      "name": "publishednotdoubleMEI",
+      "actual": "2216/25",
+      "expected": "2216/25",
+      "pass": true
+    },
+    {
+      "name": "3percent90days",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "89doesnot90",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "company3percent",
+      "actual": "9700",
+      "expected": "9700",
+      "pass": true
+    },
+    {
+      "name": "ordinary7percent",
+      "actual": "9300",
+      "expected": "9300",
+      "pass": true
+    },
+    {
+      "name": "averagewithinnotpermonth",
+      "actual": "1150",
+      "expected": "1150",
+      "pass": true
+    },
+    {
+      "name": "averagebelow",
+      "actual": "1100",
+      "expected": "1100",
+      "pass": true
+    },
+    {
+      "name": "signedmonthone",
+      "actual": "14379/100",
+      "expected": "14379/100",
+      "pass": true
+    },
+    {
+      "name": "signedmonthtwo",
+      "actual": "-5621/100",
+      "expected": "-5621/100",
+      "pass": true
+    },
+    {
+      "name": "signednet",
+      "actual": "4379/50",
+      "expected": "4379/50",
+      "pass": true
+    },
+    {
+      "name": "signedquota",
+      "actual": "27.59",
+      "expected": "27.59",
+      "pass": true
+    },
+    {
+      "name": "plurianonzero",
+      "actual": "33454/25",
+      "expected": "33454/25",
+      "pass": true
+    },
+    {
+      "name": "pluriRETAcap",
+      "actual": "500.0",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "plurinoexcess",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "ITnotcoveredreduction",
+      "actual": "9339/500",
+      "expected": "9339/500",
+      "pass": true
+    },
+    {
+      "name": "familyfirstbonus",
+      "actual": "134.56",
+      "expected": "134.56",
+      "pass": true
+    },
+    {
+      "name": "familylaterbonus",
+      "actual": "67.28",
+      "expected": "67.28",
+      "pass": true
+    },
+    {
+      "name": "ceuta75CConly",
+      "actual": "849/10",
+      "expected": "849/10",
+      "pass": true
+    },
+    {
+      "name": "agro2026rawfloorfixture",
+      "actual": "157949307/1000000",
+      "expected": "157949307/1000000",
+      "pass": true
+    },
+    {
+      "name": "agro2026floor",
+      "actual": "4486/25",
+      "expected": "4486/25",
+      "pass": true
+    },
+    {
+      "name": "agro2026middle",
+      "actual": "248.09",
+      "expected": "248.09",
+      "pass": true
+    },
+    {
+      "name": "agro2026cap",
+      "actual": "279",
+      "expected": "279",
+      "pass": true
+    },
+    {
+      "name": "agrodailyraw",
+      "actual": "9045321/1000000",
+      "expected": "9045321/1000000",
+      "pass": true
+    },
+    {
+      "name": "agrodailyfloor",
+      "actual": "204/25",
+      "expected": "204/25",
+      "pass": true
+    },
+    {
+      "name": "agrogroup1cap",
+      "actual": "279",
+      "expected": "279",
+      "pass": true
+    },
+    {
+      "name": "inactiveD",
+      "actual": "341/125",
+      "expected": "341/125",
+      "pass": true
+    },
+    {
+      "name": "inactivebase",
+      "actual": "404767/3125",
+      "expected": "404767/3125",
+      "pass": true
+    },
+    {
+      "name": "inactiveCCreduced",
+      "actual": "12.05",
+      "expected": "12.05",
+      "pass": true
+    },
+    {
+      "name": "inactiveMEIunreduced",
+      "actual": "1.17",
+      "expected": "1.17",
+      "pass": true
+    },
+    {
+      "name": "cessationindicator",
+      "actual": "700",
+      "expected": "700",
+      "pass": true
+    },
+    {
+      "name": "nofloor",
+      "actual": "560",
+      "expected": "560",
+      "pass": true
+    },
+    {
+      "name": "childfloor",
+      "actual": "749",
+      "expected": "749",
+      "pass": true
+    },
+    {
+      "name": "nocap",
+      "actual": "1225",
+      "expected": "1225",
+      "pass": true
+    },
+    {
+      "name": "onecap",
+      "actual": "1400",
+      "expected": "1400",
+      "pass": true
+    },
+    {
+      "name": "twocap",
+      "actual": "1575",
+      "expected": "1575",
+      "pass": true
+    },
+    {
+      "name": "cessationordinaryfloor",
+      "actual": "560",
+      "expected": "560",
+      "pass": true
+    },
+    {
+      "name": "lowbaseexception",
+      "actual": "490",
+      "expected": "490",
+      "pass": true
+    },
+    {
+      "name": "partialnoordinaryfloor",
+      "actual": "350",
+      "expected": "350",
+      "pass": true
+    },
+    {
+      "name": "pluriSMIequalityfails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "pluriSMIbelow",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "regularrefundexpense",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "regularrefundincome",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "interestannual",
+      "actual": "1625/4",
+      "expected": "1625/4",
+      "pass": true
+    },
+    {
+      "name": "interest73days",
+      "actual": "325/4",
+      "expected": "325/4",
+      "pass": true
+    },
+    {
+      "name": "nominal31May2026Sunday",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "name": "29May2026Friday",
+      "actual": "4",
+      "expected": "4",
+      "pass": true
+    }
+  ]
+}

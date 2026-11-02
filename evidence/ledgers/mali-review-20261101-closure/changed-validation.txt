@@ -1,0 +1,8 @@
+$ python3 scripts/validate-guides.py --changed-only --no-index-check
+exit_code: 0
+changed-only mode: validating 2 changed guide file(s)
+checked 1 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: skills/mali/ml-solidarity-contribution.md: ML SC also holds ml-payroll-social, with a different job
+
+validation passed (1 warning group(s))

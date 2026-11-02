@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "status": "FROZEN WRITER REPAIR CANDIDATE; independent bounded closure pending",
+  "active_files": [
+    {
+      "path": "skills/moldova/md-vat-refund.md",
+      "sha256": "33cad03c0ed10d7046cef011d1b6f4faf2d62ad6ded725fdbd62685c8b13e5c1"
+    },
+    {
+      "path": "skills/moldova/README.md",
+      "sha256": "031ad345438c79630fbc7a0d992b5f3f8334b80916f87a39e053e87a00230c37"
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.writer.json",
+      "sha256": "f81d5859d33c2c2f92c8f3f95e72d7102e39d4d82c772a41fdc37ae3db60c9f4"
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.md",
+      "sha256": "5714c5e8d25e684612580f0abcdb0f3713a7ac187a3b055479ab0068d1b003cf"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "sha256": "f92a738d049a812dcf010b7d8effe30090144ea9e14a58740bc722009f445b65"
+    }
+  ],
+  "source_rows": 185,
+  "original_rows_unchanged": 184,
+  "extra_standard_repair": "Six intake questions; no fact removed. Full repository notice with Guide terminology.",
+  "validation": "Corrected Guide zero errors/warnings;22examples pass;strictmetadataaudit11Guides pass;no source/otherGuide change.",
+  "preserved_initial_review_manifest": "original-input-manifest.json"
+}

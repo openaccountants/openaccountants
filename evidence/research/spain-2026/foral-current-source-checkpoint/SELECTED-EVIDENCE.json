@@ -1,0 +1,748 @@
+{
+  "created_at": "2026-10-28T00:05:36.839352+00:00",
+  "scope": "Source-phase findings and independently reviewed population/status correction. The positive surcharge method and Alava draft enactment remain unproved. Private manifests include explicitly omitted canonical snapshots.",
+  "verified_parent_manifest_entries": 64,
+  "files": [
+    {
+      "original_path": "browser-attempt.json",
+      "stored_path": "browser-attempt.json",
+      "original_bytes": 268,
+      "original_sha256": "3b718282e6e99102931420a40fa8e0b5bac023f54139d6dbfabbfe7287dc6119",
+      "stored_bytes": 268,
+      "stored_sha256": "3b718282e6e99102931420a40fa8e0b5bac023f54139d6dbfabbfe7287dc6119",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "checked-routes.json",
+      "stored_path": "checked-routes.json",
+      "original_bytes": 3921,
+      "original_sha256": "4b91d39dadf34237ae0fa019aaf419de0079546b65b070da646db946947b5689",
+      "stored_bytes": 3921,
+      "stored_sha256": "4b91d39dadf34237ae0fa019aaf419de0079546b65b070da646db946947b5689",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "controls.json",
+      "stored_path": "controls.json",
+      "original_bytes": 10039,
+      "original_sha256": "acee5b0227090b40b9dd1fa57f4aa472eea72bae3187308ad96f494c619bf282",
+      "stored_bytes": 10039,
+      "stored_sha256": "acee5b0227090b40b9dd1fa57f4aa472eea72bae3187308ad96f494c619bf282",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "draft-options.md",
+      "stored_path": "draft-options.md",
+      "original_bytes": 953,
+      "original_sha256": "6adf229d7e69260cc8c350bcd611bd98ab16a1dcbfd2e786b79a65d4eaa8438e",
+      "stored_bytes": 953,
+      "stored_sha256": "6adf229d7e69260cc8c350bcd611bd98ab16a1dcbfd2e786b79a65d4eaa8438e",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "frozen-manifest.json",
+      "stored_path": "frozen-manifest.json",
+      "original_bytes": 10952,
+      "original_sha256": "771b2e4813ac7ac45ec4924651eeabbdc0675bfa8a8cd776e0faf55720d1d99f",
+      "stored_bytes": 10952,
+      "stored_sha256": "771b2e4813ac7ac45ec4924651eeabbdc0675bfa8a8cd776e0faf55720d1d99f",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "preservation.json",
+      "stored_path": "preservation.json",
+      "original_bytes": 596,
+      "original_sha256": "969eee7d6c924aca11fe037edbed74afeadf68bcf764204c5b079db09a4fcdff",
+      "stored_bytes": 596,
+      "stored_sha256": "969eee7d6c924aca11fe037edbed74afeadf68bcf764204c5b079db09a4fcdff",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/README.md.diff",
+      "stored_path": "private-reservation-and-status-correction/README.md.diff.gz",
+      "original_bytes": 3874,
+      "original_sha256": "1d70b5f4ae6b1587220c941c99ab0c9c22c76b8788bcf80dad3bfe87fe888aa2",
+      "stored_bytes": 1332,
+      "stored_sha256": "15b6877a79808a2a9a441735a11ac5861d8b2816b2b828181bfb698506dd72bf",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/controls-before-absent-CTA-guard-correction.json",
+      "stored_path": "private-reservation-and-status-correction/controls-before-absent-CTA-guard-correction.json",
+      "original_bytes": 2969,
+      "original_sha256": "fdb4f3f1c02f5455a10b525c26f63a52a5ac7a7facfe33910127149c9ae9626f",
+      "stored_bytes": 2969,
+      "stored_sha256": "fdb4f3f1c02f5455a10b525c26f63a52a5ac7a7facfe33910127149c9ae9626f",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/controls.json",
+      "stored_path": "private-reservation-and-status-correction/controls.json",
+      "original_bytes": 3259,
+      "original_sha256": "bec151a411dd93bb6a3d615c2940419cf84e50647e2eb8e1c8e6d6202dbe42e3",
+      "stored_bytes": 3259,
+      "stored_sha256": "bec151a411dd93bb6a3d615c2940419cf84e50647e2eb8e1c8e6d6202dbe42e3",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/draft-options.md",
+      "stored_path": "private-reservation-and-status-correction/draft-options.md",
+      "original_bytes": 1779,
+      "original_sha256": "7757178998742d4585622224b39c31a85bf4fabcefd8ca8fd295ae754c58e645",
+      "stored_bytes": 1779,
+      "stored_sha256": "7757178998742d4585622224b39c31a85bf4fabcefd8ca8fd295ae754c58e645",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/es-foral-corporate-tax.md.diff",
+      "stored_path": "private-reservation-and-status-correction/es-foral-corporate-tax.md.diff.gz",
+      "original_bytes": 1981,
+      "original_sha256": "4de2c54137820e5007b87e02e79d188fddd8b82b48595f870ad29a3ef841a12a",
+      "stored_bytes": 796,
+      "stored_sha256": "ad68ef5518de81772a5b7d402297d11900adb89ed172265d754590e7a996ab4e",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/frozen-manifest.json",
+      "stored_path": "private-reservation-and-status-correction/frozen-manifest.json",
+      "original_bytes": 2704,
+      "original_sha256": "0ac3a1b9a2b7b25f07de3e6a01a30481e24888f38d2fdaabcb301a5b5c9042e5",
+      "stored_bytes": 2704,
+      "stored_sha256": "0ac3a1b9a2b7b25f07de3e6a01a30481e24888f38d2fdaabcb301a5b5c9042e5",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/oa-check-output.txt",
+      "stored_path": "private-reservation-and-status-correction/oa-check-output.txt.gz",
+      "original_bytes": 247,
+      "original_sha256": "5e0dc3805b98a78cfd951d7becd2b5d1deebfd04055eb34a50399ae1034cfab5",
+      "stored_bytes": 204,
+      "stored_sha256": "8b1d35c2ee6ea4f00f204c7fa74d0c41022f4e9b7d505f5eebf727b49da2e029",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/original-unit-dispositions.json",
+      "stored_path": "private-reservation-and-status-correction/original-unit-dispositions.json",
+      "original_bytes": 23922,
+      "original_sha256": "19f54a5964f194b17c47fecdaa40289b165893d718b978618396c2ee7b9f4fd0",
+      "stored_bytes": 23922,
+      "stored_sha256": "19f54a5964f194b17c47fecdaa40289b165893d718b978618396c2ee7b9f4fd0",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/report.md",
+      "stored_path": "private-reservation-and-status-correction/report.md",
+      "original_bytes": 5073,
+      "original_sha256": "10670946b03d7125208c211abd2d50de4518fc4374eb987dcd7d37b5d88a1329",
+      "stored_bytes": 5073,
+      "stored_sha256": "10670946b03d7125208c211abd2d50de4518fc4374eb987dcd7d37b5d88a1329",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/root-independent/alava-law-operative-excerpts.txt",
+      "stored_path": "private-reservation-and-status-correction/root-independent/alava-law-operative-excerpts.txt.gz",
+      "original_bytes": 2093,
+      "original_sha256": "981776f2edf4532ec5adc998be146027face5014fdf7c420be2a4e5da95f3986",
+      "stored_bytes": 598,
+      "stored_sha256": "b2875470a817f1d48875dc19cfcdb0d3cf92b53a2ead11d9246dca33d15e5f89",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/root-independent/bizkaia-law-operative-excerpts.txt",
+      "stored_path": "private-reservation-and-status-correction/root-independent/bizkaia-law-operative-excerpts.txt.gz",
+      "original_bytes": 7386,
+      "original_sha256": "ad812a5251c1ad3e369f7f715e108e819270ea6ab98b1d1ccd7e485d4bd2f2c7",
+      "stored_bytes": 2251,
+      "stored_sha256": "ae98f50d1450eb2b635cb9ac314fefd9e96383fa3f164ea7536544ea979f9aff",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/root-independent/checks.json",
+      "stored_path": "private-reservation-and-status-correction/root-independent/checks.json",
+      "original_bytes": 2557,
+      "original_sha256": "2829a2461e92168cc58f44a5cd082604cdc2d2b43cf4e6183f79f590361e8c1a",
+      "stored_bytes": 2557,
+      "stored_sha256": "2829a2461e92168cc58f44a5cd082604cdc2d2b43cf4e6183f79f590361e8c1a",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/root-independent/gipuzkoa-law-operative-excerpts.txt",
+      "stored_path": "private-reservation-and-status-correction/root-independent/gipuzkoa-law-operative-excerpts.txt.gz",
+      "original_bytes": 1885,
+      "original_sha256": "371e658e2afe467fece5f7a98a1f361ab7210b78a0bf355adf6e167389f0e589",
+      "stored_bytes": 531,
+      "stored_sha256": "8b5dede4ba5e3d54f5ee69dd9aab39c1d09024dfba11c5bead726ee56a4e57b1",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/root-independent/report.md",
+      "stored_path": "private-reservation-and-status-correction/root-independent/report.md",
+      "original_bytes": 1629,
+      "original_sha256": "034862830c22f4d6d2c584bb1d1dfda060cd49b4f01632544de6baee8a1d6fff",
+      "stored_bytes": 1629,
+      "stored_sha256": "034862830c22f4d6d2c584bb1d1dfda060cd49b4f01632544de6baee8a1d6fff",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "private-reservation-and-status-correction/source-read-receipts.json",
+      "stored_path": "private-reservation-and-status-correction/source-read-receipts.json",
+      "original_bytes": 3759,
+      "original_sha256": "940b9f2557c14fe3a44e3965c4f8d3d5932a3fc014c3c029d780491615a26186",
+      "stored_bytes": 3759,
+      "stored_sha256": "940b9f2557c14fe3a44e3965c4f8d3d5932a3fc014c3c029d780491615a26186",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "report.md",
+      "stored_path": "report.md",
+      "original_bytes": 11897,
+      "original_sha256": "706c9af6696382fd76a3327a9a2df14df3156e6edef9cca90ae0d02f9bef2053",
+      "stored_bytes": 11897,
+      "stored_sha256": "706c9af6696382fd76a3327a9a2df14df3156e6edef9cca90ae0d02f9bef2053",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "source-map.md",
+      "stored_path": "source-map.md",
+      "original_bytes": 9619,
+      "original_sha256": "53797206a024334b9b6ef9d7297518cf1df26b99c032e47ed2d813e954eeacc5",
+      "stored_bytes": 9619,
+      "stored_sha256": "53797206a024334b9b6ef9d7297518cf1df26b99c032e47ed2d813e954eeacc5",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "source-read-locators.json",
+      "stored_path": "source-read-locators.json",
+      "original_bytes": 2231,
+      "original_sha256": "31d63332eba3e4fcf9f411df42ae5cff73ae90a7ca7e78182bf65c31c6a8f161",
+      "stored_bytes": 2231,
+      "stored_sha256": "31d63332eba3e4fcf9f411df42ae5cff73ae90a7ca7e78182bf65c31c6a8f161",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "source-receipts.json",
+      "stored_path": "source-receipts.json",
+      "original_bytes": 14110,
+      "original_sha256": "099998b94d4e4de9015a8952bcae73d78a4dbc70d5d6344cfe31ba6dab1fcde3",
+      "stored_bytes": 14110,
+      "stored_sha256": "099998b94d4e4de9015a8952bcae73d78a4dbc70d5d6344cfe31ba6dab1fcde3",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "sources/alava-approved-register.html",
+      "stored_path": "sources/alava-approved-register.html.gz",
+      "original_bytes": 78782,
+      "original_sha256": "2e089dde085513c2238b176fea18d77dec34ec9e9ed70512f83ab5537aa94356",
+      "stored_bytes": 15237,
+      "stored_sha256": "c8f3b5851e4503ebe94797509e90b04cd87c425eb18ff15ba68c76f68c3354c4",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-consultations.html",
+      "stored_path": "sources/alava-consultations.html.gz",
+      "original_bytes": 22816,
+      "original_sha256": "61e6df98c156399d2a58c6a653b330b24950cfcf1ce653206d2dc56d0ca071e2",
+      "stored_bytes": 7752,
+      "stored_sha256": "8fe6cf94f23eff4f7a3f50718bc3eba2833c5e2ef44d9fb2e85d0b9201520e69",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-consultations.txt",
+      "stored_path": "sources/alava-consultations.txt.gz",
+      "original_bytes": 12093,
+      "original_sha256": "417b6783004bed1f0d7ad77fd7ed140f59cc41ee8d63557a70d67e60aa1579fe",
+      "stored_bytes": 4033,
+      "stored_sha256": "f1cf236e66c3ee9af2e01758882a0fb8e96cdf3f7d13fcee0b9c962a690c7156",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-consultative-actual-register.html",
+      "stored_path": "sources/alava-consultative-actual-register.html.gz",
+      "original_bytes": 131507,
+      "original_sha256": "2196cd19618e6712ff217e56485ae0440cf6e8db40c29798b2472be294b5b39b",
+      "stored_bytes": 27141,
+      "stored_sha256": "daebc067ecd9897671b76780b1ba145bbb3053ddce8210b4c867ed1e57214d55",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-consultative-opinions.html",
+      "stored_path": "sources/alava-consultative-opinions.html.gz",
+      "original_bytes": 81433,
+      "original_sha256": "6f67d16846b3c5af20ce66dab97001848ef1ce0b3a9b18c306ad27ee38fb31a0",
+      "stored_bytes": 16155,
+      "stored_sha256": "0a44b6167e161431b78b017d68a9178d3b243e460ddc26151caf199c8833a007",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-consultative-opinions.txt",
+      "stored_path": "sources/alava-consultative-opinions.txt.gz",
+      "original_bytes": 36673,
+      "original_sha256": "d827a4359cc92ba0c7d03928e10c7cc98766c1a30fd2826a66d716cdc104c3f1",
+      "stored_bytes": 9336,
+      "stored_sha256": "dd90925124cd4e9ecb9c03596e028eb452709286c3f3885977f69b270926e87c",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-draft26DF45.docx",
+      "stored_path": "sources/alava-draft26DF45.docx.gz",
+      "original_bytes": 106074,
+      "original_sha256": "b24d07b9e5eb5cf5191e60f5f73e6bfd00778590663015861a733b5977f4819b",
+      "stored_bytes": 85746,
+      "stored_sha256": "a5e632c5c110034432048acd9836ebaff1e3bee14b06622ed9dd6b3deb6aa507",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-draft26DF45.txt",
+      "stored_path": "sources/alava-draft26DF45.txt.gz",
+      "original_bytes": 56405,
+      "original_sha256": "a84f78766546d705f3c0cef4f71e5e8e75f250760deed04882e85e53ee58bac7",
+      "stored_bytes": 14277,
+      "stored_sha256": "36f81f4e7866fa3415a36f566101c133324d915540192ae7cbd464b407dcd065",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-hearing-register.html",
+      "stored_path": "sources/alava-hearing-register.html.gz",
+      "original_bytes": 123575,
+      "original_sha256": "b602dd06f01d9329f0e6e2900f718b679e2cd36b308be1b039100a7561e2ca0e",
+      "stored_bytes": 20096,
+      "stored_sha256": "11796b84e10eaacb377b1c77df9da6e095c5c6b613c6d5b9170d5c47271b43b6",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-hearing-register.txt",
+      "stored_path": "sources/alava-hearing-register.txt.gz",
+      "original_bytes": 45384,
+      "original_sha256": "30320b7356d1878ac01cd8eb436f4da009a7e0f4d3c0e35119a76887c3d66876",
+      "stored_bytes": 10571,
+      "stored_sha256": "168d4d42f85aa27a91f8e74742eb034484d6e98b54ec75663215ca38a803304f",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-law-operative-excerpts.txt",
+      "stored_path": "sources/alava-law-operative-excerpts.txt.gz",
+      "original_bytes": 6585,
+      "original_sha256": "84804ae9fc7c5220482db70d0c194e3981d8c482f65a429957fafcf48d5b4033",
+      "stored_bytes": 2095,
+      "stored_sha256": "107e3850cb7477d75f5fecc30dadde9d8be63d8e4f684c2b374800d1aebb20b5",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-law.pdf",
+      "stored_path": "sources/alava-law.pdf.gz",
+      "original_bytes": 1609894,
+      "original_sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+      "stored_bytes": 1304290,
+      "stored_sha256": "1fd222ab0782bd9139400cb04ace86ddd86ba9d07e00e6e4d1565695f5a05b39",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-law.txt",
+      "stored_path": "sources/alava-law.txt.gz",
+      "original_bytes": 808696,
+      "original_sha256": "ad79b86e7b58584c08f12ad780f116d37fda69e17f69b997a9e62151f73941ed",
+      "stored_bytes": 186505,
+      "stored_sha256": "e52bf2a784e016ca265012bce9237c37b0bd85e787b050b824bd7a6b673dfc13",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-normative-index.html",
+      "stored_path": "sources/alava-normative-index.html.gz",
+      "original_bytes": 347462,
+      "original_sha256": "16c9730c44b069429fe888a819cdde6906cdb3db2ec003552fbd77b98deaa74d",
+      "stored_bytes": 45559,
+      "stored_sha256": "7747fcc2c43c12fc6a60acf5f9f815fdef0c4dbdc4df8b28c42f68daa78b68c6",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-normative-index.txt",
+      "stored_path": "sources/alava-normative-index.txt.gz",
+      "original_bytes": 242582,
+      "original_sha256": "817ec56668e8ce595acb5d7be8cbbc180a79fb659f0fe7f0795796ee541eaab1",
+      "stored_bytes": 30891,
+      "stored_sha256": "683ed495bcbb70e781216bf642db21614650e1672b89023de8c682fc59b2ea7d",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-extraordinary.html",
+      "stored_path": "sources/alava-query-extraordinary.html.gz",
+      "original_bytes": 192893,
+      "original_sha256": "6d84c92c3f16213a00642b8a27ecbb1df23a3e7355e5b58514f6d915c72dce5f",
+      "stored_bytes": 26307,
+      "stored_sha256": "9559aa5baba4b3734305e08f9a0a9824693dfe84f4ba529f92b9341b15634efb",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-extraordinary.txt",
+      "stored_path": "sources/alava-query-extraordinary.txt.gz",
+      "original_bytes": 23359,
+      "original_sha256": "1adf5d0ae437d07c19e76ae37c81ecd2e6cf747244435832e7d1789f01827ec7",
+      "stored_bytes": 4113,
+      "stored_sha256": "33b7043951fe1760f71fd037f3c04c42189f5cb6a5d71013fadc920a3997dee6",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-phrase.html",
+      "stored_path": "sources/alava-query-phrase.html.gz",
+      "original_bytes": 18217,
+      "original_sha256": "db023288365894e27f5e24f4f9b324daa128644287d753565a02768a31e7b4d0",
+      "stored_bytes": 6233,
+      "stored_sha256": "45fbd99293ff8d69d9500076c59e9ae0d7813a1c483dfabea1e1840bd03cadf0",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-phrase.txt",
+      "stored_path": "sources/alava-query-phrase.txt.gz",
+      "original_bytes": 454,
+      "original_sha256": "0c14f585f68c80d2d8509a14abdd0baba7ace524a1bde1fcad29aee98b1bd2a6",
+      "stored_bytes": 264,
+      "stored_sha256": "6bf26239ac838bbd8e50115adcbccad94852cc9510af6366c2a5813a1b329dec",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-regulation.html",
+      "stored_path": "sources/alava-query-regulation.html.gz",
+      "original_bytes": 18193,
+      "original_sha256": "f63f41194e24c0ddb4730525f76ebf36f6c12b3d04ceb6b35e0f0a1a336ea50c",
+      "stored_bytes": 6219,
+      "stored_sha256": "b4d6c5fc91ae44e883b4bf3295e5da1fc074fecee258b4284319729d0436cbd1",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-query-regulation.txt",
+      "stored_path": "sources/alava-query-regulation.txt.gz",
+      "original_bytes": 454,
+      "original_sha256": "0c14f585f68c80d2d8509a14abdd0baba7ace524a1bde1fcad29aee98b1bd2a6",
+      "stored_bytes": 264,
+      "stored_sha256": "6bf26239ac838bbd8e50115adcbccad94852cc9510af6366c2a5813a1b329dec",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-reg-operative-excerpts.txt",
+      "stored_path": "sources/alava-reg-operative-excerpts.txt.gz",
+      "original_bytes": 25543,
+      "original_sha256": "a070443ca719490933041aa73eb0daae02d7d62ccfa365d0b0ffb49b68899260",
+      "stored_bytes": 7028,
+      "stored_sha256": "e5d7e9b31bd301fed924ba4096eabc2f8c6d07447e66c77d4d2304eeccb6b8d5",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-reg.pdf",
+      "stored_path": "sources/alava-reg.pdf.gz",
+      "original_bytes": 533045,
+      "original_sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09",
+      "stored_bytes": 431446,
+      "stored_sha256": "a5b6e4823ed2e1fd143bb28da7da1b4922b51a2f74249ae039282c8701e49340",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-reg.txt",
+      "stored_path": "sources/alava-reg.txt.gz",
+      "original_bytes": 216833,
+      "original_sha256": "54eb4f08bd9a8104d735193d29c566e179fd0907212cbe9044e5c96b4693232b",
+      "stored_bytes": 52699,
+      "stored_sha256": "3006c26f64038ab1cc7dc6e3ca7d61366a59cca8333a1c3326da83831b3bb925",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-regulatory-hearing.html",
+      "stored_path": "sources/alava-regulatory-hearing.html.gz",
+      "original_bytes": 982539,
+      "original_sha256": "7cd787c624d975830ba6e83e192f117cddcbcd98b1c0295941979030bd0a0403",
+      "stored_bytes": 82694,
+      "stored_sha256": "62620203b1505f7718ee2d30a2779885feaf5ec12ee07be38ac6acd880cdc461",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/alava-regulatory-hearing.txt",
+      "stored_path": "sources/alava-regulatory-hearing.txt.gz",
+      "original_bytes": 709818,
+      "original_sha256": "afe397eb759ec3924fbdf2eaea368cab09eba24e2a23dc905f1959cf23b2d9b9",
+      "stored_bytes": 61764,
+      "stored_sha256": "fcf992bc32eab065db2fb3c5dec5e2283283ae6282eb55788ddbd2f02f3c27c4",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/basque-bulletin-sept2025.pdf",
+      "stored_path": "sources/basque-bulletin-sept2025.pdf.gz",
+      "original_bytes": 965509,
+      "original_sha256": "9a945ba60d6a674373de80140b674dc9d04cf0ba2d912da0dd78c221fd9cace5",
+      "stored_bytes": 924617,
+      "stored_sha256": "4ae52b3e90546d91fb97e613495e78fb8c2b8581a6b13d152bc045dfc16c807a",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/basque-bulletin-sept2025.txt",
+      "stored_path": "sources/basque-bulletin-sept2025.txt.gz",
+      "original_bytes": 63336,
+      "original_sha256": "77704af82f558f170c73a8065ae2ace73f4def765d63abe75c78bccb700c4a01",
+      "stored_bytes": 19870,
+      "stored_sha256": "f5ada918a8f5d75383a2452051f566f26cacfb4fa9c2f39592ff477012d870da",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-NF2-2025-enacted-operative-excerpts.txt",
+      "stored_path": "sources/bizkaia-NF2-2025-enacted-operative-excerpts.txt.gz",
+      "original_bytes": 7830,
+      "original_sha256": "25b455b5a9966a56328c7046a71927304234764ad075ef3382a0e026866d21ed",
+      "stored_bytes": 2512,
+      "stored_sha256": "c845a99ab518aa738026bbcc8a25e262e609c2c56db6c51bbcc65a4bfc2aa660",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-NF2-2025-enacted.pdf",
+      "stored_path": "sources/bizkaia-NF2-2025-enacted.pdf.gz",
+      "original_bytes": 2786018,
+      "original_sha256": "66ae81b5fa19bf9be496d10f20160c61e7a7231b3d873b7daba55e817bf13a8b",
+      "stored_bytes": 475952,
+      "stored_sha256": "69a7c66555e428b0d3204fc60077a6dbb47f38d0b9c7d6ea3c0bc8873623e6bd",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-NF2-2025-enacted.txt",
+      "stored_path": "sources/bizkaia-NF2-2025-enacted.txt.gz",
+      "original_bytes": 274215,
+      "original_sha256": "2c94ed1f5c93ca18d7409b48d80af4658f1e662c26c1cd836464da4251e96d42",
+      "stored_bytes": 65741,
+      "stored_sha256": "dbce87621fa1e2ff7c13c2653c731d677ea2dc42fe584a1836850da35f5fed95",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-all-faq-index.html",
+      "stored_path": "sources/bizkaia-all-faq-index.html.gz",
+      "original_bytes": 758774,
+      "original_sha256": "6865bcf1d2ed65c2a5beca0ce9aeabdc7e7e5ee5c84b0bb1f0a4e06bae22a651",
+      "stored_bytes": 150620,
+      "stored_sha256": "303d68d54476a2b4f90447e127ce50b450c1053065be2638424a43ae42108b2b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-all-faq-index.txt",
+      "stored_path": "sources/bizkaia-all-faq-index.txt.gz",
+      "original_bytes": 506440,
+      "original_sha256": "ef6d5d1d804e83d6849df65424bb6639323f6515499f43affec274ebc417762b",
+      "stored_bytes": 130659,
+      "stored_sha256": "778ae113d62deb5237d8cbfe0eee55206188ec39392aa1f04eeb95416ff22773",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-all-faq-links.json",
+      "stored_path": "sources/bizkaia-all-faq-links.json",
+      "original_bytes": 712081,
+      "original_sha256": "06a2980d42a9d45e4b66edb3bf8056dc67f43df295cf8ba197a9a8f1478d9543",
+      "stored_bytes": 712081,
+      "stored_sha256": "06a2980d42a9d45e4b66edb3bf8056dc67f43df295cf8ba197a9a8f1478d9543",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "sources/bizkaia-consultation-search.html",
+      "stored_path": "sources/bizkaia-consultation-search.html.gz",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-current-corporate-authority-index.html",
+      "stored_path": "sources/bizkaia-current-corporate-authority-index.html.gz",
+      "original_bytes": 254508,
+      "original_sha256": "666b30f03801d4b99fbab29981dd271395a16106c5b72e28f3cc9e637a618bda",
+      "stored_bytes": 43752,
+      "stored_sha256": "24e328b02ff4f43477eebb4d5891add276909123117e099b95586c3744cc6c9c",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-law-operative-excerpts.txt",
+      "stored_path": "sources/bizkaia-law-operative-excerpts.txt.gz",
+      "original_bytes": 10657,
+      "original_sha256": "e3ac47c703ed470e1fef71fa5a80b2767824a083653a152b38c561552477350e",
+      "stored_bytes": 3241,
+      "stored_sha256": "712e00672149998a1e907961fa96570839b9c404322df9ea7693d3a71de268c8",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-law.pdf",
+      "stored_path": "sources/bizkaia-law.pdf.gz",
+      "original_bytes": 1322692,
+      "original_sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+      "stored_bytes": 1235285,
+      "stored_sha256": "b20b7729bd52672006b79e35255793aa5a52204d4a71e8401209c45fd5cbb835",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-law.txt",
+      "stored_path": "sources/bizkaia-law.txt.gz",
+      "original_bytes": 849293,
+      "original_sha256": "6204520eb7fd0d6ea0ac998d622cfee6dc5e84256c13cb39f5f89c3d15a60c3f",
+      "stored_bytes": 194826,
+      "stored_sha256": "e1f187008182423f34bf96d3d4895763f85edec1ebe4a78cd09a9b8cfe51b380",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-reg-operative-excerpts.txt",
+      "stored_path": "sources/bizkaia-reg-operative-excerpts.txt.gz",
+      "original_bytes": 11704,
+      "original_sha256": "34c4ec4ce9471111e3153f513f1d3f9c3442faf0100621e23f21c8a9cf3c3d1a",
+      "stored_bytes": 3551,
+      "stored_sha256": "1ec73a817aca7f9e52cffd02ebcd21f7a413214ee87257f9de831f8093b1b696",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-reg.pdf",
+      "stored_path": "sources/bizkaia-reg.pdf.gz",
+      "original_bytes": 460049,
+      "original_sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339",
+      "stored_bytes": 432261,
+      "stored_sha256": "6e55866a0cdd7a807dc935da7655319ba9cd9a07359e92498e3c62b22a102787",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/bizkaia-reg.txt",
+      "stored_path": "sources/bizkaia-reg.txt.gz",
+      "original_bytes": 277048,
+      "original_sha256": "5c624a9c720b6be7b2e1a7b22fccc95d6bcc7ba46f14e4c7ce212f578ae32f6d",
+      "stored_bytes": 65965,
+      "stored_sha256": "2b77dd7936dba13dc7890b52c543efb97713ce36e9829382bbcbbe5b8c4a7d4b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-law-operative-excerpts.txt",
+      "stored_path": "sources/gipuzkoa-law-operative-excerpts.txt.gz",
+      "original_bytes": 17135,
+      "original_sha256": "cad22a8ca0b765d0a2061dbe9100a6438ed52dd1d098f6be602168c1e34d3ad5",
+      "stored_bytes": 4604,
+      "stored_sha256": "6c42a19574f54d2ce7592a8f516051a7947aee802bb57602896e4e5c25338a92",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-law.pdf",
+      "stored_path": "sources/gipuzkoa-law.pdf.gz",
+      "original_bytes": 2587573,
+      "original_sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+      "stored_bytes": 2265094,
+      "stored_sha256": "28579c2b8b841a76d6fdf43cabe12b187ddc52037d074f1ca81c0f1cd0fe26cf",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-law.txt",
+      "stored_path": "sources/gipuzkoa-law.txt.gz",
+      "original_bytes": 1103161,
+      "original_sha256": "beba71ce60a185d7ce1f78177a56e333e52662fb0245cc4da1b9674a1227f476",
+      "stored_bytes": 227101,
+      "stored_sha256": "95288e7f7f4626406b97f7ea266e1bc9b21f4ad37dd7a82b96729ba645a29993",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-reg-operative-excerpts.txt",
+      "stored_path": "sources/gipuzkoa-reg-operative-excerpts.txt.gz",
+      "original_bytes": 7640,
+      "original_sha256": "c8a4218c399e249dc7b9dd3e860d6b7b3a506f5f978c6e4d753d59d556206c89",
+      "stored_bytes": 2442,
+      "stored_sha256": "ea26ab1c78dc0f59fd0f8eff55ab9a44196233ca9894399ae3863444cb83bbb9",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-reg.pdf",
+      "stored_path": "sources/gipuzkoa-reg.pdf.gz",
+      "original_bytes": 1066738,
+      "original_sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c",
+      "stored_bytes": 950557,
+      "stored_sha256": "49bc5020f8d92080f5772a58ebe303b28ca7c6f1f4bbe4e8388d794ce434ed3a",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/gipuzkoa-reg.txt",
+      "stored_path": "sources/gipuzkoa-reg.txt.gz",
+      "original_bytes": 336871,
+      "original_sha256": "00543eae5aa0aa7380d05fa6b3d40439c1208d172cc219dd132e8b297b4dd889",
+      "stored_bytes": 74732,
+      "stored_sha256": "68f904f8b5839642a54ecdab0561e9609429ca6624ac6a0cae8de6261b1a0ce5",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/zergak-current-pdf.pdf",
+      "stored_path": "sources/zergak-current-pdf.pdf.gz",
+      "original_bytes": 2534583,
+      "original_sha256": "b156b0681c1fc92382f876de7fb0a7e2a640a91a57c406ee45a4a983fbd5b22f",
+      "stored_bytes": 2325229,
+      "stored_sha256": "f84a7d10f50b98d9f419eb3c9fa6f160a7e390fa87d69bf187ac61c8d5b35198",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/zergak-current-pdf.txt",
+      "stored_path": "sources/zergak-current-pdf.txt.gz",
+      "original_bytes": 547261,
+      "original_sha256": "681886cc1f849830dac925811c5ea3c96fd78ec29786758635c5e055c0a210cb",
+      "stored_bytes": 152246,
+      "stored_sha256": "2c24139ea89c81d171ec04b4ca121832efb136b918bbe8e61419cd42203666e2",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "surgical.diff",
+      "stored_path": "surgical.diff.gz",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "lossless_gzip": true
+    }
+  ],
+  "omitted": [
+    {
+      "path": "before-es-foral-corporate-tax.md",
+      "bytes": 97950,
+      "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "before-es-foral-non-resident-tax.md",
+      "bytes": 67660,
+      "sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "private-reservation-and-status-correction/README.md",
+      "bytes": 8914,
+      "sha256": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "private-reservation-and-status-correction/before-README.md",
+      "bytes": 8688,
+      "sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "private-reservation-and-status-correction/before-es-foral-corporate-tax.md",
+      "bytes": 97950,
+      "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "private-reservation-and-status-correction/es-foral-corporate-tax.md",
+      "bytes": 98029,
+      "sha256": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "private-reservation-and-status-correction/reproduce-controls.py",
+      "bytes": 7852,
+      "sha256": "671d62743465713183aa92713ffe8141a74210c970605ebda711550387e61087",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "reproduce-alava-search.py",
+      "bytes": 1856,
+      "sha256": "333e626c334e49c95ba47a04db0db75e8451f228db612837e9ee6de197f47aa5",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    },
+    {
+      "path": "reproduce-controls-and-dispositions.py",
+      "bytes": 8925,
+      "sha256": "bc026e603c9c9127872b3eba45290d4aa7301d9511a5934e2b27f7666454ed6a",
+      "reason": "Canonical snapshot/candidate or helper; private manifests have wider scope"
+    }
+  ],
+  "packaging_note": "Raw originals unchanged. Binary primary bodies and artifacts flagged for blank-at-EOF are stored as verified lossless gzip to pass full staged whitespace checks."
+}

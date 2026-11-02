@@ -1,0 +1,146 @@
+{
+  "created_utc": "2026-10-28T02:03:18.456737+00:00",
+  "scope": "frozenfinite15regionreview;candidateclosurepending",
+  "files": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/actual-source-read-ledger.json",
+      "bytes": 227115,
+      "sha256": "aa880d7f0f57554b4a0e4dd1bd0138680d90c951e52c89c7e2e302935a16152d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/baseline.json",
+      "bytes": 298,
+      "sha256": "975bb2c88c5575719e72000c8f2086380df0ef1bf4ad68565ef50b2324151ad0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/control-specs-working.json",
+      "bytes": 6770,
+      "sha256": "d5330bbf2b2ea07a1778ee1b5b911b07312a36abd5074a9245911243e507ee0b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/core-primary-read-scopes.json",
+      "bytes": 15238,
+      "sha256": "7ecf6e6366a1a38777886ba0e6208b11d4645de7e6bb6f92fef40e6aee6dbc6b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/external-read-source-manifest.json",
+      "bytes": 119641,
+      "sha256": "ab6dfb332ceb5bcec0515601af2813f6a476a4e0e495643070815d7fe70ee07b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/income-target-frozen.md",
+      "bytes": 85291,
+      "sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/independent-statutory-scales.json",
+      "bytes": 2503,
+      "sha256": "861eaa0087e41cc0db89f5196a23c53695b224d5428c74da927cccd43eed101a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/method-coverage-initial-working-history.json",
+      "bytes": 678102,
+      "sha256": "3111844c3ffccfedd99b0ac7e8ee7065ddf05002c95a7d9151f97d2b4308c9af"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/method-coverage.json",
+      "bytes": 684483,
+      "sha256": "f7d3c2e4c02475e8f8c8e7c79f3c37c7db91e07053ce1552e411bd79a42e9647"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/ordinary-boundary-controls.json",
+      "bytes": 18013,
+      "sha256": "5ffda8bf57c2ef8cee0c45b25ea1d22bb4f47f908b583fc1deceb85820aed7c2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/ordinary-reservation-ledger.json",
+      "bytes": 35789,
+      "sha256": "3b5955523ec25d3e78487dc5ad83428b8bc32530dde23f42aa5c83e56e17901d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/origin-main-preservation-source-units.json",
+      "bytes": 116934,
+      "sha256": "8c7d2dac3b764cdff7c9e54b647099f4b341ff5f82e2a83f0bd2a67f167b64a4"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/read-agency.py",
+      "bytes": 389,
+      "sha256": "9280354bbd75f7abac94f706e030232270dc6663fc4720672545c318d991ab5b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/read-source.py",
+      "bytes": 1281,
+      "sha256": "c626403f3221c30bac8ceb9088336dcdd9fc83640bc15b2368d4bd6a46d03786"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/read-target.py",
+      "bytes": 617,
+      "sha256": "e5abc38e9b6870f33ec8956700d22389ac03a55c2032ca58ae706e7296faeee9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/regional-source-inventory.json",
+      "bytes": 108427,
+      "sha256": "049fdba57d988ea28dad07dd6315ecee4cabd8a6d3148ba927b453247409b307"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/report.md",
+      "bytes": 15230,
+      "sha256": "e083a76e53a9e4253f1cee560300ba30f04da5c445a89bf0ef4e60ab1c771388"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/review-failures-and-limits.json",
+      "bytes": 2024,
+      "sha256": "c895f128d2ae189b11e0841cdca2a09b3d7b00dae949a73bd38422f374ba46a3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/scale-boundary-controls.json",
+      "bytes": 41563,
+      "sha256": "af4050062257d112684ce34e72939790511dcd2b6e22a6edff21ee6443576530"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/source-aliases.json",
+      "bytes": 1753,
+      "sha256": "216351189127dd2cbc290120812c6b84750034bd7fff95fc1cd91c8adc8f50e0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/sources-pending-read.json",
+      "bytes": 18467,
+      "sha256": "da10db0857e3348cfbf3de0737392c9da2a91b249e8860c1459e354fab303bf8"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/target-frozen.md",
+      "bytes": 476835,
+      "sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/target-origin-main.md",
+      "bytes": 22699,
+      "sha256": "c0cf916416d60558fbd6e021fa36fb9286713b1ad4e7cdcd167d84041b529ea7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/target-reads.json",
+      "bytes": 14908,
+      "sha256": "5dbf63267a628b32fcad1764eb2b70adf8b99f2d6bff2d48ab29a3a6ae2c6c7d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/validation-results.json",
+      "bytes": 933,
+      "sha256": "fa2421934253c9c058bac38658cb95f4de55d186cc10090285ebd6a650aba776"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/verify-controls.py",
+      "bytes": 11045,
+      "sha256": "1c6b129e7dc0531096088ddb9920570ac041c29e4f140f77f114585e3495af9d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/working-findings.json",
+      "bytes": 2806,
+      "sha256": "5980eb61728194b3e2f2aa1408918506bd8298a250ac80e5b239367e2c8f6e45"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/write-report.py",
+      "bytes": 13182,
+      "sha256": "0627e234fb1978311af183e988803a4b18d296f45f47da39eeb832f88212d92c"
+    }
+  ]
+}

@@ -1,0 +1,5777 @@
+{
+  "source_checks": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.body",
+      "sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt",
+      "sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e331990af8b3d58734b5.body",
+      "sha256": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e331990af8b3d58734b5.reader.txt",
+      "sha256": "39898c8ae5860f3678c70bcfacbb39f9559ffea6b23cd570eca97551417d5818",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+      "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+      "sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+      "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+      "sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+      "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+      "sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+      "sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+      "sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+      "sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+      "sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+      "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+      "sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+      "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+      "sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+      "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+      "sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+      "sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+      "sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf9f74be329b59ad803f.body",
+      "sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf9f74be329b59ad803f.pdf.reader.txt",
+      "sha256": "92829f16d97665dad4622724c2f9eb71f42b39321d6f1c82cc349bc048b5b6fa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/be2de358afb4db73b871.body",
+      "sha256": "4d3d1a5642ed8158557678a510eaf87978533ef8ce9724f6551f9e04a0259964",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/be2de358afb4db73b871.reader.txt",
+      "sha256": "985a3f38606b514a25f341013aac25bdc8ca63f2e7a06b46f32d5c47a3917d6a",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf768d085feeca77a7b1.body",
+      "sha256": "341362ea85fe1dc809b49d90036d6672777e24330ecfb5b0111888104a267b6a",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf768d085feeca77a7b1.reader.txt",
+      "sha256": "ed6cf86b55dd8f5ce08813b1e40817c4b33f21f2d21318fa5658dd5a1bf87860",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/130849d5421526c58c54.body",
+      "sha256": "a4d962e0b09f77815f1f6c00b7f6e4fcb4559ec823d79f9a47dee1175afbad92",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/130849d5421526c58c54.reader.txt",
+      "sha256": "c08fe440ac380de3609e06048c705ce4d56ce22f03850adddace88e156ac7781",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/33ea9e35f0cf99003f73.body",
+      "sha256": "ad94e96f05dfc0ed61db417d40f9bd3bc39de09425ac8ad8929cbf46d71dcc3d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/group-b-derived-ad94e96f05dfc0ed.txt",
+      "sha256": "910aa39aad535ad8de2f53b4493af5d11763b9d9916b4af4e33fbc3b5e94924e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ba14e9df8dad05cad434.body",
+      "sha256": "fb603c8748d0aea26755393119fd6f5a8f8f0b984b7d11fc66b594ad5af7e3a7",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/group-b-derived-fb603c8748d0aea2.txt",
+      "sha256": "d2e7168e0de3cd7801db7dfb277778b63ab38ab00bdbab2f883f379c8157addf",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/OF575-gazette.pdf",
+      "sha256": "af776c1c3d2d33d3475788cd982efd215b7914baf457c32d85d91fabf3d789fc",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/OF575-gazette.reader.txt",
+      "sha256": "ba8c251cd9c9a2d2fe25eb6c7cc5903d4dbacf7edea75f149850bb6f6ba819d0",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+      "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+      "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+      "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+      "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+      "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+      "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+      "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+      "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+      "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+      "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+      "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+      "sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+      "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+      "sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+      "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+      "sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+      "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+      "sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+      "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+      "sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+      "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+      "sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+      "sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+      "sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+      "sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+      "sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+      "sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+      "sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.body",
+      "sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.reader.txt",
+      "sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+      "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+      "sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+      "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+      "sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+      "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+      "sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5f1cb085d3190b3da13a.body",
+      "sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5f1cb085d3190b3da13a.pdf.reader.txt",
+      "sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.body",
+      "sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.pdf.reader.txt",
+      "sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.body",
+      "sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.pdf.reader.txt",
+      "sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.body",
+      "sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.pdf.reader.txt",
+      "sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf6f17c0f36a9f0ad3c0.body",
+      "sha256": "35fd566e96f38d7b73b99e67521d2066f1b0e56b6ea08afd0480c0d088440728",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf6f17c0f36a9f0ad3c0.reader.txt",
+      "sha256": "35281ebbb6f248ff7b2888476898a1559c06373108174810d79afdb1a535a4c2",
+      "matches": true
+    }
+  ],
+  "unique_files": 46,
+  "quotes": [
+    {
+      "row": 1,
+      "present": true
+    },
+    {
+      "row": 2,
+      "present": true
+    },
+    {
+      "row": 3,
+      "present": true
+    },
+    {
+      "row": 4,
+      "present": true
+    },
+    {
+      "row": 5,
+      "present": true
+    },
+    {
+      "row": 6,
+      "present": true
+    },
+    {
+      "row": 7,
+      "present": true
+    },
+    {
+      "row": 8,
+      "present": true
+    },
+    {
+      "row": 9,
+      "present": true
+    },
+    {
+      "row": 10,
+      "present": true
+    },
+    {
+      "row": 11,
+      "present": true
+    },
+    {
+      "row": 12,
+      "present": true
+    },
+    {
+      "row": 13,
+      "present": true
+    },
+    {
+      "row": 14,
+      "present": true
+    },
+    {
+      "row": 15,
+      "present": true
+    },
+    {
+      "row": 16,
+      "present": true
+    },
+    {
+      "row": 17,
+      "present": true
+    },
+    {
+      "row": 18,
+      "present": true
+    },
+    {
+      "row": 19,
+      "present": true
+    },
+    {
+      "row": 20,
+      "present": true
+    },
+    {
+      "row": 21,
+      "present": true
+    },
+    {
+      "row": 22,
+      "present": true
+    },
+    {
+      "row": 23,
+      "present": true
+    },
+    {
+      "row": 24,
+      "present": true
+    },
+    {
+      "row": 25,
+      "present": true
+    },
+    {
+      "row": 26,
+      "present": true
+    },
+    {
+      "row": 27,
+      "present": true
+    },
+    {
+      "row": 28,
+      "present": true
+    },
+    {
+      "row": 29,
+      "present": true
+    },
+    {
+      "row": 30,
+      "present": true
+    },
+    {
+      "row": 31,
+      "present": true
+    },
+    {
+      "row": 32,
+      "present": true
+    },
+    {
+      "row": 33,
+      "present": true
+    },
+    {
+      "row": 34,
+      "present": true
+    },
+    {
+      "row": 35,
+      "present": true
+    },
+    {
+      "row": 36,
+      "present": true
+    },
+    {
+      "row": 37,
+      "present": true
+    },
+    {
+      "row": 38,
+      "present": true
+    },
+    {
+      "row": 39,
+      "present": true
+    },
+    {
+      "row": 40,
+      "present": true
+    },
+    {
+      "row": 41,
+      "present": true
+    },
+    {
+      "row": 42,
+      "present": true
+    },
+    {
+      "row": 43,
+      "present": true
+    },
+    {
+      "row": 44,
+      "present": true
+    },
+    {
+      "row": 45,
+      "present": true
+    },
+    {
+      "row": 46,
+      "present": true
+    },
+    {
+      "row": 47,
+      "present": true
+    },
+    {
+      "row": 48,
+      "present": true
+    },
+    {
+      "row": 49,
+      "present": true
+    },
+    {
+      "row": 50,
+      "present": true
+    },
+    {
+      "row": 51,
+      "present": true
+    },
+    {
+      "row": 52,
+      "present": true
+    },
+    {
+      "row": 53,
+      "present": true
+    },
+    {
+      "row": 54,
+      "present": true
+    },
+    {
+      "row": 55,
+      "present": true
+    },
+    {
+      "row": 56,
+      "present": true
+    },
+    {
+      "row": 57,
+      "present": true
+    },
+    {
+      "row": 58,
+      "present": true
+    },
+    {
+      "row": 59,
+      "present": true
+    },
+    {
+      "row": 60,
+      "present": true
+    },
+    {
+      "row": 61,
+      "present": true
+    },
+    {
+      "row": 62,
+      "present": true
+    },
+    {
+      "row": 63,
+      "present": true
+    },
+    {
+      "row": 64,
+      "present": true
+    },
+    {
+      "row": 65,
+      "present": true
+    },
+    {
+      "row": 66,
+      "present": true
+    },
+    {
+      "row": 67,
+      "present": true
+    },
+    {
+      "row": 68,
+      "present": true
+    },
+    {
+      "row": 69,
+      "present": true
+    },
+    {
+      "row": 70,
+      "present": true
+    },
+    {
+      "row": 71,
+      "present": true
+    },
+    {
+      "row": 72,
+      "present": true
+    },
+    {
+      "row": 73,
+      "present": true
+    },
+    {
+      "row": 74,
+      "present": true
+    },
+    {
+      "row": 75,
+      "present": true
+    },
+    {
+      "row": 76,
+      "present": true
+    },
+    {
+      "row": 77,
+      "present": true
+    },
+    {
+      "row": 78,
+      "present": true
+    },
+    {
+      "row": 79,
+      "present": true
+    },
+    {
+      "row": 80,
+      "present": true
+    },
+    {
+      "row": 81,
+      "present": true
+    },
+    {
+      "row": 82,
+      "present": true
+    },
+    {
+      "row": 83,
+      "present": true
+    },
+    {
+      "row": 84,
+      "present": true
+    },
+    {
+      "row": 85,
+      "present": true
+    },
+    {
+      "row": 86,
+      "present": true
+    },
+    {
+      "row": 87,
+      "present": true
+    },
+    {
+      "row": 88,
+      "present": true
+    },
+    {
+      "row": 89,
+      "present": true
+    },
+    {
+      "row": 90,
+      "present": true
+    },
+    {
+      "row": 91,
+      "present": true
+    },
+    {
+      "row": 92,
+      "present": true
+    },
+    {
+      "row": 93,
+      "present": true
+    },
+    {
+      "row": 94,
+      "present": true
+    },
+    {
+      "row": 95,
+      "present": true
+    },
+    {
+      "row": 96,
+      "present": true
+    },
+    {
+      "row": 97,
+      "present": true
+    },
+    {
+      "row": 98,
+      "present": true
+    },
+    {
+      "row": 99,
+      "present": true
+    },
+    {
+      "row": 100,
+      "present": true
+    },
+    {
+      "row": 101,
+      "present": true
+    },
+    {
+      "row": 102,
+      "present": true
+    },
+    {
+      "row": 103,
+      "present": true
+    },
+    {
+      "row": 104,
+      "present": true
+    },
+    {
+      "row": 105,
+      "present": true
+    },
+    {
+      "row": 106,
+      "present": true
+    },
+    {
+      "row": 107,
+      "present": true
+    },
+    {
+      "row": 108,
+      "present": true
+    },
+    {
+      "row": 109,
+      "present": true
+    },
+    {
+      "row": 110,
+      "present": true
+    },
+    {
+      "row": 111,
+      "present": true
+    },
+    {
+      "row": 112,
+      "present": true
+    },
+    {
+      "row": 113,
+      "present": true
+    },
+    {
+      "row": 114,
+      "present": true
+    },
+    {
+      "row": 115,
+      "present": true
+    },
+    {
+      "row": 116,
+      "present": true
+    },
+    {
+      "row": 117,
+      "present": true
+    },
+    {
+      "row": 118,
+      "present": true
+    },
+    {
+      "row": 119,
+      "present": true
+    },
+    {
+      "row": 120,
+      "present": true
+    },
+    {
+      "row": 121,
+      "present": true
+    },
+    {
+      "row": 122,
+      "present": true
+    },
+    {
+      "row": 123,
+      "present": true
+    },
+    {
+      "row": 124,
+      "present": true
+    },
+    {
+      "row": 125,
+      "present": true
+    },
+    {
+      "row": 126,
+      "present": true
+    },
+    {
+      "row": 127,
+      "present": true
+    },
+    {
+      "row": 128,
+      "present": true
+    },
+    {
+      "row": 129,
+      "present": true
+    },
+    {
+      "row": 130,
+      "present": true
+    },
+    {
+      "row": 131,
+      "present": true
+    },
+    {
+      "row": 132,
+      "present": true
+    },
+    {
+      "row": 133,
+      "present": true
+    },
+    {
+      "row": 134,
+      "present": true
+    },
+    {
+      "row": 135,
+      "present": true
+    },
+    {
+      "row": 136,
+      "present": true
+    },
+    {
+      "row": 137,
+      "present": true
+    },
+    {
+      "row": 138,
+      "present": true
+    },
+    {
+      "row": 139,
+      "present": true
+    },
+    {
+      "row": 140,
+      "present": true
+    },
+    {
+      "row": 141,
+      "present": true
+    },
+    {
+      "row": 142,
+      "present": true
+    },
+    {
+      "row": 143,
+      "present": true
+    },
+    {
+      "row": 144,
+      "present": true
+    },
+    {
+      "row": 145,
+      "present": true
+    },
+    {
+      "row": 146,
+      "present": true
+    },
+    {
+      "row": 147,
+      "present": true
+    },
+    {
+      "row": 148,
+      "present": true
+    },
+    {
+      "row": 149,
+      "present": true
+    },
+    {
+      "row": 150,
+      "present": true
+    },
+    {
+      "row": 151,
+      "present": true
+    },
+    {
+      "row": 152,
+      "present": true
+    },
+    {
+      "row": 153,
+      "present": true
+    },
+    {
+      "row": 154,
+      "present": true
+    },
+    {
+      "row": 155,
+      "present": true
+    },
+    {
+      "row": 156,
+      "present": true
+    },
+    {
+      "row": 157,
+      "present": true
+    },
+    {
+      "row": 158,
+      "present": true
+    },
+    {
+      "row": 159,
+      "present": true
+    },
+    {
+      "row": 160,
+      "present": true
+    },
+    {
+      "row": 161,
+      "present": true
+    },
+    {
+      "row": 162,
+      "present": true
+    },
+    {
+      "row": 163,
+      "present": true
+    },
+    {
+      "row": 164,
+      "present": true
+    },
+    {
+      "row": 165,
+      "present": true
+    },
+    {
+      "row": 166,
+      "present": true
+    },
+    {
+      "row": 167,
+      "present": true
+    },
+    {
+      "row": 168,
+      "present": true
+    },
+    {
+      "row": 169,
+      "present": true
+    },
+    {
+      "row": 170,
+      "present": true
+    },
+    {
+      "row": 171,
+      "present": true
+    },
+    {
+      "row": 172,
+      "present": true
+    },
+    {
+      "row": 173,
+      "present": true
+    },
+    {
+      "row": 174,
+      "present": true
+    },
+    {
+      "row": 175,
+      "present": true
+    },
+    {
+      "row": 176,
+      "present": true
+    },
+    {
+      "row": 177,
+      "present": true
+    },
+    {
+      "row": 178,
+      "present": true
+    },
+    {
+      "row": 179,
+      "present": true
+    },
+    {
+      "row": 180,
+      "present": true
+    },
+    {
+      "row": 181,
+      "present": true
+    },
+    {
+      "row": 182,
+      "present": true
+    },
+    {
+      "row": 183,
+      "present": true
+    },
+    {
+      "row": 184,
+      "present": true
+    },
+    {
+      "row": 185,
+      "present": true
+    },
+    {
+      "row": 186,
+      "present": true
+    },
+    {
+      "row": 187,
+      "present": true
+    },
+    {
+      "row": 188,
+      "present": true
+    },
+    {
+      "row": 189,
+      "present": true
+    },
+    {
+      "row": 190,
+      "present": true
+    },
+    {
+      "row": 191,
+      "present": true
+    },
+    {
+      "row": 192,
+      "present": true
+    },
+    {
+      "row": 193,
+      "present": true
+    },
+    {
+      "row": 194,
+      "present": true
+    },
+    {
+      "row": 195,
+      "present": true
+    },
+    {
+      "row": 196,
+      "present": true
+    },
+    {
+      "row": 197,
+      "present": true
+    },
+    {
+      "row": 198,
+      "present": true
+    },
+    {
+      "row": 199,
+      "present": true
+    },
+    {
+      "row": 200,
+      "present": true
+    },
+    {
+      "row": 201,
+      "present": true
+    },
+    {
+      "row": 202,
+      "present": true
+    },
+    {
+      "row": 203,
+      "present": true
+    },
+    {
+      "row": 204,
+      "present": true
+    },
+    {
+      "row": 205,
+      "present": true
+    },
+    {
+      "row": 206,
+      "present": true
+    },
+    {
+      "row": 207,
+      "present": true
+    },
+    {
+      "row": 208,
+      "present": true
+    },
+    {
+      "row": 209,
+      "present": true
+    },
+    {
+      "row": 210,
+      "present": true
+    },
+    {
+      "row": 211,
+      "present": true
+    },
+    {
+      "row": 212,
+      "present": true
+    },
+    {
+      "row": 213,
+      "present": true
+    },
+    {
+      "row": 214,
+      "present": true
+    },
+    {
+      "row": 215,
+      "present": true
+    },
+    {
+      "row": 216,
+      "present": true
+    },
+    {
+      "row": 217,
+      "present": true
+    },
+    {
+      "row": 218,
+      "present": true
+    },
+    {
+      "row": 219,
+      "present": true
+    },
+    {
+      "row": 220,
+      "present": true
+    },
+    {
+      "row": 221,
+      "present": true
+    },
+    {
+      "row": 222,
+      "present": true
+    },
+    {
+      "row": 223,
+      "present": true
+    },
+    {
+      "row": 224,
+      "present": true
+    },
+    {
+      "row": 225,
+      "present": true
+    },
+    {
+      "row": 226,
+      "present": true
+    },
+    {
+      "row": 227,
+      "present": true
+    },
+    {
+      "row": 228,
+      "present": true
+    },
+    {
+      "row": 229,
+      "present": true
+    },
+    {
+      "row": 230,
+      "present": true
+    },
+    {
+      "row": 231,
+      "present": true
+    },
+    {
+      "row": 232,
+      "present": true
+    },
+    {
+      "row": 233,
+      "present": true
+    },
+    {
+      "row": 234,
+      "present": true
+    },
+    {
+      "row": 235,
+      "present": true
+    },
+    {
+      "row": 236,
+      "present": true
+    },
+    {
+      "row": 237,
+      "present": true
+    },
+    {
+      "row": 238,
+      "present": true
+    },
+    {
+      "row": 239,
+      "present": true
+    },
+    {
+      "row": 240,
+      "present": true
+    },
+    {
+      "row": 241,
+      "present": true
+    },
+    {
+      "row": 242,
+      "present": true
+    },
+    {
+      "row": 243,
+      "present": true
+    },
+    {
+      "row": 244,
+      "present": true
+    },
+    {
+      "row": 245,
+      "present": true
+    },
+    {
+      "row": 246,
+      "present": true
+    },
+    {
+      "row": 247,
+      "present": true
+    },
+    {
+      "row": 248,
+      "present": true
+    },
+    {
+      "row": 249,
+      "present": true
+    },
+    {
+      "row": 250,
+      "present": true
+    },
+    {
+      "row": 251,
+      "present": true
+    },
+    {
+      "row": 252,
+      "present": true
+    },
+    {
+      "row": 253,
+      "present": true
+    },
+    {
+      "row": 254,
+      "present": true
+    },
+    {
+      "row": 255,
+      "present": true
+    },
+    {
+      "row": 256,
+      "present": true
+    },
+    {
+      "row": 257,
+      "present": true
+    },
+    {
+      "row": 258,
+      "present": true
+    },
+    {
+      "row": 259,
+      "present": true
+    },
+    {
+      "row": 260,
+      "present": true
+    },
+    {
+      "row": 261,
+      "present": true
+    },
+    {
+      "row": 262,
+      "present": true
+    },
+    {
+      "row": 263,
+      "present": true
+    },
+    {
+      "row": 264,
+      "present": true
+    },
+    {
+      "row": 265,
+      "present": true
+    },
+    {
+      "row": 266,
+      "present": true
+    },
+    {
+      "row": 267,
+      "present": true
+    },
+    {
+      "row": 268,
+      "present": true
+    },
+    {
+      "row": 269,
+      "present": true
+    },
+    {
+      "row": 270,
+      "present": true
+    },
+    {
+      "row": 271,
+      "present": true
+    },
+    {
+      "row": 272,
+      "present": true
+    },
+    {
+      "row": 273,
+      "present": true
+    },
+    {
+      "row": 274,
+      "present": true
+    },
+    {
+      "row": 275,
+      "present": true
+    },
+    {
+      "row": 276,
+      "present": true
+    },
+    {
+      "row": 277,
+      "present": true
+    },
+    {
+      "row": 278,
+      "present": true
+    },
+    {
+      "row": 279,
+      "present": true
+    },
+    {
+      "row": 280,
+      "present": true
+    },
+    {
+      "row": 281,
+      "present": true
+    },
+    {
+      "row": 282,
+      "present": true
+    },
+    {
+      "row": 283,
+      "present": true
+    },
+    {
+      "row": 284,
+      "present": true
+    },
+    {
+      "row": 285,
+      "present": true
+    },
+    {
+      "row": 286,
+      "present": true
+    },
+    {
+      "row": 287,
+      "present": true
+    },
+    {
+      "row": 288,
+      "present": true
+    },
+    {
+      "row": 289,
+      "present": true
+    }
+  ],
+  "table_vector_checks": [
+    {
+      "row": 3,
+      "guide_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 4,
+      "guide_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 5,
+      "guide_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "20000.00",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 6,
+      "guide_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 7,
+      "guide_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 8,
+      "guide_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20000.01",
+        "20510.00",
+        "7",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 9,
+      "guide_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 10,
+      "guide_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 11,
+      "guide_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "20510.01",
+        "21300.00",
+        "8",
+        "6",
+        "4",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 12,
+      "guide_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 13,
+      "guide_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 14,
+      "guide_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "21300.01",
+        "22150.00",
+        "9",
+        "7",
+        "5",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 15,
+      "guide_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 16,
+      "guide_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 17,
+      "guide_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "22150.01",
+        "23220.00",
+        "10",
+        "9",
+        "7",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 18,
+      "guide_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 19,
+      "guide_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 20,
+      "guide_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "23220.01",
+        "24050.00",
+        "11",
+        "10",
+        "8",
+        "5",
+        "1",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 21,
+      "guide_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 22,
+      "guide_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 23,
+      "guide_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "24050.01",
+        "25410.00",
+        "12",
+        "11",
+        "9",
+        "6",
+        "3",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 24,
+      "guide_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 25,
+      "guide_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 26,
+      "guide_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "27440.00",
+        "13",
+        "12",
+        "10",
+        "7",
+        "4",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 27,
+      "guide_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 28,
+      "guide_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 29,
+      "guide_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "27440.01",
+        "29790.00",
+        "14",
+        "13",
+        "11",
+        "9",
+        "6",
+        "2",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 30,
+      "guide_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 31,
+      "guide_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 32,
+      "guide_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "29790.01",
+        "32610.00",
+        "15",
+        "14",
+        "13",
+        "10",
+        "8",
+        "4",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 33,
+      "guide_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 34,
+      "guide_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 35,
+      "guide_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "36350.00",
+        "16",
+        "15",
+        "14",
+        "12",
+        "9",
+        "6",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 36,
+      "guide_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 37,
+      "guide_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 38,
+      "guide_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "36350.01",
+        "40670.00",
+        "17",
+        "16",
+        "15",
+        "13",
+        "11",
+        "8",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 39,
+      "guide_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "source_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 40,
+      "guide_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "source_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 41,
+      "guide_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "source_numeric_cells": [
+        "40670.01",
+        "44560.00",
+        "18",
+        "17",
+        "16",
+        "15",
+        "13",
+        "10",
+        "2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 42,
+      "guide_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "source_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 43,
+      "guide_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "source_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 44,
+      "guide_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "source_numeric_cells": [
+        "44560.01",
+        "48060.00",
+        "19",
+        "18",
+        "17",
+        "16",
+        "14",
+        "12",
+        "4"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 45,
+      "guide_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 46,
+      "guide_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 47,
+      "guide_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "52020.00",
+        "20",
+        "19",
+        "18",
+        "17",
+        "15",
+        "13",
+        "7"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 48,
+      "guide_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "source_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 49,
+      "guide_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "source_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 50,
+      "guide_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "source_numeric_cells": [
+        "52020.01",
+        "56780.00",
+        "21",
+        "20",
+        "20",
+        "18",
+        "17",
+        "15",
+        "9"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 51,
+      "guide_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 52,
+      "guide_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 53,
+      "guide_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "61820.00",
+        "22",
+        "21",
+        "21",
+        "20",
+        "18",
+        "16",
+        "11"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 54,
+      "guide_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 55,
+      "guide_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 56,
+      "guide_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "61820.01",
+        "65710.00",
+        "23",
+        "22",
+        "22",
+        "21",
+        "19",
+        "18",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 57,
+      "guide_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "source_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 58,
+      "guide_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "source_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 59,
+      "guide_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "source_numeric_cells": [
+        "65710.01",
+        "70080.00",
+        "24",
+        "23",
+        "23",
+        "22",
+        "21",
+        "19",
+        "14"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 60,
+      "guide_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "source_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 61,
+      "guide_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "source_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 62,
+      "guide_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "source_numeric_cells": [
+        "70080.01",
+        "75020.00",
+        "25",
+        "25",
+        "24",
+        "23",
+        "22",
+        "20",
+        "16"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 63,
+      "guide_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "source_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 64,
+      "guide_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "source_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 65,
+      "guide_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "source_numeric_cells": [
+        "75020.01",
+        "80730.00",
+        "26",
+        "26",
+        "25",
+        "24",
+        "23",
+        "22",
+        "17"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 66,
+      "guide_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 67,
+      "guide_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 68,
+      "guide_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "86770.00",
+        "27",
+        "27",
+        "26",
+        "25",
+        "24",
+        "23",
+        "19"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 69,
+      "guide_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "source_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 70,
+      "guide_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "source_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 71,
+      "guide_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "source_numeric_cells": [
+        "86770.01",
+        "92190.00",
+        "28",
+        "28",
+        "27",
+        "26",
+        "25",
+        "24",
+        "21"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 72,
+      "guide_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "source_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 73,
+      "guide_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "source_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 74,
+      "guide_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "source_numeric_cells": [
+        "92190.01",
+        "98350.00",
+        "29",
+        "29",
+        "28",
+        "27",
+        "27",
+        "25",
+        "22"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 75,
+      "guide_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "source_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 76,
+      "guide_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "source_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 77,
+      "guide_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "source_numeric_cells": [
+        "98350.01",
+        "105380.00",
+        "30",
+        "30",
+        "29",
+        "29",
+        "28",
+        "27",
+        "23"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 78,
+      "guide_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "source_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 79,
+      "guide_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "source_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 80,
+      "guide_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "source_numeric_cells": [
+        "105380.01",
+        "113180.00",
+        "31",
+        "31",
+        "30",
+        "30",
+        "29",
+        "28",
+        "25"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 81,
+      "guide_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "source_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 82,
+      "guide_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "source_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 83,
+      "guide_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "source_numeric_cells": [
+        "113180.01",
+        "122030.00",
+        "32",
+        "32",
+        "31",
+        "31",
+        "30",
+        "29",
+        "26"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 84,
+      "guide_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 85,
+      "guide_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 86,
+      "guide_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "132200.00",
+        "33",
+        "33",
+        "32",
+        "32",
+        "31",
+        "30",
+        "28"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 87,
+      "guide_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "source_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 88,
+      "guide_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "source_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 89,
+      "guide_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "source_numeric_cells": [
+        "132200.01",
+        "144140.00",
+        "34",
+        "34",
+        "33",
+        "33",
+        "32",
+        "32",
+        "29"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 90,
+      "guide_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "source_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 91,
+      "guide_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "source_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 92,
+      "guide_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "source_numeric_cells": [
+        "144140.01",
+        "157300.00",
+        "35",
+        "35",
+        "34",
+        "34",
+        "33",
+        "33",
+        "31"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 93,
+      "guide_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "source_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 94,
+      "guide_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "source_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 95,
+      "guide_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "source_numeric_cells": [
+        "157300.01",
+        "172280.00",
+        "36",
+        "36",
+        "36",
+        "35",
+        "35",
+        "34",
+        "32"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 96,
+      "guide_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "source_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 97,
+      "guide_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "source_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 98,
+      "guide_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "source_numeric_cells": [
+        "172280.01",
+        "190410.00",
+        "37",
+        "37",
+        "37",
+        "36",
+        "36",
+        "35",
+        "33"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 99,
+      "guide_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 100,
+      "guide_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 101,
+      "guide_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "212820.00",
+        "38",
+        "38",
+        "38",
+        "37",
+        "37",
+        "36",
+        "35"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 102,
+      "guide_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "source_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 103,
+      "guide_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "source_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 104,
+      "guide_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "source_numeric_cells": [
+        "212820.01",
+        "236060.00",
+        "39",
+        "39",
+        "39",
+        "38",
+        "38",
+        "37",
+        "36"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 105,
+      "guide_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "source_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 106,
+      "guide_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "source_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 107,
+      "guide_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "source_numeric_cells": [
+        "236060.01",
+        "40",
+        "40",
+        "40",
+        "39",
+        "39",
+        "39",
+        "37"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 108,
+      "guide_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 109,
+      "guide_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 110,
+      "guide_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "0.00",
+        "25410.00",
+        "9",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 111,
+      "guide_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 112,
+      "guide_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 113,
+      "guide_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "source_numeric_cells": [
+        "25410.01",
+        "32610.00",
+        "7",
+        "12"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 114,
+      "guide_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 115,
+      "guide_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 116,
+      "guide_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "32610.01",
+        "48060.00",
+        "6",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 117,
+      "guide_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 118,
+      "guide_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 119,
+      "guide_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "source_numeric_cells": [
+        "48060.01",
+        "56780.00",
+        "5",
+        "10"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 120,
+      "guide_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 121,
+      "guide_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 122,
+      "guide_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "source_numeric_cells": [
+        "56780.01",
+        "80730.00",
+        "4",
+        "8"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 123,
+      "guide_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 124,
+      "guide_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 125,
+      "guide_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "source_numeric_cells": [
+        "80730.01",
+        "122030.00",
+        "3",
+        "6"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 126,
+      "guide_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 127,
+      "guide_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 128,
+      "guide_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "source_numeric_cells": [
+        "122030.01",
+        "190410.00",
+        "2",
+        "5"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 129,
+      "guide_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 130,
+      "guide_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 131,
+      "guide_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "source_numeric_cells": [
+        "190410.01",
+        "1",
+        "3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 132,
+      "guide_numeric_cells": [
+        "17000",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "17000",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 133,
+      "guide_numeric_cells": [
+        "18500",
+        "4",
+        "3",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "18500",
+        "4",
+        "3",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 134,
+      "guide_numeric_cells": [
+        "19750",
+        "6",
+        "5",
+        "4",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "19750",
+        "6",
+        "5",
+        "4",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 135,
+      "guide_numeric_cells": [
+        "21250",
+        "8.5",
+        "7.5",
+        "6.5",
+        "4.5",
+        "2.5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "21250",
+        "8.5",
+        "7.5",
+        "6.5",
+        "4.5",
+        "2.5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 136,
+      "guide_numeric_cells": [
+        "23250",
+        "11",
+        "10",
+        "9",
+        "7",
+        "5",
+        "2.5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "23250",
+        "11",
+        "10",
+        "9",
+        "7",
+        "5",
+        "2.5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 137,
+      "guide_numeric_cells": [
+        "25250",
+        "13.3",
+        "12",
+        "11.3",
+        "8.5",
+        "7.5",
+        "5.5",
+        "3.4",
+        "0.5",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "25250",
+        "13.3",
+        "12",
+        "11.3",
+        "8.5",
+        "7.5",
+        "5.5",
+        "3.4",
+        "0.5",
+        "0",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 138,
+      "guide_numeric_cells": [
+        "27500",
+        "14.6",
+        "13.3",
+        "12.6",
+        "9.9",
+        "9.2",
+        "7.8",
+        "5.8",
+        "3.8",
+        "0.8",
+        "0",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "27500",
+        "14.6",
+        "13.3",
+        "12.6",
+        "9.9",
+        "9.2",
+        "7.8",
+        "5.8",
+        "3.8",
+        "0.8",
+        "0",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 139,
+      "guide_numeric_cells": [
+        "30250",
+        "15.8",
+        "14.5",
+        "13.7",
+        "12.4",
+        "10.7",
+        "8.9",
+        "7.9",
+        "5.9",
+        "3.9",
+        "0.9",
+        "0"
+      ],
+      "source_numeric_cells": [
+        "30250",
+        "15.8",
+        "14.5",
+        "13.7",
+        "12.4",
+        "10.7",
+        "8.9",
+        "7.9",
+        "5.9",
+        "3.9",
+        "0.9",
+        "0"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 140,
+      "guide_numeric_cells": [
+        "32250",
+        "17",
+        "16",
+        "15",
+        "13.6",
+        "12.5",
+        "10.8",
+        "10",
+        "8",
+        "7",
+        "5",
+        "2"
+      ],
+      "source_numeric_cells": [
+        "32250",
+        "17",
+        "16",
+        "15",
+        "13.6",
+        "12.5",
+        "10.8",
+        "10",
+        "8",
+        "7",
+        "5",
+        "2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 141,
+      "guide_numeric_cells": [
+        "35750",
+        "18.1",
+        "17.1",
+        "16.5",
+        "14.7",
+        "14",
+        "13.3",
+        "12.2",
+        "10.2",
+        "9.1",
+        "7.1",
+        "6.1"
+      ],
+      "source_numeric_cells": [
+        "35750",
+        "18.1",
+        "17.1",
+        "16.5",
+        "14.7",
+        "14",
+        "13.3",
+        "12.2",
+        "10.2",
+        "9.1",
+        "7.1",
+        "6.1"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 142,
+      "guide_numeric_cells": [
+        "41250",
+        "20",
+        "19",
+        "18.3",
+        "16.9",
+        "16.2",
+        "15.5",
+        "13.7",
+        "12.4",
+        "11.3",
+        "10.2",
+        "9.2"
+      ],
+      "source_numeric_cells": [
+        "41250",
+        "20",
+        "19",
+        "18.3",
+        "16.9",
+        "16.2",
+        "15.5",
+        "13.7",
+        "12.4",
+        "11.3",
+        "10.2",
+        "9.2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 143,
+      "guide_numeric_cells": [
+        "48000",
+        "22.1",
+        "21.5",
+        "20.9",
+        "18.9",
+        "18.3",
+        "17.7",
+        "16.6",
+        "15.6",
+        "14.5",
+        "13.4",
+        "12.3"
+      ],
+      "source_numeric_cells": [
+        "48000",
+        "22.1",
+        "21.5",
+        "20.9",
+        "18.9",
+        "18.3",
+        "17.7",
+        "16.6",
+        "15.6",
+        "14.5",
+        "13.4",
+        "12.3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 144,
+      "guide_numeric_cells": [
+        "55000",
+        "24.1",
+        "23.5",
+        "23",
+        "22",
+        "21.5",
+        "20.9",
+        "19.8",
+        "18.7",
+        "17.7",
+        "16.6",
+        "15"
+      ],
+      "source_numeric_cells": [
+        "55000",
+        "24.1",
+        "23.5",
+        "23",
+        "22",
+        "21.5",
+        "20.9",
+        "19.8",
+        "18.7",
+        "17.7",
+        "16.6",
+        "15"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 145,
+      "guide_numeric_cells": [
+        "62000",
+        "26.1",
+        "25.5",
+        "24.5",
+        "24",
+        "23.5",
+        "22.9",
+        "21.9",
+        "21.4",
+        "19.8",
+        "18.7",
+        "17.2"
+      ],
+      "source_numeric_cells": [
+        "62000",
+        "26.1",
+        "25.5",
+        "24.5",
+        "24",
+        "23.5",
+        "22.9",
+        "21.9",
+        "21.4",
+        "19.8",
+        "18.7",
+        "17.2"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 146,
+      "guide_numeric_cells": [
+        "69250",
+        "28.3",
+        "27.7",
+        "27",
+        "26.6",
+        "25.5",
+        "25",
+        "24.4",
+        "22.9",
+        "21.8",
+        "20.3",
+        "19.3"
+      ],
+      "source_numeric_cells": [
+        "69250",
+        "28.3",
+        "27.7",
+        "27",
+        "26.6",
+        "25.5",
+        "25",
+        "24.4",
+        "22.9",
+        "21.8",
+        "20.3",
+        "19.3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 147,
+      "guide_numeric_cells": [
+        "75250",
+        "29.6",
+        "29.2",
+        "28.3",
+        "27.3",
+        "27.2",
+        "26.2",
+        "26.1",
+        "24.5",
+        "23.4",
+        "22.3",
+        "21.3"
+      ],
+      "source_numeric_cells": [
+        "75250",
+        "29.6",
+        "29.2",
+        "28.3",
+        "27.3",
+        "27.2",
+        "26.2",
+        "26.1",
+        "24.5",
+        "23.4",
+        "22.3",
+        "21.3"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 148,
+      "guide_numeric_cells": [
+        "82250",
+        "30.8",
+        "30.5",
+        "30",
+        "29.4",
+        "29",
+        "28.3",
+        "27.7",
+        "26.6",
+        "25.6",
+        "24.5",
+        "23.9"
+      ],
+      "source_numeric_cells": [
+        "82250",
+        "30.8",
+        "30.5",
+        "30",
+        "29.4",
+        "29",
+        "28.3",
+        "27.7",
+        "26.6",
+        "25.6",
+        "24.5",
+        "23.9"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 149,
+      "guide_numeric_cells": [
+        "94750",
+        "32.2",
+        "31.7",
+        "31.2",
+        "30.8",
+        "30.4",
+        "30",
+        "29.5",
+        "28.9",
+        "27.8",
+        "26.8",
+        "25.7"
+      ],
+      "source_numeric_cells": [
+        "94750",
+        "32.2",
+        "31.7",
+        "31.2",
+        "30.8",
+        "30.4",
+        "30",
+        "29.5",
+        "28.9",
+        "27.8",
+        "26.8",
+        "25.7"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 150,
+      "guide_numeric_cells": [
+        "107250",
+        "33.5",
+        "33",
+        "32.6",
+        "32.3",
+        "32",
+        "31.5",
+        "31",
+        "30",
+        "29.5",
+        "28.5",
+        "28"
+      ],
+      "source_numeric_cells": [
+        "107250",
+        "33.5",
+        "33",
+        "32.6",
+        "32.3",
+        "32",
+        "31.5",
+        "31",
+        "30",
+        "29.5",
+        "28.5",
+        "28"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 151,
+      "guide_numeric_cells": [
+        "120000",
+        "35.1",
+        "34.8",
+        "34.6",
+        "34",
+        "33.5",
+        "32.9",
+        "32.4",
+        "31.3",
+        "30.7",
+        "29.7",
+        "29.1"
+      ],
+      "source_numeric_cells": [
+        "120000",
+        "35.1",
+        "34.8",
+        "34.6",
+        "34",
+        "33.5",
+        "32.9",
+        "32.4",
+        "31.3",
+        "30.7",
+        "29.7",
+        "29.1"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 152,
+      "guide_numeric_cells": [
+        "132750",
+        "36.2",
+        "36",
+        "35.8",
+        "35",
+        "34.5",
+        "33.9",
+        "33.4",
+        "32.8",
+        "32",
+        "31",
+        "30"
+      ],
+      "source_numeric_cells": [
+        "132750",
+        "36.2",
+        "36",
+        "35.8",
+        "35",
+        "34.5",
+        "33.9",
+        "33.4",
+        "32.8",
+        "32",
+        "31",
+        "30"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 153,
+      "guide_numeric_cells": [
+        "146000",
+        "38",
+        "37.5",
+        "37",
+        "36.5",
+        "35.5",
+        "34.9",
+        "34.4",
+        "34",
+        "33.5",
+        "32",
+        "31.5"
+      ],
+      "source_numeric_cells": [
+        "146000",
+        "38",
+        "37.5",
+        "37",
+        "36.5",
+        "35.5",
+        "34.9",
+        "34.4",
+        "34",
+        "33.5",
+        "32",
+        "31.5"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 154,
+      "guide_numeric_cells": [
+        "200000",
+        "40",
+        "39.8",
+        "39.4",
+        "39",
+        "38.5",
+        "38",
+        "37.5",
+        "35.5",
+        "34.5",
+        "33.7",
+        "33"
+      ],
+      "source_numeric_cells": [
+        "200000",
+        "40",
+        "39.8",
+        "39.4",
+        "39",
+        "38.5",
+        "38",
+        "37.5",
+        "35.5",
+        "34.5",
+        "33.7",
+        "33"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 155,
+      "guide_numeric_cells": [
+        "280000",
+        "42",
+        "41.5",
+        "41.2",
+        "40.8",
+        "40",
+        "39.5",
+        "39",
+        "37",
+        "36",
+        "35.2",
+        "34.5"
+      ],
+      "source_numeric_cells": [
+        "280000",
+        "42",
+        "41.5",
+        "41.2",
+        "40.8",
+        "40",
+        "39.5",
+        "39",
+        "37",
+        "36",
+        "35.2",
+        "34.5"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 156,
+      "guide_numeric_cells": [
+        "350000",
+        "43",
+        "42.9",
+        "42.8",
+        "42.5",
+        "41.5",
+        "41",
+        "40.5",
+        "38.5",
+        "37.5",
+        "36.7",
+        "36"
+      ],
+      "source_numeric_cells": [
+        "350000",
+        "43",
+        "42.9",
+        "42.8",
+        "42.5",
+        "41.5",
+        "41",
+        "40.5",
+        "38.5",
+        "37.5",
+        "36.7",
+        "36"
+      ],
+      "equal": true,
+      "scope": "literalnumericvector"
+    },
+    {
+      "row": 157,
+      "guide_numeric_cells": [
+        "17000.01",
+        "23250.0",
+        "5.0",
+        "15.0"
+      ],
+      "source_numeric_cells": [
+        "17000.01",
+        "23250.0",
+        "5.0",
+        "15.0"
+      ],
+      "equal": true,
+      "scope": "English Guide comma/thousands/decimal normalized independently against Spanish source vector."
+    },
+    {
+      "row": 158,
+      "guide_numeric_cells": [
+        "23250.01",
+        "41250.0",
+        "3.0",
+        "15.0"
+      ],
+      "source_numeric_cells": [
+        "23250.01",
+        "41250.0",
+        "3.0",
+        "15.0"
+      ],
+      "equal": true,
+      "scope": "English Guide comma/thousands/decimal normalized independently against Spanish source vector."
+    },
+    {
+      "row": 159,
+      "guide_numeric_cells": [
+        "41250.01",
+        "94750.0",
+        "2.0",
+        "8.0"
+      ],
+      "source_numeric_cells": [
+        "41250.01",
+        "94750.0",
+        "2.0",
+        "8.0"
+      ],
+      "equal": true,
+      "scope": "English Guide comma/thousands/decimal normalized independently against Spanish source vector."
+    },
+    {
+      "row": 160,
+      "guide_numeric_cells": [
+        "94750.0",
+        "2.0",
+        "5.0"
+      ],
+      "source_numeric_cells": [
+        "94750.01",
+        "2.0",
+        "5.0"
+      ],
+      "equal": false,
+      "scope": "Guide Above94750 vs statutory firstcent94750.01; thresholds/rates checked separately, not literalnumericidentity.",
+      "semantic_match_for_EUR_cent_inputs": true
+    }
+  ],
+  "coverage_remainder": [
+    {
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "text": "| Item |2026 rule |Primary source |",
+      "references": {}
+    },
+    {
+      "line": 44,
+      "section": "The base / Basque2026 general employee table",
+      "text": "| Annual forecast from | Through | 0 children | 1 | 2 | 3 | 4 | 5 | More than 5 | 2026 official source |",
+      "references": {}
+    },
+    {
+      "line": 90,
+      "section": "The base / Basque computation, family facts and prospective changes",
+      "text": "Sources for these methods: [Bizkaia arts. 87\u201388/107](https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf), [\u00c1lava arts. 83\u201385](https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf), [Gipuzkoa arts. 99\u2013101](https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd). The employee's annual tax remains the separate foral PIT computation.",
+      "references": {}
+    },
+    {
+      "line": 96,
+      "section": "The base / Basque active-disability point reductions",
+      "text": "| Annual forecast from | Through | Category a points | Category b/c points | 2026 official source |",
+      "references": {}
+    },
+    {
+      "line": 115,
+      "section": "The base / Navarra 2026 employee table",
+      "text": "| Annual forecast more than | 0 children | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 or more | 2026 official source |",
+      "references": {}
+    },
+    {
+      "line": 153,
+      "section": "The base / Navarra base, disability, minimum and changes",
+      "text": "| Annual forecast | Disability \u226533% and <65% | Disability \u226565% | Official source |",
+      "references": {}
+    },
+    {
+      "line": 170,
+      "section": "Deadlines and filing",
+      "text": "| Administration | Ordinary wage return and period | Filing/payment window and annual certificate | Source |",
+      "references": {}
+    },
+    {
+      "line": 185,
+      "section": "Penalties and interest",
+      "text": "| Administration | Voluntary late correction and collection | Underpayment offence before conditional reductions | Primary law |",
+      "references": {}
+    },
+    {
+      "line": 241,
+      "section": "Ask the client first",
+      "text": "1. Which payer, assigned work centre, actual service locations and public/private category select the collector?",
+      "references": {}
+    },
+    {
+      "line": 242,
+      "section": "Ask the client first",
+      "text": "2. What annual gross cash, valued in-kind pay and foreseeable changes establish the forecast?",
+      "references": {}
+    },
+    {
+      "line": 243,
+      "section": "Ask the client first",
+      "text": "3. What signed family/disability declarations and actual contract duration/working time establish the table and floor?",
+      "references": {}
+    },
+    {
+      "line": 244,
+      "section": "Ask the client first",
+      "text": "4. What prior payments, rate changes, withholding records and filing receipts reconcile the certificate?",
+      "references": {}
+    }
+  ],
+  "table_vector_summary": {
+    "literal_or_independently_locale_normalized_equal": 157,
+    "explicit_cent_boundary_semantic_match": 1,
+    "unresolved": 0
+  }
+}

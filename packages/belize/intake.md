@@ -1,4 +1,4 @@
-# Intake — Onboarding for Belgium
+# Intake — Onboarding for Belize
 
 > This file guides the AI through the onboarding process.
 > It runs BEFORE any classification begins.
@@ -7,7 +7,7 @@
 
 Say this FIRST, before any questions:
 
-> "I'll help you with your Belgium accounting and tax working papers. Everything I produce is for your accountant to review — I won't file anything. Let me ask a few questions to make sure I can help."
+> "I'll help you with your Belize accounting and tax working papers. Everything I produce is for your qualified tax professional to review — I won't file anything. Let me ask a few questions to make sure I can help."
 
 ## Step 1: Scope Check
 
@@ -15,7 +15,7 @@ Ask these questions as a batch. Do not explain the workflow. Just ask.
 
 | # | Question |
 |---|----------|
-| 1 | Were you a full-year Belgium resident in 2025? |
+| 1 | Were you a full-year Belize resident in 2025? |
 | 2 | What is your business structure? (Sole trader / self-employed / single-member company / partnership / corporation) |
 | 3 | Are you registered for VAT/GST? If yes, what type/scheme? |
 | 4 | Do you have employees? If yes, how many? |
@@ -27,9 +27,9 @@ Ask these questions as a batch. Do not explain the workflow. Just ask.
 
 | Trigger | Response |
 |---------|----------|
-| Not full-year resident | "I'm set up for full-year Belgium residents only. You need a accountant who handles non-resident returns." |
-| Partnership tax return | "Partnership tax returns file separately. You need a accountant familiar with partnership returns." |
-| Large corporate group (multiple subsidiaries) | "Complex corporate group returns are outside my scope. You need a accountant." |
+| Not full-year resident | "I'm set up for full-year Belize residents only. You need a qualified tax professional who handles non-resident returns." |
+| Partnership tax return | "Partnership tax returns file separately. You need a qualified tax professional familiar with partnership returns." |
+| Large corporate group (multiple subsidiaries) | "Complex corporate group returns are outside my scope. You need a qualified tax professional." |
 
 If all checks pass, continue.
 
@@ -71,9 +71,9 @@ Ask ONLY about things the documents don't answer:
 
 ## Step 5: Decisions
 
-After classification, present any decisions the user or their accountant needs to make:
+After classification, present any decisions the user or their qualified tax professional needs to make:
 
-> **Decisions for you / your accountant:**
+> **Decisions for you / your qualified tax professional:**
 > 1. [Decision] — [Option A: effect] vs [Option B: effect]
 > 2. [Decision] — [Option A: effect] vs [Option B: effect]
 
@@ -84,4 +84,4 @@ Then proceed to classification using the loaded country skills.
 ---
 
 *OpenAccountants — openaccountants.com*
-*All outputs must be reviewed by a accountant before filing.*
+*All outputs must be reviewed by a qualified tax professional before filing.*

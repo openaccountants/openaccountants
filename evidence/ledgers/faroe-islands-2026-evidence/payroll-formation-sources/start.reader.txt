@@ -1,0 +1,131 @@
+Starting a business -Hopp til høvuðsinnihald (Skip to main content)
+Individuals   Business   TAKS
+Føroyskt
+Search
+Borgaragluggin
+Fyri at rita inn skalt tú hava Samleikan
+Hevur tú Samleikan?
+Rita inn   Hevur tú ikki Samleikan?
+Stovna Samleikan
+Vinnugluggin
+Fyri at rita inn skalt tú hava ein brúkara og Samleikan
+Hevur tú tað?
+Rita inn
+Hevur tú ikki ein brúkara?
+Stovna brúkara
+Hevur tú ikki Samleikan?
+Stovna Samleikan
+Business
+Starting a business
+Starting a business
+Read   Print
+Starting a business
+There are a lot of things to consider when setting up your own business. Below you will find some of the main points.
+Registering a company
+The first thing to do when you want to start your own company is to register the business. Anyone involved in commercial sales of good and services must be registered in TAKS’ business register called Vinnuskráin. Upon registering, the company will receive a V-tal, which is to be used in all communication with TAKS. A V-tal is comparable to what is often known as a VAT-number in English. To register in Vinnuskráin, submit the registration form, found under Forms.
+TAKS must have the business registration form at least 8 days before business activities start.
+Sole Proprietorships and Partnerships
+When you register a sole proprietorship (a one-man business) or a partnership, you are required to enclose an operating budget with the registration form. The operating budget should cover at least a 12-month period.
+When you register a partnership, all partners must sign the registration form. You are required to enclose an operating budget and a partnership agreement with the registration form. The partnership agreement should also be signed by all the partners.
+Limited Companies and Private Limited Companies
+Skráseting Føroya, the Faroese Company Register, notifies TAKS when a company registers with them. To register a company in the business register, Vinnuskráin, TAKS needs the following information:
+articles of association,
+memorandum of association,
+registration form for Vinnuskráin,
+shareholders’ register, which states who invested the share capital
+Taxation
+Income from independent businesses is taxed as B-income. This means that at the beginning of the year, the business owners are required to report how much they expect to earn in the year to come. They must do this by filling out the preliminary tax assessment form. Based on this information, TAKS writes monthly tax bills. The final tax statement will show the actual taxes owed by the company. The final tax statement is based on the tax return, which the business owner is required to submit to TAKS before 1 May the following year.
+In limited companies or private limited companies, wages to the owners are paid as A-income via the automatic tax withholding system. Wages to the owners of sole proprietorships or partnerships are paid as B-income.
+Deductions
+Independent business owners are required to make up their final taxable income in a tax return. Operational costs should be deducted from the taxable income. Operational costs are the expenses that are necessary for the business to operate, such as rent, electricity, maintenance, furniture, equipment, transportation, insurance, bookkeeping, telephone expenses etc.
+VAT
+Companies are required to pay a value added tax, VAT, of 25% on all commercial sale of goods and services, including imports from other countries. However, if the annual sales do not exceed DKK 50,000, you are not required to pay VAT. In Faroese VAT is known as MVG.
+VAT Registration
+A company becomes VAT-registered when it registers at the business register, Vinnuskráin.
+Companies are required to settle their VAT four times a year. The quarterly VAT returns can be submitted and paid electronically via Vinnugluggin, which is TAKS' online business portal. Get access to Vinnugluggin by sending a application for a user account to TAKS. Find the application form under Forms.
+VAT return
+Companies are required to submit a VAT return once every quarter. The deadline is one month and 10 days after the VAT quarter ends (dates available on the TAKS calendar). The VAT return makes clear whether the company owes VAT or is due VAT.
+If a VAT return is late, one percent is added to the amount; however, not less than DKK 300 and not more than DKK 1,000. If VAT owed is not paid by the deadline, 0.7% is added in interest per month.
+Customs
+Commercial importers and exporters are required to use their V-tal in all communication with TAKS concerning the import and export of goods. You receive the V-tal after registering your business, which is explained in the section "Registering a company" above.
+Customs processing
+The shipping company electronically registers imports and exports with TAKS, in order to get them cleared through customs. TAKS and shipping companies can clear goods on behalf of importers, and POSTA (the Faroese Postal Service) can clear goods arriving by post. Importers can also clear goods in Vinnugluggin, TAKS' online business portal. For more information on Vinnugluggin, see below.
+All exports are also to be registered with TAKS. Exporters must submit the invoice, freight bill and export bill to TAKS.
+Country of origin and customs exemption
+The Faroe Islands have free trade agreements with the EU, Norway, Iceland and Switzerland. If the goods are made in one one of these countries, they may be exempt from customs duty, if they can document the country of origin, and they have all the necessary permits.
+Goods made in the Faroe Islands should also be accompanied by a certificate of origin, so that they may be exempt from customs in the receiving country. Exporters can apply for authorisation from TAKS to issue certificates of origin themselves.
+Bookkeeping
+A company must keep accounts in which all it's transactions should be recorded. This should be done for each individual amount or for an accumulated amount, in which all the individual amounts are recorded.
+Pension
+All individuals, aged 18 or over, and fully tax liable in the Faroe Islands, are required by law to contribute a certain percentage of their taxable income into a pension scheme. This also applies to business owners.
+Beginning in 2014 with at least 1% and increasing by 1% for each year, all individuals will be saving at least 12% of their salary by 2026 in a pension scheme. It is; however, possible to increase the contribution sooner, and many already contribute 12%.
+For further information on pensions, see the quick links.
+Parental benefits
+Self-employed business owners must take out a parental insurance policy to qualify for parental benefits. The insurance premium is DKK 500 annually, and it must have been in place for at least a year before any payments can be made.
+Find the application forms for parental insurance on Barsilsskipanin's website.
+Labour market fees
+Independent business owners you are obligated to pay the following labour market fees when paying wages to employees:
+AM-grunnurin (the Labour Market Supplemental Pension Fund) 3.00%
+ALS (Unemployment Insurance) 0,8%
+Barsilsgrunnurin (the Maternity Fund) 0.86%
+Vinnusjúkugrunnurin (the Industry Sickness Fund) 0.05%
+Vinnugluggin
+Vinnugluggin is the name is TAKS’ online self-service for businesses. On Vinnugluggin, companies can manage most of their affairs with TAKS, such as VAT returns and customs clearing. Additionally, companies may use it to ensure that the information that TAKS has on them is correct, and to look up a range of company information, such as account statements and labour costs.
+Create a Vinnugluggin user
+To create a user for Vinnugluggin, complete and submit the application form "Application for a Vinnugluggin user account" found under Forms.
+Log in to Vinnugluggin with Samleikin
+Once you have a user, you can log in to Vinnugluggin with Samleikin.
+Samleikin is a digital login and comes in the form of an app for smartphones and tablets. Samleikin is developed by Talgildu Føroyar, and is available to everyone in the Faroes over the age of 15 and with a Faroese p-tal. Get Samleikin on App Store or Google Play.
+Please note, if you currently use the old Java-method and want to switch to Samleikin, you must contact our customer service to link Samleikin to your Vinnugluggin user. Email taks@taks.fo or call 35 26 00 Monday to Thursday from 10 am to 3 pm.
+Need help with Samleikin?
+Call Talgildu Føroyar’s customer service on 1881 Monday to Friday from 8 am to 4.30 pm or email 1881@talgildu.fo.
+Relevant links
+Pension
+Parental benefits
+Preliminary tax assessment
+Borgaragluggin (external link)
+Vinnugluggin (external link)
+Posta (external link)
+Samleikin (external link)
+Get Samleikin on App Store
+Get Samleikin on Google Play
+Files
+Vinnuskráin Registration Form
+Application for a Vinnugluggin user account
+VAT/Customs payment agreement
+Request to grant an accountant access to Vinnugluggin
+Video guide: Get Samleikin on your smartphone or tablet (Faroese)
+Contact
+TAKS
+Smyrilsvegur 20
+Postboks 2151
+FO 110 Tórshavn
+Faroe Islands
+Tel.: +298 35 26 00
+Email: taks@taks.fo
+VAT-number: 443921
+Opening hours:
+Tel: Mon-Thu 10am-12pm
+Reception: Mon-Thu 10am-12pm
+Banks
+BankReg.AccountBIC/SWIFTIBAN
+Betri Banki9181152.861.2EIKBFOTFFO65 9181 0001 5286 12
+BankNordik6460101.104.0FIFBFOTXFO29 6460 0001 0110 40
+Norðoya Sparikassi9865100.188.9NOYAFO21FO09 9865 0001 0018 89
+Suðuroyar Sparikassi9870100.084.6SUSPFOT1FO21 9870 0001 0008 46
+Danske Bank3100169.349.92DABADKKKDK88 3000 0016 9349 92
+EAN/GLN nr.:  5797100000119
+Email bills to: rokning@taks.fo
+About TAKS
+Customer Service
+Data Protection
+Appeal Options
+Forms
+FAQ
+Follow Us
+LinkedIn
+Ment, forritað og sniðgivið hava Sansir
+x
+Hey, eg eiti Eyðei og eri nýggi TAKS-botturin.
+Hevur tú ein TAKS-spurning?
+Spyr meg bara.

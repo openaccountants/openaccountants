@@ -1,0 +1,111 @@
+{
+  "scope": "Metadata/identitylocatorforretainedpriorindependentreadscope;notnewrevieworrootclaimtoreadallsourcebody. OldcoreartifactwordHumanisitsownlabel,notMichaelreview. Accompanyingreport/errata govern actualscope.",
+  "core_receipt_sha256": "7ecf6e6366a1a38777886ba0e6208b11d4645de7e6bb6f92fef40e6aee6dbc6b",
+  "entries": [
+    {
+      "code": "CLM",
+      "region": null,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.body",
+      "raw_sha256": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.reader.txt",
+      "reader_sha256": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+      "verified_operative_LF_scopes": [
+        [
+          593,
+          1422
+        ],
+        [
+          2213,
+          2228
+        ]
+      ],
+      "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes.",
+      "current_source_key": "S33",
+      "old_raw_rehash": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+      "old_reader_rehash": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+      "current_raw_rehash": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+      "current_reader_rehash": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+      "raw_exact": true,
+      "reader_exact": true
+    },
+    {
+      "code": "CYL",
+      "region": null,
+      "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d01ca97766c16ddd51a.body",
+      "raw_sha256": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d01ca97766c16ddd51a.reader.txt",
+      "reader_sha256": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b",
+      "verified_operative_LF_scopes": [
+        [
+          643,
+          665
+        ],
+        [
+          715,
+          792
+        ],
+        [
+          848,
+          1422
+        ],
+        [
+          3485,
+          3520
+        ],
+        [
+          3637,
+          3665
+        ]
+      ],
+      "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes.",
+      "current_source_key": "S84",
+      "old_raw_rehash": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d",
+      "old_reader_rehash": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b",
+      "current_raw_rehash": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d",
+      "current_reader_rehash": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b",
+      "raw_exact": true,
+      "reader_exact": true
+    },
+    {
+      "code": "VAL",
+      "region": null,
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f935d8b5d40d402860a8.body",
+      "raw_sha256": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f935d8b5d40d402860a8.reader.txt",
+      "reader_sha256": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+      "verified_operative_LF_scopes": [
+        [
+          716,
+          970
+        ],
+        [
+          1104,
+          1904
+        ],
+        [
+          4084,
+          4110
+        ],
+        [
+          4414,
+          4464
+        ],
+        [
+          4588,
+          4720
+        ]
+      ],
+      "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes.",
+      "current_source_key": "S132",
+      "old_raw_rehash": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+      "old_reader_rehash": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+      "current_raw_rehash": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+      "current_reader_rehash": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+      "raw_exact": true,
+      "reader_exact": true
+    }
+  ]
+}

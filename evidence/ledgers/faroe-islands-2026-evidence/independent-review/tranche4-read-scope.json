@@ -1,0 +1,343 @@
+{
+  "actual_Guide_scope": "Prior complete actual payroll/formation bodies reused; all current exact replacement operations read in full; all102 payroll and77 formation figure/rule receipts read in bounded batches. The attempt to print beyond payroll102 encountered the old-topic table and stopped; no missing receipt.",
+  "actual_complete_new_selected_native_LF": {
+    "pension": [
+      [
+        307,
+        361
+      ],
+      [
+        411,
+        420
+      ],
+      [
+        434,
+        451
+      ],
+      [
+        457,
+        522
+      ]
+    ],
+    "vlsd": [
+      [
+        48,
+        59
+      ]
+    ],
+    "benefits": [
+      [
+        20,
+        32
+      ],
+      [
+        64,
+        81
+      ]
+    ],
+    "pensionfeb": [
+      [
+        299,
+        348
+      ]
+    ],
+    "pension2020": [
+      [
+        294,
+        320
+      ]
+    ],
+    "pension2021": [
+      [
+        299,
+        310
+      ]
+    ],
+    "foreignaug": [
+      [
+        298,
+        316
+      ]
+    ],
+    "pension-original": [
+      [
+        1,
+        45
+      ]
+    ],
+    "foreign2023-original": [
+      [
+        1,
+        51
+      ]
+    ],
+    "foreign2023-exact": [
+      [
+        294,
+        320
+      ]
+    ],
+    "pensionreg": [
+      [
+        294,
+        345
+      ]
+    ],
+    "health": [
+      [
+        415,
+        426
+      ]
+    ],
+    "als": [
+      [
+        310,
+        317
+      ],
+      [
+        333,
+        354
+      ]
+    ],
+    "ameg": [
+      [
+        307,
+        315
+      ]
+    ],
+    "amegreg": [
+      [
+        298,
+        306
+      ]
+    ],
+    "injury": [
+      [
+        326,
+        332
+      ],
+      [
+        627,
+        631
+      ]
+    ],
+    "alsold": [
+      [
+        449,
+        453
+      ]
+    ],
+    "alsjuly": [
+      [
+        305,
+        324
+      ]
+    ],
+    "tax": [
+      [
+        489,
+        499
+      ],
+      [
+        712,
+        718
+      ]
+    ],
+    "broadcast": [
+      [
+        20,
+        42
+      ]
+    ],
+    "employer": [
+      [
+        20,
+        37
+      ]
+    ],
+    "values": [
+      [
+        23,
+        124
+      ]
+    ],
+    "company": [
+      [
+        326,
+        332
+      ],
+      [
+        338,
+        338
+      ],
+      [
+        377,
+        377
+      ],
+      [
+        402,
+        405
+      ],
+      [
+        444,
+        475
+      ],
+      [
+        488,
+        496
+      ],
+      [
+        499,
+        532
+      ],
+      [
+        559,
+        582
+      ],
+      [
+        587,
+        613
+      ],
+      [
+        732,
+        737
+      ],
+      [
+        850,
+        855
+      ],
+      [
+        881,
+        881
+      ],
+      [
+        1346,
+        1354
+      ]
+    ],
+    "forms": [
+      [
+        44,
+        49
+      ]
+    ],
+    "start": [
+      [
+        25,
+        43
+      ]
+    ],
+    "accounts": [
+      [
+        406,
+        423
+      ],
+      [
+        437,
+        437
+      ],
+      [
+        449,
+        475
+      ],
+      [
+        481,
+        481
+      ],
+      [
+        522,
+        522
+      ],
+      [
+        756,
+        756
+      ],
+      [
+        1181,
+        1200
+      ],
+      [
+        1217,
+        1217
+      ],
+      [
+        1286,
+        1301
+      ],
+      [
+        1407,
+        1408
+      ]
+    ],
+    "prior": [
+      [
+        1065,
+        1074
+      ],
+      [
+        1097,
+        1097
+      ],
+      [
+        1159,
+        1167
+      ]
+    ],
+    "books": [
+      [
+        331,
+        359
+      ]
+    ],
+    "healthreg": [
+      [
+        298,
+        313
+      ]
+    ],
+    "guarantee": [
+      [
+        313,
+        320
+      ],
+      [
+        328,
+        330
+      ]
+    ],
+    "holiday": [
+      [
+        319,
+        321
+      ],
+      [
+        325,
+        339
+      ],
+      [
+        342,
+        342
+      ],
+      [
+        353,
+        374
+      ]
+    ],
+    "pensionoct": [
+      [
+        298,
+        330
+      ]
+    ]
+  },
+  "visual": "Actually inspected both retained originalPDFpage1 images, including left/right columns; original2013rates are not current2026rates.",
+  "short_quote_scope": "All179 ledger quotations read and independently matched in order to exact retained source range, ignoring only explicit editorial ellipses/locator labels and whitespace;34raw/readerpairs rehashed. Additional same-raw previous selected source reading reused, without assuming all current reader bytes identical.",
+  "old_topic_spots": "Actual sampled rows across old99payroll/54formation maps; prior complete original body reading and exact complete inverse/oldURLorder/H2/metadata/byline/CTA proof.",
+  "findings_closed": [
+    "F-L05: payroll99 correct employer20day invoice anchor atAMEGreg305, notpersonal306",
+    "F-L06: payroll93 actual Nordicwork/socialinsurance limb ALS314 appended",
+    "F-L07: formation12 ownerwageA/B start38 and formation7 actual\u00a738 opening511 appended; full511\u2013519 conditions actuallyread",
+    "F-L08: payroll47 nextday315 pluspublication12Oct326 appended"
+  ],
+  "limitations": "No full acquired-law read, real filing, professional attestation or all-country completion. Browser acquisition failures/law-not-found pages are not law. Full rule-builder output was truncated once and is not claimed as complete source reading."
+}

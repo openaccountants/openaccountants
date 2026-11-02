@@ -1,0 +1,107 @@
+Dividend tax refunds -Hopp til høvuðsinnihald (Skip to main content)
+Individuals Business TAKS
+Føroyskt
+Search
+Borgaragluggin
+Fyri at rita inn skalt tú hava Samleikan
+Hevur tú Samleikan?
+Rita inn Hevur tú ikki Samleikan?
+Stovna Samleikan
+Vinnugluggin
+Fyri at rita inn skalt tú hava ein brúkara og Samleikan
+Hevur tú tað?
+Rita inn
+Hevur tú ikki ein brúkara?
+Stovna brúkara
+Hevur tú ikki Samleikan?
+Stovna Samleikan
+Business
+Tax
+Dividend tax refunds
+Read Print
+Dividend tax refunds
+When individuals and companies based in other countries pay taxes on dividends from Faroese companies in the Faroe Islands and their home country, they may apply for a dividend tax refund, provided that there is a valid double-taxation agreement in place with that country.
+Change of administrative practice (from 1. May 2026)
+Change of administrative practice.
+Concerning the statute of limitations applicable to claims for reimbursement of dividend tax.
+Under Faroese law, a general statute of limitations applies to monetary claims, including tax claims, which provides for a limitation period of five years. In addition, a separate three‑year deadline applies to requests for amendment of tax assessments.
+The change is made in light of the fact that TAKS considers an application for reimbursement of dividend tax to constitute a request for an amendment of the tax assessment.
+Pursuant to Section 8(2) of the Tax Administration Act, a taxpayer may, no later than three years after the end of the income year, submit new information that justifies an amendment of the tax assessment.
+On this basis, the statute of limitations will henceforth be three years.
+The change enters into force on 1. of May 2026.
+Please note that a new digital form has been created for this purpose and can be found on the right-hand side under Files.
+Terms and applications
+When individuals and companies, based in other countries, receive dividends from Faroese companies, they incur limited tax liability in the Faroe Islands. As they are based in other countries, they are also liable to pay tax on the dividends there. This may result in double-taxation. In order to resolve this issue, the Faroe Islands have entered into double-taxation agreements with various countries, stipulating how dividend tax should be divided (see outline below). The procedure is for the dividend paying company to retain the percentage rate valid in the Faroe Islands (normally 35%), after which the recipient may apply for a refund, down to the percentage rate outlined in the appropriate double-taxation agreement.
+The chart below shows an outline of countries that have entered into a double-taxation agreement with the Faroe Islands regarding dividend tax. The chart shows the percentage rate that the Faroes should keep.
+The statute of limitations for applying for a refund is 3 years from the end of the year in which the distribution was made.
+The statute of limitations for applying for a refund is 3 years from the end of the year in which the distribution was made.
+CountryCompanies hold at least 10% Other
+Britain5%15%
+India15% (own min. 25%)25%
+Switzerland0%15%
+Nordic countries0%15%
+Example
+An example could be the case of an individual based in Denmark, receiving dividends from a company based in the Faroe Islands. The dividend paying company would, in this example, be responsible for withholding the dividend tax rate valid in the Faroe Islands, usually 35%. In order to resolve the issue of double-taxation, the double-taxation agreement among the Nordic countries would be used. This agreement stipulates that the Faroe Islands are entitled to 15% of dividend tax, while the remaining tax shall be refunded. Were the recipient based in India, the tax percentage owed to the Faroe Islands would be 25%.
+You must enclose the following with the application:
+Documentation detailing the received dividend and paid tax.
+Confirmation from the tax authorities where the applicant is based.
+Companies in the Nordic countries and Switzerland that hold at least 10%
+For companies that are based in the Nordic countries or Switzerland and hold 10% or more, the practice is that the distributing company can get a confirmation from TAKS which releases them from withholding dividend tax. The conditions are that the distribution goes to a foreign company which is based in the Nordic countries or Switzerland and that the company holds at least 10% of the distributing company.
+The application must contain:
+The recipient of the distribution
+The amount
+The following must also be enclosed:
+Documentation of tax liability in the home country
+Details about owner relations
+TAKS must receive and approve the application before the dividends can be distributed. After this, the Faroese company may distribute dividends without withholding tax. Remember to enclose the confirmation with the dividend statement.
+If the application has not been confirmed by the time of distribution, the Faroese company must withhold tax and pay it to TAKS. The foreign company may then apply for a dividend tax refund, in line with the practice mentioned above.
+Apply for each distribution separately.
+Find the application for a dividend tax refund in an English and a Danish version under forms to the right.
+Worth knowing before you apply
+Currency
+The new digital form, used to apply for a refund of dividend tax, only accepts amounts in Norwegian and Danish kroner.
+The payment will only be made in Danish kroner.
+You must enclose the following with the application:
+Documentation detailing the received dividend and paid tax.
+Confirmation from the tax authorities where the applicant is based.
+Files
+Tax residency statement for the purpose of Faroese dividend tax refunds
+Apply here: New digital form
+Relevant links
+Tax Administration Act (in faroese)
+Limitation of certain claims (in danish)
+Personal data in connection with refunds of dividend tax
+Contact
+TAKS
+Smyrilsvegur 20
+Postboks 2151
+FO 110 Tórshavn
+Faroe Islands
+Tel.: +298 35 26 00
+Email: taks@taks.fo
+VAT-number: 443921
+Opening hours:
+Tel: Mon-Thu 10am-12pm
+Reception: Mon-Thu 10am-12pm
+Banks
+BankReg.AccountBIC/SWIFTIBAN
+Betri Banki9181152.861.2EIKBFOTFFO65 9181 0001 5286 12
+BankNordik6460101.104.0FIFBFOTXFO29 6460 0001 0110 40
+Norðoya Sparikassi9865100.188.9NOYAFO21FO09 9865 0001 0018 89
+Suðuroyar Sparikassi9870100.084.6SUSPFOT1FO21 9870 0001 0008 46
+Danske Bank3100169.349.92DABADKKKDK88 3000 0016 9349 92
+EAN/GLN nr.: 5797100000119
+Email bills to: rokning@taks.fo
+About TAKS
+Customer Service
+Data Protection
+Appeal Options
+Forms
+FAQ
+Follow Us
+LinkedIn
+Ment, forritað og sniðgivið hava Sansir
+x
+Hey, eg eiti Eyðei og eri nýggi TAKS-botturin.
+Hevur tú ein TAKS-spurning?
+Spyr meg bara.

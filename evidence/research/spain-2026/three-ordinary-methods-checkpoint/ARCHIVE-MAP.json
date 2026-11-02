@@ -1,0 +1,2235 @@
+{
+  "baseline_head": "b578092604d51b9152b4f291c28abdf87f30986e",
+  "scope": "Three separately reviewed bounded ordinary methods, exact combined-country preservation and finite disposition. Source-cited draft; unresolved legal questions remain. No human review dependency or country-complete/attestation claim.",
+  "verified_reviews": [
+    {
+      "role": "Galicia-independent",
+      "report_sha256": "efa5e3565c73c84deaf247289270c5ad073642dabb4fec8b029e2942b251b462",
+      "manifest_sha256": "be812b4712b042616f3c0ed95774fb2d29d9211d9ef996a2bc28f31ad1db671d",
+      "report": "spain-Galicia-council-85-independent-review/report.md",
+      "manifest": "spain-Galicia-council-85-independent-review/artifact-manifest.json",
+      "members_verified": 11
+    },
+    {
+      "role": "RETA-independent",
+      "report_sha256": "939d12f3a4adbe52210688d113fed8555df2d6917b02d7971ca74df0141df41b",
+      "manifest_sha256": "ba6cd74b72aa4e24ab3d43461b798ead914dfdcfb0365fddaebb63ec8f2e658c",
+      "report": "spain-RETA2026-published-administrative-independent-review/report.md",
+      "manifest": "spain-RETA2026-published-administrative-independent-review/artifact-manifest.json",
+      "members_verified": 8
+    },
+    {
+      "role": "Alava-independent",
+      "report_sha256": "5a419cc97bebe9e1f896f95f399bd87c659396143284da1149920159723f7d90",
+      "manifest_sha256": "1e9f446972f1e44efe3967049a87db5f0d33e76c4625772dc3f3e89d2016cbb2",
+      "report": "spain-Alava-extraordinary-profit-measurement-independent-review/report.md",
+      "manifest": "spain-Alava-extraordinary-profit-measurement-independent-review/artifact-manifest.json",
+      "members_verified": 14
+    },
+    {
+      "role": "combined-independent",
+      "report": "spain-three-method-country-checkpoint-independent-review/report.md",
+      "report_sha256": "7a1578b432841039f040e6708fe987a141e7a9662e08a93d544c9c4b16073fde",
+      "manifest": "spain-three-method-country-checkpoint-independent-review/artifact-manifest.json",
+      "manifest_sha256": "e35738a348b638bbbb2eb9e6a9d126ceabf5e98e50904f7abb99f7c23fa64cd7",
+      "members_verified": 31
+    }
+  ],
+  "files": [
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/artifact-manifest.json",
+      "original_sha256": "3c910889e42c44b2b7901ae18824f84d40e00df647af1f841525b51a6a856659",
+      "original_bytes": 1185,
+      "stored_path": "archive/3c/3c910889e42c44b2b7901ae18824f84d40e00df647af1f841525b51a6a856659.gz",
+      "stored_sha256": "ede56abf84041b672744f7bcd0cc592b0e5444df7316ac19f11035de5ecbfa57",
+      "stored_bytes": 548
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/baseline-README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/baseline-es-foral-corporate-tax.md",
+      "original_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "original_bytes": 122089,
+      "stored_path": "archive/c9/c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1.gz",
+      "stored_sha256": "db8fc112c0acb6c32149aac425abcd5e07950cea05ee62b97a1b6744a414a1b0",
+      "stored_bytes": 34716
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/candidate-README.md",
+      "original_sha256": "4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6",
+      "original_bytes": 20450,
+      "stored_path": "archive/4d/4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6.gz",
+      "stored_sha256": "e0258ee68e075bffaf9091c381d7a4906d9526c651be69b0ecbe621d481c008f",
+      "stored_bytes": 7656
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "6389c72f7d412e8ae62231ba253356b7093627b970a38a5c4cff555dde041bf9",
+      "original_bytes": 131468,
+      "stored_path": "archive/63/6389c72f7d412e8ae62231ba253356b7093627b970a38a5c4cff555dde041bf9.gz",
+      "stored_sha256": "b1dbe482778af22a82e016bc4c7a01588525bfb74fef9b162e83770e7918eeca",
+      "stored_bytes": 37657
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/draft-options.md",
+      "original_sha256": "38802a0d8fd0f78428e21609066ae6f95bde6882213fbff53b828239a1c21a4b",
+      "original_bytes": 462,
+      "stored_path": "archive/38/38802a0d8fd0f78428e21609066ae6f95bde6882213fbff53b828239a1c21a4b.gz",
+      "stored_sha256": "78ae943d9e7ed4b9d0dd1faf15de059901a9537a04a5ee94edf34e8eecefc081",
+      "stored_bytes": 308
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/exact-replacements.json",
+      "original_sha256": "3debccda37db8be6ca7cb5ac80a942e7e84b0b53a4dc323078817bc9dad17771",
+      "original_bytes": 15451,
+      "stored_path": "archive/3d/3debccda37db8be6ca7cb5ac80a942e7e84b0b53a4dc323078817bc9dad17771.gz",
+      "stored_sha256": "d960a65d7c8512c08c07674f5beee42e0c6993eae5b5090dd1ab67293b58c895",
+      "stored_bytes": 5070
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/preservation-proof.json",
+      "original_sha256": "573bf3d0c26ddec94b239a67f5ca7dbce4977f451bca041ee8d471624acc0014",
+      "original_bytes": 440,
+      "stored_path": "archive/57/573bf3d0c26ddec94b239a67f5ca7dbce4977f451bca041ee8d471624acc0014.gz",
+      "stored_sha256": "20702b0d182d8e8b9e1f6b96074c5e9350664242930c0173ee0f583cb1453c3d",
+      "stored_bytes": 254
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-format-successor/report.md",
+      "original_sha256": "827844de7685a41d8db4ef2b2af75b3552b37fa76c1872a8033c6192281b0910",
+      "original_bytes": 1116,
+      "stored_path": "archive/82/827844de7685a41d8db4ef2b2af75b3552b37fa76c1872a8033c6192281b0910.gz",
+      "stored_sha256": "1ed86a240cf4f17517c3554cc6cb95ae44440fb690910f4dceae0482fe06cfa6",
+      "stored_bytes": 632
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/artifact-manifest.json",
+      "original_sha256": "1e9f446972f1e44efe3967049a87db5f0d33e76c4625772dc3f3e89d2016cbb2",
+      "original_bytes": 4655,
+      "stored_path": "archive/1e/1e9f446972f1e44efe3967049a87db5f0d33e76c4625772dc3f3e89d2016cbb2.gz",
+      "stored_sha256": "62bb9872ecdd5b2a2d2510b43a3426a3f088751345f54dfb917c24a9a5f9e341",
+      "stored_bytes": 1081
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/check-harness-notes.txt",
+      "original_sha256": "b5677fa55f73c459d8a3e8b47632bd8cd23d5036d4860f1ba46073e2fdb8288b",
+      "original_bytes": 482,
+      "stored_path": "archive/b5/b5677fa55f73c459d8a3e8b47632bd8cd23d5036d4860f1ba46073e2fdb8288b.gz",
+      "stored_sha256": "b0942909904080e6d19cf3a288c2b0630a5b5ea91a2ae14f80ef6add71bf2338",
+      "stored_bytes": 336
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/check.py",
+      "original_sha256": "9f6d294d33e4ae44a767cefb6f878b35b71ef9280dff8789dbbc34e08e52c394",
+      "original_bytes": 7006,
+      "stored_path": "archive/9f/9f6d294d33e4ae44a767cefb6f878b35b71ef9280dff8789dbbc34e08e52c394.gz",
+      "stored_sha256": "8eab9fd01a51f15bc07ec9c3458012ac47381cae6f6a24e19d8e1032f56b255d",
+      "stored_bytes": 3293
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/external-identity-check.json",
+      "original_sha256": "ab64dd23e354f9502f3111c0f0caeb5832852d3ecfbc08ea1c0393df603bd7bf",
+      "original_bytes": 608,
+      "stored_path": "archive/ab/ab64dd23e354f9502f3111c0f0caeb5832852d3ecfbc08ea1c0393df603bd7bf.gz",
+      "stored_sha256": "5efec7863c416c32b1d3dbbab57b02f1d8f7d94b201fde1f1c875acb2499c135",
+      "stored_bytes": 314
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/final-format-closure-proof.json",
+      "original_sha256": "714395d3990273fe72f6dfbc0029934f565e7f6398f144a1a0ba4b5e6871910e",
+      "original_bytes": 1256,
+      "stored_path": "archive/71/714395d3990273fe72f6dfbc0029934f565e7f6398f144a1a0ba4b5e6871910e.gz",
+      "stored_sha256": "6e5542d74ddfa04c75d460a9e4ec82c4debc438fa868d58525575379d6498183",
+      "stored_bytes": 616
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/final-format-closure.py",
+      "original_sha256": "0ed8015f2721ce280ae0da80fc534bdc4b5c1e1ff502525eee95536c85abd2c5",
+      "original_bytes": 4172,
+      "stored_path": "archive/0e/0ed8015f2721ce280ae0da80fc534bdc4b5c1e1ff502525eee95536c85abd2c5.gz",
+      "stored_sha256": "2999affcd6382ac14c7a53304d31c6303ef3d455a3b0b45ef24fe29c9eb091c0",
+      "stored_bytes": 2150
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/final-oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "stored_bytes": 71
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/findings-and-disposition.json",
+      "original_sha256": "f49593fe881125d7f7991469c5ca2bb65725e3efc2dad912f728d67fe0c78a99",
+      "original_bytes": 1486,
+      "stored_path": "archive/f4/f49593fe881125d7f7991469c5ca2bb65725e3efc2dad912f728d67fe0c78a99.gz",
+      "stored_sha256": "912f4f7ff0da1735a83027c479aac5ade0bbcd4a9fd9655efef93e6a67b34f81",
+      "stored_bytes": 825
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/freeze.json",
+      "original_sha256": "69980b1682261d2172ae2fb50cedc121b65b4c3d30f7632294364831ea9d94b4",
+      "original_bytes": 614,
+      "stored_path": "archive/69/69980b1682261d2172ae2fb50cedc121b65b4c3d30f7632294364831ea9d94b4.gz",
+      "stored_sha256": "e06657b2a9bbbc59354d21e21e42d280201a6336b062f0b60bda42ca5327b0f2",
+      "stored_bytes": 405
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/independent-controls.json",
+      "original_sha256": "69bbda905d2f175038d32ac7150add36dd4bcbaa778dd0ec404f95b18e44d3b4",
+      "original_bytes": 4526,
+      "stored_path": "archive/69/69bbda905d2f175038d32ac7150add36dd4bcbaa778dd0ec404f95b18e44d3b4.gz",
+      "stored_sha256": "44aeee334370aa3ab7c4c6b0a0366611bf729d9235835bfe94a734ba91817782",
+      "stored_bytes": 828
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/independent-decimals.json",
+      "original_sha256": "1e516965d3ae7b7389ce6f9a0f22adae67e3d894459b7c04e320c9d79f21fdc0",
+      "original_bytes": 529,
+      "stored_path": "archive/1e/1e516965d3ae7b7389ce6f9a0f22adae67e3d894459b7c04e320c9d79f21fdc0.gz",
+      "stored_sha256": "b05019dea10eba79beaf415e0ce96ea5aae7f45971a6bcb92810a2e5d80be50d",
+      "stored_bytes": 285
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/own-actual-read-excerpts.json",
+      "original_sha256": "acc949277e8c101273e71a6fd79f233d2a7f8bbaa4c0de5deae9bca095b24a39",
+      "original_bytes": 115669,
+      "stored_path": "archive/ac/acc949277e8c101273e71a6fd79f233d2a7f8bbaa4c0de5deae9bca095b24a39.gz",
+      "stored_sha256": "d0278f09a99b8703d2f6b6372140cac4080d81287c666742543d4fc43fd33fcd",
+      "stored_bytes": 27577
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/own-source-read-ledger.json",
+      "original_sha256": "8cf502e70535b8a118d06941783bab9cafad30a4942e6ebb9e110878aa32e226",
+      "original_bytes": 9376,
+      "stored_path": "archive/8c/8cf502e70535b8a118d06941783bab9cafad30a4942e6ebb9e110878aa32e226.gz",
+      "stored_sha256": "135de23a07395a6232e964a1d37a72c9f0f37ac552abc7564bc6b31ded1c3a54",
+      "stored_bytes": 1816
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/preservation-proof.json",
+      "original_sha256": "81101d4fca7c4ecbd98546fe48394ab2a51e1ead5b9e23ec591f98de323f0c73",
+      "original_bytes": 1639,
+      "stored_path": "archive/81/81101d4fca7c4ecbd98546fe48394ab2a51e1ead5b9e23ec591f98de323f0c73.gz",
+      "stored_sha256": "f4a6afe90d6360ce7676a1934b1e417fba8d90f867766231406b3f74b5a22c20",
+      "stored_bytes": 435
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/read-scope-notes.txt",
+      "original_sha256": "52a48b35df37c574eab0fdbdf07cb6836eb90d4f17874f848701cb275ef911ad",
+      "original_bytes": 722,
+      "stored_path": "archive/52/52a48b35df37c574eab0fdbdf07cb6836eb90d4f17874f848701cb275ef911ad.gz",
+      "stored_sha256": "15a12c1cb08d32c21d656781b0d9cc157a97afe93ff6fd4c30e382f876023c22",
+      "stored_bytes": 472
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-independent-review/report.md",
+      "original_sha256": "5a419cc97bebe9e1f896f95f399bd87c659396143284da1149920159723f7d90",
+      "original_bytes": 6584,
+      "stored_path": "archive/5a/5a419cc97bebe9e1f896f95f399bd87c659396143284da1149920159723f7d90.gz",
+      "stored_sha256": "39c87ec2f50c7e55cee6923e0dd525b96273780861e7b262c3418593b140d43a",
+      "stored_bytes": 3258
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/README.md.diff",
+      "original_sha256": "7e41929ec7499248b5895e5215b3dcdc1b0c6296ae625b836fd8cb36cfb2b8a2",
+      "original_bytes": 13999,
+      "stored_path": "archive/7e/7e41929ec7499248b5895e5215b3dcdc1b0c6296ae625b836fd8cb36cfb2b8a2.gz",
+      "stored_sha256": "c1a273a2f6ad19299340c64c01fd34075243341a6e1d5072fa5b7ebaf1c49738",
+      "stored_bytes": 5216
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/acquisition-receipts-current.json",
+      "original_sha256": "80efec14fb98b0275ca3403b8c9c94bb0edbb0aeb7ac1c8bb5d7d0e3484a5fa1",
+      "original_bytes": 2346,
+      "stored_path": "archive/80/80efec14fb98b0275ca3403b8c9c94bb0edbb0aeb7ac1c8bb5d7d0e3484a5fa1.gz",
+      "stored_sha256": "2d31c62c9a737248b2f5d5ca6329cbab34952e3f0122d65f4b0347172b663635",
+      "stored_bytes": 875
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/acquisition-receipts-supplement.json",
+      "original_sha256": "5949ec20cca3fc924309d4bb8874b609d5caf856e10ad005675af91eff21c9c1",
+      "original_bytes": 9725,
+      "stored_path": "archive/59/5949ec20cca3fc924309d4bb8874b609d5caf856e10ad005675af91eff21c9c1.gz",
+      "stored_sha256": "86e0cbffa08306e6969396b5c5b8a3b514e72bcea181fa10cd8352f1f8e20937",
+      "stored_bytes": 2371
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/acquisition-receipts.json",
+      "original_sha256": "47f1580c0744c79a3032d1c3ca34b2be9196c40ab41864c50f789d7bf767fb6c",
+      "original_bytes": 426,
+      "stored_path": "archive/47/47f1580c0744c79a3032d1c3ca34b2be9196c40ab41864c50f789d7bf767fb6c.gz",
+      "stored_sha256": "e92d38d73cb0974d0ce0b9ace22d1cbee3365aacb74b59fc38db51a426b89d5b",
+      "stored_bytes": 211
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/actual-read-excerpts.txt",
+      "original_sha256": "bf48f13491d0a4f7f1d4cb5e39e6767d4e15b6657f0e8c35b2b2d4fe578470bf",
+      "original_bytes": 115228,
+      "stored_path": "archive/bf/bf48f13491d0a4f7f1d4cb5e39e6767d4e15b6657f0e8c35b2b2d4fe578470bf.gz",
+      "stored_sha256": "aafe02352ef5e60270d4130181ff3bcdd9d59375fa6170ed64c53c2c04358bbf",
+      "stored_bytes": 30705
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/artifact-manifest.json",
+      "original_sha256": "e3f9511c478b3bcb23c1f22fcea843891c66da13e1c332dca17c752450d3f34d",
+      "original_bytes": 16318,
+      "stored_path": "archive/e3/e3f9511c478b3bcb23c1f22fcea843891c66da13e1c332dca17c752450d3f34d.gz",
+      "stored_sha256": "0cc20a575177e7a4a11666483a97b249e08478331fe4f8bfc3214e129e3b9ef8",
+      "stored_bytes": 3205
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/baseline-README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/baseline-es-foral-corporate-tax.md",
+      "original_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "original_bytes": 122089,
+      "stored_path": "archive/c9/c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1.gz",
+      "stored_sha256": "db8fc112c0acb6c32149aac425abcd5e07950cea05ee62b97a1b6744a414a1b0",
+      "stored_bytes": 34716
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/baseline.json",
+      "original_sha256": "940eca8561c6aa0683a57043675e50568866f266e68d78f53a5bbb7c80625c3f",
+      "original_bytes": 336,
+      "stored_path": "archive/94/940eca8561c6aa0683a57043675e50568866f266e68d78f53a5bbb7c80625c3f.gz",
+      "stored_sha256": "29ec970eec4ad2179fee67f86ab8c47d9b06aeb558e347fb915141a331fcef53",
+      "stored_bytes": 234
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/candidate-README.md",
+      "original_sha256": "4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6",
+      "original_bytes": 20450,
+      "stored_path": "archive/4d/4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6.gz",
+      "stored_sha256": "e0258ee68e075bffaf9091c381d7a4906d9526c651be69b0ecbe621d481c008f",
+      "stored_bytes": 7656
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "76a7a87507206f1fd77e5aa5bdf12d1bfca7c326baaba04f5d07893960a6339e",
+      "original_bytes": 130971,
+      "stored_path": "archive/76/76a7a87507206f1fd77e5aa5bdf12d1bfca7c326baaba04f5d07893960a6339e.gz",
+      "stored_sha256": "f502af2d09b00ed92545c5d9c1176745a9fc417a393e4ab94eda54150782a2ad",
+      "stored_bytes": 37514
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/compose.py",
+      "original_sha256": "a9db91348ffccd8d1520c9977826fa635f010937785c23b44f11654b22cb73bf",
+      "original_bytes": 7819,
+      "stored_path": "archive/a9/a9db91348ffccd8d1520c9977826fa635f010937785c23b44f11654b22cb73bf.gz",
+      "stored_sha256": "ab0746f92547d101c543de637a381774137c60016787ad0f3912d205e6db69af",
+      "stored_bytes": 3069
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/control-initial-failure.txt",
+      "original_sha256": "eb4106e6d4b8fff840c371c660ec0dad71c52bb9ad9849a013442dde5065615c",
+      "original_bytes": 475,
+      "stored_path": "archive/eb/eb4106e6d4b8fff840c371c660ec0dad71c52bb9ad9849a013442dde5065615c.gz",
+      "stored_sha256": "7f36c843e9cc54bddb3f6427f4fdb03a6d0b8fd6f55b904e8a3f6836fdbe34c8",
+      "stored_bytes": 326
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/controls.py",
+      "original_sha256": "6e867ae4335db5c337edb7b112ceb9713867fdafaa6b1a064764db4303ee9263",
+      "original_bytes": 3359,
+      "stored_path": "archive/6e/6e867ae4335db5c337edb7b112ceb9713867fdafaa6b1a064764db4303ee9263.gz",
+      "stored_sha256": "78c25fc3320f6f09f2336afa7266dbe7e1f3b1d985275910b2380650a5121c39",
+      "stored_bytes": 1557
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/draft-options.md",
+      "original_sha256": "f638b9d50b05dfa176cc48dab96317ab83fecae6406aac1df2b7c91b460d0abd",
+      "original_bytes": 3297,
+      "stored_path": "archive/f6/f638b9d50b05dfa176cc48dab96317ab83fecae6406aac1df2b7c91b460d0abd.gz",
+      "stored_sha256": "1d67d2594160d5d1b82495b5ff9d4e8e093aa9beb00df28820bc9322cd801405",
+      "stored_bytes": 1700
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/es-foral-corporate-tax.md.diff",
+      "original_sha256": "198ec58d6110d4cea276823f8a8cdd4bea4796472d8fa2d66826835a3a8785e2",
+      "original_bytes": 22288,
+      "stored_path": "archive/19/198ec58d6110d4cea276823f8a8cdd4bea4796472d8fa2d66826835a3a8785e2.gz",
+      "stored_sha256": "1993fdb9478c81f903ea5b214ff37b2af08bba10778d7fd23da604858eeeb14a",
+      "stored_bytes": 7221
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/exact-replacements.json",
+      "original_sha256": "70c9ee000db098867947725b90e7a7bcf22451d8f235a773918c8e5923701597",
+      "original_bytes": 14325,
+      "stored_path": "archive/70/70c9ee000db098867947725b90e7a7bcf22451d8f235a773918c8e5923701597.gz",
+      "stored_sha256": "10ba8665351bdfdcb6ee4c4f2d7f3ca0898e3407ad6a6461391f2a59bcd9b31f",
+      "stored_bytes": 4764
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/extract-supplement.py",
+      "original_sha256": "b2e12f01a65dff10c7471f5300276bae181130875033cf83c6fb0a46c00c085f",
+      "original_bytes": 1607,
+      "stored_path": "archive/b2/b2e12f01a65dff10c7471f5300276bae181130875033cf83c6fb0a46c00c085f.gz",
+      "stored_sha256": "850086dc6cbc441970cc08d65607414def38bff9390908d034adff5d47358cc6",
+      "stored_bytes": 714
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/fetch-current.py",
+      "original_sha256": "98c34c8cfaee0615ff470743c7f07c73d9b915c0d370e73f0a22779b490d9bca",
+      "original_bytes": 963,
+      "stored_path": "archive/98/98c34c8cfaee0615ff470743c7f07c73d9b915c0d370e73f0a22779b490d9bca.gz",
+      "stored_sha256": "7fac2ba2421646d126f6dde91998eb6a9853a85ad588f6f135bd07e844ed307e",
+      "stored_bytes": 560
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/fetch-supplement.py",
+      "original_sha256": "cfe0b484bb8573ef546d0c6453301e75968fe70c9e9f994135143a94b4536480",
+      "original_bytes": 1563,
+      "stored_path": "archive/cf/cfe0b484bb8573ef546d0c6453301e75968fe70c9e9f994135143a94b4536480.gz",
+      "stored_sha256": "81ff7b53e0d3f7837037ac6595acaf7accbb22e3d1465f79950b1db563d688ea",
+      "stored_bytes": 787
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/freeze.json",
+      "original_sha256": "db0f60cd33a7051f5868a0b5cb2f71e97f0d3bd0452dfe17582ac3a2a1fcf307",
+      "original_bytes": 1932,
+      "stored_path": "archive/db/db0f60cd33a7051f5868a0b5cb2f71e97f0d3bd0452dfe17582ac3a2a1fcf307.gz",
+      "stored_sha256": "a22d93b727e81757569bb07f4a6199e3827983ba169986c4e0a93b6dfb32d665",
+      "stored_bytes": 840
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/method-addition.md",
+      "original_sha256": "0d6f382fb5bfe949ce838d25f3873061a0762e3e20af5a6d52f8ba185e11de4a",
+      "original_bytes": 7652,
+      "stored_path": "archive/0d/0d6f382fb5bfe949ce838d25f3873061a0762e3e20af5a6d52f8ba185e11de4a.gz",
+      "stored_sha256": "e3c7815ddaa816c9bb9eef528080c63e11d67570684a447a6d0ed72b51da49ae",
+      "stored_bytes": 3346
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/own-controls.json",
+      "original_sha256": "6ac82ad26057db439136aac4afd8dee0c4c623a9e4ce2856e62e006b224f5db5",
+      "original_bytes": 5963,
+      "stored_path": "archive/6a/6ac82ad26057db439136aac4afd8dee0c4c623a9e4ce2856e62e006b224f5db5.gz",
+      "stored_sha256": "a9931ace5fc36354b02650bb17b02e3c482cb52155283dc567fd5c64f25bccc4",
+      "stored_bytes": 1350
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/own-example-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "stored_bytes": 71
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/preservation-proof.json",
+      "original_sha256": "770e4d69b05a14010b05caf4c365ecc4b9663eea01ad6e7c88ed0df43e2591ec",
+      "original_bytes": 864,
+      "stored_path": "archive/77/770e4d69b05a14010b05caf4c365ecc4b9663eea01ad6e7c88ed0df43e2591ec.gz",
+      "stored_sha256": "9c79577e67c55bc92a4e39641729c113c0ebeb4c8168325f77fb19159b0adf69",
+      "stored_bytes": 368
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/read-ledger.py",
+      "original_sha256": "24fad4bd965f5108a593fba6a68c61b44c13aa354460316dfe92dcbd06add693",
+      "original_bytes": 4316,
+      "stored_path": "archive/24/24fad4bd965f5108a593fba6a68c61b44c13aa354460316dfe92dcbd06add693.gz",
+      "stored_sha256": "1ca42d32bc6387abd9daba98e5271037f25bc2276790c94a26cac3a63369c4a6",
+      "stored_bytes": 2226
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/reader-identities.json",
+      "original_sha256": "d0ada8accfda6d346175ea44389487a2bc10a36fec4785dd64db1bf0ef456727",
+      "original_bytes": 916,
+      "stored_path": "archive/d0/d0ada8accfda6d346175ea44389487a2bc10a36fec4785dd64db1bf0ef456727.gz",
+      "stored_sha256": "3990bd999c4844873a894d9217f2eff4b21209338681732b455e5f0f0a9e1daf",
+      "stored_bytes": 452
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/scope-and-failures.json",
+      "original_sha256": "5136e772538f6ca8ba33e294cef8e8be1183d3ebfa732b19f804bea6186a32da",
+      "original_bytes": 1381,
+      "stored_path": "archive/51/5136e772538f6ca8ba33e294cef8e8be1183d3ebfa732b19f804bea6186a32da.gz",
+      "stored_sha256": "8789cfd5784549d4ae0b2a7f73dbf8110dbc96e46080f0396f357c8f47956606",
+      "stored_bytes": 819
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/source-read-ledger.json",
+      "original_sha256": "ceca73e2c202138a1907be83a378bfa0b02638d52c0ca7be207bdc62002c72ec",
+      "original_bytes": 9622,
+      "stored_path": "archive/ce/ceca73e2c202138a1907be83a378bfa0b02638d52c0ca7be207bdc62002c72ec.gz",
+      "stored_sha256": "f072522149a08e230dd3c641676836dcc5187b90f5181d5e302f3a7ff5c0b175",
+      "stored_bytes": 2524
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/Codigo-Comercio-current.html",
+      "original_sha256": "89ab14b72c92da842db287f73ed27baae02984aab9b9949424a9e29e45b8881b",
+      "original_bytes": 683465,
+      "stored_path": "archive/89/89ab14b72c92da842db287f73ed27baae02984aab9b9949424a9e29e45b8881b.gz",
+      "stored_sha256": "a2786b9b28dd04450bbf47f721eb2bd0729d8b96a4cca2ab723bb7309e19dd12",
+      "stored_bytes": 93455
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/Codigo-Comercio-current.reader.txt",
+      "original_sha256": "78426271edd87faf7778861c7f2e475fcf03a30fcbe77766f0d4a8e3e4a827b1",
+      "original_bytes": 245898,
+      "stored_path": "archive/78/78426271edd87faf7778861c7f2e475fcf03a30fcbe77766f0d4a8e3e4a827b1.gz",
+      "stored_sha256": "7df1ba90fd540f0e809f5cde5656699df9af05000a84504ca101070e6f3fc198",
+      "stored_bytes": 67212
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/DF42-2025.pdf",
+      "original_sha256": "08a259a6ada4d5c646ce77451505f3a55c33be381747aabd380b4ffbde608cb1",
+      "original_bytes": 541986,
+      "stored_path": "archive/08/08a259a6ada4d5c646ce77451505f3a55c33be381747aabd380b4ffbde608cb1.gz",
+      "stored_sha256": "474af3eb0546e7c106c5d6e0c68de213958b0d5c68367cc18297dd57370f1768",
+      "stored_bytes": 316818
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/DF42-2025.reader.txt",
+      "original_sha256": "bb53e1fe923e6942c9a96d90d125f10e044a7fade6b45d852360c51d11ffabb1",
+      "original_bytes": 111696,
+      "stored_path": "archive/bb/bb53e1fe923e6942c9a96d90d125f10e044a7fade6b45d852360c51d11ffabb1.gz",
+      "stored_sha256": "cee8caf9e91f1259f9d5bf4b15c864d10c627d87850ed3341dd0e622565ebb69",
+      "stored_bytes": 28330
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/DF42-correction2026.pdf",
+      "original_sha256": "c2814060fd26be75b68bfdad05b4b0afcc48cdb19eba2a69fce6fa0d13e15cdb",
+      "original_bytes": 52345,
+      "stored_path": "archive/c2/c2814060fd26be75b68bfdad05b4b0afcc48cdb19eba2a69fce6fa0d13e15cdb.gz",
+      "stored_sha256": "cd0820d3d0f4dc3214e57ccf69a8943a81541a79cf732027888fd56f4e05672f",
+      "stored_bytes": 39326
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/DF42-correction2026.reader.txt",
+      "original_sha256": "69773ec2071875f63993695583f522765fc2a844d2d82589f14cf2a1450c2568",
+      "original_bytes": 7210,
+      "stored_path": "archive/69/69773ec2071875f63993695583f522765fc2a844d2d82589f14cf2a1450c2568.gz",
+      "stored_sha256": "5d560236e9026432a193a7379bdf137f3523cb1fa9f96e52a452f525c547d2be",
+      "stored_bytes": 1983
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NF17-2025.pdf",
+      "original_sha256": "5e73c5fe154271870d6fa60688da4224637671cecce1bd942e88bb7730fd9d88",
+      "original_bytes": 230655,
+      "stored_path": "archive/5e/5e73c5fe154271870d6fa60688da4224637671cecce1bd942e88bb7730fd9d88.gz",
+      "stored_sha256": "e598b692232de90bf0ddd3e781e331dc3ee7824cd59b84a46b145acdbee86733",
+      "stored_bytes": 206359
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NF17-2025.reader.txt",
+      "original_sha256": "317ee34848610963dbad37f58c48b4e2b5dd1b66e095b6823bb2ce3e03c0cc60",
+      "original_bytes": 41769,
+      "stored_path": "archive/31/317ee34848610963dbad37f58c48b4e2b5dd1b66e095b6823bb2ce3e03c0cc60.gz",
+      "stored_sha256": "0f3f60a68a8f21d83d30c2ab25083e9c7ffd8bbb354fc8d4f6fd9a2af4098d62",
+      "stored_bytes": 10862
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NF21-2025.pdf",
+      "original_sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+      "original_bytes": 621844,
+      "stored_path": "archive/2c/2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4.gz",
+      "stored_sha256": "e06b9bdad796eb76c6774ef2f240898c4157e30b04084b1c53331625bd2ed8f4",
+      "stored_bytes": 334625
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NF21-2025.reader.txt",
+      "original_sha256": "e2ee1c75023246f2f84e6332a135fbac8b71f954f7c9becb64d860b8cdf1d848",
+      "original_bytes": 128912,
+      "stored_path": "archive/e2/e2ee1c75023246f2f84e6332a135fbac8b71f954f7c9becb64d860b8cdf1d848.gz",
+      "stored_sha256": "af0f59907ef1bab8cc6af5ce38c3ecb51824207acd5805d6df4446674b34980b",
+      "stored_bytes": 29513
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NFGT-current.pdf",
+      "original_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+      "original_bytes": 1683910,
+      "stored_path": "archive/8d/8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed.gz",
+      "stored_sha256": "8785563bda2af9aefaa1fb66ad7cae408082e06dc882e6344fcabb57f67676cf",
+      "stored_bytes": 1297101
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/NFGT-current.reader.txt",
+      "original_sha256": "cea9430866aa9e77e4e9deab35b2b7c19a759358e055e92cdf3c518cdbfa6ecd",
+      "original_bytes": 676475,
+      "stored_path": "archive/ce/cea9430866aa9e77e4e9deab35b2b7c19a759358e055e92cdf3c518cdbfa6ecd.gz",
+      "stored_sha256": "8766eace40caed30b614ee602c5da1b2be9919109d685369a1c98ef57215e5b0",
+      "stored_bytes": 160904
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/OF380-2026-model2025.pdf",
+      "original_sha256": "859f005365993fbd4752b49478e1f807a66b38855c1db7f5db71ad9c0faadf75",
+      "original_bytes": 3836929,
+      "stored_path": "archive/85/859f005365993fbd4752b49478e1f807a66b38855c1db7f5db71ad9c0faadf75.gz",
+      "stored_sha256": "fa6e2abd55c4015f6c8b19e457141a5dfe9a1af171cdebfc836079115c8f7f25",
+      "stored_bytes": 2602697
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/OF380-2026-model2025.reader.txt",
+      "original_sha256": "d4e9ef4e2316ca711baffaa9301c0f93f90262f5ddab84d7f97c87ece84679d3",
+      "original_bytes": 1069209,
+      "stored_path": "archive/d4/d4e9ef4e2316ca711baffaa9301c0f93f90262f5ddab84d7f97c87ece84679d3.gz",
+      "stored_sha256": "ccde2b79c5fcc9795307d03a212e1fbc993afbcd80f4e82d8dd1ef1ec32f2205",
+      "stored_bytes": 92052
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/PGC-current.html",
+      "original_sha256": "3a176bf3d7bded15c2be99ca438548de31eb4a4a20a50c292f6ed09ce5c5da17",
+      "original_bytes": 1851507,
+      "stored_path": "archive/3a/3a176bf3d7bded15c2be99ca438548de31eb4a4a20a50c292f6ed09ce5c5da17.gz",
+      "stored_sha256": "ec02d00689960c448f849a4783cb85e6540c25cea2b98e1241115fcad1060c2f",
+      "stored_bytes": 261546
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/PGC-current.reader.txt",
+      "original_sha256": "19f307dd8157fa04f72b1d392fea15bb15c1bf46f3319e3fc7a19a453b60a3a5",
+      "original_bytes": 985891,
+      "stored_path": "archive/19/19f307dd8157fa04f72b1d392fea15bb15c1bf46f3319e3fc7a19a453b60a3a5.gz",
+      "stored_sha256": "a604fe45f19b79e2b79f57665b283ec3802e2a358e50dcb1e6e2b6ec8fd39cbd",
+      "stored_bytes": 211484
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/current-NF37-2013.pdf",
+      "original_sha256": "956e5dad8143b6916c0568906e28b866443929a4d6679135429a01e43521115c",
+      "original_bytes": 1590535,
+      "stored_path": "archive/95/956e5dad8143b6916c0568906e28b866443929a4d6679135429a01e43521115c.gz",
+      "stored_sha256": "ae2f2919691b08edb9f3ceb67d42c95d793bea7b6eb6c60f3dfa7d5af9bca44a",
+      "stored_bytes": 1287617
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/current-NF37-2013.reader.txt",
+      "original_sha256": "18d02d5de812c3b5a7be5a1fa28e1730caf8dba3089327ff6168e5653fb5223b",
+      "original_bytes": 808364,
+      "stored_path": "archive/18/18d02d5de812c3b5a7be5a1fa28e1730caf8dba3089327ff6168e5653fb5223b.gz",
+      "stored_sha256": "f4855c542e409f4f697c47cdc2557f52f21db0093d22b7e71b634c32b9f9eb19",
+      "stored_bytes": 185636
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/current-dispositions.html",
+      "original_sha256": "2039b4f960e6c3cc2c8ccba91f4ec214861a779390322aa66773359152a69220",
+      "original_bytes": 347462,
+      "stored_path": "archive/20/2039b4f960e6c3cc2c8ccba91f4ec214861a779390322aa66773359152a69220.gz",
+      "stored_sha256": "bc47955864c93dabfcd76c692e79835c6d3e194d6918a1ce4debaa01e936f0f4",
+      "stored_bytes": 45557
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/sources/current-dispositions.reader.txt",
+      "original_sha256": "aa6a645b19f1f0beb6dc812bd4354efa3d8395ec763c8d744cd073049f367cc8",
+      "original_bytes": 162038,
+      "stored_path": "archive/aa/aa6a645b19f1f0beb6dc812bd4354efa3d8395ec763c8d744cd073049f367cc8.gz",
+      "stored_sha256": "3e774b82893764c7c4340cd57edf86a15cd14eabc91d2b170c166c3df8935624",
+      "stored_bytes": 18846
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/supplement-reader-identities.json",
+      "original_sha256": "d2f4a5634ae39a85572b136005bfd1ccced24ca82b787bdda22a3d5456a54122",
+      "original_bytes": 1844,
+      "stored_path": "archive/d2/d2f4a5634ae39a85572b136005bfd1ccced24ca82b787bdda22a3d5456a54122.gz",
+      "stored_sha256": "189c8f03f868f1e216d4d3f07612966c4cb1e3075a4471361862dcaab2f434d3",
+      "stored_bytes": 653
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/validation.json",
+      "original_sha256": "347f6a051ad0263eb91b650d788417f3dd10251bd0673e82ca645996de6bb8a4",
+      "original_bytes": 331,
+      "stored_path": "archive/34/347f6a051ad0263eb91b650d788417f3dd10251bd0673e82ca645996de6bb8a4.gz",
+      "stored_sha256": "fbbfa9a8ce1061096693fb1644954cb026c11848d811c4cc21ce47e7a40d36a8",
+      "stored_bytes": 227
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-renewed/writer-report.md",
+      "original_sha256": "c53e0a43451972e1dad36f687ebcdbda00373a11258f2bb876ec363615e0051b",
+      "original_bytes": 4673,
+      "stored_path": "archive/c5/c53e0a43451972e1dad36f687ebcdbda00373a11258f2bb876ec363615e0051b.gz",
+      "stored_sha256": "d9917f1a33c16e37d37be0e1d8278047f49e6c6a70553b1b665dfc189885b2f4",
+      "stored_bytes": 2412
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/artifact-manifest.json",
+      "original_sha256": "a2bd065316672b30a15c601e4eb979366007bd6e81fd5b32877da98a57febea4",
+      "original_bytes": 1186,
+      "stored_path": "archive/a2/a2bd065316672b30a15c601e4eb979366007bd6e81fd5b32877da98a57febea4.gz",
+      "stored_sha256": "557f26468f287a5f79ac9868880e9f1122ce53b3a0e1478ba981852626e13d76",
+      "stored_bytes": 542
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/baseline-README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/baseline-es-foral-corporate-tax.md",
+      "original_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "original_bytes": 122089,
+      "stored_path": "archive/c9/c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1.gz",
+      "stored_sha256": "db8fc112c0acb6c32149aac425abcd5e07950cea05ee62b97a1b6744a414a1b0",
+      "stored_bytes": 34716
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/candidate-README.md",
+      "original_sha256": "4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6",
+      "original_bytes": 20450,
+      "stored_path": "archive/4d/4ddd5a4687605baaa5554fe98fe7a2c94c983b9257a294669fa4fe583a751ea6.gz",
+      "stored_sha256": "e0258ee68e075bffaf9091c381d7a4906d9526c651be69b0ecbe621d481c008f",
+      "stored_bytes": 7656
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "bc497ee02b4dffafb37f3ffcf0a2d7036081e5ff8d47f937e4b7b3c7f4349cf4",
+      "original_bytes": 131411,
+      "stored_path": "archive/bc/bc497ee02b4dffafb37f3ffcf0a2d7036081e5ff8d47f937e4b7b3c7f4349cf4.gz",
+      "stored_sha256": "7756e33ea2aa8c6639c2d62b2431e7544aa3d5a4bf0a4575d1c5fbb77a7bd7f5",
+      "stored_bytes": 37638
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/draft-options.md",
+      "original_sha256": "907a156af15021aa15d6a62d457dbe50095530d8339d408cab4b628afb1d4d31",
+      "original_bytes": 1316,
+      "stored_path": "archive/90/907a156af15021aa15d6a62d457dbe50095530d8339d408cab4b628afb1d4d31.gz",
+      "stored_sha256": "6cb615a98f92df04009d362f9cd55d9ea28791c06a5a6f3680b58ab22a3591aa",
+      "stored_bytes": 743
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/exact-replacements.json",
+      "original_sha256": "410ca48b315ed349c69bb33abd8d7d2a84730377ee9b7b00aa18c8a4a2aa27d2",
+      "original_bytes": 14767,
+      "stored_path": "archive/41/410ca48b315ed349c69bb33abd8d7d2a84730377ee9b7b00aa18c8a4a2aa27d2.gz",
+      "stored_sha256": "69965176ee037c342441fe82200d086416176e60fbeec4ee16ecc31023f909dd",
+      "stored_bytes": 4923
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/preservation-proof.json",
+      "original_sha256": "74d27e958f96cd863a93a8cd849c3cc7552a3fec4e77be5b77bade2cb3ea7990",
+      "original_bytes": 420,
+      "stored_path": "archive/74/74d27e958f96cd863a93a8cd849c3cc7552a3fec4e77be5b77bade2cb3ea7990.gz",
+      "stored_sha256": "ebd0ed9c2621fcbcd2bab96089b7c5a2ee205961e1d636cf18fbad3eea3d3413",
+      "stored_bytes": 254
+    },
+    {
+      "original_path": "spain-Alava-extraordinary-profit-measurement-successor/report.md",
+      "original_sha256": "5a2024a65d788c3e17e5e64b31fe686e277479fb6894cda4584c2856ca0b5fda",
+      "original_bytes": 1986,
+      "stored_path": "archive/5a/5a2024a65d788c3e17e5e64b31fe686e277479fb6894cda4584c2856ca0b5fda.gz",
+      "stored_sha256": "33df66b895ac3a3b113dc7a5107876d27bb4839c678af69d88d4f3584f99da98",
+      "stored_bytes": 1126
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/AEAT-completion.html",
+      "original_sha256": "fc305b7d7d21f151aa312c73217f40e9c31be2bb9a8823b6035ccbe8de4cccb9",
+      "original_bytes": 14891,
+      "stored_path": "archive/fc/fc305b7d7d21f151aa312c73217f40e9c31be2bb9a8823b6035ccbe8de4cccb9.gz",
+      "stored_sha256": "08a647b78bc247397962558fac2b8d9bfba06bd7892fac7294f902acc1b68da2",
+      "stored_bytes": 5137
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/AEAT-completion.reader.txt",
+      "original_sha256": "1ca25321f01217c1c999c90ac6091eff0d693e918dbb6feb1ce38a8d78fb9de1",
+      "original_bytes": 6571,
+      "stored_path": "archive/1c/1ca25321f01217c1c999c90ac6091eff0d693e918dbb6feb1ce38a8d78fb9de1.gz",
+      "stored_sha256": "e1b255c750154b8d7e817f52c37faec3fb009b49ecca598d3ec42bb4c8ca7231",
+      "stored_bytes": 2635
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/AEAT-school-2025.html",
+      "original_sha256": "c1606200164f92956041531bda2d7aab097832cae55747c4722de69244c43de1",
+      "original_bytes": 20411,
+      "stored_path": "archive/c1/c1606200164f92956041531bda2d7aab097832cae55747c4722de69244c43de1.gz",
+      "stored_sha256": "196adbaca723ef88b8a5f8e88314c9fe47cc4b5f9f87e9f646f21a20df4cb23b",
+      "stored_bytes": 6366
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/AEAT-school-2025.reader.txt",
+      "original_sha256": "bf3bde3cba220acaed95e4d562af7f2cbb598fc69c18db13ea0345d976fe0f65",
+      "original_bytes": 8931,
+      "stored_path": "archive/bf/bf3bde3cba220acaed95e4d562af7f2cbb598fc69c18db13ea0345d976fe0f65.gz",
+      "stored_sha256": "31a0dc53c178563165d41d1aaaea0f65a5585d9df51223effa51d77615175205",
+      "stored_bytes": 3435
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/LIRPF-current.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135",
+      "stored_bytes": 249841
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e",
+      "stored_bytes": 187729
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/law-current.html",
+      "original_sha256": "7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1",
+      "original_bytes": 675743,
+      "stored_path": "archive/72/7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1.gz",
+      "stored_sha256": "54fe023466fa052e7fa45f9630c98097b7776827c6f5fb866d1be6001abd1b6c",
+      "stored_bytes": 86721
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/law-current.reader.txt",
+      "original_sha256": "045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633",
+      "original_bytes": 319668,
+      "stored_path": "archive/04/045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633.gz",
+      "stored_sha256": "8bd2dc5aff127dc47187dd125d928dcfb6c3c7909c6799b69fd41d84b58c72c8",
+      "stored_bytes": 60364
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/order-2026.html",
+      "original_sha256": "f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8",
+      "original_bytes": 16330,
+      "stored_path": "archive/f7/f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8.gz",
+      "stored_sha256": "716fb9c94524ad42dd1697f06ee0614e2535bcd7a4101de23f75a9a604433862",
+      "stored_bytes": 5330
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/order-2026.reader.txt",
+      "original_sha256": "6a0ff8d5726adcce136e5853df55861840fd28013858ce8228a41cc6d1eac6c6",
+      "original_bytes": 8415,
+      "stored_path": "archive/6a/6a0ff8d5726adcce136e5853df55861840fd28013858ce8228a41cc6d1eac6c6.gz",
+      "stored_sha256": "226773b406d1d9053308fa02a8f11e755dfa917cbd5e6cb95c7e09ed64074fa2",
+      "stored_bytes": 3059
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/artifact-manifest.json",
+      "original_sha256": "63c9f9fdfc4ee6fe39f2736274ab284a0e80fc5c88efc8c91f3ae939c8b6b1b2",
+      "original_bytes": 2060,
+      "stored_path": "archive/63/63c9f9fdfc4ee6fe39f2736274ab284a0e80fc5c88efc8c91f3ae939c8b6b1b2.gz",
+      "stored_sha256": "2c4a2fb109b06afb425394d1cfa0a3640e99fd36fd4946dd070d9dd0bd3f5042",
+      "stored_bytes": 900
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/baseline-README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/baseline-es-irpf-deductions.md",
+      "original_sha256": "370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb",
+      "original_bytes": 556156,
+      "stored_path": "archive/37/370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb.gz",
+      "stored_sha256": "178a8880cbb714860d1e8508a2e60c05514137f651dcce9952e666b59171003e",
+      "stored_bytes": 158736
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/candidate-README.md",
+      "original_sha256": "370e1712fdf397bcb32599f2cd5a33fc9a48c4bfafc1b4f8a0e978896a761497",
+      "original_bytes": 20373,
+      "stored_path": "archive/37/370e1712fdf397bcb32599f2cd5a33fc9a48c4bfafc1b4f8a0e978896a761497.gz",
+      "stored_sha256": "ac67225eb2b2a5b1c50284f7096e27689e1466610e4cbb9f94768e60dbebf486",
+      "stored_bytes": 7657
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/candidate-es-irpf-deductions.md",
+      "original_sha256": "0e9282199510293760a049cdfb48ffa6125cd90198f5f6dbe90300c31dca14bd",
+      "original_bytes": 553988,
+      "stored_path": "archive/0e/0e9282199510293760a049cdfb48ffa6125cd90198f5f6dbe90300c31dca14bd.gz",
+      "stored_sha256": "9c6c5c4631336fd330fa337a79b665c1a92bbb9a346641b1b04ec5f9d9d26913",
+      "stored_bytes": 158288
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/check-controls.py",
+      "original_sha256": "f0684bd0be9ba319e6bca352007f8dc814b5382d542b6e66fa69f23eba6fd583",
+      "original_bytes": 1771,
+      "stored_path": "archive/f0/f0684bd0be9ba319e6bca352007f8dc814b5382d542b6e66fa69f23eba6fd583.gz",
+      "stored_sha256": "63a0edaf1e5c01801bac01426568d7a4c01200950b5a9e5c1056ad09d6571fc5",
+      "stored_bytes": 816
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/compose.py",
+      "original_sha256": "89066d4312962f5f8787bfab08b4d8ae1e19daacfee88b310c346a3b711adb9d",
+      "original_bytes": 6146,
+      "stored_path": "archive/89/89066d4312962f5f8787bfab08b4d8ae1e19daacfee88b310c346a3b711adb9d.gz",
+      "stored_sha256": "130d68ef4cbbd73157750669d80bbf55bfd868aecee170270ac917639c8a77c6",
+      "stored_bytes": 2383
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/draft-options.md",
+      "original_sha256": "647ee7bb9e2ef0e5af080a347445635e7e646472ed0495f1964ad2c01e647551",
+      "original_bytes": 2879,
+      "stored_path": "archive/64/647ee7bb9e2ef0e5af080a347445635e7e646472ed0495f1964ad2c01e647551.gz",
+      "stored_sha256": "51ca9fdb9e3a1442ee06b866de5e5ba08bdd9055aad421c5c82823a08e77c6e4",
+      "stored_bytes": 1450
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/exact-replacements.json",
+      "original_sha256": "26a2453ce6cc05f63a817d883428df65046c123c126db63a2c78792129c15056",
+      "original_bytes": 21511,
+      "stored_path": "archive/26/26a2453ce6cc05f63a817d883428df65046c123c126db63a2c78792129c15056.gz",
+      "stored_sha256": "284032bea33f9beca5cd5ecc4dbe44755e76ae84e9e61a463254cfe6d715a95a",
+      "stored_bytes": 6420
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+      "original_sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+      "original_bytes": 36648,
+      "stored_path": "archive/04/048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01.gz",
+      "stored_sha256": "b2333de43a98bc408e729d9834d45865d0443e016ae456a63eb4144ebbd5b3ca",
+      "stored_bytes": 9718
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/own-controls.json",
+      "original_sha256": "1f587a67c12fbc440e81e91d2fd61310df6e0d1344f341e737720e058f2a5a87",
+      "original_bytes": 1863,
+      "stored_path": "archive/1f/1f587a67c12fbc440e81e91d2fd61310df6e0d1344f341e737720e058f2a5a87.gz",
+      "stored_sha256": "f121eb08f6f0cd0401f1ba940c3d9f80ca929df5950f64c71562e35b0e46bc1e",
+      "stored_bytes": 459
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/preservation-proof.json",
+      "original_sha256": "767e8fd94b5f17e6b559a078a2ca4b6c1325e0cfc7eef1e7123f46fcd24c013c",
+      "original_bytes": 736,
+      "stored_path": "archive/76/767e8fd94b5f17e6b559a078a2ca4b6c1325e0cfc7eef1e7123f46fcd24c013c.gz",
+      "stored_sha256": "35aefe1271e863dea5c7ea0cb3d46e613c310a9cc5b9ac3150455a3d03c7283f",
+      "stored_bytes": 358
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/replacement-school-method.md",
+      "original_sha256": "a6bd17d563423eaeb20add5516bcb9f385facfa65769edb5577857a647a15748",
+      "original_bytes": 6731,
+      "stored_path": "archive/a6/a6bd17d563423eaeb20add5516bcb9f385facfa65769edb5577857a647a15748.gz",
+      "stored_sha256": "741a23a8a94a7318c89f62eb32ea784d8bda50ac166712b5581df384f81c8dd3",
+      "stored_bytes": 2908
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/report.md",
+      "original_sha256": "9f56b6d1831ba756434a7298c9f116f41666907cc498750f76a559cd18f15376",
+      "original_bytes": 3914,
+      "stored_path": "archive/9f/9f56b6d1831ba756434a7298c9f116f41666907cc498750f76a559cd18f15376.gz",
+      "stored_sha256": "0d4d6782130539a8a505a8b2ebc3c0d11e63c9dcb674d04269103db670399d20",
+      "stored_bytes": 1977
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction/source-read-ledger.json",
+      "original_sha256": "a41f1c0fc3b02e56b3a176104f80cb9b259cda3f81495fd3fc89b6588573f5ea",
+      "original_bytes": 4928,
+      "stored_path": "archive/a4/a41f1c0fc3b02e56b3a176104f80cb9b259cda3f81495fd3fc89b6588573f5ea.gz",
+      "stored_sha256": "976f1f85381f44ab1e0fe94dd0d14171ce1f174bae28dff8952a7e2033fbf49e",
+      "stored_bytes": 1658
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/artifact-manifest.json",
+      "original_sha256": "510b43b9f9490e940f2259f5ea97879c99ca15ab4cfeeffafa9e90aacedf32ab",
+      "original_bytes": 2207,
+      "stored_path": "archive/51/510b43b9f9490e940f2259f5ea97879c99ca15ab4cfeeffafa9e90aacedf32ab.gz",
+      "stored_sha256": "23264ba06b9ea3dba41496b530d389d479e6e534f60e58bda6b473a124d3fec4",
+      "stored_bytes": 959
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/baseline-README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/baseline-es-irpf-deductions.md",
+      "original_sha256": "370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb",
+      "original_bytes": 556156,
+      "stored_path": "archive/37/370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb.gz",
+      "stored_sha256": "178a8880cbb714860d1e8508a2e60c05514137f651dcce9952e666b59171003e",
+      "stored_bytes": 158736
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/candidate-README.md",
+      "original_sha256": "3f2d2c4c05d8e8e88403c87ae6177fcb2b1e91ef5f7e1009863bf259197f6779",
+      "original_bytes": 20393,
+      "stored_path": "archive/3f/3f2d2c4c05d8e8e88403c87ae6177fcb2b1e91ef5f7e1009863bf259197f6779.gz",
+      "stored_sha256": "a8e69526f934a41b8599b4352d2b8d51de9b52d232b21ee8b94c1b2b82f4a02a",
+      "stored_bytes": 7660
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/candidate-es-irpf-deductions.md",
+      "original_sha256": "dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c",
+      "original_bytes": 554102,
+      "stored_path": "archive/dc/dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c.gz",
+      "stored_sha256": "4c17e753a5e7c81e823b6a152610fff9ff3ee8a193a81c034f42d2599fc6af05",
+      "stored_bytes": 158283
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/check-controls.py",
+      "original_sha256": "f0684bd0be9ba319e6bca352007f8dc814b5382d542b6e66fa69f23eba6fd583",
+      "original_bytes": 1771,
+      "stored_path": "archive/f0/f0684bd0be9ba319e6bca352007f8dc814b5382d542b6e66fa69f23eba6fd583.gz",
+      "stored_sha256": "63a0edaf1e5c01801bac01426568d7a4c01200950b5a9e5c1056ad09d6571fc5",
+      "stored_bytes": 816
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/compose.py",
+      "original_sha256": "7be25f0c7c5b4c61b244a085dab4b4ffde6c3fcea3184dd2f88988da4c27e5d2",
+      "original_bytes": 6947,
+      "stored_path": "archive/7b/7be25f0c7c5b4c61b244a085dab4b4ffde6c3fcea3184dd2f88988da4c27e5d2.gz",
+      "stored_sha256": "7eb4d500836f4dcfabdab4b729721776dea1d87799ce1679c29da107ba5b6a8d",
+      "stored_bytes": 2644
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/draft-options.md",
+      "original_sha256": "647ee7bb9e2ef0e5af080a347445635e7e646472ed0495f1964ad2c01e647551",
+      "original_bytes": 2879,
+      "stored_path": "archive/64/647ee7bb9e2ef0e5af080a347445635e7e646472ed0495f1964ad2c01e647551.gz",
+      "stored_sha256": "51ca9fdb9e3a1442ee06b866de5e5ba08bdd9055aad421c5c82823a08e77c6e4",
+      "stored_bytes": 1450
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/exact-replacements.json",
+      "original_sha256": "c14c0ca351bff115f2ed066999c9511b9c63e9a9cf337a4f56960eb6b85c4129",
+      "original_bytes": 21648,
+      "stored_path": "archive/c1/c14c0ca351bff115f2ed066999c9511b9c63e9a9cf337a4f56960eb6b85c4129.gz",
+      "stored_sha256": "33cc3663e1ac56c1dc8e66c4f9e2254c141c33ddfd660e2c90b49db93a226d65",
+      "stored_bytes": 6499
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/opinion-085-2026-full-browser-AX.txt",
+      "original_sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+      "original_bytes": 36648,
+      "stored_path": "archive/04/048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01.gz",
+      "stored_sha256": "b2333de43a98bc408e729d9834d45865d0443e016ae456a63eb4144ebbd5b3ca",
+      "stored_bytes": 9718
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/own-controls.json",
+      "original_sha256": "1f587a67c12fbc440e81e91d2fd61310df6e0d1344f341e737720e058f2a5a87",
+      "original_bytes": 1863,
+      "stored_path": "archive/1f/1f587a67c12fbc440e81e91d2fd61310df6e0d1344f341e737720e058f2a5a87.gz",
+      "stored_sha256": "f121eb08f6f0cd0401f1ba940c3d9f80ca929df5950f64c71562e35b0e46bc1e",
+      "stored_bytes": 459
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/preservation-proof.json",
+      "original_sha256": "659144dda85e573e6dfd4bd56a64552389088aadb284753fa7b49e17e841087b",
+      "original_bytes": 736,
+      "stored_path": "archive/65/659144dda85e573e6dfd4bd56a64552389088aadb284753fa7b49e17e841087b.gz",
+      "stored_sha256": "854f904c573c33cdd8eac0e24c6a16895c3deca7f176edd1aeab0c78c1cb5a3d",
+      "stored_bytes": 357
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/replacement-school-method.md",
+      "original_sha256": "a6bd17d563423eaeb20add5516bcb9f385facfa65769edb5577857a647a15748",
+      "original_bytes": 6731,
+      "stored_path": "archive/a6/a6bd17d563423eaeb20add5516bcb9f385facfa65769edb5577857a647a15748.gz",
+      "stored_sha256": "741a23a8a94a7318c89f62eb32ea784d8bda50ac166712b5581df384f81c8dd3",
+      "stored_bytes": 2908
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/report.md",
+      "original_sha256": "eac7b69c8f98ab1c21dcea2e31e75e90b4d784c571f02008409bbb882b1863d5",
+      "original_bytes": 4400,
+      "stored_path": "archive/ea/eac7b69c8f98ab1c21dcea2e31e75e90b4d784c571f02008409bbb882b1863d5.gz",
+      "stored_sha256": "3395475d4cc634b3b300b1703482ca4dcde7c801a0e5394a0becd4c1c451e505",
+      "stored_bytes": 2177
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/review-fix-history.json",
+      "original_sha256": "e312c4215201243274f2febe3406039a543f2831596d4fe300537ea9530bf097",
+      "original_bytes": 377,
+      "stored_path": "archive/e3/e312c4215201243274f2febe3406039a543f2831596d4fe300537ea9530bf097.gz",
+      "stored_sha256": "a62d68e9deb7e2dadf4390212cc485e07b08f0c46080f4327cfabee3cf7e431a",
+      "stored_bytes": 281
+    },
+    {
+      "original_path": "spain-Galicia-council-85-correction-r2/source-read-ledger.json",
+      "original_sha256": "a41f1c0fc3b02e56b3a176104f80cb9b259cda3f81495fd3fc89b6588573f5ea",
+      "original_bytes": 4928,
+      "stored_path": "archive/a4/a41f1c0fc3b02e56b3a176104f80cb9b259cda3f81495fd3fc89b6588573f5ea.gz",
+      "stored_sha256": "976f1f85381f44ab1e0fe94dd0d14171ce1f174bae28dff8952a7e2033fbf49e",
+      "stored_bytes": 1658
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/CC85-F01-initial-context.json",
+      "original_sha256": "3aceba8e4e59d4b5c36352a1593f9a3511c87cc59a10d688dfda2f74dd8d3707",
+      "original_bytes": 4612,
+      "stored_path": "archive/3a/3aceba8e4e59d4b5c36352a1593f9a3511c87cc59a10d688dfda2f74dd8d3707.gz",
+      "stored_sha256": "eb85622e78b7fb9d7637a7494c05ad52ed7f9543a8365a1201a7a88430d8378a",
+      "stored_bytes": 2084
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/artifact-manifest.json",
+      "original_sha256": "be812b4712b042616f3c0ed95774fb2d29d9211d9ef996a2bc28f31ad1db671d",
+      "original_bytes": 3357,
+      "stored_path": "archive/be/be812b4712b042616f3c0ed95774fb2d29d9211d9ef996a2bc28f31ad1db671d.gz",
+      "stored_sha256": "223804c4fa7f1bd0ad148afe41438d0e2565132765419c416505f3f372d0dfd8",
+      "stored_bytes": 886
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/findings-and-history.json",
+      "original_sha256": "da9a84fdd10247b197533ab53e0ddee2ce7e2756175c8c30f04ebdd0828b16d3",
+      "original_bytes": 1341,
+      "stored_path": "archive/da/da9a84fdd10247b197533ab53e0ddee2ce7e2756175c8c30f04ebdd0828b16d3.gz",
+      "stored_sha256": "d227ff3ccfe4956c1ec1033840c5842e2a76055ff81078c9af7c36b2ac1ddb91",
+      "stored_bytes": 782
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/freeze.json",
+      "original_sha256": "dbc107b40d9a09a4716678e06d857c6f6e9f360e6df146396135b6536ab6d5e6",
+      "original_bytes": 1992,
+      "stored_path": "archive/db/dbc107b40d9a09a4716678e06d857c6f6e9f360e6df146396135b6536ab6d5e6.gz",
+      "stored_sha256": "5a6919f7274cc62ebf3515d2f0e46defc471d383bc087d510e8024d3383d45b7",
+      "stored_bytes": 999
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/independent-verify.py",
+      "original_sha256": "396f04c08e298c10fd359bb0643e83f8add674dd61ea95156c32de0d22546542",
+      "original_bytes": 5781,
+      "stored_path": "archive/39/396f04c08e298c10fd359bb0643e83f8add674dd61ea95156c32de0d22546542.gz",
+      "stored_sha256": "2f76d70057e37df2d1227179dc9f028c561a0725d3a384ef4c812c5164e4117c",
+      "stored_bytes": 2437
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/own-controls.json",
+      "original_sha256": "84780c08eeaadb808e8fe29671a75295d086fa5c823da408482aa25fcf93bc57",
+      "original_bytes": 3927,
+      "stored_path": "archive/84/84780c08eeaadb808e8fe29671a75295d086fa5c823da408482aa25fcf93bc57.gz",
+      "stored_sha256": "8c6e258b283679b2b62255941692079cbea6e97a38d70c52fb3b4819141faf30",
+      "stored_bytes": 838
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/own-controls.py",
+      "original_sha256": "3f971d21877f9274fb57b0956b237082442cfe4496f103117fb6107f7bdb3ecc",
+      "original_bytes": 2767,
+      "stored_path": "archive/3f/3f971d21877f9274fb57b0956b237082442cfe4496f103117fb6107f7bdb3ecc.gz",
+      "stored_sha256": "593483ad444a795f535a96841977fb0a9aa838086118948515893da5407fc767",
+      "stored_bytes": 1210
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/own-examples.txt",
+      "original_sha256": "557dc71fb6db3fe28c4eff2d5bf45b0b19cd9c44c38dae22c32e7eb624d6a684",
+      "original_bytes": 493,
+      "stored_path": "archive/55/557dc71fb6db3fe28c4eff2d5bf45b0b19cd9c44c38dae22c32e7eb624d6a684.gz",
+      "stored_sha256": "30c336307c2ab576202d990bdbf80aaf96c4c6fdedde52f56c98b4441ca4026e",
+      "stored_bytes": 335
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/preservation-and-validation.json",
+      "original_sha256": "f9d35d22141699fadeb49abccf26462a7aa04458f56bbd11d3229d62e1557689",
+      "original_bytes": 4952,
+      "stored_path": "archive/f9/f9d35d22141699fadeb49abccf26462a7aa04458f56bbd11d3229d62e1557689.gz",
+      "stored_sha256": "3c4306491153aea3c7b790cca29e2abde33da6c398fae1f3c9c28d713cff0398",
+      "stored_bytes": 1519
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/report.md",
+      "original_sha256": "efa5e3565c73c84deaf247289270c5ad073642dabb4fec8b029e2942b251b462",
+      "original_bytes": 4387,
+      "stored_path": "archive/ef/efa5e3565c73c84deaf247289270c5ad073642dabb4fec8b029e2942b251b462.gz",
+      "stored_sha256": "f6447ca902d1aa9aadcf31a1664ee9684ff9ba7d8d25dd9577e65b835354970d",
+      "stored_bytes": 2315
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/source-read-ledger.json",
+      "original_sha256": "59dbbddc2efaa3e3412a9c1ee4b6c1eb71f7a19d6e2a4beece0f4ccea5102741",
+      "original_bytes": 5410,
+      "stored_path": "archive/59/59dbbddc2efaa3e3412a9c1ee4b6c1eb71f7a19d6e2a4beece0f4ccea5102741.gz",
+      "stored_sha256": "9cd0b086f852eba3ca5fe55438dac732e2adc45f3660bbf94e41c10aab6db7aa",
+      "stored_bytes": 1860
+    },
+    {
+      "original_path": "spain-Galicia-council-85-independent-review/target-schema.txt",
+      "original_sha256": "fe6d31661d0d85589bc6b0938cf6460a1df9401c7ad8a7805e21c5783a30a2c7",
+      "original_bytes": 165,
+      "stored_path": "archive/fe/fe6d31661d0d85589bc6b0938cf6460a1df9401c7ad8a7805e21c5783a30a2c7.gz",
+      "stored_sha256": "66b9ad1207d1d8ce6445a644ac3fbce6a5da7e7c203430ffa52c72318b3026e5",
+      "stored_bytes": 154
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/artifact-manifest.json",
+      "original_sha256": "ba6cd74b72aa4e24ab3d43461b798ead914dfdcfb0365fddaebb63ec8f2e658c",
+      "original_bytes": 1123,
+      "stored_path": "archive/ba/ba6cd74b72aa4e24ab3d43461b798ead914dfdcfb0365fddaebb63ec8f2e658c.gz",
+      "stored_sha256": "aefdfef38d8058cf3c2e6b6de30308b9c018e7e44f9e1515f73ac5a950c3f763",
+      "stored_bytes": 525
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/check.py",
+      "original_sha256": "56b86e1411b03a16450fa4744fef2495977ac561cd8735dd60cf85441f3113c1",
+      "original_bytes": 6058,
+      "stored_path": "archive/56/56b86e1411b03a16450fa4744fef2495977ac561cd8735dd60cf85441f3113c1.gz",
+      "stored_sha256": "05e803a4274ddcd63b1818a4b9681fcc8fe91ec06edbb699a6234413050ed382",
+      "stored_bytes": 2634
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "stored_bytes": 71
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/identity-checks.json",
+      "original_sha256": "7fec02a49e9d03305d0a3431461379db35acd8a73521c65228425cbfd02e6391",
+      "original_bytes": 18066,
+      "stored_path": "archive/7f/7fec02a49e9d03305d0a3431461379db35acd8a73521c65228425cbfd02e6391.gz",
+      "stored_sha256": "133af0970f24c3303e21119833068015a4554e379064cfc18d26d64d87fe281e",
+      "stored_bytes": 2955
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/own-controls.json",
+      "original_sha256": "e55d9bf10918bc810679ccfb4de6081bde80159c1a9b2a8fa4dc4d2239369b5f",
+      "original_bytes": 1513,
+      "stored_path": "archive/e5/e55d9bf10918bc810679ccfb4de6081bde80159c1a9b2a8fa4dc4d2239369b5f.gz",
+      "stored_sha256": "c19a9b7fe636f95022b3015b3d4d91bb021095b91425d2aa40045d64875f985b",
+      "stored_bytes": 422
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/preservation-checks.json",
+      "original_sha256": "2a137ef01cf3203022df930e96869127984444439a6930a1c1bc98a679c21274",
+      "original_bytes": 728,
+      "stored_path": "archive/2a/2a137ef01cf3203022df930e96869127984444439a6930a1c1bc98a679c21274.gz",
+      "stored_sha256": "d09b40fc88e3d0584d86432ef5a1f33314ee9169c1dcb65400effc8c895c809d",
+      "stored_bytes": 366
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/report.md",
+      "original_sha256": "939d12f3a4adbe52210688d113fed8555df2d6917b02d7971ca74df0141df41b",
+      "original_bytes": 4562,
+      "stored_path": "archive/93/939d12f3a4adbe52210688d113fed8555df2d6917b02d7971ca74df0141df41b.gz",
+      "stored_sha256": "cbff083e56f0786f53ecb7636428061a1add61427c58eeff8e42c40ef8262df7",
+      "stored_bytes": 2364
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/schema.txt",
+      "original_sha256": "38eb1c73561014f11ff699baaf19c72915dbeb1ee07f45874f21f053720b9d13",
+      "original_bytes": 80,
+      "stored_path": "archive/38/38eb1c73561014f11ff699baaf19c72915dbeb1ee07f45874f21f053720b9d13.gz",
+      "stored_sha256": "842bd37c52d4f8b9f17d39804ae43d4ce40dc923d95d5507076876bb539133ac",
+      "stored_bytes": 91
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-independent-review/source-read-ledger.json",
+      "original_sha256": "72c01125366cb43b022df626ba2b8c13a6dfcb9c977500131f579a40b635fd50",
+      "original_bytes": 14159,
+      "stored_path": "archive/72/72c01125366cb43b022df626ba2b8c13a6dfcb9c977500131f579a40b635fd50.gz",
+      "stored_sha256": "c5974133a21ac1afe99af5451775c3b7067defc4caad41f2e7cf3833dc7f2849",
+      "stored_bytes": 2399
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/README.md.diff",
+      "original_sha256": "817b46386c8939845f7317585944b484d8f3715a1ccbca7145f0359cb2266129",
+      "original_bytes": 13572,
+      "stored_path": "archive/81/817b46386c8939845f7317585944b484d8f3715a1ccbca7145f0359cb2266129.gz",
+      "stored_sha256": "f8e4d610d8e809cc0938cd8456a287ef9745e91df3f249c8fbf11881d5760e56",
+      "stored_bytes": 5194
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/actual-read-excerpts.json",
+      "original_sha256": "b2a70edea2a896364a6c2896138ae014a80fc5dd76b6c8db243a2d3cd0f17139",
+      "original_bytes": 67666,
+      "stored_path": "archive/b2/b2a70edea2a896364a6c2896138ae014a80fc5dd76b6c8db243a2d3cd0f17139.gz",
+      "stored_sha256": "a32507770d3aa6ad75f5a537735e55487afeedb7875a625696474e2cbe3eb2ea",
+      "stored_bytes": 16586
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/artifact-manifest.json",
+      "original_sha256": "f7673351ac31ef170aba31746fe2cee54a656ee67e3e8ffc0ae8b4944f7fdf25",
+      "original_bytes": 9829,
+      "stored_path": "archive/f7/f7673351ac31ef170aba31746fe2cee54a656ee67e3e8ffc0ae8b4944f7fdf25.gz",
+      "stored_sha256": "b724d710cd11f0e019b73f2533ef4888414ee377e96e89ec80ccc8e435d99212",
+      "stored_bytes": 2022
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/baseline/README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b",
+      "stored_bytes": 7570
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/baseline/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd",
+      "stored_bytes": 20877
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/candidate-README.md",
+      "original_sha256": "943f5d4573653f192660b6e22ac2e04324787dd498642daac7b022452320e89e",
+      "original_bytes": 20489,
+      "stored_path": "archive/94/943f5d4573653f192660b6e22ac2e04324787dd498642daac7b022452320e89e.gz",
+      "stored_sha256": "755cbbb9538f668106c592e26396fef6552ca6c6c4cf82b6393f9941f9801991",
+      "stored_bytes": 7683
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/candidate-es-social-contributions.md",
+      "original_sha256": "826711973c1185dd8600530c5f7b0d0f83396bd45e5aa5e6e03233a9ded672a6",
+      "original_bytes": 75285,
+      "stored_path": "archive/82/826711973c1185dd8600530c5f7b0d0f83396bd45e5aa5e6e03233a9ded672a6.gz",
+      "stored_sha256": "a0f6b397177e6818dfd2526d521c0a77c32a08a945d28e8f8f7a1b1c4fb48300",
+      "stored_bytes": 23181
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/candidate-line-map.json",
+      "original_sha256": "82ff36f106b16262e5c2a8d039371de4ebb7ffbd586f2981d477754c21b4988c",
+      "original_bytes": 175,
+      "stored_path": "archive/82/82ff36f106b16262e5c2a8d039371de4ebb7ffbd586f2981d477754c21b4988c.gz",
+      "stored_sha256": "ab7c482cf10b16c242071549bbda965fcecc6693ab18b6f5a30b048a33310863",
+      "stored_bytes": 153
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/check.py",
+      "original_sha256": "792fb090ac709a5ac982a8bb747083ce7d952e16b22757f10e55acbab5833686",
+      "original_bytes": 7028,
+      "stored_path": "archive/79/792fb090ac709a5ac982a8bb747083ce7d952e16b22757f10e55acbab5833686.gz",
+      "stored_sha256": "d5839b88c67a8efb94690872da40b254c7fb37f0e722acc474eb11b56565f411",
+      "stored_bytes": 3048
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/es-social-contributions.md.diff",
+      "original_sha256": "11ed1f7fc9781d59055a7049d69c760fe2c2603dd8a8bdc268b6cd87d451f4d7",
+      "original_bytes": 15522,
+      "stored_path": "archive/11/11ed1f7fc9781d59055a7049d69c760fe2c2603dd8a8bdc268b6cd87d451f4d7.gz",
+      "stored_sha256": "6035972824b44725bc2a82638d5f9271d1f38c3ad9a802219754f5cacfe07037",
+      "stored_bytes": 5394
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/exact-replacements.json",
+      "original_sha256": "e251d4241df6dfc16c2451c453b301dde933a07f07480ffaf660e2009ebcb836",
+      "original_bytes": 10345,
+      "stored_path": "archive/e2/e251d4241df6dfc16c2451c453b301dde933a07f07480ffaf660e2009ebcb836.gz",
+      "stored_sha256": "cbe027d39cd27dea08ca5372356bf673819cee11a9e57735f41d1b0aed12e98e",
+      "stored_bytes": 3468
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/freeze.json",
+      "original_sha256": "32b2e0a57d3c0c7a05bd809bc4848519bf8083bb6a22e4f11e11bd49d5845ca4",
+      "original_bytes": 1446,
+      "stored_path": "archive/32/32b2e0a57d3c0c7a05bd809bc4848519bf8083bb6a22e4f11e11bd49d5845ca4.gz",
+      "stored_sha256": "3a65ddf360afad320d29feeab74cc8f9a5196151d9fe211df6b5b2290a4b0c36",
+      "stored_bytes": 672
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "stored_bytes": 71
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/options.md",
+      "original_sha256": "137490e2270d1e8cabb763f302c7f100a70db9aebeb44ea21c867922c8b3eeba",
+      "original_bytes": 2897,
+      "stored_path": "archive/13/137490e2270d1e8cabb763f302c7f100a70db9aebeb44ea21c867922c8b3eeba.gz",
+      "stored_sha256": "8c34be2435f4c425f7138a84515363387ca67008923a7313be66515f79856ee8",
+      "stored_bytes": 1465
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/prepare.py",
+      "original_sha256": "42404921d200b571bdf4ebc8712292e22662c8f7e0d289548927dc559e8db35b",
+      "original_bytes": 10083,
+      "stored_path": "archive/42/42404921d200b571bdf4ebc8712292e22662c8f7e0d289548927dc559e8db35b.gz",
+      "stored_sha256": "c2aec35103ce14327d4badf9759a474bbe240613f7f40dde48499d41277c7880",
+      "stored_bytes": 4031
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/preservation-proof.json",
+      "original_sha256": "1bfd4b17ea72fd0291d8de695331509812a094afce26d502af4fcf249d93b3fe",
+      "original_bytes": 1037,
+      "stored_path": "archive/1b/1bfd4b17ea72fd0291d8de695331509812a094afce26d502af4fcf249d93b3fe.gz",
+      "stored_sha256": "20d40d22db54317661ea399af7c4fde795e490395d1f1a6426720f95ee286436",
+      "stored_bytes": 465
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/prior-finite-evidence-bindings.json",
+      "original_sha256": "0feb32de09802ed1b149db031cb78ea846eafd38b47eeefbd61a2153b15faef7",
+      "original_bytes": 1241,
+      "stored_path": "archive/0f/0feb32de09802ed1b149db031cb78ea846eafd38b47eeefbd61a2153b15faef7.gz",
+      "stored_sha256": "945ee40f76c8abc1cafaa63d18578f22c17992f62ea76e614608f5bfc05ca028",
+      "stored_bytes": 486
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/report.md",
+      "original_sha256": "6e86d71713f72fa6917a9f9d1cc43326fca7169bd791e02b903da6b646067c22",
+      "original_bytes": 5627,
+      "stored_path": "archive/6e/6e86d71713f72fa6917a9f9d1cc43326fca7169bd791e02b903da6b646067c22.gz",
+      "stored_sha256": "5ff55f9827378a2059de27538c0966eef4da2557c32763ebdc072faad2acc5a3",
+      "stored_bytes": 2889
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248",
+      "stored_bytes": 83
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "826711973c1185dd8600530c5f7b0d0f83396bd45e5aa5e6e03233a9ded672a6",
+      "original_bytes": 75285,
+      "stored_path": "archive/82/826711973c1185dd8600530c5f7b0d0f83396bd45e5aa5e6e03233a9ded672a6.gz",
+      "stored_sha256": "a0f6b397177e6818dfd2526d521c0a77c32a08a945d28e8f8f7a1b1c4fb48300",
+      "stored_bytes": 23181
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/source-identity-verification.json",
+      "original_sha256": "fdf15753a1e898d87a4779d9769a7b7d00a7e4b2217dc174e183e1badf858670",
+      "original_bytes": 7314,
+      "stored_path": "archive/fd/fdf15753a1e898d87a4779d9769a7b7d00a7e4b2217dc174e183e1badf858670.gz",
+      "stored_sha256": "8cd6e19a7664334d05917c096bc7e5763e66b12109f8fb4c8763a1c1bdf598f2",
+      "stored_bytes": 1419
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/source-read-ledger.json",
+      "original_sha256": "a9c334f66e57e1bf1de761c1fefded19bfe2c3940ab437e60b7bcfebd7dce4ca",
+      "original_bytes": 10851,
+      "stored_path": "archive/a9/a9c334f66e57e1bf1de761c1fefded19bfe2c3940ab437e60b7bcfebd7dce4ca.gz",
+      "stored_sha256": "ff3702fba5f90a374d60bfbc3dc3fef40be0bdf6d3ed114413a8161051c98e67",
+      "stored_bytes": 2198
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR02-2026.pdf",
+      "original_sha256": "172379ac00320de66541d912d37b031e0eb93b7822e20715af1b9e4e32bd86c5",
+      "original_bytes": 568173,
+      "stored_path": "archive/17/172379ac00320de66541d912d37b031e0eb93b7822e20715af1b9e4e32bd86c5.gz",
+      "stored_sha256": "4f775860f0a451700adfdd698885b375d1d089a45da2e00dcc4655d5c1126b64",
+      "stored_bytes": 499021
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR02-2026.reader.txt",
+      "original_sha256": "818e6b1c5c0d157df1dc8f0de3fb567f76e645aadb5733ac7778cdec721601f1",
+      "original_bytes": 46285,
+      "stored_path": "archive/81/818e6b1c5c0d157df1dc8f0de3fb567f76e645aadb5733ac7778cdec721601f1.gz",
+      "stored_sha256": "b1e19a1c144d9ee9059bc3955b109cdc1d9a8e34e861bb45fd96ce1ef09ea6fd",
+      "stored_bytes": 12389
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR05-2026.pdf",
+      "original_sha256": "53312dbcb7010b0c65b6f0014797f5b5f01eb391048324e19859c6dea4bf2cfd",
+      "original_bytes": 367326,
+      "stored_path": "archive/53/53312dbcb7010b0c65b6f0014797f5b5f01eb391048324e19859c6dea4bf2cfd.gz",
+      "stored_sha256": "8d504027c9b9cd4eb6875f8009c84dbfb2fc50b12bfb7066f2eafe67986301be",
+      "stored_bytes": 321369
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR05-2026.reader.txt",
+      "original_sha256": "b6047702040c985a2cb264ed5221a31b71c512de9e7b5e10619d860b6624407c",
+      "original_bytes": 30957,
+      "stored_path": "archive/b6/b6047702040c985a2cb264ed5221a31b71c512de9e7b5e10619d860b6624407c.gz",
+      "stored_sha256": "13c4ae74c0e816637663be9cea1db71b9c9432f4ebdfd99fad89f8efd87ceb10",
+      "stored_bytes": 7628
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR2026-index.html",
+      "original_sha256": "e77026de3b9ef7d26dbfa5edb2bcc1eac35c9c3a80c032744895689eb170068c",
+      "original_bytes": 127208,
+      "stored_path": "archive/e7/e77026de3b9ef7d26dbfa5edb2bcc1eac35c9c3a80c032744895689eb170068c.gz",
+      "stored_sha256": "6b69fc7bad8868c110a4eae6bd479373ffa00b0a8c75585dbba0d615478b613c",
+      "stored_bytes": 25291
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/BNR2026-index.reader.txt",
+      "original_sha256": "9a06ea3b9ab777234de921abb2b4092714cc40fd6c6cb2de1af8cd888cdbc2cf",
+      "original_bytes": 27183,
+      "stored_path": "archive/9a/9a06ea3b9ab777234de921abb2b4092714cc40fd6c6cb2de1af8cd888cdbc2cf.gz",
+      "stored_sha256": "71f99add51cd32df37bd5d8d6408ab322cd80121c394c13cb6841a519bfaf523",
+      "stored_bytes": 8601
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/TGSS-current-guide.html",
+      "original_sha256": "3153f34d3fa629f75f66077e7feee9370865d8015a432361a6dbcdb5e7a10ede",
+      "original_bytes": 201682,
+      "stored_path": "archive/31/3153f34d3fa629f75f66077e7feee9370865d8015a432361a6dbcdb5e7a10ede.gz",
+      "stored_sha256": "05c735fc3d016d1240f9e3de5392152c2037674d16ebcdb2fdc1a94a332d5dce",
+      "stored_bytes": 41507
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/sources/TGSS-current-guide.reader.txt",
+      "original_sha256": "b2694eb4225495c39f36d56d148ec57d55a3250e0e4a03b961f7a1f3709f75ef",
+      "original_bytes": 76454,
+      "stored_path": "archive/b2/b2694eb4225495c39f36d56d148ec57d55a3250e0e4a03b961f7a1f3709f75ef.gz",
+      "stored_sha256": "02f5c9728b6c3f243fe53254b744186f748cb47d851382d921b3b3d8e6cb7107",
+      "stored_bytes": 20312
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/targeted-search-boundary.json",
+      "original_sha256": "4f648c1a9322b2e227c23b3e357db6f77a1c28bebbfe325ff55f3601237341fd",
+      "original_bytes": 1142,
+      "stored_path": "archive/4f/4f648c1a9322b2e227c23b3e357db6f77a1c28bebbfe325ff55f3601237341fd.gz",
+      "stored_sha256": "30eca4cf601197b4898da73f896ff689202bbbb96745f275dce58af2c24bb50a",
+      "stored_bytes": 649
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-private-method/writer-controls.json",
+      "original_sha256": "bb9475953b7bc6fb3b72caa481a01c6bc66b0fe715049ece5fc7e12960595187",
+      "original_bytes": 3116,
+      "stored_path": "archive/bb/bb9475953b7bc6fb3b72caa481a01c6bc66b0fe715049ece5fc7e12960595187.gz",
+      "stored_sha256": "6d6243af6758ca6e98502348ed04bda78085f0e7a7afd4c2323740799f06e37e",
+      "stored_bytes": 683
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/README.md.spacing-only.diff",
+      "original_sha256": "678d973e40d3b9bdfe66addeff8b7140a984732b3959e407aad9bd0fcca24146",
+      "original_bytes": 13917,
+      "stored_path": "archive/67/678d973e40d3b9bdfe66addeff8b7140a984732b3959e407aad9bd0fcca24146.gz",
+      "stored_sha256": "5dd4adab18185e67ff43610154ba3006023106ea09afd43ab1fcf57a11d67c9a",
+      "stored_bytes": 5211
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/artifact-manifest.json",
+      "original_sha256": "787555f075b22977c5626cd0e1b004fb940efd60c0aedd8148f5ee410066ffe7",
+      "original_bytes": 4068,
+      "stored_path": "archive/78/787555f075b22977c5626cd0e1b004fb940efd60c0aedd8148f5ee410066ffe7.gz",
+      "stored_sha256": "2860c01a3c2b9ca5497930cf14ba5348a0c43bcff811867395dfefaef2d77440",
+      "stored_bytes": 951
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/candidate-README.md",
+      "original_sha256": "60d7b8751fdc762c82e2d0f098e9df587de02401e9f7876bb4b1aa283468a17d",
+      "original_bytes": 20500,
+      "stored_path": "archive/60/60d7b8751fdc762c82e2d0f098e9df587de02401e9f7876bb4b1aa283468a17d.gz",
+      "stored_sha256": "08c5018a67ef80a3c562a6643562c7b2aea5b6717975372881ed05ba60fe2e14",
+      "stored_bytes": 7686
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/candidate-es-social-contributions.md",
+      "original_sha256": "dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015",
+      "original_bytes": 75414,
+      "stored_path": "archive/dd/dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015.gz",
+      "stored_sha256": "3e8f60e7a4add93eee1b962169c1bd2e6320e8b65144b1b661f3652c81f04e27",
+      "stored_bytes": 23149
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/es-social-contributions.md.spacing-only.diff",
+      "original_sha256": "fa17e57a25c7b8e1bcd346bfeea3ebc4a5e7fae8aaf99b12e26f15867544a15f",
+      "original_bytes": 19261,
+      "stored_path": "archive/fa/fa17e57a25c7b8e1bcd346bfeea3ebc4a5e7fae8aaf99b12e26f15867544a15f.gz",
+      "stored_sha256": "193e9ba27ad70d2696dc1e7242927b032fe3c7d97f6f8a17b6cbdbefb44361a9",
+      "stored_bytes": 4991
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/exact-replacements-from-original-baseline.json",
+      "original_sha256": "8854642c4609ae09e0ddc8c78260e49186a33a007c730803c161a638235c8020",
+      "original_bytes": 10489,
+      "stored_path": "archive/88/8854642c4609ae09e0ddc8c78260e49186a33a007c730803c161a638235c8020.gz",
+      "stored_sha256": "c176052ee1a9c3cb8c9ddf2daec2c57ebb4a934f0b85122bbf3dedd9656bb83d",
+      "stored_bytes": 3484
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/freeze.json",
+      "original_sha256": "9658d1e06a4b3a3638422fd3f04c7ed8e0c08d4b9a21f8c83ae156b2ebdfac94",
+      "original_bytes": 578,
+      "stored_path": "archive/96/9658d1e06a4b3a3638422fd3f04c7ed8e0c08d4b9a21f8c83ae156b2ebdfac94.gz",
+      "stored_sha256": "b218f3adf0f2149fbcb974386241f4b271295e3aa35fa359ff955689b58320eb",
+      "stored_bytes": 378
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "stored_bytes": 71
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/predecessor-identity-check.json",
+      "original_sha256": "a7001bd07ecadd71b48973420db466eeec594d8a98de805d17fe02ffb77daccd",
+      "original_bytes": 267,
+      "stored_path": "archive/a7/a7001bd07ecadd71b48973420db466eeec594d8a98de805d17fe02ffb77daccd.gz",
+      "stored_sha256": "604a5a43fdd717c0f50744e47c1c7c153290e9077b67643d93993c3086ce9a91",
+      "stored_bytes": 206
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/prepare-and-check.py",
+      "original_sha256": "97875bee4d4b0a6530ce5d415332392d82b1836f301242e73f082a871c37ebd7",
+      "original_bytes": 5456,
+      "stored_path": "archive/97/97875bee4d4b0a6530ce5d415332392d82b1836f301242e73f082a871c37ebd7.gz",
+      "stored_sha256": "5d66b4b1c1b4b62817b5c6ab42914e1fb8ac6faf40885e03af4113ac478a0161",
+      "stored_bytes": 2448
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/report.md",
+      "original_sha256": "7da2772b89b8aff7a8df12f9bdf5148c93c795ad17b5dea10bc36291f8aea80b",
+      "original_bytes": 2111,
+      "stored_path": "archive/7d/7da2772b89b8aff7a8df12f9bdf5148c93c795ad17b5dea10bc36291f8aea80b.gz",
+      "stored_sha256": "dde00055392252b591e82c44d31031e82fbaaf2f6693241427c6daaab3c68564",
+      "stored_bytes": 1155
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248",
+      "stored_bytes": 83
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015",
+      "original_bytes": 75414,
+      "stored_path": "archive/dd/dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015.gz",
+      "stored_sha256": "3e8f60e7a4add93eee1b962169c1bd2e6320e8b65144b1b661f3652c81f04e27",
+      "stored_bytes": 23149
+    },
+    {
+      "original_path": "spain-RETA2026-published-administrative-spacing-successor/spacing-only-proof.json",
+      "original_sha256": "02c7876bba8e17f2253dfa5522dc23d76813d79a22396bd2df9f2231ae4f23d9",
+      "original_bytes": 1446,
+      "stored_path": "archive/02/02c7876bba8e17f2253dfa5522dc23d76813d79a22396bd2df9f2231ae4f23d9.gz",
+      "stored_sha256": "a55647a33127b250b04f33d5d1ac577a22ecf84b66be16b870ab92c15b445f91",
+      "stored_bytes": 637
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/BudgetLaw47-2003-current.html",
+      "original_sha256": "43042bdf8ffe71eb469a8b97f29ddb51c1c218acb8d55a19e5615f72941109be",
+      "original_bytes": 1094929,
+      "stored_path": "archive/43/43042bdf8ffe71eb469a8b97f29ddb51c1c218acb8d55a19e5615f72941109be.gz",
+      "stored_sha256": "5e069ced0e49dc4b57275fde254ddcfb93f78194bfb62538612b5e095e5e5e79",
+      "stored_bytes": 135723
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/BudgetLaw47-2003-current.reader.txt",
+      "original_sha256": "3544a7f52791ce25b328ef98d6ecc91d17b288b90fd08204b84938d3ff1b5c37",
+      "original_bytes": 440629,
+      "stored_path": "archive/35/3544a7f52791ce25b328ef98d6ecc91d17b288b90fd08204b84938d3ff1b5c37.gz",
+      "stored_sha256": "61f583976efca5f22b4dd3a24ed8bc1e9e4757cfecedf8e4be2b5b222ddbfb90",
+      "stored_bytes": 100950
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/LETA-current.html",
+      "original_sha256": "2a9d0a74967cb259b41e361f316ef19e0afca0e2bc626ac5315cfe6291d380d2",
+      "original_bytes": 500808,
+      "stored_path": "archive/2a/2a9d0a74967cb259b41e361f316ef19e0afca0e2bc626ac5315cfe6291d380d2.gz",
+      "stored_sha256": "730822129a33cb13cce5df4aa2b02ea294e89561d89fb8ba42baa183ec250df7",
+      "stored_bytes": 60083
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/LETA-current.reader.txt",
+      "original_sha256": "08f296ca74b3b6ac98bd53eceb652763ebf93f5d1f27793f05106f33a431b861",
+      "original_bytes": 180002,
+      "stored_path": "archive/08/08f296ca74b3b6ac98bd53eceb652763ebf93f5d1f27793f05106f33a431b861.gz",
+      "stored_sha256": "d59e131b60fb5f5c2c419e48e2c86b5c9b33524b90523d34e62604e14100c00e",
+      "stored_bytes": 40808
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/LGSS-current.html",
+      "original_sha256": "20306c1cfc209f5e6363746d4f9eb653e39b9d368abafbcc5c8d547e99323dee",
+      "original_bytes": 2646450,
+      "stored_path": "archive/20/20306c1cfc209f5e6363746d4f9eb653e39b9d368abafbcc5c8d547e99323dee.gz",
+      "stored_sha256": "baef155e26404b8eacca22d8dab24c50561706f778a39cd226f287eef9dd2d4a",
+      "stored_bytes": 357768
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/LGSS-current.reader.txt",
+      "original_sha256": "700b6650ad511552270efc2d4a2dcd04f7c093d4beac8d06ca688a0215bb58fd",
+      "original_bytes": 1288691,
+      "stored_path": "archive/70/700b6650ad511552270efc2d4a2dcd04f7c093d4beac8d06ca688a0215bb58fd.gz",
+      "stored_sha256": "6a5bfe45cf6bee1903488041b2b6c3f416d248ffdc15e80a9f52a0220272e814",
+      "stored_bytes": 279244
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/Order2026-original.pdf",
+      "original_sha256": "88fdae5f080f54c1b39d1fd86c27a8f469881068963b763a732ce69361ee10dd",
+      "original_bytes": 572397,
+      "stored_path": "archive/88/88fdae5f080f54c1b39d1fd86c27a8f469881068963b763a732ce69361ee10dd.gz",
+      "stored_sha256": "5eef5f0ec0353451cae8c4d24bc06ae0afc24bb9535f74515a9c48775059fcde",
+      "stored_bytes": 390174
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/Order2026-original.txt",
+      "original_sha256": "153b7ba918eb199e00b73eafc71f534cab6a16e29cf69638c2ab827a92ed3c13",
+      "original_bytes": 199756,
+      "stored_path": "archive/15/153b7ba918eb199e00b73eafc71f534cab6a16e29cf69638c2ab827a92ed3c13.gz",
+      "stored_sha256": "19ca126aa88a2d484a22161b81b48ade840ae7aa8d84451ba7162cd1036d4141",
+      "stored_bytes": 37364
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RD2064-current.html",
+      "original_sha256": "db868ee185356dfcb5574599e0cba767969fccd379919534438354b7cad7de4c",
+      "original_bytes": 988922,
+      "stored_path": "archive/db/db868ee185356dfcb5574599e0cba767969fccd379919534438354b7cad7de4c.gz",
+      "stored_sha256": "487dd969646bf46cec70b131f0bb2a7f0d2c637bd7b3a8c041dec419cf6ce4cf",
+      "stored_bytes": 88525
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RD2064-current.reader.txt",
+      "original_sha256": "6e4ab85ad8e311e47ebd48d60a7245bc1f40b61bc4d74c25a232b99a33acc797",
+      "original_bytes": 271929,
+      "stored_path": "archive/6e/6e4ab85ad8e311e47ebd48d60a7245bc1f40b61bc4d74c25a232b99a33acc797.gz",
+      "stored_sha256": "6a618025b31a91a02951adc9f1e32e66816daf103781f242f48814d38cc24395",
+      "stored_bytes": 57885
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RDL13-2022-current.html",
+      "original_sha256": "49ae4e1032743442576e4509c04104abc4a1bca7816e8e6aeece4126a8b58cbb",
+      "original_bytes": 395824,
+      "stored_path": "archive/49/49ae4e1032743442576e4509c04104abc4a1bca7816e8e6aeece4126a8b58cbb.gz",
+      "stored_sha256": "8858e9d9559893235f00886a1da455285ab294d430a772e65a5f4af1d779718a",
+      "stored_bytes": 61163
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RDL13-2022-current.reader.txt",
+      "original_sha256": "8f9228338b7895199d1271d77ab624a5e933f83aa63ab5226c9b7dc12b33c541",
+      "original_bytes": 243634,
+      "stored_path": "archive/8f/8f9228338b7895199d1271d77ab624a5e933f83aa63ab5226c9b7dc12b33c541.gz",
+      "stored_sha256": "7dce40f2f8f304aade71655723f605301140de03cd3992c9af993002e157a96b",
+      "stored_bytes": 49770
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RDL3-2026-current.html",
+      "original_sha256": "3d36bff79e5fef8c2743feb1344675684f09094d9e2dc0dbeb8f9e03b2933d10",
+      "original_bytes": 203203,
+      "stored_path": "archive/3d/3d36bff79e5fef8c2743feb1344675684f09094d9e2dc0dbeb8f9e03b2933d10.gz",
+      "stored_sha256": "cca55d3623ed2d3a6f674f3094e590851bbdf0b2b89419887e5f70b0553db91d",
+      "stored_bytes": 31383
+    },
+    {
+      "original_path": "spain-RETA2026-reduced-fee-source-review/sources/RDL3-2026-current.reader.txt",
+      "original_sha256": "7ab5f2ce20833d76d3f86e55fbd7768247e908eeafa7da6f1082a236a40cfaba",
+      "original_bytes": 79533,
+      "stored_path": "archive/7a/7ab5f2ce20833d76d3f86e55fbd7768247e908eeafa7da6f1082a236a40cfaba.gz",
+      "stored_sha256": "eeca569a37948d12d3d5ed96cb4e64dca526cb58dd8be9af9c5e612ceb5c19dc",
+      "stored_bytes": 22295
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/apply-and-check.py",
+      "original_sha256": "3792a58a4e12dcca7bc54964aa4a7208db9ad61802c3be342a2fe048459e55e3",
+      "original_bytes": 3513,
+      "stored_path": "archive/37/3792a58a4e12dcca7bc54964aa4a7208db9ad61802c3be342a2fe048459e55e3.gz",
+      "stored_sha256": "12430c8f638bea3cf1b02286e1c207af9216dfe14a7142f2ef952c8ddf98b6c1",
+      "stored_bytes": 1557
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/archive-config.json",
+      "original_sha256": "2fad6412d3b03b18a8cc68ceb4243bb217966c85382148963faa8c07c80f5386",
+      "original_bytes": 2693,
+      "stored_path": "archive/2f/2fad6412d3b03b18a8cc68ceb4243bb217966c85382148963faa8c07c80f5386.gz",
+      "stored_sha256": "2185846e75b4981c2e0b0e6796391bd884863692f18aa2f9c842905c2ae7f93d",
+      "stored_bytes": 781
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/archive.py",
+      "original_sha256": "0e6f99f815f8bfaace340babe966541ebcb74c1fe57fc6c9172eb75f0ed2dec0",
+      "original_bytes": 4325,
+      "stored_path": "archive/0e/0e6f99f815f8bfaace340babe966541ebcb74c1fe57fc6c9172eb75f0ed2dec0.gz",
+      "stored_sha256": "d418c909d6a2855b75b0d1c0878b04a3a6ffddff44742aae74bf31633a8ddaea",
+      "stored_bytes": 1992
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/compose.py",
+      "original_sha256": "6930fe58732e55b290838d7bf3a79c99c9818ff4576df544a5e0c907e9812b9c",
+      "original_bytes": 4064,
+      "stored_path": "archive/69/6930fe58732e55b290838d7bf3a79c99c9818ff4576df544a5e0c907e9812b9c.gz",
+      "stored_sha256": "3bf6aba63700dbb2b0ef7dee6d3d4692590666eeb914f42db318c5d2daa142ad",
+      "stored_bytes": 1622
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/composition-proof.json",
+      "original_sha256": "8964e6bb9acec2855065b21652f567e1050f956e3cf8cad4e7651dc2c92ad6e4",
+      "original_bytes": 8343,
+      "stored_path": "archive/89/8964e6bb9acec2855065b21652f567e1050f956e3cf8cad4e7651dc2c92ad6e4.gz",
+      "stored_sha256": "d772bd6a7d6c29f5a3bb2cac5baf81c04deb04b85479b43b8bbd5bb62e652cde",
+      "stored_bytes": 2497
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/country-examples.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852",
+      "stored_bytes": 73
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/disclosure-composition/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "bc497ee02b4dffafb37f3ffcf0a2d7036081e5ff8d47f937e4b7b3c7f4349cf4",
+      "original_bytes": 131411,
+      "stored_path": "archive/bc/bc497ee02b4dffafb37f3ffcf0a2d7036081e5ff8d47f937e4b7b3c7f4349cf4.gz",
+      "stored_sha256": "7756e33ea2aa8c6639c2d62b2431e7544aa3d5a4bf0a4575d1c5fbb77a7bd7f5",
+      "stored_bytes": 37638
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/disclosure-composition/compose.py",
+      "original_sha256": "89d17d646fe3bbbf91a3c069552abb6606207d4019edeea3c38329089f4dc0c5",
+      "original_bytes": 3482,
+      "stored_path": "archive/89/89d17d646fe3bbbf91a3c069552abb6606207d4019edeea3c38329089f4dc0c5.gz",
+      "stored_sha256": "494bf236d46eaf7f428c51a5849b676352ae42846ecf01b114b1bea2f98ded8a",
+      "stored_bytes": 1469
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/disclosure-composition/composition-proof.json",
+      "original_sha256": "b3ce4a749511d0867574958d369fe79b9211cb8401b18de4a3794ecfde297032",
+      "original_bytes": 7735,
+      "stored_path": "archive/b3/b3ce4a749511d0867574958d369fe79b9211cb8401b18de4a3794ecfde297032.gz",
+      "stored_sha256": "3be391253a4b23697e57a8cc9b6043df75f5535c0fe22c5012c22d31a5802dfc",
+      "stored_bytes": 2247
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/disclosure-composition/exact-combined-operations.json",
+      "original_sha256": "ec02eeae7d8b6814edc94cb23834b95beb10445034402767212502c318eaf3a2",
+      "original_bytes": 47526,
+      "stored_path": "archive/ec/ec02eeae7d8b6814edc94cb23834b95beb10445034402767212502c318eaf3a2.gz",
+      "stored_sha256": "15b037fad4f627a60476874f0bf2816a4fd91e00b663078d7719aeeedcaadb6f",
+      "stored_bytes": 13747
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/exact-combined-operations.json",
+      "original_sha256": "3182b53b4822aa83cf67bf14dd6672412ed64c8f2927388c46f0af9e84f7a01d",
+      "original_bytes": 48697,
+      "stored_path": "archive/31/3182b53b4822aa83cf67bf14dd6672412ed64c8f2927388c46f0af9e84f7a01d.gz",
+      "stored_sha256": "cec3e9fe568c18c16e11477288ee40ed3d1d5121678be28e107d048bbd09976a",
+      "stored_bytes": 13962
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/full-canonical-schema.txt",
+      "original_sha256": "acc7eb9f0a551d434a98bc15bae592295413cae7e084080e0acf911b1f67b3c8",
+      "original_bytes": 373,
+      "stored_path": "archive/ac/acc7eb9f0a551d434a98bc15bae592295413cae7e084080e0acf911b1f67b3c8.gz",
+      "stored_sha256": "3da33a6b8be7c1bc92f15bcce4425b9505439057aeb5f49c78b9cb8b2b38a329",
+      "stored_bytes": 257
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/full-coverage-report.txt",
+      "original_sha256": "65dcdbd27d3ac4d8421be4964cb65bf3ed8ef66616259af5a66f94de50c751f9",
+      "original_bytes": 119467,
+      "stored_path": "archive/65/65dcdbd27d3ac4d8421be4964cb65bf3ed8ef66616259af5a66f94de50c751f9.gz",
+      "stored_sha256": "946879fee510d6b010a4915ab99b2a4f930797626b69cc3c1534b740d8a3a341",
+      "stored_bytes": 11343
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/candidate-README.md",
+      "original_sha256": "1e2ba252cc0116479cc79fe6a960873f16aceb1af2e308a9e064d5e7812cf9a7",
+      "original_bytes": 21015,
+      "stored_path": "archive/1e/1e2ba252cc0116479cc79fe6a960873f16aceb1af2e308a9e064d5e7812cf9a7.gz",
+      "stored_sha256": "e6eec750a3a27fd8573ec57e9523a8bf767f99426a1888dbff7bf0aa5fe529ff",
+      "stored_bytes": 7860
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "76a7a87507206f1fd77e5aa5bdf12d1bfca7c326baaba04f5d07893960a6339e",
+      "original_bytes": 130971,
+      "stored_path": "archive/76/76a7a87507206f1fd77e5aa5bdf12d1bfca7c326baaba04f5d07893960a6339e.gz",
+      "stored_sha256": "f502af2d09b00ed92545c5d9c1176745a9fc417a393e4ab94eda54150782a2ad",
+      "stored_bytes": 37514
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/candidate-es-irpf-deductions.md",
+      "original_sha256": "dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c",
+      "original_bytes": 554102,
+      "stored_path": "archive/dc/dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c.gz",
+      "stored_sha256": "4c17e753a5e7c81e823b6a152610fff9ff3ee8a193a81c034f42d2599fc6af05",
+      "stored_bytes": 158283
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/candidate-es-social-contributions.md",
+      "original_sha256": "dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015",
+      "original_bytes": 75414,
+      "stored_path": "archive/dd/dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015.gz",
+      "stored_sha256": "3e8f60e7a4add93eee1b962169c1bd2e6320e8b65144b1b661f3652c81f04e27",
+      "stored_bytes": 23149
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/compose.py",
+      "original_sha256": "10dca79876c469b3b819c655d1d0c134ec0e7333e6b8039600290786d0ee5487",
+      "original_bytes": 3480,
+      "stored_path": "archive/10/10dca79876c469b3b819c655d1d0c134ec0e7333e6b8039600290786d0ee5487.gz",
+      "stored_sha256": "5ddbfaf6cd719793e3c9e99fde2606dce1e524057d28b133b92b86edc1976b75",
+      "stored_bytes": 1473
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/composition-proof.json",
+      "original_sha256": "e6ad26fa804c98f055ef4a734c0cc8d36da9a2f9c96b1dffc9b0a79a766ae05a",
+      "original_bytes": 7735,
+      "stored_path": "archive/e6/e6ad26fa804c98f055ef4a734c0cc8d36da9a2f9c96b1dffc9b0a79a766ae05a.gz",
+      "stored_sha256": "a16259c37b69b81efd8ad3817a1f7ef4fc07e19995f64f076a0734b5ce341515",
+      "stored_bytes": 2247
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-composition/exact-combined-operations.json",
+      "original_sha256": "01a94de9cee5c88534092c9b4f8a57730cd559b8de1cf2369eaa6266439c21e8",
+      "original_bytes": 47084,
+      "stored_path": "archive/01/01a94de9cee5c88534092c9b4f8a57730cd559b8de1cf2369eaa6266439c21e8.gz",
+      "stored_sha256": "4ba7d6c8d0597721faad7382535acd98120e322069424ad6c046315ec60d81d3",
+      "stored_bytes": 13604
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/candidate-es-foral-corporate-tax.md",
+      "original_sha256": "6389c72f7d412e8ae62231ba253356b7093627b970a38a5c4cff555dde041bf9",
+      "original_bytes": 131468,
+      "stored_path": "archive/63/6389c72f7d412e8ae62231ba253356b7093627b970a38a5c4cff555dde041bf9.gz",
+      "stored_sha256": "b1dbe482778af22a82e016bc4c7a01588525bfb74fef9b162e83770e7918eeca",
+      "stored_bytes": 37657
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/candidate-es-social-contributions.md",
+      "original_sha256": "dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015",
+      "original_bytes": 75414,
+      "stored_path": "archive/dd/dd135d9484f10d62f6b85b8e8d160855bfa196849a87c6daa2526181e4a11015.gz",
+      "stored_sha256": "3e8f60e7a4add93eee1b962169c1bd2e6320e8b65144b1b661f3652c81f04e27",
+      "stored_bytes": 23149
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/composition-proof.json",
+      "original_sha256": "be029128e6d579925fd1785cbc2caaffa4800534f963ac03a27441c00e37d0cc",
+      "original_bytes": 7735,
+      "stored_path": "archive/be/be029128e6d579925fd1785cbc2caaffa4800534f963ac03a27441c00e37d0cc.gz",
+      "stored_sha256": "d0a0f69081c88e3a13175e55f380443c22fc567e87a2378143f0bad0cad7b441",
+      "stored_bytes": 2247
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/exact-combined-operations.json",
+      "original_sha256": "13f3cf6a6443c7b4d4652c1852a1d6af01755e6b7cf0a1b1a11286d05760d941",
+      "original_bytes": 48236,
+      "stored_path": "archive/13/13f3cf6a6443c7b4d4652c1852a1d6af01755e6b7cf0a1b1a11286d05760d941.gz",
+      "stored_sha256": "77a05e739372e88a396ff8190834c9967100abda26e8dc9b21e0177473d87520",
+      "stored_bytes": 13882
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/source-branch-audit.txt",
+      "original_sha256": "396d4f46e3ad728fa6d381b90302d3b2af927ab31f6f0ebb72f0624b51a052b7",
+      "original_bytes": 359,
+      "stored_path": "archive/39/396d4f46e3ad728fa6d381b90302d3b2af927ab31f6f0ebb72f0624b51a052b7.gz",
+      "stored_sha256": "f1c653d5415cebd3dfd3dda3737ab27fd6e452e736ef7eb2eb7a4d4e5234e671",
+      "stored_bytes": 215
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/strict-local-sync.txt",
+      "original_sha256": "ca3633099d55e37061482ca2c870aa880582947a93eabd3c76a81b21d9d00a87",
+      "original_bytes": 358,
+      "stored_path": "archive/ca/ca3633099d55e37061482ca2c870aa880582947a93eabd3c76a81b21d9d00a87.gz",
+      "stored_sha256": "6764a38aa2c0264be38bb35d334a41c8241ea2631237b5a7566f08e832faa176",
+      "stored_bytes": 214
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/initial-worktree-validation/validation.json",
+      "original_sha256": "d1e351dc27ac9f95177348724a98e5d1a8516757a3fc82c3542d7474041c18b9",
+      "original_bytes": 5082,
+      "stored_path": "archive/d1/d1e351dc27ac9f95177348724a98e5d1a8516757a3fc82c3542d7474041c18b9.gz",
+      "stored_sha256": "0c80cdefbd5b6cd13f2e5a499ee8d4528ccac7acbdb89c31a1ea1086ed75a878",
+      "stored_bytes": 1306
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/local-provenance.json",
+      "original_sha256": "025fc5760287752d40155f7723c48febffbae26c008dcd1cad7db1290049bb86",
+      "original_bytes": 483,
+      "stored_path": "archive/02/025fc5760287752d40155f7723c48febffbae26c008dcd1cad7db1290049bb86.gz",
+      "stored_sha256": "451508e8e84f9c7fbcfc29249865fdbf2fc4879dbdcea2929329fec5f3c0625c",
+      "stored_bytes": 241
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/preflight.json",
+      "original_sha256": "60bef9de467ce36fd7ee6a9f5a838ab0208514d1cfab8014763eb03fef789f35",
+      "original_bytes": 4431,
+      "stored_path": "archive/60/60bef9de467ce36fd7ee6a9f5a838ab0208514d1cfab8014763eb03fef789f35.gz",
+      "stored_sha256": "f4d162d515eda5f3d0df73ca8d34c99a1d97dcb70c9fa91c58eca619fc9986a3",
+      "stored_bytes": 2147
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/source-branch-audit.txt",
+      "original_sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9",
+      "original_bytes": 82,
+      "stored_path": "archive/d7/d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9.gz",
+      "stored_sha256": "dc4fbeb068b727ac6ba4c1166eaa569aca846342aa23d393af0e7e0a4027a7af",
+      "stored_bytes": 92
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/strict-local-sync.txt",
+      "original_sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+      "original_bytes": 81,
+      "stored_path": "archive/28/285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8.gz",
+      "stored_sha256": "cb91d013a4888c731ea2469f721c9ad7a5376beb3dfe3c79656c914bd60a36c0",
+      "stored_bytes": 91
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/validation.json",
+      "original_sha256": "1c238a3616f67cf4830cc56e08b0bc637c67552fe2339f24b24fce1650d2eb73",
+      "original_bytes": 4813,
+      "stored_path": "archive/1c/1c238a3616f67cf4830cc56e08b0bc637c67552fe2339f24b24fce1650d2eb73.gz",
+      "stored_sha256": "a3204bdd9af29be355ee1e944be76bee60fcb951decc555dc64c16f1044504d0",
+      "stored_bytes": 1360
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/version-stamp-options.md",
+      "original_sha256": "daa5a3421296ff7e4c5f38fc53b2323b71dacc340c3491ede62d0e1023bd9aea",
+      "original_bytes": 799,
+      "stored_path": "archive/da/daa5a3421296ff7e4c5f38fc53b2323b71dacc340c3491ede62d0e1023bd9aea.gz",
+      "stored_sha256": "696a3dace20b03cb6492b8d3f7d172c88652c4b1bea36c17a8468bd59aa46986",
+      "stored_bytes": 466
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint/worktree-whitespace.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_bytes": 20
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/H1-version-alignment-addendum.json",
+      "original_sha256": "378afd430142fb8a385b1f57c09de19d05d1213f1d5f484807d148fe57af3023",
+      "original_bytes": 1423,
+      "stored_path": "archive/37/378afd430142fb8a385b1f57c09de19d05d1213f1d5f484807d148fe57af3023.gz",
+      "stored_sha256": "748782c3a61d8ff90cd473444aea3af434db67828c13f341d77c77b3af89fcb8",
+      "stored_bytes": 722
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/actual-review-read-scope.json",
+      "original_sha256": "961fc8b41da31edc4ee99a649a9b9f86dba309e83ad6fd6ed80260a694630050",
+      "original_bytes": 6584,
+      "stored_path": "archive/96/961fc8b41da31edc4ee99a649a9b9f86dba309e83ad6fd6ed80260a694630050.gz",
+      "stored_sha256": "4f351d631f3a769fa5ad45254550056dbdf2c98b6582b8146c97311c7856e45a",
+      "stored_bytes": 2405
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/artifact-manifest.json",
+      "original_sha256": "e35738a348b638bbbb2eb9e6a9d126ceabf5e98e50904f7abb99f7c23fa64cd7",
+      "original_bytes": 11141,
+      "stored_path": "archive/e3/e35738a348b638bbbb2eb9e6a9d126ceabf5e98e50904f7abb99f7c23fa64cd7.gz",
+      "stored_sha256": "672702d9262b8550c2e6bca01fb3ab654f1110624e3d98e50ca0f425feb3ced2",
+      "stored_bytes": 1872
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/examples.actual-output.txt",
+      "original_sha256": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+      "original_bytes": 60,
+      "stored_path": "archive/27/27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5.gz",
+      "stored_sha256": "d7d09607e6f2c9d89e9784dcd4bed5debba008db9a730c5781f3593bfcd2b97f",
+      "stored_bytes": 73
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/independent-verify.py",
+      "original_sha256": "fbbc9a8bb07b34ef879e19ca56389ed8622f3cc4ef156b32effd3676bbf786c6",
+      "original_bytes": 8296,
+      "stored_path": "archive/fb/fbbc9a8bb07b34ef879e19ca56389ed8622f3cc4ef156b32effd3676bbf786c6.gz",
+      "stored_sha256": "03b5dc5c6700a1a086fdd7d376916312780ffe4d8d7f3a2e710554f968b147e2",
+      "stored_bytes": 3320
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/independently-derived-operations.json",
+      "original_sha256": "ec02eeae7d8b6814edc94cb23834b95beb10445034402767212502c318eaf3a2",
+      "original_bytes": 47526,
+      "stored_path": "archive/ec/ec02eeae7d8b6814edc94cb23834b95beb10445034402767212502c318eaf3a2.gz",
+      "stored_sha256": "15b037fad4f627a60476874f0bf2816a4fd91e00b663078d7719aeeedcaadb6f",
+      "stored_bytes": 13747
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/mechanical-proof.json",
+      "original_sha256": "1910c95e26f7d5b54d3629b7d860644af3ee6fe6f2485d87c85eccb663fa9528",
+      "original_bytes": 15934,
+      "stored_path": "archive/19/1910c95e26f7d5b54d3629b7d860644af3ee6fe6f2485d87c85eccb663fa9528.gz",
+      "stored_sha256": "2389c891d889a0163b86f974f154f13579d12defe830b4aed845476050c0d0f6",
+      "stored_bytes": 3470
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/schema.actual-output.txt",
+      "original_sha256": "e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7",
+      "original_bytes": 132,
+      "stored_path": "archive/e0/e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7.gz",
+      "stored_sha256": "8128282c7469e5b5cdd4807dd4cda7cb5e8b3aac66d6c4bcd6ed6274d104285a",
+      "stored_bytes": 140
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disclosure-bc497-mechanical-proof/writer-artifact-identity-checks.json",
+      "original_sha256": "fff6b8bb9661cac7a7125069279482ba6161c8e59c6f7a08bbd6c94288b0ed14",
+      "original_bytes": 9909,
+      "stored_path": "archive/ff/fff6b8bb9661cac7a7125069279482ba6161c8e59c6f7a08bbd6c94288b0ed14.gz",
+      "stored_sha256": "d6fea7f139e8c7ed9354d74824e70d6bbabd888c9e1ba1526c1ddf592d114c24",
+      "stored_bytes": 2022
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disposition-matrix-preparation.json",
+      "original_sha256": "5b2dc56cf5f95fa835a296c2bd6820f41a3ff2146d0a234a6e825d7ef0bda4c4",
+      "original_bytes": 18286,
+      "stored_path": "archive/5b/5b2dc56cf5f95fa835a296c2bd6820f41a3ff2146d0a234a6e825d7ef0bda4c4.gz",
+      "stored_sha256": "e3b4f87fa02fc84130d80f4a7d9979204baa3e82e31edb4db18230b9686c0bfa",
+      "stored_bytes": 5592
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disposition-matrix.json",
+      "original_sha256": "8999c6247589de344eb1fc4e4bd8e9409e6f366b3a636cfae52321d2312424af",
+      "original_bytes": 18178,
+      "stored_path": "archive/89/8999c6247589de344eb1fc4e4bd8e9409e6f366b3a636cfae52321d2312424af.gz",
+      "stored_sha256": "094360630751037273b3315f3a1e6bcaf6bc7bb9d147b8fb197820c72c5f218d",
+      "stored_bytes": 5724
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/disposition-proof.json",
+      "original_sha256": "e2e4938da6e3e0f6e4217513a641245a3a1145e4ee18b9073dbb5806ba63623e",
+      "original_bytes": 1041,
+      "stored_path": "archive/e2/e2e4938da6e3e0f6e4217513a641245a3a1145e4ee18b9073dbb5806ba63623e.gz",
+      "stored_sha256": "ece01c2c81d2b83ab24e246a9b7b92de1eedd16bc4798d8eab2d466dc77949e1",
+      "stored_bytes": 598
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/examples.actual-output.txt",
+      "original_sha256": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+      "original_bytes": 60,
+      "stored_path": "archive/27/27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5.gz",
+      "stored_sha256": "d7d09607e6f2c9d89e9784dcd4bed5debba008db9a730c5781f3593bfcd2b97f",
+      "stored_bytes": 73
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/finalize-disposition.py",
+      "original_sha256": "61e7a2e60d39d72deaaa7cc72996337088fa55e934a9fc10e3ce05c0c6d333dd",
+      "original_bytes": 9080,
+      "stored_path": "archive/61/61e7a2e60d39d72deaaa7cc72996337088fa55e934a9fc10e3ce05c0c6d333dd.gz",
+      "stored_sha256": "2d7298cfc99ee8134bfc93d083b309e36d081dac50f74a95278d7e0bfc3ddca4",
+      "stored_bytes": 3998
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/format-only-bind.py",
+      "original_sha256": "cdd24e74be06d6157ef9fb91c394bb1094640fb5317ac3ddf76f894b4674999a",
+      "original_bytes": 5965,
+      "stored_path": "archive/cd/cdd24e74be06d6157ef9fb91c394bb1094640fb5317ac3ddf76f894b4674999a.gz",
+      "stored_sha256": "0ebc24ee7cd1088e9b68fdf8a034467465ed8cd88f21b50a97ab30cd3b236017",
+      "stored_bytes": 2332
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/format-refinement-proof.json",
+      "original_sha256": "5b39d2d5add8eaf572313ee2abc8f2447539d40bf0c29191a8fcbedd4485ed62",
+      "original_bytes": 356,
+      "stored_path": "archive/5b/5b39d2d5add8eaf572313ee2abc8f2447539d40bf0c29191a8fcbedd4485ed62.gz",
+      "stored_sha256": "1010a92a308f27dec3ee3afa63ab795c101e13bc72804fe2aa2f538128f9c472",
+      "stored_bytes": 256
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/freeze.json",
+      "original_sha256": "5bfced5d05959cc69106fd2309f49839166906aa4db3dbaa3ea33817bdab33e9",
+      "original_bytes": 12855,
+      "stored_path": "archive/5b/5bfced5d05959cc69106fd2309f49839166906aa4db3dbaa3ea33817bdab33e9.gz",
+      "stored_sha256": "1b2056a269d6a80b4ea6ebd45fcc191281e38b308fbb3182ff049d1736a6154f",
+      "stored_bytes": 2577
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/independent-verify.py",
+      "original_sha256": "fbbc9a8bb07b34ef879e19ca56389ed8622f3cc4ef156b32effd3676bbf786c6",
+      "original_bytes": 8296,
+      "stored_path": "archive/fb/fbbc9a8bb07b34ef879e19ca56389ed8622f3cc4ef156b32effd3676bbf786c6.gz",
+      "stored_sha256": "03b5dc5c6700a1a086fdd7d376916312780ffe4d8d7f3a2e710554f968b147e2",
+      "stored_bytes": 3320
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/independently-derived-operations.json",
+      "original_sha256": "3182b53b4822aa83cf67bf14dd6672412ed64c8f2927388c46f0af9e84f7a01d",
+      "original_bytes": 48697,
+      "stored_path": "archive/31/3182b53b4822aa83cf67bf14dd6672412ed64c8f2927388c46f0af9e84f7a01d.gz",
+      "stored_sha256": "cec3e9fe568c18c16e11477288ee40ed3d1d5121678be28e107d048bbd09976a",
+      "stored_bytes": 13962
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/inherited-review-seal-identities.json",
+      "original_sha256": "efa0ebe0520cd74438d1c6d161e2ff9723e6d1c77ce1599895791239ef719562",
+      "original_bytes": 20030,
+      "stored_path": "archive/ef/efa0ebe0520cd74438d1c6d161e2ff9723e6d1c77ce1599895791239ef719562.gz",
+      "stored_sha256": "2f27692f0c4116dbf8543268e1918bcb40de1ea04b0e0e3f356df50311bf2453",
+      "stored_bytes": 3319
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/actual-review-read-scope.json",
+      "original_sha256": "5b369a60a49d741f2eeda0ff3887970cd625cc128479d427df319741faa94816",
+      "original_bytes": 5335,
+      "stored_path": "archive/5b/5b369a60a49d741f2eeda0ff3887970cd625cc128479d427df319741faa94816.gz",
+      "stored_sha256": "20e2a983a421c0d14ebb06bbfc37509f2a89b565aed17160867c153ed8069f23",
+      "stored_bytes": 1924
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/examples.actual-output.txt",
+      "original_sha256": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+      "original_bytes": 60,
+      "stored_path": "archive/27/27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5.gz",
+      "stored_sha256": "d7d09607e6f2c9d89e9784dcd4bed5debba008db9a730c5781f3593bfcd2b97f",
+      "stored_bytes": 73
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/independent-verify.py",
+      "original_sha256": "2f5df1511c664ac5cd3553148840402add5c8cb04700a3565eb2595116be9496",
+      "original_bytes": 8294,
+      "stored_path": "archive/2f/2f5df1511c664ac5cd3553148840402add5c8cb04700a3565eb2595116be9496.gz",
+      "stored_sha256": "0bb25fa77bbf195713d89c33c47e6aa21b2dcc46dfeb3cbc210e1a1edb39f062",
+      "stored_bytes": 3322
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/independently-derived-operations.json",
+      "original_sha256": "01a94de9cee5c88534092c9b4f8a57730cd559b8de1cf2369eaa6266439c21e8",
+      "original_bytes": 47084,
+      "stored_path": "archive/01/01a94de9cee5c88534092c9b4f8a57730cd559b8de1cf2369eaa6266439c21e8.gz",
+      "stored_sha256": "4ba7d6c8d0597721faad7382535acd98120e322069424ad6c046315ec60d81d3",
+      "stored_bytes": 13604
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/mechanical-proof.json",
+      "original_sha256": "c4603947080570c05b7180458755b7ebb1f4115d49611c9423923234193d2b69",
+      "original_bytes": 15933,
+      "stored_path": "archive/c4/c4603947080570c05b7180458755b7ebb1f4115d49611c9423923234193d2b69.gz",
+      "stored_sha256": "f2a26fde0abfbd6f111478ecd2a396b88e9b3405a6e87d19bde8bbd39ba61594",
+      "stored_bytes": 3476
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/schema.actual-output.txt",
+      "original_sha256": "e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7",
+      "original_bytes": 132,
+      "stored_path": "archive/e0/e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7.gz",
+      "stored_sha256": "8128282c7469e5b5cdd4807dd4cda7cb5e8b3aac66d6c4bcd6ed6274d104285a",
+      "stored_bytes": 140
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/initial-76a7-mechanical-proof/writer-artifact-identity-checks.json",
+      "original_sha256": "394e5680cf20919089d7cbaa5da5bc2cd49b10cd5995400df84fa2de2de5f7f0",
+      "original_bytes": 21981,
+      "stored_path": "archive/39/394e5680cf20919089d7cbaa5da5bc2cd49b10cd5995400df84fa2de2de5f7f0.gz",
+      "stored_sha256": "d92d815e3148559b2a24d263ecd5275295d9f572187248d81a72aaebecef9fca",
+      "stored_bytes": 4060
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/mechanical-proof.json",
+      "original_sha256": "48a5619b9ce98b5da1ec16e54676c2feb348a22dadc079f2d0dd7f745de0c0ad",
+      "original_bytes": 18261,
+      "stored_path": "archive/48/48a5619b9ce98b5da1ec16e54676c2feb348a22dadc079f2d0dd7f745de0c0ad.gz",
+      "stored_sha256": "ec8d41c3ef00e1d6c1be7c19aba98e880bd4f0425de9b43e651d7d472e0fc561",
+      "stored_bytes": 4360
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/new-independent-review-bindings.json",
+      "original_sha256": "4c7c94bcb05efa9e779af07f288c92e0d437beef5fefbafcc3532d131b889c8b",
+      "original_bytes": 3091,
+      "stored_path": "archive/4c/4c7c94bcb05efa9e779af07f288c92e0d437beef5fefbafcc3532d131b889c8b.gz",
+      "stored_sha256": "519a4f2bbc4a3f57e96286be9ae23fc0e85bef71334e1994ffe0ee08d362a4d6",
+      "stored_bytes": 820
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/report.md",
+      "original_sha256": "7a1578b432841039f040e6708fe987a141e7a9662e08a93d544c9c4b16073fde",
+      "original_bytes": 5414,
+      "stored_path": "archive/7a/7a1578b432841039f040e6708fe987a141e7a9662e08a93d544c9c4b16073fde.gz",
+      "stored_sha256": "b511176a14fd3cf0c47dcd800d069b557662f9437f2482cfe62d1761f8514e9b",
+      "stored_bytes": 2609
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/schema.actual-output.txt",
+      "original_sha256": "e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7",
+      "original_bytes": 132,
+      "stored_path": "archive/e0/e03f6bd45ac84cf6318f04ef88d3da5329045f4f8297489b7867dd85c4dff5f7.gz",
+      "stored_sha256": "8128282c7469e5b5cdd4807dd4cda7cb5e8b3aac66d6c4bcd6ed6274d104285a",
+      "stored_bytes": 140
+    },
+    {
+      "original_path": "spain-three-method-country-checkpoint-independent-review/writer-artifact-identity-checks.json",
+      "original_sha256": "2b55f64c00b28b9d642d1d3ffc9a12ea4a8bf47dcdc9c8f35397869b08b81d28",
+      "original_bytes": 9965,
+      "stored_path": "archive/2b/2b55f64c00b28b9d642d1d3ffc9a12ea4a8bf47dcdc9c8f35397869b08b81d28.gz",
+      "stored_sha256": "231a4d57c6cb1358c209e4d47f7ed093da2dc53735febfd0a229c89da7907eb1",
+      "stored_bytes": 2028
+    }
+  ],
+  "original_files": 274,
+  "unique_blobs": 237,
+  "all_roundtrip_hashes_match": true
+}

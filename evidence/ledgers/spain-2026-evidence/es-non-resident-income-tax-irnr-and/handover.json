@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/es-non-resident-income-tax-irnr-and.md",
+    "sha256": "e6d267324516381e9f09083d3614d8780b03da7c197d2bf239e781663c4661d0",
+    "bytes": 176153
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-non-resident-income-tax-irnr-and/rows.json",
+    "sha256": "5b11098d8d83c22a08e4bfef809b279054b653b977fa476a211a35d4950409aa",
+    "bytes": 165150
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-non-resident-income-tax-irnr-and/source-read-receipts.json",
+    "sha256": "9a6e0ecfdc40a51e5519f606eddab9338ea2b447bf42d300413f92068fc2be0f",
+    "bytes": 39474
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-non-resident-income-tax-irnr-and/writer-status.md",
+    "sha256": "77cfee501cb178d3578de7f7b5a2c428ce9b1e7eca495a6be67a28658e1e68fb",
+    "bytes": 1472
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-non-resident-income-tax-irnr-and/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

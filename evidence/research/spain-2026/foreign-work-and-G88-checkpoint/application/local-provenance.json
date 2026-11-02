@@ -1,0 +1,10 @@
+{
+  "skills/international/spain/es-foral-income-tax.md": {
+    "expected_repo_blob": "35d8065a5c1a962e9624c5df7039495431298a69",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-income-tax.md": {
+    "expected_repo_blob": "674ab45409d4bf637708463298956e12c430aef4",
+    "content_revision": 0
+  }
+}

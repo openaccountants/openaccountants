@@ -1,0 +1,18 @@
+{
+  "country_guides": 11,
+  "mechanical_checks": "PASS all ten checks per Guide",
+  "oa_checks": 22,
+  "oa_failures": 0,
+  "unit_tests": 152,
+  "unit_test_result": "PASS after normal merge of current main6a05c79;152 tests in17.391s",
+  "sync_integrity": "PASS11 Guides;0 errors after normal merge of main6a05c79",
+  "changed_only": "PASS11 Guides;5 warning groups for distinct jobs/unrecognised inheritance domain",
+  "quote_integrity": "PASS 81 exact source quote groups across64ledgerrows",
+  "prior_guides_byte_exact": 9,
+  "prior_evidence_files_byte_exact": 356,
+  "professional_attestations": 0,
+  "independent_review": "pending",
+  "push": "not performed",
+  "country_complete": false,
+  "validated_content_commit": "e4aa6eca4660d9552a9ee667c37217e9c061e130"
+}

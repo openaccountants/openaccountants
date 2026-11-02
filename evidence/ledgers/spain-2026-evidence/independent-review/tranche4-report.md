@@ -1,0 +1,11 @@
+# Spain ledger review, tranche 4
+
+BOUNDED PASS for the exact self-employment Guide/ledger pair. All 223 prepared rows and 115 quoted anchors were read; every current nonempty Guide line is represented. The 27 retained source pairs were rehashed without mismatch. The EUR-Lex pair is empty and expressly supplies no authority; readable BOE original and October 2026 amendment excerpts support the stated ordinary applicable-legislation routes, with the relevant amended rules deferred to 2 November 2028. Acquisition and full-body hashes do not imply full-source reading.
+
+Guide `4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9` (35,176 bytes); ledger `d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555`.
+
+The actual LETA38ter.3–8 text supports the restored renunciation, hiring, benefit-base, initial-period regularisation and post-maximum coverage paragraph. A full forward/inverse comparison reproduces the prior v1.3 body exactly after removing that paragraph and reverting version/date/H1. Protected metadata, upstream attribution, CTA, both old examples and all old URLs are preserved. Prior whole-pack original-content review is reused; selected old-topic destinations were inspected, not all 472 old units freshly reread.
+
+53 independent separating controls pass, including the Madrid annual tax/cash reconciliation (8,136.54 final tax and 31,863.46 cash), 180-day RETA band income 1,736, the ordinary full-month 378 contribution, company/family floor and day conditions, withholding, module statutory/administrative thresholds, expense caps, reporting thresholds and contribution relief. Both canonical oa-check blocks pass. Published scale opening quotas, actual contribution expense inputs and component-rounding boundaries remain explicit.
+
+No new material Guide or evidence defect found. The general new-2026 reduced-fee statutory amount and TGSS component discrepancy remain unresolved; the linked social-contributions administrative method is separate. The statutory/repeal versus AEAT module-entry conflict, activity-specific indices, actual foral/island/city branches, precise international/special-system cases and future 2027 campaign implementation remain explicit. These are not converted into zero tax or a whole-country completion claim. This is an independent source-cited draft review, not accountant attestation.

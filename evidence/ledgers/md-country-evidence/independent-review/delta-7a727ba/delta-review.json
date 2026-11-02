@@ -1,0 +1,64 @@
+{
+  "commit": "7a727ba0560df1f860cf18659bfcecbed7619423",
+  "delta_decision": "PASS for the six named corrections only; whole-pack decision INCOMPLETE",
+  "finding_dispositions": [
+    {
+      "id": "MD-REVIEW-001",
+      "status": "resolved_in_checked_delta"
+    },
+    {
+      "id": "MD-REVIEW-002",
+      "status": "resolved_in_checked_delta"
+    },
+    {
+      "id": "MD-REVIEW-003",
+      "status": "resolved_in_checked_delta"
+    },
+    {
+      "id": "MD-REVIEW-004",
+      "status": "resolved_in_checked_delta"
+    },
+    {
+      "id": "MD-REVIEW-005",
+      "status": "resolved_in_checked_delta"
+    },
+    {
+      "id": "MD-REVIEW-006",
+      "status": "resolved_in_checked_delta"
+    }
+  ],
+  "checks": [
+    "Four VAT349-352 references now point8 tableitems7/8 subpoints1/2; original quotes/audit retained",
+    "Eight original VAT question clauses preserved in six groups",
+    "113(2)(b),113(3)-(6) cancellation/valuation explicitly restored against read source",
+    "228(10) excess-refund amount/date through recovery restored",
+    "103 listed privatisation/gambling/funeral/hostel/communal/hail/hydro exemptions restored under exact conditions",
+    "264 assessment statutory trigger separated from265 collection and266 refund clocks;28new rows read; hash/quote/context allpass",
+    "False BE1 p.j. subtitle sentence removed; FORM123claim corrected, original preserved",
+    "Five selected failed predecessor destinations now point to substantive restored Guide treatment; source-corrected limitation wording supersedes imprecise historical predecessor"
+  ],
+  "current_row_counts": {
+    "total": 3910,
+    "substantively_read_at_claim_source_scope": 1270,
+    "no_issue_in_checked_scope": 1270,
+    "unread": 2640,
+    "fully_verified_all_year_commencement_chain": 0
+  },
+  "examples": {
+    "all_retained_oa_check_blocks_recomputed": 50,
+    "manual_current_Guide_examples_checked": 10,
+    "standalone_cases_independently_recomputed": 8,
+    "standalone_cases_total": 58,
+    "standalone_cases_legal_scope_checked": 7
+  },
+  "limits": [
+    "No whole-pack approval",
+    "Remaining2777rows unread",
+    "No claim of comprehensive coverage/accountant attestation",
+    "No complete historic amendment/commencement certificate",
+    "Parent CI/validation and unrelated main/ownership changes not independently approved by focused delta check"
+  ],
+  "later_findings": [
+    "MD-REVIEW-007 minor planning questiongroup template issue"
+  ]
+}

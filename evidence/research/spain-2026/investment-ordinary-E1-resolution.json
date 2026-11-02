@@ -1,0 +1,22 @@
+{
+  "finding": "E1",
+  "status": "resolved by precise artifact labeling; no tax Guide change",
+  "original_source_map_sha256": "a2ecb577d1a328b5ea4baff036fa56bc3cda8339073307d522e2398da30928a0",
+  "corrected_source_map_sha256": "8f0b9923ef67832278a8669b10f3e018e6beebb683f537f3a64ddd7b5ab93acd",
+  "preserved_search_only_txt": {
+    "file": "sources/dgt-v0386-24.txt",
+    "bytes": 1621,
+    "sha256": "0a97012a678f599f931fa7fe89be140672dc5adfe72dea233804dd3783c6d8c2"
+  },
+  "original_full_html": {
+    "file": "sources/dgt-v0386-24.html",
+    "bytes": 77564,
+    "sha256": "e8818095920108c8306cadd9627740469030b203652c2c1acfb7cc3b28cf1898"
+  },
+  "independent_full_text": {
+    "file": "independent/sources/dgt-v0386-24-live.txt",
+    "bytes": 42236,
+    "sha256": "e6d864d6f18608d08fe44936ebd18a3fc3172e5fbb4329e0b2a30efc888be060"
+  },
+  "claim_limit": "The TXT was incomplete; the original HTML did contain the full ruling. Historical artifacts and original review manifest remain unchanged."
+}

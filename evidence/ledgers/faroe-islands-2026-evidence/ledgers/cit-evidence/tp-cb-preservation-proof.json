@@ -1,0 +1,12 @@
+{
+  "fo-transfer-pricing": {
+    "current_sha256": "6484b8867bd960e480f7b73cb0dcb48933de87d708247269ed1d01967bfafcae",
+    "unchanged_vs_published": true,
+    "original_oa_blocks": 2
+  },
+  "fo-country-by-country-reporting": {
+    "current_sha256": "8681ec6ab52a515735ba82b222953afc5343f551a90c4f3f5bb612bdc25c7b8c",
+    "unchanged_vs_published": true,
+    "original_oa_blocks": 2
+  }
+}

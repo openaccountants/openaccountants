@@ -1,0 +1,9 @@
+# Foral corporate ledger: bounded independent PASS
+
+Final unchanged Guide226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929; final ledgerf6523c92cd59a3894210cbe62f12c04b620e398c4ae0fe81cd0522ec452bf709. All866 prepared rows assessed through173 current claim wordings and all canonical quotation bodies.203 retained source receipts reduce to66 distinct raw/reader files, rehashed without mismatch. All866 declared quotation segments match literal-LF source spans; the whitespace/ellipsis convention is explicit.80 independent calculations/boundaries and both actual oa cases pass.
+
+S-L21 closed: Gipuzkoa OF444/2018 article2.2 now quotes its own full same-person/type/method aggregation clause at nativeLF135–147 in rows785/789. Two exact ledger replacements replay and invert the whole ledger; every other row and the entire Guide remain exact. The stale supplementary quote list was detected before verdict, canonical corrected sources read separately and writer scratch preserved/regenerated. No statutory or Guide defect is inferred from obsolete scratch.
+
+Twelve changed earliest-branch topic paragraphs were spotchecked, including dividend fallback, territorial vehicle caps, environmental grants, pension transitions, surcharge and information returns. There is no actual prior-main body; none is invented. Numerical checks include49,080 indexed disposal income,29,680 versus28,000 environmental credits,816 B/G surcharge, the disclosed Álava exact263.390555… interpretation, sequential credit limits and the two ordinary cases.
+
+Álava’s net-result/band correspondence is still a labelled own-law interpretation with literal taxable-increase grammar and other accounting populations unresolved. This review preserves that limitation and does not turn a worked fact pattern into universal law. Source bodies were selectively read, not all in full. This eighteenth Guide-pair review is not country completion or professional attestation.

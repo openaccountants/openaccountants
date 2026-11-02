@@ -1,0 +1,128 @@
+[
+  {
+    "check": "income: entrepreneur",
+    "actual": "16000.0",
+    "expected": "16000",
+    "pass": true
+  },
+  {
+    "check": "income: wage total",
+    "actual": "138000.00",
+    "expected": "138000",
+    "pass": true
+  },
+  {
+    "check": "income: wage balance",
+    "actual": "47000",
+    "expected": "47000",
+    "pass": true
+  },
+  {
+    "check": "corporate:ordinary",
+    "actual": "62000.0",
+    "expected": "62000",
+    "pass": true
+  },
+  {
+    "check": "corporate:rate-loss",
+    "actual": "6250000.00",
+    "expected": "6250000",
+    "pass": true
+  },
+  {
+    "check": "vat:ordinary",
+    "actual": "8000.0",
+    "expected": "8000",
+    "pass": true
+  },
+  {
+    "check": "vat:mixed credit",
+    "actual": "6000",
+    "expected": "6000",
+    "pass": true
+  },
+  {
+    "check": "vat:mixed payable",
+    "actual": "14000",
+    "expected": "14000",
+    "pass": true
+  },
+  {
+    "check": "SC:employer charges",
+    "actual": "1038.000",
+    "expected": "1038",
+    "pass": true
+  },
+  {
+    "check": "SC:employercost",
+    "actual": "4038",
+    "expected": "4038",
+    "pass": true
+  },
+  {
+    "check": "SC:pensioner",
+    "actual": "40.00",
+    "expected": "40",
+    "pass": true
+  },
+  {
+    "check": "payroll:ordinarynet",
+    "actual": "2580.00",
+    "expected": "2580",
+    "pass": true
+  },
+  {
+    "check": "payroll:ordinarycost",
+    "actual": "4038.000",
+    "expected": "4038",
+    "pass": true
+  },
+  {
+    "check": "payroll:children PIT",
+    "actual": "96.72",
+    "expected": "96.72",
+    "pass": true
+  },
+  {
+    "check": "payroll:childrennet",
+    "actual": "1091.28",
+    "expected": "1091.28",
+    "pass": true
+  },
+  {
+    "check": "TP:export adjustment",
+    "actual": "100000",
+    "expected": "100000",
+    "pass": true
+  },
+  {
+    "check": "TP:exporttax",
+    "actual": "20000.0",
+    "expected": "20000",
+    "pass": true
+  },
+  {
+    "check": "TP:loantax",
+    "actual": "3000.000",
+    "expected": "3000",
+    "pass": true
+  },
+  {
+    "check": "XB:royalty",
+    "actual": "15000.00",
+    "expected": "15000",
+    "pass": true
+  },
+  {
+    "check": "XB:foreign credit",
+    "actual": "1300.00",
+    "expected": "1300",
+    "pass": true
+  },
+  {
+    "check": "XB:foreignbalance",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  }
+]

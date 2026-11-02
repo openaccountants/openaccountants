@@ -1,0 +1,435 @@
+{
+  "status": "12newmethod rows match normalized saved primary text; full old-claim ledger pending",
+  "rows": [
+    {
+      "number": 1,
+      "section": "PartV scope",
+      "provision": "Schedule4,18(1), PartIII definitions",
+      "quotes": [
+        "Financial undertakings",
+        "standalone entities shall be excluded from the scope of this Part."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 2,
+      "section": "Exceeding borrowing costs",
+      "provision": "Schedule4,PartIII",
+      "quotes": [
+        "the amount by which the deductible borrowing costs of a taxpayer exceed taxable interest revenues and other economically equivalent taxable revenues;"
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 3,
+      "section": "Tax EBITDA",
+      "provision": "Schedule4,18(5)",
+      "quotes": [
+        "The EBITDA shall be calculated by adding back to the assessable income the tax-adjusted amounts for exceeding borrowing costs as well as the tax-adjusted amounts for depreciation and amortisation."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 4,
+      "section": "Tax EBITDA",
+      "provision": "Schedule4,18(5)",
+      "quotes": [
+        "Income not assessable in accordance with this Act shall be excluded from the EBITDA of a taxpayer."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 5,
+      "section": "Ordinary limit",
+      "provision": "Schedule4,18(3)",
+      "quotes": [
+        "only up to the greater of the following two amounts-",
+        "30% of the taxpayer\u2019s EBITDA; or",
+        "\u20ac3,000,000."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 6,
+      "section": "Group floor",
+      "provision": "Schedule4,18(4)",
+      "quotes": [
+        "the amount of \u20ac3,000,000 shall be considered for the entire group."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 7,
+      "section": "Equity escape",
+      "provision": "Schedule4,18(7)(a)",
+      "quotes": [
+        "lower by up to two percentage points; and",
+        "all assets and liabilities are valued using the same method as in the consolidated financial statements"
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 8,
+      "section": "Group ratio",
+      "provision": "Schedule4,18(7)(b)",
+      "quotes": [
+        "the group ratio is determined by dividing the exceeding borrowing costs of the group vis-\u00e0-vis third parties over the EBITDA of the group;",
+        "the group ratio is multiplied by the EBITDA of the taxpayer calculated pursuant to paragraph 18(5)."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 9,
+      "section": "Disallowed-cost ledger",
+      "provision": "Schedule4,18(8)",
+      "quotes": [
+        "Exceeding borrowing costs not deductible in a tax period under paragraphs 18(3) to 18(7) may be carried forward indefinitely."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 10,
+      "section": "Capacity ledger",
+      "provision": "Schedule4,18(8)",
+      "quotes": [
+        "Unused interest capacity which cannot be used in a given tax period may be carried forward for a maximum of 5 years."
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 11,
+      "section": "Exemption limit",
+      "provision": "Schedule4,18(6)",
+      "quotes": [
+        "Paragraph 19(3) shall not apply to exceeding borrowing costs related to-"
+      ],
+      "all_quotes_present": true
+    },
+    {
+      "number": 12,
+      "section": "Exemption limit",
+      "provision": "Schedule4,18(6)(a)",
+      "quotes": [
+        "loans that were contracted before 17 June 2016, excluding any subsequent modification of such loans;"
+      ],
+      "all_quotes_present": true
+    }
+  ],
+  "old_paragraph_map": [
+    {
+      "number": 1,
+      "old_section": "Scope and relationship test",
+      "paragraph_sha256": "d4314761c20428e186685fb3de5d131e858243f5b5cc927de8f66cc648e22845",
+      "exact": true,
+      "destination": "Same section: Scope and relationship test; full paragraph byte-exact"
+    },
+    {
+      "number": 2,
+      "old_section": "Scope and relationship test",
+      "paragraph_sha256": "e5da63107c35233f7dd1067e34b66a149c65cc6bda409c6d462e79e81064d446",
+      "exact": true,
+      "destination": "Same section: Scope and relationship test; full paragraph byte-exact"
+    },
+    {
+      "number": 3,
+      "old_section": "Determine control from rights, not just registered shares",
+      "paragraph_sha256": "0fae77cf386f288f747a7b6178b95370e4c91e279dc8bc32c34edf143ebd85ea",
+      "exact": true,
+      "destination": "Same section: Determine control from rights, not just registered shares; full paragraph byte-exact"
+    },
+    {
+      "number": 4,
+      "old_section": "Determine control from rights, not just registered shares",
+      "paragraph_sha256": "4a9b2831111925b26a4e586f324f34b65c2364f79a4a80d830a1592500858487",
+      "exact": true,
+      "destination": "Same section: Determine control from rights, not just registered shares; full paragraph byte-exact"
+    },
+    {
+      "number": 5,
+      "old_section": "Determine control from rights, not just registered shares",
+      "paragraph_sha256": "ee74b58ed7c1d0e69de32664e55359f5dd7dec2e84599a55bd74e05e2075e58d",
+      "exact": true,
+      "destination": "Same section: Determine control from rights, not just registered shares; full paragraph byte-exact"
+    },
+    {
+      "number": 6,
+      "old_section": "Determine control from rights, not just registered shares",
+      "paragraph_sha256": "bf7ee849de912ba0d7187770ffe1b2dcc5c041b08b19f67fbb2c9d0ec1ee3aa6",
+      "exact": true,
+      "destination": "Same section: Determine control from rights, not just registered shares; full paragraph byte-exact"
+    },
+    {
+      "number": 7,
+      "old_section": "Connection extends beyond shareholders",
+      "paragraph_sha256": "14ae3bfe0783c6c7e7d19caa2ba7515f2e8705a587fe0c1b68c4500fc84640b7",
+      "exact": true,
+      "destination": "Same section: Connection extends beyond shareholders; full paragraph byte-exact"
+    },
+    {
+      "number": 8,
+      "old_section": "Connection extends beyond shareholders",
+      "paragraph_sha256": "e3e268b3b6aca004a34df76df084f07f816b06f7f6423c18efd853f8b3257b5d",
+      "exact": true,
+      "destination": "Same section: Connection extends beyond shareholders; full paragraph byte-exact"
+    },
+    {
+      "number": 9,
+      "old_section": "Connection extends beyond shareholders",
+      "paragraph_sha256": "9353ce44a028984695fd2f982c4bff7504028927352e391765339fe6a59359a2",
+      "exact": true,
+      "destination": "Same section: Connection extends beyond shareholders; full paragraph byte-exact"
+    },
+    {
+      "number": 10,
+      "old_section": "Business-profit adjustment and excess interest",
+      "paragraph_sha256": "49f11c9f2ba4f83ef454b867e51562441d54549c1b098d8127eaa7461f4dcade",
+      "exact": true,
+      "destination": "Same section: Business-profit adjustment and excess interest; full paragraph byte-exact"
+    },
+    {
+      "number": 11,
+      "old_section": "Business-profit adjustment and excess interest",
+      "paragraph_sha256": "a14f6735b4c56e6c42f7b45e90b8b1c1ca327cbccc40ac7d5fea20b9b1e590ec",
+      "exact": true,
+      "destination": "Same section: Business-profit adjustment and excess interest; full paragraph byte-exact"
+    },
+    {
+      "number": 12,
+      "old_section": "Conditional thin capitalisation",
+      "paragraph_sha256": "6e290f0a183b0021df395f2b87b9511abd1154c20d61719e076894589115cbf8",
+      "exact": true,
+      "destination": "Same section: Conditional thin capitalisation; full paragraph byte-exact"
+    },
+    {
+      "number": 13,
+      "old_section": "Conditional thin capitalisation",
+      "paragraph_sha256": "1857bb1fb0a7dcf049589e1df8510067808ce024f152b2387fff0cc0a6efab6a",
+      "exact": true,
+      "destination": "Same section: Conditional thin capitalisation; full paragraph byte-exact"
+    },
+    {
+      "number": 14,
+      "old_section": "Conditional thin capitalisation",
+      "paragraph_sha256": "a0952c5efbf4af15314abed0db95356cd3f470f3ff614c832fcd285d08884ff4",
+      "exact": true,
+      "destination": "Same section: Conditional thin capitalisation; full paragraph byte-exact"
+    },
+    {
+      "number": 15,
+      "old_section": "Conditional thin capitalisation",
+      "paragraph_sha256": "8a7b183c02bb38d5d945714cd631c47d341c3c7b6ea4671b68aa14515669442e",
+      "exact": true,
+      "destination": "Same section: Conditional thin capitalisation; full paragraph byte-exact"
+    },
+    {
+      "number": 16,
+      "old_section": "Conditional thin capitalisation",
+      "paragraph_sha256": "a3c386aedaa58700f79c6e5129be9ff4741ac0de3329dac68c1be16be76ae86d",
+      "exact": true,
+      "destination": "Same section: Conditional thin capitalisation; full paragraph byte-exact"
+    },
+    {
+      "number": 17,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "40545ce74e259c4f55ad4d48452f0eaae6108cc55691c1e765316894b40625c8",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 18,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "68fe560ac9b9518e2a820e40d4b75dbce2996301bcfc65a098c3b536e12b8ca6",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 19,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "66a3ac5105abb609e9e21877824cb32b12f1677f5f46578597ccb155ee96a543",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 20,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "b88a40010b55cbddee316e450a45ae2dff3f6ec022b00540b07e52f73a4386fa",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 21,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "df1f6a634de861ec18d58a690a49744ef50bbc28da5b0abe4ec316e03d39e9ab",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 22,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "paragraph_sha256": "3f4160d3699f5075d491d696e144988ae95483fda6946e9c52a85d8ea70d87d7",
+      "exact": true,
+      "destination": "Same section: Arm's-length loans secured by untaxed deposits or investments; full paragraph byte-exact"
+    },
+    {
+      "number": 23,
+      "old_section": "Aggregate connected-expense cap",
+      "paragraph_sha256": "d0e1c34b003116f1cf19765280e286f6497d95ea6e5ab65e57d31dd5189ba4cd",
+      "exact": true,
+      "destination": "Same section: Aggregate connected-expense cap; full paragraph byte-exact"
+    },
+    {
+      "number": 24,
+      "old_section": "Aggregate connected-expense cap",
+      "paragraph_sha256": "28dec2ed13763adb911c01be48adfce33b48567acfa0d3f375feedba99e2fe58",
+      "exact": true,
+      "destination": "Same section: Aggregate connected-expense cap; full paragraph byte-exact"
+    },
+    {
+      "number": 25,
+      "old_section": "Aggregate connected-expense cap",
+      "paragraph_sha256": "66095c13f5a9af275c414f5db140e68202d064ed89c8e765f155e12f9f686d64",
+      "exact": true,
+      "destination": "Same section: Aggregate connected-expense cap; full paragraph byte-exact"
+    },
+    {
+      "number": 26,
+      "old_section": "Aggregate connected-expense cap",
+      "paragraph_sha256": "c9e174b2eeb5a9dc62a9e412fee0bab59136912cb8d9f58cf829fc9ece0aebef",
+      "exact": true,
+      "destination": "Same section: Aggregate connected-expense cap; full paragraph byte-exact"
+    },
+    {
+      "number": 27,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "4e8619b66ad182d3786b65398470427db82dd9b27af5f89cae242cdcd36504d5",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 28,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "d21012736082fe463538a9cc2ee0656ca4d8c80212f819cd906b89f4fc283403",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 29,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "a34ba48dd005e379a72ee3b2cea10448f385c9d41812aba1946d3f03a4228b54",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 30,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "6ffab62f7c81fad4f8428d49ddcd7a0fa577c13235b2c53358def4d1c81a1a28",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 31,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "ad2a28171b0b1afb4da1801b667b2b3824fbfa0c8830dfade1fcd24aecd80f3f",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 32,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "36dcd30ae7c02a3481261362c432e96c73ce249fd702378ab3abc7cc6558bb3a",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 33,
+      "old_section": "Shareholder advances and deemed distributions",
+      "paragraph_sha256": "2f6eec26ec829e05c6f9faa4f8fa6bfe3d5b02966257b63e00244582fbe837d9",
+      "exact": true,
+      "destination": "Same section: Shareholder advances and deemed distributions; full paragraph byte-exact"
+    },
+    {
+      "number": 34,
+      "old_section": "Exemption and evidence",
+      "paragraph_sha256": "e4c55559b2c519b09d9bc3a1fb8f1f0736e440a83a16d7ded356d73f34461fd0",
+      "exact": true,
+      "destination": "Same section: Exemption and evidence; full paragraph byte-exact"
+    },
+    {
+      "number": 35,
+      "old_section": "Exemption and evidence",
+      "paragraph_sha256": "2e7786f0e2ab5bad8d27904087118cfb8a9c2e393652038b35709839a09d6548",
+      "exact": true,
+      "destination": "Same section: Exemption and evidence; full paragraph byte-exact"
+    },
+    {
+      "number": 36,
+      "old_section": "Exemption and evidence",
+      "paragraph_sha256": "0952d36c35324835785c83ae5e2bc8973112987280d94d231a87fd751ac71869",
+      "exact": true,
+      "destination": "Same section: Exemption and evidence; full paragraph byte-exact"
+    },
+    {
+      "number": 37,
+      "old_section": "Exemption and evidence",
+      "paragraph_sha256": "838d2d867dd2191bb945c896fdfc8e4cf187bbf3e2abe073a0072cfe31bb7db4",
+      "exact": false,
+      "destination": "Same section: Exemption and evidence; outstanding later-interest wording narrowed by suppliedPartVmethod; other exact limits retained"
+    },
+    {
+      "number": 38,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "04635ac22e537ef4cb1c3e61feec90392c0b780e002c524ff385c0bed63d5cac",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 39,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "bd5fc03032d933e5d1f7dbcf3292caadbe5307253ae5b3689b22cfa8317f9af1",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 40,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "f7ff50c815e92028002722330a90c27b51e438639f1c62f768877e4c87742ae5",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 41,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "5c615fb412ed538ea98ffea769fc552fd041e536f5e5b182a3fd499b2918613e",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 42,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "ad8a63d6faf64d58acaa6ef0fc49aff828d32484dfbe6c0bb6214872814b9813",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 43,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "2484f502ce79e4f7ab297fd6f54d825f30c27d23b985d2db66467fa167f4c8ba",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 44,
+      "old_section": "Seeking clearance under section 42",
+      "paragraph_sha256": "8d81fed21abba7bed48f5a1da4099aff8c1706b6bc236bc70c33016c8e9dbd89",
+      "exact": true,
+      "destination": "Same section: Seeking clearance under section 42; full paragraph byte-exact"
+    },
+    {
+      "number": 45,
+      "old_section": "Anti-avoidance decisions and appeal scope",
+      "paragraph_sha256": "6529c15af348f4b163a8e1bf1a94047f147dd7d245b25d7175bd12e74ba5bf89",
+      "exact": true,
+      "destination": "Same section: Anti-avoidance decisions and appeal scope; full paragraph byte-exact"
+    }
+  ]
+}

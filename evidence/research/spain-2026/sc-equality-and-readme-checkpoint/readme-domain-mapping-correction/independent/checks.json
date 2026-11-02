@@ -1,0 +1,72 @@
+{
+  "verdict": "BOUNDED_PASS",
+  "scope": "README frontmatter mapping/semantic/preservation review only; no Spain whole-pack or tax-content pass",
+  "checks": {
+    "exact_final_hash": true,
+    "unique_YAML_keys": true,
+    "jurisdiction_ES": true,
+    "seven_known_unique_applicable": true,
+    "empty_not_applicable": true,
+    "correct_IT_IND_slug": true,
+    "all_seven_slugs_exist_in_actual_index": true,
+    "other_six_mappings_exact": true,
+    "old_partial_IT_IND_verbatim": true,
+    "displaced_positive_income_and_allocation_reservations_verbatim": true,
+    "all_other_partial_values_exact": true,
+    "all_other_frontmatter_exact": true,
+    "README_body_exact": true,
+    "real_parser_matches_YAML": true,
+    "IT_IND_still_partial": true,
+    "unchanged_bounded_coverage_result": true
+  },
+  "actual_ES_coverage": {
+    "code": "ES",
+    "name": "Spain",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/spain",
+    "skills": 30,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "PR",
+      "TP"
+    ],
+    "missing": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "XB"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "IT-IND": "Ordinary common-territory and four foral methods,including pension/progression and business-credit incorporation,are supplied. Independently reviewed Catalan legacy/rural/July credits and Valencian family-credit caps are supplied; listed regional income/allocation/intersection questions remain,including Cantabria exempt-income/loss/offset and joint entitlement combinations beyond the supplied ordinary married method,La Rioja third-birthday interpretation and lower-base minimum allocation in combined annuity/progression cases. Positive-income regional attributable-tax methods now include mixed savings/general income, reductions and minima. Signed-income/loss allocation, shared wage/thalidomide expenses and the new Balearic thalidomide rate remain unconfirmed, alongside the listed regional intersections, Cantabria denominator/joint combinations, La Rioja third-birthday boundary and lower-base annuity/progression allocation.",
+      "IT-CORP": "Nonzero Basque extraordinary-profit surcharge interpretation, including the accounting-profit to base/quota bridge and \u00c1lava implementing provision, remains unresolved; the literal 5% headcount overlap and return-specific minimum rounding are recorded.",
+      "VAT": "Ordinary IVA, foral result allocation, IGIC, direct-assessment IPSI, non-EU input mapping and corrective returns are supplied, including finite annual delayed-first-use and both-gates business-use/prorrata methods; the delayed-use later-reference conflict, simultaneous U/P changes where only one separate gate is crossed, and acquisition-value thresholds decided by partially/nonrecoverable VAT remain specifically unconfirmed.",
+      "SC": "The statutory amount and reconciled TGSS assessment of new-2026 reduced-fee awards, equality-at-SMI extension boundary remain unresolved. Cessation-benefit monthly caps and their statutory exceptions are supplied.",
+      "XB": "Ordinary common-territory non-PE/PE and departure computations are supplied. The separate Basque/Navarra nonresident Guide supplies independently reviewed ordinary substantive,PE,collection/withholding and formal methods,including complete2026PIT/PE coefficient tables. Positive PE extraordinary-profit surcharge applicability and named specialist allocation/attribution/relief branches remain unresolved as recorded in Sources."
+    },
+    "has_readme": true,
+    "complete": false
+  },
+  "history": {
+    "f923fe28": {
+      "covered_by_IT_IND": "es-income-tax",
+      "README_sha256": "5ab721eaa15e8d345a715b9714a375b497a1d0c28f90fa404b553dad8b4c2245"
+    },
+    "700b7687": {
+      "covered_by_IT_IND": "es-income-tax",
+      "README_sha256": "6512f266c81c0c15f6d5a102bf419e7e8cc362f474e06d5614a83cee14cd1f01"
+    },
+    "6d537fd4^": {
+      "covered_by_IT_IND": "es-income-tax",
+      "README_sha256": "6512f266c81c0c15f6d5a102bf419e7e8cc362f474e06d5614a83cee14cd1f01"
+    },
+    "local_origin_main": {
+      "commit": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+      "README_exists": false,
+      "scope": "Read local reference; no live-fetch or remote-currentness assertion."
+    }
+  }
+}

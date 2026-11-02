@@ -1,0 +1,9 @@
+{
+  "candidate_guide_sha256": "3727c1fcc8a67afb0c88a1d1842397f7d2d0b4234a812eaa888fa0735d72b3a2",
+  "candidate_ledger_sha256": "6c6db1fbb41598f6eb568d56d6392d3beba293bb25424b28d7f7a80c594d05b9",
+  "original_guide_sha256": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+  "original_ledger_sha256": "6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a",
+  "ledger_exact_original_prefix": true,
+  "old_topic_units": 348,
+  "delta_rule_groups": 7
+}

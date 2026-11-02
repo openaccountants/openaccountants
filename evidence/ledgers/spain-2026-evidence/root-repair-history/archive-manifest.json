@@ -1,0 +1,235 @@
+{
+  "scope": "Exact root bounded repair history through S-L25 including sourced options and before/after/inverse evidence. Historical versions are retained evidence; current canonical Guide pins and independent review index govern acceptance. READMEfinalpreparation remains private untilfinal review.",
+  "artifacts": [
+    {
+      "path": "DGT-V0835-25-current-AX.txt",
+      "sha256": "111655450eb4d1d305552b71e12fe1ccba5148996d8a8b190f128fd952e41808",
+      "bytes": 36163
+    },
+    {
+      "path": "IRNR-joint-owner/AEAT-210-instructions.html",
+      "sha256": "e399123d84b491d5168d20cae1ba795aa782594c198dee04091b3075dae6a091",
+      "bytes": 116754
+    },
+    {
+      "path": "IRNR-joint-owner/after.md",
+      "sha256": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+      "bytes": 34436
+    },
+    {
+      "path": "IRNR-joint-owner/before.md",
+      "sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "bytes": 33442
+    },
+    {
+      "path": "IRNR-joint-owner/source-receipt.json",
+      "sha256": "807b53519d4322216692a49172e36184558cd566b89febe2f0c0b71099269def",
+      "bytes": 723
+    },
+    {
+      "path": "IRNR-joint-owner/writer-record.json",
+      "sha256": "af752f177f738a371fc034206bb91a147f6720cd4d04cd24e413d82b6c1cf19b",
+      "bytes": 1126
+    },
+    {
+      "path": "S-L01/after.md",
+      "sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+      "bytes": 23912
+    },
+    {
+      "path": "S-L01/before.md",
+      "sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "bytes": 23234
+    },
+    {
+      "path": "S-L01/exact-operations.json",
+      "sha256": "0b70e4911da9492fae3757426bf3c1cbc1cd22a0980fd59ef2dc87f871ea46e8",
+      "bytes": 2292
+    },
+    {
+      "path": "S-L01/writer-record.json",
+      "sha256": "33c4e087659a748c91b6dbc7511985edee5958c1017a415e7395fe1b375a864c",
+      "bytes": 632
+    },
+    {
+      "path": "S-L13/guide-after.md",
+      "sha256": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+      "bytes": 75597
+    },
+    {
+      "path": "S-L13/guide-before.md",
+      "sha256": "e2b50cdaa21b622d0012956ebfe811430ca3e7be44e868117968d2a145432fe7",
+      "bytes": 75414
+    },
+    {
+      "path": "S-L13/proof-erratum.json",
+      "sha256": "fe3903f29cf7172aea1d4729bb3623f47e9aba588274c4569d6462d88c687127",
+      "bytes": 226
+    },
+    {
+      "path": "S-L13/proof.json",
+      "sha256": "53b2c1d1b62a895911a6f6de4bfa18272fe255b63712041f0863c9c12ff417ca",
+      "bytes": 398
+    },
+    {
+      "path": "S-L13/sourced-options.md",
+      "sha256": "26c1a676506b6c3855b75e0ad01cf829ba3119205dfcf1d0c38dad1baa5a1a71",
+      "bytes": 933
+    },
+    {
+      "path": "S-L18/guide-after.md",
+      "sha256": "3a03158eba17ed8b79460e1c558a9c8c402c6d07ab4d2a3da89c7191a4a59547",
+      "bytes": 52783
+    },
+    {
+      "path": "S-L18/guide-before.md",
+      "sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "bytes": 52020
+    },
+    {
+      "path": "S-L18/proof.json",
+      "sha256": "c0fb67a22e7b3f3a4229f54a462fe4f6c4bd775448792fb77b7b5681a275a510",
+      "bytes": 500
+    },
+    {
+      "path": "S-L18/sourced-options.md",
+      "sha256": "f3d2b14bf39838e3111f2904c1dae2b944e94ce6ce2a6b575a2e8c81f8d2f4d8",
+      "bytes": 1606
+    },
+    {
+      "path": "S-L20/guide-after.md",
+      "sha256": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+      "bytes": 53221
+    },
+    {
+      "path": "S-L20/guide-before.md",
+      "sha256": "3a03158eba17ed8b79460e1c558a9c8c402c6d07ab4d2a3da89c7191a4a59547",
+      "bytes": 52783
+    },
+    {
+      "path": "S-L20/proof.json",
+      "sha256": "bacbbf1c8c33dc49657c55f7d78322056c78e4d44d98fa4af371918919cff820",
+      "bytes": 392
+    },
+    {
+      "path": "S-L20/sourced-options.md",
+      "sha256": "0150e5c603b42623df40b3bac3115b34a16657c1d40e4236cdcfd835763e9183",
+      "bytes": 969
+    },
+    {
+      "path": "S-L24/guide-after.md",
+      "sha256": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+      "bytes": 70110
+    },
+    {
+      "path": "S-L24/guide-before.md",
+      "sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+      "bytes": 69256
+    },
+    {
+      "path": "S-L24/proof.json",
+      "sha256": "0d121e92a80ec8c46701ea01f4915bb46b5d08098321e826b2af355b0c2083ff",
+      "bytes": 404
+    },
+    {
+      "path": "S-L24/sourced-options.md",
+      "sha256": "b8d54da37300675dc352eaa7b1785a056ba5810099dcb91672f843873dfc38fb",
+      "bytes": 971
+    },
+    {
+      "path": "S-L25/after-es-irpf-deductions.md",
+      "sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+      "bytes": 554138
+    },
+    {
+      "path": "S-L25/before-es-irpf-deductions.md",
+      "sha256": "dc7b1c2f8cf4d5b90514539c335d073d56736d70775ed1d762ea37794e02904c",
+      "bytes": 554102
+    },
+    {
+      "path": "S-L25/diff.patch",
+      "sha256": "e9f5ab916ab096b32331e7d1423f999cc05acbdf2d8a7c4fe9df7ceb6b6568ec",
+      "bytes": 3893
+    },
+    {
+      "path": "S-L25/options-before-edit.md",
+      "sha256": "4ddb598959250b64270a9cfce7e449923f25f1556078c581997d7a0d3aaca07e",
+      "bytes": 1154
+    },
+    {
+      "path": "S-L25/proof.json",
+      "sha256": "da20565e77c8490c82250884c7d057b221d4685765dc37d0f2c54185505b1d8f",
+      "bytes": 351
+    },
+    {
+      "path": "VAT-scope/after.md",
+      "sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+      "bytes": 27254
+    },
+    {
+      "path": "VAT-scope/before.md",
+      "sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "bytes": 27072
+    },
+    {
+      "path": "VAT-scope/operations.json",
+      "sha256": "20587055ba84a25b30eb2cea21a38f7f1f94e600ca915faf01c845a5b348b853",
+      "bytes": 1187
+    },
+    {
+      "path": "VAT-scope/writer-record.json",
+      "sha256": "c3625d17e065409b890225eb2e8685d1179fa8ba9b8f3c09ce76046ef25aeccb",
+      "bytes": 1084
+    },
+    {
+      "path": "autonomous-old-topics/after.md",
+      "sha256": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+      "bytes": 35176
+    },
+    {
+      "path": "autonomous-old-topics/before.md",
+      "sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "bytes": 34420
+    },
+    {
+      "path": "autonomous-old-topics/writer-record.json",
+      "sha256": "8caf19de243b5876149644d9dac8e88b3a815114c6e674a7dc4f765e4ca7de74",
+      "bytes": 658
+    },
+    {
+      "path": "corporate-old-impairment/after.md",
+      "sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+      "bytes": 43349
+    },
+    {
+      "path": "corporate-old-impairment/before.md",
+      "sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "bytes": 43212
+    },
+    {
+      "path": "corporate-old-impairment/writer-record.json",
+      "sha256": "76ed1aa235505174785a8f7007a5c0fce7da54e94ff7d18b8a59032a4dea69c8",
+      "bytes": 812
+    },
+    {
+      "path": "foral-gipuzkoa-charity-base/guide-after.md",
+      "sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+      "bytes": 323948
+    },
+    {
+      "path": "foral-gipuzkoa-charity-base/guide-before.md",
+      "sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "bytes": 323879
+    },
+    {
+      "path": "foral-gipuzkoa-charity-base/proof.json",
+      "sha256": "c02791c669c8c9f10ffb0f7c56430283ecf63387dd1665f3f9bf4139c0986542",
+      "bytes": 399
+    },
+    {
+      "path": "foral-gipuzkoa-charity-base/sourced-options.md",
+      "sha256": "a46f035218030171ea1c53e60bfc9c973d1be4570e5984beae1bcd0d306fd37d",
+      "bytes": 841
+    }
+  ]
+}

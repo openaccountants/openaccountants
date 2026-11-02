@@ -1,0 +1,39 @@
+{
+  "commit": "a91aa7ea893f57545da1d664d7b2536210545cf6",
+  "Guide_hashes": {
+    "skills/international/moldova/md-company-formation.md": "2568a39d2d062b187ec483263ea78a81cc970f084dd1a322d92b178c5a4ff0e5",
+    "skills/international/moldova/md-corporate-income-tax.md": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+    "skills/international/moldova/md-cross-border.md": "6c3878625755d8b9bbc8af6c10689f302874cc6840690f7e001bee178622d0ae",
+    "skills/international/moldova/md-tax-overview.md": "6e6f32be0fe446df9e4ffc1ed730b13c65bbfb85ef0f74fdbc86e20180a846b2",
+    "skills/international/moldova/md-transfer-pricing.md": "6b12db6690efecc0c88bbb477c1187627ad07e0bafeb4ce45cfe5c8ca3dcc986",
+    "skills/international/moldova/moldova-income-tax.md": "fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e",
+    "skills/international/moldova/moldova-payroll.md": "c6537ba21906a12e99ac50293cb4dfdd0b64970a9e38db750d6f2412135d1df2",
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68",
+    "skills/international/moldova/moldova-tax-optimization.md": "81a761e584f26f068fe2d47382710e0d14e2d44c55b4ef0a019fce865b67ed3f",
+    "skills/international/moldova/moldova-vat.md": "4301b1c7c3267fea647fb733c77db543ee2e2f19b6b1a90d2ebd018ac4f3fa07"
+  },
+  "README_sha256": "93a1730a47aa960723dac49e736fa2036c462ead4ac2c2352a1a52d8da5c6a8b",
+  "ledger_hashes": {
+    "ledgers/md-company-formation.writer.json": "b8263c928695d5bd21dff648217c9c498633a5bd280a5c56e5b5b1eceac3e288",
+    "ledgers/md-company-formation.md": "0334cd7f7e19b7d06cc9a1d21f1cc93ab0041c892d760928031fd0a712cdd6f2",
+    "ledgers/md-corporate-income-tax.writer.json": "2923e7c28fd8d5900ab5ffeb595c814b660c5b7306df08946d472ddc12018981",
+    "ledgers/md-corporate-income-tax.md": "fcba0303e4d692fe60874ee2ffa161909023a1f5bc576d90280498cc835397e8",
+    "ledgers/md-cross-border.writer.json": "89af01e8c59a037592b576b611e90603373ef93d8bbe305d227fb709b88a7ea9",
+    "ledgers/md-cross-border.md": "42765413dc351168c170271539e147b630d3b624d4da039292072318f43ed322",
+    "ledgers/md-tax-overview.writer.json": "3cd4b324ae3f52130cd97e25102efc8881f9623e72809e39437a279bc2858506",
+    "ledgers/md-tax-overview.md": "28271678b6105b235fd9549b97ccf10adf08de7e9bc318ce7430cb821fba08b4",
+    "ledgers/md-transfer-pricing.writer.json": "3d5d3ca8210b6a328f0080f7762b1491473ad90786bfe79677eaa964a4242d68",
+    "ledgers/md-transfer-pricing.md": "3eec606b71e9471384de390981929e59a533f8dfd6e90031a1edabbf5f817bb0",
+    "ledgers/moldova-income-tax.writer.json": "a849e24aa3900428061fd227fc13eab3f6551c227952969bbadf31f79e01ddfc",
+    "ledgers/moldova-income-tax.md": "0af41e3656c35dfdfdf981966a7a6894037249681ff81e264dc9be93928f2562",
+    "ledgers/moldova-payroll.writer.json": "41876b644e8aca37c195fd154609d8e8eb5855d186abfd1cb86cc25b02beadd2",
+    "ledgers/moldova-payroll.md": "2746fbcb1652309c0f2e5916f444314b628f86b3938ab883c8f46a1b51400ca4",
+    "ledgers/moldova-social-contributions.writer.json": "65df71b720a614e999e9ce78adb3637a1dd04740c323706325f0c4e84052597f",
+    "ledgers/moldova-social-contributions.md": "596f5733cba0a6db92fc868fb6b5df01d2776f9b559218817a30809c342c6245",
+    "ledgers/moldova-tax-optimization.writer.json": "83a67fca257dc2f85c0c2b5fddc5d7a6e46465b8be689243f543d7288f99de62",
+    "ledgers/moldova-tax-optimization.md": "a035f1e656148d9b6adbf8dcfc1934b8efbb34e2b649044d2b0c45afd813c6d2",
+    "ledgers/moldova-vat.writer.json": "44ad40ad89004fbc38e9613fd26976f1cd1df8ad494cbae44fd177b6f76d824f",
+    "ledgers/moldova-vat.md": "2641f9507c468bdc23c3f68f72ada4e8a709ca0df83c502108ddcb7c3301a2b3"
+  },
+  "meaning": "Final reviewed active bytes. Appending exact independent recheck record as separate public evidence does not change these hashes."
+}

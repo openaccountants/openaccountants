@@ -1,0 +1,67 @@
+{
+  "finding": "MD-REVIEW-015",
+  "status": "Writer correction; independent delta recheck pending",
+  "base_commit": "46abcea31b0ac0556fddaf28ffcfd114e2b71459",
+  "original_Guide_sha256": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+  "new_Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+  "original_sentence": "If the ordinary ratio conditions are satisfied despite a missing policy statement, CNAS describes corrected declarations; if 18% was used and the actual ratio fails, correct and settle the ordinary difference.",
+  "corrected_sentence": "For the missing-policy correction route, CNAS point 13.3 expressly requires an actual annual ratio **above 70%**. Its application at exactly 70% is unconfirmed here. If 18% was used and the actual ratio fails, correct and settle the ordinary difference.",
+  "unchanged_source_row": {
+    "id": "MD-SC-026",
+    "rule_or_figure": "Actual agricultural ratio above70% despite missing policy permits corrected declarations.",
+    "Guide_section": "The base",
+    "act_article_or_official_section": "CNAS Order31-A/18.02.2026 instructions point13.3",
+    "official_url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+    "exact_original_language_quote": "În cazul în care entitatea nu a indicat în Politica de contabilitate intenția de practicare a activității de cel puțin 70% din activitățile stipulate",
+    "read_date": "2026-10-30",
+    "source_observation": "ledgers/md-country-evidence/sources/cnas-2026-instructions.txt",
+    "source_text_sha256": "3549dd40fd7e35c0e5e6dea56ce1045c0a29d54763e8d93a8ad588cbe83dbbc1",
+    "source_point_full_text": "În cazul în care entitatea nu a indicat în Politica de contabilitate intenția de practicare a\nactivității de cel puțin 70% din activitățile stipulate în grupele 01.1-01.6 din CAEM și, efectiv, pe\nparcursul anului de gestiune a înregistrat o mărime a acestui indicator mai mare decât 70%, aceasta este\nîn drept să efectueze recalcularea contribuțiilor de asigurări sociale de stat obligatorii şi prezentarea,\nconform art.188 din Codul fiscal, a dărilor de seamă corectate.",
+    "quote_matches_source_after_layout_normalization": true,
+    "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+  },
+  "source_text_sha256_unchanged": "3549dd40fd7e35c0e5e6dea56ce1045c0a29d54763e8d93a8ad588cbe83dbbc1",
+  "exact_original_language_quote": "a înregistrat o mărime a acestui indicator mai mare decât 70%",
+  "boundary": "Strictabove70onlyforpoint13.3missing-policycorrection; ordinaryatleast70eligibilityretained; exact70/missingpolicyunresolved",
+  "source_rows_changed": 0,
+  "new_source_rows": 0,
+  "hash_bindings_refreshed": [
+    {
+      "path": "ledgers/md-country-evidence/cnas-correction-current-controls.json",
+      "key": "Guide_hashes",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "path": "ledgers/md-country-evidence/cnam-refund-current-controls.json",
+      "key": "Guide_hashes",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "path": "ledgers/md-country-evidence/employment-current-form-controls.json",
+      "key": "Guide_hashes",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "path": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "key": "Guide_hashes",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "path": "ledgers/md-country-evidence/cnas-refund-current-controls.json",
+      "key": "Guide_hashes",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "path": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+      "key": "current_Guide_sha256",
+      "before": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+      "after": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    }
+  ],
+  "examples": "Allpriorcasesunchanged; agriculturalcaseassumesdocumentedannual/policygates"
+}

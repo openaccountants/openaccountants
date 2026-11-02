@@ -1,0 +1,148 @@
+{
+  "baseline_commit": "96d45505ced79937b06ffc59c081aba776ff5eea",
+  "baseline_sha256": "89f5cbe7587a1b7254162a8018db9f51cee92db6881e82fd915271d0fe00cc7f",
+  "frozen_sha256": "8f0a2db6bf2fabde6391761b8b98738f54980dee2486b27bb59267a7616036dc",
+  "preserved_segments": {
+    "frontmatter": {
+      "byte_identical": true,
+      "baseline_sha256": "7f4918e180691db9b735eebca6ff0a770d4c2933fc310ae213cffd2d9ce9b6bc",
+      "working_sha256": "7f4918e180691db9b735eebca6ff0a770d4c2933fc310ae213cffd2d9ce9b6bc"
+    },
+    "CTA": {
+      "byte_identical": true,
+      "baseline_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "working_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "examples": {
+      "byte_identical": true,
+      "baseline_sha256": "2a409103d9814aa1e73487df1e835cae4e7925724b75f8b23d56b17d084c5cb4",
+      "working_sha256": "2a409103d9814aa1e73487df1e835cae4e7925724b75f8b23d56b17d084c5cb4"
+    },
+    "before_Cantabria": {
+      "byte_identical": true,
+      "baseline_sha256": "304eb00c845a42f26726373dfe0481ec5f13ef9099874a6a4e1c3bd71b6213e2",
+      "working_sha256": "304eb00c845a42f26726373dfe0481ec5f13ef9099874a6a4e1c3bd71b6213e2"
+    },
+    "after_Cantabria_before_sources": {
+      "byte_identical": true,
+      "baseline_sha256": "e9d40879882b00d59877877dc95e3c604c3aa344244430bf7dd5549de3f7c10a",
+      "working_sha256": "e9d40879882b00d59877877dc95e3c604c3aa344244430bf7dd5549de3f7c10a"
+    },
+    "ordinary_individual_method": {
+      "byte_identical": true,
+      "baseline_sha256": "38c3869b18f5827cdad5f85444175b177f0cdab2b272050af5e50b48b3875a71",
+      "working_sha256": "38c3869b18f5827cdad5f85444175b177f0cdab2b272050af5e50b48b3875a71"
+    }
+  },
+  "unchanged_paragraph_spans": [
+    {
+      "baseline_paragraphs": [
+        0,
+        159
+      ],
+      "working_paragraphs": [
+        0,
+        159
+      ],
+      "sha256": "7dfbefda2df3afbe92a4be238098bc68d2836419a1480e00b53e3c8b7ff6171f"
+    },
+    {
+      "baseline_paragraphs": [
+        160,
+        423
+      ],
+      "working_paragraphs": [
+        162,
+        425
+      ],
+      "sha256": "34784441c98a6d93efd577e2840cbac5508c318ff8ea182dbf545588492170ba"
+    },
+    {
+      "baseline_paragraphs": [
+        424,
+        430
+      ],
+      "working_paragraphs": [
+        426,
+        432
+      ],
+      "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    }
+  ],
+  "delta_paragraph_operations": [
+    {
+      "kind": "replace",
+      "baseline": [
+        159,
+        160
+      ],
+      "working": [
+        159,
+        162
+      ]
+    },
+    {
+      "kind": "replace",
+      "baseline": [
+        423,
+        424
+      ],
+      "working": [
+        425,
+        426
+      ]
+    }
+  ],
+  "authored_H2": [
+    "## Who this applies to",
+    "## Rates, bands and thresholds",
+    "## The base",
+    "## Deadlines and filing",
+    "## Penalties and interest",
+    "## Cross-border points",
+    "## Two worked examples that recompute",
+    "## Ask the client first",
+    "## Sources"
+  ],
+  "authored_H2_count": 9,
+  "platform_CTA_H2_count": 1,
+  "oa_check_count": 2,
+  "arithmetic": [
+    {
+      "P": "4000",
+      "S": "0",
+      "threshold_each": "3000.00",
+      "P_pass": true,
+      "S_pass": false,
+      "joint_base": "4000",
+      "joint_credit": "400.00"
+    },
+    {
+      "P": "3000",
+      "S": "0",
+      "threshold_each": "3000.00",
+      "P_pass": false,
+      "S_pass": false,
+      "joint_base": "3000",
+      "joint_credit": "0.00"
+    },
+    {
+      "P": "3000.01",
+      "S": "0",
+      "threshold_each": "3000.00",
+      "P_pass": true,
+      "S_pass": false,
+      "joint_base": "3000.01",
+      "joint_credit": "300.00"
+    },
+    {
+      "P": "3000.01",
+      "S": "3000",
+      "threshold_each": "3000.00",
+      "P_pass": true,
+      "S_pass": false,
+      "joint_base": "6000.01",
+      "joint_credit": "600.00"
+    }
+  ]
+}

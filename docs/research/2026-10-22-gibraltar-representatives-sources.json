@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locators": "Sections 45\u201346, 49\u201352; printed pages 113\u2013115",
+      "retrieval": "Official PDF and retained local text"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+      "locators": "Section 305(1), printed page 246: draft merger terms; mismatch with Income Tax Act section 52(2)",
+      "retrieval": "Official PDF and retained local text"
+    }
+  ]
+}

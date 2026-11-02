@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-31",
+  "sources": [
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/age-efiling-procedural-excerpt.json",
+      "sha256": "be57f5cd59cc590534ac0de928c7774cf7d10bb537863c69f67665e3f7079e04",
+      "bytes": 588,
+      "kind": "official website procedural excerpt; separate publication review pending"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/ctif-access-procedural-excerpts.json",
+      "sha256": "e9cfcf9a3ce1882a9e6fecb100c5aa3e24cc862a5ca3d0d0a54515e91596a784",
+      "bytes": 849,
+      "kind": "official website procedural excerpt; separate publication review pending"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-current-order-20261031.json",
+      "sha256": "3bc10454a8e6723b9f979b025aa5b6267f2220dc242d72f16064f2b7d0f0336b",
+      "bytes": 2659,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031-units.json",
+      "sha256": "ebfce7c9e52d04991cbfa2547d210dc8763a2fe8f58325aaa9605fcc0c5c0118",
+      "bytes": 78562,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031.docx",
+      "sha256": "6ac0bdff632ec773b69b7007d2ade335ed84ad5aca084aae1a2041cfccc1f8c5",
+      "bytes": 45419,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031.txt",
+      "sha256": "0267178c56d83efbd4a4ebedb31aadaac024bf003017e93e45860e14c970c7fe",
+      "bytes": 23156,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031-units.json",
+      "sha256": "adf8460a78a2f1536da878db5a7f5197082c64c80593ce34082539a250ce2d1e",
+      "bytes": 14670,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031.docx",
+      "sha256": "a6972994d7b53d1298791ca75ebded3662ca1d08c4615ac5f0bc60ae15314f40",
+      "bytes": 27434,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031.txt",
+      "sha256": "fb4bf77d05bf0eb5cbea4f98b63f996a087b4f56b86408d5031233a37606c75d",
+      "bytes": 13891,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-boscana-rates2026.pdf",
+      "sha256": "752ab7f12d7ecb8cf037622e953558ef3a3e7d821174654e2494d463510dca3f",
+      "bytes": 185059,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-boscana-rates2026.txt",
+      "sha256": "63a3b6cb0e8939edca778b6168ae12b66cb646ad4a7af7f52758b86d9e46cecf",
+      "bytes": 8914,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-law1056-current-20261031.json",
+      "sha256": "4f324dc19de8520d8042b07b9e72492f6cda8e0e89209a60a4e40815571a3fe0",
+      "bytes": 18466,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-mpay-procedural-excerpts.json",
+      "sha256": "7077a282d365db8c40aed04af920c0ac2d591e5f50b0f3353846781fd712c835",
+      "bytes": 761,
+      "kind": "official website procedural excerpt; separate publication review pending"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031-units.json",
+      "sha256": "a568298e479f6d0e080cc3c4a43ee83030bbdf584414bb0db67a9eae42b47f5f",
+      "bytes": 8212,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.doc",
+      "sha256": "4b31e2720e55a20ab50aad80fff4746a51383aef378e88050fff44e1913913a3",
+      "bytes": 58368,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.docx",
+      "sha256": "f8223baf77ac073bbd27db0392c217aec4b156906ce7c692fb9b162aeb494eb1",
+      "bytes": 10099,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.txt",
+      "sha256": "bda19efa184b80c77110a174c630456a1c618a4e2cffc6f1586f2924f0fc003a",
+      "bytes": 3508,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031-units.json",
+      "sha256": "a1f98e0c6f58e62c9facbdeb9f2a2839df3ca502002ed8c83fcbb21bcb1b6c09",
+      "bytes": 6202,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.doc",
+      "sha256": "19edcf9bc1969b83f814458702be0498bc0c4271ec3a24f4dd6355f67e575ca0",
+      "bytes": 57344,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.docx",
+      "sha256": "36449953f60d1260a57ee6e3622c11aa54beb3fbb769585c1cec304f15df61fe",
+      "bytes": 10023,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.txt",
+      "sha256": "933ba29357d6d4d005c4d85b9194781205e61599b1776cb5bbadd8a8f87469d2",
+      "bytes": 2806,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031-units.json",
+      "sha256": "dd0c3998069427122cea68d837990b188e7337af5de315b8ebb07bf2820978af",
+      "bytes": 8079,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.doc",
+      "sha256": "b2950e63a8748feb18390fff78feaf19501964690983aeaacecfb2cf63c537c0",
+      "bytes": 57856,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.docx",
+      "sha256": "992e70b678d508d0cadd87f8315f0a116ea017f3dc584240b42c4fcfa5798fed",
+      "bytes": 10051,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.txt",
+      "sha256": "0c2e794edd6d857ca58b155106fd89ff6e61b38832f7c262077b37eed46c7a52",
+      "bytes": 3406,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031-units.json",
+      "sha256": "429aa3372972a0eecb1b8846179dc6b979d1f2359cd9510675d150fe6d704ac9",
+      "bytes": 5986,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.doc",
+      "sha256": "54c4ff5d2fc5c9ef4a246ebe40002d18ca51b5389dc6b80ad4801156e12fb58e",
+      "bytes": 58368,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.docx",
+      "sha256": "85bccab4f29191d58ba05e5e16b8d12d8569b1920aece8787884ec73c9d88650",
+      "bytes": 10246,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.txt",
+      "sha256": "6fe39ff73cee8dc4334bf5926ea282cd2ba3a4dba0902b9a64e58aa23c7e4dd5",
+      "bytes": 2655,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-order17-20261031.json",
+      "sha256": "5309620cfcec1f77352c7c0f67e62c9a39ff6ae779da49470a2fefc214ed4004",
+      "bytes": 4002,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-repeal2027-header.txt",
+      "sha256": "58be5cf7f772ac29e4787a842089ee71ba629d489ea97038b192d4fb3c572630",
+      "bytes": 2710,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "sha256": "987966d0e2ca167b1e047ca6d8532ba027783542ac0db71c94e735a006639bac",
+      "bytes": 56845,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-extra-code-20261031.json",
+      "sha256": "01706b1d9e667b84bb63860fcb1770fef2b0fbbb449bb7df9e30c007c10bf273",
+      "bytes": 19615,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-mpay-procedural-excerpts.json",
+      "sha256": "bd176e27a0c667bf221e9840609d38aa6df37c95c3d5ad3c1e1197c4162e9eb5",
+      "bytes": 713,
+      "kind": "official website procedural excerpt; separate publication review pending"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031-units.json",
+      "sha256": "1a0695d18b228f9f2c37b00a794d6680602cc16edb91e5a302c862a28bf0df05",
+      "bytes": 9986,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.doc",
+      "sha256": "acbc39178cd8de465a33d5ce39326b568f5f6399f7dcab6b95d4596b788285d1",
+      "bytes": 69632,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.docx",
+      "sha256": "1f7cd2f43c211c855df9ae8dc598bae29832553dbe99fd998119fbde6d335c18",
+      "bytes": 23115,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.txt",
+      "sha256": "3cdd4cc24cfc9932e0a22bcbfe75f49a6016f282f15ffa6b6e4a5973a53856cc",
+      "bytes": 3487,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-future-repeal-entry.json",
+      "sha256": "9772e6ca649a7dfa969fe3e132c8995f1a072ebfa400fe689f7f47a970aedcce",
+      "bytes": 436,
+      "kind": "normative act/form or derivative"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-order138-20261031.json",
+      "sha256": "77821856c794b279940ff4c7e8743440dbc219896f5a6d7ef39f4715e71c7823",
+      "bytes": 1097,
+      "kind": "normative act/form or derivative"
+    }
+  ],
+  "raw_originals_preserved": true,
+  "text_derivatives": "Trailing line whitespace/blank EOF normalised in public .txt derivatives only; private raw extraction and original DOC/DOCX/PDF bytes retained unchanged.",
+  "private_raw_website_capture_directory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/moldova-pack-2026-10-30/primary-attachments",
+  "rendering_read_record": "BIJ17 form 5 pages/instructions 3 pages; wealth notice 1 page; property notices annexes 1/2/5/6 one page each; Boscana all 4 pages were visually inspected. Original DOC conversions retained alongside original binaries.",
+  "blocked_sources": [
+    "SFS public wealth FAQ and workflow pages: direct 403/normal-browser automatic security verification; no CAPTCHA solved.",
+    "SFS 2025 electronic filing guide/Monitorul copy: 403; not used to assert unobserved portal button sequence."
+  ],
+  "copyright_status": "No blanket clearance claimed. Normative content and website procedural text are distinguished for parent publication review."
+}

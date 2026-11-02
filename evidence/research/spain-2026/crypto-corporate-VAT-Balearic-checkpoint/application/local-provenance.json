@@ -1,0 +1,30 @@
+{
+  "skills/international/spain/es-foral-corporate-tax.md": {
+    "expected_repo_blob": "272fa8586dcfd63e584dd9287b292769dc42e591",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-income-tax.md": {
+    "expected_repo_blob": "a2d1d94b98e3b52cf9209a7ef2814b0fdb7fb6b3",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-non-resident-tax.md": {
+    "expected_repo_blob": "cc804cef3b3ccb9c79478e04ed754af4aa401494",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-irpf-deductions.md": {
+    "expected_repo_blob": "ffeff17de76cb794918b672ed0786a531308df31",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-vat-return.md": {
+    "expected_repo_blob": "5ab09b1bc949a6a985349f3e62c1b2d5ffb5760c",
+    "content_revision": 0
+  },
+  "skills/international/spain/spain-crypto-tax.md": {
+    "expected_repo_blob": "d739b0cade0f4529ba5372a032369793788d8c22",
+    "content_revision": 0
+  },
+  "skills/international/spain/spain-vat-return.md": {
+    "expected_repo_blob": "d37ea847fe1aed3f024f9507d0f570580343e1b3",
+    "content_revision": 0
+  }
+}

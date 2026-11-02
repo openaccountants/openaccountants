@@ -1,0 +1,124 @@
+{
+  "as_of": "2026-10-28T03:55:27.535788+00:00",
+  "checks": [
+    {
+      "name": "country-examples",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/international/spain/README.md",
+        "skills/international/spain/es-autonomous-worker.md",
+        "skills/international/spain/es-beckham.md",
+        "skills/international/spain/es-canary-islands-igic.md",
+        "skills/international/spain/es-capital-gains.md",
+        "skills/international/spain/es-ceuta-melilla-ipsi.md",
+        "skills/international/spain/es-corporate-tax.md",
+        "skills/international/spain/es-estimated-tax.md",
+        "skills/international/spain/es-foral-corporate-tax.md",
+        "skills/international/spain/es-foral-income-tax.md",
+        "skills/international/spain/es-foral-non-resident-tax.md",
+        "skills/international/spain/es-foral-payroll.md",
+        "skills/international/spain/es-income-tax.md",
+        "skills/international/spain/es-irpf-deductions.md",
+        "skills/international/spain/es-modelo-111.md",
+        "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+        "skills/international/spain/es-rental-income.md",
+        "skills/international/spain/es-social-contributions.md",
+        "skills/international/spain/es-vat-return.md",
+        "skills/international/spain/references.md",
+        "skills/international/spain/spain-bookkeeping.md",
+        "skills/international/spain/spain-crypto-tax.md",
+        "skills/international/spain/spain-einvoice.md",
+        "skills/international/spain/spain-financial-statements.md",
+        "skills/international/spain/spain-formation.md",
+        "skills/international/spain/spain-payroll.md",
+        "skills/international/spain/spain-tax-optimization.md",
+        "skills/international/spain/spain-transfer-pricing.md",
+        "skills/international/spain/spain-vat-return.md"
+      ],
+      "exit_code": 0,
+      "output_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753"
+    },
+    {
+      "name": "strict-local-sync",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "HEAD",
+        "--worktree",
+        "--mode",
+        "sync",
+        "--strict-metadata",
+        "--provenance",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-current-method-root-application/local-provenance.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "76142d89a388590a8f53d7bfab66ba511e70d2f0197373082cae6d93e08c4615"
+    },
+    {
+      "name": "full-canonical-schema",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2db7a742d44ca31d1b368e5839f9d302278c9e69798b9f8320cd9438b21059ce"
+    },
+    {
+      "name": "full-coverage-report",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/coverage-report.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a4d061702899816ba6deedcab5f457586cfda9c486d3e564aea08191cfc1027c"
+    },
+    {
+      "name": "branch-audit",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "origin/main",
+        "--worktree",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9"
+    },
+    {
+      "name": "worktree-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all29_exact": true,
+  "changed_files": [
+    "skills/international/spain/README.md",
+    "skills/international/spain/es-foral-income-tax.md",
+    "skills/international/spain/es-foral-payroll.md",
+    "skills/international/spain/es-modelo-111.md",
+    "skills/international/spain/es-vat-return.md",
+    "skills/international/spain/spain-crypto-tax.md"
+  ],
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "XB"
+  ],
+  "country_ready": false,
+  "pushed": false
+}

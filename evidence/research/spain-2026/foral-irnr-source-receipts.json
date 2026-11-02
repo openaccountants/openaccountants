@@ -1,0 +1,391 @@
+[
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/216",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/216",
+    "status": 200,
+    "sha256": "4f4e785aa33d55599d66df133c23208d21299f96268ccbfb7e4a81a4c1a82c54",
+    "bytes": 231265,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/296",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/296",
+    "status": 200,
+    "sha256": "1c0dc3b5acae36f03cce0e96b56003b32c8ad6ae9dbf9140c89a621d1468c296",
+    "bytes": 230838,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=27622",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=27622",
+    "status": 200,
+    "sha256": "fd90211b428be49a47cc96e8aa4062d8fff74c0f0bbbd3a76372bf999f8a10d4",
+    "bytes": 40154,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/egutegia/egutegia_anual.asp?Age_Codigo=07%2F10%2F2026&Modelos=301&Tem_Codigo=5346&id=0",
+    "final_url": "https://www.bizkaia.eus/ogasuna/egutegia/egutegia_anual.asp?Age_Codigo=07%2F10%2F2026&Modelos=301&Tem_Codigo=5346&id=0",
+    "status": 200,
+    "sha256": "12eea9c9175504a036f0851311b9a176ed1243a829de26a46344ed649c815bda",
+    "bytes": 87989,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2015/08/20150805a148.pdf",
+    "final_url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2015/08/20150805a148.pdf",
+    "status": 200,
+    "sha256": "31e5e141ab9e2c5cf11ccde3d0109bb75ece709ce16c6ff7b9abd7f952eb4d98",
+    "bytes": 980929,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03920_C.pdf",
+    "final_url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03920_C.pdf",
+    "status": 200,
+    "sha256": "6e9de21219d98facdc37799b650a61cbd5aa312c8c7155aca0f239f64f0da658",
+    "bytes": 399754,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900006999",
+    "final_url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900006999",
+    "status": 200,
+    "sha256": "4cc34192e67caccc3dc2ee9dfe0977eb0a4fe0c9ccbbd1893297bce7b47a467e",
+    "bytes": 12554,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9",
+    "final_url": "https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9",
+    "status": 200,
+    "sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+    "bytes": 799094,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/null/DF%2011-2016%20(2026-0)/0988d0d9-65e5-f1f1-e6af-c452b324b425",
+    "final_url": "https://www.gipuzkoa.eus/documents/2456431/null/DF%2011-2016%20(2026-0)/0988d0d9-65e5-f1f1-e6af-c452b324b425",
+    "status": 200,
+    "sha256": "bb3521e2400a576ebe932b72915bfe677551d5b4ed68f4066dddecdd2521e186",
+    "bytes": 437119,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "status": 200,
+    "sha256": "04840fa80b8083cd0a75f2d9be9464bdbed0370950b2fa5b2188509405211a18",
+    "bytes": 463345,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "status": 200,
+    "sha256": "9ea259201fe637490925c8ec8600bfbf46b6391f988ac90553ce204533599e18",
+    "bytes": 491050,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_12_2013.pdf/f4546f62-db4b-682d-60af-aab88f7da8b1?t=1768552029655",
+    "final_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_12_2013.pdf/f4546f62-db4b-682d-60af-aab88f7da8b1?t=1768552029655",
+    "status": 200,
+    "sha256": "b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1",
+    "bytes": 236552,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/1247685/1248435/REGLAMENTO_IMPUESTO%2BRENTA%2BNO%2BRESIDENTES-CAS.pdf/a0f641a9-5e81-d57a-3592-a9fa54e8cafb?t=1675163281435",
+    "final_url": "https://web.araba.eus/documents/1247685/1248435/REGLAMENTO_IMPUESTO%2BRENTA%2BNO%2BRESIDENTES-CAS.pdf/a0f641a9-5e81-d57a-3592-a9fa54e8cafb?t=1675163281435",
+    "status": 200,
+    "sha256": "53ea99e6073fe811c6c959b75845cd132ec2f2945f1708098972e352647f7e9d",
+    "bytes": 229799,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007013",
+    "final_url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007013",
+    "status": 200,
+    "sha256": "a71521e40f98f5f74946e318d89087f919c7015fa1a32999dcef033c8a042ab8",
+    "bytes": 14466,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/b_plazos-de-presentacion_2026_es-pdf",
+    "final_url": "https://web.araba.eus/documents/d/araba/b_plazos-de-presentacion_2026_es-pdf",
+    "status": 200,
+    "sha256": "1272c7071d5f661afd0a0f36e565cac448e80088010bd1631c59c0caa86607ae",
+    "bytes": 1261222,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29912",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29912",
+    "status": 200,
+    "sha256": "d84d6af5974d19a64fd9aae20b6356c049a3ba78831299cd3d59073af7b36993",
+    "bytes": 55206,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/ereduak/Argitaratu/296BilInst.pdf",
+    "final_url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/ereduak/Argitaratu/296BilInst.pdf",
+    "status": 200,
+    "sha256": "84959226429e074b8361be2b736683dbd8c484c009c6a72650bf42eda7c2f4e2",
+    "bytes": 155663,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=32255",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=32255",
+    "status": 200,
+    "sha256": "5d2367f524d6faf01d1314c0016172695db8848879db92734aa0f887759ea5e6",
+    "bytes": 67475,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice_nf-del-ir-de-no-residentes-cas-pdf",
+    "final_url": "https://web.araba.eus/documents/d/araba/indice_nf-del-ir-de-no-residentes-cas-pdf",
+    "status": 200,
+    "sha256": "ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe",
+    "bytes": 446013,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_48_2014.pdf/c32bf7ea-7f29-d8bd-4ab0-b84145ec79ea?t=1764668111698",
+    "final_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_48_2014.pdf/c32bf7ea-7f29-d8bd-4ab0-b84145ec79ea?t=1764668111698",
+    "status": 200,
+    "sha256": "7002f867ba3be145e2a066e5a019ff0b3bade2367a62871d370986b55d417285",
+    "bytes": 117959,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "status": 200,
+    "sha256": "38308cf1adbf6372908be36a3cc1579bf81caeb9a05ed51f9a2a94480661d656",
+    "bytes": 534905,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-del-impuesto-sobre-la-renta-de-no-residentes-rdl-5/2004-de-5-de-marzo-",
+    "final_url": "https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-del-impuesto-sobre-la-renta-de-no-residentes-rdl-5/2004-de-5-de-marzo-",
+    "status": 200,
+    "sha256": "122cfe171149dd2a5e1d734aee37ca2b6d13faa2e9b985b9f798726f34f631b1",
+    "bytes": 90845,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=58604",
+    "final_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=58604",
+    "status": 200,
+    "sha256": "36944bf9f4f2c39dfabc8bba16a81008013a880a90771666dcd067a07a5c40c2",
+    "bytes": 29105,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007012",
+    "final_url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007012",
+    "status": 200,
+    "sha256": "f999ee89f2274106dff38fddba923e045d187fdce655d634ed28f7a7e0805764",
+    "bytes": 14366,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007014",
+    "final_url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900007014",
+    "status": 200,
+    "sha256": "2ce22f86118c87a0c019408062695b2ddffbca687ac8a80c6333ccd9a1d6b9aa",
+    "bytes": 13566,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2024/02/02/I-172_cas.pdf?hash=65533dee254e1c0878722ab033798fcd",
+    "final_url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2024/02/02/I-172_cas.pdf?hash=65533dee254e1c0878722ab033798fcd",
+    "status": 200,
+    "sha256": "48420534f009df7f4a1e0a7e1a042a2edbed5e0b3f4252750c55049a076d8fa1",
+    "bytes": 334440,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/210",
+    "final_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/210",
+    "status": 200,
+    "sha256": "beb49b6193d31be83ba3ded16cef7a89edecabec598cccb9ff266edca9c72956",
+    "bytes": 237382,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+    "sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc",
+    "sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "final_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "status": 200,
+    "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "bytes": 678881,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "final_url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "status": 200,
+    "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "bytes": 989922,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "final_url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "status": 200,
+    "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "bytes": 1555948,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887",
+    "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf",
+    "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54",
+    "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356",
+    "status": 200,
+    "sha256": "98865be9448ab78224209da78e98cdbd5ee5e7ce80ee0a6cb02aad37b3e16789",
+    "bytes": 1012210,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a",
+    "final_url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a",
+    "status": 200,
+    "sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+    "bytes": 845405,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "final_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "status": 200,
+    "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "bytes": 1502987,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "final_url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "status": 200,
+    "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "bytes": 1683910,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "final_url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "status": 200,
+    "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "bytes": 2762742,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "status": 200,
+    "sha256": "89042ca86572adb70ccdb63640d43a278c57b62af7a9c61fed0f6972f0464ca2",
+    "bytes": 1189685,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/15/I-1336_cas.pdf?hash=7bb6a27105d5d87568e6537aa6283dc3",
+    "sha256": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf",
+    "sha256": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf",
+    "sha256": "a7c2dbcc59d33d9b0fae17ee8ef29bfe0811c7e7f39a3383a932dc4e5add7012",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/02/26/c2600871.pdf",
+    "final_url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/02/26/c2600871.pdf",
+    "status": 200,
+    "sha256": "4634dfa5a05de7773729dc0c542ae2af7b88c30f660e7c493a088b7bf885dcc1",
+    "bytes": 88574,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/presupuestos/pdf/2019/1767078506510_NF%20Pptos%202026%20castellano_cas_cas.pdf",
+    "final_url": "https://www.bizkaia.eus/fitxategiak/05/ogasuna/presupuestos/pdf/2019/1767078506510_NF%20Pptos%202026%20castellano_cas_cas.pdf",
+    "status": 200,
+    "sha256": "9ffd58e6257b6bf9d28b0cdc43f016fc0bb3565fd0abf329f949b1fecb0c0b13",
+    "bytes": 3957027,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.araba.eus/Presupuestos/2026/TOM-2026_PTO-50-02.html",
+    "final_url": "https://www.araba.eus/Presupuestos/2026/TOM-2026_PTO-50-02.html",
+    "status": 200,
+    "sha256": "ad259982a43d5dbb06c2d60dfa8342e9f17bc83846a189a6ba849945f2557449",
+    "bytes": 9640990,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900005626",
+    "final_url": "https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?Idioma=CA&idregistro=900005626",
+    "status": 200,
+    "sha256": "c3f4dbd677f591e3cec5a5edfdc30372f2c66cc6182ea1bfbc1894af9acb146e",
+    "bytes": 12088,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www7.gipuzkoa.net/presupuestos/2026/Ppto2026/pdfs/0/Disposiciones.pdf",
+    "final_url": "https://www7.gipuzkoa.net/presupuestos/2026/Ppto2026/pdfs/0/Disposiciones.pdf",
+    "status": 200,
+    "sha256": "0608f0fca1a0750cf2197ccda0ea62494b2deb0d96cea1355d7002e353f75378",
+    "bytes": 909688,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.navarra.es/documents/48192/22803508/2026%2BMedidas%2Bespec%C3%ADficas%2BPV%2By%2BPE%2B.pdf/6ad8e0f0-bae5-04dc-5a85-0edcd6405be1?t=1766477534217",
+    "final_url": "https://www.navarra.es/documents/48192/22803508/2026%2BMedidas%2Bespec%C3%ADficas%2BPV%2By%2BPE%2B.pdf/6ad8e0f0-bae5-04dc-5a85-0edcd6405be1?t=1766477534217",
+    "status": 200,
+    "sha256": "5d8778b4d6cee1050b9576d9d6fc0acae5a43d7f621726e58b7b81190006f41d",
+    "bytes": 149402,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?d=1&r=29912",
+    "final_url": "https://www.lexnavarra.navarra.es/",
+    "status": 200,
+    "sha256": "16078d31e182413ca911464b1f82281b17fa5a8de7e3053fa90dde4e3dc29fba",
+    "bytes": 17280,
+    "read_on": "2026-10-27"
+  }
+]

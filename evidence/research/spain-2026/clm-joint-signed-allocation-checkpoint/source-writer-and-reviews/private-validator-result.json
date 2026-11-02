@@ -1,0 +1,6 @@
+{
+  "scope": "Actual Spain repository check_guides routine against one private candidate absolute path only; no current live Guide or package-wide validation/generation.",
+  "stdout": "checked 1 guides (0 non-guide .md files skipped)\n",
+  "errors": [],
+  "warnings": []
+}

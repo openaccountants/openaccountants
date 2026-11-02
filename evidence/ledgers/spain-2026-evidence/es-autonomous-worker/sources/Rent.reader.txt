@@ -1,0 +1,147 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 7.3 Retenciones por arrendamiento de bienes inmuebles. Modelos 115 y 180
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual de actividades económicas. Obligaciones fiscales de empresarios y profesionales residentes en territorio español
+
+7. Otras Obligaciones Fiscales. Retenciones
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual de actividades económicas. Obligaciones fiscales de empresarios y profesionales residentes en territorio español
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+7.3 Retenciones por arrendamiento de bienes inmuebles. Modelos 115 y 180
+
+Los empresarios y profesionales están obligados a practicar retención cuando satisfagan rentas por el arrendamiento o subarrendamiento de bienes inmuebles urbanos.
+
+No deberá practicarse retención o ingreso a cuenta entre otros, en los siguientes supuestos:
+
+Arrendamiento de viviendas por empresas para sus empleados.
+
+Cuando las rentas satisfechas por el arrendatario a un mismo arrendador no superen los 900 € anuales (IVA excluido).
+
+Cuando la actividad del arrendador esté clasificada en alguno de los epígrafes de las tarifas del IAE que faculte para la actividad de arrendamiento o subarrendamiento de inmuebles urbanos, y aplicando al valor catastral de los inmuebles destinados al arrendamiento o subarrendamiento las reglas para determinar la cuota establecida en los epígrafes del citado grupo, no resultase cuota cero.
+
+Rendimientos de contratos de arrendamiento financiero.
+
+Rentas de entidades totalmente exentas en el IS.
+
+Las retenciones correspondientes a cada mes o trimestre, se ingresarán cuando se presente el modelo 115.
+
+Además, se presentará un resumen anual de las retenciones practicadas por el arrendamiento de bienes inmuebles, modelo 180.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 26/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

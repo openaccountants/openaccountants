@@ -1,0 +1,79 @@
+[
+  {
+    "name": "environment-fee",
+    "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "writer_raw_sha256": "970f234e454973763fe219f9f0af3f4566da4ff16f4018ad4c0ba3756e358107",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "36bcc2cc118a68c988ade66ba87dc30be6878f42b22b26540b186e2099e62143",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fee-browser.txt",
+    "reviewer_browser_sha256": "397a2e030ddab025f47b4704cc54dd95144f3b87f3c2de6748b3516abc006bc5",
+    "context_reviewed": true
+  },
+  {
+    "name": "environment-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "writer_raw_sha256": "041b5c36bd01aab65c5fa64babe47d7f82fb62841ddad41f2f6ca1e3ff2dbf84",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "db673ea46cad1206681d28ecdbc37ede484efb84cd0cdadca7d15462169643a1",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-law-browser.txt",
+    "reviewer_browser_sha256": "ac05e59f7681700628830ffa6aa56d0ac72722cfb6adee64bb132ba87b679e2d",
+    "context_reviewed": true
+  },
+  {
+    "name": "environment-fund",
+    "url": "https://www.sysselmesteren.no/svalbards-miljovernfond/",
+    "writer_raw_sha256": "42ee8bb7ed2f8f6e54edd0b32893b2e2b1a37d278f6b5588c010111a86c74aa1",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "4cea6e5e2f7a3f375c3225b12fdc8259c977ea1994362a2467024d04e75a974d",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fund-browser.txt",
+    "reviewer_browser_sha256": "df56d56add6977c8866bd31fe6f812d4d1af5f30c20b01b1ceffe997c37a4683",
+    "context_reviewed": true
+  },
+  {
+    "name": "governor-travel",
+    "url": "https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "writer_raw_sha256": "37398123375d0af80b3f09b2f6357fddf465fdf4f55123b192042560da4d0e7e",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "8703837bb57f024a07a05b7c50b883f7475dd02b30f91e459f8676f657380ed7",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/governor-travel-browser.txt",
+    "reviewer_browser_sha256": "0324877d145f67c87b71ea93d2e5f98b2a03da5742f676a25baa1eb2f48e6d99",
+    "context_reviewed": true
+  },
+  {
+    "name": "fund-refund",
+    "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "writer_raw_sha256": "51898d8fcf81c776e68928e39f9ac6c322798372403448671b2332e4cb1da146",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "b31ceef3208b9f10d3ca53b638e811b07388c3c0c090aaa80c2e29cc7642ef10",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/fund-refund-browser.txt",
+    "reviewer_browser_sha256": "3463f73ef836d42a574afeecd76582cb3750d624f05401bdff209ddb40a38cb2",
+    "context_reviewed": true
+  },
+  {
+    "name": "coal-law",
+    "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "writer_raw_sha256": "fcdd726f1b66e2110fc1daf64c4f5107e21fb05b968a805dbdd5c5c727901f1e",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "44bec8921cefc7e39e2a09c09c08f2afe3bb716f3756bac61dfbdab1c55a086e",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-law-browser.txt",
+    "reviewer_browser_sha256": "c666ac0f01e42e151430590df62f50e263dbdffa614267b59e79bb5e9f2113e1",
+    "context_reviewed": true
+  },
+  {
+    "name": "coal-2026",
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "writer_raw_sha256": "92639bf7d496f21b0cab5c4275cb905144428e1dc07b74bd449724e50cc67f2a",
+    "writer_raw_receipt_matches": true,
+    "writer_text_sha256": "bb0cd111850e6e8551e8c01640ef5ef0ec62e81b1d2f195f3df38db6460632fd",
+    "writer_text_receipt_matches": true,
+    "reviewer_browser_capture": "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-2026-browser.txt",
+    "reviewer_browser_sha256": "0a090dae9d4a0c48590e16dc38f291ad313123c1eff4af8888132c254b8c9b36",
+    "context_reviewed": true
+  }
+]

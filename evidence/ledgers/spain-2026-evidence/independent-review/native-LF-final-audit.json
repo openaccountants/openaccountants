@@ -1,0 +1,62 @@
+{
+  "method": "Native LF = U+000A only. PDF formfeed display separation explicitly distinguished from raw substring.",
+  "GroupA": [
+    {
+      "slug": "es-beckham",
+      "anchors": 67,
+      "unmatched_native_spans": 0,
+      "ledger": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925"
+    },
+    {
+      "slug": "es-modelo-111",
+      "anchors": 101,
+      "unmatched_native_spans": 0,
+      "ledger": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6"
+    },
+    {
+      "slug": "es-estimated-tax",
+      "anchors": 139,
+      "unmatched_native_spans": 0,
+      "ledger": "b44ae8932a0048419050c8fb67e30674ecf578cdb9a0deaf0c84a0dc73ea0bf1"
+    },
+    {
+      "slug": "es-autonomous-worker",
+      "anchors": 115,
+      "unmatched_native_spans": 0,
+      "ledger": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555"
+    },
+    {
+      "slug": "es-capital-gains",
+      "anchors": 157,
+      "unmatched_native_spans": 0,
+      "ledger": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c"
+    },
+    {
+      "slug": "es-rental-income",
+      "anchors": 128,
+      "unmatched_native_spans": 0,
+      "ledger": "d306f92e524564f6d412fdf2ee901d3fa38eebd28476e1099a11369dcf55adb0"
+    },
+    {
+      "slug": "es-corporate-tax",
+      "anchors": 141,
+      "unmatched_native_spans": 0,
+      "ledger": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45"
+    },
+    {
+      "slug": "spain-crypto-tax",
+      "anchors": 139,
+      "unmatched_native_spans": 0,
+      "ledger": "7c4f1c0ce0aa36b631ad3799efa6fdf19e55114d236cd0bdec05f3c554f9ee1e"
+    },
+    {
+      "slug": "es-social-contributions",
+      "anchors": 197,
+      "unmatched_native_spans": 0,
+      "ledger": "b97e69d8101a113a8e10fc1ef960d6e30b5e6ccc3ad1f12a378c2142b7298791"
+    }
+  ],
+  "GroupB": "Seven schema audits separately recorded: no source-LF coordinate fields; guide_LF is a Guide location. Whitespace-joined quotation convention remains.",
+  "scope": "Sixteen previously sealed Guide pairs; payroll separately verified158anchors. Five pairs still outside this addendum. No legal reread.",
+  "precision": "This does not retrospectively certify every supplemental selected-read range construction in earlier reviewer logs. Prepared literal anchors/source bodies are the coordinate receipts. Initial estimated4 LF finding and initial11 repairs retained; accidentally shortened quote67 in b494 was detected, retracted and restored to original full title by writer before finalb44 binding."
+}

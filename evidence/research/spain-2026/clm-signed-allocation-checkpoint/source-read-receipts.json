@@ -1,0 +1,50 @@
+[
+  {
+    "file": "sources/clm-current.html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "scope": "art.12quater(1)(a)–(d)/(2),13bis; consolidated header31Jan2023/update pending. Actual relevant body read, not treated as a completed2026 consolidation.",
+    "read_date": "2026-10-27",
+    "sha256": "47a4a4fd780c2ee26b6436c4a50aedad4307e86ac0e1c32d82bc1c9369410a01",
+    "bytes": 379179
+  },
+  {
+    "file": "sources/clm-original-law2-2021.html",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11513",
+    "scope": "DF9.Dosbis enacted original12quater, full cap/eligibility text.",
+    "read_date": "2026-10-27",
+    "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "bytes": 338404
+  },
+  {
+    "file": "sources/clm-law1-2026.html",
+    "url": "https://docm.jccm.es/portaldocm/verArchivoHtml.do?ruta=2026%2F03%2F30%2Fhtml%2F2026_2465.html&tipo=rutaDocm",
+    "scope": "art18 entire eleven changes and DF6 actual current enactment: no12quater or13bis alteration. IRPF amendments apply from2025.",
+    "read_date": "2026-10-27",
+    "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "bytes": 130927
+  },
+  {
+    "file": "sources/aeat-clm2025.html",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "scope": "complete2025 instructions, aggregate employment/activity of entitled contributor(s); input only year-of-move checkbox.",
+    "read_date": "2026-10-27",
+    "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "bytes": 12409
+  },
+  {
+    "file": "sources/lirpf-current.html",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "scope": "actual current19,20,26,48,51(1),52(1),56,74,76,77 read; excerpts retained.",
+    "read_date": "2026-10-27",
+    "sha256": "e4bef365a0df16c0f30cd858c31dbdccefb2fe0a59113924d03b967e60857fa4",
+    "bytes": 2028806
+  },
+  {
+    "file": "sources/clm-current-authority-index.ax.txt",
+    "url": "https://portaltributario.jccm.es/informacion-general/normativa-tributaria?field_titulo_a_mostrar_value=2026&term_node_tid_depth=All",
+    "scope": "actual browser view of regional index: Law8/2013 updated30Mar2026. Link itself ends literalellipsis, so linked consolidated body not read.",
+    "read_date": "2026-10-27",
+    "sha256": "e807fd6ec968a1611defa4bfc1013bab0638a85ce998a3f08ca69f578f6698cb",
+    "bytes": 37576
+  }
+]

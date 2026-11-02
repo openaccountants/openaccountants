@@ -1,0 +1,11 @@
+{
+  "sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+  "bytes": 68625,
+  "original_oa_blocks_byte_identical": true,
+  "original_url_occurrences": 207,
+  "all_original_urls_retained": true,
+  "scope": "publishedTGSS>=SMIassessment;exactliteralconflict46.1ratherthan44.3.f",
+  "not_claimed": "wholeSC/country;legalchallengeoutcome;new2026feeamount;BNRPDFsuccessfulfetch",
+  "superseded_hash": "64f9ce755f3ae9945bfb8e127c4cfba1393f4e1b5c35a674a3ddd4bc963e701e",
+  "precision_fix": "extension spans two calendar years; does not mean24monthgeneralextension"
+}

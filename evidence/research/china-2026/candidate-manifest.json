@@ -1,0 +1,102 @@
+{
+  "files": [
+    "skills/international/china/cn-corporate-tax.md",
+    "skills/international/china/cn-cross-border.md",
+    "skills/international/china/cn-iit.md",
+    "skills/international/china/cn-social-insurance.md",
+    "skills/international/china/cn-stamp-tax.md",
+    "skills/international/china/cn-transfer-pricing.md",
+    "skills/international/china/cn-vat.md",
+    "skills/international/china/cn-withholding.md"
+  ],
+  "schema_errors": [],
+  "schema_warnings": [],
+  "guides": [
+    {
+      "path": "skills/international/china/cn-corporate-tax.md",
+      "sha256": "4f2836de59a0d3d1402829326db836dae0f2ea55c49951980310ba2d53b80b26",
+      "ledger_rows": 19,
+      "topic_destinations": 19,
+      "ledger_json_sha256": "84ec72fa0e426f15a2cc8aaf34f750828cfbd7ee4aa817ed3bf0e125a8c386a3",
+      "ledger_md_sha256": "bd5c4ad36d0b3d890faf8ae3223fcb84d37c60b4456a279004cffcc6277d0f47"
+    },
+    {
+      "path": "skills/international/china/cn-cross-border.md",
+      "sha256": "5c76de948cba53af707d2734658ca32876d8c818a1b795d48aafc01c9e0c429e",
+      "ledger_rows": 15,
+      "topic_destinations": 1,
+      "ledger_json_sha256": "73d8793648adf7cd61177aaefddbd7bac41e73810362d18daf53e3f97cf40e62",
+      "ledger_md_sha256": "229bb95611015d1ba896d105f1cbf70b9db9b6edd9da4acb73237a04e15fed56"
+    },
+    {
+      "path": "skills/international/china/cn-iit.md",
+      "sha256": "3931a70d7f592cc8e5392d7acb07cc68f8d089ef4b2dc34d1b5b630830fabfde",
+      "ledger_rows": 11,
+      "topic_destinations": 11,
+      "ledger_json_sha256": "116e6f1c6e3474950e3e3fcc30ff49eab2435393218e3b0903bd3c3a041995ee",
+      "ledger_md_sha256": "1606ec93e71ef1987321ae5558731b73e77ad330b3901db359f9785acb76be33"
+    },
+    {
+      "path": "skills/international/china/cn-social-insurance.md",
+      "sha256": "4def72e769fd0a0f65ee509989bfaadf14fcb1eb5e7f8d41eab3239e31314e45",
+      "ledger_rows": 23,
+      "topic_destinations": 67,
+      "ledger_json_sha256": "12020707fbc20445842b4c407e5e1585501558ca28454b995d45bd4114988fff",
+      "ledger_md_sha256": "6989a3300fe0a445bb60460beb74a382909165f7aa5fbb28a383b6349e1e487d"
+    },
+    {
+      "path": "skills/international/china/cn-stamp-tax.md",
+      "sha256": "237c02796f916192386e9895cc5cf8de36933e27c5e7680105ec2516b2256589",
+      "ledger_rows": 15,
+      "topic_destinations": 15,
+      "ledger_json_sha256": "8ee2025c6908a6930f9f4711e3d7b9ff1cf8f5f87b828656951630171274f8bd",
+      "ledger_md_sha256": "4d64d303c22c36b57830dbc81660fff000ae6ad81c1cce9914e4ab67cd87a904"
+    },
+    {
+      "path": "skills/international/china/cn-transfer-pricing.md",
+      "sha256": "db9d76474c1e10e359ece75ce12daf4156d2675395d45d9e9c82dbc4a433b9f4",
+      "ledger_rows": 27,
+      "topic_destinations": 1,
+      "ledger_json_sha256": "fc6e04432e71b1a0d9eb56bd4b8deec406b0f74ed3aaac6244481042396c1403",
+      "ledger_md_sha256": "7b91c91f6a5a85b4ae18637d809c15983316a3a25c2d4caca9c21b33a9166659"
+    },
+    {
+      "path": "skills/international/china/cn-vat.md",
+      "sha256": "61a510cb82232a776fb3474512f654646b7901ebf7fff2144555469c81fe9e29",
+      "ledger_rows": 17,
+      "topic_destinations": 17,
+      "ledger_json_sha256": "c4de35e364b095dbd65a8a7dfa676962755b403d6c971f970264147a792b5c2d",
+      "ledger_md_sha256": "1af73861e7f73237c7214228cd77229b80090759d91be4e808501ee21c3e3767"
+    },
+    {
+      "path": "skills/international/china/cn-withholding.md",
+      "sha256": "cf4d273a11fb8df3d44a713f863f8f6d2aeb7399825292aedc36a6ebb90224af",
+      "ledger_rows": 18,
+      "topic_destinations": 57,
+      "ledger_json_sha256": "44c4fc13c24d8ea8d498d872442741b0346ed4405b227734fcf836e520cf06cf",
+      "ledger_md_sha256": "966c4395941b37a49ff9680e1ef166bd255d6a7ac0f9f522fa1ca22c1406de56"
+    }
+  ],
+  "sources": 128,
+  "country_files": {
+    "README.md": "6c24f96d7be1ece49b560545bd730ab7ed4f4a0544c0a8a7ee7a5521cb5741fe",
+    "china-pit.md": "c2a8981167cebfd8ae5e819d81de8be276370419d96f6f027e1be06a1b1edbb8",
+    "china-to-singapore-relocation-tax.md": "8d49fd76fbbd694eb639ceeac12ee70f665f6f5bf3145b681777ff204b0330c0",
+    "china-vat.md": "bd5c33fa11dede26c333a614499d2fc6cb67ae8cb11b70d7c0fabfaac0e1ae37",
+    "cn-corporate-tax.md": "4f2836de59a0d3d1402829326db836dae0f2ea55c49951980310ba2d53b80b26",
+    "cn-cross-border.md": "5c76de948cba53af707d2734658ca32876d8c818a1b795d48aafc01c9e0c429e",
+    "cn-fapiao-einvoice.md": "4d5f55131d773c53c983b8f81f4b6d91078531a0c68cfd8c0a7baf37a7b3044f",
+    "cn-formation.md": "86a00de59c2442e92fc68e87a67457065e4701de5364fc0e22627b88b394e6e0",
+    "cn-freelance-intake.md": "485db53f1732d4c3b0336523da1a07126794df80ab854e8ee2e5723473283b19",
+    "cn-iit.md": "3931a70d7f592cc8e5392d7acb07cc68f8d089ef4b2dc34d1b5b630830fabfde",
+    "cn-return-assembly.md": "ac0badf2dde94fdb5188b30f4a2c367a2d5f26599c9802bbd06353c5c74aab29",
+    "cn-social-insurance.md": "4def72e769fd0a0f65ee509989bfaadf14fcb1eb5e7f8d41eab3239e31314e45",
+    "cn-stamp-tax.md": "237c02796f916192386e9895cc5cf8de36933e27c5e7680105ec2516b2256589",
+    "cn-transfer-pricing.md": "db9d76474c1e10e359ece75ce12daf4156d2675395d45d9e9c82dbc4a433b9f4",
+    "cn-vat.md": "61a510cb82232a776fb3474512f654646b7901ebf7fff2144555469c81fe9e29",
+    "cn-withholding.md": "cf4d273a11fb8df3d44a713f863f8f6d2aeb7399825292aedc36a6ebb90224af",
+    "references.md": "e20b7ba427adc893d2f5680a9b17fc7e81ec93c2dd9b97b51e25bb5d4cb6f073"
+  },
+  "base": "b73481249024bd5c3701cd73643f433e542b2ea5",
+  "legal_acceptance": "Not asserted by mechanical preflight. Fresh independent review required."
+}

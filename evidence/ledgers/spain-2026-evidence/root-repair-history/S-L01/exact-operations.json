@@ -1,0 +1,30 @@
+[
+  {
+    "old": "version: 1.2",
+    "new": "version: 1.3"
+  },
+  {
+    "old": "# Spain: incoming-worker special tax regime v1.2",
+    "new": "# Spain: incoming-worker special tax regime v1.3"
+  },
+  {
+    "old": "The effective-rate computation excludes both savings base and savings quota. In a salary-only ordinary category, the ceiling is `min(qualifying_foreign_tax, foreign_work_income ×ordinary_tax/O, 0.30 ×ordinary_tax)`.",
+    "new": "The effective-rate computation excludes both savings base and savings quota. Express the effective percentage to two decimal places under LIRPF art. 80.2: `effective_percentage = round(100 × ordinary_tax / O, 2)`. In a salary-only ordinary category, the ceiling is `min(qualifying_foreign_tax, foreign_work_income × effective_percentage / 100, 0.30 ×ordinary_tax)`."
+  },
+  {
+    "old": "The salary-only effective-rate foreign-income limit is 77,307.69, but",
+    "new": "The salary-only effective percentage is **25.77%**, expressed to two decimal places under LIRPF art. 80.2, giving a foreign-income limit of **77,310**, but"
+  },
+  {
+    "old": "  foreign_income_limit: foreign_work_salary * employment_tax / salary",
+    "new": "  foreign_effective_percentage: round(100 * employment_tax / salary, 2)\n  foreign_income_limit: foreign_work_salary * foreign_effective_percentage / 100"
+  },
+  {
+    "old": "  foreign_income_limit: 77307.69230769",
+    "new": "  foreign_effective_percentage: 25.77\n  foreign_income_limit: 77310"
+  },
+  {
+    "old": "| RIRPF arts.89.B/116.3 and AEAT general incoming-worker page linked above | Prior special ordinary-withholding procedure bars the incoming-worker special-regime election; Modelo147 distinguished from149 | 2026-10-28 |",
+    "new": "| RIRPF arts.89.B/116.3 and AEAT general incoming-worker page linked above | Prior special ordinary-withholding procedure bars the incoming-worker special-regime election; Modelo147 distinguished from149 | 2026-10-28 |\n| [LIRPF art. 80.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80) and [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114) | Effective percentage expressed to two decimal places in the general salary-only method and second example; additional cap and final result unchanged | 2026-10-28 |"
+  }
+]

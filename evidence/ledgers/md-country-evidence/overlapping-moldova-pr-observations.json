@@ -1,0 +1,50 @@
+{
+  "status": "Read-only GitHub observation; no external comment/review sent",
+  "records": [
+    {
+      "number": 1008,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1008",
+      "title": "[MD] Corporate income tax: refresh to 2026 from the Fiscal Code",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "e00e7d2dac7797977e1803bf6c9e283e4651fbf3",
+      "merge_commit_sha": "6e9a13f47d6224bf2fb118a63fe604ef56802a8f",
+      "merged_at": "2026-10-30T20:50:21Z",
+      "observed_utc": "2026-10-30T20:57:22.424Z"
+    },
+    {
+      "number": 1009,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1009",
+      "title": "[MD] Tax overview: refresh to 2026 from the Fiscal Code",
+      "state": "open",
+      "merged": false,
+      "head_sha": "237daf15839a241e6685ae5e7b8a9c54cd2d9853",
+      "merge_commit_sha": "a45b9b8c502e162227086cb244bd21aea40218ef",
+      "merged_at": null,
+      "observed_utc": "2026-10-30T20:57:22.429Z"
+    },
+    {
+      "number": 1010,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1010",
+      "title": "[MD] Company formation: refresh to 2026 (Law 135/2007, ASP fees)",
+      "state": "open",
+      "merged": false,
+      "head_sha": "1842b83d6915e4879a75aa1f393d274e91b1561a",
+      "merge_commit_sha": "8e4a5689c2676f51c921c5ea86604d6ac6524075",
+      "merged_at": null,
+      "observed_utc": "2026-10-30T20:57:22.429Z"
+    },
+    {
+      "number": 1011,
+      "url": "https://github.com/openaccountants/openaccountants/pull/1011",
+      "title": "[MD] Tax optimization: refresh to 2026 from the Fiscal Code",
+      "state": "open",
+      "merged": false,
+      "head_sha": "3c68fa1150bd1e2f6e4a723c37bcd8c6797bc826",
+      "merge_commit_sha": "a21cfdbe5f147c8fe756ffc9f32fd0e07228cd5d",
+      "merged_at": null,
+      "observed_utc": "2026-10-30T20:57:22.429Z"
+    }
+  ],
+  "local_policy": "Preserve the deeper country draft and every verified contribution. PR1008 is now merged and its full predecessor mapped; remaining three supporting PRs require reconciliation before country publication. This is not independent review."
+}

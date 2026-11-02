@@ -1,0 +1,213 @@
+
+
+    Texto Refundido de la Ley del Impuesto sobre la Renta de No Residentes (RDL 5/2004, de 5 de marzo) - Normativa Hacienda
+
+[[ID:liferayAUICSS]]
+
+[[ID:liferayPortalCSS]]
+
+[[ID:c3eedc3b]]
+
+[[ID:liferayThemeCSS]]
+
+
+
+
+
+
+
+
+
+	
+[[ID:lisb_quickAccessNav]]
+
+		Navegación
+
+		
+			
+				
+Saltar al contenido
+
+			
+
+			
+
+		
+	
+
+	
+
+[[ID:wrapper]]
+
+[[ID:closeInstallBtn]]
+
+                                            close
+
+[[ID:appIcon]]
+
+[[ID:installTitle]]
+
+Descárgate la app
+
+[[ID:downloadAppBtn]]
+Abrir
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand]]
+
+[[ID:p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_]]
+
+[[ID:p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+[[ID:portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+es
+
+                            search
+
+[[ID:navbar-collapse-1]]
+
+[[ID:navbar-collapse-2]]
+
+[[ID:portal_searcher_form]]
+
+[[ID:portal_searcher_form_input]]
+
+BUSCAR                                
+
+[[ID:content]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_generalwarning]]
+
+keyboard_backspace Normativa 
+
+Normativa fiscal
+
+Recopilación de normas tributarias
+
+[[ID:p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_]]
+
+[[ID:p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet]]
+
+[[ID:portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet]]
+
+[[ID:_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_breadcrumbs-defaultScreen]]
+
+[[ID:main-content]]
+
+[[ID:column-1]]
+
+[[ID:layout-column_column-1]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HLbUeZ9jmqMI_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HLbUeZ9jmqMI]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_HLbUeZ9jmqMI]]
+
+NOTA: Las diferentes versiones disponibles para cada norma se configuran en función de la fecha de efectos que se le da a cada disposición (no por su fecha de publicación en el BON). Por ello, por ejemplo, pueden existir versiones posteriores a la versión vigente. 
+[[ID:menur6q5]]
+Ver explicación de los formatos.
+
+Fecha de actualización: 27 de octubre de 2026
+
+[[ID:p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_Ki7RJeGE4txt_]]
+
+[[ID:p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_Ki7RJeGE4txt]]
+
+[[ID:portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_Ki7RJeGE4txt]]
+
+[[ID:_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_Ki7RJeGE4txt_rjus__column1__1]]
+
+[[ID:qfkd__column1__1]]
+
+[[ID:56742301]]
+
+[[ID:headTitle_7635537]]
+
+Texto Refundido de la Ley del Impuesto sobre la Renta de No Residentes (RDL 5/2004, de 5 de marzo) 
+El Impuesto no ha sido aprobado por el Parlamento de Navarra, existiendo sin embargo en Régimen Común. De acuerdo al Convenio Económico, mientras el Impuesto no se apruebe por la Comunidad Foral se aplicarán en Navarra las normas vigentes en territorio común. 
+
+    Accede a la norma BON/BOE
+
+[[ID:hrefFm]]
+
+[[ID:footer]]
+
+[[ID:p_p_id_errorReportUrl_INSTANCE_footererrorReportUrlv3_]]
+
+[[ID:p_errorReportUrl_INSTANCE_footererrorReportUrlv3]]
+
+[[ID:portlet_errorReportUrl_INSTANCE_footererrorReportUrlv3]]
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        chat_bubble_outline
+        Comunicar un error en la información
+    
+
+[[ID:p_p_id_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_]]
+
+[[ID:p_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3]]
+
+[[ID:portlet_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateContainer]]
+
+	update
+	
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_loaderSpin]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lasUpdateDateFromPortlet]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_final]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3]]
+
+                    Trámites-Sede electrónica
+
+                    Temas
+
+                    Gobierno de Navarra
+
+                    Sala de Prensa
+
+                    Accesibilidad
+
+                    Protección de datos
+
+                    Aviso legal
+
+Gobierno de Navarra Avenida Carlos III 2, Planta Baja 31002 Pamplona / Iruña Tel. +34 948 012 012 - navarra@navarra.es
+

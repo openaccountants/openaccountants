@@ -1,0 +1,3 @@
+COMMAND: /Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/scripts/check-examples.py /Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-social-contributions.md
+EXIT: 0
+checked 1 files, 2 oa-check blocks, 0 failures, 0 missing

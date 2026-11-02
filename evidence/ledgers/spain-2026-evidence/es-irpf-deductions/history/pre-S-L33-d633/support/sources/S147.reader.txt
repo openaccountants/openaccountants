@@ -1,0 +1,189 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por destinar cantidades a paliar los daños materiales sobre la vivienda habitual derivados del te...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunitat Valenciana
+
+Dirigidas a las personas afectadas por las inundaciones producidas por la DANA de octubre de 2024
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por destinar cantidades a paliar los daños materiales sobre la vivienda habitual derivados del temporal 
+
+Normativa: Art. 4 Decreto Ley 12/2024, de 12 de noviembre, del Consell, de medidas fiscales de apoyo a las personas afectadas por las inundaciones producidas por la DANA de octubre de 2024
+
+Cuantía de la deducción
+
+El 100 por 100 de los gastos de reparación acometidos para hacer frente a los daños causados de forma directa y determinante por el temporal en viviendas habituales que estén situadas en el ámbito territorial de aplicación de la presente deducción.
+
+Base de la deducción
+
+Estará constituida por las cantidades satisfechas con la finalidad de hacer frente a los gastos de reparación de daños de la vivienda habitual y de los elementos comunes del inmueble donde esta radique, en el importe que no estuviera cubierto por contratos de seguro en vigor.
+
+Importante: no forman parte de la base de la deducción las cantidades destinadas a la adquisición de enseres domésticos de primera necesidad.
+
+Tampoco darán derecho a practicar esta deducción los gastos e inversiones destinados a la reparación y conservación de inmuebles o partes de los mismos afectos al desarrollo de actividades económicas.
+
+En el supuesto de que los contribuyentes hayan percibido ayudas públicas destinadas para hacer frente a los mismos gastos, deberá descontarse de la base de la deducción el importe recibido. Cuando las ayudas hayan sido percibidas por unidades familiares o de convivencia constituidas por varios contribuyentes, la ayuda a descontar de la base de la deducción se imputará por partes iguales.
+
+La ayuda a descontar se imputará por partes iguales entre todos los miembros de la unidad familiar o de convivencia que, teniendo la condición de contribuyentes por haber percibido rentas sujetas al impuesto, hayan realizado gastos de reparación para hacer frente a los daños materiales sobre su vivienda habitual derivados del temporal, aunque alguno de ellos no fuera declarante o no tuviera derecho a la aplicación de la deducción por exceder de los límites de renta.
+
+Requisitos para la aplicación de la deducción
+
+Que la base liquidable general y del ahorro del contribuyente, suma de las casillas [0500] y [0510] de la declaración, no supere las siguientes cantidades:
+
+- 45.000 euros en tributación individual.
+
+- 60.000 euros en tributación conjunta.
+
+Que la satisfaccion de las cantidades integradas en su base se realice mediante tarjeta de crédito o débito, transferencia bancaria, cheque nominativo o ingreso en cuen­tas en entidades de crédito.
+
+No darán derecho a la aplicación de la deducción las cantidades satisfechas mediante entregas de dinero de curso legal.
+
+Límites de la deducción según base liquidable
+
+El importe máximo de la deducción será de 2.000 euros.
+
+Este límite máximo de 2.000 euros solo será aplicable a los contribuyentes cuya suma de la base liquidable general y de la base liquidable del ahorro sea inferior a 40.000 euros, en tributación individual, o inferior a 55.000 euros, en tributación conjunta.
+
+Cuando la suma de la base liquidable general y de la base liquidable del ahorro del contribuyente esté comprendida entre 40.000 y 45.000 euros, en tributación individual, o entre 55.000 y 60.000 euros, en tributación conjunta, los límites de la deducción serán los siguientes:
+
+En tributación individual, el resultado de multiplicar el límite máximo de la deducción (2.000 euros) por un porcentaje obtenido de la aplicación de la siguiente fórmula:
+
+100 × (1 – el coeficiente resultante de dividir por 5.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 40.000)
+
+En tributación conjunta, el resultado de multiplicar el límite máximo de la deducción (2.000 euros) por un porcentaje obtenido de la aplicación de la siguiente fórmula:
+
+100 × (1 – el coeficiente resultante de dividir por 5.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 55.000)
+
+Cuando dos contribuyentes declarantes del IRPF tengan derecho a la aplicación de esta deducción, el límite se prorrateará entre ellos por partes iguales. 
+
+El prorrateo del límite máximo de la deducción solo ha de efectuarse cuando haya más de una persona que, presentando declaración, pueda aplicar la deducción por una misma vivienda por cumplir todos los requisitos exigidos para ello, incluida la cuantía máxima de la base liquidable, aunque no la aplique de forma efectiva. Por tanto, no se toman en consideración a efectos del prorrateo las personas que no presenten declaración ni las que tengan una base liquidable superior a la exigida.
+
+Ámbito temporal de aplicación
+
+La deducción resulta aplicable, exclusivamente, en los ejercicios 2024 y 2025.
+
+Saldos pendientes de aplicación
+
+En el supuesto de que el contribuyente carezca de cuota íntegra autonómica suficiente para aplicar la totalidad o parte de la deducción en el periodo en que se genere dicho derecho, el importe no deducido podrá trasladarse a los cuatro períodos impositivos siguientes, hasta agotar, en su caso, su importe total.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

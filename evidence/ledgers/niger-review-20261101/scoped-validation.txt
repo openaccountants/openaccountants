@@ -1,0 +1,10 @@
+$ python3 scripts/validate-guides.py --changed-only --no-index-check
+changed-only mode: validating 3 changed guide file(s)
+checked 2 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: skills/niger/ne-cash-payment-tax.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/niger/ne-money-transfer-tax-repeal.md: no tax domain in the slug, so its country cell was not checked
+
+validation passed (2 warning group(s))
+
+Exit: 0

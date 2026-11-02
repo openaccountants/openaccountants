@@ -1,0 +1,20 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/public-finance/2018s290/2018s290.pdf",
+      "sha256": "a5e512291146fefaf35356068596cdd89e4068a2da55deba53ba0b9f39abb60a",
+      "locators": "Full five pages, regulations1–6; parent index shows20December2018 current"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+      "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75",
+      "locators": "Sections179–180, printedpages147–148"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/electronic-commerce/2001-07/2001-07(01-01-21).pdf",
+      "sha256": "352465e8174cd993db5c8f2d546899d977662df87f2b76ed52d3d402fdea3458",
+      "locators": "Sections 19–22, printed pages 9–12; sections 11–18 expressly repealed. Official parent index identifies 1 January 2021 current version."
+    }
+  ]
+}

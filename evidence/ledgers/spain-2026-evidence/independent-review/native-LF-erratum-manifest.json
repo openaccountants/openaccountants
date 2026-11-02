@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    {
+      "path": "native-LF-erratum-report.md",
+      "sha256": "4bce6e2a8c2c5b71f63ddf62d67444ca9a03cedbb6b4746a4cfc9fcddee70065"
+    },
+    {
+      "path": "native-LF-successor-bindings.json",
+      "sha256": "097f17e71beff3be57f08fa520784c0b1f76a06a98adaffb3d6fc02e8910ca0e"
+    },
+    {
+      "path": "native-LF-final-audit.json",
+      "sha256": "f59241118497a1357aad9e176c7d7d5380d9333d83b5fc70fe883cc286aa7c5a"
+    },
+    {
+      "path": "native-LF-audit-groupA-current.json",
+      "sha256": "9d04a519993ebe4e5736402f54da1590d3f92ebd19804054013834cd407c5e83"
+    },
+    {
+      "path": "native-LF-audit-groupB-schema.json",
+      "sha256": "8254fd22be6af85340c02ca7c1a91cbdaddb554df6727261896efefb54f84ad3"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-# Slovenia — AI Accounting Assistant | OpenAccountants
+# Sierra Leone — AI Accounting Assistant | OpenAccountants
 
-> Open-source accounting skills for Slovenia. Upload to Claude, ChatGPT, or any AI assistant.
+> Open-source accounting skills for Sierra Leone. Upload to Claude, ChatGPT, or any AI assistant.
 > Tax, bookkeeping, payroll, formation, financial statements, and more. Free and open source.
 
 ## What's in this folder
@@ -13,19 +13,18 @@
 6. `sl-payroll-social.md`
 7. `sl-tax-overview.md`
 8. `sl-vat-gst.md`
-9. `eu-vat-directive.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
 
 ## How to use
 
 1. Upload ALL files in this folder to your AI assistant (Claude, ChatGPT, Gemini, etc.)
 2. Attach your bank statement, invoices, or any financial documents (CSV or PDF)
 3. Tell the AI what you need:
-   - **"Help me with my 2025 Slovenia taxes. Here's my bank statement."**
+   - **"Help me with my 2025 Sierra Leone taxes. Here's my bank statement."**
    - **"Classify my transactions and prepare my books."**
    - **"Run payroll for my employee."**
-   - **"Help me set up a company in Slovenia."**
+   - **"Help me set up a company in Sierra Leone."**
    - **"Prepare my annual accounts."**
 
 The AI will:
@@ -44,7 +43,7 @@ The most up-to-date, verified version of these skills is maintained at [openacco
 
 ## Are you a qualified tax professional?
 
-These Slovenia tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
+These Sierra Leone tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
 
 **You don't need to use GitHub.** Just:
 

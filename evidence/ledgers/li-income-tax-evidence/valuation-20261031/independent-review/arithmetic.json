@@ -1,0 +1,337 @@
+{
+  "method": "Reviewer-authored Decimal AST evaluation, independent of writer scripts and repository checker. Absolute tolerance 0.000001 CHF for displayed six-decimal repeating values. No workbook native recalculation.",
+  "executions": 6,
+  "expected_fields": 46,
+  "results": [
+    {
+      "file": "skills/international/liechtenstein/li-income-tax.md",
+      "line": 227,
+      "name": "Liechtenstein assumed full-year single minimum-income screen",
+      "block_sha256": "27b8cca3512d4c775629c29750c8f915b68b5cce6532ded6d3162888dd85b21e",
+      "expected": {
+        "annual_gross_minimum": {
+          "computed": "25200",
+          "expected": "25200",
+          "difference": "0",
+          "pass": true
+        },
+        "income_below_minimum": {
+          "computed": "1200",
+          "expected": "1200",
+          "difference": "0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-income-tax.md",
+      "line": 247,
+      "name": "Liechtenstein assumed employee expense pension and wealth bridge",
+      "block_sha256": "a4a2234949fe2e4bbb135e58af741d9c3d6fb1d43ff12fdc0e9ae9223498173f",
+      "expected": {
+        "annual_commuting_km": {
+          "computed": "13200",
+          "expected": "13200",
+          "difference": "0",
+          "pass": true
+        },
+        "commuting_cost": {
+          "computed": "6280.0",
+          "expected": "6280",
+          "difference": "0.0",
+          "pass": true
+        },
+        "supported_job_costs": {
+          "computed": "7380.0",
+          "expected": "7380",
+          "difference": "0.0",
+          "pass": true
+        },
+        "earning_cost_deduction": {
+          "computed": "7380.0",
+          "expected": "7380",
+          "difference": "0.0",
+          "pass": true
+        },
+        "pension_cap": {
+          "computed": "16200.00",
+          "expected": "16200",
+          "difference": "0.00",
+          "pass": true
+        },
+        "allowed_pension": {
+          "computed": "7000",
+          "expected": "7000",
+          "difference": "0",
+          "pass": true
+        },
+        "allowed_private_premiums": {
+          "computed": "2500",
+          "expected": "2500",
+          "difference": "0",
+          "pass": true
+        },
+        "adjusted_employment_income": {
+          "computed": "68120.0",
+          "expected": "68120",
+          "difference": "0.0",
+          "pass": true
+        },
+        "rounded_wealth": {
+          "computed": "300000",
+          "expected": "300000",
+          "difference": "0",
+          "pass": true
+        },
+        "deemed_wealth_income": {
+          "computed": "12000.00",
+          "expected": "12000",
+          "difference": "0.00",
+          "pass": true
+        },
+        "rounded_taxable_income": {
+          "computed": "80120",
+          "expected": "80120",
+          "difference": "0",
+          "pass": true
+        },
+        "state_tax": {
+          "computed": "2262.00",
+          "expected": "2262",
+          "difference": "0.00",
+          "pass": true
+        },
+        "municipal_tax": {
+          "computed": "3393.000",
+          "expected": "3393",
+          "difference": "0.000",
+          "pass": true
+        },
+        "combined_before_credits": {
+          "computed": "5655.000",
+          "expected": "5655",
+          "difference": "0.000",
+          "pass": true
+        },
+        "assumed_balance": {
+          "computed": "655.000",
+          "expected": "655",
+          "difference": "0.000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "line": 9,
+      "name": "LI ordinary share valuation and voting-right boundaries",
+      "block_sha256": "278874cf2785b14881f2f50df9cccfaf3a3a53ecaa2e14f2d5226cd2edbcabb1",
+      "expected": {
+        "substance": {
+          "computed": "500000",
+          "expected": "500000",
+          "difference": "0",
+          "pass": true
+        },
+        "weighted_earnings": {
+          "computed": "110000",
+          "expected": "110000",
+          "difference": "0",
+          "pass": true
+        },
+        "risk_adjusted_earnings": {
+          "computed": "93500.00",
+          "expected": "93500",
+          "difference": "0.00",
+          "pass": true
+        },
+        "earnings_value": {
+          "computed": "623333.3333333333333333333333",
+          "expected": "623333.333333",
+          "difference": "3.333333333333333E-7",
+          "pass": true
+        },
+        "weighted_company": {
+          "computed": "582222.2222222222222222222223",
+          "expected": "582222.222222",
+          "difference": "2.222222222222223E-7",
+          "pass": true
+        },
+        "minimum_company": {
+          "computed": "300000.0",
+          "expected": "300000",
+          "difference": "0.0",
+          "pass": true
+        },
+        "statutory_company": {
+          "computed": "582222.2222222222222222222223",
+          "expected": "582222.222222",
+          "difference": "2.222222222222223E-7",
+          "pass": true
+        },
+        "helper_rounded_company": {
+          "computed": "582200",
+          "expected": "582200",
+          "difference": "0",
+          "pass": true
+        },
+        "holder_below_20_votes": {
+          "computed": "46576.00",
+          "expected": "46576",
+          "difference": "0.00",
+          "pass": true
+        },
+        "holder_at_20_votes": {
+          "computed": "52398.00",
+          "expected": "52398",
+          "difference": "0.00",
+          "pass": true
+        },
+        "holder_at_50_votes": {
+          "computed": "58220.0",
+          "expected": "58220",
+          "difference": "0.0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "line": 54,
+      "name": "LI negative earnings value and minimum substance",
+      "block_sha256": "a41f311dd8ca190ac4d5a3382a4e117f9e6e0bea64abc8dc389ec64d7c693ee2",
+      "expected": {
+        "weighted_earnings": {
+          "computed": "-11000",
+          "expected": "-11000",
+          "difference": "0",
+          "pass": true
+        },
+        "earnings_value": {
+          "computed": "0",
+          "expected": "0",
+          "difference": "0",
+          "pass": true
+        },
+        "weighted_company": {
+          "computed": "166666.6666666666666666666667",
+          "expected": "166666.666667",
+          "difference": "3.333333333333333E-7",
+          "pass": true
+        },
+        "minimum_company": {
+          "computed": "300000.0",
+          "expected": "300000",
+          "difference": "0.0",
+          "pass": true
+        },
+        "statutory_company": {
+          "computed": "300000.0",
+          "expected": "300000",
+          "difference": "0.0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "line": 81,
+      "name": "LI non-operating assets removed and restored once",
+      "block_sha256": "67c6a4cea3c30d34f404c7c1372a3f42b9f6505c65deb0804403fb9b44e023a1",
+      "expected": {
+        "operating_substance": {
+          "computed": "350000",
+          "expected": "350000",
+          "difference": "0",
+          "pass": true
+        },
+        "current_operating_earnings": {
+          "computed": "120000",
+          "expected": "120000",
+          "difference": "0",
+          "pass": true
+        },
+        "prior_operating_earnings": {
+          "computed": "90000",
+          "expected": "90000",
+          "difference": "0",
+          "pass": true
+        },
+        "operating_earnings_value": {
+          "computed": "623333.3333333333333333333333",
+          "expected": "623333.333333",
+          "difference": "3.333333333333333E-7",
+          "pass": true
+        },
+        "operating_weighted_company": {
+          "computed": "532222.2222222222222222222223",
+          "expected": "532222.222222",
+          "difference": "2.222222222222223E-7",
+          "pass": true
+        },
+        "total_weighted_company": {
+          "computed": "682222.2222222222222222222223",
+          "expected": "682222.222222",
+          "difference": "2.222222222222223E-7",
+          "pass": true
+        },
+        "minimum_company": {
+          "computed": "360000.0",
+          "expected": "360000",
+          "difference": "0.0",
+          "pass": true
+        },
+        "statutory_company": {
+          "computed": "682222.2222222222222222222223",
+          "expected": "682222.222222",
+          "difference": "2.222222222222223E-7",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "line": 117,
+      "name": "LI FMA earnings capitalisation versus substance-only methods",
+      "block_sha256": "fa324a79eceb2af99f500532f0454b194f5931323ce348ace421217f5cf7b9f6",
+      "expected": {
+        "fma_earnings_value": {
+          "computed": "467500.0",
+          "expected": "467500",
+          "difference": "0.0",
+          "pass": true
+        },
+        "fma_weighted_company": {
+          "computed": "478333.3333333333333333333333",
+          "expected": "478333.333333",
+          "difference": "3.333333333333333E-7",
+          "pass": true
+        },
+        "fma_company": {
+          "computed": "478333.3333333333333333333333",
+          "expected": "478333.333333",
+          "difference": "3.333333333333333E-7",
+          "pass": true
+        },
+        "qualifying_annex_b_company": {
+          "computed": "500000",
+          "expected": "500000",
+          "difference": "0",
+          "pass": true
+        },
+        "new_company_without_representative_results": {
+          "computed": "500000",
+          "expected": "500000",
+          "difference": "0",
+          "pass": true
+        }
+      },
+      "pass": true
+    }
+  ]
+}

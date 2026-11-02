@@ -1,0 +1,36 @@
+changed-only mode: validating 19 changed guide file(s)
+checked 18 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: 3 guides fail check (b) sources_read_dates
+WARN: 3 guides fail check (c) rates_rows_sourced
+WARN: 3 guides fail check (d) canonical_headings
+WARN: 3 guides fail check (e) two_oa_checks
+WARN: 3 guides fail check (i) not_yet_confirmed
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: (b) sources_read_dates: no ## Sources section
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: (c) rates_rows_sourced: no rates table
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: (e) two_oa_checks: 0 oa-check block(s), need 2
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: (i) not_yet_confirmed: no ## Sources section
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: (b) sources_read_dates: no ## Sources section
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: (c) rates_rows_sourced: no rates table
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: (e) two_oa_checks: 1 oa-check block(s), need 2
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: (i) not_yet_confirmed: no ## Sources section
+WARN: skills/gibraltar/gi-einvoice.md: (b) sources_read_dates: no ## Sources section
+WARN: skills/gibraltar/gi-einvoice.md: (c) rates_rows_sourced: no rates table
+WARN: skills/gibraltar/gi-einvoice.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources
+WARN: skills/gibraltar/gi-einvoice.md: (e) two_oa_checks: 0 oa-check block(s), need 2
+WARN: skills/gibraltar/gi-einvoice.md: (i) not_yet_confirmed: no ## Sources section
+WARN: skills/gibraltar/gi-bookkeeping-and-tax-records.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-company-accounts-and-reporting.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-company-formation.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-einvoice.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-global-minimum-tax.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-income-tax-assessment-appeals.md: GI IT-IND also holds gi-category-2-income-tax, gi-individual-income-tax, with a different job
+WARN: skills/gibraltar/gi-residential-property-disposals.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-spain-tax-residence.md: GI XB also holds gi-foreign-tax-relief, gi-uk-employment-pensions-treaty, gi-uk-investment-income-treaty, with a different job
+WARN: skills/gibraltar/gi-training-planning-and-startup-reliefs.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/gibraltar/gi-uk-employment-pensions-treaty.md: GI XB also holds gi-foreign-tax-relief, gi-spain-tax-residence, gi-uk-investment-income-treaty, with a different job
+WARN: skills/gibraltar/gi-uk-investment-income-treaty.md: GI XB also holds gi-foreign-tax-relief, gi-spain-tax-residence, gi-uk-employment-pensions-treaty, with a different job
+
+validation passed (31 warning group(s))

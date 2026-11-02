@@ -1,0 +1,29 @@
+{
+  "initial_review_commit": "721fda0ac",
+  "initial_reviewed_candidate": "b0c501e5bd307e874f8f2fb5ecca7c7d54d9892e",
+  "initial_input_count": 87,
+  "unchanged_original_inputs": 86,
+  "disclosed_original_input_change": {
+    "skills/gibraltar/gi-property-stamp-duty.md": {
+      "reviewed_sha256": "e4be4ee277ecb5133af7b1efec2719bd89b1df7e339bb781c953dd7d8f646cb9",
+      "current_sha256": "0dedd5f962df8896a647cc8f5d41cdbf49843aef915ee3741723198a65ca7860"
+    }
+  },
+  "initial_review_artifacts_unchanged": {
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/input-hashes.json": "7052747c78911378cf23a373a233b3b3bf9263ad4b45153e8b08cee59d0d501b",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/whole-country-skill-checks.log": "0be0a451e59a803a84390ca29569b8cfef18ca50c86ab6dd554bb0370200dfa8",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/preservation-results.json": "131f6d4577f52218a769ccc5ad66ba9881df0b6cdd03489e89895758379945f8",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/verdict.json": "701f3c731b8e69e64e4694bde8fc0cf42644d100c341bdf83ccc9a88b0a4a872",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/validation-results.json": "18ef3cdc24e6a70fb7ca30b730e86c38dbbb0cb2f86c721bb1297f706aca6b4a",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/row-review.json": "5cbc20c44d3e3e8decd3da953c14654254f5ac2a209046ee26d6fa17a1b68699",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/examples.log": "49d6fed14b50b10e642ecc35b1e4da2d518e74284b06161bc6b16da92a98cf2e",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/review.md": "8c9a421d30f77b9aea868668f839c6d01e341765db1edff87900206cab2b6cdc",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/independent-fetch-receipts.json": "881e3528d92ffa41623dd8c6989d5dad6f4d6d4b29a3edfa2da9e23abd6e195f",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/validation-guides.log": "cfce286f4da01477fee8c305aba52d4cafcc3db674174ca98b81c5bdadc393a5",
+    "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/independent-review/tax-skill-checks.log": "f7bdd114b97439d60d6a52df878c1432a3ae6ebec9c44f9f8602652d699c1f23"
+  },
+  "all_46_quote_bytes_unchanged": true,
+  "unchanged_original_ledger_rows": 28,
+  "locator_only_repair_row": "LEG-17",
+  "all_original_552_lines_77_topics_14_controls_preserved": true
+}

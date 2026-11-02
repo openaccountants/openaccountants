@@ -1,0 +1,67 @@
+{
+  "article": "CNAM-CORPORATE-CORRECTION-FORM-20261031",
+  "official_url": "https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a",
+  "parent_current_url": "https://cnam.md/beneficiari/formulare/",
+  "text": "Anexa nr. 1 \nla Regulamentul privind corectarea/ restituirea \nplăților efectuate în plus sau eronat la contul \nprimelor de asigurare obligatorie de asistență medicală \nîn sumă fixă și/ sau sancțiuni contravenționale\n\nCompania Națională de Asigurări în Medicină\n\nCERERE\nprivind corectarea/restituirea plăților efectuate în plus sau eronat\n\nSubsemnatul______________________________________________________________________, \n(Nume, prenume)\nIDNP \n\n\n\n\n\n\n\n\n\n\n\n\n\nacționând în calitate de reprezentant legal/administrator al:  \n__________________________________________________________________________________, \n(Nume, prenume /denumire entitate)\nIDNP/IDNO\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTelefon de contact____________________, Email__________________________________________\nAdresa  ___________________________________________________________________________, solicit ca suma______________________________________________________________________\n(suma achitată eronat sau în plus, cu cifre și litere)\nachitată în data de ____.____.20___, la codul ECO 122200/143140 __ __ __ __ __,),\nsă fie înregistrată la codul numeric personal - IDNP corect:\nIDNP/IDNO GREȘIT\nIDNP/IDNO CORECT\nSUMA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsă fie utilizată la trecerea sumelor de la un tip de plată la altul( plătite incorect):\nNr.\nd/o\nDate aferente sumelor achitate incorect\nSe trec la\n\nData achitării\nCod ECO\nSuma\n(lei)\nCodul IBAN /\nCont trezorerial\nSuma\n(lei)\n1.\n\n\n\n\n\n2.\n\n\n\n\n\n3.\n\n\n\n\n\n4.\n\n\n\n\n\n5.\n\n\n\n\n\n\nsă fie restituită la următoarele date bancare :\n1.\nNume, prenume, IDNP:\n\n2.\nCodul IBAN:\n\n3.\nBanca beneficiară:\n\n*în cazul în care rechizitele bancare se anexează, nu este obligatorie completarea\nLa cerere sunt anexate (se indică denumirea, numărul şi data documentului de confirmare, numărul de file):\n1.________________________________________________________________________________;\n2.________________________________________________________________________________;\n3.________________________________________________________________________________;\n4.________________________________________________________________________________.\nAccept și consimt că port răspundere privind prezentarea datelor eronate.\nConsimt ca datele mele cu caracter personal să fie procesate de către Compania Națională de Asigurări în Medicină.\n\nData _____________________Semnătura___________________\nL.Ș.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocumentul conţine date cu caracter personal, prelucrate în cadrul sistemului de evidenţă nr. 0000074-001; 0000074-002; 0000074-003, înregistrat în Registrul de evidenţă a operatorilor de date cu caracter personal www.registru.datepersonale.md. Prelucrarea ulterioară a acestor date poate fi efectuată numai în condiţiile prevăzute de Legea nr. 133 din 08.07.2011 privind protecţia datelor cu caracter personal. \n",
+  "sha256": "544ca288fa697d311413fdf15fa6994e20fae1ea51c6dff653d7e858197e0fb8",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T08:54:32.795499+00:00",
+  "source_points": {
+    "scope": "în sumă fixă și/ sau sancțiuni contravenționale",
+    "applicant": "Subsemnatul",
+    "capacity": "acționând în calitate de reprezentant legal/administrator al:",
+    "represented": "(Nume, prenume /denumire entitate)\nIDNP/IDNO",
+    "contacts": "Telefon de contact____________________, Email",
+    "amount": "(suma achitată eronat sau în plus, cu cifre și litere)",
+    "payment": "la codul ECO 122200/143140",
+    "identity": "IDNP/IDNO GREȘIT\nIDNP/IDNO CORECT\nSUMA",
+    "transfer": "să fie utilizată la trecerea sumelor de la un tip de plată la altul( plătite incorect):",
+    "source": "Data achitării\nCod ECO\nSuma\n(lei)",
+    "destination": "Codul IBAN /\nCont trezorerial\nSuma\n(lei)",
+    "refund": "să fie restituită la următoarele date bancare :",
+    "bank-footnote": "*în cazul în care rechizitele bancare se anexează, nu este obligatorie completarea",
+    "evidence": "La cerere sunt anexate (se indică denumirea, numărul şi data documentului de confirmare, numărul de file):",
+    "declarations": "Accept și consimt că port răspundere privind prezentarea datelor eronate.",
+    "signature": "Data _____________________Semnătura___________________\nL.Ș.",
+    "privacy-footer": "Legea nr. 133 din 08.07.2011 privind protecţia datelor cu caracter personal."
+  },
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/cnam-corporate-correction-current-form.doc",
+  "binary_sha256": "f40af7a14f129ee5ca99faafa5dffdf9c0b06422cfc79311e29582997d2bf53c",
+  "binary_size_bytes": 97792,
+  "original_download_provenance": {
+    "url": "https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a",
+    "original_download_path": "/Users/michaelcutajar/Downloads/Cerere-privind-corectarea-restituirea-primei-de-AOAM-pentru-persoane-juridice.doc",
+    "private_copy": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/moldova-pack-2026-10-30/primary-attachments/cnam-corporate-correction-current-form.doc",
+    "sha256": "f40af7a14f129ee5ca99faafa5dffdf9c0b06422cfc79311e29582997d2bf53c",
+    "size_bytes": 97792,
+    "download_mtime_utc": "2026-10-31T08:35:34.139328+00:00",
+    "provenance": "Currentofficialformslist observed row7594 clicked; fileappearedinDownloads although parentdownload-event timedout. OriginalDOC retainedunchanged; fullreadpending."
+  },
+  "conversion_derivative_relative_to_country_workspace": "primary-attachments/cnam-corporate-correction-current-form.docx",
+  "conversion_derivative_sha256": "eae15665d5cfdfb2a224cf678411c74ffdc0e43e850c67d927ff9741854b7239",
+  "rendered_pdf_relative_to_country_workspace": "validation/cnam-corporate-correction-current-form-render/cnam-corporate-correction-current-form.pdf",
+  "rendered_pdf_sha256": "003a605014864d9281b28ac884c78f71f25e7ae191185830bb200b5ca61756d7",
+  "rendered_pages": 3,
+  "visually_read_rendered_pages": [
+    1,
+    2,
+    3
+  ],
+  "blank_rendered_pages": [
+    3
+  ],
+  "rendered_page_paths_relative_to_country_workspace": [
+    "validation/cnam-corporate-correction-current-form-render/page-1.png",
+    "validation/cnam-corporate-correction-current-form-render/page-2.png",
+    "validation/cnam-corporate-correction-current-form-render/page-3.png"
+  ],
+  "rendered_page_sha256": [
+    "486879252e886d7e02d4c62ac46115a8425c64001e032ecbdc147cc37c06a2cb",
+    "ebba965d3bad45c630b5877a4b33cb46f8eb01129681a6b392a388974e724318",
+    "f7a3882304ba6f2ff80b8a828306e65f68495f98967cba833400ea2e4356cfe3"
+  ],
+  "current_listing_observation": "Official forms page re-read31October2026 in browser tab88: row7594 title matches original DOC,96KB; actual observed download URL identical. Row4716 separately lists Order322-A/2December2021, body not read. Row10915 lists346-A/28October2026; preview only, not full source.",
+  "scope_limits": "Actual blank application fields only. Full322-A regulation/current operative compatibility, entitlement, filing channel, examination/settlement deadlines and actual current economic accounts remain unverified. Printed122200/143140 and Law133/2011 footer are not certified current legal classifications/privacy law. No application submitted or personal client data used.",
+  "portal_test": false,
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

@@ -1,0 +1,33 @@
+--- 
++++ 
+@@ -1,10 +1,10 @@
+ ---
+ name: es-corporate-tax
+ description: Use this Guide to compute Spanish common-territory corporate income tax for a period beginning in 2026. It covers residence, accounting-to-tax adjustments, microcompany and small-company rates, depreciation, finance costs, participation income, capitalisation and levelling reserves, carried-forward losses, credits, the domestic minimum tax, annual Modelo 200 and Modelo 202 instalments. Trigger phrases include Impuesto sobre Sociedades, IS, SL taxes, empresa de reducida dimensión, bases imponibles negativas, reserva de capitalización, reserva de nivelación, pagos fraccionados and corporate exit tax. Obtain the exact period, territory, entity status, aggregated turnover and accounts before computing. The September 2026 Ceuta and Melilla amendments have specific effective-date tests. Foral taxes, consolidation, reorganisations and specialist incentive claims require their own verified analysis.
+-version: 1.2
++version: 1.3
+ jurisdiction: ES
+ tax_year: 2026
+-last_updated: 2026-10-27
++last_updated: 2026-10-28
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
+ drafted_by: OpenAccountants
+@@ -16,7 +16,7 @@
+ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+ ---
+ 
+-# Corporate income tax in Spain v1.2
++# Corporate income tax in Spain v1.3
+ 
+ Compute Spanish corporate tax for a period beginning in 2026 from the accounts, then test the company's rate, reliefs and minimum tax. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
+ 
+@@ -69,7 +69,7 @@
+ 
+ Start from accounting profit determined under the Commercial Code and applicable accounting rules, then make the adjustments required by tax law ([LIS art. 10.3](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a10)). Keep a schedule by item, accounting amount, tax amount, difference, timing reversal and article. Account for the accrual and booking requirements in [art. 11](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a11); an unpaid invoice is not automatically outside the period.
+ 
+-Add back own-funds remuneration, including the specified group participating-loan interest; corporate and complementary tax expenses; criminal/administrative penalties and the statutory late/enforcement surcharges; gambling losses; and other disallowances in [art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a15). Donations are not an ordinary expense deduction, although a separate tax credit is available when its own conditions hold. Client/supplier entertainment is capped at **1% of period net turnover**; customary staff, promotion and income-correlated expenses are not automatically donations. Do not equate every director payment with a prohibited distribution; art. 15.e expressly addresses employment/senior-management remuneration. Test related-party pricing under art. 18 and special group-acquisition finance restrictions under art. 15.h.
++Add back own-funds remuneration, including the specified group participating-loan interest; corporate and complementary tax expenses; criminal/administrative penalties and the statutory late/enforcement surcharges; gambling losses; and other disallowances in [art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a15). Add back equity-interest impairment within the categories in art. 15.k, testing its incorporated art. 21 holding/foreign-tax conditions. Donations are not an ordinary expense deduction, although a separate tax credit is available when its own conditions hold. Client/supplier entertainment is capped at **1% of period net turnover**; customary staff, promotion and income-correlated expenses are not automatically donations. Do not equate every director payment with a prohibited distribution; art. 15.e expressly addresses employment/senior-management remuneration. Test related-party pricing under art. 18 and special group-acquisition finance restrictions under art. 15.h.
+ 
+ Bad-debt impairment follows [art. 13.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a13): for example, **six months** overdue, insolvency proceedings or the specified judicial/arbitration circumstances. Public-authority, related-party and general portfolio provisions have exclusions. Qualifying ERDs have the separate **1%** collective debtor allowance with exclusions and roll-forward mechanics in [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a104). Do not deduct both an individual impairment and a collective allowance on the same included debt.
+ 

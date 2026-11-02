@@ -1,0 +1,224 @@
+1247 LF186 Own2025 crypto amendment; same-type loss/FIFO
+[…] ondorioetarako, balore los mismos activos señalados en las citadas letras, cuando exis- homogeneoak eta mota bereko kriptoaktibo suntsikorrak dau- tan valores homogéneos y criptoactivos fungibles del mismo denean, zergadunak eskualdatutakoak lehenik eskuratutakoak tipo, se considerará que los transmitidos por la persona contri- direla ulertuko da. buyente son aquellos que adquirió en primer lugar. Erabat liberatutako akzioak direnean, haien sorburu diren Cuando se trate de acciones totalmente liberadas, se consi- akzioei dagokien antzinatasuna hartuko da kontuan. derará como antigüedad de las mismas la que corresponda a las acciones de las cuales procedan. Foru arau honetan jasotako ondorio horietarako, mota bere- A los efectos establecidos en esta norma foral, se considera- ko kriptoaktibotzat hartuko dira protokolo informatiko berean ja- rán criptoactivos fungibles de un mismo tipo […]
+
+1266 LF189 A2024 Instruction8.25 acquisition-update/received basis
+(bitcoins/ethereum/USDT..) actualizado conforme a los coeficientes a los que se refiere el artículo 45.2 de la Norma Foral del IRPF, y la cuantía real que obtenga en la transmisión (que será la efectivamente abonada por el adquirente, siempre que no resulte inferior al valor normal de mercado, ya que, en caso contrario, prevalecerá este). A estos efectos, la cuantía obtenida por la venta se minorará en los gastos y tributos que tenga que abonar el transmitente. b) Intercambio de un tipo de criptoactivo por otro diferente En el supuesto en que se intercambien criptoactivos (bitcoins/Ethereum/USDT..) por otros distintos, se deberá atender a lo estipulado en el artículo 47. 1 i) de la mencionada Norma Foral, relativo a las permutas, por lo […]
+
+1267 LF193 A2024 Instruction8.25 own received-asset basis
+atender a lo estipulado en el artículo 47. 1 i) de la mencionada Norma Foral, relativo a las permutas, por lo que la ganancia o la pérdida que se obtenga en estos supuestos vendrá dada por la diferencia existente entre el valor de adquisición de los activos entregados y el mayor de los dos siguientes: a) el valor de mercado de los mismos; y b) el valor de mercado de los recibidos. En este caso, de cara a futuras transmisiones, el valor de adquisición de los nuevos criptoactivos será el que haya sido tomado en consideración como valor de transmisión. En ambos supuestos, tanto el valor de adquisición como el de transmisión deberá expresarse en euros, por lo tanto, cuando la adquisición o la transmisión, o ambas, no se haya producido empleando dicha moneda, deberá aplicarse el tipo de cambio a euros de los criptoactivos, vigente en el momento de la realización de la operación. Por otro […]
+
+1268 LF201 B2026 Instruction8.10 matching-unit loss release
+hayan podido computar por haber adquirido, la persona contribuyente, valores homogéneos, o criptoactivos fungibles del mismo tipo, en los plazos previstos en dicho artículo, se integrarán a medida que se venda el mismo número de títulos o criptoactivos fungibles que fueron adquiridos y dieron lugar a esta limitación. Igual criterio ha de seguirse en relación con la regla establecida en el último párrafo del artículo 35.3 de la Norma Foral 13/2013, de 5 de diciembre, de modo que los rendimientos negativos se integrarán a medida que se transmita el mismo número de activos financieros homogéneos. 
+
+1269 LF138 Bizkaia NF2/2025 DF3 own operative commencement;86.8 rental and87.10 acquisition2026 dates
+No obstante lo previsto en el párrafo anterior: — Lo dispuesto en el apartado Tres del artículo 3 tendrá efectos para las viviendas habituales adquiridas a partir de 1 de enero de 2026. — Lo dispuesto en el nuevo apartado 8 del artículo 86 de la Norma Foral del Impues- to sobre la Renta de las Personas Físicas, contenido en el apartado Cinco del artículo 3, tendrá efectos para contratos de arrendamientos que se suscriban o prorroguen a partir de 1 de enero de 2026. — Lo dispuesto en el nuevo apartado 10 del artículo 87 de la Norma Foral del Im- puesto sobre la Renta de las Personas Físicas, contenido en el apartado Seis del artículo 3 tendrá efectos para las adquisiciones de vivienda habitual y supuestos asimilados previstos en el apartado 5 del citado artículo 87 que se realicen a partir cve: BOB-2025a075-(I-441) de 1 de enero de 2026. — 
+
+1271 LF138 Own2025enactment final effective-date clause for2026contracts/acquisitions
+[…] apartado 8 del artículo 86 de la Norma Foral del Impuesto sobre la Renta de las Personas Físicas, contenido en el apartado Ocho del artículo 3, tendrá efectos para contratos de arrendamientos que se suscriban o prorroguen a partir de 1 de enero de 2026. — Lo dispuesto en el nuevo apartado 10 del artículo 87 de la Norma Foral del Impuesto sobre la Renta de las Personas Físicas, contenido en el apartado Doce del artículo 3, tendrá efectos para las adquisiciones de vivienda habitual y supuestos asimilados previstos en el apartado 5 del citado artículo 87 que se realicen a partir de 1 de enero de 2026. — Lo dispuesto en los apartados Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Once, Doce, Quince y Diecisiete del artículo 9, así como en la Disposición Adicional Trigésimo octava de la Norma Foral 33/2013, de 27 de noviembre, sobre el Impuesto sobre la Renta de las Per- sonas Físicas, introducida por el apartado Trece del mismo artículo 9, surtirá efectos a partir del 1 de enero de 2026. — Lo dispuesto en los apartados 3 y siguientes del artículo 59 de la Norma Foral 37/2013, de 13 […]
+
+1272 LF138 Own2025enactment final effective-date clause for2026contracts/acquisitions
+[…] 10 del artículo 87 de la Norma Foral del Impuesto sobre la Renta de las Personas Físicas, contenido en el apartado Doce del artículo 3, tendrá efectos para las adquisiciones de vivienda habitual y supuestos asimilados previstos en el apartado 5 del citado artículo 87 que se realicen a partir de 1 de enero de 2026. — Lo dispuesto en los apartados Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Once, Doce, Quince y Diecisiete del artículo 9, así como en la Disposición Adicional Trigésimo octava de la Norma Foral 33/2013, de 27 de noviembre, sobre el Impuesto sobre la Renta de las Per- sonas Físicas, introducida por el apartado Trece del mismo artículo 9, surtirá efectos a partir del 1 de enero de 2026. — Lo dispuesto en los apartados 3 y siguientes del artículo 59 de la Norma Foral 37/2013, de 13 de diciembre, del Impuesto sobre Sociedades, contenido en el apartado cuatro del artículo 12, surtirá efectos para los períodos impositivos que se inicien a partir del 1 de enero de 2026.
+
+1277 LF138 Gipuzkoa NF3/2014 article 49
+por la que se aprueban la reforma del sistema tributario del Territorio Histórico de Gipuzkoa, y otras modificaciones tributarias. Esta norma foral entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa y la modificación surte efectos desde 1 de enero de 2025 para las viviendas habituales adquiridas a partir de 1 de enero de 2026, de conformidad con lo dispuesto en el primer guion de la disposición final segunda (BOG 15/05/2025).
+
+1278 LF321 Own G86 effective note219
+por la que se aprueban la reforma del sistema tributario del Territorio Histórico de Gipuzkoa, y otras modificaciones tributarias. La norma foral entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa y su inclusión surte efectos para arrendamientos cuyos contratos se suscriban o se prorroguen a partir de 1 de enero de 2026, de conformidad con lo dispuesto en el segundo guion de la disposición final segunda (BOG 15/05/2025).
+
+1280 LF140 G DF33/2014 article 45
+c’) Los compromisos de pago derivados del préstamo hipotecario que financió la adquisición de la vivienda comprometan más del 30 por 100 de la renta disponible de la persona o personas contribuyentes titulares de la vivienda. A estos efectos, se considerará renta disponible de dichas personas el sumatorio de sus bases imponibles minorado, en su caso, en el importe del sumatorio de las cuotas líquidas de este impuesto soportadas por las mismas.
+
+1281 LF140 G DF33/2014 article 45
+e’) La comunidad de propietarios en la que se integra la vivienda transmitida tenga previsto afrontar obras de rehabilitación o mejora de la edificación que supongan un coste proporcionalmente elevado. Se considerará que las obras a ejecutar suponen un coste proporcionalmente elevado cuando representen, en función de la cuota de participación de la vivienda, un importe superior al 5 por 100 del valor catastral de la vivienda para la persona contribuyente.
+
+1282 LF140 G DF33/2014 article 45
+b’) Una reducción sustancial del rendimiento neto respecto al obtenido en ejercicios anteriores. A estos efectos, se considerará que la reducción es sustancial cuando el rendimiento neto de dos periodos impositivos consecutivos se haya reducido en más del 20 por 100 respecto a la media del rendimiento neto obtenido en los tres ejercicios precedentes.
+
+1283 LF140 G DF33/2014 article 45
+Texto vigente 61 Para que lo dispuesto en esta letra e) se pueda considerar causa justificativa del cambio de vivienda, la actividad económica deberá constituir la principal fuente de renta de la persona contribuyente. Se considerará que la actividad económica constituye la principal fuente de renta de la persona contribuyente cuando su rendimiento neto represente más del 50 por 100 de la totalidad de los rendimientos de actividades económicas y del trabajo personal.
+
+1286 LF373 B DF47/2014 article 117
+2. Las Entidades de Crédito deberán presentar, en el período comprendido entre el 1 y el 31 de enero del año inmediato siguiente:
+
+1287 LF373 B DF47/2014 article 117
+b) Declaración informativa de los depósitos destinados a la adquisición de Fondos europeos para el impulso a la innovación, en la que consten los siguientes datos:
+
+1288 LF373 A DF40/2014 article 123
+1. (28) Las entidades que concedan préstamos para la adquisición de viviendas deberán presentar, durante el mes de enero del año inmediato siguiente, una declaración informativa anual de dichos préstamos, en la que se incluirá el nombre y apellidos y número de identificación fiscal de las prestatarias y los prestatarios de los mismos, el importe total del préstamo, las cantidades que dichas prestatarias y dichos prestatarios hayan satisfecho en el ejercicio en concepto de intereses y de amortización del capital y la indicación del año de […]
+
+1290 LF373 G DF33/2014 article 89
+1. Los órganos o entidades gestoras de la Seguridad Social y las mutualidades deberán suministrar información mensual y anual, de sus afiliados o mutualistas, en la que podrá exigirse que consten los siguientes
+
+1291 LF373 G DF33/2014 article 89
+6. Las entidades a que se refiere el artículo 89 bis de la Norma Foral del Impuesto deberán presentar una declaración informativa anual sobre las certificaciones expedidas conforme a lo previsto en el número 5 del citado artículo 89 bis en la que, además de sus datos de identificación, fecha de constitución e importe de los fondos propios, harán constar la siguiente información referida a los adquirentes de las acciones o participaciones: a) Nombre y apellidos. b) Número de identificación fiscal. c) Importe de la adquisición. d) Fecha de adquisición. e) Porcentaje de participación.
+
+1292 LF659 Own article 9.38
+que la renta constituida tenga carácter vitalicio o, en el caso de tratarse de una renta temporal, ésta tenga una duración mínima de 15 años y una cuantía constante, sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros.
+
+1293 LF659 Own article 9.38
+tenga carácter vitalicio o, en el caso de tratarse de una renta temporal, ésta tenga una duración mínima de 15 años y una cuantía constante, sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros.
+
+1294 LF659 Own article 9.44
+prestación reconocida en forma de renta tenga carácter vitalicio o, en caso de tratarse de una renta temporal, una duración mínima de 15 años, y que tenga una cuantía constante, sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros. La exención no podrá exceder del 40 por ciento de la cuantía de la prestación recibida en forma de renta.
+
+1295 LF659 Own article 9.44
+renta tenga carácter vitalicio o, en caso de tratarse de una renta temporal, una duración mínima de 15 años, y que tenga una cuantía constante, sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros. La exención no podrá exceder del 40 por ciento de la cuantía de la prestación recibida en forma de renta.
+
+1296 LF659 Own article 9.39
+prestación reconocida en forma de renta tenga carácter vitalicio o, en caso de tratarse de una renta temporal, una duración mínima de 15 años, y que tenga publicación del decreto foral-norma en el Boletín Oficial de Gipuzkoa (BOG 19/12/2024). Surte efectos a partir de 1 de enero de 2023. 28 Este número se ha modificado por el apartado uno del ordinal primero del artículo 14 de la NORMA FORAL 1/2025, de 9 de mayo, por la que se aprueban la reforma del sistema tributario del Territorio Histórico de Gipuzkoa, y otras modificaciones tributarias. Entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa y la modificación surte efectos desde 1 de enero de 2025 (BOG 15/05/2025). 29 Este número se ha añadido por el apartado dos del ordinal primero del artículo 18 de la NORMA FORAL 1/2025, de 9 de mayo, por la que se […]
+
+1297 LF659 Own article 9.39
+de conformidad con lo dispuesto en el quinto guion de la disposición final segunda (BOG 15/05/2025). 29 Texto vigente una cuantía constante, sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros. La exención no podrá exceder del 40 por 100 de la cuantía de la prestación recibida en forma de renta.
+
+1298 LF659 Own article 9.44
+sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros. La exención no podrá exceder del 40 por ciento de la cuantía de la prestación recibida en forma de renta.
+
+1299 LF659 Own article 9.39
+sin perjuicio de alteraciones en la cuantía que puedan derivar de motivos técnicos o financieros. La exención no podrá exceder del 40 por 100 de la cuantía de la prestación recibida en forma de renta.
+
+1309 LF655 Bizkaia NF13/2013 article 37
+e) Los rendimientos positivos procedentes directamente de las aportaciones y contribuciones empresariales a los sistemas de previsión social, que se pongan de manifiesto en el momento en que hubiera acaecido la contingencia o circunstancia que causa las prestaciones contempladas en la letra a) del artículo 18 de esta Norma Foral excepto las previstas en los números 1.º, 2.º, 4.º, cuando las mutualidades de previsión social actúen como sistemas alternativos al régimen especial de la Seguridad Social de los trabajadores por cuenta propia o […]
+
+1311 LF655 Álava NF33/2013 article 37
+e) (35) (36) Los rendimientos positivos procedentes directamente de las aportaciones y contribuciones empresariales a los sistemas de previsión social, que se pongan de manifiesto en el momento de acaecer la contingencia o circunstancia que causa las prestaciones contempladas en la letra a) del artículo 18 de esta Norma Foral, excepto las previstas en los números 1.º, 2.º, 4.º, cuando las mutualidades de previsión social actúen como sistemas alternativos al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o […]
+
+1313 LF655 Gipuzkoa NF3/2014 article 37
+68 Texto vigente e)92 Los rendimientos positivos procedentes directamente de las aportaciones y contribuciones empresariales a los sistemas de previsión social que se pongan de manifiesto en el momento de acaecer la contingencia o circunstancia que causa las prestaciones contempladas en la letra a) del artículo 18 de esta norma foral, excepto las previstas en los números 1.º, 2.º y 4.º cuando las mutualidades de previsión social actúen como sistemas alternativos al régimen especial de la Seguridad Social de los trabajadores por cuenta propia o […]
+
+1320 LF663 Own original-annuity-date additional provision
+A estos efectos la proporción que sobre el total de la prestación representen los rendimientos a que se refiere la letra e) del artículo 37 de la presente Norma Foral se retrotraerá al momento en que hubiera acaecido la contingencia o circunstancia que hubiera causado la prestación y el plazo de duración de la renta se computará desde el momento en que se hubiera constituido.
+
+1321 LF663 Own original-annuity-date additional provision
+A estos efectos, la proporción que sobre el total de la prestación representen los rendimientos a que se refiere la letra e) del artículo 37 de la presente Norma Foral se retrotraerá al momento en que hubiera acaecido la contingencia o circunstancia que hubiera causado la prestación y el plazo de duración de la renta se computará desde el momento en que se hubiera constituido.
+
+1322 LF663 Own original-annuity-date additional provision
+A estos efectos, la proporción que sobre el total de la prestación representen los rendimientos a que se refiere la letra e) del artículo 37 de la presente norma foral se retrotraerá al momento en que hubiera acaecido la contingencia o circunstancia que hubiera causado la prestación y el plazo de duración de la renta se computará desde el momento en que se hubiera constituido.
+
+1326 LF705 Official act identified by URL article 53quater
+Los criptoactivos se entenderán situados en el extranjero cuando la persona o entidad o establecimiento permanente que los custodie proporcionando servicios para salvaguardar las claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir dichos criptoactivos no sea una entidad autorizada por la autoridad competente en España o, en su caso, no haya efectuado la notificación correspondiente en España de conformidad con los artículos 63 y 60, respectivamente, del Reglamento (UE) 2023/1114 del Parlamento Europeo y […]
+
+1328 LF705 Official act identified by URL article 53quater
+[…] criptoactivos y por el que se modifican los Reglamentos (UE) número 1093/2010 y (UE) número 1095/2010 y las Directivas 2013/36/UE y (UE) 2019/1937, o no conste en el Registro de operadores de criptoactivos de la Administración tributaria.
+
+1329 LF705 Official act identified by URL article 53quater
+[…] conforme a lo previsto en el apartado 2 del artículo 4 de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo, custodiados por personas o entidades que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir criptoactivos, a 31 de diciembre de cada año.
+
+1330 LF705 Official act identified by URL article 53quater
+d) No existirá obligación de informar sobre ningún criptoactivo cuando los saldos a 31 de diciembre a los que se refiere el apartado 3.c) valorados en euros no superen, conjuntamente, los 50.000 euros. En caso de superarse dicho límite conjunto deberá informarse sobre todos los criptoactivos.
+
+1331 LF705 Official act identified by URL article 53quater
+La presentación de la declaración en los años sucesivos solo será obligatoria cuando el saldo conjunto a que se refiere el apartado 5.d) hubiese experimentado un incremento superior a 20.000 euros respecto del que determinó la presentación de la última declaración.
+
+1332 LF705 Official act identified by URL article 53quater
+Dicha obligación también se extiende a quienes hayan sido titulares o beneficiarios de los citados criptoactivos, o hayan tenido poderes de disposición sobre los mismos, o hayan sido titulares reales en cualquier momento del año al que se refiera la declaración y que hubieran perdido dicha condición a 31 de diciembre de ese año. En estos supuestos, la información a suministrar será la correspondiente a la fecha en la que dicha extinción se produjo.
+
+1333 LF705 Official act identified by URL article 53quater
+b) Aquellos de los que sean titulares personas jurídicas y demás entidades residentes en territorio español, así como establecimientos permanentes en España de no residentes, registrados en su contabilidad de forma individualizada e identificados por su denominación, valor y entidad de custodia y país o territorio en que se encuentren situados.
+
+1358 LF705 Official act identified by URL article 53quater
+6. Esta obligación deberá cumplirse entre el 1 de enero y el 31 de marzo del año siguiente a aquel al que se refiera la información a suministrar.
+
+1359 LF705 Official act identified by URL article 53quater
+1. Las personas físicas y jurídicas residentes en territorio español, los establecimientos permanentes en dicho territorio de personas o entidades no residentes y las entidades a que se refiere el artículo 34.3 de la Norma Foral 2/2005, de 10 de marzo, General Tributaria
+
+1360 LF706 Official act identified by URL article 23bis
+[…] quedarán sujetos a comunicar información a la administración tributaria española. A este respecto, se destaca que los proveedores de servicios de criptoactivos autorizados, por la autoridad competente en España, bajo el Reglamento (UE) 2023/1114 del Parlamento Europeo y del Consejo, de 31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los Reglamentos (UE) número 1093/2010 y (UE) número 1095/2010 y las Directivas 2013/36/UE y (UE) 2019/1937, estarán obligados a declarar en España. Siendo éste el nexo que […]
+
+1361 LF706 Official act identified by URL article 23bis
+[…] 1093/2010 y (UE) número 1095/2010 y las Directivas 2013/36/UE y (UE) 2019/1937, o a la que se permita prestar servicios de criptoactivos tras haber efectuado una notificación en España de conformidad con el artículo 60 del citado reglamento. b) Es una entidad en la que no concurren ninguna de las circunstancias previstas en la letra anterior ni en España ni en ningún otro Estado miembro de la Unión Europea, y, al mismo tiempo, cumple con alguna de las siguientes condiciones: 1.º Ser una entidad o una persona física residente fiscal en España, […]
+
+1362 LF706 Official act identified by URL article 23bis
+Por otro lado, la Directiva (UE) 2023/2226 del Consejo, de 17 de octubre de 2023, por la que se modifica la Directiva 2011/16/UE relativa a la cooperación administrativa en el ámbito de la fiscalidad, introduce nuevas obligaciones de información, diligencia debida y, en su caso, de registro, para ciertos proveedores de servicios de criptoactivos, que deberán suministrar infor- mación sobre sus usuarios y las operaciones que realicen, trasladando igualmente al ámbito de la Unión el Marco de intercambio de información sobre criptoactivos […]
+
+1363 LF706 Official act identified by URL article 23bis
+casos para discernir entre los distintos tipos de criptoactivos, el obligado deberá informar, en los términos establecidos, sobre todos los criptoactivos. Por otra parte, se determina que los criptoactivos se entenderán situados en el extranjero cuando la custodia se efectúe por una entidad o establecimiento permanente que no haya sido autorizado para operar por la autoridad competente española o no conste en el registro de operadores de criptoactivos de la administración tributaria. En tercer lugar, también dentro del ámbito de transposición […]
+
+1364 LF706 Official act identified by URL article 23bis
+[…] sobre ningún criptoactivo cuando los saldos a 31 de diciembre a los que se refiere la letra c) del apartado 3 valorados en euros no superen, conjun- tamente, los 50.000,00 euros. En caso de superarse dicho límite conjunto deberá informarse sobre todos los criptoactivos. 6. Esta obligación deberá cumplirse entre el 1 de enero y el 30 de junio del año siguiente a aquel al que se refiera la información a suministrar. La presentación de la declaración en los años sucesivos solo será obligatoria cuando el saldo conjunto a que se refiere la letra d) […]
+
+1365 LF706 Official act identified by URL article 23bis
+[…] sucesivos solo será obligatoria cuando el saldo conjunto a que se refiere la letra d) del apartado 5 de este artículo hubiese experimentado un incremento superior a 20.000,00 euros respecto del que determinó la presentación de la última declaración. En todo caso será obligatoria la presentación de la declaración en los supuestos previstos en el último párrafo del apartado 4 respecto de los criptoactivos a los que el mismo se refiere. Mediante orden foral de la diputada de Hacienda, Finanzas y Presupuestos se aprobará el correspondiente modelo […]
+
+1366 LF706 Official act identified by URL article 23bis
+[…] incorporando en su ámbito objetivo expresamente el dinero electrónico y las monedas digitales de bancos centrales e incluyendo nuevos detalles de las cuentas y de sus titulares, trasladando al ámbito de la Unión las últimas modificaciones efectuadas en el estándar común de comunicación de información (Common Reporting Standard o CRS) de la Organización para la Cooperación y el Desarrollo Económico.
+
+1367 LF706 Official act identified by URL article 23bis
+[…] titulares personas jurídicas y demás entidades residentes en territorio español, así como establecimientos permanentes en España de no residentes, regis- trados en su contabilidad de forma individualizada e identificados por su denominación, valor y entidad de custodia y país o territorio en que se encuentren situados. c) Aquellos de los que sean titulares las personas físicas residentes en territorio español que desarrollen una actividad económica y lleven su contabilidad de acuerdo con lo dispuesto en el Código de Comercio, registrados en […]
+
+1392 LF706 Official act identified by URL article 23bis
+[…] las modificaciones nece- sarias en el Reglamento que regula el Censo de los Contribuyentes y obligaciones censales, aprobado por el Decreto Foral 3/2011, de 25 de enero, en materia de registro de operadores de criptoactivos, y en el Decreto Foral 6/2017, de 21 de febrero, que establece la obligación de identificar la residencia fiscal de las personas que ostenten la titularidad o el control de deter- minadas cuentas financieras y de suministro de información acerca de las mismas en el ámbito de la asistencia mutua. Todo ello sin perjuicio de […]
+
+1393 LF706 Official act identified by URL article 23bis
+[…] euros. En caso de superarse dicho límite conjunto deberá informarse sobre todos los criptoactivos. 6. Esta obligación deberá cumplirse entre el 1 de enero y el 30 de junio del año siguiente a aquel al que se refiera la información a suministrar. La presentación de la declaración en los años sucesivos solo será obligatoria cuando el saldo conjunto a que se refiere la letra d) del apartado 5 de este artículo hubiese experimentado un incremento superior a 20.000,00 euros respecto del que determinó la presentación de la última declaración. En todo […]
+
+1394 LF707 Official act identified by URL article 54bis
+Los criptoactivos se entenderán situados en el extranjero cuando la persona o entidad o establecimiento permanente que los custodie proporcionando servicios para salvaguardar las claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir dichos criptoactivos no sea una entidad autorizada por la autoridad competente en España o, en su caso, no haya efectuado la notificación correspondiente en España de conformidad con los artículos 63 y 60, respectivamente, del Reglamento (UE) 2023/1114 del Parlamento Europeo y […]
+
+1396 LF707 Official act identified by URL article 54bis
+[…] criptoactivos y por el que se modifican los Reglamentos (UE) n.º 1093/2010 y (UE) n.º 1095/2010 y las Directivas 2013/36/UE y (UE) 2019/1937, o no conste en el Registro de operadores de criptoactivos de la Administración tributaria.
+
+1397 LF707 Official act identified by URL article 54bis
+[…] conforme a lo previsto en el apartado 2 del artículo 4 de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo, custodiados por personas o entidades que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de terceras o terceros, para mantener, almacenar y transferir criptoactivos, a 31 de diciembre de cada año.
+
+1398 LF707 Official act identified by URL article 54bis
+d) No existirá obligación de informar sobre ningún criptoactivo cuando los saldos a 31 de diciembre a los que se refiere el apartado 3.c) valorados en euros no superen, conjuntamente, los 50.000 euros. En caso de superarse dicho límite conjunto deberá informarse sobre todos los criptoactivos.
+
+1399 LF707 Official act identified by URL article 54bis
+La presentación de la declaración en los años sucesivos solo será obligatoria cuando el saldo conjunto a que se refiere el apartado 5.d) hubiese experimentado un incremento superior a 20.000 euros respecto del que determinó la presentación de la última declaración.
+
+1400 LF707 Official act identified by URL article 54bis
+Dicha obligación también se extiende a quienes hayan sido titulares o beneficiarias o beneficiarios de los citados criptoactivos, o hayan tenido poderes de disposición sobre los mismos, o hayan sido titulares reales en cualquier momento del año al que se refiera la declaración y que hubieran
+
+1401 LF707 Official act identified by URL article 54bis
+Texto vigente contabilidad de forma individualizada e identificados por su denominación, valor y entidad de custodia y país o territorio en que se encuentren situados.
+
+1426 LF707 Official act identified by URL article 54bis
+modifican determinados reglamentos de desarrollo de la Norma Foral General Tributaria (BOG 8/10/2021). El Decreto Foral entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa y la modificación surte efectos a partir de 1 de enero de 2022.
+
+1427 LF707 Official act identified by URL article 54bis
+6. Esta obligación deberá cumplirse entre el 1 de enero y el 30 de junio del año siguiente a aquel al que se refiera la información a suministrar.
+
+1428 LF705 Own existing721model order filing window; future2027 procedure remains bounded
+La Norma Foral 8/2022, de 20 de julio, por la que se introducen determinadas modi- ficaciones tributarias en el ámbito del Territorio Histórico de Bizkaia, dio nueva redacción a la Disposición Adicional Vigesimoséptima de la Norma Foral 2/2005, de 10 de marzo, General Tributaria, para establecer una nueva obligación informativa relativa a la tenen- cia de monedas virtuales situadas en el extranjero, con el objeto de mejorar el control tributario de los hechos imponibles que puedan derivarse de dicha tenencia u operativa. Conforme a lo anterior, la nueva obligación informativa sobre tenencia y operaciones con monedas virtuales en el extranjero se recoge en el supuesto f) de la Disposición […]
+
+1429 LF706 Own existing721model order filing window; future2027 procedure remains bounded
+que regula la obligación de informar sobre cuentas, operaciones y activos financieros, así como sobre bienes y derechos situados en el extranjero, en relación con las monedas virtuales situadas en el extranjero respecto de las que se tenga la obligación de declarar. Artículo 4. Plazo de presentación del modelo 721, “Declaración informativa sobre monedas virtuales situadas en el extranjero” La presentación del modelo 721 tendrá carácter anual y se realizará entre el 1 de enero y el 31 de marzo del año siguiente a aquel al que se refiera la información a suministrar. Artículo 5. Forma de presentación del modelo 721, “Declaración informativa sobre monedas virtuales situadas en el extranjero” […]
+
+1430 LF707 Own existing721model order filing window; future2027 procedure remains bounded
+[…] beharreko informa- La presentación del modelo 721 tendrá carácter anual y se zioari dagokion urtea amaitu ondorengo urteko apirilaren 1etik realizará entre el 1 de abril y el 30 de junio del año siguiente a ekainaren 30era bitartean. aquel al que se refiera la información a suministrar. 5. artikulua. 721 eredua aurkezteko era. Artículo 5. Forma de presentación del modelo 721. 1. 721 eredua internet bidez aurkeztuko da, Zergabidea 1. El modelo 721 se presentará a través de Internet, desde plataformatik, betiere Gipuzkoako Lurralde Historikoko Zergen la plataforma Zergabidea, con arreglo a lo previsto en Orden Foru Administrazioarekiko harremanetan bitarteko elektronikoak Foral 320/2017, de […]
+
+1431 LF707 G actual public721 page; inconsistency is expressly retained
+[…] extranjero deben de concurrir los siguientes requisitos: Que los saldos de las monedas virtuales a 31 de diciembre valorados en euros superen, conjuntamente, los 50.000 euros . Que dichas monedas virtuales sean custodiadas por personas o entidades que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir monedas virtuales. Que las personas o entidades que se refiere el párrafo anterior no sean residentes en España o establecimientos permanentes en territorio español de personas o entidades residentes en el extranjero. Quedan exonerados de la presentación de esta declaración: Entidades del artículo 12 de la Norma […]
+
+1432 LF705 B DF84/2026 operative replacement/effect; not full DAC8 review
+BOLETÍN OFICIAL DE BIZKAIA BOB Núm. 194 Viernes, 09 de octubre de 2026 Pág. 1
+
+1433 LF719 B DF47/2014 article 109
+1. Los contribuyentes que ejerzan actividades económicas estarán obligados a autoliquidar e ingresar en la Hacienda Foral, en concepto de pago a cuenta del Impuesto sobre la Renta de las Personas Físicas, la cantidad que resulte de lo establecido en los artículos siguientes.
+
+1434 LF719 A DF40/2014 article 105
+Los contribuyentes que ejerzan actividades económicas estarán obligados a ingresar, y en su caso también a autoliquidar, en la Diputación Foral, en concepto de pago a cuenta del Impuesto sobre la Renta de las Personas Físicas, la cantidad que resulte de lo establecido en los artículos siguientes.
+
+1435 LF719 G DF33/2014 article 121
+1. Los contribuyentes que ejerzan actividades económicas estarán obligados a autoliquidar e ingresar en la Diputación Foral, en concepto de pago a cuenta del Impuesto sobre la Renta de las Personas Físicas, la cantidad que resulte de lo establecido en los artículos siguientes.
+
+1436 LF387 A2024 Instruction14.7.1 explicit business-BI pool
+Norma Foral 33/2013. Determinación de la cuota íntegra que se corresponda con la parte de base imponible general integrada por los rendimientos de las actividades económicas. La operación que es preciso realizar es la siguiente: Cuota íntegra general x Rendimiento actividades en estimación directa X= Base imponible General Total 
+
+1440 LF397 G own TicketBAI FAQ15.22; only attribution formula incorporated as labelled ordinary88 inference
+económicas (AAEE) del contribuyente. (Cuota íntegra general x (Suma de los rendimientos de AAEE / Base Imponible General)  El importe de la cuota líquida del ejercicio Para los contribuyentes del IS el límite será la cuota efectiva del ejercicio. Volver a DEDUCCIÓN TicketBAI 
+
+1444 LF301 G DF6/2023 article11.3(f)/DT1 actual current qualification
+2. No obstante lo dicho en el primer punto, dicha cualificación no será exigible para las personas que acrediten, mediante el certificado correspondiente emitido por el Gobierno Vasco, u otras Comunidades Autónomas, disponer de la «habilitación excepcional» para ejercer de asistente personal por cumplir, a fecha 11 de agosto de 2022, el requisito de acreditar una experiencia de al menos 3 años, con un mínimo de 2.000 horas trabajadas en los últimos 12 años, en la categoría profesional de asistente personal o, sin alcanzar el mínimo
+
+1445 LF301 G DF6/2023 article11.3(f)/DT1 actual current qualification
+De 300,01% al 400% SMI 80%
+
+1446 LF301 G DF6/2023 article11.3(f)/DT1 actual current qualification
+Decreto Foral 6/2023, de 18 de abril, por el que se regulan las prestaciones económicas de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia. (BOG nº 81, de 28 de abril de 2023) NOTA El presente texto es un documento de divulgación sin ningún carácter oficial, que recoge la norma íntegra actualizada.
+
+1448 LF303 Ley3/2023 article3(f) documented activity agreement
+[…] el artículo 50. e) Persona joven: Persona demandante de los servicios de empleo menor de treinta años o beneficiaria del Sistema Nacional de Garantía Juvenil. f) Acuerdo de actividad: Acuerdo documentado mediante el que se establecen derechos y obligaciones entre la persona demandante de los servicios públicos de empleo y el correspondiente Servicio Público de Empleo para incrementar la empleabilidad de aquella, atendiendo, en su caso, a las necesidades de los colectivos prioritarios. g) Colocación adecuada: Se considerará adecuada, la colocación en la profesión demandada por la persona trabajadora, de acuerdo con su formación, […]
+
+1449 LF303 RD438/2024 article45 actual activity-agreement framework
+Artículo 45. Suscripción del acuerdo de actividad. 1. El acuerdo de actividad previsto en el artículo 3.a) de la Ley 3/2023, de 28 de febrero, implicará, para el Servicio Público de Empleo correspondiente, la obligación de proporcionar los servicios y actividades concretos comprometidos en el plan de actuación individualizada y el acompañamiento y seguimiento por la persona tutora y, para la persona usuaria, la búsqueda activa de empleo y los compromisos de participación activa en los servicios y actividades incluidos en el acuerdo y, en su caso, de aceptación de una colocación adecuada. Se atenderán, en particular, las necesidades de […]

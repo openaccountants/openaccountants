@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "bba54325f2f975ced58da68251ca202377677d7f",
+  "scope": "Three ordinary regional additions and finite VAT later-reference qualification",
+  "whole_country_complete": false,
+  "reviewed_files": {
+    "skills/international/spain/es-irpf-deductions.md": "923d3bc5e1ffdfd44cb0674f7b2b975bca3540de1e0bb178e90791300a09c78a",
+    "skills/international/spain/es-vat-return.md": "f6cb72d6ab61571455c665e2741663d8e77ce600143a059198682eaf0307e99b",
+    "skills/international/spain/spain-vat-return.md": "d222dc6f10e8e88722a6c994c9704505b258febc58e51c51b285a2f4dff6edac"
+  },
+  "regional_controls": {
+    "guide_sha256": "923d3bc5e1ffdfd44cb0674f7b2b975bca3540de1e0bb178e90791300a09c78a",
+    "authoritative_baseline_sha256": "b6a9a23397e53a5e242912c95de4d873f9c15b88ed3b37f6f5737a6fc77d533d",
+    "exact_intermediate_hash_after_reverse": "0d6106598f3c71c391f17b35114b5232019af316461ce69bdc61ea026ac8d008",
+    "all_unrelated_bytes_identical": true,
+    "frontmatter_identical": true,
+    "cta_identical": true,
+    "oa_blocks_identical": true,
+    "nine_author_h2": true,
+    "can1_closed": true
+  },
+  "regional_receipts": 14,
+  "retained_limits": [
+    "regional joint/mixed-rate and competing carry-vintage allocation",
+    "initial changed-percentage first-use amount/divisor/gate",
+    "simultaneous business-use and prorrata change",
+    "partly nonrecoverable VAT at investment-good acquisition threshold"
+  ]
+}

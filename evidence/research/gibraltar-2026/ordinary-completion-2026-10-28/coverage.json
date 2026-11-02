@@ -1,0 +1,32 @@
+{
+  "code": "GI",
+  "name": "Gibraltar",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/international/gibraltar",
+  "skills": 18,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [],
+  "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "not_applicable": {},
+  "partial": {
+    "IT-IND": "Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled",
+    "IT-CORP": "CT4 payment-on-account reduction form fields/submission and remaining ordinary deduction/claim implementation remain unverified",
+    "VAT": "Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified",
+    "SC": "Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified",
+    "PR": "Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion",
+    "TP": "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; complete domestic documentation scope remains to verify",
+    "XB": "Domestic foreign-tax-relief claim/correction submission, ordinary exit/disposal method and remaining residence/treaty procedure limits remain unverified"
+  },
+  "has_readme": true,
+  "complete": false
+}

@@ -1,0 +1,766 @@
+{
+  "scope": "Selected original source bodies, fictional calculator observations, author controls and distinct root legal/application review for CLM individual signed-loss attribution. Guide snapshots are deliberately omitted from this public evidence folder to avoid duplicate source Guides. Original private manifests retain their full original scope; omitted files are not claimed copied. This checkpoint is a bounded change review, not a fresh whole-country pass or licensed-accountant attestation. Country remains partial. Raw source/diff bytes are retained losslessly; no generated packages or indexes changed.",
+  "frozen_current_files": {
+    "es-irpf-deductions.md": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3",
+    "README.md": "66ae1eb7cf60b1b871a670306d7ee444d449cc1cfcc5959201e8c9a4a63657a9"
+  },
+  "artifacts": [
+    {
+      "path": "CLM-A-activity-loss-summary.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-activity-loss-summary.ax.txt",
+      "bytes": 3802,
+      "sha256": "23f5b7dc35876afc2639e73b93687ef7682893b480b15b16ea1779fb8c52385e",
+      "original_bytes": 14754,
+      "original_sha256": "c337e2fb5ae925c5d1b7795e55d54d57d97629c209a0ba5ac8221817a340f354",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-A-activity-loss-summary.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-activity-loss-summary.png",
+      "bytes": 92918,
+      "sha256": "5a9590102be0165f5f496f5f45e2969fd7bce5f73f148ab523a70aad3d1c2ce4",
+      "original_bytes": 92918,
+      "original_sha256": "5a9590102be0165f5f496f5f45e2969fd7bce5f73f148ab523a70aad3d1c2ce4",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-A-repeat-activity-input.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-activity-input.png",
+      "bytes": 131102,
+      "sha256": "f40afadb0f8d8ff1061933b336ae8371a7a138d717c963cbd63f98f30459d7bb",
+      "original_bytes": 131102,
+      "original_sha256": "f40afadb0f8d8ff1061933b336ae8371a7a138d717c963cbd63f98f30459d7bb",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-A-repeat-activity-worksheet.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-activity-worksheet.ax.txt",
+      "bytes": 7923,
+      "sha256": "7a6ea5f5f4db9f9d57b10d90198ec047ad141d325bf70b081cc77312fdc27719",
+      "original_bytes": 36109,
+      "original_sha256": "5ac9cf9ec7ddbd4769d693e296f284f4a70534eac31e016fccbe9ffc15b98e6d",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-A-repeat-quota-components.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-quota-components.ax.txt",
+      "bytes": 8043,
+      "sha256": "3e027a7c6efe7b8d7e5c147cdc5f06e5e3155465df31240b476ae90ea2aaac55",
+      "original_bytes": 41118,
+      "original_sha256": "c7d169a69ab7c07b7972cfc0a33f849f5861d7e518a6fd0174b6e7ae85b29064",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-A-repeat-quota-components.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-quota-components.png",
+      "bytes": 122813,
+      "sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "original_bytes": 122813,
+      "original_sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-A-repeat-summary.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-summary.ax.txt",
+      "bytes": 3799,
+      "sha256": "83708f6afe9f952ab200c15c9462f881293f4c79e8d04c18c0765c1fc3655b4d",
+      "original_bytes": 14754,
+      "original_sha256": "c27cee31b8101ccbff0abe1995f6eb3d9eec896e67ae0adccb087b7008811fb5",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-A-repeat-summary.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-A-repeat-summary.png",
+      "bytes": 92919,
+      "sha256": "a910102a6837d0b9116f254d37c27a777cd83250a2f5ed08eaaf284755caa199",
+      "original_bytes": 92919,
+      "original_sha256": "a910102a6837d0b9116f254d37c27a777cd83250a2f5ed08eaaf284755caa199",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-B-capital-loss-summary.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-B-capital-loss-summary.ax.txt",
+      "bytes": 3758,
+      "sha256": "1c4fc443319e727027acd2cb83a962cb435a25148019f81ae67e1d6c1b76f863",
+      "original_bytes": 14746,
+      "original_sha256": "b356efc5d483b18b9bb102be585bc1ca23d619e9b82528294414d1419d2e3ccd",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-B-quota-components.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-B-quota-components.ax.txt",
+      "bytes": 8055,
+      "sha256": "09516937d8871f927909e1b9b14e2b9e6a0b52d48eac144c9a4137daa84a38f5",
+      "original_bytes": 41118,
+      "original_sha256": "ea4089a2b9d1cb657006469852cbc63b884d5aa1b465599c6bd85fd9b526ae2c",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-B-quota-components.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-B-quota-components.png",
+      "bytes": 122813,
+      "sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "original_bytes": 122813,
+      "original_sha256": "e64e21263e477de3b71658440dbd934303b5ef188c2840b8d8b77bfc1aef71f2",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-capital-dialog.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-capital-dialog.ax.txt",
+      "bytes": 6087,
+      "sha256": "ef984d9cb95cf36557ae20960150c1aaf1335082c54ad7a6563c9f2d009273f7",
+      "original_bytes": 27034,
+      "original_sha256": "8c0560f4faf4155aa9c449eccb0a8f330d82b46043d3bdf768be17c7bae62507",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-capital-dialog.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-capital-dialog.png",
+      "bytes": 80443,
+      "sha256": "0dcac7e5861803daef4166de437c8e2f80b33b84f0c381cba640de4dedd05b8b",
+      "original_bytes": 80443,
+      "original_sha256": "0dcac7e5861803daef4166de437c8e2f80b33b84f0c381cba640de4dedd05b8b",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-capital-loss-plus-general-gain-summary.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-capital-loss-plus-general-gain-summary.ax.txt",
+      "bytes": 3860,
+      "sha256": "ca6beba3afb4b0e0bfc9a135144e49b82f2123fd2508d98671792dd72a9633c8",
+      "original_bytes": 15105,
+      "original_sha256": "b90fb21b754966c42c23fe16d9f1ebf667d2a62ed8fbce677f156d7bb5bce8dc",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-capital-loss-plus-general-gain-summary.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-capital-loss-plus-general-gain-summary.png",
+      "bytes": 92906,
+      "sha256": "f74e40802378be0f123b8bcc1dc950805587095db9665a78cb2d33015e705724",
+      "original_bytes": 92906,
+      "original_sha256": "f74e40802378be0f123b8bcc1dc950805587095db9665a78cb2d33015e705724",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-capital-worksheet.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-capital-worksheet.ax.txt",
+      "bytes": 5446,
+      "sha256": "1c38ea57c299737fba5c32c42d7097677eb09c8f102276407ac30f04515b1cce",
+      "original_bytes": 23990,
+      "original_sha256": "501b8fa47b349995c48a320731b01542d4b034ec69135108eb119e215abd70e8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-general-gain-input.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-general-gain-input.png",
+      "bytes": 157915,
+      "sha256": "0497e33c24a57b4e6eb24e0461d271f92da187c4fc9f2513188d88158fdec299",
+      "original_bytes": 157915,
+      "original_sha256": "0497e33c24a57b4e6eb24e0461d271f92da187c4fc9f2513188d88158fdec299",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-general-gain-worksheet.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-general-gain-worksheet.ax.txt",
+      "bytes": 5747,
+      "sha256": "8b1793764945966e86363be7eba1bcfc4e8f824bcd6bd6b39d7fb92fed2b59a7",
+      "original_bytes": 25665,
+      "original_sha256": "5a91df8bb23b050e5708de4a5c5284d82416b64c74ef6de0d82839a52f03ab8a",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-general-quota.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-general-quota.png",
+      "bytes": 135770,
+      "sha256": "4a508300dc29dee0e2337db757e64a9ae9ac97a9a456fe595f089f2d111282e9",
+      "original_bytes": 135770,
+      "original_sha256": "4a508300dc29dee0e2337db757e64a9ae9ac97a9a456fe595f089f2d111282e9",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-move-checkbox.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-move-checkbox.ax.txt",
+      "bytes": 6789,
+      "sha256": "03d39c19e26c58ce0b1da0b6317112452bbb09871bb195eda76d407ca34c6da9",
+      "original_bytes": 32249,
+      "original_sha256": "44161ad48b13c0f4b01a117f2bbd0727e76d75ba5124f0010dee5377217f3044",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-move-checkbox.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-move-checkbox.png",
+      "bytes": 94341,
+      "sha256": "388e7e4db542f0bd10a1965c847bcf0a897982ecb167fff3e732c243cd3cf17e",
+      "original_bytes": 94341,
+      "original_sha256": "388e7e4db542f0bd10a1965c847bcf0a897982ecb167fff3e732c243cd3cf17e",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-C-quota-components.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-quota-components.ax.txt",
+      "bytes": 8043,
+      "sha256": "a955ed0830aa393dcd5e7a2f437b2253b1558e6628a8bc6f8c14b15911c0caa9",
+      "original_bytes": 41118,
+      "original_sha256": "dd4ac78638f329615821f260c9c591e216fa596cd6d58d13dc229415415973a0",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-C-quota-components.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-C-quota-components.png",
+      "bytes": 125899,
+      "sha256": "ea7e99592cf447ad926fcf83146f40d955acc66a8fc0d6031cfbfd60308ed824",
+      "original_bytes": 125899,
+      "original_sha256": "ea7e99592cf447ad926fcf83146f40d955acc66a8fc0d6031cfbfd60308ed824",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-D-pension-input.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-input.ax.txt",
+      "bytes": 5062,
+      "sha256": "3f9454493fa874b7e9ffa24eb744808e56a09ba1716f192f32c3b4fc5be4a648",
+      "original_bytes": 23070,
+      "original_sha256": "5e3a04253e5241f84b661d95e598e014eda3a0d6c3ae0b606a2dfc64494f63e2",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-D-pension-input.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-input.png",
+      "bytes": 151690,
+      "sha256": "218eb2f8d88d5f1e24275fe6952e61a4baedd2534c2d7697c54be1d15ce8d61d",
+      "original_bytes": 151690,
+      "original_sha256": "218eb2f8d88d5f1e24275fe6952e61a4baedd2534c2d7697c54be1d15ce8d61d",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-D-pension-quota-components.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-quota-components.ax.txt",
+      "bytes": 8044,
+      "sha256": "8d2c4eec7bff04ef98d4de9b163db05c2a8265a63570008da31ca26a86b312fa",
+      "original_bytes": 41118,
+      "original_sha256": "2eedaca9e861f581bcd12d850e61366f902a8b34ee4ae47774d5d42d0ae3d2a3",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-D-pension-quota-components.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-quota-components.png",
+      "bytes": 125667,
+      "sha256": "dfd6d9cfc3702425120e844a4fdefe042cd3238715137a9507f9ec49f8a2afd1",
+      "original_bytes": 125667,
+      "original_sha256": "dfd6d9cfc3702425120e844a4fdefe042cd3238715137a9507f9ec49f8a2afd1",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-D-pension-summary.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-summary.ax.txt",
+      "bytes": 3960,
+      "sha256": "a7cc714a040bc8c1c9b45b26cef7acf418b49b76539fa4a154fae82274e2b98a",
+      "original_bytes": 15446,
+      "original_sha256": "eede6a91b8eaf159a099d2ab58a3a4a544168312f34bb89daeb72cff9368037c",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-D-pension-summary.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-summary.png",
+      "bytes": 93219,
+      "sha256": "65eaa18927eae07276467d25b409d8c94d011781b55160d6f51dfdb817d6d2b0",
+      "original_bytes": 93219,
+      "original_sha256": "65eaa18927eae07276467d25b409d8c94d011781b55160d6f51dfdb817d6d2b0",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-D-pension-worksheet.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-D-pension-worksheet.ax.txt",
+      "bytes": 4284,
+      "sha256": "af9a127b27466bde5d999958d0a494cdc063a29b3cb814ff4f5cb5e0b00b0573",
+      "original_bytes": 18046,
+      "original_sha256": "66f41a2db8e4d8c7cb48c4f7377f4f95bf193a702484fd9aecc3d49a96d6e87d",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-common-savings-dialog.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-common-savings-dialog.ax.txt",
+      "bytes": 5807,
+      "sha256": "2b00062f977e563e692b0cc73a10edade6aaca24508676c3cdf456803d2f814e",
+      "original_bytes": 25508,
+      "original_sha256": "11a87902e1d2f95652e5b3f92331d6c39038d17908ed788913346387d6dc9e3f",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-common-savings-dialog.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-common-savings-dialog.png",
+      "bytes": 83635,
+      "sha256": "78d1d03eb9f0e9d95521d9f1c2214b69f4cb1df4d374edf59d115f9c9f311392",
+      "original_bytes": 83635,
+      "original_sha256": "78d1d03eb9f0e9d95521d9f1c2214b69f4cb1df4d374edf59d115f9c9f311392",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-common-wage-dialog.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-common-wage-dialog.ax.txt",
+      "bytes": 7474,
+      "sha256": "11d4ebbc62812bda5025b94bad726b7b401fd55a121d0e13d4fefb4035cffd2c",
+      "original_bytes": 32221,
+      "original_sha256": "256a6203ac0ba339d47228fce42d106c5e2ba18250e7872ed522539b47ebe8de",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "CLM-common-wage-dialog.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-common-wage-dialog.png",
+      "bytes": 112546,
+      "sha256": "5f9ec9319c6feef53c087d38b45de506f9aeece8ed975ca68bcd89dfe986359d",
+      "original_bytes": 112546,
+      "original_sha256": "5f9ec9319c6feef53c087d38b45de506f9aeece8ed975ca68bcd89dfe986359d",
+      "compression": "none"
+    },
+    {
+      "path": "CLM-common-wage-worksheet.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/CLM-common-wage-worksheet.ax.txt",
+      "bytes": 5541,
+      "sha256": "8fd7f8f5cc3a97a9898e6da5ad13a2809db4e385f83768867c4e0c3848764f24",
+      "original_bytes": 22574,
+      "original_sha256": "3c89321eaa4170fa8b710bc2290c63b5b1cca645e04e7c13790d145f8d2b10ec",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "access-results.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/access-results.json",
+      "bytes": 831,
+      "sha256": "ae332c1af55b75786264be423ee1d72a3f9dfae676bfee477b7c7ed74b6207fc",
+      "original_bytes": 831,
+      "original_sha256": "ae332c1af55b75786264be423ee1d72a3f9dfae676bfee477b7c7ed74b6207fc",
+      "compression": "none"
+    },
+    {
+      "path": "application-recheck/README.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/application-recheck/README.diff",
+      "bytes": 1140,
+      "sha256": "ad65266887fc564b2b58510ad1b84f5027488ee597d646a4642c3025f2ed4973",
+      "original_bytes": 3097,
+      "original_sha256": "1351f95ba37953970a7befb3eded8f9f90eb43cc2496024af8773d6531cdb48e",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "application-recheck/manifest.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/application-recheck/manifest.json",
+      "bytes": 2736,
+      "sha256": "76b4884dd494dab5e7aad360109fdc6871995efdb16ca9e154e0111e829197a3",
+      "original_bytes": 2736,
+      "original_sha256": "76b4884dd494dab5e7aad360109fdc6871995efdb16ca9e154e0111e829197a3",
+      "compression": "none"
+    },
+    {
+      "path": "application-recheck/proposal-to-applied.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/application-recheck/proposal-to-applied.diff",
+      "bytes": 5190,
+      "sha256": "7eea2b1616ebe2be34aff8c5cc3e833c7a69902cfe21263fb9ffeffa4a371201",
+      "original_bytes": 20661,
+      "original_sha256": "ae23952bf7130184481e75d62e5f571f4103b9e8984a44012f80d1223071d04c",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "application-recheck/review.json.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/application-recheck/review.json",
+      "bytes": 264051,
+      "sha256": "8740ef509aec5bb4993c0eacf971b01d58846f923d48e93ff6ea246d81ee524d",
+      "original_bytes": 963590,
+      "original_sha256": "b68d68c75e74b5dcadade6e406cf47e1ea6f2a46076edd04bc5bc127f5ef13a2",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "browser-observations.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/browser-observations.json",
+      "bytes": 6205,
+      "sha256": "c4f1f31bb5a925ac67e1c2489c2200076cf3a404c1d6bd8292083f048601051f",
+      "original_bytes": 6205,
+      "original_sha256": "c4f1f31bb5a925ac67e1c2489c2200076cf3a404c1d6bd8292083f048601051f",
+      "compression": "none"
+    },
+    {
+      "path": "build-evidence.py",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/build-evidence.py",
+      "bytes": 23356,
+      "sha256": "2d591dbd2fbca02143ae7431e96a2bddf71e1bc8da7577b0be9186a46a36a355",
+      "original_bytes": 23356,
+      "original_sha256": "2d591dbd2fbca02143ae7431e96a2bddf71e1bc8da7577b0be9186a46a36a355",
+      "compression": "none"
+    },
+    {
+      "path": "controls.json.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/controls.json",
+      "bytes": 259582,
+      "sha256": "646b92cc830d2c6484b2d72a85301e3212990191d40cf1995cf47636666ffb73",
+      "original_bytes": 958153,
+      "original_sha256": "a4161d5356fbaaa042cd0d2a9071dfa5129880252a67d370bae43bb6f8b86415",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "draft-options.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/draft-options.md",
+      "bytes": 1085,
+      "sha256": "7d46b83ef88d21f5029dc7bc5d334ace9fbfb3b1c2fbdcffd5e3d570e9aaed1f",
+      "original_bytes": 1085,
+      "original_sha256": "7d46b83ef88d21f5029dc7bc5d334ace9fbfb3b1c2fbdcffd5e3d570e9aaed1f",
+      "compression": "none"
+    },
+    {
+      "path": "frozen-guides.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/frozen-guides.json",
+      "bytes": 391,
+      "sha256": "30b79c40a87e8a357616b15b3a7d35c5d1e512b222309d834da9c45715e88acf",
+      "original_bytes": 391,
+      "original_sha256": "30b79c40a87e8a357616b15b3a7d35c5d1e512b222309d834da9c45715e88acf",
+      "compression": "none"
+    },
+    {
+      "path": "manifest.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/manifest.json",
+      "bytes": 11603,
+      "sha256": "f19d30fdf421a465ed0bdd8d73ac1ba6100b4fe8773aa620059bc0c98437d883",
+      "original_bytes": 11603,
+      "original_sha256": "f19d30fdf421a465ed0bdd8d73ac1ba6100b4fe8773aa620059bc0c98437d883",
+      "compression": "none"
+    },
+    {
+      "path": "report.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/report.md",
+      "bytes": 6068,
+      "sha256": "ccbf1691dbe38001a1d87dbb5f2e2c3f08f57b4f4a66741af32b7e083446bb11",
+      "original_bytes": 6068,
+      "original_sha256": "ccbf1691dbe38001a1d87dbb5f2e2c3f08f57b4f4a66741af32b7e083446bb11",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/DOCM-Law1-2026.pdf.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/DOCM-Law1-2026.pdf",
+      "bytes": 300791,
+      "sha256": "1a0f952b09b850df1a988ecdeae20ad45eeaedab4421ef1377f28b9e9b4ec426",
+      "original_bytes": 454855,
+      "original_sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "root-independent/applied-freeze.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/applied-freeze.json",
+      "bytes": 619,
+      "sha256": "48b38d09c9232a84584135b40db0e5bb342320d575481df8e5af729193db24b2",
+      "original_bytes": 619,
+      "original_sha256": "48b38d09c9232a84584135b40db0e5bb342320d575481df8e5af729193db24b2",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-15.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-15.png",
+      "bytes": 457153,
+      "sha256": "e49b29d77b3640d6d069d584f814a9818bcbc7117fce4e0349a828c93fa182fa",
+      "original_bytes": 457153,
+      "original_sha256": "e49b29d77b3640d6d069d584f814a9818bcbc7117fce4e0349a828c93fa182fa",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-16.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-16.png",
+      "bytes": 553195,
+      "sha256": "8d339d7d1594b3fa9e82f26829039783951309809dd655a070b077e63743db10",
+      "original_bytes": 553195,
+      "original_sha256": "8d339d7d1594b3fa9e82f26829039783951309809dd655a070b077e63743db10",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-17.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-17.png",
+      "bytes": 571921,
+      "sha256": "7c46bf8598aeec14555bcf1373eb5ecbbdd212f5ab3e7a378fa4d03e31e776e6",
+      "original_bytes": 571921,
+      "original_sha256": "7c46bf8598aeec14555bcf1373eb5ecbbdd212f5ab3e7a378fa4d03e31e776e6",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-18.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-18.png",
+      "bytes": 591329,
+      "sha256": "acc6374fba213476652e079edf716f1acd3689e2814f5021b9612583aa224f2a",
+      "original_bytes": 591329,
+      "original_sha256": "acc6374fba213476652e079edf716f1acd3689e2814f5021b9612583aa224f2a",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-19.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-19.png",
+      "bytes": 489607,
+      "sha256": "14f4a544fbaddf91351ff83d12dc54f5cb4f95da6f445e66169c70e28437429c",
+      "original_bytes": 489607,
+      "original_sha256": "14f4a544fbaddf91351ff83d12dc54f5cb4f95da6f445e66169c70e28437429c",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/docm-24.png",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/docm-24.png",
+      "bytes": 111473,
+      "sha256": "fc635ad5672ded6365756db4bfcfa52f38f48ff1ae6d248837d96db2616855a6",
+      "original_bytes": 111473,
+      "original_sha256": "fc635ad5672ded6365756db4bfcfa52f38f48ff1ae6d248837d96db2616855a6",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/independent-controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/independent-controls.json",
+      "bytes": 711,
+      "sha256": "6c7f08f588971790ba55589d765dd960cc2fb4a2049be79df839d1de81ce3e10",
+      "original_bytes": 711,
+      "original_sha256": "6c7f08f588971790ba55589d765dd960cc2fb4a2049be79df839d1de81ce3e10",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/report.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/report.md",
+      "bytes": 2233,
+      "sha256": "beb1fe7abf19d6c3bed594b73284b30d108723c64689f9e5d0445a70e5198f10",
+      "original_bytes": 2233,
+      "original_sha256": "beb1fe7abf19d6c3bed594b73284b30d108723c64689f9e5d0445a70e5198f10",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/signed-PDF-locator.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/signed-PDF-locator.json",
+      "bytes": 10037,
+      "sha256": "b0fac2af06cab43021bcb4c1084cd422e9b908a7c82dc2f99ddc6dfb92a7f98e",
+      "original_bytes": 10037,
+      "original_sha256": "b0fac2af06cab43021bcb4c1084cd422e9b908a7c82dc2f99ddc6dfb92a7f98e",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/signed-PDF-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/signed-PDF-receipt.json",
+      "bytes": 362,
+      "sha256": "04c4f8888835dc26f622e409e773f51115cba09cedb9c346a774e3dac14c0626",
+      "original_bytes": 362,
+      "original_sha256": "04c4f8888835dc26f622e409e773f51115cba09cedb9c346a774e3dac14c0626",
+      "compression": "none"
+    },
+    {
+      "path": "root-independent/status-options.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/status-options.md",
+      "bytes": 905,
+      "sha256": "42654d96be4550737ed6e503fea652113424e16f0dcfcb7a39f6999b04baad5b",
+      "original_bytes": 905,
+      "original_sha256": "42654d96be4550737ed6e503fea652113424e16f0dcfcb7a39f6999b04baad5b",
+      "compression": "none"
+    },
+    {
+      "path": "source-read-receipts.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/source-read-receipts.json",
+      "bytes": 2606,
+      "sha256": "0d5836f7d64326f643431f8c6f77cf0390687572453b676409a2115a94c9c67c",
+      "original_bytes": 2606,
+      "original_sha256": "0d5836f7d64326f643431f8c6f77cf0390687572453b676409a2115a94c9c67c",
+      "compression": "none"
+    },
+    {
+      "path": "sources/aeat-clm2025.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/aeat-clm2025.html",
+      "bytes": 4137,
+      "sha256": "7fc0e4c06092afe60163faca93cc81c52afe3dac416c9a110f4afc385c1fd354",
+      "original_bytes": 12409,
+      "original_sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/aeat-clm2025.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/aeat-clm2025.txt",
+      "bytes": 1557,
+      "sha256": "04b5da0a3606c939e0e19f0359d1423450c08cab5b9f259b36dd72ac89c35874",
+      "original_bytes": 4053,
+      "original_sha256": "02296fd6d4d677791b4b6cfe708454d4e618dd2e386d5717225e94e596e92bb9",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-current-authority-index-links.json.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-current-authority-index-links.json",
+      "bytes": 290,
+      "sha256": "c3fe3cfbcad285fd971cd36b1aff039b9db41037ab3ddde3afabcaba9ec79196",
+      "original_bytes": 484,
+      "original_sha256": "ade5c26e51cdc3ee9e01ff52fdbb3ccae05faeddce51d5421f3ba77194a78e33",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-current-authority-index.ax.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-current-authority-index.ax.txt",
+      "bytes": 7509,
+      "sha256": "30e16d64125b9e631f358a5e2009431e839d4ef66f43977413d5b5bc851baa3a",
+      "original_bytes": 37576,
+      "original_sha256": "e807fd6ec968a1611defa4bfc1013bab0638a85ce998a3f08ca69f578f6698cb",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-current.html",
+      "bytes": 51216,
+      "sha256": "50f2f5b94f5ce30822f739466f54cd20b7c275d1ec3b995402e6273646c07d74",
+      "original_bytes": 379179,
+      "original_sha256": "47a4a4fd780c2ee26b6436c4a50aedad4307e86ac0e1c32d82bc1c9369410a01",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-current.txt",
+      "bytes": 38028,
+      "sha256": "1ceca0b42a18388846d0a8c24417e3d3416c1377ef9d4d3801568bc66dee1ba7",
+      "original_bytes": 173516,
+      "original_sha256": "e891fddde0fd38b54b43c467f33eea5aadec8da6f48e245c5b37b9c7ef7efb2c",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-law1-2026.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-law1-2026.html",
+      "bytes": 29206,
+      "sha256": "744cdaae5eaaa447254324289068945212a46d03efc1a0ad3d978f4193b7f1a5",
+      "original_bytes": 130927,
+      "original_sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-law1-2026.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-law1-2026.txt",
+      "bytes": 27649,
+      "sha256": "8ec9aa170adb4daac09e6bbcefde3c944a2fc80027a21e065186da69524c3337",
+      "original_bytes": 108385,
+      "original_sha256": "74d49fbd3f4d37a4dade41fd59295613ee0a4585c9412066abab0a6f7fd9dd25",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-original-law2-2021.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-original-law2-2021.html",
+      "bytes": 64814,
+      "sha256": "43711b9a7b94ce5aa8090cc29dd58ff42799a2a51d96e4aaec06015e15e0e58d",
+      "original_bytes": 338404,
+      "original_sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/clm-original-law2-2021.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/clm-original-law2-2021.txt",
+      "bytes": 56269,
+      "sha256": "76685c023b02ebff8e0051eda05699415a72419469b8ebcfcb7f549ce502d061",
+      "original_bytes": 218448,
+      "original_sha256": "39f8d88ce41554b67deb7285aa68413cc0e5b49ab35e04eb42ba519dd89ad636",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-19.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-19.txt",
+      "bytes": 1081,
+      "sha256": "48e03ce05523f225706a6f69e484064b6eaf0126f456026a14af6045877a7e7a",
+      "original_bytes": 2307,
+      "original_sha256": "930af1ca9eed3509562e314e40279bad5df28f99bf0f8084a73de337edbee2f6",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-20.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-20.txt",
+      "bytes": 979,
+      "sha256": "bd33b699504163bb400e2686f73cbc8e7cde18f194f9c929144c6b1a5b771946",
+      "original_bytes": 2966,
+      "original_sha256": "66e74eefb6b698bb15624825fb0fbe719fefaf6f7c765c801f0ec2bec3795fb3",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-26.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-26.txt",
+      "bytes": 1111,
+      "sha256": "d4536d247a4d2fc55d6798cbf15786c1e518e238f7bc5249696e92acb19e6e2d",
+      "original_bytes": 2326,
+      "original_sha256": "97d64a91975d30a9702cb8eb4f82e170c9063bca2926e473ffebcddf6803e4c5",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-48.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-48.txt",
+      "bytes": 800,
+      "sha256": "3ed07983f4a6dc510c8112babd5c120836f42eecee548337d3f775e029e9600d",
+      "original_bytes": 1816,
+      "original_sha256": "b4a905705138cb7d2afebec84bd750373b49640b0fab50c87d19976ebdcb779b",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-51.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-51.txt",
+      "bytes": 3623,
+      "sha256": "22700d1863a3276289a2e33bda55276afb7ca09a55135773634d4ca728b4fce8",
+      "original_bytes": 12728,
+      "original_sha256": "c8d14ade933488f640da39fbc42f6a81ac6d8b285586fe1487e240b5bd0e6e7d",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-52.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-52.txt",
+      "bytes": 1789,
+      "sha256": "3d0e0ef6810b5fcddc4d7847eff80094ce3d1fdce8c2aa58ea82e60d4f4f3006",
+      "original_bytes": 5115,
+      "original_sha256": "79f549659ff4d9bc98be1a4d3f7205d64a1accc050d0b3cb65487fcf107f54d2",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-56.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-56.txt",
+      "bytes": 772,
+      "sha256": "412e70c0752f94759c6de20391d4609d4d6d90b308db3f1cdbe1080b5834ea6b",
+      "original_bytes": 1748,
+      "original_sha256": "5ef2fd27defe388c4413232a2c6748908af7436cdfa0f10a6f04e47a245fa61a",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-74.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-74.txt",
+      "bytes": 951,
+      "sha256": "b5b7645663e648a8b580d4c5bfbb57b74300f34d6b469ff2d958003a07d5c6e6",
+      "original_bytes": 2556,
+      "original_sha256": "a483fe4c171a7683d3194818402528cc0c3007a02a696d41be93f6b6ea76507e",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-76.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-76.txt",
+      "bytes": 1001,
+      "sha256": "15da828735b857cca2f0c8b118762dd74b74b196118ff28bbe530475f26b3527",
+      "original_bytes": 2765,
+      "original_sha256": "ed5044202ee881fc44b1458415728b07ffc4aeb5946ecbd44709f2086be0bb72",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current-77.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current-77.txt",
+      "bytes": 794,
+      "sha256": "7db838094fc2e7b690351193faf83390169cb8d0be810c22fc89ecc532410597",
+      "original_bytes": 1821,
+      "original_sha256": "5fa2d2158abf34e90e8ffbc3abe27676b4627c68b0d6de208575a11afeeee1bf",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current.html",
+      "bytes": 249841,
+      "sha256": "acd4e1d8fdb1a7e0b91c6bc635a8f797da839c83f72a7a5c9e9e65b521cb7e88",
+      "original_bytes": 2028806,
+      "original_sha256": "e4bef365a0df16c0f30cd858c31dbdccefb2fe0a59113924d03b967e60857fa4",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "sources/lirpf-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/sources/lirpf-current.txt",
+      "bytes": 188502,
+      "sha256": "0004e0bdbf341c2989386f1291d9b72e78f36d747356b25643c737f0e572fcdf",
+      "original_bytes": 901350,
+      "original_sha256": "218a0b609ae6b3d568f893a54eabe34bcfa8289a9c17c7305e2a90b730455cea",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "surgical-proposal.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/surgical-proposal.diff",
+      "bytes": 2405,
+      "sha256": "ddd6da2aab59c24fe7c76f5d75032209c2c5bf2a1f16f925b74f46c92b21338e",
+      "original_bytes": 7074,
+      "original_sha256": "bce8f7ea48a0442c6f86a987619ea279077451e6b7932dc0e29242e25a8cc7e8",
+      "compression": "lossless gzip"
+    }
+  ],
+  "packaging_correction": "Full-added-file whitespace audit found raw evidence formatting/binary-PDF flags that tracked-Guide-only pre-stage diff did not inspect. Original bytes preserved exactly by lossless gzip; prior immutable author/reviewer manifests keep original names and are resolved through this selected-evidence map. No Guide bytes, legal methods or review scope changed."
+}

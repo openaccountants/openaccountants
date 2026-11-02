@@ -1,0 +1,85 @@
+{
+  "scope": "Actual root J2/J3 refute direct aggregate final-cent rounding. Per-member-rounded numerical coincidence is not certified as statutory/administrative method. LIRPF74(2)display precision alone does not establish this allocation.",
+  "comparisons": [
+    {
+      "case": "J2",
+      "hypothesis": "aggregate_final_cent",
+      "calculated": "265.60",
+      "actual_saved_root_UI": "265.61",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J2",
+      "hypothesis": "aggregate_percentage_2dp",
+      "calculated": "265.61",
+      "actual_saved_root_UI": "265.61",
+      "matches": true,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J2",
+      "hypothesis": "each_member_quota_cent_then_sum",
+      "calculated": "265.61",
+      "actual_saved_root_UI": "265.61",
+      "matches": true,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J2",
+      "hypothesis": "general_average_percentage_4dp_then_allocation",
+      "calculated": "265.61",
+      "actual_saved_root_UI": "265.61",
+      "matches": true,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J2",
+      "hypothesis": "statutory_display_average_percentage_2dp_then_allocation",
+      "calculated": "265.67",
+      "actual_saved_root_UI": "265.61",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J3",
+      "hypothesis": "aggregate_final_cent",
+      "calculated": "325.56",
+      "actual_saved_root_UI": "325.55",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J3",
+      "hypothesis": "aggregate_percentage_2dp",
+      "calculated": "325.58",
+      "actual_saved_root_UI": "325.55",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J3",
+      "hypothesis": "each_member_quota_cent_then_sum",
+      "calculated": "325.55",
+      "actual_saved_root_UI": "325.55",
+      "matches": true,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J3",
+      "hypothesis": "general_average_percentage_4dp_then_allocation",
+      "calculated": "325.56",
+      "actual_saved_root_UI": "325.55",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    },
+    {
+      "case": "J3",
+      "hypothesis": "statutory_display_average_percentage_2dp_then_allocation",
+      "calculated": "325.74",
+      "actual_saved_root_UI": "325.55",
+      "matches": false,
+      "authority_status": "NOT ESTABLISHED; matching two finite outputs does not identify an authoritative algorithm."
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "key": "S132",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "raw": "sources/S132.body",
+    "raw_sha256": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+    "reader": "sources/S132.reader.txt",
+    "reader_sha256": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S133",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "raw": "sources/S133.body",
+    "raw_sha256": "8ae0e2ecc10282b1aa8d86e8c2c66274ce2433825474d862c66151b999e633f8",
+    "reader": "sources/S133.reader.txt",
+    "reader_sha256": "da733d0c15b1c7cfecf5eec9ebaa7ff9f5403980244b6e4572defd62ecabb95b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S134",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "raw": "sources/S134.body",
+    "raw_sha256": "6bd2807ac81595ec1bfb6dfb61e196fedfdd1e8e9541d794ca397758cc41bdfc",
+    "reader": "sources/S134.reader.txt",
+    "reader_sha256": "02fbc916301c1507bf18811c4d9be694c13b54d36e05c0ca818d3f4680f56322",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S135",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90037",
+    "raw": "sources/S135.body",
+    "raw_sha256": "acd7a45322445b30f4c571c4f3b4dcf4b55de3fc4508cd9fb451cf0bd2483903",
+    "reader": "sources/S135.reader.txt",
+    "reader_sha256": "949fbeb19e3be0ea8dc00c34d618e72704a9f49b2fcbbb4674b4492e79c22c84",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S136",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90079",
+    "raw": "sources/S136.body",
+    "raw_sha256": "b6b99f0a8fcefe77f627451ae0fa0f7a7680c0835066d8444c5bf8f9327a162a",
+    "reader": "sources/S136.reader.txt",
+    "reader_sha256": "0e5547d1e0b58c3bbaf2ed15cef0a6aaa777638dda400e0c8c2357726c47979d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S137",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90041",
+    "raw": "sources/S137.body",
+    "raw_sha256": "315371d88f67bcbfc1dc854a5052fa40ab24919b4dc045de2948c566813a4dda",
+    "reader": "sources/S137.reader.txt",
+    "reader_sha256": "c1a417442a5c8b78521f1c41b11847a6fdfea499faf1f9e936ea6533740158e1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S138",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90069",
+    "raw": "sources/S138.body",
+    "raw_sha256": "b772f1cedc45fa1dc09c47bc544d1ca6ca7e420f4bac91f4d5b456939fd04c18",
+    "reader": "sources/S138.reader.txt",
+    "reader_sha256": "4c604875f950e24e3a676f680806335a9343a88c4cd6535ebd13bcee923539ea",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S139",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_6-conciliacion-trabajo-vida-familiar.html",
+    "raw": "sources/S139.body",
+    "raw_sha256": "aaa411134dac20102c352e7cc30d4cf93a1fc7ff8329e6afaf299ace88334d6e",
+    "reader": "sources/S139.reader.txt",
+    "reader_sha256": "8de059339335c93c1eac691bb866689f96eac033ee7eaec6bb082c9ce8771f1c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S140",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/conciliacion-trabajo-vida-familiar.html",
+    "raw": "sources/S140.body",
+    "raw_sha256": "9af5c89cc424c88ab85d0db390a8ffd986bd04d93ee69dd23509293598bd55a0",
+    "reader": "sources/S140.reader.txt",
+    "reader_sha256": "e37cf4f66c0e8aeb674174af1871c6f040bd91e61a097234e6858ed1deba3d53",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S141",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/contratar-manera-indefinida-personas-afiliadas.html",
+    "raw": "sources/S141.body",
+    "raw_sha256": "f1d38bd08b0d4501c873f771c802913d637b52e2d269517cc50ed165d6bfa92a",
+    "reader": "sources/S141.reader.txt",
+    "reader_sha256": "38c86deab28b47bd97c054e93759c06dab2e8c6a23e7b156e24c1fc1eb341b0c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S142",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/adquisicion-vehiculos-nuevos-pertenecientes-categorias-2020.html",
+    "raw": "sources/S142.body",
+    "raw_sha256": "9727f0de01913bddc038802ee839c24b1c4bf19d757c9c984aa8a07c76fc8628",
+    "reader": "sources/S142.reader.txt",
+    "reader_sha256": "000f8c3bd2817c9ee796002b0c000a1a19475fd9175214e8ab76d8b991692b4a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S143",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&b=10&tn=1&p=20021231",
+    "raw": "sources/S143.body",
+    "raw_sha256": "7a643f76550e5bae405ab7d814007074174fc60654a36b6555e7bcf086e17044",
+    "reader": "sources/S143.reader.txt",
+    "reader_sha256": "d40d1291eafd9141f8cec8a2da337d3108d548d21f05cc0a9710e172c318373f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S144",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/obras-conservacion-mejora-calidad-2014-2015.html",
+    "raw": "sources/S144.body",
+    "raw_sha256": "c5c40e1172758b5ddb4ee3482612198d8a9c06ce0e184be82b4c8b0a6309241a",
+    "reader": "sources/S144.reader.txt",
+    "reader_sha256": "6886f98acc6065bb10ab9ad08b620d9d7f967519d2affc2840fce348f4b39ad5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S145",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/requisito-conjunto-determinadas-deducciones-autonomicas-donativos.html",
+    "raw": "sources/S145.body",
+    "raw_sha256": "7040d981dec7a436fde29ee552a557fa3ea5480712bb035b0761481097842de4",
+    "reader": "sources/S145.reader.txt",
+    "reader_sha256": "9b24d1981ca964a0797155dc6eae72e3cbdc5907a48f1a0123269febf92df204",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S146",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2024-90200",
+    "raw": "sources/S146.body",
+    "raw_sha256": "06d852876b9224783e71c2b05de9dd4dec7ba5953c43bcb3e3dbaa2683e45f8a",
+    "reader": "sources/S146.reader.txt",
+    "reader_sha256": "ffbd8a4ab486c522818c7da3bf266ce7e0086f2e877abd4f74309e037e09ad0a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S147",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/dirigidas-personas-afectadas-dana/destinar-cantidades-paliar-danos-materiales-habitual.html",
+    "raw": "sources/S147.body",
+    "raw_sha256": "e8e4273c72965e335ec3ebb2e74563ce24109e79934baa2d87c1a3e8ed10acc6",
+    "reader": "sources/S147.reader.txt",
+    "reader_sha256": "2d9e8e023494710dadce95f18a83a89b25c16fbedd8dc966867b21980bfd386e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S148",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/dirigidas-personas-afectadas-dana/aportaciones-fondos-propios-entidades-que-economicas.html",
+    "raw": "sources/S148.body",
+    "raw_sha256": "bad89aa49c6f2f6596ef8653df2798389cca4e3bc11be42a51122a209a25ff5d",
+    "reader": "sources/S148.reader.txt",
+    "reader_sha256": "2aca803c98077e89ed1efa8906b1c748002ee3f32db010eba87dd733988f9f6b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

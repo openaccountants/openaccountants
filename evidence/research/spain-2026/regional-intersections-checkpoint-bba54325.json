@@ -1,0 +1,18 @@
+{
+  "source_checkpoint": "bba54325f2f975ced58da68251ca202377677d7f",
+  "scope": "BoundedCyL/Andalucia/Murciaordinaryintersectiondelta;notwholecountryorlicensedattestation",
+  "reviewed_guide_sha256": "b6a9a23397e53a5e242912c95de4d873f9c15b88ed3b37f6f5737a6fc77d533d",
+  "report": "regional-intersections-independent-review.md",
+  "original_report_sha256": "83a0bdf2c06b714baf28346e98cbe5a233b5f69fe45c6aa1f3376c585345505d",
+  "public_report_sha256": "83a0bdf2c06b714baf28346e98cbe5a233b5f69fe45c6aa1f3376c585345505d",
+  "transformation": "absolute local path redaction only",
+  "independent_controls": 72,
+  "existing_examples": 2,
+  "preservation_checks": 8,
+  "new_source_url_checks": 8,
+  "corrective_findings": 0,
+  "reserved_interpretation_branches": 4,
+  "fresh_successful_body_identities": 7,
+  "receipt_file": "regional-intersections-source-receipts.json",
+  "receipt_sha256": "1844238099da7fd1a27465bcf41e250a5a0b6fb4103b10a9fb64c2fbd69a9ff8"
+}

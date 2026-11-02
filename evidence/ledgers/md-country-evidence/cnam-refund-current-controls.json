@@ -1,0 +1,118 @@
+{
+  "status": "PASS writer numeric/source identity only; currentlawreview, portal and case-specificarrears/setoffremainopen",
+  "cases": [
+    {
+      "name": "Strict paid-premium comparison does not enlarge the actual fixed payment",
+      "inputs": {
+        "annual_full_benchmark": "12636",
+        "percentage_paid_comparison_values": [
+          "12636",
+          "12636.01"
+        ],
+        "timely_fixed_payment": "2527"
+      },
+      "actual": {
+        "equal_benchmark_passes": false,
+        "above_benchmark_passes": true,
+        "assumed_qualifying_actual_fixed_payment": "2527",
+        "incorrect_full_benchmark_uplift": "10109"
+      },
+      "expected": {
+        "equal_benchmark_passes": false,
+        "above_benchmark_passes": true,
+        "assumed_qualifying_actual_fixed_payment": "2527",
+        "incorrect_full_benchmark_uplift": "10109"
+      },
+      "status": "PASS writer numeric comparison only",
+      "scope": "2026amounts and established qualifying category/status/timing assumed; comparison alone is not full eligibility.2527is the hypothesised fixed payment requested before any account decision, not an approved cash refund."
+    }
+  ],
+  "source_lookups": [
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point3",
+      "checked_exact_text": "ce depășește valoarea",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point3",
+      "checked_exact_text": "pentru anii anteriori",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point8",
+      "checked_exact_text": "document electronic",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point10",
+      "checked_exact_text": "3 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point11",
+      "checked_exact_text": "5 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point12",
+      "checked_exact_text": "se trece în contul achitării",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point13",
+      "checked_exact_text": "7 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point14",
+      "checked_exact_text": "2 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point15",
+      "checked_exact_text": "15 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point16",
+      "checked_exact_text": "10 zile lucrătoare",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-CURRENT-20261031",
+      "point": "point18",
+      "checked_exact_text": "achitate în sumă fixă pвnă la 31 martie",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-ORDER300-20261031",
+      "point": "point1s3s1",
+      "checked_exact_text": "alineatul unu se abrogă",
+      "status": "PASS source identity only"
+    },
+    {
+      "source": "CNAM-REFUND-ACTUAL-FORM-20261031",
+      "point": "fullform",
+      "checked_exact_text": "Datele bancare (IBAN)",
+      "status": "PASS source identity only"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-CURRENT-20261031.json": "441a80910b1b368c53a1ab9b7fb6be4d2ef2046d3cd45e0a2519f08de952ca5c",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-ORDER300-20261031.json": "6148fe57802933b3cea0201e9293ee05c7b358899f40ff75fa3a0e3f847d441c",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-ACTUAL-FORM-20261031.json": "e4c79c32be148501308b9a3bf99cf534ccbe64b66df3ccbc92b3261740e8982d"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68"
+  }
+}

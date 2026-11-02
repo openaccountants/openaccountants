@@ -1,0 +1,110 @@
+{
+  "prior_head": "ee69982119be3271ba7c8ccad2932b96c3cefcb3",
+  "guides": {
+    "skills/malawi/mw-company-formation.md": {
+      "sha256": "8139a77cb6ddb5c41ee7b5dbdb56c8bccd0d080d21bd93592b4a8d27ba9a2d93",
+      "description_words": 106,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-corporate-income-tax.md": {
+      "sha256": "c73ab087fbff18ac61b74a52b8384355a9468ba4b5cbd251903e898bb6b4e65c",
+      "description_words": 103,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-income-tax.md": {
+      "sha256": "823642fa45d1ae21840d4b4ec535cac23f17c24dd79657eb22e572e5c957cad5",
+      "description_words": 100,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-payroll-social.md": {
+      "sha256": "f13ecf4447c34717c13f6283e9e9606d9ba20e75948ad47467fd6150cbd2dadb",
+      "description_words": 104,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-tax-overview.md": {
+      "sha256": "141dfb15998debd2892762d9920b39900177b79e702ce5faa1448e289684e2f5",
+      "description_words": 104,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-transfer-pricing.md": {
+      "sha256": "1fa37a74dd2c6cf86ca0c20b1b8b303123d33b7fb41d79f49cf1622fc4fb21ba",
+      "description_words": 101,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": false,
+      "version": "1.3"
+    },
+    "skills/malawi/mw-vat-gst.md": {
+      "sha256": "418b4680e834fc48eee5f3c5490672f74e91076179f6df95a64756e73f146e97",
+      "description_words": 103,
+      "examples_unchanged": true,
+      "platform_exact": true,
+      "cta_exact": true,
+      "version": "1.3"
+    }
+  },
+  "historical_evidence": {
+    "evidence/ledgers/malawi-repair-1/additional-source-record.json": "0c7e8b2b9edc285e640e3d0ca0aeab4d9ec008e586b378446be038b6d72382ba",
+    "evidence/ledgers/malawi-repair-1/currentness-hold.json": "d81ed33bc75ec43f092e6164e30a91a38174acf71d15d09040ac0acada941f71",
+    "evidence/ledgers/malawi-repair-1/writer-repair-partial.json": "990abc7b0189552f506e151a2c27e99b9e730525c8c126aace706e1ddf11dfd5",
+    "evidence/ledgers/malawi-review-20261101/candidate-hashes.json": "cd6b2ea967d393db642adc48fa55eb9992345f35047a1ebc056453bc9aae0e4a",
+    "evidence/ledgers/malawi-review-20261101/checks.json": "4ab6f4fc07e2ccc362fe08684a674606261a4bd9167731fb44fee1f993093a21",
+    "evidence/ledgers/malawi-review-20261101/ledger-checks.md": "eda7652580c322aa9db1dc8cebf020ad2e7b0ee2b433747d1f52395c60bf7dea",
+    "evidence/ledgers/malawi-review-20261101/preservation.json": "53d5209a305a6aa50b07b187c36986696060262252e02c6b9f09b8189d3f9771",
+    "evidence/ledgers/malawi-review-20261101/review.md": "b671a554d9596f4af822d8007e5c516a8951bd15608052914e5fc490243998d6",
+    "evidence/ledgers/malawi-review-20261101/source-downloads.json": "046a73c79f62cbbbe46300baa1d906223bc7e6672da11c3428983883f39583f7",
+    "evidence/ledgers/malawi-review-closure-20261101/checks.json": "5f3be236282e576729e4f98c973254c83f679c54119438c092abd6bf9155e3db",
+    "evidence/ledgers/malawi-review-closure-20261101/closure.md": "aeae231a014ba307cb2907a7419c2f16d55c4aed93ef7bd087e2e3659a2c9408",
+    "evidence/ledgers/malawi-review-closure-20261101/preservation-and-scope.json": "fcc7cfbb81c770731e7882b0daef5968bf5b647fe8261a4d070e66ce9a6b794f"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "evidence/ledgers/malawi-act3-repair-20261101/pinned-validation.py"
+      ],
+      "exit": 0,
+      "stdout": "Pinned base: db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6; comparison includes candidate working tree\nchanged-only mode: validating 8 changed guide file(s)\nchecked 7 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 7 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

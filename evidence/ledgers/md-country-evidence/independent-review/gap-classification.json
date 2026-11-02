@@ -1,0 +1,153 @@
+{
+  "scope": "Provisional gap classification from all ten immutable Guides gap lines and README. Full-body/source substantive review is complete only for VAT, overview and formation at the specified source scope. This file is not approval of the other seven Guides.",
+  "publication_gate": {
+    "must_fix_before_this_rewrite_can_be_approved": [
+      "Source contradiction such as invented BE-1 subtitle mismatch",
+      "Predecessor rule/topic lost behind a generic destination, even if raw archive/source is retained",
+      "Missing exact act/article hierarchy",
+      "Any ordinary rule asserted as operative whose source, temporal scope or computation remains unconfirmed",
+      "The unfinished row-level independent review itself"
+    ],
+    "can_remain_in_a_clearly_bounded_source_cited_draft": [
+      "An expressly excluded specialist procedure or treaty table, without an unsupported conclusion in the body",
+      "Authenticated portal acceptance, receipts and client-specific submitted forms: publication of researched reference text does not itself require a live client submission",
+      "A named implementation question where the body gives only verified statutory scope, identifies the missing operational step and avoids computing an unsupported answer",
+      "Uncertified historic periods when the text explicitly confines the supplied treatment to its verified operative date and preserves the historical topic as unresolved"
+    ],
+    "must_not_be_claimed": [
+      "Comprehensive country coverage",
+      "Complete ordinary-domain coverage while ordinary base/form/deadline gaps remain",
+      "Accountant attestation from AI review",
+      "Every ledger row substantively checked merely because all quotes/hashes match"
+    ]
+  },
+  "domains": [
+    {
+      "Guide": "md-corporate-income-tax",
+      "ordinary_completion_blockers": [
+        "Foreign-credit zero/loss and overlap allocation where needed for ordinary computation",
+        "Ordinary asset/capped-car and noncash donation reconciliation left incomplete",
+        "Deferral-election/prorata implementation and statutory sum-difference routing"
+      ],
+      "bounded_draft_limits": [
+        "Specialist free-zone, financial, reorganisation and treaty schedules",
+        "Portal naming and obsolete printed classifier discrepancies if current statute controls and ambiguity is explicit"
+      ],
+      "review_status": "555rows unread"
+    },
+    {
+      "Guide": "moldova-income-tax",
+      "ordinary_completion_blockers": [
+        "Named home-office/mixed-use/car/bad-debt/charity implementation gaps for individual business",
+        "Core return evidence/field ambiguity where it affects an actual liability",
+        "Actual assessment-limitation topic must be restored or precisely marked unconfirmed"
+      ],
+      "bounded_draft_limits": [
+        "Special lottery/online routes and voluntary-pension special deductions",
+        "Portal-only validation and unavailable historical year figures when not reused as current law"
+      ],
+      "review_status": "636rows unread"
+    },
+    {
+      "Guide": "moldova-vat",
+      "ordinary_completion_blockers": [
+        "Confirmed lost deregistration, excess-refund interest and exemption topics",
+        "Nonexact mixed-input prorata execution remains incomplete",
+        "Foreign-currency conversion and ordinary refund application/proof remain incomplete"
+      ],
+      "bounded_draft_limits": [
+        "Special capital-contribution, assistance-project, customs/DCFTA and energy-trader procedures if explicitly excluded",
+        "Unretrieved VAT12 physical layout and authenticated portal acceptance do not invalidate an accurate published instruction map"
+      ],
+      "review_status": "354rows source-scope read;4citation failures;preservation blockers"
+    },
+    {
+      "Guide": "moldova-social-contributions",
+      "ordinary_completion_blockers": [
+        "Full CNAM corporate/inter-account correction entitlement/deadlines",
+        "Farm-specific CAS18-AN category mapping",
+        "Service-entrepreneur cumulative-band/partial-year/status-overlap corrections for affected ordinary users"
+      ],
+      "bounded_draft_limits": [
+        "Client-specific old arrears and pre2026 penalty transitions",
+        "Bilateral posting/benefit-entitlement variants when expressly outside supplied calculation",
+        "New CNAS192-A method must stay dated; lack of earlier2026 commencement evidence does not establish earlier applicability"
+      ],
+      "review_status": "497rows unread"
+    },
+    {
+      "Guide": "moldova-payroll",
+      "ordinary_completion_blockers": [
+        "Actual current return exceptions/field conflicts that change mandatory amounts or reporting",
+        "Statutory leave/sickness/severance and execution-deduction computation absent for a comprehensive payroll claim",
+        "Remaining ordinary employee-benefit implementation"
+      ],
+      "bounded_draft_limits": [
+        "FX-linked loan variants, exceptional occupational lists and treaty/posting populations if expressly outside supplied ordinary method",
+        "Live portal validation and client-specific correction receipt"
+      ],
+      "review_status": "615rows unread"
+    },
+    {
+      "Guide": "md-transfer-pricing",
+      "ordinary_completion_blockers": [
+        "Current record-retention trigger",
+        "Larger-sample quartile interpolation when computing the advertised range",
+        "IUPT partial-year/minimum/equality/refund-floor ambiguities for affected taxpayers"
+      ],
+      "bounded_draft_limits": [
+        "Legacy technical country mapping, authenticated receipts and APA payment mechanics when clearly not represented as completed",
+        "Specialist treaty/OECD dispute and actual comparables require separate facts and sources"
+      ],
+      "review_status": "487rows unread"
+    },
+    {
+      "Guide": "md-cross-border",
+      "ordinary_completion_blockers": [
+        "PE/company cessation/current-return field method",
+        "Residence/tax-paid/refund implementing evidence and limitation computation",
+        "Ordinary foreign-credit currency/allocation/timing method"
+      ],
+      "bounded_draft_limits": [
+        "Treaty-by-treaty rates, MLI/beneficial ownership and specialised migration/CFC routes explicitly outside scope",
+        "INR14 portal/year-prefix and obsolete-code uncertainty if no invented accepted value is provided"
+      ],
+      "review_status": "337rows unread"
+    },
+    {
+      "Guide": "md-company-formation",
+      "ordinary_completion_blockers": [
+        "Invented BE-1 p.j. subtitle inconsistency must be removed",
+        "Discrepancy-clearance operational procedure and complete ordinary constitution remain gaps to full formation coverage"
+      ],
+      "bounded_draft_limits": [
+        "Bank-specific onboarding, national PEP annex and foreign-conviction expiry are explicitly excluded",
+        "Full SA securities/sector licensing and first-year support-programme evidence are outside supplied ordinary SRL method"
+      ],
+      "review_status": "209rows source-scope read;1source-interpretation failure"
+    },
+    {
+      "Guide": "md-tax-overview",
+      "ordinary_completion_blockers": [
+        "Cannot complete or cure a connected partial domain by linking to it"
+      ],
+      "bounded_draft_limits": [
+        "A routing overview can remain bounded to verified headlines, population and reporting interfaces; no comprehensive computation claim"
+      ],
+      "review_status": "55rows source-scope read"
+    },
+    {
+      "Guide": "moldova-tax-optimization",
+      "ordinary_completion_blockers": [
+        "Remaining park entry/verification, membership-fee and historical transition methods",
+        "Taxpayer-specific withdrawal/re-entry/correction and corporate deferral comparison implementation"
+      ],
+      "bounded_draft_limits": [
+        "No need for an authenticated real taxpayer submission to publish correctly sourced conditional comparisons",
+        "Other incentive schemes and treaty consequences can remain named out of scope"
+      ],
+      "review_status": "137rows unread"
+    }
+  ],
+  "temporal_rule": "The broad full2026 commencement gap is a blocker to an unqualified assertion of whole-year completeness. It is not, by itself, proof that a particular current-source rule is wrong. Verify the effective date for each asserted period, or confine the treatment explicitly to the verified operative date; do not extrapolate to earlier periods."
+}

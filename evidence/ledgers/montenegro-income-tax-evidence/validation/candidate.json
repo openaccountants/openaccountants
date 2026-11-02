@@ -1,0 +1,14 @@
+{
+  "guide_files_validated": 10,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "unaffected_guides_byte_identical": 9,
+  "predecessor_blocks_exact": 11,
+  "guide_blocks": 2,
+  "retained_blocks": 9,
+  "cta": "exact",
+  "protected_metadata": "exact",
+  "figure_rule_groups": 168,
+  "quote_substring_checks": "PASS",
+  "predecessor_topic_lines": 415
+}

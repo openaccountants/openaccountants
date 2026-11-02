@@ -1,0 +1,26 @@
+{
+  "candidate": "6a76c6dd877fc734f069bf7c145c8381abcc7df1",
+  "verdict": "bounded repair closure accepted",
+  "files": [
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/examples.txt",
+      "sha256": "16c68071ea31a21243ac74c49c43fb3ec58981c827d3153ee662c326c2173377"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/final-report.md",
+      "sha256": "b0c95e9f2f10190a4fbed8b3fccf86a854da599f40444a85e2106f5cabc58a2e"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/shape.txt",
+      "sha256": "ef7c2a243885d890651730f948b4df416ff45b7ff5a8a5c203ea73bc4eacd4d4"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/verification.json",
+      "sha256": "b42155f10892c0c2ab52ce491a7ee7b9a3e37d87b5a7da1d291ffd73ca9d054f"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/verify.py",
+      "sha256": "c4a6bff41699de7c1a08b4fe4c839b6e99a8a5c76635009f066a17f015337575"
+    }
+  ]
+}

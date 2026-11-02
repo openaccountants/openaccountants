@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por gastos derivados de la adecuación de un inmueble vacío con destino al arrendamiento como vivi...</title><meta name="ObjectId" content="cd3182c148d49910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='153ce6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunidad Autónoma de Galicia</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por gastos derivados de la adecuación de un inmueble vacío con destino al arrendamiento como vivienda</h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 5.Veintid&oacute;s <strong>Texto </strong> Refundido de las disposiciones legales de la Comunidad Aut&oacute;noma de Galicia en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2011, de 28 de julio</strong></p>
+<h2>Cuant&iacute;a y base m&aacute;xima de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>El 1<strong>5 por 100 de las cantidades satisfechas</strong> <strong>por las obras de reparaci&oacute;n y conservaci&oacute;n</strong>, as&iacute; como <strong>cualquier otro gasto necesario para que el inmueble se encuentre en condiciones de ser arrendado como vivienda</strong>, incluida la obtenci&oacute;n del certificado de eficiencia energ&eacute;tica y la formalizaci&oacute;n del contrato de arrendamiento, <strong>en el periodo impositivo en que se constituya el arrendamiento</strong>.</p>
+<p class="letrita sangrado-izq"><span class="verde"><strong>Precisiones</strong></span>:</p>
+<p class="letrita sangrado-izq">1. Se entienden como <strong>gastos de reparaci&oacute;n y conservaci&oacute;n</strong> los definidos en el art&iacute;culo 13 del Reglamento del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+<p class="letrita sangrado-izq">2. Se entienden incluidos en el concepto <strong>cualquier otro gasto necesario para que un inmueble se encuentre en condiciones de ser arrendado como vivienda</strong>, junto a los de obtenci&oacute;n del certificado de eficiencia energ&eacute;tica y de formalizaci&oacute;n del contrato de arrendamiento, los gastos de gestor&iacute;a, impuestos por obras, alta de suministros y publicidad del alquiler.</p>
+<p class="letrita sangrado-izq">3. Ser&aacute;n asimismo deducibles los <strong>gastos devengados en el plazo con que cuenta el contribuyente para arrendar el inmueble</strong> a partir de la finalizaci&oacute;n de las obras, seguidamente comentado.</p>
+</li>
+<li>
+<p>La <strong>base m&aacute;xima</strong> de la deducci&oacute;n ascender&aacute; a <strong>9.000 euros por vivienda, </strong>tanto en tributaci&oacute;n individual como en tributaci&oacute;n conjunta y estar&aacute; constituida por las cantidades justificadas con factura, que deber&aacute; cumplir todas las condiciones establecidas en el Reglamento por el que se regulan las obligaciones de facturaci&oacute;n, aprobado por el Real Decreto 1619/2012, de 30 de noviembre.</p>
+<p>La factura recibida por el contribuyente deber&aacute; conservarse durante el plazo de prescripci&oacute;n.</p>
+<p class="letrita sangrado-izq"><span class="verde"><strong>Precisi&oacute;n:</strong></span></p>
+<p class="letrita sangrado-izq">En el caso de una comunidad de propietarios, las cantidades satisfechas se imputar&aacute;n a aquel a cuyo nombre est&eacute; la factura salvo que se demuestre que ha sido pagada con cargo a la renta de los comuneros o de la sociedad de gananciales.</p>
+</li>
+<li>
+<p>La <strong>base m&aacute;xima anual</strong> de la deducci&oacute;n ascender&aacute; a <strong>3.000 euros por vivienda</strong>, tanto en tributaci&oacute;n individual como en tributaci&oacute;n conjunta. <strong>Las cantidades satisfechas no deducidas</strong> por exceder la base este l&iacute;mite m&aacute;ximo podr&aacute;n deducirse con el mismo l&iacute;mite en los <strong>2 ejercicios siguientes</strong>.</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Importante</strong></span>: la base m&aacute;xima y la base m&aacute;xima anual de la deducci&oacute;n se prorratear&aacute;n en funci&oacute;n del importe pagado por cada uno de los titulares de la vivienda.</em></p>
+<p><strong>En el caso de que convivan en el tiempo la deducci&oacute;n prevista para 2 o para 3 viviendas</strong>, la <strong>base m&aacute;xima total anual</strong> ascender&aacute; a <strong>6.000 euros</strong> y <strong>las cantidades satisfechas no deducidas por exceder este importe</strong> podr&aacute;n deducirse con el mismo l&iacute;mite en los <strong>4 ejercicios siguientes</strong>.</p>
+</li>
+</ul>
+<h2>Requisitos y otras condiciones para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>La deducci&oacute;n<strong> solo resultar&aacute; aplicable a inmuebles radicados en Galicia</strong> en los que se constituya el <strong>arrendamiento de vivienda previsto en el art&iacute;culo 2 de la Ley 29/1994</strong>, de 24 de noviembre, de arrendamientos urbanos.</p>
+</li>
+<li>
+<p>Los bienes inmuebles <strong>deber&aacute;n llevar</strong> <strong>vac&iacute;os</strong> durante, por lo menos, <strong>un a&ntilde;o anterior al inicio de las obras</strong>.</p>
+<p>Se entender&aacute; que un inmueble se encuentra <strong>vac&iacute;o</strong> cuando no est&eacute; habitado, arrendado, en uso ni afecto a actividades econ&oacute;micas.</p>
+<p class="letrita sangrado-izq"><span class="verde"><strong>Precisiones</strong></span>:</p>
+<p class="letrita sangrado-izq">1. El plazo m&iacute;nimo de un a&ntilde;o en el que el inmueble debe estar vac&iacute;o se computar&aacute; de fecha a fecha, sin perjuicio de que durante una parte del periodo impositivo anterior el inmueble no haya tenido la consideraci&oacute;n de vivienda vac&iacute;a.</p>
+<p class="letrita sangrado-izq">2. <span zm="">Lo que se exige es <strong>que la vivienda haya estado vac&iacute;a el plazo indicado</strong> y no que haya estado vac&iacute;a al menos un a&ntilde;o desde que el contribuyente sea propietario de la misma</span>.</p>
+</li>
+<li>
+<p>Las <strong>obras</strong> deber&aacute;n <strong>concluir</strong> en el plazo m&aacute;ximo de <strong>dos a&ntilde;os</strong>. La fecha de finalizaci&oacute;n se acreditar&aacute; mediante la fecha de la factura expedida por las obras.</p>
+</li>
+<li>
+<p>El bien inmueble <strong>deber&aacute; ser arrendado en un plazo m&aacute;ximo de 6 meses</strong> desde la fecha de finalizaci&oacute;n de las obras.</p>
+</li>
+<li>
+<p>El contrato de arrendamiento deber&aacute; tener una <strong>duraci&oacute;n efectiva de al menos tres a&ntilde;os</strong>.</p>
+<p class="letrita sangrado-izq">Se entiende <strong>cumplido este requisito</strong> cuando la duraci&oacute;n inicial establecida en el contrato de arrendamiento hubiera sido por un plazo inferior al plazo m&iacute;nimo de duraci&oacute;n de tres a&ntilde;os (o no se hubiera estipulado plazo de duraci&oacute;n, o este fuese indeterminado) y con el sistema de pr&oacute;rrogas anuales obligatorias se alcance el m&iacute;nimo de tres a&ntilde;os de duraci&oacute;n.</p>
+<p>No obstante, no se perder&aacute; el derecho a la deducci&oacute;n en caso de que la duraci&oacute;n del arrendamiento sea inferior a tres a&ntilde;os siempre que la vivienda pase a estar en situaci&oacute;n de expectativa de alquiler y vuelva a ser objeto de un nuevo contrato de arrendamiento de vivienda dentro del plazo de seis meses desde la finalizaci&oacute;n del anterior contrato, siempre que la suma de los periodos de duraci&oacute;n de ambos contratos de arrendamiento sea igual o superior a tres a&ntilde;os.</p>
+</li>
+<li>
+<p>El <strong>valor</strong> del bien inmueble <strong>no podr&aacute; superar los 250.000 euros</strong>.</p>
+<p>A estos efectos, se tomar&aacute; como valor del bien inmueble el valor de referencia previsto en la normativa reguladora del catastro inmobiliario, en la fecha de devengo del impuesto en el per&iacute;odo impositivo en que finalicen las obras. En el caso de que no exista el valor de referencia o cuando este no pueda ser certificado por la Direcci&oacute;n General del Catastro, se tomar&aacute; como valor el valor de mercado.</p>
+</li>
+<li>
+<p>La<strong> persona arrendataria</strong> de la vivienda <strong>no podr&aacute; ser el c&oacute;nyuge ni un pariente</strong>, por consanguinidad o por afinidad, hasta el tercer grado inclusive, del contribuyente.</p>
+</li>
+<li>
+<p>El contribuyente <strong>deber&aacute; declarar el <abbr title="N&uacute;mero de Identificaci&oacute;n Fiscal">NIF</abbr> de la persona o personas prestadoras de los servicios</strong> y <strong>el importe total satisfecho</strong> a cada una de ellas.</p>
+</li>
+<li>
+<p>El contribuyente deber&aacute; ser <strong>propietario de un m&aacute;ximo de tres viviendas</strong>, con independencia de donde est&eacute;n estas radicadas, que puedan ser destinadas al arrendamiento, excluidos garajes y trasteros y sin tener en cuenta su vivienda habitual.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="letrita sangrado-izq">- Se atender&aacute; a que el inmueble tenga la condici&oacute;n de vivienda y <strong>con independencia del porcentaje de participaci&oacute;n</strong> del contribuyente propietario o usufructuario.</p>
+<p class="letrita sangrado-izq">- En <strong>tributaci&oacute;n conjunta</strong> el c&oacute;mputo del n&uacute;mero m&aacute;ximo de viviendas debe realizarse por contribuyente.</p>
+</li>
+</ul>
+<h2>Saldos pendientes de aplicaci&oacute;n</h2>
+<p>La aplicaci&oacute;n de la deducci&oacute;n no podr&aacute; dar como resultado una cuota auton&oacute;mica negativa.</p>
+<p>Dicha aplicaci&oacute;n tendr&aacute; lugar, siempre que exista cuota &iacute;ntegra auton&oacute;mica suficiente, una vez practicadas la parte auton&oacute;mica de las deducciones estatales y el resto de las deducciones auton&oacute;micas del ejercicio.</p>
+<p>Si, a consecuencia de ello, el contribuyente no pudiera aplicar la deducci&oacute;n en su totalidad, <strong>podr&aacute; deducirse la cantidad no deducida en los cuatro ejercicios siguientes</strong> hasta su agotamiento, siempre que la vivienda contin&uacute;e arrendada durante ese per&iacute;odo y cumpla los requisitos anteriormente citados con la &uacute;nica excepci&oacute;n del que exige que se halle vac&iacute;a durante, al menos, un a&ntilde;o antes del inicio de las obras.</p>
+<p>En caso de que el contribuyente tenga derecho, en el mismo per&iacute;odo impositivo, a la presente deducci&oacute;n y a la deducci&oacute;n "Por el arrendamiento de viviendas vac&iacute;as",<strong> se aplicar&aacute; en primer lugar aquella cuyo importe sea inferior</strong> y a continuaci&oacute;n la restante hasta alcanzar el total de la cuota &iacute;ntegra auton&oacute;mica.</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Importante</strong></span>: una vez introducida por los contribuyentes con derecho a la deducci&oacute;n la informaci&oacute;n necesaria para su c&aacute;lculo, ser&aacute; autom&aacute;ticamente trasladada al apartado "Informaci&oacute;n adicional a la deducci&oacute;n auton&oacute;mica de Galicia por gastos derivados de la adecuaci&oacute;n de un inmueble vac&iacute;o con destino al arrendamiento como vivienda" del Anexo B.15 de la declaraci&oacute;n.</em></p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-04-23">23/abril/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "status": "PASS local writer checks; independent review and full-country completion pending",
+  "checked_on": "2026-10-30",
+  "examples": {
+    "command": "python3 scripts/check-examples.py skills/international/moldova/md-corporate-income-tax.md skills/international/moldova/moldova-social-contributions.md ledgers/md-country-evidence/social-writer-controls.md",
+    "output": "checked 3 files, 18 oa-check blocks, 0 failures, 0 missing"
+  },
+  "schema": {
+    "command": "python3 scripts/validate-guides.py --changed-only --no-index-check with pinned PyYAML dependency path",
+    "output": "changed-only mode: validating 3 changed guide file(s); checked 2 guides; validation passed (0 warning group(s))"
+  },
+  "whitespace": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "source_preservation": "two-draft-preservation-validation.json",
+  "coverage": "Country README retains all seven partial domains; no coverage completion claimed",
+  "generated_trees": "Untouched",
+  "review": "Not requested: five remaining core Guides and ordinary gaps are unfinished",
+  "publication": "No new push or PR"
+}

@@ -1,0 +1,298 @@
+<!--pasadaVerificarIdioma: 0 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 1 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 2 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<link media="screen" type="text/css" rel="stylesheet" href="/ogasuna/css/ogasuna_rwd.css" />
+<!--bolMigradoLiferay: True - /ogasuna/faq/faq_detalle.asp - <br>-->
+	<script type="text/javascript" data-senna-track="permanent">
+		if(window.self == window.top){
+			var ancla = window.location.hash;
+			window.location.href = 'https://www.bizkaia.eus/es/tema-plantilla/-/edukia/pl/-/ogasuna/faq/faq_detalle.asp[interrogacion]Idioma=CA&idregistro=900007012'+ancla.replace('#','[almohadilla]');
+		}
+	</script>
+	
+		<title>  - Bizkaia.Eus</title>
+	
+<!-- metas_RWD -->
+<meta http-equiv='Content-Language' content='es' />
+<meta name='language' content='es' />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+
+	<meta name="robots" content="all" />
+
+<meta name="keywords" content="Acción Social, Agricultura, Cultura, Diputado General, Hacienda y Finanzas, Medio Ambiente, Obras Públicas y Transporte, Promoción Económica, Presidencia" />
+<meta name="description" content="La administración foral de Bizkaia" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+if(getCookieGa('pc_analitica_bizkaia')=="1" || getCookieGa('pc_analitica_bizkaia')=="true"){
+<!-- Google Tag Manager DES -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZSZSRR');
+<!-- Google Tag Manager PRO -->
+<!--(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!-- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!-- j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=-->
+<!-- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!-- })(window,document,'script','dataLayer','GTM-5ZSZSRR');-->
+}
+function getCookieGa(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+	<link href="/home2/estiloak_rwd/comun.css?v=2" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="/home2/estiloak_rwd/impresora.css?v=2" rel="stylesheet" type="text/css" media="print" />
+	<link rel="Shortcut Icon" type="image/ico" href="/home2/irudiak/bfa.ico" />
+	<script type="text/javascript" src="/home2/jquery/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/home2/jquery/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/home2/jquery/jquery-ui.css?v=2" type="text/css" />
+
+<link href="/ogasuna/guregida/css/guregida.css" rel="stylesheet" type="text/css" />
+
+<link href="css/faqs.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/js2.js" type="text/javascript"></script>
+<link href="/ogasuna/css/ogasuna_impresion.css" rel="stylesheet" type="text/css" media="print"/>
+</head>
+<script type="text/javascript" language="javascript">
+	function mostrarRespuesta(val)
+	{
+		var itemS = "Resp" + val ; 
+		var itemLI = "LiResp" + val ; 
+		if(document.getElementById(itemS).style.display == 'none'){
+			document.getElementById(itemS).style.display = '';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamas(?!\S)/g, " ogamenos");
+		}else{
+			document.getElementById(itemS).style.display = 'none';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamenos(?!\S)/g, " ogamas");
+		}		
+	}
+</script>
+
+<body>
+<div id="contenedor"> 
+  <!-- Google Tag Manager (noscript) -->
+<!-- DES -->
+<!-- <noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript> -->
+<!-- PRO -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   <div class="separador">&nbsp;</div>
+  <!-- parte principal -->
+
+	<a name="inicio_contenido" id="iniciocontenido"></a>
+    
+<div class="actualidadInicio actualidadInicio_LFR">
+<div class=""> 
+
+
+<div id="contenido_editado">
+  <ul class="ogaPrePath">
+<li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;btnBuscar=Buscar">No residentes</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;Nivel2=1057&amp;btnBuscar=Buscar">Tributaci&#243;n de las rentas m&#225;s comunes</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;Nivel2=1057&amp;Nivel3=1060&amp;btnBuscar=Buscar">Capital inmobiliario</a>
+</li></ul>
+
+<p class="faqvolverGureGida"><a href="https://www.bizkaia.eus/guregida/"><img src="/ogasuna/guregida/irudiak/CA_guregida.png" alt=""/>  <br/>
+ <span>www.bizkaia.eus/guregida</span>
+
+</a></p>
+
+
+
+
+
+<p class="ogaTipoBuscador ogapreguntaFrecuente">Preguntas frecuentes <span>Nº Identificación: 900007012</span></p>
+
+
+<h4>Un residente fiscal italiano posee un inmueble en Gernika el cual est&#225; arrendado durante todo el a&#241;o 2026. El alquiler es de 1000&#8364; mensuales. El arrendador justifica como gastos relacionados con el inmueble el IBI el cual asciende a 500&#8364; y  los gastos de comunidad por los que abona 100&#8364; mensuales. &#191;C&#243;mo tributar&#225;n las rentas procedentes de este alquiler?</h4>
+<br>
+	
+</br>
+
+<p>Tanto la normativa interna como los Convenios para evitar la doble imposici&oacute;n, establecen que independientemente de que los bienes inmuebles se encuentren arrendados o no, siempre que se localicen en territorio espa&ntilde;ol, tributar&aacute;n en Espa&ntilde;a. En este caso en Bizkaia en aplicaci&oacute;n del Concierto econ&oacute;mico.</p>
+<ul>
+    <li>La <strong>base imponible</strong> ser&aacute; el importe &iacute;ntegro de los alquileres recibidos. Desde el 01/01/2026, al ser el arrendador un residente del Espacio econ&oacute;mico europeo con intercambio de informaci&oacute;n, podr&aacute; deducir el importe de los intereses de los capitales ajenos invertidos en la adquisici&oacute;n y dem&aacute;s gastos de financiaci&oacute;n (por lo tanto no se puede deducir el gasto de IBI ni los gastos de comunidad). No obstante, podr&aacute; aplicarse la <strong>bonificaci&oacute;n del 70%</strong> establecida para rentas limitadas a <strong>&iacute;ndices de referencia</strong>.</li>
+    <li>El <strong>tipo de gravamen</strong> aplicable ser&aacute; el general vigente seg&uacute;n el a&ntilde;o de devengo (en el a&ntilde;o 2026 para residentes UE, Islandia y Noruega <strong>19%</strong> y para el resto de contribuyentes 24%).</li>
+    <li>Solo se podr&aacute; deducir las <strong>deducciones </strong>por donativos en los t&eacute;rminos previstos en la normativa vigente y las retenciones practicadas en su caso.</li>
+    <li>El <strong>plazo de presentaci&oacute;n</strong> ser&aacute; anual y el modelo de declaraci&oacute;n ser&aacute; el 210 (modelo &uacute;nico), el cual lo podr&aacute; presentar el propio no residente o su representante nombrado de forma voluntaria para este tipo de rentas.</li>
+</ul>
+<p>En este caso, por tanto, el c&aacute;lculo de la <strong>cuota a tributar</strong> anual ser&aacute; el siguiente:</p>
+<ul>
+    <li>Ingresos &iacute;ntegros (1000&euro;x 12 meses) : 12.000&euro;</li>
+    <li>Gastos (500&euro;+100&euro;) : No aplicables, solo aplicables los gastos de financiaci&oacute;n para su adquisici&oacute;n.</li>
+    <li>Bonificaci&oacute;n: 70% de 12.000=8.400&euro;</li>
+    <li>Base Imponible : 3.600&euro;</li>
+    <li>Tipo de gravamen : 19%</li>
+    <li>Cuota (3600&euro;x19%) : 684&euro;</li>
+</ul>
+<p>Si el arrendatario es persona obligada a retener (arrendamientos de locales, negocios&hellip;&hellip;) ingresar&aacute; las retenciones practicadas en el modelo 216 y el arrendador no residente no estar&aacute; obligado a presentar autoliquidaci&oacute;n, salvo que tenga gastos deducibles por ser residente de la UE, por ejemplo, y presente una autoliquidaci&oacute;n a devolver para recuperar parte de las retenciones (modelo 210 - plazo presentaci&oacute;n trimestral).</p>
+<p>Si el arrendatario no est&aacute; obligado a retener (arrendamiento de vivienda&hellip;), el propio no residente contribuyente (o su representante) deber&aacute; autoliquidar y presentar una autoliquidaci&oacute;n a ingresar (modelo 210 - plazo presentaci&oacute;n trimestral).</p>
+<p>En este caso, si suponemos que el arrendatario no est&aacute; obligado a retener, el propio no residente (o su representante) deber&aacute; presentar trimestralmente una autoliquidaci&oacute;n a ingresar (modelo 210) e ingresar la cuota de 684&euro; en cualquier entidad colaboradora.</p>
+
+
+<br class="limpiar"/>
+<div class="oga_alerta">
+<p class="oga_tit_alerta">Nota</p>
+<div class="oga_contenido_alerta"><p>Esta Pregunta-Respuesta carece de efectos vinculantes para la Hacienda Foral de Bizkaia, teniendo el carácter de mera información.</p></div>
+</div>
+
+
+<p class="faqvolver"><a href="faq_listado.asp?Idioma=CA">Volver</a></p>   
+  <div class="separador">&nbsp;</div>
+            <div id="utilidades">
+						<script type="text/javascript">
+							<!--
+							document.write("<p class='imprimir_pie'>")
+							document.write("<a href='#' onclick='javascript:print();'>imprimir</a>")
+							document.write("</p>")
+							-->
+						</script>
+				
+              <p class="correo_pie"> <a href="envios.asp?Idioma=CA&amp;idregistro=900007012">enviar por e-mail</a></p>
+            </div> <!-- utilidades --> 
+
+
+
+<br class="limpiar"/>
+</div><!--contenido_editado-->
+ 				</div><!-- principal -->
+				<br class="separador"/>
+			</div><!-- actualidad_inicio -->
+		
+<label for="right-menu-checkbox" class="overlay right"></label>
+
+		<!-- menuPpal -->
+
+	<div class="separador">&nbsp;</div>
+	
+
+	<script type="text/javascript">
+		$(function() {
+	
+		function getParameterByName(name, url) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+	
+		var iframeURL = window.location.href;
+		var iframeTemCodigo = getParameterByName('tem_codigo', iframeURL.toLowerCase());
+		
+		//console.log('iframeURL: ', window.location.href);
+		//console.log('iframeTemCodigo: ', iframeTemCodigo);
+		
+		$("body a:not([target='_blank'])").each(function(){
+			var linkURL = $(this).attr('href');
+			//console.log('linkURL: ', linkURL);
+			if (linkURL && !linkURL.startsWith("#")){
+				var linkTemCodigo = getParameterByName('tem_codigo',linkURL.toLowerCase())
+				//console.log('linTemCodigo: ', linkTemCodigo);		
+				if((!iframeTemCodigo) || (iframeTemCodigo != linkTemCodigo)){
+				//if(iframeTemCodigo != linkTemCodigo){
+					$(this).attr("target","_parent");
+				}
+			}
+		});
+
+		$('a[href^="#"]').click(function( event ) {
+
+			event.preventDefault();
+			var idLink=$(this).attr('href');
+			//console.log('click');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},150);
+
+		});
+		
+		
+		if(window.location.hash) {
+
+			//event.preventDefault();
+			var idLink=window.location.hash;
+			//console.log('hash');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							//console.log("ENTRA");
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},450);
+
+		}
+
+		
+		$('a[data-toggle=collapse]').click(function( event ) {
+
+			event.preventDefault();
+
+			//console.log('click');
+
+			if (typeof parentIFrame != "undefined") {
+				setTimeout(function(){
+					//console.log('scroll');
+					parentIFrame.scrollToOffset(0,-150);
+				},350);
+			}
+
+		});
+	});	
+	</script>
+
+	<script src="/home2/js/iframeResizer.contentWindow.min.js"></script>
+	<!-- piePagina --> 
+<img id='estadisticas' src='/home2/includes/bfa_plantilla.asp?idi=ca&amp;U=https%3A%2F%2Fwww%2Ebizkaia%2Eeus%2Fogasuna%2Ffaq%2Ffaq%5Fdetalle%2Easp%3FIdioma%3DCA%26idregistro%3D900007012' alt='' />
+	<!-- piePagina --> 
+</div><!-- contenedor -->
+<div class="separador">&nbsp;</div>
+
+</body>
+
+</html>

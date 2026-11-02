@@ -1,10 +1,10 @@
 ---
 name: de-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing their German tax returns AND mentions freelancing (Freiberufler), self-employment (Selbstständigkeit), trade business (Gewerbetreibender), contracting, or sole proprietorship (Einzelunternehmer). Trigger on phrases like "help me do my German taxes", "prepare my EStE", "I'm self-employed in Germany", "I'm a Freiberufler", "do my Steuererklärung", "prepare my USt and ESt", or any similar phrasing where the user is a Germany-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Germany self-employed tax workflow -- every other skill in the stack (germany-vat-return, de-self-employed-income-tax, de-social-contributions, de-trade-tax, de-estimated-tax, de-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Germany full-year residents only; self-employed individuals and sole proprietors.
-version: 0.1
+description: ALWAYS USE THIS SKILL when a user asks for help preparing their German tax returns AND mentions freelancing (Freiberufler), self-employment (Selbstständigkeit), trade business (Gewerbetreibender), contracting, or sole proprietorship (Einzelunternehmer). Trigger on phrases like "help me do my German taxes", "prepare my EStE", "I'm self-employed in Germany", "I'm a Freiberufler", "do my Steuererklärung", "prepare my USt and ESt", or any similar phrasing where the user is a Germany-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Germany self-employed tax workflow -- every other skill in the stack (germany-vat-return, de-einkommensteuer-freelancer, de-social-contributions, de-trade-tax, de-estimated-tax, de-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Germany full-year residents only; self-employed individuals and sole proprietors.
+version: 0.2
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -149,33 +149,33 @@ Limits that decide a route, for tax year 2026; unless a note says otherwise they
 | What | Value | Source and wording |
 | --- | --- | --- |
 | Kleinunternehmer: previous-year total turnover, not exceeded | EUR 25,000 | [§ 19(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html): "25 000 Euro nicht überschritten hat" |
-| Kleinunternehmer: current-year total turnover, not exceeded | EUR 100,000 | § 19(1) UStG: "100 000 Euro nicht überschreitet" |
-| Kleinunternehmer in the start-up year: current-year limit | EUR 25,000 | EÜR instructions 2026, line 12 |
-| Monthly VAT returns if last year's VAT was more than | EUR 9,000 | § 18(2) UStG: "mehr als 9 000 Euro" |
-| Release from advance returns possible if last year's VAT was not more than | EUR 2,000 | § 18(2) UStG: "nicht mehr als 2 000 Euro" |
-| Trade tax allowance, sole traders and partnerships, per year | EUR 24,500 | § 11(1) GewStG: "24 500 Euro" |
-| Trade tax rate base (Steuermesszahl) | 3.5% | § 11(2) GewStG: "3,5 Prozent" |
-| IHK fee exemption for unregistered sole traders, trade income or profit not more than | EUR 5,200 | § 3(3) IHKG: "5 200 Euro nicht übersteigt" |
-| Bookkeeping duty possible (after notice), total turnover above | EUR 800,000 | § 141(1) no. 1 AO: "800 000 Euro im Kalenderjahr" |
-| Bookkeeping duty possible (after notice), trade profit above | EUR 80,000 | § 141(1) no. 4 AO: "80 000 Euro im Wirtschaftsjahr" |
-| Income tax prepayments set only if at least, per year | EUR 400 | § 37(5) EStG: "mindestens 400 Euro im Kalenderjahr" |
-| and at least, per due date | EUR 100 | § 37(5) EStG: "mindestens 100 Euro" |
+| Kleinunternehmer: current-year total turnover, not exceeded | EUR 100,000 | § 19(1) UStG: "100 000 Euro nicht überschreitet", https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Kleinunternehmer in the start-up year: current-year limit | EUR 25,000 | EÜR instructions 2026, line 12, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Monthly VAT returns if last year's VAT was more than | EUR 9,000 | § 18(2) UStG: "mehr als 9 000 Euro", https://www.gesetze-im-internet.de/ustg_1980/__18.html |
+| Release from advance returns possible if last year's VAT was not more than | EUR 2,000 | § 18(2) UStG: "nicht mehr als 2 000 Euro", https://www.gesetze-im-internet.de/ustg_1980/__18.html |
+| Trade tax allowance, sole traders and partnerships, per year | EUR 24,500 | § 11(1) GewStG: "24 500 Euro", https://www.gesetze-im-internet.de/gewstg/__11.html |
+| Trade tax rate base (Steuermesszahl) | 3.5% | § 11(2) GewStG: "3,5 Prozent", https://www.gesetze-im-internet.de/gewstg/__11.html |
+| IHK fee exemption for unregistered sole traders, trade income or profit not more than | EUR 5,200 | § 3(3) IHKG: "5 200 Euro nicht übersteigt", https://www.gesetze-im-internet.de/ihkg/__3.html |
+| Bookkeeping duty possible (after notice), total turnover above | EUR 800,000 | § 141(1) no. 1 AO: "800 000 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/ao_1977/__141.html |
+| Bookkeeping duty possible (after notice), trade profit above | EUR 80,000 | § 141(1) no. 4 AO: "80 000 Euro im Wirtschaftsjahr", https://www.gesetze-im-internet.de/ao_1977/__141.html |
+| Income tax prepayments set only if at least, per year | EUR 400 | § 37(5) EStG: "mindestens 400 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/estg/__37.html |
+| and at least, per due date | EUR 100 | § 37(5) EStG: "mindestens 100 Euro", https://www.gesetze-im-internet.de/estg/__37.html |
 
 **Figures you will meet while sorting the documents** (the rules and the computation sit in `de-einkommensteuer-freelancer`)
 
 | What | Value | Source and wording |
 | --- | --- | --- |
 | Low-value asset: may be expensed at once if the net cost is not more than | EUR 800 | [§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html): "800 Euro nicht übersteigen" |
-| Optional pool (Sammelposten), per asset: more than / not more than | EUR 250 / EUR 1,000 | § 6(2a) EStG: "250 Euro, aber nicht 1 000 Euro übersteigen" |
-| Gifts to non-employees: deductible only if the total per recipient per year is not more than | EUR 50 | § 4(5) no. 1 EStG: "insgesamt 50 Euro nicht übersteigen" |
-| Business entertainment: share deductible | 70% | § 4(5) no. 2 EStG: "70 Prozent der Aufwendungen" |
-| Home office room that is the centre of all work: yearly flat amount | EUR 1,260 | § 4(5) no. 6b EStG: "1 260 Euro (Jahrespauschale)" |
-| Home office day rate, no separate room needed | EUR 6 | § 4(5) no. 6c EStG: "6 Euro (Tagespauschale)" |
-| Cap on the day rates per year | EUR 1,260 | § 4(5) no. 6c EStG: "höchstens 1 260 Euro" |
-| Business car: list-price method only if business use is more than | 50% | § 6(1) no. 4 EStG: "mehr als 50 Prozent betrieblich genutzt" |
-| List-price method: private use per month | 1% | § 6(1) no. 4 EStG: "1 Prozent des inländischen Listenpreises" |
-| Commuting to own first premises, per km of one-way distance, from the first km | EUR 0.38 | § 9(1) sentence 3 no. 4 EStG: "0,38 Euro" |
-| Commuting cap per year, where no own or provided car is used | EUR 4,500 | § 9(1) sentence 3 no. 4 EStG: "4 500 Euro im Kalenderjahr" |
+| Optional pool (Sammelposten), per asset: more than / not more than | EUR 250 / EUR 1,000 | § 6(2a) EStG: "250 Euro, aber nicht 1 000 Euro übersteigen", https://www.gesetze-im-internet.de/estg/__6.html |
+| Gifts to non-employees: deductible only if the total per recipient per year is not more than | EUR 50 | § 4(5) no. 1 EStG: "insgesamt 50 Euro nicht übersteigen", https://www.gesetze-im-internet.de/estg/__4.html |
+| Business entertainment: share deductible | 70% | § 4(5) no. 2 EStG: "70 Prozent der Aufwendungen", https://www.gesetze-im-internet.de/estg/__4.html |
+| Home office room that is the centre of all work: yearly flat amount | EUR 1,260 | § 4(5) no. 6b EStG: "1 260 Euro (Jahrespauschale)", https://www.gesetze-im-internet.de/estg/__4.html |
+| Home office day rate, no separate room needed | EUR 6 | § 4(5) no. 6c EStG: "6 Euro (Tagespauschale)", https://www.gesetze-im-internet.de/estg/__4.html |
+| Cap on the day rates per year | EUR 1,260 | § 4(5) no. 6c EStG: "höchstens 1 260 Euro", https://www.gesetze-im-internet.de/estg/__4.html |
+| Business car: list-price method only if business use is more than | 50% | § 6(1) no. 4 EStG: "mehr als 50 Prozent betrieblich genutzt", https://www.gesetze-im-internet.de/estg/__6.html |
+| List-price method: private use per month | 1% | § 6(1) no. 4 EStG: "1 Prozent des inländischen Listenpreises", https://www.gesetze-im-internet.de/estg/__6.html |
+| Commuting to own first premises, per km of one-way distance, from the first km | EUR 0.38 | § 9(1) sentence 3 no. 4 EStG: "0,38 Euro", https://www.gesetze-im-internet.de/estg/__9.html |
+| Commuting cap per year, where no own or provided car is used | EUR 4,500 | § 9(1) sentence 3 no. 4 EStG: "4 500 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/estg/__9.html |
 
 - **2025 versus 2026 commuting.** From 1 January 2026 the EUR 0.38 rate applies from the first kilometre. For 2025 returns it applied only from the 21st kilometre ([BMF, what changes in 2026](https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/das-aendert-sich-2026.html)).
 - **Computers and software.** The Finance Ministry accepts a useful life of one year ("Nutzungsdauer von einem Jahr") for computer hardware and software, so the cost can be deducted in the year of purchase; the item is still listed in Anlage AVEÜR (2026 EÜR instructions).
@@ -256,6 +256,42 @@ Stop, say why, and name the adviser needed.
 <!-- openaccountants-cta-block -->
 
 ---
+
+```oa-check
+name: DE 2026, home office day rate under the yearly cap
+inputs:
+  days: 150
+steps:
+  - amount: min(days * 6, 1260)
+expected:
+  amount: 900.00
+```
+
+```oa-check
+name: DE 2026, commuting to own premises, 20 km, 220 days
+inputs:
+  km: 20
+  days: 220
+steps:
+  - amount: min(km * days * 0.38, 4500)
+expected:
+  amount: 1672.00
+```
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
+| AO § 141 | https://www.gesetze-im-internet.de/ao_1977/__141.html | 2026-10-31 |
+| EStG § 37 | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-31 |
+| EStG § 4 | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-31 |
+| EStG § 6 | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-31 |
+| EStG § 9 | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-31 |
+| GewStG § 11 | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-10-31 |
+| IHKG § 3 | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-10-31 |
+| UStG § 18 | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-10-31 |
+| UStG § 19 | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-31 |
 
 ## Talk to a verified accountant
 

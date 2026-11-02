@@ -1,0 +1,3583 @@
+{
+  "head": "421d33d0b4bdcedfcd09ea861dbf48b341a247e1",
+  "initial_head": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "writer_repair_manifest_sha256": "f63d432c02e5bd0a7f3b1f87b87e39ba185cc43e241afdffa5483312362b99ae",
+  "initial_review_manifest_sha256": "44fc12c6ce8ecf8649418fae272da6d9808b768233199833fc241043aae09718",
+  "inputs": [
+    {
+      "path": "evidence/ledgers/md-company-formation.md",
+      "sha256": "0334cd7f7e19b7d06cc9a1d21f1cc93ab0041c892d760928031fd0a712cdd6f2",
+      "bytes": 121099
+    },
+    {
+      "path": "evidence/ledgers/md-company-formation.writer.json",
+      "sha256": "b8263c928695d5bd21dff648217c9c498633a5bd280a5c56e5b5b1eceac3e288",
+      "bytes": 542958
+    },
+    {
+      "path": "evidence/ledgers/md-corporate-income-tax.md",
+      "sha256": "fcba0303e4d692fe60874ee2ffa161909023a1f5bc576d90280498cc835397e8",
+      "bytes": 287595
+    },
+    {
+      "path": "evidence/ledgers/md-corporate-income-tax.writer.json",
+      "sha256": "2923e7c28fd8d5900ab5ffeb595c814b660c5b7306df08946d472ddc12018981",
+      "bytes": 1021489
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/baseline.json",
+      "sha256": "4f1b1a29cee8c90ba674a9c153ec5f3671701d42cbb7964256e1d0a48822922f",
+      "bytes": 17592
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/bounded-review-active-status-update.json",
+      "sha256": "40a72a9565a661e050ce74dee3f409f06a6de3c4ec3a89881e54aed345535e02",
+      "bytes": 38781
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/capital-cet18-controls.json",
+      "sha256": "a0425d17d9bbb4200d851015b275f74272621e6972d5083e7cbcedeeebc5fa76",
+      "bytes": 6446
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/capital-cet18-current-attachments.json",
+      "sha256": "f7f8870af696d780a5a0ebdfe24bccca36d3d9eebad9b68db40ae44599280d1e",
+      "bytes": 4027
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnam-corporate-correction-form-attachment.json",
+      "sha256": "5b6720bbb3e69f6511a506d0019939263b6cd3e75988555e1bb452d24344bd4f",
+      "bytes": 3269
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnam-corporate-form-preservation-validation.json",
+      "sha256": "c14983a35fa87bd43a80afecbf1dd1dad6a3f56a0ec79cd4a58acefecc5e2e03",
+      "bytes": 3506
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnam-refund-current-attachment.json",
+      "sha256": "03b393c7e0bdccc94734527b67d74b43781a04f39fa942be90f24122f442f9ab",
+      "bytes": 1545
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnam-refund-current-controls.json",
+      "sha256": "cafbf3009e45452400c13e15610fe8b168cb186b35aadf2bbc99b697beb391e3",
+      "bytes": 4309
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnas-correction-current-attachment.json",
+      "sha256": "64e3f406652a0fe950550c904cd3e2f192f37beaf7134c7083746e5fc215f6ce",
+      "bytes": 2341
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnas-correction-current-controls.json",
+      "sha256": "6c6f0e96e04387e07a5b0c328a22095691338655c6376ea482655f183553c062",
+      "bytes": 3403
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnas-refund-current-attachment.json",
+      "sha256": "17fd36c46387c767293e6d5a4a88d93dd03c31db6052f4ddd30614fdec924eec",
+      "bytes": 2606
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cnas-refund-current-controls.json",
+      "sha256": "a17cfd483742acd66dee35216604dc45bcc2945c5d5359d47a49f6daf3a195b9",
+      "bytes": 2571
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-expense-procedure-controls.md",
+      "sha256": "b61f229cad844c313c49f3a15dd55d290a918c9e8de567b68da71be053a3a32a",
+      "bytes": 6555
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-procedure-version-comparison.json",
+      "sha256": "5b8e62a8bdaf32372f5e9f9c40cd6ae6721fa66b4f4d5055b5b3ce6878776f4e",
+      "bytes": 1103
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-source-binding-independent-review-correction.json",
+      "sha256": "75ce180bed1fce568934440a0f5f6c750a224f25f3ef80fdb50499021287f66d",
+      "bytes": 183291
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-source-bindings-preservation-validation.json",
+      "sha256": "c3eafd4191c42914409c6a0612c767fa138e7022fc7874c3186cad107d1b8c99",
+      "bytes": 2711
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-valuation-sector-cap-preservation-validation.json",
+      "sha256": "5b919dfa04726972a5b1432aceab76d39055523ce27a92b1bbee47c6fe27a532",
+      "bytes": 2711
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/corporate-valuation-sector-cap-review-corrections.json",
+      "sha256": "87b9f09188ba0998e5daf2290b0b23b109cdec2ffae99ac493551018906c3b1b",
+      "bytes": 6915
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/cross-border-question-independent-review-correction.json",
+      "sha256": "4bc19d0bbb44cac080fa630faff98cb64b1bff1de67f2a50addc839d297535c4",
+      "bytes": 8770
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/downloaded-numeric-annexes.json",
+      "sha256": "424279668b85b57b50b523c14cdb63a1d824630933d098f4d52ba7d73272cbf6",
+      "bytes": 9044
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/downloaded-return-attachments.json",
+      "sha256": "9f5e0cb16209961a9cda08ad4c224f7fa05e23ff65312b1f66ccc0173009d7ca",
+      "bytes": 9922
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/downloaded-return-controls.json",
+      "sha256": "cbdcffedcd9bbd645c3ac19531b577871eef01f2c71890519e7a530bc6e68267",
+      "bytes": 7299
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/employment-current-attachments.json",
+      "sha256": "d9338d2bd997a3ab2b9f58991e38347739018b9b82ab827ac282f3a5216dca7b",
+      "bytes": 20954
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/employment-current-form-controls.json",
+      "sha256": "529d4db66b7e2bd8fec1ccc5d43413237f593a83ce75c5d742e028ef3ab9884a",
+      "bytes": 8447
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/five-draft-local-checks.json",
+      "sha256": "344ffcbfe77d921372e413b646ee2e2952d5c8c878f518c41b13e62d374c87b6",
+      "bytes": 511
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/five-draft-preservation-validation.json",
+      "sha256": "c0924f5f72cde4890965cbdf4b32497e10dda22145819457d319dca7f34beac8",
+      "bytes": 3002
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/fixed-medical-proration-control.md",
+      "sha256": "aae858208e66a6ad3b310c62ad38291df3ddd9b80f4c9068311cd5bc34cbdaa6",
+      "bytes": 1015
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/formation-subtitle-independent-review-correction.json",
+      "sha256": "179253ad0909365f3cb7f687d4caff961cbf993210b41c011efbdaa3549d5171",
+      "bytes": 51252
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/four-draft-local-checks.json",
+      "sha256": "6429f42c7ff80203beae703706cf0eca314b447203396cfd4428a39950ece0bb",
+      "bytes": 1235
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/four-draft-preservation-validation.json",
+      "sha256": "af0706f057049f7c3c393ed2fa0de1caefcb4bcc0c819fa40aea6da2745ef2aa",
+      "bytes": 2542
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/health-social-version-comparison.json",
+      "sha256": "a01d0cc9a5e27a7d39fb22893ee512053aed0c4c991fa1d3b90883ad7a441191",
+      "bytes": 2509
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review-fixes-preservation-validation.json",
+      "sha256": "ecb9a972e82086770a2c5a17baef0a7ba7282bb1fa6ef722d91152e91f065aa6",
+      "bytes": 2710
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/CURRENT-STATUS.json",
+      "sha256": "e095a545d27d3e714aa321918dad5e72092b24f4126701e22f546260d70a228b",
+      "bytes": 1021
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+      "sha256": "607bf44596a5317318dd1e6ad60f23a83dae2f6b6ddb4026d5f93dae54390997",
+      "bytes": 3723
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md",
+      "sha256": "b36f700bd110f9140240fab0dea740414414e9dd7d548308c2229dd2ca1d732e",
+      "bytes": 3666
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/README.md",
+      "sha256": "cced0cf244a099da9bf41aeac78e0e649c74c4394259602c189f9614de69301e",
+      "bytes": 1132
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/REVIEW.md",
+      "sha256": "5e51180b545d8b99512c84aeb2ef9cec0792c21ba0b5d56d8f189b77f40e3155",
+      "bytes": 10359
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/additional30-oa-block-manual-recomputations.json",
+      "sha256": "405d5e2b73f16489c8927be32e0f32bdd8a8a7415556f6baa78f9ffc187b49b9",
+      "bytes": 8322
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/all-retained-oa-check-output.json",
+      "sha256": "64124a476171ecc298466b7aedb7549d46a37da01ce53f3cbe6ed7a1546c1875",
+      "bytes": 3811
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/copied-evidence-manifest.json",
+      "sha256": "1d5f1c99e3a23026d3d45a8e1ee5b471a7b0fd05fbb3425e3ba2d46f80fc3c74",
+      "bytes": 12183
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-46abcea/REVIEW.json",
+      "sha256": "c9808a0313cd66a4a20e98d1b3aadc5b90b5d7780014a1ea3ad1fabb70a9db3b",
+      "bytes": 1215
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-46abcea/reg697-loan-formula_543-20261031.png",
+      "sha256": "0ab7d96e78ae4bbef6198e701d2e4ddf5a1786924273cd097488d1cb53833731",
+      "bytes": 2602
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-46abcea/selected-rows.json",
+      "sha256": "25ddf640e617857f29a452bc7832afee05b74106417222a8eaa8efc8df5d08db",
+      "bytes": 29455
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-4a39d66/REVIEW.json",
+      "sha256": "4dc106d476d2aee8ecc6b3c4d5ea7bde0a6af33a570f2bac698b4d0a65cdf9cb",
+      "bytes": 1087
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-4a39d66/md-corporate-income-tax.json",
+      "sha256": "fb068dd80da7427a2a5a8f3aa741dab26c95b53fd4f2e7c407709ec0ec8a41bf",
+      "bytes": 32809
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-4a39d66/moldova-income-tax.json",
+      "sha256": "5828b1a4b4f324cfeb3bd5884cf9f6cea4614055bbeeb28c72d1d137d40726ab",
+      "bytes": 9270
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/REVIEW.md",
+      "sha256": "6035dbaf9970fbb335c423dae0cce0b29ff1a2135f359fbf536a5e4a158a04db",
+      "bytes": 680
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/current-row-dispositions.json",
+      "sha256": "ba28f3aba16335ed401d97ceace8939035601b8ced79d93c5d2cd234237c275a",
+      "bytes": 2346080
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/delta-review.json",
+      "sha256": "b21c437ebe395733ba3400d128e65da7b17a84c15cd98803e552322f384b98e5",
+      "bytes": 2460
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-264-20261031.json",
+      "sha256": "a5638fcbea16dcf6dd2aed02634e6216d9e236351466159cce7ee569c3e49f83",
+      "bytes": 4300
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-265-20261031.json",
+      "sha256": "6bfb61730962de9569acdea7f48df0780e3025fa6d03bf4a5787587bb8875cc7",
+      "bytes": 5785
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-266-20261031.json",
+      "sha256": "3bb4dc343bbee8b0b8cc39b8a641c3054ba83b36b51112cd855b9623b353df83",
+      "bytes": 3448
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/formation-subtitle-independent-review-correction.json",
+      "sha256": "179253ad0909365f3cb7f687d4caff961cbf993210b41c011efbdaa3549d5171",
+      "bytes": 51252
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/md-company-formation.writer.json",
+      "sha256": "c0e6c19b5c369a9df067cc04c608271f2aa30b221d323f1bc017882ee376b818",
+      "bytes": 542314
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/moldova-income-tax.writer.json",
+      "sha256": "d231fa6e6630c5baba108535b20c9f103a154277791a9079e09fd5b889123b22",
+      "bytes": 1442832
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/moldova-vat.writer.json",
+      "sha256": "beb02bafeb7f031a237a1fcf43641af2f2563c21aeb301a0273ce3ea5c352b5c",
+      "bytes": 794602
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/new-row-provenance.json",
+      "sha256": "b04b3918d2dfa13829e84ce6771780186c77bd1cc2fd2f2160168a21a8991575",
+      "bytes": 3251
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-7a727ba/vat-it-independent-review-corrections.json",
+      "sha256": "48013bfaf41f05b522bfa8d932a2c30a86b52e548e4126f2e145824533b46338",
+      "bytes": 33236
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-95f9a77/REVIEW.json",
+      "sha256": "a99ba3997bf560f61cd3355372ea4af199de67cfb158c9c1d81297e0fbe7b861",
+      "bytes": 765
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-95f9a77/new-rows.json",
+      "sha256": "fcbe3c955110314a9830baf1132a50ead39d377856a94bfb047fc926afbba241",
+      "bytes": 3732
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-e3c93d44-review.json",
+      "sha256": "5132e22a56c8d394a912ac0319455abb55fb260ea3cb44b9f580d37f21cbb9cc",
+      "bytes": 377
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/delta-question-and-rental-recheck.json",
+      "sha256": "16d16c8d150745d0a6be4932efa63c6c079623a0ddd2694da0daec367f9b7679",
+      "bytes": 775
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/example-checker-output.json",
+      "sha256": "e997a8cc129a32f2e1926787383bd41b1b8a2d29d83cd4843fe2b38cd9a3d51c",
+      "bytes": 1630
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/expanded-topic-semantic-spotchecks.json",
+      "sha256": "793b16e06ce0d1f6e4dbb43711643691201922094e46c8f3186ab72a7bb51ad0",
+      "bytes": 83129
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/final-current-machine-provenance.json",
+      "sha256": "c5f64a36a24fa588f40bc0c1293bd177e3af6ce7363cc784e9b21316164309df",
+      "bytes": 633005
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/final-current-topic-mechanical-preservation.json",
+      "sha256": "ac9d4736ab5ef0c318476684aaef80f07b1bab021df59dd428702302a96c43f0",
+      "bytes": 638601
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/final-gap-classification.json",
+      "sha256": "0e4ac3c630cada5a3bad7d92ee4d6bdd57c6afda229c4521a36439c0c39e54eb",
+      "bytes": 4337
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/findings.json",
+      "sha256": "541abf944c269d5367104405b594e27adf8e1ab9925cac4d4c0a1ed852ce4a69",
+      "bytes": 13528
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/gap-classification.json",
+      "sha256": "571eaabc7f001f1b6704afde37a43b8cb6757b630841c9145fca85194601a7eb",
+      "bytes": 8526
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/incoming-eight-example-check-output.json",
+      "sha256": "b3406684211380fc78b3b3541d84f8195cc55cd4ffa123c109fa3a084599481f",
+      "bytes": 860
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/independent-loan-formula-visual.json",
+      "sha256": "3db843dd26b2e7d3d4bb560b7ab053ca59ed0316029ab2cb69238bfb039bd3a0",
+      "bytes": 653
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/machine-provenance.json",
+      "sha256": "3a75e4939e75937b5163d1fd17be992ad71f34117136b052bd9851dc037a4127",
+      "bytes": 1334243
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/manual-six-example-recomputations.json",
+      "sha256": "8e31d90fff9fcf6f5b0991fd1c532b3bd44ff16507efdc62de7dceea2cc641d7",
+      "bytes": 6090
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/payroll-source-reuse-working.json",
+      "sha256": "f96881609be276a5fbdbc33850dd17cbe97aa265f2bee46902b172a7fe0567bb",
+      "bytes": 567410
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1024-moldova-income-tax.md",
+      "sha256": "eafee1d85c801b40075e53d40e18f55ca0ab8dd11888ab1efde806fb445fbfed",
+      "bytes": 24627
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1026-moldova-social-contributions.md",
+      "sha256": "153ff193ad629372acc3c99a59517d92c412ac376df4354e0737c011f1ad8e75",
+      "bytes": 17640
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1027-moldova-payroll.md",
+      "sha256": "3d054561d634ddcfd12df62eb0d2d8cad54a0175504c5d281600f1d595281404",
+      "bytes": 18098
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1028-moldova-vat.md",
+      "sha256": "f169835bb1b471dd70839c9f2d7fb5d7e84c2a54d9ef0362ed74a12c7497c4ea",
+      "bytes": 20746
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1029-README.md",
+      "sha256": "6edc6fb1dbae544e7b7d89178a7f1c1099b50f288a801c3e463c9216dab20157",
+      "bytes": 2057
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/publication-current-guide-ledger-hashes.json",
+      "sha256": "31be6b67a69290741bd4bbad09c3431cef4c3bb1394b076bf8cfc54cf76a2f24",
+      "bytes": 3815
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/publication-status-recheck.json",
+      "sha256": "bb0b283b7c8936c4730841cfc9ff656302f496cd6ede0a398db23507595ea240",
+      "bytes": 13566
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/publication-status-recheck.md",
+      "sha256": "2de823bb5b0b6f732b8265d5b3332b4707bfe5f0414f808df01ceddb69f3e06f",
+      "bytes": 1048
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/review-status.json",
+      "sha256": "592ce2e5c37774009688012ffbdb288d93dee656a68f64c486edd2cafbaa0af2",
+      "bytes": 1747
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot-manifest.json",
+      "sha256": "7988f7fd857819cd68cc4a678b19ca8d42704c2ef81fe2b91e17f012ef823b4f",
+      "bytes": 6889
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-company-formation.writer.json",
+      "sha256": "c0e6c19b5c369a9df067cc04c608271f2aa30b221d323f1bc017882ee376b818",
+      "bytes": 542314
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-corporate-income-tax.writer.json",
+      "sha256": "ae2c8e62c62473ae78eeb9f65b767d3580b714389e04b18bee898a1cd22a94fd",
+      "bytes": 1020881
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-cross-border.writer.json",
+      "sha256": "07dc78bfc2e3dd45a07fa02e0c5537c07041933169d9a2a1305cfa1f4f02cf2b",
+      "bytes": 572417
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-tax-overview.writer.json",
+      "sha256": "aa26cb108b53bb62b2c02cfe832f342dddb833cc9ce28cab8a0885eac1127c36",
+      "bytes": 239477
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-transfer-pricing.writer.json",
+      "sha256": "36874370f71a6a55be80186371b961d4cb7dc16cb6c01613fb8c4371bf33f94a",
+      "bytes": 755565
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-income-tax.writer.json",
+      "sha256": "6564c1700bb6480d3067901ba8cbe5e162431503d45dc8942003c8a7cc94b1b0",
+      "bytes": 1468097
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-payroll.writer.json",
+      "sha256": "a2227db4e9f4bb59ee0337ea7ab4bf3a486dc5a8e691987a8700845e876f9319",
+      "bytes": 1345480
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-social-contributions.writer.json",
+      "sha256": "a8070664bafadbe6131217f89f44650b407b1deef37997e2eba79e59f29b8f30",
+      "bytes": 1062893
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-tax-optimization.writer.json",
+      "sha256": "5661f1d1a49d705c43a553001aa0b4e54766683fbb7b7a04a6678e82c37989cb",
+      "bytes": 348929
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-vat.writer.json",
+      "sha256": "beb02bafeb7f031a237a1fcf43641af2f2563c21aeb301a0273ce3ea5c352b5c",
+      "bytes": 794602
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/README.md",
+      "sha256": "0fc3921bdf0ebf3d7ff134729d269a8a06da23a36ea3c72242e7340b6a0931fc",
+      "bytes": 22461
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-company-formation.md",
+      "sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+      "bytes": 56755
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-corporate-income-tax.md",
+      "sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+      "bytes": 101217
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-cross-border.md",
+      "sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+      "bytes": 62346
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-tax-overview.md",
+      "sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+      "bytes": 20257
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-transfer-pricing.md",
+      "sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+      "bytes": 57422
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-income-tax.md",
+      "sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+      "bytes": 93377
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-payroll.md",
+      "sha256": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26",
+      "bytes": 79998
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-social-contributions.md",
+      "sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+      "bytes": 95692
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-tax-optimization.md",
+      "sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+      "bytes": 34598
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-vat.md",
+      "sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
+      "bytes": 50953
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/row-dispositions.json",
+      "sha256": "5f67112a3e2a594818f0bd93807f8a27c9c27d64046935bb3fea15e4eaa18dfc",
+      "bytes": 2428517
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/social-source-reuse-working.json",
+      "sha256": "60f943043e4e9205c01957cffacafd861f9d7c07f6d55975a22059f2261c5f46",
+      "bytes": 432130
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/standalone-case-dispositions.json",
+      "sha256": "7edaf7e41ec3ce436bb41c3161121f10ebf4672852584e983ff0b062b6ea7a20",
+      "bytes": 31355
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/standalone-eight-itpark-recomputations.json",
+      "sha256": "6c64e2ecce08a6d63e91da68240f65cf744c1e39c70febe3cd5de71dee526245",
+      "bytes": 2104
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/standalone-remaining49-recomputations.json",
+      "sha256": "d8f586003cae4ffc609393b1822cd99547b9e6f0a471bdec9b9e5c3ba81f736b",
+      "bytes": 30442
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/supplemental-264-266-capture.json",
+      "sha256": "7a0fb832a0431f952ede1f890db92a574921e7a15d65844c145ccfc78e71f558",
+      "bytes": 5907
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/topic-integrity.json",
+      "sha256": "8b48fb5b5d4d0a55998e79f1482bac509be34d492b27d0e168940f00565cfe88",
+      "bytes": 620246
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/independent-review/topic-spot-checks.json",
+      "sha256": "1e74273cd35cc6a7ea474e2df568c67939478e30227a5ff705abc25b6093b3e7",
+      "bytes": 3612
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/individual-dap-code-retail-ledger-review-corrections.json",
+      "sha256": "5e126292eff3288661e1ee55ebc4b162e64ad2f11fd3b3a15ac0ef363db66d54",
+      "bytes": 58037
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/individual-dap-retail-image-preservation-validation.json",
+      "sha256": "8ea174270a5843f7b4b64690179021021f12f88866d644c0cd373cd4e9840dd5",
+      "bytes": 2711
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/individual-procedure-controls.md",
+      "sha256": "eb09ac29ba5590a477a8fde949bf9ff381188dc04a269abdd506a323a64fd9b1",
+      "bytes": 5568
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/inr14-current-attachments.json",
+      "sha256": "b0126fdbf9b3b772b476ef22a4357ba1ae702b13b4b084b054342f2fd0c1b657",
+      "bytes": 6428
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/inr14-form-controls.json",
+      "sha256": "0da7708f1fd46d400af4b71f8c38e38870919b53b53f4d0773ff138951983a0e",
+      "bytes": 3011
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/itpark-current-attachments.json",
+      "sha256": "7c53549dd18ba7455c4df1072bade06113b7225e76e79650e6ed3c570bcdf728",
+      "bytes": 19349
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "sha256": "26ff3c560de65c650844321f99e12ce1b3a74dbf134ba6ad50fb6cad880c4c67",
+      "bytes": 14481
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/late-rate-controls.md",
+      "sha256": "65229db7d84981d09148b4da430216e357fb215fbbc58416c27fff774f1055a8",
+      "bytes": 4936
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/README-before-map-repair.md",
+      "sha256": "895a51664aacf4196bfb8c9bd615f52be0ed0a59dc47aaa8b0b67cc0dbcb52a6",
+      "bytes": 23315
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/active-path-repair.json",
+      "sha256": "4e9a73ec3c327578f45cc94a6683513b887e40131cc573ef5cf163fcfa40d9e4",
+      "bytes": 3590
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/exact-evidence-relocations.json",
+      "sha256": "09759c36a9a143ec2cd11a820bd580d95aace07e14a42661d6dbd1f145f7f9c2",
+      "bytes": 196023
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/layout-20261031/version-advances.json",
+      "sha256": "acb8cd1922931edf813317677f59e5b8fd5d30b14d2e90b7c6b27779d7bed518",
+      "bytes": 2810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/merged-repair-preservation-validation.json",
+      "sha256": "d3af803492acf52c5339e195a2de520edaee854958554694d6e5724ab4164dbf",
+      "bytes": 1261
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/nine-draft-supporting-preservation-validation.json",
+      "sha256": "6279325981947186f6322065ff3c6fbd33f5fc0940fd547b97c8062e790bd7ee",
+      "bytes": 5397
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/numeric-annex-controls.json",
+      "sha256": "b113ad439ac8889e8ddb9d0d4d9e939a2e7249c924cb7cdd04997a33960520ad",
+      "bytes": 7279
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/old-topic-inventory.json",
+      "sha256": "86042430f855afdd674e4a7db78624c5c6c7f3e4c1eaf9e9205d146f2e22e800",
+      "bytes": 638854
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/README.md",
+      "sha256": "ef8d061902becd99d4a65812f77b08486a825fe88b0ce07c7891d18c2efad778",
+      "bytes": 3600
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/md-company-formation.md",
+      "sha256": "26a3fec5dc6331ad92eac903d054674abf94242ae8b3a0f340e4f5213361e184",
+      "bytes": 3855
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/md-corporate-income-tax.md",
+      "sha256": "e52f97fac49a39573a59aa0ebbe53343660c7647a7908a03be434198e2fbe764",
+      "bytes": 4041
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/md-cross-border.md",
+      "sha256": "fdde869295896e8dd45eba8cf5eff1c0329c821f873f75d6e7593c9202579563",
+      "bytes": 10653
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/md-tax-overview.md",
+      "sha256": "09c3c94bdf2aa9d9d7754729ca6c00147692375da3e3a8cf957ea221038fc6ad",
+      "bytes": 3272
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/md-transfer-pricing.md",
+      "sha256": "91637c1a7cd52dabf5e2affd0d0c02b6e89c1d07f111a44171fff21ae64d4b97",
+      "bytes": 10169
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/moldova-income-tax.md",
+      "sha256": "102d2ffc345948f737fa8cb2fd808601849ca75545cfcef5df2f377be085e66d",
+      "bytes": 46135
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/moldova-payroll.md",
+      "sha256": "38a411ec7c5451b49068db8da7982b1a99cabebc613e93a2ce91ddd60ba744fc",
+      "bytes": 44386
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/moldova-social-contributions.md",
+      "sha256": "d71a84588262e8734f6baeec65d5f1a9d90434cd439ea6e6ee090dd7d4c4824e",
+      "bytes": 37919
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/moldova-tax-optimization.md",
+      "sha256": "7621cc0e1a0e9671f7a5f31dda1968027b3cec6689daab33e90dce38f4372ad1",
+      "bytes": 5942
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/original/moldova-vat.md",
+      "sha256": "75b827634f22860d9309465f3a12a32c2510fe0d5080d7eaea2acdee9d269ff1",
+      "bytes": 13083
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/overlapping-moldova-pr-observations.json",
+      "sha256": "cfcff74659deef3e3feece4e00421653dfbdbd2892d3cb763bf39044f8c89367",
+      "bytes": 2147
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/payroll-current-attachments.json",
+      "sha256": "506bf4b128a1732d2564a657eb9fb674de96a2cb502753a0fa46f520a2fa5419",
+      "bytes": 8504
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "sha256": "b1a781b133a51bfafaab4c65cd9f81aab917eed8608a3c39a716e22568f1338a",
+      "bytes": 6705
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/payroll-loan-controls.md",
+      "sha256": "d23e60732ed8f55e2024d8a63fe6328bab7b5df1183ffb57385d059b482a6bb7",
+      "bytes": 4791
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/payroll-loan-primary-image-retention-20261031.json",
+      "sha256": "3b3087f90cb9cd467f5803f3565265f2137fbbbb2ba98cb26989c82bec1bdb79",
+      "bytes": 1748
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/planning-question-independent-review-correction.json",
+      "sha256": "25cef156d29207d75be1ea3b96df9db53e6c691bb054132acf6ee0a175ed0dcc",
+      "bytes": 3589
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+      "sha256": "e4841fdb0bab7de80969b4b05cc93078465b6bea7d41fab0c5ca2fa903e46a0e",
+      "bytes": 521257
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.md",
+      "sha256": "276aee54a98c7241c84aeb423187fad8a33b603f4ce6937d137cf088c2b9de56",
+      "bytes": 231793
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.json",
+      "sha256": "9cde354ed6642159e7ad819a39d154a60bae97f866d3479a5edbfba2cea02e4a",
+      "bytes": 99369
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.md",
+      "sha256": "316090915c8d1a5c8a93a4ee4c5d6b32d5c4fa62edc20dd94bcd9fb5408985f7",
+      "bytes": 44276
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.json",
+      "sha256": "0b2704f3085ddd417435a45823a781a461d6aff0e6545c5b001cad415728951c",
+      "bytes": 238409
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.md",
+      "sha256": "962f5d4beee0a598c43ebeecf864cbae33836c32419dc7421c27195ce079a826",
+      "bytes": 109149
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.json",
+      "sha256": "3933a9f654539371763b209d4d6b35ddc0dfa5478c879ca2c50aaf1b6354e560",
+      "bytes": 196140
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.md",
+      "sha256": "3c1c9d8e92e46def96b4cac5aa050e465a9c111141ef0d74cb13253ed507ae9f",
+      "bytes": 101572
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/readme-predecessor-destinations.json",
+      "sha256": "c91d720abbdd2dec0eb954f087d09b10fdb932f8138676fd21a5656b9d7fa766",
+      "bytes": 8631
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/service-entrepreneur-medical-controls.md",
+      "sha256": "1f21f20fa453bc7f997cb921d7192756df345ba43a01e85bc1b7c484cd9d17be",
+      "bytes": 1679
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-annual-reporting-preservation-validation.json",
+      "sha256": "748f39111eca4336ac93896d6f76e3ce712a0da2007a2ea1c1596e0f045cd551",
+      "bytes": 4259
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-corporate-procedure-preservation-validation.json",
+      "sha256": "84be3868e84317f97d1809fbb526f769fa959f94558de5dc11987dcfd5001ddb",
+      "bytes": 4171
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-health-status-preservation-validation.json",
+      "sha256": "f94729544918e8f8408543fdb85a010dbd020bf2a9965714a3345c917824a8c7",
+      "bytes": 4170
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-individual-procedure-preservation-validation.json",
+      "sha256": "46bd9cb19db63aba2efba1a78338dbbda9fa13c2005b9ac6bef85ee12d8f092b",
+      "bytes": 4171
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-late-rate-preservation-validation.json",
+      "sha256": "7edaa898b3d6b27736350593cf56ac5ffb2eaf568ef2bf89fe562eedb977bcd4",
+      "bytes": 4171
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-local-checks.json",
+      "sha256": "f55d62a342889a3ec68530d1903d19ef3acddf238bdc17153135338a3624dd32",
+      "bytes": 570
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-ordinary-gap-preservation-validation.json",
+      "sha256": "033e944034219993d0d587e9e101b19372cf80ec3cca06258fe0a17dfee0b053",
+      "bytes": 4170
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-payroll-loan-preservation-validation.json",
+      "sha256": "0453368b16fadd4d9d5014d683bec7ae7435204f26073dd3f60612ab886df076",
+      "bytes": 4171
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-preservation-validation.json",
+      "sha256": "4799260bf437ceb58cdd5d8316fbc414e313fa254877a447f7041ffa437d0421",
+      "bytes": 4170
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/seven-draft-travel-asset-preservation-validation.json",
+      "sha256": "88df3caf71e16786962b6ac203e28f91e9a30cdcbe10fdacbc6b848de67307de",
+      "bytes": 4171
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/six-draft-local-checks.json",
+      "sha256": "bae9ed628096b1626a1df607f45c416565937b8598219eefc410d05fc3bef17e",
+      "bytes": 507
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/six-draft-preservation-validation.json",
+      "sha256": "c8dbed6a186dc6655327a9bb19c8ff37c0043a66a5963c32badb8c0fd152642d",
+      "bytes": 3672
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/social-agriculture-boundary-review-correction.json",
+      "sha256": "17eefa10be2b323961135aab03864ce98fb459b6c3cad8a91d06c04a3867dd5c",
+      "bytes": 4620
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/social-initial-source-ledger.json",
+      "sha256": "ca4899c94fcfb67ea637170679091eda414790a5c9ff91f0dffd5e4b8c1f0316",
+      "bytes": 234971
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/social-writer-controls.json",
+      "sha256": "ee44e7540a249408388f808570329a28b5eece52a714f53a55a9ca81815c92d9",
+      "bytes": 7894
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/social-writer-controls.md",
+      "sha256": "9bbc3ccd828180f9dd252cb535cad38ee8bfde210fc624fb8c1aeba00fd33bac",
+      "bytes": 7036
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/source-checkpoint-validation.json",
+      "sha256": "43179104f6639c992811da7e9664627c7a441047ed425cdeb0922646e5624351",
+      "bytes": 412
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/asset-life-catalogue.docx",
+      "sha256": "0c6742e51845d0c8275ca0ca8f5c9e0477202713a1e4a87f8f6a6aff72d87550",
+      "bytes": 93485
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/asset-register.docx",
+      "sha256": "06b21d28b94913c057d81dbbdabd1c1bda9cfe3ee30b5c9fc1f9bc8c7bc3288b",
+      "bytes": 18097
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/asset-repair-schedule.docx",
+      "sha256": "c70d81111c9f19e646b88577f08f469321020dee81bdb35971a993b44eb18fe7",
+      "bytes": 12187
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/capital-cost-proof-order40.doc",
+      "sha256": "ba2f9b6a01f335a759f104e441f07b6364edb54770c558c4ee5576b89b678beb",
+      "bytes": 51712
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/cet18-current-form-2026.docx",
+      "sha256": "e893f3352da6a86f42e37f0168aa8ed836260c7135f501c7790ae8a5bb2cabc2",
+      "bytes": 54707
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/cnam-corporate-correction-current-form.doc",
+      "sha256": "f40af7a14f129ee5ca99faafa5dffdf9c0b06422cfc79311e29582997d2bf53c",
+      "bytes": 97792
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/cnam-refund-current-form.doc",
+      "sha256": "8a9b1887813f9be750ccfd70f58b2220a6e30c44ceb7f07b8566040845e19a8d",
+      "bytes": 34304
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/cnas-correction-current.pdf",
+      "sha256": "790f7ce53efe884fc0844d951047df6bade96c6b5d6c3df6909b7d4e4ba2820e",
+      "bytes": 583110
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/cnas-refund-current.pdf",
+      "sha256": "e891564ffa99895d18e4693782351409582858bbe22730ab7ecbdc6691ac795b",
+      "bytes": 408036
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/dap24-form.docx",
+      "sha256": "9c625b836c12a45046e8d06e6d696c378ebfb1da97cf284538ccb23ae983dc50",
+      "bytes": 53581
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/dap24-instructions.rtf",
+      "sha256": "598246fcf839772f7f928a7fdb2571bf3baf115be1d1efe380e40067b05828d5",
+      "bytes": 246403
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex3.docx",
+      "sha256": "21713b5b7fef1a8d5b789a69c70f2338d6f43c87582cbc5d77e90a9325b0a5d3",
+      "bytes": 19782
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex4-1.docx",
+      "sha256": "f1928177f3f6a8483f84db812d5b99c109454bb8fae7a43257e8536fdd79e51e",
+      "bytes": 14951
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex4.docx",
+      "sha256": "ed7b5622745cf8a8134a35766cedf1ae12e42b018543b42a1069f0f30946a3c4",
+      "bytes": 18046
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex5.doc",
+      "sha256": "8b983c01c2566d290a734b087983d2eed3af58583b79c63bfc349327a55eb704",
+      "bytes": 57344
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex6.docx",
+      "sha256": "a751878a09db7a7c0c9b6ef75192984db345874d1644901f3f0c8d17725b6ca0",
+      "bytes": 31941
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex7.doc",
+      "sha256": "fdeba97cddb563b6b9fd6b51db8b0632ea3398e2ff0bfe09b5d67c108a02a068",
+      "bytes": 48640
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex8.doc",
+      "sha256": "ec701950fb4d6dbbf3c8b416f9d1d8c79457eadbdcbb3ec3b23e1bdabfc6ba62",
+      "bytes": 54272
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/employment-current-annex9.docx",
+      "sha256": "db7d474301341779c27b4a9fad122729569e600a1a6a2962233c35ad3b4d783a",
+      "bytes": 17927
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ials21-country-classifier-2026.docx",
+      "sha256": "087404807b0bb8627d85b89534619995a309788d416bafe907b3e23556633098",
+      "bytes": 51901
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ials21-current-form-2026.doc",
+      "sha256": "032b6c37bf737b00005ee12d65bcf49308a030199c508df4f14f5b84f958ed78",
+      "bytes": 80384
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/inr14-current-classifier-2025.docx",
+      "sha256": "8b29bd568c113797e6b4264b3517014960051798f71041a5eac629fd404d8814",
+      "bytes": 27715
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/inr14-current-form-2025.docx",
+      "sha256": "4ce3dd2881cf7d007ac9fce95b059d6fa43bb1a8222e56af375258ae5d66e02f",
+      "bytes": 19064
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/inr14-current-instructions-2025.docx",
+      "sha256": "7e0d3033536b9ca3d8b6fc2ad5882fc3be9a8235f124ea0a273eb7412a36f908",
+      "bytes": 16700
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ipc21-completion-requirements-2026.docx",
+      "sha256": "19121f7edb5db4c0e93baf08faab2d838a8fddcd1ce38149da196c66e67af67d",
+      "bytes": 19859
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ipc21-current-form-2026.docx",
+      "sha256": "2bec461ef92ab545af20511eb714c1f7a179b64c2ba74d20160f3ae3bd41ee6d",
+      "bytes": 44227
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ipc21-insured-categories-2026.docx",
+      "sha256": "604a707d263d2465f70ea58a3d102805a5173050bf2f56e5570f537c3020b26e",
+      "bytes": 40721
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex1.docx",
+      "sha256": "6612e8e026dba33ba5c338e3c25612861847c2490f8d52b5b065f16d5134bf47",
+      "bytes": 20430
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex10.docx",
+      "sha256": "8f578ea87bb7ebe999a2c61df0d3301ac369fc0492245cfcc49fd31ff45aab0b",
+      "bytes": 20434
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex3.docx",
+      "sha256": "8697ee2ec2b7bac6b4e91aaac07bf18ebb985cddeb0cfb6c795da15808a45ab3",
+      "bytes": 19810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex4.docx",
+      "sha256": "d7ce38b2a2fb08b8904addaac1b47307c278b0687ba8f10a5c5eb79300c18897",
+      "bytes": 15646
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex5.docx",
+      "sha256": "a2c450eb41269594a898df58969f8e8ca27690237dc7d69a542347b5a21a82ce",
+      "bytes": 15179
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex6.docx",
+      "sha256": "56a2da54d1db2aeefab4650be37056bf29306374f128f84a8fee7efc2dd14436",
+      "bytes": 13288
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex7.docx",
+      "sha256": "4709caf644dc64bd4231f0fb3fc749062dac13dbe426bf6a2ff3c093153d1abf",
+      "bytes": 21416
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex8.docx",
+      "sha256": "d2bbb853b914a1092cbbce632b268dafcb9b9464964fedc4104a03f9176fb500",
+      "bytes": 20780
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/itpark-current-annex9.docx",
+      "sha256": "8e24a10735a625ef8e5350d691d5f5a5fa7132c82a6235d5dc89ff298ddda591",
+      "bytes": 21201
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/reg697-loan-formula_543-20261031.png",
+      "sha256": "0ab7d96e78ae4bbef6198e701d2e4ddf5a1786924273cd097488d1cb53833731",
+      "bytes": 2602
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/simm24-form.docx",
+      "sha256": "722facc7e364027926bed189a3911e7e802cac574613e79fb2119bdf54d6bba2",
+      "bytes": 34147
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/simm24-instructions.docx",
+      "sha256": "ae76dcb89c1b5f81489f36b93d92e7687666c0b9daa93d1445796ddce7d5a078",
+      "bytes": 35198
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/social489-annex1.docx",
+      "sha256": "1696b3517599212699e09976c79012ea5ade283b09dd4e30d8f660f0f1090195",
+      "bytes": 17454
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/tp-apa-application-model-2026.docx",
+      "sha256": "a4c596703ea2880c2eabaab8c82c70c62c99cde03e5bd78f3953a134c67b5f92",
+      "bytes": 37906
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/tp-information-annex2-2026.docx",
+      "sha256": "a6b626d4ceeee2d63e19819ce78106e82e8f80c709b9112198e22ba2eae59955",
+      "bytes": 74401
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/travel-rates-annex2.docx",
+      "sha256": "c5ffae217d0f2346279079ddc026d183c1d8a5d5981d815d2cf255c0dd05773d",
+      "bytes": 58657
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+      "sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+      "bytes": 40058
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+      "sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+      "bytes": 102664
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ven12-full-current-form.doc",
+      "sha256": "079f86e24c5a54e905af726bd150369004d417d02a40cca639c70138a725af17",
+      "bytes": 263680
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/attachments/ven12-full-current-instructions.docx",
+      "sha256": "92fa5b4925cd98267b7078adeabcf332fadd9cd06caa364914863cdce174e63d",
+      "bytes": 43561
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/cnas-2026-instructions-receipt.json",
+      "sha256": "e375d9ef2847dd5425bd726653fb4d25efc8d923c574304738df8de56d55a1cd",
+      "bytes": 476
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/cnas-2026-instructions.pdf",
+      "sha256": "ddec5cf8eed459b478023ac112ae30025bea2d750f5a7e7c9097a5a611c10746",
+      "bytes": 405963
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/cnas-2026-instructions.txt",
+      "sha256": "3549dd40fd7e35c0e5e6dea56ce1045c0a29d54763e8d93a8ad588cbe83dbbc1",
+      "bytes": 64556
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/cnas-internal-dispositions-links.json",
+      "sha256": "e0435b633333621d4a5b033858bb38a0c579b3ca90059bd175794e1ec8c5123f",
+      "bytes": 13980
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/cnas-internal-dispositions-receipt.json",
+      "sha256": "f4836d422b39c39c1bfe423aceef8d77e5e5790e5449c4e3fbfeddd6880c3f1c",
+      "bytes": 391
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/corporate-browser-article-manifest.json",
+      "sha256": "8eb6ed371f1c65e6b3b8bd364d4e9eb90fec58536c2bb8759768c76266276c5c",
+      "bytes": 145874
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-2026-10-30-receipt.json",
+      "sha256": "d2ee4e4ae4d810091fd216f4ddb51bad44a323c543354fb577e3c4499459886b",
+      "bytes": 189
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-100.json",
+      "sha256": "388ef4bb60b6d650f2b0da68b3825a5d2f643d277881242a2f7435086621c208",
+      "bytes": 1026
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101-ORDINARY.json",
+      "sha256": "3f57bf6a13d4202868d4a1aa83a927dbbd9afc631eb18a352c0f75bf1a53bfa3",
+      "bytes": 9007
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101-PART1.json",
+      "sha256": "636c61986863af08f702972b6b351fd12bc090b25ae255591b0df6f159d2e3e4",
+      "bytes": 8702
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101-PART2.json",
+      "sha256": "618b14f9e371eb2873cb193dc8cb918b65c2024d4c4d38a93243505c3eafb103",
+      "bytes": 8866
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101-PART3.json",
+      "sha256": "51e2bacf288f96ca7a58784f73a3679246204ac509c0bfbee1e2aa21a474d233",
+      "bytes": 6365
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101.json",
+      "sha256": "c2e1148ce1062efc32eb039089f50a7f4b245b0cfb69e6c12037bf78d067dbf9",
+      "bytes": 23299
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-101s7.json",
+      "sha256": "40afc297d8b5abc1ce6459ff6f4239160a29d17f12c2957e1fb78a212f905039",
+      "bytes": 4638
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-102.json",
+      "sha256": "8f006007cc87cad15c3c03ef83ff8a55ee02c5fbcfda8b1e822e5b4a53099032",
+      "bytes": 18356
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-103-PART1.json",
+      "sha256": "429c564eaa90c92eb7649411ca842ce5e0074d61c249064e022e80efe7c0edbe",
+      "bytes": 12968
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-103-PART2.json",
+      "sha256": "8f0eab49d7cac4620bac6dcc0edc35a11a42c97a905b15723af8456138b7d130",
+      "bytes": 11504
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-103.json",
+      "sha256": "d7c7886437923d2cf5665431f15114f56c5d9e891812f49a3ec14da3529433c3",
+      "bytes": 24162
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-104.json",
+      "sha256": "86b97abb69635c2634a7642e1873c169ddd34e38aa932b31c6832f2ffde2d420",
+      "bytes": 5496
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-104@149766.json",
+      "sha256": "75ee44af8b0611ee0be4f3ff114c3e2ef2bc96dc92e8c0ac48787040d0aaa72d",
+      "bytes": 5609
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-105.json",
+      "sha256": "fdd61259064bcc47a3238da324bd47edbf0d975785fb82ae706af69c3ff64240",
+      "bytes": 892
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-106.json",
+      "sha256": "1802a0c57254c85d54a03f4468ca8cef1a463777fd561230b47fe529c9514c71",
+      "bytes": 753
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-107.json",
+      "sha256": "9e0971740c0198569c77279a8de5aeccbef3f6025e094b35598359132264b943",
+      "bytes": 3642
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-108.json",
+      "sha256": "6b882147124c5b78a781cfc8a11d842db59c378eb2798497e544e2f9a51fbc67",
+      "bytes": 3682
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-109.json",
+      "sha256": "7d318f5222b82bced97e709b93ce089ceda6442e9e54029b86f636750573921c",
+      "bytes": 2548
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-110.json",
+      "sha256": "49024019b96e1abdc74450428006df883accb30302d0e7391ad8d3d3b1822efb",
+      "bytes": 3134
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-111.json",
+      "sha256": "81516ae1eeb293a9dbd3f4a17e3e02394c33df972a79db4ff0c546d1b6314ee9",
+      "bytes": 5559
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-112.json",
+      "sha256": "d5d4688f84b78d350ab02cae9c5b4c4a05edc0af2e1b56c27cb089d47614a767",
+      "bytes": 5280
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-112@149766.json",
+      "sha256": "960f2f4c3e4bfa83ad66c271b8217a7b4b8a934228b00d226bafa7f365faad3a",
+      "bytes": 5663
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-113.json",
+      "sha256": "fda953614bcad80aa407b05c3858f2895e7039cd64901f1d081b1e10fddf401d",
+      "bytes": 2799
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-114.json",
+      "sha256": "fd46be515a8471adfe2fe9da84acafa23aa097dbc9fb7958d170f73cb3fd8a85",
+      "bytes": 854
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-115.json",
+      "sha256": "47620e22347529b58d4669b1bd1dca31561a0aa5594e51f42a6ee3e68d1891b6",
+      "bytes": 2961
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-116.json",
+      "sha256": "462d0203a78ab13d9f5c7dc2e1967fda662a0df78feb6f021a6ad3ac4bf2393c",
+      "bytes": 1534
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-117.json",
+      "sha256": "c88b64299cfdef4e425317c1ea0fcea4717ddefcb0363a1da37c148c41ffd989",
+      "bytes": 14208
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-118.json",
+      "sha256": "2b8f33ea4315b858564844b28f4485fc13171a6a305acdf575563eb2b9d71e7a",
+      "bytes": 3332
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-12.json",
+      "sha256": "6e918d2d1b655fed3041cc9e1b082bef3b20befa640f949bd6654483e69881ef",
+      "bytes": 6382
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-121.json",
+      "sha256": "47a9cebf3e25a69137a5c682f1c27a9e2c98d2e51e0ec7cb7f54cca48e0454a0",
+      "bytes": 1289
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-12s1.json",
+      "sha256": "c1fc4f85b24257558a8e435e63eefd1b248356a1b46e3df0241f17a8e55926e9",
+      "bytes": 3054
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-13.json",
+      "sha256": "5e24ec1597c55b1559857a7b33be39e0cf67b0be190cf28a5aff5e3f25dc5530",
+      "bytes": 2431
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-14.json",
+      "sha256": "fba7a647e5211d829de4f05a311e525175379710e915c376636d83d8e8643aef",
+      "bytes": 2770
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-15.json",
+      "sha256": "848c0b5cba155346cde0cb3563be6651c330921557a24da95bb3f8c4059fc18e",
+      "bytes": 1257
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-16.json",
+      "sha256": "a163df801576f0df871b094a9eb1e78e6c10ea613c0f53664016f080f3aa4129",
+      "bytes": 557
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-18.json",
+      "sha256": "159bc43d3e1f6ea4091bbd0457224c7572f72d231e13a1e04820e5801df5c998",
+      "bytes": 2567
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-188.json",
+      "sha256": "b51f555f8915d8a6a5564dfdf046e7bee06b8b547341c3e5d7dd75f223c55848",
+      "bytes": 5609
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-19.json",
+      "sha256": "cf20283e8bae1261e8f7204fce346359f67cb99f3726603f2403fd7af3e20928",
+      "bytes": 3117
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-20-PART1.json",
+      "sha256": "ca6427d78105bf9e6a46ab8d2e6fdf81e5b77dee4799d1ee9e3c7c9ca18d4986",
+      "bytes": 15704
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-20-PART2.json",
+      "sha256": "6c9e86a107176515a9280196c2e87276b5b985acca95766c254084ddeb4ecfd8",
+      "bytes": 1719
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-20.json",
+      "sha256": "91d7d1bc20cd81bc6b90c6a78d1147923fda35904a5ce4c32f0466374c00f4e7",
+      "bytes": 17121
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+      "sha256": "339d16713f5087fe9ae1bf1c5d564176764470967c0f8a31816483bc1d392269",
+      "bytes": 6427
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22-VEN12-CURRENT-20261031.json",
+      "sha256": "9e98266d593a519bb55a36c57ea41f5ec7ff6964594b671cbeb739e12e774c8d",
+      "bytes": 3201
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22617.json",
+      "sha256": "ed6e5eb7d829eb9d41ec3b2489b5dae84f1ba3ba8b3ff520cfc09e397ef50427",
+      "bytes": 6290
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22618.json",
+      "sha256": "e70ec5ea1963117bb4f45dfb3275829d9a64d72e120e918629b25f7bbc4aedb4",
+      "bytes": 1639
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22619.json",
+      "sha256": "c66683abb5604d8e982a650bf4b806d5d16e200c5616ae0d2c86139c9ad3a122",
+      "bytes": 2883
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22620.json",
+      "sha256": "28029a9754468b631b407cf8c18f40beb02d429426cff2db37cd88d2899d201c",
+      "bytes": 3175
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22621.json",
+      "sha256": "98c76113bdb5dc1c03ce0bf084f678a6603be2e6bb00fbfb48b31f123dc3cdd3",
+      "bytes": 1615
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22622.json",
+      "sha256": "31c0aea58611fdaf94b0a945a3b847daac7c977c8eddc56958d271c97769ffc4",
+      "bytes": 1814
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22623.json",
+      "sha256": "7f4bf62b565079e68bf1e2c317d1716c399dee4f0e4ed1a41f5e0950aef631f4",
+      "bytes": 836
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22624.json",
+      "sha256": "e88c64c943958575269f641e7ff6d30518874a3dc952388ccdbf1aec4d7a5fdb",
+      "bytes": 1219
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22625.json",
+      "sha256": "1c69f64d9cea43b9c5f3ec154d17d7ee01473f195049022535d624e9df776eab",
+      "bytes": 4010
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22626.json",
+      "sha256": "458c5cf1a9b4c4a009a7ce53062a78e0b75543ed600356519726ddf71083593d",
+      "bytes": 847
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22627.json",
+      "sha256": "86dadaf6d6169c0cab8f980f1e3d291d19d3df29c744872287bbf44b7cae832c",
+      "bytes": 836
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22628.json",
+      "sha256": "f15f0fb69659b457a1553f586bc707137e53c5ea9085c1b564f9fe403257a8ee",
+      "bytes": 902
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22629.json",
+      "sha256": "9711c01ba329237853454c42c0bcbef0fd1b078ea4ea0191d2ea37be53bfa024",
+      "bytes": 922
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-22630.json",
+      "sha256": "e80997b0d9ddccdcf78bd7348ec9280be02cd517fb4dca1d2930ce3afe78cabe",
+      "bytes": 626
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-228.json",
+      "sha256": "f4119d46893313b531c80c1c21b743527bd2cc9d2722e234c0fba8f1159f1715",
+      "bytes": 6678
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-232.json",
+      "sha256": "e215aa7c711ae328614d683e6bb9c5fdc60bf8bf90cf97207587c9a6c85212f7",
+      "bytes": 1843
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-24.json",
+      "sha256": "0e8479ae923e65a4138142465880c8c45dd249b56fbcac1e33d432879f9448c0",
+      "bytes": 15536
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-25.json",
+      "sha256": "e0a7034ed318f9eaa3e5fd55a34a156155a66ad95b83d78eef272a561ecfa44b",
+      "bytes": 1647
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-252.json",
+      "sha256": "8f7b1ec5328b6d661340a4ff1c4bc53d7ba7083c1391588110cb5f025d3143dc",
+      "bytes": 1223
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-256.json",
+      "sha256": "3ff39b85815093a15a5936e2005131944f832bbef23eea801d2718b56ee18700",
+      "bytes": 3172
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-260.json",
+      "sha256": "13d22680384ac5c9e17ad905457bff2bc5491a1a2199ac93def458cea34a862a",
+      "bytes": 3086
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-261.json",
+      "sha256": "7686e02b1bd4d90f12ff5a7270f50713edc830d646e32644fc32fb03c77de3ac",
+      "bytes": 3051
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "sha256": "a5638fcbea16dcf6dd2aed02634e6216d9e236351466159cce7ee569c3e49f83",
+      "bytes": 4300
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "sha256": "6bfb61730962de9569acdea7f48df0780e3025fa6d03bf4a5787587bb8875cc7",
+      "bytes": 5785
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-266-20261031.json",
+      "sha256": "3bb4dc343bbee8b0b8cc39b8a641c3054ba83b36b51112cd855b9623b353df83",
+      "bytes": 3448
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-26s1.json",
+      "sha256": "a4f7fb254ed14d7b42df8883ea042f4f8f72226aa064c18584e146ce65bff64a",
+      "bytes": 6486
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-28.json",
+      "sha256": "01b2003363f1c0561d62521401e55d873acaee37f818b5b41ad7a368bca497f8",
+      "bytes": 795
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-30.json",
+      "sha256": "db7f91589c3fd13da1f9aba21b0b149d9417596237486f0818fbcd1a70cb4199",
+      "bytes": 902
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-31.json",
+      "sha256": "ccc8c16622648cb03331edfdabad885c59662a77ef206fd5e6d86e54ea63a452",
+      "bytes": 2276
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-32.json",
+      "sha256": "43c04ddfa884be408c97c365c82060b4c1a7815a701936a33b01217d6a50adb5",
+      "bytes": 1205
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-33.json",
+      "sha256": "012c5988403867ac64b2f0b77ac85c71ec9ba00e931527cc3f79804eb7d6b8dd",
+      "bytes": 1996
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-33@149766.json",
+      "sha256": "e990814316c859d5da66be76a3ca53cfeb672a649566cdf28f636a32a937dedf",
+      "bytes": 2107
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-34.json",
+      "sha256": "281b2587d0032810e53bc45f9c34176e7edd5c895cad0123068be84b53a29e84",
+      "bytes": 820
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-34@149766.json",
+      "sha256": "c50e2f901b758bdfa82c0993bac3d939ec6cfaead308f24c98bd94d0a20bb246",
+      "bytes": 827
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-35.json",
+      "sha256": "9a75a884cd38bdcc3607b11e8c12bdf6a2a39e458266c270118248bb80fd9eb0",
+      "bytes": 1966
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-35@149766.json",
+      "sha256": "3356ed32974b6ad41bb44fd41acf98faad4c86ecd35181a55c32fe02bd5a2841",
+      "bytes": 1972
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-35s1.json",
+      "sha256": "cf0a4281d1fe3bff06dc3fa0439c30d255985d5bbed90e2eed560d43c5959766",
+      "bytes": 762
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-35s2.json",
+      "sha256": "72e538c43c541190f0374ee0c93a4f09855d720c39b046ac0c947346a4e402ca",
+      "bytes": 2883
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-35s2@149766.json",
+      "sha256": "ec9bee93f5096091e15bf91550ea0ae8d5f3f84278a316fe97b3533771042ea5",
+      "bytes": 3003
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-36.json",
+      "sha256": "eb540b70e64ce1c995c0152c2a119b164adbf236fe4cf7ecae18cab1ef0a9953",
+      "bytes": 2002
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-37.json",
+      "sha256": "acbce46f4b01c511bc3b6a93b024558d1c0d5d3d491a4c04d2e86f3a73d07bbd",
+      "bytes": 641
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-373.json",
+      "sha256": "5b9156ee0fed8966b6e326ea57e5ccbe5d25260d0c21d3ff405c7edb98143775",
+      "bytes": 2404
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-39.json",
+      "sha256": "086a20a6b502dbd5ce9b831464a45df1ccf8a677799770702db18658af2cbe65",
+      "bytes": 1481
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-4.json",
+      "sha256": "e5c14b3bc49327108ec642c9b7665c5ba895e6e9c51dde969cb3d1a661cb24b3",
+      "bytes": 1256
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-40.json",
+      "sha256": "716ee0bb56c521ac400e733a6e56e0ac76874d6215661d3f5fbeb1ae4dbee83e",
+      "bytes": 2978
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-41.json",
+      "sha256": "5308d9d6ef4330f286fdab739697d4367c3b725304009038d155ea919606a406",
+      "bytes": 567
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-42.json",
+      "sha256": "9e7a35da18799eb19a22747560cd3c3faab188a533c817d2f7ef0e9d5334716d",
+      "bytes": 3849
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-44.json",
+      "sha256": "55f9e710d0a9717b76239cb3dbab276c405757e702a60aa0af4c0e3e8b56231e",
+      "bytes": 4164
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-49.json",
+      "sha256": "1e08945ada6ed95fc59a6eedd3002d65a5ce7795a6fce856b4220686e158ad8c",
+      "bytes": 6037
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-5-HOME.json",
+      "sha256": "106c663142ad0fe894f3bc8a8dd0ef4d8568f7e8e670077642fccdcbd26cc0d3",
+      "bytes": 743
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-5-PE.json",
+      "sha256": "9e8d92041509ef6463908a927a930d81933d78ae4f9f56097caf59f230f158a4",
+      "bytes": 3460
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-5-RESIDENCE.json",
+      "sha256": "640270bd37de817ec1c84f6fc3b3eff79c9ce83373d579e99e3490e2bbec1aee",
+      "bytes": 1993
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541-1.json",
+      "sha256": "a3440ff187738e79b2efd2f1b46d84943c58d63b217df3876a173bee7bf95e0a",
+      "bytes": 1552
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541.json",
+      "sha256": "9f63bc508a702e2a4a48a59863205959be9f389343e83faa1d5138569960412e",
+      "bytes": 3846
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541@138613.json",
+      "sha256": "cb157dfc5363f0ab904ec4ad18875fcedbf63dd2b67c9e02376592930dfcd99a",
+      "bytes": 3825
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541@149766.json",
+      "sha256": "5c60e050c6d79f8f350dcf6147a906b22c5d0a0b3720037bc3ed6a6d779ecf8c",
+      "bytes": 4065
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541@153161.json",
+      "sha256": "e8cbfb486db61391e526e045a366bba83becc222640d8732fe50cf6dbf2276d1",
+      "bytes": 3829
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-541@153671.json",
+      "sha256": "3eeb8206df7e36c24a8c1a4529026c25d16e9b19c248edc5ce1663136667818e",
+      "bytes": 3825
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-542.json",
+      "sha256": "995aa937c3888da0e78a15dc3c310d804327502c0266208929581b5f1a1fbb52",
+      "bytes": 1064
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-543.json",
+      "sha256": "a5a488166006ee2fef62c4a55172f56bfc18c7d6ca2d033d31553972d8cb9aae",
+      "bytes": 466
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-544.json",
+      "sha256": "9fffe100a1e4390e74876f12c1674f3dc23af1abb8d5c94ddcba4ec3f7d6e713",
+      "bytes": 1746
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s1-5.json",
+      "sha256": "72bd91135607bd7c009dfb4f33c89c43c8f42bd50ec51b1edd2d47367e5d65a6",
+      "bytes": 2914
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s13@149766.json",
+      "sha256": "3c73686d6d28b751513538d6f1ffe73518bfac70aa63ff161b43be3bc062e72b",
+      "bytes": 1152
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s13@153671.json",
+      "sha256": "211636b32d7f84452b8bb4a6513eefbc05c1bbe097532c878384a4ecb181c5a8",
+      "bytes": 1378
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s14-19.json",
+      "sha256": "f91e2b5a119bad8d633f4cb5d28a8ec0d91d8a8c7e5834761e4d62208dbac568",
+      "bytes": 4166
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s20-26.json",
+      "sha256": "230598c221fa7fa0ab9c773ebe46de1039f4fec8017985631e4d547c412dc44a",
+      "bytes": 11891
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s6-13.json",
+      "sha256": "4020e42af6ebfb74621adcd7f89ed0d56770dbbda4cabfe8346b6827c31b1680",
+      "bytes": 7508
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-69s7@149766.json",
+      "sha256": "9e5ec602ae13c8026fe6529edffbf0d3f0e86b65a5d31b1a6a99d2b9245bc5ff",
+      "bytes": 1732
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-71-EMPLOYMENT.json",
+      "sha256": "58b00a1fca1d657c21f02eb207c015d3fa732a6b1db0d66704134e5d269cfe9f",
+      "bytes": 1318
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-71.json",
+      "sha256": "90c520885d13e4d316cd439cc4e9ffb887a96d38552264f01e31947fed93d351",
+      "bytes": 7312
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-72.json",
+      "sha256": "e193c23dacaa5f4757cb7e066135af0fab78abe779d42c47aaab774f16295c81",
+      "bytes": 347
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-73.json",
+      "sha256": "b0f2923a3eee61a68ef9737fc636de4588dde6f4443866564831749cfc635a89",
+      "bytes": 2057
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-74.json",
+      "sha256": "cdbffdc0622b8dad102f0c238823d38276b6fa22fe2f9c53620b61c2d8d07e3a",
+      "bytes": 3172
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-75.json",
+      "sha256": "22816341f656fc32bbcbc5025334013f8dcc9b8ea8dcd4fbd52f4173ef5cf01f",
+      "bytes": 2223
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-76.json",
+      "sha256": "ee5f6cd5e9ddfa467cd8ad62b4da1a3e4175c9ef05024284a7cb206a7d30835e",
+      "bytes": 2279
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-77.json",
+      "sha256": "3d4b81552f6f7a4a720a2851fa7d44c5c167c8b920cbf4acbca5d03628b52b5f",
+      "bytes": 6178
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-78.json",
+      "sha256": "b66c49b3d6f85bbf809bce983030eb50047a053a135355c45bd1c1d052f18070",
+      "bytes": 1114
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-79.json",
+      "sha256": "b96255f17c3d622a21c8e30c130436a6d0dff1bc5eef4afb86a3afadedc76194",
+      "bytes": 561
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-79s3.json",
+      "sha256": "65577e16c0074be1e2f42a4049448bef090ec84155daaae75a5b3f2a5cb61678",
+      "bytes": 6810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-80.json",
+      "sha256": "db9f18af056de7ceef144f61f98f0a477278aabb2bd08d4d7f446da33660acb5",
+      "bytes": 491
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-801.json",
+      "sha256": "9adff42e9f9b0b8fafbe2bf32ae1b45c61e256260e24101d8ec5d3a975dd15ae",
+      "bytes": 1671
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-81.json",
+      "sha256": "13fa1a6dbcc16bb16b3afa17f4a0785688890909eaaa374bce16a156e8195cf7",
+      "bytes": 1322
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-82.json",
+      "sha256": "3aba8be53924cea11e6be1c0543600797bf2fccf83f1fba70347c9b3e30995fe",
+      "bytes": 1526
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-83.json",
+      "sha256": "43618a9533524abe30c058c252075696510220e9a00b8a51a6922d781a961dbe",
+      "bytes": 5586
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-84.json",
+      "sha256": "f7a34be2aa75966074bb3f5442df8aa73e5823f1f86f43a6b011e2e4f6ae742c",
+      "bytes": 2509
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-87.json",
+      "sha256": "c93062c06c455c2b8de3c27b9fe8d11527a2a4a7593d0a2a0fb1e5066656f279",
+      "bytes": 3947
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-88.json",
+      "sha256": "cde765cda8d285827454e588040ab4e7e13cbbe7da13c1b1099c477841172b8d",
+      "bytes": 2934
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-89.json",
+      "sha256": "350b168aa710fdcf4d8cc32255301027869bc758102a32210110231ec8106b8f",
+      "bytes": 701
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-90.json",
+      "sha256": "6d58d14a1882339af374569d35f18c68923bbcbb6d3a0024ef70cf742b6f222f",
+      "bytes": 2608
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-901.json",
+      "sha256": "c89cd000f02e5dd2ccca29f26a6eae209c0e89491eb59e5ed56dbbfbdd5eb8e2",
+      "bytes": 6127
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-91.json",
+      "sha256": "c3c2217cc8b8868b91d830901ee6837da3f14adc328bef701f7206439887c380",
+      "bytes": 1296
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-92.json",
+      "sha256": "21763b5fa190b74811e34c6e2156842142f950c6d899947ebbe9bbfd5ecef95e",
+      "bytes": 5739
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-93.json",
+      "sha256": "2ac37e76f31c91190ea24790d5fb7e7140343844961f6a657e38729c334321ce",
+      "bytes": 7012
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-94.json",
+      "sha256": "249dd934c4eab08f4b484fc005c60dc42adda6a993ecf5fa141c009e37596c52",
+      "bytes": 3116
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-95.json",
+      "sha256": "7f0ebdc4a63fbe43618f5cbfd7b3311e4555437aca13f2ee1d3f6fb7045a68ab",
+      "bytes": 8342
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-96.json",
+      "sha256": "0ab5ba0ad92ca91b5da8b7ebb89572255cd61944abbffb5e9cfb9c2c5e00d186",
+      "bytes": 4618
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-96@149766.json",
+      "sha256": "2ab8bf5d5b69b7f6131de728076aef3412f275d7055d39378f8390d2cc828147",
+      "bytes": 4953
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-96@153671.json",
+      "sha256": "42e2e136d02d64323a6d69b9bc7491ce408a0f50ac88bb6b2d4498d65ed5ecab",
+      "bytes": 4746
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-97.json",
+      "sha256": "aaee7907f390e7b1a938fff51f439b60c5b02fdfe17149b11f938e6505bacc5e",
+      "bytes": 2373
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-98.json",
+      "sha256": "c97c0061845eef996ef01d5484d30c51a19ff54e407774ac34d1c989538921d4",
+      "bytes": 1368
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-99.json",
+      "sha256": "c5eb10ae8fc7abc891a8745379160982f131ffba5595c063cb861fd4f2680449",
+      "bytes": 3125
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-FORM-DOWNLOADED-20261030.json",
+      "sha256": "f5bbe6738d72841978606229cc62d6fab55fe37222981ae29b5b869daf5d45c3",
+      "bytes": 23558
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-DAP24-INSTRUCTIONS-DOWNLOADED-20261030.json",
+      "sha256": "a8bed4d1ed344bf8718eb149367a166bba0cc69af4973a01d605a1d413279e35",
+      "bytes": 30128
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-FORM-DOWNLOADED-20261030.json",
+      "sha256": "442e18a6bccb99cb3dc1f54050af5e8fb7a9e168270c15dd5738a234c1a5c511",
+      "bytes": 4388
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-SIMM24-INSTRUCTIONS-DOWNLOADED-20261030.json",
+      "sha256": "d78c925930aef998a1ee63bc682fdf68eb954d67f346128e151885010dd371e3",
+      "bytes": 15457
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-COMPLETE-READ-20261031.json",
+      "sha256": "c50c353b6b9e8c6b03ab1742912d668fe1134ef78d5ba4cafed76e054592a4fa",
+      "bytes": 70348
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030.json",
+      "sha256": "3a372d41b85dceaae38ec4cdbcdab134a4ce95d7a13ef8b94c5949dd8acfb776",
+      "bytes": 14401
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-COMPLETE-READ-20261031.json",
+      "sha256": "49bf8b681c9cead62373cfd2fa60ace779b65bb8c22847c72657893558e3f01c",
+      "bytes": 158747
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json",
+      "sha256": "16855ea51a23911242640e3d1c6529a6f712b286eea2d5f052c7411382d9f90b",
+      "bytes": 28964
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704-PART1.json",
+      "sha256": "d983ddb45bbb85936a1c47dd2d176b401eff4adfc4734d38487f0c5888ed71d8",
+      "bytes": 8885
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704-PART2.json",
+      "sha256": "c8fca1ad909030c0d57dd87e2a802cfc845960bb16450d3cd6638dd8267dfcbf",
+      "bytes": 8755
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704-PART3.json",
+      "sha256": "5e48e2e25d34b82dafa5d09279b30eb88352231e3573eab27cd8467b06859ee4",
+      "bytes": 8760
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704-PART4.json",
+      "sha256": "d9e43ad6dba67968e90b7113508b95fe488cc13dd529a2472c1bed75949846ed",
+      "bytes": 6192
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704.json",
+      "sha256": "1433a613d11137248c8548f2518760adce300491b49ed673d1b43774f1099057",
+      "bytes": 31610
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG941-CATALOGUE.json",
+      "sha256": "91db8e87ca0d64409302525b1aadd3338fa7cd66e7f093abfdf269436129ef28",
+      "bytes": 8215
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-LIFE-NUMERIC-ANNEX-DOWNLOADED-20261031.json",
+      "sha256": "5621dd95297634902e192fc77e0b7ce7e2d3522a85938611ecae94182be4220c",
+      "bytes": 202743
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-REGISTER-ANNEX1-DOWNLOADED-20261031.json",
+      "sha256": "eb4112877cb0496b91a9f09788161101e537e8041159d2b189b0fa4e3a8b8e9a",
+      "bytes": 27544
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-REPAIR-ANNEX2-DOWNLOADED-20261031.json",
+      "sha256": "74bb538a37cd90167ebee32ab26d71ecd7ea14b4306a6bae65e4271b30ac5ce7",
+      "bytes": 4371
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json",
+      "sha256": "a8772c7ec9fcb9406938f2cedfa1dfc29899eb3bfdb7921596fe53aebf660a02",
+      "bytes": 702
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-LOANS.json",
+      "sha256": "2d24d7fdbc3317240f3a09524a4cc0cd29cb6e4866d5257a5f841bad0d703298",
+      "bytes": 12044
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CAPITAL-COST-ACTUAL-ANNEX40-20261031.json",
+      "sha256": "681b7f48d90bc7ecac167ea74c82d7f528498699b01307b767f5a5ce9f75acdb",
+      "bytes": 18728
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CET18-ACTUAL-FORM-20261031.json",
+      "sha256": "b78396429ad1ae5aa0b2ed1e9a4361b72ecb0947134a597391b5aa09f60dacf2",
+      "bytes": 44234
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CET18-CAPITAL-AND-SIGNATURE.json",
+      "sha256": "db341bbc43ea36f1f4c1464d9db1beedd9efe977fcbd48d083a25938fdc0906a",
+      "bytes": 3348
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CET18-INCOME-DEDUCTIONS.json",
+      "sha256": "afb59f723294d8110440ba6a662eaba7a5a67cabd934bb630b591067eb006ec7",
+      "bytes": 15186
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CET18-SCOPE-IDENTITY.json",
+      "sha256": "ca92f7075e39bfcac5bfa55f1c6b4f7a8868860aacddcc5662924c95e43227f1",
+      "bytes": 12679
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-CORPORATE-CORRECTION-FORM-20261031.json",
+      "sha256": "a2a4f2789f9aaf1794feafd725e8c6e620f90fb332a6199193e764edd07c0769",
+      "bytes": 7645
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-ACTUAL-FORM-20261031.json",
+      "sha256": "e4c79c32be148501308b9a3bf99cf534ccbe64b66df3ccbc92b3261740e8982d",
+      "bytes": 5304
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-CURRENT-20261031.json",
+      "sha256": "441a80910b1b368c53a1ab9b7fb6be4d2ef2046d3cd45e0a2519f08de952ca5c",
+      "bytes": 12978
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAM-REFUND-ORDER300-20261031.json",
+      "sha256": "6148fe57802933b3cea0201e9293ee05c7b358899f40ff75fa3a0e3f847d441c",
+      "bytes": 1753
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAS-CORRECTION-CURRENT-20261031.json",
+      "sha256": "dd52c55817d14a0d48921a8a6c2367200a41e58dc4e6990c9a3aa793e3f1064d",
+      "bytes": 33681
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CNAS-REFUND-CURRENT-20261031.json",
+      "sha256": "17cd5c372cda0477c31cfe578426b27b50f1a7189791bbbb47683094c1843d3c",
+      "bytes": 59101
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CODE-73-REPEAL-20261030.json",
+      "sha256": "8935f1331a6b96d429ccc3e79e84c0452cd38ec0131bab2213655344a207039a",
+      "bytes": 2506
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CODE-UNIF-INTERFACES-20261031.json",
+      "sha256": "80eeabfee8d4245037c5ea46e127fb62b6dc27b933a239398f842f67754f5aa9",
+      "bytes": 31266
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+      "sha256": "0a86a343e1d9c88dd8a61ed1328970250b6235c50abf41fd719829c64dc780e0",
+      "bytes": 31767
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CODEJAN24-15.json",
+      "sha256": "98ffb23a4108ce519055886b7f57ea719ede86a367b2863cda3a94339d386841",
+      "bytes": 1024
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CODEJAN24-151.json",
+      "sha256": "08043c899ad2eeb4b131385a26afa47dc299247add284394fe736f19ece7e922",
+      "bytes": 1001
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-COMPANY-RESIDENCE-20261030.json",
+      "sha256": "f0a068d080c9c4644a1b4b1d7768f99dae37ae56109e05dcee1bb9ab36b8467e",
+      "bytes": 1192
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG321-AMENDMENT.json",
+      "sha256": "d2d4385f8b0ab2f5d94fed5ee7b4d060cf7440748f22b6a9cb0682b1ee0ce748",
+      "bytes": 4243
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART1.json",
+      "sha256": "0aaf6f3160a30b22a87fdfa9b97d0920f6b6fb7591a02f236d49a8b4f73aae00",
+      "bytes": 8803
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART2.json",
+      "sha256": "fe81082e3f8dd511c7f1ab3048427bc13a84ce956e4db85fcf1ee46677129302",
+      "bytes": 8813
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART3.json",
+      "sha256": "98117272365011783c9ea731c4039d80cec504ef79cbb92ffba6aeade6eaf7ad",
+      "bytes": 8824
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART4.json",
+      "sha256": "02ad67db3a57dbbf292939271d0d5cf78c096274392149c777876c4f2324e88e",
+      "bytes": 8954
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART5.json",
+      "sha256": "2c3002dabe0b1da234a70ac189562944e9215b913aaed48883b25f1a1da430b6",
+      "bytes": 8876
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS-PART6.json",
+      "sha256": "7ca2c600601b467daf4f906083a68b80538f5fb39e2e42cc28362aa80ba3cfd8",
+      "bytes": 1360
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-DEDUCTIONS.json",
+      "sha256": "31d08d258b7555513ef22c1a9607689464c0b5c95a5ab8160244bb3154a04ad6",
+      "bytes": 43934
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-30.json",
+      "sha256": "f36b2cf4bb156c9aa12c4e9138d469381292e1521b4b9be7604465b7125ed534",
+      "bytes": 610
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-31.json",
+      "sha256": "97733e873b7ffb1dab9d50ad669db1bf56cf79984923997704f1fdfa511572e0",
+      "bytes": 583
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-34.json",
+      "sha256": "e4eff92b6afa134f23f52c9e44e0c944766c2e1d6172457a9aacbbc7a8850830",
+      "bytes": 888
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-39.json",
+      "sha256": "6c214d362bee4051c563f6a867979746597d36d09596504be49c26da2fda7968",
+      "bytes": 790
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-391.json",
+      "sha256": "3a1e88250629e17b1b3d3ab1c6ea44b482a16ef75eafc9e978ffb5045e5f9637",
+      "bytes": 1051
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-40.json",
+      "sha256": "d74835975e3471d1d0f0fe740df3eed345bfd030db41d30c2ec7eb88c29274ef",
+      "bytes": 597
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-JAN-53.json",
+      "sha256": "d6ef00a52bb4d868c2e5532fd7ea1b4b4bcd10a9f00538bd825495e66231f38f",
+      "bytes": 452
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-LOSSES.json",
+      "sha256": "6cb06fc94f4d922bec9a075e74ed70bdfd8a371bbf99fb64397e24afe2656441",
+      "bytes": 2351
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-HG693-TAX-PAYMENT.json",
+      "sha256": "d5c9ac21ea4a5460d310a8bdcf0721c9d533c0a3c37e84ca83df7bee09f841f8",
+      "bytes": 2275
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT10-2024.json",
+      "sha256": "4f962a0306023c59fc19a95f8311a1784d0f9bf17b5fe91e844187d38c9cb272",
+      "bytes": 2629
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-AMENDMENT145-2024.json",
+      "sha256": "01325faff1be2ec21e5528b3c6b7bfb2a4430bb0e34cf27a63a542fc9a077209",
+      "bytes": 3296
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-FORM-SELECTED-20261030.json",
+      "sha256": "59e584fc96b37d916f4e272e1a4ad2eb6adb74f92d731e4865839d8c069cdb24",
+      "bytes": 18778
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-INSTRUCTIONS-SELECTED-20261030.json",
+      "sha256": "22486ebaf2acf8db036695d1c6e169b8bf8d761a23e2715c162ca1d228a1cedc",
+      "bytes": 36713
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-CORP-VEN12-ORDER.json",
+      "sha256": "967e78fb01a4a2ef711fde9841d5465ee9481bfd8d9c34ea4462a8a300ca3b07",
+      "bytes": 2012
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-DAP24-ORDER60-CURRENT-20261030.json",
+      "sha256": "7cddd08bf365e1184e4b7fab20c4f96ded60be206a0afb05a6076aac5ad96140",
+      "bytes": 4242
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX3-20261031.json",
+      "sha256": "5982628edcaf6c7b6221b144a9ade3ddf046eb78773f08b7135b5ef1b1b470e0",
+      "bytes": 14051
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX4-1-20261031.json",
+      "sha256": "d9e2e220ff519c24ebeb6dd4cc3894c0ef6ab097d6f65e3ebe46593d0088d146",
+      "bytes": 15226
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX4-20261031.json",
+      "sha256": "491404070dbe821e01870f38fd50cf8550bb6222b78e3875273b920ec9cbff27",
+      "bytes": 17058
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX5-20261031.json",
+      "sha256": "0fc8d00546b36703b8ca040b94850f3711fdc973e75bcb3a995a7b40995ccfb9",
+      "bytes": 13299
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX6-20261031.json",
+      "sha256": "baa5a919fbb98a2eeae9f4b757cc73a12eca328e3c2254cbd613578e69f507ee",
+      "bytes": 19504
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX7-20261031.json",
+      "sha256": "6e42ea29a398fbb448c6a26f53384174124260da84ecd43008a0577e53079c7d",
+      "bytes": 15525
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX8-20261031.json",
+      "sha256": "a14202e644801c46957ec072e7e198e73b4124459e9dcdc2c21d1e088320d886",
+      "bytes": 18353
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX9-20261031.json",
+      "sha256": "3b8ff5e5ea390caf8c2a46c5e6f29a2ca09001a6c7044e3f4d1420383d4fc3f5",
+      "bytes": 17797
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-CNAS25s1-20261031.json",
+      "sha256": "d67fb05aa7bf546c77eea7c41ed693881c27a578868a391761ccbbc5303be16e",
+      "bytes": 1182
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ORDER56-ENACTED-20261031.json",
+      "sha256": "4515b9999f4a5375fec2a1c7cff5ef02b40053a6a5b7bb0419096e257f5c97fc",
+      "bytes": 2476
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FOREIGN200-4317-CURRENT-20261030.json",
+      "sha256": "3a867caced7ff0ee21a30e405edcfe6c2e946c60e8884577f19e82f59df7f111",
+      "bytes": 3588
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FOREIGN200-4317-JAN-20261030.json",
+      "sha256": "e389a17f976de9cc261b6c9765d2f762ae63df45d1c37e17287572db2496435f",
+      "bytes": 2945
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FOREIGN200-CURRENT-SCOPE-20261030.json",
+      "sha256": "aaa218dd83577e79d61fbd8d413600c0457585dec2ef952790e8f6507d7c8ecf",
+      "bytes": 2559
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ACCOUNTING287-CATEGORIES.json",
+      "sha256": "31b95ead121089da6371d37a2c2cd058da0d9eefb7c7d2d1e1ce3bc0c25a9fa9",
+      "bytes": 3657
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ACCOUNTING287-CURRENT.json",
+      "sha256": "6ce890a86900203ca0add1fb29d738c7f19aab201735a577ff3b459c5ce9c416",
+      "bytes": 18451
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-AML308-CDD-SCOPE-20261030.json",
+      "sha256": "a9ad1770e7c59b352bb95fbb4f4e602fa80a2395d25ea80839996f0810104ec7",
+      "bytes": 27679
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-AML308-OPERATIVE-HEADER-20261030.json",
+      "sha256": "67ef1ba15cb94f7868ef0c489ca23a8de9bc6f360a1bdc4db59bf95368e0e101",
+      "bytes": 2774
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-AML308-TRANSPARENCY-20261030.json",
+      "sha256": "4cfaf2a79ab1d95c9a62a6fea594aee8305243f677bb9be8a273469ac062c659",
+      "bytes": 21483
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-BO-CHANNELS-20261030.json",
+      "sha256": "70c65e8aef1b2ec208c3558d101eb451c80cb142579a3f4b902388e621e48bb1",
+      "bytes": 1692
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-BO-DEADLINE-20261030.json",
+      "sha256": "ed98857878c553b2ad1f26b76528c7546864af636748a23dc8777365b55f24f9",
+      "bytes": 1407
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-BO-ONLINE-STEPS-20261030.json",
+      "sha256": "40f7e7952deca06f58e8b5832da2d0564920ad5748595464c96f97ab44a9b967",
+      "bytes": 2668
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-BO-SIGNERS-20261030.json",
+      "sha256": "ab40c8a72ae72f64f67588102c8ddc96cb8fa59f27f97fc9d0948fb42c06481d",
+      "bytes": 2079
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-CURRENT-TARIFF.json",
+      "sha256": "82f7b7cfbc9bc8d09fce90b5c9d9f1dc60edfa030e8e83c8db02767e05e98e0b",
+      "bytes": 1300
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-II-APPLICATION-PDF.json",
+      "sha256": "9575f2fa4f40a6c03d87491bd08d184d44c58d21873501f571921e9bcb23c761",
+      "bytes": 5918
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-II-BE8-PDF.json",
+      "sha256": "0f3c9cfcd75ec4b5b5816be827f9ec6675b0efa9aa56db36b0a8d0a32c594c77",
+      "bytes": 4993
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-II-INSTRUCTIONS-PDF.json",
+      "sha256": "dacc56e099d80908bfee6bd9e6859a2591deb45b94ade6fef507c74f456c06d2",
+      "bytes": 11848
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-II-REQUIREMENTS-20261030.json",
+      "sha256": "f6f81882786db03f613fc83146d45f13c31a9a0235ea0ed69bdad20f92a9b5a4",
+      "bytes": 5538
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-II-TARIFF-20261030.json",
+      "sha256": "b1450d1c8c803513d1585e5f2639d96c615384a44e3b8a300e014452471effab",
+      "bytes": 1224
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-NAME-REQUIREMENTS-20261030.json",
+      "sha256": "1fa612de1f53d474a3604103c39c90c9b798f6265cd0efc4571ade39438a1b80",
+      "bytes": 4761
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-NAME-TARIFF-20261030.json",
+      "sha256": "0154c019b634780523da794fbb0ac4835ea1159cb6ce56de16974082323fe9b5",
+      "bytes": 1950
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ASP-SRL-FORMS-20261030.json",
+      "sha256": "3752c736c45fcaae25e213452bb4922e362287b05d06889e3de2ef168ba26a69",
+      "bytes": 5459
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-CIVIL-CURRENT-20261030.json",
+      "sha256": "a8c5d81e419e18ebcfa622da9225e44d01bfe6cca5ed9538a9c290abeeba23a2",
+      "bytes": 5722
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-CIVIL-LEGAL-ADMIN-20261030.json",
+      "sha256": "67f8cafc0e9dd3ddaa3b8d26cefc0c8ade7311c927a8acf5eaf83ce432724222",
+      "bytes": 1404
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-APPLICATION-PDF.json",
+      "sha256": "9a9540a7ff60f822f88a89a9e41f8fa288c26bc0ec44f5cfbaa367d7608e9e95",
+      "bytes": 10946
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-BE1-PDF.json",
+      "sha256": "b4bfd1d628b194f5fa77ab653b3d538456b9cd1a487ebdbb7f67e65768360f5c",
+      "bytes": 11867
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-BE2-PDF.json",
+      "sha256": "2224a1f2ece9d29abcc1da0a4a0fc837de75ad8a34425e9ac19f67c353591dfd",
+      "bytes": 11737
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-BE3-PDF.json",
+      "sha256": "a8ba6b108a4bfceb063ee1361dda63c3e19fb0aa1cd8cdec2547476fe74f78ec",
+      "bytes": 10026
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-BO-UPDATE-INSTRUCTIONS-PDF.json",
+      "sha256": "9911793d6507712a89f65fb284bab35a7c8acdfe9ab54992a01b509ece0569d6",
+      "bytes": 10077
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-BO-UPDATE-PDF.json",
+      "sha256": "50ff1b53d839704d1c0ba5d82d1075d21a5cdef5b439d3eabfd149d56a377944",
+      "bytes": 4366
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-COMPANY-INSTRUCTIONS-PDF.json",
+      "sha256": "1927ad621fe28da658b91839bcb3ae13234cb7fde87296efd4cff57f54ebbe55",
+      "bytes": 16545
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-CONVICTION-ROLES-CATALOGUE-20261030.json",
+      "sha256": "5a10a3dc759d910f8cf4a329a32bec86ddb89a0ecaa257a2c019c587269c4324",
+      "bytes": 1140
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-CONVICTION-TEMPLATE-CATALOGUE-20261030.json",
+      "sha256": "9c4c465729122502e4622fdb0385f1029a8d5d262e3a9a0f73006009708ac98b",
+      "bytes": 861
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-DUBASARI39-RELIEF-20261030.json",
+      "sha256": "a52d8aba085440f42a480508af036c424ef78faac5bb629435502c5d49765a80",
+      "bytes": 8026
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-ENTITY-FOUNDER-CONVICTION-PDF.json",
+      "sha256": "370b8802dd14fb17872fd60a39f7e305659578e093bc55fd5132d63e03ff1800",
+      "bytes": 1595
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-FOUNDER-CONVICTION-PDF.json",
+      "sha256": "03015ec013722f2f5ca34e60e2d8155b93393aac2965d0a280dca8a2c1808326",
+      "bytes": 1494
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-HG707-ENACTED-20261030.json",
+      "sha256": "08064873cb9facbf02bd72b4677a60637be3e1fd642c0132266b3002c4082f07",
+      "bytes": 2546
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-II-UPDATE-INSTRUCTIONS-PDF.json",
+      "sha256": "96ad81dc20d2178d571c067750fb3fb1ed16799c9cd5ac5dee6a43e21e86d7b3",
+      "bytes": 10057
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-II-UPDATE-PDF.json",
+      "sha256": "33adbe0c954291bdd201609593f8850e08e4563f61c76a0eb2d4f0f887886f7f",
+      "bytes": 4168
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-LP135-CURRENT-ACTIVITY.json",
+      "sha256": "0fdf792f94260a9cf7993e859421b32d7face0fa81e61900bee6968257efee53",
+      "bytes": 905
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-LP135-CURRENT-SELECTED.json",
+      "sha256": "b5087a84b8fcefe9cf17101f612243d9c86c60c6bb7287198ba91a52a47ae717",
+      "bytes": 12031
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-LP220-CURRENT-CONTINUATION.json",
+      "sha256": "1b05250d672c4d0b31ee886d61db70206ad62e2e325743e4d504f5d4e882e8f7",
+      "bytes": 7859
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-LP220-CURRENT-REGISTRATION.json",
+      "sha256": "65a601f4bd40f06f0afa51aab4f496f6b2d55098dfd919448256b4a218a74400",
+      "bytes": 21605
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-NONCOMMERCIAL-NAME-RELIEF-20261030.json",
+      "sha256": "b083442ee3fce09e390dc76658639ea11e826f9d586807233788c2b5628fd875",
+      "bytes": 6910
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-POSTFORMATION-CATALOGUE-20261030.json",
+      "sha256": "f1c88356d730d26c8b8c1f7830cc0e867d8a27ae84ed4681cc07ff71f2641b8e",
+      "bytes": 2574
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-PROVISIONAL-UPDATE-PDF.json",
+      "sha256": "524fbc1679291fbbe64c69200cb1f06066c0deae296bc93ad06d3e1f53a0b506",
+      "bytes": 7170
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-SA-CURRENT-SCOPE-CAPITAL.json",
+      "sha256": "59e0e6d5abbc3d14dc3f80a87671a81af17548db990af03e41f2ecd8a8d6ae17",
+      "bytes": 10997
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-SME-RELIEF-CURRENT-20261030.json",
+      "sha256": "aad38c1e666825d9e1a444a2a0730d2902ea9b65498897ba076be4274bb16802",
+      "bytes": 12220
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-SRL-ADMINISTRATOR-20261030.json",
+      "sha256": "5797c3460385b057911fe0740c058ef43137b3e65bbaeb68e59b2f69bac4166b",
+      "bytes": 4632
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-SRL-GOVERNANCE-20261030.json",
+      "sha256": "960c6f72e3c70af8ae998fa369f80b0496f95e8785d24bca25e3acfd345fe14a",
+      "bytes": 2387
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-FORMATION-TARIFF966-CURRENT-20261030.json",
+      "sha256": "44b29ef5d4a94cf5f508af1c14a7351a839403b15220ee2485f62183a90ba0b4",
+      "bytes": 3590
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-HCC8-OPERATIVE.json",
+      "sha256": "8ec99831aa5d27d2043f599d0bb5458242b22d7b199b6cffc7041d5bedf8d502",
+      "bytes": 933
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-STATUS-PART1.json",
+      "sha256": "7b7fc4e3ca761c5bd07dade7bd8a8503c3330207088864cc99d6bf4ffb0e6048",
+      "bytes": 9441
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-STATUS-PART2.json",
+      "sha256": "8d319251bcd8bd8ff7439effdbfae2643bd7b30a7a8da815f4048d0fcd71de15",
+      "bytes": 9322
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-STATUS-PART3.json",
+      "sha256": "b622c2aa8d0c53d85eef0d360a837e964fd7e71f65a73a839d560e5222c4ec53",
+      "bytes": 9368
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-STATUS-PART4.json",
+      "sha256": "f1d1cadfd94c932b3d454549b3535ad1509ada029219e5956d3c83ddcc31b02c",
+      "bytes": 4150
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH-STATUS.json",
+      "sha256": "b86c35d7ab392370a80b082f8df0306cf3867ad515bac1271fcb7eedd618a223",
+      "bytes": 31293
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-17.json",
+      "sha256": "4df6373195ea4e67dc2dd92e803d39ade8d7872d55945fcfa956822a9d94964b",
+      "bytes": 3122
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-18.json",
+      "sha256": "ecd99a903db637d07e4061cecf7e796e01badf4fd4d2988caa30a295bf9d8d42",
+      "bytes": 1433
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-4.json",
+      "sha256": "e016b5211e6072d36ea50a3ea2d775a047ddaf6b1ab991c7c18dc04f7b505c3c",
+      "bytes": 8026
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-5.json",
+      "sha256": "fc4771ab7b1eb3a1e0ee5732f989ec59d41e7a0bc0e8dcc57e888089eb1cd58f",
+      "bytes": 4599
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-6.json",
+      "sha256": "0bcff78d16830a65ade0be8d6799af1c207d7ce06dd40de67fb238ab2e976488",
+      "bytes": 4459
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-9.json",
+      "sha256": "a61297e4536af00b518cfc88a1fffe93c2a73f668168ea0933cb794cbf92bb99",
+      "bytes": 2328
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-JAN-17.json",
+      "sha256": "2608380a69fcd4e7018a4093a77c81481e7aaa39ec62233b7dc274b1acb3f38e",
+      "bytes": 3229
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-JAN-4.json",
+      "sha256": "e89013627d0ed577f8d5c3fe77ae885f9d279de62988eacfdbf5485550d3fe36",
+      "bytes": 8030
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-JAN-6.json",
+      "sha256": "d62866ab0f9377c89ca30f43349cc1ee7fc18b361443044ec61e70c2dc0d6bc3",
+      "bytes": 4463
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-JAN-9.json",
+      "sha256": "5cfeae36fd9a45c97b361a327b38c90ac125b9176d1e70d55e1d7b0e3367a4d3",
+      "bytes": 2320
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-MAR-17.json",
+      "sha256": "0d631ec8150ddd324de48025315da8428241d7adaac95500d78eac675a71e69a",
+      "bytes": 3126
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-MAR-4.json",
+      "sha256": "740b1161c32c6087540fd2eba40d7013d6902cdc7ffd5b7f6780e898f5699705",
+      "bytes": 8030
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1585-MAR-9.json",
+      "sha256": "7ba0cbea9dc287468a771424bcbb9e575e21e9848fcf9caf3c20c2218ff15209",
+      "bytes": 2434
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593-JAN-23.json",
+      "sha256": "942f6df4fb00b6737756ec5a1a0c927186c3d02ee96c69c332a4380f73e8e8a2",
+      "bytes": 3672
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593-JAN-30.json",
+      "sha256": "5e16521fddffdd20b3e0f098f083999dcbee7d3e526c0931f92c44a8f2d44eb2",
+      "bytes": 1061
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH1593.json",
+      "sha256": "29614808192829da69b3c176e686fbc53c1239edfb4f8237ade11aa0845f671b",
+      "bytes": 26728
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-HEALTH321-ARTICLE4.json",
+      "sha256": "0d277dedb53c8725c0fc8c94e6bbd1e7533354990acaac7add70bc3646ec1420",
+      "bytes": 3108
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-ACTUAL-CLASSIFIER-20261031.json",
+      "sha256": "5db3d16d76f016550d30bde7fd3eeb0949f7475956b27bcd79b37e40332e91ed",
+      "bytes": 31404
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-ACTUAL-FORM-20261031.json",
+      "sha256": "b5b63c1c9109adc5eec32df19284b5e652a0ecd96221c0244f299624931f966e",
+      "bytes": 24670
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-AMENDMENT59-2026.json",
+      "sha256": "8c87481a5a7d533015e0bc864559cab3d3cabc2e8a1d85885d8104ab3d6a2631",
+      "bytes": 4149
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-CURRENT-ORDER95.json",
+      "sha256": "e79f2d1ca8105ba4ed6d3aeb8d147e01fa065de93e3a89b9a610e591d793f09f",
+      "bytes": 9965
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-PRE2026-ORDER95.json",
+      "sha256": "2e37156153bfd58c524163a8823bbcaa929d77e8a3a9850b835987db9b705906",
+      "bytes": 10312
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-CAPITAL-ORDER40.json",
+      "sha256": "162f934c03f2522818635ada8ba66941ceadd1dcb03565c16662bb5a96cbb01f",
+      "bytes": 1083
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-HG693-ANNEX2-PART1.json",
+      "sha256": "9401a46b5fe2768a48952c0e1bd517b0bb4b8da69b603fca1461addbd4052d4b",
+      "bytes": 8810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-HG693-ANNEX2-PART2.json",
+      "sha256": "997f22adb7f35111d2e82a901ae75ccd4de0ade275bbc09b6dcadf68419c464f",
+      "bytes": 8775
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-HG693-ANNEX2-PART3.json",
+      "sha256": "762f95cccbed05dcda6eb9db1c45b6a41155016f92aeb0a9d1dd293d934e6fb2",
+      "bytes": 8176
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-HG693-ANNEX2.json",
+      "sha256": "e34d5d9b53b9433401e3c43a04e05c4b2c19a3b93cc2c93e16a0c746edf9fccc",
+      "bytes": 25101
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IND-HG693-JAN-DEDUCTIONS.json",
+      "sha256": "68b11313203924256d7bd46d22de7c571c4806d424f56a814fbbf2aff7fe4a22",
+      "bytes": 2016
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-INR14-AMENDMENT48-2025.json",
+      "sha256": "11b99008214d81f5422113950f6d7c68d6f49c019ec40e601b040fb3da0ae732",
+      "bytes": 3088
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-CLASSIFIER-20261031.json",
+      "sha256": "f480792787b05283af861a8d36672f403081c6bdd49412a7d63005e8cada700e",
+      "bytes": 33224
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-FORM-20261031.json",
+      "sha256": "4f912f1721cb6d1758fd8a2b151ae52a124e34cdb5257810f701df62a945bf81",
+      "bytes": 13456
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-INSTRUCTIONS-20261031.json",
+      "sha256": "d04b1126615e6c3b8f0c0f08c169cf71842130a5245dab60d1a6ada827209164",
+      "bytes": 8995
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-CATEGORIES-20261031.json",
+      "sha256": "ec28d35b9ec25fe3dd933c8404bfc29e0c25e6e292150a6bbae544e20ed593a5",
+      "bytes": 97196
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-FORM-20261031.json",
+      "sha256": "7385394f79ab9b4fece17bf3f1105324e205c9cae0bef2b153d2e421d3c1dad2",
+      "bytes": 42518
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-REQUIREMENTS-20261031.json",
+      "sha256": "4684aab4983621cb8b5e0c8176991f923c1a159b2550a39b4ed8e7ccd22e80b9",
+      "bytes": 40501
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-DIVIDEND-DEFERRAL.json",
+      "sha256": "b2e3d1c8983a2230cc34d508042b0c358a27e54bb7671bf8bf99e1f10fb48f2e",
+      "bytes": 3279
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-NOMINAL-SOCIAL.json",
+      "sha256": "af95dae63063922703cbdad9b284da1faa43dfb4e1f185f0ab302664d994d95e",
+      "bytes": 8690
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ORDINARY-WITHHOLDING.json",
+      "sha256": "40a0b1830868cc02809f62806e32f9bafd245195d79de7b417b90cf825a39e66",
+      "bytes": 3320
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-REPORTING-SCOPE.json",
+      "sha256": "e5133761bd6b64f0322fe47a54468dcdcecf776be43766ad1a2e9efd32c0f3da",
+      "bytes": 14400
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-2024-SFS-DEADLINE-20261031.json",
+      "sha256": "38eba3821f6c748b7bfc971dc87e1163502fcc47b2cc4e3f03f28fb51207abd7",
+      "bytes": 1300
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX1-20261031.json",
+      "sha256": "0f554005d051bb4f7a3b5bab667bd2dd5d3051f025cc67df618f1b0fe371be8d",
+      "bytes": 17425
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX10-20261031.json",
+      "sha256": "7bf79cc60b696bced38b9056487d557421e398b3bf91c8dbc68da43700150f84",
+      "bytes": 13004
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX3-20261031.json",
+      "sha256": "b4ae24f5c02bca922b67f493cdaf784eba5cedb5a8df1f2698fc808864a2ff41",
+      "bytes": 10633
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX4-20261031.json",
+      "sha256": "d3ca997c9553983df7b595a1ffbdade2c1960ae3055747b28b98e583e05bfebe",
+      "bytes": 8035
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX5-20261031.json",
+      "sha256": "5e54f4958cb354994343f7cf95298152e1939399cd5ba04debdd235a8e13cd10",
+      "bytes": 9641
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX6-20261031.json",
+      "sha256": "7d8158bb3adec80fb87b7b8b897b46d8bab14acdfd162388366a1ba5ee39fc45",
+      "bytes": 4027
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX7-20261031.json",
+      "sha256": "7a8a01678cca36ca626ba033b197c136637e5ba626455ebdcea88931416f64d9",
+      "bytes": 7688
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX8-20261031.json",
+      "sha256": "463e0f5d6fa29313143314129cfb1e441c48f168414d2bc9b7ccbc4a13583616",
+      "bytes": 13405
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX9-20261031.json",
+      "sha256": "8ec67a35995a84d59ef0f7fd33b44aad39d3814f36d2db335874958150d1cb97",
+      "bytes": 8363
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-CODE129-DEADLINE-20261031.json",
+      "sha256": "2ff46816315386c47b7c525125cf2cc731b3435d7597790bde684ae57d1644f8",
+      "bytes": 1761
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-IU17-INLINE-INSTRUCTIONS-20261031.json",
+      "sha256": "62e46c0a5e1b7df70b39e5e63d0b04461588035187d9c70d3abaed9b0e443a04",
+      "bytes": 6432
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ORDER106-ENACTED-20261031.json",
+      "sha256": "da68f08e5b985183f1c445428d18b024cb65dfa7a44e0066872ef62099dca7cb",
+      "bytes": 3811
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-LAW41.json",
+      "sha256": "673a9593c75ce8d0f5bb0614ea313eb67b8473e0007062e2926828649f9bc9ac",
+      "bytes": 13400
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-OVERVIEW-BNM-CURRENCY.json",
+      "sha256": "7a3fcc4443fb1aef531e4df263e52a7924a3d61c35bad682e8aadff00eccecc4",
+      "bytes": 761
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-OVERVIEW-CODE-CURRENT-SELECTED.json",
+      "sha256": "80586720d4c03ab416692d5181436c53a4732e4f8c2bd3efa0de40c59638c491",
+      "bytes": 34627
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-OVERVIEW-CODE-TAX-PERIOD.json",
+      "sha256": "c4a7cf6f72202553be59c940dcb69f0df4a89cab0c9b78fbf3628a8cfe8d4648",
+      "bytes": 3212
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-CODE-ITPARK-CURRENT.json",
+      "sha256": "eea8b5b072d4ecdf51701be3139a942a1db8427f693695fdcd7c5e55506a8fce",
+      "bytes": 16950
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-CODE-ITPARK-JAN.json",
+      "sha256": "11b85b7e51b9f2f2c4ba2211d980c5e756f635a622c129e2399f4a626daf1932",
+      "bytes": 17050
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-HG773-WAGE2026.json",
+      "sha256": "f893983596f3e27136f6fa78f2d4a24b6bde8d5d258fb17ef3b89e3c1de9689e",
+      "bytes": 1482
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-LABOUR-CURRENT-CLASSIFICATION.json",
+      "sha256": "199cb8754806c8845aae77d0ec5e339cbfd5e6d358e65243fae322a4dc57eb76",
+      "bytes": 4454
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-LAW77-CURRENT.json",
+      "sha256": "172146144a540c8a3a04521ee4a5bd2e5d150761d88b70e9ddca9813cfd82ea7",
+      "bytes": 16871
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-LAW77-PARK-TERM-20261030.json",
+      "sha256": "d85bc0ab41a0e265bcb9c0695d5f77861328ee6045a56a4a1971901eeb7e8563",
+      "bytes": 862
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-PLANNING-SRL-DISTRIBUTIONS.json",
+      "sha256": "96a42b34a017cba4b7aa41c3011b73d25618022df1bda439401489cdd1ccc2d4",
+      "bytes": 5145
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-REG697-COMPUTATION.json",
+      "sha256": "28884c8b6c03c292cd8f216bdc0621e2138b11d9898645abc3c3e23a4fb74df5",
+      "bytes": 14817
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-REG697-DOCUMENTS.json",
+      "sha256": "a02d921a26e4db79f1cfe23990425f35692bf1b8d1adf93e1bd092fa306ade5e",
+      "bytes": 9937
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-REG697-EXEMPTIONS.json",
+      "sha256": "74a8d680992d5492cc9288a24ba3571a677ad10b68d488eda376e608e0556e8a",
+      "bytes": 9808
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-REG697-LOAN-FORMULA-IMAGE.json",
+      "sha256": "06ac1ad81f7129f2e78c6f839a451b9fd61ce7b8c2b264f728e02a1a7fe1480e",
+      "bytes": 969
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-REG697-SCOPE-BENEFITS.json",
+      "sha256": "14066027fd3f554cf363e0784c17ea534e72329570de1786a3f58b049ecc220e",
+      "bytes": 12265
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SFS1215-CASH-RECEIPT.json",
+      "sha256": "37081ba6ecd68a7f3b169c481f7e965cb5914a467f413a85b9a5cc7d3ed2ff93",
+      "bytes": 1841
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SFS1215-INHERITANCE.json",
+      "sha256": "b9871ff44e5a0e995ab6c300964867f5f03b84275b32df22bd999761cb9e10b4",
+      "bytes": 3280
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SIMM24-ORDER143-CURRENT-20261030.json",
+      "sha256": "7737bf7e6af67189d8db6b62681fdf0f3fab7e6dc7808b7b33856abf36754b6b",
+      "bytes": 4284
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL320-CURRENT-3.json",
+      "sha256": "91f93fd67351fa81a46f17c4526fc7b692e83b93b3a26bc44f14546a3c777730",
+      "bytes": 1709
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL320-CURRENT-4.json",
+      "sha256": "88668041064689f0e86d27f550bb274a2ecaa545b5f24175b63d0ced03601848",
+      "bytes": 566
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL320-JAN.json",
+      "sha256": "b702a277497e26c55703893dd1b9fe1b82d105e8bb4ad96e08bc2aada4f85f42",
+      "bytes": 18784
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-ANNEX2-3.json",
+      "sha256": "d899069d76021bb712bec2c0915cf60e10a2c8b2ce983f88df39dcd3886f8a1a",
+      "bytes": 15965
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-CHARGING.json",
+      "sha256": "8c5be679f9e96024767a51a467f4f9bba0217bbac47d7e0d4dff209eb6c41a8b",
+      "bytes": 17049
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-JAN22.json",
+      "sha256": "456a87d9ae045fda3b040b0e489f688b905ed5bdc9e2eee1a7e3d82ebb448c53",
+      "bytes": 1301
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-JAN49.json",
+      "sha256": "aa57e5818863c1f05b6790d574c364bf2328155f0810ef92b9c40a676c051de4",
+      "bytes": 2453
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-TARIFF-ANNEX1-DOWNLOADED-20261031.json",
+      "sha256": "c323b6cf6617b5c3f8551a71a8d0b067774cccd6a59bd5d921c35e48907cd408",
+      "bytes": 24468
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-APA-MODEL-20261031.json",
+      "sha256": "78d63ecaf934a54a55e140f81cf7d41a8f2d962e70ffd7c6713079ac749dca69",
+      "bytes": 8008
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-INFORMATION-ANNEX2-20261031.json",
+      "sha256": "06142b167a880d16f1730bb25eb2e613539e4b62bec94538501349fb611a1b79",
+      "bytes": 113688
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-LAW187-ARTICLE19.json",
+      "sha256": "bd447acaa7663735d59f270da1263bd58e461452561fc64443d0f6d76d00e02a",
+      "bytes": 2979
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-LAW187-TRANSITION.json",
+      "sha256": "66c06fdd86bd7ecf95e69a19b0785c493d4ca21fa3aa54d3c6659f461018c29e",
+      "bytes": 3327
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-LAW214-TRANSITION.json",
+      "sha256": "074554edf7e604c83020ba223a1187d8bf8d71a215294de0ca2f4d88eac6984c",
+      "bytes": 564
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-ORDER8.json",
+      "sha256": "67a5f6810a8945b0ae21f3881516e06e358127e0897246f9d7f0533a0eb3686a",
+      "bytes": 14242
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART1.json",
+      "sha256": "ad65f392ca8bd7fb1dc8f804d2c6274f85491436c82bebd2c2a8b7c64471848f",
+      "bytes": 9919
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART2.json",
+      "sha256": "cf50abf1156caeaaf9a241ee8b1a9be03f99b890ff637a6e1e959f9ef9ba2143",
+      "bytes": 9820
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART3.json",
+      "sha256": "65cc932de6caef6cf8d3fafe65560266a03a953dfc60390b43fc7f4f06d503ac",
+      "bytes": 9814
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART4.json",
+      "sha256": "6a37c419b502b0128fc7ee432052ffd5f0030ab635bca3a3b9316fc99fc6a30b",
+      "bytes": 9827
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART5.json",
+      "sha256": "7d2a63cba6e40fecc40653082369d828a958650d04bfe5db46c988a53440466f",
+      "bytes": 9837
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART6.json",
+      "sha256": "de553ff5fa32238c1311f805423085fb0d2cd47a9bf99dc06ad24f7544987f55",
+      "bytes": 9806
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES-PART7.json",
+      "sha256": "d84395dfeb8b42337678c118217573232f2e5617e39726cbdf010608c925c709",
+      "bytes": 3772
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-RULES.json",
+      "sha256": "305a5c76f14e02311a41bb7ecee27db25abec3efac8ba4e3669a3bac1ee0190e",
+      "bytes": 60835
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TP-SFS-ELECTRONIC.json",
+      "sha256": "c37f32f90d7cf0dbbc4a22175948ba1fc4c0277b0aeca82d266eaa44053c7d39",
+      "bytes": 713
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART1.json",
+      "sha256": "93ec20f895dd37d8c9a0a558b547c043af144d7710382b888345accf4a0e3650",
+      "bytes": 9017
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART2.json",
+      "sha256": "a392f8a52be116f28fb4330a5e3a68455a263af9f051f5e267e9d40c510d4703",
+      "bytes": 8769
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART3.json",
+      "sha256": "9d9c16f79d1bb7bf49366db32ed7ef6925cf46c5722d8aa5ba102fbc5f2956fc",
+      "bytes": 8706
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART4.json",
+      "sha256": "5590a20ad52452e49b5a76e1d8e35caf48f21a93119f4092555bdf5b3d6821ae",
+      "bytes": 8824
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART5.json",
+      "sha256": "591c423ab593d3f54ec58cbf22f9a85f2b5aeb2d2f8592cc081369688ff20c2b",
+      "bytes": 8810
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10-PART6.json",
+      "sha256": "5e9883d3c2f5bc767cc24324e0c799553ebebf44bb252971d82408c6b71cd60f",
+      "bytes": 3491
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10.json",
+      "sha256": "1a5772dda26315425f7e51eea6b382771cbb33b96a50bbacbfb9f5bb00d2b186",
+      "bytes": 45971
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG783-AMENDMENT.json",
+      "sha256": "0c67a3580caa392eb8633e45b8d63ae8ba5724ab25a4e6e150528d2f9f249990",
+      "bytes": 5066
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-NUMERIC-ANNEX2-DOWNLOADED-20261031.json",
+      "sha256": "11e1902031e1a439a5b4bbb77e95a9a830ab5f9fcb32e0f904bf4336ba8751eb",
+      "bytes": 97290
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-UNIF25-ORDER300-CURRENT-20261030.json",
+      "sha256": "5eb012b6f1b75180d25b639449fb986c23fed87e1e7c461d7fed809f8450bda5",
+      "bytes": 3897
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT-JAN-COMMENCEMENTS.json",
+      "sha256": "43558ec59c97378ddc024bbe1151638e7ffbfaaaf3777b55c8198c866d1486bc",
+      "bytes": 739
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT-LAW12.json",
+      "sha256": "dbb04e3c6726b97e5b7b32316057449c316d56ced70063837ceacfa002bb43b2",
+      "bytes": 1117
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT-ORDER529.json",
+      "sha256": "9633937f7eb1eb744a2f21bbdb9a06dd6270b3570b445604e055ea518880300a",
+      "bytes": 6373
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT1164-PART1.json",
+      "sha256": "54cf901d477cbe13e1e522eaed36b08986618f2376b777f75304421c3312cec9",
+      "bytes": 14165
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT1164-PART2.json",
+      "sha256": "92808f705fb0ce16c439ab6184fbeefcc6d233db4ff6bb28c3d7238096c4a1d3",
+      "bytes": 10083
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VAT1164.json",
+      "sha256": "78407d4ea086f8d9531a3de868e60b0295ce9edcd7de37d92bc30a9ea993e36f",
+      "bytes": 23934
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VEN12-FULL-CURRENT-FORM-20261031.json",
+      "sha256": "d7206e2b483348240e2c4726acdea9c0528bf940a2290df5924d94282ceefe78",
+      "bytes": 85155
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-VEN12-FULL-CURRENT-INSTRUCTIONS-20261031.json",
+      "sha256": "3024661bd4e58fdb8376347e3611320ec4e627635843c6138a6d41854989591e",
+      "bytes": 96243
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-XB-ANNUAL-ORDER140.json",
+      "sha256": "44681f7fa3fd690f981bf5b2855b8bb8b2014365b65dd13f0ff276a3de82d674",
+      "bytes": 3322
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-XB-CODE-CONSOLIDATION.json",
+      "sha256": "09f66af12a4562896bd4b231cc9e462695eb7432ffabcc4614bffa780d7c749b",
+      "bytes": 592
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-XB-IPC21-NONRESIDENT.json",
+      "sha256": "c9f695e571e3f1f1d1dab609763e5b74a489373e8e98080eaca9211114189366",
+      "bytes": 3149
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-article-XB-IPC21-PAYMENT-CODES.json",
+      "sha256": "c8c68f828a0406cea538d84c9c41083a15febef2aa17ac54e0a7984ded418a9f",
+      "bytes": 1073
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/fiscal-code-browser-observation.json",
+      "sha256": "0112f661767344fbb49a83ba61a0ac361e1510ea2dfa15b5002ce4c26cdea870",
+      "bytes": 2381
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/mf-2026-changes-receipt.json",
+      "sha256": "1d31d1b5f6f7a2a91e56178bd6ce56db596298f82878e5e4e21dcd4bca6ef959",
+      "bytes": 564
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/mf-2026-changes.html",
+      "sha256": "e364f25d5dd44d846ac519fff3136537c8cb1205faacb25dfd5534f9465dccb2",
+      "bytes": 98686
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/sources/mf-2026-changes.txt",
+      "sha256": "07e50495922fd2c474eee20038bec9581a51ef3b49675ff2c3968893db5217db",
+      "bytes": 30834
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/supporting-pr-merged-observations.json",
+      "sha256": "c0be8ca06ed6687c612452681d515debb008a03522f71edce3e499bbf9afe4e7",
+      "bytes": 1680
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-capital-cet18-preservation-validation.json",
+      "sha256": "904d525bded47910183bd918e7207e5b54d3537255c26fe9f456cbcf12eebc21",
+      "bytes": 3512
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-cnam-refund-preservation-validation.json",
+      "sha256": "862092a5249fd4a9c7169a83c844d30f726fb961fb6fffba5fe024fbc8fe7ce1",
+      "bytes": 3560
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-cnas-correction-preservation-validation.json",
+      "sha256": "e9f184c7fed7b12501d512706f28afbcac04378e92c91eeabd83bf332da11a29",
+      "bytes": 3657
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-cnas-refund-preservation-validation.json",
+      "sha256": "19096572cfabc3322606f95e8ce5fc301d5049fd3734dfad9b079c1d4b1626e2",
+      "bytes": 3490
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-company-aml-preservation-validation.json",
+      "sha256": "15b67a4018ebfd692c30ef4853129e1a3d6ddb3c0871e1eeaa815925a9af8d3e",
+      "bytes": 7357
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-corporate-overlap-preservation-validation.json",
+      "sha256": "95e0f93524be7615659bd83072b82a733eaa58e2576c778fece29062f051c445",
+      "bytes": 6570
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-corporate-return-rows-preservation-validation.json",
+      "sha256": "9ae0a8033462476cef6219884ff3c010e15b5afb9a83bb2ac06cc228d1bb5905",
+      "bytes": 6597
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-downloaded-returns-preservation-validation.json",
+      "sha256": "03d967426fc79c43c508ecd874c6f01da1ee5f2605d72ac7412a6cd7ab8b2df3",
+      "bytes": 9298
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-employment-current-preservation-validation.json",
+      "sha256": "2b52852571eb879188caba7ce1932974ec7cb249509cb87331f3148827d37459",
+      "bytes": 3578
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-foreign-worker-preservation-validation.json",
+      "sha256": "4170b1bce74c274974396687671492cdf246dde2097696ec816f006c48918b09",
+      "bytes": 8638
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-formation-eligibility-preservation-validation.json",
+      "sha256": "602293aacf2e139677a6d2942106832ef3dc51290ce1120faade652b73d64a6a",
+      "bytes": 8030
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-inr14-preservation-validation.json",
+      "sha256": "7936d72a5ea76a6085c8d5390c3a44f1a7d2b0c65f75f3de19c4a316271ff329",
+      "bytes": 3527
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-itpark-current-preservation-validation.json",
+      "sha256": "0419521f57c53f6e5c873a67099a451c43d1c7de6acbe9b9733cf6df39fd5cb8",
+      "bytes": 3666
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-numeric-annex-preservation-validation.json",
+      "sha256": "b9827c813656bd318ad8d0dda68982faec55d12933ee447e2006fbbb6a681316",
+      "bytes": 3382
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-payroll-forms-preservation-validation.json",
+      "sha256": "6d8fc1eaa5f2af91c9b73c7c6f98ee89407ae3c70db71e49a74fc9c704c87f8a",
+      "bytes": 3574
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-planning-preservation-validation.json",
+      "sha256": "788a6931866bd3d13939c5ff0334ade7584742bc2d8dae4f826e71eaf2834542",
+      "bytes": 6056
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-postformation-preservation-validation.json",
+      "sha256": "95d95ef7e8192196ec88497a4206ad274fb834703ee5ac5acc7c426aa8468848",
+      "bytes": 7623
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-public793-preservation-validation.json",
+      "sha256": "3e002bf1a0401f9cfa6c8a5a726a3e7931799a5dd66b7630d6aedcd209859ddd",
+      "bytes": 3533
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-return-selection-preservation-validation.json",
+      "sha256": "8cb170204af4f051921fd9f55eb0374024876463f3f6f1bf87bf58acd54a623e",
+      "bytes": 7952
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-supporting-overlap-preservation-validation.json",
+      "sha256": "d48a6bddd193609fa7b6bf9c7c93f281a28fe2347f15513b1e928b5208d56391",
+      "bytes": 6975
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-tp-forms-preservation-validation.json",
+      "sha256": "6b202946f021593bb65ad5db3157f0ab375ae565db4283e456c80de73633d7f2",
+      "bytes": 3519
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-unif25-later-preservation-validation.json",
+      "sha256": "86ac8e935080634722c2d36f6679cf651dff5a0313f73da9db43622a3dbbe10b",
+      "bytes": 3519
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-ven12-full-preservation-validation.json",
+      "sha256": "3c7f77a96dc8ce82d23f0d5356d32700e798ff4ea0a719e953b1519b72f80e89",
+      "bytes": 3581
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ten-draft-ven12-method-preservation-validation.json",
+      "sha256": "4c30d8196fdb97af137938819a1424f11a85dd34d9f91badd82c57d12099b1f5",
+      "bytes": 8385
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/tp-approved-attachments.json",
+      "sha256": "c206dc09f444c21787abc481f861e3b3d1d8d816882f196cf64a25e01631f390",
+      "bytes": 3854
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/tp-approved-form-controls.json",
+      "sha256": "aad7d8153fa6e1fb61ec01afcf2f3573c2b1b99a0ca3550d1974afdfc6a79d58",
+      "bytes": 4767
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/travel-asset-procedure-controls.md",
+      "sha256": "cf81d26df51cf37b1ec87c3c2948711e18d468edf79a8b500e592a0a228b9ecf",
+      "bytes": 6390
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/two-draft-local-checks.json",
+      "sha256": "e6aa3d288540cd00b80e8e02c806afb5e5e2ccf6c567f99187e158e19bcec31c",
+      "bytes": 1119
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/two-draft-preservation-validation.json",
+      "sha256": "536b092032124660b0b253dc51344b646381dd29c47db8b8fcf2981087031b69",
+      "bytes": 1611
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/unif25-later-controls.json",
+      "sha256": "70c137cec9ed181f36c7b0974ce3f68eada0d921ff2297f873bf1703627ed3b0",
+      "bytes": 7071
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/unif25-remaining-attachment-read.json",
+      "sha256": "de01d3c06776cff632efefa22b368edc929ec35d9df6897d907ad0a11438ad9d",
+      "bytes": 7065
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-it-independent-review-corrections.json",
+      "sha256": "48013bfaf41f05b522bfa8d932a2c30a86b52e548e4126f2e145824533b46338",
+      "bytes": 33236
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-it-independent-review-corrections.md",
+      "sha256": "c370c01956f06097edb4d20948624859026fdf9152a114378afba49af77243ae",
+      "bytes": 1050
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "sha256": "37492e34d47dca0378dbde1fc51d6b3ff6679a3facba82f58819119ba913fe8f",
+      "bytes": 4522
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "sha256": "f8b104d5594a13beed783be43b5ca872133ef8e1b321dbf553b7e528377821c5",
+      "bytes": 28410
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/completion-scope-and-next-jobs.json",
+      "sha256": "0af1dcee42fa4ded116669db28a70c515a044fc763589152ab314ed9b4baa5b2",
+      "bytes": 6665
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "sha256": "9949bf4b1f22deb3e0880987db478a803590a187c9cb74fa3a98e6b27ab4c009",
+      "bytes": 3765
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/current-code-job-inventory-20261031.json",
+      "sha256": "8970d26ca9f908037221d8604f4bcf702de3a2e415385e0a839d816ea4ebf107",
+      "bytes": 48393
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/INITIAL-REVIEW.md",
+      "sha256": "fe07959f703d4f3142c41e456bb0e5da249133dc463fa54028098d10941ff876",
+      "bytes": 9507
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/INITIAL-VERDICT.json",
+      "sha256": "d244a2d205829dd229f3764fa50a3cadc1cb721244a2ea5412cc740e86833466",
+      "bytes": 562
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-audit.json",
+      "sha256": "b727ef327911633c990c8bed8c19a6dfc07cb8d3a46ffe42e9b174e277ced166",
+      "bytes": 74532
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-example-checks.txt",
+      "sha256": "f8a51f90e540c7592d21e50207b04d067747dfc84dc35fc05d63b531ba30415d",
+      "bytes": 60
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-findings.json",
+      "sha256": "6ecbd29d2fee82d9cb96c74995ebfb7c2d00d9ee09a3bda6eca40711dc96b214",
+      "bytes": 2716
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-input-manifest.json",
+      "sha256": "44fc12c6ce8ecf8649418fae272da6d9808b768233199833fc241043aae09718",
+      "bytes": 6202
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-new-guide-checks.txt",
+      "sha256": "d9e4c736c9851d21382597652da064f8d9d96900582f4ee7d4fc420c47fd63b7",
+      "bytes": 365
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/predecessor-preservation.json",
+      "sha256": "848e825ca5b063c4bc7b4e4c72af91524d5fcd5726cc935c0af83e0294f13df9",
+      "bytes": 4584
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "sha256": "dc862d38564b49bda52e12e1d57989106e6f6adfa9a156153a463bbf40b42b9c",
+      "bytes": 58594
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "sha256": "f92a738d049a812dcf010b7d8effe30090144ea9e14a58740bc722009f445b65",
+      "bytes": 2333
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.docx",
+      "sha256": "238a1ace8c1a1ff2b2af1a0ee78245915972263964dda3eafd1c341f5d98a34e",
+      "bytes": 32603
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.txt",
+      "sha256": "a4218e9e251870e843e62476dc026a0c27dd0e56b00c78f90c1919d50e060bba",
+      "bytes": 1852
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.docx",
+      "sha256": "f6d872d885fbb8e804f304292d5b09844fce1e2cdbf7ce9e1dae6283cff8023b",
+      "bytes": 14945
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.txt",
+      "sha256": "da885ead962ba4b449dcd55c6689639127212f42c8a5f7f8f1de9e875aa61095",
+      "bytes": 1495
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-controls.json",
+      "sha256": "017a0fe002bcef959e89df3d77ecb588001de4c06bfdaf1fd2bda941323bd3f2",
+      "bytes": 497
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/WRITER-REPAIRS.json",
+      "sha256": "c20ed4016ff994fed65250562ede335a1505f74de91b645e722fe56521ef1c57",
+      "bytes": 2173
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "sha256": "9d9b54bf1aa0453f3f37b208322693c728ac58ba20ee6c5655d04e8b4607121b",
+      "bytes": 2333
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-vat-refund.md",
+      "sha256": "0f3cf151d4cb794b01be47d4c22b042a49fcf50c7bca6d5a3dd65e7e9ac1c75b",
+      "bytes": 115845
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-vat-refund.writer.json",
+      "sha256": "f4363fa4b19f81078a899948c103776846b57627baa1cab3e2ccf3253108cc6a",
+      "bytes": 776936
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/skills/moldova/README.md",
+      "sha256": "24d84e6343196329d99d2a32c1f621bbe86afbe7d6c0168d4287e8af578c2499",
+      "bytes": 4523
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/skills/moldova/md-vat-refund.md",
+      "sha256": "c69fe5df8392018bbf5836d1346a0302987b435d1fc03fa6e52364d69f58e55d",
+      "bytes": 19014
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-input-manifest.json",
+      "sha256": "bade933e29f08663f68cb4277ce2872d784067ca973137eec24deea1040278cf",
+      "bytes": 3465
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/repair-input-manifest.json",
+      "sha256": "f63d432c02e5bd0a7f3b1f87b87e39ba185cc43e241afdffa5483312362b99ae",
+      "bytes": 1329
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ven12-full-controls.json",
+      "sha256": "bf1d6cc78ab6cc8d4a2127ef0d2f72046539227044e2c10968f42b5cf60af8ce",
+      "bytes": 11457
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ven12-full-current-attachments.json",
+      "sha256": "b6fcc100d653318eaa6e410704fd72fd32fbc6079ed8239cccbb6bc382fd330e",
+      "bytes": 5125
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/ven12-ordinary-return-controls.json",
+      "sha256": "d7018f9b8d47c09ed2bb0dc076b5922503be32555e9c1331558c8511de2ee80e",
+      "bytes": 5479
+    },
+    {
+      "path": "evidence/ledgers/md-cross-border.md",
+      "sha256": "42765413dc351168c170271539e147b630d3b624d4da039292072318f43ed322",
+      "bytes": 185678
+    },
+    {
+      "path": "evidence/ledgers/md-cross-border.writer.json",
+      "sha256": "89af01e8c59a037592b576b611e90603373ef93d8bbe305d227fb709b88a7ea9",
+      "bytes": 573064
+    },
+    {
+      "path": "evidence/ledgers/md-tax-overview.md",
+      "sha256": "28271678b6105b235fd9549b97ccf10adf08de7e9bc318ce7430cb821fba08b4",
+      "bytes": 35851
+    },
+    {
+      "path": "evidence/ledgers/md-tax-overview.writer.json",
+      "sha256": "3cd4b324ae3f52130cd97e25102efc8881f9623e72809e39437a279bc2858506",
+      "bytes": 240121
+    },
+    {
+      "path": "evidence/ledgers/md-transfer-pricing.md",
+      "sha256": "3eec606b71e9471384de390981929e59a533f8dfd6e90031a1edabbf5f817bb0",
+      "bytes": 257412
+    },
+    {
+      "path": "evidence/ledgers/md-transfer-pricing.writer.json",
+      "sha256": "3d5d3ca8210b6a328f0080f7762b1491473ad90786bfe79677eaa964a4242d68",
+      "bytes": 756212
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.md",
+      "sha256": "5714c5e8d25e684612580f0abcdb0f3713a7ac187a3b055479ab0068d1b003cf",
+      "bytes": 116041
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.writer.json",
+      "sha256": "f81d5859d33c2c2f92c8f3f95e72d7102e39d4d82c772a41fdc37ae3db60c9f4",
+      "bytes": 777748
+    },
+    {
+      "path": "evidence/ledgers/moldova-income-tax.md",
+      "sha256": "0af41e3656c35dfdfdf981966a7a6894037249681ff81e264dc9be93928f2562",
+      "bytes": 460377
+    },
+    {
+      "path": "evidence/ledgers/moldova-income-tax.writer.json",
+      "sha256": "a849e24aa3900428061fd227fc13eab3f6551c227952969bbadf31f79e01ddfc",
+      "bytes": 1468704
+    },
+    {
+      "path": "evidence/ledgers/moldova-payroll.md",
+      "sha256": "2746fbcb1652309c0f2e5916f444314b628f86b3938ab883c8f46a1b51400ca4",
+      "bytes": 446437
+    },
+    {
+      "path": "evidence/ledgers/moldova-payroll.writer.json",
+      "sha256": "41876b644e8aca37c195fd154609d8e8eb5855d186abfd1cb86cc25b02beadd2",
+      "bytes": 1346101
+    },
+    {
+      "path": "evidence/ledgers/moldova-social-contributions.md",
+      "sha256": "596f5733cba0a6db92fc868fb6b5df01d2776f9b559218817a30809c342c6245",
+      "bytes": 342165
+    },
+    {
+      "path": "evidence/ledgers/moldova-social-contributions.writer.json",
+      "sha256": "65df71b720a614e999e9ce78adb3637a1dd04740c323706325f0c4e84052597f",
+      "bytes": 1063519
+    },
+    {
+      "path": "evidence/ledgers/moldova-tax-optimization.md",
+      "sha256": "a035f1e656148d9b6adbf8dcfc1934b8efbb34e2b649044d2b0c45afd813c6d2",
+      "bytes": 90212
+    },
+    {
+      "path": "evidence/ledgers/moldova-tax-optimization.writer.json",
+      "sha256": "83a67fca257dc2f85c0c2b5fddc5d7a6e46465b8be689243f543d7288f99de62",
+      "bytes": 349572
+    },
+    {
+      "path": "evidence/ledgers/moldova-vat.md",
+      "sha256": "2641f9507c468bdc23c3f68f72ada4e8a709ca0df83c502108ddcb7c3301a2b3",
+      "bytes": 258242
+    },
+    {
+      "path": "evidence/ledgers/moldova-vat.writer.json",
+      "sha256": "44ad40ad89004fbc38e9613fd26976f1cd1df8ad494cbae44fd177b6f76d824f",
+      "bytes": 795257
+    },
+    {
+      "path": "skills/moldova/README.md",
+      "sha256": "031ad345438c79630fbc7a0d992b5f3f8334b80916f87a39e053e87a00230c37",
+      "bytes": 4523
+    },
+    {
+      "path": "skills/moldova/md-company-formation.md",
+      "sha256": "a2446f47c1ed9277f8be6492b9eb2e9527a16d8db732f0b2c0a061d7786b87f4",
+      "bytes": 56450
+    },
+    {
+      "path": "skills/moldova/md-corporate-income-tax.md",
+      "sha256": "663695efc1ad18819a604ff6059d7c5326aa101efb3973d970382154f69af917",
+      "bytes": 100915
+    },
+    {
+      "path": "skills/moldova/md-cross-border.md",
+      "sha256": "8e38b9296a7e1780424e3c3256e3554ba8fc24d00a8781b772f3d9e44e4f4dae",
+      "bytes": 62320
+    },
+    {
+      "path": "skills/moldova/md-tax-overview.md",
+      "sha256": "6f9dd87d460ebbb52d26b7d11a13539c217720cd1dd8b88083a6da7aa0a84476",
+      "bytes": 20468
+    },
+    {
+      "path": "skills/moldova/md-transfer-pricing.md",
+      "sha256": "f88ed95ace0a73175579a88c67dd6e142518fe55b541c6caec31682628930e28",
+      "bytes": 57872
+    },
+    {
+      "path": "skills/moldova/md-vat-refund.md",
+      "sha256": "33cad03c0ed10d7046cef011d1b6f4faf2d62ad6ded725fdbd62685c8b13e5c1",
+      "bytes": 19634
+    },
+    {
+      "path": "skills/moldova/moldova-income-tax.md",
+      "sha256": "c6f49b7cc71ccc66540796f7f6779973fe3d7eeef83b277ce2eaeac9d29ea789",
+      "bytes": 92660
+    },
+    {
+      "path": "skills/moldova/moldova-payroll.md",
+      "sha256": "054132cd7eca0990005713fe447045da8188e52a895feeb545711de94e4e0555",
+      "bytes": 78713
+    },
+    {
+      "path": "skills/moldova/moldova-social-contributions.md",
+      "sha256": "e453dc373ce2b796cd6e7c1a187ac9b813a8f86bfd42f8e5c7b5130970cd2b3f",
+      "bytes": 95205
+    },
+    {
+      "path": "skills/moldova/moldova-tax-optimization.md",
+      "sha256": "a6b32149732b5a161bc3080e1cbe0d6ad7a99c3024c84657d6688d73d2b36751",
+      "bytes": 34415
+    },
+    {
+      "path": "skills/moldova/moldova-vat.md",
+      "sha256": "0ef637780aa7d2c2595c59403ceab27b04ce46be870aafaf16a453141fe8afe7",
+      "bytes": 51348
+    }
+  ]
+}

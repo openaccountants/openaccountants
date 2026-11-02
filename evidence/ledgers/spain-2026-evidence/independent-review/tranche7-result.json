@@ -1,0 +1,12 @@
+{
+  "verdict": "BOUNDED PASS exact VATmirror pair",
+  "guide_sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+  "ledger_sha256": "a86645db838f32384769c2889eab3e672039dd4527274b3230fbb4623149c44c",
+  "rows_actual_read": 97,
+  "own_controls": 37,
+  "canonical_oa_blocks": 2,
+  "source_identity_occurrences": 98,
+  "unique_source_files": 36,
+  "finding": "S-L08 closed for mirror only",
+  "report_sha256": "b60783bbf09f27d43be1f89e0f26f864f2d95004e240d370f33fc10795ad9d8c"
+}

@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.companieshouse.gi/publications/C0025.pdf",
+      "sha256": "6fd587f79f78fa3cff55a6f81a0ec45b479c5a6042f39c0390cc408256f0ffe0"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627",
+      "sha256": "f7449318ce20a2619baf291774c403cfd8455bdfcaecd49ef3d789fcbfce7f7a"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/C0019.pdf",
+      "sha256": "a709918c42d6a36483784a5353bce84aefbd920e530b68f19ac1757ab7e93196"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+      "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75",
+      "additional_locators_v0_2": "Sections 255\u2013256 (auditor appointments), 267 (revisions), 268 (reference-period changes)"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106",
+      "as_of": "2026-10-22",
+      "locators": "Current-version heading: last update 1 August 2025. Read via web tool; no local HTML hash."
+    }
+  ]
+}

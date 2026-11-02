@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ca" data-i18ncatalogurl="https://www.artesadesegre.cat/plonejsi18n" xml:lang="ca">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Nuclis agregats — Ajuntament d'Artesa de Segre</title>
+
+    <!-- css links -->
+    <link rel="shortcut icon" href="https://www.artesadesegre.cat/++plone++product.diputacio/favicon.ico" /><link rel="canonical" href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" /><link rel="alternate" href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/RSS" title="Nuclis agregats - RSS 1.0" type="application/rss+xml" /><link rel="alternate" href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/rss.xml" title="Nuclis agregats - RSS 2.0" type="application/rss+xml" /><link rel="alternate" href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/atom.xml" title="Nuclis agregats - Atom" type="application/rss+xml" /><link rel="search" href="https://www.artesadesegre.cat/@@search" title="Cerca en aquest lloc" /><link rel="stylesheet" type="text/css" href="https://www.artesadesegre.cat/++plone++production/++unique++2022-08-08T11:12:46.187116/default.css" data-bundle="production" /><link rel="stylesheet" type="text/css" href="https://www.artesadesegre.cat/++plone++product.diputacio/cookieklaro/cookieklaro.css" /><link rel="stylesheet" type="text/css" href="https://www.artesadesegre.cat/++plone++product.diputacio/smartbanner/smartbanner.min.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One:300,400,700%7COxygen:300,400,700" /><style media="screen">
+      .bgTheme { background-color: #e63239 !important;}
+      .bgTransTheme { background-color: rgba(230,50,57,0.75) !important;}
+      .colorTheme { color: #e63239 !important; }
+      .textFontTheme { font-family: 'Oxygen', sans-serif !important;}
+      .headerFontTheme { font-family: 'Fjalla One', sans-serif !important;}
+      body { font-family: 'Oxygen', sans-serif; }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .template-listing_view #content-core header, .searchResults .result-title, .documentDescription, .h5, .h6 { font-family: 'Fjalla One', sans-serif;}
+      .groupThemeDipu3 .goog-te-combo { font-family: 'Fjalla One', sans-serif !important;}
+      .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, #portal-slider .slider-item__more:hover { background-color: #e63239; }
+      .btn-link:hover, .btn-link:focus, #content a:not([href=""]):not(.btn):not([role="button"]):not(.no-link):hover, #portal-footer a:not([href=""]):not(.btn):not([role="button"]):not(.no-link):hover {color: #e63239;}
+      a:hover { color: #e63239; }
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem a,
+      .themeTree .portletNavigationTree nav.portletContent .navTreeItemInPath.navTreeItem  a { color: #e63239; background-color: rgba(255 , 255 , 255 , 0.87); }
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem a::after,
+      .themeTree .portletNavigationTree nav.portletContent .navTreeItemInPath.navTreeItem a::after,
+      .newsItem__title:after { background-color: #e63239; } 
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem ul a {background-color: transparent; color: #333333;}
+       :root { --primary: #e63239; --contrastIndex: 255;  }
+      .colorContrast{ color: white; color:rgba(255 , 255 , 255 , 0.87); color: rgba(var(--contrastIndex, 255), var(--contrastIndex, 255), var(--contrastIndex, 255), .87 ) !important; }
+      </style><link rel="stylesheet" type="text/css" href="/++theme++plone-tema-diputacio-3/styles/build/plonetheme.diputacio3.min.css" />
+    <!-- css links end -->
+    <link rel="stylesheet" type="text/css" href="/++theme++plone-tema-diputacio-3/styles/css/custom.css" />
+  <meta name="DC.format" content="text/plain" /><meta name="DC.type" content="Carpeta" /><meta name="DC.date.valid_range" content="2018/08/24 - " /><meta name="DC.date.modified" content="2021-04-07T10:22:33+01:00" /><meta name="DC.date.created" content="2018-08-24T10:17:06+01:00" /><meta name="DC.language" content="ca" /><meta content="summary" name="twitter:card" /><meta content="Ajuntament d'Artesa de Segre" property="og:site_name" /><meta content="Nuclis agregats" property="og:title" /><meta content="website" property="og:type" /><meta content="https://www.facebook.com/ajuntamentartesadesegre" property="og:article:publisher" /><meta content="" property="og:description" /><meta content="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" property="og:url" /><meta content="https://www.artesadesegre.cat/@@site-logo/logo.png" property="og:image" /><meta content="image/png" property="og:image:type" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Plone - http://plone.com" /><meta name="smartbanner:title" content="Vilaconnect" /><meta name="smartbanner:author" content="SEMIC Digital Business" /><meta name="smartbanner:price" content="Gratuïta" /><meta name="smartbanner:price-suffix-apple" content=" - A l'App Store" /><meta name="smartbanner:price-suffix-google" content=" - A Google Play" /><meta name="smartbanner:icon-apple" content="https://www.artesadesegre.cat/++plone++product.diputacio/app-logo.webp" /><meta name="smartbanner:icon-google" content="https://www.artesadesegre.cat/++plone++product.diputacio/app-logo.webp" /><meta name="smartbanner:button" content="Vés-hi" /><meta name="smartbanner:button-url-apple" content="https://itunes.apple.com/es/app/vilaconnect/id1403262093" /><meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.semicinternet.vilaconnect" /><meta name="smartbanner:enabled-platforms" content="android,ios" /><script>PORTAL_URL = 'https://www.artesadesegre.cat';</script><script src="https://www.artesadesegre.cat/++plone++production/++unique++2022-08-08T11:12:46.187116/default.js" data-bundle="production"></script><script type="text/javascript" src="https://www.artesadesegre.cat/++plone++product.diputacio/smartbanner/smartbanner.min.js"></script><script type="application/ld+json"> 
+    // JSON SCHEMA
+        {
+            "@context": "http://www.schema.org",
+            "@type": "Organization",
+            "name": "Nuclis agregats",
+            "url": "https://www.artesadesegre.cat",
+            "logo": "https://www.artesadesegre.cat/logo", 
+            "description": "Nuclis agregats",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pla&#231;a de l'Ajuntament, 1, Artesa de Segre",
+                "addressLocality": "Nuclis agregats",
+                "addressRegion": "Catalonia",
+                "postalCode": "25730",
+                "addressCountry": "Spain"
+            },
+                 
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",                
+                "telephone": "+34 973400013",
+                "email": "norespondre@diputaciolleida.cat",
+            }
+        }
+    </script></head>
+  <body id="visual-portal-wrapper" class="frontend icons-off portaltype-folder section-la-ciutat site-ajuntament-dartesa-de-segre subsection-nuclis-agregats template-blog_view thumbs-off userrole-anonymous viewpermission-view " dir="ltr" data-i18ncatalogurl="https://www.artesadesegre.cat/plonejsi18n" data-view-url="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" data-pat-plone-modal="{&quot;actionOptions&quot;: {&quot;displayInModal&quot;: false}}" data-portal-url="https://www.artesadesegre.cat" data-pat-pickadate="{&quot;date&quot;: {&quot;selectYears&quot;: 200}, &quot;time&quot;: {&quot;interval&quot;: 5 } }" data-base-url="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats"><!-- Accessibility accesskeys - Jump to section --><nav class="fixed m-3">
+        <a id="skip-to-content" accesskey="2" class="btn bgTheme sr-only sr-only-focusable" href="#content">Saltar al contingut</a>
+        <a id="skip-to-navigation" accesskey="6" class="btn bgTheme sr-only sr-only-focusable" href="#main-navigation1">Saltar a la navegació</a>
+        <a id="skip-to-contact-info" accesskey="9" class="btn bgTheme sr-only sr-only-focusable" href="#portal-info">Informació de contacte</a>
+    </nav><aside id="mobile-navigation" class="hidden-sm hidden-md hidden-lg offcanvas-element bgTheme">
+      <div id="mobile-menu" class=" headerFontTheme text-regular">
+      <span class="toggler bgTheme hidden-print" data-offcanvas="#mobile-navigation" role="button" data-offcanvas-state="hidden">
+        <span class="toggler__icon" aria-hidden="true"></span>
+        <span data-offcanvas-alt="Menú" class="toggler__text">Menu</span>
+      </span>
+      <div class="content">
+        
+        <nav class="">
+          
+            <ul id="mobileAccordion" class="panel-group list-unstyled">
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#ajuntament" role="button">L'Ajuntament <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="ajuntament">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/alcaldia">Salutació de l'alcalde</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/grups-municipals">Grups municipals</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/organs-de-govern">Òrgans de govern</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/reglaments-i-normatives">Ordenances i Reglaments</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/avisos-pregons">Plens</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/anuncis">Anuncis</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/informacio-administrativa">Informació Administrativa</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/regidories">Regidories</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/arees-i-departaments">Àrees i departaments</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/informacio-urbanistica">Informació Urbanística</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/serveis">Serveis</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/tramits">Tràmits</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/atencio-ciutadana">Atenció ciutadana</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/mapa-de-capacitat-acustica">Mapa de capacitat acústica</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/cites-i-reserves">Cita prèvia i reserva d'espais</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/oferta-publica-docupacio">Oferta pública d'ocupació</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/codi-daccessibilitat-de-catalunya-fitxa-de-condicions-daccessibilitat">Codi d'accessibilitat de Catalunya (Fitxa de condicions d'accessibilitat)</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/codi-de-conducta-dels-alts-carrecs-de-lajuntament-dartesa-de-segre">Codi de conducta dels alts càrrecs de l'Ajuntament d'Artesa de Segre</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/pla-igualtat-i-protocol-prevencio.pdf">Pla igualtat i Protocol Prevenció</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/duprocim-diligenciat-pdf.pdf">DOCUMENT ÚNIC DE PROTECCIÓ CIVIL Municipi d’Artesa de Segre</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/20230718_pla-director-del-servei-municipal-dabastament-daigua-1.pdf">PLA DIRECTOR D’ABASTAMENT D’AIGUA POTABLE D’ARTESA DE SEGRE</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/pla-mesures-antifrau.pdf">PLA DE MESURES ANTIFRAU</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/ajuntament/pla-gestio-etica-colonies-felines">PLA GESTIÓ ÈTICA COLÒNIES FELINES</a></li>
+                    </ul>
+              </li>
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#actualitat" role="button">Actualitat <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="actualitat">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/actualitat/agenda">Agenda</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/actualitat/noticies">Notícies</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/actualitat/altres-publicacions">Programacions</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/actualitat/destacats">Destacats</a></li>
+                    </ul>
+              </li>
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#la-ciutat" role="button">La Ciutat <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="la-ciutat">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/participacio-ciutadana">Participació ciutadana</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/situacio-geografica-1">Situació geogràfica</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/historia-i-patrimoni">Història</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/guia">Guia</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">Nuclis agregats</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/ens-municipals">Ens municipals</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/entitats-i-associacions">Entitats i associacions</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/planol-urba">Plànol urbà</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/transports">Transports</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/la-ciutat/telefons-dinteres">Telèfons d'interès</a></li>
+                    </ul>
+              </li>
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#som-patrimoni" role="button">Som patrimoni <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="som-patrimoni">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/festes-i-tradicions">Festes i tradicions</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/cataleg-de-bens-a-protegir">Catàleg de béns a protegir</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals">Béns culturals</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals-dinteres-local">Béns culturals d'interès local</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals-dinteres-nacional">Béns culturals d'interès nacional</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/fira-de-sant-bartomeu">Fira de Sant Bartomeu</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/som-patrimoni/arxiu-historic-virtual">Arxiu històric virtual</a></li>
+                    </ul>
+              </li>
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#comerc-i-serveis" role="button">Comerç i Serveis <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="comerc-i-serveis">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/comerc-i-serveis/inscripcio-al-directori-empresarial-comercial-i-de-serveis-dartesa-de-segre">Inscripció al Directori</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/comerc-i-serveis/campanya-jo-compro-a-artesa">Campanya “Jo compro Artesa de Segre”</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/comerc-i-serveis/directori-comercial-i-de-serveis">Directori comercial i de serveis</a></li>
+                    </ul>
+              </li>
+              <li class="panel panel-default">
+                <div class="panel-heading">
+                  
+                    <a data-toggle="collapse" data-parent="#mobileAccordion" href="#pla-educatiu-dentorn-artesa-de-segre" role="button">Pla Educatiu d'Entorn <span class="picto-down-open" aria-hidden="true"></span></a>
+                  
+                                    
+                </div>
+                    <ul class="panel-collapse collapse list-unstyled" id="pla-educatiu-dentorn-artesa-de-segre">
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/actualitat">Actualitat</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/pee-artesa-de-segre">PEE ARTESA DE SEGRE</a></li>
+                      <li><a class="text-white" href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/recursos-educatius">RECURSOS EDUCATIUS</a></li>
+                    </ul>
+              </li>
+              
+            </ul>
+         
+        </nav>
+        
+      </div>
+    </div>
+      <div class="p-3 hidden-sm hidden-md"><div id="portal-searchbox-mobile">
+
+   
+    <form id="searchGadgetMobile_form" action="https://www.artesadesegre.cat/@@search" role="search" class="bb-1">
+
+            <label class="hiddenStructure" for="searchGadgetMobile">Cerca</label>        
+            <input name="SearchableText" type="text" size="18" id="searchGadgetMobile" title="Cerca en el lloc" placeholder="Cerca en el lloc" class="searchField" />
+
+            <button class="searchButton" type="submit">
+                <span class="icon-search flip-horizontal-icon" aria-hidden="true"></span>
+                <span class="sr-only">Cerca</span>
+            </button> 
+          
+        
+
+    </form>
+
+</div></div>     
+    </aside><main class="main">
+      <div class="outer-wrapper">
+        
+        
+        
+        <header id="content-header"><!-- PORTAL -->
+          <div id="portal-top">
+            <!-- Announcements   -->
+            
+
+            <div class="portal-slider-wrapper pos-relative">
+              <div id="page-header">
+
+	
+
+	<div id="interior-slider" class=" hidden-print pos-relative">
+		
+		<picture class="interiorSlider__image">
+			<source media="(min-width: 1200px)" srcset="https://www.artesadesegre.cat/la-ciutat/@@images/f2beb9ac-d8cb-4f3a-b279-2dcf826b9f4b.jpeg"></source>
+			<source media="(min-width: 768px)" srcset="https://www.artesadesegre.cat/la-ciutat/@@images/bbfcf991-80b0-4fc6-b41f-a31c1d2576f4.jpeg"></source>
+			<source srcset="https://www.artesadesegre.cat/la-ciutat/@@images/92a16c56-8801-42fa-9a3b-231e08f7c94c.jpeg"></source>
+			<img class="" aria-hidden="true" alt="imatge de la secció" src="https://www.artesadesegre.cat/la-ciutat/@@images/f2beb9ac-d8cb-4f3a-b279-2dcf826b9f4b.jpeg" />
+		</picture> 
+			
+		<div class=" sectionHeader bgTransTheme">
+			<div class="container">
+				<div class="row">
+					<p class="col-xs-12 col-sm-12 colorContrast mb-4 mt-3 text-bold headerFontTheme">
+							La Ciutat
+					</p>
+				</div>
+			</div>			
+		</div>			
+ 
+	</div>
+
+	
+
+</div>
+              <div class="portal-weather-social-icons ">
+                  <div id="portal-weather"><div id="home-weather">
+    <div class=" container-weather home-container bgTheme colorContrast">
+      <div class="weather text-center">
+
+          
+              
+                
+                    
+                      
+                        <span class="meteoNum text-bold">
+                          24° / 8°
+                        </span>
+                      
+                    
+                                        
+                      
+                        
+                         <img height="80" width="80" class="image-aemet" src="https://www.artesadesegre.cat/++theme++plone-tema-diputacio-3/img/aemet/15n.png" alt="Molt tapat" title="Molt tapat" />           
+                        
+                      
+                    
+                
+              
+           
+
+        </div>
+
+    </div>
+  </div></div>
+                  <div id="portal-social-icons"><div id="social-icons" class="socialIcons hidden-print">
+
+<ul class="list-unstyled socialIcons__list">
+    <li class="socialIcons__item" id="socialicon-facebook"><a href="https://www.facebook.com/ajuntamentartesa" target="_blank"><span aria-hidden="true" class="picto-facebook-circled icon"></span><span class="sr-only">Facebook</span></a></li>
+    <li class="socialIcons__item" id="socialicon-instagram"><a href="https://www.instagram.com/ajuntamentartesadesegre" target="_blank"><span aria-hidden="true" class="picto-instagram-circled icon"></span><span class="sr-only">Instagram</span></a></li>
+</ul>
+
+</div></div>
+              </div>
+            </div>
+ 
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="container-fluid">
+              <div class="logoBar mt-sm-3 pos-relative">
+                <a id="portal-logo" title="Ajuntament d'Artesa de Segre" class="portalLogo portalLogo--site" href="https://www.artesadesegre.cat">
+    <img alt="Escut Ajuntament d'Artesa de Segre" class="portalLogo__image" src="https://www.artesadesegre.cat/@@site-logo/logo.png" />
+    <span class="portalLogo__title ">Ajuntament d'Artesa de Segre</span>
+                        </a>
+                <div class="abs-sm-center-v abs-sm-r">
+                  <div id="portal-languageselector" class="pt-4 pt-lg-0 pt-sm-2 visible-inline-block"><div id="portalLanguageGoogle">
+    <div class="languages bg-none">
+        <span class="caret languages-icon" title="languages" aria-hidden="true"></span>
+<!--         <label class="sr-only" for="googTransID" i18n:translate="">Choose language</label> -->
+        <label class="sr-only">Choose language</label>
+        <div id="google_translate_element"></div>
+        <script type="text/plain" data-type="application/javascript" data-name="google_translate">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'ca', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: false}, 'google_translate_element');
+            }
+            $(window).load(function(e) {
+                $('.goog-te-combo').attr('id','googTransID');
+            });
+        </script>
+        <script type="text/plain" data-type="application/javascript" data-name="google_translate" data-src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>  
+</div></div>
+                  <div id="portal-searchbox" class="visible-inline-block">
+
+    
+    <button type="button" data-toggle="modal" data-target="#modalSearchBox" class="searchBox__button">
+        <span class="icon-search flip-horizontal-icon h3-size " aria-hidden="true"></span>
+        <span class="sr-only">Cerca</span>
+    </button>      
+   
+<!--     <div id="portal-advanced-search"
+         class="hiddenStructure">
+        <a href="#"
+           tal:attributes="href string:https://www.artesadesegre.cat/@@search"
+           i18n:translate="label_advanced_search">
+            Advanced Search&hellip;
+        </a>
+    </div> -->
+
+</div>
+                </div>
+              </div>
+              <div class="row pb-sm-2">
+                <div class="col-sm-12 col-md-12 text-center groupMainMenu groupThemeDipu3 pb-lg-2">
+                  <div id="main-navigation1" class="pt-3 pt-lg-0 hidden-xs subMenu subMenu--group1 hidden-print ">
+                    <ul class="nav nav-pills h5-size headerFontTheme">
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray  text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">L'Ajuntament <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/ajuntament/alcaldia">Salutació de l'alcalde</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/grups-municipals">Grups municipals</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/organs-de-govern">Òrgans de govern</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/reglaments-i-normatives">Ordenances i Reglaments</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/avisos-pregons">Plens</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/anuncis">Anuncis</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/informacio-administrativa">Informació Administrativa</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/regidories">Regidories</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/arees-i-departaments">Àrees i departaments</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/informacio-urbanistica">Informació Urbanística</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/serveis">Serveis</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/tramits">Tràmits</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/atencio-ciutadana">Atenció ciutadana</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/mapa-de-capacitat-acustica">Mapa de capacitat acústica</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/cites-i-reserves">Cita prèvia i reserva d'espais</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/oferta-publica-docupacio">Oferta pública d'ocupació</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/codi-daccessibilitat-de-catalunya-fitxa-de-condicions-daccessibilitat">Codi d'accessibilitat de Catalunya (Fitxa de condicions d'accessibilitat)</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/codi-de-conducta-dels-alts-carrecs-de-lajuntament-dartesa-de-segre">Codi de conducta dels alts càrrecs de l'Ajuntament d'Artesa de Segre</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/pla-igualtat-i-protocol-prevencio.pdf">Pla igualtat i Protocol Prevenció</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/duprocim-diligenciat-pdf.pdf">DOCUMENT ÚNIC DE PROTECCIÓ CIVIL Municipi d’Artesa de Segre</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/20230718_pla-director-del-servei-municipal-dabastament-daigua-1.pdf">PLA DIRECTOR D’ABASTAMENT D’AIGUA POTABLE D’ARTESA DE SEGRE</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/pla-mesures-antifrau.pdf">PLA DE MESURES ANTIFRAU</a></li>
+                <li><a href="https://www.artesadesegre.cat/ajuntament/pla-gestio-etica-colonies-felines">PLA GESTIÓ ÈTICA COLÒNIES FELINES</a></li>
+              </ul>
+              
+
+              
+
+        </li>
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray  text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Actualitat <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/actualitat/agenda">Agenda</a></li>
+                <li><a href="https://www.artesadesegre.cat/actualitat/noticies">Notícies</a></li>
+                <li><a href="https://www.artesadesegre.cat/actualitat/altres-publicacions">Programacions</a></li>
+                <li><a href="https://www.artesadesegre.cat/actualitat/destacats">Destacats</a></li>
+              </ul>
+              
+
+              
+
+        </li>
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray  text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Ciutat <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/participacio-ciutadana">Participació ciutadana</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/situacio-geografica-1">Situació geogràfica</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/historia-i-patrimoni">Història</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/guia">Guia</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">Nuclis agregats</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/ens-municipals">Ens municipals</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/entitats-i-associacions">Entitats i associacions</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/planol-urba">Plànol urbà</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/transports">Transports</a></li>
+                <li><a href="https://www.artesadesegre.cat/la-ciutat/telefons-dinteres">Telèfons d'interès</a></li>
+              </ul>
+              
+
+              
+
+        </li>
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray  text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Som patrimoni <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/festes-i-tradicions">Festes i tradicions</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/cataleg-de-bens-a-protegir">Catàleg de béns a protegir</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals">Béns culturals</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals-dinteres-local">Béns culturals d'interès local</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/bens-culturals-dinteres-nacional">Béns culturals d'interès nacional</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/fira-de-sant-bartomeu">Fira de Sant Bartomeu</a></li>
+                <li><a href="https://www.artesadesegre.cat/som-patrimoni/arxiu-historic-virtual">Arxiu històric virtual</a></li>
+              </ul>
+              
+
+              
+
+        </li>
+      
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Comerç i Serveis <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/comerc-i-serveis/inscripcio-al-directori-empresarial-comercial-i-de-serveis-dartesa-de-segre">Inscripció al Directori</a></li>
+                <li><a href="https://www.artesadesegre.cat/comerc-i-serveis/campanya-jo-compro-a-artesa">Campanya “Jo compro Artesa de Segre”</a></li>
+                <li><a href="https://www.artesadesegre.cat/comerc-i-serveis/directori-comercial-i-de-serveis">Directori comercial i de serveis</a></li>
+              </ul>
+              
+
+              
+              
+        </li>
+        <li class="dropdown dropup">
+
+              
+              <a class="dropdown-toggle text-gray text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pla Educatiu d'Entorn <span class="picto-down-open-1 h5-size text-gray-light" aria-hidden="true"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/actualitat">Actualitat</a></li>
+                <li><a href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/pee-artesa-de-segre">PEE ARTESA DE SEGRE</a></li>
+                <li><a href="https://www.artesadesegre.cat/pla-educatiu-dentorn-artesa-de-segre/recursos-educatius">RECURSOS EDUCATIUS</a></li>
+              </ul>
+              
+
+              
+              
+        </li>
+      </ul>
+                  </div>                 
+                </div>                
+              </div>
+            </div>
+          </div><!-- /PORTAL -->
+        </header>        
+
+        <div id="page-header-minisite"></div>
+
+        <div id="above-content-wrapper" class="pt-3 bt-1 bb-1 mb-5">
+          <div class="container pt-2">
+            <nav id="portal-breadcrumbs" class="plone-breadcrumb">
+  <div class="container">
+    <span id="breadcrumbs-you-are-here" class="hiddenStructure">Sou a:</span>
+    <ol aria-labelledby="breadcrumbs-you-are-here">
+      <li id="breadcrumbs-home">
+        <a href="https://www.artesadesegre.cat">Inici</a>
+      </li>
+      <li id="breadcrumbs-1">
+        
+          <a href="https://www.artesadesegre.cat/la-ciutat">La Ciutat</a>
+          
+        
+      </li>
+      <li id="breadcrumbs-2">
+        
+          
+          <span id="breadcrumbs-current">Nuclis agregats</span>
+        
+      </li>
+    </ol>
+  </div>
+</nav>
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <aside id="global_statusmessage">
+      
+
+      <div>
+      </div>
+    </aside>
+            </div>
+          </div>
+        </div>
+
+    		<div id="full-container">
+    		  <div id="inside-full-container" class="container">
+    		    <div id="main-container" class="row flex-canvas">    		      
+    		      
+
+    
+
+    <div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <article id="content">
+
+          
+
+          <header>
+            <div id="viewlet-above-content-title">
+<span id="social-tags-body" style="display: none" itemscope="" itemtype="http://schema.org/WebPage">
+  <span itemprop="name">Nuclis agregats</span>
+  <span itemprop="description"></span>
+  <span itemprop="url">https://www.artesadesegre.cat/la-ciutat/nuclis-agregats</span>
+  <span itemprop="image">https://www.artesadesegre.cat/@@site-logo/logo.png</span>
+</span>
+</div>
+            
+                <h1 class="documentFirstHeading mt-0 colorTheme &#10;      ">Nuclis agregats</h1>
+            
+            <div id="viewlet-below-content-title">
+
+</div>
+
+            
+                
+            
+          </header>
+
+          <div id="viewlet-above-content-body"></div>
+          <div id="content-core" class="clearfix">
+            
+
+      <div class="eq-height row">
+        
+
+  
+
+  
+    
+      
+        
+                
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/alentorn">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/alentorn/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/alentorn/@@images/8bcbaa30-6c6e-4bcd-b6b3-26b42e7f4e47.jpeg" alt="Alentorn" title="Alentorn" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Alentorn</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/anya">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/anya/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/anya/@@images/b43f2802-6423-40d4-874f-0db9112ea59f.jpeg" alt="Anya" title="Anya" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Anya</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/baldomar">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/baldomar/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/baldomar/@@images/54cc0aff-7c31-4278-8c8d-93ab684ac57e.jpeg" alt="Baldomar" title="Baldomar" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Baldomar</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/clua">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/clua/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/clua/@@images/0df81720-cb61-4bce-a332-2bda3debd570.jpeg" alt="Clua" title="Clua" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Clua</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/colldelrat">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/colldelrat/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/colldelrat/@@images/42a51ac4-e0d4-4818-aae2-86a497e673ba.jpeg" alt="Colldelrat" title="Colldelrat" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Colldelrat</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/collfred">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/collfred/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/collfred/@@images/7a493fa3-1915-441f-922e-b53e1423bad2.jpeg" alt="Collfred" title="Collfred" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Collfred</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/comiols">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/comiols/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/comiols/@@images/dd94811f-b2c0-4e94-a0df-5d312b0e228d.jpeg" alt="Comiols" title="Comiols" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Comiols</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/el-pont-dalentorn">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/el-pont-dalentorn/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/el-pont-dalentorn/@@images/6c4d8498-16da-4fc3-b3e0-55efd9f9bfdd.jpeg" alt="El Pont d'Alentorn" title="El Pont d'Alentorn" height="225" width="300" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">El Pont d'Alentorn</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/folquer">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/folquer/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/folquer/@@images/2446d485-6874-45e7-b4e9-179c6e4b62c6.jpeg" alt="Folquer" title="Folquer" height="225" width="300" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Folquer</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-colonia-de-la-fabrica">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-colonia-de-la-fabrica/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-colonia-de-la-fabrica/@@images/9513f3ae-dc66-459b-b3a7-c2b808341623.jpeg" alt="La Colònia de la Fàbrica" title="La Colònia de la Fàbrica" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">La Colònia de la Fàbrica</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vall-dariet">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vall-dariet/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vall-dariet/@@images/00da542f-0f98-4490-9d64-b423769874b3.jpeg" alt="La Vall d'Ariet" title="La Vall d'Ariet" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">La Vall d'Ariet</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vedrenya">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vedrenya/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vedrenya/@@images/2d26e1d4-9356-462c-8b3b-f6babb11a408.jpeg" alt="La Vedrenya" title="La Vedrenya" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">La Vedrenya</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montargull">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montargull/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montargull/@@images/ae01c05b-6bc8-4997-b831-c7a5c9a0046e.jpeg" alt="Montargull" title="Montargull" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Montargull</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montmagastre">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montmagastre/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montmagastre/@@images/56259b89-2095-4413-9505-5f54a767c3a8.jpeg" alt="Montmagastre" title="Montmagastre" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Montmagastre</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/sero">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/sero/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/sero/@@images/3908f793-3e85-4635-b51c-a43198b655b0.jpeg" alt="Seró" title="Seró" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Seró</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/tudela-de-segre">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/tudela-de-segre/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/tudela-de-segre/@@images/90fb9417-a31e-4b79-af01-ea8dd5d8e5f0.jpeg" alt="Tudela de Segre" title="Tudela de Segre" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Tudela de Segre</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrera">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrera/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrera/@@images/1ad08ccf-1508-4505-9f36-b7f94b06b6f3.jpeg" alt="Vall-llebrera" title="Vall-llebrera" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Vall-llebrera</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrerola">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrerola/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrerola/@@images/6956953a-800e-4f22-b8d8-f763ae8ef21c.jpeg" alt="Vall-llebrerola" title="Vall-llebrerola" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Vall-llebrerola</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vernet">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vernet/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vernet/@@images/999de9f1-a30d-45dc-b864-8ed8e12945e5.jpeg" alt="Vernet" title="Vernet" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Vernet</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 mb-4">
+                    <article class="newsItem">
+
+                        <a class="newsItem__link " href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vilves">
+                            <figure class="newsItem__image bgimage hover-effect shadow-l" style="background-image: url(https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vilves/@@images/image/preview)">                                
+                                <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vilves/@@images/67207655-a1eb-4c56-8612-b8e561f5a3a0.jpeg" alt="Vilves" title="Vilves" height="300" width="400" class="img-responsive width-100" />
+                            </figure>           
+                            <div class="newsItem__text bg-white p-3 shadow-l">
+                                <h2 class="newsItem__title h3-size text-darker url mt-3 ">Vilves</h2>      
+                                
+                                
+                                
+
+                            </div>                 
+
+                        </a>    
+
+                    </article>
+
+                </div>
+
+                
+            
+          
+            
+
+        
+
+    <!-- Navigation -->
+
+
+  
+
+
+
+
+
+
+      
+
+      
+        
+      
+
+    
+  
+
+
+  </div>
+
+
+          </div>
+          <div id="viewlet-below-content-body">
+
+
+    <div class="visualClear"><!-- --></div>
+
+    
+
+</div>
+
+          
+        </article>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div id="viewlet-below-content">
+
+
+
+
+</div>
+        </div>
+      </footer>
+    </div>
+  
+              <div id="sidebar" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-md-pull-8 col-lg-pull-9">
+          <aside id="portal-column-one" class="themeTree">
+              <div class="portletWrapper" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d646172746573612d64652d73656772652f616a756e74616d656e742d646172746573612d64652d73656772650a6e617669676174696f6e" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d646172746573612d64652d73656772652f616a756e74616d656e742d646172746573612d64652d73656772650a6e617669676174696f6e">
+<aside class="portlet portletNavigationTree" role="navigation">
+
+    <header class="portletHeader hiddenStructure">
+        <a href="https://www.artesadesegre.cat/sitemap" class="tile">Navegació</a>
+    </header>
+
+    <nav class="portletContent lastItem">
+        <ul class="navTree navTreeLevel0">
+            
+            
+
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-participacio-ciutadana">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/participacio-ciutadana" class="state-published navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Participació ciutadana
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-situacio-geografica-1">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/situacio-geografica-1" class="state-published contenttype-document">
+
+             
+
+
+            
+            Situació geogràfica
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-historia-i-patrimoni">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/historia-i-patrimoni" class="state-published contenttype-document">
+
+             
+
+
+            
+            Història
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-guia">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/guia" class="state-published navTreeFolderish contenttype-directorymap">
+
+             
+
+
+            
+            Guia
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeFolderish section-nuclis-agregats">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" class="state-published navTreeCurrentItem navTreeCurrentNode navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Nuclis agregats
+        </a>
+        
+            <ul class="navTree navTreeLevel1">
+                
+
+
+
+<li class="navTreeItem visualNoMarker section-alentorn">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/alentorn" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/alentorn/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Alentorn
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-anya">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/anya" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/anya/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Anya
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-baldomar">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/baldomar" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/baldomar/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Baldomar
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-clua">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/clua" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/clua/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Clua
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-colldelrat">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/colldelrat" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/colldelrat/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Colldelrat
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-collfred">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/collfred" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/collfred/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Collfred
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-comiols">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/comiols" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/comiols/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Comiols
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-el-pont-dalentorn">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/el-pont-dalentorn" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/el-pont-dalentorn/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            El Pont d'Alentorn
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-folquer">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/folquer" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/folquer/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Folquer
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-la-colonia-de-la-fabrica">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-colonia-de-la-fabrica" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-colonia-de-la-fabrica/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            La Colònia de la Fàbrica
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-la-vall-dariet">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vall-dariet" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vall-dariet/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            La Vall d'Ariet
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-la-vedrenya">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vedrenya" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/la-vedrenya/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            La Vedrenya
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-montargull">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montargull" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montargull/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Montargull
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-montmagastre">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montmagastre" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/montmagastre/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Montmagastre
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-sero">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/sero" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/sero/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Seró
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-tudela-de-segre">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/tudela-de-segre" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/tudela-de-segre/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Tudela de Segre
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-vall-llebrera">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrera" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrera/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Vall-llebrera
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-vall-llebrerola">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrerola" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vall-llebrerola/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Vall-llebrerola
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-vernet">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vernet" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vernet/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Vernet
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-vilves">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vilves" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats/vilves/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Vilves
+        </a>
+        
+
+    
+</li>
+
+
+
+
+            </ul>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-ens-municipals">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/ens-municipals" class="state-published navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Ens municipals
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-entitats-i-associacions">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/entitats-i-associacions" class="state-published navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Entitats i associacions
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-planol-urba">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/planol-urba" class="state-published navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Plànol urbà
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-transports">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/transports" class="state-published contenttype-document">
+
+             
+
+
+            
+            Transports
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-telefons-dinteres">
+
+    
+
+        <a href="https://www.artesadesegre.cat/la-ciutat/telefons-dinteres" class="state-published contenttype-document">
+
+             
+
+
+            
+            Telèfons d'interès
+        </a>
+        
+
+    
+</li>
+
+
+
+
+        </ul>
+    </nav>
+</aside>
+
+
+</div>
+          </aside>
+        </div>
+    		      <div id="column2-container">
+    		      </div>
+    		    </div><!--/row-->
+    		  </div><!--/container-->
+    		</div>
+        
+        
+
+      </div> <!--/outer-wrapper -->
+
+      <!-- Document Actions -->
+      <aside id="document-actions" class="bg-gray pt-1 pb-4 bg-gray-light-medium mt-5 hidden-print" aria-labelledby="heading_document_actions">
+    
+    <h2 id="heading_document_actions" class="sr-only">Document Actions</h2>
+    
+    <div class="container">
+        <div class="documentActions row">
+
+            <div class="col-md-7 mt-4">
+                                   
+
+                    <ul class="list-inline text-center text-md-left">
+                        <li class="document-action text-bold" id="document-action-print">
+                            <a href="javascript:this.print();" class="text-darker text-no-underline text-nowrap eq-height" title="">
+                                <span class="mr-2 picto-print rounded-icon b-1 text-darker border-black" aria-hidden="true" title="Imprimeix-ho"></span>                
+                                          
+                                         
+                                <span class="hidden-xs pt-2">Imprimeix-ho</span>
+                            </a>
+                        </li>
+                        <li class="document-action text-bold" id="document-action-send">
+                            <a href="mailto:?subject=Nuclis agregats" class="text-darker text-no-underline text-nowrap eq-height" title="">
+                                                
+                                <span class="mr-2 picto-mail rounded-icon b-1 text-darker border-black" aria-hidden="true" title="Enviar per email"></span>          
+                                         
+                                <span class="hidden-xs pt-2">Enviar per email</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+
+                
+            </div>
+
+            <div class="col-md-5 text-center text-md-right mt-4 px-md-0">
+            
+                <p class="visible-inline share text-bold mr-3">Compartir</p>
+                <ul class="social-share list-inline visible-inline mb-2">
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">
+                            <span class="picto-facebook" title="facebook" aria-hidden="true"></span><span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">
+                            <span class="picto-twitter" title="twitter" aria-hidden="true"></span><span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="LinkedIn" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">
+                            <span class="picto-linkedin" title="linkedin" aria-hidden="true"></span><span class="sr-only">linkedin</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a class="rounded-icon rounded-icon--black visible-sm visible-xs" href="https://api.whatsapp.com/send?text=https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" title="Whatsapp" target="_blank" data-text="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats">
+                            <span class="picto-whatsapp" title="whatsapp" aria-hidden="true"></span><span class="sr-only">Whatsapp</span> 
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div> <!-- /container -->
+</aside>
+      
+    </main><footer id="portal-footer-wrapper" class="bt-1">
+      <div id="portal-footer" class="container-fluid">
+      <div class="row">
+	<div class="col-xs-12">
+		
+
+	</div>
+</div>
+
+
+<!-- Matomo -->
+<script type="text/plain" data-type="application/javascript" data-name="matomo">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.ddl.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '22']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    </div>
+      <div id="custom-footer">
+  
+ 
+  <div class="py-4 container">
+
+     
+      <div class="row">    
+
+        <div class="col-xs-12 col-sm-9 col-md-10 text-left mb-3 groupLogoInfo">
+          <a class="text-no-underline" href="https://www.artesadesegre.cat">
+          <p class="logoFooter">
+            <img class="logoFooter__image" src="https://www.artesadesegre.cat/@@site-logo" style="max-height: 11rem" alt=" info/title" />
+            <span class="logoFooter__text">Ajuntament d'Artesa de Segre</span>
+          </p>
+          </a>
+          <div id="portal-info" class="text-left small bl-1 border-gray-light-medium pl-3 ml-sm-3">
+            <p class="mb-0 text-nowrap"><span class="text-nowrap h3-size headerFontTheme">Plaça de l'Ajuntament, 1, Artesa de Segre</span></p>            
+            <p class="mb-0 text-nowrap"><a href="tel:+34973400013"><span class="picto-phone h3-size mr-2"></span> <span class="h2-size">973400013</span></a></p>
+            <p class="mb-0 text-nowrap"><a href="mailto:ajuntament@artesadesegre.cat"><span class="picto-mail h4-size mr-2"></span><span class="h4-size">ajuntament@artesadesegre.cat</span></a></p>
+          </div>
+          
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-2 text-gray-light text-left hidden-print">
+            <ul id="portal-site-actions" class="small list-unstyled">
+
+                <li id="siteaction-index_html"><a href="https://www.artesadesegre.cat">Inici</a></li>
+                <li id="siteaction-legal_advice"><a href="https://www.artesadesegre.cat/avis-legal">Avís Legal</a></li>
+                <li id="siteaction-privacity"><a href="https://www.artesadesegre.cat/politica-de-privacitat">Política de privacitat</a></li>
+                <li id="siteaction-cookies"><a href="https://www.artesadesegre.cat/politica-de-cookies">Política de cookies</a></li>
+                <li id="siteaction-rat"><a href="https://www.artesadesegre.cat/registre-activitats-de-tractament">RAT</a></li>
+                <li id="siteaction-accessibility"><a href="https://www.artesadesegre.cat/accessibility-info">Accessibilitat</a></li>
+                <li id="siteaction-sitemap"><a href="https://www.artesadesegre.cat/sitemap">Mapa del lloc</a></li>
+                <li id="siteaction-contact"><a href="https://www.artesadesegre.cat/contact-info">Contacte</a></li>
+
+                <li id="siteaction-credits">
+                  <a href="https://www.artesadesegre.cat/credits">Crèdits</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+ 
+  
+  <div class="bg-gray-lighter p-3">
+    <p class=" text-center mb-0">Projecte desenvolupat per <a href="https://www.diputaciolleida.cat/" target="_blank">Diputació de Lleida</a></p>
+        
+  </div>
+</div>
+    </footer><div id="portal-seachBoxDialog">
+    <!-- Trigger the modal with a button -->    
+    <div id="modalSearchBox" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close text-white opacity-66" data-dismiss="modal">
+                    <span class="picto-cancel" aria-hidden="true"></span>
+                    <span class="sr-only">Tancar</span>
+                </button>
+            </div>
+            <form id="searchGadget_form" class="pat-livesearch" action="https://www.artesadesegre.cat/@@search" role="search" data-pat-livesearch="ajaxUrl:https://www.artesadesegre.cat/@@ajax-search">
+
+                <div class="LSBox text-left">
+                    <label class="text-white h4 hiddenStructure " for="searchGadget">Cerca</label>
+                    <div class="form-group">        
+                        <input name="SearchableText" type="text" size="18" id="searchGadget" title="Cerca en el lloc" placeholder="Cerca en el lloc" class="searchField " />
+                        <input class="searchButton text-white text-bold h4-size" type="submit" value="Cerca" />
+                    </div><!-- / form-group -->
+                    
+    <!--                 <div class="searchSection text-left">
+                        <input id="searchbox_currentfolder_only"
+                            class="noborder"
+                            type="checkbox"
+                            name="path"
+                            tal:attributes="value view/folder_path;
+                                            checked request/form/path|nothing"
+                            />
+                        <label for="searchbox_currentfolder_only"
+                            i18n:translate="label_searchbox_currentfolder_only"
+                            style="cursor: pointer">
+                            only in current section
+                        </label>
+                    </div>   -->            
+                
+                </div>
+            </form>
+         </div>
+    </div>
+</div><!-- Modal Searchbox --><!-- js tags --><script src="/++theme++plone-tema-diputacio-3/styles/build/plonetheme.diputacio3.min.js"></script><!-- js tags end --><script src="/++theme++plone-tema-diputacio-3/js/custom.js"></script><script>
+      $(function () {
+        $('a.swipebox:not([data-type="Folder"])').swipebox();
+
+        $( document ).ready(function() {
+          if ($('.affix-fixer').length > 0) {
+            $('.affix-fixer').height( $('#main-navigation').height() );
+          }
+        });
+      })
+    </script><script>
+    let policyTitle = "Pol&#237;tica de cookies"
+    let policyText = "Aquest portal web nom&#233;s utilitza cookies pr&#242;pies amb finalitat t&#232;cnica, i no recapta ni cedeix dades de car&#224;cter personal dels usuaris sense el seu coneixement.  <br>No obstant, cont&#233; enlla&#231;os a llocs web de tercers com pol&#237;tiques de privacitat alienes a aquesta empresa que vost&#232; podr&#224; decidir si accepta o no quan accedeixi a ells."
+    let policyLinkText = "Pol&#237;tica de cookies"
+    let policyURL = "https://www.artesadesegre.cat/politica-de-cookies"
+    let matomoEnabled = 1
+
+    requirejs.config({
+        waitSeconds : 30,
+    })
+
+    require(['++plone++product.diputacio/cookieklaro/config'], function () {
+        require(['++plone++product.diputacio/cookieklaro/cookieklaro.min'], function (klaro) {
+            window.klaro = klaro
+        })
+    })
+</script></body>
+</html>

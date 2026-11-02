@@ -1,0 +1,118 @@
+{
+  "commit": "8a3ac55c83def25a74fc39f3d184afb87c543603",
+  "cases": [
+    {
+      "case": 1,
+      "facts": "otherwise eligible principal activity, turnover7500",
+      "expected": "first subgroup; authority decision needed",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 2,
+      "facts": "otherwise eligible principal activity, turnover7500.01",
+      "expected": "second subgroup; no calculation of pausal tax from arbitrary actual turnover",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 3,
+      "facts": "otherwise eligible principal activity, turnover15000",
+      "expected": "second subgroup",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 4,
+      "facts": "otherwise eligible principal activity, turnover22500",
+      "expected": "third subgroup",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 5,
+      "facts": "otherwise eligible principal activity, turnover30000",
+      "expected": "fourth subgroup, subject to all other gates",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 6,
+      "facts": "turnover30000.01",
+      "expected": "fails statutory pausal turnover test",
+      "independent_disposition": "PASS",
+      "source": "PIT49;pausal4",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 7,
+      "facts": "supplementary entrepreneurship, turnover5000",
+      "expected": "no principal-activity pausal entitlement",
+      "independent_disposition": "PASS",
+      "source": "PIT49(1)",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 8,
+      "facts": "VAT-registered principal entrepreneur",
+      "expected": "no pausal",
+      "independent_disposition": "PASS",
+      "source": "PIT49(12)",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 9,
+      "facts": "accountant, turnover5000",
+      "expected": "professional exclusion; low turnover does not cure it",
+      "independent_disposition": "PASS",
+      "source": "PIT49(9)",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 10,
+      "facts": "kiosk selling bought-in goods",
+      "expected": "own-product statutory exception not met",
+      "independent_disposition": "PASS",
+      "source": "PIT49(10)-(11)",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 11,
+      "facts": "company pays occasional-work fee",
+      "expected": "payer withholding under48a; not nonwithheld domestic H income",
+      "independent_disposition": "PASS",
+      "source": "PIT48a",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 12,
+      "facts": "foreign occasional-work income in F",
+      "expected": "income in column5; foreign tax in column6; do not follow contradictory prose or duplicate income in H",
+      "independent_disposition": "PASS",
+      "source": "GPPF24-26;PIT44",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 13,
+      "facts": "domestic multiple-employer earnings",
+      "expected": "G plus OPD-2 and authority decision; not foreign-salary main2.1",
+      "independent_disposition": "PASS",
+      "source": "GPPG27;PIT43/43a",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    },
+    {
+      "case": 14,
+      "facts": "foreign gambling after21May2026",
+      "expected": "current statutory12% rate; printed2025 pooled15% mapping remains unresolved",
+      "independent_disposition": "PASS",
+      "source": "PIT10as70/26;GPPF/main",
+      "note": "Expected boundary/classification agrees; forforeignreceipt country/evidence/treaty facts remain necessary."
+    }
+  ],
+  "count": 14
+}

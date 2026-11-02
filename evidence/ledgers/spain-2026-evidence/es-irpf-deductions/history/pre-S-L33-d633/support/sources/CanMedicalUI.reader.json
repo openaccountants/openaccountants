@@ -1,0 +1,55 @@
+{
+  "observed_on": "2026-10-27",
+  "application": "AEAT RentaWEBOPEN2025v1.19",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "type": "one actual independent reviewer UI observation, not an offline calculation",
+  "fictional_inputs": {
+    "name": "PRUEBA INDEPENDIENTE",
+    "NIF": "12345678Z",
+    "DOB": "31/12/1960",
+    "disability": "blank, explicitly cleared via Borrar",
+    "status": "single",
+    "region": "Canarias",
+    "filing": "individual only",
+    "bank_interest": 30000,
+    "corrective_appliance_expense": 10000
+  },
+  "observed_result": {
+    "0940": 600,
+    "2103": 600
+  },
+  "auth_filing_payment": false,
+  "temporary_tab_closed": true,
+  "files": [
+    {
+      "file": "exact65-profile.txt",
+      "bytes": 16640,
+      "sha256": "5d20526a87a7fe94214d015875cf9e31b2d33d3e31f97d97e591a5d83c5c65cb"
+    },
+    {
+      "file": "exact65-profile.png",
+      "bytes": 103372,
+      "sha256": "38d5f76d3279056d56e5cc6b159c55e811aaeb9e1ac953c0b2bbb7e8423f1168"
+    },
+    {
+      "file": "exact65-interest.txt",
+      "bytes": 22783,
+      "sha256": "b8e6f13656f7a80ede6ea5d85eb19b9724a07ce3f460a2fc6c9414dd724e0c92"
+    },
+    {
+      "file": "exact65-medical-input.txt",
+      "bytes": 2766,
+      "sha256": "2342f23ead8d262fe1fda36ba5bede4a42b379de2d5396b1ecc855267f315dbf"
+    },
+    {
+      "file": "exact65-result.txt",
+      "bytes": 59771,
+      "sha256": "02620a09bc2d5a1e3c55b5d86f1053164a3fa419ab31e6d82959857999eb573b"
+    },
+    {
+      "file": "exact65-result.png",
+      "bytes": 134853,
+      "sha256": "496f4b49ec62071d1e337daa28106405817fb73bfbd18b3ba47035644e2c3bfd"
+    }
+  ]
+}

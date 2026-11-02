@@ -1,0 +1,61 @@
+[
+  {
+    "id": "LIRPF",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw_file": "sources/LIRPF.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader_file": "sources/LIRPF.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired_utc": "2026-10-28T00:08:44.705891+00:00",
+    "scope": "Selected exact quote intervals only; not whole acquired body reading."
+  },
+  {
+    "id": "RIRPF",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw_file": "sources/RIRPF.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader_file": "sources/RIRPF.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired_utc": "2026-10-28T00:08:45.360812+00:00",
+    "scope": "Selected exact quote intervals only; not whole acquired body reading."
+  },
+  {
+    "id": "IRNR",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw_file": "sources/IRNR.body",
+    "raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "reader_file": "sources/IRNR.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "acquired_utc": "2026-10-28T00:08:43.784086+00:00",
+    "scope": "Selected exact quote intervals only; not whole acquired body reading."
+  },
+  {
+    "id": "LGT",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw_file": "sources/LGT.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader_file": "sources/LGT.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired_utc": "2026-10-28T00:08:43.654027+00:00",
+    "scope": "Selected exact quote intervals only; not whole acquired body reading."
+  },
+  {
+    "id": "Order149151",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416",
+    "raw_file": "sources/Order149151.body",
+    "raw_sha256": "c9a5a562f39830b9d48cc2a2f71dbc7bdd45234cead7eccbf17f2168cfba884d",
+    "reader_file": "sources/Order149151.reader.txt",
+    "reader_sha256": "088107475974db36698d2167107507d004272a50a6dfeb60f56e2819165440d7",
+    "acquired_utc": "2026-10-28T00:08:53.207555+00:00",
+    "scope": "Selected exact quote intervals only; not whole acquired body reading."
+  },
+  {
+    "id": "AEAT147",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/tengo-que-presentar-declaracion/regimen-fiscal-aplicable-trabajadores-desplazados.html",
+    "raw_file": "sources/AEAT147.html",
+    "raw_sha256": "16f60576608a6bd707fa9e2346273e582e24509a8023abfb117f227f1c79f270",
+    "reader_file": "sources/AEAT147.reader.txt",
+    "reader_sha256": "02caf45226c655cc11392ee9632272343f794ae231c25c72005d39e8552bcb3f",
+    "scope": "Actual LF14–21 incoming-worker procedure plusModelo147; no whole page read claim."
+  }
+]

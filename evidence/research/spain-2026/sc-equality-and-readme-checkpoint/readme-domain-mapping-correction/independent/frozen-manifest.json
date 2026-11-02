@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-27T21:11:19.305673+00:00",
+  "verdict": "BOUNDED_PASS",
+  "reviewed_README_sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a",
+  "coverage_script_sha256": "4d7c6f0deebaa83a10383c4c3c9f41e1e8eef2a77383f9015adfd9983324f3c7",
+  "files": [
+    {
+      "name": "before-head.md",
+      "bytes": 8326,
+      "sha256": "267e36d1a15ff15bd4dc3ccbe474e906330feec853c4a3cf7933131034b1f69d"
+    },
+    {
+      "name": "checks.json",
+      "bytes": 4311,
+      "sha256": "60266c8ba18b12ead3389f5a7ade20682c74b52bc7018ca6fe2f90ac6badd51c"
+    },
+    {
+      "name": "final.md",
+      "bytes": 8220,
+      "sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a"
+    },
+    {
+      "name": "report.md",
+      "bytes": 2244,
+      "sha256": "5492a94fb25fb34211ab7eafb3f28ec42cc62083a8d7e978f7650864d3278f6a"
+    },
+    {
+      "name": "surgical.diff",
+      "bytes": 3308,
+      "sha256": "0cd852bc0762ed93d038c4cc28c1d0c4550c2b49dd694cba3d264520cefc3dde"
+    }
+  ]
+}

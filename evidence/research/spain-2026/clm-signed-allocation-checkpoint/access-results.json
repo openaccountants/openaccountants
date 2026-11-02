@@ -1,0 +1,21 @@
+{
+  "current_calculator": "Own new Brave tab1623102812 worked. Old tabs untouched.",
+  "failed_routes": [
+    {
+      "route": "non-escalated curl to BOE/AEAT",
+      "result": "DNS restricted; successful authorised escalated download followed"
+    },
+    {
+      "url": "https://portaltributario.jccm.es/sites/portaltributario.castillalamancha.es/files/documentos/legislacion/20260415/ley_8-2013_21_de_noviembre_consolidada_v2.pdf",
+      "result": "web timeout, direct curl404; not read"
+    },
+    {
+      "url": "https://portaltributario.jccm.es/node/1036",
+      "result": "web timeout, curl404; consultation body not read"
+    },
+    {
+      "route": "actual current regional normative index via browser",
+      "result": "successful; current Law8/2013 link malformed with literalellipsis; actual index retained"
+    }
+  ]
+}

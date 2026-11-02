@@ -1,0 +1,105 @@
+{
+  "surface": "Official AEAT public Renta2025 OPEN1.19",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "observed": "2026-10-28 approximately13:13–13:28 Europe/Madrid",
+  "evidence_kind": "Selected exact AX transcriptions from actual tool output, plus own UI observations; not a full saved AX/HTTP export; screenshots visually inspected but no PNG retained.",
+  "fictional_only": true,
+  "tab": "own hidden IAB5, closed after final output; other agents tabs untouched",
+  "fixture": "Married fictional taxpayers born01Jan1980, no children, Catalan residence; declared qualifying acquisition01Jan2010, separate eligible investment inputs. Grandfathering, prior claims, actual ownership, finance tracing and wealth test are independently required facts, not verified by the calculator. No filing/login/real data/import.",
+  "cases": [
+    {
+      "case": "original equal",
+      "enhanced_person": "first declarant, disability>=65%, individualBI28000",
+      "ordinary_person": "spouse, BI48000",
+      "eligible_enhanced": 6000,
+      "eligible_ordinary": 6000,
+      "joint_base": 9040,
+      "state": 678,
+      "regional": 768,
+      "AX": "36 text field Value: CONJUNTA, ID:iFLTps-real;67 Value:9.040,00 ID:iFLT0r1;72 Value:678,00 ID:iFLTgr1;75 Value:768,00 ID:iFLTtr1;159 acquisition01/01/2010 ID:iFLTp_2",
+      "individual_checks": [
+        {
+          "base": 6000,
+          "state": 450,
+          "regional": 540
+        },
+        {
+          "base": 6000,
+          "state": 450,
+          "regional": 450
+        }
+      ]
+    },
+    {
+      "case": "reversed equal",
+      "enhanced_person": "spouse, disability>=65%, BI47000−minimum17550=29450",
+      "ordinary_person": "first declarant, no personal enhancement, BI28000",
+      "eligible_enhanced": 6000,
+      "eligible_ordinary": 6000,
+      "joint_base": 9040,
+      "state": 678,
+      "regional": 768,
+      "AX": "36 CONJUNTA ID:iFLT9e3-real;332B9.040,00 ID:iFLTee5;337state678,00 ID:iFLTue5;340regional768,00 ID:iFLT6f5;424acquisition01/01/2010 ID:iFLT2o5",
+      "individual_spouse": {
+        "base": 6000,
+        "state": 450,
+        "regional": 540
+      }
+    },
+    {
+      "case": "reversed unequal",
+      "enhanced_person": "spouse same29450",
+      "ordinary_person": "first declarant",
+      "eligible_enhanced": 3000,
+      "eligible_ordinary": 9000,
+      "joint_base": 9040,
+      "state": 678,
+      "regional": 723,
+      "AX": "36 text field Value:CONJUNTA ID:iFLT9e3-real;67 Value:9.040,00 ID:iFLTee5;72 Parte estatal Value:678,00 ID:iFLTue5;75 Parte autonómica Value:723,00 ID:iFLT6f5;136state total678,00 ID:iFLTql5;146regional total723,00 ID:iFLTgm5;159 date01/01/2010 ID:iFLT2o5",
+      "individual_checks": [
+        {
+          "person": "spouse",
+          "mode": "CÓNYUGE",
+          "base": 3000,
+          "state": 225,
+          "regional": 270
+        },
+        {
+          "person": "first",
+          "mode": "DECLARANTE",
+          "base": 9000,
+          "state": 675,
+          "regional": 675
+        }
+      ]
+    }
+  ],
+  "final_summary_exact_selected_AX": [
+    "362 button 77.000,00, ID: BIGRALH",
+    "364 button 28.000,00, ID: BIGRALH",
+    "366 button 47.000,00, ID: BIGRALH",
+    "428 button 17.550,00, ID: MPERFA",
+    "430 button 5.550,00, ID: MPERFA",
+    "432 button 17.550,00, ID: MPERFA",
+    "459 button 10.545,25, ID: CINTAUT",
+    "461 button 2.807,75, ID: CINTAUT",
+    "463 button 4.976,25, ID: CINTAUT",
+    "512 button 9.822,25, ID: CLIQAUT",
+    "514 button 2.132,75, ID: CLIQAUT",
+    "516 button 4.706,25, ID: CLIQAUT"
+  ],
+  "failures_and_corrections": [
+    "Native offlayout shadow-root click failed; semantic locator succeeded after fresh state.",
+    "Date field disabled until amount blur; no date written until enabled, then01Jan2010 confirmed.",
+    "Nonbinding loan-identification notice continued; no fictitious bank details supplied.",
+    "Joint wage editing refused; changed to individual and entered spouse SS1000; actual BI47000 confirmed.",
+    "An interim spouse BI48000−17550=30450 failed enhancement and returned joint678; corrected lawful fictional income condition before retained reversed controls.",
+    "Stale Volver locator no-match after earlier click had already navigated; fresh state confirmed."
+  ],
+  "limits": [
+    "2025 public calculation only, not2026 software.",
+    "No rental compatibility runtime test performed.",
+    "Eligible investment inputs are prequalified amounts, not proof of ownership/DT18/netwealth.",
+    "No rehab/adaptation/multiple-home/overlapping-credit/carry/recapture algorithm inferred."
+  ]
+}

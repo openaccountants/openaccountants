@@ -1,0 +1,12 @@
+{
+  "verdict": "BOUNDED PASS exact canonicalVAT pair",
+  "guide_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+  "ledger_sha256": "418e4b14dd08bd9e2e2c0f056cc5640c4e270650469b537f022c492ebea1c1e4",
+  "rows_actual_read": 258,
+  "own_controls": 82,
+  "canonical_oa_blocks": 2,
+  "source_identity_occurrences": 166,
+  "unique_source_files": 64,
+  "findings": "S-L08 and S-L09 closed",
+  "report_sha256": "74b8bae2d7e3f797d51d92c881fc80e36d35c11600bad380882c7d1a5219baf4"
+}

@@ -1,0 +1,374 @@
+[
+  [
+    "**Section 1 Quick Reference table**",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "| Field | Value |",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "**Crypto Classification Under IRPF**",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "| Activity | IRPF Classification | Tax Base |",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "**Conservative Defaults**",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "| Ambiguity | Default |",
+    "Presentation table title/header, not a separate substantive tax rule. Current Who, Rates, The base and Deadlines replace the old presentation."
+  ],
+  [
+    "| Country | Spain (Reino de España) |",
+    "Current LF23 Who: common-territory Spanish-resident individual IRPF scope; separate foral, Beckham and IRNR routes."
+  ],
+  [
+    "| Tax | IRPF — Impuesto sobre la Renta de las Personas Físicas |",
+    "Current LF23 Who: common-territory Spanish-resident individual IRPF scope; separate foral, Beckham and IRNR routes."
+  ],
+  [
+    "| Currency | EUR (all values must be in EUR at transaction date) |",
+    "Current LF53–65 investment disposal computation: evidenced euro acquisition/transfer values at the respective transaction dates; LF125 records."
+  ],
+  [
+    "| Tax year | Calendar year (1 January – 31 December) |",
+    "Current LF109 2026-income annual-return route and LF153/176 annual examples. Calendar-year detail is not separately restated as a new crypto-specific rule."
+  ],
+  [
+    "| Primary authority | Ley 35/2006 del IRPF; Ley 11/2021 de medidas de prevención y lucha contra el fraude fiscal; Ley 7/2024 (savings base rate update) |",
+    "Current Rates LF31–47 and Sources: current LIRPF66/76 combined savings rates, LGT/RGAT reporting chain. Historical amendment names remain here, not a different current rate."
+  ],
+  [
+    "| Regulatory framework | Real Decreto 249/2023 (Modelos 172, 173); Orden HFP/886/2023 (Modelo 721) |",
+    "Current LF113–123: own RGAT42quater/OrdenHFP886 electronic721 method and separate39bis/ter provider obligations; 2026 DAC8 implementation remains expressly unconfirmed."
+  ],
+  [
+    "| Tax authority | Agencia Estatal de Administración Tributaria (AEAT / Hacienda) |",
+    "Current LF109 Modelo100 and LF113–119 AEAT electronic721 filing route; official AEAT URLs remain in Sources. Historical RentaWEB name is not a verified future campaign procedure."
+  ],
+  [
+    "| Filing portal | Sede Electrónica AEAT (sede.agenciatributaria.gob.es), Renta WEB |",
+    "Current LF109 Modelo100 and LF113–119 AEAT electronic721 filing route; official AEAT URLs remain in Sources. Historical RentaWEB name is not a verified future campaign procedure."
+  ],
+  [
+    "| IRPF filing deadline | 1 April – 30 June of the following year |",
+    "CORRECTION / PRECISE BOUNDARY: current LF109 and Sources expressly leave 2027 campaign dates and boxes unconfirmed. Old blanket April–June dates and box numbers are historical, not a verified 2026-income procedure."
+  ],
+  [
+    "| Casillas 1800–1814 | Ganancias y pérdidas patrimoniales por transmisión de monedas virtuales — detail each transaction: acquisition date, disposal date, acquisition value, disposal value |",
+    "CORRECTION / PRECISE BOUNDARY: current LF109 and Sources expressly leave 2027 campaign dates and boxes unconfirmed. Old blanket April–June dates and box numbers are historical, not a verified 2026-income procedure."
+  ],
+  [
+    "| Casilla 0031 | Rendimientos del capital mobiliario (staking, lending rewards) |",
+    "CORRECTION / PRECISE BOUNDARY: current LF109 and Sources expressly leave 2027 campaign dates and boxes unconfirmed. Old blanket April–June dates and box numbers are historical, not a verified 2026-income procedure."
+  ],
+  [
+    "| Casilla 0304/0305 | Pérdidas patrimoniales to offset (if applicable) |",
+    "CORRECTION / PRECISE BOUNDARY: current LF109 and Sources expressly leave 2027 campaign dates and boxes unconfirmed. Old blanket April–June dates and box numbers are historical, not a verified 2026-income procedure."
+  ],
+  [
+    "- **Filing** — Filing: 1 April – 30 June of the following year via Renta WEB.",
+    "CORRECTION / PRECISE BOUNDARY: current LF109 and Sources expressly leave 2027 campaign dates and boxes unconfirmed. Old blanket April–June dates and box numbers are historical, not a verified 2026-income procedure."
+  ],
+  [
+    "| Modelo 721 filing deadline | 1 January – 31 March of the following year |",
+    "Current LF119: ordinary electronic721 window 1January–31March following information year, with applicable non-working-day rule, not the income-return campaign."
+  ],
+  [
+    "| Deadline | 1 January – 31 March of the following year |",
+    "Current LF119: ordinary electronic721 window 1January–31March following information year, with applicable non-working-day rule, not the income-return campaign."
+  ],
+  [
+    "| EU reporting | DAC8 / CARF — crypto platforms report user data from 2026; Spanish exchanges already report via Modelos 172/173 since 2024 |",
+    "Current LF123 provider reports and Sources: resident/Spanish-PE39bis/ter obligations separated from investor721. Historical172/173 references retained here; no verified new Spanish DAC8 procedure inferred from2026 EU start date."
+  ],
+  [
+    "- **Exchange reporting since 2024** — Since 2024, Spanish-registered crypto exchanges (Bit2Me, Bitnovo, Criptan, etc.) must file: Modelo 172: Annual report of client crypto balances. Modelo 173: Annual report of client crypto operations. This means AEAT has independent data to cross-reference against your Modelo 100.",
+    "Current LF123 provider reports and Sources: resident/Spanish-PE39bis/ter obligations separated from investor721. Historical172/173 references retained here; no verified new Spanish DAC8 procedure inferred from2026 EU start date."
+  ],
+  [
+    "| Modelos 172/173 (exchange data) | AEAT receives automatic data from Spanish exchanges since 2024 |",
+    "Current LF123 provider reports and Sources: resident/Spanish-PE39bis/ter obligations separated from investor721. Historical172/173 references retained here; no verified new Spanish DAC8 procedure inferred from2026 EU start date."
+  ],
+  [
+    "| DAC8 / CARF (from 2026) | Cross-border automatic exchange of crypto data from EU and partner jurisdictions |",
+    "Current LF123 provider reports and Sources: resident/Spanish-PE39bis/ter obligations separated from investor721. Historical172/173 references retained here; no verified new Spanish DAC8 procedure inferred from2026 EU start date."
+  ],
+  [
+    "| Validated by | Pending — requires sign-off by a Spanish asesor fiscal or economista |",
+    "Historical attribution/version presentation, replaced by current metadata and protected CTA; no credentialed professional attestation or new signoff condition is asserted by this ledger."
+  ],
+  [
+    "| Skill version | 1.0 |",
+    "Historical attribution/version presentation, replaced by current metadata and protected CTA; no credentialed professional attestation or new signoff condition is asserted by this ledger."
+  ],
+  [
+    "| Buying/selling crypto for fiat | Ganancia/pérdida patrimonial (capital gain/loss) | Base del ahorro (savings) |",
+    "Current LF53–65 acquisition/direct fees/FIFO/fiat disposal gain, LF97 savings basket and LF153/155 worked sale. Actual investor scope, not all activity receipts."
+  ],
+  [
+    "| Crypto-to-crypto swap (permuta) | Ganancia/pérdida patrimonial | Base del ahorro (savings) |",
+    "Current LF67/71 different-coin investment swap greater-market-value/received-basis method, LF176 worked case. CORRECTION: actual ownership/right change is required; internal same-owned-unit transfers are distinguished at LF69, so not every labelled crypto transfer is taxable."
+  ],
+  [
+    "- [ ] Every crypto-to-crypto swap treated as a taxable permuta",
+    "Current LF67/71 different-coin investment swap greater-market-value/received-basis method, LF176 worked case. CORRECTION: actual ownership/right change is required; internal same-owned-unit transfers are distinguished at LF69, so not every labelled crypto transfer is taxable."
+  ],
+  [
+    "- NEVER ignore crypto-to-crypto swaps — they are ALL taxable events in Spain",
+    "Current LF67/71 different-coin investment swap greater-market-value/received-basis method, LF176 worked case. CORRECTION: actual ownership/right change is required; internal same-owned-unit transfers are distinguished at LF69, so not every labelled crypto transfer is taxable."
+  ],
+  [
+    "| Staking / lending / yield farming rewards | Rendimiento del capital mobiliario | Base del ahorro (savings) |",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "| Staking rewards (PoS validation) | Rendimiento del capital mobiliario | Base del ahorro — 19%–30% |",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "| Lending interest (Aave, Compound, etc.) | Rendimiento del capital mobiliario | Base del ahorro — 19%–30% |",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "| Yield farming rewards | Rendimiento del capital mobiliario | Base del ahorro — 19%–30% |",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "| Liquidity mining tokens | Rendimiento del capital mobiliario (if passive) or ganancia patrimonial | Context-dependent |",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "- [ ] Staking/lending classified as rendimiento del capital mobiliario (savings base)",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "- NEVER classify staking rewards on the general base — they go on the savings base as rendimiento del capital mobiliario",
+    "CORRECTED SCOPE: current LF83–91 distinguishes V1766-22 minimal-resource passive staking, actual capital-lending contracts, organised activity and other rights. It expressly does not treat every DeFi/yield-farming/liquidity receipt or all staking as the same savings-capital return."
+  ],
+  [
+    "| Airdrops (no service rendered) | Ganancia patrimonial no derivada de transmisión | Base general (general base) |",
+    "CORRECTED CLASSIFICATION: current LF86–91 distinguishes employment/service consideration, genuine non-transfer general gain and actual gift-tax gift; old blanket airdrop outcome is not repeated as verified law. Taxed receipt basis is preserved under its actual route."
+  ],
+  [
+    "| Gratuitous airdrop (no action required) | Ganancia patrimonial no derivada de transmisión — base general at progressive rates |",
+    "CORRECTED CLASSIFICATION: current LF86–91 distinguishes employment/service consideration, genuine non-transfer general gain and actual gift-tax gift; old blanket airdrop outcome is not repeated as verified law. Taxed receipt basis is preserved under its actual route."
+  ],
+  [
+    "| Airdrop for service (sign-up, referral, task) | Ganancia patrimonial no derivada de transmisión — base general |",
+    "CORRECTED CLASSIFICATION: current LF86–91 distinguishes employment/service consideration, genuine non-transfer general gain and actual gift-tax gift; old blanket airdrop outcome is not repeated as verified law. Taxed receipt basis is preserved under its actual route."
+  ],
+  [
+    "- [ ] Airdrops classified on general base (not savings base)",
+    "CORRECTED CLASSIFICATION: current LF86–91 distinguishes employment/service consideration, genuine non-transfer general gain and actual gift-tax gift; old blanket airdrop outcome is not repeated as verified law. Taxed receipt basis is preserved under its actual route."
+  ],
+  [
+    "| Mining — occasional | Ganancia patrimonial | Base general (general base) |",
+    "UNSUPPORTED HISTORICAL DEFAULT CORRECTED: current LF85/93 actual art27 activity and separate V3625-16 VAT analysis do not establish an occasional/hobby-mining capital-gain exemption/default. Current LF23 classification and LF87 other genuine non-transfer gains require actual facts."
+  ],
+  [
+    "| Occasional / hobby mining | Ganancia patrimonial no derivada de transmisión | Base general — progressive rates 19%–47% |",
+    "UNSUPPORTED HISTORICAL DEFAULT CORRECTED: current LF85/93 actual art27 activity and separate V3625-16 VAT analysis do not establish an occasional/hobby-mining capital-gain exemption/default. Current LF23 classification and LF87 other genuine non-transfer gains require actual facts."
+  ],
+  [
+    "| Mining / trading — habitual (actividad económica) | Rendimiento de actividades económicas | Base general (general base) |",
+    "Current LF23/85 actual art27 own-account organisation test and activity companion, LF93 V3625-16 IAE831.9 provisional classification. CORRECTED LIMIT: neither that VAT ruling nor habitual label alone determines RETA registration; separate social-contribution method required."
+  ],
+  [
+    "| Habitual / commercial mining (actividad económica) | Rendimiento de actividades económicas | Base general — progressive rates, plus alta en Modelo 036, epígrafe IAE 831.9, and RETA registration |",
+    "Current LF23/85 actual art27 own-account organisation test and activity companion, LF93 V3625-16 IAE831.9 provisional classification. CORRECTED LIMIT: neither that VAT ruling nor habitual label alone determines RETA registration; separate social-contribution method required."
+  ],
+  [
+    "- **Indicators of actividad económica** — Indicators of actividad económica: regular mining operation, dedicated hardware, systematic approach, intent to generate ongoing income (per Article 27 LIRPF).  _(Article 27 LIRPF)_",
+    "Current LF23/85 actual art27 own-account organisation test and activity companion, LF93 V3625-16 IAE831.9 provisional classification. CORRECTED LIMIT: neither that VAT ruling nor habitual label alone determines RETA registration; separate social-contribution method required."
+  ],
+  [
+    "| Payment for goods/services in crypto | Disposal at market value — ganancia patrimonial | Base del ahorro (savings) |",
+    "Current LF75 paid-provider fee-token disposal and LF53–71 ordinary investment disposal method distinguish the owned coin disposal from the independently classified employment/service receipt at LF86; annual savings route requires investment-disposal facts."
+  ],
+  [
+    "| Unknown whether habitual trading or occasional | Treat as occasional (savings base) unless clear business indicators |",
+    "UNSUPPORTED DEFAULT CORRECTED: current LF23 and LF83–91 require actual relationship/rights/organisation before selecting a tax base; no automatic occasional-trading or staking default when those facts are unknown. Intake LF211–224 obtains consequential facts."
+  ],
+  [
+    "| Unknown whether staking reward or airdrop | Treat as staking reward (savings base — rendimiento del capital mobiliario) |",
+    "UNSUPPORTED DEFAULT CORRECTED: current LF23 and LF83–91 require actual relationship/rights/organisation before selecting a tax base; no automatic occasional-trading or staking default when those facts are unknown. Intake LF211–224 obtains consequential facts."
+  ],
+  [
+    "| Unknown cost basis | STOP — cannot compute gain without acquisition cost |",
+    "Current LF53 complete acquisition/ownership/fees record and LF125 evidence preservation, with consequential acquisition/FIFO intake. No invented zero basis or computation without records."
+  ],
+  [
+    "- NEVER compute gains without verified cost basis and complete FIFO records",
+    "Current LF53 complete acquisition/ownership/fees record and LF125 evidence preservation, with consequential acquisition/FIFO intake. No invented zero basis or computation without records."
+  ],
+  [
+    "| Unknown whether foreign or Spanish exchange | Assume foreign — check Modelo 721 obligation |",
+    "UNSUPPORTED FOREIGN DEFAULT CORRECTED: current LF115 requires actual contracting custodian residence/key-safekeeping evidence; platform name/domain or unknown exchange status does not prove foreign721 custody."
+  ],
+  [
+    "| Unknown residency status | STOP — affects worldwide vs source taxation |",
+    "Current LF23 residence/territorial routing and LF143 worldwide resident method, with separate IRNR/Beckham analysis; no source/residence presumption from platform location."
+  ],
+  [
+    "- **R-ESC-1 — Residency unknown** — Spain taxes worldwide income of tax residents. Non-residents are only taxed on Spain-source income. Cannot proceed without confirming tax residency status.",
+    "Current LF23 residence/territorial routing and LF143 worldwide resident method, with separate IRNR/Beckham analysis; no source/residence presumption from platform location."
+  ],
+  [
+    "- [ ] Residency confirmed — Spanish tax resident (worldwide income) or non-resident (source only)?",
+    "Current LF23 residence/territorial routing and LF143 worldwide resident method, with separate IRNR/Beckham analysis; no source/residence presumption from platform location."
+  ],
+  [
+    "- **R-ESC-3 — Corporate crypto holdings** — Companies holding crypto (Impuesto sobre Sociedades) have different accounting and tax treatment. This skill covers individuals (IRPF) only. Escalate to an asesor fiscal.",
+    "Current LF23 scope expressly excludes corporate taxpayers and routes separate systems; the individual crypto method is not a corporate-tax computation."
+  ],
+  [
+    "- **Swap gain/loss formula** — Disposal value = market value of the crypto received at the time of the swap. Acquisition cost of new crypto = same market value (plus any fees). Gain/loss = disposal value minus FIFO cost basis of the outgoing crypto.  _(Article 37.1.h LIRPF)_",
+    "SOURCE CORRECTION: current LF67/71 uses the GREATER market value of delivered/received rights and its stated direct-fee rule, not just the value received; actual received-lot basis and globalFIFO are stated separately."
+  ],
+  [
+    "- **Taxable timing and cost basis** — Taxable at market value in EUR on receipt date. Cost basis of received tokens = market value at receipt (for future disposals).",
+    "Current LF83–91 fact-classified in-kind receipt/market valuation and taxed acquisition-basis record; subsequent disposal LF53–71. The receipt type must first be established, not assumed from token label."
+  ],
+  [
+    "- **Taxable timing and cost basis** — Taxable at market value on receipt. Cost basis for future disposal = market value at receipt.",
+    "Current LF83–91 fact-classified in-kind receipt/market valuation and taxed acquisition-basis record; subsequent disposal LF53–71. The receipt type must first be established, not assumed from token label."
+  ],
+  [
+    "- **Conservative treatment of hard forks** — No specific AEAT guidance. Conservative treatment: Cost basis of original coin: unchanged. Cost basis of forked coin: €0. Subsequent disposal: full proceeds treated as gain.",
+    "UNSUPPORTED ZERO-BASIS ASSERTION NOT REPEATED: current LF91/Sources reserves actual fork rights, ownership and basis; old automatic fork zero-basis method survives only as historical wording here."
+  ],
+  [
+    "NFTs are treated as crypto-assets under Spanish tax law. No separate regime exists.",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| Purchase of NFT with crypto | Disposal of crypto (taxable event) + acquisition of NFT |",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| Sale of NFT for fiat | Capital gain/loss on savings base |",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| Sale of NFT for crypto | Permuta — taxable at market value |",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| Creation and sale of NFT (artist) | Actividad económica if habitual — base general |",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| NFT royalties | Rendimiento del capital mobiliario or actividad económica depending on regularity |",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "- **FIFO applies to identical NFTs** — FIFO applies if you hold multiple identical NFTs (e.g. editions from the same collection).",
+    "UNSUPPORTED BLANKET NFT RULE NOT REPEATED: current LF91/147/Sources reserves actual NFT rights, activity, income, VAT and identification. The homogeneous fungible-coin FIFO ruling is not automatically extended to editions/NFTs; paying with an owned investment coin has its separate disposal method."
+  ],
+  [
+    "| Obligation | Mandatory when the aggregate value of crypto held on foreign exchanges/custodians exceeds €50,000 as of 31 December |",
+    "Current LF115–118 full third-party foreign-custody/role/entity/books-exemption/31December strict>50000 method, including cessation; not all foreign-named exchanges or all resident entities automatically file."
+  ],
+  [
+    "| Who must file | Spanish tax residents (individuals and entities) |",
+    "Current LF115–118 full third-party foreign-custody/role/entity/books-exemption/31December strict>50000 method, including cessation; not all foreign-named exchanges or all resident entities automatically file."
+  ],
+  [
+    "| Subsequent years | Required again only if there is an increase > €20,000 over the last declared value |",
+    "CORRECTION: current LF118 tests strict>20000 against last declaration AND obligatory cessation; old increase-only wording is incomplete."
+  ],
+  [
+    "| Penalties | €5,000 per datum omitted or incorrectly reported (minimum €10,000) |",
+    "SOURCE CORRECTION: current LF139 actual LGTDA18 and LF135–136 general198/199 penalties replace retired5000-per-datum/min10000 claim and erroneousDA13 attribution; determine actual failure before quantifying."
+  ],
+  [
+    "| Legal basis | Ley 11/2021 (disposición adicional 13ª LGT); Orden HFP/886/2023 |",
+    "SOURCE CORRECTION: current LF139 actual LGTDA18 and LF135–136 general198/199 penalties replace retired5000-per-datum/min10000 claim and erroneousDA13 attribution; determine actual failure before quantifying."
+  ],
+  [
+    "| Modelo 721 (foreign holdings) | Failure to declare → €5,000 per datum penalty; unjustified capital gains may be imputed |",
+    "SOURCE CORRECTION: current LF139 actual LGTDA18 and LF135–136 general198/199 penalties replace retired5000-per-datum/min10000 claim and erroneousDA13 attribution; determine actual failure before quantifying."
+  ],
+  [
+    "| Failure to file Modelo 721 | €5,000 per datum omitted (minimum €10,000) |",
+    "SOURCE CORRECTION: current LF139 actual LGTDA18 and LF135–136 general198/199 penalties replace retired5000-per-datum/min10000 claim and erroneousDA13 attribution; determine actual failure before quantifying."
+  ],
+  [
+    "| Retention period | 4 years from end of relevant tax year (general prescription period under Article 66 LGT) |",
+    "CORRECTED RETENTION LIMIT: current LF125 LGT66/66bis/70 preserves evidence while basis/carryforwards/later returns remain relevant; no automatic deletion four years after acquisition or original tax year."
+  ],
+  [
+    "| Same-year offset | Losses on the general base can offset general base income |",
+    "CORRECTED LIMIT: current LF97 article48 general non-transfer gain/loss basket is separate; no unlimited general loss offset against salary/general income."
+  ],
+  [
+    "- **Re-acquisition rule (2 months)** — Spain has a re-acquisition rule similar to (but distinct from) the US wash sale rule: If you sell a crypto asset at a loss and reacquire the same asset (homogeneous) within 2 months (before or after the sale), the loss is suspended — it cannot be recognised until the replacement asset is itself disposed of outside the 2-month window. For assets traded on a regulated market, the period extends to 1 year (before or after). Most crypto is NOT on a regulated market, so the 2-month rule applies. The suspended loss is not lost — it is added to the cost basis of the replacement asset.  _(Article 33.5.f Ley 35/2006 LIRPF; DGT consulta V1604-18)_",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "**Input:** Spanish tax resident. Sold 2 BTC at €40,000 each on 1 August 2025. FIFO cost basis: €50,000 each. Loss: €20,000. Repurchased 2 BTC at €39,000 each on 15 August 2025 (within 2 months).",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "**Computation:**\n```\nLoss on sale:     (€40,000 − €50,000) × 2 = −€20,000\nRe-acquisition:   Within 2 months → Article 33.5.f applies\nLoss status:      SUSPENDED — cannot be recognised in 2025\nNew cost basis:   €39,000 + €10,000 (suspended loss per BTC) = €49,000 per BTC",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "The suspended loss is effectively preserved in the increased\ncost basis and will be recognised when the replacement BTC\nis disposed of (outside the 2-month window).\n```",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "- [ ] 2-month anti-abuse rule checked for any loss + re-acquisition",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "- NEVER forget the 2-month re-acquisition anti-abuse rule for losses",
+    "UNSUPPORTED TWO-MONTH / BASIS-UPLIFT CLAIM CORRECTED: current LF99 expressly distinguishes33.5(e) actual-asset one-year identity from securities33.5(f)/(g), leaving fungible-coin identity unconfirmed. LF101 conditional proven-same-asset worksheet keeps blocked loss SEPARATE and releases it on later sale; no automatic coin two-month restriction or capitalised blocked-loss basis. Old numeric case remains historical, not a valid current example."
+  ],
+  [
+    "| Exit taxation | If you cease to be a Spanish tax resident, unrealised gains on crypto > €4 million may be taxable under exit tax rules (Article 95 bis LIRPF) |",
+    "SOURCE CORRECTION: current LF145 restricts95bis to actual qualifying shares/participations; ordinary coins are not subject merely because portfolio exceeds4million. Token participation rights require actual classification."
+  ],
+  [
+    "| Failure to file Modelo 100 with crypto | 50%–150% of unpaid tax (sanción grave/muy grave) |",
+    "Current LF134 actual LGT191 conditional minor50/serious50–100/veryserious100–150 and applicable reductions; not every missing return is automatically a serious/veryserious offence."
+  ],
+  [
+    "| Late filing | Recargo (surcharge) 1%–20% depending on delay, plus interest |",
+    "SOURCE CORRECTION: current LF131–133 distinguishes LGT27 voluntary late payable1%+1%/15% from separate5/10/20 executive collection; old universal1–20 delay range is not the current late-return method."
+  ],
+  [
+    "**Input:** Spanish tax resident. Bought 1 BTC at €25,000 in February 2025. Sold 1 BTC at €55,000 in October 2025. Exchange fees: €150 on purchase, €200 on sale. No other savings income.",
+    "Current LF153/155 first oa sale retains25000+150 basis25150,55000−200 proceeds54800,gain29650,tax6106.50; current2026 example adds absorbed-minimum/no-other-income/credit/denial assumptions. Old2025 dates remain historical, not falsely repeated."
+  ],
+  [
+    "**Computation:**\n```\nDisposal value:    €55,000 − €200 (sale fee) = €54,800\nAcquisition cost:  €25,000 + €150 (purchase fee) = €25,150\nGain:              €54,800 − €25,150 = €29,650",
+    "Current LF153/155 first oa sale retains25000+150 basis25150,55000−200 proceeds54800,gain29650,tax6106.50; current2026 example adds absorbed-minimum/no-other-income/credit/denial assumptions. Old2025 dates remain historical, not falsely repeated."
+  ],
+  [
+    "Tax (savings base):\n  First €6,000 × 19% =  €1,140\n  Next €23,650 × 21% =  €4,966.50\n  Total:                 €6,106.50\n```",
+    "Current LF153/155 first oa sale retains25000+150 basis25150,55000−200 proceeds54800,gain29650,tax6106.50; current2026 example adds absorbed-minimum/no-other-income/credit/denial assumptions. Old2025 dates remain historical, not falsely repeated."
+  ],
+  [
+    "**Input:** Spanish tax resident. Acquired 10 ETH at €1,200 each in March 2024 (total cost: €12,000). In June 2025, swapped 10 ETH for 0.5 BTC when ETH market price = €3,800 each.",
+    "Current LF67/71 swap greater-market-value/globalFIFO/received-basis method and LF176/178 second oa case. Old10ETH/12000/38000/gain26000/tax5340 numeric fixture remains historical and is NOT identical to current12ETH/FIFO16000/gain29600/basket-offset example; old received-only valuation corrected."
+  ],
+  [
+    "**Computation:**\n```\nDisposal value of ETH:    10 × €3,800 = €38,000\nAcquisition cost (FIFO):  10 × €1,200 = €12,000\nGain on ETH disposal:     €38,000 − €12,000 = €26,000",
+    "Current LF67/71 swap greater-market-value/globalFIFO/received-basis method and LF176/178 second oa case. Old10ETH/12000/38000/gain26000/tax5340 numeric fixture remains historical and is NOT identical to current12ETH/FIFO16000/gain29600/basket-offset example; old received-only valuation corrected."
+  ],
+  [
+    "Tax on €26,000 (savings base):\n  First €6,000 × 19% =  €1,140\n  Next €20,000 × 21% =  €4,200\n  Total:                 €5,340",
+    "Current LF67/71 swap greater-market-value/globalFIFO/received-basis method and LF176/178 second oa case. Old10ETH/12000/38000/gain26000/tax5340 numeric fixture remains historical and is NOT identical to current12ETH/FIFO16000/gain29600/basket-offset example; old received-only valuation corrected."
+  ],
+  [
+    "New cost basis of 0.5 BTC: €38,000 (for future disposal FIFO)\n```",
+    "Current LF67/71 swap greater-market-value/globalFIFO/received-basis method and LF176/178 second oa case. Old10ETH/12000/38000/gain26000/tax5340 numeric fixture remains historical and is NOT identical to current12ETH/FIFO16000/gain29600/basket-offset example; old received-only valuation corrected."
+  ]
+]

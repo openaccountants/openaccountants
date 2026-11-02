@@ -1,0 +1,668 @@
+[
+  {
+    "id": "PAY-P001",
+    "heading": "Gibraltar payroll and social insurance v0.14",
+    "text": "> **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.",
+    "sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf"
+  },
+  {
+    "id": "PAY-P002",
+    "heading": "Scope",
+    "text": "Prepare ordinary monthly payroll controls using the social-insurance schedule effective 1 July 2026. Special contribution classes, partial periods, employment-law entitlements and cross-border coverage require their own determination.",
+    "sha256": "29cb87121280a7bd80b672b0ebae32f734e21517b0993b2f105954783d56bd67"
+  },
+  {
+    "id": "PAY-P003",
+    "heading": "Scope",
+    "text": "Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.",
+    "sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc"
+  },
+  {
+    "id": "PAY-P004",
+    "heading": "Registration and reporting",
+    "text": "Register each employee and obtain the ITO code. Remit deducted tax and social insurance by the 15th of each month. Annual P8, P10/P10A and P12 reporting is due by 31 July. Give a leaver P7A and an annual P7 certificate. Retain submission and payment receipts. [ITO employers, obligations section](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers).",
+    "sha256": "5cfc548a9e6874e23f03af601b7c9e30e1ff6eb81aee97a5380f9fa06782aa2b"
+  },
+  {
+    "id": "PAY-P005",
+    "heading": "Registration and leaver evidence",
+    "text": "For company PAYE registration, the ITO requests employment-registration and incorporation certificates, a request addressed to the Commissioner and the PAYE commencement date. Employee registration needs the employment contract and identification; an employer requesting the employee's tax code also needs the employee's signed authority. Keep employer and employee registration evidence separately. For leavers, send P7A part 1 to the ITO and give parts 2 and 3 to the employee. [ITO employer questions and answers](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers).",
+    "sha256": "27420a11f14d1304bc87a597baed119af12ead74570a6fae9be60090ca038d50"
+  },
+  {
+    "id": "PAY-P006",
+    "heading": "Annual P8: period and reconciliation controls",
+    "text": "The **2025/26** P8 guidance covers 1 July 2025\u201330 June 2026; the employer page gives 31 July 2026 as its deadline. Do not label it the 2026/27 return. [ITO](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers).",
+    "sha256": "674adf8a092f7da8e1ed1207d4eb04be17b80828b21d671273f892474fbeee44"
+  },
+  {
+    "id": "PAY-P007",
+    "heading": "Annual P8: period and reconciliation controls",
+    "text": "Match employee identity and contribution class to P3. Exclude unpaid weeks and start a new entry when the contribution class changes. Keep the company's numeric taxpayer reference distinct from its PAYE employer reference. An active PAYE employer paying no salary still submits a nil P8. [2025/26 P8 guidance, pages 7\u201311 and 17](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf).",
+    "sha256": "54ce5504e8325f15643ac41ac1c180e4f4e7c1f71b13da4b88dca06a5462057d"
+  },
+  {
+    "id": "PAY-P008",
+    "heading": "Annual P8: period and reconciliation controls",
+    "text": "Reconcile tax deducted and both SI components to actual remittances, not amounts merely accrued. The form separately captures tax and SI already paid. Example: assumed annual deductions of \u00a34,800 PAYE and \u00a32,000 employee SI, plus \u00a32,800 employer SI, compared with payments of \u00a34,500 PAYE and \u00a34,600 SI, leave **\u00a3300 PAYE and \u00a3200 SI** outstanding. The totals are illustrative, not annual contribution caps. [P8 guidance, pages 13\u201314](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf).",
+    "sha256": "2b76fff0ebbead024259b0b42b98216805758b75e3f3a106af5a72e51fa975cc"
+  },
+  {
+    "id": "PAY-P009",
+    "heading": "Annual P8: period and reconciliation controls",
+    "text": "The completed declaration generates an XML file for submission through tax.egov.gi. Saving the workbook alone does not submit the return. Retain the submitted file and receipt. [P8 guidance, page 16](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf). Screenshots contain older year labels; use the explicit 2025/26 period and verify the selected filing year before submission.",
+    "sha256": "6662ebf4391aa8e15e628990f61e70eba39a86485a38a1ce62e0e8d3b9db4eb4"
+  },
+  {
+    "id": "PAY-P010",
+    "heading": "PAYE deduction and certificate rules",
+    "text": "The PAYE Regulations define emoluments to include office/employment income, pensions, cash gratuities and benefits in kind. Payment includes credit to an account on which the employee can draw. Regulation 3 requires withholding even without an assessment and even where the payment relates to another assessment year. Do not postpone withholding solely because a bonus relates to earlier service. [Regulations 2\u20133](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "e0cdc6d413b7076338e2138fb86f5be84dd1bf47462259ddd8e47556baf4df1f"
+  },
+  {
+    "id": "PAY-P011",
+    "heading": "PAYE deduction and certificate rules",
+    "text": "Regulation 8(1) uses gross emoluments, the employee's code and the official table on each payday. **If neither the required allowances certificate nor the applicable leaver certificate has been lodged, regulation 8(2) requires code X.** Do not substitute a guessed personal allowance or zero withholding while awaiting a code. Regulation 8(3) adds the proportionate money value of benefits to gross emoluments; valuation and exemptions require separate evidence. A Commissioner direction under 8(4) can specify a different deduction. An agreement not to deduct cannot override the duty. [Regulations 6, 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "ed4f678cb84b28a77bcf2fae0b18e9de0a81ce6e0351b7ade42fdb7de1d622d4"
+  },
+  {
+    "id": "PAY-P012",
+    "heading": "PAYE deduction and certificate rules",
+    "text": "For an employee taking employment without either relevant certificate, regulation 4(1) requires an allowances declaration within seven days. A change affecting allowances must be declared within 30 days under 4(5). Part II is lodged with the higher-paying employer if there are multiple employers; where the employee receives a pension, the pension payer receives it unless the Commissioner directs otherwise. Do not apply the same allowances independently to every job. [Regulations 4\u20135](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "069853441357314718d8792f802c1a6bb60aa3211b3cb0006b5f106a3dfb8f2f"
+  },
+  {
+    "id": "PAY-P013",
+    "heading": "PAYE deduction and certificate rules",
+    "text": "On cessation, the employer must furnish the leaver certificate and send part 1 to the Commissioner immediately on cessation. The new employer can use the certificate's code pending the allowances certificate and must send part 3 immediately after engagement where parts 2 and 3 were lodged. Regulation 13 separately requires the annual certificate within one month after year-end for employees employed on 30 June from whose emoluments tax was deducted. [Regulations 13\u201313A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "91f43cf1ec0ca18d4540cb8286e87b10d7bb5b66891ed9519d7bf36b8396d719"
+  },
+  {
+    "id": "PAY-P014",
+    "heading": "Selecting the PAYE table and handling irregular payments",
+    "text": "The employer page's **2026/27** section links daily, weekly, monthly and annual tables. The daily/monthly files checked here still use a **20252026 URL folder**; preserve both the current linking page and PDF, rather than inferring a document's applicable year from its path alone. The employer notes remain explicitly grouped under 2025/26. Confirm any mismatch affecting the actual payroll with ITO before reliance. [Current employer table index](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers).",
+    "sha256": "8709dbce9a704680565a6766b47d868c91d314745890987e55df4f0a372a274a"
+  },
+  {
+    "id": "PAY-P015",
+    "heading": "Selecting the PAYE table and handling irregular payments",
+    "text": "The notes distinguish **Part 1, Allowances Based System**, with the employee's code column, from **Part 2, Gross Income Based System**, with its tax-deduction column. A code identifies a table column; it is not a percentage. Retain the P3, code/system and pay frequency before looking up tax. Their ordinary method uses the frequency of payment, even if wages are calculated at a daily rate. [Employer notes, sections 3\u20135 and 9\u201310](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "6461c8ab1e94ed41d06a48a9945ebf916dfd997a1f31468cf289060302d30988"
+  },
+  {
+    "id": "PAY-P016",
+    "heading": "Selecting the PAYE table and handling irregular payments",
+    "text": "For partial weekly/monthly service, the notes divide pay by days worked, look up the daily amount and multiply that daily tax by the days worked. They use weekly tables for fortnightly/four-weekly pay (divide and multiply by two/four), monthly tables for quarterly/half-yearly pay (three/six), and annual tables for annual pay. These are the dated notes' methods, not permission to average arbitrary bonuses or allocate every lump sum over a chosen period. Confirm continued application and the precise day count/rounding for the case. [Sections 4\u20135](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "2f7d1eb78f9cf53921d9a1869cdb39044db133ff7d4583b6b7448bd754ea3193"
+  },
+  {
+    "id": "PAY-P017",
+    "heading": "Selecting the PAYE table and handling irregular payments",
+    "text": "For cessation lump sums, the notes require an **ITO directive before payment**, including loss-of-office compensation, ex-gratia payments, pension commutation and pay in lieu of notice. Do not calculate the deduction using an ordinary monthly example without that direction. Section 8 separately distinguishes part-time/occasional payments and separately paid spare-time commission from commission included with normal monthly salary; uncertain classification is referred to ITO. This Guide does not establish a blanket tax exemption for termination payments. [Sections 6 and 8](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "4bfde75339d002eebd028f3bf34e28bef11f53f8605c9c35a4cddd3c68dcc5a3"
+  },
+  {
+    "id": "PAY-P018",
+    "heading": "Table-versus-guidance discrepancies",
+    "text": "Two numerical discrepancies were checked against the rendered tables:",
+    "sha256": "a27e90eb6606dbb17796d5ffeaff1f79288e77222538c6f1ee3057128e265a3a"
+  },
+  {
+    "id": "PAY-P019",
+    "heading": "Table-versus-guidance discrepancies",
+    "text": "| Case | Employer-note illustration | Current-linked table |\n|---|---|---|\n| Daily pay \u00a335, code 24 | \u00a30.98 daily PAYE in section 4 | \u00a30.96 in Daily Part 1, page 1 |\n| Monthly \u00a31,623.50, code 35, ordinary ER | \u00a3144.82 PAYE and \u00a3176.66 employee SI in section 9 | \u00a3125.89 PAYE and \u00a3162.35 employee SI in Monthly Part 1, page 14, \u00a31,623\u2013\u00a31,624 row |",
+    "sha256": "9686a18ce9f60546bfba9072e3d62e6bf93ae0d105e76a973bea7652587b339c"
+  },
+  {
+    "id": "PAY-P020",
+    "heading": "Table-versus-guidance discrepancies",
+    "text": "Sources: [employer notes](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf), [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf), [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf). Do not copy the notes' historical illustration as a current table cell or silently blend the two. The table-linked calculations below are conditional on confirmation of the applicable table/code. The monthly SI cell also agrees with 10% of \u00a31,623.50; that arithmetic does not resolve every PAYE discrepancy.",
+    "sha256": "053a26cd009c099fb6e78c336b316661828c74b8536f41a1a77d0330ee0ebece"
+  },
+  {
+    "id": "PAY-P021",
+    "heading": "Table-versus-guidance discrepancies",
+    "text": "The daily table's footer directs the reader to contact PAYE where a tax amount is **grey**. Its \u00a331 row is grey in the rendered page. Preserve this visual instruction when extracting data: a numeric value in grey is not an ordinary cleared-for-use lookup, and plain text extraction loses that distinction. [Daily table, page 1 and footer](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf).",
+    "sha256": "d7ee651671568052d53f8cb86aca6c61ad8339e685ef1d40097a78f46eebea30"
+  },
+  {
+    "id": "PAY-P022",
+    "heading": "Conditional current-linked table examples",
+    "text": "Assume confirmed code 24, three relevant worked days and \u00a3105 pay, with ITO/table applicability established. The daily equivalent is \u00a335; the table cell is \u00a30.96; the deduction is **\u00a32.88**, not the notes' \u00a32.94. This is a PAYE calculation only; SI uses its separate contribution-period rules.",
+    "sha256": "8f8f5fa8d94d0dce7558af7c15659ab5a6fb6817ad63cfb4a154a9a15653dca9"
+  },
+  {
+    "id": "PAY-P023",
+    "heading": "Conditional current-linked table examples",
+    "text": "```oa-check\nname: Gibraltar daily code24 current-linked table example\ninputs:\n  gross_pay: 105\n  confirmed_days: 3\n  verified_daily_table_tax: 0.96\nsteps:\n  - daily_equivalent: gross_pay / confirmed_days\n  - paye: verified_daily_table_tax * confirmed_days\nexpected:\n  daily_equivalent: 35\n  paye: 2.88\n```",
+    "sha256": "665c8f09aafe43ad1ad1334cfcfc58dbdcae6fb02f7d84796ac9865cc2eee52e"
+  },
+  {
+    "id": "PAY-P024",
+    "heading": "Conditional current-linked table examples",
+    "text": "Assume a confirmed full monthly period, code 35/Part 1, ER liability and no other benefits or deductions at gross pay \u00a31,623.50. The table gives PAYE \u00a3125.89; SI is \u00a3162.35 employee and \u00a3243.65 employer. Pay after those deductions is **\u00a31,335.26** and salary plus employer SI is **\u00a31,867.15**. Any further deduction or employer cost must be added separately. [Monthly table, page 14](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf).",
+    "sha256": "5d2026087f17b1c26faee37978f3c7e7a16c91ee5ec396c108f61542b2a631cf"
+  },
+  {
+    "id": "PAY-P025",
+    "heading": "Conditional current-linked table examples",
+    "text": "```oa-check\nname: Gibraltar monthly code35 current-linked table reconciliation\ninputs:\n  gross_pay: 1623.50\n  verified_paye_table_tax: 125.89\nsteps:\n  - employee_si: min(176.76, max(62.11, gross_pay * 0.10))\n  - employer_si: min(243.65, max(138.55, gross_pay * 0.18))\n  - pay_after_specified_deductions: gross_pay - verified_paye_table_tax - employee_si\n  - salary_plus_employer_si: gross_pay + employer_si\nexpected:\n  employee_si: 162.35\n  employer_si: 243.65\n  pay_after_specified_deductions: 1335.26\n  salary_plus_employer_si: 1867.15\n```",
+    "sha256": "909ccb1c6a9962442d3f7cdd224dd2436a2d340847335d4b51b6e9a4fd568591"
+  },
+  {
+    "id": "PAY-P026",
+    "heading": "Conditional current-linked table examples",
+    "text": "These checks validate arithmetic after a table lookup; they do not independently validate every table cell, settle the published discrepancy, or implement a complete PAYE engine. Retain the exact table page, row, code and any ITO direction with the payroll working paper.",
+    "sha256": "8e80011f2c026476334ebfd62e0a5c5fd225c253e8967be42dedcbe6425d34be"
+  },
+  {
+    "id": "PAY-P027",
+    "heading": "Monthly PAYE reporting, payment and default",
+    "text": "Regulation 11(1) requires reporting on the appropriate form and payment to the Treasury on or before the 15th of every month. It refers to amounts deducted during preceding months; maintain a period-by-period reconciliation so unpaid earlier deductions are not lost. An employer who wilfully or without reasonable excuse failed to deduct remains liable as if the deduction had been made. [Regulation 11(1)\u2013(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "e827b930b86790ba89d8adf6f4466ea66ae909cc86d61c471ac03edd22a41382"
+  },
+  {
+    "id": "PAY-P028",
+    "heading": "Monthly PAYE reporting, payment and default",
+    "text": "Regulation 11(3) permits the Commissioner, at discretion, to increase late-paid PAYE by **2% for each month of delay, compounded**. This is not an automatic flat 2% penalty, and these PAYE regulations do not establish the SI penalty. Assuming the discretion is exercised and two monthly increments apply to \u00a31,000 with no intervening payment, the amount is **\u00a31,000 \u00d7 1.02 \u00d7 1.02 = \u00a31,040.40**, including \u00a340.40 penalty. Confirm the actual delay periods, payments and determination before applying the example. Interaction with general Income Tax Act surcharge provisions remains unverified; do not stack penalties without resolving it. [Regulation 11(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "e6ce7c4b5e04c8ee3c6c07a892a7cdfaca30159ffe92e521e436d2e10eebf7d5"
+  },
+  {
+    "id": "PAY-P029",
+    "heading": "Payroll records and late production/P8 penalties",
+    "text": "Regulation 17 requires production, when called for, of wage sheets and records relating to remuneration calculations/payments, deductions and accounting for deducted tax. Keep the notice and its specified date alongside the records. Regulation 17(2)\u2013(2B) applies the following amounts for missing the specified production or P8 date, based on **average employees in the preceding assessment year**:",
+    "sha256": "7dfe13b434457ccdda9f06f3ffbdef12ee815ee080d748d92aee2553509d17fe"
+  },
+  {
+    "id": "PAY-P030",
+    "heading": "Payroll records and late production/P8 penalties",
+    "text": "| Employer size | Next day after specified date | Additional if failure continues after 30 days | Combined amount at that stage |\n|---|---:|---:|---:|\n| Below 10 | \u00a350 | \u00a3250 | \u00a3300 |\n| 10 to below 50 | \u00a3100 | \u00a3500 | \u00a3600 |\n| 50 to below 250 | \u00a3250 | \u00a31,250 | \u00a31,500 |\n| 250 or more | \u00a3500 | \u00a32,500 | \u00a33,000 |",
+    "sha256": "32ae9d713937ac9816bddd45437923003416848e5bb3b5a72f27afafadf65b19"
+  },
+  {
+    "id": "PAY-P031",
+    "heading": "Payroll records and late production/P8 penalties",
+    "text": "Exactly 10 enters the second row; exactly 50 the third; exactly 250 the fourth. Use the preceding-year average, not today's payroll headcount. These administrative amounts are distinct from regulation 19 offences and from payment penalties. The Commissioner has a discretionary power to extend time limits under regulation 16; a requested extension is not an approved extension. [Regulations 16\u201317](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "7a1af1be4bc5a515bf55f7ab3cbeacaa373e7c4bed55b8f0f4b7d9ffaef05eb0"
+  },
+  {
+    "id": "PAY-P032",
+    "heading": "Payroll records and late production/P8 penalties",
+    "text": "This section does not establish the averaging method for unusual staffing histories, applicable standard-scale criminal fine values, or all penalty interactions. Record those as case-specific review questions rather than substituting company-size thresholds from the corporation-tax return rules.",
+    "sha256": "59cca484c3e462c8ab4a50eaa386b7cfb5b9143b28be6b06802cff989a94c264"
+  },
+  {
+    "id": "PAY-P033",
+    "heading": "Monthly ordinary contribution table",
+    "text": "For the ordinary earnings-related class, the published schedule effective **1 July 2026** gives:",
+    "sha256": "16f6c98be9264281371e41493494804aa9ddf2f978ab4c48cf1fc8e614c0e1b4"
+  },
+  {
+    "id": "PAY-P034",
+    "heading": "Monthly ordinary contribution table",
+    "text": "| Contributor | Rate | Monthly minimum | Monthly maximum |\n|---|---:|---:|---:|\n| Employee | 10% | \u00a362.11 | \u00a3176.76 |\n| Employer | 18% | \u00a3138.55 | \u00a3243.65 |\n| Self-employed, separate SE class | 20% | \u00a3131.95 | \u00a3232.05 |",
+    "sha256": "4b0f65481823cb0859c02d912e2dffe4f5259d481cca1dd1c57e29b6adf9d350"
+  },
+  {
+    "id": "PAY-P035",
+    "heading": "Monthly ordinary contribution table",
+    "text": "[ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf). The schedule contains separate pensioner, married-woman, trainee and exemption classes. Do not assign them from age or job title without confirming the issued class and eligibility.",
+    "sha256": "32d3e53778be52bd6deb643aba0a78a63714e92242e4c770196fab2559d0c8aa"
+  },
+  {
+    "id": "PAY-P036",
+    "heading": "Other confirmed contribution classes",
+    "text": "For a confirmed full monthly contribution period, the same official schedule provides:",
+    "sha256": "0314bd4bedfd4cb17e227798de94798e993942b987eeaafda63ace7a9d464d38"
+  },
+  {
+    "id": "PAY-P037",
+    "heading": "Other confirmed contribution classes",
+    "text": "| Issued class | Employee contribution | Employer contribution |\n|---|---:|---:|\n| D1, detached worker paying SI | 10%, minimum \u00a362.11, maximum \u00a3176.76 | 18%, minimum \u00a3138.55, maximum \u00a3243.65 |\n| MW, married-woman option | \u00a369.12 | 20%, minimum \u00a378.65, maximum \u00a3173.98 |\n| PN, pensioner (60 / 5E entries) | Exempt | 18%, minimum \u00a3138.55, maximum \u00a3243.65 |\n| T2, trainee second employment (E272) | 10%, maximum \u00a316.99 | Exempt |\n| Exempt group: DW, SM, SP, SW, SX, EZ, XX | Exempt | Exempt |",
+    "sha256": "de4e4affa62fae38dfa4a7a5bc211efe9227dc249e90d1863f1ce1408b30b728"
+  },
+  {
+    "id": "PAY-P038",
+    "heading": "Other confirmed contribution classes",
+    "text": "Select the issued class and its supporting eligibility evidence. The table is not authority to self-award an exemption. D1 and DW differ; PN employment and XX pension income differ. T2 has no minimum printed in its row. [2026/27 schedule, monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).",
+    "sha256": "05b4bdc4ad330b6ccd359cb04b7cc5e468919a2c24613d721b4dbc5acd3eba00"
+  },
+  {
+    "id": "PAY-P039",
+    "heading": "Other confirmed contribution classes",
+    "text": "**Class examples:** with confirmed monthly earnings of \u00a31,000, MW gives \u00a369.12 employee plus **min(\u00a3173.98, max(\u00a378.65, \u00a3200)) = \u00a3173.98** employer. PN gives zero employee and \u00a3180 employer. T2 gives **min(\u00a316.99, \u00a3100) = \u00a316.99** employee and zero employer. An applicable DW exemption gives zero for both. These compare issued classes, not eligibility choices.",
+    "sha256": "8794e9d4d22d0f20083699d7a6fe515256cfee1352ac04237e18e4f8165317a3"
+  },
+  {
+    "id": "PAY-P040",
+    "heading": "Use the correct frequency",
+    "text": "The ER weekly limits are \u00a314.34\u2013\u00a340.79 employee and \u00a331.98\u2013\u00a356.22 employer, at 10% and 18%. Annual ER limits are \u00a3745.29\u2013\u00a32,121.21 employee and \u00a31,662.57\u2013\u00a32,923.83 employer. At confirmed weekly earnings of \u00a3300, the amounts are \u00a330 and \u00a354. Do not derive an annual limit from rounded monthly figures: \u00a3176.76 \u00d7 12 = \u00a32,121.12, whereas the published annual employee maximum is \u00a32,121.21. Use the appropriate published frequency; this difference alone does not establish an entitlement to a year-end adjustment. [2026/27 schedule, ER row](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).",
+    "sha256": "53abe7c043871c0003f12313e2eb3911e6d380bac8d01571d8f6b1154b4a367a"
+  },
+  {
+    "id": "PAY-P041",
+    "heading": "Contribution liability: wages, absence and employer cost",
+    "text": "Section 7(1) places initial payment responsibility for both the employer's and the insured employee's contribution on the employer, unless regulations prescribe otherwise. **The employer's share cannot be deducted from wages or otherwise recovered from the employee, even by agreement.** Recovery of the employee's share is subject to the regulations and section 7(3): where there is no wage or other monetary remuneration from any person in respect of the employment, recovery is prohibited; where the employer pays wages, recovery must be by deduction from them. Do not assume unpaid deductions can be collected in any later payroll without checking the recovery rules. [Social Security (Insurance) Act, section 7(1)\u2013(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).",
+    "sha256": "8ea50ebc6a9122d529ce37be134b033d95846835c913ad63c09d9f6d5d333b78"
+  },
+  {
+    "id": "PAY-P042",
+    "heading": "Contribution liability: wages, absence and employer cost",
+    "text": "Section 5(2) disregards employment for a contribution week only under its combined test: no services are rendered, and no remuneration is paid wholly or partly for a day in the week other than the specified incapacity/non-working-day exceptions. A blank payment run alone does not establish the test. Identify the service dates, remuneration entitlement and period to which payments relate. Sick pay and holiday pay need that analysis; do not treat every absence as exempt. [Section 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).",
+    "sha256": "6646d855476ecb4fbed5da9e306da4bf6d8e77c753d3ce9318f8e370b462d9fb"
+  },
+  {
+    "id": "PAY-P043",
+    "heading": "Contribution liability: wages, absence and employer cost",
+    "text": "Section 7(4) separately provides that no contribution is payable in respect of an employee for a week during the whole **or any part** of which she is absent exercising her statutory maternity-leave right. Obtain the leave record and establish that statutory right; this is not a general exemption for every parental absence or a determination of benefit entitlement. [Section 7(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).",
+    "sha256": "ba759f1038ce209a0d2c5ecfe9b44c4acc7ee11cb0dfb26fb93ec39de6466c05"
+  },
+  {
+    "id": "PAY-P044",
+    "heading": "Contribution liability: wages, absence and employer cost",
+    "text": "Section 5(1) limits the insured person's and employer's contributions by the weekly maxima in Schedule 1. For multiple employments, establish the exemption/allocation procedure rather than independently treating each job as exempt or silently applying a separate unlimited aggregate cap. That operational allocation remains to be verified. [Section 5(1), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).",
+    "sha256": "6384d0b8b3e300465c27e3dac9bca04976ecb9558b0df20df5ee48837448d49f"
+  },
+  {
+    "id": "PAY-P045",
+    "heading": "Partial months and shared contribution weeks",
+    "text": "The 2025/26 employer notes use weekly minima/maxima multiplied by weeks or part-weeks actually worked for a partial month. They combine two paydays falling in the final contribution week before applying its cap. Their rates match the 2026/27 schedule checked here; retain the guidance's stated year and confirm its continued procedural application for the actual payroll. [Employer notes, pages 9\u201310](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "d779abe3c74e1678679c945e93459c722f9e7eaa541e764f848b7b3305b7fbe3"
+  },
+  {
+    "id": "PAY-P046",
+    "heading": "Partial months and shared contribution weeks",
+    "text": "Assuming two confirmed contribution weeks and \u00a3100 earnings, employee SI is **max(\u00a310, 2 \u00d7 \u00a314.34) = \u00a328.68** and employer SI **max(\u00a318, 2 \u00d7 \u00a331.98) = \u00a363.96**. Assuming three weeks and \u00a31,800 earnings, the caps give **3 \u00d7 \u00a340.79 = \u00a3122.37** and **3 \u00d7 \u00a356.22 = \u00a3168.66**. Each assumes ordinary ER liability and no exemption. [Partial-month method and limits](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "f5a8e962677b53bca13d9c7fa60d0ff6b89703045e1319444698ff0ba2f0fd1c"
+  },
+  {
+    "id": "PAY-P047",
+    "heading": "Partial months and shared contribution weeks",
+    "text": "For two \u00a3300 paydays in one final contribution week, the first deductions are \u00a330/\u00a354; combined \u00a3600 reaches both caps, leaving **\u00a310.79 employee and \u00a32.22 employer** on the second payday. Do not apply a second weekly maximum. [Shared-week method](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "312af4b8090637f1e69b9bd3d31701b0f6ce3a50297bdffcf0f6d5f779973f73"
+  },
+  {
+    "id": "PAY-P048",
+    "heading": "Small-employer contribution credit",
+    "text": "Regulation 17A permits an employer with **no more than ten employees at any time in the assessment year** to claim \u00a3100 per employee, capped at \u00a31,000. This is not the preceding-year average-headcount test used for P8 penalties. A company/business in its first trading year uses twenty employees and a \u00a32,000 cap instead. The per-employee amount remains \u00a3100. [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "677d80fef503b3b7bebee792cf3efd16ee419fc9603e0ab5834e5b959c24617c"
+  },
+  {
+    "id": "PAY-P049",
+    "heading": "Small-employer contribution credit",
+    "text": "The claim requires all SI and PAYE amounts to have been paid on the due date under 17A(2); 17A(6) identifies the due date as on or before the 15th of the following month. Do not treat arrears cleared at year-end as automatically satisfying timely payment. If employer contributions for an employee total less than \u00a3100, that employee's credit is restricted to the actual total. Once granted, the credit offsets employer contribution liabilities in the following year. It is not a current employee deduction or an automatic income-tax refund. [Regulation 17A(2)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "d022cce8e468345cab234242052274ebff071e90047d873c5cdc1f78ad9348e3"
+  },
+  {
+    "id": "PAY-P050",
+    "heading": "Small-employer contribution credit",
+    "text": "**Example:** an eligible employer never exceeds eight employees. Seven employees each generated at least \u00a3100 of employer contributions; the eighth generated \u00a360. Subject to timely-payment and claim conditions, the credit is **7 \u00d7 \u00a3100 + \u00a360 = \u00a3760**, below the \u00a31,000 cap, for offset in the following year once granted. A continuing business that reached eleven employees fails the stated headcount condition even if it ended the year with eight. A first-year business with fifteen qualifying employees, each with at least \u00a3100 employer contributions, has a provisional **\u00a31,500** credit under the enlarged limit. These examples assume confirmed employee counts; staff turnover/counting details and the current claim form/channel remain unverified.",
+    "sha256": "0bc826ecc506d1b125be98666747cb15173059e38d3aaea3f6f4d2e8a4ec9b92"
+  },
+  {
+    "id": "PAY-P051",
+    "heading": "Self-employed contribution administration",
+    "text": "Regulation 4A requires registration immediately when weekly self-employed contribution liability arises and a contribution schedule. It requires the quarterly schedule to be received within fifteen days after the contribution quarter, with the required signed declaration (including the accompanying declaration for a non-paper schedule). Regulation 4B separately requires monthly recording within seven days after month-end and payment within fifteen days after month-end. A quarterly schedule does not defer the monthly payment. [Regulations 4A\u20134B](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "4b32434ca947c3d0b9e73c63a33e8bd147fc3b5c7868a7e37eabe2ac616ff4d3"
+  },
+  {
+    "id": "PAY-P052",
+    "heading": "Self-employed contribution administration",
+    "text": "For example, on an ordinary September month-end with no special arrangement, the statutory periods require monthly recording by **7 October** and payment by **15 October**. This example does not establish the contribution-quarter calendar or any weekend/public-holiday extension. Keep registration, schedules and payment receipts separately.",
+    "sha256": "f0f3ee7e70f41275b7db9c3c1b823bcfa344373b5c2830b3e65fbe62c6cd6915"
+  },
+  {
+    "id": "PAY-P053",
+    "heading": "Self-employed contribution administration",
+    "text": "Where an employed contribution is payable and the same person is also liable as self-employed **for the same contribution week**, regulation 4(7) makes only the employed contribution payable. Establish the actual overlapping weeks and liabilities; having a payroll job for part of a year is not an annual exemption from self-employed contributions. Operational coding and supporting evidence still need confirmation. [Regulation 4(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "8abd5085d54c599506a7c9c1a7a0f06c31dee0f4b76cceb5840ca2f0cbf2ed77"
+  },
+  {
+    "id": "PAY-P054",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "The ITO's **SE1** asks for trading commencement, business structure, other paid employment and company directorship/shareholding details. Its status questions address control, financial risk, equipment, pricing and availability to other customers; completing it does not itself settle employment classification. Attach identification and, if applicable, business-name registration evidence. Partners also need registration, and employing staff requires separate PAYE registration. The form's signed declaration includes licensing responsibilities; tax registration is not a business licence. [SE1, sections 3\u20139](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf).",
+    "sha256": "6428a00a2f58e8ba67bf2a2d124441e25c555ac7c30415787d7d42a99ced0127"
+  },
+  {
+    "id": "PAY-P055",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "The published **2026/27 contribution schedule** covers 1 July 2026\u201330 June 2027 and instructs the taxpayer to sign and return it by **30 November 2027**. Enter gross income and contributions by its numbered weeks, annual gross income, contribution-week count, amounts due/paid and outstanding balance. Week 1 is 1\u20137 July; week 52 is **23\u201330 June**, an eight-day interval. Use that calendar rather than creating a 53rd week. [2026/27 schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/SE%20CONTRIBUTION%20SCHEDULE%202627%20%28Fillable%29.pdf).",
+    "sha256": "a8af68095388c40d94f3d143a04367ff0fcf9ba97d75492d4ea883e61365e8e4"
+  },
+  {
+    "id": "PAY-P056",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "This annual-form instruction does not establish repeal or waiver of regulation 4A's quarterly schedule duty described above. The relationship between that statutory duty and current annual administration still needs ITO confirmation. Neither deadline defers monthly payment.",
+    "sha256": "ad280081797f9daa2097d4fea0467f271ff4cfaa46830a502dc92fed49c70fff"
+  },
+  {
+    "id": "PAY-P057",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "The July 2025 booklet directs monthly remittances through **https://tax.egov.gi** within fifteen days after month-end and requires written ITO authority before departing from the registration certificate's contribution rate. It describes a year-end earnings/profits assessment with overpayments refunded and underpayments collected. Retain the certificate, any written change, payment receipts and the assessment; no authenticated portal transaction has been tested for this Guide. [Booklet, page 8](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf).",
+    "sha256": "1240ecda2b46783fe888c003302a42947d830a528da33d00e38d1581dbffd0a9"
+  },
+  {
+    "id": "PAY-P058",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "**Source arithmetic caution:** the same booklet prints \u00a3100 \u00d7 20% as \u00a322 in its shared-week example and \u00a3120 \u00d7 20% as \u00a348 in its partial-month example. The products are **\u00a320** and **\u00a324**. Those intermediate errors do not change the examples' displayed final cap/minimum outcomes, but the printed workings must not be copied unchecked. Apply the period's verified rates and actual contribution weeks. [Booklet, pages 4\u20136](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf).",
+    "sha256": "7293b7366ef559956b65b353e63ace07a1ea156a8187c9a065e17b896b2a08f3"
+  },
+  {
+    "id": "PAY-P059",
+    "heading": "Self-employed forms, payment route and annual reconciliation",
+    "text": "**Reconciliation example:** assume the established annual liability is \u00a32,400 and receipts substantiate \u00a32,250 paid. The balance is **\u00a3150**, not a new rate-based assessment. Record an actual refund or adjustment separately; an expected refund is not a payment receipt.",
+    "sha256": "67dde139b53d6cdd462d1069b4dbc0511aabb1aab2a34a2d7ab3cbce0442ebd9"
+  },
+  {
+    "id": "PAY-P060",
+    "heading": "Contribution assessments and appeals",
+    "text": "The Director can assess unpaid or underpaid contributions under regulation 4C. The notice must identify the amount, payment place and appeal rights. A dispute is made by written notice addressed to the Director **within fourteen days from service**. Late permission requires a specified reasonable impediment and an application without unreasonable delay once it ends. Additional contributions under an amended assessment are payable in full within one month after service of that notice. Keep the notice and evidence of service; do not substitute the 28-day income-tax assessment appeal period. [Regulation 4C(1)\u2013(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "a4a38985cb9a1199a3e20e23828d77ca61af71df7580f2e1a6db898eb0baea7f"
+  },
+  {
+    "id": "PAY-P061",
+    "heading": "Employer contribution records and cessation",
+    "text": "Social Insurance (Contributions) regulation 4(1) incorporates Employment Injuries (Contributions) regulations 2\u20138 except where expressly varied or inconsistent with the Act or the SI regulations. Read those limits before applying the cross-reference. [SI regulation 4(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "31531db80df7fc2c5f0535ed384b3427625a41987caa754f6627906f10bbd6ba"
+  },
+  {
+    "id": "PAY-P062",
+    "heading": "Employer contribution records and cessation",
+    "text": "Under the incorporated regulation 5, both weekly-paid and monthly-paid remuneration require recording the contribution class, number and amount within seven days after the **week** in which remuneration is paid. The monthly-paid provision also says week; do not replace it with month. Contributions are payable within fifteen days after the month, and remuneration paid in advance requires contributions in advance for that period. The self-employed monthly-recording rule above is different. [Employment Injuries regulations 5(1)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).",
+    "sha256": "6d346ba5b0c3655e0fa66c79ca960bb6a0163702235f4cc8340f7fb457ae61c6"
+  },
+  {
+    "id": "PAY-P063",
+    "heading": "Employer contribution records and cessation",
+    "text": "Regulation 4 requires the employer's contribution schedule to reach the Director within fifteen days after each relevant contribution quarter. Regulation 8 separately requires the schedule and contribution remittance forthwith on termination, or within seven days where the employee terminates without notice/intimation; death also requires forthwith return and payment. Do not assume the usual monthly cycle overrides this cessation requirement. Confirm the current electronic process for satisfying it. [Regulations 4(7), 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).",
+    "sha256": "a1f14657904a8d384e05c2ea9275ec423bde6f18e6186941d550345c6257d0ec"
+  },
+  {
+    "id": "PAY-P064",
+    "heading": "Employer contribution records and cessation",
+    "text": "Regulation 7 prohibits unauthorised alteration, erasure, defacement or destruction of the contribution schedule. Preserve the original and obtain the authorised correction route. Regulation 4(8)'s employer-schedule declaration text unexpectedly refers to a self-employed signatory; this drafting mismatch needs administrative confirmation and is not authority to omit a declaration. [Regulations 4(8), 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).",
+    "sha256": "9f1c218efa76e50f13cb2810e73b0fab16e4852b623dff6e5f3fc421440024e5"
+  },
+  {
+    "id": "PAY-P065",
+    "heading": "Contributions paid in error",
+    "text": "SI regulation 5 incorporates Employment Injuries regulations 9\u201312, subject to its express substitution. Regulation 9 requires a written application to the Director for contributions paid under an erroneous belief that they were payable. Regulation 10 gives these periods:",
+    "sha256": "2110ed454b16131ddcd44c1a3acc165ff4e98fc7178865d04fa706387689b7eb"
+  },
+  {
+    "id": "PAY-P066",
+    "heading": "Contributions paid in error",
+    "text": "- Paid on the due date: apply within **two years of payment**.\n- Paid late: apply within **two years of the due date or twelve months of actual payment, whichever ends later**.",
+    "sha256": "77f54120741e98e8aa23b390172fd893d728979b571446e7d1a8661ac185d046"
+  },
+  {
+    "id": "PAY-P067",
+    "heading": "Contributions paid in error",
+    "text": "Use actual due/payment dates and the required application form/manner. This is not permission to deduct a disputed amount from the next remittance. SI regulation 6 separately lets the Director allocate wrong-rate payments against the contributions properly payable. [SI regulations 5\u20136](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf); [Employment Injuries regulations 9\u201310](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).",
+    "sha256": "b74046c85b9167f41a8e96f20e1fa9ac92ab91079ca43caf1e805117a0c67754"
+  },
+  {
+    "id": "PAY-P068",
+    "heading": "Contributions paid in error",
+    "text": "**Date example:** a contribution due and paid on 15 August 2025 has a two-year reference endpoint of 15 August 2027. If due on 15 August 2025 but paid on 15 December 2026, the competing endpoints are 15 August 2027 and 15 December 2027; the later endpoint is **15 December 2027**. Submit before the endpoint and confirm exact deadline computation, form and receipt requirements; no holiday extension is assumed.",
+    "sha256": "c37c2b1d820dc5361ff2edbc5cf90d35599f2faafafc91015ef1f35f3b046906"
+  },
+  {
+    "id": "PAY-P069",
+    "heading": "Contributions paid in error",
+    "text": "SI regulation 5(2) substitutes a benefit-deduction provision for incorporated regulation 12: deduct relevant benefits paid because of the erroneous contributions, including amounts paid to another person on that basis. Accordingly, do not simply transplant the Employment Injuries regulation 12 employer/employee refund-recipient rule into an SI claim. Establish recipient, deductions and net refund under the applicable regime. [SI regulation 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).",
+    "sha256": "062775e0ef4ca03a9e211644f0bae8a6e7b3e31c13e6342b05d0d154538bf86d"
+  },
+  {
+    "id": "PAY-P070",
+    "heading": "UK\u2013Gibraltar social-security coverage",
+    "text": "This is a **separate social-security agreement**, not the income-tax treaty's 183-day employment rule. Gibraltar's Social Security (United Kingdom) Order 2024 commenced on **1 June 2024** and modifies the listed domestic social-security legislation to implement the scheduled agreement. Article 2 covers qualifying legally resident persons whose situation is not confined wholly to one Party; establish its personal scope and applicable benefit branch before using a coordination rule. This section does not determine all transitional or third-country cases. [Order paragraphs 2\u20134; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "926a4bd9efaebb0c7190c2eb8b69f026019f94951a859442104685a36f8082df"
+  },
+  {
+    "id": "PAY-P071",
+    "heading": "Posting and the ordinary applicable-legislation rule",
+    "text": "Article 9(1) assigns a person to one Party's legislation under Part II. Subject to the specified exceptions, Article 9(4)(a) assigns employed/self-employed activity in one Party to that Party's legislation. Article 10 then provides:",
+    "sha256": "1e6673f5788efc3869f723b0503608dd9c941f06d739144c0adc1a5007a420dc"
+  },
+  {
+    "id": "PAY-P072",
+    "heading": "Posting and the ordinary applicable-legislation rule",
+    "text": "- An employee working for an employer normally carrying on activities in Party A, and performing work for that employer in Party B, remains under A's legislation where the **anticipated duration does not exceed 24 months**.\n- A person normally self-employed in A who goes to perform a **similar activity** in B remains under A's legislation where the anticipated duration is no more than **24 months**.",
+    "sha256": "4583983102ae9b499754d41c1955297d94d302d8e4587a187334d105e20eda94"
+  },
+  {
+    "id": "PAY-P073",
+    "heading": "Posting and the ordinary applicable-legislation rule",
+    "text": "The expected duration is a condition at assessment, not an automatic first-24-month allowance for a project known to last longer. Employer activity, the continuing employment relationship and actual assignment facts need evidence. Article 13(1) permits the relevant authorities or designated bodies to agree exceptions in the interests of particular persons/categories; an employer cannot approve its own extension. [Articles 9\u201310 and 13, printed pages 12\u201315](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "55786bb8b28a8903da2d7ff917d7ae176e5850ef8e338c55bc8040cd743d3a2e"
+  },
+  {
+    "id": "PAY-P074",
+    "heading": "Posting and the ordinary applicable-legislation rule",
+    "text": "**Boundary examples:** a planned 24-month assignment can meet Article 10's duration limb if all other conditions are satisfied. A planned 25-month assignment does not meet that limb merely because its first payroll occurs within month one; assess the normal rules and any authority-agreed exception. A self-employed person moving to a different activity does not establish Article 10(2) eligibility solely by keeping the stay below 24 months. These are legal-condition examples, not certificates of coverage.",
+    "sha256": "15789de9678b1fe6b804d91225738f431b169d489ee540211806b294cfa096f8"
+  },
+  {
+    "id": "PAY-P075",
+    "heading": "Normally working in both territories",
+    "text": "For employment normally pursued in both Parties, Article 11(1) applies residence-territory legislation if a substantial part of the activity is performed there. If not, paragraph (2) differentiates employer locations: all employers in one Party leads to that Party; employers in both Parties leads to the Party other than residence; the specified cases involving employers outside the agreement lead to residence. Establish the complete employer structure. This Guide has not verified a numerical administrative definition of **substantial**, so it does not invent a percentage. [Article 11(1)\u2013(2), printed page 14](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "1c86a087aebf69b5a8d37398fdb671d2514e2f8a257c6d7ceab663d325f1651c"
+  },
+  {
+    "id": "PAY-P076",
+    "heading": "Normally working in both territories",
+    "text": "For self-employment in both Parties, paragraph (3) uses residence where a substantial part is pursued there, otherwise the stated centre-of-interest rule. For employment in one Party alongside self-employment in the other, paragraph (4) selects the employment Party; employment in both requires the provision's further cross-reference and a complete determination. Paragraph (6) treats all relevant activities and income as arising in the selected Party for that legislation. Do not split contributions between jurisdictions merely because there are two payers. [Article 11(3)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "6de847149df8882fcca08a392902454ca48126f39d025aab469c535b22bbd6b8"
+  },
+  {
+    "id": "PAY-P077",
+    "heading": "Normally working in both territories",
+    "text": "**Mixed-work example:** assume an in-scope person normally employed in Gibraltar and self-employed in the UK, with no overriding exception. Article 11(4) selects Gibraltar legislation; paragraph (6) brings both activities and income into that selected system. This does not mean the UK self-employment is taxed as salary or that all receipts automatically use the employee contribution rate. Determine the domestic contribution classification/base separately. Income-tax allocation remains a separate analysis.",
+    "sha256": "cfee0d02e6716b843dd5e22b4eab4f91876988d1002d679c154bec502bce617e"
+  },
+  {
+    "id": "PAY-P078",
+    "heading": "Employer obligations and specialist cases",
+    "text": "Article 14 requires an employer based in the other Party to meet the selected legislation's obligations, including contributions, as though based in that selected Party. Employer and employee can agree that the employee performs payment obligations on the employer's behalf, with notice to the relevant authority, but the employer's underlying obligations remain. This is not permission to deduct the employer's economic cost from wages. [Article 14, printed page 15](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "d9a83e9f5690ee9ef4901a20e481bcf672efcec64ce8e67b28326a1f0b9d323d"
+  },
+  {
+    "id": "PAY-P079",
+    "heading": "Employer obligations and specialist cases",
+    "text": "Civil servants, seafarers and aircrew have separate provisions in Articles 9 and 11. Article 12 treats voluntary/optional continued insurance separately, including a conditional pension exception to the general overlapping-insurance restriction. Do not apply the ordinary posting route to those cases without checking the relevant provision. [Articles 9, 11\u201312](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).",
+    "sha256": "037d7ae6a4551a0a6b6f69e51ab0348ce7561ccb913f989a5a0b2e8b51e622d3"
+  },
+  {
+    "id": "PAY-P080",
+    "heading": "Certificate and payroll evidence",
+    "text": "HMRC's [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland) identifies a certificate of coverage, also called a PDA1, as evidence of continued Gibraltar contributions and exemption from UK National Insurance. It directs applicants to the relevant social-security authority and distinguishes the certificate from a work permit. Retain the issued document and covered dates; an application is not an issued certificate. For Gibraltar's local detached-worker enquiries, the ITO publishes **paye.detachedworkers@gibraltar.gov.gi** and **20071071**. [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers).",
+    "sha256": "894a6d182437bba927667deb99526c7e7fb8ec7b0d7cde50d3bfb7c984e19443"
+  },
+  {
+    "id": "PAY-P081",
+    "heading": "Certificate and payroll evidence",
+    "text": "Keep assignment dates, expected duration and changes, employer activity evidence, employment/self-employment classification, work locations, residence, other employers, the authority determination and any exception agreement together. Reconcile the decision with the D1/DW payroll categories already shown above; a foreign address alone establishes neither. Gibraltar-issued certificate application mechanics, multiple-territory application routes, transitional history, third-country/Spain situations, benefit entitlement and special-category rulings remain open. No contact has been made or exemption obtained by preparing this Guide.",
+    "sha256": "b6a077cf82cd99881813d3c4b561837583077ce51342abaad9195c1aaafc5c49"
+  },
+  {
+    "id": "PAY-P082",
+    "heading": "Applying to HMRC for UK coverage during work in Gibraltar",
+    "text": "**Employees:** HMRC identifies **CA3822** for temporary employment in Gibraltar. Employers must first have HMRC confirmation of business eligibility, requested through **CA3821**; HMRC says this confirmation is needed once. Employer, employee or authorised agent can use the online route. Applications cannot be made more than **12 months in advance**. Prepare identity/nationality details, the sending employer's PAYE reference and applicable residence, work-right and employment-history information. An agent submits the client's **64-8** authority with the application. The current page has removed its postal application option. [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822).",
+    "sha256": "ea1271e2a93c31d30eddcbf32f1a336a13862ab3afb0dd127733972e0bac614f"
+  },
+  {
+    "id": "PAY-P083",
+    "heading": "Applying to HMRC for UK coverage during work in Gibraltar",
+    "text": "For an extension, supply the existing expiry date and changed circumstances. Where the combined duration exceeds the permitted period, the instructions require a signed explanation of why continued UK contributions are in the person's interests, subject to the applicable agreement. This is a request, not automatic permission. The page's healthcare paragraph does not list Gibraltar; do not promise an S1 solely from this application. [CA3822 extension and healthcare sections](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822).",
+    "sha256": "3da4a9b7c690cfa5f42eaa6454c7a9b75b98224974771efb88146badb06a1da0"
+  },
+  {
+    "id": "PAY-P084",
+    "heading": "Applying to HMRC for UK coverage during work in Gibraltar",
+    "text": "**Self-employed applicants:** use **CA3837** for temporary self-employment in Gibraltar, directly or through an agent. The same **12-month advance-application limit** applies. Prepare identity/nationality information, business address, the work performed in each country, and evidence of how the UK business is maintained, such as premises, equipment, registration or advertising. The form also asks for the UK start date where self-employment began less than **two months** before the overseas start; that question is not itself proof of a universal minimum qualifying period. [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837).",
+    "sha256": "e64d5c99bbe6d1189fbfe1b13e7ba043a5d7933623a603da3547728ea8c650a2"
+  },
+  {
+    "id": "PAY-P085",
+    "heading": "Applying to HMRC for UK coverage during work in Gibraltar",
+    "text": "Agents include **64-8** authority. Apply online with sign-in; identity verification can be requested, and answers can be saved. For extensions, provide current expiry and changes; the stated over-limit route requires the signed explanation under the relevant agreement. The page no longer offers a postal application. Its healthcare paragraph likewise does not establish Gibraltar S1 entitlement. [CA3837 application and extension sections](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837).",
+    "sha256": "8e7f29585b68507eefd320b21ca28f7c0f56810760d242cb0fa5491f72d67961"
+  },
+  {
+    "id": "PAY-P086",
+    "heading": "Applying to HMRC for UK coverage during work in Gibraltar",
+    "text": "These are UK-coverage application routes for the described temporary work, not Gibraltar-issued certificate forms or a complete multiple-territory work procedure. Use the official form selector where classification differs. Retain the submitted application, acknowledgement, issued certificate, dates, conditions and subsequent changes as distinct records. The Article 10 duration conditions and any Article 13 exception agreement above remain separate from the application's administrative lead time.",
+    "sha256": "5b9c644db22626874ab63bf804090889e2834e6c8b754379fb4403b94db6f013"
+  },
+  {
+    "id": "PAY-P087",
+    "heading": "Questions requiring an operational ruling",
+    "text": "Employment Injuries regulation 3(7), incorporated subject to SI regulation 4(1), identifies the first employer in a contribution week where a person has multiple employers. The employer notes instead instruct contributions in each employment unless an ITO exemption certificate has been issued. Their operational relationship, concurrent-job allocation and weekly maximum administration remain unresolved. Obtain the ITO allocation/certificate before ceasing deductions; neither an employer's guess nor the mere existence of a second job settles it. [Regulation 3(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf); [SI regulation 4(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf); [employer notes, page 10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "49d5e62c492116c2d241ea99d0d0b0c560bc416d1cbd836da79ba1f6bbfed5bf"
+  },
+  {
+    "id": "PAY-P088",
+    "heading": "Questions requiring an operational ruling",
+    "text": "The detailed authority for recovering a missed employee deduction from later wages has not been established by these cross-references. Section 7 of the Act's restrictions remain controlling; this Guide does not authorise an arrears deduction.",
+    "sha256": "77c0686a6cf368c009f0a62f6e2519bf1586492ed06ca16caa9319b9dc9af5dc"
+  },
+  {
+    "id": "PAY-P089",
+    "heading": "Computation",
+    "text": "1. Confirm class, pay frequency, full/partial period, and earnings base before selecting a schedule.\n2. For a confirmed full-month ordinary class with an established contribution liability, compute employee `min(176.76, max(62.11, earnings \u00d7 10%))` and employer `min(243.65, max(138.55, earnings \u00d7 18%))`.\n3. Use the employee's tax code and correct-year official tax tables for PAYE. Contribution rates are not income-tax rates.\n4. Reconcile gross wages, PAYE, employee contributions, other deductions, net wages and employer cost separately.\n5. Reconcile payroll totals to remittances and the annual return. Never multiply a rounded monthly cap to substitute for an official annual table.",
+    "sha256": "0f3f68f763d05d864b096723c846088643be21b977cc18555e4b44bdd32f125e"
+  },
+  {
+    "id": "PAY-P090",
+    "heading": "Computation",
+    "text": "**Examples:** full-month ordinary gross earnings \u00a33,000 give employee SI **\u00a3176.76**, employer SI **\u00a3243.65** and gross-plus-employer-SI **\u00a33,243.65**, before other employer costs. At \u00a31,000, the respective amounts are **\u00a3100** and **\u00a3180**. A person with an exemption code must not be put through this formula. The full-month formula does not determine liability for zero/very low earnings or unpaid weeks. Apply the statutory absence conditions and partial-month controls above; unresolved eligibility and recovery questions still require review.",
+    "sha256": "df78b3339ecca383f118261570cf6ffe5f0e97a96c46cc621dc0fc4ca08b3a32"
+  },
+  {
+    "id": "PAY-P091",
+    "heading": "Executable calculation controls",
+    "text": "These checks use **established liability, issued class and contribution periods**. They do not decide whether contributions are due, which class applies, or how concurrent employments should be allocated. They also do not calculate PAYE from a social-insurance rate.",
+    "sha256": "c6a9a93fdc2e5b9ec13623b5afdc6d952974a6720b9e681b4cc6b8ef2a8ac381"
+  },
+  {
+    "id": "PAY-P092",
+    "heading": "Ordinary monthly floor, uncapped amount and ceiling",
+    "text": "For confirmed full-month ER liability, compare \u00a3500, \u00a31,000 and \u00a33,000 of established contribution earnings. \u00a3500 tests the floors; \u00a31,000 tests the percentage amounts; \u00a33,000 tests both ceilings. Employer SI is added to employer cost, not withheld as an employee contribution. The \u00a3500 example does not establish minimum-wage compliance or liability for unpaid weeks. [2026/27 schedule, ER monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).",
+    "sha256": "5a6227c344c24db783d8cf6ff80192cc1fd356daa53dec060c614dc46610ac44"
+  },
+  {
+    "id": "PAY-P093",
+    "heading": "Ordinary monthly floor, uncapped amount and ceiling",
+    "text": "```oa-check\nname: Gibraltar full-month ER floor middle and cap\ninputs:\n  low_earnings: 500\n  middle_earnings: 1000\n  high_earnings: 3000\nsteps:\n  - low_employee: min(176.76, max(62.11, low_earnings * 0.10))\n  - low_employer: min(243.65, max(138.55, low_earnings * 0.18))\n  - middle_employee: min(176.76, max(62.11, middle_earnings * 0.10))\n  - middle_employer: min(243.65, max(138.55, middle_earnings * 0.18))\n  - high_employee: min(176.76, max(62.11, high_earnings * 0.10))\n  - high_employer: min(243.65, max(138.55, high_earnings * 0.18))\n  - high_employer_cost_before_other_costs: high_earnings + high_employer\n  - high_wages_after_employee_si_before_other_deductions: high_earnings - high_employee\nexpected:\n  low_employee: 62.11\n  low_employer: 138.55\n  middle_employee: 100\n  middle_employer: 180\n  high_employee: 176.76\n  high_employer: 243.65\n  high_employer_cost_before_other_costs: 3243.65\n  high_wages_after_employee_si_before_other_deductions: 2823.24\n```",
+    "sha256": "b4f4b8eaec3ff4ef6b3881c9079d56008d6028dd9a74d1fb0838a7f4d1ffa10b"
+  },
+  {
+    "id": "PAY-P094",
+    "heading": "Ordinary monthly floor, uncapped amount and ceiling",
+    "text": "The last result is **not net pay**: PAYE and any other authorised deductions still need to be applied. Gross plus employer SI is likewise not the complete cost of employment.",
+    "sha256": "35b5951364fe26cd2654f8f6308f1b4de7a252a95468a151a842d4dfccf9938d"
+  },
+  {
+    "id": "PAY-P095",
+    "heading": "Confirmed class comparisons",
+    "text": "At \u00a31,000 monthly contribution earnings, MW, PN and T2 give different employee/employer amounts. These checks validate each assigned class; they are not a menu of tax-saving elections. [2026/27 schedule, MW, PN and T2 monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).",
+    "sha256": "37b0de4a7a3cc5c46a961b1b90f5168f9e750b18f941562eb8556ce36b7e675a"
+  },
+  {
+    "id": "PAY-P096",
+    "heading": "Confirmed class comparisons",
+    "text": "```oa-check\nname: Gibraltar confirmed monthly MW PN and T2 classes\ninputs:\n  earnings: 1000\nsteps:\n  - mw_employee: 69.12\n  - mw_employer: min(173.98, max(78.65, earnings * 0.20))\n  - pn_employee: 0\n  - pn_employer: min(243.65, max(138.55, earnings * 0.18))\n  - t2_employee: min(16.99, earnings * 0.10)\n  - t2_employer: 0\nexpected:\n  mw_employee: 69.12\n  mw_employer: 173.98\n  pn_employee: 0\n  pn_employer: 180\n  t2_employee: 16.99\n  t2_employer: 0\n```",
+    "sha256": "8faab7b369d0172fd56032205820450753c89f202332d3a81c0f0ad5b15df532"
+  },
+  {
+    "id": "PAY-P097",
+    "heading": "Partial-month minimum and maximum",
+    "text": "Use confirmed contribution weeks, not days divided by seven or a guessed fraction of the monthly cap. These reproduce the two examples above under the **2025/26 employer-note method**, whose continued procedural application must be confirmed for later payrolls. [Employer notes, section 11.2](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "85576a1cbfa83b96757dc5a008cd9eddd5fe55b8e9d5a1827f64edad7d9b1012"
+  },
+  {
+    "id": "PAY-P098",
+    "heading": "Partial-month minimum and maximum",
+    "text": "```oa-check\nname: Gibraltar confirmed partial-month weekly limits\ninputs:\n  low_earnings: 100\n  low_weeks: 2\n  high_earnings: 1800\n  high_weeks: 3\nsteps:\n  - low_employee: min(low_weeks * 40.79, max(low_weeks * 14.34, low_earnings * 0.10))\n  - low_employer: min(low_weeks * 56.22, max(low_weeks * 31.98, low_earnings * 0.18))\n  - high_employee: min(high_weeks * 40.79, max(high_weeks * 14.34, high_earnings * 0.10))\n  - high_employer: min(high_weeks * 56.22, max(high_weeks * 31.98, high_earnings * 0.18))\nexpected:\n  low_employee: 28.68\n  low_employer: 63.96\n  high_employee: 122.37\n  high_employer: 168.66\n```",
+    "sha256": "785c7d01a9ac2e23760e9be720213dba1574057c874b94fb10054306b17b2727"
+  },
+  {
+    "id": "PAY-P099",
+    "heading": "Two paydays in the same final contribution week",
+    "text": "Combine earnings first, calculate one contribution-week liability and subtract the first payday's contributions. This example concerns the same employment and final contribution week described in the employer notes; it does not resolve the separate concurrent-employer question. [Employer notes, section 11.1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).",
+    "sha256": "b28e6d817c2a702421f875fe3a93312c423804e4401b33832fd3d7b13515f990"
+  },
+  {
+    "id": "PAY-P100",
+    "heading": "Two paydays in the same final contribution week",
+    "text": "```oa-check\nname: Gibraltar shared final contribution week two paydays\ninputs:\n  first_pay: 300\n  second_pay: 300\nsteps:\n  - first_employee: min(40.79, max(14.34, first_pay * 0.10))\n  - first_employer: min(56.22, max(31.98, first_pay * 0.18))\n  - combined_earnings: first_pay + second_pay\n  - total_employee: min(40.79, max(14.34, combined_earnings * 0.10))\n  - total_employer: min(56.22, max(31.98, combined_earnings * 0.18))\n  - second_employee: total_employee - first_employee\n  - second_employer: total_employer - first_employer\nexpected:\n  first_employee: 30\n  first_employer: 54\n  total_employee: 40.79\n  total_employer: 56.22\n  second_employee: 10.79\n  second_employer: 2.22\n```",
+    "sha256": "7b85989eb8b83909307dd3082603acb53ac341e81dd2f892b6d401d2855c6252"
+  },
+  {
+    "id": "PAY-P101",
+    "heading": "P8 reconciliation to actual payments",
+    "text": "These are assumed annual ledger totals, not rate-derived annual limits. Reconcile both employee and employer SI to SI remittances; keep PAYE separate. A liability journal is not evidence of payment. [P8 guidance, pages 13\u201314](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf).",
+    "sha256": "3996d26e25e198efa52e9d5090d6ba8f6165369b8972b39cb10e535dd0db1a22"
+  },
+  {
+    "id": "PAY-P102",
+    "heading": "P8 reconciliation to actual payments",
+    "text": "```oa-check\nname: Gibraltar P8 separate PAYE and combined SI reconciliation\ninputs:\n  paye_deducted: 4800\n  employee_si: 2000\n  employer_si: 2800\n  paye_paid: 4500\n  si_paid: 4600\nsteps:\n  - total_si: employee_si + employer_si\n  - paye_outstanding: paye_deducted - paye_paid\n  - si_outstanding: total_si - si_paid\nexpected:\n  total_si: 4800\n  paye_outstanding: 300\n  si_outstanding: 200\n```",
+    "sha256": "3f81ff5d60c4affd6fade7838955a8a289c071db57ba488b842b7ad9e33b536f"
+  },
+  {
+    "id": "PAY-P103",
+    "heading": "Conditional PAYE late-payment increase",
+    "text": "Assume the Commissioner's discretion is exercised for **two established monthly increments**, no intervening payment, and no unresolved overlapping charge included. The example checks compounding only; it does not determine the number of chargeable months. [PAYE regulation 11(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).",
+    "sha256": "1cfb95e198db7aeaa507e4c557023ff66011492c0b8ad0e70b086ad628be79fc"
+  },
+  {
+    "id": "PAY-P104",
+    "heading": "Conditional PAYE late-payment increase",
+    "text": "```oa-check\nname: Gibraltar two established compound PAYE increments\ninputs:\n  principal: 1000\nsteps:\n  - after_first_increment: principal * 1.02\n  - after_second_increment: after_first_increment * 1.02\n  - increase: after_second_increment - principal\nexpected:\n  after_first_increment: 1020\n  after_second_increment: 1040.40\n  increase: 40.40\n```",
+    "sha256": "f6a6be7c00365eb03965565ac94672c512c659c4215a9f2d7dc80ce474ef7d87"
+  },
+  {
+    "id": "PAY-P105",
+    "heading": "Evidence and exclusions",
+    "text": "A detached-worker exemption needs the relevant coverage evidence. A pensioner, trainee, second job or self-employed worker needs the appropriate class. Refer to the complete schedule and the ITO's [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance).",
+    "sha256": "0427a43d3ccb26532ba43f156b24750297f7b7f68235ee39c9b36f31e0a97744"
+  },
+  {
+    "id": "PAY-P106",
+    "heading": "Evidence and exclusions",
+    "text": "The annual P8 controls above do not resolve PAYE table selection, cumulative adjustments, corrections after submission or all statutory penalty interactions. Selected PAYE penalties are sourced above. No live return was submitted or tested. This draft does not calculate minimum wages, leave, redundancy, pension contributions or benefit-in-kind valuation. Preserve those as separate review lines rather than representing gross-plus-SI as total employer cost.",
+    "sha256": "a09353cd2cd27172f86d59dfa378d4201959c9e1f8e9334366663f42e7cf5938"
+  },
+  {
+    "id": "PAY-P107",
+    "heading": "Self-checks and output",
+    "text": "- Retain the relevant source version, the applicable period and the facts establishing scope.\n- Reconcile every input to the client's records; keep estimates separate from actual amounts.\n- Recompute the example and boundary cases before applying the method.\n- Record exclusions and unresolved points explicitly. Do not convert a missing source into an exemption.\n- Deliver a calculation, evidence list, filing calendar and reviewer questions. Record the exact revision reviewed.",
+    "sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a"
+  },
+  {
+    "id": "PAY-P108",
+    "heading": "Disclaimer",
+    "text": "General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.",
+    "sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e"
+  },
+  {
+    "id": "PAY-P109",
+    "heading": "Sources",
+    "text": "The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.",
+    "sha256": "fc4268e88a14286e66ce59339d688fc668943438c34821c73984c29ac8b2604f"
+  },
+  {
+    "id": "PAY-P110",
+    "heading": "Sources",
+    "text": "- [ITO employers, obligations section](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers)\n- [2025/26 P8 guidance, pages 7\u201311 and 17](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf)\n- [Regulations 2\u20133](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf)\n- [Employer notes, sections 3\u20135 and 9\u201310](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf)\n- [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf)\n- [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf)\n- [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf)\n- [Social Security (Insurance) Act, section 7(1)\u2013(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf)\n- [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf)\n- [Employment Injuries regulations 5(1)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf)\n- [Order paragraphs 2\u20134; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf)\n- [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland)\n- [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers)\n- [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822)\n- [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837)\n- [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance)",
+    "sha256": "be8aada1dc1d597ac947485fbfac94660bd23ff5d352861dcb293eeb41dab301"
+  },
+  {
+    "id": "PAY-P111",
+    "heading": "Sources",
+    "text": "> Contributed by Ryan Duguid.",
+    "sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0"
+  }
+]

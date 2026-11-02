@@ -1,0 +1,197 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Cantidades satisfechas con derecho a deducción y base máxima deducible
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 16. Deducciones generales de la cuota en el ejercicio 2025
+
+Deducción por inversión en vivienda habitual: Régimen transitorio
+
+Modalidades de la deducción
+
+Adquisición, construcción, rehabilitación y ampliación de la vivienda habitual
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Cantidades satisfechas con derecho a deducción y base máxima deducible
+
+Base de deducción
+
+Normativa: Art. 68.1.1º Ley IRPF. redacción a 31-12-2012
+
+Con sujeción al límite de 9.040 euros, la base de la deducción está constituida por las cantidades satisfechas por el contribuyente en el ejercicio para la adquisición, construcción, rehabilitación y ampliación de la vivienda habitual, incluidos los gastos y tributos originados que hayan corrido a cargo del contribuyente, tales como Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, IVA, honorarios de arquitecto y aparejador, licencia de obras, declaración de obra nueva, gastos de notaría y registro, gastos de agencia, etc.
+
+Tratándose de inversión mediante financiación ajena, la deducción se practicará a medida que se vaya devolviendo el principal del préstamo y se abonen, en su caso, los correspondientes intereses, siempre y cuando se cumplan todos los requisitos exigidos para la aplicación de la deducción.
+
+Precisiones:
+
+Caso de novación, subrogación o la sustitución de un préstamo o crédito por otro, o ampliación:
+
+La novación, subrogación o la sustitución de un préstamo o crédito por otro, incluso su ampliación, cualquiera que sea la forma acordada -con las garantías y condiciones que cualquiera de ellos tenga-, no supone entender que en ese momento concluye el proceso de financiación de la inversión correspondiente ni que se agotan las posibilidades de practicar la deducción. Únicamente implica la modificación de las condiciones de financiación inicialmente acordadas, siempre que, evidentemente, el préstamo resultante se dedique efectivamente a la amortización del anterior.
+
+Por ello, las anualidades (cuota de amortización e intereses) y demás cuantías que se satisfagan por el préstamo o crédito resultante -en su constitución, vida y cancelación-, en la parte proporcional que, del total capital obtenido en este, sea atribuible a la amortización o cancelación del préstamo originario -cuando este se haya destinado exclusivamente a la adquisición de la vivienda habitual-, incluida en su caso la cancelación registral hipotecaria, darán derecho a deducción por inversión en vivienda habitual, formando parte de la base de deducción del período impositivo en que se satisfagan, siempre que se cumplan los demás requisitos legales y reglamentarios exigidos. En el caso de ampliación del principal, si en su totalidad se destinase a cubrir estrictamente los costes asociados a la cancelación del préstamo primigenio, también podrá ser objeto de deducción. Por el contrario, no será susceptible de integrar la base de deducción la parte proporcional de las indicadas anualidades que se correspondieran con el incremento del principal, que se hubiera destinado a financiar otras cosas, diferentes a la propia adquisición de la vivienda, sea cual fuese.
+
+Respecto del nuevo préstamo o crédito, el contribuyente deberá poder acreditar su destino vinculado a la vivienda y la justificación de su devolución.
+
+Véase también las precisiones que aparecen en el "Concepto de adquisición de vivienda habitual" de esta deducción. 
+
+Supuesto de cancelación, parcial o total, de la deuda y contratación de un nuevo préstamo o crédito:
+
+Si, en un mismo acto, de forma simultánea, se produjese la operación de cancelación y la firma de un nuevo contrato de préstamo o crédito, empleando para su cancelación, parte o el total del principal obtenido en este nuevo contrato, no se producirá la pérdida del derecho a deducción, y tendrán la consideración de deducibles tanto los gastos que se generen con motivo de la cancelación del préstamo originario como los de constitución del nuevo préstamo.
+
+Para demostrar la continuidad de la financiación, no se requiere, necesariamente, que los gastos asociados al cambio o sustitución de préstamos se satisfagan precisamente con parte del principal del nuevo préstamo.
+
+Respecto del nuevo préstamo o crédito y su vínculo con el precedente, como de cualquier otro, el contribuyente deberá poder acreditar la conexión con el prestamista, su destino vinculado a la vivienda y la justificación de su devolución.
+
+Supuesto de transmisión de la vivienda habitual y aplicación del importe obtenido a la cancelación del préstamo hipotecario
+
+El TEAC en su Resolución núm. 00/02995/2025, de 20 de octubre de 2025, para la resolución del recurso extraordinario de alzada para la unificación de criterio, en un supuesto de aplicación de la Disposición Transitoria 18ª de la Ley 35/2006 relativa a la deducción por adquisición de vivienda habitual, ha fijado como criterio que  "cuando un interesado que vende la que era su vivienda habitual y en la que hasta entonces vivía, cancela la cantidad restante del préstamo hipotecario que la gravaba utilizando para ello parte del importe que ha recibido como precio por su venta, ese interesado va a poder disfrutar de la deducción por inversión en la vivienda habitual, incluyendo en la base de tal deducción aquellas cantidades que ha obtenido por la transmisión de dicha vivienda y que ha destinado a la cancelación del préstamo hipotecario que la gravaba, si cumple con los requisitos recogidos en el Fundamento de Derecho Quinto de la presente resolución”.
+
+En ella no introduce ningún requisito adicional a los previstos en la citada disposición, y considera que el “dado el carácter fungible del dinero, (…), no se exige que los pagos de las mensualidades del préstamo hipotecario se hagan con unos fondos que provengan de una determinada renta (incluso de la venta de la vivienda), lo que es relevante a tal efecto es la diferencia que haya entre el patrimonio “neto” (bienes menos deudas) al comienzo del año y el que exista al final del mismo; patrimonio que se tiene que haber incrementado, como mínimo, en la base de la deducción.”, de acuerdo con el requisito previsto en el artículo 70 de la Ley del IRPF.
+
+En consecuencia, la doctrina fijada por esta resolución del TEAC no solo resulta aplicable a los supuestos de deducción por inversión en vivienda habitual derivada de su adquisición, sino que se extiende igualmente a los demás casos contemplados en la Ley 35/2006, esto es, construcción, rehabilitación o ampliación de la vivienda habitual, así como las deducciones vinculadas a la adecuación de la vivienda por razón de discapacidad.
+
+En estos supuestos, formarán parte de la base de la deducción, además de la amortización del capital y de los intereses, los demás gastos derivados de dicha financiación entre los que pueden citarse los siguientes:
+
+El coste de los instrumentos de cobertura del riesgo de tipo de interés de los préstamos hipotecarios regulados en el artículo decimonoveno de la Ley 36/2003, de 11 de noviembre, de medidas de reforma económica (BOE de 12 de noviembre). En el caso de aplicación de los citados instrumentos de cobertura, los intereses satisfechos por el contribuyente se minorarán en las cantidades obtenidas por la aplicación del citado instrumento.
+
+Las primas de los contratos de seguro de vida y de incendios, siempre que estén incluidos en las condiciones de los préstamos hipotecarios obtenidos para la adquisición (o, en su caso, para la construcción), rehabilitación o ampliación de la vivienda habitual.
+
+Importante: de acuerdo con la disposición adicional cuadragésima quinta Ley IRPF no se integrarán en la base de la deducción por inversión en vivienda habitual ni de las deducciones por este concepto establecidas por la Comunidad Autónoma las siguientes cantidades:
+
+Las cantidades que por la aplicación de cláusulas suelo hubieran sido satisfechas por el contribuyente en 2025, cuando antes de finalizar el plazo de presentación de autoliquidación del IRPF por dicho ejercicio se alcance un acuerdo de devolución de las mismas con la entidad financiera, o tal devolución proceda como consecuencia de la ejecución o cumplimiento de sentencias judiciales o laudos arbitrales.
+
+Aquellas cantidades satisfechas en ejercicios anteriores por el contribuyente en aplicación de las cláusulas suelo objeto de la devolución que se destinen directamente por la entidad financiera en el ejercicio, tras el acuerdo con el contribuyente afectado, sentencia o laudo arbitral, a minorar el principal del préstamo.
+
+Base máxima de inversión deducible
+
+Normativa: Art. 68.1 1º Ley IRPF, redacción a 31-12-2012
+
+La base máxima de deducción para inversiones en adquisición, rehabilitación o ampliación de la vivienda habitual es de 9.040 euros anuales.
+
+Este límite será único para el conjunto de los conceptos de inversión reseñados y se aplicará en idéntica cuantía en tributación conjunta.
+
+El exceso de las cantidades invertidas sobre dichos importes no puede trasladarse a ejercicios futuros.
+
+En caso de extinción de un condominio sobre la vivienda habitual a partir del 1 de enero de 2013, si una de las partes obtiene el 100 por 100 de la vivienda, tendrá derecho a aplicarse el 100 por 100 de la deducción por adquisición de vivienda habitual, hasta un total de 9.040 euros de base, siempre que se hubiera aplicado en un ejercicio anterior a 2013 dicha deducción en el porcentaje correspondiente a su participación en el condominio.
+
+En este caso, la aplicación de la deducción por la parte adquirida hasta completar el 100 por 100 del pleno dominio del inmueble tendrá como límite el importe que habría tenido derecho a deducirse desde la fecha de extinción del condominio el comunero que deja de ser titular del inmueble si dicha extinción no hubiera tenido lugar. La deducción estará condicionada también a que al comunero que deja de ser propietario no se le hubiera agotado a la fecha de extinción del condominio la posibilidad de seguir practicando la deducción por adquisición de vivienda habitual. Véase al respecto la Resolución del TEAC de 1 de octubre de 2020, Reclamación número 00/00561/2020, recaída en recurso extraordinario de alzada para unificación de criterio.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

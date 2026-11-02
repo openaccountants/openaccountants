@@ -1,0 +1,50 @@
+{
+  "skills/international/spain/es-autonomous-worker.md": {
+    "expected_repo_blob": "228e5464fc3bd72bd3fe2bf276894858cd858bdb",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-beckham.md": {
+    "expected_repo_blob": "cfe6793ca037351b09e14f67ca930650e68cbca2",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-canary-islands-igic.md": {
+    "expected_repo_blob": "1c6cf6e64b805d8d014b932bc6dbcbc0ad34d4ba",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-capital-gains.md": {
+    "expected_repo_blob": "3a18549f1d1452389d4210b677653240306558bc",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-ceuta-melilla-ipsi.md": {
+    "expected_repo_blob": "1f221e675eb046d9b391a33ff74a782afbed714e",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-estimated-tax.md": {
+    "expected_repo_blob": "b0e684e74aad1bd068e9b4cee10b767554adcf12",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-corporate-tax.md": {
+    "expected_repo_blob": "c1b3a2d1f831825b52ca878400a6a0843d56ad07",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-income-tax.md": {
+    "expected_repo_blob": "b16fc9ef7b0f3a0bb224bad0a2aca9c133dbccce",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-irpf-deductions.md": {
+    "expected_repo_blob": "e99a40f1acd3719bd7f719279fe9f8c2299bef46",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-rental-income.md": {
+    "expected_repo_blob": "f2ddd54db43e767bd36b4b7a88112c8753fdad55",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-vat-return.md": {
+    "expected_repo_blob": "7fe48eaf3c8fba7cb7b6f3613496944f51ac603c",
+    "content_revision": 0
+  },
+  "skills/international/spain/spain-payroll.md": {
+    "expected_repo_blob": "4674fedbec1a3847b19b0736974edff383e0e6ea",
+    "content_revision": 0
+  }
+}

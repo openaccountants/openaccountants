@@ -1,0 +1,200 @@
+Microsoft Word - QST_MB_unselbständige_Tätigkeit_2026-Anhang 2026 (https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf)
+citeturn2889view0 [wordlim: 200] Crawled: today; Content type: application/pdf; Number of pages: 6; Source: open({"ref_id":"turn2887view0","lineno":90}); Total lines: 194
+L0@P0: STEUERVERWALTUNG
+L1@P0: FÜRSTENTUM LIECHTENSTEIN
+L2@P0: Merkblatt
+L3@P0: betreffend Erhebung der Quellensteuer auf Erwerb aus unselbständiger
+L4@P0: Tätigkeit und Ersatzeinkünften (Lohnsteuer)
+L5@P0: Inhaltsverzeichnis
+L6@P0: I. Persönliche und sachliche Steuerpflicht
+L7@P0: 1. Personen mit steuerlichem Wohnsitz oder Aufenthalt im In- und Ausland
+L8@P0: 2. Massgebender Erwerb
+L9@P0: a) Erwerb aus unselbständiger Tätigkeit
+L10@P0: b) Ersatzeinkünfte
+L11@P0: II. Steuerabzug
+L12@P0: 1. Regelfall
+L13@P0: 2. Doppelbesteuerungsabkommen
+L14@P0: 3. Personen in Ausbildung
+L15@P0: III. Pflichten des Vergütungsschuldners
+L16@P0: a) Abzug und Weiterleitung des Steuerabzuges sowie Abrechnung
+L17@P0: b) Abrechnungsliste
+L18@P0: c) Haftung
+L19@P0: I. Persönliche und sachliche Steuerpflicht
+L20@P0: 1. Personen mit Wohnsitz oder Aufenthalt im In- und Ausland
+L21@P0: Dem Steuerabzug an der Quelle (Lohnsteuer) unterliegen Personen mit steuerlichem Wohnsitz
+L22@P0: oder Aufenthalt im Inland (unbeschränkt Steuerpflichtige) sowie Personen mit steuerlichem
+L23@P0: Wohnsitz oder Aufenthalt im Ausland (beschränkt Steuerpflichtige) mit
+L24@P0: a) ihrem Erwerb aus unselbständiger Tätigkeit;
+L25@P0: b) ihren Ersatzeinkünften, die anstelle des Erwerbs aus unselbständiger Tätigkeit treten.
+L26@P0:  Vorbehalten bleiben abweichende Regelungen in Doppelbesteuerungsabkommen. Ob bei
+L27@P0: Erwerb von Personen mit Wohnsitz oder Aufenthalt in Staaten, mit denen Liechtenstein ein
+L28@P0: Doppelbesteuerungsabkommen abgeschlossen hat, ein Steuerabzug vorzunehmen ist, ergibt
+L29@P0: sich aus dem Anhang.
+L30@P0:  Die Tabelle im Anhang behandelt Personen mit Ansässigkeit im jeweiligen DBA-Partnerstaat.
+L31@P0: Verfügt eine Person mit steuerlichem Wohnsitz oder Aufenthalt über mehrere Wohnsitze oder
+L32@P0: Aufenthalte im Ausland, ist massgebend, in welchem Staat sich der Lebensmittelpunkt dieser
+L33@P0-1: Person befindet. 2. Massgebender Erwerb
+L34@P1: a) Erwerb aus unselbständiger Tätigkeit
+L35@P1: Massgebend ist der Bruttolohn gemäss Ziff. 8 abzüglich von Ziff. 6 des Lohnausweises.
+L36@P1: Erhält der Arbeitnehmer Naturalleistungen (Verpflegung und Unterkunft) vom Arbeitgeber
+L37@P1: (Ziff. 2.1 des Lohnausweises) sind diese wie folgt zu bewerten (vgl. auch Merkblatt über die
+L38@P1: Bewertung von Verpflegung und Unterkunft von Unselbständigerwerbenden):
+L39@P1:  im Tag (CHF) im Monat (CHF) im Jahr (CHF)
+L40@P1: Morgenessen 4.- 120.- 1’440.-
+L41@P1: Mittagessen 10.- 300.- 3’600.-
+L42@P1: Abendessen 8.- 240.- 2’880.-
+L43@P1: Volle Verpflegung 22.- 660.- 7’920.-
+L44@P1: Unterkunft 11.- 330.- 3’960.-
+L45@P1: Volle Verpflegung und Unterkunft 33.- 990.- 11’880.-
+L46@P1: 
+L47@P1: Für leitendes Personal, Verwalterinnen und Verwalter, Ärztinnen und Ärzte, Lehrerinnen und
+L48@P1: Lehrer und dgl. sind die vorstehenden Ansätze um 20% zu erhöhen. Für Direktorinnen und
+L49@P1: Direktoren sowie Geschäftsführerinnen und Geschäftsführer von Hotels und Restaurants
+L50@P1: gelten die Ansätze für Wirte und Hoteliers. Diese Ansätze sowie die Ansätze für AngestelltenEhepaare können bei der Steuerverwaltung angefragt werden.
+L51@P1: b) Ersatzeinkünfte
+L52@P1: Ersatzeinkünfte sind Einkünfte, die an Stelle des Einkommens aus Erwerbstätigkeit treten, wie
+L53@P1: beispielsweise Taggelder aus Invaliden-, Arbeitslosen-, Unfall-, Lebens- und Krankenversicherungen nach Abzug der nicht durch andere Versicherungsleistungen gedeckten ausserordentlichen Ausgaben.
+L54@P1: Werden diese Leistungen durch den Arbeitgeber ausgerichtet, sind sie Bestandteil des Bruttolohnes gemäss Ziff. 8 des Lohnausweises; die Abzüge sind von den Arbeitgebern vorzunehmen.
+L55@P1: Werden diese Leistungen von den Versicherern ausgerichtet, sind die Abzüge von den Versicherern vorzunehmen.
+L56@P1: II. Höhe des Steuerabzuges
+L57@P1: 1. Regelfall
+L58@P1: Bei Erwerb aus unselbständiger Tätigkeit sowie Ersatzeinkünften ist – vorbehaltlich Ziff. II./2. –
+L59@P1: im Maximum folgender Steuerabzug vorzunehmen:
+L60@P1: Alleinstehende Arbeitnehmer
+L61@P1: Bruttoerwerb* in CHF Steuerabzug
+L62@P1:  bis 40'000.- 4%
+L63@P1: ab 40'000.- bis 60'000.- 5%
+L64@P1: ab 60'000.- bis 80'000.- 7%
+L65@P1: ab 80'000.- bis 120'000.- 9%
+L66@P1: ab 120'000.- bis 160'000.- 11%
+L67@P1: ab 160'000.- bis 200'000.- 13%
+L68@P1: ab 200'000.- bis 300'000.- 15%
+L69@P1: ab 300'000.- bis 500'000.- 17%
+L70@P1:  über 500'000.- 19%
+L71@P1-2: *Bei unterjähriger Steuerpflicht ist der auf ein Jahr hochgerechnete Bruttolohn massgebend. Verheiratete Arbeitnehmer
+L72@P2: Bruttoerwerb* in CHF Steuerabzug
+L73@P2:  bis 80'000.- 4%
+L74@P2: ab 80'000.- bis 140'000.- 5%
+L75@P2: ab 140'000.- bis 200'000.- 7%
+L76@P2: ab 200'000.- bis 250'000.- 9%
+L77@P2: ab 250'000.- bis 350'000.- 11%
+L78@P2: ab 350'000.- bis 450'000.- 13%
+L79@P2: ab 450'000.- bis 600'000.- 15%
+L80@P2: ab 600'000.- bis 1’000'000.- 17%
+L81@P2:  über 1’000'000.- 19%
+L82@P2: *Bei unterjähriger Steuerpflicht ist der auf ein Jahr hochgerechnete Bruttolohn massgebend.
+L83@P2: 2. Doppelbesteuerungsabkommen
+L84@P2: Inwieweit aufgrund von Doppelbesteuerungsabkommen von Ziff. II./1. abweichende Steuerabzüge
+L85@P2: vorzunehmen sind, ergibt sich aus dem Anhang.
+L86@P2: 3. Personen in Ausbildung
+L87@P2: Kein Abzug ist bei Schülerinnen und Schülern, Lehrlingen sowie Studentinnen und Studenten mit
+L88@P2: Wohnsitz oder Aufenthalt im Inland vorzunehmen bis zu einem Bruttoerwerb von CHF 25’2001
+L89@P2: . Die
+L90@P2: Bruttolöhne dieser Schülerinnen und Schüler, Lehrlinge sowie Studentinnen und Studenten sind
+L91@P2: jedoch ohne Ausnahme in den Abrechnungslisten (gemäss Ziff. III./1. b) anzuführen.
+L92@P2: III. Pflichten des Vergütungsschuldners
+L93@P2: a) Abzug und Weiterleitung des Steuerabzuges sowie Abrechnung
+L94@P2: Der Vergütungsschuldner (Schuldner der steuerbaren Leistung) hat alle für die vollständige
+L95@P2: Steuererhebung notwendigen Massnahmen vorzukehren. Er hat insbesondere folgende
+L96@P2: Pflichten:
+L97@P2: • Bei Fälligkeit von Geldleistungen hat der Vergütungsschuldner die geschuldete Steuer
+L98@P2: einzubehalten, und bei anderen Leistungen (insbesondere Naturalleistungen) hat er die
+L99@P2: geschuldete Steuer vom Steuerpflichtigen einzufordern (Art. 27 Abs. 1 Bst. a SteG).
+L100@P2: • Der Vergütungsschuldner hat die Summe der von ihm einbehaltenen Steuerabzugsbeträge vierteljährlich der Steuerverwaltung abzuführen (Art. 28 Abs. 1 SteG).
+L101@P2:  Die Frist für die vierteljährliche Weiterleitung der einbehaltenen Steuerabzüge wird von
+L102@P2: der Steuerverwaltung in ihrem entsprechenden Aufforderungsschreiben an den
+L103@P2: Vergütungsschuldner festgesetzt.
+L104@P2: • Nach Ablauf des Kalenderjahres hat der Vergütungsschuldner mittels Abrechnungsliste
+L105@P2: (gemäss Ziff. III./1.b) die Abrechnung über die einbehaltenen Steuerabzüge einzureichen
+L106@P2: sowie einen allfälligen Differenzbetrag zu entrichten. (Art. 28 Abs. 3 SteG).
+L107@P2: Die Abrechnungsliste über die im Steuerjahr einbehaltenen Steuerabzüge ist jeweils bis
+L108@P2: zum 31. Januar des Folgejahres einzureichen. Ein allfälliger Differenzbetrag wird am 31.
+L109@P2: Januar des Folgejahres fällig.
+L110@P2: • Der Vergütungsschuldner hat dem Steuerpflichtigen den Steuerabzug im Lohnausweis
+L111@P2: 1
+L112@P2-3:  Ab Steuerjahr 2025 auszuweisen (Art. 27 Abs. 1 Bst. d SteG).
+L113@P3: b) Abrechnungsliste
+L114@P3: Der Vergütungsschuldner hat der Steuerverwaltung folgende Abrechnungslisten einzureichen:
+L115@P3: • Für Vergütungsgläubiger (Arbeitnehmer) mit Wohnsitz/Aufenthalt in Liechtenstein, für
+L116@P3: jede Gemeinde eine separate Abrechnungsliste – massgebend ist der Wohnort/Aufenthalt am Jahresende;
+L117@P3: • für Vergütungsgläubiger mit Wohnsitz/Aufenthalt im Ausland ist jeweils eine separate
+L118@P3: Abrechnungsliste für
+L119@P3: o Vergütungsgläubiger mit Wohnsitz/Aufenthalt in Österreich;
+L120@P3: o Vergütungsgläubiger mit Wohnsitz/Aufenthalt in der Schweiz;
+L121@P3: o Vergütungsgläubiger mit Wohnsitz/Aufenthalt in Deutschland;
+L122@P3: o Vergütungsgläubiger mit Wohnsitz/Aufenthalt im übrigen Ausland einzureichen.
+L123@P3: c) Haftung
+L124@P3: Der inländische Vergütungsschuldner und der ausländische Vergütungsschuldner mit einer
+L125@P3: inländischen Betriebsstätte haften für die Entrichtung der Steuerabzugsbeträge. Hat der Vergütungsschuldner den Steuerabzug nicht oder ungenügend vorgenommen, verfügt die
+L126@P3: Steuerverwaltung die Nachzahlung. Dem Vergütungsgläubiger ist in diesem Fall eine berichtigte Aufstellung oder Bestätigung auszustellen. Hat der Vergütungsschuldner einen zu
+L127@P3: hohen Steuerabzug vorgenommen, so kann der Vergütungsgläubiger den Differenzbetrag von
+L128@P3: der Steuerverwaltung zurückfordern, wenn er ihm bescheinigt worden ist (Art. 27 Abs. 2 SteG).
+L129@P3: Der Vergütungsschuldner haftet nicht für Steuerabzugsbeträge, die er aufgrund der Vorlage
+L130@P3: einer Bescheinigung nach Art. 26 Abs. 1 oder 2 SteG, auf deren Richtigkeit er vertraut hat,
+L131@P3: nicht einbehalten hat. Dies gilt nicht, wenn dem Vergütungsschuldner bekannt war, oder
+L132@P3: aufgrund grober Fahrlässigkeit nicht bekannt war, dass die Bescheinigung unrichtig ist (Art. 27
+L133@P3: Abs. 3 SteG).
+L134@P3: Bei Vorliegen der Voraussetzungen gemäss Art. 27 Abs. 4 SteG kann die Steuerverwaltung den
+L135@P3: Steuerpflichtigen zur Nachzahlung verpflichten.
+L136@P3: Vergütungsschuldner, die einbehaltene Steuern zu ihrem Nutzen oder zum Nutzen eines
+L137@P3: anderen verwenden, werden wegen Vergehens mit Freiheitsstrafe bis zu sechs Monaten oder
+L138@P3: mit einer Geldstrafe bis zu 360 Tagessätzen bestraft (Art. 141 SteG).
+L139@P3-4: Vaduz, Februar 2026 Steuerverwaltung Anhang
+L140@P4: Stand Januar 2026
+L141@P4: Steuerabzug gemäss Doppelbesteuerungsabkommen
+L142@P4: DBA-Staat
+L143@P4: öffentlich-rechtliches
+L144@P4: Arbeitsverhältnis
+L145@P4: Steuerabzug1
+L146@P4: privatrechtliches Arbeitsverhältnis
+L147@P4: Steuerabzug1
+L148@P4:  Grenzgänger Nicht Grenzgänger
+L149@P4: Andorra - anwendbar ab 2017 ja ja3
+L150@P4: Deutschland - anwendbar ab 2013 ja2 ja3
+L151@P4: Estland- anwendbar ab 2026 ja2 ja3
+L152@P4: Georgien - anwendbar ab 2017 ja2 ja3
+L153@P4: Guernsey - anwendbar ab 2016 ja2 ja3
+L154@P4: Hong Kong - anwendbar ab 2012 ja2 ja3
+L155@P4: Island - anwendbar ab 2017 ja2 ja3
+L156@P4: Jersey - anwendbar ab 2019 ja2 ja3
+L157@P4: Kroatien - anwendbar ab 2026 ja2 ja3
+L158@P4: Litauen - anwendbar ab 2021 ja2 ja3
+L159@P4: Luxemburg - anwendbar ab 2011 ja2 ja3
+L160@P4: Malta - anwendbar ab 2015 ja2 ja3
+L161@P4: Monaco - anwendbar ab 2018 ja ja3
+L162@P4: Niederlande - anwendbar ab 2022 ja2 ja3
+L163@P4: Österreich - anwendbar ab 1969 ja 4 % ja4
+L164@P4: Rumänien - anwendbar ab 2025 ja2 ja3
+L165@P4: San Marino - anwendbar ab 2012 ja2 ja3
+L166@P4: Schweiz - anwendbar ab 2017 ja nein5 auf Antrag des
+L167@P4: Arbeitnehmers5
+L168@P4: Singapur - anwendbar ab 2015 ja2 ja3
+L169@P4: Tschechien - anwendbar ab 2016 ja2 ja3
+L170@P4: Ungarn - anwendbar ab 2016 ja ja3
+L171@P4: Uruguay - anwendbar ab 2013 ja2 ja3
+L172@P4: Vereinigte Arabische Emirate - anwendbar ab 2018 ja ja3
+L173@P4: Vereinigtes Königreich - anwendbar ab 2013 ja2 ja3
+L174@P4: 1 Höhe des Steuerabzugs gemäss Ziff. II. 1.
+L175@P4: 2
+L176@P4:  Kein Steuerabzug ist vorzunehmen, wenn die Dienste im Vertragspartnerstaat geleistet werden und die natürliche Person in diesem Staat
+L177@P4: ansässig ist und es sich beim öffentlich-rechtlich Bediensteten um eine Person handelt, die über die Staatsbürgerschaft dieses Staates (bzw.
+L178@P4: im Fall von Hong Kong über ein Bleiberecht in der Sonderverwaltungsregion) verfügt oder nicht ausschliesslich deshalb in diesem Staat
+L179@P4: ansässig geworden ist, um die Dienste zu leisten. Im Falle des Vereinigten Königreichs hat ein Steuerabzug ausserdem nur dann zu
+L180@P4: unterbleiben, wenn die Gehälter, Löhne und ähnlichen Vergütungen im Vereinigten Königreich tatsächlich besteuert werden. 3
+L181@P4:  Kein Steuerabzug ist vorzunehmen, wenn sich die Person nicht länger als 183 Tage innerhalb eines Zeitraums von zwölf Monaten, der
+L182@P4: während des betreffenden Steuerjahres (im Falle von Hong Kong und Luxemburg Kalenderjahres) beginnt oder endet, in Liechtenstein
+L183@P4: aufhält und die Vergütungen von einem Arbeitgeber oder für einen Arbeitgeber gezahlt werden, der nicht in Liechtenstein ansässig ist und
+L184@P4: die Vergütungen nicht von einer Betriebsstätte (oder einer festen Geschäftseinrichtung) getragen werden, die der Arbeitgeber in
+L185@P4: Liechtenstein hat.
+L186@P4: 4
+L187@P4:  Kein Steuerabzug ist vorzunehmen, wenn sich die Person nicht länger als 183 Tage während des betreffenden Steuerjahres in
+L188@P4: Liechtenstein aufhält und die Vergütungen von einem Arbeitgeber oder für einen Arbeitgeber gezahlt werden, der nicht in Liechtenstein
+L189@P4: ansässig ist und die Vergütungen nicht von einer Betriebsstätte oder einer festen Einrichtung getragen werden, die der Arbeitgeber in
+L190@P4: Liechtenstein hat.
+L191@P4: 5 Betreffend die Abgrenzung Grenzgänger und Nichtgrenzgänger sowie deren Quellenbesteuerung wird auf das „Merkblatt betreffend die
+L192@P4: Besteuerung von Grenzgängern und Nichtgrenzgängern aufgrund des Doppelbesteuerungsabkommens zwischen Liechtenstein und der
+L193@P4: Schweiz (DBA FL-CH)“ verwiesen.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn2889view1 [wordlim: 200] Source: open({"ref_id":"https://www.ahv.li/ueber-uns/gesetzliche-grundlagen/","lineno":null}); 
+URL https://www.ahv.li/ueber-uns/gesetzliche-grundlagen/ is not accessible via this tool.

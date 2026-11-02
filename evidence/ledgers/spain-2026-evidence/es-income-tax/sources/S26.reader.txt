@@ -1,0 +1,245 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Ejemplo: Deducción por rentas obtenidas en Ceuta o Melilla
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 16. Deducciones generales de la cuota en el ejercicio 2025
+
+Deducción por rentas obtenidas en Ceuta o Melilla
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Ejemplo: Deducción por rentas obtenidas en Ceuta o Melilla
+
+Don M.V.C., soltero y sin hijos, trasladó su residencia de Cádiz a Ceuta el 20 de agosto de 2023, residiendo en esta ciudad desde dicha fecha. Durante el ejercicio 2025 ha obtenido las siguientes rentas:
+
+Rendimiento neto reducido del trabajo: 31.000
+
+Rendimiento neto reducido de capital mobiliario: 500
+
+Rendimiento neto reducido de capital inmobiliario: 3.200
+
+Ganancia patrimonial reducida imputable a 2025: 20.000
+
+Los rendimientos netos del trabajo proceden de su relación laboral con una empresa situada en Ceuta. Los rendimientos del capital mobiliario corresponden a intereses de cuentas de entidades financieras situadas en Ceuta. Por su parte, los rendimientos de capital inmobiliario corresponden a un piso de su propiedad situado en Cádiz y que estuvo alquilado desde el 1 de enero a 30 de septiembre de 2025. El día 1 de octubre de 2025 procedió a la venta de dicho piso obteniendo como consecuencia de la transmisión una ganancia patrimonial reducida de 20.000 euros.
+
+Determinar el importe de la deducción por las rentas obtenidas en Ceuta en el ejercicio 2025.
+
+Solución: 
+
+Nota previa: al haber residido en Ceuta durante un plazo inferior a tres años, la deducción por rentas obtenidas en Ceuta únicamente podrá aplicarse sobre las cuotas íntegras, estatal y autonómica, que proporcionalmente correspondan a las rentas obtenidas en Ceuta (rendimientos netos del trabajo y rendimientos netos del capital mobiliario).
+
+Base imponible general y base liquidable general (31.000 + 3.200) = 34.200
+
+Base imponible del ahorro y base liquidable del ahorro (20.000 + 500) = 20.500
+
+Mínimo personal y familiar = 5.550
+
+1. Cuota íntegra correspondiente a la base liquidable general
+
+Aplicación de las escalas de gravamen a la base liquidable general (34.200,00)
+
+Escala general
+
+Hasta 20.200,00: 2.112,75
+
+Resto 14.000,00 al 15%: 2.100
+
+Cuota 1 (2.112,75 + 2.100) = 4.212,75
+
+Escala autonómica
+
+Hasta 20.200,00: 2.112,75
+
+Resto 14.000,00 al 15%: 2.100
+
+Cuota 2 (2.112,75 + 2.100) = 4.212,75
+
+Aplicación de las escalas de gravamen a la base liquidable general correspondiente al mínimo personal y familiar
+
+Escala general 5.550 al 9,50%: 527,25
+
+Cuota 3 = 527,25
+
+Escala autonómica 5.550 al 9,50%: 527,25
+
+Cuota 4 = 527,25
+
+Determinación de la cuota íntegra general, estatal y autonómica
+
+Cuota íntegra general estatal (Cuota 1 - Cuota 3): 4.212,75 – 527,25 = 3.685,50
+
+Cuota íntegra general autonómica (Cuota 2 - Cuota 4): 4.212,75 – 527,25 = 3.685,50
+
+2. Cuota correspondiente a la base liquidable del ahorro (20.500,00)
+
+Gravamen estatal
+
+Hasta 6.000,00: 570
+
+Resto 14.500,00 al 10,50%: 1.522,50
+
+Cuota gravamen estatal (570 + 1.522,50) = 2.092,50
+
+Gravamen autonómico
+
+Hasta 6.000: 570
+
+Resto 14.500,00 al 10,50%: 1.522,50
+
+Cuota gravamen autonómico (570 + 1.522,50) = 2.092,50
+
+Determinación de las cuotas íntegras
+
+Parte estatal (3.685,50 + 2.092,50) = 5.778
+
+Parte autonómica (3.685,50 + 2.092,50) = 5.778
+
+3. Deducción por rentas obtenidas en Ceuta o Melilla 
+
+Para su cálculo deben seguirse los siguientes pasos:
+
+Cálculo de la deducción correspondiente a las rentas obtenidas en Ceuta:  
+
+[60% x Cuota íntegra general / Base liquidable general x Base liquidable general obtenida en Ceuta] 
+
+60% [(3.685,50 + 3.685,50) ÷ 34.200 x 31.000] = 4.008,78
+
+Cálculo de la deducción correspondiente a las rentas obtenidas en Ceuta incluidas en la base liquidable del ahorro:
+
+[60% x Cuota íntegra del ahorro/ Base liquidable del ahorro x Base liquidable del ahorro obtenida en Ceuta]
+
+60% [(2.092,50 + 2.092,50) ÷ 20.500 x 500] = 61,24
+
+Total importe de la deducción por rentas obtenidas en Ceuta (4.008,78 + 61,24) = 4.070,02 euros
+
+Dicho importe debe distribuirse al 50 por 100 en la parte estatal y la parte autonómica, de acuerdo con lo que establecen los artículos 67 y 77 de la Ley del IRPF 
+
+Parte estatal: 2.035,01
+
+Parte autonómica: 2.035,01
+
+4. Cuota líquida
+
+Parte estatal (5.778 – 2.035,01) = 3.742,99
+
+Parte autonómica ((5.778 – 2.035,01) = 4.107,68
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

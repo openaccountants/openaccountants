@@ -1,0 +1,42 @@
+[
+  {
+    "guide": "fo-inheritance-duty",
+    "key": "court",
+    "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+    "reference_definition_exact": true,
+    "sources_cell_exact": true,
+    "spaces_or_concatenation": false,
+    "live_read": "Official publisher web retrieval31October2026; court readable and linked D03sixpages/closingfourpages reopened.",
+    "direct_raw_access": "Direct HTTP route remains403 in prior source-access note; no bypass or CAPTCHA."
+  },
+  {
+    "guide": "fo-inheritance-duty",
+    "key": "opening",
+    "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+    "reference_definition_exact": true,
+    "sources_cell_exact": true,
+    "spaces_or_concatenation": false,
+    "live_read": "Official publisher web retrieval31October2026; court readable and linked D03sixpages/closingfourpages reopened.",
+    "direct_raw_access": "Direct HTTP route remains403 in prior source-access note; no bypass or CAPTCHA."
+  },
+  {
+    "guide": "fo-inheritance-duty",
+    "key": "closing",
+    "url": "https://domstoldk.euwest01.umbraco.io/media/1ndp1gcb/b%C3%BAuppger%C3%B0-14-uppger%C3%B0.pdf",
+    "reference_definition_exact": true,
+    "sources_cell_exact": true,
+    "spaces_or_concatenation": false,
+    "live_read": "Official publisher web retrieval31October2026; court readable and linked D03sixpages/closingfourpages reopened.",
+    "direct_raw_access": "Direct HTTP route remains403 in prior source-access note; no bypass or CAPTCHA."
+  },
+  {
+    "guide": "fo-estate-income-tax",
+    "key": "opening",
+    "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+    "reference_definition_exact": true,
+    "sources_cell_exact": true,
+    "spaces_or_concatenation": false,
+    "live_read": "Official publisher web retrieval31October2026; court readable and linked D03sixpages/closingfourpages reopened.",
+    "direct_raw_access": "Direct HTTP route remains403 in prior source-access note; no bypass or CAPTCHA."
+  }
+]

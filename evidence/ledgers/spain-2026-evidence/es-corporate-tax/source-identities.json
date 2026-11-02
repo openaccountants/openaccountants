@@ -1,0 +1,102 @@
+[
+  {
+    "key": "LIS",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "raw": "sources/LIS.body",
+    "raw_sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+    "reader": "sources/LIS.reader.txt",
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "acquired": "2026-10-28T00:08:47.091029+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LISold",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1",
+    "raw": "sources/LISold.body",
+    "raw_sha256": "da6fd204a575185a7c104e90bf84801b26848799ec6d2628f7f4d3dfd6130196",
+    "reader": "sources/LISold.reader.txt",
+    "reader_sha256": "a212aa88bd9f572010da55ba003ad0e9b11a5adcb7850ec0349b9613455afa20",
+    "acquired": "2026-10-28T00:08:50.867843+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "CeutaAct",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429",
+    "raw": "sources/CeutaAct.body",
+    "raw_sha256": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d",
+    "reader": "sources/CeutaAct.reader.txt",
+    "reader_sha256": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596",
+    "acquired": "2026-10-28T00:08:50.775914+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Form202",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html",
+    "raw": "sources/Form202.body",
+    "raw_sha256": "871dadcd4bec80ba651709c85397ff78252ae353ea635d67870779fe6a27849e",
+    "reader": "sources/Form202.reader.txt",
+    "reader_sha256": "885a95dce4f8495286573ec9c4ce723acfd6c812646b09b1faebd83b1cac3035",
+    "acquired": "2026-10-28T00:08:30.585586+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Donations",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039",
+    "raw": "sources/Donations.body",
+    "raw_sha256": "b3e548033e26a14b3171f087f61b2c347598ffc847ce2af65cfc95a9af743b00",
+    "reader": "sources/Donations.reader.txt",
+    "reader_sha256": "6584403e01d6542eb7f398af6a906bacd908383c65f383c4152d25f092cadbd0",
+    "acquired": "2026-10-28T00:08:43.170179+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "ZEC",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+    "raw": "sources/ZEC.body",
+    "raw_sha256": "6fbd19ab8c395480feec524478e4cb966cca07ea2a2fda85e4688aba531da15b",
+    "reader": "sources/ZEC.reader.txt",
+    "reader_sha256": "97a8749bf046173302b111e1c6e8bffa39334ce0b20f4e317315f92b5e4ada37",
+    "acquired": "2026-10-28T00:08:42.757597+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "TPForm",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042",
+    "raw": "sources/TPForm.body",
+    "raw_sha256": "257dea7721386a8b262da99b2667aa3c63e1dd9635737d7c29c0817aa5d5d18f",
+    "reader": "sources/TPForm.reader.txt",
+    "reader_sha256": "88e333858bddba9320a03710dfa12dd8f69073d815a556dc284f0cb36f1f07b0",
+    "acquired": "2026-10-28T00:08:52.533364+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LGT",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/LGT.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/LGT.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28T00:08:43.654027+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Interest",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "raw": "sources/Interest.body",
+    "raw_sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "reader": "sources/Interest.reader.txt",
+    "reader_sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "acquired": "2026-10-28T00:08:29.239287+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "CapTable",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/reserva-capitalizacion.html",
+    "raw": "sources/CapTable.body",
+    "raw_sha256": "a1f1cd55c5db9a96e524c0aa1d1ff4f3acc0764a96badd2c4056c512ddcc7ecf",
+    "reader": "sources/CapTable.reader.txt",
+    "reader_sha256": "65de79d44350bb4adac40f801b98241039a806ddfce161fe57d09c679d09f827",
+    "acquired": "2026-10-28T00:08:29.366025+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

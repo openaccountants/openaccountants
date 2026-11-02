@@ -1,0 +1,75 @@
+{
+  "base": "be8116c9ba106cf792548b3680c150c49658524e",
+  "existing_guides": [
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "base_sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "current_sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "base_sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "current_sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "base_sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "current_sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "base_sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "current_sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "base_sha256": "f0b446fa1f4d5a8df3add50fbcb82b2e05f2139a0cfffe1161c4f963b8dcd7ba",
+      "current_sha256": "f0b446fa1f4d5a8df3add50fbcb82b2e05f2139a0cfffe1161c4f963b8dcd7ba",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "base_sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "current_sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "base_sha256": "115a0cd9c7ed682e0577037cb236e89b45fcde562c26545b3407f7ece1058b47",
+      "current_sha256": "115a0cd9c7ed682e0577037cb236e89b45fcde562c26545b3407f7ece1058b47",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "base_sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "current_sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "base_sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "current_sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "base_sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "current_sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "base_sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "current_sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "byte_exact": true
+    }
+  ],
+  "old_nonblank_units": 2490,
+  "accepted_evidence_unchanged": true,
+  "new_guide": "skills/faroe-islands/fo-property-transfer-registration.md",
+  "note": "Git diff contains no changes to old Guide files or accepted evidence directories. Country README receives only additive pending-review wording."
+}

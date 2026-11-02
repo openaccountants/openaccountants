@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-10-22",
+  "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+  "locator": "Article22(1)-(4); signed official agreement printed pages27-29",
+  "retrieval": "Fresh official HTML retrieved; compared with saved official agreement PDF text.",
+  "scope": [
+    "Gibraltar same-income lesser-tax deduction",
+    "UK credit and conditional dividend/PE exemptions",
+    "10% voting-power underlying-company-tax route",
+    "UK-resident source deeming and both residence-only exclusions"
+  ],
+  "limits": [
+    "No completed filing workflow or UK domestic exemption/credit computation verified.",
+    "No automatic transplant of domestic section37 deadline or restrictions to treaty claims."
+  ]
+}

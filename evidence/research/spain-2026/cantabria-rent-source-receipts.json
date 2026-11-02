@@ -1,0 +1,67 @@
+[
+  {
+    "key": "cantabria-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "sha256": "8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251",
+    "bytes": 350447,
+    "fetched_utc": "2026-10-27T16:59:43.513283+00:00",
+    "file": "review/regional-rent-age-closure/sources/cantabria-law.html",
+    "verified_sha256": "8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251",
+    "actual_body_read": true
+  },
+  {
+    "key": "cantabria-presentation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_2-arrendamiento-vivienda-habitual.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_2-arrendamiento-vivienda-habitual.html",
+    "sha256": "4d2a0dfee35c7243ef13c9cd29a06127d5c8641b614820d51ee4cfc647b45009",
+    "bytes": 11361,
+    "fetched_utc": "2026-10-27T16:59:41.540852+00:00",
+    "file": "review/regional-rent-age-closure/sources/cantabria-presentation.html",
+    "verified_sha256": "4d2a0dfee35c7243ef13c9cd29a06127d5c8641b614820d51ee4cfc647b45009",
+    "actual_body_read": true
+  },
+  {
+    "key": "cantabria-practical",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "sha256": "185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a",
+    "bytes": 13064,
+    "fetched_utc": "2026-10-27T16:59:41.541046+00:00",
+    "file": "review/regional-rent-age-closure/sources/cantabria-practical.html",
+    "verified_sha256": "185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a",
+    "actual_body_read": true
+  },
+  {
+    "key": "aeat-simulator-entry",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "sha256": "35e08078658c4b74556aeabd6d569e0dbcee861bc06c0f1a87ea754467938fad",
+    "bytes": 137964,
+    "fetched_utc": "2026-10-27T17:15:16.531273+00:00",
+    "file": "review/regional-rent-age-closure/sources/aeat-simulator-entry.html",
+    "verified_sha256": "35e08078658c4b74556aeabd6d569e0dbcee861bc06c0f1a87ea754467938fad",
+    "actual_body_read": true
+  },
+  {
+    "key": "aeat-simulator-official-index",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/tramitacion/ZZ08.shtml",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/tramitacion/ZZ08.shtml",
+    "sha256": "1ee8484f225606a69367dbf13338b87fc7a32f5c6bc7cbd514990716fc4bb04e",
+    "bytes": 25659,
+    "fetched_utc": "2026-10-27T17:15:16.468722+00:00",
+    "file": "review/regional-rent-age-closure/sources/aeat-simulator-official-index.html",
+    "verified_sha256": "1ee8484f225606a69367dbf13338b87fc7a32f5c6bc7cbd514990716fc4bb04e",
+    "actual_body_read": true
+  }
+]

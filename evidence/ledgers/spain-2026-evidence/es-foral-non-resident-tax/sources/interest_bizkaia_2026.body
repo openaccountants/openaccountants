@@ -1,0 +1,304 @@
+<!--pasadaVerificarIdioma: 0 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 1 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 2 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<link media="screen" type="text/css" rel="stylesheet" href="/ogasuna/css/ogasuna_rwd.css" />
+<!--bolMigradoLiferay: True - /ogasuna/faq/faq_detalle.asp - <br>-->
+	<script type="text/javascript" data-senna-track="permanent">
+		if(window.self == window.top){
+			var ancla = window.location.hash;
+			window.location.href = 'https://www.bizkaia.eus/es/tema-plantilla/-/edukia/pl/-/ogasuna/faq/faq_detalle.asp[interrogacion]Idioma=CA&idregistro=900005626'+ancla.replace('#','[almohadilla]');
+		}
+	</script>
+	
+		<title>  - Bizkaia.Eus</title>
+	
+<!-- metas_RWD -->
+<meta http-equiv='Content-Language' content='es' />
+<meta name='language' content='es' />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+
+	<meta name="robots" content="all" />
+
+<meta name="keywords" content="Acción Social, Agricultura, Cultura, Diputado General, Hacienda y Finanzas, Medio Ambiente, Obras Públicas y Transporte, Promoción Económica, Presidencia" />
+<meta name="description" content="La administración foral de Bizkaia" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+if(getCookieGa('pc_analitica_bizkaia')=="1" || getCookieGa('pc_analitica_bizkaia')=="true"){
+<!-- Google Tag Manager DES -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZSZSRR');
+<!-- Google Tag Manager PRO -->
+<!--(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!-- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!-- j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=-->
+<!-- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!-- })(window,document,'script','dataLayer','GTM-5ZSZSRR');-->
+}
+function getCookieGa(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+	<link href="/home2/estiloak_rwd/comun.css?v=2" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="/home2/estiloak_rwd/impresora.css?v=2" rel="stylesheet" type="text/css" media="print" />
+	<link rel="Shortcut Icon" type="image/ico" href="/home2/irudiak/bfa.ico" />
+	<script type="text/javascript" src="/home2/jquery/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/home2/jquery/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/home2/jquery/jquery-ui.css?v=2" type="text/css" />
+
+<link href="/ogasuna/guregida/css/guregida.css" rel="stylesheet" type="text/css" />
+
+<link href="css/faqs.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/js2.js" type="text/javascript"></script>
+<link href="/ogasuna/css/ogasuna_impresion.css" rel="stylesheet" type="text/css" media="print"/>
+</head>
+<script type="text/javascript" language="javascript">
+	function mostrarRespuesta(val)
+	{
+		var itemS = "Resp" + val ; 
+		var itemLI = "LiResp" + val ; 
+		if(document.getElementById(itemS).style.display == 'none'){
+			document.getElementById(itemS).style.display = '';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamas(?!\S)/g, " ogamenos");
+		}else{
+			document.getElementById(itemS).style.display = 'none';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamenos(?!\S)/g, " ogamas");
+		}		
+	}
+</script>
+
+<body>
+<div id="contenedor"> 
+  <!-- Google Tag Manager (noscript) -->
+<!-- DES -->
+<!-- <noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript> -->
+<!-- PRO -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   <div class="separador">&nbsp;</div>
+  <!-- parte principal -->
+
+	<a name="inicio_contenido" id="iniciocontenido"></a>
+    
+<div class="actualidadInicio actualidadInicio_LFR">
+<div class=""> 
+
+
+<div id="contenido_editado">
+  <ul class="ogaPrePath">
+<li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=294&amp;btnBuscar=Buscar">Deudas y recaudaci&#243;n</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=294&amp;Nivel2=425&amp;btnBuscar=Buscar">Gesti&#243;n de recaudaci&#243;n</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=294&amp;Nivel2=425&amp;Nivel3=1498&amp;btnBuscar=Buscar">Otras cuestiones relacionados con la recaudaci&#243;n</a>
+</li></ul>
+
+<p class="faqvolverGureGida"><a href="https://www.bizkaia.eus/guregida/"><img src="/ogasuna/guregida/irudiak/CA_guregida.png" alt=""/>  <br/>
+ <span>www.bizkaia.eus/guregida</span>
+
+</a></p>
+
+
+
+
+
+<p class="ogaTipoBuscador ogapreguntaFrecuente">Preguntas frecuentes <span>Nº Identificación: 900005626</span></p>
+
+
+<h4>Inter&#233;s legal del dinero y de demora </h4>
+<br>
+	
+</br>
+
+<p><strong>Inter&eacute;s legal del dinero </strong>vendr&aacute; fijado por la Ley de Presupuestos:</p>
+<ul>
+    <li>Ejercicio 2026: 3,25%</li>
+    <li>Ejercicio 2025: 3,25%</li>
+    <li>Ejercicio 2024: 3,25%</li>
+    <li>Ejercicio 2023: 3,25%</li>
+    <li>Ejercicio 2022: 3,00%</li>
+    <li>Ejercicio 2021: 3,00%</li>
+    <li>Ejercicio 2020: 3,00%</li>
+    <li>Ejercicio 2019: 3,00%</li>
+    <li>Ejercicio 2018: 3,00%</li>
+</ul>
+<p>El <strong>inter&eacute;s de demora </strong>es una prestaci&oacute;n accesoria que se exigir&aacute; a los obligados tributarios por la falta de realizaci&oacute;n del pago dentro de los plazos establecidos en la <abbr title="Norma Foral General Tributaria">NFGT</abbr> (incluidos los aplazamientos) o el cobro de una devoluci&oacute;n improcedente. Ser&aacute; el <strong>inter&eacute;s legal</strong> del dinero vigente a lo largo del per&iacute;odo en el que aqu&eacute;l resulte exigible, <strong>incrementado en un 25 por 100</strong>, salvo que se establezca otro diferente, y :</p>
+<ul>
+    <li>Ejercicio 2026: 4,0625%</li>
+    <li>Ejercicio 2025: 4,0625%</li>
+    <li>Ejercicio 2024: 4,0625%</li>
+    <li>Ejercicio 2023: 4,0625%</li>
+    <li>Ejercicio 2022: 3,75%</li>
+    <li>Ejercicio 2021: 3,75%</li>
+    <li>Ejercicio 2020: 3,75%</li>
+    <li>Ejercicio 2019: 3,75%</li>
+    <li>Ejercicio 2018: 3,75%</li>
+</ul>
+<p>&nbsp;</p>
+
+
+<br class="limpiar"/>
+<div class="oga_alerta">
+<p class="oga_tit_alerta">Nota</p>
+<div class="oga_contenido_alerta"><p>Esta Pregunta-Respuesta carece de efectos vinculantes para la Hacienda Foral de Bizkaia, teniendo el carácter de mera información.</p></div>
+</div>
+
+
+<p class="faqvolver"><a href="faq_listado.asp?Idioma=CA">Volver</a></p>   
+  <div class="separador">&nbsp;</div>
+            <div id="utilidades">
+						<script type="text/javascript">
+							<!--
+							document.write("<p class='imprimir_pie'>")
+							document.write("<a href='#' onclick='javascript:print();'>imprimir</a>")
+							document.write("</p>")
+							-->
+						</script>
+				
+              <p class="correo_pie"> <a href="envios.asp?Idioma=CA&amp;idregistro=900005626">enviar por e-mail</a></p>
+            </div> <!-- utilidades --> 
+
+
+
+<br class="limpiar"/>
+</div><!--contenido_editado-->
+ 				</div><!-- principal -->
+				<br class="separador"/>
+			</div><!-- actualidad_inicio -->
+		
+<label for="right-menu-checkbox" class="overlay right"></label>
+
+		<!-- menuPpal -->
+
+	<div class="separador">&nbsp;</div>
+	
+
+	<script type="text/javascript">
+		$(function() {
+	
+		function getParameterByName(name, url) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+	
+		var iframeURL = window.location.href;
+		var iframeTemCodigo = getParameterByName('tem_codigo', iframeURL.toLowerCase());
+		
+		//console.log('iframeURL: ', window.location.href);
+		//console.log('iframeTemCodigo: ', iframeTemCodigo);
+		
+		$("body a:not([target='_blank'])").each(function(){
+			var linkURL = $(this).attr('href');
+			//console.log('linkURL: ', linkURL);
+			if (linkURL && !linkURL.startsWith("#")){
+				var linkTemCodigo = getParameterByName('tem_codigo',linkURL.toLowerCase())
+				//console.log('linTemCodigo: ', linkTemCodigo);		
+				if((!iframeTemCodigo) || (iframeTemCodigo != linkTemCodigo)){
+				//if(iframeTemCodigo != linkTemCodigo){
+					$(this).attr("target","_parent");
+				}
+			}
+		});
+
+		$('a[href^="#"]').click(function( event ) {
+
+			event.preventDefault();
+			var idLink=$(this).attr('href');
+			//console.log('click');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},150);
+
+		});
+		
+		
+		if(window.location.hash) {
+
+			//event.preventDefault();
+			var idLink=window.location.hash;
+			//console.log('hash');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							//console.log("ENTRA");
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},450);
+
+		}
+
+		
+		$('a[data-toggle=collapse]').click(function( event ) {
+
+			event.preventDefault();
+
+			//console.log('click');
+
+			if (typeof parentIFrame != "undefined") {
+				setTimeout(function(){
+					//console.log('scroll');
+					parentIFrame.scrollToOffset(0,-150);
+				},350);
+			}
+
+		});
+	});	
+	</script>
+
+	<script src="/home2/js/iframeResizer.contentWindow.min.js"></script>
+	<!-- piePagina --> 
+<img id='estadisticas' src='/home2/includes/bfa_plantilla.asp?idi=ca&amp;U=https%3A%2F%2Fwww%2Ebizkaia%2Eeus%2Fogasuna%2Ffaq%2Ffaq%5Fdetalle%2Easp%3FIdioma%3DCA%26idregistro%3D900005626' alt='' />
+	<!-- piePagina --> 
+</div><!-- contenedor -->
+<div class="separador">&nbsp;</div>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+SECRETARÍA DE ESTADO DE HACIENDA
+
+DIRECCIÓN GENERAL DE TRIBUTOS
+
+Doctrina Tributaria - Consultas Tributarias 1997-2026
+
+BUSCADOR
+
+Formulario de consulta
+
+Mostrar
+
+(actualizada a 30/09/2026)
+
+(actualizada a 30/09/2026)
+
+Filtro de búsqueda
+
+ Nº de consulta *
+
+field (settable) Ayuda del buscador para número de consulta Nº de consulta *, Value: V0835-25, ID: VLCMP_1
+
+Fecha salida desde
+
+field (settable) Fecha salida desde, ID: dateIni_2
+
+Hasta
+
+field (disabled) Hasta, ID: dateEnd_2
+
+ Normativa
+
+field (settable) Ayuda del buscador para normativa Normativa, ID: VLCMP_3
+
+Cuestión planteada
+
+field (settable) Cuestión planteada, ID: VLCMP_4
+
+Descripción de hechos
+
+field (settable) Descripción de hechos, ID: VLCMP_5
+
+Texto libre
+
+field (settable) Texto libre, ID: VLCMP_6
+
+Criterio de interés
+
+(a partir de 01-01-2022)
+
+Ordenación
+
+Campo de ordenación
+
+*  0006-26 a 4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas generales
+
+*  V1690-26 a V4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas vinculantes
+
+Resultados
+
+ Documento 1 de 1 
+
+Documento seleccionado
+
+Nº de consulta
+
+V0835-25
+
+Órgano
+
+SG de Impuestos sobre el Consumo
+
+Fecha salida
+
+16/05/2025
+
+Normativa
+
+Ley 37/1992 arts. 4º y 5º, 93-95,99,107,110
+
+Descripción de hechos
+
+La consultante es una entidad mercantil que se encuentra sujeta al régimen de prorrata del Impuesto sobre el Valor Añadido. Ha realizado la compra de un vehículo industrial usado a otra entidad mercantil para afectarlo a la actividad de formación de conductores profesionales de autobuses. Transcurridos dos meses desde la compra del vehículo y a consecuencia de una avería en carretera, y sin que se haya iniciado su uso en la actividad, la entidad consultante solicitó a la entidad vendedora la devolución del importe satisfecho en base a las garantías firmadas sin que se haya obtenido dicha pretensión debido a la transformación efectuada en el vehículo. No obstante, la entidad vendedora ofrece realizar la recompra del mismo por el precio inicialmente acordado y compensar los gastos de transformación necesarios realizados.
+
+Cuestión planteada
+
+Si la venta del vehículo estaría sujeta al Impuesto sobre el Valor Añadido.
+
+Contestación completa
+
+1.- El artículo 4, apartado uno de la Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido (BOE de 29 de diciembre), establece que “estarán sujetas al impuesto las entregas de bienes y prestaciones de servicios realizadas en el ámbito espacial del impuesto por empresarios o profesionales a título oneroso, con carácter habitual u ocasional, en el desarrollo de su actividad empresarial o profesional, incluso si se efectúan en favor de los propios socios, asociados, miembros o partícipes de las entidades que las realicen.”.
+
+El apartado dos, letras a) y b), del mismo precepto señala que “se entenderán realizadas en el desarrollo de una actividad empresarial o profesional:
+
+a) Las entregas de bienes y prestaciones de servicios efectuadas por las sociedades mercantiles, cuando tengan la condición de empresario o profesional.
+
+b) Las transmisiones o cesiones de uso a terceros de la totalidad o parte de cualesquiera de los bienes o derechos que integren el patrimonio empresarial o profesional de los sujetos pasivos, incluso las efectuadas con ocasión del cese en el ejercicio de las actividades económicas que determinan la sujeción al Impuesto.”.
+
+Por otra parte, de acuerdo con lo establecido en el artículo 5.uno de la citada Ley 37/1992, se reputarán empresarios o profesionales, a efectos del Impuesto sobre el Valor Añadido:
+
+“a) Las personas o entidades que realicen las actividades empresariales o profesionales definidas en el apartado siguiente de este artículo.
+
+No obstante, no tendrán la consideración de empresarios o profesionales quienes realicen exclusivamente entregas de bienes o prestaciones de servicios a título gratuito, sin perjuicio de lo establecido en la letra siguiente.
+
+b) Las sociedades mercantiles, salvo prueba en contrario.
+
+(…)”.
+
+En este sentido, el apartado dos, de este artículo 5, establece que “son actividades empresariales o profesionales las que impliquen la ordenación por cuenta propia de factores de producción materiales y humanos o de uno de ellos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+
+En particular, tienen esta consideración las actividades extractivas, de fabricación, comercio y prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras y el ejercicio de profesiones liberales y artísticas.
+
+(…)”.
+
+De los hechos descritos en el escrito de consulta se deduce que la consultante tiene la condición de empresario o profesional a efectos del Impuesto sobre el Valor Añadido y que el vehículo que va a transmitir fue integrado y forma parte de su patrimonio empresarial o profesional, por lo que la transmisión de este estará sujeta a dicho Impuesto.
+
+2.- En relación con la transmisión objeto de consulta a realizar por la consultante, el artículo 20, apartado Uno. 24º de la Ley del impuesto, declara exentas, entre otras:
+
+“24.º Las entregas de bienes que hayan sido utilizados por el transmitente en la realización de operaciones exentas del impuesto en virtud de lo establecido en este artículo, siempre que al sujeto pasivo no se le haya atribuido el derecho a efectuar la deducción total o parcial del impuesto soportado al realizar la adquisición, afectación o importación de dichos bienes o de sus elementos componentes.
+
+A efectos de lo dispuesto en el párrafo anterior, se considerará que al sujeto pasivo no se le ha atribuido el derecho a efectuar la deducción parcial de las cuotas soportadas cuando haya utilizado los bienes o servicios adquiridos exclusivamente en la realización de operaciones exentas que no originen el derecho a la deducción, aunque hubiese sido de aplicación la regla de prorrata.
+
+Lo dispuesto en este número no se aplicará:
+
+a) A las entregas de bienes de inversión que se realicen durante su período de regularización.
+
+b) Cuando resulten procedentes las exenciones establecidas en los números 20.º y 22.º anteriores.
+
+25.º Las entregas de bienes cuya adquisición, afectación o importación o la de sus elementos componentes hubiera determinado la exclusión total del derecho a deducir en favor del transmitente en virtud de lo dispuesto en los artículos 95 y 96 de esta Ley”.
+
+Por tanto, la aplicación de dichas exenciones se encuentra condicionada a que al sujeto pasivo transmitente no se le haya atribuido el derecho a la deducción de las cuotas soportadas por la adquisición de dichos bienes, de modo que ha de analizarse el derecho a la deducción de tales cuotas.
+
+3.- En relación con el ejercicio del derecho a deducir las cuotas del Impuesto soportadas, es necesario señalar que la deducción de las mismas podrá efectuarse de conformidad con los límites y requisitos contenidos en el Título VIII de la Ley del Impuesto, en el que se regula el derecho a deducir.
+
+En particular, el artículo 93 de la Ley 37/1992 dispone que:
+
+“Uno. Podrán hacer uso del derecho a deducir los sujetos pasivos del Impuesto que tengan la condición de empresarios o profesionales de conformidad con lo dispuesto en el artículo 5 de esta Ley y hayan iniciado la realización habitual de entregas de bienes o prestaciones de servicios correspondientes a sus actividades empresariales o profesionales.
+
+No obstante lo dispuesto en el párrafo anterior, las cuotas soportadas o satisfechas con anterioridad al inicio de la realización habitual de entregas de bienes o prestaciones de servicios correspondientes a sus actividades empresariales o profesionales podrán deducirse con arreglo a lo dispuesto en los artículos 111, 112 y 113 de esta Ley.
+
+(…)
+
+Cuatro. No podrán ser objeto de deducción, en ninguna medida ni cuantía, las cuotas soportadas o satisfechas por las adquisiciones o importaciones de bienes o servicios efectuadas sin la intención de utilizarlos en la realización de actividades empresariales o profesionales, aunque ulteriormente dichos bienes o servicios se afecten total o parcialmente a las citadas actividades.
+
+(…).”.
+
+Adicionalmente, el artículo 94 de la Ley 37/1992:
+
+“Uno. Los sujetos pasivos a que se refiere el apartado uno del artículo anterior podrán deducir las cuotas del Impuesto sobre el Valor Añadido comprendidas en el artículo 92 en la medida en que los bienes o servicios, cuya adquisición o importación determinen el derecho a la deducción, se utilicen por el sujeto pasivo en la realización de las siguientes operaciones:
+
+1.º Las efectuadas en el ámbito espacial de aplicación del impuesto que se indican a continuación:
+
+a) Las entregas de bienes y prestaciones de servicios sujetas y no exentas del Impuesto sobre el Valor Añadido.
+
+(…).”.
+
+Por otra parte, debe tenerse en cuenta, además de lo anterior, lo dispuesto en el artículo 95 de la Ley del Impuesto sobre el Valor Añadido que a continuación transcribimos:
+
+“Uno. Los empresarios o profesionales no podrán deducir las cuotas soportadas o satisfechas por las adquisiciones o importaciones de bienes o servicios que no se afecten, directa y exclusivamente, a su actividad empresarial o profesional.
+
+(…)
+
+Tres. No obstante lo dispuesto en los apartados anteriores, las cuotas soportadas por la adquisición, importación, arrendamiento o cesión de uso por otro título de los bienes de inversión que se empleen en todo o en parte en el desarrollo de la actividad empresarial o profesional podrán deducirse de acuerdo con las siguientes reglas:
+
+(…)
+
+2.ª Cuando se trate de vehículos automóviles de turismo y sus remolques, ciclomotores y motocicletas, se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 50 por 100.
+
+A estos efectos, se considerarán automóviles de turismo, remolques, ciclomotores y motocicletas los definidos como tales en el anexo del Real Decreto Legislativo 339/1990, de 2 de marzo, por el que se aprueba el texto articulado de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial, así como los definidos como vehículos mixtos en dicho anexo y, en todo caso, los denominados vehículos todo terreno o tipo "jeep''.
+
+No obstante lo dispuesto en esta regla 2.ª, los vehículos que se relacionan a continuación se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 100 por 100:
+
+(…)
+
+c) Los utilizados en la prestación de servicios de enseñanza de conductores o pilotos mediante contraprestación.
+
+(…)
+
+3.ª Las deducciones a que se refieren las reglas anteriores deberán regularizarse cuando se acredite que el grado efectivo de utilización de los bienes en el desarrollo de la actividad empresarial o profesional es diferente del que se haya aplicado inicialmente.
+
+La mencionada regularización se ajustará al procedimiento establecido en el capítulo I del título VIII de esta Ley para la deducción y regularización de las cuotas soportadas por la adquisición de los bienes de inversión, sustituyendo el porcentaje de operaciones que originan derecho a la deducción respecto del total por el porcentaje que represente el grado de utilización en el desarrollo de la actividad empresarial o profesional.
+
+4.ª El grado de utilización en el desarrollo de la actividad empresarial o profesional deberá acreditarse por el sujeto pasivo por cualquier medio de prueba admitido en derecho. No será medio de prueba suficiente la declaración-liquidación presentada por el sujeto pasivo ni la contabilización o inclusión de los correspondientes bienes de inversión en los registros oficiales de la actividad empresarial o profesional.
+
+5.ª A efectos de lo dispuesto en este apartado, no se entenderán afectos en ninguna proporción a una actividad empresarial o profesional los bienes que se encuentren en los supuestos previstos en los números 3.º y 4.º del apartado dos de este artículo.
+
+Cuatro. Lo dispuesto en el apartado anterior será también de aplicación a las cuotas soportadas o satisfechas por la adquisición o importación de los siguientes bienes y servicios directamente relacionados con los bienes a que se refiere dicho apartado:
+
+1.º Accesorios y piezas de recambio para los mencionados bienes.
+
+2.º Combustibles, carburantes, lubrificantes y productos energéticos necesarios para su funcionamiento.
+
+3.º Servicios de aparcamiento y utilización de vías de peaje.
+
+4.º Rehabilitación, renovación y reparación de los mismos.”.
+
+Conforme a la disposición adicional primera del Real Decreto Legislativo 6/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (BOE de 31 de octubre), desde el día 31 de enero de 2016, fecha de entrada en vigor de aquél, “las referencias normativas efectuadas en otras disposiciones al texto articulado de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial, aprobado por el Real Decreto Legislativo 339/1990, de 2 de marzo, se entenderán efectuadas a los preceptos correspondientes del texto refundido que se aprueba.”.
+
+Igualmente, el artículo 99.Dos de la Ley del impuesto señala que las deducciones se practicarán “en función del destino previsible de los bienes y servicios adquiridos, sin perjuicio de su rectificación posterior si aquél fuese alterado.”.
+
+De conformidad con lo anterior, a efectos del derecho a la deducción, podrán ser objeto de deducción las cuotas devengadas como consecuencia de la adquisición del vehículo, cuyo destino, siguiendo criterios razonables y debidamente justificados, sea, previsiblemente realizar operaciones que originen el derecho a la deducción del Impuesto.
+
+En todo caso, el destino previsible del vehículo deberá estar, como se ha indicado, debidamente justificado por elementos objetivos, pudiendo ser objeto de comprobación posterior. En concreto, en el caso consultado, el destino previsible inicial del vehículo era la enseñanza de conductores, que según la información aportada constituiría operaciones exentas del Impuesto sobre el Valor Añadido, por lo que las cuotas soportadas no habrían sido deducibles en el momento de la adquisición inicial, tal y como manifiesta la consultante en su escrito de consulta
+
+4.- Una vez determinado lo anterior, procede plantearse cómo se regularizarían las deducciones practicadas inicialmente cuando, como en el supuesto objeto de consulta cambia el destino previsible inicial. En el supuesto objeto de consulta de una actividad de enseñanza sujeta y exenta del Impuesto sobre el Valor Añadido a una transmisión sujeta y no exenta con derecho a la deducción del impuesto soportado, antes de su entrada en funcionamiento.
+
+En este sentido debe tenerse en cuenta que el artículo 9.1º, letras c) y d) de la Ley 37/1992, establece entre las operaciones asimiladas a las entregas de bienes a título oneroso que tienen la consideración de autoconsumo de bienes:
+
+“c) El cambio de afectación de bienes corporales de un sector a otro diferenciado de su actividad empresarial o profesional.
+
+El supuesto de autoconsumo a que se refiere esta letra c) no resultará aplicable en los siguientes casos:
+
+- Cuando, por una modificación en la normativa vigente, una determinada actividad económica pase obligatoriamente a formar parte de un sector diferenciado distinto de aquél en el que venía estando integrada con anterioridad.
+
+- Cuando el régimen de tributación aplicable a una determinada actividad económica cambie del régimen general al régimen especial simplificado, al de la agricultura, ganadería y pesca, al del recargo de equivalencia o al de las operaciones con oro de inversión, o viceversa, incluso por el ejercicio de un derecho de opción.
+
+Lo dispuesto en los dos guiones del párrafo anterior debe entenderse, en su caso, sin perjuicio de lo siguiente:
+
+- De las regularizaciones de deducciones previstas en los artículos 101, 105, 106, 107, 109, 110, 112 y 113 de esta Ley.
+
+- De la aplicación de lo previsto en el apartado dos del artículo 99 de esta Ley en relación con la rectificación de deducciones practicadas inicialmente según el destino previsible de los bienes y servicios adquiridos cuando el destino real de los mismos resulte diferente del previsto, en el caso de cuotas soportadas o satisfechas por la adquisición o importación de bienes o servicios distintos de los bienes de inversión que no hubiesen sido utilizados en ninguna medida en el desarrollo de la actividad empresarial o profesional con anterioridad al momento en que la actividad económica a la que estaban previsiblemente destinados en el momento en que se soportaron las cuotas pase a formar parte de un sector diferenciado distinto de aquel en el que venía estando integrada con anterioridad.
+
+(…)
+
+d) La afectación o, en su caso, el cambio de afectación de bienes producidos, construidos, extraídos, transformados, adquiridos o importados en el ejercicio de la actividad empresarial o profesional del sujeto pasivo para su utilización como bienes de inversión.
+
+Lo dispuesto en esta letra no será de aplicación en los supuestos en que al sujeto pasivo se le hubiera atribuido el de recho a deducir íntegramente las cuotas del Im puesto sobre el Valor Añadido que hubiere soportado en el caso de adquirir a terceros bienes de idéntica naturaleza.
+
+(…).”.
+
+No obstante lo anterior, en la medida en que el vehículo va a ser objeto de transmisión a un tercero directamente, no se entendería producido ninguno de los autoconsumos señalados.
+
+Por otro lado, el artículo 107 de la Ley del Impuesto, en relación con la regularización de bienes de inversión señala lo siguiente:
+
+“Uno. Las cuotas deducibles por la adquisición o importación de bienes de inversión deberán regularizarse durante los cuatro años naturales siguientes a aquél en que los sujetos pasivos realicen las citadas operaciones.
+
+No obstante, cuando la utilización efectiva o entrada en funcionamiento de los bienes se inicien con posterioridad a su adquisición o importación, la regularización se efectuará el año en que se produzcan dichas circunstancias y los cuatro siguientes.
+
+Las regularizaciones indicadas en este apartado sólo se practicarán cuando, entre el porcentaje de deducción definitivo correspondiente a cada uno de dichos años y el que prevaleció en el año en que se soportó la repercusión, exista una diferencia superior a diez puntos.”.
+
+A estos efectos, conforme al criterio de esta Dirección General en las contestaciones vinculantes V3000-11, de 22 de diciembre de 2011, y V0386-24, de 12 de marzo, se entiende como momento de entrada en funcionamiento de un elemento, aquél en que se produce su integración al proceso productivo de la empresa en condiciones normales de funcionamiento, una vez concluido el período de instalación y prueba. Por lo que de la escasa información aportada en el escrito de consulta parece que dicho periodo de instalación y prueba no había concluido respecto del vehículo consultado, por lo que el mismo no habría entrado en condiciones de funcionamiento.
+
+Por lo que respecta a la regularización de las cuotas deducidas en caso de que finalmente no se confirmara el destino previsto del bien, el artículo 114 de la Ley del Impuesto sobre el Valor Añadido establece lo siguiente:
+
+“Uno. Los sujetos pasivos, cuando no haya mediado requerimiento previo, podrán rectificar las deducciones practicadas cuando el importe de las mismas se hubiese determinado incorrectamente o el importe de las cuotas soportadas haya sido objeto de rectificación de acuerdo con lo dispuesto en el artículo 89 de esta Ley.
+
+La rectificación de las deducciones será obligatoria cuando implique una minoración del importe inicialmente deducido.
+
+Dos. La rectificación de deducciones originada por la previa rectificación del importe de las cuotas inicialmente soportadas se efectuará de la siguiente forma:
+
+1º. Cuando la rectificación determine un incremento del importe de las cuotas inicialmente deducidas, podrá efectuarse en la declaración-liquidación correspondiente al período impositivo en que el sujeto pasivo reciba el documento justificativo del derecho a deducir en el que se rectifiquen las cuotas inicialmente repercutidas, o bien en las declaraciones-liquidaciones siguientes, siempre que no hubiesen transcurrido cuatro años desde el devengo de la operación o, en su caso, desde la fecha en que se hayan producido las circunstancias que determinan la modificación de la base imponible de la operación.
+
+Sin perjuicio de lo anterior, en los supuestos en que la rectificación de las cuotas inicialmente soportadas hubiese estado motivado por causa distinta de las previstas en el artículo 80 de esta Ley, no podrá efectuarse la rectificación de la deducción de las mismas después de transcurrido un año desde la fecha de expedición del documento justificativo del derecho a deducir por el que se rectifican dichas cuotas.
+
+2º. Cuando la rectificación determine una minoración del importe de las cuotas inicialmente deducidas, el sujeto pasivo deberá presentar una declaración-liquidación rectificativa aplicándose a la misma el recargo y los intereses de demora que procedan de conformidad con lo previsto en los artículos 26 y 27 de la Ley General Tributaria.
+
+(…)
+
+No obstante, cuando la rectificación tenga su origen en un error fundado de derecho o en las restantes causas del artículo 80 de esta Ley deberá efectuarse en la declaración-liquidación correspondiente al periodo impositivo en que el sujeto pasivo reciba el documento justificativo del derecho a deducir en el que se rectifiquen las cuotas inicialmente soportadas.”.
+
+De acuerdo con estos preceptos la cuestión a plantear es si la regularización de las deducciones inicialmente practicadas por la consultante en la adquisición de un bien de inversión como es un vehículo destinado a la enseñanza exenta debe realizarse a través del artículo 9.1º.c) o d), del artículo 107 o del artículo 114 de la Ley del Impuesto.
+
+En relación con esta cuestión debe señalarse que un asunto similar al planteado en la consulta fue objeto de resolución reciente por el Tribunal de Justicia de la Unión Europea en su sentencia de 17 de septiembre de 2020, asunto C-791-18, Stichting Schoonzicht.
+
+En el litigio principal objeto de sentencia, la demandante encargó la construcción de un complejo inmobiliario compuesto por siete apartamentos de uso residencial en un terreno de su propiedad. Las obras de construcción comenzaron en 2013 y en el mes de julio del año siguiente se le hizo entrega de dicho complejo.
+
+La demandante dedujo directamente el importe total del IVA que se le había facturado durante el ejercicio 2013 por la construcción de dicho complejo, ya que, en aquel momento, el complejo estaba destinado a fines sujetos a imposición
+
+A partir del 1 de agosto de 2014, la demandante cedió en arriendo cuatro de los siete apartamentos del complejo inmobiliario de que se trata con exención del IVA, mientras que los otros tres apartamentos permanecieron sin ocupar en 2014.
+
+El litigo principal plantea cómo se deben corregir dichas deducciones practicadas inicialmente.
+
+El Tribunal de Justicia concluye lo siguiente:
+
+“35. En la medida en que la deducción inicial se calculó teniendo en cuenta la afectación de ese complejo a operaciones gravadas, el arrendamiento de los cuatro apartamentos con exención del IVA supuso una modificación de los elementos que deben tomarse en consideración para determinar el importe de dicha deducción y llevó a que dicha deducción resultara superior a la que el sujeto pasivo tenía derecho a practicar por el uso efectivo del bien de que se trata.
+
+36. Por consiguiente, tal situación está comprendida en las contempladas en el artículo 184 y en el artículo 185, apartado 1, de la Directiva sobre el IVA, en las que la Administración tributaria debe exigir al sujeto pasivo la regularización de la deducción del IVA inicialmente practicada.”.
+
+Una vez determinada la necesidad de regularizar las deducciones practicadas, el Alto Tribunal se plantea si dicha regularización debe realizarse a través de la regularización de bienes de inversión prevista en el artículo 187 de la Directiva. Para esta cuestión, el apartado 50 de la sentencia llega a la siguiente conclusión:
+
+“50 Pues bien, procede señalar, por una parte, que una normativa nacional que, al igual que la normativa nacional controvertida en el litigio principal, se basa en la fecha de inicio de la utilización de un bien de inversión como fecha de referencia para apreciar si la deducción del IVA inicialmente practicada corresponde a la que el sujeto pasivo tenía derecho a practicar sobre la base del uso efectivo de dicho bien, y que prevé que el sujeto pasivo es deudor, en esa fecha, del importe total de la parte del impuesto deducida en exceso si la deducción inicial era superior a la que tenía derecho a practicar, es conforme con el principio de neutralidad fiscal, recordado en el apartado 26 de la presente sentencia, en la medida en que dicho principio impone que las deducciones indebidas sean rectificadas en cualquier caso (véase, en este sentido, la sentencia de 11 de abril de 2018, SEB bankas, C 532/16, EU:C:2018:228, apartado 38).”.
+
+En consecuencia, de acuerdo con lo señalado por el Tribunal, cuando se produzca el cambio de destino previsible, se deben seguir los siguientes criterios:
+
+-Si el bien de inversión en cuestión se está ya utilizando cuando se produce el cambio del destino previsible la regularización de las deducciones se realizará de forma escalonada en el tiempo a través de la regularización de bienes de inversión.
+
+-No obstante, si el cambio de destino previsible se produce con anterioridad a la entrada en funcionamiento del bien de inversión, la regularización se deberá realizar de una vez antes del inicio del periodo de regularización de bienes de inversión, y en el momento en que se tenga constancia de dicha circunstancia.
+
+De acuerdo con lo anterior, y en el ámbito de nuestro ordenamiento jurídico interno, se podrán distinguir las siguientes situaciones:
+
+- Si el cambio de destino previsible supone un autoconsumo de bienes de los previstos en el artículo 9.1º.c) y d) de la Ley del Impuesto, el ajuste de deducciones se realizará en el ámbito del propio autoconsumo de bienes.
+
+- Por el contrario, si el cambio de destino previsible en un bien de inversión no supone la realización de un autoconsumo en los términos anteriormente citados, habrá que estar a la doctrina del Tribunal de Justicia de la Unión Europea distinguiendo, en tal caso, si el cambio de destino previsible se realiza con anterioridad al inicio del periodo de regularización para realizar el ajuste de deducción de una vez según el artículo 99.Dos y 114 de la Ley del Impuesto o de forma escalonada según el artículo 107 de la Ley si el bien ya hubiese iniciado su entrada en funcionamiento.
+
+En consecuencia con lo anterior, y para el supuesto objeto de consulta, se puede concluir que la alteración en el destino inicialmente previsto antes del inicio del uso o entrada en funcionamiento del bien otorgará el derecho a la deducción de las cuotas soportadas en su adquisición, pudiendo proceder a la rectificación de las deducciones practicadas conforme a los indicados artículos 99.Dos y 114 de la Ley 37/1992.
+
+5.- Una vez señalado lo anterior, cabe señalar que no procede la aplicación de la exención del artículo 20.Uno.24.º anteriormente citado, puesto que el transmitente no ha utilizado tales bienes en la realización de operaciones exentas del impuesto. En efecto, al no llegar a entrar en funcionamiento, no habrá sido destinado ni utilizado a la realización de operación alguna operación sujeta al Impuesto con carácter previo a su propia transmisión.
+
+Adicionalmente, conforme a lo señalado en el apartado anterior, el consultante tiene derecho a la deducción de las cuotas soportadas en la adquisición a través de la regularización de los artículos 99.Dos y 114 de la Ley del Impuesto, por lo que tampoco puede resultar pertinente la aplicación de la exención del artículo 20.Uno.25.º de la Ley del Impuesto.
+
+6.- Lo que comunico a Vd. con efectos vinculantes, conforme a lo dispuesto en el apartado 1 del artículo 89 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+
+Doctrina Tributaria - Consultas Tributarias
+
+ | 

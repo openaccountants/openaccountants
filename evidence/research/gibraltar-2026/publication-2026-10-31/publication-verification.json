@@ -1,0 +1,12 @@
+{
+  "reviewed_guides_unchanged": 19,
+  "structured_partials_unchanged": 7,
+  "public_research_moves_exact": 170,
+  "old_public_docs_exact": 121,
+  "new_evidence_exact": 122,
+  "private_omissions": 55,
+  "distinct_projections": 5,
+  "exact_short_quote_checks": 281,
+  "max_words_per_short_quote": 16,
+  "unpublished_research_ancestry_merged": false
+}

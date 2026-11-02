@@ -1,0 +1,32 @@
+{
+  "total_rows": 2677,
+  "changed_rows": 3,
+  "other_rows_exact": 2674,
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "checks": [
+    {
+      "row": 918,
+      "literal_operative_quote_match": true,
+      "includes_economic_size_staff_shareholder_group_conditions": true,
+      "includes_A_G_adjusted_assets": false,
+      "raw_sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+      "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b"
+    },
+    {
+      "row": 919,
+      "literal_operative_quote_match": true,
+      "includes_economic_size_staff_shareholder_group_conditions": true,
+      "includes_A_G_adjusted_assets": true,
+      "raw_sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+      "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916"
+    },
+    {
+      "row": 920,
+      "literal_operative_quote_match": true,
+      "includes_economic_size_staff_shareholder_group_conditions": true,
+      "includes_A_G_adjusted_assets": true,
+      "raw_sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+      "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de"
+    }
+  ]
+}

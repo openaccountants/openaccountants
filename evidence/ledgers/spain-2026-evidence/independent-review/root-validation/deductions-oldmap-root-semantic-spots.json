@@ -1,0 +1,292 @@
+{
+  "map_sha256_at_read": "0172cbd33b8ef662cd8243af65831b85f372b60322b6fa798f2ec7bed3d884ac",
+  "scope": "31finite old-topic/destination spots actually read byroot; additional writercheck, not different-agent independence orall1413semanticreview. Current relatedMurcia/Galicia/Valencia rows and generalbase/filing paragraphs read.",
+  "spots": [
+    {
+      "index": 17,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 39,
+      "section": "## Section 2 -- How Regional Deductions Work / ### The Dual Structure of Spanish IRPF",
+      "wording": "- **Dual structure of IRPF** — Spanish IRPF is split 50/50 between the State (cuota estatal) and the Autonomous Community (cuota autonómica). The state portion is fixed nationwide; the regional portion is where each CCAA can: 1. Modify the regional tax brackets (escala autonómica) 2. Create regional deductions (deducciones autonómicas) that reduce the cuota autonómica. Regional deductions apply AFTER computing the cuota íntegra autonómica. They reduce the tax owed to the regional government. They do NOT reduce the state portion.",
+      "destination": "CORRECTED dual structure: current LF23 and1345–1348 calculate separate own scales/minima and allocations; the two actual tax liabilities are not automatically equal50/50. Regional credits reduce their own gross quota."
+    },
+    {
+      "index": 19,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 43,
+      "section": "## Section 2 -- How Regional Deductions Work / ### Key Principles",
+      "wording": "- **Key principles** — Deductions are claimed on Modelo 100 (annual IRPF return), in the autonomous community section. Each deduction has a specific AEAT casilla (box number). Most deductions have income limits (base imponible general + base imponible del ahorro). Joint filing (tributación conjunta) may double some limits. Deductions cannot generate a negative cuota autonómica (floor = 0).",
+      "destination": "Current LF31/1342–1348/1485–1491: article-specific BI/BL/income/jointlimits, ordinary regional floor, approved campaign instructions. No automatic doubling or approximate boxes."
+    },
+    {
+      "index": 130,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 189,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Nacimiento, adopción, acogimiento | Birth/adoption/foster care |",
+      "destination": "Current LF1247: Birth/adoption; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 131,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 190,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Nacimiento o adopción múltiples | Multiple births |",
+      "destination": "Current LF1249: Multiple birth/adoption; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 132,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 191,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Hijos con discapacidad | Children with disabilities |",
+      "destination": "Current LF1250: Disability at birth/adoption/fostering/delegated guardianship; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 133,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 192,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Familia numerosa o monoparental | Large or single-parent family |",
+      "destination": "Current LF1251: Large or monoparental family; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 134,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 193,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Custodia guarderías | Nursery custody expenses |",
+      "destination": "Current LF1252: Under-three regular nursery/first-cycle infant care; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 135,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 194,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Familia | Conciliación trabajo-familia | Work-family balance |",
+      "destination": "Current LF1253: Work/family reconciliation; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 136,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 195,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Vivienda | Arrendamiento vivienda habitual | Habitual residence rental |",
+      "destination": "Current LF1283: Habitual-home tenancy/qualifying use assignment; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 137,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 196,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Vivienda | Adquisición vivienda habitual discapacitados | Home purchase by disabled |",
+      "destination": "Current LF1281: Habitual-home acquisition by a disabled taxpayer; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 138,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 197,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Vivienda | Primera adquisición vivienda jóvenes ≤35 | First home under 35 |",
+      "destination": "Current LF1280: First habitual home, age at most 35 at accrual; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 139,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 198,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Sostenibilidad | Instalaciones autoconsumo renovable | Renewable self-consumption |",
+      "destination": "Current LF1285: Qualifying renewable installation; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 140,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 199,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Movilidad | Adquisición vehículos nuevos | New vehicle purchase |",
+      "destination": "Current LF1289: Qualifying new urban bicycle/electrification kit/personal-mobility vehicle; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 141,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 200,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Donaciones | Donativos medioambientales | Environmental donations |",
+      "destination": "Current LF1311: Ecological donations; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 142,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 201,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Donaciones | Donaciones patrimonio cultural valenciano | Valencian cultural heritage |",
+      "destination": "Current LF1312: Inventoried cultural-property gift, cash for its repair, or owner's qualifying work; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 143,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 202,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.10 Comunidad Valenciana (44 deductions -- most of any CCAA)",
+      "wording": "| Educación | Gastos educativos: libros, transporte, comedor | School expenses |",
+      "destination": "Current LF1258: School materials; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old generic books/transport/meals description is narrowed to the actual school-material credit; distinct childcare/nursery1252 retains its own eligible expenses."
+    },
+    {
+      "index": 157,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 222,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Familia | Nacimiento o adopción | Birth/adoption |",
+      "destination": "Current LF1120: Birth/adoption, event year; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 158,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 223,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Familia | Familia numerosa | Large family |",
+      "destination": "Current LF1124: Legal large family; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 159,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 224,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Familia | Cuidado hijos menores | Childcare |",
+      "destination": "Current LF1126: Work-related child care; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 160,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 225,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Vivienda | Inversión vivienda habitual | Home purchase |",
+      "destination": "Current LF1160: Designated historic-centre rehabilitation; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Generichomepurchase description narrowed to actual designated/historical/model-village provisions1160–1162; no general purchase allowance claimed."
+    },
+    {
+      "index": 161,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 226,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Vivienda | Alquiler vivienda habitual | Rental |",
+      "destination": "Current LF1128: Habitual-home rent; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 162,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 227,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Educación | Gastos universitarios | University expenses |",
+      "destination": "Not yet confirmed: historical generic Galicia university-expense credit is not established by the actual current art5 catalogue read for LF1114–1230. No general university expense allowance is invented; original wording preserved here as an unsupported historical topic."
+    },
+    {
+      "index": 163,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 228,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Discapacidad | Contribuyentes con discapacidad ≥33% | Disability |",
+      "destination": "Current LF1127: Disabled taxpayer aged at least 65 needing third-person help; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Explicit correction: actualGaliciataxpayer65+/65%/third-person conditions, not blanket33%."
+    },
+    {
+      "index": 164,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 229,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+      "wording": "| Donaciones | Donativos entidades gallegas | Galician donations |",
+      "destination": "Current LF1216: Qualifying research/innovation money gifts; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Specific qualifying research1216/agricultural1217beneficiaries replace generic all-Galician-donations assumption."
+    },
+    {
+      "index": 195,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 272,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Familia | Gastos guardería menores 3 años | Nursery for children under 3 |",
+      "destination": "Current LF1031: First-cycle infant education; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 196,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 273,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Vivienda | Inversión vivienda habitual jóvenes | Young people buying home |",
+      "destination": "Current LF1030: Young habitual-home investment; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 197,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 274,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Vivienda | Arrendamiento vivienda habitual | Rental deduction |",
+      "destination": "Current LF1038: Habitual-home tenant; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 198,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 275,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Sostenibilidad | Instalaciones recursos energéticos renovables | Renewable energy installations |",
+      "destination": "Current LF1082: Renewable-energy installation; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 199,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 276,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Donaciones | Donativos medioambientales | Environmental donations |",
+      "destination": "Current LF1100: Qualifying cultural/social/scientific/environmental patronage money gifts; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 200,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 277,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.15 Región de Murcia (22 deductions)",
+      "wording": "| Discapacidad | Contribuyentes con discapacidad | Disability ≥33% |",
+      "destination": "Current LF1034: Taxpayer disability; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward."
+    },
+    {
+      "index": 34,
+      "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "title": "actual published-main comparator",
+      "old_lf": 62,
+      "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.1 Andalucía (15 deductions)",
+      "wording": "| General | Deducción aplicable con carácter general | Income below threshold |",
+      "destination": "Not yet confirmed: historical generic standalone Andalucía low-income credit is not established by the actual current arts2–22quater catalogue read for LF214–258; no generic amount is fabricated. Original assertion preserved here as an unsupported historical topic, not silently presented as a current credit."
+    }
+  ],
+  "findings": [
+    {
+      "scope": "Unsubstantiated old generic Galiciauniversityexpense andAndalucialowincome topics",
+      "disposition": "Writer asked to use explicit Not yet confirmed destination prefix with reason andpreservedoldwording; no new currentallowance/Guideedit requested."
+    }
+  ],
+  "other_spots": "Named ordinary topics route to actualcurrentregionalrows; oldgenericincome/age/education/home scope explicitlynarrowed/corrected. Dual50/50equal-liability assumption corrected toseparate scales/minima; historicalapproxboxnumbers notassertedcurrent."
+}

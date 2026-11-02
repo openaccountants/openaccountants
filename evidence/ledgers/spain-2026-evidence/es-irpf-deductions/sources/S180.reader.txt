@@ -1,0 +1,451 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria:  10.14.9. Por cada hijo de 0 de 3 años de contribuyentes que tengan su residencia o trasladen la ...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.14. La Rioja
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+ 10.14.9. Por cada hijo de 0 de 3 años de contribuyentes que tengan su residencia o trasladen la misma a pequeños municipios de la Rioja y la mantengan durante un plazo de al menos 3 años consecutivos
+
+Cuantía
+
+100 euros mensuales por cada hijo de 0 a 3 años.
+
+Requisitos y condiciones
+
+El o los progenitores deberán residir o trasladar su residencia habitual dentro del periodo impositivo a uno de los pequeños municipios de la Rioja que se relacionan más abajo.
+
+El o los progenitores deberán mantener la residencia en estos pequeños municipios durante un plazo continuado de al menos 3 años, contados desde el mes en que se inicie el derecho a la deducción.
+
+No se perderá el derecho a la deducción cuando, a pesar de no haber transcurrido dicho plazo, se produzca el fallecimiento del contribuyente o concurran circunstancias que necesariamente exijan el cambio de residencia, tales como separación matrimonial, traslado laboral, obtención de primer empleo o de empleo más ventajoso u otras análogas.
+
+El contribuyente tiene que tener derecho al mínimo por descendientes.
+
+Para aplicar la deducción, el último día de cada mes deberán concurrir estas dos circunstancias: residir en uno de los municipios mencionados y tener un hijo de 0 a 3 años con derecho a mínimo por descendientes.
+
+Cuando los dos progenitores tengan derecho a la deducción y presenten declaraciones individuales el importe de 100 euros mensuales se prorrateará por partes iguales entre ellos.
+
+El incumplimiento de los requisitos obligará a devolver las deducciones indebidamente practicadas más los intereses de demora, mediante regularización en la declaración del IRPF del año en que se produzca el incumplimiento.
+
+Cumplimentación
+
+Deberá indicar el código del municipio y adicionalmente:
+
+En el apartado 1) el número de meses en los que cada uno de los hijos da derecho a la deducción a ambos progenitores.
+
+En el apartado 2) el número de meses en los que cada uno de los hijos da derecho a la deducción solo al titular.
+
+Relación de municipios
+
+12. Ábalos.
+
+33. Aguilar del Río Alhama.
+
+48. Ajamil de Cameros.
+
+70. Alcanadre.
+
+99. Alesanco.
+
+103. Alesón.
+
+125. Almarza de Cameros.
+
+131. Anguciana.
+
+146. Anguiano.
+
+159. Arenzana de Abajo.
+
+162. Arenzana de Arriba.
+
+178. Arnedillo.
+
+197. Arrúbal.
+
+201.Ausejo.
+
+223. Azofra.
+
+239. Badarán.
+
+244. Bañares.
+
+257. Baños de Rioja.
+
+276. Berceo.
+
+282. Bergasa.
+
+295. Bergasillas Bajera.
+
+309. Bezares.
+
+316. Bobadilla.
+
+321. Brieva de Cameros.
+
+337. Briñas.
+
+342. Briones.
+
+355. Cabezón de Cameros.
+
+374. Camprovín.
+
+380. Canales de la Sierra.
+
+393. Canillas de Rio tuerto.
+
+407. Cañas.
+
+414. Cárdenas.
+
+435. Castañares de Rioja.
+
+440. Castroviejo.
+
+453. Cellorigo.
+
+488. Cidamón.
+
+491. Cihuri.
+
+504. Cirueña.
+
+511. Clavijo.
+
+526. Cordovín.
+
+532. Corera.
+
+547. Cornago.
+
+550. Corporales.
+
+563. Cuzcurrita de Río Tirón.
+
+579. Daroca de Rioja.
+
+ 585. Enciso.
+
+602. Estollo.
+
+624. Foncea.
+
+630. Fonzaleche.
+
+658. Galbárruli.
+
+661. Galilea.
+
+677.Gallinero de Cameros.
+
+683. Gimileo.
+
+696. Grañón.
+
+700. Grávalos.
+
+722. Herce.
+
+738. Herramélluri.
+
+743. Hervías.
+
+756. Hormilla.
+
+769. Hormilleja.
+
+775. Hornillos de Cameros.
+
+781. Hornos de Moncalvillo.
+
+794. Huércanos.
+
+808. Igea.
+
+815. Jalón de Cameros.
+
+820. Laguna de Cameros.
+
+836. Lagunilla del Jubera.
+
+867. Ledesma de la Cogolla.
+
+873. Leiva.
+
+889. Leza de Río Leza.
+
+913. Lumbreras.
+
+928. Manjarrés.
+
+934. Mansilla de la Sierra.
+
+949. Manzanares de Rioja.
+
+952. Matute.
+
+965. Medrano.
+
+987. Munilla.
+
+1004. Muro de Aguas.
+
+1011. Muro en Cameros.
+
+1032. Nalda.
+
+1047. Navajún.
+
+1063. Nestares.
+
+1079. Nieva de Cameros.
+
+1098. Ochánduri.
+
+1085. Ocón.
+
+1102. Ojacastro.
+
+1119. Ollauri.
+
+1124. Ortigosa de Cameros.
+
+1130. Pazuengos.
+
+1145. Pedroso.
+
+1158. Pinillos.
+
+1183. Pradillo.
+
+1196. Préjano.
+
+1217. Rabanera.
+
+1222. Rasillo de Cameros (El)
+
+1238. Redal (El)
+
+1269. Robres del Castillo.
+
+1275. Rodezno.
+
+1281. Sajazarra.
+
+1308. San Millán de la Cogolla.
+
+1315. San Millán de Yécora.
+
+1320. San Román de Cameros.
+
+1392.San Torcuato
+
+1341. Santa Coloma.
+
+1354. Santa Engracia del Jubera.
+
+1367. Santa Eulalia Bajera.
+
+1406. Santurde de Rioja.
+
+1413. Santurdejo.
+
+1434. Sojuela.
+
+1449. Sorzano.
+
+1452. Sotés.
+
+1465. Soto en Cameros.
+
+1471. Terroba.
+
+1487. Tirgo.
+
+1490. Tobía.
+
+1503. Tormantos.
+
+1531. Torre en Cameros.
+
+1510. Torrecilla en Cameros.
+
+1525. Torrecilla sobre Alesanco
+
+1546. Torremontalbo.
+
+1559. Treviana.
+
+1578. Tricio.
+
+1584. Tudelilla.
+
+1601. Uruñuela.
+
+1618. Valdemadera.
+
+1623. Valgañón.
+
+1639. Ventosa.
+
+1644. Ventrosa.
+
+1657. Viguera.
+
+1660. Villalba de Rioja.
+
+1676. Villalobar de Rioja.
+
+1695. Villanueva de Cameros.
+
+1709. Villar de Arnedo (El).
+
+1716. Villar de Torre.
+
+1721. Villarejo.
+
+1737. Villarroya.
+
+1742. Villarta-Quintana.
+
+1755. Villavelayo.
+
+1768. Villaverde de Rioja.
+
+1774. Villoslada de Cameros.
+
+1780. Viniegra de Abajo.
+
+1793. Viniegra de Arriba.
+
+1807. Zarratón.
+
+1814. Zarzosa.
+
+1835. Zorraquín.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

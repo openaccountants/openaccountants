@@ -1,0 +1,726 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 136 frá 8. september 1992 um meirvirðisgjald (Meirvirðisgjaldslógin), sum seinast broytt við løgtingslóg nr. 36 frá 15. mai 2026
+8. september 1992Nr. 136
+Løgtingslóg um meirvirðisgjald, sum seinast broytt við løgtingslóg nr. 36 frá 15. mai 2026
+(Meirvirðisgjaldslógin) 1)
+I. Vavið á avgjaldsskylduni.
+II. Virki, ið skulu rinda avgjald.
+III. Avgjaldsskylduga virðið.
+IV. Vavið á avgjaldsskyldugari sølu.
+V. Uppgerð av avgjaldsskyldugari sølu.
+VI. Avgjaldssatsurin.
+VII. Avgjaldið.
+VIII. Roknskaparreglur.
+IX: Avrokning av avgjaldinum.
+X. Avgjald av innflutningi úr útlondum.
+XI. Eftirlitsreglur.
+XII. Revisreglur.
+XIII. Aðrar reglur.
+XIV. Skiftis- og ígildissetanarreglur.
+§ 1. 2) Sambært hesi lóg skal avgjald rindast til landskassan í øllum liðum av vinnuligari sølu av vørum og tænastum og við innflutning úr útlondum.
+Stk. 2. 3) Avgjaldsøkið fevnir um føroyskt landøki, sjóumveldið og loftrúmið yvir nevndu økjum.
+I. Vavið á avgjaldsskylduni.
+§ 2. 4) 5) Avgjaldskyldan er galdandi fyri allar nýggjar og brúktar vørur. Gass, ravmagn, hiti og vatn eru at roknað sum vørur.
+2. stk. Avgjaldsskyldan er galdandi fyri allar tænastur, undantikið tær, sum eru nevndar í 3. stk.
+3. stk. Hesar tænastur eru undantiknar avgjaldsskylduni:
+a) Viðgerð á sjúkrahúsi, læknavirksemi, tannlækna- og annað dentalvirksemi, kiropraktik, fysioterapi og onnur verulig heilsurøkt.
+b) Almanna umsorgan og stuðul, herímillum vøggustovur, barnagarðar, frítíðarheim, vistarheim, umlættingarheim o.t. privatir ella almennir stovnar.
+c) Undirvísing í skúla ella á fróðskaparsetri, faklig útbúgving, herímillum endurútbúgving, og onnur frálæra, ið líkist skúla ella fakligari útbúgving. Undirvísing í máli, tónleiki, fimleiki, handarbeiði, tekning, bókhaldi og maskinskriving er at rokna sum sovorðin útbúgving.
+d) Mentunarligt virksemi, herímillum bókasøvn og forngripasøvn, o.t. Tó eru útvarps- og sjónvarpssendingar, sýning av sjónleiki og filmi, konsertir o.t. avgjaldsskyldug.
+e) 6) Ítróttur og ítróttartiltøk.
+f) 7) 8) Fólkaflutningur. Frítøkan fevnir ikki um annan vinnuligan fólkaflutning við bussi enn rutuflutning. Umframt fólkaflutning fevnir ásetingin eisini um flutning av akførum við skipum hjá Strandfaraskipum Landsins innanoyggja.
+g) 9) 10) Postflutningur, sum er fevndur av løgtingslóg um postvirksemi § 3, stk. 4 og § 4, stk. 2, nr. 1 og 5.
+h) 11) Útleiga, uppsiting og umsiting av fastari ogn. Tó er útleiga av kamari á hotelli, gistingarhúsi o.t. avgjaldsskyldug og útleiga av tjaldingarakfars- og reklamustaði.
+i) Tryggingarvirksemi.
+j) 9) 5) 10) Banka-, sparikassa-, postgiro- og fíggjarvirksemi og serligar elektroniskar tænastur, ið eru neyðugar fyri hetta virksemið, umframt útleigan av bankaboksum.
+k) Eydnuspæl og tílíkt.
+l) Rithøvunda- og tónaskaldavirksemi og annað listarligt virksemi.
+m) Tænastur beinleiðis í samband við jarðarferðir.
+n) 8) Virksemi sum ferðaleiðari, ferðamannastovuvirksemi og ferðamanna leiðbeiningarvirksemi og upplýsingarvirksemi.
+o) 5) Kommunal og privat vatnveiting.
+p) 10) Endurnýtsluhandil, har avlopið óskert verður nýtt til vælgerandi ella á annan hátt almannagagnlig endamál. Tað er ein fyritreyt, at handilin bert fevnir um brúktar vørur, sum fingnar eru ókeypis. Tað er somuleiðis ein fyritreyt, at tað bert starvast sjálvboðin og ólønt arbeiðsmegi við handlinum.
+4. stk. Landsstýrið kann áseta nærri treytir fyri tey undantøk frá avgjaldsskyldu, ið eru nevnd í 3. stk.
+5. stk. Landsstýrið kann áseta nærri reglur fyri frítøku frá avgjaldsskylduni í sambandi við tiltøk, hvørs yvirskot óskerd fara til vælgerandi endamál ella endamál, sum á annan hátt eru almannagagnlig.
+II. Virki, ið skulu rinda avgjald.
+§ 3. Avgjald skal rindast av:
+a) Tí, sum rekur sjálvstøðugt vinnuvirki við sølu av vørum og avgjaldsskyldugum tænastum.
+b) 12) Lutafeløgum og øðrum feløgum, herímillum Føroya Jarðagrunni, hóast felagið bert selur til limir ella bert selur vørur og tænastur hjá limum.
+c) Almennum veitingarvirkjum, sum selja vørur og avgjaldsskyldugar tænastur.
+d) Øðrum ríkis-, lands- ella kommunalum stovnum, í tann mun teir selja vørur og avgjaldsskyldugar tænastur í kapping við vinnurekandi virki.
+e) Tí, sum skipar fyri uppboðssølum.
+f) 6) Søla av rúsandi løgi og søla av medisini, sjálvt um søla av tílíkum vørum ikki verður framd í kapping við privat virki.
+2. stk. 3) 13) 14) 15) Í samráð við Føroya Kærustovn, avger landsstýrið, í hvønn mun vinnurekandi virki og feløg skulu rinda avgjald av vørum og avgjaldsskyldugum tænastum, tá tær bert verða framleiddar ella gjørdar til egna nýtslu hjá virkinum ella felagnum, og í hvønn mun kommunur kunnu fáa endurgoldið avgjald sambært hesi lóg av vørum og avgjaldsskyldugum tænastum.
+3. stk.4) 5) Veitingar av gassi, ravmagni, hita og vatni sum liður í útleigu av húsi ella húsarúmi hava ikki við sær skyldu at rinda avgjald.
+4. stk. Søla av egnum listaverki av tí slagnum, ið hoyrir undir vøruflokk 9701-9703 í toll- og vøruskránni hevur ikki við sær skyldu at rinda avgjald.
+5. stk. Servering og útleiga av kamari á skúlum og skeiðvirksemi í sambandi við egna frálæru hevur ikki við sær skyldu at rinda avgjald.
+§ 3 a. 16) 17) Felagsskapir, stovnar og grunnar, ið gera íløgur fyri meira enn kr. 1 mió., meir­virðisgjald ikki íroknað, kunnu eftir umsókn fáa endurgoldið inngangandi meirvirðisgjald av samlaða íløgukostnaðinum.
+Stk. 2. 18) Fyri at fáa endurgoldið meirvirðisgjaldið sambært stk. 1, skal:
+1) talan verða um ikki vinnuligt, almannagagnligt frítíðarvirksemi, har í minsta lagi 33% av samlaða íløgukostnaðinum, meirvirðisgjald ikki íroknað, er fingin til vegar sum gáva ella við óløntum og sjálvbodnum arbeiði, sjálvbodnari innsavnan, undir hesum vanligum og staðbundnum kirkjuskatti,
+2) arbeiðið, sum meirvirðisgjald kann verða endurgoldið fyri, vera byrjað eftir 1. januar 2013 og endað í seinasta lagi 5 ár eftir, at umsókn er góðkend, og
+3) 19) 20) umsókn um endurgjald fyri inngangandi meirvirðisgjald vera móttikin av TAKS í seinasta lagi 31. desember 2027.
+Stk. 3. Landsstýrismaðurin ásetir í kunngerð nærri treytir og reglur um at fáa endurgoldið inngangandi meirvirðisgjald sambært stk. 1.
+§ 3 b. 17) Tann, sum byggir/umbyggir bygning til leigubústaðir, fyri meira enn kr. 200.000,-, meirvirðisgjald ikki íroknað, kann eftir umsókn fáa endurgoldið inngangandi meirvirðisgjald av byggikostnaðinum.
+Stk. 2. Fyri at fáa endurgoldið meirvirðisgjaldið sambært stk. 1 skal:
+1) í minsta lagi vera talan um 2 leigubústaðir í hvørjari byggiverkætlan, harav í minsta lagi 10%, tó minst ein bústaður, skal verða atkomiligur og kunna nýtast av fólki í koyristóli,
+2) matrikkulnummarið, har leigubústaðirnir verða bygdir/umbygdir, ikki innihalda lán, har rentustuðul verður veittur fyri rentur sbrt. løgtingslóg um stuðul til rentuútreiðslur av lánum,
+3) arbeiðið, sum meirvirðisgjald kann verða endurgoldið fyri, vera byrjað eftir 1. januar 2012 og endað í seinasta lagi 5 ár eftir, at TAKS hevur móttikið umsóknina, og
+4) 19) 20) 21) 22) TAKS hava móttikið umsóknina um endurgjald fyri inngangandi meirvirðisgjald í seinasta lagi 31. desember 2030.
+Stk. 3. Um leigubústaðirnir ikki longur verða nýttir sum leigubústaðir, ella um tað vísir seg, at leigubústaðirnir ikki eru bygdir í samsvari við treytirnar og reglurnar fyri at fáa meirvirðisgjaldið endurgoldið, skal endurgoldna meirvirðisgjaldið rindast aftur í landskassan eftir ásetingunum í kapitli 7 í kunngerð um lutfalsligan frádráttarrætt fyri meirvirðisgjald og um javnan av inngangandi avgjaldi av íløgugøgnum.
+Stk. 4. Landskassin fær tinglýst veðskuldar­bræv, fyri rokning eigarans, í hvørjari einstakari leigubústaðarverkætlan, samsvarandi við samlaða virðið av endurgoldna meirvirðisgjaldinum fyri viðkomandi byggiverkætlan.
+Stk. 5. Landsstýrismaðurin ásetir í kunngerð nærri treytir og reglur fyri at fáa endurgoldið inngangandi meirvirðisgjald.
+§ 3 c. 1) 21) 23) Tann, sum keypir motorakfar, sum er fevnt av løgtingslóg um avgjøld við skráseting av motorakførum, sum bert nýtir ravmagn ella vetni til framdrátt, kann eftir umsókn fáa part av meirvirðisgjaldinum endurgoldið.
+Stk. 2. 21) 23) Í 2023 og 2024 verða í mesta lagi kr. 70.000 endurgoldnar, í 2025 verða í mesta lagi kr. 52.500 endurgoldnar, í 2026 verða í mesta lagi kr. 35.000 endurgoldnar, og í 2027 vera í mesta lagi kr. 17.500 endurgoldnar eftir hesi grein. Í 2028 og fylgjandi ár verður meirvirðisgjald ikki endurgoldið.
+Stk. 3. 23) Fyri plug-in hybridakfør, PHEV verða til 31. august 2023 í mesta lagi kr. 35.000 endurgoldnar. At rokna frá 1. september 2023 verður meirvirðisgjald ikki endurgoldið.
+Stk. 4. 24) 21) 23) 18) Fyri at fáa endurgoldið meirvirðisgjald eftir hesi grein skal plug-in hybridakfarið vera skrásett í seinasta lagi 31. august 2023. Ravmagnsakfarið ella vetnisakfarið skal verða skrásett í seinasta lagi 31. desember 2027.
+§ 3 d.25) 21) 26) Tey, sum gera íløgur í góðkendar hitapumpuskipanir til upphiting og heitt vatn í sethúsum og bygningum, kunnu eftir umsókn fáa endurgoldið part av meirvirðisgjaldinum av íløgukostnaðinum til hitapumpu, útbúnað og arbeiðsløn. Í 2024 verður alt meirvirðisgjaldið endurgoldið. Í 2025 verða 75% av meirvirðisgjaldinum endurgoldin, í 2026 verða 50% av meirvirðisgjaldinum endurgoldin, og í 2027 verða 25% av meirvirðisgjaldinum endurgoldin. Í 2028 og fylgjandi ár verður meirvirðisgjald ikki endurgoldið. Fyri at koma undir endurgjaldsstigið eitt ávíst ár, er tað ein treyt, at arbeiðið er gjørt og goldið tað árið.
+Stk. 2. Meirvirðisgjald verður einans endurrindað fyri hitapumpuna og fyri arbeiði og útbúnað, ið skal til fyri at taka orkuna úr umhvørvinum. Meirvirðisgjaldið verður ikki endurrindað fyri útbúnað, ið gongur frá hitapumpuni til hitaskipanina inni í sethúsi ella bygningi.
+Stk. 3.27) 21) 26) Fyri at fáa endurrindað meirvirðisgjaldið sbrt. stk. 1, skal:
+1) talan vera um sethús ella bygningar, har hitapumpa letur í minsta lagi 80% av samlaðu nýtsluni til upphiting og heitt vatn, og restin av nýtsluni eisini er grundað á el,
+2) móttøkuváttan frá IRF ella Kommunalu Brennistøðini um burturbeining av oljufýrsútbúnaði fylgja við umsóknini, tá talan er um uppsetan av hitapumpuskipan í hús og bygningar, sum áður hava brúkt oljufýrsútbúnað til upphiting.
+3) umsóknin á serskildum oyðublaði við kvittanum fyri goldnu íløguútreiðslurnar til hitapumpu, útbúna og løn, umframt váttan upp á treytirnar, settar í nr. 1), 5) og stk. 4, verða góðkendar og váttaðar av Umhvørvisstovuni,
+4) samlaðu útreiðslurnar verða hildnar í seinasta lagi 31. desember 2027,
+5) góðkend umsókn um endurrindan av meirvirðisgjaldi vera TAKS í hendi í seinasta lagi 31. mars 2028 og
+6) arbeiðið at installera hitapumpuskipanina vera gjørt av góðkendum installatøri, og um talan er um jarðhitaskipan, skal arbeiðið harumframt vera gjørt av góðkendum brunnborara, sbrt. løgtingslóg um el riknar hitapumpuskipanir.
+Stk. 4. Meirvirðisgjald verður bert endurrindað fyri hitapumpur, sum eru góðkendar sbrt. Bygningskunngerðini.
+§ 4. 10) 28) Tann, sum hevur eina árliga sølu av vørum og tænastum, ið er minni enn 50.000 kr., skal ikki rinda avgjald sambært § 3.
+2. stk. Landsstýrið kann áseta reglur, soleiðis at onnur virki verða frítikin fyri at rinda avgjald sambært § 3.
+§ 5. 3) 7) 29) 8) Tann, sum sambært §§ 3-4 skal rinda avgjald, skal fráboða virki sítt til skrásetingar hjá TAKS. Hetta er eisini galdandi fyri útlendsk virki. Hevur eitt virki ikki deild ella tílíkt her á landi, skal tað skrásetast við persóni, ið er búsitandi her á landi, ella við virki, sum hevur sølustað her á landi. Síðsta punktum er ikki galdandi í tann mun annað er ásett í sáttmála frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landstýri hinumegin (Hoyvíkssáttmálanum).
+2. stk. Hevur viðkomandi fleiri virki, skulu hesi fráboðast til skrásetingar undir einum. Verður roknskapur førdur fyri hvørt virki sær, kunnu virkini kortini eftir áheitan verða skrásett hvørt sær.
+3. stk. Skrásetingarskyldug virki, sum ikki hava sama ánara, kunnu eftir áheitan verða skrásett undir einum.
+4. stk. Virki, sum verða skrásett undir einum, eru at rokna sum eitt virki.
+5. stk. 30) 31) Fráboðan til skrásetingar skal fara fram í seinasta lagi 8 dagar, áðrenn virksemi byrjar, jb. tó § 23 b, stk. 2. Broytingar í ánaraviðurskiftum, leiðsluábyrgd ella staði skulu fráboðast, áðrenn 8 dagar eftir, at broytingin er farin fram.
+6. stk. Skrásett virki fáa útflýggjað prógv um skráseting.
+§ 6. Landsstýrið kann áseta reglur um skráseting eftir áheitan frá virkum, sum selja aðrar tænastur enn tær, ið sambært § 2 eru avgjaldsskyldugar (sjálvboðin skráseting).
+2. stk. Virki, ið eru sjálvboðin skrásett, skulu rinda avgjald av sølu av tænastum, sum eru umfevndar av sjálvbodnu skrásetingini.
+3. stk. Sjálvboðin skráseting kann í fyrsta lagi halda uppat 2 ár eftir skrásetingina.
+III. Avgjaldsskylduga virðið.
+§ 7. Við sølu av vørum og avgjaldsskyldugum tænastum er avgjaldsskylduga virðið, samsýningin, ikki íroknað avgjaldið sambært hesi lóg.
+2. stk. 32) Við í avgjaldsskylduga virðið skal roknast:
+a) Tey avgjøld sambært øðrum avgjaldslógum, sum eru uppkravd í undanfarnum søluliðum, ella sum skulu rindast í sambandi við innflutning úr útlondum, ella sum eitt virki hevur skyldu at gjalda í sambandi við viðkomandi sølu, tó ikki serligt avgjald á brenniolju, sambært løgtingslóg nr. 179 frá 18. desember 1992 um serligt avgjald á brenniolju.
+b) Tær útreiðslurnar til pakking, sending, trygging og tílíkt, sum eru við í prísinum, ella sum latarin krevur serstakt gjald fyri frá móttakaranum.
+c) Íbindingar- og stovningargjald og aðrar upphæddir, sum latarin krevur frá móttakaranum sum treyt fyri, at vørur og avgjaldsskyldugar tænastur kunnu verða latnar.
+d) Umboðsløn o.t. og uppboðssøluløn.
+e) Kassaavsláttur og annar avsláttur, ið er treytaður av krøvum, sum ikki eru lokin við latingina (faktureringina).
+f) Ískoyti til avgjalding og fígging o.t.
+3. stk. Rentur, ið vera roknaðar av tí til eina og hvørja tíð skylduga partinum av keypspeninginum, kunnu haldast uttan fyri avgjaldsskylduga virðið, treytað av at tað er ávíst í keypssáttmálanum ella fylgiskjali viðvíkjandi gjalding, hvussu stórur partur rentan er av hvørjari einstakari gjalding.
+§ 8. Fyri vørur og avgjaldsskyldugar tænastur, sum verða brúktar av handhavanum av virkinum, er avgjaldsskylduga virðið keypsprísurin ella framleiðsluprísurin, ikki íroknað avgjaldið sambært hesi lóg, javnber tó 3. stk. Sama er galdandi fyri vørur og avgjaldsskyldugar tænastur, sum verða brúktar til endamál, sum ikki viðvíkja sølu av vørum og avgjaldsskyldugum tænastum hjá virkinum, ella til endamál, sum nevnt í § 16, 3. stk. Við í avgjaldsskylduga virðið skulu roknast avgjøld, sum nevnt í § 7, 2. stk. punkt a. Hevur virki sjálvt innflutt vørurnar frá útlondum, verður eitt sambært reglunum í § 27, 2. stk. ásett virði við møguligum tolli løgdum aftrat, roknað sum keypsprísurin.
+2. stk. Fyri vørur og avgjaldsskyldugar tænastur, sum heilt ella fyri ein part verða latnar móti aðrari gjalding enn við peningi (býtishandil), er avgjaldsskylduga virðið vanligi prísurin hjá virkinum við sølu av viðkomandi vøru ella tænastu. Er eingin slíkur vanligur søluprísur, er avgjaldsskylduga virðið ein roknaður søluprísur, sum skal fevna um allar útreiðslur og vinning, sum vanliga verða roknað við í avgjaldsskylduga virðið fyri vørur ella tænastur av viðkomandi slagi.
+3. stk. Fyri vørur og avgjaldsskyldugar tænastur, sum eitt virki nýtir við bygging av fastari ogn til nýtslu hjá handhavanum av virkinum, verður avgjaldsskylduga virðið ásett á tann hátt, sum er nevndur í 2. stk. Sama er galdandi fyri vørur og avgjaldsskyldugar tænastur, sum virkið brúkar við bygging av fastari ogn fyri egna rokning, tá ið ognin skal nýtast til endamál, sum ikki viðvíkja keypi og sølu hjá virkinum av vørum og avgjaldsskyldugum tænastum, herímillum til sølu ella útleigu, ella til endamál sum nevnt í § 16, 3. stk.
+§ 9. Eru felags áhugamál millum lataran og móttakaran av vørum og avgjaldsskyldugum tænastum, t.d. soleiðis, at annar er búskaparligt áhugaður í virki ella ogn hjá hinum partinum, kann landsstýrið krevja, at avgjaldsskylduga virðið skal ásetast á tann hátt, sum er ásettur í § 8, 2. stk.
+2. stk. Fyri bólkar av virkjum kann landsstýrið áseta fyridømispeninganøgd, sum vørur og avgjaldsskyldugar tænastur, ið vera nýttar sum nevnt í § 8, 1. stk., kunnu avgjaldsavgreiðast sambært. Í førum tá ið avgjaldsskylduga virðið verður ásett eftir eini útrokning, kunnu somuleiðis ásetast reglur um avgjaldsavgreiðslu sambært fyridømispeninganøgd.
+§ 10. 33) 34) Tá brúktir bátar, persónmotorakfør og vøru- og lastmotorakfør verða seld, kann sølumaðurin – tá avgjaldið ikki er fakturerað sambært hesi lóg við útflýggjan til sølumannin – avgjaldsavgreiða vøruna, grundað á eitt avgjaldskyldugt virði, sum er 80% av muninum millum keypsprísin og søluprísin, avgjaldið íroknað. Fer søluprísurin ikki upp um keypsprísin, verður einki avgjald roknað.
+Stk. 2.35) 24) 36) 21) 37) Fyri motorakfør, sum eru skrásett sum leiguakfør, har meirvirðisgjald ikki er fakturer að til endabrúkaran, skulu virki við sølu av motorakførunum avgjaldsavgreiða hesi eftir søluprísinum frádrigið ein prosentpart av skrá setingargjaldinum. Prosentparturin er 90% fyri motorakfør, sum hava verið skrásett minni enn 1 ár. Prosentparturin lækkar síðani við 10 pro sentstigum árliga inntil hann er 0% prosentstig 10. árið. Fyri motorakfør, nýtt til skúlakoyring, kann reglan í stk. 1 verða nýtt, um so er, at akfarið hevur verið nýtt til skúlakoyring í minsta lagi 6 mánaðir.
+3. stk. Verður avgjaldið roknað sambært grundarlagnum, í 1. ella 2. stk., má hvørki avgjaldsupphæddin ella nakað annað, sum ger tað møguligt at rokna avgjaldsupphæddina, vera nevnt í fakturanum fyri viðkomandi sølu.
+4. stk. Sum brúkt akfør eru at rokna akfør, sum, tá ognað verður, eru ella hava verið skrásett her á landi, javnber ferðslulógina.
+IV. Vavið á avgjaldsskyldugari sølu.
+§ 11. Avgjaldsskyldug søla hjá skrásettum virkjum fevnir um latingar móti gjalding og vørur og avgjaldsskyldugar tænastur, sum eru framleiddar ella umboðaðar á virkinum, og sum verða tiknar í nýtslu av handhavanum á virkinum. Harumframt fevnir avgjaldsskyldug søla um vørur og avgjaldsskyldugar tænastur, ið vera tiknar í nýtslu til endamál, sum ikki viðvíkja sølu av vørum og avgjaldsskyldugum tænastum hjá virkinum, ella til endamál sum nevnd í § 16, 3. stk.
+2. stk. Avgjaldsskyldug søla á ríkis-, lands- ella kommunalum stovnum av tí slagnum, sum er nevnt í § 3, 1. stk., punkt d, fevnir einans um latingar móti gjalding til annan enn viðkomandi ríkis-, lands- ella kommunalan stovn, ella tær kommunur, sum eru partaeigarar í stovninum.
+3. stk. Við í avgjaldsskylduga sølu skal roknast søla v.m. av vørum, sum virkið hevur móttikið í umboðssølu ella søluumboði.
+4. stk. Søla v.m. av maskinum og øðrum rakstarargøgnum hjá virkinum verður roknað við í avgjaldsskylduga sølu. Sama er galdandi fyri vørugoymslu, maskinur og onnur rakstrargøgn, tá virkið frámeldar frá skráseting.
+§ 12. 37) Avgjaldsskyldug søla fevnir ikki um:
+a) Vørur, sum av virkinum verða útfluttar til útlond, og tænastur, sum verða gjørdar í útlondum.
+b) Flutning av vørum her á landi, tá flutningurin fer fram beinleiðis til ella frá útlondum.
+c) Arbeiðstænastur á vørur, tá tænastan verður gjørd fyri útlendska rokning, og virkið eftir viðgerina útflytir vørurnar til útlond, og konstruktión og skapan av vørum fyri útlendska rokning, tá framleiðslan av vørunum skal fara fram uttanlands.
+d) Prosjekteringsarbeiði v.m. viðvíkjandi bygningum og aðrari fastari ogn uttanlands.
+e) Neyðuga útgerð, sum verður latin til nýtslu um borð á flogfari og skipi í uttanlandsferðslu (undantikið sportsflogfør og lystfør), og tænastur, sum verða gjørdar fyri slík flogfør og skip.
+f) Sølu og útleigu av flogførum og av skipum, sum eru 5 GT og meira, undantikið sportflogfør og lystfør.
+g) Umvælingar-, viðlíkahalds- og ísetingararbeiði av fastari útgerð í tey flogfør og skip, sum eru nevnd í punkt f, og tilfar, sum er latið av viðkomandi virki í hesum sambandi.
+h) 26) Søla av tíðindabløðum, undir hesum talgildum tíðidabløðum, og prenting fyri tíðindabløð.
+i) 4) 9) 38) Søla av fiski og skeljadýrum, lindýrum og øðrum ryggleysum vatndýrum (jbr. 3. kap. í Toll- og vøruskránni) og sølu av ídnaðarfiski (sbr. vørunummar 0511.91.10 og vørunummar 0511.91.90 í Toll- og vøruskránni) frá skipi og/ella alibrúki til útflutningsfyritøkur, og útflutningsfyritøkur ímillum. Sum útflutningsfyritøkur eru at skilja fyritøkur, hvørs søla beinleiðis ella óbeinleiðis í høvuðsheitum er til útlandið.
+j) 11) 39) Útleigan av kamari á hotelli, gistingarhúsi o.tíl. og útleigan av kampingplássi.
+k) 12) 40) 32) 41) Fiskireiðskapur til skip sum eru yvir 20 GT, og tey sum eru undir 20 GT, ið hava ,“Veiðiloyvi A”. Fiskireiðskapur, sjóklæði, agn, ísur, olja, proviantur, salt, pakkitilfar, kassaleiga, havnagjøld og uppboðssøluavgjøld til fiskifør, sum reka vinnuligan fiskiskap, harumframt søla av kvotum, fiskidøgum og -loyvum.
+l) 42) 38) Kringvarpsgjald.
+m) Reseptskyldugan heilivág til fólk.
+n) Útleigu av festum og tilhoyrandi ognum hjá Føroya Jarðaráði.
+o) 43) Gjald fyri ferðing og flutning gjøgnum tunlar, eftir brúgvum og vegum, sum hava samband við almenna vegakervið.
+p) 44) Søla og umvæling av føroyskum træbátum.
+q) 14) Pengaseðlar og myntir.
+r) 14) Frímerkir.
+s) 45) Sølu av bókum, ið hoyra undir vørunummur 49011000, 49019100, 49019900 og 49040000 í toll- og vøruskránni.
+t) 45) Sølu av ljóðbókum, ið hoyra undir vørunummar 85234919 í toll- og vøruskránni.
+u) Sølu av eplum og grønmeti, ið koma undir vørunumrini 0701.10.00 til og við 0714.90.90 og av blæum til børn, ið koma undir vørunumrini 9619.00.50 og 9619.00.81.
+v) 46) Sølu av bensin og diesel fram til og við 31. juli 2026, ið koma undir vørunumrini 2710.12.41, 2710.12.45, 2710.12.49, 2710.12.50, 2710.19.43 og 2710.19.46 í Toll- og Vøruskránni
+Stk. 2. 47) 48) Landsstýrismaðurin kann áseta nærri treytir fyri nýtslu av stk. 1 og gera av, at vørur og tænastur, sum verða gjørdar fyri útlendska rokning, í øðrum førum kunnu haldast uttan fyri avgjaldsskylduga sølu. Landsstýrismaðurin kann eisini gera av, at onnur en TAKS kunnu fáa loyvi at avgreiða ferðagóðs til útflutnings, og í hesum sambandi at átekna faktura ella tax-free kekkar
+3. stk. Landsstýrið kann áseta, um og í hvønn mun vistir, sum verða latnir skipum ella flogførum til nýtslu um borð ella til sølu til ferðafólk v.m., kunnu haldast uttan fyri avgjaldsskylduga sølu.
+4. stk. Við í avgjaldsskylduga sølu skal ikki roknast søla av vørum, sum burturav eru fingnar ella tiknar í nýtslu til tey endamál, sum eru nevnd í § 16, 3. stk.
+5. stk. 8) Avhending av vørugoymslu, maskinum og øðrum rakstargøgnum kann ikki roknast við í avgjaldsskylduga sølu, tá avhendingin fer fram sum liður í eini avhending av virkinum ella einum parti av hesum, og nýggi handhavin rekur skrásett virki. Virkið skal innan 8 dagar eftir avhendingina geva TAKS fráboðan um navn og bústað hjá nýggja handhavanum og um søluprísin á vørugoymslu, maskinum og øðrum rakstrargøgnum, ið verða avhendað.
+6. stk. 45) (Strikað).
+V. Uppgerð av avgjaldsskyldugari sølu.
+§ 13. Avgjaldsskyldug søla hjá einum virki í einum avgjaldstíðarskeiði verður uppgjørd sum samlaða avgjaldsskylduga virðið á teimum latingum av vørum og avgjaldsskyldugum tænastum, sum eru farnar fram innan tíðarskeiðið.
+2. stk. Fylgir fakturi fyri eina lating, er faktureringin at rokna sum lating, í tann mun fakturering fer fram innan ella skjótast aftaná at latingin er endað.
+3. stk. 33) Fer gjaldingin heilt ella partvís fram, áðrenn latingin er endað, ella áðrenn fakturin verður givin út, skulu 80,0% av upphæddini roknast við í avgjaldsskylduga sølu fyri tað avgjaldstíðarskeiðið, sum gjaldingin er farin fram í.
+4. Stk. Vørur, sum verða latnar í umboðssølu ella søluumboði, kunnu annaðhvørt verða roknaðar við í avgjaldsskylduga sølu í tí tíðarskeiði, tá ið útflýggjanin fer fram, ella sølu í tí tíðarskeiði, tá ið avrokningin við umboðssølumannin ella søluumboðsmannin fer fram. Í seinast nevnda føri má fakturi sambært § 17 ikki verða givin út, fyrr enn avrokning fer fram.
+5. stk. 33) Við uppgerð av avgjaldsskyldugari sølu kunnu verða frádrigin 80,0% av upphæddum, sum eru endurrindaðar viðskiftafólki fyri vørur, sum virki hevur fingið aftur.
+6. stk. 33) Við uppgerð av avgjaldsskyldugari sølu kunnu 80,0% verða frádrigin av staðfest um tapi av krøvum viðvíkjandi latnum vørum og avgjaldsskyldugum tænastum. Verða krøvini seinni heilt ella partvís goldin, skulu 80,0% av móttiknu upphæddunum roknast við í avgjaldsskyldugu søluna, uttan so at gjaldingin fæst sambært § 96 í konkurslógini.
+7. stk. Við uppgerð av avgjaldsskyldugari sølu kunnu kassaavsláttur og annar avsláttur, sum er treytaður av krøvum, sum ikki eru lokin við latingina, verða drigin frá, um so er, at avslátturin seinni verður effektivur, og treytað av, at avslátturin er veittur einum skrásettum virki, sum kann rokna avgjaldið við fyri viðkomandi lating við uppgerð av sínum inngangandi avgjaldi, javnber § 15, 3. stk. Frádrátturin er treytaður av, at kreditnota verður útflýggjað fyri veittan avsláttur, har avgjaldið er tilskilað, javnber § 17, 1. og 2. stk.
+8. stk. Vørur og avgjaldsskyldugar tænastur, ið verða nýttar av handhavanum á virkinum, verða roknaðar við í avgjaldsskylduga sølu í tí avgjaldstíðarskeiðinum, tá tær eru tiknar í nýtslu. Sama er galdandi fyri vørur og avgjaldsskyldugar tænastur, sum verða nýttar til endamál, sum ikki viðvíkja sølu hjá virkinum av vørum og avgjaldsskyldugum tænastum, ella til endamál, sum nevnt í § 16, 3. stk.
+9. stk. 7) Virki, ið keypa mjólk frá bóndum, skulu ikki rokna upphæddir, sum stava frá sølu av mjólk og mjólkavørum til skrásettar smásølur ella til skrásett virki, ið skulu brúka vørurnar til víðari framleiðslu, við í avgjaldsskyldugu søluna.
+VI. Avgjaldssatsurin.
+§ 14. 33) Avgjaldið er 25% av avgjaldsskyldugu søluni.
+VII. Avgjaldið.
+§ 15. Skrásett virki skulu fyri hvørt avgjaldstíðarskeið gjalda landskassanum munin millum útgangandi og inngangandi avgjald, javnber § 20. Er inngangandi avgjaldið fyri eitt avgjaldstíðarskeið størri enn útgangandi avgjaldið fyri sama tíðarskeið, fær virkið munin endurrindaðan sambært reglunum í § 24.
+2. stk. Útgangandi avgjaldið í einum avgjaldstíðarskeiði er avgjaldið av avgjaldsskyldugari sølu í tíðarskeiðinum, javnber V. kapittul.
+3. stk. Inngangandi avgjaldið er avgjaldið sambært hesi lóg av keypi v.m. hjá einum virki av vørum og avgjaldsskyldugum tænastum til nýtslu hjá virkinum, javnber tó § 16.
+4. stk. Inngangandi avgjaldið í einum avgjaldstíðarskeiði er tað avgjaldið, sum í tíðarskeiðinum er fakturerað til eitt virki av latarunum, og tað avgjaldið, sum sambært § 27 er álagt teimum vørum, sum virkið í tíðarskeiðinum hevur innflutt úr útlondum.
+§ 16. Við í inngangandi avgjaldi verður bert roknað avgjald av innkeypi v.m., ið burturav viðvíkur sølu av vørum og avgjaldsskyldugum tænastum.
+2. stk. Landsstýrið kann áseta reglur, soleiðis at nærri ásettir partar av inngangandi avgjaldi kunnu roknast av keypum v.m., ið ikki burturav viðvíkja sølu av vørum og avgjaldsskyldugum tænastum. Landsstýrið kann harumframt áseta reglur um regulering av frádrátti fyri inngangandi avgjald, tá íløgugøgn, herímillum føst ogn, gerast nýtsla, sum ber eina broyting við sær í rættinum til frádrátt. Regulering kann fara fram upp til 5 ár, fyri fasta ogn upp til 10 ár, eftir at íløgugøgnið er útvegað.
+3. stk. 9) Við í inngangandi avgjald kann ikki roknast avgjald av keypi v.m., sum viðvíkur:
+a) Mati til handhava og starvsfólkið á virkinum, undantikið vistir til fiskifør yvir 5 GT.
+b) Útvegan og rakstur av íbúð fyri handhava og starvsfólk á virkinum.
+c) Naturaliusamsýning til starvsfólkið á virkinum.
+d) Útvegan og rakstri av vøggustovu, barnagarði, frítíðarheimi, feriuheimi, summarhúsi o.t. fyri starvsfólkið á virkinum.
+e) Gávum.
+4. stk. Ríkis-, lands- og kommunalir stovnar av tí slagnum, sum eru nevndir í § 3, 1. stk. punkt d, kunnu einans rokna keyp v.m., sum viðvíkur tí partinum av sølu, sum er avgjaldsskyldugur, við í inngangandi avgjaldið. Hevur stovnurin sølu til útlond v.m. javnber § 12, 1.-4. stk., kann avgjaldið av keypi viðvíkjandi hesum parti av sølu eisini roknast við í inngangandi avgjaldið.
+5. stk. Verða vørur v.m., sum verða nýttar av handhavanum á virkinum, roknaðar við í avgjaldsskylduga sølu hjá virkinum sambært § 11, 1. stk., kann avgjaldið av keypunum roknast við í inngangandi avgjaldið. Sama er galdandi fyri vørur og avgjaldsskyldugar tænastur, ið verða nýttar til endamál, sum ikki viðvíkja sølu hjá virkinum av vørum og avgjaldsskyldugum tænastum, ella til endamál sum nevnt í 3. stk.
+6. stk. 9) (Strikað).
+VIII. Roknskaparreglur.
+§ 17. 33) Fyri eina og hvørja lating av vørum ella avgjaldsskyldugum tænastum frá einum skrásettum virki skal fakturi útflýggjast móttakaranum. Verður kravt at ein partur av einari samlaðari lating verður goldin, áðrenn latingin er endað, skal serstakur fakturi útflýggjast fyri henda partin. Fakturin skal innihalda útflýggingardagfesting og upplýsing um navn og bústað hjá lataranum og hjá móttakaranum og slag, rúmd og prís á latingini. Harumframt skal støddin á avgjaldsupphæddini verða tilskilað á fakturanum, ella tað skal vera skilligt, at avgjaldið er 20,0% av samlaða gjaldinum fyri avgjaldsskyldugu latingina. Latarin skal tilskila støddina á avgjaldsupphæddini á fakturanum, um so er, at móttakarin er eitt skrásett virki, ið biður um hetta. Latarin skal umframt hetta eftir áheitan frá einum tílíkum móttakara tilskila prísin, ikki íroknað avgjald, fyri teir einstøku postarnar á fakturanum.
+2. stk. Fer aftursending av vørum fram, aftaná at fakturin er útflýggjaður, skal kreditnota útflýggjast. Sama er galdandi, um latarin, aftaná at fakturin er útflýggjaður, veitir frádrátt í prísinum á latingini, og avslátturin ikki er avsláttur sambært § 7, 2. stk., punkt e. Fer eftirgjalding fram, skal ein eftirgjaldsfakturi útflýggjast.
+3. stk. Skylda at útflýggja faktura verður mett sum lokin, tá móttakarin av avgjaldsskyldugu latingini gevur lataranum avrokningarskjal, sum lýkur tær treytir, ið eru ásettar í 1. stk. um fakturar.
+4. stk. Tá eitt skrásett virki letur vørur ella avgjaldsskyldugar tænastur til eitt annað skrásett virki móti heilari ella partvís gjalding við vørum ella avgjaldsskyldugum tænastum (býtishandil), er tað nóg mikið, um annar av pørtunum útflýggjar faktura, um so er, at hann eisini inniheldur upplýsing um slag, rúmd og prís fyri tað, sum er móttikið í býtinum. Kunnu báðir partar til fulnar rokna avgjaldið av tí, teir hava móttikið, við í inngangandi avgjald, kann avgjaldið roknast grundað á munin millum gjøldini.
+5. stk. Tvítøk av fakturum og kreditnotum og móttikin avrokningarskjøl skulu goymast av lataranum.
+6. stk. Fevnir ein fakturi (avrokningarskjal) bæði um avgjaldsskyldugar og avgjaldsfríar latingar, skal tað vera skilligt á fakturanum, hvørjar latingar eru avgjaldsskyldugar. Tílíkar latingar skulu tilskilast hvør sær við serstakari samanteljing.
+7. stk. Sambært nærri reglum ásettar av landsstýrinum, kunnu frávik gerast í reglunum í 1. stk. um innihald á faktura viðvíkjandi flutningstænastu og sølu frá marknaðarsølu o.t.
+8. stk. Við sølu til privatar brúkarar er ikki neyðugt at útflýggja faktura sambært reglunum í 1. stk. Smásølur og onnur virki, hvørs søla einans fer fram til privatar brúkarar, kunnu eisini lata vera við at útflýggja faktura fyri aðra sølu, undantikið tá móttakarin er eitt skrásett virki, ið biður um faktura.
+9. stk. Virki, ið ikki er skrásett, mugu ikki tilskila avgjaldsupphæddina á faktura ella á annan hátt tilskila, at avgjald er roknað við í upphæddina á fakturanum. Móttekur eitt ikki skrásett virki eitt avrokningarskjal, har avgjaldsupphædd er tilskilað, ella har tað á annan hátt er tilskilað, at avrokningin er íroknað avgjald, skal virkið boða tí, sum hevur útflýggjað avrokningarskjalið, frá hesum og afturrinda møguliga móttikna avgjaldið.
+10. stk. Virki, sum móti 9. stk., 1. punktum, tilskila avgjaldsupphædd á einum faktura ella á annan hátt tilskila, at avgjald er roknað við í upphæddina á fakturanum, skulu gjalda avgjaldsupphæddina til landskassan. Sama er galdandi, um eitt skrásett virki á einum faktura tilskilar avgjald við ov stórari upphædd ella á einum faktura fyri latingar, sum ikki eru avgjaldsskyldugar, tilskilar avgjaldsupphædd ella á annan hátt tilskilar, at avgjald er roknað við í upphæddina á fakturanum. Verður mistakið rættað yvir fyri keyparanum, er inngjalding tó ikki neyðug.
+11. stk. Við prístilskilan fyri vørur og avgjaldsskyldugar tænastur skal týðiliga gerast vart við, at avgjald sambært hesi lóg ikki er roknað við í prísin.
+§ 18. Skrásett virki skulu føra roknskap yvir keyp og sølu av vørum og avgjaldsskyldugum tænastum, sum kann vera grundarlag fyri uppgerð av avgjaldsskylduni fyri hvørt avgjaldstíðarskeið og fyri eftirlitið við rættari greiðslu av avgjaldinum.
+2. stk. Roknskapurin skal innihalda serstøk konti, sum vísa støddina á inngangandi og útgangandi avgjaldinum. Avgjaldskontiini kunnu førast við tíðarposteringum, um avgjaldsupphæddirnar beinleiðis kunnu roknast grundað á roknskapskontiini yvir keyp og sølu av vørum og avgjaldsskyldugum tænastum.
+3. stk. 8) Virki, ið ikki føra vanligar handilsbøkur, ella hvørs handilsbøkur ikki verða førdar samsvarandi 1. og 2. stk., skulu føra roknskap í einum serligum roknskaparhefti, sum verður útflýggjað av TAKS.
+4. stk. 8) Til skjals fyri inngangandi avgjaldið skulu skrásett virki kunna leggja fram fakturar (avrokningarskjøl), ið lúka tær treytir, ið eru nevndar í § 17, 1. stk. javnber 4. og 7. stk., ella fráboðanir frá TAKS um støddina á tí avgjaldi, ið sambært § 27 er álagt vørum, sum virki hevur innflutt úr útlondum. Fakturar, upp á hægst 200 kr., ið eru útgivnir av smásølum ella øðrum virkjum, hvørs søla einans fer fram til privatar brúkarar, kunnu leggjast fram sum skjalprógv, hóast fakturarnir ikki innihalda upplýsingar um navn og bústað hjá móttakaranum.
+5. stk. Landsstýrið ásetir nærri reglur viðvíkjandi roknskaparførslu hjá skrásettum virkjum.
+§ 19. Skrásett virki og virki, ið sambært § 4, 1. stk. eru frítikin frá avgjaldsskyldu, skulu goyma roknskapartilfarið, herímillum fakturar, fakturatvítøk og kassastrimlar v.m., viðvíkjandi keypi og sølu av vørum og avgjaldsskyldugum tænastum 5 ár eftir endan á roknskaparárinum.
+2. stk. Skrásett virki skulu eina ferð um árið grundað á eina uppteljing av vørugoymsluni hjá virkinum gera uppgerð yvir virðið á goymsluni. Uppgerðin skal goymast 5 ár eftir endan á roknskaparárinum.
+IX: Avrokning av avgjaldinum.
+§ 20. 2) 9) 14) Skrásett virkir skulu seinast 1 mánað og 10 dagar aftaná endan av 1. 3. og 4. avgjaldstíðarskeiði boða TAKS frá støddini á útgangandi og inngangandi avgjaldinum í tíðarskeiðnum og støddina av søluni, sbrt § 12, stk. 1-4 og 6, ið ikki skal roknast við í avgjaldsskyldugu søluna. Freistin fyri 2. avgjaldstíðarskeið er 24. august. Upphæddirnar skulu tilskilast í heilum krónum. Har e-mvg ikki verður nýtt, skal uppgerðin skrivast á serligt oyðublað og vera undirskrivað av ábyrgdarleiðsluni á virkinum. Sama oyðublað skal nýtast, tá avgjaldið verður inngoldið. Landsstýrismaðurin ásetir reglur um, hvørjar upplýsingar skulu vera tilskilaðar á avrokningarskjalið í sambandi við avrokning av avgjaldinum.
+2. stk. Avgjaldstíðarskeiðini eru 4 um árið: januar, februar og mars, apríl, mai og juni, juli, august og september og oktober, november og desember.
+3. stk. 4) 30) 31) Virki, ið javnan hava negativa avgjaldsupphædd, kunnu fáa loyvi at avrokna eina ferð um mánaðin ella eina ferð um vikuna, jb. tó § 23 b, stk. 2. Avgjaldstíðarskeiðið kann bert broytast soleiðis, at hetta fer fram í byrjanini av avgjaldstíðarskeiðinum sambært 2. stk. Søkjast skal um hetta loyvi ein mánað frammanundan. Verður loyvið játtað virkjum sambært 3. stk., kunnu virkini ikki nýta avgjaldstíðarskeið sambært 2. stk. tey næstu 2 árini frá tí, at loyvið er játtað.
+§ 20 a. 49) Freistin at boða TAKS frá støddini á útgangandi og inngangandi avgjaldinum og støddini av søluni, sbrt § 12, stk. 1-4, ið ikki skal roknast við í avgjaldskyldugu søluna fyri 1. ársfjórðing 2020, og freistin fyri avrokning av 1. avgjaldstíðarskeið 2020 er í seinasta lagi 15. november 2020.
+§ 21. Um uppgerð fyri eitt avgjaldstíðarskeið ikki verður innlatin til ásetta tíð, verður avgjaldið fyri viðkomandi avgjaldstíðarskeið hækkað við 1%, tó í minsta lagi við 300 kr. og í hægsta lagi við 1.000 kr.
+2. stk. 8) TAKS kann fráboða frítøku fyri hækking av avgjaldi sambært 1. stk., tá tað av serligum orsøkum verður hildið at vera rímiligt.
+3. stk. 31) 8) Hevur TAKS aftaná lokna innlatingarfreist ikki móttikið uppgerð fyri eitt avgjaldstíðarskeið, kann TAKS fyribils áseta avgjald hjá virkinum.
+Stk. 4. 31) 48) Um so er, at eitt virki í 4 fylgjandi avgjaldstíðarskeið hevur fingið avgjald ásett sbrt. stk. 3, kann TAKS taka skrásetingina frá virkinum, um so er, at virkið ikki letur inn fullfíggjaðar uppgerðir. Áðrenn skráseting verður tikin frá virkinum, skulu virkið og leiðsla við innskrivaðum brævi hava fráboðan um, at um virkið ikki letur inn manglandi uppgerðir innan 14 dagar, verður skrásetingin tikin frá virkinum. Í fráboðanini skal verða sagt frá, at um virkið rekur meirvirðisgjaldskyldugt virksemi aftaná, at meirvirðisgjaldskrásetingin er tikin frá virkinum, er hetta revsivert sbrt. § 33, stk. 3, og at leiðslan heftir fyri hetta avgjald sbrt. § 23 b, stk. 10.
+§ 22. 9) Avgjaldið fyri eitt avgjaldstíðarskeið fellur til gjaldingar og skal gjaldast í seinasta lagi 1 mánaða og 10 dagar aftan á endan á avgjaldstíðarskeiðinum.
+Stk. 2. 2) 41) 47) 50) 51) 52) Er avgjaldið ikki goldið, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Renta verður somuleiðis goldin av hækkingini av avgjaldinum sambært § 21, stk. 1 fyri hvønn byrjaðan mánað frá gjalddegnum at rokna.
+3. stk. 47) 50) Reglurnar í stk. 2 eru eisini galdandi fyri skuldskrivaða rentu.
+§ 23. 8) Viðvíkjandi virkjum, sum bert skulu rekast í styttri tíð, kann TAKS áseta, at avgjaldstíðarskeiðið, er tað tíðarskeiðið, sum virkið skal rekast í. TAKS kann harumframt stytta freistirnar fyri at senda inn uppgerð og gjalda avgjald hjá tílíkum virkjum.
+2. stk. 30) (Strikað).
+§ 23 a. 30) 8) Skrásett virki við ársfjórðingi sum avgjaldstíðarskeiði skulu hóast ásetingina í § 20 hava álmanakkamánaðin sum avgjaldstíðarskeið og lata inn uppgerð og harumframt rinda avgjaldið seinast 15 dagar aftaná, tá ið
+1) virkið 2 ferð innan fyri teir seinastu 12 mánaðirnar ikki rættstundis hevur rindað avgjald ella
+2) virkið er í eftirstøðu við avgjaldinum eftir hesi lóg við eini upphædd, ið er meira enn 25.000 kr. tilsamans, og
+3) virki ikki rindar eftirstøðuna viðv. nr. 1 ella 2 áðrenn 10 yrkadagar frá móttøkuni av áminningarskrivi frá TAKS, har virkið fær boð um, at um tað framvegis ikki rindar, verður virkinum álagt stytt avgjaldstíðarskeið v.m.
+Stk. 2. Tað stytta avgjaldstíðarskeiðið eftir stk. 1 skal verða galdandi frá tí 1. í tí álmanakkamánaði, har freistin, sum er ásett í stk. 1, nr. 3, er farin. Avgjaldið fyri eitt fyrri avgjaldstíðarskeið, sum ikki er latið inn ella goldið enn, skal latast inn og rindast samstundis við avgjaldinum fyri tað fyrsta stytta avgjaldstíðarskeiðið.
+Stk. 3. 8) TAKS kann frítaka einum virki frá styttum avgjaldstíðarskeiði v.m., um ein gjaldsavtala er gjørd, ið virkið heldur, ella um so er, at tað ikki í aðrar mátar við grundarlagi í viðurskiftunum hjá virkinum verður mett, at tørvur er á at áleggja virkinum stytt avgjaldstíðarskeið v.m.
+Stk. 4. 2) 3) 31) 8) TAKS kann áleggja virkjum, ið verða fráboðað til skrásetingar, at nýta stytt avgjaldstíðarskeið v.m. eftir reglunum í stk. 1. Krav um stytt avgjaldstíðarskeið v.m. kann verða álagt, tá ein eigari av virkinum innanfyri seinastu 5 árini hevur verið eigari av ella limur í nevndini ella stjórnini hjá einum øðrum virki, ið innanfyri hetta tíðarskeið ikki hevur goldið meirvirðisgjald rættstundis ella hevur verið í eftirstøðu. Er tann avgjaldsskyldugi eitt vinnufelag v.m., verður sum eigari eisini roknaður ein persónur, ið eigur slíkar fíggjarpartar í avgjaldsskylduga virkinum, sum verða roknaðir sum partabrøv hjá høvuðspartaeigara sbrt. § 13, stk. 3 og 4 í kapitalvinningsskattalógini, ella eitt vinnufelag v.m., sum eigur slíkar fíggjarpartar í avgjaldsskylduga virkinum. Stytt avgjaldsskeið v.m. skal tó bert verða nýtt, tá tað eftir ítøkiligari metan verður mett at vera tørvur á hesum fyri at tryggja, at goldið verður samstundis.
+Stk. 5. 31) Virkir kunnu í staðin fyri at nýta stytt avgjaldstíðarskeið o.a. sbrt. stk. 1 og 4 velja at seta trygd sbrt. § 23 b, stk. 1 og 2.
+Stk. 6. Virkir, ið eftir stk. 1 og 4 eru áløgd stytt avgjaldstíðarskeið, kunna nýta vanligt avgjaldstíðarskeið v.m., tá ið virkið í einum 12 mánaða tíðarskeiði hevur goldið avgjald, og virkið ikki er í eftirstøðu av avgjaldi eftir hesi lóg.
+Stk. 7. 31) Virkir, ið seta kravdu trygdina, skulu ikki, hóast stk. 1 og 4, nýta stytt avgjaldstíðarskeið o.a.
+Stk. 8. 31) (Strikað).
+Stk. 9. 31) (Strikað).
+§ 23 b. 31) TAKS kann áleggja einum virki at seta trygd, tá
+1) virkið ikki heldur krøvini um stytt avgjaldstíðarskeið, ella
+2) virkið 3 ferðir innan fyri teir seinastu 12 mánaðirnar ikki rættstundis hevur rindað avgjald, og
+3) virkið er í eftirstøðu við avgjaldinum eftir hesi løgtingslóg við eini upphædd, ið er meira enn 25.000 kr. tilsamans, og
+4) virkið ikki rindar eftirstøðuna eftir nr. 2 ella 3 áðrenn 10 yrkadagar frá tí, at áminningarskriv frá TAKS er móttikið, har virkið verður kunnað um, at um tað framvegis ikki rindar eftirstøðuna, verður álagt virkinum at seta trygd.
+Stk. 2. TAKS kann harumframt áleggja virkjum, ið verða fráboðað til skrásetingar, og verandi virkjum at seta trygd, tá ið eigari av virkinum innan fyri tey seinastu 5 árini hevur verið eigari av ella limur í nevnd ella stjórn í øðrum skrásettum virki, ið er farið konkurs ella er vorðið insolvent, og har TAKS hevur krøv, ið ikki eru nóg væl tryggjað, ella landskassin hevur havt 50.000 kr. ella meira tilsamans í tapi av avgjaldi eftir hesi løgtingslóg. 1. pkt. er eisini galdandi, tá tann persónur, ið veruliga rekur virkið, hevur tilknýti til eigara, lim í nevndini ávíkavist stjórnini á sama hátt, sum ásett í § 210, stk. 1, 3. pkt. í løgtingslóg um parta- og smápartafeløg.
+Stk. 3. Trygd, sbrt. stk. 2, skal tó bert setast, tá tað eftir eini ítøkiligari metan verður mett at vera stórur váði fyri, at kravið um stytt avgjaldstíðarskeið o.a. eftir § 23 a, stk. 1 ella 4 ikki er nóg mikið til at tryggja, at avgjald eftir hesi løgtingslóg verður goldið rættstundis.
+Stk. 4. Trygd eftir stk. 1 og 2 skal setast fyri eini upphædd, ið samsvarar við eftirstøðuna í avgjaldinum eftir hesi løgtingslóg, umframt væntað meðal avgjald fyri eitt 3 mánaða skeið. Snýr tað seg um virki, ið verður fráboðað til skrásetingar, skal trygd setast fyri eini upphædd, ið eftir meting frá TAKS, samsvarar við tað væntaða miðalavgjaldið í einum 3 mánaða tíðarskeiði.
+Stk. 5. Trygd eftir stk. 1 og 2 skal setast seinast 8 dagar aftaná, at virkið hevur móttikið fráboðan um hetta, tó so at freistin kann leingjast eftir áheitan. Fráboðan um trygd verður send virkinum við innskrivaðum brævi.
+Stk. 6. Í fráboðanini við kravi um trygd til verandi virkir og teirra leiðslu skal verða sagt frá, at um nevnda trygd ikki verður sett, verður skrásetingin strikað, og at framhald av meirvirðisgjaldskylduga virkseminum aftaná, at skrásetingin er strikað, er revsiverd eftir § 33, stk. 3, og at leiðslan heftir persónliga fyri avgjaldinum sbrt. stk. 10.
+Stk. 7. Krav um trygd til virkir og leiðslu, ið verða fráboðað til skrásetingar, skal setast virki og leiðslu seinast 14 dagar aftaná, at TAKS hevur móttikið skrásetingarskjalið. Kravið um trygd skal innihalda upplýsing um:
+1) at verður trygd ikki sett, kann virkið ikki skrásetast,
+2) at framhald av virkinum er revsivert eftir § 33, stk. 3, og
+3) at leiðslan heftir persónliga fyri avgjaldinum sbrt. stk. 10.
+Stk. 8. Verður trygd ikki sett rættstundis av verandi virki, verður skrásetingin tikin frá virkinum. Verður trygd ikki sett av virki, ið er fráboðað til skrásetingar, verður virkið ikki skrásett.
+Stk. 9. Fráboðan um, at skráseting er tikin aftur ella noktað sbrt. stk. 8, verður send virki og leiðslu við innskrivaðum brævi, og samstundis verður sagt frá, at framhald av virkinum aftaná, at skráseting er tikin aftur ella noktað, er revsivert sambært ásetingini í § 33, stk. 3, og at leiðslan heftir persónliga fyri avgjaldinum sambært stk. 10.
+Stk. 10. Leiðslan í einum virki, sum við vilja ella av grovum ósketni heldur áfram ella byrjar rakstur av einum virki, hóast skrásetingin er tikin aftur ella noktað, sbr. stk. 8, heftir persónliga fyri avgjaldinum, sum stendst av tí ikki skrásetta virkinum. Leiðslan heftir persónliga, óavmarkað og solidariskt.
+Stk. 11. Trygd, ið er sett sbrt. stk. 1 og 2, heldur uppat, tá ið virkið í seinasta 12 mánaða tíðarskeiði hevur goldið avgjald, og virkið ikki longur er í eftirstøðu av avgjaldi eftir hesi løgtingslóg.
+§ 24. Er inngangandi avgjaldið hjá einum virki fyri eitt avgjaldstíðarskeið størri enn útgangandi avgjaldið, verður avgjaldsyvirskotið útgoldið virkinum.
+2. stk. 8) Er uppgerðin rættstundis móttikin, fer útgjalding sambært 1. stk. fram, í seinasta lagi 3 vikur eftir at avgjaldsuppgerðin fyri viðkomandi tíðarskeið er móttikin. Kann TAKS vegna viðurskiftini hjá virkinum ikki hava eftirlit við uppgerðini, verður útgjaldingarfreistin avbrotin, til viðurskiftini hjá virkinum ikki longur forða eftirliti.
+3. stk. Útgjalding fer bert fram, um avgjaldsuppgerð viðvíkjandi undanfarnum avgjaldstíðarskeiðum er móttikin. Krav um avgjald (og møguligar rentur) fyri hesi tíðarskeið verða mótroknað við útgjalding, hóast avgjaldskravið ikki er fallið til gjaldingar.
+§ 25. Fyri gjalding av avgjaldi sambært hesi lóg ábyrgdast tann, ið sum ánari, uppsitari ella tílíkt rekur virkið fyri egna rokning. Eru fleiri virki, ið ikki hava sama ánara, skrásett undir einum, sbr. § 5, 3. stk., bera viðkomandi samábyrgd fyri gjalding av avgjaldi viðvíkjandi teimum virkjum, ið eru umfevnd av felagsskrásetingini. Er eitt útlendskt virki skrásett við einum umboði her á landi sambært § 5, 1. stk., 3. pkt., bera hesin og virkið samábyrgd fyri gjalding av avgjaldinum.
+§ 26. 14) Gjaldkomið meirvirðisgjald, rentur, sektir og gjøld kunnu innheintast við panting ella við afturhaldi í A-inntøku skuldarans.
+2. stk. 2) 4) 14) TAKS fremur pantingina ella lønareftirhaldið eftir reglunum í skattalógini.
+Stk. 3. 31) 14) (Strikað).
+X. Avgjald av innflutningi úr útlondum.
+§ 27. Vørur, ið verða innfluttar úr útlondum, eru avgjaldsskyldugar í sambandi við innflutningin. Avgjaldið verður avroknað sambært reglunum í 7. kapitli í løgtingslóg um toll, ið er galdandi samsvarandi sambært hesi lóg.
+2. stk. 33) Avgjaldið er 25% av einum virði, ið er ásett samsvarandi reglunum um virðið á virðistollskyldugum vørum, møguliga við tolli og øðrum avgjaldi løgdum aftrat, sum skulu gjaldast í sambandi við innflutning, undantikið avgjaldið smb. hesi lóg.
+3. stk. 53) Avgjaldsfrítøka kann játtast við innflutning av vørum í sama mun og undir somu treytum sum ásettar eru um frítøku sambært tollógini §§ 6, 7, 8 a og 9.
+4. stk. 14) Flogfør og skip upp á 20 GT og meira, undantikið sportsflogfør og lystfør, kunnu innflytast avgjaldsfrítt.
+5. stk. Tíðindabløð kunnu innflytast avgjaldsfrítt. Útlendsk tíðarrit, ið koma beinleiðis til haldaran, kunnu eisini innflytast avgjaldsfrítt.
+6. stk. Listamenn kunnu avgjaldsfrítt innflyta egin listaverk av tí slagnum, ið hoyrir undir vøruflokk 9701-9703 í toll- og vøruskránni.
+7. stk. 3) 15) Í samráð við Føroya Kærustovn, kann landsstýrið, undir heilt serligum umstøðum loyva avgjaldsfríum innflutningi av vørum í øðrum førum enn teimum, sum nevnd eru í 3-6 stk.
+8. stk. 33) 8) Vørur, ið fyribils verða útfluttar við tí fyri eyga at endurinnflyta tær eftir tilevning, virking, innballing, umvæling ella reingerð, kunnu av TAKS sambært nærri ásettum treytum loyvast at verða avgjaldsavgreiddar við 25% av útreiðslunum, í hesum eru sendingar- og tryggingarútreiðslur v.m., við tilevningina, sum er gjørd uttan fyri landið íroknað møguligan toll og aðrar útreiðslur sum nevnt í 2. stk.
+9. stk.41) Fiskireiðskapur, agn, ísur, olja, proviantur, salt og pakkitilfar til fiskifør, sum reka vinnuligan fiskiskap kunnu innflyta avgjaldsfrítt.
+10. stk. 54) 38) Innflutningur av fiski, skeljadýrum, lindýrum og øðrum ryggleysum vatndýrum (sbr. 3. kap. í toll- og vøruskránni) og innflutningur av ídnaðarfiski (sbr. vørunummar 0511.91.10 og vørunummar 0511.91.90 í Toll- og vøruskránni) til útflutningsfyritøkur, hvørs søla beinleiðis ella óbeinleiðis í høvusheitum er til útlond, kann fara fram, uttan at meirvirðisgjald verður at rinda í samband við innflutningin.
+11. stk . 55) Vørur kunnu verða innfluttar avgjaldsfrítt, um so er, at samsvarandi latingar her í landinum av tílíkum vørum framdar av avgjaldsskyldugum virkjum høvdu verið frítiknar fyri avgjald.
+§ 28. 33) 34) 14) 28) Útlendsk virki, sum selja fyri meir enn 50.000 kr. um árið, og sum selja tænastur, nevndar í stk. 2, nr. 7-13, til virki, stovnar o.t., ella til fólk í Føroyum, skulu meirvirðisgjaldskrásetast jbr. § 5, og uppkrevja 25% í avgjaldi av søluni, tá ið tænastan verður nýtt í Føroyum.
+Stk. 2. Fylgjandi tænastur eru avgjaldskyldugar:
+1) At avhenda heilt ella lutvíst upphavsrættindi, patentrættindi, lisensrættindi, rættindi til vørumerki, felagsmerki og mynstur, og onnur tílík rættindi.
+2) Tænastur viðvíkjandi reklamu.
+3) Tænastur frá ráðgevandi virkjum, verkfrøðingum, byggifrøðingum, advokatum og grannskoðarum og aðrar tílíkar tænastur; dátuviðgerð og fráboðan av upplýsingum.
+4) Tænastur frá vikarstovum.
+5) Skylda til heilt ella lutvíst at lata vera við at fremja vinnuligt virksemi ella gera nýtslu av einum av teimum í hesum stykki nevndu rættindum.
+6) Tænastur, ið verða gjørdar av millummonnum, sum handla í navni hjá øðrum og fyri rokning hjá øðrum.
+7) At leiga út leysafæ.
+8) Tænastur viðvíkjandi fastari ogn her á landi, harímillum tænastur frá ognmeklara, ognarhandlara o.l. og byggifrøðiligar og ráðgevandi tænastur.
+9) Tiltøk v.m. innan ítrótt, undirhald, undirvísing og gransking v.m.
+10) Arbeiði framt á leysafæ her á landi.
+11) Serkøn virðismeting av leysafæi her á landi.
+12) Fjarskiftistænastur.
+13) Útbreiðsla av útvarps- og sjónvarpssendingum.
+Stk. 3. Avgjaldskyldug søla sambært stk. 2, nr. 1-6 og 8-13 viðvíkur ikki sølu til skrásett virkir í Føroyum, sum í síni heild kunnu rokna avgjaldið við í inngangandi avgjaldið.
+Stk. 4. Fólk, almennir stovnar og onnur, ið ikki eru meirvirðisgjaldskrásett, og sum keypa tænastur, nevndar í stk. 2, nr. 1-6, í útlondum, skulu rinda meirvirðisgjald, um so er, at tænastan verður nýtt í Føroyum.
+Stk. 5. 8) Tann, sum skal rinda avgjald sambært stk. 4, skal føra roknskap yvir tær tænastur, ið eru keyptar í útlondum, og sum avgjald skal rindast fyri. Í seinasta lagi 10 dagar eftir, at tænastan er móttikin, skulu tey rinda avgjaldið og upplýsa TAKS støddina á avgjaldsuppæddini. Roknskapartilfar skal goymast í 5 ár.
+Stk. 6. Tænastur kunnu verða innfluttar avgjaldsfrítt, um so er, at samsvarandi latingar her í landinum, framdar av avgjaldskyldugum virkjum, høvdu verið frítiknar fyri avgjald.
+XI. Eftirlitsreglur.
+§ 29. 8) TAKS hevur heimild til at kanna høli, ið verða nýtt í sambandi við raksturin av skrásetingarskyldugum virkjum, og til at kanna vøru á goymslu, handilsbøkur og annað roknskapartilfar og brævaskifti v.m. hjá virkjunum.
+2. stk. 8) Handhavin og starvsfólkið á virkinum skulu veita TAKS neyðuga vegleiðing og hjálp, tá kanningar sum nevndar í 1. stk. verða gjørdar.
+3. stk. 8) Tilfarið, ið er nevnt í 1. stk., skal eftir áheitan frá TAKS latast ella sendast TAKS.
+§ 30. 8) Latarar til skrásetingarskyldug virki skulu eftir áheitan geva TAKS upplýsingar um teirra latingar av vørum og tænastum til hesi virki.
+2. stk. 8) Vinnurekandi skulu eftir áheitan geva TAKS upplýsingar um teirra keyp av vørum og tænastum til virkið.
+3. stk. 8) Peningastovnar, herímillum postgiroskrivstovan og advokatar og onnur, ið taka ímóti miðlum til umsiting ella sum vinnuliga læna út pening, skulu eftir áheitan geva TAKS eina og hvørja upplýsing um teirra búskaparligu viðurskifti við navnfest skrásetingarskyldug virki.
+4. stk. 8) TAKS hevur heimild til at kanna vøru á goymslu v.m. hjá virkjum, ið eru nevnd í 1. og 2. stk. og til at skoða sáttmálar v.m. hjá virkjum, ið fíggja skrásett virki.
+§ 31. 8) Almennir myndugleikar skulu eftir áheitan geva TAKS eina og hvørja upplýsing til brúk fyri skráseting av virkjum og til eftirlits við gjalding ella afturgjalding av avgjaldinum.
+2. stk. 8) Løgreglan veitir TAKS hjálp sambært reglum, ið verða ásettar eftir samráðing millum landsstýrið og landfútan.
+§ 32. Verður staðfest, at eitt virki hevur givið skeiva fráboðan sambært § 20, 1. stk., soleiðis at virkið hevur goldið ov lítið avgjald ella fingið útgoldið ov nógv í endurrindan, verður skylduga upphæddin kravd frá virkinum til gjaldingar í seinasta lagi 14 dagar eftir kravið. Sama er galdandi, tá eitt virki ikki hevur latið uppgerðina inn, og tá fyribils ásetta avgjaldsskyldan sambært § 21, 3. stk., hevur verið ov lítil.
+2. stk. 8) Kann støddin á avgjaldsupphæddini, sum virkið skyldar, ikki gerast upp grundað á roknskapin hjá virkinum, kann TAKS gera eina metta áseting av avgjaldinum. Sama er galdandi, um eitt virki hevur fingið ov nógv í avgjaldsendurrindi og støddin av tí upphædd, sum virkið tí skal afturgjalda, ikki kann gerast upp grundað á roknskapin hjá virkinum. Avgerðin skal innihalda upplýsingar um møguleika at klaga sum nevnt í 3. stk.
+3. stk. 56) 15) Ein avgerð sambært stk. 2 kann av einum virki leggjast fyri Føroya Kærustovn. Áheitan um at leggja fyri Føroya Kærustovn skal vera fráboðað TAKS í seinasta lagi 4 vikur aftan á, at virkið er kunnað um ásetingina.
+Stk. 4. 47) 50) 51) 52) 35) Er avgjaldið ikki goldið, tá ið freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Við gjalddag skal her skiljast gjald­dagurin, sum ásettur er í § 22, stk. 1.
+XII. Revisreglur.
+§ 33. 47) Við bót verður tann revsaður, ið við vilja ella av grovum ósketni:
+a) Gevur skeivar ella villeiðandi upplýsingar ella ikki gevur upplýsingar at nýta til avgjaldseftirlitið ella eftirlit við útgjaldingum sambært § 24.
+b) Brýtur § 5, 1. stk., 2. stk., 1. punktum, ella 5. stk., § 10, 3. stk., § 12, stk. 5, 2. punktum, § 13, 4. stk., 2. punktum, § 17, 1., 2., 5., 6., 9. ella 11. stk., § 18, 3. stk., § 19, § 20, 1. stk., § 29, 2. og 3. stk., § 30, 1., 2. og 3. stk.
+c) Letur vera við at gera sum ásett í § 3, 2. stk., ella § 9, 1. stk.
+d) Setir til viks treytir, sum eru ásettar sambært § 2, 4. og 5. stk., § 4, 2. stk. og § 12, 2. stk.
+2. stk. Í fyriskipanum sambært hesi lóg kann revsing við bót áleggjast tí, sum við vilja ella av grovum ósketni brýtur reglurnar í fyriskipanunum.
+3. stk. 30) 31) 57) Tann, sum fremur eitt av nevndu brotum við vilja ella av grovum ósketni fyri at fáa avgjald útgoldið úr landskassanum sambært § 24 ella fyri sleppa sær undan at rinda avgjald, verður revsaður við bót ella fongsli upp til 2 ár. Við bót ella fongsli upp til 2 ár revsast eisini tann, ið við vilja ella av grovum ósketni rekur skrásetingarskyldugt virksemi, hóast virkinum er noktað skráseting, ella skráseting er tikin aftur eftir ásetingunum í §§ 21, stk. 4, og 23 b, stk. 9.
+4. stk. Fyri lógarbrot, sum verða framd av partafeløgum, lutafeløgum ella tílíkum, kann sektarábyrgd verða áløgd felagnum sum so.
+§ 34. 8) Verður lógarbrot mett ikki at føra strangari revsing við sær enn bót, kann TAKS kunna viðkomandi um, at sakin kann verða avgjørd uttan rættarsókn, um hann viðgongur seg sekan í lógarbrotinum og váttar seg til reiðar innan fyri eina nærri ásetta freist at gjalda eina bót.
+2. stk.58) Viðvíkjandi kunningini, sum er nevnd í 1. stk., koma reglurnar í rættargangslógini um innihald av ákæruriti í nýtslu samsvarandi.
+3. stk. Verður bótin goldin rættstundis, ella verður hon sambært avgerð innheintað ella avsitin, fellur víðari rættarsókn burtur.
+4. stk. 58) (Strikað).
+XIII. Aðrar reglur.
+§ 35. 3) 14) Upplýsingar eftir hesi løgtingslóg skulu fráboðast umvegis talgildu sjálvgreiðslurnar hjá TAKS ella við gs-lykli.
+Stk. 2. 14) Í tann mun, at vinnurekandi letur upplýsingarnar á annan hátt, verður gjald álagt. Gjaldið verður ásett, soleiðis at heilfulnaður fæst fyri langtíðarkostnaðin av virkseminum.
+Stk. 3. 14) Gjaldið eftir stk. 2 fellur til TAKS.
+§ 36. Landsstýrið ásetir reglur um endurrindan av avgjaldi, sum útlendsk virki hava goldið við keyp, tilevning v.m., goymslu ella við flutning av vørum, ið verða útfluttar til útlond.
+2. stk. 4) Landsstýrið kann áseta, í hvønn mun endurgjald kann veitast fyri avgjald, sum flutningsfyritøkur hava goldið í sambandi við uttanríkisfólkaflutning ella avgjald, ið er goldið í sambandi við banka, fíggjar- og tryggingarvirksemi í londum uttan fyri Føroyar.
+Stk. 3. 48) Útlendskar sendistovur og útlendskir stjórnarsendimenn kunnu eftir umsókn fáa endurgoldið meirvirðisgjaldið á teimum í kunngerð nærri ásettum vørum og tænastum, keyptar í Føroyum. Landsstýrismaðurin í fíggjarmálum ásetir nærri í kunngerð, hvørjar vørur og tænastur tey í 1. pkt. nevndu kunnu fáa endurgoldið meirvirðisgjaldið fyri.
+§ 36 a. 41) Landsstýrið ásetur reglur um, at avgjald kann afturrindast avgjaldsskyldugum virkjum, ið ikki hava bústað e.t. her á landi, sum er goldið her fyri vørur og avgjaldsskyldugar tænastur til vinnuliga nýtslu hjá virkjum her á landi.
+Stk. 2. Afturrindan av avgjaldi sambært stk. 1 kann bert verða veitt fyri innkeyp av tí slagnum, sum skrásett virki kunnu rokna við í inngangandi avgjald sambært reglunum í §§ 15 og 16.
+§ 36 b.59) 14) Meirvirðisgjaldsútreiðslurnar hjá sjálvbodnum bjargingarfeløgum, har øll arbeiðsmegin er ólønt, kunnu eftir umsókn verða endurgoldnar. Tað er ein treyt, at bjargingarbátarnir ikki verða brúktir til vinnuligt virksemi.
+Stk. 2. Landsstýrismaðurin í fíggjarmálum kann í kunngerð áseta nærri treytir og reglur um at fáa endurgoldið meirvirðisgjald sbrt. stk. 1.
+§ 37. Avgjald sambært hesi lóg fer í landskassan.
+§ 38. 3) 8) TAKS, eins væl og Føroya Kærustovni, er bannað, undir ábyrgd í borgarligari revsilóg fyri Føroyar, at siga óviðkomandi frá upplýsingum viðvíkjandi privatum, fíggjar- og vinnuviðurskiftum, sum teir fáa at vita, meðan teir røkja starv sítt sambært hesi lóg. Tað sama hevur gildið fyri tað hjálparfólk, sum starvar hjá TAKS og annars hvønn og ein, sum hevur gjørt avtalu við tað almenna um at átaka sær eitt arbeiði og fær at vita um slík viðurskifti. Er avtalan gjørd við eitt virki, fevnir tagnarskyldan um øll tey í virkinum sum fáa at vita um slík viðurskifti.
+2. stk. Hagstovan verður ikki mett at vera óviðkomandi sambært 1. stk.
+XIV. Skiftis- og ígildissetanarreglur.
+§ 39. Landsstýrið kann áseta neyðugar reglur fyri fremjing av lógini, herímillum skipa fyri neyðugum eftirlitsfyriskipanum.
+§ 40. 9) Virki, ið eru skrásetingarskyldug sambært hesi lóg, og sum hava uppgjørt goymsluna pr. 31. desember 1992, og sum hava sent inn uppgerðina fyri 1. juli 1993, fáa 100% av innflutningsgjaldinum sambært løgtingslóg nr. 119 frá 23. desember 1991 um innflutningsgjald, ið er goldið fyri vørur, ið eru innfluttar til víðari sølu, og sum ikki eru seldar fyri 1. januar 1993, endurgoldið í 1993 og 1994.
+2. stk. Innflutningsgjaldið sambært hesi grein verður endurgoldið í mun til uppgjørda virðið á vørugoymsluni og verður útgoldið í 4 eins stórum pørtum í samsvari við avrokningartíðarskeiðið sambært § 20, í samband við 2. og 3. avrokningartíðarskeið í 1993, og 1. og 2. avrokningartíðarskeið í 1994.
+3. stk. Landsstýrið kann áseta nærri reglur um krøv, ið skulu lúkast, áðrenn afturrindan sambært hesi grein verður framd.
+4. stk. 8) Í kunngerð sett sambært 3. stk. kann landsstýrið áseta, at vørugoymslan skal gerast upp sambært skattligu reglunum um uppgerð av vørugoymslu, og at uppgerðin skal váttast av løggildum ella skrásettum grannskoðara ella av persónum, sum verða góðkendir av TAKS.
+§ 41. Hóast goldið verður fyri latingar av avgjaldsskyldugum vørum og tænastum áðrenn 1. januar 1993, eru latingar, ið fara fram aftan á 31. desember 1992 avgjaldsskyldugar sambært § 1 í hesi lóg.
+§ 42. 9) Henda lóg fær gildi 1. januar 1993. Tó fær § 5 gildi 1. oktober 1992, og § 40 fær gildi 12. desember 1992.
+2. stk. Virki, ið eru skrásetingarskyldug sambært § 5, skulu fráboða seg til skrásetingar í seinasta lagi 20. november 1992.
+§ 43. Samstundis sum henda lóg kemur í gildi, fer úr gildi løgtingslóg nr. 119 frá 23. desember 1991 um innflutningsgjald og tær kunngerðir, ið eru settar sambært lóg nr. 9 frá 27. februar 1961 við seinni broytingum um serligt innflutningsgjald og lóg nr. 32 frá 19. mai 1979 við seinni broytingum um eykainnflutningsgjøld, og sum ikki fóru úr gildi, tá ið lóg nr. 119 frá 23. desember 1991 um innflutningsgjøld kom í gildi.
+1) Broytt við løgtingslóg nr. 80 frá 29. mai 2017, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi 1. januar 2017. Stk. 2. Fyri at fáa meirvirðisgjaldið endurgoldið, skal umsókn verða latin TAKS í seinasta lagi 31. mars 2019.”
+2) Broytt við løgtingslóg nr. 96 frá 29. desember 1998, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 1999. § 1, nr. 4 fær tó ikki gildi fyrr enn 1. januar 2000 burtursæð frá, at rentusatsurin upp á 1,5% verður broyttur til 1,0% við gildi frá 1. januar 1999.”
+3) Broytt við løgtingslóg nr. 94 frá 5. desember 2002, har § 2 ljóðar soleiðis: “Henda lóg fær gildi dagin eftir, at hon er kunngjørd og er galdandi frá 1. januar 2003.”
+4) Broytt við løgtingslóg nr. 103 frá 21. mai 1993.
+5) Broytt við løgtingslóg nr. 116 frá 1. december 2003, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2004.”
+6) Broytt við løgtingslóg nr. 173 frá 18. desember 1992, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1993.”
+7) Broytt við løgtingslóg nr. 193 frá 30. desember 1992, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1993.”
+8) Broytt við løgtingslóg nr. 59 frá 2. mai 2022, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 1 kemur í gildi 1. januar 2024.”
+9) Broytt við løgtingslóg nr. 162 frá 1. desember 1992, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1993. Tó fáa § 1 pkt. 4, pkt. 12, pkt. 13 og pkt. 14 (§§ 4, 40 og 42 gildi dagin eftir, at henda lóg er kunngjørd.”
+10) Broytt við løgtingslóg nr. 149 frá 20. desember 2005, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2006.”
+11) Broytt við løgtingslóg nr. 104 frá 16. august 1994, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagi, at hon er kunngjørd, og hevur gildi fyri sølu av partabrøvum henda dag ella seinni. ”
+12) Broytt við løgtingslóg nr. 176 frá 30. desember 1997, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi 1. januar 1998.”
+13) Broytt við løgtingslóg nr. 80 frá 25. mai 2009. Broytingin hevur virknað frá 1. juli 2009.
+14) Broytt við løgtingslóg nr. 62 frá 30. apríl 2018.
+15) Broytt við løgtingslóg nr. 159 frá 10. desember 2021, har § 43 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2022. Samstundis fer løgtingslóg nr. 47 frá 23. mars 1993 um kærunevnd í almanna-, familju- og heilsumálum úr gildi.”
+16) Broytt við løgtingslóg nr. 34 frá 30. apríl 2011, har § 2 ljóðar soleiðis: “Hendan løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og galdandi fyri tíðarskeiðið frá 1. januar 2010 til 31. desember 2012.”
+17) Broytt við løgtingslóg nr. 57 frá 17. mai 2013, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. § 1, nr. 1 hevur virknað frá 1. januar 2013. § 1, nr. 2 hevur virknað frá 1. januar 2012.”
+18) Broytt við løgtingslóg nr. 61 frá 22. mai 2023, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. Verkætlanir, ið eru farnar í gongd áðrenn 31. desember 2022 eru eisini fevndar av løgtingslógini.”
+19) Broytt við løgtingslóg nr. 155 frá 23. desember 2015, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2016.”
+20) Broytt við løgtingslóg nr. 86 frá 7. juni 2020.
+21) Broytt við løgtingslóg nr. 19 frá 24. februar 2021, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 1. januar 2021.”
+22) Broytt við løgtingslóg nr. 218 frá 22. desember 2025, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2026.”
+23) Broytt við løgtingslóg nr. 27 frá 27. februar 2023, har § 2 ljóðar soleiðis: “Stk. 1. § 1, nr. 2-4 koma í gildi dagin eftir, at løgtingslógin er kunngjørd og hava virknað frá 1. januar 2023. Stk. 2. § 1, nr. 1 kemur í gildi 1. september 2023.”
+24) Broytt við løgtingslóg nr. 190 frá 21. desember 2018, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá framløgudegnum fyri tey í § 1, nr. 3 nevndu akfør skrásett framløgudagin ella seinni. Stk. 2. Tey í § 1, nr. 3 nevndu akfør, sum eru skrásett áðrenn framløgudagin kunnu framvegis avgjaldsgreiðast eftir § 10 stk. 1 í meirvirðisgjaldslógini. Stk. 3.(Strikað). Stk. 4. Fyri at fáa meirvirðisgjald endurgoldið eftir § 1, nr. 1, skal umsókn verða latin TAKS í seinasta lagi 31. mars 2021.”
+25) Broytt við løgtingslóg nr. 92 frá 6. juni 2017, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað fyri hitapumpuskipanir, klárar at taka í nýtslu frá 1. januar 2017.”
+26) Broytt við løgtingslóg nr. 11 frá 7. mars 2024, har §§ 2 og 3 ljóða soleiðis: “§ 2, Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 1-4 hava virknað frá 1. januar 2024. Stk. 3. § 1, nr. 5 hevur virknað frá 1. ársfjórðingi 2024. § 3, § 1, nr. 2 er einans galdandi fyri arbeiði gjørt í 2024 ella seinni.”
+27) Broytt við løgtingslóg nr. 148 frá 13. desember 2019, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin 1. januar 2020.”
+28) Broytt við løgtingslóg nr. 21 frá 12. mars 2020, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2020.”
+29) Broytt við løgtingslóg nr. 50 frá 16. mai 2006, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi samstundis, sum sáttmáli frá 31. august 2005 millum stjórn Íslands øðrumegin og stjórn Danmarkar og Føroya Landstýri hinumegin fær gildi.”
+30) Broytt við løgtingslóg nr. 108 frá 29. juni 1995, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. oktober 1995. Stk. 2. Krav um trygd eftir ásetingunum kunnu gerast galdandi fyri nýggj virki, ið fráboðast til skráseting frá og við 1. oktober 1995. ”
+31) Broytt við løgtingslóg nr. 49 frá 8. mai 2012.
+32) Broytt við løgtingslóg nr. 101 frá 21. mai 1993, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi 1. januar 1993. Broytingin í punkt 2) (§ 12) fær tó gildi 1. juli 1993. ”
+33) Broytt við løgtingslóg nr. 105 frá 21. mai 1993, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. juli 1993. Stk. 2. Lógin hevur gildi fyri meirvirðisgjaldsskyldugar latingar av vørum og tænastum, ið verða latnar frá og við 1. juli 1993. Stk. 3. Fyri vørur, ið verða innfluttar, verður hækkaði avgjaldssatsurin at galda fyri vørur, ið av tollvaldinum verða loyvdar útflýggjaðar frá og við 1. juli 1993. Stk. 4. Fer fram aftursending av vørum, ið verða latnar áðrenn 1. juli 1993, verður avgjaldsskyldugi umsetningurin eftir meirvirðisgjaldslógini broyttur, so at avgjald virkisins verður javnað við tí fyrr goldna avgjaldinum av tí upphædd, ið er endurrindað viðskiftafólkunum. Fyri tap uppá krøv viðvíkjandi latnum vørum og avgjaldsskyldugum tænastum, verður gjørd samsvarandi javnan. Stk. 5. Landsstýrið kann áseta nærri reglur til fremjing av lógini.”
+34) Broytt við løgtingslóg nr. 39 frá 27. apríl 2005.
+35) Broytt við løgtingslóg nr. 58 frá 18. mai 2015.
+36) Broytt við løgtingslóg nr. 57 frá 7. mai 2019, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá framløgudegnum”.Framløgudagurin var 7. mars 2019.
+37) Broytt við løgtingslóg nr. 207 frá 11. desember 2025, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 1 er ikki galdandi fyri akfør, sum eru skrásett sum leiguakfør áðrenn 1. januar 2026. Fyri hesi leiguakfør eru tær áðurgaldandi reglurnar galdandi.”
+38) Broytt við løgtingslóg nr. 161 frá 24. desember 2015, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2016.”
+39) Broytt við løgtingslóg nr. 54 frá 4. mai 2021.
+40) Broytt við løgtingslóg nr. 92 frá 6. juni 1997.
+41) Broytt viðløgtingslóg. nr. 81 frá 25. mai 1994, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1994.”
+42) Broytt við løgtingslóg nr. 66 frá 7. juni 2007, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. juli 2007.”
+43) Broytt við løgtingslóg nr. 86 frá 18. november 2002, har § 2 ljóðar soleiðis: “Henda lóg fær gildi dagin eftir, at hon er kunngjørd, og er galdandi frá framløgudegnum.”
+44) Broytt við løgtingslóg nr. 75 frá 29. mai 2017.
+45) Broytt við løgtingslóg nr. 54 frá 7. mai 2019.
+46) Broytt við løgtingslóg nr. 36 frá 15. mai 2026, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og fer úr gildi 1. januar 2027.”
+47) Broytt við løgtingslóg nr. 23 frá 21. februar 2000, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. § 1, nr. 1-5, hava virknað frá 1. januar 2000.”
+48) Broytt við løgtingslóg nr. 28 frá 24. apríl 2013.
+49) Broytt við løgtingslóg nr. 22 frá 18. mars 2020.
+50) Broytt við løgtingslóg nr. 33 frá 23. apríl 1999, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi dagin eftir, at hon ert kunngjørd. § 1, nr. 2 fær tó gildi 1. januar 1999 og fer úr gildi 31. desember 1999. § 1, nr. 3 fær tó ikki gildi fyrr enn 1. januar 2000 burtursæð fr, at rentusatsurin verður broyttur til 1,0% við gildi frá 1. januar 1999.”
+51) Broytt við løgtingslóg nr. 121 frá 1. december 2003, har § 9 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2004.”
+52) Broytt við løgtingslóg nr. 49 frá 16. mai 2006.
+53) Broytt við løgtingslóg nr. 12 frá 25. februar 2002, har § ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2002.”
+54) Broytt við løgtingslóg nr. 174 frá 18. desember 1992, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1993.”
+55) Broytt við løgtingslóg nr. 125 frá 22. desember 1994, har § 2 ljóðar soleiðis: “Henda lóg fær gildi 1. januar 1995.”
+56) Broytt við løgtingslóg nr. 100 frá 20. desember 2002.
+57) Broytt við løgtingslóg nr. 168 frá 16. desmeber 2021.
+58) Broytt við løgtingslóg nr. 91 frá 7. juni 2020, har § 79 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2021.”
+59) Broytt við løgtingslóg nr. 47 frá 8. mai 2012.
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 26-09-1992
+Tilvísingar
+Heimildir
+Broytingar
+Ásetingar
+Skjøl o.tíl.
+Skjøl
+Kunngerðablaðið
+Kunngerðarblað 1992 A - Hefti 27 A frá 26. september 1992
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Supuestos especiales de concurrencia de rentas: Anualidades por alimentos en favor de los hijos y...</title><meta name="ObjectId" content="d00d4a4538839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='800c4a4538839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras.html'>Capítulo 15. Cálculo del impuesto: determinación de las cuotas íntegras</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='45dc4a4538839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Especialidades en la determinación de la cuota íntegra estatal y autonómica</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Supuestos especiales de concurrencia de rentas: Anualidades por alimentos en favor de los hijos y rentas exentas con progresividad</h1><p>El procedimiento aplicable en el supuesto de que existan simult&aacute;neamente anualidades por alimentos en favor de los hijos y rentas exentas con progresividad incorpora las especialidades liquidatorias de cada una de dichas rentas tal y como se comenta en el ejemplo siguiente.</p>
+<div class="border-left border-primary pl-2 border-size-5">
+<h2>Ejemplo:</h2>
+<p>Don J.R.F., residente en la Comunidad de Madrid, ha obtenido en el ejercicio 2025&nbsp;una base liquidable general de 23.900 euros. Tambi&eacute;n ha obtenido rentas exentas con progresividad que ascienden 2.950 euros.</p>
+<p>Durante el ejercicio ha satisfecho anualidades por alimentos a sus hijos por importe de 2.800 euros, seg&uacute;n lo previsto en el convenio regulador del divorcio aprobado judicialmente.</p>
+<p>Determinar las cuotas &iacute;ntegras correspondientes al ejercicio 2025, sabiendo que el importe del m&iacute;nimo personal y familiar asciende a 5.550 euros.</p>
+<p><strong>Soluci&oacute;n:</strong></p>
+<p><strong>1. Determinaci&oacute;n de las bases para la aplicaci&oacute;n de las escalas de gravamen</strong></p>
+<p>Al haber satisfecho en el ejercicio anualidades a sus hijos por decisi&oacute;n judicial y resultar su cuant&iacute;a inferior al importe de su base liquidable general, la escala general y la auton&oacute;mica del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> deben aplicarse separadamente al importe de las anualidades (2.800) y al importe del resto de la base liquidable general.</p>
+<p>Este &uacute;ltimo importe se determina incrementando la base liquidable general (23.900 euros) en la cuant&iacute;a de las rentas exentas con progresividad (2.950) y disminuyendo el resultado en el importe de las anualidades por alimentos satisfechas en el ejercicio (2.800). En definitiva:</p>
+<p>Base "A" = 2.800</p>
+<p>Base "B" = (23.900 + 2.950) &minus; 2.800 = 24.050</p>
+<p><strong>2. Aplicaci&oacute;n de las escalas del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF </abbr>al importe de las anualidades, base "A" (2.800 euros)</strong></p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>Escala general del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+</li>
+<li>
+<p>2.800 x 9,50% = 266</p>
+<p>Cuota 1 = 266</p>
+</li>
+<li>
+<p><strong>Escala auton&oacute;mica del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>2.800 x 8,50% = 238</p>
+<p>Cuota 2 = 238</p>
+</li>
+</ul>
+<p><strong>3. Aplicaci&oacute;n de las escalas de gravamen al resto de base liquidable general, base "B" (24.050 euros)</strong></p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>Escala general del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>Hasta 20.200 = 2.112,75</p>
+<p>Resto: 3.850 al 15% = 577,50</p>
+<p>Cuota 3 = 2.690,25</p>
+</li>
+<li>
+<p><strong>Escala auton&oacute;mica del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>Hasta: 19.004,63 = 1.739,53</p>
+<p>Resto: 5.045,37 al 12,80% = 645,80</p>
+<p>Cuota 4 = 2.385,33</p>
+</li>
+</ul>
+<p><strong>4. Aplicaci&oacute;n de las escalas de gravamen a la base liquidable general correspondiente al m&iacute;nimo personal y familiar incrementado en 1.980 euros</strong></p>
+<p>Dado que el importe de la base liquidable general (23.900) es superior al del m&iacute;nimo personal y familiar incrementado en 1.980 euros (5.550 + 1.980 = 7.530), este forma parte en su integridad de la base liquidable general.</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>Escala general del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>Dado que el importe de la base liquidable general (23.900) es superior al del m&iacute;nimo personal y familiar incrementado en 1.980 euros (5.550 + 1.980 = 7.730), este forma parte en su integridad de la base liquidable general.</p>
+<p>7.530 al 9,50% = 715,35</p>
+<p>Cuota 5 =715,35</p>
+</li>
+<li>
+<p><strong>Escala auton&oacute;mica del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+</li>
+<li></li>
+<li>
+<p>En este caso, la cuant&iacute;a auton&oacute;mica del m&iacute;nimo del contribuyente (fijada en 5.777,55 euros) incrementada en 1.980 euros&nbsp;&nbsp;(5.777,55 + 1.980) determina un importe de 7.757,55 euros, inferior a la base liquidable general (23.900), por lo que dicho importe forma parte en su integridad de la base liquidable general.</p>
+<p>7.757,55 al 8,50% =&nbsp;659,39</p>
+<p>Cuota 6 =&nbsp;659,39</p>
+</li>
+</ul>
+<p><strong>5. C&aacute;lculo de las cuotas a efectos de determinar los tipos medios de gravamen</strong></p>
+<p>Para determinar los tipos medios de gravamen, estatal y auton&oacute;mico, es preciso calcular previamente las respectivas cuotas estatal y auton&oacute;mica. Dichas cuotas se calculan de la siguiente forma:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>Cuota estatal = (cuota 1 + cuota 3&nbsp;- cuota 5):</strong></p>
+<p>266 + 2.690,25 &ndash; 715,35 = 2.240,90</p>
+</li>
+<li>
+<p><strong>Cuota auton&oacute;mica = (cuota 2 + cuota 4&nbsp;- cuota 6):</strong></p>
+<p>238 + 2.385,33 &ndash; 659,39= 1.963,94‬</p>
+</li>
+</ul>
+<p><strong>6. Determinaci&oacute;n de los tipos medios de gravamen</strong></p>
+<ol type="a">
+<li>
+<p>Tipo medio de gravamen estatal TME: 2.240,90 &divide; 26.850 x 100 = 8,34%</p>
+</li>
+<li>
+<p>Tipo medio de gravamen auton&oacute;mico =TMA = 1.963,94 &divide; 26.850 x 100 = 7,31%</p>
+</li>
+</ol>
+<p><strong>7. Determinaci&oacute;n de la cuota &iacute;ntegra general estatal y auton&oacute;mica</strong></p>
+<ul class="lista-sin-icono">
+<li>
+<p>Cuota &iacute;ntegra general estatal (base liquidable general x TME) 23.900 x 8,34% = 1.993,26</p>
+</li>
+<li>
+<p>Cuota &iacute;ntegra general auton&oacute;mica: (base liquidable general x TMA) 23.900 x 7,31% = 1.747,09‬</p>
+</li>
+</ul>
+</div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

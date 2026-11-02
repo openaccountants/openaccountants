@@ -1,0 +1,13 @@
+{
+  "verdict": "BOUNDED PASS exact rental pair",
+  "guide_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+  "ledger_sha256": "d306f92e524564f6d412fdf2ee901d3fa38eebd28476e1099a11369dcf55adb0",
+  "rows_read": 236,
+  "initial_anchors": 123,
+  "added_full_anchors": 5,
+  "source_pairs": 17,
+  "own_controls": 57,
+  "canonical_oa_blocks": 2,
+  "findings": "S-L05 and S-L06 closed",
+  "report_sha256": "35d8366f95a549e26c95614a34131b7fe5c1bf2eb724366998b23437ac6c04b9"
+}

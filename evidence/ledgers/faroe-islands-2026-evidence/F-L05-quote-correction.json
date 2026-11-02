@@ -1,0 +1,6 @@
+{
+  "date": "2026-10-28",
+  "finding": "Payroll99 quoted personal collection §3",
+  "fix": "Ledger/spec/builder source now exact employer invoice §2(3),nativeLF305; Guide unchanged",
+  "exact_quote": "Stk. 3. Gjaldið eftir rokning frá TAKS skal gjaldast innan 20 dagar eftir, at TAKS hevur sent rokningina."
+}

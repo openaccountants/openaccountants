@@ -1,0 +1,16 @@
+[
+  {
+    "code": "CLM",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.body",
+    "raw_sha256": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.reader.txt",
+    "reader_sha256": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+    "LF_lines": [
+      849,
+      918
+    ],
+    "read_utc": "2026-10-28T02:07:31.854754+00:00",
+    "note": "Exact interval emitted. Displaytruncation must be separately excluded before normalized actualread claim."
+  }
+]

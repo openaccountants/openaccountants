@@ -1,0 +1,349 @@
+{
+  "commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "method": "Each immutable input and source assumption read; reviewer derives explicit arithmetic below. Writer actual/expected equality is not used as proof. Conditions assumed by each hypothetical are not real client findings.",
+  "cases": [
+    {
+      "id": "capital-cet18-controls:01",
+      "independent_recomputation": "150000-120000=30000 gain;40000-30000=10000 loss magnitude; (30000-10000)*.5=10000 inclusion. Wrong sign (30000-(-10000))*.5=20000.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code40(7)/41(1),35^2 and actual CET18 form/instructions; established resident/recognition/deduction/payment conditions assumed. K7 sign and live portal not certified."
+    },
+    {
+      "id": "capital-cet18-controls:02",
+      "independent_recomputation": "min(30000,10000)=10000 allowed loss;(10000-10000)*.5=0; no salary offset/carryforward inferred.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code40(7)/41(1),35^2 and actual CET18 form/instructions; established resident/recognition/deduction/payment conditions assumed. K7 sign and live portal not certified."
+    },
+    {
+      "id": "capital-cet18-controls:03",
+      "independent_recomputation": "13000+11000=24000;min(24000,20000)=20000 aggregate E7;4000 excluded.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code40(7)/41(1),35^2 and actual CET18 form/instructions; established resident/recognition/deduction/payment conditions assumed. K7 sign and live portal not certified."
+    },
+    {
+      "id": "capital-cet18-controls:04",
+      "independent_recomputation": "100000+10000+20000+5000=135000 C5;10000+20000=30000 DE;135000-30000=105000 F1/F4;*.12=12600;less9000=3600 F6;less2000=1600 F8;F9=0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code40(7)/41(1),35^2 and actual CET18 form/instructions; established resident/recognition/deduction/payment conditions assumed. K7 sign and live portal not certified."
+    },
+    {
+      "id": "capital-cet18-controls:05",
+      "independent_recomputation": "3600-6000=-2400;F8=0,F9=abs(-2400)=2400; not refund approval.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code40(7)/41(1),35^2 and actual CET18 form/instructions; established resident/recognition/deduction/payment conditions assumed. K7 sign and live portal not certified."
+    },
+    {
+      "id": "cnam-refund-current-controls:01",
+      "independent_recomputation": "12636>12636 false;12636.01>12636 true; timely actual fixed2527 retained;12636-2527=10109 would be unsupported uplift.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read Law321art4,Law1593art23 and current Order12-A points3/18; every other statutory condition remains assumed, no actual cash approval."
+    },
+    {
+      "id": "cnas-correction-current-controls:01",
+      "independent_recomputation": "12000-9000=3000 source;target9000;3000+9000=12000;15000>12000 true; no automatic partial posting.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current CNAS247-A points15–19 and actual annex1; source-credit/execution assumed, no automatic partial transfer."
+    },
+    {
+      "id": "cnas-refund-current-controls:01",
+      "independent_recomputation": "6000+4000=10000;10000-10000=0 unallocated; request partition only.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read CNAS157-A current points5–9/annex1; establishedcredit/noarrears assumed; request partition not execution."
+    },
+    {
+      "id": "employment-current-form-controls:01",
+      "independent_recomputation": "1906.50*12=22878.00",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read CNAS2026points15/25 and actual Order126 annex5/6,SC285–338; actual category and no exemptions assumed; no mixed-month convention."
+    },
+    {
+      "id": "employment-current-form-controls:02",
+      "independent_recomputation": "6*1906.50=11439.00 separately CAS/IPC;6+6=12 disjoint months;11439*2=22878.00",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read CNAS2026points15/25 and actual Order126 annex5/6,SC285–338; actual category and no exemptions assumed; no mixed-month convention."
+    },
+    {
+      "id": "employment-current-form-controls:03",
+      "independent_recomputation": "distinct serials{1,2}=2 people;6*1906.50=11439.00 col9; not6people.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read CNAS2026points15/25 and actual Order126 annex5/6,SC285–338; actual category and no exemptions assumed; no mixed-month convention."
+    },
+    {
+      "id": "downloaded-return-controls:01",
+      "independent_recomputation": "1000000-30000-20000-10000-30000=910000;*.04=36400;less400=36000 assessed;less30000=6000 separate cash balance.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual SIMM24/DAP24/UNIF25 forms/instructions and current Code54s1–54s4,69s1–69s5,15/33/36/82; category/allowance/loss/credit eligibility assumed; form/portal/halfway rounding limitations retained."
+    },
+    {
+      "id": "downloaded-return-controls:02",
+      "independent_recomputation": "10000-20000=-10000;reported base max(0,-10000)=0;tax/credit/cash0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual SIMM24/DAP24/UNIF25 forms/instructions and current Code54s1–54s4,69s1–69s5,15/33/36/82; category/allowance/loss/credit eligibility assumed; form/portal/halfway rounding limitations retained."
+    },
+    {
+      "id": "downloaded-return-controls:03",
+      "independent_recomputation": "500000-200000=300000 row040;less29700=270300 row080;less20300=250000 row100;*.12=30000 row130;less1000=29000 row150;less25000=4000 row170;row180=0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual SIMM24/DAP24/UNIF25 forms/instructions and current Code54s1–54s4,69s1–69s5,15/33/36/82; category/allowance/loss/credit eligibility assumed; form/portal/halfway rounding limitations retained."
+    },
+    {
+      "id": "downloaded-return-controls:04",
+      "independent_recomputation": "200000-29700=170300 row070;less20300=150000 row090;*.12=18000 row120/150;less15000=3000 row190;row200=0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual SIMM24/DAP24/UNIF25 forms/instructions and current Code54s1–54s4,69s1–69s5,15/33/36/82; category/allowance/loss/credit eligibility assumed; form/portal/halfway rounding limitations retained."
+    },
+    {
+      "id": "downloaded-return-controls:05",
+      "independent_recomputation": "200000-29700-20300=150000;*.07=10500 farm row120;less10000=500 row190;row200=0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual SIMM24/DAP24/UNIF25 forms/instructions and current Code54s1–54s4,69s1–69s5,15/33/36/82; category/allowance/loss/credit eligibility assumed; form/portal/halfway rounding limitations retained."
+    },
+    {
+      "id": "numeric-annex-controls:01",
+      "independent_recomputation": "Germany ordinaryI/A75/day,210/night ceiling:3*75=225;2*195=390;2*210=420;225+390=615EUR.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:02",
+      "independent_recomputation": "75*.70=52.50;*3=157.50;plus390=547.50EUR; separate valid private decision assumed.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:03",
+      "independent_recomputation": "210*.5*2=210EUR under no-document point21 with no free/host-funded lodging; no invoice double use.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:04",
+      "independent_recomputation": "Single-day domestic point24 overrides250 norm: allowance0, not all trip costs0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:05",
+      "independent_recomputation": "8471 minimum3years; chosen4years>=3;.25annual;60000*.25*6/12=7500; commissioningJune/startJuly assumed.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:06",
+      "independent_recomputation": "100000*.15=15000 cap;min22000,15000=15000;22000-15000=7000 new repair asset.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "numeric-annex-controls:07",
+      "independent_recomputation": "Pre-repair120000/60*6=12000 col12;24000+12000=36000 col16;12+6=18 col17;120000-36000+18000=102000 col18;78-18=60months col19;102000/60*6=10200 col22;12000+10200=22200 col23;col24=102000;120000+18000=138000 col25;col26=78;col27=60;24000+22200=46200 col28;18+6=24 col29. Note statutory register expressly permits month units; annualised60months=5years so20%/12*6 is equivalent.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual HG10 annex2 GermanyI/A75/210 and body20/21/24; HG9418471life3–5 and HG704 actual registers/repair instructions including month-unit note CORP345–362. Eligibility/commissioning/repair-life evidence assumed."
+    },
+    {
+      "id": "payroll-current-form-controls:01",
+      "independent_recomputation": "40000*.24=9600;60000*.24=14400;sum base100000 col9;benefit1500 col10 separate;contrib24000 col11 and1.1b;15311 contribution fields blank.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual IPC21/IALS21 forms/instructions/classifiers and CNAS categories; statutory already-computed remuneration/withholding assumptions not replaced by validation fields."
+    },
+    {
+      "id": "payroll-current-form-controls:02",
+      "independent_recomputation": "9000+1200+3000+600+2400=16200 total PIT;excluded41/42/44=1200+3000+600=4800;16200-4800=11400 printed control;6000+3000=9000 SAL subdivision control.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual IPC21/IALS21 forms/instructions/classifiers and CNAS categories; statutory already-computed remuneration/withholding assumptions not replaced by validation fields."
+    },
+    {
+      "id": "payroll-current-form-controls:03",
+      "independent_recomputation": "1000+0+0+500+0=1500;0+2000+0+0+600=2600;sum4100 col13;gross10000+20000=30000 col6;tax200+300=500 col16/control.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual IPC21/IALS21 forms/instructions/classifiers and CNAS categories; statutory already-computed remuneration/withholding assumptions not replaced by validation fields."
+    },
+    {
+      "id": "payroll-current-form-controls:04",
+      "independent_recomputation": "abs30+abs(-25)=55>50 fails though net5;abs30+abs(-20)=50<=50 passes. Validation tolerance only.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual IPC21/IALS21 forms/instructions/classifiers and CNAS categories; statutory already-computed remuneration/withholding assumptions not replaced by validation fields."
+    },
+    {
+      "id": "tp-approved-form-controls:01",
+      "independent_recomputation": "9000000+8000000+3000000=20000000 threshold reached; no netting opposing flows.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code22619(4)/(7) exclusions/threshold and actual approved transaction/role/APA schedules; no actual affiliation or APA inferred."
+    },
+    {
+      "id": "tp-approved-form-controls:02",
+      "independent_recomputation": "20000000+50000000+2000000+11000000=83000000 ledger;excluded50m+2m+11m=63000000;threshold20m;APA11m separately scheduled.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code22619(4)/(7) exclusions/threshold and actual approved transaction/role/APA schedules; no actual affiliation or APA inferred."
+    },
+    {
+      "id": "unif25-later-controls:01",
+      "independent_recomputation": "(0-1000)+(8000-9000)+(24000-20000)+(15000-22000)=-5000 expense adjustment;100000+2000-(-5000)=107000 row040.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:02",
+      "independent_recomputation": "1000000+20000=1020000;*.0075=7650;min12000,7650=7650;7650-12000=-4350 signed expense adjustment.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:03",
+      "independent_recomputation": "12000*.25*2/4=1500 subdivision;12000-1500=10500 HQ;sum12000;cash12000-10000=2000; liquidation Q3 excluded from active quarters.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:04",
+      "independent_recomputation": "150000*.07=10500;income shares90000/60000;tax6300/4200;zero relief net remains6300/4200. Actual7% farm route not universal12%.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:05",
+      "independent_recomputation": "50000/200000*100=25%;24000*.25=6000 ceiling;min8000,6000=6000 credit.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:06",
+      "independent_recomputation": "1000+300+200+400+100+700=2700 Table6col23;hectares2.5+.8+1 excluded;road1500 separate Table7;2700+1500=4200 total.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "unif25-later-controls:07",
+      "independent_recomputation": "10000*.12=1200;current day-worker PIT no chapter4 personal allowance. Other social/medical bases not inferred.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual UNIF25 later form/instructions and current Code15(a1),24representation,82; positive/eligible branch populations assumed; form contradictions and no live portal test retained."
+    },
+    {
+      "id": "ven12-full-controls:01",
+      "independent_recomputation": "Income adjustment -3000;expense12000-5000=7000;100000-3000-7000=90000 row040.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:02",
+      "independent_recomputation": "Deemed income max25000market,20000taxbasis=25000;expense adjustment20000-30000=-10000;170000+25000-(-10000)=205000;*.05=10250 percentage ceiling only.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:03",
+      "independent_recomputation": "60000-10000=50000 row090;*.12=6000 row120;10000*.12=1200 row140 informative;2400*(1-.75)=600 row130;6000-600=5400 row150. Wrong subtract both1200and600 gives4200.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:04",
+      "independent_recomputation": "50000/200000=25%;18000*.25=4500 allocated ceiling;min6000,4500=4500;18000-4500=13500 row170.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:05",
+      "independent_recomputation": "24000-6000=18000 row170;less15000=3000 row190;shares75/100and25/100 produce13500and4500;allocation sum18000 before instalments.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:06",
+      "independent_recomputation": "Two equal founders:200000/2=100000 col5;24000/2=12000 col6;6000/2=3000 col7;100000*.25=25000 col8;100000-25000=75000 col9;12000-3000=9000 col10;total18000.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:07",
+      "independent_recomputation": "90000/3=30000 each qualifying changeover period;tax-book adjustments30000-90000=-60000,30000-0=30000,30000-0=30000;taxsum90000;adjustmentsum0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-full-controls:08",
+      "independent_recomputation": "40000+max(90000-70000,0)=60000 replacement basis;following taxperiod2026+1=2027 under assumed qualifying forced-loss/reinvestment conditions.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read actual VEN12 full form/instructions, current Code21/22/24/44(8)/82; previous tax-treatment/relief/foreigncredit/founder/category/forcedloss eligibility assumed, no actual incentive entitlement."
+    },
+    {
+      "id": "ven12-ordinary-return-controls:01",
+      "independent_recomputation": "Expenseadjustment-(100000+10000)=-110000;900000-(-110000)=1010000 row040;donation min100000,50500=50500;undocumented min10000,2020=2020;1010000-50500-2020=957480;less57480=900000;*.12=108000;less8000=100000;payments80000+10000=90000;due10000/excess0.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code36 donation5%,undocumented0.2%,15 rate12%,actual VEN12 ordinary signed adjustments/payment/representation fields; charitable eligibility/loss/credit/payment categories assumed, no automatic cash refund."
+    },
+    {
+      "id": "ven12-ordinary-return-controls:02",
+      "independent_recomputation": "Expenseadjustment-5500;900000+5500=905500;donation cap45275 permits5000;undocumented cap1811 permits500;remaining900000;tax108000;payments110000;excess2000 with no taxloss.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code36 donation5%,undocumented0.2%,15 rate12%,actual VEN12 ordinary signed adjustments/payment/representation fields; charitable eligibility/loss/credit/payment categories assumed, no automatic cash refund."
+    },
+    {
+      "id": "ven12-ordinary-return-controls:03",
+      "independent_recomputation": "-20000+5000+500=-14500 row040;both positive-base caps0,priorlossused0;taxable0;taxloss14500;tax0;payments2000 sooverpaid2000. Coexistence distinct.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code36 donation5%,undocumented0.2%,15 rate12%,actual VEN12 ordinary signed adjustments/payment/representation fields; charitable eligibility/loss/credit/payment categories assumed, no automatic cash refund."
+    },
+    {
+      "id": "ven12-ordinary-return-controls:04",
+      "independent_recomputation": "2000000*.0075=15000 cap;min18000,15000=15000 allowed;15000-18000=-3000 signed adjustment; retired rows not completed.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code36 donation5%,undocumented0.2%,15 rate12%,actual VEN12 ordinary signed adjustments/payment/representation fields; charitable eligibility/loss/credit/payment categories assumed, no automatic cash refund."
+    },
+    {
+      "id": "ven12-ordinary-return-controls:05",
+      "independent_recomputation": "2000000*.0075=15000 cap;min10000,15000=10000 allowed;10000-10000=0 signed adjustment; retired rows not completed.",
+      "arithmetic_disposition": "PASS against immutable case inputs and stated outputs",
+      "legal_scope_disposition": "PASS within expressly assumed and bounded demonstration scope",
+      "read_source_scope": "Read current Code36 donation5%,undocumented0.2%,15 rate12%,actual VEN12 ordinary signed adjustments/payment/representation fields; charitable eligibility/loss/credit/payment categories assumed, no automatic cash refund."
+    }
+  ]
+}

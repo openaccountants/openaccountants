@@ -1,0 +1,226 @@
+{
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "original_candidate": "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf",
+  "repair_candidate": "e42a4f145ce4393878310853027150dfaec193af",
+  "verdict": "limited-source-faithful-acceptance",
+  "guides": {
+    "skills/burundi/bi-company-formation.md": {
+      "sha256": "d030c03c6f952fe891f66a3dc14fa6194b489a820d97649dd184ded64b4ba787",
+      "description_words": 107,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-corporate-income-tax.md": {
+      "sha256": "11cf094be1dd0b7245eed225873ac4b97d36a36252cc0d930284e4aff6f2b1f0",
+      "description_words": 103,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-cross-border-tax.md": {
+      "sha256": "c219a5198c226f825cf919795e32d8f9b3fe24f5bcce16bf44d85dc84a417920",
+      "description_words": 98,
+      "version": "1.1",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": null,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-income-tax.md": {
+      "sha256": "2ae41a26836661a435206964e7a09f910eb94555bba38a7adf8dfa19cdaf074b",
+      "description_words": 103,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-payroll-social.md": {
+      "sha256": "13ba76e6e8950477863113c13af4210061a405c24367ea47e72ace38f97ac383",
+      "description_words": 98,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-tax-overview.md": {
+      "sha256": "11f8f4d8a10b12f534e09d3e7a8b7f1d7787c0c879e3fe2175632c6dc21059b4",
+      "description_words": 103,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-transfer-pricing.md": {
+      "sha256": "a0248c77314fc08d69ce49604b6b355340a12fdc8ec529b0692989448bca246a",
+      "description_words": 101,
+      "version": "1.1",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": null,
+      "opening_notice": true
+    },
+    "skills/burundi/bi-vat-gst.md": {
+      "sha256": "34ac483c645876a82b7083b6fe17ba3d3dc78dfe42118caa036ee2306a6f7036",
+      "description_words": 101,
+      "version": "1.2",
+      "shape_checks": 15,
+      "shape_failures": {},
+      "example_blocks_unchanged": true,
+      "platform_fields_preserved": true,
+      "cta_suffix_exact": true,
+      "opening_notice": true
+    }
+  },
+  "evidence_preserved": {
+    "evidence/ledgers/burundi-review-20261101/examples.md": "8933fe1df91a005661be496df23b1506df2508938c10ab9958921f1c45e549bc",
+    "evidence/ledgers/burundi-review-20261101/review-checks.py": "c776e6d42af021b81c62d946805f6bd8531d8ad282be8479b223fe71850f195f",
+    "evidence/ledgers/burundi-review-20261101/build-row-record.py": "e04a857ec283269f7200c1b06d0f0685c1e83e4653206154d95f7879a412ab3f",
+    "evidence/ledgers/burundi-review-20261101/README.md": "e8aec5eb9c9385694e6698adf6349723b0214c909602eb927c80692053f51a71",
+    "evidence/ledgers/burundi-review-20261101/mechanical-checks.json": "c345e5a493e4e312cc573480f992649aff5edef9ddbc306182c1348965e01257",
+    "evidence/ledgers/burundi-review-20261101/row-review.md": "0e1831788b8a82e8ec4db8a99b1cde9de72920160b075a7e624335ae8ca6a295",
+    "evidence/ledgers/bi-old-topic-destinations.md": "1fb7518e1abd651a4f913f0237699878265f120f9797d9919441a9794545c16d",
+    "evidence/ledgers/burundi-writer-20261101/README.md": "ed683ce0229cad9a7da6c7ff35547f504b4cb90de0731c6e21144ce4aae39ab0",
+    "skills/burundi/README.md": "c02c1c8322d0dd5ae1172824163bd2904025255fe98d2c404e4eea4ab83bc2d2"
+  },
+  "changed_ledger_rows": {
+    "evidence/ledgers/bi-company-formation.md": {
+      "changed_existing": [
+        2,
+        6,
+        7,
+        8,
+        9
+      ],
+      "new": []
+    },
+    "evidence/ledgers/bi-corporate-income-tax.md": {
+      "changed_existing": [
+        7,
+        12
+      ],
+      "new": [
+        17,
+        18
+      ]
+    },
+    "evidence/ledgers/bi-income-tax.md": {
+      "changed_existing": [
+        5,
+        6
+      ],
+      "new": []
+    },
+    "evidence/ledgers/bi-payroll-social.md": {
+      "changed_existing": [
+        12
+      ],
+      "new": []
+    },
+    "evidence/ledgers/bi-tax-overview.md": {
+      "changed_existing": [
+        8
+      ],
+      "new": []
+    },
+    "evidence/ledgers/bi-transfer-pricing.md": {
+      "changed_existing": [
+        8
+      ],
+      "new": []
+    },
+    "evidence/ledgers/bi-vat-gst.md": {
+      "changed_existing": [
+        1,
+        13,
+        20
+      ],
+      "new": []
+    }
+  },
+  "runs": [
+    {
+      "argv": [
+        "python3",
+        "evidence/ledgers/burundi-repair-1/pinned-validation.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Pinned base: 8935b6fc3a7ff0f773334a45a67448f1efe37b19; comparison includes candidate working tree\nchanged-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-company-formation.md",
+        "skills/burundi/bi-corporate-income-tax.md",
+        "skills/burundi/bi-cross-border-tax.md",
+        "skills/burundi/bi-income-tax.md",
+        "skills/burundi/bi-payroll-social.md",
+        "skills/burundi/bi-tax-overview.md",
+        "skills/burundi/bi-transfer-pricing.md",
+        "skills/burundi/bi-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--head",
+        "e42a4f145ce4393878310853027150dfaec193af",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf..e42a4f145ce4393878310853027150dfaec193af"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_capture_manifest_sha256": "1441f65ac42f1c00ddeb4807aaa2ee087b4fabbd1ad044c114a85c12119a85d5",
+  "total_physical_ledger_rows": 116,
+  "reviewer_correction": {
+    "article": "procedure law art.32",
+    "original_review_wrong_physical_page": 12,
+    "correct_physical_and_printed_page": 13,
+    "method": "Actual p.13 image independently viewed; p.12 continuation and source OCR page marker cross-checked. Exact quote is une durée de dix ans. Original review files preserved unchanged."
+  }
+}
