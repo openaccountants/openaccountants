@@ -146,6 +146,7 @@ Retenciones are credited against the annual ISR balance.
 | E-07 | `AEROMEXICO` / `VOLARIS` / `VIVAAEROBUS` | Air travel, deductible (business) | Require CFDI or factura; business purpose needed |
 | E-08 | `HOTEL` / `RESERVACION HOTEL` / `AIRBNB` | Accommodation, deductible (business travel) | Require CFDI; meals follow E-09 |
 | E-09 | `RESTAURANTE` / `ALIMENTOS` | Meals: 8.5% deductible (Art. 28 fr. XX LISR) | 91.5% of restaurant consumption is non-deductible; the 8.5% is deductible only if paid by credit, debit or service card or SAT-authorised e-wallet |
+| `VIATICOS` / `GASTOS DE VIAJE` | Travel expenses (viáticos): deductible only for hospedaje, alimentación, transporte, temporary use of automobiles and kilometraje paid to the beneficiary, and only outside a 50 km band around the taxpayer's establishment (Art. 28 fr. V LISR) | Beneficiary must have an employment relationship with the taxpayer or be rendering professional services; supported by CFDI in Mexico or comprobatoria documentation abroad; the alimentación portion is deductible only up to MXN 750.00 per day per beneficiary in Mexico, MXN 1,500.00 abroad (Art. 28 fr. V LISR) |
 | E-10 | `COMBUSTIBLE` / `GASOLINA` / `PEMEX` / `OXXO GAS` | Fuel, deductible (vehicle proportion) | Require CFDI; electronic payment only (cash fuel NOT deductible) |
 | E-11 | `SEGURO VEHICULO EMPRESARIAL` | Vehicle insurance, deductible (proportion) | Business use proportion |
 | E-12 | `PAGO PROVISIONAL ISR SAT` / `LINEA DE CAPTURA` | Pago provisional: NOT deductible | ISR advance payment; not an expense |
@@ -171,7 +172,7 @@ Retenciones are credited against the annual ISR balance.
 
 - **Total deducciones personales cap**: the lower of 15% of total income (including exempt income) or five times the annual value of the UMA (LISR Art. 151, final paragraph). Only fr. V retirement contributions are outside this cap; donations count inside it.
 
-Statutory anchors for the limits above: the MXN 175,000 car cap is LISR Art. 36 fr. II; the MXN 2,000 cash-payment limit is Art. 27 fr. III; the 8.5% restaurant deduction follows from Art. 28 fr. XX, which makes 91.5% of restaurant consumption non-deductible; the overall cap on deducciones personales (lower of 5 UMA a year or 15% of total income) and the 7% donations limit are Art. 151.
+Statutory anchors for the limits above: the MXN 175,000 car cap is LISR Art. 36 fr. II; the MXN 2,000 cash-payment limit is Art. 27 fr. III; the 8.5% restaurant deduction follows from Art. 28 fr. XX, which makes 91.5% of restaurant consumption non-deductible; the 50 km viáticos exclusion band and the MXN 750.00 / MXN 1,500.00 daily travel-meal caps are Art. 28 fr. V; the overall cap on deducciones personales (lower of 5 UMA a year or 15% of total income) and the 7% donations limit are Art. 151.
 
 ### IMSS / ISSSTE Social Security
 
